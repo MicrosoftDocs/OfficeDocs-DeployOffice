@@ -38,12 +38,6 @@ The Office cloud policy service lets you enforce policy settings for Microsoft 3
 
 For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
 
-## Security Policy Advisor
-
-You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment.
-
-For more information, see [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](overview-security-policy-advisor.md).
-
 ## Office Customization Tool
 
 The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations. These configuration files give you more control over an Office installation: you can define which applications and languages are installed, how those applications should be updated, and application preferences. After creating the configuration files, you can use them with the [Office Deployment Tool](../overview-office-deployment-tool.md) to deploy a customized version of Office.

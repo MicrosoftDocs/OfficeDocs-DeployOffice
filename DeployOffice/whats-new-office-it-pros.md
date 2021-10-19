@@ -115,11 +115,6 @@ Starting with Version 2.30 of the Office apps for iOS, there are new preference 
 
 ## September 2019
 
-### General availability of Security Policy Advisor
-Security Policy Advisor is now generally available. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
-
-For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Security-Policy-Advisor-for-Office-365-ProPlus-is-now-Generally/ba-p/835778) and [Overview of Security Policy Advisor for Microsoft 365 Apps for enterprise](admincenter/overview-security-policy-advisor.md).
-
 ### Windows 7 end of support and Microsoft 365 Apps
 ***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
@@ -168,11 +163,6 @@ For more information, see [Change a Microsoft 365 Apps installation from 32-bit 
 The Office cloud policy service is now generally available.  It's a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
 For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](admincenter/overview-office-cloud-policy-service.md).
-
-### Preview of Security Policy Advisor
-Security Policy Advisor is now available for public preview. You can use Security Policy Advisor to receive and implement security policy recommendations that are based on Microsoft best practices and information about your existing environment. Security Policy Advisor can only be used in combination with the Office cloud policy service.
-
-For more information, see [Overview of Security Policy Advisor](admincenter/overview-security-policy-advisor.md).
 
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
