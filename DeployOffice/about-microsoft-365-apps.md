@@ -18,7 +18,7 @@ description: "Provides Office admins with an overview of Microsoft 365 Apps, inc
 
 # About Microsoft 365 Apps in the enterprise
 
-Microsoft 365 Apps is a version of Office that's available through many Office 365 (and Microsoft 365) plans. It includes the applications that you're familiar with, including Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 (or Microsoft 365) services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
+Microsoft 365 Apps is a version of Office that's available through many Office 365 (and Microsoft 365) plans. It includes the applications that you're familiar with, including Access, Excel, OneDrive, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Office 365 (or Microsoft 365) services such as SharePoint Online, Exchange Online, and Skype for Business Online. 
   
 > [!NOTE]
 > - Project and Visio aren't included with Microsoft 365 Apps, but are available from other subscription plans.
