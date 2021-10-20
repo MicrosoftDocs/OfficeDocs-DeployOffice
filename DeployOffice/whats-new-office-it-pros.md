@@ -27,6 +27,14 @@ Are you wondering which versions of Office are supported on Windows 11? Or how l
 
 You can download and print the recently updated [Windows and Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390) to use as a reference.
 
+### Performance recommendations for Microsoft 365 Apps on Windows 10
+
+When a Microsoft 365 user experiences poor performance using any of the core Office applications (such as Word, Excel, PowerPoint, and Outlook), it can have an impact on their productivity. There are many factors that customers can influence directly that can also impact the end-user experience.
+
+We've published a new "best practices from the field" article that will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
+
+For more information, see [Performance recommendations for Microsoft 365 Apps on Windows 10](fieldnotes/performance-recommendations.md)
+
 ## September 2021
 
 ### Office LTSC 2021
