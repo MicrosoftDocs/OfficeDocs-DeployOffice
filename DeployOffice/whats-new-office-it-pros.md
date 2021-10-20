@@ -33,7 +33,7 @@ When a Microsoft 365 user experiences poor performance using any of the core Off
 
 We've published a new "best practices from the field" article that will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
 
-For more information, see [Performance recommendations for Microsoft 365 Apps on Windows 10](fieldnotes/performance-recommendations.md)
+For more information, see [Performance recommendations for Microsoft 365 Apps on Windows 10](fieldnotes/performance-recommendations.md).
 
 ## September 2021
 
