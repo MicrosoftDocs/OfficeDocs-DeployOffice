@@ -3634,6 +3634,8 @@ The following fields are collected:
 
 - **Data_Market** - Detected market
 
+- **Data_LaunchId** - Unique ID for each launch instance
+
 - **Data_OTelJS_Version** - Office telemetry version
 
 - **Data_PageSessionId** - Session ID of the page
@@ -3665,6 +3667,12 @@ The following fields are collected:
 - **Data_TsgId** - Troubleshooting Guide Id for each activity
 
 - **Data_UserAgent** - Header Tags
+
+- **Data_SkuId** - SKU ID selected (not neccessarily purchased) by customer
+
+- **Data_ProductId** - Product ID selected (not neccessarily purchased) by customer
+
+- **Data_ProductName** - Friendly product name of product selected (not neccessarily purchased) by customer
 
 
 ### Office.Docs.Shared.PremiumFeatureMessageBar
