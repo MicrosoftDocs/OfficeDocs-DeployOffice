@@ -318,9 +318,9 @@ The Microsoft Change Management Plan outlines three change phases and recommende
 
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
-| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change in the [Customer Pulse](/services-hub//unified/support/customer-pulse), or by using the Message center communication. |
+| Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change by using the Message center communication. |
 | Know about the change:<br> Check [Product Roadmap](https://www.microsoft.com/microsoft-365/roadmap)<br> Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
-| Provide feedback about an upcoming service change in the [Customer Pulse](/services-hub/unified/support/customer-pulse), or by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
+| Provide feedback about an upcoming service change by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
 
 Regardless of change strategy, ensuring that your users understand the latest changes is important for successful adoption. The criticality of adoption and change management continues to trend upward as Microsoft and the greater market move toward continuous change.
 
@@ -416,13 +416,9 @@ Outside of formal documentation, we recommend customers join the [Microsoft Tech
 
 Microsoft establishes a virtuous feedback loop between customers and our products. There are several examples of changes that have been rolled back or modified because of feedback submitted by customers. Customers can provide feedback through multiple channels:
 
-- Customer Pulse
 - Microsoft 365 admin portal
 - Message center
 - Microsoft Tech Community
-
-[**Customer Pulse**](/services-hub//unified/support/customer-pulse)  
-It only takes a few minutes to provide valuable feedback through Customer Pulse. Sign into the [Services Hub](https://serviceshub.microsoft.com/), expand the “Management” menu, select “Customer Pulse,” and follow the on-screen instructions. This feedback is aggregated and routed directly to engineering.
 
 [**Microsoft 365 admin portal**](https://portal.office.com/)  
 At the bottom-right of each page in the admin portal, customers can provide feedback by clicking the **Give feedback** button, which is illustrated in Figure 14.
