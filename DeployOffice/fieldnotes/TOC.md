@@ -8,3 +8,4 @@
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](roadmap-to-modern-management.md)
 ## [Microsoft 365 change guide](microsoft-365-change-guide.md)
+## [Performance recommendations for Microsoft 365 Apps on Windows 10](performance-recommendations.md)
