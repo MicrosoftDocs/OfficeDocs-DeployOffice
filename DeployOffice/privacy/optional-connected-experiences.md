@@ -55,10 +55,6 @@ Note: Your [privacy settings](#your-privacy-settings) do not control experiences
 
 On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience requires a Microsoft owned service called PowerLift, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/) apply.
 
-### Help > Suggest a Feature
-
-Suggest a Feature is an experience that allows you to submit your ideas regarding your use of Outlook or Excel. Your suggestions are provided directly to a third-party service called UserVoice. If you submit ideas using Suggest a Feature, the [terms of service](https://outlook.uservoice.com/tos) and [privacy policy](https://outlook.uservoice.com/tos#privacy-policy) of UserVoice will apply.
-
 ### Insert online video
 
 [Insert Online Video](https://support.microsoft.com/office/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, its [terms of use](https://www.youtube.com/t/terms) and [privacy statement](https://policies.google.com/privacy) will apply. Microsoft may add other providers of video material in the future.
