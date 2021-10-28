@@ -73,7 +73,7 @@ Using the [Office Customization Tool](https://config.office.com/), create the co
 
 1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 2, except for the following change:
  - **Update channel:** Choose **Semi-Annual Enterprise Channel** for the installation package for the broad group 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SEC.xml** in the **\\\Server\Share\M365** folder.
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-broad-SEC.xml** in the **\\\Server\Share\M365** folder.
 
 This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the update channel is set to Semi-Annual Enterprise Channel.
 
