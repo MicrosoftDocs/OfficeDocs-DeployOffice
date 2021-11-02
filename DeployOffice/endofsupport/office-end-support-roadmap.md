@@ -43,7 +43,7 @@ Office, like almost all Microsoft products, has a support lifecycle during which
 Because of these changes, we strongly recommend that you upgrade to a supported version of Office as soon as possible.
 
 > [!TIP]
-> - To find the support lifecycle for a Microsoft product, see [Search Product and Services Lifecycle Information](https://docs.microsoft.com/lifecycle/products/).
+> - To find the support lifecycle for a Microsoft product, see [Search Product and Services Lifecycle Information](/lifecycle/products/).
 > - To discuss or learn more about end of support for Office versions, go to the [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) area of the Microsoft Tech Community.
 
 ## What are my options?
