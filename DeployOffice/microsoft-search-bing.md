@@ -211,7 +211,3 @@ If you use the [Configure the list of force-installed apps and extensions (Exten
 `obdappnhkfoejojnmcohppfnoeagadna;https://clients2.google.com/service/update2/crx`
 
 If you don't include this value, the extension for Microsoft Search in Bing will be removed from devices.
-
-### Support for Firefox web browser
-
-Support for the Firefox web browser is planned for a later date. We'll keep you informed about support for Firefox through the Microsoft 365 Admin Center and this article.
