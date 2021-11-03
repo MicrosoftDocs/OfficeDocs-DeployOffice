@@ -76,5 +76,5 @@ Microsoft 365 Apps isn’t supported on Windows Server 2022, even though Windows
 ## Additional information
 
 - This information also applies to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
-- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
+- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
