@@ -55,7 +55,11 @@ Before your older version of Office reaches its end of support, you should explo
 - Office LTSC 2021, which is sold as a one-time purchase, through a volume license agreement, and available for one computer per license.
 
 A key difference between Microsoft 365 Apps and Office LTSC 2021 is that Microsoft 365 Apps is updated regularly, as often as monthly, with new features. Office LTSC 2021 only has the same features that it had when it was released in September 2021.
-  
+
+> [!NOTE]
+> - Office LTSC 2021 is designed for specific scenarios: regulated devices that cannot accept feature updates, process control devices on the manufacturing floor, and specialty systems that cannot connect to the internet.
+> - For more information, see [Overview of Office LTSC Preview](../ltsc2021/overview-ltsc-preview.md).
+
 This article provides guidance on upgrading to Microsoft 365 Apps.
 
 ## What is Microsoft 365? What is Microsoft 365 Apps?
@@ -68,7 +72,9 @@ Microsoft 365 (and Office 365) provides subscription plans that include access t
 
 Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote, as well as Teams.
 
-Unlike volume licensed versions of Office, Microsoft 365 Apps uses a user-based licensing model that allows your users to install Office on up to 5 PCs or Macs and on their mobile devices. There are also differences in how you deploy, license, and activate Microsoft 365 Apps compared to volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
+Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on up to 5 PCs or Macs and on their mobile devices. Other options are available, such as [device-based licensing](../device-based-licensing.md) or [shared computer activation](../overview-shared-computer-activation.md) for devices shared by multiple users, and [extended offline access](../overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
+
+There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
 - [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md)
 - [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md)
@@ -77,9 +83,9 @@ Unlike volume licensed versions of Office, Microsoft 365 Apps uses a user-based 
 
 Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-scilts8).
   
-## Plan for Office 365
+## Plan for Microsoft 365
 
 Because Microsoft 365 Apps comes with many enterprise Microsoft 365 (and Office 365) plans, you should review the capabilities of your current plan as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have accounts and licenses.
 
@@ -105,7 +111,7 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
 - Number and distribution of your clients, including required languages.
 - IT infrastructure, including operating systems, mobile device support, user permissions and management, and software distribution methods.
 - Network infrastructure, including connections to the internet and internal software distribution points.
-- Cloud infrastructure, including existing Office 365 (or Microsoft 365) capabilities, user licensing, and identity.
+- Cloud infrastructure, including existing Microsoft 365 (or Office 365) capabilities, user licensing, and identity.
 
 Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../assess-microsoft-365-apps.md).
 
@@ -121,7 +127,7 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
 - [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426)
 - [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases)
 
