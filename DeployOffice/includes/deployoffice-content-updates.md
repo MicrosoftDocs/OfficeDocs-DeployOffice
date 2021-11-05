@@ -2,6 +2,16 @@
 
 
 
+## Week of October 25, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/26/2021 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
+| 10/26/2021 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+| 10/28/2021 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
+
+
 ## Week of October 18, 2021
 
 
@@ -233,18 +243,3 @@
 | 9/30/2021 | [Changes to update channels for Microsoft 365 Apps](/DeployOffice/update-channels-changes) | modified |
 | 9/30/2021 | [Microsoft Edge WebView2 and Microsoft 365 Apps](/DeployOffice/webview2-install) | modified |
 | 10/1/2021 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
-
-
-## Week of September 20, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/20/2021 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 9/20/2021 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 9/21/2021 | (Preview) In-product notification for Home Use Program (HUP) employee benefit | removed |
-| 9/22/2021 | [Language versions and language interface packs in Office 2016](/DeployOffice/office2016/language-versions-and-language-interface-packs-in-office-2016) | modified |
-| 9/22/2021 | [Overview of Office LTSC 2021](/DeployOffice/ltsc2021/overview) | modified |
-| 9/23/2021 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
-| 9/23/2021 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
-| 9/23/2021 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
