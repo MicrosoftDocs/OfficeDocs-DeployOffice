@@ -106,5 +106,5 @@ Versions of Outlook that are newer than those versions listed, but aren't the mo
   - Visio Professional 2019 and Visio Standard 2019
   - Visio Professional 2016 and Visio Standard 2016
 - This information about connecting to Microsoft 365 services does *not* apply to InfoPath 2013 or SharePoint Designer 2013.
-- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
+- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
