@@ -16,7 +16,7 @@ description: "Provides recommendations, information, and links to help administr
 
 ***Applies to:*** *Volume licensed versions of Office 2013, Office 2010, and Office 2007*
 
-The following table shows the end of support dates that are upcoming or that have passed for several volume licensed versions of Office.
+The following table shows the end of support dates for older versions of Office.
 
 |Office version |End of support date  |
 |---------|---------|
@@ -147,3 +147,19 @@ As with any new version of Office, there are new Administrative Template files (
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
 If you have Microsoft 365 Apps for enterprise, you can also use the Office cloud policy service to apply most user-based policy settings. For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
+
+## Project and Visio
+
+The 2013, 2010, and 2007 desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2010 ended on October 13, 2020 and support for Visio 2013 ends on April 11, 2023.
+
+Subscription plans for Project and Visio are available and include regular feature updates. These plans are sold separately from plans that include Microsoft 365 Apps. For more information, see the following resources:
+
+- [Project plans and pricing information](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software)
+- [Visio plans and pricing information](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options)
+
+The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. These versions were released in September 2021 and won't receive regular feature updates.
+
+For more information, see the following articles:
+
+- [Deployment guide for Project](../deployment-guide-for-project.md)
+- [Deployment guide for Visio](../deployment-guide-for-visio.md)
