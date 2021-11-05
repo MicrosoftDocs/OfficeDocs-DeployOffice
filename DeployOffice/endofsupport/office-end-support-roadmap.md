@@ -1,5 +1,5 @@
 ---
-title: "End of support roadmap for volume licensed versions of Office"
+title: "Upgrade from older versions of Office to Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -12,7 +12,7 @@ recommendations: false
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2013 and Office 2010."
 ---
 
-# End of support roadmap for volume licensed versions of Office
+# Upgrade from older versions of Office to Microsoft 365 Apps
 
 ***Applies to:*** *Volume licensed versions of Office 2013, Office 2010, and Office 2007*
 
@@ -24,7 +24,7 @@ The following table shows the end of support dates for older versions of Office.
 |Office 2010 |October 13, 2020  |
 |Office 2007 |October 10, 2017  |
 
-This article provides recommendations, information, and links to help administrators and IT Pros in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't already begun to upgrade from these older versions of Office, we recommend you start now.
+This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't already begun to upgrade from these older versions of Office, we recommend you start now.
 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365) for cloud migrations.
 
@@ -148,7 +148,13 @@ You can [download the Administrative Template files (ADMX/ADML)](https://www.mic
 
 If you have Microsoft 365 Apps for enterprise, you can also use the Office cloud policy service to apply most user-based policy settings. For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
 
-## Project and Visio
+## Remove older versions of Office when you upgrade
+
+We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
+
+For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md).
+
+## Upgrade to newer versions of Project and Visio
 
 The 2013, 2010, and 2007 desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2010 ended on October 13, 2020 and support for Visio 2013 ends on April 11, 2023.
 
