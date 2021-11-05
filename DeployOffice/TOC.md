@@ -92,6 +92,6 @@
 ## [Windows 7 and Microsoft 365 Apps](endofsupport/windows-7-support.md)
 ## [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
 ## [Connectivity to Microsoft 365 services](endofsupport/microsoft-365-services-connectivity.md)
-## [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
+## [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
 
 # [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
