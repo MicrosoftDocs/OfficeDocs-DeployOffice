@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-recommendations: false
+recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2013 and Office 2010."
 ---
 
@@ -169,3 +169,8 @@ For more information, see the following articles:
 
 - [Deployment guide for Project](../deployment-guide-for-project.md)
 - [Deployment guide for Visio](../deployment-guide-for-visio.md)
+
+## Related articles
+
+- [Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)
+- [Windows and Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
