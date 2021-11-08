@@ -22,7 +22,7 @@ The [Office cloud policy service](https://config.office.com/) lets you enforce p
 
 The Office cloud policy service is part of a [portal](https://config.office.com/) for managing Microsoft 365 Apps for enterprise. The service includes many of the same user-based policy settings that are available in Group Policy. You can also use the Office cloud policy service directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).  
 
-When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies. You can also use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. For more information, see [Overview of Security Policy Advisor](overview-security-policy-advisor.md).
+When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies.
 
 
 ## Requirements for using the Office cloud policy service
