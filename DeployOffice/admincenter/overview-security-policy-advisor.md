@@ -6,12 +6,10 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
+ms.localizationpriority: medium
+ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-recommendations: true
+recommendations: false
 description: "You can use Security Policy Advisor to receive and implement security policy recommendations."
 ---
 
