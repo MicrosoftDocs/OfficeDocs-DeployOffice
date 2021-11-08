@@ -18,8 +18,7 @@ description: "You can use Security Policy Advisor to receive and implement secur
 > [!IMPORTANT]
 > We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 >
-> If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](migrate-security-policies-from-spa-to-ocps).
-
+> If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](migrate-security-policies-from-spa-to-ocps.md).
 
 You can use Security Policy Advisor to receive and implement security policy recommendations. These recommendations are based on Microsoft best practices and information about your existing environment. The advisor is part of a [portal](https://config.office.com) for managing Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
 
