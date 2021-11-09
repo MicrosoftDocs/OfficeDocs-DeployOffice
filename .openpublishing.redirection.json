@@ -562,13 +562,13 @@
     },
     {
       "source_path": "DeployOffice/office-2007-end-support-roadmap.md",
-      "redirect_url": "/deployoffice/endofsupport/office-2007-end-support-roadmap",
+      "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/office-2010-end-support-roadmap.md",
-      "redirect_url": "/deployoffice/endofsupport/office-2010-end-support-roadmap",
-      "redirect_document_id": true
+      "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/windows-7-support.md",
