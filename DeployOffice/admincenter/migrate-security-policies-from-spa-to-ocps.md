@@ -17,7 +17,7 @@ description: "Learn about how Security Policy Advisor is being replaced by the O
 
 [Security Policy Advisor](overview-security-policy-advisor.md) is being retired and replaced by the [Office cloud policy service](overview-office-cloud-policy-service.md). If you never turned on Security Policy Advisor or configured security policies in Security Policy Advisor, this article doesn't apply to you. For future Office cloud policy management, we recommend that you use the Office cloud policy service, which is where we will continue to invest our development resources.
 
-Beginning November 8, 2022, we'll start the process of retiring Security Policy Advisor (if you've never used it before, you won't be able to turn it on and use it). In January 2022, for those customers who have existing configurations in Security Policy Advisor, we'll automatically migrate policy configurations to the Office cloud policy service.
+Beginning November 8, 2021, we'll start the process of retiring Security Policy Advisor (if you've never used it before, you won't be able to turn it on and use it). In January 2022, for those customers who have existing configurations in Security Policy Advisor, we'll automatically migrate policy configurations to the Office cloud policy service.
 
 But, you don't need to wait for this automatic migration. You have the following options:
 
