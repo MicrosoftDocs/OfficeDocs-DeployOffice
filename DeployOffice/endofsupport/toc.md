@@ -9,15 +9,11 @@
 ### [Windows 8](windows-8-support.md)
 ### [Windows Server](windows-server-support.md)
 
-## Other Office clients
+## Other Office products
 
-### [Office 2007](office-2007-end-support-roadmap.md)
-### [Office 2010](office-2010-end-support-roadmap.md)
-
-## Office server products
-
-### [Office 2007 servers](/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
+### [Office 2013, Office 2010, Office 2007](plan-upgrade-older-versions-office.md)
 ### [Office 2010 servers](/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products)
+### [Office 2007 servers](/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
 
 ## Upgrade assistance
 
