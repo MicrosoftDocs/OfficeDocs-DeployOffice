@@ -83,7 +83,7 @@ There are also differences in how you deploy, activate, and update Microsoft 365
 
 Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-scilts8).
+In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-scilts8).
   
 ## Plan for Microsoft 365
 
@@ -173,4 +173,4 @@ For more information, see the following articles:
 ## Related articles
 
 - [Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)
-- [Windows and Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390)
+- [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
