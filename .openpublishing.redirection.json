@@ -734,6 +734,16 @@
       "source_path": "DeployOffice/overview-of-the-office-customization-tool-for-click-to-run.md",
       "redirect_url": "/deployoffice/admincenter/overview-office-customization-tool",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/office-2010-end-support-roadmap.md",
+      "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/office-2007-end-support-roadmap.md",
+      "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
+      "redirect_document_id": false
     }
   ]
 }
