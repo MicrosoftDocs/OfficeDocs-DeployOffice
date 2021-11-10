@@ -38,7 +38,7 @@ The following table shows past end of support events that affect Office along wi
 |End of support event   |End of support date |More information|
 |---------|---------|---------|
 |Internet Explorer 11 with Microsoft 365|August 17, 2021|[Microsoft 365 apps say farewell to Internet Explorer 11](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)|
-|Office 2010 | October 13, 2020 |[Office 2010 end of support roadmap](office-2010-end-support-roadmap.md) |
+|Office 2010 | October 13, 2020 |[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md) |
 |Office 2016 for Mac | October 13, 2020 | [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056) |
 |Office 2013 connectivity to Microsoft 365 services|October 13, 2020|[Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)|
 |Windows 7|January 14, 2020|[Windows 7 end of support and Microsoft 365 Apps](windows-7-support.md)|
