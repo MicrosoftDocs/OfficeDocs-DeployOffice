@@ -85,6 +85,9 @@ The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Use
 
 If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
 
+> [!NOTE]
+> If you've enabled the "Delay downloading and installing updates for Office" policy setting, the installation of additional languages by users will also be delayed by the number of days that you've specified in the policy setting.
+
 ## Deploy proofing tools
 
 Each language version of Microsoft 365 Apps includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
