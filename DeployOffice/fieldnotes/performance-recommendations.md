@@ -78,7 +78,7 @@ Antivirus software and other security agents can have a negative impact on the p
 
 If your company uses or plans to use Virtual Desktop Infrastructure (VDI)), your users may experience performance issues with various elements of Microsoft 365.  Managing a VDI environment is beyond the scope of this article, but there are many actions that you can take to help mitigate the effects of the VDI bottlenecks as your users work on the Microsoft 365 platform.
 
-- Microsoft recommends using [Azure Virtual Desktop](/azure/virtual-desktop/) (formerly named Windows Virtual Desktop) for an optimized virtualized Windows and Office experience.
+- Microsoft recommends using [Windows 365](https://www.microsoft.com/windows-365) or [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) (formerly named Windows Virtual Desktop) for an optimized virtualized Windows and Office experience. Both of these options provide pre-configured images that you can deploy. These images already include the recommended performance optimizations listed below.
 - Use [FSLogix](/fslogix/overview) Profile and Office Containers to improve performance in a non-persistent Windows computing environment. This technology can avoid repeated Windows Search reindexing and .OST file downloads that can otherwise cause major perf impacts in a VDI environment.
 - Microsoft specifically recommends using Outlook in Cached Mode using Profile Containers as a key performance improvement.
 - Stay current on Microsoft 365 Apps to get the latest VDI performance improvements.
