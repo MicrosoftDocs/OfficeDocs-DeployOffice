@@ -79,8 +79,7 @@ You can use either [Group Policy](https://www.microsoft.com/download/details.asp
 The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install additional languages by going to **File** > **Options** > **Language** > **Office display language** > **Add a Language...** in their Office app.
 
 > [!NOTE]
-> - You must be using Version 2108 or later of Microsoft 365 Apps for enterprise.
-> - We'll begin rolling out support in mid-September for the Office apps on Current Channel, followed by Monthly Enterprise Channel in October.
+> - This capability is available in Microsoft 365 Apps for enterprise, starting with Version 2108 of Current Channel and with Version 2109 of Monthly Enterprise Channel.
 > - Support will be available at a later date for Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
 
 If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
