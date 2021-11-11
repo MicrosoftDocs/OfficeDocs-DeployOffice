@@ -76,7 +76,7 @@ By default, users must have local administrator permissions on their devices to 
 
 You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
 
-The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install additional languages by going to **File** > **Options** > **Language** > **Office authoring languages and proofing** > **Add a Language...** in their Office app.
+The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install additional languages by going to **File** > **Options** > **Language** > **Office display language** > **Add a Language...** in their Office app.
 
 > [!NOTE]
 > - You must be using Version 2108 or later of Microsoft 365 Apps for enterprise.
