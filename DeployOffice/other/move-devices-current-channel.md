@@ -40,6 +40,8 @@ For example, if you’re using Office policy settings (with Group Policy or Offi
 
 If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](../office-deployment-tool-configuration-options.md#add-element)), and not any of the other methods mentioned in the previous paragraph, then your choice under **Feature updates** will apply to those devices.
 
+Also, if you're using the Microsoft 365 Apps admin center (https://config.office.com), and the device is included in the [inventory](../admincenter/inventory.md) or is managed by a [servicing profile](../admincenter/servicing-profile.md), then your choice under **Feature updates** won't apply.
+
 ## What is Current Channel?
 
 On Current Channel, new or updated features are usually released every month. These monthly releases might also contain security updates and non-security updates, such as stability or performance improvements for Office.
