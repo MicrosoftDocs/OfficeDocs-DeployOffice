@@ -2912,48 +2912,47 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.Transport.]*
 
-Reports on the file download actions to determine the success of the operation, type of download performed and diagnostic information.
+This event is triggered whenever Click-To-Run tries to download a file that it needs for the Office install. The data is used to determine the success of the operation, type of download performed and diagnostic information.
+ 
+The following fields are collected:
 
+- **BytesFromGroupPeers** - Bytes from group peers, only for downloads using Delivery Optimization (DO)
 
-- **BytesFromGroupPeers -**    Bytes from group peers, only for downloads using Delivery Optimization
+- **BytesFromHttp** - Bytes from http, only for downloads using Delivery Optimization (DO) 
 
-- **BytesFromHttp -**     Bytes from http, only for downloads using Delivery Optimization
+- **ByteFromInternetPeers** - Bytes from internet peers, only for downloads using Delivery Optimization (DO) 
 
-- **ByteFromInternetPeers -**    Bytes from internet peers, only for downloads using Delivery Optimization 
+- **BytesFromLanPeers** - Bytes from Lan peers, only for downloads using Delivery Optimization (DO) 
 
-- **BytesFromLanPeers -**    Bytes from Lan peers, only for downloads using Delivery Optimization 
+- **CancelledJobs** - Number of cancelled requests in the session
 
-- **canceledJobs -**     Number of canceled requests in the session
+- **Connected** - Whether connected to source 
 
-- **Connected -**    Whether connected to source
+- **ErrorCode** - The code of last error 
 
-- **ErrorCode -**    The code of last error
+- **ErrorDetails** - The detail of last error
 
-- **ErrorDetails -**     The detail of last error
+- **ErrorMessage** - The message of last error 
 
-- **ErrorMessage -**    The message of last error 
+- **ErrorSource** - The source of last error, e.g., Connection, LoadFile or LoadRange
 
-- **ErrorSource -**    The source of last error, e.g. Connection, LoadFile or LoadRange
+- **FailedJob** - Number of failed requests in the session
 
-- **FailedJob -**    Number of failed requests in the session
+- **FileSize** - Size of the resource
 
-- **FileSize -**    Size of the resource
+- **SourcePathNoFilePath** - Source path of the resource only http source is reported, local file path or UNC path is filtered
 
-- **SourcePathNoFilePath -**    Source path of the resource only http source is reported, local file path or UNC path is filtered
+- **SucceededJobs** - Number of succeeded requests in the session
 
-- **SucceededJobs -**    Number of succeeded requests in the session
+- **TotalJobs** - Total number of requests in the session
 
-- **TotalJobs -**     Total number of requests in the session
+- **TotalRequestedBytes** - Total requested bytes in the session
 
-- **TotalRequestedBytes -**     Total requested bytes in the session
+- **TotalTransferTime** - Total transfer time in the session
 
-- **TotalTransferTime -**    Total transfer time in the session
+- **TransferredBytes** - Total transferred bytes in the session
 
-- **TransferredBytes -**     Total transferred bytes in the session
-
-- **TransportType -**    Type of transport, e.g. (In memory Delivery Optimization, HTTP, Background Intelligent Transfer Service)
-
-
+- **TransportType** - Type of transport, e.g., In memory Delivery Optimization, HTTP, Background Intelligent Transfer Service (BITS)
 
 ### Office.ClickToRun.Transport.ExperimentalTransport.PipelineCreateTransport
 
@@ -2992,17 +2991,18 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.UniversalBootstrapper.Application.]*
 
-Reports the result of the end-to-end installation attempt
+This event is triggered when a user runs the Office installer to modify their Office installation. The data is used to report the result of the end-to-end installation attempt.
+  
+- **ErrorCode** - Integer value associated with an unhandled exception
 
- - **ErrorCode –**    Integer value associated with an unhandled exception
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
- - **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
- - **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorType** - String describing the category of an unhandled exception
 
- - **ErrorType –**    String describing the category of an unhandled exception
+- **ExitCode** - Integer value associated with the result of running the bootstrapper, indicating success vs. specific types of failure
 
- - **ExitCode –**    Integer value associated with the result of running the bootstrapper, indicating success vs. specific types of failure
 
 ### Office.ClickToRun.UniversalBootstrapper.CalculateParameters2
 
@@ -3077,121 +3077,126 @@ Reports on the action that reason over the input collected using CollectParamete
 
 *[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature.]*
 
-Reports on the action that reads tagged input from the exe's embedded signature.  This is an unproven concept the previous iteration of setup.exe did not implement, and is what we're relying on to carry the user's product/language/bitness choices from web page to in-process within setup.exe.
+RThis event is triggered when a user runs the Office installer to modify their Office installation. The data allows us to carry the user's product, language, and choice of 64- or 32-bit Office to in-process within setup.exe.
  
-- **ErrorCode –**    Integer number associated with an unhandled exception
+The following fields are collected:
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorCode** - Integer number associated with an unhandled exception
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+
+- **ErrorType** - String describing the category of an unhandled exception
+
 
 ### Office.ClickToRun.UniversalBootstrapper.CollectParameters2
 
 *[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectParameters.]*
 
-Reports the parameters used for the Office installation
+This event is triggered when a user runs the Office installer to modify their Office installation.  The data is used to report the parameters used for the Office installation and keep it running as expected.
 
-- **BitField –**    Integer value of the BitField argument, which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
+- **BitField** - Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
+- **C2RClientUICulture** - Culture of the Click-to-Run (C2R) Client to install
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
+- **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **C2RClientUICulture –**    Culture of the C2R Client to install
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
 
-- **ErrorCode –**    Integer value associated with an unhandled exception
+- **ErrorCode** - Integer value associated with an unhandled exception
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **ErrorType** - String describing the category of an unhandled exception
 
-- **ExcludedApps –**    String listing the individual Office application names requested to be excluded from the Office suites installed
+- **ExcludedApps** - String listing the individual Office application names requested to be excluded from the Office suites installed
 
-- **InstalledCabVersion –**    The "16.0.xxxxx.yyyyy" version of an Office C2R Client already installed
+- **InstalledCabVersion** - The "16.0.xxxxx.yyyyy" version of an Office Click-to-Run (C2R) Client already installed
 
-- **InstalledProductVersion –**    The "16.0.xxxxx.yyyyy" version of an Office C2R product already installed
+- **InstalledProductVersion** - The "16.0.xxxxx.yyyyy" version of an Office Click-to-Run (C2R) product already installed
 
-- **IsC2RServiceRunning –**    Boolean flag that indicates whether a modern C2R Client's local machine service is up and running on the device
+- **IsC2RServiceRunning** - Boolean flag that indicates whether a modern Click-to-Run (C2R) Client's local machine service is up and running on the device
 
-- **IsElevatedFlagSet –**    Boolean flag indicating whether the bootstrapper has already attempted to gain admin elevation
+- **IsElevatedFlagSet** - Boolean flag indicating whether the bootstrapper has already attempted to gain admin elevation
 
-- **IsFireFlyInstalled –**    Boolean flag indicating whether the Office 2013 RTM C2R Client is currently installed
+- **IsFireFlyInstalled** - Boolean flag indicating whether the Office 2013 RTM Click-to-Run (C2R) Client is currently installed
 
-- **IsFireflyServiceRunning –**    Boolean flag that indicates whether a 2013 RTM C2R Client's local machine service is up and running on the device
+- **IsFireflyServiceRunning** - Boolean flag that indicates whether a 2013 RTM Click-to-Run (C2R) Client's local machine service is up and running on the device
 
-- **IsOfficeInstalled –**    Boolean flag indicating whether a modern Office client is installed already
+- **IsOfficeInstalled** - Boolean flag indicating whether a modern Office client is installed already
 
-- **OfficeCultures –**    Serialized list of Office cultures to be installed
+- **OfficeCultures** - Serialized list of Office cultures to be installed
 
-- **OfficeSourceType –**    Friendly string associated with the enum value of the installation source (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+- **OfficeSourceType** - Friendly string associated with the enum value of the installation source (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
 
-- **Origin –**    String value telling us which of the supported origins (Puerto Rico [PR], Singapore [SG], Dublin [DB]) should be used for initial installation streaming
+- **Origin** - String value telling us which of the supported origins (Puerto Rico [PR], Singapore [SG], Dublin [DB]) should be used for initial installation streaming
 
-- **PlatformFromLink –**    String indicating the requested x86|x64|default bitness of Office requested from the C2R Setup service
+- **PlatformFromLink** - String indicating the requested (x86 vs x64) default bits of Office requested from the Click-to-Run (C2R) Setup service
 
-- **PlatformOfExistingInstallation –**    String indicating whether x86 vs. X64 Office was already installed on the device
+- **PlatformOfExistingInstallation** - String indicating whether x86 vs. X64 Office was already installed on the device
 
-- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed
+- **PlatformToInstall** - String indicating the final decision on whether x86 vs. X64 Office should be installed. Possibilites are: autorun, configure, consumer, download, help, packager
 
-- **PRID –**    String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
+- **PRID** - String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
-- **PridsToMigrateFromCentennial-** String of Office products to migrate from Store installations to Click-To-Run
+- **PridsToMigrateFromCentennial** - String of Office products to migrate from Store installations to Click-To-Run
 
-- **ProductsToAdd –**    The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+- **ProductsToAdd** - The serialized string that instructs Click-to-Run (C2R) Client on which Product/Culture combinations it should be installing
 
-- **ProductsToMigrateFromO15C2R -** String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
+- **ProductsToMigrateFromO15C2R** - String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
 
-- **ProductsToRemove –**    The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
+- **ProductsToRemove** - The serialized string that instructs Click-to-Run (C2R) Client on which Product/Culture combinations it should be uninstalling
 
-- **SharedComputerLicensing –**    Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
+- **SharedComputerLicensing** - Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
-- **ShouldActivate–**    Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+- **ShouldActivate** - Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
 
-- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
+- **ShouldUninstallCentennial** - Boolean flag indicating whether Office products from the Store should be uninstalled
 
-- **VersionToInstall–**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
+- **VersionToInstall** - String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
+
 
 ### Office.ClickToRun.UniversalBootstrapper.Execute2
 
 *[This event was previously named Office.ClickToRun.UniversalBootstrapper.Execute.]*
 
-Reports on the machine-impactful actions taken, as determined by the reasoned-over data from "CalculateParameters"
+This event is triggered when a user runs the Office installer to modify their Office installation. The data is used to report on the machine-impactful actions taken, as determined by the reasoned-over data from "CalculateParameters"
+ 
+- **AvailableClientVersionText** - String value of the C2R Client "16.0.xxxxx.yyyyy" version found in the Version Descriptor XML, which is used to determine whether a currently installed C2R Client should be updated
 
-- **AvailableClientVersionText –**    String value of the C2R Client "16.0.xxxxx.yyyyy" version found in the Version Descriptor XML, which is used to determine whether a currently installed C2R Client should be updated
+- **CleanFireflyAction** - "true" if the CleanFireFlyAction task is scheduled to run during this installation
 
-- **CleanFireflyAction –**    "true" if the CleanFireFlyAction task is scheduled to run during this installation
+- **CleanO15Action** - "true" if the CleanO15Action task is scheduled to run during this installation
 
-- **CleanO15Action –**    "true" if the CleanO15Action task is scheduled to run during this installation
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
+- **DeliveryMechanism** - The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
 
-- **DeliveryMechanism –**    The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
+- **DownloadC2RClientAction** - "true" if the DownloadC2RClientAction task is scheduled to run during this installation
 
-- **DownloadC2RClientAction –**    "true" if the DownloadC2RClientAction task is scheduled to run during this installation
+- **ErrorCode** - Integer value associated with an unhandled exception
 
-- **ErrorCode –**    Integer value associated with an unhandled exception
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorType** - String describing the category of an unhandled exception
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **ExitCode** - Integer value associated with the result of running the Execute phase of the bootstrapper, indicating success vs. specific types of failure
 
-- **ExitCode –**    Integer value associated with the result of running the Execute phase of the bootstrapper, indicating success vs. specific types of failure
+- **LaunchAction** - "true" if the LaunchAction task is scheduled to run during this installation
 
-- **LaunchAction –**    "true" if the LaunchAction task is scheduled to run during this installation
+- **LaunchUpdateAction** - "true" if the LaunchUpdateAction task is scheduled to run during this installation. Possibilites are - Autorun, configure, consumer, download, help, packager
 
-- **LaunchUpdateAction –**    "true" if the LaunchUpdateAction task is scheduled to run during this installation
+- **PreReqResult** - The integer enum value of the result when PreReq checks were performed (pass/fail/re-run)
 
-- **PreReqResult –**    The integer enum value of the result when PreReq checks were performed (pass/fail/re-run)
+- **UnexpectedAction** - "true" if the UnexpectedAction task (an error case) is scheduled to run during this installation
 
-- **UnexpectedAction –**    "true" if the UnexpectedAction task (an error case) is scheduled to run during this installation
+- **VersionToInstall** - String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
-- **VersionToInstall –**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
 ### Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
