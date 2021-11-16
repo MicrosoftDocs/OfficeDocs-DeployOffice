@@ -1799,157 +1799,159 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.Scenario.InstallTaskRemoveinstallation.]*
 
-Office set up and inventory data collected when the Office uninstaller is removing parts of Office from the device. Used to measure success / failure of Office installation.
+This event collects Office set up and inventory data when the Office uninstaller is removing parts of Office from the user's device. The data is used to measure success or failure of Office installation.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion-**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** -The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we are adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - What Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're  removing 
+- **Data_RemovingFixedProducts** - The products we are removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - What scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID  -** Unique Machine ID used by Windows SQM
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Scenario.InstallTaskStream2
 
 *[This event was previously named Office.ClickToRun.Scenario.InstallTaskStream.]*
 
-Office set up and inventory data collected when the Office installer is downloading new files for Office. Used to measure success / failure of Office installation.
+Office set up and inventory data collected when the Office installer is downloading new files for Office. The data is used to measure success or failure of Office installation.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType  -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled -** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion  -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version  -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts -** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts  -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource  -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-**  what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
 
-  - **Data\_SusClientID -** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
@@ -2107,79 +2109,80 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.Scenario.RepairTaskFullrepair.]*
 
-Office set up and inventory data collected when the Office repair client downloads the latest version of the Click-to-Run client to prepare the computer for uninstall and reinstall. Used to measure success / failure of Office repair.
+Office set up and inventory data collected when the Office repair client downloads the latest version of the Click-to-Run client to prepare the computer for uninstall and reinstall. The data is used to measure success or failure of Office repair.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -** What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2577,79 +2580,79 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload.]*
 
-Office set up and inventory data collected when the Click-to-Run client downloads a newer version of itself. Used to measure success / failure of Office update.
+Office set up and inventory data collected when the Click-to-Run client downloads a newer version of itself. The data is used to measure success or failure of Office update.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -** What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName-** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID  -** Unique Machine ID used by Windows SQM
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
 
 ### Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2739,91 +2742,92 @@ The following fields are collected:
 
 *[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdatedownload.]*
 
-Office set up and inventory data collected when the Click-to-Run client is downloading a new update. Used to measure success / failure of Office update.
+Office set up and inventory data collected when the Click-to-Run client is downloading a new update. Used to measure success or failure of Office update.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_AvailableVersion -** What version of Office is available to update to
+- **Data_AvailableVersion** - What version of Office is available to update to
 
-  - **Data\_CompletedWithoutActionInfo-** Why we didn't complete the scenario, i.e. Apps were open
+- **Data_CompletedWithoutActionInfo** - Why we didn’t complete the scenario, i.e., Apps were open
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_CorruptionChecksOnly -** If we're only checking for corruption and not updating
+- **Data_CorruptionChecksOnly** - If we’re only checking for corruption and not updating
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place
+- **Data_ErrorSource** - Where the error took place
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_FoundCorruptFiles -** True if we found corrupt files
+- **Data_FoundCorruptFiles** - True if we found corrupt files
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_PackageOperationSuccessful -** True if we successfully completed our task on the Office package
+- **Data_PackageOperationSuccessful** - True if we successfully completed our task on the Office package
 
-  - **Data\_PipelineExitCode -** The exit code our file pipeline returned
+- **Data_PipelineExitCode** - The exit code our file pipeline returned
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -** Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office
+
 
 ### Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize2
 
@@ -2833,75 +2837,76 @@ Office set up and inventory data collected when the Click-to-Run Client is clean
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion-**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
 
-  - **Data\_SusClientID -** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Transport2
 
