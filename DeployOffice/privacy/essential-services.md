@@ -3102,7 +3102,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilites are: autorun, configure, consumer, download, help, packager
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: autorun, configure, consumer, download, help, packager
 
 - **ErrorCode** - Integer value associated with an unhandled exception
 
@@ -3171,7 +3171,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **CleanO15Action** - "true" if the CleanO15Action task is scheduled to run during this installation
 
-- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilites are: Autorun, configure, consumer, download, help, packager
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: Autorun, configure, consumer, download, help, packager
 
 - **DeliveryMechanism** - The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
 
