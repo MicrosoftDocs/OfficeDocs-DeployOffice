@@ -12226,7 +12226,7 @@ The following fields are collected:
 - **SessionLength** - Length of current process session in seconds
 
 
-### lifecycle_previousexitdata
+### lifecycle.previousexitdata
 
 This event is triggered by Microsoft AutoUpdate (MAU) launch, and reports on the termination status of the previous session. Microsoft uses this data to monitor reliability of the MAU process for future improvement.
 
