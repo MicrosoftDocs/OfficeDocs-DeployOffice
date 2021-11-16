@@ -3100,7 +3100,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **C2RClientUICulture** - Culture of the Click-to-Run (C2R) Client to install
 
-- **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
+- **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel, or Invalid.
 
 - **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: autorun, configure, consumer, download, help, packager
 
