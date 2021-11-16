@@ -1795,7 +1795,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
+### Office.ClickToRun.Scenario.InstallTaskRemoveinstallation2
+
+*[This event was previously named Office.ClickToRun.Scenario.InstallTaskRemoveinstallation.]*
 
 Office set up and inventory data collected when the Office uninstaller is removing parts of Office from the device. Used to measure success / failure of Office installation.
 
@@ -1871,7 +1873,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.InstallTaskStream
+### Office.ClickToRun.Scenario.InstallTaskStream2
+
+*[This event was previously named Office.ClickToRun.Scenario.InstallTaskStream.]*
 
 Office set up and inventory data collected when the Office installer is downloading new files for Office. Used to measure success / failure of Office installation.
 
@@ -2099,7 +2103,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.RepairTaskFullrepair
+### Office.ClickToRun.Scenario.RepairTaskFullrepair2
+
+*[This event was previously named Office.ClickToRun.Scenario.RepairTaskFullrepair.]*
 
 Office set up and inventory data collected when the Office repair client downloads the latest version of the Click-to-Run client to prepare the computer for uninstall and reinstall. Used to measure success / failure of Office repair.
 
@@ -2567,7 +2573,9 @@ The following fields are collected:
 
   - **Data\_WorkstationLockState -** True if we think the computer is locked
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload
+### Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload2
+
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload.]*
 
 Office set up and inventory data collected when the Click-to-Run client downloads a newer version of itself. Used to measure success / failure of Office update.
 
@@ -2727,7 +2735,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
+### Office.ClickToRun.Scenario.UpdateTaskUpdatedownload2
+
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdatedownload.]*
 
 Office set up and inventory data collected when the Click-to-Run client is downloading a new update. Used to measure success / failure of Office update.
 
@@ -2815,7 +2825,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
+### Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize2
+
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize.]*
 
 Office set up and inventory data collected when the Click-to-Run Client is cleaning up from the update and restoring apps that were previously open. Used to measure success or failure of Office update.
 
@@ -2891,7 +2903,9 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Transport
+### Office.ClickToRun.Transport2
+
+*[This event was previously named Office.ClickToRun.Transport.]*
 
 Reports on the file download actions to determine the success of the operation, type of download performed and diagnostic information.
 
@@ -2969,7 +2983,9 @@ The following fields are collected:
   - **Data\_targetBuild -** -The Office version that we are attempting to update to
 
 
-### Office.ClickToRun.UniversalBootstrapper.Application
+### Office.ClickToRun.UniversalBootstrapper.Application2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.Application.]*
 
 Reports the result of the end-to-end installation attempt
 
@@ -2983,7 +2999,9 @@ Reports the result of the end-to-end installation attempt
 
  - **ExitCode –**    Integer value associated with the result of running the bootstrapper, indicating success vs. specific types of failure
 
-### Office.ClickToRun.UniversalBootstrapper.CalculateParameters
+### Office.ClickToRun.UniversalBootstrapper.CalculateParameters2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CalculateParameters.]*
 
 Reports on the action that reason over the input collected using CollectParameters
 
@@ -3050,7 +3068,9 @@ Reports on the action that reason over the input collected using CollectParamete
 - **VersionToInstall –**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
  
 
-### Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
+### Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature.]*
 
 Reports on the action that reads tagged input from the exe's embedded signature.  This is an unproven concept the previous iteration of setup.exe did not implement, and is what we're relying on to carry the user's product/language/bitness choices from web page to in-process within setup.exe.
  
@@ -3062,7 +3082,9 @@ Reports on the action that reads tagged input from the exe's embedded signature.
 
 - **ErrorType –**    String describing the category of an unhandled exception
 
-### Office.ClickToRun.UniversalBootstrapper.CollectParameters
+### Office.ClickToRun.UniversalBootstrapper.CollectParameters2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectParameters.]*
 
 Reports the parameters used for the Office installation
 
@@ -3128,7 +3150,9 @@ Reports the parameters used for the Office installation
 
 - **VersionToInstall–**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
-### Office.ClickToRun.UniversalBootstrapper.Execute
+### Office.ClickToRun.UniversalBootstrapper.Execute2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.Execute.]*
 
 Reports on the machine-impactful actions taken, as determined by the reasoned-over data from "CalculateParameters"
 
