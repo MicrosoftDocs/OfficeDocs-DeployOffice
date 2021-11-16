@@ -15,8 +15,10 @@ description: "Provides admins with information about the licensing helper tool a
 
 # Licensing helper tool
 
-The licensing helper tool is.....
+Office for Mac uses a helper tool to provide device-wide activation for perpetual licenses such as Office 2021 Home & Business. The helper tool is included in the installer package and resides on disk under /Library/PrivilegedHelperTools/com.microsoft.office.licensingV2.helper
 
-You can use [msupdate](update-office-for-mac-using-msupdate.md) to update the licensing helper tool. It's app identifier is OLIC02. You must be using at least Version 16.55 of Office for Mac.
+Starting with Microsoft AutoUpdate 4.41 the helper tool will be automatically updated if an older version is found on your computer. If you don't use Microsoft AutoUpdate to keep Office up-to-date, you can manually download and deploy the helper tool from https://go.microsoft.com/fwlink/p/?linkid=2181269
 
-You can manually update the licensing helper tool by downloading it from https://go.microsoft.com/fwlink/p/?linkid=######.
+NOTE: The helper tool is not used or installed if Office apps are downloaded from the Mac AppStore.
+
+You can also use [msupdate](update-office-for-mac-using-msupdate.md) to update the licensing helper tool. It's app identifier is OLIC02.
