@@ -3014,7 +3014,7 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
+- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: autorun, configure, consumer, download, help, packager
 
 - **C2RClientUICulture –**    Culture of the C2R Client to install
 
@@ -3052,7 +3052,7 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **PlatformOfExistingInstallation –**    String indicating whether x86 vs. X64 Office was already installed on the device
 
-- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed. Possibilities are:  autorun, configure, consumer, download, help, packager
+- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed. 
 
 - **PRID –**    String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
@@ -3102,7 +3102,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilites are: autorun, configure, consumer, download, help, packager
 
 - **ErrorCode** - Integer value associated with an unhandled exception
 
@@ -3138,7 +3138,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **PlatformOfExistingInstallation** - String indicating whether x86 vs. X64 Office was already installed on the device
 
-- **PlatformToInstall** - String indicating the final decision on whether x86 vs. X64 Office should be installed. Possibilites are: autorun, configure, consumer, download, help, packager
+- **PlatformToInstall** - String indicating the final decision on whether x86 vs. X64 Office should be installed. 
 
 - **PRID** - String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
@@ -3171,7 +3171,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **CleanO15Action** - "true" if the CleanO15Action task is scheduled to run during this installation
 
-- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilites are: Autorun, configure, consumer, download, help, packager
 
 - **DeliveryMechanism** - The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
 
@@ -3189,7 +3189,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 - **LaunchAction** - "true" if the LaunchAction task is scheduled to run during this installation
 
-- **LaunchUpdateAction** - "true" if the LaunchUpdateAction task is scheduled to run during this installation. Possibilites are - Autorun, configure, consumer, download, help, packager
+- **LaunchUpdateAction** - "true" if the LaunchUpdateAction task is scheduled to run during this installation. 
 
 - **PreReqResult** - The integer enum value of the result when PreReq checks were performed (pass/fail/re-run)
 
