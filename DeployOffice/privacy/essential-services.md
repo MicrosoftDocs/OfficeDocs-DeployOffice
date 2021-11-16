@@ -3590,7 +3590,7 @@ The following fields are collected:
 
 ### Office.Dime.Sdk.Health
 
-This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
+The event captures data that helps in monitoring the health of the components that host the in-app purchase flow within Office Mobile app. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription. 
 
 The following fields are collected:
 
@@ -3632,6 +3632,8 @@ The following fields are collected:
 
 - **Data_Language** - Culture
 
+- **Data_LaunchId** - Unique ID for each launch instance
+
 - **Data_Market** - Detected market
 
 - **Data_OTelJS_Version** - Office telemetry version
@@ -3639,6 +3641,10 @@ The following fields are collected:
 - **Data_PageSessionId** - Session ID of the page
 
 - **Data_PartnerId** - Caller App
+
+- **Data_ProductId** - Product ID selected (not neccessarily purchased) by customer
+
+- **Data_ProductName** - Friendly product name of product selected (not neccessarily purchased) by customer
 
 - **Data_QosLevel** - Severity 0/1/2
 
@@ -3659,6 +3665,8 @@ The following fields are collected:
 - **Data_SDX_SessionId** - Session ID of the SDX for Win32
 
 - **Data_SDX_Version** - SDX Version for Win32
+
+- **Data_SkuId** - SKU ID selected (not neccessarily purchased) by customer
 
 - **Data_TimestampUTC** - Timestamp of the event
 
@@ -5271,6 +5279,16 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session.
+
+
+### configuration.preference
+
+This event is logged whenever Microsoft AutoUpdate encounters an issue with preferences. The data will be used to determine extent of issues caused by clients incorrectly setting applications dictionary.
+
+The following fields are collected
+
+- **Payload** - Static text.
+
 
 ### configuration.systemVersion
 
@@ -7281,6 +7299,19 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### downloadmanifest.cachedupdate
+
+This event is triggered when a download is requested and a cached file is already saved locally. This event reports on use of cached updates. The data is used to measure the success of cached update feature from the number of cached update packages located, used, failed verification, etc.
+
+The following fields are collected:
+
+- **AppID** - Identifier of application related to the event.
+
+- **Reason** - String containing detailed reason associated with the event.
+
+- **Success** - Boolean indicating success of operation related to the event.
+
+
 ### downloadmanifest.configuration
 
 This event reports an error with Microsoft Auto Update (MAU) configuration - either with Custom Server setup in preferences or in endpoint definitions in Update Assistant in installed MAU components. We use this event to advise IT Admins to set correct Manifest Server endpoints.
@@ -8118,6 +8149,24 @@ The following fields are collected:
 - **UpdateID** - Identifier for an application update
 
 - **UpdateURL** - URL of update package that needs to be applied
+
+
+### errorsandwarnings
+
+This event is triggered by an abnormal condition detected while running Microsoft AutoUpdate. Microsoft uses the data to detect and address any issues found.
+
+The following fields are collected:
+
+- **AppID** - Identifier of application related to the event
+
+- **Error** - Indicates details on error encountered related to the event
+
+- **File** - String showing current file name.
+
+- **Operation** - Indicates operation being performed when an error or a warning was encountered
+
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
+
 
 ### fba.changelastupdate
 
@@ -12175,6 +12224,45 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 - **SessionLength** - Length of current process session in seconds
+
+
+### lifecycle_previousexitdata
+
+This event is triggered by Microsoft AutoUpdate (MAU) launch, and reports on the termination status of the previous session. Microsoft uses this data to monitor reliability of the MAU process for future improvement.
+
+The following fields are collected:
+
+- **DetectedHangCount** - Number of Hangs detected for previous session.
+
+- **ExceptionEnum** - Numeric value identifying exception thrown that caused previous session to exit.
+
+- **ExitWasGraceful** - String indicating whether previous session was exited gracefully. This is used to determine reliability of Microsoft AutoUpdate process.
+
+- **LastULSLogTag** - Last ULS log encountered before the previous session ungraceful exit.
+
+- **OSLocale** - OS Locale previous session was running under.
+
+- **OSVersion** - OS Version previous session was running under.
+
+- **ResidentMemoryOnCrash** - Resident Memory footprint for previous session.
+
+- **SessionBuildNumber** - String identifying previous session build number.
+
+- **SessionDurationSeconds** - Previous session duration in seconds.
+
+- **SessionId** - String identifying previous session.
+
+- **SessionLongBuildNumber** - String identifying previous session version in extended format.
+
+- **SessionTerminationDurationSeconds** - Session termination duration in seconds.
+
+- **SessionVersion** - String identifying previous session version.
+
+- **StackHash** - Hash value of the crash stack detected.
+
+- **UnsymbolicatedChecksum** - Checks sum of unsymbolicated crash data for previous session.
+
+- **VirtualMemoryOnCrash** - Virtual Memory footprint for previous session.
 
 
 ### Lifecycle.terminate
