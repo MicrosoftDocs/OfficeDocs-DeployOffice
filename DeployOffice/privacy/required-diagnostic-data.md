@@ -1420,6 +1420,12 @@ The following fields are collected:
 
 - **Id** – A unique identifier (GUID) for the launching and creating a file. This ID is used to correlate events from Office and Windows.
 
+- **LaunchBootType** - The actions required to launch the container. For example, existing container used, existing container terminated and new container created.
+
+- **LockFile** - Whether the file to be opened was locked by the Application Guard process.
+
+- **Reason** - Indicates why the file was opened in Application Guard. For example, file has mark of the web, file is in unsafe location.
+
 - **ResetError** - Error code from trying to reset the container after a failed attempt.
 
 - **ResetErrorCode1** – Type of container setup error code after reset command. 
@@ -1430,6 +1436,13 @@ The following fields are collected:
 
 - **ResetErrorType** - Type of error: Creation, PrepFile or Launch.
 
+#### Office.AppGuard.OpenInContainer
+
+This event is triggered when the Office application running in the Application Guard container signals that the request to open a file has been received. The data is used to diagnose failures during the initialization of the Office application in the Application Guard container.
+
+The following fields are collected:
+
+- **FileId** - A unique identifier (GUID) for the file in the Application Guard container. Used to correlate Application Guard events that occur inside and outside the container.
 
 
 #### Office.Security.ActivationFilter.CLSIDActivated
@@ -9095,6 +9108,8 @@ The following fields are collected:
 - **changed_folder** - Capturing whether a folder was changed to help us diagnose issues. 
 
 - **delete_scope** - During an account deletion, whether you deleted the account from this device or from all devices with Outlook.  
+
+- **emo_default_provider_addin_id** - Field that captures the compliant add-in id of the default meeting provider.
 
 - **emo_default_provider_selected_type** - Field that determines the type of the default meeting provider set by the user. 
 
