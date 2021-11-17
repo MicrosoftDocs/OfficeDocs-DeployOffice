@@ -37,7 +37,6 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 - An [eligible license assigned](/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
 - A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
 - Reliable connectivity between the shared computer and the internet.
-- If you're deploying Microsoft 365 Apps on a shared virtual machine, Microsoft supports using [Hyper-V](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) only.
 
 > [!NOTE]
 > - The ability to enable shared computer activation is a Microsoft 365 Business Premium entitlement and not a feature of Microsoft 365 Apps for business in general.
@@ -75,7 +74,7 @@ At this point, users can connect to the RD Session Host server and use Microsoft
 ## Install Microsoft 365 Apps on a shared virtual machine
 <a name="VM"> </a>
 
-In this scenario, you install Microsoft 365 Apps as part of a client operating system image, such as one running Windows 8.1 or Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
+In this scenario, you install Microsoft 365 Apps as part of a client operating system image, such as one running Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
 
 > [!NOTE]
 > You can also use RDS to assign a virtual machine to a specific user. RDS calls that a personal virtual desktop. In that scenario, you don't use shared computer activation, because the virtual machine isn't shared among multiple users. 
