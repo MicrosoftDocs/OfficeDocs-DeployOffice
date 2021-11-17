@@ -74,8 +74,13 @@ Here are some example installation scenarios, whether they're supported, and an 
 |Microsoft 365 Apps  <br/><br/> Visio Professional 2016 (volume licensed)  |   No, but there is an alternative installation method available. | They use different installation technologies (Click-to-Run and MSI), but they are the same version (16.0). <br/><br/> For more information about the alternative installation method that's available, see [Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).        |
 |Microsoft 365 Apps  <br/><br/> Project Professional 2019 (volume licensed)  |   Yes, but with a caveat. <sup>1</sup>   | They both use Click-to-Run and are the same version (16.0).         |
 | Microsoft 365 Apps  <br/><br/> Visio Standard 2019 (retail) |   Yes, but with a caveat. <sup>1</sup>  | They both use Click-to-Run and are the same version (16.0).         |
+|Microsoft 365 Apps  <br/><br/> Visio LTSC Professional 2021 (volume licensed)  |   Yes, but with a caveat. <sup>2</sup>   | They both use Click-to-Run and are the same version (16.0).         |
+| Microsoft 365 Apps  <br/><br/> Project Standard 2021 (retail) |   Yes, but with a caveat. <sup>2</sup>  | They both use Click-to-Run and are the same version (16.0).         |
 
-<sup>1</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 or later is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+> [!NOTE]
+> <sup>1</sup> You must be using at least Version 1808 of Microsoft 365 Apps, because that's the earliest version that recognizes Office 2019 products, including Project and Visio. Version 1808 or later is available in all update channels. For Microsoft 365 Apps release information, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+>
+><sup>2</sup> You must be using at least Version 2108 of Microsoft 365 Apps, because that's the earliest version that recognizes Project 2021, Visio LTSC 2021, and Visio 2021. To see which update channels that Version 2108 or later is available in, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## Additional information
 
