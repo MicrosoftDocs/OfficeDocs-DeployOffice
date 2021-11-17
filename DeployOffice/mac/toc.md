@@ -8,6 +8,7 @@
 # Activate
 ## [Overview](overview-of-activation-for-office-for-mac.md)
 ## [Volume License (VL) Serializer](volume-license-serializer.md)
+## [Licensing helper tool](licensing-helper-tool.md)
 
 # Manage updates
 ## [Deploy updates](deploy-updates-for-office-for-mac.md)
