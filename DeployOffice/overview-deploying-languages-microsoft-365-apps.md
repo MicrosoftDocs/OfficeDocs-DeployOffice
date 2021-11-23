@@ -298,9 +298,6 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 
 <sup>1</sup> This language is only available for Version 2108 or later.
 
-## Known issues
-When using Microsoft PowerPoint or Microsoft Word with language pack `en-gb`, the application may close when adding a fill color to objects. We are investigating a possible resolution to this issue. 
-
 ## Related articles
 
 - [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
