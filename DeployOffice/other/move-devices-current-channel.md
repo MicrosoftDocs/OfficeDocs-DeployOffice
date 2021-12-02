@@ -18,7 +18,7 @@ description: "Provides guidance only to customers who received a Message center 
 > [!IMPORTANT]
 > The information in this article applies only to organizations that received a Message center post (in the Microsoft 365 admin center) about their devices with Office being moved from Semi-Annual Enterprise Channel to Current Channel.
 
-In June 2020, we changed the default update channel selection on the **Office installation options** page in the Microsoft 365 admin center to Current Channel. We made that change because customers on Current Channel have reported higher satisfaction than those customers on Semi-Annual Enterprise Channel, the previous default. That change only applied to new customers.
+In 2020, we changed the default update channel selection on the **Office installation options** page in the Microsoft 365 admin center to Current Channel. We made that change because customers on Current Channel have reported higher satisfaction than those customers on Semi-Annual Enterprise Channel, the previous default. That change only applied to new customers.
 
 With the goal of improving the experiences of all our customers, we're now transitioning existing customers to Current Channel, which is our recommended channel. This includes making sure that the default channel selection under **Feature updates** on the **Office installation options** page is set to Current Channel. For more about Current Channel, see [What is Current Channel?](#what-is-current-channel)
 
