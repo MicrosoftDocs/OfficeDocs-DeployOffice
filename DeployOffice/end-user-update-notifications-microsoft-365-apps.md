@@ -48,11 +48,7 @@ To make sure that your users apply updates to Microsoft 365 Apps, you can [confi
 > [!NOTE]
 > Starting with Configuration Manager, version 1802, if any Office applications are running during an Office update enforcement, the Office applications will not be forced to close. Instead, the update install will return as requiring a system restart 
 
-Users are given notifications leading up to the deadline. For example, within seventy-two hours of the deadline, users see a message, in any newly opened Office document, that updates are blocked.
-  
-![Office updates 72 hour deadline.](images/f69d4bed-ab4d-43ac-ae5d-01ac31653cb9.jpg)
-  
-The next reminder users see is twelve hours before the deadline. They'll see a message in the notification area in Windows, reminding them that updates are ready to be applied.
+Users are given notifications leading up to the deadline. They'll see a message in the notification area in Windows, reminding them that updates are ready to be applied.
   
 ![Office updates 12 hour deadline notification.](images/6c315397-3f15-4c9f-86b1-5132c28dbc7e.jpg)
   

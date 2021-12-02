@@ -84,6 +84,7 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 |Edge Dev  |EDDV01|
 |Edge Beta |EDBT01|
 |Edge Stable |EDGE01 |
+|Licensing helper tool|OLIC02|
 
 > [!NOTE]
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for the following versions:
