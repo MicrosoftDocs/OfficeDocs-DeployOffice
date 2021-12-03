@@ -3402,6 +3402,49 @@ The following fields are collected:
 - **StoreCurrencyCode** - To identify the currency in which the app store is offering the end users the subscriptions plans.
 
 
+### Office.Android.DocsUI.PaywallControl.StoreConnectionResponse
+
+This telemetry is logged when establishing connection with Google’s Billing Client fails during Paywall Initialization. The purpose of the telemetry is to determine reasons behind the connection failure in case it is not performing as expected.
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from Google’s Billing Client indicating the reason for failure.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **TriggerPoint** - Integer – Indicating how the paywall initialization was triggered.
+
+
+### Office.Android.DocsUI.PaywallControl.StoreQueryPurchasesResponse
+
+This telemetry is logged when querying purchases with Google’s Billing Client fails. This telemetry is needed to know the reason of the failure if the response is not received as expected. 
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from the Google’s Billing Client indicating the reason for failure while querying purchases.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **ProductType** - Integer - identifying the product type (Subscription or one time) for which queryPurchases has failed
+
+- **TriggerPoint** - Integer – Indicating when the query purchases was triggered; initialization during app boot, user clicked on the diamond to land on SkuChooser screen showing FRE/Purchase Flow
+
+
+### Office.Android.DocsUI.PaywallControl.StoreSkuDetailsResponse
+
+This telemetry is logged when Google’s Billing Client does not return the prices for the product IDs passed to it. It is used to know the reasons for Sku Details fetching failure and the SKUs for which failure is happening during cases when the response is not as expected.
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from the Google’s Billing Client indicating the reason for failure while fetching the Sku Details.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **ProductID** - String - Identifying for which product price fetching failed.
+
+- **TriggerPoint** - Integer – Indicating when the Sku Details fetching was triggered : during app boot/user clicked diamond to land on SkuChooser screen/showing FRE
+
+
 ### Office.Android.DocsUI.Views.DimeError
 
 This event is collected for the Office app for Android (released on Huawei and in China Stores). This event indicates that an attempt to purchase a Microsoft 365 subscription through Dime (a webURL loaded in client webview) has failed. Only the error scenarios are captured. This event data is error data only and is used to ensure the health of the Dime purchase flow in the client.
