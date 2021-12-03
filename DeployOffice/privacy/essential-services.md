@@ -1795,157 +1795,163 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.InstallTaskRemoveinstallation
+### Office.ClickToRun.Scenario.InstallTaskRemoveinstallation2
 
-Office set up and inventory data collected when the Office uninstaller is removing parts of Office from the device. Used to measure success / failure of Office installation.
+*[This event was previously named Office.ClickToRun.Scenario.InstallTaskRemoveinstallation.]*
 
-The following fields are collected:
-
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
-
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
-
-  - **Data\_15\_UpdateVersion-**  What version of Office 15 we're updating to 
-
-  - **Data\_15\_Version -** The Office 15 version 
-
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
-
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
-
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
-
-  - **Data\_16\_Version -** The Office 16 version 
-
-  - **Data\_AddingFixedProducts-** The products we're adding 
-
-  - **Data\_AddingProducts -** What products we're asked to add 
-
-  - **Data\_CompletionState -** If we completed the task
-
-  - **Data\_ErrorCode -** The error code we failed with 
-
-  - **Data\_ErrorDetails-** Extra details about an error 
-
-  - **Data\_ErrorMessage -** An error message on what went wrong 
-
-  - **Data\_ErrorSource -** Where the error took place 
-
-  - **Data\_ExceptionType -** The exception we failed with 
-
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
-
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
-
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
-
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
-
-  - **Data\_ProductsToAdd -** What Office products we're adding 
-
-  - **Data\_ProductsToRemove-** what Office products we're removing 
-
-  - **Data\_RemovingFixedProducts-** The products we're  removing 
-
-  - **Data\_RemovingProducts -** The products we're asked to remove 
-
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
-
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
-
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
-
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
-
-  - **Data\_SqmMachineID  -** Unique Machine ID used by Windows SQM
-
-  - **Data\_SusClientID-** Machine Office update identifier 
-
-  - **Data\_TaskState -** What state the task is in like running or canceled 
-
-  - **Data\_TotalClientCabSize -** The size of our client cab 
-
-  - **Data\_TriggeringUI -** What triggered the UI 
-
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
-
-  - **Data\_Version -** The version of Office 
-
-### Office.ClickToRun.Scenario.InstallTaskStream
-
-Office set up and inventory data collected when the Office installer is downloading new files for Office. Used to measure success / failure of Office installation.
+This event collects Office set up and inventory data when the Office uninstaller is removing parts of Office from the user's device. The data is used to measure success or failure of Office installation.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType  -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled -** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion  -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version  -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts -** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts  -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** -The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource  -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we are adding 
 
-  - **Data\_ProductsToRemove-**  what Office products we're removing 
+- **Data_ProductsToRemove** - What Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we are removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - What scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM
 
-  - **Data\_SusClientID -** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
+
+### Office.ClickToRun.Scenario.InstallTaskStream2
+
+*[This event was previously named Office.ClickToRun.Scenario.InstallTaskStream.]*
+
+Office set up and inventory data collected when the Office installer is downloading new files for Office. The data is used to measure success or failure of Office installation.
+
+The following fields are collected:
+
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
+
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
+
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
+
+- **Data_15_Version** - The Office 15 version 
+
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
+
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
+
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
+
+- **Data_16_Version** - The Office 16 version 
+
+- **Data_AddingFixedProducts** - The products we’re adding 
+
+- **Data_AddingProducts** - What products we’re asked to add 
+
+- **Data_CompletionState** - If we completed the task
+
+- **Data_ErrorCode** - The error code we failed with 
+
+- **Data_ErrorDetails** - Extra details about an error 
+
+- **Data_ErrorMessage** - An error message on what went wrong 
+
+- **Data_ErrorSource** - Where the error took place 
+
+- **Data_ExceptionType** - The exception we failed with 
+
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
+
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
+
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
+
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
+
+- **Data_ProductsToAdd** - What Office products we’re adding 
+
+- **Data_ProductsToRemove** - what Office products we’re removing 
+
+- **Data_RemovingFixedProducts** - The products we’re removing 
+
+- **Data_RemovingProducts** - The products we’re asked to remove 
+
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
+
+- **Data_ScenarioName** - what scenario is running. i.e., install 
+
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
+
+- **Data_SourceType** - Where our source is, i.e., CDN 
+
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
+
+- **Data_SusClientID** - Machine Office update identifier 
+
+- **Data_TaskState** - What state the task is in like running or cancelled 
+
+- **Data_TotalClientCabSize** - The size of our client cab 
+
+- **Data_TriggeringUI** - What triggered the UI 
+
+- **Data_UpdatesEnabled** - If Office updates are enabled 
+
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Scenario.InstallTaskUninstallcentennial
 
@@ -2099,81 +2105,84 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.RepairTaskFullrepair
+### Office.ClickToRun.Scenario.RepairTaskFullrepair2
 
-Office set up and inventory data collected when the Office repair client downloads the latest version of the Click-to-Run client to prepare the computer for uninstall and reinstall. Used to measure success / failure of Office repair.
+*[This event was previously named Office.ClickToRun.Scenario.RepairTaskFullrepair.]*
+
+Office set up and inventory data collected when the Office repair client downloads the latest version of the Click-to-Run client to prepare the computer for uninstall and reinstall. The data is used to measure success or failure of Office repair.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -** What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
+
 
 ### Office.ClickToRun.Scenario.RepairTaskIntegraterepair
 
@@ -2567,81 +2576,83 @@ The following fields are collected:
 
   - **Data\_WorkstationLockState -** True if we think the computer is locked
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload
+### Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload2
 
-Office set up and inventory data collected when the Click-to-Run client downloads a newer version of itself. Used to measure success / failure of Office update.
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdateclientdownload.]*
+
+Office set up and inventory data collected when the Click-to-Run client downloads a newer version of itself. The data is used to measure success or failure of Office update.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -** What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName-** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID  -** Unique Machine ID used by Windows SQM
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office 
 
 ### Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
@@ -2727,214 +2738,221 @@ The following fields are collected:
 
   - **Data\_Version -** The version of Office 
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
+### Office.ClickToRun.Scenario.UpdateTaskUpdatedownload2
 
-Office set up and inventory data collected when the Click-to-Run client is downloading a new update. Used to measure success / failure of Office update.
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdatedownload.]*
+
+Office set up and inventory data collected when the Click-to-Run client is downloading a new update. Used to measure success or failure of Office update.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion -**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_AvailableVersion -** What version of Office is available to update to
+- **Data_AvailableVersion** - What version of Office is available to update to
 
-  - **Data\_CompletedWithoutActionInfo-** Why we didn't complete the scenario, i.e. Apps were open
+- **Data_CompletedWithoutActionInfo** - Why we didn’t complete the scenario, i.e., Apps were open
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_CorruptionChecksOnly -** If we're only checking for corruption and not updating
+- **Data_CorruptionChecksOnly** - If we’re only checking for corruption and not updating
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place
+- **Data_ErrorSource** - Where the error took place
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_FoundCorruptFiles -** True if we found corrupt files
+- **Data_FoundCorruptFiles** - True if we found corrupt files
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_PackageOperationSuccessful -** True if we successfully completed our task on the Office package
+- **Data_PackageOperationSuccessful** - True if we successfully completed our task on the Office package
 
-  - **Data\_PipelineExitCode -** The exit code our file pipeline returned
+- **Data_PipelineExitCode** - The exit code our file pipeline returned
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -** Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
 
-  - **Data\_SusClientID-** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
+- **Data_Version** - The version of Office
 
-### Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
+
+### Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize2
+
+*[This event was previously named Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize.]*
 
 Office set up and inventory data collected when the Click-to-Run Client is cleaning up from the update and restoring apps that were previously open. Used to measure success or failure of Office update.
 
 The following fields are collected:
 
-  - **Data\_15\_SourceType -** Where the Office 15 source is located, i.e. CDN or Local 
+- **Data_15_SourceType** - Where the Office 15 source is located, i.e., CDN, Content Delivery Network, or Local 
 
-  - **Data\_15\_UpdatesEnabled -** If Office 15 updates are enabled 
+- **Data_15_UpdatesEnabled** - If Office 15 updates are enabled 
 
-  - **Data\_15\_UpdateVersion-**  What version of Office 15 we're updating to 
+- **Data_15_UpdateVersion** - What version of Office 15 we’re updating to 
 
-  - **Data\_15\_Version -** The Office 15 version 
+- **Data_15_Version** - The Office 15 version 
 
-  - **Data\_16\_SourceType -** Where the Office 16 source is located i.e. CDN or Local 
+- **Data_16_SourceType** - Where the Office 16 source is located i.e., CDN or Local 
 
-  - **Data\_16\_UpdatesEnabled-** If Office 16 updates are enabled 
+- **Data_16_UpdatesEnabled** - If Office 16 updates are enabled 
 
-  - **Data\_16\_UpdateVersion -** What version of Office 16 we're updating to 
+- **Data_16_UpdateVersion** - What version of Office 16 we’re updating to 
 
-  - **Data\_16\_Version -** The Office 16 version 
+- **Data_16_Version** - The Office 16 version 
 
-  - **Data\_AddingFixedProducts-** The products we're adding 
+- **Data_AddingFixedProducts** - The products we’re adding 
 
-  - **Data\_AddingProducts -** What products we're asked to add 
+- **Data_AddingProducts** - What products we’re asked to add 
 
-  - **Data\_CompletionState -** If we completed the task
+- **Data_CompletionState** - If we completed the task
 
-  - **Data\_ErrorCode -** The error code we failed with 
+- **Data_ErrorCode** - The error code we failed with 
 
-  - **Data\_ErrorDetails-** Extra details about an error 
+- **Data_ErrorDetails** - Extra details about an error 
 
-  - **Data\_ErrorMessage -** An error message on what went wrong 
+- **Data_ErrorMessage** - An error message on what went wrong 
 
-  - **Data\_ErrorSource -** Where the error took place 
+- **Data_ErrorSource** - Where the error took place 
 
-  - **Data\_ExceptionType -** The exception we failed with 
+- **Data_ExceptionType** - The exception we failed with 
 
-  - **Data\_IsErrorCodeIgnorable -** If the error code we failed with is ignorable 
+- **Data_IsErrorCodeIgnorable** - If the error code we failed with is ignorable 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth -** If we believe the error code is ignorable 
+- **Data_IsErrorCodeIgnorableForScenarioHealth** - If we believe the error code is ignorable 
 
-  - **Data\_NewestPackageVersion -** The newest version of Office on the machine 
+- **Data_NewestPackageVersion** - The newest version of Office on the machine 
 
-  - **Data\_OldestPackageVersion -** The oldest version of Office on the machine 
+- **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-  - **Data\_ProductsToAdd -** What Office products we're adding 
+- **Data_ProductsToAdd** - What Office products we’re adding 
 
-  - **Data\_ProductsToRemove-** what Office products we're removing 
+- **Data_ProductsToRemove** - what Office products we’re removing 
 
-  - **Data\_RemovingFixedProducts-** The products we're removing 
+- **Data_RemovingFixedProducts** - The products we’re removing 
 
-  - **Data\_RemovingProducts -** The products we're asked to remove 
+- **Data_RemovingProducts** - The products we’re asked to remove 
 
-  - **Data\_ScenarioInstanceID -** A unique GUID for the running scenario 
+- **Data_ScenarioInstanceID** - A unique GUID for the running scenario 
 
-  - **Data\_ScenarioName -** what scenario is running. i.e. install 
+- **Data_ScenarioName** - what scenario is running. i.e., install 
 
-  - **Data\_ScenarioSubType -** What type of scenario we're running, i.e. Uninstall, reinstall 
+- **Data_ScenarioSubType** - What type of scenario we’re running, i.e., Uninstall, reinstall 
 
-  - **Data\_SourceType -** Where our source is, i.e. CDN 
+- **Data_SourceType** - Where our source is, i.e., CDN 
 
-  - **Data\_SqmMachineID -**  Unique Machine ID used by Windows SQM 
+- **Data_SqmMachineID** - Unique Machine ID used by Windows SQM 
 
-  - **Data\_SusClientID -** Machine Office update identifier 
+- **Data_SusClientID** - Machine Office update identifier 
 
-  - **Data\_TaskState -** What state the task is in like running or canceled 
+- **Data_TaskState** - What state the task is in like running or cancelled 
 
-  - **Data\_TotalClientCabSize -** The size of our client cab 
+- **Data_TotalClientCabSize** - The size of our client cab 
 
-  - **Data\_TriggeringUI -** What triggered the UI 
+- **Data_TriggeringUI** - What triggered the UI 
 
-  - **Data\_UpdatesEnabled -** If Office updates are enabled 
+- **Data_UpdatesEnabled** - If Office updates are enabled 
 
-  - **Data\_Version -** The version of Office 
-
-### Office.ClickToRun.Transport
-
-Reports on the file download actions to determine the success of the operation, type of download performed and diagnostic information.
+- **Data_Version** - The version of Office 
 
 
-- **BytesFromGroupPeers -**    Bytes from group peers, only for downloads using Delivery Optimization
+### Office.ClickToRun.Transport2
 
-- **BytesFromHttp -**     Bytes from http, only for downloads using Delivery Optimization
+*[This event was previously named Office.ClickToRun.Transport.]*
 
-- **ByteFromInternetPeers -**    Bytes from internet peers, only for downloads using Delivery Optimization 
+This event is triggered whenever Click-To-Run tries to download a file that it needs for the Office install. The data is used to determine the success of the operation, type of download performed and diagnostic information.
+ 
+The following fields are collected:
 
-- **BytesFromLanPeers -**    Bytes from Lan peers, only for downloads using Delivery Optimization 
+- **BytesFromGroupPeers** - Bytes from group peers, only for downloads using Delivery Optimization (DO)
 
-- **canceledJobs -**     Number of canceled requests in the session
+- **BytesFromHttp** - Bytes from http, only for downloads using Delivery Optimization (DO) 
 
-- **Connected -**    Whether connected to source
+- **ByteFromInternetPeers** - Bytes from internet peers, only for downloads using Delivery Optimization (DO) 
 
-- **ErrorCode -**    The code of last error
+- **BytesFromLanPeers** - Bytes from Lan peers, only for downloads using Delivery Optimization (DO) 
 
-- **ErrorDetails -**     The detail of last error
+- **CancelledJobs** - Number of cancelled requests in the session
 
-- **ErrorMessage -**    The message of last error 
+- **Connected** - Whether connected to source 
 
-- **ErrorSource -**    The source of last error, e.g. Connection, LoadFile or LoadRange
+- **ErrorCode** - The code of last error 
 
-- **FailedJob -**    Number of failed requests in the session
+- **ErrorDetails** - The detail of last error
 
-- **FileSize -**    Size of the resource
+- **ErrorMessage** - The message of last error 
 
-- **SourcePathNoFilePath -**    Source path of the resource only http source is reported, local file path or UNC path is filtered
+- **ErrorSource** - The source of last error, e.g., Connection, LoadFile or LoadRange
 
-- **SucceededJobs -**    Number of succeeded requests in the session
+- **FailedJob** - Number of failed requests in the session
 
-- **TotalJobs -**     Total number of requests in the session
+- **FileSize** - Size of the resource
 
-- **TotalRequestedBytes -**     Total requested bytes in the session
+- **SourcePathNoFilePath** - Source path of the resource only http source is reported, local file path or UNC path is filtered
 
-- **TotalTransferTime -**    Total transfer time in the session
+- **SucceededJobs** - Number of succeeded requests in the session
 
-- **TransferredBytes -**     Total transferred bytes in the session
+- **TotalJobs** - Total number of requests in the session
 
-- **TransportType -**    Type of transport, e.g. (In memory Delivery Optimization, HTTP, Background Intelligent Transfer Service)
+- **TotalRequestedBytes** - Total requested bytes in the session
 
+- **TotalTransferTime** - Total transfer time in the session
 
+- **TransferredBytes** - Total transferred bytes in the session
+
+- **TransportType** - Type of transport, e.g., In memory Delivery Optimization, HTTP, Background Intelligent Transfer Service (BITS)
 
 ### Office.ClickToRun.Transport.ExperimentalTransport.PipelineCreateTransport
 
@@ -2969,21 +2987,26 @@ The following fields are collected:
   - **Data\_targetBuild -** -The Office version that we are attempting to update to
 
 
-### Office.ClickToRun.UniversalBootstrapper.Application
+### Office.ClickToRun.UniversalBootstrapper.Application2
 
-Reports the result of the end-to-end installation attempt
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.Application.]*
 
- - **ErrorCode –**    Integer value associated with an unhandled exception
+This event is triggered when a user runs the Office installer to modify their Office installation. The data is used to report the result of the end-to-end installation attempt.
+  
+- **ErrorCode** - Integer value associated with an unhandled exception
 
- - **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
- - **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
- - **ErrorType –**    String describing the category of an unhandled exception
+- **ErrorType** - String describing the category of an unhandled exception
 
- - **ExitCode –**    Integer value associated with the result of running the bootstrapper, indicating success vs. specific types of failure
+- **ExitCode** - Integer value associated with the result of running the bootstrapper, indicating success vs. specific types of failure
 
-### Office.ClickToRun.UniversalBootstrapper.CalculateParameters
+
+### Office.ClickToRun.UniversalBootstrapper.CalculateParameters2
+
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CalculateParameters.]*
 
 Reports on the action that reason over the input collected using CollectParameters
 
@@ -2991,7 +3014,7 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe.
+- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: autorun, configure, consumer, download, help, packager
 
 - **C2RClientUICulture –**    Culture of the C2R Client to install
 
@@ -3029,7 +3052,7 @@ Reports on the action that reason over the input collected using CollectParamete
 
 - **PlatformOfExistingInstallation –**    String indicating whether x86 vs. X64 Office was already installed on the device
 
-- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed. Possibilities are:  autorun, configure, consumer, download, help, packager
+- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed. 
 
 - **PRID –**    String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
@@ -3050,119 +3073,130 @@ Reports on the action that reason over the input collected using CollectParamete
 - **VersionToInstall –**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
  
 
-### Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
+### Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature2
 
-Reports on the action that reads tagged input from the exe's embedded signature.  This is an unproven concept the previous iteration of setup.exe did not implement, and is what we're relying on to carry the user's product/language/bitness choices from web page to in-process within setup.exe.
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature.]*
+
+RThis event is triggered when a user runs the Office installer to modify their Office installation. The data allows us to carry the user's product, language, and choice of 64- or 32-bit Office to in-process within setup.exe.
  
-- **ErrorCode –**    Integer number associated with an unhandled exception
+The following fields are collected:
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ErrorCode** - Integer number associated with an unhandled exception
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
-### Office.ClickToRun.UniversalBootstrapper.CollectParameters
+- **ErrorType** - String describing the category of an unhandled exception
 
-Reports the parameters used for the Office installation
 
-- **BitField –**    Integer value of the BitField argument, which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
+### Office.ClickToRun.UniversalBootstrapper.CollectParameters2
 
-- **ChannelID –**    Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), Semi-Annual Enterprise Channel, or Invalid.
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.CollectParameters.]*
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
+This event is triggered when a user runs the Office installer to modify their Office installation.  The data is used to report the parameters used for the Office installation and keep it running as expected.
 
-- **C2RClientUICulture –**    Culture of the C2R Client to install
+- **BitField** - Integer value of the BitField argument which tells us whether an explicit installation/update channel requested. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel.
 
-- **ErrorCode –**    Integer value associated with an unhandled exception
+- **C2RClientUICulture** - Culture of the Click-to-Run (C2R) Client to install
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **ChannelID** - Integer representing the enum value of the selected update/install channel. For example, Beta Channel, Current Channel (Preview), Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), or Semi-Annual Enterprise Channel, or Invalid.
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: autorun, configure, consumer, download, help, packager
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **ErrorCode** - Integer value associated with an unhandled exception
 
-- **ExcludedApps –**    String listing the individual Office application names requested to be excluded from the Office suites installed
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **InstalledCabVersion –**    The "16.0.xxxxx.yyyyy" version of an Office C2R Client already installed
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
-- **InstalledProductVersion –**    The "16.0.xxxxx.yyyyy" version of an Office C2R product already installed
+- **ErrorType** - String describing the category of an unhandled exception
 
-- **IsC2RServiceRunning –**    Boolean flag that indicates whether a modern C2R Client's local machine service is up and running on the device
+- **ExcludedApps** - String listing the individual Office application names requested to be excluded from the Office suites installed
 
-- **IsElevatedFlagSet –**    Boolean flag indicating whether the bootstrapper has already attempted to gain admin elevation
+- **InstalledCabVersion** - The "16.0.xxxxx.yyyyy" version of an Office Click-to-Run (C2R) Client already installed
 
-- **IsFireFlyInstalled –**    Boolean flag indicating whether the Office 2013 RTM C2R Client is currently installed
+- **InstalledProductVersion** - The "16.0.xxxxx.yyyyy" version of an Office Click-to-Run (C2R) product already installed
 
-- **IsFireflyServiceRunning –**    Boolean flag that indicates whether a 2013 RTM C2R Client's local machine service is up and running on the device
+- **IsC2RServiceRunning** - Boolean flag that indicates whether a modern Click-to-Run (C2R) Client's local machine service is up and running on the device
 
-- **IsOfficeInstalled –**    Boolean flag indicating whether a modern Office client is installed already
+- **IsElevatedFlagSet** - Boolean flag indicating whether the bootstrapper has already attempted to gain admin elevation
 
-- **OfficeCultures –**    Serialized list of Office cultures to be installed
+- **IsFireFlyInstalled** - Boolean flag indicating whether the Office 2013 RTM Click-to-Run (C2R) Client is currently installed
 
-- **OfficeSourceType –**    Friendly string associated with the enum value of the installation source (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+- **IsFireflyServiceRunning** - Boolean flag that indicates whether a 2013 RTM Click-to-Run (C2R) Client's local machine service is up and running on the device
 
-- **Origin –**    String value telling us which of the supported origins (Puerto Rico [PR], Singapore [SG], Dublin [DB]) should be used for initial installation streaming
+- **IsOfficeInstalled** - Boolean flag indicating whether a modern Office client is installed already
 
-- **PlatformFromLink –**    String indicating the requested x86|x64|default bitness of Office requested from the C2R Setup service
+- **OfficeCultures** - Serialized list of Office cultures to be installed
 
-- **PlatformOfExistingInstallation –**    String indicating whether x86 vs. X64 Office was already installed on the device
+- **OfficeSourceType** - Friendly string associated with the enum value of the installation source (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
 
-- **PlatformToInstall –**    String indicating the final decision on whether x86 vs. X64 Office should be installed
+- **Origin** - String value telling us which of the supported origins (Puerto Rico [PR], Singapore [SG], Dublin [DB]) should be used for initial installation streaming
 
-- **PRID –**    String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
+- **PlatformFromLink** - String indicating the requested (x86 vs x64) default bits of Office requested from the Click-to-Run (C2R) Setup service
 
-- **PridsToMigrateFromCentennial-** String of Office products to migrate from Store installations to Click-To-Run
+- **PlatformOfExistingInstallation** - String indicating whether x86 vs. X64 Office was already installed on the device
 
-- **ProductsToAdd –**    The serialized string that instructs C2R Client on which Product/Culture combinations it should be installing
+- **PlatformToInstall** - String indicating the final decision on whether x86 vs. X64 Office should be installed. 
 
-- **ProductsToMigrateFromO15C2R -** String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
+- **PRID** - String value representing the requested Product Release ID in a consumer installation scenario (for example, "O365ProPlusRetail")
 
-- **ProductsToRemove –**    The serialized string that instructs C2R Client on which Product/Culture combinations it should be uninstalling
+- **PridsToMigrateFromCentennial** - String of Office products to migrate from Store installations to Click-To-Run
 
-- **SharedComputerLicensing –**    Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
+- **ProductsToAdd** - The serialized string that instructs Click-to-Run (C2R) Client on which Product/Culture combinations it should be installing
 
-- **ShouldActivate–**    Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
+- **ProductsToMigrateFromO15C2R** - String of Office products and cultures to migrate from an Office 2013 Click-To-Run installation
 
-- **ShouldUninstallCentennial -** Boolean flag indicating whether Office products from the Store should be uninstalled
+- **ProductsToRemove** - The serialized string that instructs Click-to-Run (C2R) Client on which Product/Culture combinations it should be uninstalling
 
-- **VersionToInstall–**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
+- **SharedComputerLicensing** - Boolean indicating whether an IT Admin requested setup to enable the "SharedComputerLicensing" feature
 
-### Office.ClickToRun.UniversalBootstrapper.Execute
+- **ShouldActivate** - Boolean indicating whether an IT Admin requested an automatic licensing activation attempt in their configuration.xml
 
-Reports on the machine-impactful actions taken, as determined by the reasoned-over data from "CalculateParameters"
+- **ShouldUninstallCentennial** - Boolean flag indicating whether Office products from the Store should be uninstalled
 
-- **AvailableClientVersionText –**    String value of the C2R Client "16.0.xxxxx.yyyyy" version found in the Version Descriptor XML, which is used to determine whether a currently installed C2R Client should be updated
+- **VersionToInstall** - String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
 
-- **CleanFireflyAction –**    "true" if the CleanFireFlyAction task is scheduled to run during this installation
 
-- **CleanO15Action –**    "true" if the CleanO15Action task is scheduled to run during this installation
+### Office.ClickToRun.UniversalBootstrapper.Execute2
 
-- **CMDMode –**    The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are:  autorun, configure, consumer, download, help, packager
+*[This event was previously named Office.ClickToRun.UniversalBootstrapper.Execute.]*
 
-- **DeliveryMechanism –**    The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
+This event is triggered when a user runs the Office installer to modify their Office installation. The data is used to report on the machine-impactful actions taken, as determined by the reasoned-over data from "CalculateParameters"
+ 
+- **AvailableClientVersionText** - String value of the C2R Client "16.0.xxxxx.yyyyy" version found in the Version Descriptor XML, which is used to determine whether a currently installed C2R Client should be updated
 
-- **DownloadC2RClientAction –**    "true" if the DownloadC2RClientAction task is scheduled to run during this installation
+- **CleanFireflyAction** - "true" if the CleanFireFlyAction task is scheduled to run during this installation
 
-- **ErrorCode –**    Integer value associated with an unhandled exception
+- **CleanO15Action** - "true" if the CleanO15Action task is scheduled to run during this installation
 
-- **ErrorDetails –**    String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
+- **CMDMode** - The friendly string corresponding to which overall mode switch was detected in the cmd arguments passed to the exe. Possibilities are: Autorun, configure, consumer, download, help, packager
 
-- **ErrorMessage –**    String defined at the point where an unhandled exception was thrown, describing the nature of the failure
+- **DeliveryMechanism** - The "FFNRoot" guid extracted from the Version Descriptor XML (stamped by RDX), which tells us which audience/channel the build source came from
 
-- **ErrorType –**    String describing the category of an unhandled exception
+- **DownloadC2RClientAction** - "true" if the DownloadC2RClientAction task is scheduled to run during this installation
 
-- **ExitCode –**    Integer value associated with the result of running the Execute phase of the bootstrapper, indicating success vs. specific types of failure
+- **ErrorCode** - Integer value associated with an unhandled exception
 
-- **LaunchAction –**    "true" if the LaunchAction task is scheduled to run during this installation
+- **ErrorDetails** - String that describes the location of where an unhandled exception occurred (function, file, line number, additional parameters set by the thrower)
 
-- **LaunchUpdateAction –**    "true" if the LaunchUpdateAction task is scheduled to run during this installation
+- **ErrorMessage** - String defined at the point where an unhandled exception was thrown, describing the nature of the failure
 
-- **PreReqResult –**    The integer enum value of the result when PreReq checks were performed (pass/fail/re-run)
+- **ErrorType** - String describing the category of an unhandled exception
 
-- **UnexpectedAction –**    "true" if the UnexpectedAction task (an error case) is scheduled to run during this installation
+- **ExitCode** - Integer value associated with the result of running the Execute phase of the bootstrapper, indicating success vs. specific types of failure
 
-- **VersionToInstall –**    String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
+- **LaunchAction** - "true" if the LaunchAction task is scheduled to run during this installation
+
+- **LaunchUpdateAction** - "true" if the LaunchUpdateAction task is scheduled to run during this installation. 
+
+- **PreReqResult** - The integer enum value of the result when PreReq checks were performed (pass/fail/re-run)
+
+- **UnexpectedAction** - "true" if the UnexpectedAction task (an error case) is scheduled to run during this installation
+
+- **VersionToInstall** - String value of the Office "16.0.xxxxx.yyyyy" version that is being installed
+
 
 ### Office.ServiceabilityManager.InventoryAddon.Heartbeat
 
@@ -3366,6 +3400,49 @@ The following fields are collected:
 - **ProductIndex** - To identify whether personal or family plan.
 
 - **StoreCurrencyCode** - To identify the currency in which the app store is offering the end users the subscriptions plans.
+
+
+### Office.Android.DocsUI.PaywallControl.StoreConnectionResponse
+
+This telemetry is logged when establishing connection with Google’s Billing Client fails during Paywall Initialization. The purpose of the telemetry is to determine reasons behind the connection failure in case it is not performing as expected.
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from Google’s Billing Client indicating the reason for failure.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **TriggerPoint** - Integer – Indicating how the paywall initialization was triggered.
+
+
+### Office.Android.DocsUI.PaywallControl.StoreQueryPurchasesResponse
+
+This telemetry is logged when querying purchases with Google’s Billing Client fails. This telemetry is needed to know the reason of the failure if the response is not received as expected. 
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from the Google’s Billing Client indicating the reason for failure while querying purchases.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **ProductType** - Integer - identifying the product type (Subscription or one time) for which queryPurchases has failed
+
+- **TriggerPoint** - Integer – Indicating when the query purchases was triggered; initialization during app boot, user clicked on the diamond to land on SkuChooser screen showing FRE/Purchase Flow
+
+
+### Office.Android.DocsUI.PaywallControl.StoreSkuDetailsResponse
+
+This telemetry is logged when Google’s Billing Client does not return the prices for the product IDs passed to it. It is used to know the reasons for Sku Details fetching failure and the SKUs for which failure is happening during cases when the response is not as expected.
+
+The following fields are collected:
+
+- **BillingClientResponse** - Integer – Response from the Google’s Billing Client indicating the reason for failure while fetching the Sku Details.
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **ProductID** - String - Identifying for which product price fetching failed.
+
+- **TriggerPoint** - Integer – Indicating when the Sku Details fetching was triggered : during app boot/user clicked diamond to land on SkuChooser screen/showing FRE
 
 
 ### Office.Android.DocsUI.Views.DimeError
@@ -3590,7 +3667,7 @@ The following fields are collected:
 
 ### Office.Dime.Sdk.Health
 
-This event captures data that helps in monitoring the health of the Dime components. For example, for the in-app purchase flow when a user opts to buy a Microsoft 365 subscription from within the Office app for Android or on devices running Windows.
+The event captures data that helps in monitoring the health of the components that host the in-app purchase flow within Office Mobile app. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription. 
 
 The following fields are collected:
 
@@ -3632,6 +3709,8 @@ The following fields are collected:
 
 - **Data_Language** - Culture
 
+- **Data_LaunchId** - Unique ID for each launch instance
+
 - **Data_Market** - Detected market
 
 - **Data_OTelJS_Version** - Office telemetry version
@@ -3639,6 +3718,10 @@ The following fields are collected:
 - **Data_PageSessionId** - Session ID of the page
 
 - **Data_PartnerId** - Caller App
+
+- **Data_ProductId** - Product ID selected (not neccessarily purchased) by customer
+
+- **Data_ProductName** - Friendly product name of product selected (not neccessarily purchased) by customer
 
 - **Data_QosLevel** - Severity 0/1/2
 
@@ -3659,6 +3742,8 @@ The following fields are collected:
 - **Data_SDX_SessionId** - Session ID of the SDX for Win32
 
 - **Data_SDX_Version** - SDX Version for Win32
+
+- **Data_SkuId** - SKU ID selected (not neccessarily purchased) by customer
 
 - **Data_TimestampUTC** - Timestamp of the event
 
@@ -4811,7 +4896,7 @@ The following fields are collected:
 
 ### appregistry.config
 
-This event reports on any errors encountered while loading application registry information. We use this report to advise IT Admins on the correct format of setting up client application registrations.
+This event reports on any errors encountered while loading application registry information. Microsoft uses this report to advise corporate IT administrators of the correct format for setting up client application registrations.
  
 The following fields are collected:
 
@@ -4846,6 +4931,8 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** – The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **Reason** - String contain for detailed reason associated with the event.
 
 - **SessionId** – The identifier for the session
 
@@ -5271,6 +5358,16 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session.
+
+
+### configuration.preference
+
+This event is logged whenever Microsoft AutoUpdate encounters an issue with preferences. The data will be used to determine extent of issues caused by clients incorrectly setting applications dictionary.
+
+The following fields are collected
+
+- **Payload** - Static text.
+
 
 ### configuration.systemVersion
 
@@ -7281,6 +7378,19 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### downloadmanifest.cachedupdate
+
+This event is triggered when a download is requested and a cached file is already saved locally. This event reports on use of cached updates. The data is used to measure the success of cached update feature from the number of cached update packages located, used, failed verification, etc.
+
+The following fields are collected:
+
+- **AppID** - Identifier of application related to the event.
+
+- **Reason** - String containing detailed reason associated with the event.
+
+- **Success** - Boolean indicating success of operation related to the event.
+
+
 ### downloadmanifest.configuration
 
 This event reports an error with Microsoft Auto Update (MAU) configuration - either with Custom Server setup in preferences or in endpoint definitions in Update Assistant in installed MAU components. We use this event to advise IT Admins to set correct Manifest Server endpoints.
@@ -7527,15 +7637,19 @@ The following fields are collected:
 
 ### downloadmanifest.downloadsuccess
 
-This event denotes that the downloading of an XML and package file has succeeded. We log the URL from which the file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event is triggered when the downloading of an XML and package file has succeeded. We log the URL from which the file is being downloaded. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
+
+- **CachedUpdate** - Indication whether a cached download is in use
 
 - **Channel** - The preference for audience
 
@@ -7563,8 +7677,11 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **Reason** - String contain for detailed reason associated with the event.
+
 - **SessionId** - The identifier for the session
 
+- **StaleCache** - Indication whether a download was necessary due to outdated cached update
     
 ### downloadmanifest.downloadurl
 
@@ -7650,15 +7767,19 @@ The following fields are collected:
 
 ### downloadmanifest.invalidhash
 
-This event denotes a security validation of our files failed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates a security validation of our files failed. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
+
+- **CatalogID** - Identifier for the application catalog related to the event
 
 - **Channel** - The preference for audience
 
@@ -7672,11 +7793,15 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** - Indicates details on error encountered related to the event
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
+
+- **File** - String showing current file name.
 
 - **HowTocheck** - The preference for checking of updates
 
@@ -8118,6 +8243,24 @@ The following fields are collected:
 - **UpdateID** - Identifier for an application update
 
 - **UpdateURL** - URL of update package that needs to be applied
+
+
+### errorsandwarnings
+
+This event is triggered by an abnormal condition detected while running Microsoft AutoUpdate. Microsoft uses the data to detect and address any issues found.
+
+The following fields are collected:
+
+- **AppID** - Identifier of application related to the event
+
+- **Error** - Indicates details on error encountered related to the event
+
+- **File** - String showing current file name.
+
+- **Operation** - Indicates operation being performed when an error or a warning was encountered
+
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
+
 
 ### fba.changelastupdate
 
@@ -11278,13 +11421,15 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-- **AppID** - Identifier for the application being updated
+- **AppID** - Identifier of application related to the event
 
 - **AppInfo_Language** - The language the application is running under
 
-- **AppleEventClass** - Indicates type of event being sent/acknowledged
+- **AppleEventClass** - String identifying type of Apple event class
 
-- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+- **AppleEventID** - Identifier for the Apple event being sent from Microsoft AutoUpdate to a registered application
+
+- **AppToQuit**	- Indicates whether the application will self-terminate for Microsoft Autoupdate to apply update
 
 - **AppVersionLong** - The application version
 
@@ -11300,6 +11445,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
+- **Error**	- Indicates details on error encountered related to the event
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -11308,17 +11455,23 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
+- **InAppMsg**	- Indicates whether the application will show in-app message advising user to quit the app in order to update.
+
 - **Payload** - Contains retry count
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
+- **Retries**	- Retry count
+
 - **SessionId** - The identifier for the session
 
 - **Success** -	Indicates whether the subject application has reported success of operation
 
-- **UpdateID** - The update identifier
+- **Timeout**	- Integer value indicating number of seconds to wait for an application to respond after sending an Apple event.
+
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
     
 ### installstatus.codesign
 
@@ -11992,11 +12145,13 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-- **AppID** - Identifier for the application being updated
+- **AppID** - Identifier of application related to the event
 
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application version
+
+- **BundleVersion** - Bundle version of the registered application.
 
 - **Channel** - The preference for audience
 
@@ -12010,7 +12165,7 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
-- **Error** - Indicates any errors encountered during update process, if populated
+- **Error** - Indicates details on error encountered related to the event
 
 - **Event_ReceivedTime** - The time at which telemetry was received
 
@@ -12020,7 +12175,11 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **IOC** - Indicates whether Install on Clone feature was used
+- **IOC** - String indicating whether Install On Clone is applicable to this update.
+
+- **NeedVerify** - Boolean indicating update needs verification.
+
+- **Operation** - Indicates operation being performed when an error or a warning was encountered
 
 - **Payload** - Static text to indicate beginning of install process if present
 
@@ -12030,9 +12189,9 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-- **Success** -	 Indicates whether the install process has successfully completed
+- **Success** -	 Boolean indicating success of operation related to the event.
 
-- **UpdateID** - Identifier for an application update
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
@@ -12118,7 +12277,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **LaunchedBy** - Method used to launch Microsoft Update Assistant, if applicable
+- **LaunchedBy** - String to indicate how the process is launched. Microsoft Update Assistant can either be launched by launch agent or launched directly.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -12175,6 +12334,45 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 - **SessionLength** - Length of current process session in seconds
+
+
+### lifecycle.previousexitdata
+
+This event is triggered by Microsoft AutoUpdate (MAU) launch, and reports on the termination status of the previous session. Microsoft uses this data to monitor reliability of the MAU process for future improvement.
+
+The following fields are collected:
+
+- **DetectedHangCount** - Number of Hangs detected for previous session.
+
+- **ExceptionEnum** - Numeric value identifying exception thrown that caused previous session to exit.
+
+- **ExitWasGraceful** - String indicating whether previous session was exited gracefully. This is used to determine reliability of Microsoft AutoUpdate process.
+
+- **LastULSLogTag** - Last ULS log encountered before the previous session ungraceful exit.
+
+- **OSLocale** - OS Locale previous session was running under.
+
+- **OSVersion** - OS Version previous session was running under.
+
+- **ResidentMemoryOnCrash** - Resident Memory footprint for previous session.
+
+- **SessionBuildNumber** - String identifying previous session build number.
+
+- **SessionDurationSeconds** - Previous session duration in seconds.
+
+- **SessionId** - String identifying previous session.
+
+- **SessionLongBuildNumber** - String identifying previous session version in extended format.
+
+- **SessionTerminationDurationSeconds** - Session termination duration in seconds.
+
+- **SessionVersion** - String identifying previous session version.
+
+- **StackHash** - Hash value of the crash stack detected.
+
+- **UnsymbolicatedChecksum** - Checks sum of unsymbolicated crash data for previous session.
+
+- **VirtualMemoryOnCrash** - Virtual Memory footprint for previous session.
 
 
 ### Lifecycle.terminate
@@ -14777,6 +14975,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application version
@@ -15387,7 +15587,7 @@ The following fields are collected:
 
 ### updatemanager.checkupdate
 
-This event logs number of updates found by Microsoft Autoupdate while checking for available updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs number of updates found by Microsoft AutoUpdate while checking for available updates. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15398,6 +15598,8 @@ The following fields are collected:
 - **AppVersionLong** - The application Version
 
 - **Channel** - The preference for audience
+
+- **Detected** - Number of detected updates.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -15417,7 +15619,11 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
+- **IsMainThread** - Boolean indicating whether the operation is being executed in main thread
+
 - **Payload** - Contains count of available updates found.
+
+- **Pending** - Number of updates pending.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -15599,7 +15805,7 @@ The following fields are collected:
    
 ### webservices.checkforsilentupdates
 
-This event denotes that silent-update candidates were found. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that silent-update candidates were found. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15609,7 +15815,11 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
+- **Candidates** - Number of initial updates being examined.
+
 - **Channel** - The preference for audience
+
+- **Detected**	- Number of detected updates.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -15640,7 +15850,7 @@ The following fields are collected:
 
 ### webservices.deltaupdater
 
-This event logs interactions between the client code and the feature gate that controls whether the client should allow for Delta updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs interactions between the client code and the feature gate that controls whether the client should allow for Delta updates. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15670,14 +15880,17 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains response from web-services and updater type to applied.
+- **Payload** - Static text.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **Reason** - String contain for detailed reason associated with the event.
+
 - **SessionId** - The identifier for the session
 
+- **UpdaterType** - String that identifies the type of updater (Full/FileDelta/BinaryDelta) being applied.
 
 ### webservices.serviceaction
 
