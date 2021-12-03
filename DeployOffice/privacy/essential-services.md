@@ -4896,7 +4896,7 @@ The following fields are collected:
 
 ### appregistry.config
 
-This event reports on any errors encountered while loading application registry information. We use this report to advise IT Admins on the correct format of setting up client application registrations.
+This event reports on any errors encountered while loading application registry information. Microsoft uses this report to advise corporate IT administrators of the correct format for setting up client application registrations.
  
 The following fields are collected:
 
@@ -4931,6 +4931,8 @@ The following fields are collected:
 - **PipelineInfo_ClientCountry** – The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
+
+- **Reason** - String contain for detailed reason associated with the event.
 
 - **SessionId** – The identifier for the session
 
@@ -7635,15 +7637,19 @@ The following fields are collected:
 
 ### downloadmanifest.downloadsuccess
 
-This event denotes that the downloading of an XML and package file has succeeded. We log the URL from which the file is being downloaded. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event is triggered when the downloading of an XML and package file has succeeded. We log the URL from which the file is being downloaded. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
+
+- **CachedUpdate** - Indication whether a cached download is in use
 
 - **Channel** - The preference for audience
 
@@ -7671,8 +7677,11 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **Reason** - String contain for detailed reason associated with the event.
+
 - **SessionId** - The identifier for the session
 
+- **StaleCache** - Indication whether a download was necessary due to outdated cached update
     
 ### downloadmanifest.downloadurl
 
@@ -7758,15 +7767,19 @@ The following fields are collected:
 
 ### downloadmanifest.invalidhash
 
-This event denotes a security validation of our files failed. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates a security validation of our files failed. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application Version
+
+- **CatalogID** - Identifier for the application catalog related to the event
 
 - **Channel** - The preference for audience
 
@@ -7780,11 +7793,15 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The Version of the Operating System
 
+- **Error** - Indicates details on error encountered related to the event
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
+
+- **File** - String showing current file name.
 
 - **HowTocheck** - The preference for checking of updates
 
@@ -11404,13 +11421,15 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-- **AppID** - Identifier for the application being updated
+- **AppID** - Identifier of application related to the event
 
 - **AppInfo_Language** - The language the application is running under
 
-- **AppleEventClass** - Indicates type of event being sent/acknowledged
+- **AppleEventClass** - String identifying type of Apple event class
 
-- **AppleEventID** - Unique identifier for the event being sent/acknowledged
+- **AppleEventID** - Identifier for the Apple event being sent from Microsoft AutoUpdate to a registered application
+
+- **AppToQuit**	- Indicates whether the application will self-terminate for Microsoft Autoupdate to apply update
 
 - **AppVersionLong** - The application version
 
@@ -11426,6 +11445,8 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
+- **Error**	- Indicates details on error encountered related to the event
+
 - **Event_ReceivedTime** - The time at which telemetry was received
 
 - **EventInfo_Name** - The name of the telemetry event being logged
@@ -11434,17 +11455,23 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
+- **InAppMsg**	- Indicates whether the application will show in-app message advising user to quit the app in order to update.
+
 - **Payload** - Contains retry count
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
+- **Retries**	- Retry count
+
 - **SessionId** - The identifier for the session
 
 - **Success** -	Indicates whether the subject application has reported success of operation
 
-- **UpdateID** - The update identifier
+- **Timeout**	- Integer value indicating number of seconds to wait for an application to respond after sending an Apple event.
+
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
     
 ### installstatus.codesign
 
@@ -12118,11 +12145,13 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
-- **AppID** - Identifier for the application being updated
+- **AppID** - Identifier of application related to the event
 
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application version
+
+- **BundleVersion** - Bundle version of the registered application.
 
 - **Channel** - The preference for audience
 
@@ -12136,7 +12165,7 @@ The following fields are collected:
 
 - **DeviceInfo_OsBuild** - The version of the operating system
 
-- **Error** - Indicates any errors encountered during update process, if populated
+- **Error** - Indicates details on error encountered related to the event
 
 - **Event_ReceivedTime** - The time at which telemetry was received
 
@@ -12146,7 +12175,11 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **IOC** - Indicates whether Install on Clone feature was used
+- **IOC** - String indicating whether Install On Clone is applicable to this update.
+
+- **NeedVerify** - Boolean indicating update needs verification.
+
+- **Operation** - Indicates operation being performed when an error or a warning was encountered
 
 - **Payload** - Static text to indicate beginning of install process if present
 
@@ -12156,9 +12189,9 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
-- **Success** -	 Indicates whether the install process has successfully completed
+- **Success** -	 Boolean indicating success of operation related to the event.
 
-- **UpdateID** - Identifier for an application update
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
 
 - **UpdateName** - Name of the update as it appears in the downloaded manifest file
 
@@ -12244,7 +12277,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **LaunchedBy** - Method used to launch Microsoft Update Assistant, if applicable
+- **LaunchedBy** - String to indicate how the process is launched. Microsoft Update Assistant can either be launched by launch agent or launched directly.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -14942,6 +14975,8 @@ The following fields are collected:
 
 - **App** - The application process sending the event
 
+- **AppID** - Identifier of application related to the event
+
 - **AppInfo_Language** - The language the application is running under
 
 - **AppVersionLong** - The application version
@@ -15552,7 +15587,7 @@ The following fields are collected:
 
 ### updatemanager.checkupdate
 
-This event logs number of updates found by Microsoft Autoupdate while checking for available updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs number of updates found by Microsoft AutoUpdate while checking for available updates. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15563,6 +15598,8 @@ The following fields are collected:
 - **AppVersionLong** - The application Version
 
 - **Channel** - The preference for audience
+
+- **Detected** - Number of detected updates.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -15582,7 +15619,11 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
+- **IsMainThread** - Boolean indicating whether the operation is being executed in main thread
+
 - **Payload** - Contains count of available updates found.
+
+- **Pending** - Number of updates pending.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -15764,7 +15805,7 @@ The following fields are collected:
    
 ### webservices.checkforsilentupdates
 
-This event denotes that silent-update candidates were found. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that silent-update candidates were found. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15774,7 +15815,11 @@ The following fields are collected:
 
 - **AppVersionLong** - The application Version
 
+- **Candidates** - Number of initial updates being examined.
+
 - **Channel** - The preference for audience
+
+- **Detected**	- Number of detected updates.
 
 - **Device_NetworkCountry** - The device country (based on IP address)
 
@@ -15805,7 +15850,7 @@ The following fields are collected:
 
 ### webservices.deltaupdater
 
-This event logs interactions between the client code and the feature gate that controls whether the client should allow for Delta updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs interactions between the client code and the feature gate that controls whether the client should allow for Delta updates. Microsoft uses this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15835,14 +15880,17 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains response from web-services and updater type to applied.
+- **Payload** - Static text.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
+- **Reason** - String contain for detailed reason associated with the event.
+
 - **SessionId** - The identifier for the session
 
+- **UpdaterType** - String that identifies the type of updater (Full/FileDelta/BinaryDelta) being applied.
 
 ### webservices.serviceaction
 
