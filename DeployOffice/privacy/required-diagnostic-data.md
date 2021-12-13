@@ -1624,13 +1624,15 @@ Success of application functionality. Limited to opening and closing of the appl
 
 #### account.action
 
-Needed to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets 
+The event is triggered when the user creates, adds, resets, or deletes their account. The data is needed to ensure account configuration is operating successfully and is used to monitor health of account creation, ability to add new email accounts, and monitor soft account resets.
 
 The following fields are collected: 
 
 - **account_calendar_count** - how many calendars the account has
  
 - **action** - type of action performed, for example, create_account, delete_account.
+
+- **auth_framework_type** – type of auth framework used during this session. (for example, ADAL, OneAuth)
  
 - **duration_seconds** - duration of the action
  
@@ -1979,11 +1981,13 @@ The following fields are collected:
 
 #### draft.action
 
-Used for monitoring possible negative impact on your ability to create and save mail drafts.
+The data is used for monitoring possible negative impact on your ability to create and save mail drafts.
 
 The following fields are collected: 
 
 - **action** - the type of action, for example, save, discard.
+
+- **draft_contains_inking** - this is an optional property which will tell if this draft has an inking data in it or not. If it has, then the value of this property will be true, otherwise false.
  
 - **draft_message_id** - message ID of the draft
 
@@ -2838,6 +2842,8 @@ The following fields are collected:
 - **Data_ErrorId_Code** - An error code indicating a failure in the data collection operation
 
 - **Data_ErrorId_Tag** - A tag in the code to help find the point of failure
+
+- **Data_FGFlags** - A number indicating whether the user is selected for performance related experimentation.
 
 - **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value that has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
@@ -12582,6 +12588,8 @@ The following fields are collected:
 
 - **DalvikHeapLimitInMB** - Heap info
 
+- **Data_FGFlags** – A number indicating whether the user is selected for performance related experimentation.
+
 - **DocumentRecoveryInvoked** - Boolean to indicate if any document was recovered
 
 - **ExtractionDone** - Native library extraction time
@@ -12623,6 +12631,37 @@ The following fields are collected:
 - **UIRaaSDownloadLanguagePackageBoot** - information related to language pack download
 
 - **UserDialogInterruptionDuringBoot** - Boolean for any blocking dialog shown during boot
+
+
+#### Office.Android.CrashMetadata
+
+This event is triggered when there is a crash, and the crash successfully uploads to crash collection service. This event is used to diagnose Android crashes and also monitor the health of the Android crash upload service.   
+
+The following fields are collected: 
+
+- **Data_AppErrorTime** - the time when the app crashed.
+
+- **Data_CrashAppStore** - the App store where the app was installed from
+
+- **Data_CrashedCountry** - Region where the crash occurred
+
+- **Data_CrashedLocale** - Locale of the app when the crash happened
+
+- **Data_CrashedOSVersion** - Android OS version for which the crash happened
+
+- **Data_CrashedProcess** - the process that has crashed. These are app process like com.microsoft.office.powerpoint
+
+- **Data_CrashesSessionId** - ProcessSessionId of the session which crashed
+
+- **Data_IsOEMInstalled** - this Boolean value of if app is pre-installed on the device.
+
+- **Data_IsUploadSuccessful** - If the report was successfully uploaded or encountered any issues while uploading to crash service.
+
+- **Data_reportId** - the Id of the report that is uploaded on the crash service.
+
+- **Data_TotalMemory** - System Memory of the device.
+
+- **Data_Type** - the type of the crash java/native.
 
 
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
