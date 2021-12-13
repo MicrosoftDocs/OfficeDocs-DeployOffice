@@ -59,7 +59,6 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 - If you're using Task Manager, you will see multiple instances of Microsoft Edge WebView2 running under the Microsoft Outlook process. 
 - WebView2 Runtime won’t be installed on devices in organizations that have the following plans:
   - Office 365 operated by 21Vianet
-  - Office 365 Germany
   - Office 365 GCC
   - Office 365 GCC High and DoD
 - WebView2 Runtime won’t be installed on devices running macOS.
