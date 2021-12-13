@@ -8281,39 +8281,6 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
-#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.InitReadAloud
-
-This event is collected for Word and Office apps when a Read Aloud session is initiated. Data is used to track the usage of Read Aloud; understand usage frequency and ensure that the feature is performing as expected.
- 
-The following fields are collected: 
-
-- **Data_IsDeviceTypePhone** - Check whether the user was using a phone or a tablet to use Read Aloud 
-
-
-#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudLocalPlayDuration
-
-This event is triggered during offline read aloud whenever a user successfully completes reading a paragraph, stops reading aloud, presses next or previous paragraph or puts the app in background when read is playing. The data is used to monitor the health or performance of Read Aloud local (offline) implementation. 
- 
-The following fields are collected: 
-
-- **Data_duration** - Log the play duration for Read Aloud
-
-
-#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudResponse
- 
-This event is triggered when the user receives a response from the Read Aloud online service. The data is used to monitor the operation and performance of the service.
- 
-The following fields are collected: 
-
-- **Data_http_code** - Log the HTTP Code returned from EDU service 
- 
-- **Data_service_duration** - Log the response it took EDU service to return the response 
- 
-- **Data_service_processing_time** - Log the total processing time it took from request forming part of getting response 
-
-- **Data_service_session_id** - Log the session id maintained by EDU service to return the response 
-
-
 #### Office.Word.FileNew.CreateNewFile
 
 This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
