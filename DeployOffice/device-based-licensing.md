@@ -66,7 +66,9 @@ After you have created the appropriate group type and assigned the appropriate W
 
 > [!IMPORTANT]
 > - The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
+> - To assign these licenses, you must be a Global admin.
 > - After you go to **Billing** > **Licenses** > **Subscriptions** in the Microsoft 365 admin center, be sure that you select either **Microsoft 365 Apps for enterprise (device)** or **Microsoft 365 Apps for Education (device)** (depending on which license you have) to assign those licenses to the group you created.
+
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
