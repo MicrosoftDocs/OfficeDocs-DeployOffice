@@ -27,7 +27,6 @@ To view security update status for your environment, the following requirements 
 > [!IMPORTANT]
 > Security update status isn't available to customers who have the following plans:
 >- Office 365 operated by 21Vianet
->- Office 365 Germany
 >- Office 365 GCC
 >- Office 365 GCC High and DoD
 
