@@ -54,7 +54,7 @@ Keep in mind that moving to a different update channel can also change which fea
 >
 > - Also, if you're using the Microsoft 365 Apps admin center (https://config.office.com), and the device is included in the [inventory](admincenter/inventory.md) or is managed by a [servicing profile](admincenter/servicing-profile.md), then your choice under **Feature updates** won't apply.
 >
-> - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+> - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
 
 ## Manage which version of Office is installed
 
@@ -67,7 +67,7 @@ This capability is available to you on the **Version management** tab in the Mic
 >
 > - If you’re using the Office Deployment Tool to manage Office on devices in your organization, but none of the other methods mentioned in the previous bullet point, then your choices on the **Version management** tab will apply to devices in your organization.
 >
-> - The **Version management** tab isn't available if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 Germany, Office 365 GCC, or Office 365 GCC High and DoD.
+> - The **Version management** tab isn't available if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
 
 On the **Version management** tab, you can see your current version, your previous version, and your next scheduled version of Office for Monthly Enterprise Channel. Updates to Monthly Enterprise Channel are released on the second Tuesday of each month.
 

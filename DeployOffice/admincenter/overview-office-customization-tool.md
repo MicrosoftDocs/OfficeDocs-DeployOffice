@@ -71,7 +71,6 @@ You can now use the Office Customization Tool to create, save, and manage your d
 > [!IMPORTANT]
 >- Saving and managing configuration files in the cloud isn't available to customers who have the following plans:
 >   - Office 365 operated by 21Vianet
->   - Office 365 Germany
 >   - Office 365 GCC High and DoD
 > - Office 365 GCC customers can save and manage configuration files in the cloud.
 
