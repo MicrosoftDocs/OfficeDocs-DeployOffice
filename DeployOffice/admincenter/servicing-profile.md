@@ -34,7 +34,6 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 > [!IMPORTANT]
 > Servicing profiles aren't available to customers who have the following plans:
 >- Office 365 operated by 21Vianet
->- Office 365 Germany
 >- Office 365 GCC
 >- Office 365 GCC High and DoD
 
