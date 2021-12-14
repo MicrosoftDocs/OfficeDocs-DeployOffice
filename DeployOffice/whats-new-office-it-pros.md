@@ -21,7 +21,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## December 2021
 
-Microsoft has released the recommended security configuration baseline settings for Version 2112 of Microsoft 365 Apps for enterprise. For more information, see the [Security baseline for Microsoft 365 Apps for enterprise, v2112](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172) blog post.
+Microsoft has released the recommended security configuration baseline settings for Version 2112 of Microsoft 365 Apps for enterprise. For more information, see the following blog post: [Security baseline for Microsoft 365 Apps for enterprise, v2112](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172)
 
 ## November 2021
 
