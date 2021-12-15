@@ -135,6 +135,8 @@ A: Yes. Clients check in to the Office cloud policy service every 90 minutes. As
 
 A: We are disabling this functionality and are no longer providing overrides. As part of security hardening, we encourage admins to use the settings that are available in the policies themselves. Some security policies have settings that give users the option to enable content, and admins can apply these less restrictive settings to those users who need it.
 
+For recommendations to restrict active content, and Office security policies that have user prompts and overrides available, see [Admin options for restricting active content](/microsoft-365/security/active-content-in-trusted-docs#admin-options-for-restricting-active-content).
+
 ### Q: How do I turn off Security Policy Advisor?
 
 A: See [Step 4: Turn off Security Policy Advisor](#step-4-turn-off-security-policy-advisor). Remember, if you turn it off, you can't turn it back on.
