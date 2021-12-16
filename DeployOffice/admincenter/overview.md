@@ -49,19 +49,19 @@ For more information, see [Overview of the Office Customization Tool](overview-o
 
 ## Microsoft 365 Apps health
 
-Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. If you're curious about application crash rate or boot time on a specific Microsoft 365 Apps version you can see the insights within Apps Health. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
+Microsoft 365 Apps health monitors reliability and performance metrics and provides custom guidance to help optimize and troubleshoot Microsoft 365 Apps on your client devices. If you're curious about application crash rate or boot time on a specific Microsoft 365 Apps version, you can see the insights within Apps Health. For more information, see [Microsoft 365 Apps health](microsoft-365-apps-health.md).
 
 ## Inventory
 
-You can use the inventory page to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device. Insights about channel, version, build, and even last signed in user are avaialble. For more information, see [Overview of inventory](inventory.md).
+You can use the inventory page to see information about the devices in your organization, including hardware, operating system, and the Office software running on that device. Insights about channel, version, build, and even last signed in user are available. For more information, see [Overview of inventory](inventory.md).
 
 ## Security update status
 
-You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. Additionally, set a goal for your organization to achieve.  For more information, see [Overview of the security update status](security-update-status.md).
+You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. Additionally, set a goal for your organization to achieve. For more information, see [Overview of the security update status](security-update-status.md).
 
 ## Servicing profile
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Microsoft CDN allwing for macimum uptime and mimimizing end user imapct and interuption. For more information, see [Overview of servicing profile](servicing-profile.md).
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and mimimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
 
 ## What's new in preview
 
