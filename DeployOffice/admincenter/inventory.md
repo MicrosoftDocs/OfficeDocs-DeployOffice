@@ -58,7 +58,7 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 
 The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or by unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
 
-By choosing **show all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
+By choosing **Show all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
 
 
 ## Channels insight
@@ -67,7 +67,7 @@ The **Channels** insight shows you the number of builds in your environment by u
 
 ## Devices insight
 
-The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. THe main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
+The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
 
 The flyout for a specific device shows the following information:
 
@@ -87,7 +87,7 @@ The flyout for a specific device shows the following information:
 | Last signed in user and email | Information about who the last signed in user on the device was |
 | Version| The version of Office that is installed on the device |
 | Build| The build of Office that is installed on the device |
-|Release date| The release data of that build of Office|
+|Release date| The release date of that build of Office|
 | Update channel| The update channel that Office is configured to receive Office updates from |
 | Office apps| A list of the Office apps installed on the device |
 | Office Add-ins | A list of the COM add-ins that are installed on the device. This list excludes Add-ins that are part of the Office installation.|
@@ -123,7 +123,7 @@ If you need to find a specific device or add-in, you can use the search box loca
 
 ## Inventory cleanup
 
-Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to  **settings** in the navigation pane.
+Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to **Settings** in the navigation pane.
 
 
 ## Export inventory views
