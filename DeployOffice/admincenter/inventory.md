@@ -15,7 +15,7 @@ description: "Guidance for Office admins on how to use the inventory feature in 
 
 The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into the state of Office installations on devices in your organization. These insights can help you identify issues with those Office installations, such as identifying devices that are running an older, unsupported build of Office. Insights are also available about add-ins that are installed on those devices.
 
-From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device.
+From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
 
 ## Requirements for using inventory
 
@@ -39,7 +39,7 @@ To view the inventory for your environment, the following requirements must be m
 
 To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
-1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Health** > **Inventory** in the navigation pane.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
 2. If you haven't viewed the inventory before, complete the setup wizard.
 3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
 
@@ -50,7 +50,7 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 
 - The number of different Office builds, devices on those builds, and their support status.
 - The number of  different Office update channels, number of different builds from those update channels, and their support status.
-- The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed.
+- The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed and the architecture (32-bit versus 64-bit) being used.
 - The top installed add-ins on those devices.
 
 
@@ -58,7 +58,7 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 
 The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or by unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
 
-By choosing **See all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
+By choosing **Show all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
 
 
 ## Channels insight
@@ -67,7 +67,7 @@ The **Channels** insight shows you the number of builds in your environment by u
 
 ## Devices insight
 
-The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device.
+The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
 
 The flyout for a specific device shows the following information:
 
@@ -87,7 +87,7 @@ The flyout for a specific device shows the following information:
 | Last signed in user and email | Information about who the last signed in user on the device was |
 | Version| The version of Office that is installed on the device |
 | Build| The build of Office that is installed on the device |
-|Release date|The release data of that build of Office|
+|Release date| The release date of that build of Office|
 | Update channel| The update channel that Office is configured to receive Office updates from |
 | Office apps| A list of the Office apps installed on the device |
 | Office Add-ins | A list of the COM add-ins that are installed on the device. This list excludes Add-ins that are part of the Office installation.|
@@ -100,7 +100,7 @@ The flyout for a specific device shows the following information:
 
 ## Add-ins insight
 
-The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed on devices in your organization.
+The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed on devices in your organization. You can export the full add-in list from the add-in table. 
 
 If you choose **Show all add-ins**, you can see a table with the following information:
 
@@ -123,7 +123,7 @@ If you need to find a specific device or add-in, you can use the search box loca
 
 ## Inventory cleanup
 
-Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. 
+Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to **Settings** in the navigation pane.
 
 
 ## Export inventory views
