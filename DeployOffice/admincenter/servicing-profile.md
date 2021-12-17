@@ -43,25 +43,25 @@ A servicing profile takes precedence over other management tools, such as Micros
 
 ## How to apply the servicing profile to a device
 
-1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), click **Servicing** in the left-hand navigation, and then click **Monthly Enterprise**. 
+1. Go to the [Microsoft 365 Apps admin center](https://config.office.com), choose **Servicing** in the left-hand navigation, and then choose **Monthly Enterprise**. 
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
-    - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on to Monthly Enterprise Channel as long as you have that said channel selcted in teh device criteria. 
+    - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on, if that channel is selected in the device criteria, to Monthly Enterprise Channel. 
     - The second option is to use **Groups (Preview)**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins.
 
 > [!NOTE]
-> - You can edit the selection criteria once the profile has been created by going to the **Settings** tab on the servicing profile dashboard.
+> - You can edit the selection criteria once the profile has been created by going to the **Settings** tab on the **Servicing profile** dashboard.
 > - Azure Active Directory registered devices are not supported at this time.
 
 3. When you complete the wizard, the eligible devices will have the servicing profile applied within 2 hours.
 
 ## Using the servicing profile
 
-You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including details on the next build rollout, projected waves, and information on any device failures and issues. From there you can click into **Devices**, **Issues**, and **Settings** to get more information on devices managed by the servicing profile.
+You can see an overview of the devices in the Servicing profile section of the Microsoft 365 Apps admin center, including details on the next build rollout, projected waves, and information on any device failures and issues. From there you can go to the **Devices**, **Issues**, and **Settings** tabs to get more information on devices managed by the servicing profile.
 
 ### Devices
 
-Within the devices tab, you can see the update status of these devices, view information on individual devices. You can click on the device to view the same information you can view within inventory such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
+Within the **Devices** tab, you can see the update status of these devices and view information on individual devices. You can select a device to view the same information you can view within inventory, such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
 
 ### Issues
 
