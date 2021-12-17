@@ -15,7 +15,7 @@ description: "Guidance for Office admins on how to use the inventory feature in 
 
 The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into the state of Office installations on devices in your organization. These insights can help you identify issues with those Office installations, such as identifying devices that are running an older, unsupported build of Office. Insights are also available about add-ins that are installed on those devices.
 
-From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if addins or macros are present on the device as well as the last signed in user. 
+From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
 
 ## Requirements for using inventory
 
@@ -100,7 +100,7 @@ The flyout for a specific device shows the following information:
 
 ## Add-ins insight
 
-The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed on devices in your organization. You can export the full addin list from the addin table. 
+The **Add-ins** insight shows the Office add-ins installed on the devices in your organization. The insight shows you the most commonly installed add-ins, the number of devices running that add-in, and the number of different versions of the add-in that are installed on devices in your organization. You can export the full add-in list from the add-in table. 
 
 If you choose **Show all add-ins**, you can see a table with the following information:
 
