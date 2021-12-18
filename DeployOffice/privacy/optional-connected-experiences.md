@@ -51,6 +51,10 @@ Note: Your [privacy settings](#your-privacy-settings) do not control experiences
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
+### Feedback (web portal)
+
+[Feedback](https://feedbackportal.microsoft.com) is a web portal that allows users to create and participate in community feedback about Microsoft products. Links to the Feedback web portal might be available when providing feedback from within a product. For more information, see [Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft). The Feedback web portal is powered by Microsoft Dynamics 365 and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
+
 ### Help > Contact Support
 
 On Outlook for iOS and Android, you can report issues and connect with our support team through **Settings** > **Help & Feedback** > **Contact Support**. This experience requires a Microsoft owned service called PowerLift, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
