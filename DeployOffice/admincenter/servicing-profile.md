@@ -1,5 +1,5 @@
 ---
-title: "Servicing profile"
+title: "Overview of servicing profile in the Microsoft 365 Apps admin center"
 ms.author: dhirenb
 author: dhirendra-bhupati
 manager: dougeby
