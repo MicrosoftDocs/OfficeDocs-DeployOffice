@@ -52,7 +52,6 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates. 
 
-
 - [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 
 - [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
