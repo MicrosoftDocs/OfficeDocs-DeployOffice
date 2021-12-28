@@ -8,7 +8,9 @@ ms.topic: hub-page
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
+ms.custom: 
+- Ent_Office_Mac
+- intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
 ---
