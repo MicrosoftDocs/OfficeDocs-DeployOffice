@@ -10,6 +10,7 @@ metadata:
   author: danbrown
   ms.topic: hub-page
   ms.service: o365-proplus-itpro
+  ms.custom: intro-hub-or-landing
 
 # Card with summary style
 additionalContent:
@@ -41,3 +42,4 @@ additionalContent:
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
           url: /en-us/DeployOffice/ltsc2021/overview
+
