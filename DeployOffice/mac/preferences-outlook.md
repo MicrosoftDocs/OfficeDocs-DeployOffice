@@ -33,6 +33,7 @@ The following list shows the preferences that are covered in this article:
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
+- [Disable "Do not send a response"](#disable-do-not-send-a-response)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
 - [Disable export](#disable-export)
 - [Disable import](#disable-import)
@@ -135,7 +136,19 @@ Prevent users from being able to export archive files (.olm).
 |Availability|16.18 |
 |Comments| Key must be set to true and forced. |
 
-## Online meetings settings
+## Meetings settings
+
+### Disable "Do not send a response"
+
+Prevent users from selecting “Do not send response” when replying to a meeting request.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisableRespondToMeetingWithoutResponse|
+|Data Type| Boolean|
+|Possible values|  false (default) <br/> true  |
+|Availability| 16.56|
 
 ### Disable Skype for Business online meetings
 
