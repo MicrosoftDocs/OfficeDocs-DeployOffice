@@ -556,7 +556,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **action** - The event action name (such as archive, delete, etc.) so we can detect issues with specific actions taken
 
-- **ad_id** - The unique advertising identifier
+- **ad_id** - The unique advertising identifier *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **app_version** - Current version of the app installed to help us detect issues affecting certain app version
 
