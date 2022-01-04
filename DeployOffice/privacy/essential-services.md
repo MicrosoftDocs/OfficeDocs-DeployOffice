@@ -1037,8 +1037,7 @@ The following fields are collected:
 
 - **Devicenetworkstate** - Device network state
 
-- **Deviceprofiletelemetryid** - Device profile telemetry ID (string used by MATS to identify a 
-specific device)
+- **Deviceprofiletelemetryid** - Device profile telemetry ID (string used by MATS to identify a specific device)
 
 - **duration_max** - Minimum duration, in milliseconds, of the transactions aggregated on this signal.
 
@@ -1078,7 +1077,7 @@ specific device)
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
-- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT)
 
 - **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
 
@@ -3918,7 +3917,7 @@ The following fields are collected:
 
 - **canUserSeeUpsell** - Boolean: True if the SignedIn user is not underage and qualified to see upsell screen
 
-- **DidShowPromotedSubscription** - Boolean: True if the user has triggered first App Boot from Promoted Subscription.
+- **DidShowPromotedSubscription** - Boolean: True if the user has triggered first app boot from promoted subscription.
 
 - **EffectiveIdentityType** - Boolean: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
 
@@ -7950,8 +7949,6 @@ The following fields are collected:
 
 - **CachedUpdate** - Indication whether a cached download is in use
 
-- **LeapFrog**	- Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
-
 - **Channel** - The preference for audience
 
 - **Device_NetworkCountry** - The device country (based on IP address)
@@ -7971,6 +7968,8 @@ The following fields are collected:
 - **EventInfo_Time** - The time at which the logged event took place 
 
 - **HowTocheck** - The preference for checking of updates
+
+- **LeapFrog**	- Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
