@@ -23,6 +23,12 @@ Deployment of this optional extension relies on a background service, which is i
 
 This optional extension is available only in specific [locations](#which-locations-will-receive-the-microsoft-search-in-bing-extension) for domain-joined devices running Windows. If Bing is already the default search engine, the extension doesn't get installed. Even after the extension is installed, an [On/Off](#change-the-default-search-engine-for-google-chrome-from-the-extension) toggle easily allows your users to stop using Bing as the default search engine.
 
+> [!NOTE]
+> - An alternative is to use the Microsoft Search extension that is [available from the Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search/fahnnnailfccbjpdjeafekniiaflekca). 
+> - This extension provides a way to perform workplace search while in the Chrome web browser.
+> - You can have your users manually install this extension for themselves or you can deploy this extension for them by using Group Policy.
+> - This extension does not make any changes to default browser settings or search engine settings on your users' devices.  
+
 ## How does the Microsoft Search in Bing extension for Google Chrome get installed?
 
 Several things all have to happen for the Microsoft Search in Bing extension to be installed for Google Chrome on the user's device.
