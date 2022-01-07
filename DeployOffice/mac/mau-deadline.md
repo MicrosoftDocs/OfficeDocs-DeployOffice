@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
 recommendations: false
 description: "Provides admins with information about how to set a deadline for updates provided from Microsoft AutoUpdate (MAU)"
 ---

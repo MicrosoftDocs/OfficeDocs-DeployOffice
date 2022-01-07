@@ -9,7 +9,6 @@ ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
 recommendations: false
 description: "Shows IT Pros how to set a preference for trying a default decryption password in Excel for Mac"
 ---
