@@ -23,7 +23,7 @@ ms.collection:
 
 The [Microsoft 365 Apps admin center](https://config.office.com/) provides several new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers, we have developed the following best practices on how to adopt these new features.
 
-There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits, while keeping the rate of change manageable. Adjust the approach to the needs of your organization.
+There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits, while keeping the rate of change manageable. Adjust the approach to the needs of your organization. If you want to explore the user interface and options beforehand, we have interactive demos for [Microsoft 365 Apps health](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/1/0) and the [inventory](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/2/0) available.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
@@ -107,6 +107,5 @@ Before you adopt Servicing Profiles, consider the following factors:
 
 - All devices that match the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
 - All devices that match the rule set will automatically stop accepting updates for Microsoft 365 Apps coming from other sources.
-- There's currently no way to include or exclude specific devices.
 
 If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise Channel update.
