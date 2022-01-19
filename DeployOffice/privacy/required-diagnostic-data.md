@@ -556,7 +556,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **action** - The event action name (such as archive, delete, etc.) so we can detect issues with specific actions taken
 
-- **ad_id** - The unique advertising identifier
+- **ad_id** - The unique advertising identifier *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **app_version** - Current version of the app installed to help us detect issues affecting certain app version
 
@@ -829,7 +829,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.SignIn.SignInCompleted.]*
 
-The critical signal used to ensure sign-in successful or not. The telemetry is collected to ensure critical regression detection for OneNote app and service health
+The signal is used to ensure sign-in successful or not. The data is collected to ensure critical regression detection for OneNote app and service health.
 
 The following fields are collected:
 
@@ -847,13 +847,13 @@ The following fields are collected:
 
 - **ServerType** - Returns the type of the server offering the service 
 
-- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated
+- **SignInMode** - Sign in or Sign up or Auto Sign-in or Sign up accelerated or AccountSignIn
 
 #### Office.OneNote.Android.SignIn.SignInStarted
 
 *[This event was previously named OneNote.SignIn.SignInStarted.]*
 
-The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect, and fix any issues caused during interaction with Message Bar
+The signal is used to indicate any issues encountered while using Message Bar. The data is used to monitor, detect, and fix any issues caused during interaction with Message Bar.
 
 The following fields are collected: 
 
@@ -863,7 +863,7 @@ The following fields are collected:
 
 - **ServerType** - Returns the type of the server offering the service 
 
-- **SignInMode** - Sign in or Sign up or Auto Sign in or Sign up accelerated
+- **SignInMode** - Sign in or Sign up or Auto Sign in or Sign up accelerated or AccountSignIn
 
 
 #### Office.OneNote.FirstRun.FirstRun
@@ -9136,6 +9136,7 @@ The following fields are collected:
    - **changed_folder** - determines whether this action was archived, scheduled, or another action.
    - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
   - **enabled_state** - whether state related to the action is enabled
+  - **fab_tap_behavior** – the selected tap behavior (single press or tap & hold) for the floating action button we have on our main screens to compose an email, create an event, etc.
   - **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)
   - **notification_action_setting** - indicates the details of, if applicable, notification action settings related to this action
     - **notification_action** - indicates what the user was trying to do, that is, flag, delete, archive, it allows us to determine what message action the user wanted to perform on the notification and if the action failed or not. 
@@ -13513,6 +13514,21 @@ The following fields are collected:
 - **scroll_hitch_time_ratio** - Tells us the ratio of the time spent hitching while scrolling on UI, to help us understand the negative UI performance impact.
 
 
+#### wkwebview.terminate
+
+This event is triggered when the user opens a conversation with a number of messages, and they put the app into background process for a while and then activate the app. This event will let us know what number of webview terminated during rendering and composing.
+
+The following fields are collected: 
+
+- **is_foreground** - is app in foreground when this event happened
+
+- **scenario** - the scenario of webview termination occurred (rendering or composing)
+
+- **termination_process** - the process during email rendering (reuse/rendering/cleaning) when this event happened
+
+- **webview_reuse_count** - the number of webview reused times when this event happened
+
+
 ### *Application activity error subtype*
 
 Errors in functionality of a feature or user experience.
@@ -14709,16 +14725,6 @@ The following fields are collected:
 
 - **scenario** - where the error occurred. It’s an enum. Possible values are old_renderer, react_renderer, and composing.
 
-#### wkwebview.terminate
-
-This event allows us to detect when web view is terminated by the system. This data allows us to monitor the error user encountered when composing or reading an email. 
-
-The following fields are collected: 
-
-- **is_foreground** - whether app is in foreground when this event happens.
-
-- **Scenario** - where the error occurred, when rendering or composing.
-
 
 ## Device connectivity and configuration​ data events
 
@@ -14832,6 +14838,8 @@ The following fields are collected for Android only:
 - **color_inversion** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
 - **density_setting** - The custom (user-selected) density mode currently in use by the application
+
+ - **fab_tap_behavior** – Tells us the selected tap behavior (single press or tap & hold) for the floating action button we have on our main screens to compose an email, create an event, etc.
 
 - **high_contrast** - Tells us if the user has turned on the setting for high contrast on their device to help us detect issues related to this setting
 
