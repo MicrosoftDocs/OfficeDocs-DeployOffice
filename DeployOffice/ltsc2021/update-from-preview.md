@@ -30,9 +30,9 @@ If you're a volume licensed customer that's licensed for Office LTSC 2021 and yo
 If you’re not a volume licensed customer, [follow these instructions](#instructions-for-customers-who-dont-have-a-volume-license).
 
 > [!WARNING]
-> - The client activation keys used in the Office LTSC 2021 Preview program expire on January 17, 2022. 
-> - If you don't follow the steps in this article, Office LTSC 2021 Preview will go into reduced functionality mode and your users will only be able to read and print documents using Office LTSC 2021 Preview. They won’t be able to create new documents or edit existing documents.
-> - Users will get periodic warnings about this in their Office apps, such as Word, starting in the middle of December.
+> - The client activation keys used in the Office LTSC 2021 Preview program expired on January 17, 2022. 
+> - Office LTSC 2021 Preview is now in reduced functionality mode and your users will only be able to read and print documents using Office LTSC 2021 Preview. They won’t be able to create new documents or edit existing documents.
+> - Each time your users open an Office app, such as Word or Excel, they will see a message reminding them that Office LTSC 2021 Preview has expired.
 
 ## KMS activation steps for Office on Windows
 
