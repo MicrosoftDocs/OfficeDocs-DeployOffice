@@ -21,10 +21,11 @@ description: "Technical guidance for IT Pros about the preview version of Office
 
 > [!IMPORTANT]
 > - Office LTSC for Mac 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
+> - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
 > - For steps on how to update your preview installation to Office LTSC for Mac 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
 
 > [!NOTE]
-> - This article is for a preview program and is subject to change. The preview expires on January 17, 2022.
+> - This article is for a preview program and is subject to change.
 >
 > - This preview program is intended for organizations that expect to buy and deploy Office LTSC for Mac 2021, the new volume licensed (perpetual) version of Office.
 >
@@ -49,9 +50,9 @@ Both the installer and VL Serializer package files follow the standard Apple PKG
 Office LTSC for Mac 2021 (Preview) will be updated approximately once a month during the preview program. These updates will include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. You can use Microsoft AutoUpdate to detect, download, and apply these updates.
 
 > [!IMPORTANT]
-> - Office LTSC for Mac 2021 (Preview) uses a special activation key that expires on January 17, 2022.
+> - Office LTSC for Mac 2021 (Preview) uses a special activation key that expired on January 17, 2022.
 >
-> - After that date, Office LTSC for Mac 2021 (Preview) will go into reduced functionality mode, which means you’ll only be able to read and print documents in the Office apps. You won’t be able to create new documents or edit existing documents using Office LTSC for Mac 2021 (Preview).
+> - Office LTSC for Mac 2021 (Preview) is now in reduced functionality mode, which means you’ll only be able to read and print documents in the Office apps. You won’t be able to create new documents or edit existing documents using Office LTSC for Mac 2021 (Preview).
 >
 > - In Outlook, you’ll be able to read existing items that have been synchronized to your mailbox, but Outlook won’t be able to connect to your email server and synchronize more items.
 

@@ -20,10 +20,11 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 
 > [!IMPORTANT]
 > - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
+> - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
 > - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
 
 > [!NOTE]
-> - This article is for a preview program and is subject to change. The preview expires on January 17, 2022.
+> - This article is for a preview program and is subject to change.
 >
 > - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2021, the new volume licensed (perpetual) version of Office.
 >
@@ -146,9 +147,9 @@ If you don’t want certain Office apps to be installed, such as Publisher, you 
 There are special product keys to activate the preview versions of Office LTSC, Project 2021, and Visio 2021. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
 
 > [!IMPORTANT]
-> - The special product keys for the preview products expire on January 17, 2022.
+> - The special product keys for the preview products expired on January 17, 2022.
 >
-> - After that date, the preview products will go into reduced functionality mode, which means you’ll only be able to read and print documents in the preview products. You won’t be able to create new documents or edit existing documents using the preview products.
+> - The preview products are now in reduced functionality mode, which means you’ll only be able to read and print documents in the preview products. You won’t be able to create new documents or edit existing documents using the preview products.
 > 
 > - In Outlook, you’ll be able to read existing items that have been synchronized to your mailbox, but Outlook won’t be able to connect to your email server and synchronize more items.
 

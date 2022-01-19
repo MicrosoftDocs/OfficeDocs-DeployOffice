@@ -20,10 +20,11 @@ description: "Technical overview for IT Pros about the preview version of Office
 
 > [!IMPORTANT]
 > - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
+> - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
 > - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
 
 > [!NOTE]
-> - This article is for a preview program and is subject to change. The preview expires on January 17, 2022.
+> - This article is for a preview program and is subject to change.
 >
 > - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2021, the new volume licensed (perpetual) version of Office.
 >
