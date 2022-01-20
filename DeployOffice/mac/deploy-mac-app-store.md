@@ -6,9 +6,9 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
 recommendations: false
 description: "Provides information to admins on how to download and deploy Office for Mac from the Mac App Store"
 ---

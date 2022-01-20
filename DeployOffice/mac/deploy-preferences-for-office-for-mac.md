@@ -6,9 +6,9 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
 recommendations: true
 description: "Provides information for admins on how to deploy standard preference settings for Office for Mac, by configuring .plist files"
 ---
@@ -17,7 +17,7 @@ description: "Provides information for admins on how to deploy standard preferen
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
-After Office is installed on a Mac, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide Mac users in your organization with a standard set of preferences for Office. For example, you can configure how often to check for software updates for Office - daily, weekly, or monthly.
+After Office is installed on a Mac, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide your users with a standard set of preferences for Office. For example, you can configure how often to check for software updates for Office - daily, weekly, or monthly.
   
 Preferences for Office are stored in preference files. These files are often referred to as .plist files.
   
@@ -34,7 +34,7 @@ defaults write com.microsoft.Outlook CalendarFirstDayOfWeek -int 2
 
 For more examples of Outlook preferences, see [Set preferences for Outlook for Mac](preferences-outlook.md).
 
-You can take an existing .plist file and modify it with your organization's preferences. In some cases, you can actually copy that .plist file to other Mac devices in your organization that have Office installed. But that doesn't work for all .plist files. Therefore, the preferred method is to create a script that incorporates all the defaults commands that you want to use to set preferences. Then deploy that script to your users. Because preferences are user-specific, you need to run the script in the user's context. That also means that if several users share the same device and each user has a different account, then the script needs to be run for each user of that device.
+You can take an existing .plist file and modify it with your organization's preferences. In some cases, you can actually copy that .plist file to other Mac devices in your organization that have Office installed. But that doesn't work for all .plist files. Therefore, the preferred method is to create a script that incorporates all the defaults commands that you want to use to set preferences. Then deploy that script to your users. Because preferences are user-specific, you need to run the script in the user's context. If several users share the same device and each user has a different account, then the script needs to be run for each user of that device.
 
 Most app preferences can be deployed through Configuration Profiles or a Mobile Device Management (MDM) server.
   
