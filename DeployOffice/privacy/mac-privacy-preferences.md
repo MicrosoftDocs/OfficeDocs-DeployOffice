@@ -6,12 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.subservice: office-mac
 ms.localizationpriority: high
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-- Ent_Office_Mac
 description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
 hideEdit: true
 ---
