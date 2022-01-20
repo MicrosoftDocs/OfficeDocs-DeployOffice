@@ -11,7 +11,6 @@ ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-- Ent_Office_Mac
 description: "Provides Office admins with information about how to manage privacy settings on iOS devices."
 hideEdit: true
 ---
