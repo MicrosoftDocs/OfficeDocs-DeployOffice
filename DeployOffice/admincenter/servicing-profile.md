@@ -61,7 +61,7 @@ You can see an overview of the devices in the Servicing profile section of the M
 
 ### Devices
 
-Within the **Devices** tab, you can see the update status of these devices and view information on individual devices. You can select a device to view the same information you can view within inventory, such as details on the device's hardware, operating system and Microsoft 365 Apps configuration.
+Within the **Devices** tab, you can see the update status of these devices and view information on individual devices. You can select a device to view the same information you can view within inventory, such as details on the device's hardware, operating system, and Microsoft 365 Apps configuration.
 
 #### Roll back to a previous version (Preview)
 
