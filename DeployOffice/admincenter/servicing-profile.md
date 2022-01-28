@@ -19,7 +19,7 @@ Servicing profiles let you automatically deliver monthly Office updates for spec
 - Updates to the device come from the Office Content Delivery Network (CDN)
 - The devices are managed by the servicing profile
 
-Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates cannot be installed.
+Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates can’t be installed.
 
 ## Requirements for using a servicing profile
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
@@ -77,7 +77,7 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 ### Settings
 
-The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they are downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
+The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
 #### Set an update deadline
 
