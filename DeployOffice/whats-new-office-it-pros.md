@@ -23,7 +23,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ### Servicing profiles: roll back to a previous version (preview)
 
-If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview)
+If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview).
 
 ## December 2021
 

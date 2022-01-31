@@ -61,7 +61,7 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 ## Servicing profile
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and mimimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
 
 ## What's new in preview
 
