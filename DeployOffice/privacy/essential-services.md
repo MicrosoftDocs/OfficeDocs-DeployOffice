@@ -437,17 +437,222 @@ The following fields are collected:
   - **Wamtelemetrybatch** - Currently unused. In the future, allows the WAM component to dispatch additional information regarding the authentication event.
 
 
+### Office.MATS.OneAuth.ActionMicrosoftOfficeAndroid
+
+Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. When acquisition attempts fail, error information is included. These events help our users avoid entering broken authentication states by:
+
+- Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+
+- Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+
+- When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+
+- These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+
+The following fields are collected:
+
+- **ActionEndTime** - When the authentication event ended
+
+- **actionname** - Friendly name for this event if one was provided.
+
+- **ActionStartTime** - Time at which the authentication event began.
+
+- **actiontype** - Specifies the type of authentication library in use.
+
+- **appaudience** - Is the app build for internal or external use
+
+- **appname** - Name of the application doing authentication
+
+- **appver** - Version of the application doing authentication
+
+- **askedforcreds** - Did the application ask the user to enter credentials for this action
+
+- **authoutcome** - Did the authentication attempt succeed, fail, or was cancelled
+
+- **blockingprompt** - Did the application throw a prompt requiring user interaction
+
+- **correlationid** - Identifier used to join information regarding this individual event with services data
+
+- **count** - The total number of aggregated actions reported in this one data event.
+
+- **data_signing_time** - Records the time taken for signing data using the key
+
+- **devicenetworkstate** - Is the device connected to the internet.
+
+- **deviceprofiletelemetryid** - Anonymous device ID used to measure device-wide authentication experience and reliability.
+
+- **duration_max** - Max duration of any one of the aggregated events
+
+- **duration_min** - Min duration of any one of the aggregated events
+
+- **duration_sum** - Sum of the duration of all the aggregated events
+
+- **error** - Error code if the authentication failed
+
+- **errordescription** - Brief description of the error
+
+- **errorsource** - Did the error come from service, authentication library, or application
+
+- **eventtype** - Is this event reporting an authentication datapoint, or a data quality error event. Used to measure data quality.
+
+- **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
+
+- **identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+
+- **interactiveauthcontainer** - What type of prompt was shown
+
+- **issilent** - Was a prompt shown or was this a silent (background) authentication event.
+
+- **key_creation_time** - Records the time taken for asymmetric key pair creation
+
+- **key_load_time** - Records the time taken for loading an existing key pair
+
+- **MSAL_access_token_expiry_time** - Access token expiry time in UTC returning to the application.
+
+- **MSAL_all_error_tags** - All error tags the Microsoft Authentication Library (MSAL) encountered during the authentication flow.
+
+- **MSAL_api_error_code** - If MSAL encounters an error bubbled up from the OS, platform error codes are stored here.
+
+- **MSAL_api_error_context** - String containing additional human readable details about the last error MSAL encountered.
+
+- **MSAL_api_error_tag** - Unique string for the place in code where this error occurred.
+
+- **MSAL_api_name** - Name of the MSAL top level API called to start this authentication flow.
+
+- **MSAL_api_status_code** - Status code MSAL returned for this authentication flow result.
+
+- **MSAL_auth_flow** - Steps MSAL attempted during this authentication flow (AT, PRT, LRT, FRT, ART, IRT). Separated by the pipe | symbol for easy parsing.
+
+- **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = PRT|LRT, PRT's error would be in AuthFlowLastError).
+
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
+
+- **MSAL_authorization_error_subcode** - If we received a sub error code from the authorization/UI call, it's put here. (Ex: "bad_token")
+
+- **MSAL_authorization_type** - Means of acquiring an access token supported by MSAL used for this flow (Ex: ImportedRefreshToken, CachedRefreshToken)
+
+- **MSAL_broker_accounts_count** - Number of accounts the system broker returns during an account discovery call. (Ex: 1, 0, 1337)
+
+- **MSAL_broker_app_used** - Was a broker app used in this auth flow.
+
+- **MSAL_browser_navigation_count** - Indicates the number of navigation events that occurred within MSAL interactive flows.
+
+- **MSAL_client_id** - Client ID of the calling application
+
+- **MSAL_correlation_id** - Unique GUID for this event, used to join actions across client, server, and app logs.
+
+- **MSAL_data_signing_time** - The length of time in milliseconds that it took to sign the request header with the PoP key.
+
+- **MSAL_delete_token** - List of tokens that were deleted from cache during this authentication flow.
+
+- **MSAL_delete_token_last_error** - System error code in case of a token deletion error, same as read/write token last error.
+
+- **MSAL_http_call_count** - Number of HTTP calls MSAL made during the authentication flow.
+
+- **MSAL_http_call_count_max** - If this signal is aggregated, max network calls made by MSAL of any aggregated event
+
+- **MSAL_http_call_count_min** - If this signal is aggregated, min network calls made by MSAL of any aggregated event
+
+- **MSAL_http_call_count_sum** - If this signal is aggregated, sum of the network calls made by MSAL of all the aggregated events
+
+- **MSAL_is_pkey_auth_token_sent** - True/false did we send a signed JWT in response to a PKeyAuth challenge.
+
+- **MSAL_is_successful** - Was the authentication flow successful.
+
+- **MSAL_key_creation_time** - How long it took in milliseconds to generate the Proof of Possession key.
+
+- **MSAL_key_load_time** - How long it took in milliseconds to load the Proof of Possession Key.
+
+- **MSAL_last_http_response_code** - If MSAL made one or more HTTP call(s), this is the last HTTP response code we received.
+
+- **MSAL_migration_adal_accounts_found** - Number of Adal accounts found in the migration flow
+
+- **MSAL_migration_adal_accounts_succeeded** - Number of Adal accounts successfully migrated in the migration flow
+
+- **MSAL_msal_version** - MSAL's version string, format X.X.X+(OneAuth, local, or a commit hash).
+
+- **MSAL_pkeyauth_cert_type** - “empty”/ ”windows_issuer” / “windows_thumbprint” / “apple keychain” – How/where did we find the cert used to complete PKeyAuth
+
+- **MSAL_prt_enabled** - Was PRT functionality enabled for this request
+
+- **MSAL_prt_protocol_version** - Specifies the prt protocol version used by user
+
+- **MSAL_read_account_error** - If there's an error reading from disk during an account read, the error context goes here (Ex: Same as read_token_error)
+
+- **MSAL_read_token** - Tokens that were read from cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
+
+- **MSAL_read_token_last_error** - If MSAL encountered an error reading from cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
+
+- **MSAL_req_cnf_response_pop** - Contains the success/failure information when retrieving the Proof of Possession key payload
+
+- **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
+
+- **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
+
+- **MSAL_request_new_prt** - Will MSAL request a new PRT on this request
+
+- **MSAL_server_error_code** - Microsoft specific secure token service numeric error code if we received one.
+
+- **MSAL_server_spe_ring** - Microsoft secure token service's Secure Production Enterprise ring info if we received it.
+
+- **MSAL_server_suberror_code** - Microsoft specific secure token service sub error code string if we received one.
+
+- **MSAL_start_time** - Time MSAL request was started at the top level public API.
+
+- **MSAL_stop_time** - Time MSAL finished processing the request and returned a result to the caller.
+
+- **MSAL_storage_accounts_count** - How many accounts were found in total on the box during a discover accounts call. (broker_accounts_count + non-broker/OneAuth accounts)(Ex: 0, 5, 1337)
+
+- **MSAL_tenant_id** - Microsoft GUID identifying the tenant the user exists in.
+
+- **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
+
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+
+- **MSAL_write_account_status** - If there's an error writing to disk during an account cache, the error context goes here (Ex: Same as write_token_error)
+
+- **MSAL_write_token** - Tokens that were wrote to cache (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = Expired AT was read, but discarded]).
+
+- **MSAL_write_token_last_error** - If MSAL encountered an error writing to cache, we'll store info here. (Ex: Disk read error bubbled from OS, Keychain error on macOS).
+
+- **oneauth_api** - Specifies the public API of OneAuth that was invoked.
+
+- **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
+
+- **oneauth_version** - The version of the OneAuth SDK.
+
+- **platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: macOS, 4: UWP)
+
+- **promptreasoncorrelationid** - A correlation identifier that can be used to lookup a previous authentication event, which is used to explain why the user was prompted to authenticate.
+
+- **resource** - The resource for which a token is requested for.
+
+- **scenarioid** - Multiple events may belong to a single scenario, e.g., the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events.
+
+- **scenarioname** - Name of the application scenario where authentication was required, e.g., first-boot, licensing check, etc.
+
+- **scope** - The scope for which a token is requested for.
+
+- **SdkVersion** - Version of Microsoft Auth Telemetry System library used to produce this data
+
+- **sessionid** - Identifier for the boot session
+
+- **tenantid** - GUID identifying the tenant the authenticated user belongs to (in non-ADAL cases)
+
+- **uploadid** - Unique GUID for this event, used for de-duping
+
+
 ### Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
 
 Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. When acquisition attempts fail, error information is included. These events help our users avoid entering broken authentication states by:
 
-1) Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+- Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
 
-2) Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+- Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
 
-3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+- When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+- These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
 
 The following fields are collected:
 
@@ -802,17 +1007,108 @@ The following fields are collected:
 - **WAM_x_ms_clitelem** - Present if service returns header “x-ms-clitelem"
 
 
+### Office.MATS.OneAuth.TransactionMicrosoftOfficeAndroid
+
+Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOfficeAndroid events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
+
+- Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+
+- Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+
+- When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+
+- These signals power various ship readiness and health monitors which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+
+The following fields are collected:
+
+- **Actiontype** - "oneauthtransaction" is the only value.
+
+- **Appaudience** - Application audience (Automation, Preproduction or Production)
+
+- **Appname** - App name
+
+- **Appver** - App version
+
+- **Authoutcome** - Did the authentication attempt succeed, fail, or was cancelled
+
+- **Correlationid** - Identifier used to join information regarding this individual event with services data
+
+- **Count** - Number of times the error occurred
+
+- **Devicenetworkstate** - Device network state
+
+- **Deviceprofiletelemetryid** - Device profile telemetry ID (string used by MATS to identify a specific device)
+
+- **duration_max** - Minimum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_min** - Maximum duration, in milliseconds, of the transactions aggregated on this signal.
+
+- **duration_sum** - Sum of durations, in milliseconds, of the transactions aggregated on this signal.
+
+- **Endtime** - Time at which the OneAuth transaction ended.
+
+- **Error** - OneAuth status code.
+
+- **Eventtype** - Event type
+
+- **Issilent** - False if UI was shown; true if it was a background event.
+
+- **oneauth_Activeflights**- The list of flights that are active in the session, used for AB testing.
+
+- **oneauth_api** - Specifies the public API of OneAuth that was invoked.
+
+- **oneauth_Domain** - If the API call resulted in an error, this is the system domain of that error.
+
+- **oneauth_ErrorCode** - Error code representing the internal error state for OneAuth. Replaces the old oneauth_errortag field.
+
+- **oneauth_errortag** - Numerical identifier for a line of code that was responsible for generating an error.
+
+- **oneauth_ExecutionFlow** - A series of tags identifying the codepath this API invocation took.
+
+- **oneauth_internalerror** - Error code representing the internal error state for OneAuth.
+
+- **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_Tag** - The OneAuth tag designating the final place in code reached at the conclusion of this API call.
+
+- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API.
+
+- **oneauth_version** - The version of the OneAuth SDK.
+
+- **Platform** - OS Platform (0: Win32, 1: Android, 2: iOS, 3: macOS, 4: WinRT)
+
+- **Scenarioname** - Name of the scenario for which auth is necessary, specified by the calling application.
+
+- **Schemaver** - Schema Version
+
+- **Sdkver** - Version of the MATS sdk
+
+- **Sessionid** - Session ID
+
+- **severityError** - severity
+
+- **starttime** - Time at which the OneAuth transaction began.
+
+- **Timestamp** - Timestamp
+
+- **Type** - Error type
+
+- **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
+
+
 ### Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
 
 Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOffice events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
 
-1) Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
+- Identifying whether clients can successfully obtain an authentication token from the service, or have entered a broken authentication state.
 
-2) Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
+- Evaluate when changes occur on the client or services, whether they result in critical regressions in the user's authentication experience and reliability
 
-3) When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
+- When failures occur, these signals emit important failure codes from the responsible component (Office client code, authentication libraries, or authority services) which can be used for triage, diagnosis and mitigation
 
-4) These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
+- These signals power various ship readiness and health monitors, which fire alerts so our engineers can engage quickly and reduce the time to mitigation of critical failures.
 
 The following fields are collected:
 
@@ -3621,13 +3917,15 @@ The following fields are collected:
 
 - **canUserSeeUpsell** - Boolean: True if the SignedIn user is not underage and qualified to see upsell screen
 
+- **DidShowPromotedSubscription** - Boolean: True if the user has triggered first app boot from promoted subscription.
+
 - **EffectiveIdentityType** - Boolean: Sign in type of the user. Can be -1 (Unsigned), 1 (MSA), 2 (OrgId)
 
 - **HasSubscription** - Boolean: True if the user has an active Microsoft 65 subscription
 
-- **IsCPCOnSignInEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FollowSignInWithCPC is enabled
+- **IsCPCOnSignInEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FollowSignInWithCPC is enabled  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **isFREUpsellToUnsignedUsersEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FREUpsellToUnsignedUsers is enabled
+- **isFREUpsellToUnsignedUsersEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.FREUpsellToUnsignedUsers is enabled  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **IsProClassDisplay** - Boolean: If the users’ device is a pro class display (Screen size > 10.1 inch) or not
 
@@ -3637,9 +3935,9 @@ The following fields are collected:
 
 - **SKUHasSubscription** - Boolean: True if the user has an active Microsoft 365 subscription 
 
-- **SKUIsCommonPaywallControlEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.UseCPC is enabled
+- **SKUIsCommonPaywallControlEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.UseCPC is enabled  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **SKUIsPreSignInDiamondEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.PreSignInDiamond is enabled
+- **SKUIsPreSignInDiamondEnabled** - Boolean: True if the FeatureGate Microsoft.Office.LicensePurchase.PreSignInDiamond is enabled  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **SKUIsProClassDisplay** - Boolean: If the users’ device is a pro-class display (Screen size greater than 10.1 inch) 
 
@@ -7671,6 +7969,8 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
+- **LeapFrog**	- Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
+
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
@@ -8051,6 +8351,8 @@ The following fields are collected:
 - **EventInfo_Name** - The name of the telemetry event being logged
 
 - **EventInfo_Time** - The time at which the logged event took place 
+
+- **LeapFrog** - Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
 
 - **PipelineInfo_ClientCountry** - The device country (based on IP address)
 
@@ -12176,6 +12478,8 @@ The following fields are collected:
 - **HowToCheck** - How to check setting
 
 - **IOC** - String indicating whether Install On Clone is applicable to this update.
+
+- **LeapFrog**	- Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
 
 - **NeedVerify** - Boolean indicating update needs verification.
 

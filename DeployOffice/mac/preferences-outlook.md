@@ -6,9 +6,9 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Mac
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
 ---
@@ -37,6 +37,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
 - [Disable export](#disable-export)
 - [Disable import](#disable-import)
+- [Disable Junk settings](#disable-junk-settings)
 - [Disable signatures](#disable-signatures)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
@@ -330,6 +331,20 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Data Type| Integer |
 |Possible values| 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
 |Availability|16.38 |
+
+### Disable Junk settings
+
+Prevent users from applying Junk options to emails.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|OLDisableJunkOptionsPrefKey|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Availability|16.55 |
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
 
 ## Related articles
 
