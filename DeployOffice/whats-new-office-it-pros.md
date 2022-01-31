@@ -19,6 +19,12 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## January 2022
+
+### Servicing profiles: roll back to a previous version (preview)
+
+If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview)
+
 ## December 2021
 
 Microsoft has released the recommended security configuration baseline settings for Version 2112 of Microsoft 365 Apps for enterprise. For more information, see the following blog post: [Security baseline for Microsoft 365 Apps for enterprise, v2112](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172)
