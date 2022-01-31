@@ -42,7 +42,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
 3. Download the appropriate Office Volume License Pack from the Microsoft Download Center:
     - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
     - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
-    - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
+    - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
 1. Run the Office Volume License Pack executable file. This will install the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
 1. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
 1. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
