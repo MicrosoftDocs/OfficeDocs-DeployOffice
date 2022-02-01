@@ -114,11 +114,11 @@ To provide you with the most up-to-date remediation advice and readiness status,
 
  **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be allowed by your firewall:
 
-- https://officeclient.microsoft.com/serverconfig16
+- `https://officeclient.microsoft.com/serverconfig16`
 
-- https://ready.osi.office.net/orfo/api/readinesssummary
+- `https://ready.osi.office.net/orfo/api/readinesssummary`
 
-- https://ready.osi.office.net/orfo/api/vbareportsummary
+- `https://ready.osi.office.net/orfo/api/vbareportsummary`
 
 <a name="BKMK_Interpreting"> </a>
 
