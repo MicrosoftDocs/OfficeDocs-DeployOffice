@@ -109,6 +109,39 @@ Common scenarios where this view can help include:
 - Compare performance and reliability across builds and update channels
 - Assess fragmentation (usage of too many builds) of Office clients in your tenant  
 
+### Add-in health
+
+> [!NOTE]
+> This view is expected to be available in March 2022.
+
+The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization.
+
+Add-ins can be downloaded and installed to provide additional capabilities and functionality to Office apps, such as Word and Excel. There are usually two sources of add-ins:
+
+- Public add-ins, which are created by independent software vendors and by Microsoft, and are generally available to all worldwide users of Office.
+- Private add-ins, which are developed by or for an organization for internal use only and are used only by Office users within that organization.
+
+The **Add-in health** view shows information about both public and private add-ins, including the following information:
+
+- Name of the add-in
+- Publisher of the add-in
+- Versions of the add-in found in your organization
+- Which Office apps are using the add-in
+- The number of devices on which each version of the add-in is installed
+- Whether the versions of the add-in are 32-bit or 64-bit
+- Crash rate of the add-in (as a percentage)
+- Load time of the add-in (in seconds)
+
+Information about add-ins, like all information in Microsoft 365 Apps health, depends on the inventory feature of the Microsoft 365 Apps admin center. Data about crash rates, load times, and load failures is derived from events that are collected and sent to Microsoft when the add-in is loaded and used by the Office app.
+
+For information about public and private add-ins to appear in the **Add-in health** view, you must do the following:
+
+- Use the [inventory feature](inventory.md) in the Microsoft 365 Apps admin center
+- Send at least [required diagnostic data](../privacy/required-diagnostic-data.md) to Microsoft
+- Use at least Version 2107 of Microsoft 365 Apps (for public add-ins)
+- Use at least Version 2111 of Microsoft 365 Apps (for private add-ins)
+
+Information about private add-ins is sent to the same geographical location as the customer’s Exchange mailbox to be processed by Microsoft. For private add-ins, you can submit a Data Subject Request (DSR) under the General Data Protection Regulation (GDPR) by contacting the [Privacy Response Center](https://www.microsoft.com/concern/privacy) at Microsoft. Public add-in data is sent to the United States to be processed by Microsoft.
 
 ### All advisories
 This view shows advisories across all apps and builds used in your tenant in the past 30 days (including the last 24 hours). This view is useful to investigate if a recent advisory or health trend change has occurred in the past.
