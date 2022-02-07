@@ -23,7 +23,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ### Blocking internet macros by default in Office
 
-To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Visio, and Word.
+To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change will begin rolling out in April 2022. Only the following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
 
 For more information, read the [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) blog post and refer to the [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) article for admins.
 
