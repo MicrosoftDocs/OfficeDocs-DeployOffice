@@ -20,7 +20,7 @@ With this change, when users open a file that came from the internet, and that f
 
 ![Security risk banner about blocked macros with a Learn More button](../images/vba-security-risk-banner.png)
 
-The **Learn More** button goes to an [article for end users and information workers](https://go.microsoft.com/fwlink/p/?linkid=2185272) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if absolutely needed).
+The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if absolutely needed).
 
 > [!IMPORTANT]
 > Organizations can use the [Block macros from running in Office files from the Internet](#block-macros-from-running-in-office-files-from-the-internet) policy to prevent users from inadvertently opening files from the internet that contain macros. We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. If you do enable the policy, your organization won’t be affected by this default change.
