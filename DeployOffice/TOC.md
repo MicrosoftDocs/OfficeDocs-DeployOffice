@@ -26,6 +26,10 @@
 ## [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
 ## [Release notes](/officeupdates/release-notes-microsoft365-apps)
 
+# Security
+## [Internet macros blocked by default](security/internet-macros-blocked.md)
+## [Security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
+
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
 ## [Privacy controls available for Office products](privacy/products-versions-privacy-controls.md?toc=/deployoffice/toc.json)
