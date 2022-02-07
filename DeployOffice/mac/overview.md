@@ -29,17 +29,17 @@ The following Office apps are available for devices running macOS:
 
 The following sections are intended to provide information to help you plan your deployment of Office to Mac users in your organization.
 
-For more information, visit [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md).
+For more information, refer to [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md).
 
 ## System requirements
 
-Office for Mac is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft will remove support for the oldest version and support the newest and previous two versions of macOS. For more information, visit [Upgrade macOS to continue receiving Microsoft 365 and Office for Mac updates](https://support.microsoft.com/office/16b8414f-08ec-4b24-8c91-10a918f649f8).
+Office for Mac is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft will remove support for the oldest version and support the newest and previous two versions of macOS. For more information, refer to [Upgrade macOS to continue receiving Microsoft 365 and Office for Mac updates](https://support.microsoft.com/office/16b8414f-08ec-4b24-8c91-10a918f649f8).
 
-For all the system requirements, visit [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+For all the system requirements, refer to [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Chipset support
 
-Office provides native support for both Apple Silicon and Intel-based Mac devices. For more information, visit [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
+Office provides native support for both Apple Silicon and Intel-based Mac devices. For more information, refer to [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
 > [!NOTE]
 > OneDrive and Microsoft Teams don't natively support Apple Silicon.
@@ -50,7 +50,7 @@ All the [supported languages](https://support.microsoft.com/office/26d30382-9fba
 
 ## Updates
 
-Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those users with a Microsoft 365 (or Office 365) plan, these updates can also include new or improved features. For more information, visit [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
+Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those users with a Microsoft 365 (or Office 365) plan, these updates can also include new or improved features. For more information, refer to [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
 
 ## Features
 
@@ -60,14 +60,14 @@ If you're looking for information to help your users get started with Office for
 
 #### Office for Mac features
 
-To review the latest features in each monthly release, visit [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
+To review the latest features in each monthly release, refer to [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
 
 > [!TIP]
 > For early access to new features, join the [Office Insider program](https://insider.office.com).
 
 #### Office LTSC for Mac 2021 features
 
-For information about the new features in Office LTSC for Mac 2021, visit the following articles:
+For information about the new features in Office LTSC for Mac 2021, refer to the following articles:
 - [What's new in Excel 2021 for Mac](https://support.microsoft.com/office/4100753f-93bc-4143-a77c-7258d1a80cd3)
 - [What's new in Outlook 2021 for Mac](https://support.microsoft.com/office/cac45ed4-3f1c-490e-a76d-95af48ba770e)
 - [What's new in PowerPoint 2021 for Mac](https://support.microsoft.com/office/fcbbd1ee-a94a-42a6-910e-df9cab3a1bf6)
@@ -75,7 +75,7 @@ For information about the new features in Office LTSC for Mac 2021, visit the fo
 
 #### Office 2019 for Mac features
 
-For information about the new features in Office 2019 for Mac, visit the following articles:
+For information about the new features in Office 2019 for Mac, refer to the following articles:
 - [What's new in Excel 2019 for Mac](https://support.microsoft.com/office/5ce129d3-9e5c-417f-9545-fb6f7b72674d)
 - [What's new in Outlook 2019 for Mac](https://support.microsoft.com/office/05736033-f99e-4cb2-88aa-01e979b0736b)
 - [What's new in PowerPoint 2019 for Mac](https://support.microsoft.com/office/5038ba79-48c5-40f0-adff-11489e5d6fed)
@@ -83,7 +83,7 @@ For information about the new features in Office 2019 for Mac, visit the followi
 
 ## Privacy controls
 
-There are preference settings available that allow you to configure settings related to diagnostic data and connected experiences for Office on a Mac. For more information, visit [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
+There are preference settings available that allow you to configure settings related to diagnostic data and connected experiences for Office on a Mac. For more information, refer to [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
 
 ## App bundles
 
