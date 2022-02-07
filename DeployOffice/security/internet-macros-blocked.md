@@ -68,9 +68,8 @@ The following steps explain the information in the flowchart graphic.
 
 4. Policies are checked to see if macros are allowed or blocked. If the policies are set to Not Configured, the evaluation continues to Step 6.
 
-5a. If macros are blocked by policy, the macros are blocked.
-
-5b. If the macros are enabled by policy, the macros are enabled.
+5. (a) If macros are blocked by policy, the macros are blocked. </br>
+   (b) If the macros are enabled by policy, the macros are enabled.
 
 6. If the user had previously opened the file, before this change in default behavior, and had selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
