@@ -19,6 +19,16 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## February 2022
+
+### Blocking internet macros by default in Office
+
+To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change will begin rolling out in April 2022. The following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
+
+For more information, refer to the following information:
+- [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
+- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+
 ## January 2022
 
 ### Servicing profiles: roll back to a previous version (preview)
