@@ -16,7 +16,7 @@ description: "Provides guidance for admins about how Office blocks macros in fil
 
 VBA macros are a common way for malicious actors to gain access to deploy malware and ransomware. Therefore, to help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet.
 
-With this change, when users open a file that came from the internet, and that file contains macros, the following message will be displayed:
+With this change, when users open a file that came from the internet, such as an email attachment, and that file contains macros, the following message will be displayed:
 
 ![Security risk banner about blocked macros with a Learn More button](../images/vba-security-risk-banner.png)
 
@@ -57,7 +57,7 @@ The following flowchart graphic shows how Office determines whether to run macro
 
 The following steps explain the information in the flowchart graphic.
 
-1. A user opens an Office file containing macros obtained from the internet. The file has the Mark of the Web (MOTW) attribute.
+1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has the Mark of the Web (MOTW) attribute.
 
 > [!NOTE]
 > The Mark of the Web (MOTW) attribute is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. The attribute only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
@@ -217,6 +217,9 @@ After the change of default behavior to block macros in files from the internet,
 ### Trusted Locations
 
 Saving files from the internet to a Trusted Location ignores the check for the Mark of the Web (MOTW) attribute and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly.
+
+> [!NOTE]
+> SharePoint and OneDrive within your own organization are considered to be Trusted Locations.
 
 ## Related articles
 
