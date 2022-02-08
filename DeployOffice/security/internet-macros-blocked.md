@@ -219,7 +219,7 @@ After the change of default behavior to block macros in files from the internet,
 Saving files from the internet to a Trusted Location ignores the check for the Mark of the Web (MOTW) attribute and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly.
 
 > [!NOTE]
-> SharePoint and OneDrive are considered to be Trusted Locations.
+> SharePoint and OneDrive within your own organization are considered to be Trusted Locations.
 
 ## Related articles
 
