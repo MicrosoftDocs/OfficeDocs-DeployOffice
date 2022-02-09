@@ -61,7 +61,7 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 ## Servicing profile
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and mimimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
+With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
 
 ## What's new in preview
 
@@ -73,3 +73,7 @@ The following features and services have been recently released in preview or re
 #### OneDrive sync health (preview)
 
 You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health).
+
+#### Servicing profiles: roll back to a previous version (preview)
+
+If you're using a [servicing profile](servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](servicing-profile.md#roll-back-to-a-previous-version-preview).

@@ -45,7 +45,7 @@ To enable Configuration Manager to manage Office updates, you need the following
 
     You can't use WSUS by itself to deploy these updates. You need to use WSUS with Configuration Manager
 
-- The hierarchy's top-level WSUS server and the top-level Configuration Manager site server must have access to the following URLs: *.microsoft.com, *.msocdn.com, *.office.com, *.office.net, *.onmicrosoft.com, officecdn.microsoft.com, officecdn.microsoft.com.edgesuite.net. For more information, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
+- The hierarchy's top-level WSUS server and the top-level Configuration Manager site server must have access to the following URLs: *.microsoft.com, *.msocdn.com, *.office.com, *.office.net, *.onmicrosoft.com, officecdn.microsoft.com, and officecdn.microsoft.com.edgesuite.net. For more information, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) and [Internet access requirements](/mem/configmgr/core/plan-design/network/internet-endpoints).
 
 - On the computers that have the Office installed, the [Office COM object is enabled](#enable-microsoft-365-apps-clients-to-receive-updates-from-configuration-manager).
 

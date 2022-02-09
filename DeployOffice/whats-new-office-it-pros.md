@@ -19,6 +19,22 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## February 2022
+
+### Blocking internet macros by default in Office
+
+To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change will begin rolling out in April 2022. The following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
+
+For more information, refer to the following information:
+- [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
+- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+
+## January 2022
+
+### Servicing profiles: roll back to a previous version (preview)
+
+If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview).
+
 ## December 2021
 
 Microsoft has released the recommended security configuration baseline settings for Version 2112 of Microsoft 365 Apps for enterprise. For more information, see the following blog post: [Security baseline for Microsoft 365 Apps for enterprise, v2112](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172)
@@ -26,6 +42,9 @@ Microsoft has released the recommended security configuration baseline settings 
 ## November 2021
 
 ### Retirement of Security Policy Advisor
+
+> [!NOTE]
+> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md) and you can manage them there.  
 
 We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 

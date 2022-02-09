@@ -655,7 +655,7 @@ Example values:
 
 - UpdatePath="\\\server\share\"
 - UpdatePath="C:\Preload\Office"
-- UpdatePath="<http://internalApps/Office/>"
+- UpdatePath="`http://internalApps/Office/`"
 
 ### TargetVersion attribute (part of Updates element)
 
