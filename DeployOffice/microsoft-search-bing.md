@@ -27,7 +27,7 @@ This optional extension is available only in specific [locations](#which-locatio
 > If you don't want the background service installed on devices in your organization or if you don't want Bing to be set automatically as the default search engine, there is an alternative:
 > - You can use the Microsoft Search extension that is [available from the Chrome Web Store](https://chrome.google.com/webstore/detail/microsoft-search/fahnnnailfccbjpdjeafekniiaflekca). 
 > - This extension provides a way to perform workplace search while in the Chrome web browser.
-> - You can have your users manually install this extension for themselves or you can deploy this extension for them by using Group Policy.
+> - You can have your users manually install this extension for themselves or you can deploy this extension for them by using the [ExtensionInstallForcelist](https://chromeenterprise.google/policies/#ExtensionInstallForcelist) policy.
 > - This extension does not make any changes to default browser settings or search engine settings on your users' devices.  
 
 ## How does the Microsoft Search in Bing extension for Google Chrome get installed?
@@ -213,7 +213,7 @@ You can manually [download](https://aka.ms/AA6im0l) the background service for M
 
 ### ExtensionInstallForceList policy for Google Chrome
 
-If you use the [Configure the list of force-installed apps and extensions (ExtensionInstallForcelist)](https://cloud.google.com/docs/chrome-enterprise/policies/?policy=ExtensionInstallForcelist) policy to restrict which Chrome extensions are installed on devices in your organization, then you need to include the following value when you configure the policy:
+If you use the [Configure the list of force-installed apps and extensions (ExtensionInstallForcelist)](https://chromeenterprise.google/policies/?policy=ExtensionInstallForcelist) policy to restrict which Chrome extensions are installed on devices in your organization, then you need to include the following value when you configure the policy:
 
 `obdappnhkfoejojnmcohppfnoeagadna;https://clients2.google.com/service/update2/crx`
 
