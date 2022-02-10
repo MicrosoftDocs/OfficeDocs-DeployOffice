@@ -139,7 +139,7 @@ For information about public and private add-ins to appear in the **Add-in healt
 - Use the [inventory feature](inventory.md) in the Microsoft 365 Apps admin center
 - Send at least [required diagnostic data](../privacy/required-diagnostic-data.md) to Microsoft
 - Use at least Version 2107 of Microsoft 365 Apps (for public add-ins)
-- Use at least Version 2111 of Microsoft 365 Apps (for private add-ins)
+- Use at least Version 2112 of Microsoft 365 Apps (for private add-ins)
 
 Information about private add-ins is sent to the same geographical location as the customer’s Exchange mailbox to be processed by Microsoft. For private add-ins, you can submit a Data Subject Request (DSR) under the General Data Protection Regulation (GDPR) by contacting the [Privacy Response Center](https://www.microsoft.com/concern/privacy) at Microsoft. Public add-in data is sent to the United States to be processed by Microsoft.
 
