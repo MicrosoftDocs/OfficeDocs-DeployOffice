@@ -2713,6 +2713,8 @@ The following fields are collected:
 
 - **response_message_length** - Indicates how long the message length was to help us detect issues with meeting responses
 
+- **response_mode** - Indicates response mode such as in person or virtually to help us detect issues with meeting response modes
+
 - **review_time_proposal_action_type** - Indicates a user response new time proposal to help us detect issues with proposing a new time
 
 - **send_response** - Indicates whether a response was sent to help us detect issues sending meeting invite responses
@@ -5948,7 +5950,7 @@ The following fields are collected:
 
 - **Data_CloudConnectorRequestID** - String that identifies the service requests on the client app for both conversion and feedback scenarios.
 
-- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.  
+- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Data_EntryPoint** - integer value to identify entry point for Lens flow.
 
@@ -11997,6 +11999,44 @@ The following fields are collected:
 Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Microsoft 365 Apps for enterprise has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
 
 No fields are collected.
+
+#### Office.System.SystemHealthUngracefulAppExitDesktopCOMAddIn 
+
+The event is triggered by an abnormal application termination while executing COM Add-in for Office client applications such as Word, Excel, PowerPoint, and Outlook. The data is used to determine reliability of add-ins and issues in Office connected to add-in crashes.
+
+The following fields are collected:
+
+- **AddinConnectFlag** - Represents load behavior  
+
+- **AddinDescription** - Description of the add-in 
+
+- **AddinFileName** - Name of the actual add-in DLL. Does not include file location.
+
+- **AddinFriendlyName** - Add-in friendly name
+
+- **AddinId** - Add-in class ID (CLSID)
+
+- **AddinProgId** - Add-in prog ID 
+
+- **AddinProvider** - Provider of the add-in 
+
+- **AddinTimeDateStamp** - Complier timestamp
+
+- **AddinVersion** - Add-in version 
+
+- **CrashedProcessSessionId** - A unique identifier of the crashed process.
+
+- **CrashTag** - The unique identifier for the code of the crash.
+
+- **CrashType** - Bucketing identifier for the type of crash.
+
+- **Interface** - COM interface of add-in which led to crash 
+
+- **LoadAttempts** - how many load attempts were made prior to crash 
+
+- **Method** - COM method of add-in which led to crash 
+
+- **TelemetryContext** - Context of the add-in and client session. (Consumer or enterprise session, public add-in or private add-in)
 
 #### Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
