@@ -12734,7 +12734,7 @@ This event is triggered when the consumer user clicks on the Next button on pass
 
 The following fields are collected: 
 
-- **Data_IDCRLEndToSignInEnd** - it is the difference in time between 2 SDT tags which mark the start and end points of the flow
+- **Data_IDCRLEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfOneAuthSignInInteractiveEndToSignInEnd
@@ -12761,7 +12761,7 @@ This event is triggered when an enterprise user clicks on the next button in Fir
 
 The following fields are collected: 
 
-- **Data_UnifiedSISUEndToADALStart** - it is the difference in time between 2 SDT tags which mark the start and end points of the flow
+- **Data_UnifiedSISUEndToADALStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfUnifiedSISUEndToIDCRLStart
