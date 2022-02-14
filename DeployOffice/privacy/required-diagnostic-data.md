@@ -12674,6 +12674,114 @@ The following fields are collected:
 - **UserDialogInterruptionDuringBoot** - Boolean for any blocking dialog shown during boot
 
 
+#### Office.Android.AuthPerfADALEndToSignInEnd 
+
+This event is triggered when an enterprise user clicks on the Next button on the password page to sign in completion. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected:
+
+- **Data_ADALEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfAuthStartToOneAuthAcquireCredStart
+
+This event is triggered when the prompt flow is initiated, and the credential acquisition flow starts. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ AuthStartToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfAuthStartToOneAuthSignInInteractiveStart
+
+This event is triggered when the authentication flow is initiated in Office Android apps. This information helps Microsoft determine the time taken in this flow and to measure the time spent in integrated flows so that required performance improvements can be made.
+
+The following fields are collected: 
+
+- **Data_ AuthStartToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfFixMeToOneAuthAcquireCredStart
+
+This event is triggered when the prompt flow initiates the credential acquisition flow for an account that is in invalid state and needs fixing by the user. This helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ FixMeToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfHRDEndToADALStart
+
+This event is triggered when an enterprise user clicks on the next button in an email page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_HRDEndToADALStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfHRDEndToIDCRLStart
+
+This event is triggered when a consumer user clicks on the next button in an email page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_HRDEndToIDCRLStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfIDCRLEndToSignInEnd
+
+This event is triggered when the consumer user clicks on the Next button on password page to sign in completion. This data helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_IDCRLEndToSignInEnd** - it is the difference in time between 2 SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfOneAuthSignInInteractiveEndToSignInEnd
+
+This event is triggered when the sign-in interactive flow ends successfully with the status received by the app. This information helps Microsoft determine the time taken in this flow for performance comparison in Office Android apps and make improvements as needed. 
+
+The following fields are collected: 
+
+- **Data_ OneAuthSignInInteractiveEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfSignInStartToHRDStart
+
+This event is triggered when the user clicks on the sign-in button to the email page. This helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_SignInStartToHRDStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToADALStart
+
+This event is triggered when an enterprise user clicks on the next button in First Run Experience (FRE) page to open the password page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_UnifiedSISUEndToADALStart** - it is the difference in time between 2 SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToIDCRLStart
+
+This event is triggered when the consumer user clicks on the Next button in the First Run Experience (FRE) page to generate the password page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_UnifiedSISUEndToIDCRLStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToOneAuthSignInInteractiveStart
+
+This event is triggered when the user clicks on the Next button in the First Run Experience (FRE) page to start the Sign-In Interactive flow. This helps Microsoft determine the time taken in this flow, to determine performance in authentication flows in Office Android apps, and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ UnifiedSISUEndToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
 #### Office.Android.CrashMetadata
 
 This event is triggered when there is a crash, and the crash successfully uploads to crash collection service. This event is used to diagnose Android crashes and also monitor the health of the Android crash upload service.   
@@ -13204,6 +13312,21 @@ The following fields are collected:
 - **WriteOperationCount** – The number of write operations performed. (Windows only)
 
 - **WriteTransferCount** – The number of bytes written. (Windows only)
+
+
+#### Office.Performance.OPerfMon.HangDetected
+
+Collected when an Office application experiences a hang of the user interface. The collected data is used to assess prevalence, impact, and assist in root cause analysis of hangs experienced by customers so that they can be addressed by the product team.
+
+The following fields are collected:
+
+- **DurationMs** - duration of the hang in milliseconds.
+
+- **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
+
+- **ProcessName** - name of the Office application executable the hang occurred in, e.g. excel.exe.
+
+- **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed to be running at the point the hang occurred.
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
