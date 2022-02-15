@@ -64,7 +64,7 @@ If you want to create a new policy configuration that is similar to an existing 
 The health of each policy configuration, including whether the policy has been applied to the client devices in the group, is shown on the **Policy configurations** page. To see more details about any errors, you can click the health status for a policy configuration.
 
 > [!NOTE]
-> The health status feature will be retired on March 17, 2022. In the future, we plan to provide advanced health reporting and compliance monitoring features for the Office cloud policy service.
+> The health status feature will be retired on March 17, 2022. In the future (no known date at this time), we plan to provide advanced health reporting and compliance monitoring features for the Office cloud policy service.
 
 To see which policies are configured when you are editing a policy configuration, choose **Status**, and then choose **Configured**. You can also filter by application.
 
