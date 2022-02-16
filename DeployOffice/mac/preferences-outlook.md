@@ -90,7 +90,7 @@ Specify one or more domains users are allowed to add in Outlook.
 |Data Type| Array of Strings |
 |Possible values|  *Various (example: "contoso.com")*  |
 |Availability| 16.18|
-|Comments| Format strings as regular expressions. Doesn't remove or disconnect accounts already added in Outlook. |
+|Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
 ### Hide text about adding non-corporate mailboxes
 
