@@ -749,6 +749,21 @@
       "source_path": "DeployOffice/endofsupport/office-2007-end-support-roadmap.md",
       "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/install-ltsc-preview.md",
+      "redirect_url": "/deployoffice/ltsc2021/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/overview-ltsc-preview.md",
+      "redirect_url": "/deployoffice/ltsc2021/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/overview-mac-preview.md",
+      "redirect_url": "/deployoffice/mac/overview",
+      "redirect_document_id": false
     }
   ]
 }
