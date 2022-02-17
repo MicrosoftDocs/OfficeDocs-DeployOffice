@@ -703,7 +703,7 @@
     {
       "source_path": "DeployOffice/office2021/overview-mac-preview.md",
       "redirect_url": "/deployoffice/mac/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/endofsupport/office-365-services-connectivity.md",
