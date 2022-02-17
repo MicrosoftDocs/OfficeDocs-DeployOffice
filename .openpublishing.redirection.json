@@ -692,18 +692,18 @@
     },
     {
       "source_path": "DeployOffice/office2021/overview-ltsc-preview.md",
-      "redirect_url": "/deployoffice/ltsc2021/overview-ltsc-preview",
+      "redirect_url": "/deployoffice/ltsc2021/overview",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/office2021/install-ltsc-preview.md",
-      "redirect_url": "/deployoffice/ltsc2021/install-ltsc-preview",
+      "redirect_url": "/deployoffice/ltsc2021/deploy",
       "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/office2021/overview-mac-preview.md",
-      "redirect_url": "/deployoffice/ltsc2021/overview-mac-preview",
-      "redirect_document_id": true
+      "redirect_url": "/deployoffice/mac/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/endofsupport/office-365-services-connectivity.md",
