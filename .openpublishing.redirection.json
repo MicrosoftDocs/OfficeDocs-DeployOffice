@@ -728,7 +728,7 @@
     {
       "source_path": "DeployOffice/overview-of-security-policy-advisor.md",
       "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-office-cloud-policy-service.md",
