@@ -727,8 +727,8 @@
     },
     {
       "source_path": "DeployOffice/overview-of-security-policy-advisor.md",
-      "redirect_url": "/deployoffice/admincenter/overview-security-policy-advisor",
-      "redirect_document_id": true
+      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-office-cloud-policy-service.md",
@@ -763,6 +763,16 @@
     {
       "source_path": "DeployOffice/ltsc2021/overview-mac-preview.md",
       "redirect_url": "/deployoffice/mac/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/migrate-security-policies-from-spa-to-ocps.md",
+      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview-security-policy-advisor.md",
+      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
       "redirect_document_id": false
     }
   ]
