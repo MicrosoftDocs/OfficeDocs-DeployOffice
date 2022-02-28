@@ -222,8 +222,8 @@ Saving files from the internet to a Trusted Location ignores the check for the M
 
 - If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the web browser will determine whether the file has the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute.
 - If a user has the OneDrive sync client running and the sync client downloads a file, then the file will not have the Mark of the Web (MOTW) attribute.
-- Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have the the Mark of the Web (MOTW) attribute.
-- If a user choses **Open in app** from the OneDrive website, the file won't have the Mark of the Web (MOTW) attribute.
+- Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have the Mark of the Web (MOTW) attribute.
+- If a user chooses **Open in app** from the OneDrive website, the file won't have the Mark of the Web (MOTW) attribute.
 
 ## Related articles
 
