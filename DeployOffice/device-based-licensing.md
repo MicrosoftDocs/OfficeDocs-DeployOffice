@@ -25,7 +25,7 @@ Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to ass
 The following are the requirements for device-based licensing for Microsoft 365 Apps for enterprise:
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise.
-- Microsoft 365 Apps for enterprise must be installed on a device running a supported version of Windows 11, Windows 10 Semi-Annual Channel, or Windows Server 2019.
+- Microsoft 365 Apps for enterprise must be installed on a device running a supported version of Windows 11, Windows 10 General Availability Channel (or Semi-Annual Channel, its previous name), or Windows Server 2019.
 - The Windows client device on which Microsoft 365 Apps for enterprise is installed must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows client device meet these requirements, do the following steps:
