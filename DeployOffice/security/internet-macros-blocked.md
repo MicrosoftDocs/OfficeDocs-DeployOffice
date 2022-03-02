@@ -45,7 +45,7 @@ The following table shows the forecasted schedule of when this change will be av
 |Semi-Annual Enterprise Channel (Preview)|*To be determined*|*September 2022*|
 |Semi-Annual Enterprise Channel |*To be determined*|*January 2023*|
 
-At a future date to be determined, we also plan to make this change to volume licensed versions of Office LTSC, Office 2019, Office 2016, and Office 2013.
+At a future date to be determined, we also plan to make this change to volume licensed versions of Office LTSC 2021, Office 2019, Office 2016, and Office 2013.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -75,7 +75,7 @@ The following steps explain the information in the flowchart graphic.
 
 > [!NOTE]
 > - This step is expected to take effect in Current Channel sometime in February 2022. For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
-> - For perpetual versions of Office, such as Office LTSC or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change coming to Current Channel.
+> - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change coming to Current Channel.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users will see the **Security Risk** banner when they open the file.
 
