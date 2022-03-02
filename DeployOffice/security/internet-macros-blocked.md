@@ -45,7 +45,7 @@ The following table shows the forecasted schedule of when this change will be av
 |Semi-Annual Enterprise Channel (Preview)|*To be determined*|*September 2022*|
 |Semi-Annual Enterprise Channel |*To be determined*|*January 2023*|
 
-At a future date to be determined, we also plan to make this change to Commercial versions of Office LTSC, Office 2021, Office 2019, Office 2016, and Office 2013.
+At a future date to be determined, we also plan to make this change to volume licensed versions of Office LTSC, Office 2019, Office 2016, and Office 2013.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
