@@ -20,7 +20,7 @@ description: "Provides IT admins with an overview of deploying Office LTSC 2021.
 Office LTSC 2021 is the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
 
 > [!IMPORTANT]
-> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
+> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
   
 Office LTSC 2021 is available for enterprise admins to download and deploy to the users in their organization. The following volume licensed Office products are available for devices running Windows:
 
