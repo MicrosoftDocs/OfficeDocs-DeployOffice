@@ -951,6 +951,39 @@ The following fields are collected:
 - **IsMsftInternal** - Possible values – true/false
 
 
+#### Office.Programmability.Addins.OnStartupCompleteEnterprise
+ 
+This event is generated when a Legacy or COM Add-in is loaded on an enterprise device. The data is used to determine adoption and performance of Office add-ins.
+
+The following fields are collected:
+
+- **AddinConnectFlag** - represents load behavior
+
+- **AddinDescriptionV2** - the add-in description
+
+- **AddinFileNameV2** - the add-in file name, excluding file path
+
+- **AddinFriendlyNameV2** - the add-in friendly name
+
+- **AddinIdV2** - the add-in Class ID
+
+- **AddinProgIdV2** - the add-in prog ID
+
+- **AddinProviderV2** - the add-in provider
+
+- **AddinTimeDateStampV2** - the add-in timestamp from the DLL metadata
+
+- **AddinVersionV2** - the add-in version
+
+- **IsBootInProgress** - whether the Office application is in the process of booting 
+
+- **LoadDuration** - duration of the add-in load
+
+- **LoadResult** - success state of the load
+
+- **OfficeArchitecture** - Architecture of the Office client  
+
+
 #### Office.TargetedMessaging.EnsureCached 
 
 Tracks if a package for Dynamic Canvas was downloaded. Considered a software configuration because the package must be successfully downloaded to enable the client to render the right experience. Is especially critical in consumer subscriptions where we use canvas to communicate to the user that the license has expired. Used to track metadata of a dynamic content package downloaded and cached by the product and results of operations performed on the package: download failures, unpacking failures, consistency checks failures, cache hits, package usages, download sources.
@@ -2569,6 +2602,21 @@ The following fields are collected:
 - **txp** – if the Edge web view was launched from a TXP card, event type for that card (dining, flight, etc.)
 
 - **txp_component** - if the Edge web view was launched from a TXP card, UI component type for that card
+
+
+#### log.event.appointment.attendee
+
+This event is triggered when the user clicks on any add-in on their calendar page. The data is used to detect the usage of add-ins and determine the if the feature is performing correctly.
+
+The following fields are collected: 
+
+- **addin_id** – Identifier of the add-in
+
+- **addin_type** – Type of the add-in, for example, available either without a user interface (UI-less) or through task pane
+
+- **event_button_label** – Label of the button clicked by the user.
+
+- **total_addin_count** – Count of all add-ins with MobileLogEventAppointmentAttendee surface
 
 
 #### mail.action
@@ -6083,6 +6131,18 @@ The following fields are collected:
 - **NEW_STATE** - Indicates the applications' state right after the navigation
 
 - **OLD_STATE** - Indicates the applications' state right before the navigation
+
+
+#### Office.OneNote.Android.Canvas.PageCreated
+
+This event is triggered when a new OneNote page is created. The data is used to monitor, detect and fix any issues caused when a page is created in OneNote.
+
+The following fields are collected: 
+
+- **EVENT_UUID** - Unique Id for an event
+
+- **TIME_TAKEN_IN_MS** - time taken to create page
+
 
 #### Office.OneNote.Android.Canvas.PageOpened
 
@@ -11473,6 +11533,18 @@ The following fields are collected:
 
 - **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
 
+#### Office.Privacy.OffersOptIn 
+
+This event is triggered when values for privacy controls are loaded or reloaded. This happens when the user first boots the process and whenever these settings change, such as the user updating them or the values roaming from another device reports information about user’s opt-in status to Personalized Offers. The event is used to ensure that users' privacy choices related to the Personalized Offers control are being enforced as expected.
+
+The following fields are collected:
+
+- **ConsentGroup** - consent group to which the user belongs
+
+- **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
+
+- **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
+
 
 ## Product and service performance data events
 
@@ -11603,6 +11675,31 @@ The following fields are collected:
 - **roamingSettingType** - identifies the location from which we attempt to read settings
 
 - **settingId** - the setting that was attempted to be fetched
+
+#### Office.Android.EarlyTelemetry.UngracefulAppExitInfo
+
+This event is triggered in each session and collects information about the exit reasons of the previous process of the app. The data is used to collect information on the Android process exit to help Office understand where apps are experiencing issues and diagnose them appropriately.
+
+The following fields are collected: 
+
+- **Data_ExitAppVersion** - appversion of the exit process 
+
+- **Data_ExitEndTimeStamp** - system timestamp when the process exited.
+
+- **Data_ExitOSSignal** - OS signal that resulted in process exit
+
+- **Data_ExitProcessName** - name of the process that was killed.
+
+- **Data_ExitPSS** - PSS information at time of process exit.
+
+- **Data_ExitReason** - Reason of exit, integer format mapping to enums defined by Android 
+
+- **Data_ExitRSS** - RSS details at time of process exit.
+
+- **Data_ExitSessionId** - SessionId of the process that died.
+
+- **Data_ExitStartTimeStamp** - system Timestamp when the process started.
+
 
 #### Office.AppDomain.UnhandledExceptionHandlerFailed
 
@@ -14305,6 +14402,29 @@ The following fields are collected:
 - **Data_FreeSpaceInMB** - Free space available on device
 
 - **Data_nickName** - Name of the library that couldn't be loaded.
+
+
+#### Office.Android.EarlyTelemetry.SharedPrefServiceDataFetchAsync
+
+This event is triggered when one Office Android app needs data from another Office Android app but fails to get the data. Microsoft uses this data to determine the reason for service failure and to maintain the health of the service.
+
+The following fields are collected:
+
+- **Data_ErrorInfo** - This field contains information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+
+- **Data_LoggingSessionId** - This field logs the sessionId of the session which is logging this event.
+
+
+#### Office.Android.EarlyTelemetry.SharedPrefServiceDataFetchSync
+
+This event is triggered when an error occurs, for example, timeout or invalid service error, when one Office Android app needs but is unable to get data from other Office Android app installed on the user's device. This data is used to find the reason for the service failure and to maintain the health of the service and office apps.
+
+The following fields are collected:
+
+- **Data_ErrorInfo** - This field logs information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+
+- **Data_LoggingSessionId** - This field logs the sessionId of the session which is logging this event.
+
 
 #### Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
