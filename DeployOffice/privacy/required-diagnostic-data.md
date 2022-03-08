@@ -2734,13 +2734,13 @@ The following fields are collected across iOS and Android:
 
 - **action** - The type of action taken on the message reminder. This includes actions such as opening the message, dismissing the reminder, turning off the feature, and when the reminder was rendered.
 
--**dismiss_swipe_direction** - The direction a user swiped to dismiss a message reminder. The possible directions are left to right and right to left. This helps us better understand how users are dismissing message reminders.
+- **dismiss_swipe_direction** - The direction a user swiped to dismiss a message reminder. The possible directions are left to right and right to left. This helps us better understand how users are dismissing message reminders.
 
--**internet_message_id** - The internet message ID of a message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+- **internet_message_id** - The internet message ID of a message. This allows us to link telemetry events to other sources of data such as the logs from our API.
 
--**mailbox_uuid** - The UUID (universally unique identifier) of the mailbox containing the related message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+- **mailbox_uuid** - The UUID (universally unique identifier) of the mailbox containing the related message. This allows us to link telemetry events to other sources of data such as the logs from our API.
 
--**message_id** - The server ID of a message. This is sent with many other message-related telemetry events and allows us to link message reminder events to those.
+- **message_id** - The server ID of a message. This is sent with many other message-related telemetry events and allows us to link message reminder events to those.
 
 - **origin** - Which view is the message reminder is on
 
