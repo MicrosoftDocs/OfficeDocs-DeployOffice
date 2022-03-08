@@ -1840,6 +1840,8 @@ The following fields are collected:
 
 - **upcoming_event_count** - The number of upcoming events displayed in the upcoming events view. Helps us understand if there are issues with the upcoming events view. 
 
+- **upcoming_event_dismiss_swipe_direction** - The direction a user swiped to dismiss an upcoming event reminder. The possible directions are left to right and right to left. Helps us understand how users are dismissing upcoming events.
+
 - **upcoming_event_seconds_until_event** - The number of seconds until the next upcoming event starts. Helps us understand the typical events that are shown in the upcoming events view. 
 
 - **value** - Action-specific detail such as alert delay length or repeat-until category. Helps us understand the context that the action was performed. 
@@ -2730,10 +2732,17 @@ This event is triggered when a user interacts with a message reminder. A message
 
 The following fields are collected across iOS and Android:
 
-- **origin** - Which view is the message reminder is on
-
 - **action** - The type of action taken on the message reminder. This includes actions such as opening the message, dismissing the reminder, turning off the feature, and when the reminder was rendered.
 
+-**dismiss_swipe_direction** - The direction a user swiped to dismiss a message reminder. The possible directions are left to right and right to left. This helps us better understand how users are dismissing message reminders.
+
+-**internet_message_id** - The internet message ID of a message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+
+-**mailbox_uuid** - The UUID (universally unique identifier) of the mailbox containing the related message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+
+-**message_id** - The server ID of a message. This is sent with many other message-related telemetry events and allows us to link message reminder events to those.
+
+- **origin** - Which view is the message reminder is on
 
 
 #### multi.window.launch
@@ -2757,9 +2766,9 @@ The following fields are collected:
 
 - **message_reminder_available** - True if there is a message reminder available and will be displayed when the notification center is opened
 
-- **type** - the notification type, as of now it will always be reaction
+- **type** - the notification type, either reaction or message_reminder as of now *(not always collected)*
 
-- **unseen_count** - how many notifications in the current view have not been seen before
+- **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -6035,6 +6044,8 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 
 - **Data_Result** - The status of the operation being performed (true:success, false:failure) 
 
+- **Data_SessionLength** - Stores the duration (in milliseconds) for which pdf file is opened.
+
 - **Data_Type** - Type of file operation (open, close, or save)
 
 
@@ -6077,9 +6088,11 @@ The following fields are collected:
 
 *[This event was previously named OneNote.Canvas.PageOpened.]*
 
-The signal used to record when a Page is opened.  The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote
+This event is triggered when a Page is opened.  The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote.
 
 The following fields are collected: 
+
+- **EVENT_UUID** - Unique Id for an event
 
 - **JOT_ID** - object of the page opened
 
