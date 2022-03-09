@@ -132,7 +132,7 @@ The **Add-in health** view shows information about both public and private add-i
 - Crash rate of the add-in (as a percentage)
 - Load time of the add-in (in seconds)
 
-Information about add-ins, like all information in Microsoft 365 Apps health, relies on the inventory feature of the Microsoft 365 Apps admin center being enabled. Data about crash rates, load times, and load failures is derived from events that are collected and sent to Microsoft when the add-in is loaded and used by the Office app.
+Information about add-ins, like all information in Microsoft 365 Apps health, relies on the inventory feature being enabled in the Microsoft 365 Apps admin center. Data about crash rates, load times, and load failures is derived from events that are collected and sent to Microsoft when the add-in is loaded and used by the Office app.
 
 For information about public and private add-ins to appear in the **Add-in health** view, you must do the following:
 
