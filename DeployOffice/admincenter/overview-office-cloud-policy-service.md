@@ -89,7 +89,7 @@ Also, policy settings implemented by using Office cloud policy service take prec
 - As new user-based policy settings are made available for Office, the Office cloud policy service will automatically add them. There's no need to download updated Administrative Templates files (ADMX/ADML).
 - You can also create policy configurations to apply policy settings for Version 1808 or later of the subscription versions of the Project and Visio desktop apps.
 - Version 1808 of Microsoft 365 Apps for enterprise (and for the subscription versions of the Project and Visio desktop apps) is available in Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel. For Microsoft 365 Apps for enterprise release information, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
-- If users are located in nested groups and the parent group is targeted for policies, the users in the nested groups will receive the policies. It is also applicable for the  on-premises AD security groups which are synced to Azure AD.
+- If users are located in nested groups and the parent group is targeted for policies, the users in the nested groups will receive the policies. The nested groups and the users in those nested groups must be created in or synchronized to Azure AD.
 
 ## Troubleshooting tips
 
