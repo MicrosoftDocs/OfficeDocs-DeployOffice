@@ -51,6 +51,7 @@ The following table provides a list of connected experiences that analyze your c
 |Presenter Coach|[Rehearse your slide show with Presenter Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Publish to Power BI   | [Publish to Power BI from Excel](/power-bi/service-publish-from-excel) |
+| Read Aloud <sup>[4]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Sharing notification|[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
@@ -68,6 +69,8 @@ The following table provides a list of connected experiences that analyze your c
 > <sup>[2]</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of Editor is sent to Microsoft.
 >
 > <sup>[3]</sup> For devices running Android, these ink capabilities remain available even if you're not connected to the internet. These ink capabilities also remain available on devices running Android even if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of these ink capabilities is sent to Microsoft.
+>
+> <sup>[4]</sup> If you're not connected to the internet, Read Aloud only uses the text-to-speech functionality your device provides.
 
 ## Connected experiences that download online content
 
