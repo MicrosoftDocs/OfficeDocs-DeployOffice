@@ -36,11 +36,14 @@ Even though Windows 7 is no longer supported, we've decided to continue to provi
 
 ## How to manage Microsoft 365 Apps on Windows 7 after January 2020
 
-Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows 7. Version 2002 is available in Current Channel, Semi-Annual Enterprise Channel (Preview), and Semi-Annual Enterprise Channel.
+Version 2002 is the last version of Microsoft 365 Apps that's available for devices running Windows 7.
 
-This means that if you want to continue to deploy and update Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows 7, you'll receive an error message.
+This means that if you want to continue to use Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2201, on a device running Windows 7, you'll receive an error message.
 
-You can use the Office Deployment Tool to deploy Microsoft 365 Apps on devices that are running Windows 7. But, you can't use the [Office Customization Tool](https://config.office.com/deploymentsettings) or the Office 365 Installer wizard in Microsoft Endpoint Configuration Manager (current branch) to deploy Version 2002. You can't use those tools because Version 2002 is no longer available as a choice in the version drop-down list in those tools.
+> [!IMPORTANT]
+> - As of January 2022, attempting to do a new installation of Version 2002 will fail.
+> - Performing an Online Repair of an existing installation of Version 2002 will also fail.
+> - Updating an existing installation of Version 2002 will continue to work.
 
 To update an existing installation of Version 2002, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
