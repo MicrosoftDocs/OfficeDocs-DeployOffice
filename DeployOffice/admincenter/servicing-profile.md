@@ -75,7 +75,7 @@ To start, select the roll back action on the **Devices** tab. Then, select the b
 Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month.
 
 > [!TIP]
-> To see a demo of how to roll back, [watch this video](https://www.youtube.com/watch?v=wyy_ll3wdlM).
+> To see a demo of how to roll back, [watch this video.](https://www.youtube.com/watch?v=wyy_ll3wdlM)
 
 ### Issues
 
