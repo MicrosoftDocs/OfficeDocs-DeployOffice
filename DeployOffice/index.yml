@@ -1,11 +1,12 @@
 ### YamlMime:Hub
 
 title: Office deployment
+summary: Deploy and manage the Microsoft 365 Apps and other versions of the Office apps.
 brand: office
 
 metadata:
   title: Office deployment
-  description: Office deployment
+  description: Microsoft 365 Apps is a version of Office that's available through many Microsoft 365 and Office 365 plans. Learn how to Deploy and manage the Microsoft 365 Apps and other versions of the Office apps.
   brand: office
   author: danbrown
   ms.topic: hub-page
