@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dougeby
 ms.date: 9/21/2015
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
