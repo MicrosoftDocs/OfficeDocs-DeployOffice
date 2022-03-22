@@ -54,11 +54,11 @@ The following are the basic steps for creating a policy configuration.
 8.	On the **Configure Settings** page, select the policies that you want to include in the policy configuration. You can search for the policy by name, or you can create a custom filter. You can filter on platform, by application, on whether the policy has been configured, and on whether the policy is a recommended security baseline.
 9. After you've made your selections, select **Next** to review your selections. Then select **Create** to create the policy configuration.
 
+## Managing policy configurations
+
 To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then select **Edit**. Make the appropriate changes and then select **Update**.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
-
-## Managing policy configurations
 
 To see which policies are configured when you're editing a policy configuration, navigate to the **Policies** section and filter by the **Status** column or select the **Configured** slicer at the top of the policy table. You can also filter by application and platform.
 
