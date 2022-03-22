@@ -36,7 +36,7 @@ The following are the requirements for using the Office cloud policy service wit
 
 > [!IMPORTANT]
 > - The Office cloud policy service isn't available to customers who have Office 365 operated by 21Vianet.
-> - For customers who have Office 365 GCC, GCC High, or DoD, support is expected to come in April and May 2022. For more information, [read this blog post.](https://techcommunity.microsoft.com/t5/public-sector-blog/availability-of-the-office-cloud-policy-service-for-government/ba-p/3259201)
+> - For customers who have Office 365 GCC, GCC High, or DoD, support is expected to come in April and May 2022. For more information, [read this blog post](https://techcommunity.microsoft.com/t5/public-sector-blog/availability-of-the-office-cloud-policy-service-for-government/ba-p/3259201).
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 > - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md).
 
@@ -44,10 +44,10 @@ The following are the requirements for using the Office cloud policy service wit
 
 The following are the basic steps for creating a policy configuration.
 
-1. Sign in to the [MIcrosoft 365 Apps admin center.](https://config.office.com/). If this is your first time, review the terms, and then select **Accept**.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com/). If this is your first time, review the terms, and then select **Accept**.
 2. Under **Customization**, select **Policy Management**.
 3. On the **Policy configurations** page, select **Create**.
-4. On the **Start with the basics** page, enter a name (required) and a description (option), then select **Next**.
+4. On the **Start with the basics** page, enter a name (required) and a description (optional), then select **Next**.
 5.	On the **Choose the scope** page, choose whether the policy configuration applies to a specific group or to users who anonymously access documents using Office for the web.
 6. If the policy configuration applies to a specific group, select the group. Each policy configuration can only be assigned to one group, and each group can only be assigned one policy configuration. But the group that you select can contain other (nested) groups.
 7. After you’ve made your selection, select **Next**.
