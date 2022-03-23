@@ -56,13 +56,15 @@
 # Best practices from the field
 ## [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
 ## [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
-## [Build dynamic collections with Configuration Manager](fieldnotes\build-dynamic-lean-configuration-manager.md)
 ## [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 ## [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
+## [Network guidance for deploying and servicing Microsoft 365 Apps](fieldnotes/network-guidance.md)
+## [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](fieldnotes/build-dynamic-lean-configuration-manager.md)
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](fieldnotes/switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](fieldnotes/roadmap-to-modern-management.md)
+## [Adopting servicing profiles](fieldnotes/adopt-servicing-profiles.md)
 ## [Microsoft 365 change guide](fieldnotes/microsoft-365-change-guide.md)
-## [Network guidance for deploying and servicing Microsoft 365 Apps](fieldnotes/network-guidance.md)
+## [Performance recommendations for Microsoft 365 Apps on Windows 10](fieldnotes/performance-recommendations.md)
 
 # Reference
 ## [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md)
