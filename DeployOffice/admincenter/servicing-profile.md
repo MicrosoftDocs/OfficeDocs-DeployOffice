@@ -53,6 +53,9 @@ A servicing profile takes precedence over other management tools, such as Micros
 > - You can edit the selection criteria once the profile has been created by going to the **Settings** tab on the **Servicing profile** dashboard.
 > - Azure Active Directory registered devices are not supported at this time.
 
+> [!TIP]
+> To see a demo of how to use Azure Active Directory group filtering, [watch this video.](https://youtu.be/RrEBevNV7pQ)
+
 3. When you complete the wizard, the eligible devices will have the servicing profile applied within 2 hours.
 
 ## Using the servicing profile
