@@ -53,6 +53,9 @@ A servicing profile takes precedence over other management tools, such as Micros
 > - You can edit the selection criteria once the profile has been created by going to the **Settings** tab on the **Servicing profile** dashboard.
 > - Azure Active Directory registered devices are not supported at this time.
 
+> [!TIP]
+> You can see a demo of how to use Azure Active Directory group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).
+
 3. When you complete the wizard, the eligible devices will have the servicing profile applied within 2 hours.
 
 ## Using the servicing profile
@@ -75,7 +78,7 @@ To start, select the roll back action on the **Devices** tab. Then, select the b
 Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month.
 
 > [!TIP]
-> To see a demo of how to roll back, [watch this video.](https://www.youtube.com/watch?v=wyy_ll3wdlM)
+> To see a demo of how to roll back, [watch this video](https://www.youtube.com/watch?v=wyy_ll3wdlM).
 
 ### Issues
 
