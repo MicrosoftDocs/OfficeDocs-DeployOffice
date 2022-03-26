@@ -2,6 +2,15 @@
 
 
 
+## Week of March 21, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/22/2022 | [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/DeployOffice/admincenter/overview-office-cloud-policy-service) | modified |
+| 3/24/2022 | [Overview of servicing profile in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/servicing-profile) | modified |
+
+
 ## Week of March 14, 2022
 
 
