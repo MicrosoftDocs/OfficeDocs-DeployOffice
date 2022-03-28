@@ -94,7 +94,7 @@ Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021.
 - Product requirement sets:
    - Excel: Up to [1.12](/javascript/api/requirement-sets/excel/excel-api-1-12-requirement-set)
    - Outlook: Up to [1.9](/javascript/api/requirement-sets/outlook/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/javascript/api/requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
-   - PowerPoint: Up to [1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
+   - PowerPoint: Up to [1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets/powerpoint-api-1-2-requirement-set)
 
 - Common API requirement sets:
    - [CustomFunctionsRuntime 1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) (Excel)
