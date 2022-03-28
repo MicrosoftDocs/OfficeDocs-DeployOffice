@@ -92,18 +92,18 @@ Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument
 Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021. These include the following requirement sets.
 
 - Product requirement sets:
-   - Excel: Up to [1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-1-12-requirement-set)
-   - Outlook: Up to [1.9](/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
-   - PowerPoint: Up to [1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-1-2-requirement-set)
+   - Excel: Up to [1.12](/javascript/api/requirement-sets/excel/excel-api-1-12-requirement-set)
+   - Outlook: Up to [1.9](/javascript/api/requirement-sets/outlook/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/javascript/api/requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
+   - PowerPoint: Up to [1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets)
 
 - Common API requirement sets:
-   - [CustomFunctionsRuntime 1.3](/office/dev/add-ins/excel/custom-functions-requirement-sets) (Excel)
-   - [DialogApi 1.2](/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets) (Excel, PowerPoint, Word)
-   - [IdentityAPI 1.3](/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
-   - [ImageCoercion 1.2](/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets) (Excel, PowerPoint, Word)
-   - [OpenBrowserWindowApi 1.1](/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
-   - [RibbonApi 1.1](/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets) (Excel)
-   - [SharedRuntime 1.1](/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets) (Excel)
+   - [CustomFunctionsRuntime 1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) (Excel)
+   - [DialogApi 1.2](/javascript/api/requirement-sets/common/dialog-api-requirement-sets) (Excel, PowerPoint, Word)
+   - [IdentityAPI 1.3](/javascript/api/requirement-sets/common/identity-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [ImageCoercion 1.2](/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (Excel, PowerPoint, Word)
+   - [OpenBrowserWindowApi 1.1](/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [RibbonApi 1.1](/javascript/api/requirement-sets/common/ribbon-api-requirement-sets) (Excel)
+   - [SharedRuntime 1.1](/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) (Excel)
 
 Office Add-ins on Windows now use Microsoft Edge with WebView2. For more information, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins).
 
