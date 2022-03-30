@@ -33,8 +33,6 @@ Articles about security and access control in Office 2016
   
 - [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
     
-- [Designate trusted locations for files in Office 2016](designate-trusted-locations-for-files-in-office.md)
-    
 - [Set up a safe environment to open files by using Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md)
     
 - [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
