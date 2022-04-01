@@ -224,7 +224,15 @@ Saving files from the internet to a Trusted Location ignores the check for the M
 - If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have the Mark of the Web (MOTW) attribute.
 - If a user has the OneDrive sync client running and the sync client downloads a file, then the file will not have the Mark of the Web (MOTW) attribute.
 - Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have the Mark of the Web (MOTW) attribute.
+- If you have a group of users, such as the Finance department, that need to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
+  - Have them open the file in the browser or by using the **Open in Desktop App** option
+  - Have them download the file to a [Trusted Location](trusted-locations.md).
+  - Set the Windows internet security zone assignment for OneDrive or SharePoint domains to Trusted Sites. Admins can use the "Site to Zone Assignment List" policy and configure the policy to place `https://{your-domain-name}.sharepoint.com` (for SharePoint) or `https://{your-domain-name}-my.sharepoint.com` (for OneDrive) into the Trusted Sites zone.
+  
+   &nbsp;&nbsp; This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
 
+> [!IMPORTANT]
+> SharePoint permissions and OneDrive sharing are not changed by adding these locations to Trusted Sites. Maintaining access control is important. Anyone with permissions to add files to SharePoint could add files with active content, such as macros. Users who download files from domains in the Trusted Sites zone will bypass the default to block macros.
 
 ## Related articles
 
