@@ -74,7 +74,7 @@ The following steps explain the information in the flowchart graphic.
 6. If the user had previously opened the file, before this change in default behavior, and had selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
 > [!NOTE]
-> - This step is expected to take effect in Current Channel sometime in February 2022. For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
+> - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
 > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change coming to Current Channel.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users will see the **Security Risk** banner when they open the file.
@@ -220,11 +220,25 @@ Saving files from the internet to a Trusted Location ignores the check for the M
 
 ### Files on OneDrive or SharePoint
 
-- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the web browser will determine whether the file has the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute.
+- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute on a file if it's determined to be from the Internet zone.
+
 - If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have the Mark of the Web (MOTW) attribute.
+
 - If a user has the OneDrive sync client running and the sync client downloads a file, then the file will not have the Mark of the Web (MOTW) attribute.
+
 - Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have the Mark of the Web (MOTW) attribute.
 
+- If you have a group of users, such as the Finance department, that need to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
+
+  - Have them open the file in the browser or by using the **Open in Desktop App** option
+
+  - Have them download the file to a [Trusted Location](trusted-locations.md).
+
+  - Set the Windows internet security zone assignment for OneDrive or SharePoint domains to Trusted Sites. Admins can use the "Site to Zone Assignment List" policy and configure the policy to place `https://{your-domain-name}.sharepoint.com` (for SharePoint) or `https://{your-domain-name}-my.sharepoint.com` (for OneDrive) into the Trusted Sites zone.
+
+     - This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
+
+     - SharePoint permissions and OneDrive sharing are not changed by adding these locations to Trusted Sites. Maintaining access control is important. Anyone with permissions to add files to SharePoint could add files with active content, such as macros. Users who download files from domains in the Trusted Sites zone will bypass the default to block macros.
 
 ## Related articles
 
