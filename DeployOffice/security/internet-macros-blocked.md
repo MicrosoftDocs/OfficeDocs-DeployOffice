@@ -74,7 +74,7 @@ The following steps explain the information in the flowchart graphic.
 6. If the user had previously opened the file, before this change in default behavior, and had selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
 > [!NOTE]
-> - This step is expected to take effect in Current Channel sometime in February 2022. For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
+> - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
 > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change coming to Current Channel.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users will see the **Security Risk** banner when they open the file.
@@ -220,7 +220,7 @@ Saving files from the internet to a Trusted Location ignores the check for the M
 
 ### Files on OneDrive or SharePoint
 
-- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the web browser will determine whether the file has the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute.
+- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute on a file if it's determined to be from the Internet zone.
 
 - If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have the Mark of the Web (MOTW) attribute.
 
