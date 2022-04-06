@@ -1998,6 +1998,8 @@ The following fields are collected:
 
 - **reaction_origin** – Tells us origin from where the user reacted 
 
+- **reaction_skin_tone** - Tells us the reaction skin tone of the user 
+
 - **reaction_type** – Tells us the reaction type of the user
 
 - **suggested_file_selected** - Report a Boolean value representing if the user selected a file from the mini-picker
@@ -6141,6 +6143,10 @@ The following fields are collected:
 
 - **EVENT_UUID** - Unique Id for an event
 
+- **NOTE_TYPE** - This will capture the type of created page
+
+- **PAGE_CREATE_LOCATION** - This will capture the location of a created page, where it is triggered from
+
 - **TIME_TAKEN_IN_MS** - time taken to create page
 
 
@@ -9102,6 +9108,8 @@ The following fields are collected:
 
 - **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
 
+- **deferred_send** - This tells us if the user has scheduled the email to be sent later.
+
 - **draft_message_id** - tracks the compose message ID of the message being sent
 
 - **event_mode** - tracks the event mode if applicable to the message ("groups" or "other")
@@ -9209,6 +9217,7 @@ The following fields are collected:
    - **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
    - **badge_count_state** - indicates what type of badge count the user has asked for that is, no badges, focused inbox only, etc. 
    - **changed_folder** - determines whether this action was archived, scheduled, or another action.
+   - **contacts_sort_by** – tracks whether the contacts are sorted by first name or last name
    - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
   - **enabled_state** - whether state related to the action is enabled
   - **fab_tap_behavior** – the selected tap behavior (single press or tap & hold) for the floating action button we have on our main screens to compose an email, create an event, etc.
@@ -10043,7 +10052,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.App.AppBootComplete.]*
 
-The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can't launch the app for the first time, this would trigger a high severity incident.
+The event is recorded once every session when the app boot is completed. The data is used to ensure new consumer users can successfully launch and use OneNote for the first time and, to ensure critical regression detection for the OneNote app and service health.  
 
 The following fields are collected: 
 
@@ -10078,6 +10087,8 @@ The following fields are collected:
 - **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** - Indicates if boot time is impacted due to logs
 
 - **INIT_SNAPSHOT_DURATION** - Time taken to get the notebook structure for the user account(s)
+
+- **IsNewHomepageExperienceEnabled** - [Yes/No] Indicates if user has got the new homepage experience
 
 - **IS_COLD_BOOT** - Indicates if the App launch when the App was not running in the background
 
@@ -13739,6 +13750,8 @@ The following fields are collected:
 
 -	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
 
+- **is_treatment** - whether the current perf event is generated in a treatment flight. It will be used when we measure and compare the performance data for control group and treatment group in a flight.
+
 - **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
 
 - **runtime_performance_monitoring_data** - provides the performance data (loading time, record count) when loading data in different parts of the app.
@@ -15102,6 +15115,8 @@ The following fields are collected for iOS only:
 - **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
 
 - **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
+
+- **contacts_sort_by** - Tracks whether the contacts are sorted by either first name or last name
 
 - **darker_system_colors** - Tells us if the user has turned on darkening of system colors on their device to help us detect issues related to this setting
 
