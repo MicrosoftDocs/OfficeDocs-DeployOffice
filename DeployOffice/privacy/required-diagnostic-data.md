@@ -13750,7 +13750,7 @@ The following fields are collected:
 
 -	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
 
-- **is_treatment** - whether the current perf event is generated in a treatment flight, it will be used when we measure and compare the performance data for control group and treatment group in a flight.
+- **is_treatment** - whether the current perf event is generated in a treatment flight. It will be used when we measure and compare the performance data for control group and treatment group in a flight.
 
 - **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
 
