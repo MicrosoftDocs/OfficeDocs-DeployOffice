@@ -4284,6 +4284,27 @@ The following fields are collected:
 
 - **MainFlow** - Entry flow type of LVUX session.
 
+### Office.Licensing.Flows.GraceWin11Reset
+
+This event is triggered when the Windows 11 Grace dialog is shown in the Office client. The data is used to verify that the user is seeing the appropriate licensing dialog in the Office client license experience and to be sure user actions are handled appropriately.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of LVUX session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
+
+### Office.Licensing.Flows.GraceWin11ResetConfirmation
+
+This event is triggered when the confirmation dialog following the Windows 11 Grace dialog is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (Licensing Validation User Experience/LVUX) and make sure user actions are handled appropriately.
+
+The following fields are collected:
+
+- **MainFlow** - Entry flow type of Licensing Validation User Experience (LVUX) session.
+
+- **UserAction** - User action taken on LVUX ReactNative dialog.
+
 
 ### Office.Licensing.Flows.PurchaseProduct
 
@@ -4400,6 +4421,24 @@ The following fields are collected:
 
 - **UsingNulApi** - A Boolean indicating if we are using the new licensing stack.
 
+
+### Office.Licensing.InGrace
+
+This event is triggered when the licensing flow has finished, and the user is in a grace state. Used to validate that the user has a grace license, and the acquisition flows are working correctly.
+
+The following fields are collected:
+
+- **ACID** - The Globally Unique Identifier (GUID) representing the license SKU
+
+- **DaysRemaining** - Days remaining on the license
+
+- **Mode** - Which licensing stack we are using (0 = Legacy, 2 = NUL)
+
+- **ProductName** - The user-friendly name of the SKU
+
+- **Reason** - The license status
+
+
 ### Office.Licensing.InRFM 
 
 If the device enters reduced functionality mode, we send out this signal to indicate that the machine is not in a healthy state. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
@@ -4449,6 +4488,23 @@ The following fields are collected:
 - **Data_DialogResult** - tells us the overall result of the redemption process.
 
 - **Data_Scenario** - tells us the scenario where the redemption occurred for.
+
+
+### Office.Licensing.Licensed
+
+This event is triggered when the licensing flow has finished, and the user is in a licensed state. It is used to validate if the user has a valid license and/or if the licensing state changed.
+
+The following fields are collected:
+
+- **ACID** - The GUID representing the license SKU
+
+- **DaysRemaining** - Days remaining on the license
+
+- **Mode** - Which licensing stack we’re using (0 = Legacy, 2 = NUL)
+
+- **ProductName** - The user-friendly name of the SKU
+
+- **Reason** - The license status
 
 
 ### Office.Licensing.LicensingBar
@@ -4735,6 +4791,18 @@ The following fields are collected:
   - **SourceSku** – Name of the original SKU that was installed on the machine
 
   - **UninstallProduct** – Indicates whether the old product will be uninstalled as part of the conversion
+
+
+### Office.Licensing.StartTrialPass
+
+This event is triggered when the user accepts a 5-day, or 10-day trial pass and an associated license gets installed. It is used to verify that the user can start the 5-day or 10-day Trial pass.
+
+The following fields are collected:
+
+- **Acid** - The Globally Unique Identifier (GUID) representing the license SKU
+
+- **GraceTime** - the total time granted by the grace license
+
 
 ### Office.Licensing.TelemetryFlow.OLSResults
 
@@ -12230,6 +12298,29 @@ The following fields are collected:
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
 - **SessionId** - The identifier for the session
+
+
+### installupdatestask.restoreclone
+
+When the user attempts to restore a clone app, this event logs various stages of the restoring clone process. Microsoft uses this event to determine possible failure point when restoring clone to take required corrective measures.
+
+The following fields are collected:
+
+- **AppID** - Identifier of application related to the event
+
+- **BundleVersion** - Indicates Version of the application installed prior to restore event
+
+- **Error** - Indicates details on error encountered related to the event
+
+- **Payload** - Static text.
+
+- **Success** - Boolean indicating success of operation related to the event.
+
+- **UpdateID** - A unique identifier for an update. This identifier is used to correlate and identify any potential issues in update process.
+
+- **UpdateName** - Name of the update as it appears in the downloaded manifest file.
+
+- **UpdatePkg** - Name of the update package being applied.
 
 
 ### installupdatestask.retryfail
