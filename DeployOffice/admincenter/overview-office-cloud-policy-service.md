@@ -68,7 +68,20 @@ To change the priority order for the policy configurations, select **Reorder pri
 
 The Click-to-Run service used by Microsoft 365 Apps for enterprise checks with the Office cloud policy service on a regular basis to see if there are any policy configurations that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens the Office app, such as Word or Excel.
 
-For example, when a user signs into Office on a device for the first time, a check is immediately made to see if there's a policy configuration that pertains to the user. If the user isn't a member of an Azure AD group that is assigned a policy configuration, then another check is made again in 24 hours. If the user is a member of an Azure AD group that is assigned a policy configuration, then the appropriate policy settings are applied and a check is made again in 90 minutes. In the event of an error, a check is made when the user opens an Office app, such as Word or Excel. If no Office apps are running when the next check is scheduled, then the check will be made the next time the user opens an Office app.
+Here's a summary of what happens:
+- When a user signs into Office on a device for the first time, a check is immediately made to see if there's a policy configuration that pertains to the user.
+
+- If the user isn't a member of an Azure AD group that is assigned a policy configuration, then another check is made again in 24 hours.
+
+- If the user is a member of an Azure AD group that is assigned a policy configuration, then the appropriate policy settings are applied and a check is made again in 90 minutes.
+
+- If there are any changes to the policy configuration since the last check, then the appropriate policy settings are applied and another check is made again in 90 minutes.
+
+- If there are no changes to the policy configuration since the last check, another check is made again in 24 hours.
+
+- In the event of an error, a check is made when the user opens an Office app, such as Word or Excel.
+
+- If no Office apps are running when the next check is scheduled, then the check will be made the next time the user opens an Office app.
 
 > [!NOTE]
 > - Policies from the Office cloud policy service are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Microsoft 365 Apps for enterprise.  If there are multiple accounts signed in, only policies for the primary account are applied. If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](../privacy/overview-privacy-controls.md) will apply without restarting any Office apps.
@@ -93,5 +106,6 @@ If the expected policies haven't been correctly applied to a user's device, try 
 - Make sure the user is part of the appropriate security group.
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect. 
 - In some cases, policies might not be applied correctly if two users with different policies sign into Office 365 on the same device and during the same Windows session.  
-- Policy settings retrieved from the Office cloud policy service are stored in the registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
-- Policy service check-in activity is stored in the registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
+- Policy settings retrieved from the Office cloud policy service are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
+- Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
+- If you want to see the next time a device running Windows is scheduled to check with the Office cloud policy service, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
