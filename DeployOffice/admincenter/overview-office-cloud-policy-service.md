@@ -77,7 +77,7 @@ Here's a summary of what happens:
 
 - If there are any changes to the policy configuration since the last check, then the appropriate policy settings are applied and another check is made again in 90 minutes.
 
-- If there are no changes to the policy configuration since the last check, another check is made again in 24 hours.
+- If there aren't any changes to the policy configuration since the last check, another check is made again in 24 hours.
 
 - In the event of an error, a check is made when the user opens an Office app, such as Word or Excel.
 
@@ -103,9 +103,15 @@ Also, policy settings implemented by using Office cloud policy service take prec
 
 If the expected policies haven't been correctly applied to a user's device, try the following:
 - Make sure the user is signed into Microsoft 365 Apps for enterprise, has activated it, and has a valid license.
+
 - Make sure the user is part of the appropriate security group.
+
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect. 
+
 - In some cases, policies might not be applied correctly if two users with different policies sign into Office 365 on the same device and during the same Windows session.  
+
 - Policy settings retrieved from the Office cloud policy service are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
+
 - Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
+
 - If you want to see the next time a device running Windows is scheduled to check with the Office cloud policy service, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
