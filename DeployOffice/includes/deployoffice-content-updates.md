@@ -2,6 +2,18 @@
 
 
 
+## Week of April 04, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/4/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
+| 4/6/2022 | [In-product recommendations in Office](/DeployOffice/privacy/in-product-recommendations) | modified |
+| 4/6/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 4/6/2022 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 4/7/2022 | [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/DeployOffice/admincenter/overview-office-cloud-policy-service) | modified |
+
+
 ## Week of March 21, 2022
 
 
