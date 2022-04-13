@@ -39,7 +39,7 @@ The following table shows the forecasted schedule of when this change will be av
 
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
-|Current Channel (Preview)|*Version 2203*|*April 2022*|
+|Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
 |Current Channel|*To be determined*|*June 2022*|
 |Monthly Enterprise Channel|*To be determined*|*July 2022*|
 |Semi-Annual Enterprise Channel (Preview)|*To be determined*|*September 2022*|
