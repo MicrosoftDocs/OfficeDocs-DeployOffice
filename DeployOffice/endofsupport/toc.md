@@ -24,6 +24,7 @@
 ## Related resources
 
 ### [Office system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)
-### [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+### [Windows and Office support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+### [Windows and Office support timeline (PDF)](https://aka.ms/TechCommunity/OfficeEOS/Timeline)
 ### [Tech Community: Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS)
 ### [Microsoft Lifecycle Policy](/lifecycle/)
