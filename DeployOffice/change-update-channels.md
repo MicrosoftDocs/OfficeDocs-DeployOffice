@@ -67,7 +67,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 - After the Office Automatic Updates 2.0 task runs and updates the assigned channel, the new build is installed the next time the Configuration Manager client runs a Software Updates Deployment Evaluation Cycle.
 
 > [!IMPORTANT]
-> If you use Configuration Manger to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
+> If you use Configuration Manager to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
 
 ## Change the update channel with Intune Administrative Templates
 
