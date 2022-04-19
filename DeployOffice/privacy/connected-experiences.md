@@ -120,7 +120,7 @@ The following table provides a list of those other connected experiences and pro
 | Coming Soon  |[Coming Soon](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support  | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom Import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Data Loss Prevention (DLP) policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Data Visualizer |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Design Flows | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | External list |[Connect an external list to Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
