@@ -216,7 +216,7 @@ After the change of default behavior to block macros in files from the internet,
 
 ### Trusted Locations
 
-Saving files from the internet to a Trusted Location ignores the check for the Mark of the Web (MOTW) attribute and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly.
+Saving files from the internet to a Trusted Location ignores the check for the Mark of the Web (MOTW) attribute and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
 
 ### Files on OneDrive or SharePoint
 
@@ -239,6 +239,47 @@ Saving files from the internet to a Trusted Location ignores the check for the M
      - This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
 
      - SharePoint permissions and OneDrive sharing are not changed by adding these locations to Trusted Sites. Maintaining access control is important. Anyone with permissions to add files to SharePoint could add files with active content, such as macros. Users who download files from domains in the Trusted Sites zone will bypass the default to block macros.
+
+### Macro-enabled template files for Word, PowerPoint, and Excel
+
+Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded from the internet will have the Mark of the Web (MOTW) attribute. For example, files with the following extensions:
+- .dot
+- .dotm
+- .potm
+- .xlt
+- .xltm
+
+When the user opens the macro-enabled template file, the user will be blocked from running the macros in the file. If the user trusts the source of the file, they can remove the Mark of the Web attribute from the file, and then re-open the file in the Office app.
+
+If you have a group of users that need to use macro-enabled templates without macros being blocked, you can take either of the following actions:
+- Use a digital signature and trust the publisher. For more information, see the following articles: 
+  - [Obtain a digital certificate and create a digital signature](https://support.microsoft.com/office/e3d9d813-3305-4164-a820-2e063d86e512)
+  - [Digitally sign your macro project](https://support.microsoft.com/office/956e9cc8-bbf6-4365-8bfa-98505ecd1c01)
+  - [Add, remove, or view a trusted publisher](https://support.microsoft.com/office/87b3d5a3-b68c-4023-87c4-7cc78a44d7ed)
+
+- If you're not using digital signatures, you can save the file to a [Trusted Location](trusted-locations.md) and have users get the file from that location.
+
+### Macro-enabled add-in files for PowerPoint and Excel
+
+Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the internet will have the Mark of the Web (MOTW) attribute. For example, files with the following extensions:
+
+- .ppa
+- .ppam
+- .xla
+- .xlam
+
+When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in will be loaded in a disabled state and the user will be blocked from using the Add-in. If the user trusts the source of the file, they can remove the Mark of the Web attribute from the file, and then re-open PowerPoint or Excel.
+
+If you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take either of the following actions:
+- Use a digital signature and trust the publisher. For more information, see the following articles: 
+  - [Obtain a digital certificate and create a digital signature](https://support.microsoft.com/office/e3d9d813-3305-4164-a820-2e063d86e512)
+  - [Digitally sign your macro project](https://support.microsoft.com/office/956e9cc8-bbf6-4365-8bfa-98505ecd1c01)
+  - [Add, remove, or view a trusted publisher](https://support.microsoft.com/office/87b3d5a3-b68c-4023-87c4-7cc78a44d7ed)
+
+- If you're not using digital signatures, you can save the file to a [Trusted Location](trusted-locations.md) and have users get the file from that location.
+
+
+### Add-in files
 
 ## Related articles
 
