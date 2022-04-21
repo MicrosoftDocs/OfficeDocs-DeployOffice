@@ -13,7 +13,7 @@ description: "Provides Office admins information about Microsoft 365 Apps health
 
 # Microsoft 365 Apps health
 
-The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Office apps up to date by providing visibility into how they are performing on your client devices and offering guidance to help optimize and troubleshoot arising issues. 
+The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Office apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues. 
 
 ## Requirements for using Microsoft 365 Apps health
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 1908 or later
@@ -31,13 +31,13 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 
 ## How to get to the health dashboard
 
-Go to the [Microsoft 365 Apps admin center](https://config.office.com) and click **Apps health** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+Go to the [Microsoft 365 Apps admin center](https://config.office.com) and select **Apps health** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 
 ## Overview
 
 The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot Office apps in your tenant. Its main benefits are:
 
-- **Zero-effort setup**: it is powered by Office diagnostic data, so there is no need for additional agents or processes running on your premises
+- **Zero-effort setup**: it's powered by Office diagnostic data, so there's no need for additional agents or processes running on your premises
 - **Visibility**: you can view how app health is evolving at any time, and correlate it with changes in your infrastructure 
 - **Actionable**: it proactively detects problems or areas of optimization in your Office apps and presents them as advisories
 
@@ -47,7 +47,7 @@ The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher 
 
 Currently, Microsoft 365 Apps health offers trends for the following performance and reliability metrics:
 - App Crash Rate: the number of app crashes over number of user sessions, within the selected scope (app, build)
-- App Boot Time: the time it takes from the moment the user opens the Office client until it is ready for user input, within the selected scope (app, build)
+- App Boot Time: the time it takes from the moment the user opens the Office client until it's ready for user input, within the selected scope (app, build)
 - App File Open Time (local): the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
 - App File Open Time (SharePoint): the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
@@ -66,7 +66,7 @@ Advisories are detected by comparing the metric's value against that of a baseli
 
 ## Using Microsoft 365 Apps health
 
-When you first sign in to the Microsoft 365 Apps health dashboard, you will see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
+When you first sign in to the Microsoft 365 Apps health dashboard, you'll see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
 
 - App health overview: highlights the builds for which significant health deteriorations have been detected in your tenant. It includes the number of devices observed to run the impacted builds in the last 14 days. This is useful to assess impact and prioritize troubleshooting of impacted builds 
 - App currency overview: shows the percentage of devices running builds from the recommended Monthly and Monthly Enterprise update channels. It also highlights the percentage of devices running builds that are out of support and should be updated as soon as possible to a supported build
@@ -80,7 +80,7 @@ This view helps you assess the health for each of the Office apps separately. Th
 - The number of app sessions in the last 14 days, which informs how widely the app is used in your organization
 - Number of advisories on significant deteriorations in the last 24 hours
 
-You can click on any app to get additional details
+You can select any app to get additional details
 
 ### App details
 This view shows the health trends for a selected Office app across all the builds and update channels deployed in your tenant. You can select an app, metric, and build and the daily metric values will be plotted on a graph. By default, the most active and latest available builds are presented. You can also view other builds. Typical use cases for this view include:
@@ -97,7 +97,7 @@ This view is similar to App metrics but treats Office apps as a suite rather tha
 - Number of advisories on significant deteriorations across the build in the last 24 hours
 - Remarks about whether the build is unsupported, the most active in your tenant, and the latest available by Microsoft
 
-You can click on any build to see additional details:
+You can select any build to see additional details:
 - Release information (release date, end of support date, whether the build is a feature or security update)
 - The list of apps running the build, as well as their metrics in the last 24 hours (you can select an app to navigate further into the App Details page for the app)
 - Details on the advisories on significant deteriorations across the build in the last 24 hours (description, impacted application and metric)
@@ -112,7 +112,7 @@ Common scenarios where this view can help include:
 ### Add-in health
 
 > [!NOTE]
-> This view is expected to be available in March 2022.
+> Information about public add-ins is available for this view. But information about private add-ins is still being rolled out to customers.
 
 The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization.
 
@@ -150,7 +150,7 @@ The following details are available for each advisory:
 - Advisory description, which includes the name of the impacted metric and its change compared with the baseline
 - Impacted application 
 - Channel and build
-- Advisory type, which indicates whether the change is significant or minor and whether it is a deterioration or an improvement
+- Advisory type, which indicates whether the change is significant or minor and whether it's a deterioration or an improvement
 - Date of creation of the advisory
 
 You can get additional troubleshooting information by selecting an advisory: 
@@ -169,7 +169,7 @@ Advisories are defined in the context of a metric of a specific Office app, buil
 - The value of the metric of the same app, build, and update channel in the past
 - The value of the metric of the same app, from the most active build of the same update channel in your tenant
 
-The advisory view will help you understand the context of the regression and get guidance. On this view, you will see:
+The advisory view will help you understand the context of the regression and get guidance. On this view, you'll see:
 
 - Office app, build, and metric where trend change has been detected
 - Number of user sessions in the impacted build and app
@@ -177,7 +177,7 @@ The advisory view will help you understand the context of the regression and get
 - Current value of the monitored metric
 - Recommended troubleshooting actions
 
-Note that the Active devices count refers to the number of devices in your tenant on which the Office apps are being used. There may be a slight misalignment with management tools as these typically report number of devices on which the Office apps are installed, even if they are not being used.
+Note that the Active devices count refers to the number of devices in your tenant on which the Office apps are being used. There may be a slight misalignment with management tools as these typically report number of devices on which the Office apps are installed, even if they aren't being used.
 
 ## Data for the Microsoft 365 Apps health dashboard
 
@@ -205,7 +205,7 @@ Here are examples of other common scenarios where performance patterns change an
 
 - Machine Reboots: Like above, anything that causes many machines to reboot will affect performance trends, in particular for boot.  This could be deploying configurations that require a reboot, building repairs requiring a power outage, weather power outages, or other events.
 
-- Device Hardware Changes: When new hardware is rolled out or there is a shift in the hardware configuration of devices that can cause performance trend movement as performance improves or degrades for the new devices
+- Device Hardware Changes: When new hardware is rolled out or there's a shift in the hardware configuration of devices that can cause performance trend movement as performance improves or degrades for the new devices
 
 - Usage Shifts: For example, if users are encouraged or defaults are changed that lead to different usage patterns.  For instance, making the default save location for Office files SharePoint, instead of local.  This will result in more File Opens from SharePoint and fewer from the local drive, which will likely have correlated performance shifts.
 
@@ -222,6 +222,6 @@ Investigation workflow for unexpected shifts in Office performance:
 2. **Device changes**: Device changes can often cause temporary or permanent changes in the performance of Office.  Therefore, the next step is to investigate if there have been changes to add-ins, anti-virus software, updated policies, updated registry keys, OS updates, VM configuration updates, updated Office build, or hardware changes.  Verify if those updates happened at the same time as the shifts in metrics.
 3. **Confirm findings or continue analysis**:  Using a device that is exhibiting slower performance:
   - If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times.  Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
-  - If no correlating factor was found at the broad level, then measure the current performance on the device and begin removing common factors testing performance after each change to identify the source. For instance, remove add-ins one by one and see if performance improves when they are removed. If it isn’t add-in related, then remove anti-virus and continue testing performance at each step to find the source.
+  - If no correlating factor was found at the broad level, then measure the current performance on the device and begin removing common factors testing performance after each change to identify the source. For instance, remove add-ins one by one and see if performance improves when they're removed. If it isn’t add-in related, then remove anti-virus and continue testing performance at each step to find the source.
   - Test on other devices to build confidence that is the source of the issue.
 4. Take appropriate action to fix or mitigate the performance issue and monitor performance trends as the change is rolled out.  
