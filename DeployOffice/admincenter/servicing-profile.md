@@ -99,7 +99,7 @@ For example, you might want your IT admins and help desk staff get the updates f
 
 An additional wave is created automatically, which will include all the devices not included in the waves that you created.
 
-You can also specify the number of days between waves, from 1 day to ## days. For example, you might want the second wave to start 3 days after the first wave starts. The value you specify applies to all waves. You can't have a different number of days between different waves.
+You can also specify the number of days between waves, from 1 day to ## days. For example, you might want the next wave to start 3 days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
 
 
 #### Set an update deadline
