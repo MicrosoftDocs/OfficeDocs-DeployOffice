@@ -17,6 +17,9 @@ The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.o
 
 From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
 
+> [!TIP]
+> If you want to get a better understanding what are the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms on how the inventory service works, which changes occur on your devices, and how to do troubleshooting, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
+
 ## Requirements for using inventory
 
 To view the inventory for your environment, the following requirements must be met:
@@ -136,5 +139,3 @@ If you have devices that are missing from the inventory, make sure that the devi
 
 In a few cases, some devices may appear more than once in the inventory. This duplication mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
 
-## Additional media
-There are two additional videos available. If you want to get a better understanding what are the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms on how the inventory service works, which changes occur on your devices and how to do troubleshooting, we recommend to check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
