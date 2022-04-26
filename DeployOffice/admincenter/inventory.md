@@ -135,3 +135,6 @@ You can export the inventory views to .csv format so that you can import your da
 If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
 
 In a few cases, some devices may appear more than once in the inventory. This duplication mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
+
+## Additional media
+There are two additional videos available. If you want to get a better understanding what are the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms on how the inventory service works, which changes occur on your devices and how to do troubleshooting, we recommend to check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
