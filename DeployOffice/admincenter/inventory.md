@@ -131,7 +131,8 @@ Devices will send a heartbeat once a day to the inventory. If a device hasn't se
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This command will export the current filtered view of data. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and click on the **Export** button. The service will prepare the data in the background and notify you, when it is ready for download. Inventory will always export all data points, regardless of the currently set filters. There is no size limit to the export.
+
 
 ## Missing or duplicate devices
 
