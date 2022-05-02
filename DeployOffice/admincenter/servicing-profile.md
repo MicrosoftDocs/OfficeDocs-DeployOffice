@@ -88,19 +88,18 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
-#### Create rollout waves
+#### Create rollout waves (preview)
 
 > [!NOTE]
 > This feature is in preview and is subject to change.
 
 If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Azure Active Directory (Azure AD) groups to each of the waves.
 
-For example, you might want your IT admins and help desk staff get the updates first, while users in the Finance department get the updates in a later wave. 
+For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave.
 
 An additional wave is created automatically, which will include all the devices not included in the waves that you created.
 
-You can also specify the number of days between waves, from 1 day to ## days. For example, you might want the next wave to start 3 days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
-
+You can also specify the number of days between waves, from 1 day to 5 days. For example, you might want the next wave to start 3 days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
 
 #### Set an update deadline
 
