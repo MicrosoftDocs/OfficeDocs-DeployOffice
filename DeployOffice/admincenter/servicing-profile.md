@@ -82,7 +82,7 @@ Devices that are rolled back will stay on that previous version until the next v
 
 ### Issues
 
-Issues allows you to view errors relating to Office deployment, including the number of devices affected and potential remediation advice. You can view the most recent issue for each device, and once the issue is resolved for a device it is removed.
+Issues allows you to view errors relating to Office deployment, including the number of devices affected and potential remediation advice. You can view the most recent issue for each device, and once the issue is resolved for a device it's removed.
 
 ### Settings
 
@@ -99,7 +99,7 @@ For example, you might want your IT admins and help desk staff to get the update
 
 An additional wave is created automatically, which will include all the devices not included in the waves that you created.
 
-You can also specify the number of days between waves, from 1 day to 5 days. For example, you might want the next wave to start 3 days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
+You can also specify the number of days between waves, from one day to five days. For example, you might want the next wave to start three days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
 
 #### Set an update deadline
 
