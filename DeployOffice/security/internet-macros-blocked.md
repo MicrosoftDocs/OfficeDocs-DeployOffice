@@ -267,11 +267,18 @@ Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the
 
 When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in will be loaded in a disabled state and the user will be blocked from using the Add-in. If the user trusts the source of the Add-in file, they can remove the Mark of the Web attribute from the Add-in file, and then reopen PowerPoint or Excel to use the Add-in.
 
-For PowerPoint, if you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take either of the following actions:
-- Use a digital signature and trust the publisher.
-- If you're not using digital signatures, you can save the Add-in file to a [Trusted Location](trusted-locations.md) and have users get the Add-in file from that location.
+If you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take the following actions.
 
-For Excel, users will either have to remove Mark of the Web from the .xla or .xlam file or you'll have to use a Trusted Location. Otherwise, the macros in the file won't run. Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
+For PowerPoint Add-in files:
+- Use a digital signature and trust the publisher.
+- Save the Add-in file to a [Trusted Location](trusted-locations.md) for users to retrieve.
+
+For Excel Add-in files:
+- Remove Mark of the Web from the .xla or .xlam file.
+- Save the Add-in file to a [Trusted Location](trusted-locations.md) for users to retrieve.
+
+> [!NOTE]
+> Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
 
 ## Related articles
 
