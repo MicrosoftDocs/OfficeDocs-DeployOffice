@@ -73,9 +73,9 @@ Within the **Devices** tab, you can see the update status of these devices and v
 
 If you're experiencing issues with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department.
 
-To start, select the roll back action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
+To start, select the roll back action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Azure Active Directory groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
 
-Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month.
+Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month. You can also cancel the rollback action if the underlying issue has been resolved prior to the next version being available.
 
 > [!TIP]
 > To see a demo of how to roll back, [watch this video](https://www.youtube.com/watch?v=wyy_ll3wdlM).
