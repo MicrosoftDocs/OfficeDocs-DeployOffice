@@ -73,20 +73,33 @@ Within the **Devices** tab, you can see the update status of these devices and v
 
 If you're experiencing issues with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department.
 
-To start, select the roll back action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
+To start, select the roll back action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Azure Active Directory groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
 
-Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month.
+Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will be updated automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month. You can also cancel the rollback action if the underlying issue has been resolved prior to the next version being available.
 
 > [!TIP]
 > To see a demo of how to roll back, [watch this video](https://www.youtube.com/watch?v=wyy_ll3wdlM).
 
 ### Issues
 
-Issues allows you to view errors relating to Office deployment, including the number of devices affected and potential remediation advice. You can view the most recent issue for each device, and once the issue is resolved for a device it is removed.
+Issues allows you to view errors relating to Office deployment, including the number of devices affected and potential remediation advice. You can view the most recent issue for each device, and once the issue is resolved for a device it's removed.
 
 ### Settings
 
 The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
+
+#### Create rollout waves (preview)
+
+> [!NOTE]
+> This feature is in preview and is subject to change.
+
+If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Azure Active Directory (Azure AD) groups to each of the waves.
+
+For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave.
+
+An additional wave is created automatically, which will include all the devices not included in the waves that you created.
+
+You can also specify the number of days between waves, from one day to five days. For example, you might want the next wave to start three days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
 
 #### Set an update deadline
 
