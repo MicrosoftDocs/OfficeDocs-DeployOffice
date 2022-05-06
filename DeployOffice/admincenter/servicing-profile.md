@@ -97,7 +97,7 @@ If you want certain groups of users to receive updates before other groups of us
 
 For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave.
 
-An additional wave is created automatically, which will include all the devices not included in the waves that you created.
+An additional wave is created automatically. That wave will include the devices in your servicing profile that aren’t already included in the waves that you created. Devices in that additional wave will be the last devices to start getting updates, after all the other waves have started receiving updates.
 
 You can also specify the number of days between waves, from one day to five days. For example, you might want the next wave to start three days after the previous wave started. The value you specify applies to all waves. You can't have a different number of days between each wave.
 
