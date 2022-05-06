@@ -16,24 +16,29 @@ description: "Provides guidance only to customers who received a Message center 
 # Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices
 
 > [!IMPORTANT]
-> The information in this article applies only to organizations that received a Message center post (in the Microsoft 365 admin center) about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel.
+> The information in this article applies only to organizations that received Message center post MC362760 (in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter)) on April 21, 2022 and again on May 5, 2022. If you didn't receive that post, this article doesn't apply to you and no action is required on your part.
 
 Our records show that some devices in your organization with Microsoft 365 Apps are receiving feature updates only once every six months.
 
 Customers on a monthly feature update cadence, such as those customers on Monthly Enterprise Channel, have reported higher satisfaction than those receiving semi-annual feature updates. In addition to receiving the latest features and fixes, having all devices on the same update frequency helps enable better collaboration experiences for users in your organization. Monthly Enterprise Channel also provides admins with predictability, since updates are released once a month, on the second Tuesday of the month.
 
-Therefore, to improve the experience for your users, we’ll automatically change all devices with Microsoft 365 Apps over to Monthly Enterprise Channel. If you don’t want this change to take place, [you can opt out](#how-to-opt-out-of-changing-devices-to-monthly-enterprise-channel) and keep devices on the channel of your choice.
+> [!TIP]
+> For information about cost savings and business benefits of using Monthly Enterprise Channel, [read this research report](https://cdn.techcommunity.microsoft.com/assets/Microsoft365/TotalEconomicImpactofMonthlyEnterpriseChannelForMicrosoft365Apps-Final-Aug-9-2021.pdf).
+
+Therefore, to improve the experience for your users, we’ll automatically change *all* devices with Microsoft 365 Apps over to Monthly Enterprise Channel. *If you don’t want this change to take place,* [you can opt out](#how-to-opt-out-of-changing-devices-to-monthly-enterprise-channel) and keep devices on the channel of your choice.
 
 > [!NOTE]
 > The date this change begins for your organization is listed in the Message center post that you received and is shown in the notification that appears in the [Microsoft 365 Apps admin center](https://config.office.com).
 
 ## Which installations of Office are affected by this change?
 
-This change will apply to both existing and new installations of Microsoft 365 Apps. Microsoft 365 Apps, which is included with your subscription plan, includes the Office apps that you're familiar with, such as Word, Excel, PowerPoint, and Outlook.
+*This change will apply to both existing and new installations of Microsoft 365 Apps.* Microsoft 365 Apps, which is included with your subscription plan, includes the Office apps that you're familiar with, such as Word, Excel, PowerPoint, and Outlook.
 
-This change affects all existing installations of Office in your organization that are on update channels other than Monthly Enterprise Channel. For example, this change affects installations that are on Semi-Annual Enterprise Channel. If you don’t opt out before the date specified, we’ll automatically configure those existing installations to begin receiving feature updates from Monthly Enterprise Channel instead of from their existing update channel. Any new installations of Office will also receive feature updates from Monthly Enterprise Channel.
+*This change affects all existing installations of Office in your organization that are on update channels other than Monthly Enterprise Channel.* For example, this change affects installations that are on Semi-Annual Enterprise Channel. If you don’t opt out before the date specified, we’ll automatically configure those existing installations to begin receiving feature updates from Monthly Enterprise Channel instead of from their existing update channel. Any new installations of Office will also receive feature updates from Monthly Enterprise Channel.
 
 In addition, Office will be configured to get updates automatically from Microsoft directly from the internet, which is our recommendation. This should help reduce your administrative workload when it comes to keeping Office up to date each month. It should also help ensure that most of your devices are updated in a timely manner after an update is released, as long as the devices are connected to the internet regularly.
+
+These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install from the **My account** page in the portal. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
 
 ## What is Monthly Enterprise Channel?
 
