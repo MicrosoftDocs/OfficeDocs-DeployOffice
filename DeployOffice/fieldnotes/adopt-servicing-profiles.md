@@ -78,7 +78,7 @@ After a few days, the bulk of targeted devices should have updated to the latest
 If you want to adopt a servicing profile in more granular steps, you can do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
 
 1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. You can add three types of items to a group, and mixing them is possible:
-    - Devices: Those must be Azure AD-joined and known to the inventory in the Microsoft 365 Apps admin center.
+    - Devices: Those must be (hybrid) Azure AD-joined and known to the inventory in the Microsoft 365 Apps admin center.
     - Users: If you add users, the servicing profile will use the inventory to identify which devices are belonging to these users and target all devices of the given users.
     - Azure AD groups: You can use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
 2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
