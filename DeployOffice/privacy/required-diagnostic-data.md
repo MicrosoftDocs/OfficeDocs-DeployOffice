@@ -1349,6 +1349,8 @@ The following fields are collected:
 
   - **AddinVersionV2** - the add-in version
 
+- **IsAppClosedWhileLoadingInBoot**- Whether the add-in was loaded during boot cancellation
+
   - **IsBootInProgress** – whether the Office application is in the process of booting
  
   - **LoadDuration** - duration of the add-in load
@@ -1799,7 +1801,7 @@ The following fields are collected:
 
 Used for monitoring any possible negative impact on your ability to perform core calendar actions like creating or editing events.  The event could also include a series of property names and if they have changed or not. For example, "title_changed", "online_meeting_changed", and "description_changed" are property names that are included to help us understand if there are any issues with editing certain properties.
 
-The following fields are collected: 
+The following fields are collected:
 
 - **account_sfb_enabled** - Helps us make sure that Skype for Business is configured correctly. 
 
@@ -1827,11 +1829,19 @@ The following fields are collected:
 
 - **is_every_meeting_online_on** - True if the users account is set to have online meetings on by default. Helps us understand if there are any issues with online meeting enabled calendars. 
 
+- **is_forwarding_allowed** - True by default. Used to check if user is allowing event to be forwarded and determine usage of response options for events.
+
+- **is_hide_attendees** - False by default. Used to check if user is hiding attendees on an event and determine usage of response options for events.
+
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
+- **is_new_time_proposal_allowed** - True by default. Used to check if user is allowing time proposals for event and determine usage of response options for events.
 
 - **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
 
 - **is_recurring** - Helps us understand if there is an issue that specifically impacts recurring meetings. 
+
+- **is_response_requested** - True by default. Used to check if user is requesting responses from attendees and determine usage of response options for events.
 
 - **launch_point** - The launch point of the action. Can be values such as widget header, widget footer, widget all day, and calendar shortcut. Helps us understand the context that the action was started from. 
 
@@ -1907,6 +1917,8 @@ The following fields are collected across iOS and Android:
 
 - **is_offline_search** - whether the search session is offline search based on search results returned by hx
 
+- **is_people_slab_displayed** - Whether the search suggestion selected was displaying the people slab.
+
 - **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
 
 - **result_selected_type** - What type of data that was displayed is the user interacting with, for example, see all contact, conversations, event, etc. 
@@ -1916,6 +1928,8 @@ The following fields are collected across iOS and Android:
 - **search_origin** - Where did the search originate from, for example, voice assistant, Cortana, keyboard input, etc. 
 
 - **search_scope** - A string indicating what type of account the user was searching in (for example, Exchange, Gmail, etc.) or if it was in All Accounts. 
+
+- **search_suggestion_treatment** - Shares the current search suggestion treatment used to display the suggestions, by relevance or type.
 
 - **search_suggestion_type** - indicates what is behind the search suggestion, for example, is a spell correction? Based on history? Autocomplete?
 
@@ -4394,6 +4408,15 @@ The following fields are collected:
 - **Data_UploadError** - A numerical value that indicates the kind of error that occurred if an upload operation fails.
 
 - **Data_UpsellAppearsFromDelegate** - A Boolean value to indicate if the view was shown from the share menu.
+
+#### Office.Excel.XlEditSession
+
+Collected when the user starts editing a spreadsheet. The data collected allows Microsoft to evaluate the feature health of actions that change the spreadsheet. It is also used to calculate monthly active users and devices.
+
+The following fields are collected:	
+
+ - None
+
 
 #### Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -9214,11 +9237,13 @@ The following fields are collected:
 
 - **setting_properties** - Tracks properties relation to setting action detailed below: 
    - **alternate_app_icon_setting** - the selected alternate app icon (light, dark)
+   - **app_lock_state** – indicates whether user turned on/off/disabled the App Lock feature in settings
    - **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
    - **badge_count_state** - indicates what type of badge count the user has asked for that is, no badges, focused inbox only, etc. 
    - **changed_folder** - determines whether this action was archived, scheduled, or another action.
    - **contacts_sort_by** – tracks whether the contacts are sorted by first name or last name
-   - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
+   - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable.
+   - **density_setting** - the message list density mode selected by the user 
   - **enabled_state** - whether state related to the action is enabled
   - **fab_tap_behavior** – the selected tap behavior (single press or tap & hold) for the floating action button we have on our main screens to compose an email, create an event, etc.
   - **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)
@@ -9227,6 +9252,7 @@ The following fields are collected:
     - **notification_action_number** - indicates which action number (two of three actions are customizable) was assigned a notification action, that is, action one, action two. This allows us to determine if there is a problem with a particular action.
    - **notification_state** - indicates what type of badge count the user has asked for that is, no badges, focused inbox only, etc.
    - **server_type** - indicates the back-end server type allowing us to know if there is an issue with a particular server type
+   - **signature_setting** - indicates if the setting was applied to all account or an individual account
    - **source** - indicates what is the source of notifications, if applicable, from settings or do not disturb setting
    - **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
      - **swipe_action** - indicates what the user was trying to do, that is, flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
@@ -9234,7 +9260,6 @@ The following fields are collected:
    - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
    - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
-   - **signature_setting** - indicates if the setting was applied to all account or an individual account
 
 - **state_changed_to** - To check if your focused inbox On/Off setting is configured correctly 
 
