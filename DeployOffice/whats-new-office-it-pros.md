@@ -21,6 +21,10 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## May 2022
 
+### Accessibility guide for Microsoft 365 Apps
+
+Looking for recommendations and resources to help make your Microsoft 365 environment more inclusive and accessible for all your users? For example, steps on how to configure the Accessibility Checker to run automatically. Or a list of accessibility resources for Office, Windows, and Teams. If so, then check out the [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md).
+
 ### Servicing profile: rollout waves (preview)
 
 If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves (preview)](admincenter/servicing-profile.md#create-rollout-waves-preview).
