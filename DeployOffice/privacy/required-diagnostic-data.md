@@ -1799,7 +1799,9 @@ The following fields are collected:
 
 #### calendar.action
 
-Used for monitoring any possible negative impact on your ability to perform core calendar actions like creating or editing events.  The event could also include a series of property names and if they have changed or not. For example, "title_changed", "online_meeting_changed", and "description_changed" are property names that are included to help us understand if there are any issues with editing certain properties.
+This event reports part of the calendar event data after creating event or editing events. This is used for monitoring any possible negative impact on your ability to perform core calendar actions.
+
+The event could also include a series of property names and if they have changed or not. For example, "title_changed", "online_meeting_changed", and "description_changed" are property names that are included to help us understand if there are any issues with editing certain properties.
 
 The following fields are collected:
 
