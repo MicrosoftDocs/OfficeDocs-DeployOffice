@@ -99,9 +99,9 @@ After a few days, the bulk of targeted devices should have updated to the latest
 
 A servicing profile offers multiple selectors to allow you to target the right set of devices. Once the selectors are picked and saved, the servicing profile will check each device listed in inventory against those. Any given device must match all selected criteria in order to be added to the profile. If a device doesn't pass a check, it will not be added, even if it passes other checks.
 
-- **Groups:** This selector allows you to specify one or multiple Azure AD groups. Nested groups are supported. To pass the check, one of the two conditions must be met for a device:
-    - It must be included in the Azure AD group, be (hybrid) Azure AD-joined, and listed in the inventory.
-    - The Microsoft 365 Apps installation on the device must have been activated by a user who is included in the Azure AD groups and the device must be listed in the inventory. For this condition, there's no requirement of a device being Azure AD-joined.
+- **Groups:** This selector allows you to specify one or multiple Azure AD groups. Nested groups are supported. To pass the check, one of the two conditions must be met:
+    - For devices: Those must be hybrid Azure AD joined (also known as HADDJ) or Azure AD joined (also known as AADJ) and listed in the inventory.
+    - For users: All devices in inventory with a Microsoft 365 Apps installation activated by the specified user will pass the check. For this condition, there's no requirement of a device being joined into any directory service.
 - **Channels:** This selector checks for the currently installed update channel of the Microsoft 365 Apps. To pass the check, a device must run a Microsoft 365 Apps update channel that has been selected.
 - **Disk space:** This selector checks for the available disk space reported into inventory. To pass the check, a device must have more disk space available than specified.
 - **Macros:** This selector checks if inventory has reported macro usage in the past 30 days. Inventory holds a binary Yes/No information, if at least one file with macros has been opened in the last 30 days.
