@@ -117,6 +117,7 @@ The following links provide information about accessibility options available in
    - [Keyboard shortcuts in Windows](https://support.microsoft.com/windows/dcc61a57-8ff0-cffe-9796-cb9706c75eec)
    - [Keyboard shortcuts in apps](https://support.microsoft.com/windows/139014e7-177b-d1f3-eb2e-7298b2599a34)
    - [Change color contrast in Windows](https://support.microsoft.com/windows/fedc744c-90ac-69df-aed5-c8a90125e696)
+   - [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros)
 
 - Teams
    - [Accessibility support for Microsoft Teams](https://support.microsoft.com/topic/d12ee53f-d15f-445e-be8d-f0ba2c5ee68f)
