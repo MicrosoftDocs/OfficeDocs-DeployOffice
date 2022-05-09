@@ -1351,13 +1351,13 @@ The following fields are collected:
 
 - **IsAppClosedWhileLoadingInBoot**- Whether the add-in was loaded during boot cancellation
 
-  - **IsBootInProgress** – whether the Office application is in the process of booting
+- **IsBootInProgress** – whether the Office application is in the process of booting
  
-  - **LoadDuration** - duration of the add-in load
+- **LoadDuration** - duration of the add-in load
   
-  - **LoadResult** - success state of the load
+- **LoadResult** - success state of the load
 
-  - **OfficeArchitecture** - Architecture of the Office client
+- **OfficeArchitecture** - Architecture of the Office client
 
 
 #### Office.Programmability.Addins.RibbonButtonClick
@@ -1823,11 +1823,15 @@ The following fields are collected:
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
 
+- **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the "Every meeting online" feature.
+
 - **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 
 - **is_every_meeting_online_on** - True if the users account is set to have online meetings on by default. Helps us understand if there are any issues with online meeting enabled calendars. 
+
+- **is_external_data** - Captures if an added event is internal (i.e., added in Outlook-to-Outlook calendar) or external (i.e., added from another email app such as Gmail to Outlook calendar).
 
 - **is_forwarding_allowed** - True by default. Used to check if user is allowing event to be forwarded and determine usage of response options for events.
 
