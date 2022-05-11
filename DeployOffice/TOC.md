@@ -6,6 +6,7 @@
 ## [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
 ## [Announcement: Office 365 ProPlus renamed](name-change.md)
 ## [Microsoft 365 Apps admin center](admincenter/overview.md)
+## [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md)
 
 # Prepare
 ## [Assess your environment and requirements](assess-microsoft-365-apps.md)

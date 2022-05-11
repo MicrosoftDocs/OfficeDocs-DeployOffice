@@ -19,6 +19,16 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## May 2022
+
+### Accessibility guide for Microsoft 365 Apps
+
+Looking for recommendations and resources to help make your Microsoft 365 environment more inclusive and accessible for all your users? For example, steps on how to configure the Accessibility Checker to run automatically. Or a list of accessibility resources for Office, Windows, and Teams. If so, then check out the [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md).
+
+### Servicing profile: rollout waves (preview)
+
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves (preview)](admincenter/servicing-profile.md#create-rollout-waves-preview).
+
 ## February 2022
 
 ### Blocking internet macros by default in Office
@@ -31,7 +41,7 @@ For more information, refer to the following information:
 
 ## January 2022
 
-### Servicing profiles: roll back to a previous version (preview)
+### Servicing profile: roll back to a previous version (preview)
 
 If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview).
 
