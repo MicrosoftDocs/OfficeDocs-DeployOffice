@@ -779,6 +779,11 @@
       "source_path": "DeployOffice/security/designate-trusted-locations-for-files-in-office.md",
       "redirect_url": "/deployoffice/security/trusted-locations",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/other/devices-updating-servicing-profile.md",
+      "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_document_id": false
     }
   ]
 }
