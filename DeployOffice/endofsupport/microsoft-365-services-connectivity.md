@@ -25,7 +25,7 @@ From October 13, 2020 onward, only these versions of Office are supported for co
 - Office 2016, such as Office Standard 2016
 
 > [!NOTE]
-> Versions of Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
+> Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
 
 Examples of Microsoft 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
@@ -100,13 +100,13 @@ Versions of Outlook that are newer than those versions listed, but aren't the mo
 - The following versions of Project are supported for connecting to Microsoft 365 (and Office 365) services:
   - Project Online Desktop Client
   - Project Professional 2021 and Project Standard 2021
-  - Project Professional 2019 and Project Standard 2019
-  - Project Professional 2016 and Project Standard 2016
+  - Project Professional 2019 and Project Standard 2019 *(until October 2023)*
+  - Project Professional 2016 and Project Standard 2016 *(until October 2023)*
 - The following versions of Visio are supported for connecting to Microsoft 365 (and Office 365) services:
   - Visio desktop app that comes with a Visio Plan 2 subscription
   - Visio LTSC Professional 2021 and Visio LTSC Standard 2021
-  - Visio Professional 2019 and Visio Standard 2019
-  - Visio Professional 2016 and Visio Standard 2016
+  - Visio Professional 2019 and Visio Standard 2019 *(until October 2023)*
+  - Visio Professional 2016 and Visio Standard 2016 *(until October 2023)*
 - This information about connecting to Microsoft 365 services doesn't apply to InfoPath 2013 or SharePoint Designer 2013.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
