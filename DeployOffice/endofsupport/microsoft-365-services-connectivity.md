@@ -24,6 +24,9 @@ From October 13, 2020 onward, only these versions of Office are supported for co
 - Office 2019, such as Office Professional Plus 2019
 - Office 2016, such as Office Standard 2016
 
+> [!NOTE]
+> Versions of Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
+
 Examples of Microsoft 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
 
 For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
@@ -33,7 +36,7 @@ For Microsoft 365 Apps, you must be using a supported version. For a list of whi
 
 ## Impact of using older Office clients to connect to Microsoft 365 services
 
-After October 13, 2020, ongoing investments to our cloud services will not take into account older Office clients. Over time, these Office clients may encounter performance or reliability issues. Organizations that use these older clients will almost certainly face an increased security risk and may find themselves out of compliance depending upon specific regional or industry requirements.
+After October 13, 2020, ongoing investments to our cloud services won't take into account older Office clients. Over time, these Office clients may encounter performance or reliability issues. Organizations that use these older clients will almost certainly face an increased security risk and may find themselves out of compliance depending upon specific regional or industry requirements.
 
 Therefore, administrators should update older Office clients to versions of Office supported for connecting to Microsoft 365 services.
 
@@ -57,7 +60,7 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Microso
 
 ### Basic authentication with Exchange Online
 
-There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication and Exchange Online – September 2021 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210).
+There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – May 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866).
 
 ### Retirement of Skype for Business Online
 
@@ -92,7 +95,6 @@ Versions of Outlook that are newer than those versions listed, but aren't the mo
 
 ## Additional information about connectivity to Microsoft 365 services  
 
-- Versions of Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
 - Versions of Office LTSC 2021 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2026.
 - Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. That’s because Office 2016 for Mac reached its end of support on October 13, 2020.
 - The following versions of Project are supported for connecting to Microsoft 365 (and Office 365) services:
@@ -105,6 +107,6 @@ Versions of Outlook that are newer than those versions listed, but aren't the mo
   - Visio LTSC Professional 2021 and Visio LTSC Standard 2021
   - Visio Professional 2019 and Visio Standard 2019
   - Visio Professional 2016 and Visio Standard 2016
-- This information about connecting to Microsoft 365 services does *not* apply to InfoPath 2013 or SharePoint Designer 2013.
+- This information about connecting to Microsoft 365 services doesn't apply to InfoPath 2013 or SharePoint Designer 2013.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
