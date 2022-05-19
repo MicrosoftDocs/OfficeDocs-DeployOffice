@@ -5,3 +5,4 @@
 # will be requested to review.
 
 /DeployOffice/  @DHB-MSFT
+/office-insider/ @DHB-MSFT

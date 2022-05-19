@@ -41,7 +41,9 @@
     "globalMetadata": {
       "breadcrumb_path": "/office-insider/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "feedback_product_url": "https://techcommunity.microsoft.com/t5/office-insider/bd-p/Office_Insider",
+      "titlesuffix": "Office Insider"
     },
     "fileMetadata": {},
     "template": [],
