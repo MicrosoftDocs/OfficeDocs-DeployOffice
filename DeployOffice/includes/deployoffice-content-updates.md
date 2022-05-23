@@ -2,6 +2,15 @@
 
 
 
+## Week of May 16, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/17/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
+| 5/19/2022 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
+
+
 ## Week of May 09, 2022
 
 
@@ -20,14 +29,3 @@
 |------|------------|--------|
 | 5/5/2022 | [Overview of servicing profile in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/servicing-profile) | modified |
 | 5/6/2022 | [Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices](/DeployOffice/other/devices-updating-monthly-enterprise-channel) | modified |
-
-
-## Week of April 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/18/2022 | [Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices](/DeployOffice/other/devices-updating-monthly-enterprise-channel) | added |
-| 4/18/2022 | [Microsoft 365 Apps will be updated to Monthly Enterprise Channel (with a servicing profile) on all your Office devices](/DeployOffice/other/devices-updating-servicing-profile) | added |
-| 4/20/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-| 4/21/2022 | [Microsoft 365 Apps health](/DeployOffice/admincenter/microsoft-365-apps-health) | modified |
