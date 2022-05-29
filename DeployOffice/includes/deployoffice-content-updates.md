@@ -2,6 +2,14 @@
 
 
 
+## Week of May 23, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/23/2022 | [Office deployment](/DeployOffice/index) | modified |
+
+
 ## Week of May 16, 2022
 
 
