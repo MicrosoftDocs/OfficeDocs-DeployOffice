@@ -16,9 +16,9 @@ description: "Provides Office admins with information about the implications of 
 # Windows Server end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Microsoft 365 Apps is not supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
+> - Microsoft 365 Apps isn't supported on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows 2022.
 > - Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. These issues could include new features added to Microsoft 365 Apps, or updates to existing features, not working as expected.
-> - If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to Windows Server 2019 or [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
+> - If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to [Windows 365](https://www.microsoft.com/windows-365) or [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
 
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
@@ -32,7 +32,7 @@ Version 2002 is the last version of Microsoft 365 Apps that you can install on d
 
 Even though Windows Server 2008 R2 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. But, during that time, as long as the device is still running Windows Server 2008 R2, your installation of Microsoft 365 Apps won't receive any new features updates.
 
-For information about managing updates to Microsoft 365 Apps on Windows Server 2008 R2 and guidance for using Microsoft Endpoint Configuration Manager for updates, see [Windows 7 end of support and Microsoft 365 Apps](windows-7-support.md). The same information about managing updates and using Configuration Manager for Windows 7 also applies to Windows Server 2008 R2.
+For information about managing updates to Microsoft 365 Apps on Windows Server 2008 R2, and guidance for using Microsoft Endpoint Configuration Manager for updates, see [Windows 7 end of support and Microsoft 365 Apps](windows-7-support.md). The same information about managing updates and using Configuration Manager for Windows 7 also applies to Windows Server 2008 R2.
 
 ## Windows Server 2012
 
@@ -63,15 +63,19 @@ You can continue to use the most current versions of Microsoft 365 Apps on Windo
 
 Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
 
+For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+
 ## Windows Server 2019
 
 Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
 
-For some best practices when running Microsoft 365 Apps with Windows Server 2019, see [Windows Server 2019 adds support for Office 365 ProPlus](https://cloudblogs.microsoft.com/windowsserver/2019/10/07/windows-server-2019-adds-support-for-office-365-proplus/).  *(Office 365 ProPlus is now named Microsoft 365 Apps for enterprise.)*
+For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
 ## Windows Server 2022
 
 Microsoft 365 Apps isn’t supported on Windows Server 2022, even though Windows Server 2022 is supported until October 2031.
+
+For recommendations on client hosting solutions to use instead, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
 ## Additional information
 
