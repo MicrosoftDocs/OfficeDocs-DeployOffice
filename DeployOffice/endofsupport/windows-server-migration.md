@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
-recommendations: true
+recommendations: false
 description: "Provides guidance to Office admins on moving from Microsoft 365 Apps on Windows Server to either Windows 365 or Azure Virtual Desktop."
 ---
 
