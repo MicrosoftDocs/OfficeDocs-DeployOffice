@@ -61,21 +61,27 @@ You can continue to use the most current versions of Microsoft 365 Apps on Windo
 
 ## Windows Server 2016
 
-Microsoft 365 Apps is supported on Windows Server 2016 until October 2025.
+Microsoft 365 Apps is supported on Windows Server 2016 only until October 2025.
 
 For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+
+For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
 ## Windows Server 2019
 
-Microsoft 365 Apps is supported on Windows Server 2019 until October 2025.
+Microsoft 365 Apps is supported on Windows Server 2019 only until October 2025.
 
 For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
+For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
+
 ## Windows Server 2022
 
-Microsoft 365 Apps isn’t supported on Windows Server 2022, even though Windows Server 2022 is supported until October 2031.
+Microsoft 365 Apps isn’t supported on Windows Server 2022.
 
 For recommendations on client hosting solutions to use instead, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+
+For end of support dates for Windows Server 2022, see the [Windows Server 2022 lifecycle](/lifecycle/products/windows-server-2022) page.
 
 ## Additional information
 
