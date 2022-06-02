@@ -16,20 +16,6 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
-    },
-    {
-      "docset_name": "Office-Insider",
-      "build_source_folder": "office-insider",
-      "build_output_subfolder": "Office-Insider",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
