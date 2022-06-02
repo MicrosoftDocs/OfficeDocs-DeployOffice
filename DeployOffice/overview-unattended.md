@@ -32,7 +32,7 @@ These are the requirements for using Microsoft 365 Apps for enterprise with unat
 - It requires Version 2009 or later of Microsoft 365 Apps for enterprise.
 
 > [!NOTE]
-> - Each unattended license allows the use of the Microsoft 365 suite in only a single unique physical or virtual OSE for robotic process automation. For more information, see the [Microsoft 365 Unattended License Overview](https://download.microsoft.com/download/3/d/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_brief_PLT_Microsoft365_Unattended_License_overview.pdf) and the [Microsoft 365 product terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/EAEAS#ServiceSpecificTerms).
+> - Each unattended license allows the use of the Microsoft 365 suite in only a single unique physical or virtual OSE for robotic process automation. For more information, see the [Microsoft 365 Unattended License Overview](https://download.microsoft.com/download/3/d/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_brief_PLT_Microsoft365_Unattended_License_overview.pdf) and the [Microsoft 365 Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/EAEAS#ServiceSpecificTerms).
 > - RPA doesn't support [shared computer activation](overview-shared-computer-activation.md).
 
 Like with an attended user license, admins can manage the Microsoft 365 Apps for enterprise (unattended) licenses in the Microsoft 365 admin center.
