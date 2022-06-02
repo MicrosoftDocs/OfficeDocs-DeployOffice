@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
