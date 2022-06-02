@@ -8,6 +8,7 @@
 ### [Windows 7](windows-7-support.md)
 ### [Windows 8](windows-8-support.md)
 ### [Windows Server](windows-server-support.md)
+### [Migration from Windows Server](windows-server-migration.md)
 
 ## Other Office products
 
