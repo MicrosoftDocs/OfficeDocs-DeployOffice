@@ -19,6 +19,12 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## June 2022
+
+### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
+
+Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
+
 ## May 2022
 
 ### Accessibility guide for Microsoft 365 Apps

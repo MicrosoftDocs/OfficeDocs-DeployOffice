@@ -18,9 +18,9 @@ description: "Provides guidance to Office admins on moving from Microsoft 365 Ap
 > [!NOTE]
 > The information in this article is for organizations who are hosting Microsoft 365 Apps on Windows Server 2019 or Windows Server 2016.
 
-Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 until October 2025.<sup>[1]</sup>
+Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.<sup>[1]</sup>
 
-If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
+If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
 
 Direct deployment of Microsoft 365 Apps isn't supported on Windows Server 2022 as it's a fixed, non-changing operating system.<sup>[2]</sup> However, it's possible to host virtual Windows client devices with Microsoft 365 Apps on Windows Server 2022.
 
@@ -33,9 +33,9 @@ There are other migration paths available that may better meet your technical an
 
 [Windows 365](https://www.microsoft.com/windows-365) is a complete software-as-service (SaaS) solution that securely streams your Windows experience (including your personalized apps, content, and settings) from the Microsoft cloud to any device.
 
-The Windows 365 service hosts Cloud PCs, which are highly available, optimized, and scalable virtual machines that can provide your users with a rich Windows desktop experience.
+The Windows 365 service hosts [Cloud PCs](/windows-365/overview#what-is-a-cloud-pc), which are highly available, optimized, and scalable virtual machines that can provide your users with a rich Windows desktop experience.
 
-For more information on the editions and Cloud PC configurations available, visit the [Windows 365 Plans and Pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing) page.
+For more information on Windows 365 plans, and Cloud PC configurations available, visit the [Windows 365 Plans and Pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing) page.
 
 Windows 365 requires no virtualization expertise and enables you to do the following:
 
