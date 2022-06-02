@@ -44,7 +44,7 @@ For end of support dates for Windows Server 2012, see the [Windows Server 2012 l
 
 As of January 14, 2020, Microsoft 365 Apps isn’t supported on Windows Server 2012 R2.
 
-For end of support dates for Windows Server 2012 R2, see the [Windows Server 2012 lifecycle](/lifecycle/products/windows-server-2012-r2) page.
+For end of support dates for Windows Server 2012 R2, see the [Windows Server 2012 R2 lifecycle](/lifecycle/products/windows-server-2012-r2) page.
 
 ## Windows Server 2016
 
