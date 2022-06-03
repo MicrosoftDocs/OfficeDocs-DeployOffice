@@ -2840,6 +2840,25 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
+#### AdInfraEvent
+
+This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
+- Type of ads sent by the ad network
+- Error messages sent by the ad network (request failed)
+- No-response events from the ad network
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_Operation_Metadata** - Additional information regarding the ad related operation performed by the ad infra
+
+- **Data_Operation_Result** - The result of the ad related operation performed by the ad infra
+
+- **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
+
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 This event is collected for Office applications running under Android platform and records when a file open operation takes place. The event helps in keeping the file open operation secure, up- to- date and performing properly. The goal of collecting this data is to continuously improve the file open performance. 
@@ -2933,6 +2952,8 @@ The following fields are collected:
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, for example, UI element, triggered by another app, etc.
+
+- **Data_IsBackgroundActivationComplete** - The state (true/false) to identify if pre-booting of application is done through background activation or not.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
@@ -15150,6 +15171,8 @@ The following fields are collected for iOS only:
 - **contacts_sort_by** - Tracks whether the contacts are sorted by either first name or last name
 
 - **darker_system_colors** - Tells us if the user has turned on darkening of system colors on their device to help us detect issues related to this setting
+
+- **default_density_setting** - The default density mode the user should get the first time they experience inbox density
 
 - **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
 
