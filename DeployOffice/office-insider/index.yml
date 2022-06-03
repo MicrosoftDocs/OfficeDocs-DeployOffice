@@ -71,7 +71,7 @@ productDirectory:
           text: Twitter
         - url: https://techcommunity.microsoft.com/t5/office-insider/bd-p/Office_Insider
           text: Tech Community
-        - url: https://answers.microsoft.com/officeinsider/forum
+        - url: https://answers.microsoft.com/en-us/officeinsider/forum
           text: Answers forum          
         - url: https://insider.office.com/handbook#Provide-feedback
           text: How to provide feedback 
