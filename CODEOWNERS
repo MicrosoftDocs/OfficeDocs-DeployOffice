@@ -5,4 +5,3 @@ CODEOWNERS                          @microsoftdocs/officedocs-admin
 .acrolinx-config.edn                @microsoftdocs/officedocs-admin
 
 /DeployOffice/  @DHB-MSFT
-/office-insider/ @DHB-MSFT
