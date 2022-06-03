@@ -66,7 +66,13 @@
         "privacy/**/*.md": false,
         "security/**/*.md": false,
         "vlactivation/**/*.md": false
-      }
+      },
+      "feedback_product_url": {
+        "DeployOffice/office-insider/**/*.md": "https://techcommunity.microsoft.com/t5/office-insider/bd-p/Office_Insider"
+      },
+      "titleSuffix": {
+        "DeployOffice/office-insider/**/*.md": "Office Insider"
+      },
     },
     "template": [],
     "dest": "OfficeDocs-OfficeProPlus",
