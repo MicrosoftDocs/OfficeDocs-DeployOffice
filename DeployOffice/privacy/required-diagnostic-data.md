@@ -2840,7 +2840,7 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
-#### AdInfraEvent
+#### Office.Android.AdInfraEvent
 
 This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
 - Type of ads sent by the ad network
