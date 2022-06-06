@@ -102,3 +102,5 @@
 ## [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
 
 # [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
+
+# [Office Insider Program for Business](office-insider/index.yml)

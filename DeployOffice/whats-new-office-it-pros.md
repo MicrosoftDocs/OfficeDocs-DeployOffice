@@ -21,6 +21,14 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## June 2022
 
+### "Software updates (Preview)" page in the Microsoft 365 admin center
+
+The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+
+### Office Insider Program for Business documentation
+
+The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to the [Office Insider Program for Business site](/office-insider).
+
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
 Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
