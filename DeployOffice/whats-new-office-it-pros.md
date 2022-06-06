@@ -21,6 +21,10 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## June 2022
 
+### Office Insider Program for Business documentation
+
+The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to the [Office Insider Program for Business site](https://docs.microsoft.com/deployoffice/office-insider).
+
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
 Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
