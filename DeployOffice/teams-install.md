@@ -153,7 +153,7 @@ If you have Microsoft 365 Apps for business or can't use Group Policy for some o
 
 If you want Teams to be installed, but don't want Teams to start automatically for the user after it's installed, you can use Group Policy and enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Teams.
 
-By enabling this policy setting ***before Teams is installed***, Teams won't start automatically when the user logs in to the device. Once a user signs in to Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
+By enabling this policy setting ***before Teams is installed***, Teams won't start automatically when the user logs in to the device. Once a user open Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
 
 > [!TIP]
 > If you've already installed Teams but you want to use this policy setting to prevent Teams from starting automatically, enable this policy setting and then [run this script](/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) on a per-user basis to reset the autostart setting for Teams.
