@@ -29,7 +29,7 @@
 
 # Security
 ## [Internet macros blocked by default](security/internet-macros-blocked.md)
-## [Security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
+## [Security baseline](security/security-baseline.md)
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
