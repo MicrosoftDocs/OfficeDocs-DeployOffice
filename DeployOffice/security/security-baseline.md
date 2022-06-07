@@ -70,7 +70,7 @@ The download of the security baseline for Microsoft 365 Apps for enterprise incl
 - Block Flash activation in Office documents
 - Restrict legacy JScript execution for Office
 
-The "Block Flash activation in Office documents" setting isn't available in any other Administrative template. The "Restrict legacy JScript execution for Office" setting is also available as a GPO in the security baseline download, as noted in the previous section.
+The "Block Flash activation in Office documents" setting is only available in the "MS Security Guide" Administrative template. The "Restrict legacy JScript execution for Office" setting is also available as a GPO in the security baseline download, as noted in the previous section.
 
 These settings appear under Computer Configuration\Policies\Administrative Templates\MS Security Guide in the Group Policy Management Console.
 
