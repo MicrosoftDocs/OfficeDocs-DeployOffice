@@ -84,7 +84,7 @@ Here is how to implement this collection:
 4. Paste the following sample query into the editor window.
 
    ```sql
-   select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,      SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
+   select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
    ```
    > [!NOTE]
    > This sample query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
@@ -96,7 +96,7 @@ The result is a collection that will automatically add all devices that are runn
 
 ## Catch devices on other update channels
 
-After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices tht are on update channels that you support internally. This leaves all devices that are on other update channels in this collection. You can then use this collection to deploy, for example a required application which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
+After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices that are on update channels that you support internally. This leaves all devices that are on other update channels in this collection. You can then use this collection to deploy, for example a required application which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
 
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
@@ -121,10 +121,9 @@ Here is how to implement this collection:
 4.	Paste the following sample query into the editor window.
 
    ```sql
-    select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
+    select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
    ```
 5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you are interested in.
-
 
    > [!NOTE]
    > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channel by adding the collection holding these devices as an exclusion.
