@@ -27,7 +27,7 @@ The **Software updates (Preview)** page in the Microsoft 365 admin center displa
 
 ### Office Insider Program for Business documentation
 
-The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to the [Office Insider Program for Business site](/office-insider/index.yml).
+The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to the [Office Insider Program for Business](office-insider/index.yml) site.
 
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
