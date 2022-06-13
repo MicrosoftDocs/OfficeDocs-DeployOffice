@@ -2,6 +2,16 @@
 
 
 
+## Week of June 06, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/6/2022 | [View software update status for Microsoft 365 Apps installations](/DeployOffice/updates/software-update-status) | added |
+| 6/6/2022 | [Keep Office apps up to date with the latest updates](/DeployOffice/updates/update-basics) | added |
+| 6/6/2022 | [Security baseline for Microsoft 365 Apps for enterprise](/DeployOffice/security/security-baseline) | added |
+
+
 ## Week of May 30, 2022
 
 
@@ -49,12 +59,3 @@
 | 5/9/2022 | [Accessibility guide for Microsoft 365 Apps](/DeployOffice/accessibility-guide) | added |
 | 5/9/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
 | 5/12/2022 | Microsoft 365 Apps will be updated to Monthly Enterprise Channel (with a servicing profile) on all your Office devices | removed |
-
-
-## Week of May 02, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/5/2022 | [Overview of servicing profile in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/servicing-profile) | modified |
-| 5/6/2022 | [Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices](/DeployOffice/other/devices-updating-monthly-enterprise-channel) | modified |
