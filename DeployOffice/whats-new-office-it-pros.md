@@ -21,7 +21,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## June 2022
 
-### Security baseline for Microsoft 365 Apps for enterprise (version 2206)
+### Security baseline for Microsoft 365 Apps for enterprise (Version 2206)
 
 Microsoft has released the recommended security configuration baseline settings for Version 2206 of Microsoft 365 Apps for enterprise. For more information, see the following resources:
 - [Security baseline for Microsoft 365 Apps for enterprise v2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714)  *(blog post)*
