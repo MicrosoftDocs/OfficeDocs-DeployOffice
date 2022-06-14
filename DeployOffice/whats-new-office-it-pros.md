@@ -21,6 +21,13 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## June 2022
 
+### Security baseline for Microsoft 365 Apps for enterprise (Version 2206)
+
+Microsoft has released the recommended security configuration baseline settings for Version 2206 of Microsoft 365 Apps for enterprise. For more information, see the following resources:
+- [Security baseline for Microsoft 365 Apps for enterprise v2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714)  *(blog post)*
+- [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
+
+
 ### "Software updates (Preview)" page in the Microsoft 365 admin center
 
 The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
