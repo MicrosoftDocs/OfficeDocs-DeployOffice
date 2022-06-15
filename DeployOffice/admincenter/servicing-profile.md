@@ -96,7 +96,7 @@ The servicing profile provides additional settings for your Microsoft 365 Apps, 
 > This feature is in preview and is subject to change.
 
 > [!TIP]
-> You can also watch a [walkthrough and deep dive videos](https://youtu.be/rDu8qVbE1DY) with additional details.
+> You can also watch a [walkthrough and deep dive video](https://youtu.be/rDu8qVbE1DY) with additional details.
 
 If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Azure Active Directory (Azure AD) groups to each of the waves.
 
