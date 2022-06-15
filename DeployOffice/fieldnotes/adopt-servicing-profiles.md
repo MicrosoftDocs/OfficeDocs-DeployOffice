@@ -32,6 +32,9 @@ This article covers:
 > [!NOTE]
 > All of above and below applies to Microsoft 365 Apps updates only. This feature does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
 
+> [!TIP]
+> If you prefer video over text, we also have a [Servicing profile overview](https://youtu.be/i_eUkyFX30E) as well as a [Servicing profile deep dive](https://youtu.be/YO6a3iNVXXI) video available for you.
+
 ## Benefits of using a servicing profile
 
 There are multiple benefits of using a servicing profile over common update management tools:
