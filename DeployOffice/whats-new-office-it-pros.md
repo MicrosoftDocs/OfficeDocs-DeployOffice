@@ -48,7 +48,9 @@ Looking for recommendations and resources to help make your Microsoft 365 enviro
 
 ### Servicing profile: rollout waves (preview)
 
-If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves (preview)](admincenter/servicing-profile.md#create-rollout-waves-preview).
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admincenter/servicing-profile.md#create-rollout-waves).
 
 ## February 2022
 
