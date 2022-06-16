@@ -50,7 +50,7 @@ A servicing profile takes precedence over other management tools, such as Micros
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
     - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on, if that channel is selected in the device criteria, to Monthly Enterprise Channel. 
-    - The second option is to use **Groups (Preview)**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Azure AD group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
+    - The second option is to use **Groups**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Azure AD group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
 
     > [!TIP]
     > You can see a demo of how to use Azure Active Directory group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).
@@ -90,10 +90,7 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
-#### Create rollout waves (preview)
-
-> [!NOTE]
-> This feature is in preview and is subject to change.
+#### Create rollout waves
 
 > [!TIP]
 > You can also watch a [walkthrough and deep dive video](https://youtu.be/rDu8qVbE1DY) with additional details.
