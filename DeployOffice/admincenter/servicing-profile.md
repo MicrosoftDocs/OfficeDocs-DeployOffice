@@ -90,10 +90,7 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
-#### Create rollout waves (preview)
-
-> [!NOTE]
-> This feature is in preview and is subject to change.
+#### Create rollout waves
 
 > [!TIP]
 > You can also watch a [walkthrough and deep dive video](https://youtu.be/rDu8qVbE1DY) with additional details.
