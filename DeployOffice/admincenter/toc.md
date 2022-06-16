@@ -9,4 +9,3 @@
 
 ## Preview features
 ### [OneDrive sync health (preview)](/onedrive/sync-health)
-### [Servicing profile: roll back (preview)](servicing-profile.md#roll-back-to-a-previous-version-preview)

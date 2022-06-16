@@ -73,7 +73,3 @@ The following features and services have been recently released in preview or re
 #### OneDrive sync health (preview)
 
 You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health).
-
-#### Servicing profile: roll back to a previous version (preview)
-
-If you're using a [servicing profile](servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](servicing-profile.md#roll-back-to-a-previous-version-preview).
