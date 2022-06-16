@@ -66,7 +66,9 @@ For more information, refer to the following information:
 
 ### Servicing profile: roll back to a previous version (preview)
 
-If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview).
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admincenter/servicing-profile.md#roll-back-to-a-previous-version).
 
 ## December 2021
 
