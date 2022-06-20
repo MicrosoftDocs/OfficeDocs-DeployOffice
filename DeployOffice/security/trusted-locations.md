@@ -127,7 +127,7 @@ By default, Trusted Locations on network locations are disabled. But users can c
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
-||Protection level|Policy state|Description|
+|Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled | Blocks Trusted Locations on network locations, including any configured by the admin (for example, by using the "Trusted Location #1" policy). </br></br> Ignores any network locations set by users as Trusted Locations in the Trust Center, and prevents users from adding more.|
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Allows network locations as Trusted Locations to be set both by users and by policy.|
@@ -145,7 +145,7 @@ By default, Trusted Locations are available, and users can designate any locatio
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
-||Protection level|Policy state|Description|
+|Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled |All Trusted Locations are blocked.|
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy). |
@@ -161,7 +161,7 @@ This policy can be found under User Configuration\Policies\Administrative Templa
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
-||Protection level|Policy state|Description|
+|Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled |Only Trusted Locations defined by policy are allowed. |
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy).  |

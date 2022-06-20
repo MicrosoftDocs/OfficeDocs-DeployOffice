@@ -112,7 +112,7 @@ There's a separate policy for each of the five applications. The following table
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the current level of protection you get with each state, before the change in default behavior is implemented.
 
-||Protection level|Policy state|Description|
+|Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Enabled |Users will be blocked from running macros in files obtained from the internet. <br/><br/>Part of the Microsoft recommended security baseline. |
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.         |
@@ -120,7 +120,7 @@ Which state you choose for the policy determines the level of protection you're 
 
 After we implement the change to the default behavior, the level of protection changes when the policy is set to Not Configured.
 
-||Protection level|Policy state|Description|
+|Icon|Protection level|Policy state|Description|
 |---|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Not Configured| Users will be blocked from running macros in files obtained from the internet.<br/><br/> Users will see the Security Risk banner with a Learn More button |
 
@@ -146,7 +146,7 @@ There's a separate policy for each of the five applications. The following table
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
-||Protection level|Policy state|Policy value|
+|Icon|Protection level|Policy state|Policy value|
 |--------|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)|Protected **[recommended]** |Enabled|Disable all except digitally signed macros (and select "Require macros to be signed by a trusted publisher")|
 |![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Enabled|Disable all without notification |
@@ -165,7 +165,7 @@ If you don't configure the policy, users can configure macro protection settings
 
 The following table shows the choices users can make under **Macro Settings** and the level of protection each setting provides.
 
-||Protection level|Setting chosen|
+|Icon|Protection level|Setting chosen|
 |----|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Disable all macros except digitally signed macros|
 |![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Disable all macros without notification|
