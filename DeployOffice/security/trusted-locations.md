@@ -20,7 +20,7 @@ Trusted Locations is a feature of Office where files contained in these folders 
 
 [Active content](https://support.microsoft.com/office/b7ff2e8a-4055-47d4-8c7d-541e19f62bea) can include unsigned add-ins, VBA macros, connections to external data and more. It’s important to trust the original source of the file when you save it to a Trusted Location, since all active content will be enabled, and users won’t be notified about any potential security risks. The following diagram shows the trust workflow for opening Office files.
 
-![Flowchart that shows how Office decides whether to show active content, with the Trusted Locations step highlighted](../images/trusted-locations-flowchart.png)
+![Flowchart that shows how Office decides whether to show active content, with the Trusted Locations step highlighted](../images/security/trusted-locations-flowchart.png)
 
 As shown in Step 2, files in Trusted Locations bypass all other security and policy checks. Therefore, Trusted Locations should be used rarely, for unique situations and only for select users. In the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise, the guidance is to disable network-based Trusted Locations. Then, if needed, control Trusted Locations centrally through policy and don't allow users to set Trusted Locations themselves.
 
@@ -129,9 +129,9 @@ Which state you choose for the policy determines the level of protection you're 
 
 ||Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/icon-protected.png)| Protected **[recommended]**|Disabled | Blocks Trusted Locations on network locations, including any configured by the admin (for example, by using the "Trusted Location #1" policy). </br></br> Ignores any network locations set by users as Trusted Locations in the Trust Center, and prevents users from adding more.|
-|![Red circle with white X](../images/icon-not-protected.png)| Not protected|Enabled|Allows network locations as Trusted Locations to be set both by users and by policy.|
-|![Orange circle with white check mark](../images/icon-partially-protected.png)| Partially protected |Not Configured|By default, users are blocked from adding network locations as Trusted Locations, but may enable this by selecting the **Allow Trusted Locations on my network (not recommended)** checkbox in the Trust Center |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled | Blocks Trusted Locations on network locations, including any configured by the admin (for example, by using the "Trusted Location #1" policy). </br></br> Ignores any network locations set by users as Trusted Locations in the Trust Center, and prevents users from adding more.|
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Allows network locations as Trusted Locations to be set both by users and by policy.|
+|![Orange circle with white check mark](../images/security/icon-partially-protected.png)| Partially protected |Not Configured|By default, users are blocked from adding network locations as Trusted Locations, but may enable this by selecting the **Allow Trusted Locations on my network (not recommended)** checkbox in the Trust Center |
 
 We recommend setting this policy to **Disabled** as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should disable this policy for most users and only make exceptions for certain users as needed.
 
@@ -147,9 +147,9 @@ Which state you choose for the policy determines the level of protection you're 
 
 ||Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/icon-protected.png)| Protected |Enabled |All Trusted Locations are blocked.|
-|![Red circle with white X](../images/icon-not-protected.png)| Not protected|Disabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy). |
-|![Red circle with white X](../images/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Disabled**.|
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled |All Trusted Locations are blocked.|
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy). |
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Disabled**.|
 
 Organizations that have a highly restrictive security environment typically set this policy to **Enabled**.
 
@@ -163,9 +163,9 @@ Which state you choose for the policy determines the level of protection you're 
 
 ||Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/icon-protected.png)| Protected **[recommended]**|Disabled |Only Trusted Locations defined by policy are allowed. |
-|![Red circle with white X](../images/icon-not-protected.png)| Not protected|Enabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy).  |
-|![Red circle with white X](../images/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Enabled**. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled |Only Trusted Locations defined by policy are allowed. |
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy).  |
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Enabled**. |
 
 We recommend setting this policy to **Disabled** as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should disable this policy for most users and only make exceptions for certain users as needed.
 
