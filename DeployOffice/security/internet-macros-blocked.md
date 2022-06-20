@@ -281,6 +281,26 @@ For Excel Add-in files:
 > [!NOTE]
 > Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
 
+### View the ZoneIdentifier for a file
+
+You can view the ZoneIdentifier value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
+
+```console
+notepad {name of file}:ZoneIdentifier
+```
+
+When you run this command, Notepad will open and display the ZoneIdentifier. Look for the ZoneId value under the [ZoneTransfer] section.
+
+Here's a list of ZoneId values and what zone they map to.
+
+- 0 = My Computer
+- 1 = Local intranet
+- 2 = Trusted sites
+- 3 = Internet
+- 4 = Restricted sites
+
+Macros are only blocked by default if the file has Mark of the Web and a ZoneID value of 3 or 4. Files that have a ZoneID value of 2 will have Mark of the Web, but macros aren't blocked by default for those files.
+
 ## Related articles
 
 - [Macro malware](/windows/security/threat-protection/intelligence/macro-malware)
