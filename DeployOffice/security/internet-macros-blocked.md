@@ -57,10 +57,11 @@ The following flowchart graphic shows how Office determines whether to run macro
 
 The following steps explain the information in the flowchart graphic, except for Excel Add-in files. For more information about those files, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).
 
-1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has the Mark of the Web (MOTW) attribute.
+1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has Mark of the Web (MOTW).
 
 > [!NOTE]
-> The Mark of the Web (MOTW) attribute is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. The attribute only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
+> - Mark of the Web is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. 
+> - Mark of the Web only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
 
 2. If the file is from a Trusted Location, the file is opened with the macros enabled. If the file isn't from a Trusted Location, the evaluation continues.
 
@@ -95,7 +96,7 @@ For more information on how to deploy these policies, see [Tools available to ma
 
 ### Block macros from running in Office files from the Internet
 
-This policy prevents users from inadvertently opening files containing macros from the internet. When a file is downloaded to a device running Windows, a Mark of the Web (MOTW) attribute is added to the file identifying it was sourced from the internet.
+This policy prevents users from inadvertently opening files containing macros from the internet. When a file is downloaded to a device running Windows, Mark of the Web is added to the file identifying it was sourced from the internet.
 
 We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should enable this policy for most users and only make exceptions for certain users as needed.
 
@@ -206,27 +207,27 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 ## Additional information
 
-### Mark of the Web (MOTW) and Trusted Documents
+### Mark of the Web and Trusted Documents
 
-When a file is downloaded to a device running Windows, a Mark of the Web (MOTW) attribute is added to the file, identifying its source as being from the internet. Currently, when a user opens a file with the Mark of the Web (MOTW) attribute, a **SECURITY WARNING** banner appears, with an **Enable content** button. If the user selects **Enable content**, the file is considered a Trusted Document and macros are allowed to run. The macros will continue to run even after the change of default behavior to block macros in files from the internet is implemented, because the file is still considered a Trusted Document.
+When a file is downloaded to a device running Windows, Mark of the Web is added to the file, identifying its source as being from the internet. Currently, when a user opens a file with Mark of the Web, a **SECURITY WARNING** banner appears, with an **Enable content** button. If the user selects **Enable content**, the file is considered a Trusted Document and macros are allowed to run. The macros will continue to run even after the change of default behavior to block macros in files from the internet is implemented, because the file is still considered a Trusted Document.
 
-After the change of default behavior to block macros in files from the internet, users will see a different banner the first time they open a file with macros from the internet. This **SECURITY RISK** banner doesn't have the option to **Enable content**. But users will be able to go to the Properties dialog for the file, and select **Unblock**, which will remove the Mark of the Web (MOTW) attribute from the file and allow the macros to run, as long as no policy or Trust Center setting is blocking.
+After the change of default behavior to block macros in files from the internet, users will see a different banner the first time they open a file with macros from the internet. This **SECURITY RISK** banner doesn't have the option to **Enable content**. But users will be able to go to the Properties dialog for the file, and select **Unblock**, which will remove Mark of the Web from the file and allow the macros to run, as long as no policy or Trust Center setting is blocking.
 
 ![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
 
 ### Trusted Locations
 
-Saving files from the internet to a Trusted Location ignores the check for the Mark of the Web (MOTW) attribute and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
+Saving files from the internet to a Trusted Location ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
 
 ### Files on OneDrive or SharePoint
 
-- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets the Mark of the Web (MOTW) attribute. For example, Microsoft Edge sets the Mark of the Web (MOTW) attribute on a file if it's determined to be from the Internet zone.
+- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets Mark of the Web. For example, Microsoft Edge sets Mark of the Web on a file if it's determined to be from the Internet zone.
 
-- If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have the Mark of the Web (MOTW) attribute.
+- If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have Mark of the Web.
 
-- If a user has the OneDrive sync client running and the sync client downloads a file, then the file won't have the Mark of the Web (MOTW) attribute.
+- If a user has the OneDrive sync client running and the sync client downloads a file, then the file won't have Mark of the Web.
 
-- Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have the Mark of the Web (MOTW) attribute.
+- Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have Mark of the Web.
 
 - If you have a group of users, such as the Finance department, that need to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
 
@@ -242,7 +243,7 @@ Saving files from the internet to a Trusted Location ignores the check for the M
 
 ### Macro-enabled template files for Word, PowerPoint, and Excel
 
-Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded from the internet will have the Mark of the Web (MOTW) attribute. For example, template files with the following extensions:
+Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded from the internet will have Mark of the Web. For example, template files with the following extensions:
 - .dot
 - .dotm
 - .pot
@@ -250,7 +251,7 @@ Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded
 - .xlt
 - .xltm
 
-When the user opens the macro-enabled template file, the user will be blocked from running the macros in the template file. If the user trusts the source of the template file, they can remove the Mark of the Web attribute from the template file, and then reopen the template file in the Office app.
+When the user opens the macro-enabled template file, the user will be blocked from running the macros in the template file. If the user trusts the source of the template file, they can remove Mark of the Web from the template file, and then reopen the template file in the Office app.
 
 If you have a group of users that need to use macro-enabled templates without macros being blocked, you can take either of the following actions:
 - Use a digital signature and trust the publisher.
@@ -258,14 +259,14 @@ If you have a group of users that need to use macro-enabled templates without ma
 
 ### Macro-enabled add-in files for PowerPoint and Excel
 
-Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the internet will have the Mark of the Web (MOTW) attribute. For example, Add-in files with the following extensions:
+Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the internet will have Mark of the Web. For example, Add-in files with the following extensions:
 
 - .ppa
 - .ppam
 - .xla
 - .xlam
 
-When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in will be loaded in a disabled state and the user will be blocked from using the Add-in. If the user trusts the source of the Add-in file, they can remove the Mark of the Web attribute from the Add-in file, and then reopen PowerPoint or Excel to use the Add-in.
+When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in will be loaded in a disabled state and the user will be blocked from using the Add-in. If the user trusts the source of the Add-in file, they can remove Mark of the Web from the Add-in file, and then reopen PowerPoint or Excel to use the Add-in.
 
 If you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take the following actions.
 
