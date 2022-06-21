@@ -39,7 +39,7 @@ Also, review the following information:
 
 There are several options available to you to allow VBA macros to run in files that you trust.
 
-- Save files to a [Trusted Location](#trusted-locations)
+- Save files to a [Trusted Location](#trusted-locations).
 - Designate a file server or network share as a [Trusted site](#trusted-sites).
 - For [files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint) (including Teams channels), have users open files in the browser or by using the **Open in Desktop App** option.
 - Have users clear the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file to make it a [Trusted Document](#mark-of-the-web-and-trusted-documents).
