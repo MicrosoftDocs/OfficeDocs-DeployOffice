@@ -27,7 +27,22 @@ The **Learn More** button goes to an [article for end users and information work
 >
 > For more information, see [Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros).
 
+## Prepare for this change
+
 To prepare for this change, we recommend that you work with the business units in your organization that use macros in their Office files, such as the Finance department, and with independent software vendors (ISVs) that you rely on who make use of macros in Office files.
+
+Also, review the following information:
+
+- [Versions of Office affected by this change](#versions-of-office-affected-by-this-change)
+- [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet)
+- [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked)
+
+There are several options available to you to allow VBA macros to run in files that you trust.
+
+- Save files to a [Trusted Location](#trusted-locations)
+- Designate a file server or network share as a [Trusted site](#trusted-sites).
+- For [files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint) (including Teams channels), have users open files in the browser or by using the **Open in Desktop App** option.
+- Have users clear the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file to make it a [Trusted Document](#mark-of-the-web-and-trusted-documents).
 
 ## Versions of Office affected by this change
 
@@ -219,6 +234,14 @@ After the change of default behavior to block macros in files from the internet,
 
 Saving files from the internet to a Trusted Location ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
 
+### Trusted sites
+
+Files that are from a trusted site will ignore the check for Mark of the Web and their VBA macros will be enabled when those files are opened. To see a list of trusted sites on a Windows device, go to **Control Panel** > **Internet Options** > **Change security settings**. For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
+
+You can use Group Policy and the "Site to Zone Assignment List" policy to add locations as trusted sites to Windows devices in your organization. This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
+
+To check if an individual file is from a trusted site location, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+
 ### Files on OneDrive or SharePoint
 
 - If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets Mark of the Web. For example, Microsoft Edge sets Mark of the Web on a file if it's determined to be from the Internet zone.
@@ -283,7 +306,7 @@ For Excel Add-in files:
 
 ### Mark of the Web and zones
 
-By default, Mark of the Web is added to files from locations from the following zones:
+By default, Mark of the Web is added to files from locations in the following zones:
 
 - Trusted sites
 - Internet
@@ -313,7 +336,7 @@ For example, if the ZoneID is 2, macros in that file won't be blocked by default
 
 To identify files that have VBA macros that might be blocked from running, you can use the Readiness Toolkit for Office add-ins and VBA, which is a free download from Microsoft.
 
-The Readiness Toolkit includes a standalone executable that be run from a command line or from within a script. You can run the Readiness Toolkit on a user's device to look at files on the user's device. Or you can run it from your device to look at files on a network share.
+The Readiness Toolkit includes a standalone executable that can be run from a command line or from within a script. You can run the Readiness Toolkit on a user's device to look at files on the user's device. Or you can run it from your device to look at files on a network share.
 
 When you run the standalone executable version of the Readiness Toolkit, a JSON file is created with the information collected. You'll want to save the JSON files in a central location, such as a network share. Then you'll run the Readiness Report Creator, which is a UI wizard version of the Readiness Toolkit. This wizard will consolidate the information in the separate JSON files into a single report in the form of an Excel file.
 
@@ -321,7 +344,9 @@ To identify files that might be impacted by using the Readiness Toolkit, follow 
 
 1. [Download the most current version](https://www.microsoft.com/download/details.aspx?id=55983) of the Readiness Toolkit from the Microsoft Download Center. Make sure you're using at least Version 1.2.22161, which was released on June 14, 2022.
 2. Install the Readiness Toolkit.
-3. From a command prompt, go to the folder where you installed the Readiness Toolkit and run the ReadinessReportCreator.exe command with the blockinternetscan option. For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
+3. From a command prompt, go to the folder where you installed the Readiness Toolkit and run the ReadinessReportCreator.exe command with the blockinternetscan option. 
+
+   For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
 
 ```console
 ReadinessReportCreator.exe -blockinternetscan -p c:\officefiles\ -r -output \\server01\finance -silent
