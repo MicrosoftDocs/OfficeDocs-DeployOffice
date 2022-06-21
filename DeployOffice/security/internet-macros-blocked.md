@@ -281,15 +281,23 @@ For Excel Add-in files:
 > [!NOTE]
 > Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
 
-### View the ZoneIdentifier for a file
+### Mark of the Web and zones
 
-You can view the ZoneIdentifier value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
+By default, Mark of the Web is added to files from locations from the following zones:
+
+- Trusted sites
+- Internet
+- Restricted sites
+
+But, macros in a file with Mark of the Web are only blocked by default if the zone for the file is identified as being Internet or Restricted sites. If the zone for the file is identified as being Trusted sites, the macros in the file with Mark of the Web aren't blocked by default.
+
+You can view the ZoneId value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
 
 ```console
 notepad {name of file}:ZoneIdentifier
 ```
 
-When you run this command, Notepad will open and display the ZoneIdentifier. Look for the ZoneId value under the [ZoneTransfer] section.
+When you run this command, Notepad will open and display the ZoneId under the [ZoneTransfer] section.
 
 Here's a list of ZoneId values and what zone they map to.
 
@@ -299,7 +307,33 @@ Here's a list of ZoneId values and what zone they map to.
 - 3 = Internet
 - 4 = Restricted sites
 
-Macros are only blocked by default if the file has Mark of the Web and a ZoneID value of 3 or 4. Files that have a ZoneID value of 2 will have Mark of the Web, but macros aren't blocked by default for those files.
+For example, if the ZoneID is 2, macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
+
+### Use the Readiness Toolkit to identify files with VBA macros that might be blocked
+
+To identify files that have VBA macros that might be blocked from running, you can use the Readiness Toolkit for Office add-ins and VBA, which is a free download from Microsoft.
+
+The Readiness Toolkit includes a standalone executable that be run from a command line or from within a script. You can run the Readiness Toolkit on a user's device to look at files on the user's device. Or you can run it from your device to look at files on a network share.
+
+When you run the standalone executable version of the Readiness Toolkit, a JSON file is created with the information collected. You'll want to save the JSON files in a central location, such as a network share. Then you'll run the Readiness Report Creator, which is a UI wizard version of the Readiness Toolkit. This wizard will consolidate the information in the separate JSON files into a single report in the form of an Excel file.
+
+To identify files that might be impacted by using the Readiness Toolkit, follow these basic steps:
+
+1. [Download the most current version](https://www.microsoft.com/download/details.aspx?id=55983) of the Readiness Toolkit from the Microsoft Download Center. Make sure you're using at least Version 1.2.22161, which was released on June 14, 2022.
+2. Install the Readiness Toolkit.
+3. From a command prompt, go to the folder where you installed the Readiness Toolkit and run the ReadinessReportCreator.exe command with the blockinternetscan option. For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
+
+```console
+ReadinessReportCreator.exe -blockinternetscan -p c:\officefiles\ -r -output \\server01\finance -silent
+```
+
+4. After you've done all your scans, run the Readiness Report Creator.
+5. On the **Create a readiness report page**, select **Previous readiness results saved together in a local folder or network share**, and then specify the location where you saved all the files for the scans.
+6. On the **Report settings** page, select **Excel report**, and then specify a location to save the report.
+7. When you open the report in Excel, go to the **VBA Results** worksheet.
+8. In the **Guideline** column, look for **Blocked VBA file from Internet**.
+
+For more detailed information about using the Readiness Toolkit, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
 ## Related articles
 
