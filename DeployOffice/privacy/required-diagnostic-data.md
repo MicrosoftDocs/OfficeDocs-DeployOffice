@@ -1749,6 +1749,10 @@ The following fields are collected:
 
 - **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
 
+- **load_media_error_code** - The code of the error that occurred when loading media. This helps us understand the cause of the error.
+
+- **load_media_source** - The source of the loading media when error occurred.
+
 - **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -1756,6 +1760,8 @@ The following fields are collected:
 - **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **shared_type** - Shared email account type, shared/delegate/none. When collecting draft send error, we need to know the account type.  
 
 - **status_code** - The status code of the error that occurred. This helps us understand the cause of the error.
 
@@ -1821,6 +1827,8 @@ The following fields are collected:
 
 - **calendar_type** - The type of calendar an event is on after the user has edited the meeting. Possible values include primary, secondary, shared, and group. Helps us understand if there are issues with a certain calendar type. 
 
+- **classification** - The classification of the calendar event. Possible values include none, focus, time_away, lunch, exercise, homeschooling, class, doctor_visit, travel_time, meeting_preparation, no_meeting_time. Helps us understand the classification of the event user creating/editing. For example, whether the user is creating a focus event.
+
 - **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
@@ -1840,6 +1848,8 @@ The following fields are collected:
 - **is_hide_attendees** - False by default. Used to check if user is hiding attendees on an event and determine usage of response options for events.
 
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
+- **is_mute_notifications_on** - Whether user toggled mute notifications on or off. Helps us understand how and when mute notifications being used.
 
 - **is_new_time_proposal_allowed** - True by default. Used to check if user is allowing time proposals for event and determine usage of response options for events.
 
@@ -13461,11 +13471,21 @@ The following fields are collected:
 
 - **HardFaultCount** – The number of hard page faults for the process. (Windows only)
 
+- **IdentityBackgroundDuration** - The amount of time authentication initialization took in the background.
+
+- **IdentityMainThreadDuration** - The amount of time authentication initialization took on the main thread.
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
 
 - **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
+
+- **LoadAccountsDuration** - The amount of time it took to load the accounts which are signed into Office.
+
+- **OneAuthConfigCached** - Whether the configuration data for the new authentication stack was previously cached.
+
+- **OneAuthStackUsed** - Whether the new authentication stack is being used.
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
