@@ -312,7 +312,7 @@ By default, Mark of the Web is added to files from locations in the following zo
 - Internet
 - Restricted sites
 
-But, macros in a file with Mark of the Web are only blocked by default if the zone for the file is identified as being Internet or Restricted sites. If the zone for the file is identified as being Trusted sites, the macros in the file with Mark of the Web aren't blocked by default.
+But, VBA macros in a file with Mark of the Web are only blocked by default if the zone for the file is identified as being Internet or Restricted sites. If the zone for the file is identified as being Trusted sites, the macros in the file with Mark of the Web aren't blocked by default.
 
 You can view the ZoneId value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
 
@@ -330,7 +330,7 @@ Here's a list of ZoneId values and what zone they map to.
 - 3 = Internet
 - 4 = Restricted sites
 
-For example, if the ZoneID is 2, macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
+For example, if the ZoneID is 2, VBA macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
 
 ### Use the Readiness Toolkit to identify files with VBA macros that might be blocked
 
