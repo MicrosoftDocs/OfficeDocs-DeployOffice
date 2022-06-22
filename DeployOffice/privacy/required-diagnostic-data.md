@@ -12784,6 +12784,21 @@ The following fields are collected:
 - **wait_time** - the time to build message URL
 
 
+#### Office.Android.AdsMobile.AdUIEvent 
+
+This is event is triggered when a user interacts with an advertisement.  This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
+
+The following fields are collected:
+
+- **Data_ActionType** - User action performed on the ad view
+
+- **Data_AuctionId** - Unique send by the ad network to map to a sell auction on the ad network.
+
+- **Data_PlacementId** - Unique identifier used by the ad network service to associate creative to a surface
+
+- **Data_SurfaceId** - Uniquely identifies a surface where creative is displayed 
+
+
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
 Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
