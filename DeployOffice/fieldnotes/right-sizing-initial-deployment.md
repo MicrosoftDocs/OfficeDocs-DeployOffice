@@ -25,13 +25,13 @@ Either extreme (host everything on-premises or host nothing) isn't feasible for 
 
 There are three goals:
 
-- Reduce the impact on your company’s internet circuits as much as possible.
+- Reduce the impact on your company's internet circuits as much as possible.
 - Reduce the impact on your internal network as much as possible.
 - Use a minimum number of deployment packages to reduce on-going maintenance costs.
 
 This article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote workers](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installations of Visio, Project, or other language packs](build-dynamic-lean-universal-packages.md).
 
-Let’s first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution.
+Let's first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution.
 
 ## Sample scenario and solution
 
@@ -108,7 +108,7 @@ The next step is to craft a deployment package that includes the selected langua
 
 6. Also add [AllowCdnFallback="True"](../office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Here's example configuration.xml:
 
-   ```
+   ```xml
    <Configuration>
 	   <Add OfficeClientEdition="64" Channel="MonthlyEnterprise" AllowCdnFallback="True" OfficeMgmtCOM="TRUE" Version="16.0.12624.20588" ForceUpgrade="TRUE" >
    		<Product ID="O365ProPlusRetail">
@@ -136,7 +136,7 @@ You're all set!
 
 We recommend these steps to further reduce network impact:
 
-- Use [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content coming from distribution points. Because this content is the bulk of the download, we this step will help all your on-premises deployments, not just Office.
+- Use [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content coming from distribution points. Because this content is the bulk of the download, this step will help all your on-premises deployments, not just Office.
 - Configure [Delivery Optimization](../delivery-optimization.md) on your devices to allow them to peer cache content coming from the Office CDN. To use Delivery Optimization during Office installation, deploy version 1908 or later. For versions 1908 to 1911, you must [set a specific registry key](../delivery-optimization.md#configure-microsoft-365-apps-to-use-delivery-optimization).
 - Optionally enable [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. This step enables distribution points to act as a persistent cache for your devices. Connected cache will use already-existing information within Configuration Manager about your network infrastructure and preferred distribution points.
 

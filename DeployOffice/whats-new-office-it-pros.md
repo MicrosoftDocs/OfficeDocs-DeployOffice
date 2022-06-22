@@ -21,6 +21,21 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## June 2022
 
+### Security baseline for Microsoft 365 Apps for enterprise (Version 2206)
+
+Microsoft has released the recommended security configuration baseline settings for Version 2206 of Microsoft 365 Apps for enterprise. For more information, see the following resources:
+- [Security baseline for Microsoft 365 Apps for enterprise v2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714)  *(blog post)*
+- [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
+
+
+### "Software updates (Preview)" page in the Microsoft 365 admin center
+
+The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+
+### Office Insider Program for Business documentation
+
+The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to [Office Insider Program for Business](office-insider/index.yml).
+
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
 Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
@@ -33,7 +48,9 @@ Looking for recommendations and resources to help make your Microsoft 365 enviro
 
 ### Servicing profile: rollout waves (preview)
 
-If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves (preview)](admincenter/servicing-profile.md#create-rollout-waves-preview).
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admincenter/servicing-profile.md#create-rollout-waves).
 
 ## February 2022
 
@@ -49,7 +66,9 @@ For more information, refer to the following information:
 
 ### Servicing profile: roll back to a previous version (preview)
 
-If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](admincenter/servicing-profile.md#roll-back-to-a-previous-version-preview).
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admincenter/servicing-profile.md#roll-back-to-a-previous-version).
 
 ## December 2021
 

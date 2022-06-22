@@ -29,7 +29,7 @@
 
 # Security
 ## [Internet macros blocked by default](security/internet-macros-blocked.md)
-## [Security baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
+## [Security baseline](security/security-baseline.md)
 
 # Privacy
 ## [Overview of privacy controls](privacy/overview-privacy-controls.md?toc=/deployoffice/toc.json)
@@ -102,3 +102,5 @@
 ## [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
 
 # [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
+
+# [Office Insider Program for Business](office-insider/index.yml)

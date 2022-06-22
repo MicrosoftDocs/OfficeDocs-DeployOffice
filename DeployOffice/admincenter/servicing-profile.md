@@ -42,7 +42,7 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 
 ## Compatibility with other management tools
 
-A servicing profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the above requirements regardless of existing management tools in your environment. If you’re using these management tools, you may want to disable them but it isn't required.
+A servicing profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the update configuration set by the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the above requirements regardless of existing management tools in your environment. If you’re using these management tools, you may want to disable them but it isn't required.
 
 ## How to apply the servicing profile to a device
 
@@ -50,7 +50,7 @@ A servicing profile takes precedence over other management tools, such as Micros
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
     - The first (and recommended) option will be to use **All Devices**, which will manage all eligible devices on your tenant. This choice will move the device from the channel it’s on, if that channel is selected in the device criteria, to Monthly Enterprise Channel. 
-    - The second option is to use **Groups (Preview)**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Azure AD group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
+    - The second option is to use **Groups**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Azure AD group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
 
     > [!TIP]
     > You can see a demo of how to use Azure Active Directory group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).
@@ -68,10 +68,7 @@ You can see an overview of the devices in the Servicing profile section of the M
 
 Within the **Devices** tab, you can see the update status of these devices and view information on individual devices. You can select a device to view the same information you can view within inventory, such as details on the device's hardware, operating system, and Microsoft 365 Apps configuration.
 
-#### Roll back to a previous version (preview)
-
-> [!NOTE]
-> This feature is in preview and is subject to change.
+#### Roll back to a previous version
 
 If you're experiencing issues with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department.
 
@@ -90,10 +87,10 @@ Issues allows you to view errors relating to Office deployment, including the nu
 
 The servicing profile provides additional settings for your Microsoft 365 Apps, such as setting an update deadline to ensure updates are installed after they’re downloaded, and setting update exclusion dates to prevent devices from downloading updates during specified dates.
 
-#### Create rollout waves (preview)
+#### Create rollout waves
 
-> [!NOTE]
-> This feature is in preview and is subject to change.
+> [!TIP]
+> You can also watch a [walkthrough and deep dive video](https://youtu.be/rDu8qVbE1DY) with additional details.
 
 If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Azure Active Directory (Azure AD) groups to each of the waves.
 
