@@ -1749,6 +1749,10 @@ The following fields are collected:
 
 - **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
 
+- **load_media_error_code** - The code of the error that occurred when loading media. This helps us understand the cause of the error.
+
+- **load_media_source** - The source of the loading media when error occurred.
+
 - **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -1756,6 +1760,8 @@ The following fields are collected:
 - **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **shared_type** - Shared email account type, shared/delegate/none. When collecting draft send error, we need to know the account type.  
 
 - **status_code** - The status code of the error that occurred. This helps us understand the cause of the error.
 
@@ -1821,6 +1827,8 @@ The following fields are collected:
 
 - **calendar_type** - The type of calendar an event is on after the user has edited the meeting. Possible values include primary, secondary, shared, and group. Helps us understand if there are issues with a certain calendar type. 
 
+- **classification** - The classification of the calendar event. Possible values include none, focus, time_away, lunch, exercise, homeschooling, class, doctor_visit, travel_time, meeting_preparation, no_meeting_time. Helps us understand the classification of the event user creating/editing. For example, whether the user is creating a focus event.
+
 - **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
@@ -1840,6 +1848,8 @@ The following fields are collected:
 - **is_hide_attendees** - False by default. Used to check if user is hiding attendees on an event and determine usage of response options for events.
 
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
+- **is_mute_notifications_on** - Whether user toggled mute notifications on or off. Helps us understand how and when mute notifications being used.
 
 - **is_new_time_proposal_allowed** - True by default. Used to check if user is allowing time proposals for event and determine usage of response options for events.
 
@@ -2840,6 +2850,25 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
+#### Office.Android.AdInfraEvent
+
+This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
+- Type of ads sent by the ad network
+- Error messages sent by the ad network (request failed)
+- No-response events from the ad network
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_Operation_Metadata** - Additional information regarding the ad related operation performed by the ad infra
+
+- **Data_Operation_Result** - The result of the ad related operation performed by the ad infra
+
+- **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
+
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 This event is collected for Office applications running under Android platform and records when a file open operation takes place. The event helps in keeping the file open operation secure, up- to- date and performing properly. The goal of collecting this data is to continuously improve the file open performance. 
@@ -2933,6 +2962,8 @@ The following fields are collected:
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, for example, UI element, triggered by another app, etc.
+
+- **Data_IsBackgroundActivationComplete** - The state (true/false) to identify if pre-booting of application is done through background activation or not.
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
@@ -12763,6 +12794,21 @@ The following fields are collected:
 - **wait_time** - the time to build message URL
 
 
+#### Office.Android.AdsMobile.AdUIEvent 
+
+This is event is triggered when a user interacts with an advertisement.  This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
+
+The following fields are collected:
+
+- **Data_ActionType** - User action performed on the ad view
+
+- **Data_AuctionId** - Unique send by the ad network to map to a sell auction on the ad network.
+
+- **Data_PlacementId** - Unique identifier used by the ad network service to associate creative to a surface
+
+- **Data_SurfaceId** - Uniquely identifies a surface where creative is displayed 
+
+
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
 Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
@@ -13425,11 +13471,21 @@ The following fields are collected:
 
 - **HardFaultCount** – The number of hard page faults for the process. (Windows only)
 
+- **IdentityBackgroundDuration** - The amount of time authentication initialization took in the background.
+
+- **IdentityMainThreadDuration** - The amount of time authentication initialization took on the main thread.
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
 
 - **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
+
+- **LoadAccountsDuration** - The amount of time it took to load the accounts which are signed into Office.
+
+- **OneAuthConfigCached** - Whether the configuration data for the new authentication stack was previously cached.
+
+- **OneAuthStackUsed** - Whether the new authentication stack is being used.
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
@@ -15150,6 +15206,8 @@ The following fields are collected for iOS only:
 - **contacts_sort_by** - Tracks whether the contacts are sorted by either first name or last name
 
 - **darker_system_colors** - Tells us if the user has turned on darkening of system colors on their device to help us detect issues related to this setting
+
+- **default_density_setting** - The default density mode the user should get the first time they experience inbox density
 
 - **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
 
