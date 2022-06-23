@@ -230,6 +230,9 @@ After the change of default behavior to block macros in files from the internet,
 
 ![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
 
+> [!TIP]
+> You can also use the Unblock-File cmdlet in PowerShell to unblock files. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+
 ### Trusted Locations
 
 Saving files from the internet to a Trusted Location ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
