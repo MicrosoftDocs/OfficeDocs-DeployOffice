@@ -332,6 +332,8 @@ Here's a list of ZoneId values and what zone they map to.
 
 For example, if the ZoneID is 2, VBA macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
 
+You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as clearing the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
+
 ### Use the Readiness Toolkit to identify files with VBA macros that might be blocked
 
 To identify files that have VBA macros that might be blocked from running, you can use the Readiness Toolkit for Office add-ins and VBA, which is a free download from Microsoft.
