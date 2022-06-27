@@ -17,7 +17,7 @@ description: "Provides admins with information about how to update Office and ot
 
 Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. The msupdate tool can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed to give IT administrators more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/p/?linkid=830196).
 
-msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you are using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
+msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you're using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
 
 Use the following steps to start using the tool:
 1. Open the Terminal application
@@ -79,11 +79,11 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 |Skype for Business |MSFB16|
 |Remote Desktop         |MSRD10|
 |Intune Company Portal  |IMCP01|
-|Defender ATP  |WDAV00|
-|Edge Canary |EDCN01|
-|Edge Dev  |EDDV01|
-|Edge Beta |EDBT01|
-|Edge Stable |EDGE01 |
+|Microsoft Defender for Endpoint  |WDAV00|
+|Microsoft Edge Canary |EDCN01|
+|Microsoft Edge Dev  |EDDV01|
+|Microsoft Edge Beta |EDBT01|
+|Microsoft Edge Stable |EDGE01 |
 |Licensing helper tool|OLIC02|
 
 > [!NOTE]
