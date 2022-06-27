@@ -75,7 +75,7 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 |OneNote        |ONMC2019|
 |MAU              |MSau04|
 |OneDrive  |ONDR18|
-|Teams  |TEAM01|
+|Teams  |TEAMS10|
 |Skype for Business |MSFB16|
 |Remote Desktop         |MSRD10|
 |Intune Company Portal  |IMCP01|
