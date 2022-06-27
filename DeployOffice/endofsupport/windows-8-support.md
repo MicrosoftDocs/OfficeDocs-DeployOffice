@@ -56,5 +56,3 @@ To get security updates for Windows and updates to Microsoft 365 Apps, we strong
 For more information about upgrading to Windows 10, see [Windows 10 deployment resources and documentation](/windows/deployment/).
 
 Other upgrade resources are available from Microsoft experts, such as [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
-
-If you're not ready to upgrade from Windows 8 at this time, [Office on the web](https://www.office.com/) might be an alternative for your users.
