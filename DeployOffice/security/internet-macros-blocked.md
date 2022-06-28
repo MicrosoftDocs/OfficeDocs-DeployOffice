@@ -320,7 +320,7 @@ But, VBA macros in a file with Mark of the Web are only blocked by default if th
 You can view the ZoneId value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
 
 ```console
-notepad {name of file}:ZoneIdentifier
+notepad {name of file}:Zone.Identifier
 ```
 
 When you run this command, Notepad will open and display the ZoneId under the [ZoneTransfer] section.
