@@ -46,13 +46,16 @@
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-DeployOffice",
       "feedback_product_url": "https://techcommunity.microsoft.com",
       "titleSuffix": "Deploy Office",
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
+	"AngelaMotherofDragons",
+	"dstrome",
+        "v-dihans",
         "garycentric"
       ]
     },
