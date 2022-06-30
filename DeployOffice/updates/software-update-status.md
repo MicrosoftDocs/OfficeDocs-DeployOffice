@@ -79,6 +79,9 @@ The following information applies to the **Microsoft 365 Apps** tab on the **Sof
 - To view the information on this page, you must be assigned one of the following roles:
    - Global Administrator
    - Global Reader
+   - Office Apps Administrator
+   - Reports Reader
+   - Usage Summary Reports Reader
 
 - The data that populates this page refreshes approximately every 48 hours.
 
