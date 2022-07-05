@@ -219,11 +219,11 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Danish                                   | da-DK               | Danish, English, German, Swedish                                          |
 | Dutch                                    | nl-NL               | Dutch, English, French, German                                            |
 | English                                  | en-US               | English, French, Spanish                                                  |
-| English UK<sup>1</sup>                   | en-GB               | English, Irish, Scottish Gaelic, Welsh
+| English UK <sup>[1]</sup>                   | en-GB               | English, Irish, Scottish Gaelic, Welsh
 | Estonian                                 | et-EE               | Estonian, English, German, Russian, Finnish,                              |
 | Finnish                                  | fi-FI               | Finnish, English, Swedish, German, Russian                                |
 | French                                   | fr-FR               | French, English, German, Dutch, Arabic, Spanish                           |
-| French Canada<sup>1</sup>                | fr-CA               | French, English, German, Dutch, Arabic, Spanish                           |
+| French Canada <sup>[1]</sup>                | fr-CA               | French, English, German, Dutch, Arabic, Spanish                           |
 | Galician                                 | gl-ES               |                                                                           |
 | Georgian                                 | ka-GE               |                                                                           |
 | German                                   | de-DE               | German, English, French, Italian                                          |
@@ -280,7 +280,7 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Slovak                                   | sk-SK               | Slovak, English, Czech, Hungarian, German                                 |
 | Slovenian                                | sl-SI               | Slovenian, English, German, Italian, Croatian                             |
 | Spanish                                  | es-ES               | Spanish, English, French, Basque (Basque), Catalan, Galician, Brazilian   |
-| Spanish Mexico<sup>1</sup>               | es-MX               | Spanish, English, French, Brazilian                                       |
+| Spanish Mexico <sup>[1]</sup>               | es-MX               | Spanish, English, French, Brazilian                                       |
 | Swedish                                  | sv-SE               | Swedish, English, Finnish, German                                         |
 | Tamil                                    | ta-IN               |                                                                           |
 | Tatar (Cyrillic)                         | tt-RU               |                                                                           |
@@ -296,7 +296,8 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Yoruba                                   | yo-NG               |
 
 
-<sup>1</sup> This language is only available for Version 2108 or later.
+> [!NOTE]
+> <sup>[1]</sup> This language is only available for Version 2108 or later, but isn't available in Project or Visio.
 
 ## Related articles
 

@@ -83,6 +83,9 @@ Office LTSC 2021 adds support for the following three languages:
 - French (Canada), fr-ca
 - Spanish (Mexico), es-mx
 
+> [!NOTE]
+> These three languages aren't available in Project or Visio.
+
 #### OpenDocument format 1.3
 
 Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument format (ODF) 1.3. For more information, see [Office apps now support OpenDocument format 1.3](https://insider.office.com/blog/office-apps-now-support-opendocument-format-odf-1-3).
