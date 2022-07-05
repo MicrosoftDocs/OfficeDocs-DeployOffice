@@ -2,6 +2,14 @@
 
 
 
+## Week of June 27, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/27/2022 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+
+
 ## Week of June 20, 2022
 
 
@@ -41,11 +49,3 @@
 | 6/3/2022 | [Use a registry command to install Office Insider on Windows devices](/DeployOffice/office-insider/deploy/registry) | added |
 | 6/3/2022 | [Let users choose which Office Insider channel to install on Windows devices](/DeployOffice/office-insider/deploy/user-choice) | added |
 | 6/3/2022 | [Office Insider Program for Business](/DeployOffice/office-insider/overview) | added |
-
-
-## Week of May 23, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 5/23/2022 | [Office deployment](/DeployOffice/index) | modified |
