@@ -26,7 +26,10 @@ The following sections provide information about support for Microsoft 365 Apps 
 
 ## Windows Server 2008 R2
 
-Windows Server 2008 R2 went out of support on January 14, 2020. Running Microsoft 365 Apps on Windows Server 2008 R2 is no longer supported, even if you have [ESU for Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/extended-security-updates). 
+> [!NOTE]
+> Security updates for Version 2002 of Microsoft 365 Apps on Windows Server 2008 R2 will end after January 10, 2023.
+
+Windows Server 2008 R2 went out of support on January 14, 2020. Running Microsoft 365 Apps on Windows Server 2008 R2 is no longer supported, even if you have [ESU for Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/extended-security-updates).
 
 Version 2002 is the last version of Microsoft 365 Apps that you can install on devices running Windows Server 2008 R2. If you try to install a newer version of Microsoft 365 Apps, such as Version 2005, on a device running Windows Server 2008 R2, you'll receive an error message.
 
