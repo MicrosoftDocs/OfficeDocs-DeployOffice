@@ -55,10 +55,13 @@ The following table shows the forecasted schedule of when this change will be av
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
-|Current Channel|Version 2205|Started rolling out on June 6, 2022.|
-|Monthly Enterprise Channel|*To be determined*|*July 2022*|
-|Semi-Annual Enterprise Channel (Preview)|*To be determined*|*September 2022*|
-|Semi-Annual Enterprise Channel |*To be determined*|*January 2023*|
+|Current Channel|*To be determined*|*To be determined*|
+|Monthly Enterprise Channel|*To be determined*|*To be determined*|
+|Semi-Annual Enterprise Channel (Preview)|*To be determined*|*To be determined*|
+|Semi-Annual Enterprise Channel |*To be determined*|*To be determined*|
+
+> [!NOTE]
+> *Update on July 6, 2022:* Based on feedback, we're rolling back this change from Current Channel. We appreciate the feedback we’ve received so far, and we’re working to make improvements in this experience. We’ll provide another update when we’re ready to release again to Current Channel. Thank you.
 
 At a future date to be determined, we also plan to make this change to volume licensed versions of Office LTSC 2021, Office 2019, Office 2016, and Office 2013.
 
