@@ -25,8 +25,10 @@ Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/life
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
-
 ## Security updates will continue for Microsoft 365 Apps on Windows 7
+
+> [!NOTE]
+> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 will end after January 10, 2023.
 
 Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. We're doing this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
 

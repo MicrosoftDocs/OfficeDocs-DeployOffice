@@ -23,13 +23,11 @@ The following resources are designed to help you plan for end of support events 
 
 The following table shows upcoming end of support events that affect Office that you should be aware of.
 
-
-|End of support event  |Date |
-|---------|---------|
-|Windows 8.1|January 10, 2023|
-|Office 2013|April 11, 2023|
-|Office 2019 for Mac|October 10, 2023|
-
+|End of support event  |Date |More information|
+|---------|---------|---------|
+|Windows 8.1|January 10, 2023|[Windows 8.1 end of support and Microsoft 365 Apps](windows-81-support.md)|
+|Office 2013|April 11, 2023|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
+|Office 2019 for Mac|October 10, 2023||
 
 ## Past end of support events
 
