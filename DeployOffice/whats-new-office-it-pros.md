@@ -19,6 +19,16 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## July 2022
+
+### Windows 8.1 end of support and Microsoft 365 Apps
+
+Support for Windows 8.1 ends on January 10, 2023. After that date, running Microsoft 365 Apps on Windows 8.1 won't be supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
+
+### End of security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
+
+Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 will end after January 10, 2023. Keep in mind that running Microsoft 365 Apps on either of these operating systems isn't supported. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md) and [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md).
+
 ## June 2022
 
 ### Security baseline for Microsoft 365 Apps for enterprise (Version 2206)
@@ -26,7 +36,6 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 Microsoft has released the recommended security configuration baseline settings for Version 2206 of Microsoft 365 Apps for enterprise. For more information, see the following resources:
 - [Security baseline for Microsoft 365 Apps for enterprise v2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714)  *(blog post)*
 - [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
-
 
 ### "Software updates (Preview)" page in the Microsoft 365 admin center
 
