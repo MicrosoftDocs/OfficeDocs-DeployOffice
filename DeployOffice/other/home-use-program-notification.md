@@ -26,9 +26,9 @@ The following information outlines what you can expect from this feature. For yo
 
 ## What is the Workplace Discount Program?
 
-The Workplace Discount Program is an employee purchase program for Microsoft’s valued customers. The Workplace Discount Program provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft and you do not need to take any additional steps to activate the benefit for your users. If you are unsure of whether your organization is eligible for this program, visit [https://www.microsoft.com/workplace-discount-program/faq](https://www.microsoft.com/workplace-discount-program/faq).
+The Workplace Discount Program is an employee purchase program for Microsoft’s valued customers. The Workplace Discount Program provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft. You don't need to take any other steps to activate the benefit for your users. If you're unsure of whether your organization is eligible for this program, visit [https://www.microsoft.com/workplace-discount-program/faq](https://www.microsoft.com/workplace-discount-program/faq).
 
-Please ensure your custom domains are added in Azure Active Directory. Employees with email addresses that use the domain you add will be eligible for the Workplace Discount Program. For instructions on how to add custom domains, see [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain).
+Ensure your custom domains are added in Azure Active Directory. Employees with email addresses that use the domain you add will be eligible for the Workplace Discount Program. For instructions on how to add custom domains, see [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain).
 
 The Workplace Discount Program helps your employees become more proficient and productive with Microsoft 365 at home, increasing employee satisfaction while lowering the cost of IT help and training. Skill and experience grow from personal use and translate to higher productivity, satisfaction, and savings for your company.
 
@@ -36,35 +36,39 @@ The Workplace Discount Program helps your employees become more proficient and p
 
 The notification will be shown in Word, Excel, PowerPoint, and Outlook apps on devices running Windows for Version 2008 or later of Microsoft 365 Apps for enterprise. For your organization, the notification will begin appearing on the start date indicated in the Message center post sent to you. Each user will see a maximum of one notification per month across all their apps and devices, even if they have multiple Windows devices or virtual machines.
 
-This notification will be automatically enabled for users in your organization who are in the United States. You can choose to [turn off these notifications](#how-to-turn-off-notifications-about-the-workplace-discount-program) for some or all of your users by using a policy setting. You can use the same policy setting to enable these notifications for users in your organization who are not in the United States.
+This notification will be automatically enabled for users in your organization who are in the United States. You can choose to [turn off these notifications](#how-to-turn-off-notifications-about-the-workplace-discount-program) for some or all of your users by using a policy. You can use the same policy to enable these notifications for users in your organization who aren't in the United States.
 
 If enabled, users will see one notification total per month across all their apps and devices. The notification will be similar to the following screenshot, localized to the language setting of the user’s device.
 
 ![Screenshot showing a document in Word, with a message about the Workplace Discount Program showing underneath the ribbon.](../images/other/home-use-program-notification.png)
 
-When the user selects **Learn more and sign up**, they will be taken to the [Workplace Discount Program webpage](https://www.microsoft.com/workplace-discount-program) where they can learn more about the program and sign up for it if they would like. Their subscription will be separate from any organizational subscription enabled by you.
+When the user selects **Learn more and sign up**, they'll be taken to the [Workplace Discount Program webpage](https://www.microsoft.com/workplace-discount-program) where they can learn more about the program and sign up for it if they would like. Their subscription will be separate from any organizational subscription enabled by you.
 
 End users will be able to opt out of all Workplace Discount Program messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
 
 ## How to turn off notifications about the Workplace Discount Program
 
-The notifications can be controlled by a policy setting that can be configured by using the Office cloud policy service or Group Policy. The policy setting is named *Show in-product notifications for the Microsoft Home Use Program*.
+The notifications can be controlled by a policy that can be configured by using the Office cloud policy service or Group Policy. The policy is named *Show in-product notifications for the Microsoft Home Use Program*.
 
-You can configure this policy setting for some or all of your users, and you can configure the policy setting before or after the notifications begin appearing.
+> [!NOTE]
+> - We'll be updating the name of this policy to *Show in-product notifications for the Microsoft Workplace Discount Program* in the near future. 
+> - Only the name of the policy is changing. How the policy works isn't changing.
 
-If you want users in your organization who are not in the United States to receive these notifications, you can set the policy setting to Enabled.
+You can configure this policy for some or all of your users, and you can configure the policy before or after the notifications begin appearing.
+
+If you want users in your organization who aren't in the United States to receive these notifications, you can set the policy to Enabled.
 
 ### Use the Office cloud policy service to turn off notifications about the Workplace Discount Program
 
 For instructions on how to use the Office cloud policy service, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
 
-In the Office cloud policy service, search for the *Show in-product notifications for the Microsoft Home Use Program* policy setting, and then set it to Disabled.
+In the Office cloud policy service, search for the *Show in-product notifications for the Microsoft Home Use Program* policy, and then set it to Disabled.
 
 ### Use Group Policy to turn off notifications about the Workplace Discount Program
 
-To disable the *Show in-product notifications for the Microsoft Home Use Program* policy setting by using Group Policy, [download the Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. You must be using at least version 5086.1000 of the Administrative Template files, which were released on October 22, 2020.
+To disable the *Show in-product notifications for the Microsoft Home Use Program* policy by using Group Policy, [download the Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. You must be using at least version 5086.1000 of the Administrative Template files, which were released on October 22, 2020.
 
-You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous.
+You can find this policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous.
 
 ## User privacy and notifications about the Workplace Discount Program
 
