@@ -42,7 +42,7 @@ There are several options available to you to allow VBA macros to run in files t
 - Save files to a [Trusted Location](#trusted-locations).
 - Designate a file server or network share as a [Trusted site](#trusted-sites).
 - For [files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint) (including Teams channels), have users open files in the browser or by using the **Open in Desktop App** option.
-- Have users clear the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file to make it a [Trusted Document](#mark-of-the-web-and-trusted-documents).
+- Have users select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file to make it a [Trusted Document](#mark-of-the-web-and-trusted-documents).
 
 ## Versions of Office affected by this change
 
@@ -338,7 +338,7 @@ Here's a list of ZoneId values and what zone they map to.
 
 For example, if the ZoneID is 2, VBA macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
 
-You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as clearing the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
+You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
 
 ### Use the Readiness Toolkit to identify files with VBA macros that might be blocked
 
