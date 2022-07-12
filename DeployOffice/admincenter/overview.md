@@ -31,11 +31,14 @@ Sign in at [config.office.com](https://config.office.com/) with your admin accou
 >   - Office 365 GCC High and DoD
 >- Some functionality of the Office Customization Tool is available to all customers regardless of which plan they have. For more information, see [Office Customization Tool](#office-customization-tool).
 
-## Office cloud policy service
+## Cloud Policy service for Microsoft 365
 
-The Office cloud policy service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+> [!NOTE]
+> "Office cloud policy service" has been renamed to "Cloud Policy service for Microsoft 365." In most cases, we'll just refer to it as Cloud Policy.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
+Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+
+For more information, see [Overview of Cloud Policy service for Microsoft 365](overview-cloud-policy.md).
 
 ## Office Customization Tool
 

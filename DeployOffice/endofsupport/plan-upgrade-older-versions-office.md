@@ -146,7 +146,7 @@ As with any new version of Office, there are new Administrative Template files (
 
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
-If you have Microsoft 365 Apps for enterprise, you can also use the Office cloud policy service to apply most user-based policy settings. For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
+If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
 
