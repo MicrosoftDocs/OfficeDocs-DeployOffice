@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "DeployOffice/overview-office-client-policy-service.md",
-      "redirect_url": "/DeployOffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_url": "/DeployOffice/admincenter/overview-cloud-policy",
       "redirect_document_id": true
     },
     {
@@ -732,12 +732,12 @@
     },
     {
       "source_path": "DeployOffice/overview-of-security-policy-advisor.md",
-      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-office-cloud-policy-service.md",
-      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
     },
     {
@@ -772,12 +772,12 @@
     },
     {
       "source_path": "DeployOffice/admincenter/migrate-security-policies-from-spa-to-ocps.md",
-      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/admincenter/overview-security-policy-advisor.md",
-      "redirect_url": "/deployoffice/admincenter/overview-office-cloud-policy-service",
+      "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
     },
     {
@@ -788,6 +788,11 @@
     {
       "source_path": "DeployOffice/other/devices-updating-servicing-profile.md",
       "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview-office-cloud-policy-service.md",
+      "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
       "redirect_document_id": false
     }
   ]
