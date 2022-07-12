@@ -48,7 +48,7 @@ End users will be able to opt out of all Workplace Discount Program messaging on
 
 ## How to turn off notifications about the Workplace Discount Program
 
-The notifications can be controlled by a policy that can be configured by using the Office cloud policy service or Group Policy. The policy is named *Show in-product notifications for the Microsoft Home Use Program*.
+The notifications can be controlled by a policy that can be configured by using Cloud Policy or Group Policy. The policy is named *Show in-product notifications for the Microsoft Home Use Program*.
 
 > [!NOTE]
 > - We'll be updating the name of this policy to *Show in-product notifications for the Microsoft Workplace Discount Program* in the near future. 
@@ -58,11 +58,11 @@ You can configure this policy for some or all of your users, and you can configu
 
 If you want users in your organization who aren't in the United States to receive these notifications, you can set the policy to Enabled.
 
-### Use the Office cloud policy service to turn off notifications about the Workplace Discount Program
+### Use Cloud Policy to turn off notifications about the Workplace Discount Program
 
-For instructions on how to use the Office cloud policy service, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
+For instructions on how to use Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
-In the Office cloud policy service, search for the *Show in-product notifications for the Microsoft Home Use Program* policy, and then set it to Disabled.
+In Cloud Policy, search for the *Show in-product notifications for the Microsoft Home Use Program* policy, and then set it to Disabled.
 
 ### Use Group Policy to turn off notifications about the Workplace Discount Program
 
