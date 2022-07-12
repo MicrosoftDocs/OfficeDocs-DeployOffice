@@ -70,7 +70,7 @@
 # Reference
 ## [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md)
 ## [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
-## [Overview of the Office cloud policy service](admincenter/overview-office-cloud-policy-service.md)
+## [Overview of Cloud Policy](admincenter/overview-cloud-policy.md)
 ## [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 ## [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 ## [Deploying languages](overview-deploying-languages-microsoft-365-apps.md)
