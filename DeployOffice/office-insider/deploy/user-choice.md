@@ -40,12 +40,12 @@ You can set either policy to Enabled, or both policies to Enabled, depending on 
 After enabling this policy, you should notify the users so that they know this option is available to them. You'll want to include the steps for getting to the option (along with a screenshot) and guidance about which Office Insider channel they should choose, based on their role in the organization.
 
 > [!NOTE]
-> - You can also use the Office cloud policy service to set the User Configuration version of the policy to Enabled. For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../../admincenter/overview-office-cloud-policy-service.md).
+> - You can also use Cloud Policy to set the User Configuration version of the policy to Enabled. For more information, see [Overview of Cloud Policy service for Microsoft 365](../../admincenter/overview-cloud-policy.md).
 > - If you're using this policy, don't enable and configure the *Update Channel* policy. That policy will take precedence. The **Update Channel** option will still appear under **File** > **Account**, but it'll be disabled and the user won’t be able to select an update channel.
 
 ## Use a command to update the registry to show the Office Insider choice to users
 
-If you don't use Group Policy or the Office cloud policy service in your organization, there's an alternative that does the same thing as the *Show the Update Channel option to allow users to select an update channel*. This alternative also works if you have Microsoft 365 Apps for business, which doesn't support Group Policy or the Office cloud policy service.
+If you don't use Group Policy or Cloud Policy in your organization, there's an alternative that does the same thing as the *Show the Update Channel option to allow users to select an update channel*. This alternative also works if you have Microsoft 365 Apps for business, which doesn't support Group Policy or Cloud Policy.
 
 You can run the following commands from an elevated command prompt on the Windows device, hitting ENTER after each line. Running these commands will show users the following channels to select from: Beta Channel, Current Channel (Preview), Current Channel, and Monthly Enterprise Channel.
 

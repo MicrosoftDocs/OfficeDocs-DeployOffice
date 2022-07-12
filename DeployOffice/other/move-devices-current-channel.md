@@ -36,7 +36,7 @@ The selection under **Feature updates** on the **Office installation options** p
 
 Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization.
 
-For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](../office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](../office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
 
 If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](../office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](../office-deployment-tool-configuration-options.md#updates-element) ), and not any of the other methods mentioned in the previous paragraph, then your choice under **Feature updates** will apply to those devices.
 

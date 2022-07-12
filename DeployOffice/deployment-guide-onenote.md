@@ -84,9 +84,9 @@ To remove OneNote for Windows 10 from a Windows image so that OneNote for Window
 
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
-> - Most of these same policy settings can be applied by using the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
+> - Most of these same policy settings can be applied by using [Cloud Policy](admincenter/overview-cloud-policy.md), which doesn't require the device to be joined to a domain.
 > - Group Policy can't be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
-> - Office cloud policy service can only be used with Microsoft 365 Apps for enterprise.
+> - Cloud Policy can only be used with Microsoft 365 Apps for enterprise.
 
 **Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone&ID0EBBF=Windows_Phone)
 
