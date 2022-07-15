@@ -23,7 +23,7 @@ With this change, when users open a file that came from the internet, such as an
 The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if absolutely needed).
 
 > [!IMPORTANT]
-> Organizations can use the [Block macros from running in Office files from the Internet](#block-macros-from-running-in-office-files-from-the-internet) policy to prevent users from inadvertently opening files from the internet that contain macros. We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. If you do configure the policy, your organization won’t be affected by this default change.
+> Even before this change we're introducing, organizations could use the [Block macros from running in Office files from the Internet](#block-macros-from-running-in-office-files-from-the-internet) policy to prevent users from inadvertently opening files from the internet that contain macros. We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. If you do configure the policy, your organization won’t be affected by this default change.
 >
 > For more information, see [Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros).
 
@@ -33,16 +33,28 @@ To prepare for this change, we recommend that you work with the business units i
 
 Also, review the following information:
 
-- [Versions of Office affected by this change](#versions-of-office-affected-by-this-change)
-- [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet)
-- [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked)
+|Preparation action  |More information  |
+|---------|---------|
+|Understand which versions and which update channels have this change (as we roll out this change) |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)         |
+|See a flow chart of the process Office takes to determine whether to run macros in a file  | [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet)   |
+|Identify files with VBA macros that might be blocked using the Readiness Toolkit   | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked)        |
+|Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)
 
-There are several options available to you to allow VBA macros to run in files that you trust.
+## Steps to take to allow VBA macros to run in files that you trust
 
-- Save files to a [Trusted Location](#trusted-locations).
-- Designate a file server or network share as a [Trusted site](#trusted-sites).
-- For [files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint) (including Teams channels), have users open files in the browser or by using the **Open in Desktop App** option.
-- Have users select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file to make it a [Trusted Document](#mark-of-the-web-and-trusted-documents).
+How you allow VBA macros to run in files that you trust depends on where those files are located or the type of file.
+
+The following table list different common scenarios and possible approaches to take to unblock VBA macros and allow them to run. You don't have to do all possible approaches for a given scenario. In the cases where we have listed multiple approaches, pick the one that best suits your organization.
+
+|Scenario| Possible approaches to take|
+|---------|---------|
+|Individual files saved on the user’s device  |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the Unblock-File cmdlet in PowerShell <br/><br/> For more information, see [Removing Mark of the Web from a file](#removing-mark-of-the-web-from-a-file). |
+|Files centrally located on a network share or website for an organization|• Designate the location as a Trusted site<br/> • Add the location to the Local intranet zone <br/><br/> For more information, see ????.|
+|Files stored on OneDrive|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
+|Files stored on SharePoint, including a site used by a Teams channel|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint).|
+|Macro-enabled template files for Word, PowerPoint, and Excel|• Use a digital signature and trust the publisher <br/>• Save the template file to a Trusted Location <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
+|Macro-enabled add-in files for PowerPoint|•	Remove the Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
+|Macro-enabled add-in files for Excel|• Remove the Mark of the Web from the Add-in file  <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 
 ## Versions of Office affected by this change
 
@@ -62,8 +74,6 @@ The following table shows the forecasted schedule of when this change will be av
 
 > [!NOTE]
 > As we roll out this change to Current Channel over the course of several weeks, not all customers will see the change right away.
-
-At a future date to be determined, we also plan to make this change to volume licensed versions of Office LTSC 2021, Office 2019, Office 2016, and Office 2013.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -143,7 +153,7 @@ To check if an individual file is from a trusted site location, see [Mark of the
 
 - If you have a group of users, such as the Finance department, that need to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
 
-  - Have them open the file in the browser or by using the **Open in Desktop App** option
+  - Have them open the file by using the **Open in Desktop App** option
 
   - Have them download the file to a [Trusted Location](trusted-locations.md).
 
@@ -183,6 +193,7 @@ When the user tries to install the macro-enabled Add-in, by using **File** > **O
 If you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take the following actions.
 
 For PowerPoint Add-in files:
+- Remove Mark of the Web from the .ppa or .ppam file.
 - Use a digital signature and trust the publisher.
 - Save the Add-in file to a [Trusted Location](trusted-locations.md) for users to retrieve.
 
