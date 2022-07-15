@@ -29,7 +29,7 @@ The **Learn More** button goes to an [article for end users and information work
 
 ## Prepare for this change
 
-To prepare for this change, we recommend that you work with the business units in your organization that use macros in their Office files, such as the Finance department, and with independent software vendors (ISVs) that you rely on who make use of macros in Office files.
+To prepare for this change, we recommend that you work with the business units in your organization that use macros in their Office files, such as the Finance department. You'll want to identify those macros and determine what [steps to take](#steps-to-take-to-allow-vba-macros-to-run-in-files-that-you-trust) to keep using those macros. You'll also want to work with independent software vendors (ISVs) that provide macros in your Office files. For example, to see if they can digitally sign their code and you can treat them as a trusted publisher.
 
 Also, review the following information:
 
@@ -48,11 +48,10 @@ The following table list different common scenarios and possible approaches to t
 
 |Scenario| Possible approaches to take|
 |---------|---------|
-|Individual files saved on the user’s device  |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the Unblock-File cmdlet in PowerShell <br/><br/> For more information, see [Removing Mark of the Web from a file](#removing-mark-of-the-web-from-a-file). |
+|Individual files saved on the user’s device <br/> *(for example, email attachments)* |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the Unblock-File cmdlet in PowerShell <br/><br/> For more information, see [Removing Mark of the Web from a file saved to the local device](#removing-mark-of-the-web-from-a-file-saved-to-the-local-device). |
 |Files centrally located on a network share or website for an organization|• Designate the location as a Trusted site<br/> • Add the location to the Local intranet zone <br/><br/> For more information, see ????.|
-|Files stored on OneDrive|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
-|Files stored on SharePoint, including a site used by a Teams channel|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint).|
-|Macro-enabled template files for Word, PowerPoint, and Excel|• Use a digital signature and trust the publisher <br/>• Save the template file to a Trusted Location <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
+|Files stored on OneDrive <br/><br/> Files stored on SharePoint, including a site used by a Teams channel|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
+|Macro-enabled template files for Word, PowerPoint, and Excel|• Remove the Mark of the Web from the template file  <br/>• Use a digital signature and trust the publisher <br/>• Save the template file to a Trusted Location <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
 |Macro-enabled add-in files for PowerPoint|•	Remove the Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 |Macro-enabled add-in files for Excel|• Remove the Mark of the Web from the Add-in file  <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 
@@ -67,13 +66,13 @@ The following table shows the forecasted schedule of when this change will be av
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
-|Current Channel|Version 2206|Begin rolling out on July 19, 2022|
+|Current Channel|Version 2206|Begin rolling out on July 25, 2022|
 |Monthly Enterprise Channel|*To be determined*|*To be determined*|
 |Semi-Annual Enterprise Channel (Preview)|*To be determined*|*To be determined*|
 |Semi-Annual Enterprise Channel |*To be determined*|*To be determined*|
 
 > [!NOTE]
-> As we roll out this change to Current Channel over the course of several weeks, not all customers will see the change right away.
+> As we roll out this change to Current Channel over the next few weeks, not all customers will see the change right away.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -115,7 +114,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 ## Guidance on allowing VBA macros to run in files you trust
 
-### Removing Mark of the Web from a file
+### Removing Mark of the Web from a file saved to the local device
 
 For an individual file, the simplest way to remove Mark of the Web is to right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
@@ -124,14 +123,7 @@ For an individual file, the simplest way to remove Mark of the Web is to right-c
 > [!NOTE]
 > - In some cases, usually for files on a network share, users might not see the Unblock checkbox for a file where macros are being blocked. For those cases, see Files on an internal network share or website.
 
-
 You can also use the Unblock-File cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file. For more information about the ZoneID value, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
-
-
-
-### Trusted Locations
-
-Saving files from the internet to a Trusted Location ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. Trusted Locations should be managed carefully and used sparingly. For more information, see [Trusted Locations for Office files](trusted-locations.md).
 
 ### Trusted sites
 
@@ -204,6 +196,12 @@ For Excel Add-in files:
 > [!NOTE]
 > Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
 
+### Trusted Locations
+
+Saving files from the internet to a Trusted Location on a user's device ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the Properties for the file and select **Unblock** to allow the macros to run. 
+
+Because macros aren’t blocked in files saved to a Trusted Location, you should manage Trusted Locations carefully and use them sparingly. Network locations can also be set as a Trusted Location, but it's not recommended. For more information, see [Trusted Locations for Office files](trusted-locations.md).
+
 ## Additional information about Mark of the Web
 
 ### Mark of the Web and Trusted Documents
@@ -214,13 +212,10 @@ After the change of default behavior to block macros in files from the internet,
 
 ### Mark of the Web and zones
 
-By default, Mark of the Web is added to files from locations in the following zones:
+By default, Mark of the Web is added to files from the **Internet** or **Restricted sites** zones.
 
-- Trusted sites
-- Internet
-- Restricted sites
-
-But, VBA macros in a file with Mark of the Web are only blocked by default if the zone for the file is identified as being Internet or Restricted sites. If the zone for the file is identified as being Trusted sites, the macros in the file with Mark of the Web aren't blocked by default.
+> [!TIP]
+> To see these zones on a Windows device, go to **Control Panel** > **Internet Options** > **Change security settings**.
 
 You can view the ZoneId value for a file by running the following command at a command prompt, and replacing *{name of file}* with your file name.
 
@@ -281,7 +276,7 @@ For more information on how to deploy these policies, see [Tools available to ma
 
 ### Block macros from running in Office files from the Internet
 
-This policy prevents users from inadvertently opening files containing macros from the internet. When a file is downloaded to a device running Windows, Mark of the Web is added to the file identifying it was sourced from the internet.
+This policy prevents users from inadvertently opening files containing macros from the internet. When a file is downloaded to a device running Windows, or opened from a network share location, Mark of the Web is added to the file identifying it was sourced from the internet.
 
 We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should enable this policy for most users and only make exceptions for certain users as needed.
 
