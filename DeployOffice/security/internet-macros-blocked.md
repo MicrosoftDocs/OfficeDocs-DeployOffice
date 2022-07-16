@@ -22,7 +22,7 @@ With this change, when users open a file that came from the internet, such as an
 
 The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if absolutely needed).
 
-In some cases, users will also see the message if the file is from a location that’s not identified as being trusted. For example, if users are accessing files on a network share by using the share's IP address. For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
+In some cases, users will also see the message if the file is from a location within your intranet that’s not identified as being trusted. For example, if users are accessing files on a network share by using the share's IP address. For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
 
 > [!IMPORTANT]
 > Even before this change we're introducing, organizations could use the [Block macros from running in Office files from the Internet](#block-macros-from-running-in-office-files-from-the-internet) policy to prevent users from inadvertently opening files from the internet that contain macros. We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. If you do configure the policy, your organization won’t be affected by this default change.
@@ -31,7 +31,7 @@ In some cases, users will also see the message if the file is from a location th
 
 ## Prepare for this change
 
-To prepare for this change, we recommend that you work with the business units in your organization that use macros in their Office files, such as the Finance department. You'll want to identify those macros and determine what [steps to take](#steps-to-take-to-allow-vba-macros-to-run-in-files-that-you-trust) to keep using those macros. You'll also want to work with independent software vendors (ISVs) that provide macros in your Office files. For example, to see if they can digitally sign their code and you can treat them as a trusted publisher.
+To prepare for this change, we recommend that you work with the business units in your organization that use macros in Office files that are opened from locations such as email messages, network shares, and intranet websites. You'll want to identify those macros and determine what [steps to take](#steps-to-take-to-allow-vba-macros-to-run-in-files-that-you-trust) to keep using those macros. You'll also want to work with independent software vendors (ISVs) that provide macros in Office files from those locations. For example, to see if they can digitally sign their code and you can treat them as a trusted publisher.
 
 Also, review the following information:
 
@@ -52,9 +52,9 @@ The following table list different common scenarios and possible approaches to t
 |---------|---------|
 |Individual files saved on the user’s device <br/> *(for example, email attachments)* |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Removing Mark of the Web from a file saved to the local device](#removing-mark-of-the-web-from-a-file-saved-to-the-local-device). |
 |Files centrally located on a network share or trusted website|• Designate the location as a Trusted site<br/> • Add the location to the **Local intranet** zone <br/><br/> For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).|
-|Files stored on OneDrive <br/><br/> Files stored on SharePoint, including a site used by a Teams channel|• Have users open the file by using the **Open in Desktop App** option <br/> • Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
-|Macro-enabled template files for Word, PowerPoint, and Excel|• Remove the Mark of the Web from the template file  <br/>• Use a digital signature and trust the publisher <br/>• Save the template file to a Trusted Location <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
-|Macro-enabled add-in files for PowerPoint|•	Remove the Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
+|Files stored on OneDrive or SharePoint, including a site used by a Teams channel|• Have users directly open the file by using the **Open in Desktop App** option <br/> • If users download the file locally before opening it, remove Mark of the Web from the local copy of the file *(see the approaches under "Individual files saved on the user’s device")*<br/>• Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
+|Macro-enabled template files for Word, PowerPoint, and Excel|If the template file is stored on the user's device:<br/> • Remove Mark of the Web from the template file *(see the approaches under "Individual files saved on the user’s device")*  <br/>• Save the template file to a Trusted Location <br/><br/>If the template file is stored on a network location: <br/>• Use a digital signature and trust the publisher  <br/>• Trust the location of the template file *(see the approaches under "Files centrally located on a network share or trusted website")* <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
+|Macro-enabled add-in files for PowerPoint|• Remove the Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 |Macro-enabled add-in files for Excel|• Remove the Mark of the Web from the Add-in file  <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 |Groups of files saved to folders on the user’s device |Designate the folder a Trusted Location <br/><br/> For more information, see [Trusted Locations](#trusted-locations).|
 
@@ -119,7 +119,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 ### Removing Mark of the Web from a file saved to the local device
 
-For an individual file, the simplest way to remove Mark of the Web is to right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
+For an individual file downloaded from an internet location, the simplest way to unblock macros is to remove Mark of the Web. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
 ![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
 
@@ -134,7 +134,7 @@ You can also use the [Unblock-File](/powershell/module/microsoft.powershell.util
 If you have your users access files from a trusted website or an internal file server, you can do either of the following steps so that macros from those locations won't be blocked.
 
 - Designate the location as a Trusted site
-- Add the location to the **Local intranet** zone
+- If the network location is on the intranet, add the location to the **Local intranet** zone
 
 For example, if users are accessing a network share by using its IP address, macros in those files will be blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
 
