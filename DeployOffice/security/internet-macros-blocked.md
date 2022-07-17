@@ -50,7 +50,7 @@ The following table list different common scenarios and possible approaches to t
 
 |Scenario| Possible approaches to take|
 |---------|---------|
-|Individual files saved on the user’s device <br/> *(for example, email attachments)* |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Removing Mark of the Web from a file saved to the local device](#removing-mark-of-the-web-from-a-file-saved-to-the-local-device). |
+|Individual files saved on the user’s device <br/> *(for example, email attachments)* |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Remove Mark of the Web from a file](#remove-mark-of-the-web-from-a-file). |
 |Files centrally located on a network share or trusted website|• Designate the location as a Trusted site<br/> • Add the location to the **Local intranet** zone <br/><br/> For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).|
 |Files stored on OneDrive or SharePoint, including a site used by a Teams channel|• Have users directly open the file by using the **Open in Desktop App** option <br/> • If users download the file locally before opening it, remove Mark of the Web from the local copy of the file *(see the approaches under "Individual files saved on the user’s device")*<br/>• Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
 |Macro-enabled template files for Word, PowerPoint, and Excel|If the template file is stored on the user's device:<br/> • Remove Mark of the Web from the template file *(see the approaches under "Individual files saved on the user’s device")*  <br/>• Save the template file to a Trusted Location <br/><br/>If the template file is stored on a network location: <br/>• Use a digital signature and trust the publisher  <br/>• Trust the location of the template file *(see the approaches under "Files centrally located on a network share or trusted website")* <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
@@ -117,7 +117,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 ## Guidance on allowing VBA macros to run in files you trust
 
-### Removing Mark of the Web from a file saved to the local device
+### Remove Mark of the Web from a file
 
 For an individual file downloaded from an internet location, the simplest way to unblock macros is to remove Mark of the Web. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
@@ -144,7 +144,7 @@ For example, if users are accessing a network share by using its IP address, mac
 
 For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
 
-![Trusted sites dialog](../images/security/trusted-sites-dialog.png)
+![Trusted sites dialog](../images/security/trusted-sites-dialog-example.png)
 
 If you want to add URLs that begin with http:// or network shares, clear the **Require server verification (https:) for all sites in this zone** checkbox.
 
