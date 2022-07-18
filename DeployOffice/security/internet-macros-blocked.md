@@ -50,7 +50,7 @@ The following table list different common scenarios and possible approaches to t
 
 |Scenario| Possible approaches to take|
 |---------|---------|
-|Individual files <br/> *(for example, email attachments)* |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Remove Mark of the Web from a file](#remove-mark-of-the-web-from-a-file). |
+|Individual files <br/>  |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Remove Mark of the Web from a file](#remove-mark-of-the-web-from-a-file). |
 |Files centrally located on a network share or trusted website|Unblock the file using an approach listed under "Individual files."<br/><br/> If there isn't an **Unblock** checkbox and you want to trust all files in that network location: <br/>• Designate the location as a Trusted site<br/> • Add the location to the **Local intranet** zone <br/><br/> For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).|
 |Files stored on OneDrive or SharePoint, including a site used by a Teams channel|• Have users directly open the file by using the **Open in Desktop App** option <br/> • If users download the file locally before opening it, remove Mark of the Web from the local copy of the file *(see the approaches under "Individual files")*<br/>• Designate the location as a Trusted site <br/> <br/> For more information, see [Files on OneDrive or SharePoint](#files-on-onedrive-or-sharepoint). |
 |Macro-enabled template files for Word, PowerPoint, and Excel|If the template file is stored on the user's device:<br/> • Remove Mark of the Web from the template file *(see the approaches under "Individual files")*  <br/>• Save the template file to a Trusted Location <br/><br/>If the template file is stored on a network location: <br/>• Use a digital signature and trust the publisher  <br/>• Trust the template file *(see the approaches under "Files centrally located on a network share or trusted website")* <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
@@ -119,7 +119,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 ### Remove Mark of the Web from a file
 
-For an individual file downloaded from an internet location, the simplest way to unblock macros is to remove Mark of the Web. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
+For an individual file, such as a file downloaded from an internet location or an email attachment the user has saved to their local device, the simplest way to unblock macros is to remove Mark of the Web. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
 ![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
 
@@ -127,7 +127,7 @@ For an individual file downloaded from an internet location, the simplest way to
 > - In some cases, usually for files on a network share, users might not see the **Unblock** checkbox for a file where macros are being blocked. For those cases, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
 > - Even if the **Unblock** checkbox is available for a file on a network share, selecting the checkbox won’t have any effect if the share is considered to be in the **Internet** zone. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
-You can also use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file. For more information about the ZoneID value, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+You can also use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file. For more information about the ZoneId value, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
 ### Files centrally located on a network share or trusted website
 
@@ -152,7 +152,6 @@ If you want to add URLs that begin with http:// or network shares, clear the **R
 > Because macros aren’t blocked in files from these locations, you should manage these locations carefully. Be sure you control who is allowed to save files to these locations.
 
 You can use Group Policy and the "Site to Zone Assignment List" policy to add locations as trusted sites or to the **Local intranet** zone for Windows devices in your organization. This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
-
 
 ### Files on OneDrive or SharePoint
 
@@ -254,9 +253,9 @@ Here's a list of ZoneId values and what zone they map to.
 - 3 = Internet
 - 4 = Restricted sites
 
-For example, if the ZoneID is 2, VBA macros in that file won't be blocked by default. But if the ZoneID is 3, macros in that file will be blocked by default.
+For example, if the ZoneId is 2, VBA macros in that file won't be blocked by default. But if the ZoneId is 3, macros in that file will be blocked by default.
 
-You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneID value from the file. Removing the ZoneID value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
+You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
 
 ## Use the Readiness Toolkit to identify files with VBA macros that might be blocked
 
