@@ -26,7 +26,7 @@ The following information outlines what you can expect from this feature. For yo
 
 ## What is the Workplace Discount Program?
 
-The Workplace Discount Program is an employee purchase program for Microsoft’s valued customers. The Workplace Discount Program provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft. You don't need to take any other steps to activate the benefit for your users. If you're unsure of whether your organization is eligible for this program, visit [https://www.microsoft.com/workplace-discount-program/faq](https://www.microsoft.com/workplace-discount-program/faq).
+The Workplace Discount Program is an employee purchase program for Microsoft’s valued customers. The Workplace Discount Program provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft. You don't need to take any other steps to activate the benefit for your users. If you're unsure of whether your organization is eligible for this program, see [Microsoft Workplace Discount Program FAQs](https://www.microsoft.com/workplace-discount-program/faq).
 
 Ensure your custom domains are added in Azure Active Directory. Employees with email addresses that use the domain you add will be eligible for the Workplace Discount Program. For instructions on how to add custom domains, see [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain).
 
@@ -44,7 +44,7 @@ If enabled, users will see one notification total per month across all their app
 
 When the user selects **Learn more and sign up**, they'll be taken to the [Workplace Discount Program webpage](https://www.microsoft.com/workplace-discount-program) where they can learn more about the program and sign up for it if they would like. Their subscription will be separate from any organizational subscription enabled by you.
 
-End users will be able to opt out of all Workplace Discount Program messaging on their device by clicking on the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
+End users will be able to opt out of all Workplace Discount Program messaging on their device by selecting the **Don’t tell me about this again** button on any notification. This opt-out is device-specific.
 
 ## How to turn off notifications about the Workplace Discount Program
 
