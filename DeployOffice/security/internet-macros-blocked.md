@@ -138,7 +138,7 @@ If you have your users access files from a trusted website or an internal file s
 
 > [!NOTE]
 > - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
-> - For the **Local intranet**zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
+> - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
 > - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
 
 For example, if users are accessing a network share by using its IP address, macros in those files will be blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
