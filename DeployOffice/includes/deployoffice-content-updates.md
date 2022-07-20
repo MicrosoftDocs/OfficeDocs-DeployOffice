@@ -2,6 +2,15 @@
 
 
 
+## Week of July 11, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/12/2022 | [Overview of Cloud Policy service for Microsoft 365](/DeployOffice/admincenter/overview-cloud-policy) | renamed |
+| 7/12/2022 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+
+
 ## Week of July 04, 2022
 
 
@@ -28,13 +37,3 @@
 | 6/22/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
 | 6/23/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
 | 6/23/2022 | [Trusted Locations for Office files](/DeployOffice/security/trusted-locations) | modified |
-
-
-## Week of June 06, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/6/2022 | [View software update status for Microsoft 365 Apps installations](/DeployOffice/updates/software-update-status) | added |
-| 6/6/2022 | [Keep Office apps up to date with the latest updates](/DeployOffice/updates/update-basics) | added |
-| 6/6/2022 | [Security baseline for Microsoft 365 Apps for enterprise](/DeployOffice/security/security-baseline) | added |
