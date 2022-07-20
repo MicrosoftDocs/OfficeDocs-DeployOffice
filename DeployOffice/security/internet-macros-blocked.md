@@ -69,7 +69,7 @@ The following table shows the forecasted schedule of when this change will be av
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
-|Current Channel|Version 2206|Begin rolling out on July 25, 2022|
+|Current Channel|Version 2206|Begin rolling out on July 27, 2022|
 |Monthly Enterprise Channel|*To be determined*|*To be determined*|
 |Semi-Annual Enterprise Channel (Preview)|*To be determined*|*To be determined*|
 |Semi-Annual Enterprise Channel |*To be determined*|*To be determined*|
@@ -135,6 +135,10 @@ If you have your users access files from a trusted website or an internal file s
 
 - Designate the location as a Trusted site
 - If the network location is on the intranet, add the location to the **Local intranet** zone
+
+> [!NOTE]
+> - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
+> - For the Local intranet zone approach, we recommend you save the files to a location that’s already considered part of the Local intranet zone, instead of adding new locations to that zone.
 
 For example, if users are accessing a network share by using its IP address, macros in those files will be blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
 
