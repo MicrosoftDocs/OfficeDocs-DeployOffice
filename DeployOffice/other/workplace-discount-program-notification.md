@@ -40,7 +40,7 @@ This notification will be automatically enabled for users in your organization w
 
 If enabled, users will see one notification total per month across all their apps and devices. The notification will be similar to the following screenshot, localized to the language setting of the user’s device.
 
-![Screenshot showing a document in Word, with a message about the Workplace Discount Program showing underneath the ribbon.](../images/other/home-use-program-notification.png)
+![Screenshot showing a document in Word, with a message about the Workplace Discount Program showing underneath the ribbon.](../images/other/workplace-discount-program-notification.png)
 
 When the user selects **Learn more and sign up**, they'll be taken to the [Workplace Discount Program webpage](https://www.microsoft.com/workplace-discount-program) where they can learn more about the program and sign up for it if they would like. Their subscription will be separate from any organizational subscription enabled by you.
 

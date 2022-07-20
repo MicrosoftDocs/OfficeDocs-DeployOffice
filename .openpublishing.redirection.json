@@ -652,7 +652,7 @@
     },
     {
       "source_path": "DeployOffice/other/home-use-program.md",
-      "redirect_url": "/deployoffice/other/home-use-program-notification",
+      "redirect_url": "/deployoffice/other/workplace-discount-program-notification",
       "redirect_document_id": true
     },
     {
@@ -722,7 +722,7 @@
     },
     {
       "source_path": "DeployOffice/other/home-use-program-preview.md",
-      "redirect_url": "/deployoffice/other/home-use-program-notification",
+      "redirect_url": "/deployoffice/other/workplace-discount-program-notification",
       "redirect_document_id": false
     },
     {
@@ -793,6 +793,11 @@
     {
       "source_path": "DeployOffice/admincenter/overview-office-cloud-policy-service.md",
       "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/deployoffice/other/home-use-program-notification.md",
+      "redirect_url": "/deployoffice/other/workplace-discount-program-notification",
       "redirect_document_id": false
     }
   ]
