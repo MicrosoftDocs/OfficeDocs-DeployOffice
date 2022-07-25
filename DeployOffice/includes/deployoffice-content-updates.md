@@ -2,6 +2,15 @@
 
 
 
+## Week of July 18, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/20/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
+| 7/20/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/home-use-program-notification) | modified |
+
+
 ## Week of July 11, 2022
 
 
