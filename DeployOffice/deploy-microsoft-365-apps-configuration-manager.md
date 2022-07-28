@@ -42,7 +42,7 @@ If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) 
 
 This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
 
-We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Microsoft 365 (formerly Office 365) enterprise plans or Microsoft 365 business plans, along with paid Government, Kiosk, and Nonprofit SKUs.
+We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Microsoft 365 (or Office 365) enterprise plans or Microsoft 365 business plans, along with paid Government, Kiosk, and Nonprofit SKUs.
 
 ## Best practices
 
