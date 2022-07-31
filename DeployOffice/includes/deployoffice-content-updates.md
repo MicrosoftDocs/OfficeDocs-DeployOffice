@@ -2,6 +2,14 @@
 
 
 
+## Week of July 25, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/28/2022 | [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
+
+
 ## Week of July 18, 2022
 
 
@@ -36,13 +44,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 6/27/2022 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
-
-
-## Week of June 20, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/22/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 6/23/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-| 6/23/2022 | [Trusted Locations for Office files](/DeployOffice/security/trusted-locations) | modified |
