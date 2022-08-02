@@ -38,7 +38,7 @@ The following are the five new policy settings:
 - Allow the use of additional optional connected experiences in Office
 - Allow the use of connected experiences in Office
 
-These policy settings can be implemented by using either Group Policy or the [Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
+These policy settings can be implemented by using either Group Policy or [Cloud Policy](../admincenter/overview-cloud-policy.md). If you’re using Group Policy, you need to download the most current version of the Administrative Template files (ADMX/ADML) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - For information on how to manage privacy controls for Office for Mac, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
@@ -123,7 +123,7 @@ These connected experiences are different because they are not covered by your o
 You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these optional connected experiences will be available to your users.
 
 > [!NOTE]
-> To apply the *Allow the use of additional optional connected experiences in Office* policy setting to volume licensed versions of Office 2019, Project 2019, or Visio 2019, you must use Group Policy. You can't use the Office cloud policy service. This applies to when Office 2019, Project 2019, or Visio 2019 is configured to use the PerpetualVL2019 update channel.
+> To apply the *Allow the use of additional optional connected experiences in Office* policy setting to volume licensed versions of Office 2019, Project 2019, or Visio 2019, you must use Group Policy. You can't use Cloud Policy. This applies to when Office 2019, Project 2019, or Visio 2019 is configured to use the PerpetualVL2019 update channel.
 
 Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
 
@@ -207,7 +207,7 @@ The following are new elements added to the Office UI:
  
 ## Control privacy settings by editing the registry
 
-Some admins prefer to change settings directly in the registry, for example by using a script, instead of by using Group Policy or the Office cloud policy service. You can use the following information to configure privacy settings directly in the registry.
+Some admins prefer to change settings directly in the registry, for example by using a script, instead of by using Group Policy or Cloud Policy. You can use the following information to configure privacy settings directly in the registry.
 
 
 |**Policy setting** |**Registry setting**  |**Values**  |

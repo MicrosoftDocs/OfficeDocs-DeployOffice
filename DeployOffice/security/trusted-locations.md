@@ -89,7 +89,7 @@ There are several policies that you can use to manage Trusted Locations in your 
 - [Allow Trusted Locations on the network](#allow-trusted-locations-on-the-network-policy)
 - [Disable all trusted locations](#disable-all-trusted-locations-policy)
 
-You can use the Office cloud policy service, the Microsoft Endpoint Manager admin center, or the Group Policy Management Console to configure and deploy policy settings to users in your organization. For more information, see [Tools available to manage policies](internet-macros-blocked.md#tools-available-to-manage-policies).
+You can use Cloud Policy, the Microsoft Endpoint Manager admin center, or the Group Policy Management Console to configure and deploy policy settings to users in your organization. For more information, see [Tools available to manage policies](internet-macros-blocked.md#tools-available-to-manage-policies).
 
 > [!NOTE]
 > For volume licensed versions of Office 2016, such as Office Professional Plus 2016, you can use the Office Customization Tool (OCT) to configure Trusted Locations. For more information, see [Office Customization Tool (OCT) 2016 Help: Office security settings](../oct/oct-2016-help-office-security-settings.md).
