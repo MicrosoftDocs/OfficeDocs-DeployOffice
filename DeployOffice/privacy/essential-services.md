@@ -3959,11 +3959,11 @@ The following fields are collected:
 
 - **ActivateButtonClick** - bool – User clicks on activate button on Free Pass UI
 
+- **ActivatedGraceLicenseKey** - bool – Grace license activated
+
 - **CancelButtonClick** - bool – User clicks on cancel button on Free Pass UI
 
 - **SkipButtonClick** - bool – User clicks on skip button on Free Pass UI
-
-- **ActivatedGraceLicenseKey** - bool – Grace license activated
 
 
 ### Office.Apple.Licensing.PremiumFeatureUpsell
