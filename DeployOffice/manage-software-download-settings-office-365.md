@@ -51,7 +51,7 @@ Keep in mind that moving to a different update channel can also change which fea
 > [!NOTE]
 > - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization.
 >
-> - For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+> - For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
@@ -66,7 +66,7 @@ You can also, in certain situations, roll back devices in your organization to a
 This capability is available to you on the **Version management** tab in the Microsoft 365 admin center, under **Settings** > **Org settings** > **Services** > **Office installation options**. The **Version management** tab is only shown if you have chosen Monthly Enterprise Channel for feature updates on the **Installation options** tab. You can only manage versions of Office that are installed on devices running Windows.
 
 > [!NOTE]
-> - Your choices on the **Version management** tab won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Office cloud policy service), Microsoft Endpoint Configuration Manager, or Microsoft Intune.
+> - Your choices on the **Version management** tab won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Endpoint Configuration Manager, or Microsoft Intune.
 >
 > - If you’re using the Office Deployment Tool to manage Office on devices in your organization, but none of the other methods mentioned in the previous bullet point, then your choices on the **Version management** tab will apply to devices in your organization.
 >

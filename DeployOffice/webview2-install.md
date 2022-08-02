@@ -44,7 +44,7 @@ To prevent the automatic installation of WebView2 Runtime, sign in to the Micros
 
 > [!NOTE]
 > - Clearing the check box won’t remove WebView2 Runtime from devices on which it has already been installed. Only new installations of WebView2 Runtime are prevented.
-> - There is no policy setting (for Group Policy or the Office cloud policy service) to turn off the automatic installation of the WebView2 Runtime.
+> - There is no policy setting (for Group Policy or Cloud Policy) to turn off the automatic installation of the WebView2 Runtime.
 
 If you want to deploy WebView2 Runtime to devices in your organization on your own schedule, you can download it from https://developer.microsoft.com/microsoft-edge/webview2/#download-section. You should use either the Evergreen Bootstrapper or the Evergreen Standalone Installer, depending on your deployment needs.
 
