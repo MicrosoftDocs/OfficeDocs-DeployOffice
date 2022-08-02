@@ -389,7 +389,7 @@ The following table shows the choices users can make under **Macro Settings** an
 
 There are several tools available to you to configure and deploy policy settings to users in your organization.
 
-- [Cloud Policy](#office-cloud-policy-service)
+- [Cloud Policy](#cloud-policy)
 - [Microsoft Endpoint Manager admin center](#microsoft-endpoint-manager-admin-center)
 - [Group Policy Management Console](#group-policy-management-console)
 
