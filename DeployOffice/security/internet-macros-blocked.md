@@ -389,17 +389,17 @@ The following table shows the choices users can make under **Macro Settings** an
 
 There are several tools available to you to configure and deploy policy settings to users in your organization.
 
-- [Office cloud policy service](#office-cloud-policy-service)
+- [Cloud Policy](#office-cloud-policy-service)
 - [Microsoft Endpoint Manager admin center](#microsoft-endpoint-manager-admin-center)
 - [Group Policy Management Console](#group-policy-management-console)
 
-### Office cloud policy service
+### Cloud Policy
 
-You can use the Office cloud policy service to configure and deploy policy settings to devices in your organization, even if the device isn't domain joined. The Office cloud policy service is a web-based tool and is found in the [Microsoft 365 Apps admin center](https://config.office.com).
+You can use Cloud Policy to configure and deploy policy settings to devices in your organization, even if the device isn't domain joined. Cloud Policy is a web-based tool and is found in the [Microsoft 365 Apps admin center](https://config.office.com).
 
-In the Office cloud policy service, you create a policy configuration, assign it to a group, and then select policies to be included in the policy configuration. To select a policy to include, you can search by the name of the policy. The Office cloud policy service also shows which policies are part of the Microsoft recommended security baseline. The policies available in the Office cloud policy service are the same User Configuration policies that are available in the Group Policy Management Console.
+In Cloud Policy, you create a policy configuration, assign it to a group, and then select policies to be included in the policy configuration. To select a policy to include, you can search by the name of the policy. Cloud Policy also shows which policies are part of the Microsoft recommended security baseline. The policies available in Cloud Policy are the same User Configuration policies that are available in the Group Policy Management Console.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
+For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ### Microsoft Endpoint Manager admin center
 
