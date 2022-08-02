@@ -40,14 +40,14 @@ For more information about diagnostic data and connected experiences, see [Overv
 These new preference settings are CFPreferences API compatible and can be set using the `defaults` command in Terminal, or enforced through a Configuration Profile or Mobile Device Management (MDM) server. When the preferences are enforced, the user cannot change the values, and any in-app controls will appear disabled.
 
 > [!NOTE]
-> You can also use the Office cloud policy service and these 5 policy settings:
+> You can also use Cloud Policy and these 5 policy settings:
 > - Configure the level of client software diagnostic data sent by Office to Microsoft
 > - Allow the use of connected experiences in Office that analyze content
 > - Allow the use of connected experiences in Office that download online content
 > - Allow the use of additional optional connected experiences in Office
 > - Allow the use of connected experiences in Office
 >
-> For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).
+> For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 
 ## Preference setting for diagnostic data
