@@ -1935,6 +1935,8 @@ The following fields are collected across iOS and Android:
 
 - **is_people_slab_displayed** - Whether the search suggestion selected was displaying the people slab.
 
+- **is_query_empty** - Whether the user search or suggestion query is empty. 
+
 - **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
 
 - **result_selected_type** - What type of data that was displayed is the user interacting with, for example, see all contact, conversations, event, etc. 
@@ -13535,6 +13537,29 @@ The following fields are collected:
 - **ProcessName** - name of the Office application executable the hang occurred in, e.g. excel.exe.
 
 - **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed to be running at the point the hang occurred.
+
+
+#### Office.Performance.OPerfMon.Profile
+
+Collected when an Office application experiences unexpectedly poor performance in a critical end user feature, resulting in a poor user experience and/or hang of the user interface. The collected data is used to assess prevalence, impact, and assist in root cause analysis of hangs or poor performance experienced by customers so that they can be addressed by the product team.
+
+The following fields are collected:
+
+- **ActivityName** - additional context data related to the problematic feature. Name of the feature or user activity that exhibited the performance issue.
+
+- **DurationMs** - duration of the hang in milliseconds.
+
+- **InsightId** - Unique identifier (GUID) generated on creation of this event payload.
+
+- **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
+
+- **ProcessName** - name of the Office application executable the issue occurred in, e.g. excel.exe.
+
+- **SourceSessionId** - Office SessionId the issue occurred in.
+
+- **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed during the execution of the feature experiencing the poor performance.
+
+- **TypeId** - Internal identifier specifying the type of performance issue identified (e.g. UI Hang, Slow Performance)
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
