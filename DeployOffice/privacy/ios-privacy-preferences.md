@@ -47,15 +47,15 @@ The dictionary is represented as a set of key/value pairs in XML format. For exa
 Once sent to the device, the configuration dictionary will reside under the `com.apple.managed.configuration` key, where it will be read when the Office application is launched.
 
 > [!NOTE]
-> You can also use the Office cloud policy service and these 4 policy settings:
+> You can also use Cloud Policy and these 4 policy settings:
 > - Configure the level of client software diagnostic data sent by Office to Microsoft
 > - Allow the use of connected experiences in Office that analyze content
 > - Allow the use of connected experiences in Office that download online content
 > - Allow the use of additional optional connected experiences in Office
 >
-> Privacy settings for Outlook for iOS and OneDrive for iOS can only be configured by using the Office cloud policy service.
+> Privacy settings for Outlook for iOS and OneDrive for iOS can only be configured by using Cloud Policy.
 >
-> For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).
+> For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ## Preference setting for diagnostic data
 
