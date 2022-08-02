@@ -13553,13 +13553,13 @@ The following fields are collected:
 
 - **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
 
-- **ProcessName** - name of the Office application executable the issue occurred in, e.g. excel.exe.
+- **ProcessName** - name of the Office application executable the issue occurred in. For example, excel.exe.
 
 - **SourceSessionId** - Office SessionId the issue occurred in.
 
 - **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed during the execution of the feature experiencing the poor performance.
 
-- **TypeId** - Internal identifier specifying the type of performance issue identified (e.g. UI Hang, Slow Performance)
+- **TypeId** - Internal identifier specifying the type of performance issue identified (for example, UI Hang, Slow Performance)
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
