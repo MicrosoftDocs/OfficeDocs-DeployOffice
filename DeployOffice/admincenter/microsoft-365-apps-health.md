@@ -111,9 +111,6 @@ Common scenarios where this view can help include:
 
 ### Add-in health
 
-> [!NOTE]
-> Information about public add-ins is available for this view. But information about private add-ins is still being rolled out to customers.
-
 The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization.
 
 Add-ins can be downloaded and installed to provide additional capabilities and functionality to Office apps, such as Word and Excel. There are usually two sources of add-ins:
@@ -140,8 +137,7 @@ For information about public and private add-ins to appear in the **Add-in healt
 
 - Use the [inventory feature](inventory.md) in the Microsoft 365 Apps admin center
 - Send at least [required diagnostic data](../privacy/required-diagnostic-data.md) to Microsoft
-- Use at least Version 2107 of Microsoft 365 Apps (for public add-ins)
-- Use at least Version 2112 of Microsoft 365 Apps (for private add-ins)
+- Use at least Version 2112 of Microsoft 365 Apps
 
 Information about private add-ins is sent to the same geographical location as the customer’s Exchange mailbox to be processed by Microsoft. For private add-ins, you can submit a Data Subject Request (DSR) under the General Data Protection Regulation (GDPR) by contacting the [Privacy Response Center](https://www.microsoft.com/concern/privacy) at Microsoft. Public add-in data is sent to the United States to be processed by Microsoft.
 

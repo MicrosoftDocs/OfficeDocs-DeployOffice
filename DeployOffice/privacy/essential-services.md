@@ -3841,6 +3841,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **cardsVisited** - Int – number of displayed feature cards the user has seen
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
+   - **graceLeftoverDays** - Int – number of days left for grace period
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
@@ -3942,6 +3943,27 @@ The following fields are collected:
 - **SKUIsProClassDisplay** - Boolean: If the users’ device is a pro-class display (Screen size greater than 10.1 inch) 
 
 - **SKUShowCPC** - Boolean: If CPC SKU Chooser is to be shown to the user
+
+
+### Office.Apple.Licensing.GracePeriodForPremiumIpad
+
+This event is triggered when the user lands on the "You're Eligible for Free Pass" user interface (UI) and clicks any of the call-to-action buttons:
+
+- "Cancel" button on right top corner
+- "Activate Free Pass" button in the center
+- "Skip" button on bottom center.
+
+The data is used to ensure that the feature is working as expected and the users are able to get the Free Pass license key if they opt for it. 
+
+The following fields are collected:
+
+- **ActivateButtonClick** - bool – User clicks on activate button on Free Pass UI
+
+- **ActivatedGraceLicenseKey** - bool – Grace license activated
+
+- **CancelButtonClick** - bool – User clicks on cancel button on Free Pass UI
+
+- **SkipButtonClick** - bool – User clicks on skip button on Free Pass UI
 
 
 ### Office.Apple.Licensing.PremiumFeatureUpsell
