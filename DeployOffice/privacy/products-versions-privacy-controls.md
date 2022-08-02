@@ -69,7 +69,7 @@ For those versions of Office apps on Windows devices, the following privacy cont
 
 Some Office products might not have certain types of connected experiences, so some privacy controls won’t be relevant.
 
-To configure these privacy controls for your users that are using Office on Windows devices in your organization, you can use Group Policy or the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
+To configure these privacy controls for your users that are using Office on Windows devices in your organization, you can use Group Policy or Cloud Policy. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md).
 
 > [!NOTE]
 > The following *volume licensed* versions of Office, Project, and Visio only support the "Allow the use of additional optional connected experiences in Office" privacy control. 
@@ -110,7 +110,7 @@ For those versions of Office apps on Mac devices, the following privacy controls
 
 Some Office products might not have certain types of connected experiences, so some privacy controls won’t be relevant.
 
-To configure these privacy controls for your users that are using Office on Mac devices in your organization, you can use preferences or the Office cloud policy service. For more information, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
+To configure these privacy controls for your users that are using Office on Mac devices in your organization, you can use preferences or Cloud Policy. For more information, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 
 ## Office on iOS devices
 
@@ -140,7 +140,7 @@ For those versions of Office apps on iOS devices, the following privacy controls
 
 Some Office products might not have certain types of connected experiences, so some privacy controls won’t be relevant.
 
-To configure these privacy controls for your users that are using Office on iOS devices in your organization, you can use preferences or the Office cloud policy service. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md).
+To configure these privacy controls for your users that are using Office on iOS devices in your organization, you can use preferences or Cloud Policy. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md).
 
 ## Office on Android devices
 
@@ -169,7 +169,7 @@ For those versions of Office apps on Android devices, the following privacy cont
 
 Some Office products might not have certain types of connected experiences, so some privacy controls won’t be relevant.
 
-To configure these privacy controls for your users that are using Office on Android devices in your organization, you need to use the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md).
+To configure these privacy controls for your users that are using Office on Android devices in your organization, you need to use Cloud Policy. For more information, see [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md).
 
 ## Office for the web
 
@@ -187,7 +187,7 @@ For Office on the web, the following privacy controls are available:
 
 - Allow the use of additional optional connected experiences in Office
 
-To configure this privacy control for your users that are using Office on the web, you need to use the Office cloud policy service. For more information, see [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md).
+To configure this privacy control for your users that are using Office on the web, you need to use Cloud Policy. For more information, see [Use policy settings to manage privacy controls for Office for the web applications](office-web-privacy-controls.md).
 
 ## Related articles
 
