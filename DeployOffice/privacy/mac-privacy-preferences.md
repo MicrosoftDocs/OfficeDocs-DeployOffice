@@ -49,7 +49,6 @@ These new preference settings are CFPreferences API compatible and can be set us
 >
 > For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
-
 ## Preference setting for diagnostic data
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. For more information, see [Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
@@ -104,7 +103,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 ## Preference setting for optional connected experiences
 
-In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, the LinkedIn features of the Resume Assistant in Word or the Weather Bar in Outlook, which uses MSN Weather. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, similarity checker (a feature of Editor), which relies on Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 |Category|Details|
 |:-----|:-----|

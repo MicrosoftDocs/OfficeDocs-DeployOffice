@@ -116,7 +116,7 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 ### Policy setting for optional connected experiences
 
-In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third-party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
@@ -170,9 +170,7 @@ As you probably already know, there are some existing policy settings that allow
 
 - *Turn off QuickStarter*, under User Configuration\\Policies\\Administrative Templates\\Microsoft PowerPoint 2016\\PowerPoint Options\\General
 
-- *Allow LinkedIn Resume Assistant feature*, under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\General
-
- You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting. For example, if you enable the *Allow LinkedIn Resume Assistant feature* policy setting, but disable the *Allow the use of connected experiences in Office* policy setting, the LinkedIn Resume Assistant won’t be available to your users.
+You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting.
 
 In general, if one policy setting is configured to turn on a specific connected experience while at the same time another policy setting is configured to turn off that type of connected experience, then that specific connected experience is turned off for your users.
 
