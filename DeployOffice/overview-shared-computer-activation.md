@@ -69,6 +69,9 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
+> [!NOTE]
+> There is a known issue where, on devices with both shared computer activation and viewer mode enabled, licensed users are incorrectly placed in [viewer mode](overview-viewer-mode.md). This issue is fixed in Version 2205 and later.
+
 <a name="Works"> </a>
 
 ## How shared computer activation works for Microsoft 365 Apps
