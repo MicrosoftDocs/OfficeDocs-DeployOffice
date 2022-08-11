@@ -40,6 +40,11 @@ In addition, Office will be configured to get updates automatically from Microso
 
 These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install from the **My account** page in the portal. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
 
+> [!TIP]
+> - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../admincenter/inventory.md) feature.
+> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you create a [servicing profile](../admincenter/servicing-profile.md) in the Microsoft 365 Apps admin center.
+
+
 ## What is Monthly Enterprise Channel?
 
 On Monthly Enterprise Channel, new or updated features are released on the second Tuesday of every month. Additionally, monthly releases might also contain security updates and non-security updates, such as stability or performance improvements for Office.
