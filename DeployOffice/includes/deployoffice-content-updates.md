@@ -2,6 +2,17 @@
 
 
 
+## Week of August 01, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/2/2022 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 8/2/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 8/2/2022 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
+| 8/2/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
+
+
 ## Week of July 25, 2022
 
 
@@ -36,11 +47,3 @@
 | 7/7/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
 | 7/8/2022 | [Windows 8.1 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-81-support) | added |
 | 7/8/2022 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
-
-
-## Week of June 27, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/27/2022 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
