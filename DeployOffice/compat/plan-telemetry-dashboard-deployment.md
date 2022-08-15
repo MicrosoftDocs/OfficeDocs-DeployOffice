@@ -17,7 +17,7 @@ description: "Learn about components and sizing, topology, hardware, and bandwid
 ***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 > [!IMPORTANT]
-> Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
   
 When you deploy Office Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the processor and other components that deliver the data to Office Telemetry Dashboard. It's also important to understand the supported limits for Office Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design an Office Telemetry Dashboard topology that is sized appropriately for your organization.
   
