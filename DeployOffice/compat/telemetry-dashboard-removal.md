@@ -14,31 +14,32 @@ description: "Notification to Office admins that Office Telemetry Dashboard is b
 
 # Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise
 
-Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise. 
+> [!IMPORTANT]
+> - Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in Current Channel in August 2022. *(Version 2208 is expected to be available in Semi-Annual Enterprise Channel in January 2023.)*
+> - Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise in a future version, but that version hasn't been determined yet.
 
-The first version of Microsoft 365 Apps for enterprise without Office Telemetry Dashboard will be Version 2208. This version is expected to be available in Current Channel in the second half of August 2022. For more information on the release schedule, see [When will Office Telemetry Dashboard be removed?](#when-will-office-telemetry-dashboard-be-removed)
-
-For more information about what happens to the Office Telemetry Dashboard components, see [What happens when Office Telemetry Dashboard is removed?](#what-happens-when-office-telemetry-dashboard-is-removed)
+Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise. For more information about what happens to the Office Telemetry Dashboard components, see [What happens when Office Telemetry Dashboard is removed?](#what-happens-when-office-telemetry-dashboard-is-removed)
 
 ## When will Office Telemetry Dashboard be removed?
 
-Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise starting with Version 2208. 
+> [!NOTE]
+> - Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise in a future version, but that version hasn't been determined yet. 
+> - Once that version is determined, we'll update the table in this section with the relevant details.
 
 The date when Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise depends on which update channel you're using. The following table shows the forecasted schedule. The information in italics in the table is subject to change.
 
 |Update channel  | Version |Release date  |
 |---------|---------|---------|
-|Current Channel | Version 2208 | *Second half of August 2022*|
-|Monthly Enterprise Channel  | *Version 2208* | *To be determined*|
-|Semi-Annual Enterprise Channel (Preview) |*Version 2208*|*September 13, 2022*| 
-|Semi-Annual Enterprise Channel |*Version 2208* |*January 10, 2023* |
-
+|Current Channel |*To be determined*  |*To be determined* |
+|Monthly Enterprise Channel  | *To be determined* | *To be determined*|
+|Semi-Annual Enterprise Channel (Preview) |*To be determined*|*To be determined*|
+|Semi-Annual Enterprise Channel |*To be determined* |*To be determined* |
 
 ## Which versions of Office are affected?
 
-Office Telemetry Dashboard is being removed *only* from versions of Microsoft 365 Apps for enterprise, starting with Version 2208.
+Office Telemetry Dashboard is being removed *only* from versions of Microsoft 365 Apps for enterprise.
 
-Office Telemetry Dashboard is *not* being removed from perpetual versions of Office, such as Office Professional Plus 2019. For those versions, Office Telemetry Dashboard will be supported as long as that version of Office is supported. 
+Office Telemetry Dashboard is *not* being removed from perpetual versions of Office, such as Office Professional Plus 2019. For those versions, Office Telemetry Dashboard will be supported as long as that version of Office is supported.
 
 The following table lists the end of support dates for perpetual versions of Office that include Office Telemetry Dashboard.
 
@@ -53,32 +54,31 @@ The following table lists the end of support dates for perpetual versions of Off
 
 ## What happens when Office Telemetry Dashboard is removed?
 
-When you update to Version 2208 or later of Microsoft 365 Apps for enterprise, some Office Telemetry Dashboard components will be uninstalled automatically. Other components will need to be removed manually. All components will become unsupported.
+When you update to the version of Microsoft 365 Apps for enterprise where Office Telemetry dashboard is removed, some Office Telemetry Dashboard components will be uninstalled automatically. Other components will need to be removed manually. All components will become unsupported.
 
 #### Office Telemetry Agent
 
-The Office Telemetry Agent will be uninstalled automatically from devices running Version 2208 or later.
+The Office Telemetry Agent will be uninstalled automatically from devices.
 
 #### Telemetry Dashboard for Office
 
-The Telemetry Dashboard for Office (the Excel workbook) will be uninstalled automatically from devices running Version 2208 or later. 
+The Telemetry Dashboard for Office (the Excel workbook) will be uninstalled automatically.
 
 #### Office Telemetry Processor
 
-The Office Telemetry Processor will no longer be needed. You will need to remove it manually from devices on which it's installed. 
+The Office Telemetry Processor will no longer be needed. You'll need to remove it manually from devices on which it's installed.
 
 #### Shared folder
 
-The shared folder, which is used by the Office Telemetry Agent and the Office Telemetry Processor, will no longer be needed. You will need to remove it manually.
+The shared folder, which is used by the Office Telemetry Agent and the Office Telemetry Processor, will no longer be needed. You'll need to remove it manually.
 
 #### Database
 
-The SQL Server database, which stores the information used by Office Telemetry Dashboard, will no longer be needed. You will need to remove it manually.
+The SQL Server database, which stores the information used by Office Telemetry Dashboard, will no longer be needed. You'll need to remove it manually.
 
 #### Office Telemetry Log
 
-[Office Telemetry Log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) is not being removed and will still be available on client devices running Windows.
-
+[Office Telemetry Log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) isn't being removed and will still be available on client devices running Windows.
 
 ## What is the replacement for Office Telemetry Dashboard?
 
