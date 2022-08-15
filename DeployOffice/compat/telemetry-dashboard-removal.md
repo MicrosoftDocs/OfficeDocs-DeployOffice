@@ -33,7 +33,7 @@ The date when Office Telemetry Dashboard will be removed from Microsoft 365 Apps
 |Current Channel |*To be determined*  |*To be determined* |
 |Monthly Enterprise Channel  | *To be determined* | *To be determined*|
 |Semi-Annual Enterprise Channel (Preview) |*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel |*To be determined* |**To be determined* |
+|Semi-Annual Enterprise Channel |*To be determined* |*To be determined* |
 
 ## Which versions of Office are affected?
 
