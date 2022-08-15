@@ -48,11 +48,11 @@ End users will be able to opt out of all Workplace Discount Program messaging on
 
 ## How to turn off notifications about the Workplace Discount Program
 
-The notifications can be controlled by a policy that can be configured by using Cloud Policy or Group Policy. The policy is named *Show in-product notifications for the Microsoft Home Use Program*.
+The notifications can be controlled by a policy that can be configured by using Cloud Policy or Group Policy. The policy is named *Show in-product notifications for the Microsoft Workplace Discount Program*.
 
 > [!NOTE]
-> - We'll be updating the name of this policy to *Show in-product notifications for the Microsoft Workplace Discount Program* in the near future. 
-> - Only the name of the policy is changing. How the policy works isn't changing.
+> - The policy was previously named *Show in-product notifications for the Microsoft Home Use Program*. 
+> - Only the name of the policy changed. How the policy works hasn't changed.
 
 You can configure this policy for some or all of your users, and you can configure the policy before or after the notifications begin appearing.
 
@@ -62,11 +62,11 @@ If you want users in your organization who aren't in the United States to receiv
 
 For instructions on how to use Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
-In Cloud Policy, search for the *Show in-product notifications for the Microsoft Home Use Program* policy, and then set it to Disabled.
+In Cloud Policy, search for the *Show in-product notifications for the Microsoft Workplace Discount Program* policy, and then set it to Disabled.
 
 ### Use Group Policy to turn off notifications about the Workplace Discount Program
 
-To disable the *Show in-product notifications for the Microsoft Home Use Program* policy by using Group Policy, [download the Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. You must be using at least version 5086.1000 of the Administrative Template files, which were released on October 22, 2020.
+To disable the *Show in-product notifications for the Microsoft Workplace Discount Program* policy by using Group Policy, [download the Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center.
 
 You can find this policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous.
 

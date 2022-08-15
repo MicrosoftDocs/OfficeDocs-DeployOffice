@@ -69,6 +69,9 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
+> [!NOTE]
+> There is a known issue where, on devices with both shared computer activation and viewer mode enabled, licensed users are incorrectly placed in [viewer mode](overview-viewer-mode.md). This issue is fixed in Version 2205 and later.
+
 <a name="Works"> </a>
 
 ## How shared computer activation works for Microsoft 365 Apps
@@ -109,6 +112,8 @@ If the user doesn't log on to the shared computer for 30 days, the licensing tok
 **Reduced functionality mode** If the user is not licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. This means that the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
     
    ![Reduced functionality.](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
+
+*(For Version 2205 and later)* If [viewer mode](overview-viewer-mode.md) is enabled on the device, then the user will be placed in viewer mode instead of reduced functionality mode.
   
 **Activation limits** Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
     
