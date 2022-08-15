@@ -33,12 +33,12 @@ If you don't want users installing Office themselves, you can [manually deploy O
 
 You can choose how often you want your users to get feature updates for the Office apps installed on devices running Windows. For example, you can provide new features as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 > [!NOTE]
-> If your tenant was created after August 16, 2022, you won't see an option to choose Semi-Annual Enterprise Channel. You can move devices to Semi-Annual Enterprise Channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after August 16, 2022. Semi-Annual Channel Enterprise is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
 
 After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
 
@@ -98,7 +98,7 @@ We don’t recommend staying on a version that is no longer supported and that i
 
 As an admin, you can control which Office software your users can download and install from [My account](https://portal.office.com/account) > **Apps & devices**. Whichever choices you make, they apply to all users in your organization.
 
-If you choose to make some software unavailable to your users, they will see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
+If you choose to make some software unavailable to your users, they'll see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
 &nbsp;&nbsp;&nbsp; Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.
 
