@@ -61,8 +61,6 @@ productDirectory:
           text: Release notes
         - url: https://insider.office.com/blog
           text: Blog
-        - url: https://insider.office.com/newsletter
-          text: Newsletter (sign up)
         
     - title: Helpful resources
       imageSrc: /office/media/icons/help.svg
