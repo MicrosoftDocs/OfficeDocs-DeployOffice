@@ -1,5 +1,5 @@
 ---
-title: Build dynamic, lean, universal packages for Microsoft 365 Apps for enterprise
+title: Build dynamic, lean, universal packages for Microsoft 365 Apps
 author: manoth-msft
 ms.author: manoth
 manager: dougeby
@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might have to deploy Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus) in your organization. But such a deployment is more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
+As an admin, you might have to deploy Microsoft 365 Apps in your organization. But such a deployment is often more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
 This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
@@ -35,11 +35,13 @@ When you plan your upgrade to Microsoft 365 Apps, the actual upgrade from a lega
 
 Historically, each of these scenarios was addressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~2.5 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
 
-But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, often Semi-Annual Enterprise Channel and Semi-Annual Enterprise Channel (Preview). And maybe you're currently transitioning from 32-bit to 64-bit, and maybe you'll have to support both architectures for quite some time.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority on Monthly Enterprise Channel and a small number of special-purpose devices on Semi-Annual Enterprise Channel. And maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
 
-So in the end, you wouldn't have *1* package per component but *4*, covering each possible permutation of Semi-Annual Enterprise Channel/Semi-Annual Enterprise Channel (Preview) and x86/x64. The end result would be:
+If you build a dedicated, e.g. Language Pack deployment for each channel and architecture, you would end up with four deployments, covering each possible permutation of Monthly Enterprise Channel/Semi-Annual Enterprise Channel and x86/x64, for just one Language Pack.
 
-- A large number of packages. The 4 listed components would result in 16 or more packages.
+The impact would be:
+
+- A large number of packages.
 - High-bandwidth consumption, as a client might get the full 2.5-GB package pushed down before installation.
 - High maintenance costs to keep embedded source files current.
 - High user impact, if you haven’t kept the source files current and installing a component will perform a downgrade just to perform an update to the current version soon after.
