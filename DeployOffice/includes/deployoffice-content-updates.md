@@ -2,6 +2,15 @@
 
 
 
+## Week of August 15, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/15/2022 | [Guide to Office Telemetry Dashboard resources](/DeployOffice/compat/compatibility-and-telemetry-in-office) | modified |
+| 8/15/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
+
+
 ## Week of August 08, 2022
 
 
@@ -36,12 +45,3 @@
 |------|------------|--------|
 | 7/20/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
 | 7/20/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/home-use-program-notification) | modified |
-
-
-## Week of July 11, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/12/2022 | [Overview of Cloud Policy service for Microsoft 365](/DeployOffice/admincenter/overview-cloud-policy) | renamed |
-| 7/12/2022 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
