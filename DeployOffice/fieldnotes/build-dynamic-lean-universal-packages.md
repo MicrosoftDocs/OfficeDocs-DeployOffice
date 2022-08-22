@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: How to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps (previously named Office 365 Business or Office 365 ProPlus)"
+description: "Field best practices: How to provide additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps to your users with minimal maintenance overhead"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -21,27 +21,27 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might want to deploy the Microsoft 365 Apps in your organization. But such a deployment is often more than just pushing the basic Microsoft 365 Apps to your devices. Users might need additional components, e.g. specific language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of the Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
+As an admin, you might plan to deploy the Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to  devices. Users might need additional components, e.g. language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of the Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
-This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
+This article shows you how can greatly reduce long-term maintenance costs and improve user satisfaction by implementing 2nd installs with dynamic, lean, and universal packages for the Microsoft 365 Apps.
  
 ## The challenge
-Historically, the task of supporting 2nd install scenarios was solved by creating dedicated installation packages for each components. Usually, an admin would combine the necessary source files (of ~3 gigabytes) with a copy of the Office Deployment Tool (ODT) together with a configuration file.
+Historically, the task of supporting 2nd install scenarios was solved by creating a dedicated installation package for each. Usually, an admin would combine the necessary source files (of ~3 gigabytes) with a copy of the Office Deployment Tool (ODT) and a configuration file tailored for the scenario.
 
-But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority is on Monthly Enterprise Channel and a small number of special-purpose devices is on Semi-Annual Enterprise Channel. And maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority is on Monthly Enterprise Channel and a small number of special-purpose devices is on Semi-Annual Enterprise Channel. Maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
 
 If you build a dedicated, e.g. Language Pack deployment for each channel and architecture in above example, you would end up with four packages: Monthly Enterprise Channel x86, Monthly Enterprise Channel x64, Semi-Annual Enterprise Channel x86, Semi-Annual Enterprise Channel x64. This is not a sustainable approach and has the following disadvantages:
 
 - High maintenance costs due
-    - High number of packages to create and maintain
+    - High number of packages to create and maintain.
     - Embedded source files get outdated over time and need servicing.
     - High bandwidth consumption during deployment, as the full 3 GB package is synchronized to the device before the actual installation starts.
 - Bad user experience
     - Users have to understand their current configuration and pick the matching package from the software portal.
     - Long deployment time as full source files are synchronized first.
-    - If embedded source files are outdated, the installation will downgrade the full installation, before the update cycle kicks in and updates all devices.
+    - If embedded source files are outdated, the installation will downgrade the full installation, before the update cycle kicks in and updates all apps again.
 
-So, how do you build packages that are less costly to maintain over time frame and is more user friendly?
+So, how do you build packages that are less costly to maintain over time and are more user friendly?
 
 ## The solution: Dynamic, lean, and universal packages
 
