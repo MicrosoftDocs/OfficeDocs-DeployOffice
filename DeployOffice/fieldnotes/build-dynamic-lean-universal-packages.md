@@ -21,35 +21,27 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might have to deploy Microsoft 365 Apps in your organization. But such a deployment is often more than just Office: After the initial migration to Microsoft 365 Apps, you might have to provide ways for your users to automatically install additional language packs, proofing tools, products like Visio and Project, or other components. We often refer to these scenarios as **2nd installs**, while the initial upgrade to Microsoft 365 Apps from a legacy Office is called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
+As an admin, you might want to deploy the Microsoft 365 Apps in your organization. But such a deployment is often more than just pushing the basic Microsoft 365 Apps to your devices. Users might need additional components, e.g. specific language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of the Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
 This article shows you how to build dynamic, lean, and universal packages for Microsoft 365 Apps. This method can greatly reduce long-term maintenance costs and effort in managed environments.
  
 ## The challenge
-When you plan your upgrade to Microsoft 365 Apps, the actual upgrade from a legacy version to the always-current Microsoft 365 Apps is front and center (1st install scenario). But looking beyond the initial deployment, there are other scenarios you’ll need to cover as an admin (2nd install). Sometimes, after you upgrade your users, they might need any of the following components:
- 
-- Additional language packs
-- Proofing tools
-- Visio
-- Project
+Historically, the task of supporting 2nd install scenarios was solved by creating dedicated installation packages for each components. Usually, an admin would combine the necessary source files (of ~3 gigabytes) with a copy of the Office Deployment Tool (ODT) together with a configuration file.
 
-Historically, each of these scenarios was addressed by creating a dedicated installation package for automatic, controlled installation for users. Usually, an admin would combine the necessary source files (of ~3 gigabytes) and a copy of the Office Deployment Tool (ODT) together with a configuration file into a package for each of these components.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority is on Monthly Enterprise Channel and a small number of special-purpose devices is on Semi-Annual Enterprise Channel. And maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
 
-But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority is on Monthly Enterprise Channel and a small number of special-purpose devices on Semi-Annual Enterprise Channel. And maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
+If you build a dedicated, e.g. Language Pack deployment for each channel and architecture in above example, you would end up with four packages: Monthly Enterprise Channel x86, Monthly Enterprise Channel x64, Semi-Annual Enterprise Channel x86, Semi-Annual Enterprise Channel x64. This is not a sustainable approach and has the following disadvantages:
 
-If you build a dedicated, e.g. Language Pack deployment for each channel and architecture, you would end up with four deployments, covering each possible permutation of Monthly Enterprise Channel/Semi-Annual Enterprise Channel and x86/x64, for just one Language Pack.
+- High maintenance costs due
+    - High number of packages to create and maintain
+    - Embedded source files get outdated over time and need servicing.
+    - High bandwidth consumption during deployment, as the full 3 GB package is synchronized to the device before the actual installation starts.
+- Bad user experience
+    - Users have to understand their current configuration and pick the matching package from the software portal.
+    - Long deployment time as full source files are synchronized first.
+    - If embedded source files are outdated, the installation will downgrade the full installation, before the update cycle kicks in and updates all devices.
 
-The impact would be:
-
-- A large number of packages.
-- High-bandwidth consumption, as a client might get the full 3-GB package pushed down before installation.
-- High maintenance costs to keep embedded source files current.
-- High user impact, if you haven’t kept the source files current and installing a component will force a downgrade just to perform an update to the current version soon after.
-- Low satisfaction for users who have to pick the matching package from many options presented in the software portal.
- 
-While the initial upgrade to Microsoft 365 Apps is a one-time activity, the scenarios described previously will be applicable over a longer period. Users might need additional components days, weeks, or even years after the initial deployment.
-
-So, how do you build packages that are less costly to maintain over a long time frame and avoid the downsides?
+So, how do you build packages that are less costly to maintain over time frame and is more user friendly?
 
 ## The solution: Dynamic, lean, and universal packages
 
