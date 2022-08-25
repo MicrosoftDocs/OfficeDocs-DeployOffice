@@ -185,6 +185,16 @@ If users don't want to apply the updates at that time, they can postpone the upd
 
 When the deadline is an hour away, users get a persistent notification along with a timer that counts down the minutes until the deadline. If the deadline arrives and users haven't saved their work and closed their applications, MAU will forcibly close the applications, without saving the data, and starts to apply the updates.
 
+You can provide additional grace time for users by setting a preference for the deadline timer. The default is 60 minutes. For example, if you want the countdown to start at 3 hours, you can set the value to 180 minutes. 
+
+|Category|Details|
+|:-----|:-----|
+|**Domain** | com.microsoft.autoupdate2  |
+|**Key**  |UpdateDeadline.FinalCountDown  |
+|**Data Type** |Integer  |
+|**Possible values**  |*10 - 720* |
+|**Comments** | This is an optional setting. <br/><br/>The default value is 60. <br/><br/> Use of this preference requires Microsoft AutoUpdate version 4.51 and later.
+
 ## Turn off a deadline
 
 If you have set a deadline in the management configuration profile, you should turn off the deadline by setting empty values in your management configuration profile, as shown in the following example.
