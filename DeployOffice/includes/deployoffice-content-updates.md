@@ -2,6 +2,14 @@
 
 
 
+## Week of August 22, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/25/2022 | [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline) | modified |
+
+
 ## Week of August 15, 2022
 
 
@@ -36,12 +44,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 7/28/2022 | [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
-
-
-## Week of July 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/20/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-| 7/20/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/home-use-program-notification) | modified |
