@@ -118,4 +118,6 @@ If the expected policies haven't been correctly applied to a user's device, try 
 
 - If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
 
-- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  Note: you may encounter a FetchInterval value of 0.  If this value exists the client will wait 24 hours from the last check in before attempting to check with Cloud Policy again.
+- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
+
+- You may encounter a FetchInterval value of 0.  If this value exists, the client will wait 24 hours from the last check in before attempting to check with Cloud Policy again.
