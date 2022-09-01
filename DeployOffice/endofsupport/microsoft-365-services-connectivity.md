@@ -61,7 +61,7 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Microso
 
 ### Basic authentication with Exchange Online
 
-There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – May 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866).
+There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).
 
 ### Retirement of Skype for Business Online
 
@@ -69,30 +69,10 @@ Skype for Business Online was retired on July 31, 2021. For more information, se
 
 ### Minimum version requirements for Outlook for Windows
 
+As of November 1, 2021, there are minimum versions of Outlook for Windows required to connect to Microsoft 365 services, such as Exchange Online. For more information, see the [New minimum Outlook for Windows version requirements for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-minimum-outlook-for-windows-version-requirements-for/ba-p/2684142) blog post on the Microsoft Tech Community.
+
 > [!NOTE]
-> - The information in this section was communicated in the following Message center post in the Microsoft 365 admin center.
->   - Message ID: MC229143
->   - Message title: Update to Microsoft 365 and Outlook for Windows connectivity
->   - Publish date: December 9, 2020.
->
-> - For more information, see the [New minimum Outlook for Windows version requirements for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-minimum-outlook-for-windows-version-requirements-for/ba-p/2684142) blog post on the Microsoft Tech Community.
->
-> - This information only applies to Outlook for Windows. It doesn't apply to Outlook on other operating systems, such as macOS, iOS, or Android.
-
-Starting on November 1, 2021, the following versions are the minimum versions of Outlook for Windows you need to be using to be able to connect to Microsoft 365 services, such as Exchange Online.
-
-- Version 1706 of Microsoft 365 Apps
-- Version 16.0.4600.1000 of Office 2016 (with the November 2017 Update, [KB 4051890](https://support.microsoft.com/topic/e61d9ede-8ba3-aa75-9887-15fb20f847c7))
-- Version 15.0.4971.1000 of Office 2013 (Service Pack 1 with the October 2017 Update, [KB 4043461](https://support.microsoft.com/help/4043461))
-
-All versions of Outlook 2019 should be able to connect to Microsoft 365 services, but only the most current version is supported.
-
-Even though newer versions of Outlook 2013 might be able to connect to Microsoft 365 services, it's not supported and you may encounter performance or reliability issues.
-
-Versions of Outlook that are newer than those versions listed, but aren't the most current (supported) versions, may experience connectivity issues. To find what is the most current (supported) version, see the following articles:
-- [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
-- [Update history for Office 2016 C2R and Office 2019](/officeupdates/update-history-office-2019)
-- [Latest updates for versions of Outlook that use Windows Installer (MSI)](/officeupdates/outlook-updates-msi)
+> The requirements only apply to Outlook for Windows. They don't apply to Outlook on other operating systems, such as macOS, iOS, or Android.
 
 ## Additional information about connectivity to Microsoft 365 services  
 
