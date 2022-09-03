@@ -405,7 +405,7 @@ In addition to changing our services, we also update Microsoft 365 clients. Both
   - Client release notes provide a wealth of information about the latest security updates, update sizes, and updates for different platforms (for example, Mac).
 
 - [Microsoft 365 news and announcements](https://www.microsoft.com/microsoft-365/blog/)
-  - Read about the latest releases and features in our blog posts, which are separate from our formal documentation on [docs.microsoft.com](https://docs.microsoft.com/).
+  - Read about the latest releases and features in our blog posts, which are separate from our [formal documentation](/).
 
 - [Microsoft 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
   - Review Microsoft 365 services and features to learn more about existing features that you can leverage to improve security and productivity.
