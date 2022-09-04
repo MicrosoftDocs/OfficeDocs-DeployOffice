@@ -2,6 +2,16 @@
 
 
 
+## Week of August 29, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/30/2022 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | added |
+| 9/1/2022 | [Trusted publishers for Office files](/DeployOffice/security/trusted-publisher) | added |
+| 9/1/2022 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
+
+
 ## Week of August 22, 2022
 
 
@@ -36,11 +46,3 @@
 | 8/2/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
 | 8/2/2022 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
 | 8/2/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-
-
-## Week of July 25, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/28/2022 | [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
