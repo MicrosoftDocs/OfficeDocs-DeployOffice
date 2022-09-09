@@ -39,7 +39,7 @@ In practical terms, what this means is that these older Office versions might no
 
 We won’t take any active measures to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date. For example, Office 2013 with Service Pack 1, which is in extended support until April 11, 2023.
 
-Therefore, to provide the best experience with using Microsoft 365 services, we strongly recommend that you move off these older Office clients to Office versions supported for connecting to Microsoft 365 services.
+Therefore, to provide the best experience with using Microsoft 365 services, we strongly recommend that you move off older Office versions to versions supported for connecting to Microsoft 365 services.
 
 ## Upgrade resources available to administrators
 
