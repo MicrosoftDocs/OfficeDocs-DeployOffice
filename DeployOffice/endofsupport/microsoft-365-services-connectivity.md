@@ -21,7 +21,7 @@ The following table lists the Office versions that are supported for connecting 
 
 |Office version |Supported for connecting until this date  |
 |---------|---------|
-|Microsoft 365 Apps |Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date). |
+|Microsoft 365 Apps |Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions). |
 |Office LTSC 2021  |October 13, 2026 |
 |Office 2019  |October 10, 2023  |
 |Office 2016 |October 10, 2023 |
