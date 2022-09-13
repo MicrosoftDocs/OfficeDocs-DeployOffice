@@ -28,8 +28,7 @@ The following table lists the Office versions that are supported for connecting 
 
 > [!NOTE]
 > - For a list of which versions of Microsoft 365 Apps are currently supported, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
-> - As stated in a [April 2017 blog post](https://www.microsoft.com/microsoft-365/blog/2017/04/20/office-365-proplus-updates/), only perpetual Office versions in mainstream support are supported for connecting to Microsoft 365 services.
-> - Office 2016 is no longer in mainstream support, but we made an exception for it until October 2023, as stated in a [September 2018 blog post](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/).
+> - As stated in a [April 2017 blog post](https://www.microsoft.com/microsoft-365/blog/2017/04/20/office-365-proplus-updates/), only perpetual Office versions in mainstream support are supported for connecting to Microsoft 365 services. Office 2016 is no longer in mainstream support, but we made an exception for it until October 2023, as stated in a [September 2018 blog post](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/).
 
 ## Older Office versions not supported for connecting to Microsoft 365 services
 
