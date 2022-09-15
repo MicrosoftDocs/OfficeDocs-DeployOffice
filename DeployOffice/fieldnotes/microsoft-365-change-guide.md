@@ -32,7 +32,7 @@ Microsoft constantly improves Microsoft 365 services to help every person and ev
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
-When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
+When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps. Figure 1 shows a comparison.
 
 ![Net Promoter Score Release Channel Comparison.](../images/net-promoter-score-release-channel-comparison.png)
 *Figure 1*
@@ -164,7 +164,7 @@ It's important to have a staging or test tenant as part of your change strategy.
 ### Client release channels and controls
 #### Client release channels
 
-Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps (previously Office 365 ProPlus). These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
 Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
