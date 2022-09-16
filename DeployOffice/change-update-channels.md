@@ -79,6 +79,11 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 4. By default, Intune policies refresh in the background every 8 hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), from the device, select **Start** > **Settings** > **Accounts** > **Access work or school** > *{Select your account}* > **Info** > **Sync**. For more information, see [Sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).
 
+5. After the policy is sycned to the device from intune, to validate that whether the policy has actually come to the device or not we can open the Registry Editor and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune for Office can be seen this Registry hive. 
+For more information refer to - https://docs.microsoft.com/en-us/mem/intune/configuration/administrative-templates-update-office
+![image](https://user-images.githubusercontent.com/96834666/190673082-9260ef6f-6e42-4fd4-891c-2120d4ce38c3.png)
+
+
 After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed
 
 ## Considerations when changing channels
