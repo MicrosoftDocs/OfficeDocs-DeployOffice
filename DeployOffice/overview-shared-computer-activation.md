@@ -1,6 +1,6 @@
 ---
 title: "Overview of shared computer activation for Microsoft 365 Apps"
-ms.author: danbrown
+ms.author: nwhite
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
@@ -39,7 +39,7 @@ Shared computer activation is required for scenarios where multiple users share 
 
 To use shared computer activation, you need an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and also supports shared computer activation. Shared computer activation is available for the following plans:
 
-- Any plan that includes Microsoft 365 Apps for enterprise (previously named Office 365 Plus). For example, Office 365 E3 or Microsoft 365 E5.
+- Any plan that includes Microsoft 365 Apps for enterprise. For example, Office 365 E3 or Microsoft 365 E5.
 - Any plan that includes the desktop version of Project or Visio. For example, Project Plan 3 or Visio Plan 2.
 - The Microsoft 365 Business Premium plan, which includes Microsoft 365 Apps for business.
   
@@ -48,16 +48,16 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 > - Shared computer activation is available for Education plans that include Microsoft 365 Apps for enterprise. For example, Office 365 A3 or Microsoft 365 A5.
 > - Shared computer activation isn't available for Office for Mac.
 
-Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users log on to the shared computer with their own user account.
+Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users sign in the shared computer with their own user account.
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
-- When you are using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-4---create-and-deploy-the-office-application-to-the-broad-group), make sure that you enable the option **Shared Computer** in the **Product activation** section.
-- When you are crafting the configuration file manually, make sure to include the following line:
+- When you're using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-4---create-and-deploy-the-office-application-to-the-broad-group), make sure that you enable the option **Shared Computer** in the **Product activation** section.
+- When you're crafting the configuration file manually, make sure to include the following line:
   ```xml
   <Property Name="SharedComputerLicensing" Value="1" />
   ```
 
-If Microsoft 365 Apps is already installed and you want to enable shared computer activation, there are three options to choose from. A re-installation is not required. The device must be rebooted in order to apply the change.
+If Microsoft 365 Apps is already installed and you want to enable shared computer activation, there are three options to choose from. A reinstallation isn't required. The device must be rebooted in order to apply the change.
 
 - Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
 - Use Registry Editor to add a String value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
@@ -69,6 +69,9 @@ If Microsoft 365 Apps is already installed and you want to enable shared compute
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
+> [!NOTE]
+> There is a known issue where, on devices with both shared computer activation and viewer mode enabled, licensed users are incorrectly placed in [viewer mode](overview-viewer-mode.md). This issue is fixed in Version 2205 and later.
+
 <a name="Works"> </a>
 
 ## How shared computer activation works for Microsoft 365 Apps
@@ -76,7 +79,7 @@ After Microsoft 365 Apps is installed, you can [verify that shared computer acti
 
 Here's what happens after Microsoft 365 Apps is installed on a computer that has shared computer activation enabled.
   
-1. A user logs on to the computer with their account.
+1. A user signs in the computer with their account.
     
 2. The user starts an Office program, such as Word.
     
@@ -90,11 +93,11 @@ Here's what happens after Microsoft 365 Apps is installed on a computer that has
     
 4. If the user is licensed for Microsoft 365 Apps, a licensing token is stored on the computer in the user's profile folder, and Microsoft 365 Apps is activated. The user can now use Microsoft 365 Apps.
     
-These steps are repeated for each user who logs on to the shared computer. Each user gets a unique licensing token. Just because one user activates Microsoft 365 Apps on the computer doesn't mean Microsoft 365 Apps is activated for all other users who log on to the computer.
+These steps are repeated for each user who signs in the shared computer. Each user gets a unique licensing token. Just because one user activates Microsoft 365 Apps on the computer doesn't mean Microsoft 365 Apps is activated for all other users who sign in the computer.
   
-If a user goes to another computer that also is enabled for shared computer activation, the same steps occur. There is a different licensing token for each computer that the user logs on to.
+If a user goes to another computer that also is enabled for shared computer activation, the same steps occur. There's a different licensing token for each computer that the user signs in.
   
-If a user logs on to a shared computer again, Microsoft 365 Apps uses the same licensing token, if it is still valid.
+If a user signs in a shared computer again, Microsoft 365 Apps uses the same licensing token, if it's still valid.
   
 <a name="Details"> </a>
 
@@ -102,13 +105,15 @@ If a user logs on to a shared computer again, Microsoft 365 Apps uses the same l
 
 **Licensing token renewal** The licensing token that is stored on the shared computer is valid only for 30 days. As the expiration date for the licensing token nears, Microsoft 365 Apps automatically attempts to renew the licensing token when the user is logged on to the computer and using Microsoft 365 Apps.
     
-If the user doesn't log on to the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Microsoft 365 Apps, Microsoft 365 Apps contacts the Office Licensing Service on the internet to get a new licensing token.
+If the user doesn't sign in the shared computer for 30 days, the licensing token can expire. The next time that the user tries to use Microsoft 365 Apps, Microsoft 365 Apps contacts the Office Licensing Service on the internet to get a new licensing token.
     
 **Internet connectivity** Because the shared computer has to contact the Office Licensing Service on the internet to obtain or renew a licensing token, reliable connectivity between the shared computer and the internet is necessary.
     
-**Reduced functionality mode** If the user is not licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. This means that the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
+**Reduced functionality mode** If the user isn't licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. This means that the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
     
    ![Reduced functionality.](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
+
+*(For Version 2205 and later)* If [viewer mode](overview-viewer-mode.md) is enabled on the device, then the user will be placed in viewer mode instead of reduced functionality mode.
   
 **Activation limits** Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
     
@@ -122,7 +127,7 @@ If you don't use single sign-on, you should consider using roaming profiles and 
     
 **Licensing token roaming** Starting with Version 1704 of Microsoft 365 Apps, you can configure the licensing token to roam with the user's profile or be located on a shared folder on the network. Previously, the licensing token was always saved to a specific folder on the local computer and was associated with that specific computer. In those cases, if the user signed in to a different computer, the user would be prompted to activate Microsoft 365 Apps on that computer in order to get a new licensing token. The ability to roam the licensing token is especially helpful for non-persistent VDI scenarios.
   
-To configure licensing token roaming, you can use either the Office Deployment Tool or Group Policy, or you can use Registry Editor to edit the registry. Whichever method you choose, you need to provide a folder location that is unique to the user. The folder location can either be part of the user's roaming profile or a shared folder on the network. Microsoft 365 Apps needs to be able to write to that folder location. If you're using a shared folder on the network, be aware that network latency problems can adversely impact the time it takes to open Office programs. The location is only needed if you prefer to not use the default location, which is %localappdata%\\Microsoft\\Office\\16.0\\Licensing.
+To configure licensing token roaming, you can use either the Office Deployment Tool or Group Policy, or you can use Registry Editor to edit the registry. Whichever method you choose, you need to provide a folder location that is unique to the user. The folder location can either be part of the user's roaming profile or a shared folder on the network. Microsoft 365 Apps needs to be able to write to that folder location. If you're using a shared folder on the network, be aware that network latency problems can adversely affect the time it takes to open Office programs. The location is only needed if you prefer to not use the default location, which is %localappdata%\\Microsoft\\Office\\16.0\\Licensing.
     
 - If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Specify the location to save the licensing token used by shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
     

@@ -41,8 +41,6 @@ To get started, we recommend reviewing these articles:
 
 The following resources can help you keep up to date on the latest developments in the Office Insider program.
 
-- Subscribe to the [Office Insider Newsletter](https://insider.office.com/newsletter).
-
 - Read the [Office Insider blog](https://insider.office.com/blog).
 
 - Follow [OfficeInsider](https://twitter.com/OfficeInsider) on Twitter.

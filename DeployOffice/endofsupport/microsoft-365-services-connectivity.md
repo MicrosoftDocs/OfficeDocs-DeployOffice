@@ -12,34 +12,32 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 adobe-target: true
-description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 (and Office 365) services and the implications of using older Office clients."
+description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
 ---
 
 # Office versions and connectivity to Microsoft 365 services
 
-From October 13, 2020 onward, only these versions of Office are supported for connecting to Microsoft 365 (and Office 365) services:
+The following table lists the Office versions that are supported for connecting to Microsoft 365 services. For example, connecting to Exchange Online, SharePoint Online, or OneDrive for Business.
 
-- Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*
-- Microsoft 365 Apps for business *(previously named Office 365 Business)*
-- Office LTSC 2021, such as Office LTSC Professional Plus 2021
-- Office 2019, such as Office Professional Plus 2019
-- Office 2016, such as Office Standard 2016
+|Office version |Supported for connecting until this date  |
+|---------|---------|
+|Microsoft 365 Apps |Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions). |
+|Office LTSC 2021  |October 13, 2026 |
+|Office 2019  |October 10, 2023  |
+|Office 2016 |October 10, 2023 |
 
 > [!NOTE]
-> Office 2019 and Office 2016 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2023.
+> As stated in a [April 2017 blog post](https://www.microsoft.com/microsoft-365/blog/2017/04/20/office-365-proplus-updates/), only perpetual Office versions in mainstream support are supported for connecting to Microsoft 365 services. Office 2016 is no longer in mainstream support, but we made an exception for it until October 2023, as stated in a [September 2018 blog post](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/).
 
-Examples of Microsoft 365 services include Exchange Online, SharePoint Online, and OneDrive for Business.
+## Older Office versions not supported for connecting to Microsoft 365 services
 
-For Microsoft 365 Apps, you must be using a supported version. For a list of which versions are currently supported, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+Older Office versions not listed in the table might still be able to connect to Microsoft 365 services, but that connectivity isn't supported.
 
-> [!IMPORTANT]
-> We won’t take any active measures to block other versions of the Office client that are still supported and are up to date, such as Office 2013 with Service Pack 1, from connecting to Microsoft 365 services. But these older clients may encounter performance or reliability issues over time.
+In practical terms, what this means is that these older Office versions might not be able to use all the latest functionality and features of Microsoft 365 services. In addition, over time, these older versions might encounter other unexpected performance or reliability issues while using Microsoft 365 services. That's because as we make improvements to Microsoft 365 services, we're not taking into account or testing with these older Office versions.
 
-## Impact of using older Office clients to connect to Microsoft 365 services
+We won’t take any active measures to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date. For example, Office 2013 with Service Pack 1, which is in extended support until April 11, 2023.
 
-After October 13, 2020, ongoing investments to our cloud services won't take into account older Office clients. Over time, these Office clients may encounter performance or reliability issues. Organizations that use these older clients will almost certainly face an increased security risk and may find themselves out of compliance depending upon specific regional or industry requirements.
-
-Therefore, administrators should update older Office clients to versions of Office supported for connecting to Microsoft 365 services.
+Therefore, to provide the best experience with using Microsoft 365 services, we strongly recommend that you move off older Office versions to versions supported for connecting to Microsoft 365 services.
 
 ## Upgrade resources available to administrators
 
@@ -61,7 +59,7 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Microso
 
 ### Basic authentication with Exchange Online
 
-There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – May 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866).
+There are some changes planned related to the use of Basic Authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).
 
 ### Retirement of Skype for Business Online
 
@@ -69,43 +67,22 @@ Skype for Business Online was retired on July 31, 2021. For more information, se
 
 ### Minimum version requirements for Outlook for Windows
 
+As of November 1, 2021, there are minimum versions of Outlook for Windows required to connect to Microsoft 365 services, such as Exchange Online. For more information, see the [New minimum Outlook for Windows version requirements for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-minimum-outlook-for-windows-version-requirements-for/ba-p/2684142) blog post on the Microsoft Tech Community.
+
 > [!NOTE]
-> - The information in this section was communicated in the following Message center post in the Microsoft 365 admin center.
->   - Message ID: MC229143
->   - Message title: Update to Microsoft 365 and Outlook for Windows connectivity
->   - Publish date: December 9, 2020.
->
-> - For more information, see the [New minimum Outlook for Windows version requirements for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-minimum-outlook-for-windows-version-requirements-for/ba-p/2684142) blog post on the Microsoft Tech Community.
->
-> - This information only applies to Outlook for Windows. It doesn't apply to Outlook on other operating systems, such as macOS, iOS, or Android.
-
-Starting on November 1, 2021, the following versions are the minimum versions of Outlook for Windows you need to be using to be able to connect to Microsoft 365 services, such as Exchange Online.
-
-- Version 1706 of Microsoft 365 Apps
-- Version 16.0.4600.1000 of Office 2016 (with the November 2017 Update, [KB 4051890](https://support.microsoft.com/topic/e61d9ede-8ba3-aa75-9887-15fb20f847c7))
-- Version 15.0.4971.1000 of Office 2013 (Service Pack 1 with the October 2017 Update, [KB 4043461](https://support.microsoft.com/help/4043461))
-
-All versions of Outlook 2019 should be able to connect to Microsoft 365 services, but only the most current version is supported.
-
-Even though newer versions of Outlook 2013 might be able to connect to Microsoft 365 services, it's not supported and you may encounter performance or reliability issues.
-
-Versions of Outlook that are newer than those versions listed, but aren't the most current (supported) versions, may experience connectivity issues. To find what is the most current (supported) version, see the following articles:
-- [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
-- [Update history for Office 2016 C2R and Office 2019](/officeupdates/update-history-office-2019)
-- [Latest updates for versions of Outlook that use Windows Installer (MSI)](/officeupdates/outlook-updates-msi)
+> The requirements only apply to Outlook for Windows. They don't apply to Outlook on other operating systems, such as macOS, iOS, or Android.
 
 ## Additional information about connectivity to Microsoft 365 services  
 
-- Versions of Office LTSC 2021 will be supported for connecting to Microsoft 365 (and Office 365) services until October 2026.
 - Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. That’s because Office 2016 for Mac reached its end of support on October 13, 2020.
-- The following versions of Project are supported for connecting to Microsoft 365 (and Office 365) services:
-  - Project Online Desktop Client
-  - Project Professional 2021 and Project Standard 2021
+- The following versions of Project are supported for connecting to Microsoft 365 services:
+  - Project Online Desktop Client *(as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions))*
+  - Project Professional 2021 and Project Standard 2021 *(until October 2026)*
   - Project Professional 2019 and Project Standard 2019 *(until October 2023)*
   - Project Professional 2016 and Project Standard 2016 *(until October 2023)*
-- The following versions of Visio are supported for connecting to Microsoft 365 (and Office 365) services:
-  - Visio desktop app that comes with a Visio Plan 2 subscription
-  - Visio LTSC Professional 2021 and Visio LTSC Standard 2021
+- The following versions of Visio are supported for connecting to Microsoft 365 services:
+  - Visio desktop app that comes with a Visio Plan 2 subscription  *(as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions))*
+  - Visio LTSC Professional 2021 and Visio LTSC Standard 2021 *(until October 2026)*
   - Visio Professional 2019 and Visio Standard 2019 *(until October 2023)*
   - Visio Professional 2016 and Visio Standard 2016 *(until October 2023)*
 - This information about connecting to Microsoft 365 services doesn't apply to InfoPath 2013 or SharePoint Designer 2013.

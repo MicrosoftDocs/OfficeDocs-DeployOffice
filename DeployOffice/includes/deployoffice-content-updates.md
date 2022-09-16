@@ -2,45 +2,47 @@
 
 
 
-## Week of July 25, 2022
+## Week of August 29, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 7/28/2022 | [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
+| 8/30/2022 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | added |
+| 9/1/2022 | [Trusted publishers for Office files](/DeployOffice/security/trusted-publisher) | added |
+| 9/1/2022 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
 
 
-## Week of July 18, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/20/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-| 7/20/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/home-use-program-notification) | modified |
-
-
-## Week of July 11, 2022
+## Week of August 22, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 7/12/2022 | [Overview of Cloud Policy service for Microsoft 365](/DeployOffice/admincenter/overview-cloud-policy) | renamed |
-| 7/12/2022 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+| 8/25/2022 | [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline) | modified |
 
 
-## Week of July 04, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/7/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
-| 7/8/2022 | [Windows 8.1 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-81-support) | added |
-| 7/8/2022 | [What's new in Office deployment for IT Pros](/DeployOffice/whats-new-office-it-pros) | modified |
-
-
-## Week of June 27, 2022
+## Week of August 15, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/27/2022 | [Update Microsoft applications for Mac by using msupdate](/DeployOffice/mac/update-office-for-mac-using-msupdate) | modified |
+| 8/15/2022 | [Guide to Office Telemetry Dashboard resources](/DeployOffice/compat/compatibility-and-telemetry-in-office) | modified |
+| 8/15/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
+
+
+## Week of August 08, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/11/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/workplace-discount-program-notification) | modified |
+
+
+## Week of August 01, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/2/2022 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 8/2/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 8/2/2022 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
+| 8/2/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |

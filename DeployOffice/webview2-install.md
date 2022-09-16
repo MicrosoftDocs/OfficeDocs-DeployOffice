@@ -57,10 +57,6 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 
 - The file name for WebView2 Runtime is msedgewebview2.exe
 - If you're using Task Manager, you will see multiple instances of Microsoft Edge WebView2 running under the Microsoft Outlook process. 
-- WebView2 Runtime won’t be installed on devices in organizations that have the following plans:
-  - Office 365 operated by 21Vianet
-  - Office 365 GCC
-  - Office 365 GCC High and DoD
 - WebView2 Runtime won’t be installed on devices running macOS.
 - To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date).
 - Other applications may have already installed WebView2 Runtime on the device. For example, applications from companies other than Microsoft or line-of-business applications created within your organization. Office features that rely on WebView2 will be able to use that installation.
