@@ -96,7 +96,9 @@ To determine whether your admin has given you the ability to use any optional co
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
-For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). 
+
+For more information on how the Microsoft 365 setting for option connected experiences is used in Teams feedback policies, see [Manage feedback policies in Microsoft Teams\(https://learn.microsoft.com/microsoftteams/manage-feedback-policies-in-teams).
 
 > [!NOTE]
 > If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**. There you should see a check box for **Turn on optional connected experiences**. If you don't see that check box in Project 2019 or Visio 2019, choose **Privacy Settings...** in that **Trust Center** dialog box. Then you should see a **Privacy Settings** dialog box appear with a check box for **Enable optional connected experiences**.
