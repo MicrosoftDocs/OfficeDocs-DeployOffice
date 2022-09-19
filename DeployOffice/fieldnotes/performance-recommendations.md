@@ -100,7 +100,7 @@ As Microsoft invests heavily to improve the performance of our products, it is i
 - [Windows 10 release information](/windows/release-health/release-information)
 - [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
 
-To learn more, see [Windows and Microsoft 365 Apps servicing in Microsoft 365](/learn/modules/m365-modern-windows-office-servicing/).
+To learn more, see [Windows and Microsoft 365 Apps servicing in Microsoft 365](/training/modules/m365-modern-windows-office-servicing/).
 
 Also, review the deployment guidance available for Windows 10 and Microsoft 365 Apps:
 
