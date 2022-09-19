@@ -123,7 +123,7 @@ The following links provide information about accessibility options available in
    - [Accessibility support for Microsoft Teams](https://support.microsoft.com/topic/d12ee53f-d15f-445e-be8d-f0ba2c5ee68f)
    - [Keyboard shortcuts for Microsoft Teams](https://support.microsoft.com/office/2e8e2a70-e8d8-4a19-949b-4c36dd5292d2)
    - [Quick Start Guide: Using Microsoft Teams with a screen reader](https://support.microsoft.com/topic/c065927a-3c43-4a09-9ad3-d5ecf0c0f8a0)
-   - [Configure Microsoft Teams meetings and calls for inclusion (self-paced learning module)](/learn/modules/m365-teams-accessibility/)
+   - [Configure Microsoft Teams meetings and calls for inclusion (self-paced learning module)](/training/modules/m365-teams-accessibility/)
 
 - Microsoft Edge
    - [Accessibility features in Microsoft Edge](https://support.microsoft.com/microsoft-edge/4c696192-338e-9465-b2cd-bd9b698ad19a)
@@ -152,4 +152,4 @@ The following list provides other accessibility resources that you might find he
 
 - [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), which provides a list of Microsoft 365 features in development, rolling out, and launched.
 
-- ["Accessibility fundamentals" learning path](/learn/paths/accessibility-fundamentals/), a series of four self-paced learning modules.
+- ["Accessibility fundamentals" learning path](/training/paths/accessibility-fundamentals/), a series of four self-paced learning modules.

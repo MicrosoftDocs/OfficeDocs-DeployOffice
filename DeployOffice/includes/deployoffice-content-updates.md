@@ -2,6 +2,18 @@
 
 
 
+## Week of September 12, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/13/2022 | [Office versions and connectivity to Microsoft 365 services](/DeployOffice/endofsupport/microsoft-365-services-connectivity) | modified |
+| 9/15/2022 | [Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment](/DeployOffice/deploy-microsoft-365-apps-gcc-high-dod) | modified |
+| 9/15/2022 | [Overview of Office 2019 (for IT Pros)](/DeployOffice/office2019/overview) | modified |
+| 9/15/2022 | [Overview of deploying languages for Microsoft 365 Apps](/DeployOffice/overview-deploying-languages-microsoft-365-apps) | modified |
+| 9/15/2022 | [Overview of shared computer activation for Microsoft 365 Apps](/DeployOffice/overview-shared-computer-activation) | modified |
+
+
 ## Week of August 29, 2022
 
 
@@ -27,22 +39,3 @@
 |------|------------|--------|
 | 8/15/2022 | [Guide to Office Telemetry Dashboard resources](/DeployOffice/compat/compatibility-and-telemetry-in-office) | modified |
 | 8/15/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
-
-
-## Week of August 08, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/11/2022 | [In-product notification for Microsoft Workplace Discount Program](/DeployOffice/other/workplace-discount-program-notification) | modified |
-
-
-## Week of August 01, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/2/2022 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 8/2/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 8/2/2022 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
-| 8/2/2022 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
