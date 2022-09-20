@@ -1,7 +1,7 @@
 ---
 title: "Device-based licensing for Microsoft 365 Apps for enterprise"
 ms.author: nwhite
-author: DHB-MSFT
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

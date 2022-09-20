@@ -1,7 +1,7 @@
 ---
 title: "Overview of Office 2019 (for IT Pros)"
-ms.author: nwhite
-author: nicholasswhite
+ms.author: danbrown
+author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
