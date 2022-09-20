@@ -17079,6 +17079,41 @@ The following fields are collected:
 - **SessionId** - A unique identifier of the process.
 - **SessionInitTime** - The time when the affected process started.
 
+### Office.System.GracefulExit.GracefulAppExitDesktopRealTime
+
+The event is triggered by a graceful application termination for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. The data is reported immediately when termination occurs. The data is used to measure the health of Office client products and is a business-critical signal used by Office engineers to infer product reliability. 
+
+The following fields are collected:
+
+- **AppName** - Name of the App.
+
+- **EcsETag** - An experiment identifier for the process.
+
+- **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+
+- **OfficeUILang** - Language of the Office Process
+
+- **PreviousAppBuild** - Build version identifier for the affected process.
+
+- **PreviousAppMajor** - Major version identifier for the affected process.
+
+- **PreviousAppMinor** - Minor version identifier for the affected process.
+
+- **PreviousAppRevision** - Build version identifier for the affected process.
+
+- **PreviousBuild** - Previously installed build version
+
+- **PreviousSessionId** - A unique identifier of the process.
+
+- **PreviousSessionInitTime** - The time when the affected process started.
+
+- **PreviousSessionUninitTime** - The time when the unexpected exit was detected.
+
+- **ProcessorArchitecture** - Processor type.
+
+- **SessionFlags** - System metadata about the state of the process.
+
+
 ### Office.System.IdentityChanged
 
 User identity information required to fulfill data subject requests.
@@ -17661,7 +17696,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthMetadataOS
 
-Metadata required to isolate a failure reproduction.
+This event is triggered every time an Office application is launched. This event collects information about the operating system the Office is running on.  The data is used to classify failures within the office application and help reproduce and mitigate the issue.
 
 The following fields are collected:
 
@@ -17716,6 +17751,8 @@ The following fields are collected:
   - **TimeZoneBiasInMinutes -** The difference in minutes between local time and UTC.
 
   - **VerticalResolution -** Vertical screen resolution
+
+  - **W365EnvironmentType** - Windows 365 OS type, Windows 365 Business, Windows 365 Enterprise
 
 ### Office.System.SystemHealthMetadataScreenCultureUserSqmId
 
@@ -17955,6 +17992,72 @@ The following fields are collected:
 - **WatsonReportId** - Identifier of report sent to the Windows Watson service.
 
 - **WerEventCreatedTime** - Time stamp for Windows Error Reporting event.
+
+### Office.System.SystemHealthUngracefulAppExitDesktopRealTime
+
+The event is triggered by an abnormal application termination for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product reliability. This event contains the same information as the following event: Office.System.SystemHealthUngracefulAppExitDesktop. The difference is that this event is reported as soon as the abnormal application termination occurs, while Office.System.SystemHealthUngracefulAppExitDesktop is reported later.
+ 
+The following fields are collected:
+
+- **AffectedProcessAppVersion** - Version identifier for the affected process.
+
+- **AppName** – name of the application.
+
+- **AppUsedVirtualMemor** - Virtual memory utilized by office application.
+
+- **BucketId** - Windows reliability bucket Identifier for crash
+
+- **CabGuid** - GUID identifier for the Windows reliability cab.
+
+- **CallStack** - The Microsoft internal call stack causing the crash.
+
+- **CallStackHash** - Hash of CallStack field (GUID format)
+
+- **CrashedEcsETag** - An experiment identifier for the crashed process.
+
+- **CrashedModuleNam** - Failing module name
+
+- **CrashedProcessSessionId** - A unique identifier of the crashed process.
+
+- **CrashedProcessSessionInitTime** - The time when the affected process started.
+
+- **CrashedSessionUninitTime** - The time when the affected process ended.
+
+- **CrashedTag** - The unique identifier for the code of the crash.
+
+- **CrashType** - Bucketing identifier for the type of crash.
+
+- **ExceptionCod** - Bucketing identifier for the exception.
+
+- **ExceptionInfo** - System information for the exception.
+
+- **HangTypeCode** - Represents class of hang if the process hung during execution.
+
+- **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+
+- **ModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+
+- **ModuleVersion** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
+
+- **OfficeUILan** - The Language of the User Interface in the Office Build.
+
+- **PreviousBuild** - Previously installed build version
+
+- **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+
+- **SessionFlag** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc.
+
+- **StackHash** - Provides a hashed id for the failure stack in Office.
+
+- **SystemAvailableMemory** - Available memory in the operating system
+
+- **UninitLibletId** - The unique identifier for the failing component of the crash.
+
+- **WatsonReportId** - Identifier of report sent to the Windows reliability service.
+
+- **WerEventCreatedTime** - Time stamp for Windows Error Reporting event.
+
+
 
 ### Office.System.SystemHealthUngracefulAppExitImmersive
 
