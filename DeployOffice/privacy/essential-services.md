@@ -17752,7 +17752,7 @@ The following fields are collected:
 
   - **VerticalResolution -** Vertical screen resolution
 
-  - **W365EnvironmentType** - W365 OS type, W365 business, W365 Enterprise
+  - **W365EnvironmentType** - Windows 365 OS type, Windows 365 Business, Windows 365 Enterprise
 
 ### Office.System.SystemHealthMetadataScreenCultureUserSqmId
 
@@ -17995,7 +17995,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulAppExitDesktopRealTime
 
-The event is triggered by an abnormal application termination for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product reliability. This event contains the same information as the following existing event: Office.System.SystemHealthUngracefulAppExitDesktop. The difference is that this event is reported as soon as the abnormal application termination occurs, while the other event is reported later.
+The event is triggered by an abnormal application termination for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product reliability. This event contains the same information as the following event: Office.System.SystemHealthUngracefulAppExitDesktop. The difference is that this event is reported as soon as the abnormal application termination occurs, while Office.System.SystemHealthUngracefulAppExitDesktop is reported later.
  
 The following fields are collected:
 
