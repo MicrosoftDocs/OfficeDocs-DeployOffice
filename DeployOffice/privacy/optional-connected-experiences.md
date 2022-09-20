@@ -63,11 +63,15 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 [Insert Online Video](https://support.microsoft.com/office/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, its [terms of use](https://www.youtube.com/t/terms) and [privacy statement](https://policies.google.com/privacy) will apply. Microsoft may add other providers of video material in the future.
 
-### Microsoft Error Reporting Program (MERP) 
+### Insert photos from mobile device
+
+[Insert photos from mobile device](https://go.microsoft.com/fwlink/?linkid=2195130) allows you to insert photos from your Android device directly into PowerPoint for the web or Word for the web. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
+
+### Microsoft Error Reporting Program (MERP)
 
 MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. MERP does not apply to Office client applications that run on Windows.
 
-### Office Store 
+### Office Store
 
 When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91E5-76DCA5380F8D) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
