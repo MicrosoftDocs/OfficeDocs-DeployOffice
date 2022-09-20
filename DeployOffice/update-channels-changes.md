@@ -127,3 +127,5 @@ This change to the default selection in the Microsoft 365 admin center only appl
 The default selection won't change for tenants that were created before June 9, 2020. For these existing tenants, the default selection will remain as Semi-Annual Enterprise Channel.
 
 The exception is existing tenants with Office 365 Education or Microsoft 365 Education plans. Those plans already have Current Channel as the default update channel for Microsoft 365 Apps for enterprise.
+
+You can see article for more information [Manage Office installation options in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/deployoffice/manage-software-download-settings-office-365)
