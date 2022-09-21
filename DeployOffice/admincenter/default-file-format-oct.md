@@ -1,8 +1,9 @@
 ---
 title: "Default file format setting for the Office Customization Tool (for Click-to-Run)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: chhopkin
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
