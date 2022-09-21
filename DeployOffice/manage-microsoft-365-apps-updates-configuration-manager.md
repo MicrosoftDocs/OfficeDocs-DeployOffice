@@ -1,7 +1,7 @@
 ---
 title: "Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
