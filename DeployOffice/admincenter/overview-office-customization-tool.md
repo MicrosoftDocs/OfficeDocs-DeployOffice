@@ -1,8 +1,9 @@
 ---
 title: "Overview of the Office Customization Tool"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: chhopkin
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

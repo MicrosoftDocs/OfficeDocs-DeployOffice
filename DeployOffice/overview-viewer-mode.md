@@ -1,8 +1,9 @@
 ---
 title: "Overview of viewer mode for Microsoft 365 Apps"
-ms.author: mattphil
-author: MJP-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: mattphil
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

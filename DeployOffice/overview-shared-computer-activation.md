@@ -1,8 +1,9 @@
 ---
 title: "Overview of shared computer activation for Microsoft 365 Apps"
 ms.author: nwhite
-author: DHB-MSFT
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: mattphil
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

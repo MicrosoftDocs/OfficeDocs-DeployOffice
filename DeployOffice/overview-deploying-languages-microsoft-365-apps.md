@@ -1,7 +1,7 @@
 ---
 title: "Overview of deploying languages for Microsoft 365 Apps"
 ms.author: nwhite
-author: DHB-MSFT
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
