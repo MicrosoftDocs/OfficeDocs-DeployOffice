@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: choose how to deliver updates software updates for Microsoft 365 Apps for enterprise"
+description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -16,14 +16,31 @@ ms.collection:
 - M365-modern-desktop
 ---
 
-# Best practices from the field: Choose how to deliver updates for Microsoft 365 Apps for enterprise
+# Choose how to deliver updates for the Microsoft 365 Apps
+
+
+
+- Both for new implementations or when re-evaulating exisitng update processes
+- Explain the big buckets like cloud, on-prem and hybrid
+- For each bucket, explain the network implications
+- Then per bucket, go into the details and options.
+
+Include picture for the buckets
+
+include picture for each option
 
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps for enterprise.  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
+There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. A given update deployment implementation can be changed later on, so the options below apply both to scenarios where you start fresh with the Microsoft 365 Apps as well as when re-evaluating your current implementation.
 
-## Evaluating the Options
+> [!NOTE]
+> The Office Update Engine will always update all products and apps build on top of Click-to-Run in one pass and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through Servicing profiles, both products will be updated in one pass to the same release. No mix&match is possible for updates (e.g., Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share.).
+
+## Choose to deploy updates from the cloud, on-premises locations or hybrid
+
+
+
 
 The overwhelming majority of customers we work with in the field remain on-premises when delivering software updates for Microsoft 365 Apps for enterprise.  The original version of Office 2013 Click-to-Run was released years ago when update options were  limited and network transport optimizations didn't exist.  Many customers used an on-premises file share and mirrored Office CDN content each month.  Microsoft 365 Apps for enterprise has evolved since then to provide customers with many more options, including multiple channels, languages, and 64-bit architecture. These additional options can lead to a large increase in the number of content IT Pros must download and replicate on-premises.
 
