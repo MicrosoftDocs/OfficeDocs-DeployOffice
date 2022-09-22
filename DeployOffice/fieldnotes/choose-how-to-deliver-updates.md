@@ -56,7 +56,32 @@ When using the cloud as your update source, there are also some **considerations
 - **VPN bypass**: When using virtual private network (VPN) solutions, it is recommend devices to bypass the VPN tunnel when downloading data from the Office CDN. This reduced the load on the VPN infrastucture and allows devices to download data directly.
 
 
+### Updates from on-premises locations
+The Microsoft 365 Apps support multiple on-premises locations for updates. The required source files can be hosted on network shares, in local folders or drives or on Microsoft Endpoint Configuration Manager's Distribution Points [LINNK????]. Common among all these options is, that the admin is responsible for ensuring that the required sources for all udpate channels, languages and architurres (32/64 bit) in use in the environment are available. Otherwise the udpate would fail.
 
+The main **advantage** of using on-premises locations is that devices do not need to pull down data over the internet in order to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
+
+In general, Microsoft no longer recommends to host updates on-premises due to the following **challenges**:
+- **Source file management**: When update sources are hosted on premises, the admin must ensure that the required releases for all deployed update channels, languages and architures are available. As Microsoft releases monthly security updates, those source file sets should be updated at least on a monthly base, including  synchronization to all locations.
+- **Source size**: As Microsoft does not release individual patches, but rather a new set of complete source files each month, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. E.g., when devices run a mix of 32 and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files have to be downloaded and synchronized across the update locations.
+- **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to reduce traffic on the WAN. This could be addressed by using multiple, site-dependent group policy prefences (LINK) or custom scripting, but this increased the complexity of the implementation. If updates are managed by Microsoft Endpoint Configuration Manager, beforementioned does not apply, as the agent will determine the best Distribution Point.
+- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't leverage Delivery Optimization for reducing the network footprint. All devices will pull their individual set of delta files down. When using Microsoft Endpoint Configuration Manager, this can be mitigated by leveraging [Peer Cache](FIND AND INSERT LINK TO CM PEER CACHE.)  
+
+
+
+The main advantage of hosting udpates on-premises is that devices 
+
+
+When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (aka Office CDN), this is referred to as **cloud-based updates**. Microsoft operates a worldwide, distributed network of datacenters which hosts all updates for the Microsoft 365 Apps for all available update channels, in both 32 and 64 bit. The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
+
+There are two core benefits when levering the cloud as your udpate source:
+- **Delta updates**: When the Microsoft 365 Apps pull down the latest udpate, only the difference between the currently installed release and the targeted one is downloaded. So instead of having to handle the whole source files package, only delta differences, down to sub-file level, are pulled down by the device. This conserves a lot of network bandwidth compared with other approaches.
+- **No source files maintenance** needed: As the updates are hosted worldwide in Microsoft's datacenters, there is no need for downloading, packaging and distributing the source files in your on-prem network. Especially in environments wich multiple deployedd languages, an 32 and 64 bit mix or running multiple update channels, this can become a major, re-occuring effort.
+
+When using the cloud as your update source, there are also some **considerations**:
+- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in URL-ARTICLE LINK HERE must be accessible for devices. Microsoft recommends to allows devices to connect to the Office CDN on a system level and with bypassing any proxy servers to ensure best performance. We recommend to review the [MONTHLY UPDATE SIZES LINK HERE] to assess the impact on the network.
+- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will leverage Delivery Optimization (LINK) when available. This will allow devices to share the requires sources in a Peer-to-Peer mode and reduces the amount of data which needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches] LINK!! are deployed and configured, those will also be leveraged. Especially [CC on SCCM] is straight forward to implement and is recommended, when an Configuration Manager infrastructure is available.
+- **VPN bypass**: When using virtual private network (VPN) solutions, it is recommend devices to bypass the VPN tunnel when downloading data from the Office CDN. This reduced the load on the VPN infrastucture and allows devices to download data directly.
 
 
 
