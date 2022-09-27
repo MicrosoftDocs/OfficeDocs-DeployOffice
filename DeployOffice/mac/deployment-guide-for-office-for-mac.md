@@ -26,7 +26,7 @@ There are several versions of Office that are referred to in this guide:
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
 
 > [!NOTE]
-> - Support for Office 2019 for Mac ends on October 10, 2023.
+> - Support for Office 2019 for Mac ends on October 10, 2023. To move to a newer version, such as Office LTSC for Mac 2021, see [Upgrade an installation of Office for Mac](deployment-options-for-office-for-mac.md#upgrade-an-installation-of-office-for-mac).
 > - Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
 
 This guide covers the following areas:
