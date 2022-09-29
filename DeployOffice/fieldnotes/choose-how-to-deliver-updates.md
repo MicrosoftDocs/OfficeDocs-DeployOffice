@@ -68,6 +68,48 @@ The hybrid approach shares the same **disadvantages** as the on-premises approac
 > Devices, which gets their udpates signaled through Microsoft Endpoint Configuration Manager, can not leverage Delivery Optimization, even if the sources are pulled down from the Office CDN. This is a limitation of the download mechanism of Microsoft Endpoint Configuration Manager.
 
 
+## Step 2: Choose your management technology
+
+Based on your preferred udpate source location, there are certain solutions for managing the actual updates available. The following sections will lay out these options per update source, touch in benefits and challenges and provide links to additional information.
+
+## Update solutions for cloud-based updates
+
+### Automatic Update / Microsoft Endpoint Manager
+
+Default configuration of the Microsoft 365 Apps. If not otherwise configured, devices will automatically check in with the Office CDN on a regular base and pull down updates automatically. If the Microsoft 365 Apps were deployed using [Microsoft Endpoint Manager](https://learn.microsoft.com/mem/intune/apps/apps-add-office365), this is also the default configuration.
+
+**Benefits**
+- No intentional configuration needed. Just works out of the box.
+- Additional capabilities such as rollback or roll forward are available through the usage of group policy settings.
+
+**Considerations**
+- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients will receive the update at the same time, but in a staggered manner.
+- By default updates are not enforced. This can be mitigated by leveraging the **Update deadline* group policy setting for Office.
+- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](https://learn.microsoft.com/deployoffice/admincenter/overview) to monitor update adoption rate and compliance.
+
+### Servicing profiles
+
+[Servicing profiles](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile) is a cloud-based update management solution for devices on the Monthly Enterprise Channel. It is an end-to-end solution for managing udpates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering and rolling back devices.
+
+> [!NOTE]
+> Servicing profiles is Microsoft's recommended solutions for Microsoft 365 Apps on Monthly Enterprise Channel.
+
+**Benefits**
+- Update solution specifically built for the Microsoft 365 Apps.
+- Detailed reporting about update status, progess and encountered issues.
+- Allows admins to pause or rollback updates in case of any issues
+- Allows admins to set deadlines for update enforcement
+
+**Considerations**
+- As of now, Servicing profile only supports Monthly Enterprise Channel. Devices on other channels can be transitioned to Monthly Enterprise Channel.
+- Consider using [custom waves](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile#create-rollout-waves) to stagger and validate updates.
+
+**Additional information**
+[Overview of servicing profile](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile)
+[Video: Deep dive into Servicing profile](https://youtu.be/YO6a3iNVXXI)
+[Video: Deep dive into Wave Customization for Servicing Profiles](https://youtu.be/rDu8qVbE1DY)
+
+
 s, architectures 
 
 
@@ -127,15 +169,6 @@ The section below compares update approaches to help you choose the right option
 
 Advantages: 
 - Supports advanced network optimization technologies like Delivery Optimization and Configuration Manager Connected Cache.  These solutions also support other Microsoft workloads such as Windows 10 updates (feature updates and quality updates), Windows 10 drivers, Windows Store files, Windows Store for Business files, Windows Defender definition updates, Win32 apps for Intune and Configuration Manager Express Updates.
-- IT Pro remains in control, but clients pull what is needed automatically.  No need for admin to micro-manage intentional downloads each month.
-- Office was designed to update from the Office CDN, which allows additional capabilities such as rollback or roll forward based on group policy configuration.
-- Aligns with Microsoft's "Modern Workplace" where users roam and work remotely.
-
-Considerations:
-- The IT Pro must transition from push mentality to allow clients to pull content dynamically.
-- The IT Pro will need to review the network topology to ensure clients are performing peer to peer sharing is optimal.
-- Extensive controls of Delivery Optimization are available and require review.
-- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients will receive the update at the same time and not appropriate for traditional Configuration Manager "maintenance windows" scenarios.
 
 End-user notifications: Delivered by Office only.
 
