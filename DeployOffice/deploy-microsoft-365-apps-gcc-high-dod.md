@@ -15,7 +15,7 @@ description: "Provides guidance for deploying Microsoft 365 Apps for enterprise 
 
 # Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment
 
-If you plan to deploy Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
+If you plan to deploy Microsoft 365 Apps for enterprise in a GCC High or DoD environment, there are some special considerations that you need to be aware of to help you meet your compliance requirements.
 
 ## Which version of Microsoft 365 Apps for enterprise to deploy
 
@@ -37,23 +37,23 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
-If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Microsoft 365 Apps for enterprise directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the internet. You can also configure Microsoft 365 Apps for enterprise to receive updates automatically from the Office CDN. This requires the least amount of administrative effort and is an easy way to keep Microsoft 365 Apps for enterprise up to date.
+If network connectivity and other considerations based on your organizational requirements aren't an issue, you can choose to deploy Microsoft 365 Apps for enterprise directly from the [Office Content Delivery Network (CDN)](#office-content-delivery-network-cdn) on the internet. You can also configure Microsoft 365 Apps for enterprise to receive updates automatically from the Office CDN. This configuration requires the least amount of administrative effort and is an easy way to keep Microsoft 365 Apps for enterprise up to date.
 
-If you don't want computers installed with Microsoft 365 Apps for enterprise to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Microsoft 365 Apps for enterprise to be installed and updated from a shared folder from within your internal network. You will still need a least one computer to have access to the Office CDN to be able to download Microsoft 365 Apps for enterprise and updates to Microsoft 365 Apps for enterprise to the shared folder on your internal network. Also, computers installed with Microsoft 365 Apps for enterprise still require internet connectivity in order to remain activated.
+If you don't want computers installed with Microsoft 365 Apps for enterprise to connect to the Office CDN and the [Device Management Service](#device-management-service) to get updates, you need to configure Microsoft 365 Apps for enterprise to be installed and updated from a shared folder from within your internal network. You'll still need a least one computer to have access to the Office CDN to be able to download Microsoft 365 Apps for enterprise and updates to Microsoft 365 Apps for enterprise to the shared folder on your internal network. Also, computers installed with Microsoft 365 Apps for enterprise still require internet connectivity in order to remain activated.
 
-Keep in mind that installing and updating Microsoft 365 Apps for enterprise from a shared folder on your local network requires significantly more administrative effort and more disk space. For example, you have to keep track of when new builds of Microsoft 365 Apps for enterprise are available and then download the updated version of Microsoft 365 Apps for enterprise to your network. The core files for Microsoft 365 Apps for enterprise are at least 1.6 GB and at least 250 MB for each language deployed.
+Keep in mind that installing and updating Microsoft 365 Apps for enterprise from a shared folder on your local network requires more administrative effort and more disk space. For example, you have to keep track of when new builds of Microsoft 365 Apps for enterprise are available and then download the updated version of Microsoft 365 Apps for enterprise to your network. The core files for Microsoft 365 Apps for enterprise are at least 1.6 GB and at least 250 MB for each language deployed.
 
-If Microsoft 365 Apps for enterprise is being updated directly from the Office CDN, the amount of network traffic to each computer is significantly less, because only the changed files need to be downloaded. The size of those updates can vary from 50 mb to 300 mb. These estimates are based on historical data from the past year or so of updates.
+If Microsoft 365 Apps for enterprise is being updated directly from the Office CDN, the amount of network traffic to each computer is less, because only the changed files need to be downloaded. The size of those updates can vary from 50 mb to 300 mb. These estimates are based on historical data from the past year or so of updates.
 
 
 ## What tools to use to deploy Microsoft 365 Apps for enterprise
-There is no special guidance about what tools you can use to deploy Microsoft 365 Apps for enterprise in GCC High or DoD environments.
+There's no special guidance about what tools you can use to deploy Microsoft 365 Apps for enterprise in GCC High or DoD environments.
 
 To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md) and [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
@@ -68,7 +68,7 @@ You can also use enterprise software deployment tools, such as Microsoft Endpoin
 For more information about settings available in the configuration.xml file, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 ### Installing and updating Microsoft 365 Apps for enterprise from the Office CDN
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Current Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
+Here's a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Current Channel from the Office CDN. Microsoft 365 Apps for enterprise will also be automatically updated directly from the Office CDN.
 
 ```xml
 <Configuration> 
@@ -83,7 +83,7 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ```
 
 ### Installing and updating Microsoft 365 Apps for enterprise from a shared folder on the local network
-Here is a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
+Here's a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 > [!NOTE]
 > To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](manage-microsoft-365-apps-updates-configuration-manager.md).
@@ -101,11 +101,11 @@ Here is a sample configuration.xml file to use with the Office Deployment Tool t
 ```
 
 ## Configure whether to send telemetry data to Microsoft
-Office apps send telemetry data to Microsoft on a regular basis to help Microsoft understand how to improve the product. In highly regulated environments, you may choose to prevent telemetry data from being sent to Microsoft.
+Office apps send telemetry data to Microsoft regularly to help Microsoft understand how to improve the product. In highly regulated environments, you may choose to prevent telemetry data from being sent to Microsoft.
 
-No additional configuration is needed to prevent Microsoft 365 Apps for enterprise or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
+No other configuration is needed to prevent Microsoft 365 Apps for enterprise or Office apps on Android from sending telemetry data to Microsoft. In both cases, the apps can recognize that they are in a GCC High or DoD environment and will automatically prevent telemetry data from being sent to Microsoft.
 
-For other Office apps, such as Skype for Business client, Office for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for additional information.
+For other Office apps such as Office for Mac, and Office apps on iOS, additional configuration is needed to prevent telemetry data from being sent to Microsoft. See the following sections for more information.
 
 ### Turn off sending telemetry data to Microsoft from Skype for Business client
 To prevent Skype for Business client from sending telemetry data to Microsoft, edit the registry and add the TelemetryTier value to the HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Lync key. The type for TelemetryTier is REG_DWORD, and the value should be set to 0.
@@ -149,7 +149,7 @@ To prevent Office apps on iOS from sending telemetry data to Microsoft, set the 
 > [!IMPORTANT]
 > You must be using at least Version 2.11 of Office on iOS.
 
-For each key and value in the configuration, set the following:
+Set the following for each key and value in the configuration:
 - Configuration key = SendAllTelemetryEnabled 
 - Value type = Boolean
 - Configuration value = false
@@ -162,7 +162,7 @@ and
 
 ## Additional settings to configure
 
-In addition to telemetry data settings, there are some additional settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, login scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
+In addition to telemetry data settings, there are more settings that you may choose to configure depending on your compliance requirements. Many of these settings are configured by making changes to the registry. To deploy registry changes to multiple computers or users, you can use batch files, sign-in scripts, Group Policy, Configuration Manager, PowerShell, or other scripting and deployment tools.
 
 ### Ensure modern authentication is enabled
 Modern authentication needs to be enabled to be compliant. Modern authentication is enabled by default for Office 365 services and in Microsoft 365 Apps for enterprise. Unless you have intentionally disabled modern authentication, no action is required. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).
@@ -174,27 +174,27 @@ To disable Windows Error Reporting (Watson), edit the registry and under the HKE
 The following registry values must be set to correctly configure Outlook behavior on Microsoft 365 Apps for enterprise. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\AutoDiscover\EnableOffice365ConfigService <br/>
-  **Description:** This is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Microsoft 365 Apps for enterprise you don't need to set this registry setting. <br/>
+  **Description:** This registry setting is needed so that the correct mailbox settings may be retrieved in this specific environment without calling a worldwide service to retrieve mailbox settings. If you're using Version 1805 or later of Microsoft 365 Apps for enterprise, you don't need to set this registry setting. <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableAccountSettingsDetectionService <br/>
-  **Description:** This disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
+  **Description:** This registry setting disables calling a worldwide service that assists in getting account information for POP, IMAP, and other protocols based on the email address. Because this service will be disabled by this key, personal accounts will need to be set up manually.  <br/>
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisablePreviewPlace <br/>
-  **Description:** This disables the Coming Soon feature which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Microsoft 365 Apps for enterprise. <br/>
+  **Description:** This registry setting disables the Coming Soon feature, which provides users with information about upcoming features and lets users try those features and provide feedback. Coming Soon is available in Version 1806 or later of Microsoft 365 Apps for enterprise. <br/>
 
 The following registry values are optional. The type for these registry values is REG_DWORD and the values should be set to 1.
 
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Setup\DisableGuessSmart <br/>
-  **Description:** This disables attempts at setting up IMAP, POP accounts through various known ports. <br/>
+  **Description:** This registry setting disables attempts at setting up IMAP, POP accounts through various known ports. <br/>
  
   **Registry location:** HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General\DisableOutlookMobileHyperlink <br/>
-  **Description:** This suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
+  **Description:** This registry setting suppresses the option of configuring Outlook on a mobile device following a successfully configured account in Outlook Desktop. <br/>
 
 Also, if [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) are built and used in non-Outlook apps, those applications must know where the user's mailbox is configured. Microsoft will only perform Step 6 and Step 7 of the [AutoDiscover](https://support.microsoft.com/help/3211279/outlook-2016-implementation-of-autodiscover) process. This means you must have a URL that exists in one of these locations: `https://<contoso.com>.autodiscover/autodiscover.xml` or `https://autodiscover.<contoso.com>/autodiscover/autodiscover.xml`.  Then, that should redirect to `https://autodiscover-s-dod.office365.us/autodiscover/autodiscover.xml`. This process will be automatic in future versions.  
 
 
 ## Special considerations
-Due diligence was done to review cloud services connected to features in Microsoft 365 Apps for enterprise.  We expect, and have found, that such processes are not failure proof so we have created the following table to capture any edge cases that were not initially captured prior to initial release. We will use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
+Due diligence was done to review cloud services connected to features in Microsoft 365 Apps for enterprise.  We've found that such processes are not failure proof and have created the following table to capture any edge cases that were not initially captured prior to initial release. We'll use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
 
 
 |**Application**  |**Feature**  |**Recommendation**  |
@@ -207,7 +207,7 @@ Due diligence was done to review cloud services connected to features in Microso
 ### Office Content Delivery Network (CDN)
 The software to install and update Microsoft 365 Apps for enterprise is available on the Office Content Delivery Network (CDN) on the internet. The Click-to-Run service, which manages installations and updates of Microsoft 365 Apps for enterprise, makes calls to the Office CDN, which is hosted by Akamai.
 
-Office 365 has a Memorandum of Understanding with Akamai as part of the Office 365 accreditation package and Akami has a FedRAMP moderate accreditation. For availability, the Click-to-Run service can failover to a world-wide instance of Azure Front Door, which also has a FedRAMP moderate accreditation.
+Office 365 has a Memorandum of Understanding with Akamai as part of the Office 365 accreditation package and Akami has a FedRAMP moderate accreditation. For availability, the Click-to-Run service can fail over to a world-wide instance of Azure Front Door, which also has a FedRAMP moderate accreditation.
 
 ### Device Management Service
 For installations of Microsoft 365 Apps for enterprise that are configured to get updates automatically from the Office CDN, Microsoft uses the Device Management Service (DMS) to apply release configuration to individual devices based on their specific configuration. For example, the operating system version that Office is installed on, whether the 32-bit or 64-bit version of Office is installed, and which language of Office is installed.

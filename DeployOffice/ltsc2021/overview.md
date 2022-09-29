@@ -20,7 +20,7 @@ description: "Provides IT admins with an overview of deploying Office LTSC 2021.
 Office LTSC 2021 is the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
 
 > [!IMPORTANT]
-> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
+> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
   
 Office LTSC 2021 is available for enterprise admins to download and deploy to the users in their organization. The following volume licensed Office products are available for devices running Windows:
 
@@ -151,7 +151,7 @@ For information about the new features in Office LTSC 2021, see the following ar
 
 Keep in mind that Office LTSC 2021 includes only some, but not all, features that are available in versions of Office that come with a Microsoft 365 (or Office 365) plan.
 
-Office LTSC 2021 won’t receive any new features now that it has been released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
+Office LTSC 2021 won’t receive any new features now that it's released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
 To get on-going feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan for those products. For more information, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 

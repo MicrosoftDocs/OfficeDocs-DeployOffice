@@ -1,8 +1,9 @@
 ---
 title: "Device-based licensing for Microsoft 365 Apps for enterprise"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -15,7 +16,7 @@ description: "Explains how to configure device-based licensing for Microsoft 365
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
 
-Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows client device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license. This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
+Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows client device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license. This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
 
 > [!IMPORTANT]
 > Device-based licensing for Microsoft 365 Apps for enterprise is available as a license only for some commercial customers and some education customers. For commercial customers, the license is *Microsoft 365 Apps for enterprise (device)* and is available only through Enterprise Agreement/Enterprise Agreement Subscription.  For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). For commercial availability, contact your Microsoft account representative.

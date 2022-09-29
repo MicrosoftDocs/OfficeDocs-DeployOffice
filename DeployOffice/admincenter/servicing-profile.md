@@ -1,7 +1,7 @@
 ---
 title: "Overview of servicing profile in the Microsoft 365 Apps admin center"
-ms.author: dhirenb
-author: dhirendra-bhupati
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

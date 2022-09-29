@@ -1,13 +1,13 @@
 ---
 title: Choose how to deliver updates for Microsoft 365 Apps for enterprise
-author: davguent
-ms.author: davguent
+author: manoth-msft
+ms.author: manoth
 manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: choose how to deliver updates software updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus)"
+description: "Field best practices: choose how to deliver updates software updates for Microsoft 365 Apps for enterprise"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
+There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps for enterprise.  This article outlines the advantages and disadvantages of each approach to help you make the right choice. We assume that most customers are coming from an on-premises only solution and are contemplating moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
 
 ## Evaluating the Options
 

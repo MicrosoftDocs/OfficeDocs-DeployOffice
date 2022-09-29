@@ -48,7 +48,7 @@ How you allow VBA macros to run in files that you trust depends on where those f
 
 The following table list different common scenarios and possible approaches to take to unblock VBA macros and allow them to run. You don't have to do all possible approaches for a given scenario. In the cases where we have listed multiple approaches, pick the one that best suits your organization.
 
-|Scenario| Possible approaches to take|
+|Scenario|Possible approaches to take|
 |---------|---------|
 |Individual files <br/>  |• Select the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file <br/> • Use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell <br/><br/> For more information, see [Remove Mark of the Web from a file](#remove-mark-of-the-web-from-a-file). |
 |Files centrally located on a network share or trusted website|Unblock the file using an approach listed under "Individual files."<br/><br/> If there isn't an **Unblock** checkbox and you want to trust all files in that network location: <br/>• Designate the location as a Trusted site<br/> • Add the location to the **Local intranet** zone <br/><br/> For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).|
@@ -56,6 +56,7 @@ The following table list different common scenarios and possible approaches to t
 |Macro-enabled template files for Word, PowerPoint, and Excel|If the template file is stored on the user's device:<br/> • Remove Mark of the Web from the template file *(see the approaches under "Individual files")*  <br/>• Save the template file to a Trusted Location <br/><br/>If the template file is stored on a network location: <br/>• Use a digital signature and trust the publisher  <br/>• Trust the template file *(see the approaches under "Files centrally located on a network share or trusted website")* <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
 |Macro-enabled add-in files for PowerPoint|• Remove Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 |Macro-enabled add-in files for Excel|• Remove Mark of the Web from the Add-in file  <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
+|Macros that are signed by a trusted publisher|• *[recommended]* Deploy the public code-signing certificate for the trusted publisher to your users and prevent your users from adding trusted publishers themselves.  <br/>• Remove Mark of the Web from the file, and have the user add the publisher of the macro as a trusted publisher. <br/><br/>For more information, see [Macros that are signed by a trusted publisher](#macros-that-are-signed-by-a-trusted-publisher)|.
 |Groups of files saved to folders on the user’s device |Designate the folder a Trusted Location <br/><br/> For more information, see [Trusted Locations](#trusted-locations).|
 
 ## Versions of Office affected by this change
@@ -69,10 +70,10 @@ The following table shows the forecasted schedule of when this change will be av
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
-|Current Channel|Version 2206|Begin rolling out on July 27, 2022|
-|Monthly Enterprise Channel|*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel (Preview)|*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel |*To be determined*|*To be determined*|
+|Current Channel|Version 2206|Started rolling out on July 27, 2022|
+|Monthly Enterprise Channel|*Version 2208*|*October 11, 2022*|
+|Semi-Annual Enterprise Channel (Preview)|*Version 2208*|*October 11, 2022*|
+|Semi-Annual Enterprise Channel |*Version 2208*|*January 10, 2023*|
 
 > [!NOTE]
 > As we roll out this change to Current Channel over the next few weeks, not all customers will see the change right away.
@@ -220,6 +221,16 @@ For Excel Add-in files:
 
 > [!NOTE]
 > Using a digital signature and trusting the publisher doesn't work for Excel Add-in files that have Mark of the Web. This behavior isn't new for Excel Add-in files that have Mark of the Web. It's worked this way since 2016, as a result of a previous security hardening effort (related to Microsoft Security Bulletin MS16-088).
+
+### Macros that are signed by a trusted publisher
+
+If the macro is signed and you’ve validated the certificate and trust the source, you can make that source a trusted publisher. We recommend, if possible, that you manage trusted publishers for your users. For more information, see [Trusted publishers for Office files](trusted-publisher.md).
+
+If you have just a few users, you can have them [remove Mark of the Web from the file](#remove-mark-of-the-web-from-a-file) and then [add the source of the macro as a trusted publisher](https://support.microsoft.com/office/87b3d5a3-b68c-4023-87c4-7cc78a44d7ed) on their devices.
+
+> [!WARNING]
+> - All macros validly signed with the same certificate are recognized as coming from a trusted publisher and are run.
+> - Adding a trusted publisher could affect scenarios beyond those related to Office, because a trusted publisher is a Windows-wide setting, not just an Office-specific setting.
 
 ### Trusted Locations
 

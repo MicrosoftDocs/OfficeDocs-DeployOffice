@@ -103,7 +103,7 @@ For update packages released on and after June 9, 2020, the title of the update 
 
 ## Change to the default update channel for Microsoft 365 Apps for enterprise
 
-Starting on June 9, 2020, Current Channel will become the default update channel for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), instead of Semi-Annual Enterprise Channel. Current Channel is already the default update channel for Microsoft 365 Apps for business (previously named Office 365 Business) and for the subscription versions of the Project and Visio desktop apps.
+Starting on June 9, 2020, Current Channel will become the default update channel for Microsoft 365 Apps for enterprise, instead of Semi-Annual Enterprise Channel. Current Channel is already the default update channel for Microsoft 365 Apps for business and for the subscription versions of the Project and Visio desktop apps.
 
 You’ll encounter this new default update channel setting when using the following deployment tools on or after June 9, 2020.
 
@@ -117,13 +117,13 @@ If you want to use a specific update channel, specify that update channel in you
 ### Office Customization Tool  
 We recommend using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you build your configuration XML files for use with the Office Deployment Tool. When you use the Office Customization Tool and select Microsoft 365 Apps for enterprise in the **Office Suites** drop-down list, the **Update channel** drop-down will choose Current Channel automatically. You can always choose a different update channel.
 
-You will also see this default update channel selection if you use Microsoft Endpoint Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
+You'll also see this default update channel selection if you use Microsoft Endpoint Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
 
 ### Microsoft 365 admin center  
 Current Channel will be the default selection when you sign into the Microsoft 365 admin center and go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.
 
 This change to the default selection in the Microsoft 365 admin center only applies to ***new*** tenants that are created on or after June 9, 2020.
 
-The default selection will not change for tenants that were created before June 9, 2020. For these existing tenants, the default selection will remain as Semi-Annual Enterprise Channel.
+The default selection won't change for tenants that were created before June 9, 2020. For these existing tenants, the default selection will remain as Semi-Annual Enterprise Channel.
 
 The exception is existing tenants with Office 365 Education or Microsoft 365 Education plans. Those plans already have Current Channel as the default update channel for Microsoft 365 Apps for enterprise.
