@@ -21,9 +21,9 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might plan to deploy the Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to  devices. Users might need additional components, e.g. language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of the Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
+As an admin, you might plan to deploy Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to  devices. Users might need additional components, e.g. language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
-This article shows you how can greatly reduce long-term maintenance costs and improve user satisfaction by implementing 2nd installs with dynamic, lean, and universal packages for the Microsoft 365 Apps.
+This article shows you how can greatly reduce long-term maintenance costs and improve user satisfaction by implementing 2nd installs with dynamic, lean, and universal packages for Microsoft 365 Apps.
  
 ## The challenge
 Historically, the task of supporting 2nd install scenarios was solved by creating a dedicated installation package for each. Usually, an admin would combine the necessary source files (of ~3 gigabytes) with a copy of the Office Deployment Tool (ODT) and a configuration file tailored for the scenario.
