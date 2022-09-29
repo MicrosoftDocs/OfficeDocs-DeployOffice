@@ -18,28 +18,14 @@ ms.collection:
 
 # Choose how to deliver updates for the Microsoft 365 Apps
 
-
-
-- Both for new implementations or when re-evaulating exisitng update processes
-- Explain the big buckets like cloud, on-prem and hybrid
-- For each bucket, explain the network implications
-- Then per bucket, go into the details and options.
-
-Include picture for the buckets
-
-include picture for each option
-
-> [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
-
 There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. A given update deployment implementation can be changed later on, so the options below apply both to scenarios where you start fresh with the Microsoft 365 Apps as well as when re-evaluating your current implementation.
 
-This article will describe the fundamental differences and network implications when deploying udpates from the cloud, on-prem locations or in a combination of both (hybrid). It will then drill deeper into each source and lay out the options for managing updates with the individual benefits and challenges.
+This article will describe the fundamental differences and network implications when deploying udpates from the cloud, on-prem locations or in a combination of both (hybrid). It will then lay out the options for each source with their individual benefits and challenges.
 
 > [!NOTE]
-> The Office Update Engine will always update all products and apps build on top of Click-to-Run in one pass and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through Servicing profiles, both products will be updated in one pass to the same release. No mix&match is possible for updates (e.g., Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share.).
+> The Office Update Engine will always update all products and apps build on top of Click-to-Run in one pass and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through Servicing profiles, both products will be updated in one pass. It is not possible to mix & match update mechanisms (e.g., Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share.).
 
-## Update sources: Cloud, on-premises location or hybrid
+## Step 1: Choose your update source: Cloud, on-premises location or hybrid
 
 The Microsoft 365 Apps can get updates from three different sources: cloud, on-premises locations as well as a mix of both, often referred to as hybrid. The following section will lay out these sources and call out the individual benefits and challenges of these locations.
 
