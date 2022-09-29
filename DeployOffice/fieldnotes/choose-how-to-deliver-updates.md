@@ -50,12 +50,38 @@ The Microsoft 365 Apps support multiple on-premises locations for updates. The r
 The main **advantage** of using on-premises locations is that devices do not need to pull down data over the internet in order to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
 
 In general, Microsoft no longer recommends to host updates on-premises due to the following **challenges**:
-- **Source file management**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
+- **Source file maintenance**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
 - **Source size**: As Microsoft does not release individual patches, but rather a new set of source files, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. E.g., when devices run a mix of 32 and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files have to be downloaded and synchronized across the update locations on a monthly schedule.
 - **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy prefences with Site targeting](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increased the complexity of the implementation. If updates are managed by Microsoft Endpoint Configuration Manager, beforementioned does not apply, as devices will determine the nearest distribution point automatically.
 - **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't leverage Delivery Optimization for reducing the network impact. All devices will pull their individual set of delta files down. When using Microsoft Endpoint Configuration Manager, this can be mitigated by leveraging [Peer Cache](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/configure-peer-cache).
 
 
+### Updates from mixed on-premises and cloud locations (hybrid)
+
+With Microsoft Endpoint Configuration Manager it is possible to implement a hybrid model. This scenario combines hosting a subset of sources (e.g. for the most commonly deployed languages) on distribution points with allowing the devices to acquire missing pieces from the Office CDN, e.g. for rarely used language packs.
+
+The hybrid approach has **advantages** in scenarios when limited internet bandwith demands to host update sources on-premises, but a small subset of devices is e.g. running on a different udpate channel and would require the maintenance of a full update source file set. In this specific scenario, a hybrid approach might help by deploying updates for the majority of devices from on-premises locations, but while updates for the smaller subsets are still triggered through Microsoft Endpoint Configuration Manager, the source files are not available on distribution points and devices are allowed to fall back to the Office CDN in this case.
+
+The hybrid approach shares the same **disadvantages** as the on-premises approach, even so the complexity of source file maintenance is reduced in direct comparison.
+
+> [!NOTE]
+> Devices, which gets their udpates signaled through Microsoft Endpoint Configuration Manager, can not leverage Delivery Optimization, even if the sources are pulled down from the Office CDN. This is a limitation of the download mechanism of Microsoft Endpoint Configuration Manager.
+
+
+s, architectures 
+
+
+
+and a high number of different languages, udpate channels and/or archictures need to be managed. Sample scenario: The vast majority of devices are running Monthly Enterprise Channel, a small subset is running on Current Channel. If internet bandwidth is limited and sources need to be hosted on-premises, this can be done for devices on Monthly Enterprise Channel, which devices on Current Channel still get their update signaling through Microsoft Endpoint Configuration Manager
+
+
+Implementing a hybrid approach The main **advantage** of using on-premises locations is that devices do not need to pull down data over the internet in order to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
+
+In general, Microsoft no longer recommends to host updates on-premises due to the following **challenges**:
+- **Source file management**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
+- **Source size**: As Microsoft does not release individual patches, but rather a new set of source files, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. E.g., when devices run a mix of 32 and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files have to be downloaded and synchronized across the update locations on a monthly schedule.
+- **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy prefences with Site targeting](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increased the complexity of the implementation. If updates are managed by Microsoft Endpoint Configuration Manager, beforementioned does not apply, as devices will determine the nearest distribution point automatically.
+- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't leverage Delivery Optimization for reducing the network impact. All devices will pull their individual set of delta files down. When using Microsoft Endpoint Configuration Manager, this can be mitigated by leveraging [Peer Cache](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/configure-peer-cache).
 
 
 -------------------- OLD TEXT ----------------------
