@@ -32,6 +32,9 @@ The first step in deciding how the Microsoft 365 Apps should be updated, is to c
 ### Updates from the cloud
 When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (aka Office CDN), this is referred to as **cloud-based updates**. Microsoft operates a worldwide, distributed network of datacenters which hosts all updates for the Microsoft 365 Apps for all available update channels, languages, related products like Visio and Project, and architectures (32/64 bit). The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
 
+> [!TIP]
+> Microsoft recommends to use the cloud as update source.
+
 There are two core benefits when levering the cloud as your update source:
 - **Delta updates**: When the Microsoft 365 Apps pull down the latest updates, only the difference between the currently installed release and the targeted one is downloaded. So instead of having to handle the whole source files package, only delta differences, down to sub-file level, are pulled down by the device. This conserves a lot of network bandwidth compared with other approaches.
 - **No source files maintenance** needed: As the updates are hosted worldwide in Microsoft's datacenters, there is no need for downloading, packaging, staging and distributing the source files in your on-prem network. As updates are specific to architecture, update channel and languages, this can become a complex task in e.g. multi-language environments.
