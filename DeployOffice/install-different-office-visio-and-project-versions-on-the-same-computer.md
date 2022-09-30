@@ -88,6 +88,7 @@ Here are some example installation scenarios, whether they're supported, and an 
 - Even though a particular installation scenario is supported, it might not be recommended. For example, we don't recommend having two different versions of Office installed on the same computer, such as Office 2013 (MSI) and Office 2019 (Click-to-Run).
 - Volume licensed versions of Office 2013 and Office 2016 use Windows Installer (MSI). Volume licensed versions of Office LTSC 2021 and Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
 - For Office 365, Microsoft 365, Office LTSC 2021, and Office 2019 products, all products installed on the computer must be using the same [update channel](overview-update-channels.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, it can't be installed on the same computer that has the subscription version of the Project desktop app using Semi-Annual Enterprise Channel or on the same computer that has the subscription version of the Visio desktop app using Current Channel.
+- *(For Project 2021, Project 2019, Visio LTSC 2021, and Visio 2019)* If you're installing Project or Visio after you've installed Microsoft 365 Apps on the device, they must be configured to use the same update channel as Microsoft 365 Apps. For example, if Microsoft 365 Apps is using Monthly Enterprise Channel, then Project 2021 or Visio 2019 must be installed using Monthly Enterprise Channel.
 
 ## Related articles
 
