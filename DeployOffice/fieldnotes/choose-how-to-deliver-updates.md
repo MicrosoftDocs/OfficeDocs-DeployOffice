@@ -123,7 +123,7 @@ Microsoft Endpoint Configuration Manager can be used to deploy updates for Micro
 - Full control over end-user notifications, maintenance windows and enforcement through Configuration Manager
 - Granular control over which devices get the updates when
 
-**Considerations*
+**Considerations**
 - Requires the admin to download all content required to support every permutation of channel, architecture, and combination of languages the organization supports
 - Every permutation of Office supported leads to exponential growth of package content. This content must then be replicated to every distribution point
 - By default, any required content not found on the distribution point will result in Microsoft 365 Apps client update failure
