@@ -90,7 +90,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 
 ### Servicing profiles
 
-[Servicing profiles](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile) is a cloud-based update management solution for devices on the Monthly Enterprise Channel. It is an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering and rolling back devices.
+[Servicing profiles](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile) is a cloud-based update management solution for devices on the Monthly Enterprise Channel. It is an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
 > Servicing profiles is Microsoft's recommended solutions for Microsoft 365 Apps on Monthly Enterprise Channel.
