@@ -42,10 +42,10 @@ There are two core benefits when levering the cloud as your update source:
 When using the cloud as your update source, there are also some **considerations**:
 - **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in URL-ARTICLE LINK HERE must be accessible for devices. Microsoft recommends to allows devices to connect to the Office CDN on a system level and with bypassing any proxy servers to ensure best performance. We recommend to review the [Download sizes for updates to Microsoft 365 Apps](https://learn.microsoft.com/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
 - **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will leverage [Delivery Optimization](../delivery-optimization.md) when available. This will allow devices to share the required sources in a Peer-to-Peer fashion and reduces the amount of data which needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be leveraged. Especially [Microsoft Connected Cache in Configuration Manager](https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Microsoft Endpoint Configuration Manager infrastructures.
-- **VPN bypass**: When using virtual private network (VPN) solutions, it is recommend to bypass the VPN tunnel when downloading data from the Office CDN. This will reduce the load on the VPN infrastructure, network uplinks and allows for faster downloads.
+- **VPN bypass**: When using virtual private network (VPN) solutions, it is recommended to bypass the VPN tunnel when downloading data from the Office CDN. This will reduce the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 
 ### Updates from on-premises locations
-The Microsoft 365 Apps support multiple on-premises locations for updates. The required source files can be hosted on network shares, in local folders or drives, or on Microsoft Endpoint Configuration Manager's distribution points. Common among all these options is that the admin is responsible for ensuring that the required sources for all employed update channels, languages and architectures (32/64 bit) are available. Otherwise the update would fail.
+The Microsoft 365 Apps support multiple on-premises locations for updates. The required source files can be hosted on network shares, in local folders or drives, or on Microsoft Endpoint Configuration Manager's distribution points. Common among all these options is that the admin is responsible for ensuring that the required sources for all employed update channels, languages and architectures (32/64 bit) are available. Otherwise, the update would fail.
 
 The main **advantage** of using on-premises locations is that devices do not need to pull down data over the internet in order to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
 
@@ -58,14 +58,14 @@ In general, Microsoft no longer recommends to host updates on-premises due to th
 
 ### Updates from mixed on-premises and cloud locations (hybrid)
 
-With Microsoft Endpoint Configuration Manager it is possible to implement a hybrid model. This scenario combines hosting a subset of sources (e.g. for the most commonly deployed languages) on distribution points with allowing the devices to acquire missing pieces from the Office CDN, e.g. for rarely used language packs.
+With Microsoft Endpoint Configuration Manager, it is possible to implement a hybrid model. This scenario combines hosting a subset of sources (e.g. for the most commonly deployed languages) on distribution points with allowing the devices to acquire missing pieces from the Office CDN, e.g. for rarely used language packs.
 
-The hybrid approach has **advantages** in scenarios when limited internet bandwidth demands to host update sources on-premises, but a small subset of devices is e.g. running on a different update channel and would require the maintenance of a full update source file set. In this specific scenario, a hybrid approach might help by deploying updates for the majority of devices from on-premises locations, but while updates for the smaller subsets are still triggered through Microsoft Endpoint Configuration Manager, the source files are not available on distribution points and devices are allowed to fall back to the Office CDN in this case.
+The hybrid approach has **advantages** in scenarios when limited internet bandwidth demands to host update sources on-premises, but a small subset of devices is e.g., running on a different update channel and would require the maintenance of a full update source file set. In this specific scenario, a hybrid approach might help by deploying updates for the majority of devices from on-premises locations, but while updates for the smaller subsets are still triggered through Microsoft Endpoint Configuration Manager, the source files are not available on distribution points and devices are allowed to fall back to the Office CDN in this case.
 
 The hybrid approach shares the same **disadvantages** as the on-premises approach, even so the complexity of source file maintenance is reduced in direct comparison.
 
 > [!NOTE]
-> Devices, which gets their updates signaled through Microsoft Endpoint Configuration Manager, can not leverage Delivery Optimization, even if the sources are pulled down from the Office CDN. This is a limitation of the download mechanism of Microsoft Endpoint Configuration Manager.
+> Devices, which gets their updates signaled through Microsoft Endpoint Configuration Manager, cannot leverage Delivery Optimization, even if the sources are pulled down from the Office CDN. This is a limitation of the download mechanism of Microsoft Endpoint Configuration Manager.
 
 
 ## Step 2: Choose your way to manage updates
@@ -76,7 +76,7 @@ Based on your preferred update source location, there are several solutions for 
 
 ### Automatic Update / Microsoft Endpoint Manager
 
-Default configuration of the Microsoft 365 Apps. If not otherwise configured, devices will automatically check in with the Office CDN on a regular base and pull down updates automatically. If the Microsoft 365 Apps were deployed using [Microsoft Endpoint Manager](https://learn.microsoft.com/mem/intune/apps/apps-add-office365), this is also the default configuration.
+Default configuration of the Microsoft 365 Apps. If not otherwise configured, devices will automatically check in with the Office CDN on a regular base and pull-down updates automatically. If the Microsoft 365 Apps were deployed using [Microsoft Endpoint Manager](https://learn.microsoft.com/mem/intune/apps/apps-add-office365), this is also the default configuration.
 
 **Benefits**
 - No upfront configuration needed. Just works out of the box.
@@ -84,7 +84,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 
 **Considerations**
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients will receive the update at the same time, but in a staggered manner.
-- By default updates are not enforced. This can be mitigated by leveraging the **Update deadline** group policy setting for Office.
+- By default, updates are not enforced. This can be mitigated by leveraging the **Update deadline** group policy setting for Office.
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) only applies to unmanaged Microsoft 365 Apps installations.
 - Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](https://learn.microsoft.com/deployoffice/admincenter/overview) to monitor update adoption rate and compliance.
 
@@ -115,7 +115,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 ## Update solutions for on-premises-based updates
 
 ### Microsoft Endpoint Configuration Manager
-Microsoft Endpoint Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates for e.g. Microsoft Windows. By default, the required sources will be downloaded from the Office CDN by Configuration Manager and then synchronized and stagged on distribution points.
+Microsoft Endpoint Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates for e.g., Microsoft Windows. By default, the required sources will be downloaded from the Office CDN by Configuration Manager and then synchronized and stagged on distribution points.
 
 
 **Benefits** 
@@ -152,7 +152,7 @@ Admins can choose to download the latest releases using the [Office Deployment T
 ## Update solutions for hybrid update sources
 
 ### Microsoft Endpoint Configuration Manager
-Microsoft Endpoint Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates for e.g. Microsoft Windows. By enabling the options **If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates** when configuring the update deployment package, devices are allowed to fall back to Office CDN for missing sources. This enables admins to reduce e.g. the number of languages which need to be synchronized to distribution points. E.g. if certain language packs are only scarcely used, those devices will pull down the required update sources from the Office CDN, while getting the core content from a distribution point.
+Microsoft Endpoint Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates for e.g., Microsoft Windows. By enabling the options **If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates** when configuring the update deployment package, devices are allowed to fall back to Office CDN for missing sources. This enables admins to reduce e.g., the number of languages which need to be synchronized to distribution points. E.g. if certain language packs are only scarcely used, those devices will pull down the required update sources from the Office CDN, while getting the core content from a distribution point.
 
 **Benefits** 
 - Optimizes bandwidth where admins can stage the on-premises content that is required and offload content that isn't required to the CDN. A great example is languages. 
