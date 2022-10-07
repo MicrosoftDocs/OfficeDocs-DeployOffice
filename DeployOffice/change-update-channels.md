@@ -69,9 +69,9 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 > [!IMPORTANT]
 > If you use Configuration Manager to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
 
-## Change the update channel with Intune Administrative Templates
+## Change the update channel with Microsoft Endpoint Manager's Administrative Templates 
 
-1. Before you begin, make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Configuration Manager, or Intune.
+1. Before you begin, make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Configuration Manager, or Endpoint Manager.
 
 2. Use [administrative templates for Windows 10 and newer in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows) to enable the setting **Update Channel (2.0)** and select the new channel. The policy setting is under Computer Configuration\Microsoft Office 2016 (Machine)\Updates.
 
@@ -81,6 +81,12 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device will not show the updated channel until a build of Office from the new channel is installed
 
+> [!NOTE]
+> If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel you select will be re-evaluated and enforced during policy refresh. It is recommended that any update channel policies in your environment match the channel selection for your app assignment. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
+>   - Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
+>   - The app is configured using the Configuration designer.
+>   - The app is assigned as required.
+
 ## Considerations when changing channels
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression is not applied. Because of this, the update will be larger than normal. The update, however, will not be as large as a full installation of Microsoft 365 Apps.
@@ -88,11 +94,6 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
    - If your devices are receiving updates from the internet, you are all set and no other changes are required.
    - If you are using Configuration Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend using [dynamic collections](fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it is safe to assign updates from multiple channels to a device.
    - If you are using file shares, you must download and host the matching update in a new location/folder. Use the **Update Path** group policy setting or the Office Deployment Tool to point devices at the new location. 
-
-- If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel you select will be re-evaluated and enforced during policy refresh. It is recommended that any update channel policies in your environment match the channel selection for your app assignment. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
-   - Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
-   - The app is configured using the Configuration designer.
-   - The app is assigned as required.
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
 
