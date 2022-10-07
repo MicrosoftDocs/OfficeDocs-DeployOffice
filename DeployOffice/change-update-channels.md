@@ -69,7 +69,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 > [!IMPORTANT]
 > If you use Configuration Manager to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
 
-## Change the update channel with Microsoft Endpoint Manager's Administrative Templates 
+## Change the update channel with Microsoft Endpoint Manager Administrative Templates 
 
 1. Before you begin, make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Configuration Manager, or Endpoint Manager.
 
