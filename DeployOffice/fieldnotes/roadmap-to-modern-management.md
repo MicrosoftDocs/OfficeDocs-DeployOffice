@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides several new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers, we have developed the following best practices on how to adopt these new features.
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides several new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers, we've developed the following best practices on how to adopt these new features.
 
 There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits, while keeping the rate of change manageable. Adjust the approach to the needs of your organization. If you want to explore the user interface and options beforehand, we have interactive demos for [Microsoft 365 Apps health](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/1/0) and the [inventory](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/2/0) available.
 
@@ -48,12 +48,12 @@ If you disabled Diagnostic Data for Office on your devices, you might only see a
 
 ## Get insights per device: Inventory and security update status
 
-Another new feature is Inventory. It is specifically tailored for the Microsoft 365 Apps and gives you a full overview of all Microsoft 365 Apps instances on Windows which are activated and connected to your tenant. It is not limited by management or directory domain. So no matter how a device is managed (or not managed at all) or into which directory service it is joined (or still in workgroup mode), Inventory will provide you insights. All devices running at least Version 2008 of Microsoft 365 Apps will automatically register after enabling the feature:
+Another new feature is Inventory. It's specifically tailored for the Microsoft 365 Apps and gives you a full overview of all Microsoft 365 Apps instances on Windows that are activated and connected to your tenant. It isn't limited by management or directory domain. So no matter how a device is managed (or not managed at all) or into which directory service it's joined (or still in workgroup mode), Inventory will provide you insights. All devices running at least Version 2008 of Microsoft 365 Apps will automatically register after enabling the feature:
 
 1. Sign in to the Apps Admin Center at [config.office.com](https://config.office.com/).
 2. Navigate to **Inventory** and choose **Get started** to enable the feature.
 
-It usually takes up to 10 minutes for provisioning the service. After this has finished, devices will start to regiseter into the inventory and you can drill through data points like:
+It usually takes up to 10 minutes for provisioning the service. After this has finished, devices will start to register into the inventory, and you can drill through data points like:
 
 - Update channel
 - Versions deployed
@@ -73,12 +73,11 @@ The Microsoft 365 Apps installation itself provides the inventory information, s
 
 Moving your devices to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) provides a good balance between receiving monthly feature and quality updates (similar to [Current Channel](../overview-update-channels.md#current-channel-overview)), while having a predictable cadence with only one update per month.
 
-We highly recommend to test out Monthly Enterprise Channel. There are two common ways how you can switch devices over without the need for a re-install:
+We highly recommend testing out Monthly Enterprise Channel. There are two common ways you can switch devices over without the need for a reinstall:
 
-- If you're planning to adopt Servicing Profiles (see below), devices will automatically be moved to Monthly Enterprise Channel if they are in-scope of the selected criteria. In this scenario, there's no need to move devices upfront and everything will happen automatically after setting up Servicing Profiles.
-- If you don't want to adopt Servicing Profiles yet or at a later stage, you can use existing management tools.
-
-If you prefer to move your devices using existing tools, detailed guidance for the most common scenarios is available on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and how to perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
+- The recommended way to switch your devices to Monthly Enterprise Channel is with a [servicing profile](../admincenter/servicing-profile.md). By using a servicing profile, your devices, both managed and unmanaged, will automatically move to Monthly Enterprise Channel if they're in-scope of the selected criteria. In this scenario, there's no need to move devices upfront and everything will happen automatically after setting up a servicing profile. Review [adopting servicing profiles](adopt-servicing-profiles.md) to learn more about available admin controls.
+- You can switch managed devices to Monthly Enterprise Channel by using existing management tools. If you're using Microsoft Endpoint Manager, review this [guidance](../change-update-channels.md#change-the-update-channel-with-intune-administrative-templates). For environments with Microsoft Endpoint Configuration Manager, we recommend reviewing our best practices on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
+- For unmanaged devices, you can [change the default channel in the Microsoft 365 admin center](../overview-update-channels.md#microsoft-365-admin-center). This will convert existing, unmanaged installation to the selected channel.
 
 ## Prepare your network to receive updates from the internet
 
@@ -95,17 +94,18 @@ If you use Servicing Profiles to manage updates directly from the cloud, your de
 - If your VPN is configured for [forced tunnel with exceptions](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) and supports using FQDNs for Dynamic Split Tunneling, ensure that the [URL for the Office CDN is included in the exclusion list](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) (#92). For details, see our [how-to guides for common VPN solutions](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel#howto-guides-for-common-vpn-platforms).
 - If your VPN is configured for forced tunnel and doesn't support FQDN-based exceptions, contact your Microsoft representative for support to implement an IP-based static solution.
 
-## Use Servicing Profiles to keep devices current
+## Use servicing profile to keep devices current
 
-You can use [Servicing Profiles](../admincenter/servicing-profile.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
+You can use a [servicing profiles](../admincenter/servicing-profile.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
 
-No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by Servicing Profiles. If the device matches the rules set by the admin, Service Profiles will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Endpoint Manager.
+No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by servicing profile. If the device matches the rules set by the admin, the service profile will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Endpoint Manager.
 
-Note that Servicing Profiles currently only supports managing Monthly Enterprise Channel updates. So any device that falls into the scope of the rules will be moved to this channel.
+> [!Note]
+> Currently, servicing profile only supports managing Monthly Enterprise Channel updates. Any device that falls into the scope of the rules will be moved to this channel.
 
-Before you adopt Servicing Profiles, consider the following factors:
+Before you adopt a servicing profile, consider the following factors:
 
 - All devices that match the rule set will be switched over to Monthly Enterprise Channel and kept up to date.
 - All devices that match the rule set will automatically stop accepting updates for Microsoft 365 Apps coming from other sources.
 
-If these factors check out, navigate to the Servicing Profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise Channel update. The [Adopting Servicing Profiles](adopt-servicing-profiles.md) article has more details on how this feature works and step-by-step for the most common adoption scenarios.
+If these factors check out, navigate to the servicing profile blade, and follow the instructions in the wizard. Note that the Servicing Profile becomes active immediately when you save the profile. So, if an eligible device checks in with the service right after you finish the wizard, it will get the instructions to move to the latest Monthly Enterprise Channel update. The [Adopting servicing profiles](adopt-servicing-profiles.md) article has more details on how this feature works and step-by-step for the most common adoption scenarios.
