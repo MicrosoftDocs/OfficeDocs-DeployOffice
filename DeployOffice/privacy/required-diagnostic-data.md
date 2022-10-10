@@ -11456,7 +11456,7 @@ The following fields are collected:
 
 The event is triggered during start-up and shutdown as various layers of the application complete their phase of process. The event captures performance markers for each layer of application start-up and shutdown. The data is used to determine if the app is healthy and performing as expected.
 
-The following fields are collected 
+The following fields are collected: 
 
 - **DurationMillis** - The time, in milliseconds, that it took for the stage to complete the indicated step
 
