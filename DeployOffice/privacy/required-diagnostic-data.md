@@ -2080,11 +2080,11 @@ The following fields are collected:
  
 - **thread_id** - thread ID of the conversation draft is associated with
 
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
 - **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
 
 - **video_message_link_count** - the number of video links which could be unfurled while sending a message
-
-- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
 
 
 #### drag.and.drop
@@ -9239,11 +9239,11 @@ The following fields are collected:
 
 - **thread_id** - indicates thread ID of the conversation being replied/forwarded
 
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
 - **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
 
 - **video_message_link_count** - the number of video links which could be unfurled while sending a message
-
-- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
 
 
 #### session
@@ -13137,7 +13137,7 @@ The following fields are collected:
 
 - **Data_ErrorType** - Category of error
 
--**Data_ErrorMetadata** - Additional details about error
+- **Data_ErrorMetadata** - Additional details about error
 
 
 #### Office.Apple.Apple.AppBoot.Mac
