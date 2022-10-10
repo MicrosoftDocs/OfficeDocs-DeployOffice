@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Apps health"
-ms.author: jacarril
-author: javiercarrillo
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

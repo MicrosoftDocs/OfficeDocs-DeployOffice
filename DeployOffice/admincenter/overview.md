@@ -1,7 +1,7 @@
 ---
 title: "Overview of the Microsoft 365 Apps admin center"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

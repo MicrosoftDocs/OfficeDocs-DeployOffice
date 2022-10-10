@@ -69,7 +69,6 @@ Before installing and using the Readiness Toolkit, you should be aware of the fo
 
 - Excel 2010 or later
 
-- [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
 
 > [!NOTE]
 > - We recommend using the 64-bit version of Excel, especially if you expect more than 400,000 results to appear in the readiness report.

@@ -1,7 +1,7 @@
 ---
 title: "Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center"
-ms.author: darrend
-author: darrendmsft
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

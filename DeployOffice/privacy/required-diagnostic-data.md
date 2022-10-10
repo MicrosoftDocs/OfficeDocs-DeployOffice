@@ -2016,6 +2016,8 @@ This event is triggered when a user interacts with the conversation view. For ex
 
 The following fields are collected:
 
+- **attachment_origin** - The origin of the attachment
+
 - **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
@@ -2046,11 +2048,13 @@ The following fields are collected:
 
 - **suggested_reply_type** - indicates type of suggested reply for this action. Possible values are text, send_avail, and create_meeting.
 
+- **suggested_reply_with_file_shown** - Log whether smart reply with file attachment has been shown
+
 - **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
 
 #### draft.action
 
-The data is used for monitoring possible negative impact on your ability to create and save mail drafts.
+The event is triggered when the user closes by tapping the top left button at the full compose view or save some drafts from quick reply view. The data is used for monitoring possible negative impact on the ability to create and save mail drafts.
 
 The following fields are collected: 
 
@@ -2075,6 +2079,13 @@ The following fields are collected:
 - **suggestions_shown** - indicates how many smart compose suggestions shown to the user
  
 - **thread_id** - thread ID of the conversation draft is associated with
+
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
+- **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
+
+- **video_message_link_count** - the number of video links which could be unfurled while sending a message
+
 
 #### drag.and.drop
 
@@ -2852,25 +2863,6 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
-#### Office.Android.AdInfraEvent
-
-This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
-- Type of ads sent by the ad network
-- Error messages sent by the ad network (request failed)
-- No-response events from the ad network
-
-The following fields are collected:
-
-- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
-
-- **Data_Operation_Metadata** - Additional information regarding the ad related operation performed by the ad infra
-
-- **Data_Operation_Result** - The result of the ad related operation performed by the ad infra
-
-- **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
-
-- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
-
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
 This event is collected for Office applications running under Android platform and records when a file open operation takes place. The event helps in keeping the file open operation secure, up- to- date and performing properly. The goal of collecting this data is to continuously improve the file open performance. 
@@ -3014,6 +3006,27 @@ The following fields are collected:
 - **EventDate** -Timestamp of the event occurrence  
 
 - **SessionID** - Globally Unique Identifier to connect events by session 
+
+#### Office.Android.EarlyTelemetry.AdInfraEvent
+
+*[This event was previously named Office.Android.AdInfraEvent.]*
+
+This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
+- Type of ads sent by the ad network
+- Error messages sent by the ad network (request failed)
+- No-response events from the ad network
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_Operation_Metadata** - Additional information regarding the ad related operation performed by the ad infra
+
+- **Data_Operation_Result** - The result of the ad related operation performed by the ad infra
+
+- **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
 
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesAvailability
@@ -9160,11 +9173,11 @@ The following fields are collected:
 
 #### send.message
 
-Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if feature is functioning successfully and to plan feature improvement for images in emails.
+This event is triggered when the user has finished composing and taps the send button. Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if the feature is functioning successfully.
 
 The following fields are collected:
   
-- **account** - tracks the account that performed the action
+- **account** - tracks the account that performed the action *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **compose_addressing_duration** - indicates the total time user spends on To/Cc/Bcc fields
 
@@ -9225,6 +9238,13 @@ The following fields are collected:
 - **suggestions_shown** - indicates how many smart compose suggestions shown to the user
 
 - **thread_id** - indicates thread ID of the conversation being replied/forwarded
+
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
+- **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
+
+- **video_message_link_count** - the number of video links which could be unfurled while sending a message
+
 
 #### session
 
@@ -10351,6 +10371,8 @@ The following fields are collected:
 
   - **Data_CsiDownloadErrDlgSuppressed:bool** – Whether the dialog that would have been shown by CSI during a download error has been suppressed, usually in favor of a dialog shown by PowerPoint instead.
 
+  - **Data_DeferredBlobDisabledReasons** - Value that maps to an enum set indicating the reasons deferred blobs were disabled during the document open
+
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
   - **Data\_DetermineFileType -** Method DetermineFileType execution duration in milliseconds
@@ -10445,6 +10467,10 @@ The following fields are collected:
 
   - **Data\_DownloadFragmentSize -** Size of fragment(downloadable chunk of file), usually 3.5 MB
 
+  - **Data_DRGDisabledReason** - Value that maps to an enum indicating the reason the DRG stack was disabled during download for document open
+
+  - **Data_DRGSyncOpResult** - Value that maps to an enum indicating the DRG sync op result during document open
+
   - **Data\_ExcludedEmbeddedItems -** Number of zip parts that are excluded for first render
 
   - **Data\_ExcludedEmbeddedItemsSize -** Total size of zip parts that are excluded for first render
@@ -10521,6 +10547,8 @@ The following fields are collected:
 
   - **Data\_InitSecureReaderReasons -** Method InitSecureReaderReasons execution duration in milliseconds
 
+  - **Data_InsecureWarningStage** - Value that maps to the status of the Insecure Warning API call and the selected group policy during insecure URL upgrade attempt
+
   - **Data\_IsIncOpenInProgressWhileOpen -** In case of multiple open of the same document, is Inc open protocol running alongside open protocol?
 
   - **Data\_IsMultiOpen -** Do we support multiple open?
@@ -10530,6 +10558,8 @@ The following fields are collected:
   - **Data\_IsODPFile -** Is document in 'Open Document Format' used by OpenOffice.org
 
   - **Data\_IsPPTMetroFile -** Is document metro (pptx) file format
+
+  - **Data_LegacyFallbackReason** - Value that maps to an enum indicating the reason a fallback to the legacy open protocol was triggered during a document open
 
   - **Data\_LoadDocument -** Method LoadDocument execution duration in milliseconds
 
@@ -10565,6 +10595,8 @@ The following fields are collected:
 
   - **Data\_OtherContentTypesWithRequiredParts -** Nonstandard content types that were excluded but required for first render
 
+  - **Data_PersistStack** - Combined string of predefined strings indicating the type of persist stack being used to open this document
+
   - **Data\_PrepCacheAsync -** Flag for OcsiOpenPerfPrepCacheAsync
 
   - **Data\_PreviousDiscardFailed -** Indicates previous open/close attempt on the document didn't properly release all memory
@@ -10572,6 +10604,14 @@ The following fields are collected:
   - **Data\_PreviousFailureHr -** In case of reopening of the same document, what was last failure result
 
   - **Data\_PreviousFailureTag -** In case of reopening of the same document, what was last failure tag (pointer to code location)
+
+  - **Data_PreviousOpenFallbackHR** - The error code for the failure that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackProtocol** - The previous protocol that was used before a failure was detected that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackTag** - The failure tag (pointer to code location) that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackTimeMS** - The amount of time spent in milliseconds before a failure occurred that resulted in opening the document using a fallback method.
 
   - **Data\_RemoteDocToken -** Is Remote Open enabled (prototype feature that enables opening file from service rather than from host)?
 
@@ -10616,6 +10656,8 @@ The following fields are collected:
   - **Data\_TimeToRequiredPackage -** Time took to create required package
 
   - **Data\_TimeToRequiredParts -** Time took to create package with all required parts in it
+
+  - **Data_TimeToViewMS** - Time taken in milliseconds before the document is visible 
 
   - **Data\_TotalRequiredParts -** Total number of PowerPoint parts required for first render
 
@@ -11410,6 +11452,38 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Status code of the operation result
 
+#### sharedcore.bootstagestatistics
+
+The event is triggered during start-up and shutdown as various layers of the application complete their phase of process. The event captures performance markers for each layer of application start-up and shutdown. The data is used to determine if the app is healthy and performing as expected.
+
+The following fields are collected: 
+
+- **DurationMillis** - The time, in milliseconds, that it took for the stage to complete the indicated step
+
+- **Result** - The result of the stage, indicating if it was completed successfully or if there was an error
+
+- **Stage** - Label of the stage of the boot process that is being reported on
+
+- **Step** - Label indicating if this event is reporting information on application startup or shutdown of one of the application’s components
+
+Common Fields (documented once for the set of Required events for the app) 
+
+- **AppInfo.Env** - Application environment, “debug” or “ship” based on the build of the application
+
+- **AppInfo.Name** - "olk" (Outlook) 
+
+- **AppInfo.UpdateRing** - The update ring of the app (for example, “Dogfood”, “Production”)
+
+- **AppInfo.Version** - String specifying the application version (for example, 1.2022.805.100)
+
+- **DeviceInfo.Id** - A unique identifier of the user's device, gathered based on the user's network adapter. 
+
+- **Event.SchemaVersion** - An integer specifying the version of the telemetry event schema
+
+- **Session.Id** - A globally unique identifier (GUID) generated at the start of the current session of the application, used to uniquely identify the session
+
+- **UserInfo.Language** - The user's language, in the format “en-us” based on the system locale unless otherwise specified
+
 
 ### *Office accessibility configuration subtype*
 
@@ -11915,6 +11989,8 @@ The following fields are collected:
 - **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
 - **IsDebug** - indicates if session is a debug session
+
+- **IsMOS** - Indicates if the add-in payload format type is XML or JSON.
 
 - **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
 
@@ -12796,7 +12872,9 @@ The following fields are collected:
 - **wait_time** - the time to build message URL
 
 
-#### Office.Android.AdsMobile.AdUIEvent 
+#### Office.Android.AdsMobile.Wxpu.AdUIEvent
+
+*[This event was previously named Office.Android.AdsMobile.AdUIEvent.]*
 
 This is event is triggered when a user interacts with an advertisement.  This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
 
@@ -13043,6 +13121,23 @@ The following fields are collected:
     - 16 - AuthToken is not sent to Dime
 
 - **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
+
+
+#### Office.Android.EarlyTelemetry.AdErrorEvent
+
+This event is triggered for ad related error scenario. This event does not collect any user related data from the online platform. 
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
+
+- **Data_SurfaceId** - Uniquely identifies a surface where creative is displayed 
+
+- **Data_ErrorType** - Category of error
+
+- **Data_ErrorMetadata** - Additional details about error
 
 
 #### Office.Apple.Apple.AppBoot.Mac
@@ -15227,6 +15322,8 @@ The following fields are collected for iOS only:
 - **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
 
 - **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
+
+- **connected_apps_sync_state** - Tells us if the user has turned on connected app sync to help us detect issues related to this setting.
 
 - **contacts_sort_by** - Tracks whether the contacts are sorted by either first name or last name
 

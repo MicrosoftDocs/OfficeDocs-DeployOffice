@@ -25,7 +25,7 @@ With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365
 
 ## Example of a standard configuration file
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 32-bit English edition of Office, or you can edit the file to install the 32-bit English edition of Office with the EULA automatically accepted and without Publisher.
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Office, or you can edit the file to install the 64-bit English edition of Office with the EULA automatically accepted and without Publisher.
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 
@@ -34,8 +34,8 @@ This configuration file includes the most-commonly used elements and attributes,
 ```xml
 <Configuration>
   <Add SourcePath="\\Server\Share" 
-       OfficeClientEdition="32"
-       Channel="SemiAnnual" >
+       OfficeClientEdition="64"
+       Channel="MonthlyEnterprise" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
       <Language ID="ja-jp" />
@@ -54,8 +54,8 @@ This configuration file includes the most-commonly used elements and attributes,
 |**Value**|**Description**|
 |:-----|:-----|
 |Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
-|Add OfficeClientEdition="32"  <br/> |Downloads and installs the 32-bit edition of Office  <br/> |
-|Add Channel="SemiAnnual"  <br/> |Office will be installed using Semi-Annual Enterprise Channel.  <br/> |
+|Add OfficeClientEdition="64"  <br/> |Downloads and installs the 64-bit edition of Office  <br/> |
+|Add Channel="MonthlyEnterprise"  <br/> |Office will be installed using Monthly Enterprise Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Microsoft 365 Apps for enterprise.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
 |Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
@@ -63,7 +63,7 @@ This configuration file includes the most-commonly used elements and attributes,
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 
 > [!NOTE]
-> The Logging element is no longer supported as a configuration option for the Office Deployment Tool. Log files can be found in the %temp% folder.
+> The Logging element is no longer supported as a configuration option for the Office Deployment Tool. Log files can be found in the user's %temp% folder as well as in C:\Windows\Temp.
 
 ## Add element
 
@@ -73,9 +73,9 @@ Defines the products and languages to download or install
 
 ```xml
 <Add SourcePath="\\Server\Share" 
-     OfficeClientEdition="32"
-     Channel="SemiAnnual" 
-     Version="16.0.8201.2193" >
+     OfficeClientEdition="64"
+     Channel="MonthlyEnterprise"
+     Version="16.0.15330.20306" >
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
@@ -112,7 +112,7 @@ If Microsoft 365 Apps is already installed on a device, you can use Version="Mat
 
 Example values:
 
-- Version="16.0.8201.2193"
+- Version="16.0.15330.20306"
 - Version="MatchInstalled"
 
 
@@ -194,8 +194,8 @@ Allowed values:
 
 ```xml
 <Add SourcePath="\\Server\Share" 
-     OfficeClientEdition="32"
-     Channel="SemiAnnual" 
+     OfficeClientEdition="64"
+     Channel="MonthlyEnterprise"
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
@@ -216,7 +216,7 @@ For more information about using MigrateArch, see [Change a Microsoft 365 Apps i
 
 Optional. Defaults to False if not specified.
 
-For Configuration Manager to be able to manage Microsoft 365 Apps updates, an Office COM object needs to be enabled on the computer where Office is installed. If set to TRUE, the Office COM object takes commands from Configuration Manager to download and install client updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
+If set to True, a COM object gets registered which is required for allowing update management solutions (e.g. Microsoft Endpoint Configuration Manager) to manage  Office updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
 For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
@@ -229,7 +229,7 @@ Allowed values:
 
 ```xml
 <Configuration>
-  <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="True" >
+  <Add OfficeClientEdition="64" Channel="MonthlyEnterprise" OfficeMgmtCOM="True" >
     <Product ID="O365ProPlusRetail">
       <Language ID="en-us" />
     </Product>
@@ -292,7 +292,7 @@ In the following example, Project Online Desktop Client will be installed on the
 
 ```xml
 <Configuration>
-  <Add >
+  <Add>
       <Product ID="ProjectProRetail" MSICondition="PrjStd,PrjStdR">
          <Language ID="en-us" />
          <Language ID="MatchPreviousMSI" />
@@ -317,8 +317,8 @@ Defines which languages to download or install. If you define multiple languages
 
 ```xml
 <Add SourcePath="\\Server\Share" 
-     OfficeClientEdition="32"
-     Channel="SemiAnnual" 
+     OfficeClientEdition="64"
+     Channel="MonthlyEnterprise"
      AllowCdnFallback="True">
   <Product ID="O365ProPlusRetail">
      <Language ID="MatchInstalled" />
@@ -420,8 +420,8 @@ Defines which Microsoft 365 Apps products should not be installed. OneDrive is a
 
 ```xml
 <Add SourcePath="\\Server\Share" 
-     OfficeClientEdition="32"
-     Channel="SemiAnnual" >
+     OfficeClientEdition="64"
+     Channel="MonthlyEnterprise">
   <Product ID="O365ProPlusRetail">
     <Language ID="en-us" />
     <Language ID="ja-jp" />
@@ -667,7 +667,7 @@ If you use Group Policy with the [Administrative Template files (ADMX/ADML) for 
 
 Example values:
 
-- TargetVersion="15.1.2.3"
+- TargetVersion="16.0.12345.12345"
 - TargetVersion=""
 
 ### Deadline attribute (part of Updates element)

@@ -1,6 +1,6 @@
 ---
 title: "Changes to update channels for Microsoft 365 Apps"
-ms.author: nwhite
+ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro

@@ -2,6 +2,16 @@
 
 
 
+## Week of September 19, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/20/2022 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+| 9/20/2022 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 9/20/2022 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of September 12, 2022
 
 
@@ -30,12 +40,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 8/25/2022 | [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline) | modified |
-
-
-## Week of August 15, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/15/2022 | [Guide to Office Telemetry Dashboard resources](/DeployOffice/compat/compatibility-and-telemetry-in-office) | modified |
-| 8/15/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
