@@ -71,12 +71,9 @@ The following table shows the forecasted schedule of when this change will be av
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
 |Current Channel|Version 2206|Started rolling out on July 27, 2022|
-|Monthly Enterprise Channel|*Version 2208*|*October 11, 2022*|
-|Semi-Annual Enterprise Channel (Preview)|*Version 2208*|*October 11, 2022*|
+|Monthly Enterprise Channel|Version 2208|October 11, 2022|
+|Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel |*Version 2208*|*January 10, 2023*|
-
-> [!NOTE]
-> As we roll out this change to Current Channel over the next few weeks, not all customers will see the change right away.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
