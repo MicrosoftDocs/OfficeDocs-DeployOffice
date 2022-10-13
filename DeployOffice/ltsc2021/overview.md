@@ -124,7 +124,7 @@ Power View isn't available for the version of Excel that's included with Office 
 
 ## What’s stayed the same in Office LTSC 2021?
 
-You can use the same software distribution tools, such as Microsoft Endpoint Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
+You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
 
 Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md).
 
