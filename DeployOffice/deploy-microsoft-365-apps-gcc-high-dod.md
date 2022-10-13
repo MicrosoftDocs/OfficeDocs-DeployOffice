@@ -33,7 +33,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 > [!IMPORTANT]
 > For Teams, currently you need to exclude Teams from being installed when you install Microsoft 365 Apps for enterprise. Instead, you need to install Teams by using the separate MSI-based installer. In the future, you'll be able to install Teams along with Microsoft 365 Apps for enterprise without needing to use the separate MSI-based installer.
 > - For steps on how to exclude Teams from being installed with Microsoft 365 Apps for enterprise, see [How to exclude Microsoft Teams from new installations of Microsoft 365 Apps](teams-install.md#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) and [Use Group Policy to control the installation of Microsoft Teams](teams-install.md#use-group-policy-to-control-the-installation-of-microsoft-teams).
->- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment).
+>- For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Configuration Manager](/MicrosoftTeams/msi-deployment).
 
 ## Which update channel of Microsoft 365 Apps for enterprise to use
 
@@ -57,7 +57,7 @@ There's no special guidance about what tools you can use to deploy Microsoft 365
 
 To deploy Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool along with a configuration.xml file. The Office Deployment Tool is a command line tool, so it can be used with scripts or batch files. The configuration.xml file contains the settings for the installation. For example, where to install Microsoft 365 Apps for enterprise from, whether to install the 32-bit or 64-bit version, which languages to install, and where Microsoft 365 Apps for enterprise should connect to get updates. For more information about the Office Deployment Tool and the configuration.xml file, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md) and [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to deploy Microsoft 365 Apps for enterprise. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
+You can also use enterprise software deployment tools, such as Microsoft Configuration Manager, to deploy Microsoft 365 Apps for enterprise. For more information about using Configuration Manager, see [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md) and [Deploy with Configuration Manager (2012 R2)](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
 
 > [!NOTE]
 > If you have anti-virus or other endpoint protection software configured to prevent installs or data writes to your devices, we recommend that you update to the most current version of that software, if possible. In some cases, you may need to configure an exception for the OfficeClickToRun.exe process in order for the install to complete successfully.

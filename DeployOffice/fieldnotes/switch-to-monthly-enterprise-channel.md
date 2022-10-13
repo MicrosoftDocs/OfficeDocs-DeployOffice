@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Endpoint Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../manage-microsoft-365-apps-updates-configuration-manager.md).
+The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../manage-microsoft-365-apps-updates-configuration-manager.md).
 
 The article shows a common approach to move devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. The admin has to perform three actions:
 
@@ -92,7 +92,7 @@ After the deployed application updates the device configuration, it still must p
 
 In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both channels to a collection holding the targeted devices:
 
-- Devices that have not yet received instructions to switch channels can apply the regular Semi-Annual Enterprise Channel update to stay safe and secure.
+- Devices that haven't yet received instructions to switch channels can apply the regular Semi-Annual Enterprise Channel update to stay safe and secure.
 
 - Devices that have already received instructions to switch channels will download and apply the update from the Monthly Enterprise Channel.
 

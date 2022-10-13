@@ -39,7 +39,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
   
 ## Deploy
 
-Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. 
+Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Configuration Manager to deploy Microsoft 365 Apps. 
 
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 
@@ -54,7 +54,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
 

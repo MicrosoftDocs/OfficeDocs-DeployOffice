@@ -26,7 +26,7 @@ While both versions are supported and can be installed on the same device, OneNo
 
 ## OneNote deployment guidance
 
-You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
+You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
 
 OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
@@ -57,7 +57,7 @@ There are different ways to exclude OneNote from being installed with Office, de
 |Method  |Instructions  |
 |---------|---------|
 |Office Deployment Tool | You can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you create your configuration.xml file.|
-|Microsoft Endpoint Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
+|Microsoft Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
 But, if you're allowing your users to install Office for themselves from the Office 365 portal, there is no way to exclude OneNote from being installed.

@@ -193,7 +193,7 @@ When you switch channels, there are certain considerations - such as loss of fea
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options that are available, the Microsoft solutions include the following tools:
 
-  - [Microsoft Endpoint Configuration Manager](/configmgr)
+  - [Microsoft Configuration Manager](/configmgr)
 
   - [Intune](/intune)
 
@@ -205,9 +205,9 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - Other features in the [Device Management Admin Console](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/microsoft-intune-rolls-out-an-improved-streamlined-endpoint/ba-p/937760)
 
-Although the capabilities that these tools represent are still available, we have listened to market feedback and, as illustrated in Figure 6, consolidated these tools to create one single integrated solution, Microsoft Endpoint Configuration Manager.
+Although the capabilities that these tools represent are still available, we have listened to market feedback and, as illustrated in Figure 6, consolidated these tools to create one single integrated solution, Microsoft Configuration Manager.
 
-![Microsoft Endpoint Configuration Manager chart.](../images/endpoint-configuration-manager-breakdown.png)
+![Microsoft Configuration Manager chart.](../images/endpoint-configuration-manager-breakdown.png)
 *Figure 6*
 
 As of 2019, Microsoft refers to our suite of management solutions under this single brand. By attaching Intune to your Configuration Manager deployment (referred to as co-management), you can attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can:
@@ -216,9 +216,9 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 - Deploy client updates faster to make your organization secure and compliant quickly.
 - Take immediate actions on your devices.
 
-[Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
+[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
 
-- The prerequisites that are required when using Microsoft Endpoint Configuration Manager to update Microsoft 365 Apps.
+- The prerequisites that are required when using Microsoft Configuration Manager to update Microsoft 365 Apps.
 
 - How to enable Configuration Manager to receive Microsoft 365 client package notifications.
 
@@ -226,7 +226,7 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 
 - Your options for enabling clients to receive updates from Configuration Manager.[[7]](#footnote-7)
 
-For comprehensive instructions to configure your deployment strategy, see the [Microsoft Endpoint Configuration Manager documentation](/mem/configmgr/).
+For comprehensive instructions to configure your deployment strategy, see the [Microsoft Configuration Manager documentation](/mem/configmgr/).
 
 The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
