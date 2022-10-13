@@ -33,7 +33,7 @@ Based on customer feedback, we're now introducing Monthly Enterprise Channel. Th
 
 This new update channel is available as of May 12, 2020. Version 2003 is the first version of Monthly Enterprise Channel.
 
-You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
+You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
 > [!NOTE]
 > - To deploy Monthly Enterprise Channel by using Group Policy and the *Update Channel* policy setting, download at least version 5017.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030). Version 5017.1000 was released on May 14, 2020.
@@ -117,7 +117,7 @@ If you want to use a specific update channel, specify that update channel in you
 ### Office Customization Tool  
 We recommend using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you build your configuration XML files for use with the Office Deployment Tool. When you use the Office Customization Tool and select Microsoft 365 Apps for enterprise in the **Office Suites** drop-down list, the **Update channel** drop-down will choose Current Channel automatically. You can always choose a different update channel.
 
-You'll also see this default update channel selection if you use Microsoft Endpoint Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
+You'll also see this default update channel selection if you use Microsoft Configuration Manager (current branch) and the Office 365 Client Installation Wizard. That’s because the wizard makes use of the Office Customization Tool.
 
 ### Microsoft 365 admin center  
 Current Channel will be the default selection when you sign into the Microsoft 365 admin center and go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**.

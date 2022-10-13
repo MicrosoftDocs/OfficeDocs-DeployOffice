@@ -100,7 +100,7 @@ Example values:
 - SourcePath="\\\server\share\"
 - SourcePath="C:\Downloads\Microsoft"
 
-The SourcePath value should not include the /Office part or the name of the folder on which Office Data have been downloaded.
+The SourcePath value shouldn't include the /Office part or the name of the folder on which Office Data have been downloaded.
 
 ### Version attribute (part of Add element)
 
@@ -120,7 +120,7 @@ Example values:
 
 Optional.
 
-Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office is not installed on the device and OfficeClientEdition is not specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures are not supported. 
+Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office isn't installed on the device and OfficeClientEdition isn't specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures aren't supported. 
 
 Allowed values:
 
@@ -131,9 +131,9 @@ Allowed values:
 
 Optional.
 
-Defines which channel to use for installing Office. If Office is not installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute is not specified, the ODT will match the channel of the existing installation.
+Defines which channel to use for installing Office. If Office isn't installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute isn't specified, the ODT will match the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there is such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](change-update-channels.md).
+This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](change-update-channels.md).
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 
@@ -151,9 +151,9 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there is a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
+If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element)
 
@@ -216,9 +216,9 @@ For more information about using MigrateArch, see [Change a Microsoft 365 Apps i
 
 Optional. Defaults to False if not specified.
 
-If set to True, a COM object gets registered which is required for allowing update management solutions (e.g. Microsoft Endpoint Configuration Manager) to manage  Office updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
+If set to True, a COM object gets registered which is required for allowing update management solutions (e.g. Microsoft Configuration Manager) to manage  Office updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
-For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
 Allowed values: 
 
@@ -345,7 +345,7 @@ For a list of all languages, see [Languages, culture codes, and companion proofi
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
-MatchOS and MatchInstalled cannot install the operating system languages if Office doesn't support that language or if the ODT cannot find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
+MatchOS and MatchInstalled can't install the operating system languages if Office doesn't support that language or if the ODT can't find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the Office CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
 
 MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more information about MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](fieldnotes/build-dynamic-lean-universal-packages.md).
 
@@ -366,7 +366,7 @@ Optional.
 
 When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
 
-If there is no TargetProduct specified with MatchInstalled, the ODT will attempt to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you are using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT will attempt to match the already installed languages for this product.
+If there's no TargetProduct specified with MatchInstalled, the ODT will attempt to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you're using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT will attempt to match the already installed languages for this product.
 
 Example values:
 
@@ -402,7 +402,7 @@ Allowed values:
 
 Optional. Defaults to **FALSE** if not specified.
 
-If **AcceptEULA** is set to **TRUE**, the user does not see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or is not included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
+If **AcceptEULA** is set to **TRUE**, the user doesn't see a Microsoft Software License Terms dialog box. If this attribute is set to **FALSE** or isn't included, the user may see a Microsoft Software License Terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
 
 Allowed values:
 
@@ -410,11 +410,11 @@ Allowed values:
 - AcceptEULA="FALSE"
 
 > [!NOTE]
-> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. Microsoft Endpoint Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
+> If you deploy a version of Office before Version 1803, this setting will be applied only if you install with the user's account. Microsoft Configuration Manager and other software distribution tools that use the SYSTEM account for installation will not apply the setting.
 
 ## ExcludeApp element
 
-Defines which Microsoft 365 Apps products should not be installed. OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
+Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
 
@@ -439,7 +439,7 @@ If a configuration file with ExcludeApp is used to install Office on a device th
 
 Required.
 
-Defines the ID of the product that should not be installed.
+Defines the ID of the product that shouldn't be installed.
 
 Allowed values:
 
@@ -488,7 +488,7 @@ Defines the value of the named property.
 
 Optional. Default is **0** if not specified.
 
-Because Microsoft 365 Apps is set to activate automatically, you should not set this property for Microsoft 365 Apps products. For other products, you can set **AUTOACTIVATE** to **1** to have the product activate automatically.
+Because Microsoft 365 Apps is set to activate automatically, you shouldn't set this property for Microsoft 365 Apps products. For other products, you can set **AUTOACTIVATE** to **1** to have the product activate automatically.
 
 Allowed values:
 
@@ -516,7 +516,7 @@ Allowed values:
 
 Optional.
 
-By default, App-V packages created by the ODT share the same App-V Package ID. Administrators can use **PACKAGEGUID** to specify a different Package ID. This allows you to publish multiple App-V packages of Office to an App-V Management Server. But, this doesn't enable you to deploy more than one Office App-V package to a single computer. You can use the ODT to create App-V packages for Microsoft 365 Apps. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
+By default, App-V packages created by the ODT share the same App-V Package ID. Administrators can use **PACKAGEGUID** to specify a different Package ID. This allows you to publish multiple App-V packages of Office to an App-V Management Server. But, this doesn't enable you to deploy more than one Office App-V package to a single computer. You can use the ODT to create App-V packages for Microsoft 365 Apps. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard isn't supported.
 
 The Package ID must follow the format of the example and can only use these characters: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F  
 
@@ -580,7 +580,7 @@ Allowed values:
 
 Optional. The default value is **True** if not specified.
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Endpoint Configuration Manager, the icons will not be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
 
 Allowed values:
 
@@ -594,7 +594,7 @@ Allowed values:
 
 ## Remove element
 
-Defines which products and languages to remove from a previous installation of Microsoft 365 Apps. To remove an installed language, you must provide both the product and the language, as in the example. To remove all the installed languages, do not include the language attribute. In that case, the ODT automatically discovers and removes all installed languages for the product. 
+Defines which products and languages to remove from a previous installation of Microsoft 365 Apps. To remove an installed language, you must provide both the product and the language, as in the example. To remove all the installed languages, don't include the language attribute. In that case, the ODT automatically discovers and removes all installed languages for the product. 
 
 For more information, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
@@ -676,7 +676,7 @@ Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
-Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they are working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
+Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they're working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up to date, you must change the deadline every time a new update for Office is available.
 
@@ -690,7 +690,7 @@ Example value:
 
 Optional. The default is **Current**.
 
-Defines which channel to use for updating Office after it is installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
+Defines which channel to use for updating Office after it's installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md). 
 
@@ -710,9 +710,9 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there is a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
+If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there is a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
 ## RemoveMSI element
 

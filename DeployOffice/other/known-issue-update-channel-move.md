@@ -30,7 +30,7 @@ We’ve made the appropriate changes to our code so that this issue doesn’t af
 
 ## Which devices are affected by this issue?
 
-This issue only affects devices that are configured to receive updates for Microsoft 365 Apps by using Microsoft Endpoint Configuration Manager in conjunction with Windows Server Update Services (WSUS).
+This issue only affects devices that are configured to receive updates for Microsoft 365 Apps by using Microsoft Configuration Manager in conjunction with Windows Server Update Services (WSUS).
 
 For Configuration Manager to be able to manage these updates, an Office COM object needs to be enabled on the device where Microsoft 365 Apps is installed. The Office COM object takes commands from Configuration Manager to download and install the updates.
 
@@ -135,14 +135,14 @@ To re-enable the Office COM object after the devices have updated to the desired
 To disable the Office COM object by using Configuration Manager, do the following steps:
 
 1. In the Configuration Manager console, go to **Administration** > **Overview** > **Client Settings**.
-2. Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Endpoint Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
+2. Open the appropriate device settings to enable the client agent. For more information about default and custom client settings, see [How to configure client settings in Microsoft Configuration Manager](/mem/configmgr/core/clients/deploy/configure-client-settings).
 3. Choose **Software Updates** and select **No** for the **Enable management of the Office 365 Client Agent** setting.
 
 To re-enable the Office COM object after the devices have updated to the desired update channel, set **Enable management of the Office 365 Client Agent setting** back to **Yes**.
 
 ## Related topics
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md)
 - [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 - [Release notes for Microsoft 365 Apps Security Updates](/officeupdates/microsoft365-apps-security-updates)

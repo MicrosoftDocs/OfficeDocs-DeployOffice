@@ -42,7 +42,7 @@ Since Click-to-Run handles updates differently than Windows Installer (MSI), her
 - There are no separate downloads for security or quality updates. These updates are already included as part of a new build of Office LTSC 2021 that’s posted on the Office CDN.
 - Updates are cumulative, so the latest version of Office LTSC 2021 available on the Office CDN includes all the security and quality updates from all the previous versions of Office LTSC 2021.
 - When you download and install Office LTSC 2021 from the Office CDN, it’s up to date already. You don’t have to download and apply any additional updates or service packs before you can start using Office LTSC 2021.
-- Since updates are cumulative and already included in the latest version of Office LTSC 2021 on the Office CDN, you don’t use Microsoft Updates or Windows Server Updates Services (WSUS) by itself to update Office LTSC 2021. But you can use Microsoft Endpoint Configuration Manager to help you deploy and manage updates to Office LTSC 2021, including controlling when and from where updates are applied.
+- Since updates are cumulative and already included in the latest version of Office LTSC 2021 on the Office CDN, you don’t use Microsoft Updates or Windows Server Updates Services (WSUS) by itself to update Office LTSC 2021. But you can use Microsoft Configuration Manager to help you deploy and manage updates to Office LTSC 2021, including controlling when and from where updates are applied.
 
 ## Configure where Office LTSC 2021 gets updates from
 
@@ -52,7 +52,7 @@ If you don’t want devices installed with Office LTSC 2021 to connect to the Of
 
 Keep in mind that installing and updating Office LTSC 2021 from a shared folder on your local network requires more administrative effort and more disk space. For example, you have to keep track of when new builds of Office LTSC 2021 are available and then download the updated version of Office LTSC 2021 to your network. Downloading to a shared folder on your local network will always download a full copy of the updated version of Office.
 
-You can also use enterprise software deployment tools, such as Microsoft Endpoint Configuration Manager, to help you update Office LTSC 2021.
+You can also use enterprise software deployment tools, such as Microsoft Configuration Manager, to help you update Office LTSC 2021.
 
 The location where Office LTSC 2021 looks for updates is specified in the configuration.xml file that you use to deploy Office LTSC 2021 with the Office Deployment Tool. For more information, see [Deploy Office LTSC 2021](deploy.md). You can also use [Group Policy](#use-group-policy-to-specify-update-settings).
 

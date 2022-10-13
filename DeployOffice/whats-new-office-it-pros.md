@@ -177,7 +177,7 @@ The names of the update channels for Microsoft 365 Apps have changed. For exampl
 ### Introduction of Monthly Enterprise Channel
 A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise Channel. This update channel provides new Office features once a month, on the second Tuesday of the month. These once-a-month updates will also include, as needed, security updates and non-security updates. 
 
-You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
+You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
