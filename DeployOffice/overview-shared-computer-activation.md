@@ -24,7 +24,7 @@ description: "Provides information for IT Pros about shared computer activation 
 Shared computer activation lets you deploy Microsoft 365 Apps to a computer in your organization that is accessed by multiple users. Here are some examples of supported scenarios:
 
 - Three workers at a factory share the same physical computer, with each worker using Office on that computer during their eight-hour shift.
-- Fifteen nurses at a hospital use Office on ten different computers throughout the day.
+- Fifteen nurses at a hospital use Office on 10 different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Multiple employees use Office on a computer that's located in a conference room or some other public space in the company.
 - Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
@@ -60,13 +60,33 @@ If you want to enable shared computer activation during the initial installation
 
 If Microsoft 365 Apps is already installed and you want to enable shared computer activation, there are three options to choose from. A reinstallation isn't required. The device must be rebooted in order to apply the change.
 
-- Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enabling the "Use shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
-- Use Registry Editor to add a String value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
-- Download and run the [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_OfficeSCA_Docs). This is required to change the activation method from subscription mode to shared mode. 
+> [!NOTE]
+> If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](/office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
 
-  > [!NOTE]
-  > Microsoft 365 Apps for business doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
-  > If a user already activated the Microsoft 365 Apps before shared computer activation was enabled, you have to [reset the activation](/office/troubleshoot/activation/reset-office-365-proplus-activation-state) to allow shared computer activation to work.
+### Option 1: Use Group Policy to enable shared computer activation
+
+Use Group Policy by downloading the most current [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and enable the "Use shared computer activation" policy. This policy is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
+
+> [!NOTE]
+> Microsoft 365 Apps for business doesn't support the use of Group Policy, so you'll need to use another method to enable shared computer activation.
+
+### Option 2: Use Registry Editor to enable shared computer activation
+
+Use Registry Editor to add a String value (Reg_SZ) of SharedComputerLicensing with a setting of 1 under HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration.
+
+### Option 3: Use the Microsoft Support and Recovery Assistant to enable shared computer activation
+
+The Support and Recovery Assistant fully automates all of the steps to verify requirements for shared computer activation and to enable shared computer activation. It's available in two versions: enterprise and UI. Use the version that's best suited for your situation.
+
+#### Enterprise (command-line) version of the Microsoft Support and Recovery Assistant
+
+The [Enterprise version](https://aka.ms/SaRA_EnterpriseVersion) of the Microsoft Support and Recovery Assistant is a command-line version that can be scripted and is recommended for multiple devices and for devices that you can't access immediately. [Download the Enterprise version](https://aka.ms/SaRA_EnterpriseVersionFiles)
+
+#### UI version of the Microsoft Support and Recovery Assistant
+
+The [UI version](https://aka.ms/SaRA_Home) of the Microsoft Support and Recovery Assistant is recommended if you need to reset Office activation on a single device, or on a few individual devices. [Download the UI version](https://aka.ms/SaRA_OfficeSCA_Docs)
+
+### Verify that shared computer activation is enabled
 
 After Microsoft 365 Apps is installed, you can [verify that shared computer activation is enabled](troubleshoot-shared-computer-activation.md#Enabled) on that computer.
 
