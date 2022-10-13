@@ -30,7 +30,7 @@ You don't have to wait if you're ready now to deploy Teams to the users in your 
 We also have the steps you can take to exclude Teams from [new](#how-to-exclude-microsoft-teams-from-new-installations-of-microsoft-365-apps) or [existing](#what-about-existing-installations-of-microsoft-365-apps) installations of Microsoft 365 Apps if your organization isn't ready to deploy Teams.
 
 > [!IMPORTANT]
-> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
+> If you're in a GCC High or DoD environment, currently you need to exclude Teams from being installed with Microsoft 365 Apps. Instead, you need to install Teams by using the separate MSI-based installer. For links to the correct version of the MSI-based installer for your environment, see [Install Microsoft Teams using Microsoft Configuration Manager](/MicrosoftTeams/msi-deployment). In the future, you'll be able to install Teams along with Microsoft 365 Apps in GCC High or DoD environments without needing to use the separate MSI-based installer.
 
 If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
@@ -82,7 +82,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 > [!TIP]
 > Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
 
-If you're deploying Microsoft 365 Apps by using the Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
+If you're deploying Microsoft 365 Apps by using the Office 365 Client Installation wizard in Microsoft Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
 
 If you're deploying Microsoft 365 Apps by using Microsoft Intune, there is a checkbox to exclude Teams on the **Configure App Suite** pane.  
 
