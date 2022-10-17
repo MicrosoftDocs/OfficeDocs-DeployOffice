@@ -71,7 +71,7 @@ Azure Virtual Desktop enables you to do the following:
 
 - Use standard gallery images or create custom images.
 
-- Request assistance from Microsoft on application issues with [App Assure](/windows-365/enterprise/app-assure) at no additional cost.
+- Request assistance from Microsoft on application issues with [App Assure](/fasttrack/products-and-capabilities#app-assure) at no additional cost.
 
 - Pay only for what you use on the service (consumption-based pricing).
 
