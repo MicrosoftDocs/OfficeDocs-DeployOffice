@@ -76,7 +76,7 @@ Replace *yourkey* with your MAK client activation key. You will need to restart 
 
 ## Additional information for Office on Windows
 
-- The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization. For example, by using Microsoft Endpoint Configuration Manager.
+- The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization. For example, by using Microsoft Configuration Manager.
 - You can also use the Volume Activation Management Tool (VAMT) 3.1 to centrally manage volume activation. You need to use VAMT 3.1 with Office LTSC 2021. VAMT 3.0 won't work with Office LTSC 2021. For more information about VAMT, see [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 - This information also applies to updating Project Professional 2021 Preview to Project Professional 2021. Or, if you're updating Visio Professional 2021 Preview to Visio LTSC Professional 2021.
 - If you have the 32-bit version of Office LTSC 2021 Preview installed and want to install the 64-bit version of Office LTSC 2021, you need to uninstall Office LTSC 2021 Preview first. You also must uninstall Office LTSC 2021 Preview if you’re switching from the 64-bit version to the 32-bit version.

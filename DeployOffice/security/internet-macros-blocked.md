@@ -63,20 +63,15 @@ The following table list different common scenarios and possible approaches to t
 
 This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Visio, and Word.
 
-The change began rolling out in Version 2203, starting with Current Channel (Preview) in early April 2022. Later, the change will be available in the other update channels, such as Monthly Enterprise Channel and Semi-Annual Enterprise Channel.
-
 The following table shows the forecasted schedule of when this change will be available in each update channel. Information in italics is subject to change.
 
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
 |Current Channel (Preview)|Version 2203|Started rolling out on April 12, 2022|
 |Current Channel|Version 2206|Started rolling out on July 27, 2022|
-|Monthly Enterprise Channel|*Version 2208*|*October 11, 2022*|
-|Semi-Annual Enterprise Channel (Preview)|*Version 2208*|*October 11, 2022*|
+|Monthly Enterprise Channel|Version 2208|October 11, 2022|
+|Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel |*Version 2208*|*January 10, 2023*|
-
-> [!NOTE]
-> As we roll out this change to Current Channel over the next few weeks, not all customers will see the change right away.
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -107,7 +102,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 > [!NOTE]
 > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
-> - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change coming to Current Channel.
+> - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users will see the **Security Risk** banner when they open the file.
 
