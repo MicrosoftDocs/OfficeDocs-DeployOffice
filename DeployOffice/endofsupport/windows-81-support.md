@@ -42,7 +42,7 @@ The above applies to all supported versions of Microsoft 365 Apps and for all up
 To continue to get security updates for Windows and updates to Microsoft 365 Apps, we strongly recommend that you move to a more current and supported operating system before January 10, 2023. For example, move to Windows 11 (or Windows 10).
 
 > [!TIP]
-> If you’re using Microsoft Endpoint Configuration Manager (current branch), you can use the [Computers with a specific operating system](/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.1.
+> If you’re using Microsoft Configuration Manager (current branch), you can use the [Computers with a specific operating system](/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.1.
 
 For more information about Windows 11, see the following articles:
 - [Windows 11 overview](/windows/whats-new/windows-11-overview)

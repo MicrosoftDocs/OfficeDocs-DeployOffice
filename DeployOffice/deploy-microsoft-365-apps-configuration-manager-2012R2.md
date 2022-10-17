@@ -15,9 +15,9 @@ description: "Provides Office admins with information on how to Deploy Microsoft
 
 # Deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager
 
-This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Microsoft 365 Apps with Configuration Manager version 1702 or later, see [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md).
+This article applies to System Center 2012 R2 Configuration Manager. For information on how to deploy Microsoft 365 Apps with Configuration Manager version 1702 or later, see [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md).
   
-If you use Microsoft Endpoint Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Microsoft 365 Apps. By using Configuration Manager, you can control which users and computers get Microsoft 365 Apps, where they get the installation files from, and when the Microsoft 365 Apps installation occurs.
+If you use Microsoft Configuration Manager to deploy software, such as Office, to users and computers in your organization, you can also use that existing Configuration Manager environment to deploy Microsoft 365 Apps. By using Configuration Manager, you can control which users and computers get Microsoft 365 Apps, where they get the installation files from, and when the Microsoft 365 Apps installation occurs.
   
 For example, you can control network bandwidth usage by placing the Microsoft 365 Apps installation files on a distribution point within your organization's network, instead of having users install Microsoft 365 Apps directly from the internet. Keep in mind, however, that even if you're installing Microsoft 365 Apps from a location within your network, the computer where Microsoft 365 Apps is installed still needs access to the internet to be able to [activate Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md#activating-microsoft-365-apps).
   

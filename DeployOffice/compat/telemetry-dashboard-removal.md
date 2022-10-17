@@ -85,7 +85,7 @@ The SQL Server database, which stores the information used by Office Telemetry D
 As an alternative to Office Telemetry Dashboard, we recommend using the following tools, depending on the information you need:
 
 - Readiness Toolkit for Office add-ins and VBA
-- Microsoft 365 Apps readiness features in Microsoft Endpoint Configuration Manager (current branch)
+- Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
 - Inventory feature in the Microsoft 365 Apps admin center
 
 For more information about these tools, see the following articles:
