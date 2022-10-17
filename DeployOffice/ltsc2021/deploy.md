@@ -141,7 +141,7 @@ Once the installation is complete, you are returned to a command prompt and you 
 
 ## Install Office LTSC 2021 by using Configuration Manager
 
-You can also use Microsoft Endpoint Configuration Manager to deploy Office LTSC 2021. Configuration Manager (current branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file.
+You can also use Microsoft Configuration Manager to deploy Office LTSC 2021. Configuration Manager (current branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file.
 
 - **Configuration Manager (current branch):** If you’re using Configuration Manager (current branch), you can use the Office 365 Client Installation wizard to deploy Office LTSC 2021. You’ll see an entry for Office LTSC Professional Plus 2021 in the Office 365 Client Installation wizard. On that same page, you can also select to deploy Project and Visio. To get to the wizard, in the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 
@@ -170,7 +170,7 @@ If you don’t want the Teams client app included when you deploy Office LTSC 20
 Skype for Business won’t be included, by default, in the installation of Office LTSC 2021 when you use either of the following methods to deploy Office LTSC 2021:
 
 - The Office Deployment Tool with a configuration.xml file created by using the [Office Customization Tool](https://config.office.com/deploymentsettings) and you don’t change the default settings under the **Apps** section.
-- The Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch) and you don’t change the default settings under the **Apps** section.
+- The Office 365 Client Installation wizard in Microsoft Configuration Manager (current branch) and you don’t change the default settings under the **Apps** section.
 
 For either method, you can adjust the settings in the UI so that Skype for Business is installed with Office LTSC 2021.
 

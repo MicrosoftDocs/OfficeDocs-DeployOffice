@@ -19,6 +19,16 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## October 2022
+
+### Blocking internet macros by default in Office available in more update channels
+
+To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change is in Version 2208 in Monthly Enterprise Channel and in Semi-Annual Enterprise Channel (Preview) as of October 11, 2022. The following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
+
+For more information, refer to the following information:
+- [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
+- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+
 ## July 2022
 
 ### Windows 8.1 end of support and Microsoft 365 Apps
@@ -167,7 +177,7 @@ The names of the update channels for Microsoft 365 Apps have changed. For exampl
 ### Introduction of Monthly Enterprise Channel
 A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise Channel. This update channel provides new Office features once a month, on the second Tuesday of the month. These once-a-month updates will also include, as needed, security updates and non-security updates. 
 
-You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
+You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 

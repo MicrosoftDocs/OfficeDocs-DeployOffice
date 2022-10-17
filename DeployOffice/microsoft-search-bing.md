@@ -137,7 +137,7 @@ Other locations might be added over time. Before any new locations are added, we
 
 ## How to prevent the background service for Microsoft Search in Bing from being installed with Microsoft 365 Apps for enterprise
 
-If you don't want the background service for Microsoft Search in Bing to be installed with Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool or Group Policy. There are also ways to prevent the background service from being installed if you're using Microsoft Endpoint Configuration Manager (current branch) or Microsoft Intune.
+If you don't want the background service for Microsoft Search in Bing to be installed with Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool or Group Policy. There are also ways to prevent the background service from being installed if you're using Microsoft Configuration Manager (current branch) or Microsoft Intune.
 
 Whichever method you use, be sure to implement it before you install or update to a version of Microsoft 365 Apps for enterprise that includes the background service. If you implement the method after the background service has been installed, the background service won't be removed from the device. To remove the background service, see [How to remove the background service for Microsoft Search in Bing after it's been installed](#how-to-remove-the-background-service-for-microsoft-search-in-bing-after-its-been-installed).
 
