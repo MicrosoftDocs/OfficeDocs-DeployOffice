@@ -21,6 +21,10 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## October 2022
 
+### Support for Microsoft 365 Apps on Windows Server 2022
+
+We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).
+
 ### Blocking internet macros by default in Office available in more update channels
 
 To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change is in Version 2208 in Monthly Enterprise Channel and in Semi-Annual Enterprise Channel (Preview) as of October 11, 2022. The following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
