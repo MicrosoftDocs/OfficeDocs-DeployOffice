@@ -22,14 +22,14 @@ There are a variety of options to choose from when delivering software updates f
 
 First, this article will cover three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here is an overview, in case you want to jump to a section directly:
 
-- Using the cloud for updates
-    - Default behavior and Microsoft Intune
-    - Servicing Profiles
-- Using on-premises locations for updates
-    - Microsoft Configuration Manager
-    - Network shares
-- Combining cloud and on-premises locations for updates (hybrid)
-    - Microsoft Configuration Manager
+- [Using the cloud for updates](choose-how-to-deliver-updates.md#Updates-from-the-cloud)
+    - [Automatic Updates or Microsoft Intune](choose-how-to-deliver-updates.md#Automatic-Update--Microsoft-Intune)
+    - [Servicing Profiles](choose-how-to-deliver-updates.md#Servicing-profiles)
+- [Using on-premises locations for updates](choose-how-to-deliver-updates.md#updates-from-on-premises-locations)
+    - [Microsoft Configuration Manager](choose-how-to-deliver-updates.md#microsoft-configuration-manager)
+    - [Network shares](choose-how-to-deliver-updates.md#network-shares)
+- [Combining cloud and on-premises locations for updates (hybrid)](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid)
+    - [Microsoft Configuration Manager](choose-how-to-deliver-updates.md#microsoft-configuration-manager-1)
 
 > [!NOTE]
 > ] The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a servicing profile, both products will be updated at the saem time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
