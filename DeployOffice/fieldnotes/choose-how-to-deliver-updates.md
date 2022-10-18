@@ -20,7 +20,16 @@ ms.collection:
 
 There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. A given update deployment implementation can be changed later on, so the options below apply both to scenarios where you start fresh with Microsoft 365 Apps as well as when re-evaluating your current implementation.
 
-This article will describe the fundamental differences and network implications when deploying updates from the cloud, on-premises locations or in a combination of both (hybrid). It will then lay out the options for each source with their individual benefits and challenges.
+First, this article will cover three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here is an overview, in case you want to jump to a section directly:
+
+- Using the cloud for updates
+    - Default behavior and Microsoft Intune
+    - Servicing Profiles
+- Using on-premises locations for updates
+    - Microsoft Configuration Manager
+    - Network shares
+- Combining cloud and on-premises locations for updates (hybrid)
+    - Microsoft Configuration Manager
 
 > [!NOTE]
 > ] The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a servicing profile, both products will be updated at the saem time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
