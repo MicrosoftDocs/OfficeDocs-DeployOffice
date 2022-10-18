@@ -16,7 +16,7 @@ description: "Explains the settings that you can use to encrypt data in Office, 
 
 # Cryptography and encryption in Office 2016
 
- **Summary:** Explains the settings that you can use to encrypt data in Office 2016, and provides information about compatibility with previous versions of Office. 
+ **Summary:** Explains the settings that you can use to encrypt data in Office 2016+, Microsoft 365 Apps, and provides information about compatibility with previous versions of Office. 
   
   
 Office 2016 contains settings that let you control the way that data is encrypted when you use Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
@@ -59,7 +59,7 @@ The following CNG hashing algorithms, or any other CNG cipher extension that is 
   
 MD2, MD4, MD5, RIPEMD-128, RIPEMD-160, SHA-1, SHA256, SHA384, and SHA512
   
-Although there are Office 2016 settings to change how encryption is performed, when you encrypt Open XML Format files (.docx, .xslx, .pptx, and so on) the default values — AES (Advanced Encryption Standard), 256-bit key length, SHA1, and CBC (cipher block chaining) — provide strong encryption and should be fine for most organizations. AES encryption is the strongest industry-standard algorithm that is available and was selected by the National Security Agency (NSA) to be used as the standard for the United States Government. AES encryption is supported on Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+Although there are Office 2016 settings to change how encryption is performed, when you encrypt Open XML Format files (.docx, .xslx, .pptx, and so on) the default values — AES (Advanced Encryption Standard), 256-bit key length, SHA-2, and CBC (cipher block chaining) — provide strong encryption and should be fine for most organizations. AES encryption is the strongest industry-standard algorithm that is available and was selected by the National Security Agency (NSA) to be used as the standard for the United States Government. AES encryption is supported on Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
   
 <a name="settings"> </a>
 
