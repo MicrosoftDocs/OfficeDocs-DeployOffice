@@ -18,7 +18,7 @@ ms.collection:
 
 # Choose how to deliver updates for the Microsoft 365 Apps
 
-There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. A given update deployment implementation can be changed later on, so the options below apply both to scenarios where you start fresh with Microsoft 365 Apps as well as when re-evaluating your current implementation.
+There are a variety of options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. A given update deployment implementation can be changed later, so the options below apply both to scenarios where you start fresh with Microsoft 365 Apps as well as when re-evaluating your current implementation.
 
 First, this article will cover three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here is an overview, in case you want to jump to a section directly:
 
@@ -56,7 +56,7 @@ When using the cloud as your update source, there are also some considerations:
 ### Updates from on-premises locations
 The Microsoft 365 Apps support multiple on-premises locations for updates. The required source files can be hosted on network shares, in local folders or drives, or on Configuration Manager's distribution points. Common among all these options is that the admin is responsible for ensuring that the required sources for all employed update channels, languages, and architectures (32/64 bit) are available. Otherwise, the update would fail.
 
-The main advantage of using on-premises locations is that devices do not need to pull down data over the internet in order to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
+The main advantage of using on-premises locations is that devices do not need to pull down data from the internet to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
 
 In general, Microsoft no longer recommends to host updates on-premises due to the following challenges:
 - **Source file maintenance**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architectures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
