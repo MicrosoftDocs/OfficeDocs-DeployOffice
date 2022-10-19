@@ -22,9 +22,9 @@ There are a variety of options to choose from when delivering software updates f
 
 First, this article will cover three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here is an overview, in case you want to jump to a section directly:
 
-- [Using the cloud for updates](choose-how-to-deliver-updates.md#Updates-from-the-cloud)
-    - [Automatic Updates or Microsoft Intune](choose-how-to-deliver-updates.md#Automatic-Update--Microsoft-Intune)
-    - [Servicing Profiles](choose-how-to-deliver-updates.md#Servicing-profiles)
+- [Using the cloud for updates](choose-how-to-deliver-updates.md#updates-from-the-cloud)
+    - [Automatic Updates or Microsoft Intune](choose-how-to-deliver-updates.md#automatic-update--microsoft-intune)
+    - [Servicing Profiles](choose-how-to-deliver-updates.md#servicing-profiles)
 - [Using on-premises locations for updates](choose-how-to-deliver-updates.md#updates-from-on-premises-locations)
     - [Microsoft Configuration Manager](choose-how-to-deliver-updates.md#microsoft-configuration-manager)
     - [Network shares](choose-how-to-deliver-updates.md#network-shares)
@@ -36,7 +36,7 @@ First, this article will cover three different update locations you can choose f
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
-The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](choose-how-to-deliver-updates.md#Updates-from-the-cloud), from [on-premises locations](choose-how-to-deliver-updates.md#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section will lay out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](choose-how-to-deliver-updates.md#step-2-choose-your-way-to-manage-updates) for the chosen update source.
+The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](choose-how-to-deliver-updates.md#updates-from-the-cloud), from [on-premises locations](choose-how-to-deliver-updates.md#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section will lay out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](choose-how-to-deliver-updates.md#step-2-choose-your-way-to-manage-updates) for the chosen update source.
 
 ### Updates from the cloud
 When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (aka Office CDN), this is referred to as cloud-based updates. Microsoft operates a worldwide, distributed network of datacenters which hosts all updates for the Microsoft 365 Apps for all available update channels, languages, related products like Visio and Project, and architectures (32/64 bit). The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
@@ -62,7 +62,7 @@ In general, Microsoft no longer recommends to host updates on-premises due to th
 - **Source file maintenance**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architectures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
 - **Source size**: As Microsoft does not release individual patches, but rather a new set of source files, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. For example, when devices run a mix of 32 and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files that have to be downloaded and synchronized across the update locations on a monthly schedule.
 - **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy preferences with Site targeting](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increases the complexity of the implementation. If updates are managed by Configuration Manager, the beforementioned does not apply, as devices will determine the nearest distribution point automatically.
-- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't leverage Delivery Optimization for reducing the network impact. All devices will pull their individual set of delta files down. When using Microsoft Endpoint Configuration Manager, this can be mitigated by leveraging [Peer Cache](https://learn.microsoft.com/en-us/troubleshoot/mem/configmgr/configure-peer-cache).
+- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't leverage Delivery Optimization for reducing the network impact. All devices will pull their individual set of delta files down. When using Microsoft Endpoint Configuration Manager, this can be mitigated by leveraging [Peer Cache](https://learn.microsoft.com/troubleshoot/mem/configmgr/configure-peer-cache).
 
 
 ### Updates from mixed on-premises and cloud locations (hybrid)
@@ -95,11 +95,11 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients will receive the update at the same time, but in a staggered manner.
 - By default, updates are not enforced. This can be mitigated by leveraging the **Update deadline** group policy setting for Office.
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) does not apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or Servicing Profiles.
-- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](https://learn.microsoft.com/deployoffice/admincenter/overview) to monitor update adoption rate and compliance.
+- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
 
 ### Servicing profiles
 
-A [servicing profile](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It is an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
+A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It is an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
 > Using a servicing profile is Microsoft's recommended solutions for Microsoft 365 Apps on Monthly Enterprise Channel.
@@ -113,12 +113,12 @@ A [servicing profile](https://learn.microsoft.com/deployoffice/admincenter/servi
 
 **Considerations**
 - As of now, servicing profile only supports Monthly Enterprise Channel. Devices on other channels can be transitioned to Monthly Enterprise Channel.
-- Consider using custom [rollout waves](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
+- Consider using custom [rollout waves](../admincenter/servicing-profile.md#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
-[Overview of servicing profile](https://learn.microsoft.com/deployoffice/admincenter/servicing-profile)
+[Overview of servicing profile](../admincenter/servicing-profile.md)
 [Video: Deep dive into servicing profile](https://youtu.be/YO6a3iNVXXI)
-[Video: Deep dive into Wave Customization for servicing profile](https://youtu.be/rDu8qVbE1DY)
+[Video: Deep dive into Wave Customization for servicing profile](https://go.microsoft.com/fwlink/?linkid=2212413)
 
 
 ## Update solutions for on-premises-based updates
