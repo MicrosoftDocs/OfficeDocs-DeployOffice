@@ -102,7 +102,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
-> Using a servicing profile is Microsoft's recommended solutions for Microsoft 365 Apps on Monthly Enterprise Channel.
+> Using a servicing profile is Microsoft's recommended solution for Microsoft 365 Apps on Monthly Enterprise Channel.
 
 **Benefits**
 - Update solution specifically built for the Microsoft 365 Apps.
@@ -116,9 +116,9 @@ A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based upda
 - Consider using custom [rollout waves](../admincenter/servicing-profile.md#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
-[Overview of servicing profile](../admincenter/servicing-profile.md)
-[Video: Deep dive into servicing profile](https://youtu.be/YO6a3iNVXXI)
-[Video: Deep dive into Wave Customization for servicing profile](https://go.microsoft.com/fwlink/?linkid=2212413)
+- [Overview of servicing profile](../admincenter/servicing-profile.md)
+- [Video: Deep dive into servicing profile](https://youtu.be/YO6a3iNVXXI)
+- [Video: Deep dive into Wave Customization for servicing profile](https://go.microsoft.com/fwlink/?linkid=2212413)
 
 
 ## Update solutions for on-premises-based updates
