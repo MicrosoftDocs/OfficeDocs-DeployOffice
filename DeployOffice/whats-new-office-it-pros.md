@@ -19,6 +19,12 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## November 2022
+
+### General availability of the "Software updates" page in the Microsoft 365 admin center
+
+The **Software updates** page in the Microsoft 365 admin center is generally available as of November 7, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+
 ## October 2022
 
 ### Support for Microsoft 365 Apps on Windows Server 2022
@@ -52,6 +58,8 @@ Microsoft has released the recommended security configuration baseline settings 
 - [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
 
 ### "Software updates (Preview)" page in the Microsoft 365 admin center
+
+*(This feature is generally available as of November 7, 2022.)*
 
 The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
 

@@ -15,25 +15,22 @@ description: "Provides Office admins with information about the Software updates
 
 # View software update status for Microsoft 365 Apps installations
 
-> [!NOTE]
-> This is pre-release documentation for a preview program that is subject to change and might not be available to everyone.
+The **Software updates** page in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Updates that contain security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
 
-The **Software updates (Preview)** page in the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Updates that contain security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices.
-
-The **Software updates (Preview)** page has the following tabs to assist you in monitoring update status for your devices:
+The **Software updates** page has the following tabs to assist you in monitoring update status for your devices:
 
 - **Microsoft 365 Apps**: Displays compliance charts for security updates for Microsoft 365 Apps.
 
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients.
 
-This article contains information about the **Microsoft 365 Apps** tab. For more information about the **Windows** tab, see [Microsoft admin center software updates (preview) page](/windows/deployment/update/update-status-admin-center).
+This article contains information about the **Microsoft 365 Apps** tab. For more information about the **Windows** tab, see [Microsoft admin center software updates page](/windows/deployment/update/update-status-admin-center).
 
 ## The Microsoft 365 Apps tab
 
-To view the **Software updates (Preview)** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Health** > **Software updates (Preview)**.
+To view the **Software updates** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Health** > **Software updates**.
 
 > [!TIP]
-> If you don't see an entry for **Software updates (Preview)** in the menu, try going to this URL: https://admin.microsoft.com/Adminportal/Home#/softwareupdates.
+> If you don't see an entry for **Software updates** in the menu, try going to this URL: https://admin.microsoft.com/Adminportal/Home#/softwareupdates.
 
 The **Microsoft 365 Apps** tab shows the following information about devices in your organization that have Microsoft 365 Apps installed:
 - How many devices have the most recent security updates
@@ -56,7 +53,7 @@ If you take these steps, your devices will get updates automatically when new bu
 
 ## Devices that are shown on the Microsoft 365 Apps tab
 
-Only the following devices are shown on the **Microsoft 365 Apps** tab on the **Software updates (Preview)** page.
+Only the following devices are shown on the **Microsoft 365 Apps** tab on the **Software updates** page.
 
 - Devices running Windows with Microsoft 365 Apps installed.
 
@@ -70,7 +67,7 @@ Only the following devices are shown on the **Microsoft 365 Apps** tab on the **
 
 ## Additional information about the Microsoft 365 Apps tab
 
-The following information applies to the **Microsoft 365 Apps** tab on the **Software updates (Preview)** page.
+The following information applies to the **Microsoft 365 Apps** tab on the **Software updates** page.
 
 - Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. For more information, see [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md).
 
