@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
@@ -33,7 +33,7 @@ The following table describes the file formats that are supported in Word, alpha
 |.docx  <br/> |Strict Open XML Document  <br/> |Conforms to the Strict profile of the Open XML standard (ISO/IEC 29500). This profile of Open XML doesn't allow a set of features that are designed specifically for backward-compatibility with existing binary documents, as specified in Part 4 of ISO/IEC 29500.  <br/> |
 |.dot  <br/> |Word 97-2003 Template  <br/> |Template for Word 97-Word 2003 files.  <br/> |
 |.dotm  <br/> |Word Macro-Enabled Template  <br/> |Template for creating new Word 2019, Word 2016, Word 2013, Word 2010, and Office Word 2007 files that contain macros. Users who want to include UI customizations or macros in the template should use this file format.  <br/> |
-|.dotx  <br/> |Word Template  <br/> |Template for creating new Word 2019, Word 2016, Word 2013, Word 2010, and Office Word 2007 files that do not contain macros.  <br/> |
+|.dotx  <br/> |Word Template  <br/> |Template for creating new Word 2019, Word 2016, Word 2013, Word 2010, and Office Word 2007 files that don't contain macros.  <br/> |
 |.htm, .html  <br/> |Web Page  <br/> |A web page that is saved as a folder that contains an .htm file and all supporting files, such as images, sound files, cascading style sheets, scripts, and more. Good for posting on a site or editing with Microsoft Office FrontPage or another HTML editor.  <br/> |
 |.htm, .html  <br/> |Web Page, Filtered  <br/> |Saving in the Web Page, Filtered file format removes Microsoft Office-specific tags. If users save in filtered HTML and then re-open the file in an Office application, text and general appearance are preserved. However, some features might work differently.  <br/> |
 |.mht; .mhtml  <br/> |Single File Web Page  <br/> |A web page as a single file that includes an .htm file and all supporting files, such as images, sound files, cascading style sheets, scripts, and more.  <br/> |
@@ -44,7 +44,7 @@ The following table describes the file formats that are supported in Word, alpha
 |.wps  <br/> |Works 6-9 Document  <br/> |This is the default file format of Microsoft Works, versions 6.0 through 9.0.  <br/> |
 |.xml  <br/> |Word 2003 XML Document  <br/> |The XML format supported in Office Word 2003.  <br/> |
 |.xml  <br/> |Word XML Document  <br/> |The XML file format supported in Word 2019, Word 2016, Word 2013, Word 2010, and Office Word 2007 (Open XML).  <br/> |
-|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it keeps exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> <br/> You can use Word 2019, Word 2016, or Word 2013 to save documents in the XPS Document file format, but you can't open them by using Word 2019, Word 2016, or Word 2013.  <br/> |
+|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it keeps exactly the format that users intended, and the data in the file can't be easily changed.  <br/> <br/> You can use Word 2019, Word 2016, or Word 2013 to save documents in the XPS Document file format, but you can't open them by using Word 2019, Word 2016, or Word 2013.  <br/> |
    
 
 ## File formats that are supported in Excel
@@ -62,7 +62,7 @@ The following tables describe the file formats that are supported in Excel.
 |.htm, .html  <br/> |Web Page  <br/> |A web page that is saved as a folder that contains an .htm file and all supporting files, such as images, sound files, scripts, and more.  <br/> |
 |.mht, .mhtml  <br/> |Single File Web Page  <br/> |A web page that is saved as a single file that includes an .htm file and all supporting files, such as images, sound files, scripts, and more.  <br/> |
 |.ods  <br/> |OpenDocument Spreadsheet  <br/> |A file format for saving Excel 2019, Excel 2016, and Excel 2013 files so that they can be opened in spreadsheet applications that use the OpenDocument Spreadsheet format, such as Google Docs and OpenOffice.org Calc. Users can also open spreadsheets in the .ods format in Excel 2019, Excel 2016, and Excel 2013. When users save and open .ods files, they might lose formatting.  <br/> |
-|.pdf  <br/> |PDF  <br/> |Portable Document Format, a format that preserves document formatting and enables file sharing. When the PDF format file is viewed online or printed, it keeps the format that users intended. Data in the file cannot be easily changed. The PDF format is also useful for documents that will be reproduced by using commercial printing methods.  <br/> |
+|.pdf  <br/> |PDF  <br/> |Portable Document Format, a format that preserves document formatting and enables file sharing. When the PDF format file is viewed online or printed, it keeps the format that users intended. Data in the file can't be easily changed. The PDF format is also useful for documents that will be reproduced by using commercial printing methods.  <br/> |
 |.prn  <br/> |Formatted Text (Space delimited)  <br/> |Lotus space-delimited format. Saves only the active sheet.  <br/> |
 |.slk  <br/> |SYLK (Symbolic Link Format)  <br/> |Saves only the active sheet.  <br/> |
 |.txt  <br/> |Text (Tab delimited)  <br/> |Saves a workbook as a tab-delimited text file for use on another Windows operating system, and makes sure that tab characters, line breaks, and other characters are interpreted correctly. Saves only the active sheet.  <br/> |
@@ -73,7 +73,7 @@ The following tables describe the file formats that are supported in Excel.
 |.xlam  <br/> |Excel Add-In  <br/> |The XML-based and macro-enabled Add-In format for Excel 2019, Excel 2016, Excel 2013, and Office Excel 2007. An Add-In is a supplemental program that runs additional code. Supports VBA projects and Excel 4.0 macro sheets (.xlm).  <br/> |
 |.xls  <br/> |Excel 97-Excel 2003 Workbook  <br/> |The Excel 97-Excel 2003 Binary file format.  <br/> |
 |.xls  <br/> |Microsoft Excel 5.0/95 Workbook  <br/> |The Excel 5.0/95 Binary file format.  <br/> |
-|.xlsb  <br/> |Excel Binary Workbook  <br/> |The binary file format for Excel 2019, Excel 2016, Excel 2013, and Excel 2010 and Office Excel 2007. This is a fast load-and-save file format for users who need the fastest way possible to load a data file. Supports VBA projects, Excel 4.0 macro sheets, and all the new features that are used in Excel. But, this is not an XML file format and is therefore not optimal for accessing and manipulating content without using Excel 2019, Excel 2016, Excel 2013, Excel 2010 or Excel 2007 and the object model.  <br/> |
+|.xlsb  <br/> |Excel Binary Workbook  <br/> |The binary file format for Excel 2019, Excel 2016, Excel 2013, and Excel 2010 and Office Excel 2007. This is a fast load-and-save file format for users who need the fastest way possible to load a data file. Supports VBA projects, Excel 4.0 macro sheets, and all the new features that are used in Excel. But, this isn't an XML file format and is therefore not optimal for accessing and manipulating content without using Excel 2019, Excel 2016, Excel 2013, Excel 2010 or Excel 2007 and the object model.  <br/> |
 |.xlsm  <br/> |Excel Macro-Enabled Workbook  <br/> |The XML-based and macro-enabled file format for Excel 2019, Excel 2016, Excel 2013, Excel 2010 and Office Excel 2007. Stores VBA macro code or Excel 4.0 macro sheets (.xlm).  <br/> |
 |.xlsx  <br/> |Excel Workbook  <br/> |The default XML-based file format for Excel 2019, Excel 2016, Excel 2013, Excel 2010, and Office Excel 2007. Can't store VBA macro code or Microsoft Excel 4.0 macro sheets (.xlm).  <br/> |
 |.xlsx  <br/> |Strict Open XML Spreadsheet  <br/> |An ISO strict version of the Excel Workbook file format (.xlsx).  <br/> |
@@ -83,7 +83,7 @@ The following tables describe the file formats that are supported in Excel.
 |.xlw  <br/> |Excel 4.0 Workbook  <br/> |An Excel 4.0 file format that saves only worksheets, chart sheets, and macro sheets. Users can open a workbook in this file format in Excel 2019, Excel 2016, and Excel 2013. But, users can't save an Excel file to this file format.  <br/> |
 |.xml  <br/> |XML Spreadsheet 2003  <br/> |XML Spreadsheet 2003 file format.  <br/> |
 |.xml  <br/> |XML Data  <br/> |XML Data format.  <br/> |
-|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it maintains exactly the format that users intended, and the data in the file cannot be easily changed.  <br/> |
+|.xps  <br/> |XPS Document  <br/> |XML Paper Specification, a file format that preserves document formatting and enables file sharing. When the XPS file is viewed online or printed, it maintains exactly the format that users intended, and the data in the file can't be easily changed.  <br/> |
    
 
 ## File formats that are supported in PowerPoint
@@ -114,7 +114,7 @@ The following tables describe the file formats that are supported in PowerPoint.
 |.pptx  <br/> |PowerPoint Presentation  <br/> |The default PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010, and Office PowerPoint 2007 XML-based file format.  <br/> |
 |.pptx  <br/> |PowerPoint Picture Presentation  <br/> |A PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010 or PowerPoint 2007 presentation where each slide is converted into a picture. Saving a file as a PowerPoint Picture presentation reduces the file size, but some information is lost.  <br/> |
 |.pptx  <br/> |Strict Open XML Presentation  <br/> |An ISO strict version of the PowerPoint Presentation file format (.pptx).  <br/> |
-|.rtf  <br/> |Outline/RTF  <br/> |A presentation outline that is saved as a text-only document that provides smaller file sizes and the ability to share macro-free files with other users who might not have the same version of PowerPoint or the operating system. Any text in the notes pane is not saved with this file format.  <br/> |
+|.rtf  <br/> |Outline/RTF  <br/> |A presentation outline that is saved as a text-only document that provides smaller file sizes and the ability to share macro-free files with other users who might not have the same version of PowerPoint or the operating system. Any text in the notes pane isn't saved with this file format.  <br/> |
 |.thmx  <br/> |Office Theme  <br/> |A style sheet that includes definitions of a color theme, font theme, and effect theme.  <br/> |
 |.tif  <br/> |TIFF Tag Image File Format  <br/> |A slide that is saved as a graphic for use on web pages.  <br/> |
 |.wmf  <br/> |Windows Metafile  <br/> |A slide that is saved as a 16-bit graphic (for use with Microsoft Windows 3. _x_ and later versions).  <br/> |
@@ -125,7 +125,7 @@ The following tables describe the file formats that are supported in PowerPoint.
 
 ## Unsupported file formats in Office
 
-Office applications do not support the file formats described in the following table
+Office applications don't support the file formats described in the following table
   
 |**Application**|**Unsupported file format**|
 |:-----|:-----|
@@ -136,7 +136,7 @@ Office applications do not support the file formats described in the following t
 ## Additional file format information
 
 
-This section provides additional file formats and whether they are supported in the applications in Office.
+This section provides additional file formats and whether they're supported in the applications in Office.
   
 ### Microsoft Office Clipboard file formats
 
@@ -161,13 +161,13 @@ Users can paste data from the Office Clipboard into Word, Excel, and PowerPoint 
    
 ### Opening or viewing unsupported file formats
 
-If the file format that users want to use is not supported, they can try the following methods to open the file.
+If the file format that users want to use isn't supported, they can try the following methods to open the file.
   
-- Search the internet for a company that makes file format converters for file formats that are not supported in the application.
+- Search the internet for a company that makes file format converters for file formats that aren't supported in the application.
     
-- Save to a file format that another program supports. For example, users might want to import their Word, Excel, or PowerPoint file into another program that does not support the application's native file format. However, the other program might support importing another supported file format, such as a text file format. In this case, users can save their work in text file format, and then from the other program, import the text file.
+- Save to a file format that another program supports. For example, users might want to import their Word, Excel, or PowerPoint file into another program that doesn't support the application's native file format. However, the other program might support importing another supported file format, such as a text file format. In this case, users can save their work in text file format, and then from the other program, import the text file.
     
-## Related topics
+## Related articles
 
 - [XML file name extension reference for Office](xml-file-name-extension-reference-for-office.md)
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)

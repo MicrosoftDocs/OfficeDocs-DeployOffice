@@ -7,7 +7,7 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.prod: office-perpetual-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Learn how to customize languages for Office 2016."
