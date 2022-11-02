@@ -2,11 +2,11 @@
 title: "Use policy settings to manage privacy controls for Office on Android devices"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
@@ -17,6 +17,9 @@ hideEdit: true
 
 # Use policy settings to manage privacy controls for Office on Android devices
 
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+
 There are policy settings for Office on Android devices that allow you to control settings related to the following:
 
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software being used.
@@ -24,15 +27,6 @@ There are policy settings for Office on Android devices that allow you to contro
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
-
-These policy settings apply to the following applications:
-- Version 16.0.12228.20260 and later of Word for Android, Excel for Android, and PowerPoint for Android.
-- Version 16.0.12228.20004 and later of OneNote for Android.
-
-> [!NOTE]
->- These policy settings also apply to Version 16.0.12130.20272 and later of the public preview of the [Office Mobile app](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172) for Android.
->- Use of the public preview of the Office Mobile app for Android will collect crash logs which may in some circumstances contain content.
->- If you're concerned about the collection of data from the public preview of the Office Mobile app for Android, you should inform your users not to log into the application with their work or school accounts.
 
 ## Policy settings available for Office on Android devices
 
@@ -50,11 +44,9 @@ The following table lists which policy settings are available for Office on Andr
 |Allow the use of connected experiences in Office that download online content |[Policy setting for connected experiences that download online content](manage-privacy-controls.md#policy-setting-for-connected-experiences-that-download-online-content)         |
 |Allow the use of additional optional connected experiences in Office |[Policy setting for optional connected experiences](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences)|
 
+## Use Cloud Policy to apply policy settings
 
-
-## Use Office cloud policy service to apply policy settings
-
-To apply any of these 4 policy settings for Office on Android devices, you need to use the Office cloud policy service. For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../overview-office-cloud-policy-service.md).
+To apply any of these 4 policy settings for Office on Android devices, you need to use Cloud Policy. For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 > [!NOTE]
-> If you previously used Office cloud policy service to configure these policy settings for Office on devices running Windows, those same settings will apply to Office on Android devices. For that to happen, you just need to sign in to the Office cloud policy service and the service will apply the settings automatically to Office on Android devices.
+> If you previously used Cloud Policy to configure these policy settings for Office on devices running Windows, those same settings will apply to Office on Android devices. For that to happen, you just need to sign in to Cloud Policy and the service will apply the settings automatically to Office on Android devices.

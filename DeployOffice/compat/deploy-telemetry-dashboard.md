@@ -2,11 +2,11 @@
 title: "Deploy Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Explains how to deploy the processor, agent, and other components that are required by Office Telemetry Dashboard."
@@ -14,22 +14,24 @@ description: "Explains how to deploy the processor, agent, and other components 
 
 # Deploy Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
+> [!IMPORTANT]
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
 This article helps you deploy the five components of Office Telemetry Dashboard: the dashboard itself, the processor, the agent, the database, and a shared folder. Ensure that you review [Plan a deployment of Office Telemetry Dashboard](plan-telemetry-dashboard-deployment.md) for topology, scalability, and hardware guidance before you deploy these components. 
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
 
 <a name="dashboard"> </a>
 
 ## Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel 2019 or Excel 2016 installed.
+Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.
 
 After Office is installed, you can start Office Telemetry Dashboard by using one of the procedures in the following table: 
 
@@ -37,12 +39,15 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 
 |**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows Server 2008 R2, Windows Server 2008, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-| Windows 8.1 or Windows 8  <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
+|Windows 10, Windows Server 2008 R2, or Windows 7 with Service Pack 1  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+| Windows 8.1 <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
+> [!NOTE]
+> - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 <a name="SQL"> </a>
 
@@ -62,11 +67,14 @@ SQL Server must be deployed before you can configure Office Telemetry Dashboard.
 
 - SQL Server 2005 or SQL Server 2005 Express Edition
 
+> [!NOTE]
+> To check which versions of SQL Server are currently supported, go to [Search Product and Services Lifecycle Information](/lifecycle/products/) page.
+
 The **Getting started** worksheet in Office Telemetry Dashboard provides a link to download SQL Server 2014 Express. If you don't have SQL Server already installed, follow the steps in [To download and install SQL Server 2014 Express](deploy-telemetry-dashboard.md#installsql). Be sure to review the following guidelines before you install SQL Server 2014 Express. 
 
-- Ensure that the computer meets the hardware and software requirements for SQL Server 2014. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Office Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014).
+- Ensure that the computer meets the hardware and software requirements for SQL Server 2014. This is especially important if you are planning an all-in-one configuration for testing because SQL Server has additional requirements, such as installing Windows service packs that aren't required for Office Telemetry Dashboard. These requirements are described in [Hardware and Software Requirements for Installing SQL Server 2014](/previous-versions/sql/2014/sql-server/install/hardware-and-software-requirements-for-installing-sql-server).
 
-- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2014 from the Installation Wizard (Setup)](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup?view=sql-server-2014).
+- For local installations, you must run Setup as an administrator. If you install SQL Server from a remote shared folder, you must use a domain account that has read and execute permissions on the remote shared folder. For more information, see [Install SQL Server 2014 from the Installation Wizard (Setup)](/previous-versions/sql/2014/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup).
 
 <a name="installsql"> </a>
 
@@ -96,30 +104,20 @@ The **Getting started** worksheet in Office Telemetry Dashboard provides a link 
 
 ## Office Telemetry Processor
 
-Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor." 
+Office Telemetry Processor runs on one or more computers and collects inventory, usage, and health data from the shared folder and imports the data to the database. The processor is installed as a Windows service named "Office Telemetry Processor" and the processor supports Transport Layer Security (TLS) 1.2.
 
 > [!IMPORTANT]
-> If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529). 
+> If the computers that run the processor and the shared folder pair, and the SQL database aren't joined to a domain, you must install these components by using the script that is described in [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](/archive/blogs/office_resource_kit/quickly-set-up-office-telemetry-dashboard-on-a-workgroup-or-domain-joined-computer). 
 
 The processor generates error logs in a file that is named dperrorlog.txt. It is located in a hidden folder at %systemroot%\ServiceProfiles\NetworkService\AppData\Local\Temp.
 
-Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226). 
+Each computer on which you install the processors and database must also run the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 We recommend the following operating systems for computers that run the processor:
 
- **For production environments:** For best performance, we recommend these operating systems: 
+ **For production environments:** For best performance, we recommend you use a supported version of Windows Server, such as Windows Server 2019.
 
-- Windows Server 2016
-
-- Windows Server 2012 R2
-
-- Windows Server 2012
-
-- Windows Server 2008 R2
-
-- Windows Server 2008
-
-**For test or small production environments:** You can use computers that run Windows 10, Windows 8.1, Windows 8, and Windows 7 with Service Pack 1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -135,7 +133,7 @@ Ensure that you have the following available before you run the wizard to set up
 
 ### To install the Office Telemetry Processor
 
-1. On the computer where you want to install the processor, install the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+1. On the computer where you want to install the processor, install the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 2. In Office Telemetry Dashboard, on the **Getting started** worksheet, choose the installation link under **2. Install Telemetry Processor**. Select the x86 or x64 version that's the same as the Windows operating system architecture where the processor will run.
 
@@ -181,7 +179,7 @@ When the connection is established, many new worksheets are added to the workboo
 
 - You can use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) on the computer that is running SQL Server to allow other administrators to view data in Office Telemetry Dashboard. You don't have to run this for your own account if you created a database when you installed the processor. Update the values for dbserver, dbname, and domain\user as needed. 
 
-  ```
+  ```console
   tdadm.exe -o permission -databaseserver dbserver -databasename dbname -add domain\user
   ```
 
@@ -205,13 +203,16 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the agent
 
-The agent is built into Office 365 ProPlus, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
+The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 
 - Office 2007
 
 - Office 2010
+
+> [!NOTE]
+> Office 2003, Office 2007, and Office 2010 are no longer supported.
 
 For computers that are running Office 2013 and you have the Office 2013 agent installed on the computer, there are several additional considerations:
 
@@ -231,8 +232,6 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 
 - Windows 8.1
 
-- Windows 8
-
 - Windows 7 with Service Pack 1
 
 - Windows Server 2016
@@ -245,9 +244,14 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 
 - Windows Server 2008
 
-The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on the [Microsoft Product Lifecycle Search website](https://go.microsoft.com/fwlink/p/?LinkId=286402) before you install the agent. 
+The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on [Search Product and Services Lifecycle Information](/lifecycle/products/) before you install the agent. 
 
-The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+> [!NOTE]
+> - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+
+
+The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
 
 ### To deploy the Office 2019 or Office 2016 agent to Office 2010, Office 2007, and Office 2003 clients
 
@@ -257,7 +261,7 @@ The computer running the agent must also run the latest version of the Universal
 
     For client local installations, you must run the .msi file as an administrator. You can deploy the MSI package silently by using the /quiet parameter with the MSI. Refer to the MSI help for the full set of available parameters. 
 
-    For large-scale deployments, you can [deploy Telemetry Agent by using Microsoft Endpoint Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkID=286403).
+    For large-scale deployments, you can [deploy Telemetry Agent by using Microsoft Configuration Manager](/archive/blogs/office_resource_kit/deploy-telemetry-agent-by-using-system-center-configuration-manager).
 
 
 <a name="configure"> </a>
@@ -278,7 +282,7 @@ The easiest way to update the registry on a single client is to run a .reg file 
 
 The following example sets the default settings that are needed to enable the agent. AgentInitWait and AgentRandomDelay are set to their default values, which are appropriate for production deployments.
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -295,7 +299,7 @@ Windows Registry Editor Version 5.00
 
 The code in the following example enables Office Telemetry Dashboard to begin uploading data immediately by setting AgentInitWait and AgentRandomDelay to their smallest values. Use this example only in test deployments. 
 
-```
+```console
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\osm]
 "CommonFileShare"="\\\\<SERVERNAME>\\<SHARENAME>"
@@ -312,7 +316,7 @@ Windows Registry Editor Version 5.00
 
 You can distribute registry updates to multiple client computers by putting a .reg file in a shared folder and instructing users to run the file, or you can add a command to the users' logon script to automatically import the .reg file when users log on. Use the syntax in the following example to start the .reg file from a logon script:
 
-```
+```console
 %windir%\regedit.exe /s <PATH>\<NAME>.reg
 ```
 
@@ -379,9 +383,9 @@ If you want to trigger the data collection manually and see data uploaded immedi
 
 - AgentRandomRelay: 0
 
-**For computers that run Windows 8 and later**
+**For computers that run Windows 8.1 and later**
 
-Because user logon is faster in Windows 8 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
+Because user logon is faster in Windows 8.1 and later versions of Microsoft Windows, we recommend setting AgentInitWait to at least 60 seconds to ensure that the network connection is ready after the user logs on.
 
 - AgentInitWait: 60
 
@@ -445,7 +449,7 @@ The following table describes some symptoms that you might encounter after you d
 
 |**Issue**|**Description**|**Resolution**|
 |:-----|:-----|:-----|
-|**Office Telemetry Processor settings** wizard fails  <br/> |The wizard fails with the message "The Telemetry Processor settings wizard can only run on computers that are joined to a domain. Join the computer to a domain and run the wizard again."  <br/> |The computers that run the processor, shared folder, and SQL database must be joined to a domain so that the appropriate security settings can be configured. Ensure the computer or computers are in trusted domains.  <br/><br/> You can install these components on a single workgroup computer or domain-joined computer by using the script that is described in the blog post [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](https://go.microsoft.com/fwlink/p/?LinkId=266529).  <br/> |
+|**Office Telemetry Processor settings** wizard fails  <br/> |The wizard fails with the message "The Telemetry Processor settings wizard can only run on computers that are joined to a domain. Join the computer to a domain and run the wizard again."  <br/> |The computers that run the processor, shared folder, and SQL database must be joined to a domain so that the appropriate security settings can be configured. Ensure the computer or computers are in trusted domains.  <br/><br/> You can install these components on a single workgroup computer or domain-joined computer by using the script that is described in the blog post [Quickly set up Office Telemetry Dashboard on a workgroup or domain-joined computer](/archive/blogs/office_resource_kit/quickly-set-up-office-telemetry-dashboard-on-a-workgroup-or-domain-joined-computer).  <br/> |
 |**Office Telemetry Processor settings** wizard fails  <br/> |The processor is using the wrong SQL Server instance.  <br/> |If there are two or more instances of SQL Server, ensure that you point to the correct SQL Server instance by using the format  _Servername\SQLServerinstance_ during the processor setup.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The agent isn't uploading data and the Msoia.exe process isn't running in Task Manager.  <br/> |Check the registry path and value for the CommonFileShare, EnableLogging, and EnableUpload registry values. These are described in [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure), earlier in this article.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The agent isn't scanning or uploading data. The Msoia.exe process runs in Task Manager for a long time.  <br/> |By default, the agent has an initial wait timer and randomization feature to avoid uploading large amounts of data at the same time as other agents and affecting network bandwidth. Update the AgentInitWait and AgentRandomDelay registry values to remove this delay in test environments. Otherwise the upload process can be delayed for up to 4 hours and 10 minutes. These registry values are described in [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure), earlier in this article. You can learn how to trigger scanning and uploading in [Triggering data collection manually](deploy-telemetry-dashboard.md#trigger).  <br/> |
@@ -454,8 +458,8 @@ The following table describes some symptoms that you might encounter after you d
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working. There are many folders and files in the shared folder.  <br/> |Verify the network connection between the processor and the shared folder. Was the processor configured by the **Office Telemetry Processor settings** wizard? The permissions on the shared folder can vary, depending on the processor location and the database. Run the **Office Telemetry Processor settings** wizard again from the shortcut on the desktop.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The processor is working but there are many folders and files under in the Failed folder under the shared folder.  <br/> |The processor processes the files in the shared folder to the database one time per minute. If the processor fails to process the files three times, it will move the failed files to the Failed folder. See the processor log (%windows%\ServiceProfiles\NetworkService\AppData\Local\Temp\dperrorlog.txt) for more information.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of SQL Server authentication settings.  <br/> |Check the authentication type for SQL Server. Office Telemetry Dashboard doesn't support SQL authentication. You must use Windows authentication.  <br/> |
-|Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor and the database.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Server is 1433. See [Configure a Windows Firewall for Database Engine Access](https://go.microsoft.com/fwlink/p/?LinkId=254531) for more information.  <br/> |
-|Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor, the database, and SQL Express.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Express isn't a fixed value. Check the port number in the SQL Configuration Manager and add the port to the firewall configuration. See [Configure a Windows Firewall for Database Engine Access](https://go.microsoft.com/fwlink/p/?LinkId=254531) for more information.  <br/> |
+|Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor and the database.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Server is 1433. See [Configure a Windows Firewall for Database Engine Access](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access) for more information.  <br/> |
+|Office Telemetry Dashboard shows no data  <br/> |The processor isn't working because of firewall issues between the processor, the database, and SQL Express.  <br/> |If there is a firewall between Office Telemetry Dashboard and the database, check whether the SQL port is enabled in the firewall configuration. The default port for SQL Express isn't a fixed value. Check the port number in the SQL Configuration Manager and add the port to the firewall configuration. See [Configure a Windows Firewall for Database Engine Access](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access) for more information.  <br/> |
 |Office Telemetry Dashboard shows no data  <br/> |The processor isn't working.  <br/> |See the processor log (%windows%\ServiceProfiles\NetworkService\AppData\Local\Temp\dperrorlog.txt) for more information.  <br/> |
 |Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database because of SQL Server permissions.  <br/> |Check the permission role for Office Telemetry Dashboard. Add the user to the td_readonly role by using OSQL, SQLCMD, Enterprise Manager, or the Telemetry Dashboard Administration Tool (Tdadm). See [Database used by Office Telemetry Dashboard](deploy-telemetry-dashboard.md#database) earlier in this article for more information.  <br/> |
 |Office Telemetry Dashboard can't connect to the database  <br/> |Office Telemetry Dashboard shows an error message that states it can't connect to the database.  <br/> |If there are two or more instances of SQL Server, ensure that the **Data connection settings** dialog box in Office Telemetry Dashboard uses the correct SQL Server instance in the format  _Servername\SQLServerinstance_.  <br/> |
@@ -468,4 +472,3 @@ The following table describes some symptoms that you might encounter after you d
 - [Plan a deployment of Office Telemetry Dashboard](plan-telemetry-dashboard-deployment.md)
 - [Monitor Office compatibility and deployments by using Office Telemetry Dashboard](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
-

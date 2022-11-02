@@ -2,11 +2,11 @@
 title: "Monitor Office compatibility and deployments by using Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Office Telemetry Dashboard."
@@ -14,16 +14,18 @@ description: "Explains how to view the stability of Office documents and solutio
 
 # Monitor Office compatibility and deployments by using Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
+> [!IMPORTANT]
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
  
 After you deploy the components of Office Telemetry Dashboard and the agents have collected data, you can use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Office Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Office Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Office Telemetry Dashboard. 
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
   
 <a name="openTD"> </a>
     
@@ -45,11 +47,15 @@ The way you start Office Telemetry Dashboard depends on the operating system you
 
 |**Operating system**|**How to start Office Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Micorosft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-|Windows 8  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
-|Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 8.1  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+
+> [!NOTE]
+> - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
    
 ### To connect to the database
@@ -101,7 +107,7 @@ In the navigation pane on the left side of the dashboard, there are filters call
   
 **Label filters**
 - Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
-- The **Label** filters are populated by data that is specified in the <TAG> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent).
+- The **Label** filters are populated by data that is specified in the \<TAG\> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent).
 
   ![An image of the label drop down box on the Office Telemetry Dashboard's navigation pane.](../images/ORK_Telem_Label1.png)
 
@@ -111,7 +117,7 @@ In the navigation pane on the left side of the dashboard, there are filters call
 - The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
 - The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the database is taken every evening at midnight (local server time). It is used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-  ![An image of the Date Range drop down box in the Office Telemetry Dashboard's navigation pane](../images/ORK_Telem_DateRange.png)
+  ![An image of the Date Range drop down box in the Office Telemetry Dashboard's navigation pane.](../images/ORK_Telem_DateRange.png)
 
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select pre-scoped views that help you analyze data. Here are the options that you can choose from:
@@ -127,11 +133,11 @@ In the navigation pane on the left side of the dashboard, there are filters call
 
 The **Overview** worksheet allows you to quickly understand how your critical documents and solutions (add-ins) are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. 
   
-The following screen shot shows the **Overview** worksheet. 
+The following screenshot shows the **Overview** worksheet. 
   
 **The Overview worksheet in Office Telemetry Dashboard**
 
-![An screenshot of the main Overview worksheet view on the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
+![A screenshot of the main Overview worksheet view on the Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
 The four numbers that are highlighted at the top of the content pane show the number of stable and unstable documents and solutions. If you see a high unstable count, you should investigate to find out what is occurring. 
   
@@ -160,7 +166,7 @@ After you know the number of unstable documents and solutions, you can drill int
 
 ![A screenshot of a drill down Overview worksheet showing stable and unstable document statistics.](../images/ORK_Telem_OverviewUnstable1.gif)
   
-After you click the link for unstable documents, the **Documents** worksheet appears. The worksheet is filtered to show the 23 unstable documents. The following screen shot shows an example of this filtered view. Although it isn't obvious in the screen shot, only 23 documents are listed, sorted by most unstable. 
+After you click the link for unstable documents, the **Documents** worksheet appears. The worksheet is filtered to show the 23 unstable documents. The following screenshot shows an example of this filtered view. Although it isn't obvious in the screenshot, only 23 documents are listed, sorted by most unstable. 
   
 **Unstable documents that are shown in the Documents worksheet**
 
@@ -169,7 +175,7 @@ After you click the link for unstable documents, the **Documents** worksheet app
 > [!IMPORTANT]
 > Remember that when you select a link on the **Overview** worksheet to see details about documents or solutions, the contents pane displays a filtered view. Select the message bar at the top of the header pane to see the full list of all items for that worksheet. 
   
-Back on the **Overview** worksheet, under the stable and unstable counts, you can see the trend charts that show how these counts increased or decreased over past periods. If you see the trend line pointing down to indicate a decline in stability, this indicates that recent changes are triggering issues for your documents and solutions. As shown in the following screen shot, the date range that is displayed in the trend chart shows an expanded range that is four times longer than the selected date range. This provides better context to view the overall trend data. 
+Back on the **Overview** worksheet, under the stable and unstable counts, you can see the trend charts that show how these counts increased or decreased over past periods. If you see the trend line pointing down to indicate a decline in stability, this indicates that recent changes are triggering issues for your documents and solutions. As shown in the following screenshot, the date range that is displayed in the trend chart shows an expanded range that is four times longer than the selected date range. This provides better context to view the overall trend data. 
   
 **How trend data is illustrated on the Overview worksheet**
 
@@ -206,15 +212,15 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
 
 ![A screenshot of the Office Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Office 365 ProPlus, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
+To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
   
 ### To enable the Office Telemetry Dashboard COM add-in
 
-1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8.1, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     
-3. In the **Getting Started** worksheet, select the **Click here to use saved copies of Telemetry Dashboard** banner that is shown in the following screen shot. 
+3. In the **Getting Started** worksheet, select the **Click here to use saved copies of Telemetry Dashboard** banner that is shown in the following screenshot. 
     
    **Message that enables saved copies of Telemetry Dashboard**
 

@@ -2,11 +2,11 @@
 title: "Assess Office compatibility"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Provides an overview of how to assess compatibility between versions of Office in your deployment, and use tools like Office Telemetry Dashboard that help you plan for an Office deployment."
@@ -14,9 +14,11 @@ description: "Provides an overview of how to assess compatibility between versio
 
 # Assess Office compatibility
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
   
+> [!IMPORTANT]
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
   
 Keeping an Office deployment project on track requires two key aspects: using the right process to assess Office compatibility, and using tools that help you understand the potential risks of an Office upgrade. Office helps you do both. When you use the process described in this topic with the tools that are in Office, such as the Office Telemetry Dashboard, you can speed up your Office deployments and get users up and running on the new version of Office with minimal disruptions. In this article, you'll learn more about the compatibility process and how Office Telemetry Dashboard fits into this process.
   
@@ -29,13 +31,13 @@ Office Telemetry Dashboard and its components is a compatibility monitoring fram
   
 Office Telemetry Dashboard works as follows: When an Office document or solution is loaded, used, closed, or raises an error in certain Office applications, the application adds a record about the event to a local data store. Each record includes a description of the problem and a link to more information. Inventory and usage data is also tracked.
   
-How does Office Telemetry Dashboard work in earlier versions of Office? Office Telemetry Dashboard is not built into Office 2003, Office 2007, and Office 2010. For those clients, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with newer Office clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
+How does Office Telemetry Dashboard work in earlier versions of Office? Office Telemetry Dashboard is not built into Office 2003, Office 2007, and Office 2010. For those clients, which are no longer supported, you deploy an agent that collects information about the installed add-ins and the most recently used documents. You won't get application event data for these clients like you do with newer Office clients, but you'll get inventory and usage data that helps you discover what is being used and likely important to your business. 
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
   
 <a name="intro"> </a>
 
@@ -45,12 +47,12 @@ The Office compatibility tools address common issues that can make Office deploy
   
 **Phases of the Office compatibility process**
 
-|||
+|Phase|Description|
 |:-----|:-----|
-|![Icon for the Discover phase](../images/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This helps you determine what to test for compatibility with the version of Office you are upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
-|![Icon for the Rationalize phase](../images/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
-|![Icon for the Validate phase](../images/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
-|![Icon for the Manage phase](../images/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
+|![Icon for the Discover phase.](../images/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This helps you determine what to test for compatibility with the version of Office you are upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
+|![Icon for the Rationalize phase.](../images/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
+|![Icon for the Validate phase.](../images/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
+|![Icon for the Manage phase.](../images/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
    
 In this article, we'll discuss each phase of the compatibility process and describe how you can use Office Telemetry Dashboard to support the process.
   
@@ -112,13 +114,13 @@ If you haven't worked with business groups yet, this is the time to approach the
   
 **Classifying Office documents and solutions to test**
 
-|||
+|Type of documents and solutions|Testing needed|
 |:-----|:-----|
 |Documents and solutions that IT is accountable for and must keep functioning at all costs  <br/> |**Proactive testing** <br/> These high-priority documents and solutions are tested, fixed, and ready for use on the first day of the Office deployment.  <br/> |
 |Documents and solutions that IT will fix if somebody calls about them  <br/> |**Reactive testing** <br/> These solutions are fixed only when a user reports an issue to your help desk.  <br/> |
 |Documents and solutions that nobody cares about  <br/> |**Don't test** <br/> |
    
-When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229).
+When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](/previous-versions/technet-magazine/jj250906(v=msdn.10)).
   
 <a name="validate"> </a>
 
@@ -154,12 +156,12 @@ It is much easier to transform user acceptance testing into piloting when you us
 
 By now you have identified the high priority documents and solutions that have to be ready on day one of deployment, and users have tested them by using Office. In addition to bug reports from users, data in Office Telemetry Dashboard indicates how Word, Excel, and Microsoft Outlook perform when used with your existing Office documents and solutions. As you collect information about bugs and other issues, work with in-house developers and business group managers to create remediation plans. You'll have to decide whether to retire solutions or fix them (if they were developed in-house) and work with vendors to obtain updated versions (for third-party products).
   
-Both Office Telemetry Dashboard and Office Telemetry Log can help you during this process. You can monitor the health of Word, Excel, and Microsoft Outlook as you deploy incremental fixes or new versions of Office solutions. Developers can [use the Office Telemetry Log](https://go.microsoft.com/fwlink/p/?LinkId=260532) to observe the compatibility events that occur on the local computer when Word, Excel, and Microsoft Outlook are used with existing documents and solutions. 
+Both Office Telemetry Dashboard and Office Telemetry Log can help you during this process. You can monitor the health of Word, Excel, and Microsoft Outlook as you deploy incremental fixes or new versions of Office solutions. Developers can [use the Office Telemetry Log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) to observe the compatibility events that occur on the local computer when Word, Excel, and Microsoft Outlook are used with existing documents and solutions. 
   
 Your development teams might have automated testing tools that can help with the testing process. Ensure that the tools are tuned in such a way that only issues that block deployment are flagged and fixed for readiness on the first day of deployment. It's probably not worth fixing bugs that don't affect the user's day-to-day work, at least not for day one. Those solutions can be fixed over time if it is necessary.
   
 > [!NOTE]
-> You may wonder whether it's a good idea to substitute vendor support statements with compatibility testing. Chris Jackson covers the cost pros and cons of researching vendor support in his article [Microsoft Office: The Mathematics of Office Compatibility](https://go.microsoft.com/fwlink/p/?LinkId=266229). 
+> You may wonder whether it's a good idea to substitute vendor support statements with compatibility testing. Chris Jackson covers the cost pros and cons of researching vendor support in his article [Microsoft Office: The Mathematics of Office Compatibility](/previous-versions/technet-magazine/jj250906(v=msdn.10)). 
   
 <a name="manage"> </a>
 
@@ -195,12 +197,11 @@ As part of your overall Office training plan, you should provide guidance to use
   
 ### Prepare help desk and users for change
 
-Your Help Desk should be ramped up on Office and ready to support users. They should start by going to the [Office Training Center](https://support.office.com/office-training-center).
+Your Help Desk should be ramped up on Office and ready to support users. They should start by going to [Microsoft 365 Training](https://support.microsoft.com/training).
     
-## Related topics
+## Related articles
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-- [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=266224)
-
+- [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard)

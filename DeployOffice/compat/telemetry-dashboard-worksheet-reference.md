@@ -2,11 +2,11 @@
 title: "Office Telemetry Dashboard worksheet reference"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
@@ -14,24 +14,27 @@ description: "Find reference information about Office Telemetry Dashboard worksh
 
 # Office Telemetry Dashboard worksheet reference
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+
+> [!IMPORTANT]
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
 As you use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Office Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the agents and processors used by Office Telemetry Dashboard.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
 
      
 ## Overview worksheet
 
-The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screen shot shows the **Overview** worksheet:
+The **Overview** worksheet provides a big picture view of both the stability and deployment status of Office within your organization. By using this worksheet, you can quickly understand how your critical documents and solutions are behaving on users' computers. Instead of browsing the **Documents** and **Solutions** worksheets, which show you item-by-item status, you can open and refresh the **Overview** worksheet to see a high-level view of document and solution stability. The following screenshot shows the **Overview** worksheet:
   
 **Overview worksheet in Office Telemetry Dashboard**
 
-![An screenshot of the main Overview worksheet view in Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
+![A screenshot of the main Overview worksheet view in Office Telemetry Dashboard.](../images/ORK_Telem_OverviewWSmain.png)
   
 There are three primary tasks that you can perform on the **Overview** worksheet.
   
@@ -46,7 +49,7 @@ There are three primary tasks that you can perform on the **Overview** worksheet
 
 The **Documents** worksheet in Office Telemetry Dashboard displays the list of documents that was collected by logging and by agent scans. In this worksheet, you can find frequently used documents and data about them. 
   
-The following screen shot shows the **Documents** worksheet. 
+The following screenshot shows the **Documents** worksheet. 
   
 **Documents worksheet in Office Telemetry Dashboard**
 
@@ -100,7 +103,7 @@ The following sections describe worksheets that help you drill down into specifi
 
 The **Document details** worksheet appears after you select a link under **Office usage** on the **Documents** worksheet. The **Document details** worksheet helps you see which users are frequently using a document. 
   
-The following screen shot shows the **Documents details** worksheet. 
+The following screenshot shows the **Documents details** worksheet. 
   
 **Document details worksheet in Office Telemetry Dashboard**
 
@@ -133,7 +136,7 @@ The following table describes each column in the **Document details** worksheet.
 
 The **Document issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Documents** worksheet. The **Document issues** worksheet helps you find details about unique events that were found for a document. 
   
-The following screen shot shows the **Document issues** worksheet. 
+The following screenshot shows the **Document issues** worksheet. 
   
 **Document issues worksheet in Office Telemetry Dashboard**
 
@@ -145,7 +148,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -157,7 +160,7 @@ The following table describes each column in the **Document issues** worksheet.
 
 The **Document sessions** worksheet shows the sessions during which an issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Document issues** worksheet. 
   
-The following screen shot shows the **Documents sessions** worksheet. 
+The following screenshot shows the **Documents sessions** worksheet. 
   
 **Document sessions worksheet in Office Telemetry Dashboard**
 
@@ -169,7 +172,7 @@ The following table describes each column in the **Document sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the document that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -192,13 +195,13 @@ The following table describes each column in the **Document sessions** worksheet
 
 The **Solutions** worksheet displays the list of solutions that was collected by logging and agent scans. In this worksheet, you can find frequently used solutions and data about them. The kinds of solutions that are shown include COM add-ins, application-specific add-ins, and apps for Office.
   
-The following screen shot shows the **Solutions** worksheet. 
+The following screenshot shows the **Solutions** worksheet. 
   
 **Solutions worksheet in Office Telemetry Dashboard**
 
 ![A screenshot of the main Solutions worksheet from Office Telemetry Dashboard.](../images/ORK_Telem_SolutionWorksheet1.png)
   
-After data is collected, you can manage Office add-ins by using the **Add-in management mode** link on the **Solutions** worksheet. For more information, see [Let's manage add-ins using Telemetry Dashboard](https://go.microsoft.com/fwlink/p/?LinkId=271236).
+After data is collected, you can manage Office add-ins by using the **Add-in management mode** link on the **Solutions** worksheet. For more information, see [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard).
   
 There are two main sections on the **Solutions** worksheet: 
   
@@ -253,7 +256,7 @@ The following sections describe worksheets that help you drill down into specifi
 
 The **Solution details** worksheet appears after you select a link under **Office usage** on the **Solutions** worksheet. The **Solution details** worksheet helps you see which users are frequently using a solution. 
   
-The following screen shot shows the **Solution details** worksheet. 
+The following screenshot shows the **Solution details** worksheet. 
   
 **Solution details worksheet in Office Telemetry Dashboard**
 
@@ -273,7 +276,7 @@ The following table describes each column in the **Solution details** worksheet.
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
 |Last loaded  <br/> |Shows the last time that the solution was loaded.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:  <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Office version  <br/> |Shows the Office version that was used to open the solution.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -287,7 +290,7 @@ The following table describes each column in the **Solution details** worksheet.
 
 The **Solution issues** worksheet appears after you select a link under **Office 2016 and later telemetry data** on the **Solutions** worksheet. The **Solution issues** worksheet helps you find details about the unique events that were found for a solution. 
   
-The following screen shot shows the **Solution issues** worksheet. 
+The following screenshot shows the **Solution issues** worksheet. 
   
 **Solution issues worksheet in Office Telemetry Dashboard**
 
@@ -299,7 +302,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Title  <br/> |Shows the title of the issue.  <br/> |
 |Explanation  <br/> |Describes the issue.  <br/> |
 |More info  <br/> |Provides a link to more information.  <br/> |
@@ -311,7 +314,7 @@ The following table describes each column in the **Solution issues** worksheet.
 
 The **Solution sessions** worksheet shows the sessions during which the issue occurred. You can open this worksheet by selecting a link in the **Sessions** column of the **Solution issues** worksheet. 
   
-The following screen shot shows the **Solution sessions** worksheet. 
+The following screenshot shows the **Solution sessions** worksheet. 
   
 **Solution sessions worksheet in Office Telemetry Dashboard**
 
@@ -323,7 +326,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 |**Column**|**Description**|
 |:-----|:-----|
-|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=260532).  <br/> |
+|Event ID  <br/> |Displays the Event ID. For more information about the event IDs, see "Table 2. Types of events displayed in the Telemetry Log" in [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log).  <br/> |
 |Event date  <br/> |Shows the date and time when the issue occurred.  <br/> |
 |User name  <br/> |Shows the names of users who were using the solution that encountered the issue.  <br/> |
 |User domain  <br/> |Shows the domain name for the user.  <br/> |
@@ -333,7 +336,7 @@ The following table describes each column in the **Solution sessions** worksheet
 |Architecture  <br/> |Shows the architecture of the solution.  <br/> |
 |Office version  <br/> |Shows the Office version with build numbers that used this solution.  <br/> |
 |Load time  <br/> |Shows how long the solution took to load.  <br/> |
-|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](https://go.microsoft.com/fwlink/p/?LinkId=272180).  <br/> |
+|Load behavior  <br/> | Shows the load behavior of COM add-ins as follows:<br/>   <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, then load on demand (Loaded)  <br/> <br/>  For more information, see [Load behavior values](/visualstudio/vsto/registry-entries-for-vsto-add-ins#LoadBehavior).  <br/> |
 |Policy setting  <br/> |Shows the policy setting.  <br/> |
 |Document loaded  <br/> |Shows the documents that were open when the issue occurred.  <br/> |
 |Publisher  <br/> |Shows the publisher of the solution.  <br/> |
@@ -348,7 +351,7 @@ The following table describes each column in the **Solution sessions** worksheet
 
 The **Telemetry Processor** worksheet displays information about the health of the Office Telemetry Dashboard infrastructure. You can monitor whether processors are running correctly, and you can check whether users' computers are sending data correctly. 
   
-The following screen shot shows the **Telemetry Processor** worksheet: 
+The following screenshot shows the **Telemetry Processor** worksheet: 
   
 **Telemetry Processor worksheet in Office Telemetry Dashboard**
 
@@ -384,7 +387,7 @@ The following table describes the status that is represented by the symbols that
 
 The **Agents** worksheet displays information about the users whose computers who are uploading data to each processor. You can open the **Agents** worksheet by selecting a link for a computer name on the **Telemetry Processor** worksheet. Use this worksheet to monitor the upload status of each computer. 
   
-The following screen shot shows the **Agents** worksheet. 
+The following screenshot shows the **Agents** worksheet. 
   
 **Agents worksheet in Office Telemetry Dashboard**
 
@@ -420,7 +423,7 @@ The following table describes the status that is represented by the symbols that
 
 The **Deployments** worksheet provides a tabular view of the number of Office clients that are deployed in your organization. This worksheet provides additional information for the deployment trend chart that is shown in the **Overview** worksheet. This information can help you plan for future Office deployments. 
   
-In the following screen shot of the **Deployments** worksheet, you can see how many Office clients are deployed. The list is organized by Office version and CPU architecture. For example, you can see how many users are running 32-bit versions of Office. 
+In the following screenshot of the **Deployments** worksheet, you can see how many Office clients are deployed. The list is organized by Office version and CPU architecture. For example, you can see how many users are running 32-bit versions of Office. 
   
 **Deployments worksheet in Office Telemetry Dashboard**
 
@@ -428,15 +431,14 @@ In the following screen shot of the **Deployments** worksheet, you can see how m
   
 You can see that there are still 32-bit computers that are running Office 2003. You may want to contact these users to understand if they have any concerns about how to upgrade. You can also create a custom report to show more information about these users, such as their computer hardware.
   
-Also, you should be aware that Windows 8 is now supported on ARM-based architectures. If your organization has users who have Office on these computers, you can now keep track of that information in the **Deployments** worksheet. You can create custom reports to obtain richer information about who is using these computers, what issues they may be experiencing, and so on. 
+Also, you should be aware that Windows 8.1 is now supported on ARM-based architectures. If your organization has users who have Office on these computers, you can now keep track of that information in the **Deployments** worksheet. You can create custom reports to obtain richer information about who is using these computers, what issues they may be experiencing, and so on. 
   
 
 ## Custom report worksheet
 
-When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.office.com/article/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
+When you select the **Create custom report** button on the **Custom report** worksheet, Telemetry Dashboard connects to multiple tables and creates relationships for you to use in a PivotTable. If you have never used a PivotTable before, you can learn more in [Use multiple tables to create a PivotTable](https://support.microsoft.com/office/b5e3ff48-2921-4e29-be15-511e09b5cf2d). 
   
-## Related topics
+## Related articles
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-

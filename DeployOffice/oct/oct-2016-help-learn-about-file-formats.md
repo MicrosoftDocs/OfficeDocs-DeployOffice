@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Learn about file formats"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 62d4c8fa-5470-445e-9c4a-0c2ff0498eb5
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
@@ -22,11 +21,11 @@ The selection of a default document format could affect, to a certain extent, th
   
 For more information on the level of support in ODF for commonly used features of Excel, PowerPoint, and Word, see the following articles:
   
-- [Differences between the OpenDocument Spreadsheet (.ods) format and the Excel for Windows (.xlsx) format](https://support.office.com/article/3db958c8-e0ac-49a5-9965-2c2f8afbd960)
+- [Differences between the OpenDocument Spreadsheet (.ods) format and the Excel for Windows (.xlsx) format](https://support.microsoft.com/office/3db958c8-e0ac-49a5-9965-2c2f8afbd960)
     
-- [Use PowerPoint to open or save a presentation in the OpenDocument Presentation (.odp) format](https://support.office.com/article/94805e84-1b09-4c98-a8b5-0da2a52242a0)
+- [Use PowerPoint to open or save a presentation in the OpenDocument Presentation (.odp) format](https://support.microsoft.com/office/94805e84-1b09-4c98-a8b5-0da2a52242a0)
     
-- [Differences between the OpenDocument Text (.odt) format and the Word (.docx) format](https://support.office.com/article/d9d51a92-56d1-4794-8b68-5efb57aebfdc)
+- [Differences between the OpenDocument Text (.odt) format and the Word (.docx) format](https://support.microsoft.com/office/d9d51a92-56d1-4794-8b68-5efb57aebfdc)
     
 To learn more about ODF generally, see:
   

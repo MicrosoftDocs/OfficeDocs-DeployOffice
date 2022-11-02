@@ -2,15 +2,14 @@
 title: "Language versions and language interface packs in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 3/14/2018
 audience: ITPro
 ms.topic: reference
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 9994905c-9fe9-4085-9f77-924dbaa38764
 description: "Learn about the language packs and language interface packs that are available for Office."
 ---
 
@@ -24,7 +23,7 @@ An installation of Office 2016 can include applications or user interface elemen
 This article describes the language versions that are available for a subset of Office 2016 applications, the Office 2016 applications that will work with Language Interface Packs, and the recommended base languages to install for Office 2016 Language Interface Packs.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
   
     
 <a name="BKMK_ApplicationsLanguageAvailability"> </a>
@@ -107,7 +106,7 @@ For some languages, Microsoft localizes only some Office 2016 applications and r
     
   - Galician: gl-ES
     
-  - Macedonian: mk-MK
+  - Macedonian (North Macedonia): mk-MK
     
   - Serbian (Cyrillic): sr-Cyrl-RS
     
@@ -144,7 +143,7 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Konkani  <br/> |English  <br/> |
 |Krygyz  <br/> |Russian  <br/> |
 |Luxembourgish  <br/> |French  <br/> |
-|Macedonian (FYROM)  <br/> |English  <br/> |
+|Macedonian (North Macedonia)  <br/> |English  <br/> |
 |Malayalam  <br/> |English  <br/> |
 |Maltese  <br/> |English  <br/> |
 |Maori  <br/> |English  <br/> |

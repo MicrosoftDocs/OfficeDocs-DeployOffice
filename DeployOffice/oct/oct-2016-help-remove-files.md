@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Remove files"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: bf6418ff-c604-4dca-b0f0-68ca270b2375
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

@@ -4,4 +4,4 @@
 # So if a pull request only touches javascript files, only these owners
 # will be requested to review.
 
-/DeployOffice/  @jwhit-msft @DHB-MSFT
+/DeployOffice/  @DHB-MSFT @nicholasswhite

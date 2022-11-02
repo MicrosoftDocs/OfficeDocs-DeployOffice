@@ -2,15 +2,14 @@
 title: "Plan security settings for VBA macros in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/10/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 9fe385d6-3c8f-458b-918f-b524d0b05f74
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office."
 ---
@@ -30,7 +29,7 @@ Office 2016 provides several settings that enable you to control the behavior of
   
 - Change the security warning settings for VBA macros. This includes disabling VBA macros, enabling all VBA macros, and changing the way that users are notified about VBA macros.
     
-- Block VBA macros from running in Word, Excel, and PowerPoint files from the Internet.
+- Block VBA macros from running in Word, Excel, PowerPoint, Access and Visio files from the Internet.
     
 - Disable VBA.
     

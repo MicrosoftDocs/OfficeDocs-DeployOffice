@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Outlook Profile"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 9/21/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 3062ac28-6f5c-49f9-80b0-2b2bd6dd1094
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

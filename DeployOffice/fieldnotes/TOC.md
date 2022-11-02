@@ -1,0 +1,12 @@
+# Best practices from the field
+## [Choose how to install Microsoft 365 Apps](install-options.md)
+## [Choose how to deliver updates](choose-how-to-deliver-updates.md)
+## [Right-sizing your initial deployment](right-sizing-initial-deployment.md)
+## [Build dynamic, lean, and universal packages](build-dynamic-lean-universal-packages.md)
+## [Network guidance for deploying and servicing Microsoft 365 Apps](network-guidance.md)
+## [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)
+## [Switch to Monthly Enterprise Channel with Configuration Manager](switch-to-monthly-enterprise-channel.md)
+## [Road map to modern management](roadmap-to-modern-management.md)
+## [Adopting servicing profiles](adopt-servicing-profiles.md)
+## [Microsoft 365 change guide](microsoft-365-change-guide.md)
+## [Performance recommendations for Microsoft 365 Apps on Windows 10](performance-recommendations.md)

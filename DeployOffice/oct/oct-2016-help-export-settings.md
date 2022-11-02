@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Export settings"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 67844949-6915-42bf-bb48-2c2ed7c451a0
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

@@ -2,15 +2,14 @@
 title: "Customize language setup and settings for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 1c423975-1848-4060-999c-cafcadf3047d
 description: "Learn how to customize languages for Office 2016."
 ---
 
@@ -22,8 +21,8 @@ description: "Learn how to customize languages for Office 2016."
 To customize and deploy language setup and settings for Office 2016, follow the steps that are described in this article.
 
 > [!NOTE]
-> - If you're a user trying to install a language pack for a personal copy of Office at home, see [Language Accessory Pack for Office](https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f) instead of reading this article.
-> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> - If you're a user trying to install a language pack for a personal copy of Office at home, see [Language Accessory Pack for Office](https://support.microsoft.com/office/82ee1236-0f9a-45ee-9c72-05b026ee809f#ID0EAACAAA=Office_2016) instead of reading this article.
+> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
 
 <a name="BKMK_Overview"> </a>  
 ## Overview of customizing language setup and settings for Office
@@ -70,7 +69,7 @@ For Office 2016, you download an ISO image of the language packs, LIPs, and proo
     
     The list of files contains all available language packs, language interface packs, and proofing tools for the language and edition that you specified. For example, for Office Professional Plus 2016, the results will look similar to the following figure.
     
-     ![Screenshot showing available language pack downloads for Office Professional Plus 2016](../images/b46e5aa7-a451-440c-ad85-d2145127f2a7.png)
+     ![Screenshot showing available language pack downloads for Office Professional Plus 2016.](../images/b46e5aa7-a451-440c-ad85-d2145127f2a7.png)
   
 6. Select the appropriate package from the list and then, under **Download**, select the down arrow to download the ISO image to your computer or to a shared folder on your network. 
     
@@ -274,7 +273,7 @@ You use the OCT to create a setup customization file (.msp file) that setup appl
     
     Setup applies the file automatically when you install Office on users' computers.
     
-For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](https://docs.microsoft.com/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
+For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
   
 ### Use the Language Preferences tool to change language settings
 
@@ -284,9 +283,9 @@ If you are not enforcing language settings by policy, users who work in Office a
 
 1. Depending on your operating system, do one of the following:
     
-   - If you are running Windows 8, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
+   - If you are running Windows 8.1, open **All Apps** (right-click the desktop), and then under **Microsoft Office 2016**, choose **Office 2016 Language Preferences**. Or, 
     
-   - If you are running Windows 10 or Windows 7, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
+   - If you are running Windows 10, choose **Start**, choose **All Programs**, choose **Microsoft Office**, choose **Microsoft Office 2016 Tools**, and then choose **Office 2016 Language Preferences**. 
     
 2. Under **Choose Editing Languages**, in the language list, choose the language that you want to be available for editing, and then choose **Add**. Repeat this step for each editing language that you want to add.
     
@@ -478,6 +477,6 @@ If you have only one or two users who want proofing tools, you can install proof
     
 5. Choose **Install**.
     
-## Related topics
-[Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+## Related articles
 
+- [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)

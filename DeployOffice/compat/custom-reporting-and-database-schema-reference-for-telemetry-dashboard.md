@@ -2,11 +2,11 @@
 title: "Custom reporting and database schema reference for Office Telemetry Dashboard"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
@@ -14,15 +14,18 @@ description: "Describes how to create custom reports in Office Telemetry Dashboa
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+
+> [!IMPORTANT]
+> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
 The built-in worksheets in Office Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Office Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the database tables and fields that are used in custom reports.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
 > - Data collected for Office Telemetry Dashboard is stored in a SQL Server database controlled by your organization and the data collected is ***not*** sent to Microsoft. For more information, see [Data collected by the agent for Office Telemetry Dashboard](data-that-the-telemetry-agent-collects-in-office.md).
-> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Office 365 ProPlus](../privacy/overview-privacy-controls.md).
-> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Office 365 ProPlus](../privacy/manage-privacy-controls.md).
+> - Data collected for Office Telemetry Dashboard is different than Office diagnostic data, which can be sent to Microsoft. For more information about Office diagnostic data, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
+> - Settings used to manage Office Telemetry Dashboard have no impact on Office diagnostic data and vice versa. For more information about managing Office diagnostic data, see [Use policy settings to manage privacy controls for Microsoft 365 Apps](../privacy/manage-privacy-controls.md).
   
 <a name="overview"> </a>
 
@@ -30,26 +33,26 @@ The built-in worksheets in Office Telemetry Dashboard display lots of useful dat
 
 The built-in worksheets in Office Telemetry Dashboard show you a relevant subset of the data that is collected by the agents. However, the built-in worksheets aren't customizable, and you might want to see a combined view of data that appears on different worksheets. This is where custom reporting can help you use PivotTable reports to view data in meaningful ways. 
 
-For example, the following screen shot shows a custom report that lists the unregistered ActiveX controls that are detected on monitored clients. You can see that we've added fields to display the solution name, user name, and business group (as configured for Label 2 when the agents were deployed). This report helps us identify the solutions that use unregistered ActiveX controls and who is using them. In contrast, the **Documents** worksheet lists these solutions but doesn't have a column to indicate whether unregistered ActiveX controls are detected. You have to view the **Document sessions** worksheet for each document to see whether ActiveX controls are being used. 
+For example, the following screenshot shows a custom report that lists the unregistered ActiveX controls that are detected on monitored clients. You can see that we've added fields to display the solution name, user name, and business group (as configured for Label 2 when the agents were deployed). This report helps us identify the solutions that use unregistered ActiveX controls and who is using them. In contrast, the **Documents** worksheet lists these solutions but doesn't have a column to indicate whether unregistered ActiveX controls are detected. You have to view the **Document sessions** worksheet for each document to see whether ActiveX controls are being used. 
   
 **Custom report that shows unregistered ActiveX solutions**
 
-![Illustrates a custom report that shows unregistered ActiveX controls](../images/ORK_CustomReport_ActiveXreport.GIF)
+![Illustrates a custom report that shows unregistered ActiveX controls.](../images/ORK_CustomReport_ActiveXreport.GIF)
   
 > [!IMPORTANT]
 > To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
   
-As another example, the following screen shot shows the list of Office client computers as displayed in the **Deployments** worksheet. This shows a high-level summary of Office deployments. But it doesn't give you a breakdown of how Office is deployed across business groups. 
+As another example, the following screenshot shows the list of Office client computers as displayed in the **Deployments** worksheet. This shows a high-level summary of Office deployments. But it doesn't give you a breakdown of how Office is deployed across business groups. 
   
 **The Deployments worksheet**
 
-![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet](../images/ORK_CR_OfficeDeployments.GIF)
+![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet.](../images/ORK_CR_OfficeDeployments.GIF)
   
 You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
   
 **Custom report showing Office deployments by business group**
 
-![Displays an example of a custom report that shows Office deployments by business group](../images/ORK_CR_OfficeCustomReport.png)
+![Displays an example of a custom report that shows Office deployments by business group.](../images/ORK_CR_OfficeCustomReport.png)
   
 <a name="Create_customreport"> </a>
 
@@ -77,11 +80,15 @@ To create a custom report, you have to first start Office Telemetry Dashboard. T
 
 |**If you have this operating system**|**Follow these steps to start Office Telemetry Dashboard**|
 |:-----|:-----|
-|Windows 10, Windows 7, Windows Server 2008, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-|Windows 8 or Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
+|Windows 10, Windows 7, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Office 365 ProPlus and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+
+> [!NOTE]
+> - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
    
 ### To create a custom report
 
@@ -136,7 +143,7 @@ The following table lists the fields in the **Events** table.
 |**Field name**|**Type**|**Description**|
 |:-----|:-----|:-----|
 |Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](https://go.microsoft.com/fwlink/p/?LinkId=625981) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](https://go.microsoft.com/fwlink/p/?LinkId=625982) (see Table 2)  <br/> |
+|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](/office/client-developer/shared/compatibility-issues-in-office) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) (see Table 2)  <br/> |
 |Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
 |Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
 |User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |
@@ -344,7 +351,7 @@ The following table describes the fields in the System_details table.
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Office 365 ProPlus, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
+|Office 16  <br/> |String  <br/> |Shows Microsoft 365 Apps for enterprise, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
    
 <a name="default_relationships"> </a>
 
@@ -354,19 +361,18 @@ The following illustrations show the relationships between tables in the databas
   
 **Default relationships between tables in the database**
 
-![Shows the primary keys and relationships between tables in the database](../images/ORK_CR_DefaultRelationships.gif)
+![Shows the primary keys and relationships between tables in the database.](../images/ORK_CR_DefaultRelationships.gif)
   
 **The Usage_summary table and its relationships**
 
-![Shows the Usage_Summary table and its relationship to other tables in the database](../images/ORK_CR_Usage_Summary.gif)
+![Shows the Usage_Summary table and its relationship to other tables in the database.](../images/ORK_CR_Usage_Summary.gif)
   
 **The Issue_summary table and its relationships**
 
-![Shows the Issue_Summary table and its relationships to other tables in the database](../images/ORK_CR_Issue_Summary.gif)
+![Shows the Issue_Summary table and its relationships to other tables in the database.](../images/ORK_CR_Issue_Summary.gif)
   
 ## Related topics
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
 - [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
-

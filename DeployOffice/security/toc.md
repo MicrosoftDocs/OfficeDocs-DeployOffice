@@ -1,1 +1,4 @@
-# [Secure and control access to Office](secure-and-control-access-to-office.md)
+# Securing Office
+## [Internet macros blocked by default](internet-macros-blocked.md)
+## [Security baseline](security-baseline.md)
+## [Trusted Locations](trusted-locations.md)

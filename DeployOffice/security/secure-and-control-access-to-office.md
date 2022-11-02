@@ -2,15 +2,14 @@
 title: "Secure and control access to Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 9/21/2015
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: c38e3e75-ce78-450f-96a9-4bf43637c456
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Lists and describes articles that will help you work with the security controls, as well as understand the identity authorization and authentication features that are available in Office."
 ---
@@ -33,8 +32,6 @@ Articles about privacy in Office 2016
 Articles about security and access control in Office 2016
   
 - [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
-    
-- [Designate trusted locations for files in Office 2016](designate-trusted-locations-for-files-in-office.md)
     
 - [Set up a safe environment to open files by using Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md)
     

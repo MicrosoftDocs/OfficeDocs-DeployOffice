@@ -2,16 +2,15 @@
 title: "Block specific file format types in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.assetid: fe3f431c-8d7a-45c8-954f-1268f3b53316
 description: "Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users."
 ---
 

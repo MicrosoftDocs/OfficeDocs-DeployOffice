@@ -4,7 +4,7 @@
 ## Get started
 ### [What's new for admins](what-s-new-for-admins-in-office-2016.md)
 ### [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
-### [Office Training Center](https://support.office.com/office-training-center)
+### [Office Help & Training](https://support.microsoft.com/office)
 
 ## Application compatibility
 ### [Assess Office compatibility](../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json)
@@ -14,7 +14,7 @@
 #### [Deploy](../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 #### [Update components](../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json)
 #### [Monitor Office compatibility and deployments](../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
-#### [Manage add-ins]../compat/(manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
+#### [Manage add-ins](../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Manage the privacy of data collected](../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json)
 #### [Custom reporting and database schema](../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json)
 #### [Data that the agent collects](../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json)

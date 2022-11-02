@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Delete/Modify Registry Entry dialog box"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 13269e58-9060-4019-8245-dc05da6cffa2
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

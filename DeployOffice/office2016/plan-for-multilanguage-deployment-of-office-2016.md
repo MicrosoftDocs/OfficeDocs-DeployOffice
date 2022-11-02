@@ -2,15 +2,14 @@
 title: "Plan for multilanguage deployment of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 11/26/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: f458a0cb-a3a5-4d4a-9f98-a4a81a17ee3a
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
 ---
 
@@ -24,7 +23,7 @@ Support for multiple languages and languages other than the default are provided
 To deploy Office 2016 in multiple languages, you must plan carefully. This article discusses the planning considerations for setup and the customizations that you can make when you install language packs or proofing tools.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Office 365 ProPlus, which uses the Click-to-Run installation technology, see [Overview of deploying languages in Office 365 ProPlus](../overview-of-deploying-languages-in-office-365-proplus.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
   
   
 <a name="BKMK_PlanSetup"> </a>
@@ -142,7 +141,7 @@ For instructions on downloading language packs and proofing tools, see [Download
 ### Precaching the local installation source for the Office 2016 proofing tools
 
 
-When you deploy the Office 2016 proofing tools, setup creates a local installation source on the user's computer — a copy of the compressed source files for the Office 2016 proofing tools. After the files are copied to the user's computer, setup completes the installation from the local installation source. You can minimize the load on the network by deploying the local installation source separately, before you deploy the Office 2016 proofing tools. For information about how to cache the local installation source for the Office proofing tools, see [Precache the local installation source for Office 2010](https://docs.microsoft.com/previous-versions/office/office-2010/cc179231(v=office.14)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) Use the Setup.exe and Config.xml files from the ProofKit.WW folder from the Proofing Tools 2016 ISO. For instructions on downloading the Proofing Tools 2016 ISO, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
+When you deploy the Office 2016 proofing tools, setup creates a local installation source on the user's computer — a copy of the compressed source files for the Office 2016 proofing tools. After the files are copied to the user's computer, setup completes the installation from the local installation source. You can minimize the load on the network by deploying the local installation source separately, before you deploy the Office 2016 proofing tools. For information about how to cache the local installation source for the Office proofing tools, see [Precache the local installation source for Office 2010](/previous-versions/office/office-2010/cc179231(v=office.14)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) Use the Setup.exe and Config.xml files from the ProofKit.WW folder from the Proofing Tools 2016 ISO. For instructions on downloading the Proofing Tools 2016 ISO, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
   
 ## Related topics
 [Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md)
@@ -152,4 +151,3 @@ When you deploy the Office 2016 proofing tools, setup creates a local installati
 [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
   
 [Add or remove language packs after deployment of Office 2016](add-or-remove-language-packs-after-deployment-of-office-2016.md)
-

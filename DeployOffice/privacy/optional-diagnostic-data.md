@@ -2,48 +2,46 @@
 title: "Optional diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: "Provides Office admins with information about optional diagnostic data in Office, including some exaaples of events."
+description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 hideEdit: true
 ---
 
 # Optional diagnostic data for Office
 
-> [!IMPORTANT]
-> The information in this article applies to Version 1904 or later of the following Office client software installed on a computer running Windows:
-> - Office 365 ProPlus and Office 365 Business
-> - Office 365 Personal, Office 365 Home, or other versions of Office that are part of an Office 365 subscription.
-> - Project and Visio that come with some subscription plans, such as the Project Online Professional plan or Visio Online Plan 2.
->
-> The information also applies to Version 16.28 or later of the following Office for Mac applications: Excel, Outlook, OneNote, PowerPoint, and Word.
+> [!NOTE]
+> For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
 Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
-This diagnostic data is collected and sent to Microsoft about Office client software being used on computers running Windows. Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data through the use of privacy controls, such as policy settings for organizations. You can see the diagnostic data being sent to us by using the Diagnostic Data Viewer.
+This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device. Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data through the use of privacy controls, such as policy settings for organizations. You can see the diagnostic data being sent to us by using the Diagnostic Data Viewer.
+
+> [!NOTE]
+> If you're using a version of Office 2019 or Office 2016 that doesn't give you or your admin the ability to choose whether to send us required or optional diagnostic data, then only required diagnostic data is sent. For example, if you're using Office Professional Plus 2019 or Office Standard 2016, which don't provide that choice, then only required diagnostic data is sent. Office 2013 doesn't send required or optional diagnostic data. For more information about which versions of Office provide this choice, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
 ***Optional diagnostic data*** is additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and fix issues.
 
-If you choose to send us optional diagnostic data, required diagnostic data is also included.
+If you choose to send us optional diagnostic data, required diagnostic data is also included. Also, diagnostic log files for Office, which contain information very similar to optional diagnostic data, might be sent. For more information about those log files, see [Overview of diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
 Examples of optional diagnostic data include data we collect about the shapes users insert into Word documents so we can provide better options, and data we collect about the time it takes for a PowerPoint slide to appear on your screen so we can improve the experience if it’s slow.
 
-For more information about diagnostic data, see the following:
+For more information about diagnostic data, see the following articles:
 
 - [Required diagnostic data for Office](required-diagnostic-data.md)
-- [Using the Diagnostic Data Viewer with Office](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Using the Diagnostic Data Viewer with Office](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-If you’re the admin for your organization, you might also be interested in the following:
+If you’re the admin for your organization, you might also be interested in the following articles:
 
-- [Overview of privacy controls for Office 365 ProPlus](overview-privacy-controls.md)
-- [Use policy settings to manage privacy controls for Office 365 ProPlus](manage-privacy-controls.md)
+- [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md)
+- [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)

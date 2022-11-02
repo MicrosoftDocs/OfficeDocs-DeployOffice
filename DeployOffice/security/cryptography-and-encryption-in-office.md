@@ -2,22 +2,21 @@
 title: "Cryptography and encryption in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: 9ed0c24f-02d0-4202-a4e5-853ebd06a58c
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains the settings that you can use to encrypt data in Office, and provides information about compatibility with previous versions of Office."
 ---
 
 # Cryptography and encryption in Office 2016
 
- **Summary:** Explains the settings that you can use to encrypt data in Office 2016, and provides information about compatibility with previous versions of Office. 
+ **Summary:** Explains the settings that you can use to encrypt data in Office 2016+, Microsoft 365 Apps, and provides information about compatibility with previous versions of Office. 
   
   
 Office 2016 contains settings that let you control the way that data is encrypted when you use Access 2016, Excel 2016, OneNote 2016, PowerPoint 2016, Project 2016, and Word 2016.
@@ -60,7 +59,7 @@ The following CNG hashing algorithms, or any other CNG cipher extension that is 
   
 MD2, MD4, MD5, RIPEMD-128, RIPEMD-160, SHA-1, SHA256, SHA384, and SHA512
   
-Although there are Office 2016 settings to change how encryption is performed, when you encrypt Open XML Format files (.docx, .xslx, .pptx, and so on) the default values — AES (Advanced Encryption Standard), 256-bit key length, SHA1, and CBC (cipher block chaining) — provide strong encryption and should be fine for most organizations. AES encryption is the strongest industry-standard algorithm that is available and was selected by the National Security Agency (NSA) to be used as the standard for the United States Government. AES encryption is supported on Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
+Although there are Office 2016 settings to change how encryption is performed, when you encrypt Open XML Format files (.docx, .xslx, .pptx, and so on) the default values — AES (Advanced Encryption Standard), 256-bit key length, SHA-2, and CBC (cipher block chaining) — provide strong encryption and should be fine for most organizations. AES encryption is the strongest industry-standard algorithm that is available and was selected by the National Security Agency (NSA) to be used as the standard for the United States Government. AES encryption is supported on Windows Vista, Windows 7, Windows 8, Windows 10, Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012.
   
 <a name="settings"> </a>
 
@@ -87,7 +86,7 @@ The following table lists the settings that are available to change the encrypti
 |**Configure CNG cipher chaining mode** <br/> |Lets you configure the cipher chaining mode that is used. The default is **Cipher Block Chaining (CBC)**.  <br/> |
 |**Set CNG cipher key length** <br/> |Lets you configure the number of bits to use when you create the cipher key. The default is 256 bits.  <br/> |
 |**Specify encryption compatibility** <br/> |Lets you specify the compatibility format. The default is **Use next generation format**.  <br/> |
-|**Set parameters for CNG context** <br/> |Lets you specify the encryption parameters that should be used for the CNG context. To use this setting, a CNG context first has to be created by using CryptoAPI: Next Generation (CNG). For more information, see [CNG Cryptographic Configuration Functions](https://go.microsoft.com/fwlink/p/?LinkID=192996).  <br/> |
+|**Set parameters for CNG context** <br/> |Lets you specify the encryption parameters that should be used for the CNG context. To use this setting, a CNG context first has to be created by using CryptoAPI: Next Generation (CNG). For more information, see [CNG Cryptographic Configuration Functions](/windows/win32/seccng/cng-cryptographic-configuration-functions).  <br/> |
 |**Specify CNG hash algorithm** <br/> |Lets you specify the hash algorithm that is used. The default is SHA1.  <br/> |
 |**Set CNG password spin count** <br/> |Lets you specify the number of times to spin (rehash) the password verifier. The default is 100000.  <br/> |
 |**Specify CNG random number generator algorithm** <br/> |Lets you configure the CNG random number generator to use. The default is RNG (Random Number Generator).  <br/> |
@@ -113,11 +112,11 @@ You can use the setting that is listed in the following table to prevent users f
 
 ## Compatibility with previous versions of Office
 
-If you have to encrypt Office documents, we recommend that you save the documents as Open XML Format files (.docx, .xlsx, .pptx, and so on) instead of Office 97-2003 format (.doc, .xls, .ppt, and so on). The encryption that is used for binary documents (.doc, .xls, .ppt) uses RC4. It isn't recommended, as discussed in Security Considerations sections 4.3.2 and 4.3.3 of the [Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287). Documents that are saved in the older Office binary formats can only be encrypted by using RC4 to maintain compatibility with older versions of Office. AES, the default and recommended encryption algorithm, is used to encrypt Open XML Format files.
+If you have to encrypt Office documents, we recommend that you save the documents as Open XML Format files (.docx, .xlsx, .pptx, and so on) instead of Office 97-2003 format (.doc, .xls, .ppt, and so on). The encryption that is used for binary documents (.doc, .xls, .ppt) uses RC4. It isn't recommended, as discussed in Security Considerations sections 4.3.2 and 4.3.3 of the [Office Document Cryptography Structure Specification](/openspecs/office_file_formats/ms-offcrypto/3c34d72a-1a61-4b52-a893-196f9157f083). Documents that are saved in the older Office binary formats can only be encrypted by using RC4 to maintain compatibility with older versions of Office. AES, the default and recommended encryption algorithm, is used to encrypt Open XML Format files.
   
 Office 2016, Office 2013, Office 2010, and the 2007 Office system let you save documents as Open XML Format files. In addition, if you have Office 2003 you can use the Compatibility Pack to save documents as Open XML Format files.
   
-Documents that are saved as Open XML Format files and encrypted by using Office 2016 can only be read by Office 2016, Office 2007 SP2, and Office 2003 with the Office 2007 SP2 compatibility pack. To ensure compatibility with all previous versions of Office, you can create a registry key (if it doesn't already exist) under **HKCU\Software\Microsoft\Office\16.0\\<application\>\Security\Crypto\\** called **CompatMode** and disable it by setting it to **0**. The values that you can enter for <application> represent the specific Office application that you are configuring this registry key for. For example, you can enter Access, Excel, PowerPoint, or Word. It is important to realize that, when you set **CompatMode** to **0**, Office 2016 uses an Office 2007 compatible encryption format, instead of the enhanced security that is provided by default when you use Office 2016 to encrypt Open XML Format files. If you have to configure this setting for compatibility reasons, we recommend that you also use a third-party encryption module that allows for enhanced security, such as AES encryption. 
+Documents that are saved as Open XML Format files and encrypted by using Office 2016 can only be read by Office 2016, Office 2007 SP2, and Office 2003 with the Office 2007 SP2 compatibility pack. To ensure compatibility with all previous versions of Office, you can create a registry key (if it doesn't already exist) under **HKCU\Software\Microsoft\Office\16.0\\<application\>\Security\Crypto\\** called **CompatMode** and disable it by setting it to **0**. The values that you can enter for *\<application\>* represent the specific Office application that you are configuring this registry key for. For example, you can enter Access, Excel, PowerPoint, or Word. It is important to realize that, when you set **CompatMode** to **0**, Office 2016 uses an Office 2007 compatible encryption format, instead of the enhanced security that is provided by default when you use Office 2016 to encrypt Open XML Format files. If you have to configure this setting for compatibility reasons, we recommend that you also use a third-party encryption module that allows for enhanced security, such as AES encryption. 
   
 If your organization uses the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint File Formats to encrypt Open XML Format files, you should review the following information:
   
@@ -132,5 +131,4 @@ If your organization uses the Microsoft Office Compatibility Pack for Word, Exce
 ## Related topics
 [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
 
-[Office Document Cryptography Structure Specification](https://go.microsoft.com/fwlink/p/?LinkId=192287)
-
+[Office Document Cryptography Structure Specification](/openspecs/office_file_formats/ms-offcrypto/3c34d72a-1a61-4b52-a893-196f9157f083)

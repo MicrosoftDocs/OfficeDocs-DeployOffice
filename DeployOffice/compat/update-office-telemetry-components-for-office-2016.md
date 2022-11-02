@@ -2,11 +2,11 @@
 title: "Update Office Telemetry Dashboard components"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn how to update processors and the database so that they work with Office Telemetry Dashboard in Office 2019 or Office 2016."
@@ -14,7 +14,7 @@ description: "Learn how to update processors and the database so that they work 
 
 # Update Office Telemetry Dashboard components
 
-***Applies to:*** *Office 365 ProPlus, Office 2019, and Office 2016*
+***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 > [!IMPORTANT]
 > Follow these steps only if you were using the Office Telemetry Dashboard in Office 2013 and you're now moving to using the Office Telemetry Dashboard in Office 2019 or Office 2016. These steps aren't needed if you were using Office Telemetry Dashboard in Office 2016 and are now moving to Office 2019.
@@ -23,9 +23,9 @@ When you install Office 2019 or Office 2016, Office Telemetry Dashboard and the 
   
 To use the new version of Office Telemetry Dashboard, you'll have to update the processors and database manually. If you don't, you'll see an error message similar to the following when you use Office Telemetry Dashboard to connect to the database:
   
-    Database connection failure. The database needs to be updated.
+&nbsp; &nbsp; Database connection failure. The database needs to be updated.
   
-You need to ensure that each computer on which you install the processors and database is also running the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+You need to ensure that each computer on which you install the processors and database is also running the latest version of the Universal C Runtime (CRT) for the version of Windows running on the computer. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
   
 Here are the procedures for uninstalling the old processors, installing the new processors, and updating the database.
   
@@ -36,7 +36,7 @@ Here are the procedures for uninstalling the old processors, installing the new 
 
 1. On each computer where a processor is installed, uninstall the processor from the Windows Control Panel.
     
-   - On Windows 8, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+   - On Windows 8.1, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
     
    - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
     
@@ -48,7 +48,7 @@ The following two procedures describe two options for installing the processor. 
   
 ## Option 1: To install the processor on a computer that's running Office 2019 or Office 2016
 
-1. Ensure that the computer where you want to update the processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+1. Ensure that the computer where you want to update the processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
     
 2. On a computer where Office 2019 or Office 2016 is running, open Office Telemetry Dashboard, and then select **Let's get started**.
     
@@ -66,7 +66,7 @@ The following two procedures describe two options for installing the processor. 
     
 3. Copy the MSI file to the computers that run a processor.
     
-4. Ensure that each computer that runs a processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/kb/2999226).
+4. Ensure that each computer that runs a processor is also running the latest version of the CRT. For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
     
 5. On each computer that runs a processor, run the MSI file to start the **Microsoft Office Telemetry Processor** wizard. 
     

@@ -2,15 +2,14 @@
 title: "Use digital signatures with Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-proplus-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
-ms.assetid: a7154bc5-17cf-4da3-8b2e-21f4dc3475d3
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents as well as how to choose the appropriate certificates for your deployment."
 ---
@@ -85,7 +84,7 @@ The following figure shows the warning that the user sees after opening a docume
   
 **Digital signature warning for documents originally signed in Office 2003 or earlier versions.**
 
-![Figure 1 Compatibility Issues](../images/CompatibilityIssues.jpg)
+![Figure 1 Compatibility Issues.](../images/CompatibilityIssues.jpg)
   
 Also, if you use XAdES for a digital signature in Office 2016, the digital signature will not be compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](use-digital-signatures-with-office.md#configsigs) later in this article. 
   
@@ -95,7 +94,7 @@ If you want digital signatures that you create in Office 2016 to be compatible w
 
 ## Choosing digital certificate types for Office 2016
 
-Digital certificates can be either self-signed or issued by CAs in an organization, such as a Windows Server 2012 or Windows Server 2008 computer that is running Active Directory Certificate Services, or a public CA, such as VeriSign or Thawte. Self-signed certificates are typically used by people and small businesses that do not want to set up a public key infrastructure (PKI) for their organizations and do not want to purchase a commercial certificate.
+Digital certificates can be either self-signed or issued by CAs in an organization, such as a Windows Server 2012 computer that is running Active Directory Certificate Services, or a public CA, such as VeriSign or Thawte. Self-signed certificates are typically used by people and small businesses that do not want to set up a public key infrastructure (PKI) for their organizations and do not want to purchase a commercial certificate.
   
 The primary drawback of using self-signed certificates is that they are only useful if you exchange documents with those who know you personally and are confident that you are the actual originator of the document. By using self-signed certificates, there is no third party that validates the authenticity of your certificate. Each person who receives your signed document must manually decide whether to trust your certificate. 
   

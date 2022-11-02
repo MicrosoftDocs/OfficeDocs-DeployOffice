@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Add files"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: ca62a903-adc7-430b-a012-6251e5f3695f
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

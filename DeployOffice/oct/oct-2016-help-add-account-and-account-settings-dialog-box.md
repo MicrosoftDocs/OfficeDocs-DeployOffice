@@ -2,15 +2,14 @@
 title: "Office Customization Tool (OCT) 2016 Help Add Account and Account Settings dialog box"
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
+manager: dougeby
 ms.date: 8/28/2015
 audience: ITPro
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: office-perpetual-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
-ms.assetid: 274b8048-06ae-4dbc-8abe-c2da48a40724
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

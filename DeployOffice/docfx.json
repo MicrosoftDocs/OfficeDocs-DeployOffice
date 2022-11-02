@@ -23,7 +23,8 @@
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
-          "**/*.svg"
+          "**/*.svg",
+          "**/*.pdf"
         ],
         "exclude": [
           "**/obj/**",
@@ -37,14 +38,45 @@
     "globalMetadata": {
       "breadcrumb_path": "/deployoffice/breadcrumb/toc.json",
       "extendBreadcrumb": "true",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "searchScope": [
         "Deploy Office"
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-DeployOffice",
-      "feedback_product_url": "https://ODInsiders.uservoice.com"
+      "feedback_product_url": "https://techcommunity.microsoft.com",
+      "titleSuffix": "Deploy Office",
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
+        "jborsecnik",
+        "tiburd",
+	"AngelaMotherofDragons",
+	"dstrome",
+        "v-dihans",
+        "garycentric"
+      ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "recommendations": {
+        "compat/**/*.md": false,
+        "fieldnotes/**/*.md": false,
+        "oct/**/*.md": false,
+        "office2016/**/*.md": false,
+        "other/**/*.md": false,
+        "privacy/**/*.md": false,
+        "security/**/*.md": false,
+        "vlactivation/**/*.md": false
+      },
+      "feedback_product_url": {
+        "office-insider/**/*.md": "https://techcommunity.microsoft.com/t5/office-insider/bd-p/Office_Insider"
+      },
+      "titleSuffix": {
+        "office-insider/**/*.md": "Office Insider"
+      }
+    },
     "template": [],
     "dest": "OfficeDocs-OfficeProPlus",
     "markdownEngineName": "markdig"
