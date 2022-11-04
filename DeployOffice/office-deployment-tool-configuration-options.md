@@ -131,7 +131,7 @@ Allowed values:
 
 Optional.
 
-Defines which channel to use for installing Office. If Office isn't installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute isn't specified, the ODT will match the channel of the existing installation.
+Defines which channel to use for installing Office. If Office isn't installed on the device, the default setting for the Channel attribute is **Monthly Enterprise**. If Office is installed on the device and the channel attribute isn't specified, the ODT will match the channel of the existing installation.
 
 This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](change-update-channels.md).
 
