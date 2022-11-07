@@ -23,7 +23,7 @@ The **Software updates** page has the following tabs to assist you in monitoring
 
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients.
 
-This article contains information about the **Microsoft 365 Apps** tab. For more information about the **Windows** tab, see [Microsoft admin center software updates page](/windows/deployment/update/update-status-admin-center).
+This article contains information about the **Microsoft 365 Apps** tab. For more information about the **Windows** tab, see [Microsoft 365 admin center software updates page](/windows/deployment/update/wufb-reports-admin-center).
 
 ## The Microsoft 365 Apps tab
 
