@@ -8439,6 +8439,17 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
+#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudGetDataFromCache
+
+The event is triggered when user listens to a paragraph that has already been prefetched and Read Aloud will be playing the cached paragraph now instead of making a request to EDU service to get the neural voice. The data helps track how many of users are using previously-fetched paragraphs thereby giving usage ideas along with the solidifying our calculation for Read Aloud play minutes since the paragraphs which are read from cache are currently not getting tracked. Data is used to track the usage of Read Aloud neural implementation via cached files, how many minutes are being generated.
+
+The following fields are collected: 
+
+- **Data_input_length** - Log the text length that is being read from cache
+
+- **Data_locale** - Log the locale that was passed with initial request 
+
+
 #### Office.Word.FileNew.CreateNewFile
 
 This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
@@ -11707,6 +11718,105 @@ The following fields are collected:
 - **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
 
 - **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentAccepted
+
+This event is triggered when a user accepts/acknowledges an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
+
+This event is used to track a failure to properly render an account-level consent user interface. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderSuccess
+
+This event is used to track successful rendering of user interface dialog for an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
 
 
 ## Product and service performance data events
