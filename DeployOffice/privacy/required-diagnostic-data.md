@@ -2857,6 +2857,8 @@ The following fields are collected:
 
 - **action** - the action taken by the user (closed, opened, notification_tapped)
 
+- **file_type** - The file type if the notification is about a file (Word, Excel, PowerPoint, Fluid)
+
 - **message_reminder_available** - True if there is a message reminder available and will be displayed when the notification center is opened
 
 - **type** - the notification type, either reaction or message_reminder as of now *(not always collected)*
@@ -9191,6 +9193,8 @@ The following fields are collected:
 
 - **from_message_reminder** - Indicates if the message was sent in response to a message reminder
 
+- **from_voice_assistant** - lets us know if a sent mail originated from the voice assistant.
+
 - **has_attachment** - indicates whether message has any attachments
 
 - **has_mip_label** - indicates whether a MIP label was stamped on the message or not
@@ -9273,6 +9277,10 @@ The following fields are collected:
 - **account_order_changed** - To check if you changed the order of your accounts to make sure this configuration works properly 
 
 - **action** - possible actions taken in settings, such as deleting an account to help us diagnose issues and ensure no negative impact
+
+- **app_lock_disabled_reason** - Indicated the reason we disabled the applock feature on a device 
+
+- **app_lock_state** - Indicates whether user turned the applock feature on or off
 
 - **auth_type** - The authentication type being used by the account, so we understand which backend sync layer we are using to help us diagnose issues 
 
@@ -10328,7 +10336,13 @@ The following fields are collected:
   - **Data\_CheckRequiredPartsLoaded -** Method CheckRequiredPartsLoaded execution duration in milliseconds
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
+
+  - **Data_CleanClickCorrelationId** - The correlation GUID from client origin. As it could be from web or other sources we uses this correlation ID to stitch the end to end events from client to the target app (in this case PowerPoint)
    
+  - **Data_CleanClickOrigin** - Where the ppt fileUrl link is originally opened from (Office Apps/windows start recommended/WAC)
+
+  - **Data_ClickTime** - The timestamp when the file URL link is clicked, used to track performance from click event until file loaded in app.
+
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
   - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
@@ -15319,6 +15333,10 @@ The following fields are collected for iOS only:
 
 - **alternate_app_icon**- Tell us the alternate app icon that user currently selected by the application
 
+- **app_lock_disabled_reason** - Tells us if the applock feature is disabled by us, if so for what reason
+
+- **app_lock_state** - Tells us if the applock feature is turned_on/turned_off on a device
+
 - **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
 
 - **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
@@ -15369,6 +15387,8 @@ The following fields are collected for Android only:
 
 - **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
+- **pinned_tabs** - Tells us the tabs user has chosen to pin to navigation bar, and their order.
+
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
@@ -15376,6 +15396,8 @@ The following fields are collected for Android only:
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
 
 - **theme_color** - The custom (user-selected) theme color currently in use by the application
+
+- **unpinned_tabs** - Tells us the tabs user has chosen to unpin from navigation bar, and their order.
 
 - **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
 
