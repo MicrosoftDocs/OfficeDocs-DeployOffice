@@ -2857,6 +2857,8 @@ The following fields are collected:
 
 - **action** - the action taken by the user (closed, opened, notification_tapped)
 
+- **file_type** - The file type if the notification is about a file (Word, Excel, PowerPoint, Fluid)
+
 - **message_reminder_available** - True if there is a message reminder available and will be displayed when the notification center is opened
 
 - **type** - the notification type, either reaction or message_reminder as of now *(not always collected)*
@@ -8437,6 +8439,17 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
+#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudGetDataFromCache
+
+The event is triggered when user listens to a paragraph that has already been prefetched and Read Aloud will be playing the cached paragraph now instead of making a request to EDU service to get the neural voice. The data helps track how many of users are using previously-fetched paragraphs thereby giving usage ideas along with the solidifying our calculation for Read Aloud play minutes since the paragraphs which are read from cache are currently not getting tracked. Data is used to track the usage of Read Aloud neural implementation via cached files, how many minutes are being generated.
+
+The following fields are collected: 
+
+- **Data_input_length** - Log the text length that is being read from cache
+
+- **Data_locale** - Log the locale that was passed with initial request 
+
+
 #### Office.Word.FileNew.CreateNewFile
 
 This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
@@ -9191,6 +9204,8 @@ The following fields are collected:
 
 - **from_message_reminder** - Indicates if the message was sent in response to a message reminder
 
+- **from_voice_assistant** - lets us know if a sent mail originated from the voice assistant.
+
 - **has_attachment** - indicates whether message has any attachments
 
 - **has_mip_label** - indicates whether a MIP label was stamped on the message or not
@@ -9273,6 +9288,10 @@ The following fields are collected:
 - **account_order_changed** - To check if you changed the order of your accounts to make sure this configuration works properly 
 
 - **action** - possible actions taken in settings, such as deleting an account to help us diagnose issues and ensure no negative impact
+
+- **app_lock_disabled_reason** - Indicated the reason we disabled the applock feature on a device 
+
+- **app_lock_state** - Indicates whether user turned the applock feature on or off
 
 - **auth_type** - The authentication type being used by the account, so we understand which backend sync layer we are using to help us diagnose issues 
 
@@ -10328,7 +10347,13 @@ The following fields are collected:
   - **Data\_CheckRequiredPartsLoaded -** Method CheckRequiredPartsLoaded execution duration in milliseconds
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
+
+  - **Data_CleanClickCorrelationId** - The correlation GUID from client origin. As it could be from web or other sources we uses this correlation ID to stitch the end to end events from client to the target app (in this case PowerPoint)
    
+  - **Data_CleanClickOrigin** - Where the ppt fileUrl link is originally opened from (Office Apps/windows start recommended/WAC)
+
+  - **Data_ClickTime** - The timestamp when the file URL link is clicked, used to track performance from click event until file loaded in app.
+
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
   - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
@@ -11693,6 +11718,105 @@ The following fields are collected:
 - **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
 
 - **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentAccepted
+
+This event is triggered when a user accepts/acknowledges an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
+
+This event is used to track a failure to properly render an account-level consent user interface. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderSuccess
+
+This event is used to track successful rendering of user interface dialog for an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
 
 
 ## Product and service performance data events
@@ -15319,6 +15443,10 @@ The following fields are collected for iOS only:
 
 - **alternate_app_icon**- Tell us the alternate app icon that user currently selected by the application
 
+- **app_lock_disabled_reason** - Tells us if the applock feature is disabled by us, if so for what reason
+
+- **app_lock_state** - Tells us if the applock feature is turned_on/turned_off on a device
+
 - **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
 
 - **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
@@ -15369,6 +15497,8 @@ The following fields are collected for Android only:
 
 - **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
+- **pinned_tabs** - Tells us the tabs user has chosen to pin to navigation bar, and their order.
+
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
@@ -15376,6 +15506,8 @@ The following fields are collected for Android only:
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
 
 - **theme_color** - The custom (user-selected) theme color currently in use by the application
+
+- **unpinned_tabs** - Tells us the tabs user has chosen to unpin from navigation bar, and their order.
 
 - **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
 
