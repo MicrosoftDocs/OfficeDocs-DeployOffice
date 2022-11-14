@@ -62,7 +62,7 @@ The following table shows the initial version, for each update channel, in which
 > [!NOTE]
 > The change will begin to be rolled out for Version 2209 and newer starting in the middle of January 2023.
 
-As part of the roll out, users will initially get a warning message (for a period of time) if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
+As part of the rollout, users will initially get a warning message (for a period of time) if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. 
