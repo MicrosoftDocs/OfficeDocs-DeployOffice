@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -30,7 +30,7 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 Review the system requirements for your Office server workloads as well. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-Finally, you should review the deployment tools you use in your organization, such as Microsoft Endpoint Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. If your organization uses Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
+Finally, you should review the deployment tools you use in your organization, such as Microsoft Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. If your organization uses Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
 
 ## Step 2 - Review licensing and accounts
 

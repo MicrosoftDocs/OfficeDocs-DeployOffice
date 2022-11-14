@@ -20,7 +20,7 @@ There are four ways that admins typically apply updates for Microsoft 365 Apps:
 
 - Automatically from the internet
 
-- Using Microsoft Endpoint Configuration Manager
+- Using Microsoft Configuration Manager
 
 - Automatically from an on-premises location
 
@@ -42,10 +42,10 @@ Even if you use the Office Deployment Tool to deploy Microsoft 365 Apps to your 
   
 This option might be a good choice for your organization if you have users who travel or work remotely and don't connect to the corporate network regularly. It's also the choice that requires the least amount of administrative effort. But, this option gives you the least amount of control over the update process.
 
-## Using Microsoft Endpoint Configuration Manager
+## Using Microsoft Configuration Manager
 <a name="MECM"> </a>
 
-Microsoft Endpoint Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Please refer to [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) for an in-depth description.
+Microsoft Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Refer to [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) for an in-depth description.
 
 ## Apply updates automatically from an on-premises location to Microsoft 365 Apps
 <a name="OnPremises"> </a>
@@ -59,19 +59,19 @@ You'll have to use the Office Deployment Tool to [download updated versions of M
 ## Apply updates by installing an updated version of Microsoft 365 Apps
 <a name="Install"> </a>
 
-Instead of using automatic updates, you can deploy an updated version of Microsoft 365 Apps to your users by using the Office Deployment Tool. This option re-installs Microsoft 365 Apps. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Endpoint Configuration Manager or Microsoft Intune.
+Instead of using automatic updates, you can deploy an updated version of Microsoft 365 Apps to your users by using the Office Deployment Tool. This option reinstalls Microsoft 365 Apps. You can use the Office Deployment Tool together with software distribution tools, such as Microsoft Configuration Manager or Microsoft Intune.
   
 This option is useful if you want to control which version of Microsoft 365 Apps users have, and you want to control which users get updated and when they get updated. This option provides the most control, but also requires the most administrative effort and has a high impact on user downtime and network load. 
   
 If you decide to use this option, you'll disable automatic updates. You can [control that setting](configure-update-settings-microsoft-365-apps.md) by using either the Office Deployment Tool or Group Policy.
   
-## Related topics
+## Related articles
   
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
   
 [Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
 
-[Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
+[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
   
 [Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md)
   

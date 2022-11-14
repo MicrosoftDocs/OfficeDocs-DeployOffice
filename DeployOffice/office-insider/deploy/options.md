@@ -57,7 +57,7 @@ If you're doing a new installation of Office, here are ways that you can deploy 
 |Method  |Type of device|When to use  |More information  |
 |---------|---------|---------|---------|
 |Office Deployment Tool |Windows |If you're already using the Office Deployment Tool to install Office. |[Install Office Insider when you do a new Office installation (Office Deployment Tool)](office-deployment-tool.md#install-office-insider-when-you-do-a-new-office-installation) |
-|Configuration Manager |Windows |If you're already using Microsoft Endpoint Configuration Manager (current branch) to deploy software. | [Use Configuration Manager to install Office Insider on Windows devices](configuration-manager.md)|
+|Configuration Manager |Windows |If you're already using Microsoft Configuration Manager (current branch) to deploy software. | [Use Configuration Manager to install Office Insider on Windows devices](configuration-manager.md)|
 |Microsoft Intune |Windows |If you're already using Microsoft Intune to deploy software.|[Install Office Insider when you do a new Office installation (Intune)](intune.md#install-office-insider-when-you-do-a-new-office-installation)      |
 
 ## Video with demos of some deployment options

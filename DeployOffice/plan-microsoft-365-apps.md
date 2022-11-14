@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -185,7 +185,7 @@ Before beginning your deployment, make sure you've completed the planning exit c
 
 Depending on your deployment  plan, go to one of the following articles:
 
-- [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
+- [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 - [Deploy Microsoft 365 Apps from a local source](deploy-microsoft-365-apps-local-source.md)
 - [Self-install Office from the cloud](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)

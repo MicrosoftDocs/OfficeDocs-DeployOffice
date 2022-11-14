@@ -44,6 +44,7 @@ The following table provides a list of the essential services for Office and a d
 | ------ | ---- |
 | [Authentication](#authentication-events) | Authentication is a cross-platform service that validates your Office user identity.  It is required to enable you to sign in to Office, activate your Office license, access your files stored in the cloud, and provides a consistent experience across Office sessions and your devices.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run is the installation technology used to install and update Office on Windows. It checks for new versions of Office, and when a new version is available, downloads and installs it. Click-to-Run will detect the need for, perform the download of, and install Office updates, including security updates.     |
+|[Consent Service](#consent-service-events)|The Consent Service provides a consistent and comprehensive experience for managing user privacy settings associated with their accounts. The service is used to determine which privacy notifications need to be shown to the user when an application launches. It also tracks the responses the user has given to any prior privacy notifications. |
 | [Enhanced Configuration Service (ECS)](#enhanced-configuration-service-ecs-events) | ECS provides Microsoft the ability to reconfigure Office installations without the need for you to redeploy Office. It is used to control the gradual rollout of features or updates, while the impact of the rollout is monitored from diagnostic data being collected. It is also used to mitigate security or performance issues with a feature or update. In addition, ECS supports configuration changes related to diagnostic data to help ensure that the appropriate events are being collected. |
 | [Licensing](#licensing-events)     | Licensing is a cloud-based service that supports your Office activation for new installations and maintains the license on your devices after Office has been activated. It registers each of your devices and activates Office, checks the status of your Office subscription, and manages your product keys.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) is the technology used to update Microsoft applications produced for macOS, such as Office. MAU will detect the need for, perform the download of, and install application updates, including security updates.|
@@ -3537,6 +3538,99 @@ The following fields are collected:
 
 - **Status** - The HTTP status code returned by the call to the webservice, e.g. 404, 500, etc.
 
+## Consent Service events
+
+### Office.Privacy.UnifiedConsent.API.ConsentGetFailed   
+
+This event logs a failure in a request to get information from the consent service. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:   
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **Os** - The operating system of the device sending the data
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+### Office.Privacy.UnifiedConsent.API.ConsentPatchFailed
+
+This event is triggered by a failure in our ability to make a call to the consent service. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+### Office.Privacy.UnifiedConsent.API.ConsentPatchSuccess
+
+This event logs successful communication with the consent service. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
 
 ## Enhanced Configuration Service (ECS) events
 
@@ -3682,6 +3776,18 @@ The following fields are collected:
 - **EventDate** – Timestamp of the event occurrence
 
 - **SessionID** – GUID to connect events by session
+
+
+### Office.Android.DocsUI.PaywallControl.SkuDetailsNullDuringPurchaseEvent
+
+This event is triggered when user clicks on the "Start 30 days free trial” button but the Stock Keeping Unit (SKU) details are found to be null. The data is used to understand what the underlying reason is for when the user is trying to make a purchase. This is needed to log errors when the upsell experiences are not performing as expected and come up with solutions to improve reliability for users.
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence
+
+- **Reason** - Integer – Indicating the reason behind the SKU details being null.
+
 
 ### Office.Android.DocsUI.PaywallControl.SkuPriceDiscountErrorEvent
 

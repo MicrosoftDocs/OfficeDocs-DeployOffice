@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
@@ -78,6 +78,8 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 3. Assign the configuration profile to the Azure AD security group with the devices whose channel you want to change.
 
 4. By default, Intune policies refresh in the background every 8 hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), from the device, select **Start** > **Settings** > **Accounts** > **Access work or school** > *{Select your account}* > **Info** > **Sync**. For more information, see [Sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).
+
+5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune for Office can be seen in this registry location. For more information, [refer to this article](/mem/intune/configuration/administrative-templates-update-office).
 
 After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device won't show the updated channel until a build of Office from the new channel is installed
 

@@ -15,7 +15,7 @@ description: "Provides steps for Office admins to use Configuration Manager to i
 
 # Use Configuration Manager to install Office Insider on Windows devices
 
-If you already use Microsoft Endpoint Configuration Manager (current branch) to deploy software in your organization, you can use it to install Office Insider on Windows devices.
+If you already use Microsoft Configuration Manager (current branch) to deploy software in your organization, you can use it to install Office Insider on Windows devices.
 
 - You can use Configuration Manager to [install Office Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation).
 - If you previously installed Office by using Configuration Manager, we recommend that you [follow these steps to change to Office Insider](#i-already-have-office-installed-do-i-need-to-go-through-all-these-steps-to-get-office-insider).

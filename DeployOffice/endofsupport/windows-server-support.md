@@ -16,7 +16,7 @@ description: "Provides Office admins with information about the implications of 
 # Windows Server end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Microsoft 365 Apps isn't supported on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows 2022.
+> - Microsoft 365 Apps isn't supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 > - Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. These issues could include new features added to Microsoft 365 Apps, or updates to existing features, not working as expected.
 > - If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to [Windows 365](https://www.microsoft.com/windows-365) or [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
 
@@ -67,9 +67,15 @@ For end of support dates for Windows Server 2019, see the [Windows Server 2019 l
 
 ## Windows Server 2022
 
-Microsoft 365 Apps isn’t supported on Windows Server 2022.
+Microsoft 365 Apps is supported on Windows Server 2022 only until October 2026, which is when mainstream support ends for Windows Server 2022.
 
-For recommendations on client hosting solutions to use instead, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+> [!NOTE]
+> - Support for running Microsoft 365 Apps on Windows Server 2022 is currently in preview.
+> - If you want to begin testing on Windows Server 2022, we recommend that you use the most current, [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
+> - At a later date (to be determined), we will provide information about which versions of Microsoft 365 Apps are supported on Windows Server 2022.
+> - For more information, refer to this blog post on the Microsoft Tech Community: [Windows Server 2022 adds support for Microsoft 365 Apps](https://techcommunity.microsoft.com/t5/windows-server-insiders/windows-server-2022-adds-support-for-microsoft-365-apps/m-p/3653854)
+
+For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
 For end of support dates for Windows Server 2022, see the [Windows Server 2022 lifecycle](/lifecycle/products/windows-server-2022) page.
 
