@@ -15,23 +15,24 @@ description: "Provides guidance for admins about how Office blocks Basic authent
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
 
-> [!IMPORTANT]
-> This is pre-release documentation and is subject to change. The information only applies to customers that are in a private preview program.
+> [!NOTE]
+> The information in this article is related to Message center post MC454810 that was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022.
 
-The Office apps included with Microsoft 365 Apps allow users to use Basic authentication to connect to resources on remote servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
+Apps such as Word and Excel allow users to use Basic authentication to connect to resources on remote servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
 Basic authentication is an outdated industry standard and doesn't support more robust security features, such as multifactor authentication. The threats posed by it have only increased and there are better and more effective user authentication alternatives. For example, modern authentication, which supports multifactor authentication, smart cards, and certificate-based authentication.
 
-Therefore, to help improve security in Microsoft 365 Apps, we’re changing the default behavior of Office applications to block sign-in prompts from Basic authentication.
+Therefore, to help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication.
 
-With this change, if users try to open Office files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message will include a link that takes users to an article that contains information about the security risks of Basic authentication.
+With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message will include a link that takes users to an article that contains information about the security risks of Basic authentication.
 
 > [!NOTE]
-> SharePoint Online, OneDrive, and on-premises SharePoint Server aren't affected by this change.
+> - SharePoint Online, OneDrive, and on-premises SharePoint Server (configured for modern authentication) aren't affected by this change.
+> - On-premises SharePoint Server configured for Basic authentication is affected by this change.
 
-## Versions of Office affected by this change
+## Versions of Microsoft 365 Apps affected by this change
 
-This change affects Office apps only on devices running Windows and affects the following applications:
+This change affects the following apps only on devices running Windows:
 
 - Access
 - Excel
@@ -44,49 +45,51 @@ This change affects Office apps only on devices running Windows and affects the 
 - Word
 
 > [!NOTE]
-> Basic authentication will continue to work partially on Outlook, as deprecation of Basic authentication in Exchange Online is a separate effort. For more information, see [Basic Authentication Deprecation in Exchange Online – May 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866).
+> - This change doesn’t affect Outlook connecting to on-premises Exchange Server using Basic authentication.
+> - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).
 
-The plan is to begin rolling out this change in Version 2208, starting with Current Channel (Preview) in August 2022. Later, the change will be available in the other update channels, such as Current Channel and Monthly Enterprise Channel.
 
-The following table shows the projected schedule of when this change will be available in each update channel. Information in italics is subject to change.
+The following table shows the initial version, for each update channel, in which this change will be implemented. Information in italics is subject to change.
 
-|Update channel  |Version  |Date  |
+|Update channel  |Version  |
 |---------|---------|---------|
-|Current Channel (Preview)|Version 2208|August 2022|
-|Current Channel|*Version 2208*|*To be determined*|
-|Monthly Enterprise Channel|*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel (Preview)|*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel |*To be determined*|*To be determined*|
+|Current Channel (Preview)|Version 2209|
+|Current Channel|Version 2209|
+|Monthly Enterprise Channel|Version 2209|
+|Semi-Annual Enterprise Channel (Preview)|*Version 2302 (in March 2023)*|
+|Semi-Annual Enterprise Channel |*Version 2302 (in July 2023)*|
+
+> [!NOTE]
+> The change will begin to be rolled out for Version 2209 and newer starting in the middle of January 2023.
+
+As part of the rollout, users will initially get a warning message (for a period of time) if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. 
 > - This change won't affect volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 
-## How Office determines whether to show Basic authentication prompts
+## How Microsoft 365 Apps determines whether to show Basic authentication prompts
 
-The following flowchart graphic shows how Office determines whether to open a file if the server uses Basic authentication.
+The following flowchart graphic shows how Microsoft 365 Apps determines whether to open a file if the server uses Basic authentication.
 
-![Flowchart diagram that shows how Office determines whether to show Basic authentication prompts](../images/security/basic-authentication-flowchart.png)
+![Flowchart diagram that shows how Microsoft 365 Apps determines whether to show Basic authentication prompts](../images/security/basic-authentication-flowchart.png)
 
 The following steps explain the information in the flowchart graphic.
 
-1. A user tries to open an Office file that is stored on a remote server.
-2. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Office will check if a policy exists to allow Basic authentication prompts.
-3. If the server is authenticating directly with Basic authentication, Office evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office) policy.
+1. A user tries to open a file that is stored on a remote server.
+2. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps will check if a policy exists to allow Basic authentication prompts.
+3. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
    - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
    - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
-4. If the server is using proxy authentication, Office evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
+4. If the server is using Basic authentication proxy authentication, Microsoft 365 Apps evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
    - If the policy is set to Enabled, the user is prompted to provide a username and password to open the file.
    - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
 
 ## Use policies to manage Basic authentication prompts
 
-> [!IMPORTANT]
-> The following policies only work for customers that are in a private preview program.
-
 If you need to provide Basic authentication prompts for certain hosts or from network proxies, you can configure the following policies:
 
-- [Allow specified hosts to show Basic Authentication prompts to Office](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office)
+- [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps)
 - [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies)
 
 > [!IMPORTANT]
@@ -96,11 +99,12 @@ If you need to provide Basic authentication prompts for certain hosts or from ne
 These policies can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings.
 
 > [!NOTE]
-> To use these policies, download at least version 5359.1000 of the [Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. That version was released on August 11, 2022.
+> - To use these policies, download at least version 5359.1000 of the [Group Policy Administrative Template files (ADMX/ADML) for Microsoft 365 Apps](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. That version was released on August 11, 2022.
+> - You can also implement these policies by using Cloud Policy. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
-### Allow specified hosts to show Basic Authentication prompts to Office
+### Allow specified hosts to show Basic Authentication prompts to Office apps
 
-This policy allows you to specify which hosts can show Basic authentication sign-in prompts to Office apps.
+This policy allows you to specify which hosts can show Basic authentication sign-in prompts to apps such as Word and Excel.
 
 The following table shows the level of protection you get with each state of the policy.
 
