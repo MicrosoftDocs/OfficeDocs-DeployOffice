@@ -21,6 +21,12 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ## November 2022
 
+### Basic authentication prompts to be blocked by default in Microsoft 365 Apps
+
+To help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication. With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+
+This change will begin rolling out in January 2023, starting with Version 2209. For more information, see [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](security/basic-authentication-prompts-blocked.md).
+
 ### General availability of the "Software updates" page in the Microsoft 365 admin center
 
 The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
