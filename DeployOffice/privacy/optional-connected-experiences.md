@@ -20,7 +20,7 @@ hideEdit: true
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise. These cloud-backed services are optional. Whether you use them is up to you. They are provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
+If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using the Office apps, like Word or Excel, that are included with Microsoft 365 Apps for enterprise. These cloud-backed services are optional. Whether you use them is up to you. They're provided to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). In some cases, other terms may also apply. This article lists the cloud-backed services, further explains their terms of use, and describes how you can turn them off or on at any time.
 
 > [!NOTE]
 > - If you're an admin, see [Admin controls for optional connected experiences](#admin-controls-for-optional-connected-experiences).
@@ -28,7 +28,7 @@ If you have a work or school account, your organization's admin may have provide
 
 ### If you use these services, what terms of use do you need to agree to?
 
-It is important to know that these optional cloud-backed services are not covered by your organization's license with Microsoft. Instead, they are licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Depending on which service you use, additional terms may also apply. In most cases, there is no fee to use these services. If a fee does apply (as may be the case with some [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) available to you for download through Office Store), you will be clearly informed prior to use.
+It's important to know that these optional cloud-backed services are not covered by your organization's license with Microsoft. Instead, they're licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Depending on which service you use, additional terms may also apply. In most cases, there's no fee to use these services. If a fee does apply (as may be the case with some [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) available to you for download through Office Store), you'll be clearly informed prior to use.
 
 ## Experiences that rely on Bing
 
@@ -69,15 +69,22 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 ### Microsoft Error Reporting Program (MERP)
 
-MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. MERP does not apply to Office client applications that run on Windows.
+MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It's owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. MERP does not apply to Office client applications that run on Windows.
 
 ### Office Store
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You will need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You'll need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
 > [!NOTE]
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
 > - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](/office/dev/add-ins/outlook/privacy-and-security).
+
+### Open files in the Office mobile app that use a legacy or non-Office file format
+
+To open a file in the [Office mobile app](https://www.microsoft.com/microsoft-365/mobile) that uses a legacy or non-Office file format, that file first needs to be converted into a file format that the Office mobile app can open. For example, when you open an Excel workbook that’s in the xls or ods format, the file first needs to be converted to the xlsx format. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
+
+### Print files in the Office mobile app
+To print a file in the [Office mobile app](https://www.microsoft.com/microsoft-365/mobile), the app needs to create a PDF of the file. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
 
 ### Research
 
@@ -92,11 +99,11 @@ On Outlook for iOS, your next upcoming event will be summarized at the top of yo
 
 ### Weather Bar in Outlook
 
-The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location and the cities that you choose to display are not linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you will need to check the privacy statement and license terms of that provider to know which terms apply.
+The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location, and the cities that you choose to display are not linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you'll need to check the privacy statement and license terms of that provider to know which terms apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
-To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you will see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
+To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you'll see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
@@ -107,7 +114,7 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 
 ## Your privacy settings
 
-If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you will have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
+If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you'll have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
 
 If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
 
