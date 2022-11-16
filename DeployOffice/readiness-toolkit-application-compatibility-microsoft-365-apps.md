@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
@@ -29,7 +29,7 @@ You can download the Readiness Toolkit for free from the [Microsoft Download Cen
 
 The Readiness Report Creator can scan for VBA macros in Word, Excel, PowerPoint, Outlook, Access, Project, Visio, and Publisher files, for Office versions as far back as Office 2003. It can also scan for certain types of add-ins used with Office. Add-ins for all Office applications are identified, but it doesn't include web add-ins. For more information, see [File extensions analyzed for VBA macros](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_FileExt) and [Types of add-ins for which the Readiness Report Creator collects data](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddinTypes).
 
-The download is an MSI file that you can use to install the Readiness Toolkit on a user's computer. After it's installed, when you run the Readiness Report Creator, a UI wizard steps you through the process of creating a readiness report. There is also a standalone executable that can be run from the command line or used with scripts. This is useful if you need to collect readiness information from users throughout your enterprise in a more automated manner. For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).
+The download is an MSI file that you can use to install the Readiness Toolkit on a user's computer. After it's installed, when you run the Readiness Report Creator, a UI wizard steps you through the process of creating a readiness report. There's also a standalone executable that can be run from the command line or used with scripts. This is useful if you need to collect readiness information from users throughout your enterprise in a more automated manner. For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).
 
 The following information is provided to help you use the Readiness Report Creator:
 
@@ -69,7 +69,6 @@ Before installing and using the Readiness Toolkit, you should be aware of the fo
 
 - Excel 2010 or later
 
-- [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/download/details.aspx?id=13255) (only if you're using a Click-to-Run version of Access)
 
 > [!NOTE]
 > - We recommend using the 64-bit version of Excel, especially if you expect more than 400,000 results to appear in the readiness report.
@@ -91,10 +90,10 @@ To create a readiness report, you first need to select what information to use t
 
 |**Option**|**Explanation**|**Report created**|
 |:-----|:-----|:-----|
-|Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses on a regular basis.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
+|Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses regularly.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
 |Office documents in a local folder or network share.  <br/> |The Readiness Report Creator scans the Office documents in the folder or network share that you specify. The Readiness Report Creator automatically scans the specified location, and all the subfolders in that location.  <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for add-ins installed on the computer on which the Readiness Report Creator is run. <br/> |VBA only  <br/> |
 |Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
-|Add-in data from Office Telemetry Dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](compat/plan-telemetry-dashboard-deployment.md) to assess add-in compatibility, you can use that information which you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Office Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the database is required for the user to run this option. <br/> |Add-in only  <br/> |
+|Add in data from Office Telemetry Dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](compat/plan-telemetry-dashboard-deployment.md) to assess add-in compatibility, you can use the information that you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Office Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the database is required for the user to run this option. <br/> |Add-in only  <br/> |
 
 <a name="BKMK_ChooseBasicAdv"> </a>
 
@@ -138,7 +137,7 @@ The following table provides a list of the different tabs (worksheets) that are 
 |:-----|:-----|
 |VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie chart shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
 |VBA Summary  <br/> |Provides some pre-defined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
-|VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there is a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
+|VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there's a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA Remediation  <br/> |Provides proposed changes to VBA macro code found during the scan.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA References  <br/> |List references identified in code and in the VBA project. These references are generally used to call external DLLs, linked files, and ODBC connections for use by the VBA code.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 
@@ -148,9 +147,9 @@ The following table provides a list of the different tabs (worksheets) that are 
 |:-----|:-----|
 |No VBA  <br/> |The file was scanned and no VBA macro code was found.  <br/> |
 |Has VBA  <br/> |The file was scanned and VBA macro code was found.  <br/> |
-|Cloud-based  <br/> |The file couldn't be scanned because it is saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
+|Cloud-based  <br/> |The file couldn't be scanned because it's saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
 |Password protected  <br/> |The file is password protected so it couldn't be scanned for VBA macros.  <br/> |
-|Inaccessible  <br/> |The file couldn't be scanned for some reason, such as the Readiness Report Creator had insufficient permission to access the file, the file is corrupted, or the file uses a very old Office file format.  <br/> |
+|Inaccessible  <br/> |The file couldn't be scanned for some reason, such as the Readiness Report Creator had insufficient permission to access the file, the file is corrupted, or the file uses an old Office file format.  <br/> |
 |Inaccessible - Driver required <br/> |The file couldn't be scanned because the required Microsoft Access Database Engine 2010 isn't installed on the computer performing the scan. <br/> |
 |Locked  <br/> |The file was locked or in use when the scan was performed.  <br/> |
 |Error  <br/> |The VBA code stream trying to be read during the scan wasn't in a valid format. Sometimes opening, and then saving, the file in a supported Office version will allow the Readiness Report Creator to scan the file.  <br/> |
@@ -164,7 +163,7 @@ The following table lists the possible severities that can appear in a readiness
 |Ready to upgrade  <br/> |No issues were found in this file and it's compatible with Microsoft 365 Apps.  <br/> |
 |Code design awareness  <br/> |While the code will function as expected and the user isn't likely to notice any change, the feature, property, or method works differently than previously or might be deprecated in favor of a newer version.  <br/> |
 |Minimal validation recommended  <br/> |No runtime or compile time errors are expected, but the API functionality may have changed in some way. It's recommended that the user runs a spot check on the file with Microsoft 365 Apps to ensure it continues to function as expected. To minimize environmental issues, ideally run the spot check on the computer that the macro usually runs.  <br/> |
-|Limited remediation required  <br/> |Some refactoring of code will be required. But, there is a clear replacement and so the expectation is that the work required to fix the macro is significantly reduced.  <br/> |
+|Limited remediation required  <br/> |Some refactoring of code will be required. But, there's a clear replacement and so the expectation is that the work required to fix the macro is significantly reduced.  <br/> |
 |Significant remediation required  <br/> |Significant code refactoring will be required to enable the code to continue to function as it did in the legacy Office version. For example, an API that has been deprecated, but no replacement function has been provided. In this case, the only option available is to recreate the functionality.  <br/> |
 
  **Detailed VBA information:** The VBA Results, VBA Remediation, and VBA References tabs in the VBA readiness report each contain similar columns of information. The following table provides a list of those columns, along with an explanation of what information is contained those columns.
@@ -262,14 +261,14 @@ The following table lists the possible readiness statuses that you can see in th
 
 It's easy enough to install and run the Readiness Report Creator on a single user's computer to create a readiness report. But what if you're in a large organization and need to create readiness reports for an entire department or branch office?
 
-Along with the UI wizard version of the Readiness Report Creator, there is also a standalone executable that can be run from the command line or used with scripts. It's named ReadinessReportCreator.exe and is located in the folder where the Readiness Toolkit is installed.
+Along with the UI wizard version of the Readiness Report Creator, there's also a standalone executable that can be run from the command line or used with scripts. It's named ReadinessReportCreator.exe and is located in the folder where the Readiness Toolkit is installed.
 
 If you have your users run the UI wizard version of the Readiness Report Creator, you end up with separate Excel files, one for each user. That makes it difficult to see readiness from a departmental or office-wide perspective. You also have to rely on the users to run the Readiness Report Creator and follow the instructions correctly. 
 
 The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do this, make sure that the appropriate write permissions are given to the share.
 
 > [!NOTE]
-> If you're running the Readiness Toolkit by using Microsoft Endpoint Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
+> If you're running the Readiness Toolkit by using Microsoft Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
 
 You can see a list of the available command line options by opening a command prompt, navigating to the folder where you installed the Readiness Toolkit, and then typing the following command:
 
@@ -527,7 +526,7 @@ If an add-in is classified as "Unknown" or "Insufficient data" this means that M
 <a name="errorinfo"> </a>
 
 ### Information sent in an error report to Microsoft
-If there is a problem showing the readiness reports, you will receive a message asking if you want to send an error report to Microsoft. For example, if there is a problem creating a graph in the report or querying the data collected.
+If there's a problem showing the readiness reports, you will receive a message asking if you want to send an error report to Microsoft. For example, if there's a problem creating a graph in the report or querying the data collected.
 
 By sending an error report to Microsoft, you can help us improve the Readiness Toolkit. The error report sent to Microsoft doesn't contain any personally identifiable information. The following table provides a list of what information is sent to Microsoft in the error report.
 

@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
@@ -47,7 +47,8 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 
 > [!NOTE]
 > - Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.
-> - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows 2022.
+> - Microsoft 365 Apps is supported on Windows Server 2022 only until October 2026. *(This support is currently in preview. For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022))*.
+> - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 > - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
 
 In this scenario, you install Microsoft 365 Apps on a computer configured as a Remote Desktop Session Host server. This enables multiple users to connect remotely to this computer. The users can each run Office programs, such as Word or Excel, at the same time. The overall process is the same for the Project and Visio desktop apps.

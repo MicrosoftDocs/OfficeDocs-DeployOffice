@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
@@ -51,7 +51,7 @@ Choose how you want to deploy:
 
 - **Self-install from the cloud:** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal.
 
-Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who are not frequently connected to the internal network.
+Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who aren't frequently connected to the internal network.
  
 ## Step 2 - Choose how to manage updates
 
@@ -64,7 +64,7 @@ We recommend updating your client devices automatically from the Office CDN. You
 
 If you choose to manage the updates directly, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch. 
 
-If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you will need to manage update packages for different update channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud.
+If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you'll need to manage update packages for different update channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud.
 
 Choose how to manage updates:
 
@@ -86,7 +86,7 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 
 - **Semi-Annual Enterprise Channel:** Provides users with new features of Office every six months, in January and July.
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they are ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you have select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [servicing profile](../DeployOffice/admincenter/servicing-profile.md). By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 All the update channels will receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
@@ -106,7 +106,7 @@ You could take a similar approach with Current Channel (Preview) and Current Cha
 > [!NOTE]
 > **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
 
-When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you will likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two update channels and both architectures, you create four packages: 
+When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you'll likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two update channels and both architectures, you create four packages: 
 
 - Semi-Annual Enterprise Channel for 32-bit 
 - Semi-Annual Enterprise Channel for 64-bit
@@ -147,7 +147,7 @@ This single installation package can then be used to deploy to multiple deployme
 - Group 2 receives the Office apps in all three languages
 - Group 3 receives the Office apps in English, but without Publisher
 
-By re-using installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
+By reusing installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
 
 ## Step 6 - Plan your upgrade from existing versions of Office 
 
@@ -185,7 +185,7 @@ Before beginning your deployment, make sure you've completed the planning exit c
 
 Depending on your deployment  plan, go to one of the following articles:
 
-- [Deploy Microsoft 365 Apps with Microsoft Endpoint Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
+- [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 - [Deploy Microsoft 365 Apps from a local source](deploy-microsoft-365-apps-local-source.md)
 - [Self-install Office from the cloud](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)

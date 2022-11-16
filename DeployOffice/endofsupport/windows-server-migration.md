@@ -16,15 +16,20 @@ description: "Provides guidance to Office admins on moving from Microsoft 365 Ap
 # Microsoft 365 Apps migration from Windows Server
 
 > [!NOTE]
-> The information in this article is for organizations who are hosting Microsoft 365 Apps on Windows Server 2019 or Windows Server 2016.
+> The information in this article is for organizations who are hosting Microsoft 365 Apps on Windows Server 2016, 2019, or 2022.
 
-Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.<sup>[1]</sup>
+Microsoft 365 Apps is supported on Windows Server only until the following dates:
 
-If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
+- Windows Server 2016: October 2025
+- Windows Server 2019: October 2025
+- Windows Server 2022: October 2026
 
-Direct deployment of Microsoft 365 Apps isn't supported on Windows Server 2022 as it's a fixed, non-changing operating system.<sup>[2]</sup> However, it's possible to host virtual Windows client devices with Microsoft 365 Apps on Windows Server 2022.
+> [!NOTE]
+> Support for running Microsoft 365 Apps on Windows Server 2022 is currently in preview. For more information, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md#windows-server-2022).
 
-There are other migration paths available that may better meet your technical and business requirements. To maintain support for Microsoft 365 Apps beyond October 2025, we recommend moving to one of the following client hosting solutions:
+If you've deployed Microsoft 365 Apps to these versions of Windows Server, you'll need to migrate to another hosting solution before that support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
+
+There are migration paths available that may better meet your technical and business requirements. To maintain support for Microsoft 365 Apps, we recommend moving from Windows Server to one of the following client hosting solutions:
 
 - [Windows 365](#windows-365)
 - [Azure Virtual Desktop](#azure-virtual-desktop)
@@ -69,7 +74,7 @@ Azure Virtual Desktop enables you to do the following:
 
 - Use standard gallery images or create custom images.
 
-- Request assistance from Microsoft on application issues with [App Assure](/windows-365/enterprise/app-assure) at no additional cost.
+- Request assistance from Microsoft on application issues with [App Assure](/fasttrack/products-and-capabilities#app-assure) at no additional cost.
 
 - Pay only for what you use on the service (consumption-based pricing).
 
@@ -81,7 +86,18 @@ For more information, see the following resources:
 
 If an on-premises session host deployment is required, Azure Virtual Desktop for Azure Stack HCI (currently in preview) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
 
-> [!NOTE]
-> <sup>[1]</sup> Support for Windows Server itself is not impacted. Support for Windows Server 2016 ends in January 2027. Windows Server 2019 support ends in January 2029. For more information, go to the [Search Product and Services Lifecycle Information](/lifecycle/products/) page.
->
-> <sup>[2]</sup> Microsoft 365 Apps is not supported on Windows Server 2022 because feature updates to Microsoft 365 Apps rely on changes to the underlying operating system. Office LTSC 2021 is supported for direct deployments on Windows Server 2022, because [Office LTSC 2021](../ltsc2021/overview.md) doesn't receive feature updates.
+## Additional information
+
+### End of support dates for Windows Server
+
+Support for Windows Server itself isn't impacted. Here are the end of support dates for Windows Server:
+
+- Windows Server 2016: January 2027
+- Windows Server 2019: January 2029
+- Windows Server 2022: October 2031
+
+For more information, go to the [Search Product and Services Lifecycle Information](/lifecycle/products/) page.
+
+### Support for virtual Windows client devices on Windows Server
+
+Using Windows Server to host virtual Windows client devices installed with Microsoft 365 Apps will continue to be supported as long as the version of Windows Server is supported.

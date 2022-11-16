@@ -1,23 +1,23 @@
 ---
-title: "Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager"
-ms.author: danbrown
-author: DHB-MSFT
+title: "Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager"
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 recommendations: true
-description: "Provides admins with guidance on how to update Microsoft 365 Apps by using Microsoft Endpoint Configuration Manager"
+description: "Provides admins with guidance on how to update Microsoft 365 Apps by using Microsoft Configuration Manager"
 ---
 
-# Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager
+# Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager
 
-Microsoft Endpoint Configuration Manager has the ability to manage Office updates by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps.
+Microsoft Configuration Manager has the ability to manage Office updates by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps.
 
 When Microsoft publishes a new Office update to the Office Content Delivery Network (CDN), Microsoft simultaneously publishes an [update package](#contents-of-the-microsoft-365-apps-client-update-package-for-wsus) to Windows Server Update Services (WSUS). Then, Configuration Manager synchronizes the Office update from the WSUS catalog to the site server. Configuration Manager can then download the update and distribute it to distribution points selected by the administrator. The Configuration Manager desktop client then tells Office where to get the update and when to start the update installation process.
 
@@ -35,7 +35,7 @@ After you perform these steps, you can use the software update management capabi
 
 To enable Configuration Manager to manage Office updates, you need the following:
 
-- Microsoft Endpoint Configuration Manager (current branch)
+- Microsoft Configuration Manager (current branch)
 
 - Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, the subscription version of the Project desktop app, or the subscription version of the Visio desktop app.
 

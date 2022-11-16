@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 ms.custom: Ent_Office_ProPlus
 description: "Microsoft 365 change guide"
@@ -32,7 +32,7 @@ Microsoft constantly improves Microsoft 365 services to help every person and ev
 
 Historically, the deployment of changes within customer organizations has been tightly controlled by IT departments. Controlling deployments within your tenant holds a place in the modern cloud landscape, but faster feature deployment is key to realizing value for your users. As the Microsoft cloud further adopts a continuous update model, organizations’ ability to make risk-based decisions on which changes require granular evaluation and which can be implemented immediately becomes paramount.
 
-When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps (previously called Office 365 ProPlus). Figure 1 shows a comparison.
+When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps. Figure 1 shows a comparison.
 
 ![Net Promoter Score Release Channel Comparison.](../images/net-promoter-score-release-channel-comparison.png)
 *Figure 1*
@@ -164,7 +164,7 @@ It's important to have a staging or test tenant as part of your change strategy.
 ### Client release channels and controls
 #### Client release channels
 
-Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps (previously Office 365 ProPlus). These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
 Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
@@ -193,7 +193,7 @@ When you switch channels, there are certain considerations - such as loss of fea
 
 In conjunction with release channels, which are inherently controls themselves, Microsoft provides a selection of tools and configurations for further deploying, controlling, and managing your Microsoft 365 clients. The tools for managing your devices and the Microsoft 365 clients installed on them have historically been decentralized. In addition to a multitude of third-party options that are available, the Microsoft solutions include the following tools:
 
-  - [Microsoft Endpoint Configuration Manager](/configmgr)
+  - [Microsoft Configuration Manager](/configmgr)
 
   - [Intune](/intune)
 
@@ -205,9 +205,9 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - Other features in the [Device Management Admin Console](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/microsoft-intune-rolls-out-an-improved-streamlined-endpoint/ba-p/937760)
 
-Although the capabilities that these tools represent are still available, we have listened to market feedback and, as illustrated in Figure 6, consolidated these tools to create one single integrated solution, Microsoft Endpoint Configuration Manager.
+Although the capabilities that these tools represent are still available, we have listened to market feedback and, as illustrated in Figure 6, consolidated these tools to create one single integrated solution, Microsoft Configuration Manager.
 
-![Microsoft Endpoint Configuration Manager chart.](../images/endpoint-configuration-manager-breakdown.png)
+![Microsoft Configuration Manager chart.](../images/endpoint-configuration-manager-breakdown.png)
 *Figure 6*
 
 As of 2019, Microsoft refers to our suite of management solutions under this single brand. By attaching Intune to your Configuration Manager deployment (referred to as co-management), you can attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can:
@@ -216,9 +216,9 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 - Deploy client updates faster to make your organization secure and compliant quickly.
 - Take immediate actions on your devices.
 
-[Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
+[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
 
-- The prerequisites that are required when using Microsoft Endpoint Configuration Manager to update Microsoft 365 Apps.
+- The prerequisites that are required when using Microsoft Configuration Manager to update Microsoft 365 Apps.
 
 - How to enable Configuration Manager to receive Microsoft 365 client package notifications.
 
@@ -226,7 +226,7 @@ As of 2019, Microsoft refers to our suite of management solutions under this sin
 
 - Your options for enabling clients to receive updates from Configuration Manager.[[7]](#footnote-7)
 
-For comprehensive instructions to configure your deployment strategy, see the [Microsoft Endpoint Configuration Manager documentation](/mem/configmgr/).
+For comprehensive instructions to configure your deployment strategy, see the [Microsoft Configuration Manager documentation](/mem/configmgr/).
 
 The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
@@ -405,7 +405,7 @@ In addition to changing our services, we also update Microsoft 365 clients. Both
   - Client release notes provide a wealth of information about the latest security updates, update sizes, and updates for different platforms (for example, Mac).
 
 - [Microsoft 365 news and announcements](https://www.microsoft.com/microsoft-365/blog/)
-  - Read about the latest releases and features in our blog posts, which are separate from our formal documentation on [docs.microsoft.com](https://docs.microsoft.com/).
+  - Read about the latest releases and features in our blog posts, which are separate from our [formal documentation](/).
 
 - [Microsoft 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
   - Review Microsoft 365 services and features to learn more about existing features that you can leverage to improve security and productivity.

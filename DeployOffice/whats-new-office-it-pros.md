@@ -19,6 +19,32 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## November 2022
+
+### Basic authentication prompts to be blocked by default in Microsoft 365 Apps
+
+To help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication. With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+
+This change will begin rolling out in January 2023, starting with Version 2209. For more information, see [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](security/basic-authentication-prompts-blocked.md).
+
+### General availability of the "Software updates" page in the Microsoft 365 admin center
+
+The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+
+## October 2022
+
+### Support for Microsoft 365 Apps on Windows Server 2022
+
+We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).
+
+### Blocking internet macros by default in Office available in more update channels
+
+To help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet. This change is in Version 2208 in Monthly Enterprise Channel and in Semi-Annual Enterprise Channel (Preview) as of October 11, 2022. The following Office applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
+
+For more information, refer to the following information:
+- [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
+- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+
 ## July 2022
 
 ### Windows 8.1 end of support and Microsoft 365 Apps
@@ -38,6 +64,8 @@ Microsoft has released the recommended security configuration baseline settings 
 - [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
 
 ### "Software updates (Preview)" page in the Microsoft 365 admin center
+
+*(This feature is generally available as of November 4, 2022.)*
 
 The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
 
@@ -167,7 +195,7 @@ The names of the update channels for Microsoft 365 Apps have changed. For exampl
 ### Introduction of Monthly Enterprise Channel
 A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise Channel. This update channel provides new Office features once a month, on the second Tuesday of the month. These once-a-month updates will also include, as needed, security updates and non-security updates. 
 
-You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Endpoint Configuration Manager.
+You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 

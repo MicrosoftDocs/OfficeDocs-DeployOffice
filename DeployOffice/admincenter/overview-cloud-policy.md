@@ -1,8 +1,9 @@
 ---
 title: "Overview of Cloud Policy service for Microsoft 365"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: chhopkin
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
@@ -117,3 +118,7 @@ If the expected policies haven't been correctly applied to a user's device, try 
 - Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
 
 - If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
+
+- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
+
+- You may encounter a FetchInterval value of 0.  If this value exists, the client will wait 24 hours from the last check in before attempting to check with Cloud Policy again.
