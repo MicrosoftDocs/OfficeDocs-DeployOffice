@@ -44,22 +44,22 @@ The following table provides a list of connected experiences that analyze your c
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Map chart <sup>[1]</sup>    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
+| Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8a9b2af3-a055-4131-a327-85cc835271f7) |
 | Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
 |PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
-| PowerPoint Designer   | [Create professional slide layouts with PowerPoint Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
-|Presenter Coach|[Rehearse your slide show with Presenter Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
+| PowerPoint Designer   | [Create professional slide layouts with Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Publish to Power BI   | [Publish to Power BI from Excel](/power-bi/service-publish-from-excel) |
+| Publish to Power BI   | [Publish to Power BI from Microsoft Excel](/power-bi/connect-data/service-publish-from-excel) |
 | Read Aloud <sup>[4]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Sharing notification|[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |Similarity checker <sup>[1]</sup><br/> *(a feature of Editor)*|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | Smart Lookup <sup>[1]</sup>   | [Get insights into what you're working on with Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
+|Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Suggested replies | [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 | Tap| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
-|Text predictions <br/>*(a feature of Editor)*|[Make writing faster with text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
+|Text predictions <br/>*(a feature of Editor)*|[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
@@ -82,24 +82,24 @@ The following table provides a list of connected experiences that download onlin
 | ------------- | ------------- |
 | Calendar apps| [What are Calendar Apps?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to either [Outlook for iOS Help](https://support.microsoft.com/article/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/article/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
-| Ink Effects                 | [Draw and write with ink in Office](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
-| Insert Icons                | [Insert icons in Microsoft Office](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
+| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to either [Outlook for iOS Help](https://support.microsoft.com/office/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/office/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
+| Ink effects                 | [Draw and write with ink in Office](https://support.microsoft.com/office/6d76c674-7f4b-414d-b67f-b3ffef6ccf53)  |
+| Insert icons                | [Insert icons in Microsoft PowerPoint](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)<br/> [Insert icons in Microsoft Word](https://support.microsoft.com/office/4c8c86aa-a844-4edb-aee0-02b7387fc99d)    |
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| Insert Online 3D Models <sup>[4]</sup>     | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| Insert Online Pictures <sup>[4]</sup>      | [Insert pictures](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)  |
-| Insert Online Video <sup>[4]</sup>     | [Insert a video from YouTube or another site](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Insert online 3D models <sup>[4]</sup>     | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| Insert online pictures <sup>[4]</sup>      | [Insert pictures](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)<br/>[Insert a picture in PowerPoint](https://support.microsoft.com/office/5f7368d2-ee94-4b94-a6f2-a663646a07e1)  |
+| Insert online video <sup>[4]</sup>     | [Insert a video from YouTube or another site](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
 | Interesting Calendars <sup>[4]</sup>| [Subscribe to a calendar](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
 | Location suggestions <sup>[4]</sup> | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
-| Maps in event details | The event details page will show a [map](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) based on the address of the location of the event on Outlook for iOS and Android. |
+| Map in event details | The event details page will show a [map](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) based on the address of the location of the event on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
-| Online Shape Search | [Find more shapes and stencils](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
+| Online shape search | [Find more shapes and stencils](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | PowerPoint QuickStarter <sup>[4]</sup>     | [Research a topic with PowerPoint QuickStarter](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | Researcher <sup>[4]</sup>    | [Research your paper easily within Word](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Tell Me <sup>[5]</sup>    | [Do things quickly with Tell Me](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Templates  | [Download free, pre-built templates](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|Travel time estimates in Up Next <sup>[4]</sup>|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) card at the top of your inbox.<br/><br/> [What are Time to Leave notifications?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
-| Weather Bar <sup>[4]</sup>| [Change the calendar Weather Bar forecast city](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|Travel time estimates in Up Next <sup>[4]</sup>|When you choose to allow Outlook for iOS and Android to access your location, an estimate of your travel time to your next event will be included in the [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) card at the top of your inbox.<br/><br/> [What happens to your data when you turn Time to Leave on and connect to Cortana?](https://support.microsoft.com/office/3a73979b-3aed-40e4-a796-7fdf8f4aa48c)|
+| Weather Bar <sup>[4]</sup>| [Change the calendar Weather Bar forecast city](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) |
 |Weather on calendar <sup>[4]</sup> |[How do I turn on weather on calendar on Outlook mobile?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
@@ -122,26 +122,26 @@ The following table provides a list of those other connected experiences and pro
 | Custom Import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
 | Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Data Visualizer |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
-| Design Flows | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
-| External list |[Connect an external list to Outlook](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
+| Design flows | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
+| External list |[Connect an external list to Outlook](https://support.microsoft.com/office/9f00540e-a6b8-4510-9ce1-c79e31cbc8c9)  |
 |Feedback (web portal) <sup>[6]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
 | Focused Inbox  |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
-| LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| Office add-ins <sup>[6]</sup> | [View, manage, and install add-ins in Office programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
+| LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8)  |
+| Office add-ins <sup>[6]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
 | Organization chart |[Create an organization chart in Visio](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
 |PivotDiagram |[Create a PivotDiagram in Visio](https://support.microsoft.com/office/0d061d05-60b5-4549-b301-4d0b37625a4c)|
 | Recent documents |[Open files from the File menu](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | Resume Assistant (or CV Assistant) <sup>[6]</sup> |[Use Resume Assistant and LinkedIn for great resumes](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a)  |
-| Room Finder |[How to control the Room Finder in Outlook](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Safe Documents in Microsoft 365 E5](/microsoft-365/security/office-365-security/safe-docs)|
-| Safe Links |[ATP Safe Links](/microsoft-365/security/office-365-security/atp-safe-links)  |
+| Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/outlook/troubleshoot/calendaring/room-finder) *(for admins)* |
+|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/>*(for users)* [Safe Documents in Microsoft 365 A5 or E5](/microsoft-365/security/office-365-security/safe-docs) *(for admins)*|
+| Safe Links |[Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) *(for users)* </br> [Safe Links in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links) *(for admins)* |
 | Sensitivity labels |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
-| Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
+| Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8d8a52bb-03c3-4933-ab6c-330aabf1e589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
-| SharePoint site mailbox |[Show or hide a site mailbox in Outlook](https://support.microsoft.com/office/A9C4B8C7-A1A9-43C0-BD05-7513CA092863#__toc341877075)  |
+| SharePoint site mailbox |[Show or hide a site mailbox in Outlook](https://support.microsoft.com/office/a9c4b8c7-a1a9-43c0-bd05-7513ca092863#__toc341877075)  |
 |Timeline import and export |[Import and export timeline data between Visio and Project](https://support.microsoft.com/office/bc09becb-8c77-49b1-8e47-af3cf8cb7242)|
 | Version history |[View previous versions of Office files](https://support.microsoft.com/office/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
 | While you were away |[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
