@@ -31,7 +31,7 @@ The following table provides a list of connected experiences that analyze your c
 | **Name**   | **More information**   |
 | ----------- | ------------------ |
 | 3D Maps <sup>[1]</sup>    | [Get started with 3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
-| Analyze Data <br/>*(previously named Ideas)* | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
+| Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Chart recommendations|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Class Notebook add-ins|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
@@ -54,12 +54,12 @@ The following table provides a list of connected experiences that analyze your c
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Sharing notification|[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
-|Similarity checker <sup>[1]</sup><br/> *(a feature of Editor)*|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
+|Similarity checker <sup>[1]</sup>|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | Smart Lookup <sup>[1]</sup>   | [Get insights into what you're working on with Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 |Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Suggested replies | [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 | Tap| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
-|Text predictions <br/>*(a feature of Editor)*|[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
+|Text predictions |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Translator   | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
@@ -82,14 +82,14 @@ The following table provides a list of connected experiences that download onlin
 | ------------- | ------------- |
 | Calendar apps| [What are Calendar Apps?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you are taken to either [Outlook for iOS Help](https://support.microsoft.com/office/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/office/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
+| FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you're taken to either [Outlook for iOS Help](https://support.microsoft.com/office/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/office/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Ink effects                 | [Draw and write with ink in Office](https://support.microsoft.com/office/6d76c674-7f4b-414d-b67f-b3ffef6ccf53)  |
 | Insert icons                | [Insert icons in Microsoft PowerPoint](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)<br/> [Insert icons in Microsoft Word](https://support.microsoft.com/office/4c8c86aa-a844-4edb-aee0-02b7387fc99d)    |
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| Insert online 3D models <sup>[4]</sup>     | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| Insert online pictures <sup>[4]</sup>      | [Insert pictures](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)<br/>[Insert a picture in PowerPoint](https://support.microsoft.com/office/5f7368d2-ee94-4b94-a6f2-a663646a07e1)  |
+| Insert online 3D models <sup>[4]</sup>  | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| Insert online pictures <sup>[4]</sup>  | [Insert pictures (Word)](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)<br/>[Insert a picture in PowerPoint](https://support.microsoft.com/office/5f7368d2-ee94-4b94-a6f2-a663646a07e1)  |
 | Insert online video <sup>[4]</sup>     | [Insert a video from YouTube or another site](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| Interesting Calendars <sup>[4]</sup>| [Subscribe to a calendar](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
+| Interesting calendars <sup>[4]</sup>| [Subscribe to a calendar](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) about your favorite sports teams or TV shows on Outlook for iOS and Android. |
 | Location suggestions <sup>[4]</sup> | When you add a public place with a street address to a calendar item, Outlook for iOS and Android will also include the full street address in the Location field. |
 | Map in event details | The event details page will show a [map](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46) based on the address of the location of the event on Outlook for iOS and Android. |
 | Office Help                 | When you choose **Help** > **Help** on the ribbon or use F1 in an Office app   |
@@ -119,7 +119,7 @@ The following table provides a list of those other connected experiences and pro
 |Brainstorming diagram |[Create a brainstorming diagram](https://support.microsoft.com/office/642706c0-7e63-463b-8aa8-a9aa67367989)|
 | Coming Soon  |[Coming Soon](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Contact Support  | When you choose **Help** > **Contact Support** on the ribbon|
-| Custom Import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
+| Custom import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
 | Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Data Visualizer |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Design flows | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
@@ -136,7 +136,7 @@ The following table provides a list of those other connected experiences and pro
 | Recent documents |[Open files from the File menu](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | Resume Assistant (or CV Assistant) <sup>[6]</sup> |[Use Resume Assistant and LinkedIn for great resumes](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a)  |
 | Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/outlook/troubleshoot/calendaring/room-finder) *(for admins)* |
-|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/>*(for users)* [Safe Documents in Microsoft 365 A5 or E5](/microsoft-365/security/office-365-security/safe-docs) *(for admins)*|
+|Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) *(for users)* <br/> [Safe Documents in Microsoft 365 A5 or E5](/microsoft-365/security/office-365-security/safe-docs) *(for admins)*|
 | Safe Links |[Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) *(for users)* </br> [Safe Links in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links) *(for admins)* |
 | Sensitivity labels |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8d8a52bb-03c3-4933-ab6c-330aabf1e589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
@@ -151,26 +151,26 @@ The following table provides a list of those other connected experiences and pro
 
 ## Choose whether these connected experiences are available to use
 
-You can choose whether certain types of connected experiences, such as connected experiences that download online content, are available to use. How you make that choice depends on whether you are signed into Office with a Microsoft account, such as a personal outlook.com email address, or with a work or school account.
+You can choose whether certain types of connected experiences, such as connected experiences that download online content, are available to use. How you make that choice depends on whether you're signed into Office with a Microsoft account, such as a personal outlook.com email address, or with a work or school account.
 
-If you are signed in with a Microsoft account, open an Office app, such as Word, and go to **File** > **Account** > **Account Privacy** > **Manage Settings**. Under the **Connected experiences** section, you can choose whether certain types of connected experiences, such as experiences that analyze your content, are available to use. If you don't go to **Manage Settings**, all connected experiences will be available to you.
+If you're signed in with a Microsoft account, open an Office app, such as Word, and go to **File** > **Account** > **Account Privacy** > **Manage Settings**. Under the **Connected experiences** section, you can choose whether certain types of connected experiences, such as experiences that analyze your content, are available to use. If you don't go to **Manage Settings**, all connected experiences will be available to you.
 
-If you are signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won't see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
+If you're signed in with a work or school account, the admin in your organization will decide whether these connected experiences are available to you. You won't see any choices for these connected experiences if you go to **File** > **Account** > **Account Privacy** > **Manage Settings**.
 
 > [!NOTE]
 > - If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This will open the Account Privacy settings dialog box where you can see your privacy options.
 > - For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
-If you are the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don't use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
+If you're the admin for your organization, you can use policy settings to determine whether these connected experiences are available to your users. If you don't use these policy settings, all connected experiences will be available for your users. For more information about using these policy settings, see the following articles: 
 
 - [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](manage-privacy-controls.md)
 - [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md).
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
-If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or you will get an error message when you try to use those connected experiences.
+If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out, or you'll get an error message when you try to use those connected experiences.
 
-Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there is a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you are properly licensed to use Office.
+Even if you decide to turn off these connected experiences, certain Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. Also, there's a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you're properly licensed to use Office.
 
 ## Related articles
 
