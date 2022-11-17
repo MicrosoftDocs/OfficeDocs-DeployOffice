@@ -61,6 +61,7 @@ The following table provides a list of connected experiences that analyze your c
 | Tap| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Text predictions |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
+|Translate text on images|[Translate text on images](https://support.microsoft.com/office/b4dbefd7-ae10-4b3f-9813-57e9e55f0f41)|
 | Translator   | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 > [!NOTE]
