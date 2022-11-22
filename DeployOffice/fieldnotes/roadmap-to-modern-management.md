@@ -67,7 +67,7 @@ It also populates the [Security update status](../admincenter/security-update-st
 - How many devices are on the latest security update
 - Which devices are behind schedule and need attention
 
-The Microsoft 365 Apps installation itself provides the inventory information, so there's no conflict with existing management solutions. For example, a device can be managed by Microsoft Endpoint Manager and registered into the new tenant-based inventory at the same time.
+The Microsoft 365 Apps installation itself provides the inventory information, so there's no conflict with existing management solutions. For example, a device can be managed by Microsoft Intune and registered into the new tenant-based inventory at the same time.
 
 ## Move devices to Monthly Enterprise Channel
 
@@ -76,7 +76,7 @@ Moving your devices to the [Monthly Enterprise Channel](../overview-update-chann
 We highly recommend testing out Monthly Enterprise Channel. There are two common ways you can switch devices over without the need for a reinstall:
 
 - The recommended way to switch your devices to Monthly Enterprise Channel is with a [servicing profile](../admincenter/servicing-profile.md). By using a servicing profile, your devices, both managed and unmanaged, will automatically move to Monthly Enterprise Channel if they're in-scope of the selected criteria. In this scenario, there's no need to move devices upfront and everything will happen automatically after setting up a servicing profile. Review [adopting servicing profiles](adopt-servicing-profiles.md) to learn more about available admin controls.
-- You can switch managed devices to Monthly Enterprise Channel by using existing management tools. If you're using Microsoft Endpoint Manager, review this [guidance](../change-update-channels.md#change-the-update-channel-with-microsoft-endpoint-manager-administrative-templates). For environments with Microsoft Configuration Manager, we recommend reviewing our best practices on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
+- You can switch managed devices to Monthly Enterprise Channel by using existing management tools. If you're using Microsoft Intune, review this [guidance](../change-update-channels.md#change-the-update-channel-with-microsoft-intune-administrative-templates). For environments with Microsoft Configuration Manager, we recommend reviewing our best practices on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../change-update-channels.md).
 - For unmanaged devices, you can [change the default channel in the Microsoft 365 admin center](../overview-update-channels.md#microsoft-365-admin-center). This will convert existing, unmanaged installation to the selected channel.
 
 ## Prepare your network to receive updates from the internet
@@ -98,7 +98,7 @@ If you use Servicing Profiles to manage updates directly from the cloud, your de
 
 You can use a [servicing profiles](../admincenter/servicing-profile.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
 
-No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by servicing profile. If the device matches the rules set by the admin, the service profile will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Endpoint Manager.
+No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by servicing profile. If the device matches the rules set by the admin, the service profile will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Intune.
 
 > [!Note]
 > Currently, servicing profile only supports managing Monthly Enterprise Channel updates. Any device that falls into the scope of the rules will be moved to this channel.
