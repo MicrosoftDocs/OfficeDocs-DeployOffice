@@ -799,6 +799,16 @@
       "source_path": "Deployoffice/other/home-use-program-notification.md",
       "redirect_url": "/deployoffice/other/workplace-discount-program-notification",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Deployoffice/other/move-devices-current-channel.md",
+      "redirect_url": "/deployoffice/change-update-channels",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/other/known-issue-update-channel-move.md",
+      "redirect_url": "/deployoffice/change-update-channels",
+      "redirect_document_id": false
     }
   ]
 }
