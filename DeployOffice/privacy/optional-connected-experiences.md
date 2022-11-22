@@ -65,7 +65,7 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 ### Insert photos from mobile device
 
-[Insert photos from mobile device](https://go.microsoft.com/fwlink/?linkid=2195130) allows you to insert photos from your Android device directly into PowerPoint for the web or Word for the web. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
+[Insert photos from mobile device](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921) allows you to insert photos from your Android device directly into PowerPoint for the web or Word for the web. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
 
 ### Microsoft Error Reporting Program (MERP)
 
