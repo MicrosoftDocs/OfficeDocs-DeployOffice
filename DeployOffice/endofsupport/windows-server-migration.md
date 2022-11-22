@@ -44,7 +44,7 @@ For more information on Windows 365 plans, and Cloud PC configurations available
 
 Windows 365 requires no virtualization expertise and enables you to do the following:
 
-- Manage Cloud PCs in Microsoft Endpoint Manager like other supported devices, including Microsoft 365 Apps.
+- Manage Cloud PCs in Microsoft Intune like other supported devices, including Microsoft 365 Apps.
 
 - Choose pre-configured Cloud PCs (including RAM, CPU, and storage), and then use [resize](/windows-365/enterprise/resize-cloud-pc) as needs change.
 
