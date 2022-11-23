@@ -13,7 +13,7 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 recommendations: false
-description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
+description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using Office Deployment Tool (ODT)."
 ---
 
 # Deploy Microsoft 365 Apps from the cloud
@@ -21,6 +21,8 @@ description: "This article gives step-by-step instructions for how to deploy Mic
 Follow the steps in this article to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT). 
 
 ## Before you begin
+
+This article is intented for administrators in managed environments where users have local admin privileges on their client devices or the ODT can be automated to run with admin privileges. For enterprise environments we recommend to use 
 
 Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and processes to install Office.
 
