@@ -12,14 +12,10 @@ ms.collection:
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 recommendations: false
-description: "This article gives step-by-step instructions for how to Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)."
+description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)."
 ---
 
 # Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)
-
-Follow the steps in this article to deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch).
-
-## Overview
 
 If your organization already uses Configuration Manager, we recommend upgrading to the current branch and using it to deploy Microsoft 365 Apps. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
