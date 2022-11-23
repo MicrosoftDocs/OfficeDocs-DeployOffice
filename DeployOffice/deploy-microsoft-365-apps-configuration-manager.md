@@ -19,8 +19,6 @@ description: "This article gives step-by-step instructions for how to Deploy Mic
 
 Follow the steps in this article to deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch).
 
-This article applies to deploying with Configuration Manager (current branch). For information on how to deploy Microsoft 365 Apps with System Center 2012 R2 Configuration Manager, see [here](deploy-microsoft-365-apps-configuration-manager-2012R2.md).
-
 ## Overview
 
 If your organization already uses Configuration Manager, we recommend upgrading to the current branch and using it to deploy Microsoft 365 Apps. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
