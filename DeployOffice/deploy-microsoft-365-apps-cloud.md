@@ -22,24 +22,24 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend to use [Intune](../mem/intune/apps/apps-add-office365.md) to deploy Microsoft 365 Apps from the cloud. We also recommend to review [this video](https://youtu.be/fA8lcnRXmkI) to learn more about the available options when using Intune.
+This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend to use [Intune](../mem/intune/apps/apps-add-office365.md) to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
 
-If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Office deployment. 
+If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
-If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
+If you want to install Microsoft 365 Apps on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
 
 ## Best practices
 
 The steps in this article are based on the following best practices:
 
 - **Manage updates to Office automatically**, without any administrative overhead. For more details, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates).
-- **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices, to ensure that users can benefit from new features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
+- **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
-You can customize these options to match the requirements for your organization, including deploying to more than two update channels, changing the choosen update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
+You can customize these options to match the requirements for your organization, including deploying to additional or different update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Download the Office Deployment Tool 
 
-You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Office.
+You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. The deployment tool is run from the command line and uses a configuration file to determine what settings to apply when deploying Microsoft 365 Apps.
 
 1. Create the shared folder **\\\\Server\Share\M365** and assign read permissions for your users. For details about how to create shared folders and assign permissions, see [Shared Folders](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11)).
 
@@ -49,33 +49,33 @@ You use the Office Deployment Tool (ODT) to deploy Office from the Office CDN. T
 
 ## Step 2: Create a configuration file for Current Channel
 
-To deploy Microsoft 365 Apps to the Current CHannel group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/deploymentsettings). 
+To deploy Microsoft 365 Apps to the Current Channel group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/deploymentsettings). 
 
 1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
- - **Products:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps.
+ - **Products and releases:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps to all devices.
  - **Update channel:** Choose **Current Channel** 
  - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
  - **Installation:** Select **Office Content Delivery Network (CDN)**. To silently install Office for your users, choose **Off** for **Show installation to user**.
- - **Update and Upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office.
- - **Licensing and Activation:** To silently install Office for your users, choose **On** for **Automatically accept the EULA**.
- - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+ - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
+ - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
+ - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\M365** folder.
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Current Channel. For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
+Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 3: Create a configuration file for Monthly Enterprise Channel
 
 Using the [Office Customization Tool](https://config.office.com/deploymentsettings), create the configuration file for the Monthly Enterprise Channel group.
 
-1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as used in Step 2, except for the following change:
- - **Update channel:** Choose **Monthly Enterprise Channel** 
+1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the options used in Step 2, except for the following change:
+ - **Update channel:** Choose **Monthly Enterprise Channel**.
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-mec.xml** in the **\\\Server\Share\M365** folder.
 
 ## Step 4: Deploy Office to the Current Channel group
 
-To deploy Office, you provide commands that users can run from their client computers or incorporate them into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
+To deploy Office, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
 
 From the client computers for the Current Channel group, run the following command from a command prompt with admin privileges:
 
@@ -84,7 +84,7 @@ From the client computers for the Current Channel group, run the following comma
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
 
-After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% anjd C:\Windows\Temp folder.
+After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
 
 ## Step 5: Deploy Office to the Monthly Enterprise Channel group
 
