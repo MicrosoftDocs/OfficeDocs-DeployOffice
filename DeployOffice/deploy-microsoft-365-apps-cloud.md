@@ -13,7 +13,7 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 recommendations: false
-description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using Office Deployment Tool (ODT)."
+description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
 ---
 
 # Deploy Microsoft 365 Apps from the cloud
