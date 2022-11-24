@@ -22,13 +22,11 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intented for administrators in managed environments where users have local admin privileges on their client devices or the ODT can be automated to run with admin privileges. For enterprise environments we recommend to use 
-
-Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your standard deployment tools and processes to install Office.
+This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend to use [Intune](../mem/intune/apps/apps-add-office365.md) to deploy Microsoft 365 Apps from the cloud. We also recommend to review [this video](https://youtu.be/fA8lcnRXmkI) to learn more about the available options when using Intune.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Office deployment. 
 
-This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
+If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
 
 ## Best practices
 
