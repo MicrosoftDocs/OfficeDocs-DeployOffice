@@ -522,6 +522,8 @@ The following fields are collected:
 
 - **MSAL_api_status_code** - Status code MSAL returned for this authentication flow result.
 
+- **MSAL_async_events_started** - If this action started/kicked off additional sub-actions to be completed asynchronously, this field will be added to the telemetry batch, with a count of the events started ("1", "2", "3" …)
+
 - **MSAL_auth_flow** - Steps MSAL attempted during this authentication flow (AT, PRT, LRT, FRT, ART, IRT). Separated by the pipe | symbol for easy parsing.
 
 - **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = PRT|LRT, PRT's error would be in AuthFlowLastError).
@@ -535,6 +537,8 @@ The following fields are collected:
 - **MSAL_broker_accounts_count** - Number of accounts the system broker returns during an account discovery call. (Ex: 1, 0, 1337)
 
 - **MSAL_broker_app_used** - Was a broker app used in this auth flow.
+
+- **MSAL_broker_version** - Version of the iOS/Android authentication brokers.
 
 - **MSAL_browser_navigation_count** - Indicates the number of navigation events that occurred within MSAL interactive flows.
 
@@ -570,6 +574,8 @@ The following fields are collected:
 
 - **MSAL_migration_adal_accounts_succeeded** - Number of Adal accounts successfully migrated in the migration flow
 
+- **MSAL_msalruntime_version** - MSAL Runtime's version string, format X.X.X
+
 - **MSAL_msal_version** - MSAL's version string, format X.X.X+(OneAuth, local, or a commit hash).
 
 - **MSAL_pkeyauth_cert_type** - “empty”/ ”windows_issuer” / “windows_thumbprint” / “apple keychain” – How/where did we find the cert used to complete PKeyAuth
@@ -587,6 +593,8 @@ The following fields are collected:
 - **MSAL_req_cnf_response_pop** - Contains the success/failure information when retrieving the Proof of Possession key payload
 
 - **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
+
+- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Does not indicate if broker was actually invoked.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -618,6 +626,10 @@ The following fields are collected:
 
 - **oneauth_api** - Specifies the public API of OneAuth that was invoked.
 
+- **oneauth_AppId** - Specifies the application Id of the application invoking OneAuth.
+
+- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+
 - **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
 
 - **oneauth_version** - The version of the OneAuth SDK.
@@ -628,7 +640,7 @@ The following fields are collected:
 
 - **resource** - The resource for which a token is requested for.
 
-- **scenarioid** - Multiple events may belong to a single scenario, e.g., the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events.
+- **scenarioid** - Multiple events may belong to a single scenario, e.g., the scenario may be adding a new account but there are multiple prompts that occur as part of that scenario. This identifier enables correlation of those related events. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **scenarioname** - Name of the application scenario where authentication was required, e.g., first-boot, licensing check, etc.
 
@@ -1073,8 +1085,6 @@ platform** - OS Platform (0: Windows Desktop, 1: Android, 2: iOS, 3: MacOS, 4: U
 
 - **uploadid** - Unique GUID for this event, used for de-duping
 
-
-
 ### Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
 
 Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. When acquisition attempts fail, error information is included. These events help our users avoid entering broken authentication states by:
@@ -1439,7 +1449,6 @@ The following fields are collected:
 
 - **WAM_x_ms_clitelem** - Present if service returns header “x-ms-clitelem"
 
-
 ### Office.MATS.OneAuth.TransactionMicrosoftOfficeAndroid
 
 Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOfficeAndroid events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
@@ -1486,6 +1495,8 @@ The following fields are collected:
 
 - **Issilent** - False if UI was shown; true if it was a background event.
 
+- **oneauth_AadAccountCount** - Shows the count of unique AAD accounts in the device.
+
 - **oneauth_Activeflights**- The list of flights that are active in the session, used for AB testing.
 
 - **oneauth_api** - Specifies the public API of OneAuth that was invoked.
@@ -1498,15 +1509,25 @@ The following fields are collected:
 
 - **oneauth_ExecutionFlow** - A series of tags identifying the codepath this API invocation took.
 
+- **oneauth_GenericAccountCount** - Shows the count of unique generic accounts in the device.
+
 - **oneauth_internalerror** - Error code representing the internal error state for OneAuth.
 
+- **oneauth_MsaAccountCount** - Shows the count of unique generic accounts in the device.
+
+- **oneauth_Optional** - OneAuth optional diagnostics.
+
+- **oneauth_PublicStatus** - Contains the public status of the OneAuth API call that this transaction pertains to.
+
 - **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
+
+- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
 - **oneauth_Tag** - The OneAuth tag designating the final place in code reached at the conclusion of this API call.
 
-- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API.
+- **oneauth_transactionuploadid** - Specifies the randomly-generated internal GUID that maps to the specific invocation of a OneAuth API. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **oneauth_version** - The version of the OneAuth SDK.
 
@@ -1522,6 +1543,8 @@ The following fields are collected:
 
 - **severityError** - severity
 
+- **sovereignty** - National cloud: a physically isolated instance of Azure (Global, Germany, China, US Government)
+
 - **starttime** - Time at which the OneAuth transaction began.
 
 - **Timestamp** - Timestamp
@@ -1531,7 +1554,7 @@ The following fields are collected:
 - **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
 
 
-### Office.MATS.OneAuth.TransactionMicrosoftOfficeiOS 
+### Office.MATS.OneAuth.TransactionMicrosoftOfficeiOS
 
 Microsoft Auth Telemetry System (MATS) is collected when Office attempts to acquire an authentication token, either silently or through prompting. This event is a parent of one or more ActionMicrosoftOfficeiOS events, allowing related events to be grouped together. These events help our users avoid entering broken authentication states by:
 
@@ -1632,7 +1655,6 @@ The following fields are collected:
 - **type** - Error type
 
 - **uploadid** - Unique identifier for this particular event, for de-duping purposes.
-
 
 ### Office.MATS.OneAuth.TransactionMicrosoftOfficeMac
 
