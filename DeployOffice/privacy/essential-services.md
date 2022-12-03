@@ -1235,6 +1235,8 @@ The following fields are collected:
 
 - **Microsoft_ADAL_is_silent_ui** - True/false telling if UI was shown (prompt) by ADAL *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
+- **Microsoft_ADAL_is_successful** - True/false telling if ADAL API succeeded *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
 - **Microsoft_ADAL_is_successfull** - True/false telling if ADAL API succeeded (macOS) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Microsoft_ADAL_logging_pii_enabled** - True/false telling if ADAL full logging mode is enabled. This data is only logged locally, not emitted in telemetry  *[This field has been removed from current builds of Office, but might still appear in older builds.]*
