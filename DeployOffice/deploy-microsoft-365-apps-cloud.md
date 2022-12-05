@@ -22,7 +22,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend to use https://learn.microsoft.com/mem/intune/apps/apps-add-office365 to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
+This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend [using Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
