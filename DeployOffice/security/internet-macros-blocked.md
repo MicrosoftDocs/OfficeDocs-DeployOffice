@@ -35,12 +35,12 @@ To prepare for this change, we recommend that you work with the business units i
 
 Also, review the following information:
 
-|Preparation action  |More information  |
+|Preparation action|More information|
 |---------|---------|
-|Understand which versions and which update channels have this change (as we roll out this change) |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)         |
-|See a flow chart of the process Office takes to determine whether to run macros in a file  | [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet)   |
-|Identify files with VBA macros that might be blocked using the Readiness Toolkit   | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked)        |
-|Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)
+|Understand which versions and which update channels have this change (as we roll out this change) |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)|
+|See a flow chart of the process Office takes to determine whether to run macros in a file| [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet) |
+|Identify files with VBA macros that might be blocked using the Readiness Toolkit | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked) |
+|Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)|
 
 ## Steps to take to allow VBA macros to run in files that you trust
 
@@ -56,7 +56,7 @@ The following table list different common scenarios and possible approaches to t
 |Macro-enabled template files for Word, PowerPoint, and Excel|If the template file is stored on the user's device:<br/> • Remove Mark of the Web from the template file *(see the approaches under "Individual files")*  <br/>• Save the template file to a Trusted Location <br/><br/>If the template file is stored on a network location: <br/>• Use a digital signature and trust the publisher  <br/>• Trust the template file *(see the approaches under "Files centrally located on a network share or trusted website")* <br/><br/>For more information, see [Macro-enabled template files for Word, PowerPoint, and Excel](#macro-enabled-template-files-for-word-powerpoint-and-excel).|
 |Macro-enabled add-in files for PowerPoint|• Remove Mark of the Web from the Add-in file  <br/> • Use a digital signature and trust the publisher <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
 |Macro-enabled add-in files for Excel|• Remove Mark of the Web from the Add-in file  <br/>• Save the Add-in file to a Trusted Location <br/><br/>For more information, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel).|
-|Macros that are signed by a trusted publisher|• *[recommended]* Deploy the public code-signing certificate for the trusted publisher to your users and prevent your users from adding trusted publishers themselves.  <br/>• Remove Mark of the Web from the file, and have the user add the publisher of the macro as a trusted publisher. <br/><br/>For more information, see [Macros that are signed by a trusted publisher](#macros-that-are-signed-by-a-trusted-publisher)|.
+|Macros that are signed by a trusted publisher|• *[recommended]* Deploy the public code-signing certificate for the trusted publisher to your users and prevent your users from adding trusted publishers themselves.  <br/>• Remove Mark of the Web from the file, and have the user add the publisher of the macro as a trusted publisher. <br/><br/>For more information, see [Macros that are signed by a trusted publisher](#macros-that-are-signed-by-a-trusted-publisher).|
 |Groups of files saved to folders on the user’s device |Designate the folder a Trusted Location <br/><br/> For more information, see [Trusted Locations](#trusted-locations).|
 
 ## Versions of Office affected by this change
