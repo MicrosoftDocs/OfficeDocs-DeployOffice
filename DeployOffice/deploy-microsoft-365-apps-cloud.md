@@ -22,7 +22,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intented for administrators in managed environments where the account leveraged to run the ODT has admin privileges on the client device. For enterprise environments we recommend [using Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
+This article is intended for administrators in managed environments where the account used to run the ODT has admin privileges on the client device. For enterprise environments we recommend [using Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
@@ -32,10 +32,10 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 The steps in this article are based on the following best practices:
 
-- **Manage updates to Office automatically**, without any administrative overhead. For more details, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [servicing profile](./admincenter/servicing-profile.md).
+- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [servicing profile](./admincenter/servicing-profile.md).
 - **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
-You can customize these options to match the requirements for your organization, including deploying to additional or different update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
+You can customize these options to match the requirements for your organization, including deploying to additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Download the Office Deployment Tool 
 
@@ -100,21 +100,21 @@ The steps in this article cover the standard best practice recommendations from 
 
 ### Build and deploy multiple packages to multiple deployment groups
 
-If you want to deploy both the 32-bit and the 64-bit version in your environment, you can create additional installation packages. (Two different architectures cannot be included in the same package.) For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+If you want to deploy both the 32-bit and the 64-bit version in your environment, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
 
 ### Use different update channels
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices which should only receive one update per month.
+In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices that should only receive one update per month.
 
 A single Microsoft 365 Apps installation package can only include one type of update channel, so each new update channel requires an additional package.
 
 ### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of installation package. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). If you are upgrading from an MSI-based Office, we also recommend to leverage the [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in the configuration file.
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of installation package. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). If you're upgrading from an MSI-based Office, we also recommend using the [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in the configuration file.
 
-## Related topics
+## Related articles
 
 [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
