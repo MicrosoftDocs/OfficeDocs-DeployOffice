@@ -40,7 +40,7 @@ Also, review the following information:
 |Understand which versions and which update channels have this change (as we roll out this change) |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)         |
 |See a flow chart of the process Office takes to determine whether to run macros in a file  | [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet)   |
 |Identify files with VBA macros that might be blocked using the Readiness Toolkit   | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked)        |
-|Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)
+|Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)|
 
 ## Steps to take to allow VBA macros to run in files that you trust
 
