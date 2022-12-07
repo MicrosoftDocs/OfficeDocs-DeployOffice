@@ -202,7 +202,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](o
 ## April 2020
 
 ### Office 365 ProPlus renamed
-Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, including what actions you might need to take, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
 We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md).
