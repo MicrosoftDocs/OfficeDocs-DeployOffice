@@ -90,7 +90,7 @@ After running the command, the Microsoft 365 Apps installation should start imme
 
 If devices need a more predictable update schedule, those should be included in the Monthly Enterprise Channel group. To install Microsoft 365 Apps, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\configuration-cc.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\configuration-mec.xml`
 
 This command is the same as the Current Channel group, except that it references the configuration file for the Monthly Enterprise Channel group. After running the command, the installation should start immediately. 
 
