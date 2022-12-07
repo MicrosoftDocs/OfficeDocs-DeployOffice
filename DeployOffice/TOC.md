@@ -1,11 +1,11 @@
 # Deployment guide for Microsoft 365 Apps
 
+## [Deployment guide](deployment-guide-microsoft-365-apps.md)
+## [Microsoft FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
+
 ## Get started
-### [Deployment guide](deployment-guide-microsoft-365-apps.md)
 ### [What's new](whats-new-office-it-pros.md)
 ### [About Microsoft 365 Apps](about-microsoft-365-apps.md)
-### [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
-### [Announcement: Office 365 ProPlus renamed](name-change.md)
 ### [Microsoft 365 Apps admin center](admincenter/overview.md)
 ### [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md)
 
@@ -21,7 +21,6 @@
 
 ## Manage
 ### [Overview of update channels](overview-update-channels.md)
-### [Announcement: changes to update channels](update-channels-changes.md)
 ### [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ### [Change the update channel](change-update-channels.md)
 ### [Delivery Optimization](delivery-optimization.md)
