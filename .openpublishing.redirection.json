@@ -814,6 +814,16 @@
       "source_path": "Deployoffice/deploy-microsoft-365-apps-configuration-manager-2012R2.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-configuration-manager",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Deployoffice/name-change.md",
+      "redirect_url": "/deployoffice/about-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Deployoffice/update-channels-changes.md",
+      "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_document_id": false
     }
   ]
 }
