@@ -22,7 +22,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in managed environments where the account used to run the ODT has admin privileges on the client device. For enterprise environments we recommend [using Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Review [this video](https://youtu.be/fA8lcnRXmkI) for an overview of deploying the Microsoft 365 Apps using Intune.
+This article is intended for administrators in managed environments where the account used to run the ODT has admin privileges on the client device. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
@@ -35,7 +35,7 @@ The steps in this article are based on the following best practices:
 - **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [servicing profile](./admincenter/servicing-profile.md).
 - **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
-You can customize these options to match the requirements for your organization, including deploying to additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
+You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Download the Office Deployment Tool 
 
@@ -90,13 +90,13 @@ After running the command, the Microsoft 365 Apps installation should start imme
 
 If devices need a more predictable update schedule, those should be included in the Monthly Enterprise Channel group. To install Microsoft 365 Apps, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\configuration-cc.xml`
+ `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\configuration-mec.xml`
 
 This command is the same as the Current Channel group, except that it references the configuration file for the Monthly Enterprise Channel group. After running the command, the installation should start immediately. 
 
 ## Customize your deployment
 
-The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices.
+The steps in this article cover the standard best practice recommendations from Microsoft. This section covers common customizations.
 
 ### Build and deploy multiple packages to multiple deployment groups
 
