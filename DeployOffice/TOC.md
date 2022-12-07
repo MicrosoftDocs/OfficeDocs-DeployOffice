@@ -1,7 +1,7 @@
 # Deployment guide for Microsoft 365 Apps
 
 ## [Deployment guide](deployment-guide-microsoft-365-apps.md)
-## [Microsoft FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
+## [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
 
 ## Get started
 ### [What's new](whats-new-office-it-pros.md)
