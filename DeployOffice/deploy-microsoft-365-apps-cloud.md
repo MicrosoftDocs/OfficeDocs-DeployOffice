@@ -96,7 +96,7 @@ This command is the same as the Current Channel group, except that it references
 
 ## Customize your deployment
 
-The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices.
+The steps in this article cover the standard best practice recommendations from Microsoft. This section covers common customizations.
 
 ### Build and deploy multiple packages to multiple deployment groups
 
