@@ -188,7 +188,7 @@ To discuss or learn more about end of support for Office versions, visit [Micros
 ## June 2020
 
 ### Update channels for Microsoft 365 Apps renamed
-The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel. To learn more, including what actions you might need to take, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
+The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel.
 
 ## May 2020
 
