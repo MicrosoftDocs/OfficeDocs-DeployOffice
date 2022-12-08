@@ -1,5 +1,5 @@
 ---
-title: Choose how to install Microsoft 365 Apps (Office 365 ProPlus)
+title: Choose how to install Microsoft 365 Apps
 author: manoth-msft
 ms.author: manoth
 manager: dougeby
@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus)"
+description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise"
 ms.custom: 
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
@@ -21,7 +21,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-There are a variety of options to choose from when installing Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus).  This article outlines the advantages and disadvantages of each approach to help you make the right choice for your organization. We assume that most customers are coming from an on-premises only solution and are considering moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
+There are a variety of options to choose from when installing Microsoft 365 Apps for enterprise.  This article outlines the advantages and disadvantages of each approach to help you make the right choice for your organization. We assume that most customers are coming from an on-premises only solution and are considering moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
 
 ## Anatomy of the Microsoft 365 Apps package
 
