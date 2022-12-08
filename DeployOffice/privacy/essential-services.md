@@ -1441,11 +1441,7 @@ The following fields are collected:
 
 - **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
 
-- **MSAL_vsm_fallback_to_software_key** - On creation of the key, indicates if MSAL fell back to software
-
-- **MSAL_vsm_fallback_to_software_key** - Set IFF we attempted to generate a PoP asymmetric key using the TPM, and it failed (so we fall back to software keygen) (Ex: "true" is the only defined value)
-
-- **MSAL_vsm_key_creation_status_code** - If vsm_fallback_to_software_key == true, this field will be set with the Hex error code from the TPM as to why hardware asymetric key generation failed (Ex: 0x(some hex code from Windows))
+- **MSAL_vsm_key_creation_status_code** - the Hex error code from the TPM as to why hardware asymetric key generation failed (Ex: 0x(some hex code from Windows))
 
 - **MSAL_wam_cache_invalidated** - If WAMSynchronousWrapper::InvalidateWamCacheIfRequired() wiped cache on a given WAM call, "1" is set (Ex: "1" is the only defined value. If not present, it's safe to assume this code didn't wipe the WAM cache)
 
