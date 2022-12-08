@@ -16,7 +16,7 @@ description: "Provides guidance for admins about how Office blocks Basic authent
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
 
 > [!NOTE]
-> The information in this article is related to Message center post MC454810 that was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022.
+> The information in this article is related to Message center post MC454810, which was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022 and updated on November 16, 2022.
 
 Apps such as Word and Excel allow users to use Basic authentication to connect to resources on remote servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
@@ -27,6 +27,7 @@ Therefore, to help improve security in Microsoft 365 Apps, we’re changing its 
 With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message will include a link that takes users to an article that contains information about the security risks of Basic authentication.
 
 > [!NOTE]
+> - Files shares hosted on Windows aren't affected by this change because the authentication method used is NTLM.
 > - SharePoint Online, OneDrive, and on-premises SharePoint Server (configured for modern authentication) aren't affected by this change.
 > - On-premises SharePoint Server configured for Basic authentication is affected by this change.
 
