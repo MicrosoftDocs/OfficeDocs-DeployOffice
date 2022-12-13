@@ -27,7 +27,7 @@ Therefore, to help improve security in Microsoft 365 Apps, we’re changing its 
 With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message will include a link that takes users to an article that contains information about the security risks of Basic authentication.
 
 > [!NOTE]
-> - Files shares hosted on Windows aren't affected by this change because the authentication method used is NTLM.
+> - File shares hosted on Windows aren't affected by this change because the authentication method used is NTLM.
 > - SharePoint Online, OneDrive, and on-premises SharePoint Server (configured for modern authentication) aren't affected by this change.
 > - On-premises SharePoint Server configured for Basic authentication is affected by this change.
 
