@@ -66,13 +66,6 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
 
-## What's new in preview
-
-The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, choose a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
-
-> [!NOTE]
-> Preview features aren't available to everyone and are subject to change.
-
-#### OneDrive sync health (preview)
+## OneDrive sync health
 
 You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health).
