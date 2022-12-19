@@ -18,7 +18,7 @@ description: "Overview of the Microsoft 365 Apps admin center"
 
 # Overview of the Microsoft 365 Apps admin center
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center. For newly released or announced features, see [What's new in preview](#whats-new-in-preview).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center.
 
 ## How to get to the admin center
 

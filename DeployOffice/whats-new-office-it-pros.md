@@ -23,7 +23,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Offi
 
 ### General Availability of OneDrive sync health in the Microsoft 365 Apps admin center
 
-The OneDrive sync health dashboard in the Microsoft 365 Apps admin center is generally available as of December 16, 2022. You can use the the OnDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health)
+The OneDrive sync health dashboard in the Microsoft 365 Apps admin center is generally available as of December 16, 2022. You can use the the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health)
 ## November 2022
 
 ### Basic authentication prompts to be blocked by default in Microsoft 365 Apps
