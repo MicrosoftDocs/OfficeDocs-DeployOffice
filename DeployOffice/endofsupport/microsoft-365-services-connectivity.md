@@ -61,8 +61,8 @@ After October 15, 2020, you must be using at least TLS 1.2 to connect to Microso
 
 In early January 2023, Basic authentication for multiple protocols for Exchange Online will be permanently turned off. For more information, see the following blog posts:
 
-- [Basic Authentication Deprecation in Exchange Online – What’s Next](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-what-s-next/ba-p/3678143)
 - [Basic Authentication Deprecation in Exchange Online – Time’s Up](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-time-s-up/ba-p/3695312)
+- [Basic Authentication Deprecation in Exchange Online – What’s Next](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-what-s-next/ba-p/3678143)
 
 ### Retirement of Skype for Business Online
 
