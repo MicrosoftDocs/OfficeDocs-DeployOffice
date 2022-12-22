@@ -21,5 +21,5 @@
 ### [Current Channel (Preview)](/officeupdates/update-history-current-channel-preview)
 
 ## Release notes
-### [Release notes: Beta Channel for Windows](/officeupdates/beta-channel)
-### [Release notes: Current Channel (Preview) for Windows](/officeupdates/current-channel-preview)
+### [Beta Channel for Windows](/officeupdates/beta-channel)
+### [Current Channel (Preview) for Windows](/officeupdates/current-channel-preview)
