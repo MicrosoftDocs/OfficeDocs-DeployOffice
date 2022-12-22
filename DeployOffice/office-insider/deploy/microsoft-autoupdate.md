@@ -25,6 +25,7 @@ If you want your Mac users to choose an Office Insider channel for themselves, t
 > - Keep in mind that Beta Channel isn't supported.
 > - By default, Microsoft AutoUpdate automatically checks for updates every 12 hours.
 > - If you want to choose the Office Insider channel for your Mac users, you can [use a preference](preference.md).
+> - Mac users can't choose an Office Insider channel if the installation comes from the Mac App Store. Those installations only support Current Channel.
 
 ## Related articles
 - [Compare Office Insider channels](../compare-channels.md)
