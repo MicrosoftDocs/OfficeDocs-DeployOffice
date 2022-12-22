@@ -57,11 +57,12 @@ productDirectory:
     - title: What's new
       imageSrc: /office/media/icons/whats-new-megaphone.svg
       links:
-        - url: https://insider.office.com/releasenotes/
-          text: Release notes
         - url: https://insider.office.com/blog
           text: Blog
-        
+        - url: /officeupdates/beta-channel
+          text: Release notes for Beta Channel for Windows
+        - url: /officeupdates/current-channel-preview
+          text: Release notes for Current Channel (Preview) for Windows
     - title: Helpful resources
       imageSrc: /office/media/icons/help.svg
       links:
