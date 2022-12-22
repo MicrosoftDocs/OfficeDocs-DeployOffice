@@ -41,6 +41,7 @@ The following table compares the channels and provides scenarios for business us
 > For information about other channels that are available for Windows devices, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
 ## Related articles
-- [Update history for Beta Channel on Windows](/officeupdates/update-history-beta-channel)
-- [Update history for Current Channel (Preview) on Windows](/officeupdates/update-history-current-channel-preview)
-- [Release notes for Beta Channel and Current Channel (Preview)](https://insider.office.com/releasenotes/)
+- [Update history: Beta Channel on Windows](/officeupdates/update-history-beta-channel)
+- [Update history: Current Channel (Preview) on Windows](/officeupdates/update-history-current-channel-preview)
+- [Release notes: Beta Channel for Windows](/officeupdates/beta-channel)
+- [Release notes: Current Channel (Preview) for Windows](/officeupdates/current-channel-preview)
