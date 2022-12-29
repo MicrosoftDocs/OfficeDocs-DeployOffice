@@ -9,31 +9,26 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
-description: "Notification to Office admins that Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise."
+description: "Notification to Microsoft 365 admins that Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise."
 ---
 
 # Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in Current Channel in August 2022. *(Version 2208 is expected to be available in Semi-Annual Enterprise Channel in January 2023.)*
-> - Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise in a future version, but that version hasn't been determined yet.
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208.
 
 Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise. For more information about what happens to the Office Telemetry Dashboard components, see [What happens when Office Telemetry Dashboard is removed?](#what-happens-when-office-telemetry-dashboard-is-removed)
 
 ## When will Office Telemetry Dashboard be removed?
 
-> [!NOTE]
-> - Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise in a future version, but that version hasn't been determined yet. 
-> - Once that version is determined, we'll update the table in this section with the relevant details.
-
 The date when Office Telemetry Dashboard will be removed from Microsoft 365 Apps for enterprise depends on which update channel you're using. The following table shows the forecasted schedule. The information in italics in the table is subject to change.
 
 |Update channel  | Version |Release date  |
 |---------|---------|---------|
-|Current Channel |*To be determined*  |*To be determined* |
-|Monthly Enterprise Channel  | *To be determined* | *To be determined*|
-|Semi-Annual Enterprise Channel (Preview) |*To be determined*|*To be determined*|
-|Semi-Annual Enterprise Channel |*To be determined* |*To be determined* |
+|Current Channel |*Version 2301*  |*Late January 2023* |
+|Monthly Enterprise Channel  | *Version 2301*  | *March 14, 2023*|
+|Semi-Annual Enterprise Channel (Preview) |*Version 2302* |*March 14, 2023*|
+|Semi-Annual Enterprise Channel |*Version 2302*|*July 11, 2023* |
 
 ## Which versions of Office are affected?
 

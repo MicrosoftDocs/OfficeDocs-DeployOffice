@@ -17,7 +17,8 @@ description: "Explains how to view the stability of Office documents and solutio
 ***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
 
 > [!IMPORTANT]
-> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
+> - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
  
 After you deploy the components of Office Telemetry Dashboard and the agents have collected data, you can use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Office Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Office Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Office Telemetry Dashboard. 
 
