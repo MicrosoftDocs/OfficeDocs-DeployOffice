@@ -2,6 +2,15 @@
 
 
 
+## Week of December 26, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/29/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
+| 12/29/2022 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
+
+
 ## Week of December 19, 2022
 
 
