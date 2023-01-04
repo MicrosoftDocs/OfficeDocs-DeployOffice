@@ -291,7 +291,7 @@ Set when pictures are automatically downloaded from the internet for email.
 |Domain| com.microsoft.Outlook |
 |Key|AutomaticallyDownloadExternalContent |
 |Data Type|Integer   |
-|Possible values| 0 = Never (default) <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
+|Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
 |Availability|16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
@@ -329,7 +329,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Domain| com.microsoft.Outlook |
 |Key| EnableNewOutlook|
 |Data Type| Integer |
-|Possible values| 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
+|Possible values| 0 = Switch hidden <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on (default) <br/> 3 = New Outlook enabled with switch hidden |
 |Availability|16.38 |
 
 ### Disable Junk settings
@@ -339,7 +339,7 @@ Prevent users from applying Junk options to emails.
 |Category|Details|
 |:-----|:-----|
 |Domain| com.microsoft.Outlook |
-|Key|OLDisableJunkOptionsPrefKey|
+|Key|DisableJunkOptionsPrefKey|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
 |Availability|16.55 |
