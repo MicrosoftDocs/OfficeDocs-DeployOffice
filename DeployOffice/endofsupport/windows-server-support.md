@@ -71,7 +71,7 @@ Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 o
 
 > [!NOTE]
 > - Version 2302 is expected to be available in Current Channel in late February 2023.
-> - In the meantime, if you want to test on Windows Server 2022, we recommend that you use the most up-to-date, [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
+> - In the meantime, if you want to test on Windows Server 2022, we recommend that you use the [most up-to-date version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
 
 For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
