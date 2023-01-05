@@ -67,13 +67,11 @@ For end of support dates for Windows Server 2019, see the [Windows Server 2019 l
 
 ## Windows Server 2022
 
-Microsoft 365 Apps is supported on Windows Server 2022 only until October 2026, which is when mainstream support ends for Windows Server 2022.
+Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. That date is when mainstream support ends for Windows Server 2022.
 
 > [!NOTE]
-> - Support for running Microsoft 365 Apps on Windows Server 2022 is currently in preview.
-> - If you want to begin testing on Windows Server 2022, we recommend that you use the most current, [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
-> - At a later date (to be determined), we will provide information about which versions of Microsoft 365 Apps are supported on Windows Server 2022.
-> - For more information, refer to this blog post on the Microsoft Tech Community: [Windows Server 2022 adds support for Microsoft 365 Apps](https://techcommunity.microsoft.com/t5/windows-server-insiders/windows-server-2022-adds-support-for-microsoft-365-apps/m-p/3653854)
+> - Version 2302 is expected to be available in Current Channel in late February 2023.
+> - In the meantime, if you want to test on Windows Server 2022, we recommend that you use the most up-to-date, [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
 
 For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
