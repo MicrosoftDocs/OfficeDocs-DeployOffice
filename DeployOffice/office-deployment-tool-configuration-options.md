@@ -580,7 +580,7 @@ Allowed values:
 
 Optional. The default value is **True** if not specified.
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and Windows 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
 
 Allowed values:
 
