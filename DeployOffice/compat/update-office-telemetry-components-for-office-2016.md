@@ -34,15 +34,11 @@ Here are the procedures for uninstalling the old processors, installing the new 
   
 ## To uninstall the old version of the processor
 
-1. On each computer where a processor is installed, uninstall the processor from the Windows Control Panel.
+1. On each computer where a processor is installed, uninstall the processor from the Windows Control Panel. For example, on Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**.
     
-   - On Windows 8.1, choose **Start** > **Control Panel**. Then, under **Programs** choose **Uninstall a program**.
+2. In the list of programs, select **Microsoft Office Telemetry Processor**.
     
-   - On Windows 10, choose **Start** > **Settings**. Then, choose **System** > **Apps &amp; Features**. 
-    
-2. In the list of programs, select **Microsoft Office Telemetry Processor**. 
-    
-3. Select **Uninstall**, and then select **Yes** when you are prompted. 
+3. Select **Uninstall**, and then select **Yes** when you are prompted.
     
 The following two procedures describe two options for installing the processor. Pick the procedure that applies to your situation. Do this for each computer that's running a processor. 
   
