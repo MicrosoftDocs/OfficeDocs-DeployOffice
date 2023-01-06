@@ -37,7 +37,7 @@ But, we realize that there are multiple factors that will determine which update
 The following table provides a comparison of Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
 
-|  |Current <br>Channel|Monthly Enterprise </br>Channel  |Semi-Annual Enterprise </br>Channel  |
+|Category  |Current <br>Channel|Monthly Enterprise </br>Channel  |Semi-Annual Enterprise </br>Channel  |
 |---------|---------|---------|---------|
 |*Recommended use*     | Provide your users with new Office features as soon as they're ready, but on no set schedule.|Provide your users with new Office features only once a month and on a predictable schedule.|For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.|
 |*Release frequency*<sup>1</sup>|At least once a month (likely more often), but on no set schedule| Once a month, on the second Tuesday of the month  |Once a month, on the second Tuesday of the month|
@@ -217,9 +217,7 @@ Not all devices in your organization have to be configured with the same update 
 
 Each subscription product is configured with a default update channel. If you don’t specify the update channel when you install the product by itself on a device, the product will be configured to use the default update channel.
 
-Current Channel is the default update channel for Microsoft 365 Apps for business and the subscription versions of the Project and Visio desktop apps. 
-
-As of June 9, 2020, Current Channel is also the default channel for Microsoft 365 Apps for enterprise in most cases. For more information, see [Change to the default update channel for Microsoft 365 Apps for enterprise](update-channels-changes.md#change-to-the-default-update-channel-for-microsoft-365-apps-for-enterprise).
+Current Channel is the default update channel for Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps.
 
 ### Configure the update channel
 

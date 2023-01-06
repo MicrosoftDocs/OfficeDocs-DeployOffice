@@ -19,6 +19,11 @@ description: "This article lists the new tools, content, and processes for IT Pr
 
 This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## December 2022
+
+### General Availability of OneDrive sync health in the Microsoft 365 Apps admin center
+
+The OneDrive sync health dashboard in the Microsoft 365 Apps admin center is generally available as of December 16, 2022. You can use the the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health)
 ## November 2022
 
 ### Basic authentication prompts to be blocked by default in Microsoft 365 Apps
@@ -188,7 +193,7 @@ To discuss or learn more about end of support for Office versions, visit [Micros
 ## June 2020
 
 ### Update channels for Microsoft 365 Apps renamed
-The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel. To learn more, including what actions you might need to take, see [Changes to update channels for Microsoft 365 Apps](update-channels-changes.md).
+The names of the update channels for Microsoft 365 Apps have changed. For example, Monthly Channel is now named Current Channel and Semi-Annual Channel is now named Semi-Annual Enterprise Channel.
 
 ## May 2020
 
@@ -202,7 +207,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](o
 ## April 2020
 
 ### Office 365 ProPlus renamed
-Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. To learn more, including what actions you might need to take, see [Name change for Office 365 ProPlus](name-change.md). In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
+Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
 We've published two new best practice articles from the field:[Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](fieldnotes/choose-how-to-deliver-updates.md).

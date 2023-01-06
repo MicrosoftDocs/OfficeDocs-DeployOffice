@@ -21,7 +21,5 @@
 ### [Current Channel (Preview)](/officeupdates/update-history-current-channel-preview)
 
 ## Release notes
-### [Windows: Beta Channel](https://insider.office.com/releasenotes/windows/fast)
-### [Windows: Current Channel (Preview)](https://insider.office.com/releasenotes/windows/slow)
-### [Mac: Beta Channel](https://insider.office.com/releasenotes/mac/fast)
-### [Mac: Current Channel (Preview)](https://insider.office.com/releasenotes/mac/slow)
+### [Beta Channel for Windows](/officeupdates/beta-channel)
+### [Current Channel (Preview) for Windows](/officeupdates/current-channel-preview)

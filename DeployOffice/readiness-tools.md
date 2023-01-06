@@ -49,7 +49,7 @@ The Readiness Toolkit creates reports, in either Excel or Power BI, which can as
 
 You can assess an individual device, a collection of devices, or a collection of documents.
 
-There are different ways you can deploy and run the Readiness Toolkit within your organization without significant planning or investment in time. The Readiness Toolkit does not require database infrastructure, but you can export report data to SQL Server to create interactive Power BI reports for high scale reporting and custom analysis.
+There are different ways you can deploy and run the Readiness Toolkit within your organization without significant planning or investment in time. The Readiness Toolkit doesn't require database infrastructure, but you can export report data to SQL Server to create interactive Power BI reports for high scale reporting and custom analysis.
 
 While the Readiness Toolkit is designed for on-premises use, add-in adoption information, which is optional, requires access to a publicly available web service.
 
@@ -62,8 +62,8 @@ If you have at least Version 1902 of Microsoft Configuration Manager (current br
  Configuration Manager extends beyond the Readiness Toolkit to help with the Upgrade phase by providing the following features:
 
 - An inventory of Office COM add-ins, including information on add-in adoption and ISV support for Microsoft 365 Apps.
-- An inventory of devices that have recently used macros and devices that have not.
-- A report of devices ready for Microsoft 365 Apps deployment, and a list of devices to pilot to validate that they are ready for Microsoft 365 Apps.
+- An inventory of devices that have recently used macros and devices that haven't.
+- A report of devices ready for Microsoft 365 Apps deployment, and a list of devices to pilot to validate that they're ready for Microsoft 365 Apps.
 - The ability to create collections of devices based on their readiness assessment.
 
 Unlike the Readiness Toolkit, add-in adoption information is downloaded directly into Configuration Manager, instead of having to rely on accessing a publicly available web service.
@@ -87,7 +87,7 @@ For more information, see [Integration for Office 365 ProPlus readiness](/mem/co
 ## Office Telemetry Dashboard
 
 > [!IMPORTANT]
-> Office Telemetry Dashboard will no longer be supported in Microsoft 365 Apps for enterprise, starting with Version 2208 in August 2022. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](compat/telemetry-dashboard-removal.md).
+> Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208. For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](compat/telemetry-dashboard-removal.md).
 
 In the past, before there was the Readiness Toolkit or the Microsoft 365 Apps readiness features in Configuration Manager, we recommended Office Telemetry Dashboard for Office compatibility assessment. Office Telemetry Dashboard, which was first released in Office 2013, is still a supported tool, but we now only recommend it if you need specific usage and health information.
 
@@ -96,7 +96,7 @@ Office Telemetry Dashboard can assist some organizations primarily in the Manage
 - Runtime application and document usage, which tracks which Office applications and files are used.
 - Runtime issue logging, which tracks application and add-in crashes, VBA macro errors, and usages of deprecated or modified VBA APIs.
 
-Office Telemetry Dashboard gathers an inventory of add-ins and Office files as they are used. Since this inventory is gathered through usage, you need to collect inventory over a period of time, such as at least 30 days. This time is needed to accumulate sufficient data to provide meaningful insight into usage patterns within your organization.
+Office Telemetry Dashboard gathers an inventory of add-ins and Office files as they're used. Since this inventory is gathered through usage, you need to collect inventory over a period of time, such as at least 30 days. This time is needed to accumulate sufficient data to provide meaningful insight into usage patterns within your organization.
 
 In contrast, Readiness Toolkit and Configuration Manager provide an instant inventory of installed add-ins and recently used documents without the need to wait for usage patterns to emerge. These tools also provide Microsoft 365 Apps support and adoption information for add-ins, and they proactively scan VBA macros for potential compatibility issues prior to your upgrade. If needed, you can use the Readiness Toolkit to create reports based on add-in data from Office Telemetry Dashboard.
 
@@ -104,6 +104,6 @@ The runtime issue logging provided by Office Telemetry Dashboard can help with h
 
 But, Office Telemetry Dashboard requires a significant amount of time to plan and deploy. For example, you need to enable logging on devices in your organization, configure processors to collect the information from those devices, and create and manage a SQL Server database to store the information collected from those devices.
 
-We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we are planning to provide health reporting capabilities in future releases of Configuration Manager (current branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
+We recognize that the time needed to plan, deploy, and manage Office Telemetry Dashboard can be a deterrent to many organizations. But, we know the type of health reporting provided by Office Telemetry Dashboard is useful to organizations, so we're planning to provide health reporting capabilities in future releases of Configuration Manager (current branch). In the meantime, organizations who need this type of information can continue to use Office Telemetry Dashboard.
 
 For more information about Office Telemetry Dashboard, see [Guide to Office Telemetry Dashboard resources](compat/compatibility-and-telemetry-in-office.md).
