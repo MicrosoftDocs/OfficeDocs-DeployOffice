@@ -91,7 +91,6 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
 - This information also applies to the following products:
    - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
-- For information about Windows Server 2008 R2, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
 - For more information and resources, see [Support for Windows 7 has ended](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support).
