@@ -24,12 +24,12 @@ Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/life
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
-## Security updates will continue for Microsoft 365 Apps on Windows 7
+## Security updates for Microsoft 365 Apps on Windows 7
 
 > [!IMPORTANT]
 > Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
 
-Even though Windows 7 is no longer supported, we decided to continue to provide you with security updates for Microsoft 365 Apps for three years, until January 2023. We did this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new feature updates.
+Even though Windows 7 is no longer supported, we decided to provide you with security updates for Microsoft 365 Apps for three years, until January 2023. We did this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new feature updates.
 
 > [!IMPORTANT]
 > - Even with these security updates, Microsoft 365 Apps is no longer supported on Windows 7.
@@ -39,12 +39,12 @@ Even though Windows 7 is no longer supported, we decided to continue to provide 
 
 Version 2002 is the last version of Microsoft 365 Apps that's available for devices running Windows 7.
 
-This means that if you want to continue to use Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2201, on a device running Windows 7, you'll receive an error message.
+This means that if you want to use Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2201, on a device running Windows 7, you'll receive an error message.
 
 > [!IMPORTANT]
 > - As of January 2022, attempting to do a new installation of Version 2002 will fail.
 > - Performing an Online Repair of an existing installation of Version 2002 will also fail.
-> - Updating an existing installation of Version 2002 will continue to work.
+> - Updating an existing installation of Version 2002 will work until January 10, 2023, after which no more updates will be available.
 
 To update an existing installation of Version 2002, you can keep using the same management tools that you're currently using, such as the Office Deployment Tool or Configuration Manager. Also, Microsoft 365 Apps can remain on the same update channel as before.
 
