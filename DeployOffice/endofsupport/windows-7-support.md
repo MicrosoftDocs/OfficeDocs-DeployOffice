@@ -20,17 +20,16 @@ description: "Provides Office admins with information about the implications of 
 > - Microsoft 365 Apps is no longer supported on Windows 7.
 > - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.microsoft.com/office/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
 
-
 Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
 ## Security updates will continue for Microsoft 365 Apps on Windows 7
 
-> [!NOTE]
-> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 will end after January 10, 2023.
+> [!IMPORTANT]
+> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
 
-Even though Windows 7 is no longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. We're doing this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
+Even though Windows 7 is no longer supported, we decided to continue to provide you with security updates for Microsoft 365 Apps for three years, until January 2023. We did this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new features updates.
 
 > [!IMPORTANT]
 > - Even with these security updates, Microsoft 365 Apps is no longer supported on Windows 7.
@@ -53,9 +52,12 @@ If Microsoft 365 Apps is configured to get updates directly from the Office Cont
 
 ## Guidance when using Configuration Manager for updates
 
+> [!IMPORTANT]
+> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
+
 If you use Configuration Manager and the Software Update management workflow to update installations of Microsoft 365 Apps, we recommend that you create a separate collection for your Windows 7 devices. Then, use a query rule to add members to the collection.
 
-On the second Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64). That update package can be used with whichever update channel of Microsoft 365 Apps you have deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Current Channel or a Semi-Annual Enterprise Channel installation of Microsoft 365 Apps on devices running Windows 7.
+On the second Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64). That update package can be used with whichever update channel of Microsoft 365 Apps you've deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Current Channel or a Semi-Annual Enterprise Channel installation of Microsoft 365 Apps on devices running Windows 7.
 
 In the Office 365 Updates node, you'll see entries like the following, where ##### will be replaced by the most current build number:
 
@@ -68,9 +70,12 @@ If you use an automatic deployment rule (ADR), you should create a new rule for 
 
 ## Extended availability of Version 2002
 
+> [!IMPORTANT]
+> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
+
 Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
-Versions of Semi-Annual Enterprise Channel are available usually for only 14 months, but we're making an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel (Preview).
+Versions of Semi-Annual Enterprise Channel are available usually for only 14 months, but we made an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel.
 
 The extended availability of Version 2002 until January 2023 applies ***only*** to devices running Windows 7.
 
@@ -89,9 +94,8 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
 ## Additional information
 
 - This information also applies to the following products:
-   - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
-  - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
-- For information about Windows Server 2008 R2, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
+  - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
+  - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
 - For more information and resources, see [Support for Windows 7 has ended](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support).
