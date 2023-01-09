@@ -21,7 +21,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
   
 ## Featured
 
-- [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
+- [What's new for deploying Microsoft 365 Apps](whats-new.md)
 
 - [Overview of Cloud Policy](admincenter/overview-cloud-policy.md)
 

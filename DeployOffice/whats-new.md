@@ -1,5 +1,5 @@
 ---
-title: "What's new for IT Pros deploying Microsoft 365 Apps"
+title: "What's new for deploying Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -15,7 +15,7 @@ recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
 ---
 
-# What's new for IT Pros deploying Microsoft 365 Apps
+# What's new for deploying Microsoft 365 Apps
 
 This article lists new features, tools, and articles for IT Pros who deploy Microsoft 365 Apps in the enterprise. For details on Microsoft 365 announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -35,7 +35,7 @@ Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on
 
 ### No more security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
-Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 ended on January 10, 2023. Running Microsoft 365 Apps on either of these operating systems hasn't been supported since January 2020.
+Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 ended on January 10, 2023. Running Microsoft 365 Apps on these operating systems hasn't been supported since January 2020.
 
 ## December 2022
 
