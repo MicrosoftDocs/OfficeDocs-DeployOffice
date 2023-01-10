@@ -42,17 +42,15 @@ If you control the deployment of updates of Office apps (for example, by using M
  
 If you try to deploy or update to a newer version of the Office apps, you'll receive an error message that states "This version of Office requires a newer version of Windows."
 
-
 ## Upgrade from Windows 8 to a supported operating system
 
 Because Windows 8 is no longer supported, Windows 8 doesn’t receive security updates, leaving it vulnerable to security threats.
 
-To get security updates for Windows and updates to Microsoft 365 Apps, we strongly recommend that you move to a supported operating system. For example, Windows 8.1, or preferably Windows 11 or Windows 10.
+To get security updates for Windows and updates to Microsoft 365 Apps, we strongly recommend that you move to a supported operating system. For example, move to Windows 11 (or Windows 10).
 
 > [!TIP]
-> - If you’re using Microsoft Configuration Manager (current branch), you can use the [Computers with a specific operating system](/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.
-> - You can update from Windows 8 to Windows 8.1 for free. Windows 8.1 is supported until January 10, 2023. For more information, see [Update to Windows 8.1 from Windows 8](https://support.microsoft.com/help/15288/windows-8-update-to-windows-8-1).
+> If you’re using Microsoft Configuration Manager (current branch), you can use the [Computers with a specific operating system](/mem/configmgr/core/servers/manage/list-of-reports#operating-system) report to identify devices that are running Windows 8.
 
-For more information about upgrading to Windows 10, see [Windows 10 deployment resources and documentation](/windows/deployment/).
+For more information about moving to a supported operating system, see [Windows client deployment resources and documentation](/windows/deployment/).
 
-Other upgrade resources are available from Microsoft experts, such as [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
+Other upgrade resources are available from Microsoft experts, such as [FastTrack](/fasttrack/products-and-capabilities#windows-11) and [App Assure](/fasttrack/products-and-capabilities#app-assure).

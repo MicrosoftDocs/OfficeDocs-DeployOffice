@@ -1,5 +1,5 @@
 --- 
-title: "Content updates for deploying Office" 
+title: "Content updates for deploying Microsoft 365 Apps" 
 ms.author: danbrown 
 author: DHB-MSFT 
 manager: dougeby 
@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365 
 ms.custom: Ent_Office_ProPlus 
 recommendations: false
-description: "Deploy Office content updates" 
+description: "List of recently updated articles about deploying Microsoft 365 Apps" 
 --- 
 
-# Content updates for deploying Office 
+# Content updates for deploying Microsoft 365 Apps
 
-This article lists Office deployment articles that have been changed over the last several weeks. For new features and tools, see [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md). For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap). 
+This article lists the Microsoft 365 Apps deployment articles that have been added or modified recently. For new features and tools, see [What's new for deploying Microsoft 365 Apps](whats-new.md). For details on Microsoft 365 announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap). 
 
-[!INCLUDE [deployoffice-content-updates](includes/deployoffice-content-updates.md)] 
+[!INCLUDE [deployoffice-content-updates](includes/deployoffice-content-updates.md)]
