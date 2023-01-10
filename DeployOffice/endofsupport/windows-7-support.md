@@ -27,15 +27,15 @@ Using Microsoft 365 Apps on older, unsupported operating systems may cause perfo
 ## Security updates for Microsoft 365 Apps on Windows 7
 
 > [!IMPORTANT]
-> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
+> Security updates Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
 
-Even though Windows 7 is no longer supported, we decided to provide you with security updates for Microsoft 365 Apps for three years, until January 2023. We did this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But, during that time, as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new feature updates.
+Even though Windows 7 is no longer supported, we decided to provide you with security updates for Microsoft 365 Apps for three years, until January 2023. We did this to give you more time to make the transition from using Microsoft 365 Apps on devices running Windows 7 to devices running a supported operating system, such as Windows 11 or Windows 10. But as long as the device is still running Windows 7, your installation of Microsoft 365 Apps won't receive any new feature updates.
 
 > [!IMPORTANT]
 > - Even with these security updates, Microsoft 365 Apps is no longer supported on Windows 7.
-> - This information applies even if you have purchased Extended Security Updates (ESU) for Windows 7. After January 2020, security updates for Windows 7 are only available with ESU. For more information, see [FAQ about Extended Security Updates for Windows 7](https://support.microsoft.com/help/4527878/faq-about-extended-security-updates-for-windows-7).
+> - This information applies even if you purchased [Extended Security Updates (ESU) for Windows 7](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq). ESU for Windows 7 ended on January 10, 2023.
 
-## How to manage Microsoft 365 Apps on Windows 7 after January 2020
+## How to manage Microsoft 365 Apps on Windows 7
 
 Version 2002 is the last version of Microsoft 365 Apps that's available for devices running Windows 7.
 
@@ -53,7 +53,7 @@ If Microsoft 365 Apps is configured to get updates directly from the Office Cont
 ## Guidance when using Configuration Manager for updates
 
 > [!IMPORTANT]
-> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
+> Security updates for Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
 
 If you use Configuration Manager and the Software Update management workflow to update installations of Microsoft 365 Apps, we recommend that you create a separate collection for your Windows 7 devices. Then, use a query rule to add members to the collection.
 
@@ -68,17 +68,6 @@ These update packages are configured to apply ***only*** to devices running Wind
 
 If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Microsoft 365 Apps Update for Windows 7" and the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
 
-## Extended availability of Version 2002
-
-> [!IMPORTANT]
-> Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 ended on January 10, 2023.
-
-Version 2002 will be available until January 2023 and will receive security updates, as needed, during that time. For a list of security updates included in releases of Version 2002, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
-
-Versions of Semi-Annual Enterprise Channel are available usually for only 14 months, but we made an exception for Version 2002 in order to align with the availability dates of Windows 7 ESU. This extended availability for Version 2002 also applies to other update channels, such as Current Channel and Semi-Annual Enterprise Channel.
-
-The extended availability of Version 2002 until January 2023 applies ***only*** to devices running Windows 7.
-
 ## After moving Microsoft 365 Apps to a supported Windows operating system
 
 After you move Microsoft 365 Apps to a supported Windows operating system, you can configure Microsoft 365 Apps to begin receiving newer versions and feature updates again. Since updates for Microsoft 365 Apps are cumulative, you'll receive all the feature updates that you missed while your device was running Windows 7.
@@ -89,7 +78,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
-Even if your version of Office is still supported, Windows 7 will no longer receive security updates after January 2020, leaving it vulnerable to security threats, unless you have ESU. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
+Even if your version of Office is still supported, Windows 7 no longer receives security updates, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
 
 ## Additional information
 
@@ -98,6 +87,6 @@ Even if your version of Office is still supported, Windows 7 will no longer rece
   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
-- For more information and resources, see [Support for Windows 7 has ended](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support).
+- For more information and resources, see [Windows 7 support ended on January 14, 2020](https://support.microsoft.com/windows/b75d4580-2cc7-895a-2c9c-1466d9a53962).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
 - If you're using Microsoft 365 Apps for enterprise on a device running Windows 7 or Windows Server 2008 R2, you'll continue to see **Office 365 ProPlus** under the **Product Information** section when you go to **File** > **Account** in an Office app, such as Word. If you're using Version 2002 of Microsoft 365 Apps for business, you'll see **Microsoft 365 for business** under the **Product Information** section.
