@@ -35,7 +35,7 @@ Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on
 
 ### No more security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
-Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 ended on January 10, 2023. Running Microsoft 365 Apps on these operating systems hasn't been supported since January 14, 2020.
+Security updates for Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 ended on January 10, 2023. Running Microsoft 365 Apps on these operating systems hasn't been supported since January 14, 2020.
 
 ## December 2022
 
