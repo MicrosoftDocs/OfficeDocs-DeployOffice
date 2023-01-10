@@ -27,7 +27,7 @@ The following sections provide information about support for Microsoft 365 Apps 
 ## Windows Server 2008 R2
 
 > [!NOTE]
-> Security updates for Version 2002 of Microsoft 365 Apps on Windows Server 2008 R2 ended on January 10, 2023.
+> Security updates for Microsoft 365 Apps on Windows Server 2008 R2 ended on January 10, 2023.
 
 Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, as of January 14, 2020.
 
