@@ -19,7 +19,7 @@ description: "Provides Office admins with information about the implications of 
 > - Support for Windows 8.1 ended on January 10, 2023.
 > - Microsoft 365 Apps is no longer supported on Windows 8.1.
 > - If you're running Office on Windows 8.1 in your organization, you should [move to a more current operating system](#move-from-windows-81-to-a-more-current-operating-system).
-> - If you're a home user running Office on Windows 8.1, see [Windows 8 and Windows 8.1 end of support and Office](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading this article.
+> - If you're a home user running Microsoft 365 or Office on Windows 8.1, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of this article.
 
 Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 

@@ -18,9 +18,9 @@ description: "Provides Office admins with information about the implications of 
 > [!IMPORTANT]
 > - Support for Windows 7 ended on January 14, 2020. [Learn more](https://support.microsoft.com/windows/b75d4580-2cc7-895a-2c9c-1466d9a53962)
 > - Microsoft 365 Apps is no longer supported on Windows 7.
-> - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.microsoft.com/office/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
+> - If you're a home user running Microsoft 365 or Office on Windows 7, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of this article.
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
