@@ -41,6 +41,7 @@ To get the KMS key, sign in to the [Volume Licensing Service Center (VLSC)](http
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
 > - Support for Windows 8 ended on January 12, 2016.
+> - Support for Windows 8.1 ended on January 10, 2023.
 
 ## Configure the KMS host computer
 
