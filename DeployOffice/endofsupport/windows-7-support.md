@@ -18,7 +18,7 @@ description: "Provides Office admins with information about the implications of 
 > [!IMPORTANT]
 > - Support for Windows 7 ended on January 14, 2020. [Learn more](https://support.microsoft.com/windows/b75d4580-2cc7-895a-2c9c-1466d9a53962)
 > - Microsoft 365 Apps is no longer supported on Windows 7.
-> - If you're a home user running Microsoft 365 or Office on Windows 7, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of this article.
+> - If you're a home user running Microsoft 365 or Office on Windows 7, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading the following article.
 
 Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
