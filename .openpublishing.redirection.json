@@ -824,6 +824,11 @@
       "source_path": "Deployoffice/update-channels-changes.md",
       "redirect_url": "/deployoffice/overview-update-channels",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Deployoffice/whats-new-office-it-pros.md",
+      "redirect_url": "/deployoffice/whats-new",
+      "redirect_document_id": false
     }
   ]
 }

@@ -4,7 +4,7 @@
 ## [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
 
 ## Get started
-### [What's new](whats-new-office-it-pros.md)
+### [What's new](whats-new.md)
 ### [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ### [Microsoft 365 Apps admin center](admincenter/overview.md)
 ### [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md)
