@@ -31,7 +31,7 @@ highlightedContent:
 productDirectory:
   items:
     - title: Deployment options for Windows
-      imageSrc: /office/media/icons/deploy.svg
+      imageSrc: /office/media/icons/deploy-blue.svg
       links:
         - url: deploy/office-deployment-tool.md
           text: Office Deployment Tool
@@ -47,7 +47,7 @@ productDirectory:
           text: Make a registry change  
     
     - title: Deployment options for Mac
-      imageSrc: /office/media/icons/download.svg
+      imageSrc: /office/media/icons/download-blue.svg
       links:
         - url: deploy/microsoft-autoupdate.md
           text: Microsoft AutoUpdate (MAU)
@@ -55,7 +55,7 @@ productDirectory:
           text: Preference
         
     - title: What's new
-      imageSrc: /office/media/icons/whats-new-megaphone.svg
+      imageSrc: /office/media/icons/whats-new-megaphone-blue.svg
       links:
         - url: https://insider.office.com/blog
           text: Blog
