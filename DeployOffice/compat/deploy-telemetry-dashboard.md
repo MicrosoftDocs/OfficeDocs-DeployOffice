@@ -48,7 +48,8 @@ For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dash
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+> - Support for Windows 8.1 ended on January 10, 2023.
+> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020.
 
 <a name="SQL"> </a>
 
@@ -118,7 +119,7 @@ We recommend the following operating systems for computers that run the processo
 
  **For production environments:** For best performance, we recommend you use a supported version of Windows Server, such as Windows Server 2019.
 
-**For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10 or Windows 11 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -248,7 +249,7 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on [Search Product and Services Lifecycle Information](/lifecycle/products/) before you install the agent. 
 
 > [!NOTE]
-> - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
+> - Windows 7 with Service Pack 1, Windows 8.1, Windows Server 2008 R2, and Windows Server 2008 are no longer supported.
 > - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 
