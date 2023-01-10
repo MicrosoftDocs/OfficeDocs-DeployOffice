@@ -103,4 +103,4 @@
 
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 
-## [Office Insider Program for Business](office-insider/index.yml)
+## [Microsoft 365 Insider Program for Business](office-insider/index.yml)

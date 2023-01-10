@@ -40,8 +40,8 @@ additionalContent:
           summary: Find guidance about deploying Office to Macs in your organization.
           url: mac/deployment-guide-for-office-for-mac.md
         # Card
-        - title: Office Insider Program for Business
-          summary: Find guidance about deploying Office Insider in your organization to get early access to new features for Microsoft 365 Apps.
+        - title: Microsoft 365 Insider Program for Business
+          summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
           url: office-insider/index.yml
         # Card
         - title: Office LTSC 2021

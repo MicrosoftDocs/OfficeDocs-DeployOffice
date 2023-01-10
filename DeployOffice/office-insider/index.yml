@@ -1,11 +1,11 @@
 ### YamlMime:Hub
-title: Office Insider Program for Business 
-summary: Use Office Insider in your organization to enable you to explore Office features prior to the next Microsoft 365 update. 
-brand: office
+title: Microsoft 365 Insider Program for Business 
+summary: Use Microsoft 365 Insider in your organization to enable you to explore Microsoft 365 Apps features prior to the next Microsoft 365 update. 
+brand: m365
 
 metadata:
-  title: Office Insider Program for Business documentation 
-  description: This page contains links to content to help Office admins provide Office Insider to users in their organization.
+  title: Microsoft 365 Insider Program for Business documentation 
+  description: This page contains links to content to help Microsoft 365 Apps admins provide Microsoft 365 Insider to users in their organization.
   ms.service: o365-proplus-itpro
   ms.topic: hub-page 
   ms.collection: Ent_O365
@@ -20,7 +20,7 @@ highlightedContent:
     - title: Overview of the program
       itemType: overview
       url: overview.md
-    - title: Office Insider channels
+    - title: Microsoft 365 Insider channels
       itemType: learn
       url: compare-channels.md
     - title: Deployment options
@@ -75,7 +75,7 @@ productDirectory:
         - url: https://insider.office.com/handbook#Provide-feedback
           text: How to provide feedback 
 
-    - title: Office Insider for consumers
+    - title: Microsoft 365 Insider for consumers
       imageSrc: /office/media/icons/user-monitor.svg
       links:
         - url: https://insider.office.com/handbook
