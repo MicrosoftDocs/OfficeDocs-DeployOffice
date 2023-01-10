@@ -16,7 +16,7 @@ description: "Provides Office admins with information about the implications of 
 # Windows 7 end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Support for Windows 7 ended on January 14, 2020. [Learn more](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)
+> - Support for Windows 7 ended on January 14, 2020. [Learn more](https://support.microsoft.com/windows/b75d4580-2cc7-895a-2c9c-1466d9a53962)
 > - Microsoft 365 Apps is no longer supported on Windows 7.
 > - If you're a home user running Office on Windows 7, see [Windows 7 end of support and Office](https://support.microsoft.com/office/78f20fab-b57b-44d7-8368-06a8493f3cb9) instead of reading this article.
 
@@ -87,6 +87,4 @@ Even if your version of Office is still supported, Windows 7 no longer receives 
   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 - For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
 - Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
-- For more information and resources, see [Windows 7 support ended on January 14, 2020](https://support.microsoft.com/windows/b75d4580-2cc7-895a-2c9c-1466d9a53962).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
-- If you're using Microsoft 365 Apps for enterprise on a device running Windows 7 or Windows Server 2008 R2, you'll continue to see **Office 365 ProPlus** under the **Product Information** section when you go to **File** > **Account** in an Office app, such as Word. If you're using Version 2002 of Microsoft 365 Apps for business, you'll see **Microsoft 365 for business** under the **Product Information** section.
