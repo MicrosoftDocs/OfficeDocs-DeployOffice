@@ -2,6 +2,14 @@
 
 
 
+## Week of January 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/5/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | added |
+
+
 ## Week of December 26, 2022
 
 
