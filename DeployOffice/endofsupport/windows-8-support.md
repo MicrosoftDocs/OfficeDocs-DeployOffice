@@ -16,12 +16,11 @@ description: "Provides Office admins with information about the implications of 
 # Windows 8 end of support and Microsoft 365 Apps
 
 > [!IMPORTANT]
-> - Support for Windows 8 ended on January 12, 2016. [Learn more](/lifecycle/faq/windows#windows-81)
-> - Microsoft 365 Apps is not supported on Windows 8.
-> - If you're running Office on Windows 8 in your organization, you should [upgrade to a supported operating system](#upgrade-from-windows-8-to-a-supported-operating-system).
-> - If you're a home user running Office on Windows 8, see [Windows 8 and Windows 8.1 end of support and Office](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading this article.
+> - Support for Windows 8 ended on January 12, 2016.
+> - Microsoft 365 Apps is no longer supported on Windows 8.
+> - If you're a home user running Microsoft 365 or Office on Windows 8, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading the following article.
 
-Office 365 and Microsoft 365 are governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
 Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 8, we strongly recommend your organization moves those devices to a supported operating system, such as Windows 11 or Windows 10.
 
