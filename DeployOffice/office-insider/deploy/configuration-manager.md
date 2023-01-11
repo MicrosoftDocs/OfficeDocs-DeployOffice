@@ -1,5 +1,5 @@
 ---
-title: "Use Configuration Manager to install Office Insider on Windows devices"
+title: "Use Configuration Manager to install Microsoft 365 Insider on Windows devices"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Office_Insider
 recommendations: false
-description: "Provides steps for Office admins to use Configuration Manager to install Office Insider on Windows devices"
+description: "Provides steps for Office admins to use Configuration Manager to install Microsoft 365 Insider on Windows devices"
 ---
 
-# Use Configuration Manager to install Office Insider on Windows devices
+# Use Configuration Manager to install Microsoft 365 Insider on Windows devices
 
-If you already use Microsoft Configuration Manager (current branch) to deploy software in your organization, you can use it to install Office Insider on Windows devices.
+If you already use Microsoft Configuration Manager (current branch) to deploy software in your organization, you can use it to install Microsoft 365 Insider on Windows devices.
 
-- You can use Configuration Manager to [install Office Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation).
-- If you previously installed Office by using Configuration Manager, we recommend that you [follow these steps to change to Office Insider](#i-already-have-office-installed-do-i-need-to-go-through-all-these-steps-to-get-office-insider).
+- You can use Configuration Manager to [install Microsoft 365 Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation).
+- If you previously installed Office by using Configuration Manager, we recommend that you [follow these steps to change to Microsoft 365 Insider](#i-already-have-office-installed-do-i-need-to-go-through-all-these-steps-to-get-office-insider).
 
 ## Install Office Insider when you do a new Office installation
 
-Follow these steps to use Configuration Manager (current branch) to install Office Insider on a Windows device that doesn't already have Office installed. These steps will also configure Office to get updates automatically from Microsoft directly from the internet, which is our recommendation.
+Follow these steps to use Configuration Manager (current branch) to install Microsoft 365 Insider on a Windows device that doesn't already have Office installed. These steps will also configure Office to get updates automatically from Microsoft directly from the internet, which is our recommendation.
 
 1. In the Configuration Manager console, create a device collection and add the appropriate devices to that collection. For more information about creating and managing collections, see [Introduction to collections in Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
 2. To create the Office installation package, navigate to **Software Library** > **Overview** > **Office 365 Client Management** in the Configuration Manager console.
@@ -52,13 +52,13 @@ You won’t be able to choose Beta Channel for the update channel on the **Deplo
 
 ## Why do I need to change the OfficeMgmtCOM setting in Step 12?
 
-Using OfficeMgmtCOM="False" configures Office to get updates automatically from Microsoft directly from the internet, instead of Configuration Manager downloading and distributing the updates. Getting updates for Office Insider directly from the internet simplifies update management for you. You'll automatically get new updates to Office Insider when they're released.
+Using OfficeMgmtCOM="False" configures Office to get updates automatically from Microsoft directly from the internet, instead of Configuration Manager downloading and distributing the updates. Getting updates for Microsoft 365 Insider directly from the internet simplifies update management for you. You'll automatically get new updates to Microsoft 365 Insider when they're released.
 
 If you use Group Policy in your organization, you can turn off OfficeMgmtCOM by setting the “Management of Microsoft 365 Apps for enterprise” policy to Disabled. You can find that policy under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management Console.
 
 ## I already have Office installed. Do I need to go through all these steps to get Office Insider?
 
-If you already have Office installed, you don’t have to uninstall and reinstall Office to move those devices to Office Insider. You can use Group Policy and the following policies:
+If you already have Office installed, you don’t have to uninstall and reinstall Office to move those devices to Microsoft 365 Insider. You can use Group Policy and the following policies:
 - Update Channel
 - Management of Microsoft 365 Apps for enterprise
 - Update Path
@@ -68,11 +68,11 @@ These policies can be found under Computer Configuration\Policies\Administrative
 > [!NOTE]
 > When you configure these policies, Configuration Manager will no longer manage updates to Office.
 
-For information about the *Update Channel* policy, see [Use Group Policy to install Office Insider on Windows devices](group-policy.md).
+For information about the *Update Channel* policy, see [Use Group Policy to install Microsoft 365 Insider on Windows devices](group-policy.md).
 
 For the *Management of Microsoft 365 Apps for enterprise* policy, set it to Disabled.
 
 For the *Update Path* policy, set the policy to Enabled, but leave the update location blank. That way Office will get updates from Microsoft directly from the internet, which is our recommendation.
 
-After you configure the policies, it might take at least 90 minutes before they're applied to the device. Then, the Office Insider channel should be installed the next time Office checks for updates. You can force Office to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an Office app, such as Word.
+After you configure the policies, it might take at least 90 minutes before they're applied to the device. Then, the Microsoft 365 Insider channel should be installed the next time Office checks for updates. You can force Office to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an Office app, such as Word.
 

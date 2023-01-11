@@ -1,5 +1,5 @@
 ---
-title: "Office Insider Program for Business"
+title: "Microsoft 365 Insider Program for Business"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -10,16 +10,16 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Office_Insider
 recommendations: false
-description: "Provides an overview of the Office Insider Program for Business"
+description: "Provides an overview of the Microsoft 365 Insider Program for Business"
 ---
 
-# Office Insider Program for Business
+# Microsoft 365 Insider Program for Business
 
-The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release. By providing feedback to Microsoft on these features, you and others in your organization can help shape Office to best meet your business needs.
+The Microsoft 365 Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release. By providing feedback to Microsoft on these features, you and others in your organization can help shape Office to best meet your business needs.
 
 ## Benefits to your organization
 
-Participating in the Office Insider program can provide your organization with the following benefits:
+Participating in the Microsoft 365 Insider program can provide your organization with the following benefits:
 
 - **Accelerate deployment:** Validate Office releases prior to deploying them broadly and ensure that applications will continue to work successfully with the current version of Office.​
 
@@ -33,17 +33,17 @@ Participating in the Office Insider program can provide your organization with t
 
 To get started, we recommend reviewing these articles:
 
-- [Compare Office Insider channels](compare-channels.md), to help you choose which Office Insider channel is best for which users in your organization.
+- [Compare Microsoft 365 Insider channels](compare-channels.md), to help you choose which Microsoft 365 Insider channel is best for which users in your organization.
 
-- [Options for deploying Office Insider](deploy/options.md), to see the different options available for providing Office Insider to users in your organization.
+- [Options for deploying Microsoft 365 Insider](deploy/options.md), to see the different options available for providing Microsoft 365 Insider to users in your organization.
 
-## Keep informed about the Office Insider program
+## Keep informed about the Microsoft 365 Insider program
 
-The following resources can help you keep up to date on the latest developments in the Office Insider program.
+The following resources can help you keep up to date on the latest developments in the Microsoft 365 Insider program.
 
-- Read the [Office Insider blog](https://insider.office.com/blog).
+- Read the [Microsoft 365 Insider blog](https://insider.office.com/blog).
 
-- Follow [OfficeInsider](https://twitter.com/OfficeInsider) on Twitter.
+- Follow [MSFT365Insider](https://twitter.com/msft365insider) on Twitter.
 
 > [!NOTE]
-> If you're a home user, please visit the [Office Insider Handbook](https://insider.office.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.
+> If you're a home user, please visit the [Microsoft 365 Insider Handbook](https://insider.office.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.

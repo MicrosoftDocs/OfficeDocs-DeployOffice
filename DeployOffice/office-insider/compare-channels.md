@@ -1,5 +1,5 @@
 ---
-title: "Compare Office Insider channels"
+title: "Compare Microsoft 365 Insider channels"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Office_Insider
 recommendations: false
-description: "Provides an overview and comparison of the two Office Insider channels: Beta Channel and Current Channel (Preview)."
+description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
 ---
 
-# Compare Office Insider channels
+# Compare Microsoft 365 Insider channels
 
-The Office Insider program provides early access to Office subscription features through two channels:
+The Microsoft 365 Insider program provides early access to Office subscription features through two channels:
 - Beta Channel
 - Current Channel (Preview)
 
@@ -26,7 +26,7 @@ You can have different users in your organization on different channels. For exa
 The following table compares the channels and provides scenarios for business use.
 
 > [!NOTE]
-> After you review this information, your next step is to determine which deployment option, or options, works best for your organization. For more information, see [Options for deploying Office Insider](deploy/options.md).
+> After you review this information, your next step is to determine which deployment option, or options, works best for your organization. For more information, see [Options for deploying Microsoft 365 Insider](deploy/options.md).
 
 |Category |Beta Channel  |Current Channel (Preview)  |
 |---------|---------|---------|

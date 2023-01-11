@@ -1,5 +1,5 @@
 ---
-title: "Let users choose which Office Insider channel to install on Windows devices"
+title: "Let users choose which Microsoft 365 Insider channel to install on Windows devices"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Office_Insider
 recommendations: false
-description: "Provides steps for Office admins to use Group Policy to let users choose their Office Insider channel on Windows devices"
+description: "Provides steps for Office admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
 ---
 
-# Let users choose which Office Insider channel to install on Windows devices
+# Let users choose which Microsoft 365 Insider channel to install on Windows devices
 
-Instead of installing Office Insider for your users, you can give them the option to select which Office Insider channel they want to use on their Windows device.
+Instead of installing Microsoft 365 Insider for your users, you can give them the option to select which Microsoft 365 Insider channel they want to use on their Windows device.
 
-With this method, the user can choose their Office Insider channel by going to **File** > **Account** in an Office app, such as Excel. There they'll see a choice for **Update Channel**.
+With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an Office app, such as Excel. There they'll see a choice for **Update Channel**.
 
 ![Update Channel option that appears under File > Account in an Office app](../../images/office-insider/update-channel-option.png)
 
-Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Office installation will switch to that channel. Along with Office Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
+Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Office installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 
 > [!IMPORTANT]
 > Users must have local administrator permissions on their Windows device to choose their channel.
@@ -37,7 +37,7 @@ There are two versions of this policy; one for devices, another for users. In th
 
 You can set either policy to Enabled, or both policies to Enabled, depending on whether you want to target devices or users, or both. If you set both policies to Enabled, then the user will see all the channels you've selected across both policies (if the policy is also applied to the device).
 
-After enabling this policy, you should notify the users so that they know this option is available to them. You'll want to include the steps for getting to the option (along with a screenshot) and guidance about which Office Insider channel they should choose, based on their role in the organization.
+After enabling this policy, you should notify the users so that they know this option is available to them. You'll want to include the steps for getting to the option (along with a screenshot) and guidance about which Microsoft 365 Insider channel they should choose, based on their role in the organization.
 
 > [!NOTE]
 > - You can also use Cloud Policy to set the User Configuration version of the policy to Enabled. For more information, see [Overview of Cloud Policy service for Microsoft 365](../../admincenter/overview-cloud-policy.md).
@@ -88,5 +88,5 @@ There are the two basic differences with that policy:
 
 ## Related articles
 
-- [Compare Office Insider channels](../compare-channels.md)
+- [Compare Microsoft 365 Insider channels](../compare-channels.md)
 - [Overview of update channels for Microsoft 365 Apps](../../overview-update-channels.md)
