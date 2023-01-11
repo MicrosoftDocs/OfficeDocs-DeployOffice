@@ -17,10 +17,10 @@ description: "Provides steps for Office admins to use Configuration Manager to i
 
 If you already use Microsoft Configuration Manager (current branch) to deploy software in your organization, you can use it to install Microsoft 365 Insider on Windows devices.
 
-- You can use Configuration Manager to [install Microsoft 365 Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation).
-- If you previously installed Office by using Configuration Manager, we recommend that you [follow these steps to change to Microsoft 365 Insider](#i-already-have-office-installed-do-i-need-to-go-through-all-these-steps-to-get-office-insider).
+- You can use Configuration Manager to [install Microsoft 365 Insider when you do a new Office installation](#install-microsoft-365-insider-when-you-do-a-new-office-installation).
+- If you previously installed Office by using Configuration Manager, we recommend that you [follow these steps to change to Microsoft 365 Insider](#i-already-have-office-installed-do-i-need-to-go-through-all-these-steps-to-get-microsoft-365-insider).
 
-## Install Office Insider when you do a new Office installation
+## Install Microsoft 365 Insider when you do a new Office installation
 
 Follow these steps to use Configuration Manager (current branch) to install Microsoft 365 Insider on a Windows device that doesn't already have Office installed. These steps will also configure Office to get updates automatically from Microsoft directly from the internet, which is our recommendation.
 
@@ -56,7 +56,7 @@ Using OfficeMgmtCOM="False" configures Office to get updates automatically from 
 
 If you use Group Policy in your organization, you can turn off OfficeMgmtCOM by setting the “Management of Microsoft 365 Apps for enterprise” policy to Disabled. You can find that policy under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management Console.
 
-## I already have Office installed. Do I need to go through all these steps to get Office Insider?
+## I already have Office installed. Do I need to go through all these steps to get Microsoft 365 Insider?
 
 If you already have Office installed, you don’t have to uninstall and reinstall Office to move those devices to Microsoft 365 Insider. You can use Group Policy and the following policies:
 - Update Channel

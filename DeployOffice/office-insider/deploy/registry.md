@@ -19,7 +19,7 @@ If you have an existing Office installation on a Windows device, the simplest wa
 
 We recommend using this method if you have just a handful of devices that need Microsoft 365 Insider on them.
 
-## Change an existing Office installation to Office Insider by using a command to update the registry
+## Change an existing Office installation to Microsoft 365 Insider by using a command to update the registry
 
 On a Windows device, you can run a "reg add" command from an elevated command prompt.
 
@@ -36,7 +36,7 @@ To change to Beta Channel, use the following command.
 
 ## Frequently asked questions
 
-### The Office Insider channel that was chosen hasn't installed yet. What do I do?
+### The Microsoft 365 Insider channel that was chosen hasn't installed yet. What do I do?
 
 The Microsoft 365 Insider channel should be installed the next time Office checks for updates. You can force Office to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an Office app, such as Word.
 

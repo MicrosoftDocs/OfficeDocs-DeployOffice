@@ -43,7 +43,7 @@ After enabling this policy, you should notify the users so that they know this o
 > - You can also use Cloud Policy to set the User Configuration version of the policy to Enabled. For more information, see [Overview of Cloud Policy service for Microsoft 365](../../admincenter/overview-cloud-policy.md).
 > - If you're using this policy, don't enable and configure the *Update Channel* policy. That policy will take precedence. The **Update Channel** option will still appear under **File** > **Account**, but it'll be disabled and the user won’t be able to select an update channel.
 
-## Use a command to update the registry to show the Office Insider choice to users
+## Use a command to update the registry to show the Microsoft 365 Insider choice to users
 
 If you don't use Group Policy or Cloud Policy in your organization, there's an alternative that does the same thing as the *Show the Update Channel option to allow users to select an update channel*. This alternative also works if you have Microsoft 365 Apps for business, which doesn't support Group Policy or Cloud Policy.
 

@@ -15,7 +15,7 @@ description: "Provides steps for Mac users to use Microsoft AutoUpdate (MAU) to 
 
 # Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)
 
-If you want your Mac users to choose an Microsoft 365 Insider channel for themselves, they can follow these steps on their Mac.
+If you want your Mac users to choose a Microsoft 365 Insider channel for themselves, they can follow these steps on their Mac.
 
 1. Open any Office app, such as Word, and then select **Check for Updates** on the **Help** menu.
 2. In the **Microsoft AutoUpdate** dialog that appears, select **Advanced...**
@@ -25,7 +25,7 @@ If you want your Mac users to choose an Microsoft 365 Insider channel for themse
 > - Keep in mind that Beta Channel isn't supported.
 > - By default, Microsoft AutoUpdate automatically checks for updates every 12 hours.
 > - If you want to choose the Microsoft 365 Insider channel for your Mac users, you can [use a preference](preference.md).
-> - Mac users can't choose an Microsoft 365 Insider channel if the installation comes from the Mac App Store. Current Channel is the only channel available for those installations.
+> - Mac users can't choose a Microsoft 365 Insider channel if the installation comes from the Mac App Store. Current Channel is the only channel available for those installations.
 
 ## Related articles
 - [Compare Microsoft 365 Insider channels](../compare-channels.md)

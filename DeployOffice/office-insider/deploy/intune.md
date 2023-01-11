@@ -17,10 +17,10 @@ description: "Provides steps for Office admins to use Microsoft Intune to instal
 
 If you already use Microsoft Intune to deploy software in your organization, you can use it to install Microsoft 365 Insider on Windows devices. Intune supports both of these scenarios:
 
-- [Change an existing Office installation to Microsoft 365 Insider](#change-an-existing-office-installation-to-office-insider)
-- [Install Microsoft 365 Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation)
+- [Change an existing Office installation to Microsoft 365 Insider](#change-an-existing-office-installation-to-microsoft-365-insider)
+- [Install Microsoft 365 Insider when you do a new Office installation](#install-microsoft-365-insider-when-you-do-a-new-office-installation)
 
-## Change an existing Office installation to Office Insider
+## Change an existing Office installation to Microsoft 365 Insider
 
 If Office is already installed on the Windows device, you can use [administrative templates for Windows 10 and later](/mem/intune/configuration/administrative-templates-windows) to change to Microsoft 365 Insider.
 
@@ -45,7 +45,7 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 > [!TIP]
 > You can force Office to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an Office app, such as Word.
 
-## Install Office Insider when you do a new Office installation
+## Install Microsoft 365 Insider when you do a new Office installation
 
 Follow these steps to use Intune to install Microsoft 365 Insider on a Windows device that doesn't already have Office installed.
 

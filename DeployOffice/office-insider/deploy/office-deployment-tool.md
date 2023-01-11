@@ -17,8 +17,8 @@ description: "Provides steps for Office admins to use the Office Deployment Tool
 
 If you want to configure a limited number of Windows devices to use Microsoft 365 Insider, you can use the Office Deployment Tool. The Office Deployment Tool supports both of these scenarios:
 
-- [Change an existing Office installation to Office Insider](#change-an-existing-office-installation-to-office-insider)
-- [Install Office Insider when you do a new Office installation](#install-office-insider-when-you-do-a-new-office-installation)
+- [Change an existing Office installation to Microsoft 365 Insider](#change-an-existing-office-installation-to-microsoft-365-insider)
+- [Install Microsoft 365 Insider when you do a new Office installation](#install-microsoft-365-insider-when-you-do-a-new-office-installation)
 
 ## Change an existing Office installation to Microsoft 365 Insider
 
@@ -48,7 +48,7 @@ setup.exe /configure configuration.xml
 6. After you run the command, open an Office app, such as Word, and go to **File** › **Account**. Then select **Update Options** > **Update Now** to start downloading the updates needed to change to the Microsoft 365 Insider channel that you chose.
 7. After the updates are installed, open an Office app, such as Word, and go to **File** › **Account**. Under the **About** section, you should see **Current Channel (Preview)** or **Beta Channel**, depending on which channel you chose in your configuration.xml file.
 
-## Install Office Insider when you do a new Office installation
+## Install Microsoft 365 Insider when you do a new Office installation
 
 Follow these steps to use the Office Deployment Tool to install Microsoft 365 Insider on a Windows device that doesn't already have Office installed.
 
@@ -99,9 +99,9 @@ For more information about other settings that you can specify in the configurat
 
 For example, how to install other languages or how to install Project or Visio, if you have a subscription for those products.
 
-### I don’t want a device to be on Office Insider anymore. What do I do?
+### I don’t want a device to be on Microsoft 365 Insider anymore. What do I do?
 
-Follow the same steps as when you [change an existing installation of Office to Microsoft 365 Insider](#change-an-existing-office-installation-to-office-insider). In the configuration.xml file, set the value of the Channel attribute to the channel that you want to change to.
+Follow the same steps as when you [change an existing installation of Office to Microsoft 365 Insider](#change-an-existing-office-installation-to-microsoft-365-insider). In the configuration.xml file, set the value of the Channel attribute to the channel that you want to change to.
 
 For example, if you want the device to change to Monthly Enterprise Channel, use a configuration.xml file with the following text.
 
