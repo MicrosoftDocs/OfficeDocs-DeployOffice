@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Office_Insider
+ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides steps for Mac users to use Microsoft AutoUpdate (MAU) to choose Microsoft 365 Insider for themselves."
 ---

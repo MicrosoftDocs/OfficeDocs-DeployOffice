@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Office_Insider
+ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides steps for Office admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
 ---

@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
-ms.custom: Office_Insider
+ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"
 ---
