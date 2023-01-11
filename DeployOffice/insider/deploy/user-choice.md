@@ -19,7 +19,7 @@ Instead of installing Microsoft 365 Insider for your users, you can give them th
 
 With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an Office app, such as Excel. There they'll see a choice for **Update Channel**.
 
-![Update Channel option that appears under File > Account in an Office app](../../images/office-insider/update-channel-option.png)
+![Update Channel option that appears under File > Account in an Office app](../../images/insider/update-channel-option.png)
 
 Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Office installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 

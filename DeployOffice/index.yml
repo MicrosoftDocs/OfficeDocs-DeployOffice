@@ -42,7 +42,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Insider Program for Business
           summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
-          url: office-insider/index.yml
+          url: insider/index.yml
         # Card
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
