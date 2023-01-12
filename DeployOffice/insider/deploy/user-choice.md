@@ -10,25 +10,25 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
-description: "Provides steps for Office admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
+description: "Provides steps for admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
 ---
 
 # Let users choose which Microsoft 365 Insider channel to install on Windows devices
 
 Instead of installing Microsoft 365 Insider for your users, you can give them the option to select which Microsoft 365 Insider channel they want to use on their Windows device.
 
-With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an Office app, such as Excel. There they'll see a choice for **Update Channel**.
+With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an app, such as Excel. There they'll see a choice for **Update Channel**.
 
-![Update Channel option that appears under File > Account in an Office app](../../images/insider/update-channel-option.png)
+![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-option.png)
 
-Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Office installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
+Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 
 > [!IMPORTANT]
 > Users must have local administrator permissions on their Windows device to choose their channel.
 
 ## Use Group Policy to show the Update Channel option to users
 
-If you’re already using Group Policy to manage Office in your organization, you can set the *Show the Update Channel option to allow users to select an update channel* policy to Enabled. Then, under **Options**, select the checkboxes for the channels you want users to be able to select from.
+If you’re already using Group Policy to manage Microsoft 365 Apps in your organization, you can set the *Show the Update Channel option to allow users to select an update channel* policy to Enabled. Then, under **Options**, select the checkboxes for the channels you want users to be able to select from.
 
 There are two versions of this policy; one for devices, another for users. In the Group Policy Management Console, the policies are found in the following locations:
 
