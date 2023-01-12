@@ -10,20 +10,20 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
-description: "Provides steps for Office admins to use the reg add command to install Microsoft 365 Insider on Windows devices."
+description: "Provides steps for admins to use the reg add command to install Microsoft 365 Insider on Windows devices."
 ---
 
 # Use a registry command to install Microsoft 365 Insider on Windows devices
 
-If you have an existing Office installation on a Windows device, the simplest way to install Microsoft 365 Insider is to run a command that updates the registry on the device. The command will update information in the registry to specify which Microsoft 365 Insider channel the Office installation should use.
+If you have an existing Microsoft 365 Apps installation on a Windows device, the simplest way to install Microsoft 365 Insider is to run a command that updates the registry on the device. The command will update information in the registry to specify which Microsoft 365 Insider channel the Microsoft 365 Apps installation should use.
 
 We recommend using this method if you have just a handful of devices that need Microsoft 365 Insider on them.
 
-## Change an existing Office installation to Microsoft 365 Insider by using a command to update the registry
+## Change an existing Microsoft 365 Apps installation to Microsoft 365 Insider by using a command to update the registry
 
 On a Windows device, you can run a "reg add" command from an elevated command prompt.
 
-For example, the following command updates the registry to have the Office installation on the device use Current Channel (Preview).
+For example, the following command updates the registry to have the Microsoft 365 Apps installation on the device use Current Channel (Preview).
 
 `reg add HKLM\Software\Policies\Microsoft\office\16.0\common\officeupdate /v updatebranch /t REG_SZ /d CurrentPreview`
 
@@ -38,7 +38,7 @@ To change to Beta Channel, use the following command.
 
 ### The Microsoft 365 Insider channel that was chosen hasn't installed yet. What do I do?
 
-The Microsoft 365 Insider channel should be installed the next time Office checks for updates. You can force Office to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an Office app, such as Word.
+The Microsoft 365 Insider channel should be installed the next time Microsoft 365 Apps checks for updates. You can force Microsoft 365 Apps to check for updates by going to **File** > **Account** > **Update Options** > **Update Now** in an app, such as Word.
 
 ### How do I change to a different channel at a later time?
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
-description: "Provides steps for Office admins to use a preference to select the Microsoft 365 Insider channel for their Mac users."
+description: "Provides steps for admins to use a preference to select the Microsoft 365 Insider channel for their Mac users."
 ---
 
 # Provide Mac users with Microsoft 365 Insider by using a preference

@@ -15,19 +15,19 @@ description: "Provides an overview of the Microsoft 365 Insider Program for Busi
 
 # Microsoft 365 Insider Program for Business
 
-The Microsoft 365 Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release. By providing feedback to Microsoft on these features, you and others in your organization can help shape Office to best meet your business needs.
+The Microsoft 365 Insider Program for Business offers organizations an opportunity to evaluate new Microsoft 365 Apps features before general release. By providing feedback to Microsoft on these features, you and others in your organization can help shape Microsoft 365 Apps to best meet your business needs.
 
 ## Benefits to your organization
 
 Participating in the Microsoft 365 Insider program can provide your organization with the following benefits:
 
-- **Accelerate deployment:** Validate Office releases prior to deploying them broadly and ensure that applications will continue to work successfully with the current version of Office.​
+- **Accelerate deployment:** Validate Microsoft 365 Apps releases prior to deploying them broadly and ensure that applications will continue to work successfully with the current version of Microsoft 365 Apps.​
 
-- **Report issues:** Submit feedback on behalf of your organization and help shape Office for your specific business needs.​
+- **Report issues:** Submit feedback on behalf of your organization and help shape Microsoft 365 Apps for your specific business needs.​
 
 - **Preview new features**: Get a sneak peek of upcoming features and identify the ways they can be best used in your organization.​
 
-- **Support adoption:** Facilitate change management and speed up the adoption of new Office capabilities.​
+- **Support adoption:** Facilitate change management and speed up the adoption of new Microsoft 365 Apps capabilities.​
 
 ## Resources available to help you get started
 
