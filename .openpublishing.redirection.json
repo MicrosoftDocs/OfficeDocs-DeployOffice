@@ -832,57 +832,57 @@
     },
     {
       "source_path": "Deployoffice/office-insider/compare-channels.md",
-      "redirect_url": "/deployoffice//insider/compare-channels",
+      "redirect_url": "/deployoffice/insider/compare-channels",
       "redirect_document_id": false
     },  
     {
       "source_path": "Deployoffice/office-insider/overview.md",
-      "redirect_url": "/deployoffice//insider/overview",
+      "redirect_url": "/deployoffice/insider/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/configuration-manager.md",
-      "redirect_url": "/deployoffice//insider/deploy/configuration-manager",
+      "redirect_url": "/deployoffice/insider/deploy/configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/group-policy.md",
-      "redirect_url": "/deployoffice//insider/deploy/group-policy",
+      "redirect_url": "/deployoffice/insider/deploy/group-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/intune.md",
-      "redirect_url": "/deployoffice//insider/deploy/intune",
+      "redirect_url": "/deployoffice/insider/deploy/intune",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/microsoft-autoupdate.md",
-      "redirect_url": "/deployoffice//insider/deploy/microsoft-autoupdate",
+      "redirect_url": "/deployoffice/insider/deploy/microsoft-autoupdate",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/office-deployment-tool.md",
-      "redirect_url": "/deployoffice//insider/deploy/office-deployment-tool",
+      "redirect_url": "/deployoffice/insider/deploy/office-deployment-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/options.md",
-      "redirect_url": "/deployoffice//insider/deploy/options",
+      "redirect_url": "/deployoffice/insider/deploy/options",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/preference.md",
-      "redirect_url": "/deployoffice//insider/deploy/preference",
+      "redirect_url": "/deployoffice/insider/deploy/preference",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/registry.md",
-      "redirect_url": "/deployoffice//insider/deploy/registry",
+      "redirect_url": "/deployoffice/insider/deploy/registry",
       "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/user-choice.md",
-      "redirect_url": "/deployoffice//insider/deploy/user-choice",
+      "redirect_url": "/deployoffice/insider/deploy/user-choice",
       "redirect_document_id": false
     }
   ]
