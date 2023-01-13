@@ -10,19 +10,19 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
-description: "Provides steps for Office admins to use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
+description: "Provides steps for admins to use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
 ---
 
 # Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices
 
 If you want to configure a limited number of Windows devices to use Microsoft 365 Insider, you can use the Office Deployment Tool. The Office Deployment Tool supports both of these scenarios:
 
-- [Change an existing Office installation to Microsoft 365 Insider](#change-an-existing-office-installation-to-microsoft-365-insider)
-- [Install Microsoft 365 Insider when you do a new Office installation](#install-microsoft-365-insider-when-you-do-a-new-office-installation)
+- [Change an existing Microsoft 365 Apps installation to Microsoft 365 Insider](#change-an-existing-microsoft-365-apps-installation-to-microsoft-365-insider)
+- [Install Microsoft 365 Insider when you do a new Microsoft 365 Apps installation](#install-microsoft-365-insider-when-you-do-a-new-microsoft-365-apps-installation)
 
-## Change an existing Office installation to Microsoft 365 Insider
+## Change an existing Microsoft 365 Apps installation to Microsoft 365 Insider
 
-If Office is already installed on the Windows device, follow these steps to change to Microsoft 365 Insider.
+If Microsoft 365 Apps is already installed on the Windows device, follow these steps to change to Microsoft 365 Insider.
 
 1. Download the latest version of the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) from the Microsoft Download Center.
 2. Double-click the officedeploymenttool executable file to extract the setup.exe file and the sample configuration.xml files. The setup.exe file is the Office Deployment Tool.
@@ -38,19 +38,19 @@ If Office is already installed on the Windows device, follow these steps to chan
 > - If you want to change to Beta Channel, use Channel="BetaChannel".
 > - Keep in mind that Beta Channel isn't supported.
 
-4. Copy the setup.exe file and your configuration.xml file to the device where you want to install Office. An Internet connection is required and you must have local administrator permissions on that device.
-5. From an elevated command prompt, go to the folder where you copied the files and run the following command. Then run the following command, which downloads any Office files needed to change to the Microsoft 365 Insider channel that you specified.
+4. Copy the setup.exe file and your configuration.xml file to the device where you want to install Microsoft 365 Apps. An Internet connection is required and you must have local administrator permissions on that device.
+5. From an elevated command prompt, go to the folder where you copied the files and run the following command. Then run the following command, which downloads any Microsoft 365 Apps files needed to change to the Microsoft 365 Insider channel that you specified.
 
 ```console
 setup.exe /configure configuration.xml
 ```
 
-6. After you run the command, open an Office app, such as Word, and go to **File** › **Account**. Then select **Update Options** > **Update Now** to start downloading the updates needed to change to the Microsoft 365 Insider channel that you chose.
-7. After the updates are installed, open an Office app, such as Word, and go to **File** › **Account**. Under the **About** section, you should see **Current Channel (Preview)** or **Beta Channel**, depending on which channel you chose in your configuration.xml file.
+6. After you run the command, open an app, such as Word, and go to **File** › **Account**. Then select **Update Options** > **Update Now** to start downloading the updates needed to change to the Microsoft 365 Insider channel that you chose.
+7. After the updates are installed, open an app, such as Word, and go to **File** › **Account**. Under the **About** section, you should see **Current Channel (Preview)** or **Beta Channel**, depending on which channel you chose in your configuration.xml file.
 
-## Install Microsoft 365 Insider when you do a new Office installation
+## Install Microsoft 365 Insider when you do a new Microsoft 365 Apps installation
 
-Follow these steps to use the Office Deployment Tool to install Microsoft 365 Insider on a Windows device that doesn't already have Office installed.
+Follow these steps to use the Office Deployment Tool to install Microsoft 365 Insider on a Windows device that doesn't already have Microsoft 365 Apps installed.
 
 1. Download the latest version of the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) from the Microsoft Download Center.
 2. Double-click the officedeploymenttool executable file to extract the setup.exe file and the sample configuration.xml files. The setup.exe file is the Office Deployment Tool.
@@ -70,20 +70,20 @@ Follow these steps to use the Office Deployment Tool to install Microsoft 365 In
 > - If you want to install Beta Channel, use Channel="BetaChannel".
 > - Keep in mind that Beta Channel isn't supported.
 
-4. Copy the setup.exe file and your configuration.xml file to the device where you want to install Office. An Internet connection is required to install Office and you must have local administrator permissions on that device.
-5. From an elevated command prompt, go to the folder where you copied the files. Then run the following command, which copies the Office files from Microsoft directly from the internet to the device and starts the installation.
+4. Copy the setup.exe file and your configuration.xml file to the device where you want to install Microsoft 365 Apps. An Internet connection is required to install Microsoft 365 Apps and you must have local administrator permissions on that device.
+5. From an elevated command prompt, go to the folder where you copied the files. Then run the following command, which copies the Microsoft 365 Apps files from Microsoft directly from the internet to the device and starts the installation.
 
 ```console
 setup.exe /configure configuration.xml
 ```
 
-6. After the installation is complete, open an Office app, such as Word, and go to **File** › **Account**. Under the **About** section, you should see **Current Channel (Preview)** or **Beta Channel**, depending on which channel you chose in your configuration.xml file.
+6. After the installation is complete, open an app, such as Word, and go to **File** › **Account**. Under the **About** section, you should see **Current Channel (Preview)** or **Beta Channel**, depending on which channel you chose in your configuration.xml file.
 
 ## Frequently asked questions
 
-### How do I install the 32-bit version of Office?
+### How do I install the 32-bit version of Microsoft 365 Apps?
 
-To install the 32-bit version of Office, use OfficeClientEdition="32" in the configuration.xml file.
+To install the 32-bit version of Microsoft 365 Apps, use OfficeClientEdition="32" in the configuration.xml file.
 
 64-bit is the default and is usually recommended, but if you’re not sure which to use, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
@@ -91,9 +91,9 @@ To install the 32-bit version of Office, use OfficeClientEdition="32" in the con
 
 If you have Microsoft 365 Apps for business, use ID="O365BusinessRetail" in the configuration.xml file.
 
-Microsoft 365 Apps is the version of Office that comes with certain business plans, such as Microsoft 365 Business Standard or Microsoft 365 Business Premium.
+Microsoft 365 Apps is the version that comes with certain business plans, such as Microsoft 365 Business Standard or Microsoft 365 Business Premium.
 
-### What other configuration options are available for deploying Office?
+### What other configuration options are available for deploying Microsoft 365 Apps?
 
 For more information about other settings that you can specify in the configuration.xml file, see [Configuration options for the Office Deployment Tool](../../office-deployment-tool-configuration-options.md).
 
@@ -101,7 +101,7 @@ For example, how to install other languages or how to install Project or Visio, 
 
 ### I don’t want a device to be on Microsoft 365 Insider anymore. What do I do?
 
-Follow the same steps as when you [change an existing installation of Office to Microsoft 365 Insider](#change-an-existing-office-installation-to-microsoft-365-insider). In the configuration.xml file, set the value of the Channel attribute to the channel that you want to change to.
+Follow the same steps as when you [change an existing installation of Microsoft 365 Apps to Microsoft 365 Insider](#change-an-existing-microsoft-365-apps-installation-to-microsoft-365-insider). In the configuration.xml file, set the value of the Channel attribute to the channel that you want to change to.
 
 For example, if you want the device to change to Monthly Enterprise Channel, use a configuration.xml file with the following text.
 
