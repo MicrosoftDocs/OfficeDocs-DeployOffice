@@ -25,7 +25,8 @@ There are two basic ways that you, as an admin, can deploy Office to Mac users i
 
 If you have a Microsoft 365 (or Office 365) plan, you can provide your Mac users with instructions on [how to download and install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) themselves. To install Office on a Mac, a user has to be an administrator on the device or know an administrator account name and password.
 
-> [!TIP] If your users are familiar with the process for downloading and installing Mac apps, you can simply send them the direct link to the Office Content Delivery Network.
+> [!TIP] 
+> If your users are familiar with the process for downloading and installing Mac apps, you can simply send them the direct link to the Office Content Delivery Network.
   
 If you use software distribution tools, you have more control over which users get Office and when. For example, you can automatically install Office apps as part of automated device enrollment. To plan your deployment, review the following information.
 
