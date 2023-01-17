@@ -884,7 +884,12 @@
       "source_path": "Deployoffice/office-insider/deploy/user-choice.md",
       "redirect_url": "/deployoffice/insider/deploy/user-choice",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "Deployoffice/office-insider/index.yml",
+      "redirect_url": "/deployoffice/insider/index.yml",
+      "redirect_document_id": false
+    },  
   ]
 }
 
