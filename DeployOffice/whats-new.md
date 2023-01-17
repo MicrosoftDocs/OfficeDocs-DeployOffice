@@ -1,5 +1,5 @@
 ---
-title: "What's new in Office deployment for IT Pros"
+title: "What's new for deploying Microsoft 365 Apps"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -12,13 +12,36 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: Ent_Office_ProPlus
 recommendations: false
-description: "This article lists the new tools, content, and processes for IT Pros deploying Office."
+description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
 ---
 
-# What's new in Office deployment for IT Pros
+# What's new for deploying Microsoft 365 Apps
 
-This article lists new features, tools, and articles for IT Pros who deploy Office in the enterprise. For details on Office announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+This article lists new features, tools, and articles for IT Pros who deploy Microsoft 365 Apps in the enterprise. For details on Microsoft 365 announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
+## January 2023
+
+### Blocking internet macros by default in Microsoft 365 Apps available in Semi-Annual Enterprise Channel
+
+To help improve security in Microsoft 365 Apps, we’re changing the default behavior to block macros in files from the internet. This change is in Version 2208 in Semi-Annual Enterprise Channel as of January 10, 2023. The following applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
+
+For more information, see the following information:
+- [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
+- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+
+### End of support for Microsoft 365 Apps on Windows 8.1
+
+Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on Windows 8.1 is no longer supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
+
+### No more security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
+
+Security updates for Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 ended on January 10, 2023. Running Microsoft 365 Apps on these operating systems hasn't been supported since January 14, 2020.
+
+## December 2022
+
+### General Availability of OneDrive sync health in the Microsoft 365 Apps admin center
+
+The OneDrive sync health dashboard in the Microsoft 365 Apps admin center is generally available as of December 16, 2022. You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health)
 ## November 2022
 
 ### Basic authentication prompts to be blocked by default in Microsoft 365 Apps

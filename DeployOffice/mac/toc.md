@@ -19,6 +19,7 @@
 
 ## Set preferences
 ### [Deploy preferences](deploy-preferences-for-office-for-mac.md)
+### [Suite preferences](preferences-office.md)
 ### [Outlook preferences](preferences-outlook.md)
 ### [Macro security](set-preference-macro-security-office-for-mac.md)
 ### [Add-ins](preferences-add-ins.md)
