@@ -887,9 +887,8 @@
     },
     {
       "source_path": "Deployoffice/office-insider/index.yml",
-      "redirect_url": "/deployoffice/insider/index.yml",
+      "redirect_url": "/deployoffice/insider/index",
       "redirect_document_id": false
     },  
   ]
 }
-
