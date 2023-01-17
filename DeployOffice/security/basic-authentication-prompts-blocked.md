@@ -55,11 +55,11 @@ The following table shows the version, for each update channel, in which the war
 
 |Update channel  |Warning version  |Blocking version|
 |---------|---------|---------|
-|Current Channel (Preview)|Version 2212|*Version 2304*|
-|Current Channel|*Version 2301*|*Version 2305*|
-|Monthly Enterprise Channel|*Version 2301*|*Version 2305*|
-|Semi-Annual Enterprise Channel (Preview)|*Version 2308 (in September 2023)* |*Version 2402 (in March 2024)*|
-|Semi-Annual Enterprise Channel |*Version 2308 (in January 2024)* |*Version 2402 (in July 2024)*|
+|Current Channel (Preview)|Version 2212|*Version 2304 (in the first half of April 2023)*|
+|Current Channel|*Version 2301 (in the second half of January 2023)*|*Version 2305 (in the second half of May 2023)*|
+|Monthly Enterprise Channel|*Version 2301 (March 14, 2023)*|*Version 2305 (July 11, 2023)*|
+|Semi-Annual Enterprise Channel (Preview)|*Version 2308 (September 12, 2023)* |*Version 2402 (March 12, 2024)*|
+|Semi-Annual Enterprise Channel |*Version 2308 (January 9, 2024)* |*Version 2402 (July 9, 2024)*|
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
