@@ -74,12 +74,15 @@ The following flowchart graphic shows how Microsoft 365 Apps determines whether 
 The following steps explain the information in the flowchart graphic.
 
 1. A user tries to open a file that is stored on a web server.
-2. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps will check if a policy exists to allow Basic authentication prompts.
-3. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
-   - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
-   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
-4. If the server is using Basic authentication proxy authentication, Microsoft 365 Apps evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
+
+2. If the server is using Basic authentication proxy authentication, Microsoft 365 Apps evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
    - If the policy is set to Enabled, the user is prompted to provide a username and password to open the file.
+   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+
+3. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps will check if a policy exists to allow Basic authentication prompts.
+
+4. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
+   - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
    - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
 
 ## Use policies to manage Basic authentication prompts
