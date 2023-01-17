@@ -69,7 +69,7 @@ The following table shows the version, for each update channel, in which the war
 
 The following flowchart graphic shows how Microsoft 365 Apps determines whether to open a file if the server uses Basic authentication.
 
-![Flowchart diagram that shows how Microsoft 365 Apps determines whether to show Basic authentication prompts](../images/security/basic-authentication-flowchart.png)
+![Flowchart diagram that shows how Microsoft 365 Apps determines whether to show Basic authentication prompts](../images/security/basic-auth-flow.png)
 
 The following steps explain the information in the flowchart graphic.
 
