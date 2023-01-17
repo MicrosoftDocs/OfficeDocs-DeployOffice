@@ -18,7 +18,7 @@ description: "Provides guidance for admins about how Office blocks Basic authent
 > [!NOTE]
 > The information in this article is related to Message center post MC454810, which was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022 and updated on November 16, 2022.
 
-Apps such as Word and Excel allow users to use Basic authentication to connect to resources on remote servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
+Apps such as Word and Excel allow users to use Basic authentication to connect to resources on web servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
 Basic authentication is an outdated industry standard and doesn't support more robust security features, such as multifactor authentication. The threats posed by it have only increased and there are better and more effective user authentication alternatives. For example, modern authentication, which supports multifactor authentication, smart cards, and certificate-based authentication.
 
@@ -77,7 +77,7 @@ The following flowchart graphic shows how Microsoft 365 Apps determines whether 
 
 The following steps explain the information in the flowchart graphic.
 
-1. A user tries to open a file that is stored on a remote server.
+1. A user tries to open a file that is stored on a web server.
 2. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps will check if a policy exists to allow Basic authentication prompts.
 3. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
    - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
@@ -111,10 +111,10 @@ The following table shows the level of protection you get with each state of the
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled </br>(no hosts specified) |Users will be blocked from opening files located on remote servers that use Basic authentication. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled </br>(no hosts specified) |Users will be blocked from opening files located on web servers that use Basic authentication. |
 |![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts will be allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled |Users will be blocked from opening files located on remote servers that use Basic authentication. |
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected</br> **[recommended]**|Not Configured |Users will be blocked from opening files located on remote servers that use Basic authentication. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled |Users will be blocked from opening files located on web servers that use Basic authentication. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected</br> **[recommended]**|Not Configured |Users will be blocked from opening files located on web servers that use Basic authentication. |
 
 ### Allow Basic Authentication prompts from network proxies
 
