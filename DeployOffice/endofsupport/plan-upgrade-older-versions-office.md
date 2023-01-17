@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: true
