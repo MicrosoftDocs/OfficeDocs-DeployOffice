@@ -49,24 +49,20 @@ This change affects the following apps only on devices running Windows:
 > - This change doesn’t affect Outlook connecting to on-premises Exchange Server using Basic authentication.
 > - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic Authentication Deprecation in Exchange Online – September 2022 Update](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437).
 
+As part of the rollout, users will initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
 
-The following table shows the initial version, for each update channel, in which this change will be implemented. Information in italics is subject to change.
+The following table shows the version, for each update channel, in which the warning and blocking changes will be implemented. Information in italics is subject to change.
 
-|Update channel  |Version  |
+|Update channel  |Warning version  |Blocking version|
 |---------|---------|---------|
-|Current Channel (Preview)|Version 2209|
-|Current Channel|Version 2209|
-|Monthly Enterprise Channel|Version 2209|
-|Semi-Annual Enterprise Channel (Preview)|*Version 2302 (in March 2023)*|
-|Semi-Annual Enterprise Channel |*Version 2302 (in July 2023)*|
+|Current Channel (Preview)|Version 2212|*Version 2304*|
+|Current Channel|*Version 2301*|*Version 2305*|
+|Monthly Enterprise Channel|*Version 2301*|*Version 2305*|
+|Semi-Annual Enterprise Channel (Preview)|*Version 2308 (in September 2023)* |*Version 2402 (in March 2024)*|
+|Semi-Annual Enterprise Channel |*Version 2308 (in January 2024)* |*Version 2402 (in July 2024)*|
 
 > [!NOTE]
-> The change will begin to be rolled out for Version 2209 and newer starting in the middle of January 2023.
-
-As part of the rollout, users will initially get a warning message (for a period of time) if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
-
-> [!NOTE]
-> - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. 
+> - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
 > - This change won't affect volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 
 ## How Microsoft 365 Apps determines whether to show Basic authentication prompts
