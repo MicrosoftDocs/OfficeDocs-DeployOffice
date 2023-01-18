@@ -71,10 +71,10 @@
         "vlactivation/**/*.md": false
       },
       "feedback_product_url": {
-        "office-insider/**/*.md": "https://techcommunity.microsoft.com/t5/office-insider/bd-p/Office_Insider"
+        "insider/**/*.md": "https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider"
       },
       "titleSuffix": {
-        "office-insider/**/*.md": "Office Insider"
+        "insider/**/*.md": "Microsoft 365 Insider"
       }
     },
     "template": [],
