@@ -1,7 +1,7 @@
-# Office Insider Program for Business
+# Microsoft 365 Insider Program for Business
 
 ## [Overview](overview.md)
-## [Office Insider channels](compare-channels.md)
+## [Microsoft 365 Insider channels](compare-channels.md)
 ## [Deployment options](deploy/options.md)
 
 ## Deployment options for Windows
