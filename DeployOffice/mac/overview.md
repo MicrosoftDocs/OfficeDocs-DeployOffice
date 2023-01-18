@@ -61,7 +61,7 @@ If you're looking for information to help your users get started with Office for
 To review the latest features in each monthly release, refer to [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
 
 > [!TIP]
-> For early access to new features, check out the [Office Insider Program for Business](../office-insider/index.yml).
+> For early access to new features, check out the [Microsoft 365 Insider Program for Business](../insider/index.yml).
 
 #### Office LTSC for Mac 2021 features
 
