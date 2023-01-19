@@ -43,7 +43,7 @@ The following resources can help you keep up to date on the latest developments 
 
 - Read the [Microsoft 365 Insider blog](https://insider.office.com/blog).
 
-- Follow [MSFT365Insider](https://twitter.com/msft365insider) on Twitter.
+- Follow [Msft365Insider](https://twitter.com/msft365insider) on Twitter.
 
 > [!NOTE]
 > If you're a home user, please visit the [Microsoft 365 Insider Handbook](https://insider.office.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.
