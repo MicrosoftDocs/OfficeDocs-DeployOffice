@@ -1,7 +1,7 @@
 ---
 title: "Deploy preferences for Office for Mac"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
