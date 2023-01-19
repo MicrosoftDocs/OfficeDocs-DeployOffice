@@ -6,7 +6,7 @@ manager: dougeby
 ms.date: 3/9/2016
 audience: ITPro
 ms.topic: reference
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
