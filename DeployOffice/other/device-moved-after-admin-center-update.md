@@ -28,7 +28,7 @@ Once your organization receives this update, you'll notice that some of your dev
 > - Before this change, we encourage you to review your **Feature updates** setting to ensure your devices are receiving updates based on your organizations needs. 
 > - For more information, see [Choose how often to get feature update for Office](../manage-software-download-settings-office-365#choose-how-often-to-get-feature-updates-for-office.md)
 
-It's important to note that not every device will receive updates based on the update channel selected in the **Microsoft 365 installation options** page if they are being managed by other admin tools in any of the following ways:
+It's important to note that not every device will receive updates based on the update channel selected in the **Microsoft 365 installation options** page if they're being managed by other admin tools in any of the following ways:
 - Any device that is managed with a servicing profile in the Microsoft 365 Apps admin center.
 - Devices that are COM registered for Office management in Configuration Manager.
 - All Intune managed Microsoft 365 deployments.
