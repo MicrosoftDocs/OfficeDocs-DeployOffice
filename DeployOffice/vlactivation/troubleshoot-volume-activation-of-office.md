@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: troubleshooting
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
