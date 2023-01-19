@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Microsoft 365 Insider Program for Business 
+title: Microsoft 365 Insider (for business) 
 summary: Use Microsoft 365 Insider in your organization to enable you to explore Microsoft 365 Apps features prior to the next Microsoft 365 update. 
 brand: m365
 
@@ -68,7 +68,7 @@ productDirectory:
       links:
         - url: https://twitter.com/msft365insider
           text: Twitter
-        - url: https://go.microsoft.com/fwlink/?linkid=2220064
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
         - url: https://go.microsoft.com/fwlink/?linkid=2219686
           text: Microsoft Support Community          
