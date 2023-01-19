@@ -60,13 +60,15 @@ The following are the basic steps for creating a policy configuration.
 
 ## Managing policy configurations
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then select **Edit**. Make the appropriate changes and then select **Update**.
+To change a policy configuration, select the policy configuration on the **Policy configurations** page.  This will open the policy configuration. Make the appropriate changes and then navigate to the **Review and publish** page and select **Update**.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
 
 To see which policies are configured when you're editing a policy configuration, navigate to the **Policies** section and filter by the **Status** column or select the **Configured** slicer at the top of the policy table. You can also filter by application and platform.
 
 To change the priority order for the policy configurations, select **Reorder priority** on the **Policy configurations** page.
+
+If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This will generate a CSV file for download.
 
 ## How the policy configuration is applied
 
