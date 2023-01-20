@@ -1,11 +1,11 @@
 ---
 title: "Overview of the Volume License (VL) Serializer"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false

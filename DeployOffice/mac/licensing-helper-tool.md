@@ -1,11 +1,11 @@
 ---
 title: "Licensing helper tool"
-ms.author: danbrown
+ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false

@@ -1,6 +1,6 @@
 ---
 title: "Set a preference for Resume Assistant in Word for Mac"
-ms.author: danbrown
+ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

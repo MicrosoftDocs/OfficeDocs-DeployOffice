@@ -1,6 +1,6 @@
 ---
 title: "Update Microsoft applications for Mac by using msupdate"
-ms.author: danbrown
+ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
