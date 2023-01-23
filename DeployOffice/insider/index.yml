@@ -70,7 +70,7 @@ productDirectory:
           text: Twitter
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
-        - url: https://answers.microsoft.com/officeinsider/
+        - url: https://answers.microsoft.com/en-us/officeinsider/forum
           text: Microsoft Support Community          
         - url: https://insider.office.com/handbook#Provide-feedback
           text: How to provide feedback 
