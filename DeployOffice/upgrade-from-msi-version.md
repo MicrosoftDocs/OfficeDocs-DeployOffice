@@ -144,7 +144,7 @@ The following are some additional details about using the RemoveMSI element in y
 - You can also use these settings if you’re installing any of the following products:
    - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
    - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
-   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
+   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - Office LTSC Professional Plus 2021 or Office LTSC Standard 2021.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
