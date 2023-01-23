@@ -26,7 +26,7 @@ We're always looking for ways to make things better for our customers, so we're 
 
 Once the update has been rolled out, it's normal for some of your devices to be automatically moved to a different update channel. However, if there are certain devices you don't want moved to a new channel, you can change their update preferences using [other admin tools](#manage-how-your-devices-receive-updates). We suggest you take a look at your current update channel selection on the **Microsoft 365 installation options** page in the admin center to make sure everything's set up the way you want.
 
-For more information, see [Choose how often to get feature update for Office](../manage-software-download-settings-office-365#choose-how-often-to-get-feature-updates-for-office.md)
+For more information, see [Choose how often to get feature update for Office](../manage-software-download-settings-office-365.md#choose-how-often-to-get-feature-updates-for-office)
 
 > [!IMPORTANT] 
 > After this change, any device that's managed by one of the following management scenarios will not move to the update channel selected in the Microsoft 365 admin center.
@@ -42,7 +42,7 @@ To keep your devices on their existing update channel, you'll have to configure 
 
 ### Use a servicing profile in Microsoft 365 Apps admin center
 
-A servicing profile allows you to set up automatic monthly updates for certain users or groups. You can apply a servicing profile to a set of devices in the [Microsoft 365 Apps admin center](config.office.com). Once the servicing profile is applied, your devices will automatically switch to the Monthly Enterprise Channel, receive updates over the internet directly from Microsoft, and be managed by the servicing profile.
+A servicing profile allows you to set up automatic monthly updates for certain users or groups. You can apply a servicing profile to a set of devices in the [Microsoft 365 Apps admin center](https://config.office.com). Once the servicing profile is applied, your devices will automatically switch to the Monthly Enterprise Channel, receive updates over the internet directly from Microsoft, and be managed by the servicing profile.
 
 To apply a servicing profile, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md)
 
