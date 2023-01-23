@@ -9347,6 +9347,7 @@ The following fields are collected:
    - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
    - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
+   - **week_start** – indicates the day of week set as the week start (Saturday, Sunday, Monday)
 
 - **state_changed_to** - To check if your focused inbox On/Off setting is configured correctly 
 
@@ -10594,6 +10595,8 @@ The following fields are collected:
   - **Data\_IsPPTMetroFile -** Is document metro (pptx) file format
 
   - **Data_LegacyFallbackReason** - Value that maps to an enum indicating the reason a fallback to the legacy open protocol was triggered during a document open
+
+  - **Data_LinkOpenInOption** - an int from 0 to 3 as follow to indicate the open in option used to open the file. 0 means link is not part of the LOR v2 test, 1 means default option is selected, 2 means in browser option is selected, and 3 means in native app option is selected.
 
   - **Data\_LoadDocument -** Method LoadDocument execution duration in milliseconds
 
@@ -14102,6 +14105,8 @@ The following fields are collected:
 - **app_start_show_message_list** - that means there was a performance issue with the app start-up causing your inbox message list to take a long time to load
 
 - **average** - collects the number of reloads that happen on a conversation divided by the number of messages in that conversation.  
+
+- **build_type** - Helps us know the build type of the app e.g., release, debug. 
 
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
