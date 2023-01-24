@@ -22,11 +22,11 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-Make sure your users have local admin privileges on their client devices. If that is not the case, then you should use your organization's standard deployment tools and processes to install Office.
+This article is intended for administrators in environments where the account used to run the ODT has admin privileges on the client device. This can be achieved by either using a software deployment solution or allowing the users to run installations with admin privileges. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) or [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md) to deploy Microsoft 365 Apps from the cloud. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
-If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Office deployment. 
+If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
-This article is intended for administrators in enterprise environments working with hundreds or thousands of computers. If you want to install Office on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
+If you want to install Microsoft 365 Apps on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c).
 
 ## Best practices 
 
