@@ -88,7 +88,7 @@ There are the two basic differences with that policy:
 
 > [!NOTE]
 > - This policy will be renamed to *Show the option for Microsoft 365 Insider* in an upcoming release of Group Policy.
-> - The option under **File** > **Account** will be updated to "Microsoft 365 Insider" in the near future.
+> - The option under **File** > **Account** will be updated to "Microsoft 365 Insider" in a future update to Microsoft 365 Apps.
 
 
 ## Related articles
