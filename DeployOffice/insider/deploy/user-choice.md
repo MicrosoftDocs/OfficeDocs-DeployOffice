@@ -86,6 +86,11 @@ There are the two basic differences with that policy:
 - You can't show the user other channels, such as Current Channel or Monthly Enterprise Channel, to select from.
 - The policy can only be applied to users, not to devices.
 
+> [!NOTE]
+> - This policy will be renamed to *Show the option for Microsoft 365 Insider* in an upcoming release of Group Policy.
+> - The option under **File** > **Account** will be updated to "Microsoft 365 Insider" in the near future.
+
+
 ## Related articles
 
 - [Compare Microsoft 365 Insider channels](../compare-channels.md)
