@@ -6291,6 +6291,14 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+### campaign.found
+
+This event is triggered when Microsoft AutoUpdate finds a campaign available from the backend. This event reports that there was a campaign found by the client. The data is used to check if campaigns have been served to clients properly.
+
+The following fields are collected: 
+
+- **CampaignID** - Integer value indicating the Campaign ID
+
 
 ### catalog.errorsignature
 
@@ -17853,6 +17861,12 @@ The following fields are collected:
 - **application** - Application that was launched via a deep link, such as Teams or Skype for Business
 
 - **context** - The experience navigated to within the app, e.g., office_union - word, office_union – excel, etc.
+
+- **one_drive_photo_exp_action_type** - The action type of OneDrive photo experimentation. For example: show_get_one_drive_card, click_get_one_drive_card, enable_camera_backup_succeeded, etc.
+
+- **one_drive_photo_exp_plan_number** - The experimentation plan number of OneDrive photo experimentation for A/B/n test.
+
+ - **one_drive_photo_exp_referral_type** - The referral type of OneDrive photo experimentation. For example: inline_card, bottom_card.
 
 - **source** - The origin of an action, for example, initiated from the user, automatically by the client, etc.
 

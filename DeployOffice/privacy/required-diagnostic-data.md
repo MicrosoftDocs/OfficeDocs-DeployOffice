@@ -1831,6 +1831,8 @@ The following fields are collected:
 
 - **classification** - The classification of the calendar event. Possible values include none, focus, time_away, lunch, exercise, homeschooling, class, doctor_visit, travel_time, meeting_preparation, no_meeting_time. Helps us understand the classification of the event user creating/editing. For example, whether the user is creating a focus event.
 
+- **create_poll_card_shown** - Whether the create poll card was shown in the UI when the user was creating an event. This will allow us to understand how often users opt into creating a poll.
+
 - **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
@@ -8556,6 +8558,8 @@ The following fields are collected:
 
 - **Data_FHasWPMUnsafeEdit** - Indicates that the document has WPM unsupported contents upon open.
 
+- **Data_FOpenWpmRecoveryRevision** - Indicates that the document has been opened from the OCSB2 recovery revision.
+
 - **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode 
 
 - **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document 
@@ -9347,6 +9351,7 @@ The following fields are collected:
    - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
    - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
+   - **week_start** – indicates the day of week set as the week start (Saturday, Sunday, Monday)
 
 - **state_changed_to** - To check if your focused inbox On/Off setting is configured correctly 
 
@@ -10594,6 +10599,8 @@ The following fields are collected:
   - **Data\_IsPPTMetroFile -** Is document metro (pptx) file format
 
   - **Data_LegacyFallbackReason** - Value that maps to an enum indicating the reason a fallback to the legacy open protocol was triggered during a document open
+
+  - **Data_LinkOpenInOption** - an int from 0 to 3 as follow to indicate the open in option used to open the file. 0 means link is not part of the LOR v2 test, 1 means default option is selected, 2 means in browser option is selected, and 3 means in native app option is selected.
 
   - **Data\_LoadDocument -** Method LoadDocument execution duration in milliseconds
 
@@ -14103,6 +14110,8 @@ The following fields are collected:
 
 - **average** - collects the number of reloads that happen on a conversation divided by the number of messages in that conversation.  
 
+- **build_type** - Helps us know the build type of the app. For example: release, debug. 
+
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, that is, when did this action start and end, etc. 
@@ -14501,6 +14510,10 @@ Critical data to collect end-to-end file open time for all file opens in Windows
 
 The following fields are collected:
 
+- **ActivityTransitionTime** - time required during a specific phase of app boot
+
+- **AppActivationTimeInMs** - time required during a specific phase of app boot
+
 - **AppBootingOccured** - Boolean to check if app boot is complete
 
 - **ApplicationBootTime** - time required during a specific phase of app boot
@@ -14527,17 +14540,23 @@ The following fields are collected:
 
 - **IsThisFirstLaunch** - Boolean to indicate if this is the first launch of the app
 
-- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+- **LibrarySharingPhaseTime** - time required during a specific phase of app boot
 
 - **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
 
 - **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **OfficeActivityTime** - time required during a specific phase of app boot
 
 - **PostAppInitTimeInMs** - time required during a specific phase of app boot
 
 - **PPTRenderPhase** - time related to specific phase in PPT rendering
 
 - **PreAppInitTimeInMs** - time required during a specific phase of app boot
+
+- **PreMinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
 
 - **ProviderApp** - the package name of the app from which file is opened
 
