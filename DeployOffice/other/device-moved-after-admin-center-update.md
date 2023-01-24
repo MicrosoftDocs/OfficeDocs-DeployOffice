@@ -20,7 +20,7 @@ description: "Provides guidance only to customers who received a Message center 
 >- The information in this article applies only to organizations that received the "Updates to the Microsoft 365 admin center may cause your devices to change update channels" Message center post.
 >- This article covers information about devices with Microsoft 365 that automatically moved to a new update channel due to a change in an internal Microsoft tool related to the **Microsoft 365 installation options** section in the Microsoft 365 admin center. 
 
-We're always looking for ways to make things better for our customers, so we're making some changes to an internal tool associated with the **Microsoft 365 installation options** page in the Microsoft 365 admin center. As a result, some of your devices will be moved to a different update channel automatically. But don't worry, this change will give you more control over the update channel settings for a lot more devices by using the Microsoft 365 installation options page.
+We're always looking for ways to make things better for our customers, so we're making some changes to an internal tool associated with the **Microsoft 365 installation options** page in the Microsoft 365 admin center. As a result, some of your devices will be moved to a different update channel automatically. But don't worry, this change will give you more control over the update channel settings for a lot more devices by using the **Microsoft 365 installation options** page.
 
 ## How will this affect my devices?
 
@@ -72,7 +72,7 @@ These policies include:
 - Target Version: specify the version of Microsoft 365 Apps to update to.
 
 > [!NOTE]
-> These three update-related policies are the only policies available to manage updates beyond the control of the Microsoft 365 installation options page. They allow for granular control over the update process, enabling you to specify the update channel, location, and target version of updates. This gives you the ability to manage updates beyond the Microsoft 365 installation options page and provide more detailed control over the update process.
+> These three update-related policies are the only policies available to manage updates. They allow for granular control over the update process, enabling you to specify the update channel, location, and target version of updates. This gives you the ability to manage updates beyond the **Microsoft 365 installation options** page and provide more detailed control over the update process.
 
 ### Choose your update channel from the Microsoft 365 admin center
 
