@@ -39,49 +39,54 @@ The steps in this article are based on the following approach:
 
 You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
-## Step 1: Create shared folders for Office installation files 
+## Step 1: Create shared folders for installation files 
 
-Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the Office installation files. You'll create one parent folder and two child folders, one for the pilot group, with the version of Office from Semi-Annual Enterprise Channel (Preview), and one for the broad group, with version of Office from Semi-Annual Enterprise Channel. This structure is similar to the one that the Office Content Delivery Network (CDN) uses.
+Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the installation files. You'll create one parent folder and two child folders, one for the Current Channel group, and one for the Monthly Enterprise Channel group.
 
 1. Create the following folders:
 
-    - **\\\Server\Share\M365**: Stores the ODT and the configuration files that define how to download and deploy Office.
-    - **\\\Server\Share\M365\SECP**: Stores the Microsoft 365 Apps installation files from Semi-Annual Enterprise Channel (Preview).
-    - **\\\Server\Share\M365\SEC**: Stores the Microsoft 365 Apps installation files from Semi-Annual Enterprise Channel.
+    - **\\\Server\Share\Microsoft365Apps**: Stores the ODT and the configuration files that define how to download and deploy Office.
+    - **\\\Server\Share\Microsoft365Apps\Current**: Stores the Microsoft 365 Apps installation files from Current Channel.
+    - **\\\Server\Share\Microsoft365Apps\MonthlyEnterprise**: Stores the Microsoft 365 Apps installation files from Monthly Enterprise Channel.
 
- These folders will include all the Office installation files you need to deploy. 
+These folders will include all the installation files you need to deploy.
 
-2. Assign Read permissions for your users. Installing Office from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11))
+2. Assign Read permissions for your users. Installing Microsoft 365 Apps from a shared folder requires only that the user have Read permission for that folder, so you should assign Read permission to everyone. For details about how to create shared folders and assign permissions, see [Shared Folders](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770406(v=ws.11))
 
 > [!NOTE]
-> In this article, we have just one shared folder on the network, but many organizations make the Office installation files available from multiple locations. Using multiple locations can help improve availability and minimize the effect on network bandwidth. For example, if some of your users are located in a branch office, you can create a shared folder in the branch office. Those users can then install Office from the local network. You can use the Distributed File System (DFS) role service in Windows Server to create a network share that is replicated to multiple locations. For more information, see [DFS Management](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732006(v=ws.11)). 
+> In this article, we have just one shared folder on the network, but many organizations make installation files available from multiple locations. Using multiple locations can help improve availability and minimize the effect on network bandwidth. For example, if some of your users are located in a branch office, you can create a shared folder in the branch office. Those users can then install Microsoft 365 Apps from the local network. You can use the Distributed File System (DFS) role service in Windows Server to create a network share that is replicated to multiple locations. For more information, see [DFS Management](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732006(v=ws.11)). 
 
 ## Step 2: Download the Office Deployment Tool
 
-Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\Server\Share\M365. If you've already downloaded the ODT, make sure you have the latest version.
+Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117) to \\\Server\Share\Microsoft365Apps. If you've already downloaded the ODT, make sure you have the latest version.
 
-After downloading the file, run the self-extracting executable file, which contains the ODT executable (setup.exe) and a sample configuration file (configuration.xml).
+After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and sample configuration files.
 
-## Step 3: Create a configuration file for the pilot group
+## Step 3: Create a configuration file for the Current Channel group
 
-To download and deploy Microsoft 365 Apps to the pilot group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/). 
+To download and deploy Microsoft 365 Apps to the first group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/deploymentsettings).
 
-1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
- - **Products:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps.
- - **Update channel:** Choose **Semi-Annual Enterprise Channel (Preview)** for the installation package for the pilot group 
- - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. We also recommend selecting **Fallback to the CDN** to use the Office CDN as a backup source for language packs. 
- - **Installation:** Select Local source, and type "\\\Server\Share\M365\SECP" for the source path. Office will be downloaded to and then installed from **\\\server\share\M365\SECP** on your network 
- - **Updates:** To update your client devices automatically, choose **CDN** and **Automatically check for updates**.
- - **Upgrades:** Choose to automatically remove all previous MSI versions of Office. You can also choose to install the same language as any removed MSI versions of Office, but make sure to include those languages in your installation package.
- - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
- - **Application preferences:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-pilot-SECP.xml** in the **\\\Server\Share\M365** folder.
+1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
+ - **Products and releases:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps to all devices.
+ - **Update channel:** Choose **Current Channel** 
+ - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
+ - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\Current" for the source path. To silently install Office for your users, choose **Off** for **Show installation to user**.
+ - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
+ - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
+ - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
 For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the Office installation files and Office updates will come from Semi-Annual Enterprise Channel (Preview). For more details on the most recent version of Office based on the different update channels, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
+Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 4: Create a configuration file for the broad group
+
+
+
+
+
 
 Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
 
