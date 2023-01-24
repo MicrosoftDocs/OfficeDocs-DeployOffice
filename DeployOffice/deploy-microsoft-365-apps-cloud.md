@@ -73,9 +73,9 @@ Using the [Office Customization Tool](https://config.office.com/deploymentsettin
  - **Update channel:** Choose **Monthly Enterprise Channel**.
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-mec.xml** in the **\\\Server\Share\M365** folder.
 
-## Step 4: Deploy Office to the Current Channel group
+## Step 4: Deploy to the Current Channel group
 
-To deploy Office, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
+To deploy Microsoft 365 Apps, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
 
 From the client computers for the Current Channel group, run the following command from a command prompt with admin privileges:
 
@@ -86,7 +86,7 @@ From the client computers for the Current Channel group, run the following comma
 
 After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
 
-## Step 5: Deploy Office to the Monthly Enterprise Channel group
+## Step 5: Deploy to the Monthly Enterprise Channel group
 
 If devices need a more predictable update schedule, those should be included in the Monthly Enterprise Channel group. To install Microsoft 365 Apps, run the following command from a command prompt with admin privileges:
 
