@@ -84,7 +84,7 @@ From the client computers for the Current Channel group, run the following comma
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
 
-After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
+After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
 
 ## Step 5: Deploy to the Monthly Enterprise Channel group
 
