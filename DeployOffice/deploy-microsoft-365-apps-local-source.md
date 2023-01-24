@@ -30,13 +30,14 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 ## Best practices 
 
-The steps in this article are based on the following best practices, if you've chosen to deploy Semi-Annual Enterprise Channel:
+In general, we recommend deploying Microsoft 365 Apps from the cloud with [Microsoft Intune](/mem/intune/apps/apps-add-office365) or through [Microsoft Endpoint Configuration Manager]((deploy-microsoft-365-apps-configuration-manager.md). This reduces the complexity of configuring the installation as well as updating the local source files on a regular base.
 
-- **Manage updates to Office automatically**, without any administrative overhead. For more details, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). (If you want to manage updates from a local source, you need to change the configuration files. For more details, see [configuring updates](office-deployment-tool-configuration-options.md#updates-element)). 
-- **Build two Office installation packages**: One package uses Semi-Annual Enterprise Channel for 64-bit and the other uses Semi-Annual Enterprise Channel (Preview) for 64-bit. Each installation package includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the installation package. To deploy both versions, you create additional installation packages. For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
-- **Deploy to two deployment groups**: a pilot group that receives Semi-Annual Enterprise Channel (Preview) and a broad group that receives Semi-Annual Enterprise Channel. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). 
+The steps in this article are based on the following approach:
 
-You can customize these options to match the requirements for your organization, including deploying to more than two groups, changing update channels, and deploying Visio and Project. For more details, see [Customize your deployment](#customize-your-deployment).
+- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [servicing profile](./admincenter/servicing-profile.md).
+- **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
+
+You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Create shared folders for Office installation files 
 
