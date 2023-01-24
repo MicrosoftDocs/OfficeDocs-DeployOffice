@@ -21,6 +21,10 @@ This article lists new features, tools, and articles for IT Pros who deploy Micr
 
 ## January 2023
 
+### Office Insider program renamed to Microsoft 365 Insider
+
+The Office Insider program was renamed to Microsoft 365 Insider on January 18, 2023. The program offers organizations an opportunity to evaluate new features for Microsoft 365 Apps before general release, by using Beta Channel and Current Channel (Preview). For more information, go to [Microsoft 365 Insider (for business)](insider/index.yml).
+
 ### Blocking internet macros by default in Microsoft 365 Apps available in Semi-Annual Enterprise Channel
 
 To help improve security in Microsoft 365 Apps, we’re changing the default behavior to block macros in files from the internet. This change is in Version 2208 in Semi-Annual Enterprise Channel as of January 10, 2023. The following applications running on Windows are affected: Access, Excel, PowerPoint, Visio, and Word.
@@ -93,6 +97,9 @@ Microsoft has released the recommended security configuration baseline settings 
 The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
 
 ### Office Insider Program for Business documentation
+
+> [!NOTE]
+> Office Insider was renamed to Microsoft 365 Insider on January 18, 2023.
 
 The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to [Office Insider Program for Business](insider/index.yml).
 
