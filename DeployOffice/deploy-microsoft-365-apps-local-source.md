@@ -62,18 +62,18 @@ Download the ODT from the [Microsoft Download Center](https://www.microsoft.com/
 
 After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe) and sample configuration files.
 
-## Step 3: Create a configuration file for the Current Channel group
+## Step 3: Create a configuration file for Current Channel
 
 To download and deploy Microsoft 365 Apps to the first group, you use a configuration file with the ODT. To create the configuration file, we recommend using the [Office Customization Tool](https://config.office.com/deploymentsettings).
 
 1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
- - **Products and releases:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps to all devices.
- - **Update channel:** Choose **Current Channel** 
- - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
- - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\Current" for the source path. To silently install Office for your users, choose **Off** for **Show installation to user**.
- - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
- - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
- - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+    - **Products and releases:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps to all devices.
+    - **Update channel:** Choose **Current Channel** 
+    - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
+    - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\Current" for the source path. To silently install Office for your users, choose **Off** for **Show installation to user**.
+    - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
+    - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
+    - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
@@ -81,31 +81,25 @@ For more details on how to use the Office Customization Tool, see [Overview of t
 
 Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
-## Step 4: Create a configuration file for the broad group
+## Step 4: Create a configuration file for Monthly Enterprise Channel
 
+Using the [Office Customization Tool](https://config.office.com/deploymentsettings), create the configuration file for the Monthly Enterprise Channel group.
 
+1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the options used in Step 3, except for the following changes:
+    - **Update channel:** Choose **Monthly Enterprise Channel**.
+    - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\MonthlyEnterprise" for the source path.
+ 
+2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-mec.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
+## Step 5: Download the installation files for Current Channel
 
+From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the Current Channel configuration file:
 
+ `\\server\share\Microsoft365Apps\setup.exe /download \\server\share\Microsoft365Apps\configuration-cc.xml`
 
-Using the [Office Customization Tool](https://config.office.com/), create the configuration file for the broad group.
+The files should begin downloading immediately. After running the command, go to **\\\server\share\Microsoft365Apps\CurrentChannel**  and look for an Office folder with the appropriate files in it.
 
-1. Go to [Office Customization Tool](https://config.office.com/) and configure the desired settings for your Microsoft 365 Apps installation. We recommend matching the same options as the pilot group in Step 3, except for the following changes:
- - **Update channel:** Choose **Semi-Annual Enterprise Channel** for the installation package for the pilot group 
- - **Installation:** Select Local source, and type "\\\Server\Share\M365\SEC" for the source path. Office will be downloaded to and then installed from **\\\server\share\M365\SEC** on your network 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **config-broad-SEC.xml** in the **\\\Server\Share\M365** folder.
-
-This configuration file is used to download Office installation files and then deploy them to the broad group. The settings are exactly the same as the first configuration file, except the source path points to a different folder (SAC), and the update channel is set to Semi-Annual Enterprise Channel.
-
-## Step 5: Download the Office installation package for the pilot group
-
-From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the pilot group:
-
- `\\server\share\M365\setup.exe /download \\server\share\M365\config-pilot-SECP.xml`
-
-The files should begin downloading immediately. After running the command, go to **\\\server\share\M365\SECP**  and look for an Office folder with the appropriate files in it.
-
-Note that when you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
+Note that when you download Microsoft 365 Apps to a folder that already contains the same build, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Microsoft 365 Apps in English and German to a folder that already contains Microsoft 365 Apps in English, only the German language pack will be downloaded.
 
 If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
 
