@@ -69,11 +69,14 @@ To download and deploy Microsoft 365 Apps to the first group, you use a configur
 1. Go to [Office Customization Tool](https://config.office.com/deploymentsettings) and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
     - **Products and releases:** Microsoft 365 Apps. You can also include Visio and Project if you plan to deploy those apps to all devices.
     - **Update channel:** Choose **Current Channel** 
-    - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
+    - **Language:** Include all the language packs you plan to deploy. 
     - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\Current" for the source path. To silently install Office for your users, choose **Off** for **Show installation to user**.
     - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
     - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
     - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
+
+> [!TIP]
+> Each additional language included in the installation package will increase the size of the source files which need to be downloaded. Check [Right-sizing your initial deployment](/fieldnotes/right-sizing-initial-deployment.md) for tips on how to reduce the size of locally stored files.
 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
@@ -97,64 +100,60 @@ From a command prompt, run the ODT executable in download mode and with a refere
 
  `\\server\share\Microsoft365Apps\setup.exe /download \\server\share\Microsoft365Apps\configuration-cc.xml`
 
-The files should begin downloading immediately. After running the command, go to **\\\server\share\Microsoft365Apps\CurrentChannel**  and look for an Office folder with the appropriate files in it.
+The files should begin downloading immediately. After running the command, go to **\\\server\share\Microsoft365Apps\CurrentChannel** and look for an Office folder with the appropriate files in it.
 
 Note that when you download Microsoft 365 Apps to a folder that already contains the same build, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Microsoft 365 Apps in English and German to a folder that already contains Microsoft 365 Apps in English, only the German language pack will be downloaded.
 
 If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
 
-## Step 6: Download the Office installation package for the broad group
+## Step 6: Download the installation files for Monthly Enterprise Channel
 
-From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the broad group:
+From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the Monthly Enterprise Channel configuration file:
 
- `\\server\share\M365\setup.exe /download \\server\share\M365\config-broad-SEC.xml`
+ `\\server\share\Microsoft365Apps\setup.exe /download \\server\share\Microsoft365Apps\configuration-mec.xml`
 
-The files should begin downloading immediately. After running the command, go to **\\\server\share\M365\SEC** and look for an Office folder with the appropriate files in it.
+The files should begin downloading immediately. After running the command, go to **\\\server\share\Microsoft365Apps\MonthlyEnterprise** and look for an Office folder with the appropriate files in it.
 
-## Step 7: Deploy Office to the pilot group
+## Step 7: Deploy to the Current Channel group
 
-To deploy Office, we'll provide commands that users can run from their client computers. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Office to install on the client computer. Users who run these commands must have local admin privileges on their computer and must have read permissions to the share (**\\\server\share\M365**).
+To deploy Microsoft 365 Apps, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
 
-From the client computers for the pilot group, run the following command from a command prompt with admin privileges:
+From the client computers for the Current Channel group, run the following command from a command prompt with admin privileges:
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-pilot-SECP.xml`
+ `\\Server\Share\Microsoft365Apps\setup.exe /configure \\Server\Share\Microsoft365Apps\configuration-cc.xml`
 
 > [!NOTE]
-> Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers. 
+> Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers.
 
-After running the command, the Office installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
+After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
 
-After Office has deployed to the pilot group, test Office in your environment, particularly with your hardware and device drivers. For more details, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels).
+## Step 8: Deploy to the Monthly Enterprise Channel group
 
-## Step 8: Deploy Office to the broad group
+If devices need a more predictable update schedule, those should be included in the Monthly Enterprise Channel group. To install Microsoft 365 Apps, run the following command from a command prompt with admin privileges:
 
-After you've finished testing Office with the pilot group, you can deploy it to the broad group. To do so, run the following command from a command prompt with admin privileges:
+ `\\Server\Share\Microsoft365Apps\setup.exe /configure \\Server\Share\Microsoft365Apps\configuration-mec.xml`
 
- `\\Server\Share\M365\setup.exe /configure \\Server\Share\M365\config-broad-SEC.xml`
-
-This command is the same as the pilot group, except that it references the configuration file for the broad group.
-
-After running the command, the Office installation should start immediately. 
+This command is the same as the Current Channel group, except that it references the configuration file for the Monthly Enterprise Channel group. After running the command, the installation should start immediately. 
 
 ## Customize your deployment
 
-The steps in this article cover the standard best practice recommendations from Microsoft, if you've chosen to deploy Semi-Annual Enterprise Channel. This section covers the most common customizations to these best practices.
+The steps in this article cover the standard best practice recommendations from Microsoft. This section covers common customizations.
 
 ### Build and deploy multiple packages to multiple deployment groups
 
-If you want to deploy both the 32-bit and the 64-bit version of Office, you can create additional installation packages. (Two different architectures cannot be included in the same package.) For more details, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+If you want to deploy both the 32-bit and the 64-bit version in your environment, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
 
-### Use different update channels for Office
+### Use different update channels
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users.  For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-In this article, we're using Semi-Annual Enterprise Channel (Preview) for your pilot group and Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose to deploy Current Channel, which provides users with the newest features of Office as soon as they're ready. In that scenario, you'd deploy Current Channel (Preview) to your pilot group.
+In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices that should only receive one update per month.
 
-A single Office installation package can only include one type of update channel, so each new update channel requires an additional package. 
+A single Microsoft 365 Apps installation package can only include one type of update channel, so each new update channel requires an additional package.
 
-### Deploy Visio and Project alongside the core Office apps
+### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of installation package. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). If you're upgrading from an MSI-based Office, we also recommend using the [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in the configuration file. Adding Visio or Project to the configuration file does not require a re-download of the source files.
 
 ## Related topics
 
@@ -165,3 +164,5 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
+
+[Right-size your deployment](/fieldnotes/right-sizing-initial-deployment.md)
