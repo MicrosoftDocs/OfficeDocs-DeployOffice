@@ -22,7 +22,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in environments where the account used to run the ODT has admin privileges on the client device. This can be achieved by either using a software deployment solution or allowing the users to run installations with admin privileges. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) or [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md) to deploy Microsoft 365 Apps from the cloud. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+This article is intended for administrators in environments where the account used to run the ODT has admin privileges on the client device. This can be achieved by either using a software deployment solution or allowing the users to run installations with admin privileges. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) or [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
@@ -30,7 +30,7 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 ## Best practices 
 
-In general, we recommend deploying Microsoft 365 Apps from the cloud with [Microsoft Intune](/mem/intune/apps/apps-add-office365) or through [Microsoft Endpoint Configuration Manager]((deploy-microsoft-365-apps-configuration-manager.md). This reduces the complexity of configuring the installation as well as updating the local source files on a regular base.
+In general, we recommend deploying Microsoft 365 Apps from the cloud with [Microsoft Intune](/mem/intune/apps/apps-add-office365) or through [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). This reduces the complexity of configuring the installation as well as having to the local shares on a regular base.
 
 The steps in this article are based on the following approach:
 
@@ -41,7 +41,7 @@ You can customize these options to match the requirements for your organization,
 
 ## Step 1: Create shared folders for installation files 
 
-Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the installation files. You'll create one parent folder and two child folders, one for the Current Channel group, and one for the Monthly Enterprise Channel group.
+Because you're deploying Microsoft 365 Apps from a local source, you have to create folders to store the installation files. You'll create one parent folder and two child folders, one for the Current Channel sources, and one for the Monthly Enterprise Channel sources.
 
 1. Create the following folders:
 
@@ -76,7 +76,7 @@ To download and deploy Microsoft 365 Apps to the first group, you use a configur
     - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 
 > [!TIP]
-> Each additional language included in the installation package will increase the size of the source files which need to be downloaded. Check [Right-sizing your initial deployment](/fieldnotes/right-sizing-initial-deployment.md) for tips on how to reduce the size of locally stored files.
+> Each additional language specified in the configuration file will increase the size of the files which we will download later. Check [Right-sizing your initial deployment](/fieldnotes/right-sizing-initial-deployment.md) for tips on how offload storing language packs to the cloud.
 
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
@@ -96,7 +96,7 @@ Using the [Office Customization Tool](https://config.office.com/deploymentsettin
 
 ## Step 5: Download the installation files for Current Channel
 
-From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the Current Channel configuration file:
+From a command prompt, run the ODT executable in download mode and with a reference to the Current Channel configuration file:
 
  `\\server\share\Microsoft365Apps\setup.exe /download \\server\share\Microsoft365Apps\configuration-cc.xml`
 
@@ -104,11 +104,11 @@ The files should begin downloading immediately. After running the command, go to
 
 Note that when you download Microsoft 365 Apps to a folder that already contains the same build, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Microsoft 365 Apps in English and German to a folder that already contains Microsoft 365 Apps in English, only the German language pack will be downloaded.
 
-If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
+If you run into problems, make sure you have the newest version of the ODT and your configuration file and command reference the correct locations. You can also troubleshoot issues by reviewing the log file in the %temp% folder.
 
 ## Step 6: Download the installation files for Monthly Enterprise Channel
 
-From a command prompt, run the ODT executable in download mode and with a reference to the configuration file for the Monthly Enterprise Channel configuration file:
+From a command prompt, run the ODT executable in download mode and with a reference to the Monthly Enterprise Channel configuration file:
 
  `\\server\share\Microsoft365Apps\setup.exe /download \\server\share\Microsoft365Apps\configuration-mec.xml`
 
@@ -116,7 +116,7 @@ The files should begin downloading immediately. After running the command, go to
 
 ## Step 7: Deploy to the Current Channel group
 
-To deploy Microsoft 365 Apps, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\M365**).
+To deploy Microsoft 365 Apps, you provide commands that users can run from their client computers or you incorporate these commands into your installation automation. The commands run the ODT in configure mode and with a reference to the appropriate configuration file, which defines which version of Microsoft 365 Apps to install on the client computer. Users who run these commands must have local admin privileges and must have read permissions to the share (**\\\server\share\Microsoft365Apps**).
 
 From the client computers for the Current Channel group, run the following command from a command prompt with admin privileges:
 
@@ -125,7 +125,7 @@ From the client computers for the Current Channel group, run the following comma
 > [!NOTE]
 > Most organizations will use this command as part of a batch file, script, or other process that automates the deployment. In those cases, you can run the script under elevated permissions, so the users will not need to have admin privileges on their computers.
 
-After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and make sure your configuration file and command reference the correct location. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
+After running the command, the Microsoft 365 Apps installation should start immediately. If you run into problems, make sure you have the newest version of the ODT and your configuration file and command reference the correct locations. You can also troubleshoot issues by reviewing the log file in the %temp% and C:\Windows\Temp folder.
 
 ## Step 8: Deploy to the Monthly Enterprise Channel group
 
