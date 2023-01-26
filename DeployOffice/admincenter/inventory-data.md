@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 recommendations: false
 description: "Lists the device and add-in information that is sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center."
+ms.date: 06/23/2021
 ---
 
 # Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center

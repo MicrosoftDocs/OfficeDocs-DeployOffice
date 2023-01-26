@@ -11,6 +11,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"
+ms.date: 01/15/2021
 ---
 
 # Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise

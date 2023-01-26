@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of viewer mode for Microsoft 365 Apps."
+ms.date: 03/30/2020
 ---
 
 # Overview of viewer mode for Microsoft 365 Apps

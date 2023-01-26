@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
+ms.date: 08/19/2020
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center

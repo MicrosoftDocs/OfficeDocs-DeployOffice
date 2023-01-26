@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
+ms.date: 03/20/2018
 ---
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard

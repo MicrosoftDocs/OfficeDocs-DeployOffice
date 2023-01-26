@@ -13,6 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
+ms.date: 06/08/2018
 ---
 
 # Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps

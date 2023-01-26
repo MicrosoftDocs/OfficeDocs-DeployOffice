@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
+ms.date: 10/15/2021
 ---
 
 # Overview of the Office Customization Tool

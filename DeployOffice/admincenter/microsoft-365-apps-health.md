@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
+ms.date: 09/15/2020
 ---
 
 # Microsoft 365 Apps health
