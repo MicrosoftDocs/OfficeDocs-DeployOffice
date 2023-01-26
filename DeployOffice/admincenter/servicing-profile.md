@@ -9,6 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
+ms.date: 08/19/2020
 ---
 
 # Overview of servicing profile in the Microsoft 365 Apps admin center

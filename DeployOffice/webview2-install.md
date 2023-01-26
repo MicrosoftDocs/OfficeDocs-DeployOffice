@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Guidance for Office admins about the installation and use of Microsoft Edge WebView2 on devices running Microsoft 365 Apps."
+ms.date: 02/10/2021
 ---
 
 # Microsoft Edge WebView2 and Microsoft 365 Apps

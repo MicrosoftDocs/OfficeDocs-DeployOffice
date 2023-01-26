@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
+ms.date: 09/17/2020
 ---
 
 # Overview of the Microsoft 365 Apps admin center

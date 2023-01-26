@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 recommendations: false
 description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
+ms.date: 04/20/2020
 ---
 
 # Troubleshoot issues with shared computer activation for Microsoft 365 Apps
