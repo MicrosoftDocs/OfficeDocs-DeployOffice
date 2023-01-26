@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows Server end of support on Microsoft 365 Apps."
+ms.date: 06/29/2020
 ---
 
 # Windows Server end of support and Microsoft 365 Apps

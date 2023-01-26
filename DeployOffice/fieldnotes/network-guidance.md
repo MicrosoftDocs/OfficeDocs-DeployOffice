@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_FieldNotes
 ms.collection: 
 - Ent_O365
+ms.date: 01/26/2021
 ---
 
 # Best practices from the field: Network guidance for deploying and servicing Microsoft 365 Apps

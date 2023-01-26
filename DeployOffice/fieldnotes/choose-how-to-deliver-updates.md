@@ -14,6 +14,7 @@ ms.custom:
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+ms.date: 03/27/2020
 ---
 
 # Choose how to deliver updates for the Microsoft 365 Apps

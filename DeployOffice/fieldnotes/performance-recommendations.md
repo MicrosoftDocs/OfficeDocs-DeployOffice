@@ -12,6 +12,7 @@ ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_FieldNotes
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
+ms.date: 10/20/2021
 ---
 
 # Best practices from the field: Performance recommendations for Microsoft 365 Apps on Windows 10

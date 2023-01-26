@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Explains how to deploy the processor, agent, and other components that are required by Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Deploy Office Telemetry Dashboard

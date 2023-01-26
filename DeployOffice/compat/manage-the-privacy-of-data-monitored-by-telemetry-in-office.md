@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about the data collection process and how to configure settings that help protect user privacy when using Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Manage the privacy of data monitored by Office Telemetry Dashboard

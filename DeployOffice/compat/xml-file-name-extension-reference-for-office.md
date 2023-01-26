@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about the XML file formats and their extensions that are used by Word, Excel, PowerPoint, and Visio."
+ms.date: 03/20/2018
 ---
 
 # XML file name extension reference for Office
