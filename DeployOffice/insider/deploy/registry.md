@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides steps for admins to use the reg add command to install Microsoft 365 Insider on Windows devices."
+ms.date: 01/11/2023
 ---
 
 # Use a registry command to install Microsoft 365 Insider on Windows devices

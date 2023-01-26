@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides an overview of the deployment options for Microsoft 365 Insider for Windows and Mac"
+ms.date: 01/11/2023
 ---
 
 # Options for deploying Microsoft 365 Insider

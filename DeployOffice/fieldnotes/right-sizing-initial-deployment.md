@@ -12,6 +12,7 @@ ms.collection:
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
 description: "Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps."
+ms.date: 04/09/2020
 ---
 
 # Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps

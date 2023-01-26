@@ -14,6 +14,7 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Microsoft Services Provider License Agreement (SPLA) customers with instructions for deploying Office LTSC 2021"
+ms.date: 09/14/2021
 ---
 
 # Office LTSC 2021 deployment instructions for SPLA customers

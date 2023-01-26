@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides steps for admins to use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
+ms.date: 01/11/2023
 ---
 
 # Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices
