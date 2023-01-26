@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Office admins with guidance on how to get updates for Microsoft 365 Apps."
+ms.date: 06/05/2022
 ---
 
 # Keep Office apps up to date with the latest updates

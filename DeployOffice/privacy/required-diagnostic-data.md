@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Required diagnostic data for Office

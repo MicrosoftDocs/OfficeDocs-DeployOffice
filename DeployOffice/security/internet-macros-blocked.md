@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
+ms.date: 02/04/2022
 ---
 
 # Macros from the internet will be blocked by default in Office
