@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
+ms.date: 03/20/2018
 ---
 
 # Rearm a volume licensed version of Office that's included in an operating system image

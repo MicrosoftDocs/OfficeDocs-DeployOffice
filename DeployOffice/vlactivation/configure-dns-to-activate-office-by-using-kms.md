@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with information on how to configure DNS and Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
+ms.date: 03/20/2018
 ---
 
 # Configure DNS for activating volume licensed versions of Office by using KMS

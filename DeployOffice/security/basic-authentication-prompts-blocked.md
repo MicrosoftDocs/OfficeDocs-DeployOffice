@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
+ms.date: 08/30/2022
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps

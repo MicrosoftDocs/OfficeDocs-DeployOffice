@@ -13,7 +13,9 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with an overview of required service data that is collected about connected experiences in Office."
 hideEdit: true
+ms.date: 04/26/2019
 ---
+
 # Required service data for Office
 
 > [!NOTE]

@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Optional diagnostic data for Office
