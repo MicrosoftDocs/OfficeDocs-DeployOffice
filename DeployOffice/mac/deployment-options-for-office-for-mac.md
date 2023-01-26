@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: true
 description: "Provides information to admins on how to download and deploy Office for Mac to users in their organization"
+ms.date: 03/19/2018
 ---
 
 # Deployment options for admins for Office for Mac

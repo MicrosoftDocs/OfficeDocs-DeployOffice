@@ -12,6 +12,7 @@ ms.collection: Ent_O365
 ms.custom: intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
+ms.date: 03/19/2018
 ---
 
 # Deployment guide for Office for Mac

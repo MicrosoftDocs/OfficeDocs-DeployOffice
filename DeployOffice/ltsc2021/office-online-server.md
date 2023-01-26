@@ -14,6 +14,7 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides information about how Office LTSC 2021 customers can get Office Online Server."
+ms.date: 09/14/2021
 ---
 
 # Office Online Server for Office LTSC 2021 customers

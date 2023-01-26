@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"
+ms.date: 01/11/2023
 ---
 
 # Microsoft 365 Insider Program for Business
