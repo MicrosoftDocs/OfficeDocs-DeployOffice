@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project, including Project Online Desktop Client and Project 2019, to users in their organization."
+ms.date: 03/20/2018
 ---
 
 # Deployment guide for Project

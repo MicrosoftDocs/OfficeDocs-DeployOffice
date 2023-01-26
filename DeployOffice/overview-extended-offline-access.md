@@ -13,6 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of extended offline access for Microsoft 365 Apps."
+ms.date: 05/11/2020
 ---
 
 # Overview of extended offline access for Microsoft 365 Apps

@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services

@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
+ms.date: 04/20/2020
 ---
 
 # Licensing and activation data sent to Office 365 by Microsoft 365 Apps

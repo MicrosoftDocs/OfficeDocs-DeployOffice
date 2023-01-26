@@ -13,8 +13,8 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
+ms.date: 04/20/2020
 ---
-
 
 # Configuration options for the Office Deployment Tool
 

@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides IT admins with information about which versions of Office, Project, and Visio can be installed together on the same computer."
+ms.date: 03/20/2018
 ---
 
 # Supported scenarios for installing different versions of Office, Project, and Visio on the same computer

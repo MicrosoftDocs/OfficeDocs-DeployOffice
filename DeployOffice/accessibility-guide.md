@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provide Office admins with guidance and resources to help make their Microsoft 365 environment as inclusive and accessible as possible for their users"
+ms.date: 05/09/2022
 ---
 
 # Accessibility guide for Microsoft 365 Apps

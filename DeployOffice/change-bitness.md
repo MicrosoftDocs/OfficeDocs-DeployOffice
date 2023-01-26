@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Microsoft 365 Apps, such as from 32-bit to 64-bit."
+ms.date: 04/15/2019
 ---
 
 # Change a Microsoft 365 Apps installation from 32-bit to 64-bit
