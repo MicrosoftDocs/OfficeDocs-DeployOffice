@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about how to manage privacy settings on iOS devices."
 hideEdit: true
+ms.date: 10/14/2019
 ---
 
 # Use preferences to manage privacy controls for Office on iOS devices

@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: true
 description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
+ms.date: 03/19/2018
 ---
 
 # Overview of activation for Office for Mac

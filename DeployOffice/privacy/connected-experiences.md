@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Connected experiences in Office

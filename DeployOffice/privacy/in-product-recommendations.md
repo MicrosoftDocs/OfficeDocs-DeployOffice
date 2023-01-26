@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides information about in-product recommendations that might appear while using Office."
 hideEdit: true
+ms.date: 10/05/2020
 ---
 
 # In-product recommendations in Office

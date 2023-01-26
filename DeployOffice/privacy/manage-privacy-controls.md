@@ -15,6 +15,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) by using policy settings."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise

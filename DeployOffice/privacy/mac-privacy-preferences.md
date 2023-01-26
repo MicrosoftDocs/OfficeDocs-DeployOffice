@@ -14,6 +14,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
 hideEdit: true
+ms.date: 08/07/2019
 ---
 
 # Use preferences to manage privacy controls for Office for Mac
