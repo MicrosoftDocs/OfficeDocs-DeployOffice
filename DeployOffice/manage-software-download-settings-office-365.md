@@ -1,5 +1,5 @@
 ---
-title: "Manage Office installation options in the Microsoft 365 admin center"
+title: "Manage Microsoft 365 installation options in the Microsoft 365 admin center"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
-description: "Provides admins with information to help them configure Office installation options in the Microsoft 365 admin center."
+description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
 ms.date: 05/01/2018
 ---
 
-# Manage Office installation options in the Microsoft 365 admin center
+# Manage Microsoft 365 installation options in the Microsoft 365 admin center
 
-As a Microsoft 365 admin, you can choose to do the following tasks on the **Office installation options** page in the Microsoft 365 admin center:
+As a Microsoft 365 admin, you can choose to do the following tasks on the **Microsoft 365 installation options** page in the Microsoft 365 admin center:
 
 - [Choose how often to get feature updates for Office](#choose-how-often-to-get-feature-updates-for-office)
 - [Manage which version of Office is installed](#manage-which-version-of-office-is-installed), including
@@ -27,7 +27,7 @@ As a Microsoft 365 admin, you can choose to do the following tasks on the **Offi
 If you don't want users installing Office themselves, you can [manually deploy Office to your users](#manually-deploy-office-to-your-users).
 
 > [!TIP]
-> To get to **Office installation options**, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
+> To get to **Microsoft 365 installation options**, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Settings** > **Org settings** > **Services**.
 
 ## Choose how often to get feature updates for Office
 
@@ -48,7 +48,7 @@ Keep in mind that moving to a different update channel can also change which fea
 > [!NOTE]
 > - Your choice under **Feature updates** won't apply if you're already using some other method to manage Office on devices in your organization.
 >
-> - For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Office installation options**.
+> - For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Configuration Manager, Microsoft Intune, or the Office Deployment Tool (the UpdatePath attribute in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)). You’ll need to use that method to change the update channel on those devices instead of using **Microsoft 365 installation options**.
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
@@ -60,7 +60,7 @@ Keep in mind that moving to a different update channel can also change which fea
 
 You can also, in certain situations, roll back devices in your organization to a previous version of Office or skip an upcoming version. 
 
-This capability is available to you on the **Version management** tab in the Microsoft 365 admin center, under **Settings** > **Org settings** > **Services** > **Office installation options**. The **Version management** tab is only shown if you have chosen Monthly Enterprise Channel for feature updates on the **Installation options** tab. You can only manage versions of Office that are installed on devices running Windows.
+This capability is available to you on the **Version management** tab in the Microsoft 365 admin center, under **Settings** > **Org settings** > **Services** > **Microsoft 365 installation options**. The **Version management** tab is only shown if you have chosen Monthly Enterprise Channel for feature updates on the **Installation options** tab. You can only manage versions of Office that are installed on devices running Windows.
 
 > [!NOTE]
 > - Your choices on the **Version management** tab won't apply if you're already using some other method to manage Office on devices in your organization. For example, if you’re using Office policy settings (with Group Policy or Cloud Policy), Microsoft Configuration Manager, or Microsoft Intune.
