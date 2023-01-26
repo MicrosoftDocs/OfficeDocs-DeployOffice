@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Essential services for Office

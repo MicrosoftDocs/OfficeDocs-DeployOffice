@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about how to manage privacy settings for Office on Android devices."
 hideEdit: true
+ms.date: 11/07/2019
 ---
 
 # Use policy settings to manage privacy controls for Office on Android devices

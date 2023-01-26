@@ -12,6 +12,7 @@ ms.custom:
 - Ent_Office_VL
 - Office2019
 description: "Provides IT admins with information on how to update Office 2019."
+ms.date: 09/20/2018
 ---
 
 # Update Office 2019 (for IT Pros)

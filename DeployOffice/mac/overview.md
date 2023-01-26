@@ -12,6 +12,7 @@ ms.collection: Ent_O365
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
+ms.date: 09/16/2021
 ---
 
 # Overview of Office for Mac (for admins and IT Pros)

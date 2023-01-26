@@ -11,6 +11,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about updates to the Microsoft 365 update channels in the Microsoft 365 admin center."
+ms.date: 01/18/2023
 ---
 
 # Updates to the Microsoft 365 admin center may cause your devices to change update channels 

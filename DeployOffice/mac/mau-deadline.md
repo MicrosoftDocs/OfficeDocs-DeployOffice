@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Provides admins with information about how to set a deadline for updates provided from Microsoft AutoUpdate (MAU)"
+ms.date: 07/12/2019
 ---
 
 # Set a deadline for updates from Microsoft AutoUpdate

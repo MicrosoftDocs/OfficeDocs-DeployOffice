@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Shows IT Pros how to set a preference for trying a default decryption password in Excel for Mac"
+ms.date: 12/03/2018
 ---
 
 # Set a preference for trying a default decryption password in Excel for Mac

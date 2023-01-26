@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
+ms.date: 04/03/2018
 ---
 
 # Update Microsoft applications for Mac by using msupdate

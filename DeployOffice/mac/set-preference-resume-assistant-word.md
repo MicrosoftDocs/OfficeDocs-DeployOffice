@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Shows IT Pros how to set a preference for Resume Assistant in Word for Mac"
+ms.date: 05/04/2018
 ---
 
 # Set a preference for Resume Assistant in Word for Mac
