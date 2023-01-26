@@ -79,4 +79,4 @@ These policies include:
 
 Maintain your devices update by specifying the frequency at which they receive feature updates for the Microsoft 365 Apps installed. This allows for flexibility in determining the most appropriate update schedule for your organization. Options include providing new features as soon as they become available, or on a monthly basis (on the second Tuesday of the month). Additionally, you may choose to distribute updates twice annually, on the second Tuesday of January and July. 
 
-For more information, see [Manage Office installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md).
+For more information, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md).
