@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
+ms.date: 07/06/2020
 ---
 
 # Windows 7 end of support and Microsoft 365 Apps

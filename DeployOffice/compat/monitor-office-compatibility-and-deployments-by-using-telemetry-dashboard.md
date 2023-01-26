@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Monitor Office compatibility and deployments by using Office Telemetry Dashboard

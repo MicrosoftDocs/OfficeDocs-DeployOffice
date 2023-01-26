@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about components and sizing, topology, hardware, and bandwidth recommendations for Office Telemetry Dashboard deployments."
+ms.date: 03/20/2018
 ---
 
 # Plan a deployment of Office Telemetry Dashboard

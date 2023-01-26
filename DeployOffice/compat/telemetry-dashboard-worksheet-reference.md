@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
+ms.date: 03/20/2018
 ---
 
 # Office Telemetry Dashboard worksheet reference

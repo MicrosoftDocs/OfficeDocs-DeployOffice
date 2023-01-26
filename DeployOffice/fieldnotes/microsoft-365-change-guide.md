@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: 
 ms.custom: Ent_Office_ProPlus
 description: "Microsoft 365 change guide"
+ms.date: 01/08/2021
 ---
 
 # Best practices from the field: Microsoft 365 change guide

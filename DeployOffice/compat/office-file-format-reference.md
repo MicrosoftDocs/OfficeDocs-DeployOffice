@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
+ms.date: 03/20/2018
 ---
 
 # File format reference for Word, Excel, and PowerPoint

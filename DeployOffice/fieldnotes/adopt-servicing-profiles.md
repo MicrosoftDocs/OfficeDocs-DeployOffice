@@ -14,6 +14,7 @@ ms.custom:
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+ms.date: 02/08/2022
 ---
 
 # Best practices from the field: Adopting servicing profiles for Microsoft 365 Apps
