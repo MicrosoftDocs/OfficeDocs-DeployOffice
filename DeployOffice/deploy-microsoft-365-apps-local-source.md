@@ -22,7 +22,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in environments where the account used to run the ODT has admin privileges on the client device. This can be achieved by either using a software deployment solution or allowing the users to run installations with admin privileges. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) or [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+This article is intended for administrators in environments where the account used to run the ODT has admin privileges on the client device. This can be achieved by either using a software deployment solution or allowing the users to run installations with admin privileges. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) or [Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
@@ -30,7 +30,7 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 ## Best practices 
 
-In general, we recommend deploying Microsoft 365 Apps from the cloud with [Microsoft Intune](/mem/intune/apps/apps-add-office365) or through [Microsoft Endpoint Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). This reduces the complexity of configuring the installation as well as having to the local shares on a regular base.
+In general, we recommend deploying Microsoft 365 Apps from the cloud with [Microsoft Intune](/mem/intune/apps/apps-add-office365) or through [Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md). This reduces the complexity of configuring the installation as well as having to the local shares on a regular base.
 
 The steps in this article are based on the following approach:
 
