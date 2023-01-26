@@ -14,6 +14,7 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Office LTSC 2021 Preview customers with steps to update the preview version to Office LTSC 2021, on both Windows and on a Mac"
+ms.date: 09/14/2021
 ---
 
 # Update Office LTSC 2021 Preview to Office LTSC 2021

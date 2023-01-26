@@ -13,6 +13,7 @@ ms.custom:
 - OfficeLTSC2021
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2021."
+ms.date: 09/14/2021
 ---
 
 # Deploy Office LTSC 2021

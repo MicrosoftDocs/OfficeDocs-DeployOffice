@@ -13,6 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Microsoft 365 Apps to client devices from a shared folder on your network."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps from a local source

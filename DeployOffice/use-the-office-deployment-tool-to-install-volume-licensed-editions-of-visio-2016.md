@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about how to install volume licensed versions of Project 2016 and Visio 2016 on the same computer with Microsoft 365 Apps by using the Office Deployment Tool."
+ms.date: 08/14/2017
 ---
 
 # Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016 

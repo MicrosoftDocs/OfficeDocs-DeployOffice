@@ -12,6 +12,7 @@ ms.collection: Ent_O365
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
+ms.date: 09/16/2021
 ---
 
 # Overview of Office for Mac (for admins and IT Pros)
@@ -40,7 +41,7 @@ For all the system requirements, refer to [System requirements for Microsoft 365
 
 ## Chipset support
 
-Office provides native support for both Apple silicon and Intel-based Mac devices. All installation and update packages are provided in Universal 2 format. For more information, refer to [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
+Office provides native support for both Apple silicon and Intel-based Mac devices. All installation and update packages are provided in Universal 2 format. For more information, refer to [Microsoft 365, Office 2021, and Office 2019 support for Apple silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
 ## Languages
 

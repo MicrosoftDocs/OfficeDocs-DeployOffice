@@ -14,6 +14,7 @@ ms.custom:
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+ms.date: 04/21/2020
 ---
 
 # Best practices from the field: Choose how to install Microsoft 365 Apps

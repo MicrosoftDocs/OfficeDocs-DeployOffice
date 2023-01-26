@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Microsoft 365 Apps with Remote Desktop Services (RDS) "
+ms.date: 04/20/2020
 ---
 
 # Overview of shared computer activation for Microsoft 365 Apps

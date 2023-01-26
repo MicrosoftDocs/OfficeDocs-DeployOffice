@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with an overview of the different types of activation, such as KMS and MAK, available for volume licensed versions of Office, Project, and Visio."
+ms.date: 03/20/2018
 ---
 
 # Overview of volume activation of Office

@@ -15,6 +15,7 @@ ms.custom:
 - Ent_Office_Compat
 recommendations: true
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Microsoft 365 Apps"
+ms.date: 06/13/2019
 ---
 
 # Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps

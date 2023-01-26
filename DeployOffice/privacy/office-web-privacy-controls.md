@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about how to manage privacy settings for Office for the web applications."
 hideEdit: true
+ms.date: 09/10/2020
 ---
 
 # Use policy settings to manage privacy controls for Office for the web applications

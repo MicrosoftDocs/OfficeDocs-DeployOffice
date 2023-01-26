@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
+ms.date: 01/11/2023
 ---
 
 # Compare Microsoft 365 Insider channels

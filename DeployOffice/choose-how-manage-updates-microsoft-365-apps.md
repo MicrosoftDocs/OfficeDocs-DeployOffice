@@ -12,6 +12,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
+ms.date: 04/20/2020
 ---
 
 # Choose how to manage updates to Microsoft 365 Apps

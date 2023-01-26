@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Provides information to admins on how to download and deploy Office for Mac from the Mac App Store"
+ms.date: 01/17/2019
 ---
 
 # Deploy Office for Mac from the Mac App Store

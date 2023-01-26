@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides information about which Office products and versions have the most recent privacy controls."
 hideEdit: true
+ms.date: 09/10/2020
 ---
 
 # Privacy controls available for Office products

@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: true
 description: "Provides information for admins on how to deploy standard preference settings for Office for Mac, by configuring .plist files"
+ms.date: 03/19/2018
 ---
 
 # Deploy preferences for Office for Mac

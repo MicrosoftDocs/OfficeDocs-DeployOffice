@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: false
 description: "Provides admins with information about the licensing helper tool and how to update it with msupdate or manually."
+ms.date: 11/12/2021
 ---
 
 # Licensing helper tool

@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_VL
 description: "Provides Office admins with information on how to troubleshoot common errors for KMS or MAK-based activation of Office."
+ms.date: 03/20/2018
 ---
 
 # Troubleshoot volume activation of Office

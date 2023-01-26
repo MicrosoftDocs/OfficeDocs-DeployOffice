@@ -14,6 +14,7 @@ ms.custom:
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+ms.date: 09/17/2020
 ---
 
 # Best practices from the field: Switch to Monthly Enterprise Channel with Configuration Manager

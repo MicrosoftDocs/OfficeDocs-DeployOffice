@@ -11,8 +11,8 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides admins with information to help them configure Office installation options in the Microsoft 365 admin center."
+ms.date: 05/01/2018
 ---
-
 
 # Manage Office installation options in the Microsoft 365 admin center
 

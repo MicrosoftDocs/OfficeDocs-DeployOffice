@@ -11,6 +11,7 @@ ms.collection: Ent_O365
 ms.custom: Microsoft_365_Insider
 recommendations: false
 description: "Provides steps for admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
+ms.date: 01/11/2023
 ---
 
 # Let users choose which Microsoft 365 Insider channel to install on Windows devices

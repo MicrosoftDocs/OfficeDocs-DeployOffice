@@ -13,6 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
+ms.date: 04/20/2020
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps

@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Document and solution types monitored by Office Telemetry Dashboard

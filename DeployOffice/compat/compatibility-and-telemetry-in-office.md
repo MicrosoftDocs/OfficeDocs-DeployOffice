@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Provides a guide to the articles, downloads, scripts, and videos that help IT Professionals assess Office compatibility by using Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Guide to Office Telemetry Dashboard resources

@@ -14,6 +14,7 @@ ms.custom:
 ms.collection: 
 - Ent_O365
 - M365-modern-desktop
+ms.date: 09/09/2020
 ---
 
 # Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager

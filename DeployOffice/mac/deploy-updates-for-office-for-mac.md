@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 recommendations: true
 description: "Provides admins with information about how to install updates for Office for Mac by using Microsoft AutoUpdate"
+ms.date: 03/19/2018
 ---
 
 # Deploy updates for Office for Mac

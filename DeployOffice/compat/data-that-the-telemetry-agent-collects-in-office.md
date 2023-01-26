@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
 description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Data collected by the agent for Office Telemetry Dashboard

@@ -13,6 +13,7 @@ ms.custom:
 - Ent_Office_Privacy
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Overview of optional connected experiences in Office
