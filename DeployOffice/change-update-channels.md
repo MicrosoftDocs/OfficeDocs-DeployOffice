@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
+ms.date: 11/22/2019
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization

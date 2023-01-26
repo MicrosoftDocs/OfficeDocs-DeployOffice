@@ -12,6 +12,7 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
+ms.date: 08/06/2019
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise

@@ -13,6 +13,7 @@ ms.collection:
 ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)
