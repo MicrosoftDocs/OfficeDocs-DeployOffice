@@ -398,8 +398,17 @@ To view the results in Excel, run the Readiness Toolkit and on the **Create a re
 > [!NOTE]
 > To use sigscan, you must be using at least version 1.2.21067 of the Readiness Toolkit, which was released on March 19, 2021.
 
-For more information, including how to upgrade those files to use the V3 signature, see [Upgrade signed Office VBA macro projects to V3 signature](https://developer.microsoft.com/office/blogs/upgrade-signed-office-vba-macro-projects-to-v3-signature/).
+For more information, including how to upgrade those files to use the V3 signature, see [Upgrade signed Office VBA macro projects to V3 signature](https://support.microsoft.com/topic/2b8b3cae-ad64-4b4b-aa85-c4a98ca6da87).
 
+## Identify files with VBA macros that might be blocked
+
+VBA macros are a common way for malicious actors to gain access to deploy malware and ransomware. Therefore, to help improve security in Office, we've changed the default behavior of Office applications to block macros in files from the internet. For more information, see [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md).
+
+To identify files that have VBA macros that might be blocked from running, you can run the Readiness Report Creator from a command prompt and use the blockinternetscan option. For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
+
+```console
+ReadinessReportCreator.exe -blockinternetscan -p c:\officefiles\ -r -output \\server01\finance -silent
+```
 
 
 <a name="BKMK_AddInfo"> </a>
