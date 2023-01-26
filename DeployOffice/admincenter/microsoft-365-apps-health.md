@@ -13,7 +13,11 @@ description: "Provides Office admins information about Microsoft 365 Apps health
 
 # Microsoft 365 Apps health
 
-The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Office apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues. 
+The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Office apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues.
+
+> [!TIP]
+> If you prefer watching over reading, check out the our [introductional video on Apps Health](https://youtu.be/g9tiCFNDOEw).
+
 
 ## Requirements for using Microsoft 365 Apps health
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 1908 or later
