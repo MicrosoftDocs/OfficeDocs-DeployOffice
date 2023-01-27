@@ -118,7 +118,7 @@ Set the ability for users to download and install cloud-based fonts.
 |Possible values| false (default) <br/> true |
 |Apps| Word, Excel, PowerPoint, Outlook, OneNote |
 |Availability| 16.30 |
-|Comments| When set to true, cloud-based fonts will not be visibile to users when editing documents. |
+|Comments| When set to true, cloud-based fonts will not be visible to users when editing documents. |
 
 ## App installation
 
