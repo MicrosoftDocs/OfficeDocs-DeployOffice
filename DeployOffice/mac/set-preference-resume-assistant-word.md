@@ -23,7 +23,7 @@ ms.date: 05/04/2018
 > - If you're running a version of Word for Mac older than version 16.69, you'll still see an option for Resume Assistant but it won't work.
 > - You can use the DisableResumeAssistant preference described in this article to hide the option from your users until you update to version 16.69 or later.
 
-In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you are running version 16.13 or later, as shown in the following screenshot.
+In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you're running version 16.13 or later, as shown in the following screenshot.
 
 ![Screenshot of Resume Assistant icon in the Word for Mac ribbon.](../images/resume-assistant-ribbon.png)
 
