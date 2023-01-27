@@ -18,7 +18,7 @@ ms.date: 03/19/2018
 
 ***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
-After Office is installed on a Mac, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide your users with a standard set of preferences for Office. For example, you can configure how often to check for software updates for Office - daily, weekly, or monthly.
+After Office is installed on a Mac, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide your users with a standard set of preferences for Office. For example, you can configure whether updates for apps are downloaded and installed automatically.
   
 Preferences for Office are stored in preference files. These files are often referred to as .plist files.
   
