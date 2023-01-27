@@ -19,7 +19,7 @@ ms.date: 05/04/2018
 ***Applies to:*** *Office for Mac*
 
 > [!IMPORTANT]
-> - Resume Assistant is no longer supported and has been removed from Word for Mac, starting with version 16.69. For more information, see [Resume Assistant is no longer available](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a)
+> - Resume Assistant is no longer supported and has been removed from Word for Mac, starting with version 16.69. For more information, see [Resume Assistant is no longer available](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a).
 > - If you're running a version of Word for Mac older than version 16.69, you'll still see an option for Resume Assistant but it won't work.
 > - You can use the DisableResumeAssistant preference described in this article to hide the option from your users until you update to version 16.69 or later.
 
