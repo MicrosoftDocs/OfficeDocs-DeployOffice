@@ -120,6 +120,103 @@ Set the ability for users to download and install cloud-based fonts.
 |Availability| 16.30 |
 |Comments| When set to true, cloud-based fonts will not be visibile to users when editing documents. |
 
+## App installation
+
+### Excluding apps
+
+The following preferences can be used to prevent specific apps from being installed when using the *Suite* installer package.
+This can be useful in scenarios where you want to take advantage of the size optimizations offered by the Suite installer, but need to prevent one or more apps from being installed. For example, you can prevent the OneDrive app from being installed as part of the Suite because you use a different cloud storage solution.
+
+> [!IMPORTANT]
+> The app exclusion preferences will only work with the Suite installer package. Other installation packages such as the individual app installers, and apps from the Mac AppStore will not read these preferences.
+
+Exclude Word
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallWord |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude Excel
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallExcel |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude PowerPoint
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallPowerPoint |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude Outlook
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallOutlook |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude OneNote
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallOneNote |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude OneDrive
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallOneDrive |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude Teams
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallTeams |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude AutoUpdate
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallAutoUpdate |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
 ## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
