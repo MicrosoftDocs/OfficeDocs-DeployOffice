@@ -2,6 +2,20 @@
 
 
 
+## Week of January 23, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/24/2023 | [Updates to the Microsoft 365 admin center may cause your devices to change update channels](/DeployOffice/other/device-moved-after-admin-center-update) | added |
+| 1/24/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 1/24/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 1/26/2023 | [Deploy Microsoft 365 Apps from a local source](/DeployOffice/deploy-microsoft-365-apps-local-source) | modified |
+| 1/26/2023 | [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
+| 1/26/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 1/27/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
+
+
 ## Week of January 16, 2023
 
 
@@ -75,12 +89,3 @@
 |------|------------|--------|
 | 12/29/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
 | 12/29/2022 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
-
-
-## Week of December 19, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/19/2022 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
-| 12/22/2022 | [Compare Office Insider channels](/DeployOffice/office-insider/compare-channels) | modified |
