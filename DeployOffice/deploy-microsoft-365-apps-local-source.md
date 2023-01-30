@@ -77,13 +77,13 @@ To download and deploy Microsoft 365 Apps to the first group, you use a configur
     - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 
 > [!TIP]
-> Each additional language specified in the configuration file will increase the size of the files which we will download later. Check [Right-sizing your initial deployment](/fieldnotes/right-sizing-initial-deployment.md) for tips on how offload storing language packs to the cloud.
+> Each additional language specified in the configuration file will increase the size of the files which we will download later. Check [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md) for tips on how offload storing language packs to the cloud.
 
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
+2. When you complete the configuration, select **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
-For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+For more information on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
-Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
+Note that the installation files and updates will come from Current Channel. For more information on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
 ## Step 4: Create a configuration file for Monthly Enterprise Channel
 
@@ -93,7 +93,7 @@ Using the [Office Customization Tool](https://config.office.com/deploymentsettin
     - **Update channel:** Choose **Monthly Enterprise Channel**.
     - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\MonthlyEnterprise" for the source path.
  
-2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-mec.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
+2. When you complete the configuration, select **Export** in the upper right of the page, and then save the file as **configuration-mec.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
 ## Step 5: Download the installation files for Current Channel
 
@@ -154,9 +154,9 @@ A single Microsoft 365 Apps installation package can only include one type of up
 
 ### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of installation package. For more details on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). If you're upgrading from an MSI-based Office, we also recommend using the [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in the configuration file. Adding Visio or Project to the configuration file does not require a re-download of the source files.
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of installation package. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). If you're upgrading from an MSI-based Office, we also recommend using the [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in the configuration file. Adding Visio or Project to the configuration file doesn't require a re-download of the source files.
 
-## Related topics
+## Related articles
 
 [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
@@ -166,4 +166,4 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
 
-[Right-size your deployment](/fieldnotes/right-sizing-initial-deployment.md)
+[Right-size your deployment](fieldnotes/right-sizing-initial-deployment.md)
