@@ -45,12 +45,11 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 | Windows 8.1 <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
 > - Support for Windows 8.1 ended on January 10, 2023.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020.
 
 <a name="SQL"> </a>
 
@@ -251,7 +250,6 @@ The agent might not work correctly on Windows service packs that are no longer s
 
 > [!NOTE]
 > - Windows 7 with Service Pack 1, Windows 8.1, Windows Server 2008 R2, and Windows Server 2008 are no longer supported.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
 
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).
