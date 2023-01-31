@@ -26,7 +26,7 @@ The date when Office Telemetry Dashboard will be removed from Microsoft 365 Apps
 
 |Update channel  | Version |Release date  |
 |---------|---------|---------|
-|Current Channel |*Version 2301*  |*Late January 2023* |
+|Current Channel |Version 2301  |January 26, 2023 |
 |Monthly Enterprise Channel  | *Version 2301*  | *March 14, 2023*|
 |Semi-Annual Enterprise Channel (Preview) |*Version 2302* |*March 14, 2023*|
 |Semi-Annual Enterprise Channel |*Version 2302*|*July 11, 2023* |
