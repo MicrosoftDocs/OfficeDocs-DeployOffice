@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Compat
@@ -15,7 +15,7 @@ ms.date: 03/20/2018
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
