@@ -33,7 +33,7 @@ This article helps you deploy the five components of Office Telemetry Dashboard:
 
 ## Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.
+Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Office 2019 or Office 2016.
 
 After Office is installed, you can start Office Telemetry Dashboard by using one of the procedures in the following table: 
 
@@ -205,7 +205,7 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the agent
 
-The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
+The agent is built into Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 
