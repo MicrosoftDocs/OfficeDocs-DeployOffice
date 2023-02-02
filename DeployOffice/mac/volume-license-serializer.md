@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Provides admins with information about the Volume License (VL) Serializer, which is used to activate volume licensed versions of Office for Mac."
 ms.date: 09/20/2018
