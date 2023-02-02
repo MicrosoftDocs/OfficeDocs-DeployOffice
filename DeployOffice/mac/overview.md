@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
