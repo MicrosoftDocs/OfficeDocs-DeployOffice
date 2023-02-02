@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
+ms.collection: tier3
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
 ms.date: 10/20/2021
 ---
