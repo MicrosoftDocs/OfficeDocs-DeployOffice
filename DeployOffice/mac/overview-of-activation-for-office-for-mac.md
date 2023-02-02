@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: true
 description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
 ms.date: 03/19/2018
