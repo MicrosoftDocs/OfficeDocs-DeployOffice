@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
 ms.date: 03/20/2018
 ---

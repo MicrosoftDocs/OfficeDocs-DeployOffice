@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
 ms.date: 03/20/2018
 ---

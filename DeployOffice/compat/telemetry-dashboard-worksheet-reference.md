@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
 ms.date: 03/20/2018
 ---

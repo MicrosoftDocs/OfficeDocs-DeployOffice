@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
 ms.date: 03/20/2018
 ---
