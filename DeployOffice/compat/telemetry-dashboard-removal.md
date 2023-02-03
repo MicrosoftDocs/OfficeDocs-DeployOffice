@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Notification to Microsoft 365 admins that Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise."
 ms.date: 06/15/2021
 ---
