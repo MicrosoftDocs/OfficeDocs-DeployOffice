@@ -34,10 +34,10 @@ Historically, the deployment of changes within customer organizations has been t
 
 When Microsoft adds capabilities, and users leverage these capabilities, the user experience improves as supported by data. At the time of writing, a comparison of net promoter score (NPS)[[1]](#footnote-1) between customers using the continuous update channel (Current Channel) and the Semi-Annual Enterprise Channel shows a 10-point advantage[[2]](#footnote-2) to the continuous update channel for Microsoft 365 Apps. Figure 1 shows a comparison.
 
-![Net Promoter Score Release Channel Comparison.](../images/net-promoter-score-release-channel-comparison.png)
+![Net Promoter Score Release Channel Comparison.](../images/fieldnotes/net-promoter-score-release-channel-comparison.png)
 *Figure 1*
 
-Our goal is to provide your organization with changes that can be controlled (where possible), if deemed impactful to the organization, while still allowing the majority of changes to flow to users to enhance value, productivity, collaboration, and security.
+Our goal is to provide your organization with changes that can be controlled (where possible), if deemed impactful to the organization, while still allowing most changes to flow to users to enhance value, productivity, collaboration, and security.
 
 ## Controlling change: challenges and strategy
 
@@ -45,11 +45,11 @@ Despite the overwhelming benefits of rapid feature release and adoption, it's im
 
 Not all features or changes have the potential to impact your security or compliance stature, so it might not be necessary to deeply analyze every single change. For changes that are impactful, we provide configuration options for controlling related features. To help users adopt new features, by default, these changes are generally on - action is required on your part to disable or limit these features.
 
-The ability to control impactful changes is a differentiator offered by Microsoft. The technology industry is predominantly focused on innovation, which is generally assumed to have positive impact on users. It is not common to find granularity of control over these innovations offered by technology leaders or other cloud providers. By respecting your right to control most impactful changes, we're demonstrating our commitment to partnership and ultimately your success. Furthermore, we're committed to improving the overall change experience. By providing transparency into our change process, procedures, and roadmap, and by monitoring customer feedback, we want to enable our customers to evaluate and deploy the rapidly increasing volume of updates that we release.
+The ability to control impactful changes is a differentiator offered by Microsoft. The technology industry is predominantly focused on innovation, which is generally assumed to have positive impact on users. It isn't common to find granularity of control over these innovations offered by technology leaders or other cloud providers. By respecting your right to control most impactful changes, we're demonstrating our commitment to partnership and ultimately your success. Furthermore, we're committed to improving the overall change experience. By providing transparency into our change process, procedures, and roadmap, and by monitoring customer feedback, we want to enable our customers to evaluate and deploy the rapidly increasing volume of updates that we release.
 
 ### Challenges
 
-From industry observations, feedback, and supporting data, we've identified a key challenge that our customers face when they apply highly restrictive change ingestion models to the continuous release policy of Microsoft 365. The challenge lies in how frequently Microsoft updates services in the modern cloud. To illustrate the challenge, assume that Microsoft pushes 720 changes per year, released linearly. If these changes are restricted for evaluation, IT departments that are gating changes could be behind up to 60 changes after the first month. The resulting backlog of changes heightens the entropy in the environment and prevents users from utilizing the latest features and updates. The question becomes: is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?
+From industry observations, feedback, and supporting data, we've identified a key challenge that our customers face when they apply highly restrictive change ingestion models to the continuous release policy of Microsoft 365. The challenge lies in how frequently Microsoft updates services in the modern cloud. To illustrate the challenge, assume that Microsoft pushes 720 changes per year, released linearly. If these changes are restricted for evaluation, IT departments that are gating changes could be behind up to 60 changes after the first month. The resulting backlog of changes heightens the entropy in the environment and prevents users from utilizing the latest features and updates. The question becomes: is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they can't match the pace of release?
 
 > [!IMPORTANT]
 > "Is the organization capable of processing these rapid changes according to existing procedures or are changes left disabled because they cannot match the pace of release?"
@@ -66,7 +66,7 @@ This conversation is focused on the features that we deliver, not the security u
 
 Three categories of customers can be identified based on their observed change strategies: Maximize Change, Allow Most Restricting High Impact, and Restrict All Change. Figure 2 summarizes these categories.
 
-![Maximum change strategy diagram.](../images/maximum-change-strategy.png)
+![Maximum change strategy diagram.](../images/fieldnotes/maximum-change-strategy.png)
 *Figure 2*
 
 The Maximize Change strategy is most applicable to small- or medium-sized businesses that seek to optimize user productivity, and that operate without compliance or regulatory requirements.
@@ -101,7 +101,7 @@ Each task is structured as:
 - The Start Date is set to the time the task was created in Planner.
 - The Published Date of the message post can be found in the Notes.
 
-![Message center post sample.](../images/new-feature-post.png)
+![Message center post sample.](../images/fieldnotes/new-feature-post.png)
 *Figure 3*
 
 When you use Planner to manage tasks, group tasks, and formulate a plan of action for completing tasks strategically, you can review boards and change management teams to track change efficiently.
@@ -135,20 +135,20 @@ Now that we've outlined the types of changes that you can expect from Microsoft 
 
 Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release channels.
 
-As Microsoft develops products and features, new releases are validated in a ring deployment model. Figure 4 depicts the validation rings, with each deployment ring reaching a broader audience. Before moving to the next ring, a threshold of deployments in the prior ring must complete without any issues.
+As Microsoft develops products and features, new releases are validated in various stages. Figure 4 depicts these stages, with each validation stage reaching a broader audience. Before moving to the next stage, a threshold of deployments in the prior stage must complete without any issues.
 
-![Release management validation diagram.](../images/release-management-validation.png)
+![Release management validation diagram.](../images/fieldnotes/release-validation.png)
 *Figure 4*
 
-Microsoft feature teams are first to validate the features that they develop (Ring 0).
+Microsoft feature teams are first to validate the features that they develop.
 
-After identified bugs or issues are resolved, the feature is released to the Microsoft 365 organization, spanning a wider user base for validation (Ring 1).
+After identified bugs or issues are resolved, the feature is released to the Microsoft 365 organization, spanning a wider user base for validation.
 
-After the feature is deemed ready, it's released to all of Microsoft (Ring 2), which is referred to internally as “dogfooding” our products to identify issues, before updates reach the public.
+After the feature is deemed ready, it's released to all of Microsoft, which is referred to internally as “dogfooding” our products to identify issues, before updates reach the public.
 
-Rings 3 and 4 are public releases. Ring 3 is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release channel. Substantial feedback and product performance data is collected in this ring as our customers perform integration testing and broad validation across many countries, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, Ring 4 is when these users – and the rest of the world – receive the new features.
+The next stages are public releases. Targeted Release is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release channel. Substantial feedback and product performance data is collected in this stage as our customers perform integration testing and broad validation across many countries, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, this last stage is when these users – and the rest of the world – receive the new features.
 
-To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release (Ring 3) for both IT and power users.
+To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release for both IT and power users.
 
 #### Service release controls
 
@@ -156,7 +156,7 @@ Your primary control for receiving service updates is the configuration of your 
 
 You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
-![Release preferences options.](../images/release-preferences.png)
+![Release preferences options.](../images/fieldnotes/release-preferences.png)
 *Figure 5*
 
 It's important to have a staging or test tenant as part of your change strategy. Certain features require tenant changes before manifestation in the user experience. These tenant changes can be implemented in the staging tenant, so you can preview features, while preserving production tenant configurations.
@@ -172,9 +172,9 @@ Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channe
 
 | Channel name | Current Channel | Monthly Enterprise Channel | Semi-Annual Enterprise Channel |
 |--------------|-----------------|----------------------------|--------------------------------|
-| Recommended use | Provide your users with new Office features as soon as they are ready, but not on a set schedule. | Provide your users with new Office features only once a month and on a predictable schedule. | For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5) |
+| Recommended use | Provide your users with new Office features as soon as they're ready, but not on a set schedule. | Provide your users with new Office features only once a month and on a predictable schedule. | For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.[[5]](#footnote-5) |
 | Release frequency | At least once a month (likely more often), but not on a set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month 
-| Feature updates | As soon as they are ready (usually once a month), but not on a set schedule | Once a month, on the second Tuesday of the month | Twice a year (in January and July), on the second Tuesday of the month |
+| Feature updates | As soon as they're ready (usually once a month), but not on a set schedule | Once a month, on the second Tuesday of the month | Twice a year (in January and July), on the second Tuesday of the month |
 | Security updates (if needed) | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month |
 | Non-security updates (if needed) | Usually at least once a month (possibly more often), but not on a set schedule | Once a month, on the second Tuesday of the month | Once a month, on the second Tuesday of the month[[6]](#footnote-6) |
 | Support duration for a specific version | Until the next version is released with new features, which is usually about one month | Two months | Fourteen months |
@@ -195,22 +195,15 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - [Microsoft Configuration Manager](/configmgr)
 
-  - [Intune](/intune)
-
-  - [Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
+  - [Microsoft Intune](/intune)
 
   - [Autopilot](/mem/autopilot/windows-autopilot)
 
-  - [Microsoft 365 Apps admin center](../admincenter/overview.md) ([config.office.com](https://config.office.com/)), which integrates with [Cloud Policy](../admincenter/overview-cloud-policy.md)
+  - [Microsoft 365 Apps admin center](../admincenter/overview.md), which integrates with [Cloud Policy](../admincenter/overview-cloud-policy.md)
 
   - Other features in the [Device Management Admin Console](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/microsoft-intune-rolls-out-an-improved-streamlined-endpoint/ba-p/937760)
 
-Although the capabilities that these tools represent are still available, we have listened to market feedback and, as illustrated in Figure 6, consolidated these tools to create one single integrated solution, Microsoft Configuration Manager.
-
-![Microsoft Configuration Manager chart.](../images/endpoint-configuration-manager-breakdown.png)
-*Figure 6*
-
-As of 2019, Microsoft refers to our suite of management solutions under this single brand. By attaching Intune to your Configuration Manager deployment (referred to as co-management), you can attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can:
+By attaching Intune to your Configuration Manager deployment (referred to as co-management), you can attach the intelligence from the Microsoft 365 cloud to your workflows in powerful ways. You can:
 
 - Completely automate compatibility testing for Windows upgrades.
 - Deploy client updates faster to make your organization secure and compliant quickly.
@@ -267,25 +260,25 @@ The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.
 
 After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
-Although group policy has historically been used to enforce client settings and is still a viable method, we have developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admincenter/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device is not domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
+Although group policy has historically been used to enforce client settings and is still a viable method, we've developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admincenter/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
-Figure 7 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use Cloud Policy directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
+Figure 6 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use Cloud Policy directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 
-![Screenshot of the Edit policy configuration webpage.](../images/edit-policy-configuration.png)
+![Screenshot of the Edit policy configuration webpage.](../images/fieldnotes/edit-policy-configuration.png)
+*Figure 6*
+
+Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. Figure 7 illustrates the Cloud Policy option to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (like Translator, Bing image search, and 3D Maps).
+
+![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content.](../images/fieldnotes/configure-connected-experiences.png)
 *Figure 7*
 
-Some configuration options control basic client behavior, such as scroll bar visibility in Excel or availability of Live Subtitles in PowerPoint, while other configurations may be important to your security, compliance, or risk departments. Figure 8 illustrates the Cloud Policy option to enable or disable connected experiences in Microsoft 365 Apps, which provide users with web-based services from their desktop clients (like Translator, Bing image search, and 3D Maps).
-
-![Screenshot of drop-down box to enable or disable the use of connected experiences in Office that analyze content.](../images/configure-connected-experiences.png)
-*Figure 8*
-
-Microsoft provides privacy controls so that you can meet compliance and security obligations on a global scale, regardless of operational localities. With Cloud Policy, you can use a simple drop-down menu to modify these settings and apply the modifications across the devices that use that profile.
+Microsoft provides privacy controls so that you can meet compliance and security obligations on a global scale, regardless of operational localities. With Cloud Policy, you can use a drop-down menu to modify these settings and apply the modifications across the devices that use that profile.
 
 ### Change evaluation democratization
 
 Earlier, we shared data that supports the user value of being on Current Channel, which provides continuous updates. We recommend this channel and Monthly Enterprise Channel as two solutions to expedite update evaluation and testing. Microsoft recommends two models for using these channels:
 
-- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release channel. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments are not experts on every product and are not always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release channels are available.
+- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release channel. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release channels are available.
 
    - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
 
@@ -307,10 +300,10 @@ The Microsoft change mission is to enable rapid delivery, improve productivity, 
 
 ### Change management plan
 
-The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. Figure 9 illustrates the pillars of the plan.
+The Microsoft 365 Change Management Plan is essential for enabling customers to plan for and manage change. Figure 8 illustrates the pillars of the plan.
 
-![Diagram of the four pillars of the Microsoft 365 Change Management Plan.](../images/change-management-plan-pillars.png)
-*Figure 9*
+![Diagram of the four pillars of the Microsoft 365 Change Management Plan.](../images/fieldnotes/change-management-plan-pillars.png)
+*Figure 8*
 
 The Microsoft Change Management Plan outlines three change phases and recommended customer actions that are associated with each action. Table 3 summarizes the three change phases.
 
@@ -338,16 +331,16 @@ To be classified as a **major update**, changes must meet one or more of the fol
 - Changes requiring an admin action (exclusive of prevent/fix).
 - Changes to where data is stored (might impact regulatory or legal requirements).
 
-The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗) - this helps them to be easy to identify and track during various stages of release. Figure 10 shows a screenshot.
+The Message center in the Microsoft 365 [admin center](https://portal.office.com/) is your primary source of change information. Message center marks changes of high importance (major updates) with a red exclamation mark (❗) - this helps them to be easy to identify and track during various stages of release. Figure 9 shows a screenshot.
 
-![Screenshot of Message Center preferences.](../images/message-center-preferences.png)
-*Figure 10*
+![Screenshot of Message Center preferences.](../images/fieldnotes/message-center-preferences.png)
+*Figure 9*
 
 Messages are identified in the right-side column above by one of three categories:  
 
 **Prevent or fix issues**: These messages inform you of known issues that are affecting your organization and might require you to take action to avoid disruptions in service. Prevent or fix issues are different than Service health messages because they prompt you to be proactive to avoid issues.  
   
-**Plan for change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, you will be notified about upcoming changes to system requirements and about features that will be removed. To keep the service running normally, we strive to provide at least 30 days' notice of any change that requires an admin to act.  
+**Plan for change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, you'll be notified about upcoming changes to system requirements and about features that will be removed. To keep the service running normally, we strive to provide at least 30 days' notice of any change that requires an admin to act.  
   
 **Stay informed**: This is where we notify you about new or updated features that we're turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages might also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance might result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service like email or OneDrive for Business. For more information, see the [Message center documentation](/microsoft-365/admin/manage/message-center).
 
@@ -358,7 +351,7 @@ Both "prevent or fix issues" and "plan for change" messages might require action
 
 The Message center admin user interface is one way to obtain service change information. Using the [Office 365 Service Communications API](/office/office-365-management-api/office-365-service-communications-api-reference), you can build automated solutions to query the following relevant data:
 
-- **Get Services:** Returns the list of services to which you are subscribed.
+- **Get Services:** Returns the list of services to which you're subscribed.
 - **Get Current Status:** Returns a real-time view of current and ongoing services incidents.
 - **Get Historical Status:** Get a historical view of service incidents.
 - **Get Messages:** Find incident and Message center communications, which include change information.
@@ -367,30 +360,30 @@ We commit to continuously improving our change classification and notification p
 
 ## Sources of information and feedback channels
 
-To ensure broad dissemination and accessibility, Microsoft publishes change information in a variety of locations. The [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure that you're holistically informed in a timely manner.
+To ensure broad dissemination and accessibility, Microsoft publishes change information in various locations. The [Message center](/microsoft-365/admin/manage/message-center) in the Microsoft 365 Admin Portal is a key source of tenant-specific information, but you should pay attention to the entire suite of sources to ensure that you're holistically informed in a timely manner.
 
 ### Sources of change information
 
 [**Microsoft 365 Roadmap**](https://www.microsoft.com/microsoft-365/roadmap)
 
-The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. As illustrated in Figure 11, you can use filtering to easily find services or features of interest.
+The Microsoft 365 Roadmap is a public website that relays the status of products that are in development, rolling out, or launched. You can view the status of each feature or workload, search using tags, and confirm release dates from a single portal. As illustrated in Figure 10, you can use filtering to easily find services or features of interest.
 
-![Screenshot of the Microsoft 365 roadmap with filters.](../images/roadmap-filtering.png)
-*Figure 11*
+![Screenshot of the Microsoft 365 roadmap with filters.](../images/fieldnotes/roadmap-filtering.png)
+*Figure 10*
 
 **Message center weekly digest**
 
-Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal. Figure 12 shows an example of the digest.
+Your admins can use the Message center weekly digest to review Message center communications via email in a digestible, easily shared, summary format. The digest was created in response to customer feedback and demonstrates the innovative ways the Microsoft community effects change in our processes. Customers can opt out of digest emails by changing settings in the admin portal. Figure 11 shows an example of the digest.
 
-![Sample Message center announcement.](../images/message-center-announcement.png)
-*Figure 12*
+![Sample Message center announcement.](../images/fieldnotes/message-center-announcement.png)
+*Figure 11*
 
 [**Microsoft admin mobile app**](/microsoft-365/admin/admin-overview/admin-mobile-app)
 
-The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they are released. Figure 13 shows a screenshot of the mobile app.
+The Microsoft 365 admin mobile app has more than 80 features that help you manage your company when you’re on the go. The app is available for download in the Apple App Store and Google Play. Using the mobile app, you can perform common tasks like user password reset, add users to a group, and review change notifications and alerts. We recommend enabling mobile alerts, so that you stay apprised of updates the moment they're released. Figure 12 shows a screenshot of the mobile app.
 
-![Screenshot of the Microsoft 365 admin mobile app.](../images/mobile-admin-app-snip.png)<br>
-*Figure 13*
+![Screenshot of the Microsoft 365 admin mobile app.](../images/fieldnotes/mobile-admin-app-snip.png)<br>
+*Figure 12*
 
 To take advantage of the Microsoft 365 admin mobile app features, [download the app](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app).
 
@@ -421,29 +414,29 @@ Microsoft establishes a virtuous feedback loop between customers and our product
 - Microsoft Tech Community
 
 [**Microsoft 365 admin portal**](https://portal.office.com/)  
-At the bottom-right of each page in the admin portal, customers can provide feedback by clicking the **Give feedback** button, which is illustrated in Figure 14.
+At the bottom-right of each page in the admin portal, customers can provide feedback by clicking the **Give feedback** button, which is illustrated in Figure 13.
 
-![Screenshot of the Give Feedback button.](../images/give-feedback-button.png)<br>
-*Figure 14*
+![Screenshot of the Give Feedback button.](../images/fieldnotes/give-feedback-button.png)<br>
+*Figure 13*
 
 [**Message center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
-The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 15, you can see the **Give feedback** button in the lower-right of the Message center.
+The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 14, you can see the **Give feedback** button in the lower-right of the Message center.
 
-![Screenshot of the Message center configuration page.](../images/message-center-planner-synching.png)
+![Screenshot of the Message center configuration page.](../images/fieldnotes/message-center-planner-synching.png)
+*Figure 14*
+
+The Message center also supports **Like** and **Dislike** buttons, as shown in Figure 15, for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
+
+![Screenshot of Like and Dislike buttons.](../images/fieldnotes/message-center-like-and-dislike.png)
 *Figure 15*
-
-The Message center also supports **Like** and **Dislike** buttons, as shown in Figure 16, for each message. Using these, you can quickly provide feedback. We aggregate this feedback and use it to understand general customer reception of our recent changes.
-
-![Screenshot of Like and Dislike buttons.](../images/message-center-like-and-dislike.png)
-*Figure 16*
 
 [**Microsoft Tech Community**](https://aka.ms/office365network)
 
-This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions. Figure 17 shows a list of feedback forums.
+This community serves both as a source of change information from your peers and as a forum for providing feedback. We monitor the Tech Community forums for valuable feedback and use the information to influence internal decisions. Figure 16 shows a list of feedback forums.
 
-![Screenshot of Feedback forums list.](../images/feedback-forums.png)
-*Figure 17*
+![Screenshot of Feedback forums list.](../images/fieldnotes/feedback-forums.png)
+*Figure 16*
 
 ## Footnotes
 
