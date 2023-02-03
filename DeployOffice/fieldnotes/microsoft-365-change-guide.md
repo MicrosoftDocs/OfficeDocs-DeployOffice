@@ -79,7 +79,7 @@ The Microsoft industry observation shows that the Restrict All Change strategy i
 
 ### Consuming and managing change – Message center and Planner
 
-All change strategies require communication and messaging for users to consume and act on the change. [Message center is your notification hub for planned changes and other important Microsoft 365 announcements](/microsoft-365/admin/manage/message-center). Message center is located in the Microsoft 365 Admin Center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
+All change strategies require communication and messaging for users to consume and act on the change. [Message center is your notification hub for planned changes and other important Microsoft 365 announcements](/microsoft-365/admin/manage/message-center). Message center is located in the Microsoft 365 admin center. It includes upcoming new and changed features, planned maintenance, and other important announcements. There are three categories for messages:
 
 - Prevent or fix issues
 - Plan for change, and
@@ -120,11 +120,11 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 
 | Item | Functionality | Non-security updates | Security |
 |------------------------|---------------|----------------------|----------|
-| Type of change | Feature updates<br> New features or applications<br> Deprecated features | Client hotfixes for issues | Security patches|
+| Type of change | Feature updates<br/><br/> New features or applications<br/><br/> Deprecated features | Client hotfixes for issues | Security patches|
 | Advance notice? | 30 days' notice for changes that require action | No; these are included in the monthly build for all channels | No; these are included in the monthly build for all channels |
-| Communication channel | [Message center Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br> [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)<br> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps) | Security bulletin or CVE |
+| Communication channel | Message center in the Microsoft 365 admin center <br/><br/> [Microsoft 365 roadmap](https://go.microsoft.com/fwlink/p/?LinkID=529454)<br/><br/> [Microsoft 365 blog](https://www.microsoft.com/microsoft-365/blog/)<br/><br/> [Microsoft 365 area](https://go.microsoft.com/fwlink/p/?linkid=860047) of the Microsoft Tech Community | [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps) | Security bulletin or CVE |
 | Requires admin action? | Sometimes | Rarely | Rarely |
-| What kind of action? | Change settings<br> Communicate changes to users<br> Validate customizations | Change admin settings |      |
+| What kind of action? | Change settings<br/><br/> Communicate changes to users<br/><br/> Validate customizations | Change admin settings |      |
 
 Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](/azure/security/fundamentals/shared-responsibility).
 
@@ -312,7 +312,7 @@ The Microsoft Change Management Plan outlines three change phases and recommende
 | Phase 1: Before change | Phase 2: During change | Phase 3: After change |
 |------------------------|------------------------|-----------------------|
 | Identify a change center of excellence or cloud governance board with representatives from each line of defense in the business.<br><br>Validate existing change policies and create policies as required. | Consider the change’s impact to your organization and your users. | Provide feedback about an upcoming service change by using the Message center communication. |
-| Know about the change:<br> Check [Product Roadmap](https://www.microsoft.com/microsoft-365/roadmap)<br> Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
+| Know about the change:<br> - Check [Product Roadmap](https://www.microsoft.com/microsoft-365/roadmap)<br><br> - Check the Message center in the Microsoft 365 [admin center](https://portal.office.com/) | Stay aware of workflow changes to help deployment teams and increase user productivity through proactive adoption and change management. | Review factors that drive successful deployment in your organization and adapt to reduce impact and increase awareness and efficiency. |
 | Provide feedback about an upcoming service change by using the Message center communication. | Ensure that the stakeholders and contacts section of your customer profile is complete and provided to your Technical Account Manager (TAM). | Changes are designed to benefit customers. Help your users be aware of changes, understand them, and get the most out of them. |
 
 Regardless of change strategy, ensuring that your users understand the latest changes is important for successful adoption. The criticality of adoption and change management continues to trend upward as Microsoft and the greater market move toward continuous change.
