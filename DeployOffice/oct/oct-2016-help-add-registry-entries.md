@@ -3,13 +3,12 @@ title: "Office Customization Tool (OCT) 2016 Help Add registry entries"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 8/28/2015
+ms.date: 9/22/2015
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
