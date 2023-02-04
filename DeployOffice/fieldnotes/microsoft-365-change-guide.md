@@ -108,7 +108,7 @@ When you use Planner to manage tasks, group tasks, and formulate a plan of actio
 
 ## Change types and control methods
 
-Microsoft provides various release options and tools to help control and deploy changes in a manner that aligns with your strategy. We previously discussed our recommended strategy; in this section, we describe how you can implement this strategy.
+Microsoft provides various release choices and tools to help control and deploy changes in a manner that aligns with your strategy. We previously discussed our recommended strategy; in this section, we describe how you can implement this strategy.
 
 Microsoft 365 changes are released to both services (like SharePoint Online and Teams) and clients, referred to as Microsoft 365 Apps (like Microsoft Word, Excel, and PowerPoint). Services and clients have different release choices and deployment controls, so it's important to understand the differences as you implement your release management strategy.
 
@@ -282,7 +282,7 @@ Earlier, we shared data that supports the user value of being on Current Channel
 
    - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
 
-   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options & controls](#service-release-options-and-controls) section earlier in this article.
+   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options and controls](#service-release-options-and-controls) section earlier in this article.
 
 - **Power user (expertise):** To democratize update evaluations, identify power users in your production tenant and subscribe them to Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release option (services). Only the specified power users receive continuous or early updates and serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
 
