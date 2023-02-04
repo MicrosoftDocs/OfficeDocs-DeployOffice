@@ -110,7 +110,7 @@ When you use Planner to manage tasks, group tasks, and formulate a plan of actio
 
 Microsoft provides various release options and tools to help control and deploy changes in a manner that aligns with your strategy. We previously discussed our recommended strategy; in this section, we describe how you can implement this strategy.
 
-Microsoft 365 changes are released to both services (like SharePoint Online and Teams) and clients, referred to as Microsoft 365 Apps (like Microsoft Word, Excel, and PowerPoint). Services and clients have different release channels and deployment controls, so it's important to understand the differences as you implement your release management strategy.
+Microsoft 365 changes are released to both services (like SharePoint Online and Teams) and clients, referred to as Microsoft 365 Apps (like Microsoft Word, Excel, and PowerPoint). Services and clients have different release choices and deployment controls, so it's important to understand the differences as you implement your release management strategy.
 
 ### Types of changes for Microsoft 365 services and clients
 
@@ -128,12 +128,12 @@ Microsoft 365 changes can be planned or unplanned, depending on the nature of th
 
 Responsibility for managing these changes is shared between Microsoft and you as the administrator of your Microsoft 365 tenant. For more information, see the [Microsoft shared responsibility model](/azure/security/fundamentals/shared-responsibility).
 
-Now that we've outlined the types of changes that you can expect from Microsoft 365 services and client applications, including associated responsibilities, the next section explores the different release channels and the controls available for each.
+Now that we've outlined the types of changes that you can expect from Microsoft 365 services and client applications, including associated responsibilities, the next section explores the different release choices and the controls available for each.
 
-### Service release channels and controls
-#### Service release channels
+### Service release options and controls
+#### Service release options
 
-Microsoft 365 services provide two channels for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release channels.
+Microsoft 365 services provide two options for receiving new product updates and features as they become available: Standard Release and Targeted Release.[[4]](#footnote-4) These release options help you to manage how your organization receives service updates. We provide controls for you to designate which users receive updates, based on their association to one of the release options.
 
 As Microsoft develops products and features, new releases are validated in various stages. Figure 4 depicts these stages, with each validation stage reaching a broader audience. Before moving to the next stage, a threshold of deployments in the prior stage must complete without any issues.
 
@@ -146,13 +146,13 @@ After identified bugs or issues are resolved, the feature is released to the Mic
 
 After the feature is deemed ready, it's released to all of Microsoft, which is referred to internally as “dogfooding” our products to identify issues, before updates reach the public.
 
-The next stages are public releases. Targeted Release is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release channel. Substantial feedback and product performance data is collected in this stage as our customers perform integration testing and broad validation across many countries, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, this last stage is when these users – and the rest of the world – receive the new features.
+The next stages are public releases. Targeted Release is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release option. Substantial feedback and product performance data is collected in this stage as our customers perform integration testing and broad validation across many countries, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, this last stage is when these users – and the rest of the world – receive the new features.
 
 To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release for both IT and power users.
 
 #### Service release controls
 
-Your primary control for receiving service updates is the configuration of your release channels. Although Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of to software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
+Your primary control for receiving service updates is the configuration of your release options. Although Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of to software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
 
 You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
@@ -278,15 +278,15 @@ Microsoft provides privacy controls so that you can meet compliance and security
 
 Earlier, we shared data that supports the user value of being on Current Channel, which provides continuous updates. We recommend this channel and Monthly Enterprise Channel as two solutions to expedite update evaluation and testing. Microsoft recommends two models for using these channels:
 
-- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release channel. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release channels are available.
+- **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release option. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
 
    - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
 
-   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release channels & controls](#service-release-channels-and-controls) section earlier in this article.
+   - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options & controls](#service-release-options-and-controls) section earlier in this article.
 
-- **Power user (expertise):** To democratize update evaluations, identify power users in your production tenant and subscribe them to Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release channel (services). Only the specified power users receive continuous or early updates and serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
+- **Power user (expertise):** To democratize update evaluations, identify power users in your production tenant and subscribe them to Current Channel or Monthly Enterprise Channel (Microsoft 365 Apps) and the Targeted Release option (services). Only the specified power users receive continuous or early updates and serve as an essential source of feedback, bugs, and experience across various lines of business and user expertise.
 
-You can use these two models concurrently to provide comprehensive, effective, and efficient evaluation of incoming updates. Moving away from the IT-centric acceptance model and democratizing evaluation across your organization improves the speed and quality of the effort. If the remainder of your organization subscribes to Semi-Annual Enterprise Channel or Standard release channels (Microsoft 365 Apps and Microsoft 365 services, respectively), the updates evaluated in the test tenant, by IT and power users, will be ready to deploy with reduced friction.
+You can use these two models concurrently to provide comprehensive, effective, and efficient evaluation of incoming updates. Moving away from the IT-centric acceptance model and democratizing evaluation across your organization improves the speed and quality of the effort. If the remainder of your organization subscribes to Semi-Annual Enterprise Channel or Standard Release option (Microsoft 365 Apps and Microsoft 365 services, respectively), the updates evaluated in the test tenant, by IT and power users, will be ready to deploy with reduced friction.
 
 Internally, Microsoft employs these change evaluation strategies in a program called Microsoft Elite. The Microsoft Elite program is beyond dogfood and serves as our early adopter program. Our employees test features and specific scenarios; they provide quality feedback that improves programs and features before they're released to our customers and colleagues. You can use the release cadences and change strategy described earlier to mimic this program in your own environment.
 
@@ -450,7 +450,7 @@ With a 1.5 margin of error.
 Microsoft provides controls over the diagnostic data collected from user endpoints, as described in [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md). To the extent that Microsoft is a processor or subprocessor of Personal Data subject to the GDPR, the GDPR Terms in the [Microsoft Online Services Data Protection Addendum](https://www.microsoft.com/licensing/product-licensing/products) Attachment 3 govern that processing and the parties also agree to the following terms in this sub-section (“Processing of Personal Data; GDPR”).
 
 4:<span id="footnote-4"></span>
-For guidance about opting in to these service release channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
+For guidance about opting in to these service release options, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
 5:<span id="footnote-5"></span>
 If your entire organization is on a semi-annual cadence, you might find that the six-month period between feature updates causes your clients to fall out of compliance with regulatory requirements or internal policies as you wait for such an extended period between releases.
