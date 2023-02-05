@@ -2,6 +2,22 @@
 
 
 
+## Week of January 30, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/30/2023 | [Deploy Microsoft 365 Apps from a local source](/DeployOffice/deploy-microsoft-365-apps-local-source) | modified |
+| 1/31/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
+| 2/3/2023 | [Custom reporting and database schema reference for Office Telemetry Dashboard](/DeployOffice/compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard) | modified |
+| 2/3/2023 | [Deploy Office Telemetry Dashboard](/DeployOffice/compat/deploy-telemetry-dashboard) | modified |
+| 2/3/2023 | [Manage the privacy of data monitored by Office Telemetry Dashboard](/DeployOffice/compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office) | modified |
+| 2/3/2023 | [Monitor Office compatibility and deployments by using Office Telemetry Dashboard](/DeployOffice/compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard) | modified |
+| 2/3/2023 | [File format reference for Word, Excel, and PowerPoint](/DeployOffice/compat/office-file-format-reference) | modified |
+| 2/3/2023 | [Plan a deployment of Office Telemetry Dashboard](/DeployOffice/compat/plan-telemetry-dashboard-deployment) | modified |
+| 2/3/2023 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+
+
 ## Week of January 23, 2023
 
 
@@ -80,12 +96,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/5/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | added |
-
-
-## Week of December 26, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/29/2022 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
-| 12/29/2022 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
