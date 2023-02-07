@@ -41,6 +41,10 @@ For more information, see the next section about the last versions of Microsoft 
 
 ## Last versions of Microsoft 365 Apps available on Windows 8.1
 
+The last version of Microsoft 365 Apps available on Windows 8.1 depends on whether or not you're getting updates directly from the Office Content Delivery Network (CDN).
+
+### If you get updates directly from the Office CDN
+
 If you’ve configured Microsoft 365 Apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, you’ll no longer receive any feature, security, and other quality updates beyond the specific versions and builds listed in the following table.
 
 | Update channel                           | Version and build                |
@@ -54,7 +58,9 @@ If you’ve configured Microsoft 365 Apps to get updates directly from the Offic
 
 For example, when security updates are released on Tuesday March 14, 2023, your installation of Microsoft 365 Apps on Windows 8.1 won't get those security updates. Or, for example, when a version newer than Version 2301 is released in Current Channel, your installation of Microsoft 365 Apps won't be updated to that newer version.
 
-If you control the deployment of updates (for example, by using Microsoft Configuration Manager or the Office Deployment Tool), you’ll be prevented from updating beyond Version 2302. This restriction applies to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
+### If you get updates from somewhere other than the Office CDN
+
+If you control the deployment of updates and are using a location other than the Office CDN (for example, Microsoft Configuration Manager or an internal network share), you’ll be prevented from updating beyond Version 2302. This restriction applies to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
 
 > [!IMPORTANT]
 > Even though you can install or update to Version 2302, running Microsoft 365 Apps on Windows 8.1 isn't supported.
