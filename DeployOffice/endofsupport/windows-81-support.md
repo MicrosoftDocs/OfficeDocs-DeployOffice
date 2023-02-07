@@ -27,9 +27,9 @@ Using Microsoft 365 Apps on older and unsupported operating systems may cause pe
 
 ## What happens to Microsoft 365 Apps on Windows 8.1 after January 10, 2023
 
-Support for Windows 8.1 ended on January 10, 2023. As of that date, Microsoft 365 Apps is no longer supported on a device running Windows 8.1.
+Support for Windows 8.1 ended on January 10, 2023. As of that date, Microsoft 365 Apps is no longer supported on a device running Windows 8.1, although your apps, such as Word, will continue to work.
 
-In addition to not being supported, the following restrictions will apply to Microsoft 365 Apps on devices running Windows 8.1 after February 14, 2023.
+In addition to not being supported, the following restrictions will apply to Microsoft 365 Apps on devices running Windows 8.1.
 
 - You won't receive any new feature, security, or other quality updates for an existing installation of Microsoft 365 Apps.
 - You won't be able to install a new version of Microsoft 365 Apps.
@@ -37,7 +37,7 @@ In addition to not being supported, the following restrictions will apply to Mic
 
 These restrictions apply to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
 
-For more information, see [Last versions of Microsoft 365 Apps available on Windows 8.1](#last-versions-of-microsoft-365-apps-available-on-windows-81).
+For more information, see the next section about the last versions of Microsoft 365 Apps available on Windows 8.1.
 
 ## Last versions of Microsoft 365 Apps available on Windows 8.1
 
