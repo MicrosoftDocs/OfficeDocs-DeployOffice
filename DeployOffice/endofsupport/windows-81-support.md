@@ -33,7 +33,6 @@ In addition to not being supported, the following restrictions will apply to Mic
 
 - You won't receive any new feature, security, or other quality updates for an existing installation of Microsoft 365 Apps.
 - You won't be able to install a new version of Microsoft 365 Apps.
-- You won't be able to perform an Online Repair of Microsoft 365 Apps.
 
 These restrictions apply to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
 
