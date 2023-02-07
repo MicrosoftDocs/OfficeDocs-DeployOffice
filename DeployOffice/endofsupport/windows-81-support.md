@@ -41,8 +41,6 @@ For more information, see the next section about the last versions of Microsoft 
 
 ## Last versions of Microsoft 365 Apps available on Windows 8.1
 
-If you’re using Microsoft 365 Apps on a device running Windows 8.1, you should be aware of the following information about updates.
-
 If you’ve configured Microsoft 365 Apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, you’ll no longer receive any feature, security, and other quality updates beyond the specific versions and builds listed in the following table.
 
 | Update channel                           | Version and build                |
