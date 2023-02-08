@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 description: "Provides guidance to Office admins about configuring trusted publishers for Office files."
 ms.date: 09/01/2022
 ---

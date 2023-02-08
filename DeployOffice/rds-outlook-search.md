@@ -8,8 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.date: 08/24/2017
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier2
 recommendations: false
 description: Learn about your options for managing Outlook data stored to a user profile disk.
 ---

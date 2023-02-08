@@ -8,8 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
+ms.collection: tier2
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
 ---

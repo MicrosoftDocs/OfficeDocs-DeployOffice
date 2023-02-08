@@ -7,7 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."

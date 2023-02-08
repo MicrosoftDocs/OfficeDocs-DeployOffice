@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
 ms.date: 06/06/2022
 ---

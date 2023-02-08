@@ -8,8 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.date: 08/31/2018
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier2
 recommendations: false
 description: Learn about using Outlook 2016, OneDrive, and Skype for Business in RDSH and VDI deployments
 

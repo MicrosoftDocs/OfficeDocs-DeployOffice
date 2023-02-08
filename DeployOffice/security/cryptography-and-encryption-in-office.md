@@ -8,8 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
+ms.collection: tier2
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains the settings that you can use to encrypt data in Office, and provides information about compatibility with previous versions of Office."
 ---
