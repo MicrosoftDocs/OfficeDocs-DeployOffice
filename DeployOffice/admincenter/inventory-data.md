@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier2
 recommendations: false
 description: "Lists the device and add-in information that is sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center."
 ms.date: 06/23/2021

@@ -8,6 +8,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier2
 recommendations: false
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides admins information about choosing a default file format when using the Office Customization Tool."
