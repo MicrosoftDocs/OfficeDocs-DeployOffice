@@ -7,8 +7,8 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
 ms.collection: tier2
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users."
 ---

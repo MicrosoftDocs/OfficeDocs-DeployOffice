@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
 ms.date: 02/04/2022

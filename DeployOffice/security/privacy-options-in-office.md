@@ -7,8 +7,8 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
 ms.collection: tier2
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
 ---

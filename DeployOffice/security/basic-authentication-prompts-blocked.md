@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."

@@ -7,8 +7,8 @@ ms.date: 11/10/2015
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
 ms.collection: tier2
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office."
 ---

@@ -7,8 +7,8 @@ ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
 ms.collection: tier2
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use the Office DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files."
 ---

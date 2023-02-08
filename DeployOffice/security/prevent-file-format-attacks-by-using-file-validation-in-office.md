@@ -7,8 +7,8 @@ ms.date: 9/21/2015
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: medium
 ms.collection: tier2
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how you can prevent file format attacks using file validation in Office."
 ---
