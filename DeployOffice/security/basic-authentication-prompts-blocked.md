@@ -8,7 +8,6 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
 ms.date: 08/30/2022
 ---

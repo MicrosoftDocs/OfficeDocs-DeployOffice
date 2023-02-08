@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with resources related to end of support for Office."
 ms.date: 07/20/2020

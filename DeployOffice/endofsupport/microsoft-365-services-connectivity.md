@@ -8,8 +8,6 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 search.appverid: MET150
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
