@@ -7,9 +7,8 @@ ms.date: 9/21/2015
 audience: ITPro
 ms.topic: landing-page
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Lists and describes articles that will help you work with the security controls, as well as understand the identity authorization and authentication features that are available in Office."
 ---
