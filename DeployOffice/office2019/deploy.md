@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- Office2019
+ms.collection: tier2
 description: "Provides IT admins with information on how to deploy Office 2019."
 ms.date: 09/20/2018
 ---
