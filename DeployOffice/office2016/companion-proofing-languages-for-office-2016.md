@@ -8,8 +8,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Identify the companion proofing languages that are included with Office 2016."
 ---
 

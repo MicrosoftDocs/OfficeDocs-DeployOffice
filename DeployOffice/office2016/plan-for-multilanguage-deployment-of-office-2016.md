@@ -8,8 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
 ---
 
