@@ -31,7 +31,7 @@ Volume licensed versions of Office 2019 now use Click-to-Run, instead of Windows
 Click-to-Run handles updates differently than Windows Installer (MSI). The following provides information about how updates work for Office 2019.
 
 - When there are updates for Office 2019, Microsoft releases a new build of Office 2019 on the Office Content Delivery Network (CDN) on the internet. This new build includes all the latest security and quality updates.
-- By default, Office 2019 is configured to be updated automatically directly from the Office CDN, although that can be changed. More on that later.
+- By default, Office 2019 is configured to be updated automatically directly from the Office CDN, although that can be changed. For more information, see [Configure where Office 2019 gets updates from](#configure-where-office-2019-gets-updates-from).
 - There is a scheduled task named “Office Automatic Updates 2.0 ” on the computer on which Office 2019 is installed that checks for updates on a regular basis.
 - If updates are available, Office begins downloading the updates automatically. The user doesn’t have to do anything. As part of this process, Office also figures out what’s different between the latest version of Office 2019 up on the Office CDN and the version of Office 2019 that’s installed on the computer. Based on that, it only downloads what’s needed to update Office 2019 to the latest version.
 - While the updates are being downloaded, users can continue to use Office apps, such as Word. After the updates are downloaded, the updates are installed. If any Office apps are open, users will be prompted to save their work and close the apps, so that the updates can be installed.
