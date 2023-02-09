@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides an overview of the update process for Microsoft 365 Apps."
 ms.date: 04/20/2020

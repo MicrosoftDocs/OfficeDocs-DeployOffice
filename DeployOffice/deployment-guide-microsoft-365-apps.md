@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-get-started
+ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
 ms.date: 04/20/2020

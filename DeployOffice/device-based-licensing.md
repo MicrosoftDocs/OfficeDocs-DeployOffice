@@ -3,13 +3,10 @@ title: "Device-based licensing for Microsoft 365 Apps for enterprise"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
-
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
 ms.date: 08/06/2019

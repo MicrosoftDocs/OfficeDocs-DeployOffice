@@ -7,10 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides admins with guidance on how to update Microsoft 365 Apps by using Microsoft Configuration Manager"
 ms.date: 04/20/2020

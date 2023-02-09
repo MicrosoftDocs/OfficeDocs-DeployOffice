@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy subscription and volume licensed versions of Visio to users in their organization."
 ms.date: 03/20/2018

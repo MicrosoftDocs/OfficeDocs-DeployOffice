@@ -7,10 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
 ms.date: 06/08/2018

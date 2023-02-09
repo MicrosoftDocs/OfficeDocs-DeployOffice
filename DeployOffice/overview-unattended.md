@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"
 ms.date: 01/15/2021

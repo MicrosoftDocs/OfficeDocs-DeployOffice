@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
 ms.date: 05/01/2018

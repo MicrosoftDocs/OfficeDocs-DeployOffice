@@ -7,12 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom:
-- Ent_Office_ProPlus
-- Ent_Office_Compat
 recommendations: false
 description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
 ms.date: 04/20/2020

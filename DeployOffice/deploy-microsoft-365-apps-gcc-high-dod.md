@@ -7,8 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: null
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides guidance for deploying Microsoft 365 Apps for enterprise  in a GCC High or DoD environment"
 ms.date: 04/20/2020

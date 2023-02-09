@@ -8,8 +8,6 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 search.appverid:
 - MET150
 recommendations: false

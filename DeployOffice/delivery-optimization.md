@@ -7,10 +7,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Microsoft 365 Apps."
 ms.date: 09/23/2019

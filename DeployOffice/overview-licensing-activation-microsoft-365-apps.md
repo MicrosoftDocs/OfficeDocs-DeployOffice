@@ -8,8 +8,6 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
 ms.date: 04/20/2020
