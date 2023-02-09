@@ -5,12 +5,9 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
 ms.date: 01/09/2023

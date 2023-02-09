@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

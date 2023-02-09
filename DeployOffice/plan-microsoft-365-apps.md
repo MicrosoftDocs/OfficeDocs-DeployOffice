@@ -1,17 +1,13 @@
 ---
 title: "Plan your enterprise deployment of Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
 ms.date: 04/20/2020

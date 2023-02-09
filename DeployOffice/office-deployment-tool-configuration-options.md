@@ -1,16 +1,13 @@
 ---
 title: Configuration options for the Office Deployment Tool
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
 ms.date: 04/20/2020

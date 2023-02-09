@@ -6,11 +6,8 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of extended offline access for Microsoft 365 Apps."
 ms.date: 05/11/2020
