@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: tier1
 recommendations: false
 description: "Provides steps for admins to use Group Policy to install Microsoft 365 Insider on Windows devices."
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Use Group Policy to install Microsoft 365 Insider on Windows devices

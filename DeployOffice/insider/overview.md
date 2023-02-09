@@ -8,9 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: tier1
+ms.custom: intro-get-started
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Microsoft 365 Insider Program for Business

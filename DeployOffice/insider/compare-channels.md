@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: tier1
 recommendations: false
 description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Compare Microsoft 365 Insider channels

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: tier1
 recommendations: false
 description: "Provides steps for Mac users to use Microsoft AutoUpdate (MAU) to choose Microsoft 365 Insider for themselves."
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)
