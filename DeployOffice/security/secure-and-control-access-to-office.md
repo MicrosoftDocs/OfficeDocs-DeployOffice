@@ -6,7 +6,7 @@ manager: dougeby
 ms.date: 9/21/2015
 audience: ITPro
 ms.topic: landing-page
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.collection: tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW

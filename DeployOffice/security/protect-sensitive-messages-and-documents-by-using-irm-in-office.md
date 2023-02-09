@@ -6,7 +6,7 @@ manager: dougeby
 ms.date: 9/8/2017
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.collection: tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
