@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how admins can use the Office Deployment Tool or Group Policy to Configure update settings for Microsoft 365 Apps."

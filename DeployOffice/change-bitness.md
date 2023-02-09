@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Microsoft 365 Apps, such as from 32-bit to 64-bit."

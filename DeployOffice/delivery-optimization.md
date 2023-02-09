@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Microsoft 365 Apps."

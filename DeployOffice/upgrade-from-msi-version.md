@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
