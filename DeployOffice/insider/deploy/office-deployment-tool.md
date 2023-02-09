@@ -7,11 +7,10 @@ audience: ITPro
 ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Microsoft_365_Insider
+ms.collection: tier1
 recommendations: false
 description: "Provides steps for admins to use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices
