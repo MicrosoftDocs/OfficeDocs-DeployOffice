@@ -7,12 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), including for diagnostic data and connected experiences."
 hideEdit: true
 ms.date: 03/22/2019
