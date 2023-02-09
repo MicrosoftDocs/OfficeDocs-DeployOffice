@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides information about which Office products and versions have the most recent privacy controls."
 hideEdit: true
 ms.date: 09/10/2020

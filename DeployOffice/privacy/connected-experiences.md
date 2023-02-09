@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
 ms.date: 04/16/2019
