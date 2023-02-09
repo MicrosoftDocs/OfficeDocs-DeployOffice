@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."

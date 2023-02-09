@@ -7,6 +7,7 @@ ms.reviewer: mattphil
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Overview of viewer mode for Microsoft 365 Apps."

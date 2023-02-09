@@ -5,7 +5,8 @@ author: DHB-MSFT
 manager: dougeby 
 audience: ITPro 
 ms.topic: article 
-ms.service: o365-administration 
+ms.service: o365-proplus-itpro 
+ms.collection: tier2
 ms.localizationpriority: medium 
 recommendations: false
 description: "List of recently updated articles about deploying Microsoft 365 Apps" 

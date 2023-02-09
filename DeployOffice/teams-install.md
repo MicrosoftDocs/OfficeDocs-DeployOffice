@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."

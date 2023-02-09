@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provide Office admins with guidance and resources to help make their Microsoft 365 environment as inclusive and accessible as possible for their users"

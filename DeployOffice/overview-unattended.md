@@ -6,6 +6,7 @@ manager: dougebyu
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"

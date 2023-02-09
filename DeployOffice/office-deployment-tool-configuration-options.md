@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"

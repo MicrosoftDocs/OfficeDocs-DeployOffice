@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: null
 recommendations: false
 description: "Provides guidance for deploying Microsoft 365 Apps for enterprise  in a GCC High or DoD environment"

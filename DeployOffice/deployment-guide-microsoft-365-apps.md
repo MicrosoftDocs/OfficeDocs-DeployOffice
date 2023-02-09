@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 ms.custom: intro-get-started
 recommendations: false

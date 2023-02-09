@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides IT admins with information about which versions of Office, Project, and Visio can be installed together on the same computer."
