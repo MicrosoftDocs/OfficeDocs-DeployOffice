@@ -1,18 +1,13 @@
 ---
 title: "Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom:
-- Ent_Office_ProPlus
-- Ent_Office_Compat
 recommendations: true
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Microsoft 365 Apps"
 ms.date: 06/13/2019

@@ -6,9 +6,8 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
 ms.date: 04/20/2020
