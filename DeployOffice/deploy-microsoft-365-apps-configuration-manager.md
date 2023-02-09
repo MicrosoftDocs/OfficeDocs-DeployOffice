@@ -1,7 +1,7 @@
 ---
 title: "Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

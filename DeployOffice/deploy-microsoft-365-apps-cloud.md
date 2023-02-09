@@ -1,7 +1,7 @@
 ---
 title: "Deploy Microsoft 365 Apps from the cloud"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

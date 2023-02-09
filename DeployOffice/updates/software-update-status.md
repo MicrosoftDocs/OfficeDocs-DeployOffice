@@ -1,7 +1,7 @@
 ---
 title: "View software update status for Microsoft 365 Apps installations"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "Manage Microsoft 365 installation options in the Microsoft 365 admin center"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

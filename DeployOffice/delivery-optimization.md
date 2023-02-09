@@ -1,7 +1,7 @@
 ---
 title: "Delivery Optimization and Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

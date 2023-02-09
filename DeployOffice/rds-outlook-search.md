@@ -1,7 +1,7 @@
 ---
 title: Dealing with Outlook search in non-persistent RDS environments
-author: DHB-MSFT
-ms.author: danbrown
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article

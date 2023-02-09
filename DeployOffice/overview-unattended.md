@@ -1,7 +1,7 @@
 ---
 title: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougebyu
 audience: ITPro
 ms.topic: article
