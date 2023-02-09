@@ -6,6 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides IT Pros with info about the different application compatibility and readiness tools that can help organizations move to Microsoft 365 Apps"
