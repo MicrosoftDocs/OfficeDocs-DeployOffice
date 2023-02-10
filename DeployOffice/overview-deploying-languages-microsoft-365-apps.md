@@ -6,13 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
+ms.date: 04/20/2020
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
@@ -22,7 +20,7 @@ This article covers the options for deploying languages for Microsoft 365 Apps, 
 The guidance in this article applies to the following Office products:
 
 - Microsoft 365 Apps for enterprise, which comes with many Office 365 and Microsoft 365 enterprise plans.
-- Microsoft 365 Apps for business (previously named Office 365 Business), which comes with some Microsoft 365 business plans.
+- Microsoft 365 Apps for business, which comes with some Microsoft 365 business plans.
 - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
 - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
 

@@ -1,16 +1,17 @@
 ---
 title: "Set preferences for Outlook for Mac"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
+ms.date: 10/19/2018
 ---
 
 # Set preferences for Outlook for Mac

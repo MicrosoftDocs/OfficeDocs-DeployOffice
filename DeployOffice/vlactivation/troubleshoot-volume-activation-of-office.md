@@ -5,11 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: troubleshooting
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Provides Office admins with information on how to troubleshoot common errors for KMS or MAK-based activation of Office."
+ms.date: 03/20/2018
 ---
 
 # Troubleshoot volume activation of Office

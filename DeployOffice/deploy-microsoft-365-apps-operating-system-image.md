@@ -1,16 +1,16 @@
 ---
 title: "Deploy Microsoft 365 Apps as part of an operating system image"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "You can include Microsoft 365 Apps as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Microsoft 365 Apps when you create the image. That's because you need your users to activate their Microsoft 365 Apps installations by signing in with their accounts."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps as part of an operating system image

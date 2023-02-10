@@ -7,12 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about how to manage privacy settings for Office on Android devices."
 hideEdit: true
+ms.date: 11/07/2019
 ---
 
 # Use policy settings to manage privacy controls for Office on Android devices

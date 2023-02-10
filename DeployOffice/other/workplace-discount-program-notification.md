@@ -7,8 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier2
 ROBOTS: NOINDEX, NOFOLLOW
 hideEdit: true
+ms.date: 07/20/2022
 ---
 
 # In-product notification for Microsoft Workplace Discount Program

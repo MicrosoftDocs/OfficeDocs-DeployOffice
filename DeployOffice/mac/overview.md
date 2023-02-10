@@ -1,17 +1,18 @@
 ---
 title: "Overview of Office for Mac (for admins and IT Pros)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
+ms.date: 09/16/2021
 ---
 
 # Overview of Office for Mac (for admins and IT Pros)
@@ -40,14 +41,11 @@ For all the system requirements, refer to [System requirements for Microsoft 365
 
 ## Chipset support
 
-Office provides native support for both Apple Silicon and Intel-based Mac devices. For more information, refer to [Microsoft 365 and Office 2019 support for Apple Silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
-
-> [!NOTE]
-> OneDrive and Microsoft Teams don't natively support Apple Silicon.
+Office provides native support for both Apple silicon and Intel-based Mac devices. All installation and update packages are provided in Universal 2 format. For more information, refer to [Microsoft 365, Office 2021, and Office 2019 support for Apple silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
 ## Languages
 
-All the [supported languages](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Mac&ID0EAACAAA=Mac) in Office for Mac a included as part of the installer package (.pkg) file. There aren't separate installer package files for each language, which means that admins can't choose which language to deploy to users. Instead, the language is based on the System Preferences settings. If none of the language settings are supported by Office, Office installs in English. However, all the languages get installed, which means users can [switch to a different language](https://support.microsoft.com/office/f5c54ff9-a6fa-4348-a43c-760e7ef148f8#ID0EACAAA=MacOS&ID0EAACAAA=MacOS&OfficeVersion=macOS) without having to reinstall Office.
+All the [supported languages](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Mac&ID0EAACAAA=Mac) in Office for Mac are included as part of the installer package (.pkg) file. There aren't separate installer package files for each language, which means that admins don't need to choose which language to deploy to users. Instead, the language used at app start is based on the preferred locale settings in macOS. Users can [switch to a different language](https://support.microsoft.com/office/f5c54ff9-a6fa-4348-a43c-760e7ef148f8#ID0EACAAA=MacOS&ID0EAACAAA=MacOS&OfficeVersion=macOS) without having to reinstall Office.
 
 ## Updates
 
@@ -64,7 +62,7 @@ If you're looking for information to help your users get started with Office for
 To review the latest features in each monthly release, refer to [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426?#platform=mac) or [Release notes for Office for Mac](/officeupdates/release-notes-office-for-mac).
 
 > [!TIP]
-> For early access to new features, check out the [Office Insider Program for Business](../office-insider/index.yml).
+> For early access to new features, check out the [Microsoft 365 Insider Program for Business](../insider/index.yml).
 
 #### Office LTSC for Mac 2021 features
 

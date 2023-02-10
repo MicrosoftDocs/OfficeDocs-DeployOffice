@@ -4,7 +4,7 @@
 ## [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
 
 ## Get started
-### [What's new](whats-new-office-it-pros.md)
+### [What's new](whats-new.md)
 ### [About Microsoft 365 Apps](about-microsoft-365-apps.md)
 ### [Microsoft 365 Apps admin center](admincenter/overview.md)
 ### [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md)
@@ -21,6 +21,7 @@
 
 ## Manage
 ### [Overview of update channels](overview-update-channels.md)
+### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ### [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 ### [Change the update channel](change-update-channels.md)
 ### [Delivery Optimization](delivery-optimization.md)
@@ -103,4 +104,4 @@
 
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 
-## [Office Insider Program for Business](office-insider/index.yml)
+## [Microsoft 365 Insider Program for Business](insider/index.yml)

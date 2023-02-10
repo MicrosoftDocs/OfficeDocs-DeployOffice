@@ -5,14 +5,12 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
+ms.collection: tier2
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2021."
+ms.date: 09/14/2021
 ---
 
 # Deploy Office LTSC 2021

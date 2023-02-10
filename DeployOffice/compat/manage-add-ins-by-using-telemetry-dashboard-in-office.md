@@ -5,16 +5,16 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Describes how to improve Office performance by managing add-ins by using Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Manage add-ins by using Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.

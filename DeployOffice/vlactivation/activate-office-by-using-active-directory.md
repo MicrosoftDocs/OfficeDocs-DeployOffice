@@ -5,11 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Provides Office admins with information about using Active Directory to activate volume licensed versions of Office, Project, and Visio."
+ms.date: 03/20/2018
 ---
 
 # Activate volume licensed versions of Office by using Active Directory
@@ -24,14 +24,13 @@ To use Active Directory-based activation, the volume licensed version of Office,
 
 - Windows 11
 - Windows 10
-- Windows 8.1
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server 2016
 - Windows Server 2012 R2
 - Windows Server 2012  
 
-Review the [System requirements for Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying to users in your organization. For example, Office LTSC Professional Plus 2021 is supported on Windows 11 and Windows 10 but isn't supported on Windows 8.1.
+Review the [System requirements for Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying to users in your organization.
 
 ## Configure Active Directory-based activation
 

@@ -6,11 +6,10 @@ manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
 ---
 

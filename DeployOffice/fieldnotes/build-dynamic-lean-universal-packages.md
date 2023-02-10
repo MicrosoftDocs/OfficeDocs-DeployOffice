@@ -7,13 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier3
 description: "Field best practices: How to provide additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps to your users with minimal maintenance overhead"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
+ms.date: 02/25/2020
 ---
 
 # Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps

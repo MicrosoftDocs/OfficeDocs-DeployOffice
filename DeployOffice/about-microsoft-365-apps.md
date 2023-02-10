@@ -1,21 +1,17 @@
 ---
 title: "About Microsoft 365 Apps in the enterprise"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-overview
+ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
+ms.date: 04/20/2020
 ---
 
 # About Microsoft 365 Apps in the enterprise

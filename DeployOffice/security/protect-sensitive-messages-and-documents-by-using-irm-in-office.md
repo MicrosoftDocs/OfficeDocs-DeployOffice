@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 9/8/2017
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
 ---
@@ -81,7 +80,7 @@ AD RMS and Azure RMS manage licensing and other server functions that work with 
 RMS client software is included in Windows Vista, Windows 7, Windows 8.1, and Windows 10. In order to enable the additional IRM functionality in Office by using the RMS sharing application, users can install it themselves or administrators can automatically deploy it for users.
 
 > [!NOTE]
-> Windows Vista and Windows 7 are no longer supported.
+> Windows Vista, Windows 7, and Windows 8.1 are no longer supported.
   
 ### Defining and deploying rights policy templates for Office 2016
 

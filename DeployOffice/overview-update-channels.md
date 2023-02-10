@@ -1,19 +1,16 @@
 ---
 title: "Overview of update channels for Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
+ms.date: 04/20/2020
 ---
 
 # Overview of update channels for Microsoft 365 Apps
@@ -228,7 +225,7 @@ You can use the [Office Deployment Tool](overview-office-deployment-tool.md) and
 You can [download](https://www.microsoft.com/download/details.aspx?id=49030) the Administrative Template files (ADMX/ADML) and enable the Update Channel policy setting. When you enable the policy setting, you can select the appropriate update channel from a drop-down list. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.
 
 #### Microsoft 365 admin center 
-If you allow your users to install Office for themselves from the portal, you can specify which update channel they install. To do that, sign in to the Microsoft 365 admin center with your admin account, go to **Show all** > **Settings** > **Org settings** > **Services** > **Office installation options**, and then choose the appropriate update channel for your users. This setting applies to all users in your tenant and only applies to users that install Office for themselves from the portal.
+If you allow your users to install Office for themselves from the portal, you can specify which update channel they install. To do that, sign in to the Microsoft 365 admin center with your admin account, go to **Show all** > **Settings** > **Org settings** > **Services** > **Microsoft 365 installation options**, and then choose the appropriate update channel for your users. This setting applies to all users in your tenant and only applies to users that install Office for themselves from the portal.
 
 ### Manage the update channel
 After Office is installed, you can change the update channel for a device. For more information on how to do that, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md). Keep in mind that if you change the update channel for the device, the features that the user has access to will change. For example, if you move the device from Current Channel to Semi-Annual Enterprise Channel, the user might lose access to features that they’ve been using, because those features aren’t available yet in Semi-Annual Enterprise Channel.
@@ -240,7 +237,7 @@ After Office is installed, you can change the update channel for a device. For m
 - OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app update process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
 - If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
-- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you're Current Channel and the update channels available through the [Office Insider program](https://insider.office.com/handbook#Office-Insider-levels).
+- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you are Current Channel and the update channels available through the [Microsoft 365 Insider program](https://insider.office.com/handbook#Office-Insider-levels).
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
@@ -257,6 +254,6 @@ After Office is installed, you can change the update channel for a device. For m
 - Any given version of Current Channel (Preview) is supported only until the next version of Current Channel (Preview) is released, which is usually every month.  For example, Version 2004 is supported until Version 2005 is released.
 - Any given version of Semi-Annual Enterprise Channel (Preview) is supported for only six months. This coincides with how often Semi-Annual Enterprise Channel (Preview) is updated with new features. For example, the version of Semi-Annual Enterprise Channel (Preview) that is released in March with new features is supported until September, which is the next time new features are released in Semi-Annual Enterprise Channel (Preview). The September release is supported until the following March.  To see what version of Semi-Annual Enterprise Channel (Preview) is currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
 
-### Office Insider program
-- The Office Insider program gives you early access to Office features through these update channels: Beta Channel and Current Channel (Preview). For more information, see the [Office Insider Program for Business](office-insider/index.yml).
+### Microsoft 365 Insider program
+- The Microsoft 365 Insider program gives you early access to Microsoft 365 Apps features through these update channels: Beta Channel and Current Channel (Preview). For more information, see the [Microsoft 365 Insider Program for Business](insider/index.yml).
 - Beta Channel, which was previously named Insider (and sometimes referred to as Insider Fast), provides access to new features even before they're available in Current Channel (Preview). But, Beta Channel is ***not*** supported so should only be used in test environments and by a small group of select users, such as IT staff or application developers.

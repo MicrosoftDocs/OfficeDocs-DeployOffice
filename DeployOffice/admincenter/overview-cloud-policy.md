@@ -8,13 +8,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
+ms.date: 07/12/2022
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -35,8 +32,9 @@ The following are the requirements for using Cloud Policy with Microsoft 365 App
 - A [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps for enterprise.
 - User accounts created in or synchronized to Azure Active Directory (Azure AD). The user must be signed into Microsoft 365 Apps for enterprise with an Azure AD-based account.
 - Cloud Policy supports security groups and mail-enabled security groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
-- To create a policy configuration, you must be assigned one of the following roles in Azure AD: Global Administrator, Security Administrator, or Office Apps Admin. The role must be assigned to your user account. Currently, Azure AD roles assigned to groups aren't supported by Cloud Policy.
+- To create a policy configuration, you must be assigned one of the following roles in Azure AD: Global Administrator, Security Administrator, or Office Apps Admin.
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
+- Authenticated proxies aren’t supported by Cloud Policy service.
 
 > [!IMPORTANT]
 > - Cloud Policy isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
@@ -59,13 +57,15 @@ The following are the basic steps for creating a policy configuration.
 
 ## Managing policy configurations
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page, and then select **Edit**. Make the appropriate changes and then select **Update**.
+To change a policy configuration, select the policy configuration on the **Policy configurations** page.  This will open the policy configuration. Make the appropriate changes and then navigate to the **Review and publish** page and select **Update**.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
 
 To see which policies are configured when you're editing a policy configuration, navigate to the **Policies** section and filter by the **Status** column or select the **Configured** slicer at the top of the policy table. You can also filter by application and platform.
 
 To change the priority order for the policy configurations, select **Reorder priority** on the **Policy configurations** page.
+
+If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This will generate a CSV file for download.
 
 ## How the policy configuration is applied
 
@@ -108,6 +108,8 @@ If the expected policies haven't been correctly applied to a user's device, try 
 - Make sure the user is signed into Microsoft 365 Apps for enterprise, has activated it, and has a valid license.
 
 - Make sure the user is part of the appropriate security group.
+
+- Verify you are not using an authenticated proxy.
 
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect.
 

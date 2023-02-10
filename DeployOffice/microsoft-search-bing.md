@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about an optional Microsoft Search in Bing extension for Google Chrome, which relies on a background service that is installed with Microsoft 365 Apps for enterprise."
+ms.date: 01/17/2020
 ---
 
 # Microsoft Search in Bing and Microsoft 365 Apps for enterprise

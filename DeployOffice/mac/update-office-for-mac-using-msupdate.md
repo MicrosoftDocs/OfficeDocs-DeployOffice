@@ -1,6 +1,6 @@
 ---
 title: "Update Microsoft applications for Mac by using msupdate"
-ms.author: danbrown
+ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
@@ -8,9 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
+ms.date: 04/03/2018
 ---
 
 # Update Microsoft applications for Mac by using msupdate

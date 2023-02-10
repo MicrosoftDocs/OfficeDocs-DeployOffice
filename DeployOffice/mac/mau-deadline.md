@@ -1,16 +1,17 @@
 ---
 title: "Set a deadline for updates from Microsoft AutoUpdate"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Provides admins with information about how to set a deadline for updates provided from Microsoft AutoUpdate (MAU)"
+ms.date: 07/12/2019
 ---
 
 # Set a deadline for updates from Microsoft AutoUpdate

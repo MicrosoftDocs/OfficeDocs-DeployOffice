@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
+ms.date: 07/30/2018
 ---
 
 # Deployment guide for OneNote
