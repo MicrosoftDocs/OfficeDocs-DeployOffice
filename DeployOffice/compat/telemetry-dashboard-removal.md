@@ -80,12 +80,15 @@ The SQL Server database, which stores the information used by Office Telemetry D
 As an alternative to Office Telemetry Dashboard, we recommend using the following tools, depending on the information you need:
 
 - Readiness Toolkit for Office add-ins and VBA
-- Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
 - Inventory feature in the Microsoft 365 Apps admin center
+- Apps health feature in the Microsoft 365 Apps admin center
+- Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
 
 For more information about these tools, see the following articles:
 
 - [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](../readiness-tools.md)
 - [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md)
-- [Microsoft 365 Apps readiness dashboard (in Configuration Manager)](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)
+- [Overview of Apps health in the Microsoft 365 Apps admin center](../admincenter/microsoft-365-apps-health.md)
+- [Introduction to Apps health (video)](https://youtu.be/g9tiCFNDOEw)
 - [Overview of inventory in the Microsoft 365 Apps admin center](../admincenter/inventory.md)
+- [Microsoft 365 Apps readiness dashboard (in Configuration Manager)](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)
