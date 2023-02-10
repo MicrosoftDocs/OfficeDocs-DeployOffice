@@ -7,11 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Microsoft_365_Insider
+ms.collection: tier1
 recommendations: false
 description: "Provides an overview of the deployment options for Microsoft 365 Insider for Windows and Mac"
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Options for deploying Microsoft 365 Insider

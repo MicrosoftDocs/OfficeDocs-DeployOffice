@@ -6,9 +6,8 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8 end of support on Microsoft 365 Apps."
 ms.date: 06/29/2020

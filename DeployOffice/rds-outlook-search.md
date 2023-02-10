@@ -1,15 +1,14 @@
 ---
 title: Dealing with Outlook search in non-persistent RDS environments
-author: DHB-MSFT
-ms.author: danbrown
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
 ms.date: 08/24/2017
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: Learn about your options for managing Outlook data stored to a user profile disk.
 ---

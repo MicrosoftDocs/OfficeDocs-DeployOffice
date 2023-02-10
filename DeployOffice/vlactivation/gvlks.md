@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: Lists the Generic Volume License Keys (GVLKs) used to activate volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 

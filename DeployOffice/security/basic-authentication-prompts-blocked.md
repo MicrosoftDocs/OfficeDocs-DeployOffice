@@ -6,10 +6,8 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ROBOTS: NOINDEX, NOFOLLOW
-ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
 ms.date: 08/30/2022
 ---

@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users."
 ---

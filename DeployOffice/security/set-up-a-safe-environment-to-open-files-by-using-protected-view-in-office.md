@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 11/2/2017
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office."
 ---
