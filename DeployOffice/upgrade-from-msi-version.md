@@ -6,13 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
+ms.date: 06/08/2018
 ---
 
 # Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps
@@ -144,7 +142,7 @@ The following are some additional details about using the RemoveMSI element in y
 - You can also use these settings if you’re installing any of the following products:
    - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
    - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
-   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
+   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - Office LTSC Professional Plus 2021 or Office LTSC Standard 2021.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.

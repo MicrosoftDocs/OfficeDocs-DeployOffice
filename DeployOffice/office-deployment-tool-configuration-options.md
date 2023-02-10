@@ -1,20 +1,17 @@
 ---
 title: Configuration options for the Office Deployment Tool
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
+ms.date: 04/20/2020
 ---
-
 
 # Configuration options for the Office Deployment Tool
 
@@ -580,7 +577,7 @@ Allowed values:
 
 Optional. The default value is **True** if not specified.
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and Windows 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
 
 Allowed values:
 
@@ -590,7 +587,8 @@ Allowed values:
           Value="TRUE"
 
 > [!NOTE]
-> Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 8.1. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
 
 ## Remove element
 

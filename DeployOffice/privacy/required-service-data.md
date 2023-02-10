@@ -7,13 +7,12 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with an overview of required service data that is collected about connected experiences in Office."
 hideEdit: true
+ms.date: 04/26/2019
 ---
+
 # Required service data for Office
 
 > [!NOTE]

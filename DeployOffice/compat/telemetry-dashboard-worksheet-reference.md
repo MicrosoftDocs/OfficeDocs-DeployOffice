@@ -5,16 +5,16 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
+ms.date: 03/20/2018
 ---
 
 # Office Telemetry Dashboard worksheet reference
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
@@ -433,7 +433,9 @@ In the following screenshot of the **Deployments** worksheet, you can see how ma
 You can see that there are still 32-bit computers that are running Office 2003. You may want to contact these users to understand if they have any concerns about how to upgrade. You can also create a custom report to show more information about these users, such as their computer hardware.
   
 Also, you should be aware that Windows 8.1 is now supported on ARM-based architectures. If your organization has users who have Office on these computers, you can now keep track of that information in the **Deployments** worksheet. You can create custom reports to obtain richer information about who is using these computers, what issues they may be experiencing, and so on. 
-  
+
+> [!NOTE]
+> Support for Windows 8.1 ended on January 10, 2023.  
 
 ## Custom report worksheet
 

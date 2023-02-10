@@ -6,10 +6,10 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
+ms.date: 02/04/2022
 ---
 
 # Macros from the internet will be blocked by default in Office
@@ -37,7 +37,7 @@ Also, review the following information:
 
 |Preparation action|More information|
 |---------|---------|
-|Understand which versions and which update channels have this change (as we roll out this change) |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)|
+|Understand which version in each update channel has this change |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)|
 |See a flow chart of the process Office takes to determine whether to run macros in a file| [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet) |
 |Identify files with VBA macros that might be blocked using the Readiness Toolkit | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked) |
 |Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)|
@@ -63,7 +63,7 @@ The following table list different common scenarios and possible approaches to t
 
 This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Visio, and Word.
 
-The following table shows the forecasted schedule of when this change will be available in each update channel. Information in italics is subject to change.
+The following table shows when this change became available in each update channel.
 
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
@@ -71,7 +71,7 @@ The following table shows the forecasted schedule of when this change will be av
 |Current Channel|Version 2206|Started rolling out on July 27, 2022|
 |Monthly Enterprise Channel|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
-|Semi-Annual Enterprise Channel |*Version 2208*|*January 10, 2023*|
+|Semi-Annual Enterprise Channel |Version 2208|January 10, 2023|
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 

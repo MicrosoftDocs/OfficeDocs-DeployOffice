@@ -6,13 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-get-started
+ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
+ms.date: 04/20/2020
 ---
 
 # Deployment guide for Microsoft 365 Apps
@@ -21,7 +20,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
   
 ## Featured
 
-- [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
+- [What's new for deploying Microsoft 365 Apps](whats-new.md)
 
 - [Overview of Cloud Policy](admincenter/overview-cloud-policy.md)
 

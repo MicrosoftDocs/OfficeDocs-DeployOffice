@@ -1,17 +1,18 @@
 ---
 title: "Deployment guide for Office for Mac"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: landing-page
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 ms.custom: intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
+ms.date: 03/19/2018
 ---
 
 # Deployment guide for Office for Mac

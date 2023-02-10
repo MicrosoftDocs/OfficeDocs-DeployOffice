@@ -5,13 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- Office2019
+ms.collection: tier2
 description: "Provides IT admins with an overview of deploying Office 2019."
+ms.date: 09/20/2018
 ---
 
 # Overview of Office 2019 (for IT Pros)
@@ -40,7 +38,7 @@ The biggest change since Office 2016 is that the installation technology used by
 
 In addition to Click-to-Run, the following are some other changes that you need to be aware of:
 
-- Office 2019 is supported on Windows 11 and Windows 10, but isn’t supported on Windows 7 or Windows 8.1. For more information, review the [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+- Office 2019 is only supported on Windows 11 and Windows 10. For more information, review the [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 - To configure and perform installations, you use the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117), which is a free download from the Microsoft Download Center. The Office Customization Tool that you previously used for Windows Installer (MSI) is no longer used.
 - Instead of downloading the installation files from the Volume Licensing Service Center (VLSC), you use the Office Deployment Tool to download the installation files directly from the Office Content Delivery Network (CDN) on the internet.
 - When you install Office Professional Plus 2019, all apps are installed by default. But, you can configure the Office Deployment Tool to exclude certain apps from being installed.

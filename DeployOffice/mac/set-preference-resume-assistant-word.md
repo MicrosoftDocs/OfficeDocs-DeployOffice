@@ -1,6 +1,6 @@
 ---
 title: "Set a preference for Resume Assistant in Word for Mac"
-ms.author: danbrown
+ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
@@ -8,16 +8,22 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference for Resume Assistant in Word for Mac"
+ms.date: 05/04/2018
 ---
 
 # Set a preference for Resume Assistant in Word for Mac
 
 ***Applies to:*** *Office for Mac*
 
-In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you are running version 16.13 or later, as shown in the following screenshot.
+> [!IMPORTANT]
+> - Resume Assistant is no longer supported and has been removed from Word for Mac, starting with version 16.69. For more information, see [Resume Assistant is no longer available](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a).
+> - If you're running a version of Word for Mac older than version 16.69, you'll still see an option for Resume Assistant but it won't work.
+> - You can use the DisableResumeAssistant preference described in this article to hide the option from your users until you update to version 16.69 or later.
+
+In Word for Mac, the icon for [Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) will appear on the Review tab if you're running version 16.13 or later, as shown in the following screenshot.
 
 ![Screenshot of Resume Assistant icon in the Word for Mac ribbon.](../images/resume-assistant-ribbon.png)
 

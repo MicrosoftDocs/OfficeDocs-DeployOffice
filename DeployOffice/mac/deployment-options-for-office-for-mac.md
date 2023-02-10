@@ -1,16 +1,17 @@
 ---
 title: "Deployment options for admins for Office for Mac"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: true
 description: "Provides information to admins on how to download and deploy Office for Mac to users in their organization"
+ms.date: 03/19/2018
 ---
 
 # Deployment options for admins for Office for Mac
@@ -24,8 +25,11 @@ There are two basic ways that you, as an admin, can deploy Office to Mac users i
 - Download the installer package file to your local network, and then use your software distribution tools to deploy Office to Mac devices
 
 If you have a Microsoft 365 (or Office 365) plan, you can provide your Mac users with instructions on [how to download and install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658?#InstallSteps=Install_on_a_Mac) themselves. To install Office on a Mac, a user has to be an administrator on the device or know an administrator account name and password.
+
+> [!TIP] 
+> If your users are familiar with the process for downloading and installing Mac apps, you can simply send them the direct link to the Office Content Delivery Network.
   
-But, if you deploy Office for your Mac users, you have more control over the deployment, including which users get Office and when. To plan your deployment, review the following information.
+If you use software distribution tools, you have more control over which users get Office and when. For example, you can automatically install Office apps as part of automated device enrollment. To plan your deployment, review the following information.
 
 > [!NOTE]
 > For information about upgrades, see [Upgrade an installation of Office for Mac](#upgrade-an-installation-of-office-for-mac).
@@ -38,7 +42,7 @@ The easiest way to download Office for Mac, and ensure you're always getting the
 - [Office LTSC for Mac 2021](https://go.microsoft.com/fwlink/p/?linkid=2009112) (volume license)
 - [Office 2019 for Mac](https://go.microsoft.com/fwlink/p/?linkid=525133) (retail or volume license)
 
-The same installer package can be used for Office for Mac, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
+The same installer package can be used for Microsoft 365 subscriptions, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
 
 > [!NOTE]
 > - If you have a Microsoft Services Provider License Agreement (SPLA), [review this information](../ltsc2021/spla.md).
@@ -47,10 +51,10 @@ The same installer package can be used for Office for Mac, Office LTSC for Mac 2
 
 ## Deploy Office for Mac to users in your organization
 
-Office for Mac uses the Apple Installer technology for installation. That means you can use the software distribution tools that you normally use to deploy software to Mac users. Some of the most common tools are [Jamf Pro](https://www.jamf.com/products/jamf-pro/), [Munki](https://www.munki.org/), and [AutoPkg](https://github.com/autopkg/autopkg). You can also use [Apple Remote Desktop](https://www.apple.com/remotedesktop/).
+Office for Mac uses the Apple Installer technology for installation. That means you can use the software distribution tools that you normally use to deploy software to Mac users. Some of the most common tools are [Jamf Pro](https://www.jamf.com/products/jamf-pro/), [Microsoft Intune](/mem/intune/), [Munki](https://www.munki.org/), and [AutoPkg](https://github.com/autopkg/autopkg). You can also use [Apple Remote Desktop](https://www.apple.com/remotedesktop/).
   
 > [!IMPORTANT]
-> To help improve security, Office for Mac has implemented Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. Don't add, change, or remove files in an app bundle. For example, even if you don't need the French language resource files for Excel, don't delete them. This change prevents Excel from starting. Even though you can't customize app bundles, you can [configure preferences](deploy-preferences-for-office-for-mac.md) for each app.
+> To help improve security, Office for Mac implements Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. Don't add, change, or remove files in an app bundle. For example, even if you don't need the French language resource files for Excel, don't delete them. This change prevents Excel from starting. Even though you can't customize app bundles, you can [configure preferences](deploy-preferences-for-office-for-mac.md) for each app.
   
 ## Additional deployment information for Office for Mac
 
@@ -63,6 +67,10 @@ You can't have two different versions of Office installed on a Mac. For example,
 #### Deploying individual apps
 
 Installer package files for individual applications, such as Word or Excel, are available to download from the Office Content Delivery Network (CDN). For links to those files, see [Most current packages for Office for Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac).
+
+> [!TIP]
+> The Office for Mac installer package, also known as the *suite* installer, is much smaller than the combined size of the individual app installers.
+> This is because the suite installer includes a common set of fonts, frameworks, and proofing tools that are copied into each app bundle during installation. 
 
 #### Microsoft Teams
 
@@ -86,13 +94,14 @@ You can upgrade an existing installation of Office on a Mac to a newer version w
 
 #### Upgrade to Office for Mac (subscription version)
 
-If you're a volume licensed customer of Office LTSC for Mac 2021 or Office 2019 for Mac, you can upgrade to Office for Mac (available with certain Microsoft 365 or Office 365 subscription plans) without uninstalling your current version. Just follow these steps:
+If you're a volume licensed customer of Office LTSC for Mac 2021 or Office 2019 for Mac, you can upgrade to Microsoft 365 for Mac (available with certain Microsoft 365 or Office 365 subscription plans) without uninstalling your current version. Just follow these steps:
 
 1. Install the latest Office updates on each Mac where Office is installed.
-2. Download and run the [license removal tool](https://support.microsoft.com/office/b032c0f6-a431-4dad-83a9-6b727c03b193) on each Mac where Office is installed.
-3. Have users open any Office app and sign in with their Microsoft 365 (or Office 365) account.
+2. Have users open any Office app and sign in with their Microsoft 365 (or Office 365) account.
 
-For a demo of these steps, and an example of how to automate this process with Jamf Pro, [watch this video](https://www.youtube.com/watch?v=Zwuq_TT9QhU).
+> [!TIP]
+> When multiple license types are present on the device, apps such as Word, Excel, PowerPoint, and Outlook will prefer to use a subscription license.
+> If the user signs out of their Microsoft 365 account, the apps will revert to the volume license.
 
 #### Upgrade to Office LTSC for Mac 2021 (volume license)
 

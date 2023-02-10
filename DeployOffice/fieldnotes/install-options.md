@@ -7,13 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier3
 description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
+ms.date: 04/21/2020
 ---
 
 # Best practices from the field: Choose how to install Microsoft 365 Apps

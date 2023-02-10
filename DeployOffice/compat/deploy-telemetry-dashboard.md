@@ -5,16 +5,16 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Explains how to deploy the processor, agent, and other components that are required by Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Deploy Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
@@ -32,7 +32,7 @@ This article helps you deploy the five components of Office Telemetry Dashboard:
 
 ## Office Telemetry Dashboard
 
-Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.
+Office Telemetry Dashboard is an Excel workbook that is configured to connect to a database. Office Telemetry Dashboard is installed together with Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016. To view Office Telemetry Dashboard, you must have Excel installed from Office 2019 or Office 2016.
 
 After Office is installed, you can start Office Telemetry Dashboard by using one of the procedures in the following table: 
 
@@ -44,11 +44,11 @@ After Office is installed, you can start Office Telemetry Dashboard by using one
 | Windows 8.1 <br/> |On the **Start** screen, type **Telemetry Dashboard** and then choose it from the search results.  <br/> |
 | Windows Server 2012 R2 or Windows Server 2012  <br/> |Swipe in from the right edge to show the charms and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+> - Support for Windows 8.1 ended on January 10, 2023.
 
 <a name="SQL"> </a>
 
@@ -118,7 +118,7 @@ We recommend the following operating systems for computers that run the processo
 
  **For production environments:** For best performance, we recommend you use a supported version of Windows Server, such as Windows Server 2019.
 
-**For test or small production environments:** You can use computers that run Windows 10 or Windows 8.1 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
+**For test or small production environments:** You can use computers that run Windows 10 or Windows 11 in test environments and in small production environments. There is a limit of 20 concurrent connections for client operating systems, but in small environments, the agent randomization setting should minimize any chance of more than 20 agents connecting at one time. 
 
 Ensure that you have the following available before you run the wizard to set up the processor.
 
@@ -204,7 +204,7 @@ The following information and instructions will help you learn more about how to
 
 ### Deploying the agent
 
-The agent is built into Microsoft 365 Apps for enterprise, Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
+The agent is built into Office 2019, Office 2016, and Office 2013 and doesn't have to be deployed separately. If your organization has any of the following versions of Office, you must deploy the Office 2019 or Office 2016 agent to these clients. 
 
 - Office 2003
 
@@ -248,8 +248,7 @@ For computers that are running Office 2013 and you have the Office 2013 agent in
 The agent might not work correctly on Windows service packs that are no longer supported by Microsoft. We recommend that you verify that your service pack is supported on [Search Product and Services Lifecycle Information](/lifecycle/products/) before you install the agent. 
 
 > [!NOTE]
-> - Windows 7 with Service Pack 1, Windows 2008 R2, and Windows Server 2008 are no longer supported.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020. 
+> - Windows 7 with Service Pack 1, Windows 8.1, Windows Server 2008 R2, and Windows Server 2008 are no longer supported.
 
 
 The computer running the agent must also run the latest version of the Universal C Runtime (CRT) for the version of Windows. For information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).

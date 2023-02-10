@@ -8,8 +8,10 @@ metadata:
   title: Office deployment
   description: Learn how to deploy and manage Microsoft 365 Apps or other versions of Office. Microsoft 365 Apps is the version of Office that's available through many Microsoft 365 and Office 365 plans.  
   brand: office
-  author: danbrown
+  author: DHB-MSFT
+  ms.author: danbrown
   ms.topic: hub-page
+  ms.collection: tier1
   ms.service: o365-proplus-itpro
   ms.custom: intro-hub-or-landing
 
@@ -40,9 +42,9 @@ additionalContent:
           summary: Find guidance about deploying Office to Macs in your organization.
           url: mac/deployment-guide-for-office-for-mac.md
         # Card
-        - title: Office Insider Program for Business
-          summary: Find guidance about deploying Office Insider in your organization to get early access to new features for Microsoft 365 Apps.
-          url: office-insider/index.yml
+        - title: Microsoft 365 Insider Program for Business
+          summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
+          url: insider/index.yml
         # Card
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
