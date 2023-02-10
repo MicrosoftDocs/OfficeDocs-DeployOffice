@@ -112,5 +112,7 @@ Users are given notifications leading up to the deadline when a deadline is set.
 
 Update exclusions can be created to prevent devices downloading security and feature updates during specific dates. Update exclusions allow you to reduce change in your environment during busy periods, such as during tax season or at the end of the financial year. Manual actions in Action Center and end-user actions are unaffected by update exclusion dates. Note that update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
 
+By default update exclusions will affect all devices which are in scope of the servicing profile. You can also select to scope the exclusion window to Azure AD groups. Then only devices or users specified in the Azure AD group will be excluded, and all other devices will follow the regular update deployment rhythm. Check out this video for a quick overview of [Azure AD group scoping with update exclusion windows](https://youtu.be/WMVlfg_3wnw).
+
 > [!NOTE]
-> Update exclusions prevent devices downloading security and feature updates. If you also want to prevent devices installing updates, consider starting the exclusion sooner and enforcing installations with an update deadline.
+> Update exclusions prevent devices from starting the update process, which includes downloading, extracting, and applying the update. If a given device has started the process before the exclusion window applies, it will continue with the update installation. If you want to prevent devices installing updates during the requested exclusion window, consider starting the exclusion sooner and enforcing installations with an update deadline.
