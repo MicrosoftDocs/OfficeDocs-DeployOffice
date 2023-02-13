@@ -42,8 +42,6 @@ The following table provides a list of connected experiences that analyze your c
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Map chart <sup>[1]</sup>    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| Maps in Power View   | [Maps in Power View](https://support.microsoft.com/office/8a9b2af3-a055-4131-a327-85cc835271f7) |
-| Office Presentation Service  | [Broadcast your PowerPoint presentation online to a remote audience](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
 |PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer   | [Create professional slide layouts with Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
@@ -58,6 +56,7 @@ The following table provides a list of connected experiences that analyze your c
 |Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Suggested replies | [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 |Text predictions |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
+|Transcribe|[Transcribe your recordings](https://support.microsoft.com/office/transcribe-your-recordings-7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 |Translate text on images|[Translate text on images](https://support.microsoft.com/office/b4dbefd7-ae10-4b3f-9813-57e9e55f0f41)|
 | Translator   | [Translate text into a different language](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
@@ -79,11 +78,10 @@ The following table provides a list of connected experiences that download onlin
 
 | **Name**      | **More information**  |
 | ------------- | ------------- |
-| Calendar apps| [What are Calendar Apps?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Cloud fonts                 | [Cloud fonts in Office](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | FAQs |When you choose **Settings** > **Help & Feedback** > **FAQs** on Outlook for iOS and Android, you're taken to either [Outlook for iOS Help](https://support.microsoft.com/office/4456b5ef-d20e-4e86-abee-c95f9eba26da) or [Outlook for Android Help](https://support.microsoft.com/office/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Ink effects                 | [Draw and write with ink in Office](https://support.microsoft.com/office/6d76c674-7f4b-414d-b67f-b3ffef6ccf53)  |
-| Insert icons                | [Insert icons in Microsoft PowerPoint](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)<br/> [Insert icons in Microsoft Word](https://support.microsoft.com/office/4c8c86aa-a844-4edb-aee0-02b7387fc99d)    |
+| Insert icons                | [Insert icons in Microsoft 365](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)|
 | Insert Microsoft Forms      | [Insert a form or quiz into PowerPoint](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Insert online 3D models <sup>[5]</sup>  | [Get creative with 3D models](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Insert online pictures <sup>[5]</sup>  | [Insert pictures (Word)](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)<br/>[Insert a picture in PowerPoint](https://support.microsoft.com/office/5f7368d2-ee94-4b94-a6f2-a663646a07e1)  |
@@ -125,6 +123,7 @@ The following table provides a list of those other connected experiences and pro
 |Feedback (web portal) <sup>[7]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
 | Focused Inbox  |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
+|Insert photo from mobile devices <sup>[7]</sup>|[View and manage photos from your Android device on your PC](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921)|
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8)  |
 | Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Office add-ins <sup>[7]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
