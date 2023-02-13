@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: tier1
-description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) by using policy settings."
+description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise by using policy settings."
 hideEdit: true
 ms.date: 04/16/2019
 ---
@@ -18,7 +18,7 @@ ms.date: 04/16/2019
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise.
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, there are new policy settings that will allow you to control settings related to the following:
 

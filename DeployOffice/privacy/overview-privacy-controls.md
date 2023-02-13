@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: tier1
-description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), including for diagnostic data and connected experiences."
+description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise, including for diagnostic data and connected experiences."
 hideEdit: true
 ms.date: 03/22/2019
 ---
@@ -18,7 +18,7 @@ ms.date: 03/22/2019
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise.
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software running on the user's device in your organization.
