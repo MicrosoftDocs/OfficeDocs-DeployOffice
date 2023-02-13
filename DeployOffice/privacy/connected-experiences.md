@@ -118,7 +118,7 @@ The following table provides a list of those other connected experiences and pro
 | Contact Support  | When you choose **Help** > **Contact Support** on the ribbon|
 | Custom import  | [Import data to shapes in your drawing](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
 | Data Visualizer |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
-| Design flows | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
+| Design an automated workflow | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | External list |[Connect an external list to Outlook](https://support.microsoft.com/office/9f00540e-a6b8-4510-9ce1-c79e31cbc8c9)  |
 |Feedback (web portal) <sup>[7]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
 | Focused Inbox  |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
