@@ -10,7 +10,7 @@ ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8.1 end of support on Microsoft 365 Apps."
-ms.date: 07/06/2022
+ms.date: 02/14/2023
 ---
 
 # Windows 8.1 end of support and Microsoft 365 Apps
