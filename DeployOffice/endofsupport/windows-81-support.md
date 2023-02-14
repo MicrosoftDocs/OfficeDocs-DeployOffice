@@ -10,7 +10,7 @@ ms.collection: tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8.1 end of support on Microsoft 365 Apps."
-ms.date: 07/06/2022
+ms.date: 02/14/2023
 ---
 
 # Windows 8.1 end of support and Microsoft 365 Apps
@@ -18,7 +18,6 @@ ms.date: 07/06/2022
 > [!IMPORTANT]
 > - Support for Windows 8.1 ended on January 10, 2023.
 > - Microsoft 365 Apps is no longer supported on Windows 8.1.
-> - If you're running Office on Windows 8.1 in your organization, you should [move to a more current operating system](#move-from-windows-81-to-a-more-current-operating-system).
 > - If you're a home user running Microsoft 365 or Office on Windows 8.1, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading the following article.
 
 Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
@@ -27,15 +26,42 @@ Using Microsoft 365 Apps on older and unsupported operating systems may cause pe
 
 ## What happens to Microsoft 365 Apps on Windows 8.1 after January 10, 2023
 
-Support for Windows 8.1 ended on January 10, 2023. As of that date, Microsoft 365 Apps is no longer supported on a device running Windows 8.1.
+Support for Windows 8.1 ended on January 10, 2023. As of that date, Microsoft 365 Apps is no longer supported on a device running Windows 8.1, although your apps, such as Word, will continue to work.
 
-In addition to not being supported, the following restrictions will apply to Microsoft 365 Apps on devices running Windows 8.1 after February 14, 2023.
+In addition to not being supported, the following restrictions apply to Microsoft 365 Apps on devices running Windows 8.1.
 
 - You won't receive any new feature, security, or other quality updates for an existing installation of Microsoft 365 Apps.
 - You won't be able to install a new version of Microsoft 365 Apps.
-- You won't be able to perform an Online Repair of Microsoft 365 Apps.
 
 These restrictions apply to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
+
+For more information, see the next section about the last versions of Microsoft 365 Apps available on Windows 8.1.
+
+## Last versions of Microsoft 365 Apps available on Windows 8.1
+
+The last version of Microsoft 365 Apps available on Windows 8.1 depends on whether or not you're getting updates directly from the Office Content Delivery Network (CDN).
+
+### If you get updates directly from the Office CDN
+
+If you’ve configured Microsoft 365 Apps to get updates directly from the Office Content Delivery Network (CDN) on the internet, you’ll no longer receive any feature, security, and other quality updates beyond the specific versions and builds listed in the following table.
+
+| Update channel                           | Version and build                |
+|------------------------------------------|----------------------------------|
+| Current Channel                          | Version 2301 (Build 16026.20200) |
+| Monthly Enterprise Channel               | Version 2212 (Build 15928.20282) |
+| Semi-Annual Enterprise Channel (Preview) | Version 2208 (Build 15601.20538) |
+| Semi-Annual Enterprise Channel           | Version 2208 (Build 15601.20538) |
+
+*(These versions and builds were released on Tuesday February 14, 2023.)*
+
+For example, when security updates are released on Tuesday March 14, 2023, your installation of Microsoft 365 Apps on Windows 8.1 won't get those security updates. Or, for example, when a version newer than Version 2301 is released in Current Channel, your installation of Microsoft 365 Apps won't be updated to that newer version.
+
+### If you get updates from somewhere other than the Office CDN
+
+If you control the deployment of updates and are using a location other than the Office CDN (for example, Microsoft Configuration Manager or an internal network share), you’ll be prevented from updating beyond Version 2302. This restriction applies to all update channels, such as Current Channel or Semi-Annual Enterprise Channel.
+
+> [!IMPORTANT]
+> Even though you can install or update to Version 2302, running Microsoft 365 Apps on Windows 8.1 isn't supported.
 
 ## Move from Windows 8.1 to a more current operating system
 
