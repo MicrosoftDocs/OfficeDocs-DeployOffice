@@ -28,7 +28,7 @@ Using Microsoft 365 Apps on older and unsupported operating systems may cause pe
 
 Support for Windows 8.1 ended on January 10, 2023. As of that date, Microsoft 365 Apps is no longer supported on a device running Windows 8.1, although your apps, such as Word, will continue to work.
 
-In addition to not being supported, the following restrictions will apply to Microsoft 365 Apps on devices running Windows 8.1.
+In addition to not being supported, the following restrictions apply to Microsoft 365 Apps on devices running Windows 8.1.
 
 - You won't receive any new feature, security, or other quality updates for an existing installation of Microsoft 365 Apps.
 - You won't be able to install a new version of Microsoft 365 Apps.
@@ -47,10 +47,10 @@ If you’ve configured Microsoft 365 Apps to get updates directly from the Offic
 
 | Update channel                           | Version and build                |
 |------------------------------------------|----------------------------------|
-| Current Channel                          | Version 2301 (Build 16026.2####) |
-| Monthly Enterprise Channel               | Version 2212 (Build 15928.2####) |
-| Semi-Annual Enterprise Channel (Preview) | Version 2208 (Build 15601.2####) |
-| Semi-Annual Enterprise Channel           | Version 2208 (Build 15601.2####) |
+| Current Channel                          | Version 2301 (Build 16026.20200) |
+| Monthly Enterprise Channel               | Version 2212 (Build 15928.20282) |
+| Semi-Annual Enterprise Channel (Preview) | Version 2208 (Build 15601.20538) |
+| Semi-Annual Enterprise Channel           | Version 2208 (Build 15601.20538) |
 
 *(These versions and builds were released on Tuesday February 14, 2023.)*
 
