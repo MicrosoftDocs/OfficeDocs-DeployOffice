@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: tier1
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
-ms.date: 04/16/2019
+ms.date: 02/14/2023
 ---
 
 # Connected experiences in Office
