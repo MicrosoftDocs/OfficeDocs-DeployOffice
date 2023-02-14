@@ -123,7 +123,6 @@ The following table provides a list of those other connected experiences and pro
 |Feedback (web portal) <sup>[7]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
 | Focused Inbox  |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
-|Insert photos from mobile device <sup>[7]</sup>|[View and manage photos from your Android device on your PC](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921)|
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8)  |
 | Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Office add-ins <sup>[7]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
