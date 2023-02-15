@@ -103,14 +103,11 @@ All the update channels will receive updates for security and non-security issue
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-To preview or test new updates before deploying them to your entire organization, you can deploy two update channels. For example, if you're using Semi-Annual Enterprise Channel:
+To preview or test new updates before deploying them to your entire organization, you have two options:
 
-- Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office. The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), any significant differences in hardware and device drivers, as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
+- Deploy the update in a stagged manner. E.g. on the release day to a handful of devices, then after a few days extend to a sample set across your organization and then to the remaining devices in two additonal waves. When using Monthly Enterprise Channel and servicing profiles, this can be automated by using [custom rollout waves](./admincenter/servicing-profile.md#create-rollout-waves).
 
-- Deploy Semi-Annual Enterprise Channel to the remaining users in your organization. They receive feature updates every six months, four months after the users with Semi-Annual Enterprise Channel (Preview).
-
-You could take a similar approach with Current Channel (Preview) and Current Channel. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
-
+- Deploy a combination of update channels where one channel recevies new features earlier than the other. E.g., deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
  
 ## Step 4 - Define your source files
 
