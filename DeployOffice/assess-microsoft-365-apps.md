@@ -44,7 +44,7 @@ Review your network capability, including bandwidth and distribution of client d
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 - Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](/officeupdates/download-sizes-microsoft365-apps-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
 - Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth.
-- To reduce the load on your network and internet links, we recommend to leverage [PeerCache](https://learn.microsoft.com/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) when using Configuration Manager or [Delivery Optimization](delivery-optimization.md) when getting the installation or updates from the internet.
+- To reduce the load on your network and internet links, we recommend to leverage [PeerCache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache.md) when using Configuration Manager or [Delivery Optimization](delivery-optimization.md) when getting the installation or updates from the internet.
  
 ## Step 4 - Assess application compatibility
 
