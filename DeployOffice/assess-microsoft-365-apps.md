@@ -10,7 +10,7 @@ ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 04/20/2020
+ms.date: 02/15/2023
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
