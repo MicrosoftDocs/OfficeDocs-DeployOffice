@@ -109,26 +109,27 @@ To preview or test new updates before deploying them to your entire organization
 
 - Deploy a combination of update channels where one channel recevies new features earlier than the other. E.g., deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
  
-## Step 4 - Define your source files
+## Step 4 - Define your installation packages
 
 > [!NOTE]
-> **Best practice:** Build separate Office installation packages for the different architectures and update channels you require. In each installation package, include all the required languages and applications, including the core Office applications and, if needed, Visio and Project. For additional languages, you can make them available for user installation or deploy them separately after the initial deployment.
+> **Best practices:**
+> Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](change-update-channels.md).
+> 
+> If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
+> 
+> If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./fieldnotes/build-dynamic-lean-universal-packages.md) to add those later.
 
-When deploying Office, you create an installation package of the source files used to install Office. The source files are different for 32-bit and 64-bit versions of Office and are different for each of the update channels. Because of this, you'll likely need to create multiple installation packages to support the different architectures and update requirements in your organization. For example, to deploy to two update channels and both architectures, you create four packages: 
+Build the installation packages using the [Office Customization Tool](./admincenter/overview-office-customization-tool.md) and the Office Deployment Tool. By default, the resulting packages would download the required files during installation.
 
-- Semi-Annual Enterprise Channel for 32-bit 
-- Semi-Annual Enterprise Channel for 64-bit
-- Semi-Annual Enterprise Channel (Preview) for 32-bit
-- Semi-Annual Enterprise Channel (Preview) for 64-bit
+If downloaded the installation during install time isn't feasible in your environment, you can use the /download switch to download the required source files upfront and embedd them in your installation package. Note that doing this will require you to maintain and update the embedded sources on a regular base, increasing maintenance effort.
 
-You can also create separate packages based on different languages, Office applications, or installation settings, but we don't recommend it. Instead, we recommend including all the Office applications and all the languages your organization requires in each of your installation packages. Later, when you deploy the packages to different groups of client devices, you can specify which language and Office applications are actually installed.
-
-To package the languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation of Office. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).  
+To package languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
 After you've deployed Office with the required languages, you can install additional language accessory packs at any time by choosing one of the following:
 
-- Have your users download and install the language accessory packs that they need from the Office 365 portal (requires local administrator permissions).
-- Use Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
+- Have your users download and install the language accessory packs that they need from the Microsoft 365 portal (requires local administrator permissions).
+- Set and assign the policy "Allow users who aren’t admins to install language accessory packs" to your users. This enables them to install language packs through the apps UI themselves.
+- Use Intune, Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
 
 For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
@@ -136,44 +137,21 @@ For details on which architecture to choose, see [Choose the 32-bit or 64-bit ve
 
 If you have the subscription versions of the Project and Visio desktop apps, continue to use those. If you have the 2013 versions of Project and Visio, you can either upgrade to the subscription versions or keep using the 2013 versions side-by-side with Microsoft 365 Apps. If you have the 2016 MSI version of Project or Visio, you should [use the Office Deployment Tool to install volume licensed editions of Visio 2016 and Project 2016](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md).
 
-## Step 5 - Define your deployment groups
+## Step 5 - Plan your upgrade from existing versions of Office 
 
 > [!NOTE]
-> **Best practice:** Define deployment groups to deploy the appropriate architectures, update channels, languages, and applications to your client devices. If multiple deployment groups share the same architecture and update channel, use the same installation package to install Office.
-
-When deploying Office, you can install different versions of Office for different groups of users. In addition to the architecture and update channel, you can include or exclude specific applications, choose languages, and define the installation experience. Each group of users is a separate deployment group. If you use Configuration Manager, you define the settings for these deployment groups as part of the deployment wizard. If you use the ODT, you define the settings in a configuration file. 
-
-Note that you can use the same installation package to deploy different configurations of Office to different groups. For example, you can create an installation package that includes the following:
-
-- 32-bit version of Microsoft 365 Apps
-- English, Japanese, and German
-- Semi-Annual Enterprise Channel
-
-This single installation package can then be used to deploy to multiple deployment groups:
-
-- Group 1 receives the Office apps in English
-- Group 2 receives the Office apps in all three languages
-- Group 3 receives the Office apps in English, but without Publisher
-
-By reusing installation packages for different deployment groups, you can save administrative costs and conserve network bandwidth.
-
-## Step 6 - Plan your upgrade from existing versions of Office 
-
-> [!NOTE]
-> **Best practice:** Before installing Microsoft 365 Apps, remove any existing versions of Office. 
-
-Before installing Microsoft 365 Apps, we recommend removing any existing versions of Office. Microsoft supports installing Microsoft 365 Apps alongside the most recent previous version of the Office suite, but we don't recommend it. If you need to have two versions of Office on the same computer, we recommend that you keep only the necessary earlier applications and that you plan to transition to using only Microsoft 365 Apps when possible. To verify the supported versions to be installed alongside Microsoft 365 Apps, refer to [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
+> **Best practice:** Allow the Microsoft 365 Apps setup to automatically uninstall any existing MSI-based version of Office, Visio and Project. We do not recommend to run Microsoft 365 Apps in parallel with MSI-based Office on the same device.
 
 To help you remove prior versions of Office that use Windows Installer (MSI) as the installation technology, you can use the Office Deployment Tool and specify the RemoveMSI element to automate the removal with your Microsoft 365 Apps deployment package. For details see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
-## Step 7 - Plan for shared computers (optional)
+## Step 6 - Plan for shared computers (optional)
 
 > [!NOTE]
 > **Best practice:** For shared computer scenarios, such as VDI, enable shared computer activation when deploying Microsoft 365 Apps.
 
 If your organization has a virtual desktop infrastructure (VDI) implementation, or you have users that share workstations (for example, shift workers), you need to enable shared computer activation for those devices when you deploy Microsoft 365 Apps. 
 
-With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the Office apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).   
+With shared computer activation enabled, any user that has been assigned a Microsoft 365 Apps license can log on to the computer and use the apps, such as Word or Excel. For more details, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).   
 
 ## Review exit criteria
 
@@ -197,4 +175,3 @@ Depending on your deployment  plan, go to one of the following articles:
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 - [Deploy Microsoft 365 Apps from a local source](deploy-microsoft-365-apps-local-source.md)
 - [Self-install Office from the cloud](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
-
