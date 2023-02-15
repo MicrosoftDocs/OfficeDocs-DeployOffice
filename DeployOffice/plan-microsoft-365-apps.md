@@ -56,43 +56,54 @@ Many organizations will use a combination of these options for different users. 
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. 
-
-To manage updates to Office, you choose whether to have your client devices automatically updated, what tool to use, and whether to install the updates to Office directly from the cloud or from a local source on your network.
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend using [Servicing profiles](admincenter/servicing-profile.md).
 
 We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to conserve your network bandwidth.
 
-If you choose to manage the updates directly, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch. 
+You can also use Intune to apply additional policies, e.g. to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office.md) on how to apply ADMX settings to devices.
 
-If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you'll need to manage update packages for different update channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud.
+The third, cloud-based option is to leverage [servicing profiles](admincenter/servicing-profile.md). It is a cloud-based update management solution for devices on Monthly Enterprise Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
+
+If you need to distribute updates from an on-prem source, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch.
+
+If you don't have Configuration Manager, you can use the ODT to download updates to a local source on your network and deploy them from there. This option requires the most administrative overhead, as you'll need to manage update packages for different update channels, architectures, and platforms. We suggest this option only when your network capacity is too limited to update from the cloud and other solutions are not available.
 
 Choose how to manage updates:
 
 - **Update automatically:** Client devices are automatically updated directly from the Office CDN based on the update channel you define as part of the initial deployment.  
 
-- **Manage updates with Configuration Manager:**  Office updates are downloaded and deployed to client devices by Configuration Manager. 
+- **Manage updates with Intune:** Use Intune to set policies on devices which control how and when those should get updates from the cloud. 
 
-- **Manage updates with the Office Deployment Tool:** Office updates are downloaded to a local source by the ODT and then installed on client devices. 
+- **Manage updates with Servicing profiles:** When using the Monthly Enterprise Channel, profiles gives you the most comprohensive toolset to manage updates from the cloud. 
+
+- **Manage updates with Configuration Manager:**  Updates are downloaded and deployed to client devices by Configuration Manager. 
+
+- **Manage updates with the Office Deployment Tool:** Updates are downloaded to a local source by the ODT and then installed on client devices. 
     
-As with the initial deployment, organizations can use a combination of these options for different users. 
+As with the initial deployment, organizations can use a combination of these options for different users.
 
-## Step 3 - Choose your update channels 
+For more information, see [Choose how to deliver updates for the Microsoft 365 Apps](./fieldnotes/choose-how-to-deliver-updates.md).
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users:
+## Step 3 - Choose your update channels
 
-- **Current Channel:** Provides users with the newest features of Office as soon as they're ready, but on no set schedule.
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their applications. To do so, you choose an update channel for your users:
 
-- **Monthly Enterprise Channel:** Provides users with the newest features of Office only once a month and on a predictable schedule (the second Tuesday of the month)
+- **Current Channel:** Provides users with the latest features as soon as they're ready, but on no set schedule.
 
-- **Semi-Annual Enterprise Channel:** Provides users with new features of Office every six months, in January and July.
+- **Monthly Enterprise Channel:** Provides users with the latest features once a month and on a predictable schedule (the second Tuesday of the month)
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [servicing profile](../DeployOffice/admincenter/servicing-profile.md). By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+- **Semi-Annual Enterprise Channel:** Provides users a roll-up of features every six months, in January and July.
+
+> [!NOTE]
+> The "[Explained - Microsoft 365 Apps Update Channels](https://youtu.be/eNn4PDkmo7s)" video gives you a complete overview of all update channels.
+
+We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need additional predictability of when new features are released, we recommend Monthly Enterprise Channel with a [servicing profile](./admincenter/servicing-profile.md). By using a servicing profile, you’ll automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 All the update channels will receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-To preview or test new updates to Office before deploying them to your entire organization, you can deploy two update channels. For example, if you're using Semi-Annual Enterprise Channel:
+To preview or test new updates before deploying them to your entire organization, you can deploy two update channels. For example, if you're using Semi-Annual Enterprise Channel:
 
 - Deploy Semi-Annual Enterprise Channel (Preview) to a targeted group of representative users who can pilot new features of Office. The users should include people from business groups across the organization and their client devices should include the architectures in your organization (32-bit and 64-bit), any significant differences in hardware and device drivers, as well as any critical line-of-business applications, add-ins, and macros. This group receives feature updates four months ahead of the rest of your organization. We recommend using the same group of users you defined in the [assessment phase](assess-microsoft-365-apps.md). 
 
