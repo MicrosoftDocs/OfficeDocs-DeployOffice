@@ -10,12 +10,12 @@ ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to plan your deployment of Microsoft 365 Apps. The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 04/20/2020
+ms.date: 02/15/2023
 ---
 
 # Plan your enterprise deployment of Microsoft 365 Apps
 
-Follow the steps in this article to choose how to deploy Office, how to manage updates to Office, and whether to deploy the Office files from a local source on your network or from the cloud. 
+Follow the steps in this article to choose how to deploy Microsoft 365 Apps and how to manage updates, and whether to deploy Microsoft 365 Apps from the cloud, with Configuration Manager or from a local source on your network. 
 
 ## Before you begin 
 
@@ -23,32 +23,35 @@ If you haven't already, complete the [assessment of your environment and infrast
 
 ## Step 1 - Choose how to deploy
 
+First choose which deployment tool to use and whether to install from the cloud or from a local source on your network.
+
 > [!NOTE]
-> **Best practice:** If you use Configuration Manager already, make sure you are on the current branch and use it to deploy Office from distributions points on your network. If you don't have Configuration Manager, use the Office Deployment Tool and deploy Office from the cloud. If your network capacity doesn't allow for that, deploy Office with the ODT from a local source. We recommend self-install for situations in which you require less administrative control and you have the network capacity to have your users install directly from the Office portal.  
+> **Best practice:** Microsoft recommends to deploy Microsoft 365 Apps from the cloud, using the portal or Microsoft Intune.
 
-To deploy Office, you first choose what deployment tool to use and whether to install  the Office files directly from the cloud or from a local source on your network.
+You can also manage your deployment from the Microsoft 365 portal and have your users install the Microsoft 365 Apps on their client devices [directly from the portal](https://www.microsoft365.com/). This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
-We recommend the current branch of Configuration Manager for organizations that already use it to distribute and manage software. Configuration Manager scales for large environments; enables extensive control over installation, updates, and settings; and has built-in features for deploying and managing Office. 
+If this option is not feasible due to the number of devices you manager or because users don't have administrative permissions on their devices, you should consider using [Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
-If you do deploy with Configuration Manager, we recommend deploying from a local source, using your Configuration Manager distribution points. If you use a previous version of Configuration Manager, we recommend upgrading to the current branch before using it to deploy Office. 
+You can also use Configuration Manager to deploy from local Distribution points. This will reduce the network load on your internet links. We recommend using the latest current branch release. 
 
 For organizations that don't have Configuration Manager but still want to manage their deployment, we recommend using the Office Deployment Tool (ODT). You can use the ODT as a standalone tool or you can use it to download installation files that can be deployed using third-party software deployment tools. In either case, the ODT provides control over installation, updates, and settings. For more details, see [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
-If you use the ODT and have the network capacity, we recommend deploying Office from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install Office on client devices from the cloud, you can use the ODT to download the Office files to a local source on your network and install from there.
+If you use the ODT and have the network capacity, we recommend deploying Microsoft 365 Apps from the cloud. Doing so will minimize your administrative overhead. If you don't have the network capacity to install on client devices from the cloud, you can use the ODT to download the installation files to a local source on your network and install from there. But this approach introduces more complexity into your deployment and is not recommended.
 
-You can also manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal. This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
 Choose how you want to deploy:
 
-- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and download and deploy Office from distribution points on your network.
+- **Self-install from the cloud:** Manage your deployment from the Microsoft 365 portal and have your users install the apps on their client devices directly from the portal.
 
-- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT, and install Office on client devices directly from the Office CDN.
+- **Deploy from the cloud using Intune:** Manage your deployment through Intune and automate the configuration and installation of the Microsoft 365 Apps.
+
+- **Deploy from a local source with Configuration Manager:** Manage your deployment with Configuration Manager, and download and deploy from distribution points on your network.
+
+- **Deploy from the cloud with the Office Deployment Tool:** Manage your deployment with the ODT, and install on client devices directly from the Office CDN.
  
-- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy Office from a local source on your network. 
+- **Deploy from a local source with the Office Deployment Tool:** Manage your deployment with the ODT, and download and deploy from a local source on your network. 
 
-- **Self-install from the cloud:** Manage your deployment from the Office portal and have your users install Office on their client devices directly from the portal.
-
-Many organizations will use a combination of these options for different users. For example, an organization might use Configuration Manager to deploy Office to most of their users, but enable self-install for a small group of workers who aren't frequently connected to the internal network.
+Many organizations will use a combination of these options for different users. For example, an organization might use Intune to deploy Microsoft 365 Apps to most of their users, but enable self-install for a small group of workers who aren't using managed devices.
  
 ## Step 2 - Choose how to manage updates
 
