@@ -30,7 +30,7 @@ First choose which deployment tool to use and whether to install from the cloud 
 
 You can also manage your deployment from the Microsoft 365 portal and have your users install the Microsoft 365 Apps on their client devices [directly from the portal](https://www.microsoft365.com/). This method requires the least amount of administrative setup, but gives you less control over the deployment. You can, however, still define how frequently your users receive feature updates. For more details, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](manage-software-download-settings-office-365.md). This option requires that your users have local administrative rights on their client devices.
 
-If this option is not feasible due to the number of devices you manager or because users don't have administrative permissions on their devices, you should consider using [Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+If this option is not feasible due to the number of devices you manage or because users don't have administrative permissions on their devices, you should consider using [Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 You can also use Configuration Manager to deploy from local Distribution points. This will reduce the network load on your internet links. We recommend using the latest current branch release. 
 
@@ -56,13 +56,13 @@ Many organizations will use a combination of these options for different users. 
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend using [Servicing profiles](admincenter/servicing-profile.md).
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [servicing profile](admincenter/servicing-profile.md).
 
 We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to conserve your network bandwidth.
 
 You can also use Intune to apply additional policies, e.g. to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office.md) on how to apply ADMX settings to devices.
 
-The third, cloud-based option is to leverage [servicing profiles](admincenter/servicing-profile.md). It is a cloud-based update management solution for devices on Monthly Enterprise Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
+The third, cloud-based option is to leverage a [servicing profile](admincenter/servicing-profile.md). It is a cloud-based update management solution for devices on Monthly Enterprise Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 If you need to distribute updates from an on-prem source, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch.
 
@@ -74,7 +74,7 @@ Choose how to manage updates:
 
 - **Manage updates with Intune:** Use Intune to set policies on devices which control how and when those should get updates from the cloud. 
 
-- **Manage updates with Servicing profiles:** When using the Monthly Enterprise Channel, profiles gives you the most comprohensive toolset to manage updates from the cloud. 
+- **Manage updates with a servicing profile:** When using the Monthly Enterprise Channel, a servicing profile gives you the most comprehensive toolset to manage updates from the cloud. 
 
 - **Manage updates with Configuration Manager:**  Updates are downloaded and deployed to client devices by Configuration Manager. 
 
@@ -105,23 +105,23 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](o
 
 To preview or test new updates before deploying them to your entire organization, you have two options:
 
-- Deploy the update in a stagged manner. E.g. on the release day to a handful of devices, then after a few days extend to a sample set across your organization and then to the remaining devices in two additonal waves. When using Monthly Enterprise Channel and servicing profiles, this can be automated by using [custom rollout waves](./admincenter/servicing-profile.md#create-rollout-waves).
+- Deploy the update in a stagged manner. E.g. on the release day to a handful of devices, then after a few days extend to a sample set across your organization and then to the remaining devices in two additonal waves. When using Monthly Enterprise Channel and a servicing profile, this can be automated by using [custom rollout waves](./admincenter/servicing-profile.md#create-rollout-waves).
 
-- Deploy a combination of update channels where one channel recevies new features earlier than the other. E.g., deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
+- Deploy a combination of update channels where one channel recevies new features earlier than the other. For example, deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
  
 ## Step 4 - Define your installation packages
 
 > [!NOTE]
 > **Best practices:**
-> Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](change-update-channels.md).
+> - Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](change-update-channels.md).
 > 
-> If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
+> - If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
 > 
-> If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./fieldnotes/build-dynamic-lean-universal-packages.md) to add those later.
+> - If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./fieldnotes/build-dynamic-lean-universal-packages.md) to add those later.
 
 Build the installation packages using the [Office Customization Tool](./admincenter/overview-office-customization-tool.md) and the Office Deployment Tool. By default, the resulting packages would download the required files during installation.
 
-If downloaded the installation during install time isn't feasible in your environment, you can use the /download switch to download the required source files upfront and embedd them in your installation package. Note that doing this will require you to maintain and update the embedded sources on a regular base, increasing maintenance effort.
+If downloading the files during install time isn't feasible in your environment, you can use the /download switch to download the required source files upfront and embed them in your installation package. Note that doing this will require you to maintain and update the embedded sources on a regular base, increasing maintenance effort.
 
 To package languages, we recommend identifying required languages in each region. You can deploy these languages directly as part of the first installation. You can also install the language that matches the operating system of the client device. For more details, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
@@ -129,7 +129,7 @@ After you've deployed Office with the required languages, you can install additi
 
 - Have your users download and install the language accessory packs that they need from the Microsoft 365 portal (requires local administrator permissions).
 - Set and assign the policy "Allow users who aren’t admins to install language accessory packs" to your users. This enables them to install language packs through the apps UI themselves.
-- Use Intune, Configuration Manager or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
+- Use Intune, Configuration Manager, or the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
 
 For more details, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
