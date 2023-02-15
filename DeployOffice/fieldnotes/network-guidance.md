@@ -7,12 +7,8 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier3
 description: "Field best practices: Network guidance for deploying and servicing Microsoft 365 Apps"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
 ms.date: 01/26/2021
 ---
 

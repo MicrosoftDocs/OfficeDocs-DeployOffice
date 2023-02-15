@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: true
 description: "Provides admins with information about how to install updates for Office for Mac by using Microsoft AutoUpdate"
 ms.date: 03/19/2018

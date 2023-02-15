@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes Office authentication, logon types, and how to use registry settings to determine which user identities are offered at user logon."
 ---

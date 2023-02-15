@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier1
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
 ms.date: 09/15/2020

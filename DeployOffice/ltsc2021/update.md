@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
+ms.collection: tier2
 recommendations: false
 description: "Provides IT admins with information on how to update Office LTSC 2021."
 ms.date: 09/14/2021
@@ -18,7 +15,7 @@ ms.date: 09/14/2021
 
 # Update Office LTSC 2021
  
-After you deploy Office LTSC 2021, including Project and Visio, you’ll want to keep it updated as Microsoft releases security updates and quality updates, such as updates that provide stability or performance improvements for Office. Office LTSC 2021 will be updated approximately once a month, usually on the second Tuesday of the month.
+After you deploy Office LTSC 2021, including Project and Visio, you’ll want to keep it updated because Microsoft releases security updates and quality updates, such as updates that provide stability or performance improvements for Office. Office LTSC 2021 is updated approximately once a month, usually on the second Tuesday of the month.
 
 > [!NOTE]
 > Office LTSC 2021 doesn't receive new features after it's released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office.
@@ -30,10 +27,10 @@ Office LTSC 2021 use Click-to-Run, instead of Windows Installer (MSI), as the te
 Click-to-Run handles updates differently than Windows Installer (MSI). The following provides information about how updates work for Office LTSC 2021.
 
 - When there are updates for Office LTSC 2021, Microsoft releases a new build of Office LTSC 2021 on the Office Content Delivery Network (CDN) on the internet. This new build includes all the latest security and quality updates.
-- By default, Office LTSC 2021 is configured to be updated automatically directly from the Office CDN, although that can be changed. More on that later.
-- There is a scheduled task named “Office Automatic Updates 2.0 ” on the device on which Office LTSC 2021 is installed that checks for updates on a regular basis.
+- By default, Office LTSC 2021 is configured to receive updates automatically and directly from the Office CDN, although that can be changed. For more information, see [Configure where Office LTSC 2021 gets updates from](#configure-where-office-ltsc-2021-gets-updates-from).
+- There's a scheduled task named “Office Automatic Updates 2.0 ” on the device on which Office LTSC 2021 is installed that checks for updates regularly.
 - If updates are available, Office begins downloading the updates automatically. The user doesn’t have to do anything. As part of this process, Office also figures out what’s different between the latest version of Office LTSC 2021 up on the Office CDN and the version of Office LTSC 2021 that’s installed on the device. Based on that, it only downloads what’s needed to update Office LTSC 2021 to the latest version.
-- While the updates are being downloaded, users can continue to use Office apps, such as Word. After the updates are downloaded, the updates are installed. If any Office apps are open, users will be prompted to save their work and close the apps, so that the updates can be installed.
+- While the updates are being downloaded, users can continue to use Office apps, such as Word. After the updates are downloaded, the updates are installed. If any Office apps are open, users are prompted to save their work and close the apps, so that the updates can be installed.
 - After the updates are installed, users can go back to working in their Office apps.
 
 ## How updates are different in Office LTSC 2021
@@ -67,7 +64,7 @@ This causes the Click-to-Run service to go look for updates at the location that
 
 The size of the updates that are downloaded to the user's device from the update location varies depending on several factors, including how long it’s been since you last updated Office LTSC 2021 and how many security and quality updates there are.
 
-To minimize the size of the updates that need to be downloaded, we recommend that you keep Office LTSC 2021 up to date. Office uses a technology called binary delta compression to help reduce the size of the updates that need to be applied to the user's device. But binary delta compression is only available if you're updating from a recent version of Office. For example, if you're updating from the September or October version to the November version. But if you're updating a much older version of Office, such as from the June to November version, binary delta compression won't be available.
+To minimize the size of the updates that need to be downloaded, we recommend that you keep Office LTSC 2021 up to date. Office uses a technology called binary delta compression to help reduce the size of the updates that need to be applied to the user's device. But binary delta compression is only available if you're updating from a recent version of Office. For example, if you're updating from the September or October version to the November version. But if you're updating a much older version of Office, such as from the June to November version, binary delta compression isn't available.
 
 ## Use Group Policy to specify update settings
 
@@ -81,7 +78,7 @@ Office uses the concept of update channels to determine which updates an install
 
 “PerpetualVL2021” is the **only** update channel available for Office LTSC Professional Plus 2021 and Office LTSC Standard 2021. The PerpetualVL2021 update channel is also available for volume licensed versions of Project 2021 and Visio LTSC 2021.
 
-Volume licensed versions of Project 2021 and Visio LTSC 2021 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use other update channels is so that they can be installed on a device along with Microsoft 365 Apps, which supports all those other channels. But even if Project and Visio use these other update channels, they will still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+Volume licensed versions of Project 2021 and Visio LTSC 2021 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use other update channels is so that they can be installed on a device along with Microsoft 365 Apps, which supports all those other channels. But even if Project and Visio use these other update channels, they'll still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
 ## Related articles
 

@@ -7,8 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Notification to Microsoft 365 admins that Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise."
 ms.date: 06/15/2021
 ---
@@ -26,7 +25,7 @@ The date when Office Telemetry Dashboard will be removed from Microsoft 365 Apps
 
 |Update channel  | Version |Release date  |
 |---------|---------|---------|
-|Current Channel |*Version 2301*  |*Late January 2023* |
+|Current Channel |Version 2301  |January 26, 2023 |
 |Monthly Enterprise Channel  | *Version 2301*  | *March 14, 2023*|
 |Semi-Annual Enterprise Channel (Preview) |*Version 2302* |*March 14, 2023*|
 |Semi-Annual Enterprise Channel |*Version 2302*|*July 11, 2023* |
@@ -81,12 +80,15 @@ The SQL Server database, which stores the information used by Office Telemetry D
 As an alternative to Office Telemetry Dashboard, we recommend using the following tools, depending on the information you need:
 
 - Readiness Toolkit for Office add-ins and VBA
-- Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
 - Inventory feature in the Microsoft 365 Apps admin center
+- Apps health feature in the Microsoft 365 Apps admin center
+- Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
 
 For more information about these tools, see the following articles:
 
 - [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](../readiness-tools.md)
 - [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md)
-- [Microsoft 365 Apps readiness dashboard (in Configuration Manager)](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)
 - [Overview of inventory in the Microsoft 365 Apps admin center](../admincenter/inventory.md)
+- [Overview of Apps health in the Microsoft 365 Apps admin center](../admincenter/microsoft-365-apps-health.md)
+- [Introduction to Apps health (video)](https://youtu.be/g9tiCFNDOEw)
+- [Microsoft 365 Apps readiness dashboard (in Configuration Manager)](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)

@@ -7,10 +7,7 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 hideEdit: true
 ms.date: 04/16/2019
@@ -43,12 +40,6 @@ Bing powers the following experiences in Outlook for iOS and Android:
 - **Weather on calendar:** The [weather forecast](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) for your current location will appear at the top of your calendar screen.
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
-
-## Experiences that rely on LinkedIn
-
-[Resume Assistant](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) provides an experience in Word that is powered by LinkedIn. It delivers ideas for your resume. LinkedIn is a different company that is owned by Microsoft. If you use Resume Assistant, the LinkedIn [user agreement](https://www.linkedin.com/legal/user-agreement) and [privacy policy](https://www.linkedin.com/legal/privacy-policy) apply in addition to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to LinkedIn. They are not linked to you by the LinkedIn organization. You do not need to have a LinkedIn account to use this cloud-backed service.
-
-Note: Your [privacy settings](#your-privacy-settings) do not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8).
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
@@ -122,7 +113,8 @@ If you're using Office for Mac, open any Office application and select the app m
 For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
-> If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**. There you should see a check box for **Turn on optional connected experiences**. If you don't see that check box in Project 2019 or Visio 2019, choose **Privacy Settings...** in that **Trust Center** dialog box. Then you should see a **Privacy Settings** dialog box appear with a check box for **Enable optional connected experiences**.
+> - If the admin for your organization has provided you with a volume licensed version of Office 2019, Project 2019, or Visio 2019, go to **File** > **Options** > **Trust Center** > **Trust Center Settings** > **Privacy Options**. There you should see a check box for **Turn on optional connected experiences**. If you don't see that check box in Project 2019 or Visio 2019, choose **Privacy Settings...** in that **Trust Center** dialog box. Then you should see a **Privacy Settings** dialog box appear with a check box for **Enable optional connected experiences**.
+> - Your privacy settings don't control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences (such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook), see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8).
 
 ## Required service data
 

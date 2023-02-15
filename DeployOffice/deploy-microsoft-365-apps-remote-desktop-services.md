@@ -1,14 +1,13 @@
 ---
 title: "Deploy Microsoft 365 Apps by using Remote Desktop Services"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
 ms.date: 04/20/2020

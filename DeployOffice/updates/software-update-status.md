@@ -1,14 +1,13 @@
 ---
 title: "View software update status for Microsoft 365 Apps installations"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about the Software updates page in the Microsoft 365 admin center."
 ms.date: 06/05/2022

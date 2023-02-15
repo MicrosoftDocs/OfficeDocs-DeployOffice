@@ -1,14 +1,13 @@
 ---
 title: "Manage Microsoft 365 installation options in the Microsoft 365 admin center"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
 ms.date: 05/01/2018
@@ -37,11 +36,14 @@ We recommend Current Channel, because it provides your users with the newest Off
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
+> [!NOTE]
+> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+
 After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
 
-For *new* installations, your update channel selection will apply to any new installations of Office that are initiated by your users at [My account](https://portal.office.com/account) > **Apps & devices**.
+For *new* installations, your update channel selection applies to any new installations of Office that are initiated by your users at [My account](https://portal.office.com/account) > **Apps & devices**.
 
-For *existing* installations of Office, your selection will be applied to devices within 12 hours. Devices will automatically get the latest build from the selected update channel the next time they check for Office updates. Office will be updated directly from the Office Content Delivery Network (CDN) on the internet.
+For *existing* installations of Office, your selection is applied to devices within 12 hours. Devices will automatically get the latest build from the selected update channel the next time they check for Office updates. Office will be updated directly from the Office Content Delivery Network (CDN) on the internet.
 
 Keep in mind that moving to a different update channel can also change which features are available to your users. For more information about which features are available in each update channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). 
 
@@ -77,7 +79,7 @@ If you’re having a problem with the current version of Office, you can roll ba
 
 If you decide to roll back to a previous version, devices in your organization will roll back to that previous version the next time Office checks for updates. Also, the information on the **Version management** tab will be updated to show that the previous version is now the current version for devices in your organization.
 
-If you want to stay on that previous version beyond the next version update, you’ll also need to choose **Skip this version**. If you don’t, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update will come directly from the Office Content Delivery Network (CDN) on the internet.
+If you want to stay on that previous version beyond the next version update, you’ll also need to choose **Skip this version**. If you don’t, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update comes directly from the Office Content Delivery Network (CDN) on the internet.
 
 We don’t recommend staying on a version that is no longer supported and that is no longer receiving security updates.
 
@@ -85,7 +87,7 @@ We don’t recommend staying on a version that is no longer supported and that i
 
 If you want to stay on your current version of Office, you can skip the next scheduled version for Monthly Enterprise Channel. But, you can only skip one version at a time. 
 
-If you want to skip more than one upcoming version, you need to go to the **Version management** tab before the second Tuesday of the month and once again choose **Skip this version**. If you don’t choose **Skip this version**, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update will come directly from the Office Content Delivery Network (CDN) on the internet.
+If you want to skip more than one upcoming version, you need to go to the **Version management** tab before the second Tuesday of the month, and once again choose **Skip this version**. If you don’t choose **Skip this version**, devices in your organization will be updated to the most recent version available starting on the second Tuesday of the month. That update comes directly from the Office Content Delivery Network (CDN) on the internet.
 
 If you skip a version, you won’t be able to roll back to that version at a later time. The information displayed on the **Version management** tab will always show you which version you can roll back to.
 
@@ -95,7 +97,7 @@ We don’t recommend staying on a version that is no longer supported and that i
 
 As an admin, you can control which Office software your users can download and install from [My account](https://portal.office.com/account) > **Apps & devices**. Whichever choices you make, they apply to all users in your organization.
 
-If you choose to make some software unavailable to your users, they'll see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
+If you choose to make some software unavailable to your users, they see a message on their **Apps & devices** page instead of an **Install** button. For example, if you choose to make Office unavailable, users see this message: 
   
 &nbsp;&nbsp;&nbsp; Your admin has turned off Office installs. Contact your admin for more information about how to get Office in your organization.
 

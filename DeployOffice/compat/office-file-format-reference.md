@@ -5,24 +5,20 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
 ms.date: 03/20/2018
 ---
 
 # File format reference for Word, Excel, and PowerPoint
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
-
+***Applies to:*** *Office 2019, Office 2016*
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 
-
 ## File formats that are supported in Word
-
 
 The following table describes the file formats that are supported in Word, alphabetized by extension.
   
