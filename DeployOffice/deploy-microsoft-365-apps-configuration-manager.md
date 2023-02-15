@@ -119,7 +119,7 @@ The steps in this article cover the standard best practice recommendations from 
 
 ### Build and deploy multiple packages to multiple deployment groups
 
-If you want to deploy the 32-bit version of Office, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files).
+If you want to deploy the 32-bit version of Office, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your installation packages](plan-microsoft-365-apps.md#step-4---define-your-installation-packages).
 
 ### Use different update channels for Office
 
