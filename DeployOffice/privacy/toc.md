@@ -17,9 +17,9 @@
 
 ## Connected experiences
 ### [Connected experiences](connected-experiences.md)
+### [Connected experiences and your content](connected-experiences-content.md)
 ### [Optional connected experiences](optional-connected-experiences.md)
 ### [Required service data](required-service-data.md)
-### [Connected experiences and your content](connected-experiences-content.md)
 
 ## [Essential services](essential-services.md)
 ## [In-product recommendations](in-product-recommendations.md)
