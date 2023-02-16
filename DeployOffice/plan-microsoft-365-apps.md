@@ -60,7 +60,7 @@ Many organizations use a combination of these options for different users. For e
 
 We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to conserve your network bandwidth.
 
-You can also use Intune to apply additional policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office.md) on how to apply ADMX settings to devices.
+You can also use Intune to apply additional policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office) on how to apply ADMX settings to devices.
 
 The third, cloud-based option is to leverage a [servicing profile](admincenter/servicing-profile.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
 
