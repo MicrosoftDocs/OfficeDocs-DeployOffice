@@ -10,4 +10,4 @@ common/
 .DS_Store
 *.db
 .openpublishing.buildcore.ps1
-
+.gitattributes
