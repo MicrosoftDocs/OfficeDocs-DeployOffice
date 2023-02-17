@@ -3,27 +3,27 @@
     {
       "source_path": "DeployOffice/overview-office-client-policy-service.md",
       "redirect_url": "/DeployOffice/admincenter/overview-cloud-policy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/proofing-tools-for-office-365-proplus.md",
       "redirect_url": "/DeployOffice/overview-deploying-languages-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/choose-how-to-deploy-office-365-proplus.md",
       "redirect_url": "/DeployOffice/plan-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md",
       "redirect_url": "/DeployOffice/overview-update-channels",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/what-s-new-deploying-office-365-proplus-in-the-enterprise.md",
       "redirect_url": "/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/configure-updates-of-office-365-proplus-to-prepare-for-the-upgrade-to-the-office.md",
@@ -48,7 +48,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-cloud-managed.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-cloud",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-using-offscrub.md",
@@ -58,7 +58,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-enterprise-managed.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-configuration-manager",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-system-center-configuration-manager-configuration-for-enterprise.md",
@@ -68,7 +68,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-deployment-for-locally-managed.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-local-source",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-distributed-file-system-configuration-for-locally-managed.md",
@@ -133,7 +133,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessing-your-infrastructure.md",
       "redirect_url": "/DeployOffice/assess-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-assessment-for-cloud-managed.md",
@@ -158,12 +158,12 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-office-telemetry.md",
       "redirect_url": "/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-cloud-managed.md",
       "redirect_url": "/deployoffice/office-deployment-tool-configuration-options",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-download-xml-files-for-enterprise-managed.md",
@@ -263,7 +263,7 @@
     {
       "source_path": "DeployOffice/best-practices/best-practices-office-2016-mac-client-install-for-cloud-managed.md",
       "redirect_url": "/deployoffice/mac/deployment-options-for-office-for-mac",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-office-2016-mac-client-install-for-enterprise-managed.md",
@@ -368,7 +368,7 @@
     {
       "source_path": "DeployOffice/manage-updates-to-office-365-proplus-with-system-center-configuration-manager.md",
       "redirect_url": "/deployoffice/manage-microsoft-365-apps-updates-configuration-manager",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/compat/index.md",
@@ -488,52 +488,52 @@
     {
       "source_path": "DeployOffice/assess-office-365-proplus.md",
       "redirect_url": "/deployoffice/assess-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/plan-office-365-proplus.md",
       "redirect_url": "/deployoffice/plan-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/deployment-guide-for-office-365-proplus.md",
       "redirect_url": "/deployoffice/deployment-guide-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-from-a-local-source.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-local-source",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-from-the-cloud.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-cloud",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/deploy-office-365-proplus-with-configuration-manager.md",
       "redirect_url": "/deployoffice/deploy-microsoft-365-apps-configuration-manager",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/manage-office-365-proplus-updates-with-configuration-manager.md",
       "redirect_url": "/deployoffice/manage-microsoft-365-apps-updates-configuration-manager",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/configuration-options-for-the-office-2016-deployment-tool.md",
       "redirect_url": "/deployoffice/office-deployment-tool-configuration-options",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/overview-of-deploying-languages-in-office-365-proplus.md",
       "redirect_url": "/deployoffice/overview-deploying-languages-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/overview-of-update-channels-for-office-365-proplus.md",
       "redirect_url": "/deployoffice/overview-update-channels",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/choose-how-to-manage-updates-to-office-365-proplus.md",
@@ -568,12 +568,12 @@
     {
       "source_path": "DeployOffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro.md",
       "redirect_url": "/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/office-2007-end-support-roadmap.md",
       "redirect_url": "/deployoffice/endofsupport/plan-upgrade-older-versions-office",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/office-2010-end-support-roadmap.md",
@@ -653,7 +653,7 @@
     {
       "source_path": "DeployOffice/other/home-use-program.md",
       "redirect_url": "/deployoffice/other/workplace-discount-program-notification",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/office2019/update-from-preview.md",
@@ -678,12 +678,12 @@
     {
       "source_path": "DeployOffice/admincenter/update-deadline.md",
       "redirect_url": "/deployoffice/admincenter/servicing-profile#set-an-update-deadline",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/admincenter/known-issues.md",
       "redirect_url": "/deployoffice/admincenter/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/admincenter/update-exclusion-dates.md",
@@ -693,17 +693,17 @@
     {
       "source_path": "DeployOffice/mac/office-2016-for-mac-upgrade-to-64-bit.md",
       "redirect_url": "/deployoffice/mac/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/office2021/overview-ltsc-preview.md",
       "redirect_url": "/deployoffice/ltsc2021/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/office2021/install-ltsc-preview.md",
       "redirect_url": "/deployoffice/ltsc2021/deploy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/office2021/overview-mac-preview.md",
@@ -783,7 +783,7 @@
     {
       "source_path": "DeployOffice/security/designate-trusted-locations-for-files-in-office.md",
       "redirect_url": "/deployoffice/security/trusted-locations",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/other/devices-updating-servicing-profile.md",
@@ -793,7 +793,7 @@
     {
       "source_path": "DeployOffice/admincenter/overview-office-cloud-policy-service.md",
       "redirect_url": "/deployoffice/admincenter/overview-cloud-policy",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/other/home-use-program-notification.md",
@@ -803,7 +803,7 @@
     {
       "source_path": "Deployoffice/other/move-devices-current-channel.md",
       "redirect_url": "/deployoffice/change-update-channels",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/other/known-issue-update-channel-move.md",
@@ -828,67 +828,67 @@
     {
       "source_path": "Deployoffice/whats-new-office-it-pros.md",
       "redirect_url": "/deployoffice/whats-new",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/compare-channels.md",
       "redirect_url": "/deployoffice/insider/compare-channels",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },  
     {
       "source_path": "Deployoffice/office-insider/overview.md",
       "redirect_url": "/deployoffice/insider/overview",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/configuration-manager.md",
       "redirect_url": "/deployoffice/insider/deploy/configuration-manager",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/group-policy.md",
       "redirect_url": "/deployoffice/insider/deploy/group-policy",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/intune.md",
       "redirect_url": "/deployoffice/insider/deploy/intune",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/microsoft-autoupdate.md",
       "redirect_url": "/deployoffice/insider/deploy/microsoft-autoupdate",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/office-deployment-tool.md",
       "redirect_url": "/deployoffice/insider/deploy/office-deployment-tool",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/options.md",
       "redirect_url": "/deployoffice/insider/deploy/options",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/preference.md",
       "redirect_url": "/deployoffice/insider/deploy/preference",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/registry.md",
       "redirect_url": "/deployoffice/insider/deploy/registry",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/deploy/user-choice.md",
       "redirect_url": "/deployoffice/insider/deploy/user-choice",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office-insider/index.yml",
       "redirect_url": "/deployoffice/insider/index",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "DeployOffice/ltsc2021/update-from-preview.md",
