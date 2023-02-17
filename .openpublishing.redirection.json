@@ -889,6 +889,11 @@
       "source_path": "Deployoffice/office-insider/index.yml",
       "redirect_url": "/deployoffice/insider/index",
       "redirect_document_id": false
-    },  
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/update-from-preview.md",
+      "redirect_url": "/deployoffice/vlactivation/plan-volume-activation-of-office",
+      "redirect_document_id": false
+    } 
   ]
 }
