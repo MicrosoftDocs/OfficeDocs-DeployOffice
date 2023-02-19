@@ -2,6 +2,18 @@
 
 
 
+## Week of February 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/14/2023 | [Windows 8.1 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-81-support) | modified |
+| 2/14/2023 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
+| 2/15/2023 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
+| 2/16/2023 | [Connected experiences and your content](/DeployOffice/privacy/connected-experiences-content) | added |
+| 2/17/2023 | Update Office LTSC 2021 Preview to Office LTSC 2021 | removed |
+
+
 ## Week of February 06, 2023
 
 
@@ -96,20 +108,3 @@
 | 1/18/2023 | Office Insider Program for Business | removed |
 | 1/18/2023 | [Office 2016 in RDSH and VDI deployments](/DeployOffice/rds-office-vdi-rdsh) | modified |
 | 1/18/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
-
-
-## Week of January 09, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/10/2023 | [What's new for deploying Microsoft 365 Apps](/DeployOffice/whats-new) | renamed |
-| 1/10/2023 | [Update Office Telemetry Dashboard components](/DeployOffice/compat/update-office-telemetry-components-for-office-2016) | modified |
-| 1/10/2023 | [Content updates for deploying Microsoft 365 Apps](/DeployOffice/deploy-office-content-updates) | modified |
-| 1/10/2023 | [Windows 8 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-8-support) | modified |
-| 1/10/2023 | [Windows 8.1 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-81-support) | modified |
-| 1/10/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
-| 1/10/2023 | [Windows 7 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-7-support) | modified |
-| 1/11/2023 | [Set preferences for macro security in Office for Mac](/DeployOffice/mac/set-preference-macro-security-office-for-mac) | modified |
-| 1/12/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
-| 1/13/2023 | [Deployment options for admins for Office for Mac](/DeployOffice/mac/deployment-options-for-office-for-mac) | modified |
