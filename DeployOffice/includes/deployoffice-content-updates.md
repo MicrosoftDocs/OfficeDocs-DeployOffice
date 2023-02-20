@@ -108,3 +108,4 @@
 | 1/18/2023 | Office Insider Program for Business | removed |
 | 1/18/2023 | [Office 2016 in RDSH and VDI deployments](/DeployOffice/rds-office-vdi-rdsh) | modified |
 | 1/18/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
+
