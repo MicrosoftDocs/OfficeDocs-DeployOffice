@@ -5,6 +5,7 @@ summary: Deploy and manage Microsoft 365 Apps or other versions of Office.
 brand: office
 
 metadata:
+  ms.date: 04/30/2021
   title: Office deployment
   description: Learn how to deploy and manage Microsoft 365 Apps or other versions of Office. Microsoft 365 Apps is the version of Office that's available through many Microsoft 365 and Office 365 plans.  
   brand: office
@@ -49,4 +50,5 @@ additionalContent:
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
           url: ltsc2021/overview.md
+
 
