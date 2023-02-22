@@ -1,14 +1,16 @@
 ---
 title: "Overview of inventory in the Microsoft 365 Apps admin center"
-ms.author: darrend
-author: darrendmsft
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
+ms.date: 08/19/2020
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center
@@ -16,6 +18,9 @@ description: "Guidance for Office admins on how to use the inventory feature in 
 The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into the state of Office installations on devices in your organization. These insights can help you identify issues with those Office installations, such as identifying devices that are running an older, unsupported build of Office. Insights are also available about add-ins that are installed on those devices.
 
 From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
+
+> [!TIP]
+> If you want to get a better understanding what are the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms on how the inventory service works, which changes occur on your devices, and how to do troubleshooting, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
 
 ## Requirements for using inventory
 
@@ -40,8 +45,8 @@ To view the inventory for your environment, the following requirements must be m
 To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
-2. If you haven't viewed the inventory before, complete the setup wizard.
-3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
+2. If you haven't viewed the inventory before, you will need to complete the one-step setup.
+3. Once the setup is complete, insights about devices where users have launched a Microsoft 365 app such as Word or Excel, will appear on the **Inventory** page with an hour.
 
 
 ## Inventory insights dashboard
@@ -128,10 +133,12 @@ Devices will send a heartbeat once a day to the inventory. If a device hasn't se
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, filter the view down to the selection of data you wish to export. Then, choose **Export** at the top of the table. This command will export the current filtered view of data. We recommend using the filtering controls on the table to first narrow down the data you wish to export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and click on the **Export** button. The service will prepare the data in the background and notify you, when it is ready for download. Inventory will always export all data points, regardless of the currently set filters. There is no size limit to the export.
+
 
 ## Missing or duplicate devices
 
 If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
 
 In a few cases, some devices may appear more than once in the inventory. This duplication mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
+

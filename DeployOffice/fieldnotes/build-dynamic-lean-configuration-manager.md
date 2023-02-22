@@ -7,13 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier3
 description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
+ms.date: 09/09/2020
 ---
 
 # Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
@@ -21,7 +17,7 @@ ms.collection:
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
 
-Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices that are showing a configuration drift. This article will share some best practices on how to use Microsoft Endpoint Configuration Manager's [dynamic collections](/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
+Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices that are showing a configuration drift. This article will share some best practices on how to use Microsoft Configuration Manager's [dynamic collections](/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
 This article covers the following scenarios:
 
@@ -30,7 +26,7 @@ This article covers the following scenarios:
 - [Set up a collection that captures all devices on update channels which your IT department doesn't support](build-dynamic-lean-configuration-manager.md#catch-devices-on-other-update-channels). In case you don't support all available update channels in your organization, this implementation helps you to quickly identify and mitigate any configuration drift.
 - [Set up a collection that captures all devices running outdated builds](build-dynamic-lean-configuration-manager.md#catch-devices-on-builds-below-a-certain-threshold). This collection will show all devices that are running a release of the Microsoft 365 Apps below a certain build. This can be used to quickly identify devices that are lacking updates or must be updated to a certain minimum build.
 
-For each scenario, you will find a detailed step-by-step guide as well as some notes on how these collections can be put to work.
+For each scenario, you'll find a detailed step-by-step guide as well as some notes on how these collections can be put to work.
 
 ## Catch devices on specific update channels
 
@@ -38,7 +34,7 @@ Follow these steps to create a dynamic collection that will capture devices that
 
 Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview). We also have [detailed guidance for switching to Monthly Enterprise Channel](switch-to-monthly-enterprise-channel.md) available.
 
-Here is how to implement these collections:
+Here's how to implement these collections:
 
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and choose a limiting collection. Select **Next**.
@@ -72,11 +68,11 @@ Repeat these steps for each update channel that you want to be captured in a sep
 
 ## Catch devices running Microsoft 365 Apps
 
-Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. For example, when you are currently migrating to Microsoft 365 Apps, there is no need for manual maintenance of such a collection any more.
+Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. For example, when you're currently migrating to Microsoft 365 Apps, there's no need for manual maintenance of such a collection anymore.
 
 It's a common practice to use this collection for deploying [Microsoft 365 Apps updates](../manage-microsoft-365-apps-updates-configuration-manager.md) for all channels supported by your organization. This allows each device to fetch the matching update, but ignore (and not download) updates from other channels. This will also cover the scenario that a device is switching channels. In this state, the device is still on the previous channel, but must be able to access the latest update from the targeted channel to finalize transition. Deploying updates to the individual, per-channel collections would break such scenarios. During download, the device will use delta compression, so only required chunks will be downloaded, not the complete update source.
 
-Here is how to implement this collection:
+Here's how to implement this collection:
 
 1. Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and choose a limiting collection. Select **Next**.
@@ -84,7 +80,7 @@ Here is how to implement this collection:
 4. Paste the following sample query into the editor window.
 
    ```sql
-   select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier,      SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
+   select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE_PRODUCTINFO on SMS_G_System_OFFICE_PRODUCTINFO.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE_PRODUCTINFO.IsProPlusInstalled = 1
    ```
    > [!NOTE]
    > This sample query checks for Microsoft 365 Apps for enterprise. You might want to adjust the query for other licenses.
@@ -96,7 +92,7 @@ The result is a collection that will automatically add all devices that are runn
 
 ## Catch devices on other update channels
 
-After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices tht are on update channels that you support internally. This leaves all devices that are on other update channels in this collection. You can then use this collection to deploy, for example a required application which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
+After you created collections for the update channels that you support, you might also want to create one to catch all devices that are running other channels. This can help you identify and remediate configuration drift. For this we use the collections from above. We take all devices running Microsoft 365 Apps and subtract the devices that are on update channels that you support internally. This leaves all devices that are on other update channels in this collection. You can then use this collection to deploy, for example a required application which performs a reinstallation of Microsoft 365 Apps to get the device back onto an approved update channel.
 
 1. Navigate to **Assets and Compliance**. Select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2. Provide a name and select a limiting collection. Select **Next**.
@@ -108,23 +104,22 @@ After you created collections for the update channels that you support, you migh
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
-This collection will now automatically add all devices that have Microsoft 365 Apps installed but are not a member of one of the other collections that we created. This collection will catch all devices that are running on an update channel that you haven't created a separate collection for.
+This collection will now automatically add all devices that have Microsoft 365 Apps installed but aren't a member of one of the other collections that we created. This collection will catch all devices that are running on an update channel that you haven't created a separate collection for.
 
 ## Catch Devices on builds below a certain threshold
 
 Follow these steps to create a dynamic collection that will capture devices that run a release of the Microsoft 365 Apps below a certain version. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target e.g. outdated devices for updates or if you need to ensure that all devices are above a certain build, e.g. to enable new features.
 
-Here is how to implement this collection:
+Here's how to implement this collection:
 1.	Navigate to **Assets and Compliance**, select **Device Collections** and then **Create Device Collection** on the **Home** menu.
 2.	Provide a name and choose a limiting collection. Select **Next**.
 3.	Select **Add Rule** and choose **Query Rule**. Provide a **Name** and select **Edit Query Statement**. Then select **Show Query Language**.
 4.	Paste the following sample query into the editor window.
 
    ```sql
-    select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from  SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
+    select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
    ```
-5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you are interested in.
-
+5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you're interested in.
 
    > [!NOTE]
    > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channel by adding the collection holding these devices as an exclusion.
@@ -132,11 +127,11 @@ Here is how to implement this collection:
 6.	Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 7.	Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
-After the membership calculation has finished, you can easily see all devices running a build lower the configured threshold. You can now use this collection to e.g. deploy Microsoft 365 Apps client updates to it, trigger Client Policy cycles or investigate why those devices are not updating to the latest version.
+After the membership calculation has finished, you can easily see all devices running a build lower the configured threshold. You can now use this collection to e.g. deploy Microsoft 365 Apps client updates to it, trigger Client Policy cycles or investigate why those devices aren't updating to the latest version.
 
 ## Notes
 
 - If the configuration of a device is changed, there are two timers that are relevant on the Configuration Manager side:
     - First, the device must upload the [hardware inventory](/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), which includes the information about the selected update channel.
     - Second, the Configuration Manager infrastructure must recalculate the memberships of the collections.
-- "Update channels supported by the IT department" in this article refers to channels that the IT department supports as approved configurations in the organization. The created collection will not catch devices that are running a build which is no longer supported by Microsoft.
+- "Update channels supported by the IT department" in this article refers to channels that the IT department supports as approved configurations in the organization. The created collection won't catch devices that are running a build which is no longer supported by Microsoft.

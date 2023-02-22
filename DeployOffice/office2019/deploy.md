@@ -5,13 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
-ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- Office2019
+ms.service: office-perpetual-itpro
+ms.localizationpriority: medium
+ms.collection: tier2
 description: "Provides IT admins with information on how to deploy Office 2019."
+ms.date: 09/20/2018
 ---
 
 # Deploy Office 2019 (for IT Pros)
@@ -27,7 +25,7 @@ Installing directly from the Office CDN requires the least amount of administrat
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT.
 
-After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files:  setup.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
+After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you're finished, you should have several files:  setup.exe and some sample configuration.xml files. For an Office 2019-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
 The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office 2019. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office 2019. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
 
@@ -103,13 +101,13 @@ Once you have a copy of the ODT and have created your configuration.xml file, yo
 	setup /download configuration.xml
 ```
 
-If you have saved the configuration.xml file with a different name, use that name in the command.
+If you've saved the configuration.xml file with a different name, use that name in the command.
 
-It will look as if nothing is happening, but the download is happening in the background. Once the download is complete, you are returned to a command prompt.
+It will look as if nothing is happening, but the download is happening in the background. Once the download is complete, you're returned to a command prompt.
 
-If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named “Office” with a subfolder named “Data.”  There will also be a folder named with the version number of the download. For example, 16.0.10336.20044. Which files you see and the names of the files depend on whether you are downloading the 32-bit or 64-bit version of Office and which languages you are downloading. 
+If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named “Office” with a subfolder named “Data.”  There will also be a folder named with the version number of the download. For example, 16.0.10336.20044. Which files you see and the names of the files depend on whether you're downloading the 32-bit or 64-bit version of Office and which languages you're downloading. 
 
-Here some additional details about downloading Office 2019 installation files:
+Here are some additional details about downloading Office 2019 installation files:
 - You must download the 32-bit and 64-bit versions separately.
 - All volume licensed versions of Office 2019 – such as Office Professional Plus 2019, Visio Professional 2019, and Project Professional 2019 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for the Office 2019 products are in the stream.x86.x-none.dat or stream.x64.x-none.dat file, depending if it’s the 32-bit or 64-bit version of Office. 
 
@@ -120,29 +118,24 @@ Once you have a copy of the ODT and have created your configuration.xml file (an
 	setup /configure configuration.xml
 ```
 
-If you have saved the configuration.xml file with a different name, use that name in the command. 
+If you've saved the configuration.xml file with a different name, use that name in the command. 
 
-Once the installation is complete, you are returned to a command prompt and you can go open Office 2019 programs you’ve installed.
+Once the installation is complete, you're returned to a command prompt and you can go open Office 2019 programs you’ve installed.
 
+## Install Office 2019 by using Microsoft Configuration Manager
 
-## Install Office 2019 by using Microsoft Endpoint Configuration Manager
-
-You can also use Microsoft Endpoint Configuration Manager to deploy volume licensed versions of Office 2019. Configuration Manager (current branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file. 
-
-- **Configuration Manager (current branch):** If you’re using Configuration Manager (current branch), you can use the Office 365 Client Installation wizard to deploy Office 2019. You must be using at least version 1710, but version 1806 is recommended. You’ll see an entry for Office Professional Plus 2019 in the Office 365 Client Installation wizard. On that same page, you can also select to install Project and Visio.
-
-- **System Center 2012 R2 Configuration Manager:** If you’re using System Center 2012 R2 Configuration Manager, the steps are different and much more manual. First you need to get a copy of the ODT from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment.  Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
+You can also use Microsoft Configuration Manager (current branch) to deploy volume licensed versions of Office 2019. The Office 365 Client Installation wizard steps you through the process and builds the configuration.xml file for you. You’ll see an entry for Office Professional Plus 2019 in the wizard. On that same page, you can also select to deploy Project and Visio. To get to the wizard, in the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 
 ## Deploy languages for Office 2019
 
-You can use the ODT and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more details, see [Language element](../office-deployment-tool-configuration-options.md#language-element).
+You can use the ODT and the configuration.xml file to install volume licensed versions of Office 2019, including Project and Visio, in multiple languages. For more information, see [Language element](../office-deployment-tool-configuration-options.md#language-element).
 
 You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuration.xml file along with the appropriate Language IDs. Proofing tools packages, which are a new capability for Office 2019, are much smaller than full language packs.  Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office 2019, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 
 If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office 2019. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though this article is about Microsoft 365 Apps, most of the information also applies to volume licensed versions of Office 2019.
 
 
-## Related topics
+## Related articles
 
 - [Overview of Office 2019 (for IT Pros)](overview.md)
 - [Update Office 2019 (for IT Pros)](update.md)

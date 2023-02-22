@@ -1,19 +1,17 @@
 ---
 title: "Use preferences to manage privacy controls for Office for Mac"
 ms.author: danbrown
-author: pbowden-msft
+author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
 hideEdit: true
+ms.date: 08/07/2019
 ---
 
 # Use preferences to manage privacy controls for Office for Mac
@@ -40,15 +38,14 @@ For more information about diagnostic data and connected experiences, see [Overv
 These new preference settings are CFPreferences API compatible and can be set using the `defaults` command in Terminal, or enforced through a Configuration Profile or Mobile Device Management (MDM) server. When the preferences are enforced, the user cannot change the values, and any in-app controls will appear disabled.
 
 > [!NOTE]
-> You can also use the Office cloud policy service and these 5 policy settings:
+> You can also use Cloud Policy and these 5 policy settings:
 > - Configure the level of client software diagnostic data sent by Office to Microsoft
 > - Allow the use of connected experiences in Office that analyze content
 > - Allow the use of connected experiences in Office that download online content
 > - Allow the use of additional optional connected experiences in Office
 > - Allow the use of connected experiences in Office
 >
-> For more information on using the Office cloud policy service, see [Overview of the Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).
-
+> For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ## Preference setting for diagnostic data
 
@@ -104,7 +101,7 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 ## Preference setting for optional connected experiences
 
-In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, the LinkedIn features of the Resume Assistant in Word or the Weather Bar in Outlook, which uses MSN Weather. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+In addition to the connected experiences mentioned above, there are some optional connected experiences that you may choose to allow your users to access with their organization account, which is sometimes referred to as a work or school account. For example, similarity checker (a feature of Editor), which relies on Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 |Category|Details|
 |:-----|:-----|

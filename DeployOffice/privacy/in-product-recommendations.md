@@ -7,12 +7,10 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides information about in-product recommendations that might appear while using Office."
 hideEdit: true
+ms.date: 10/05/2020
 ---
 
 # In-product recommendations in Office
@@ -28,3 +26,6 @@ Here are some examples of the types of in-product recommendations that you might
 Our goal is to provide recommendations that are relevant, timely, and shown in the appropriate context. To provide these recommendations, we might rely on information about the Office products you have purchased, the Office apps that you use, the features and capabilities within those Office apps that you use, or those apps that you're licensed to use but haven’t tried yet. These recommendations are not based on the actual content that you create while using Office, such as budget projections in an Excel spreadsheet or the text you write in an Outlook email.
 
 For more information, see [Privacy at Microsoft](https://privacy.microsoft.com/).
+
+> [!NOTE]
+> Consumer users, if they give permission, might also receive personalized offers and discounts. For example, users might see an offer to renew their Microsoft 365 subscription at a discount. For more information, see [Personalized offers and discounts based on how you use Office](https://support.microsoft.com/topic/2eef9eeb-23e3-4a63-9d72-4f0596a7b349).

@@ -5,11 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
+ms.date: 03/20/2018
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office
@@ -41,6 +41,7 @@ To get the KMS key, sign in to the [Volume Licensing Service Center (VLSC)](http
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
 > - Support for Windows 8 ended on January 12, 2016.
+> - Support for Windows 8.1 ended on January 10, 2023.
 
 ## Configure the KMS host computer
 

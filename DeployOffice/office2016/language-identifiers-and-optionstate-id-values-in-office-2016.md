@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 3/9/2016
 audience: ITPro
 ms.topic: reference
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: tier2
 description: "Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations."
 ---
 
@@ -88,8 +87,8 @@ In addition to the fully localized languages listed here, Office 2016 provides L
 |Spanish  <br/> |Spain  <br/> |es-ES  <br/> |3082  <br/> |
 |Swedish  <br/> |Sweden  <br/> |sv-SE  <br/> |1053  <br/> |
 |Thai  <br/> |Thailand  <br/> |th-TH  <br/> |1054  <br/> |
-|Turkish  <br/> |Turkey  <br/> |tr-TR  <br/> |1055  <br/> |
-|Ukrainian  <br/> |Ukrainian  <br/> |uk-UA  <br/> |1058  <br/> |
+|Turkish  <br/> |Türkiye  <br/> |tr-TR  <br/> |1055  <br/> |
+|Ukrainian  <br/> |Ukraine  <br/> |uk-UA  <br/> |1058  <br/> |
 |Vietnamese  <br/> |Vietnam  <br/> |vi-VN  <br/> |1066  <br/> |
 
 <sup>1</sup> Language tag is sometimes referred to as the language ID.

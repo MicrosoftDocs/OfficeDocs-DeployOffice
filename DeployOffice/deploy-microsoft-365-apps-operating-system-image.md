@@ -1,16 +1,16 @@
 ---
 title: "Deploy Microsoft 365 Apps as part of an operating system image"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "You can include Microsoft 365 Apps as part of an operating system image that you deploy to users in your organization. You just need to make sure you don't activate Microsoft 365 Apps when you create the image. That's because you need your users to activate their Microsoft 365 Apps installations by signing in with their accounts."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps as part of an operating system image
@@ -44,7 +44,7 @@ When you set **Level** to **None**, you don't see any user interface elements du
 > [!IMPORTANT]
 > Don't sign in to the Office 365 portal to install Microsoft 365 Apps from the **software** page. If you do, activation occurs automatically.<br/><br/> Also, don't save the setup file from the Office 365 portal to the test computer. Even if you run the setup file, which will have a file name similar to Setup.X86.en-us_O365ProPlusRetail_d079c594-698d-4370-9174-7c00f76abf00_TX_PR_.exe, from the test computer, activation occurs automatically. 
   
-After the installation is complete, don't open any Office programs. If you open an Office program, you are prompted to sign-in and activate. Even if you don't sign in and you close the **Activate Office** dialog box, a temporary product key is installed. You don't want any kind of Microsoft 365 Apps product key installed in your operating system image.
+After the installation is complete, don't open any Office programs. If you open an Office program, you're prompted to sign-in and activate. Even if you don't sign in and you close the **Activate Office** dialog box, a temporary product key is installed. You don't want any kind of Microsoft 365 Apps product key installed in your operating system image.
   
 If you accidentally open an Office program, you'll have to uninstall Microsoft 365 Apps, restart the computer, and then install Microsoft 365 Apps again.
   
@@ -53,9 +53,9 @@ If you accidentally open an Office program, you'll have to uninstall Microsoft 3
 
 Next, install other programs that you want to include as part of the operating system image. This includes Office add-ins you want to provide to your users.
   
-Remember not to open any Office programs. After you have created the image, you can test on another computer that Office and the add-ins work correctly.
+Remember not to open any Office programs. After you've created the image, you can test on another computer that Office and the add-ins work correctly.
   
-## Step 4: Check that a Microsoft 365 Apps product key is not installed in the image
+## Step 4: Check that a Microsoft 365 Apps product key isn't installed in the image
 <a name="Step4"> </a>
 
 Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use the ospp.vbs script. This script is installed on the computer when Microsoft 365 Apps is installed.
@@ -79,12 +79,12 @@ The location of the ospp.vbs script depends on whether you install the 32-bit or
 ## Step 5: Save the operating system image
 <a name="Step5"> </a>
 
-You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment).
+You can use Windows ADK or MDT 2012 to save the operating system image file that you'll deploy to your users. You can also use [Microsoft Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment).
   
 ## Step 6: Test that the operating system image works
 <a name="Step6"> </a>
 
-Deploy the operating system image to another test computer. Then, open the Office programs to make sure they are set up as you want. If you have a test user account for your Office 365 (or Microsoft 365) subscription, you can test that activation works.
+Deploy the operating system image to another test computer. Then, open the Office programs to make sure they're set up as you want. If you have a test user account for your Office 365 (or Microsoft 365) subscription, you can test that activation works.
   
 After you finish your tests, don't save an image of the test computer.
   

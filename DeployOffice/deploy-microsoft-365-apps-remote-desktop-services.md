@@ -1,16 +1,16 @@
 ---
 title: "Deploy Microsoft 365 Apps by using Remote Desktop Services"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier2
+ms.localizationpriority: medium
 recommendations: false
-description: "If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps on those computers. But, you have to use the Office Deployment Tool and enable shared computer activation to do the installation."
+description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
+ms.date: 04/20/2020
 ---
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
@@ -29,11 +29,11 @@ The following are two common RDS scenarios:
 The following is a list of prerequisites that you need to deploy Microsoft 365 Apps or the Project and Visio desktop apps with RDS:
 
 - One of the following plans:
-  - An Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps for enterprise, purchased through a Volume Licensing Program.
+  - A Microsoft 365 (or Office 365) plan that includes Microsoft 365 Apps for enterprise.
   - A Microsoft 365 Business Premium plan that includes Microsoft 365 Apps for business.
   - For the Project and Visio desktop apps, a subscription plan that includes those products.
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
-- A separate user account for each user who logs on to the shared computer.
+- A separate user account for each user who signs in to the shared computer.
 - An [eligible license assigned](/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
 - A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
 - Reliable connectivity between the shared computer and the internet.
@@ -44,6 +44,12 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 
 ## Install Microsoft 365 Apps on an RDS server
 <a name="Server"> </a>
+
+> [!NOTE]
+> - Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.
+> - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. *(For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).)*
+> - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
+> - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
 
 In this scenario, you install Microsoft 365 Apps on a computer configured as a Remote Desktop Session Host server. This enables multiple users to connect remotely to this computer. The users can each run Office programs, such as Word or Excel, at the same time. The overall process is the same for the Project and Visio desktop apps.
 

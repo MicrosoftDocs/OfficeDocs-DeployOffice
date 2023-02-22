@@ -1,18 +1,16 @@
 ---
 title: "Overview of deploying languages for Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier1
+ms.localizationpriority: medium
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
+ms.date: 04/20/2020
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
@@ -21,14 +19,14 @@ This article covers the options for deploying languages for Microsoft 365 Apps, 
 
 The guidance in this article applies to the following Office products:
 
-- Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), which comes with many Office 365 and Microsoft 365 enterprise plans.
-- Microsoft 365 Apps for business (previously named Office 365 Business), which comes with some Microsoft 365 business plans.
+- Microsoft 365 Apps for enterprise, which comes with many Office 365 and Microsoft 365 enterprise plans.
+- Microsoft 365 Apps for business, which comes with some Microsoft 365 business plans.
 - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
 - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
 
 You can't use language resources for Windows Installer (MSI) versions of Office with Microsoft 365 Apps, which uses Click-to-Run. For example, you can't use language packs downloaded from the Volume Licensing Service Center (VLSC) with Microsoft 365 Apps.  
 
-In general, you deploy languages for Microsoft 365 Apps with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages, or you can deploy languages as a separate package, after Office is already installed. The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting is not yet available in the OCT, steps are given for creating the configuration file in a text editor.
+In general, you deploy languages for Microsoft 365 Apps with the same process and tools that you use to deploy Office itself. You can deploy multiple languages by including those languages directly in the Office packages, or you can deploy languages as a separate package, after Office is already installed. The steps in this article assume that you're deploying with Configuration Manager or the Office Deployment Tool, and that you use the Office Customization Tool (OCT) to create the configuration files for your deployment. If a setting isn't yet available in the OCT, steps are given for creating the configuration file in a text editor.
 
 ## Best practices for deploying languages
 
@@ -38,7 +36,7 @@ When deploying multiple languages in a large organization, we recommend these be
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-microsoft-365-apps), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as a previous MSI installation](#install-the-same-languages-as-a-previous-msi-installation). 
-- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-microsoft-365-apps.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
+- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-microsoft-365-apps.md#step-4---define-your-installation-packages). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of the Project or Visio desktop app to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-microsoft-365-apps).
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#deploy-proofing-tools) instead of full language packs to conserve network bandwidth.
 
@@ -46,11 +44,11 @@ This article also includes [the list of supported languages](#languages-culture-
 
 ## Install languages from the Office 365 portal
 
-If your organization allows it, users can install Microsoft 365 Apps languages directly from the Office 365 portal. When users install Office from the **Software** page, they select a language from the **Language** drop-down box. If a user needs an additional language, they can just re-run the process for each required language. The setup will add the selected language to the user's device.
+If your organization allows it, users can install Microsoft 365 Apps languages directly from the Office 365 portal. When users install Office from the **Software** page, they select a language from the **Language** drop-down box. If a user needs another language, they can just rerun the process for each required language. The setup will add the selected language to the user's device.
 
 ## Deploy multiple languages as part of deploying Office
 
-To deploy Microsoft 365 Apps in multiple languages, you just need to include the additional languages in the Office packages you create. To do so, select the languages you want to deploy in the Language section when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
+To deploy Microsoft 365 Apps in multiple languages, you need to include the additional languages in the Office packages you create. To do so, select the languages you want to deploy in the Language section when creating the configuration file in the [Office Customization Tool](https://config.office.com/).
 
 If you deploy Office from a local source on your network, you must download your languages to that source, in the same way that you download the Office package. For more information, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). When deploying from a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). 
 
@@ -60,23 +58,23 @@ The primary language selected in the Office Customization Tool determines the Sh
 
 ## Deploy languages to existing installations of Microsoft 365 Apps
 
-After deploying Microsoft 365 Apps, you can deploy additional languages for Office. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
+After deploying Microsoft 365 Apps, you can deploy more languages for Office. To do so, use the same process and tools you used to deploy Office, such as Configuration Manager or the Office Deployment Tool. 
 
 1. If you're deploying languages from a local source, make sure the languages are available at that source. For more information, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). 
 2. If you use a local source, we recommend that you [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs). 
 3. When creating the configuration file in the [Office Customization Tool](https://config.office.com/), select **Language Pack** as the Additional Product in the Products section. 
-4. In the Language section, select the additional languages you want to install.
+4. In the Language section, select the other languages you want to install.
 5. Deploy the languages using the same process you use to deploy Office.
 
-When you add to an existing deployment, the ODT can automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups. The Office Customization Tool, however, requires that you specify all these values, so you can only use this feature if you create the configuration file in a text editor. 
+When you add to an existing deployment, the ODT can automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you don't need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups. The Office Customization Tool, however, requires that you specify all these values, so you can only use this feature if you create the configuration file in a text editor. 
 
-## Allow users who aren't admins to install additional languages
+## Allow users who aren't admins to install another language
 
-By default, users must have local administrator permissions on their devices to install additional languages for Office. If you want to allow users who aren't local admins on their devices to install additional languages, you can enable the "Allow users who aren't admins to install language accessory packs" policy setting.
+By default, users must have local administrator permissions on their devices to install more languages for Office. To allow users who aren't local admins on their devices to install another language, you can enable the "Allow users who aren't admins to install language accessory packs" policy setting.
 
-You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
+You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](admincenter/overview-cloud-policy.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
 
-The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install additional languages by going to **File** > **Options** > **Language** > **Office display language** > **Add a Language...** in their Office app.
+The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install another language by going to **File** > **Options** > **Language** > **Office display language** > **Add a Language...** in their Office app.
 
 > [!NOTE]
 > - This capability is available in Microsoft 365 Apps for enterprise, starting with Version 2108 of Current Channel and with Version 2109 of Monthly Enterprise Channel.
@@ -91,14 +89,14 @@ If you're using a local source to deploy Office, we recommend that you use the [
 
 Each language version of Microsoft 365 Apps includes proofing tools for a set of companion languages. For example, when you deploy the English version of Office, users receive proofing tools for English, Spanish, and French. These proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
 
-If you want to deploy proofing tools in additional languages beyond the companion languages, you can deploy the full language pack for that additional language or you can deploy just the proofing tools for that additional language. Many administrators choose to deploy just the proofing tools to conserve bandwidth on the network and speed up installation on client computers.
+If you want to deploy proofing tools in other languages beyond the companion languages, you can deploy the full language pack for that language or you can deploy just the proofing tools for that language. Many administrators choose to deploy just the proofing tools to conserve bandwidth on the network and speed up installation on client computers.
 
 To deploy just the proofing tools, use the same tools you used to deploy Office, such as Configuration Manager or the ODT. You can include proofing tools in the initial deployment of Office, or you can add them later to an existing deployment. 
 
 > [!NOTE]
 > To install proofing tools, you must be using at least Version 1803 of Microsoft 365 Apps. You must also be using the latest version of the Office Deployment Tool, which you can download from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117). In addition, you cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
 
-If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
+If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because the same architecture and location is used, you don't need to specify these values when creating the configuration file, meaning you can use a single configuration file to deploy to multiple deployment groups.
 
 1. When creating the configuration file in a text editor, use "ProofingTools" as the Product ID, along with the appropriate Language IDs, as shown in the example. 
 2. If you deploy languages from a local source, you must download the proofing tools to that source first. For more information, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps).  
@@ -137,11 +135,11 @@ You can automatically deploy Visio and Project in the languages that are in use 
 > [!NOTE]
 > You cannot use the Office Customization Tool to create the configuration file, because this feature is not yet available in that tool. Instead, you must edit the configuration file in a text editor. 
 
-If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because of this, you do not need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
+If you're adding to an existing deployment, the ODT will automatically use the same architecture (32 bit or 64 bit) and source location (Office CDN or local source) as the existing installation of Microsoft 365 Apps. Because you can use the same architecture and source location, you don't need to specify these values when creating the configuration file, which means you can use a single configuration file to deploy to multiple deployment groups.
 
 1. When creating the configuration file in a text editor, use "MatchInstalled" as the Language ID, as shown in the example below.
 2. Optionally, you can include the TargetProduct as an attribute of the Language element, as shown in the example below. By doing so, you can specify which existing Office product should be used to determine which languages to install. For example, if you set TargetProduct = "O365ProPlusRetail", the Office products you're deploying will be installed in the same languages as Microsoft 365 Apps for enterprise, if that product is installed on the client computer. If you want to match all installed languages, you can specify TargetProduct="All".
-3. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more information, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You cannot use the /download switch for ODT on a configuration file that contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
+3. If you deploy languages from a local source, you must download any possible matched languages to that source first. For more information, see [Download the installation files for Microsoft 365 Apps](overview-office-deployment-tool.md#download-the-installation-files-for-microsoft-365-apps). You can't use the /download switch for ODT on a configuration file that contains the MatchInstalled keyword. You have to use a separate configuration file for this. 
 
 You can also use MatchInstalled as the Language ID when adding Office apps to or removing them from an existing installation of Office. 
 
@@ -219,11 +217,11 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Danish                                   | da-DK               | Danish, English, German, Swedish                                          |
 | Dutch                                    | nl-NL               | Dutch, English, French, German                                            |
 | English                                  | en-US               | English, French, Spanish                                                  |
-| English UK<sup>1</sup>                   | en-GB               | English, Irish, Scottish Gaelic, Welsh
+| English UK <sup>[1]</sup>                   | en-GB               | English, Irish, Scottish Gaelic, Welsh
 | Estonian                                 | et-EE               | Estonian, English, German, Russian, Finnish,                              |
 | Finnish                                  | fi-FI               | Finnish, English, Swedish, German, Russian                                |
 | French                                   | fr-FR               | French, English, German, Dutch, Arabic, Spanish                           |
-| French Canada<sup>1</sup>                | fr-CA               | French, English, German, Dutch, Arabic, Spanish                           |
+| French Canada <sup>[1]</sup>                | fr-CA               | French, English, German, Dutch, Arabic, Spanish                           |
 | Galician                                 | gl-ES               |                                                                           |
 | Georgian                                 | ka-GE               |                                                                           |
 | German                                   | de-DE               | German, English, French, Italian                                          |
@@ -280,7 +278,7 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Slovak                                   | sk-SK               | Slovak, English, Czech, Hungarian, German                                 |
 | Slovenian                                | sl-SI               | Slovenian, English, German, Italian, Croatian                             |
 | Spanish                                  | es-ES               | Spanish, English, French, Basque (Basque), Catalan, Galician, Brazilian   |
-| Spanish Mexico<sup>1</sup>               | es-MX               | Spanish, English, French, Brazilian                                       |
+| Spanish Mexico <sup>[1]</sup>               | es-MX               | Spanish, English, French, Brazilian                                       |
 | Swedish                                  | sv-SE               | Swedish, English, Finnish, German                                         |
 | Tamil                                    | ta-IN               |                                                                           |
 | Tatar (Cyrillic)                         | tt-RU               |                                                                           |
@@ -296,7 +294,8 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Yoruba                                   | yo-NG               |
 
 
-<sup>1</sup> This language is only available for Version 2108 or later.
+> [!NOTE]
+> <sup>[1]</sup> This language is only available for Version 2108 or later, but isn't available in Project or Visio.
 
 ## Related articles
 

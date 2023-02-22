@@ -6,10 +6,9 @@ manager: dougeby
 ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
-ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.service: office-perpetual-itpro
+ms.localizationpriority: medium
+ms.collection: tier2
 description: "Learn how to customize languages for Office 2016."
 ---
 

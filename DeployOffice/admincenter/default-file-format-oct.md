@@ -1,17 +1,18 @@
 ---
 title: "Default file format setting for the Office Customization Tool (for Click-to-Run)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
+ms.reviewer: chhopkin
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier2
 recommendations: false
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides admins information about choosing a default file format when using the Office Customization Tool."
+ms.date: 10/15/2021
 ---
 
 # Default file format for the Office Customization Tool (for Click-to-Run)

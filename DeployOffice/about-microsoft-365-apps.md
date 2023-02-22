@@ -1,21 +1,17 @@
 ---
 title: "About Microsoft 365 Apps in the enterprise"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-overview
+ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
+ms.date: 04/20/2020
 ---
 
 # About Microsoft 365 Apps in the enterprise
@@ -37,9 +33,9 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
     
 - Like other versions of Office, Microsoft 365 Apps is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
     
-- When you deploy Microsoft 365 Apps, it's installed on the user's local computer. Microsoft 365 Apps is not a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the internet all the time to use it.
+- When you deploy Microsoft 365 Apps, it's installed on the user's local computer. Microsoft 365 Apps isn't a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the internet all the time to use it.
     
-- You can use many of the same tools to deploy and configure Microsoft 365 Apps that you're already using to deploy Office. For example, you can use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
+- You can use many of the same tools to deploy and configure Microsoft 365 Apps that you're already using to deploy Office. For example, you can use Microsoft Configuration Manager to deploy Microsoft 365 Apps. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Microsoft 365 Apps program settings. 
     
@@ -55,7 +51,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - By default, Microsoft 365 Apps installs as one package. This means that all Office applications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-office-deployment-tool.md#BKMK_excludeorremove) certain Office applications, such as Access, from client computers.
     
-- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
     
 - Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
     
@@ -64,7 +60,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 ### Licensing differences
 <a name="BKMK_Licensing"> </a>
 
-- Users can install Microsoft 365 Apps on up to five different computers with a single Office 365 license. For example, a user can have Microsoft 365 Apps installed on a computer in the office, on a laptop to use when traveling, and on a home computer. Users can also install on up to 5 tablets and 5 phones.
+- Users can install Microsoft 365 Apps on up to five different computers with a single Office 365 license. For example, a user can have Microsoft 365 Apps installed on a computer in the office, on a laptop to use when traveling, and on a home computer. Users can also install on up to five tablets and five phones.
     
 - Microsoft 365 Apps is offered as a subscription. If you cancel your subscription, Microsoft 365 Apps goes into reduced functionality mode. In reduced functionality mode, users can open and view existing Office files, but users can't use most of the other features of Microsoft 365 Apps. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
     
@@ -79,11 +75,11 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
     
 - Users can store the files they create with Microsoft 365 Apps on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 (and Microsoft 365) also provides cloud-based file storage options.
     
-- Microsoft 365 Apps isn't the same as the [web versions of the Office applications](/office365/servicedescriptions/office-online-service-description/office-online-service-description). The web versions let users open and work with Word, Excel, PowerPoint, or OneNote documents in a web browser. The web versions of these Office application are included with all Office 365 (and Microsoft 365) plans.
+- Microsoft 365 Apps isn't the same as the [web versions of the Office applications](/office365/servicedescriptions/office-online-service-description/office-online-service-description). The web versions let users open and work with Word, Excel, PowerPoint, or OneNote documents in a web browser. The web versions of these Office applications are included with all Office 365 (and Microsoft 365) plans.
     
 - Read the [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library) to learn more about what's included in Office 365 (and Microsoft 365).
     
-## Related topics
+## Related articles
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
 - [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)

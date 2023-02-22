@@ -1,19 +1,16 @@
 ---
 title: "Assess your environment and requirements for deploying Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier1
+ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
+ms.date: 02/15/2023
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
@@ -30,7 +27,7 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 Review the system requirements for your Office server workloads as well. For example, Exchange 2007 does not support Outlook 2016. For more information, see [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-Finally, you should review the deployment tools you use in your organization, such as Microsoft Endpoint Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. If your organization uses Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
+Finally, you should review the deployment tools you use in your organization, such as Microsoft Configuration Manager. Most organizations deploy Office with the deployment tools they already have in place. If your organization uses Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
 
 ## Step 2 - Review licensing and accounts
 
@@ -46,7 +43,8 @@ Review your network capability, including bandwidth and distribution of client d
 - Client devices require internet access to activate their Microsoft 365 Apps subscription, and then must connect at least once every 30 days to verify their subscription. 
 - The following ports and protocols must be open: [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 - Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](/officeupdates/download-sizes-microsoft365-apps-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
-- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth. 
+- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth.
+- To reduce the load on your network and internet links, we recommend to leverage [PeerCache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) when using Configuration Manager or [Delivery Optimization](delivery-optimization.md) when getting the installation or updates from the internet.
  
 ## Step 4 - Assess application compatibility
 

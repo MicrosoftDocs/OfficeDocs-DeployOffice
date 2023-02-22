@@ -5,11 +5,12 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2013 and Office 2010."
+ms.date: 11/05/2021
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -102,7 +103,7 @@ To help with assessing application compatibility with Microsoft 365 Apps, you ca
   
 You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
-Other resources are also available. For example, if you use Microsoft Endpoint Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
+Other resources are also available. For example, if you use Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
 
 ## Assess your infrastructure and environment
 
@@ -146,7 +147,7 @@ As with any new version of Office, there are new Administrative Template files (
 
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
-If you have Microsoft 365 Apps for enterprise, you can also use the Office cloud policy service to apply most user-based policy settings. For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admincenter/overview-office-cloud-policy-service.md).
+If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
 

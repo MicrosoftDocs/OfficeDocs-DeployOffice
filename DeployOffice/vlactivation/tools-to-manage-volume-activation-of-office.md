@@ -5,11 +5,11 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.prod: office-perpetual-itpro
-ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.service: office-perpetual-itpro
+ms.localizationpriority: medium
+ms.collection: tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
+ms.date: 03/20/2018
 ---
 
 # Tools to manage volume activation of Office
@@ -39,11 +39,11 @@ cscript ospp.vbs [Option:Value] [ComputerName] [User] [Password]
   
  ***Option*** Specifies the option and value to use to activate a product, install or uninstall a product key, install and display license information, set KMS host name and port, and remove KMS host name and port. The options and values are listed in the tables in this section.
   
- ***ComputerName*** Name of the remote computer. If a computer name is not provided, the local computer is used.
+ ***ComputerName*** Name of the remote computer. If a computer name isn't provided, the local computer is used.
   
  ***User*** Account that has the required permission on the remote computer.
   
- ***Password*** Password for the account. If a user account and password are not provided, the current credentials are used.
+ ***Password*** Password for the account. If a user account and password aren't provided, the current credentials are used.
   
 > [!IMPORTANT]
 > Before you run the ospp.vbs, ensure that:
@@ -82,11 +82,11 @@ The following table describes the ospp.vbs options for configuring the KMS clien
 | /cachst:*value*  |Allows or denies KMS host caching. Value parameter is required (TRUE or FALSE).   |
 | /actype:*value*  |(Windows 8.1 and later versions only) Sets volume activation type. Value parameter is required.  <br/><br/> Values: 1 (for Active Directory-based), 2 (for KMS), 0 (for both).   |
 | /skms-domain:*value*  |*(Windows 8.1 and later versions only)* Sets the specific DNS domain in which all KMS SRV records can be found. This setting has no effect if the specific single KMS host name is set by the /sethst option. Value parameter is the Fully Qualified Domain Name (FQDN) and is required.   |
-| /ckms-domain  |*(Windows 8.1 and later versions only)* Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it is set by the /sethst option. Otherwise, auto-discovery of the KMS host is used.   |
+| /ckms-domain  |*(Windows 8.1 and later versions only)* Clears the specific DNS domain in which all KMS SRV records can be found. The specific KMS host is used if it's set by the /sethst option. Otherwise, auto-discovery of the KMS host is used.   |
 
 ### Scenarios that use ospp.vbs
 
-The following scenarios assume that you are running ospp.vbs in an elevated command prompt.
+The following scenarios assume that you're running ospp.vbs in an elevated command prompt.
   
 > [!NOTE]
 > Any changes that you make affect only the Office client products. You have to configure the Windows client separately by using the [slmgr.vbs script](#the-slmgrvbs-script).
@@ -147,7 +147,7 @@ cscript ospp.vbs /cachst:FALSE
 
 #### To test KMS host name, and then set to auto-discovery
 
-1. If you are testing a KMS host named kmstest.contoso.com, and you want to specify it in the KMS client, type the following command, and then press ENTER:
+1. If you're testing a KMS host named kmstest.contoso.com, and you want to specify it in the KMS client, type the following command, and then press ENTER:
 
 ```console
 cscript ospp.vbs /sethst:kmstest.contoso.com
@@ -188,17 +188,17 @@ You must restart the Software Licensing Service for any changes to take effect. 
 net stop sppsvc && net start sppsvc
 ```
   
-The slmgr.vbs script requires at least one parameter. If you run the script without any parameters, it displays Help information. The following table lists slmgr.vbs command-line options, and a description of each. Most of the parameters in the table configure the KMS host computer. However, the parameters /sai and /sri are passed to KMS clients after the KMS clients contact the KMS host computer. The general syntax of slmgr.vbs is as follows (assuming you are using the cscript.exe as the script engine):
+The slmgr.vbs script requires at least one parameter. If you run the script without any parameters, it displays Help information. The following table lists slmgr.vbs command-line options, and a description of each. Most of the parameters in the table configure the KMS host computer. However, the parameters /sai and /sri are passed to KMS clients after the KMS clients contact the KMS host computer. The general syntax of slmgr.vbs is as follows (assuming you're using the cscript.exe as the script engine):
   
 ```console  
  cscript slmgr.vbs [ComputerName] [User] [Password] [Option]
 ```
   
- ***ComputerName*** Name of the remote computer. If you do not provide a computer name, the local computer is used.
+ ***ComputerName*** Name of the remote computer. If you don't provide a computer name, the local computer is used.
   
  ***User*** Account with required permission on the remote computer.
   
- ***Password*** Password for the account. If you do not provide a user account and password, current credentials are used.
+ ***Password*** Password for the account. If you don't provide a user account and password, current credentials are used.
   
  ***Option*** Options are shown in the following table.
   
@@ -218,7 +218,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ cdns  |Disables automatic DNS publishing by a KMS host computer.   |
 |/ sdns  |Enables automatic DNS publishing by the KMS host computer.   |
 |/ cpri  |Lowers the priority of KMS host computer processes.   |
-|/ sai *ActivationInterval*  |Changes how often a KMS client attempts to activate itself when it cannot find a KMS host computer. It replaces  ActivationInterval with a value expressed in minutes. The default setting is 120 minutes.   |
+|/ sai *ActivationInterval*  |Changes how often a KMS client attempts to activate itself when it can't find a KMS host computer. It replaces  ActivationInterval with a value expressed in minutes. The default setting is 120 minutes.   |
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (7 days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]

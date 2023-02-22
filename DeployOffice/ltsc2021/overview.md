@@ -5,14 +5,12 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
+ms.collection: tier2
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office LTSC 2021."
+ms.date: 09/14/2021
 ---
 
 # Overview of Office LTSC 2021
@@ -20,7 +18,7 @@ description: "Provides IT admins with an overview of deploying Office LTSC 2021.
 Office LTSC 2021 is the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
 
 > [!IMPORTANT]
-> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) to the users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
+> Office LTSC 2021 is separate from Office that's available through Microsoft 365 (or Office 365) plans. For example, if you've deployed Microsoft 365 Apps for enterprise to the users in your organization, you don't need Office LTSC 2021. Microsoft 365 Apps for enterprise already has all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021.
   
 Office LTSC 2021 is available for enterprise admins to download and deploy to the users in their organization. The following volume licensed Office products are available for devices running Windows:
 
@@ -83,6 +81,9 @@ Office LTSC 2021 adds support for the following three languages:
 - French (Canada), fr-ca
 - Spanish (Mexico), es-mx
 
+> [!NOTE]
+> These three languages aren't available in Project or Visio.
+
 #### OpenDocument format 1.3
 
 Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument format (ODF) 1.3. For more information, see [Office apps now support OpenDocument format 1.3](https://insider.office.com/blog/office-apps-now-support-opendocument-format-odf-1-3).
@@ -92,18 +93,18 @@ Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument
 Several more Office Add-ins JavaScript APIs are available with Office LTSC 2021. These include the following requirement sets.
 
 - Product requirement sets:
-   - Excel: Up to [1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-1-12-requirement-set)
-   - Outlook: Up to [1.9](/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
-   - PowerPoint: Up to [1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-1-2-requirement-set)
+   - Excel: Up to [1.12](/javascript/api/requirement-sets/excel/excel-api-1-12-requirement-set)
+   - Outlook: Up to [1.9](/javascript/api/requirement-sets/outlook/requirement-set-1.9/outlook-requirement-set-1.9) on Windows, up to [1.8](/javascript/api/requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8) on Mac
+   - PowerPoint: Up to [1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-1-2-requirement-set)
 
 - Common API requirement sets:
-   - [CustomFunctionsRuntime 1.3](/office/dev/add-ins/excel/custom-functions-requirement-sets) (Excel)
-   - [DialogApi 1.2](/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets) (Excel, PowerPoint, Word)
-   - [IdentityAPI 1.3](/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
-   - [ImageCoercion 1.2](/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets) (Excel, PowerPoint, Word)
-   - [OpenBrowserWindowApi 1.1](/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
-   - [RibbonApi 1.1](/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets) (Excel)
-   - [SharedRuntime 1.1](/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets) (Excel)
+   - [CustomFunctionsRuntime 1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) (Excel)
+   - [DialogApi 1.2](/javascript/api/requirement-sets/common/dialog-api-requirement-sets) (Excel, PowerPoint, Word)
+   - [IdentityAPI 1.3](/javascript/api/requirement-sets/common/identity-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [ImageCoercion 1.2](/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (Excel, PowerPoint, Word)
+   - [OpenBrowserWindowApi 1.1](/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [RibbonApi 1.1](/javascript/api/requirement-sets/common/ribbon-api-requirement-sets) (Excel)
+   - [SharedRuntime 1.1](/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) (Excel)
 
 Office Add-ins on Windows now use Microsoft Edge with WebView2. For more information, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins).
 
@@ -121,7 +122,7 @@ Power View isn't available for the version of Excel that's included with Office 
 
 ## What’s stayed the same in Office LTSC 2021?
 
-You can use the same software distribution tools, such as Microsoft Endpoint Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
+You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
 
 Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md).
 
@@ -148,7 +149,7 @@ For information about the new features in Office LTSC 2021, see the following ar
 
 Keep in mind that Office LTSC 2021 includes only some, but not all, features that are available in versions of Office that come with a Microsoft 365 (or Office 365) plan.
 
-Office LTSC 2021 won’t receive any new features now that it has been released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
+Office LTSC 2021 won’t receive any new features now that it's released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
 To get on-going feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan for those products. For more information, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 

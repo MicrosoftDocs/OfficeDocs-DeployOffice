@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about an optional Microsoft Search in Bing extension for Google Chrome, which relies on a background service that is installed with Microsoft 365 Apps for enterprise."
+ms.date: 01/17/2020
 ---
 
 # Microsoft Search in Bing and Microsoft 365 Apps for enterprise
@@ -137,7 +137,7 @@ Other locations might be added over time. Before any new locations are added, we
 
 ## How to prevent the background service for Microsoft Search in Bing from being installed with Microsoft 365 Apps for enterprise
 
-If you don't want the background service for Microsoft Search in Bing to be installed with Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool or Group Policy. There are also ways to prevent the background service from being installed if you're using Microsoft Endpoint Configuration Manager (current branch) or Microsoft Intune.
+If you don't want the background service for Microsoft Search in Bing to be installed with Microsoft 365 Apps for enterprise, you can use the Office Deployment Tool or Group Policy. There are also ways to prevent the background service from being installed if you're using Microsoft Configuration Manager (current branch) or Microsoft Intune.
 
 Whichever method you use, be sure to implement it before you install or update to a version of Microsoft 365 Apps for enterprise that includes the background service. If you implement the method after the background service has been installed, the background service won't be removed from the device. To remove the background service, see [How to remove the background service for Microsoft Search in Bing after it's been installed](#how-to-remove-the-background-service-for-microsoft-search-in-bing-after-its-been-installed).
 

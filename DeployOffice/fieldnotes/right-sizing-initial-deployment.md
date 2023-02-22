@@ -6,12 +6,10 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
+ms.localizationpriority: medium
+ms.collection: tier3
 description: "Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps."
+ms.date: 04/09/2020
 ---
 
 # Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps
@@ -25,22 +23,22 @@ Either extreme (host everything on-premises or host nothing) isn't feasible for 
 
 There are three goals:
 
-- Reduce the impact on your company’s internet circuits as much as possible.
+- Reduce the impact on your company's internet circuits as much as possible.
 - Reduce the impact on your internal network as much as possible.
 - Use a minimum number of deployment packages to reduce on-going maintenance costs.
 
 This article applies to the initial on-premises deployment of Microsoft 365 Apps. In other articles, we cover how to best support [remote workers](https://techcommunity.microsoft.com/t5/office-365-blog/deploy-office-365-proplus-to-remote-workers/ba-p/1258514) and optimize [subsequent installations of Visio, Project, or other language packs](build-dynamic-lean-universal-packages.md).
 
-Let’s first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution.
+Let's first look at a sample scenario and how we determine the right balance. Then we'll walk through the steps to implement the solution.
 
 ## Sample scenario and solution
 
 Let's look at a sample scenario in a typical enterprise environment:
 
 - The IT department supports 24 different languages for Microsoft 365 Apps.
-- IT uses Microsoft Endpoint Configuration Manager to manage 50,000 devices around the globe.
+- IT uses Microsoft Configuration Manager to manage 50,000 devices around the globe.
 - A few internet breakouts occur. These are always congested.
-- The goal is to upgrade within 6 months.
+- The goal is to upgrade within six months.
 
 We could include all the languages in one on-premises deployment package to reduce impact on internet breakouts to zero. But including 24 languages inflates the package size to about 8 gigabytes. Because Configuration Manager synchronizes the full package to each device regardless of what the device actually needs, this package size causes 400 terabytes of LAN traffic (8 gigabytes * 50,000 devices).
 
@@ -58,9 +56,9 @@ In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it
 
 ![A spreadsheet shows the different impact on LAN/WAN and internet bandwidth for different language pack combinations.](../images/fieldnotes/right-sizing-initial-deployment-2.png)
 
-We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic and internet bandwidth consumed. But if we include just the 8 language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We would reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md), and [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
+We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic and internet bandwidth consumed. But if we include just the eight language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We would reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md), and [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
-In our scenario, we decided to go with 8 language packs, which will save time and network bandwidth during the first sync across all distribution points and client devices. We'll also apply this on-premises/cloud split to future Office updates, so the customer benefits from the split every month, not only during the initial deployment.
+In our scenario, we decided to go with eight language packs, which will save time and network bandwidth during the first sync across all distribution points and client devices. We'll also apply this on-premises/cloud split to future Office updates, so the customer benefits from the split every month, not only during the initial deployment.
 
 ## How to implement a right-sized deployment
 
@@ -98,7 +96,7 @@ The next step is to craft a deployment package that includes the selected langua
 
 1. Make sure that the account (user or SYSTEM) that's used to install Microsoft 365 Apps can connect to the internet [as documented](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online).
 2. Launch Configuration Manager and navigate to **Software Library**. Open the **Office 365 Client Management** node and start the **Office 365 Installer** wizard.
-3. Click through the wizard and make sure to select all the languages you want to include.
+3. Select through the wizard and make sure to select all the languages you want to include.
 4. When the wizard finishes, you need to adjust the configuration file to allow Office CDN fallback and instruct the setup engine to dynamically determine which languages to install instead of hard coding them. Navigate to your content source folder and open the configuration.xml file in an editor.
 5. Remove all the hard-coded languages and replace them with a combination of these items:
 
@@ -108,7 +106,7 @@ The next step is to craft a deployment package that includes the selected langua
 
 6. Also add [AllowCdnFallback="True"](../office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Here's example configuration.xml:
 
-   ```
+   ```xml
    <Configuration>
 	   <Add OfficeClientEdition="64" Channel="MonthlyEnterprise" AllowCdnFallback="True" OfficeMgmtCOM="TRUE" Version="16.0.12624.20588" ForceUpgrade="TRUE" >
    		<Product ID="O365ProPlusRetail">
@@ -136,7 +134,7 @@ You're all set!
 
 We recommend these steps to further reduce network impact:
 
-- Use [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content coming from distribution points. Because this content is the bulk of the download, we this step will help all your on-premises deployments, not just Office.
+- Use [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) to allow clients to share content coming from distribution points. Because this content is the bulk of the download, this step will help all your on-premises deployments, not just Office.
 - Configure [Delivery Optimization](../delivery-optimization.md) on your devices to allow them to peer cache content coming from the Office CDN. To use Delivery Optimization during Office installation, deploy version 1908 or later. For versions 1908 to 1911, you must [set a specific registry key](../delivery-optimization.md#configure-microsoft-365-apps-to-use-delivery-optimization).
 - Optionally enable [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. This step enables distribution points to act as a persistent cache for your devices. Connected cache will use already-existing information within Configuration Manager about your network infrastructure and preferred distribution points.
 

@@ -5,20 +5,19 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: tier2
 description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
+ms.date: 03/20/2018
 ---
 
 # Document and solution types monitored by Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 The following table lists the document and solution types that Office Telemetry Dashboard monitors in Office 2019 and Office 2016.
   
-
 |**Type**|**Office Applications**|**Description**|
 |:-----|:-----|:-----|
 |Active Documents  <br/> |Word, PowerPoint, Excel  <br/> | Active documents are any Office document files that aren't included in the other solution types that are listed in this table. These files can include the following types:  <br/>  <br/>- Office binary format files (.doc, .ppt, .pps, .xls)  <br/>  - Office OpenXML format files (.docx, .pptx, .ppsx, .xlsx)  <br/> - Macro-enabled files that contain VBA code (.docm, .dotm, .pptm, .potm, .xlsm, .xltm)  <br/>  - Files that contain ActiveX controls  <br/>  - Files that have External Data Connections  <br/> |

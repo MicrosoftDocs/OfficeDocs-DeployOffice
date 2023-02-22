@@ -5,14 +5,12 @@ author: DHB-MSFT
 manager: dougeby
 audience: ITPro
 ms.topic: overview
-ms.prod: office-perpetual-itpro
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
+ms.collection: tier2
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2021."
+ms.date: 09/14/2021
 ---
 
 # Deploy Office LTSC 2021
@@ -38,7 +36,7 @@ Whichever way you choose to deploy Office LTSC 2021, we recommend that you [remo
 
 The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT.
 
-After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you are finished, you should have several files: setup.exe and some sample configuration.xml files. For an Office LTSC 2021-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
+After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you're finished, you should have several files: setup.exe and some sample configuration.xml files. For an Office LTSC 2021-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
 The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office LTSC 2021. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office LTSC 2021. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
 
@@ -115,13 +113,13 @@ Once you have a copy of the ODT and have created your configuration.xml file, yo
 setup /download configuration.xml
 ```
 
-If you have saved the configuration.xml file with a different name, use that name in the command.
+If you've saved the configuration.xml file with a different name, use that name in the command.
 
-It will look as if nothing is happening, but the download is happening in the background. Once the download is complete, you are returned to a command prompt.
+It will look as if nothing is happening, but the download is happening in the background. Once the download is complete, you're returned to a command prompt.
 
-If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named “Office” with a subfolder named “Data.”  There will also be a folder named with the version number of the download. For example, 16.0.14332.20099. Which files you see and the names of the files depend on whether you are downloading the 32-bit or 64-bit version of Office and which languages you are downloading.
+If you want to check that the files are downloading, go to the location you specified for your SourcePath in the configuration.xml file. You should see a folder named “Office” with a subfolder named “Data.”  There will also be a folder named with the version number of the download. For example, 16.0.14332.20099. Which files you see and the names of the files depend on whether you're downloading the 32-bit or 64-bit version of Office and which languages you're downloading.
 
-Here some additional details about downloading Office LTSC 2021 installation files:
+Here are some additional details about downloading Office LTSC 2021 installation files:
 - You must download the 32-bit and 64-bit versions separately.
 - All volume licensed Office products – such as Office LTSC Professional Plus 2021, Visio LTSC Professional 2021, and Project Professional 2021 – are included in the same download, regardless of which products you specify in the configuration.xml file. This helps you save disk space on your local network. The core files for these products are in the stream.x86.x-none.dat or stream.x64.x-none.dat file, depending if it’s the 32-bit or 64-bit version of Office.
 
@@ -131,9 +129,9 @@ Once you have a copy of the ODT and have created your configuration.xml file (an
 ```console
 setup /configure configuration.xml
 ```
-If you have saved the configuration.xml file with a different name, use that name in the command.
+If you've saved the configuration.xml file with a different name, use that name in the command.
 
-Once the installation is complete, you are returned to a command prompt and you can go open the Office LTSC 2021 programs you’ve installed.
+Once the installation is complete, you're returned to a command prompt and you can go open the Office LTSC 2021 programs you’ve installed.
 
 > [!NOTE]
 > Office LTSC 2021 is installed on the system drive, which is usually the C:\ drive. The installation location can't be changed.
@@ -141,11 +139,7 @@ Once the installation is complete, you are returned to a command prompt and you 
 
 ## Install Office LTSC 2021 by using Configuration Manager
 
-You can also use Microsoft Endpoint Configuration Manager to deploy Office LTSC 2021. Configuration Manager (current branch) has a wizard that steps you through the process and builds the configuration.xml file for you. Earlier versions of Configuration Manager require you to download the ODT and create your own configuration.xml file.
-
-- **Configuration Manager (current branch):** If you’re using Configuration Manager (current branch), you can use the Office 365 Client Installation wizard to deploy Office LTSC 2021. You’ll see an entry for Office LTSC Professional Plus 2021 in the Office 365 Client Installation wizard. On that same page, you can also select to deploy Project and Visio. To get to the wizard, in the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
-
-- **System Center 2012 R2 Configuration Manager:** If you’re using System Center 2012 R2 Configuration Manager, the steps are different and much more manual. First you need to get a copy of the ODT from the Microsoft Download Center and create the appropriate configuration.xml file for your deployment. Then, in Configuration Manager, you create an application and a deployment type. After that you distribute the application and then deploy it.
+You can also use Microsoft Configuration Manager (current branch) to deploy Office LTSC 2021. The Office 365 Client Installation wizard steps you through the process and builds the configuration.xml file for you. You’ll see an entry for Office LTSC Professional Plus 2021 in the wizard. On that same page, you can also select to deploy Project and Visio. To get to the wizard, in the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 
 ## Deploy languages for Office LTSC 2021
 
@@ -170,7 +164,7 @@ If you don’t want the Teams client app included when you deploy Office LTSC 20
 Skype for Business won’t be included, by default, in the installation of Office LTSC 2021 when you use either of the following methods to deploy Office LTSC 2021:
 
 - The Office Deployment Tool with a configuration.xml file created by using the [Office Customization Tool](https://config.office.com/deploymentsettings) and you don’t change the default settings under the **Apps** section.
-- The Office 365 Client Installation wizard in Microsoft Endpoint Configuration Manager (current branch) and you don’t change the default settings under the **Apps** section.
+- The Office 365 Client Installation wizard in Microsoft Configuration Manager (current branch) and you don’t change the default settings under the **Apps** section.
 
 For either method, you can adjust the settings in the UI so that Skype for Business is installed with Office LTSC 2021.
 

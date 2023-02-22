@@ -7,12 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about how to manage privacy settings for Office for the web applications."
 hideEdit: true
+ms.date: 09/10/2020
 ---
 
 # Use policy settings to manage privacy controls for Office for the web applications
@@ -32,15 +30,15 @@ Some optional connected experiences might not be available in Office for the web
 
 For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
-## Configure the policy setting by using the Office cloud policy service
+## Configure the policy setting by using Cloud Policy
 
-You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether your users have the choice to use optional connected experiences. To configure this policy setting for Office for the web applications, you need to use the [Office cloud policy service](../admincenter/overview-office-cloud-policy-service.md).  
+You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether your users have the choice to use optional connected experiences. To configure this policy setting for Office for the web applications, you need to use [Cloud Policy](../admincenter/overview-cloud-policy.md).  
 
 If you don’t configure this policy setting, the choice to use optional connected experiences will be available to your users. If you disable this policy setting, your users won’t be able to use any of the optional connected experiences.
 
 For Office for the web applications, the policy setting applies to when your users are working on Office documents that are saved to web-based storage from Microsoft, such as OneDrive for Business or SharePoint Online.
 
-Because you’re using the Office cloud policy service, this policy setting also applies to when your users are using Office on Windows, Mac, iOS, or Android devices. You can’t configure this policy setting just for when your users are using Office for the web applications. But, you can create a policy configuration that includes this policy setting and have that policy configuration only apply to users that access documents anonymously using Office for the web applications.
+Because you’re using Cloud Policy, this policy setting also applies to when your users are using Office on Windows, Mac, iOS, or Android devices. You can’t configure this policy setting just for when your users are using Office for the web applications. But, you can create a policy configuration that includes this policy setting and have that policy configuration only apply to users that access documents anonymously using Office for the web applications.
 
 If you choose to make optional connected experiences available to your users, your users will be shown a privacy notification the first time they use an Office for the web app. This notification lets your users know that you’ve given them the option to use these optional connected experiences. The notification also informs your users that the optional connected experiences are provided under the Microsoft Services Agreement. Because this notification is important information for your users, this notification must be shown and can't be turned off, hidden, or accepted on behalf of your users.
 

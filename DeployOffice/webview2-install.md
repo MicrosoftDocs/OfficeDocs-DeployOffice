@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Guidance for Office admins about the installation and use of Microsoft Edge WebView2 on devices running Microsoft 365 Apps."
+ms.date: 02/10/2021
 ---
 
 # Microsoft Edge WebView2 and Microsoft 365 Apps
@@ -44,7 +44,7 @@ To prevent the automatic installation of WebView2 Runtime, sign in to the Micros
 
 > [!NOTE]
 > - Clearing the check box won’t remove WebView2 Runtime from devices on which it has already been installed. Only new installations of WebView2 Runtime are prevented.
-> - There is no policy setting (for Group Policy or the Office cloud policy service) to turn off the automatic installation of the WebView2 Runtime.
+> - There is no policy setting (for Group Policy or Cloud Policy) to turn off the automatic installation of the WebView2 Runtime.
 
 If you want to deploy WebView2 Runtime to devices in your organization on your own schedule, you can download it from https://developer.microsoft.com/microsoft-edge/webview2/#download-section. You should use either the Evergreen Bootstrapper or the Evergreen Standalone Installer, depending on your deployment needs.
 
@@ -57,10 +57,6 @@ To keep WebView2 up to date with the latest security and reliability updates, We
 
 - The file name for WebView2 Runtime is msedgewebview2.exe
 - If you're using Task Manager, you will see multiple instances of Microsoft Edge WebView2 running under the Microsoft Outlook process. 
-- WebView2 Runtime won’t be installed on devices in organizations that have the following plans:
-  - Office 365 operated by 21Vianet
-  - Office 365 GCC
-  - Office 365 GCC High and DoD
 - WebView2 Runtime won’t be installed on devices running macOS.
 - To see if Version 2101 or later is available in the update channel you’re using for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date).
 - Other applications may have already installed WebView2 Runtime on the device. For example, applications from companies other than Microsoft or line-of-business applications created within your organization. Office features that rely on WebView2 will be able to use that installation.

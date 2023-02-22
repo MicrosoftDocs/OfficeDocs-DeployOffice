@@ -1,18 +1,16 @@
 ---
 title: "Delivery Optimization and Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Microsoft 365 Apps."
+ms.date: 09/23/2019
 ---
 
 # Delivery Optimization and Microsoft 365 Apps
@@ -21,7 +19,7 @@ Delivery Optimization is a peer-to-peer distribution technology available in Win
 
 Microsoft 365 Apps on devices running Windows 11 or Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain [requirements](#requirements-for-using-delivery-optimization-with-microsoft-365-apps) are met.
 
-Delivery Optimization can be an effective way to reduce network bandwidth without the need for additional infrastructure or administrative overhead, especially for those organizations that don't have Microsoft Endpoint Configuration Manager (current branch) or other enterprise software distribution tools, or that want to shift content handling from on-premises to the cloud.
+Delivery Optimization can be an effective way to reduce network bandwidth without the need for additional infrastructure or administrative overhead, especially for those organizations that don't have Microsoft Configuration Manager (current branch) or other enterprise software distribution tools, or that want to shift content handling from on-premises to the cloud.
 
 ## Overview of Delivery Optimization
 
@@ -54,7 +52,7 @@ If you're using Configuration Manager or local network shares to manage installi
 
 There are some settings that you can configure to allow your environment to take better advantage of Delivery Optimization.  For example, you should choose the appropriate [download mode](/windows/deployment/update/waas-delivery-optimization-reference#download-mode) for your environment. The download mode defines how devices determine whether other devices are suitable peers. Here are some recommendations for download mode:
 
-- If you're using Microsoft Endpoint Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
+- If you're using Microsoft Configuration Manager (current branch) in your environment, you should consider using *Group (2)* for the download mode and use boundary groups for the GroupID. If you do this, Delivery Optimization uses the existing information about which devices are in the same [boundary group](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization) and consider all of them to be peers. This can save you from having to define new peer groups for Delivery Optimization to use.
 - If you're not using Configuration Manager, you can still use *Group (2)* for download mode. This uses the Active Directory site to determine which devices should be considered as peers.
 - If you're not using Active Directory, consider using *LAN (1)* for the download mode.
 

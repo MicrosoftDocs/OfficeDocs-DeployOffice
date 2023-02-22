@@ -1,16 +1,17 @@
 ---
 title: "Set a deadline for updates from Microsoft AutoUpdate"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Provides admins with information about how to set a deadline for updates provided from Microsoft AutoUpdate (MAU)"
+ms.date: 07/12/2019
 ---
 
 # Set a deadline for updates from Microsoft AutoUpdate
@@ -184,6 +185,16 @@ If applications are open and can't be updated, then users see a notification abo
 If users don't want to apply the updates at that time, they can postpone the updates. If they choose to postpone, they will receive other notifications at a later time reminding them about the deadline. For example, with the first notification, users can choose to be reminded again in a certain number of hours. But users can't postpone the updates beyond the deadline.
 
 When the deadline is an hour away, users get a persistent notification along with a timer that counts down the minutes until the deadline. If the deadline arrives and users haven't saved their work and closed their applications, MAU will forcibly close the applications, without saving the data, and starts to apply the updates.
+
+You can provide additional grace time for users by setting a preference for the deadline timer. The default is 60 minutes. For example, if you want the countdown to start at 3 hours, you can set the value to 180 minutes. 
+
+|Category|Details|
+|:-----|:-----|
+|**Domain** | com.microsoft.autoupdate2  |
+|**Key**  |UpdateDeadline.FinalCountDown  |
+|**Data Type** |Integer  |
+|**Possible values**  |*10 - 720* |
+|**Comments** | This is an optional setting. <br/><br/>The default value is 60. <br/><br/> Use of this preference requires Microsoft AutoUpdate version 4.51 and later.
 
 ## Turn off a deadline
 

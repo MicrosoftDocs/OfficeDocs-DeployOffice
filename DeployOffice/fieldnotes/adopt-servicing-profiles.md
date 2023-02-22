@@ -7,13 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: tier3
 description: "Provide guidance to Office admins on how to adopt servicing profiles for Microsoft 365 Apps"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
+ms.date: 02/08/2022
 ---
 
 # Best practices from the field: Adopting servicing profiles for Microsoft 365 Apps
@@ -31,6 +27,9 @@ This article covers:
 
 > [!NOTE]
 > All of above and below applies to Microsoft 365 Apps updates only. This feature does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
+
+> [!TIP]
+> If you prefer video over text, we have a [servicing profile overview](https://youtu.be/i_eUkyFX30E) video and a [servicing profile deep dive](https://youtu.be/YO6a3iNVXXI) video available.
 
 ## Benefits of using a servicing profile
 
@@ -78,8 +77,8 @@ After a few days, the bulk of targeted devices should have updated to the latest
 If you want to adopt a servicing profile in more granular steps, you can do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
 
 1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. You can add three types of items to a group, and mixing them is possible:
-    - Devices: Those must be Azure AD-joined and known to the inventory in the Microsoft 365 Apps admin center.
-    - Users: If you add users, the servicing profile will use the inventory to identify which devices are belonging to these users and target all devices of the given users.
+    - Devices: Those must be Azure AD joined or hybrid Azure AD joined and known to the inventory in the Microsoft 365 Apps admin center.
+    - Users: Based on the activation data, the servicing profile will identify which devices in inventory have a Microsoft 365 Apps installation activated by the specified user accounts. This will also cover devices running in [shared computer activation](../overview-shared-computer-activation.md) mode where a specified user has logged on and used Microsoft 365 Apps.
     - Azure AD groups: You can use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
 2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
 3. Navigate to **Servicing** > **Monthly Enterprise** and launch the wizard by selecting **Get Started**. Select **Next** again to go to the **Device Selection Criteria** page.
@@ -99,9 +98,9 @@ After a few days, the bulk of targeted devices should have updated to the latest
 
 A servicing profile offers multiple selectors to allow you to target the right set of devices. Once the selectors are picked and saved, the servicing profile will check each device listed in inventory against those. Any given device must match all selected criteria in order to be added to the profile. If a device doesn't pass a check, it will not be added, even if it passes other checks.
 
-- **Groups:** This selector allows you to specify one or multiple Azure AD groups. Nested groups are supported. To pass the check, one of the two conditions must be met for a device:
-    - It must be included in the Azure AD group, be (hybrid) Azure AD-joined, and listed in the inventory.
-    - The Microsoft 365 Apps installation on the device must have been activated by a user who is included in the Azure AD groups and the device must be listed in the inventory. For this condition, there's no requirement of a device being Azure AD-joined.
+- **Groups:** This selector allows you to specify one or multiple Azure AD groups. Nested groups are supported. To pass the check, one of the two conditions must be met:
+    - For devices: Those must be hybrid Azure AD joined (also known as HAADJ) or Azure AD joined (also known as AADJ) and listed in the inventory.
+    - For users: All devices in inventory with a Microsoft 365 Apps installation activated by the specified user will pass the check. For this condition, there's no requirement of a device being joined into any directory service.
 - **Channels:** This selector checks for the currently installed update channel of the Microsoft 365 Apps. To pass the check, a device must run a Microsoft 365 Apps update channel that has been selected.
 - **Disk space:** This selector checks for the available disk space reported into inventory. To pass the check, a device must have more disk space available than specified.
 - **Macros:** This selector checks if inventory has reported macro usage in the past 30 days. Inventory holds a binary Yes/No information, if at least one file with macros has been opened in the last 30 days.

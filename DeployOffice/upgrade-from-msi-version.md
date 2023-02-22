@@ -6,13 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides information for IT Pros about how to use the RemoveMSI element when upgrading to Microsoft 365 Apps from an MSI version of Office"
+ms.date: 06/08/2018
 ---
 
 # Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps
@@ -144,11 +142,11 @@ The following are some additional details about using the RemoveMSI element in y
 - You can also use these settings if you’re installing any of the following products:
    - The subscription version of the Project desktop app that comes with Project Plan 3 or Project Plan 5. 
    - The subscription version of the Visio desktop app that comes with Visio Plan 2. 
-   - Microsoft 365 Apps for business (previously named Office 365 Business), which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
+   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
    - Office LTSC Professional Plus 2021 or Office LTSC Standard 2021.
    - A volume licensed version of Office 2019, such as Office Professional Plus 2019.
 - User settings, preferences, and documents are retained, even if you’re uninstalling all Office products.
-- You can use the RemoveMSI element in conjunction with the MSICondition attribute. That attribute allows you to control the installation of an Office product based on whether a particular MSI-based product is already installed on the device. For example, only install Project Online Desktop Client if Project Professional is already installed on the device. For more information, see [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element).
+- You can use the RemoveMSI element in conjunction with the MSICondition attribute. That attribute allows you to control the installation of an Office product based on whether a particular MSI-based product is already installed on the device. For example, only install Project Online Desktop Client if Project Professional is already installed on the device. For more information, see [MSICondition attribute](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) or watch [Upgrading to Microsoft 365 Apps with MSICondition and RemoveMSI](https://youtu.be/7zHi6MRveRc).
 - Some previous versions of Office, Visio, and Project must be uninstalled before installing Microsoft 365 Apps. For example, Office Professional Plus 2016. If they aren’t uninstalled beforehand, the installation of Microsoft 365 Apps will fail. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md). 
 - A reboot is required to finish uninstalling the Windows Installer (MSI) versions of Office, but the reboot isn’t enforced. You can reboot after the Microsoft 365 Apps installation is finished.
 - Removing a product might fail if the product is open on the user's device and the [Level attribute](office-deployment-tool-configuration-options.md#level-attribute-part-of-display-element) for the Display element in your configuration.xml file is set to None. If you set the Level attribute to Full, the user will be prompted to close the program so the removal can continue. You can use the [FORCEAPPSHUTDOWN property](office-deployment-tool-configuration-options.md#forceappshutdown-property-part-of-property-element), but that could result in data loss.

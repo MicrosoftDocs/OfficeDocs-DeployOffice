@@ -7,12 +7,10 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
+ms.date: 04/16/2019
 ---
 
 # Required diagnostic data for Office
@@ -951,6 +949,39 @@ The following fields are collected:
 - **IsMsftInternal** - Possible values – true/false
 
 
+#### Office.Programmability.Addins.OnStartupCompleteEnterprise
+ 
+This event is generated when a Legacy or COM Add-in is loaded on an enterprise device. The data is used to determine adoption and performance of Office add-ins.
+
+The following fields are collected:
+
+- **AddinConnectFlag** - represents load behavior
+
+- **AddinDescriptionV2** - the add-in description
+
+- **AddinFileNameV2** - the add-in file name, excluding file path
+
+- **AddinFriendlyNameV2** - the add-in friendly name
+
+- **AddinIdV2** - the add-in Class ID
+
+- **AddinProgIdV2** - the add-in prog ID
+
+- **AddinProviderV2** - the add-in provider
+
+- **AddinTimeDateStampV2** - the add-in timestamp from the DLL metadata
+
+- **AddinVersionV2** - the add-in version
+
+- **IsBootInProgress** - whether the Office application is in the process of booting 
+
+- **LoadDuration** - duration of the add-in load
+
+- **LoadResult** - success state of the load
+
+- **OfficeArchitecture** - Architecture of the Office client  
+
+
 #### Office.TargetedMessaging.EnsureCached 
 
 Tracks if a package for Dynamic Canvas was downloaded. Considered a software configuration because the package must be successfully downloaded to enable the client to render the right experience. Is especially critical in consumer subscriptions where we use canvas to communicate to the user that the license has expired. Used to track metadata of a dynamic content package downloaded and cached by the product and results of operations performed on the package: download failures, unpacking failures, consistency checks failures, cache hits, package usages, download sources.
@@ -1316,13 +1347,15 @@ The following fields are collected:
 
   - **AddinVersionV2** - the add-in version
 
-  - **IsBootInProgress** – whether the Office application is in the process of booting
- 
-  - **LoadDuration** - duration of the add-in load
-  
-  - **LoadResult** - success state of the load
+- **IsAppClosedWhileLoadingInBoot**- Whether the add-in was loaded during boot cancellation
 
-  - **OfficeArchitecture** - Architecture of the Office client
+- **IsBootInProgress** – whether the Office application is in the process of booting
+ 
+- **LoadDuration** - duration of the add-in load
+  
+- **LoadResult** - success state of the load
+
+- **OfficeArchitecture** - Architecture of the Office client
 
 
 #### Office.Programmability.Addins.RibbonButtonClick
@@ -1714,6 +1747,10 @@ The following fields are collected:
 
 - **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
 
+- **load_media_error_code** - The code of the error that occurred when loading media. This helps us understand the cause of the error.
+
+- **load_media_source** - The source of the loading media when error occurred.
+
 - **rdate** - the date of the recurrence rule (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule** - the recurrence rule itself (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -1721,6 +1758,8 @@ The following fields are collected:
 - **rrule_error_message** - recurrence rule parsing error message (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **rrule_error_type** - recurrence rule parsing error type (only applies to appointment recurrence errors) *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **shared_type** - Shared email account type, shared/delegate/none. When collecting draft send error, we need to know the account type.  
 
 - **status_code** - The status code of the error that occurred. This helps us understand the cause of the error.
 
@@ -1764,15 +1803,19 @@ The following fields are collected:
 
 #### calendar.action
 
-Used for monitoring any possible negative impact on your ability to perform core calendar actions like creating or editing events.  The event could also include a series of property names and if they have changed or not. For example, "title_changed", "online_meeting_changed", and "description_changed" are property names that are included to help us understand if there are any issues with editing certain properties.
+This event reports part of the calendar event data after creating event or editing events. This is used for monitoring any possible negative impact on your ability to perform core calendar actions.
 
-The following fields are collected: 
+The event could also include a series of property names and if they have changed or not. For example, "title_changed", "online_meeting_changed", and "description_changed" are property names that are included to help us understand if there are any issues with editing certain properties.
+
+The following fields are collected:
 
 - **account_sfb_enabled** - Helps us make sure that Skype for Business is configured correctly. 
 
 - **action** - The type of action that was performed on the calendar. This includes things like open, editing, adding shortcut, snooze, etc. Helps us ensure our calendar experience is functioning as expected and nothing has broken 
 
 - **action_result** - Result of the action taken on calendar components. This can include values such as success, failure, unknown, and timeout. Used to track the success rate of actions and determine if there is a widespread issue with calendar actions. 
+
+- **attachment_count** - Number of attachments of this calendar event. Helps us understand the user preference for adding event attachments.
 
 - **attendee_busy_status** - The free/busy status of the attendee that the action is related to. This value can be free, busy, or tentative. Helps us understand if there is an issue with actions related to a certain busy status. 
 
@@ -1784,9 +1827,15 @@ The following fields are collected:
 
 - **calendar_type** - The type of calendar an event is on after the user has edited the meeting. Possible values include primary, secondary, shared, and group. Helps us understand if there are issues with a certain calendar type. 
 
+- **classification** - The classification of the calendar event. Possible values include none, focus, time_away, lunch, exercise, homeschooling, class, doctor_visit, travel_time, meeting_preparation, no_meeting_time. Helps us understand the classification of the event user creating/editing. For example, whether the user is creating a focus event.
+
+- **create_poll_card_shown** - Whether the create poll card was shown in the UI when the user was creating an event. This will allow us to understand how often users opt into creating a poll.
+
 - **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
+
+- **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the "Every meeting online" feature.
 
 - **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
 
@@ -1794,11 +1843,23 @@ The following fields are collected:
 
 - **is_every_meeting_online_on** - True if the users account is set to have online meetings on by default. Helps us understand if there are any issues with online meeting enabled calendars. 
 
+- **is_external_data** - Captures if an added event is internal (i.e., added in Outlook-to-Outlook calendar) or external (i.e., added from another email app such as Gmail to Outlook calendar).
+
+- **is_forwarding_allowed** - True by default. Used to check if user is allowing event to be forwarded and determine usage of response options for events.
+
+- **is_hide_attendees** - False by default. Used to check if user is hiding attendees on an event and determine usage of response options for events.
+
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
+- **is_mute_notifications_on** - Whether user toggled mute notifications on or off. Helps us understand how and when mute notifications being used.
+
+- **is_new_time_proposal_allowed** - True by default. Used to check if user is allowing time proposals for event and determine usage of response options for events.
 
 - **is_organizer** - Helps us understand if meetings are able to be edited and created by the organizer correctly. 
 
 - **is_recurring** - Helps us understand if there is an issue that specifically impacts recurring meetings. 
+
+- **is_response_requested** - True by default. Used to check if user is requesting responses from attendees and determine usage of response options for events.
 
 - **launch_point** - The launch point of the action. Can be values such as widget header, widget footer, widget all day, and calendar shortcut. Helps us understand the context that the action was started from. 
 
@@ -1840,6 +1901,8 @@ The following fields are collected:
 
 - **upcoming_event_count** - The number of upcoming events displayed in the upcoming events view. Helps us understand if there are issues with the upcoming events view. 
 
+- **upcoming_event_dismiss_swipe_direction** - The direction a user swiped to dismiss an upcoming event reminder. The possible directions are left to right and right to left. Helps us understand how users are dismissing upcoming events.
+
 - **upcoming_event_seconds_until_event** - The number of seconds until the next upcoming event starts. Helps us understand the typical events that are shown in the upcoming events view. 
 
 - **value** - Action-specific detail such as alert delay length or repeat-until category. Helps us understand the context that the action was performed. 
@@ -1872,6 +1935,10 @@ The following fields are collected across iOS and Android:
 
 - **is_offline_search** - whether the search session is offline search based on search results returned by hx
 
+- **is_people_slab_displayed** - Whether the search suggestion selected was displaying the people slab.
+
+- **is_query_empty** - Whether the user search or suggestion query is empty. 
+
 - **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
 
 - **result_selected_type** - What type of data that was displayed is the user interacting with, for example, see all contact, conversations, event, etc. 
@@ -1881,6 +1948,8 @@ The following fields are collected across iOS and Android:
 - **search_origin** - Where did the search originate from, for example, voice assistant, Cortana, keyboard input, etc. 
 
 - **search_scope** - A string indicating what type of account the user was searching in (for example, Exchange, Gmail, etc.) or if it was in All Accounts. 
+
+- **search_suggestion_treatment** - Shares the current search suggestion treatment used to display the suggestions, by relevance or type.
 
 - **search_suggestion_type** - indicates what is behind the search suggestion, for example, is a spell correction? Based on history? Autocomplete?
 
@@ -1949,6 +2018,8 @@ This event is triggered when a user interacts with the conversation view. For ex
 
 The following fields are collected:
 
+- **attachment_origin** - The origin of the attachment
+
 - **contains_mention** - Tells us if the conversation had an @ mention applied to help us detect issues with email mentions
 
 - **conversation_type** - Tells us what type of email message view was rendered, such as a single message view or multiple message views. Helps us detect issues related to a specific message type in our email conversation view.
@@ -1962,6 +2033,8 @@ The following fields are collected:
 - **is_pinned** - Tells us if the conversation is pinned. This is to assess if users are interacting with pin messages and if the pinning feature is behaving as expected.
 
 - **reaction_origin** – Tells us origin from where the user reacted 
+
+- **reaction_skin_tone** - Tells us the reaction skin tone of the user 
 
 - **reaction_type** – Tells us the reaction type of the user
 
@@ -1977,11 +2050,13 @@ The following fields are collected:
 
 - **suggested_reply_type** - indicates type of suggested reply for this action. Possible values are text, send_avail, and create_meeting.
 
+- **suggested_reply_with_file_shown** - Log whether smart reply with file attachment has been shown
+
 - **use_default_quick_reply_mode** - Tells us if the default quick reply mode was used to help us detect issues related to the quick reply experience for email
 
 #### draft.action
 
-The data is used for monitoring possible negative impact on your ability to create and save mail drafts.
+The event is triggered when the user closes by tapping the top left button at the full compose view or save some drafts from quick reply view. The data is used for monitoring possible negative impact on the ability to create and save mail drafts.
 
 The following fields are collected: 
 
@@ -2006,6 +2081,13 @@ The following fields are collected:
 - **suggestions_shown** - indicates how many smart compose suggestions shown to the user
  
 - **thread_id** - thread ID of the conversation draft is associated with
+
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
+- **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
+
+- **video_message_link_count** - the number of video links which could be unfurled while sending a message
+
 
 #### drag.and.drop
 
@@ -2569,6 +2651,21 @@ The following fields are collected:
 - **txp_component** - if the Edge web view was launched from a TXP card, UI component type for that card
 
 
+#### log.event.appointment.attendee
+
+This event is triggered when the user clicks on any add-in on their calendar page. The data is used to detect the usage of add-ins and determine the if the feature is performing correctly.
+
+The following fields are collected: 
+
+- **addin_id** – Identifier of the add-in
+
+- **addin_type** – Type of the add-in, for example, available either without a user interface (UI-less) or through task pane
+
+- **event_button_label** – Label of the button clicked by the user.
+
+- **total_addin_count** – Count of all add-ins with MobileLogEventAppointmentAttendee surface
+
+
 #### mail.action
 
 Used for monitoring possible negative impact on your ability to perform critical mail actions (like running mail threaded mode, ensuring mail triage actions work) to ensure our app is functioning properly for mail.
@@ -2713,6 +2810,8 @@ The following fields are collected:
 
 - **response_message_length** - Indicates how long the message length was to help us detect issues with meeting responses
 
+- **response_mode** - Indicates response mode such as in person or virtually to help us detect issues with meeting response modes
+
 - **review_time_proposal_action_type** - Indicates a user response new time proposal to help us detect issues with proposing a new time
 
 - **send_response** - Indicates whether a response was sent to help us detect issues sending meeting invite responses
@@ -2728,10 +2827,17 @@ This event is triggered when a user interacts with a message reminder. A message
 
 The following fields are collected across iOS and Android:
 
-- **origin** - Which view is the message reminder is on
-
 - **action** - The type of action taken on the message reminder. This includes actions such as opening the message, dismissing the reminder, turning off the feature, and when the reminder was rendered.
 
+- **dismiss_swipe_direction** - The direction a user swiped to dismiss a message reminder. The possible directions are left to right and right to left. This helps us better understand how users are dismissing message reminders.
+
+- **internet_message_id** - The internet message ID of a message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+
+- **mailbox_uuid** - The UUID (universally unique identifier) of the mailbox containing the related message. This allows us to link telemetry events to other sources of data such as the logs from our API.
+
+- **message_id** - The server ID of a message. This is sent with many other message-related telemetry events and allows us to link message reminder events to those.
+
+- **origin** - Which view is the message reminder is on
 
 
 #### multi.window.launch
@@ -2753,11 +2859,13 @@ The following fields are collected:
 
 - **action** - the action taken by the user (closed, opened, notification_tapped)
 
+- **file_type** - The file type if the notification is about a file (Word, Excel, PowerPoint, Fluid)
+
 - **message_reminder_available** - True if there is a message reminder available and will be displayed when the notification center is opened
 
-- **type** - the notification type, as of now it will always be reaction
+- **type** - the notification type, either reaction or message_reminder as of now *(not always collected)*
 
-- **unseen_count** - how many notifications in the current view have not been seen before
+- **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -2853,6 +2961,8 @@ The following fields are collected:
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, for example, UI element, triggered by another app, etc.
 
+- **Data_IsBackgroundActivationComplete** - The state (true/false) to identify if pre-booting of application is done through background activation or not.
+
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
 - **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
@@ -2900,6 +3010,27 @@ The following fields are collected:
 - **EventDate** -Timestamp of the event occurrence  
 
 - **SessionID** - Globally Unique Identifier to connect events by session 
+
+#### Office.Android.EarlyTelemetry.AdInfraEvent
+
+*[This event was previously named Office.Android.AdInfraEvent.]*
+
+This event is triggered when an ad request is sent, and a response is received from the ad network. This event does not collect any user related data from the online platform. This data is logged to understand:
+- Type of ads sent by the ad network
+- Error messages sent by the ad network (request failed)
+- No-response events from the ad network
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_Operation_Metadata** - Additional information regarding the ad related operation performed by the ad infra
+
+- **Data_Operation_Result** - The result of the ad related operation performed by the ad infra
+
+- **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
 
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesAvailability
@@ -4333,6 +4464,15 @@ The following fields are collected:
 - **Data_UploadError** - A numerical value that indicates the kind of error that occurred if an upload operation fails.
 
 - **Data_UpsellAppearsFromDelegate** - A Boolean value to indicate if the view was shown from the share menu.
+
+#### Office.Excel.XlEditSession
+
+Collected when the user starts editing a spreadsheet. The data collected allows Microsoft to evaluate the feature health of actions that change the spreadsheet. It is also used to calculate monthly active users and devices.
+
+The following fields are collected:	
+
+ - None
+
 
 #### Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -5948,7 +6088,7 @@ The following fields are collected:
 
 - **Data_CloudConnectorRequestID** - String that identifies the service requests on the client app for both conversion and feedback scenarios.
 
-- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.  
+- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service is not directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Data_EntryPoint** - integer value to identify entry point for Lens flow.
 
@@ -6033,6 +6173,8 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 
 - **Data_Result** - The status of the operation being performed (true:success, false:failure) 
 
+- **Data_SessionLength** - Stores the duration (in milliseconds) for which pdf file is opened.
+
 - **Data_Type** - Type of file operation (open, close, or save)
 
 
@@ -6071,13 +6213,31 @@ The following fields are collected:
 
 - **OLD_STATE** - Indicates the applications' state right before the navigation
 
+
+#### Office.OneNote.Android.Canvas.PageCreated
+
+This event is triggered when a new OneNote page is created. The data is used to monitor, detect and fix any issues caused when a page is created in OneNote.
+
+The following fields are collected: 
+
+- **EVENT_UUID** - Unique Id for an event
+
+- **NOTE_TYPE** - This will capture the type of created page
+
+- **PAGE_CREATE_LOCATION** - This will capture the location of a created page, where it is triggered from
+
+- **TIME_TAKEN_IN_MS** - time taken to create page
+
+
 #### Office.OneNote.Android.Canvas.PageOpened
 
 *[This event was previously named OneNote.Canvas.PageOpened.]*
 
-The signal used to record when a Page is opened.  The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote
+This event is triggered when a Page is opened.  The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote.
 
 The following fields are collected: 
+
+- **EVENT_UUID** - Unique Id for an event
 
 - **JOT_ID** - object of the page opened
 
@@ -8281,6 +8441,17 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
+#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudGetDataFromCache
+
+The event is triggered when user listens to a paragraph that has already been prefetched and Read Aloud will be playing the cached paragraph now instead of making a request to EDU service to get the neural voice. The data helps track how many of users are using previously-fetched paragraphs thereby giving usage ideas along with the solidifying our calculation for Read Aloud play minutes since the paragraphs which are read from cache are currently not getting tracked. Data is used to track the usage of Read Aloud neural implementation via cached files, how many minutes are being generated.
+
+The following fields are collected: 
+
+- **Data_input_length** - Log the text length that is being read from cache
+
+- **Data_locale** - Log the locale that was passed with initial request 
+
+
 #### Office.Word.FileNew.CreateNewFile
 
 This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
@@ -8383,6 +8554,10 @@ The following fields are collected:
 
 - **Data_EditorsCount** - Number of editors in the document 
 
+- **Data_FHasWPMUnsafeEdit** - Indicates that the document has WPM unsupported contents upon open.
+
+- **Data_FOpenWpmRecoveryRevision** - Indicates that the document has been opened from the OCSB2 recovery revision.
+
 - **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode 
 
 - **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document 
@@ -8417,6 +8592,7 @@ The following fields are collected:
 
 - **Data_VerboseMeasurements** - Encoded string containing the detailed time breakdown of the different parts of open.  Used to measure performance, only enabled for internal rings. 
 
+- **Data_WpmFallOutReason** - If the document has WPM unsupported contents upon open, list the first content type Word detected.
 
 
 #### Office.Word.FileSave.ActCmdGosubSaveAs
@@ -9017,23 +9193,31 @@ The following fields are collected:
 
 #### send.message
 
-Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if feature is functioning successfully and to plan feature improvement for images in emails.
+This event is triggered when the user has finished composing and taps the send button. Data collected indicates possible negative impact on the performance and health of sending email messages. The data is used to understand if the feature is functioning successfully.
 
 The following fields are collected:
   
-- **account** - tracks the account that performed the action
+- **account** - tracks the account that performed the action *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **compose_addressing_duration** - indicates the total time user spends on To/Cc/Bcc fields
 
 - **compose_duration** - tracks the total time user took to compose the message including multiple drafts session
 
+- **deferred_send** - This tells us if the user has scheduled the email to be sent later.
+
 - **draft_message_id** - tracks the compose message ID of the message being sent
+
+- **elaborate_used** - indicates whether the message was generated by using the feature Elaborate. Its value can be one of "used", "not_used", "used_and_edited"
 
 - **event_mode** - tracks the event mode if applicable to the message ("groups" or "other")
 
 - **from_message_reminder** - Indicates if the message was sent in response to a message reminder
 
+- **from_voice_assistant** - lets us know if a sent mail originated from the voice assistant.
+
 - **has_attachment** - indicates whether message has any attachments
+
+- **has_eml_attachment** - indicates whether message has any attachments of type eml.
 
 - **has_mip_label** - indicates whether a MIP label was stamped on the message or not
 
@@ -9081,6 +9265,13 @@ The following fields are collected:
 
 - **thread_id** - indicates thread ID of the conversation being replied/forwarded
 
+- **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
+
+- **video_message_deleted_thumbnail_count** - the number of video thumbnails being deleted that have been unfurled through sharing link while sending a message
+
+- **video_message_link_count** - the number of video links which could be unfurled while sending a message
+
+
 #### session
 
 Allows us to detect and fix situations where we are using up too much of your device's battery and helps us identify what could be the cause.
@@ -9109,6 +9300,10 @@ The following fields are collected:
 
 - **action** - possible actions taken in settings, such as deleting an account to help us diagnose issues and ensure no negative impact
 
+- **app_lock_disabled_reason** - Indicated the reason we disabled the applock feature on a device 
+
+- **app_lock_state** - Indicates whether user turned the applock feature on or off
+
 - **auth_type** - The authentication type being used by the account, so we understand which backend sync layer we are using to help us diagnose issues 
 
 - **changed_folder** - Capturing whether a folder was changed to help us diagnose issues. 
@@ -9131,10 +9326,13 @@ The following fields are collected:
 
 - **setting_properties** - Tracks properties relation to setting action detailed below: 
    - **alternate_app_icon_setting** - the selected alternate app icon (light, dark)
+   - **app_lock_state** – indicates whether user turned on/off/disabled the App Lock feature in settings
    - **auth_type** - indicates the back-end authentication type allowing us to know if there is an issue with a particular account type
    - **badge_count_state** - indicates what type of badge count the user has asked for that is, no badges, focused inbox only, etc. 
    - **changed_folder** - determines whether this action was archived, scheduled, or another action.
-   - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable. 
+   - **contacts_sort_by** – tracks whether the contacts are sorted by first name or last name
+   - **delete_scope** - tracks whether this action was related to deleting someone just on this device or on all devices, if applicable.
+   - **density_setting** - the message list density mode selected by the user 
   - **enabled_state** - whether state related to the action is enabled
   - **fab_tap_behavior** – the selected tap behavior (single press or tap & hold) for the floating action button we have on our main screens to compose an email, create an event, etc.
   - **in_app_language** - the selected in-app language, string type (default, en-US, fa, ru etc.)
@@ -9143,6 +9341,7 @@ The following fields are collected:
     - **notification_action_number** - indicates which action number (two of three actions are customizable) was assigned a notification action, that is, action one, action two. This allows us to determine if there is a problem with a particular action.
    - **notification_state** - indicates what type of badge count the user has asked for that is, no badges, focused inbox only, etc.
    - **server_type** - indicates the back-end server type allowing us to know if there is an issue with a particular server type
+   - **signature_setting** - indicates if the setting was applied to all account or an individual account
    - **source** - indicates what is the source of notifications, if applicable, from settings or do not disturb setting
    - **swipe_setting** - indicates the details of, if applicable, swipe settings related to this action
      - **swipe_action** - indicates what the user was trying to do, that is, flag, delete, archive, it allows us to determine what action the user wanted and if the action failed or not. 
@@ -9150,7 +9349,7 @@ The following fields are collected:
    - **temperature_unit_setting** -  the selected temperature unit to be used for weather 
    - **theme_color_setting** - the custom app theme color selected by the user 
    - **ui_mode_setting** - the selected UI mode (dark, light, system default, low battery etc.)
-   - **signature_setting** - indicates if the setting was applied to all account or an individual account
+   - **week_start** – indicates the day of week set as the week start (Saturday, Sunday, Monday)
 
 - **state_changed_to** - To check if your focused inbox On/Off setting is configured correctly 
 
@@ -9968,7 +10167,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.App.AppBootComplete.]*
 
-The critical signal used to ensure new consumer users (Microsoft Account) can successfully launch and use OneNote for the first time.  This is used to ensure critical regression detection for OneNote app and service health.  If users can't launch the app for the first time, this would trigger a high severity incident.
+The event is recorded once every session when the app boot is completed. The data is used to ensure new consumer users can successfully launch and use OneNote for the first time and, to ensure critical regression detection for the OneNote app and service health.  
 
 The following fields are collected: 
 
@@ -10003,6 +10202,8 @@ The following fields are collected:
 - **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** - Indicates if boot time is impacted due to logs
 
 - **INIT_SNAPSHOT_DURATION** - Time taken to get the notebook structure for the user account(s)
+
+- **IsNewHomepageExperienceEnabled** - [Yes/No] Indicates if user has got the new homepage experience
 
 - **IS_COLD_BOOT** - Indicates if the App launch when the App was not running in the background
 
@@ -10158,7 +10359,13 @@ The following fields are collected:
   - **Data\_CheckRequiredPartsLoaded -** Method CheckRequiredPartsLoaded execution duration in milliseconds
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
+
+  - **Data_CleanClickCorrelationId** - The correlation GUID from client origin. As it could be from web or other sources we uses this correlation ID to stitch the end to end events from client to the target app (in this case PowerPoint)
    
+  - **Data_CleanClickOrigin** - Where the ppt fileUrl link is originally opened from (Office Apps/windows start recommended/WAC)
+
+  - **Data_ClickTime** - The timestamp when the file URL link is clicked, used to track performance from click event until file loaded in app.
+
   - **Data_CloseAndReopenWithoutDiscard –** Whether a document was closed and reopened during the open process without discarding.
 
   - **Data_ClpDocHasDrmDoc:bool** - Whether the document has a DRM document
@@ -10200,6 +10407,8 @@ The following fields are collected:
   - **Data\_CreateLocalTempFile -** Method CreateLocalTempFile execution duration in milliseconds
 
   - **Data_CsiDownloadErrDlgSuppressed:bool** – Whether the dialog that would have been shown by CSI during a download error has been suppressed, usually in favor of a dialog shown by PowerPoint instead.
+
+  - **Data_DeferredBlobDisabledReasons** - Value that maps to an enum set indicating the reasons deferred blobs were disabled during the document open
 
   - **Data\_DetachedDuration:long -** Time for which Activity was detached/not running
 
@@ -10295,6 +10504,10 @@ The following fields are collected:
 
   - **Data\_DownloadFragmentSize -** Size of fragment(downloadable chunk of file), usually 3.5 MB
 
+  - **Data_DRGDisabledReason** - Value that maps to an enum indicating the reason the DRG stack was disabled during download for document open
+
+  - **Data_DRGSyncOpResult** - Value that maps to an enum indicating the DRG sync op result during document open
+
   - **Data\_ExcludedEmbeddedItems -** Number of zip parts that are excluded for first render
 
   - **Data\_ExcludedEmbeddedItemsSize -** Total size of zip parts that are excluded for first render
@@ -10371,6 +10584,8 @@ The following fields are collected:
 
   - **Data\_InitSecureReaderReasons -** Method InitSecureReaderReasons execution duration in milliseconds
 
+  - **Data_InsecureWarningStage** - Value that maps to the status of the Insecure Warning API call and the selected group policy during insecure URL upgrade attempt
+
   - **Data\_IsIncOpenInProgressWhileOpen -** In case of multiple open of the same document, is Inc open protocol running alongside open protocol?
 
   - **Data\_IsMultiOpen -** Do we support multiple open?
@@ -10380,6 +10595,10 @@ The following fields are collected:
   - **Data\_IsODPFile -** Is document in 'Open Document Format' used by OpenOffice.org
 
   - **Data\_IsPPTMetroFile -** Is document metro (pptx) file format
+
+  - **Data_LegacyFallbackReason** - Value that maps to an enum indicating the reason a fallback to the legacy open protocol was triggered during a document open
+
+  - **Data_LinkOpenInOption** - an int from 0 to 3 as follow to indicate the open in option used to open the file. 0 means link is not part of the LOR v2 test, 1 means default option is selected, 2 means in browser option is selected, and 3 means in native app option is selected.
 
   - **Data\_LoadDocument -** Method LoadDocument execution duration in milliseconds
 
@@ -10415,6 +10634,8 @@ The following fields are collected:
 
   - **Data\_OtherContentTypesWithRequiredParts -** Nonstandard content types that were excluded but required for first render
 
+  - **Data_PersistStack** - Combined string of predefined strings indicating the type of persist stack being used to open this document
+
   - **Data\_PrepCacheAsync -** Flag for OcsiOpenPerfPrepCacheAsync
 
   - **Data\_PreviousDiscardFailed -** Indicates previous open/close attempt on the document didn't properly release all memory
@@ -10422,6 +10643,14 @@ The following fields are collected:
   - **Data\_PreviousFailureHr -** In case of reopening of the same document, what was last failure result
 
   - **Data\_PreviousFailureTag -** In case of reopening of the same document, what was last failure tag (pointer to code location)
+
+  - **Data_PreviousOpenFallbackHR** - The error code for the failure that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackProtocol** - The previous protocol that was used before a failure was detected that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackTag** - The failure tag (pointer to code location) that resulted in opening the document using a fallback method.
+
+  - **Data_PreviousOpenFallbackTimeMS** - The amount of time spent in milliseconds before a failure occurred that resulted in opening the document using a fallback method.
 
   - **Data\_RemoteDocToken -** Is Remote Open enabled (prototype feature that enables opening file from service rather than from host)?
 
@@ -10466,6 +10695,8 @@ The following fields are collected:
   - **Data\_TimeToRequiredPackage -** Time took to create required package
 
   - **Data\_TimeToRequiredParts -** Time took to create package with all required parts in it
+
+  - **Data_TimeToViewMS** - Time taken in milliseconds before the document is visible 
 
   - **Data\_TotalRequiredParts -** Total number of PowerPoint parts required for first render
 
@@ -11260,6 +11491,38 @@ The following fields are collected:
 
 - **RMS.StatusCode** - Status code of the operation result
 
+#### sharedcore.bootstagestatistics
+
+The event is triggered during start-up and shutdown as various layers of the application complete their phase of process. The event captures performance markers for each layer of application start-up and shutdown. The data is used to determine if the app is healthy and performing as expected.
+
+The following fields are collected: 
+
+- **DurationMillis** - The time, in milliseconds, that it took for the stage to complete the indicated step
+
+- **Result** - The result of the stage, indicating if it was completed successfully or if there was an error
+
+- **Stage** - Label of the stage of the boot process that is being reported on
+
+- **Step** - Label indicating if this event is reporting information on application startup or shutdown of one of the application’s components
+
+Common Fields (documented once for the set of Required events for the app) 
+
+- **AppInfo.Env** - Application environment, “debug” or “ship” based on the build of the application
+
+- **AppInfo.Name** - "olk" (Outlook) 
+
+- **AppInfo.UpdateRing** - The update ring of the app (for example, “Dogfood”, “Production”)
+
+- **AppInfo.Version** - String specifying the application version (for example, 1.2022.805.100)
+
+- **DeviceInfo.Id** - A unique identifier of the user's device, gathered based on the user's network adapter. 
+
+- **Event.SchemaVersion** - An integer specifying the version of the telemetry event schema
+
+- **Session.Id** - A globally unique identifier (GUID) generated at the start of the current session of the application, used to uniquely identify the session
+
+- **UserInfo.Language** - The user's language, in the format “en-us” based on the system locale unless otherwise specified
+
 
 ### *Office accessibility configuration subtype*
 
@@ -11458,6 +11721,117 @@ The following fields are collected:
 
 - **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
 
+#### Office.Privacy.OffersOptIn 
+
+This event is triggered when values for privacy controls are loaded or reloaded. This happens when the user first boots the process and whenever these settings change, such as the user updating them or the values roaming from another device reports information about user’s opt-in status to Personalized Offers. The event is used to ensure that users' privacy choices related to the Personalized Offers control are being enforced as expected.
+
+The following fields are collected:
+
+- **ConsentGroup** - consent group to which the user belongs
+
+- **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
+
+- **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentAccepted
+
+This event is triggered when a user accepts/acknowledges an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
+
+This event is used to track a failure to properly render an account-level consent user interface. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
+
+#### Office.Privacy.UnifiedConsent.UI.ConsentRenderSuccess
+
+This event is used to track successful rendering of user interface dialog for an account-level consent notice. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+
+The following fields are collected:  
+
+- **ConsentLanguage** - The language that the consent is being shown to the user in
+
+- **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
+
+- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+
+- **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
+
+- **EventCode** - A numeric code used to provide details on why a failure may have occurred while getting data from the Consent Service.
+
+- **EventMessage** - A human readable message related to the result of the get call. The values are drawn from a list of expected messages.
+
+- **FormFactor** - A value indicating the shape and nature of the device sending the data
+
+- **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
+
+- **ModelType** - The type of message being shown to the user e.g., Consent, Notice, etc.
+
+- **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
+
+- **Os** - The operating system of the device sending the data
+
+- **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
+
+- **Region** - The region being used to determine what version of a consent to show the user
+
 
 ## Product and service performance data events
 
@@ -11588,6 +11962,31 @@ The following fields are collected:
 - **roamingSettingType** - identifies the location from which we attempt to read settings
 
 - **settingId** - the setting that was attempted to be fetched
+
+#### Office.Android.EarlyTelemetry.UngracefulAppExitInfo
+
+This event is triggered in each session and collects information about the exit reasons of the previous process of the app. The data is used to collect information on the Android process exit to help Office understand where apps are experiencing issues and diagnose them appropriately.
+
+The following fields are collected: 
+
+- **Data_ExitAppVersion** - appversion of the exit process 
+
+- **Data_ExitEndTimeStamp** - system timestamp when the process exited.
+
+- **Data_ExitOSSignal** - OS signal that resulted in process exit
+
+- **Data_ExitProcessName** - name of the process that was killed.
+
+- **Data_ExitPSS** - PSS information at time of process exit.
+
+- **Data_ExitReason** - Reason of exit, integer format mapping to enums defined by Android 
+
+- **Data_ExitRSS** - RSS details at time of process exit.
+
+- **Data_ExitSessionId** - SessionId of the process that died.
+
+- **Data_ExitStartTimeStamp** - system Timestamp when the process started.
+
 
 #### Office.AppDomain.UnhandledExceptionHandlerFailed
 
@@ -11728,6 +12127,8 @@ The following fields are collected:
 - **IsAugmentationScenario** – indicates if the augmentation loop is responsible for initializing the Office Solutions Framework control
 
 - **IsDebug** - indicates if session is a debug session
+
+- **IsMOS** - Indicates if the add-in payload format type is XML or JSON.
 
 - **IsPreload** – indicates if the add-in is being preloaded in background for improving activation perf.
 
@@ -11997,6 +12398,44 @@ The following fields are collected:
 Triggered upon opening a macro (VBA)-containing file on a device that has been onboarded to Office Apps as a Service (OAAS) by the IT admin and where Microsoft 365 Apps for enterprise has been activated with an enterprise license. The event is used to understand the health of macro(VBA)-containing files in a tenant and is compared to Office.Programmability.Telemetry.VbaTelemetryBreak which tracks errors on VBA-containing files. 
 
 No fields are collected.
+
+#### Office.System.SystemHealthUngracefulAppExitDesktopCOMAddIn 
+
+The event is triggered by an abnormal application termination while executing COM Add-in for Office client applications such as Word, Excel, PowerPoint, and Outlook. The data is used to determine reliability of add-ins and issues in Office connected to add-in crashes.
+
+The following fields are collected:
+
+- **AddinConnectFlag** - Represents load behavior  
+
+- **AddinDescription** - Description of the add-in 
+
+- **AddinFileName** - Name of the actual add-in DLL. Does not include file location.
+
+- **AddinFriendlyName** - Add-in friendly name
+
+- **AddinId** - Add-in class ID (CLSID)
+
+- **AddinProgId** - Add-in prog ID 
+
+- **AddinProvider** - Provider of the add-in 
+
+- **AddinTimeDateStamp** - Complier timestamp
+
+- **AddinVersion** - Add-in version 
+
+- **CrashedProcessSessionId** - A unique identifier of the crashed process.
+
+- **CrashTag** - The unique identifier for the code of the crash.
+
+- **CrashType** - Bucketing identifier for the type of crash.
+
+- **Interface** - COM interface of add-in which led to crash 
+
+- **LoadAttempts** - how many load attempts were made prior to crash 
+
+- **Method** - COM method of add-in which led to crash 
+
+- **TelemetryContext** - Context of the add-in and client session. (Consumer or enterprise session, public add-in or private add-in)
 
 #### Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
@@ -12571,6 +13010,23 @@ The following fields are collected:
 - **wait_time** - the time to build message URL
 
 
+#### Office.Android.AdsMobile.Wxpu.AdUIEvent
+
+*[This event was previously named Office.Android.AdsMobile.AdUIEvent.]*
+
+This is event is triggered when a user interacts with an advertisement.  This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
+
+The following fields are collected:
+
+- **Data_ActionType** - User action performed on the ad view
+
+- **Data_AuctionId** - Unique send by the ad network to map to a sell auction on the ad network.
+
+- **Data_PlacementId** - Unique identifier used by the ad network service to associate creative to a surface
+
+- **Data_SurfaceId** - Uniquely identifies a surface where creative is displayed 
+
+
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
 Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
@@ -12634,6 +13090,114 @@ The following fields are collected:
 - **UserDialogInterruptionDuringBoot** - Boolean for any blocking dialog shown during boot
 
 
+#### Office.Android.AuthPerfADALEndToSignInEnd 
+
+This event is triggered when an enterprise user clicks on the Next button on the password page to sign in completion. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected:
+
+- **Data_ADALEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfAuthStartToOneAuthAcquireCredStart
+
+This event is triggered when the prompt flow is initiated, and the credential acquisition flow starts. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ AuthStartToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfAuthStartToOneAuthSignInInteractiveStart
+
+This event is triggered when the authentication flow is initiated in Office Android apps. This information helps Microsoft determine the time taken in this flow and to measure the time spent in integrated flows so that required performance improvements can be made.
+
+The following fields are collected: 
+
+- **Data_ AuthStartToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfFixMeToOneAuthAcquireCredStart
+
+This event is triggered when the prompt flow initiates the credential acquisition flow for an account that is in invalid state and needs fixing by the user. This helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ FixMeToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfHRDEndToADALStart
+
+This event is triggered when an enterprise user clicks on the next button in an email page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_HRDEndToADALStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfHRDEndToIDCRLStart
+
+This event is triggered when a consumer user clicks on the next button in an email page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_HRDEndToIDCRLStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfIDCRLEndToSignInEnd
+
+This event is triggered when the consumer user clicks on the Next button on password page to sign in completion. This data helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_IDCRLEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfOneAuthSignInInteractiveEndToSignInEnd
+
+This event is triggered when the sign-in interactive flow ends successfully with the status received by the app. This information helps Microsoft determine the time taken in this flow for performance comparison in Office Android apps and make improvements as needed. 
+
+The following fields are collected: 
+
+- **Data_ OneAuthSignInInteractiveEndToSignInEnd** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfSignInStartToHRDStart
+
+This event is triggered when the user clicks on the sign-in button to the email page. This helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_SignInStartToHRDStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToADALStart
+
+This event is triggered when an enterprise user clicks on the next button in First Run Experience (FRE) page to open the password page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_UnifiedSISUEndToADALStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToIDCRLStart
+
+This event is triggered when the consumer user clicks on the Next button in the First Run Experience (FRE) page to generate the password page. This information helps Microsoft determine the time taken in this flow for performance comparison and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_UnifiedSISUEndToIDCRLStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
+#### Office.Android.AuthPerfUnifiedSISUEndToOneAuthSignInInteractiveStart
+
+This event is triggered when the user clicks on the Next button in the First Run Experience (FRE) page to start the Sign-In Interactive flow. This helps Microsoft determine the time taken in this flow, to determine performance in authentication flows in Office Android apps, and make performance improvements as required.
+
+The following fields are collected: 
+
+- **Data_ UnifiedSISUEndToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags which mark the start and end points of the flow
+
+
 #### Office.Android.CrashMetadata
 
 This event is triggered when there is a crash, and the crash successfully uploads to crash collection service. This event is used to diagnose Android crashes and also monitor the health of the Android crash upload service.   
@@ -12695,6 +13259,23 @@ The following fields are collected:
     - 16 - AuthToken is not sent to Dime
 
 - **WebViewShownDuration** - Duration for which the dime purchase page is shown to the user 
+
+
+#### Office.Android.EarlyTelemetry.AdErrorEvent
+
+This event is triggered for ad related error scenario. This event does not collect any user related data from the online platform. 
+
+The following fields are collected:
+
+- **Data_AuctionId** - Unique ID sent by Ad network to map a sell transaction to a specific ad response
+
+- **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
+
+- **Data_SurfaceId** - Uniquely identifies a surface where creative is displayed 
+
+- **Data_ErrorType** - Category of error
+
+- **Data_ErrorMetadata** - Additional details about error
 
 
 #### Office.Apple.Apple.AppBoot.Mac
@@ -13125,11 +13706,21 @@ The following fields are collected:
 
 - **HardFaultCount** – The number of hard page faults for the process. (Windows only)
 
+- **IdentityBackgroundDuration** - The amount of time authentication initialization took in the background.
+
+- **IdentityMainThreadDuration** - The amount of time authentication initialization took on the main thread.
+
 - **InitializationDuration** - The duration in microseconds it took to first initialize the Office process.
 
 - **InterruptionMessageId** - If the boot was interrupted by a dialog asking for user input, the ID of the dialog.
 
 - **LegacyDuration** - The length of time the activity took to execute, measured using different starting and ending points than Activity.Duration.
+
+- **LoadAccountsDuration** - The amount of time it took to load the accounts which are signed into Office.
+
+- **OneAuthConfigCached** - Whether the configuration data for the new authentication stack was previously cached.
+
+- **OneAuthStackUsed** - Whether the new authentication stack is being used.
 
 - **OpenAsNew** – Whether the app was started by opening an existing document as the template for a new one.
 
@@ -13164,6 +13755,61 @@ The following fields are collected:
 - **WriteOperationCount** – The number of write operations performed. (Windows only)
 
 - **WriteTransferCount** – The number of bytes written. (Windows only)
+
+
+#### Office.Performance.OPerfMon.HangDetected
+
+Collected when an Office application experiences a hang of the user interface. The collected data is used to assess prevalence, impact, and assist in root cause analysis of hangs experienced by customers so that they can be addressed by the product team.
+
+The following fields are collected:
+
+- **DurationMs** - duration of the hang in milliseconds.
+
+- **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
+
+- **ProcessName** - name of the Office application executable the hang occurred in, e.g. excel.exe.
+
+- **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed to be running at the point the hang occurred.
+
+
+#### Office.Performance.OPerfMon.Profile
+
+Collected when an Office application experiences unexpectedly poor performance in a critical end user feature, resulting in a poor user experience and/or hang of the user interface. The collected data is used to assess prevalence, impact, and assist in root cause analysis of hangs or poor performance experienced by customers so that they can be addressed by the product team.
+
+The following fields are collected:
+
+- **ActivityName** - additional context data related to the problematic feature. Name of the feature or user activity that exhibited the performance issue.
+
+- **DurationMs** - duration of the hang in milliseconds.
+
+- **InsightId** - Unique identifier (GUID) generated on creation of this event payload.
+
+- **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
+
+- **ProcessName** - name of the Office application executable the issue occurred in. For example, excel.exe.
+
+- **SourceSessionId** - Office SessionId the issue occurred in.
+
+- **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed during the execution of the feature experiencing the poor performance.
+
+- **TypeId** - Internal identifier specifying the type of performance issue identified (for example, UI Hang, Slow Performance)
+
+
+#### Office.Performance.OPerfMon.SessionDelays
+
+The event is triggered when the user closes an Office application. The collected data is used to assess the general user interface responsiveness health for the session including the number of minutes the user interacted with the product, and the recorded delay in keyboard and mouse input experienced by the user.
+
+The following fields are collected:
+
+- **DurationMs** - total duration of user experienced delay, in milliseconds
+
+- **InteractiveMinutes** - total number of minutes the user interacted with the product
+
+- **InvasiveDelayCount** - total number of distinct delays the user experienced that were deemed to be invasive to their product usage experience.
+
+- **SourceAppName** - name of the application the session relates to
+
+- **SourceSessionId** - Office session Id of the session being reported
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
@@ -13452,21 +14098,33 @@ The following fields are collected:
 
 #### perf.event
 
-Used for monitoring possible negative impact on performance of loading different parts of the app, for example to ensure when you first open the app, your inbox loads as quickly as possible.
+The event is triggered when the user takes action to open conversations, events, or otherwise navigate in the app. Used for monitoring possible negative impact on performance of loading different parts of the app, for example to ensure when you first open the app, your inbox loads as quickly as possible.
 
 The following fields are collected: 
+
+- **allSplits** - start/end/label name of executed code blocks
 
 - **app_start_show_message_list** - that means there was a performance issue with the app start-up causing your inbox message list to take a long time to load
 
 - **average** - collects the number of reloads that happen on a conversation divided by the number of messages in that conversation.  
 
+- **build_type** - Helps us know the build type of the app. For example: release, debug. 
+
 - **event_type** - tells us the type of performance event that caused a performance issue to help us detect issues related to a specific type.   
 
 - **extra_params** - A developer can add additional parameters here to help give us more details about what could be causing this performance issue, that is, when did this action start and end, etc. 
 
+- **firstFrameSummary** - information about how long it takes screens to start up
+
 -	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
 
-- **profiling_summary** - provides information about the group of tasks, the number of tasks and the average time for those groups to help understand potential regressions in specific areas when loading the app
+- **is_treatment** - whether the current perf event is generated in a treatment flight. It will be used when we measure and compare the performance data for control group and treatment group in a flight.
+
+- **memorySummary** - information about amount of memory used
+
+- **profiling_summary** - provides performance information to help understand potential regressions
+
+- **profilingBufferStats** - information about the health of the internal profiler
 
 - **runtime_performance_monitoring_data** - provides the performance data (loading time, record count) when loading data in different parts of the app.
   - **average_cost_time_ns** - The average cost time measured in nanoseconds.
@@ -13478,6 +14136,8 @@ The following fields are collected:
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
 
 - **standard_probe_label** - Provides the information of the sub steps of each user scenario when instrumented with Standard Probe. It will help us reduce the scope of the issue.
+
+- **threadsSummary** - information about number of threads used and their runtime state, i.e. waiting, blocked, etc.
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 
@@ -13848,6 +14508,10 @@ Critical data to collect end-to-end file open time for all file opens in Windows
 
 The following fields are collected:
 
+- **ActivityTransitionTime** - time required during a specific phase of app boot
+
+- **AppActivationTimeInMs** - time required during a specific phase of app boot
+
 - **AppBootingOccured** - Boolean to check if app boot is complete
 
 - **ApplicationBootTime** - time required during a specific phase of app boot
@@ -13874,17 +14538,23 @@ The following fields are collected:
 
 - **IsThisFirstLaunch** - Boolean to indicate if this is the first launch of the app
 
-- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+- **LibrarySharingPhaseTime** - time required during a specific phase of app boot
 
 - **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
 
 - **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **MinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
+
+- **OfficeActivityTime** - time required during a specific phase of app boot
 
 - **PostAppInitTimeInMs** - time required during a specific phase of app boot
 
 - **PPTRenderPhase** - time related to specific phase in PPT rendering
 
 - **PreAppInitTimeInMs** - time required during a specific phase of app boot
+
+- **PreMinimumLibraryLoadPhaseTime** - time required during a specific phase of app boot
 
 - **ProviderApp** - the package name of the app from which file is opened
 
@@ -14129,6 +14799,29 @@ The following fields are collected:
 - **Data_FreeSpaceInMB** - Free space available on device
 
 - **Data_nickName** - Name of the library that couldn't be loaded.
+
+
+#### Office.Android.EarlyTelemetry.SharedPrefServiceDataFetchAsync
+
+This event is triggered when one Office Android app needs data from another Office Android app but fails to get the data. Microsoft uses this data to determine the reason for service failure and to maintain the health of the service.
+
+The following fields are collected:
+
+- **Data_ErrorInfo** - This field contains information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+
+- **Data_LoggingSessionId** - This field logs the sessionId of the session which is logging this event.
+
+
+#### Office.Android.EarlyTelemetry.SharedPrefServiceDataFetchSync
+
+This event is triggered when an error occurs, for example, timeout or invalid service error, when one Office Android app needs but is unable to get data from other Office Android app installed on the user's device. This data is used to find the reason for the service failure and to maintain the health of the service and office apps.
+
+The following fields are collected:
+
+- **Data_ErrorInfo** - This field logs information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+
+- **Data_LoggingSessionId** - This field logs the sessionId of the session which is logging this event.
+
 
 #### Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
@@ -14803,11 +15496,21 @@ The following fields are collected for iOS only:
 
 - **alternate_app_icon**- Tell us the alternate app icon that user currently selected by the application
 
+- **app_lock_disabled_reason** - Tells us if the applock feature is disabled by us, if so for what reason
+
+- **app_lock_state** - Tells us if the applock feature is turned_on/turned_off on a device
+
 - **bold_text** - Tells us if the device has bold text turned on to help us detect issues related to bold text
 
 - **closed_captioning** - Tells us if the user has turned on closed captioning on their device to help us detect issues related to closed captioning
 
+- **connected_apps_sync_state** - Tells us if the user has turned on connected app sync to help us detect issues related to this setting.
+
+- **contacts_sort_by** - Tracks whether the contacts are sorted by either first name or last name
+
 - **darker_system_colors** - Tells us if the user has turned on darkening of system colors on their device to help us detect issues related to this setting
+
+- **default_density_setting** - The default density mode the user should get the first time they experience inbox density
 
 - **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
 
@@ -14847,6 +15550,8 @@ The following fields are collected for Android only:
 
 - **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
+- **pinned_tabs** - Tells us the tabs user has chosen to pin to navigation bar, and their order.
+
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
 - **switch_access** - Tells us if the user has turned on the setting for Switch Access on their device to help us detect issues related to this setting
@@ -14854,6 +15559,8 @@ The following fields are collected for Android only:
 - **talkback** - Tells us if the user has turned on the setting for talkback on their device to help us detect issues related to this setting
 
 - **theme_color** - The custom (user-selected) theme color currently in use by the application
+
+- **unpinned_tabs** - Tells us the tabs user has chosen to unpin from navigation bar, and their order.
 
 - **webview_kernel_version**: The Chromium kernel version of webview on the device to help us detect compatibility issues related to the version of webview.
 

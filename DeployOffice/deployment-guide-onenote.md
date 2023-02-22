@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
+ms.collection: tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
+ms.date: 07/30/2018
 ---
 
 # Deployment guide for OneNote
@@ -26,7 +26,7 @@ While both versions are supported and can be installed on the same device, OneNo
 
 ## OneNote deployment guidance
 
-You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Endpoint Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
+You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
 
 OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
@@ -57,7 +57,7 @@ There are different ways to exclude OneNote from being installed with Office, de
 |Method  |Instructions  |
 |---------|---------|
 |Office Deployment Tool | You can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file. <br/><br/> We recommend that you use the [Office Customization Tool](admincenter/overview-office-customization-tool.md) to help you create your configuration.xml file.|
-|Microsoft Endpoint Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
+|Microsoft Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
 But, if you're allowing your users to install Office for themselves from the Office 365 portal, there is no way to exclude OneNote from being installed.
@@ -84,9 +84,9 @@ To remove OneNote for Windows 10 from a Windows image so that OneNote for Window
 
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
-> - Most of these same policy settings can be applied by using the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md), which doesn't require the device to be joined to a domain.
+> - Most of these same policy settings can be applied by using [Cloud Policy](admincenter/overview-cloud-policy.md), which doesn't require the device to be joined to a domain.
 > - Group Policy can't be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
-> - Office cloud policy service can only be used with Microsoft 365 Apps for enterprise.
+> - Cloud Policy can only be used with Microsoft 365 Apps for enterprise.
 
 **Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone&ID0EBBF=Windows_Phone)
 

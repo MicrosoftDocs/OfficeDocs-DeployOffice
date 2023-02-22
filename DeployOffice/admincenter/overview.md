@@ -1,24 +1,21 @@
 ---
 title: "Overview of the Microsoft 365 Apps admin center"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
+ms.collection: tier1
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
+ms.date: 09/17/2020
 ---
 
 # Overview of the Microsoft 365 Apps admin center
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center. For newly released or announced features, see [What's new in preview](#whats-new-in-preview).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who  deploy and manage Microsoft 365 Apps in the enterprise. This article lists the features and services available in the admin center.
 
 ## How to get to the admin center
 
@@ -31,11 +28,14 @@ Sign in at [config.office.com](https://config.office.com/) with your admin accou
 >   - Office 365 GCC High and DoD
 >- Some functionality of the Office Customization Tool is available to all customers regardless of which plan they have. For more information, see [Office Customization Tool](#office-customization-tool).
 
-## Office cloud policy service
+## Cloud Policy service for Microsoft 365
 
-The Office cloud policy service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+> [!NOTE]
+> "Office cloud policy service" has been renamed to "Cloud Policy service for Microsoft 365." In most cases, we'll just refer to it as Cloud Policy.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](overview-office-cloud-policy-service.md).
+Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
+
+For more information, see [Overview of Cloud Policy service for Microsoft 365](overview-cloud-policy.md).
 
 ## Office Customization Tool
 
@@ -63,17 +63,6 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 
 With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
 
-## What's new in preview
-
-The following features and services have been recently released in preview or recently announced. If you want to enable preview features in the admin center, choose a preview feature and accept the license. If you have enabled preview features and want to disable them, contact Microsoft support.
-
-> [!NOTE]
-> Preview features aren't available to everyone and are subject to change.
-
-#### OneDrive sync health (preview)
+## OneDrive sync health
 
 You can use the OneDrive sync health dashboard to check the sync status and sync app version of individual devices, monitor Known Folder Move roll out, and track sync errors. For more information, see [OneDrive sync reports in the Apps Admin Center](/onedrive/sync-health).
-
-#### Servicing profiles: roll back to a previous version (preview)
-
-If you're using a [servicing profile](servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version (preview)](servicing-profile.md#roll-back-to-a-previous-version-preview).

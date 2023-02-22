@@ -7,14 +7,10 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
-description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus), including for diagnostic data and connected experiences."
+ms.collection: tier1
+description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise, including for diagnostic data and connected experiences."
 hideEdit: true
+ms.date: 03/22/2019
 ---
 
 # Overview of privacy controls for Microsoft 365 Apps for enterprise
@@ -22,7 +18,7 @@ hideEdit: true
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise.
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software running on the user's device in your organization.
@@ -97,7 +93,7 @@ For more information, see the following articles:
 
 ## Optional connected experiences for Microsoft 365 Apps for enterprise
 
-In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing.
+In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing.
 
 These are optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 

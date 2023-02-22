@@ -6,13 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-get-started
+ms.collection: tier1
+ms.localizationpriority: medium
+ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
+ms.date: 04/20/2020
 ---
 
 # Deployment guide for Microsoft 365 Apps
@@ -21,9 +20,9 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
   
 ## Featured
 
-- [What's new in Office deployment for IT Pros](whats-new-office-it-pros.md)
+- [What's new for deploying Microsoft 365 Apps](whats-new.md)
 
-- [Overview of the Office cloud policy service](admincenter/overview-office-cloud-policy-service.md)
+- [Overview of Cloud Policy](admincenter/overview-cloud-policy.md)
 
 - [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
 
@@ -39,7 +38,7 @@ description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Ap
   
 ## Deploy
 
-Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Endpoint Configuration Manager to deploy Microsoft 365 Apps. 
+Learn about your deployment options, how to deploy from a local source, and how to use Microsoft Configuration Manager to deploy Microsoft 365 Apps. 
 
 - [Deploy Microsoft 365 Apps from the cloud](deploy-microsoft-365-apps-cloud.md)
 
@@ -54,7 +53,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Endpoint Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
 

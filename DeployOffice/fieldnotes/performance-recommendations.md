@@ -7,11 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
+ms.collection: tier3
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
+ms.date: 10/20/2021
 ---
 
 # Best practices from the field: Performance recommendations for Microsoft 365 Apps on Windows 10
@@ -100,7 +98,7 @@ As Microsoft invests heavily to improve the performance of our products, it is i
 - [Windows 10 release information](/windows/release-health/release-information)
 - [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
 
-To learn more, see [Windows and Microsoft 365 Apps servicing in Microsoft 365](/learn/modules/m365-modern-windows-office-servicing/).
+To learn more, see [Windows and Microsoft 365 Apps servicing in Microsoft 365](/training/modules/m365-modern-windows-office-servicing/).
 
 Also, review the deployment guidance available for Windows 10 and Microsoft 365 Apps:
 

@@ -1,14 +1,18 @@
 ### YamlMime:Hub
 
 title: Office deployment
+summary: Deploy and manage Microsoft 365 Apps or other versions of Office.
 brand: office
 
 metadata:
+  ms.date: 04/30/2021
   title: Office deployment
-  description: Office deployment
+  description: Learn how to deploy and manage Microsoft 365 Apps or other versions of Office. Microsoft 365 Apps is the version of Office that's available through many Microsoft 365 and Office 365 plans.  
   brand: office
-  author: danbrown
+  author: DHB-MSFT
+  ms.author: danbrown
   ms.topic: hub-page
+  ms.collection: tier1
   ms.service: o365-proplus-itpro
   ms.custom: intro-hub-or-landing
 
@@ -21,11 +25,11 @@ additionalContent:
         # Card
         - title: Get Started
           summary: Learn how to plan, deploy, and manage Microsoft 365 Apps in your enterprise environment.
-          url: /en-us/DeployOffice/deployment-guide-microsoft-365-apps
+          url: deployment-guide-microsoft-365-apps.md
         # Card
         - title: Deploy
-          summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, and with Microsoft Endpoint Configuration Manager.
-          url: /en-us/DeployOffice/plan-microsoft-365-apps
+          summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, and with Microsoft Configuration Manager.
+          url: plan-microsoft-365-apps.md
         # Card
         - title: FastTrack
           summary: FastTrack guides you through the most common deployment configurations.
@@ -33,13 +37,18 @@ additionalContent:
         # Card
         - title: Manage updates
           summary: Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.
-          url: /en-us/DeployOffice/overview-update-channels
+          url: overview-update-channels.md
         # Card
         - title: Office for Mac
           summary: Find guidance about deploying Office to Macs in your organization.
-          url: /en-us/DeployOffice/mac/deployment-guide-for-office-for-mac
+          url: mac/deployment-guide-for-office-for-mac.md
+        # Card
+        - title: Microsoft 365 Insider Program for Business
+          summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
+          url: insider/index.yml
         # Card
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
-          url: /en-us/DeployOffice/ltsc2021/overview
+          url: ltsc2021/overview.md
+
 

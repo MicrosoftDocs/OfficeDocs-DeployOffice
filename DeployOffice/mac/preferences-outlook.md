@@ -1,16 +1,17 @@
 ---
 title: "Set preferences for Outlook for Mac"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: pbowden
+author: pbowden-msft
 manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
+ms.date: 10/19/2018
 ---
 
 # Set preferences for Outlook for Mac
@@ -88,9 +89,9 @@ Specify one or more domains users are allowed to add in Outlook.
 |Domain| com.microsoft.Outlook |
 |Key| AllowedEmailDomains|
 |Data Type| Array of Strings |
-|Possible values|  *Various (example: "'contoso\\\\.com$'")*  |
+|Possible values|  *Various (example: "contoso.com")*  |
 |Availability| 16.18|
-|Comments| Format strings as regular expressions. Doesn't remove or disconnect accounts already added in Outlook. |
+|Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
 ### Hide text about adding non-corporate mailboxes
 
@@ -291,7 +292,7 @@ Set when pictures are automatically downloaded from the internet for email.
 |Domain| com.microsoft.Outlook |
 |Key|AutomaticallyDownloadExternalContent |
 |Data Type|Integer   |
-|Possible values| 0 = Never (default) <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  |
+|Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
 |Availability|16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
@@ -329,7 +330,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Domain| com.microsoft.Outlook |
 |Key| EnableNewOutlook|
 |Data Type| Integer |
-|Possible values| 0 = Switch hidden (default) <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on <br/> 3 = New Outlook enabled with switch hidden |
+|Possible values| 0 = Switch hidden <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on (default) <br/> 3 = New Outlook enabled with switch hidden |
 |Availability|16.38 |
 
 ### Disable Junk settings
@@ -339,7 +340,7 @@ Prevent users from applying Junk options to emails.
 |Category|Details|
 |:-----|:-----|
 |Domain| com.microsoft.Outlook |
-|Key|OLDisableJunkOptionsPrefKey|
+|Key|DisableJunkOptionsPrefKey|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
 |Availability|16.55 |
