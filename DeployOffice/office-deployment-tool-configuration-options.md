@@ -11,6 +11,7 @@ ms.collection:
 - Ent_O365
 - M365-modern-desktop
 ms.custom: Ent_Office_ProPlus
+ms.date: 02/22/2023
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
 ---
@@ -283,8 +284,11 @@ MSICondition will recognize 2007, 2010, 2013, and 2016 versions of the Office pr
 
 The value that you specify for the MSICondition attribute is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your existing version of the Office product. For example, the Setup.xml file for Visio Professional 2016 is found in the VisPro.WW folder. You can specify multiple types of an Office product, separated by a comma. For example, you can specify "PrjStd,PrjStdR,PrjPro,PrjProR" to look for installations of Project Standard or Project Professional, either volume licensed or retail.
 
+
 > [!NOTE]
-> - We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+> We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+>
+> You can also watch a video on [how to use MSICondition in combination with RemoveMSI](https://youtu.be/7zHi6MRveRc) to simplify your upgrade.
 
 ### Example of MSICondition attribute
 
