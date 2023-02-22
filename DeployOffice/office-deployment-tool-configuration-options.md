@@ -6,17 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-ms.localizationpriority: high
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 ms.date: 02/22/2023
 ms.collection: tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 04/20/2020
 ---
 
 # Configuration options for the Office Deployment Tool
