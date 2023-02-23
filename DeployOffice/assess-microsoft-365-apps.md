@@ -25,7 +25,7 @@ Review the number and details of your client devices, including platform (Window
 
 As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Microsoft 365 Apps](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-Review the client requirements for your on-premises server workloads as well. For example, verify your on-premises Exchange servers meet the minimum requirements as described in the [Exchange Server Supportability Matrix](exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients).
+Review the client requirements for your on-premises server workloads as well. For example, verify if your on-premises Exchange servers meet the minimum requirements as described in the [Exchange Server Supportability Matrix](exchange/plan-and-deploy/supportability-matrix?view=exchserver-2019#clients).
 
 Finally, you should review the deployment tools you use in your organization. We recommend to use Microsoft Intune. If you are using Microsoft Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
 
