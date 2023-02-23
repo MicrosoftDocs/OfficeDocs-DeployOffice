@@ -14,9 +14,9 @@ ms.date: 03/27/2020
 
 # Choose how to deliver updates for the Microsoft 365 Apps
 
-There are various options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. Any update deployment implementation can be changed later. The options below apply to scenarios where you start fresh with Microsoft 365 Apps or when reevaluating your current implementation.
+There are various options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. Any update deployment implementation can be changed later. These options apply to scenarios where you start fresh with Microsoft 365 Apps or when reevaluating your current implementation.
 
-First, this article will cover three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here's an overview, in case you want to jump to a section directly:
+First, this article covers three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here's an overview, in case you want to jump to a section directly:
 
 - [Using the cloud for updates](choose-how-to-deliver-updates.md#updates-from-the-cloud)
     - [Automatic Updates or Microsoft Intune](choose-how-to-deliver-updates.md#automatic-update--microsoft-intune)
@@ -32,7 +32,7 @@ First, this article will cover three different update locations you can choose f
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
-The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](choose-how-to-deliver-updates.md#updates-from-the-cloud), from [on-premises locations](choose-how-to-deliver-updates.md#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section will lay out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](choose-how-to-deliver-updates.md#step-2-choose-your-way-to-manage-updates) for the chosen update source.
+The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](choose-how-to-deliver-updates.md#updates-from-the-cloud), from [on-premises locations](choose-how-to-deliver-updates.md#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section lays out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](choose-how-to-deliver-updates.md#step-2-choose-your-way-to-manage-updates) for the chosen update source.
 
 ### Updates from the cloud
 When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (Office CDN), this is referred to as cloud-based updates. Microsoft operates a worldwide, distributed network of datacenters that hosts all updates for the Microsoft 365 Apps for all available update channels, languages, related products like Visio and Project, and architectures (32/64 bit). The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
@@ -45,20 +45,20 @@ There are two core benefits when levering the cloud as your update source:
 - **No source files maintenance** needed: As the updates are hosted worldwide at Microsoft's datacenters, there's no need for downloading, packaging, staging and distributing the source files in your on-premises network. As updates are specific to architecture, update channel and languages, this can become a complex task in for example multi-language environments.
 
 When using the cloud as your update source, there are also some considerations:
-- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
-- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../delivery-optimization.md) when available. This will allow devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
-- **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This will reduce the load on the VPN infrastructure, network uplinks and allows for faster downloads.
+- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
+- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
+- **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This reduces the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 
 ### Updates from on-premises locations
 The Microsoft 365 Apps support multiple on-premises locations for updates. The required source files can be hosted on network shares, in local folders or drives, or on Configuration Manager's distribution points. Common among all these options are that the admin is responsible for ensuring that the required sources for all employed update channels, languages, and architectures (32/64 bit) are available. Otherwise, the update would fail.
 
-The main advantage of using on-premises locations is that devices don't need to pull down data from the internet to update. If repositories are available on all sites, the network traffic will happen locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
+The main advantage of using on-premises locations is that devices don't need to pull down data from the internet to update. If repositories are available on all sites, the network traffic happens locally in the Local Area Network (LAN). In case not all sites have infrastructure, the traffic might have to flow over the Wide Area Network (WAN).
 
 In general, Microsoft no longer recommends to host updates on-premises due to the following challenges:
 - **Source file maintenance**: When update sources are hosted on-premises, the admin must ensure that the required releases for all deployed update channels, languages and architectures are available. As Microsoft releases security updates on a monthly schedule, the on-premises repositories would have to be updated with the same cadence to stay current and secure.
 - **Source size**: As Microsoft doesn't release individual patches, but rather a new set of source files, the source files for an update for a specific update channel and architecture are about 3.5 GB in size. Each included language pack adds 100-300 MB to this source file set. For example, when devices run a mix of 32 bit and 64 bit, on Current Channel with three included language packs, this means 2 * 4 GB of source files that have to be downloaded and synchronized across the update locations on a monthly schedule.
-- **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy preferences with Site targeting](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increases the complexity of the implementation. If updates are managed by Configuration Manager, the before mentioned doesn't apply, as devices will determine the nearest distribution point automatically.
-- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't apply Delivery Optimization for reducing the network impact. All devices will pull their individual set of delta files down. When using Microsoft Configuration Manager, this can be mitigated by using [Peer Cache](/troubleshoot/mem/configmgr/configure-peer-cache).
+- **Finding nearest update location**: If network shares are used for hosting updates, devices need a way to identify the closest network share to limit WAN traffic. This could be addressed by using [group policy preferences with Site targeting](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn789189(v=ws.11)#site-targeting) or custom scripting, but this increases the complexity of the implementation. If updates are managed by Configuration Manager, the before mentioned doesn't apply, as devices determine the nearest distribution point automatically.
+- **No Delivery Optimization**: When updates are hosted in on-premises locations, the Microsoft 365 Apps can't apply Delivery Optimization for reducing the network impact. All devices pull their individual set of delta files down. When using Microsoft Configuration Manager, this can be mitigated by using [Peer Cache](/troubleshoot/mem/configmgr/configure-peer-cache).
 
 
 ### Updates from mixed on-premises and cloud locations (hybrid)
@@ -75,7 +75,7 @@ The hybrid approach shares the same disadvantages as the on-premises approach, e
 
 ## Step 2: Choose your way to manage updates
 
-Based on your preferred update source location, there are several solutions for update management available. The following sections will lay out these options per update source, touch on benefits and challenges and provide links to additional information.
+Based on your preferred update source location, there are several solutions for update management available. The following sections lay out these options per update source, touch on benefits and challenges and provide links to additional information.
 
 ## Update solutions for cloud-based updates
 
@@ -88,7 +88,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Rollback available through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) for devices on Monthly Enterprise Channel.
 
 **Considerations**
-- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients will receive the update at the same time, but in a staggered manner.
+- Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients receive the update at the same time, but in a staggered manner.
 - By default, updates aren't enforced. This can be mitigated by applying the **Update deadline** group policy setting for Office.
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or Servicing Profiles.
 - Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
@@ -131,7 +131,7 @@ Configuration Manager can be used to deploy updates for Microsoft 365 Apps the s
 **Considerations**
 - Requires the admin to download all content required to support every permutation of channel, architecture, and combination of languages the organization supports
 - Every permutation of Office supported leads to exponential growth of package content. This content must then be replicated to every distribution point
-- By default, any required content not found on the distribution point will result in Microsoft 365 Apps client update failure
+- By default, any required content not found on the distribution point results in Microsoft 365 Apps client update failure
 - No support for rolling back updates. Only way is to perform a reinstallation of an older build.
 - Limited to Configuration Manager-/co-managed devices
 
@@ -151,13 +151,13 @@ Admins can choose to download the latest releases using the [Office Deployment T
 **Considerations**
 - Requires the admin to download all content required to support every permutation of channel, architecture, and combination of languages the organization supports
 - Every permutation of Office supported leads to exponential growth of package content. This content must then be replicated to every share
-- By default, any required content not found on the distribution point will result in Microsoft 365 Apps client update failure
+- By default, any required content not found on the distribution point results in Microsoft 365 Apps client update failure
 
 
 ## Update solutions for hybrid update sources
 
 ### Microsoft Configuration Manager
-Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates, for example, Microsoft Windows. By enabling the options **If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates** when configuring the update deployment package, devices are allowed to fall back to Office CDN for missing sources. This enables admins to reduce the number of languages that need to be synchronized to distribution points. If certain language packs are only scarcely deployed, those devices will pull down the required update sources from the Office CDN, while getting the core content from a distribution point.
+Configuration Manager can be used to deploy updates for Microsoft 365 Apps the same way as it allows management of updates, for example, Microsoft Windows. By enabling the options **If software updates are not available on distribution point in current, neighbor or site boundary groups, download content from Microsoft Updates** when configuring the update deployment package, devices are allowed to fall back to Office CDN for missing sources. This enables admins to reduce the number of languages that need to be synchronized to distribution points. If certain language packs are only scarcely deployed, those devices pull down the required update sources from the Office CDN, while getting the core content from a distribution point.
 
 **Benefits** 
 - Optimizes bandwidth where admins can stage the on-premises content that is required and offload content that isn't required to the CDN. A great example is languages. 
