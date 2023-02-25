@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with information on how to update Office LTSC 2021."
-ms.date: 09/14/2021
+ms.date: 03/01/2023
 ---
 
 # Update Office LTSC 2021
