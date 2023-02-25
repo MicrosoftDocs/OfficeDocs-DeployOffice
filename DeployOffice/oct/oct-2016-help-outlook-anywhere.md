@@ -3,12 +3,12 @@ title: "Office Customization Tool (OCT) 2016 Help Outlook Anywhere"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 9/22/2015
+ms.date: 03/01/2023
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

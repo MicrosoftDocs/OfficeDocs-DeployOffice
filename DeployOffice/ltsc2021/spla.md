@@ -7,11 +7,11 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Microsoft Services Provider License Agreement (SPLA) customers with instructions for deploying Office LTSC 2021"
-ms.date: 09/14/2021
+ms.date: 03/01/2023
 ---
 
 # Office LTSC 2021 deployment instructions for SPLA customers
