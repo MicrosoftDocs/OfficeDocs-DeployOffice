@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Learn about the formats and their extensions used by Word, Excel, and PowerPoint."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # File format reference for Word, Excel, and PowerPoint

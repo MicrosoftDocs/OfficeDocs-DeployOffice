@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Learn about the XML file formats and their extensions that are used by Word, Excel, PowerPoint, and Visio."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # XML file name extension reference for Office
