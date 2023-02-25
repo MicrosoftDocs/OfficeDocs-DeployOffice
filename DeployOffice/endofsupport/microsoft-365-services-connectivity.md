@@ -6,13 +6,13 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 08/31/2021
+ms.date: 12/21/2022
 ---
 
 # Office versions and connectivity to Microsoft 365 services

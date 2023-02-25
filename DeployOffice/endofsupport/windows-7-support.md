@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
