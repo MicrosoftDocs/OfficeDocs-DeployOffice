@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Describes how to improve Office performance by managing add-ins by using Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Manage add-ins by using Office Telemetry Dashboard

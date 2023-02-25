@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
 ms.date: 01/18/2023

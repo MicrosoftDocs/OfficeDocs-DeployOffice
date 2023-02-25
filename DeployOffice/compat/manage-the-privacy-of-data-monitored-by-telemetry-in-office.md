@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Learn about the data collection process and how to configure settings that help protect user privacy when using Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Manage the privacy of data monitored by Office Telemetry Dashboard

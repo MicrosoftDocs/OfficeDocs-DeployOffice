@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office

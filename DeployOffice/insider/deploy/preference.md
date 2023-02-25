@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use a preference to select the Microsoft 365 Insider channel for their Mac users."
 ms.date: 01/18/2023

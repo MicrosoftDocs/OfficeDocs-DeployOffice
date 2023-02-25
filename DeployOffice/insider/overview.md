@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 ms.custom: intro-get-started
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"

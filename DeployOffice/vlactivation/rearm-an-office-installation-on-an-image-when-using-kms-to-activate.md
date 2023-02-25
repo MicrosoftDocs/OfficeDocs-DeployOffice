@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Rearm a volume licensed version of Office that's included in an operating system image
