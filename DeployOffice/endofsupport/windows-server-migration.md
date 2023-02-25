@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance to Office admins on moving from Microsoft 365 Apps on Windows Server to either Windows 365 or Azure Virtual Desktop."
-ms.date: 05/31/2022
+ms.date: 01/06/2023
 ---
 
 # Microsoft 365 Apps migration from Windows Server
