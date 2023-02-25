@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides IT admins with information on how to update Office 2019."
-ms.date: 09/20/2018
+ms.date: 03/01/2023
 ---
 
 # Update Office 2019 (for IT Pros)

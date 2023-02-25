@@ -7,11 +7,11 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides information about how Office LTSC 2021 customers can get Office Online Server."
-ms.date: 09/14/2021
+ms.date: 03/01/2023
 ---
 
 # Office Online Server for Office LTSC 2021 customers
