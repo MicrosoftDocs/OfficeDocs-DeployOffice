@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Activate volume licensed versions of Office by using KMS

@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 recommendations: false
 description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
 ms.date: 01/18/2023

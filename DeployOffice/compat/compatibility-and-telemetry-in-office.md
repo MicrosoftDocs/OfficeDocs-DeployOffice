@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides a guide to the articles, downloads, scripts, and videos that help IT Professionals assess Office compatibility by using Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Guide to Office Telemetry Dashboard resources

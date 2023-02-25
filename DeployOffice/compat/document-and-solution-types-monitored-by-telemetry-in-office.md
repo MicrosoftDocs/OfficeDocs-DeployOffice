@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Lists document and solution types that are monitored by Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Document and solution types monitored by Office Telemetry Dashboard
