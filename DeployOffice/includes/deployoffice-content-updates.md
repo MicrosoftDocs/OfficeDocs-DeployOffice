@@ -2,6 +2,17 @@
 
 
 
+## Week of February 20, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/21/2023 | [End of support resources for Office](/DeployOffice/endofsupport/resources) | modified |
+| 2/23/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
+| 2/23/2023 | [Choose how to deliver updates for Microsoft 365 Apps for enterprise](/DeployOffice/fieldnotes/choose-how-to-deliver-updates) | modified |
+| 2/24/2023 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
+
+
 ## Week of February 13, 2023
 
 
@@ -67,45 +78,3 @@
 | 1/26/2023 | [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
 | 1/26/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
 | 1/27/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
-
-
-## Week of January 16, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/18/2023 | [Compare Microsoft 365 Insider channels](/DeployOffice/insider/compare-channels) | renamed |
-| 1/18/2023 | [Use Configuration Manager to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/configuration-manager) | renamed |
-| 1/18/2023 | [Use Group Policy to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/group-policy) | added |
-| 1/18/2023 | [Use Microsoft Intune to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/intune) | renamed |
-| 1/18/2023 | [Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)](/DeployOffice/insider/deploy/microsoft-autoupdate) | added |
-| 1/18/2023 | [Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/office-deployment-tool) | renamed |
-| 1/18/2023 | [Options for deploying Microsoft 365 Insider](/DeployOffice/insider/deploy/options) | added |
-| 1/18/2023 | [Provide Mac users with Microsoft 365 Insider by using a preference](/DeployOffice/insider/deploy/preference) | renamed |
-| 1/18/2023 | [Use a registry command to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/registry) | renamed |
-| 1/18/2023 | [Let users choose which Microsoft 365 Insider channel to install on Windows devices](/DeployOffice/insider/deploy/user-choice) | renamed |
-| 1/18/2023 | [Microsoft 365 Insider Program for Business](/DeployOffice/insider/overview) | added |
-| 1/18/2023 | Use Group Policy to install Office Insider on Windows devices | removed |
-| 1/18/2023 | Let Mac users choose Office Insider for themselves by using Microsoft AutoUpdate (MAU) | removed |
-| 1/18/2023 | Options for deploying Office Insider | removed |
-| 1/18/2023 | Office Insider Program for Business | removed |
-| 1/18/2023 | [Office 2016 in RDSH and VDI deployments](/DeployOffice/rds-office-vdi-rdsh) | modified |
-| 1/18/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
-| 1/18/2023 | [Compare Microsoft 365 Insider channels](/DeployOffice/insider/compare-channels) | renamed |
-| 1/18/2023 | [Use Configuration Manager to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/configuration-manager) | renamed |
-| 1/18/2023 | [Use Group Policy to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/group-policy) | added |
-| 1/18/2023 | [Use Microsoft Intune to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/intune) | renamed |
-| 1/18/2023 | [Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)](/DeployOffice/insider/deploy/microsoft-autoupdate) | added |
-| 1/18/2023 | [Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/office-deployment-tool) | renamed |
-| 1/18/2023 | [Options for deploying Microsoft 365 Insider](/DeployOffice/insider/deploy/options) | added |
-| 1/18/2023 | [Provide Mac users with Microsoft 365 Insider by using a preference](/DeployOffice/insider/deploy/preference) | renamed |
-| 1/18/2023 | [Use a registry command to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/registry) | renamed |
-| 1/18/2023 | [Let users choose which Microsoft 365 Insider channel to install on Windows devices](/DeployOffice/insider/deploy/user-choice) | renamed |
-| 1/18/2023 | [Microsoft 365 Insider Program for Business](/DeployOffice/insider/overview) | added |
-| 1/18/2023 | Use Group Policy to install Office Insider on Windows devices | removed |
-| 1/18/2023 | Let Mac users choose Office Insider for themselves by using Microsoft AutoUpdate (MAU) | removed |
-| 1/18/2023 | Options for deploying Office Insider | removed |
-| 1/18/2023 | Office Insider Program for Business | removed |
-| 1/18/2023 | [Office 2016 in RDSH and VDI deployments](/DeployOffice/rds-office-vdi-rdsh) | modified |
-| 1/18/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
-
