@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 01/08/2021
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Microsoft 365 change guide

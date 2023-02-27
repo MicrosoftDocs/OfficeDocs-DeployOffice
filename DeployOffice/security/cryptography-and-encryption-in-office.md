@@ -3,14 +3,14 @@ title: "Cryptography and encryption in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains the settings that you can use to encrypt data in Office, and provides information about compatibility with previous versions of Office."
+ms.date: 03/01/2023
 ---
 
 # Cryptography and encryption in Office 2016

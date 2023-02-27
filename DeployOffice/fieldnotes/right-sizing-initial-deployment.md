@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps."
-ms.date: 04/09/2020
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps

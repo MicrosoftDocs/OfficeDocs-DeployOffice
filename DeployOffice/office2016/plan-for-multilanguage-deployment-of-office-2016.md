@@ -3,13 +3,13 @@ title: "Plan for multilanguage deployment of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 11/26/2015
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
+ms.date: 03/01/2023
 ---
 
 # Plan for multilanguage deployment of Office 2016

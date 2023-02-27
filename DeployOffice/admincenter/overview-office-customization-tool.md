@@ -8,10 +8,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
-ms.date: 10/15/2021
+ms.date: 03/01/2023
 ---
 
 # Overview of the Office Customization Tool

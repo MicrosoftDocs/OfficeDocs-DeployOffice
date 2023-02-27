@@ -3,14 +3,14 @@ title: "Protect sensitive messages and documents by using Information Rights Man
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 9/8/2017
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
+ms.date: 03/01/2023
 ---
 
 # Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016

@@ -8,11 +8,11 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 recommendations: false
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides admins information about choosing a default file format when using the Office Customization Tool."
-ms.date: 10/15/2021
+ms.date: 03/01/2023
 ---
 
 # Default file format for the Office Customization Tool (for Click-to-Run)
