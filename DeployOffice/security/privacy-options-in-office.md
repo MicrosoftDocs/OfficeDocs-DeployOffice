@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Privacy options in Office 2016

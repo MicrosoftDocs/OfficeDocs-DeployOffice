@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Plan for multilanguage setup, and customization and proofing tools for Office 2016."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Plan for multilanguage deployment of Office 2016

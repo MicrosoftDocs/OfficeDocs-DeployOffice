@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn about the language packs and language interface packs that are available for Office."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Language versions and language interface packs in Office 2016
