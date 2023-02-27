@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Field best practices: Switch to Monthly Enterprise Channel with Configuration Manager"
-ms.date: 09/17/2020
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Switch to Monthly Enterprise Channel with Configuration Manager

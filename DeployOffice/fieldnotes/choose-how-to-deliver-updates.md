@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
-ms.date: 03/27/2020
+ms.date: 03/01/2023
 ---
 
 # Choose how to deliver updates for the Microsoft 365 Apps

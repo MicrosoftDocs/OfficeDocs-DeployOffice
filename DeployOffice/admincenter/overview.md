@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier1
+ms.collection: Tier1
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
-ms.date: 09/17/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of the Microsoft 365 Apps admin center
