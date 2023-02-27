@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps

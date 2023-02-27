@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 01/03/2023
+ms.date: 01/12/2023
 ---
 
 # Set suite-wide preferences for Office for Mac

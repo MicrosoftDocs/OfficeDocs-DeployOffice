@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
-ms.date: 01/09/2023
+ms.date: 01/23/2023
 ---
 
 # What's new for deploying Microsoft 365 Apps

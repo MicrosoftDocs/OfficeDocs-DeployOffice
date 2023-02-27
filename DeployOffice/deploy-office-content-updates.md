@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro 
 ms.topic: article 
 ms.service: o365-proplus-itpro 
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium 
 recommendations: false
 description: "List of recently updated articles about deploying Microsoft 365 Apps" 
-ms.date: 09/12/2019
+ms.date: 03/01/2023
 ---
 
 # Content updates for deploying Microsoft 365 Apps

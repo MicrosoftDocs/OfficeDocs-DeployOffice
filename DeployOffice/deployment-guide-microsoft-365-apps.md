@@ -6,12 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Deployment guide for Microsoft 365 Apps

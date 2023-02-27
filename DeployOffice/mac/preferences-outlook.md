@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
-ms.date: 10/19/2018
+ms.date: 03/01/2023
 ---
 
 # Set preferences for Outlook for Mac

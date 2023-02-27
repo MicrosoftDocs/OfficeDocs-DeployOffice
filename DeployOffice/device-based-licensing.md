@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
-ms.date: 08/06/2019
+ms.date: 03/01/2023
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise

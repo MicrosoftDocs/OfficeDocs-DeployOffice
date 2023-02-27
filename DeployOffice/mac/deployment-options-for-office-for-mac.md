@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: true
 description: "Provides information to admins on how to download and deploy Office for Mac to users in their organization"
-ms.date: 03/19/2018
+ms.date: 03/01/2023
 ---
 
 # Deployment options for admins for Office for Mac

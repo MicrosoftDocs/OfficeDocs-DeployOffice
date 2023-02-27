@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
-ms.date: 02/22/2023
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
+ms.date: 03/01/2023
 ---
 
 # Configuration options for the Office Deployment Tool

@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.date: 08/24/2017
 recommendations: false
 description: Learn about your options for managing Outlook data stored to a user profile disk.
+ms.date: 03/01/2023
 ---
 
 # Dealing with Outlook search in non-persistent RDS environments

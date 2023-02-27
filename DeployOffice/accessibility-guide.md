@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provide Office admins with guidance and resources to help make their Microsoft 365 environment as inclusive and accessible as possible for their users"
-ms.date: 05/09/2022
+ms.date: 03/01/2023
 ---
 
 # Accessibility guide for Microsoft 365 Apps

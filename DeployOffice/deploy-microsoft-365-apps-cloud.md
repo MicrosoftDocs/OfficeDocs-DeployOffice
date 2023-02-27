@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Deploy Microsoft 365 Apps from the cloud

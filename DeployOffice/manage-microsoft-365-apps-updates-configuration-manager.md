@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with guidance on how to update Microsoft 365 Apps by using Microsoft Configuration Manager"
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager

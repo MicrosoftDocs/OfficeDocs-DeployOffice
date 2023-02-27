@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about how to install volume licensed versions of Project 2016 and Visio 2016 on the same computer with Microsoft 365 Apps by using the Office Deployment Tool."
-ms.date: 08/14/2017
+ms.date: 03/01/2023
 ---
 
 # Use the Office Deployment Tool to install volume licensed versions of Project 2016 and Visio 2016 
