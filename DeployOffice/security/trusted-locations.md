@@ -6,10 +6,10 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance to Office admins about Trusted Locations in Office apps."
-ms.date: 03/29/2022
+ms.date: 03/01/2023
 ---
 
 # Trusted Locations for Office files

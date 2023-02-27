@@ -3,13 +3,13 @@ title: "Customize language setup and settings for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Learn how to customize languages for Office 2016."
+ms.date: 03/01/2023
 ---
 
 # Customize language setup and settings for Office 2016

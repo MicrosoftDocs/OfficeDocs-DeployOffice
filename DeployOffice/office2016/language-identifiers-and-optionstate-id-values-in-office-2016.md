@@ -3,13 +3,13 @@ title: "Language identifiers and OptionState Id values in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 3/9/2016
 audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations."
+ms.date: 03/01/2023
 ---
 
 # Language identifiers and OptionState Id values in Office 2016

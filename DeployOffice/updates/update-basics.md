@@ -6,12 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Office admins with guidance on how to get updates for Microsoft 365 Apps."
-ms.date: 06/05/2022
+ms.date: 03/01/2023
 ---
 
 # Keep Office apps up to date with the latest updates

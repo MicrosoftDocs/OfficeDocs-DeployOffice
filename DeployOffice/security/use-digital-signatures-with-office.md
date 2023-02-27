@@ -3,14 +3,14 @@ title: "Use digital signatures with Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents as well as how to choose the appropriate certificates for your deployment."
+ms.date: 03/01/2023
 ---
 
 # Use digital signatures with Office 2016

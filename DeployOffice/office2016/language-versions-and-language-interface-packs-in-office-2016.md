@@ -3,13 +3,13 @@ title: "Language versions and language interface packs in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 3/14/2018
 audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Learn about the language packs and language interface packs that are available for Office."
+ms.date: 03/01/2023
 ---
 
 # Language versions and language interface packs in Office 2016

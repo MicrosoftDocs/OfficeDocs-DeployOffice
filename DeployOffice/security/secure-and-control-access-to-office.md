@@ -3,14 +3,14 @@ title: "Secure and control access to Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 9/21/2015
 audience: ITPro
 ms.topic: landing-page
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Lists and describes articles that will help you work with the security controls, as well as understand the identity authorization and authentication features that are available in Office."
+ms.date: 03/01/2023
 ---
 
 # Secure and control access to Office 2016

@@ -3,14 +3,14 @@ title: "Identity, authentication, and authorization in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 12/20/2016
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes Office authentication, logon types, and how to use registry settings to determine which user identities are offered at user logon."
+ms.date: 03/01/2023
 ---
 
 # Identity, authentication, and authorization in Office 2016

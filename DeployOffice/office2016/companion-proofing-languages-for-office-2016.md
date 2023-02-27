@@ -3,13 +3,13 @@ title: "Companion proofing languages for Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 11/7/2015
 audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Identify the companion proofing languages that are included with Office 2016."
+ms.date: 03/01/2023
 ---
 
 # Companion proofing languages for Office 2016

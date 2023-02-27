@@ -6,10 +6,10 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 02/04/2022
+ms.date: 01/10/2023
 ---
 
 # Macros from the internet will be blocked by default in Office
