@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Field best practices: Roadmap to modern management of Microsoft 365 Apps in the enterprise"
-ms.date: 10/29/2020
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Roadmap to modern management of Microsoft 365 Apps in the enterprise

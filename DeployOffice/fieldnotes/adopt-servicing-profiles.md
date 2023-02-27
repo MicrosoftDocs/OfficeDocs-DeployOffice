@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 description: "Provide guidance to Office admins on how to adopt servicing profiles for Microsoft 365 Apps"
-ms.date: 02/08/2022
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Adopting servicing profiles for Microsoft 365 Apps
