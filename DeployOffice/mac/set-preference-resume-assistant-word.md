@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference for Resume Assistant in Word for Mac"
-ms.date: 03/01/2023
+ms.date: 01/24/2023
 ---
 
 # Set a preference for Resume Assistant in Word for Mac

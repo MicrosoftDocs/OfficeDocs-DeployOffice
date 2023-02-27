@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: tier1
+ms.collection: Tier1
 description: "Provides Office admins with information about optional diagnostic data in Office, including some examples of events."
 hideEdit: true
-ms.date: 04/16/2019
+ms.date: 03/01/2023
 ---
 
 # Optional diagnostic data for Office
