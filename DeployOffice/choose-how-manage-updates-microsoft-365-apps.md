@@ -6,12 +6,12 @@ manager: dougeby
 udience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 audience: ITPro
 recommendations: false
 description: "Compares different ways to update Microsoft 365 Apps, including automatically from the internet or from an on-premises location."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Choose how to manage updates to Microsoft 365 Apps

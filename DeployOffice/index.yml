@@ -5,14 +5,14 @@ summary: Deploy and manage Microsoft 365 Apps or other versions of Office.
 brand: office
 
 metadata:
-  ms.date: 04/30/2021
+  ms.date: 03/01/2023
   title: Office deployment
   description: Learn how to deploy and manage Microsoft 365 Apps or other versions of Office. Microsoft 365 Apps is the version of Office that's available through many Microsoft 365 and Office 365 plans.  
   brand: office
   author: DHB-MSFT
   ms.author: danbrown
   ms.topic: hub-page
-  ms.collection: tier1
+  ms.collection: Tier1
   ms.service: o365-proplus-itpro
   ms.custom: intro-hub-or-landing
 

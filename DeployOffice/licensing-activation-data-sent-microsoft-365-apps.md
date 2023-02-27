@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Describes what data Microsoft 365 Apps sends to Office 365 services for licensing and activation purposes."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Licensing and activation data sent to Office 365 by Microsoft 365 Apps

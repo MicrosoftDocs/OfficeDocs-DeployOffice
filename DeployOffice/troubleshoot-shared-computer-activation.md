@@ -7,12 +7,12 @@ ms.reviewer: mattphil
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
 recommendations: false
 description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Troubleshoot issues with shared computer activation for Microsoft 365 Apps

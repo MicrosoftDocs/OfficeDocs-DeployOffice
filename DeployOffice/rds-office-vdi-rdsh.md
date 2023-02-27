@@ -6,12 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
-ms.date: 08/31/2018
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: Learn about using Outlook 2016, OneDrive, and Skype for Business in RDSH and VDI deployments
-
+ms.date: 03/01/2023
 ---
 # Office 2016 in RDSH and VDI Deployments
 
