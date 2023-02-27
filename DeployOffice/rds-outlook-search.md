@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: Learn about your options for managing Outlook data stored to a user profile disk.
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Dealing with Outlook search in non-persistent RDS environments

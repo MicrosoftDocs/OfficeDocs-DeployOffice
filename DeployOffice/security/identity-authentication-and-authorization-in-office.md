@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes Office authentication, logon types, and how to use registry settings to determine which user identities are offered at user logon."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Identity, authentication, and authorization in Office 2016

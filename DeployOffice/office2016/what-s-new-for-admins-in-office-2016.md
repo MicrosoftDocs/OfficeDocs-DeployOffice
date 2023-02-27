@@ -3,7 +3,6 @@ title: "What's new for admins in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 03/01/2023
 audience: ITPro
 ms.topic: overview
 ms.service: office-perpetual-itpro
@@ -11,6 +10,7 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier2
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
+ms.date: 12/31/2022
 ---
 
 # What's new for admins in Office 2016
