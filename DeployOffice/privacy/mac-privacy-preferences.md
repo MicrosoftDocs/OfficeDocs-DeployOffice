@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: high
-ms.collection: tier1
+ms.collection: Tier1
 description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
 hideEdit: true
-ms.date: 08/07/2019
+ms.date: 03/01/2023
 ---
 
 # Use preferences to manage privacy controls for Office for Mac

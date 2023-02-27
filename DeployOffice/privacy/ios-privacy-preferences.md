@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: tier1
+ms.collection: Tier1
 description: "Provides Office admins with information about how to manage privacy settings on iOS devices."
 hideEdit: true
-ms.date: 10/14/2019
+ms.date: 03/01/2023
 ---
 
 # Use preferences to manage privacy controls for Office on iOS devices
