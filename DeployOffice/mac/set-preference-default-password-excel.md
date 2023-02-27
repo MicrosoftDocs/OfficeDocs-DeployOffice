@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference for trying a default decryption password in Excel for Mac"
-ms.date: 12/03/2018
+ms.date: 03/01/2023
 ---
 
 # Set a preference for trying a default decryption password in Excel for Mac

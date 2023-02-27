@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: false
 description: "Provides information to admins on how to download and deploy Office for Mac from the Mac App Store"
-ms.date: 01/17/2019
+ms.date: 03/01/2023
 ---
 
 # Deploy Office for Mac from the Mac App Store
