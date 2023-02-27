@@ -7,11 +7,11 @@ ms.reviewer: mattphil
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps

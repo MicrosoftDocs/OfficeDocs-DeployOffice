@@ -6,12 +6,12 @@ manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-ms.collection: tier1
+ms.collection: Tier1
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # About Microsoft 365 Apps in the enterprise

@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Overview of extended offline access for Microsoft 365 Apps."
-ms.date: 05/11/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of extended offline access for Microsoft 365 Apps

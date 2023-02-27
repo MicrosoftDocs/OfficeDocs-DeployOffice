@@ -7,11 +7,11 @@ ms.reviewer: mattphil
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Overview of viewer mode for Microsoft 365 Apps."
-ms.date: 03/30/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of viewer mode for Microsoft 365 Apps
