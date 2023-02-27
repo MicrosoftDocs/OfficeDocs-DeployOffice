@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
-ms.date: 04/03/2018
+ms.date: 03/01/2023
 ---
 
 # Update Microsoft applications for Mac by using msupdate

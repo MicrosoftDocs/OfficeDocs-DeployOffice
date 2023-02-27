@@ -8,10 +8,10 @@ ms.topic: article
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: tier3
+ms.collection: Tier3
 recommendations: true
 description: "Provides information for admins on how to deploy standard preference settings for Office for Mac, by configuring .plist files"
-ms.date: 03/19/2018
+ms.date: 03/01/2023
 ---
 
 # Deploy preferences for Office for Mac
