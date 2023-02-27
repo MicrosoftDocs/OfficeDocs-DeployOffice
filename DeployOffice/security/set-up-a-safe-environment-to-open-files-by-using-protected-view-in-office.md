@@ -3,14 +3,14 @@ title: "Set up a safe environment to open files by using Protected View in Offic
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 11/2/2017
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office."
+ms.date: 03/01/2023
 ---
 
 # Set up a safe environment to open files by using Protected View in Office 2016

@@ -3,13 +3,13 @@ title: "Add or remove language packs after deployment of Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 11/19/2015
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Identify installed languages, and add or remove Office 2016 language packs by modifying an existing installation or by deploying them as separate products."
+ms.date: 03/01/2023
 ---
 
 # Add or remove language packs after deployment of Office 2016

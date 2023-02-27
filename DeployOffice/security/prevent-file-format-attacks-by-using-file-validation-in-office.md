@@ -3,14 +3,14 @@ title: "Prevent file format attacks by using Office file validation in Office 20
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 9/21/2015
 audience: ITPro
 ms.topic: article
 ms.service: office-perpetual-itpro
-ms.collection: tier2
+ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how you can prevent file format attacks using file validation in Office."
+ms.date: 03/01/2023
 ---
 
 # Prevent file format attacks by using Office file validation in Office 2016

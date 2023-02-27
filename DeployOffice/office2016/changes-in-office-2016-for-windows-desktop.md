@@ -3,13 +3,13 @@ title: "Changes in Office 2016 for Windows desktop"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
-ms.date: 6/16/2017
 audience: ITPro
 ms.topic: reference
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: tier2
+ms.collection: Tier2
 description: "Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released."
+ms.date: 03/01/2023
 ---
 
 # Changes in Office 2016 for Windows desktop
