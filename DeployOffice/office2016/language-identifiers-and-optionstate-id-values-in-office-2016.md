@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Find language identifier and OptionState ID values for identifying and customizing Office 2016 language and proofing tools installations."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Language identifiers and OptionState Id values in Office 2016

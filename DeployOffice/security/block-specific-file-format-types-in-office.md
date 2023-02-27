@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Provides information about the settings to block specific file format types for Excel, PowerPoint, and Word users."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Block specific file format types in Office 2016

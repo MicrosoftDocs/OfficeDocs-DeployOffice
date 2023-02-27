@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Lists and describes articles that will help you work with the security controls, as well as understand the identity authorization and authentication features that are available in Office."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Secure and control access to Office 2016

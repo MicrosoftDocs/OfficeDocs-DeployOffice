@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use the Office DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files."
-ms.date: 03/01/2023
+ms.date: 12/31/2022
 ---
 
 # Remove or reset file passwords in Office 2016
