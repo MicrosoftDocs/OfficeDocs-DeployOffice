@@ -120,6 +120,9 @@ In the dashboard, make sure you see the versions, languages, and update channels
 
 The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch.
 
+### Right-size the deployment for multi-language environments
+If you support multiple languages in your environment and select to include them all in the application, it might grow in size substantially. As all devices will download the application from a distribution point first and then run the setup, it might be that a lot of devices are downloading the source files for language packs which are not needed during installation. We have documented some best practises on [how to right-size your deployment](./fieldnotes/right-sizing-initial-deployment.md), finding a balance between which languages to include (to conserve internet bandwidth) and which to leave out (to conserve LAN/WAN traffic).
+
 ### Build and deploy multiple packages to multiple deployment groups
 
 If you need to deploy the 32-bit version of Microsoft 365 Apps, you can create additional applications. Two different architectures (x86 and x64 in this case) can't be included in the same application. For more information, see [Define your installation packages](plan-microsoft-365-apps.md#step-4---define-your-installation-packages).
