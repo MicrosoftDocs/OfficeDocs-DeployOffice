@@ -23,13 +23,10 @@ The **Software updates** page has the following tabs to assist you in monitoring
 
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients.
 
-- **Exchange Server**: Displays data for cumulative and security updates and identifies out-of-support Exchange servers.
-
-This article contains information about the **Microsoft 365 Apps** tab. 
+This article contains information about the **Microsoft 365 Apps** tab.
 
 > [!TIP]
-> - For more information about the **Windows** tab, see [Microsoft 365 admin center software updates page](/windows/deployment/update/wufb-reports-admin-center). 
-> - For more information about the **Exchange Server** tab, see [View software update status for Exchange Server](/exchange/new-features/exchange-server-update-status).
+> For more information about the **Windows** tab, see [Microsoft 365 admin center software updates page](/windows/deployment/update/wufb-reports-admin-center).
 
 ## The Microsoft 365 Apps tab
 
