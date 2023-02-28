@@ -80,7 +80,7 @@ Create a Microsoft 365 Apps application using the steps below.
       - **Upgrades:** Choose to automatically remove all previous MSI versions of Office.
       - **Additional properties:** To silently install the application for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
       - **Application settings:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats.
-5. When you completed the configuration, select **Submit**.
+5. When you have completed the configuration, select **Submit**.
 6. On the **Deployment** page, select **Yes** to deploy the application, and then select **Next**.
 
  > [!NOTE]
@@ -96,11 +96,11 @@ Creating the application using the Office 365 Installer will automatically confi
 
 ## Step 5: Monitor progress
 
-If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps with the next evaluation cycle. Otherwise, you have to manually deploy and distribute the application to devices and distribution points. After the deployment has been initiated, monitor the appropriate reports in Configuration Manager for progress and potential issues.
+If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps with the next evaluation cycle. Otherwise, you must manually deploy and distribute the application to devices and distribution points. After the deployment has been initiated, monitor the appropriate reports in Configuration Manager for progress and potential issues.
 
 If you opted to use multiple collections for the initial deployment, don't forget to extend the deployment to these additional collections over time.
 
-After devices have finished the installation of/upgrade to Microsoft 365 Apps, they will report back to their Management Point with the next hardware inventory cycle. Based in a schedule, the dynamic collections will then start adding/removing devices based on the set criteria. This allows you to easily monitor the overall progress of the deployment as well as if all devices are in the intended update channels or if some configuration drift is happening.
+After devices have finished the installation of/upgrade to Microsoft 365 Apps, they will report back to their Management Point with the next hardware inventory cycle. Based on a schedule, the dynamic collections will then start adding/removing devices based on the set criteria. This allows you to easily monitor the overall progress of the deployment as well as if all devices are in the intended update channels or if some configuration drift is happening.
 
 You can also use the Office 365 Client Management dashboard. This dashboard provides charts for the following information:
 
@@ -121,7 +121,7 @@ In the dashboard, make sure you see the versions, languages, and update channels
 The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch.
 
 ### Right-size the deployment for multi-language environments
-If you support multiple languages in your environment and select to include them all in the application, it might grow in size substantially. As all devices will download the application from a distribution point first and then run the setup, it might be that a lot of devices are downloading the source files for language packs which are not needed during installation. We have documented some best practises on [how to right-size your deployment](./fieldnotes/right-sizing-initial-deployment.md), finding a balance between which languages to include (to conserve internet bandwidth) and which to leave out (to conserve LAN/WAN traffic).
+If you support multiple languages in your environment and select to include them all in the application, it might grow in size substantially. As all devices will download the application from a distribution point first and then run the setup, it might be that a lot of devices are downloading the source files for language packs which are not needed during installation. We have documented some best practices on [how to right-size your deployment](./fieldnotes/right-sizing-initial-deployment.md), finding a balance between which languages to include (to conserve internet bandwidth) and which to leave out (to conserve LAN/WAN traffic).
 
 ### Build and deploy multiple packages to multiple deployment groups
 
@@ -137,7 +137,7 @@ A single Microsoft 365 Apps installation package can only include one type of up
 
 ### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Microsoft 365 Apps, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Microsoft 365 Apps, Visio, Project, and other products. We recommend updating the detection method, so it is unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
 
 ## Configure uninstall with Configuration Manager
 
