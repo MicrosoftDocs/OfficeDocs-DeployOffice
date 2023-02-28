@@ -21,7 +21,7 @@ ms.date: 03/01/2023
 
 [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
-Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), under **Apps** > **Policy** > **Policies for Office apps**.  
+Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
 When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies.
 
