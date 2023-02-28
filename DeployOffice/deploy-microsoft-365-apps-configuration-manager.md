@@ -29,6 +29,8 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 The steps in this article are based on the following best practices for Microsoft Configuration Manager environments:
 
+- **Use [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview)**: We will deploy Microsoft 365 Apps configured for using the Monthly Enterprise Channel. For Configuration Manager environments this strikes a balance of getting the latest features and quality improvements quickly and having a predictable update schedule.
+
 - **Build a Microsoft 365 Apps [applications](/mem/configmgr/apps/understand/introduction-to-application-management) using the built-in wizard**: We will use the built-in wizard to create the application and allow Configuration Manager to build the application sources for us.
 
 - **Leverage dynamic [collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: We will leverage a combination of static and  dynamically updated collections to leverage the automation capabilities of Configuration Manager and improve targeting of e.g. updates.
@@ -49,14 +51,20 @@ Make sure to complete the following requirements as well:
 - The computer running the Configuration Manager console requires IE 11 or greater and needs internet access via HTTPS port 443. The Office 365 Client Installation Wizard uses a Windows standard web browser API to open https://config.office.com. If an internet proxy is used, the user must be able to access this URL.
 - Add the following sites to the Trusted Sites list if you have Enhanced Security Configuration enabled for IE (which is enabled by default on Windows Server): https://\*.office.com and https://\*.officeconfig.msocdn.com.
 
-## Step 2 - Review your collections
+## Step 2 - Create collections
 
-The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. For each deployment group, make sure you have a specific collection. Our standard best practices recommend two deployment groups:
+The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. We recommend to create two sets of collections:
 
-- A pilot group that receives Semi-Annual Enterprise Channel (Preview)
-- A broad group that receives Semi-Annual Enterprise Channel
+- One set for the initial deployment of Microsoft 365 Apps. This can be one or multiple collections.
+- One set for the ongoing maintenance of Microsoft 365 Apps. These collections will be used for assigning updates as well as monitoring installed update channels.
 
-In more complex deployments, you would use multiple deployment groups. For more information, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels). For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
+For the initial deployment, create collections aligned to the deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices with your rollout progressing. Or create multiple collections (e.g., four in an 5/15/40/40 split) and add the devices assigned for each deployment wave. Yu can merge these collections together later to reduce management overhead. For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
+
+For the ongoing maintenance, create collections as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](./fieldnotes/build-dynamic-lean-configuration-manager.md), except the collection to "Catch Devices on builds below a certain threshold". This will leave you with three sets of collections:
+
+- One or multiple collections to easily identify how many devices are on update channels you have approved for your devices.
+- One collection which will capture all devices running Microsoft 365 Apps. This collection will also be used to target the monthly updates.
+- One collection which captures all devices which are not on your approved update channels. This collection can be used to identify and prevent configuration drift.
 
 ## Step 3 - Create and deploy the Office application to the pilot group
 
