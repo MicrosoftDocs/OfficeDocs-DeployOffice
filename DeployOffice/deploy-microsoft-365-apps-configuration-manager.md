@@ -19,7 +19,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in managed environments. In order to reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend using Microsoft Intune for deployment. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+This article is intended for administrators in managed environments. To reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend using Microsoft Intune. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation on Microsoft 365 Apps](/mem/intune/apps/apps-add-office365) to learn more.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment.
 
@@ -29,15 +29,13 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 The steps in this article are based on the following best practices for Microsoft Configuration Manager environments:
 
-- **Use [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview)**: We will deploy Microsoft 365 Apps configured for using the Monthly Enterprise Channel. For Configuration Manager environments this strikes a balance of getting the latest features and quality improvements quickly and having a predictable update schedule.
+- **Use [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview)**: For Configuration Manager environments this strikes a balance of getting the latest features and quality improvements quickly and having a predictable update schedule. While we generally recommend using Current Channel, this is often not feasible for on-premises-managed environments.
 
 - **Build a Microsoft 365 Apps [applications](/mem/configmgr/apps/understand/introduction-to-application-management) using the built-in wizard**: We will use the built-in wizard to create the application and allow Configuration Manager to build the application sources for us.
 
 - **Leverage dynamic [collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: We will leverage a combination of static and  dynamically updated collections to leverage the automation capabilities of Configuration Manager and improve targeting of e.g., updates.
 
-- **Right-sizing the deployment**: For multi-language scenarios, we will show how the size of the initial application package can be reduced to reduce load on the network.
-
-You can customize these options to match the requirements for your organization, including deploying to additional collections, changing update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
+You can customize these options to match the requirements for your organization, including right-sizing your deployment, changing update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1: Review and update your Configuration Manager infrastructure
 
@@ -53,18 +51,18 @@ Make sure to complete the following requirements as well:
 
 ## Step 2: Create collections
 
-The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. We recommend creating two sets of collections:
+We recommend creating two sets of collections:
 
 - One set for the initial deployment of Microsoft 365 Apps. This can be one or multiple collections.
-- One set for the ongoing maintenance of Microsoft 365 Apps. These collections will be used for assigning updates as well as monitoring installed update channels.
+- One set for the ongoing maintenance of Microsoft 365 Apps. These collections will be used for assigning updates as well as deployed update channels.
 
-For the initial deployment, create collections aligned to the deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices with your rollout progressing. Or create multiple collections (e.g., four in an 5/15/40/40 split) and add the devices assigned for each deployment wave. You can merge these collections together later to reduce management overhead. For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
+For the initial deployment, create collections aligned to your deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices later. Or create multiple collections (e.g., four in a 5/15/40/40 split) and add collections to the application's deployment over time. You can merge these collections later to reduce management overhead. For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
 
 For the ongoing maintenance, create collections as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](./fieldnotes/build-dynamic-lean-configuration-manager.md), except the collection to "Catch Devices on builds below a certain threshold". This will leave you with three sets of collections:
 
-- One or multiple collections to easily identify how many devices are on update channels you have approved for your devices.
-- One collection which will capture all devices running Microsoft 365 Apps. This collection will also be used to target the monthly updates.
-- One collection which captures all devices which are not on your approved update channels. This collection can be used to identify and prevent configuration drift.
+- One or multiple collections to easily identify how many devices are on a given update channel.
+- One collection which will capture all devices running Microsoft 365 Apps. This collection will be used to deploy the monthly updates.
+- One collection which captures all devices which are on update channels you didn't catch above. This can help to identify and remediate configuration drift.
 
 ## Step 3: Create and deploy the Microsoft 365 Apps application
 
@@ -76,13 +74,13 @@ Create a Microsoft 365 Apps application using the steps below.
 2. Select **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then select **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, select **Go to the Office Customization Tool**, and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
-    - **Software:** Microsoft 365 Apps for enterprise (if you're licensed for it). You can also include Visio and Project if you plan to deploy those products.
+    - **Software:** **Microsoft 365 Apps for enterprise** or **Microsoft 365 Apps for business** based on your licenses. You can also include Visio and Project if you plan to deploy those products to all users.
       - **Update channel:** Choose **Monthly Enterprise Channel**.
       - **Languages:** Include all the language packs you plan to deploy.
       - **Upgrades:** Choose to automatically remove all previous MSI versions of Office.
       - **Additional properties:** To silently install the application for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
       - **Application settings:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats.
-5. When you complete the configuration, select **Submit**.
+5. When you completed the configuration, select **Submit**.
 6. On the **Deployment** page, select **Yes** to deploy the application, and then select **Next**.
 
  > [!NOTE]
@@ -94,15 +92,15 @@ Create a Microsoft 365 Apps application using the steps below.
 
 ## Step 4: Configure updates
 
-After you create and deploy Microsoft 365 Apps using the Office 365 Installer, Microsoft 365 Apps will be automatically configured to listen to the Configuration Manager for update instructions. Please review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) to start offering devices updates through Configuration Manager. You can use the collection which catches all Microsoft 365 Apps installation you have created in step 2.
+Creating the application using the Office 365 Installer will automatically configure Microsoft 365 Apps to listen to the Configuration Manager for update instructions. Please review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) to start offering updates through Configuration Manager. You can use the collection which catches all Microsoft 365 Apps installation you have created in step 2.
 
 ## Step 5: Monitor progress
 
-If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps after the next evaluation cycle. Otherwise, you have to manually deploy and distribute the application to devices and distribution points. After the deployment was initiated, monitor the appropriate  reports in Configuration Manager to see the progress and any potential.
+If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps with the next evaluation cycle. Otherwise, you have to manually deploy and distribute the application to devices and distribution points. After the deployment has been initiated, monitor the appropriate reports in Configuration Manager for progress and potential issues.
 
-If you opted to use multiple collections for deployment, don't forget to extend the deployment to these additional collections over time.
+If you opted to use multiple collections for the initial deployment, don't forget to extend the deployment to these additional collections over time.
 
-After devices have finished the installation of/upgrade to Microsoft 365 Apps, they will report the installed software to their Management Point during the next hardware inventory cycle. The dynamic collections will automatically update themselves and ingest any devices matching the set criteria. This allows you to easily monitor the overall progress of the deployment as well as if all devices are in the intended update channels or if some configuration drift is happening.
+After devices have finished the installation of/upgrade to Microsoft 365 Apps, they will report back to their Management Point with the next hardware inventory cycle. Based in a schedule, the dynamic collections will then start adding/removing devices based on the set criteria. This allows you to easily monitor the overall progress of the deployment as well as if all devices are in the intended update channels or if some configuration drift is happening.
 
 You can also use the Office 365 Client Management dashboard. This dashboard provides charts for the following information:
 
@@ -136,7 +134,7 @@ A single Microsoft 365 Apps installation package can only include one type of up
 
 ### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Microsoft 365 Apps, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
 
 ## Configure uninstall with Configuration Manager
 
