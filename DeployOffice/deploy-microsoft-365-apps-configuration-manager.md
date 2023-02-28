@@ -39,7 +39,7 @@ The steps in this article are based on the following best practices for Microsof
 
 You can customize these options to match the requirements for your organization, including deploying to additional collections, changing update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
-## Step 1 - Review and update your Configuration Manager infrastructure
+## Step 1: Review and update your Configuration Manager infrastructure
 
 From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your deployment easier and more efficient:
 
@@ -51,7 +51,7 @@ Make sure to complete the following requirements as well:
 - The computer running the Configuration Manager console requires IE 11 or greater and needs internet access via HTTPS port 443. The Office 365 Client Installation Wizard uses a Windows standard web browser API to open https://config.office.com. If an internet proxy is used, the user must be able to access this URL.
 - Add the following sites to the Trusted Sites list if you have Enhanced Security Configuration enabled for IE (which is enabled by default on Windows Server): https://\*.office.com and https://\*.officeconfig.msocdn.com.
 
-## Step 2 - Create collections
+## Step 2: Create collections
 
 The deployment groups that you defined in your deployment plan are represented as collections in Configuration Manager. We recommend to create two sets of collections:
 
@@ -66,7 +66,7 @@ For the ongoing maintenance, create collections as described in [Build dynamic c
 - One collection which will capture all devices running Microsoft 365 Apps. This collection will also be used to target the monthly updates.
 - One collection which captures all devices which are not on your approved update channels. This collection can be used to identify and prevent configuration drift.
 
-## Step 3 - Create and deploy the Microsoft 365 Apps application
+## Step 3: Create and deploy the Microsoft 365 Apps application
 
 The Microsoft 365 Apps installation is represented as an application in Configuration Manager. We do not recommend to use the legacy package mode for such installations.
 
@@ -92,11 +92,11 @@ Create a Microsoft 365 Apps application using the steps below.
 8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/mem/configmgr/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
 
-## Step 4 - Configure updates
+## Step 4: Configure updates
 
 After you create and deploy Microsoft 365 Apps using the Office 365 Installer, Microsoft 365 Apps will be automatically configured to listen to the Configuration Manager for update instructions. Please review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) to start offering devices updates through Configuration Manager. You can use the collection which catches all Microsoft 365 Apps installation you have created in step 2.
 
-## Step 5 - Deploy and monitor progress
+## Step 5: Monitor progress
 
 If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps after the next evaluation cycle. Otherwise you have to manually deploy and distribute the application to devices and distribution points. After the deployment was initiated, monitor the appropiate reports in Configuration Manager to see the progress and any potential.
 
@@ -128,19 +128,19 @@ If you want to deploy the 32-bit version of Office, you can create additional in
 
 ### Use different update channels for Office
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates to their Office applications. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-In this article, we're using Semi-Annual Enterprise Channel (Preview) for your pilot group and Semi-Annual Enterprise Channel for the rest of your organization. You can, however, choose to deploy Current Channel, which provides users with the newest features of Office as soon as they're ready. In that scenario, you'd deploy Current Channel (Preview) to your pilot group.
+In this article, we're using Monthly Enterprise Channel, which provides users with new features on a monthly schedule. You can, however, choose to deploy Current Channel, which provides users with the newest features as soon as they're ready.
 
-A single Office installation package can only include one type of update channel, so each new update channel requires an additional package.
+A single Microsoft 365 Apps installation package can only include one type of update channel, so each new update channel requires an additional package.
 
-### Deploy Visio and Project alongside the core Office apps
+### Deploy Visio and Project alongside the core apps
 
-To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the Office application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
+To deploy Visio and Project with Microsoft 365 Apps, you can include them as part of the application when building it in Configuration Manager. For more information on licensing and system requirements, see [Deployment guide for Visio](deployment-guide-for-visio.md) and [Deployment guide for Project](deployment-guide-for-project.md). Note that when deploying with the Office 365 Installer Wizard in Configuration Manager, the same detection method is used for Office, Visio, Project and other products. We recommend updating the detection method so it's unique for each product. For more information, see [Detection Methods](/mem/configmgr/apps/deploy-use/create-applications#bkmk_dt-detect).
 
-## Remove Office with Configuration Manager
+## Configure uninstall with Configuration Manager
 
-To remove Office, do the following:
+To allow the application to be uninstalled, do the following:
 
 1. Review the description of the **Remove** attribute in the [ODT Reference](office-deployment-tool-configuration-options.md#remove-element). Create a matching **uninstall.xml** file and place it in the previously chosen download location.
 2. Navigate to **Software Library** > **Overview** > **Application Management** > **Applications**, select the just created application, switch to the **Deployment Type** tab and edit the **Office 365 Default Deployment Type**.
