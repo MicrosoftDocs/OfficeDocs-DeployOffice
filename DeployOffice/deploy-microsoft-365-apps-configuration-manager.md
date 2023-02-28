@@ -15,47 +15,37 @@ ms.date: 03/01/2023
 
 # Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)
 
-If your organization already uses Configuration Manager, we recommend upgrading to the current branch and using it to deploy Microsoft 365 Apps. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
-
-- The Office Client Management dashboard, where you can deploy Office and monitor updates
-- Integration of the Office Customization Tool for Click-to-Run, which means administrators always have access to the latest Click-to-Run deployment and management features
-- Fully supported method of removing existing versions of Office from a client during deployment
-- Deployment of application settings for Office, including VBA macro notifications, default file locations, and default file formats
-- Peer cache, which can help with limited network capacity when deploying updates to devices in remote locations
-
-The steps in this article cover these features and shows you how to implement our best practice recommendations.
-
-> [!NOTE]
-> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+Follow the steps in this article to deploy Microsoft 365 Apps to client computers from by using Microsoft Configuration Manager (current branch).
 
 ## Before you begin
 
-If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Office deployment.
+This article is intended for administrators in managed environments. In order to reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend to use Microsoft Intune for deployment. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
-This article assumes you already use Configuration Manager. If you're not familiar with it, see  [Introduction to Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction).
+If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment.
 
-We recommend customers use [Microsoft FastTrack](https://fasttrack.microsoft.com/office) to help with their deployment. FastTrack onboarding and adoption resources and services are available with the purchase of 50 or more seats of Microsoft 365 (or Office 365) enterprise plans or Microsoft 365 business plans, along with paid Government, Kiosk, and Nonprofit SKUs.
+If you want to install Microsoft 365 Apps on a single device or small number of devices, we recommend reviewing [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414EAAF-0478-48BE-9C42-23ADC4716658) or [Use the Office offline installer](https://support.microsoft.com/office/f0a85fe7-118f-41cb-a791-d59cef96ad1c). 
 
 ## Best practices
 
-The steps in this article are based on the following best practices, if you've chosen to deploy Semi-Annual Enterprise Channel:
+The steps in this article are based on the following best practices for Microsoft Configuration Manager environments:
 
-- **Build two Office [applications](/mem/configmgr/apps/understand/introduction-to-application-management) used for deployment**: One application uses Semi-Annual Enterprise Channel for 64-bit and the other uses Semi-Annual Enterprise Channel (Preview) for 64-bit. Each application includes all the core Office apps. If you want to deploy the 32-bit version of Office instead, you can select that option when creating the application. To deploy both 64-bit and 32-bit, you can create additional applications. For more information, see [Define your installation packages](plan-microsoft-365-apps.md#step-4---define-your-installation-packages).
-- **Deploy to two [collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: One collection represents your pilot group, which receives Semi-Annual Enterprise Channel (Preview). The other collection represents the broad group, which receives Semi-Annual Enterprise Channel. For more information, see [Choose your update channels](plan-microsoft-365-apps.md#step-3---choose-your-update-channels).
+- **Build a Microsoft 365 Apps [applications](/mem/configmgr/apps/understand/introduction-to-application-management) using the built-in wizard**: We will use the built-in wizard to create the application and allow Configuration Manager to build the application sources for us.
 
-You can customize these options to match the requirements for your organization, including deploying to more than two collections, changing update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
+- **Leverage dynamic [collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections)**: We will leverage a combination of static and  dynamically updated collections to leverage the automation capabilities of Configuration Manager and improve targeting of e.g. updates.
+
+- **Right-sizing the deployment**: For multi-language scenarios, we will show how the size of the initial application package can be reduced to reduce load on the network.
+
+You can customize these options to match the requirements for your organization, including deploying to additional collections, changing update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
 ## Step 1 - Review and update your Configuration Manager infrastructure
 
-From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your Office deployment easier and more efficient:
+From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your deployment easier and more efficient:
 
 - Use the current branch of Configuration Manager. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
-- Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying updates to client devices in remote locations. For more information, see [Peer Cache for Configuration Manager clients](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache). Office can benefit both during initial deployment as well as later servicing with updates from peer cache.
-- Deploy Office as an application using the Office Client Management dashboard and Office 365 Installer wizard in Configuration Manager. The dashboard and wizard enable all the Configuration Manager features designed for Office, including removal of existing versions of Office and the ability to define application preferences.
+- Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying to client devices in remote locations. For more information, see [Peer Cache for Configuration Manager clients](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache). The Microsoft 365 Apps can benefit both during initial deployment as well as later servicing with updates from peer cache.
 
 Make sure to complete the following requirements as well:
 
-- Enable internet access for your client devices so they can activate Microsoft 365 Apps after installation.
 - The computer running the Configuration Manager console requires IE 11 or greater and needs internet access via HTTPS port 443. The Office 365 Client Installation Wizard uses a Windows standard web browser API to open https://config.office.com. If an internet proxy is used, the user must be able to access this URL.
 - Add the following sites to the Trusted Sites list if you have Enhanced Security Configuration enabled for IE (which is enabled by default on Windows Server): https://\*.office.com and https://\*.officeconfig.msocdn.com.
 
@@ -96,6 +86,14 @@ After you create and deploy Microsoft 365 Apps using the Office 365 Installer, C
 ## Step 4 - Create and deploy the Office application to the broad group
 
 After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, except choose **Semi-Annual Enterprise Channel** for the update channel.
+
+
+Step 5 - Configure Microsoft 365 Apps updates
+
+> [!NOTE]
+> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+
+
 
 ## Step 5 - Review exit criteria
 
