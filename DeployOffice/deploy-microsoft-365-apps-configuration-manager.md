@@ -66,46 +66,45 @@ For the ongoing maintenance, create collections as described in [Build dynamic c
 - One collection which will capture all devices running Microsoft 365 Apps. This collection will also be used to target the monthly updates.
 - One collection which captures all devices which are not on your approved update channels. This collection can be used to identify and prevent configuration drift.
 
-## Step 3 - Create and deploy the Office application to the pilot group
+## Step 3 - Create and deploy the Microsoft 365 Apps application
 
-The Office installation packages are represented as applications in Configuration Manager. For each deployment group that you defined in your deployment plan, you create a unique Office application using the steps below.
+The Microsoft 365 Apps installation is represented as an application in Configuration Manager. We do not recommend to use the legacy package mode for such installations.
+
+Create a Microsoft 365 Apps application using the steps below.
 
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Select **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then select **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
 4. On the **Office Settings** page, select on **Go to the Office Customization Tool**, and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
     - **Software:** Microsoft 365 Apps for enterprise (if you're licensed for it). You can also include Visio and Project if you plan to deploy those products.
-      - **Update channel:** Choose **Semi-Annual Enterprise Channel (Preview)** for the installation package for the pilot group
+      - **Update channel:** Choose **Monthly Enterprise Channel**.
       - **Languages:** Include all the language packs you plan to deploy.
       - **Upgrades:** Choose to automatically remove all previous MSI versions of Office.
-      - **Additional properties:** To silently install Office for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
-      - **Application settings:** Define any Office settings you want to enable, including VBA macro notifications, default file locations, and default file formats.
+      - **Additional properties:** To silently install the application for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+      - **Application settings:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats.
 5. When you complete the configuration, select **Submit**.
 6. On the **Deployment** page, select **Yes** to deploy the application, and then select **Next**.
 
  > [!NOTE]
  > If you choose not to deploy the package in the wizard, you can deploy it later. To find the application, go to **Software Library** > **Application Management** > **Applications**. For details on deploying an application, see [Create and deploy an application](/mem/configmgr/apps/get-started/create-and-deploy-an-application).
 
-7. On the **General** page, choose a collection to deploy to, and then select **Next**. The collection should match the deployment group that receives the Office application you just defined.
+7. On the **General** page, choose a collection to deploy to, and then select **Next**.
 8. Configure the remainder of the wizard pages as you would for a typical application deployment. For details, see [Create and deploy an application](/mem/configmgr/apps/get-started/create-and-deploy-an-application).
 9. Complete the wizard.
-After you create and deploy Microsoft 365 Apps using the Office 365 Installer, Configuration Manager won't manage the Office updates by default. Instead, Office will update automatically. To enable Microsoft 365 Apps to receive updates from Configuration Manager, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
-## Step 4 - Create and deploy the Office application to the broad group
+## Step 4 - Configure updates
 
-After you've finished testing Office with the pilot group, you can repeat the above steps to create and deploy an Office application to the broad group. When defining the application, include the same options you did with the pilot group, except choose **Semi-Annual Enterprise Channel** for the update channel.
+After you create and deploy Microsoft 365 Apps using the Office 365 Installer, Microsoft 365 Apps will be automatically configured to listen to the Configuration Manager for update instructions. Please review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) to start offering devices updates through Configuration Manager. You can use the collection which catches all Microsoft 365 Apps installation you have created in step 2.
 
+## Step 5 - Deploy and monitor progress
 
-Step 5 - Configure Microsoft 365 Apps updates
+If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps after the next evaluation cycle. Otherwise you have to manually deploy and distribute the application to devices and distribution points. After the deployment was initiated, monitor the appropiate reports in Configuration Manager to see the progress and any potential.
 
-> [!NOTE]
-> When deploying with the Office Client Management dashboard and Office 365 Installer wizard, you must manage updates with Configuration Manager as well. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+If you opted to use multiple collections for deployment, don't forget to extend the deployment to these additional collections over time.
 
+After devices have finished the installation of/upgrade to Microsoft 365 Apps, they will report the installed software to their Management Point during the next hardware inventory cycle. The dynamic collections will automatically update themselves and ingest any devices matching the set criteria. This allows you to easily monitor the overall progress of the deployment as well as if all devices are in the intended update channels or if some configuration drift is happening.
 
-
-## Step 5 - Review exit criteria
-
-To make sure you've deployed the correct Office package to your client devices, you can use the Office 365 Client Management dashboard. This dashboard provides charts for the following information:
+You can also use the Office 365 Client Management dashboard. This dashboard provides charts for the following information:
 
 - Number of Office 365 clients
 - Office 365 client versions
@@ -114,14 +113,14 @@ To make sure you've deployed the correct Office package to your client devices, 
 
 To view the Office 365 Client Management dashboard in the Configuration Manager console, go to **Software Library** > **Overview** > **Office 365 Client Management**. At the top of the dashboard, use the **Collection** drop-down setting to filter the dashboard data by members of a specific collection.
 
-In the dashboard, make sure you see the Office versions, languages, and update channels that you deployed for each collection.
+In the dashboard, make sure you see the versions, languages, and update channels that you deployed for each collection.
 
 > [!IMPORTANT]
 > If the data is not displaying, you might need to enable hardware inventory and select the **Office 365 ProPlus Configurations** hardware inventory class. For more information, see [Configure hardware inventory](/mem/configmgr/core/clients/manage/inventory/configure-hardware-inventory).
 
 ## Customize your deployment
 
-The steps in this article cover the standard best practice recommendations from Microsoft, if you've chosen to deploy Semi-Annual Enterprise Channel. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch.
+The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch.
 
 ### Build and deploy multiple packages to multiple deployment groups
 
