@@ -19,7 +19,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in managed environments. In order to reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend to use Microsoft Intune for deployment. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+This article is intended for administrators in managed environments. In order to reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend using Microsoft Intune for deployment. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment.
 
@@ -41,7 +41,7 @@ You can customize these options to match the requirements for your organization,
 
 ## Step 1: Review and update your Configuration Manager infrastructure
 
-From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is similar to other software deployments and doesn't require any special customization. That said, the following options can make your deployment easier and more efficient:
+From an infrastructure standpoint, deploying Microsoft 365 Apps with Configuration Manager is like other software deployments and does not require any special customization. That said, the following options can make your deployment easier and more efficient:
 
 - Use the current branch of Configuration Manager. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
 - Enable peer cache on your client devices. Peer cache is a feature in the current branch of Configuration Manager that can help with limited network capacity when deploying Microsoft 365 Apps in remote locations. For more information, see [Peer Cache for Configuration Manager clients](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache). The Microsoft 365 Apps can benefit both during initial deployment as well as later servicing with updates from peer cache.
@@ -58,7 +58,7 @@ The deployment groups that you defined in your deployment plan are represented a
 - One set for the initial deployment of Microsoft 365 Apps. This can be one or multiple collections.
 - One set for the ongoing maintenance of Microsoft 365 Apps. These collections will be used for assigning updates as well as monitoring installed update channels.
 
-For the initial deployment, create collections aligned to the deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices with your rollout progressing. Or create multiple collections (e.g., four in an 5/15/40/40 split) and add the devices assigned for each deployment wave. Yu can merge these collections together later to reduce management overhead. For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
+For the initial deployment, create collections aligned to the deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices with your rollout progressing. Or create multiple collections (e.g., four in an 5/15/40/40 split) and add the devices assigned for each deployment wave. You can merge these collections together later to reduce management overhead. For more details on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
 
 For the ongoing maintenance, create collections as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](./fieldnotes/build-dynamic-lean-configuration-manager.md), except the collection to "Catch Devices on builds below a certain threshold". This will leave you with three sets of collections:
 
@@ -75,7 +75,7 @@ Create a Microsoft 365 Apps application using the steps below.
 1. In the Configuration Manager console, navigate to **Software Library** > **Overview** > **Office 365 Client Management**.
 2. Select **Office 365 Installer** in the upper-right pane. The Office 365 Client Installation Wizard opens.
 3. On the **Application Settings** page, provide a name and description for the app, enter the download location for the files, and then select **Next**. The location must be specified as &#92;&#92;*server*&#92;*share*.
-4. On the **Office Settings** page, select on **Go to the Office Customization Tool**, and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
+4. On the **Office Settings** page, select **Go to the Office Customization Tool**, and configure the desired settings for your Microsoft 365 Apps installation. We recommend the following options:
     - **Software:** Microsoft 365 Apps for enterprise (if you're licensed for it). You can also include Visio and Project if you plan to deploy those products.
       - **Update channel:** Choose **Monthly Enterprise Channel**.
       - **Languages:** Include all the language packs you plan to deploy.
@@ -98,7 +98,7 @@ After you create and deploy Microsoft 365 Apps using the Office 365 Installer, M
 
 ## Step 5: Monitor progress
 
-If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps after the next evaluation cycle. Otherwise you have to manually deploy and distribute the application to devices and distribution points. After the deployment was initiated, monitor the appropriate  reports in Configuration Manager to see the progress and any potential.
+If you have selected to deploy the application in the wizard, devices should start downloading and installing the Microsoft 365 Apps after the next evaluation cycle. Otherwise, you have to manually deploy and distribute the application to devices and distribution points. After the deployment was initiated, monitor the appropriate  reports in Configuration Manager to see the progress and any potential.
 
 If you opted to use multiple collections for deployment, don't forget to extend the deployment to these additional collections over time.
 
@@ -130,7 +130,7 @@ If you need to deploy the 32-bit version of Microsoft 365 Apps, you can create a
 
 With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
-In this article, we're using Monthly Enterprise Channel, which provides users with new features on a monthly schedule. You can, however, choose to deploy Current Channel, which provides users with the newest features as soon as they're ready.
+In this article, we are using Monthly Enterprise Channel, which provides users with new features on a monthly schedule. You can, however, choose to deploy Current Channel, which provides users with the newest features as soon as they are ready.
 
 A single Microsoft 365 Apps installation package can only include one type of update channel, so each new update channel requires an additional package.
 
