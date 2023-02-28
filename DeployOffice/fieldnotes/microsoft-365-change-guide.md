@@ -262,7 +262,7 @@ After Microsoft 365 Apps are deployed to devices and users, at your defined cade
 
 Although group policy has historically been used to enforce client settings and is still a viable method, we've developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admincenter/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
-Figure 6 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use Cloud Policy directly in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
+Figure 6 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 
 ![Screenshot of the Edit policy configuration webpage.](../images/fieldnotes/edit-policy-configuration.png)
 *Figure 6*

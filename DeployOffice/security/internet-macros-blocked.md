@@ -396,7 +396,7 @@ The following table shows the choices users can make under **Macro Settings** an
 There are several tools available to you to configure and deploy policy settings to users in your organization.
 
 - [Cloud Policy](#cloud-policy)
-- [Microsoft Endpoint Manager admin center](#microsoft-endpoint-manager-admin-center)
+- [Microsoft Intune admin center](#microsoft-intune-admin-center)
 - [Group Policy Management Console](#group-policy-management-console)
 
 ### Cloud Policy
@@ -407,9 +407,9 @@ In Cloud Policy, you create a policy configuration, assign it to a group, and th
 
 For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
-### Microsoft Endpoint Manager admin center
+### Microsoft Intune admin center
 
-In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), you can use either the Settings catalog (preview) or Administrative Templates to configure and deploy policy settings to your users for devices running Windows 10 or later.
+In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), you can use either the Settings catalog (preview) or Administrative Templates to configure and deploy policy settings to your users for devices running Windows 10 or later.
 
 To get started, go to **Devices** > **Configuration profiles** > **Create profile**. For **Platform**, choose **Windows 10 and later** and then choose the profile type.
 
