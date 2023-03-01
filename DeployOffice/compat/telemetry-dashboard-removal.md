@@ -15,7 +15,7 @@ ms.date: 02/24/2023
 # Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208.
+> Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208).
 
 Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise. For more information about what happens to the Office Telemetry Dashboard components, see [What happens when Office Telemetry Dashboard is removed?](#what-happens-when-office-telemetry-dashboard-is-removed)
 

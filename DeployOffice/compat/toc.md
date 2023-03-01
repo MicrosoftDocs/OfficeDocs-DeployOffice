@@ -6,7 +6,7 @@
 ### [Resources guide](compatibility-and-telemetry-in-office.md)
 ### [Plan](plan-telemetry-dashboard-deployment.md)
 ### [Deploy](deploy-telemetry-dashboard.md)
-### [Update components](update-office-telemetry-components-for-office-2016.md)
+### [Removal from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md)
 ### [Monitor Office compatibility and deployments](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md)
 ### [Manage add-ins](manage-add-ins-by-using-telemetry-dashboard-in-office.md)
 ### [Manage the privacy of data collected](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
@@ -14,6 +14,7 @@
 ### [Data that the agent collects](data-that-the-telemetry-agent-collects-in-office.md)
 ### [Document and solution types monitored](document-and-solution-types-monitored-by-telemetry-in-office.md)
 ### [List of worksheets](telemetry-dashboard-worksheet-reference.md)
+### [Update components (from Office 2013)](update-office-telemetry-components-for-office-2016.md)
 
 ## Reference
 ### [Manage compatibility mode](manage-compatibility-mode-for-office.md)
