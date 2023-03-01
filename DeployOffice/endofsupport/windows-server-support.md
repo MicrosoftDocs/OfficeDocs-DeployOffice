@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
-description: "Provides Office admins with information about the implications of Windows Server end of support on Microsoft 365 Apps."
+description: "Provides admins using Microsoft 365 Apps with information about which versions of Windows Server are supported."
 ms.date: 03/01/2023
 ---
 
@@ -24,34 +24,16 @@ If your organization is using a version of Windows Server that doesn't support M
 
 The following sections provide information about support for Microsoft 365 Apps on various versions of Windows Server.
 
-## Windows Server 2008 R2
+## Windows Server 2022
 
-> [!NOTE]
-> Security updates for Microsoft 365 Apps on Windows Server 2008 R2 ended on January 10, 2023.
+Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. That date is when mainstream support ends for Windows Server 2022.
 
-Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, as of January 14, 2020.
+> [!TIP]
+> For the availability of Version 2302 or later in each update channel, see [Supported Versions](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions).
 
-For end of support dates for Windows Server 2008 R2, see the [Windows Server 2008 R2 lifecycle](/lifecycle/products/windows-server-2008-R2) page.
+For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
-## Windows Server 2012
-
-Microsoft 365 Apps isn’t supported on Windows Server 2012, as of January 14, 2020.
-
-For end of support dates for Windows Server 2012, see the [Windows Server 2012 lifecycle](/lifecycle/products/windows-server-2012) page.
-
-## Windows Server 2012 R2
-
-Microsoft 365 Apps isn’t supported on Windows Server 2012 R2, as of January 14, 2020.
-
-For end of support dates for Windows Server 2012 R2, see the [Windows Server 2012 R2 lifecycle](/lifecycle/products/windows-server-2012-r2) page.
-
-## Windows Server 2016
-
-Microsoft 365 Apps is supported on Windows Server 2016 only until October 2025.
-
-For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
-
-For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
+For end of support dates for Windows Server 2022, see the [Windows Server 2022 lifecycle](/lifecycle/products/windows-server-2022) page.
 
 ## Windows Server 2019
 
@@ -61,16 +43,34 @@ For recommendations on client hosting solutions to migrate to before October 202
 
 For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
 
-## Windows Server 2022
+## Windows Server 2016
 
-Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. That date is when mainstream support ends for Windows Server 2022.
+Microsoft 365 Apps is supported on Windows Server 2016 only until October 2025.
 
-> [!TIP]
-> For the availability of Version 2302 or later in each update channel, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions).
+For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
-For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
-For end of support dates for Windows Server 2022, see the [Windows Server 2022 lifecycle](/lifecycle/products/windows-server-2022) page.
+## Windows Server 2012 R2
+
+Microsoft 365 Apps isn’t supported on Windows Server 2012 R2, as of January 14, 2020.
+
+For end of support dates for Windows Server 2012 R2, see the [Windows Server 2012 R2 lifecycle](/lifecycle/products/windows-server-2012-r2) page.
+
+## Windows Server 2012
+
+Microsoft 365 Apps isn’t supported on Windows Server 2012, as of January 14, 2020.
+
+For end of support dates for Windows Server 2012, see the [Windows Server 2012 lifecycle](/lifecycle/products/windows-server-2012) page.
+
+## Windows Server 2008 R2
+
+> [!NOTE]
+> Security updates for Microsoft 365 Apps on Windows Server 2008 R2 ended on January 10, 2023.
+
+Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, as of January 14, 2020.
+
+For end of support dates for Windows Server 2008 R2, see the [Windows Server 2008 R2 lifecycle](/lifecycle/products/windows-server-2008-R2) page.
 
 ## Additional information
 
