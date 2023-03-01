@@ -47,7 +47,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 
 > [!NOTE]
 > - Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.
-> - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. *(For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).)*
+> - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026.
 > - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 > - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
 

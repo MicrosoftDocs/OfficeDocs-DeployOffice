@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows Server end of support on Microsoft 365 Apps."
-ms.date: 01/10/2023
+ms.date: 03/01/2023
 ---
 
 # Windows Server end of support and Microsoft 365 Apps
@@ -20,7 +20,7 @@ ms.date: 01/10/2023
 
 Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. This policy includes using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
-If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to [Windows 365](https://www.microsoft.com/windows-365) or [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/).
+If your organization is using a version of Windows Server that doesn't support Microsoft 365 Apps, we recommend that you move to [Windows 365](https://www.microsoft.com/windows-365) or [Azure Virtual Desktop](https://azure.microsoft.com/products/virtual-desktop/).
 
 The following sections provide information about support for Microsoft 365 Apps on various versions of Windows Server.
 
@@ -65,9 +65,8 @@ For end of support dates for Windows Server 2019, see the [Windows Server 2019 l
 
 Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. That date is when mainstream support ends for Windows Server 2022.
 
-> [!NOTE]
-> - Version 2302 is expected to be available in Current Channel in late February 2023.
-> - In the meantime, if you want to test on Windows Server 2022, we recommend that you use the [most up-to-date version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps available in Current Channel.
+> [!TIP]
+> For the availability of Version 2302 or later in each update channel, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions).
 
 For recommendations on client hosting solutions you can use instead of Windows Server 2022, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
@@ -76,5 +75,5 @@ For end of support dates for Windows Server 2022, see the [Windows Server 2022 l
 ## Additional information
 
 - This information also applies to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
-- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
+- For end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
