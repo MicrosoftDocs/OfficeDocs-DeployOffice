@@ -181,13 +181,13 @@ Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channe
 
 Microsoft provides three main methods to modify Microsoft 365 Apps update channels for devices in your organization:
 
-- [Change the update channel with Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy)
+- [Change the update channel with Group Policy](../updates/change-update-channels.md#change-the-update-channel-with-group-policy)
 
-- [Change the update channel with the Office Deployment Tool (ODT)](../change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt)
+- [Change the update channel with the Office Deployment Tool (ODT)](../updates/change-update-channels.md#change-the-update-channel-with-the-office-deployment-tool-odt)
 
-- [Change the update channel with Configuration Manager](../change-update-channels.md#change-the-update-channel-with-configuration-manager)
+- [Change the update channel with Configuration Manager](../updates/change-update-channels.md#change-the-update-channel-with-configuration-manager)
 
-When you switch channels, there are certain considerations - such as loss of features when switching users from Current Channel to Semi-Annual Enterprise Channel. For a complete list of considerations, see [Considerations when changing channels](../change-update-channels.md#considerations-when-changing-channels).
+When you switch channels, there are certain considerations - such as loss of features when switching users from Current Channel to Semi-Annual Enterprise Channel. For a complete list of considerations, see [Considerations when changing channels](../updates/change-update-channels.md#considerations-when-changing-channels).
 
 #### Client release controls
 
@@ -280,7 +280,7 @@ Earlier, we shared data that supports the user value of being on Current Channel
 
 - **Test tenant:** To evaluate and test incoming features, customers use a test tenant that mimics production. For clients, we recommend that the test tenant be subscribed to Current Channel or Monthly Enterprise Channel. For services, we recommend that the test tenant be subscribed to the Targeted Release option. Test tenants are used for integration testing and product evaluation separate from production. Traditionally, IT owns tests tenants and operates the test accounts within. This is an IT-centric model that may cause bottlenecks and incomplete evaluations to occur. We recommend inclusion of users from various departments and roles in your test tenant. IT departments aren't experts on every product and aren't always best suited to perform certain product evaluations. For Microsoft 365 services, Targeted Release and Standard Release options are available.
 
-   - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
+   - **Microsoft 365 Apps**: For information about the benefits and how to enroll or change update channels, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md). For a description of benefits, see the [Client release channels](#client-release-channels) section of this article.
 
    - **Microsoft 365 services:** For information about the benefits and how to enroll in to these update channels, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365). For an outline of the channels, see the [Service release options and controls](#service-release-options-and-controls) section earlier in this article.
 

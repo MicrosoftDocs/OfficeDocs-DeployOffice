@@ -66,7 +66,7 @@ For information on deploying Microsoft 365 Apps with Microsoft Intune, see [Add 
 
 ### Set an update policy
 
-You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/mem/intune/configuration/administrative-templates-windows).
+You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../updates/change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/mem/intune/configuration/administrative-templates-windows).
 These policies include:
 
 - Update Channel: specify the update channel, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel.

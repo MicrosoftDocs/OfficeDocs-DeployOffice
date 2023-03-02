@@ -919,6 +919,11 @@
       "source_path": "DeployOffice/manage-microsoft-365-apps-updates-configuration-manager.md",
       "redirect_url": "/deployoffice/updates/manage-microsoft-365-apps-updates-configuration-manager",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/change-update-channels.md",
+      "redirect_url": "/deployoffice/updates/change-update-channels",
+      "redirect_document_id": true
     }
   ]
 }
