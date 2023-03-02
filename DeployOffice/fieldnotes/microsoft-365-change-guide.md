@@ -209,7 +209,7 @@ By attaching Intune to your Configuration Manager deployment (referred to as co-
 - Deploy client updates faster to make your organization secure and compliant quickly.
 - Take immediate actions on your devices.
 
-[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
+[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md) is your source for understanding:
 
 - The prerequisites that are required when using Microsoft Configuration Manager to update Microsoft 365 Apps.
 

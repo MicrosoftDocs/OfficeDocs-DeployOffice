@@ -22,7 +22,7 @@ For a list when updates were released for Microsoft 365 Apps, see [Update histor
 To determine which version of Microsoft 365 Apps is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **About** section. For example, in Excel, under the **About Excel** section.
 
 > [!TIP]
-> We usually recommend that you get updates automatically from the Office CDN, but you can use Windows Server Update Services (WSUS) in conjunction with Microsoft Configuration Manager to update Microsoft 365 Apps. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md).
+> We usually recommend that you get updates automatically from the Office CDN, but you can use Windows Server Update Services (WSUS) in conjunction with Microsoft Configuration Manager to update Microsoft 365 Apps. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
     
 ## Update process for Microsoft 365 Apps
