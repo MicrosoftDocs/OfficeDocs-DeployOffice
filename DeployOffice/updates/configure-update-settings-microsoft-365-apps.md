@@ -41,7 +41,7 @@ In most cases, you'll use either the Office Deployment Tool or Group Policy, not
 
 Users can install Microsoft 365 Apps themselves from the Office 365 portal, but using the Office Deployment Tool to deploy Microsoft 365 Apps to your users gives you more control over the installation. For example, you can control how Microsoft 365 Apps is updated.
   
-The settings that the Office Deployment Tool uses to install and update Microsoft 365 Apps are contained in a configuration.xml file. This file is a text file that can be edited in Notepad. There is a [list of settings](office-deployment-tool-configuration-options.md) that you can specify, including settings for configuring updates.
+The settings that the Office Deployment Tool uses to install and update Microsoft 365 Apps are contained in a configuration.xml file. This file is a text file that can be edited in Notepad. There is a [list of settings](../office-deployment-tool-configuration-options.md) that you can specify, including settings for configuring updates.
   
 For example, if you want Microsoft 365 Apps to get updates automatically from a network share called  \\\server\updates, you'd include the following line in your configuration.xml file:
   
@@ -59,7 +59,7 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 After you copy the Administrative Template files to AD DS, you'll find the update policy settings under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting.
   
-![Group Policy settings updates.](images/86a9781c-0e91-4e5d-b334-7a0d07d85466.jpg)
+![Group Policy settings updates.](../images/86a9781c-0e91-4e5d-b334-7a0d07d85466.jpg)
   
 If you decide to make a change later, update the Group Policy setting by using the Group Policy Management Console. The updated policy settings are automatically applied to Microsoft 365 Apps, through the normal Group Policy update process.
   
