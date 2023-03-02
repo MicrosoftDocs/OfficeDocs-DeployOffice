@@ -40,7 +40,7 @@ With Current Channel, you’ll be getting the accessibility features as soon as 
 
 > [!NOTE]
 > - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
->- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+>- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
 
 ## Check that connected experiences for accessibility are turned on for your users
 

@@ -15,7 +15,7 @@ ms.date: 03/01/2023
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
 
-After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
 
 > [!TIP]
 > If you prefer watching over reading, we have a [video on how to switch update channels](https://youtu.be/rIpoloAZnSg) ready for you.
@@ -42,7 +42,7 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Current Channel.  For more information on channel names, see [Channel attribute in the Configuration Options article](office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
+3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Current Channel.  For more information on channel names, see [Channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 
 4. Deploy the configuration file using your standard processes.
 
@@ -92,12 +92,12 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 ## Considerations when changing channels
 
 > [!Tip]
-> When choosing how you want to deliver updates to your organization, we highly recommend using Monthly Enterprise Channel with a servicing profile. By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. For more information, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../DeployOffice/admincenter/servicing-profile.md).
+> When choosing how you want to deliver updates to your organization, we highly recommend using Monthly Enterprise Channel with a servicing profile. By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. For more information, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md).
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression isn't applied. Because of this, the update will be larger than normal. The update, however, won't be as large as a full installation of Microsoft 365 Apps.
 - Devices must be able to fetch an update from the newly assigned channel to complete the transition.
    - If your devices are receiving updates from the internet, you're all set, and no other changes are required.
-   - If you're using Configuration Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend using [dynamic collections](fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it's safe to assign updates from multiple channels to a device.
+   - If you're using Configuration Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend using [dynamic collections](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it's safe to assign updates from multiple channels to a device.
    - If you're using file shares, you must download and host the matching update in a new location/folder. Use the **Update Path** group policy setting or the Office Deployment Tool to point devices at the new location. 
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.

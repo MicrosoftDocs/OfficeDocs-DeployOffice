@@ -244,7 +244,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
 
 ## October 2019
 
