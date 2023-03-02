@@ -15,14 +15,14 @@ ms.date: 03/01/2023
 
 # Overview of the update process for Microsoft 365 Apps
 
-Unlike previous versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released, Microsoft creates an updated version of Microsoft 365 Apps and puts it on Office Content Delivery Network (CDN) on the internet. This updated version contains all the new updates, in addition to all updates from previous months. The update schedule depends on which [update channel](overview-update-channels.md) that Microsoft 365 Apps is configured to use.
+Unlike previous versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released, Microsoft creates an updated version of Microsoft 365 Apps and puts it on Office Content Delivery Network (CDN) on the internet. This updated version contains all the new updates, in addition to all updates from previous months. The update schedule depends on which [update channel](../overview-update-channels.md) that Microsoft 365 Apps is configured to use.
 
 For a list when updates were released for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
 To determine which version of Microsoft 365 Apps is installed on a user's computer, go to **File > Account** in any Office program. The version is listed under the **About** section. For example, in Excel, under the **About Excel** section.
 
 > [!TIP]
-> We usually recommend that you get updates automatically from the Office CDN, but you can use Windows Server Update Services (WSUS) in conjunction with Microsoft Configuration Manager to update Microsoft 365 Apps. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+> We usually recommend that you get updates automatically from the Office CDN, but you can use Windows Server Update Services (WSUS) in conjunction with Microsoft Configuration Manager to update Microsoft 365 Apps. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md).
 
     
 ## Update process for Microsoft 365 Apps
