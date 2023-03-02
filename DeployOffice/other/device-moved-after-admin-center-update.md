@@ -54,9 +54,9 @@ For Configuration Manager to manage updates for Microsoft 365 Apps, the Office C
 
 There are several ways to enable the Office COM object, such as using client policy in Configuration Manager, setting it up through Group Policy, or using the Office Deployment Tool. If you use multiple methods, the configuration set in Group Policy will take precedence.
 
-- [Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-1-use-client-policy-in-configuration-manager-to-enable-updates-from-configuration-manager)
-- [Method 2: Use Group Policy to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-2-use-group-policy-to-enable-updates-from-configuration-manager)
-- [Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-3-use-the-office-deployment-tool-to-enable-updates-from-configuration-manager)
+- [Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-1-use-client-policy-in-configuration-manager-to-enable-updates-from-configuration-manager)
+- [Method 2: Use Group Policy to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-2-use-group-policy-to-enable-updates-from-configuration-manager)
+- [Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-3-use-the-office-deployment-tool-to-enable-updates-from-configuration-manager)
 
 ### Deploy Microsoft 365 Apps with Microsoft Intune
 
