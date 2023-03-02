@@ -23,7 +23,7 @@
 ### [Overview of update channels](overview-update-channels.md)
 ### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ### [Manage updates with Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
-### [Change the update channel](change-update-channels.md)
+### [Change the update channel](updates/change-update-channels.md)
 ### [Delivery Optimization](delivery-optimization.md)
 ### [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
 ### [Release notes](/officeupdates/release-notes-microsoft365-apps)
