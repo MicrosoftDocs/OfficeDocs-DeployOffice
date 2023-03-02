@@ -538,22 +538,22 @@
     {
       "source_path": "DeployOffice/choose-how-to-manage-updates-to-office-365-proplus.md",
       "redirect_url": "/deployoffice/choose-how-manage-updates-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/configure-update-settings-for-office-365-proplus.md",
       "redirect_url": "/deployoffice/configure-update-settings-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/end-user-update-notifications-for-office-365-proplus.md",
       "redirect_url": "/deployoffice/end-user-update-notifications-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/overview-of-the-update-process-for-office-365-proplus.md",
       "redirect_url": "/deployoffice/overview-update-process-microsoft-365-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/licensing-and-activation-data-sent-to-office-365-by-office-365-proplus.md",
@@ -894,6 +894,26 @@
       "source_path": "DeployOffice/ltsc2021/update-from-preview.md",
       "redirect_url": "/deployoffice/vlactivation/plan-volume-activation-of-office",
       "redirect_document_id": false
-    } 
+    },
+    {
+      "source_path": "DeployOffice/choose-how-manage-updates-microsoft-365-apps.md",
+      "redirect_url": "/deployoffice/updates/choose-how-manage-updates-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/configure-update-settings-microsoft-365-apps.md",
+      "redirect_url": "/deployoffice/updates/configure-update-settings-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/end-user-update-notifications-microsoft-365-apps.md",
+      "redirect_url": "/deployoffice/updates/end-user-update-notifications-microsoft-365-apps",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/overview-update-process-microsoft-365-apps.md",
+      "redirect_url": "/deployoffice/updates/overview-update-process-microsoft-365-apps",
+      "redirect_document_id": true
+    }
   ]
 }

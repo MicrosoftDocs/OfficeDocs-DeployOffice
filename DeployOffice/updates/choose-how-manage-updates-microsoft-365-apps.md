@@ -45,7 +45,7 @@ This option might be a good choice for your organization if you have users who t
 ## Using Microsoft Configuration Manager
 <a name="MECM"> </a>
 
-Microsoft Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Refer to [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md) for an in-depth description.
+Microsoft Configuration Manager has the ability to manage updates to Microsoft 365 Apps by using the Software Update management workflow. You can use Configuration Manager to update Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps. This gives you full control over the update deployment process, e.g. when which devices will receive a specific update. Refer to [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md) for an in-depth description.
 
 ## Apply updates automatically from an on-premises location to Microsoft 365 Apps
 <a name="OnPremises"> </a>
@@ -54,7 +54,7 @@ You can configure Microsoft 365 Apps to get updates automatically from a locatio
   
 This is a good option if you want more control over the version of Microsoft 365 Apps that users have installed. For example, even if the June version of Microsoft 365 Apps is available, you might want your users to continue using the May version. You might want to do this because you want to test to make sure that your line-of-business applications work with the June version.
   
-You'll have to use the Office Deployment Tool to [download updated versions of Microsoft 365 Apps from the internet](overview-office-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
+You'll have to use the Office Deployment Tool to [download updated versions of Microsoft 365 Apps from the internet](../overview-office-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
   
 ## Apply updates by installing an updated version of Microsoft 365 Apps
 <a name="Install"> </a>
@@ -67,11 +67,11 @@ If you decide to use this option, you'll disable automatic updates. You can [con
   
 ## Related articles
   
-[Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
+[Overview of the Office Deployment Tool](../overview-office-deployment-tool.md)
   
 [Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
 
-[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
+[Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md)
   
 [Configure update settings for Microsoft 365 Apps](configure-update-settings-microsoft-365-apps.md)
   
