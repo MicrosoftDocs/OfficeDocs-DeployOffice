@@ -2,6 +2,18 @@
 
 
 
+## Week of February 27, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/28/2023 | [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
+| 2/28/2023 | [View software update status for Microsoft 365 Apps installations](/DeployOffice/updates/software-update-status) | modified |
+| 3/1/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
+| 3/2/2023 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/updates/end-user-update-notifications-microsoft-365-apps) | renamed |
+| 3/2/2023 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
+
+
 ## Week of February 20, 2023
 
 
@@ -64,17 +76,3 @@
 | 2/3/2023 | [File format reference for Word, Excel, and PowerPoint](/DeployOffice/compat/office-file-format-reference) | modified |
 | 2/3/2023 | [Plan a deployment of Office Telemetry Dashboard](/DeployOffice/compat/plan-telemetry-dashboard-deployment) | modified |
 | 2/3/2023 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
-
-
-## Week of January 23, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/24/2023 | [Updates to the Microsoft 365 admin center may cause your devices to change update channels](/DeployOffice/other/device-moved-after-admin-center-update) | added |
-| 1/24/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 1/24/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 1/26/2023 | [Deploy Microsoft 365 Apps from a local source](/DeployOffice/deploy-microsoft-365-apps-local-source) | modified |
-| 1/26/2023 | [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
-| 1/26/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
-| 1/27/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
