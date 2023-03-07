@@ -164,7 +164,7 @@ It's important to have a staging or test tenant as part of your change strategy.
 ### Client release channels and controls
 #### Client release channels
 
-Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+Microsoft offers different update channels to which customers can subscribe for updates to our click-to-run clients, Microsoft 365 Apps. These channels determine how frequently changes are released to their entire tenant or subscribed subdivisions their tenant, depending on customer configuration. Channels are a powerful mechanism through which IT departments and power users can evaluate and test upcoming changes without hindering their release to the greater user population. For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 Table 2 provides a comparison of the Microsoft 365 Apps channels, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
 
@@ -391,7 +391,7 @@ To take advantage of the Microsoft 365 admin mobile app features, [download the 
 
 In addition to changing our services, we also update Microsoft 365 clients. Both sets of changes follow our Change Management Plan and are communicated in the Message center. For documentation about client changes, see:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
   - These update channels mirror those described earlier in the Change Management Plan.
 
 - [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)

@@ -20,7 +20,7 @@
 ### [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 
 ## Manage
-### [Overview of update channels](overview-update-channels.md)
+### [Overview of update channels](updates/overview-update-channels.md)
 ### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ### [Manage updates with Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 ### [Change the update channel](updates/change-update-channels.md)

@@ -55,7 +55,7 @@ These releases are cumulative. The most current release contains all the feature
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## How will users be affected by this change?
