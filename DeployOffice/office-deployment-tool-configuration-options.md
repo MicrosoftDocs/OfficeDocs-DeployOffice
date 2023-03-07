@@ -132,7 +132,7 @@ Defines which channel to use for installing Office. If Office isn't installed on
 
 This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](updates/change-update-channels.md).
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).  
 
 Allowed values: 
 
@@ -693,7 +693,7 @@ Optional. The default is **Current**.
 
 Defines which channel to use for updating Office after it's installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 

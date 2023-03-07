@@ -38,7 +38,7 @@ The following table compares the channels and provides scenarios for business us
 |*Support duration* |**Not supported** <br/><br/>Should be used only in test environments. |Supported until the next version is released. <br/><br/>For example, Version 2204 is supported until Version 2205 is released.|
 
 > [!TIP]
-> For information about other channels that are available for Windows devices, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+> For information about other channels that are available for Windows devices, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 ## Related articles
 

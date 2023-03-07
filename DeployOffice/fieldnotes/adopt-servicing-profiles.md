@@ -46,7 +46,7 @@ There are multiple benefits of using a servicing profile over common update mana
 
 Instead of enabling a servicing profile for all devices at the same time, some admins want to adopt them step-by-step and monitor if everything runs smoothly. There are two common ways to adopt the feature in a staged manner:
 
-- **By update channel:** With this approach, the servicing profile will target a small selection of update channels first. It will ignore all devices on other channels. This allows you to migrate one channel at a time over to both the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) and be managed through a servicing profile. Over time, you extend the selection of channels until all channels are covered and all devices are moved.
+- **By update channel:** With this approach, the servicing profile will target a small selection of update channels first. It will ignore all devices on other channels. This allows you to migrate one channel at a time over to both the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and be managed through a servicing profile. Over time, you extend the selection of channels until all channels are covered and all devices are moved.
 
 - **By Azure AD group:** The alternative approach is to use Azure AD groups to restrict the servicing profile to apply only to specified devices or users. This allows you to add devices to the scope on a more granular level.
 
@@ -74,7 +74,7 @@ After a few days, the bulk of targeted devices should have updated to the latest
 
 ## How to set up the servicing profile with the “by Azure AD group” approach
 
-If you want to adopt a servicing profile in more granular steps, you can do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
+If you want to adopt a servicing profile in more granular steps, you can do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
 
 1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. You can add three types of items to a group, and mixing them is possible:
     - Devices: Those must be Azure AD joined or hybrid Azure AD joined and known to the inventory in the Microsoft 365 Apps admin center.

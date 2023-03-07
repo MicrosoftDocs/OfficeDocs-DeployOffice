@@ -95,4 +95,4 @@ The following information applies to the **Microsoft 365 Apps** tab on the **Sof
 ## Related articles
 
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)

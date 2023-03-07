@@ -17,7 +17,7 @@
     },
     {
       "source_path": "DeployOffice/overview-of-the-upcoming-changes-to-office-365-proplus-update-management.md",
-      "redirect_url": "/DeployOffice/overview-update-channels",
+      "redirect_url": "/DeployOffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -277,12 +277,12 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-updates-in-office-365-proplus.md",
-      "redirect_url": "/DeployOffice/overview-update-channels",
+      "redirect_url": "/DeployOfficeupdates/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-update-channels.md",
-      "redirect_url": "/DeployOffice/overview-update-channels",
+      "redirect_url": "/DeployOffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-channel-management.md",
-      "redirect_url": "/DeployOffice/overview-update-channels",
+      "redirect_url": "/DeployOffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/best-practices/best-practices-managing-channels.md",
-      "redirect_url": "/DeployOffice/overview-update-channels",
+      "redirect_url": "/DeployOffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -532,8 +532,8 @@
     },
     {
       "source_path": "DeployOffice/overview-of-update-channels-for-office-365-proplus.md",
-      "redirect_url": "/deployoffice/overview-update-channels",
-      "redirect_document_id": true
+      "redirect_url": "/deployoffice/updates/overview-update-channels",
+      "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/choose-how-to-manage-updates-to-office-365-proplus.md",
@@ -627,7 +627,7 @@
     },
     {
       "source_path": "DeployOffice/frp/plan-updates.md",
-      "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_url": "/deployoffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -787,7 +787,7 @@
     },
     {
       "source_path": "DeployOffice/other/devices-updating-servicing-profile.md",
-      "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_url": "/deployoffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -822,7 +822,7 @@
     },
     {
       "source_path": "Deployoffice/update-channels-changes.md",
-      "redirect_url": "/deployoffice/overview-update-channels",
+      "redirect_url": "/deployoffice/updates/overview-update-channels",
       "redirect_document_id": false
     },
     {
@@ -923,6 +923,11 @@
     {
       "source_path": "Deployoffice/change-update-channels.md",
       "redirect_url": "/deployoffice/updates/change-update-channels",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/overview-update-channels.md",
+      "redirect_url": "/deployoffice/updates/overview-update-channels",
       "redirect_document_id": true
     }
   ]
