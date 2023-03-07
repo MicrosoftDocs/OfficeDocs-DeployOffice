@@ -39,7 +39,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
-The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](overview-update-channels.md) you're using. The following table shows the schedule.
+The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](updates/overview-update-channels.md) you're using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|

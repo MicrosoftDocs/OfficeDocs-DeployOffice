@@ -128,7 +128,7 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 - [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426)
 - [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases)
 

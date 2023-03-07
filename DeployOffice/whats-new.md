@@ -225,7 +225,7 @@ A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise
 
 You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
 
 ## April 2020
 

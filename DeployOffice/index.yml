@@ -37,7 +37,7 @@ additionalContent:
         # Card
         - title: Manage updates
           summary: Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.
-          url: overview-update-channels.md
+          url: updates/overview-update-channels.md
         # Card
         - title: Office for Mac
           summary: Find guidance about deploying Office to Macs in your organization.

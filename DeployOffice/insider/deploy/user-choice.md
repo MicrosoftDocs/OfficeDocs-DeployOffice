@@ -94,4 +94,4 @@ There are the two basic differences with that policy:
 ## Related articles
 
 - [Compare Microsoft 365 Insider channels](../compare-channels.md)
-- [Overview of update channels for Microsoft 365 Apps](../../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../../updates/overview-update-channels.md)

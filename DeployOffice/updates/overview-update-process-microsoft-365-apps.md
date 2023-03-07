@@ -15,7 +15,7 @@ ms.date: 03/01/2023
 
 # Overview of the update process for Microsoft 365 Apps
 
-Unlike previous versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released, Microsoft creates an updated version of Microsoft 365 Apps and puts it on Office Content Delivery Network (CDN) on the internet. This updated version contains all the new updates, in addition to all updates from previous months. The update schedule depends on which [update channel](../overview-update-channels.md) that Microsoft 365 Apps is configured to use.
+Unlike previous versions of Office, individual security updates and other updates for Microsoft 365 Apps aren't available on Windows Update. Instead, every time that updates are released, Microsoft creates an updated version of Microsoft 365 Apps and puts it on Office Content Delivery Network (CDN) on the internet. This updated version contains all the new updates, in addition to all updates from previous months. The update schedule depends on which [update channel](overview-update-channels.md) that Microsoft 365 Apps is configured to use.
 
 For a list when updates were released for Microsoft 365 Apps, see [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
