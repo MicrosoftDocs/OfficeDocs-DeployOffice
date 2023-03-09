@@ -14,7 +14,7 @@
 ### [Plan your enterprise deployment](plan-microsoft-365-apps.md)
 ### [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
 
-## Upgrade
+## Deploy
 ### [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
 ### [Deploy from a local source](deploy-microsoft-365-apps-local-source.md)
 ### [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
