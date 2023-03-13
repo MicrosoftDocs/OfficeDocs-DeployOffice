@@ -50,10 +50,12 @@
 
 ### Connected experiences
 #### [Connected experiences](privacy/connected-experiences.md?toc=/deployoffice/toc.json)
+#### [Connected experiences and your content](privacy/connected-experiences-content.md?toc=/deployoffice/toc.json)
 #### [Optional connected experiences](privacy/optional-connected-experiences.md?toc=/deployoffice/toc.json)
 #### [Required service data](privacy/required-service-data.md?toc=/deployoffice/toc.json)
 
 ### [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
+### [In-product recommendations in Office](privacy/in-product-recommendations.md?toc=/deployoffice/toc.json)
 
 ## Best practices from the field
 ### [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
