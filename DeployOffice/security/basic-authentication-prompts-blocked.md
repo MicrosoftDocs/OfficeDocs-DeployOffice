@@ -56,7 +56,7 @@ The following table shows the version, for each update channel, in which the war
 |-------------------------------------------|-------------------------------------------------|----------------------------------------------------|
 | Current Channel (Preview)                | Version 2212<br/> (released December 8, 2022)  | *Version 2304* <br/> *(first half of April 2023)* |
 | Current Channel                          | Version 2301 <br/> (released January 26, 2023) | *Version 2305* <br/> *(second half of May 2023)*  |
-| Monthly Enterprise Channel               | *Version 2301* <br/> *(March 14, 2023)*        | *Version 2305* <br/> *(July 11, 2023)*            |
+| Monthly Enterprise Channel               | Version 2301 <br/> (March 14, 2023)            | *Version 2305* <br/> *(July 11, 2023)*            |
 | Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)*    | *Version 2402* <br/> *(March 12, 2024)*           |
 | Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*       | *Version 2402* <br/> *(July 9, 2024)*             |
 
