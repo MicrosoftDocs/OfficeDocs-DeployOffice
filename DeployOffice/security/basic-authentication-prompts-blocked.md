@@ -9,13 +9,13 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 01/31/2023
+ms.date: 03/14/2023
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
 
 > [!NOTE]
-> The information in this article is related to Message center post MC454810, which was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022 and updated on November 16, 2022.
+> The information in this article is related to Message center post MC454810, which was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022 and updated on March 3, 2023.
 
 Apps such as Word and Excel allow users to use Basic authentication to connect to resources on web servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
@@ -56,7 +56,7 @@ The following table shows the version, for each update channel, in which the war
 |-------------------------------------------|-------------------------------------------------|----------------------------------------------------|
 | Current Channel (Preview)                | Version 2212<br/> (released December 8, 2022)  | *Version 2304* <br/> *(first half of April 2023)* |
 | Current Channel                          | Version 2301 <br/> (released January 26, 2023) | *Version 2305* <br/> *(second half of May 2023)*  |
-| Monthly Enterprise Channel               | *Version 2301* <br/> *(March 14, 2023)*        | *Version 2305* <br/> *(July 11, 2023)*            |
+| Monthly Enterprise Channel               | Version 2301 <br/> (released March 14, 2023)   | *Version 2305* <br/> *(July 11, 2023)*            |
 | Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)*    | *Version 2402* <br/> *(March 12, 2024)*           |
 | Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*       | *Version 2402* <br/> *(July 9, 2024)*             |
 
