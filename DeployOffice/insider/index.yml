@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: DHB-MSFT
   ms.author: danbrown
-  ms.date: 01/18/2023
+  ms.date: 03/15/2023
   ms.localizationpriority: medium
 
 highlightedContent:
@@ -66,6 +66,8 @@ productDirectory:
     - title: Helpful resources
       imageSrc: /office/media/icons/help.svg
       links:
+        - url: https://www.linkedin.com/showcase/microsoft-365-insider
+          text: LinkedIn
         - url: https://twitter.com/msft365insider
           text: Twitter
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
