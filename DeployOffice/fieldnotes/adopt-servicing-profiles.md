@@ -35,7 +35,7 @@ There are multiple benefits of using a servicing profile over common update mana
 
 - **Increased reach:** Common update management tools are often limited by the boundary of a directory service. For example, devices must be joined into Active Directory, to be managed by a given solution. With a servicing profile, you're breaking this barrier and can manage all Microsoft 365 Apps instances that were activated by your tenant and have an Azure AD user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Azure Active Directory, registered into Azure Active Directory, or remains in workgroup mode.
 
-- **Leveraging the cloud:** As a true cloud-based service, a servicing profile isn't dependent on any on-premises infrastructure. Whereever the device is, if it can connect to the cloud, it will be serviced.
+- **Leveraging the cloud:** As a true cloud-based service, a servicing profile isn't dependent on any on-premises infrastructure. Wherever the device is, if it can connect to the cloud, it will be serviced.
 
 - **Easy onboarding:** If a device falls into scope of a servicing profile (we'll deep-dive into this later in the article), it will automatically override any other Office update management mechanism. No need to detach the Microsoft 365 Apps from other management solutions first. If a device falls out-of-scope for the servicing profile, the previous update management control is restored. The servicing profile will only change the way Office updates are handled, everything else (for example, how updates for Windows or Edge are managed) remains the same. In summary, a device can be managed by two solutions at the same time without any conflicts.
 
@@ -89,7 +89,7 @@ If you want to adopt a servicing profile in more granular steps, you can do so b
 
 After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. You can review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, you can see more details on the **Issues** tab.
 
-After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, you could go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering to remove the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
+After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, you could go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
 
 ## How do the selectors work
 
