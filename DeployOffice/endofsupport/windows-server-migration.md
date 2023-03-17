@@ -18,7 +18,7 @@ ms.date: 01/06/2023
 > [!NOTE]
 > The information in this article is for organizations who are hosting Microsoft 365 Apps on Windows Server 2016, 2019, or 2022.
 
-Microsoft 365 Apps is supported only on the following versions of Windows Server until the dates specified:
+Microsoft 365 Apps is supported on the following versions of Windows Server until the dates specified:
 
 - Windows Server 2016: October 2025
 - Windows Server 2019: October 2025
