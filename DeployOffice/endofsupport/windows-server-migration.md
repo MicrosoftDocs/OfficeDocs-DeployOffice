@@ -25,11 +25,12 @@ Microsoft 365 Apps is supported on Windows Server only until the following dates
 - Windows Server 2022: October 2026
 
 > [!NOTE]
-> Only Version 2302 or later of Microsoft 365 Apps is supported on Windows Server 2022.
+> - Only Version 2302 or later of Microsoft 365 Apps is supported on Windows Server 2022.
+> - For more information on support dates, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
 
 If you've deployed Microsoft 365 Apps to these versions of Windows Server, you'll need to migrate to another hosting solution before that support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
 
-There are migration paths available that may better meet your technical and business requirements. To maintain support for Microsoft 365 Apps, we recommend moving from Windows Server to one of the following client hosting solutions:
+There are migration paths available that may better meet your technical and business requirements. We recommend you evaluate migrating to one of the following client hosting solutions:
 
 - [Windows 365](#windows-365)
 - [Azure Virtual Desktop](#azure-virtual-desktop)
