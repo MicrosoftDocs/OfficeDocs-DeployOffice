@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance to Office admins on moving from Microsoft 365 Apps on Windows Server to either Windows 365 or Azure Virtual Desktop."
-ms.date: 01/06/2023
+ms.date: 03/17/2023
 ---
 
 # Microsoft 365 Apps migration from Windows Server
@@ -18,18 +18,17 @@ ms.date: 01/06/2023
 > [!NOTE]
 > The information in this article is for organizations who are hosting Microsoft 365 Apps on Windows Server 2016, 2019, or 2022.
 
-Microsoft 365 Apps is supported on Windows Server only until the following dates:
+Microsoft 365 Apps is supported on the following versions of Windows Server until the dates specified:
 
 - Windows Server 2016: October 2025
 - Windows Server 2019: October 2025
 - Windows Server 2022: October 2026
 
 > [!NOTE]
-> Only Version 2302 or later of Microsoft 365 Apps is supported on Windows Server 2022.
+> - Only Version 2302 or later of Microsoft 365 Apps is supported on Windows Server 2022.
+> - For more information on support dates, see [Windows Server end of support and Microsoft 365 Apps](windows-server-support.md).
 
-If you've deployed Microsoft 365 Apps to these versions of Windows Server, you'll need to migrate to another hosting solution before that support ends. This migration is required to stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern).
-
-There are migration paths available that may better meet your technical and business requirements. To maintain support for Microsoft 365 Apps, we recommend moving from Windows Server to one of the following client hosting solutions:
+To stay current and maintain support as described in the [Modern Lifecycle Policy](/lifecycle/policies/modern), there are migration paths available that may better meet your technical and business requirements. We recommend you evaluate migrating to one of the following client hosting solutions:
 
 - [Windows 365](#windows-365)
 - [Azure Virtual Desktop](#azure-virtual-desktop)
@@ -70,7 +69,7 @@ Azure Virtual Desktop enables you to do the following:
 
 - Reduce costs and operating system overhead with the new Windows 11 and Windows 10 Enterprise [multi-session capability](/azure/virtual-desktop/windows-10-multisession-faq).
 
-- Maintain full control over management and deployment, plus options for [Citrix](https://azure.microsoft.com/services/virtual-desktop/citrix-virtual-apps-desktops-for-azure/) and [VMware](https://azure.microsoft.com/services/virtual-desktop/vmware-horizon-cloud/) integration.
+- Maintain full control over management and deployment, plus options for [Citrix](https://azuremarketplace.microsoft.com/marketplace/apps/Citrix.XenAppEssentials) and [VMware](https://azuremarketplace.microsoft.com/marketplace/apps/vmware-inc.hc-azure) integration.
 
 - Use standard gallery images or create custom images.
 
@@ -84,7 +83,7 @@ For more information, see the following resources:
 - [Prerequisites for Azure Virtual Desktop](/azure/virtual-desktop/prerequisites)
 - [Deploy Azure Virtual Desktop with the getting started feature](/azure/virtual-desktop/getting-started-feature)
 
-If an on-premises session host deployment is required, Azure Virtual Desktop for Azure Stack HCI (currently in preview) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
+If an on-premises session host deployment is required, Azure Virtual Desktop for Azure Stack HCI (currently in preview) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI overview (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
 
 ## Additional information
 
