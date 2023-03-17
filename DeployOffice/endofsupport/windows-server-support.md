@@ -39,7 +39,7 @@ For recommendations on other client hosting solutions, see [Microsoft 365 Apps m
 
 Microsoft 365 Apps is supported on Windows Server 2019 only until October 2025.
 
-For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+For recommendations on other client hosting solutions, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
 For end of support dates for Windows Server 2019, see the [Windows Server 2019 lifecycle](/lifecycle/products/windows-server-2019) page.
 
@@ -47,7 +47,7 @@ For end of support dates for Windows Server 2019, see the [Windows Server 2019 l
 
 Microsoft 365 Apps is supported on Windows Server 2016 only until October 2025.
 
-For recommendations on client hosting solutions to migrate to before October 2025, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
+For recommendations on other client hosting solutions, see [Microsoft 365 Apps migration from Windows Server](windows-server-migration.md).
 
 For end of support dates for Windows Server 2016, see the [Windows Server 2016 lifecycle](/lifecycle/products/windows-server-2016) page.
 
