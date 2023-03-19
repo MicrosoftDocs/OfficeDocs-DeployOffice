@@ -2,6 +2,17 @@
 
 
 
+## Week of March 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/15/2023 | [Adopt servicing profiles for Microsoft 365 Apps](/DeployOffice/fieldnotes/adopt-servicing-profiles) | modified |
+| 3/16/2023 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
+| 3/17/2023 | [Microsoft 365 Apps migration from Windows Server ](/DeployOffice/endofsupport/windows-server-migration) | modified |
+| 3/17/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
+
+
 ## Week of March 06, 2023
 
 
@@ -43,28 +54,3 @@
 | 2/15/2023 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
 | 2/16/2023 | [Connected experiences and your content](/DeployOffice/privacy/connected-experiences-content) | added |
 | 2/17/2023 | Update Office LTSC 2021 Preview to Office LTSC 2021 | removed |
-
-
-## Week of February 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/8/2023 | [Update Office LTSC 2021](/DeployOffice/ltsc2021/update) | modified |
-| 2/8/2023 | [Update Office 2019 (for IT Pros)](/DeployOffice/office2019/update) | modified |
-| 2/8/2023 | [Plan for multilanguage deployment of Office 2016](/DeployOffice/office2016/plan-for-multilanguage-deployment-of-office-2016) | modified |
-| 2/9/2023 | [About Microsoft 365 Apps in the enterprise](/DeployOffice/about-microsoft-365-apps) | modified |
-| 2/9/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
-| 2/9/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
-| 2/9/2023 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
-| 2/9/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels) | modified |
-| 2/9/2023 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
-| 2/9/2023 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
-| 2/10/2023 | [About Microsoft 365 Apps in the enterprise](/DeployOffice/about-microsoft-365-apps) | modified |
-| 2/10/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
-| 2/10/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/change-update-channels) | modified |
-| 2/10/2023 | [Deploy Microsoft 365 Apps from the cloud](/DeployOffice/deploy-microsoft-365-apps-cloud) | modified |
-| 2/10/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/overview-update-channels) | modified |
-| 2/10/2023 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
-| 2/10/2023 | [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/DeployOffice/readiness-tools) | modified |
-| 2/10/2023 | [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365) | modified |
