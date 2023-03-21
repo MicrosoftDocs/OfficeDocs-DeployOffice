@@ -8441,7 +8441,9 @@ The following fields are collected:
   - **Data\_WarningShownToConvertToTable:bool** - true indicates warning shown to the user to convert Excel data to table format
 
 
-#### Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudGetDataFromCache
+#### Office.Word.Accessibility.LearningTools.ReadAloud.ReadAloudGetDataFromCache
+
+*[This event was previously named Office.Word.Accessibility.LearningTools.ReadAloud.EventName.ReadAloudGetDataFromCache.]*
 
 The event is triggered when user listens to a paragraph that has already been prefetched and Read Aloud will be playing the cached paragraph now instead of making a request to EDU service to get the neural voice. The data helps track how many of users are using previously-fetched paragraphs thereby giving usage ideas along with the solidifying our calculation for Read Aloud play minutes since the paragraphs which are read from cache are currently not getting tracked. Data is used to track the usage of Read Aloud neural implementation via cached files, how many minutes are being generated.
 
@@ -8468,7 +8470,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
-This event indicates Office Word opens a document by user initiation instead of by Office Word programmatically. It also contains critical file open performance data and is an app start event from user perspective.  The event monitors whether file-open is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics. 
+This event is triggered when a user opens a Word document. It also contains critical file open performance data and is an app start event from user perspective.  The event monitors whether file-open is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics. 
  
 The following fields are collected:
 
@@ -8506,6 +8508,8 @@ The following fields are collected:
 
 - **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user 
 
+- **Data_Doc_IsConvergedOD** - Flag indicating that the document belongs to a OneDrive consumer account which has been migrated to the SharePoint service
+
 - **Data_Doc_IsIncrementalOpen** - Flag indicating that the document has been incrementally opened 
 
 - **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service 
@@ -8530,6 +8534,8 @@ The following fields are collected:
 
 - **Data_Doc_ServerProtocol** - the protocol version used to communicate with the service 
 
+- **Data_Doc_ServerStore** - Predefined set of values for which schema is used to store the file on the service 
+
 - **Data_Doc_ServerType** - the type of the server offering the service (SharePoint, OneDrive, WOPI etc.) 
 
 - **Data_Doc_ServerVersion** - the server version offering the service 
@@ -8542,9 +8548,13 @@ The following fields are collected:
 
 - **Data_Doc_SpecialChars** - Indicator of special chars in the document's URL or Path 
 
+- **Data_Doc_StorageSchema** - Predefined set of values for which schema is used to store the file cached on disk
+
 - **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled 
 
 - **Data_Doc_SyncBackedType** - Indicator as to the type of document (local or service based) 
+
+- **Data_Doc_TenantId** - GUID that identifies the SharePoint tenant where the document is located 
 
 - **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier 
 
@@ -8554,6 +8564,8 @@ The following fields are collected:
 
 - **Data_EditorsCount** - Number of editors in the document 
 
+- **Data_FFileInUseDialog** - Indicates that ‘File in Use’ dialog box appeared while opening this document.
+
 - **Data_FHasWPMUnsafeEdit** - Indicates that the document has WPM unsupported contents upon open.
 
 - **Data_FOpenWpmRecoveryRevision** - Indicates that the document has been opened from the OCSB2 recovery revision.
@@ -8561,6 +8573,8 @@ The following fields are collected:
 - **Data_ForceReadWriteReason** - Integer value representing the reason why the file was forced into read/write mode 
 
 - **Data_FSucceededAfterRecoverableFailure** - Indicates that open succeeded after repairing a failure while opening the document 
+
+- **Data_InsecureProtocolStatus** - Reports that tool tried to detect if file is accessed using an insecure protocol and captures user-choice (either abort the open, continue with insecure protocol, or upgrade to secure protocol) in the dialog box shown.
 
 - **Data_LastLoggedTag** - Unique tag for code call site used to identify when we try to fail the open twice (used for data quality diagnostics) 
 
@@ -9779,6 +9793,19 @@ The following fields are collected:
 - **IsThisFirstLaunch** - Boolean to indicate if this is first time app launch
 
 - **UserDialogInterruptionDuringBoot** - Boolean to indicate if there was a blocking UI during boot
+
+#### Office.Android.WxpinfraAndroid.AppDiskSize.AppDiskSize
+
+This event is collected for Office applications running under Android platform and records when an app boot takes place. This event helps in keeping the app disk size used by the Office applications under check. The goal of this data is to continuously improve on reducing the disk size used by the application on the end users’ device.
+
+The following fields are collected:
+
+- **ApkSize** - Size (in Bytes) of the Office application apk downloaded and extracted on the device.
+
+- **CacheSize** - Size (in Bytes) of the cache folder used by the Office application.
+
+- **UserDataSize** - Size (in Bytes) of the user data directory used by the Office application.
+
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -13229,6 +13256,20 @@ The following fields are collected:
 - **Data_Type** - the type of the crash java/native.
 
 
+#### Office.Android.DBTException  
+
+This event gets triggered when any exceptions happen during the boot flow when user opens the app. We were not able to check what those exceptions were earlier. We are capturing these exception details in this event. The data is used to capture exception-related data to determine which exceptions were causing crashes.  
+
+The following fields are collected: 
+
+- **DBTExceptionDescription** - This is text description on exception.
+
+- **DBTExceptionRootTag** - This tag identifies exception generated place.
+
+- **DBTExceptionTag** - Tag for current event.
+
+- **DBTExceptionType** - This is type of error (enum) which is property of exception.
+
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
 
 This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription.
@@ -13276,6 +13317,14 @@ The following fields are collected:
 - **Data_ErrorType** - Category of error
 
 - **Data_ErrorMetadata** - Additional details about error
+
+#### Office.Android.NullIdOnSignInWithOneAuthAndroid  
+
+This event is triggered when any exceptions happen during the boot flow when user opens the app. The data is used to determine what kind of exceptions cause the crashes.  
+
+The following field is collected: 
+
+- **ContributedTag** - This is a tag of various types of causes of authentication failure when One Auth is enabled. This provides information about current failure contributions and based on that need to act on fixes/mitigations for respective failures.
 
 
 #### Office.Apple.Apple.AppBoot.Mac
