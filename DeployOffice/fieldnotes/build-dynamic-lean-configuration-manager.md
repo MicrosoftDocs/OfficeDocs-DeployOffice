@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.date: 03/01/2023
+ms.date: 03/21/2023
 ---
 
 # Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
@@ -119,7 +119,7 @@ Here's how to implement this collection:
    ```sql
     select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
    ```
-5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you're interested in.
+5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you're interested in. The **Update history** page lists builds without the leading "16.0.", ensure to add this to the value you want to use in your query. So it should always be in the format of 16.0.xxxxx.yyyyy.
 
    > [!NOTE]
    > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channel by adding the collection holding these devices as an exclusion.
