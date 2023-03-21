@@ -4744,7 +4744,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
 - **Office.iOS.Paywall.PurchaseCompleteScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the success screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
 
-- **Office.iOS.Paywall.PurchaseFailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected. *[This field was previously named Office.iOS.Paywall.FailedScreen.RetryButtonTap.]*
+- **Office.iOS.Paywall.PurchaseFailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected. *[This sub-event was previously named Office.iOS.Paywall.FailedScreen.RetryButtonTap.]*
 
    The following fields are collected:
 
