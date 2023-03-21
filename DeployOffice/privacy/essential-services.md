@@ -4508,6 +4508,8 @@ The following fields are collected:
 
 - **IsModeFre** – Boolean indicating if purchase was made from upsell FRE screen or Sku Chooser
 
+- **ProductId** - String - ProductId of the SKU being purchased.
+
 - **Result** – Int denoting the enum result of the operation.
 
 - **SessionID** – GUID to connect events by session
@@ -4654,6 +4656,22 @@ The following fields are collected:
 
 - **seePlanButtonClick** - How many times “See plan buttons” gets clicked in upsell UI
 
+### Office.Android.EarlyTelemetry.IrisPushNotificationClicked
+
+This event is logged when a notification from a campaign is clicked on users’ devices on the Microsoft 365 app. The data is required to track the performance of the notifications as a feature. 
+
+The following fields are collected:
+
+- **CreativeId** - String – To know which CreativeId from a campaign is shown in the notification.
+
+### Office.Android.EarlyTelemetry.IrisPushNotificationShown
+
+This event is collected when a notification from a campaign is received on users’ devices via the Microsoft 365 app. The data is used to track the performance of the notifications as a feature. 
+
+The following fields are collected:
+
+- **CreativeId** - String – To know which CreativeId from a campaign is shown in the notification
+
 ### Office.Apple.IAPReviewYourSubscriptioniOS
 
 This event captures session-based metadata when the In-App-Purchase (IAP) UI is shown to the user and the buttons the user subsequently interacts with. This data is used to help us understand the friction in the purchase flow and compare it with the funnel of a different purchase experience to understand which experience is better for the user. 
@@ -4682,12 +4700,35 @@ The following fields are collected:
 
 This event is used to understand the in-app purchase (IAP) experience for the user. It allows us to ensure IAP performs as expected and helps us understand user issues so we can optimize the IAP experience. Collection occurs through one of the following sub-events.
 
+- **Office.iOS.Paywall.Activation.Response**- This event is created to log the response of user during the activation of a subscription plan on the paywall control. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
+ 
+   The following fields are collected: 
+ 
+   - **status: String** – To know the response during activation (successful, failed, or skipped)
+
 - **Office.iOS.Paywall.BottomSheet.Stats** - Usage telemetry to measure how many users expanded/dismissed bottom sheet UI of subscription-plan (SKU) chooser screen. The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions. 
 
    The following fields are collected:
 
   - **isDimissed** - Bool - true if user dismissed the drawer.
   - **isExpanded** - Bool - true when user expanded the bottom sheet.
+
+
+- **Office.iOS.Paywall.PurchaseFailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected. *[This field was previously named Office.iOS.Paywall.FailedScreen.RetryButtonTap]*
+
+   The following fields are collected:
+
+   - **failureReason** - String – Indicates what the failure was the user is retrying; for example, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
+   - **productId** - String – App Store ID of the product for which user is retrying the failed request.
+
+
+- **Office.iOS.Paywall.PurchaseFailedScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the failure screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
+ 
+   The following fields are collected: 
+ 
+   - **failureReason: String** – To know the failure reason
+
   
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
@@ -4706,7 +4747,30 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **status** - String – Exit status of Paywall. Like “initiated”, “paymentDone”, “provisionFailed”.
    - **userDuration** - Double – Duration in milli-seconds the user spent on Paywall
 
-  
+- **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
+
+   The following fields are collected:
+
+   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+   - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
+   - **productId** - String – App Store ID of the product the request was made for
+   - **status** - String – Success or Failure, indicating if the request succeeded or failed
+
+
+- **Office.iOS.Paywall.PurchaseCompleteScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the success screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
+
+
+- **Office.iOS.Paywall.SignIn.Response** - The event is collected when users complete SignIn during upsell flow, which is triggered for PreSignIn upsell scenarios like the PreSignIn FRE and PreSignInDiamond. This can be used to check the SignIn rates during the Upsell flow and help us analyse the PreSign scenarios.
+
+  The following fields are collected:
+
+  - **authToken** - String - The Auth token of the signed in user. Used to debug issues where auth token is invalid and provisioning for the account fails. If the token is nil, logged as “nil-auth-token”.  
+  - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
+  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
+  - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
+
+ 
 - **Office.iOS.Paywall.SKUChooser.BuyButtonTap** - Data is collected when user taps the Purchase/Buy Button. The data is used to measure the performance of the button and ensure that it performing as expected.
 
    The following fields are collected:
@@ -4717,6 +4781,22 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App-store product-id of the product for which the Buy Button was tapped.
    - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+
+- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Data collected when users tap on “See More Benefits” to see all the services, apps and features included in the purchase. They must expand sections detailing the features for each of the apps. This event collects which features and apps they expanded, along with the duration of time spent. The data is used to ensure that the UI offered to end users to learn about the benefits is performing as expected. 
+
+   The following fields are collected:
+
+   - **appsExpanded** - String – Comma-separated list of services/apps for which the benefits were expanded.
+   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
+   - **productId** - String – App Store ID of the product for which user is viewing more benefits offered
+   - **userDuration** - Double – Duration in milli-seconds the user spent on the Benefits Screen.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it is performing as expected. 
+
+   The following fields are collected:
+
+  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
+  - **productId** - String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
 
 - **Office.iOS.Paywall.SKUChooser.Stats** - Data collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser. Using the information, we can ensure that the SKU Chooser is performing as expected, and we will be able to optimize and improve the end user experience.
 
@@ -4729,38 +4809,6 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
-   
-
-- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected.
-
-   The following fields are collected:
-
-   - **failureReason** - String – Indicates what the failure was the user is retrying; for example, “provisioningFailed”, “purchaseFailed”, “activationFailed”.
-   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
-   - **productId** - String – App Store ID of the product for which user is retrying the failed request.
-
-- **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Data collected when users tap on “See More Benefits” to see all the services, apps and features included in the purchase. They must expand sections detailing the features for each of the apps. This event collects which features and apps they expanded, along with the duration of time spent. The data is used to ensure that the UI offered to end users to learn about the benefits is performing as expected. 
-
-   The following fields are collected:
-
-   - **appsExpanded** - String – Comma-separated list of services/apps for which the benefits were expanded.
-   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
-   - **productId** - String – App Store ID of the product for which user is viewing more benefits offered
-   - **userDuration** - Double – Duration in milli-seconds the user spent on the Benefits Screen.
-
-- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
-
-   The following fields are collected:
-
-   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
-   - **productId** - String – App Store ID of the product for which user is viewing all benefits offered.
-
-- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it is performing as expected. 
-
-   The following fields are collected:
-
-  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
-  - **productId** - String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
 
 - **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
 
@@ -4774,25 +4822,20 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”, "Restore"
    - **status** - String – Success or Failure, indicating success or failure of the request.
 
-- **Office.iOS.Paywall.Provisioning.Response** - Critical Engineering Telemetry and Contract with Retail Federation Service (RFS) to collect the information provided in this. RFS is the internal service used within Microsoft for crosschecking the purchase. This is used to get the health of the API call made to RFS which would help in understand that the performance of the integration is as expected.  
+
+- **Office.iOS.Paywall.StoreKit.RestorePurchase** - This event is triggered for a user who is restoring a previous purchase by clicking on “Restore Previous Purchase” on the paywall control. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
+
+   The following fields are collected: 
+
+   - **status: String** – To know the response during of this restore process (successful, failed, or unexpected)
+
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
 
    The following fields are collected:
 
-   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-   - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
-   - **productId** - String – App Store ID of the product the request was made for
-   - **status** - String – Success or Failure, indicating if the request succeeded or failed
-
-- **Office.iOS.Paywall.SignIn.Response** - The event is collected when users complete SignIn during upsell flow, which is triggered for PreSignIn upsell scenarios like the PreSignIn FRE and PreSignInDiamond. This can be used to check the SignIn rates during the Upsell flow and help us analyse the PreSign scenarios.
-
-  The following fields are collected:
-
-  - **authToken** - String - The Auth token of the signed in user. Used to debug issues where auth token is invalid and provisioning for the account fails. If the token is nil, logged as “nil-auth-token”.  
-  - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
-  - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
-  - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
-
+   - **productId** - String – App Store ID of the product for which user is viewing all benefits offered.
 
 ### Office.Apple.Licensing.CommonPaywallDetails
 
@@ -5886,6 +5929,81 @@ The following fields are collected:
   - **OpportunisticTokenRenewalAttempted** – Indicates if we attempted an opportunistic renewal for the user in shared computer activation mode
 
   - **ReArmResult** – Indicates the result of rearming the installed key which can extend the expiry of the current license
+
+
+### Office.Omex.Checkout.Analytics.CheckoutStageChangeActivity
+
+The event is triggered as the user progresses through the steps required to complete purchase. It is used to monitor the purchase flow in various dimensions and troubleshoot its performance.
+
+The following fields are collected:
+
+- **AvailabilityId** - pricing variant of the product that the user is attempting to purchase.
+
+- **CurrentStage** - current step of the purchase flow.
+
+- **Error** - error description that is related to the given step of the purchase flow, if any.
+
+- **PaymentInstrumentsNumber** - number of payment instruments that the user has on profile.
+
+- **PreviousStage** - the step of the purchase flow that user arrived from.
+
+- **ProductId** - product that the user is attempting to purchase.
+
+- **Query.Flights** - information about features that has been enabled for the user.
+
+- **Query.Language** - user experience language of the attempted purchase.
+
+- **Query.Market** - market of the attempted purchase.
+
+- **Query.PageURL** - browser URL that the user is using while attempting purchase.
+
+- **Query.ReferralURL** - browser URL that referred user to purchase.
+
+- **SelectedPaymentInstrumentFamily** - family of the payment instrument that is selected for the purchase.
+
+- **SelectedPaymentInstrumentType** - type of the payment instrument that is selected for the purchase.
+
+- **SkuId** - billing variant (SKU ID) of the product that the user is attempting to purchase.
+
+- **Tracing.CheckoutVersion** - version of the purchase flow component.
+
+- **Tracing.Environment** - environment that emits the event, e.g., production or pre-production.
+
+- **Tracing.TraceId** - ID to correlate the event with other events from the same user session.
+
+
+### Office.Omex.Checkout.MonitoringEvent
+
+The event is triggered by the finished service call or operation triggered by the user. It is used to monitor the performance and diagnose the issues with the checkout process and services it is backed with.
+
+The following fields are collected:
+
+- **Agent.Datacenter** - identification of the monitoring agent; location of the datacenter that is hosting the checkout experience.
+
+- **Agent.Role** - identification of the monitoring agent; type of service emitting the telemetry.
+
+- **Agent.RoleInstance** - identification of the monitoring agent; service instance emitting the telemetry.
+
+- **Agent.ServiceName** - identification of the monitoring agent; service emitting the telemetry.
+
+- **Agent.Tenant** - identification of the monitoring agent; service cluster.
+
+- **Duration** - duration of the operation execution, e.g., service call.
+
+- **Metadata** - additional operation metadata, if applicable in specific scenario.
+
+- **Result** - outcome of the operation, e.g., success or failure.
+
+- **ScopeName** - identifier of operation result of which is being reported.
+
+- **Subtype** - subtype of the operation, if applicable in specific scenario, e.g., a product user tried to buy when operation happened.
+
+- **Tracing.CheckoutVersion** - version of the purchase flow component.
+
+- **Tracing.Environment** - environment that emits the event, e.g., production or pre-production.
+
+- **Tracing.TraceId** - ID to correlate the event with other events from the same user session.
+
 
 ### Office.SetupOffice.Sdx.Log 
 
@@ -17914,6 +18032,45 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+
+
+### Office.Omex.Checkout.LoggingEvent
+
+The event is triggered by the user action or internal component operation. It is used to troubleshoot the checkout component if there are issues with the purchase detected.
+
+The following fields are collected:
+
+- **Agent.Datacenter** - identification of the monitoring agent; location of the datacenter that is hosting the checkout experience.
+
+- **Agent.Role** - identification of the monitoring agent; type of service emitting the telemetry.
+
+- **Agent.RoleInstance** - identification of the monitoring agent; service instance emitting the telemetry.
+
+- **Agent.ServiceName** - identification of the monitoring agent; service emitting the telemetry.
+
+- **Agent.Tenant** - identification of the monitoring agent; service cluster.
+
+- **Level** - severity level of the diagnostic message.
+
+- **Message** - diagnostic message.
+
+- **Query.Flights** - information about experiments that user is included in.
+
+- **Query.Language** - user experience language of the attempted purchase.
+
+- **Query.Market** - market of the attempted purchase.
+
+- **Query.PageURL** - browser URL that the user is using while attempting purchase.
+
+- **Query.ReferralURL** - browser URL that referred user to purchase.
+
+- **Tag** - internal message source matching identifier.
+
+- **Tracing.CheckoutVersion** - version of the purchase flow component.
+
+- **Tracing.Environment** - environment that emits the event, e.g., production or pre-production.
+
+- **Tracing.TraceId** - ID to correlate the event with other events from the same user session.
 
 
 ### Office.OneNote.GetSharePointIdsForDocument
