@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance to Office admins on how to adopt servicing profiles for Microsoft 365 Apps"
-ms.date: 03/15/2023
+ms.date: 03/22/2023
 ---
 
 # Adopting servicing profiles for Microsoft 365 Apps
@@ -33,7 +33,7 @@ This article covers:
 There are multiple benefits of using a servicing profile over common update management tools:
 - **Improved security currency:** For enterprise environments we usually see a security currency of around 66%. This means that after each monthly “Patch Tuesday” approximately 66% of Microsoft 365 Apps on devices within a tenant have been patched with the latest security updates. With a servicing profile we see this currency rise above 90%. This means that the new service helps reduce known threats in your environment faster and broader.
 
-- **Increased reach:** Common update management tools are often limited by the boundary of a directory service. For example, devices must be joined into Active Directory, to be managed by a given solution. With a servicing profile, you're breaking this barrier and can manage all Microsoft 365 Apps instances that were activated by your tenant and have an Azure AD user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Azure Active Directory, registered into Azure Active Directory, or remains in workgroup mode.
+- **Increased reach:** Common update management tools are often limited by the boundary of a directory service. For example, devices must be joined into Active Directory, to be managed by a given solution. With a servicing profile, you're breaking this barrier and can manage all Microsoft 365 Apps instances that were activated by your tenant and have an Azure Active Directory (Azure AD) user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Azure Active Directory, registered into Azure Active Directory, or remains in workgroup mode.
 
 - **Leveraging the cloud:** As a true cloud-based service, a servicing profile isn't dependent on any on-premises infrastructure. Wherever the device is, if it can connect to the cloud, it will be serviced.
 
@@ -65,18 +65,18 @@ If you want to adopt a servicing profile step-by-step, you can do so by targetin
 7. Select  **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admincenter/servicing-profile.md#set-an-update-deadline).
 8. Select **Next** to go review your config, then select **Create Profile** to get things going.
 
-After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. You can review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, you can see more details on the **Issues** tab.
+After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. Review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, see more details on the **Issues** tab.
 
-After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, you could go to the **Settings** tab and add additional update channels to migrate more devices to the servicing profile.
+After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, go to the **Settings** tab and add additional update channels to migrate more devices to the servicing profile.
 
 ## How to set up the servicing profile with the “by Azure AD group” approach
 
-If you want to adopt a servicing profile in more granular steps, you can do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
+If you want to adopt a servicing profile in more granular steps, do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
 
-1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. You can add three types of items to a group, and mixing them is possible:
+1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. Add three types of items to a group, and mixing them is possible:
     - Devices: Those must be Azure AD joined or hybrid Azure AD joined and known to the inventory in the Microsoft 365 Apps admin center.
     - Users: Based on the activation data, the servicing profile will identify which devices in inventory have a Microsoft 365 Apps installation activated by the specified user accounts. This will also cover devices running in [shared computer activation](../overview-shared-computer-activation.md) mode where a specified user has logged on and used Microsoft 365 Apps.
-    - Azure AD groups: You can use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
+    - Azure AD groups: Use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
 2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
 3. Navigate to **Servicing** > **Monthly Enterprise** and launch the wizard by selecting **Get Started**. Select **Next** again to go to the **Device Selection Criteria** page.
 4. On the top, select **Choose groups to include** and add the Azure AD groups you want to target. This defines the maximum set of devices that will be targeted after applying the remaining selection criteria.
@@ -87,9 +87,21 @@ If you want to adopt a servicing profile in more granular steps, you can do so b
 8. Select **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admincenter/servicing-profile.md#set-an-update-deadline).
 9. Select **Next** to go review your config, then select **Create Profile** to get things going.
 
-After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. You can review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, you can see more details on the **Issues** tab.
+After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. Review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, see more details on the **Issues** tab.
 
-After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, you could go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
+After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
+
+## Best practices working with servicing profiles
+
+Here are some best practices when it comes to managing updates with a servicing profile:
+
+- Like other cloud services or Microsoft Configuration Manager, servicing profile is an asynchronous service. When you create or change the configuration, the service will process your input in the background. The user interface (especially the **Devices** tab) will not reflect your changes immediately. 
+- After changing the configuration (selection criteria, update deadline, customer rollout waves, etc.), allow the service some time to process your changes. During this processing, you might see the number of devices in profiles drop as the service recalculates the scope and state of devices. The devices will then be added back to the scope in batches of several hundred or thousand devices. Depending on the total number of devices in your environment, this process might take several hours to complete. 
+- This also applies when a new update is released. Initially, the servicing profile will reset to zero devices, and devices will be added back to the servicing profile over time. 
+- Allowing each change to finish calculation first before introducing the next change is recommended. Be patient during this process.
+- The same applies when pausing or resuming a servicing profile. Allow the service to process the change, and don't pause/resume the service in quick succession. Note that pausing a servicing profile will not stop already initiated update installations on devices, but will stop the service from sending out new update commands to devices. 
+- When triggering a rollback, the same applies. After configuring a rollback action, the service needs time to process the change and waits for the device to check in to send the rollback commands. 
+- When using Azure AD groups for including or excluding devices or creating custom rollout waves, limiting the number of members to 20,000 per group is recommended. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Azure AD group with, for example, 40,000 members, it's recommend to use two groups with 20,000 members each. 
 
 ## How do the selectors work
 
@@ -109,6 +121,6 @@ After the servicing profile has been created, the service will pre-calculate the
 
 Once the device has received the command to perform an update, it will use the Office CDN, [Delivery Optimization](../delivery-optimization.md), and potentially available Connected Caches or peers to download and apply the update. If the update can’t be applied due to open Microsoft 365 apps, it will retry silently to do so in the background, during device reboot or when the device is locked and the operating system went into idle. If the update couldn’t be applied until the specified deadline is reached, the user will receive multiple prompts to close the applications and apply the updates. After roughly 48 hours, the user will get a final notification with a countdown. When this reaches zero, open documents will be saved, the applications closed and updated, then reopened and documents reloaded. But in most cases pending updates can be silently applied in the background without having to prompt the user.
 
-The portal will receive status information about these steps and the admin can see devices transitioning from **Not Started** to **In Progress** and to **Updated** finally. If an error occurs on the device, it will be flagged accordingly in the portal and a reapply initiated. In most cases failures are related to the download of the update; for example, when the device was shut down while the download was active.
+The portal will receive status information about these steps and the admin will see devices transitioning from **Not Started** to **In Progress** and to **Updated** finally. If an error occurs on the device, it will be flagged accordingly in the portal and a reapply initiated. In most cases failures are related to the download of the update; for example, when the device was shut down while the download was active.
 
 Once devices are updated, they'll remain in this state until Microsoft releases the next update to the Monthly Enterprise Channel. The service will then automatically recalculate the required actions per device and start handing those out to the devices. By default, this happens in waves across four days to reduce impact on the network. There's no manual action required to initiate the monthly update cycle.
