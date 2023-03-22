@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 hideEdit: true
-ms.date: 02/10/2023
+ms.date: 03/22/2023
 ---
 
 # Overview of optional connected experiences in Office
@@ -26,7 +26,7 @@ If you have a work or school account, your organization's admin may have provide
 
 ### If you use these services, what terms of use do you need to agree to?
 
-It's important to know that these optional cloud-backed services are not covered by your organization's license with Microsoft. Instead, they're licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Depending on which service you use, additional terms may also apply. In most cases, there's no fee to use these services. If a fee does apply (as may be the case with some [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) available to you for download through Office Store), you'll be clearly informed prior to use.
+It's important to know that these optional cloud-backed services aren't covered by your organization's license with Microsoft. Instead, they're licensed directly to you. By using these optional cloud-backed services, you also agree to the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Depending on which service you use, additional terms may also apply. In most cases, there's no fee to use these services. If a fee does apply (as may be the case with some [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) available to you for download through Office Store), you'll be clearly informed prior to use.
 
 ## Experiences that rely on Bing
 
@@ -36,10 +36,10 @@ Bing powers the following experiences in Outlook for iOS and Android:
 
 - **Location suggestions:**   When you add a public place with a street address to a calendar item, the full street address is included in the Location field.
 - **Interesting Calendars:**   You can [subscribe](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) to calendars about your favorite sports teams or TV shows.
-- **Travel time in Up Next:** Your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
-- **Weather on calendar:** The [weather forecast](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) for your current location will appear at the top of your calendar screen.
+- **Travel time in Up Next:** Your next upcoming event is summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
+- **Weather on calendar:** The [weather forecast](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) for your current location appears at the top of your calendar screen.
 
- These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They are not linked to you by the Bing organization.
+ These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They aren't linked to you by the Bing organization.
 
 ## Experiences that rely on other Microsoft-owned online services and/or services owned by third-parties
 
@@ -53,19 +53,23 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 ### Insert online video
 
-[Insert Online Video](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, its [terms of use](https://www.youtube.com/t/terms) and [privacy policy](https://policies.google.com/privacy) will apply. Microsoft may add other providers of video material in the future.
+[Insert Online Video](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) allows you to insert video files into your document. The insert online video experience is subject to the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). Additional terms of use may apply if you access content from third-party sources. For example, when you connect to YouTube, the [terms of service](https://www.youtube.com/t/terms) and [privacy policy](https://policies.google.com/privacy) for YouTube apply. Microsoft may add other providers of video material in the future.
 
 ### Insert photos from mobile device
 
 [Insert photos from mobile device](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921) allows you to insert photos from your Android device directly into PowerPoint for the web or Word for the web. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
 
+### Link unfurling
+
+Link unfurling for Loop automatically expands a hyperlink into an interactive experience. For example, when you paste a link to a Word document into a Loop workspace, you're shown a preview card. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. Or, for example, if the link is to a YouTube video, a card with an embedded player is shown. In that case, the [terms of service](https://www.youtube.com/t/terms) and [privacy policy](https://policies.google.com/privacy) for YouTube also apply.
+
 ### Microsoft Error Reporting Program (MERP)
 
-MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. It's owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. MERP does not apply to Office client applications that run on Windows.
+MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. The servicee is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. MERP doesn't apply to Office client applications that run on Windows.
 
 ### Office Store
 
-When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You'll need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
+When you use the Office Store, your use of the store site itself is licensed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement). However, any [add-ins](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) that you download through the Office Store are covered by the add-in provider's terms of use. These providers can be various different organizations or businesses, and some may charge a usage fee. You need to check the permissions, privacy statement, and license terms of each add-in to know which terms apply and decide if you want to agree to the terms of use that organization offers.
 
 > [!NOTE]
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
@@ -87,17 +91,17 @@ To print a file in the [Office mobile app](https://www.microsoft.com/microsoft-3
 
 ### Travel time in Up Next in Outlook for iOS
 
-On Outlook for iOS, your next upcoming event will be summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
+On Outlook for iOS, your next upcoming event is summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). This experience requires an Apple owned service called Apple Maps to provide estimated travel time. The Apple Maps [terms of use](https://www.apple.com/legal/internet-services/maps/) and Apple [privacy policy](https://www.apple.com/legal/privacy) apply.
 
 ### Weather Bar in Outlook
 
-The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft does not detect your location, and the cities that you choose to display are not linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you'll need to check the privacy statement and license terms of that provider to know which terms apply.
+The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft doesn't detect your location, and the cities that you choose to display aren't linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you'll need to check the privacy statement and license terms of that provider to know which terms apply.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
-To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you'll see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
+To determine whether your admin has given you the ability to use any optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, go to **File** > **Account** > **Account Privacy** and select **Manage Settings**. If your admin has not given you control, you see a message that states, "Your organization's admin manages your privacy settings and has decided to disable optional connected experiences."
 
-If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action opens the Account Privacy settings dialog box where you can see your privacy options.
 
 For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
@@ -106,9 +110,9 @@ For more information, see [Account Privacy Settings](https://support.microsoft.c
 
 ## Your privacy settings
 
-If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you'll have the option to use the services described in this article when you want to use them. When disabled, they will not be accessible.
+If your admin has given you the ability to use optional connected experiences in your Office apps included with Microsoft 365 Apps for enterprise on a Windows device, you can go to **File** > **Account** > **Account Privacy** and select **Manage Settings** to manage your settings at any time. When enabled, you have the option to use the services described in this article when you want to use them. When disabled, they won't be accessible.
 
-If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action will open the Account Privacy settings dialog box where you can see your privacy options.
+If you're using Office for Mac, open any Office application and select the app menu (such as Word, or Excel) > **Preferences** > **Privacy**. This action opens the Account Privacy settings dialog box where you can see your privacy options.
 
 For more information, see [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
