@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance to Office admins on how to adopt servicing profiles for Microsoft 365 Apps"
-ms.date: 03/15/2023
+ms.date: 03/22/2023
 ---
 
 # Adopting servicing profiles for Microsoft 365 Apps
@@ -90,6 +90,18 @@ If you want to adopt a servicing profile in more granular steps, you can do so b
 After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. You can review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, you can see more details on the **Issues** tab.
 
 After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, you could go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
+
+## Best practices working with servicing profiles 
+
+Here are some best practises when it comes to managing updates with servicing profiles: 
+
+- Like other cloud services or Configuration Manager, servicing profiles is an asynchronous service. When you initially create or later change the configuration, the service will start to process your input in the background. The user interface (especially the **Devices** tab) will not reflect your changes immediately. 
+- After changing the configuration (selection criteria, update deadline, customer rollout waves, etc.), allow the service some time to process your changes. During this processing, you might see the number of devices in profiles actually dropping first, as the service recalculates the scope and state of devices. The devices will then be added back to the scope in batches of several hundred or thousand devices. Depending on the total number of devices in your environment, this process might take several hours to complete. 
+- This also applies when Microsoft releases a new update. Initially the servicing profile will be reset to zero devices, and you will see devices being added back to the profile over time. 
+- We recommend to allow each change to finish calculation first before introducing the next change. It might be hard but be patient. 
+- Same applies when pausing or resuming the servicing profile. Allow the service to process the change and do not pause/resume the service in quick succession. Note that pausing a profile will not stop already initiated update installations on devices. It will stop the service from sending out new update commands to devices. 
+- When triggering a rollback, the same applies. After configuring a rollback action, the service needs some time to process the change and then waits for the device to check-in to send down the rollback commands. 
+- When using Azure AD groups for including/excluding devices or creating custom rollout waves, we recommend to limit the number of members to 20,000 per group. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. So instead of using one Azure AD group with e.g., 40,000 members, we recommend to use two groups with 20,000 members each. 
 
 ## How do the selectors work
 
