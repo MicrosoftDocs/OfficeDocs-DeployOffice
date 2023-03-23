@@ -10,17 +10,22 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 03/01/2023
+ms.date: 03/23/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
 
-After deploying Microsoft 365 Apps, you can change the update channel with Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. When changing the channel, Office is updated automatically without having to reinstall or download the full version. For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+There are multiple options to switch the selected update channel for an existing Microsoft 365 Apps installation. For instance, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel using group policy settings. This article covers several options to perform a channel change on a device. All use the update engine of the Microsoft 365 Apps, so the channel change happens through an update and not an uninstallation und re-installation of the apps. The following technologies are covered:
+
+- [Group Policies](#change-the-update-channel-with-group-policy)
+- [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)
+- [Microsoft Configuration Manager](#change-the-update-channel-with-configuration-manager)
+- [Intune](#change-the-update-channel-with-microsoft-intune-administrative-templates)
+
+For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
 > [!TIP]
 > If you prefer watching over reading, we have a [video on how to switch update channels](https://youtu.be/rIpoloAZnSg) ready for you.
-
-Group Policy and the ODT are the only supported methods to change update channels. If you manage updates to Office with Configuration Manager, you can change the channel by using Group Policy or the ODT in combination with Configuration Manager. For more information, see [Change the update channel with Configuration Manager](#change-the-update-channel-with-configuration-manager).
 
 ## Change the update channel with Group Policy
 
@@ -102,8 +107,8 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
 
-- If Office has just been installed or updated, changing the update channel can take up to 24 hours after the new setting has been applied.
+- If Microsoft 365 Apps has just been installed or updated, changing the update channel can take up to 24 hours after the new setting has been applied.
 
-- The Office user interface on the client device won't reflect the updated channel until a build of Office from the new channel is installed.
+- The user interface on the client device won't reflect the updated channel until a build from the new channel is installed.
 
-- If you move from a channel with a newer version of Office to a channel with an older version of Office, any features that are only available in the newer version will be removed.
+- If you move from a channel with a newer version of Microsoft 365 Apps to a channel with an older version, any features that are only available in the newer version will be removed.
