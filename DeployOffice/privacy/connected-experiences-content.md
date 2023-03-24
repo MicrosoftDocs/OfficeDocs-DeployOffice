@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides information about how connected experiences for Microsoft 365 Apps use content to provide its functionality and how that content is managed and secured."
 hideEdit: true
-ms.date: 02/16/2023
+ms.date: 03/24/2023
 ---
 
 # Connected experiences and your content
@@ -39,6 +39,7 @@ Some connected experiences use machine learning services to perform their functi
 > [!NOTE]
 > - For information about privacy controls available to manage connected experiences, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](overview-privacy-controls.md).
 > - For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
+> - For information about Microsoft Teams, see [Privacy and Microsoft Teams](/microsoftteams/teams-privacy) and [Location of data in Microsoft Teams](/microsoftteams/location-of-data-in-teams).
 
 ## Connected experiences that analyze your content
 
@@ -90,6 +91,7 @@ For more information, see [Encryption and key management overview](/compliance/a
 For information about where Microsoft stores data for Microsoft 365 customers, see the following articles:
 - [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations)
 - [Overview of Product Terms Data Residency](/microsoft-365/enterprise/m365-dr-product-terms-dr)
+- [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 ### How Microsoft controls access to Microsoft 365 data
 
