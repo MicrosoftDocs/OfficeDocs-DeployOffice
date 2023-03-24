@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides information about how connected experiences for Microsoft 365 Apps use content to provide its functionality and how that content is managed and secured."
 hideEdit: true
-ms.date: 02/16/2023
+ms.date: 03/24/2023
 ---
 
 # Connected experiences and your content
