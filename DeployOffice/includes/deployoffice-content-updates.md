@@ -2,6 +2,19 @@
 
 
 
+## Week of March 20, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/20/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 3/20/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 3/22/2023 | [Adopt servicing profiles for Microsoft 365 Apps](/DeployOffice/fieldnotes/adopt-servicing-profiles) | modified |
+| 3/22/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+| 3/22/2023 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
+| 3/23/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
+
+
 ## Week of March 13, 2023
 
 
@@ -42,15 +55,3 @@
 | 2/23/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
 | 2/23/2023 | [Choose how to deliver updates for Microsoft 365 Apps for enterprise](/DeployOffice/fieldnotes/choose-how-to-deliver-updates) | modified |
 | 2/24/2023 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
-
-
-## Week of February 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/14/2023 | [Windows 8.1 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-81-support) | modified |
-| 2/14/2023 | [Connected experiences in Office](/DeployOffice/privacy/connected-experiences) | modified |
-| 2/15/2023 | [Plan your enterprise deployment of Microsoft 365 Apps](/DeployOffice/plan-microsoft-365-apps) | modified |
-| 2/16/2023 | [Connected experiences and your content](/DeployOffice/privacy/connected-experiences-content) | added |
-| 2/17/2023 | Update Office LTSC 2021 Preview to Office LTSC 2021 | removed |
