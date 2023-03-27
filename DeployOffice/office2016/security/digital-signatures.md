@@ -75,7 +75,7 @@ This example demonstrates the ability to add multiple signatures to a single Off
 
 ### Compatibility issues with Office documents prior to Office 2016
 
-Office 2016, just as Office 2013, Office 2010 and Office 2007, uses the XML-DSig format for digital signatures. In addition, Office 2016 has support for XAdES (XML Advanced Electronic Signatures). XAdES is a set of tiered extensions to XML-DSig, the levels of which build upon the previous levels to provide more reliable digital signatures. For more information about the levels of XAdES that are supported in Office 2016, see [Planning digital signature levels in Office 2016 documents](use-digital-signatures-with-office.md#planlevels) later in this article. For more information about the details of XAdES, see the specification for [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631).
+Office 2016, just as Office 2013, Office 2010 and Office 2007, uses the XML-DSig format for digital signatures. In addition, Office 2016 has support for XAdES (XML Advanced Electronic Signatures). XAdES is a set of tiered extensions to XML-DSig, the levels of which build upon the previous levels to provide more reliable digital signatures. For more information about the levels of XAdES that are supported in Office 2016, see [Planning digital signature levels in Office 2016 documents](digital-signatures.md#planlevels) later in this article. For more information about the details of XAdES, see the specification for [XML Advanced Electronic Signatures (XAdES)](https://go.microsoft.com/fwlink/p/?LinkId=186631).
   
 It is important to be aware that digital signatures that are created in Office 2016 are incompatible with versions of Office that are earlier than the 2007 Office system. For example, if a document is signed by using an application in Office 2016, Office 2013, Office 2010, or Office 2007, and then opened by using an application in Office, 2003 that has the Office Compatibility Pack installed, the user is informed that the document was signed in a newer version of Office and that the digital signature is lost.
   
@@ -83,9 +83,9 @@ The following figure shows the warning that the user sees after opening a docume
   
 **Digital signature warning for documents originally signed in Office 2003 or earlier versions.**
 
-![Figure 1 Compatibility Issues.](../images/CompatibilityIssues.jpg)
+![Figure 1 Compatibility Issues.](../../images/CompatibilityIssues.jpg)
   
-Also, if you use XAdES for a digital signature in Office 2016, the digital signature will not be compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](use-digital-signatures-with-office.md#configsigs) later in this article. 
+Also, if you use XAdES for a digital signature in Office 2016, the digital signature will not be compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](digital-signatures.md#configsigs) later in this article. 
   
 If you want digital signatures that you create in Office 2016 to be compatible with Office 2003 and earlier versions, you can configure the Group Policy setting, **Legacy format signatures**, and set it to **Enabled**. This Group Policy setting is located under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Signing**. After you change this setting to **Enabled**, the Office 2016 applications use the Office 2003 binary format to apply digital signatures to Office 97-2003 binary documents that you created in Office 2016. 
   

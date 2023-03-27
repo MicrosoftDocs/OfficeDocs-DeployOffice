@@ -54,7 +54,7 @@ Because the **Welcome to Office** experience lets users enable or disable severa
 
 You can suppress the **Welcome to Office** experience by enabling the **Suppress recommended settings dialog** setting. This Group Policy setting is located in the Group Policy Object Editor under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. This setting prevents the **Welcome to Office** experience from appearing the first time that a user starts Office 2016. If you enable this setting, the automatic updating feature remains unchanged and the privacy options that control Internet-based services aren't enabled. 
   
-If you suppress the **Welcome to Office** experience without enabling certain privacy options, you disable several features that improve Office 2016 applications and you could expose a computer to security threats. Therefore, if you enable this setting we recommend that you also enable all the privacy options that are discussed in [Configure privacy options in Office](privacy-options-in-office.md#privacyoptions).
+If you suppress the **Welcome to Office** experience without enabling certain privacy options, you disable several features that improve Office 2016 applications and you could expose a computer to security threats. Therefore, if you enable this setting we recommend that you also enable all the privacy options that are discussed in [Configure privacy options in Office](privacy-options.md#privacyoptions).
   
 Most organizations enable this setting, including organizations that have a highly restrictive security environment or a security environment that restricts Internet access.
   

@@ -69,7 +69,7 @@ We recommend that you do not change the default behavior of Protected View. Prot
     
 - Add trusted Microsoft Store applications.
     
-In addition, you can use File Block settings and Office File Validation settings to force files to open in Protected View. For more information, see [Force files to open in Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md#force) later in this article. 
+In addition, you can use File Block settings and Office File Validation settings to force files to open in Protected View. For more information, see [Force files to open in Protected View in Office 2016](protected-view.md#force) later in this article. 
   
 
 <a name="bypass"> </a>
@@ -107,7 +107,7 @@ The File Block feature lets you prevent users from opening or saving certain fil
     
 - Blocked and opened in Protected View (users can enable editing). 
     
-By selecting the second or third option, you can force blocked file types to open in Protected View. You can configure File Block settings only on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. For more information about File Block settings, see [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md).
+By selecting the second or third option, you can force blocked file types to open in Protected View. You can configure File Block settings only on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. For more information about File Block settings, see [Block specific file format types in Office 2016](block-specific-file-format-types.md).
   
 ### Use Office File Validation settings to force Office 2016 files to open in Protected View
 
@@ -117,7 +117,7 @@ Office File Validation is a security feature that scans files for file format ex
     
 - **Open in Protected View** Files that fail Office File Validation are opened in Protected View. This is the default. 
     
-By selecting the second option, you can restrict Protected View behavior for files that fail Office File Validation. You can configure this Office File Validation setting only on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. For more information about Office File Validation settings, see [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md).
+By selecting the second option, you can restrict Protected View behavior for files that fail Office File Validation. You can configure this Office File Validation setting only on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. For more information about Office File Validation settings, see [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-using-file-validation.md).
   
 
 <a name="unsafe"> </a>
@@ -140,6 +140,6 @@ HKEY_CURRENT_USER\Software\Microsoft\Office\Common\Security\TrustedStoreApps\
 Contact the developer of the application in order to obtain the PFN of the application you want to add to the Trusted Microsoft Store application. This is a global setting that applies to Excel 2016, PowerPoint 2016, and Word 2016.
   
 ## Related articles
-- [Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
-- [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)
+- [Block specific file format types in Office 2016](block-specific-file-format-types.md)
+- [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-using-file-validation.md)
 

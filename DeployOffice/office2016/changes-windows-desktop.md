@@ -19,7 +19,7 @@ ms.date: 12/31/2022
 
 Each of the following tables describes features that are changed or removed in the applications in Office 2016 for Windows.
 
-There are tables for the following applications: [Access](changes-in-office-2016-for-windows-desktop.md#BKMK_Access), [Excel](changes-in-office-2016-for-windows-desktop.md#BKMK_Excel), [OneNote](changes-in-office-2016-for-windows-desktop.md#BKMK_OneNote), [Outlook](changes-in-office-2016-for-windows-desktop.md#BKMK_Outlook), [PowerPoint](changes-in-office-2016-for-windows-desktop.md#BKMK_PowerPoint), [Publisher](changes-in-office-2016-for-windows-desktop.md#BKMK_Publisher), and [Word](changes-in-office-2016-for-windows-desktop.md#BKMK_Word). The [Office suite](changes-in-office-2016-for-windows-desktop.md#BKMK_Suite) table lists features that are changed or removed from several or all apps. 
+There are tables for the following applications: [Access](changes-windows-desktop.md#BKMK_Access), [Excel](changes-windows-desktop.md#BKMK_Excel), [OneNote](changes-windows-desktop.md#BKMK_OneNote), [Outlook](changes-windows-desktop.md#BKMK_Outlook), [PowerPoint](changes-windows-desktop.md#BKMK_PowerPoint), [Publisher](changes-windows-desktop.md#BKMK_Publisher), and [Word](changes-windows-desktop.md#BKMK_Word). The [Office suite](changes-windows-desktop.md#BKMK_Suite) table lists features that are changed or removed from several or all apps. 
 
 If you're looking for information about the new features in Office 2016, see [Microsoft 365 Training](https://support.microsoft.com/training).
 
@@ -113,4 +113,4 @@ The following table lists features that are changed or removed in Word 2016.
 
 ## Related articles
 
-- [What's new for admins in Office 2016](what-s-new-for-admins-in-office-2016.md)
+- [What's new for admins in Office 2016](whats-new-admins.md)

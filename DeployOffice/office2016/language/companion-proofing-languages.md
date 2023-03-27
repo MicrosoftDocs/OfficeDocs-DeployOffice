@@ -21,10 +21,10 @@ Each language version of Office 2016 includes proofing tools for a set of compan
   
 Proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
   
-Depending on the number of user interface languages that you want to deploy and the included companion proofing languages, Office 2016 Language Packs might provide all the proofing tools that you want. For more information about Office 2016 Language Packs, see [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md).
+Depending on the number of user interface languages that you want to deploy and the included companion proofing languages, Office 2016 Language Packs might provide all the proofing tools that you want. For more information about Office 2016 Language Packs, see [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md).
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
   
 <a name="BKMK_Identify"> </a>
 ## Identify companion proofing languages for Office
@@ -77,7 +77,7 @@ The following table lists companion proofing languages for each primary language
 |Vietnamese  <br/> |Vietnamese, English, French  <br/> |
    
 ## Related topics
-[Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+[Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
-[Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+[Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
 

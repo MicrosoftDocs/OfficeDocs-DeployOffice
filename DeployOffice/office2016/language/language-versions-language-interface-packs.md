@@ -22,7 +22,7 @@ An installation of Office 2016 can include applications or user interface elemen
 This article describes the language versions that are available for a subset of Office 2016 applications, the Office 2016 applications that will work with Language Interface Packs, and the recommended base languages to install for Office 2016 Language Interface Packs.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
   
     
 <a name="BKMK_ApplicationsLanguageAvailability"> </a>
@@ -169,10 +169,10 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Valencian  <br/> |Spanish  <br/> |
 |Welsh  <br/> |English  <br/> |
    
-For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
+For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
   
 ## Related topics
-[Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+[Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
-[Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+[Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
 
