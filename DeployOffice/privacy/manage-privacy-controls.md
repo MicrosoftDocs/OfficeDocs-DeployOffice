@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise by using policy settings."
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 03/27/2023
 ---
 
 # Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise
@@ -61,7 +61,7 @@ If you enable this policy setting, you must choose which level of diagnostic dat
 
 - If you choose ***Required***, the minimum data necessary to help keep Office secure, up-to-date, and performing as expected on the device it’s installed on is sent to Microsoft.
 
-- If you choose ***Optional***, additional data that helps make product improvements and provides enhanced information to help detect, diagnose, and remediate issues is sent to Microsoft. If you choose to send optional diagnostic data, required diagnostic data is also included.
+- If you choose ***Optional***, additional data that helps make product improvements and provides enhanced information to help detect, diagnose, and remediate issues is sent to Microsoft. This data may also be used in aggregate to train and improve experiences powered by machine learning, such as recommended actions, text predictions, and contextual help. If you choose to send optional diagnostic data, required diagnostic data is also included.
 
 - If you choose ***Neither***, no diagnostic data about Office client software running on the user’s device is sent to Microsoft. This option, however, significantly limits Microsoft’s ability to detect, diagnose, and remediate problems that your users may encounter when using Office.
 
