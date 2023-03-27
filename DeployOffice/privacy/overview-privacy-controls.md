@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise, including for diagnostic data and connected experiences."
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 03/27/2023
 ---
 
 # Overview of privacy controls for Microsoft 365 Apps for enterprise
@@ -36,7 +36,7 @@ There are three levels of diagnostic data for Microsoft 365 Apps for enterprise 
 
 - **Required** The minimum data necessary to help keep Office secure, up-to-date, and performing as expected on the device it’s installed on.
 
-- **Optional** Additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues.
+- **Optional** Additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and remediate issues. This data may also be used in aggregate to train and improve experiences powered by machine learning, such as recommended actions, text predictions, and contextual help.
 
 - **Neither** No diagnostic data about Office client software running on the user’s device is collected and sent to us. This option, however, significantly limits our ability to detect, diagnose, and remediate problems your users may encounter using Office.
 
