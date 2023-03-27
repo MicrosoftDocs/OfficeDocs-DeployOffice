@@ -21,7 +21,7 @@ To customize and deploy language setup and settings for Office 2016, follow the 
 
 > [!NOTE]
 > - If you're a user trying to install a language pack for a personal copy of Office at home, see [Language Accessory Pack for Office](https://support.microsoft.com/office/82ee1236-0f9a-45ee-9c72-05b026ee809f#ID0EAACAAA=Office_2016) instead of reading this article.
-> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
+> - This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
 
 <a name="BKMK_Overview"> </a>  
 ## Overview of customizing language setup and settings for Office
@@ -68,7 +68,7 @@ For Office 2016, you download an ISO image of the language packs, LIPs, and proo
     
     The list of files contains all available language packs, language interface packs, and proofing tools for the language and edition that you specified. For example, for Office Professional Plus 2016, the results will look similar to the following figure.
     
-     ![Screenshot showing available language pack downloads for Office Professional Plus 2016.](../images/b46e5aa7-a451-440c-ad85-d2145127f2a7.png)
+     ![Screenshot showing available language pack downloads for Office Professional Plus 2016.](../../images/b46e5aa7-a451-440c-ad85-d2145127f2a7.png)
   
 6. Select the appropriate package from the list and then, under **Download**, select the down arrow to download the ISO image to your computer or to a shared folder on your network. 
     

@@ -934,6 +934,86 @@
       "source_path": "Deployoffice/security/secure-and-control-access-to-office.md",
       "redirect_url": "/deployoffice/office2016/what-s-new-for-admins-in-office-2016",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Deployoffice/security/block-specific-file-format-types-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/block-specific-file-format-types-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/cryptography-and-encryption-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/cryptography-and-encryption-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/identity-authentication-and-authorization-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/identity-authentication-and-authorization-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/plan-security-settings-for-vba-macros-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/plan-security-settings-for-vba-macros-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/prevent-file-format-attacks-by-using-file-validation-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/prevent-file-format-attacks-by-using-file-validation-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/privacy-options-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/privacy-options-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/protect-sensitive-messages-and-documents-by-using-irm-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/remove-or-reset-file-passwords-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/remove-or-reset-file-passwords-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md",
+      "redirect_url": "/deployoffice/office2016/security/set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/use-digital-signatures-with-office.md",
+      "redirect_url": "/deployoffice/office2016/security/use-digital-signatures-with-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/add-or-remove-language-packs-after-deployment-of-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/add-or-remove-language-packs-after-deployment-of-office-2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/companion-proofing-languages-for-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/companion-proofing-languages-for-office-2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/customize-language-setup-and-settings-for-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/customize-language-setup-and-settings-for-office-2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/language-identifiers-and-optionstate-id-values-in-office-2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/language-versions-and-language-interface-packs-in-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/language-versions-and-language-interface-packs-in-office-2016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/plan-for-multilanguage-deployment-of-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/language/plan-for-multilanguage-deployment-of-office-2016",
+      "redirect_document_id": true
     }
   ]
 }
