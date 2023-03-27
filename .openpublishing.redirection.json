@@ -937,52 +937,52 @@
     },
     {
       "source_path": "Deployoffice/security/block-specific-file-format-types-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/block-specific-file-format-types-in-office",
+      "redirect_url": "/deployoffice/office2016/security/block-specific-file-format-types",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/cryptography-and-encryption-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/cryptography-and-encryption-in-office",
+      "redirect_url": "/deployoffice/office2016/security/cryptography-encryption",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/identity-authentication-and-authorization-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/identity-authentication-and-authorization-in-office",
+      "redirect_url": "/deployoffice/office2016/security/identity-authentication-authorization",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/plan-security-settings-for-vba-macros-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/plan-security-settings-for-vba-macros-in-office",
+      "redirect_url": "/deployoffice/office2016/security/plan-security-settings-vba-macros",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/prevent-file-format-attacks-by-using-file-validation-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/prevent-file-format-attacks-by-using-file-validation-in-office",
+      "redirect_url": "/deployoffice/office2016/security/prevent-file-format-attacks-using-file-validation",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/privacy-options-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/privacy-options-in-office",
+      "redirect_url": "/deployoffice/office2016/security/privacy-options",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/protect-sensitive-messages-and-documents-by-using-irm-in-office",
+      "redirect_url": "/deployoffice/office2016/security/protect-sensitive-messages-documents-using-irm",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/remove-or-reset-file-passwords-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/remove-or-reset-file-passwords-in-office",
+      "redirect_url": "/deployoffice/office2016/security/remove-reset-file-passwords",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office",
+      "redirect_url": "/deployoffice/office2016/security/protected-view",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/security/use-digital-signatures-with-office.md",
-      "redirect_url": "/deployoffice/office2016/security/use-digital-signatures-with-office",
+      "redirect_url": "/deployoffice/office2016/security/digital-signatures",
       "redirect_document_id": true
     },
     {

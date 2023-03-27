@@ -56,9 +56,9 @@ By default, Office validates files. Any files that fail validation are opened in
   
 We recommend that you do not change the default settings for Office file validation. However, some organizations might have to configure Office file validation settings to suit special security requirements. Specifically, the following types of organizations have security requirements that might require a change to the default settings for the Office file validation:
   
-- **Organizations that restrict access to the Internet.** Office file validation prompts users to send validation error information to Microsoft approximately every two weeks. This could violate an organization's Internet access policies. In this case, you might choose to prevent Office from sending the information to Microsoft. For more information, see [Turn off Office file validation reporting in Office](prevent-file-format-attacks-by-using-file-validation-in-office.md#errorreport) later in this article. 
+- **Organizations that restrict access to the Internet.** Office file validation prompts users to send validation error information to Microsoft approximately every two weeks. This could violate an organization's Internet access policies. In this case, you might choose to prevent Office from sending the information to Microsoft. For more information, see [Turn off Office file validation reporting in Office](prevent-file-format-attacks-using-file-validation.md#errorreport) later in this article. 
     
-- **Organizations that have highly restrictive security environments.** You can configure Office file validation so that files that fail validation cannot be opened or can only be opened in Protected View. This is more restrictive than the default settings for Office file validation and might be suitable to organizations that have a locked-down security environment. For more information about how to change document behavior, see [Change document behavior when validation fails in Office](prevent-file-format-attacks-by-using-file-validation-in-office.md#behavior) later in this article. 
+- **Organizations that have highly restrictive security environments.** You can configure Office file validation so that files that fail validation cannot be opened or can only be opened in Protected View. This is more restrictive than the default settings for Office file validation and might be suitable to organizations that have a locked-down security environment. For more information about how to change document behavior, see [Change document behavior when validation fails in Office](prevent-file-format-attacks-using-file-validation.md#behavior) later in this article. 
     
 - **Organizations that do not want their files sent to Microsoft.** If users allow it, Office file validation sends a copy of all files that fail validation to Microsoft. You can configure Office file validation so that users are not prompted to send validation information to Microsoft. 
     
@@ -104,9 +104,9 @@ Every time that a file fails validation, Office 2016 collects information about 
 > Office file validation can occasionally indicate that a file failed validation when, in fact, the file is valid. Validation reporting helps Microsoft improve Office file validation and minimize the occurrence of false positive results. 
   
 ## Related topics
-[Block specific file format types in Office 2016](block-specific-file-format-types-in-office.md)
+[Block specific file format types in Office 2016](block-specific-file-format-types.md)
   
-[Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-by-using-file-validation-in-office.md)
+[Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-using-file-validation.md)
   
-[Set up a safe environment to open files by using Protected View in Office 2016](set-up-a-safe-environment-to-open-files-by-using-protected-view-in-office.md)
+[Set up a safe environment to open files by using Protected View in Office 2016](protected-view.md)
 
