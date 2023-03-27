@@ -929,6 +929,11 @@
       "source_path": "Deployoffice/overview-update-channels.md",
       "redirect_url": "/deployoffice/updates/overview-update-channels",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/security/secure-and-control-access-to-office.md",
+      "redirect_url": "/deployoffice/office2016/what-s-new-for-admins-in-office-2016",
+      "redirect_document_id": false
     }
   ]
 }
