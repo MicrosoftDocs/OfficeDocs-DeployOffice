@@ -1,8 +1,8 @@
 
 # Deployment guide for Office 2016
 
-## [What's new for admins](what-s-new-for-admins-in-office-2016.md)
-## [Changes in Office 2016](changes-in-office-2016-for-windows-desktop.md)
+## [What's new for admins](whats-new-admins.md)
+## [Changes in Office 2016](changes-windows-desktop.md)
 ## [Office Help & Training](https://support.microsoft.com/office)
 
 ## Application compatibility

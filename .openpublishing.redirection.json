@@ -387,7 +387,7 @@
     },
     {
       "source_path": "DeployOffice/office2016/index.md",
-      "redirect_url": "what-s-new-for-admins-in-office-2016",
+      "redirect_url": "whats-new-admins",
       "redirect_document_id": false
     },
     {
@@ -932,7 +932,7 @@
     },
     {
       "source_path": "Deployoffice/security/secure-and-control-access-to-office.md",
-      "redirect_url": "/deployoffice/office2016/what-s-new-for-admins-in-office-2016",
+      "redirect_url": "/deployoffice/office2016/whats-new-admins",
       "redirect_document_id": false
     },
     {
@@ -1013,6 +1013,16 @@
     {
       "source_path": "Deployoffice/office2016/plan-for-multilanguage-deployment-of-office-2016.md",
       "redirect_url": "/deployoffice/office2016/language/plan-multilanguage-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/changes-in-office-2016-for-windows-desktop.md",
+      "redirect_url": "/deployoffice/office2016/changes-windows-desktop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Deployoffice/office2016/what-s-new-for-admins-in-office-2016.md",
+      "redirect_url": "/deployoffice/office2016/whats-new-admins",
       "redirect_document_id": true
     }
   ]
