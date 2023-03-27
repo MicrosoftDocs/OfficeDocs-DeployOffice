@@ -29,13 +29,13 @@ As you plan your encryption settings, consider the following:
     
 - We recommend that you enforce password length and complexity to help ensure that strong passwords are used when you encrypt data.
     
-- We recommend that you do not use RC4 encryption. For more information, see [Compatibility with previous versions of Office](cryptography-and-encryption-in-office.md#compat) later in this article. 
+- We recommend that you do not use RC4 encryption. For more information, see [Compatibility with previous versions of Office](cryptography-encryption.md#compat) later in this article. 
     
-- There isn't an administrative setting that forces users to encrypt documents. However, there  is  an administrative setting that prevents users from adding passwords to documents and, therefore, prevent documents from being encrypted. For more information, see [Cryptography and encryption settings](cryptography-and-encryption-in-office.md#settings) later in this article. 
+- There isn't an administrative setting that forces users to encrypt documents. However, there  is  an administrative setting that prevents users from adding passwords to documents and, therefore, prevent documents from being encrypted. For more information, see [Cryptography and encryption settings](cryptography-encryption.md#settings) later in this article. 
     
 - Saving documents in trusted locations doesn't affect encryption settings. If a document is encrypted and it is saved in a trusted location, a user still must provide a password to open the document.
     
-- If you do allow users to password protect documents, and they later forget or lose the password, you can use the DocRecrypt tool to reset or remove the password. For more information, see the [Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md) article. 
+- If you do allow users to password protect documents, and they later forget or lose the password, you can use the DocRecrypt tool to reset or remove the password. For more information, see the [Remove or reset file passwords in Office 2016](remove-reset-file-passwords.md) article. 
     
     
 <a name="about"> </a>
@@ -128,6 +128,6 @@ If your organization uses the Microsoft Office Compatibility Pack for Word, Exce
 - Users can't use the graphical user interface in earlier versions of Office to change the encryption settings for Open XML Format files.
     
 ## Related topics
-[Remove or reset file passwords in Office 2016](remove-or-reset-file-passwords-in-office.md)
+[Remove or reset file passwords in Office 2016](remove-reset-file-passwords.md)
 
 [Office Document Cryptography Structure Specification](/openspecs/office_file_formats/ms-offcrypto/3c34d72a-1a61-4b52-a893-196f9157f083)

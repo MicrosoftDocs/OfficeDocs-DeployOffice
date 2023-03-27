@@ -22,7 +22,7 @@ Support for multiple languages and languages other than the default are provided
 To deploy Office 2016 in multiple languages, you must plan carefully. This article discusses the planning considerations for setup and the customizations that you can make when you install language packs or proofing tools.
   
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
   
   
 <a name="BKMK_PlanSetup"> </a>
@@ -30,7 +30,7 @@ To deploy Office 2016 in multiple languages, you must plan carefully. This artic
 
 The language-neutral design of Office 2016 helps simplify the deployment of Office products in multiple languages. Instead of creating a series of installations, you enable setup to coordinate a single installation of multiple language versions.
   
-All language-specific components for a particular language are contained in an Office 2016 Language Pack. Each Office 2016 Language Pack includes language-specific folders for all Office 2016 products that are available in that language. Folders are identified by a language tag that is appended to the folder name. For a complete list of language tags, see [Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md).
+All language-specific components for a particular language are contained in an Office 2016 Language Pack. Each Office 2016 Language Pack includes language-specific folders for all Office 2016 products that are available in that language. Folders are identified by a language tag that is appended to the folder name. For a complete list of language tags, see [Language identifiers and OptionState Id values in Office 2016](language-identifiers-optionstate-id-values.md).
   
  You install all the Office 2016 Language Packs that you want at the same time by copying them to a network installation point that contains at least one complete Office 2016 product. By default, setup automatically installs the language version that matches the Windows user locale that is set on each user's computer. Or, you can override this default behavior and manage the distribution of multiple language versions manually. For example, you can perform any of the following tasks: 
   
@@ -44,11 +44,11 @@ All language-specific components for a particular language are contained in an O
     
 - Deploy the Microsoft Office 2016 proofing tools for additional languages
     
-Each Office 2016 Language Pack contains the proofing tools for one or more additional languages. For example, the Office 2016 Language Pack - Danish contains the proofing tools for English and German, in addition to Danish. All Office 2016 Language Packs contain the proofing tools for English. For more information about proofing tools, see [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools). To determine which companion proofing languages are included in an Office 2016 Language Pack, see [Companion proofing languages for Office 2016](companion-proofing-languages-for-office-2016.md). 
+Each Office 2016 Language Pack contains the proofing tools for one or more additional languages. For example, the Office 2016 Language Pack - Danish contains the proofing tools for English and German, in addition to Danish. All Office 2016 Language Packs contain the proofing tools for English. For more information about proofing tools, see [Plan for Office proofing tools](plan-multilanguage-deployment.md#BKMK_PlanProofingTools). To determine which companion proofing languages are included in an Office 2016 Language Pack, see [Companion proofing languages for Office 2016](companion-proofing-languages.md). 
   
 Before setup installs a language version of an Office 2016 product, setup determines whether the user has the required operating system support for that language. Setup stops the installation if there's no support. For example, if a user hasn't enabled support for East Asian languages, setup doesn't install the Japanese version of Office 2016.
   
-Determine the languages that you want before you begin your deployment. There are special steps that you must take to include additional languages if you have to change users' configurations after the initial deployment. For more information, see [Add or remove language packs after deployment of Office 2016](add-or-remove-language-packs-after-deployment-of-office-2016.md). 
+Determine the languages that you want before you begin your deployment. There are special steps that you must take to include additional languages if you have to change users' configurations after the initial deployment. For more information, see [Add or remove language packs after deployment of Office 2016](add-remove-language-packs.md). 
   
 <a name="BKMK_Overview"> </a>
 ### Understanding the setup logic for Shell UI language
@@ -71,13 +71,13 @@ If you want to install only one language version of Office 2016 on each client c
     
 If you're installing multiple languages, the language of the setup user interface follows the logic described previously. However, the languages that are installed on the computer and the language of the Shell UI are determined by the entries you specify in Config.xml. 
   
-For specific steps on how to customize setup for different scenarios, including how to modify Config.xml, see applicable sections in [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md):
+For specific steps on how to customize setup for different scenarios, including how to modify Config.xml, see applicable sections in [Customize language setup and settings for Office 2016](customize-language-setup-settings.md):
   
-- [Deploy a default language version of Office](customize-language-setup-and-settings-for-office-2016.md#BKMK_DeployDefaultLanguageVersionOfOffice)
+- [Deploy a default language version of Office](customize-language-setup-settings.md#BKMK_DeployDefaultLanguageVersionOfOffice)
     
-- [Specify which languages to install](customize-language-setup-and-settings-for-office-2016.md#BKMK_SpecifyLanguagesToInstall)
+- [Specify which languages to install](customize-language-setup-settings.md#BKMK_SpecifyLanguagesToInstall)
     
-- [Deploy different languages to different groups of users](customize-language-setup-and-settings-for-office-2016.md#BKMK_DeployDifferentLanguages)
+- [Deploy different languages to different groups of users](customize-language-setup-settings.md#BKMK_DeployDifferentLanguages)
     
 <a name="BKMK_PlanCustomizations"> </a>
 ## Plan language customizations for Office
@@ -106,9 +106,9 @@ You configure language settings by using one of the following methods:
     
 - **Language Settings tool** If you don't enforce language settings by policy, users who work in Office 2016 applications can use the Language Settings tool to change their language settings. 
     
-For specific steps on how to use these tools to customize Office 2016 for multiple language deployments, see [Customize language settings](customize-language-setup-and-settings-for-office-2016.md#BKMK_CustomizeLanguageSettings).
+For specific steps on how to use these tools to customize Office 2016 for multiple language deployments, see [Customize language settings](customize-language-setup-settings.md#BKMK_CustomizeLanguageSettings).
   
-You can also configure language-specific settings, such as number format, that are related to user locale. For more information, see [Customize language-specific settings that are related to user locale](customize-language-setup-and-settings-for-office-2016.md#BKMK_LangatUserLocale).
+You can also configure language-specific settings, such as number format, that are related to user locale. For more information, see [Customize language-specific settings that are related to user locale](customize-language-setup-settings.md#BKMK_LangatUserLocale).
   
 <a name="BKMK_PlanProofingTools"> </a>
 ## Plan for Office proofing tools
@@ -124,7 +124,7 @@ You can deploy additional proofing tools for users who have to edit documents in
   
 - **Office 2016 Language Pack** Use this option if users want both the user interface and the proofing tools for a specific language. Often, one language pack can provide all the proofing tool languages that you want. The companion proofing tool languages that are contained in a language pack mirror those of what's contained in language versions of Office 2016. You can also use the Office Multilanguage Pack, which contains all of the Office language packs. 
     
-    For a list of companion languages, see [Companion proofing languages for Office 2016](companion-proofing-languages-for-office-2016.md). If a language pack has all the proofing tool languages that you want, deploy a language pack by using the instructions that fit your scenario in [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md).
+    For a list of companion languages, see [Companion proofing languages for Office 2016](companion-proofing-languages.md). If a language pack has all the proofing tool languages that you want, deploy a language pack by using the instructions that fit your scenario in [Customize language setup and settings for Office 2016](customize-language-setup-settings.md).
     
 - **Proofing Tools 2016** This product contains the proofing tools for all languages that are available with Office 2016. Use this option if you have to have proofing tools that aren't included in the set of companion languages for any languages that are installed or included in an additional language pack that you could install. 
     
@@ -134,19 +134,19 @@ Proofing tools don't include bilingual dictionaries or word breakers. Those tool
   
  Individual Office Language Packs, the Office Multilanguage Pack, and Proofing Tools 2016 are available through Microsoft Volume Licensing programs. 
   
-For instructions on downloading language packs and proofing tools, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
+For instructions on downloading language packs and proofing tools, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
   
 <a name="precache"> </a>
 ### Precaching the local installation source for the Office 2016 proofing tools
 
 
-When you deploy the Office 2016 proofing tools, setup creates a local installation source on the user's computer — a copy of the compressed source files for the Office 2016 proofing tools. After the files are copied to the user's computer, setup completes the installation from the local installation source. You can minimize the load on the network by deploying the local installation source separately, before you deploy the Office 2016 proofing tools. For information about how to cache the local installation source for the Office proofing tools, see [Precache the local installation source for Office 2010](/previous-versions/office/office-2010/cc179231(v=office.14)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) Use the Setup.exe and Config.xml files from the ProofKit.WW folder from the Proofing Tools 2016 ISO. For instructions on downloading the Proofing Tools 2016 ISO, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
+When you deploy the Office 2016 proofing tools, setup creates a local installation source on the user's computer — a copy of the compressed source files for the Office 2016 proofing tools. After the files are copied to the user's computer, setup completes the installation from the local installation source. You can minimize the load on the network by deploying the local installation source separately, before you deploy the Office 2016 proofing tools. For information about how to cache the local installation source for the Office proofing tools, see [Precache the local installation source for Office 2010](/previous-versions/office/office-2010/cc179231(v=office.14)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.) Use the Setup.exe and Config.xml files from the ProofKit.WW folder from the Proofing Tools 2016 ISO. For instructions on downloading the Proofing Tools 2016 ISO, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
   
 ## Related articles
-[Language identifiers and OptionState Id values in Office 2016](language-identifiers-and-optionstate-id-values-in-office-2016.md)
+[Language identifiers and OptionState Id values in Office 2016](language-identifiers-optionstate-id-values.md)
   
-[Companion proofing languages for Office 2016](companion-proofing-languages-for-office-2016.md)
+[Companion proofing languages for Office 2016](companion-proofing-languages.md)
   
-[Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+[Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
   
-[Add or remove language packs after deployment of Office 2016](add-or-remove-language-packs-after-deployment-of-office-2016.md)
+[Add or remove language packs after deployment of Office 2016](add-remove-language-packs.md)
