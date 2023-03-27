@@ -21,11 +21,11 @@ Use the values in the Language Identifier and OptionState ID tables to configure
   
 This is a reference article. The values provided in the tables are necessary for completing procedures that are described in the following articles:
   
-- [Add or remove language packs after deployment of Office 2016](add-or-remove-language-packs-after-deployment-of-office-2016.md)
+- [Add or remove language packs after deployment of Office 2016](add-remove-language-packs.md)
     
-- [Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+- [Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
     
-- [Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+- [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
     
 > [!IMPORTANT]
 > This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
@@ -44,7 +44,7 @@ The language folders that are included in a fully localized version of an Office
   
 Office 2016 offers localized versions in all the languages that are listed in the following table. Folders for the language-specific components are identified by the language tag that is shown in the table. The Windows operating system uses locale identifiers (LCIDs) to identify languages in the Windows registry.
   
-In addition to the fully localized languages listed here, Office 2016 provides Language Interface Packs (LIPs), which contain a subset of language-specific components and are designed to be installed together with a logical parent language. Elements that are not localized in the LIP language appear in the parent language. For more information about LIPs, see [Language Interface Packs](language-versions-and-language-interface-packs-in-office-2016.md#BKMK_LanguageInterfacePacks).
+In addition to the fully localized languages listed here, Office 2016 provides Language Interface Packs (LIPs), which contain a subset of language-specific components and are designed to be installed together with a logical parent language. Elements that are not localized in the LIP language appear in the parent language. For more information about LIPs, see [Language Interface Packs](language-versions-language-interface-packs.md#BKMK_LanguageInterfacePacks).
   
 **Language tags (language IDs), and LCIDs available in Office 2016**
 
@@ -96,7 +96,7 @@ In addition to the fully localized languages listed here, Office 2016 provides L
 <a name="BKMK_OptionStateID"> </a>
 ## Proofing Tools Config.xml OptionState Id values
 
-The following table provides the OptionState ID values for the Office proofing tools. It is ordered alphabetically by language. Use these values to modify the Config.xml file in the ProofKit.WW folder when you customize the setup of the Office proofing tools. For more information about proofing tools, see [Plan for Office proofing tools](plan-for-multilanguage-deployment-of-office-2016.md#BKMK_PlanProofingTools). For instructions on how to customize proofing tools, see [Customize and install the Office proofing tools](customize-language-setup-and-settings-for-office-2016.md#BKMK_CustomizeProofingTools).
+The following table provides the OptionState ID values for the Office proofing tools. It is ordered alphabetically by language. Use these values to modify the Config.xml file in the ProofKit.WW folder when you customize the setup of the Office proofing tools. For more information about proofing tools, see [Plan for Office proofing tools](plan-multilanguage-deployment.md#BKMK_PlanProofingTools). For instructions on how to customize proofing tools, see [Customize and install the Office proofing tools](customize-language-setup-settings.md#BKMK_CustomizeProofingTools).
   
 **OptionState IDs for each Proofing Tools language in Office 2016**
 
@@ -157,9 +157,9 @@ The following table provides the OptionState ID values for the Office proofing t
 |ProofingTools_1056  <br/> |Urdu  <br/> |
    
 ## Related topics
-[Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+[Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
-[Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+[Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
   
-[Language versions and language interface packs in Office 2016](language-versions-and-language-interface-packs-in-office-2016.md)
+[Language versions and language interface packs in Office 2016](language-versions-language-interface-packs.md)
 

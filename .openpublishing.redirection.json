@@ -987,32 +987,32 @@
     },
     {
       "source_path": "Deployoffice/office2016/add-or-remove-language-packs-after-deployment-of-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/add-or-remove-language-packs-after-deployment-of-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/add-remove-language-packs-2016",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office2016/companion-proofing-languages-for-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/companion-proofing-languages-for-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/companion-proofing-languages",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office2016/customize-language-setup-and-settings-for-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/customize-language-setup-and-settings-for-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/customize-language-setup-settings",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/language-identifiers-and-optionstate-id-values-in-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/language-identifiers-optionstate-id-values",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office2016/language-versions-and-language-interface-packs-in-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/language-versions-and-language-interface-packs-in-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/language-versions-language-interface-packs",
       "redirect_document_id": true
     },
     {
       "source_path": "Deployoffice/office2016/plan-for-multilanguage-deployment-of-office-2016.md",
-      "redirect_url": "/deployoffice/office2016/language/plan-for-multilanguage-deployment-of-office-2016",
+      "redirect_url": "/deployoffice/office2016/language/plan-multilanguage-deployment",
       "redirect_document_id": true
     }
   ]

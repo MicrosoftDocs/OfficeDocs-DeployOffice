@@ -36,9 +36,9 @@
 ### [Troubleshoot volume activation](../vlactivation/troubleshoot-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json)
 
 ## Language deployment
-### [Plan for multilanguage deployment](language/plan-for-multilanguage-deployment-of-office-2016.md)
-### [Customize language setup and settings](language/customize-language-setup-and-settings-for-office-2016.md)
-### [Add or remove language packs after deployment](language/add-or-remove-language-packs-after-deployment-of-office-2016.md)
-### [Language versions and language interface packs](language/language-versions-and-language-interface-packs-in-office-2016.md)
-### [Companion proofing languages](language/companion-proofing-languages-for-office-2016.md)
-### [Language identifiers and OptionState Id values](language/language-identifiers-and-optionstate-id-values-in-office-2016.md)
+### [Plan for multilanguage deployment](language/plan-multilanguage-deployment.md)
+### [Customize language setup and settings](language/customize-language-setup-settings.md)
+### [Add or remove language packs after deployment](language/add-remove-language-packs.md)
+### [Language versions and language interface packs](language/language-versions-language-interface-packs.md)
+### [Companion proofing languages](language/companion-proofing-languages.md)
+### [Language identifiers and OptionState Id values](language/language-identifiers-optionstate-id-values.md)

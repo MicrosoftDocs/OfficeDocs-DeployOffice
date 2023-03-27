@@ -169,10 +169,10 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Valencian  <br/> |Spanish  <br/> |
 |Welsh  <br/> |English  <br/> |
    
-For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-and-settings-for-office-2016.md#DownloadLIPandProofTools).
+For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
   
 ## Related topics
-[Plan for multilanguage deployment of Office 2016](plan-for-multilanguage-deployment-of-office-2016.md)
+[Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
-[Customize language setup and settings for Office 2016](customize-language-setup-and-settings-for-office-2016.md)
+[Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
 
