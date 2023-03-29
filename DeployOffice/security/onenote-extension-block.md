@@ -42,7 +42,7 @@ The following table shows the version, for each update channel, in which the blo
 | Current Channel                          | *Version 2304* | *Second half of April 2023* |
 | Monthly Enterprise Channel               | *Version 2304* | *June 13, 2023*             |
 | Semi-Annual Enterprise Channel (Preview) | *Version 2308* | *September 12, 2023*        |
-| Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2023*           |
+| Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2024*           |
 
 > [!NOTE]
 > - This change will also affect OneNote in retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
