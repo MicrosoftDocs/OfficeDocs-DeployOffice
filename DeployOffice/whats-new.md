@@ -10,12 +10,18 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
-ms.date: 01/23/2023
+ms.date: 03/29/2023
 ---
 
 # What's new for deploying Microsoft 365 Apps
 
 This article lists new features, tools, and articles for IT Pros who deploy Microsoft 365 Apps in the enterprise. For details on Microsoft 365 announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+## March 2023
+
+### OneNote to start blocking embedded files with dangerous extensions
+
+Starting with Version 2304, OneNote will block users from directly opening an embedded file with a dangerous extension. For more information, see [OneNote blocks embedded files that have dangerous extensions](security/onenote-extension-block.md).
 
 ## January 2023
 
