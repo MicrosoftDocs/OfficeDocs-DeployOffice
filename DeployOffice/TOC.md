@@ -107,3 +107,5 @@
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 
 ## [Microsoft 365 Insider Program for Business](insider/index.yml)
+
+## [Videos](videos.md)
