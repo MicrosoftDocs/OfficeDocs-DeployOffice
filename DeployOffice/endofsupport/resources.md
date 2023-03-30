@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with resources related to end of support for Office."
-ms.date: 02/21/2023
+ms.date: 04/11/2023
 ---
 
 # End of support resources for Office
@@ -25,7 +25,6 @@ The following table shows upcoming end of support events that affect Office that
 
 |End of support event  |Date |More information|
 |---------|---------|---------|
-|Office 2013|April 11, 2023|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
 |Office 2016 connectivity to Microsoft 365 services|October 10, 2023|[Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)|
 |Office 2019 connectivity to Microsoft 365 services|October 10, 2023|[Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)|
 |Office 2019 for Mac|October 10, 2023|[Upgrade an installation of Office for Mac](../mac/deployment-options-for-office-for-mac.md#upgrade-an-installation-of-office-for-mac)|
@@ -36,6 +35,7 @@ The following table shows past end of support events that affect Office, along w
 
 |End of support event   |End of support date |More information|
 |---------|---------|---------|
+|Office 2013|April 11, 2023|[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
 |Windows 8.1|January 10, 2023|[Windows 8.1 end of support and Microsoft 365 Apps](windows-81-support.md)|
 |Internet Explorer 11 with Microsoft 365|August 17, 2021|[Microsoft 365 apps say farewell to Internet Explorer 11](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)|
 |Office 2010 | October 13, 2020 |[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md) |
