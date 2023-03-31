@@ -30,7 +30,7 @@ Another important change to be aware of is that Outlook 2016 doesn't support con
   
 ## New Group Policy settings added for Office 2016
 
-As with any new version of Office, there is a new set of Administrative Template files (ADMX/ADML) for Group Policy settings. You can [download the Administrative Template files](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. Included in the download is an Excel file that contains a list of all the Group Policy settings as well as a list of the new policy settings for Office 2016. 
+As with any new version of Office, there's a new set of Administrative Template files (ADMX/ADML) for Group Policy settings. You can [download the Administrative Template files](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. Included in the download is an Excel file that contains a list of all the Group Policy settings and a list of the new policy settings for Office 2016. 
   
 ## Outlook 2016 adds support for multi-factor authentication (MFA)
 
@@ -42,7 +42,7 @@ Outlook now requires Autodiscover to be configured or it will be unable to conne
   
 ## Microsoft Purview Data Loss Prevention (DLP) added to Word 2016, Excel 2016, and PowerPoint 2016
 
-Microsoft Purview Data Loss Prevention (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage and enforce policies for content authoring and document sharing. End users will see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive for Business. More information is coming, but for now you can read this blog post - [Evolving Data Loss Prevention in SharePoint Online/OneDrive for Business and Office applications](https://www.microsoft.com/microsoft-365/blog/2015/04/21/evolving-data-loss-prevention-in-sharepoint-onlineonedrive-for-business-and-office-applications/).
+Microsoft Purview Data Loss Prevention (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage and enforce policies for content authoring and document sharing. End users see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive for Business.
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
