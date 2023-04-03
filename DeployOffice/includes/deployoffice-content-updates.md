@@ -2,6 +2,23 @@
 
 
 
+## Week of March 27, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 3/27/2023 | [Add or remove language packs after deployment of Office 2016](/DeployOffice/office2016/language/add-remove-language-packs) | renamed |
+| 3/27/2023 | [Customize language setup and settings for Office 2016](/DeployOffice/office2016/language/customize-language-setup-settings) | renamed |
+| 3/27/2023 | [Language identifiers and OptionState Id values in Office 2016](/DeployOffice/office2016/language/language-identifiers-optionstate-id-values) | renamed |
+| 3/27/2023 | [Plan for multilanguage deployment of Office 2016](/DeployOffice/office2016/language/plan-multilanguage-deployment) | renamed |
+| 3/27/2023 | [Block specific file format types in Office 2016](/DeployOffice/office2016/security/block-specific-file-format-types) | renamed |
+| 3/27/2023 | [Prevent file format attacks by using Office file validation in Office 2016](/DeployOffice/office2016/security/prevent-file-format-attacks-using-file-validation) | renamed |
+| 3/27/2023 | [Set up a safe environment to open files by using Protected View in Office 2016](/DeployOffice/office2016/security/protected-view) | renamed |
+| 3/27/2023 | Secure and control access to Office 2016 | removed |
+| 3/29/2023 | [OneNote blocks embedded files that have dangerous extensions](/DeployOffice/security/onenote-extension-block) | added |
+| 3/30/2023 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | added |
+
+
 ## Week of March 20, 2023
 
 
@@ -44,14 +61,3 @@
 | 3/1/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
 | 3/2/2023 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/updates/end-user-update-notifications-microsoft-365-apps) | renamed |
 | 3/2/2023 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
-
-
-## Week of February 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/21/2023 | [End of support resources for Office](/DeployOffice/endofsupport/resources) | modified |
-| 2/23/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
-| 2/23/2023 | [Choose how to deliver updates for Microsoft 365 Apps for enterprise](/DeployOffice/fieldnotes/choose-how-to-deliver-updates) | modified |
-| 2/24/2023 | [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](/DeployOffice/compat/telemetry-dashboard-removal) | modified |
