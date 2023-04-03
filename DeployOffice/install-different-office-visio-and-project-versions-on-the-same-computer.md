@@ -39,8 +39,8 @@ You can find this version information by going to **Control Panel** > **Programs
 
 > [!NOTE]
 > - Microsoft 365, Office LTSC 2021, Office 2021, Office 2019, and Office 2016 all have the same version: 16.0
-> - Office 2013, which is no longer supported, had a versions of 15.0. Retail versions used Click-to-Run as the installation technology; volume licensed versions used Windows Installer (MSI).
-Office 2010, which is no longer supported, had a version of 14.0 and used Windows Installer (MSI) as the installation technology.
+> - Office 2013, which is no longer supported, had a version of 15.0. Retail versions used Click-to-Run as the installation technology; volume licensed versions used Windows Installer (MSI).
+> - Office 2010, which is no longer supported, had a version of 14.0 and used Windows Installer (MSI) as the installation technology.
 
 ## Installation technologies used by Office
 
