@@ -75,7 +75,7 @@ For more information about Windows 11, see the following articles:
 - [Plan for Windows 11](/windows/whats-new/windows-11-plan)
 - [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
 
-Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11, including [FastTrack](/fasttrack/products-and-capabilities#windows-11) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
+Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
 
 ## Additional information
 

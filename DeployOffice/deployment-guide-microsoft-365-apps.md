@@ -34,7 +34,7 @@ ms.date: 03/01/2023
   
 - [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
   
-- [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
+- [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
   
 ## Deploy
 

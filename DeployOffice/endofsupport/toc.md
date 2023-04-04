@@ -20,7 +20,7 @@
 
 ## Upgrade assistance
 
-### [FastTrack](/fasttrack/m365-fasttrack-benefit-overview)
+### [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
 ### [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)
 
 ## Related resources
