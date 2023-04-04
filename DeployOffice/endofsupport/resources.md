@@ -63,7 +63,7 @@ We provide various services to help you upgrade to Microsoft 365 Apps for enterp
 
 - **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-- **Office configuration support matrix** For a list of end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI), which is a printable PDF.
+- **Windows and Office configuration support matrix** For a list of end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 
 - **Microsoft Lifecycle Policy** To get support information about all Microsoft products, go to the [Microsoft Lifecycle Policy](/lifecycle/) site.
 

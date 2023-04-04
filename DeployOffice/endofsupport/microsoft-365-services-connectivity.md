@@ -89,5 +89,5 @@ As of November 1, 2021, there are minimum versions of Outlook for Windows requir
   - Visio Professional 2019 and Visio Standard 2019 *(until October 2023)*
   - Visio Professional 2016 and Visio Standard 2016 *(until October 2023)*
 - This information about connecting to Microsoft 365 services doesn't apply to InfoPath 2013 or SharePoint Designer 2013.
-- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
+- For end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support on the Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS).
