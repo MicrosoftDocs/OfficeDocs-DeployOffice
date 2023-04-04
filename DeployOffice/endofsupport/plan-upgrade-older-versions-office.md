@@ -15,12 +15,13 @@ ms.date: 03/01/2023
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
 
-***Applies to:*** *Volume licensed versions of Office 2013, Office 2010, and Office 2007*
+***Applies to:*** *Volume licensed versions of Office 2016, Office 2013, Office 2010, and Office 2007*
 
 The following table shows the end of support dates for older versions of Office.
 
 |Office version |End of support date  |
 |---------|---------|
+|Office 2016 |October 14, 2025    |
 |Office 2013 |April 11, 2023    |
 |Office 2010 |October 13, 2020  |
 |Office 2007 |October 10, 2017  |

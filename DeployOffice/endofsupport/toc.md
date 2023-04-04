@@ -13,7 +13,7 @@
 
 ## Other Office products
 
-### [Office 2013, Office 2010, Office 2007](plan-upgrade-older-versions-office.md)
+### [Office 2016, 2013, 2010, and 2007](plan-upgrade-older-versions-office.md)
 ### [Office 2013 servers](/microsoft-365/enterprise/upgrade-office-2013-clients-servers)
 ### [Office 2010 servers](/microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products)
 ### [Office 2007 servers](/microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products)
