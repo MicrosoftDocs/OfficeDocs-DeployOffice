@@ -28,6 +28,7 @@ The following table shows upcoming end of support events that affect Office that
 |Office 2016 connectivity to Microsoft 365 services|October 10, 2023|[Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)|
 |Office 2019 connectivity to Microsoft 365 services|October 10, 2023|[Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)|
 |Office 2019 for Mac|October 10, 2023|[Upgrade an installation of Office for Mac](../mac/deployment-options-for-office-for-mac.md#upgrade-an-installation-of-office-for-mac)|
+|Office 2016|October 14, 2025 |[Plan an upgrade from older versions of Office to Microsoft 365 Apps](plan-upgrade-older-versions-office.md)|
 
 ## Past end of support events
 
