@@ -49,7 +49,7 @@ Windows 365 requires no virtualization expertise and enables you to do the follo
 
 - Automatically provision on-demand Cloud PCs using standard gallery images or custom images.
 
-- Request assistance from Microsoft on application issues with [App Assure](/windows-365/enterprise/app-assure) at no additional cost.
+- Request assistance from Microsoft on application issues with [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) at no additional cost.
 
 - Purchase Windows 365 licenses per user for a fixed monthly fee.
 
@@ -73,7 +73,7 @@ Azure Virtual Desktop enables you to do the following:
 
 - Use standard gallery images or create custom images.
 
-- Request assistance from Microsoft on application issues with [App Assure](/fasttrack/products-and-capabilities#app-assure) at no additional cost.
+- Request assistance from Microsoft on application issues with [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) at no additional cost.
 
 - Pay only for what you use on the service (consumption-based pricing).
 

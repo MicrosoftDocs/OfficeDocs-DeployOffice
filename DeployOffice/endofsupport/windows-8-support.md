@@ -52,4 +52,4 @@ To get security updates for Windows and updates to Microsoft 365 Apps, we strong
 
 For more information about moving to a supported operating system, see [Windows client deployment resources and documentation](/windows/deployment/).
 
-Other upgrade resources are available from Microsoft experts, such as [FastTrack](/fasttrack/products-and-capabilities#windows-11) and [App Assure](/fasttrack/products-and-capabilities#app-assure).
+Other upgrade resources are available from Microsoft experts, such as [FastTrack](/fasttrack/products-and-capabilities#windows-11) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
