@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 03/23/2023
+ms.date: 04/06/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -29,15 +29,18 @@ For more information about channels, see [Overview of update channels for Micros
 
 ## Change the update channel with Group Policy
 
-1. Before you begin, make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, Microsoft Configuration Manager, or Microsoft Intune.
+1. Before you begin, make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Microsoft Configuration Manager, or Microsoft Intune.
 
-2. Use the [Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) to enable the Group Policy setting **Update Channel** and select the new channel. The policy setting is under Computer Configuration\Policies\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
+2. Use the [Administrative Template files (ADMX/ADML) for Microsoft 365 Apps](https://www.microsoft.com/download/details.aspx?id=49030) to enable the Group Policy setting **Update Channel** and select the new channel. The policy setting is under Computer Configuration\Policies\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates.
 
 3. Link the updated policy to the OU with the devices whose channel you want to change.
 
 4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
 
-After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device won't show the updated channel until a build of Office from the new channel is installed.
+After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
+
+> [!NOTE]
+> Above steps work for Microsoft 365 Apps for Enterprise and Microsoft 365 Apps for Business. Normally, Microsoft 365 Apps for Business cannot be configured using group policies, but the update channel setting is an exception.
 
 ## Change the update channel with the Office Deployment Tool (ODT)
 
