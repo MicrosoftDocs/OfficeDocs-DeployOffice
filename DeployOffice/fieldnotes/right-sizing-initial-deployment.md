@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps."
-ms.date: 03/01/2023
+ms.date: 04/06/2023
 ---
 
 # Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps
@@ -44,7 +44,7 @@ We could include all the languages in one on-premises deployment package to redu
 
 At the other extreme, we could remove all the source files, and use Configuration Manager only to initiate the installation. We would rely on the Office content delivery network (CDN) to supply just the required source files. This method would ensure that each device will only download what it needs. But the files all come from the internet. If we assume that every other device needs one extra language, we'd end up with roughly 81 terabytes of traffic from the internet (50,000 devices * 1.5 GB plus 25,000 devices * 0.25 GB). That's a great reduction in overall traffic, but it would contribute to internet access congestion.
 
-We could also break the single large deployment package into a smaller core package and individual language packs. This option reduces the amount of content that's synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex, and we would then have to maintain 25 individual deployment packages going forward.
+Instead of creating one large deployment package, we could also create one base deployment (Microsoft 365 Apps with one language) and additional 24 packages, one for each language as described in the [deploy languages](../overview-deploying-languages-microsoft-365-apps.md#deploy-languages-to-existing-installations-of-microsoft-365-apps) article. This option reduces the amount of content that's synchronized unnecessarily, but it increases complexity. Targeting each device with the right set of packages is complex, and we would then have to maintain 25 individual deployment packages going forward.
 
 The good news is that we don't have to go to extremes. Instead, we can use a feature called *AllowCdnFallback*. When this option is enabled, the installation engine can fall back to Office CDN for each language pack that it can't find locally in the *Ccmcache* folder. This method lets us replace LAN/WAN bandwidth with internet bandwidth. If only one device needs a specific language pack, the device will have to download about 250 megabytes. But if we remove this language from the source file set, it saves 49,999 other devices from synchronizing the source files from distribution points (~12.5 terabytes). This sounds like a good deal!
 
