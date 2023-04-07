@@ -31,7 +31,7 @@ The following are the requirements for using Cloud Policy with Microsoft 365 App
 
 - A [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps for enterprise.
 - User accounts created in or synchronized to Azure Active Directory (Azure AD). The user must be signed into Microsoft 365 Apps for enterprise with an Azure AD-based account.
-- Cloud Policy supports security groups and mail-enabled security groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
+- Cloud Policy supports Microsoft 365 Groups and Azure AD Security Groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Azure AD: Global Administrator, Security Administrator, or Office Apps Admin.
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
 - Authenticated proxies aren’t supported by Cloud Policy service.
