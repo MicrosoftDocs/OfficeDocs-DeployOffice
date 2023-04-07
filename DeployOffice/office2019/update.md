@@ -89,3 +89,4 @@ After you copy the Administrative Template files to AD DS, you'll find the updat
 ## Related articles
 
 - [Overview of Office 2019 (for IT Pros)](overview.md)
+- [Deploy Office 2019 (for IT Pros)](deploy.md)
