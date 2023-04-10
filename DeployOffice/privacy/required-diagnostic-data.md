@@ -654,6 +654,8 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **is_app_in_duo_split_view_mode** - This will let us know that the app was in Duo split-screen mode.  This property is set only for Duo (Android only) devices.
 
+- **is_app_local** - This property will help in identify whether the account is of type app_local or not. App local is a non syncable account on Hx platform which helps in persisting storage/local calendar accounts into HxStorage.
+
 - **is_dex_mode_enabled** - Whether Samsung DeX mode is enabled to help detect issues specific to DeX mode with Samsung devices
 
 - **is_preload_install** – Tells us if our app was pre-loaded on device (Android 11 or later devices)
@@ -2866,6 +2868,14 @@ The following fields are collected:
 - **type** - the notification type, either reaction or message_reminder as of now *(not always collected)*
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
+
+#### Office.Android.AdsMobile.Wxpu.ShowAdEvent
+
+This event is triggered when an ad is about to be shown to the user. The data is used to measure advertisement performance metrics.
+
+The following fields are collected:
+
+- None
 
 #### Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -11796,7 +11806,7 @@ The following fields are collected:
 
 #### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
 
-This event is used to track a failure to properly render an account-level consent user interface. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
+This event is triggered when the user fails to open the Unified Consent dialog. The data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
 
 The following fields are collected:  
 
@@ -11826,6 +11836,7 @@ The following fields are collected:
 
 - **Region** - The region being used to determine what version of a consent to show the user
 
+- **UXSDKVersion** - The version of the UX SDK that is used while rendering the consent model to the user.
 
 #### Office.Privacy.UnifiedConsent.UI.ConsentRenderSuccess
 
@@ -13322,9 +13333,25 @@ The following fields are collected:
 
 This event is triggered when any exceptions happen during the boot flow when user opens the app. The data is used to determine what kind of exceptions cause the crashes.  
 
-The following field is collected: 
+The following fields are collected: 
+
+- **AccountType** - Integer describing user account type.
+
+- **CompletionState** - Integer describing Sign-in Completion state like success/fail.
 
 - **ContributedTag** - This is a tag of various types of causes of authentication failure when One Auth is enabled. This provides information about current failure contributions and based on that need to act on fixes/mitigations for respective failures.
+
+- **EntryPoint** - Integer describing Sign-in entry
+
+- **FinishSigninTriggerTag** - Caller's tag
+
+- **HResult** - Integer describing error code
+
+- **IsPhoneOnlyAuthFeatureEnabled** - Boolean describing whether feature enabled or not.
+
+- **StartMode** - Integer describing Sign-in Mode 
+
+- **UserDecision** - Integer describing user decision of which type of Sign-in
 
 
 #### Office.Apple.Apple.AppBoot.Mac
@@ -14183,6 +14210,8 @@ The following fields are collected:
   - **record_count** - The number of records the underlying storage layer returns.
   - **scope_name** - Provides the name of UI page/components this event belongs to.
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
+
+- **stage_durations** - Split stage durations that can aid in the investigation of data anomalies
 
 - **standard_probe_label** - Provides the information of the sub steps of each user scenario when instrumented with Standard Probe. It will help us reduce the scope of the issue.
 
