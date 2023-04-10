@@ -82,7 +82,11 @@ Here are some example installation scenarios, whether they're supported, and an 
 - All installed products must be either the 32-bit version or the 64-bit version. For example, you can't install a 32-bit version of Visio on the same computer with a 64-bit version of Office.
 - Volume licensed versions of Office 2016 use Windows Installer (MSI). Volume licensed versions of Office LTSC 2021 and Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
 - *(For Microsoft 365, Office LTSC 2021, and Office 2019 products)* All products installed on the computer must be using the same [update channel](updates/overview-update-channels.md). For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. Therefore, it can't be installed on the same computer that has the subscription version of the Project desktop app using Semi-Annual Enterprise Channel. Or, on the same computer that has the subscription version of the Visio desktop app using Current Channel.
-- *(For Project 2021, Project 2019, Visio LTSC 2021, and Visio 2019)* If you're installing Project or Visio after you've installed Microsoft 365 Apps on the device, they must be configured to use the same update channel as Microsoft 365 Apps. For example, if Microsoft 365 Apps is using Monthly Enterprise Channel, then Project 2021 or Visio 2019 must be installed using Monthly Enterprise Channel.
+- *(For Project 2021, Project 2019, Visio LTSC 2021, and Visio 2019)* If you're installing these volume licensed versions of Project or Visio after you've installed Microsoft 365 Apps on the device, they must be configured to use the same update channel as Microsoft 365 Apps.
+  - For example, if Microsoft 365 Apps is using Monthly Enterprise Channel, then Project 2021 or Visio 2019 must be installed using Monthly Enterprise Channel.
+  - These volume licensed versions of Project and Visio support all the same update channels that Microsoft 365 Apps supports. For example, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
+  - We provide that support so that you can use these volume licensed versions of Project and Visio with whichever update channel you've configured Microsoft 365 Apps to use.
+  - Regardless of which update channel you select for these volume licensed versions of Project and Visio, they won't get any new features. Only subscription versions of Project and Visio get new features on a regular basis.
 
 ## Related articles
 
