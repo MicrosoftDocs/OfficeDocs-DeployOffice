@@ -6406,6 +6406,25 @@ The following fields are collected:
 
 - **SessionId** - The identifier for the session
 
+### Campaign
+
+This event is triggered when a campaign is found but the Microsoft Auto Update (MAU) client is unable to update the Office application. The data will show if the hyperlink is shown to the user and whether the user clicked on the link to act. The data enables the client to resolve the problem.  
+
+The following fields are collected:
+
+- **CampaignID** - Integer value indicating the Campaign ID, which is a unique identifier associated with each campaign sent from the server.
+
+- **Payload** - Generic column containing event specific messages. This is only to be used in case of Campaign.Hyperlink.Clicked and would contain the URL shown to and clicked by the user.  
+
+- **Reason** - String for detailed reason associated with the event. For this feature, it would contain the following strings:
+
+  - **Campaign.Found** - This is triggered when there is a campaign available to the client after the client starts. A campaign is served to the MAU client when the client is not able to update the Office application. This event will confirm that the campaign was served to the client correctly.
+
+  - **Campaign.Hyperlink.Clicked** - This is triggered when the hyperlink containing instructions on the campaign dialog is clicked by the user. The link will contain information to fix the problem or to update the MAU app itself. The event shows whether the user clicked on the link provided in the campaign and was able to fix the problem.
+
+  - **Campaign.Shown** - This is triggered after showing the campaign dialog to the user. Campaign dialog will contain textual information to help the user to fix the MAU client and start the application updates. This event will tell us if the user saw the message to act and that campaign was shown properly to the user.
+
+ 
 ### campaign.found
 
 This event is triggered when Microsoft AutoUpdate finds a campaign available from the backend. This event reports that there was a campaign found by the client. The data is used to check if campaigns have been served to clients properly.
@@ -18024,6 +18043,119 @@ The following fields are collected:
 
 - **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
 
+### Office.BusinessCheckout.AnalyticsEvent
+
+The event is triggered by the user action or internal component operation. This event is emitted on every step of user journey through the purchase funnel in checkout component. This event is required to keeping the service performing as expected and identify drop-offs in the checkout flow.
+
+The following fields are collected:
+
+- **appName** - application name (business checkout)
+
+- **checkoutStage** - current stage in checkout flow
+
+- **correlationId** - identifier used for correlating events from a single session
+
+- **environment** - business checkout environment (int, edog, prod)
+
+- **flights** - represent flighting
+
+- **language** - language selected for the application
+
+- **market** - market of the attempted purchase 
+
+- **partner** - partner application consuming business checkout (DIME)
+
+- **platform** - platform of the partner application (Win32, WXP online, office.com)
+
+- **product** - user selected product
+
+- **puid** - persistent user identifiers
+
+- **result** - result of the checkout flow (purchased, dropped etc)
+
+- **seats** - number of licences purchased
+
+- **sessionId** - identifier for each session
+
+- **sku** - a variant of the user selected product (stock keeping unit)
+
+- **tenantId** - AAD tenant ID of the shadow tenant associated with the consumer user. Shadow tenant refers to the implementation details required for attaching the purchased license to MSA user.
+
+- **version** - package build version
+
+### Office.BusinessCheckout.DiagnosticEvent
+
+The event is triggered by the user action or internal component operation. It's used to troubleshoot the checkout component if there are issues detected with the purchase.
+
+The following fields are collected:
+
+- **activityId** - unique identifier that represent a flow. It's a combination of activitySpanId and activityTraceId
+
+- **activitySpanId** - unique identifier for subtasks
+
+- **activityTraceId** - unique identifier for whole flow
+
+- **checkoutStage** - current stage in checkout flow
+
+- **environment** - business checkout environment (int, edog, prod)
+
+- **flights** - represent flighting 
+
+- **language** - language selected for the application
+
+- **logLevel** - log level (info, debug etc)
+
+- **market** - market of the attempted purchase.
+
+- **message** - diagnostic message
+
+- **ocid** - optional campaign ID
+
+- **parentActivityId** - used for enabling trace tree structure between sub-activities
+
+- **partner** - partner application consuming business checkout (DIME)
+
+- **platform** - platform of the partner application (Win32, WXP online, office.com)
+
+- **product** - user selected product
+
+- **propertyBag** - represents additional meta data
+
+- **puid** - persistent user identifiers
+
+- **sku** - a variant of the user selected product (stock keeping unit)
+
+- **tagId** - internal message source matching identifier.
+
+- **tenantId** - AAD tenant id of the shadow tenant associated with the consumer user
+
+- **time** - time of the logging event
+
+- **version** - package build version 
+
+### Office.BusinessCheckout.MetricEvent
+
+The event is triggered by the user action or internal component operation. Monitoring event is used for tracking the result and timing of operations. It's issued whenever a block wrapped into “monitoring scope” is completed.
+
+The following fields are collected:
+
+- **appName** - application name (business checkout)
+
+- **market** - market of the attempted purchase
+
+- **metadata** - represents additional meta data such as request / response of 
+
+- **metricName** - name of the matric event, e.g., Duration, CrashCount, Count
+
+- **metricValue** - value for matric name, e.g., Duration - time taken
+
+- **name** - unique activity name
+
+- **result** - result of the metric event (success, systemError, etc.)
+
+- **subType** - information about the partner application consuming business checkout, e.g., partner/platform
+
+
 ### Office.FirstRun.Apple.TelemetryOptIn
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our telemetry opt-in flow in First Run Experience. We collect a code that denotes what type of diagnostic data collection option was selected by the user.
@@ -18999,6 +19131,8 @@ The following fields are collected:
 
 - **InstallTypeName -** An identifier for the method by which Office was installed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
+- **IsCustomerImpacting** - Whether the user was impacted negatively by the UAE.
+
 - **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -19090,6 +19224,8 @@ The following fields are collected:
 - **HangTypeCode** - Represents class of hang if the process hung during execution.
 
 - **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+
+- **IsCustomerImpacting** - Whether the user was impacted negatively by the UAE.
 
 - **ModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
