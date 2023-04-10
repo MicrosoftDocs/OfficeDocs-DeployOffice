@@ -2,6 +2,16 @@
 
 
 
+## Week of April 03, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/5/2023 | Set a preference for Resume Assistant in Word for Mac | removed |
+| 4/6/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
+| 4/7/2023 | [Deploy Office LTSC 2021](/DeployOffice/ltsc2021/deploy) | modified |
+
+
 ## Week of March 27, 2023
 
 
@@ -49,15 +59,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 3/6/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/updates/overview-update-channels) | renamed |
-
-
-## Week of February 27, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 2/28/2023 | [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](/DeployOffice/deploy-microsoft-365-apps-configuration-manager) | modified |
-| 2/28/2023 | [View software update status for Microsoft 365 Apps installations](/DeployOffice/updates/software-update-status) | modified |
-| 3/1/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
-| 3/2/2023 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/updates/end-user-update-notifications-microsoft-365-apps) | renamed |
-| 3/2/2023 | [Microsoft 365 change guide](/DeployOffice/fieldnotes/microsoft-365-change-guide) | modified |
