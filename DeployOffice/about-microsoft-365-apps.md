@@ -71,7 +71,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 ## More information about Microsoft 365 Apps
 <a name="BKMK_MoreInfo"> </a>
 
-- You can use Microsoft 365 Apps with supported versions of Exchange Server (Exchange Server 2013 or later) or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 (or Microsoft 365) plan, you can use Microsoft 365 Apps with Exchange Online and SharePoint Online.
+- You can use Microsoft 365 Apps with supported versions of Exchange Server or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 (or Microsoft 365) plan, you can use Microsoft 365 Apps with Exchange Online and SharePoint Online.
     
 - Users can store the files they create with Microsoft 365 Apps on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 (and Microsoft 365) also provides cloud-based file storage options.
     

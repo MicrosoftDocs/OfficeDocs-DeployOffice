@@ -76,7 +76,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 ## What about other versions of Office on Windows 7?
 
-Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016 or Office Standard 2013, will continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
+Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016, will continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
 Even if your version of Office is still supported, Windows 7 no longer receives security updates, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
 
@@ -85,6 +85,6 @@ Even if your version of Office is still supported, Windows 7 no longer receives 
 - This information also applies to the following products:
   - The subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 5 or Visio Plan 2.
   - Microsoft 365 Apps for business, which is the version of Office that comes with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
-- For end of support dates for different versions of Office on various versions of Windows, see the [Office configuration support matrix](https://go.microsoft.com/fwlink/p/?linkid=2111390).
-- Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [FastTrack](/fasttrack/win-10-fasttrack-benefit-for-windows-10) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1).
+- For end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI).
+- Other Microsoft resources are available to help you make the transition to using Microsoft 365 Apps on devices running Windows 11 or Windows 10, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).
 - To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
