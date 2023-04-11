@@ -1,7 +1,7 @@
 # Deployment guide for Microsoft 365 Apps
 
 ## [Deployment guide](deployment-guide-microsoft-365-apps.md)
-## [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
+## [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
 
 ## Get started
 ### [What's new](whats-new.md)
@@ -97,12 +97,12 @@
 ### [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ### [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-## End of support resources
-
-### [Windows 7 and Microsoft 365 Apps](endofsupport/windows-7-support.md)
-### [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+## End of support
+### [End of support resources](endofsupport/resources.md)
 ### [Connectivity to Microsoft 365 services](endofsupport/microsoft-365-services-connectivity.md)
-### [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+### [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+### [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md)
+### [Windows and Office support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
 
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 

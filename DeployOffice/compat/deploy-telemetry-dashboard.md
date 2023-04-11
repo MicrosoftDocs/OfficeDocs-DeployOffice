@@ -213,7 +213,7 @@ The agent is built into Office 2019, Office 2016, and Office 2013 and doesn't ha
 - Office 2010
 
 > [!NOTE]
-> Office 2003, Office 2007, and Office 2010 are no longer supported.
+> Office 2003, Office 2007, Office 2010, and Office 2013 are no longer supported.
 
 For computers that are running Office 2013 and you have the Office 2013 agent installed on the computer, there are several additional considerations:
 

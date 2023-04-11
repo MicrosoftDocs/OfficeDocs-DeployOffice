@@ -31,9 +31,9 @@ additionalContent:
           summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, and with Microsoft Configuration Manager.
           url: plan-microsoft-365-apps.md
         # Card
-        - title: FastTrack
-          summary: FastTrack guides you through the most common deployment configurations.
-          url: https://fasttrack.microsoft.com/office
+        - title: Microsoft FastTrack
+          summary: Microsoft FastTrack guides you through the most common deployment configurations.
+          url: https://www.microsoft.com/fasttrack
         # Card
         - title: Manage updates
           summary: Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates.
