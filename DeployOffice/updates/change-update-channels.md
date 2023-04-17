@@ -101,7 +101,7 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 ## Change the update channel using servicing profiles
 
-If you want to switch devices to the Monthly Enterprise channel, you can use a servicing profile. Servicing profiles is a cloud-based update management solution for the Microsoft 365 Apps. Once configured, it keeps targeted installations current by ensuring the latest Monthly Enterprise Channel release is installed. If a targeted device is on a different channel, it will be migrated to the [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) automatically.
+If you want to switch devices to the Monthly Enterprise channel, you can use a servicing profile. Servicing profiles is a cloud-based update management solution for the Microsoft 365 Apps. Once configured, it keeps targeted installations current. If a targeted device is on a different channel, it will automatically be migrated to the [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview).
 
 [!NOTE]
 > Once activated, Servicing profiles will move all in-scope installations to the latest Monthly Enterprise Channel release and keep devices updated going forward. If you want to change to an update channel other than Monthly Enterprise Channel or not use a cloud-service to keep your devices updated, consider using one of the other options given in this article.
@@ -110,11 +110,11 @@ Here are the steps for changing the update channel to Monthly Enterprise Channel
 
 1. Review the guidance on [Adopting servicing profiles](../fieldnotes/adopt-servicing-profiles.md).
 2. If not done already, log into the [Microsoft 365 Apps admin center](https://config.office.com) and set up a servicing profile as described in the guide.
-2. After the initial configuration of the servicing profile, navigate to **Servicing**, **Monthly Enterprise**, **Settings**, and **Device selection criteria**.
+2. After the initial configuration of the servicing profile, navigate to **Servicing**, **Monthly Enterprise**, **Settings**, **Device selection criteria**.
 3. Select the **Channel** you want to move to Monthly Enterprise Channel.
 4. Click **Save**.
 
-All Microsoft 365 Apps installations which match all set selection criteria will be updated by servicing profiles. If installations are on a selected channel other than Monthly Enterprise, a channel change will be triggered. Next time the device syncs with the service, the new update channel configuration will be sent to the device. Next, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated configuration and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
+All Microsoft 365 Apps installations which match all set selection criteria will be updated by servicing profiles. If installations are on a channel other than Monthly Enterprise, a channel change will be triggered. Next time the device syncs with the service, the new update channel configuration will be sent to the device. Next, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated configuration and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
 ## Change the update channel using the Microsoft 365 admin center
 
