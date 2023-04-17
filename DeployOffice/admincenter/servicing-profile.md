@@ -21,7 +21,7 @@ Servicing profiles let you automatically deliver monthly Office updates for spec
 - Updates to the device come from the Office Content Delivery Network (CDN)
 - The devices are managed by the servicing profile
 
-Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the effect on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates can’t be installed.
+Devices in the servicing profile receive updates for the Monthly Enterprise Channel beginning the second Tuesday of every month. Updates are delivered in waves to limit the impact on the network. You can  pause updates and investigate and resolve update issues. You can also set deadlines for updates to be installed and dates on which updates can’t be installed.
 
 > [!TIP]
 > You can also watch videos with an [introduction to Servicing profiles](https://youtu.be/i_eUkyFX30E) and [in-depth coverage of the service](https://youtu.be/YO6a3iNVXXI).
