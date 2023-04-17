@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 04/06/2023
+ms.date: 04/17/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -21,6 +21,8 @@ There are multiple options to switch the selected update channel for an existing
 - [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)
 - [Microsoft Configuration Manager](#change-the-update-channel-with-configuration-manager)
 - [Intune](#change-the-update-channel-with-microsoft-intune-administrative-templates)
+- [Servicing profiles](#change-the-update-channel-using-servicing-profiles)
+- [Microsoft 365 admin center](#change-the-update-channel-using-the-microsoft-365-admin-center)
 
 For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
 
@@ -89,13 +91,46 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune for Office can be seen in this registry location. For more information, [refer to this article](/mem/intune/configuration/administrative-templates-update-office).
 
-After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device won't show the updated channel until a build of Office from the new channel is installed
+After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
 > [!NOTE]
 > If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel you select will be re-evaluated and enforced during policy refresh. It is recommended that any update channel policies in your environment match the channel selection for your app assignment. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
 >   - Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
 >   - The app is configured using the Configuration designer.
 >   - The app is assigned as required.
+
+## Change the update channel using servicing profiles
+
+If you want to switch devices to the Monthly Enterprise channel, you can use a servicing profile. Servicing profiles is a cloud-based update management solution for the Microsoft 365 Apps. Once configured, it keeps targeted installations current. If a targeted device is on a different channel, it will automatically be migrated to the [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview).
+
+[!NOTE]
+> Once activated, Servicing profiles will move all in-scope installations to the latest Monthly Enterprise Channel release and keep devices updated going forward. If you want to change to an update channel other than Monthly Enterprise Channel or not use a cloud-service to keep your devices updated, consider using one of the other options given in this article.
+
+Here are the steps for changing the update channel to Monthly Enterprise Channel using a servicing profile:
+
+1. Review the guidance on [Adopting servicing profiles](../fieldnotes/adopt-servicing-profiles.md).
+2. If not done already, log into the [Microsoft 365 Apps admin center](https://config.office.com) and set up a servicing profile as described in the guide.
+2. After the initial configuration of the servicing profile, navigate to **Servicing**, **Monthly Enterprise**, **Settings**, **Device selection criteria**.
+3. Select the **Channel** you want to move to Monthly Enterprise Channel.
+4. Click **Save**.
+
+All Microsoft 365 Apps installations which match all set selection criteria will be updated by servicing profiles. If installations are on a channel other than Monthly Enterprise, a channel change will be triggered. Next time the device syncs with the service, the new update channel configuration will be sent to the device. Next, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated configuration and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
+
+## Change the update channel using the Microsoft 365 admin center
+
+You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.microsoft.com) to set the default update channel for Microsoft 365 Apps. Unmanaged installations will then switch to the new default channel automatically.  
+
+Managed installations are not affected by this setting. For a full break-down of which devices the Microsoft 365 admin center setting will target, please see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
+
+Depending on your scenario, you can use the Microsoft 365 admin center along with other options described in this article. E.g., you could set up the Microsoft 365 admin center to keep all unmanaged devices on Current Channel, while using Intune to move and keep managed devices to Monthly Enterprise Channel. 
+
+Here are the steps for setting the default update channel: 
+
+1. Log into the [Microsoft 365 admin center](https://admin.microsoft.com) and open **Settings**, then click on **Org Settings**. 
+2. Open the **Microsoft 365 installation options**. 
+3. Select the desired channel and click on **Save**. 
+
+Next time the Microsoft 365 Apps check for available updates, the new update channel configuration is sent to the device. Next, it will download the latest update from the new channel and install it. The user experience is like a regular update when it comes to notifications and prompts. 
 
 ## Considerations when changing channels
 
