@@ -77,9 +77,9 @@ reg add HKCU\Software\Policies\Microsoft\office\16.0\common\officechannelexposur
 
 A local administrator on the device can go to **File** > **Account** > **Update Channel** to change to a different channel.
 
-### I see there's a policy named "Show the option for Office Insider". How is that policy different?
+### I see there's a policy named "Show the option for Microsoft 365 Insider". How is that policy different?
 
-Yes, there's another policy, named *Show the option for Office Insider*, that's found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. If you set that policy to Enabled, users will see an **Office Insider** option under **File** > **Account**.
+Yes, there's another policy, named *Show the option for Microsoft 365 Insider*, that's found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. If you set that policy to Enabled, users will see an **Office Insider** option under **File** > **Account**.
 
 There are the two basic differences with that policy:
 
@@ -87,7 +87,8 @@ There are the two basic differences with that policy:
 - The policy can only be applied to users, not to devices.
 
 > [!NOTE]
-> - This policy will be renamed to *Show the option for Microsoft 365 Insider* in an upcoming release of Group Policy.
+> - This policy was previously named *Show the option for Office Insider*.
+> - Only the name of the policy changed. How the policy works hasn't changed.
 > - The option under **File** > **Account** will be updated to "Microsoft 365 Insider" in a future update to Microsoft 365 Apps.
 
 
