@@ -2,6 +2,18 @@
 
 
 
+## Week of April 10, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/10/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 4/10/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 4/11/2023 | [Plan an upgrade from older versions of Office to Microsoft 365 Apps](/DeployOffice/endofsupport/plan-upgrade-older-versions-office) | modified |
+| 4/11/2023 | [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](/DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer) | modified |
+| 4/12/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
+
+
 ## Week of April 03, 2023
 
 
@@ -51,11 +63,3 @@
 | 3/16/2023 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
 | 3/17/2023 | [Microsoft 365 Apps migration from Windows Server ](/DeployOffice/endofsupport/windows-server-migration) | modified |
 | 3/17/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
-
-
-## Week of March 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/6/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/updates/overview-update-channels) | renamed |
