@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
