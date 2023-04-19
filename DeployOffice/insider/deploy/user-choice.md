@@ -21,7 +21,7 @@ With this method, the user can choose their Microsoft 365 Insider channel by goi
 
 ![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-button.png)
 
-After they select the **Update Channel** button, users need to select the **I will manage my Microsoft 365 apps update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
+After they select the **Update Channel** option, users need to select the **I will manage my Microsoft 365 apps update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 
 > [!IMPORTANT]
 > Users must have local administrator permissions on their Windows device to choose their channel.
@@ -77,7 +77,7 @@ reg add HKCU\Software\Policies\Microsoft\office\16.0\common\officechannelexposur
 
 A local administrator on the device can go to **File** > **Account** > **Update Channel** to change to a different channel.
 
-### I see there's a policy named "Show the option for Microsoft 365 Insider". How is that policy different?
+### I see a policy named "Show the option for Microsoft 365 Insider". How is that policy different?
 
 Yes, there's another policy, named *Show the option for Microsoft 365 Insider*, that's found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. If you set that policy to Enabled, users see an **Microsoft 365 Insider** option under **File** > **Account**.
 
