@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
-ms.date: 04/18/2023
+ms.date: 04/19/2023
 ---
 
 # Let users choose which Microsoft 365 Insider channel to install on Windows devices
@@ -19,9 +19,9 @@ Instead of installing Microsoft 365 Insider for your users, you can give them th
 
 With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an app, such as Excel. There they see a choice for **Update Channel**.
 
-![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-option.png)
+![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-button.png)
 
-Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
+After they select the **Update Channel** button, users need to select the **I will manage my Microsoft 365 apps update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 
 > [!IMPORTANT]
 > Users must have local administrator permissions on their Windows device to choose their channel.
