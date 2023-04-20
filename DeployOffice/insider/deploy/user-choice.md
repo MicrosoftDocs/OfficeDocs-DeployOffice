@@ -4,24 +4,24 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use Group Policy to let users choose their Microsoft 365 Insider channel on Windows devices"
-ms.date: 01/18/2023
+ms.date: 04/19/2023
 ---
 
 # Let users choose which Microsoft 365 Insider channel to install on Windows devices
 
 Instead of installing Microsoft 365 Insider for your users, you can give them the option to select which Microsoft 365 Insider channel they want to use on their Windows device.
 
-With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an app, such as Excel. There they'll see a choice for **Update Channel**.
+With this method, the user can choose their Microsoft 365 Insider channel by going to **File** > **Account** in an app, such as Excel. There they see a choice for **Update Channel**.
 
-![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-option.png)
+![Update Channel option that appears under File > Account in an app](../../images/insider/update-channel-button.png)
 
-Users need to select the **I will manage my Office update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
+After they select the **Update Channel** option, users need to select the **I will manage my Microsoft 365 apps update channel** checkbox to see the list of channels to choose from. After they make their selection, their existing Microsoft 365 Apps installation will switch to that channel. Along with Microsoft 365 Insider channels, you can also include other channels for them to select, such as Current Channel or Monthly Enterprise Channel.
 
 > [!IMPORTANT]
 > Users must have local administrator permissions on their Windows device to choose their channel.
@@ -35,9 +35,9 @@ There are two versions of this policy; one for devices, another for users. In th
 - Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Miscellaneous
 - User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous
 
-You can set either policy to Enabled, or both policies to Enabled, depending on whether you want to target devices or users, or both. If you set both policies to Enabled, then the user will see all the channels you've selected across both policies (if the policy is also applied to the device).
+You can set either policy to Enabled, or both policies to Enabled, depending on whether you want to target devices or users, or both. If you set both policies to Enabled, then the user sees all the channels you've selected across both policies (if the policy is also applied to the device).
 
-After enabling this policy, you should notify the users so that they know this option is available to them. You'll want to include the steps for getting to the option (along with a screenshot) and guidance about which Microsoft 365 Insider channel they should choose, based on their role in the organization.
+After you enable this policy, notify your users so that they know this option is available to them. You should include the steps for getting to the option (along with a screenshot) and guidance about which Microsoft 365 Insider channel they should choose, based on their role in the organization.
 
 > [!NOTE]
 > - You can also use Cloud Policy to set the User Configuration version of the policy to Enabled. For more information, see [Overview of Cloud Policy service for Microsoft 365](../../admincenter/overview-cloud-policy.md).
@@ -47,7 +47,7 @@ After enabling this policy, you should notify the users so that they know this o
 
 If you don't use Group Policy or Cloud Policy in your organization, there's an alternative that does the same thing as the *Show the Update Channel option to allow users to select an update channel*. This alternative also works if you have Microsoft 365 Apps for business, which doesn't support Group Policy or Cloud Policy.
 
-You can run the following commands from an elevated command prompt on the Windows device, hitting ENTER after each line. Running these commands will show users the following channels to select from: Beta Channel, Current Channel (Preview), Current Channel, and Monthly Enterprise Channel.
+You can run the following commands from an elevated command prompt on the Windows device, hitting ENTER after each line. Running these commands shows users the following channels to select from: Beta Channel, Current Channel (Preview), Current Channel, and Monthly Enterprise Channel.
 
 To make the channel selections available to all users on the device, use these commands:
 
@@ -77,9 +77,9 @@ reg add HKCU\Software\Policies\Microsoft\office\16.0\common\officechannelexposur
 
 A local administrator on the device can go to **File** > **Account** > **Update Channel** to change to a different channel.
 
-### I see there's a policy named "Show the option for Office Insider". How is that policy different?
+### I see a policy named "Show the option for Microsoft 365 Insider". How is that policy different?
 
-Yes, there's another policy, named *Show the option for Office Insider*, that's found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. If you set that policy to Enabled, users will see an **Office Insider** option under **File** > **Account**.
+Yes, there's another policy, named *Show the option for Microsoft 365 Insider*, that's found under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Miscellaneous. If you set that policy to Enabled, users see an **Microsoft 365 Insider** option under **File** > **Account**.
 
 There are the two basic differences with that policy:
 
@@ -87,9 +87,9 @@ There are the two basic differences with that policy:
 - The policy can only be applied to users, not to devices.
 
 > [!NOTE]
-> - This policy will be renamed to *Show the option for Microsoft 365 Insider* in an upcoming release of Group Policy.
-> - The option under **File** > **Account** will be updated to "Microsoft 365 Insider" in a future update to Microsoft 365 Apps.
-
+> - This policy was previously named *Show the option for Office Insider*.
+> - Only the name of the policy changed. How the policy works hasn't changed.
+> - If you're using Version 2302 or older of Microsoft 365 Apps, the option under **File** > **Account** still says **Office Insider**.
 
 ## Related articles
 
