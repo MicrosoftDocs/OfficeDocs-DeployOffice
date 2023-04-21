@@ -45,7 +45,7 @@ Here are the different ways that can you change to Microsoft 365 Insider when Mi
 |Office Deployment Tool  |Windows |If you're already using the Office Deployment Tool to configure Microsoft 365 Apps.  |[Change an existing Microsoft 365 Apps installation to Microsoft 365 Insider (Office Deployment Tool)](office-deployment-tool.md#change-an-existing-microsoft-365-apps-installation-to-microsoft-365-insider) |
 |Microsoft Intune |Windows |If you're already using Microsoft Intune to manage software.|[Change an existing Microsoft 365 Apps installation to Microsoft 365 Insider (Intune)](intune.md#change-an-existing-microsoft-365-apps-installation-to-microsoft-365-insider) |
 |Group Policy   |Windows |If you're already using Group Policy to configure Microsoft 365 Apps.   | [Use Group Policy to install Microsoft 365 Insider on Windows devices](group-policy.md) |
-|Use a command to update the registry|Windows |If you can't use Group Policy or you want a quick way to change to Microsoft 365 Insider. |[Use a registry command to install Microsoft 365 Insider on Windows devices](registry.md)|
+|Use a command to update the registry|Windows |If you can't use Group Policy or if you want a quick way to change to Microsoft 365 Insider.|[Use a registry command to install Microsoft 365 Insider on Windows devices](registry.md)|
 |Let users choose Microsoft 365 Insider for themselves |Windows |If you want users to select Microsoft 365 Insider for themselves by going to **File** > **Account**.|[Let users choose which Microsoft 365 Insider channel to install on Windows](user-choice.md)|
 |Microsoft AutoUpdate (MAU) | Mac |If you want users to select a Microsoft 365 Insider channel for themselves. |[Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)](microsoft-autoupdate.md)    |
 |Preference | Mac |If you want to choose which Mac users have Microsoft 365 Insider. |[Provide Mac users with Microsoft 365 Insider by using a preference](preference.md)|
@@ -64,7 +64,7 @@ If you're doing a new installation of Microsoft 365 Apps, here are ways that you
 
 To learn more about the Microsoft 365 Insider program and to see demos of some of these deployment options, you can watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ImX5] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ImX5]
 
 ## Apps covered by Microsoft 365 Insider
 
@@ -86,6 +86,9 @@ On Mac devices:
 - Outlook
 - PowerPoint
 - Word
+
+> [!TIP]
+> To get early access to new features in the web versions of the apps, use the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365) option in the Microsoft 365 admin center.
 
 ## Related articles
 - [Compare Microsoft 365 Insider channels](../compare-channels.md)
