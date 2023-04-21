@@ -5,7 +5,7 @@ author: nicholasswhite
 manager: dougeby
 ms.reviewer: chhopkin
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
