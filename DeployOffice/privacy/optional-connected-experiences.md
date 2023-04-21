@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 hideEdit: true
-ms.date: 03/22/2023
+ms.date: 04/21/2023
 ---
 
 # Overview of optional connected experiences in Office
@@ -88,6 +88,11 @@ To print a file in the [Office mobile app](https://www.microsoft.com/microsoft-3
 
 > [!NOTE]
 > Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed in the [Experiences that rely on Bing](#experiences-that-rely-on-bing) section.
+
+### Send to Kindle
+
+[Send to Kindle](https://support.microsoft.com/office/a53d880d-9952-4bf1-abc5-6bce8db5a273) lets you send Microsoft Word documents directly to your Kindle library. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. Also, since Send to Kindle requires you to be signed in with your Amazon account, the [conditions of use](https://www.amazon.com/gp/help/customer/display.html?nodeId=508088) and [privacy notice](https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ) for Amazon apply.
+
 
 ### Travel time in Up Next in Outlook for iOS
 
