@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
@@ -376,4 +376,4 @@ The following illustrations show the relationships between tables in the databas
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md)
