@@ -175,7 +175,7 @@ The following IRM registry setting is located in **HKCU\Software\Microsoft\Offic
 
 |**Registry entry**|**Type**|**Value**|**Description**|
 |:-----|:-----|:-----|:-----|
-|LicenseServers  <br/> |Key/Hive. Contains DWORD values that have the name of a license server.  <br/> |Set to the server URL. If the value of the DWORD is 1, Office will not prompt to obtain a license, it will get the license automatically.  <br/><br/> If the value is zero or there is no registry entry for that server, Office prompts for a license.  <br/> |Example: If http://contoso.com/_wmcs/licensing = 1 is a value for this setting, a user who tries to obtain a license from that server to open a rights-managed document will not be prompted for authorization. This is the same as the user selecting the checkbox asking not to be notified again the first time that they consume the content.  <br/> |
+|LicenseServers  <br/> |Key/Hive. Contains DWORD values that have the name of a license server.  <br/> |Set to the server URL. If the value of the DWORD is 1, Office will not prompt to obtain a license, it will get the license automatically.  <br/><br/> If the value is zero or there is no registry entry for that server, Office prompts for a license.  <br/> |Example: If `http://contoso.com/_wmcs/licensing` = 1 is a value for this setting, a user who tries to obtain a license from that server to open a rights-managed document will not be prompted for authorization. This is the same as the user selecting the checkbox asking not to be notified again the first time that they consume the content.  <br/> |
    
 The following IRM registry setting is located in **HKCU\Software\Microsoft\Office\16.0\Common\Security**. There is no corresponding Group Policy setting. 
   
