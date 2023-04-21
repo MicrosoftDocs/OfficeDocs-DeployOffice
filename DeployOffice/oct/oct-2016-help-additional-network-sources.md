@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dougeby
 ms.date: 03/01/2023
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
