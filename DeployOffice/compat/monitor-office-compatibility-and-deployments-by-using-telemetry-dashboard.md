@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
@@ -77,7 +77,7 @@ To learn more about the worksheets in Office Telemetry Dashboard, visit these re
   
 - This article includes a brief overview of the worksheets and how to use them in [Learn about the Office Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets). The rest of this article tells you how to adjust filters, how to determine overall Office stability, and how to investigate unstable documents and solutions.
     
-- You can dig deeper by reading [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Office Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
+- You can dig deeper by reading [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Office Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
     
 - [Custom reporting and database schema reference for Office Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md) helps you create custom reports in Office Telemetry Dashboard using a PivotTable report. Custom reports can help you customize how data is displayed for different business purposes. For example, you can view all Warning errors for Excel in a certain business group, create a list of all solutions that use unregistered ActiveX controls, and more. 
     
@@ -85,7 +85,7 @@ To learn more about the worksheets in Office Telemetry Dashboard, visit these re
 
 ## Learn about the Office Telemetry Dashboard worksheets
 
-The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
+The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md).
   
 **Overview of Office Telemetry Dashboard worksheets**
 
@@ -260,5 +260,5 @@ For more information about how to troubleshoot the processor, see [Troubleshooti
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Assess Office compatibility](assess-office-compatibility.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md)
 

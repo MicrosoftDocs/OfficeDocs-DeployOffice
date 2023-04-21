@@ -1,18 +1,18 @@
 ---
-title: "Office Telemetry Dashboard worksheet reference"
+title: "Office Telemetry Dashboard worksheets"
 ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
-description: "Find reference information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
+description: "Find information about Office Telemetry Dashboard worksheets that helps you understand Office stability in your organization."
 ms.date: 03/01/2023
 ---
 
-# Office Telemetry Dashboard worksheet reference
+# Office Telemetry Dashboard worksheets
 
 ***Applies to:*** *Office 2019, Office 2016*
 
@@ -20,7 +20,7 @@ ms.date: 03/01/2023
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
-As you use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a reference guide to help understand the data that is shown in Office Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the agents and processors used by Office Telemetry Dashboard.
+As you use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions, you might need more information about the data that is displayed in the worksheets. Use this article as a guide to help understand the data that is shown in Office Telemetry Dashboard. This data helps you identify stability issues for Office documents and solutions and helps you track Office deployments. You can also use this data to identify problems with the agents and processors used by Office Telemetry Dashboard.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
