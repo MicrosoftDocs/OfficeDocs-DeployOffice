@@ -4,7 +4,7 @@ author: bgk-msft
 ms.author: bkirschner
 manager: dougeby
 audience: ITPro 
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
