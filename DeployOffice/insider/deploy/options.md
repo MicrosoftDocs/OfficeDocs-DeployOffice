@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides an overview of the deployment options for Microsoft 365 Insider for Windows and Mac"
-ms.date: 01/18/2023
+ms.date: 04/21/2023
 ---
 
 # Options for deploying Microsoft 365 Insider
