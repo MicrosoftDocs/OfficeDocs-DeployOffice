@@ -4,7 +4,7 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: overview
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
