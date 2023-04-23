@@ -2,6 +2,19 @@
 
 
 
+## Week of April 17, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/17/2023 | [Overview of servicing profile in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/servicing-profile) | modified |
+| 4/17/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
+| 4/19/2023 | [Let users choose which Microsoft 365 Insider channel to install on Windows devices](/DeployOffice/insider/deploy/user-choice) | modified |
+| 4/21/2023 | [Microsoft 365 Apps and Office deployment documentation](/DeployOffice/index) | modified |
+| 4/21/2023 | [Office Telemetry Dashboard worksheets](/DeployOffice/compat/telemetry-dashboard-worksheet-reference) | modified |
+| 4/21/2023 | [Office Customization Tool (OCT) 2016 Help Add/Modify Registry Entry dialog box](/DeployOffice/oct/oct-2016-help-add-modify-registry-entry-dialog-box) | modified |
+
+
 ## Week of April 10, 2023
 
 
@@ -52,14 +65,3 @@
 | 3/22/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
 | 3/22/2023 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
 | 3/23/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
-
-
-## Week of March 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/15/2023 | [Adopt servicing profiles for Microsoft 365 Apps](/DeployOffice/fieldnotes/adopt-servicing-profiles) | modified |
-| 3/16/2023 | [Configuration options for the Office Deployment Tool](/DeployOffice/office-deployment-tool-configuration-options) | modified |
-| 3/17/2023 | [Microsoft 365 Apps migration from Windows Server ](/DeployOffice/endofsupport/windows-server-migration) | modified |
-| 3/17/2023 | [Windows Server end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-server-support) | modified |
