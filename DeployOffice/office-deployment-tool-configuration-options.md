@@ -347,7 +347,7 @@ For example, Microsoft 365 Apps supports English (United Kingdom), French (Canad
 
 - For a list of languages supported by Microsoft 365 Apps, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 - For a list of languages supported by Visio, see [Display languages supported in the Visio desktop app](https://support.microsoft.com/office/a921983e-fd5d-45ef-8af1-cedf70c53d75).
-> - Project supports the same languages that Visio does.
+- Project supports the same languages that Visio does.
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
