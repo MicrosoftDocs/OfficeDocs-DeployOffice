@@ -43,7 +43,8 @@ Follow these steps to create a configuration file that can be used by the Office
 6. In the **Language** section, choose which languages to include. You can include multiple languages and you can select **Match operating system** to automatically install the same languages that are in use on the client device. For more information, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md).
 
 > [!IMPORTANT]
-> - There is a known issue where you can select a language that isn't supported by the product you've selected. For example, you can select English (United Kingdom), French (Canada), or Spanish (Mexico) when installing Project or Visio, but none of those languages are supported in Project and Visio.
+> - There is a known issue where you can select a language that isn't supported by the product you've selected. 
+> - For example, you can select English (United Kingdom), French (Canada), or Spanish (Mexico) when installing Project or Visio, but those languages aren't supported in Project and Visio.
 > - In those cases, if you don't manually correct the xml file that is created by the Office Customization Tool, your installation will fail.
 > - For a list of supported languages, see the following articles: [What languages is Office available in?](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec) and [Display languages supported in the Visio desktop app](https://support.microsoft.com/office/a921983e-fd5d-45ef-8af1-cedf70c53d75). Project supports the same languages that Visio does.
 
