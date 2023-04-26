@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how OneNote blocks embedded files that have dangerous extensions."
-ms.date: 03/29/2023
+ms.date: 04/28/2023
 ---
 
 # OneNote blocks embedded files that have dangerous extensions
@@ -36,13 +36,13 @@ This change only affects OneNote for Microsoft 365 on devices running Windows. T
 
 The following table shows the version, for each update channel, in which the blocking change is implemented. Information in italics is subject to change.
 
-| Update channel                           | Version        | Release date                |
-|------------------------------------------|----------------|-----------------------------|
-| Current Channel (Preview)                | *Version 2304* | *First half of April 2023*  |
-| Current Channel                          | *Version 2304* | *Second half of April 2023* |
-| Monthly Enterprise Channel               | *Version 2304* | *June 13, 2023*             |
-| Semi-Annual Enterprise Channel (Preview) | *Version 2308* | *September 12, 2023*        |
-| Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2024*           |
+| Update channel                           | Version        | Release date                           |
+|------------------------------------------|----------------|----------------------------------------|
+| Current Channel (Preview)                | Version 2304   | Rolling out starting on April 28, 2023 |
+| Current Channel                          | Version 2304   | Rolling out starting on April 28, 2023 |
+| Monthly Enterprise Channel               | *Version 2304* | *June 13, 2023*                        |
+| Semi-Annual Enterprise Channel (Preview) | *Version 2308* | *September 12, 2023*                   |
+| Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2024*                      |
 
 > [!NOTE]
 > - This change will also affect OneNote in retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
