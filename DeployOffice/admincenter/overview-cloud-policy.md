@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 03/01/2023
+ms.date: 05/08/2023
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -94,6 +94,16 @@ Here's a summary of what happens:
 If the user is a member of multiple Azure AD groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
 
 Also, policy settings implemented by using Cloud Policy take precedence over policy settings implemented by using Group Policy on Windows Server, and taking precedence over preference settings or locally applied policy settings.
+
+## Baselines
+
+At Microsoft we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy you’ll need to protect your organization and empower your end users to create accessible content.
+
+# Security baseline
+To easily identify security baseline policies, we’ve added a new column to the policy table called Recommendation. Policies recommended for security baseline will be tagged in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
+
+# Accessibility baseline
+Most of our customers are making strides to become more accessible as an organization. The accessibility baseline will enable IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
 ## Additional information about Cloud Policy
 
