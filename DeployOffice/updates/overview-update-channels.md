@@ -10,14 +10,17 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 03/01/2023
+ms.date: 04/27/2023
 ---
 
 # Overview of update channels for Microsoft 365 Apps
 
 One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for Office apps, such as Excel and Word, on a regular basis. You can control how often the users in your organization get these new features by specifying the update channel.
 
-In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office. 
+In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
+
+[!NOTE]
+> If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
 
 There are three primary update channels:
 
