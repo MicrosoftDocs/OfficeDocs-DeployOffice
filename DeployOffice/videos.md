@@ -4,7 +4,7 @@ author: manoth-msft
 ms.author: manoth
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.collection: Tier3
 ms.localizationpriority: medium
