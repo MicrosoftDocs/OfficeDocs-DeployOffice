@@ -58,24 +58,9 @@ Remember not to open any Office programs. After you've created the image, you ca
 ## Step 4: Check that a Microsoft 365 Apps product key isn't installed in the image
 <a name="Step4"> </a>
 
-Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use the ospp.vbs script. This script is installed on the computer when Microsoft 365 Apps is installed.
+Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](licensing-activation/vnextdiag.md).
   
-For example, at a command prompt, run the following command:
   
- cscript.exe "%programfiles%\\Microsoft Office\\Office16\\ospp.vbs" /dstatus
-  
-You should see **\<No installed product keys detected\>**, as shown in the following screenshot.
-  
-![No installed product key detected.](images/aa1e234d-c2d1-471f-bf7f-9b11adc8b4b4.jpg)
-  
-The location of the ospp.vbs script depends on whether you install the 32-bit or 64-bit version of Microsoft 365 Apps and whether you install on a 32-bit or 64-bit version of the operating system. The following table lists the possible locations of the ospp.vbs script.
-  
-|**Version of Microsoft 365 Apps**|**Version of operating system**|**Location of ospp.vbs file**|
-|:-----|:-----|:-----|
-|32-bit  <br/> |32-bit  <br/> |%programfiles%\\Microsoft Office\\Office16\\  <br/> |
-|32-bit  <br/> |64-bit  <br/> |%programfiles(x86)%\\Microsoft Office\\Office16\\  <br/> |
-|64-bit  <br/> |64-bit  <br/> |%programfiles%\\Microsoft Office\\Office16\\  <br/> |
-   
 ## Step 5: Save the operating system image
 <a name="Step5"> </a>
 
