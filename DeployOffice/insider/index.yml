@@ -57,7 +57,7 @@ productDirectory:
     - title: What's new
       imageSrc: /office/media/icons/whats-new-megaphone-blue.svg
       links:
-        - url: https://insider.office.com/blog
+        - url: https://insider.microsoft365.com/blog
           text: Blog
         - url: /officeupdates/beta-channel
           text: Release notes for Beta Channel for Windows
@@ -74,19 +74,19 @@ productDirectory:
           text: Microsoft Tech Community
         - url: https://answers.microsoft.com/en-us/officeinsider/forum
           text: Microsoft Support Community          
-        - url: https://insider.office.com/handbook#Provide-feedback
+        - url: https://insider.microsoft365.com/handbook#Provide-feedback
           text: How to provide feedback 
 
     - title: Microsoft 365 Insider for consumers
       imageSrc: /office/media/icons/user-monitor.svg
       links:
-        - url: https://insider.office.com/handbook
+        - url: https://insider.microsoft365.com/handbook
           text: Overview
-        - url: https://insider.office.com/join
+        - url: https://insider.microsoft365.com/join
           text: Join
-        - url: https://insider.office.com/join/iOS
+        - url: https://insider.microsoft365.com/join/iOS
           text: iOS
-        - url: https://insider.office.com/join/Android
+        - url: https://insider.microsoft365.com/join/Android
           text: Android
      
     - title: Other Insider programs at Microsoft
