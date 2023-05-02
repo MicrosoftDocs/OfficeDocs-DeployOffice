@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how OneNote blocks embedded files that have dangerous extensions."
-ms.date: 04/28/2023
+ms.date: 05/01/2023
 ---
 
 # OneNote blocks embedded files that have dangerous extensions
