@@ -2,6 +2,19 @@
 
 
 
+## Week of April 24, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/25/2023 | [Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](/DeployOffice/overview-unattended) | modified |
+| 4/26/2023 | [Check the license and activation status for Microsoft 365 Apps](/DeployOffice/licensing-activation/vnextdiag) | added |
+| 4/26/2023 | [Microsoft 365 Insider (for business)](/DeployOffice/insider/index) | modified |
+| 4/28/2023 | [Deploy Microsoft 365 Apps as part of an operating system image](/DeployOffice/deploy-microsoft-365-apps-operating-system-image) | modified |
+| 4/28/2023 | [Tools to manage volume activation of Office](/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) | modified |
+| 4/28/2023 | [Troubleshoot volume activation of Office](/DeployOffice/vlactivation/troubleshoot-volume-activation-of-office) | modified |
+
+
 ## Week of April 17, 2023
 
 
@@ -52,16 +65,3 @@
 | 3/27/2023 | Secure and control access to Office 2016 | removed |
 | 3/29/2023 | [OneNote blocks embedded files that have dangerous extensions](/DeployOffice/security/onenote-extension-block) | added |
 | 3/30/2023 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | added |
-
-
-## Week of March 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/20/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 3/20/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 3/22/2023 | [Adopt servicing profiles for Microsoft 365 Apps](/DeployOffice/fieldnotes/adopt-servicing-profiles) | modified |
-| 3/22/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
-| 3/22/2023 | [Privacy controls available for Office products](/DeployOffice/privacy/products-versions-privacy-controls) | modified |
-| 3/23/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
