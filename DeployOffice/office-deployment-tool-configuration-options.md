@@ -341,7 +341,13 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
+Be sure the languages that you specify are supported by the product you're installing. Otherwise your installation will fail.
+
+For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
+
+- For a list of languages supported by Microsoft 365 Apps, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
+- For a list of languages supported by Visio, see [Display languages supported in the Visio desktop app](https://support.microsoft.com/office/a921983e-fd5d-45ef-8af1-cedf70c53d75).
+- Project supports the same languages that Visio does.
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
