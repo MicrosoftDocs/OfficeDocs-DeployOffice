@@ -4,7 +4,7 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
