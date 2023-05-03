@@ -10,14 +10,17 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with an overview of the update channels for Microsoft 365 Apps, including Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel"
-ms.date: 03/01/2023
+ms.date: 04/27/2023
 ---
 
 # Overview of update channels for Microsoft 365 Apps
 
 One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for Office apps, such as Excel and Word, on a regular basis. You can control how often the users in your organization get these new features by specifying the update channel.
 
-In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office. 
+In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
+
+[!NOTE]
+> If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
 
 There are three primary update channels:
 
@@ -237,7 +240,7 @@ After Office is installed, you can change the update channel for a device. For m
 - OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app update process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
 - If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](../ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](../office2019/update.md#update-channel-for-office-2019).
-- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you are Current Channel and the update channels available through the [Microsoft 365 Insider program](https://insider.office.com/handbook#Office-Insider-levels).
+- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you are Current Channel and the update channels available through the [Microsoft 365 Insider program](https://insider.microsoft365.com/handbook#Office-Insider-levels).
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
