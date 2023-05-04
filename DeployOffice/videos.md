@@ -10,7 +10,7 @@ ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists videos available for IT Pros deploying Microsoft 365 Apps."
-ms.date: 03/30/2023
+ms.date: 05/04/2023
 ---
 
 # Videos about how to deploy, update, and manage Microsoft 365 Apps
@@ -23,8 +23,9 @@ All the videos are available on YouTube. You can also [subscribe to their YouTub
 
 These videos cover how to deploy Microsoft 365 Apps.
 
-- [Explained - Your options for deploying Microsoft 365 Apps with Microsoft Intune](https://www.youtube.com/watch?v=fA8lcnRXmkI&t=22s)
-- [Simplify your Office upgrade with MSICondition](https://www.youtube.com/watch?v=7zHi6MRveRc)
+- [Your options for deploying Microsoft 365 Apps with Microsoft Intune](https://youtu.be/fA8lcnRXmkI)
+- [Your options for deploying Microsoft 365 Apps with Configuration Manager](https://youtu.be/dUz1Jo4HGiQ)
+- [Simplify your Office upgrade with MSICondition](https://youtu.be/7zHi6MRveRc)
 
 ## Update Microsoft 365 Apps
 
@@ -32,6 +33,7 @@ These videos cover update channels and how to update Microsoft 365 Apps.
 
 - [Explained - Microsoft 365 Apps Update Channels](https://www.youtube.com/watch?v=eNn4PDkmo7s)
 - [Managing Update Channels for Microsoft 365 Apps](https://www.youtube.com/watch?v=rIpoloAZnSg)
+- [Managing Microsoft 365 Apps updates with Configuration Manager](https://youtu.be/dUz1Jo4HGiQ?t=791)
 - [The New Monthly Enterprise Channel](https://www.youtube.com/watch?v=0vrIkbWBTho)
 - [Managing updates for the Microsoft 365 Apps - 2 easy ways!](https://www.youtube.com/watch?v=ru11vVA8em4)
 - [Expedite your Microsoft 365 Apps updates](https://www.youtube.com/watch?v=g5VfSMlpJn0)
