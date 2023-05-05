@@ -12,7 +12,7 @@ search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 03/01/2023
+ms.date: 05/05/2023
 ---
 
 # Office versions and connectivity to Microsoft 365 services
@@ -31,11 +31,11 @@ The following table lists the Office versions that are supported for connecting 
 
 ## Older Office versions not supported for connecting to Microsoft 365 services
 
-Older Office versions not listed in the table might still be able to connect to Microsoft 365 services, but that connectivity isn't supported.
+Older Office versions might still be able to connect to Microsoft 365 services, but that connectivity isn't supported.
 
 In practical terms, what this means is that these older Office versions might not be able to use all the latest functionality and features of Microsoft 365 services. In addition, over time, these older versions might encounter other unexpected performance or reliability issues while using Microsoft 365 services. That's because as we make improvements to Microsoft 365 services, we're not taking into account or testing with these older Office versions.
 
-We won’t take any active measures to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date.
+We won’t take any active measures to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date. This includes Office 2019 and Office 2016 after October 10, 2023. Both of these versions are in extended support until October 14, 2025.
 
 Therefore, to provide the best experience with using Microsoft 365 services, we strongly recommend that you move off older Office versions to versions supported for connecting to Microsoft 365 services.
 
