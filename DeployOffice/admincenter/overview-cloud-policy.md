@@ -57,7 +57,13 @@ The following are the basic steps for creating a policy configuration.
 
 ## Managing policy configurations
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page.  This will open the policy configuration. Make the appropriate changes and then navigate to the **Review and publish** page and select **Update**.
+To change a policy configuration:
+
+1. Go to the **Policy configurations** page.
+2. Select the policy configuration you want to change. This will open the configuration details.
+3. Make the appropriate changes to the policy configuration.
+4. Navigate to the **Review and publish** page.
+5. Select **Update** to save and apply your changes.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
 
@@ -99,10 +105,10 @@ Also, policy settings implemented by using Cloud Policy take precedence over pol
 
 At Microsoft we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy you’ll need to protect your organization and empower your end users to create accessible content.
 
-# Security baseline
+### Security baseline
 To easily identify security baseline policies, we’ve added a new column to the policy table called Recommendation. Policies recommended for security baseline will be tagged in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
 
-# Accessibility baseline
+### Accessibility baseline
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline will enable IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
 ## Additional information about Cloud Policy
