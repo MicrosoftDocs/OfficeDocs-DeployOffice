@@ -2,6 +2,14 @@
 
 
 
+## Week of May 01, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/1/2023 | [OneNote blocks embedded files that have dangerous extensions](/DeployOffice/security/onenote-extension-block) | modified |
+
+
 ## Week of April 24, 2023
 
 
@@ -48,20 +56,3 @@
 | 4/5/2023 | Set a preference for Resume Assistant in Word for Mac | removed |
 | 4/6/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
 | 4/7/2023 | [Deploy Office LTSC 2021](/DeployOffice/ltsc2021/deploy) | modified |
-
-
-## Week of March 27, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 3/27/2023 | [Add or remove language packs after deployment of Office 2016](/DeployOffice/office2016/language/add-remove-language-packs) | renamed |
-| 3/27/2023 | [Customize language setup and settings for Office 2016](/DeployOffice/office2016/language/customize-language-setup-settings) | renamed |
-| 3/27/2023 | [Language identifiers and OptionState Id values in Office 2016](/DeployOffice/office2016/language/language-identifiers-optionstate-id-values) | renamed |
-| 3/27/2023 | [Plan for multilanguage deployment of Office 2016](/DeployOffice/office2016/language/plan-multilanguage-deployment) | renamed |
-| 3/27/2023 | [Block specific file format types in Office 2016](/DeployOffice/office2016/security/block-specific-file-format-types) | renamed |
-| 3/27/2023 | [Prevent file format attacks by using Office file validation in Office 2016](/DeployOffice/office2016/security/prevent-file-format-attacks-using-file-validation) | renamed |
-| 3/27/2023 | [Set up a safe environment to open files by using Protected View in Office 2016](/DeployOffice/office2016/security/protected-view) | renamed |
-| 3/27/2023 | Secure and control access to Office 2016 | removed |
-| 3/29/2023 | [OneNote blocks embedded files that have dangerous extensions](/DeployOffice/security/onenote-extension-block) | added |
-| 3/30/2023 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | added |
