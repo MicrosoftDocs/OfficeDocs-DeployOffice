@@ -57,7 +57,13 @@ The following are the basic steps for creating a policy configuration.
 
 ## Managing policy configurations
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page.  This will open the policy configuration. Make the appropriate changes and then navigate to the **Review and publish** page and select **Update**.
+To change a policy configuration:
+
+1. Go to the **Policy configurations** page.
+2. Select the policy configuration you want to change. This will open the configuration details.
+3. Make the appropriate changes to the policy configuration.
+4. Navigate to the **Review and publish** page.
+5. Select **Update** to save and apply your changes.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
 
