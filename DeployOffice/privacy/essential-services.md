@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 01/24/2023
+ms.date: 05/11/2023
 ---
 
 # Essential services for Office
@@ -4342,6 +4342,10 @@ The following fields are collected:
 
 - **Region** - The region being used to determine what version of a consent to show the user
 
+- **Result** - The internal result code for the client server communication with consent service
+
+- **ResultExt** - The extension of the internal result code for the client server communication with consent service
+
 
 ### Office.Privacy.UnifiedConsent.API.ConsentPatchFailed
 
@@ -4374,6 +4378,10 @@ The following fields are collected:
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
 - **Region** - The region being used to determine what version of a consent to show the user
+
+- **Result** - The internal result code for the client server communication with consent service
+
+- **ResultExt** - The extension of the internal result code for the client server communication with consent service
 
 
 ### Office.Privacy.UnifiedConsent.API.ConsentPatchSuccess
@@ -4713,6 +4721,8 @@ This event is used to understand the in-app purchase (IAP) experience for the us
   - **isDimissed** - Bool - true if user dismissed the drawer.
   - **isExpanded** - Bool - true when user expanded the bottom sheet.
 
+
+- **Office.iOS.Paywall.ExistingUserSignInButtonClicked** - To log how many people are clicking on the sign-in button on the SKU chooser screen. The data is used to measure the performance of the Sign-in button and is triggered every time a user clicks this button.
 
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
@@ -5265,6 +5275,21 @@ The following fields are collected:
 - **IdentityAvailable** - Indicates whether the LVUX session is running with active user identity or not.
 
 - **WebDialogResult** - Indicates result of inline purchase dialog.
+
+
+### Office.Licensing.Flows.SearchForSCAToken
+
+This event is triggered when the user boots Office with a shared computer activation configured. The data is used to make sure this method of activating Microsoft Office is performing as expected.
+ 
+The following fields are collected:
+
+- **CurrentTokenRemainingDays** - This tells us the number of days of validity left on the token when this search was made
+
+- **IsSilentRenewal** - This tells us the search is triggered because we are trying to opportunistically renew the session token on disk
+
+- **IsUserTriggeredRenewal** - This tells us the search is triggered by the user through a click on a message bar asking them to verify their account
+
+- **TokenCount** - This tells us the number of valid session tokens on disk
 
 
 ### Office.Licensing.Flows.ShowWebPurchaseExperience
@@ -19123,6 +19148,7 @@ The following fields are collected:
 - **ExceptionInfo** - System information for the exception.
 
 - **FaultAppName -** The name of the faulting app. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
 - **HangTypeCode** - Represents class of hang if the process hung during execution.
 
 - **InstallMethod -** Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
@@ -19136,6 +19162,8 @@ The following fields are collected:
 - **IsLabMachine -** Whether Office is being run in a Microsoft lab. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **LicenseID** - The licensing information of the user.
 
 - **ModuleBaseAddress -** Base Address of the failing module. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
@@ -19227,6 +19255,8 @@ The following fields are collected:
 
 - **IsCustomerImpacting** - Whether the user was impacted negatively by the UAE.
 
+- **LicenseID** - The licensing information of the user.
+
 - **ModuleOffset** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
 
 - **ModuleVersion** - Offset in bytes (in hexadecimal) from the base address where the failure occurred.
@@ -19236,6 +19266,12 @@ The following fields are collected:
 - **PreviousBuild** - Previously installed build version
 
 - **ProcessorArchitecture** - Processor Architecture for the environment: x64, x86, etc.
+
+- **ReleaseAudienceGroup** - AudienceGroup of the affected process.
+
+- **ReleaseChannel** - Channel of the affected process.
+
+- **ReleaseFork** - Fork of the affected process.
 
 - **SessionFlag** - Defines the conditions of the session such as: was file opened, or edited, was cloud document opened, was boot sequence completed, etc.
 
