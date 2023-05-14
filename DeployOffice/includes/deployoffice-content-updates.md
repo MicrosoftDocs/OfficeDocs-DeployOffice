@@ -2,6 +2,14 @@
 
 
 
+## Week of May 08, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/8/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
+
+
 ## Week of May 01, 2023
 
 
@@ -46,13 +54,3 @@
 | 4/11/2023 | [Plan an upgrade from older versions of Office to Microsoft 365 Apps](/DeployOffice/endofsupport/plan-upgrade-older-versions-office) | modified |
 | 4/11/2023 | [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](/DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer) | modified |
 | 4/12/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
-
-
-## Week of April 03, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/5/2023 | Set a preference for Resume Assistant in Word for Mac | removed |
-| 4/6/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
-| 4/7/2023 | [Deploy Office LTSC 2021](/DeployOffice/ltsc2021/deploy) | modified |
