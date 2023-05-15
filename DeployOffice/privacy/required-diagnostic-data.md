@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 01/24/2023
+ms.date: 05/11/2023
 ---
 
 # Required diagnostic data for Office
@@ -1711,7 +1711,7 @@ The following fields are collected:
 
 This event lets us detect how far the user has gotten in the create new account form.  It indicates when the user has moved to another step or if they have dropped off.  We need this information to detect if any steps are failing and to ensure user account creation was successful. 
 
-The following field is collected: 
+The following fields are collected: 
 
 - **OTAddAccountCurrentStep** - That can have the following values: profile_form, redirect_mobile_check, mobile_check_success
 
@@ -2012,6 +2012,17 @@ The following fields are collected:
 - **origin** – Tells us the origin of the action. Possible values are quick_reply and full_screen.
 
 - **toolbar_type** – Tell us the toolbar type that is presenting on compose page. Possible values are compose_actions and formatting.
+
+
+#### compose.mail.rearrange
+
+This event is triggered when the user uses the new Customizable Toolbar feature in Compose to move an action between the toolbar pinned area and the drawer. The data is used to ensure that the feature is functioning as expected and to plan for future improvements.
+
+The following fields are collected: 
+
+- **rearrange_action** - type of rearrange action performed by the user, including pin_to_toolbar, move_to_drawer, move_within_toolbar, and move_within_drawer.
+
+- **toolbar_action** - toolbar action that is being moved, which has the same type as the action property in compose_mail_accessory event.
 
 
 #### conversation.view.action
@@ -2883,9 +2894,13 @@ This event is collected for Office applications running under Android platform a
 
 The following fields are collected:
 
+- **Data_AppBootPhaseStats** - The breakup of different stages involved in boot phase un file open process. Example value: {PostAppInitTimeInMs=57, PostCommonLibraryLoadPhaseTime=20, PreMinimumLibraryLoadPhaseTime=1, MinimumLibraryLoadPhaseTime=16, LibrarySharingPhaseTime=84, CommonLibraryLoadPhaseTime=202, InitialBootPhaseTime=84, PreAppInitTimeInMs=652, PreCommonLibraryLoadPhaseTime=876, ActivityTransitionTime=32, ApplicationObjectCreationTime=108, ApplicationBootTime=2007, AppActivationTimeInMs=106, OfficeActivityTime=67} 
+
 - **Data_AppDocsOperationDuration** - The duration spent in sub- layer during a file open operation.
 
 - **Data_AppDuration** - The duration spent in application processing during a file open operation. 
+
+- **Data_AppObjectCreationDuration** - The duration spent in application object creation (pre-boot stage) in process of file open. This is not part of boot duration.
 
 - **Data_AppWarmUpGain** - The gain in application boot duration we get because of pre-booting a part of the application beforehand.
 
@@ -2971,7 +2986,11 @@ The following fields are collected:
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, for example, UI element, triggered by another app, etc.
 
+- **Data_IsAppUpgradeSession** - A Boolean value indicating if current session is app upgrade session. 1 = true, 0 = false
+
 - **Data_IsBackgroundActivationComplete** - The state (true/false) to identify if pre-booting of application is done through background activation or not.
+
+- **Data_IsFRESession** - A Boolean value indicating if the file open is the first action the user did after installing the app. 1 = true, 0 = false
 
 - **Data_Measurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which excludes the duration of sub- function calls.
 
@@ -11709,8 +11728,30 @@ The following fields are collected:
 
 - **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
 
+#### Office.OfficeMobile.FRE.UpsellBlockedAADC
+ 
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
+We will use the data to summarize how many upsell opportunities were lost due to age compliance.
+ 
+The following fields are collected: 
 
-#### Office.IntelligentService.PrivacyConsent.PrivacyEvent
+- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
+
+#### Office.Privacy.OffersOptIn 
+
+This event is triggered when values for privacy controls are loaded or reloaded. This happens when the user first boots the process and whenever these settings change, such as the user updating them or the values roaming from another device reports information about user’s opt-in status to Personalized Offers. The event is used to ensure that users' privacy choices related to the Personalized Offers control are being enforced as expected.
+
+The following fields are collected:
+
+- **ConsentGroup** - consent group to which the user belongs
+
+- **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
+
+- **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
+
+#### Office.Privacy.PrivacyConsent.PrivacyEvent
+
+*[This event was previously named Office.IntelligentServices.PrivacyConsent.PrivacyEvent.]*
 
 This event represents a user or system initiated action that is part of the privacy User experience for Office. It is triggered on the privacy First Run dialogs, Account Privacy dialog, and privacy notifications. The event is used to understand the following: users consenting to Office privacy settings, users changing Office privacy settings, and Office privacy settings getting updated in user sessions.
 
@@ -11747,28 +11788,6 @@ The following fields are collected:
    - **Data_UserContentServiceGroupState -** User setting for analyzing content
 
   - **Data_WillShowDialogs -** Record of user needing to see privacy First Run dialogs
-
-
-#### Office.OfficeMobile.FRE.UpsellBlockedAADC
- 
-This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
-We will use the data to summarize how many upsell opportunities were lost due to age compliance.
- 
-The following fields are collected: 
-
-- **EntryPoint** –  String specifying the upsell entry point which was blocked for age compliance.
-
-#### Office.Privacy.OffersOptIn 
-
-This event is triggered when values for privacy controls are loaded or reloaded. This happens when the user first boots the process and whenever these settings change, such as the user updating them or the values roaming from another device reports information about user’s opt-in status to Personalized Offers. The event is used to ensure that users' privacy choices related to the Personalized Offers control are being enforced as expected.
-
-The following fields are collected:
-
-- **ConsentGroup** - consent group to which the user belongs
-
-- **OffersConsentSourceLocation** - indicates how the user made the choice to enable or disable Personalized Offers
-
-- **OffersConsentState** - indicates whether the user has chosen to enable or disable Personalized Offers
 
 
 #### Office.Privacy.UnifiedConsent.UI.ConsentAccepted
@@ -12616,6 +12635,21 @@ The following fields are collected:
 
 - **unknown_delay** - delay caused by unknown sources other than the explicitly tracked durations
 
+#### background.task.event
+
+This event is triggered when an iOS background task is started, ended, or expires. Background tasks allow the app to finish work when the app is backgrounded. The data is used to determine if the background tasks being used are running successfully and are not causing the app to crash. Background tasks are an important part of keeping the app in a good state.
+
+The following fields are collected:
+
+- **correlation_Id** - A unique identifier given to a task so that we can correlate the start/end/expires in telemetry.
+
+- **event_type** - The background task event type, either start, end or expire.
+
+- **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime.
+
+- **task_name** - The name given to the task either by Outlook or by the operating system.
+
+
 #### cal.component
 
 This event lets us detect and fix issues where there is perceivable performance impact on our calendar UI components that would cause your calendar to have scrolling issues.
@@ -13352,6 +13386,19 @@ The following fields are collected:
 - **StartMode** - Integer describing Sign-in Mode 
 
 - **UserDecision** - Integer describing user decision of which type of Sign-in
+
+
+#### Office.Android.OneAuthEFailErrors
+
+This event gets triggered when login failed. The data will be used to understand what kind of errors are happening.
+
+The following fields are collected: 
+
+- **ContributedTag** - This is a tag which will indicate the flow where error occurred.
+
+- **Status** - Error code integer
+
+- **SubStatus** - Error subcategory code integer
 
 
 #### Office.Apple.Apple.AppBoot.Mac

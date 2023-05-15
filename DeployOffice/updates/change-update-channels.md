@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 04/17/2023
+ms.date: 05/10/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -47,16 +47,16 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 ## Change the update channel with the Office Deployment Tool (ODT)
 
 1. Before you begin, double-check these items:
-   - Make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use  Group Policy, the Office Deployment Tool, Configuration Manager, or Intune.
+   - Make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Configuration Manager, or Intune.
    - Make sure that the update channel for the targeted device isn't set through Group Policy. Otherwise, the policy setting will take precedence over the Office Deployment Tool setting and the device will stay on the channel specified by the policy setting. In such case, either remove the policy setting from the device or use [Group Policy to change the channel](#change-the-update-channel-with-group-policy).
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new channel name. In the example below, the channel changes to Current Channel.  For more information on channel names, see [Channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
+3. Create a configuration file that specifies the new update channel. In the example below, the channel changes to Current Channel. See [Channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element) for more details.
 
-4. Deploy the configuration file using your standard processes.
+4. Deploy the Office Deployment Tool with the newly created configuration file using your standard processes. It must run the "setup.exe /configure yourconfigfile.xml" command to inject the update channel setting into the system. No requirement to close the Microsoft 365 Apps first, as only the stored configuration settings are changed.
 
-After the ODT has executed, the "Office Automatic Updates 2.0" scheduled task must run. The task will detect the change and update the channel. When the task runs again, it detects the new assigned channel and Office updates to a new build from that channel. The Office user interface on the client device won't show the updated channel until a build of Office from the new channel is installed.
+After the ODT has executed, the "Office Automatic Updates 2.0" scheduled task must run. The task will detect the change and update the channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
 ### Example
 
@@ -103,7 +103,7 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 If you want to switch devices to the Monthly Enterprise channel, you can use a servicing profile. Servicing profiles is a cloud-based update management solution for the Microsoft 365 Apps. Once configured, it keeps targeted installations current. If a targeted device is on a different channel, it will automatically be migrated to the [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview).
 
-[!NOTE]
+> [!NOTE]
 > Once activated, Servicing profiles will move all in-scope installations to the latest Monthly Enterprise Channel release and keep devices updated going forward. If you want to change to an update channel other than Monthly Enterprise Channel or not use a cloud-service to keep your devices updated, consider using one of the other options given in this article.
 
 Here are the steps for changing the update channel to Monthly Enterprise Channel using a servicing profile:
