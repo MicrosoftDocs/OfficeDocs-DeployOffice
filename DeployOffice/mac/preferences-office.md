@@ -11,26 +11,29 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 01/12/2023
+ms.date: 05/08/2023
 ---
 
 # Set suite-wide preferences for Office for Mac
 
 ***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
+The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) and support a streamlined user experience.
+
 As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Office in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
 
-The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) and support a streamlined user experience.
-
-These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
+These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Microsoft Intune and Jamf Pro.
 
 The following list shows the preferences that are covered in this article:
 
 - [Automatically sign in and suppress welcome dialogs](#automatically-sign-in-and-suppress-welcome-dialogs)
 - [Specify Microsoft 365 sign in name to be added on first launch](#specify-microsoft-365-sign-in-name-to-be-added-on-first-launch)
+- [App launch](#app-launch)
+- [User functionality](#user-functionality)
+- [App installation](#app-installation)
 
 ## Sign in settings
 
@@ -205,6 +208,17 @@ Exclude Teams
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+
+Exclude Defender
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| InstallDefender |
+|Data Type| Boolean |
+|Possible values| true (default) <br/> false |
+|Availability| 16.75 |
 |Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
 
 Exclude AutoUpdate
