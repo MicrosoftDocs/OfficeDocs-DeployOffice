@@ -2014,7 +2014,7 @@ The following fields are collected:
 - **toolbar_type** – Tell us the toolbar type that is presenting on compose page. Possible values are compose_actions and formatting.
 
 
-#### compose.toolbar.rearrange
+#### compose.mail.rearrange
 
 This event is triggered when the user uses the new Customizable Toolbar feature in Compose to move an action between the toolbar pinned area and the drawer. The data is used to ensure that the feature is functioning as expected and to plan for future improvements.
 
