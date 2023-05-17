@@ -23,8 +23,6 @@ ms.date: 05/08/2023
 
 Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
-When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies.
-
 ## Requirements for using Cloud Policy
 
 The following are the requirements for using Cloud Policy with Microsoft 365 Apps for enterprise:
