@@ -385,7 +385,7 @@ Prevent users from applying Pride themes to Outlook.
 |Key|DisablePrideTheming|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
-|Requires Configuration Profile| No |
+|Requires Configuration Profile| Yes |
 |Availability|16.73 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
