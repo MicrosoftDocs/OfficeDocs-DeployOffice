@@ -28,14 +28,14 @@ ms.date: 05/16/2023
 
 Take advantage of this premium offer by opting to cloud update, Microsoft's recommended update management solution for Microsoft 365 Apps. This innovative tool allows you to automatically deliver updates for specific users or Azure Active Directory groups, supporting Monthly Enterprise Channel, Current Channel, and Semi-Annual Enterprise Channel. As a qualifying tenant, you stand to gain a wealth of powerful controls, proactive insights, and the simplicity of a one-step onboarding process.
 
-With cloud update, you can update Microsoft 365 Apps while retaining your existing channel settings, giving you enhanced flexibility. This includes options to exclude specific devices or user groups, set update deadlines, or apply uniform update themes across your organization. Further, you'll have access to smart recommendations based on your tenant’s data, potentially identifying devices that could benefit from transitioning to more suitable update channels.
+With cloud update, you can update Microsoft 365 Apps while retaining your existing channel settings, giving you enhanced flexibility. This includes options to exclude specific devices or user groups, set update deadlines, or apply uniform update themes across your organization. Further, you have access to smart recommendations based on your tenant’s data, potentially identifying devices that could benefit from transitioning to more suitable update channels.
 
 
 ## Channel to Profile Mapping
 
-Before onboarding to cloud update, view the current state of your tenant and make informed decisions. For example, you can see devices that are already managed by Montly Enterpise Channel profile and those that have not onboarded yet.
+Before onboarding to cloud update, view the current state of your tenant and make informed decisions. For example, you can see devices that are  already managed with Monthly Enterprise Channel profile and those devices that haven't onboarded yet.
 
-The default onboarding experience will automatically map devices to the proper cloud update profile based on the existing update channel. Devices on Current Channel and Monthly Enterprise Channel will map to their corresponding cloud update profile. While devices on Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel will map to the Semi-Annual Enterprise Channel cloud update profile, with the preview channel assigned to Wave 1 and non-preview channel assigned to Wave 2
+The default onboarding experience maps devices to the proper cloud update profile based on the existing update channel. Devices on Current Channel and Monthly Enterprise Channel maps to their corresponding cloud update profile. Devices on Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel map to the Semi-Annual Enterprise Channel cloud update profile, with the preview channel assigned to Wave 1 and non-preview channel assigned to Wave 2
 
 > [!NOTE] 
 > All devices in Semi-Annual Enterprise Channel profile will get updats via Semi-Annual Enterprise Channel, regardless of the wave they are currently in.
@@ -50,7 +50,7 @@ As soon as you sign in, you can view a consolidated update progress status at th
 
 ### Updates overview page
 
-This provides you with a snapshot view of update insights. It presents a comprehensive picture, including the overall percentage of updated devices, progress of updates per channel, trends in Updates & Security, issues and health signals, and Deployment Validation signals.
+This page provides you with a snapshot view of update insights. It presents a comprehensive picture, including the overall percentage of updated devices, progress of updates per channel, trends in Updates & Security, issues and health signals, and Deployment Validation signals.
 
 ### Smart recommendations
 
@@ -58,7 +58,7 @@ Act on smart recommendations based on valuable insights from the tenant's data. 
 
 ### Tenant settings
 
-You have the ability to configure various controls at the tenant level. This includes options such as excluding specific devices or user groups, establishing exclusion time windows, setting update deadlines, or determining an update theme to be applied across the organization.
+You have the ability to configure various controls at the tenant level. These configurations include options such as excluding specific devices or user groups, establishing exclusion time windows, setting update deadlines, or determining an update theme to be applied across the organization.
 
 ### Profiles overview
 
@@ -68,7 +68,7 @@ Delve deeper into individual profiles, allowing a more thorough examination of p
 
 - **What happens if I sign up for priority access to cloud update?**
 
-    By signing up, your tenant is staged for new features while your existing environment remains unchanged. Your interest in cloud update is recorded and your tenant is added to the priority waitlist for the new feature experience. When the new features are ready, you’ll receive a notification that cloud update is available for your tenant.
+    By signing up, your tenant is staged for new features while your existing environment remains unchanged. Your interest in cloud update is recorded and your tenant is added to the priority waitlist for the new feature experience. When the new features are ready, you receive a notification that cloud update is available for your tenant.
 
 - **I have multiple tenants. Can I choose which ones will be part of priority access?**
 
@@ -76,7 +76,7 @@ Delve deeper into individual profiles, allowing a more thorough examination of p
 
 - **If I sign up for  priority access, will it impact the devices in my environment in any way?**
 
-    No. Your environment won’t change, and your existing configuration will stay the same.
+    No. Your environment isn't changed, and your existing configuration stays the same.
 
 - **Can I remove my tenant(s) from the priority access once I’ve signed up?**
 
@@ -96,4 +96,4 @@ Delve deeper into individual profiles, allowing a more thorough examination of p
     
 - **Why is the priority access option not available in the Microsoft 365 Apps admin center?**
 
-    If you believe your tenant should have the option to join priority access, you can submit a request using the Give Feedback button in the Microsoft 365 Apps admin center.
+    If you think your tenant qualifies for priority access, you can submit a request using the Give Feedback button in the Microsoft 365 Apps admin center.
