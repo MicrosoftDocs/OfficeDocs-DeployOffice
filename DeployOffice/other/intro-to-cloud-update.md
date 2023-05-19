@@ -94,6 +94,6 @@ Delve deeper into individual profiles, allowing a more thorough examination of p
 
     Yes. Once you receive the notification that cloud update is available for your tenant, you can choose to enable it at that time.
     
-- **Why is the priority access option not available in the Microsoft 365 Apps admin center?**
+- **Why is the priority access option not available in the [Microsoft 365 Apps admin center](https://config.office.com)?**
 
     If you think your tenant qualifies for priority access, you can submit a request using the Give Feedback button in the Microsoft 365 Apps admin center.
