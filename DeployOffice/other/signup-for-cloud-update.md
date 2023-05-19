@@ -36,7 +36,7 @@ Before onboarding to cloud update, view the current state of your tenant and mak
 The default onboarding experience maps devices to the proper cloud update profile based on the existing update channel. Devices on Current Channel and Monthly Enterprise Channel maps to their corresponding cloud update profile. Devices on Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel map to the Semi-Annual Enterprise Channel cloud update profile, with the preview channel assigned to Wave 1 and non-preview channel assigned to Wave 2
 
 > [!NOTE]
-> All devices in Semi-Annual Enterprise Channel profile will get updats via Semi-Annual Enterprise Channel, regardless of the wave they are currently in.
+> All devices in Semi-Annual Enterprise Channel profile will get updates via Semi-Annual Enterprise Channel, regardless of the wave they are currently in.
 
 ## New features and benefits
 
