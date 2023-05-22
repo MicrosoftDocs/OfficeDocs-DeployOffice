@@ -2,6 +2,18 @@
 
 
 
+## Week of May 15, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 5/15/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 5/15/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 5/15/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
+| 5/19/2023 | [Sign Up for cloud update](/DeployOffice/other/intro-to-cloud-update) | added |
+| 5/19/2023 | [Sign up for cloud update](/DeployOffice/other/signup-for-cloud-update) | added |
+
+
 ## Week of May 08, 2023
 
 
@@ -42,15 +54,3 @@
 | 4/21/2023 | [Microsoft 365 Apps and Office deployment documentation](/DeployOffice/index) | modified |
 | 4/21/2023 | [Office Telemetry Dashboard worksheets](/DeployOffice/compat/telemetry-dashboard-worksheet-reference) | modified |
 | 4/21/2023 | [Office Customization Tool (OCT) 2016 Help Add/Modify Registry Entry dialog box](/DeployOffice/oct/oct-2016-help-add-modify-registry-entry-dialog-box) | modified |
-
-
-## Week of April 10, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 4/10/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 4/10/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-| 4/11/2023 | [Plan an upgrade from older versions of Office to Microsoft 365 Apps](/DeployOffice/endofsupport/plan-upgrade-older-versions-office) | modified |
-| 4/11/2023 | [Supported scenarios for installing different versions of Office, Project, and Visio on the same computer](/DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer) | modified |
-| 4/12/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
