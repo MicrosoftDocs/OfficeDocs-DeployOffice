@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 05/08/2023
+ms.date: 05/25/2023
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -105,6 +105,8 @@ At Microsoft we strive to innovate and reduce the IT admins burden with the crea
 
 ### Security baseline
 To easily identify security baseline policies, we’ve added a new column to the policy table called Recommendation. Policies recommended for security baseline will be tagged in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
+
+For more information, see [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md)
 
 ### Accessibility baseline
 Most of our customers are making strides to become more accessible as an organization. The accessibility baseline will enable IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
