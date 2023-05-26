@@ -2,7 +2,7 @@
 title: "Connected experiences in Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
-ms.date: 04/28/2023
+ms.date: 05/26/2023
 ---
 
 # Connected experiences in Office
@@ -32,7 +32,6 @@ The following table provides a list of connected experiences that analyze your c
 | Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt txt   | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Automatically apply or recommend sensitivity labels|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
-|Chart recommendations|[Create a chart with recommended charts](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Class Notebook add-ins|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
