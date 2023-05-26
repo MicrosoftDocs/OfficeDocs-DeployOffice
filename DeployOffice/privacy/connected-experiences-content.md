@@ -2,7 +2,7 @@
 title: "Connected experiences and your content"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides information about how connected experiences for Microsoft 365 Apps use content to provide its functionality and how that content is managed and secured."
 hideEdit: true
-ms.date: 03/24/2023
+ms.date: 05/26/2023
 ---
 
 # Connected experiences and your content
@@ -105,14 +105,13 @@ For more information, see [Identity and access management overview](/compliance/
 
 Some connected experiences use machine learning services to perform their function to help you accomplish a task. For example, machine learning services are used to help with the following tasks:
 
-- Analyze your cell contents in an Excel workbook to provide chart recommendations or PivotTable recommendations.
+- Analyze your cell contents in an Excel workbook to provide PivotTable recommendations.
 - Review the contents of an email that you receive to provide suggested replies.
 - Use the search query that you enter using Tap in Word to rank the search results to improve relevance.
 
 The following connected experiences use machine learning services:
 
 - Analyze Data
-- Chart recommendations
 - Editor
 - Immersive Reader
 - Ink to Test, Ink to Shape, Ink to Math
@@ -137,7 +136,6 @@ The following table lists the content used by connected experiences when perform
 | 3D Maps                                | Cell contents of an Excel workbook                                                                                | Controller        |
 | Analyze Data                           | Cell contents of an Excel workbook                                                                                | Processor         |
 | Automatic alt txt                      | Images inserted into the document, workbook, presentation, or email                                               | Processor         |
-| Chart recommendations                  | Cell contents of an Excel workbook                                                                                | Processor         |
 | Data types                             | Cell contents of an Excel workbook                                                                                | Processor         |
 | Dictation                              | Audio captured by the microphone while creating a document, email, or presentation                                | Processor         |
 | Editor                                 | Up to one sentence at a time from the document or email                                                           | Processor         |
