@@ -1783,6 +1783,8 @@ The following fields are collected:
 
 - **is_intune_managed** - Tell us if the app is managed by Intune.
 
+- **is_low_power_mode_enabled** - Tells us if the device has low power mode turned on
+
 - **is_registered_for_remote_notifications** - Tell us if the app has been registered for remote notifications.
 
 - **is_sound_available** - Tell us if the app has been configured to allow sounds in notifications.
@@ -12785,6 +12787,12 @@ The following fields are collected:
 
 - **component_name** - the name of the component/view that is active during the filtering
 
+- **floating_ad_load_error_code**- error code when loading floating ads
+
+- **floating_ad_not_shown_reason**- reason why floating ads are not being shown
+
+- **floating_ad_shown**- whether a floating ad was shown (if ads are enabled)
+
 - **has_hx** - whether the device has at least one Hx (our new email syncing service) account
 
 - **has_subscription** - whether the device has an ads subscription
@@ -12799,7 +12807,7 @@ The following fields are collected:
 
 - **orientation** - the screen orientation at the time of the even (portrait or landscape)
 
-- **provider** – the provider (Xandr or Facebook) of the current showing ad
+- **provider** – the provider (Xandr or Facebook) of the current showing ad *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **sub_error_type** - detailed error type
 
@@ -14230,6 +14238,12 @@ The following fields are collected:
 - **app_start_show_message_list** - that means there was a performance issue with the app start-up causing your inbox message list to take a long time to load
 
 - **average** - collects the number of reloads that happen on a conversation divided by the number of messages in that conversation.  
+
+- **batched_is_main_thread** - Tells us whether the event happened on the main thread. Similar to is_main_thread, except batched_is_main_thread is sending data for multiple instances.
+
+- **batched_is_treatment** - Whether the current perf event is generated in a treatment flight, it will be used when we measure and compare the performance data for control group and treatment group in a flight. Similar to is_treatment, except batched_is_treatment is sending data for multiple instances.
+
+- **batched_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue. Similar to total_time_elapsed, except batched_time_elapsed is sending data for multiple instances.
 
 - **build_type** - Helps us know the build type of the app. For example: release, debug. 
 
