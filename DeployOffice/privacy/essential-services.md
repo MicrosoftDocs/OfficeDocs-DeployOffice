@@ -4754,6 +4754,8 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
 - **Office.iOS.Paywall.PurchaseCompleteScreen.Shown** - To log how many users have failed to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow) and Activation API (Licensing flow) and see the success screen. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
 
+- **Office.iOS.Paywall.PurchaseFailedScreen.OpenSettingsButtonTap** - To log how many users have tapped on Open Settings Button when they see it during network error while trying to complete the StoreKit API (Apple’s flow), Provisioning API (Retail Federation flow), and Activation API (Licensing flow). The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
+
 - **Office.iOS.Paywall.PurchaseFailedScreen.RetryButtonTap** - Data collected when the Purchase/Provisioning/Activation failed, and the user tapped the retry button. The data is used to troubleshoot purchase error scenarios and fix it to ensure that it performs as expected. *[This sub-event was previously named Office.iOS.Paywall.FailedScreen.RetryButtonTap.]*
 
    The following fields are collected:
@@ -4789,7 +4791,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App-store product-id of the product for which the Buy Button was tapped.
-   - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall.
+   - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats** - Data collected when users tap on “See More Benefits” to see all the services, apps and features included in the purchase. They must expand sections detailing the features for each of the apps. This event collects which features and apps they expanded, along with the duration of time spent. The data is used to ensure that the UI offered to end users to learn about the benefits is performing as expected. 
 
@@ -4818,6 +4820,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
+   - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
 
 - **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
 
