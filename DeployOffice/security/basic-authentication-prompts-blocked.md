@@ -55,8 +55,8 @@ The following table shows the version, for each update channel, in which the war
 | Update channel                           | Warning version                             | Blocking version                                    |
 |------------------------------------------|---------------------------------------------|-----------------------------------------------------|
 | Current Channel (Preview)                | Version 2303                                | *Version 2307* <br/> *(first half of July 2023)*    |
-| Current Channel                          | Version 2304                               | *Version 2308* <br/> *(second half of August 2023)* |
-| Monthly Enterprise Channel               | *Version 2304* <br/> *(June 13, 2023)*      | *Version 2308* <br/> *(October 10, 2023)*           |
+| Current Channel                          | Version 2304                                | *Version 2308* <br/> *(second half of August 2023)* |
+| Monthly Enterprise Channel               | Version 2304                                | *Version 2308* <br/> *(October 10, 2023)*           |
 | Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)* | *Version 2402* <br/> *(March 12, 2024)*             |
 | Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*    | *Version 2402* <br/> *(July 9, 2024)*               |
 
