@@ -40,7 +40,7 @@ The following table shows the version, for each update channel, in which the blo
 |------------------------------------------|----------------|----------------------------------------|
 | Current Channel (Preview)                | Version 2304   | Rolling out starting on May 1, 2023 |
 | Current Channel                          | Version 2304   | Rolling out starting on May 1, 2023 |
-| Monthly Enterprise Channel               | *Version 2304* | *June 13, 2023*                        |
+| Monthly Enterprise Channel               | Version 2304   | June 13, 2023                        |
 | Semi-Annual Enterprise Channel (Preview) | *Version 2308* | *September 12, 2023*                   |
 | Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2024*                      |
 
