@@ -76,8 +76,6 @@ There isn’t a policy for Outlook, but Outlook automatically checks for accessi
 > - The policy is found under User Configuration\Policies\Administrative Templates\Microsoft *{app name}* 2016\File Tab\Check Accessibility in the Group Policy Management Console.
 > - If you use this policy, users won’t be able to turn off the Accessibility Checker under **File** > **Options** > **Accessibility**.
 
-You can also provide your users with the [Accessibility Reminder add-in](https://support.microsoft.com/office/4f58ce8f-bf2e-4ae7-9f39-869a783bb988). This add-in allows users to notify other authors and contributors of accessibility issues in Word documents, Excel worksheets, or PowerPoint presentations.
-
 ## Make accessibility resources available to your organization
 
 There are many resources available that you can provide to your users to make them aware of the accessibility capabilities of Office, Windows, and other Microsoft products that you use in your organization.
