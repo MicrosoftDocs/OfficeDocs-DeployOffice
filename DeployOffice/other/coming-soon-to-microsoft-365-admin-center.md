@@ -42,7 +42,7 @@ The upcoming changes will mainly happen in three areas:
 Here's what you should expect:
 
 - New Updates Overview page in the Servicing section which provides a comprehensive snapshot of the update progress
-- The settings for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Settings* under the **Servicing** node.
+- The settings for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Settings** under the **Servicing** node.
 - The Devices tab in cloud update is no longer be available. Instead, device details are accessible through View All Devices from the Updates Overview and Profile Overview pages.
 - The Device Selection Criteria from the Settings tab are removed.
 - Inventory will get additional columns:
