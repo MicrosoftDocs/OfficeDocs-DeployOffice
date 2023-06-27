@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 06/13/2023
+ms.date: 06/22/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
@@ -21,11 +21,17 @@ ms.date: 06/13/2023
 New improvements are coming to the Microsoft 365 Apps admin center, specifically targeting the servicing profile and inventory features. If you're currently using these services, here are some key details to keep in mind:
 
 ## Overview
-Transitioning to our updated services? Don't worry, we've got you covered! If inventory and cloud update are part of your settings, these are automatically activated in the new setup, eliminating the need for manual intervention. You don't need to navigate through the portal and make any selections. If inventory was functioning prior to the update, it continues to do so afterwards. Similarly, if profiles were consistently updating your Monthly Enterprise Channel devices, they'll continue to do so. It's a seamless transition designed for your convenience!
+For both the servicing profile and inventory a new user interface as well as some feature updates will be released soon. The transition will happen automatically. No manual intervention or actions are required. Both the inventory data and as well as update status and configuration of servicing profiles will be carried forward.
+
+The upcoming changes will mainly happen in three areas:
+
+- [New Terminology](#new-terminology)
+- [New user experience](#changes-in-user-experience)
+- [Changes to existing features](#changes-in-features) and [what admin's should consider](#considerations-for-admins)
 
 ## New Terminology
 
-**Cloud update:** Introducing the next generation of servicing profile, enhanced with advanced capabilities and an improved user experience.  
+**Cloud update:** Introducing the next generation of servicing profile, enhanced with advanced capabilities and an improved user experience.
 **Profile:** Every update management configuration for each cadence is referred to as a Profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable tenants to manage Microsoft 365 Apps updates on their devices as applicable to their specific tenant.
 
 > [!NOTE]
@@ -33,13 +39,15 @@ Transitioning to our updated services? Don't worry, we've got you covered! If in
 
 ## Changes in user experience
 
-Cloud update, formerly known as servicing profile, is receiving significant improvements in user experience. Here's what you should expect:
+Here's what you should expect:
 
-- Devices from other channels can't directly be mapped to a profile that's not built for that channel.
+- New Updates Overview page in the Servicing section which provides a comprehensive snapshot of the update progress
+- The settings for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Settings** under the **Servicing** node.
 - The Devices tab in cloud update is no longer be available. Instead, device details are accessible through View All Devices from the Updates Overview and Profile Overview pages.
 - The Device Selection Criteria from the Settings tab are removed.
-
-Inventory will now be the go-to source for all device information across the portal. This applies irrespective of the context in which the device information is viewed, such as View Devices. Here, the Devices page lists all devices activated with a Microsoft 365 subscription license in your organization.
+- Inventory will get additional columns:
+  - Cloud update status: representing if this device is currently updated by profiles
+  - Is Excluded: Representing if this device belongs to an Azure AD group which is excluded using the 'Exclude Group' setting
 
 ## Changes in features
 
@@ -59,10 +67,10 @@ Inventory will now be the go-to source for all device information across the por
 
 - Only devices from the Monthly Enterprise Channel map to Monthly Enterprise Channel devices. The option to onboard a subset of devices through Start Small will no longer be available.
 
-**If you're an existing customer using Start Small or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
+**If you're an existing customer using Azure AD group-based filtering or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
 
-- The Start Small feature is no longer accessible. Now, the Profile handles the onboarding, management, and updating of all devices on the Monthly Enterprise Channel
+-  Azure AD group-based filtering  is no longer accessible. Now, the Profile handles the onboarding, management, and updating of all devices on the Monthly Enterprise Channel
 - The option to exclude devices or Microsoft Azure Active Directory (Azure AD) groups based on the presence of macros, add-ins, or minimum disk space has been removed. As a result, Profile is now onboarding, managing, and updating any devices previously exempt from these settings.
 
 > [!IMPORTANT]
-> If you're using cloud update through Start Small or you've fully on-boarded to the Monthly Profile, be aware of these changes. All devices on the Monthly Enterprise Channel in your tenant currently excluded from cloud update due to Start Small, macros and add-ins presence, or limited disk space will be affected. These devices will automatically transition to Monthly Profile for management and updates.
+> If you're using cloud update through Azure AD group-based filtering or you've fully on-boarded to the Monthly Profile, be aware of these changes. All devices on the Monthly Enterprise Channel in your tenant currently excluded from cloud update due to Azure AD group-based filtering, macros and add-ins presence, or limited disk space will be affected. These devices will automatically transition to Monthly Profile for management and updates.
