@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 06/22/2023
+ms.date: 06/29/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
@@ -21,7 +21,7 @@ ms.date: 06/22/2023
 New improvements are coming to the Microsoft 365 Apps admin center, specifically targeting the servicing profile and inventory features. If you're currently using these services, here are some key details to keep in mind:
 
 ## Overview
-For both the servicing profile and inventory a new user interface as well as some feature updates will be released soon. The transition will happen automatically. No manual intervention or actions are required. Both the inventory data and as well as update status and configuration of servicing profiles will be carried forward.
+For both the servicing profile and inventory a new user interface as well as new features updates be released soon. The transition will happen automatically. No manual intervention or actions are required. Both the inventory data and as well as update status and configuration of servicing profiles will be carried forward. In tandem, some existing features will receive updates or be removed as well.
 
 The upcoming changes will mainly happen in three areas:
 
@@ -31,23 +31,25 @@ The upcoming changes will mainly happen in three areas:
 
 ## New Terminology
 
-**Cloud update:** Introducing the next generation of servicing profile, enhanced with advanced capabilities and an improved user experience.
-**Profile:** Every update management configuration for each cadence is referred to as a Profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable tenants to manage Microsoft 365 Apps updates on their devices as applicable to their specific tenant.
+- **Cloud update:** With the introducing of managing Microsoft 365 Apps updates from the cloud, we will rename **servicing profiles** to **Cloud Update**.
+- **Profile:** Every update management configuration for each cadence is referred to as a profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable tenants to manage Microsoft 365 Apps updates on their devices as applicable to their specific tenant.
 
 > [!NOTE]
 > The schedule and availability of Current profile and Semi-Annual profile are not determined as of yet.
 
 ## Changes in user experience
 
-Here's what you should expect:
+Here is what you should expect:
 
-- New Updates Overview page in the Servicing section which provides a comprehensive snapshot of the update progress
-- The settings for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Settings** under the **Servicing** node.
-- The Devices tab in cloud update is no longer be available. Instead, device details are accessible through View All Devices from the Updates Overview and Profile Overview pages.
-- The Device Selection Criteria from the Settings tab are removed.
-- Inventory will get additional columns:
-  - Cloud update status: representing if this device is currently updated by profiles
-  - Is Excluded: Representing if this device belongs to an Azure AD group which is excluded using the 'Exclude Group' setting
+- The entry **Servicing** in the left-hand navigation gets renamed to **Cloud Update**.
+- A new **Overview** page gets added to the **Cloud Update** section. It provides a comprehensive snapshot of the update progress across profiles.
+- In the **Monthly Enterprise** navigation point, the following changes will be introduced:
+  - The **Devices** tab is removed. To view a list of devices with e.g, the assigned rollout wave, navigate to **Overview** and click on **View All Devices**. 
+  - The **Issues** tab is removed. Issues and devices with failed updates will now be listed on the **Overview** page.
+  - On the **Settings** tab, the entires for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Tenant Settings** on the **Overview** page.
+  - The **Device Selection Criteria** from the Settings tab are removed.
+- Inventory will get an additional column:
+  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. E.g., if the device is currently onboarding to a profile or is already managed by a profile. 
 
 ## Changes in features
 
