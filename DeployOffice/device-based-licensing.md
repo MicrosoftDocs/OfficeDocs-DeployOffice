@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
-ms.date: 03/01/2023
+ms.date: 06/29/2023
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
@@ -18,7 +18,7 @@ ms.date: 03/01/2023
 Commercial customers can use *Microsoft 365 Apps for enterprise (device)* to assign a Microsoft 365 Apps for enterprise license to a Windows client device instead of to a user. Education customers can do the same thing by using the *Microsoft 365 Apps for Education (device)* license. This device-based license is designed to simplify management of Microsoft 365 Apps for enterprise on devices shared by many users. Anyone that signs in and uses that device can use Microsoft 365 Apps for enterprise to create and edit documents.
 
 > [!IMPORTANT]
-> Device-based licensing for Microsoft 365 Apps for enterprise is available as a license only for some commercial customers and some education customers. For commercial customers, the license is *Microsoft 365 Apps for enterprise (device)* and is available only through Enterprise Agreement/Enterprise Agreement Subscription.  For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). For commercial availability, contact your Microsoft account representative.
+> The *Microsoft 365 Apps for enterprise (device)* license is available to commercial customers through Enterprise Agreement/Enterprise Agreement Subscription. For education customers, the license is *Microsoft 365 Apps for Education (device)* and is available only through Enrollment for Education Solutions (EES). For more information, read the blog post on [education availability](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). For commercial availability, contact your Microsoft account representative.
 
 ## Requirements for using device-based licensing for Microsoft 365 Apps for enterprise
 
@@ -52,7 +52,7 @@ To configure device-based licensing, you first need to add your Windows client d
 
 | Group type | Create using these tools |
 |---------|---------|
-|Security, with assigned or static membership. The security group should not be mail-enabled. | Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
+|Security, with assigned or static membership. The security group shouldn't be mail-enabled. | Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
 |Security, with dynamic device membership |Azure AD portal |
 |Distribution list| On-premises Active Directory and sync to Azure AD with Azure AD Connect <br/><br/>On-premises Exchange Server and sync to Azure AD with Azure AD Connect<br/><br/> Microsoft 365 admin center      |
 |Office 365 | Not supported   (type of group in Azure AD |
@@ -77,7 +77,7 @@ After you have assigned licenses to the group in Azure AD that contains your Win
 - Group Policy and the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting
 
 ### Using the Office Deployment Tool
-If you use the Office Deployment Tool to install or configure Microsoft 365 Apps for enterprise, you'll want to add the following line to your configuration.xml file:
+If you use the Office Deployment Tool to install or configure Microsoft 365 Apps for enterprise, you want to add the following line to your configuration.xml file:
 
 ```xml
 <Property Name="DeviceBasedLicensing" Value="1" />
@@ -111,9 +111,9 @@ You can view device licensing status by signing in to the [Microsoft 365 Apps ad
 
 You can also verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
-If the device hasn't been properly configured for device-based licensing, when a user tries to use Microsoft 365 Apps for enterprise on the device, Office will be in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
+A device that hasn't been configured properly for device-based licensing impacts functionality. When a user tries to use Microsoft 365 Apps for enterprise on the device, Microsoft 365 is in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
-In those cases, the user will also see a banner beneath the ribbon in the document with the following message:
+In those cases, the user also sees a banner beneath the ribbon in the document with the following message:
 
 > **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
@@ -127,6 +127,6 @@ In this case, the device is having problems contacting the Office Licensing Serv
 
 ## Transition from subscription licensing or shared computer activation to device-based licensing
 
-If Microsoft 365 Apps  are already installed and activated with user-based subscription licensing or shared computer activation, you will need to reset the license state on the device before it will transition over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
+If Microsoft 365 Apps are already installed and activated with user-based subscription licensing or shared computer activation, you need to reset the license state on the device before it transitions over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
 
 Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
