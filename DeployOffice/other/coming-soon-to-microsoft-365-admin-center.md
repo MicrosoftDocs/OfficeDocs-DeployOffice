@@ -21,9 +21,9 @@ ms.date: 06/29/2023
 New improvements are coming to the Microsoft 365 Apps admin center, specifically targeting the servicing profile and inventory features. If you're currently using these services, here are some key details to keep in mind:
 
 ## Overview
-For both the servicing profile and inventory a new user interface as well as new features updates will be released soon. The transition happens automatically. No manual intervention or actions are required. Both the inventory data and as well as update status and configuration of servicing profiles are carried forward. In tandem, some existing features are changed or removed.
+A new user interface and new features will be released to servicing profile and inventory soon. The transition happens automatically. No manual intervention or actions are required. Both the inventory data and current configuration of servicing profiles are retained, except for some changes layed out below. In tandem, some features are changed or removed.
 
-The upcoming changes will mainly happen in three areas:
+Review these sections to prepare for the shift:
 
 - [New Terminology](#new-terminology)
 - [New user experience](#changes-in-user-experience)
@@ -39,7 +39,7 @@ The upcoming changes will mainly happen in three areas:
 
 ## Changes in user experience
 
-Here is what you should expect:
+Here's what you should expect:
 
 - The entry **Servicing** in the left-hand navigation gets renamed to **Cloud Update**.
 - A new **Overview** page gets added to the **Cloud Update** section. It provides a comprehensive snapshot of the update progress across profiles.
@@ -48,22 +48,22 @@ Here is what you should expect:
   - The **Issues** tab is removed. Issues and devices with failed updates will now be listed on the **Overview** page.
   - On the **Settings** tab, the entires for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Tenant Settings** on the **Overview** page.
   - The **Device Selection Criteria** from the **Settings** tab are removed.
-- Inventory will get an additional column:
-  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. E.g., if the device is currently onboarding to a profile or is already managed by a profile. 
+- Inventory gets an additional column:
+  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. For example, if the device is currently onboarding to or already managed by a profile. 
 
 ## Changes in features
 
-Please review the changes in features described below. Also refer to the next section to evaluate how this might impact your current configuration of servicing profiles.
+Review the changes in features described. Also refer to the next section to evaluate how these changes might impact your current configuration of servicing profiles.
 
 - **Exclude groups** and **Exclusion window** are now applying on a tenant level rather than on profile level. An excluded device is excluded from all profiles, regardless in which profile the particular device actually is. Similarly, a set **exclusion window** applies to all profiles, rather than a specific one. For example, an exclusion window set to pause updates next week will prevent all profiles (Monthly, Current and Semi-Annual) from initiating updates during the set time frame.
-- **Device Selection Criteria** is removed. Hence, a profile (e.g., Monthly Profile) will apply to all Microsoft 365 Apps instances running on the corresponding update channel. The removal covers **Include devices by Azure AD group**, by **Update Channel**, **disk space** as well as if macros has been used or add-ins are installed.
+- **Device Selection Criteria** is removed. Hence, a profile (for example, Monthly Profile) will apply to all Microsoft 365 Apps instances running on the corresponding update channel. The removal includes **Include devices by Azure AD group**, by **Update Channel**, **disk space** and the selectors for **Macros Usage** and **Add-ins**.
 
 ## Considerations for admins
 
 **If you haven't used servicing profile before**
-Cloud Updates maps all devices on a specific update channel to a matching profile. E.g., after enabling the **Monthly profile**, all devices which are running Microsoft 365 Apps on Monthly Enterprise Channel fall into the scope of this profile. If you need to exclude devices from the profile's scope, use the **Exclude group** feature.
+Cloud Updates maps all devices on a specific update channel to a matching profile. For example, after enabling the **Monthly profile**, all devices, which are running Microsoft 365 Apps on Monthly Enterprise Channel fall into the scope of this profile. If you need to exclude devices from the profile's scope, use the **Exclude group** feature.
 
-After enabling a profile, devices have to connect to the service to get fully onboarded to the profile. If this step is pending, the **Cloud Update Status** of the device will be shown as **Onboarding to ...** in inventory. In addition, the device is not listed on the **Overview** or the respective profile pages page. Once the device has connected to the service and got the profile configuration, status will switch to "**Managed by ...** and the device will be shown on the **Overview** and profile pages.
+After enabling a profile, devices have to connect to the service to get fully onboarded to the profile. If this step is pending, the **Cloud Update Status** for the device is shown as **Onboarding to ...** in inventory. In addition, the device is not listed on the **Overview** or the respective profile pages page. Once the connection to the service was made, the status switches to "**Managed by ...** and the device is shown on the **Overview** and profile pages.
 
 **If you're an existing customer using Azure AD group-based filtering or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
 
