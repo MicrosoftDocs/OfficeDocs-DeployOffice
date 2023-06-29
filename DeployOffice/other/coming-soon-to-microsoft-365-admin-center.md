@@ -21,7 +21,7 @@ ms.date: 06/29/2023
 New improvements are coming to the Microsoft 365 Apps admin center, specifically targeting the servicing profile and inventory features. If you're currently using these services, here are some key details to keep in mind:
 
 ## Overview
-A new user interface and new features are released to servicing profile and inventory soon. The transition happens automatically. No manual intervention or actions are required. Both the inventory data and current configuration of servicing profiles are retained. Also, some features are changed or even removed. This article gives you an overview of the changes and potential impact an your existing configuration.
+A new user interface and new features are released to servicing profile and inventory soon. The transition happens automatically. No manual intervention or actions are required. Both the inventory data and current configuration of servicing profiles are retained. Also, some features are changed or even removed. This article gives you an overview of the changes and potential impact on your existing configuration.
 
 Review these sections to prepare for the shift:
 
