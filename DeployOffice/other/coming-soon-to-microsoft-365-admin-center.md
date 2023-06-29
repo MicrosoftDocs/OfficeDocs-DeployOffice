@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 06/22/2023
+ms.date: 06/29/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
@@ -21,9 +21,9 @@ ms.date: 06/22/2023
 New improvements are coming to the Microsoft 365 Apps admin center, specifically targeting the servicing profile and inventory features. If you're currently using these services, here are some key details to keep in mind:
 
 ## Overview
-For both the servicing profile and inventory a new user interface as well as some feature updates will be released soon. The transition will happen automatically. No manual intervention or actions are required. Both the inventory data and as well as update status and configuration of servicing profiles will be carried forward.
+A new user interface and new features are released to servicing profile and inventory soon. The transition happens automatically. No manual intervention or actions are required. Both the inventory data and current configuration of servicing profiles are retained. Also, some features are changed or even removed. This article gives you an overview of the changes and potential impact on your existing configuration.
 
-The upcoming changes will mainly happen in three areas:
+Review these sections to prepare for the shift:
 
 - [New Terminology](#new-terminology)
 - [New user experience](#changes-in-user-experience)
@@ -31,46 +31,50 @@ The upcoming changes will mainly happen in three areas:
 
 ## New Terminology
 
-**Cloud update:** Introducing the next generation of servicing profile, enhanced with advanced capabilities and an improved user experience.
-**Profile:** Every update management configuration for each cadence is referred to as a Profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable tenants to manage Microsoft 365 Apps updates on their devices as applicable to their specific tenant.
+- **Cloud Update**: **servicing profiles** is renamed to **Cloud Update**.
+- **Profile:** Each update management configuration for an update channel is referred to as a profile. Tenants can currently use a Monthly profile. Soon you can also use a Current profile and/or a Semi-Annual profile. These profiles enable you to manage Microsoft 365 Apps updates across update channels with specific configurations for each.
 
 > [!NOTE]
-> The schedule and availability of Current profile and Semi-Annual profile are not determined as of yet.
+> The schedule and availability of Current profile and Semi-Annual profile are not determined as of yet. Monitor this article for any updates.
 
 ## Changes in user experience
 
 Here's what you should expect:
 
-- New Updates Overview page in the Servicing section which provides a comprehensive snapshot of the update progress
-- The settings for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Settings** under the **Servicing** node.
-- The Devices tab in cloud update is no longer be available. Instead, device details are accessible through View All Devices from the Updates Overview and Profile Overview pages.
-- The Device Selection Criteria from the Settings tab are removed.
-- Inventory will get additional columns:
-  - Cloud update status: representing if this device is currently updated by profiles
-  - Is Excluded: Representing if this device belongs to an Azure AD group which is excluded using the 'Exclude Group' setting
+- The entry **Servicing** in the left-hand navigation gets renamed to **Cloud Update**.
+- A new **Overview** page gets added to the **Cloud Update** section. It provides a comprehensive snapshot of the update progress across profiles.
+- In the **Monthly Enterprise** navigation point, the following changes are introduced:
+  - The **Devices** tab is removed. To view a list of devices with e.g, the assigned rollout wave, navigate to **Overview** and select **View All Devices**. 
+  - The **Issues** tab is removed. Issues and devices with failed updates are now listed on the **Overview** page.
+  - On the **Settings** tab, the entires for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Tenant Settings** on the **Overview** page.
+  - The **Device Selection Criteria** from the **Settings** tab are removed.
+- Inventory gets an extra column:
+  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. For example, if the device is currently onboarding to or already managed by a profile. 
 
 ## Changes in features
 
-- The Updates Overview page, along with the individual Profile Overview page, is now available. This provides a comprehensive snapshot of the progress of updates across your tenant, and the configurations of your tenant settings. These settings are now available at the broader tenant level.
-- Exclude groups and exclusion window settings transition to a tenant level instead of the device level. You can find them in the Tenant Settings tab.
-  - Exclude groups: Devices excluded as part of the exclude groups setting will continue to be excluded from Semi Annual Profile and Current Profile after they become available.
-  - Exclusion window: Any exclusion window that's set, applies at a tenant level. This means no updates happen for devices managed by cloud update across Current Profile, Monthly Profile and Semi-Annual Profile, during an active exclusion window for applicable devices groups.
+Review the changes in features described. Also refer to the next section to evaluate how these changes might impact your current configuration of servicing profiles.
 
- The following columns will also be made available in Inventory:
-
-- Cloud update status: This column is available in Inventory when you select View Devices. Cloud update status indicates the devices in your tenant that cloud update actively manages.
-- Is Excluded: In the Inventory's Devices view, this column appears after you select View All Devices from either the Updates Overview or Profile Overview pages of cloud update. It flags the devices in your tenant that are excluded from cloud update due to the exclude groups setting at the tenant level.
+- **Exclude groups** and **Exclusion window** are now applying on a tenant level rather than on profile level. An excluded device is excluded from all profiles, regardless in which profile the particular device actually is. Similarly, a set **exclusion window** applies to all profiles, rather than a specific one. For example, an exclusion window set to pause updates next week will prevent all profiles (Monthly, Current and Semi-Annual) from initiating updates during the set time frame.
+- **Device Selection Criteria** is removed. Hence, a profile (for example, Monthly Profile) applies now to all Microsoft 365 Apps instances running on the corresponding update channel. The removal includes **Include devices by Azure AD group**, by **Update Channel**, **disk space** and the selectors for **Macros Usage** and **Add-ins**.
 
 ## Considerations for admins
 
-**If you're onboarding to cloud update as a new customer**
+**If you haven't used servicing profile before**
+Cloud Updates maps all devices on a specific update channel to a matching profile. For example, after enabling the **Monthly profile**, all devices, which are running Microsoft 365 Apps on Monthly Enterprise Channel fall into the scope of this profile. If you need to exclude devices from the profile's scope, use the **Exclude group** feature.
 
-- Only devices from the Monthly Enterprise Channel map to Monthly Enterprise Channel devices. The option to onboard a subset of devices through Start Small will no longer be available.
+After you have enabled a profile, devices have to connect to the service to get fully onboarded to the profile. If this step is pending, the **Cloud Update Status** for the device is shown as **Onboarding to ...** in inventory. In addition, the device isn't listed on the **Overview** or the respective profile page. Once the connection to the service was made, the status switches to "**Managed by ...** and the device is shown on the **Overview** and profile pages.
 
-**If you're an existing customer using Azure AD group-based filtering or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
+**If you are using servicing profile already**
 
--  Azure AD group-based filtering  is no longer accessible. Now, the Profile handles the onboarding, management, and updating of all devices on the Monthly Enterprise Channel
-- The option to exclude devices or Microsoft Azure Active Directory (Azure AD) groups based on the presence of macros, add-ins, or minimum disk space has been removed. As a result, Profile is now onboarding, managing, and updating any devices previously exempt from these settings.
+**Removal of update channel selector**: The Monthly profile now only targets devices, which are already on the Monthly Enterprise Channel. The selector can no longer be used to convert devices from, for example, Semi-Annual Enterprise Channel to Monthly Enterprise Channel. See [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md) for your options on changing update channels.
 
-> [!IMPORTANT]
-> If you're using cloud update through Azure AD group-based filtering or you've fully on-boarded to the Monthly Profile, be aware of these changes. All devices on the Monthly Enterprise Channel in your tenant currently excluded from cloud update due to Azure AD group-based filtering, macros and add-ins presence, or limited disk space will be affected. These devices will automatically transition to Monthly Profile for management and updates.
+**Removal of Azure AD groups-based filtering**: During the change, your Azure AD group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices, which are on Monthly Enterprise Channel and haven't been excluded. Your Azure AD groups aren't getting deleted, but removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Azure AD groups.
+
+**Removal of disk space selector**: After the change, Cloud Update targets devices regardless of the remaining disk space. If you have set a value, it is removed, and the behavior is similar to selection "0 GB" today. There's no mitigation for this change.
+
+**Removal of macro in use selector**: After the change, Cloud Update targets devices regardless of the usage of files with macros. If you have currently selected the option "Exclude devices with macro usage", the future behavior is equivalent to the selection "Include all devices". If you need to continue to exclude certain devices, consider using the **Exclude groups** feature.
+
+**Removal of Add-in installed selector**: After the change, Cloud Update targets devices regardless of which add-ins are installed. If you have currently selected the option "Exclude devices with any add-in installed", the future behavior is equivalent to the selection "Include all devices". If you need to continue to exclude certain devices, consider using the **Exclude groups** feature.
+
+**Change in onboarding flow**: After the change, devices have to connect to Cloud Updates at least once to be shown on the **Overview** and individual profile page. For example, newly installed devices will initially show up in inventory only. The **Cloud Update Status** is **Onboarding to ...** at this stage. Only after the device has checked-in with Cloud Updates once, the **Cloud Update Status** will change to **Managed by ...** and the device is shown on the **Overview** and profile pages.
