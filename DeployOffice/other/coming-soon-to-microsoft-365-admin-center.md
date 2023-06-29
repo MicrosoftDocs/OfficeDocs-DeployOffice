@@ -31,8 +31,8 @@ The upcoming changes will mainly happen in three areas:
 
 ## New Terminology
 
-- **Cloud update:** With the introducing of managing Microsoft 365 Apps updates from the cloud, we will rename **servicing profiles** to **Cloud Update**.
-- **Profile:** Every update management configuration for each cadence is referred to as a profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable tenants to manage Microsoft 365 Apps updates on their devices as applicable to their specific tenant.
+- **Cloud Update**: We will rename **servicing profiles** to **Cloud Update**.
+- **Profile:** Each update management configuration for an update channel is referred to as a profile. Tenants can currently use a Monthly profile. Soon, they'll also have the options to use a Current profile and/or a Semi-Annual profile. These profiles enable you to manage Microsoft 365 Apps updates across update channels with specific configurations for each.
 
 > [!NOTE]
 > The schedule and availability of Current profile and Semi-Annual profile are not determined as of yet.
@@ -53,15 +53,10 @@ Here is what you should expect:
 
 ## Changes in features
 
-- The Updates Overview page, along with the individual Profile Overview page, is now available. This provides a comprehensive snapshot of the progress of updates across your tenant, and the configurations of your tenant settings. These settings are now available at the broader tenant level.
-- Exclude groups and exclusion window settings transition to a tenant level instead of the device level. You can find them in the Tenant Settings tab.
-  - Exclude groups: Devices excluded as part of the exclude groups setting will continue to be excluded from Semi Annual Profile and Current Profile after they become available.
-  - Exclusion window: Any exclusion window that's set, applies at a tenant level. This means no updates happen for devices managed by cloud update across Current Profile, Monthly Profile and Semi-Annual Profile, during an active exclusion window for applicable devices groups.
+Please review the changes in features described below. Also refer to the next section to evaluate how this might impact your current configuration of servicing profiles.
 
- The following columns will also be made available in Inventory:
-
-- Cloud update status: This column is available in Inventory when you select View Devices. Cloud update status indicates the devices in your tenant that cloud update actively manages.
-- Is Excluded: In the Inventory's Devices view, this column appears after you select View All Devices from either the Updates Overview or Profile Overview pages of cloud update. It flags the devices in your tenant that are excluded from cloud update due to the exclude groups setting at the tenant level.
+- **Exclude groups** and **Exclusion window** are now applying on a tenant level rather than on profile level. An excluded device will be exclude from all profile, regardless to  which one the device is assigned. Similar, a set **exclusion window** applies to all profiles, rather than a specific one. For example, an exclusion window set to pause applying updates next week will prevent all profiles (Monthly, Current and Semi-Annual) from initiating updates next week.
+- **Device Selection Criteria** is removed. Hence, a profile (e.g., Monthly Profile) will apply to all Microsoft 365 Apps instances which which run on the corresponding update channel. The removal covers Including devices by Azure AD group, by Update Channel, disk space as well as if macros has been used or add-ins are installed.
 
 ## Considerations for admins
 
