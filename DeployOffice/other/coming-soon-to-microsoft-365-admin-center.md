@@ -65,10 +65,16 @@ Cloud Updates maps all devices on a specific update channel to a matching profil
 
 After you have enabled a profile, devices have to connect to the service to get fully onboarded to the profile. If this step is pending, the **Cloud Update Status** for the device is shown as **Onboarding to ...** in inventory. In addition, the device isn't listed on the **Overview** or the respective profile page. Once the connection to the service was made, the status switches to "**Managed by ...** and the device is shown on the **Overview** and profile pages.
 
-**If you're an existing customer using Azure AD group-based filtering or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
+**If you are using servicing profile already**
 
--  Azure AD group-based filtering  is no longer accessible. Now, the Profile handles the onboarding, management, and updating of all devices on the Monthly Enterprise Channel
-- The option to exclude devices or Microsoft Azure Active Directory (Azure AD) groups based on the presence of macros, add-ins, or minimum disk space has been removed. As a result, Profile is now onboarding, managing, and updating any devices previously exempt from these settings.
+**Removal of update channel selector**: The Monthly profile now only targets devices which are already on the Monthly Enterprise Channel already. The selector can no longer be used to convert devices from for example Semi-Annual Enterprise Channel to Monthly Enterprise Channel. See [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md) for your options on changing update channels.
 
-> [!IMPORTANT]
-> If you're using cloud update through Azure AD group-based filtering or you've fully on-boarded to the Monthly Profile, be aware of these changes. All devices on the Monthly Enterprise Channel in your tenant currently excluded from cloud update due to Azure AD group-based filtering, macros and add-ins presence, or limited disk space will be affected. These devices will automatically transition to Monthly Profile for management and updates.
+**Removel of Azure AD groups-based filtering**: During the change, your Azure AD group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices which are on Monthly Enterprise Channel and have not been excluded. Your Azure AD groups are not getting deleted, just removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Azure AD groups.
+
+**Removel of disk space selector**: After the change, Cloud Update targets devices regardless of the remaining disk space. If you have set a value, it will be removed, and the behavior is similar to selection "0 GB" today. There is no mitigation for this change.
+
+**Removel of macro in use selector**: After the change, Cloud Update targets devices regardless of the usage of files with macros. If you have currently selected the option "Exclude devices with macro usage", the future behavior is equivalent to the selection "Include all devices". If you need to continue to exclude certain devices, consider using the **Exclude groups** feature.
+
+**Removel of Add-in installed selector**: After the change, Cloud Update targets devices regardless of which add-ins are installed. If you have currently selected the option "Exclude devices with any add-in installed", the future behavior is equivalent to the selection "Include all devices". If you need to continue to exclude certain devices, consider using the **Exclude groups** feature.
+
+**Change in onboarding flow**: After the change, devices have to connect to Cloud Updates at least once to be shown on the **Overview** and individual profile page. For example, newly installed devices will initially show up only in inventory. The **Cloud Update Status** is **Onboarding to ...** at this stage. Only after the device has checked-in with Cloud Updates once, the **Cloud Update Status** will change to **Managed by ...** and the device is shown on the **Overview** and profile pages.
