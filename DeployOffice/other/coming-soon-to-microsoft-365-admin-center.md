@@ -60,9 +60,10 @@ Please review the changes in features described below. Also refer to the next se
 
 ## Considerations for admins
 
-**If you're onboarding to cloud update as a new customer**
+**If you haven't used servicing profile before**
+Note that Cloud Updates will map all devices which are on a specific update channel to a matching profile. E.g., after enabling the **Monthly profile**, all devices which are running Microsoft 365 Apps on Monthly Enterprise Channel fall into the scope of this profile. If you need to exclude devices from being automtically updated, please leverage the **Exclude group** feature.
 
-- Only devices from the Monthly Enterprise Channel map to Monthly Enterprise Channel devices. The option to onboard a subset of devices through Start Small will no longer be available.
+Also note, after enabling a profile, devices need to go through an initial configuration step. Before this step has finished, their **Cloud Update Status** will be shown as **Onboarding to ...** in inventory and the devices are not listed on the **Overview** or respective profile pages page. Once the initial configuration has been received by the device, the status will switch to "**Managed by ...** and the device will be shown on the **Overview** and profile pages.
 
 **If you're an existing customer using Azure AD group-based filtering or have fully on-boarded your Monthly Enterprise Channel devices to cloud update**
 
