@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
-ms.date: 05/08/2023
+ms.date: 07/01/2023
 ---
 
 # Set preferences for Outlook for Mac
@@ -41,6 +41,7 @@ All of these keys are CFPreferences-compatible, which means that they can be set
 The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
+- [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
@@ -106,6 +107,20 @@ Specify one or more domains users are allowed to add in Outlook.
 |Possible values|  *Various (example: "contoso.com")*  |
 |Requires Configuration Profile| No |
 |Availability| 16.18|
+|Comments| Doesn't remove or disconnect accounts already added in Outlook. |
+
+### Block access to mailboxes from unauthorized domains
+
+Specify one or more domains where mailbox access is blocked.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisallowedEmailDomains|
+|Data Type| Array of Strings |
+|Possible values|  *Various (example: "yahoo.com")*  |
+|Requires Configuration Profile| No |
+|Availability| 16.75|
 |Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
 ### Hide text about adding non-corporate mailboxes
