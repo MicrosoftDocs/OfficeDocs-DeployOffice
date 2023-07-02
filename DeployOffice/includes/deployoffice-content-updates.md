@@ -2,6 +2,16 @@
 
 
 
+## Week of June 26, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 6/27/2023 | [New Improvements to Microsoft 365 Apps admin center coming soon](/DeployOffice/other/coming-soon-to-microsoft-365-admin-center) | modified |
+| 6/29/2023 | [Device-based licensing for Microsoft 365 Apps for enterprise](/DeployOffice/device-based-licensing) | modified |
+| 6/29/2023 | [New Improvements to Microsoft 365 Apps admin center coming soon](/DeployOffice/other/coming-soon-to-microsoft-365-admin-center) | modified |
+
+
 ## Week of June 19, 2023
 
 
