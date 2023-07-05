@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 06/29/2023
+ms.date: 07/4/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
@@ -60,13 +60,12 @@ Review the changes in features described. Also refer to the next section to eval
 
 ## Considerations for admins
 
-**If you haven't used servicing profile before**
+### If you haven't used servicing profile before
 Cloud Updates maps all devices on a specific update channel to a matching profile. For example, after enabling the **Monthly profile**, all devices, which are running Microsoft 365 Apps on Monthly Enterprise Channel fall into the scope of this profile. If you need to exclude devices from the profile's scope, use the **Exclude group** feature.
 
 After you have enabled a profile, devices have to connect to the service to get fully onboarded to the profile. If this step is pending, the **Cloud Update Status** for the device is shown as **Onboarding to ...** in inventory. In addition, the device isn't listed on the **Overview** or the respective profile page. Once the connection to the service was made, the status switches to "**Managed by ...** and the device is shown on the **Overview** and profile pages.
 
-**If you are using servicing profile already**
-
+### If you are using servicing profile already
 **Removal of update channel selector**: The Monthly profile now only targets devices, which are already on the Monthly Enterprise Channel. The selector can no longer be used to convert devices from, for example, Semi-Annual Enterprise Channel to Monthly Enterprise Channel. See [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md) for your options on changing update channels.
 
 **Removal of Azure AD groups-based filtering**: During the change, your Azure AD group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices, which are on Monthly Enterprise Channel and haven't been excluded. Your Azure AD groups aren't getting deleted, but removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Azure AD groups.
