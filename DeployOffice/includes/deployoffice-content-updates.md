@@ -2,6 +2,14 @@
 
 
 
+## Week of July 03, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/3/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
+
+
 ## Week of June 26, 2023
 
 
