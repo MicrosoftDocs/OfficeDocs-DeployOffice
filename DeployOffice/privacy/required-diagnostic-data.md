@@ -606,6 +606,8 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **hashed_email** - A pseudonymous identifier that represents the current user email
 
+- **hx_ecsETag** - A unique identifier for managing release of features of our new mail syncing service to help the service detect issues affecting its features being released.
+
 - **is_first_session** - Tracks if this is the first session of the app for debugging purposes
 
 - **origin** - The origination of an action. For example marking a message read can originate from message list or a new mail notification, this helps us detect issues based on action origination
@@ -2001,6 +2003,27 @@ The following fields are collected across iOS applications of Outlook Mobile:
 
 - **ui_reload_status_time** - records the total time spent on reloading UI because of status update (during the corresponding query)
 
+#### component.family.start
+
+This event is sent when an app component is loaded. For example, the Focused Inbox, Other Inbox, etc. It allows us to understand usage and whether users are seeing ads in expected cases.
+
+The following fields are collected:
+
+- **account** - which account is viewing the component (if there are multiple accounts)
+
+- **ads_eligible** - Indicates whether the user is expected to be eligible to see ads (only free users)
+
+- **ads_not_eligible_reason** - reason why use will not be shown ads (if ads_eligible is false)
+
+- **ads_not_eligible_sub_error_type** - detailed error related to requesting ads (if ads_eligible is false)
+
+- **app_instance** - Outlook has two entry points for Duo. One is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This will let us know which instance is making this reporting call, either Mail or Calendar.
+
+- **component_name** - the name of the component/view that is active. For example, “Other inbox”
+
+- **taskId** - TaskId will give us the current instance’s taskId. This will be required in multi-instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
+
+
 #### compose.mail.accessory
 
 This event lets us detect and fix issues with key mail compose actions to prevent you from running into issues with attaching a file, taking a photo as an attachment, or sending your availability.
@@ -2896,7 +2919,7 @@ This event is collected for Office applications running under Android platform a
 
 The following fields are collected:
 
-- **Data_AppBootPhaseStats** - The breakup of different stages involved in boot phase un file open process. Example value: {PostAppInitTimeInMs=57, PostCommonLibraryLoadPhaseTime=20, PreMinimumLibraryLoadPhaseTime=1, MinimumLibraryLoadPhaseTime=16, LibrarySharingPhaseTime=84, CommonLibraryLoadPhaseTime=202, InitialBootPhaseTime=84, PreAppInitTimeInMs=652, PreCommonLibraryLoadPhaseTime=876, ActivityTransitionTime=32, ApplicationObjectCreationTime=108, ApplicationBootTime=2007, AppActivationTimeInMs=106, OfficeActivityTime=67} 
+- **Data_AppBootPhaseStats** - The breakup of different stages involved in boot phase on file open process. Example value: {PostAppInitTimeInMs=186, PreAppInitWXPTimeInMs=1547, PostCommonLibraryLoadPhaseTime=38, PreMinimumLibraryLoadPhaseTime=1, MinimumLibraryLoadPhaseTime=40, LibrarySharingPhaseTime=252, CommonLibraryLoadPhaseTime=435, InitialBootPhaseTime=252, PreAppInitTimeInMs=1805, ApplicationBootTimeWXP=3779, PreCommonLibraryLoadPhaseTime=267, ActivityTransitionTime=480, ApplicationObjectCreationTime=532, ApplicationBootTime=3748, AppActivationWXPTimeInMs=187, PostOfficeActivityTimeInMs=274, AppActivationTimeInMs=218, ExtractionTime=22, OfficeActivityTime=244, PostAppInitWXPTimeInMs=201}
 
 - **Data_AppDocsOperationDuration** - The duration spent in sub- layer during a file open operation.
 
@@ -9589,7 +9612,9 @@ This event lets us detect when critical app errors occurred that would cause you
 
 The following fields are collected:
 
-- **black_list_reason** - Tells us if there is a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
+- **black_list_reason** - Only supported for backward compatibility, this field collects the same information as the now preferred deny_list_reason field.
+
+- **deny_list_reason** - Tells us if there is a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
 
 - **step_premain** – Tells us the amount of time it has taken for Outlook to go from the user tapping the icon to step0_main the “main” step defined in this document.
 
@@ -14244,6 +14269,8 @@ The following fields are collected:
 - **batched_is_treatment** - Whether the current perf event is generated in a treatment flight, it will be used when we measure and compare the performance data for control group and treatment group in a flight. Similar to is_treatment, except batched_is_treatment is sending data for multiple instances.
 
 - **batched_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue. Similar to total_time_elapsed, except batched_time_elapsed is sending data for multiple instances.
+
+- **batched_time_elapsed_average** - Tells us the average amount of time the performance event took over all the instances in the batched_time_elasped field.
 
 - **build_type** - Helps us know the build type of the app. For example: release, debug. 
 
