@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
-ms.date: 03/01/2023
+ms.date: 07/11/2023
 ---
 
 # Choose how to deliver updates for the Microsoft 365 Apps
@@ -40,7 +40,7 @@ When the Microsoft 365 Apps are pulling updates from the Microsoft Office Conten
 > [!TIP]
 > Microsoft recommends to use the cloud as update source.
 
-There are two core benefits when levering the cloud as your update source:
+There are two core benefits when leveraging the cloud as your update source:
 - **Delta updates**: When the Microsoft 365 Apps pull the latest updates, only the difference between the currently installed release and the targeted one is downloaded. So instead of having to handle the whole source files package, only delta differences, in certain scenarios down to a subfile level, are downloaded. This conserves significant bandwidth.
 - **No source files maintenance** needed: As the updates are hosted worldwide at Microsoft's datacenters, there's no need for downloading, packaging, staging and distributing the source files in your on-premises network. As updates are specific to architecture, update channel and languages, this can become a complex task in for example multi-language environments.
 
