@@ -21,7 +21,7 @@ Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterpri
 
 ## When will Office Telemetry Dashboard be removed?
 
-The date when Office Telemetry Dashboard is removed from Microsoft 365 Apps for enterprise depends on which update channel you're using. The following table shows the forecasted schedule. The information in italics in the table is subject to change.
+The date when Office Telemetry Dashboard is removed from Microsoft 365 Apps for enterprise depends on which update channel you're using.
 
 |Update channel  | Version |Release date  |
 |---------|---------|---------|
