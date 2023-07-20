@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 05/10/2023
+ms.date: 07/20/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -77,7 +77,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 - After the Office Automatic Updates 2.0 task runs and updates the assigned channel, the new build is installed the next time the Configuration Manager client runs a Software Updates Deployment Evaluation Cycle.
 
 > [!IMPORTANT]
-> If you use Configuration Manager to manage updates, moving from a channel with a newer version of Office to a channel with an older version of Office is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
+> If you use Configuration Manager to manage updates, moving from a channel with a newer version of Microsoft 365 Apps to a channel with an older version is not supported. For example, you can't use Configuration Manager to move a device from Current Channel to Semi-Annual Enterprise Channel.  
 
 ## Change the update channel with Microsoft Intune Administrative Templates 
 
@@ -89,7 +89,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 4. By default, Intune policies refresh in the background every 8 hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), from the device, select **Start** > **Settings** > **Accounts** > **Access work or school** > *{Select your account}* > **Info** > **Sync**. For more information, see [Sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).
 
-5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune for Office can be seen in this registry location. For more information, [refer to this article](/mem/intune/configuration/administrative-templates-update-office).
+5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune can be seen in this registry location. For more information, [refer to this article](/mem/intune/configuration/administrative-templates-update-office).
 
 After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
@@ -135,18 +135,14 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 ## Considerations when changing channels
 
 > [!Tip]
-> When choosing how you want to deliver updates to your organization, we highly recommend using Monthly Enterprise Channel with a servicing profile. By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. For more information, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md).
+> When choosing how you want to deliver updates to your organization, we highly recommend using Monthly Enterprise Channel with a servicing profile. By using a servicing profile, you’ll automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the impact on your network. For more information, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md).
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression isn't applied. Because of this, the update will be larger than normal. The update, however, won't be as large as a full installation of Microsoft 365 Apps.
 - Devices must be able to fetch an update from the newly assigned channel to complete the transition.
    - If your devices are receiving updates from the internet, you're all set, and no other changes are required.
    - If you're using Configuration Manager to deploy updates, make sure that an update from the newly assigned channel has been deployed to the devices. We recommend using [dynamic collections](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps) for easier targeting. Devices will only download the required updates, so it's safe to assign updates from multiple channels to a device.
    - If you're using file shares, you must download and host the matching update in a new location/folder. Use the **Update Path** group policy setting or the Office Deployment Tool to point devices at the new location. 
-
 - After a successful channel change assignment, Microsoft 365 Apps must first apply a successful update in order to accept further channel changes.
-
 - If Microsoft 365 Apps has just been installed or updated, changing the update channel can take up to 24 hours after the new setting has been applied.
-
 - The user interface on the client device won't reflect the updated channel until a build from the new channel is installed.
-
 - If you move from a channel with a newer version of Microsoft 365 Apps to a channel with an older version, any features that are only available in the newer version will be removed.
