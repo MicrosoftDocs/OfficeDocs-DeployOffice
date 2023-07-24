@@ -55,7 +55,7 @@ We provide various services to help you upgrade to subscription versions of the 
 
 ### Retirement of TLS 1.0 and 1.1
 
-After October 15, 2020, you must be using at least TLS 1.2 to connect to Microsoft 365 services. For more information, see [Disabling TLS 1.0 and 1.1 for Microsoft 365](/microsoft-365/compliance/tls-1.0-and-1.1-deprecation-for-office-365) and [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365).
+After October 15, 2020, you must be using at least TLS 1.2 to connect to Microsoft 365 services. For more information, see [Disabling TLS 1.0 and 1.1 for Microsoft 365](/purview/tls-1.0-and-1.1-deprecation-for-office-365) and [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/purview/prepare-tls-1.2-in-office-365).
 
 ### Basic authentication deprecation in Exchange Online
 
