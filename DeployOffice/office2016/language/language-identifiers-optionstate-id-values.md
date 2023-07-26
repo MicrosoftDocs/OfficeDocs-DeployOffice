@@ -107,7 +107,7 @@ The following table provides the OptionState ID values for the Office proofing t
 |ProofingTools_1026  <br/> |Bulgarian  <br/> |
 |ProofingTools_1027  <br/> |Catalan  <br/> |
 |ProofingTools_2052  <br/> |Chinese (People's Republic of China)  <br/> |
-|ProofingTools_3076  <br/> |Chinese (Hong Kong)  <br/> |
+|ProofingTools_3076  <br/> |Chinese (Hong Kong SAR)  <br/> |
 |ProofingTools_1028  <br/> |Chinese (Taiwan)  <br/> |
 |IMEMain_1028  <br/> |Chinese Traditional Input Method Editor (IME)  <br/> |
 |ProofingTools_1050  <br/> |Croatian  <br/> |
