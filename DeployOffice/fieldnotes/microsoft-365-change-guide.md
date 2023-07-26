@@ -146,7 +146,7 @@ After identified bugs or issues are resolved, the feature is released to the Mic
 
 After the feature is deemed ready, it's released to all of Microsoft, which is referred to internally as “dogfooding” our products to identify issues, before updates reach the public.
 
-The next stages are public releases. Targeted Release is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release option. Substantial feedback and product performance data is collected in this stage as our customers perform integration testing and broad validation across many countries, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, this last stage is when these users – and the rest of the world – receive the new features.
+The next stages are public releases. Targeted Release is comprised of customers who have configured their tenant, or specific users, to be on the Targeted Release option. Substantial feedback and product performance data is collected in this stage as our customers perform integration testing and broad validation across many countries or regions, cloud architectures, and IT professionals or power users. If your tenant, or a subset of your users, are configured for Standard Release, this last stage is when these users – and the rest of the world – receive the new features.
 
 To implement the [democratization of change](#change-evaluation-democratization) strategy within your organization, leverage Targeted Release for both IT and power users.
 
