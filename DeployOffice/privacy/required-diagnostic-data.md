@@ -317,7 +317,7 @@ This category contains the following fields:
   
   - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap.
   
-  - **NetworkCountry** - The country code of the sender, based on the unscrubbed client IP address.
+  - **NetworkCountry** - The country or region code of the sender, based on the unscrubbed client IP address.
 
   - **NumProcPhysCores** - The number of physical cores on the machine. Allows us to classify data based on device pivot.
 
@@ -614,7 +614,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **PipelineInfo.AccountId** - A pseudonymous identifier that represents the current user
 
-- **PipelineInfo.ClientCountry** - The current country of the device to detect country or region-specific issues and outages
+- **PipelineInfo.ClientCountry** - The current country or region of the device to detect country or region-specific issues and outages
 
 - **PipelineInfo.ClientIp** - The IP address the device is connected to debug connection issues
 
@@ -740,7 +740,7 @@ Indicates whether the Office File Format choice dialog box was shown to the user
 
 The following fields are collected.
 
-- **CountryRegion** –  The users' country region setting in Windows system
+- **CountryRegion** –  The user's country or region setting in Windows system
 
 - **FileFormatBallotBoxAppIDBootedOnce** –  In which app (Word, Excel, PPT) the file format ballot display logic was processed.
 
@@ -5913,7 +5913,7 @@ The following fields are collected:
 
 - **DeviceInfo_OsVersion** – The version of the operating system
 
-- **PipelineInfo.ClientCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address
+- **PipelineInfo.ClientCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address
 
 
 #### Office.LivePersonaCard.UserActions.ClosedPersonaCard
@@ -6065,7 +6065,7 @@ The following fields are collected:
 
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
-- **NetworkCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address
+- **NetworkCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address
 
 
 #### Office.LivePersonaCard.UserActions.OpenedPersonaCard
@@ -6141,7 +6141,7 @@ The following fields are collected:
 
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
-- **NetworkCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address.
+- **NetworkCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address.
 
 #### Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -13363,7 +13363,7 @@ The following fields are collected:
 
 - **Data_CrashAppStore** - the App store where the app was installed from
 
-- **Data_CrashedCountry** - Region where the crash occurred
+- **Data_CrashedCountry** - Country or region where the crash occurred
 
 - **Data_CrashedLocale** - Locale of the app when the crash happened
 
@@ -14903,7 +14903,7 @@ The following fields are collected:
 
 - **CollectionTime** - time of subscription purchase completion
 
-- **CountryCode** - Client country code that is sent to DSC for client redemption request
+- **CountryCode** - Client country or region code that is sent to DSC for client redemption request
 
 - **GoPremiumEntryPoint** - entry point for triggering purchase 
 
