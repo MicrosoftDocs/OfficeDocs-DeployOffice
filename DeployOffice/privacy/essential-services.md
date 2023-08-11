@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 05/11/2023
+ms.date: 08/11/2023
 ---
 
 # Essential services for Office
