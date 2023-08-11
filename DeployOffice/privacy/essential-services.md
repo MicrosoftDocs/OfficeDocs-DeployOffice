@@ -6525,7 +6525,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -15151,7 +15151,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -17119,7 +17119,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
