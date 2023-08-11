@@ -1766,7 +1766,7 @@ The following fields are collected:
 
 - **starttime** - Time at which the OneAuth transaction began.
 
-- **telemetryregion** - Describes the region that the user account belongs to, for the purpose of telemetry routing.
+- **telemetryregion** - Describes the country or region that the user account belongs to, for the purpose of telemetry routing.
 
 - **timestamp** - Timestamp
 
@@ -1866,7 +1866,7 @@ The following fields are collected:
 
 - **starttime** - Time at which the OneAuth transaction began.
 
-- **telemetryregion** - Describes the region that the user account belongs to, for the purpose of telemetry routing.
+- **telemetryregion** - Describes the country or region that the user account belongs to, for the purpose of telemetry routing.
 
 - **timestamp** - Timestamp
 
@@ -4340,7 +4340,7 @@ The following fields are collected:
 
 - **Os** - The operating system of the device sending the data
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 - **Result** - The internal result code for the client server communication with consent service
 
@@ -4377,7 +4377,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 - **Result** - The internal result code for the client server communication with consent service
 
@@ -4414,7 +4414,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 
 
@@ -4583,7 +4583,7 @@ The event is triggered when a user lands on the SKU chooser screen of the app an
 
 The following fields are collected:
 
-- **CountryCode** - To identify the country where purchase is made.
+- **CountryCode** - To identify the country or region where purchase is made.
 
 - **Discount** - Discount Percentage offered based on price differences between monthly and annual SKU of the both the personal and family plans.
 
@@ -4956,7 +4956,7 @@ The following fields are collected:
 
 - **Data_EcsConfigIds** - IDs for the experiments
 
-- **Data_EcsCountry** - Detected country
+- **Data_EcsCountry** - Detected country or region
 
 - **Data_EcsETag** - Flights information
 
@@ -5874,7 +5874,7 @@ The following fields are collected:
  
 - **GetRedemptionInfo** - Signal that we’re fetching demographic information for pin redemption.
 
-- **MalformedCountryCode** - Signal that the country code needed for pin redemption is malformed.
+- **MalformedCountryCode** - Signal that the country or region code needed for pin redemption is malformed.
 
 - **OExDetails** - The error details we get back when identity's sign-in dialog was dismissed.
 
@@ -5883,7 +5883,7 @@ The following fields are collected:
 - **Tag** - Tells us at which step the user exits the Activation for Office redemption process. Possible tags:
     - 0x0311380b    User dismissed identity's sign-in dialog from redemption dialog
     - 0x0311380c    Failed to auto-load an identity post user sign-in from redemption dialog
-    - 0x03113810    Failed to load the account's demographic information (country code, language,     currency, trial offer, and marketing preferences)
+    - 0x03113810    Failed to load the account's demographic information (country or region code, language,     currency, trial offer, and marketing preferences)
     - 0x03113805    User dismissed identity's sign-in dialog from sign-in dialog
     - 0x03113806    Failed to auto-load an identity post user sign-in from sign-in dialog
     - 0x03113807    Failed to auto-load an identity
@@ -6082,7 +6082,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6098,7 +6098,7 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6120,7 +6120,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6140,7 +6140,7 @@ The following fields are collected:
 
 - **Payload** - A set of static text indicating launch status.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6161,7 +6161,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
     
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
     
@@ -6181,7 +6181,7 @@ The following fields are collected:
 
 - **Payload** - Static text indicating Microsoft Autoupdate has terminated.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6202,7 +6202,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6222,7 +6222,7 @@ The following fields are collected:
 
 - **Payload** - Contains error information on the connection issue.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6242,7 +6242,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -6262,7 +6262,7 @@ The following fields are collected:
 
 - **Payload** – Reports on errors found during application install and/or scan completion status 
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -6284,7 +6284,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -6304,7 +6304,7 @@ The following fields are collected:
 
 - **Payload** – Contains information on the nature of proxy error encountered
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -6325,7 +6325,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -6345,7 +6345,7 @@ The following fields are collected:
 
 - **Payload** – Contains information on the nature of error encountered with application registration.
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -6367,7 +6367,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6387,7 +6387,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on list of identifiers application uses to register with Microsoft Autoupdate services and number of installations registered for the application.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6408,7 +6408,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6428,7 +6428,7 @@ The following fields are collected:
 
 - **Payload** - Name and identifier of the application being removed, whether the application still exists in the registered location and if the application was installed from AppStore.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6476,7 +6476,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6502,7 +6502,7 @@ The following fields are collected:
 
 - **Payload** - contains information on the app reporting problem
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6525,7 +6525,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -6543,7 +6543,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first 3 octets of the IP address
 
@@ -6566,7 +6566,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -6584,7 +6584,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -6607,7 +6607,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6627,7 +6627,7 @@ The following fields are collected:
 
 - **Payload** - Contains an ID to identify a single update activity, and Proxy Error reported during cloning process.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6649,7 +6649,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6669,7 +6669,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6695,7 +6695,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6711,7 +6711,7 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6736,7 +6736,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6756,7 +6756,7 @@ The following fields are collected:
 
 - **Payload** - Contains selected Channel Name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6777,7 +6777,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6797,7 +6797,7 @@ The following fields are collected:
 
 - **Payload** - Static text indicating either individual metadata is being initialized, or configuration is being initialized.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6827,7 +6827,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6847,7 +6847,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on error encountered while retrieving macOS system version string.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -6867,7 +6867,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6887,7 +6887,7 @@ The following fields are collected:
 
 - **Payload** - Contains enumerated user selection.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6908,7 +6908,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6928,7 +6928,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6949,7 +6949,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -6969,7 +6969,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -6990,7 +6990,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
     
 - **DeviceID** - The device identifier
 
@@ -7010,7 +7010,7 @@ The following fields are collected:
     
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7031,7 +7031,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7051,7 +7051,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7073,7 +7073,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
     
@@ -7093,7 +7093,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7114,7 +7114,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7134,7 +7134,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7155,7 +7155,7 @@ The following fields are collected:
     
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7175,7 +7175,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7196,7 +7196,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7216,7 +7216,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7237,7 +7237,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7257,7 +7257,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7278,7 +7278,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7298,7 +7298,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
     
@@ -7319,7 +7319,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7339,7 +7339,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7360,7 +7360,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7380,7 +7380,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7401,7 +7401,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7421,7 +7421,7 @@ The following fields are collected:
 
 - **Payload** - Static text. 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7442,7 +7442,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7462,7 +7462,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7483,7 +7483,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7503,7 +7503,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7524,7 +7524,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7544,7 +7544,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7565,7 +7565,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7585,7 +7585,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7606,7 +7606,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7626,7 +7626,7 @@ The following fields are collected:
 
 - **Payload** - Text that contains download URL. This is a Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7647,7 +7647,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7667,7 +7667,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7688,7 +7688,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7708,7 +7708,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7729,7 +7729,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7749,7 +7749,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7770,7 +7770,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7790,7 +7790,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7811,7 +7811,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
     
 - **DeviceID** - The device identifier
 
@@ -7831,7 +7831,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7851,7 +7851,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7871,7 +7871,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7892,7 +7892,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7912,7 +7912,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7933,7 +7933,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7953,7 +7953,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -7974,7 +7974,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -7994,7 +7994,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8015,7 +8015,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8035,7 +8035,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8056,7 +8056,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -8076,7 +8076,7 @@ The following fields are collected:
 
 - **Payload** – Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first 3 octets of the IP address
 
@@ -8097,7 +8097,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8117,7 +8117,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8138,7 +8138,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8158,7 +8158,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8179,7 +8179,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8199,7 +8199,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8220,7 +8220,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8240,7 +8240,7 @@ The following fields are collected:
     
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8262,7 +8262,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8282,7 +8282,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8303,7 +8303,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8323,7 +8323,7 @@ The following fields are collected:
 
 - **Payload** - Contains a dictionary of available update packages and an indication whether user selected to install that entry.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8344,7 +8344,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8364,7 +8364,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8385,7 +8385,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8405,7 +8405,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8426,7 +8426,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8446,7 +8446,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8467,7 +8467,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8487,7 +8487,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8508,7 +8508,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8528,7 +8528,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8549,7 +8549,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8569,7 +8569,7 @@ The following fields are collected:
 
 - **Payload** - Contains a dictionary of available update packages and user selection status for each.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8590,7 +8590,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8610,7 +8610,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8631,7 +8631,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8651,7 +8651,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8672,7 +8672,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8692,7 +8692,7 @@ The following fields are collected:
 
 - **Payload** - Contains redirected URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8713,7 +8713,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8733,7 +8733,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8754,7 +8754,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8774,7 +8774,7 @@ The following fields are collected:
 
 - **Payload** - Contains download URL path. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8795,7 +8795,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8815,7 +8815,7 @@ The following fields are collected:
 
 - **Payload** - Contains download URL, and an error code in case of failure. Download URL is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8849,7 +8849,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8867,7 +8867,7 @@ The following fields are collected:
 
 - **Payload** -Indicates whether error lies with custom server setup, or installed MAU components
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -8888,7 +8888,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8908,7 +8908,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8929,7 +8929,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8949,7 +8949,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -8970,7 +8970,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -8990,7 +8990,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9011,7 +9011,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9031,7 +9031,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9052,7 +9052,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9072,7 +9072,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9097,7 +9097,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9119,7 +9119,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9143,7 +9143,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9163,7 +9163,7 @@ The following fields are collected:
 
 - **Payload** - Contains download error code and a download file URL. This is Microsoft download location except when the channel is set to Custom. For Custom channel, this value is set to "Custom Location".
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9184,7 +9184,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9204,7 +9204,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9229,7 +9229,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9253,7 +9253,7 @@ The following fields are collected:
 
 - **Payload** - Contains name of the downloaded file with invalid hash value.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9274,7 +9274,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9294,7 +9294,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9315,7 +9315,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9335,7 +9335,7 @@ The following fields are collected:
 
 - **Payload** - Contains a name of the downloaded file with invalid hash value.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9356,7 +9356,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9376,7 +9376,7 @@ The following fields are collected:
 
 - **Payload** - Contains information including URL (Microsoft address), prefix of the file being downloaded, any errors encountered, etc.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9397,7 +9397,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9417,7 +9417,7 @@ The following fields are collected:
 
 - **Payload** - Contains information including URL (Microsoft address), prefix of the file being downloaded, any errors encountered, etc.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9438,7 +9438,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9458,7 +9458,7 @@ The following fields are collected:
 
 - **Payload** - Contains the name of the update being downloaded.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9482,7 +9482,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9500,7 +9500,7 @@ The following fields are collected:
 
 - **LeapFrog** - Boolean indicating whether the update is a “leapfrog” update. Leap Frog will offer delta updates to more recent version, but not to the latest version on offer.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9531,7 +9531,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9553,7 +9553,7 @@ The following fields are collected:
 
 - **Payload** - Contains the name of the update being downloaded and the error observed. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9578,7 +9578,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9598,7 +9598,7 @@ The following fields are collected:
 
 - **Payload** - Contains the update path for the successful download.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9622,7 +9622,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9638,7 +9638,7 @@ The following fields are collected:
 
 - **EventInfo_Time** - The time at which the logged event took place 
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9664,7 +9664,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9682,7 +9682,7 @@ The following fields are collected:
 
 - **Error** - Indicates nature of error being encountered
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9724,7 +9724,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9742,7 +9742,7 @@ The following fields are collected:
 
 - **Payload** - Contains date time of when MAU checked for updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9763,7 +9763,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9783,7 +9783,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9804,7 +9804,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9824,7 +9824,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -9845,7 +9845,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9863,7 +9863,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9883,7 +9883,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9903,7 +9903,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9923,7 +9923,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9943,7 +9943,7 @@ The following fields are collected:
 
 - **Payload** -	Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -9963,7 +9963,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -9983,7 +9983,7 @@ The following fields are collected:
 
 - **Payload** -	 Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10003,7 +10003,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10023,7 +10023,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10043,7 +10043,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10063,7 +10063,7 @@ The following fields are collected:
 
 - **Payload** -	 Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10083,7 +10083,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10103,7 +10103,7 @@ The following fields are collected:
 
 - **Payload** - Contains information about URL scheme and URL Host
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10123,7 +10123,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10143,7 +10143,7 @@ The following fields are collected:
 
 - **Payload** -	 Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10164,7 +10164,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10186,7 +10186,7 @@ The following fields are collected:
 
 - **Payload** - Contains OSStatus (Apple status code) reflecting launch status. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10209,7 +10209,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10229,7 +10229,7 @@ The following fields are collected:
 
 - **Payload** -	Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10253,7 +10253,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10273,7 +10273,7 @@ The following fields are collected:
 
 - **NotificationEvent** - Static text indicating what type of notification is being applied.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10293,7 +10293,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10313,7 +10313,7 @@ The following fields are collected:
 
 - **Payload** -	 Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10333,7 +10333,7 @@ The following fields are collected:
 	
 - **Channel** - The preference for audience
 	
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 	
 - **DeviceID** - The device identifier
 	
@@ -10353,7 +10353,7 @@ The following fields are collected:
 	
 - **Payload** -	 Static text
 	
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 	
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 	
@@ -10373,7 +10373,7 @@ The following fields are collected:
 	
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10393,7 +10393,7 @@ The following fields are collected:
 
 - **Payload** -	 Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10413,7 +10413,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10433,7 +10433,7 @@ The following fields are collected:
 
 - **Payload** -	 Contains information about last update time and calendar being used
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -10454,7 +10454,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10474,7 +10474,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10494,7 +10494,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10514,7 +10514,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10535,7 +10535,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10555,7 +10555,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10576,7 +10576,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10596,7 +10596,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10617,7 +10617,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10637,7 +10637,7 @@ The following fields are collected:
 
 - **Payload** - Contains number of available updates found.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10658,7 +10658,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10678,7 +10678,7 @@ The following fields are collected:
 
 - **Payload** - Contains current date time information.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10699,7 +10699,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
     
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10719,7 +10719,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10742,7 +10742,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10764,7 +10764,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of the application be launched. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
     
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10785,7 +10785,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10805,7 +10805,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10826,7 +10826,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10846,7 +10846,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of an update and application bundle ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10869,7 +10869,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10891,7 +10891,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and application bundle ID. This may also contain an error string if Microsoft Autoupdate determines the application is still running even though termination event was received. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10914,7 +10914,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -10934,7 +10934,7 @@ The following fields are collected:
 
 - **Payload** – Indicates which update session (download or install) the backend is currently handling.
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -10955,7 +10955,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -10975,7 +10975,7 @@ The following fields are collected:
 
 - **Payload** - Contains the result of the codesign verification operation.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -10996,7 +10996,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11016,7 +11016,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of an update.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11041,7 +11041,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11063,7 +11063,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of an update. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11088,7 +11088,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11108,7 +11108,7 @@ The following fields are collected:
 
 - **Payload** - Contains number of updates queued.
 
-    - **PipelineInfo_ClientCountry** - The device country (based on IP address)
+    - **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11129,7 +11129,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11149,7 +11149,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of an update.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11172,7 +11172,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11192,7 +11192,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11213,7 +11213,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11233,7 +11233,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11254,7 +11254,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11274,7 +11274,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11295,7 +11295,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11315,7 +11315,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event. Contains the update identifier.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11336,7 +11336,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11356,7 +11356,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of an update and update package name.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11378,7 +11378,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11398,7 +11398,7 @@ The following fields are collected:
 
 - **Payload** -	 Contains information whether progress view is shown
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -11426,7 +11426,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11448,7 +11448,7 @@ The following fields are collected:
 
 - **Message** - Content of notification
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -11472,7 +11472,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11492,7 +11492,7 @@ The following fields are collected:
 
 - **Payload** - Contains an application ID (identifier application uses to register with Microsoft Autoupdate service) for the previously blocked application
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11513,7 +11513,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11533,7 +11533,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of the update.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11554,7 +11554,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11574,7 +11574,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, application bundle ID.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11594,7 +11594,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -11614,7 +11614,7 @@ The following fields are collected:
 
 - **Payload** – Indicates whether a timer was set for an open application when its update installation was triggered. 
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -11636,7 +11636,7 @@ The following fields are collected:
 
 - **CustomNotification** – Boolean indicating whether custom notification was used.
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11656,7 +11656,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11677,7 +11677,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11697,7 +11697,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11718,7 +11718,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11738,7 +11738,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11759,7 +11759,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11779,7 +11779,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -11802,7 +11802,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -11822,7 +11822,7 @@ The following fields are collected:
 
 - **Payload** – Contains information on the nature of error encountered
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -11845,7 +11845,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11863,7 +11863,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -11891,7 +11891,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier 
 
@@ -11909,7 +11909,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -11933,7 +11933,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -11951,7 +11951,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -11971,7 +11971,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -11991,7 +11991,7 @@ The following fields are collected:
 
 - **Payload** -	 Indication whether automatic download is turned OFF
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12013,7 +12013,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12031,7 +12031,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12053,7 +12053,7 @@ The following fields are collected:
 
 - **ChannelName** - Channel for which the consent dialog is displayed
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12071,7 +12071,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12091,7 +12091,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12113,7 +12113,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12133,7 +12133,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12155,7 +12155,7 @@ The following fields are collected:
 
 - **PickedTo** - New channel
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12177,7 +12177,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12195,7 +12195,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12221,7 +12221,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12241,7 +12241,7 @@ The following fields are collected:
 
 - **IsRepair** - The string Boolean indicates whether particular update is a repair download.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12268,7 +12268,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -12288,7 +12288,7 @@ The following fields are collected:
 
 - **Payload** – Contains information on error encountered during an application update.
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -12314,7 +12314,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device country (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -12332,7 +12332,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first three octets of the IP address
 
@@ -12357,7 +12357,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12375,7 +12375,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12401,7 +12401,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12419,7 +12419,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12443,7 +12443,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12461,7 +12461,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12485,7 +12485,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12503,7 +12503,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12529,7 +12529,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12549,7 +12549,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12570,7 +12570,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12590,7 +12590,7 @@ The following fields are collected:
 
 - **Payload** - Contains downloaded file name and error details.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12617,7 +12617,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12637,7 +12637,7 @@ The following fields are collected:
 
 - **Payload** - Contains retry count
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12660,7 +12660,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12680,7 +12680,7 @@ The following fields are collected:
 
 - **Payload** - Contains application name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12701,7 +12701,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12721,7 +12721,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12742,7 +12742,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12762,7 +12762,7 @@ The following fields are collected:
 
 - **Payload** - Contains application name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12783,7 +12783,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12803,7 +12803,7 @@ The following fields are collected:
 
 - **Payload** - Contains application name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12830,7 +12830,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12850,7 +12850,7 @@ The following fields are collected:
 
 - **Payload** - Contains retry count
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12883,7 +12883,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12907,7 +12907,7 @@ The following fields are collected:
 
 - **Payload** - Contains retry count
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -12935,7 +12935,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -12955,7 +12955,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -12980,7 +12980,7 @@ The following fields are collected:
 
 - **Codesigned** – Boolean indicating whether the Update Assistant were codesigned correctly.
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13002,7 +13002,7 @@ The following fields are collected:
 
 - **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13023,7 +13023,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13043,7 +13043,7 @@ The following fields are collected:
 
 - **Payload** - Contains an indication whether PrivilegedHelperTool component exists at expected location and whether it is codesigned.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13064,7 +13064,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13084,7 +13084,7 @@ The following fields are collected:
 
 - **Payload** - Contains name of the launched application.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13105,7 +13105,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13125,7 +13125,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13146,7 +13146,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13166,7 +13166,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of the updated application and failure code.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13187,7 +13187,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13207,7 +13207,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of the updated application.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13228,7 +13228,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13248,7 +13248,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of the updated application.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13269,7 +13269,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13289,7 +13289,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and the type of update.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13310,7 +13310,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13330,7 +13330,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity and name of update
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13351,7 +13351,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13371,7 +13371,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of update, update package name, remove clone status / error details.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13415,7 +13415,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13435,7 +13435,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of update and whether install should be performed via Install On Clone
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13456,7 +13456,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13476,7 +13476,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of update and details on proxy error reported.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13498,7 +13498,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13518,7 +13518,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on, whether install was successful and any errors reported on failure.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13539,7 +13539,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13559,7 +13559,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, name of update, application version, update package name and an indication whether Install On Clone was on.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13580,7 +13580,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13600,7 +13600,7 @@ The following fields are collected:
 
 - **Payload** - Text indicating success of operation. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13626,7 +13626,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13656,7 +13656,7 @@ The following fields are collected:
 
 - **Payload** - Static text to indicate beginning of install process if present
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -13684,7 +13684,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13704,7 +13704,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -13730,7 +13730,7 @@ The following fields are collected:
 
 - **Channel** -	 The preference for audience
 
-- **Device_NetworkCountry** -	 The device country (based on IP address)
+- **Device_NetworkCountry** -	 The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13752,7 +13752,7 @@ The following fields are collected:
 
 - **LaunchedBy** - String to indicate how the process is launched. Microsoft Update Assistant can either be launched by launch agent or launched directly.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -13774,7 +13774,7 @@ The following fields are collected:
 
 - **dataCollectionDialog** - Boolean indicating whether the process is waiting for user response on Data Collection Dialog
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13800,7 +13800,7 @@ The following fields are collected:
 
 - **isWaiting** - Boolean indicating whether the process is waiting for user response on notification
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13864,7 +13864,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13882,7 +13882,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -13908,7 +13908,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13928,7 +13928,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -13951,7 +13951,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -13971,7 +13971,7 @@ The following fields are collected:
 
 - **Payload** - Contains list of application IDs to be updated.
     
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -13994,7 +13994,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14014,7 +14014,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14037,7 +14037,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14057,7 +14057,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14078,7 +14078,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14098,7 +14098,7 @@ The following fields are collected:
 
 - **Payload** - Contains lists of updates downloaded
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14119,7 +14119,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14139,7 +14139,7 @@ The following fields are collected:
 
 - **Payload** - Contains lists of updates.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14160,7 +14160,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14180,7 +14180,7 @@ The following fields are collected:
 
 - **Payload** - Contains lists of updates.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14201,7 +14201,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14221,7 +14221,7 @@ The following fields are collected:
 
 - **Payload** - Contains lists of updates.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14244,7 +14244,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14264,7 +14264,7 @@ The following fields are collected:
 
 - **Payload** - Contains static text representing user selection for opting into Automatic Download and Install.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14285,7 +14285,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14305,7 +14305,7 @@ The following fields are collected:
 
 - **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** -The first three octets of the IP address
 
@@ -14327,7 +14327,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14347,7 +14347,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14367,7 +14367,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14387,7 +14387,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14407,7 +14407,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14427,7 +14427,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14447,7 +14447,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14467,7 +14467,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14487,7 +14487,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14507,7 +14507,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14527,7 +14527,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14547,7 +14547,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14567,7 +14567,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14589,7 +14589,7 @@ The following fields are collected:
 
 - **InvalidUpdates** - Count of forced updates set with invalid update versions
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14609,7 +14609,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14629,7 +14629,7 @@ The following fields are collected:
 
 - **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14651,7 +14651,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14671,7 +14671,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14691,7 +14691,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14711,7 +14711,7 @@ The following fields are collected:
 
 - **Payload** - Contains count of applications to be terminated
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14731,7 +14731,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14751,7 +14751,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14771,7 +14771,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14793,7 +14793,7 @@ The following fields are collected:
 
 - **Payload** - Static text *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14813,7 +14813,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14833,7 +14833,7 @@ The following fields are collected:
 
 - **Payload** - Contains count of applications to be terminated
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14853,7 +14853,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14873,7 +14873,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14894,7 +14894,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14914,7 +14914,7 @@ The following fields are collected:
 
 - **Payload** - Contains the string used to look for update location or size.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -14937,7 +14937,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -14955,7 +14955,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -14981,7 +14981,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15003,7 +15003,7 @@ The following fields are collected:
 
 - **Payload** - Static text to indicate MAU is continuing with update
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15027,7 +15027,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15047,7 +15047,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15071,7 +15071,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15091,7 +15091,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on error encountered
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15111,7 +15111,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15131,7 +15131,7 @@ The following fields are collected:
 
 - **Payload** - Indicates whether Microsoft Auto Update (MAU) is resuming or pausing
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15151,7 +15151,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -15169,7 +15169,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first 3 octets of the IP address
 
@@ -15194,7 +15194,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15216,7 +15216,7 @@ The following fields are collected:
 
 - **Payload** - Indicates whether a download was attempted previously
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15240,7 +15240,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15260,7 +15260,7 @@ The following fields are collected:
 
 - **IsRepair** - Indicates whether the update is to repair failed update
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15286,7 +15286,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15306,7 +15306,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15328,7 +15328,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15350,7 +15350,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on nature of error encountered
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15374,7 +15374,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15392,7 +15392,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15416,7 +15416,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15436,7 +15436,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15462,7 +15462,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15484,7 +15484,7 @@ The following fields are collected:
 
 - **Payload** - Indicates whether progress view has been displayed during install process
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15508,7 +15508,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15528,7 +15528,7 @@ The following fields are collected:
 
 - **Payload** - Contains the list of Application IDs and their corresponding install priority represented in numbers.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15548,7 +15548,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier 
 
@@ -15568,7 +15568,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on number of applications being updated
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15590,7 +15590,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15610,7 +15610,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15632,7 +15632,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15652,7 +15652,7 @@ The following fields are collected:
 
 - **Payload** - Static text to indicate application needs to close, if present
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15678,7 +15678,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15698,7 +15698,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15720,7 +15720,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15740,7 +15740,7 @@ The following fields are collected:
 
 - **Payload** - Indicates whether the timer was added or removed
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15761,7 +15761,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15781,7 +15781,7 @@ The following fields are collected:
 
 - **Payload** - Contains an identifier used to track an update activity, indication whether preference is available, indication if this is re-registration and an indication whether registration is required.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -15802,7 +15802,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15822,7 +15822,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -15842,7 +15842,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15862,7 +15862,7 @@ The following fields are collected:
 
 - **Payload** - Contains path to the command being executed
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15882,7 +15882,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15902,7 +15902,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on server name, whether server is valid and if server is reachable.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -15922,7 +15922,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15942,7 +15942,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -15962,7 +15962,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -15982,7 +15982,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16003,7 +16003,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16023,7 +16023,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID in the web response
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16043,7 +16043,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16063,7 +16063,7 @@ The following fields are collected:
 
 - **Payload** - Static text
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16083,7 +16083,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16103,7 +16103,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16124,7 +16124,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16144,7 +16144,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16165,7 +16165,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16185,7 +16185,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16208,7 +16208,7 @@ The following fields are collected:
 
 - **Code** - Error code 
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16228,7 +16228,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16249,7 +16249,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16269,7 +16269,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16290,7 +16290,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16310,7 +16310,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on updates to offer, registered applications and temporary location downloaded files will save to.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16331,7 +16331,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16351,7 +16351,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16372,7 +16372,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16392,7 +16392,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16413,7 +16413,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16433,7 +16433,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16458,7 +16458,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16478,7 +16478,7 @@ The following fields are collected:
 
 - **IsNullID** - Indicates whether ID is null
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16498,7 +16498,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16518,7 +16518,7 @@ The following fields are collected:
 
 - **Payload** - Contains minimum required OS version as specified in downloaded manifest file.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16538,7 +16538,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16556,7 +16556,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16580,7 +16580,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16600,7 +16600,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16621,7 +16621,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16641,7 +16641,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID and bundle version information.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16662,7 +16662,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16682,7 +16682,7 @@ The following fields are collected:
 
 - **Payload** - Contains application ID and bundle version information.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16702,7 +16702,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16720,7 +16720,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16744,7 +16744,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16762,7 +16762,7 @@ The following fields are collected:
 
 - **HowToCheck** - How to check setting
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -16785,7 +16785,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16805,7 +16805,7 @@ The following fields are collected:
 
 - **Payload** - Text that indicates the nature of the event.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16826,7 +16826,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16846,7 +16846,7 @@ The following fields are collected:
 
 - **Payload** - Contains suite name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16867,7 +16867,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16887,7 +16887,7 @@ The following fields are collected:
 
 - **Payload** - Contains Name, Baseline and update version for the suite.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16908,7 +16908,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16928,7 +16928,7 @@ The following fields are collected:
 
 - **Payload** - Contains Name, Baseline and update version for the suite.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16949,7 +16949,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -16969,7 +16969,7 @@ The following fields are collected:
 
 - **Payload** - Contains Name, Baseline and update version for the suite.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -16990,7 +16990,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17010,7 +17010,7 @@ The following fields are collected:
 
 - **Payload** - Contains suite name.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17031,7 +17031,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17051,7 +17051,7 @@ The following fields are collected:
 
 - **Payload** - Contains Name, Baseline and update version for the suite.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17074,7 +17074,7 @@ The following fields are collected:
 
 - **Detected** - Number of detected updates.
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17098,7 +17098,7 @@ The following fields are collected:
 
 - **Pending** - Number of updates pending.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17119,7 +17119,7 @@ The following fields are collected:
 
 - **Channel** – The preference for audience
 
-- **Device_NetworkCountry** – The device county (based on IP address)
+- **Device_NetworkCountry** – The device country or region (based on IP address)
 
 - **DeviceID** – The device identifier
 
@@ -17137,7 +17137,7 @@ The following fields are collected:
 
 - **HowTocheck** – The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** – The device country (based on IP address)
+- **PipelineInfo_ClientCountry** – The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** – The first 3 octets of the IP address
 
@@ -17160,7 +17160,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17180,7 +17180,7 @@ The following fields are collected:
 
 - **Payload** - Contains indication whether the task is running on main thread, and number of pending updates.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17202,7 +17202,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17222,7 +17222,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -17250,7 +17250,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17270,7 +17270,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on error encountered
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -17294,7 +17294,7 @@ The following fields are collected:
 
 - **Detected**	- Number of detected updates.
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17314,7 +17314,7 @@ The following fields are collected:
 
 - **Payload** - Contains count of updates found and application ID.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17335,7 +17335,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17355,7 +17355,7 @@ The following fields are collected:
 
 - **Payload** - Static text.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17379,7 +17379,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17399,7 +17399,7 @@ The following fields are collected:
 
 - **Payload** - Contains details of action being pushed from web-services.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17420,7 +17420,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17440,7 +17440,7 @@ The following fields are collected:
 
 - **Payload** - Contains request ID, application name, response time and/or status code.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17461,7 +17461,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17481,7 +17481,7 @@ The following fields are collected:
 
 - **Payload** - Contains request ID, application name, response time and/or status code.
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17501,7 +17501,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17521,7 +17521,7 @@ The following fields are collected:
 
 - **Payload** - Contains information on number of updates blocked via web-services
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
@@ -17541,7 +17541,7 @@ The following fields are collected:
 
 - **Channel** - The preference for audience
 
-- **Device_NetworkCountry** - The device country (based on IP address)
+- **Device_NetworkCountry** - The device country or region (based on IP address)
 
 - **DeviceID** - The device identifier
 
@@ -17561,7 +17561,7 @@ The following fields are collected:
 
 - **Payload** - Contains web-service caller ID
 
-- **PipelineInfo_ClientCountry** - The device country (based on IP address)
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** - The first 3 octets of the IP address
 
@@ -17581,7 +17581,7 @@ The following fields are collected:
 
 - **Channel** -The preference for audience
 
-- **Device_NetworkCountry** -The device country (based on IP address)
+- **Device_NetworkCountry** -The device country or region (based on IP address)
 
 - **DeviceID** -The device identifier
 
@@ -17601,7 +17601,7 @@ The following fields are collected:
 
 - **Payload** -Contains information on number of applications with what’s new information
 
-- **PipelineInfo_ClientCountry** -The device country (based on IP address)
+- **PipelineInfo_ClientCountry** -The device country or region (based on IP address)
 
 - **PipelineInfo_ClientIp** -The first three octets of the IP address
 
@@ -18916,7 +18916,7 @@ This event is triggered every time an Office application is launched. This event
 
 The following fields are collected:
 
-  - **CountryRegion -** Country/Region identifier Operating System setting.
+  - **CountryRegion -** Country or region identifier Operating System setting.
 
   - **HorizontalResolution -** Horizontal screen resolution
 
@@ -18984,7 +18984,7 @@ The following fields are collected:
 
   - **CollectionTime -** The time this event was queued for upload
 
-  - **CountryRegion -** Country/Region identifier Operating System setting.
+  - **CountryRegion -** Country or region identifier operating system setting.
 
   - **DomainName -** Domain name of Microsoft domain
 
