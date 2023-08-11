@@ -15836,6 +15836,16 @@ The following fields are collected:
 
   - **Data\_UpdatedDriverVersion** - Version of the updated driver
 
+
+#### Office.Apple.PenTelemetry
+
+This event is triggered when an Apple Pencil is used in Office for iPad. The data is used to record iPad’s input peripherals to help determine whether inking scenarios and Apple Pencil inputs are performing as expected.
+
+The following fields are collected:
+
+ - None
+
+
 #### Office.Graphics.SpriteMemCorrupt
 
 Reports any errors detected in the sprite memory accounting telemetry. Critical for assessing health of the graphics memory usage telemetry. This information is needed to validate the correctness of our SpriteMem telemetry.
