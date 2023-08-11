@@ -1666,6 +1666,8 @@ The event is triggered when the user creates, adds, resets, or deletes their acc
 The following fields are collected: 
 
 - **account_calendar_count** - how many calendars the account has
+
+- **account_state** - The current error state of the account
  
 - **action** - type of action performed, for example, create_account, delete_account.
 
@@ -1682,6 +1684,8 @@ The following fields are collected:
 - **is_shared_mailbox** - whether the action pertains to a shared mailbox
  
 - **number_of_accounts** - total number of accounts that the action is performed on
+
+- **policy_did_change** - If the Intune policy on the account changed and caused this account action
  
 - **result** - result for the action, for example, success, failure.
    
@@ -8524,7 +8528,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
-This event is triggered when a user opens a Word document. It also contains critical file open performance data and is an app start event from user perspective.  The event monitors whether file-open is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics. 
+This event is triggered when a user opens a Word document. The event monitors whether file-open is working as expected. The event monitors whether “file open” is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
  
 The following fields are collected:
 
@@ -8571,6 +8575,8 @@ The following fields are collected:
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
+
+- **Data_Doc_LicenseCategory** - Indicates the license category of the user (EnhancedRFM, SubscriptionConsumer, Freemium, etc.)
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint) 
 
