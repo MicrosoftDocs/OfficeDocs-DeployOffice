@@ -8528,7 +8528,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
-This event is triggered when a user opens a Word document. The event monitors whether file-open is working as expected. The event monitors whether “file open” is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
+This event is triggered when a user opens a Word document. The event monitors whether “file open” is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
  
 The following fields are collected:
 
