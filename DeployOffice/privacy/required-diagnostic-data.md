@@ -5584,6 +5584,50 @@ The following fields are collected:
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
 
 
+#### Office.Klondike.MobileAttribution.AppInstall
+
+This event is triggered at the initial install of the app, and records from where the user was referred (if available). The data helps us measure app performance and ensure it is performing as expected.
+
+The following fields are collected:
+
+- **EventPropertyNameAdId** - The Device ID on which the app is installed
+
+- **EventPropertyNameClickTime** - The time the referral link was clicked
+
+- **EventPropertyNameInstallTime** - The time when the App is installed
+
+- **EventPropertyNameInstallVersion** - App version of the App installed
+
+- **EventPropertyNameIsAdTrackingLimited** - Captures whether the referrer link was clicked
+
+- **EventPropertyNameReferrer** - Product or experience from where the user was referred
+
+- **EventPropertyNameUserAgent** - Captures the OS details 
+
+
+#### Office.Klondike.MobileAttribution.Login
+
+This event is triggered when the user logs in. The data is used to measure app performance and ensure it is performing as expected.
+
+The following fields are collected:
+
+- **EventPropertyNameAdId** - The Device ID on which the app is installed
+
+- **EventPropertyNameClickTime** - The time the referral link was clicked
+
+- **EventPropertyNameInstallTime** - The time when the App is installed
+
+- **EventPropertyNameInstallVersion** - App version of the App installed
+
+- **EventPropertyNameIsAdTrackingLimited** - Captures whether the referrer link was clicked
+
+- **EventPropertyNameReferrer** - Product or experience from where the user was referred
+
+- **EventPropertyNameUserAgent** - Captures the OS details
+
+- **EventPropertyNameUserId** - The Account ID logged into the App
+
+
 #### Office.Lens.LensSdk.CloudConnectorLaunch
 
 When the user crops the image and taps confirm on the final image selection for using OCR, this event is collected. 	
@@ -15839,7 +15883,7 @@ The following fields are collected:
 
 #### Office.Apple.PenTelemetry
 
-This event is triggered when an Apple Pencil is used in Office for iPad. The data is used to record iPad’s input peripherals to help determine whether inking scenarios and Apple Pencil inputs are performing as expected.
+This event is triggered when an Apple Pencil is used in the Microsoft 365 app for iOS on an iPad. The data is used to record iPad’s input peripherals to help determine whether inking scenarios and Apple Pencil inputs are performing as expected.
 
 The following fields are collected:
 
