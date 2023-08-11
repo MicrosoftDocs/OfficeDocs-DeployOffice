@@ -317,7 +317,7 @@ This category contains the following fields:
   
   - **NetworkCost** - Indicates network cost or type, such as metered or metered above cap.
   
-  - **NetworkCountry** - The country code of the sender, based on the unscrubbed client IP address.
+  - **NetworkCountry** - The country or region code of the sender, based on the unscrubbed client IP address.
 
   - **NumProcPhysCores** - The number of physical cores on the machine. Allows us to classify data based on device pivot.
 
@@ -614,7 +614,7 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **PipelineInfo.AccountId** - A pseudonymous identifier that represents the current user
 
-- **PipelineInfo.ClientCountry** - The current country of the device to detect country or region-specific issues and outages
+- **PipelineInfo.ClientCountry** - The current country or region of the device to detect country or region-specific issues and outages
 
 - **PipelineInfo.ClientIp** - The IP address the device is connected to debug connection issues
 
@@ -740,7 +740,7 @@ Indicates whether the Office File Format choice dialog box was shown to the user
 
 The following fields are collected.
 
-- **CountryRegion** –  The users' country region setting in Windows system
+- **CountryRegion** –  The user's country or region setting in Windows system
 
 - **FileFormatBallotBoxAppIDBootedOnce** –  In which app (Word, Excel, PPT) the file format ballot display logic was processed.
 
@@ -1666,6 +1666,8 @@ The event is triggered when the user creates, adds, resets, or deletes their acc
 The following fields are collected: 
 
 - **account_calendar_count** - how many calendars the account has
+
+- **account_state** - The current error state of the account
  
 - **action** - type of action performed, for example, create_account, delete_account.
 
@@ -1682,6 +1684,8 @@ The following fields are collected:
 - **is_shared_mailbox** - whether the action pertains to a shared mailbox
  
 - **number_of_accounts** - total number of accounts that the action is performed on
+
+- **policy_did_change** - If the Intune policy on the account changed and caused this account action
  
 - **result** - result for the action, for example, success, failure.
    
@@ -4612,7 +4616,7 @@ This event is collected when the feed has started initializing. This event is us
 
 - **publicEventName** - Public facing event name.  
 
-- **region** - The geographical region of the feed service that the user is connected to. 
+- **region** - The country or region of the feed service that the user is connected to. 
 
 - **tenantAadObjectId** - A globally unique identifier for the user's enterprise tenant.
 
@@ -4680,7 +4684,7 @@ This event is collected when the feed is shown to the user. The event is used to
 
 - **publicEventName** - Public facing event name.  
 
-- **region** - The geographical region of the feed service that the user is connected to. 
+- **region** - The country or region of the feed service that the user is connected to. 
 
 - **renderTime** - Metric to diagnose performance in rendering of the feed.
 
@@ -5580,6 +5584,50 @@ The following fields are collected:
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
 
 
+#### Office.Klondike.MobileAttribution.AppInstall
+
+This event is triggered at the initial install of the app, and records from where the user was referred (if available). The data helps us measure app performance and ensure it is performing as expected.
+
+The following fields are collected:
+
+- **EventPropertyNameAdId** - The Device ID on which the app is installed
+
+- **EventPropertyNameClickTime** - The time the referral link was clicked
+
+- **EventPropertyNameInstallTime** - The time when the App is installed
+
+- **EventPropertyNameInstallVersion** - App version of the App installed
+
+- **EventPropertyNameIsAdTrackingLimited** - Captures whether the referrer link was clicked
+
+- **EventPropertyNameReferrer** - Product or experience from where the user was referred
+
+- **EventPropertyNameUserAgent** - Captures the OS details 
+
+
+#### Office.Klondike.MobileAttribution.Login
+
+This event is triggered when the user logs in. The data is used to measure app performance and ensure it is performing as expected.
+
+The following fields are collected:
+
+- **EventPropertyNameAdId** - The Device ID on which the app is installed
+
+- **EventPropertyNameClickTime** - The time the referral link was clicked
+
+- **EventPropertyNameInstallTime** - The time when the App is installed
+
+- **EventPropertyNameInstallVersion** - App version of the App installed
+
+- **EventPropertyNameIsAdTrackingLimited** - Captures whether the referrer link was clicked
+
+- **EventPropertyNameReferrer** - Product or experience from where the user was referred
+
+- **EventPropertyNameUserAgent** - Captures the OS details
+
+- **EventPropertyNameUserId** - The Account ID logged into the App
+
+
 #### Office.Lens.LensSdk.CloudConnectorLaunch
 
 When the user crops the image and taps confirm on the final image selection for using OCR, this event is collected. 	
@@ -5758,7 +5806,7 @@ The following fields are collected:
 
   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -5835,7 +5883,7 @@ The following fields are collected:
    - **ClientTimeStamp** - time that the event occurred in Unix epoch time
    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -5865,7 +5913,7 @@ The following fields are collected:
 
 - **DeviceInfo_OsVersion** – The version of the operating system
 
-- **PipelineInfo.ClientCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address
+- **PipelineInfo.ClientCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address
 
 
 #### Office.LivePersonaCard.UserActions.ClosedPersonaCard
@@ -5911,7 +5959,7 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -5983,7 +6031,7 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.section** – The active section of the expanded card
 
@@ -6017,7 +6065,7 @@ The following fields are collected:
 
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
-- **NetworkCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address
+- **NetworkCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address
 
 
 #### Office.LivePersonaCard.UserActions.OpenedPersonaCard
@@ -6069,7 +6117,7 @@ The following fields are collected:
     - **networkType** - The type of network connectivity of the device in use
     - **roundTripEstimateMs** - Estimated effective round trip of the current connection in milliseconds
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -6093,7 +6141,7 @@ The following fields are collected:
 
 - **NetworkCost** - Indicates network cost/type (metered, metered above cap, etc.)
 
-- **NetworkCountry** - The Country Code of the Sender, based on the unscrubbed Client IP Address.
+- **NetworkCountry** - The country or region code of the sender, based on the unscrubbed Client IP Address.
 
 #### Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -8524,7 +8572,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
-This event is triggered when a user opens a Word document. It also contains critical file open performance data and is an app start event from user perspective.  The event monitors whether file-open is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics. 
+This event is triggered when a user opens a Word document. The event monitors whether “file open” is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
  
 The following fields are collected:
 
@@ -8571,6 +8619,8 @@ The following fields are collected:
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
+
+- **Data_Doc_LicenseCategory** - Indicates the license category of the user (EnhancedRFM, SubscriptionConsumer, Freemium, etc.)
 
 - **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint) 
 
@@ -11847,7 +11897,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 
 #### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
@@ -11880,7 +11930,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 - **UXSDKVersion** - The version of the UX SDK that is used while rendering the consent model to the user.
 
@@ -11914,7 +11964,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 
 ## Product and service performance data events
@@ -13313,7 +13363,7 @@ The following fields are collected:
 
 - **Data_CrashAppStore** - the App store where the app was installed from
 
-- **Data_CrashedCountry** - Region where the crash occurred
+- **Data_CrashedCountry** - Country or region where the crash occurred
 
 - **Data_CrashedLocale** - Locale of the app when the crash happened
 
@@ -14853,7 +14903,7 @@ The following fields are collected:
 
 - **CollectionTime** - time of subscription purchase completion
 
-- **CountryCode** - Client country code that is sent to DSC for client redemption request
+- **CountryCode** - Client country or region code that is sent to DSC for client redemption request
 
 - **GoPremiumEntryPoint** - entry point for triggering purchase 
 
@@ -15829,6 +15879,16 @@ The following fields are collected:
   - **Data\_BlockedDriverVersion** - Version of the driver that was blocklisted
 
   - **Data\_UpdatedDriverVersion** - Version of the updated driver
+
+
+#### Office.Apple.PenTelemetry
+
+This event is triggered when an Apple Pencil is used in the Microsoft 365 app for iOS on an iPad. The data is used to record iPad’s input peripherals to help determine whether inking scenarios and Apple Pencil inputs are performing as expected.
+
+The following fields are collected:
+
+ - None
+
 
 #### Office.Graphics.SpriteMemCorrupt
 
