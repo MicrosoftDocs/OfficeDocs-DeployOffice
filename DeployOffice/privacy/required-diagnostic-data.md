@@ -4616,7 +4616,7 @@ This event is collected when the feed has started initializing. This event is us
 
 - **publicEventName** - Public facing event name.  
 
-- **region** - The geographical region of the feed service that the user is connected to. 
+- **region** - The country or region of the feed service that the user is connected to. 
 
 - **tenantAadObjectId** - A globally unique identifier for the user's enterprise tenant.
 
@@ -4684,7 +4684,7 @@ This event is collected when the feed is shown to the user. The event is used to
 
 - **publicEventName** - Public facing event name.  
 
-- **region** - The geographical region of the feed service that the user is connected to. 
+- **region** - The country or region of the feed service that the user is connected to. 
 
 - **renderTime** - Metric to diagnose performance in rendering of the feed.
 
@@ -5806,7 +5806,7 @@ The following fields are collected:
 
   - **externalAppSessionCorrelationId** - A globally unique identifier for the app to identify all persona cards opened in the same sub-session
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -5883,7 +5883,7 @@ The following fields are collected:
    - **ClientTimeStamp** - time that the event occurred in Unix epoch time
    - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user’s subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -5959,7 +5959,7 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -6031,7 +6031,7 @@ The following fields are collected:
   - **cardPersonaCorrelationId** - Duplicate of Data.cardCorrelationId above
   - **consumerCorrelationId** - Duplicate of Data.clientCorrelationId above 
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.section** – The active section of the expanded card
 
@@ -6117,7 +6117,7 @@ The following fields are collected:
     - **networkType** - The type of network connectivity of the device in use
     - **roundTripEstimateMs** - Estimated effective round trip of the current connection in milliseconds
 
-- **Data.region** -The geographical region of the profile card backend service to which user is connected
+- **Data.region** -The country or region of the profile card backend service to which user is connected
 
 - **Data.tenantAadObjectId** - The tenant to which a user's subscription is tied. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant
 
@@ -11897,7 +11897,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 
 #### Office.Privacy.UnifiedConsent.UI.ConsentRenderFailed
@@ -11930,7 +11930,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 - **UXSDKVersion** - The version of the UX SDK that is used while rendering the consent model to the user.
 
@@ -11964,7 +11964,7 @@ The following fields are collected:
 
 - **ReConsentReason** - An indicator of why a user is seeing a given consent an additional time.
 
-- **Region** - The region being used to determine what version of a consent to show the user
+- **Region** - The country or region being used to determine what version of a consent to show the user
 
 
 ## Product and service performance data events
