@@ -2,6 +2,15 @@
 
 
 
+## Week of August 07, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/11/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 8/11/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of July 17, 2023
 
 
@@ -25,29 +34,3 @@
 | 7/14/2023 | [Overview of the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview) | modified |
 | 7/14/2023 | [Set preferences for macro security in Office for Mac](/DeployOffice/mac/set-preference-macro-security-office-for-mac) | modified |
 | 7/14/2023 | [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](/DeployOffice/security/basic-authentication-prompts-blocked) | modified |
-
-
-## Week of July 03, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/3/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
-
-
-## Week of June 26, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/27/2023 | [New Improvements to Microsoft 365 Apps admin center coming soon](/DeployOffice/other/coming-soon-to-microsoft-365-admin-center) | modified |
-| 6/29/2023 | [Device-based licensing for Microsoft 365 Apps for enterprise](/DeployOffice/device-based-licensing) | modified |
-| 6/29/2023 | [New Improvements to Microsoft 365 Apps admin center coming soon](/DeployOffice/other/coming-soon-to-microsoft-365-admin-center) | modified |
-
-
-## Week of June 19, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/21/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot) | added |
