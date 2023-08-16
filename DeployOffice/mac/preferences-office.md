@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 05/08/2023
+ms.date: 08/16/2023
 ---
 
 # Set suite-wide preferences for Office for Mac
@@ -32,6 +32,7 @@ The following list shows the preferences that are covered in this article:
 - [Automatically sign in and suppress welcome dialogs](#automatically-sign-in-and-suppress-welcome-dialogs)
 - [Specify Microsoft 365 sign in name to be added on first launch](#specify-microsoft-365-sign-in-name-to-be-added-on-first-launch)
 - [App launch](#app-launch)
+- [Security](#security)
 - [User functionality](#user-functionality)
 - [App installation](#app-installation)
 
@@ -62,6 +63,22 @@ Set the full email address of the Microsoft 365 user to be added on first launch
 |Apps| Word, Excel, PowerPoint, Outlook, OneNote |
 |Availability| 16.18 |
 |Comments| The sign in sheet for Word, Excel, PowerPoint, Outlook, and OneNote will be automatically populated with the specified value. |
+
+## Security
+
+### Cipher algorithm
+
+Instruct Office applications to use a specific Cipher algorithm for IRM protection, such as Cipher Block Chaining (CBC) or Electronic Codebook (ECB).
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.office |
+|Key| CompatibleEncryption |
+|Data Type| Integer |
+|Possible values| 1 = CBC (default)<br/> 2 = ECB |
+|Apps| Word, Excel, PowerPoint |
+|Availability| 16.72 |
+|Comments| This preference applies to organizations that utilize the RMS service. For more information, see [https://aka.ms/Purview/CBCDetails](https://aka.ms/Purview/CBCDetails) |
 
 ## App launch
 
