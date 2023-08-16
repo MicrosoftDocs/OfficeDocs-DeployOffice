@@ -4,16 +4,13 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of extended offline access for Microsoft 365 Apps."
-ms.date: 05/11/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of extended offline access for Microsoft 365 Apps

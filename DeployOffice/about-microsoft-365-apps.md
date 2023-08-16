@@ -1,22 +1,17 @@
 ---
 title: "About Microsoft 365 Apps in the enterprise"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-overview
+ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # About Microsoft 365 Apps in the enterprise
@@ -56,9 +51,9 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - By default, Microsoft 365 Apps installs as one package. This means that all Office applications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-office-deployment-tool.md#BKMK_excludeorremove) certain Office applications, such as Access, from client computers.
     
-- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md).
     
-- Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+- Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
     
 - Office 365 (and Microsoft 365) provides a web-based portal where users can install Microsoft 365 Apps themselves. Keep in mind that users have to be local administrators on their computers to install Microsoft 365 Apps. If users aren't local administrators, you'll have to install Microsoft 365 Apps for them. Also, if you don't want your users to install from the portal, you can prevent that. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
     
@@ -76,7 +71,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 ## More information about Microsoft 365 Apps
 <a name="BKMK_MoreInfo"> </a>
 
-- You can use Microsoft 365 Apps with supported versions of Exchange Server (Exchange Server 2013 or later) or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 (or Microsoft 365) plan, you can use Microsoft 365 Apps with Exchange Online and SharePoint Online.
+- You can use Microsoft 365 Apps with supported versions of Exchange Server or SharePoint Server that are installed on-premises in your organization. Or, if they're part of your Office 365 (or Microsoft 365) plan, you can use Microsoft 365 Apps with Exchange Online and SharePoint Online.
     
 - Users can store the files they create with Microsoft 365 Apps on their local computers or elsewhere on your network, such as a SharePoint site. Office 365 (and Microsoft 365) also provides cloud-based file storage options.
     

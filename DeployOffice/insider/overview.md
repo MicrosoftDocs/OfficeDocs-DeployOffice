@@ -4,14 +4,14 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Microsoft_365_Insider
+ms.collection: Tier1
+ms.custom: intro-overview
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"
-ms.date: 01/11/2023
+ms.date: 04/19/2023
 ---
 
 # Microsoft 365 Insider Program for Business
@@ -22,7 +22,7 @@ The Microsoft 365 Insider Program for Business offers organizations an opportuni
 
 Participating in the Microsoft 365 Insider program can provide your organization with the following benefits:
 
-- **Accelerate deployment:** Validate Microsoft 365 Apps releases prior to deploying them broadly and ensure that applications will continue to work successfully with the current version of Microsoft 365 Apps.​
+- **Accelerate deployment:** Validate Microsoft 365 Apps releases prior to deploying them broadly and ensure that applications continue to work successfully with the current version of Microsoft 365 Apps.​
 
 - **Report issues:** Submit feedback on behalf of your organization and help shape Microsoft 365 Apps for your specific business needs.​
 
@@ -42,9 +42,11 @@ To get started, we recommend reviewing these articles:
 
 The following resources can help you keep up to date on the latest developments in the Microsoft 365 Insider program.
 
-- Read the [Microsoft 365 Insider blog](https://insider.office.com/blog).
+- Read the [Microsoft 365 Insider blog](https://insider.microsoft365.com/blog).
+
+- Follow [Microsoft 365 Insider Program](https://www.linkedin.com/showcase/microsoft-365-insider) on LinkedIn.
 
 - Follow [Msft365Insider](https://twitter.com/msft365insider) on Twitter.
 
 > [!NOTE]
-> If you're a home user, please visit the [Microsoft 365 Insider Handbook](https://insider.office.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.
+> If you're a home user, please visit the [Microsoft 365 Insider Handbook](https://insider.microsoft365.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.

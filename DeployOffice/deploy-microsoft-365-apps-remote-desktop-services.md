@@ -1,17 +1,16 @@
 ---
 title: "Deploy Microsoft 365 Apps by using Remote Desktop Services"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
@@ -48,7 +47,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 
 > [!NOTE]
 > - Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.
-> - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026. *(For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).)*
+> - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026.
 > - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 > - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
 

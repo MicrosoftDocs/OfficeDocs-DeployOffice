@@ -4,16 +4,14 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- intro-get-started
+ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Deployment guide for Microsoft 365 Apps
@@ -36,7 +34,7 @@ ms.date: 04/20/2020
   
 - [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
   
-- [Microsoft FastTrack for Office](https://fasttrack.microsoft.com/office)
+- [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
   
 ## Deploy
 
@@ -53,11 +51,11 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates. 
 
-- [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md)
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 
-- [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md) 
+- [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md) 
 
 - [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
 

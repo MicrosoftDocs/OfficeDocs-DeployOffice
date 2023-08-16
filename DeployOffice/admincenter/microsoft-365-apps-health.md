@@ -4,12 +4,13 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
-ms.date: 09/15/2020
+ms.date: 03/01/2023
 ---
 
 # Microsoft 365 Apps health

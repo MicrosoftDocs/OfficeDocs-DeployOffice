@@ -4,32 +4,44 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
-ms.date: 10/19/2018
+ms.date: 07/01/2023
 ---
 
 # Set preferences for Outlook for Mac
 
 ***Applies to:*** *Outlook for Mac, Outlook LTSC for Mac 2021, Outlook 2019 for Mac*
 
+The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
+
 As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
 
-The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
+Most preferences can be changed using the Terminal, or via a script. For example:
 
-These keys are CFPreferences-compatible, which means that it can be set by using enterprise management software for Mac, such as Jamf Pro.
+```console
+defaults write com.microsoft.Outlook DefaultWeatherLocation -string 'Paris, France'
+```
+
+When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users cannot override it, use a Configuration Profile.
+
+All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
+
+> [!IMPORTANT]
+> Preferences that are marked as Yes to 'Requires Configuration Profile' in the tables below can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
 
 The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
+- [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
@@ -39,6 +51,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable export](#disable-export)
 - [Disable import](#disable-import)
 - [Disable Junk settings](#disable-junk-settings)
+- [Disable Pride theme](#disable-pride-theme)
 - [Disable signatures](#disable-signatures)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
@@ -64,6 +77,7 @@ The email address used for Office activation will be added on first launch.
 |Key| OfficeAutoSignIn  |
 |Data Type| Boolean |
 |Possible values| false (default) <br/> true |
+|Requires Configuration Profile| No |
 |Availability|16.17 |
 |Comments| This key also suppresses first run dialogs for other Office apps, including Word, Excel, PowerPoint, and OneNote.  |
 
@@ -77,6 +91,7 @@ Set the domain or full email address of Microsoft 365 mailbox to be added on fir
 |Key| DefaultEmailAddressOrDomain|
 |Data Type| String|
 |Possible values| *Various (example: "contoso.com")*  |
+|Requires Configuration Profile| No |
 |Availability|16.18 |
 |Comments| The full email address or domain specified will be added in Outlook instead of the Office activation email address.  |
 
@@ -90,7 +105,22 @@ Specify one or more domains users are allowed to add in Outlook.
 |Key| AllowedEmailDomains|
 |Data Type| Array of Strings |
 |Possible values|  *Various (example: "contoso.com")*  |
+|Requires Configuration Profile| No |
 |Availability| 16.18|
+|Comments| Doesn't remove or disconnect accounts already added in Outlook. |
+
+### Block access to mailboxes from unauthorized domains
+
+Specify one or more domains where mailbox access is blocked.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisallowedEmailDomains|
+|Data Type| Array of Strings |
+|Possible values|  *Various (example: "yahoo.com")*  |
+|Requires Configuration Profile| No |
+|Availability| 16.75|
 |Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
 ### Hide text about adding non-corporate mailboxes
@@ -103,6 +133,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |Key| HideCanAddOtherAccountTypesTipText|
 |Data Type|Boolean   |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.18 |
 |Comments| Only hides text. Doesn't impact ability to add non-corporate mailboxes. |
 
@@ -118,8 +149,8 @@ Prevent users from being able to import archive files (.olm and .pst) and Outloo
 |Key|DisableImport |
 |Data Type|Boolean |
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
 |Availability|16.18 |
-|Comments| Key must be set to true and forced. |
 
 ### Disable export
 
@@ -131,8 +162,8 @@ Prevent users from being able to export archive files (.olm).
 |Key| DisableExport  |
 |Data Type|Boolean |
 |Possible values| false (default) <br/> true |
+|Requires Configuration Profile| Yes |
 |Availability|16.18 |
-|Comments| Key must be set to true and forced. |
 
 ## Meetings settings
 
@@ -146,6 +177,7 @@ Prevent users from selecting “Do not send response” when replying to a meeti
 |Key| DisableRespondToMeetingWithoutResponse|
 |Data Type| Boolean|
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability| 16.56|
 
 ### Disable Skype for Business online meetings
@@ -158,8 +190,8 @@ Prevent users from adding Skype for Business online meeting details to events.
 |Key| DisableSkypeMeeting|
 |Data Type| Boolean|
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
 |Availability| 16.19|
-|Comments| Key must be set to true and forced. |
 
 ### Disable Teams online meetings
 
@@ -171,8 +203,8 @@ Prevent users from adding Teams online meeting details to events.
 |Key| DisableTeamsMeeting|
 |Data Type| Boolean|
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
 |Availability| 16.20|
-|Comments| Key must be set to true and forced. |
 
 ## Security settings
 
@@ -186,6 +218,7 @@ Prevent users from applying the **Encrypt-Only** option to emails when using Mic
 |Key|DisableEncryptOnly |
 |Data Type| Boolean |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -199,6 +232,7 @@ Prevent users from applying the **Do Not Forward** option to emails when using M
 |Key|DisableDoNotForward |
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.40 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -212,6 +246,7 @@ Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate d
 |Key|AllowCertsWithoutMatchingEmailAddress|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -225,6 +260,7 @@ Set the order in which certificates will be used to decrypt and encrypt S/MIME m
 |Key|SMIMECertificatesLookupOrder|
 |Data Type|Array of unsigned integer  |
 |Possible values| 0 (Contacts), 1 (GAL), 2 (Device), 3 (LDAP) <br/> Default is [0, 1, 2, 3] |
+|Requires Configuration Profile| No |
 |Availability|16.45 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -238,6 +274,7 @@ Prevent users from applying S/MIME option to email messages.
 |Key|DisableSMIMECompose|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
@@ -253,6 +290,7 @@ Set default location for weather in calendar view.
 |Key|DefaultWeatherLocation  |
 |Data Type|String  |
 |Possible values| *Various (example: “Paris, France”)* |
+|Requires Configuration Profile| No |
 |Availability|16.18 |
 |Comments| Use the format returned by the weather location search within Outlook. |
 
@@ -266,6 +304,7 @@ Prevent users from choosing **Update Location Automatically** for weather locati
 |Key| Weather_update_automatically |
 |Data Type|Boolean |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.19 |
 
 ## Other settings
@@ -280,6 +319,7 @@ Prevent users from viewing local **On My Computer** folders in the sidebar.
 |Key| HideFoldersOnMyComputerRootInFolderList|
 |Data Type|Boolean |
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability| 16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **General** > **Sidebar**. |
 
@@ -293,6 +333,7 @@ Set when pictures are automatically downloaded from the internet for email.
 |Key|AutomaticallyDownloadExternalContent |
 |Data Type|Integer   |
 |Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
+|Requires Configuration Profile| No |
 |Availability|16.17 |
 |Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
 
@@ -306,8 +347,8 @@ Prevent users from being able to create, edit, and add client-side signatures.
 |Key|DisableSignatures  |
 |Data Type| Boolean|
 |Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
 |Availability|16.18 |
-|Comments| Key must be set to true and forced. |
 
 ### Specify calendar first day of week 
 
@@ -319,6 +360,7 @@ Set the first day of week in calendar view.
 |Key| CalendarFirstDayOfWeek|
 |Data Type| Integer |
 |Possible values| 1 = Sunday (default) <br/> 2 = Monday  <br/> 3 = Tuesday <br/> 4 = Wednesday  <br/> 5 = Thursday <br/> 6 = Friday   <br/> 7 = Saturday  |
+|Requires Configuration Profile| No |
 |Availability|16.19 |
 
 ### Enable new Outlook
@@ -331,6 +373,7 @@ Set the availability and default position of the [New Outlook](https://support.m
 |Key| EnableNewOutlook|
 |Data Type| Integer |
 |Possible values| 0 = Switch hidden <br/> 1 = Switch displayed, default off  <br/> 2 = Switch displayed, default on (default) <br/> 3 = New Outlook enabled with switch hidden |
+|Requires Configuration Profile| No |
 |Availability|16.38 |
 
 ### Disable Junk settings
@@ -343,9 +386,23 @@ Prevent users from applying Junk options to emails.
 |Key|DisableJunkOptionsPrefKey|
 |Data Type|Boolean  |
 |Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
 |Availability|16.55 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
+### Disable Pride theme
+
+Prevent users from applying Pride themes to Outlook.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|DisablePrideTheming|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
+|Availability|16.73 |
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
 ## Related articles
 

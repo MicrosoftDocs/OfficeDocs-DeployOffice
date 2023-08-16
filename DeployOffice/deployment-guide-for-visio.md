@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy subscription and volume licensed versions of Visio to users in their organization."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Deployment guide for Visio

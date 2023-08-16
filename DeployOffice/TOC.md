@@ -1,7 +1,7 @@
 # Deployment guide for Microsoft 365 Apps
 
 ## [Deployment guide](deployment-guide-microsoft-365-apps.md)
-## [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)
+## [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
 
 ## Get started
 ### [What's new](whats-new.md)
@@ -14,16 +14,16 @@
 ### [Plan your enterprise deployment](plan-microsoft-365-apps.md)
 ### [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
 
-## Upgrade
+## Deploy
 ### [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
 ### [Deploy from a local source](deploy-microsoft-365-apps-local-source.md)
 ### [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)
 
 ## Manage
-### [Overview of update channels](overview-update-channels.md)
-### [Choose how to deliver updates](/fieldnotes/choose-how-to-deliver-updates.md)
-### [Manage updates with Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md)
-### [Change the update channel](change-update-channels.md)
+### [Overview of update channels](updates/overview-update-channels.md)
+### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
+### [Manage updates with Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
+### [Change the update channel](updates/change-update-channels.md)
 ### [Delivery Optimization](delivery-optimization.md)
 ### [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
 ### [Release notes](/officeupdates/release-notes-microsoft365-apps)
@@ -50,10 +50,12 @@
 
 ### Connected experiences
 #### [Connected experiences](privacy/connected-experiences.md?toc=/deployoffice/toc.json)
+#### [Connected experiences and your content](privacy/connected-experiences-content.md?toc=/deployoffice/toc.json)
 #### [Optional connected experiences](privacy/optional-connected-experiences.md?toc=/deployoffice/toc.json)
 #### [Required service data](privacy/required-service-data.md?toc=/deployoffice/toc.json)
 
 ### [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
+### [In-product recommendations in Office](privacy/in-product-recommendations.md?toc=/deployoffice/toc.json)
 
 ## Best practices from the field
 ### [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
@@ -95,13 +97,15 @@
 ### [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ### [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
-## End of support resources
-
-### [Windows 7 and Microsoft 365 Apps](endofsupport/windows-7-support.md)
-### [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+## End of support
+### [End of support resources](endofsupport/resources.md)
 ### [Connectivity to Microsoft 365 services](endofsupport/microsoft-365-services-connectivity.md)
-### [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+### [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
+### [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md)
+### [Windows and Office support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
 
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 
 ## [Microsoft 365 Insider Program for Business](insider/index.yml)
+
+## [Videos](videos.md)

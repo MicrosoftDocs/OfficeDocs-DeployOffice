@@ -4,17 +4,13 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
+ms.collection: Tier1
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
-ms.date: 09/17/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of the Microsoft 365 Apps admin center

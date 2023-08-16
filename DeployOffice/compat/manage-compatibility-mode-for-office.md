@@ -4,23 +4,20 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.service: o365-proplus-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: Tier2
 description: "Provides an overview of compatibility mode in Office and how to set the default behavior for Word."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Manage compatibility mode for Office
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
-
+***Applies to:*** *Office 2019, Office 2016*
 
 In Office, compatibility mode is used automatically to open Word, Excel, and PowerPoint documents that were created in earlier versions of these applications. Compatibility mode ensures that no new or improved features in Office are available while users work with a document so that people who use earlier versions of Office will have full editing capabilities. Compatibility mode also preserves the layout of the document.
   
- 
 ## How Office uses compatibility mode
 
  Word, Excel, and PowerPoint use compatibility mode to open binary Office documents that were created in Office 2003 or earlier versions of Office. Word also uses compatibility mode to open OpenXML documents that were created in Word 2007 and Word 2010. 

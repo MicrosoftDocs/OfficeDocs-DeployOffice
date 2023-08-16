@@ -4,17 +4,12 @@ author: manoth-msft
 ms.author: manoth
 manager: dougeby
 audience: ITPro 
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: Tier3
 description: "Field best practices: Switch to Monthly Enterprise Channel with Configuration Manager"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.date: 09/17/2020
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Switch to Monthly Enterprise Channel with Configuration Manager
@@ -22,7 +17,7 @@ ms.date: 09/17/2020
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
 
-The [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../change-update-channels.md) in several ways. This article focuses on using Microsoft Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../manage-microsoft-365-apps-updates-configuration-manager.md).
+The [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) for Microsoft 365 Apps offers organizations a new option to balance monthly feature adoption with a longer support lifetime and faster quality update adoption. This article walks you through the steps to move all or some of your devices from their current update channel to Monthly Enterprise Channel. You can [perform a channel change](../updates/change-update-channels.md) in several ways. This article focuses on using Microsoft Configuration Manager. The following steps assume that you use it for both managing the device and deploying [Microsoft 365 Apps client updates](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 The article shows a common approach to move devices from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. The admin has to perform three actions:
 

@@ -4,15 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: overview
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- Office2019
+ms.collection: Tier2
 description: "Provides IT admins with an overview of deploying Office 2019."
-ms.date: 09/20/2018
+ms.date: 03/01/2023
 ---
 
 # Overview of Office 2019 (for IT Pros)

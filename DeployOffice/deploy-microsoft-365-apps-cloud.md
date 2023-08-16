@@ -1,20 +1,16 @@
 ---
 title: "Deploy Microsoft 365 Apps from the cloud"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Deploy Microsoft 365 Apps from the cloud
@@ -23,7 +19,7 @@ Follow the steps in this article to deploy Microsoft 365 Apps to client computer
 
 ## Before you begin
 
-This article is intended for administrators in managed environments where the account used to run the ODT has admin privileges on the client device. For enterprise environments we recommend using [Microsoft Intune](/mem/intune/apps/apps-add-office365) to deploy Microsoft 365 Apps from the cloud. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation](/mem/intune/apps/apps-add-office365) to learn more about deploying the Microsoft 365 Apps this way.
+This article is intended for administrators in managed environments where the account used to run the ODT has admin privileges on the client device. To reduce the complexity of deploying and managing the Microsoft 365 Apps, we recommend using Microsoft Intune. Check out [this video](https://youtu.be/fA8lcnRXmkI) and the [Intune documentation on Microsoft 365 Apps](/mem/intune/apps/apps-add-office365) to learn more.
 
 If you haven't already, complete the [assessment](assess-microsoft-365-apps.md) and [planning](plan-microsoft-365-apps.md) phases for your Microsoft 365 Apps deployment. 
 
@@ -34,7 +30,7 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 The steps in this article are based on the following best practices:
 
 - **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [servicing profile](./admincenter/servicing-profile.md).
-- **Lead with Current Channel**: Deploy [Current Channel](overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
+- **Lead with Current Channel**: Deploy [Current Channel](updates/overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
 You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
@@ -101,11 +97,11 @@ The steps in this article cover the standard best practice recommendations from 
 
 ### Build and deploy multiple packages to multiple deployment groups
 
-If you want to deploy both the 32-bit and the 64-bit version in your environment, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your source files](plan-microsoft-365-apps.md#step-4---define-your-source-files). 
+If you want to deploy both the 32-bit and the 64-bit version in your environment, you can create additional installation packages. (Two different architectures can't be included in the same package.) For more information, see [Define your installation packages](plan-microsoft-365-apps.md#step-4---define-your-installation-packages). 
 
 ### Use different update channels
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
 
 In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices that should only receive one update per month.
 

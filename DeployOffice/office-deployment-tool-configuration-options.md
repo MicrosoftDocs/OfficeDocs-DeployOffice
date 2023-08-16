@@ -1,19 +1,16 @@
 ---
 title: Configuration options for the Office Deployment Tool
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 04/20/2020
+ms.date: 03/16/2023
 ---
 
 # Configuration options for the Office Deployment Tool
@@ -53,12 +50,12 @@ This configuration file includes the most-commonly used elements and attributes,
 
 |**Value**|**Description**|
 |:-----|:-----|
-|Add SourcePath="\\\Server\Share"  <br/> |Office will be downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
+|Add SourcePath="\\\Server\Share"  <br/> |Office is downloaded to "\\\server\share" on your network and deployed using installation files at that location.  <br/> |
 |Add OfficeClientEdition="64"  <br/> |Downloads and installs the 64-bit edition of Office  <br/> |
-|Add Channel="MonthlyEnterprise"  <br/> |Office will be installed using Monthly Enterprise Channel.  <br/> |
+|Add Channel="MonthlyEnterprise"  <br/> |Office is installed using Monthly Enterprise Channel.  <br/> |
 |Product ID="O365ProPlusRetail"  <br/> |Downloads and installs Microsoft 365 Apps for enterprise.  <br/> |
 |Language ID="en-us"  <br/> Language ID="ja-jp"  <br/> |Downloads and installs English and Japanese versions of Office.  <br/> |
-|Updates Enabled="TRUE"<br/> |Office will check for updates.  <br/> |
+|Updates Enabled="TRUE"<br/> |Office checks for updates.  <br/> |
 |Updates UpdatePath="\\\Server\Share" <br/> |Office checks for updates at "\\server\share" on your network.  <br/> |
 |Display Level="None" AcceptEULA="TRUE"  <br/> |When installing Office, no user interface is displayed.  <br/> |
 
@@ -91,9 +88,9 @@ Defines the products and languages to download or install
 
 Optional.
 
-Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT will look for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
+Defines the location of the Office installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT looks for installation files in the same folder as the tool, and then use the Office Content Delivery Network (CDN). If not included and the ODT is run in download mode, the Office installation files are downloaded to the same folder as the tool. 
 
-When you download Office to a folder that already contains that version of Office, the ODT will conserve your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack will be downloaded.
+When you download Office to a folder that already contains that version of Office, the ODT conserves your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Office in English and German to a folder that already contains Office in English, only the German language pack is downloaded.
 
 Example values:
 
@@ -106,7 +103,7 @@ The SourcePath value shouldn't include the /Office part or the name of the folde
 
 Optional. Defaults to the latest version available if not specified.
 
-When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel will be used, which might not match the specified version.
+When you use the Version attribute, we recommend including the Channel attribute as well. If you don't include the Channel attribute, the default channel is used, which might not match the specified version.
 
 If Microsoft 365 Apps is already installed on a device, you can use Version="MatchInstalled" to install the same version of Office, even if a newer version is available. This setting can make it easier to add language packs or Visio and Project without updating Office to a newer version. 
 
@@ -120,7 +117,7 @@ Example values:
 
 Optional.
 
-Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office isn't installed on the device and OfficeClientEdition isn't specified, the ODT will default to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT will match the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation will fail, since mixed architectures aren't supported. 
+Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office isn't installed on the device and OfficeClientEdition isn't specified, the ODT defaults to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
 
 Allowed values:
 
@@ -131,11 +128,11 @@ Allowed values:
 
 Optional.
 
-Defines which channel to use for installing Office. If Office isn't installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute isn't specified, the ODT will match the channel of the existing installation.
+Defines which channel to use for installing Office. If Office isn't installed on the device, the default setting for the Channel attribute is **Current**. If Office is installed on the device and the channel attribute isn't specified, the ODT matches the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](change-update-channels.md).
+This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such a setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](updates/change-update-channels.md).
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).  
 
 Allowed values: 
 
@@ -159,7 +156,7 @@ If you're deploying Office Professional Plus 2019 or Office Standard 2019, which
 
 Optional. Defaults to the CDN if not specified.
 
-Defines where the installation files are downloaded from when running ODT in download mode. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. Note that you must specify a version when using DownloadPath, as shown in the example.
+Defines where the installation files are downloaded from when running ODT in download mode. Most commonly used to distribute specific languages and products for Office from a central location on your network to another location. You must specify a version when using DownloadPath, as shown in the example.
 
 Example values: 
 
@@ -183,7 +180,7 @@ Optional. Defaults to False if not specified.
 
 To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
 
-When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT will use source files from the Office CDN.
+When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT uses source files from the Office CDN.
 
 Allowed values: 
 
@@ -208,7 +205,7 @@ Allowed values:
 
 Optional. Defaults to False if not specified.
 
-If set to TRUE, then your existing installation of Microsoft 365 Apps will be changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this to change a 32-bit installation of Microsoft 365 Apps to a 64-bit installation.
+If set to TRUE, then your existing installation of Microsoft 365 Apps is changed to the architecture (sometimes referred to as the bitness) that is specified in the [OfficeClientEdition attribute](#officeclientedition-attribute-part-of-add-element). For example, you can use this attribute to change a 32-bit installation of Microsoft 365 Apps to a 64-bit installation.
 
 For more information about using MigrateArch, see [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](change-bitness.md).
 
@@ -216,9 +213,9 @@ For more information about using MigrateArch, see [Change a Microsoft 365 Apps i
 
 Optional. Defaults to False if not specified.
 
-If set to True, a COM object gets registered which is required for allowing update management solutions (e.g. Microsoft Configuration Manager) to manage  Office updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
+If set to True, a COM object gets registered which is required for allowing update management solutions (for example, Microsoft Configuration Manager) to manage  Office updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
-For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
+For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 Allowed values: 
 
@@ -277,18 +274,21 @@ Optional.
 
 Allows you to control the installation of an Office product, as specified by the [ID attribute](#id-attribute-part-of-product-element), based on whether a particular MSI-based Office product is already installed on the device. For example, if an MSI-based version of Project Professional is already installed on the device, then install Project Online Desktop Client.
 
-You can specify any Office product that was installed by Windows Installer (MSI), but MSICondition is most commonly used for Project or Visio installations. The value that you specify for the MSICondition attribute can be either a volume licensed or a retail version of the product, as long as that version of the product was installed by using MSI.
+You can specify any Office product installed by Windows Installer (MSI), but MSICondition is most commonly used for Project or Visio installations. The value that you specify for the MSICondition attribute can be either a volume licensed or a retail version of the product, as long as that version of the product was installed by using MSI.
 
-MSICondition will recognize 2007, 2010, 2013, and 2016 versions of the Office product that you specify. But, you can't specify a particular version. For example, you can't have MSICondition look specifically for Visio Standard 2013. MSICondition will look for all MSI-based installations of Visio Standard, including Visio Standard 2007, Visio Standard 2010, Visio Standard 2013, and Visio Standard 2016.
+MSICondition recognizes 2007, 2010, 2013, and 2016 versions of the Office product that you specify. But, you can't specify a particular version. For example, you can't have MSICondition look specifically for Visio Standard 2013. MSICondition looks for all MSI-based installations of Visio Standard, including Visio Standard 2007, Visio Standard 2010, Visio Standard 2013, and Visio Standard 2016.
 
 The value that you specify for the MSICondition attribute is the Setup ID that is found in the Setup.xml file in the *{product}*.WW folder of the installation files for your existing version of the Office product. For example, the Setup.xml file for Visio Professional 2016 is found in the VisPro.WW folder. You can specify multiple types of an Office product, separated by a comma. For example, you can specify "PrjStd,PrjStdR,PrjPro,PrjProR" to look for installations of Project Standard or Project Professional, either volume licensed or retail.
 
+
 > [!NOTE]
-> - We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+> We recommend that you remove the existing MSI-based Office products as part of installing the products specified in your XML file. To remove existing MSI-based products, use the [RemoveMSI element](#removemsi-element).
+>
+> You can also watch a video on [how to use MSICondition in combination with RemoveMSI](https://youtu.be/7zHi6MRveRc) to simplify your upgrade.
 
 ### Example of MSICondition attribute
 
-In the following example, Project Online Desktop Client will be installed on the device only if an MSI-based version of Project Standard is already installed on the device. Also, Project Standard will be removed from the device as part of the installation of Project Online Desktop Client.
+In the following example, Project Online Desktop Client is installed on the device only if an MSI-based version of Project Standard is already installed on the device. Also, Project Standard is removed from the device as part of the installation of Project Online Desktop Client.
 
 ```xml
 <Configuration>
@@ -341,7 +341,13 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-For a list of all languages, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
+Be sure the languages that you specify are supported by the product you're installing. Otherwise your installation will fail.
+
+For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
+
+- For a list of languages supported by Microsoft 365 Apps, see [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
+- For a list of languages supported by Visio, see [Display languages supported in the Visio desktop app](https://support.microsoft.com/office/a921983e-fd5d-45ef-8af1-cedf70c53d75).
+- Project supports the same languages that Visio does.
 
 For more information about MatchPreviousMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md).
 
@@ -364,9 +370,9 @@ Example values:
 
 Optional.
 
-When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All". ODT will then install the new product with the same set of languages as the one specified in TargetProduct.
+When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All". ODT then installs the new product with the same set of languages as the one specified in TargetProduct.
 
-If there's no TargetProduct specified with MatchInstalled, the ODT will attempt to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you're using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT will attempt to match the already installed languages for this product.
+If there's no TargetProduct specified with MatchInstalled, the ODT attempts to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you're using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT attempts to match the already installed languages for this product.
 
 Example values:
 
@@ -444,6 +450,7 @@ Defines the ID of the product that shouldn't be installed.
 Allowed values:
 
 - ID="Access"
+- ID="Bing"
 - ID="Excel"
 - ID="Groove"
 - ID="Lync"
@@ -455,9 +462,10 @@ Allowed values:
 - ID="Teams"
 - ID="Word"
 
-For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
-
-For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+> [!NOTE]
+> - For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
+> - For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
+> - "Bing" refers to the background service for Microsoft Search in Bing. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](microsoft-search-bing.md).
 
 ## Property element
 
@@ -544,7 +552,7 @@ Allowed values:
 
 Optional. Default value is **0** if not specified.
 
-Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverrideDirectory. This is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use this property with SCLCacheOverrideDirectory. This property is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
 
 Allowed values:
 
@@ -555,7 +563,7 @@ Allowed values:
 
 Optional.
 
-Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use in conjunction with SCLCacheOverride. This is only needed if you choose to move the licensing token from its default location.
+Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use the property with SCLCacheOverride. This property is only needed if you choose to move the licensing token from its default location.
 
 For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
 
@@ -580,7 +588,7 @@ Allowed values:
 
 Optional. The default value is **True** if not specified.
 
-Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and Windows 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons won't be pinned even if this property is set to **True**.
+Defines whether shortcut icons for Office products are added to the Windows taskbar in Windows 7 and Windows 8.1. If you install Office using a system account, which is common when deploying with Microsoft Configuration Manager, the icons aren't pinned even if this property is set to **True**.
 
 Allowed values:
 
@@ -612,7 +620,7 @@ For more information, see  [Overview of the Office Deployment Tool](overview-off
 
 Optional. The default value is **FALSE** if not specified.
 
-If set to **TRUE**, all Microsoft 365 Apps products and languages will be removed, including Project and Visio.
+If set to **TRUE**, all Microsoft 365 Apps products and languages are removed, including Project and Visio.
 
 Allowed values:
 
@@ -635,8 +643,8 @@ Defines how Office is updated after it's installed.
 
 Optional. The default value is **TRUE** if not specified.
 
-If set to **TRUE**, Office will check for updates.
-If set to **FALSE**, Office won't check for updates, but the user can check for updates by going to **File** > **Account** > **Update Options** > **Update Now**.
+If set to **TRUE**, Office checks for updates.
+If set to **FALSE**, Office doesn't check for updates, but the user can check for updates by going to **File** > **Account** > **Update Options** > **Update Now**.
 
 Allowed values:
 
@@ -677,7 +685,7 @@ Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
-Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This gives users the opportunity to save the Office documents that they're working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
+Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This notification gives users the opportunity to save the Office documents that they're working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up to date, you must change the deadline every time a new update for Office is available.
 
@@ -693,7 +701,7 @@ Optional. The default is **Current**.
 
 Defines which channel to use for updating Office after it's installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
@@ -727,7 +735,7 @@ We recommend that you uninstall any previous versions of Office before installin
 
 Optional.
 
-If an ID is specified, that Windows Installer (MSI) product won't be uninstalled from the computer.
+If an ID is specified, that Windows Installer (MSI) product isn't uninstalled from the computer.
 
 Example values:
 - IgnoreProduct ID="VisPro"

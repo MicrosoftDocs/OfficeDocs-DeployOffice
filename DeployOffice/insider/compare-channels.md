@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Microsoft_365_Insider
+ms.collection: Tier1
 recommendations: false
 description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Compare Microsoft 365 Insider channels
@@ -39,7 +38,7 @@ The following table compares the channels and provides scenarios for business us
 |*Support duration* |**Not supported** <br/><br/>Should be used only in test environments. |Supported until the next version is released. <br/><br/>For example, Version 2204 is supported until Version 2205 is released.|
 
 > [!TIP]
-> For information about other channels that are available for Windows devices, see [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md).
+> For information about other channels that are available for Windows devices, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 ## Related articles
 

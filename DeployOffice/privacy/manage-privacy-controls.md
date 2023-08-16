@@ -7,15 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
-description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) by using policy settings."
+ms.collection: Tier1
+description: "Provides Office admins with information about how to manage privacy controls in Microsoft 365 Apps for enterprise by using policy settings."
 hideEdit: true
-ms.date: 04/16/2019
+ms.date: 03/27/2023
 ---
 
 # Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise
@@ -23,7 +18,7 @@ ms.date: 04/16/2019
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus).
+Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise.
 
 Starting with Version 1904 of Microsoft 365 Apps for enterprise, there are new policy settings that will allow you to control settings related to the following:
 
@@ -50,7 +45,7 @@ These policy settings can be implemented by using either Group Policy or [Cloud 
 
 If you’re using the Group Policy Management tool, all these policy settings are located under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Privacy\\Trust Center.
 
-These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business (previously named Office 365 Business).
+These new policy settings also apply to the desktop versions of Project and Visio that come with some subscription plans, such as Project Plan 5 or Visio Plan 2. They also apply to Microsoft 365 Apps for business.
 
 There are also some existing policy settings that will no longer apply to Microsoft 365 Apps for enterprise, and there are some user interface (UI) changes for privacy settings that you should be aware of because your users might notice those changes and ask about them.
 
@@ -66,7 +61,7 @@ If you enable this policy setting, you must choose which level of diagnostic dat
 
 - If you choose ***Required***, the minimum data necessary to help keep Office secure, up-to-date, and performing as expected on the device it’s installed on is sent to Microsoft.
 
-- If you choose ***Optional***, additional data that helps make product improvements and provides enhanced information to help detect, diagnose, and remediate issues is sent to Microsoft. If you choose to send optional diagnostic data, required diagnostic data is also included.
+- If you choose ***Optional***, additional data that helps make product improvements and provides enhanced information to help detect, diagnose, and remediate issues is sent to Microsoft. This data may also be used in aggregate to train and improve experiences powered by machine learning, such as recommended actions, text predictions, and contextual help. If you choose to send optional diagnostic data, required diagnostic data is also included.
 
 - If you choose ***Neither***, no diagnostic data about Office client software running on the user’s device is sent to Microsoft. This option, however, significantly limits Microsoft’s ability to detect, diagnose, and remediate problems that your users may encounter when using Office.
 
@@ -117,7 +112,7 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 ### Policy setting for optional connected experiences
 
-In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the LinkedIn features of the Resume Assistant in Word or the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third-party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
@@ -171,9 +166,7 @@ As you probably already know, there are some existing policy settings that allow
 
 - *Turn off QuickStarter*, under User Configuration\\Policies\\Administrative Templates\\Microsoft PowerPoint 2016\\PowerPoint Options\\General
 
-- *Allow LinkedIn Resume Assistant feature*, under User Configuration\\Policies\\Administrative Templates\\Microsoft Word 2016\\Word Options\\General
-
- You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting. For example, if you enable the *Allow LinkedIn Resume Assistant feature* policy setting, but disable the *Allow the use of connected experiences in Office* policy setting, the LinkedIn Resume Assistant won’t be available to your users.
+You can still use these existing policy settings if you want to turn off individual connected experiences. But keep in mind that if you use one of the new policy settings, that new policy setting might turn off a connected experience that you turned on by using a different policy setting.
 
 In general, if one policy setting is configured to turn on a specific connected experience while at the same time another policy setting is configured to turn off that type of connected experience, then that specific connected experience is turned off for your users.
 

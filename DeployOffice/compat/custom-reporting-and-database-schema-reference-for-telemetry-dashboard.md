@@ -4,21 +4,20 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: Tier2
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
 The built-in worksheets in Office Telemetry Dashboard display lots of useful data, but sometimes you want more control over how the data is displayed. To do this, you can use the custom reporting feature in Office Telemetry Dashboard. This feature uses PivotTable reports to help give you a deeper view into how Office is being used in your organization. In this article, you can learn how to create custom reports, and you can find information about the database tables and fields that are used in custom reports.
@@ -86,12 +85,11 @@ To create a custom report, you have to first start Office Telemetry Dashboard. T
 |Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
 > - Support for Windows 8.1 ended on January 10, 2023.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020.
    
 ### To create a custom report
 
@@ -354,7 +352,7 @@ The following table describes the fields in the System_details table.
 |Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
 |Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
 |Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Microsoft 365 Apps for enterprise, Office 2019, or Office 2016 version details, if it is installed.  <br/> |
+|Office 16  <br/> |String  <br/> |Shows Office 2019 or Office 2016 version details, if it is installed.  <br/> |
    
 <a name="default_relationships"> </a>
 
@@ -378,4 +376,4 @@ The following illustrations show the relationships between tables in the databas
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md)

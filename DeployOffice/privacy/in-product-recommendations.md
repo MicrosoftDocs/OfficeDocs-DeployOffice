@@ -7,13 +7,10 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: Tier1
 description: "Provides information about in-product recommendations that might appear while using Office."
 hideEdit: true
-ms.date: 10/05/2020
+ms.date: 03/01/2023
 ---
 
 # In-product recommendations in Office

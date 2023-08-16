@@ -1,19 +1,16 @@
 ---
 title: "Overview of the Office Deployment Tool"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "The Office Deployment Tool (ODT) is a command-line tool that you can use to download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over an Office installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of the Office Deployment Tool
@@ -160,7 +157,7 @@ To change where your client computers receive their updates, run the ODT in conf
 
  `<Updates Enabled="TRUE" UpdatePath="\\server\updates" />`
 
-This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Microsoft 365 Apps](choose-how-manage-updates-microsoft-365-apps.md).
+This article does not cover all the issues related to managing updates for Office in your organization. For more information on that scenario, including using Group Policy, see [Choose how to manage updates to Microsoft 365 Apps](updates/choose-how-manage-updates-microsoft-365-apps.md).
 
 <a name="BKMK_excludeorremove"> </a>
 

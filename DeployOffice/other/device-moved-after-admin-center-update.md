@@ -4,14 +4,15 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about updates to the Microsoft 365 update channels in the Microsoft 365 admin center."
-ms.date: 01/18/2023
+ms.date: 01/24/2023
 ---
 
 # Updates to the Microsoft 365 admin center may cause your devices to change update channels 
@@ -53,9 +54,9 @@ For Configuration Manager to manage updates for Microsoft 365 Apps, the Office C
 
 There are several ways to enable the Office COM object, such as using client policy in Configuration Manager, setting it up through Group Policy, or using the Office Deployment Tool. If you use multiple methods, the configuration set in Group Policy will take precedence.
 
-- [Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-1-use-client-policy-in-configuration-manager-to-enable-updates-from-configuration-manager)
-- [Method 2: Use Group Policy to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-2-use-group-policy-to-enable-updates-from-configuration-manager)
-- [Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager](../manage-microsoft-365-apps-updates-configuration-manager.md#method-3-use-the-office-deployment-tool-to-enable-updates-from-configuration-manager)
+- [Method 1: Use client policy in Configuration Manager to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-1-use-client-policy-in-configuration-manager-to-enable-updates-from-configuration-manager)
+- [Method 2: Use Group Policy to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-2-use-group-policy-to-enable-updates-from-configuration-manager)
+- [Method 3: Use the Office Deployment Tool to enable updates from Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md#method-3-use-the-office-deployment-tool-to-enable-updates-from-configuration-manager)
 
 ### Deploy Microsoft 365 Apps with Microsoft Intune
 
@@ -65,7 +66,7 @@ For information on deploying Microsoft 365 Apps with Microsoft Intune, see [Add 
 
 ### Set an update policy
 
-You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/mem/intune/configuration/administrative-templates-windows).
+You can keep your devices on their current update channel by setting update-related policies through [Group Policy](../updates/change-update-channels.md#change-the-update-channel-with-group-policy) or [Microsoft Intune](/mem/intune/configuration/administrative-templates-windows).
 These policies include:
 
 - Update Channel: specify the update channel, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel.

@@ -4,13 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_VL
+ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 03/20/2018
+ms.date: 04/28/2023
 ---
 
 # Tools to manage volume activation of Office
@@ -25,6 +24,9 @@ The Office Software Protection Platform script (ospp.vbs), the Software License 
 ## The ospp.vbs script
 
 The Office Software Protection Platform script (ospp.vbs) enables you to configure volume licensed versions of Office products, including Project and Visio. The ospp.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.
+
+> [!NOTE]
+> The ospp.vbs script doesn't work for Microsoft 365 Apps or subscription versions of Project and Visio. Instead, you can use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](../licensing-activation/vnextdiag.md).
   
 Running ospp.vbs requires the cscript.exe script engine. To see the Help file, type the following command, and then press ENTER:
 
@@ -134,13 +136,13 @@ cscript ospp.vbs /ddescr:0xC004F042
 
 #### To turn on or off KMS host caching on the KMS client
 
-1. On the KMS client computer, to turn caching on, type the following command, and then press ENTER:
+1. On the KMS client computer, to turn on caching, type the following command, and then press ENTER:
 
 ```console
 cscript ospp.vbs /cachst:TRUE
 ```
 
-2. On the KMS client computer, to turn caching off, type the following command, and then press ENTER:
+2. On the KMS client computer, to turn off caching, type the following command, and then press ENTER:
 
 ```console
 cscript ospp.vbs /cachst:FALSE
@@ -239,7 +241,7 @@ The following table shows the command options for activating an AD DS forest by 
 
 ## Volume Activation Management Tool (VAMT)
 
-Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information, see [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool).
+Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information, see [Volume Activation Management Tool (VAMT) technical reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 
 > [!NOTE]
 > Office LTSC 2021 and Office 2019 require at least VAMT 3.1.

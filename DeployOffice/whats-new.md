@@ -4,21 +4,28 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
-ms.date: 01/09/2023
+ms.date: 03/30/2023
 ---
 
 # What's new for deploying Microsoft 365 Apps
 
 This article lists new features, tools, and articles for IT Pros who deploy Microsoft 365 Apps in the enterprise. For details on Microsoft 365 announcements and plans, see the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+
+## March 2023
+
+### OneNote to start blocking embedded files with dangerous extensions
+
+Starting with Version 2304, OneNote will block users from directly opening an embedded file with a dangerous extension. For more information, see [OneNote blocks embedded files that have dangerous extensions](security/onenote-extension-block.md).
+
+### Microsoft 365 Apps videos from the experts
+
+The Microsoft 365 Apps Deployment Insiders team at Microsoft is creating videos to provide guidance on deploying Microsoft 365 Apps. For a list of the videos, see [Videos about how to deploy, update, and manage Microsoft 365 Apps](videos.md).
 
 ## January 2023
 
@@ -228,7 +235,7 @@ A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise
 
 You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
 
 ## April 2020
 
@@ -247,7 +254,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
 
 ## October 2019
 

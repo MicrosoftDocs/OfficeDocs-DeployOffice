@@ -4,16 +4,12 @@ author: bobclements-msft
 ms.author: roclemen
 manager: dougeby
 audience: ITPro 
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: Tier3
 description: "Field best practices: Network guidance for deploying and servicing Microsoft 365 Apps"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-ms.date: 01/26/2021
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Network guidance for deploying and servicing Microsoft 365 Apps
@@ -52,7 +48,7 @@ Using these values will help achieve the following benefits:
 Once the app is assigned to your enrolled devices, install requests will pull all required content from the Office CDN. If your users are on VPN, make sure you have split tunneling enabled.
 
 ### Managing Microsoft 365 Apps with Servicing Profiles
-After deploying the Microsoft 365 Apps to your organization, you can leverage Servicing Profiles to manage monthly updates. [Servicing Profiles](../admincenter/servicing-profile.md) is available today in public preview as a new cloud-based management solution for Microsoft 365 Apps. With this technology you can leverage the data insights from [Apps Admin Center](https://config.office.com/) to monitor [inventory](../admincenter/inventory.md), [health](../admincenter/microsoft-365-apps-health.md), and [update compliance](../admincenter/security-update-status.md). From there you can enable Servicing Profiles to start managing all Microsoft 365 Apps signed into your tenant, regardless of the device being managed or unmanaged. Devices enabled for servicing profiles will be configured to receive updates using the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview).
+After deploying the Microsoft 365 Apps to your organization, you can leverage Servicing Profiles to manage monthly updates. [Servicing Profiles](../admincenter/servicing-profile.md) is available today in public preview as a new cloud-based management solution for Microsoft 365 Apps. With this technology you can leverage the data insights from [Apps Admin Center](https://config.office.com/) to monitor [inventory](../admincenter/inventory.md), [health](../admincenter/microsoft-365-apps-health.md), and [update compliance](../admincenter/security-update-status.md). From there you can enable Servicing Profiles to start managing all Microsoft 365 Apps signed into your tenant, regardless of the device being managed or unmanaged. Devices enabled for servicing profiles will be configured to receive updates using the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview).
 
 ### Cloud Management Gateway
 If you have Microsoft Configuration Manager in your environment, a [Cloud Management Gateway (CMG)](/mem/configmgr/core/clients/manage/cmg/overview) is recommended for supporting remote devices. The CMG is an Azure cloud service that extends the capabilities of Configuration Manager by enabling device management over the internet. With a CMG deployed, managed devices that aren't connected to your corporate network can still receive their Microsoft 365 Apps and updates. For this solution Microsoft recommends the following:
@@ -70,7 +66,7 @@ If your organization is using Intune (or Co-Management), the following technolog
 
 - [Delivery Optimization (DO) for Intune enrolled devices](/mem/intune/configuration/delivery-optimization-windows). DO is a cloud-based peer-to-peer technology introduced with Windows 10. DO supports content for both Windows Update and Microsoft 365 Apps. We recommend implementing DO when devices on the same network are pulling content from the Office CDN (for example, devices on-prem).
 - [Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898) (non- Configuration Manager) is an Azure technology available in private preview, enabling you to configure a local server to act as a DO source. Devices that have DO configured will now utilize your Connected Cache server as another source for retrieving content. This will help reduce the number of direct downloads to the Office CDN. For more information about the Microsoft Connected Cache private preview, see the following article: [Introducing Microsoft Connected Cache: Microsoft’s cloud-managed cache solution](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)
-- [Servicing Profiles](../admincenter/servicing-profile.md) are a cloud-based management technology now available in public preview. With this technology you can leverage the data insights from [Apps Admin Center](https://config.office.com/) to monitor inventory, health, and update compliance. From there you can enable Servicing Profiles to start managing all Microsoft 365 Apps signed into your tenant, regardless of the device being managed or unmanaged. Devices enabled for servicing profiles will be configured to receive updates using the [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview). For management of on-prem devices, DO is going to play an important role in order to offset the number of devices connected to the Office CDN.
+- [Servicing Profiles](../admincenter/servicing-profile.md) are a cloud-based management technology now available in public preview. With this technology you can leverage the data insights from [Apps Admin Center](https://config.office.com/) to monitor inventory, health, and update compliance. From there you can enable Servicing Profiles to start managing all Microsoft 365 Apps signed into your tenant, regardless of the device being managed or unmanaged. Devices enabled for servicing profiles will be configured to receive updates using the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview). For management of on-prem devices, DO is going to play an important role in order to offset the number of devices connected to the Office CDN.
 
 ### Configuration Manager
 If your organization is using Configuration Manager, there are multiple technologies available to help with network optimization. In this section we'll look at the native site technologies, along with modern peer-to-peer capabilities.

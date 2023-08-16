@@ -4,23 +4,22 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.service: o365-proplus-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: Tier2
 description: "Explains how to view the stability of Office documents and solutions and the status of your Office deployments by using Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Monitor Office compatibility and deployments by using Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
- 
+
 After you deploy the components of Office Telemetry Dashboard and the agents have collected data, you can use Office Telemetry Dashboard to investigate stability issues for Office documents and Office solutions. You can also use Office Telemetry Dashboard to see the status of Office deployments. This article helps you navigate the worksheets in Office Telemetry Dashboard, use filters to adjust how data is displayed, and troubleshoot common error messages that are shown in Office Telemetry Dashboard. 
 
 > [!IMPORTANT]
@@ -53,12 +52,11 @@ The way you start Office Telemetry Dashboard depends on the operating system you
 |Windows 8.1  <br/> |On the **Start** screen, right-click the background or swipe in from the top or bottom to display the app bar, select **All apps**, and then select **Telemetry Dashboard for Office 2016**.  <br/> |
 |Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charms and then select **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
 
-For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
 > [!NOTE]
 > - Support for Windows 7 and Windows Server 2008 R2 ended on January 14, 2020.
 > - Support for Windows 8.1 ended on January 10, 2023.
-> - Microsoft 365 Apps for enterprise isn’t supported on Windows Server 2012 or Windows Server 2012 R2, as of January 14, 2020.
 
    
 ### To connect to the database
@@ -79,7 +77,7 @@ To learn more about the worksheets in Office Telemetry Dashboard, visit these re
   
 - This article includes a brief overview of the worksheets and how to use them in [Learn about the Office Telemetry Dashboard worksheets](monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md#worksheets). The rest of this article tells you how to adjust filters, how to determine overall Office stability, and how to investigate unstable documents and solutions.
     
-- You can dig deeper by reading [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Office Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
+- You can dig deeper by reading [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md) which describes every worksheet in Office Telemetry Dashboard in detail. This is helpful if you want more information about the columns and data shown in a worksheet. 
     
 - [Custom reporting and database schema reference for Office Telemetry Dashboard](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md) helps you create custom reports in Office Telemetry Dashboard using a PivotTable report. Custom reports can help you customize how data is displayed for different business purposes. For example, you can view all Warning errors for Excel in a certain business group, create a list of all solutions that use unregistered ActiveX controls, and more. 
     
@@ -87,7 +85,7 @@ To learn more about the worksheets in Office Telemetry Dashboard, visit these re
 
 ## Learn about the Office Telemetry Dashboard worksheets
 
-The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md).
+The following table briefly describes the primary worksheets in Office Telemetry Dashboard. For more detailed information about the worksheets, see [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md).
   
 **Overview of Office Telemetry Dashboard worksheets**
 
@@ -215,11 +213,11 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
 
 ![A screenshot of the Office Telemetry Dashboard COM add-in error message.](../images/ORK_Telem_COMAdd-inNotEnabledErrorMessage.png)
   
-To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. 
+To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016.
   
 ### To enable the Office Telemetry Dashboard COM add-in
 
-1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8.1, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Microsoft 365 Apps for enterprise and Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
+1. Start Office Telemetry Dashboard by choosing **Telemetry Dashboard for Office 2016** in the **All Apps** page in Windows 8.1, or by choosing **Telemetry Dashboard for Office 2016** from the Start menu under **Microsoft Office 2016 Tools** in Windows 10 or Windows 7. For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
     
 2. Select the **Let's get started** button. 
     
@@ -262,5 +260,5 @@ For more information about how to troubleshoot the processor, see [Troubleshooti
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Assess Office compatibility](assess-office-compatibility.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
-- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md)
 

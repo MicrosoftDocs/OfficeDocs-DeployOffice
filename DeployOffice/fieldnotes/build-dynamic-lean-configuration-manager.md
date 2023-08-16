@@ -4,17 +4,12 @@ author: manoth-msft
 ms.author: manoth
 manager: dougeby
 audience: ITPro 
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: Tier3
 description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.date: 09/09/2020
+ms.date: 03/21/2023
 ---
 
 # Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
@@ -37,7 +32,7 @@ For each scenario, you'll find a detailed step-by-step guide as well as some not
 
 Follow these steps to create a dynamic collection that will capture devices that run Office on a specific update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily. We recommend that you set up one collection per update channel that your manage.
 
-Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../overview-update-channels.md#monthly-enterprise-channel-overview). We also have [detailed guidance for switching to Monthly Enterprise Channel](switch-to-monthly-enterprise-channel.md) available.
+Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../updates/change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../updates/overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../updates/overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview). We also have [detailed guidance for switching to Monthly Enterprise Channel](switch-to-monthly-enterprise-channel.md) available.
 
 Here's how to implement these collections:
 
@@ -75,7 +70,7 @@ Repeat these steps for each update channel that you want to be captured in a sep
 
 Follow these steps to create a dynamic collection that will add all devices that have Microsoft 365 Apps for enterprise installed. After the collection is set up, devices will be added and dropped automatically. For example, when you're currently migrating to Microsoft 365 Apps, there's no need for manual maintenance of such a collection anymore.
 
-It's a common practice to use this collection for deploying [Microsoft 365 Apps updates](../manage-microsoft-365-apps-updates-configuration-manager.md) for all channels supported by your organization. This allows each device to fetch the matching update, but ignore (and not download) updates from other channels. This will also cover the scenario that a device is switching channels. In this state, the device is still on the previous channel, but must be able to access the latest update from the targeted channel to finalize transition. Deploying updates to the individual, per-channel collections would break such scenarios. During download, the device will use delta compression, so only required chunks will be downloaded, not the complete update source.
+It's a common practice to use this collection for deploying [Microsoft 365 Apps updates](../updates/manage-microsoft-365-apps-updates-configuration-manager.md) for all channels supported by your organization. This allows each device to fetch the matching update, but ignore (and not download) updates from other channels. This will also cover the scenario that a device is switching channels. In this state, the device is still on the previous channel, but must be able to access the latest update from the targeted channel to finalize transition. Deploying updates to the individual, per-channel collections would break such scenarios. During download, the device will use delta compression, so only required chunks will be downloaded, not the complete update source.
 
 Here's how to implement this collection:
 
@@ -124,7 +119,7 @@ Here's how to implement this collection:
    ```sql
     select SMS_R_System.ResourceId, SMS_R_System.ResourceType, SMS_R_System.Name, SMS_R_System.SMSUniqueIdentifier, SMS_R_System.ResourceDomainORWorkgroup, SMS_R_System.Client from SMS_R_System inner join SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS on SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OFFICE365PROPLUSCONFIGURATIONS.VersionToReport < "16.0.13127.21064"
    ```
-5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you're interested in.
+5.	Adjust the build number to fit your needs. Refer to the [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date) to identify the minimum build you're interested in. The **Update history** page lists builds without the leading "16.0.", ensure to add this to the value you want to use in your query. So it should always be in the format of 16.0.xxxxx.yyyyy.
 
    > [!NOTE]
    > Devices on Semi-Annual Enterprise Channel might have a far lower build number than devices on Current Channel, even when running the latest build. You can exclude devices on Semi-Annual Enterprise Channel by adding the collection holding these devices as an exclusion.

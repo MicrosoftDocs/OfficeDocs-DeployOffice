@@ -4,14 +4,14 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set macro security for Office for Mac by using preferences"
-ms.date: 04/24/2018
+ms.date: 03/01/2023
 ---
 
 # Set preferences for macro security in Office for Mac

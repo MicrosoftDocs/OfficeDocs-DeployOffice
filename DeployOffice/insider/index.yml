@@ -8,11 +8,11 @@ metadata:
   description: This page contains links to content to help Microsoft 365 Apps admins provide Microsoft 365 Insider to users in their organization.
   ms.service: o365-proplus-itpro
   ms.topic: hub-page 
-  ms.collection: Ent_O365
+  ms.collection: Tier1
   ms.custom: intro-hub-or-landing
   author: DHB-MSFT
   ms.author: danbrown
-  ms.date: 04/26/2022 
+  ms.date: 03/15/2023
   ms.localizationpriority: medium
 
 highlightedContent:
@@ -57,7 +57,7 @@ productDirectory:
     - title: What's new
       imageSrc: /office/media/icons/whats-new-megaphone-blue.svg
       links:
-        - url: https://insider.office.com/blog
+        - url: https://insider.microsoft365.com/blog
           text: Blog
         - url: /officeupdates/beta-channel
           text: Release notes for Beta Channel for Windows
@@ -66,25 +66,27 @@ productDirectory:
     - title: Helpful resources
       imageSrc: /office/media/icons/help.svg
       links:
+        - url: https://www.linkedin.com/showcase/microsoft-365-insider
+          text: LinkedIn
         - url: https://twitter.com/msft365insider
           text: Twitter
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
         - url: https://answers.microsoft.com/en-us/officeinsider/forum
           text: Microsoft Support Community          
-        - url: https://insider.office.com/handbook#Provide-feedback
+        - url: https://insider.microsoft365.com/handbook#Provide-feedback
           text: How to provide feedback 
 
     - title: Microsoft 365 Insider for consumers
       imageSrc: /office/media/icons/user-monitor.svg
       links:
-        - url: https://insider.office.com/handbook
+        - url: https://insider.microsoft365.com/handbook
           text: Overview
-        - url: https://insider.office.com/join
+        - url: https://insider.microsoft365.com/join
           text: Join
-        - url: https://insider.office.com/join/iOS
+        - url: https://insider.microsoft365.com/join/iOS
           text: iOS
-        - url: https://insider.office.com/join/Android
+        - url: https://insider.microsoft365.com/join/Android
           text: Android
      
     - title: Other Insider programs at Microsoft

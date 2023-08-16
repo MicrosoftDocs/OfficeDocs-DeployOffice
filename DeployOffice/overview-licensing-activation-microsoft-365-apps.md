@@ -5,14 +5,13 @@ author: nicholasswhite
 manager: dougeby
 ms.reviewer: mattphil
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
-ms.date: 04/20/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps
@@ -20,7 +19,7 @@ ms.date: 04/20/2020
 This article shows how to assign Microsoft 365 Apps licenses to users and how to activate installations of Microsoft 365 Apps.
 
 > [!NOTE]
-> The information in this article also applies to Project Online Desktop Client and Visio Online Plan 2 (previously named Visio Pro for Office 365), which are licensed separately from Microsoft 365 Apps.  
+> The information in this article also applies to Project Online Desktop Client and Visio Online Plan 2, which are licensed separately from Microsoft 365 Apps.  
   
 Before deploying Microsoft 365 Apps to users in your organization, you must first assign licenses to those users. Each license allows a user to install Microsoft 365 Apps on up to five desktops, five tablets, and five mobile devices. Each installation is activated and kept activated automatically by cloud-based services associated with Office 365 (or Microsoft 365). This automatic activation means you don’t have to keep track of product keys and you don’t have to figure out how to use other activation methods such as Key Management Service (KMS) or Multiple Activation Key (MAK). All you have to do is purchase enough licenses, keep your Office 365 (or Microsoft 365) subscription current, and make sure your users can connect to the Office Licensing Service via the internet at least once every 30 days. When single sign-on is enabled, Microsoft 365 Apps detects the user’s credentials and is activated automatically.
 

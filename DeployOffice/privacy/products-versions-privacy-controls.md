@@ -7,13 +7,10 @@ audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: Tier1
 description: "Provides information about which Office products and versions have the most recent privacy controls."
 hideEdit: true
-ms.date: 09/10/2020
+ms.date: 03/22/2023
 ---
 
 # Privacy controls available for Office products
@@ -41,7 +38,7 @@ Our most recent privacy controls are available for the following Office products
 - Retail versions of Visio 2021, Visio 2019, and Visio 2016, all of which are available as a one-time purchase.
 - Volume licensed versions of Office LTSC 2021, Project 2021, and Visio LTSC 2021.
 
-For Windows devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
+For Windows devices, the following table lists the apps and the minimum version of those apps that have our most recent privacy controls.
 
 
 |App |Minimum version  |
@@ -87,7 +84,7 @@ Our most recent privacy controls are available for the following Office products
 - Office LTSC Standard for Mac 2021, which is available as a one-time purchase through a volume licensing agreement.
 - Office 2021 for Mac, which is available as a one-time purchase from a retail store.
 
-For Mac devices, the following table lists the apps and the minimum version of those apps which have our most recent privacy controls.
+For Mac devices, the following table lists the apps and the minimum version of those apps that have our most recent privacy controls.
 
 |App |Minimum version  |
 |---------|---------|
@@ -121,7 +118,8 @@ Our most recent privacy controls are available for the following Office products
 |---------|---------|
 |Excel |2.30 |
 |Lens |2.38 |
-|Office app |2.34|
+|Loop|1.0.0|
+|Microsoft 365 app |2.34|
 |OneDrive  |11.19.11 |
 |OneNote  |16.30 |
 |Outlook  |4.30.0 |
@@ -151,7 +149,8 @@ Our most recent privacy controls are available for the following Office products
 |---------|---------|
 |Excel |16.0.12228.20260 |
 |Lens |16.0.12730.20080 |
-|Office app |16.0.12430.20254|
+|Loop|1.0.0|
+|Microsoft 365 app |16.0.12430.20254|
 |OneDrive  |5.47 |
 |OneNote  |16.0.12228.20004 |
 |Outlook  |4.1.71 |
@@ -177,12 +176,13 @@ To configure these privacy controls for your users that are using Office on Andr
 Our most recent privacy controls are available for the following Office products when using Office from a web browser:
 
 - Excel
+- Loop
 - OneNote
 - PowerPoint
 - Visio
 - Word
 
-There is no minimum version listed for these Office apps because Microsoft manages which version is available.
+There's no minimum version listed for these Office apps because Microsoft manages which version is available.
 
 For Office on the web, the following privacy controls are available:
 

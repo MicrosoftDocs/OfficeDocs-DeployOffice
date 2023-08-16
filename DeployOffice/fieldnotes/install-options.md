@@ -4,17 +4,12 @@ author: manoth-msft
 ms.author: manoth
 manager: dougeby
 audience: ITPro 
-ms.topic: article 
+ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ms.collection: Tier3
 description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise"
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_FieldNotes
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.date: 04/21/2020
+ms.date: 03/01/2023
 ---
 
 # Best practices from the field: Choose how to install Microsoft 365 Apps

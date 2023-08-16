@@ -5,16 +5,13 @@ author: nicholasswhite
 manager: dougeby
 ms.reviewer: mattphil
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Overview of viewer mode for Microsoft 365 Apps."
-ms.date: 03/30/2020
+ms.date: 03/01/2023
 ---
 
 # Overview of viewer mode for Microsoft 365 Apps

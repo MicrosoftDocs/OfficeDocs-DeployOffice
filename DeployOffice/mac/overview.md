@@ -8,11 +8,11 @@ ms.topic: overview
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
-ms.date: 09/16/2021
+ms.date: 03/01/2023
 ---
 
 # Overview of Office for Mac (for admins and IT Pros)

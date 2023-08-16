@@ -1,17 +1,16 @@
 ---
 title: "View software update status for Microsoft 365 Apps installations"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about the Software updates page in the Microsoft 365 admin center."
-ms.date: 06/05/2022
+ms.date: 03/01/2023
 ---
 
 # View software update status for Microsoft 365 Apps installations
@@ -24,7 +23,10 @@ The **Software updates** page has the following tabs to assist you in monitoring
 
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients.
 
-This article contains information about the **Microsoft 365 Apps** tab. For more information about the **Windows** tab, see [Microsoft 365 admin center software updates page](/windows/deployment/update/wufb-reports-admin-center).
+This article contains information about the **Microsoft 365 Apps** tab.
+
+> [!TIP]
+> For more information about the **Windows** tab, see [Microsoft 365 admin center software updates page](/windows/deployment/update/wufb-reports-admin-center).
 
 ## The Microsoft 365 Apps tab
 
@@ -50,7 +52,7 @@ To simplify update management and stay up to date with security updates, we reco
 - Verify that Microsoft 365 Apps is configured to check for updates automatically
 - Configure Microsoft 365 Apps to get updates directly from the internet
 
-If you take these steps, your devices will get updates automatically when new builds of Microsoft 365 Apps are released, including builds with security updates. For more information, see [Keep Office apps up to date with the latest updates](update-basics.md).
+If you take these steps, your devices get updates automatically when new builds of Microsoft 365 Apps are released, including builds with security updates. For more information, see [Keep Office apps up to date with the latest updates](update-basics.md).
 
 ## Devices that are shown on the Microsoft 365 Apps tab
 
@@ -93,4 +95,4 @@ The following information applies to the **Microsoft 365 Apps** tab on the **Sof
 ## Related articles
 
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md)

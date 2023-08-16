@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Guidance for Office admins about the installation and use of Microsoft Edge WebView2 on devices running Microsoft 365 Apps."
-ms.date: 02/10/2021
+ms.date: 03/01/2023
 ---
 
 # Microsoft Edge WebView2 and Microsoft 365 Apps

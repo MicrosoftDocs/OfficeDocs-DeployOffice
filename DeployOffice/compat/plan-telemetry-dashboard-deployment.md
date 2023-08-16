@@ -4,21 +4,20 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.service: o365-proplus-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: Tier2
 description: "Learn about components and sizing, topology, hardware, and bandwidth recommendations for Office Telemetry Dashboard deployments."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Plan a deployment of Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
   
 When you deploy Office Telemetry Dashboard, you must consider several factors. These can include the location of the users to be monitored and the hardware specifications of the computer that runs the processor and other components that deliver the data to Office Telemetry Dashboard. It's also important to understand the supported limits for Office Telemetry Dashboard deployments, such as the maximum number of users who can be monitored. Use the guidance in this article to help you design an Office Telemetry Dashboard topology that is sized appropriately for your organization.
@@ -60,15 +59,15 @@ The following table describes the tools and components for Office Telemetry Dash
 
 |**Tool**|**Description**|
 |:-----|:-----|
-|![This icon represents the Office Telemetry Dashboard.](../images/ORK_Telem_TelemetryDashboardIcon.gif)| Office Telemetry Dashboard:  <br/><br/>  - Shows IT Pros a combined view of inventory, usage, and health data  <br/> - Is installed with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016.  <br/>  - Requires Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.  <br/>- Connects to the database  <br/> - Can be viewed by multiple IT Pros  <br/> |
-|![This icon represents Office Telemetry Log.](../images/ORK_Telem_TelemetryLogIcon.gif)| Office Telemetry Log: <br/> <br/> - Helps developers and experienced users diagnose compatibility issues that occur on an Office client <br/> - Is installed with Microsoft 365 Apps for enterprise, Office Professional Plus 2019, Office Professional Plus 2016, and Office Standard 2016. <br/> - Requires Excel installed from Microsoft 365 Apps for enterprise, Office 2019, or Office 2016.  <br/> - Connects to the local data store on the client computer  <br/> |
+|![This icon represents the Office Telemetry Dashboard.](../images/ORK_Telem_TelemetryDashboardIcon.gif)| Office Telemetry Dashboard:  <br/><br/>  - Shows IT Pros a combined view of inventory, usage, and health data  <br/> - Is installed with Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016.  <br/>  - Requires Excel installed from Office 2019 or Office 2016.  <br/>- Connects to the database  <br/> - Can be viewed by multiple IT Pros  <br/> |
+|![This icon represents Office Telemetry Log.](../images/ORK_Telem_TelemetryLogIcon.gif)| Office Telemetry Log: <br/> <br/> - Helps developers and experienced users diagnose compatibility issues that occur on an Office client <br/> - Is installed with Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016. <br/> - Requires Excel installed from Office 2019 or Office 2016.  <br/> - Connects to the local data store on the client computer  <br/> |
    
 The following table describes the components of Office Telemetry Dashboard. The first two components shown below are required for both Office Telemetry Log and Office Telemetry Dashboard. The remaining components that are listed are applicable only to Office Telemetry Dashboard. These components collect data from across an organization so that you can view it by using Office Telemetry Dashboard. To learn how to deploy these components, see [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md).
   
 |**Component**|**Description**|
 |:-----|:-----|
 |![This icon represents telemetry logging.](../images/ORK_Telem_TelemetryLoggingIcon.gif)| Office Telemetry Log: <br/> <br/> - Monitors events for (and is built into) Office 2019 and Office 2016 versions of Word, Excel, PowerPoint, and Outlook.  <br/> - Is disabled by default.  <br/> - Is enabled by using Group Policy, registry settings, or by selecting the **Enable Logging** button in Office Telemetry Log.  <br/> - The resulting data can be viewed on the local computer by using Office Telemetry Log.  <br/> |
-|![This icon represents the Telemetry Agent.](../images/ORK_Telem_TelemetryAgentIcon.gif)| Office Telemetry Agent:<br/>  <br/> - Reports usage and inventory data for all Office clients.  <br/> - Reports application event data for Office clients.  <br/>- Must be deployed to Office 2003, Office 2007, and Office 2010 clients. *(These versions of Office are no longer supported.)*  <br/> - Is built into Office 2019, Office 2016, and Office 2013 clients.  <br/> - Must be enabled using Group Policy or the registry.  <br/> - Runs as a scheduled task.  <br/> - Requires domain membership.  <br/> - Periodically uploads data to a shared folder.  <br/> - Requires the latest version of the Universal C Runtime (CRT). For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).  <br/> |
+|![This icon represents the Telemetry Agent.](../images/ORK_Telem_TelemetryAgentIcon.gif)| Office Telemetry Agent:<br/>  <br/> - Reports usage and inventory data for all Office clients.  <br/> - Reports application event data for Office clients.  <br/>- Must be deployed to Office 2003, Office 2007, and Office 2010 clients. *(These versions of Office are no longer supported.)*  <br/> - Is built into Office 2019 and Office 2016 clients.  <br/> - Must be enabled using Group Policy or the registry.  <br/> - Runs as a scheduled task.  <br/> - Requires domain membership.  <br/> - Periodically uploads data to a shared folder.  <br/> - Requires the latest version of the Universal C Runtime (CRT). For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).  <br/> |
 |![This icon represents Group Policy settings.](../images/ORK_Telem_GPSettingsIcon.gif)| Group Policy settings: <br/> <br/> - Enable and configure the agent on each client.  <br/> - Are part of Office16.admx and Office16.adml.  <br/> - Are located under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Telemetry Dashboard.  <br/> - Can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=626001).  <br/> |
 |![This icon represents Shared Folders in Office Telemetry Dashboard.](../images/ORK_Telem_SharedFolderIcon.gif)| Shared folder: <br/> <br/> - Stores data that is uploaded by agents.  <br/> - Must be on premises (no cloud support).  <br/> - Can be located on the same computer as other components.  <br/> - Is configured when you install the processor.  <br/> |
 |![This icon represents the Office Telemetry Processor.](../images/ORK_Telem_TelemetryProcessorIcon.gif)| Office Telemetry Processor: <br/> <br/> - Uploads data from the shared folder to the database.  <br/>- Runs as a Windows service named "Office Telemetry Processor."  <br/> - Is supported on Windows Server 2012 and later versions.  <br/> - Can be run on Windows 10 or Windows 11 in test or small environments.  <br/> - Can be run on the same computer as other components.  <br/> - Can be installed on multiple computers for large deployments.  <br/> - Requires domain membership unless a workaround is used.  <br/> - Requires the latest version of the Universal C Runtime (CRT). For more information, see [Update for Universal C Runtime in Windows](https://support.microsoft.com/help/2999226).  <br/> - Supports Transport Layer Security (TLS) 1.2  <br/> |

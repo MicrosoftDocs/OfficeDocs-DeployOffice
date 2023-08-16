@@ -4,14 +4,14 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference to prevent users from installing and running add-ins for Office for Mac."
-ms.date: 07/12/2021
+ms.date: 03/01/2023
 ---
 
 # Set a preference to prevent the use of add-ins

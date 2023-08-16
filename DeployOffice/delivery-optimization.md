@@ -1,19 +1,16 @@
 ---
 title: "Delivery Optimization and Microsoft 365 Apps"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provides Office admins with information about using Delivery Optimization to reduce network bandwidth when installing or updating Microsoft 365 Apps."
-ms.date: 09/23/2019
+ms.date: 03/01/2023
 ---
 
 # Delivery Optimization and Microsoft 365 Apps

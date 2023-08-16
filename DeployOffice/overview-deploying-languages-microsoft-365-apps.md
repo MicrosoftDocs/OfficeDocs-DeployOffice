@@ -4,16 +4,13 @@ ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection:
-- Ent_O365
-- M365-modern-desktop
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
-ms.date: 04/20/2020
+ms.date: 03/16/2023
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
@@ -39,7 +36,7 @@ When deploying multiple languages in a large organization, we recommend these be
 - If you deploy Office from a local source on your network, [use the Office Content Delivery Network (CDN) as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs) that might not be available at that local source.
 - When adding languages to an existing deployment of Office, you can [deploy just the language packs](#deploy-languages-to-existing-installations-of-microsoft-365-apps), rather than the full version of Office.
 - If you upgrade from a Windows Installer (MSI) version of Office, you can [automatically install the same languages as a previous MSI installation](#install-the-same-languages-as-a-previous-msi-installation). 
-- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-microsoft-365-apps.md#step-4---define-your-source-files). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
+- When building Office packages to deploy, [include all the language packs you plan to deploy in each package](plan-microsoft-365-apps.md#step-4---define-your-installation-packages). Creating separate packages for different language sets can make the Office deployment  difficult to manage.
 - If you deploy a subscription version of the Project or Visio desktop app to a device that already has Office installed, you can [automatically deploy them in the same languages as the installed version of Office](#deploy-visio-or-project-in-the-same-languages-as-an-existing-version-of-microsoft-365-apps).
 - If you use some languages only as editing tools, you can [deploy just the proofing tools](#deploy-proofing-tools) instead of full language packs to conserve network bandwidth.
 
@@ -82,6 +79,7 @@ The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Use
 > [!NOTE]
 > - This capability is available in Microsoft 365 Apps for enterprise, starting with Version 2108 of Current Channel and with Version 2109 of Monthly Enterprise Channel.
 > - Support will be available at a later date for Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
+> - When programmatic control of Microsoft 365 Apps updates is enabled, this feature is not available. This is the case when you use Configuration Manager to deploy updates for Microsoft 365 Apps or servicing profiles.
 
 If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
 

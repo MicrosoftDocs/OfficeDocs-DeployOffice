@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8 end of support on Microsoft 365 Apps."
-ms.date: 06/29/2020
+ms.date: 01/10/2023
 ---
 
 # Windows 8 end of support and Microsoft 365 Apps
@@ -53,4 +52,4 @@ To get security updates for Windows and updates to Microsoft 365 Apps, we strong
 
 For more information about moving to a supported operating system, see [Windows client deployment resources and documentation](/windows/deployment/).
 
-Other upgrade resources are available from Microsoft experts, such as [FastTrack](/fasttrack/products-and-capabilities#windows-11) and [App Assure](/fasttrack/products-and-capabilities#app-assure).
+Other upgrade resources are available from Microsoft experts, such as [Microsoft FastTrack](https://www.microsoft.com/fasttrack) and [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure).

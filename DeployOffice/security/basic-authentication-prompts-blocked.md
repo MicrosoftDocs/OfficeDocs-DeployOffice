@@ -4,20 +4,18 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ROBOTS: NOINDEX, NOFOLLOW
-ms.custom: Ent_Office_Security
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 08/30/2022
+ms.date: 04/12/2023
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
 
 > [!NOTE]
-> The information in this article is related to Message center post MC454810, which was published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter) on November 1, 2022 and updated on November 16, 2022.
+> The information in this article is related to Message center posts MC454810, MC499030, and MC649046, which were published in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter).
 
 Apps such as Word and Excel allow users to use Basic authentication to connect to resources on web servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
@@ -25,7 +23,7 @@ Basic authentication is an outdated industry standard and doesn't support more r
 
 Therefore, to help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication.
 
-With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message will include a link that takes users to an article that contains information about the security risks of Basic authentication.
+With this change, if users try to open files on servers that only use Basic authentication, they don't see any Basic authentication sign-in prompts. Instead, they see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message includes a link that takes users to an article that contains information about the security risks of Basic authentication.
 
 > [!NOTE]
 > - File shares hosted on Windows aren't affected by this change because the authentication method used is NTLM.
@@ -50,17 +48,17 @@ This change affects the following apps only on devices running Windows:
 > - This change doesn’t affect Outlook connecting to on-premises Exchange Server using Basic authentication.
 > - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic authentication deprecation in Exchange Online](../endofsupport/microsoft-365-services-connectivity.md#basic-authentication-deprecation-in-exchange-online).
 
-As part of the rollout, users will initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
+As part of the rollout, users initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
 
-The following table shows the version, for each update channel, in which the warning and blocking changes will be implemented. Information in italics is subject to change.
+The following table shows the version, for each update channel, in which the warning and blocking changes are implemented. Information in italics is subject to change.
 
-| Update channel                           | Warning version                                      | Blocking version                                  |
-|-------------------------------------------|-------------------------------------------------------|----------------------------------------------------|
-| Current Channel (Preview)                | Version 2212                                         | *Version 2304* <br/> *(first half of April 2023)* |
-| Current Channel                          | *Version 2301* <br/> *(second half of January 2023)* | *Version 2305* <br/> *(second half of May 2023)*  |
-| Monthly Enterprise Channel               | *Version 2301* <br/> *(March 14, 2023)*              | *Version 2305* <br/> *(July 11, 2023)*            |
-| Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)*          | *Version 2402* <br/> *(March 12, 2024)*           |
-| Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*             | *Version 2402* <br/> *(July 9, 2024)*             |
+| Update channel                           | Warning version                             | Blocking version                                    |
+|------------------------------------------|---------------------------------------------|-----------------------------------------------------|
+| Current Channel (Preview)                | Version 2303                                | *Version 2307* <br/> *(August 2023)*    |
+| Current Channel                          | Version 2304                                | *Version 2308* <br/> *(September 2023)* |
+| Monthly Enterprise Channel               | Version 2304                                | *Version 2308* <br/> *(October 10, 2023)*           |
+| Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)* | *Version 2402* <br/> *(March 12, 2024)*             |
+| Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*    | *Version 2402* <br/> *(July 9, 2024)*               |
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
@@ -78,13 +76,13 @@ The following steps explain the information in the flowchart graphic.
 
 2. If the server is using Basic authentication proxy authentication, Microsoft 365 Apps evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
    - If the policy is set to Enabled, the user is prompted to provide a username and password to open the file.
-   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that may be unsecure.
 
-3. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps will check if a policy exists to allow Basic authentication prompts.
+3. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps checks if a policy exists to allow Basic authentication prompts.
 
 4. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
    - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
-   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user will see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that may be unsecure.
 
 ## Use policies to manage Basic authentication prompts
 
@@ -111,10 +109,10 @@ The following table shows the level of protection you get with each state of the
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled </br>(no hosts specified) |Users will be blocked from opening files located on web servers that use Basic authentication. |
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts will be allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled |Users will be blocked from opening files located on web servers that use Basic authentication. |
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected</br> **[recommended]**|Not Configured |Users will be blocked from opening files located on web servers that use Basic authentication. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled </br>(no hosts specified) |Users are blocked from opening files located on web servers that use Basic authentication. |
+|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts are allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled |Users are blocked from opening files located on web servers that use Basic authentication. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected</br> **[recommended]**|Not Configured |Users are blocked from opening files located on web servers that use Basic authentication. |
 
 ### Allow Basic Authentication prompts from network proxies
 
@@ -124,6 +122,6 @@ The following table shows the level of protection you get with each state of the
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled | Network proxies won't show Basic authentication prompts.|
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Network proxies will show Basic authentication prompts. |
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected </br>**[recommended]**|Not Configured |Network proxies won't show Basic authentication prompts. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled | Network proxies don't show Basic authentication prompts.|
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Network proxies show Basic authentication prompts. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected </br>**[recommended]**|Not Configured |Network proxies don't show Basic authentication prompts. |

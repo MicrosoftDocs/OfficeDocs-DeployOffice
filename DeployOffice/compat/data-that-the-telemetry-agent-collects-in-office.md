@@ -4,21 +4,20 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: reference
-ms.service: o365-proplus-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Compat
+ms.collection: Tier2
 description: "Learn about the data collected by the agent for Office Telemetry Dashboard."
-ms.date: 03/20/2018
+ms.date: 03/01/2023
 ---
 
 # Data collected by the agent for Office Telemetry Dashboard
 
-***Applies to:*** *Microsoft 365 Apps for enterprise, Office 2019, and Office 2016*
+***Applies to:*** *Office 2019, Office 2016*
 
 > [!IMPORTANT]
-> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise, starting with Version 2208, and will be removed starting with Version 2301.
+> - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
   
 The Office Telemetry Dashboard uses an agent to collect several types of inventory, usage, and health data for installations of Office, such as the following:
@@ -60,7 +59,7 @@ The agent collects inventory-related data, hardware and software data, and user 
 - Word
 
 > [!NOTE]
-> Office 2003, Office 2007, and Office 2010 are no longer supported.
+> Office 2003, Office 2007, Office 2010, and Office 2013 are no longer supported.
     
 For Office 2019, Office 2016, and Office 2013 only, the agent collects data for the following applications:
   
@@ -201,6 +200,6 @@ VBA, OLE, external data connection, ActiveX control, and assembly reference info
 ## Related topics
 
 - [Manage the privacy of data monitored by Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md)
-- [Office Telemetry Dashboard worksheet reference](telemetry-dashboard-worksheet-reference.md)
+- [Office Telemetry Dashboard worksheets](telemetry-dashboard-worksheet-reference.md)
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 

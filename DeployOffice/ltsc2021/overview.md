@@ -4,16 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: overview
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
+ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office LTSC 2021."
-ms.date: 09/14/2021
+ms.date: 03/01/2023
 ---
 
 # Overview of Office LTSC 2021
@@ -89,7 +86,7 @@ Office LTSC 2021 adds support for the following three languages:
 
 #### OpenDocument format 1.3
 
-Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument format (ODF) 1.3. For more information, see [Office apps now support OpenDocument format 1.3](https://insider.office.com/blog/office-apps-now-support-opendocument-format-odf-1-3).
+Word, Excel, and PowerPoint in Office LTSC 2021 include support for OpenDocument format (ODF) 1.3. For more information, see [Office apps now support OpenDocument format 1.3](https://insider.microsoft365.com/blog/office-apps-now-support-opendocument-format-odf-1-3).
 
 #### Office Add-ins
 

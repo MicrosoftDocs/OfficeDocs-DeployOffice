@@ -4,13 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 description: "Provides guidance to Office admins about configuring trusted publishers for Office files."
-ms.date: 09/01/2022
+ms.date: 03/01/2023
 ---
 
 # Trusted publishers for Office files

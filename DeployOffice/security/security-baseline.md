@@ -4,13 +4,12 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_Security
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
-ms.date: 06/06/2022
+ms.date: 03/01/2023
 ---
 
 # Security baseline for Microsoft 365 Apps for enterprise

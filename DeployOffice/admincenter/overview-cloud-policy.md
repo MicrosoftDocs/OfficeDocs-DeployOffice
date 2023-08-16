@@ -5,17 +5,13 @@ author: nicholasswhite
 manager: dougeby
 ms.reviewer: chhopkin
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: 
-- Ent_O365
-- M365-modern-desktop
-- m365initiative-coredeploy
-ms.custom: Ent_Office_ProPlus
+ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 07/12/2022
+ms.date: 05/25/2023
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -25,9 +21,7 @@ ms.date: 07/12/2022
 
 [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies) lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. Policy settings are available for devices running Windows, macOS, iOS, and Android, although not all policy settings are available for all operating systems. You can also enforce some policy settings for Office for the web, both for users who are signed in and for users who access documents anonymously.
 
-Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), under **Apps** > **Policy** > **Policies for Office apps**.  
-
-When you create policy configurations, you can review and apply policies that are recommended by Microsoft as security baseline policies. These recommendations are marked as "Security Baseline" when selecting policies.
+Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
 ## Requirements for using Cloud Policy
 
@@ -35,7 +29,7 @@ The following are the requirements for using Cloud Policy with Microsoft 365 App
 
 - A [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps for enterprise.
 - User accounts created in or synchronized to Azure Active Directory (Azure AD). The user must be signed into Microsoft 365 Apps for enterprise with an Azure AD-based account.
-- Cloud Policy supports security groups and mail-enabled security groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
+- Cloud Policy supports Microsoft 365 Groups and Azure AD Security Groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Azure AD: Global Administrator, Security Administrator, or Office Apps Admin.
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
 - Authenticated proxies aren’t supported by Cloud Policy service.
@@ -61,7 +55,13 @@ The following are the basic steps for creating a policy configuration.
 
 ## Managing policy configurations
 
-To change a policy configuration, select the policy configuration on the **Policy configurations** page.  This will open the policy configuration. Make the appropriate changes and then navigate to the **Review and publish** page and select **Update**.
+To change a policy configuration:
+
+1. Go to the **Policy configurations** page.
+2. Select the policy configuration you want to change. This will open the configuration details.
+3. Make the appropriate changes to the policy configuration.
+4. Navigate to the **Review and publish** page.
+5. Select **Update** to save and apply your changes.
 
 If you want to create a new policy configuration that is similar to an existing policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Copy**. Make the appropriate changes and then select **Create**.
 
@@ -99,6 +99,18 @@ If the user is a member of multiple Azure AD groups with conflicting policy sett
 
 Also, policy settings implemented by using Cloud Policy take precedence over policy settings implemented by using Group Policy on Windows Server, and taking precedence over preference settings or locally applied policy settings.
 
+## Baselines
+
+At Microsoft we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy you’ll need to protect your organization and empower your end users to create accessible content.
+
+### Security baseline
+To easily identify security baseline policies, we’ve added a new column to the policy table called Recommendation. Policies recommended for security baseline will be tagged in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
+
+For more information, see [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md)
+
+### Accessibility baseline
+Most of our customers are making strides to become more accessible as an organization. The accessibility baseline will enable IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
+
 ## Additional information about Cloud Policy
 
 - Only user-based policy settings are available. Computer-based policy settings aren't available.
@@ -122,8 +134,6 @@ If the expected policies haven't been correctly applied to a user's device, try 
 - Policy settings retrieved from Cloud Policy are stored in the Windows registry under HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0. This key is overwritten each time a new set of policies is retrieved from the policy service during the check-in process.
 
 - Policy service check-in activity is stored in the Windows registry under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. Deleting this key and restarting the Office apps will trigger the policy service to check in the next time an Office app is launched.
-
-- If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.
 
 - If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
 

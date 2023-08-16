@@ -1,17 +1,18 @@
 ---
 title: "Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel."
-ms.date: 04/18/2022
+ms.date: 03/01/2023
 ---
 
 # Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices
@@ -54,7 +55,7 @@ These releases are cumulative. The most current release contains all the feature
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## How will users be affected by this change?

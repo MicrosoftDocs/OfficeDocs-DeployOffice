@@ -4,13 +4,13 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about the licensing helper tool and how to update it with msupdate or manually."
-ms.date: 11/12/2021
+ms.date: 03/01/2023
 ---
 
 # Licensing helper tool

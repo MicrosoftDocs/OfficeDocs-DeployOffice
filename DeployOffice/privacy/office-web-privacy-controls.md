@@ -7,13 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_ProPlus
-- Ent_Office_Privacy
+ms.collection: Tier1
 description: "Provides Office admins with information about how to manage privacy settings for Office for the web applications."
 hideEdit: true
-ms.date: 09/10/2020
+ms.date: 03/01/2023
 ---
 
 # Use policy settings to manage privacy controls for Office for the web applications

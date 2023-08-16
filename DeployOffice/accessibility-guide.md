@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: true
 description: "Provide Office admins with guidance and resources to help make their Microsoft 365 environment as inclusive and accessible as possible for their users"
-ms.date: 05/09/2022
+ms.date: 03/01/2023
 ---
 
 # Accessibility guide for Microsoft 365 Apps
@@ -35,13 +34,13 @@ To allow your users to take the most advantage of the accessibility capabilities
 
 Microsoft 365 Apps is updated regularly with new and improved features for the Office apps, such as Word and Excel. These updates can include new and improved accessibility features.
 
-To provide your users with the newest and most up-to-date accessibility features, we recommend using [Current Channel](overview-update-channels.md#current-channel-overview). Current Channel is updated every month with new and improved features, along with the latest security updates and bug fixes.
+To provide your users with the newest and most up-to-date accessibility features, we recommend using [Current Channel](updates/overview-update-channels.md#current-channel-overview). Current Channel is updated every month with new and improved features, along with the latest security updates and bug fixes.
 
 With Current Channel, you’ll be getting the accessibility features as soon as they’re ready. To see the features that are released each month, see [Release notes for Current Channel](/officeupdates/current-channel).
 
 > [!NOTE]
-> - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
->- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md).
+> - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](updates/overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
+>- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
 
 ## Check that connected experiences for accessibility are turned on for your users
 
@@ -76,8 +75,6 @@ There isn’t a policy for Outlook, but Outlook automatically checks for accessi
 > [!NOTE]
 > - The policy is found under User Configuration\Policies\Administrative Templates\Microsoft *{app name}* 2016\File Tab\Check Accessibility in the Group Policy Management Console.
 > - If you use this policy, users won’t be able to turn off the Accessibility Checker under **File** > **Options** > **Accessibility**.
-
-You can also provide your users with the [Accessibility Reminder add-in](https://support.microsoft.com/office/4f58ce8f-bf2e-4ae7-9f39-869a783bb988). This add-in allows users to notify other authors and contributors of accessibility issues in Word documents, Excel worksheets, or PowerPoint presentations.
 
 ## Make accessibility resources available to your organization
 

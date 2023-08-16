@@ -7,11 +7,10 @@ audience: ITPro
 ms.topic: how-to
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Microsoft_365_Insider
+ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use Microsoft Intune to install Microsoft 365 Insider on Windows devices"
-ms.date: 01/11/2023
+ms.date: 01/18/2023
 ---
 
 # Use Microsoft Intune to install Microsoft 365 Insider on Windows devices
@@ -27,7 +26,7 @@ If Microsoft 365 Apps is already installed on the Windows device, you can use [a
 
 To make that change, follow these steps:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 2. Go to **Devices** > **Policy** > **Configuration profiles** > **Create profile**.
 3. In the **Create a profile** pane, select **Windows 10 and later** for the platform. Then, select **Templates** for the profile type, and **Administrative Templates** for the template name. Then, select **Create**.
 4. On the **Basics** page, provide a name (required) and description (optional), and then select **Next**.
@@ -50,7 +49,7 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 Follow these steps to use Intune to install Microsoft 365 Insider on a Windows device that doesn't already have Microsoft 365 Apps installed.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 2. Go to **Apps** > **All apps** > **Add**.
 3. In the **Select app type** pane, select **Windows 10 and later** in the **Microsoft 365 Apps** section.
 4. Choose **Select**. The **Add Microsoft 365 Apps** steps are displayed.

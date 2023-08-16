@@ -8,11 +8,11 @@ ms.topic: landing-page
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 ms.custom: intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
-ms.date: 03/19/2018
+ms.date: 03/01/2023
 ---
 
 # Deployment guide for Office for Mac

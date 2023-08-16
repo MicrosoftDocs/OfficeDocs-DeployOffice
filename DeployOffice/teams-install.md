@@ -4,14 +4,13 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier2
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: Ent_Office_ProPlus
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
-ms.date: 12/17/2018
+ms.date: 03/01/2023
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
@@ -40,7 +39,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When will Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
-The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](overview-update-channels.md) you're using. The following table shows the schedule.
+The date when Teams starts being installed with ***new*** installations of Microsoft 365 Apps depends on which [update channel](updates/overview-update-channels.md) you're using. The following table shows the schedule.
 
 | **Update channel** |**Version** |**Date**  |
 |---------|---------|---------|
@@ -201,4 +200,5 @@ For Office 365 plans that don't include the Teams service, a free trial version 
 - There is no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Microsoft 365 Apps in the same way that Teams is installed if you use the [MSI-based installer for Teams](/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Microsoft 365 Apps installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Microsoft 365 Apps. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
+- If you previously excluded Teams and want to add it back (for example, by using the Office Deployment Tool), make sure the settings in your configuration.xml file match the bitness, channel, and excluded apps of your existing installation of Microsoft 365 Apps.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](/MicrosoftTeams/Microsoft-Teams).

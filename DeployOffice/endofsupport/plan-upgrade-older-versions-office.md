@@ -4,30 +4,31 @@ ms.author: danbrown
 author: DHB-MSFT
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
+ms.collection: Tier1
 ms.localizationpriority: medium
-ms.collection: Ent_O365
 recommendations: true
-description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2013 and Office 2010."
-ms.date: 11/05/2021
+description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
+ms.date: 04/11/2023
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
 
-***Applies to:*** *Volume licensed versions of Office 2013, Office 2010, and Office 2007*
+***Applies to:*** *Volume licensed versions of Office 2016, Office 2013, Office 2010, and Office 2007*
 
 The following table shows the end of support dates for older versions of Office.
 
 |Office version |End of support date  |
 |---------|---------|
+|Office 2016 |October 14, 2025    |
 |Office 2013 |April 11, 2023    |
 |Office 2010 |October 13, 2020  |
 |Office 2007 |October 10, 2017  |
 
 This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't already begun to upgrade from these older versions of Office, we recommend you start now.
 
-We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365) for cloud migrations.
+We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
 > [!NOTE]
 > - If you're a home user who wants to upgrade from an older version of Office to the latest version of Office, see [How do I upgrade Office?](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)
@@ -53,7 +54,7 @@ Before your older version of Office reaches its end of support, you should explo
   
 - Microsoft 365 Apps, the subscription version of Office that comes with many Microsoft 365 (and Office 365) enterprise and business plans.
 
-- Office LTSC 2021, which is sold as a one-time purchase, through a volume license agreement, and available for one computer per license.
+- Office LTSC 2021, which is sold as a one-time purchase, through a volume license agreement, and available for one device per license.
 
 A key difference between Microsoft 365 Apps and Office LTSC 2021 is that Microsoft 365 Apps is updated regularly, as often as monthly, with new features. Office LTSC 2021 only has the same features that it had when it was released in September 2021.
 
@@ -82,7 +83,7 @@ There are also differences in how you deploy, activate, and update Microsoft 365
 
 ## Review the system requirements for Microsoft 365 Apps
 
-Before upgrading to Microsoft 365 Apps, verify that your client computers meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+Before upgrading to Microsoft 365 Apps, verify that your client devices meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
   
 In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-scilts8).
   
@@ -103,7 +104,7 @@ To help with assessing application compatibility with Microsoft 365 Apps, you ca
   
 You can [download the Readiness Toolkit](https://www.microsoft.com/download/details.aspx?id=55983) for free from the Microsoft Download Center. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
-Other resources are also available. For example, if you use Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure?rtc=1) program.
+Other resources are also available. For example, if you use Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) program.
 
 ## Assess your infrastructure and environment
 
@@ -128,7 +129,7 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 - [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426)
 - [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases)
 
@@ -147,6 +148,9 @@ As with any new version of Office, there are new Administrative Template files (
 
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
+> [!NOTE]
+> The Administrative Template files (ADMX/ADML) download for Microsoft 365 Apps is the same download as for Office 2016, because both Microsoft 365 Apps and Office 2016 use the same underlying product version number (16.0).
+
 If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
@@ -157,14 +161,14 @@ For more information, see [Remove existing MSI versions of Office when upgrading
 
 ## Upgrade to newer versions of Project and Visio
 
-The 2013, 2010, and 2007 desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2010 ended on October 13, 2020 and support for Visio 2013 ends on April 11, 2023.
+The desktop versions of Project and Visio share the same end of support dates as the Office suites for those versions. For example, support for Project 2013 ended on April 11, 2023 and support for Visio 2016 ends on October 14, 2025.
 
 Subscription plans for Project and Visio are available and include regular feature updates. These plans are sold separately from plans that include Microsoft 365 Apps. For more information, see the following resources:
 
 - [Project plans and pricing information](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software)
 - [Visio plans and pricing information](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options)
 
-The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. These versions were released in September 2021 and won't receive regular feature updates.
+The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. These versions were released in September 2021 and don't receive regular feature updates.
 
 For more information, see the following articles:
 
@@ -174,4 +178,4 @@ For more information, see the following articles:
 ## Related articles
 
 - [Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)
-- [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+- [Windows and Office configuration support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)

@@ -4,14 +4,14 @@ ms.author: pbowden
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: Tier3
 recommendations: true
 description: "Provides information to admins on how to download and deploy Office for Mac to users in their organization"
-ms.date: 03/19/2018
+ms.date: 03/01/2023
 ---
 
 # Deployment options for admins for Office for Mac
