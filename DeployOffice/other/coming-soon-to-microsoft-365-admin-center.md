@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 07/4/2023
+ms.date: 08/17/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
@@ -49,7 +49,8 @@ Here's what you should expect:
   - On the **Settings** tab, the entires for **Exclude Groups** and **Exclusion Windows** are now located in a new entry **Tenant Settings** on the **Overview** page.
   - The **Device Selection Criteria** from the **Settings** tab are removed.
 - Inventory gets an extra column:
-  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. For example, if the device is currently onboarding to or already managed by a profile. 
+  - **Cloud Update Status**: Shows status of a given device in regards to Cloud Updates. For example, if the device is currently onboarding to or already managed by a profile.
+- New URL: While **Cloud Update** is still located in the Microsoft 365 Apps admin center, the URL to e.g. the **Overview** page has changed. Consider updating your bookmarks.
 
 ## Changes in features
 
