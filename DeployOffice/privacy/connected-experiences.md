@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
-ms.date: 05/26/2023
+ms.date: 08/24/2023
 ---
 
 # Connected experiences in Office
@@ -44,6 +44,7 @@ The following table provides a list of connected experiences that analyze your c
 | Map chart <sup>[1]</sup>    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 |PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer   | [Create professional slide layouts with Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+| Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Publish to Power BI   | [Publish to Power BI from Microsoft Excel](/power-bi/connect-data/service-publish-from-excel) |
 | Read Aloud <sup>[4]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|

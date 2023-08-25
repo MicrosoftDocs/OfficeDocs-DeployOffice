@@ -2,7 +2,7 @@
 title: "Overview of optional connected experiences in Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about optional connected experiences, including which terms of use apply."
 hideEdit: true
-ms.date: 04/21/2023
+ms.date: 08/24/2023
 ---
 
 # Overview of optional connected experiences in Office
@@ -57,7 +57,7 @@ On Outlook for iOS and Android, you can report issues and connect with our suppo
 
 ### Insert photos from mobile device
 
-[Insert photos from mobile device](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921) allows you to insert photos from your Android device directly into PowerPoint for the web or Word for the web. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
+[Insert photos from mobile device](https://support.microsoft.com/topic/b4182712-a9ab-c6bf-3025-549955158921) allows you to insert photos from your Android device directly into web and desktop versions of some Microsoft 365 apps, such as PowerPoint and Word. This experience requires the use of the [Link to Windows mobile app](https://support.microsoft.com/topic/bb7a82b6-7bcd-be1d-ccc8-dddb909bc07b) on your Android device. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply.
 
 ### Link unfurling
 
@@ -75,12 +75,12 @@ When you use the Office Store, your use of the store site itself is licensed by 
 > - The administrator in your organization might provide you with add-ins, even if you don’t choose to use the Office Store.
 > - If you’re an administrator, for more information about add-ins, see the “Optional connected experiences” section in [Privacy and security for Office Add-ins](/office/dev/add-ins/concepts/privacy-and-security) and [Privacy, permissions, and security for Outlook add-ins](/office/dev/add-ins/outlook/privacy-and-security).
 
-### Open files in the Office mobile app that use a legacy or non-Office file format
+### Open files in the Microsoft 365 mobile app that use a legacy or non-Office file format
 
-To open a file in the [Office mobile app](https://www.microsoft.com/microsoft-365/mobile) that uses a legacy or non-Office file format, that file first needs to be converted into a file format that the Office mobile app can open. For example, when you open an Excel workbook that’s in the xls or ods format, the file first needs to be converted to the xlsx format. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
+To open a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile) that uses a legacy or non-Office file format, that file first needs to be converted into a file format that the Microsoft 365 mobile app can open. For example, when you open an Excel workbook that’s in the xls or ods format, the file first needs to be converted to the xlsx format. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
 
-### Print files in the Office mobile app
-To print a file in the [Office mobile app](https://www.microsoft.com/microsoft-365/mobile), the app needs to create a PDF of the file. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
+### Print files in the Microsoft 365 mobile app
+To print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), the app needs to create a PDF of the file. This experience uses a conversion service owned by Microsoft, and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. This experience is also available in the individual Word, Excel, and PowerPoint apps for iOS and Android.
 
 ### Research
 
