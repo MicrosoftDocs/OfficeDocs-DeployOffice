@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
-ms.date: 08/24/2023
+ms.date: 08/25/2023
 ---
 
 # Connected experiences in Office
@@ -47,6 +47,7 @@ The following table provides a list of connected experiences that analyze your c
 | Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Publish to Power BI   | [Publish to Power BI from Microsoft Excel](/power-bi/connect-data/service-publish-from-excel) |
+| Python in Excel (Preview)   | [Introduction to Python in Excel](https://support.microsoft.com/office/introduction-to-python-in-excel-55643c2e-ff56-4168-b1ce-9428c8308545) (for users) <br> [Data security and Python in Excel](https://support.microsoft.com/office/data-security-and-python-in-excel-33cc88a4-4a87-485e-9ff9-f35958278327) (for admins) |
 | Read Aloud <sup>[4]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Reuse Files| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
