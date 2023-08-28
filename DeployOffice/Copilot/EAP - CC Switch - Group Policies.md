@@ -15,7 +15,8 @@ ms.date: 08/28/2023
 # Move devices to Current Channel using Group Policies
 
 ## Overview
-To leverage the Copilot Early Access Program, there are some technical requirements you need to meet. This article provides configuration guidance and best practices on how to prepare your Microsoft 365 Apps for the Copilot Early Access Program using Active Direct-based group policies.
+At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps to receive Copilot updates when they become available. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Active Direct-based group policies.
+
 > [!NOTE] This article is solely focused on preparing your Microsoft 365 Apps for the Copilot Early Access Program (EAP). Other Copilot initiatives are not covered by this documentation.
 
 > [!NOTE] The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
