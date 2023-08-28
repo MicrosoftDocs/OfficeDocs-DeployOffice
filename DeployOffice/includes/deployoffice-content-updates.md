@@ -2,6 +2,15 @@
 
 
 
+## Week of August 21, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/21/2023 | Sign Up for cloud update | removed |
+| 8/25/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
+
+
 ## Week of August 14, 2023
 
 
@@ -17,11 +26,3 @@
 |------|------------|--------|
 | 8/11/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
 | 8/11/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-
-
-## Week of July 17, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 7/20/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
