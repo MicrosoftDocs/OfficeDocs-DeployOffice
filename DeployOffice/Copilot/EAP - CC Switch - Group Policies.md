@@ -69,7 +69,7 @@ Finally, link the group policy object to an Organizational Unit (OU) which conta
 4.	Review the Linked Group Policy Objects and review the Link Order.
 5.	Review if the newly added GPO has the highest possible Link Order (e.g., Link Order equals 1). This will ensure that other policies with potentially conflicting settings are overruled.
 
-## Verification
+## Validation
 The final step is to test the GPO's application and if the update channel switches to Current Channel automatically. To do this, follow these steps:
 1.	Boot or reboot a computer that belongs to the security group.
 2.	Log on to the device, open a command prompt and run the "gpupdate /force" command to refresh the group policy settings.
