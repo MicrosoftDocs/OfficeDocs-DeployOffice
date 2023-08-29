@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Introduce enhancements for better servicing and inventory management, streamlining updates and user experience"
-ms.date: 08/17/2023
+ms.date: 08/29/2023
 ---
 
 # New Improvements to Microsoft 365 Apps admin center coming soon!
