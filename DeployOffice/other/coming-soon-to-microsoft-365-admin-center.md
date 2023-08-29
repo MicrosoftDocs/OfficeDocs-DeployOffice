@@ -69,6 +69,9 @@ After you have enabled a profile, devices have to connect to the service to get 
 ### If you are using servicing profile already
 **Removal of update channel selector**: The Monthly profile now only targets devices, which are already on the Monthly Enterprise Channel. The selector can no longer be used to convert devices from, for example, Semi-Annual Enterprise Channel to Monthly Enterprise Channel. See [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md) for your options on changing update channels.
 
+> [!NOTE]
+> Microsoft is working on a new feature in Microsoft 365 Apps admin center's inventory which will substitute for the removal of the update channel selector. It will allow admins to select devices from inventory and trigger a channel change to Current Channel or Monthly Enterprise Channel. This will be independent from Servicing Profiles/Cloud Updates. We will share an ETA at a later stage.
+
 **Removal of Azure AD groups-based filtering**: During the change, your Azure AD group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices, which are on Monthly Enterprise Channel and haven't been excluded. Your Azure AD groups aren't getting deleted, but removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Azure AD groups.
 
 **Removal of disk space selector**: After the change, Cloud Update targets devices regardless of the remaining disk space. If you have set a value, it is removed, and the behavior is similar to selection "0 GB" today. There's no mitigation for this change.
