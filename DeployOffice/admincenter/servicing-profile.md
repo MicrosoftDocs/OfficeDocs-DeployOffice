@@ -45,7 +45,7 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 
 ## Compatibility with other management tools
 
-A servicing profile takes precedence over existing settings related to Microsoft 365 Apps updates. E.g., settings mad by the Office Deployment Tool or policies set through Microsoft Intune's configuration profiles. Servicing profile will do so for all devices which are in-scope, regardless of the current management method or directory service membership. If you’re using other management tools, you may want to disable the Microsoft 365 Apps update-related settings them, but it isn't required.
+A servicing profile takes precedence over existing settings related to Microsoft 365 Apps updates. E.g., settings made by the Office Deployment Tool or policies set through Microsoft Intune's configuration profiles. Servicing profile will do so for all devices which are in-scope, regardless of the current management method or directory service membership. If you’re using other management tools, you may want to disable the Microsoft 365 Apps update-related settings them, but it isn't required.
 
 >[!NOTE]
 > Servicing Profile will not change the update settings of other products like Windows or Edge.
