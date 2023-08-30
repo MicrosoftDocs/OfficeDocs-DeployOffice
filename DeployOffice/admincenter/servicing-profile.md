@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 ---
 
 # Overview of servicing profile in the Microsoft 365 Apps admin center
@@ -45,12 +45,12 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 
 ## Compatibility with other management tools
 
-A servicing profile takes precedence over Microsoft 365 Apps update-related configurations set by other management tools, such as Microsoft Intune or the Office Deployment Tool. The servicing profile affects all Microsoft 365 Apps installations that meet the above requirements regardless of existing management tools in your environment. If you’re using these management tools, you may want to disable them, but it isn't required.
+A servicing profile takes precedence over existing settings related to Microsoft 365 Apps updates. E.g., settings made by the Office Deployment Tool or policies set through Microsoft Intune's configuration profiles. Servicing profile will do so for all devices which are in-scope, regardless of the current management method or directory service membership. If you’re using other management tools, you may want to disable the Microsoft 365 Apps update-related settings them, but it isn't required.
 
 >[!NOTE]
 > Servicing Profile will not change the update settings of other products like Windows or Edge.
 >
-> It will also not prevent management solutions from reinstalling the Microsoft 365 Apps with a different update channel. If you are using Microsoft Intune, make sure that the update channel in the Microsoft 365 Apps app is set to Monthly Enterprise Channel for in-scope devices. Otherwise Intune will trigger reinstalls of the Microsoft 365 Apps in order to restore the update channel selected in the app configuration. See [Explained - Your options for deploying Microsoft 365 Apps with Microsoft Intune](https://youtu.be/fA8lcnRXmkI?si=dBr772yMHbjvrNft&t=168) for more details.
+> It will also not prevent management solutions from reinstalling the Microsoft 365 Apps, e.g. with a different update channel. If you are using Microsoft Intune, make sure that the update channel in the Microsoft 365 Apps app is set to Monthly Enterprise Channel for targeted devices. Otherwise Intune will trigger reinstalls of the Microsoft 365 Apps in order to restore the update channel selected in the app configuration. See [Explained - Your options for deploying Microsoft 365 Apps with Microsoft Intune](https://youtu.be/fA8lcnRXmkI?si=dBr772yMHbjvrNft&t=168) for more details.
 
 ## How to apply the servicing profile to a device
 
@@ -80,7 +80,7 @@ Within the **Devices** tab, you can see the update status of these devices and v
 
 If you're experiencing issues with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department.
 
-To start, select the roll back action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Azure Active Directory groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
+To start, select the rollback action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Azure Active Directory groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
 
 Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will update automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month. You can also cancel the rollback action if the underlying issue has been resolved prior to the next version being available.
 
