@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Provide guidance to admins on how to switch update channel to Current Channel for Microsoft 365 Apps to prepare for Copilot"
-ms.date: 08/28/2023
+description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Microsoft Configuration Manager"
+ms.date: 08/30/2023
 ---
 
 # Move devices to Current Channel using Microsoft Configuration Manager
@@ -20,9 +20,11 @@ At this time, participants of the [Microsoft 365 Copilot Early Access Program (E
 
 We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the future.
 
-> [!NOTE] This article is solely focused on preparing your Microsoft 365 Apps for the Copilot Early Access Program (EAP). Other Copilot initiatives are not covered by this documentation.
+> [!NOTE]
+> This article is solely focused on preparing your Microsoft 365 Apps for the Copilot Early Access Program (EAP). Other Copilot initiatives are not covered by this documentation.
 
-> [!NOTE] The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
+> [!NOTE]
+> The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
 This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Configuration Manager. As Current Channel is receiving updates on a fast cadence, a best practise is to leverage the Office CDN instead. The implementation steps below will walk you through the process of detaching devices from COnfiguration Manager's update control over Microsoft 365 Apps and redirecting those to the Office CDN.
@@ -35,7 +37,7 @@ If you are managing your Microsoft 365 Apps updates through other technologies, 
 ## Pre-Checks
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN for updates leveraging Office update policies. For Current Channel this is highly recommended, as the update frequency is not on a set schedule, occurs multiple times a month, and offers a shorter support duration.
 1.	Verify that your network allows devices to access the Microsoft CDN directly or through a proxy.
-2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](https://learn.microsoft.com/deployoffice/delivery-optimization) to help reduce the traffic on your internet links.
+2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../delivery-optimization.md) to help reduce the traffic on your internet links.
 
 ## Implementation
 In this section we will cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune. 
@@ -89,7 +91,7 @@ Microsoft 365 Copilot
 - [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566)
 
 Microsoft 365 Apps Channel Management
-- [Change the Microsoft 365 Apps update channel for devices in your organization](https://learn.microsoft.com/deployoffice/updates/change-update-channels)
+- [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md)
 -	[Managing Update Channels for Microsoft 365 Apps](https://www.youtube.com/watch?v=rIpoloAZnSg) on YouTube
 -	[Explained - Microsoft 365 Apps Update Channels](https://www.youtube.com/watch?v=eNn4PDkmo7s) on YouTube
 
