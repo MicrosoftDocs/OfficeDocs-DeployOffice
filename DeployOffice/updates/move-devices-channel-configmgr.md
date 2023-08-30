@@ -27,10 +27,9 @@ We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Configuration Manager. As Current Channel is receiving updates on a fast cadence, a best practise is to leverage the Office CDN instead. The implementation steps below will walk you through the process of detaching devices from COnfiguration Manager's update control over Microsoft 365 Apps and redirecting those to the Office CDN.
+This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Configuration Manager. As Current Channel is receiving updates on a fast cadence, a best practise is to leverage the Office CDN instead. Managing Current Channel updates through the Microsoft Configuration Manager infrastructure is certainly possible, but generates a lot of church on the network and distribution points.
 
-
-
+The implementation covers how to separate a subset of devices out, assign client policies to lift the Configuration Manager’s control over Microsoft 365 Apps updates to them and redirect them to the Office CDN. Going forward, those devices will receive updates directly from the Office CDN and no longer from the Configuration Manager infrastructure.
 
 If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
 
@@ -40,50 +39,33 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../delivery-optimization.md) to help reduce the traffic on your internet links.
 
 ## Implementation
-In this section we will cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune. 
 
-### Create a security group
-1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](https://learn.microsoft.com/azure/active-directory/fundamentals/groups-view-azure-portal).
-2.	Add the computer objects to this security group that need to be moved to Current Channel and have update management applied to. 
+### Create dynamic collections
+For an easier overview of the different update channels in your environment, we recommend to set up dynamic collections for each channel:
+1.	Implement one collection for each update channel in your environment as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels).
+2.	Implement one collection which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../deployoffice/fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
 
-### Create a configuration profile
-Create a new configuration profile in Microsoft Intune for Current Channel. Refer to the following steps:
-1.	Sign in to [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) with an account that has the Intune Administrator role.
-2.	From the left navigation, click **Devices**.
-3.	Under **Policy**, click **Configuration profiles**.
-4.	From the **Devices | Configuration profile**s page, click **+ Create profile**.
-5.	From the **Create a profile** flyout, select the following and click **Create**:
-    - Platform: Windows 10 and later
-    - Profile type: Settings catalog
-6.	From the **Create profile** page, on the **Basics** tab, provide a name for this profile and click **Next**. For example: **Profile – Microsoft 365 Apps on CC**.
-7.	From the **Configuration settings** tab, click **+Add settings**.
-8.	From the **Settings picker** flyout, select **Microsoft Office 2016 (Machine) > Updates**.
-9.	On the lower-third of the flyout, mark the checkboxes for the settings listed below and apply the corresponding configuration. 
+### Create collection with devices to move
+Create another collection with all devices which are slated to move to the Current Channel. We will use this collection to target devices with adjusted client policies. Devices which have finished the switch to Current Channel will be automatically removed from this collection.
 
+1.	Create a new collection and add all devices which should be switched to Current Channel.
+2.	Add the previously created dynamic collection which captures devices on Current Channel as an Exclude to this collection. This will remove devices once they have switched and gives you a better overview which devices still have to move.
 
-|**Setting Name**  |**Configuration**  |
-|:---|:---|
-|Enable Automatic Updates|Enabled|
-|Hide option to enable or disable updates|Enabled|
-|Hide update notifications|Disabled|
-|Office 365 Client Management|Disabled|
-|Update Channel|Enabled → Current Channel|
-|Update Deadline|Enabled → 1|
-|Update Path|Enabled → http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60|
-|Target Version|Disabled|
+### Create and assign a client policy
+Next, create a client policy which disables the Microsoft 365 Apps update management through Configuration Manager.
 
-10.	Click **Next**.
-11.	From the **Scope tags** tab, click **Next**.
-12.	From the **Assignments** tab, add your Current Channel security group and click **Next**. 
-13.	On the **Review + create** tab, click **Create**.
+1. In the Configuration Manager console, navigate to **Administration** > **Overview** > **Client Settings**. Create a new client policy.
+2. Click on **Software Updates** and change the option **Enable management of the Office 365 client agent** to **Disable**. Do not switch to **Not configured** as this will not lift the update control.
+3. Close the Wizard.
+4. Assign the client policy to the collection which contains your devices which should move to Current Channel. Ensure that the policy has the highest priority.
 
-## Monitor assignment
-Monitor the progress of your configuration profile assignment using the following steps:
-1.	From the left navigation, click **Devices**.
-2.	Under **Policy**, click **Configuration profiles**.
-3.	Locate the policy you want to monitor and select it. Review the status at the top of the profile page.
+### Assign Current Channel settings to devices
+Follow the steps in the [group policy](./move-devices-channel-group-policy.md) article to create and assign the proper update settings to the devices which should move to Current Channel.
 
-The Microsoft 365 Apps will perform the full update channel switch within the next 24 hours. It will switch from any channel to the latest build released into the Current Channel. Additional apps like Visio, Project or Access Runtime will be migrated to Current Channel as well and are updated in the same pass.
+## Monitor
+Start monitoring the collection with the devices slated to move to Current Channel. After those have sync'ed with Active Directory to get the new update settings and with the Configuration Manager infrastructure to disable its update control, devices will move to Current Channel with the next run of the Automatic Update task on the devices. Once the devices have moved, they will be dropped from the collection with the next evaluation cycle and be added to the collection which captures all Current Channel installations.
+
+Devices will switch from any channel to the latest build released into the Current Channel. Additional apps like Visio, Project or Access Runtime will be migrated to Current Channel as well and are updated in the same pass.
 
 ## Additional resources
 Microsoft 365 Copilot
@@ -94,4 +76,3 @@ Microsoft 365 Apps Channel Management
 - [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md)
 -	[Managing Update Channels for Microsoft 365 Apps](https://www.youtube.com/watch?v=rIpoloAZnSg) on YouTube
 -	[Explained - Microsoft 365 Apps Update Channels](https://www.youtube.com/watch?v=eNn4PDkmo7s) on YouTube
-
