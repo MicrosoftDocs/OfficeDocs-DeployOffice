@@ -40,7 +40,7 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 In this section, we cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune. 
 
 ### Create a security group
-1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](https://learn.microsoft.com/azure/active-directory/fundamentals/groups-view-azure-portal).
+1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
 2.	Add the computer objects to this security group that need to be moved to Current Channel and have update management applied to. 
 
 ### Create a configuration profile
