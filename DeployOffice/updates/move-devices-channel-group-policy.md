@@ -35,7 +35,7 @@ Before you begin, confirm that you have addressed the following requirements:
 
 ## Implementation
 ### Create a security group
-Create a security group as described in [Create a Group Account in Active Directory](https://learn.microsoft.com/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory). Add all computer objects that should move to Current Channel. You have to specify computer objects, using user objects doesn't work, as the group policy settings are applied on machine level.
+Create a security group as described in [Create a Group Account in Active Directory](/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory). Add all computer objects that should move to Current Channel. You have to specify computer objects, using user objects doesn't work, as the group policy settings are applied on machine level.
 
 ### Create a new Group Policy Object
 Create a new Group Policy Object with the settings to switch Microsoft 365 Apps to Current Channel. 
