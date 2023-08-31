@@ -8,8 +8,8 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Provide guidance to admins on how to switch update channel to Current Channel for Microsoft 365 Apps to prepare for Copilot"
-ms.date: 08/28/2023
+description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using group policies"
+ms.date: 08/31/2023
 ---
 
 # Move devices to Current Channel using Group Policies
@@ -17,9 +17,11 @@ ms.date: 08/28/2023
 ## Overview
 At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps to receive Copilot updates when they become available. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Active Direct-based group policies.
 
-> [!NOTE] This article is solely focused on preparing your Microsoft 365 Apps for the Copilot Early Access Program (EAP). Other Copilot initiatives are not covered by this documentation.
+> [!NOTE]
+> This article is solely focused on preparing your Microsoft 365 Apps for the Copilot Early Access Program (EAP). Other Copilot initiatives are not covered by this documentation.
 
-> [!NOTE] The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
+> [!NOTE]
+> The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
 This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service is not possible, as this service does not support the machine-based settings which need to be configured. If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
@@ -86,7 +88,7 @@ Microsoft 365 Copilot
 - [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566)
 
 Microsoft 365 Apps Channel Management
-- [Change the Microsoft 365 Apps update channel for devices in your organization](https://learn.microsoft.com/deployoffice/updates/change-update-channels)
+- [Change the Microsoft 365 Apps update channel for devices in your organization](./change-update-channels.md)
 -	[Managing Update Channels for Microsoft 365 Apps](https://www.youtube.com/watch?v=rIpoloAZnSg) on YouTube
 -	[Explained - Microsoft 365 Apps Update Channels](https://www.youtube.com/watch?v=eNn4PDkmo7s) on YouTube
 
