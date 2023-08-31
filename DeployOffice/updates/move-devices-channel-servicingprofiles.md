@@ -71,7 +71,7 @@ You can validate the implementation by monitoring the following aspects:
     - It switches from any channel to the latest build released into the Current Channel.
     - Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
 - Use the inventory in the Microsoft 365 Apps admin center to monitor progress.
-- It will switch from any channel to the latest build released into the Current Channel. Additional apps like Visio, Project or Access Runtime will be migrated to Current Channel as well and are updated in the same pass.
+- It will switch from any channel to the latest build released into the Current Channel. Other apps like Visio, Project or Access Runtime are migrated and updated to Current Channel in the same pass.
 
 ## More resources
 Microsoft 365 Copilot
