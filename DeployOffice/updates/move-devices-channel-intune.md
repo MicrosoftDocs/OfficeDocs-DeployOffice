@@ -27,7 +27,7 @@ We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Intune. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Configuration Manager](move-devices-channel-configmgr.md), [Group Policies](move-devices-channel-group-policy.md) or [Servicing Profiles](move-devices-channel-servicingprofile.md).
+This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Intune. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Configuration Manager](move-devices-channel-configmgr.md), [Group Policies](move-devices-channel-group-policy.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
 
 If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
 
