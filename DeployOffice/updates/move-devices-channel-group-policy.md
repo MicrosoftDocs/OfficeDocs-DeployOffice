@@ -24,7 +24,7 @@ At this time, participants of the [Microsoft 365 Copilot Early Access Program (E
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service is not possible, as this service does not support the machine-wide settings. If you are managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
+This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service isn't possible, as this service doesn't support machine-wide settings. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
 
 If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
 
@@ -35,7 +35,7 @@ Before you begin, confirm that you have addressed the following requirements:
 
 ## Implementation
 ### Create a security group
-Create a security group as described in [Create a Group Account in Active Directory](https://learn.microsoft.com/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory). Add all computer objects that should move to Current Channel. You have to specify computer objects, using user objects does not work, as the group policy settings are applied on machine level.
+Create a security group as described in [Create a Group Account in Active Directory](https://learn.microsoft.com/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory). Add all computer objects that should move to Current Channel. You have to specify computer objects, using user objects doesn't work, as the group policy settings are applied on machine level.
 
 ### Create a new Group Policy Object
 Create a new Group Policy Object with the settings to switch Microsoft 365 Apps to Current Channel. 
@@ -58,11 +58,11 @@ Create a new Group Policy Object with the settings to switch Microsoft 365 Apps 
 5.	Close the editor and review the **Settings** tab for your new GPO.
 
 ## Apply Security Filtering
-Next apply security filtering to ensure that only in-scope devices are targeted by the new group policy object. Otherwise other devices might switch to Current Channel as well.
+Next apply security filtering to ensure that only in-scope devices are targeted. Otherwise other devices might switch to Current Channel as well.
 1.	Open the Group Policy Management console.
 2.	Select the GPO that you created
 3.	Click on the **Scope** tab to view the GPO's scope.
-4.	Under the **Security Filtering** section, remove any entries that are not the security group that you want to filter the GPO by.
+4.	Under the **Security Filtering** section, remove any entries that aren't the security group that you want to filter the GPO by.
 5.	Add the security group that you have created previously.
 
 ## Linking to OU and Link order
