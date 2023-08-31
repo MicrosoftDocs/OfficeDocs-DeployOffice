@@ -43,7 +43,7 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 ### Create dynamic collections
 For an easier overview of the different update channels in your environment, we recommend to set up dynamic collections for each channel:
 1.	Implement one collection for each update channel in your environment as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels).
-2.	Implement one collection which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../deployoffice/fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
+2.	Implement one collection which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
 
 ### Create collection with devices to move
 Create another collection with all devices which are slated to move to the Current Channel. We will use this collection to target devices with adjusted client policies. Devices which have finished the switch to Current Channel will be automatically removed from this collection.
