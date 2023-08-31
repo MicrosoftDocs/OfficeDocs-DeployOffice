@@ -61,7 +61,7 @@ Create a new Group Policy Object with the settings to switch Microsoft 365 Apps 
 Next apply security filtering to ensure that only in-scope devices are targeted. Otherwise other devices might switch to Current Channel as well.
 1.	Open the Group Policy Management console.
 2.	Select the GPO that you created
-3.	Click on the **Scope** tab to view the GPO's scope.
+3.	Select the **Scope** tab to view the GPO's scope.
 4.	Under the **Security Filtering** section, remove any entries that aren't the security group that you want to filter the GPO by.
 5.	Add the security group that you have created previously.
 
@@ -69,7 +69,7 @@ Next apply security filtering to ensure that only in-scope devices are targeted.
 Finally, link the group policy object to an Organizational Unit (OU) which contains all targeted devices.
 1.	Navigate to the desired OU, to which you want to link a GPO.
 2.	Right click on this OU and select **Link an existing GPO**.
-3.	In the **Select GPO** dialog under Group Policy Objects, select the GPO and click **OK**.
+3.	In the **Select GPO** dialog under Group Policy Objects, select the GPO and Select **OK**.
 4.	Review the Linked Group Policy Objects and review the Link Order.
 5.	Review if the newly added GPO has the highest possible Link Order (for example, **Link Order** equals 1). This way other policies with potentially conflicting settings are overruled.
 
