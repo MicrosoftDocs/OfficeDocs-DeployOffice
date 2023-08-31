@@ -66,7 +66,7 @@ Create a new configuration profile in Microsoft Intune for Current Channel. Refe
 |Office 365 Client Management|Disabled|
 |Update Channel|Enabled → Current Channel|
 |Update Deadline|Enabled → 1|
-|Update Path|Enabled → http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60|
+|Update Path|Enabled → `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`|
 |Target Version|Disabled|
 
 10.	Click **Next**.
