@@ -76,7 +76,7 @@ Finally, link the group policy object to an Organizational Unit (OU) which conta
 ## Validation
 The final step is to test the GPO's application and if the update channel switches to Current Channel automatically.
 1.	Boot or reboot a computer that belongs to the security group.
-2.	Log on to the device, open a command prompt and run the "gpupdate /force" command to refresh the group policy settings.
+2.	Sign-in to the device, open a command prompt and run the "gpupdate /force" command to refresh the group policy settings.
 3.	Open the Registry Editor and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\ office\16.0\Common\officeupdate and verify if keys like updatebranch and updatepath exist and have the desired values.
 4.	Open the Task Scheduler, navigate to Microsoft\Office and run the Office Automatic Update 2.0 task manually.
 5.	Switch back to the registry and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration.
