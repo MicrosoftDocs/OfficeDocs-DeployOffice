@@ -16,7 +16,7 @@ ms.date: 08/31/2023
 
 ## Overview
 
-At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Servicing Profiles and Group Policies or Microsoft Intune.
+At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/en-us/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Servicing Profiles and Group Policies or Microsoft Intune.
 
 We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the future.
 
