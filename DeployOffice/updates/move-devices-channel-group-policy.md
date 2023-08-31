@@ -52,7 +52,7 @@ Create a new Group Policy Object with the settings to switch Microsoft 365 Apps 
 |Office 365 Client Management|Disabled|
 |Update Channel|Enabled → Current Channel|
 |Update Deadline|Enabled → 1|
-|Update Path|Enabled → http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60|
+|Update Path|Enabled → `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`|
 |Target Version|Disabled|
 
 5.	Close the editor and review the **Settings** tab for your new GPO.
