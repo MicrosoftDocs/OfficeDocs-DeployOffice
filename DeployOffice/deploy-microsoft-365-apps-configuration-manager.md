@@ -46,7 +46,7 @@ From an infrastructure standpoint, deploying Microsoft 365 Apps with Configurati
 
 Make sure to complete the following requirements as well:
 
-- The computer running the Configuration Manager console requires IE 11 or greater and needs internet access via HTTPS port 443. The Office 365 Client Installation Wizard uses a Windows standard web browser API to open https://config.office.com. If an internet proxy is used, the user must be able to access this URL.
+- The computer running the Configuration Manager console requires Microsoft Edge Webview2 runetime and needs internet access via HTTPS port 443. The Office 365 Client Installation Wizard uses a Windows standard web browser API to open https://config.office.com. If an internet proxy is used, the user must be able to access this URL.
 - Add the following sites to the Trusted Sites list if you have Enhanced Security Configuration enabled for IE (which is enabled by default on Windows Server): https://\*.office.com and https://\*.officeconfig.msocdn.com.
 
 ## Step 2: Create collections
