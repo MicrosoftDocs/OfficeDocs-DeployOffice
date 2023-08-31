@@ -16,7 +16,7 @@ ms.date: 08/31/2023
 
 ## Overview
 
-At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps to receive Copilot updates when they become available. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Microsoft Intune.
+At this time, participants of the [Microsoft 365 Copilot Early Access Program (EAP)](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) must be on the latest supported release of Current Channel for Microsoft 365 Apps. This article provides configuration guidance and best practices on how to prepare Microsoft 365 Apps for the Copilot EAP using Microsoft Intune.
 
 We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the future.
 
@@ -27,15 +27,17 @@ We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Intune. If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
+This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, using Microsoft Intune. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Configuration Manager](move-devices-channel-configmgr.md), [Group Policies](move-devices-channel-group-policy.md) or [Servicing Profiles](move-devices-channel-servicingprofile.md).
+
+If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
 
 ## Pre-Checks
-Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN for updates leveraging Office update policies. For Current Channel this is highly recommended, as the update frequency is not on a set schedule, occurs multiple times a month, and offers a shorter support duration.
+Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
 1.	Verify that your network allows devices to access the Microsoft CDN directly or through a proxy.
 2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../delivery-optimization.md) to help reduce the traffic on your internet links.
 
 ## Implementation
-In this section we will cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune. 
+In this section, we cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune. 
 
 ### Create a security group
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](https://learn.microsoft.com/azure/active-directory/fundamentals/groups-view-azure-portal).
@@ -53,7 +55,7 @@ Create a new configuration profile in Microsoft Intune for Current Channel. Refe
 6.	From the **Create profile** page, on the **Basics** tab, provide a name for this profile and click **Next**. For example: **Profile – Microsoft 365 Apps on CC**.
 7.	From the **Configuration settings** tab, click **+Add settings**.
 8.	From the **Settings picker** flyout, select **Microsoft Office 2016 (Machine) > Updates**.
-9.	On the lower-third of the flyout, mark the checkboxes for the settings listed below and apply the corresponding configuration. 
+9.	On the lower-third of the flyout, mark the checkboxes for the following settings and apply the corresponding configuration. 
 
 
 |**Setting Name**  |**Configuration**  |
@@ -78,9 +80,9 @@ Monitor the progress of your configuration profile assignment using the followin
 2.	Under **Policy**, click **Configuration profiles**.
 3.	Locate the policy you want to monitor and select it. Review the status at the top of the profile page.
 
-The Microsoft 365 Apps will perform the full update channel switch within the next 24 hours. It will switch from any channel to the latest build released into the Current Channel. Additional apps like Visio, Project or Access Runtime will be migrated to Current Channel as well and are updated in the same pass.
+The Microsoft 365 Apps perform the full update channel switch within the next 24 hours.evices switch from any channel to the latest build released into the Current Channel. Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
 
-## Additional resources
+## More resources
 Microsoft 365 Copilot
 - [Introducing the Microsoft 365 Copilot Early Access Program and new capabilities in Copilot](https://www.microsoft.com/en-us/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/)
 - [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566)
