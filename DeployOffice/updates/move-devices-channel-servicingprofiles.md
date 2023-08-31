@@ -38,7 +38,7 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 This section covers the recommended approach for moving devices to Current Channel that are currently managed with Servicing Profiles. It walks you through the necessary steps on how to exclude devices from the current profile and move them over to Current Channel using Microsoft Intune or Active Directory-based Group Policies.
 
 ### Create a security group
-1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](https://learn.microsoft.com/azure/active-directory/fundamentals/groups-view-azure-portal).
+1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for Current Channel devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
 2.	Add the computer objects to this security group that need to be moved to Current Channel and have update management applied to. 
 
 ### Exclude devices from Servicing Profile
