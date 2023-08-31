@@ -24,7 +24,7 @@ At this time, participants of the [Microsoft 365 Copilot Early Access Program (E
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service is not possible, as this service does not support the machine-wide settings. If you are managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md) or [Servicing Profiles](move-devices-channel-servicingprofile.md).
+This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service is not possible, as this service does not support the machine-wide settings. If you are managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
 
 If you are managing your Microsoft 365 Apps updates through other technologies, please refer to the articles on Intune, Configuration Manager or Servicing Profiles.
 
