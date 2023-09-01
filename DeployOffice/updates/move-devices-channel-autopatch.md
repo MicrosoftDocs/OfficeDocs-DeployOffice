@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: conceptual 
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier3
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Microsoft Autopatch"
 ms.date: 09/01/2023
@@ -41,7 +42,7 @@ To move a subset of devices to Current Channel, you can choose from two options:
 
 2. Disable update management for Microsoft 365 Apps in Windows Autopatch. 
     1. **Benefits**: This option keeps devices registered with Windows Autopatch for Windows Updates and reporting.
-    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set-up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot EAP. 
+    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot EAP. 
 
 ### Option 1: Remove devices from Windows Autopatch for Copilot EAP 
 To avoid disruption across your devices, plan your policy changes and timing accordingly.
