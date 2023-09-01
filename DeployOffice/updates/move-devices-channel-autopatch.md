@@ -34,14 +34,14 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 ## Implementation
 This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule).
 
-To move a subset of devices to Current Channel you can choose from two options:
+To move a subset of devices to Current Channel, you can choose from two options:
 1. Remove the devices for Copilot EAP from Windows Autopatch and configure updates using Microsoft Intune.  
-   1. **Benefits**: This option limits the policy changes to the subset of devices you are using for Copilot EAP, enabling you to target separate policy settings for Microsoft 365 Apps. 
+   1. **Benefits**: This option limits the policy changes to the subset of devices you're using for Copilot EAP, enabling you to target separate policy settings for Microsoft 365 Apps. 
    2. **Considerations**: This option removes update management for Windows Updates, requiring you to setup and manage standalone Windows Update for Business policies. 
 
 2. Disable update management for Microsoft 365 Apps in Windows Autopatch. 
     1. **Benefits**: This option keeps devices registered with Windows Autopatch for Windows Updates and reporting.
-    2. **Considerations**: This option removes update management for Microsoft 365 Apps across all Autopatch devices, requiring you to set up standalone update policies for all devices, versus those that are only used for Copilot EAP. 
+    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set-up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot EAP. 
 
 ### Option 1: Remove devices from Windows Autopatch for Copilot EAP 
 To avoid disruption across your devices, plan your policy changes and timing accordingly.
