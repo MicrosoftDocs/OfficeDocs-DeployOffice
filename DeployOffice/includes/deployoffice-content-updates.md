@@ -2,6 +2,18 @@
 
 
 
+## Week of August 28, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Microsoft Configuration Manager](/DeployOffice/updates/move-devices-channel-configmgr) | added |
+| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Group Policies](/DeployOffice/updates/move-devices-channel-group-policy) | added |
+| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Intune](/DeployOffice/updates/move-devices-channel-intune) | added |
+| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Servicing Profile](/DeployOffice/updates/move-devices-channel-servicingprofiles) | added |
+| 9/1/2023 | [Copilot - Move a subset of devices to Current Channel with Autopatch](/DeployOffice/updates/move-devices-channel-autopatch) | added |
+
+
 ## Week of August 21, 2023
 
 
