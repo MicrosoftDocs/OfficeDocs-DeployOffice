@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Microsoft Configuration Manager"
-ms.date: 08/31/2023
+ms.date: 09/04/2023
 ---
 
 # Move devices to Current Channel using Microsoft Configuration Manager
@@ -31,7 +31,7 @@ This article covers recommendations for moving a subset of devices to Current Ch
 
 The implementation covers how to separate a subset of devices out, assign client policies to lift the Configuration Manager’s control over Microsoft 365 Apps updates to them and redirect them to the Office CDN. Going forward, those devices receive updates directly from the Office CDN and no longer from the Configuration Manager infrastructure.
 
-If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Group Policies](move-devices-channel-group-policy.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
+If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Group Policies](move-devices-channel-group-policy.md), [Servicing Profiles](move-devices-channel-servicingprofiles.md), or [Autopatch](move-devices-channel-autopatch.md).
 
 ## Pre-Checks
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
