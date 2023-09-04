@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Microsoft Configuration Manager"
 ms.date: 09/04/2023
 ---
