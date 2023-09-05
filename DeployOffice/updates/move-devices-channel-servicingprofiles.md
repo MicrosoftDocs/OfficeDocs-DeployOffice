@@ -8,8 +8,9 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using servicing profiles "
-ms.date: 08/31/2023
+ms.date: 09/04/2023
 ---
 
 # Move devices to Current Channel using servicing profiles
@@ -27,7 +28,7 @@ We expect support for Microsoft 365 Copilot on Monthly Enterprise Channel in the
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps for current Servicing Profiles users. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Group Policies](move-devices-channel-group-policy.md) or [Configuration Manager](move-devices-channel-configmgr.md).
+This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps for current Servicing Profiles users. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Group Policies](move-devices-channel-group-policy.md), [Configuration Manager](move-devices-channel-configmgr.md), or [Autopatch](move-devices-channel-autopatch.md).
 
 ## Pre-Checks
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
@@ -42,13 +43,13 @@ This section covers the recommended approach for moving devices to Current Chann
 2.	Add the computer objects to this security group that need to be moved to Current Channel and have update management applied to. 
 
 ### Exclude devices from Servicing Profile
-Devices which have their Microsoft 365 Apps updates currently managed through Servicing Profiles ignore other update-related policies. Thus, you need to exclude those devices from Servicing Profile first, so they get released from the profile's update control.
+Devices that have their Microsoft 365 Apps updates currently managed through Servicing Profiles ignore other update-related policies. Thus, you need to exclude those devices from Servicing Profile first, so they get released from the profile's update control.
 
 1. Log into the [Microsoft 365 Apps admin center](https://config.office.com) and navigate to **Servicing** > **Monthly Enterprise**.
 2. Switch to the **Settings** tab, the **Device Selection Criteria** page should open automatically.
 3. Change the option **Exclude devices** from **Don't exclude any devices** to **Exclude specific groups of devices** if it isn't select already.
 4. Add the group that you have created previously.
-5. Scroll down and click **Save**.
+5. Scroll down and Select **Save**.
 
 > [!NOTE]
 > It might take up to 24 hours for the service to process the change and send the instructions to offboard the Servicing Profile's update management to devices. 
@@ -71,7 +72,7 @@ You can validate the implementation by monitoring the following aspects:
     - It switches from any channel to the latest build released into the Current Channel.
     - Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
 - Use the inventory in the Microsoft 365 Apps admin center to monitor progress.
-- It will switch from any channel to the latest build released into the Current Channel. Other apps like Visio, Project or Access Runtime are migrated and updated to Current Channel in the same pass.
+- Microsoft 365 Apps switch from any channel to the latest build released into the Current Channel. Other apps like Visio, Project or Access Runtime are migrated and updated to Current Channel in the same pass.
 
 ## More resources
 Microsoft 365 Copilot

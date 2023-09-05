@@ -8,6 +8,7 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using group policies"
 ms.date: 09/01/2023
 ---
@@ -24,7 +25,7 @@ At this time, participants of the [Microsoft 365 Copilot Early Access Program (E
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service isn't possible, as this service doesn't support machine-wide settings. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md) or [Servicing Profiles](move-devices-channel-servicingprofiles.md).
+This article covers how to move a subset of devices to Current Channel for Microsoft 365 Apps, using Active Directory-based group policies. Using the Office Cloud Policy service isn't possible, as this service doesn't support machine-wide settings. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md), [Servicing Profiles](move-devices-channel-servicingprofiles.md), or [Autopatch](move-devices-channel-autopatch.md).
 
 ## Pre-Checks
 Before you begin, confirm that you have addressed the following requirements:
