@@ -16,7 +16,7 @@ description: "Deployment validation enables admins to test Microsoft 365 updates
 ms.date: 10/01/2023
 ---
 
-# Overview of deployment validation
+# Overview of deployment validation in the Microsoft 365 Apps admin center
 
 Microsoft is dedicated to providing admins with tools that streamline processes and reduce risks. To that end, we're introducing deployment validation, an innovative feature now included within cloud update in the Microsoft 365 Apps admin center. This feature offers a holistic approach to verifying the stability and efficiency of updates on a subset group of devices before a full-scale rollout. By allowing for a way to validate with confidence, we aim to make it easier to switch to Monthly Enterprise Channel.
 
@@ -24,7 +24,6 @@ Microsoft is dedicated to providing admins with tools that streamline processes 
 
 - **Efficiency & risk mitigation:** By testing Microsoft 365 builds on a smaller subset first, admins can address potential app compatibility concerns. This reduces the time and effort traditionally required for widespread testing. This approach significantly reduces the risk associated with monthly updates.
 - **Visibility & confidence:** Deployment validation provides post-deployment health summaries for the initial wave of devices. With this, admins can determine the health of Microsoft 365 Apps and add-ins before and after an update. This invaluable insight boosts confidence and enables a smoother transition to monthly updates.
-- **User feedback:** Admins aren't limited to quantitative data; they can also garner qualitative feedback from designated validators within the first wave, refining the deployment process based on actual user experiences.
 
 ## Requirements for using deployment validation
 
