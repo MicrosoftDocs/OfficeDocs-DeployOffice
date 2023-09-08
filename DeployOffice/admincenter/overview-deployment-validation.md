@@ -43,33 +43,33 @@ Deployment validation will be universally accessible to all admins deploying rol
 To fully use deployment validation:
 - Confirm that diagnostic data is activated for your devices at the necessary level.
 - Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This promotes early issue detection and timely resolution, further minimizing potential risks.
-- 
-- ## Deployment validation FAQ
-- 
-- ### What is deployment validation?
-- Deployment validation is a feature that allows admins to reduce the time and effort needed for testing by providing a means to validate live in production.
-- 
-- ### What are the goals of deployment validation?
-- The ultimate goals are to modernize the validation process, reduce the app compatibility risk and effort needed for testing, and provide admins with more visibility and control over build rollout (and its effect).
-- 
-- ### When should I use deployment validation?
-- It's meant to give you confidence that a build is ready to be rolled out to the devices in your tenant. It achieves this by analyzing performance and reliability signals from your devices comparing before/after rollout in wave one.
-- 
-- ### When should I avoid using deployment validation?
-- This feature isn't for you if you don't have application compatibility (especially add-ins) and presently, don't carry out manual validation of Microsoft 365 Apps builds before a rollout.
-- 
-- ### What is the expected outcome of health validation scenarios?
-- The expected outcome of health validation scenarios is to prove that the introduction of a new build doesn’t affect the health of the tenant negatively.
-- 
-- ### Is deployment validation supported for all customers?
-- No. Deployment validation is supported for Monthly Enterprise Channel with wave customization (with at least two waves defined).
-- 
-- ### What is the minimum number of devices required in wave one to view deployment validation results?
-- You need at least 10 devices that have had a session in the seven days both before and after a patch Tuesday.
-- 
-- ### Beyond the number of devices, what else should be considered for wave one to maximize the value of deployment validation?
-- For optimal value, wave one should be a representative set of the wider tenant. This includes diverse usage scenarios, and comprehensive app and add-in coverage.
-- 
-- ### I've designated only IT users for wave one and prefer not to add other pilot users to this wave. Can I access the deployment validation feature in subsequent waves, like wave two?
-- 
-- No. The feature is meant to detect issues early by using a sample of real production users who represent different departments and their realistic usage scenarios. The detection is only as good as the representation. By delaying validation to later waves, we're deferring risk not minimizing it.
+ 
+## Deployment validation FAQ
+
+### What is deployment validation?
+Deployment validation is a feature that allows admins to reduce the time and effort needed for testing by providing a means to validate live in production.
+
+### What are the goals of deployment validation?
+The ultimate goals are to modernize the validation process, reduce the app compatibility risk and effort needed for testing, and provide admins with more visibility and control over build rollout (and its effect).
+ 
+### When should I use deployment validation?
+It's meant to give you confidence that a build is ready to be rolled out to the devices in your tenant. It achieves this by analyzing performance and reliability signals from your devices comparing before/after rollout in wave one.
+
+### When should I avoid using deployment validation?
+This feature isn't for you if you don't have application compatibility (especially add-ins) and presently, don't carry out manual validation of Microsoft 365 Apps builds before a rollout.
+
+### What is the expected outcome of health validation scenarios?
+The expected outcome of health validation scenarios is to prove that the introduction of a new build doesn’t affect the health of the tenant negatively.
+
+### Is deployment validation supported for all customers?
+No. Deployment validation is supported for Monthly Enterprise Channel with wave customization (with at least two waves defined).
+
+### What is the minimum number of devices required in wave one to view deployment validation results?
+You need at least 10 devices that have had a session in the seven days both before and after a patch Tuesday.
+
+### Beyond the number of devices, what else should be considered for wave one to maximize the value of deployment validation?
+For optimal value, wave one should be a representative set of the wider tenant. This includes diverse usage scenarios, and comprehensive app and add-in coverage.
+
+### I've designated only IT users for wave one and prefer not to add other pilot users to this wave. Can I access the deployment validation feature in subsequent waves, like wave two?
+
+No. The feature is meant to detect issues early by using a sample of real production users who represent different departments and their realistic usage scenarios. The detection is only as good as the representation. By delaying validation to later waves, we're deferring risk not minimizing it.
