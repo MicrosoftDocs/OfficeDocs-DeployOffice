@@ -62,6 +62,21 @@ You have the ability to configure various controls at the tenant level. These co
 
 Delve deeper into individual profiles, allowing a more thorough examination of progress, deployment validation, and signals. Take profile-level actions to address any concerns, such as pausing, rolling back, or skipping updates, depending on the profile you're in. Additionally, you can configure individual profiles, such as Semi-Annual Enterprise Channel and Monthly Enterprise Channel profiles into waves as needed.
 
+### Move devices to another update channel
+
+For admins looking to effectively manage the update channel for their devices, we introduce a seamless approach in the Microsoft 365 Apps admin center. This is the recommended method to ensure that devices or groups are aligned with the desired update channel. It not only streamlines the process but also optimizes control over update channels. 
+
+> [!NOTE]
+> If you are participating in the Microsoft 365 Copilot Early Access Program (EAP), your device must be on the latest supported release of Current Channel. For more information, see [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/)
+
+1. **Sign into Microsoft 365 Apps admin center** and select **Inventory** to display a list of your devices. You'll find detailed information about each device, including its Office version and update channel.
+2. Choose **Move device to another channel**.
+3. In the flyout that appears, select the channel you would like to move your device to. Just below, you'll notice a search box that lets you pick the devices or groups you're aiming to move.
+4. After selecting your desired devices, choose **Move devices** to set the move in motion.
+5. Your device will transition to the new update channel during the next Microsoft 365 update cycle. This usually takes place within 12-24 hours. Keep an eye on the **Inventory** tab for any updates. Rest assured, if there's anything that requires your attention, we'll promptly notify you.
+
+Make the most of this recommended feature to streamline your update processes and ensure that your devices are always in sync with your desired update preferences.
+
 ## Priority access FAQ
 
 - **What happens if I sign up for priority access to cloud update?**
