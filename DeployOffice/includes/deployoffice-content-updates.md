@@ -2,6 +2,17 @@
 
 
 
+## Week of September 04, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/5/2023 | [Copilot - Move a subset of devices to Current Channel with Servicing Profile](/DeployOffice/updates/move-devices-channel-servicingprofiles) | modified |
+| 9/7/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | added |
+| 9/8/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
+| 9/8/2023 | [Sign up for cloud update](/DeployOffice/other/signup-for-cloud-update) | modified |
+
+
 ## Week of August 28, 2023
 
 
