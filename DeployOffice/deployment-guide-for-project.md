@@ -42,11 +42,11 @@ If you want to have more control over how Project is deployed to your users, you
 1. [Download](https://www.microsoft.com/download/details.aspx?id=49117) the Office Deployment Tool from the Microsoft Download Center.
 
 2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to install Project Online Desktop Client.
-   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field emtpy and choose your version in the **Project** dropdown.
-   - We also recommend to review the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./fieldnotes/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
+   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
+   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./fieldnotes/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
 
 3. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy Project Online Desktop Client on your users' devices.
-   - We recommend to install without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
+   - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project.
 
@@ -57,8 +57,8 @@ Here are the general steps to deploy a volume licensed version of Project Profes
 1. Purchase Project 2021 as part of a volume licensing agreement.
 
 2. Use the Office Deployment Tool and a configuration.xml file to install Project 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc2021/deploy.md).
-   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field emtpy and choose your version in the **Project** dropdown.
-   - We recommend to install without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
+   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
+   - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Project.
   
@@ -74,8 +74,8 @@ Here are the general steps to deploy a volume licensed version of Project Profes
 1. Purchase Project 2019 as part of a volume licensing agreement.
 
 2. Use the Office Deployment Tool and a configuration.xml file to install Project 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
-   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field emtpy and choose your version in the **Project** dropdown.
-   - We recommend to install without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
+   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
+   - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Project.
   
