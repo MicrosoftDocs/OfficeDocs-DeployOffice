@@ -10,8 +10,8 @@ ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
-description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2019 for Mac"
-ms.date: 07/01/2023
+description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac"
+ms.date: 09/13/2023
 ---
 
 # Set preferences for Outlook for Mac
@@ -53,6 +53,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable Junk settings](#disable-junk-settings)
 - [Disable Pride theme](#disable-pride-theme)
 - [Disable signatures](#disable-signatures)
+- [Disable retention messages](#disable-retention-messages)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
 - [Disable Teams online meetings](#disable-teams-online-meetings)
@@ -402,6 +403,20 @@ Prevent users from applying Pride themes to Outlook.
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability|16.73 |
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable retention messages
+
+Hide information about message retention settings when viewing message contents.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|HideRetentionPolicyInfobar|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|16.78 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
 ## Related articles
