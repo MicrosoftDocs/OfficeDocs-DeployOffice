@@ -146,7 +146,6 @@ Beyond adhering to regulations, we prioritize an open dialogue with our customer
 
 - Microsoft 365 Copilot use Azure OpenAI services for processing, not OpenAI’s publicly available services.
 - Microsoft 365 Copilot uses a combination of Generative Pre-Trained Transformers (GPT) models, including GPT 4. GPT is an example of a large language model (LLM).
-- The [privacy controls for connected experiences](manage-privacy-controls.md#policy-settings-for-connected-experiences) available with Microsoft 365 Apps don't apply to Microsoft 365 Copilot.
 - For information about the difference between Microsoft 365 Copilot and ChatGPT, see [ChatGPT vs. Microsoft 365 Copilot: What's the difference?](https://support.microsoft.com/topic/8fdec864-72b1-46e1-afcb-8c12280d712f).
 
 ### Committed to responsible AI
