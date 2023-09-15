@@ -1969,6 +1969,65 @@ specific device)
 
 - **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
 
+### Office.Outlook.Mac.AddAccountConfigSession
+
+This event is triggered when a user tries to add their account into Outlook Mac. The data from this event is used to build the user action funnel in the "add account session."
+
+The following fields are collected:
+
+- **AccountCount** - Total account number
+
+- **AccountFlowSessionIdentifier** - UUID to track the “add account” session
+
+- **Activation Type** - Client activated license type
+
+- **CommercialAccountCount** - Total commercial account number
+
+- **ConfigurePhase** - The current phase the user is in, in the “add account” process
+
+- **DaysPassedOnDevice** - How many days have passed since the app was installed on device
+
+- **EntryPoint** - The entry point to add the account
+
+- **EUPlacementPref** - Account's EU Placement preference
+
+- **HasCommercialAccount** - Is there any commercial account
+
+- **HasCompletedFirstRun** - Has app completed first run before going through this session
+
+- **HasEUPlacementPref** - If the account has EU placement preference set
+
+- **HasPremiumAccount** - Is there any paid account
+
+- **InstallSource** - Where the client is installed from
+
+- **IsAADC** - Is there any account that has not passed the age eligibility check
+
+- **IsAppStoreSKU** - Is the account downloaded from Apple App store
+
+- **IsFreenix** - Is the client in freenix mode
+
+- **IsFRESession** - Is the session a first run time experience
+
+- **IsLicensed** - Is the client licensed
+
+- **IsPreview** - Is the client in Phoenix mode
+
+- **IsSessionAdsEligible** - Is the client eligible for Ads
+
+- **IsSessionAdsSupported** - Is the Ads supported by the client
+
+- **License Type** - Client license type
+
+- **PremiumAccountsCount** - Total premium account number
+
+- **Result** - Add account session is successful
+
+- **ServiceProviderType** - What is the current sync type of the account
+
+- **SourceTagDescription** - The description of the current event
+
+- **SyncType** - What is the current sync type of the account
 
 ### OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -4926,13 +4985,15 @@ The following fields are collected:
 
 ### Office.Dime.Sdk.Health
 
-The event captures data that helps in monitoring the health of the components that host the in-app purchase flow within Office Mobile app. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription. 
+This event captures data that helps in monitoring the health of the components that host the in-app purchase flow for a Microsoft 365 subscription to ensure the flow is working as expected.
 
 The following fields are collected:
 
 - **Data_ActivityErrorDescription** - Error description of the activity
 
 - **Data_ActivityErrorMessage** - Error message of the activity 
+ 
+- **Data_ActivityId** - ActivityId to correlate dime with partners that use ActivityId
 
 - **Data_CampaignId** - Campaign ID for attribution
 
@@ -5174,6 +5235,29 @@ The following fields are collected:
 
   - **Qualified** – Identifies whether the user qualified for the sign in enforcement
 
+### Office.Licensing.Erfm.ErfmSubTriggerEvent
+
+This event is triggered when the user goes through the Licensing UX flow in order to attempt to go from an unlicensed to a licensed state. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+- **AdsEnabled** - This informs us whether ads are enabled for the client.
+
+- **Flow** - This informs us of the exact sub-flow of the Licensing UX that the user is going through.
+
+### Office.Licensing.Erfm.InitializeERFM
+
+This event is triggered for users running Microsoft Office under Enhanced Reduced Functionality Mode. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+- **AdsEnabled** - This informs us whether ads are enabled for the client.
+
+- **FailureReason** - This informs us of the type of failure encountered by the ad platform.
+
+- **TryToReconstructToolbarsResult** - This informs us whether toolbars were successfully reconstructed following initialization.
+
+
 ### Office.Licensing.ExpirationDialogShown
 
 This is collected when we show the expiration dialog to the user that says that their license has expired. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
@@ -5265,6 +5349,14 @@ The following fields are collected:
 - **MainFlow** - Entry flow type of Licensing Validation User Experience (LVUX) session.
 
 - **UserAction** - User action taken on LVUX ReactNative dialog.
+
+### Office.Licensing.Flows.InstallGrace
+
+This event is triggered when Office installs a grace license. The data is used to make sure this method of activating Microsoft Office is performing as expected.
+ 
+The following fields are collected:
+
+- **GraceInstallResult** - This tells us whether we were successful installing the grace license
 
 
 ### Office.Licensing.Flows.PurchaseProduct
@@ -5465,6 +5557,9 @@ The following fields are collected:
 
 - **Data_Scenario** - tells us the scenario where the redemption occurred for.
 
+- **Data_ShowingSignIn** - tells us whether as part of redemption we decided to show a Sign In prompt or not.
+
+- **Data_UsingRefactoredFlow** - identifies the version for the redemption process.
 
 ### Office.Licensing.Licensed
 
@@ -5512,6 +5607,14 @@ The following fields are collected:
   - **FederationProvider** – A string that identifies the federation provider for the currently logged in user
 
   - **IdentityProvider** – A string that identifies the identity provider for the currently logged in user
+
+### Office.Licensing.Flows.LoadIdentityTicketInSignInProvider
+
+This event is triggered when we to load the user's identity ticket to see if the user has an Office entitlement or not. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+  - None
 
 ### Office.Licensing.LVUX.EULAExplicitCrash 
 
@@ -18280,19 +18383,35 @@ The event is triggered by a graceful application termination for Office client a
 The following fields are collected:
 
 - **AppBuild** - Build version identifier for the affected process.
+
 - **AppMajor** - Major version identifier for the affected process.
+
 - **AppMinor** - Minor version identifier for the affected process.
+
 - **AppRevision** - Build version identifier for the affected process.
+
 - **BootCompleted** – Did Office process complete boot.
+
 - **DetectionTime** - The time when the unexpected exit was detected.
+
 - **EcsETag** - An experiment identifier for the process.
+
 - **HasEdit** – Was document editing occurring during the Office process.
+
 - **HasOpen** – Was document opened during the Office process.
+
 - **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+ 
+- **LicenseId** - The licensing information of the user.
+
 - **OfficeUILang** – Language of the Office process.
+
 - **PreviousBuild** - Previously installed build version.
+
 - **SafeMode** – Was Office process in safe mode.
+
 - **SessionId** - A unique identifier of the process.
+
 - **SessionInitTime** - The time when the affected process started.
 
 ### Office.System.GracefulExit.GracefulAppExitDesktopRealTime
