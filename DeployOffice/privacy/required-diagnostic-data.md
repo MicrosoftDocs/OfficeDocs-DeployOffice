@@ -193,7 +193,7 @@ This category contains the following fields:
 
   - **Flags** - Bitmask tracking flags applicable to an entire session, currently primarily focused on sampling and diagnostic data options. Allows us to control how a given session behaves in relation to the diagnostic data that the session generates.
 
-  - **HostAppName** - Identifies the host app name that launches a sub-app. Apps like Office Mobile (Android) can launch Word, Excel, and PowerPoint sub-apps. For such sub-apps, the host app is OfficeMobile
+  - **HostAppName** - Identifies the host app name that launches a sub-app. Apps like Microsoft 365 mobile app (Android) can launch Word, Excel, and PowerPoint sub-apps. For such sub-apps, the host app is OfficeMobile
 
   - **HostSessionId** - Uniquely identifies the host app session for a sub-app
 
@@ -205,9 +205,9 @@ This category contains the following fields:
 
   - **SamplingClientIdValue** - The ID of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
   
- - **SubAppName** - For Office Mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field will report the value of “Word”.
+ - **SubAppName** - For Microsoft 365 mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field will report the value of “Word”.
 
- - **VirtualizationType** - Type of virtualization if Office is running in one. The possible values are: 
+ - **VirtualizationType** - Type of virtualization if Office is running in one. The possible values are:
     - 0 = None
     - 1 = Windows Virtual Desktop
     - 2 = Windows Defender Application Guard
@@ -3111,7 +3111,7 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesAvailability
 
-We are enabling Android Package Kit (APK) expansion files for the Office mobile app. APK Expansion files are supplementary resource files that Android app developers can publish along with their app. To understand the reliability of the expansion files, we log a flag indicating whether expansion files are available or not at every boot.
+We are enabling Android Package Kit (APK) expansion files for the Microsoft 365 mobile app. APK Expansion files are supplementary resource files that Android app developers can publish along with their app. To understand the reliability of the expansion files, we log a flag indicating whether expansion files are available or not at every boot.
 
 The following fields are collected:
 
@@ -3119,7 +3119,7 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesDownloader
 
-We are enabling Android Package Kit (APK) expansion files for the Office mobile app. APK Expansion files are supplementary resource files, that Android app developers can publish along with their app.  To understand the reliability of our expansion file download mechanism, we are logging a flag indicating whether we are successfully able to download expansion files.
+We are enabling Android Package Kit (APK) expansion files for the Microsoft 365 mobile app. APK Expansion files are supplementary resource files, that Android app developers can publish along with their app.  To understand the reliability of our expansion file download mechanism, we are logging a flag indicating whether we are successfully able to download expansion files.
 
 The following fields are collected: 
 
@@ -3155,13 +3155,13 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneComplianceRequest
 
-This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
+This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
 
 No data fields are collected.
 
 #### Office.Android.Intune.IntuneComplianceStatus
 
-This event is collected for Office applications running on Android, including Office mobile, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
+This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
   
 The following fields are collected:
 
@@ -6333,7 +6333,7 @@ The event is collected for the Office app for iOS. It records when a .pdf open, 
 
 #### Office.OfficeMobile.Search.VoiceSearchUsage
 
-This event is triggered when the user taps on the microphone in the search box inside the Office Mobile app. The event will track the usage of voice search and also time taken to establish service request post tap on microphone. This data will be used to track the usage and health of the feature.
+This event is triggered when the user taps on the microphone in the search box inside the Microsoft 365 mobile app. The event will track the usage of voice search and also time taken to establish service request post tap on microphone. This data will be used to track the usage and health of the feature.
 
 The following fields are collected:
 
@@ -11896,7 +11896,7 @@ The following fields are collected:
 
 #### Office.OfficeMobile.FRE.UpsellBlockedAADC
  
-This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Office Mobile app. 
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in the Microsoft 365 mobile app. 
 We will use the data to summarize how many upsell opportunities were lost due to age compliance.
  
 The following fields are collected: 
@@ -13491,7 +13491,7 @@ The following fields are collected:
 
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
 
-This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription.
+This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Microsoft 365 mobile app when user opts to buy an Microsoft 365 subscription.
 
 The following fields are collected:
 
@@ -15057,7 +15057,7 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesErrors
 
-Android Package Kit (APK) expansion files for the Office mobile app are supplementary resource files that Android app developers can publish along with their app. To make our Expansion files download mechanism more reliable, we are logging the cause of errors that occur either in downloading the expansion files or while reading the downloaded expansion files.
+Android Package Kit (APK) expansion files for the Microsoft 365 mobile app are supplementary resource files that Android app developers can publish along with their app. To make our Expansion files download mechanism more reliable, we are logging the cause of errors that occur either in downloading the expansion files or while reading the downloaded expansion files.
 
 The following fields are collected:
 
@@ -15403,7 +15403,7 @@ The following fields are collected:
 
 #### Office.OfficeMobile.PersonalizedCampaigning.Errors
 
-To raise awareness about the features of Office mobile that users have not yet explored, Office mobile integrates with IRIS to support in-app and push notifications. In case of in-app notifications, it captures errors that happen while pulling or displaying notification and when user interactions with the notification as well as providing feedback to IRIS server. In case of push notifications, it captures errors that happen while displaying notification, and when user interacts with the notification.
+To raise awareness about the features of Microsoft 365 mobile app that users have not yet explored, Microsoft 365 mobile app integrates with IRIS to support in-app and push notifications. In case of in-app notifications, it captures errors that happen while pulling or displaying notification and when user interactions with the notification as well as providing feedback to IRIS server. In case of push notifications, it captures errors that happen while displaying notification, and when user interacts with the notification.
 
 The following fields are collected:
 
