@@ -32,8 +32,8 @@ All channels receive security builds on the second Tuesday of every month. For t
 
 In the security vulnerability details, each monthly security release is listed. This means that the device list, available when selecting the number of devices for a release, displays devices from every channel.
 
-> [Note]
-> For a comprehensive rundown of vulnerabilities addressed per release, along with their specific build numbers, see: [Release notes for Microsoft Office security updates](https://learn.microsoft.com/officeupdates/microsoft365-apps-security-updates)
+> [!NOTE]
+> For a comprehensive rundown of vulnerabilities addressed per release, along with their specific build numbers, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
 ## Updating Devices
 
