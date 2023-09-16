@@ -2,7 +2,7 @@
 title: "Required diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 08/11/2023
+ms.date: 09/15/2023
 ---
 
 # Required diagnostic data for Office
@@ -647,10 +647,11 @@ In addition, the following fields are common for all events for Outlook for iOS.
 
 - **state** - Whether the app was active when this event was sent to help detect issues specific to active or inactive app states
 
+- **user_sample_rate** - The sample rate this device is sending this event, which can be different from the event default (sent in the common field ‘sample_rate’). We use this to confirm when a sample rate different from the event default is applied for certain groups.
 
 In addition, the following fields are common for all events for Outlook for Android.
 
-- **aad_id** - a pseudonymous Azure Active Directory identifier
+- **aad_id** - a pseudonymous Microsoft Entra identifier
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
@@ -1779,6 +1780,8 @@ This event is triggered when Outlook starts slowly or incompletely. The data col
 
 The following fields are collected: 
 
+- **aad_tenant_id** - Tells us the Microsoft Entra tenant Id for the primary account so that we can identify tenants with slow launches.
+
 - **is_agenda_widget_active** - Tells us if the agenda widget is active.
 
 - **is_alert_available** - Tell us if the app has been configured to allow alerts in notifications.
@@ -1860,6 +1863,8 @@ The following fields are collected:
 - **is_hide_attendees** - False by default. Used to check if user is hiding attendees on an event and determine usage of response options for events.
 
 - **is_location_permission_granted** – Whether user has granted system location permission to the app. If location permission is granted, the app can show extra utility information in the user interface. Knowing if location permission is granted will allow us to know how often the extra utility information is being shown to users.
+
+- **is_mip_label_applied** - Whether the event has MIP label applied or not. Help us understand the number of events read with MIP label.
 
 - **is_mute_notifications_on** - Whether user toggled mute notifications on or off. Helps us understand how and when mute notifications being used.
 
@@ -1949,6 +1954,8 @@ The following fields are collected across iOS and Android:
 
 - **is_query_empty** - Whether the user search or suggestion query is empty. 
 
+- **position** - Zero-based index of the position of a search result in the results list.
+
 - **re_enter_search_tab** - Boolean to indicate whether a user has switched tabs before selecting a search result
 
 - **result_selected_type** - What type of data that was displayed is the user interacting with, for example, see all contact, conversations, event, etc. 
@@ -2030,7 +2037,7 @@ The following fields are collected:
 
 #### compose.mail.accessory
 
-This event lets us detect and fix issues with key mail compose actions to prevent you from running into issues with attaching a file, taking a photo as an attachment, or sending your availability.
+This event helps detect and fix issues with key mail compose actions to prevent the user from running into issues with attaching a file, taking a photo as an attachment, or sending availability.
 
 The following fields are collected: 
 
@@ -2042,6 +2049,7 @@ The following fields are collected:
 
 - **toolbar_type** – Tell us the toolbar type that is presenting on compose page. Possible values are compose_actions and formatting.
 
+- **trigger** - Tell us the path of how user start a compose feature. For example, for the Text Elaborate feature, our users could either start it by clicking the toolbar icon, or by clicking the placeholder within compose area.
 
 #### compose.mail.rearrange
 
@@ -2174,6 +2182,16 @@ The following fields are collected:
 - **selected_group_calendar_count** - Indicates the number of group calendars that are selected and active in the UI
 
 - **visibility_toggle** - indicates if the user is turning on or off a given calendar to help us detect issues related to showing or hiding calendars
+
+
+#### FREiOS
+
+The event is triggered when Office apps on iOS are launched for the first time. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- None
+
 
 #### IpcCreateRepublishingLicense
 
@@ -2923,7 +2941,7 @@ This event is collected for Office applications running under Android platform a
 
 The following fields are collected:
 
-- **Data_AppBootPhaseStats** - The breakup of different stages involved in boot phase on file open process. Example value: {PostAppInitTimeInMs=186, PreAppInitWXPTimeInMs=1547, PostCommonLibraryLoadPhaseTime=38, PreMinimumLibraryLoadPhaseTime=1, MinimumLibraryLoadPhaseTime=40, LibrarySharingPhaseTime=252, CommonLibraryLoadPhaseTime=435, InitialBootPhaseTime=252, PreAppInitTimeInMs=1805, ApplicationBootTimeWXP=3779, PreCommonLibraryLoadPhaseTime=267, ActivityTransitionTime=480, ApplicationObjectCreationTime=532, ApplicationBootTime=3748, AppActivationWXPTimeInMs=187, PostOfficeActivityTimeInMs=274, AppActivationTimeInMs=218, ExtractionTime=22, OfficeActivityTime=244, PostAppInitWXPTimeInMs=201}
+- **Data_AppBootPhaseStats** - The breakup of different stages involved in boot phase on file open process. Example value: {PostAppInitTimeInMs=186, PreAppInitWXPTimeInMs=1547, PostCommonLibraryLoadPhaseTime=38, PreMinimumLibraryLoadPhaseTime=1, MinimumLibraryLoadPhaseTime=40, "TotalLockDurationDuringNativeLibLoad": "0", LibrarySharingPhaseTime=252, CommonLibraryLoadPhaseTime=435, InitialBootPhaseTime=252, PreAppInitTimeInMs=1805, ApplicationBootTimeWXP=3779, PreCommonLibraryLoadPhaseTime=267, ActivityTransitionTime=480, ApplicationObjectCreationTime=532, ApplicationBootTime=3748, AppActivationWXPTimeInMs=187, "TotalLockDurationDuringMinLibLoad": "0", PostOfficeActivityTimeInMs=274, AppActivationTimeInMs=218, ExtractionTime=22, OfficeActivityTime=244, PostAppInitWXPTimeInMs=201}
 
 - **Data_AppDocsOperationDuration** - The duration spent in sub- layer during a file open operation.
 
@@ -3404,6 +3422,39 @@ The following fields are collected:
 - **Data_TicketAuthError** - Error code that indicates the cause of failure
 
 - **Data_ValidIdentity** - If the client has a valid identity
+
+#### Office.Apple.FirstRunCompleted
+
+The event is triggered when Office apps on Mac are launched for the first time and complete the First Run Experience. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **IsCompleted** - Indicates whether First Run completed or not.
+
+#### Office.Apple.FirstRunPanelAppear
+
+The event is triggered when Office apps on Mac are launched for the first time and go through the different First Run Experience panels. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Panel** - Indicates the type of First Run panel that appeared.
+
+
+#### Office.Apple.FirstRunPanelDisappear
+
+The event is triggered when Office apps on Mac are launched for the first time and go through the different First Run Experience panels. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Panel** - Indicates the type of First Run panel that disappeared. 
+
+#### Office.Apple.FirstRunStarted
+ 
+The event is triggered when Office apps on Mac are launched for the first time and begin the First Run Experience flow. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- None
 
 #### Office.Apple.InAppAssociationActivity
 
@@ -9353,6 +9404,8 @@ The following fields are collected:
 
 - **message_id** - tracks the message ID being replied/forwarded
 
+- **message_ordering_mode** - tracks how the user orders their messages in the reading pane (for example, newest on bottom or newest on top) so we can analyze the impact this has on the send rate and the type of send (for example, reply, reply all, or forward).
+
 - **origin** - indicates where compose was initiated, that is, new, reply, quick reply etc.
 
 - **proofing_card_shown** - the number of proofing card displayed to show suggestions
@@ -9911,6 +9964,40 @@ The following fields are collected:
 - **CacheSize** - Size (in Bytes) of the cache folder used by the Office application.
 
 - **UserDataSize** - Size (in Bytes) of the user data directory used by the Office application.
+
+#### Office.ClickToRun.Ads.Container.AdsContainer
+
+This event triggered when a free version of an Office application running on the Windows platform is launched. The data will be used to track how many users are using the free experience, and health data such as load times.
+
+The following fields are collected:  
+
+- **Activity_Result_Code** - The code associated with the error
+
+- **Activity_Result_Type** - Whether the event was successful
+
+- **Data_AdFailure** - Duration until advertisement SDX reported ad bid failure
+
+- **Data_AdReady** - Duration until advertisement SDX reported ad bid success
+
+- **Data_ErrorDescription** - A human-readable description of the error
+
+- **Data_ErrorSource** -  The component responsible for the error
+
+- **Data_Init** - Duration to initialize advertisement container
+
+- **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_SDXInstanceId** - A unique identifier for each SDX initialization
+
+- **Data_SDXPackageVersion** - The version of the advertisement SDX (Service Delivered Experience)
+
+- **Data_SDXReady** - Duration to finish advertisement SDX initialization
+
+- **Data_ShownTime** - Duration until an ad has been shown to user
+
+- **Data_StartSDX** - Duration to start advertisement SDX initialization
+
+- **Data_Type** - The type of advertisement
 
 
 #### Office.Extensibility.OfficeJS.Appactivated
@@ -10718,6 +10805,8 @@ The following fields are collected:
   - **Data\_InitSecureReaderReasons -** Method InitSecureReaderReasons execution duration in milliseconds
 
   - **Data_InsecureWarningStage** - Value that maps to the status of the Insecure Warning API call and the selected group policy during insecure URL upgrade attempt
+
+  - **Data_InstanceId** - A GUID generated in code in the place where the open is triggered, uniquely identifies the open attempt, it could help troubleshooting issues like open flow gets to run more than once per instance etc.
 
   - **Data\_IsIncOpenInProgressWhileOpen -** In case of multiple open of the same document, is Inc open protocol running alongside open protocol?
 
@@ -12054,9 +12143,11 @@ The following fields are collected:
 
 #### crash.event
 
-Allows us to detect and fix situations where critical app crashes have occurred and helps us collect information on why the app has crashed and how to prevent it.
+The event is triggered automatically when the user opens the App for a second time after the App previously crashed. It only gets triggered in case of App crashes. Allows us to detect and fix situations where critical app crashes have occurred and helps us collect information on why the app has crashed and how to prevent it.
 
 The following fields are collected: 
+
+- **crash_app_state** - Helps us understand what’s the app state App crashes: active, inactive, background, notApplicable.
 
 - **crashTime** - Date and time the crash occurred to help with investigation
 
@@ -13679,6 +13770,25 @@ The following fields are collected:
 - **Data_ServerLanguageTag** - The language the content was in.
 
 - **Data_StatusCode** - The status of the error (if available)
+
+#### Office.ClickToRun.Ads.Container.HandleErrorNotification
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered when there is an issue retrieving advertisement content, displaying an advertisement, among other error cases. The data will be used to identify issues with the ads container initializing the advertisement add-in and any issues within the add-in.
+
+The following fields are collected:  
+
+- **Data_MoeErrorCode** - The error code from failure
+
+#### Office.ClickToRun.Ads.SDX.Error
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered if there is an error loading, retrieving, or displaying an advertisement. The data will be used to identify issues with the advertising add-in on customer machines.
+
+The following fields are collected:  
+
+- **Data_EventID** - Unique tag to identify code failure location
+
+- **Data_Message** - A human-readable description of the error
+
 
 #### Office.Extensibility.RichApiMethodInvocation
 
@@ -15746,6 +15856,8 @@ The following fields are collected for iOS only:
 
 - **switch_control** - Tells us if the user has turned on the setting for Switch Control on their device to help us detect issues related to this setting
 
+- **telemetry_data_boundary** - The geographical region to which telemetry events are sent for the device
+
 - **voice_over** - Tells us if the user has turned on the setting for voiceover on their device to help us detect issues related to this setting
 
 The following fields are collected for Android only:
@@ -15888,6 +16000,26 @@ This event is triggered when an Apple Pencil is used in the Microsoft 365 app fo
 The following fields are collected:
 
  - None
+
+#### Office.ClickToRun.Ads.SDX.AdRequest
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered when the Office application attempts to retrieve a new advertisement. The event reports the latency communicating to the advertisement network, metadata about the retrieved advertisement, and any error information if retrieval is unsuccessful.
+
+The following fields are collected:  
+
+- **Data_AdRequestId** - A unique identifier for ad retrieval attempts
+
+- **Data_AdType** - The type of advertisement
+
+- **Data_AuctionId** - A unique identifier for ad placement auction
+
+- **Data_CreativeId** - A unique identifier for shown ad content
+
+- **Data_ErrorCode** - The code associated with the error.
+
+- **Data_ErrorMessage** - A human-readable description of the error  
+
+- **Data_ErrorType** - The type of error
 
 
 #### Office.Graphics.SpriteMemCorrupt
