@@ -2183,6 +2183,16 @@ The following fields are collected:
 
 - **visibility_toggle** - indicates if the user is turning on or off a given calendar to help us detect issues related to showing or hiding calendars
 
+
+#### FREiOS
+
+The event is triggered when Office apps on iOS are launched for the first time. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- None
+
+
 #### IpcCreateRepublishingLicense
 
 Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when the IpcCreateRepublishingLicense API call is made.
@@ -3412,6 +3422,39 @@ The following fields are collected:
 - **Data_TicketAuthError** - Error code that indicates the cause of failure
 
 - **Data_ValidIdentity** - If the client has a valid identity
+
+#### Office.Apple.FirstRunCompleted
+
+The event is triggered when Office apps on Mac are launched for the first time and complete the First Run Experience. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **IsCompleted** - Indicates whether First Run completed or not.
+
+#### Office.Apple.FirstRunPanelAppear
+
+The event is triggered when Office apps on Mac are launched for the first time and go through the different First Run Experience panels. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Panel** - Indicates the type of First Run panel that appeared.
+
+
+#### Office.Apple.FirstRunPanelAppear
+
+The event is triggered when Office apps on Mac are launched for the first time and go through the different First Run Experience panels. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Panel** - Indicates the type of First Run panel that disappeared. 
+
+#### Office.Apple.FirstRunStarted
+ 
+The event is triggered when Office apps on Mac are launched for the first time and begin the First Run Experience flow. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- None
 
 #### Office.Apple.InAppAssociationActivity
 
@@ -9922,6 +9965,40 @@ The following fields are collected:
 
 - **UserDataSize** - Size (in Bytes) of the user data directory used by the Office application.
 
+#### Office.ClickToRun.Ads.Container.AdsContainer
+
+This event triggered when a free version of an Office application running on the Windows platform is launched. The data will be used to track how many users are using the free experience, and health data such as load times.
+
+The following fields are collected:  
+
+- **Activity_Result_Code** - The code associated with the error
+
+- **Activity_Result_Type** - Whether the event was successful
+
+- **Data_AdFailure** - Duration until advertisement SDX reported ad bid failure
+
+- **Data_AdReady** - Duration until advertisement SDX reported ad bid success
+
+- **Data_ErrorDescription** - A human-readable description of the error
+
+- **Data_ErrorSource** -  The component responsible for the error
+
+- **Data_Init** - Duration to initialize advertisement container
+
+- **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_SDXInstanceId** - A unique identifier for each SDX initialization
+
+- **Data_SDXPackageVersion** - The version of the advertisement SDX (Service Delivered Experience)
+
+- **Data_SDXReady** - Duration to finish advertisement SDX initialization
+
+- **Data_ShownTime** - Duration until an ad has been shown to user
+
+- **Data_StartSDX** - Duration to start advertisement SDX initialization
+
+- **Data_Type** - The type of advertisement
+
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -13694,6 +13771,25 @@ The following fields are collected:
 
 - **Data_StatusCode** - The status of the error (if available)
 
+#### Office.ClickToRun.Ads.Container.HandleErrorNotification
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered when there is an issue retrieving advertisement content, displaying an advertisement, among other error cases. The data will be used to identify issues with the ads container initializing the advertisement add-in and any issues within the add-in.
+
+The following fields are collected:  
+
+- **Data_MoeErrorCode** - The error code from failure
+
+#### Office.ClickToRun.Ads.SDX.Error
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered if there is an error loading, retrieving, or displaying an advertisement. The data will be used to identify issues with the advertising add-in on customer machines.
+
+The following fields are collected:  
+
+- **Data_EventID** - Unique tag to identify code failure location
+
+- **Data_Message** - A human-readable description of the error
+
+
 #### Office.Extensibility.RichApiMethodInvocation
 
 When customer uses an Office Add-in and calls Rich API for providing service, this event will be triggered. Used to measure the service reliability, performance, and usage for Rich API method invocation.
@@ -15904,6 +16000,26 @@ This event is triggered when an Apple Pencil is used in the Microsoft 365 app fo
 The following fields are collected:
 
  - None
+
+#### Office.ClickToRun.Ads.SDX.AdRequest
+
+This event is collected from free versions of Office applications running on the Windows platform. This event is triggered when the Office application attempts to retrieve a new advertisement. The event reports the latency communicating to the advertisement network, metadata about the retrieved advertisement, and any error information if retrieval is unsuccessful.
+
+The following fields are collected:  
+
+- **Data_AdRequestId** - A unique identifier for ad retrieval attempts
+
+- **Data_AdType** - The type of advertisement
+
+- **Data_AuctionId** - A unique identifier for ad placement auction
+
+- **Data_CreativeId** - A unique identifier for shown ad content
+
+- **Data_ErrorCode** - The code associated with the error.
+
+- **Data_ErrorMessage** - A human-readable description of the error  
+
+- **Data_ErrorType** - The type of error
 
 
 #### Office.Graphics.SpriteMemCorrupt
