@@ -2,7 +2,7 @@
 title: "Essential services for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 08/11/2023
+ms.date: 09/15/2023
 ---
 
 # Essential services for Office
@@ -68,7 +68,7 @@ These diagnostic data events are collected when Office attempts to acquire an au
 
 This event helps in understanding how many users are getting prompted for providing personal account password, while accessing work resource, as their personal account could be a valid guest to work account's tenant.
 
-This data helps us understand how many users are going through the pain of sign in re-prompts to prioritize AAD token acquisition silently based on a Microsoft account SAML (Security Assertion Markup Language) assertion.
+This data helps us understand how many users are going through the pain of sign in re-prompts to prioritize Microsoft Entra token acquisition silently based on a Microsoft account SAML (Security Assertion Markup Language) assertion.
 
 The following fields are collected:
 
@@ -301,7 +301,7 @@ The following fields are collected:
 
   - **Errorsource** - Did the error come from service, authentication library, or application
 
-  - **Identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+  - **Identityservice** - Was Microsoft Service Account (MSA) or Microsoft Entra service invoked
 
   - **Interactiveauthcontainer** - What type of prompt was shown
 
@@ -313,9 +313,9 @@ The following fields are collected:
 
   - **Microsoft\_ADAL\_api\_id** - API invoked for this authentication attempt
 
-  - **Microsoft\_ADAL\_authority** – Azure Active Directory authority URL responsible for authenticating the user
+  - **Microsoft\_ADAL\_authority** – Microsoft Entra authority URL responsible for authenticating the user
 
-  - **Microsoft\_ADAL\_authority\_type** – Consumer / Microsoft Service Agreement (MSA) vs organizational / Azure Active Directory (AAD); currently always AAD
+  - **Microsoft\_ADAL\_authority\_type** – Consumer / Microsoft Service Agreement (MSA) vs organizational / Microsoft Entra ID; currently always Microsoft Entra ID
 
   - **Microsoft\_ADAL\_authority\_validation\_status** – Tells whether authentication completed on the service-side
 
@@ -349,7 +349,7 @@ The following fields are collected:
 
   - **Microsoft\_ADAL\_cache\_write\_last\_system\_error** - System error code. Present if there was at least one write failure.
 
-  - **Microsoft\_ADAL\_client\_id** - Hashed AAD app ID
+  - **Microsoft\_ADAL\_client\_id** - Hashed Microsoft Entra app ID
 
   - **Microsoft\_ADAL\_extended\_expires\_on\_setting** - True/false telling if the token has an extended lifetime.
 
@@ -496,7 +496,7 @@ The following fields are collected:
 
 - **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
 
-- **identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+- **identityservice** - Was Microsoft Service Account (MSA) or Microsoft Entra service invoked
 
 - **interactiveauthcontainer** - What type of prompt was shown
 
@@ -709,7 +709,7 @@ The following fields are collected:
 
 - **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
 
-- **identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+- **identityservice** - Was Microsoft Service Account (MSA) or Microsoft Entra service invoked
 
 - **interactiveauthcontainer** - What type of prompt was shown
 
@@ -926,7 +926,7 @@ The following fields are collected:
 
 - **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
 
-- **identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+- **identityservice** - Was Microsoft Service Account (MSA) or Microsoft Entra service invoked
 
 - **interactiveauthcontainer** - What type of prompt was shown
 
@@ -1151,7 +1151,7 @@ The following fields are collected:
 
 - **hasadaltelemetry** - Indicates whether the Azure Active Directory Authentication Library (ADAL) provided telemetry for this event.
 
-- **Identityservice** - Was Microsoft Service Account (MSA) or Azure Active Directory (AAD) service invoked
+- **Identityservice** - Was Microsoft Service Account (MSA) or Microsoft Entra service invoked
 
 - **Interactiveauthcontainer** - What type of prompt was shown
 
@@ -1167,9 +1167,9 @@ The following fields are collected:
 
 - **Microsoft_ADAL_application_version** - The version of the application using ADAL. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **Microsoft_ADAL_authority** - Azure Active Directory authority URL responsible for authenticating the user *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **Microsoft_ADAL_authority** - Microsoft Entra authority URL responsible for authenticating the user *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **Microsoft_ADAL_authority_type** - Consumer / Microsoft Service Agreement (MSA) vs organizational / Azure Active Directory (AAD); currently always AAD *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **Microsoft_ADAL_authority_type** - Consumer / Microsoft Service Agreement (MSA) vs organizational / Microsoft Entra ID; currently always Microsoft Entra ID *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Microsoft_ADAL_authority_validation_status** - Tells whether authentication completed on the service-side *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
@@ -1203,7 +1203,7 @@ The following fields are collected:
 
 - **Microsoft_ADAL_cache_write_last_system_error** - System error code. Present if there was at least one write failure *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **Microsoft_ADAL_client_id** - Hashed Azure Active Directory app ID *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **Microsoft_ADAL_client_id** - Hashed Microsoft Entra app ID *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Microsoft_ADAL_device_id** - ADAL-generated local device id. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
@@ -1495,7 +1495,7 @@ The following fields are collected:
 
 - **WAM_account_join_on_start** - Account join state at the start of a WAM operation.  Possible values: “primary”, “secondary”, “not_joined”
 
-- **WAM_api_error_code** - If an error response came from the AAD WAM plugin, this field will exist and will contain that error code
+- **WAM_api_error_code** - If an error response came from the Microsoft Entra WAM plugin, this field will exist and will contain that error code
 
 - **WAM_authority** - String containing the authority url—this should be the login.windows.net endpoint used
 
@@ -1529,7 +1529,7 @@ The following fields are collected:
 
 - **WAM_provider_id** - Specifies the Microsoft endpoint for the authority in use for the auth scenario.
 
-- **WAM_redirect_uri** - The redirect URI registered for the application in Azure Active Directory.
+- **WAM_redirect_uri** - The redirect URI registered for the application in Microsoft Entra ID.
 
 - **WAM_resource** - The resource for which a token is requested.
 
@@ -1549,7 +1549,7 @@ The following fields are collected:
 
 - **WAM_silent_status** - The success/fail status for the internal silent attempt WAM makes, prior to prompting the user.
 
-- **WAM_tenant_id** - An identifier for the tenant the authenticated AAD user belongs to, if returned by the service
+- **WAM_tenant_id** - An identifier for the tenant the authenticated Microsoft Entra user belongs to, if returned by the service
 
 - **WAM_ui_allowed** - Whether the user may be prompted for Microsoft Account credentials if silent token acquisition fails.
 
@@ -1613,7 +1613,7 @@ The following fields are collected:
 
 - **Issilent** - False if UI was shown; true if it was a background event.
 
-- **oneauth_AadAccountCount** - Shows the count of unique AAD accounts in the device.
+- **oneauth_AadAccountCount** - Shows the count of unique Microsoft Entra accounts in the device.
 
 - **oneauth_Activeflights**- The list of flights that are active in the session, used for AB testing.
 
@@ -1716,7 +1716,7 @@ The following fields are collected:
 
 - **issilent** - False if UI was shown; true if it was a background event.
 
-- **oneauth_AadAccountCount** - Shows the count of unique AAD accounts in the device.
+- **oneauth_AadAccountCount** - Shows the count of unique Microsoft Entra accounts in the device.
 
 - **oneauth_ActiveFlights** - Lists all the flights that are active during the transaction.
 
@@ -1818,7 +1818,7 @@ The following fields are collected:
 
 - **issilent** - False if UI was shown; true if it was a background event.
 
-- **oneauth_AadAccountCount** - Shows the count of unique AAD accounts in the device.
+- **oneauth_AadAccountCount** - Shows the count of unique Microsoft Entra accounts in the device.
 
 - **oneauth_ActiveFlights** - Lists all the flights that are active during the transaction.
 
@@ -1969,6 +1969,65 @@ specific device)
 
 - **Uploaded** - Unique identifier for this particular event, for de-duping purposes.
 
+### Office.Outlook.Mac.AddAccountConfigSession
+
+This event is triggered when a user tries to add their account into Outlook Mac. The data from this event is used to build the user action funnel in the "add account session."
+
+The following fields are collected:
+
+- **AccountCount** - Total account number
+
+- **AccountFlowSessionIdentifier** - UUID to track the “add account” session
+
+- **Activation Type** - Client activated license type
+
+- **CommercialAccountCount** - Total commercial account number
+
+- **ConfigurePhase** - The current phase the user is in, in the “add account” process
+
+- **DaysPassedOnDevice** - How many days have passed since the app was installed on device
+
+- **EntryPoint** - The entry point to add the account
+
+- **EUPlacementPref** - Account's EU Placement preference
+
+- **HasCommercialAccount** - Is there any commercial account
+
+- **HasCompletedFirstRun** - Has app completed first run before going through this session
+
+- **HasEUPlacementPref** - If the account has EU placement preference set
+
+- **HasPremiumAccount** - Is there any paid account
+
+- **InstallSource** - Where the client is installed from
+
+- **IsAADC** - Is there any account that has not passed the age eligibility check
+
+- **IsAppStoreSKU** - Is the account downloaded from Apple App store
+
+- **IsFreenix** - Is the client in freenix mode
+
+- **IsFRESession** - Is the session a first run time experience
+
+- **IsLicensed** - Is the client licensed
+
+- **IsPreview** - Is the client in Phoenix mode
+
+- **IsSessionAdsEligible** - Is the client eligible for Ads
+
+- **IsSessionAdsSupported** - Is the Ads supported by the client
+
+- **License Type** - Client license type
+
+- **PremiumAccountsCount** - Total premium account number
+
+- **Result** - Add account session is successful
+
+- **ServiceProviderType** - What is the current sync type of the account
+
+- **SourceTagDescription** - The description of the current event
+
+- **SyncType** - What is the current sync type of the account
 
 ### OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -4926,13 +4985,15 @@ The following fields are collected:
 
 ### Office.Dime.Sdk.Health
 
-The event captures data that helps in monitoring the health of the components that host the in-app purchase flow within Office Mobile app. The data is used to monitor and alert on the health of the purchase flow triggered from Office Mobile app when user opts to buy an Microsoft 365 subscription. 
+This event captures data that helps in monitoring the health of the components that host the in-app purchase flow for a Microsoft 365 subscription to ensure the flow is working as expected.
 
 The following fields are collected:
 
 - **Data_ActivityErrorDescription** - Error description of the activity
 
 - **Data_ActivityErrorMessage** - Error message of the activity 
+ 
+- **Data_ActivityId** - ActivityId to correlate dime with partners that use ActivityId
 
 - **Data_CampaignId** - Campaign ID for attribution
 
@@ -5174,6 +5235,29 @@ The following fields are collected:
 
   - **Qualified** – Identifies whether the user qualified for the sign in enforcement
 
+### Office.Licensing.Erfm.ErfmSubTriggerEvent
+
+This event is triggered when the user goes through the Licensing UX flow in order to attempt to go from an unlicensed to a licensed state. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+- **AdsEnabled** - This informs us whether ads are enabled for the client.
+
+- **Flow** - This informs us of the exact sub-flow of the Licensing UX that the user is going through.
+
+### Office.Licensing.Erfm.InitializeERFM
+
+This event is triggered for users running Microsoft Office under Enhanced Reduced Functionality Mode. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+- **AdsEnabled** - This informs us whether ads are enabled for the client.
+
+- **FailureReason** - This informs us of the type of failure encountered by the ad platform.
+
+- **TryToReconstructToolbarsResult** - This informs us whether toolbars were successfully reconstructed following initialization.
+
+
 ### Office.Licensing.ExpirationDialogShown
 
 This is collected when we show the expiration dialog to the user that says that their license has expired. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
@@ -5265,6 +5349,14 @@ The following fields are collected:
 - **MainFlow** - Entry flow type of Licensing Validation User Experience (LVUX) session.
 
 - **UserAction** - User action taken on LVUX ReactNative dialog.
+
+### Office.Licensing.Flows.InstallGrace
+
+This event is triggered when Office installs a grace license. The data is used to make sure this method of activating Microsoft Office is performing as expected.
+ 
+The following fields are collected:
+
+- **GraceInstallResult** - This tells us whether we were successful installing the grace license
 
 
 ### Office.Licensing.Flows.PurchaseProduct
@@ -5465,6 +5557,9 @@ The following fields are collected:
 
 - **Data_Scenario** - tells us the scenario where the redemption occurred for.
 
+- **Data_ShowingSignIn** - tells us whether as part of redemption we decided to show a Sign In prompt or not.
+
+- **Data_UsingRefactoredFlow** - identifies the version for the redemption process.
 
 ### Office.Licensing.Licensed
 
@@ -5512,6 +5607,14 @@ The following fields are collected:
   - **FederationProvider** – A string that identifies the federation provider for the currently logged in user
 
   - **IdentityProvider** – A string that identifies the identity provider for the currently logged in user
+
+### Office.Licensing.LoadIdentityTicketInSignInProvider
+
+This event is triggered when we to load the user's identity ticket to see if the user has an Office entitlement or not. The data is used to make sure that Microsoft Office Licensing is performing as expected.
+
+The following fields are collected:
+
+  - None
 
 ### Office.Licensing.LVUX.EULAExplicitCrash 
 
@@ -18107,7 +18210,7 @@ The following fields are collected:
 
 - **sku** - a variant of the user selected product (stock keeping unit)
 
-- **tenantId** - AAD tenant ID of the shadow tenant associated with the consumer user. Shadow tenant refers to the implementation details required for attaching the purchased license to MSA user.
+- **tenantId** - Microsoft Entra tenant ID of the shadow tenant associated with the consumer user. Shadow tenant refers to the implementation details required for attaching the purchased license to MSA user.
 
 - **version** - package build version
 
@@ -18155,7 +18258,7 @@ The following fields are collected:
 
 - **tagId** - internal message source matching identifier.
 
-- **tenantId** - AAD tenant id of the shadow tenant associated with the consumer user
+- **tenantId** - Microsoft Entra tenant id of the shadow tenant associated with the consumer user
 
 - **time** - time of the logging event
 
@@ -18280,19 +18383,35 @@ The event is triggered by a graceful application termination for Office client a
 The following fields are collected:
 
 - **AppBuild** - Build version identifier for the affected process.
+
 - **AppMajor** - Major version identifier for the affected process.
+
 - **AppMinor** - Minor version identifier for the affected process.
+
 - **AppRevision** - Build version identifier for the affected process.
+
 - **BootCompleted** – Did Office process complete boot.
+
 - **DetectionTime** - The time when the unexpected exit was detected.
+
 - **EcsETag** - An experiment identifier for the process.
+
 - **HasEdit** – Was document editing occurring during the Office process.
+
 - **HasOpen** – Was document opened during the Office process.
+
 - **InstallMethod** - Whether the current build of Office was upgraded from, rolled back to, or a fresh install.
+ 
+- **LicenseId** - The licensing information of the user.
+
 - **OfficeUILang** – Language of the Office process.
+
 - **PreviousBuild** - Previously installed build version.
+
 - **SafeMode** – Was Office process in safe mode.
+
 - **SessionId** - A unique identifier of the process.
+
 - **SessionInitTime** - The time when the affected process started.
 
 ### Office.System.GracefulExit.GracefulAppExitDesktopRealTime
