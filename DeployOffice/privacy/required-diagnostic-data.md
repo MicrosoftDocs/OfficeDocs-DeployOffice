@@ -3440,7 +3440,7 @@ The following fields are collected:
 - **Panel** - Indicates the type of First Run panel that appeared.
 
 
-#### Office.Apple.FirstRunPanelAppear
+#### Office.Apple.FirstRunPanelDisappear
 
 The event is triggered when Office apps on Mac are launched for the first time and go through the different First Run Experience panels. The data is used to monitor the health of our applications’ First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
 
