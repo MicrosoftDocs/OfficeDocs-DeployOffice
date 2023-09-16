@@ -1780,7 +1780,7 @@ This event is triggered when Outlook starts slowly or incompletely. The data col
 
 The following fields are collected: 
 
--**aad_tenant_id** - Tells us the Microsoft Entra tenant Id for the primary account so that we can identify tenants with slow launches.
+- **aad_tenant_id** - Tells us the Microsoft Entra tenant Id for the primary account so that we can identify tenants with slow launches.
 
 - **is_agenda_widget_active** - Tells us if the agenda widget is active.
 

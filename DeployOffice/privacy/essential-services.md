@@ -5608,7 +5608,7 @@ The following fields are collected:
 
   - **IdentityProvider** – A string that identifies the identity provider for the currently logged in user
 
-### Office.Licensing.Flows.LoadIdentityTicketInSignInProvider
+### Office.Licensing.LoadIdentityTicketInSignInProvider
 
 This event is triggered when we to load the user's identity ticket to see if the user has an Office entitlement or not. The data is used to make sure that Microsoft Office Licensing is performing as expected.
 
