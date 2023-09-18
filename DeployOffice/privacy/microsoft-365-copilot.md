@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: o365-proplus-itpro
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Provides information about Microsoft 365 Copilot works, along with information about privacy and security aspects of Copilot."
