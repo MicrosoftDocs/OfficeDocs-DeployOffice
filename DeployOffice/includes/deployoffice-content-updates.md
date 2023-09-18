@@ -2,6 +2,20 @@
 
 
 
+## Week of September 11, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/11/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot) | modified |
+| 9/12/2023 | [Deployment guide for Project](/DeployOffice/deployment-guide-for-project) | modified |
+| 9/12/2023 | [Deployment guide for Visio](/DeployOffice/deployment-guide-for-visio) | modified |
+| 9/13/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
+| 9/15/2023 | [Overview of the security vulnerabilities feature in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-security-vulnerabilities) | added |
+| 9/15/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 9/15/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of September 04, 2023
 
 
@@ -40,12 +54,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 8/16/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
-
-
-## Week of August 07, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/11/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 8/11/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
