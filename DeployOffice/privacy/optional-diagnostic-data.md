@@ -2,7 +2,7 @@
 title: "Optional diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro

@@ -2,7 +2,7 @@
 title: "Privacy options in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: office-perpetual-itpro
