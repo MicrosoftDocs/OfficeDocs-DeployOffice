@@ -1,7 +1,7 @@
 ---
 title: "Plan a deployment of Office Telemetry Dashboard"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

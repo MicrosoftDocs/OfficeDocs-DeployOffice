@@ -1,7 +1,7 @@
 ---
 title: "Office Telemetry Dashboard worksheets"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
