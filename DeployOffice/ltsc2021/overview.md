@@ -1,8 +1,8 @@
 ---
 title: "Overview of Office LTSC 2021"
-ms.author: danbrown
 ms.author: nwhite
 author: nicholasswhite
+manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: office-perpetual-itpro
