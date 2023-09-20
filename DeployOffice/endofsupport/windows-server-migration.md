@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 Apps migration from Windows Server "
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

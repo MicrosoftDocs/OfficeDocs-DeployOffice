@@ -1,7 +1,7 @@
 ---
 title: "Office versions and connectivity to Microsoft 365 services"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

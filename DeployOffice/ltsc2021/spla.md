@@ -1,7 +1,7 @@
 ---
 title: "Office LTSC 2021 deployment instructions for SPLA customers"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

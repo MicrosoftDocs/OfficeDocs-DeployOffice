@@ -1,7 +1,7 @@
 ---
 title: "End of support resources for Office"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
