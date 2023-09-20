@@ -1,8 +1,8 @@
 ---
 title: "In-product notification for Microsoft Workplace Discount Program"
 ms.author: danbrown
-author: DHB-MSFT
-manager: dougeby
+ms.author: nwhite
+author: nicholasswhite
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro

@@ -1,7 +1,7 @@
 ---
 title: "Office Online Server for Office LTSC 2021 customers"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
