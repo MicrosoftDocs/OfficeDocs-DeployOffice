@@ -1,7 +1,7 @@
 ---
 title: "Rearm a volume licensed version of Office that's included in an operating system image"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

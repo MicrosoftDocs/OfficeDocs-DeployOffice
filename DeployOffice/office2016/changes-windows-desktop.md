@@ -1,7 +1,7 @@
 ---
 title: "Changes in Office 2016 for Windows desktop"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference
