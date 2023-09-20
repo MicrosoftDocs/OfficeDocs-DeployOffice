@@ -20,7 +20,7 @@ ms.date: 03/27/2023
 
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you’re using Microsoft 365 Apps for enterprise.
 
-Starting with Version 1904 of Microsoft 365 Apps for enterprise, we are providing you with new, updated, and improved privacy controls for the following areas:
+Starting with Version 1904 of Microsoft 365 Apps for enterprise, we're providing you with new, updated, and improved privacy controls for the following areas:
 - ***Diagnostic data*** that is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
@@ -28,7 +28,7 @@ As part of these changes, there are new and updated user interface (UI) elements
 
 ## Diagnostic data sent from Microsoft 365 Apps for enterprise to Microsoft
 
-Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
+Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and remediate problems, and also make product improvements. This data doesn't include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
 This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device in your organization.
 
@@ -49,7 +49,7 @@ If you choose to send us optional diagnostic data, required diagnostic data is a
 
 As an admin for your organization, you’ll be able to use a policy setting to choose which level of diagnostic data is sent to us. Optional diagnostic data will be sent to Microsoft unless you change the setting. Providing optional diagnostic data better enables the Office engineering team at Microsoft to detect, diagnose, and mitigate issues to reduce impacts to your organization.
 
-Your users won’t be able to change the diagnostic data level for their devices if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
+Your users won’t be able to change the diagnostic data level for their devices if they're signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
 This diagnostic data doesn’t include names of users, their email addresses, or the content of their Office files. Our system creates a unique ID that it associates with your user’s diagnostic data. When we receive diagnostic data showing that one of our apps crashed 100 times, this unique ID lets us determine if it was a single user who crashed 100 times or if it was 100 different users who each crashed once. We don’t use this unique ID to identify a specific user.
 
@@ -77,11 +77,11 @@ We understand that you might want to choose which types of connected experiences
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
-In addition, there is a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
+In addition, there's a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or the users will get an error message when they try to use those connected experiences.
 
-Your users won’t be able to choose whether to turn these connected experiences on or off if they are signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
+Your users won’t be able to choose whether to turn these connected experiences on or off if they're signed in to Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
 For more information, see the following articles:
 
@@ -95,11 +95,11 @@ For more information, see the following articles:
 
 In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing.
 
-These are optional connected experiences that are not covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
+These are optional connected experiences that aren't covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
 Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they're signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they're signed in with a personal email address.
 
 For more information, see the following articles:
 
@@ -120,7 +120,7 @@ For more information, see [Required service data for Office](required-service-da
 
 ## Essential services for Microsoft 365 Apps for enterprise
 
-There is also a set of services that are essential to how Microsoft 365 Apps for enterprise functions and cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Microsoft 365 Apps for enterprise. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
+There's also a set of services that are essential to how Microsoft 365 Apps for enterprise functions and can't be disabled. For example, the licensing service that confirms that you're properly licensed to use Microsoft 365 Apps for enterprise. Required service data about these services is collected and sent to Microsoft, regardless of any other policy settings that you have configured.
 
 For more information, see [Essential services for Office](essential-services.md).
 
