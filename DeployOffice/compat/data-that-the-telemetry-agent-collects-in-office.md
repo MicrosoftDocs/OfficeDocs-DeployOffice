@@ -1,7 +1,7 @@
 ---
 title: "Data collected by the agent for Office Telemetry Dashboard"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

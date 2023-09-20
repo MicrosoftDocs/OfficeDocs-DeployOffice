@@ -1,7 +1,7 @@
 ---
 title: "Manage add-ins by using Office Telemetry Dashboard"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

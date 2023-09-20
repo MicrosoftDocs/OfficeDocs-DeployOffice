@@ -1,7 +1,7 @@
 ---
 title: "Update Office Telemetry Dashboard components"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

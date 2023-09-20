@@ -1,7 +1,7 @@
 ---
 title: "File format reference for Word, Excel, and PowerPoint"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference
