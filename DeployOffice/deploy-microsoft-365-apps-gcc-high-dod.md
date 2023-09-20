@@ -1,7 +1,7 @@
 ---
 title: "Guidance for deploying Microsoft 365 Apps for enterprise in a GCC High or DoD environment"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
