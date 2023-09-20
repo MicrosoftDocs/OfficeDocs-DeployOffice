@@ -1,7 +1,7 @@
 ---
 title: "Guide to Office Telemetry Dashboard resources"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

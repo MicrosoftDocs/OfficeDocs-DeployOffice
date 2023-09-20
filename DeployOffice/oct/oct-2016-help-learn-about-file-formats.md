@@ -1,7 +1,7 @@
 ---
 title: "Office Customization Tool (OCT) 2016 Help Learn about file formats"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 ms.date: 03/01/2023
 audience: ITPro

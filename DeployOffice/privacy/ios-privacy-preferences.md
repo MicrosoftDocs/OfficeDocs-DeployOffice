@@ -2,7 +2,7 @@
 title: "Use preferences to manage privacy controls for Office on iOS devices"
 ms.author: danbrown
 author: DHB-MSFT
-manager: dougeby
+manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-proplus-itpro

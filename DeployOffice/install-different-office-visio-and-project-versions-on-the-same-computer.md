@@ -1,7 +1,7 @@
 ---
 title: "Supported scenarios for installing different versions of Office, Project, and Visio on the same computer"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
