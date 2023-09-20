@@ -1,7 +1,7 @@
 ---
 title: "Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: how-to

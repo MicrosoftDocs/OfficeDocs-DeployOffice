@@ -1,7 +1,7 @@
 ---
 title: "Let Mac users choose Microsoft 365 Insider for themselves by using Microsoft AutoUpdate (MAU)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: how-to
