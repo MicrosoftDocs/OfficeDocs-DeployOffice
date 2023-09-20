@@ -1,7 +1,7 @@
 ---
 title: "Language versions and language interface packs in Office 2016"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference

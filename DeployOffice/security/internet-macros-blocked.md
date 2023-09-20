@@ -1,7 +1,7 @@
 ---
 title: "Macros from the internet are blocked by default in Office "
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

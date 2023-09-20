@@ -1,7 +1,7 @@
 ---
 title: "Let users choose which Microsoft 365 Insider channel to install on Windows devices"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: how-to

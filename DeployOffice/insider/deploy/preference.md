@@ -1,7 +1,7 @@
 ---
 title: "Provide Mac users with Microsoft 365 Insider by using a preference"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: how-to
