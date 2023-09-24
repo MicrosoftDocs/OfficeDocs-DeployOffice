@@ -2,6 +2,16 @@
 
 
 
+## Week of September 18, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/20/2023 | [Remove or reset file passwords in Office 2016](/DeployOffice/office2016/security/remove-reset-file-passwords) | modified |
+| 9/20/2023 | [Office Customization Tool (OCT) 2016 Help Set feature installation states](/DeployOffice/oct/oct-2016-help-set-feature-installation-states) | modified |
+| 9/20/2023 | [Overview of privacy controls for Microsoft 365 Apps for enterprise](/DeployOffice/privacy/overview-privacy-controls) | modified |
+
+
 ## Week of September 11, 2023
 
 
@@ -46,11 +56,3 @@
 |------|------------|--------|
 | 8/21/2023 | Sign Up for cloud update | removed |
 | 8/25/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
-
-
-## Week of August 14, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/16/2023 | [Set suite-wide preferences for Office for Mac](/DeployOffice/mac/preferences-office) | modified |
