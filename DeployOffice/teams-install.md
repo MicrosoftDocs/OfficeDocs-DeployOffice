@@ -113,7 +113,7 @@ To remove Teams after it's been installed, go to **Control Panel** > **Uninstall
 
 Teams was added to ***existing*** installations of Microsoft 365 Apps on devices running Windows as part of the normal update process. There was no change to existing installations of Mac.
 
-The addition of Teams to existing Microsoft 365 Apps installations was determined by the installed version and the update version. Version 1906 that was released in Current Channel in July 2019 was the first version that included Teams as part of the update process. However, the rollout was phased, so not all devices updating to Version 1906 or subsequent versions immediately received Teams. As of Version 1908 or later, Teams has been added to all devices. 
+The addition of Teams to existing Microsoft 365 Apps installations was determined by the installed version and the update version. Version 1906 that was released in Current Channel in July 2019 was the first version that included Teams as part of the update process. However, the rollout was phased, so not all devices updating to Version 1906 or subsequent versions immediately received Teams. As of Version 1908 or later, Teams has been added to all Microsoft 365 Apps installations. 
 
 The date when Teams was added to ***existing*** installations of Microsoft 365 Apps depended on the update channel you were using. The following table shows the schedule.
 
