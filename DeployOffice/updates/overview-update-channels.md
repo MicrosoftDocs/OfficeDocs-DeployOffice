@@ -19,7 +19,7 @@ One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and up
 
 In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
 
-[!NOTE]
+> [!NOTE]
 > If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
 
 There are three primary update channels:
