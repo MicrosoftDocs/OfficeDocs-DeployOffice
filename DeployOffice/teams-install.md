@@ -38,7 +38,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 The date that Teams was included with ***new*** installations of Microsoft 365 Apps depended on which [update channel](updates/overview-update-channels.md) you were using. The following table shows the schedule.
 
-| **Update channel** |**Version** |**Date**  |
+| Update channel | Version | Date |
 |---------|---------|---------|
 |Current Channel |Version 1902 | March 4, 2019  |
 |Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
@@ -57,7 +57,7 @@ The date that Teams was included with ***new*** installations of Microsoft 365 A
 
 The date when the new Microsoft Teams starts being installed with Microsoft 365 Apps depends on which update channel you're using. The following table shows the schedule.
 
-| **Plan** |**Channel** |**Date**  |
+| Plan | Channel | Date |
 |---------|---------|---------|
 |Business | |Late September 2023 |
 |Enterprise |Office Beta Channel and Current Channel (Preview) |Late September 2023 |
@@ -117,7 +117,7 @@ The addition of Teams to existing Microsoft 365 Apps installations was determine
 
 The date when Teams was added to ***existing*** installations of Microsoft 365 Apps depended on the update channel you were using. The following table shows the schedule.
 
-| **Update channel** |**Version** |**Date**  |
+| Update channel | Version | Date |
 |---------|---------|---------|
 |Current Channel |Version 1906 | July 9, 2019  |
 |Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
