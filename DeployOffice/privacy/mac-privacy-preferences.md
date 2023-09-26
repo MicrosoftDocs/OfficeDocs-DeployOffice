@@ -75,7 +75,10 @@ Connected experiences that analyze your content are experiences that use your Of
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 |**Availability** |16.28 and later |
 
-If you don't set this preference, connected experiences that analyze content are available to users. 
+If you don't set this preference, connected experiences that analyze content are available to users.
+
+> [!NOTE]
+> If you set this preference to FALSE, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](/microsoft-365-copilot/microsoft-365-copilot-privacy#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
 
 If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac, then the user can't turn off connected experiences that analyze content.
 
