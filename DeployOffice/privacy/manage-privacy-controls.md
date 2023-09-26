@@ -102,6 +102,9 @@ You can use the *Allow the use of connected experiences in Office that analyze c
 
 Note that if you disable the *Allow the use of connected experiences in Office* policy setting, connected experiences that analyze content won’t be available to your users.
 
+> [!NOTE]
+> If you disable the *Allow the use of connected experiences in Office* policy setting, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](/microsoft-365-copilot/microsoft-365-copilot-privacy#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+
 ### Policy setting for connected experiences that download online content
 
 These are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
