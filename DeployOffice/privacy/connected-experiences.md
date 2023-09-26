@@ -168,6 +168,9 @@ If you're the admin for your organization, you can use policy settings to determ
 - [Use preferences to manage privacy controls for Office on iOS devices](ios-privacy-preferences.md)
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
+> [!NOTE]
+> For information about the effect of these policy settings on Microsoft 365 Copilot features, see [Microsoft 365 Copilot and policy settings for connected experiences](/microsoft-365-copilot/microsoft-365-copilot-privacy#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences is grayed out, or you get an error message when you try to use those connected experiences.
 
 Even if you decide to turn off these connected experiences, certain Office functionality remains available, such as synching a mailbox in Outlook, and Teams and Skype for Business continues to work. Also, there's a set of services that are essential to how Office functions that can't be turned off, such as the licensing service that confirms that you're properly licensed to use Office.
