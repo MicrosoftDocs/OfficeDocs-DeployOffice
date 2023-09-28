@@ -21,7 +21,7 @@ ms.date: 10/01/2023
 Microsoft is dedicated to providing admins with tools that streamline processes and reduce risks. To that end, we're introducing deployment validation, an innovative feature now included within cloud update in the Microsoft 365 Apps admin center. This feature offers a holistic approach to verifying the stability and efficiency of updates, including both Microsoft 365 Apps and their accompanying add-ins, on a subset group of devices before a full-scale rollout. By allowing for a way to validate with confidence, we aim to make it easier to switch to Monthly Enterprise Channel. 
 
 > [!TIP]
-> For a guided introduct to deployment validation, check out the [Introducing Deployment Validation in the Microsoft 365 Apps admin center](www.youtube.com/watch?v=qTzoyXU8Uw8)
+> For a guided introduct to deployment validation, check out the [Introducing Deployment Validation in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=qTzoyXU8Uw8)
 
 ## Benefits of deployment validation
 
