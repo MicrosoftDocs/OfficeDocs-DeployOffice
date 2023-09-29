@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac"
-ms.date: 09/13/2023
+ms.date: 09/28/2023
 ---
 
 # Set preferences for Outlook for Mac
@@ -56,6 +56,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable retention messages](#disable-retention-messages)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
+- [Trust AutoDiscover redirects](#trust-autodiscover-redirects)
 - [Disable Teams online meetings](#disable-teams-online-meetings)
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
@@ -278,6 +279,20 @@ Prevent users from applying S/MIME option to email messages.
 |Requires Configuration Profile| No |
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Trust AutoDiscover redirects
+
+Automatically trust server redirects through AutoDiscover.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key|TrustO365AutodiscoverRedirect|
+|Data Type|Boolean  |
+|Possible values| false (default) <br/> true  |
+|Requires Configuration Profile| No |
+|Availability|15.29 |
+|Comments|When set to 'true' users will not be prompted to Allow or Deny redirects from AutoDiscover. They will be automatically allowed.|
 
 ## Weather location settings
 
