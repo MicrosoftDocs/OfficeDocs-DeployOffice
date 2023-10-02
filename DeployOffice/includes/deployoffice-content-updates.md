@@ -2,6 +2,18 @@
 
 
 
+## Week of September 25, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/25/2023 | [Deploy Microsoft Teams with Microsoft 365 Apps](/DeployOffice/teams-install) | modified |
+| 9/25/2023 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/updates/end-user-update-notifications-microsoft-365-apps) | modified |
+| 9/26/2023 | Data, Privacy, and Security for Microsoft 365 Copilot | removed |
+| 9/29/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
+| 9/29/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
+
+
 ## Week of September 18, 2023
 
 
@@ -47,12 +59,3 @@
 | 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Intune](/DeployOffice/updates/move-devices-channel-intune) | added |
 | 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Servicing Profile](/DeployOffice/updates/move-devices-channel-servicingprofiles) | added |
 | 9/1/2023 | [Copilot - Move a subset of devices to Current Channel with Autopatch](/DeployOffice/updates/move-devices-channel-autopatch) | added |
-
-
-## Week of August 21, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/21/2023 | Sign Up for cloud update | removed |
-| 8/25/2023 | [Overview of optional connected experiences in Office](/DeployOffice/privacy/optional-connected-experiences) | modified |
