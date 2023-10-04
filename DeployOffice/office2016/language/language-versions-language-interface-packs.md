@@ -99,7 +99,7 @@ For some languages, Microsoft localizes only some Office 2016 applications and r
     
   - Catalan: ca-ES
     
-  - Farsi (Persian): fa-IR
+  - Persian: fa-IR
     
   - Filipino: fil-PH
     
@@ -135,7 +135,7 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Georgian  <br/> |English  <br/> |
 |Gujarati  <br/> |English  <br/> |
 |Icelandic  <br/> |English  <br/> |
-|Irish - Gaelic  <br/> |English  <br/> |
+|Irish  <br/> |English  <br/> |
 |Kannada  <br/> |English  <br/> |
 |Khmer  <br/> |English  <br/> |
 |Kiswahili  <br/> |English  <br/> |
@@ -151,7 +151,7 @@ The remaining Office applications appear in the base Office 2016 installation la
 |Nepali  <br/> |English  <br/> |
 |Norwegian (Nynorsk)  <br/> |Norwegian (Bokmål)  <br/> |
 |Odia  <br/> |English  <br/> |
-|Persian (Farsi)  <br/> |English  <br/> |
+|Persian  <br/> |English  <br/> |
 |Punjabi (India)  <br/> |English  <br/> |
 |Quechua (Peru)  <br/> |Spanish  <br/> |
 |Scottish Gaelic  <br/> |English  <br/> |
