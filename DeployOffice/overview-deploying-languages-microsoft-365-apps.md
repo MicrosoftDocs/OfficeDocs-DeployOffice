@@ -261,7 +261,7 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 | Norwegian Nynorsk                        | nn-NO               | Norwegian (Bk), English, German, Norwegian (Ny)                           |
 | Odia                                     | or-IN               |                                                                           |
 | Pashto                                   | ps-AF               |                                                                           |
-| Persian (Farsi)                          | fa-IR               |                                                                           |
+| Persian                          | fa-IR               |                                                                           |
 | Polish                                   | pl-PL               | Polish, English, German                                                   |
 | Portuguese (Portugal)                    | pt-PT               | Portuguese, English, French, Spanish                                      |
 | Portuguese (Brazil)                      | pt-BR               | Brazilian, English, Spanish                                               |
