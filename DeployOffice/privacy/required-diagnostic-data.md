@@ -2108,16 +2108,18 @@ The following fields are collected:
 
 The event is triggered when the user closes by tapping the top left button at the full compose view or save some drafts from quick reply view. The data is used for monitoring possible negative impact on the ability to create and save mail drafts.
 
-The following fields are collected: 
+The following fields are collected:
 
 - **action** - the type of action, for example, save, discard.
 
 - **draft_contains_inking** - this is an optional property which will tell if this draft has an inking data in it or not. If it has, then the value of this property will be true, otherwise false.
- 
+
 - **draft_message_id** - message ID of the draft
 
 - **is_groups** - whether the draft is being sent to/from a group folder
- 
+
+- **mail_importance_type** - the message’s importance type that user selected to mark the draft priority (for example, high/low/normal)
+
 - **origin** - where draft was initiated, for example, message detail, compose.
 
 - **smart_compose_model_version** - tracks which version of smart compose model is being used
@@ -2129,7 +2131,7 @@ The following fields are collected:
 - **suggestions_returned** - indicates how many smart compose suggestions returned from server
 
 - **suggestions_shown** - indicates how many smart compose suggestions shown to the user
- 
+
 - **thread_id** - thread ID of the conversation draft is associated with
 
 - **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
@@ -9402,6 +9404,8 @@ The following fields are collected:
 
 - **key_stroke_count** - tracks the keystrokes count for the message that is being sent
 
+- **mail_importance_type** - the message’s importance type that user selected to mark the sending mail’s priority (for example, high/low/normal)
+
 - **message_id** - tracks the message ID being replied/forwarded
 
 - **message_ordering_mode** - tracks how the user orders their messages in the reading pane (for example, newest on bottom or newest on top) so we can analyze the impact this has on the send rate and the type of send (for example, reply, reply all, or forward).
@@ -9967,7 +9971,7 @@ The following fields are collected:
 
 #### Office.ClickToRun.Ads.Container.AdsContainer
 
-This event triggered when a free version of an Office application running on the Windows platform is launched. The data will be used to track how many users are using the free experience, and health data such as load times.
+This event is collected from free versions of Office applications running on the Windows platform. This event triggered when a free version of an application is launched. This event includes metadata about the version of the application and dependencies, the performance of Office advertisements, and error information if there is an issue.
 
 The following fields are collected:  
 
@@ -9975,9 +9979,13 @@ The following fields are collected:
 
 - **Activity_Result_Type** - Whether the event was successful
 
-- **Data_AdFailure** - Duration until advertisement SDX reported ad bid failure
+- **Data_AdFailure** - Duration until advertisement add-in reported ad bid failure
 
-- **Data_AdReady** - Duration until advertisement SDX reported ad bid success
+- **Data_AdReady** - Duration until advertisement add-in reported ad bid success
+
+- **Data_ContainerInstanceId** - A unique identifier for each advertisement container
+
+- **Data_Destroy** - Duration when advertisement container is destroyed due to an error
 
 - **Data_ErrorDescription** - A human-readable description of the error
 
@@ -9987,17 +9995,21 @@ The following fields are collected:
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
 
-- **Data_SDXInstanceId** - A unique identifier for each SDX initialization
+- **Data_SDXInstanceId** - A unique identifier for each advertisement add-in initialization
 
-- **Data_SDXPackageVersion** - The version of the advertisement SDX (Service Delivered Experience)
+- **Data_SDXPackageVersion** -  The version of the advertisement add-in
 
-- **Data_SDXReady** - Duration to finish advertisement SDX initialization
+- **Data_SDXReady** - Duration to finish advertisement add-in initialization
+
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
 
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
-- **Data_StartSDX** - Duration to start advertisement SDX initialization
+- **Data_StartSDX** - Duration to start advertisement add-in initialization
 
 - **Data_Type** - The type of advertisement
+
+- **Data_WindowClosed** - Duration until application window is closed
 
 
 #### Office.Extensibility.OfficeJS.Appactivated
@@ -12809,11 +12821,15 @@ This event is triggered when an iOS background task is started, ended, or expire
 
 The following fields are collected:
 
-- **correlation_Id** - A unique identifier given to a task so that we can correlate the start/end/expires in telemetry.
+- **correlation_Id** - A unique identifier given to a task so that we can correlate the start/end/expires in telemetry. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **event_type** - The background task event type, either start, end or expire.
+- **event_type** - The background task event type, either start, end or expire. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime.
+-**execution_time** - The amount of time it took to execute the background task.
+
+-**expiration_execution_time** - If the task expires, there is still some time allotted for the task to complete. This field is the amount of time it took to execute the expiration handler.
+
+- **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **task_name** - The name given to the task either by Outlook or by the operating system.
 
@@ -13777,7 +13793,43 @@ This event is collected from free versions of Office applications running on the
 
 The following fields are collected:  
 
+- **Activity_Result_Code** - The error code from event
+
+- **Activity_Result_Type** - Whether the event was successful
+
+- **Data_AdFailure** - Duration until advertisement add-in reported ad bid failure
+
+- **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
+
+- **Data_ContainerInstanceId** - A unique identifier for each advertisement container
+
+- **Data_Destroy** - Duration when advertisement container is destroyed due to an error
+
+- **Data_ErrorDescription** - A human-readable description of the error
+
+- **Data_ErrorSource** - The component responsible for the error
+
+- **Data_Init** - Duration to initialize advertisement container
+
+- **Data_IsCanceled** - A unique identifier for each advertisement container
+
 - **Data_MoeErrorCode** - The error code from failure
+
+- **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_SDXPackageVersion** - The version of the advertisement add-in 
+
+- **Data_SDXReady** - Duration to finish advertisement add-in initialization
+
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
+
+- **Data_ShownTime** - Duration until an ad has been shown to user
+
+- **Data_StartSDX** - Duration to start advertisement add-in initialization
+
+- **Data_Type** - The type of advertisement
+
+- **Data_WindowClosed** - Duration when application document window is closed
 
 #### Office.ClickToRun.Ads.SDX.Error
 

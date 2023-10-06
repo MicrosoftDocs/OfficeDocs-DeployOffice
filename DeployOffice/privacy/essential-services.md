@@ -4881,6 +4881,13 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
    - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
 
+- **Office.iOS.Paywall.SKUChooser.ToggleTap** - Data is collected when user taps the Toggle. The data is used to measure the performance of the toggle and ensure that it performing as expected. 
+ 
+   The following fields are collected: 
+ 
+   - **selectedPlanType: Int** - Check the selected toggle plan type monthly/ yearly (1 for monthly, 2 for yearly)
+
+
 - **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
 
    The following fields are collected:
