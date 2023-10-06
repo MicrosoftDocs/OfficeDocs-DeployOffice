@@ -12825,9 +12825,9 @@ The following fields are collected:
 
 - **event_type** - The background task event type, either start, end or expire. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
--**execution_time** - The amount of time it took to execute the background task.
+- **execution_time** - The amount of time it took to execute the background task.
 
--**expiration_execution_time** - If the task expires, there is still some time allotted for the task to complete. This field is the amount of time it took to execute the expiration handler.
+- **expiration_execution_time** - If the task expires, there is still some time allotted for the task to complete. This field is the amount of time it took to execute the expiration handler.
 
 - **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
