@@ -2108,16 +2108,18 @@ The following fields are collected:
 
 The event is triggered when the user closes by tapping the top left button at the full compose view or save some drafts from quick reply view. The data is used for monitoring possible negative impact on the ability to create and save mail drafts.
 
-The following fields are collected: 
+The following fields are collected:
 
 - **action** - the type of action, for example, save, discard.
 
 - **draft_contains_inking** - this is an optional property which will tell if this draft has an inking data in it or not. If it has, then the value of this property will be true, otherwise false.
- 
+
 - **draft_message_id** - message ID of the draft
 
 - **is_groups** - whether the draft is being sent to/from a group folder
- 
+
+- **mail_importance_type** - the message’s importance type that user selected to mark the draft priority (for example, high/low/normal)
+
 - **origin** - where draft was initiated, for example, message detail, compose.
 
 - **smart_compose_model_version** - tracks which version of smart compose model is being used
@@ -2129,7 +2131,7 @@ The following fields are collected:
 - **suggestions_returned** - indicates how many smart compose suggestions returned from server
 
 - **suggestions_shown** - indicates how many smart compose suggestions shown to the user
- 
+
 - **thread_id** - thread ID of the conversation draft is associated with
 
 - **video_message_default_thumbnail_count** - the number of video thumbnails that have been unfurled with default thumbnail while sending a message
@@ -4574,6 +4576,160 @@ The following fields are collected:
 
 - **Data_UpsellAppearsFromDelegate** - A Boolean value to indicate if the view was shown from the share menu.
 
+#### Office.Excel.Command.ShowPythonCenterTaskPane
+
+This event is triggered when Python Center is launched. This data is used to ensure that Python Center is launched in the correct scenarios as expected.
+
+The following fields are collected:
+
+- **Data_CorrelationGuid** - A unique ID for the launch event.
+
+- **Data_ErrorTags** - A value indicating which error has occurred.
+
+- **Data_GeneralTags** - A list of code markers indicating which potential error(s) occurred
+
+- **Data_PythonCenterLaunchSource** - An enum value indicating type of source launching Python center such as click ribbon button, =PY, ctrl+shift+alt+P, a teaching callout.
+
+- **Data_WorkbookId** - A unique GUID associated with a workbook
+
+#### Office.Excel.Python.CalcAggregation
+
+This event is triggered when users execute Python formula in an Excel session. This data is used to confirm the successful execution of Python code in order to provide the desired experience to the user while running Python in Excel.
+
+The following fields are collected:
+
+- **Data_ InitPyExecutions** - The count of times executing initialization script of Python in Excel per Excel session.
+
+- **Data_ ScriptExecutions** - The count of times executing Python formula per Excel session.
+
+- **Data_ SystemErrors** - The count of times error occurs when execute Python formula per Excel session.
+
+
+#### Office.Excel.Python.ExecuteCode
+
+This event is triggered when users execute Python formula in Excel.  This data is used to confirm the successful execution of Python code in order to provide the desired experience to the user while running Python in Excel.
+
+The following fields are collected:
+
+- **Data_BuildCodeDuration** - Duration of how long it took to build the Python code for a PY formula.
+
+- **Data_ClientNull** - A flag indicating a particular error state related to OC.8061799.
+
+- **Data_CodeCacheHit** - A flag indicating the code cache hit for a PY formula or not
+
+- **Data_CodeLinesCount** - Count of lines of code in Python script.
+
+- **Data_CodeSize** - Size of the Python code built for a PY formula.
+
+- **Data_CorrelationId** - GUID used to correlate activities.
+
+- **Data_EnvironmentType** - Type of Jupyter client environment. Set by “Office.Excel.OEP.JupyterEnvironmentType”. Default is OfficePy::JupyterClientEnvironmentType::WebService.
+
+- **Data_ExecutionsCountPerWorkbook** - Count of executions of Python scripts (excluding init.py) in a given session.
+
+- **Data_JsonMarshalingDuration** - The duration of marshaling the result returned by the Python service into data to be returned from the PY formula.
+
+- **Data_MarshalResult** - HRESULT from the process of marshaling the result returned by the Python service into data to be returned from the PY formula.
+
+- **Data_Measurements** - A string of measurements from Excel code involved in sending and receiving the Python script.
+
+- **Data_Python_DataUpload_ByteCount** - Total bytes uploaded.
+
+- **Data_Python_DataUpload_ChunkCount** - Total number of chunks.
+
+- **Data_Python_DataUpload_ClientCacheHitCount** - The number of uploads that were found in the client-side cache.
+
+- **Data_Python_DataUpload_ETagMillisecondCount** - Total milliseconds to do the GetETag requests.
+
+- **Data_Python_DataUpload_FinishMillisecondCount** - Total milliseconds to do the FinishUpload requests.
+
+- **Data_Python_DataUpload_ReadMillisecondCount** - Total milliseconds to read from PowerQuery.
+
+- **Data_Python_DataUpload_ServerCacheHitCount** - The number of uploads that were not found in the client-side cache, but had the same server ETag.
+
+- **Data_Python_DataUpload_StartMillisecondCount** - Total milliseconds to do the StartUpload requests.
+
+- **Data_Python_DataUpload_TotalMillisecondCount** - Total milliseconds.
+
+- **Data_Python_DataUpload_UploadCount** - The number of uploads for a PY formula.
+
+- **Data_Python_DataUpload_UploadMillisecondCount** - Total milliseconds to do the UploadData requests.
+
+- **Data_Python_Jupyter_EnforceInitPyRunBeforePyFormulaMilliseconds** - Time it took to make sure that init.py had been run before this script.
+
+- **Data_Python_Jupyter_RuntimeWaitingMillisecondsWithUpload** - Time it took to upload PowerQuery data.
+
+- **Data_PythonErrorDescriptionEmpty** - Flag indicating whether the Python service returned an error message from an exception.
+
+- **Data_PythonReturnedError** - HRESULT returned from the Python service if it’s an error.
+
+- **Data_ReferenceCacheHitCellsCount** - The number of cells uploaded to the Python service which were available in an LRU cache and so didn’t need to be marshaled multiple times.
+
+- **Data_ReferenceCacheHitDataSize** - Size of the data uploaded to the Python service which was available in an LRU cache and so didn’t need to be marshaled multiple times.
+
+- **Data_ReferenceCellsCount** - The number of cells referenced by the PY formula.
+
+- **Data_ReferenceDataSize** - Size of the data uploaded to the Python service for cells referred to the PY formula.
+
+- **Data_SuccessfulExecution** - Boolean flag indicating successful execution of the Python script.
+
+- **Data_TimeInclusiveMeasurements** - A string of time inclusive measurements from Excel code involved in sending and receiving the Python script.
+
+- **Data_TimeSplitMeasurements** - A string of time split measurements from Excel code involved in sending and receiving the Python script.
+
+- **Python_Jupyter_RuntimeWaitingMilliseconds** - Time it took to run before the PY formula (irrespective of a PowerQuery data upload or init.py code enforcement)
+
+
+#### Office.Excel.Python.RichedPythonTelemetry
+
+This event is triggered when the user edits Python formula in Excel. This data is used to ensure that a user gets the expected experience while creating/editing/running Python inside Excel.
+
+The following fields are collected: 
+
+- **Data_CloseInPythonEditMode** -Count indicating how many times Excel application is closed in a single session while editing Python cell.
+
+- **Data_EntryModeAutocomplete** - Count indicating how many times a user starts editing Python formula in a cell by auto complete in a single session
+
+- **Data_EntryModeExistingPythonCell** - Count indicating how many times a user edits Python in a single session
+
+- **Data_EntryModeRibbon** - Count indicating how many times a user starts editing Python formula in a cell by clicking ribbon button in a single session
+
+- **Data_EntryModeShortcut** - Count indicating how many times a user starts editing Python formula in a cell by shortcut in a single session
+
+- **Data_EntryModeTypePy** - Count indicating how many times a user starts editing Python formula in a cell by =PY() in a single session.
+
+- **Data_ExitWithNoCode** - Count indicating how many times a user completes editing Python formula without code in a single session.
+
+- **Data_PastePythonCell** - Count indicating how many times a user pastes Python formula in a single session.
+
+- **Data_SetMarshallMode** - Count indicating how many times a user changes the marshal mode of a Python formula in a single session.
+
+- **Data_WorkbookId** - A unique GUID associated to a workbook.
+
+
+#### Office.Excel.Python.WorkbookContainsPython
+
+This event is triggered to identify if an Excel workbook opened by a user contains Python formula or not. This data is used to ensure the expected user experience was provided depending on the availability of Python code inside Excel workbook.
+
+The following fields are collected:
+
+- **Data_MayContainPython** - A flag containing if opened Excel sheet contains Python formula.
+
+- **Data_WorkbookId** - A unique GUID associated to an Excel workbook
+
+#### Office.Excel.PythonCenter.PythonSamplesPane
+
+This event is triggered when a user inserts Python formula example from Python Center. This data is used to verify successful execution of sample Python code and validate expected user experience.
+
+The following fields are collected:
+
+- **Data_Action** - Default value “Click”
+
+- **Data_ChildAction** - A value indicating what button user clicks while interacting with UI
+
+- **Data_OTelJS_Version** - The version number of telemetry API used.
+
+
 #### Office.Excel.XlEditSession
 
 Collected when the user starts editing a spreadsheet. The data collected allows Microsoft to evaluate the feature health of actions that change the spreadsheet. It is also used to calculate monthly active users and devices.
@@ -4614,6 +4770,67 @@ The following fields are collected:
 - **SolutionId** - ID of the solution
 
 - **TelemetryId** - telemetry ID based on the signed in identity
+
+#### Office.Extensibility.DiscoverTryBuy.Py.LicenseInfo
+
+This event is triggered when checking for a valid license to use Python in Excel. This data is used to ensure that the user gets the expected experience for Python in Excel based on the availability of a valid license.
+
+The following fields are collected: 
+
+- **Data_FUserHasValidPythonLicense** - A Boolean value indicating if user has a valid license to use Python in Excel.
+
+- **Data_UserLicenseState** - A state of a license such as Active, Undefined, EligibleNeedsOptin
+
+#### Office.Extensibility.DiscoverTryBuy.Py.PremiumHubExperience
+
+This event is triggered when a launches Premium Hub dialog. This data is used to give insight into the premium hub experience and how often it is successful or dismissed.
+
+The following fields are collected:
+
+- **Data_Action** - An enum value with default as “Dialog”
+
+- **Data_ChildAction** - An enum value indicating user choice on a dialog such as user selecting “Try Preview”, “Show me how it works”.
+
+- **Data_DetachedDuration** - The time user interacts with UI.
+
+- **Data_PythonCenterLaunchSource** - An enum value indicating the source of Python Center launch such as “=PY(“ , ctrl+shift+alt+P.
+
+- **Data_UIType** - An enum value with a default of “Dialog”
+
+
+#### Office.Extensibility.DiscoverTryBuy.Py.PythonTakerExperienceJourney
+
+This event is triggered when a user selects or tries to edit an Excel cell with Python formula. This data will be used to make a user aware that they do not have access to edit a Python cell and provide them with an opportunity to learn more about how they can obtain access.
+
+The following fields are collected: 
+
+- **Data_Action** - An enum value indicating type of different messages displayed to the user.
+
+- **Data_ChildAction** - An enum value indicating the user choice with UI such as clicking on “Try Preview”, “No Thanks”, “Learn More”, “OK” buttons.
+
+- **Data_ChildUIType** - An enum value with a default “Message box”
+
+- **Data_DetachedDuration** - The time a user interacts with UI.
+
+- **Data_UIType** - An enum value with a default “Message box”
+
+
+#### Office.Extensibility.DiscoverTryBuy.Py.PythonTakerFREJourney
+
+This event is triggered when a user gets a license to use Python in Excel. This data is used to confirm that the first run experience of Python in Excel is successful and runs as expected.
+
+The following fields are collected:
+
+- **Data_Action** - Indicates UI is shown
+
+- **Data_ChildAction** - Type of user interaction such as Start Tour, Skip Tour
+
+- **Data_DetachedDuration** - The time a user interacts with UI
+
+- **Data_LastAction** - Type of user interaction in sequence callouts such as user seeing first/second/third teaching callout, user dismissing first/second/third teaching callout
+
+- **Data_UIType** - Type of UI such as Sequence teaching callout, Dialog
+
 
 #### Office.Extensibility.ODPAppCommandsRibbonClick
 
@@ -5633,6 +5850,27 @@ This indicates when a user has used high value features within the product. It m
 The following fields are collected: 
 
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
+
+
+#### Office.Fluid.LoopMobile.UserAction.FRE
+ 
+The event is triggered when Loop Android is launched for the first time and goes through the First Run Experience flow. The data is used to monitor the health of Loop Android’s First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **FREActionType** - The type of First Run Experience Screen presented.
+
+
+#### Office.Fluid.LoopMobile.UserAction.Launch
+ 
+The event is triggered when Loop Android is launched for the first time and goes through the First Run Experience flow. The data is used to monitor the health of Loop Android’s First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **LaunchActionType** - The type of action that triggered the First Run Experience.
+
+- **LaunchEntryPoint** - The entry point that triggered the First Run Experience.
+
 
 
 #### Office.Klondike.MobileAttribution.AppInstall
@@ -9402,6 +9640,8 @@ The following fields are collected:
 
 - **key_stroke_count** - tracks the keystrokes count for the message that is being sent
 
+- **mail_importance_type** - the message’s importance type that user selected to mark the sending mail’s priority (for example, high/low/normal)
+
 - **message_id** - tracks the message ID being replied/forwarded
 
 - **message_ordering_mode** - tracks how the user orders their messages in the reading pane (for example, newest on bottom or newest on top) so we can analyze the impact this has on the send rate and the type of send (for example, reply, reply all, or forward).
@@ -9967,7 +10207,7 @@ The following fields are collected:
 
 #### Office.ClickToRun.Ads.Container.AdsContainer
 
-This event triggered when a free version of an Office application running on the Windows platform is launched. The data will be used to track how many users are using the free experience, and health data such as load times.
+This event is collected from free versions of Office applications running on the Windows platform. This event triggered when a free version of an application is launched. This event includes metadata about the version of the application and dependencies, the performance of Office advertisements, and error information if there is an issue.
 
 The following fields are collected:  
 
@@ -9975,9 +10215,13 @@ The following fields are collected:
 
 - **Activity_Result_Type** - Whether the event was successful
 
-- **Data_AdFailure** - Duration until advertisement SDX reported ad bid failure
+- **Data_AdFailure** - Duration until advertisement add-in reported ad bid failure
 
-- **Data_AdReady** - Duration until advertisement SDX reported ad bid success
+- **Data_AdReady** - Duration until advertisement add-in reported ad bid success
+
+- **Data_ContainerInstanceId** - A unique identifier for each advertisement container
+
+- **Data_Destroy** - Duration when advertisement container is destroyed due to an error
 
 - **Data_ErrorDescription** - A human-readable description of the error
 
@@ -9987,17 +10231,19 @@ The following fields are collected:
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
 
-- **Data_SDXInstanceId** - A unique identifier for each SDX initialization
+- **Data_SDXInstanceId** - A unique identifier for each advertisement add-in initialization
 
-- **Data_SDXPackageVersion** - The version of the advertisement SDX (Service Delivered Experience)
+- **Data_SDXPackageVersion** -  The version of the advertisement add-in
 
-- **Data_SDXReady** - Duration to finish advertisement SDX initialization
+- **Data_SDXReady** - Duration to finish advertisement add-in initialization
 
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
-- **Data_StartSDX** - Duration to start advertisement SDX initialization
+- **Data_StartSDX** - Duration to start advertisement add-in initialization
 
 - **Data_Type** - The type of advertisement
+
+- **Data_WindowClosed** - Duration until application window is closed
 
 
 #### Office.Extensibility.OfficeJS.Appactivated
@@ -12235,6 +12481,16 @@ The following fields are collected:
 
 - **Data_IdentityProviderEnum** - The authentication identity provider code. (A number)
 
+
+#### Office.Apple.MetricKit.CrashDiagnostic
+ 
+The event is triggered when Office apps crash. The data is used to get additional crash information that helps with fixing bugs and keep Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **CrashDiagnostic** - A blob of text with crash data.
+
+
 #### Office.Apple.SystemHealthAppExitMacAndiOS
 
 This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our Office applications and for investigating causes of failures. We collect data on each application exit to determine whether an application exited gracefully.
@@ -12809,11 +13065,15 @@ This event is triggered when an iOS background task is started, ended, or expire
 
 The following fields are collected:
 
-- **correlation_Id** - A unique identifier given to a task so that we can correlate the start/end/expires in telemetry.
+- **correlation_Id** - A unique identifier given to a task so that we can correlate the start/end/expires in telemetry. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **event_type** - The background task event type, either start, end or expire.
+- **event_type** - The background task event type, either start, end or expire. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
-- **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime.
+- **execution_time** - The amount of time it took to execute the background task.
+
+- **expiration_execution_time** - If the task expires, there is still some time allotted for the task to complete. This field is the amount of time it took to execute the expiration handler.
+
+- **task_id** - An ID given to the task by the operating system. This ID is only unique per app session so there will be multiple tasks with the same ID over the course of the app’s lifetime. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **task_name** - The name given to the task either by Outlook or by the operating system.
 
@@ -13777,7 +14037,40 @@ This event is collected from free versions of Office applications running on the
 
 The following fields are collected:  
 
+- **Activity_Result_Code** - The error code from event
+
+- **Activity_Result_Type** - Whether the event was successful
+
+- **Data_AdFailure** - Duration until advertisement add-in reported ad bid failure
+
+- **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
+
+- **Data_ContainerInstanceId** - A unique identifier for each advertisement container
+
+- **Data_Destroy** - Duration when advertisement container is destroyed due to an error
+
+- **Data_ErrorDescription** - A human-readable description of the error
+
+- **Data_ErrorSource** - The component responsible for the error
+
+- **Data_Init** - Duration to initialize advertisement container
+
+- **Data_IsCanceled** - A unique identifier for each advertisement container
+
 - **Data_MoeErrorCode** - The error code from failure
+
+- **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_SDXPackageVersion** - The version of the advertisement add-in 
+
+- **Data_SDXReady** - Duration to finish advertisement add-in initialization
+
+- **Data_ShownTime** - Duration until an ad has been shown to user
+
+- **Data_StartSDX** - Duration to start advertisement add-in initialization
+
+- **Data_Type** - The type of advertisement
+
 
 #### Office.ClickToRun.Ads.SDX.Error
 
@@ -15367,6 +15660,49 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_Error** - We collect a string representing an error code.
+
+#### Office.Apple.MetricKit.AppLaunchDiagnostic
+ 
+The event is triggered when Office apps have issues when launching. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **AppLaunchDiagnostic** - A blob of text with data about the app launch error.
+
+- **LaunchDurationMS** - Indicates the time it took for the app to launch.
+
+#### Office.Apple.MetricKit.CPUExceptionDiagnostic
+ 
+The event is triggered when Office apps have issues with executing CPU instructions. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **CPUExceptionDiagnostic** - A blob of text with data about the CPU error.
+
+- **TotalCPUTimeMS** - Indicates the total CPU time used during the exception.
+
+- **TotalSampledTimeMS** - Indicates the total time the app was sampled during the exception.
+
+#### Office.Apple.MetricKit.DiskWriteExceptionDiagnostic
+ 
+The event is triggered when Office apps have issues writing to the device’s disk. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **DiskWriteExceptionDiagnostic** - A blob of text with data about the disk writing error.
+
+- **WritesCausedKB** - Total writes caused in KB.
+
+#### Office.Apple.MetricKit.HangDiagnostic
+ 
+The event is triggered when Office apps become unresponsive. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **HangDiagnostic** - A blob of text with data about the app being unresponsive.
+
+- **HangDurationMS** - Indicates the amount of time the app was unresponsive.
+
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
