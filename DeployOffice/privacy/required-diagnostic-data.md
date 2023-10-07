@@ -10237,8 +10237,6 @@ The following fields are collected:
 
 - **Data_SDXReady** - Duration to finish advertisement add-in initialization
 
-- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
-
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
@@ -14067,15 +14065,12 @@ The following fields are collected:
 
 - **Data_SDXReady** - Duration to finish advertisement add-in initialization
 
-- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
-
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
 - **Data_Type** - The type of advertisement
 
-- **Data_WindowClosed** - Duration when application document window is closed
 
 #### Office.ClickToRun.Ads.SDX.Error
 
