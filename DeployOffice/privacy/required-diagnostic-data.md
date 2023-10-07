@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 09/15/2023
+ms.date: 10/06/2023
 ---
 
 # Required diagnostic data for Office
