@@ -2,6 +2,14 @@
 
 
 
+## Week of October 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/6/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of September 25, 2023
 
 
@@ -47,15 +55,3 @@
 | 9/7/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | added |
 | 9/8/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
 | 9/8/2023 | [Sign up for cloud update](/DeployOffice/other/signup-for-cloud-update) | modified |
-
-
-## Week of August 28, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Microsoft Configuration Manager](/DeployOffice/updates/move-devices-channel-configmgr) | added |
-| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Group Policies](/DeployOffice/updates/move-devices-channel-group-policy) | added |
-| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Intune](/DeployOffice/updates/move-devices-channel-intune) | added |
-| 8/31/2023 | [Copilot - Move a subset of devices to Current Channel with Servicing Profile](/DeployOffice/updates/move-devices-channel-servicingprofiles) | added |
-| 9/1/2023 | [Copilot - Move a subset of devices to Current Channel with Autopatch](/DeployOffice/updates/move-devices-channel-autopatch) | added |
