@@ -99,6 +99,14 @@ For more information about using the Office Deployment Tool and the configuratio
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 
+### Using Microsoft Intune
+The required policy can be set through a Configuration Profile in Microsoft Intune.
+
+- Navigate to **Devices** > **Configuration Profiles**
+- Create a new profile, select **Windows 10 or later** as the platform and **Settings Catalog** as the profile type.
+- Navigate to **Microsoft Office 2016 (Machine) > Licensing Settings** and select the **Use a device-based license for Office 365 ProPlus** policy.
+- **Enable** the policy and assign it to group which contains the targeted devices.
+
 ### Using Group Policy 
 If you use Group Policy to configure Microsoft 365 Apps for enterprise settings, you can enable the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
 
