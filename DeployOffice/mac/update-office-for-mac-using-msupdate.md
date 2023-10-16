@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
-ms.date: 03/01/2023
+ms.date: 10/16/2023
 ---
 
 # Update Microsoft applications for Mac by using msupdate
@@ -76,15 +76,14 @@ The following table lists the Microsoft applications for Mac supported by MAU. T
 |OneNote        |ONMC2019|
 |MAU              |MSau04|
 |OneDrive  |ONDR18|
-|Teams  |TEAMS10|
+|Teams 1.0 classic  |TEAMS10|
+|Teams 2.1 |TEAMS21|
 |Skype for Business |MSFB16|
 |Remote Desktop         |MSRD10|
 |Intune Company Portal  |IMCP01|
 |Microsoft Defender for Endpoint  |WDAV00|
-|Microsoft Edge Canary |EDCN01|
-|Microsoft Edge Dev  |EDDV01|
-|Microsoft Edge Beta |EDBT01|
-|Microsoft Edge Stable |EDGE01 |
+|Microsoft Defender for Consumers  |WDAVCONSUMER|
+|Microsoft Defender Shim |WDAVSHIM|
 |Licensing helper tool|OLIC02|
 
 > [!NOTE]
