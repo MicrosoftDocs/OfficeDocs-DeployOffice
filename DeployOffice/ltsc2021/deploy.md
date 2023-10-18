@@ -19,7 +19,7 @@ To configure and perform deployments of Office LTSC 2021, including Project and 
 
 The installation files for Office LTSC 2021 are available on the Office Content Delivery Network (CDN) on the internet instead of on the Volume Licensing Service Center (VLSC). You can install Office LTSC 2021 directly from the Office CDN. Or, you can download the installation files from the Office CDN to a location on your local network, such as a shared folder, and install Office LTSC 2021 from that location. You can use different methods for different sets of devices in your organization. Whichever method you choose, you use the ODT.
 
-Installing directly from the Office CDN requires the least amount of administrative effort and is recommended. But you might have constraints that prevent you from installing directly from the internet. For example, some devices might not have connectivity to the internet or you may have limited bandwidth to the internet.
+Installing directly from the Office CDN requires the least amount of administrative effort and is recommended. But you might have constraints that prevent you from installing directly from the internet. For example, some devices might not have connectivity to the internet or you might have limited bandwidth to the internet.
 
 The following steps are the basic steps for deploying Office LTSC 2021:
 
