@@ -64,14 +64,17 @@ Office LTSC 2021, including Project and Visio, have five years of Mainstream Sup
 
 #### Microsoft Teams
 
-Office LTSC 2021 includes the Teams client app. When the user launches the Teams client app, they'll be prompted to sign in. Users whose Azure Active Directory (Azure AD) account is linked to an existing Teams, Microsoft 365, or Office 365 service plan will be able to use that account to sign in to their existing licensed version of the Teams service.
+> [!NOTE]
+> Office LTSC 2021 no longer includes the Teams client app. Existing Office LTSC 2021 installations remain unaffected. 
+
+Users with the Teams client app from their existing Office LTSC 2021 installation will be prompted to sign in upon launching. Those with a Microsoft Entra ID account linked to Teams, Microsoft 365, or Office 365 can sign in using their licensed account. 
 
 Users without an existing license for Teams will be able to use the free or the Exploratory service for Microsoft Teams.
-- The free version of Microsoft Teams is for users who don't have an existing Azure Active Directory (Azure AD) account. For more information, see [Manage the free version of Microsoft Teams](/microsoftteams/manage-freemium).
+- The free version of Microsoft Teams is for users who don't have an existing Microsoft Entra ID account. For more information, see [Manage the free version of Microsoft Teams](/microsoftteams/manage-freemium).
 
-- The Exploratory experience is for users in an organization who have existing Azure AD accounts but aren't licensed for Teams. For more information, see [Manage the Microsoft Teams Exploratory license](/microsoftteams/teams-exploratory).
+- The Exploratory experience is for users in an organization who have existing Microsoft Entra ID accounts but aren't licensed for Teams. For more information, see [Manage the Microsoft Teams Exploratory license](/microsoftteams/teams-exploratory).
 
-For more information about the installation of the Teams client app with Office LTSC 2021, see [Microsoft Teams in Office LTSC 2021](deploy.md#microsoft-teams-in-office-ltsc-2021).
+For more information about the Teams client app with Office LTSC 2021, see [Microsoft Teams in Office LTSC 2021](deploy.md#microsoft-teams-in-office-ltsc-2021).
 
 #### Language support
 

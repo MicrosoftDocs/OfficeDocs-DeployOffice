@@ -153,13 +153,7 @@ If you're upgrading from a Windows Installer (MSI) version of Office, you can ge
 
 ## Microsoft Teams in Office LTSC 2021
 
-Office LTSC 2021 includes the Teams client app. To complete the installation of the Teams client app after installing Office LTSC 2021, either restart the device or sign out, and then sign in again.
-
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
-
-If you don’t want the Teams client app included when you deploy Office LTSC 2021, you can use either of these methods:
-- The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file.
-- The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
+Office LTSC 2021 no longer includes the Teams client app. However, if the Teams client app was previously installed with Office LTSC 2021, it will continue to be automatically updated approximately every two weeks with new features and quality updates. The update process for Teams is different from the update process for other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 ## Skype for Business in Office LTSC 2021
 
