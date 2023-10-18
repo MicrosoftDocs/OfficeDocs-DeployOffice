@@ -44,7 +44,7 @@ In the overview page of cloud update, all the tenant settings apply to every act
 
 **Exclude Groups**
 
-If an admin adds a Microsoft Entra ID group to the exclude groups setting, the devices in this group will be excluded from cloud update. The devices are marked under the cloud update status column as *Excluded from Current Channel or Monthly Enterprise Channel* in the inventory (device schema) within 30 mins. After this information is reflected in inventory, admins can manage these devices by first setting **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
+If an admin adds a Microsoft Entra ID group to the exclude groups setting, the devices in this group will be excluded from cloud update. The devices are marked under the cloud update status column as *Excluded from Current Channel or Monthly Enterprise Channel* in the inventory (device schema) within 30 mins. After the information is reflected in inventory, admins can manage these devices by first setting **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
 
 **Exclusion Window**
 
@@ -61,7 +61,7 @@ Delve deeper into individual profiles, allowing a more thorough examination of p
 
 **Overview**
 
-The overview page will have rollout information representing current updates. Update progress chart displays devices in the Current Channel that have been updated to the latest version available and haven't yet started the update. Admins can view all devices that are part of Current Channel profiles by selecting **View all devices**. For more information, see [Cloud Updates - Overview of Current Channel Profile](https://www.youtube.com/watch?v=wwguIOw788I)
+The overview page has rollout information representing current updates. Update progress chart displays devices in the Current Channel that have been updated to the latest version available and haven't yet started the update. Admins can view all devices that are part of Current Channel profiles by selecting **View all devices**. For more information, see [Cloud Updates - Overview of Current Channel Profile](https://www.youtube.com/watch?v=wwguIOw788I)
 
 **Settings**
 
@@ -97,7 +97,7 @@ Users are given notifications leading up to the deadline when a deadline is set.
 
 ## Inventory
 
-In [Inventory](https://config.office.com/officeSettings/inventory), admins have the capability to modify the update channel for their devices or Microsoft Entra groups. To do this, first select **Show all devices** under data insights. Next, choose **Switch Device Update Channel** located above the device schema. Within the flyout, admins can specify the desired update channel and select the pertinent devices or Microsoft Entra ID groups. After making these changes, the devices will display in the chosen channels in inventory within a day. These devices will then start receiving updates directly from the internet. If cloud update hasn't activated, the action of changing the channel will also turn cloud update on. This means both the Current Channel and Monthly Enterprise Channel support will be activated. For more information, see [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY)
+In [Inventory](https://config.office.com/officeSettings/inventory), admins have the capability to modify the update channel for their devices or Microsoft Entra groups. To do this, first select **Show all devices** under data insights. Next, choose **Switch Device Update Channel** located above the device schema. Within the flyout, admins can specify the desired update channel and select the pertinent devices or Microsoft Entra ID groups. Once these changes are made, the devices are displayed in the chosen channels in inventory within a day. These devices will then start receiving updates directly from the internet. If cloud update hasn't activated, the action of changing the channel will also turn on cloud update, activating support for both Current Channel and Monthly Enterprise Channel. For more information, see [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY)
 
 ## Recommendations
 
@@ -114,18 +114,18 @@ For the best-in-class, low cost, low effort, high end-user productivity and most
 
 **When will the capabilities for channel change and cloud update be available in my tenant?**
 
-Starting in mid-October and continuing through mid-November of 2023, these changes will roll out. If you don't see the capabilities after this timeframe, please reach out to through the OCV feedback option in the Microsoft 365 Apps admin center.
+In mid-October and continuing through mid-November of 2023, these changes will roll out. If you don't see the capabilities after this timeframe, please reach out to through the OCV feedback option in the Microsoft 365 Apps admin center.
 
 **When and what settings can I configure for cloud update?**
 
-Once you've selected **Enable Cloud**, you can configure various settings at tenant level as well as individual channel level, depending on the channel you are in. For instance,
-- Exclude groups and exclusion windows are tenant level settings which one can configure from the overview page.
-- In Current Channel cloud update, you can configure update deadline and pause profile if required.
+Once you've selected **Enable Cloud**, you can configure various settings at tenant level and individual channel level, depending on the channel you are in. For instance,
+- Exclude groups and exclusion windows are tenant level settings, which are configured from the overview page.
+- In Current Channel cloud update, you can configure update deadline and pause profile if necessary.
 - In Monthly Enterprise Channel cloud update, you can configure rollout waves and update deadline. You can also pause, rollback and cancel rollback as required.
 
 **Will devices change their assigned Microsoft 365 Apps update channels?**
 
-No, this will not affect your update channel configuration.
+No, this won't affect your update channel configuration.
 
 **What are the goals of this change?**
 
@@ -137,15 +137,15 @@ If you want to track update progress across Monthly Enterprise Channel and Curre
 
 **Will enabling cloud update impact any of my other settings and controls?**
 
-It will not impact any of your configurations or controls in existing profiles.
+It will not affect any of your configurations or controls in existing profiles.
 
 **What are the expected service times for various admin actions?**
 
-Below are the service times for each of the described admin actions during which the admin should not retry these actions. If the desired action does not complete within the stipulated time, the admin should submit an OCV through the portal.
+Below are the service times for each of the described admin actions during which the admin shouldn't retry these actions. If the desired action doesn't complete within the stipulated time, the admin should submit an OCV through the portal.
 
 - Switch device update channel: Within 24 hours, Device/(s) will reflect in targeted channels in Inventory and will continue to receive updates. If cloud update isn't already enabled, the Channel Change action will also automatically enable cloud update for the tenant.
 
-- Enable cloud: This will activate cloud update for Current Channel and Monthly Enterprise Channel. Devices will be eligible for the profile based on their channel and will receive updates based on profile rules as configured by the admin. After enabling, Current Channel and Monthly Enterprise Channel will be listed in left navigation of Microsoft 365 Apps admin center within 30 minutes. If the channel is not listed after 30 minutes, refresh your page.
+- Enable cloud: This activates cloud update for Current Channel and Monthly Enterprise Channel. Devices will be eligible for the profile based on their channel and updates are received based on profile rules as configured by the admin. Once enabled, Current Channel and Monthly Enterprise Channel will be listed in left navigation of Microsoft 365 Apps admin center within 30 minutes. If the channel isn't listed after 30 minutes, refresh your page.
 
 - Exclude Groups: After a device is excluded from cloud update, it will be labeled as *Excluded from ChannelName* in the cloud update status section in inventory. This change will occur within 30 minutes, after which admins can manage these devices. They should first set **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
 
@@ -157,8 +157,8 @@ This capability is expected to be launched soon.
 
 **How can I turn off update validation?**
 
-Update validation is an extension of rollout waves. If you want to turn it off, you will need to turn off rollout waves.
+Update validation is an extension of rollout waves. If you want to turn it off, you need to turn off rollout waves.
 
 **Can I set up rollout waves for Current Channel devices?**
 
-As the Current Channel is designed to be a fast-moving channel which does not have a predictable update release schedule and often receives multiple updates a month, it's supposed to continue to roll forward fast. Hence, it does not offer some of these settings like rollout waves and rollback.
+The Current Channel is designed for rapid progression. Without a fixed update release schedule and with frequent updates throughout the month, it's intended to advance quickly. As a result, features such as rollout waves and rollback aren't available in Current Channel.
