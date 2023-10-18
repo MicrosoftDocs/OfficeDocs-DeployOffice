@@ -19,7 +19,7 @@ To configure and perform deployments of Office LTSC 2021, including Project and 
 
 The installation files for Office LTSC 2021 are available on the Office Content Delivery Network (CDN) on the internet instead of on the Volume Licensing Service Center (VLSC). You can install Office LTSC 2021 directly from the Office CDN. Or, you can download the installation files from the Office CDN to a location on your local network, such as a shared folder, and install Office LTSC 2021 from that location. You can use different methods for different sets of devices in your organization. Whichever method you choose, you use the ODT.
 
-Installing directly from the Office CDN requires the least amount of administrative effort and is recommended. But you might have constraints that prevent you from installing directly from the internet. For example, some devices might not have connectivity to the internet or you may have limited bandwidth to the internet.
+Installing directly from the Office CDN requires the least amount of administrative effort and is recommended. But you might have constraints that prevent you from installing directly from the internet. For example, some devices might not have connectivity to the internet or you might have limited bandwidth to the internet.
 
 The following steps are the basic steps for deploying Office LTSC 2021:
 
@@ -153,13 +153,7 @@ If you're upgrading from a Windows Installer (MSI) version of Office, you can ge
 
 ## Microsoft Teams in Office LTSC 2021
 
-Office LTSC 2021 includes the Teams client app. To complete the installation of the Teams client app after installing Office LTSC 2021, either restart the device or sign out, and then sign in again.
-
-After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. The update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
-
-If you don’t want the Teams client app included when you deploy Office LTSC 2021, you can use either of these methods:
-- The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file.
-- The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
+Office LTSC 2021 no longer includes the Teams client app. However, if the Teams client app was previously installed with Office LTSC 2021, it will continue to be automatically updated approximately every two weeks with new features and quality updates. The update process for Teams is different from the update process for other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 ## Skype for Business in Office LTSC 2021
 
