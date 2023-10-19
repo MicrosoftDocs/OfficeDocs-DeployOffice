@@ -25,7 +25,7 @@ ms.date: 05/19/2023
 > [!NOTE]
 > For more information about priority access for cloud update, check out the [Priority Access FAQ](#priority-access-faq).
 
-Take advantage of this premium offer by opting to cloud update, Microsoft's recommended update management solution for Microsoft 365 Apps. This innovative tool allows you to automatically deliver updates for specific users or Azure Active Directory groups, supporting Monthly Enterprise Channel, Current Channel, and Semi-Annual Enterprise Channel. As a qualifying tenant, you stand to gain a wealth of powerful controls, proactive insights, and the simplicity of a one-step onboarding process.
+Take advantage of this premium offer by opting to cloud update, Microsoft's recommended update management solution for Microsoft 365 Apps. This innovative tool allows you to automatically deliver updates for specific users or Microsoft Entra groups, supporting Monthly Enterprise Channel, Current Channel, and Semi-Annual Enterprise Channel. As a qualifying tenant, you stand to gain a wealth of powerful controls, proactive insights, and the simplicity of a one-step onboarding process.
 
 With cloud update, you can update Microsoft 365 Apps while retaining your existing channel settings, giving you enhanced flexibility. This includes options to exclude specific devices or user groups, set update deadlines, or apply uniform update themes across your organization. Further, you have access to smart recommendations based on your tenant’s data, potentially identifying devices that could benefit from transitioning to more suitable update channels.
 

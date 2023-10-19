@@ -103,7 +103,7 @@ The following table provides examples of events in this category and a descripti
 | **Event name**    | **Event description**   |
 | --------------- | -------------- |
 | Office.Word.Word.CoreSaveTime100ns     | This event logs the performance of a document save activity by Word. We use this event to detect errors and performance issues in the Word save document activity.|
-| Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to an Azure Active Directory account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
+| Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to a Microsoft Entra account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | This event collects the length of time it takes to render the first slide master thumbnail in PowerPoint.  |
 | Office.Extensibility.Diagnostics   | This event provides general diagnostic information for Office add-ins, such as crash reports for debugging.|
 

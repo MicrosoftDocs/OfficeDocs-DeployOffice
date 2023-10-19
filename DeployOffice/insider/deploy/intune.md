@@ -35,7 +35,7 @@ To make that change, follow these steps:
 7. From the drop-down list under **Channel Name**, choose either **Current Channel (Preview)** or **Beta Channel**. *(Keep in mind that Beta Channel isn't supported.)*
 8. Select **OK** and then select **Next**.
 9. Select scope tags (optional), if appropriate for your organization, and then select **Next**.
-10. Assign the configuration profile to the Azure Active Directory security group with the devices whose channel you want to change, and then select **Next**.
+10. Assign the configuration profile to the Microsoft Entra security group with the devices whose channel you want to change, and then select **Next**.
 11. On the **Review + create** page, review your selections, and then select **Create**.
 
 By default, Intune policies refresh in the background every eight hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately, from the device, you can [sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).

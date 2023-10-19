@@ -56,7 +56,7 @@ These videos cover features available in the [Microsoft 365 Apps admin center](h
 - [Deep dive into Wave customization for Servicing profiles](https://www.youtube.com/watch?v=rDu8qVbE1DY)
 - [New feature for Servicing Profile: Rollback](https://www.youtube.com/watch?v=wyy_ll3wdlM)
 - [H1 Feature Release for Servicing Profiles](https://www.youtube.com/watch?v=dIeeelh5Gcg)
-- [New feature for Servicing Profile: Azure AD Group Filtering (Start Small)](https://www.youtube.com/watch?v=RrEBevNV7pQ)
+- [New feature for Servicing Profile: Microsoft Entra Group Filtering (Start Small)](https://www.youtube.com/watch?v=RrEBevNV7pQ)
 - [Exclusion Window w/ AzureAD group support: Feature update in Servicing Profile](https://www.youtube.com/watch?v=WMVlfg_3wnw)
 
 ### OneDrive sync health

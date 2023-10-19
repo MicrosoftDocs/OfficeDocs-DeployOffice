@@ -26,41 +26,43 @@ The following are the requirements for device-based licensing for Microsoft 365 
 
 - Version 1907 or later of Microsoft 365 Apps for enterprise.
 - Microsoft 365 Apps for enterprise must be installed on a device running a supported version of Windows 11, Windows 10 General Availability Channel (or Semi-Annual Channel, its previous name), Windows Server 2022, or Windows Server 2019.
-- The Windows client device on which Microsoft 365 Apps for enterprise is installed must be [Azure Active Directory (Azure AD) joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+- The Windows client device on which Microsoft 365 Apps for enterprise is installed must be [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
 To verify that Microsoft 365 Apps for enterprise and the Windows client device meet these requirements, do the following steps:
 
 - On the Windows client device, open an Office application, such as Word, and go to **File** > **Account**. The version number of Microsoft 365 Apps for enterprise that is installed on the device appears in the **About** section of the **Product Information** section.
 - On the Windows client device, from the Start menu or a command prompt, type `winver` and then hit Enter. The **About Windows** dialog appears and lists the version of Windows client.
-- Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Azure Active Directory** > **Devices**. The type of join for your Windows client device is listed in the **Join Type** column.
+- Sign in to the [Microsoft Azure](https://portal.azure.com/) and go to **Microsoft Entra ID** > **Devices**. The type of join for your Windows client device is listed in the **Join Type** column.
 
-  If the Windows client device doesn't appear, sign in to the Windows client device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Azure Active Directory or to a local Active Directory domain.
+  If the Windows client device doesn't appear, sign in to the Windows client device. Then go to **Settings** > **Accounts** > **Access work or school**, choose **Connect**, and follow the steps to join the device to either Microsoft Entra ID or to a local Active Directory domain.
 
 ## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
 After you have verified that your Windows client devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
-- Add the Windows client devices to a group that's available in Azure AD.
+- Add the Windows client devices to a group that's available in Microsoft Entra ID.
 - Assign the appropriate licenses to that group by signing into the Microsoft 365 admin center and going to **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
 
 > [!IMPORTANT]
-> Be sure to create the Azure AD group and assign the licenses ***before*** you configure Microsoft 365 Apps for enterprise to use device-based licensing. Otherwise you will receive error messages in Microsoft 365 Apps for enterprise.
+> Be sure to create the Microsoft Entra group and assign the licenses ***before*** you configure Microsoft 365 Apps for enterprise to use device-based licensing. Otherwise you will receive error messages in Microsoft 365 Apps for enterprise.
 
-### Add Windows client devices to a group in Azure AD and assign that group licenses
+<a name='add-windows-client-devices-to-a-group-in-azure-ad-and-assign-that-group-licenses'></a>
 
-To configure device-based licensing, you first need to add your Windows client devices to a group that's available in Azure AD. The following table provides information about the types of groups that are supported and where you can create those groups.
+### Add Windows client devices to a group in Microsoft Entra ID and assign that group licenses
+
+To configure device-based licensing, you first need to add your Windows client devices to a group that's available in Microsoft Entra ID. The following table provides information about the types of groups that are supported and where you can create those groups.
 
 | Group type | Create using these tools |
 |---------|---------|
-|Security, with assigned or static membership. The security group shouldn't be mail-enabled. | Azure AD portal <br/> <br/>On-premises Active Directory and sync to Azure AD with Azure AD Connect        |
-|Security, with dynamic device membership |Azure AD portal |
-|Distribution list| On-premises Active Directory and sync to Azure AD with Azure AD Connect <br/><br/>On-premises Exchange Server and sync to Azure AD with Azure AD Connect<br/><br/> Microsoft 365 admin center      |
-|Office 365 | Not supported   (type of group in Azure AD |
+|Security, with assigned or static membership. The security group shouldn't be mail-enabled. | Microsoft Entra admin center <br/> <br/>On-premises Active Directory and sync to Microsoft Entra ID with Microsoft Entra Connect        |
+|Security, with dynamic device membership |Microsoft Entra admin center |
+|Distribution list| On-premises Active Directory and sync to Microsoft Entra ID with Microsoft Entra Connect <br/><br/>On-premises Exchange Server and sync to Microsoft Entra ID with Microsoft Entra Connect<br/><br/> Microsoft 365 admin center      |
+|Office 365 | Not supported   (type of group in Microsoft Entra ID) |
 
 For more information about Azure group management, see the following articles:
-- [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 - [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
-- [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
+- [Microsoft Entra Connect Sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
 After you have created the appropriate group type and assigned the appropriate Windows client devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
 
@@ -72,7 +74,7 @@ After you have created the appropriate group type and assigned the appropriate W
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
-After you have assigned licenses to the group in Azure AD that contains your Windows client devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
+After you have assigned licenses to the group in Microsoft Entra ID that contains your Windows client devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
  - The Office Deployment Tool and the DeviceBasedLicensing setting.
 - Group Policy and the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting
 
@@ -125,7 +127,7 @@ In those cases, the user also sees a banner beneath the ribbon in the document w
 
 > **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
-To troubleshoot this issue, make sure the device is correctly joined to Azure AD and that the device is added to the group that has been assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
+To troubleshoot this issue, make sure the device is correctly joined to Microsoft Entra ID and that the device is added to the group that has been assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
 
 In other cases, the user might see this message:
 

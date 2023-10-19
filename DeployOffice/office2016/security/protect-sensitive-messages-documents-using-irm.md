@@ -51,7 +51,7 @@ To protect a document in Office 2016 using IRM, you must have an on-premises AD 
   
 ### Using IRM with Active Directory Rights Management Services
 
-Enabling IRM in your organization requires access to a computer running Active Directory Rights Management Services (AD RMS) for Windows Server 2012 or Windows Server 2012 R2, or to a cloud tenant with an Azure RMS subscription. The permissions are enforced by using authentication, typically by using Active Directory Domain Services (AD DS) or Azure Active Directory.
+Enabling IRM in your organization requires access to a computer running Active Directory Rights Management Services (AD RMS) for Windows Server 2012 or Windows Server 2012 R2, or to a cloud tenant with an Azure RMS subscription. The permissions are enforced by using authentication, typically by using Active Directory Domain Services (AD DS) or Microsoft Entra ID.
   
 Organizations can define the permissions policies that appear in Office applications by creating rights policy templates. For example, you might define a rights policy template named **Marketing Confidential**, which specifies that documents or email messages that use the policy can only be opened by users inside that department. While there is no limit to the number of permission policies that can be created, Office can only display up to 20 policy templates at a time. Azure Rights Management provides two pre-defined organization-wide templates to which you can either add your own custom templates, or alternatively you can disable the templates if you want.
   

@@ -85,7 +85,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 2. Use [administrative templates for Windows 10 and newer in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows) to enable the setting **Update Channel (2.0)** and select the new channel. The policy setting is under Computer Configuration\Microsoft Office 2016 (Machine)\Updates.
 
-3. Assign the configuration profile to the Azure AD security group with the devices whose channel you want to change.
+3. Assign the configuration profile to the Microsoft Entra security group with the devices whose channel you want to change.
 
 4. By default, Intune policies refresh in the background every 8 hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), from the device, select **Start** > **Settings** > **Accounts** > **Access work or school** > *{Select your account}* > **Info** > **Sync**. For more information, see [Sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).
 
