@@ -526,7 +526,7 @@ The following fields are collected:
 
 - **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = PRT|LRT, PRT's error would be in AuthFlowLastError).
 
-- **MSAL_authority_type** - Was this request for a user in: Microsoft Entra ID, Federated, or MSA.
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
 
 - **MSAL_authorization_error_subcode** - If we received a sub error code from the authorization/UI call, it's put here. (Ex: "bad_token")
 
@@ -739,7 +739,7 @@ The following fields are collected:
 
 - **MSAL_auth_flow_last_error** - Error code we received from the server on the second to last item in AuthFlow. (Ex: if AuthFlow = PRT|LRT, PRT's error would be in AuthFlowLastError).
 
-- **MSAL_authority_type** - Was this request for a user in: Microsoft Entra ID, Federated, or MSA.
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
 
 - **MSAL_authorization_error_subcode** - If we received a sub error code from the authorization/UI call, it's put here. (Ex: bad_token)
 
@@ -956,7 +956,7 @@ The following fields are collected:
 
 - **MSAL_auth_flow_last_error** - Error code we received from the server on the 2nd to last item in AuthFlow. (Ex: if AuthFlow = PRT|LRT, PRT's error would be in AuthFlowLastError).
 
-- **MSAL_authority_type** - Was this request for a user in: Microsoft Entra ID, Federated, or MSA.
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
 
 - **MSAL_authorization_error_subcode** - If we received a sub error code from the authorization/UI call, it's put here. (Ex: "bad_token")
 
@@ -1335,7 +1335,7 @@ The following fields are collected:
 
 - **MSAL_auth_flow_last_error** - Error code we received from the server on the second to last item in AuthFlow. (Ex: if AuthFlow = "PRT|LRT", PRT's error would be in AuthFlowLastError).
 
-- **MSAL_authority_type** - Was this request for a user in: Microsoft Entra ID, Federated, or MSA.
+- **MSAL_authority_type** - Was this request for a user in: AAD, Federated, or MSA.
 
 - **MSAL_authorization_error_subcode** - If we received a sub error code from the authorization/UI call, it's put here. (Ex: "bad_token")
 
