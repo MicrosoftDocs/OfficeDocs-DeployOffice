@@ -23,7 +23,7 @@ Basic authentication is an outdated industry standard and doesn't support more r
 
 Therefore, to help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication.
 
-With this change, if users try to open files on servers that only use Basic authentication, they don't see any Basic authentication sign-in prompts. Instead, they see a message that the file has been blocked because it uses a sign-in method that may be unsecure. The message includes a link that takes users to an article that contains information about the security risks of Basic authentication.
+With this change, if users try to open files on servers that only use Basic authentication, they don't see any Basic authentication sign-in prompts. Instead, they see a message that the file has been blocked because it uses a sign-in method that might be unsecure. The message includes a link that takes users to an article that contains information about the security risks of Basic authentication.
 
 > [!NOTE]
 > - File shares hosted on Windows aren't affected by this change because the authentication method used is NTLM.
@@ -48,7 +48,7 @@ This change affects the following apps only on devices running Windows:
 > - This change doesn’t affect Outlook connecting to on-premises Exchange Server using Basic authentication.
 > - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic authentication deprecation in Exchange Online](../endofsupport/microsoft-365-services-connectivity.md#basic-authentication-deprecation-in-exchange-online).
 
-As part of the rollout, users initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that may be unsecure.
+As part of the rollout, users initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that might be unsecure.
 
 The following table shows the version, for each update channel, in which the warning and blocking changes are implemented. Information in italics is subject to change.
 
@@ -76,13 +76,13 @@ The following steps explain the information in the flowchart graphic.
 
 2. If the server is using Basic authentication proxy authentication, Microsoft 365 Apps evaluates the state of the [Allow Basic Authentication prompts from network proxies](#allow-basic-authentication-prompts-from-network-proxies) policy.
    - If the policy is set to Enabled, the user is prompted to provide a username and password to open the file.
-   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that might be unsecure.
 
 3. If the server isn't using Basic authentication, the file opens. If the server uses Basic authentication, Microsoft 365 Apps checks if a policy exists to allow Basic authentication prompts.
 
 4. If the server is authenticating directly with Basic authentication, Microsoft 365 Apps evaluates the state of the [Allow specified hosts to show Basic Authentication prompts to Office apps](#allow-specified-hosts-to-show-basic-authentication-prompts-to-office-apps) policy.
    - If the policy is set to Enabled and the server is specified, the user is prompted to provide a username and password to open the file.
-   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that may be unsecure.
+   - Otherwise, the user doesn't see a sign-in prompt and the file is blocked from opening. Instead, the user sees a message that the file has been blocked because it uses a sign-in method that might be unsecure.
 
 ## Use policies to manage Basic authentication prompts
 
