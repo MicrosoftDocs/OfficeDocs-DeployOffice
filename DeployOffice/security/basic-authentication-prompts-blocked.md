@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 04/12/2023
+ms.date: 10/19/2023
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
@@ -52,13 +52,13 @@ As part of the rollout, users initially get a warning message if they try to acc
 
 The following table shows the version, for each update channel, in which the warning and blocking changes are implemented. Information in italics is subject to change.
 
-| Update channel                           | Warning version                             | Blocking version                                    |
-|------------------------------------------|---------------------------------------------|-----------------------------------------------------|
-| Current Channel (Preview)                | Version 2303                                | *Version 2307* <br/> *(August 2023)*    |
-| Current Channel                          | Version 2304                                | *Version 2308* <br/> *(September 2023)* |
-| Monthly Enterprise Channel               | Version 2304                                | *Version 2308* <br/> *(October 10, 2023)*           |
-| Semi-Annual Enterprise Channel (Preview) | *Version 2308* <br/> *(September 12, 2023)* | *Version 2402* <br/> *(March 12, 2024)*             |
-| Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)*    | *Version 2402* <br/> *(July 9, 2024)*               |
+| Update channel                           | Warning version                          | Blocking version                         |
+|------------------------------------------|------------------------------------------|------------------------------------------|
+| Current Channel (Preview)                | Version 2303                             | *Version 2311* <br/> *(November 2023)*   |
+| Current Channel                          | Version 2304                             | *Version 2311* <br/> *(December 2023)*   |
+| Monthly Enterprise Channel               | Version 2304                             | *Version 2311* <br/> *(January 9, 2024)* |
+| Semi-Annual Enterprise Channel (Preview) | Version 2308                             | *Version 2402* <br/> *(March 12, 2024)*  |
+| Semi-Annual Enterprise Channel           | *Version 2308* <br/> *(January 9, 2024)* | *Version 2402* <br/> *(July 9, 2024)*    |
 
 > [!NOTE]
 > - This change will also affect retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
