@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier3
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Microsoft Autopatch"
-ms.date: 09/01/2023
+ms.date: 10/20/2023
 ---
 
 # Move devices to Current Channel using Microsoft Autopatch
