@@ -25,7 +25,7 @@ At this time, participants of the [Microsoft 365 Copilot Early Access Program (E
 > The policies and configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
  
 ## Scope
-This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, with Windows Autopatch. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md), [Servicing Profiles](move-devices-channel-servicingprofiles.md), or [group policies](move-devices-channel-group-policy.md).
+This article covers recommendations for moving a subset of devices to Current Channel for Microsoft 365 Apps, with Windows Autopatch. If you're managing your Microsoft 365 Apps updates through other technologies, refer to the articles on [Cloud Update](move-devices-channel-cloudupdate.md), [Intune](move-devices-channel-intune.md), [Configuration Manager](move-devices-channel-ConfigMgr.md), [Servicing Profiles](move-devices-channel-servicingprofiles.md), or [group policies](move-devices-channel-group-policy.md).
 
 ## Pre-Checks
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
