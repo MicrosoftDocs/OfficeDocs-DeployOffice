@@ -33,25 +33,27 @@ This article covers:
 There are multiple benefits of using a servicing profile over common update management tools:
 - **Improved security currency:** For enterprise environments we usually see a security currency of around 66%. This means that after each monthly “Patch Tuesday” approximately 66% of Microsoft 365 Apps on devices within a tenant have been patched with the latest security updates. With a servicing profile we see this currency rise above 90%. This means that the new service helps reduce known threats in your environment faster and broader.
 
-- **Increased reach:** Common update management tools are often limited by the boundary of a directory service. For example, devices must be joined into Active Directory, to be managed by a given solution. With a servicing profile, you're breaking this barrier and can manage all Microsoft 365 Apps instances that were activated by your tenant and have an Azure Active Directory (Azure AD) user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Azure Active Directory, registered into Azure Active Directory, or remains in workgroup mode.
+- **Increased reach:** Common update management tools are often limited by the boundary of a directory service. For example, devices must be joined into Active Directory, to be managed by a given solution. With a servicing profile, you're breaking this barrier and can manage all Microsoft 365 Apps instances that were activated by your tenant and have a Microsoft Entra user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Microsoft Entra ID, registered into Microsoft Entra ID, or remains in workgroup mode.
 
 - **Leveraging the cloud:** As a true cloud-based service, a servicing profile isn't dependent on any on-premises infrastructure. Wherever the device is, if it can connect to the cloud, it will be serviced.
 
 - **Easy onboarding:** If a device falls into scope of a servicing profile (we'll deep-dive into this later in the article), it will automatically override any other Office update management mechanism. No need to detach the Microsoft 365 Apps from other management solutions first. If a device falls out-of-scope for the servicing profile, the previous update management control is restored. The servicing profile will only change the way Office updates are handled, everything else (for example, how updates for Windows or Edge are managed) remains the same. In summary, a device can be managed by two solutions at the same time without any conflicts.
 
-## Decide if you want to adopt servicing profiles by update channel or using Azure AD groups
+<a name='decide-if-you-want-to-adopt-servicing-profiles-by-update-channel-or-using-azure-ad-groups'></a>
+
+## Decide if you want to adopt servicing profiles by update channel or using Microsoft Entra groups
 
 Instead of enabling a servicing profile for all devices at the same time, some admins want to adopt them step-by-step and monitor if everything runs smoothly. There are two common ways to adopt the feature in a staged manner:
 
 - **By update channel:** With this approach, the servicing profile will target a small selection of update channels first. It will ignore all devices on other channels. This allows you to migrate one channel at a time over to both the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and be managed through a servicing profile. Over time, you extend the selection of channels until all channels are covered and all devices are moved.
 
-- **By Azure AD group:** The alternative approach is to use Azure AD groups to restrict the servicing profile to apply only to specified devices or users. This allows you to add devices to the scope on a more granular level.
+- **By Microsoft Entra group:** The alternative approach is to use Microsoft Entra groups to restrict the servicing profile to apply only to specified devices or users. This allows you to add devices to the scope on a more granular level.
 
 To decide which approach is best for you, review how many Microsoft 365 Apps installs you have per update channel:
 - Ensure that [inventory](../admincenter/inventory.md) in the Microsoft 365 Apps admin center is enabled and running for at least a week, so most devices have registered into it.
 - Navigate to the [Security Update Status](https://config.office.com/officeSettings/currency) page in the Microsoft 365 Apps admin center, scroll down and review the number of devices per channel.
 
-If you're comfortable with migrating all devices on a channel at once, this is the right approach for you. If you want to migrate devices in smaller batches, you should go by Azure AD groups. This could, for example, be the case if you have a couple of thousands of devices on a given channel, and you want to migrate them in, for example, three batches to limit change.
+If you're comfortable with migrating all devices on a channel at once, this is the right approach for you. If you want to migrate devices in smaller batches, you should go by Microsoft Entra groups. This could, for example, be the case if you have a couple of thousands of devices on a given channel, and you want to migrate them in, for example, three batches to limit change.
 
 ## How to set up a servicing profile with the “by update channel” approach
 
@@ -69,18 +71,20 @@ After creation, the servicing profile will start to calculate which devices fall
 
 After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, go to the **Settings** tab and add additional update channels to migrate more devices to the servicing profile.
 
-## How to set up the servicing profile with the “by Azure AD group” approach
+<a name='how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach'></a>
 
-If you want to adopt a servicing profile in more granular steps, do so by using Azure AD groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Azure AD groups or devices to the existing groups over time to increase coverage.
+## How to set up the servicing profile with the “by Microsoft Entra group” approach
 
-1. [Create one or multiple Azure AD groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. Add three types of items to a group, and mixing them is possible:
-    - Devices: Those must be Azure AD joined or hybrid Azure AD joined and known to the inventory in the Microsoft 365 Apps admin center.
+If you want to adopt a servicing profile in more granular steps, do so by using Microsoft Entra groups to limit the targeting to a certain set of devices. Microsoft 365 Apps on these devices will be migrated to the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) and kept updated automatically. You can monitor the progress in the portal and add additional Microsoft Entra groups or devices to the existing groups over time to increase coverage.
+
+1. [Create one or multiple Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that you want to use for targeting. Add three types of items to a group, and mixing them is possible:
+    - Devices: Those must be Microsoft Entra joined or Microsoft Entra hybrid joined and known to the inventory in the Microsoft 365 Apps admin center.
     - Users: Based on the activation data, the servicing profile will identify which devices in inventory have a Microsoft 365 Apps installation activated by the specified user accounts. This will also cover devices running in [shared computer activation](../overview-shared-computer-activation.md) mode where a specified user has logged on and used Microsoft 365 Apps.
-    - Azure AD groups: Use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
+    - Microsoft Entra groups: Use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
 2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
 3. Navigate to **Servicing** > **Monthly Enterprise** and launch the wizard by selecting **Get Started**. Select **Next** again to go to the **Device Selection Criteria** page.
-4. On the top, select **Choose groups to include** and add the Azure AD groups you want to target. This defines the maximum set of devices that will be targeted after applying the remaining selection criteria.
-    - Example: You specify an Azure AD group with two devices, one running on Current Channel, the other on Monthly Enterprise Channel. If you only select Monthly Enterprise Channel in the **Channels** section, only one device will be added to the servicing profile's scope, as the other one doesn't match all selection criteria. If you have more devices on that channel in your inventory, targeting will still be restricted to the one device from the Azure AD group.
+4. On the top, select **Choose groups to include** and add the Microsoft Entra groups you want to target. This defines the maximum set of devices that will be targeted after applying the remaining selection criteria.
+    - Example: You specify a Microsoft Entra group with two devices, one running on Current Channel, the other on Monthly Enterprise Channel. If you only select Monthly Enterprise Channel in the **Channels** section, only one device will be added to the servicing profile's scope, as the other one doesn't match all selection criteria. If you have more devices on that channel in your inventory, targeting will still be restricted to the one device from the Microsoft Entra group.
 5. When enabling a servicing profile, devices on the Monthly Enterprise Channel will be targeted automatically. The chart on the top right gives you an overview of how many devices will be targeted with the current selection.
 6. Review and adjust the other selection criteria.
 7. Select **Next** to go to the **Update exclusion dates** page. Enter exclusion dates if needed.
@@ -89,7 +93,7 @@ If you want to adopt a servicing profile in more granular steps, do so by using 
 
 After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it will start to instruct devices that are online to update to the latest Monthly Enterprise Channel release. Review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard on a regular basis. If the updates fail on a given device, see more details on the **Issues** tab.
 
-After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, go to the **Settings** tab and add additional Azure AD groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Azure AD group filter at some point to also cover devices that aren't Azure AD joined.
+After a few days, the bulk of targeted devices should have updated to the latest Microsoft 365 Apps release. If everything went smoothly, go to the **Settings** tab and add additional Microsoft Entra groups or just add devices or users to the groups directly to broaden the scope. We recommend considering removing the Microsoft Entra group filter at some point to also cover devices that aren't Microsoft Entra joined.
 
 ## Best practices working with servicing profiles
 
@@ -101,14 +105,14 @@ Here are some best practices when it comes to managing updates with a servicing 
 - Allowing each change to finish calculation first before introducing the next change is recommended. Be patient during this process.
 - The same applies when pausing or resuming a servicing profile. Allow the service to process the change, and don't pause/resume the service in quick succession. Note that pausing a servicing profile will not stop already initiated update installations on devices, but will stop the service from sending out new update commands to devices. 
 - When triggering a rollback, the same applies. After configuring a rollback action, the service needs time to process the change and waits for the device to check in to send the rollback commands. 
-- When using Azure AD groups for including or excluding devices or creating custom rollout waves, limiting the number of members to 20,000 per group is recommended. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Azure AD group with, for example, 40,000 members, it's recommend to use two groups with 20,000 members each. 
+- When using Microsoft Entra groups for including or excluding devices or creating custom rollout waves, limiting the number of members to 20,000 per group is recommended. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Microsoft Entra group with, for example, 40,000 members, it's recommend to use two groups with 20,000 members each. 
 
 ## How do the selectors work
 
 A servicing profile offers multiple selectors to allow you to target the right set of devices. Once the selectors are picked and saved, the servicing profile will check each device listed in inventory against those. Any given device must match all selected criteria to be added to the profile. If a device doesn't pass a check, it will not be added, even if it passes other checks.
 
-- **Groups:** This selector allows you to specify one or multiple Azure AD groups. Nested groups are supported. To pass the check, one of the two conditions must be met:
-    - For devices: Those must be hybrid Azure AD joined (also known as HAADJ) or Azure AD joined (also known as AADJ) and listed in the inventory.
+- **Groups:** This selector allows you to specify one or multiple Microsoft Entra groups. Nested groups are supported. To pass the check, one of the two conditions must be met:
+    - For devices: Those must be Microsoft Entra hybrid joined (also known as HAADJ) or Microsoft Entra joined (also known as AADJ) and listed in the inventory.
     - For users: All devices in inventory with a Microsoft 365 Apps installation activated by the specified user will pass the check. For this condition, there's no requirement of a device being joined into any directory service.
 - **Channels:** This selector checks for the currently installed update channel of the Microsoft 365 Apps. To pass the check, a device must run a Microsoft 365 Apps update channel that has been selected.
 - **Disk space:** This selector checks for the available disk space reported into inventory. To pass the check, a device must have more disk space available than specified.

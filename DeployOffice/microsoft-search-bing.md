@@ -77,7 +77,7 @@ This background service gets installed automatically on the user's device only i
 - The device is joined to an Active Directory Domain Services (AD DS) domain in Windows Server.
 
 > [!NOTE]
-> The background service is **not** installed if the device is joined only to an Azure Active Directory (AAD) domain.
+> The background service is **not** installed if the device is joined only to a Microsoft Entra domain.
 >
 > Also, the background service is **not** included with any of the following types of Office:
 > - Microsoft 365 Apps for business

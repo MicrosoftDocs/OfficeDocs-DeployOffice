@@ -36,7 +36,7 @@ To use Microsoft 365 Apps, your users will need the appropriate license. To assi
 
 - Use Office 365 PowerShell. For more information, see [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
 
-- If you have a subscription for Azure AD Premium P1 and above, or an edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 and above, you can use group-based licensing with Azure AD. You can assign one or more product licenses to a group, and Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see  [Group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
+- If you have a subscription for Microsoft Entra ID P1 and above, or an edition of Office 365 Enterprise E3 or Office 365 A3 or Office 365 GCC G3 and above, you can use group-based licensing with Microsoft Entra ID. You can assign one or more product licenses to a group, and Microsoft Entra ID ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. For more information, see  [Group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). 
 
 After a user is assigned a license, you can deploy Office to your users or your users can install Office directly from the Office 365 portal. If the user hasn't been assigned a license, the user can't install Office from the Office 365 portal. We recommend assigning the  license 24 hours prior to the deployment so you can ensure that the license is provisioned. 
 
@@ -46,7 +46,7 @@ There are various licensing modes that can be used with a supported version of M
 
 ### Subscription User Based Licensing
 [More Information](about-microsoft-365-apps.md#licensing-differences)
-- This is the default licensing mode for Microsoft 365 Apps.  In this mode, the license is carried within the user’s profile.  With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices.  Subscription User Based Licensing requires user level activation and requires user sign-in with an Azure Active Directory account.
+- This is the default licensing mode for Microsoft 365 Apps.  In this mode, the license is carried within the user’s profile.  With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices.  Subscription User Based Licensing requires user level activation and requires user sign-in with a Microsoft Entra account.
 - It is recommended for most scenarios where the user has defined computers and don’t often share them.
 
 ### Shared Computer Activation
@@ -56,11 +56,11 @@ There are various licensing modes that can be used with a supported version of M
 
 ### Device Based Licensing
 [More Information](device-based-licensing.md)
-- The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have an Azure Active Directory account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
-- It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Azure Active Directory.
+- The Device Based License is designed to simplify management of Microsoft 365 Apps for Enterprise on devices shared by many users.  Anyone that signs in and uses that device can use Microsoft 365 Apps for Enterprise to create and edit documents.  Device Based Licensing does not require user level activation and does not require the user to have a Microsoft Entra account.  There is no limit to the number of sign-ins and anyone with device access can use Microsoft 365 Apps for Enterprise applications.
+- It is applicable in shared and open access device scenarios where users work across multiple shared devices or where users need occasional access.  This is an ideal mode for healthcare and education customers that do not sync generic accounts to Microsoft Entra ID.
 
 > [!NOTE]
-> The device must be synced to Azure Active Directory for a Device Based License to be assigned.
+> The device must be synced to Microsoft Entra ID for a Device Based License to be assigned.
 
 ### Unattended License
 [More Information](https://developer.microsoft.com/office/blogs/new-licensing-options-for-microsoft-365-for-unattended-scenarios)

@@ -57,7 +57,7 @@ Here's what you should expect:
 Review the changes in features described. Also refer to the next section to evaluate how these changes might impact your current configuration of servicing profiles.
 
 - **Exclude groups** and **Exclusion window** are now applying on a tenant level rather than on profile level. An excluded device is excluded from all profiles, regardless in which profile the particular device actually is. Similarly, a set **exclusion window** applies to all profiles, rather than a specific one. For example, an exclusion window set to pause updates next week will prevent all profiles (Monthly, Current and Semi-Annual) from initiating updates during the set time frame.
-- **Device Selection Criteria** is removed. Hence, a profile (for example, Monthly Profile) applies now to all Microsoft 365 Apps instances running on the corresponding update channel. The removal includes **Include devices by Azure AD group**, by **Update Channel**, **disk space** and the selectors for **Macros Usage** and **Add-ins**.
+- **Device Selection Criteria** is removed. Hence, a profile (for example, Monthly Profile) applies now to all Microsoft 365 Apps instances running on the corresponding update channel. The removal includes **Include devices by Microsoft Entra group**, by **Update Channel**, **disk space** and the selectors for **Macros Usage** and **Add-ins**.
 
 ## Considerations for admins
 
@@ -72,7 +72,7 @@ After you have enabled a profile, devices have to connect to the service to get 
 > [!NOTE]
 > Microsoft is working on a new feature in Microsoft 365 Apps admin center's inventory which will substitute for the removal of the update channel selector. It will allow admins to select devices from inventory and trigger a channel change to Current Channel or Monthly Enterprise Channel. This will be independent from Servicing Profiles/Cloud Updates. We will share an ETA at a later stage.
 
-**Removal of Azure AD groups-based filtering**: During the change, your Azure AD group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices, which are on Monthly Enterprise Channel and haven't been excluded. Your Azure AD groups aren't getting deleted, but removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Azure AD groups.
+**Removal of Microsoft Entra groups-based filtering**: During the change, your Microsoft Entra group(s) used to restrict the scope of servicing profiles are removed. The new profile automatically targets all devices, which are on Monthly Enterprise Channel and haven't been excluded. Your Microsoft Entra groups aren't getting deleted, but removed from the profile. Any custom wave configuration remains the same. If you need to continue restricting the scope of the Monthly profile to a subset of devices, consider excluding the other devices using Microsoft Entra groups.
 
 **Removal of disk space selector**: After the change, Cloud Update targets devices regardless of the remaining disk space. If you have set a value, it is removed, and the behavior is similar to selection "0 GB" today. There's no mitigation for this change.
 

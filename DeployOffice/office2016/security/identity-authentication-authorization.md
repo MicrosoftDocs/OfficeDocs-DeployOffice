@@ -103,7 +103,7 @@ By default, when a user attempts to access an Office 2016 resource, Office 2016 
 |:-----|:-----|:-----|
 |**0** <br/> |**Microsoft account or organization ID** <br/> |Users can sign in and access Office content by using their Microsoft account or one that is assigned by your organization.  <br/> |
 |**1** <br/> |**Microsoft account only** <br/> |Users can sign in only by using their Microsoft account.  <br/> |
-|**2** <br/> |**Organization only** <br/> |Users can sign in only by using the user ID that is assigned by your organization. This can be either a user ID in Azure Active Directory or a user ID in Active Directory Domain Services (AD DS) on Windows Server.  <br/> |
+|**2** <br/> |**Organization only** <br/> |Users can sign in only by using the user ID that is assigned by your organization. This can be either a user ID in Microsoft Entra ID or a user ID in Active Directory Domain Services (AD DS) on Windows Server.  <br/> |
 |**3** <br/> |**AD DS only** <br/> |Users can sign in only by using a user ID in Active Directory Domain Services (AD DS) on Windows Server.  <br/> |
 |**4** <br/> |**None allowed** <br/> |Users can't sign in with any ID.  <br/> |
    
@@ -146,5 +146,3 @@ When a user logs into an Office app by using either their Microsoft account ID o
     
 3. From the Identity hive, navigate to the Profiles node, choose that same identity, open the shortcut menu (right-click), and then choose **Delete**.
     
-
-
