@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel for Microsoft 365 Apps using Cloud Update"
-ms.date: 10/19/2023
+ms.date: 10/20/2023
 ---
 
 # Move devices to Current Channel using Cloud Update
@@ -42,16 +42,16 @@ If you prefer watching short videos over reading text, view below videos:
 2. [Overview of Current Channel Profile](https://youtu.be/wwguIOw788I)
 3. [How to trigger an update channel change](https://youtu.be/tFmktdQsKgY)
 
-We recommend using Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on the activation data.
+We recommend using Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
 ### Create a security group
-The Channel Change feature can target individual devices by entering the device name or Entra ID groups. For groups you can add both user or device objects, or any combination. 
+The Channel Change feature can target individual devices or whole Entra ID groups. Groups can contain user or device objects, or a combination of both.
 
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for the intended Copilot users or devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
 2.	Add the objects to this security group that need to be moved to Current Channel and have update management applied to. 
 
 ### Enable Current Channel profile
-In order to keep devices updated and secure after moving to Current Channel, we recommend enabling the Current Channel profile in Cloud Update. Note that the Current Channel profile applies to all devices on Current Channel. If you need to exclude devices from being automatically services, use the **Exclude devices** feature under **Cloud Updates** > **Overview** > **Tenant Settings**.
+In order to keep devices updated and secure after moving to Current Channel, we recommend enabling the Current Channel profile in Cloud Update. Note that the Current Channel profile applies to all devices on Current Channel. If you need to exclude devices from being serviced, use the **Exclude devices** feature under **Cloud Updates** > **Overview** > **Tenant Settings**.
 
 1. Log into the [Microsoft 365 Apps admin center](https://config.office.com), you should land on the **Home** page automatically.
 2. On the **Recommendation based on your tenant** card, select **Finish enabling cloud**.
@@ -79,11 +79,10 @@ Next step is to trigger the actual update channel change.
 You can validate the implementation by monitoring the following aspects:
 - Within 24 hours, you should see the devices being listed in the **Current** profile.
 - Within 24 hours, you should see the **Update Channel** switching to Current Channel in inventory.
-- On the device, the following registry key should change to "**1**", as profile's control is established in the device:
+- On the device, the following registry key should change to "**1**", as profile's control is established on the device:
    - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate > IgnoreGPO
 - It switches from any channel to the latest build released into the Current Channel.
 - Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
-- Use the inventory in the Microsoft 365 Apps admin center to monitor progress.
 
 ## More resources
 Microsoft 365 Copilot
