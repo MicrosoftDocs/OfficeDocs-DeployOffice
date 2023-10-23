@@ -26,7 +26,7 @@ Extended offline access is designed for users with devices that need to go offli
 
 To enable extended offline access for users in your organization:
 - Admin installs Microsoft 365 Apps and enables extended offline access by deploying the [Group Policy](#enable-extended-offline-access-with-group-policy) or the [registry](#enable-extended-offline-access-with-the-registry).
-- Once deployed, the user signs into Windows using an Azure AD account.
+- Once deployed, the user signs into Windows using a Microsoft Entra account.
 - User launches an Office app like Word or Excel.
 - User confirms Office license is valid for 180 days.
 

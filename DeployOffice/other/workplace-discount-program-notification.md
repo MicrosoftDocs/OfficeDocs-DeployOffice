@@ -30,7 +30,7 @@ The following information outlines what you can expect from this feature. For yo
 
 The Workplace Discount Program is an employee purchase program for Microsoft’s valued customers. The Workplace Discount Program provides employees of qualifying organizations a significant discount on Microsoft 365 Personal and Family subscriptions for their home use. If you belong to a qualifying organization, this benefit is included in your license agreement with Microsoft. You don't need to take any other steps to activate the benefit for your users. If you're unsure of whether your organization is eligible for this program, see [Microsoft Workplace Discount Program FAQs](https://www.microsoft.com/workplace-discount-program/faq).
 
-Ensure your custom domains are added in Azure Active Directory. Employees with email addresses that use the domain you add will be eligible for the Workplace Discount Program. For instructions on how to add custom domains, see [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain).
+Ensure your custom domains are added in Microsoft Entra ID. Employees with email addresses that use the domain you add will be eligible for the Workplace Discount Program. For instructions on how to add custom domains, see [Add your custom domain name using the Microsoft Entra admin center](/azure/active-directory/fundamentals/add-custom-domain).
 
 The Workplace Discount Program helps your employees become more proficient and productive with Microsoft 365 at home, increasing employee satisfaction while lowering the cost of IT help and training. Skill and experience grow from personal use and translate to higher productivity, satisfaction, and savings for your company.
 

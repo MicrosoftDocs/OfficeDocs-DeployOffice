@@ -58,10 +58,10 @@ A servicing profile takes precedence over existing settings related to Microsoft
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
     - The first (and recommended) option is to use **All Devices**, which will manage all eligible devices on your tenant. This choice moves the device from the channel it’s on, if that channel is selected in the device criteria, to Monthly Enterprise Channel. 
-    - The second option is to use **Groups**, which allows you to specify an Azure Active Directory group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Azure AD group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
+    - The second option is to use **Groups**, which allows you to specify a Microsoft Entra group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Microsoft Entra group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
 
     > [!TIP]
-    > You can see a demo of how to use Azure Active Directory group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).
+    > You can see a demo of how to use Microsoft Entra group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).
 
 > [!NOTE]
 > - You can edit the selection criteria once the profile has been created by going to the **Settings** tab on the **Servicing profile** dashboard.
@@ -80,7 +80,7 @@ Within the **Devices** tab, you can see the update status of these devices and v
 
 If you're experiencing issues with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department.
 
-To start, select the rollback action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Azure Active Directory groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
+To start, select the rollback action on the **Devices** tab. Then, select the build of the previous version you want to roll back to and which devices or Microsoft Entra groups to roll back. Those devices will roll back to the previous version the next time Office checks for updates and are connected to the internet. You can check for progress under the **Rolled back** filter on the **Devices** tab.
 
 Devices that are rolled back will stay on that previous version until the next version of Monthly Enterprise Channel is released. When the new version of Monthly Enterprise Channel is released, devices that are rolled back will update automatically to that version. New versions of Monthly Enterprise Channel are released on the second Tuesday of each month. You can also cancel the rollback action if the underlying issue has been resolved prior to the next version being available.
 
@@ -100,7 +100,7 @@ The servicing profile provides more settings for your Microsoft 365 Apps. These 
 > [!TIP]
 > You can also watch a [walkthrough and deep dive video](https://youtu.be/rDu8qVbE1DY) with additional details.
 
-If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Azure Active Directory (Azure AD) groups to each of the waves.
+If you want certain groups of users to receive updates before other groups of users, you can configure rollout waves for your servicing profile. You can create up to three waves and assign Microsoft Entra groups to each of the waves.
 
 For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave.
 
@@ -121,7 +121,7 @@ Update exclusions can be created to prevent devices downloading security and fea
 > [!NOTE]
 > Update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
 
-By default update exclusions affect all devices that are in scope of the servicing profile. You can also select to scope the exclusion window to Azure AD groups. Only devices or users specified in the Azure AD group will be excluded, and all other devices follow the regular update deployment rhythm. Check out this video for a quick overview of [Azure AD group scoping with update exclusion windows](https://youtu.be/WMVlfg_3wnw).
+By default update exclusions affect all devices that are in scope of the servicing profile. You can also select to scope the exclusion window to Microsoft Entra groups. Only devices or users specified in the Microsoft Entra group will be excluded, and all other devices follow the regular update deployment rhythm. Check out this video for a quick overview of [Microsoft Entra group scoping with update exclusion windows](https://youtu.be/WMVlfg_3wnw).
 
 > [!NOTE]
 > Update exclusions prevent devices from starting the update process, which includes downloading, extracting, and applying the update. If a given device has started the process before the exclusion window applies, it will continue with the update installation. If you want to prevent devices installing updates during the requested exclusion window, consider starting the exclusion sooner and enforcing installations with an update deadline.

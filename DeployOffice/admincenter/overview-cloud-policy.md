@@ -28,9 +28,9 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 The following are the requirements for using Cloud Policy with Microsoft 365 Apps for enterprise:
 
 - A [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps for enterprise.
-- User accounts created in or synchronized to Azure Active Directory (Azure AD). The user must be signed into Microsoft 365 Apps for enterprise with an Azure AD-based account.
-- Cloud Policy supports Microsoft 365 Groups and Azure AD Security Groups created in or synchronized to Azure AD. The membership type can be either Dynamic or Assigned.
-- To create a policy configuration, you must be assigned one of the following roles in Azure AD: Global Administrator, Security Administrator, or Office Apps Admin.
+- User accounts created in or synchronized to Microsoft Entra ID. The user must be signed into Microsoft 365 Apps for enterprise with a Microsoft Entra ID-based account.
+- Cloud Policy supports Microsoft 365 Groups and Microsoft Entra Security Groups created in or synchronized to Microsoft Entra ID. The membership type can be either Dynamic or Assigned.
+- To create a policy configuration, you must be assigned one of the following roles in Microsoft Entra ID: Global Administrator, Security Administrator, or Office Apps Admin.
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
 - Authenticated proxies aren’t supported by Cloud Policy service.
 
@@ -78,9 +78,9 @@ The Click-to-Run service used by Microsoft 365 Apps for enterprise checks with C
 Here's a summary of what happens:
 - When a user signs into Office on a device for the first time, a check is immediately made to see if there's a policy configuration that pertains to the user.
 
-- If the user isn't a member of an Azure AD group that is assigned a policy configuration, then another check is made again in 24 hours.
+- If the user isn't a member of a Microsoft Entra group that is assigned a policy configuration, then another check is made again in 24 hours.
 
-- If the user is a member of an Azure AD group that is assigned a policy configuration, then the appropriate policy settings are applied. A check is made again in 90 minutes.
+- If the user is a member of a Microsoft Entra group that is assigned a policy configuration, then the appropriate policy settings are applied. A check is made again in 90 minutes.
 
 - If there are any changes to the policy configuration since the last check, then the appropriate policy settings are applied and another check is made again in 90 minutes.
 
@@ -93,9 +93,9 @@ Here's a summary of what happens:
 > [!NOTE]
 > - Policies from Cloud Policy are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Microsoft 365 Apps for enterprise. If there are multiple accounts signed in, only policies for the primary account are applied. If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](../privacy/overview-privacy-controls.md) will apply without restarting any Office apps.
 >
-> - If users are located in nested groups and the parent group is targeted for policies, the users in the nested groups will receive the policies. The nested groups and the users in those nested groups must be created in or synchronized to Azure AD.
+> - If users are located in nested groups and the parent group is targeted for policies, the users in the nested groups will receive the policies. The nested groups and the users in those nested groups must be created in or synchronized to Microsoft Entra ID.
 
-If the user is a member of multiple Azure AD groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
+If the user is a member of multiple Microsoft Entra groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
 
 Also, policy settings implemented by using Cloud Policy take precedence over policy settings implemented by using Group Policy on Windows Server, and taking precedence over preference settings or locally applied policy settings.
 

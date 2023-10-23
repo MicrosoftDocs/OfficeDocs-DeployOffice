@@ -15,6 +15,9 @@ ms.date: 09/26/2023
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
 
+> [!IMPORTANT]
+> As of October 23rd, 2023, new installations of Microsoft 365 and Office 365 will include Teams only if a Teams service plan is in place. For more information on available plans, see [Microsoft Teams service description](/office365/servicedescriptions/teams-service-description#available-plans)
+
 In the past, Microsoft Teams was a separate installation from Microsoft 365 Apps. But starting with Version 1902, Teams was included as part of ***new*** installations of Microsoft 365 Apps. If Teams was already installed on the device, no changes were made to that installation of Teams.
 
 In late August, the new Teams began installing with ***new*** and ***existing*** installations of Microsoft 365 Apps on Windows. Users can opt to try the new Teams using the "Try the new Teams" toggle switch in classic Teams or, admins can [bulk deploy the new Microsoft Teams client](/MicrosoftTeams/new-teams-bulk-install-client).

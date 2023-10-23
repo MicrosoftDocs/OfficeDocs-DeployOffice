@@ -108,7 +108,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer that has
     
      ![Activate Office.](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
   
-    If your environment is configured to synchronize Office 365 (Azure Active Directory) and local Active Directory (AD) accounts, then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
+    If your environment is configured to synchronize Office 365 (Microsoft Entra ID) and local Active Directory (AD) accounts, then the user most likely won't see any prompts. Microsoft 365 Apps should automatically be able to get the necessary information about the user's account in Office 365.
     
 4. If the user is licensed for Microsoft 365 Apps, a licensing token is stored on the computer in the user's profile folder, and Microsoft 365 Apps is activated. The user can now use Microsoft 365 Apps.
     
@@ -140,7 +140,7 @@ Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable nu
     
    ![Too many computers activated message.](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
   
-**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Azure Active Directory](/microsoft-365/enterprise/about-microsoft-365-identity).
+**Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user has been assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Microsoft Entra ID](/microsoft-365/enterprise/about-microsoft-365-identity).
     
 If you don't use single sign-on, you should consider using roaming profiles and include the %localappdata%\\Microsoft\\Office\\16.0\\Licensing folder as part of the roaming profile.
     

@@ -27,7 +27,7 @@ The following information is collected for each device in the inventory.
 
 |Name  |Description  |Example  |
 |---------|---------|---------|
-|AadDeviceID|The Azure Active Directory (Azure AD) Device ID of the device|	4f25d6b7-1798-800y-b33a-4f23dd64dcac|
+|AadDeviceID|The Microsoft Entra Device ID of the device|	4f25d6b7-1798-800y-b33a-4f23dd64dcac|
 |Applications|	A list of the Office apps installed on the device| Word, Excel, PowerPoint|
 |Architecture|	The architecture of the Office installation|	x64|
 |BuildVersion|	The build string of the Office installation|	16.0.13231.20262 (X64)|
