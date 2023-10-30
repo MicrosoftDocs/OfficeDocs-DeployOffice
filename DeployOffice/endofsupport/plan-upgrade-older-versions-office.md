@@ -10,17 +10,18 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 04/11/2023
+ms.date: 10/30/2023
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
 
-***Applies to:*** *Volume licensed versions of Office 2016, Office 2013, Office 2010, and Office 2007*
+***Applies to:*** *Volume licensed versions of Office 2019, Office 2016, Office 2013, Office 2010, and Office 2007*
 
 The following table shows the end of support dates for older versions of Office.
 
 |Office version |End of support date  |
 |---------|---------|
+|Office 2019 |October 14, 2025    |
 |Office 2016 |October 14, 2025    |
 |Office 2013 |April 11, 2023    |
 |Office 2010 |October 13, 2020  |
@@ -36,7 +37,7 @@ We also recommend business and enterprise customers use the deployment benefits 
 
 ## What does end of support mean?
 
-Office, like almost all Microsoft products, has a support lifecycle during which we provide bug fixes and security fixes. This lifecycle lasts for a certain number of years from the date of the product's initial release. The end of this lifecycle is known as the product's end of support. After Office reaches its end of support, Microsoft no longer provides the following services:
+Office, like almost all Microsoft products, has a support lifecycle during which we provide bug fixes and security fixes. This lifecycle lasts for some years from the date of the product's initial release. The end of this lifecycle is known as the product's end of support. After Office reaches its end of support, Microsoft no longer provides the following services:
   
 - Technical support for issues
 - Bug fixes for issues that are discovered
@@ -72,7 +73,7 @@ Microsoft 365 (and Office 365) provides subscription plans that include access t
 - [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)
 - [Microsoft 365 and Office 365 service descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
 
-Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote, as well as Teams.
+Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
 
 Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../device-based-licensing.md) or [shared computer activation](../overview-shared-computer-activation.md) for devices shared by multiple users, and [extended offline access](../overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
 
@@ -98,7 +99,7 @@ For more information, see the following resources:
 
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
+Before deploying Microsoft 365 Apps, you'll want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
 To help with assessing application compatibility with Microsoft 365 Apps, you can use the Readiness Toolkit for Office add-ins and VBA. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your enterprise assess its readiness to move to Microsoft 365 Apps.
   
@@ -115,11 +116,11 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
 - Network infrastructure, including connections to the internet and internal software distribution points.
 - Cloud infrastructure, including existing Microsoft 365 (or Office 365) capabilities, user licensing, and identity.
 
-Your assessment of these components will influence how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../assess-microsoft-365-apps.md).
+Your assessment of these components influences how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../assess-microsoft-365-apps.md).
 
 ## Choose how you want to deploy and update Microsoft 365 Apps
 
-You can deploy and update Microsoft 365 Apps directly from the cloud, from a local source on your local network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. Deploying from the cloud, for example, minimizes your administrative overhead, but could require more network bandwidth. Deploying with Configuration Manager or from a local source, on the other hand, might provide more control over which devices are deployed and updated and when they are.
+You can deploy and update Microsoft 365 Apps directly from the cloud, from a local source on your local network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. When you deploy from the cloud, for example, it minimizes your administrative overhead but could require more network bandwidth. When you use Configuration Manager or a local source for deployment, on the other hand, you might have more control over which devices get deployed and updated and the timing of those updates.
 
 For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../plan-microsoft-365-apps.md).
 
@@ -149,7 +150,7 @@ As with any new version of Office, there are new Administrative Template files (
 You can [download the Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030) for Group Policy for Microsoft 365 Apps from the Microsoft Download Center for free. The download includes an Excel file that lists all the policy settings for Microsoft 365 Apps.
 
 > [!NOTE]
-> The Administrative Template files (ADMX/ADML) download for Microsoft 365 Apps is the same download as for Office 2016, because both Microsoft 365 Apps and Office 2016 use the same underlying product version number (16.0).
+> The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019 and Office 2016 use the same product version number, 16.0.
 
 If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
