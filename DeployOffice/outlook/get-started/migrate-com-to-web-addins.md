@@ -58,7 +58,7 @@ If your organization is currently using web add-ins, no extra effort is required
    | Adobe Acrobat Sign                      | Signature Management   | [Adobe Acrobat Sign for Microsoft Outlook](https://appsource.microsoft.com/product/office/wa104381158) |
    | Barracuda Archive Search for Outlook    | Attachment Management  | [Barracuda Essentials for Outlook](https://appsource.microsoft.com/product/office/wa104381249)    |
    | Blue jeans Outlook Add-in               | Online Meetings        | [BlueJeans Meetings](https://appsource.microsoft.com/product/office/wa104381523)                  |
-   | `Calendly` for Outlook                    | Meeting Boosters       | [`Calendly` for Outlook](https://appsource.microsoft.com/product/office/wa104381446)                |
+   | Calendly for Outlook                    | Meeting Boosters       | [`Calendly` for Outlook](https://appsource.microsoft.com/product/office/wa104381446)                |
    | Cisco Webex Meetings                    | Online Meetings        | [Cisco Webex Scheduler](https://appsource.microsoft.com/product/office/wa104382035)               |
    | Citrix Files for Outlook                | Attachment Management  | [ShareFile](https://appsource.microsoft.com/product/office/wa104380913)                           |
    | Cofense Reporter                        | Phishing/Spam Reporting| PRIVATE- Cofense                    |
@@ -70,13 +70,13 @@ If your organization is currently using web add-ins, no extra effort is required
    | Jira                                    | Project Management     | [Jira Cloud](https://appsource.microsoft.com/product/office/wa200002140)                          |
    | Mimecast for Outlook                    | Phishing/Spam Reporting| [Mimecast Essentials for Outlook](https://appsource.microsoft.com/product/office/wa200002175)     |
    | OnePlaceMail                            | Attachment Management  | [OnePlaceMail for Outlook](https://appsource.microsoft.com/product/office/wa104380723)            |
-   | KnowBe4 PhishAlarm Outlook `Add-In`       | Phishing/Spam Reporting| PRIVATE-KnowBe4                     |
+   | KnowBe4 PhishAlarm Outlook Add-In       | Phishing/Spam Reporting| PRIVATE-KnowBe4                     |
    | Proofpoint Outlook Plug-in              | Phishing/Spam Reporting| PRIVATE-Proofpoint                  |
    | Proofpoint Plug-in                      | Phishing/Spam Reporting| PRIVATE-Proofpoint                  |
    | RingCentral Meetings Outlook Plugin     | Online Meetings        | [RingCentral Scheduler](https://appsource.microsoft.com/product/office/wa200001471)               |
    | Salesforce for Outlook                  | CRM                    | [Salesforce](https://appsource.microsoft.com/product/office/wa104379334)                          |
    | Symantec Endpoint Protection Outlook Add in | DLP                | PRIVATE-Symantec                    |
-   | Vera `AddIn` for Outlook                  | DLP                    | Private Vera                        |
+   | Vera AddIn for Outlook                  | DLP                    | Private Vera                        |
    | Virtru For Outlook                      | DLP                    | PRIVATE-Virtru                      |
    | Zoom Outlook Plugin                     | Online Meetings        | [Zoom for Outlook Extension](https://appsource.microsoft.com/product/office/wa104381712)          |
 
