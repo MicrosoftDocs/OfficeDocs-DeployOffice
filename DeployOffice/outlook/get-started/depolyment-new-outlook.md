@@ -71,7 +71,9 @@ The Windows Package Manager (winget) allows for a nonadministrative, per-user in
 
 1. Open PowerShell by pressing Windows + X and select Terminal (PowerShell for Windows 10 users).
 2. Enter the following command to install the Microsoft Store version of new Outlook:
-   `winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements`
+```powershell
+winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements
+```
 
 ### Microsoft Intune
 
