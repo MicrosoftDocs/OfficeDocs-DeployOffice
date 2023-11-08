@@ -58,7 +58,7 @@ If your organization is currently using web add-ins, no extra effort is required
    | Adobe Acrobat Sign                      | Signature Management   | [Adobe Acrobat Sign for Microsoft Outlook](https://appsource.microsoft.com/product/office/wa104381158) |
    | Barracuda Archive Search for Outlook    | Attachment Management  | [Barracuda Essentials for Outlook](https://appsource.microsoft.com/product/office/wa104381249)    |
    | Blue jeans Outlook Add-in               | Online Meetings        | [BlueJeans Meetings](https://appsource.microsoft.com/product/office/wa104381523)                  |
-   | ==Calendly== for Outlook                    | Meeting Boosters       | [`Calendly` for Outlook](https://appsource.microsoft.com/product/office/wa104381446)                |
+   | Calendly for Outlook                    | Meeting Boosters       | [`Calendly` for Outlook](https://appsource.microsoft.com/product/office/wa104381446)                |
    | Cisco Webex Meetings                    | Online Meetings        | [Cisco Webex Scheduler](https://appsource.microsoft.com/product/office/wa104382035)               |
    | Citrix Files for Outlook                | Attachment Management  | [ShareFile](https://appsource.microsoft.com/product/office/wa104380913)                           |
    | Cofense Reporter                        | Phishing/Spam Reporting| PRIVATE- Cofense                    |
