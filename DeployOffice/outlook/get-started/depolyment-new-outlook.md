@@ -101,6 +101,11 @@ This policy hides the toggle from classic Outlook, but it doesn’t block the ma
 
 For more information, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
 
+In instances where the new Outlook for Windows appears on your organization’s devices through an update, admins can remove it by running this PowerShell cmdlet:
+```powershell
+Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+``` 
+
 > [!IMPORTANT]
 > Support for Windows Mail and Calendar will be discontinued at the end of 2024. Organizations should ensure that users transition to new Outlook before this deadline to avoid disruption. Please note that blocking the download of the new Outlook for Windows on managed devices will not stop the migration prompts within Mail and Calendar.
 
