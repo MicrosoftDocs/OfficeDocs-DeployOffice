@@ -89,7 +89,7 @@
 ### [App compatibility & readiness assessment tools](readiness-tools.md)
 ### [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 
-## [New Outlook for Windows](/outlook/overview-new-outlook.md)
+## [New Outlook for Windows](outlook/overview-new-outlook.md)
 
 ## Project, Visio, Teams, and OneNote
 ### [Deploy Project](deployment-guide-for-project.md)
