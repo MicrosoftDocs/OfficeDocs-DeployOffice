@@ -22,6 +22,8 @@ App-wide settings, including Theme, Text Size and Spacing, and Diagnostic Data a
 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
 
+![Change primary account in Email accounts Settings.](/DeployOffice/images/new-outlook/policy-email-accounts-settings.png)
+
 We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the OwaMailboxPolicy cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see: [Set-OwaMailboxPolicy (ExchangePowerShell)](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled)
 
 > [!IMPORTANT]
@@ -59,10 +61,14 @@ For more information, see: [Manage Loop components in OneDrive and SharePoint](/
 ## Diagnostic Data and Connected Experiences
 Organizations can control whether connected experiences or diagnostic data can be sent from the new Outlook for Windows. This capability is part of our commitment to giving you the information and controls over your privacy.
 
+![Turn on optional connected experiences in privacy settings](/DeployOffice/images/new-outlook/policy-privacy-settings.png)
+
 For more information, see: [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise - Deploy Office](/deployoffice/privacy/manage-privacy-controls)
 
 ## In-product feedback
 New Outlook provides in-product feedback that can be managed as part of Microsoft 365 wide settings for Feedback in Cloud Policy:
+
+![Provide in product feedback through Feedback to Microsoft](/DeployOffice/images/new-outlook/policy-feeback.png)
 
 [Learn about Microsoft feedback for your organization - Microsoft 365 admin](/microsoft-365/admin/misc/feedback-user-control#in-product-feedback)
 For more information, see: [Manage Microsoft feedback for your organization - Microsoft 365 admin](/microsoft-365/admin/manage/manage-feedback-ms-org)
