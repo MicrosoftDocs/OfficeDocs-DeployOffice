@@ -50,7 +50,10 @@ To install new Outlook on a single computer with many users, follow these steps:
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
 2. Launch PowerShell 7 as an administrator: Right-click the PowerShell icon and choose Run as Administrator.
 3. Navigate to where the Setup.exe file is located.
-4. Run the following command: *.\Setup.exe --provision true --quiet --start-*
+4. Run the following command: 
+```powershell
+.\Setup.exe --provision true --quiet --start-*
+```
 
 ### Deploy new Outlook across your organization
 To deploy this installer to a group of computers, or your entire organization:
@@ -79,7 +82,10 @@ Microsoft Intune allows administrators to deploy the Microsoft Store version of 
 A Setup.exe bootstrapper can be used for a straightforward per-user installation:
 
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
-2. Open PowerShell and run the following command: *.\Setup.exe --quiet --start-*
+2. Open PowerShell and run the following command:
+```powershell
+.\Setup.exe --quiet --start-
+```
 
 ## Future integration of new Outlook in new Microsoft 365 deployments
 
