@@ -1039,6 +1039,11 @@
       "source_path": "Deployoffice/privacy/microsoft-365-copilot.md",
       "redirect_url": "/microsoft-365-copilot/microsoft-365-copilot-privacy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/choose-how-to-deliver-updates.md",
+      "redirect_url": "/deployoffice/updates/choose-how-to-deliver-updates",
+      "redirect_document_id": false
     }
   ]
 }
