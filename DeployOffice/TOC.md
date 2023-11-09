@@ -21,7 +21,7 @@
 
 ## Manage
 ### [Overview of update channels](updates/overview-update-channels.md)
-### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
+### [Choose how to deliver updates](updates/choose-how-to-deliver-updates.md)
 ### [Manage updates with Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 ### [Change the update channel](updates/change-update-channels.md)
 ### [Delivery Optimization](delivery-optimization.md)
@@ -59,7 +59,6 @@
 
 ## Best practices from the field
 ### [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
-### [Choose how to deliver updates](fieldnotes/choose-how-to-deliver-updates.md)
 ### [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 ### [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
 ### [Network guidance for deploying and servicing Microsoft 365 Apps](fieldnotes/network-guidance.md)
