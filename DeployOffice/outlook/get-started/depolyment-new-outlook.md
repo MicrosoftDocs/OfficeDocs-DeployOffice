@@ -21,7 +21,7 @@ The new Outlook for Windows client installer is now available either from the Mi
 The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to migrate settings from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
 
 > [!NOTE]
-> Users need to sign back in to accounts that can’t automatically authenticate via Windows Single Sign-On). [link to Accounts doc]
+> Users need to sign back in to accounts that can’t automatically authenticate via [Windows Single Sign-On](/DeployOffice/outlook/get-started/supported-account-types.md).
 
 The toggle experience is the recommended way for users to get the new Outlook for Windows. It’s currently an end-user opt-in mechanism, although admins can control the availability of the toggle in classic Outlook for Windows. In the future, we’re making it easier for organizations to smoothly transition end-users to the new Outlook for Windows. Once switched, users can return to the classic Outlook for Windows.
 
@@ -33,12 +33,9 @@ For the new Outlook client to be successfully installed, computers must meet the
 
 ### System and app requirements
 
-> [!NOTE] 
-> The new Outlook for Windows will be pre-installed on new Windows devices and devices running Windows 11 version 23H2.
-
 Requirement | Version
 ------------|-------
-Windows | Windows 10 Version 1809 (Build 17763) or higher
+Windows | Windows 10 Version 1809 (Build 17763) or higher. The new Outlook for Windows will be pre-installed on new Windows devices and devices running Windows 11 version 23H2.
 Classic Outlook app | Version 2303 Build 16227.20318 or higher to see the Try the new Outlook toggle. **Important:** Classic Outlook is only a requirement if you want users to be able to switch between classic Outlook and new Outlook. This prerequisite is optional if you only want your users to see the new Outlook client.
 
 ## Other deployment options
@@ -95,13 +92,15 @@ In a future release after the commercial preview stage, new Outlook will be an o
 
 ## Control release of the new Outlook
 
-Some organizations might opt to use a policy to hide the **Try the new Outlook** toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. Refer to [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
+Some organizations might opt to use a policy to hide the **Try the new Outlook** toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. Refer to [Use the registry to enable or disable the New Outlook toggle in Outlook Desktop](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
 
 This policy hides the toggle from classic Outlook, but it doesn’t block the mailbox from being added to the new Outlook for Windows. A separate Exchange mailbox policy can be used to block organization mailboxes from being added to the new Outlook.
 
-For more information, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
+For more information, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
 
-In instances where the new Outlook for Windows appears on your organization’s devices through an update, admins can remove it by running this PowerShell cmdlet:
+Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in 
+this [link](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using PowerShell and using the parameter Microsoft.OutlookForWindows.
+The PowerShell cmdlet to use is:
 ```powershell
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ``` 
