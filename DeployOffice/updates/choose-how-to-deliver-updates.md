@@ -1,5 +1,5 @@
 ---
-title: Choose how to deliver updates for Microsoft 365 Apps for enterprise
+title: Choose how to deliver updates
 author: manoth-msft
 ms.author: manoth
 manager: dougeby
@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
-ms.date: 07/11/2023
+ms.date: 11/09/2023
 ---
 
 # Choose how to deliver updates for the Microsoft 365 Apps
