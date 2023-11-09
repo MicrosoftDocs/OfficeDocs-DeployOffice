@@ -1,5 +1,5 @@
 ---
-title: Choose how to deliver updates for Microsoft 365 Apps for enterprise
+title: Choose how to deliver updates
 author: manoth-msft
 ms.author: manoth
 manager: dougeby
@@ -8,31 +8,31 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
-ms.date: 07/11/2023
+description: "Choose how to deliver updates for the Microsoft 365 Apps"
+ms.date: 11/09/2023
 ---
 
-# Choose how to deliver updates for the Microsoft 365 Apps
+# Choose how to deliver updates
 
 There are various options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. Any update deployment implementation can be changed later. These options apply to scenarios where you start fresh with Microsoft 365 Apps or when reevaluating your current implementation.
 
 First, this article covers three different update locations you can choose from and lay out the individual differences and network implications. Second, the available options for controlling updates per update location are listed, again covering the individual benefits and considerations per mechanism. Here's an overview, in case you want to jump to a section directly:
 
-- [Using the cloud for updates](choose-how-to-deliver-updates.md#updates-from-the-cloud)
-    - [Automatic Updates or Microsoft Intune](choose-how-to-deliver-updates.md#automatic-update--microsoft-intune)
-    - [Servicing Profiles](choose-how-to-deliver-updates.md#servicing-profiles)
-- [Using on-premises locations for updates](choose-how-to-deliver-updates.md#updates-from-on-premises-locations)
-    - [Microsoft Configuration Manager](choose-how-to-deliver-updates.md#microsoft-configuration-manager)
-    - [Network shares](choose-how-to-deliver-updates.md#network-shares)
-- [Combining cloud and on-premises locations for updates (hybrid)](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid)
-    - [Microsoft Configuration Manager](choose-how-to-deliver-updates.md#microsoft-configuration-manager-1)
+- [Using the cloud for updates](#updates-from-the-cloud)
+    - [Automatic Updates or Microsoft Intune](#automatic-update--microsoft-intune)
+    - [Servicing Profiles](#servicing-profiles)
+- [Using on-premises locations for updates](#updates-from-on-premises-locations)
+    - [Microsoft Configuration Manager](#microsoft-configuration-manager)
+    - [Network shares](#network-shares)
+- [Combining cloud and on-premises locations for updates (hybrid)](#updates-from-mixed-on-premises-and-cloud-locations-hybrid)
+    - [Microsoft Configuration Manager](#microsoft-configuration-manager-1)
 
 > [!NOTE]
 > The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a servicing profile, both products will be updated at the same time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
-The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](choose-how-to-deliver-updates.md#updates-from-the-cloud), from [on-premises locations](choose-how-to-deliver-updates.md#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](choose-how-to-deliver-updates.md#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section lays out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](choose-how-to-deliver-updates.md#step-2-choose-your-way-to-manage-updates) for the chosen update source.
+The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](#updates-from-the-cloud), from [on-premises locations](#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section lays out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](#step-2-choose-your-way-to-manage-updates) for the chosen update source.
 
 ### Updates from the cloud
 When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (Office CDN), this is referred to as cloud-based updates. Microsoft operates a worldwide, distributed network of datacenters that hosts all updates for the Microsoft 365 Apps for all available update channels, languages, related products like Visio and Project, and architectures (32/64 bit). The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
@@ -45,7 +45,7 @@ There are two core benefits when leveraging the cloud as your update source:
 - **No source files maintenance** needed: As the updates are hosted worldwide at Microsoft's datacenters, there's no need for downloading, packaging, staging and distributing the source files in your on-premises network. As updates are specific to architecture, update channel and languages, this can become a complex task in for example multi-language environments.
 
 When using the cloud as your update source, there are also some considerations:
-- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
+- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates.md) to assess the impact on the network.
 - **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
 - **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This reduces the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 

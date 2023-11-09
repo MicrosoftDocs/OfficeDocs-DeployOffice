@@ -82,7 +82,7 @@ Choose how to manage updates:
     
 As with the initial deployment, organizations can use a combination of these options for different users.
 
-For more information, see [Choose how to deliver updates for the Microsoft 365 Apps](./fieldnotes/choose-how-to-deliver-updates.md).
+For more information, see [Choose how to deliver updates for the Microsoft 365 Apps](./updates/choose-how-to-deliver-updates.md).
 
 ## Step 3 - Choose your update channels
 

@@ -1,6 +1,5 @@
 # Best practices from the field
 ## [Choose how to install Microsoft 365 Apps](install-options.md)
-## [Choose how to deliver updates](choose-how-to-deliver-updates.md)
 ## [Right-sizing your initial deployment](right-sizing-initial-deployment.md)
 ## [Build dynamic, lean, and universal packages](build-dynamic-lean-universal-packages.md)
 ## [Network guidance for deploying and servicing Microsoft 365 Apps](network-guidance.md)
