@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Choose how to deliver updates software updates for the Microsoft 365 Apps"
+description: "Choose how to deliver updates for the Microsoft 365 Apps"
 ms.date: 11/09/2023
 ---
 
-# Choose how to deliver updates for the Microsoft 365 Apps
+# Choose how to deliver updates
 
 There are various options to choose from when delivering software updates for Microsoft 365 Apps in managed environments. This article outlines the advantages and disadvantages of each approach to help you make the right choice. Any update deployment implementation can be changed later. These options apply to scenarios where you start fresh with Microsoft 365 Apps or when reevaluating your current implementation.
 
@@ -45,8 +45,8 @@ There are two core benefits when leveraging the cloud as your update source:
 - **No source files maintenance** needed: As the updates are hosted worldwide at Microsoft's datacenters, there's no need for downloading, packaging, staging and distributing the source files in your on-premises network. As updates are specific to architecture, update channel and languages, this can become a complex task in for example multi-language environments.
 
 When using the cloud as your update source, there are also some considerations:
-- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates) to assess the impact on the network.
-- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
+- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates.md) to assess the impact on the network.
+- **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](/DeployOffice/delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
 - **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This reduces the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 
 ### Updates from on-premises locations
@@ -91,11 +91,11 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients receive the update at the same time, but in a staggered manner.
 - By default, updates aren't enforced. This can be mitigated by applying the **Update deadline** group policy setting for Office.
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or Servicing Profiles.
-- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
+- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](/admincenter/overview.md) to monitor update adoption rate and compliance.
 
 ### Servicing profiles
 
-A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
+A [servicing profile](/DeployOffice/admincenter/servicing-profile.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
 > Using a servicing profile is Microsoft's recommended solution for Microsoft 365 Apps on Monthly Enterprise Channel.
@@ -109,10 +109,10 @@ A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based upda
 
 **Considerations**
 - As of now, servicing profile only supports Monthly Enterprise Channel. Devices on other channels can be transitioned to Monthly Enterprise Channel.
-- Consider using custom [rollout waves](../admincenter/servicing-profile.md#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
+- Consider using custom [rollout waves](/DeployOffice/admincenter/servicing-profile.md#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
-- [Overview of servicing profile](../admincenter/servicing-profile.md)
+- [Overview of servicing profile](/DeployOffice/admincenter/servicing-profile.md)
 - [Video: Deep dive into servicing profile](https://youtu.be/YO6a3iNVXXI)
 - [Video: Deep dive into Wave Customization for servicing profile](https://go.microsoft.com/fwlink/?linkid=2212413)
 
@@ -140,7 +140,7 @@ Configuration Manager can be used to deploy updates for Microsoft 365 Apps the s
 
 
 ### Network shares
-Admins can choose to download the latest releases using the [Office Deployment Tool](https://aka.ms/ODT) and stage the files on network shares, in local folders, on USB thumb drives or http/https-based locations. Then the **UpdatePath** setting in the [configuration file](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) or from group policies can be used, to point devices to the location.
+Admins can choose to download the latest releases using the [Office Deployment Tool](https://aka.ms/ODT) and stage the files on network shares, in local folders, on USB thumb drives or http/https-based locations. Then the **UpdatePath** setting in the [configuration file](/DeployOffice/office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) or from group policies can be used, to point devices to the location.
 
 > [!NOTE]
 > This method is discouraged due to the high cost of ownership and repetitive, manual intensive processes. It should only be implemented after carefully evaluating  alternative options.
