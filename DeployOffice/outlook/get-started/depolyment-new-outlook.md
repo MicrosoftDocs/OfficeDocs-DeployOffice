@@ -44,7 +44,7 @@ Classic Outlook app | Version 2303 Build 16227.20318 or higher to see the Try th
 For organizations that disable access to the Windows Store, the installer can be directly accessed from the Office CDN.
 
 To install new Outlook on a single computer with many users, follow these steps:
-1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
+1. Download the [Setup.exe](https://go.microsoft.com/fwlink/?linkid=2207851).
 2. Launch PowerShell 7 as an administrator: Right-click the PowerShell icon and choose Run as Administrator.
 3. Navigate to where the Setup.exe file is located.
 4. Run the following command: 
@@ -96,7 +96,7 @@ Some organizations might opt to use a policy to hide the **Try the new Outlook**
 
 This policy hides the toggle from classic Outlook, but it doesn’t block the mailbox from being added to the new Outlook for Windows. A separate Exchange mailbox policy can be used to block organization mailboxes from being added to the new Outlook.
 
-For more information, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
+For more information on disabling new Outlook in Eschange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
 
 Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in 
 this [link](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using PowerShell and using the parameter Microsoft.OutlookForWindows.
@@ -114,4 +114,4 @@ For more information, see: [Outlook for Windows: The Future of Mail, Calendar an
 
 Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox][/powershell/module/exchange/set-casmailbox?view=exchange-ps#-universaloutlookenabled].
 
-Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [link to Policy Management article].
+Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management.md).
