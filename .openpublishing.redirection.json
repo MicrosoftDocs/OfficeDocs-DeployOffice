@@ -1044,6 +1044,11 @@
       "source_path": "DeployOffice/fieldnotes/choose-how-to-deliver-updates.md",
       "redirect_url": "/deployoffice/updates/choose-how-to-deliver-updates",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/index.md",
+      "redirect_url": "/DeployOffice/outlook/overview-new-outlook",
+      "redirect_document_id": false
     }
   ]
 }
