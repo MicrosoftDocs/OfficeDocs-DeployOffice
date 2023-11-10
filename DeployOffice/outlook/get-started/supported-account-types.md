@@ -35,7 +35,7 @@ Currently, POP and on-premises Exchange accounts aren't supported. When attempti
 
 Accounts associated with SKUs that don't carry licenses for Outlook client apps are also not supported. If users attempt to add those accounts, they see an error: *This account is not supported in Outlook for Windows due to the license provided by your work or school. Try to login with another account or go to [Outlook on the web](https://outlook.office.com/).*
 
-Shared and delegated mailboxes can be opened from the folder list. Right click on the account name with shared mailbox permission, and select **Add shared folder or mailbox** to open.  For more information, see [link]().
+Shared and delegated mailboxes can be opened from the folder list. Right click on the account name with shared mailbox permission, and select **Add shared folder or mailbox** to open. <!-- For more information, see [link](). -->
 
 ## Protecting organization data 
 
