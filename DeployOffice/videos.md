@@ -10,7 +10,7 @@ ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists videos available for IT Pros deploying Microsoft 365 Apps."
-ms.date: 10/11/2023
+ms.date: 11/10/2023
 ---
 
 # Videos about how to deploy, update, and manage Microsoft 365 Apps
@@ -57,7 +57,7 @@ These videos cover features available in the [Microsoft 365 Apps admin center](h
 - [Introduction to Monthly Enterprise Channel Profile](https://youtu.be/vUDGQ5I_5lo)
 - [Overview of Current Channel Profile](https://youtu.be/wwguIOw788I)
 - [Enabling the Current Channel Profile](https://youtu.be/lRegLZUjkUY)
-- [How to exclude devices using Entra ID groups](https://youtu.be/fvZLjP41kXE)
+- [How to exclude devices using Microsoft Entra ID groups](https://youtu.be/fvZLjP41kXE)
 
 ### Servicing profile
 - [Take control of your automation with Servicing Profile](hhttps://youtu.be/i_eUkyFX30E)
