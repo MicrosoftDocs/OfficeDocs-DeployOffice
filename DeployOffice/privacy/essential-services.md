@@ -18224,7 +18224,7 @@ The following fields are collected:
 
 ### Office.Apple.Licensing.AutoRenewViewVisible
 
-This event is triggered when the user lands on the "Subscription Auto Renew Reminder " user interface (UI). The data is used to confirm that the screen  was viewed by the user.
+This event is triggered when the user lands on the "Subscription Auto Renew Reminder" user interface (UI). The data is used to confirm that the screen  was viewed by the user.
 
 The following fields are collected:
 
