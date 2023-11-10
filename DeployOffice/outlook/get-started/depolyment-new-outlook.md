@@ -101,8 +101,7 @@ This policy hides the toggle from classic Outlook, but it doesn’t block the ma
 
 For more information on disabling new Outlook in Exchange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
 
-Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in 
-this [link](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using PowerShell and using the parameter Microsoft.OutlookForWindows.
+Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package by using PowerShell and the parameter Microsoft.OutlookForWindows.
 
 The PowerShell cmdlet to use is:
 
