@@ -29,13 +29,13 @@ The preview version of the new Outlook for Windows supports the following accoun
 - **iCloud** 
 - **Other accounts connecting via IMAP** 
 
-![List of supported accounts.](/DeployOffice/images/new-outlook/add-all-email-accounts.png)
+:::image type="content" source="/DeployOffice/images/new-outlook/add-all-email-accounts.png" alt-text="Screenshot of the list of supported email accounts." lightbox="/DeployOffice/images/new-outlook/add-all-email-accounts.png":::
 
-Currently, POP and on-premises Exchange accounts aren't supported. When attempting to add an account that isn't supported, an error message is displayed: *We couldn’t reach the email server. Please try again.* 
+Currently, POP and on-premises Exchange accounts aren't supported. When attempting to add an account that isn't supported, an error message is displayed: **We couldn’t reach the email server. Please try again.** 
 
-Accounts associated with SKUs that don't carry licenses for Outlook client apps are also not supported. If users attempt to add those accounts, they see an error: *This account is not supported in Outlook for Windows due to the license provided by your work or school. Try to login with another account or go to [Outlook on the web](https://outlook.office.com/).*
+Accounts associated with SKUs that don't carry licenses for Outlook client apps are also not supported. If users attempt to add those accounts, they see an error: **This account is not supported in Outlook for Windows due to the license provided by your work or school. Try to login with another account or go to [Outlook on the web](https://outlook.office.com/)**.
 
-Shared and delegated mailboxes can be opened from the folder list. Right click on the account name with shared mailbox permission, and select **Add shared folder or mailbox** to open. <!-- For more information, see [link](). -->
+Shared and delegated mailboxes can be opened from the folder list. Right click on the account name with shared mailbox permission, and select **Add shared folder or mailbox** to open.
 
 ## Protecting organization data 
 
