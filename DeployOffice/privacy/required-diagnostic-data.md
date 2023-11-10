@@ -2979,8 +2979,6 @@ The following fields are collected:
 
 - **Data_Doc_IdentityTelemetryId** - A GUID that uniquely identifies the identity used to open a file. 
 
-- **Data_IdocsEndToInspaceDuration** - The duration between idocend to and inspace animation.
-
 - **Data_Doc_InitializationScenario** - An enumeration indicating the detailed scenario type of a file open operation.
 
 - **Data_Doc_IOFlags** - An enumeration indicating the IO flags of a file open operation, for example, if the file is cached or not.
@@ -3036,6 +3034,8 @@ The following fields are collected:
 - **Data_FileOpenFlowMarkers** – Before the file open process begins, there is some pre-processing involved. This time taken for this pre-processing is captured in a string value that has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
 - **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or PowerPoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
+
+- **Data_IdocsEndToInspaceDuration** - The duration between idocend to and inspace animation.
 
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
@@ -10253,7 +10253,7 @@ The following fields are collected:
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
-- **Data_SDXStoreType**  The source of the advertisement add-in package in usage
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
 
 - **Data_Type** - The type of advertisement
 
