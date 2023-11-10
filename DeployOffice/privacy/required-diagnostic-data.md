@@ -13856,9 +13856,11 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.AsyncLibLoadFailure
 
-When user launches the app or open any Word, Excel, or PowerPoint file and faces any issues during library load, this event will be triggered. This telemetry will be used to find the failure cases.
+This event is trigged when the user launches the app or opesn any Word, Excel, or PowerPoint file and faces any issues during library load. This data will be used to find the failure cases.
 
 The following fields are collected:
+
+- **Data_AdditionalInfo** - Info (app state or member variables) regarding the exception will be logged here.
 
 - **Data_ErrorCode** - class name of the exception will be logged here. 
 
@@ -13866,8 +13868,6 @@ The following fields are collected:
 
 - **Data_FailureMethod** - Function name where exception is thrown
 
-- **Data_AdditionalInfo** - Info (app state or member variables) regarding the exception will be logged here.
- 
 
 #### Office.Android.NullIdOnSignInWithOneAuthAndroid  
 
