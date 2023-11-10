@@ -28,7 +28,7 @@ The new Outlook for Windows, built upon modern service architecture, is inspired
 
 The new Outlook for Windows is delivered as an MSIX package. Users acquire the package through the Outlook entry in the Microsoft Store app. For custom deployment by system administrators, the package is made available for manual or scripted installation. For more information, see [What is MSIX?](/windows/msix/overview)
 
-In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows ](/DeployOffice/Outlook-admin-documentation/Get-started/deployment-new-outlook.md).
+In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/deployoffice/outlook/get-started/depolyment-new-outlook).
 
 ## Native host
 
@@ -36,7 +36,7 @@ As highlighted earlier, new Outlook is a native application, based on WebView2. 
 
 The native components of new Outlook are small in footprint and automatically update each time the app is rebooted. Updates are delivered approximately every week from the Office Content Delivery Network (CDN). In the past, such a fast update cadence would be challenging for large deployments due to the validation steps most enterprises undertake. This update cadence is less of a concern for new Outlook because almost none of the feature implementations are in the native code. Again, the native host is a thin application only providing access to local machine resources.
 
-Consistent with many service-based architectures, the client and service versions should stay closely synced. If updates aren't applied for more than six weeks, users might see the following error indicating that the native host is incompatible with the current service `<exact error message>`. If this error occurs, users can close and reopen the application to apply the latest update.
+Consistent with many service-based architectures, the client and service remain close in version. If updates can’t be applied for an extended period of time, users could see an error message that the native host isn't compatible with the current service. If this error occurs, users can close and reopen the application to apply the latest update.
 
 Organizations used to distribute updates for classic Outlook from a custom local network location, but this practice is now obsolete and unnecessary due to the reduced package size.
 
