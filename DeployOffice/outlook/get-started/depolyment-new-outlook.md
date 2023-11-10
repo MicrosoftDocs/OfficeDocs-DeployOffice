@@ -118,4 +118,4 @@ For more information, see [Outlook for Windows: The Future of Mail, Calendar and
 
 Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps#-universaloutlookenabled).
 
-Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management.md).
+Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management).
