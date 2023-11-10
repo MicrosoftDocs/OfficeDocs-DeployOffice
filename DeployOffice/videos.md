@@ -35,7 +35,7 @@ These videos cover update channels and how to update Microsoft 365 Apps.
 - [Managing Update Channels for Microsoft 365 Apps](https://youtu.be/rIpoloAZnSg)
 - [Managing Microsoft 365 Apps updates with Configuration Manager](https://youtu.be/dUz1Jo4HGiQ?t=791)
 - [The New Monthly Enterprise Channel](https://youtu.be/0vrIkbWBTho)
-- [Managing updates for the Microsoft 365 Apps - 2 easy ways!](https://youtu.be/ru11vVA8em4)
+- [Managing updates for the Microsoft 365 Apps - two easy ways!](https://youtu.be/ru11vVA8em4)
 - [Expedite your Microsoft 365 Apps updates](https://youtu.be/g5VfSMlpJn0)
 - [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://youtu.be/tFmktdQsKgY)
 
