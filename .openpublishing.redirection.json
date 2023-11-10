@@ -1049,11 +1049,6 @@
       "source_path": "DeployOffice/outlook/index.md",
       "redirect_url": "/DeployOffice/outlook/overview-new-outlook",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "DeployOffice/outlook/get-started/depolyment-new-outlook.md",
-      "redirect_url": "/DeployOffice/outlook/get-started/deployment-new-outlook",
-      "redirect_document_id": false
     }
   ]
 }
