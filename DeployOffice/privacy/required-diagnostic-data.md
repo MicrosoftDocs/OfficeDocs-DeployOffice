@@ -2955,7 +2955,11 @@ The following fields are collected:
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
 
+- **Data_BootDurationWithPreAppActivate** - Duration of the boot until preappactivate marker
+
 - **Data_BootMarkers** – A string value logging the time duration between some function calls when booting the application, in a format with function ID and duration.
+
+- **Data_BootToDocumentOpBegin** - The duration of boot to appdocs begin.
 
 - **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value that has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
@@ -2974,6 +2978,8 @@ The following fields are collected:
 - **Data_Doc_FqdnHash** - A Globally Unique Identifier (GUID) that uniquely identifies server host name.
 
 - **Data_Doc_IdentityTelemetryId** - A GUID that uniquely identifies the identity used to open a file. 
+
+- **Data_IdocsEndToInspaceDuration** - The duration between idocend to and inspace animation.
 
 - **Data_Doc_InitializationScenario** - An enumeration indicating the detailed scenario type of a file open operation.
 
@@ -3045,9 +3051,15 @@ The following fields are collected:
 
 - **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
 
+- **Data_PostRenderToInspaceDuration** - The duration between post render end and the inspace animation. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **Data_PreAppActivateToDocumentOpBegin** - The duration of boot with preappactivate to appdocs begin.
+
 - **Data_RenderToInSpaceDuration** – The duration between render end and the silhouette/canvas animation.
 
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
+
+- **Data_SilhouetteDurationTillPostRender** - The duration of document end to post render.
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
 
@@ -10241,6 +10253,8 @@ The following fields are collected:
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
+- **Data_SDXStoreType**  The source of the advertisement add-in package in usage
+
 - **Data_Type** - The type of advertisement
 
 - **Data_WindowClosed** - Duration until application window is closed
@@ -14065,12 +14079,15 @@ The following fields are collected:
 
 - **Data_SDXReady** - Duration to finish advertisement add-in initialization
 
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
+
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
 - **Data_Type** - The type of advertisement
 
+- **Data_WindowClosed** - Duration when application document window is closed
 
 #### Office.ClickToRun.Ads.SDX.Error
 
