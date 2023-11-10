@@ -60,7 +60,7 @@ These videos cover features available in the [Microsoft 365 Apps admin center](h
 - [How to exclude devices using Microsoft Entra ID groups](https://youtu.be/fvZLjP41kXE)
 
 ### Servicing profile
-- [Take control of your automation with Servicing Profile](hhttps://youtu.be/i_eUkyFX30E)
+- [Take control of your automation with Servicing Profile](https://youtu.be/i_eUkyFX30E)
 - [How to easily set up your Servicing Profile](https://youtu.be/igBMDvKqVJU)
 - [Servicing Profiles Deep Dive](https://youtu.be/YO6a3iNVXXI)
 - [Deep dive into Wave customization for Servicing profiles](https://youtu.be/rDu8qVbE1DY)
