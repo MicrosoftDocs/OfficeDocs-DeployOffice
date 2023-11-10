@@ -48,9 +48,10 @@ To install new Outlook on a single computer with many users, follow these steps:
 2. Launch PowerShell 7 as an administrator: Right-click the PowerShell icon and choose Run as Administrator.
 3. Navigate to where the Setup.exe file is located.
 4. Run the following command: 
-```powershell
-.\Setup.exe --provision true --quiet --start-*
-```
+
+   ```powershell
+   .\Setup.exe --provision true --quiet --start-*
+   ```
 
 ### Deploy new Outlook across your organization
 To deploy this installer to a group of computers, or your entire organization:
@@ -68,9 +69,10 @@ The Windows Package Manager (winget) allows for a nonadministrative, per-user in
 
 1. Open PowerShell by pressing Windows + X and select Terminal (PowerShell for Windows 10 users).
 2. Enter the following command to install the Microsoft Store version of new Outlook:
-```powershell
-winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements
-```
+
+   ```powershell
+   winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements
+   ```
 
 ### Microsoft Intune
 
@@ -82,9 +84,10 @@ A Setup.exe bootstrapper can be used for a straightforward per-user installation
 
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
 2. Open PowerShell and run the following command:
-```powershell
-.\Setup.exe --quiet --start-
-```
+
+   ```powershell
+   .\Setup.exe --quiet --start-
+   ```
 
 ## Future integration of new Outlook in new Microsoft 365 deployments
 
@@ -100,10 +103,12 @@ For more information on disabling new Outlook in Exchange, see [Enable or disabl
 
 Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in 
 this [link](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using PowerShell and using the parameter Microsoft.OutlookForWindows.
+
 The PowerShell cmdlet to use is:
+
 ```powershell
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
-``` 
+```
 
 > [!IMPORTANT]
 > Support for Windows Mail and Calendar will be discontinued at the end of 2024. Organizations should ensure that users transition to new Outlook before this deadline to avoid disruption. Please note that blocking the download of the new Outlook for Windows on managed devices will not stop the migration prompts within Mail and Calendar.
