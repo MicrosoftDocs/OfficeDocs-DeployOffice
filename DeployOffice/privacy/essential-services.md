@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 10/06/2023
+ms.date: 10/10/2023
 ---
 
 # Essential services for Office
@@ -4493,19 +4493,21 @@ The following fields are collected:
 
 ### Office.Experimentation.FlightNumberLine
 
-Collects the list of configurations received by the client from ECS
+This event is triggered when a new Office session is started to collect the list of configurations received by the client from the Experimentation and Configurations Service. The data is used to ensure that flighting and configuration infrastructure is operating as designed to keep the product secure and working as expected.  
 
 The following fields are collected:
 
-  - **ECSConfigs** - Comma-separated list of ECS Configs
+- **ECSConfigs** - Comma separated list of ECS Configs 
 
-  - **LockType** - Type of FlightManager lock.
+- **ExpStaleUserId** - Indicator for configurations User ID matching with session User ID
 
-  - **TasFlightingVersion** - Version number
+- **LockType** - Type of FlightManager lock.
 
-  - **TimeToLock** - Time between liblet initiation and FlightManager lock
+- **TasFlightingVersion** - Version number
 
-  - **UnmergedConfigs** - List of configurations not merged
+- **TimeToLock** - Time between liblet initiation and FlightManager lock
+
+- **UnmergedConfigs** - List of configurations not merged
 
 ### Office.Experimentation.TriggerAnalysis
 
@@ -4840,6 +4842,8 @@ This event is used to understand the in-app purchase (IAP) experience for the us
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session.
   - **status** - String – The SignIn status of the user. Can be Cancelled, Failure, PremiumSignIn or Success (Non-Premium Signin)
 
+
+- **Office.iOS.Paywall.SigninAlertShowUpsellButtonTapped** - To log how many users are tapping on show upsell button on CPC signin alert. The data is used to measure the number of non-premium users coming back to CPC screen post successful signin from CPC.
  
 - **Office.iOS.Paywall.SKUChooser.BuyButtonTap** - Data is collected when user taps the Purchase/Buy Button. The data is used to measure the performance of the button and ensure that it performing as expected.
 
@@ -14338,6 +14342,14 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### Office.Apple.Licensing.ReportLicenseStatusData
+
+The event is triggered when launching Mac Office applications. This data is used to monitor licensing status and whether Office clients failed to retrieve it. License status is used to know what updates to provide.
+
+The following fields are collected:
+
+- **OfficeActivationLicense** - The type of activation license used.
+
 ### Optinnotificationaction
 
 *[This event has been removed from current builds of Office, but might still appear in older builds.]*
@@ -16302,6 +16314,14 @@ The following fields are collected:
 - **SessionId** - The identifier for the session
 
 
+### updatefinder.appspecificupdatefilter
+
+This event is triggered when the user checks for updates manually from Microsoft Auto Update (MAU) or when MAU periodically checks for updates in the background, and when app update has been found and there is an app specific update filter specified. This data will be aggregated to determine usage of update filter, how many app updates are filtered, and determine the health of the feature.
+
+The following fields are collected
+
+- **Payload** - Generic column contain event specific messages.  
+
 ### updatefinder.check.error
 
 This event reports an error encountered while checking for updates. This event is critical and is used to investigate reported error. 
@@ -18181,6 +18201,36 @@ The following fields are collected:
 
 - **V2Enabled** - Boolean – Flag denoting if experimental modern upsell UX was shown.
 
+### Office.Apple.Licensing.AutoRenewData
+
+This event is triggered when the user lands on the "Subscription Auto Renew Reminder" user interface (UI). The data is used to ensure that the feature is working as expected and for better service reliability. 
+
+The following fields are collected:
+
+- **isAROff: Bool** - true if user has their auto renew turned off.
+
+- **IsSubscriptionPurchaser: Bool** - Boolean indicating whether the user is a subscription purchaser or not (beneficiary)
+
+- **isTrial: Bool** - true if user has their trial period ongoing.
+
+- **ProductId: String** - ProductId of the subscription product.
+
+- **PurchaseApp: String** - App where the user purchased their subscription(Word/Excel/PowerPoint).
+
+- **PurchasePlatform: String** - platform where the user purchased their subscription (iOS vs Windows vs Android).
+
+- **SubscriptionExpirationDateTime: String** - Date and time when the subscription will expire.
+
+
+### Office.Apple.Licensing.AutoRenewViewVisible
+
+This event is triggered when the user lands on the "Subscription Auto Renew Reminder " user interface (UI). The data is used to confirm that the screen  was viewed by the user.
+
+The following fields are collected:
+
+- None
+
+
 ### Office.BusinessCheckout.AnalyticsEvent
 
 The event is triggered by the user action or internal component operation. This event is emitted on every step of user journey through the purchase funnel in checkout component. This event is required to keeping the service performing as expected and identify drop-offs in the checkout flow.
@@ -18646,93 +18696,93 @@ The following fields are collected:
 
   - **IdentityUniqueIdHashed** - One-way hash of the identity unique ID
 
-### Office.System.SystemHealthMetadataApplicationAdditional
+### Office.System.SystemHealthMetadataApplicationAdditional 
 
-Metadata required to isolate a failure reproduction.
+This event is triggered when the Office session is launched. The data is used to ensure that the various components like identity, flighting and configurations, are operating as designed, to keep the product secure and working as expected. 
 
 The following fields are collected:
 
-  - **Alias -** If the user running Office is a Microsoft employee, their company internal alias.
+- **Alias** - If the user running Office is a Microsoft employee, their company internal alias.
 
-  - **AppBuild -** The Build version of the Office application.
+- **AppBuild** - The Build version of the Office application.
 
-  - **AppBuildRevision -** The Build Revision of the Office application.
+- **AppBuildRevision** - The Build Revision of the Office application.
 
-  - **AppMajorVer -** The Major version of the Office application.
+- **AppMajorVer** - The Major version of the Office application.
 
-  - **AppMinorVer -** The Minor version of the Office application.
+- **AppMinorVer** - The Minor version of the Office application.
 
-  - **CID -** Pseudonymized user identity
+- **CID** - Pseudonymized user identity
 
-  - **CollectibleClassifications -** The set of data classifications that can be collected.
+- **CollectibleClassifications** - The set of data classifications that can be collected.
 
-  - **DeviceManufacturer -** The manufacturer of the device Office is being run on.
+- **DeviceManufacturer** - The manufacturer of the device Office is being run on.
 
-  - **DeviceModel -** The model of the device Office is being run on.
+- **DeviceModel** - The model of the device Office is being run on.
 
-  - **DeviceProcessorModel -** The processor model of the device Office is run on.
+- **DeviceProcessorModel** - The processor model of the device Office is run on.
 
-  - **DigitizerInfo -** Information about the digitizer attached to the device Office is run on.
+- **DigitizerInfo** - Information about the digitizer attached to the device Office is run on.
 
-  - **DomainName -** The name of the domain the machine running Office is joined to (if any).
+- **DomainName** - The name of the domain the machine running Office is joined to (if any).
 
-  - **FirstRunTime -** The first time an Office application was run.
+- **FirstRunTime** - The first time an Office application was run.
 
-  - **HorizontalResolution -** Horizontal screen resolution
+- **HorizontalResolution** - Horizontal screen resolution 
 
-  - **IsDebug -** Whether this is a debug build of Office.
+- **IsDebug** - Whether this is a debug build of Office.
 
-  - **IsImmersive -** Whether the Office application is a Universal Windows or Immersive application.
+- **IsImmersive** - Whether the Office application is a Universal Windows or Immersive application.
 
-  - **IsJoinedToDomain -** Whether the device running Office is domain joined.
+- **IsJoinedToDomain** - Whether the device running Office is domain joined.
 
-  - **IsLabMachine -** Whether Office is being run in a Microsoft lab.
+- **IsLabMachine** - Whether Office is being run in a Microsoft lab.
 
-  - **IsLaptop -** Whether the device Office is running on is a laptop.
+- **IsLaptop** - Whether the device Office is running on is a laptop.
 
-  - **IsMsftInternal -** Whether the Windows user running Office is a Microsoft employee.
+- **IsMsftInternal** - Whether the Windows user running Office is a Microsoft employee.
 
-  - **IsOEMInstalled -** Whether the running Office application was installed by an OEM.
+- **IsOEMInstalled** - Whether the running Office application was installed by an OEM.
 
-  - **IsRunAsAdmin -** Whether the Office application is running as Administrator.
+- **IsRunAsAdmin** - Whether the Office application is running as Administrator.
 
-  - **IsSubscription -** Whether the Office application is installed under a subscription license.
+- **IsSubscription** - Whether the Office application is installed under a subscription license.
 
-  - **MsoAppId -** Identifier for what Office application this data refers to.
+- **MsoAppId** - Identifier for what Office application this data refers to.
 
-  - **NumProcPhysCores -** Number of physical cores in the processor.
+- **NumProcPhysCores** - Number of physical cores in the processor.
 
-  - **OfficeBuild -** The Build version of the Office shared libraries.
+- **OfficeBuild** - The Build version of the Office shared libraries.
 
-  - **OfficeBuildRevision -** The Build Revision version of the Office shared libraries.
+- **OfficeBuildRevision** - The Build Revision version of the Office shared libraries.
 
-  - **OfficeMajorVer -** The Major version of the Office shared libraries.
+- **OfficeMajorVer** - The Major version of the Office shared libraries.
 
-  - **OfficeMinorVer -** The Minor version of the Office shared libraries.
+- **OfficeMinorVer** - The Minor version of the Office shared libraries.
 
-  - **OsBuild -** The Build version of the Operating System.
+- **OsBuild** - The Build version of the Operating System.
 
-  - **OsBuildRevision -** OS build revision
+- **OsBuildRevision** - OS build revision
 
-  - **OsMajorVer -** The Major version of the Operating System.
+- **OsMajorVer** - The Major version of the Operating System.
 
-  - **OsMinorVer -** The Minor version of the Operating System.
+- **OsMinorVer** - The Minor version of the Operating System.
 
-  - **PowerPlatformRole -** An identifier of the OEM preferred computer role of the device Office is run on.
+- **PowerPlatformRole** - An identifier of the OEM preferred computer role of the device Office is run on.
 
-  - **ProcessFileName -** The running application's executable name.
+- **ProcessFileName** - The running application’s executable name.
 
-  - **ProcessorCount -** The count of processors on the device Office is run on.
+- **ProcessorCount** - The count of processors on the device Office is run on.
 
-  - **RamMB -** The amount of RAM available in the device Office is run on.
+- **RamMB** - The amount of RAM available in the device Office is run on.
 
-  - **SqmUserId -** A random identifier for the install of Office.
+- **SqmUserId** - A random identifier for the install of Office.
 
-  - **StudyId -** Software Quality Metrics study identifier.
+- **StudyId** - Software Quality Metrics study identifier.
 
-  - **VerticalResolution -** Vertical screen resolution
+- **VerticalResolution** - Vertical screen resolution
 
-  - **WinUserActType -** Whether the Windows user running Office is a local administrator, power user, or normal user.
+- **WinUserActType** - Whether the Windows user running Office is a local administrator, power user, or normal user.
 
 ### Office.System.SystemHealthMetadataApplicationAndLanguage
 
