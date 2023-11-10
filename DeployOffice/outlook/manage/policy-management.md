@@ -22,7 +22,7 @@ App-wide settings, including Theme, Text Size and Spacing, and Diagnostic Data a
 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
 
-:::image type="content" alt-text="Change primary account in Email accounts Settings." source="/DeployOffice/images/new-outlook/policy-email-accounts-settings.png" lightbox="/DeployOffice/images/new-outlook/policy-email-accounts-settings.png":::
+:::image type="content" alt-text="Change primary account in Email accounts Settings." source="/DeployOffice/images/new-outlook/policy-email-accounts-settings.png":::
 
 We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the OwaMailboxPolicy cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
