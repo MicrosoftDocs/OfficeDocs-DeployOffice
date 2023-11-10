@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates for the Microsoft 365 Apps"
-ms.date: 11/09/2023
+ms.date: 11/10/2023
 ---
 
 # Choose how to deliver updates
@@ -45,7 +45,7 @@ There are two core benefits when leveraging the cloud as your update source:
 - **No source files maintenance** needed: As the updates are hosted worldwide at Microsoft's datacenters, there's no need for downloading, packaging, staging and distributing the source files in your on-premises network. As updates are specific to architecture, update channel and languages, this can become a complex task in for example multi-language environments.
 
 When using the cloud as your update source, there are also some considerations:
-- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates.md) to assess the impact on the network.
+- **Network connectivity**: Devices must be able to connect to the Office CDN. For this the URLs and IPs listed in [Office 365 URLs and IP address ranges](/Microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be accessible for devices. Microsoft recommends allowing devices to connect to the Office CDN on a system-level, bypassing any proxy servers to ensure best performance. We recommend reviewing the [Download sizes for updates to Microsoft 365 Apps](/OfficeUpdates/download-sizes-microsoft365-apps-updates.md) to assess the impact on the network.
 - **Delivery Optimization**: In all cloud-based update scenarios, the update mechanism can and will use [Delivery Optimization](../delivery-optimization.md) when available. This allows devices to share the required sources in a peer-to-peer fashion and reduces the amount of data that needs to be downloaded from the internet. Microsoft recommends the usage of Delivery Optimization. If [Connected Caches](/windows/deployment/do/waas-microsoft-connected-cache) are deployed and configured, those will also be used. Especially [Microsoft Connected Cache in Configuration Manager](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) is straight forward to implement and is recommended for environments with existing Configuration Manager infrastructures.
 - **VPN bypass**: When using virtual private network (VPN) solutions, it's recommended to bypass the VPN tunnel when downloading data from the Office CDN. This reduces the load on the VPN infrastructure, network uplinks and allows for faster downloads.
 
