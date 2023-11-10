@@ -3,7 +3,7 @@
 ## [New Outlook for Windows](overview-new-outlook.md)
 
 ## Get started
-### [Deploy Outlook](get-started/depolyment-new-outlook.md)
+### [Deploy Outlook](get-started/deployment-new-outlook.md)
 ### [Migrate from COM to web add-ins](get-started/migrate-com-to-web-addins.md)
 ### [Supported accounts](get-started/supported-account-types.md)
 
