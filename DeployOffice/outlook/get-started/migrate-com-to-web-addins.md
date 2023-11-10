@@ -42,10 +42,10 @@ If your organization is currently using web add-ins, no extra effort is required
    | Microsoft COM Add-in | Details |
    | --------------------- | ------- |
    | Dynamics 365 | COM Add-in deprecated in favor of web add-in since 2020. |
-   | Microsoft Azure Information Protection (AIP) | Being replaced with native Office integration – new Outlook for Windows supports native sensitivity labels. For more information, see: [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps). |
+   | Microsoft Azure Information Protection (AIP) | Being replaced with native Office integration – new Outlook for Windows supports native sensitivity labels. For more information, see [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps). |
    | Microsoft Exchange Add-in | This add-in is no longer relevant. |
    | Microsoft IME (Input Method Editor) Outlook アドイン | Microsoft IME can be enabled in Windows and that should solve the relevant scenarios. |
-   | Microsoft SharePoint Server Colleague Import Add-in | No equivalent web add-in is available for the SharePoint Server Colleague Import Add-in |
+   | Microsoft SharePoint Server Colleague Import Add-in | No equivalent web add-in is available for the SharePoint Server Colleague Import Add-in. |
    | OneNote COM Add-in | Share to OneNote web add-in is available for use. There are some known gaps that the OneNote team is looking into and plans to address. |
    | Teams COM Add-in | Native integration in the new Outlook for creating Teams meetings. Share to Teams web add-in is also available. |
 
@@ -80,7 +80,7 @@ If your organization is currently using web add-ins, no extra effort is required
    | Virtru For Outlook                      | DLP                    | PRIVATE-Virtru                      |
    | Zoom Outlook Plugin                     | Online Meetings        | [Zoom for Outlook Extension](https://appsource.microsoft.com/product/office/wa104381712)          |
 
-   - If you don’t find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home)
+   - If you don’t find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home).
    
    - Some developers build private web add-ins that aren't published to the store. Check with your partners to confirm if they developed or are developing a web add-in.
 
@@ -95,7 +95,7 @@ If your organization is currently using web add-ins, no extra effort is required
 
 
 5. **Initiate web add-in development**. If native Outlook capabilities don't meet your needs, reach out to your partners or internal developer teams (if there are internally developed COM add-ins) to initiate web add-in development. Here are some resources you can share with your partners or developers to start building web add-ins.
-   - [Develop Outlook add-ins for the new Outlook for Windows](/office/dev/add-ins/outlook/one-outlook): this document has details on the supported and unsupported COM add-in scenarios in the web add-ins platform.
+   - [Develop Outlook add-ins for the new Outlook for Windows](/office/dev/add-ins/outlook/one-outlook): This document has details on the supported and unsupported COM add-in scenarios in the web add-ins platform.
    - [Build your first Outlook add-in - Office Add-ins](/office/dev/add-ins/quickstarts/outlook-quickstart?tabs=yeomangenerator)
    - [Tutorial: Build a message compose Outlook add-in - Office Add-ins](/office/dev/add-ins/tutorials/outlook-tutorial)
    - [Outlook add-in APIs](/office/dev/add-ins/outlook/apis)
@@ -109,6 +109,6 @@ Our goal is to provide support for core scenarios through a combination of Add-i
 - Select multiple items at once for the add-in to run on.
 - Update mail or writing to the add-in product's server.
 
- For a full list of scenarios, see: [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins)
+For a full list of scenarios, see [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins).
 
 If you find gaps in the web add-in platform that don't support core workflows like the COM add-in, use [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR30HUvi_P4FFlU1eu9jg8INURUhWVkJHVEpRMURVUzNQWUdJS0g1U1NOOC4u) to share feedback.

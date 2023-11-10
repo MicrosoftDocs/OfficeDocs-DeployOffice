@@ -61,7 +61,7 @@ To deploy this installer to a group of computers, or your entire organization:
 
 ## Non-Administrative Installation Methods
 
-For users without administrative privileges, provided here are several alternatives to install the new Outlook for Windows:
+For users without administrative privileges, provided here are several alternatives to install the new Outlook for Windows: Windows Package Manager, Microsoft Intune, or Setup.exe Boostrapper.
 
 ### Windows Package Manager (winget)
 
@@ -99,7 +99,7 @@ Some organizations might opt to use a policy to hide the **Try the new Outlook**
 
 This policy hides the toggle from classic Outlook, but it doesn’t block the mailbox from being added to the new Outlook for Windows. A separate Exchange mailbox policy can be used to block organization mailboxes from being added to the new Outlook.
 
-For more information on disabling new Outlook in Exchange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox)
+For more information on disabling new Outlook in Exchange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox).
 
 Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package by using PowerShell and the parameter Microsoft.OutlookForWindows.
 
@@ -114,7 +114,7 @@ Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Mi
 
 Users can toggle to the new Outlook from the Mail and Calendar applications that ship with Windows. To block users from acquiring new Outlook from these applications, organizations can block users from downloading and/or installing the new Outlook using Intune or other management solutions.
 
-For more information, see: [Outlook for Windows: The Future of Mail, Calendar and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
+For more information, see [Outlook for Windows: The Future of Mail, Calendar and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
 
 Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox][/powershell/module/exchange/set-casmailbox?view=exchange-ps#-universaloutlookenabled].
 
