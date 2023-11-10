@@ -707,7 +707,6 @@ The following fields are collected:
 
 - **state** – current state of the account, (example value: FAILED, PENDING, ADDED etc.)
 
-
 #### install.referral
 
 This event is triggered at the initial install of the app and records from where the user was referred (if available).
@@ -716,7 +715,21 @@ The following fields are collected:
 
 - **install_referrer** - Product or experience from where the user was referred
 
- 
+#### Office.Android.EarlyTelemetry.ProcessStartedForPDFFileActivation
+
+This event is triggered when the user launches the Microsoft 365 mobile app for file activations. This data helps identify the type of activation before the app boots so that the correct sequence of start-up tasks is selected for file activation.
+
+The following fields are collected:
+
+- **appTaskInfo** - Details of task which got created, including the intent captured by the app.
+
+- **appTaskSize** - depicts the number of tasks currently on stack for OM app.
+
+- **exceptionReceived** - populated if there was an exception in determining kind of file activation
+
+- **isPdfActivation** - true if its detected as a pdf activation and false if any other launch type
+
+
 #### Office.ClickToRun.UpdateStatus
 
 Applicable to all win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details)
@@ -2929,6 +2942,26 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
+#### Office.Ads.SDX.ImageAction
+
+This event is triggered when a user interacts with advertisement content displayed in Office applications. This event will be used to verify user interaction is behaving as expected and ad content is inducing desired user behavior.
+
+The following fields are collected:
+
+- **Data_Action** - The UI element interacted with  
+
+- **Data_AdRequestId** - A unique identifier for ad retrieval attempts  
+
+- **Data_AuctionId** - A unique identifier for ad placement auction  
+
+- **Data_CreativeId** - A unique identifier for shown ad content  
+
+- **Data_Height** - The height of the advertisement image  
+
+- **Data_OfficeLanguage** - The current language of the Office application  
+
+- **Data_Width** - The width of the advertisement image  
+
 #### Office.Android.AdsMobile.Wxpu.ShowAdEvent
 
 This event is triggered when an ad is about to be shown to the user. The data is used to measure advertisement performance metrics.
@@ -4306,6 +4339,16 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_Success** - A Boolean value to indicate whether the operation succeeded.
+
+#### Office.DocsUI.DocStage.ShowDocStage
+
+The event is triggered when Office apps on iOS are launched and successfully land on the Document Stage. The data is used to monitor the health of the application's launch and First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Experience** - Indicates the type of Document Stage experience where the user landed.
+
+- **IsPhone** - Indicates whether the event comes from iPhone or iPad.
 
 #### Office.DocsUI.FileOperations.DocsUIFileOpenMacRequired
 
@@ -13810,6 +13853,21 @@ The following fields are collected:
 - **Data_ErrorType** - Category of error
 
 - **Data_ErrorMetadata** - Additional details about error
+
+#### Office.Android.EarlyTelemetry.AsyncLibLoadFailure
+
+When user launches the app or open any Word, Excel, or PowerPoint file and faces any issues during library load, this event will be triggered. This telemetry will be used to find the failure cases.
+
+The following fields are collected:
+
+- **Data_ErrorCode** - class name of the exception will be logged here. 
+
+- **Data_ErrorDescription** - detail message string of the error class will be logged here. 
+
+- **Data_FailureMethod** - Function name where exception is thrown
+
+- **Data_AdditionalInfo** - Info (app state or member variables) regarding the exception will be logged here.
+ 
 
 #### Office.Android.NullIdOnSignInWithOneAuthAndroid  
 
