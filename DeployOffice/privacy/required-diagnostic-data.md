@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 10/06/2023
+ms.date: 11/10/2023
 ---
 
 # Required diagnostic data for Office
@@ -707,7 +707,6 @@ The following fields are collected:
 
 - **state** – current state of the account, (example value: FAILED, PENDING, ADDED etc.)
 
-
 #### install.referral
 
 This event is triggered at the initial install of the app and records from where the user was referred (if available).
@@ -716,7 +715,21 @@ The following fields are collected:
 
 - **install_referrer** - Product or experience from where the user was referred
 
- 
+#### Office.Android.EarlyTelemetry.ProcessStartedForPDFFileActivation
+
+This event is triggered when the user launches the Microsoft 365 mobile app for file activations. This data helps identify the type of activation before the app boots so that the correct sequence of start-up tasks is selected for file activation.
+
+The following fields are collected:
+
+- **appTaskInfo** - Details of task which got created, including the intent captured by the app.
+
+- **appTaskSize** - depicts the number of tasks currently on stack for OM app.
+
+- **exceptionReceived** - populated if there was an exception in determining kind of file activation
+
+- **isPdfActivation** - true if its detected as a pdf activation and false if any other launch type
+
+
 #### Office.ClickToRun.UpdateStatus
 
 Applicable to all win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details)
@@ -2929,6 +2942,26 @@ The following fields are collected:
 
 - **unseen_count** - how many notifications in the current view have not been seen before *(not always collected)*
 
+#### Office.Ads.SDX.ImageAction
+
+This event is triggered when a user interacts with advertisement content displayed in Office applications. This event will be used to verify user interaction is behaving as expected and ad content is inducing desired user behavior.
+
+The following fields are collected:
+
+- **Data_Action** - The UI element interacted with  
+
+- **Data_AdRequestId** - A unique identifier for ad retrieval attempts  
+
+- **Data_AuctionId** - A unique identifier for ad placement auction  
+
+- **Data_CreativeId** - A unique identifier for shown ad content  
+
+- **Data_Height** - The height of the advertisement image  
+
+- **Data_OfficeLanguage** - The current language of the Office application  
+
+- **Data_Width** - The width of the advertisement image  
+
 #### Office.Android.AdsMobile.Wxpu.ShowAdEvent
 
 This event is triggered when an ad is about to be shown to the user. The data is used to measure advertisement performance metrics.
@@ -2955,7 +2988,11 @@ The following fields are collected:
 
 - **Data_BootDuration** - The duration of application boot in process of the file open.
 
+- **Data_BootDurationWithPreAppActivate** - Duration of the boot until preappactivate marker
+
 - **Data_BootMarkers** – A string value logging the time duration between some function calls when booting the application, in a format with function ID and duration.
+
+- **Data_BootToDocumentOpBegin** - The duration of boot to appdocs begin.
 
 - **Data_ClosePreviouslyOpenedMarkers** – In some file open scenarios, closing of a previously opened document takes place before the opening of the current document. This time duration between some of the operations that take place in this case is captured in a string value that has the format \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
@@ -3031,6 +3068,8 @@ The following fields are collected:
 
 - **Data_FirstPartyProviderApp** - If a file open on Word, Excel, or PowerPoint or Office apps is invoked from another Microsoft app, then the name of that provider app is captured here.
 
+- **Data_IdocsEndToInspaceDuration** - The duration between idocend to and inspace animation.
+
 - **Data_InclusiveMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag and duration which includes the duration of sub- function calls. 
 
 - **Data_InitializationReason** - An enumeration indicating how the file is opened, for example, UI element, triggered by another app, etc.
@@ -3045,9 +3084,15 @@ The following fields are collected:
 
 - **Data_OfficeMobileInitReason** - An enumeration indicating the entry point of file open. 
 
+- **Data_PostRenderToInspaceDuration** - The duration between post render end and the inspace animation. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+
+- **Data_PreAppActivateToDocumentOpBegin** - The duration of boot with preappactivate to appdocs begin.
+
 - **Data_RenderToInSpaceDuration** – The duration between render end and the silhouette/canvas animation.
 
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
+
+- **Data_SilhouetteDurationTillPostRender** - The duration of document end to post render.
 
 - **Data_TimeSplitMeasurements** - A string value logging the time duration spent in some function calls, in a format with function tag, start timestamp and duration. 
 
@@ -4294,6 +4339,16 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_Success** - A Boolean value to indicate whether the operation succeeded.
+
+#### Office.DocsUI.DocStage.ShowDocStage
+
+The event is triggered when Office apps on iOS are launched and successfully land on the Document Stage. The data is used to monitor the health of the application's launch and First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
+
+The following fields are collected:
+
+- **Experience** - Indicates the type of Document Stage experience where the user landed.
+
+- **IsPhone** - Indicates whether the event comes from iPhone or iPad.
 
 #### Office.DocsUI.FileOperations.DocsUIFileOpenMacRequired
 
@@ -10241,6 +10296,8 @@ The following fields are collected:
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
+
 - **Data_Type** - The type of advertisement
 
 - **Data_WindowClosed** - Duration until application window is closed
@@ -13797,6 +13854,21 @@ The following fields are collected:
 
 - **Data_ErrorMetadata** - Additional details about error
 
+#### Office.Android.EarlyTelemetry.AsyncLibLoadFailure
+
+This event is trigged when the user launches the app or opesn any Word, Excel, or PowerPoint file and faces any issues during library load. This data will be used to find the failure cases.
+
+The following fields are collected:
+
+- **Data_AdditionalInfo** - Info (app state or member variables) regarding the exception will be logged here.
+
+- **Data_ErrorCode** - class name of the exception will be logged here. 
+
+- **Data_ErrorDescription** - detail message string of the error class will be logged here. 
+
+- **Data_FailureMethod** - Function name where exception is thrown
+
+
 #### Office.Android.NullIdOnSignInWithOneAuthAndroid  
 
 This event is triggered when any exceptions happen during the boot flow when user opens the app. The data is used to determine what kind of exceptions cause the crashes.  
@@ -14065,12 +14137,15 @@ The following fields are collected:
 
 - **Data_SDXReady** - Duration to finish advertisement add-in initialization
 
+- **Data_SDXStoreType** - The source of the advertisement add-in package in usage
+
 - **Data_ShownTime** - Duration until an ad has been shown to user
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
 - **Data_Type** - The type of advertisement
 
+- **Data_WindowClosed** - Duration when application document window is closed
 
 #### Office.ClickToRun.Ads.SDX.Error
 
