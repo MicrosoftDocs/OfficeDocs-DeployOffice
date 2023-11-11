@@ -926,7 +926,7 @@ The following fields are collected:
 
 #### Office.OneNote.FirstRun.FirstRunForOrgId
 
-The critical signal used to ensure new enterprise users (AAD/OrgID) can successfully launch and run OneNote for the first time.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
+The critical signal used to ensure new enterprise users (Microsoft Entra ID/OrgID) can successfully launch and run OneNote for the first time.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
 
 - **Attempt** - The number of times that the first run experience needs to retry.
 
@@ -13808,7 +13808,7 @@ The following fields are collected:
 
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
 
-This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Microsoft 365 mobile app when user opts to buy an Microsoft 365 subscription.
+This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Microsoft 365 mobile app when user opts to buy a Microsoft 365 subscription.
 
 The following fields are collected:
 
