@@ -21,7 +21,7 @@ The new Outlook for Windows client installer is now available either from the Mi
 The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to migrate settings from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
 
 > [!NOTE]
-> Users need to sign back in to accounts that can’t automatically authenticate via [Windows Single Sign-On](/DeployOffice/outlook/get-started/supported-account-types.md).
+> Users need to sign back in to accounts that can’t automatically authenticate via [Windows Single Sign-On](/DeployOffice/outlook/get-started/supported-account-types).
 
 The toggle experience is the recommended way for users to get the new Outlook for Windows. It’s currently an end-user opt-in mechanism, although admins can control the availability of the toggle in classic Outlook for Windows. In the future, we’re making it easier for organizations to smoothly transition end-users to the new Outlook for Windows. Once switched, users can return to the classic Outlook for Windows.
 
@@ -116,6 +116,6 @@ Users can toggle to the new Outlook from the Mail and Calendar applications that
 
 For more information, see [Outlook for Windows: The Future of Mail, Calendar and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
 
-Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps#-universaloutlookenabled).
+Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox#-universaloutlookenabled).
 
 Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management).
