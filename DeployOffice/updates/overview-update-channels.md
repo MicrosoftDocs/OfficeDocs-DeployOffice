@@ -15,9 +15,9 @@ ms.date: 04/27/2023
 
 # Overview of update channels for Microsoft 365 Apps
 
-One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for Office apps, such as Excel and Word, on a regular basis. You can control how often the users in your organization get these new features by specifying the update channel.
+One of the benefits of Microsoft 365 Apps is that Microsoft provides new (and updated) features for Office apps, such as Excel and Word, regularly. You can control how often the users in your organization get these new features by specifying the update channel.
 
-In addition to new features, update channels provide, as needed, security and non-security updates on a regular basis, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
+In addition to new features, update channels provide, as needed, security and non-security updates regularly, every month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
 
 > [!NOTE]
 > If you prefer watching over reading, check out the [Update Channels Explained video](https://youtu.be/eNn4PDkmo7s). It covers all available update channels, plus  some tips & tricks for admins.
@@ -28,9 +28,9 @@ There are three primary update channels:
 - [Monthly Enterprise Channel](#monthly-enterprise-channel-overview)
 - [Semi-Annual Enterprise Channel](#semi-annual-enterprise-channel-overview)
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-But, we realize that there are multiple factors that will determine which update channel you select for your deployment of Microsoft 365 Apps. For example, network bandwidth utilization, end-user training and support, line-of-business applications, and other organizational requirements.
+But, we realize that there are multiple factors that determine which update channel you select for your deployment of Microsoft 365 Apps. For example, network bandwidth utilization, end-user training and support, line-of-business applications, and other organizational requirements.
 
 ## Comparison of the update channels for Microsoft 365 Apps
 
@@ -41,7 +41,7 @@ The following table provides a comparison of Current Channel, Monthly Enterprise
 |---------|---------|---------|---------|
 |*Recommended use*     | Provide your users with new Office features as soon as they're ready, but on no set schedule.|Provide your users with new Office features only once a month and on a predictable schedule.|For select devices in your organization, where extensive testing is needed before rolling out new Office features. For example, to comply with regulatory, governmental, or other organizational requirements.|
 |*Release frequency*<sup>1</sup>|At least once a month (likely more often), but on no set schedule| Once a month, on the second Tuesday of the month  |Once a month, on the second Tuesday of the month|
-|*Feature updates*<sup>2</sup>     |As soon as they’re ready (usually once a month), but on no set schedule|Once a month, on the second Tuesday of the month|Twice a year (in January and July), on the second Tuesday of the month|
+|*Feature updates*<sup>2</sup>     |As soon as they’re ready (once a month), but on no set schedule|Once a month, on the second Tuesday of the month|Twice a year (in January and July), on the second Tuesday of the month|
 |*Security updates*<sup>3</sup><br></br>*(if needed)*|Once a month, on the second Tuesday of the month|Once a month, on the second Tuesday of the month |Once a month, on the second Tuesday of the month|
 |*Non-security updates*<sup>2</sup><br></br>*(if needed)*|Usually at least once a month (possibly more often), but no set schedule|Once a month, on the second Tuesday of the month|Once a month, on the second Tuesday of the month|
 |*Support duration for a given version*<sup>4</sup> |Until the next version is released with new features, which is usually about one month |Two months|Fourteen months|
@@ -75,9 +75,9 @@ To become familiar with the new features coming in the next feature release of C
 
 There isn’t a set release schedule for Current Channel (Preview). In general, a new version of Current Channel (Preview) with new features is released at least a week or more before that new version is released to Current Channel. There might be several releases of Current Channel (Preview), with non-security updates, before that version is released to Current Channel.
 
-You should deploy Current Channel (Preview) to a small, representative sample of users in your organization. This can help you identify any possible issues for your organization before those new features are released more broadly to your users that have Current Channel.
+You should deploy Current Channel (Preview) to a small, representative sample of users in your organization. This small sample can help you identify any possible issues for your organization before those new features are released more broadly to your users that have Current Channel.
 
-We also encourage you to use Current Channel (Preview) so that you can identify any possible issues that you want us to fix before that version is released to Current Channel. This can help reduce the number of non-security updates that are needed for Current Channel.
+We also encourage you to use Current Channel (Preview) so that you can identify any possible issues that you want us to fix before that version is released to Current Channel. This approach can help reduce the number of non-security updates that are needed for Current Channel.
 
 ### Security updates for Current Channel
 If needed, security updates for Current Channel are released on the second Tuesday of the month. 
@@ -90,14 +90,14 @@ For a list of security updates included in a given release of Current Channel, s
 ### Non-security updates for Current Channel
 If needed, non-security updates are provided for Current Channel. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
 
-There's no set schedule for when non-security updates are released for Current Channel. Non-security updates are usually included with the following releases:
+There's no set schedule for when non-security updates are released for Current Channel. Non-security updates are included with the following releases:
 
 - When a new version of Current Channel is released with new features
 - When security updates are released on the second Tuesday of the month
 
 Non-security updates can be released at other times. For example, to fix an issue with a new feature that was recently released. In general, Current Channel can get two or three updates per month that contain only non-security updates.
 
-We also encourage you to use Current Channel (Preview) so that you can identify any possible issues that you want us to fix before that version is released to Current Channel. This can help reduce the number of non-security updates that are needed for Current Channel.
+We also encourage you to use Current Channel (Preview) so that you can identify any possible issues that you want us to fix before that version is released to Current Channel. This approach can help reduce the number of non-security updates that are needed for Current Channel.
 
 Non-security updates are cumulative. The most current release of Current Channel includes the non-security updates from previous releases of Current Channel. 
 
@@ -117,7 +117,7 @@ Updates to Monthly Enterprise Channel are released on the second Tuesday of the 
 ### Feature updates for Monthly Enterprise Channel
 New, or updated, features are released in Monthly Enterprise Channel on the second Tuesday of the month. These new features are features that are already available to all users in Current Channel. Separate downloads of just feature updates for Monthly Enterprise Channel aren’t available.
 
-Features that are currently in Current Channel need to meet certain release criteria before they're included in a feature update for Monthly Enterprise Channel. Because of this, some features that are in Current Channel aren’t included right away in the next available feature update for Monthly Enterprise Channel.
+Features that are currently in Current Channel need to meet certain release criteria before they're included in a feature update for Monthly Enterprise Channel. Because of these criteria, some features that are in Current Channel aren’t included right away in the next available feature update for Monthly Enterprise Channel.
 
 For a list of feature updates included in a given release of Monthly Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
@@ -125,9 +125,9 @@ For a list of feature updates included in a given release of Monthly Enterprise 
 
 There's no dedicated preview channel for Monthly Enterprise Channel, like there is for Current Channel and for Semi-Annual Enterprise Channel.
 
-To become familiar with the new features in a monthly feature release of Monthly Enterprise Channel, you can have a representative sample of users in your organization download and start using the new version as soon as it becomes available on the Office CDN. Then, let the new version roll out to the remainder of your organization over the course of several days as Office automatically becomes aware that a new version is available on the Office CDN.
+Introduce the latest Monthly Enterprise Channel features within your organization by having a select group of users download and use the new version as soon as it's available on the Office CDN. Following this initial release, gradually deploy the new version across your entire organization. Over the span of several days, Office automatically recognizes and accesses the latest version from the Office CDN.
 
-If you're thinking of using Current Channel as your preview channel, be aware that new features you see in Current Channel aren’t necessarily the same new features you’ll see in the next monthly feature update for Monthly Enterprise Channel. That’s because Current Channel can contain new features that are only available to a subset of users as the feature is gradually rolled out. Monthly Enterprise Channel will only contain features that have been completely rolled out in Current Channel. Therefore, a new feature that's available in Current Channel might not be available in Monthly Enterprise Channel for several months, because the feature is still being rolled out in Current Channel.
+If you plan to use Current Channel for previews, its new features could differ from the features in the next Monthly Enterprise Channel update. Current Channel features aren't always the same features in the upcoming update for Monthly Enterprise Channel. The difference is because Current Channel might have new features. These features are first available to a few users and are rolled out gradually. Monthly Enterprise Channel only contains features that are rolled out in Current Channel. Therefore, a new feature that's available in Current Channel might not be available in Monthly Enterprise Channel for several months, because the feature is still being rolled out in Current Channel.
 
 ### Security updates for Monthly Enterprise Channel
 If needed, security updates for Monthly Enterprise Channel are released on the second Tuesday of the month.
@@ -141,13 +141,17 @@ For a list of security updates included in a given release of Monthly Enterprise
 ### Non-security updates for Monthly Enterprise Channel
 If needed, non-security updates for Monthly Enterprise Channel are provided on the second Tuesday of the month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office. 
 
-If there's a critical issue that needs to be fixed sooner, such as one related to data loss, we'll provide an updated release with the fix, instead of waiting for the next scheduled monthly update.
+When a critical issue, like one related to data loss, requires immediate resolution, we provide an updated release with the fix before the next scheduled monthly update.
 
 Non-security updates are cumulative. The most current release of Monthly Enterprise Channel includes the non-security updates from previous releases of Monthly Enterprise Channel. 
 
 Separate downloads of just non-security updates for Monthly Enterprise Channel aren’t available. Also, new non-security updates aren’t provided for versions of Monthly Enterprise Channel that are no longer supported.
 
 For a list of non-security updates included in a given release of Monthly Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). They're listed as “Resolved issues.”
+
+### Copilot updates for Monthly Enterprise Channel
+To ensure a seamless experience with Copilot's rapidly evolving AI capabilities, updates could be introduced to Monthly Enterprise Channel ahead of the usual timeline. This proactive approach is all about enhancing the quality of Copilot features within Microsoft 365. For consistent quality, these updates are deployed only after a full rollout in Current Channel.
+Updates deployed to Monthly Enterprise Channel in this manner are documented like any other update in the release notes. 
 
 ### Support duration for Monthly Enterprise Channel
 Any given version of Monthly Enterprise Channel is supported for two months. For example, the version of Monthly Enterprise Channel that is released on the second Tuesday of August is supported until the second Tuesday of October. 
@@ -163,18 +167,18 @@ Updates to Semi-Annual Enterprise Channel are released on the second Tuesday of 
 ### Feature updates for Semi-Annual Enterprise Channel
 New, or updated, features are released in Semi-Annual Enterprise Channel twice a year, on the second Tuesday in January and July. New features aren’t added to Semi-Annual Enterprise Channel at any other time. Separate downloads of just feature updates for Semi-Annual Enterprise Channel aren’t available.
 
-These new features are features that are already available to all users in Monthly Enterprise Channel. Features that are currently in Monthly Enterprise Channel need to meet certain release criteria before they're included in a feature update for Semi-Annual Enterprise Channel. Because of this, some features that are in Monthly Enterprise Channel aren’t included right away in the next available feature update for Semi-Annual Enterprise Channel.
+These new features are available to all users in Monthly Enterprise Channel. Features that are currently in Monthly Enterprise Channel need to meet certain release criteria before they're included in a feature update for Semi-Annual Enterprise Channel. Because of this criteria, some features that are in Monthly Enterprise Channel aren’t included right away in the next available feature update for Semi-Annual Enterprise Channel.
 
 For a list of feature updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases).
 
 #### Preview upcoming new features of Semi-Annual Enterprise Channel
 To become familiar with the new features coming in the next feature release of Semi-Annual Enterprise Channel, we recommend that you use Semi-Annual Enterprise Channel (Preview).
 
-Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September. This provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
+Semi-Annual Enterprise Channel (Preview) is released with new features twice a year, on the second Tuesday in March and September. This schedule provides you with four months before those same new features are released in Semi-Annual Enterprise Channel. Semi-Annual Enterprise Channel (Preview) also receives, if needed, security and non-security updates every month, on the second Tuesday of the month.
 
-You should deploy Semi-Annual Enterprise Channel (Preview) to a small, representative sample of users in your organization. This can help you identify any possible issues for your organization before those new features are released more broadly to your users that have Semi-Annual Enterprise Channel.
+You should deploy Semi-Annual Enterprise Channel (Preview) to a small, representative sample of users in your organization. This approach can help you identify any possible issues for your organization before the new features are released more broadly to your users on Semi-Annual Enterprise Channel.
 
-We also encourage you to use Semi-Annual Enterprise Channel (Preview) so that you can identify any possible issues that you want us to fix in the four months before that version is released to Semi-Annual Enterprise Channel. Once a version is released to Semi-Annual Enterprise Channel, the approval process for non-security updates becomes even more rigorous.
+We recommend using Semi-Annual Enterprise Channel (Preview). This approach allows you to identify and report any potential issues. We can then address these concerns in the four months prior to the version's release on Semi-Annual Enterprise Channel. Once a version is released to Semi-Annual Enterprise Channel, the approval process for non-security updates becomes even more rigorous.
 
 ### Security updates for Semi-Annual Enterprise Channel
 If needed, security updates for Semi-Annual Enterprise Channel are released on the second Tuesday of the month. 
@@ -188,9 +192,9 @@ For a list of security updates included in a given release of Semi-Annual Enterp
 ### Non-security updates for Semi-Annual Enterprise Channel
 If needed, non-security updates for Semi-Annual Enterprise Channel are provided on the second Tuesday of the month. Non-security updates provide fixes for known issues and provide stability or performance improvements for Office.
 
-If there's a critical issue that needs to be fixed sooner, such as one related to data loss, we'll provide an updated release with the fix, instead of waiting for the next scheduled monthly update.
+When a critical issue, like one related to data loss, requires immediate resolution, we provide an updated release with the fix before the next scheduled monthly update.
 
-We tend to provide fewer non-security updates for Semi-Annual Enterprise Channel than the other update channels. In part, that’s because most issues are identified, thanks to customer feedback, and fixed when the features are rolled out earlier in the other update channels, such as Current Channel and Monthly Enterprise Channel. Also, many customers have asked us to provide an update channel that doesn’t change often, because changes could require them to do another round of compliance testing. So, before we approve the release of any non-security updates to Semi-Annual Enterprise Channel, we carefully assess the impact of introducing the change to the update channel. Critical issues that result in data loss, or significantly affect a large number of customers using Semi-Annual Enterprise Channel, are likely to be approved. We also encourage you to use Semi-Annual Enterprise Channel (Preview), so that you can identify any possible issues you want us to fix in the four months before that version is released to Semi-Annual Enterprise Channel.
+We tend to provide fewer non-security updates for Semi-Annual Enterprise Channel than the other update channels. Most issues in  Semi-Annual Enterprise Channel are identified and resolved earlier in other update channels, like Current Channel and Monthly Enterprise Channel, thanks to customer feedback. Also, many customers are asking us to provide an update channel that doesn’t change often, because changes could require them to do another round of compliance testing. So, before we approve the release of any non-security updates to Semi-Annual Enterprise Channel, we carefully assess the effect of introducing the change to the update channel. Critical issues that result in data loss, or significantly affect a large number of customers using Semi-Annual Enterprise Channel, are likely to be approved. We recommend using Semi-Annual Enterprise Channel (Preview). This approach allows you to identify and report any potential issues. We can then address these concerns in the four months prior to the version's release on Semi-Annual Enterprise Channel.
 
 Non-security updates are cumulative. The most current release of Semi-Annual Enterprise Channel includes the non-security updates from previous releases of Semi-Annual Enterprise Channel.
 
@@ -199,11 +203,11 @@ Separate downloads of just non-security updates for Semi-Annual Enterprise Chann
 For a list of non-security updates included in a given release of Semi-Annual Enterprise Channel, see [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases). They're listed as “Resolved issues.”
 
 ### Support duration for Semi-Annual Enterprise Channel
-Any given version of Semi-Annual Enterprise Channel is supported for 14 months. This means that the new version of Semi-Annual Enterprise Channel that is released in January is supported until March of the following year, and the July release is supported until September of the following year.
+Any given version of Semi-Annual Enterprise Channel is supported for 14 months. The new Semi-Annual Enterprise Channel version released in January receives support until March of the next year. Similarly, the version released in July is supported until September of the following year.
 
 At any given time, there are always two versions of Semi-Annual Enterprise Channel that are supported. To see which versions of Semi-Annual Enterprise Channel are currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
-The longer support duration for Semi-Annual Enterprise Channel is intended to provide more time and flexibility for those organizations that have devices that require extensive testing before rolling out new Office features. For example, in those cases where organizations have to comply with specific regulatory, governmental, or other organizational requirements. The longer support duration gives these organizations the ability to deploy new features only once a year if needed. 
+Semi-Annual Enterprise Channel offers extended support to give organizations more time and flexibility. The extended support is especially helpful for thoroughly testing devices before implementing new Office features. For example, in those cases where organizations have to comply with specific regulatory, governmental, or other organizational requirements. The longer support duration gives these organizations the ability to deploy new features only once a year if needed. 
 
 ## How to configure and manage update channels
 
@@ -211,13 +215,13 @@ Update channels are device-specific and apply only to installations of Office on
 
 Also, you can only configure one update channel for a device. For example, if you’re installing Office, Project, and Visio on the same device, they all must use the same update channel. You can’t have a mix of update channels on the same device.
 
-Not all devices in your organization have to be configured with the same update channel. For example, IT staff and application developers might be on Current Channel (Preview), so that they can try out upcoming new Office features, while the rest of the organization is on Monthly Enterprise Channel. If you decide to implement different update channels within your organization, keep in mind that groups of users might have access to different features depending on which update channel they’re on, which might make collaborating between groups of users more difficult.
+Not all devices in your organization have to be configured with the same update channel. For example, IT staff and application developers might be on Current Channel (Preview), so that they can try out upcoming new Office features, while the rest of the organization is on Monthly Enterprise Channel. When you implement various update channels in your organization, consider that different user groups might have access to distinct features based on their update channel. This variation in features can make collaboration between groups more challenging.
 
 ### Default update channel
 
-Each subscription product is configured with a default update channel. If you don’t specify the update channel when you install the product by itself on a device, the product will be configured to use the default update channel.
+Each subscription product is configured with a default update channel. If you don’t specify the update channel when you install the product by itself on a device, the product is configured to use the default update channel.
 
-Current Channel is the default update channel for Microsoft 365 Apps for enterprise, Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps.
+The default update channel for Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business is Current Channel. This channel is also the default for the subscription versions of the Project and Visio desktop apps.
 
 ### Configure the update channel
 
@@ -231,21 +235,21 @@ You can [download](https://www.microsoft.com/download/details.aspx?id=49030) the
 If you allow your users to install Office for themselves from the portal, you can specify which update channel they install. To do that, sign in to the Microsoft 365 admin center with your admin account, go to **Show all** > **Settings** > **Org settings** > **Services** > **Microsoft 365 installation options**, and then choose the appropriate update channel for your users. This setting applies to all users in your tenant and only applies to users that install Office for themselves from the portal.
 
 ### Manage the update channel
-After Office is installed, you can change the update channel for a device. For more information on how to do that, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md). Keep in mind that if you change the update channel for the device, the features that the user has access to will change. For example, if you move the device from Current Channel to Semi-Annual Enterprise Channel, the user might lose access to features that they’ve been using, because those features aren’t available yet in Semi-Annual Enterprise Channel.
+After Office is installed, you can change the update channel for a device. For more information on how to do that, see [Change the Microsoft 365 Apps update channel for devices in your organization](change-update-channels.md). Keep in mind that if you change the update channel for the device, the features that the user has access to change. For example, if you move the device from Current Channel to Semi-Annual Enterprise Channel, the user might lose access to features that they’ve been using, because those features aren’t available yet in Semi-Annual Enterprise Channel.
 
 ## Additional information about update channels for Microsoft 365 Apps
 
 ### Other products
 - These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 3 or Visio Plan 2.
-- OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app update process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
-- If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](../ltsc2021/update.md#update-channel-for-office-ltsc-2021).
+- OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app `update` process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
+- If you're deploying volume licensed versions of Office such as Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, you need to use a different update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](../ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 - If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](../office2019/update.md#update-channel-for-office-2019).
-- If you have a home subscription of Office, such as Microsoft 365 Family or Microsoft 365 Personal, the only update channels available to you are Current Channel and the update channels available through the [Microsoft 365 Insider program](https://insider.microsoft365.com/handbook#Office-Insider-levels).
+- If you have a home subscription to Office, like Microsoft 365 Family or Microsoft 365 Personal, you have access to specific update channels. These update channels include Current Channel and channels provided through the [Microsoft 365 Insider program](https://insider.microsoft365.com/handbook#Office-Insider-levels).
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
-- If you configure devices to get updates directly from the Office CDN, and those devices are running Windows 11 or Windows 10, you can take advantage of [Delivery Optimization](../delivery-optimization.md) to help reduce network bandwidth utilization. 
-- When we make a new release available on the Office CDN, we gradually advertise the availability of this release over a period of several days to devices worldwide that have Office installed. This way not all devices in your organization will try to access the Office CDN at the same time to download the new release, which could possibly cause network bandwidth utilization issues.
+- If you're configuring devices using Windows 11 or Windows 10 to get updates directly from the Office CDN, take advantage of [Delivery Optimization](../delivery-optimization.md) to help reduce network bandwidth utilization. 
+- When we make a new release available on the Office CDN, we gradually advertise the availability of this release over a period of several days to devices worldwide that have Office installed. This way not all devices in your organization try to access the Office CDN at the same time to download the new release, which could possibly cause network bandwidth utilization issues.
 - For examples of approximate update sizes when updating from a recent release to the most current release of an update channel, see [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates).
 - If you use Microsoft Configuration Manager, you can manage updates for these update channels by using the Software Update management workflow. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).
 
@@ -254,8 +258,8 @@ After Office is installed, you can change the update channel for a device. For m
 - When an update channel release contains feature updates, the version number is updated. For example, from Version 2004 to Version 2005. If a release contains only new security updates or new non-security updates, then only the build number gets updated and the version number remains the same.
 
 ### Support duration for other update channels
-- Any given version of Current Channel (Preview) is supported only until the next version of Current Channel (Preview) is released, which is usually every month.  For example, Version 2004 is supported until Version 2005 is released.
-- Any given version of Semi-Annual Enterprise Channel (Preview) is supported for only six months. This coincides with how often Semi-Annual Enterprise Channel (Preview) is updated with new features. For example, the version of Semi-Annual Enterprise Channel (Preview) that is released in March with new features is supported until September, which is the next time new features are released in Semi-Annual Enterprise Channel (Preview). The September release is supported until the following March.  To see what version of Semi-Annual Enterprise Channel (Preview) is currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
+- Each version of Current Channel (Preview) remains supported only until the release of the next version, which typically occurs every month. For example, Version 2004 is supported until Version 2005 is released.
+- Any given version of Semi-Annual Enterprise Channel (Preview) is supported for only six months. This support cadence coincides with how often Semi-Annual Enterprise Channel (Preview) is updated with new features. For example, Semi-Annual Enterprise Channel (Preview) releases a new version with features in March. This version remains supported until September when the next set of features is released. The September release is supported until the following March.  To see what version of Semi-Annual Enterprise Channel (Preview) is currently supported, refer to the table at the top of [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date). 
 
 ### Microsoft 365 Insider program
 - The Microsoft 365 Insider program gives you early access to Microsoft 365 Apps features through these update channels: Beta Channel and Current Channel (Preview). For more information, see the [Microsoft 365 Insider Program for Business](../insider/index.yml).
