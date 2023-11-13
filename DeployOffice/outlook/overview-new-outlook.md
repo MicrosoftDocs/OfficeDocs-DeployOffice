@@ -28,7 +28,7 @@ The new Outlook for Windows, built upon modern service architecture, is inspired
 
 The new Outlook for Windows is delivered as an MSIX package. Users acquire the package through the Outlook entry in the Microsoft Store app. For custom deployment by system administrators, the package is made available for manual or scripted installation. For more information, see [What is MSIX?](/windows/msix/overview)
 
-In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/deployoffice/outlook/get-started/depolyment-new-outlook).
+In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/deployoffice/outlook/get-started/deployment-new-outlook.md).
 
 ## Native host
 
