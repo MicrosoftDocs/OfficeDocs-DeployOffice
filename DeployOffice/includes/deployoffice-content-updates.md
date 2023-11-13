@@ -2,56 +2,19 @@
 
 
 
-## Week of October 02, 2023
+## Week of November 06, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/6/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-
-
-## Week of September 25, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/25/2023 | [Deploy Microsoft Teams with Microsoft 365 Apps](/DeployOffice/teams-install) | modified |
-| 9/25/2023 | [End-user update notifications for Microsoft 365 Apps](/DeployOffice/updates/end-user-update-notifications-microsoft-365-apps) | modified |
-| 9/26/2023 | Data, Privacy, and Security for Microsoft 365 Copilot | removed |
-| 9/29/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
-| 9/29/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
-
-
-## Week of September 18, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/20/2023 | [Remove or reset file passwords in Office 2016](/DeployOffice/office2016/security/remove-reset-file-passwords) | modified |
-| 9/20/2023 | [Office Customization Tool (OCT) 2016 Help Set feature installation states](/DeployOffice/oct/oct-2016-help-set-feature-installation-states) | modified |
-| 9/20/2023 | [Overview of privacy controls for Microsoft 365 Apps for enterprise](/DeployOffice/privacy/overview-privacy-controls) | modified |
-
-
-## Week of September 11, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/11/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot) | modified |
-| 9/12/2023 | [Deployment guide for Project](/DeployOffice/deployment-guide-for-project) | modified |
-| 9/12/2023 | [Deployment guide for Visio](/DeployOffice/deployment-guide-for-visio) | modified |
-| 9/13/2023 | [Set preferences for Outlook for Mac](/DeployOffice/mac/preferences-outlook) | modified |
-| 9/15/2023 | [Overview of the security vulnerabilities feature in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-security-vulnerabilities) | added |
-| 9/15/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 9/15/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
-
-
-## Week of September 04, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/5/2023 | [Copilot - Move a subset of devices to Current Channel with Servicing Profile](/DeployOffice/updates/move-devices-channel-servicingprofiles) | modified |
-| 9/7/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | added |
-| 9/8/2023 | [Overview of deployment validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
-| 9/8/2023 | [Sign up for cloud update](/DeployOffice/other/signup-for-cloud-update) | modified |
+| 11/7/2023 | [Overview of cloud update in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/cloud-update) | modified |
+| 11/7/2023 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
+| 11/9/2023 | [Choose how to deliver updates](/DeployOffice/updates/choose-how-to-deliver-updates) | renamed |
+| 11/10/2023 | [Deployment overview for the new Outlook for Windows](/DeployOffice/outlook/get-started/deployment-new-outlook) | added |
+| 11/10/2023 | [Migrate from COM to web add-ins](/DeployOffice/outlook/get-started/migrate-com-to-web-addins) | added |
+| 11/10/2023 | [Accounts in the new Outlook for Windows](/DeployOffice/outlook/get-started/supported-account-types) | added |
+| 11/10/2023 | [Policy Management](/DeployOffice/outlook/manage/policy-management) | added |
+| 11/10/2023 | [Overview of the new Outlook for Windows](/DeployOffice/outlook/overview-new-outlook) | added |
+| 11/10/2023 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | modified |
+| 11/10/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 11/10/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
