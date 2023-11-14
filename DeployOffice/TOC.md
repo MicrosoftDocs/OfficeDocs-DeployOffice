@@ -24,6 +24,7 @@
 ### [Choose how to deliver updates](updates/choose-how-to-deliver-updates.md)
 ### [Manage updates with Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 ### [Change the update channel](updates/change-update-channels.md)
+### [Change update channel for Copilot](updates/change-channel-for-copilot.md)
 ### [Delivery Optimization](delivery-optimization.md)
 ### [Update history](/officeupdates/update-history-microsoft365-apps-by-date)
 ### [Release notes](/officeupdates/release-notes-microsoft365-apps)
