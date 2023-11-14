@@ -25,9 +25,9 @@ To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](verview-u
 Based on your preferred managament solution, choose from the options below for instructions. Microsoft recommend to leverage [Cloud Update](../admincenter/cloud-update.md), as it provides the most streamlined and easiest experience.
 
 - [Cloud Update](#cloud-update)
-- Microsoft Intune
+- [Microsoft Intune](#microsoft-intune)
+- [Microsoft AutoPatch](#microsoft-autopatch)
 - Microsoft Configuration Manager
-- Microsoft AutoPatch
 - Group Policies
 - Servicing Profiles (deprecated)
 
@@ -148,7 +148,28 @@ Monitor the progress of your configuration profile assignment using the followin
 
 The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
 
+## Microsoft AutoPatch
+This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule). If you want to use Copilot in Microsoft 365 Apps on the Monthly Enterprise Channel, there is no action required. Only if you want to switch installations to Current Channel, you have to follow the steps below.
 
+To move a subset of devices to Current Channel, you can choose from two options:
+1. Remove the devices for Copilot from Windows Autopatch and configure updates using Microsoft Intune.  
+   1. **Benefits**: This option limits the policy changes to the subset of devices you're using for Copilot EAP, enabling you to target separate policy settings for Microsoft 365 Apps. 
+   1. **Considerations**: This option removes update management for Windows Updates, requiring you to setup and manage standalone Windows Update for Business policies. 
+
+1. Disable update management for Microsoft 365 Apps in Windows Autopatch. 
+    1. **Benefits**: This option keeps devices registered with Windows Autopatch for Windows Updates and reporting.
+    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot EAP. 
+
+### Option 1: Remove devices from Windows Autopatch for Copilot 
+To avoid disruption across your devices, plan your policy changes and timing accordingly.
+1. Create and assign a new Intune configuration profile for Microsoft 365 Apps, as described in the section on [Microsoft Intune](#microsoft-intune).
+1. Create and assign a new Windows Update for Business policy, as described in [Configure Windows Update for Business](/windows/deployment/update/waas-configure-wufb).
+1. Remove your Copilot devices from Windows Autopatch, as described in [Exclude a device from Windows Autopatch](/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device). 
+
+### Option 2: Disable updates for Microsoft 365 Apps from Windows Autopatch 
+To avoid disruption across your devices, plan your policy changes and timing accordingly.
+1. Create and assign a new Intune configuration profile for Microsoft 365 Apps, as described in the section on [Microsoft Intune](#microsoft-intune).
+1. Disable updates for Microsoft 365 Apps, as described in [Allow or block Microsoft 365 Apps updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#allow-or-block-microsoft-365-app-updates). 
 
 
 
