@@ -36,7 +36,7 @@ As highlighted earlier, new Outlook is a native application, based on WebView2. 
 
 Windows integration is managed by a small component that updates in the background. Updates are delivered approximately every week from the Office Content Delivery Network (CDN). In the past, such a fast update cadence would be challenging for large deployments due to the validation steps most enterprises undertake. This update cadence is less of a concern for new Outlook because almost none of the feature implementations are in this Windows integration component. It’s serves as a thin application only providing access to local machine resources.
 
-Consistent with many service-based architectures, the client and service remain close in version. If updates can’t be applied for an extended period, users could see an error message that new Outlook is not compatible with the current service. If this error occurs, users can close and reopen the application to apply the latest update.
+Consistent with many service-based architectures, the client and service remain close in version. If updates can’t be applied for an extended period, users could see an error message that new Outlook isn't compatible with the current service. If this error occurs, users can close and reopen the application to apply the latest update.
 
 Organizations used to distribute updates for classic Outlook from a custom local network location, but this practice is now obsolete and unnecessary due to the reduced package size.
 
