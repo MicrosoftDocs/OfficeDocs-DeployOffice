@@ -22,7 +22,7 @@ New Outlook is currently offered as a preview for commercial accounts and is gen
 
 ## Architecture
 
-The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined native host and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/deployoffice/webview2-install).
+The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/deployoffice/webview2-install).
 
 ## Packaging
 
@@ -30,13 +30,13 @@ The new Outlook for Windows is delivered as an MSIX package. Users acquire the p
 
 In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/DeployOffice/outlook/get-started/deployment-new-outlook).
 
-## Native host
+## Windows integration
 
-As highlighted earlier, new Outlook is a native application, based on WebView2. The experience is provided by Outlook on the web but is given access to local machine resources through the native host. With this approach, features and scenarios previously inaccessible to web apps can be implemented in the new Outlook for Windows. A few examples are rich notifications and more complete access to files and devices.
+As highlighted earlier, new Outlook is a native application, based on WebView2. The experience is provided by Outlook on the web but is given access to local machine resources through the Native Windows Integration Component. With this approach, features and scenarios previously inaccessible to web apps can be implemented in the new Outlook for Windows. A few examples are rich notifications and more complete access to files and local resources.
 
-The native components of new Outlook are small in footprint and automatically update each time the app is rebooted. Updates are delivered approximately every week from the Office Content Delivery Network (CDN). In the past, such a fast update cadence would be challenging for large deployments due to the validation steps most enterprises undertake. This update cadence is less of a concern for new Outlook because almost none of the feature implementations are in the native code. Again, the native host is a thin application only providing access to local machine resources.
+Windows integration is managed by a small component that updates in the background. Updates are delivered approximately every week from the Office Content Delivery Network (CDN). In the past, such a fast update cadence would be challenging for large deployments due to the validation steps most enterprises undertake. This update cadence is less of a concern for new Outlook because almost none of the feature implementations are in this Windows integration component. It’s serves as a thin application only providing access to local machine resources.
 
-Consistent with many service-based architectures, the client and service remain close in version. If updates can’t be applied for an extended period of time, users could see an error message that the native host isn't compatible with the current service. If this error occurs, users can close and reopen the application to apply the latest update.
+Consistent with many service-based architectures, the client and service remain close in version. If updates can’t be applied for an extended period, users could see an error message that new Outlook is not compatible with the current service. If this error occurs, users can close and reopen the application to apply the latest update.
 
 Organizations used to distribute updates for classic Outlook from a custom local network location, but this practice is now obsolete and unnecessary due to the reduced package size.
 
