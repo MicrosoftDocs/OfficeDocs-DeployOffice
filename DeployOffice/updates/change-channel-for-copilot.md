@@ -20,9 +20,9 @@ ms.date: 11/14/2023
 To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](verview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
 
 > [!NOTE]
-> Assigning the Copilot licenses to users is a required step which is not covered in this documentation. See [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566) for more details.
+> Assigning the Copilot licenses to users is a required step which is not covered in this documentation. For more information, see [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566).
 
-Based on your preferred managament solution, choose from the options below for instructions. Microsoft recommend to leverage [Cloud Update](../admincenter/cloud-update.md), as it provides the most streamlined and easiest experience.
+Based on your preferred management solution, choose from the following options. Microsoft recommends [Cloud Update](../admincenter/cloud-update.md), as it provides the most streamlined and easiest experience.
 
 - [Cloud Update](#cloud-update)
 - [Microsoft Intune](#microsoft-intune)
@@ -41,16 +41,16 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
 
-We recommend using Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
+We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
-### Prepare an Entra ID security group
-The Channel Change feature can target individual devices or whole Entra ID groups. Groups can contain user or device objects, or a combination of both.
+### Prepare an Microsoft Entra ID security group
+The Channel Change feature can target individual devices or whole Microsoft Entra ID groups. Groups can contain user or device objects, or a combination of both.
 
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for the intended Copilot users or devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
-2.	Add the user or device objects to the security group. If you are using device object, ensure that the devices are (hybrid) Entra ID-joined, otherwise those can't be targeted. There is no such requirement when using user objects.
+2.	Add the user or device objects to the security group. If you're using device object, ensure that the devices are (hybrid) Microsoft Entra ID-joined, otherwise those can't be targeted. There's no such requirement when using user objects.
 
 ### Enable Cloud Update
-With the enablement of Cloud Updates, the service will automatically manage all Microsoft 365 Apps installations on Monthly Enterprise Channel. We recommend to also enable the profile for Current Channel to keep those devices updated as well.
+With the enablement of Cloud Updates, the service automatically manages all Microsoft 365 Apps installations on Monthly Enterprise Channel. To keep all devices updated, we recommend enabling the profile for Current Channel as well.
 
 If you need to exclude devices from being serviced, use the **Exclude devices** feature under **Cloud Updates** > **Overview** > **Tenant Settings**.
 
@@ -81,7 +81,7 @@ Otherwise follow these instructions:
 1. While staying in the Microsoft 365 Apps admin center, navigate to **Inventory**.
 1. Select **Show all devices** and select the **Switch device update channel** button on the top.
 1. Select which devices should be moved and the targeted update channel.
-    - You can enter device names or Entra ID groups, or a mix of both.
+    - You can enter device names or Microsoft Entra ID groups, or a mix of both.
     - For Entry ID groups, such groups can be nested up to three levels down and contain a mix of device and user objects.
 1. Select **Move devices** to initiate the channel change.
 
@@ -89,7 +89,7 @@ Otherwise follow these instructions:
 > It might take up to 24 hours for the channel change to be completed by the device, assuming devices are online and can connect to the service.
 
 > [!NOTE]
-> A channel change is a point-in-time activity. If you are using Entra ID groups and add devices or users to the group after initiating a channel change, those devices will not be moved automatically. You will have to initiate the channel change again. There is no need to remove already switched devices from the group.
+> A channel change is a point-in-time activity. If you are using Microsoft Entra ID groups and add devices or users to the group after initiating a channel change, those devices will not be moved automatically. You will have to initiate the channel change again. There's no need to remove already switched devices from the group.
 
 ### Validation
 You can validate the implementation by monitoring the following aspects:
@@ -105,7 +105,7 @@ In this section, we cover the recommended policy settings for managing the updat
 
 If you want to move some devices to Current Channel and others to Monthly Enterprise Channel, you need to repeat the steps for each update channel.
 
-### Create an Entra ID security group
+### Create a Microsoft Entra ID security group
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for targeted devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
 1.	Add the computer objects to this security group that need to be moved and have update management applied to. 
 
@@ -149,7 +149,7 @@ Monitor the progress of your configuration profile assignment using the followin
 The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
 ## Microsoft AutoPatch
-This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule). If you want to use Copilot in Microsoft 365 Apps on the Monthly Enterprise Channel, there is no action required. Only if you want to switch installations to Current Channel, you have to follow the steps below.
+This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule). If you want to use Copilot in Microsoft 365 Apps on the Monthly Enterprise Channel, there's no action required. Only if you want to switch installations to Current Channel, follow the following instructions.
 
 To move a subset of devices to Current Channel, you can choose from two options:
 1. Remove the devices for Copilot from Windows Autopatch and configure updates using Microsoft Intune.  
@@ -190,19 +190,19 @@ Next, create a client policy to disable the Microsoft 365 Apps update management
 
 1. In the Configuration Manager console, navigate to **Administration** > **Overview** > **Client Settings**. Create a new client policy.
 1. Click on **Software Updates** and change the option **Enable management of the Office 365 client agent** to **Disable**. Don't switch to **Not configured**, otherwise the update control remains with Configuration Manager.
-1. Close the Wizard.
+1. Close the dialog.
 1. Assign the client policy to the collection that contains your devices you need to move. Ensure that the policy has the highest priority.
 
 ### Assign new update channel settings to devices
 Follow the steps in the [group policy section](#group-policies) to create and assign the proper update settings.
 
 ### Monitor
-Start monitoring the collection with the devices slated to move. After those have sync'ed with Active Directory to get the new update settings and with the Configuration Manager infrastructure to disable its update control, devices will move to the targeted update channel with the next run of the Automatic Update task on the devices. Once the devices have moved, they'll be dropped from the collection with the next evaluation cycle and be added to the appropiate channel-based collection.
+Start monitoring the collection with the devices slated to move. After those have sync'ed with Active Directory to get the new update settings and with the Configuration Manager infrastructure to disable its update control, devices will move to the targeted update channel with the next run of the Automatic Update task on the devices. Once the devices have moved, they'll be dropped from the collection with the next evaluation cycle and be added to the appropriate channel-based collection.
 
 Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
 ## Group Policies
-This section covers how to move a subset of devices to a new update channel using Active Directory-based group policies. As the Office Cloud Policy does not support machine-scoped settings, Active Directory-based policies have to be used. 
+This section covers how to move a subset of devices to a new update channel using Active Directory-based group policies. As the Office Cloud Policy doesn't support machine-scoped settings, Active Directory-based policies have to be used. 
 
 ### Pre-Checks
 Before you begin, confirm that you have addressed the following requirements:
@@ -257,7 +257,7 @@ The final step is to test the GPO's application and if the update channel switch
 1.	Switch back to the registry and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration.
 1.	The value UpdateChannelChanged should have switched to True, indicating that the Update Engine is aware of the pending update channel change.
 
-The Microsoft 365 Apps perform the full update channel switch within the next 24 hours.Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
+The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
 ## More resources
 Microsoft 365 Copilot
