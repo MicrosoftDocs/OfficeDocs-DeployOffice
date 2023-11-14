@@ -17,7 +17,7 @@ ms.date: 11/14/2023
 
 ## Overview
 
-To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](verview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
+To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](overview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
 
 > [!NOTE]
 > Assigning the Copilot licenses to users is a required step which is not covered in this documentation. For more information, see [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566).
@@ -230,6 +230,7 @@ Create a new Group Policy Object with the settings to change the update channel.
 |Update Path|Enabled → For Current Channel enter `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` For Monthly Enterprise enter `	http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`|
 |Target Version|Disabled|
 |||
+
 5.	Close the editor and review the **Settings** tab for your new GPO.
 
 ### Apply Security Filtering
