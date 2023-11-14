@@ -43,7 +43,7 @@ This section covers the recommended approach for changing the update channel usi
 
 We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
-### Prepare an Microsoft Entra ID security group
+### Prepare a Microsoft Entra ID security group
 The Channel Change feature can target individual devices or whole Microsoft Entra ID groups. Groups can contain user or device objects, or a combination of both.
 
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for the intended Copilot users or devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
