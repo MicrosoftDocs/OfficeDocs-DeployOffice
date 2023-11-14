@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 10/20/2023
+ms.date: 11/14/2023
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
@@ -42,16 +42,9 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
 
-### Video-based instructions
-If you prefer watching short videos over reading text, view below videos:
-1. [Overview of Cloud Update for Monthly Enterprise Channel](https://youtu.be/vUDGQ5I_5lo)
-1. [Enable the Current Channel Profile](https://youtu.be/lRegLZUjkUY)
-1. [Overview of Current Channel Profile](https://youtu.be/wwguIOw788I)
-1. [How to trigger an update channel change](https://youtu.be/tFmktdQsKgY)
-
 We recommend using Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
-### Prepare a security group
+### Prepare an Entra ID security group
 The Channel Change feature can target individual devices or whole Entra ID groups. Groups can contain user or device objects, or a combination of both.
 
 1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for the intended Copilot users or devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
@@ -61,6 +54,13 @@ The Channel Change feature can target individual devices or whole Entra ID group
 With the enablement of Cloud Updates, the service will automatically manage all Microsoft 365 Apps installations on Monthly Enterprise Channel. We recommend to also enable the profile for Current Channel to keep those devices updated as well.
 
 If you need to exclude devices from being serviced, use the **Exclude devices** feature under **Cloud Updates** > **Overview** > **Tenant Settings**.
+
+If you prefer watching short videos over reading text, review these links:
+1. [Overview of Cloud Update for Monthly Enterprise Channel](https://youtu.be/vUDGQ5I_5lo)
+1. [Enable the Current Channel Profile](https://youtu.be/lRegLZUjkUY)
+1. [Overview of Current Channel Profile](https://youtu.be/wwguIOw788I)
+
+Otherwise follow these instructions:
 
 1. Log into the [Microsoft 365 Apps admin center](https://config.office.com), you should land on the **Home** page automatically.
 1. On the **Recommendation based on your tenant** card, select **Enable cloud**.
@@ -72,6 +72,13 @@ If you need to exclude devices from being serviced, use the **Exclude devices** 
 
 ### Initiate a channel change
 Next step is to trigger the actual update channel change.
+
+If you prefer watching a short video over reading text, review this link:
+
+- [How to trigger an update channel change](https://youtu.be/tFmktdQsKgY)
+
+Otherwise follow these instructions:
+
 1. While staying in the Microsoft 365 Apps admin center, navigate to **Inventory**.
 1. Select **Show all devices** and select the **Switch device update channel** button on the top.
 1. Select which devices should be moved and the targeted update channel.
@@ -92,6 +99,60 @@ You can validate the implementation by monitoring the following aspects:
 - On the device, the following registry key should change to "**1**", as profile's control is established on the device:
    - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate > IgnoreGPO
 - Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
+
+## Microsoft Intune
+
+In this section, we cover the recommended policy settings for managing the update channel and update servicing options for Microsoft 365 Apps using Microsoft Intune.
+
+If you want to move some devices to Current Channel and others to Monthly Enterprise Channel, you need to repeat the steps for each update channel.
+
+### Create an Entra ID security group
+1.	Create a new security group in Microsoft Entra ID (previously Azure Active Directory) for targeted devices. For guidance on this step, refer to [QuickStart: Create a group with members](/azure/active-directory/fundamentals/groups-view-azure-portal).
+1.	Add the computer objects to this security group that need to be moved and have update management applied to. 
+
+### Create a configuration profile
+Create a new configuration profile in Microsoft Intune. Refer to the following steps:
+1.	Sign in to [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/) with an account that has the Intune Administrator role.
+1.	From the left navigation, select **Devices**.
+1.	Under **Policy**, select **Configuration profiles**.
+1.	From the **Devices | Configuration profile**s page, select **+ Create profile**.
+1.	From the **Create a profile** flyout, select the following and click **Create**:
+    - Platform: Windows 10 and later
+    - Profile type: Settings catalog
+1.	From the **Create profile** page, on the **Basics** tab, provide a name for this profile and select **Next**. For example: **Profile – Microsoft 365 Apps on CC**.
+1.	From the **Configuration settings** tab, select **+Add settings**.
+1.	From the **Settings picker** flyout, select **Microsoft Office 2016 (Machine) > Updates**.
+1.	On the lower-third of the flyout, mark the checkboxes for the following settings and apply the corresponding configuration. 
+
+|**Setting Name**  |**Configuration**  |
+|:---|:---|
+|Enable Automatic Updates|Enabled|
+|Hide option to enable or disable updates|Enabled|
+|Hide update notifications|Disabled|
+|Office 365 Client Management|Disabled|
+|Update Channel|Enabled → Current Channel or Monthly Enterprise Channel|
+|Update Deadline|Enabled → 1|
+|Update Path|Enabled → For Current Channel enter `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` For Monthly Enterprise enter `	http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`|
+|Target Version|Disabled|
+
+1.	select **Next**.
+1.	From the **Scope tags** tab, select **Next**.
+1.	From the **Assignments** tab, add your Current Channel security group and select **Next**. 
+1.	On the **Review + create** tab, select **Create**.
+
+### Monitor assignment
+Monitor the progress of your configuration profile assignment using the following steps:
+1.	From the left navigation, select **Devices**.
+1.	Under **Policy**, select **Configuration profiles**.
+1.	Locate the policy you want to monitor and select it. Review the status at the top of the profile page.
+
+The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
+
+
+
+
+
+
 
 ## More resources
 Microsoft 365 Copilot
