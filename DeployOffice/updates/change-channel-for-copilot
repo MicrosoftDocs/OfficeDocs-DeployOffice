@@ -20,16 +20,15 @@ ms.date: 11/14/2023
 To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](verview-update-channels.md#current-channel-overview) or [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview). This article provides configuration guidance and best practices on how to switch Microsoft 365 Apps to such a channel.
 
 > [!NOTE]
-> Assigning the Copilot licenses to users is a required step which is not covered in this documentation
+> Assigning the Copilot licenses to users is a required step which is not covered in this documentation. See [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566) for more details.
 
 Based on your preferred managament solution, choose from the options below for instructions. Microsoft recommend to leverage [Cloud Update](../admincenter/cloud-update.md), as it provides the most streamlined and easiest experience.
 
 - [Cloud Update](#cloud-update)
 - [Microsoft Intune](#microsoft-intune)
 - [Microsoft AutoPatch](#microsoft-autopatch)
-- Microsoft Configuration Manager
-- Group Policies
-- Servicing Profiles (deprecated)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
+- [Group Policies](#group-policies)
 
 > [!NOTE]
 > The configurations covered in this document are based on working best practices. It is highly recommended that you review, test, and validate according to the needs of your environment.
@@ -134,11 +133,12 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 |Update Deadline|Enabled → 1|
 |Update Path|Enabled → For Current Channel enter `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` For Monthly Enterprise enter `	http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`|
 |Target Version|Disabled|
+|||
 
-1.	select **Next**.
-1.	From the **Scope tags** tab, select **Next**.
-1.	From the **Assignments** tab, add your Current Channel security group and select **Next**. 
-1.	On the **Review + create** tab, select **Create**.
+10.	select **Next**.
+11.	From the **Scope tags** tab, select **Next**.
+12.	From the **Assignments** tab, add your Current Channel security group and select **Next**. 
+13.	On the **Review + create** tab, select **Create**.
 
 ### Monitor assignment
 Monitor the progress of your configuration profile assignment using the following steps:
@@ -146,7 +146,7 @@ Monitor the progress of your configuration profile assignment using the followin
 1.	Under **Policy**, select **Configuration profiles**.
 1.	Locate the policy you want to monitor and select it. Review the status at the top of the profile page.
 
-The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated to Current Channel as well and are updated in the same pass.
+The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
 ## Microsoft AutoPatch
 This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule). If you want to use Copilot in Microsoft 365 Apps on the Monthly Enterprise Channel, there is no action required. Only if you want to switch installations to Current Channel, you have to follow the steps below.
@@ -171,9 +171,93 @@ To avoid disruption across your devices, plan your policy changes and timing acc
 1. Create and assign a new Intune configuration profile for Microsoft 365 Apps, as described in the section on [Microsoft Intune](#microsoft-intune).
 1. Disable updates for Microsoft 365 Apps, as described in [Allow or block Microsoft 365 Apps updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#allow-or-block-microsoft-365-app-updates). 
 
+## Microsoft Configuration Manager
+The following covers how to separate a subset of devices out, assign client policies to lift the Configuration Manager’s control over Microsoft 365 Apps updates to them and redirect them to the Office CDN. Going forward, those devices receive updates directly from the Office CDN and no longer from the Configuration Manager infrastructure.
 
+### Create dynamic collections
+For an easier overview of the different update channels in your environment, we recommend setting up dynamic collections for each channel:
+1.	Implement one collection for each update channel in your environment as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels).
+1.	Implement one collection, which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
 
+### Create collection with devices to move
+Create another collection with all devices, which are slated to move to the new update channel. We later use this collection to target devices with adjusted client policies. Devices that have finished the switch are automatically removed from the collection.
 
+1.	Create a new collection and add all devices that should be switched.
+1.	Add the previously created dynamic collection as an Exclude. This way, devices that have finished the transition are automatically removed from the collection. This approach gives you a good overview which devices have already moved.
+
+### Create and assign a client policy
+Next, create a client policy to disable the Microsoft 365 Apps update management through Configuration Manager.
+
+1. In the Configuration Manager console, navigate to **Administration** > **Overview** > **Client Settings**. Create a new client policy.
+1. Click on **Software Updates** and change the option **Enable management of the Office 365 client agent** to **Disable**. Don't switch to **Not configured**, otherwise the update control remains with Configuration Manager.
+1. Close the Wizard.
+1. Assign the client policy to the collection that contains your devices you need to move. Ensure that the policy has the highest priority.
+
+### Assign new update channel settings to devices
+Follow the steps in the [group policy section](#group-policies) to create and assign the proper update settings.
+
+### Monitor
+Start monitoring the collection with the devices slated to move. After those have sync'ed with Active Directory to get the new update settings and with the Configuration Manager infrastructure to disable its update control, devices will move to the targeted update channel with the next run of the Automatic Update task on the devices. Once the devices have moved, they'll be dropped from the collection with the next evaluation cycle and be added to the appropiate channel-based collection.
+
+Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
+
+## Group Policies
+This section covers how to move a subset of devices to a new update channel using Active Directory-based group policies. As the Office Cloud Policy does not support machine-scoped settings, Active Directory-based policies have to be used. 
+
+### Pre-Checks
+Before you begin, confirm that you have addressed the following requirements:
+1.	Keep up to date with the latest version of the[ ADMX templates for Microsoft 365 Apps](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
+1.	There are no conflicting policies being applied through other group policy objects or Intune configuration profiles.
+
+### Create a security group
+Create a security group as described in [Create a Group Account in Active Directory](/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory). Add all computer objects that should change the update channel. You have to specify computer objects, using user objects doesn't work, as the group policy settings are applied on machine level.
+
+### Create a new Group Policy Object
+Create a new Group Policy Object with the settings to change the update channel. 
+1.	Open the Group Policy Management console.
+1.	Create a new Group Policy Object and give it a name (for example, Microsoft 365 Apps – Current Channel).
+1.	Edit the policy and navigate to: **Computer Configuration > Policies > Administrative Templates > Microsoft Office 2016 (Machine) > Updates**.
+1.	Configure the following settings:
+
+|**Setting Name**  |**Configuration**  |
+|:---|:---|
+|Enable Automatic Updates|Enabled|
+|Hide option to enable or disable updates|Enabled|
+|Hide update notifications|Disabled|
+|Office 365 Client Management|Disabled|
+|Update Channel|Enabled → Current Channel or Monthly Enterprise Channel|
+|Update Deadline|Enabled → 1|
+|Update Path|Enabled → For Current Channel enter `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60` For Monthly Enterprise enter `	http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6`|
+|Target Version|Disabled|
+|||
+5.	Close the editor and review the **Settings** tab for your new GPO.
+
+### Apply Security Filtering
+Next apply security filtering to ensure that only in-scope devices are targeted. Otherwise other devices might switch to the selected channel as well.
+1.	Open the Group Policy Management console.
+1.	Select the GPO that you created
+1.	Select the **Scope** tab to view the GPO's scope.
+1.	Under the **Security Filtering** section, remove any entries that aren't the security group that you want to filter the GPO by.
+1.	Add the security group that you have created previously.
+
+### Linking to OU and Link order
+Finally, link the group policy object to an Organizational Unit (OU) which contains all targeted devices.
+1.	Navigate to the desired OU, to which you want to link a GPO.
+1.	Right click on this OU and select **Link an existing GPO**.
+1.	In the **Select GPO** dialog under Group Policy Objects, select the GPO and Select **OK**.
+1.	Review the Linked Group Policy Objects and review the Link Order.
+1.	Review if the newly added GPO has the highest possible Link Order (for example, **Link Order** equals 1). This way other policies with potentially conflicting settings are overruled.
+
+### Validation
+The final step is to test the GPO's application and if the update channel switches automatically.
+1.	Boot or reboot a computer that belongs to the security group.
+1.	Sign-in to the device, open a command prompt and run the "gpupdate /force" command to refresh the group policy settings.
+1.	Open the Registry Editor and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\ office\16.0\Common\officeupdate and verify if keys like updatebranch and updatepath exist and have the desired values.
+1.	Open the Task Scheduler, navigate to Microsoft\Office and run the Office Automatic Update 2.0 task manually.
+1.	Switch back to the registry and navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration.
+1.	The value UpdateChannelChanged should have switched to True, indicating that the Update Engine is aware of the pending update channel change.
+
+The Microsoft 365 Apps perform the full update channel switch within the next 24 hours.Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
 ## More resources
 Microsoft 365 Copilot
