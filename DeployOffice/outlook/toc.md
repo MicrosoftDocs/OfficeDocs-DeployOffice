@@ -9,4 +9,4 @@
 
 ## Manage
 ### [Policy management](manage/policy-management.md)
-### [Exchange cmdlet syntax](/powershell/exchange/exchange-cmdlet-syntax)
+### [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
