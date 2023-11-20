@@ -2,6 +2,16 @@
 
 
 
+## Week of November 13, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/13/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/updates/overview-update-channels) | modified |
+| 11/14/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | added |
+| 11/15/2023 | [Overview of the new Outlook for Windows](/DeployOffice/outlook/overview-new-outlook) | modified |
+
+
 ## Week of November 06, 2023
 
 
