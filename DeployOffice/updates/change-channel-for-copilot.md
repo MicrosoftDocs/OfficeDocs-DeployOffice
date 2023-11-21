@@ -140,6 +140,19 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 12.	From the **Assignments** tab, add your Current Channel security group and select **Next**. 
 13.	On the **Review + create** tab, select **Create**.
 
+### Update Microsoft 365 Apps for Windows 10 or later assignments
+If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel selected in the app configuration will be re-evaluated and enforced during policy refresh. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
+- Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
+- The app is configured using the Configuration designer.
+- The app is assigned as required.
+- The selected channel differs from the newly assigned one.
+
+If this matches your current configuration, adjust your Microsoft 365 Apps for Windows 10 or later apps:
+- Update the configuration of the existing app to exclude the Microsoft Entra ID security groups you have just created.
+- Create new Microsoft 365 Apps for Windows 10 or later apps with the newly assigned update channel.
+- If you are moving devices to both Current and Monthly Enterprise Channel, you have to create two new apps.
+- Assign the newly created apps to the respective Microsoft Entra ID security groups.
+
 ### Monitor assignment
 Monitor the progress of your configuration profile assignment using the following steps:
 1.	From the left navigation, select **Devices**.
