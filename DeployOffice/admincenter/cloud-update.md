@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 10/19/2023
+ms.date: 11/21/2023
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -44,7 +44,7 @@ In the overview page of cloud update, all the tenant settings apply to every act
 
 **Exclude Groups**
 
-If an admin adds a Microsoft Entra ID group to the exclude groups setting, the devices in this group are excluded from cloud update. Within 30 minutes, the inventory system updates the device schema to show which devices are't included in Current Channel or Monthly Enterprise Channel. This status appears in the 'cloud update status' column. After the information is reflected in inventory, admins can manage these devices by first setting **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
+If an admin adds a Microsoft Entra ID group to the excluded groups setting, the devices in this group are excluded from cloud update. Within 30 minutes, the inventory system updates the device schema to show which devices are't included in Current Channel or Monthly Enterprise Channel. This status appears in the 'cloud update status' column. After the information is reflected in inventory, admins can manage these devices by first setting **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
 
 **Exclusion Window**
 
@@ -73,7 +73,7 @@ Users are given notifications leading up to the deadline when a deadline is set.
 
 **Overview**
 
-The overview page provides information on the current and upcoming release dates for updates, showcasing the present rollout status either as active or paused. The update progress chart displays the update status for devices in Monthly Enterprise Channel. It shows which devices updated to the latest version, which devices failed to update, and which devices are yet to begin the update process. The admin can view all devices that are part of Monthly Enterprise Channel updates by selecting **View all devices**. If you have rollout waves configured, you can select **View Waves Overview** under the update progress chart instead. ThThe update progress gives you a flyout summarizing the update status for individual waves. You can get device level details by choosing **View details on this wave**. If you have a long list of devices in a given wave and need more details per device, you can select **View Devices** on the flyout to get to a detailed device level schema for that wave.
+The overview page provides information on the current and upcoming release dates for updates, showcasing the present rollout status either as active or paused. The update progress chart displays the update status for devices in Monthly Enterprise Channel. It shows which devices updated to the latest version, which devices failed to update, and which devices are yet to begin the update process. The admin can view all devices that are part of Monthly Enterprise Channel updates by selecting **View all devices**. If you have rollout waves configured, you can select **View Waves Overview** under the update progress chart instead. The update progress gives you a flyout summarizing the update status for individual waves. You can get device level details by choosing **View details on this wave**. If you have a long list of devices in a given wave and need more details per device, you can select **View Devices** on the flyout to get to a detailed device level schema for that wave.
 
 From the overview page, you can choose **View all Potential Issues** or **view failed devices**. You can take channel actions such as rollback, pause, and manage rolled back devices. For more information, see [Introduction to Monthly Enterprise Channel Profile](https://www.youtube.com/watch?v=vUDGQ5I_5lo).
 
