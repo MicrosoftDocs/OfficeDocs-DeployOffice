@@ -65,7 +65,7 @@ Otherwise follow these instructions:
 1. On the **Recommendation based on your tenant** card, select **Enable cloud**.
 1. Wait a moment and refresh the page.
 1. Verify that the **Monthly Enterprise** entry is listed under the **Cloud Update** navigation.
-1. Navigate back to the **Home** page and click on **Finish enabling cloud** to activate the Current Channel profile as well.
+1. Navigate back to the **Home** page and select **Finish enabling cloud** to activate the Current Channel profile as well.
 1. Wait a moment and refresh the page.
 1. Verify that the **Current** entry is listed under the **Cloud Update** navigation.
 
@@ -115,7 +115,7 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 1.	From the left navigation, select **Devices**.
 1.	Under **Policy**, select **Configuration profiles**.
 1.	From the **Devices | Configuration profile**s page, select **+ Create profile**.
-1.	From the **Create a profile** flyout, select the following and click **Create**:
+1.	From the **Create a profile** flyout, choose the following options and select **Create**:
     - Platform: Windows 10 and later
     - Profile type: Settings catalog
 1.	From the **Create profile** page, on the **Basics** tab, provide a name for this profile and select **Next**. For example: **Profile – Microsoft 365 Apps on CC**.
@@ -141,16 +141,16 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 13.	On the **Review + create** tab, select **Create**.
 
 ### Update Microsoft 365 Apps for Windows 10 or later assignments
-If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel selected in the app configuration will be re-evaluated and enforced during policy refresh. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
+If you're deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel selected in the app configuration is re-evaluated and enforced during policy refresh. If the channels don't match, this causes unexpected channel flipping under the following circumstances:
 - Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
 - The app is configured using the Configuration designer.
 - The app is assigned as required.
 - The selected channel differs from the newly assigned one.
 
 If this matches your current configuration, adjust your Microsoft 365 Apps for Windows 10 or later apps:
-- Update the configuration of the existing app to exclude the Microsoft Entra ID security groups you have just created.
+- Update the configuration of the existing app to exclude the Microsoft Entra ID security groups you created for the channel change.
 - Create new Microsoft 365 Apps for Windows 10 or later apps with the newly assigned update channel.
-- If you are moving devices to both Current and Monthly Enterprise Channel, you have to create two new apps.
+- If you're moving devices to both Current and Monthly Enterprise Channel, you have to create two new apps.
 - Assign the newly created apps to the respective Microsoft Entra ID security groups.
 
 ### Monitor assignment
@@ -166,12 +166,12 @@ This section covers the recommended settings for managing the update channel and
 
 To move a subset of devices to Current Channel, you can choose from two options:
 1. Remove the devices for Copilot from Windows Autopatch and configure updates using Microsoft Intune.  
-   1. **Benefits**: This option limits the policy changes to the subset of devices you're using for Copilot EAP, enabling you to target separate policy settings for Microsoft 365 Apps. 
+   1. **Benefits**: This option limits the policy changes to the subset of devices you're using for Copilot, enabling you to target separate policy settings for Microsoft 365 Apps. 
    1. **Considerations**: This option removes update management for Windows Updates, requiring you to setup and manage standalone Windows Update for Business policies. 
 
 1. Disable update management for Microsoft 365 Apps in Windows Autopatch. 
     1. **Benefits**: This option keeps devices registered with Windows Autopatch for Windows Updates and reporting.
-    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot EAP. 
+    2. **Considerations**: This option removes the update management for Microsoft 365 Apps across all Autopatch devices. You have to set up standalone update policies for all devices to keep them secure, versus those that are only used for Copilot. 
 
 ### Option 1: Remove devices from Windows Autopatch for Copilot 
 To avoid disruption across your devices, plan your policy changes and timing accordingly.
@@ -185,7 +185,7 @@ To avoid disruption across your devices, plan your policy changes and timing acc
 1. Disable updates for Microsoft 365 Apps, as described in [Allow or block Microsoft 365 Apps updates](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#allow-or-block-microsoft-365-app-updates). 
 
 ## Microsoft Configuration Manager
-The following covers how to separate a subset of devices out, assign client policies to lift the Configuration Manager’s control over Microsoft 365 Apps updates to them and redirect them to the Office CDN. Going forward, those devices receive updates directly from the Office CDN and no longer from the Configuration Manager infrastructure.
+The following steps cover how to separate a subset of devices out, assign client policies to lift the Configuration Manager’s control over Microsoft 365 Apps updates to them and redirect them to the Office CDN. Going forward, those devices receive updates directly from the Office CDN and no longer from the Configuration Manager infrastructure.
 
 ### Create dynamic collections
 For an easier overview of the different update channels in your environment, we recommend setting up dynamic collections for each channel:
@@ -202,7 +202,7 @@ Create another collection with all devices, which are slated to move to the new 
 Next, create a client policy to disable the Microsoft 365 Apps update management through Configuration Manager.
 
 1. In the Configuration Manager console, navigate to **Administration** > **Overview** > **Client Settings**. Create a new client policy.
-1. Click on **Software Updates** and change the option **Enable management of the Office 365 client agent** to **Disable**. Don't switch to **Not configured**, otherwise the update control remains with Configuration Manager.
+1. Select **Software Updates** and change the option **Enable management of the Office 365 client agent** to **Disable**. Don't switch to **Not configured**, otherwise the update control remains with Configuration Manager.
 1. Close the dialog.
 1. Assign the client policy to the collection that contains your devices you need to move. Ensure that the policy has the highest priority.
 
