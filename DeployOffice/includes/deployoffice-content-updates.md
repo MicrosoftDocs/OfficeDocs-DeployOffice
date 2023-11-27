@@ -2,6 +2,14 @@
 
 
 
+## Week of November 20, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/21/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | modified |
+
+
 ## Week of November 13, 2023
 
 
