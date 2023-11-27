@@ -103,7 +103,7 @@
 ### [Connectivity to Microsoft 365 services](endofsupport/microsoft-365-services-connectivity.md)
 ### [Windows Server and Microsoft 365 Apps](endofsupport/windows-server-support.md)
 ### [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md)
-### [Windows and Office support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+### [Windows and Office support matrix (PDF)](https://aka.ms/windows-office-support-matrix)
 
 ## [Office for Mac](mac/deployment-guide-for-office-for-mac.md)
 
