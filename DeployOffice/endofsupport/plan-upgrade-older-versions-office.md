@@ -179,4 +179,4 @@ For more information, see the following articles:
 ## Related articles
 
 - [Office versions and connectivity to Microsoft 365 services](microsoft-365-services-connectivity.md)
-- [Windows and Office configuration support matrix (PDF)](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI)
+- [Windows and Office configuration support matrix (PDF)](https://aka.ms/windows-office-support-matrix)

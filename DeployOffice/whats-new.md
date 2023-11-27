@@ -166,7 +166,7 @@ If you're already using Security Policy Advisor, we recommend migrating your sec
 
 Are you wondering which versions of Office are supported on Windows 11? Or how long Microsoft 365 Apps will be supported on Windows 10?
 
-You can download and print the recently updated [Windows and Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI) to use as a reference.
+You can download and print the recently updated [Windows and Office configuration support matrix](https://aka.ms/windows-office-support-matrix) to use as a reference.
 
 ### Performance recommendations for Microsoft 365 Apps on Windows 10
 
@@ -219,7 +219,7 @@ We've published the following new articles to provide information about end of s
 - [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md)
 - [Windows 8 end of support and Microsoft 365 Apps](endofsupport/windows-8-support.md)
 
-You can download and print the [Office configuration support matrix](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2OqRI) to use as a reference.
+You can download and print the [Windows and Office configuration support matrix](https://aka.ms/windows-office-support-matrix) to use as a reference.
 
 To discuss or learn more about end of support for Office versions, visit [Microsoft Office End of Support](https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS) on the Microsoft Tech Community.
 
