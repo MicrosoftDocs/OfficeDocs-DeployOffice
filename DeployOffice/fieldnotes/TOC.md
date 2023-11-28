@@ -6,6 +6,5 @@
 ## [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)
 ## [Switch to Monthly Enterprise Channel with Configuration Manager](switch-to-monthly-enterprise-channel.md)
 ## [Road map to modern management](roadmap-to-modern-management.md)
-## [Adopting servicing profiles](adopt-servicing-profiles.md)
 ## [Microsoft 365 change guide](microsoft-365-change-guide.md)
 ## [Performance recommendations for Microsoft 365 Apps on Windows 10](performance-recommendations.md)
