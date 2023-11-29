@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 03/01/2023
+ms.date: 11/29/2023
 ---
 
 # Best practices from the field: Microsoft 365 change guide
@@ -152,7 +152,7 @@ To implement the [democratization of change](#change-evaluation-democratization)
 
 #### Service release controls
 
-Your primary control for receiving service updates is the configuration of your release options. Although Microsoft provides you control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of to software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
+Your primary control for receiving service updates is the configuration of your release options. Although Microsoft provides you with control over the cadence at which your users receive updates, these changes are deployed to our hyperscale cloud services (instead of to software installations that are running in your IT infrastructure). It would be impractical for Microsoft to manage, update, and secure a global cloud with specific versions of our services running for specific tenants. This means that service changes give you less granularity of control over deployment than Microsoft 365 Apps do, because Microsoft 365 Apps have both release channels and various deployment tools available.
 
 You can configure release options in the Microsoft 365 admin portal as described in [Set up the release option in the admin center](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center). Navigate to the portal, and then select **Settings** \> **Org Settings** \> **Organizational Profile** \> **Release Preferences**. Figure 5 shows the configuration pane where you can select to have everyone on Standard Release, everyone on Targeted Release, or specific users on Targeted Release.
 
@@ -223,42 +223,34 @@ For comprehensive instructions to configure your deployment strategy, see the [M
 
 The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
-The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.md) and [servicing profiles](../admincenter/servicing-profile.md) to better manage device updates for Microsoft 365 Apps.
+The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.md) and [Cloud Update](../admincenter/cloud-update.md) to better manage device updates for Microsoft 365 Apps.
 
 **Office inventory**
 
   - Drill into detailed views of Office devices and add-in information.
-
-  - View insights like channel/build spread, add-in diversity, and more.
-
+  - View insights like channel/build spread, add in diversity, and more.
   - Export the data.
 
 **Security currency**
 
   - View a dashboard for security update compliance status cross-channel.
-
   - Set your target goal and timeline to track and report.
-
   - Identify failing devices and take mitigating action.
 
-**Servicing profiles**
+**Cloud Update**
 
-  - Set up profiles for devices to automatically receive updates based on custom requirements.
-
-  - Throttle-based on network congestion and location.
-
-  - Takes advantage of Windows 10 delivery optimization.
-
-  - Act using the tool to Pause, Restore, and Snooze deployments.
-
+  - Set up update profiles for devices on Monthly Enterprise Channel or Current Channel to automatically receive updates.
+  - Takes advantage of Windows Delivery Optimization.
   - Maintain device compliance with update deadlines and update date exclusions.
+  - Monitor the deployment of updates, giving you insights as well as the option to pause or roll the deployment back.
+
 
 > [!IMPORTANT]
 > At the time of publishing, the Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and later.
 
 #### Client configuration controls
 
-After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
+After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you with granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
 Although group policy has historically been used to enforce client settings and is still a viable method, we've developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admincenter/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
