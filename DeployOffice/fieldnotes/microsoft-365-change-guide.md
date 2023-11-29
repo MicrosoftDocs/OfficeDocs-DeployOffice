@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 03/01/2023
+ms.date: 11/29/2023
 ---
 
 # Best practices from the field: Microsoft 365 change guide
@@ -223,35 +223,27 @@ For comprehensive instructions to configure your deployment strategy, see the [M
 
 The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
-The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.md) and [servicing profiles](../admincenter/servicing-profile.md) to better manage device updates for Microsoft 365 Apps.
+The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.md) and [Cloud Update](../admincenter/cloud-update.md) to better manage device updates for Microsoft 365 Apps.
 
 **Office inventory**
 
   - Drill into detailed views of Office devices and add-in information.
-
   - View insights like channel/build spread, add-in diversity, and more.
-
   - Export the data.
 
 **Security currency**
 
   - View a dashboard for security update compliance status cross-channel.
-
   - Set your target goal and timeline to track and report.
-
   - Identify failing devices and take mitigating action.
 
-**Servicing profiles**
+**Cloud Update**
 
-  - Set up profiles for devices to automatically receive updates based on custom requirements.
-
-  - Throttle-based on network congestion and location.
-
-  - Takes advantage of Windows 10 delivery optimization.
-
-  - Act using the tool to Pause, Restore, and Snooze deployments.
-
+  - Set up update profiles for devices on Monthly Enterprise Channel or Current Channel to automatically receive updates.
+  - Takes advantage of Windows Delivery Optimization.
   - Maintain device compliance with update deadlines and update date exclusions.
+  - Monitor the deployment of updates, giving you insights as well as the option to pause or roll the deployment back.
+
 
 > [!IMPORTANT]
 > At the time of publishing, the Microsoft 365 Apps admin center is available to enterprise customers with E3 SKUs and later.
