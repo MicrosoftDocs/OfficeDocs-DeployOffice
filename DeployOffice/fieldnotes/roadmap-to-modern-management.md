@@ -8,22 +8,19 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Field best practices: Roadmap to modern management of Microsoft 365 Apps in the enterprise"
+description: "Roadmap to modern management of Microsoft 365 Apps in the enterprise"
 ms.date: 11/29/2023
 ---
 
-# Best practices from the field: Roadmap to modern management of Microsoft 365 Apps in the enterprise
+# Roadmap to modern management of Microsoft 365 Apps in the enterprise
 
-> [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
-
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides several new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on our work with customers, we've developed the following best practices on how to adopt these new features.
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides new admin capabilities to monitor, manage, and update the installation of Microsoft 365 Apps for enterprise. Based on customer conversations, here are some best practices on how to adopt these new features.
 
 There's no definitive or required way to adopt these features. But the order described in this article helps admins quickly recognize the benefits, while keeping the rate of change manageable. Adjust the approach to the needs of your organization. If you want to explore the user interface and options beforehand, we have interactive demos for [Microsoft 365 Apps health](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/1/0) and the [inventory](https://octe.azurewebsites.net/Microsoft/viewer/185/index.html#/2/0) available.
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
-A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy additional infrastructure or software agents to use it. You can get insights into the health of your Microsoft 365 Apps within minutes.
+A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy another infrastructure or software agents to use it. You can get insights into the health of your Microsoft 365 Apps within minutes.
 
 How to enable Microsoft 365 Apps health:
 
@@ -44,7 +41,7 @@ If you disabled Diagnostic Data for Office on your devices, you might only see a
 
 ## Get insights per device: Inventory and security update status
 
-Another new feature is Inventory. It's specifically tailored for the Microsoft 365 Apps and gives you a full overview of all Microsoft 365 Apps instances on Windows that are activated and connected to your tenant. It isn't limited by management or directory domain. So no matter how a device is managed (or not managed at all) or into which directory service it's joined (or still in workgroup mode), Inventory will provide you insights. All devices running at least Version 2008 of Microsoft 365 Apps will automatically register after enabling the feature:
+Another new feature is Inventory. It's specifically tailored for the Microsoft 365 Apps on Windows. You get a full overview of all installations which are activated and connected to your tenant. There is no limit when it comes to management or directory domain. Regardless if a device is managed or not, joint into any directory service (or not), Inventory will provide you with insights. All devices running at least Version 2008 of Microsoft 365 Apps will automatically register after enabling the feature:
 
 1. Sign in to the Apps Admin Center at [config.office.com](https://config.office.com/).
 2. Navigate to **Inventory** and choose **Get started** to enable the feature.
@@ -71,9 +68,9 @@ Moving your devices to the [Monthly Enterprise Channel](../updates/overview-upda
 
 We highly recommend testing out Monthly Enterprise Channel. There are two common ways you can switch devices over without the need for a reinstall:
 
-- The recommended way to switch your devices to Monthly Enterprise Channel is to use the **Switch device update channel** capability of the [inventory](../admincenter/cloud-update.md#inventory) in the [Microsoft 365 Apps admin center](https://config.office.com). Simply select the devices you want to move to Monthly Enterprise Channel and confirm the move. YOu can also use Microsoft Entry ID groups containing devices and/or users. The devices will perform the channel change within roughly 24 hours.
+- The recommended way to switch your devices to Monthly Enterprise Channel is to use the **Switch device update channel** capability of the [inventory](../admincenter/cloud-update.md#inventory) in the [Microsoft 365 Apps admin center](https://config.office.com). Select the devices you want to move to Monthly Enterprise Channel and confirm the move. YOu can also use Microsoft Entry ID groups containing devices and/or users. The devices perform the channel change within roughly 24 hours.
 - You can switch managed devices to Monthly Enterprise Channel by using existing management tools. If you're using Microsoft Intune, review this [guidance](../updates/change-update-channels.md#change-the-update-channel-with-microsoft-intune-administrative-templates). For environments with Microsoft Configuration Manager, we recommend reviewing our best practices on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../updates/change-update-channels.md).
-- For unmanaged devices, you can [change the default channel in the Microsoft 365 admin center](../updates/overview-update-channels.md#microsoft-365-admin-center). This will convert existing, unmanaged installation to the selected channel.
+- For unmanaged devices, you can [change the default channel in the Microsoft 365 admin center](../updates/overview-update-channels.md#microsoft-365-admin-center). Unmanaged installations will switch to the set channel.
 
 ## Prepare your network to receive updates from the internet
 
