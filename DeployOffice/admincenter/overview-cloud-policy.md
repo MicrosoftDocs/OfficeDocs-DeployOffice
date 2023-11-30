@@ -105,7 +105,7 @@ Also, policy settings implemented by using Cloud Policy take precedence over pol
 At Microsoft, we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy needed to protect your organization and empower your end users to create accessible content.
 
 ### Security baseline
-To easily identify security baseline policies, a new column called Recommendation was to the policy table. Policies recommended for security baseline are triggered in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
+To easily identify security baseline policies, a new column called Recommendation was added to the policy table. Policies recommended for security baseline are triggered in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
 
 For more information, see [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md)
 
