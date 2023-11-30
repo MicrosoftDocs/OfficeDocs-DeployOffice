@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 05/25/2023
+ms.date: 12/01/2023
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -32,7 +32,7 @@ The following are the requirements for using Cloud Policy with Microsoft 365 App
 - Cloud Policy supports Microsoft 365 Groups and Microsoft Entra Security Groups created in or synchronized to Microsoft Entra ID. The membership type can be either Dynamic or Assigned.
 - To create a policy configuration, you must be assigned one of the following roles in Microsoft Entra ID: Global Administrator, Security Administrator, or Office Apps Admin.
 - The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
-- Authenticated proxies aren’t supported by Cloud Policy service.
+- Cloud Policy service doesn't support authenticated proxies.
 
 > [!IMPORTANT]
 > - Cloud Policy isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
@@ -47,18 +47,19 @@ The following are the basic steps for creating a policy configuration.
 2. Under **Customization**, select **Policy Management**.
 3. On the **Policy configurations** page, select **Create**.
 4. On the **Start with the basics** page, enter a name (required) and a description (optional), then select **Next**.
-5.	On the **Choose the scope** page, choose whether the policy configuration applies to a specific group or to users who anonymously access documents using Office for the web.
-6. If the policy configuration applies to a specific group, select the group. Each policy configuration can only be assigned to one group, and each group can only be assigned one policy configuration. But the group that you select can contain other (nested) groups.
-7. After you’ve made your selection, select **Next**.
-8.	On the **Configure Settings** page, select the policies that you want to include in the policy configuration. You can search for the policy by name, or you can create a custom filter. You can filter on platform, by application, on whether the policy has been configured, and on whether the policy is a recommended security baseline.
-9. After you've made your selections, select **Next** to review your selections. Then select **Create** to create the policy configuration.
+5. On the **Choose the scope** page, determine whether the policy configuration applies to all users, specific groups, or to users who anonymously access documents using Office for the web.
+6. If the policy configuration applies to specific groups, you can now add multiple groups to a single policy configuration for more flexible targeting. To add groups, select **Add Groups** and choose the relevant groups. Adding multiple groups to a single policy configuration allows for the same group to be included in multiple policy configurations, facilitating a more streamlined and efficient policy management process.
+7. After making your selection, choose **Next**.
+8. On the **Configure Settings** page, select the policies that you want to include in the policy configuration. You can search for the policy by name, or you can create a custom filter. You can filter on platform, by application, on whether the policy is configured, and on whether the policy is a recommended security baseline.
+9. After making your selections, select **Next** to review your selections. Then select **Create** to create the policy configuration.
+
 
 ## Managing policy configurations
 
 To change a policy configuration:
 
 1. Go to the **Policy configurations** page.
-2. Select the policy configuration you want to change. This will open the configuration details.
+2. Open the configuration details of the policy you want to change by selecting it.
 3. Make the appropriate changes to the policy configuration.
 4. Navigate to the **Review and publish** page.
 5. Select **Update** to save and apply your changes.
@@ -69,7 +70,7 @@ To see which policies are configured when you're editing a policy configuration,
 
 To change the priority order for the policy configurations, select **Reorder priority** on the **Policy configurations** page.
 
-If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This will generate a CSV file for download.
+If you want to export a policy configuration, select the existing policy configuration on the **Policy configurations** page, and then select **Export**.  This action generates a CSV file for download.
 
 ## How the policy configuration is applied
 
@@ -101,31 +102,31 @@ Also, policy settings implemented by using Cloud Policy take precedence over pol
 
 ## Baselines
 
-At Microsoft we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy you’ll need to protect your organization and empower your end users to create accessible content.
+At Microsoft, we strive to innovate and reduce the IT admins burden with the creation of modern management tools. With that said, the baselines in Cloud Policy are another way you can save time while deploying policy for your organization. The security and accessibility baselines offer a unique filter on the Group Policy needed to protect your organization and empower your end users to create accessible content.
 
 ### Security baseline
-To easily identify security baseline policies, we’ve added a new column to the policy table called Recommendation. Policies recommended for security baseline will be tagged in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
+To easily identify security baseline policies, a new column called Recommendation was added to the policy table. Policies recommended for security baseline are triggered in this column. You can also use the column filter to limit the view to only policies that are tagged as security baseline.
 
-For more information, see [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md)
+For more information, see [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md).
 
 ### Accessibility baseline
-Most of our customers are making strides to become more accessible as an organization. The accessibility baseline will enable IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
+Most of our customers are making strides to become more accessible as an organization. The accessibility baseline enables IT Pros to configure accessibility policies to empower their end users to create accessible content and limit the ability to remove accessibility checker settings from being disabled.
 
 ## Additional information about Cloud Policy
 
 - Only user-based policy settings are available. Computer-based policy settings aren't available.
-- As new user-based policy settings are made available for Office, Cloud Policy will automatically add them. There's no need to download updated Administrative Templates files (ADMX/ADML).
+- As new user-based policy settings are made available for Office, Cloud Policy automatically adds them. There's no need to download updated Administrative Templates files (ADMX/ADML).
 - You can also create policy configurations to apply policy settings for supported versions of the desktop apps that come with subscription plans of Project and Visio.
 - The health status feature was retired in the second half of March 2022. In the future (no known date at this time), we plan to provide advanced health reporting and compliance monitoring features for Cloud Policy.
 
 ## Troubleshooting tips
 
-If the expected policies haven't been correctly applied to a user's device, try the following actions:
-- Make sure the user is signed into Microsoft 365 Apps for enterprise, has activated it, and has a valid license.
+If the expected policies aren't correctly applied to a user's device, try the following actions:
+- Make sure the user is signed into Microsoft 365 Apps for enterprise, activated it, and has a valid license.
 
 - Make sure the user is part of the appropriate security group.
 
-- Verify you are not using an authenticated proxy.
+- Verify you aren't using an authenticated proxy.
 
 - Check the priority of the policy configurations. If the user is in multiple security groups that have policy configurations assigned to them, then the priority of the policy configurations determines which policies take effect.
 
@@ -137,4 +138,4 @@ If the expected policies haven't been correctly applied to a user's device, try 
 
 - If you want to see the next time a device running Windows is scheduled to check with Cloud Policy, look at the FetchInterval under HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\CloudPolicy. The value is expressed in minutes. For example, 1440, which equates to 24 hours.  
 
-- You may encounter a FetchInterval value of 0.  If this value exists, the client will wait 24 hours from the last check in before attempting to check with Cloud Policy again.
+- You might encounter a FetchInterval value of 0.  If this value exists, the client waits 24 hours from the last check-in before attempting to check with Cloud Policy again.
