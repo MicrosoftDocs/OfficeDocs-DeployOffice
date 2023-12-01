@@ -21,7 +21,7 @@ There are multiple options to switch the selected update channel for an existing
 - [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)
 - [Microsoft Configuration Manager](#change-the-update-channel-with-configuration-manager)
 - [Intune](#change-the-update-channel-with-microsoft-intune-administrative-templates)
-- [Microsoft 365 Apps admin center](#change-the-update-channel-using-the-microsoft-365-admin-center)
+- [Microsoft 365 Apps admin center](#change-the-update-channel-using-the-microsoft-365-apps-admin-center)
 - [Microsoft 365 admin center](#change-the-update-channel-using-the-microsoft-365-admin-center)
 
 For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
