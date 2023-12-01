@@ -123,7 +123,7 @@ Here are the steps for changing the update channel to Current Channel or Monthly
 
 You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.microsoft.com) to set the default update channel for Microsoft 365 Apps. Unmanaged installations will then switch to the new default channel automatically.  
 
-Managed installations arn't affected by this setting. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
+Managed installations aren't affected by this setting. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
 
 Depending on your scenario, you can use the Microsoft 365 admin center along with other options described in this article. E.g., you could set up the Microsoft 365 admin center to keep all unmanaged devices on Current Channel, while using Intune to move and keep managed devices to Monthly Enterprise Channel. 
 
@@ -133,7 +133,7 @@ Here are the steps for setting the default update channel:
 2. Open the **Microsoft 365 installation options**. 
 3. Select the desired channel, then **Save**. 
 
-Next time the Microsoft 365 Apps check for available updates, the new update channel configuration is sent to the device. Next, it download the latest update from the new channel and installs it. The user experience is like a regular update when it comes to notifications and prompts. 
+Next time the Microsoft 365 Apps check for available updates, the new update channel configuration is sent to the device. Next, it downloads the latest update from the new channel and installs it. The user experience is like a regular update when it comes to notifications and prompts. 
 
 ## Considerations when changing channels
 
