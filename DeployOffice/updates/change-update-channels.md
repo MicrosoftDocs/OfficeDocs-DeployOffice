@@ -10,12 +10,12 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 07/20/2023
+ms.date: 12/01/2023
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
 
-There are multiple options to switch the selected update channel for an existing Microsoft 365 Apps installation. For instance, moving a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel using group policy settings. This article covers several options to perform a channel change on a device. All use the update engine of the Microsoft 365 Apps, so the channel change happens through an update and not an uninstallation and re-installation of the apps. The following technologies are covered:
+There are multiple options to switch the selected update channel for an existing Microsoft 365 Apps installation. For instance, moving a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel using group policy settings. This article covers several options to perform a channel change on a device. All use the update engine of the Microsoft 365 Apps, so the channel change happens through an update and not an uninstallation and reinstallation of the apps. The following technologies are covered:
 
 - [Group Policies](#change-the-update-channel-with-group-policy)
 - [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)
@@ -39,7 +39,7 @@ For more information about channels, see [Overview of update channels for Micros
 
 4. By default, Group Policy refreshes in the background every 90 minutes.  If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), you can use the **gpupdate** command. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate).
 
-After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
+After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It detects the updated policy and updates the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
 > [!NOTE]
 > Above steps work for Microsoft 365 Apps for Enterprise and Microsoft 365 Apps for Business. Normally, Microsoft 365 Apps for Business cannot be configured using group policies, but the update channel setting is an exception.
@@ -48,11 +48,11 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 
 1. Before you begin, double-check these items:
    - Make sure the scheduled task "Office Automatic Updates 2.0" is enabled on the client devices. This task, which updates the assigned channel, is a required part of managing updates for Microsoft 365 Apps, whether you use Group Policy, the Office Deployment Tool, Configuration Manager, or Intune.
-   - Make sure that the update channel for the targeted device isn't set through Group Policy. Otherwise, the policy setting will take precedence over the Office Deployment Tool setting and the device will stay on the channel specified by the policy setting. In such case, either remove the policy setting from the device or use [Group Policy to change the channel](#change-the-update-channel-with-group-policy).
+   - Make sure that the update channel for the targeted device isn't set through Group Policy. Otherwise, the policy setting takes precedence over the Office Deployment Tool setting and the device stays on the channel specified by the policy setting. In such case, either remove the policy setting from the device or use [Group Policy to change the channel](#change-the-update-channel-with-group-policy).
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new update channel. In the example below, the channel changes to Current Channel. See [Channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element) for more details.
+3. Create a configuration file that specifies the new update channel. In the example below, the channel changes to Current Channel. For other update channels, look up the [channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 
 4. Deploy the Office Deployment Tool with the newly created configuration file using your standard processes. It must run the "setup.exe /configure yourconfigfile.xml" command to inject the update channel setting into the system. No requirement to close the Microsoft 365 Apps first, as only the stored configuration settings are changed.
 
@@ -89,7 +89,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 
 4. By default, Intune policies refresh in the background every 8 hours. Actions such as assigning a new profile will immediately notify the device to check in. If you want to refresh policy assignment immediately (for example, if you're testing in a lab environment), from the device, select **Start** > **Settings** > **Accounts** > **Access work or school** > *{Select your account}* > **Info** > **Sync**. For more information, see [Sync your Windows device manually](/mem/intune/user-help/sync-your-device-manually-windows).
 
-5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune can be seen in this registry location. For more information, [refer to this article](/mem/intune/configuration/administrative-templates-update-office).
+5. After the policy is synced to the device from Intune, you can validate that whether the policy has actually come to the device or not by looking in the registry. Open the Registry Editor and navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\office\16.0\common\officeupdate. Policies which are pushed from Intune can be seen in this registry location. For more information, see [Use Update Channel and Target Version settings to update Microsoft 365 with Microsoft Intune Administrative Templates](/mem/intune/configuration/administrative-templates-update-office).
 
 After the policy has been applied, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
 
@@ -123,17 +123,17 @@ Here are the steps for changing the update channel to Current Channel or Monthly
 
 You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.microsoft.com) to set the default update channel for Microsoft 365 Apps. Unmanaged installations will then switch to the new default channel automatically.  
 
-Managed installations are not affected by this setting. For a full break-down of which devices the Microsoft 365 admin center setting will target, please see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
+Managed installations arn't affected by this setting. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
 
 Depending on your scenario, you can use the Microsoft 365 admin center along with other options described in this article. E.g., you could set up the Microsoft 365 admin center to keep all unmanaged devices on Current Channel, while using Intune to move and keep managed devices to Monthly Enterprise Channel. 
 
 Here are the steps for setting the default update channel: 
 
-1. Log into the [Microsoft 365 admin center](https://admin.microsoft.com) and open **Settings**, then click on **Org Settings**. 
+1. Log into the [Microsoft 365 admin center](https://admin.microsoft.com) and open **Settings**, then select **Org Settings**. 
 2. Open the **Microsoft 365 installation options**. 
-3. Select the desired channel and click on **Save**. 
+3. Select the desired channel, then **Save**. 
 
-Next time the Microsoft 365 Apps check for available updates, the new update channel configuration is sent to the device. Next, it will download the latest update from the new channel and install it. The user experience is like a regular update when it comes to notifications and prompts. 
+Next time the Microsoft 365 Apps check for available updates, the new update channel configuration is sent to the device. Next, it download the latest update from the new channel and installs it. The user experience is like a regular update when it comes to notifications and prompts. 
 
 ## Considerations when changing channels
 
