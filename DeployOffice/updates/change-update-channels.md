@@ -21,7 +21,7 @@ There are multiple options to switch the selected update channel for an existing
 - [Office Deployment Tool](#change-the-update-channel-with-the-office-deployment-tool-odt)
 - [Microsoft Configuration Manager](#change-the-update-channel-with-configuration-manager)
 - [Intune](#change-the-update-channel-with-microsoft-intune-administrative-templates)
-- [Servicing profiles](#change-the-update-channel-using-servicing-profiles)
+- [Microsoft 365 Apps admin center](#change-the-update-channel-using-the-microsoft-365-admin-center)
 - [Microsoft 365 admin center](#change-the-update-channel-using-the-microsoft-365-admin-center)
 
 For more information about channels, see [Overview of update channels for Microsoft 365 Apps](overview-update-channels.md).
@@ -99,22 +99,25 @@ After the policy has been applied, the "Office Automatic Updates 2.0" scheduled 
 >   - The app is configured using the Configuration designer.
 >   - The app is assigned as required.
 
-## Change the update channel using servicing profiles
+## Change the update channel using the Microsoft 365 Apps admin center
 
-If you want to switch devices to the Monthly Enterprise channel, you can use a servicing profile. Servicing profiles is a cloud-based update management solution for the Microsoft 365 Apps. Once configured, it keeps targeted installations current. If a targeted device is on a different channel, it will automatically be migrated to the [Monthly Enterprise Channel](overview-update-channels.md#monthly-enterprise-channel-overview).
+If you want to switch devices to Current Channel or Monthly Enterprise Channel, you can use the Microsoft 365 Apps admin center. In contrast to using the [Microsoft 365 admin center](#change-the-update-channel-using-the-microsoft-365-admin-center), the Apps admin center allows you to trigger a channel change for unmanaged and managed devices.
+
+If you prefer watching over reading, please view [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://youtu.be/tFmktdQsKgY).
+
+Here are the steps for changing the update channel to Current Channel or Monthly Enterprise Channel:
+
+1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admincenter/overview.md#how-to-get-to-the-admin-center) for eligible admin roles.
+1. Navigate to **Inventory**, select **Show all devices** and then the **Switch device update channel** button on the top.
+1. Select which devices should be moved and the targeted update channel.
+    - You can enter device names or Microsoft Entra ID groups, or a mix of both.
+    - For Entry ID groups, groups can be nested up to three levels down and contain a mix of device and user objects.
+1. Select **Move devices** to initiate the channel change.
 
 > [!NOTE]
-> Once activated, Servicing profiles will move all in-scope installations to the latest Monthly Enterprise Channel release and keep devices updated going forward. If you want to change to an update channel other than Monthly Enterprise Channel or not use a cloud-service to keep your devices updated, consider using one of the other options given in this article.
-
-Here are the steps for changing the update channel to Monthly Enterprise Channel using a servicing profile:
-
-1. Review the guidance on [Adopting servicing profiles](../fieldnotes/adopt-servicing-profiles.md).
-2. If not done already, log into the [Microsoft 365 Apps admin center](https://config.office.com) and set up a servicing profile as described in the guide.
-2. After the initial configuration of the servicing profile, navigate to **Servicing**, **Monthly Enterprise**, **Settings**, **Device selection criteria**.
-3. Select the **Channel** you want to move to Monthly Enterprise Channel.
-4. Click **Save**.
-
-All Microsoft 365 Apps installations which match all set selection criteria will be updated by servicing profiles. If installations are on a channel other than Monthly Enterprise, a channel change will be triggered. Next time the device syncs with the service, the new update channel configuration will be sent to the device. Next, the "Office Automatic Updates 2.0" scheduled task must run. It will detect the updated configuration and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The user interface on the client device won't show the updated channel until a build from the new channel is installed.
+> - It might take up to 24 hours for the channel change to be completed by the device, assuming devices are online and can connect to the service.
+> - A channel change is a point-in-time activity. If you are using Microsoft Entra ID groups and add devices or users to the group after initiating a channel change, those devices will not be moved automatically. You will have to initiate the channel change again. There's no need to remove already switched devices from the group.
+> - Microsoft recommends to also enable [Cloud Update](../admincenter/cloud-update.md) for automated update deployment.
 
 ## Change the update channel using the Microsoft 365 admin center
 
