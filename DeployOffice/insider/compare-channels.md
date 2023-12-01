@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides an overview and comparison of the two Microsoft 365 Insider channels: Beta Channel and Current Channel (Preview)."
-ms.date: 01/18/2023
+ms.date: 12/01/2023
 ---
 
 # Compare Microsoft 365 Insider channels
@@ -31,9 +31,9 @@ The following table compares the channels and provides scenarios for business us
 |Category |Beta Channel  |Current Channel (Preview)  |
 |---------|---------|---------|
 |*Description* | Includes features that are still in development.| Includes features that are in their final stages of development, so they're less likely to change. |
-|*Recommended use* |May be appropriate for a set of early adopters so that they can provide feedback on features that are under development. <br/><br/>Beta Channel provides access to new features even before they're available in Current Channel (Preview). <br/><br/>**Note: Beta Channel isn't supported**. It should be used only in test environments and by a small group of select users, such as IT staff or application developers. | Your organization gets updates to Microsoft 365 Apps from Current Channel, and you want to preview upcoming features on a subset of devices. <br/><br/>This preview can help you identify any possible issues for your organization and provide feedback to us before the new features are released to users on Current Channel. |
+|*Recommended use* |Might be appropriate for a set of early adopters so that they can provide feedback on features that are under development. <br/><br/>Beta Channel provides access to new features even before they're available in Current Channel (Preview). <br/><br/>**Note: Beta Channel isn't supported**. It should be used only in test environments and by a small group of select users, such as IT staff or application developers. | Your organization gets updates to Microsoft 365 Apps from Current Channel, and you want to preview upcoming features on a subset of devices. <br/><br/>This preview can help you identify any possible issues for your organization and provide feedback to us before the new features are released to users on Current Channel. |
 |*Release frequency* |Weekly   | A few times per month. <br/><br/>There isn’t a set release schedule for Current Channel (Preview). In general, a new version of Current Channel (Preview) with new features is released at least a week or more before that new version is released to Current Channel.  |
-|*Feature and non-security updates*| Weekly <br/><br/> Note: Not all users receive new features at the same time. | A few times per month. <br/><br/>There may be several releases of Current Channel (Preview) before that version is released to Current Channel.        |
+|*Feature and nonsecurity updates*| Weekly <br/><br/> Note: Not all users receive new features at the same time. | A few times per month. <br/><br/>There Might be several releases of Current Channel (Preview) before that version is released to Current Channel.        |
 |*Security updates <br/>(if needed)* | Monthly |Monthly |
 |*Support duration* |**Not supported** <br/><br/>Should be used only in test environments. |Supported until the next version is released. <br/><br/>For example, Version 2204 is supported until Version 2205 is released.|
 
