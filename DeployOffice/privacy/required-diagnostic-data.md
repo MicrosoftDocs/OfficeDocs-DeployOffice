@@ -5909,7 +5909,7 @@ The following fields are collected:
 
 ### Office.Fluid.LoopMobile.Generic.AppLifecycle
 
-The event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
+This event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
 
 The following fields are collected:
 
@@ -13584,7 +13584,7 @@ The following fields are collected:
 
 #### metric.diagnostic
 
-This event is triggered when we receive data on a diagnostic event (ex. a crash or hang) from the iOS system. The data is used to identify and diagnose issues to maintain the quality of service.
+This event is triggered when we receive data on a diagnostic event (for example, a crash or hang) from the iOS system. The data is used to identify and diagnose issues to maintain the quality of service.
 
 The following fields are collected:
 
@@ -13592,7 +13592,7 @@ The following fields are collected:
 
 - **call_stack_hash** - This represents a call stack which is used to diagnose a crash or hang.
 
-- **class_name** - This represents the class name of the exception, for example NSException.
+- **class_name** - This represents the class name of the exception. For example, NSException.
 
 - **composed_message** - A human-readable message string summarizing the reason for the exception.
 
@@ -13615,7 +13615,7 @@ The following fields are collected:
 
 #### metric.diagnostic.call.stack.map
 
-This event is triggered when we receive data on a diagnostic event (ex. a crash or hang) from the iOS system. The data is used to determine what code caused the crash or hang.
+This event is triggered when we receive data on a diagnostic event (for example, a crash or hang) from the iOS system. The data is used to determine what code caused the crash or hang.
 
 The following fields are collected:
 
