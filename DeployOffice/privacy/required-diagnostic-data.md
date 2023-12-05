@@ -5907,6 +5907,15 @@ The following fields are collected:
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
 
 
+### Office.Fluid.LoopMobile.Generic.AppLifecycle
+
+The event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
+
+The following fields are collected:
+
+- **LifecycleEvent** - Indicates the type of application lifecycle event.
+
+
 #### Office.Fluid.LoopMobile.UserAction.FRE
  
 The event is triggered when Loop Android is launched for the first time and goes through the First Run Experience flow. The data is used to monitor the health of Loop Android’s First Run Experience (FRE) flow, determine its success state, and whether users get stuck in the process of using the app for the first time.
@@ -13571,6 +13580,48 @@ The following fields are collected:
 - **rendering_time** - the time to render message by the bundle  
 
 - **wait_time** - the time to build message URL
+
+
+#### metric.diagnostic
+
+This event is triggered when we receive data on a diagnostic event (ex. a crash or hang) from the iOS system. The data is used to identify and diagnose issues to maintain the quality of service.
+
+The following fields are collected:
+
+- **arguments** - This represents arguments passed to the format_string.
+
+- **call_stack_hash** - This represents a call stack which is used to diagnose a crash or hang.
+
+- **class_name** - This represents the class name of the exception, for example NSException.
+
+- **composed_message** - A human-readable message string summarizing the reason for the exception.
+
+- **exception_code** - This represents an exception code which is used to determine what led to a crash.
+
+- **exception_name** - This represents an exception name which is used to determine what led to a crash.
+
+- **exception_type** - This represents an exception type which is used to determine what led to a crash.
+
+- **format_string** - This represents the exception message before arguments are substituted into the message.
+
+- **hang_duration** - The amount of time the app spent as unresponsive.
+
+- **signal** - This represents an exception signal which is used to determine what led to a crash.
+
+- **termination_reason** - The reason why the app crashed.
+
+- **virtual_memory_region_info** - This represents information stored in the app code when a crash occurred.
+
+
+#### metric.diagnostic.call.stack.map
+
+This event is triggered when we receive data on a diagnostic event (ex. a crash or hang) from the iOS system. The data is used to determine what code caused the crash or hang.
+
+The following fields are collected:
+
+- **call_stack** – This represents a call stack which is used to diagnose a crash or hang.
+
+- **call_stack_hash** – This represents the hash of a call stack which can be used to correlate this even with the metric_diagnostic event.
 
 
 #### Office.Android.AdsMobile.Wxpu.AdUIEvent
