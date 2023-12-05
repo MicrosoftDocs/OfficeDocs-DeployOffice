@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 11/10/2023
+ms.date: 12/05/2023
 ---
 
 # Required diagnostic data for Office
@@ -9444,7 +9444,7 @@ The following fields are collected:
 
 - **Data_fCoherencyFailureRetry** - Flag indicating that the save operation retried for coherency failures
 
-- **Data_FirstTryCV** - The first save retry actionn identifier
+- **Data_FirstTryCV** - The first save retry action identifier
 
 - **Data_fOperationCancelled** - Flag indicating that the save operation is cancelled
 
@@ -9452,11 +9452,11 @@ The following fields are collected:
 
 - **Data_fSaveShouldBrickFile** - Flag indicating that the save operation should brick the document
 
-- **Data_fStoppedRetryingAtCap** - Flag indicating that the save operation stopped retyring
+- **Data_fStoppedRetryingAtCap** - Flag indicating that the save operation stopped retrying
 
 - **Data_IntermediateResults** - Intermediate save actions' trackbag tags and error codes
 
-- **Data_IntermediateResultsTotalCount** - Integer that incicates intermediate save action count
+- **Data_IntermediateResultsTotalCount** - Integer that indicates intermediate save action count
 
 - **Data_LocationPickerPropagateToSaveTime,spLapsedMsec** - Measure the time, in milliseconds, that it takes for the save to trigger after getting a result from the location picker
 
@@ -9478,7 +9478,7 @@ The following fields are collected:
 
 - **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
-- **Data_RetryNumber** - Integer that indicates how many times the save operation retires
+- **Data_RetryNumber** - Integer that indicates how many times the save operation retries
 
 - **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
 
