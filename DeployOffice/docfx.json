@@ -41,9 +41,8 @@
       "searchScope": [
         "Deploy Office"
       ],
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-DeployOffice",
-      "feedback_product_url": "https://techcommunity.microsoft.com",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://techcommunity.microsoft.com",
       "titleSuffix": "Deploy Office",
       "contributors_to_exclude": [
         "rjagiewich",
