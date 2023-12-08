@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Microsoft 365 Apps, such as from 32-bit to 64-bit."
-ms.date: 03/01/2023
+ms.date: 12/08/2023
 ---
 
 # Change a Microsoft 365 Apps installation from 32-bit to 64-bit
