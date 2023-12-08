@@ -24,8 +24,6 @@ MigrateArch ensures a seamless migration, maintaining all previous deployment se
 
 ## Requirements for using the MigrateArch attribute
 
-Here are the requirements to use the MigrateArch attribute:
-
 - Version 1902 or later of Microsoft 365 Apps installed on the device that you want to change the bitness of.
 - The Office Deployment Tool (version 16.0.11615.33602 or later) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 - A location that contains all the product and language files for the architecture that you're changing the installation to.
