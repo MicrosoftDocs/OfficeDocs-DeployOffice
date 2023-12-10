@@ -2,6 +2,15 @@
 
 
 
+## Week of December 04, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/5/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+| 12/8/2023 | [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](/DeployOffice/change-bitness) | modified |
+
+
 ## Week of November 27, 2023
 
 
