@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 12/01/2023
+ms.date: 12/12/2023
 ---
 
 # Macros from the internet are blocked by default in Office
@@ -39,7 +39,6 @@ Also, review the following information:
 |---------|---------|
 |Understand which version in each update channel has this change |[Versions of Office affected by this change](#versions-of-office-affected-by-this-change)|
 |See a flow chart of the process Office takes to determine whether to run macros in a file| [How Office determines whether to run macros in files from the internet](#how-office-determines-whether-to-run-macros-in-files-from-the-internet) |
-|Identify files with VBA macros that might be blocked using the Readiness Toolkit | [Use the Readiness Toolkit to identify files with VBA macros that might be blocked](#use-the-readiness-toolkit-to-identify-files-with-vba-macros-that-might-be-blocked) |
 |Learn about policies that you can use to control VBA macro execution |[Use policies to manage how Office handles macros](#use-policies-to-manage-how-office-handles-macros)|
 
 ## Steps to take to allow VBA macros to run in files that you trust
@@ -267,34 +266,6 @@ Here's a list of ZoneId values and what zone they map to.
 For example, if the ZoneId is 2, VBA macros in that file won't be blocked by default. But if the ZoneId is 3, macros in that file will be blocked by default.
 
 You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value allows VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
-
-## Use the Readiness Toolkit to identify files with VBA macros that might be blocked
-
-To identify files that have VBA macros that might be blocked from running, you can use the Readiness Toolkit for Office add-ins and VBA, which is a free download from Microsoft.
-
-The Readiness Toolkit includes a standalone executable that can be run from a command line or from within a script. You can run the Readiness Toolkit on a user's device to look at files on the user's device. Or you can run it from your device to look at files on a network share.
-
-When you run the standalone executable version of the Readiness Toolkit, a JSON file is created with the information collected. You want to save the JSON files in a central location, such as a network share. Then you run the Readiness Report Creator, which is a UI wizard version of the Readiness Toolkit. This wizard consolidates the information in the separate JSON files into a single report in the form of an Excel file.
-
-To identify files that might be impacted by using the Readiness Toolkit, follow these basic steps:
-
-1. [Download the most current version](https://www.microsoft.com/download/details.aspx?id=55983) of the Readiness Toolkit from the Microsoft Download Center. Make sure you're using at least Version 1.2.22161, which was released on June 14, 2022.
-2. Install the Readiness Toolkit.
-3. From a command prompt, go to the folder where you installed the Readiness Toolkit and run the ReadinessReportCreator.exe command with the blockinternetscan option. 
-
-   For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
-
-```console
-ReadinessReportCreator.exe -blockinternetscan -p c:\officefiles\ -r -output \\server01\finance -silent
-```
-
-4. After you've done all your scans, run the Readiness Report Creator.
-5. On the **Create a readiness report page**, select **Previous readiness results saved together in a local folder or network share**, and then specify the location where you saved all the files for the scans.
-6. On the **Report settings** page, select **Excel report**, and then specify a location to save the report.
-7. When you open the report in Excel, go to the **VBA Results** worksheet.
-8. In the **Guideline** column, look for **Blocked VBA file from Internet**.
-
-For more detailed information about using the Readiness Toolkit, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
 ## Use policies to manage how Office handles macros
 

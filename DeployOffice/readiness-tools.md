@@ -15,6 +15,9 @@ ms.date: 03/01/2023
 
 # Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps
 
+> [!IMPORTANT]
+> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
+
 Organizations tell us that application compatibility and readiness assessment is one of their top concerns when planning an upgrade to Microsoft 365 Apps. To help organizations with this assessment effort, we have released different on-premises tools over the last several years. Because there are different tools available, organizations ask us which of these tools they should be using as they plan and implement their upgrade to Microsoft 365 Apps. The answer can depend on various factors, but in general our recommendation is:
 
  - Use the [Readiness Toolkit](#readiness-toolkit-for-office-add-ins-and-vba) for basic environments where simplified tool deployment and use is desired.
