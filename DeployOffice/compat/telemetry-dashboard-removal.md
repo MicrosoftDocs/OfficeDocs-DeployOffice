@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Notification to Microsoft 365 admins that Office Telemetry Dashboard is being removed from Microsoft 365 Apps for enterprise."
-ms.date: 03/14/2023
+ms.date: 12/12/2023
 ---
 
 # Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise
@@ -79,7 +79,6 @@ The SQL Server database, which stores the information used by Office Telemetry D
 
 As an alternative to Office Telemetry Dashboard, we recommend using the following tools, depending on the information you need:
 
-- Readiness Toolkit for Office add-ins and VBA
 - Inventory feature in the Microsoft 365 Apps admin center
 - Apps health feature in the Microsoft 365 Apps admin center
 - Microsoft 365 Apps readiness features in Microsoft Configuration Manager (current branch)
@@ -87,7 +86,6 @@ As an alternative to Office Telemetry Dashboard, we recommend using the followin
 For more information about these tools, see the following articles:
 
 - [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](../readiness-tools.md)
-- [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](../readiness-toolkit-application-compatibility-microsoft-365-apps.md)
 - [Overview of inventory in the Microsoft 365 Apps admin center](../admincenter/inventory.md)
 - [Overview of Apps health in the Microsoft 365 Apps admin center](../admincenter/microsoft-365-apps-health.md)
 - [Introduction to Apps health (video)](https://youtu.be/g9tiCFNDOEw)

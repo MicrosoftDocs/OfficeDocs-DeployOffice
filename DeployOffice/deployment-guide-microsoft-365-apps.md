@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-get-started
 recommendations: false
 description: "This guide helps IT Pros plan, deploy, and manage Microsoft 365 Apps in their enterprise environments."
-ms.date: 03/01/2023
+ms.date: 12/12/2023
 ---
 
 # Deployment guide for Microsoft 365 Apps
@@ -31,8 +31,6 @@ ms.date: 03/01/2023
 - [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md)
 
 - [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](upgrade-from-msi-version.md)
-  
-- [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
   
 - [Microsoft FastTrack](https://www.microsoft.com/fasttrack)
   
