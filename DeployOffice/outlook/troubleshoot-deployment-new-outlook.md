@@ -19,7 +19,7 @@ ms.date: 12/13/2023
 As organizations transition to new Outlook, which offers a more agile and consistent experience in Windows, admins and users could encounter issues, from toggle visibility in the classic Outlook to installation hurdles. This article provides step-by-step solutions to addressing these challenges, ensuring a smooth integration of new Outlook into your work environment, whether it's through direct installation, using various deployment options, or managing policy settings.
 
 ## Toggle in classic Outlook doesn’t work
-When the toggle in classic Outlook is visible but unresponsive, it's typically due to installation issues related to security settings. For resolving this issue, refer to [Troubleshooting installation issues in the new Outlook client](#troubleshooting-installation-issues-in-the-new-outlook-client) for detailed steps to address security-related installation problems.
+When the toggle in classic Outlook is visible but unresponsive, it's typically due to installation issues related to security settings. For resolving this issue, refer to [Troubleshooting installation issues in the new Outlook client](#troubleshoot-installation-issues-in-the-new-outlook-client) for detailed steps to address security-related installation problems.
 
 ## Toggle doesn't show in classic Outlook
 One or more of the following reasons might cause the missing toggle in classic Outlook:
@@ -79,6 +79,7 @@ To check this setting for your computer:
    - Prevent nonadmins users from installing packaged Windows apps
    - Allow all trusted apps to install
 4. Make sure that value for these settings is set as follows:
+
    | Setting                                                   | Value          |
    |-----------------------------------------------------------|----------------|
    | Prevent nonadmins users from installing packaged Windows apps | Not configured |
