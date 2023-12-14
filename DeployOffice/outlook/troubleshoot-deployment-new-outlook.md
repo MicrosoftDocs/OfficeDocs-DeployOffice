@@ -35,21 +35,21 @@ One or more of the following reasons might cause the missing toggle in classic O
   - Check account compatibility: If new Outlook launches successfully on a system for another user, have the user who can't access the toggle sign-in on that system to see if the toggle appears.
   - Contact support: When reaching out to Microsoft Support, include the ETL files from %Temp%\Outlook Logging (accessible via Start > Run > %Temp%\Outlook Logging). These files help us determine why the toggle doesn’t show.
 
-## Sovereign network consideration
+### Sovereign network consideration
 For Windows computers that are or were part of a sovereign network, the option of switching to new Outlook isn't available. This restriction is due to the specific network configurations and security protocols inherent to sovereign networks.
 
-## Toggle settings in registry
+### Toggle settings in registry
 The 'HideNewOutlookToggle' registry key controls the visibility of the new Outlook toggle in classic Outlook. This key is located under [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]. If "HideNewOutlookToggle" is set to ‘1’, the toggle remains hidden in classic Outlook. Changing this value to ‘0’ and restarting classic Outlook makes the toggle visible.
 
-## Cloud policy
+### Cloud policy
 In case a policy is set to disable the toggle in new Outlook:
 - Check the Global setting in the [Microsoft 365 Apps admin center](https://config.office.com/).
 - Search for the “Hide the 'Try the new Outlook' toggle in Outlook” policy.
   - If this policy is enabled, disable it to allow the toggle to appear.
 
-# Troubleshooting installation issues in the new Outlook client
+## Troubleshooting installation issues in the new Outlook client
 
-## Installation issues due to policy restrictions
+### Installation issues due to policy restrictions
 Admins who encountered user difficulties in installing new Outlook might have policies in place that prevent app download and installation.
 
 Common scenarios include users attempting to switch from Desktop Outlook but finding the toggle reverts and new Outlook doesn't launch.
@@ -85,24 +85,24 @@ To check this setting for your computer:
    | Prevent nonadmins users from installing packaged Windows apps | Not configured |
    | Allow all trusted apps to install                             | Not configured |
 
-## Firewalls
+### Firewalls
 To download, install and get continuous updates for new Outlook, make sure proxy and firewall isn't blocking access to the Microsoft Store
 - [https://res.cdn.office.net](https://res.cdn.office.net)
-- [res.cdn.office.net/nativehost/5mttl/installer/](http://res.cdn.office.net/nativehost/5mttl/installer/)
+- [res.cdn.office.net/nativehost/5mttl/installer/](https://res.cdn.office.net/nativehost/5mttl/installer/)
 
-## Blocking executables
+### Blocking executables
 Ensure there are no security policies or software blocking executables from running in the user’s temp directory.
 - Examples of security programs include: AppLocker, Anti-Virus, Group Policy, third party security software.
 - Win32 downloads the installer to %TEMP%, which is almost always inside of the C:\Users\ directory unless explicitly configured otherwise. If they're blocking exes in that directory, Desktop Outlook fails to start the installer.
 - “NewOutlookInstaller.exe” is the filename that needs to execute.
 
-## Delivery optimization
+### Delivery optimization
 Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. [Reset delivery optimization key](/windows/deployment/do/waas-delivery-optimization-reference#download-mode):
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
 - Delete the key: DODownloadMode
 
-## Other deployment options
-### Microsoft store is blocked
+### Other deployment options
+#### Microsoft store is blocked
 For organizations that disable access to the Windows Store, the installer can be directly accessed from the Office CDN.
 To install new Outlook on a single computer with many users, follow these steps:
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
@@ -113,7 +113,7 @@ To install new Outlook on a single computer with many users, follow these steps:
  .\Setup.exe --provision true --quiet --start-*
  ```
 
-### Microsoft Store isn't blocked
+#### Microsoft Store isn't blocked
 Install new Outlook via Windows Package Manager (winget), when Microsoft Store isn't blocked:
 1. Open PowerShell by pressing Windows + X and select Terminal (Windows 10 users select PowerShell).
 2. Enter the following command to install the Microsoft Store version of new Outlook:
