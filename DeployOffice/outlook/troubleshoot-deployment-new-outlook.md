@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting deployment issues in new Outlook"
+title: "Troubleshoot deployment issues in new Outlook"
 ms.author: caithart
 author: nicholasswhite
 manager: dougeby
@@ -14,14 +14,14 @@ description: "Provides detailed solutions for troubleshooting deployment and ins
 ms.date: 12/13/2023
 ---
 
-# Troubleshooting deployment issues in new Outlook
+# Troubleshoot deployment issues in new Outlook
 
 As organizations transition to new Outlook, which offers a more agile and consistent experience in Windows, admins and users could encounter issues, from toggle visibility in the classic Outlook to installation hurdles. This article provides step-by-step solutions to addressing these challenges, ensuring a smooth integration of new Outlook into your work environment, whether it's through direct installation, using various deployment options, or managing policy settings.
 
 ## Toggle in classic Outlook doesn’t work
 When the toggle in classic Outlook is visible but unresponsive, it's typically due to installation issues related to security settings. For resolving this issue, refer to [Troubleshooting installation issues in the new Outlook client](#troubleshooting-installation-issues-in-the-new-outlook-client) for detailed steps to address security-related installation problems.
 
-## Toggle doesn't show in classic Outlook.
+## Toggle doesn't show in classic Outlook
 One or more of the following reasons might cause the missing toggle in classic Outlook:
 
 - Unsupported Windows version
@@ -47,7 +47,7 @@ In case a policy is set to disable the toggle in new Outlook:
 - Search for the “Hide the 'Try the new Outlook' toggle in Outlook” policy.
   - If this policy is enabled, disable it to allow the toggle to appear.
 
-## Troubleshooting installation issues in the new Outlook client
+## Troubleshoot installation issues in the new Outlook client
 
 ### Installation issues due to policy restrictions
 Admins who encountered user difficulties in installing new Outlook might have policies in place that prevent app download and installation.
@@ -79,7 +79,6 @@ To check this setting for your computer:
    - Prevent nonadmins users from installing packaged Windows apps
    - Allow all trusted apps to install
 4. Make sure that value for these settings is set as follows:
-
    | Setting                                                   | Value          |
    |-----------------------------------------------------------|----------------|
    | Prevent nonadmins users from installing packaged Windows apps | Not configured |
@@ -87,8 +86,8 @@ To check this setting for your computer:
 
 ### Firewalls
 To download, install and get continuous updates for new Outlook, make sure proxy and firewall isn't blocking access to the Microsoft Store
-- [https://res.cdn.office.net](https://res.cdn.office.net)
-- [res.cdn.office.net/nativehost/5mttl/installer/](https://res.cdn.office.net/nativehost/5mttl/installer/)
+- https://res.cdn.office.net
+- res.cdn.office.net/nativehost/5mttl/installer/
 
 ### Blocking executables
 Ensure there are no security policies or software blocking executables from running in the user’s temp directory.
@@ -101,7 +100,7 @@ Download mode dictates which download sources clients are allowed to use when do
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
 - Delete the key: DODownloadMode
 
-### Other deployment options
+## Other deployment options
 #### Microsoft store is blocked
 For organizations that disable access to the Windows Store, the installer can be directly accessed from the Office CDN.
 To install new Outlook on a single computer with many users, follow these steps:
@@ -117,6 +116,6 @@ To install new Outlook on a single computer with many users, follow these steps:
 Install new Outlook via Windows Package Manager (winget), when Microsoft Store isn't blocked:
 1. Open PowerShell by pressing Windows + X and select Terminal (Windows 10 users select PowerShell).
 2. Enter the following command to install the Microsoft Store version of new Outlook:
-   ```powershell
-   winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements
-   ```
+```powershell
+winget install -i -e --id=9NRX63209R7B --source=msstore --accept-package-agreements
+```
