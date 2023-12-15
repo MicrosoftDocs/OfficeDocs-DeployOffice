@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 02/23/2023
+ms.date: 12/15/2023
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
@@ -55,15 +55,11 @@ Before deploying Microsoft 365 Apps, you may want to test your business-critical
 
 To complete that assessment, do the following steps:
 
-1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). We recommend to run the Readiness Toolkit on sample set of client devices across your organization. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md). 
- 
-2. Use the reports to identify the readiness status of your add-ins and get recommendations about how to fix any VBA macro issues that were identified.
+1. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Microsoft 365 Apps. 
 
-3. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Microsoft 365 Apps. 
+1. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
-4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
-
-As part of your deployment, you'll deploy the apps first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
+As part of your deployment, you'll deploy the apps first to the targeted group from step 1, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
 
 ## Review exit criteria 
 
@@ -83,7 +79,7 @@ Before planning your deployment, make sure you've completed all the steps for as
 |If using Configuration Manager, on current branch  |**Y/N**|
 |Office 365 (or Microsoft 365) licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
-|Run Readiness Toolkit                        |**Y/N**|
+|Validate compatibility                        |**Y/N**|
 |Fix critical add-ins                        |**Y/N**|
 |Define pilot group                        |**Y/N**|
 
