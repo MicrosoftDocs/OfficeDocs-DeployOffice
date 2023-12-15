@@ -12,7 +12,7 @@ search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 10/10/2023
+ms.date: 12/12/2023
 ---
 
 # Office versions and connectivity to Microsoft 365 services
@@ -48,7 +48,6 @@ We provide various services to help you upgrade to subscription versions of the 
 - [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure), for assistance from Microsoft with application compatibility issues.
 - [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md), for technical documentation.
 - [Product lifecycle dashboard](/mem/configmgr/core/clients/manage/asset-intelligence/product-lifecycle-dashboard) and [upgrade readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness), for users of Microsoft Configuration Manager (current branch).
-- [Readiness Toolkit for Office add-ins and VBA](../readiness-toolkit-application-compatibility-microsoft-365-apps.md), to help identify potential issues with add-ins and VBA macros used in your organization.
 
 ## Other changes related to connectivity to Microsoft 365 services
 

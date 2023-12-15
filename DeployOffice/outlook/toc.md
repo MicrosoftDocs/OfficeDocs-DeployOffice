@@ -10,3 +10,5 @@
 ## Manage
 ### [Policy management](manage/policy-management.md)
 ### [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+
+## [Troubleshoot](troubleshoot-deployment-new-outlook.md)

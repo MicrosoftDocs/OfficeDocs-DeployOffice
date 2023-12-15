@@ -10,29 +10,32 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
-ms.date: 03/01/2023
+ms.date: 12/12/2023
 ---
 
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
 
+> [!IMPORTANT]
+> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
+
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
-You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55983). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and will prompt you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
+You can download the Readiness Toolkit for free from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55983). We recommend that you always download and use the most current version. The Readiness Toolkit checks if you're using the most current version when you run a report and prompts you to download the most current version. You don't have to uninstall the older version of the Readiness Toolkit before installing the most current version.
 
 > [!IMPORTANT]
 > The Readiness Toolkit doesn't repair or fix the code in your VBA macros. If you create an advanced report, the report does provide guidance, when available, for remediating your VBA macro code. 
 
-The Readiness Report Creator can scan for VBA macros in Word, Excel, PowerPoint, Outlook, Access, Project, Visio, and Publisher files, for Office versions as far back as Office 2003. It can also scan for certain types of add-ins used with Office. Add-ins for all Office applications are identified, but it doesn't include web add-ins. For more information, see [File extensions analyzed for VBA macros](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_FileExt) and [Types of add-ins for which the Readiness Report Creator collects data](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddinTypes).
+The Readiness Report Creator scans for VBA macros across multiple Office applications. It supports Word, Excel, PowerPoint, Outlook, Access, Project, Visio, and Publisher files. This tool is compatible with Office versions starting from Office 2003. It can also scan for certain types of add-ins used with Office. Add-ins for all Office applications are identified, but it doesn't include web add-ins. For more information, see [File extensions analyzed for VBA macros](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_FileExt) and [Types of add-ins for which the Readiness Report Creator collects data](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddinTypes).
 
-The download is an MSI file that you can use to install the Readiness Toolkit on a user's computer. After it's installed, when you run the Readiness Report Creator, a UI wizard steps you through the process of creating a readiness report. There's also a standalone executable that can be run from the command line or used with scripts. This is useful if you need to collect readiness information from users throughout your enterprise in a more automated manner. For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).
+The download is an MSI file that you can use to install the Readiness Toolkit on a user's computer. After you install and run the Readiness Report Creator, the UI wizard steps you through the process of creating a readiness report. Additionally, there's a standalone executable that can be run from the command line or used with scripts. This executable is useful if you need to collect readiness information from users throughout your enterprise in a more automated manner For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).
 
 The following information is provided to help you use the Readiness Report Creator:
 
-- [Creating a readiness report](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Creating), including requirements and limitations, choosing the information to base your report on, and the difference between a basic and an advanced report.
+- [Create a readiness report](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Creating), including requirements and limitations, choosing the information to base your report on, and the difference between a basic and an advanced report.
 
 - [Interpreting the information in the readiness report](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Interpreting), for both VBA macros and add-in readiness.
 
-- [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
+- [Collect readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise), and using a command-line version of the Readiness Report Creator to scan multiple computers.
 
 - [Use SQL Server to store report results](#use-sql-server-to-store-report-results) and use Power BI to analyze report results to overcome some of the limitations of using Excel, especially for reports with large quantities of data.  
 
@@ -42,7 +45,7 @@ The following information is provided to help you use the Readiness Report Creat
 
 - [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports) to get better insights into which add-ins are used most often within your organization and by whom.
 
-- [Additional information](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddInfo), including file extensions that are analyzed by the Readiness Report Creator, the types of add-ins the Readiness Report Creator collects data on, and examples of the information sent to Microsoft when creating an advanced report.
+- [Additional information](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddInfo) details file extensions analyzed by the Readiness Report Creator. It also explains the types of add-ins for which the Readiness Report Creator collects data. Furthermore, it includes examples of the information sent to Microsoft when you create an advanced report.
 
 > [!NOTE]
 > - After running the Readiness Toolkit, many enterprises find that they have fewer compatibility issues than first expected. Based on data provided by enterprises running the Readiness Toolkit, on average 6% of scanned files have macros, and of those files, 3.3% have macro issues. So that's only 0.2% files with macro compatibility issues. For Office add-ins, 75% of add-ins found are already categorized as adopted or supported.
@@ -85,16 +88,16 @@ To create a readiness report, you first need to select what information to use t
 
 |**Option**|**Explanation**|**Report created**|
 |:-----|:-----|:-----|
-|Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator only scans Office documents that are in the user's list of most recently used files. This allows you to narrow the focus of the scan to documents that a user accesses regularly.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
+|Most recently used Office documents and installed add-ins on this computer  <br/> |The Readiness Report Creator focuses on scanning Office documents. It specifically targets documents in the user's list of most recent files. This approach ensures the scan is limited to documents that are regularly accessed.  <br/> <br/>In addition, the Readiness Report Creator looks for any add-ins for Office that are installed on the computer on which the Readiness Report Creator is run.  <br/> |VBA and Add-in  <br/> |
 |Office documents in a local folder or network share.  <br/> |The Readiness Report Creator scans the Office documents in the folder or network share that you specify. The Readiness Report Creator automatically scans the specified location, and all the subfolders in that location.  <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for add-ins installed on the computer on which the Readiness Report Creator is run. <br/> |VBA only  <br/> |
 |Previous readiness results saved together in a local folder or network share.  <br/> |This option allows you to create a consolidated report comprised of individual readiness results from multiple standalone computers.  <br/> <br/>For example, you might want to run the Readiness Report Creator on all the computers in the Finance department, saving the results of each scan to a network share. Then, you can use this option to create a consolidated report for the Finance department.  <br/><br/> For more information, see [Getting readiness information for multiple users in an enterprise](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_Enterprise).  <br/> |VBA only, or VBA and Add-in, depending on what readiness results are being used.  <br/> |
-|Add in data from Office Telemetry Dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](compat/plan-telemetry-dashboard-deployment.md) to assess add-in compatibility, you can use the information that you've already collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Office Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the database is required for the user to run this option. <br/> |Add-in only  <br/> |
+|Add in data from Office Telemetry Dashboard.  <br/> |If you're already using [Office Telemetry Dashboard](compat/plan-telemetry-dashboard-deployment.md) to assess add-in compatibility, you can use the information that you collected to create a readiness report. You just need to provide the Readiness Report Creator with the appropriate information to access the database for Office Telemetry Dashboard. <br/><br/> **Note:** With this option, the Readiness Report Creator doesn't look for VBA macros. GRANT SELECT access on the database is required for the user to run this option. <br/> |Add-in only  <br/> |
 
 <a name="BKMK_ChooseBasicAdv"> </a>
 
 ### Choosing between a basic and an advanced report
 
-After you select what information to use to create your report and specify a location to save your report, you need to choose whether to create a basic report or an advanced report.
+Select the information you want to use for your report and specify a location to save it. Then, decide whether to create a basic report or an advanced report.
 
 We strongly recommend that you create an advanced report because an advanced report provides additional information to help you assess the compatibility of your VBA macros and add-ins with Microsoft 365 Apps. For example, in an advanced report, you get the following additional information:
 
@@ -102,11 +105,11 @@ We strongly recommend that you create an advanced report because an advanced rep
 
 - Readiness status for add-ins. For example, the report might show that the software provider has a supported version of the add-in for Microsoft 365 Apps.
 
-The readiness status for add-ins is derived from telemetry-based computations as well as explicit support statements from ISVs. 
+The readiness status for add-ins is derived from telemetry-based computations and explicit support statements from ISVs. 
 
 To provide you with the most up-to-date remediation advice and readiness status, the Readiness Report Creator contacts Microsoft when it creates the report. Some information about your VBA macros and add-ins is sent to Microsoft. For more information about what is sent, see [Examples of the information sent to Microsoft when creating an advanced report](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_InfoSent).
 
- **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. The Readiness Toolkit calls a publicly available web-service, so the following URLs need to be allowed by your firewall:
+ **Important:** If you're creating an advanced report, make sure the computer on which you're running the Readiness Toolkit has access to the internet. Since the Readiness Toolkit uses a publicly available web-service, your firewall must allow the following URLs:
 
 - `https://officeclient.microsoft.com/serverconfig16`
 
@@ -118,7 +121,7 @@ To provide you with the most up-to-date remediation advice and readiness status,
 
 ## Interpreting the information in the readiness report
 
-The Readiness Report Creator creates a readiness report as an Excel file. The readiness information available in the report depends on what information you based your report on, as well as whether you chose to create a basic or advanced report.
+The Readiness Report Creator creates a readiness report as an Excel file. The readiness information available in the report depends on what information you based your report on, and whether you chose to create a basic or advanced report.
 
 Each report starts with an Overview page, which provides high-level information about the results, and links to the reports available - [VBA](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_VBAReport) or [Add-in](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_AddinReport) or both.
 
@@ -130,11 +133,11 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 |**Worksheet name**|**Contents**|
 |:-----|:-----|
-|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie chart shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. See the tables later in this section for more information about the file status and readiness status values that appear in these pie charts.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. The Readiness Toolkit does something similar to identify duplicate files. The Readiness Toolkit does this to provide you with a more realistic assessment of how many unique VBA macros and unique files need to be evaluated.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you've refreshed the report. <br/> |
-|VBA Summary  <br/> |Provides some pre-defined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
+|VBA Overview  <br/> |Displays three pie charts to provide a high-level overview of the results of the scan.  <br/><br/> Each pie chart shows different information: the status of the files scanned, the readiness status for the unique macros found during the scan, and readiness status of the unique files scanned. For more information about the file status and readiness status values that appear in these pie charts, see the tables later in this section.  <br/> <br/>The Readiness Toolkit creates a unique hash of the VBA macro code to identify macros that are reused in multiple files. Similarly, the Toolkit identifies duplicate files by using a comparable method. This process helps provide a more realistic assessment of the number of unique VBA macros and files that need evaluation.  <br/> <br/>**Note:** If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure that the "Include 64-bit readiness data" check box is selected and that you refresh the report. <br/> |
+|VBA Summary  <br/> |Provides some predefined PivotTables to allow you to analyze the data captured from the scan.  <br/> <br/>If these PivotTables don't meet your specific needs, you can create your own based on the data on the VBA Results worksheet.  <br/> |
 |VBA Results  <br/> |Provides information on each file scanned by the Readiness Report Creator. If multiple issues are found in a scanned file, there's a separate row for each issue.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 |VBA Remediation  <br/> |Provides proposed changes to VBA macro code found during the scan.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
-|VBA References  <br/> |List references identified in code and in the VBA project. These references are generally used to call external DLLs, linked files, and ODBC connections for use by the VBA code.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
+|VBA References  <br/> |List references identified in code and in the VBA project. These references are used to call external DLLs, linked files, and ODBC connections for use by the VBA code.  <br/><br/> See the table under the "Detailed VBA information" heading at the end of this section for an explanation of the information that appears in each column.  <br/> |
 
  **File status:** The report also categorizes, by a file status, the files that were scanned. The following table lists the possible file statuses that can appear in a readiness report, and an explanation of the file status.
 
@@ -142,30 +145,30 @@ The following table provides a list of the different tabs (worksheets) that are 
 |:-----|:-----|
 |No VBA  <br/> |The file was scanned and no VBA macro code was found.  <br/> |
 |Has VBA  <br/> |The file was scanned and VBA macro code was found.  <br/> |
-|Cloud-based  <br/> |The file couldn't be scanned because it's saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
+|Cloud-based  <br/> |The file couldn't be scanned because it's in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location.  <br/> |
 |Password protected  <br/> |The file is password protected so it couldn't be scanned for VBA macros.  <br/> |
 |Inaccessible  <br/> |The file couldn't be scanned for some reason, such as the Readiness Report Creator had insufficient permission to access the file, the file is corrupted, or the file uses an old Office file format.  <br/> |
 |Inaccessible - Driver required <br/> |The file couldn't be scanned because the required Microsoft Access Database Engine 2010 isn't installed on the computer performing the scan. <br/> |
 |Locked  <br/> |The file was locked or in use when the scan was performed.  <br/> |
-|Error  <br/> |The VBA code stream trying to be read during the scan wasn't in a valid format. Sometimes opening, and then saving, the file in a supported Office version will allow the Readiness Report Creator to scan the file.  <br/> |
+|Error  <br/> |The VBA code stream trying to be read during the scan wasn't in a valid format. Sometimes opening, and then saving, the file in a supported Office version allows the Readiness Report Creator to scan the file.  <br/> |
 
- **Severity level:** The report categorizes, by a severity level, the issues found with the VBA macros to help you estimate how much effort it will take to address the issues found. If multiple issues are found with a VBA macro, the report displays the highest severity level in the pie chart.
+ **Severity level:** The report categorizes, by a severity level, the issues found with the VBA macros to help you estimate how much effort it takes to address the issues found. If multiple issues are found with a VBA macro, the report displays the highest severity level in the pie chart.
 
 The following table lists the possible severities that can appear in a readiness report, and an explanation of the severity level.
 
 |**Severity**|**Explanation**|
 |:-----|:-----|
 |Ready to upgrade  <br/> |No issues were found in this file and it's compatible with Microsoft 365 Apps.  <br/> |
-|Code design awareness  <br/> |While the code will function as expected and the user isn't likely to notice any change, the feature, property, or method works differently than previously or might be deprecated in favor of a newer version.  <br/> |
-|Minimal validation recommended  <br/> |No runtime or compile time errors are expected, but the API functionality may have changed in some way. It's recommended that the user runs a spot check on the file with Microsoft 365 Apps to ensure it continues to function as expected. To minimize environmental issues, ideally run the spot check on the computer that the macro usually runs.  <br/> |
-|Limited remediation required  <br/> |Some refactoring of code will be required. But, there's a clear replacement and so the expectation is that the work required to fix the macro is significantly reduced.  <br/> |
-|Significant remediation required  <br/> |Significant code refactoring will be required to enable the code to continue to function as it did in the legacy Office version. For example, an API that has been deprecated, but no replacement function has been provided. In this case, the only option available is to recreate the functionality.  <br/> |
+|Code design awareness  <br/> |The code functions as expected, and the user didn't notice any change. However, the feature, property, or method operates differently than before, or it might be deprecated in favor of a newer version.  <br/> |
+|Minimal validation recommended  <br/> |No runtime or compile time errors are expected, but the API functionality could change in some way. The user should run a spot check on the file with Microsoft 365 Apps to ensure it continues to function as expected. To minimize environmental issues, ideally run the spot check on the computer that the macro usually runs.  <br/> |
+|Limited remediation required  <br/> |Some refactoring of code is required. But, there's a clear replacement and so the expectation is that the work required to fix the macro is reduced.  <br/> |
+|Significant remediation required  <br/> |Significant code refactoring is required to enable the code to continue to function as it did in the legacy Office version. For example, an API that was deprecated, but no replacement function was provided. In this case, the only option available is to recreate the functionality.  <br/> |
 
  **Detailed VBA information:** The VBA Results, VBA Remediation, and VBA References tabs in the VBA readiness report each contain similar columns of information. The following table provides a list of those columns, along with an explanation of what information is contained those columns.
 
 |**Column name**|**Explanation**|**Example**|
 |:-----|:-----|:-----|
-|Guideline  <br/> |The guideline (rule) identified when document has been scanned.  <br/> |Program Toolbars and Menu Bars will no longer be visible in Access 2013.  <br/> |
+|Guideline  <br/> |The guideline (rule) identified when document was scanned.  <br/> |Program Toolbars and Menu Bars are no longer visible in Access 2013.  <br/> |
 |Severity  <br/> |Severity of issue identified.  <br/> |Significant remediation required  <br/> |
 |Source Location  <br/> |Location of the file that was scanned.  <br/> |D:\\My Documents\\My Files\\  <br/> |
 |Source File  <br/> |Name of the file that was scanned.  <br/> |MyFileName.xlsx  <br/> |
@@ -173,16 +176,16 @@ The following table lists the possible severities that can appear in a readiness
 |Source File Extension  <br/> |Extension of the file that was scanned.  <br/> |.docm  <br/> |
 |Module  <br/> |Name of the module where the code issue was identified.  <br/> |mDJSCommandBars  <br/> |
 |Line #  <br/> |Line number where the code issue was identified.  <br/> |112  <br/> |
-|Type  <br/> |Type of issue that has been identified.  <br/> |VBA  <br/> |
+|Type  <br/> |Type of issue that was identified.  <br/> |VBA  <br/> |
 |Member  <br/> |VBA Module section name where the issue was identified (that is, function).  <br/> |CommandBars  <br/> |
 |Statement  <br/> |The section of the code where the issue was identified.  <br/> |Dim ctlName As CommandBarControl  <br/> |
 |VBA Hash  <br/> |Uniquely generated hash for the VBA code.  <br/> |CC-D2-F3-9C-58-48-04-E4-16-5B-B6-44-B3-EB-EB-FE  <br/> |
 |Reference  <br/> |Link to description of issue and help content (where applicable).  <br/> |[https://technet.microsoft.com/library/cc178954.aspx](/previous-versions/office/office-2013-resource-kit/cc178954(v=office.15)) <br/> |
 |FileStatus  <br/> |Classification of the status of the file that was processed.  <br/> |Password protected  <br/> |
-|64Bit  <br/> |Specifies if the issue identified is 64-bit specific.  <br/> |Yes  <br/> |
+|64-bit  <br/> |Specifies if the issue identified is 64-bit specific.  <br/> |Yes  <br/> |
 |UserHash  <br/> |User of the file.  <br/> |Katharine Cruz  <br/> |
 |DeviceName  <br/> |Name of the computer where the scan was performed.  <br/> |Laptop01  <br/> |
-|Original code  <br/> |VBA code found in the macro, which may cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
+|Original code  <br/> |VBA code found in the macro, which could cause issues when moving to a 64-bit version of Office.  <br/> |Private Declare Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As Long  <br/> |
 |Proposed changes  <br/> |Suggestions on how the VBA code in the macro can be updated to work correctly with a 64-bit version of Office.<sup>1, 2</sup> <br/> |Private Declare PtrSafe Function FindWindow Lib "user32" Alias "FindWindowA" (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr  <br/> |
 |Label1 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|North America <br/>|
 |Label2 <br/>|Value of custom label, if configured. For more information, see [Use labels to categorize and filter data in reports](#use-labels-to-categorize-and-filter-data-in-reports). <br/>|San Francisco <br/>|
@@ -203,19 +206,21 @@ The following table provides a list of the different tabs (worksheets) that are 
 
 |**Worksheet name**|**Contents**|
 |:-----|:-----|
-|Add-in Summary  <br/> |Provides a high-level overview of the add-ins found by the Readiness Report Creator.  <br/><br/> The data at the top of the worksheet is intended to give you a quick assessment of how many add-ins will likely be compatible with Microsoft 365 Apps and how many add-ins you'll need to do more research on.  <br/> |
+|Add-in Summary  <br/> |Provides a high-level overview of the add-ins found by the Readiness Report Creator.  <br/><br/> The data at the top of the worksheet provides a quick assessment. It shows how many add-ins are likely to be compatible with Microsoft 365 Apps and how many require further research.  <br/> |
 |Add-in Details  <br/> |Provides metadata information about the add-ins found (for example, publisher and version number), the total number of installs of each add-in, and, if an advanced report, the readiness status (for example, "Supported version available").  <br/> |
-|By computer name  <br/> |Provides similar information to what's on the Add-in Details worksheet, but lists every computer that the add-in is installed on, instead of just a total number of installs for the add-in.  <br/> |
+|By computer name  <br/> |This worksheet displays information similar to the Add-in Details worksheet. However, it lists each computer with the add-in installed, rather than just the total number of installations.  <br/> |
 
 You can adjust what information is shown in the add-in report by selecting choices from the drop-down lists on the Add-in Summary tab, and then refreshing the report. For example, you can adjust the report to only show information about Access and Excel add-ins.
 
-By default, add-ins that are shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises won't need to worry about application compatibility of add-ins that are shipped with Office.
+By default, add-ins shipped by Office aren't shown. If you want to see information about those add-ins, select "Yes" from the drop-down list and refresh the report. But, most enterprises don't need to worry about application compatibility of add-ins that are shipped with Office.
 
-If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports) and only want to see information about add-ins that are being used, you can select "Yes" from the drop-down list and refresh the report.
+If you're [collecting add-in usage information](#collect-and-show-add-in-usage-information-in-reports), you can focus solely on add-ins in use by  selecting 'Yes' from the drop-down list and refresh the report.
 
-If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure to select "64-bit" from the drop-down list and refresh the report. This provides 64-bit specific readiness information about the add-ins. The default selection for reports is 32-bit.
+If you plan to deploy the 64-bit version of Microsoft 365 Apps, be sure to select '64-bit' from the drop-down list and refresh the report. Doing so provides specific readiness information about the add-ins for the 64-bit version. The default selection for reports is 32-bit.
 
 The following table lists the possible readiness statuses that you can see in the add-in report and an explanation of what each status means. 
+
+<a name="readistat"></a>
 
 |**Readiness status**|**Explanation**|
 |:-----|:-----|
@@ -225,9 +230,9 @@ The following table lists the possible readiness statuses that you can see in th
 |Contact software provider  <br/> |This add-in might have issues with Microsoft 365 Apps. You need to decide if this add-in is business critical and then contact the software provider for guidance.  <br/> |
 |Supported version available  <br/> |A supported version of this add-in for Microsoft 365 Apps is available from the software provider.  <br/> |
 |Unknown<sup>1,2</sup> <br/> |This add-in is unknown to Microsoft. For example, it could be a line-of-business add-in that your in-house application development team created.  <br/><br/> If you create a basic report, the readiness status for all add-ins is listed as Unknown. It's only when you create an advanced report that the Readiness Report Creator contacts Microsoft to try to get readiness status of add-ins.  <br/> |
-|Insufficient data<sup>2</sup> <br/> |Microsoft has seen this add-in but not enough information has been collected to provide a readiness status for this add-in.  <br/> |
+|Insufficient data<sup>2</sup> <br/> |Microsoft is aware of this add-in but not enough information is collected to provide a readiness status for this add-in.  <br/> |
 
-<sup>1</sup> Some of the add-ins that ship by default with Office are currently flagged as Unknown in an add-in readiness report. These add-ins are actually Highly Adopted and are supported by Microsoft. Here are the names of those add-ins: ActionsPane Schema for Add-Ins, Analysis ToolPak, Analysis ToolPak - VBA, Date (XML), Conversation History Add-in for Microsoft Office 2016, Euro Currency Tools, Instant Messaging Contacts (English), Measurement Converter (Measurement Converter), Microsoft Actions Pane 3, Skype Meeting Add-in for Microsoft Office 2016, Solver Add-in, Telephone Number (XML), and Time (XML).
+<sup>1</sup> Some of the add-ins that ship by default with Office are currently flagged as Unknown in an add-in readiness report. These add-ins are actually Highly Adopted and supported by Microsoft. Here are the names of those add-ins: ActionsPane Schema for Add-Ins, Analysis ToolPak, Analysis ToolPak - VBA, Date (XML), Conversation History Add-in for Microsoft Office 2016, Euro Currency Tools, Instant Messaging Contacts (English), Measurement Converter (Measurement Converter), Microsoft Actions Pane 3, Skype Meeting Add-in for Microsoft Office 2016, Solver Add-in, Telephone Number (XML), and Time (XML).
 
 <sup>2</sup> For more information, see [Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"](readiness-toolkit-application-compatibility-microsoft-365-apps.md#BKMK_UnknownInsufficient).
 
@@ -242,12 +247,12 @@ The following table lists the possible readiness statuses that you can see in th
 | Add-in Version  <br/>            | The version of the add-in.  <br/>                                                                                                                                                                                                                                                                                |
 | App  <br/>                       | The Office application that the add-in is used in. For example, Word or Excel.  <br/>                                                                                                                                                                                                                            |
 | Total Installs  <br/>            | The total numbers of installs of the add-in.  <br/><br/> This column only appears on the "Add-in Details" tab.  <br/>                                                                                                                                                                                            |
-| Readiness status (32-bit)  <br/> | The readiness status for the add-in. Advanced reports only. <br/> <br/> See the table above for a list of possible readiness statuses.  <br/><br/> Note: If you chose "64-bit" from the drop-down list on the "Add-in Summary" tab, this column name displays as "(64-bit)" instead.  <br/>                      |
+| Readiness status (32-bit)  <br/> | The readiness status for the add-in. Advanced reports only. <br/> <br/> See the [Readiness status](#readistat) table for a list of possible readiness statuses.  <br/><br/> Note: If you chose "64-bit" from the drop-down list on the "Add-in Summary" tab, this column name displays as "(64-bit)" instead.  <br/>                      |
 | Remarks  <br/>                   | Additional information, if available, about the readiness status of the add-in. Advanced reports only.  <br/>                                                                                                                                                                                                    |
-| More information  <br/>          | Link to additional readiness information about the add-in. Advanced reports only.  <br/>                                                                                                                                                                                                                         |
+| More information  <br/>          | Link to other readiness information about the add-in. Advanced reports only.  <br/>                                                                                                                                                                                                                         |
 | Total Device Installs            | Number of devices on which the add-in is installed. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).                                                        |
-| Total devices add-in used        | Number of devices on which the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports). |
-| Add-in used since *{date}*       | Indication of whether the add-in has been used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).      |
+| Total devices add-in used        | Number of devices on which the add-in was used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports). |
+| Add-in used since *{date}*       | Indication of whether the add-in was used since you started collecting add-in usage information. <br><br> Available when collecting add-in usage information. For more information, see [Collect and show add-in usage information in reports](#collect-and-show-add-in-usage-information-in-reports).      |
 
 <a name="BKMK_Enterprise"> </a>
 
@@ -260,7 +265,7 @@ Along with the UI wizard version of the Readiness Report Creator, there's also a
 
 If you have your users run the UI wizard version of the Readiness Report Creator, you end up with separate Excel files, one for each user. That makes it difficult to see readiness from a departmental or office-wide perspective. You also have to rely on the users to run the Readiness Report Creator and follow the instructions correctly. 
 
-The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do this, make sure that the appropriate write permissions are given to the share.
+The better alternative might be to use the command line capabilities of the Readiness Report Creator and use a script to run the Readiness Report Creator to collect the information on behalf of the user. You can save the files created by the Readiness Report Creator to a network share. If you do share the files, make sure that the appropriate write permissions are given to the share.
 
 > [!NOTE]
 > If you're running the Readiness Toolkit by using Microsoft Configuration Manager, or similar enterprise software deployment tools, be sure to deploy the package using the user context, instead of the system context. Otherwise, the Readiness Toolkit won't be able to read the most recently used (MRU) information in the current user's registry hive on the computer.
@@ -273,7 +278,7 @@ ReadinessReportCreator.exe -help
 
 The command line version of the Readiness Report Creator doesn't have the all the same capabilities as the UI wizard version. You can use the command line version to scan the most recently used Office documents and installed add-ins on a computer, or Office documents in a local folder or network share.
 
-The following is an example of a command line that you can run to scan for both VBA macros and add-ins, and save the results to a network share for the Finance department. Note that you have to include addinscan option as part of the command line for the add-in scan to occur.
+The following is an example of a command line that you can run to scan for both VBA macros and add-ins, and save the results to a network share for the Finance department. You have to include addinscan option as part of the command line for the add-in scan to occur.
 
 ```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent
@@ -295,19 +300,19 @@ It's important to note that when you run the Readiness Report Creator from the c
 
 To create a consolidated Excel report from these various command line scans, you need to run the UI wizard version of the Readiness Report Creator. For the information source, select "Previous readiness results saved together in a local folder or network share," and then specify the location where you saved all the files for the scans. The Readiness Report Creator then consolidates the information from the JSON files into a readiness report in a single Excel file.
 
-Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.  Alternatively, the SQL export option doesn't have a limit on the number of results that it can accommodate, so this may be a suitable choice if you expect a large number of results.
+Keep in mind that the Readiness Report Creator lists each issue with an Office document in a separate row in the Excel worksheet. Therefore, the Readiness Report Creator can only return 1,046,575 results. If you expect to exceed these limits, we recommend that you narrow the scope of your report, such as to a specific department.  Alternatively, the SQL export option, which doesn't have a limit on the number of results it can accommodate, might be a suitable choice if you expect a large number of results.
 
-By default, the Readiness Toolkit will spend 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
+By default, the Readiness Toolkit spends 2 minutes scanning a file before timing out and moving on to another file. You can use the -t option from the command line to allow the Readiness Toolkit more than 2 minutes to scan a file.
 
 ## Use SQL Server to store report results
 
 Starting with Version 1.2.19098 (which was released on April 9, 2019), you can export report data to any supported version of SQL Server or SQL Server Express. This capability is in response to feedback from many customers who want greater scale and more flexibility when running Readiness Toolkit reports.
 
-You can use either the Readiness Report Creator wizard or the command line. If you're using the Readiness Report Creator, select either **Office documents in a local folder or network share** or **Previous readiness results saved together in a local folder or network share** option. Then, on the **Report settings** page, select **SQL Server report**. Provide the necessary credentials and the name of the database you want to use. If the database doesn't exist, it will be created.
+You can use either the Readiness Report Creator wizard or the command line. If you're using the Readiness Report Creator, select either **Office documents in a local folder or network share** or **Previous readiness results saved together in a local folder or network share** option. Then, on the **Report settings** page, select **SQL Server report**. Provide the necessary credentials and the name of the database you want to use. If the database doesn't exist, it's created.
 
-Instead of creating an Excel file, a Power BI report, with the same information, is created for you to review the results. This Power BI report can be expanded on or changed as desired. It has a file extension of .pbit and is saved to the folder where the Readiness Toolkit is installed, which is usually C:\Program Files (x86)\Microsoft Readiness Toolkit for Office. If prompted in Power BI, select **Direct Query** data access mode.
+Instead of creating an Excel file, a Power BI report, with the same information, is created for you to review the results. This Power BI report can be expanded on or changed as desired. The Power BI report has a file extension of .pbit and is saved to the folder where the Readiness Toolkit is installed. Typically, the Readiness Toolkit is installed in C:\Program Files (x86)\Microsoft Readiness Toolkit for Office. If prompted in Power BI, select **Direct Query** data access mode.
 
-If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, you can use the following command to create a report from previous readiness results for the Finance department, using a local SQL database named Readiness, and using SQL Server authentication, instead of Windows authentication.
+If you're using the command line version of the Readiness Report Creator, type ReadinessReportCreator.exe -help to see the appropriate commands for using a SQL Server database. For example, to create a report from previous readiness results for the Finance department, you can use the following command. This command utilizes a local SQL database named 'Readiness'. It employs SQL Server authentication instead of Windows authentication.
 
 ```console
 ReadinessReportCreator.exe -sqlimport “C:\Reports\Finance” -server localhost/SQLEXPRESS -database Readiness -username Officeadmin -password seCRet123$%^
@@ -334,13 +339,13 @@ It’s common for users in an organization to save Office files using file names
 
 If you're using the UI wizard, begin by selecting either "Most recently used Office documents and installed add-ins on this computer" or "Office documents in a local folder or network share" as the type of report that you want to create. Then, on the next page of the wizard, select the **Conceal file names and paths** check box, before continuing on.
 
-If you are using the command line to create a report, use the -ConcealNames option, as shown in the following example.
+If you're using the command line to create a report, use the -ConcealNames option, as shown in the following example.
 
 ```console
 ReadinessReportCreator.exe -mru -addinscan -output \\server01\finance -silent -concealnames
 ```
 
-When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path, up to 8 characters, and of the file name are replaced with asterisks (\*). For example, "c:\mergersinfo\Q4\companyx.docx" will appear as "c:\\\*\*\*\*\*\*\*\*\co\*\*\*\*\*\*.docx."
+When you create a report that conceals the file paths and names of documents, the only characters that remain are the drive letter, the first two characters of the file name, and the file extension. The other characters of the file path, up to eight characters, and of the file name are replaced with asterisks (\*). For example, "c:\mergersinfo\Q4\companyx.docx" appears as "c:\\\*\*\*\*\*\*\*\*\co\*\*\*\*\*\*.docx."
 
 When the report is created, a file named file-names.log is created on the computer that ran the scan. This file contains a complete list of the file paths and names that were scanned, without any of the information concealed. The log file also includes a reference code for each file listed. This reference code appears in a column of the report that's created. This allows you to identify the specific file in the report, in case a VBA macro or add-in issue that needs further investigation is identified in the report. The file-names.log file is saved to a temp folder in the user's AppData folder. For example, for user01, the file is saved to the C:\Users\user01\AppData\Local\Readiness Toolkit Temp\\ folder. 
 
@@ -365,7 +370,7 @@ We recommend that you allow the usage agent to run for at least 30 days, to ensu
 
 Silverlight, Shockwave Flash, and Macromedia Flash controls are blocked from activating in Microsoft 365 Apps. For more information about this, [read this Tech Community post](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Blocking-Flash-Shockwave-Silverlight-controls-from-activating-in/ba-p/191729).
 
-To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This will scan all Office files, even if those files don't contain macros. Because more files are scanned, report creation will take longer.
+To identify Office files that contain these controls, you can choose to scan all Office documents when you create a readiness report. This scans all Office files, even if those files don't contain macros. Because more files are scanned, report creation takes longer.
 
 <a name="cloudfiles"> </a>
 
@@ -373,7 +378,7 @@ To identify Office files that contain these controls, you can choose to scan all
 
 By default, the Readiness Report Creator can't scan files that are saved in a SharePoint document library, in OneDrive, or in some other type of cloud-based storage location. If you try to scan one of these files, the file shows up as "Cloud-based" in the report.
 
-One possible workaround is to scan the local cache of these cloud-based files on the user's computer. If the files are only stored in a cloud-based location, you can create a mapped network drive to a OneDrive or SharePoint share. Then, you can have Readiness Report Creator scan that drive. But, when this location is scanned, the files must be downloaded in memory to perform the scan. Depending on the number and size of those files, this could result in the scan taking significantly longer and using up a considerable amount of network bandwidth.
+One possible workaround is to scan the local cache of these cloud-based files on the user's computer. If the files are only stored in a cloud-based location, you can create a mapped network drive to a OneDrive or SharePoint share. Then, you can have Readiness Report Creator scan that drive. But, when this location is scanned, the files must be downloaded in memory to perform the scan. Depending on the number and size of those files, this could result in the scan taking longer and using up a considerable amount of network bandwidth.
 
 
 ## Scan Office documents for macro signature issues
@@ -382,7 +387,7 @@ To enhance the security of the Office VBA macro project signing, Microsoft provi
 
 You can use the Readiness Toolkit to find existing signed VBA files in your organization that you should upgrade to use the V3 signature.
 
-To find these files, run the Readiness Report Creator from an elevated command prompt and use the sigscan option. The following example command line will scan files in the vba_files folder and will create a JSON file in the vba_results folder with the results of the scan.
+To find these files, run the Readiness Report Creator from an elevated command prompt and use the sigscan option. The following example command line scans files in the vba_files folder and creates a JSON file in the vba_results folder with the results of the scan.
 
 ```console
 ReadinessReportCreator.exe -sigscan -p C:\vba_files -r -output C:\vba_results
@@ -397,9 +402,9 @@ For more information, including how to upgrade those files to use the V3 signatu
 
 ## Identify files with VBA macros that might be blocked
 
-VBA macros are a common way for malicious actors to gain access to deploy malware and ransomware. Therefore, to help improve security in Office, we've changed the default behavior of Office applications to block macros in files from the internet. For more information, see [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md).
+VBA macros are a common way for malicious actors to gain access to deploy malware and ransomware. Therefore, to help improve security in Office, the default behavior of Office applications to block macros in files from the internet was changed. For more information, see [Macros from the internet are blocked by default in Office](security/internet-macros-blocked.md).
 
-To identify files that have VBA macros that might be blocked from running, you can run the Readiness Report Creator from a command prompt and use the blockinternetscan option. For example, if you want to scan files in the c:\officefiles folder (and all its subfolders) on a device and save the JSON file with the results to the Finance share on Server01, you can run the following command.
+You can use the blockinternetscan option to run the Readiness Report Creator from a command prompt. This helps in identifying files that have VBA macros that might be blocked from running. Suppose you need to scan files in the c:\officefiles folder, including all its subfolders, on a device. To save the resulting JSON file to the Finance share on Server01, run the following command.
 
 ```console
 ReadinessReportCreator.exe -blockinternetscan -p c:\officefiles\ -r -output \\server01\finance -silent
@@ -431,15 +436,15 @@ The following table lists, by application, the file extensions that are analyzed
 
 ### Types of add-ins for which the Readiness Report Creator collects data
 
-The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we have seen running in Microsoft 365 Apps.
+The following table lists the types of add-ins that the Readiness Report Creator collects data on. Add-ins for all Office applications are identified, but it doesn't include web add-ins. Readiness information is provided for COM add-ins that we see running in Microsoft 365 Apps.
 
 |**Add-in type**|**Office applications**|**Description**|
 |:-----|:-----|:-----|
 |Automation  <br/> |Excel  <br/> |Excel-supported automation add-ins are built upon COM add-ins. Functions in Automation add-ins can be called from formulas in Excel worksheets.  <br/> |
-|COM  <br/> |Excel, Outlook, PowerPoint, and Word  <br/> |COM add-ins include add-ins usually written in C++ and Visual Studio Tools for Office (VSTO) developed using managed code.  <br/> |
+|COM  <br/> |Excel, Outlook, PowerPoint, and Word  <br/> |COM add-ins include add-ins written in C++ and Visual Studio Tools for Office (VSTO) developed using managed code.  <br/> |
 |VBA  <br/> |Excel, PowerPoint, and Word  <br/> |VBA add-ins are application-specific files that contain VBA code. These include macro-enabled Word templates (.dotm), Excel add-ins (.xla, .xlam), and PowerPoint add-ins (.ppa, .ppam).  <br/> |
 |WLL  <br/> |Word  <br/> |WLL (.wll) add-ins are specific to Word and built with any compiler that supports building DLLs.  <br/> |
-|XLL  <br/> |Excel  <br/> |XLL add-ins (.xll) are specific to Excel and are built with any compiler that supports building DLLs (dynamic-link libraries). They do not have to be installed or registered. XLL add-ins also include DLLs that contain user-defined commands and functions.  <br/> |
+|XLL  <br/> |Excel  <br/> |XLL add-ins (.xll) are specific to Excel and are built with any compiler that supports building DLLs (dynamic-link libraries). They don't have to be installed or registered. XLL add-ins also include DLLs that contain user-defined commands and functions.  <br/> |
 |XLS RTD  <br/> |Excel  <br/> |XLS real-time data (RTD) add-ins are Excel worksheets that use the RealTimeData worksheet function to call an Automation server to retrieve data in real-time.  <br/> |
 
 <a name="BKMK_InfoSent"> </a>
@@ -498,11 +503,11 @@ The following table provides a list of the information that is sent to Microsoft
 
 ### Change macro settings to view information in the readiness report
 
-The report created by the Readiness Report Creator uses macros and active content to display the information in the report. Therefore, to see the VBA macro compatibility and the add-in readiness information in the report, you need to allow macros and active content in Excel. If macros and active content aren't enabled in Excel, you see a **Getting started** message on the **Overview** worksheet when you open the report. On that page are instructions on how to enable macros and active content. This can be as simple as clicking **Enable Content** in the Message Bar.
+The report created by the Readiness Report Creator uses macros and active content to display the information in the report. Therefore, to see the VBA macro compatibility and the add-in readiness information in the report, you need to allow macros and active content in Excel. If macros and active content aren't enabled in Excel, you see a Getting started message on the Overview worksheet when you open the report. On that page, instructions explain how to enable macros and active content. Enabling them can be as simple as clicking Enable Content in the Message Bar.
 
-In some cases, you might not see the Message Bar and the **Enable Content** choice. This is most likely because Excel is configured to disable all macros without notification. You can check this setting by going to **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Macro Settings**. There, in the **Trust Center** dialog box, you can change the setting to **Disable all macros with notification**. After you do that, choose **OK** to save the change and close the **Trust Center** dialog box, then choose **OK** to close the **Excel Options** dialog box, and then close the report file. When you open the report file again, you should see the Message Bar and the **Enable Content** choice.
+In some cases, you might not see the Message Bar and the **Enable Content** choice. It's most likely because Excel is configured to disable all macros without notification. You can check this setting by going to **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Macro Settings**. There, in the **Trust Center** dialog box, you can change the setting to **Disable all macros with notification**. After you do that, choose **OK** to save the change and close the **Trust Center** dialog box, then choose **OK** to close the **Excel Options** dialog box, and then close the report file. When you open the report file again, you should see the Message Bar and the **Enable Content** choice.
 
-If the macro settings choices are grayed out in the **Trust Center** dialog box, an administrator has configured these settings by using Group Policy and the settings can't be changed manually. In this case, the simplest solution is to open the report file on a different computer where the macro settings for Excel allow you to enable macros by selecting the **Enable Content** choice in the Message Bar.
+If the macro settings choices are grayed out in the **Trust Center** dialog box, an administrator configured these settings by using Group Policy and the settings can't be changed manually. In this case, the simplest solution is to open the report file on a different computer where the macro settings for Excel allow you to enable macros by selecting the **Enable Content** choice in the Message Bar.
 
 For more information about macro setting choices, see [Enable or disable macros in Office files](https://support.microsoft.com/topic/12b036fd-d140-4e74-b45e-16fed1a7e5c6).
 
@@ -510,11 +515,11 @@ For more information about macro setting choices, see [Enable or disable macros 
 
 ### Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"
 
-If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this is an add-in that is business critical for your organization, you can do the following:
+If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this add-in is business critical for your organization, follow these steps:
 
 - Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps.
 
-- Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We'll do our best to add the readiness status of the add-in to our database. Please provide as much information about the add-in as possible including, but not limited to, the following:
+- Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We do our best to add the readiness status of the add-in to our database. Provide as much information about the add-in as possible:
 
   - Friendly name
 
@@ -530,9 +535,9 @@ If an add-in is classified as "Unknown" or "Insufficient data" this means that M
 <a name="errorinfo"> </a>
 
 ### Information sent in an error report to Microsoft
-If there's a problem showing the readiness reports, you will receive a message asking if you want to send an error report to Microsoft. For example, if there's a problem creating a graph in the report or querying the data collected.
+If there's a problem showing the readiness reports, you receive a message asking if you want to send an error report to Microsoft. For example, if there's a problem creating a graph in the report or querying the data collected.
 
-By sending an error report to Microsoft, you can help us improve the Readiness Toolkit. The error report sent to Microsoft doesn't contain any personally identifiable information. The following table provides a list of what information is sent to Microsoft in the error report.
+By sending an error report to Microsoft, you can help us improve the Readiness Toolkit. The error report sent to Microsoft doesn't contain any personal data. The following table provides a list of what information is sent to Microsoft in the error report.
 
 
 |**Data sent** |**Description**|
@@ -540,9 +545,9 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 |Module|The VBA module where the error occurred.|
 |Sub/Function name|The name of the sub procedure or function that the error occurred in.|
 |Line identifier|The identifier placed at the beginning of the last successfully executed line of code.|
-|Error message|The user message normally output by the error. May be localized for some errors.|
+|Error message|The user message normally output by the error. Might be localized for some errors.|
 |Error number|The number identifying the error.|
-|Source name|The name of the object that raised the error. This is not the variable name.|
+|Source name|The name of the object that raised the error. This name isn't the variable name.|
 |Tool version|The version of the Readiness Toolkit that was being used.|
 |Report GUID|A GUID generated for each report to help filter out repeated errors.|
 |Session ID|The Session ID when the report was created to help correlate it with any errors logged by the Readiness Toolkit.|
