@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.collection: Tier1
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 11/10/2023
+ms.date: 12/05/2023
 ---
 
 # Required diagnostic data for Office
@@ -609,6 +609,8 @@ The following data fields are common for all events for Outlook for iOS and Andr
 - **hx_ecsETag** - A unique identifier for managing release of features of our new mail syncing service to help the service detect issues affecting its features being released.
 
 - **is_first_session** - Tracks if this is the first session of the app for debugging purposes
+
+- **is_shared_mail** - Whether the account is a shared mail account, such as shared mailbox, delegate mailbox, etc.
 
 - **origin** - The origination of an action. For example marking a message read can originate from message list or a new mail notification, this helps us detect issues based on action origination
 
@@ -4653,12 +4655,13 @@ This event is triggered when users execute Python formula in an Excel session. T
 
 The following fields are collected:
 
-- **Data_ InitPyExecutions** - The count of times executing initialization script of Python in Excel per Excel session.
+- **Data_InitPyExecutions** - The count of times executing initialization script of Python in Excel per Excel session.
 
-- **Data_ ScriptExecutions** - The count of times executing Python formula per Excel session.
+- **Data_ScriptExecutions** - The count of times executing Python formula per Excel session.
 
-- **Data_ SystemErrors** - The count of times error occurs when execute Python formula per Excel session.
+- **Data_SystemErrors** - The count of times error occurs when execute Python formula per Excel session.
 
+- **Data_WorkbookId** - A unique GUID associated to an Excel workbook.
 
 #### Office.Excel.Python.ExecuteCode
 
@@ -4681,6 +4684,14 @@ The following fields are collected:
 - **Data_EnvironmentType** - Type of Jupyter client environment. Set by “Office.Excel.OEP.JupyterEnvironmentType”. Default is OfficePy::JupyterClientEnvironmentType::WebService.
 
 - **Data_ExecutionsCountPerWorkbook** - Count of executions of Python scripts (excluding init.py) in a given session.
+
+- **Data_IsRetry** - Boolean indicating whether the code execution is the retry effort after a code execution failure.
+
+- **Data_hasLargeRangeDataUpload** - Boolean indicating whether there is any large range data upload scenario.
+
+- **Data_hasPowerQueryDataUpload** - Boolean indicating whether there is any Power Query data upload scenario.
+
+- **Data_hasTableReference** - Boolean indicating whether there is any reference to an existing Excel table.
 
 - **Data_JsonMarshalingDuration** - The duration of marshaling the result returned by the Python service into data to be returned from the PY formula.
 
@@ -5905,6 +5916,15 @@ This indicates when a user has used high value features within the product. It m
 The following fields are collected: 
 
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
+
+
+### Office.Fluid.LoopMobile.Generic.AppLifecycle
+
+This event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
+
+The following fields are collected:
+
+- **LifecycleEvent** - Indicates the type of application lifecycle event.
 
 
 #### Office.Fluid.LoopMobile.UserAction.FRE
@@ -9282,6 +9302,8 @@ The following fields are collected:
 
 - **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry-related values in the event for the source document. Used for data quality diagnostics.
 
+- **Data_CantSkipSaveReason** - Reason for FSkipSavePdod returning false
+
 - **Data_DetachedDuration** - How long was the activity detached from the thread
 
 - **Data_Doc_AccessMode** - Document is read only/editable
@@ -9420,21 +9442,49 @@ The following fields are collected:
 
 - **Data_FailureClass** - Integer representing the failure class for OCS transition failures
 
+- **Data_fCoherencyFailureRetry** - Flag indicating that the save operation retried for coherency failures
+
+- **Data_FirstTryCV** - The first save retry action identifier
+
+- **Data_fOperationCancelled** - Flag indicating that the save operation is cancelled
+
+- **Data_fSaveAs** - Flag indicating that the save operation is a SaveAs
+
+- **Data_fSaveShouldBrickFile** - Flag indicating that the save operation should brick the document
+
+- **Data_fStoppedRetryingAtCap** - Flag indicating that the save operation stopped retrying
+
+- **Data_IntermediateResults** - Intermediate save actions' trackbag tags and error codes
+
+- **Data_IntermediateResultsTotalCount** - Integer that indicates intermediate save action count
+
 - **Data_LocationPickerPropagateToSaveTime,spLapsedMsec** - Measure the time, in milliseconds, that it takes for the save to trigger after getting a result from the location picker
 
 - **Data_LocationPickerSaveStatus** - Status returned by the location picker
 
 - **Data_MainPdod** - The document identifier in Office Word process
 
+- **Data_Measurements** - Performance measurement data for the save operation
+
 - **Data_MoveDisabledReason** - Error that is disabling move for the document
 
 - **Data_MoveFlightEnabled** - Whether the flight for the move feature is enabled
+
+- **Data_nSaveUIReshow** - Integer that indicates how many times the Save UI shows
+
+- **Data_OCSSyncbackSaveStarted** - Flag indicating that the save operation has an error associated with saving to a cloud server
 
 - **Data_RenameDisabledReason** - Error that is causing for rename to be disabled for this document
 
 - **Data_RenameFlightEnabled** - Whether the flight for the rename feature is enabled
 
+- **Data_RetryNumber** - Integer that indicates how many times the save operation retries
+
 - **Data_SaveInitiateKind** - Integer that indicates how the save was initiated
+
+- **Data_SaveOnClose** - Flag indicating that the save operation happens in closing the document
+
+- **Data_SecondaryTag** - Secondary trackback tag for the save operation
 
 - **Data_SrcDoc_AccessMode** - Source Document is read only/editable
 
@@ -9476,6 +9526,8 @@ The following fields are collected:
 
 - **Data_SrcDoc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session
 
+- **Data_SrcDoc_OlDocUniqueId** - An immutable anonymized document identifier used to diagnose problems
+
 - **Data_SrcDoc_PasswordFlags** - Indicates read or read/write password flags set
 
 - **Data_SrcDoc_ReadOnlyReasons** - Reasons why the document was opened read only
@@ -9508,6 +9560,9 @@ The following fields are collected:
 
 - **Data_SrcDocIsUnnamedOrNew** - Indicates whether the document we are saving is new
 
+- **Data_TrackbackTag** - Trackback tag for the save operation
+
+- **Data_VerboseMeasurements** - Detailed performance measurement data for the save operation
 
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
@@ -10278,6 +10333,8 @@ The following fields are collected:
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
 
+- **Data_DocumentLoaded** - Duration until advertisement add-in page is loaded
+
 - **Data_ErrorDescription** - A human-readable description of the error
 
 - **Data_ErrorSource** -  The component responsible for the error
@@ -10285,6 +10342,8 @@ The following fields are collected:
 - **Data_Init** - Duration to initialize advertisement container
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_Refresh** - Duration until advertisement add-in page is refreshed
 
 - **Data_SDXInstanceId** - A unique identifier for each advertisement add-in initialization
 
@@ -13573,6 +13632,48 @@ The following fields are collected:
 - **wait_time** - the time to build message URL
 
 
+#### metric.diagnostic
+
+This event is triggered when we receive data on a diagnostic event (for example, a crash or hang) from the iOS system. The data is used to identify and diagnose issues to maintain the quality of service.
+
+The following fields are collected:
+
+- **arguments** - This represents arguments passed to the format_string.
+
+- **call_stack_hash** - This represents a call stack which is used to diagnose a crash or hang.
+
+- **class_name** - This represents the class name of the exception. For example, NSException.
+
+- **composed_message** - A human-readable message string summarizing the reason for the exception.
+
+- **exception_code** - This represents an exception code which is used to determine what led to a crash.
+
+- **exception_name** - This represents an exception name which is used to determine what led to a crash.
+
+- **exception_type** - This represents an exception type which is used to determine what led to a crash.
+
+- **format_string** - This represents the exception message before arguments are substituted into the message.
+
+- **hang_duration** - The amount of time the app spent as unresponsive.
+
+- **signal** - This represents an exception signal which is used to determine what led to a crash.
+
+- **termination_reason** - The reason why the app crashed.
+
+- **virtual_memory_region_info** - This represents information stored in the app code when a crash occurred.
+
+
+#### metric.diagnostic.call.stack.map
+
+This event is triggered when we receive data on a diagnostic event (for example, a crash or hang) from the iOS system. The data is used to determine what code caused the crash or hang.
+
+The following fields are collected:
+
+- **call_stack** – This represents a call stack which is used to diagnose a crash or hang.
+
+- **call_stack_hash** – This represents the hash of a call stack which can be used to correlate this even with the metric_diagnostic event.
+
+
 #### Office.Android.AdsMobile.Wxpu.AdUIEvent
 
 *[This event was previously named Office.Android.AdsMobile.AdUIEvent.]*
@@ -14121,6 +14222,8 @@ The following fields are collected:
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
 
+- **Data_DocumentLoaded** - Duration until advertisement add-in page is loaded
+
 - **Data_ErrorDescription** - A human-readable description of the error
 
 - **Data_ErrorSource** - The component responsible for the error
@@ -14132,6 +14235,8 @@ The following fields are collected:
 - **Data_MoeErrorCode** - The error code from failure
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
+
+- **Data_Refresh** - Duration until advertisement add-in page is refreshed
 
 - **Data_SDXPackageVersion** - The version of the advertisement add-in 
 
@@ -14808,6 +14913,8 @@ The following fields are collected:
 
 - **firstFrameSummary** - information about how long it takes screens to start up
 
+- **folder_number** - The number of folders we have processed to display the folder hierarchy
+
 -	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
 
 - **is_treatment** - whether the current perf event is generated in a treatment flight. It will be used when we measure and compare the performance data for control group and treatment group in a flight.
@@ -14826,6 +14933,8 @@ The following fields are collected:
   - **record_count** - The number of records the underlying storage layer returns.
   - **scope_name** - Provides the name of UI page/components this event belongs to.
   - **total_cost_time_ns** - The total execution time measured in nanoseconds. 
+
+- **scenario** - The scenario the user was in when this event was triggered
 
 - **stage_durations** - Split stage durations that can aid in the investigation of data anomalies
 

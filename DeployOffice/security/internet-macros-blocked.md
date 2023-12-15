@@ -9,20 +9,20 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 01/10/2023
+ms.date: 12/01/2023
 ---
 
-# Macros from the internet will be blocked by default in Office
+# Macros from the internet are blocked by default in Office
 
 VBA macros are a common way for malicious actors to gain access to deploy malware and ransomware. Therefore, to help improve security in Office, we’re changing the default behavior of Office applications to block macros in files from the internet.
 
-With this change, when users open a file that came from the internet, such as an email attachment, and that file contains macros, the following message will be displayed:
+This change affects how users interact with files from the internet, like email attachments containing macros. Now, when users open such a file, they see the following message:
 
 ![Security risk banner about blocked macros with a Learn More button](../images/security/vba-security-risk-banner.png)
 
-The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if absolutely needed).
+The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if needed).
 
-In some cases, users will also see the message if the file is from a location within your intranet that’s not identified as being trusted. For example, if users are accessing files on a network share by using the share's IP address. For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
+In some cases, users also see the message if the file is from a location within your intranet and isn't identified as being trusted. For example, if users are accessing files on a network share by using the share's IP address. For more information, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
 
 > [!IMPORTANT]
 > Even before this change we're introducing, organizations could use the [Block macros from running in Office files from the Internet](#block-macros-from-running-in-office-files-from-the-internet) policy to prevent users from inadvertently opening files from the internet that contain macros. We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. If you do configure the policy, your organization won’t be affected by this default change.
@@ -31,7 +31,7 @@ In some cases, users will also see the message if the file is from a location wi
 
 ## Prepare for this change
 
-To prepare for this change, we recommend that you work with the business units in your organization that use macros in Office files that are opened from locations such as intranet network shares or intranet websites. You'll want to identify those macros and determine what [steps to take](#steps-to-take-to-allow-vba-macros-to-run-in-files-that-you-trust) to keep using those macros. You'll also want to work with independent software vendors (ISVs) that provide macros in Office files from those locations. For example, to see if they can digitally sign their code and you can treat them as a trusted publisher.
+Prepare for this change by working with the business units in your organization that utilize macros in Office files. These files are often opened from locations like intranet network shares or intranet websites. You want to identify those macros and determine what [steps to take](#steps-to-take-to-allow-vba-macros-to-run-in-files-that-you-trust) to keep using those macros. Work with independent software vendors (ISVs) that provide macros in Office files from those locations. For example, to see if they can digitally sign their code and you can treat them as a trusted publisher.
 
 Also, review the following information:
 
@@ -46,7 +46,7 @@ Also, review the following information:
 
 How you allow VBA macros to run in files that you trust depends on where those files are located or the type of file.
 
-The following table list different common scenarios and possible approaches to take to unblock VBA macros and allow them to run. You don't have to do all possible approaches for a given scenario. In the cases where we have listed multiple approaches, pick the one that best suits your organization.
+The following table list different common scenarios and possible approaches to take to unblock VBA macros and allow them to run. You don't have to do all possible approaches for a given scenario. In the cases where we list multiple approaches, pick the one that best suits your organization.
 
 |Scenario|Possible approaches to take|
 |---------|---------|
@@ -81,7 +81,7 @@ The following flowchart graphic shows how Office determines whether to run macro
 
 ![Flowchart that shows how Office determines whether to run macros in files from the internet](../images/security/vba-macro-flowchart.png)
 
-The following steps explain the information in the flowchart graphic, except for Excel Add-in files. For more information about those files, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel). Also, if a file is located on a network share that isn’t in the **Local intranet** zone or isn’t a trusted site, macros will be blocked in that file.
+The following steps explain the information in the flowchart graphic, except for Excel Add-in files. For more information about those files, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel). Also, if a file is located on a network share that isn’t in the **Local intranet** zone or isn’t a trusted site, macros are blocked in that file.
 
 1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has Mark of the Web (MOTW).
 
@@ -91,20 +91,20 @@ The following steps explain the information in the flowchart graphic, except for
 
 2. If the file is from a Trusted Location, the file is opened with the macros enabled. If the file isn't from a Trusted Location, the evaluation continues.
 
-3. If the macros are digitally signed and the matching Trusted Publisher certificate is installed on the device, the file is opened with the macros enabled. If not, then the evaluation continues.
+3. If the macros have a digital signature and your device has the corresponding Trusted Publisher certificate, the file opens with the macros enabled. If not, then the evaluation continues.
 
 4. Policies are checked to see if macros are allowed or blocked. If the policies are set to Not Configured, the evaluation continues to Step 6.
 
 5. (a) If macros are blocked by policy, the macros are blocked. </br>
    (b) If the macros are enabled by policy, the macros are enabled.
 
-6. If the user had previously opened the file, before this change in default behavior, and had selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
+6. If the user previously opened the file, before this change in default behavior, and selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
 > [!NOTE]
 > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
 > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
 
-7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users will see the **Security Risk** banner when they open the file.
+7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users see the **Security Risk** banner when they open the file.
 
 > [!NOTE]
 > Previously, before this change in default behavior, the app would check to see if the [VBA Macro Notification Settings](#vba-macro-notification-settings) policy was enabled and how it was configured.
@@ -115,7 +115,7 @@ The following steps explain the information in the flowchart graphic, except for
 
 ### Remove Mark of the Web from a file
 
-For an individual file, such as a file downloaded from an internet location or an email attachment the user has saved to their local device, the simplest way to unblock macros is to remove Mark of the Web. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
+To unblock macros in a file, like one from the internet or an email attachment, remove the Mark of the Web on your local device. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
 ![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
 
@@ -123,11 +123,11 @@ For an individual file, such as a file downloaded from an internet location or a
 > - In some cases, usually for files on a network share, users might not see the **Unblock** checkbox for a file where macros are being blocked. For those cases, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
 > - Even if the **Unblock** checkbox is available for a file on a network share, selecting the checkbox won’t have any effect if the share is considered to be in the **Internet** zone. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
-You can also use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file. For more information about the ZoneId value, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+You can also use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value allows VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file. For more information about the ZoneId value, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
 ### Files centrally located on a network share or trusted website
 
-If you have your users access files from a trusted website or an internal file server, you can do either of the following steps so that macros from those locations won't be blocked.
+If you have your users access files from a trusted website or an internal file server, you can do either of the following steps so that macros from those locations aren't blocked.
 
 - Designate the location as a Trusted site
 - If the network location is on the intranet, add the location to the **Local intranet** zone
@@ -137,7 +137,7 @@ If you have your users access files from a trusted website or an internal file s
 > - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
 > - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
 
-For example, if users are accessing a network share by using its IP address, macros in those files will be blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
+For example, if users are accessing a network share by using its IP address, macros in those files are blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
 
 > [!TIP]
 > - To see a list of trusted sites or what's in the **Local intranet** zone, go to **Control Panel** > **Internet Options** > **Change security settings** on a Windows device.
@@ -156,7 +156,7 @@ You can use Group Policy and the "Site to Zone Assignment List" policy to add lo
 
 ### Files on OneDrive or SharePoint
 
-- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) will determine whether the browser sets Mark of the Web. For example, Microsoft Edge sets Mark of the Web on a file if it's determined to be from the Internet zone.
+- If a user downloads a file on OneDrive or SharePoint by using a web browser, the configuration of the Windows internet security zone (**Control Panel** > **Internet Options** > **Security**) determines whether the browser sets Mark of the Web. For example, Microsoft Edge sets Mark of the Web on a file if it's from the Internet zone.
 
 - If a user selects **Open in Desktop App** in a file opened from the OneDrive website or from a SharePoint site (including a site used by a Teams channel), then the file won't have Mark of the Web.
 
@@ -164,7 +164,7 @@ You can use Group Policy and the "Site to Zone Assignment List" policy to add lo
 
 - Files that are in Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll), and are synced to OneDrive, don't have Mark of the Web.
 
-- If you have a group of users, such as the Finance department, that need to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
+- If you have a group of users, such as the Finance department that needs to use files from OneDrive or SharePoint without macros being blocked, here are some possible options:
 
   - Have them open the file by using the **Open in Desktop App** option
 
@@ -174,11 +174,11 @@ You can use Group Policy and the "Site to Zone Assignment List" policy to add lo
 
      - This policy is found under Windows Components\Internet Explorer\Internet Control Panel\Security Page in the Group Policy Management Console. It’s available under both Computer Configuration\Policies\Administrative Templates and User Configuration\Policies\Administrative Templates.
 
-     - SharePoint permissions and OneDrive sharing aren't changed by adding these locations to Trusted Sites. Maintaining access control is important. Anyone with permissions to add files to SharePoint could add files with active content, such as macros. Users who download files from domains in the Trusted Sites zone will bypass the default to block macros.
+     - SharePoint permissions and OneDrive sharing aren't changed by adding these locations to Trusted Sites. Maintaining access control is important. Anyone with permissions to add files to SharePoint could add files with active content, such as macros. Users who download files from domains in the Trusted Sites zone bypasses the default to block macros.
 
 ### Macro-enabled template files for Word, PowerPoint, and Excel
 
-Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded from the internet will have Mark of the Web. For example, template files with the following extensions:
+Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded from the internet have Mark of the Web. For example, template files with the following extensions:
 - .dot
 - .dotm
 - .pot
@@ -186,7 +186,7 @@ Macro-enabled template files for Word, PowerPoint, and Excel that are downloaded
 - .xlt
 - .xltm
 
-When the user opens the macro-enabled template file, the user will be blocked from running the macros in the template file. If the user trusts the source of the template file, they can remove Mark of the Web from the template file, and then reopen the template file in the Office app.
+When the user opens the macro-enabled template file, the user is blocked from running the macros in the template file. If the user trusts the source of the template file, they can remove Mark of the Web from the template file, and then reopen the template file in the Office app.
 
 If you have a group of users that need to use macro-enabled templates without macros being blocked, you can take either of the following actions:
 - Use a digital signature and trust the publisher.
@@ -194,14 +194,14 @@ If you have a group of users that need to use macro-enabled templates without ma
 
 ### Macro-enabled add-in files for PowerPoint and Excel
 
-Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the internet will have Mark of the Web. For example, Add-in files with the following extensions:
+Macro-enabled Add-in files for PowerPoint and Excel that are downloaded from the internet have Mark of the Web. For example, Add-in files with the following extensions:
 
 - .ppa
 - .ppam
 - .xla
 - .xlam
 
-When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in will be loaded in a disabled state and the user will be blocked from using the Add-in. If the user trusts the source of the Add-in file, they can remove Mark of the Web from the Add-in file, and then reopen PowerPoint or Excel to use the Add-in.
+When the user tries to install the macro-enabled Add-in, by using **File** > **Options** > **Add-ins** or by using the **Developer** ribbon, the Add-in is loaded in a disabled state and the user is blocked from using the Add-in. If the user trusts the source of the Add-in file, they can remove Mark of the Web from the Add-in file, and then reopen PowerPoint or Excel to use the Add-in.
 
 If you have a group of users that need to use macro-enabled Add-in files without macros being blocked, you can take the following actions.
 
@@ -219,7 +219,7 @@ For Excel Add-in files:
 
 ### Macros that are signed by a trusted publisher
 
-If the macro is signed and you’ve validated the certificate and trust the source, you can make that source a trusted publisher. We recommend, if possible, that you manage trusted publishers for your users. For more information, see [Trusted publishers for Office files](trusted-publisher.md).
+If the macro is signed and you validated the certificate and trust the source, you can make that source a trusted publisher. We recommend, if possible, that you manage trusted publishers for your users. For more information, see [Trusted publishers for Office files](trusted-publisher.md).
 
 If you have just a few users, you can have them [remove Mark of the Web from the file](#remove-mark-of-the-web-from-a-file) and then [add the source of the macro as a trusted publisher](https://support.microsoft.com/office/87b3d5a3-b68c-4023-87c4-7cc78a44d7ed) on their devices.
 
@@ -229,7 +229,7 @@ If you have just a few users, you can have them [remove Mark of the Web from the
 
 ### Trusted Locations
 
-Saving files from the internet to a Trusted Location on a user's device ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users won't need to go to the **Properties** for the file, and select **Unblock** to allow the macros to run.
+Saving files from the internet to a Trusted Location on a user's device ignores the check for Mark of the Web and opens with VBA macros enabled. For example, a line of business application could send reports with macros on a recurring basis. If files with macros are saved to a Trusted Location, users don't have to go to the **Properties** for the file, and select **Unblock** to allow the macros to run.
 
 Because macros aren’t blocked in files saved to a Trusted Location, you should manage Trusted Locations carefully and use them sparingly. Network locations can also be set as a Trusted Location, but it's not recommended. For more information, see [Trusted Locations for Office files](trusted-locations.md).
 
@@ -239,7 +239,7 @@ Because macros aren’t blocked in files saved to a Trusted Location, you should
 
 When a file is downloaded to a device running Windows, Mark of the Web is added to the file, identifying its source as being from the internet. Currently, when a user opens a file with Mark of the Web, a **SECURITY WARNING** banner appears, with an **Enable content** button. If the user selects **Enable content**, the file is considered a Trusted Document, and macros are allowed to run. The macros will continue to run even after the change of default behavior to block macros in files from the internet is implemented, because the file is still considered a Trusted Document.
 
-After the change of default behavior to block macros in files from the internet, users will see a different banner the first time they open a file with macros from the internet. This **SECURITY RISK** banner doesn't have the option to **Enable content**. But users will be able to go to the **Properties** dialog for the file, and select **Unblock**, which will remove Mark of the Web from the file and allow the macros to run, as long as no policy or Trust Center setting is blocking.
+After the change of default behavior to block macros in files from the internet, users will see a different banner the first time they open a file with macros from the internet. This **SECURITY RISK** banner doesn't have the option to **Enable content**. But users are able to go to the **Properties** dialog for the file, and select **Unblock**, which will remove Mark of the Web from the file and allow the macros to run, as long as no policy or Trust Center setting is blocking.
 
 ### Mark of the Web and zones
 
@@ -266,7 +266,7 @@ Here's a list of ZoneId values and what zone they map to.
 
 For example, if the ZoneId is 2, VBA macros in that file won't be blocked by default. But if the ZoneId is 3, macros in that file will be blocked by default.
 
-You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value will allow VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
+You can use the [Unblock-File](/powershell/module/microsoft.powershell.utility/unblock-file) cmdlet in PowerShell to remove the ZoneId value from the file. Removing the ZoneId value allows VBA macros to run by default. Using the cmdlet does the same thing as selecting the **Unblock** checkbox on the **General** tab of the **Properties** dialog for the file.
 
 ## Use the Readiness Toolkit to identify files with VBA macros that might be blocked
 
@@ -274,7 +274,7 @@ To identify files that have VBA macros that might be blocked from running, you c
 
 The Readiness Toolkit includes a standalone executable that can be run from a command line or from within a script. You can run the Readiness Toolkit on a user's device to look at files on the user's device. Or you can run it from your device to look at files on a network share.
 
-When you run the standalone executable version of the Readiness Toolkit, a JSON file is created with the information collected. You'll want to save the JSON files in a central location, such as a network share. Then you'll run the Readiness Report Creator, which is a UI wizard version of the Readiness Toolkit. This wizard will consolidate the information in the separate JSON files into a single report in the form of an Excel file.
+When you run the standalone executable version of the Readiness Toolkit, a JSON file is created with the information collected. You want to save the JSON files in a central location, such as a network share. Then you run the Readiness Report Creator, which is a UI wizard version of the Readiness Toolkit. This wizard consolidates the information in the separate JSON files into a single report in the form of an Excel file.
 
 To identify files that might be impacted by using the Readiness Toolkit, follow these basic steps:
 
@@ -325,7 +325,7 @@ Which state you choose for the policy determines the level of protection you're 
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Enabled |Users will be blocked from running macros in files obtained from the internet. <br/><br/>Part of the Microsoft recommended security baseline. |
+|![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Enabled |Users are blocked from running macros in files obtained from the internet. <br/><br/>Part of the Microsoft recommended security baseline. |
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.         |
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.            |
 
@@ -338,7 +338,7 @@ After we implement the change to the default behavior, the level of protection c
 
 |Icon|Protection level|Policy state|Description|
 |---|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Not Configured| Users will be blocked from running macros in files obtained from the internet.<br/><br/> Users will see the Security Risk banner with a Learn More button |
+|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Not Configured| Users are blocked from running macros in files obtained from the internet.<br/><br/> Users see the Security Risk banner with a Learn More button |
 
 ### VBA Macro Notification Settings
 
