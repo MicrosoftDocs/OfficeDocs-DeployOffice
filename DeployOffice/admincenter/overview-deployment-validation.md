@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 hideEdit: true
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 11/7/2023
+ms.date: 12/13/2023
 ---
 
 # Overview of update validation in the Microsoft 365 Apps admin center
