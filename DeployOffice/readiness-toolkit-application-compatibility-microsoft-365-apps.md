@@ -540,16 +540,16 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 The compatibility of macros and add-ins between supported Office releases (like Office 2016) and the Microsoft 365 Apps has stratically improved since the release of the toolkit in 2017. For example, there are no breaking changes between Office 2016 and Microsoft 365 Apps when it comes to the VBA Object MOodel. Thus, Microsoft will retire the toolkit on March 31, 2024. See below for an overview of the changes coming:
 
 - No further updates will be provided for the Office Readiness Toolkit.
-- If you are still using the Office Readiness Toolkit, you can continue to do so until March 31, 2024 with all of its features working as expected.
+- If you're still using the Office Readiness Toolkit, you can continue to do so until March 31, 2024 with all of its features working as expected.
 - On March 31, 2024, the support for the Office Readiness Toolkit will end and the download from the Microsoft Download Center removed.
-- After March 31, 2024, you still can run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
+- After March 31, 2024, you can still run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
   - Overview
   - VBA overview
   - VBA Summary
   - VBA Results
   - VBA Rmediation
   - VBA References
-- However, you will not be able to create advanced reports using the user interface. An error message will be shown and a basic report generated instead. You will see the following changes:
+- However, you won't be able to create advanced reports using the user interface. An error message will be shown and a basic report generated instead. You'll see the following changes:
   - The tabs **Add-in Summary** and **Add-in details** will no longer show readiness information.
   - Add-ins bundled into the Office installation will be listed and no longer be filtered out.
   - The changes also affect the tabs **by computer name** and **Device Upgrade Readiness**, as no readiness information is available and the count of add-ins differs.
