@@ -16,7 +16,7 @@ ms.date: 12/15/2023
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
 
 > [!IMPORTANT]
-> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility. For more information, see the [retirement section](#office-readiness-toolkit-retirement)
+> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility. For more information, see the [retirement section](#office-readiness-toolkit-retirement).
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
@@ -537,12 +537,12 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 
 ### Office Readiness Toolkit retirement
 
-As the compatibility of macros and add-ins running in supported, perpetual Office releases (like Office 2016) has increased since the release of the toolkit in 2017, we decided to retire on March 31, 2024. The add-in landscape has evolved and most add-ins are compatible with Microsoft 365 APps as of today. Likewise, there are no breaking changes in the VBA Object Model when comparing Office 2016/2019/2021 to Microsoft 365 Apps. The vast majority of VBA-based macros should just run fine on Microsoft 365 Apps from a code perspective.
+The compatibility of macros and add-ins between supported Office releases (like Office 2016) and the Microsoft 365 Apps has stratically improved since the release of the toolkit in 2017. For example, there are no breaking changes between Office 2016 and Microsoft 365 Apps when it comes to the VBA Object MOodel. Thus, Microsoft will retire the toolkit on March 31, 2024. See below for an overview of the changes coming:
 
 - No further updates will be provided for the Office Readiness Toolkit.
 - If you are still using the Office Readiness Toolkit, you can continue to do so until March 31, 2024 with all of its features working as expected.
-- On March 31, 2024, the support for the Office Readiness Toolkit will end and the download from the Microsoft Download Center will be removed.
-- After March 31, 2024, you will still be able to run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
+- On March 31, 2024, the support for the Office Readiness Toolkit will end and the download from the Microsoft Download Center removed.
+- After March 31, 2024, you still can run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
   - Overview
   - VBA overview
   - VBA Summary
@@ -554,4 +554,4 @@ As the compatibility of macros and add-ins running in supported, perpetual Offic
   - Add-ins bundled into the Office installation will be listed and no longer be filtered out.
   - The changes also affect the tabs **by computer name** and **Device Upgrade Readiness**, as no readiness information is available and the count of add-ins differs.
   - If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
-- Other features like the Signature scan or Silverlight detection are unaffected.
+- Other features like the Signature scan or Silverlight detection are unaffected. However, no support is provided after March 31, 2024.
