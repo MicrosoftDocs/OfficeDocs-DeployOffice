@@ -10,13 +10,13 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
-ms.date: 12/12/2023
+ms.date: 12/15/2023
 ---
 
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
 
 > [!IMPORTANT]
-> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
+> The Readiness Toolkit will be retired at the end of March 2024. If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility. For more information, see the [retirement section](#office-readiness-toolkit-retirement)
 
 The Readiness Toolkit for Office add-ins and VBA can help you identify compatibility issues with your Microsoft Visual Basic for Applications (VBA) macros and add-ins that you use with Office. The Readiness Toolkit includes the Readiness Report Creator, which creates an Excel report with VBA macro compatibility and add-in readiness information to help your organization assess its readiness to move to Microsoft 365 Apps.
 
@@ -515,30 +515,12 @@ For more information about macro setting choices, see [Enable or disable macros 
 
 ### Possible steps to take for add-ins classified as "Unknown" or "Insufficient data"
 
-If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this add-in is business critical for your organization, follow these steps:
-
-- Contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps.
-
-- Contact us at [ReadyForOffice@microsoft.com](mailto:ReadyForOffice@microsoft.com). We do our best to add the readiness status of the add-in to our database. Provide as much information about the add-in as possible:
-
-  - Friendly name
-
-  - File version
-
-  - Software provider
-
-  - Download link, or any details on how to download and install the add-in.
-
-  - Other details, such as the type of add-in, which Office app the add-in is used with, the Prog ID, or the CLSID.
-
-
-<a name="errorinfo"> </a>
+If an add-in is classified as "Unknown" or "Insufficient data" this means that Microsoft doesn't yet have sufficient information regarding the add-in to provide a readiness status. If this add-in is business critical for your organization, we recommend to contact the software provider who developed this add-in to see if the add-in is supported for Microsoft 365 Apps.
 
 ### Information sent in an error report to Microsoft
 If there's a problem showing the readiness reports, you receive a message asking if you want to send an error report to Microsoft. For example, if there's a problem creating a graph in the report or querying the data collected.
 
 By sending an error report to Microsoft, you can help us improve the Readiness Toolkit. The error report sent to Microsoft doesn't contain any personal data. The following table provides a list of what information is sent to Microsoft in the error report.
-
 
 |**Data sent** |**Description**|
 |---------|---------|
@@ -552,3 +534,24 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 |Report GUID|A GUID generated for each report to help filter out repeated errors.|
 |Session ID|The Session ID when the report was created to help correlate it with any errors logged by the Readiness Toolkit.|
 |Excel version|The version of Excel used to view the readiness reports.|
+
+### Office Readiness Toolkit retirement
+
+As the compatibility of macros and add-ins running in supported, perpetual Office releases (like Office 2016) has increased since the release of the toolkit in 2017, we decided to retire on March 31, 2024. The add-in landscape has evolved and most add-ins are compatible with Microsoft 365 APps as of today. Likewise, there are no breaking changes in the VBA Object Model when comparing Office 2016/2019/2021 to Microsoft 365 Apps. The vast majority of VBA-based macros should just run fine on Microsoft 365 Apps from a code perspective.
+
+- No further updates will be provided for the Office Readiness Toolkit.
+- If you are still using the Office Readiness Toolkit, you can continue to do so until March 31, 2024 with all of its features working as expected.
+- On March 31, 2024, the support for the Office Readiness Toolkit will end and the download from the Microsoft Download Center will be removed.
+- After March 31, 2024, you will still be able to run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
+  - Overview
+  - VBA overview
+  - VBA Summary
+  - VBA Results
+  - VBA Rmediation
+  - VBA References
+- However, you will not be able to create advanced reports using the user interface. An error message will be shown and a basic report generated instead. You will see the following changes:
+  - The tabs **Add-in Summary** and **Add-in details** will no longer show readiness information.
+  - Add-ins bundled into the Office installation will be listed and no longer be filtered out.
+  - The changes also affect the tabs **by computer name** and **Device Upgrade Readiness**, as no readiness information is available and the count of add-ins differs.
+  - If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
+- Other features like the Signature scan or Silverlight detection are unaffected.
