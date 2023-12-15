@@ -10,12 +10,12 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 02/23/2023
+ms.date: 12/15/2023
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
 
-Follow the steps in this article to assess your environment and requirements before deploying Microsoft 365 Apps in your organization. This assessment will help you make key decisions as part of planning your deployment. 
+Follow the steps in this article to assess your environment and requirements before deploying Microsoft 365 Apps in your organization. This assessment helps you make key decisions as part of planning your deployment. 
 
 In addition to this guidance, we recommend that you use [Microsoft FastTrack](https://www.microsoft.com/fasttrack) to help with your deployment.
 
@@ -27,7 +27,7 @@ As part of this review, make sure that your client devices meet or exceed the [m
 
 Review the client requirements for your on-premises server workloads as well. For example, verify if your on-premises Exchange servers meet the minimum requirements as described in the [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix#clients).
 
-Finally, you should review the deployment tools you use in your organization. We recommend to use Microsoft Intune. If you are using Microsoft Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
+Finally, you should review the deployment tools you use in your organization. We recommend using Microsoft Intune. If you're using Microsoft Configuration Manager, we recommend upgrading to the current branch and updating to the current release. For more information, see [Which branch of Configuration Manager should I use?](/mem/configmgr/core/understand/which-branch-should-i-use).
 
 ## Step 2 - Review licensing and accounts
 
@@ -43,31 +43,27 @@ Review your network capability, including bandwidth and distribution of client d
 - Client devices require internet access to activate their Microsoft 365 Apps subscription, and then must connect at least once every 30 days to verify their subscription. 
 - The following ports and protocols must be open: [Microsoft 365 and Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 - Microsoft 365 Apps updates vary in size, but you can review recent download sizes [here](/officeupdates/download-sizes-microsoft365-apps-updates). For details on the frequency and type of updates based on channel, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).  
-- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over a number of days to conserve your network bandwidth.
-- To reduce the load on your network and internet links, we recommend to leverage [PeerCache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache) when using Configuration Manager or [Delivery Optimization](delivery-optimization.md) when getting the installation or updates from the internet.
+- Updating client devices directly from the Office Content Delivery Network (CDN) can vastly reduce your administrative investment. To help decide whether this is appropriate for your organization, make sure to assess the connectivity between the internet and your client devices, including devices in remote sites. If you do manage updates from the Office CDN, updates are automatically deployed over several days to conserve your network bandwidth.
+- To reduce the load on your internet links, we recommend enabling [Delivery Optimization](delivery-optimization.md) for downloading installations or updates from the internet. For Configuration Manager-based scenarios, we recommend using [PeerCache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache).
  
 ## Step 4 - Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility.
+Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, add-ins, and complex documents and spreadsheets to assess their compatibility.
 
 > [!NOTE]
 > The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or newer will work with Microsoft 365 Apps as well. 
 
 To complete that assessment, do the following steps:
 
-1. Discover and get readiness information about your VBA macros and add-ins by using the [Readiness Toolkit](https://go.microsoft.com/fwlink/p/?linkid=859119). We recommend to run the Readiness Toolkit on sample set of client devices across your organization. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md). 
- 
-2. Use the reports to identify the readiness status of your add-ins and get recommendations about how to fix any VBA macro issues that were identified.
+1. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Microsoft 365 Apps. 
 
-3. Working with your business groups, define a pilot group of representative users and client devices from across the organization. Those client devices should include the architectures in your organization (32-bit and 64-bit) and all the critical line-of-business applications, add-ins, and macros that you want to test with Microsoft 365 Apps. 
+1. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
-4. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
-
-As part of your deployment, you'll deploy the apps first to the targeted group from step 3, and then do an additional round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After you have verified compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
+As part of your deployment, you'll deploy the apps first to the targeted group from step 1, and then do another round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After verifying compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
 
 ## Review exit criteria 
 
-Before planning your deployment, make sure you've completed all the steps for assessing your environment and requirements.
+Before planning your deployment, make sure you completed all the steps for assessing your environment and requirements.
 
 |Assessment         |Reviewed?            |
 |-------------------|------------------|
@@ -83,7 +79,7 @@ Before planning your deployment, make sure you've completed all the steps for as
 |If using Configuration Manager, on current branch  |**Y/N**|
 |Office 365 (or Microsoft 365) licensing and accounts                |**Y/N**|
 |Network                                          |**Y/N**|
-|Run Readiness Toolkit                        |**Y/N**|
+|Validate compatibility                        |**Y/N**|
 |Fix critical add-ins                        |**Y/N**|
 |Define pilot group                        |**Y/N**|
 
