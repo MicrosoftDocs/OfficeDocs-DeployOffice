@@ -2,6 +2,21 @@
 
 
 
+## Week of December 11, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/12/2023 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
+| 12/14/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 12/14/2023 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
+| 12/14/2023 | [Deploy Microsoft Teams with Microsoft 365 Apps](/DeployOffice/teams-install) | modified |
+| 12/14/2023 | [Troubleshoot deployment issues in new Outlook](/DeployOffice/outlook/troubleshoot-deployment-new-outlook) | added |
+| 12/15/2023 | [Assess your environment and requirements for deploying Microsoft 365 Apps](/DeployOffice/assess-microsoft-365-apps) | modified |
+| 12/15/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 12/15/2023 | [Configure update settings for Microsoft 365 Apps](/DeployOffice/updates/configure-update-settings-microsoft-365-apps) | modified |
+
+
 ## Week of December 04, 2023
 
 
@@ -45,21 +60,3 @@
 | 11/13/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/updates/overview-update-channels) | modified |
 | 11/14/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | added |
 | 11/15/2023 | [Overview of the new Outlook for Windows](/DeployOffice/outlook/overview-new-outlook) | modified |
-
-
-## Week of November 06, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/7/2023 | [Overview of cloud update in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/cloud-update) | modified |
-| 11/7/2023 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/overview-deployment-validation) | modified |
-| 11/9/2023 | [Choose how to deliver updates](/DeployOffice/updates/choose-how-to-deliver-updates) | renamed |
-| 11/10/2023 | [Deployment overview for the new Outlook for Windows](/DeployOffice/outlook/get-started/deployment-new-outlook) | added |
-| 11/10/2023 | [Migrate from COM to web add-ins](/DeployOffice/outlook/get-started/migrate-com-to-web-addins) | added |
-| 11/10/2023 | [Accounts in the new Outlook for Windows](/DeployOffice/outlook/get-started/supported-account-types) | added |
-| 11/10/2023 | [Policy Management](/DeployOffice/outlook/manage/policy-management) | added |
-| 11/10/2023 | [Overview of the new Outlook for Windows](/DeployOffice/outlook/overview-new-outlook) | added |
-| 11/10/2023 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | modified |
-| 11/10/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 11/10/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
