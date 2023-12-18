@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
-ms.date: 12/15/2023
+ms.date: 12/18/2023
 ---
 
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
