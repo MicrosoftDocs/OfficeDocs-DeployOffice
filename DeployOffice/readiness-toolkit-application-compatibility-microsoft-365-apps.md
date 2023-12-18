@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides IT Pros with info on how the Readiness Toolkit for Office add-ins and VBA can identify compatibility issues and provide readiness info for moving to Microsoft 365 Apps"
-ms.date: 12/15/2023
+ms.date: 12/18/2023
 ---
 
 # Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps
@@ -535,23 +535,23 @@ By sending an error report to Microsoft, you can help us improve the Readiness T
 |Session ID|The Session ID when the report was created to help correlate it with any errors logged by the Readiness Toolkit.|
 |Excel version|The version of Excel used to view the readiness reports.|
 
-### Office Readiness Toolkit retirement
+## Office Readiness Toolkit retirement
 
-The compatibility of macros and add-ins between supported Office releases (like Office 2016) and the Microsoft 365 Apps has stratically improved since the release of the toolkit in 2017. For example, there are no breaking changes between Office 2016 and Microsoft 365 Apps when it comes to the VBA Object MOodel. Thus, Microsoft will retire the toolkit on March 31, 2024. See below for an overview of the changes coming:
+Since the toolkit's launch in 2017, the interoperability of macros and add-ins between supported Office versions, such as Office 2016, and Microsoft 365 Apps has seen significant improvements. Notably, there are no disruptive changes in the VBA Object Model between Office 2016 and Microsoft 365 Apps. As a result, Microsoft plans to discontinue the toolkit on March 31, 2024. Please refer to the following for a summary of the upcoming changes:
 
-- No further updates will be provided for the Office Readiness Toolkit.
-- If you're still using the Office Readiness Toolkit, you can continue to do so until March 31, 2024 with all of its features working as expected.
-- On March 31, 2024, the support for the Office Readiness Toolkit will end and the download from the Microsoft Download Center removed.
-- After March 31, 2024, you can still run the toolkit and generate macro and add-in inventory reports. The following tabs in the resulting report will be unaffected:
+- The Office Readiness Toolkit will not receive any more updates.
+- If you are currently using the Office Readiness Toolkit, you can continue to use it with all its features functioning as expected until March 31, 2024.
+- Support for the Office Readiness Toolkit will cease on March 31, 2024, and the download will be removed from the Microsoft Download Center.
+- After March 31, 2024, you can still operate the toolkit and generate reports for macro and add-in inventory. The following tabs in the report will remain unaffected:
   - Overview
   - VBA overview
   - VBA Summary
   - VBA Results
-  - VBA Rmediation
+  - VBA Remediation
   - VBA References
-- However, you won't be able to create advanced reports using the user interface. An error message will be shown and a basic report generated instead. You'll see the following changes:
-  - The tabs **Add-in Summary** and **Add-in details** will no longer show readiness information.
-  - Add-ins bundled into the Office installation will be listed and no longer be filtered out.
-  - The changes also affect the tabs **by computer name** and **Device Upgrade Readiness**, as no readiness information is available and the count of add-ins differs.
-  - If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to assess your add-in compatibility.
-- Other features like the Signature scan or Silverlight detection are unaffected. However, no support is provided after March 31, 2024.
+- However, the creation of advanced reports using the user interface will no longer be possible after March 31, 2024. An error message will be displayed and a basic report will be generated instead. The following changes will occur:
+  - The tabs **Add-in Summary** and **Add-in details** will no longer display readiness information.
+  - Add-ins included in the Office installation will be listed and will not be filtered out.
+  - The changes will also impact the tabs **by computer name** and **Device Upgrade Readiness**, as no readiness information will be available and the count of add-ins will differ.
+  - If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash) to evaluate your add-in compatibility.
+- Other features such as the Signature scan or Silverlight detection will remain unaffected. However, no support will be provided after March 31, 2024.
