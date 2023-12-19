@@ -1052,7 +1052,7 @@
     },
     {
       "source_path": "DeployOffice/admincenter/overview-deployment-validation.md",
-      "redirect_url": "/deployoffice/admincenter/update-validation",
+      "redirect_url": "/DeployOffice/admincenter/update-validation",
       "redirect_document_id": false
     }
   ]
