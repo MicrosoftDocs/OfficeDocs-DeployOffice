@@ -1,6 +1,6 @@
 ---
 title: "Overview of update validation in the Microsoft 365 Apps admin center"
-ms.author: nwhite
+ms.author: manoth
 author: nicholasswhite
 manager: dougeby
 ms.reviewer: dedut
@@ -21,11 +21,11 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > For a guided introduction to update validation, check out the [Introducing update validation in the Microsoft 365 Apps admin center](https://youtu.be/xZtXI-Ws-pE) video.
 
 # Benefits
-A common practice in larger organizations is to deploy new updates to a subset of devices first. This way, they can identify and contain potential issues early in the deployment cycle and limit the risk of disruptive issues to a manageable number of devices. However, this approach also creates extra work for administrators. Often, the feedback channels are not automated, and the admin must actively collect early feedback from sources such as the help desk team or dedicated testers. Moreover, the feedback may be vague or too general to pinpoint the actual issues without further investigation and troubleshooting. This increases the admin's workload and delays the deployment of the update, which could affect the organization's security posture.
+A common practice in larger organizations is to deploy new updates to a subset of devices first. This way, they can identify and contain potential issues early in the deployment cycle and limit the risk of disruptive issues to a manageable number of devices. However, this approach also creates extra work for administrators. Often, the feedback channels aren't automated, and the admin must actively collect early feedback from sources such as the help desk team or dedicated testers. Moreover, the feedback might be vague or too general to pinpoint the actual issues without further investigation and troubleshooting. This increases the admin's workload and delays the deployment of the update, which could affect the organization's security posture.
 
-Update validation enables administrators to collect health signals automatically, evaluate them for devices on the first deployment wave, and decide if it is safe to continue the update deployment. Administrators can view a simple interface that guides them through the process. Any degradations across apps and add-ins are detected, assessed, and highlighted automatically. If there are any issues, administrators can easily pinpoint the affected devices, apps, and add-ins. In the event of significant issues, administrators have the option to pause the rollout or revert updated devices to the previous update, all from the same administrative interface.
+Update validation enables administrators to collect health signals automatically, evaluate them for devices on the first deployment wave, and decide if it's safe to continue the update deployment. Administrators can view a sngle interface that guides them through the process. Any degradations across apps and add-ins are detected, assessed, and highlighted automatically. If there are any issues, administrators can easily pinpoint the affected devices, apps, and add-ins. Also, administrators can pause the rollout or revert updated devices to the previous update, all from the same administrative interface.
 
-By applying statistical tests and thresholds, update validation eliminates any noise from the health data. The admins receive evaluations based on robust insights that show the real effects on the user's workflow. As generated insights are generated based on diagnostic data received from devices on wave 1, those are specific to the organization and its unique setup.
+Update validation eliminates any noise from the health data by applying statistical tests and thresholds. The admins receive evaluations based on robust insights that show the real effects on the user's workflow. As generated insights are generated based on diagnostic data received from devices on wave 1, those are specific to the organization and its unique setup.
 
 # How it works
 
@@ -36,7 +36,7 @@ If cloud updates is configured with at least two custom rollout waves, update va
 - Once a statistical confidence of 95% is reached, it compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
 - It applies a scoring system to evaluate the remaining degradations.
 
-After calculating scores for at least ten devices, an assessment is run, and the results are displayed to the admin. The results are color-coded and continuously updated with more data being received:
+After calculating scores for at least 10 devices, an assessment is run, and the results are displayed to the admin. The results are color-coded and continuously updated with more data being received:
 
 - **Green:** No degradations or only very minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
 - **Yellow:** Minor degradation was detected, and the admin is advised to monitor the deployment closely.
@@ -46,14 +46,14 @@ For a status of yellow or red, the admin can view the list of devices and see wh
 
 # How thresholds and scoring works
 
-As explained above, each device, app and add-in has several health metrics. A device without add-ins would have twenty metrics: app start performance and app reliability for Word, Excel, PowerPoint, Outlook, and OneNote. These metrics are divided into ten pre-update and ten post-update ones. Each add-in adds four more metrics. The metrics are compared and filtered after reaching a statistical confidence of 95%, using the following thresholds:
+As explained above, each device, app and add-in has several health metrics. A device without add-ins would have 20 metrics: app start performance and app reliability for Word, Excel, PowerPoint, Outlook, and OneNote. These metrics are divided into 10 pre-update and 10 post-update ones. Each add-in adds four more metrics. The metrics are compared and filtered after reaching a statistical confidence of 95%, using the following thresholds:
 
 - For apps, start performance must take more than 5 seconds to start and at least 1 second longer than before.
 - For apps, reliability must be less than 99% and at least 1 percentage point lower than before.
 - For add-ins, start performance is at least 1 second slower than before.
 - For add-ins, reliability must be less than 99% and at least 1 percentage point lower than before.
 
-The thresholds help to ignore degradations that are statistically significant, but not disruptive to users. For instance, suppose Outlook's app start performance worsens from two seconds to three seconds. This is a 50% degradation, but it does not affect the user much. Outlook still starts up quickly. Similarly, if the reliability drops from 99.9% to 99.8%, the crash rate technically doubles from 0.1% to 0.2%. But only two out of a thousand app sessions are affected. This may not disrupt the user's daily routine.
+The thresholds help to ignore degradations that are statistically significant, but not disruptive to users. For instance, suppose Outlook's app start performance worsens from two seconds to three seconds. This is a 50% degradation, but it does not affect the user much. Outlook still starts up quickly. Similarly, if the reliability drops from 99.9% to 99.8%, the crash rate technically doubles from 0.1% to 0.2%. But only two out of a thousand app sessions are affected. This change might not disrupt the user's daily routine.
 
 The following criteria are used to score the metrics that pass the threshold filter:
 - A degradation in the start performance of Word, Excel, PowerPoint, Outlook, or OneNote: 0.5 points
@@ -79,6 +79,6 @@ Ensure that wave one devices offer a diverse representation of your organization
 
 # How to disable update validation
 
-In case you want to disable update validation, these are your options:
+In case you want to disable update validation, your options are:
 - Navigate to **Cloud Update > Monthly Enterprise channel > Settings > Rollout waves** and select the **Opt out of update validation** option.
-- If you disabled waves by setting the option **Use rollout waves** to *No, not needed*, update validation will be automatically disabled.
+- If you disabled waves by setting the option **Use rollout waves** to *No, not needed*, update validation is automatically disabled.
