@@ -14,7 +14,8 @@ description: "Update validation enables admins to test Microsoft 365 updates on 
 ms.date: 12/19/2023
 ---
 
-#Update validation
+# Update validation
+
 ## Overview
 Update Validation, a feature within the [Cloud Update](cloud-update.md) service in the [Microsoft 365 Apps admin center](https://config.office.com), enables administrators to validate new updates for the [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) before organization-wide deployment. This feature automatically collects and consolidates health indicators such as app and add-in performance and reliability data and brings attention to any identified issues. Its automated nature reduces the need for manual administrative work and simplifies the update deployment process.
 
