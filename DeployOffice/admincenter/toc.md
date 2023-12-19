@@ -6,4 +6,5 @@
 ## [Inventory](inventory.md)
 ## [Security update status](security-update-status.md)
 ## [Servicing profile](servicing-profile.md)
+## [Update validation](update-validation.md)
 ## [OneDrive sync health](/onedrive/sync-health)
