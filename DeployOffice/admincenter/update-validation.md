@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 hideEdit: true
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 12/18/2023
+ms.date: 12/19/2023
 ---
 
 # Overview
@@ -48,8 +48,10 @@ For a status of yellow or red, the admin can view the list of devices and see wh
 
 As explained above, each device, app and add-in has several health metrics. A device without add-ins would have twenty metrics: app start performance and app reliability for Word, Excel, PowerPoint, Outlook, and OneNote. These metrics are divided into ten pre-update and ten post-update ones. Each add-in adds four more metrics. The metrics are compared and filtered after reaching a statistical confidence of 95%, using the following thresholds:
 
-- The app must take more than 5 seconds to start, which is at least 1 second longer than before.
-- The app must have less than 99% reliability, which is at least 1 percentage point lower than before.
+- For apps, start performance must take more than 5 seconds to start and at least 1 second longer than before.
+- For apps, reliability must be less than 99% and at least 1 percentage point lower than before.
+- For add-ins, start performance is at least 1 second slower than before.
+- For add-ins, reliability must be less than 99% and at least 1 percentage point lower than before.
 
 The thresholds help to ignore degradations that are statistically significant, but not disruptive to users. For instance, suppose Outlook's app start performance worsens from two seconds to three seconds. This is a 50% degradation, but it does not affect the user much. Outlook still starts up quickly. Similarly, if the reliability drops from 99.9% to 99.8%, the crash rate technically doubles from 0.1% to 0.2%. But only two out of a thousand app sessions are affected. This may not disrupt the user's daily routine.
 
