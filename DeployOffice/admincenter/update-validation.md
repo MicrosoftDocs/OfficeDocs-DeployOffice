@@ -22,6 +22,9 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > [!TIP]
 > For a guided introduction to update validation, check out the [Introducing update validation in the Microsoft 365 Apps admin center](https://youtu.be/xZtXI-Ws-pE) video.
 
+> [!NOTE]
+> Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
+
 ## Benefits
 A common practice in larger organizations is to deploy new updates to a subset of devices first. This way, they can identify and contain potential issues early in the deployment cycle and limit the risk of disruptive issues to a manageable number of devices. However, this approach also creates extra work for administrators. Often, the feedback channels aren't automated, and the admin must actively collect early feedback from sources such as the help desk team or dedicated testers. Moreover, the feedback might be vague or too general to pinpoint the actual issues without further investigation and troubleshooting. This increases the admin's workload and delays the deployment of the update, which could affect the organization's security posture.
 
