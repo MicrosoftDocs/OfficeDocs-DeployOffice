@@ -1051,6 +1051,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "DeployOffice/readiness-tools.md",
+      "redirect_url": "/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "DeployOffice/admincenter/overview-deployment-validation.md",
       "redirect_url": "/DeployOffice/admincenter/update-validation",
       "redirect_document_id": false

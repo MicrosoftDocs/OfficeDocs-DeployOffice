@@ -85,7 +85,6 @@
 ### [Overview of extended offline access](overview-extended-offline-access.md)
 ### [Overview of viewer mode](overview-viewer-mode.md)
 ### [Change installation from 32-bit to 64-bit](change-bitness.md)
-### [App compatibility & readiness assessment tools](readiness-tools.md)
 ### [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 
 ## [New Outlook for Windows](outlook/overview-new-outlook.md)
