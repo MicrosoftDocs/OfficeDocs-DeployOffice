@@ -2,6 +2,17 @@
 
 
 
+## Week of December 18, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/18/2023 | [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](/DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps) | modified |
+| 12/19/2023 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/update-validation) | added |
+| 12/19/2023 | Overview of update validation in the Microsoft 365 Apps admin center | removed |
+| 12/19/2023 | Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps | removed |
+
+
 ## Week of December 11, 2023
 
 
@@ -50,13 +61,3 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 11/21/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | modified |
-
-
-## Week of November 13, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/13/2023 | [Overview of update channels for Microsoft 365 Apps](/DeployOffice/updates/overview-update-channels) | modified |
-| 11/14/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | added |
-| 11/15/2023 | [Overview of the new Outlook for Windows](/DeployOffice/outlook/overview-new-outlook) | modified |
