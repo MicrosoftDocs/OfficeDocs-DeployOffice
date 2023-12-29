@@ -17402,6 +17402,7 @@ The following fields are collected:
 Triggered when an error occurs (machine action) and is required for crash investigation.
 
 Error types include:
+
 	- Any call to Javascript function after Global Exception has been raised
 	- Any WebServer error when DeveloperSettings.UseWebDebugger is true
 
