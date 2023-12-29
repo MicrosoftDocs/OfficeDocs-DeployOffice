@@ -10338,9 +10338,9 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success
 
-- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
-
 - **Data_BusbarShown** - Duration until video advertisement notification is shown.
+
+- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
 
 - **Data_ContainerInstanceId** - A unique identifier for each advertisement container
 
@@ -14365,8 +14365,8 @@ The following fields are collected:
 - **Data_AppBootFileScheme** - Denotes  the scheme portion of the intent's data.
 
 - **Data_AppBootFileTentativeExtension** - Enum denotes tentative file extension as evaluated from intent.
-- **Data_AppBootFileTentativeExtensionComparisionResult88 - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc. 
 
+- **Data_AppBootFileTentativeExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc. 
 
 - **Data_AppBootIntentMimeType** - The mime type of the external file intent.
 
