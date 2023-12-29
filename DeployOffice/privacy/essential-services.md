@@ -3,14 +3,13 @@ title: "Essential services for Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
+ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 10/10/2023
+ms.date: 12/29/2023
 ---
 
 # Essential services for Office
@@ -4852,6 +4851,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **currentFeatureCard** - String – The title of the current feature card on display just before the Purchase/Buy Button was tapped
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **isDefaultSKU** - Bool – If the user is purchasing the product, we recommended for them, by displaying it by default.
+   - **isFloatingDock** - Bool - Will reflect if the buy button was tapped on floating dock or the plan cards.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App-store product-id of the product for which the Buy Button was tapped.
    - **toggleCount** - Int – Number of times the user switched between viewing various products, before they tapped the Buy Button, in the current session of Paywall. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
@@ -4877,11 +4877,15 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    The following fields are collected:
 
    - **cardsVisited** - Int – number of displayed feature cards the user has seen
+   - **compTableInteracted** - Bool - If user toggled the comparison table column selection throughout the session.
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **exitReason** - String – Exit reason of SKU Chooser. Like “BuyButton”, “CloseButton”
+   - **floatingDDInteracted** - Bool - If user ever clicked on drop down in floating dock.
+   - **floatingToggleCount** - Int - Number of times the user switched between monthly and yearly on the floating dock
    - **graceLeftoverDays** - Int – number of days left for grace period
    - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
+   - **scrollDepth** - Double - Scroll depth throughout the current session of paywall.
    - **userDuration** - Double – Duration in milli-seconds the user spent on the SKU chooser.
    - **toggleCount** - Int - Number of times the user switched between viewing various products, before they tapped the Buy/Cancel Button, in the current session of Paywall.  
 
@@ -18176,6 +18180,14 @@ The following fields are collected:
 - **PaywallOperationResult** - Success / Error Code / User Canceled (Enum / int – finite)
 
 - **PaywallOperationType** - Kind of Paywall operation (enum/ int - finite)
+
+### Office.Android.DocsUI.PaywallControl.PaywallPrivacyUIEvent
+
+This event is triggered when the consent-taking privacy screen is shown before the subscription paywall screen. Data collected here will be needed to understand if the screen and its elements is performing as expected and to also find the loss in user paywall sessions as a result of user's selection on the consent screen.
+
+The following fields are collected:
+
+- **FunnelPoint** - Integer – Indicating the encounter user has with the privacy consent screen. (0: Screen is shown to the user; 1: User accepts; 2: User declines)
 
 ### Office.Android.DocsUI.PaywallControl.PaywallSessionData
 
