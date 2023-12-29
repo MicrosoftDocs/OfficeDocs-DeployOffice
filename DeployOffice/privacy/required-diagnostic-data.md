@@ -17403,8 +17403,8 @@ Triggered when an error occurs (machine action) and is required for crash invest
 
 Error types include:
 
-	- Any call to Javascript function after Global Exception has been raised
-	- Any WebServer error when DeveloperSettings.UseWebDebugger is true
+- Any call to Javascript function after Global Exception has been raised
+- Any WebServer error when DeveloperSettings.UseWebDebugger is true
 
 The following fields are collected:
 
