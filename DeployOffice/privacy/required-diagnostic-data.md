@@ -3,14 +3,13 @@ title: "Required diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
+ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 12/05/2023
+ms.date: 12/29/2023
 ---
 
 # Required diagnostic data for Office
@@ -2070,9 +2069,11 @@ The following fields are collected:
 
 This event is triggered when the user uses the new Customizable Toolbar feature in Compose to move an action between the toolbar pinned area and the drawer. The data is used to ensure that the feature is functioning as expected and to plan for future improvements.
 
-The following fields are collected: 
+The following fields are collected:
 
-- **rearrange_action** - type of rearrange action performed by the user, including pin_to_toolbar, move_to_drawer, move_within_toolbar, and move_within_drawer.
+- **Action_Movement** - changes in the position of an action on the toolbar, where positive values represent a move towards the start, and negative values represent a move towards the end of the list.
+
+- **rearrange_action** - type of rearrange action performed by the user, including pin_to_toolbar, move_to_drawer, move_within_toolbar, and move_within_drawer. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **toolbar_action** - toolbar action that is being moved, which has the same type as the action property in compose_mail_accessory event.
 
@@ -9302,9 +9303,13 @@ The following fields are collected:
 
 - **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry-related values in the event for the source document. Used for data quality diagnostics.
 
-- **Data_CantSkipSaveReason** - Reason for FSkipSavePdod returning false
+- **Data_CantSkipSaveReason** - Reason for not skipping save. There are cases when save can be skipped on purpose (for example, if there are no changes on the document since the last save).
 
 - **Data_DetachedDuration** - How long was the activity detached from the thread
+
+- **Data_dmsecBackgroundSaveMaxUnresponsivenessInterval** - Max continuous time interval (in milliseconds) when Word was unresponsive during a background save.
+
+- **Data_dmsecForegroundSaveUnresponsivenessTime** - Time interval (in milliseconds) when Word was unresponsive during a foreground save.
 
 - **Data_Doc_AccessMode** - Document is read only/editable
 
@@ -9440,11 +9445,15 @@ The following fields are collected:
     
 - **Data_DstDoc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
+- **Data_editToSaveTimeMicroseconds** - The duration, measured in microseconds, between the moment a user edits a document and till the completion of the save operation.
+
 - **Data_FailureClass** - Integer representing the failure class for OCS transition failures
 
 - **Data_fCoherencyFailureRetry** - Flag indicating that the save operation retried for coherency failures
 
 - **Data_FirstTryCV** - The first save retry action identifier
+
+- **Data_fOcsPersister** - Flag indicating that the app is using collaboration service to save the document.
 
 - **Data_fOperationCancelled** - Flag indicating that the save operation is cancelled
 
@@ -10329,6 +10338,10 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success
 
+- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
+
+- **Data_BusbarShown** - Duration until video advertisement notification is shown.
+
 - **Data_ContainerInstanceId** - A unique identifier for each advertisement container
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
@@ -10357,10 +10370,19 @@ The following fields are collected:
 
 - **Data_SDXStoreType** - The source of the advertisement add-in package in usage
 
+- **Data_TimeToShowVideo** - Duration until next video advertisement is about to be shown.
+
+- **Data_TimeToStartVideo** - Duration until next video advertisement starts to load.
+
 - **Data_Type** - The type of advertisement
+
+- **Data_VideoToShow** - Duration until video advertisement is about to be shown.
+
+- **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
 
 - **Data_WindowClosed** - Duration until application window is closed
 
+- **Data_WindowDeactivated** - Last time when window containing advertisement add-in page is deactivated.
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -14218,6 +14240,10 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
 
+- **Data_BusbarShown** - Duration until video advertisement notification is shown.
+
+- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
+
 - **Data_ContainerInstanceId** - A unique identifier for each advertisement container
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
@@ -14248,9 +14274,19 @@ The following fields are collected:
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
+- **Data_TimeToShowVideo** - Duration until next video advertisement is about to be shown.
+
+- **Data_TimeToStartVideo** - Duration until next video advertisement starts to load.
+
 - **Data_Type** - The type of advertisement
 
+- **Data_VideoToShow** - Duration until video advertisement is about to be shown.
+
+- **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
+
 - **Data_WindowClosed** - Duration when application document window is closed
+
+- **Data_WindowDeactivated** - Last time when window containing advertisement add-in page is deactivated.
 
 #### Office.ClickToRun.Ads.SDX.Error
 
@@ -14304,6 +14340,58 @@ place. We collect this data to ensure good performance for all file opens on the
 
 The following fields are collected:
 
+- **Data_ActivityTransitionEndTimeSA** - Time taken till the end of ActivityTransition boot substage since activation.
+
+- **Data_ActivityTransitionStartTimeSA** - Time taken till the start of ActivityTransition boot substage since activation.
+
+- **Data_ActivityTransitionTime** - Time taken in the ActivityTransition boot substage.
+
+- **Data_AppActivationEndTimeSA** - Time taken till the end of AppActivation boot substage since activation.
+
+- **Data_AppActivationStartTimeSA** - Time taken till the start of AppActivation boot substage since activation.
+
+- **Data_AppActivationTimeInMs** - The time taken in the AppActivation boot substage.
+
+- **Data_AppBootAction** - Describes general action to be performed using the PDF intent, such as ACTION_VIEW. The action describes the general way the rest of the information in the intent should be interpreted.
+
+- **Data_AppBootComponentCheckResult** - Result of component name check on the pdf intent.
+
+- **Data_AppBootComponentName** - Denotes the class name of the concrete component associated with the intent.
+
+- **Data_AppBootFileExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc 
+
+- **Data_AppBootFileMimeType** - Mime type of the file.
+
+- **Data_AppBootFileScheme** - Denotes  the scheme portion of the intent's data.
+
+- **Data_AppBootFileTentativeExtension** - Enum denotes tentative file extension as evaluated from intent.
+- **Data_AppBootFileTentativeExtensionComparisionResult88 - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc. 
+
+
+- **Data_AppBootIntentMimeType** - The mime type of the external file intent.
+
+- **Data_AppBootOldIntentParserResult** - Denotes the parser result of the PDF intent. Values include whether it is matching, not matching etc.
+
+- **Data_AppBootPathType** - Type of app boot when user is opening the file. Whether it was organic launch using app launcher, or inorganic launch by directly doing a file activation.
+
+- **Data_ApplicationObjectInitDuration** - Time taken (milliseconds) to initialize the application object.
+
+- **Data_CommonLibrariesLoadEndEndTimeSA** - Time taken till the end of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibrariesLoadEndStartTimeSA** - Time taken till the start of CommonLibrariesLoadStart boot substage since activation.
+
+- **Data_CommonLibrariesLoadEndTimeSA** - Time taken till the end of CommonLibrariesLoad boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartEndTimeSA** - Time taken till the end of CommonLibrariesLoadStart boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartStartTimeSA** - Time taken till the start of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartTimeSA** - Time taken till the start of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibraryLoadPhaseTime** - Time taken to load the common libraries. 
+
+- **Data_ControlItemCreationTimeSA** - Captures the time at which PDF control item object is created since file open intent was received.
+
 - **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
 (only first party app info is being logged).
 
@@ -14313,7 +14401,163 @@ The following fields are collected:
 
 - **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
 
+- **Data_Doc_OpenFromOMDurationMs** - Total time to taken to open a PDF file in officemobile.
+
+- **Data_Doc_PasswordProtected** - Denotes whether the file is password protected or not.
+
+- **Data_DownloadCacheStateAndStage** - Denotes the cache status and fetch stage of files when file result is returned to consumers from cache from file manager layer. Values like cache hit if it is found in local cache,  cache miss if not found etc.
+
+- **Data_ExtractionTime** - Time taken to extract the packaged assets like fonts on start of the app.
+
 - **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Data_FileActivationTime** - Timestamp of the time when the file activation was started.
+
+- **Data_FileFetchEndTimeSA** - Time taken for fetching file details from storage location.
+
+- **Data_FileFetchStartTimeSA** - Time taken to start fetching the file details since activation was started.
+
+- **Data_FileOpenEntryPoint** - Integer denoting Entry point of the file from where it is opened - whether it is an external file open, or opened internally from the app like home screen, search page etc.
+
+- **Data_FileParsingEndTimeSA** - Time taken to start rendering the file on screen since activation was started.
+
+- **Data_FRECompletedBeforeActivation** - Boolean denoting if all the FRE screens are shown before file activation.
+
+- **Data_FreCompletionDurationSinceActivationMs** - Time taken to complete first user experience since activation was started.
+
+- **Data_IntunePolicyAppliedBeforeRenderComplete** - Boolean denoting if intune policies are applied.
+
+- **Data_IntunePolicyInvokeTimeSA** - Time taken to invoke intune policy since activation was started.
+
+- **Data_IsAppUpgradeInBackground** - Boolean denoting if app is upgraded in the Current Boot due to extraction from background process.
+
+- **Data_IsAppUpgradeSession** - Boolean denoting if given session is the first session after user has upgraded the app.
+
+- **Data_isDuplicateIntent** - Denotes if app has received the same intent twice.
+
+- **Data_IsFastFileActivationEnabled** - Boolean denoting if fast file activation flow is enabled or not.
+
+- **Data_IsFastFileActivationTelemetryEnabled** - Boolean denoting if fast file activation flow's telemetry  is enabled or not.
+
+- **Data_IsHomeScreenUpgradeSession** - Denotes whether officemobile home screen was shown or not , or home screen was upgraded or not in current file open session.
+
+- **Data_IsIntuneManaged** - Boolean denoting if file is an intune managed or not (true/false). 
+
+- **Data_IsPdfDetectedUsingCompName** - Boolean denoting if current intent can be handled by new boot infra based on component name.
+
+- **Data_IsPdfDetectedUsingNewBootInfraLogic** - Boolean denoting if incoming intent is identified as a PDF file.
+
+- **Data_IsPriorityCoroutineEnabled** - Boolean denoting if priority coroutine fetauregate is enabled or not.
+
+- **Data_isSameFileOpened** - Denotes if in external pdf file open the same file is opened again.
+
+- **Data_LibrarySharingEndTimeSA** - Time taken for library sharing process to complete since activation.
+
+- **Data_LibrarySharingStartTimeSA** - Time taken for library sharing process to start since activation.
+
+- **Data_MinimumLibrariesLoadEndTimeSA** - Time taken for minimum library loading process to complete since activation.
+
+- **Data_MinimumLibrariesLoadStartEndTimeSA** - Time taken for minimum library start-loading process to complete since activation.
+
+- **Data_MinimumLibrariesLoadStartStartTimeSA** - Time taken for minimum library start-loading process to start since activation.
+
+- **Data_MinimumLibrariesLoadStartTimeSA** - Time taken for minimum library loading process to start since activation.
+
+- **Data_MinimumLibraryLoadPhaseTime** - Time taken to load minimum libraries.
+
+- **Data_NativeLibLoadTime** - Time taken to load native libraries.
+
+- **Data_OfficeActivityEndTimeSA** - Time taken to complete launch of  OfficeActivity after intent processing since app boot.
+
+- **Data_OfficeActivityStartTimeSA** - Time taken to start launch of OfficeActivity after intent processing since app boot.
+
+- **Data_OfficeActivityTime** - Time taken in OfficeActivity launch after intent processing since app boot.
+
+- **Data_OmActivityCreationTime** - Time taken for shell activity creation time since app boot.
+
+- **Data_OmAppActivationTasksEndTimeForFileOpenSA** - Time taken for completion of  shell activity specific post activation tasks since app boot.
+
+- **Data_OmAppActivationTasksStartTimeForFileOpenSA** - Time taken for start of shell activity specific post activation task since app boot.
+
+- **Data_OMAsyncInitOfficeAssetManagerInitiateTimeSA** - Time taken for Asset Manager initialization to trigger since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPostExecuteEndTimeSA** - Time taken for Asset Manager Post-execute phase to complete since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPostExecuteStartTimeSA** - Time taken for Asset Manager Post-execute phase to start since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPreExecuteEndTimeSA** - Time taken for Asset Manager Pre-execute phase to complete since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPreExecuteStartTimeSA** - Time taken for Asset Manager Pre-execute phase to start since activation.
+
+- **Data_OmDeferredLoadingTasksEndTimeSA** - Time taken to complete deferred task in shell activity since app boot.
+
+- **Data_OmDeferredLoadingTasksStartTimeSA** - Time taken to start deferred task in shell activity since app boot. 
+
+- **Data_OMDeferredTasksEndTimeSA** - Time taken for deferred tasks to complete since activation.
+
+- **Data_OMDeferredTasksStartTimeSA** - Time taken for deferred tasks to start since activation.
+
+- **Data_OMDownloadResourcesEndTimeSA** - Time taken for UI Resources download to complete since activation.
+
+- **Data_OMDownloadResourcesStartTimeSA** - Time taken for UI Resources download to start since activation.
+
+- **Data_OMInitializeOfficeAssetManagerEndTimeSA** - Time taken for AssetManager initialization to end since activation
+
+- **Data_OMInitializeOfficeAssetManagerStartTimeSA** - Time taken for AssetManager initialization to start since activation.
+
+- **Data_OMNewIntentTime** - Timestamp when last intent was received.
+
+- **Data_OMPostAppActivateEndTimeSA** - Time taken to end setup in shell activity post app activation since app boot.
+
+- **Data_OMPostAppActivateStartTimeSA** - Time taken to start setup in shell activity post app activation since app boot.
+
+- **Data_OMPostAppInitEndTimeSA** - Time taken to complete setup in shell activity post native libraries initialization since app boot.
+
+- **Data_OMPostAppInitStartTimeSA** - Time taken to start setup in shell activity post native libraries initialization since app boot.
+
+- **Data_OMStartHandlingIntendedIntentEndTimeSA** - Time taken to start handling launched intent since app boot.
+
+- **Data_pdfActivationDetectionFuncExceptionInfo** - Java class name of any exception received while evaluating external intent.
+
+- **Data_pdfActivationDetectionFuncTimeTaken**  - Time taken by the function to detect if the activation was a pdf activation.
+
+- **Data_pdfActivationDetectionFuncTimeTaken** - Time taken to compute whether the incoming intent is a PDF file activation intent.
+
+- **Data_PdfActivityCreationTimeSA** - Time taken for Pdf activity creation since app boot.
+
+- **Data_PdfActivityOnCreateTimeSA** - Time taken for Pdf creation life cycle event invocation since app boot. 
+
+- **Data_PdfIntentStartTimeSA** - Time taken for Shell activity to launch pdf activity since app boot.
+
+- **Data_PostAppInitEndTimeSA** - Time taken to complete setup in base activity post native libraries initialization since app boot.
+
+- **Data_PostAppInitStartTimeSA** -Time taken to start setup in base activity post native libraries initialization since app boot.
+
+- **Data_PostAppInitTimeInMs** - Time taken by post app initialization since pre-app initialization.
+
+- **Data_PostCommonLibraryLoadPhaseTime** - Time taken by bootApp completion since common library load completes. 
+
+- **Data_PostOfficeActivityTimeInMs** - Time taken between pre app init start and officeactivity ends.
+
+- **Data_PreAppInitEndTimeSA** - Time stamp of pre app initialization end in the app boot.
+
+- **Data_PreAppInitStartTimeSA** - Time stamp of pre app initialization start in the app boot. 
+
+- **Data_PreAppInitTimeInMs** - Time duration taken by preappinitialization of the app start.
+
+- **Data_PreCommonLibraryLoadPhaseTime** - Time taken between minimum library load completes and common library load completes.
+
+- **Data_PreProcessingEndTimeSA** - Time duration between processing end and file activation completion.
+
+- **Data_PreProcessingStartSA** - Time taken by processing starts since file activation ends. 
+
+- **Data_TotalLockDurationDuringMinLibLoad** - Total time taken by lock during minimum library loading.
+
+- **Data_TotalLockDurationDuringNativeLibLoad** - Total time taken by lock during library loading
+
+- **Data_VMInitAfterFetchTimeSA** - Time taken by ViewModel initialization after file is fetched.
+
+- **Data_VMInitBeforeFetchTimeSA** - Time taken by ViewModel initialization before file is fetched.
 
 - **Doc_RenderDurationms** - Time to render a pdf file
 
@@ -16529,6 +16773,8 @@ The following fields are collected:
 
 - **Data_AdRequestId** - A unique identifier for ad retrieval attempts
 
+- **Data_AdService** - The advertisement platform associated with retrieved ad content
+
 - **Data_AdType** - The type of advertisement
 
 - **Data_AuctionId** - A unique identifier for ad placement auction
@@ -16540,6 +16786,8 @@ The following fields are collected:
 - **Data_ErrorMessage** - A human-readable description of the error  
 
 - **Data_ErrorType** - The type of error
+
+- **Data_HttpStatus** - The status in the response from the advertisement platform
 
 
 #### Office.Graphics.SpriteMemCorrupt
