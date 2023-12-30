@@ -3,14 +3,13 @@ title: "Required diagnostic data for Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
+ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 12/05/2023
+ms.date: 12/29/2023
 ---
 
 # Required diagnostic data for Office
@@ -2070,9 +2069,11 @@ The following fields are collected:
 
 This event is triggered when the user uses the new Customizable Toolbar feature in Compose to move an action between the toolbar pinned area and the drawer. The data is used to ensure that the feature is functioning as expected and to plan for future improvements.
 
-The following fields are collected: 
+The following fields are collected:
 
-- **rearrange_action** - type of rearrange action performed by the user, including pin_to_toolbar, move_to_drawer, move_within_toolbar, and move_within_drawer.
+- **Action_Movement** - changes in the position of an action on the toolbar, where positive values represent a move towards the start, and negative values represent a move towards the end of the list.
+
+- **rearrange_action** - type of rearrange action performed by the user, including pin_to_toolbar, move_to_drawer, move_within_toolbar, and move_within_drawer. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **toolbar_action** - toolbar action that is being moved, which has the same type as the action property in compose_mail_accessory event.
 
@@ -5918,6 +5919,80 @@ The following fields are collected:
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
 
 
+#### Office.Fluid.LoopMobile.Activity.ScenarioCreatePage
+
+The event occurs when creating a Loop page and allows capturing success and error rates of the Create Page core scenario and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to create a Loop page.
+
+- **Activity_Success** - A flag indicating if creating a Loop page succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if creating a Loop page failed.
+
+- **Data_FeatureName** - Name of this activity: Create Loop Page.
+
+
+#### Office.Fluid.LoopMobile.Activity.ScenarioCreateWorkspace
+
+The event occurs when creating a Loop workspace and allows capturing success and error rates of the Workspace core scenario and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to create a Loop workspace.
+
+- **Activity_Success** - A flag indicating if creating a Loop workspace succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if creating a Loop workspace failed.
+
+- **Data_FeatureName** - Name of this activity: Create Loop Workspace.
+
+
+#### Office.Fluid.LoopMobile.Activity.ScenarioOpenPage
+
+The event occurs when opening a Loop page and allows capturing success and error rates of the Open Page core scenario and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to open a Loop page.
+
+- **Activity_Success** - A flag indicating if opening a Loop page succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if opening a Loop page failed.
+
+- **Data_FeatureName** - Name of this activity: Open Loop Page.
+
+
+#### Office.Fluid.LoopMobile.Activity.ScenarioSharePage
+
+The event occurs when sharing a Loop page and allows capturing success and error rates of the Share Page core scenario and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to share a Loop page.
+
+- **Activity_Success** - A flag indicating if sharing a Loop page succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if sharing a Loop page failed.
+
+- **Data_FeatureName** - Name of this activity: Share Loop Page.
+
+#### Office.Fluid.LoopMobile.Activity.ScenarioSwitchPage
+
+The event occurs when switching Loop pages and allows capturing success and error rates of the Switch Page core scenario and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to switch a Loop page.
+
+- **Activity_Success** - A flag indicating if switching a Loop page succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if switching a Loop page failed.
+
+- **Data_FeatureName** - Name of this activity: Switch Loop Page.
+
+
 ### Office.Fluid.LoopMobile.Generic.AppLifecycle
 
 This event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
@@ -8348,6 +8423,888 @@ The following fields are collected:
 
 - **Activity_DateTimeTicks** - Data Time for the activity
 
+
+#### Office.StickyNotes.Web.SDK.ContextUrlAction
+
+Triggered when user hovers or clicks on a context url to go back to source (user action) and is required to compute how frequently users click on the context url to go back to the source (which is one of the core actions of OneNote Sticky Notes).
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_ActionName** - Action during which event was recorded
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_isActionableContext** - Is the context url available and clickable
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+
+#### Office.StickyNotes.Web.SDK.NoteCreated
+
+Triggered when a user creates a sticky note (user action).
+
+We will be migrating the users from the old sticky notes app to the new sticky notes app and need this telemetry to make sure that the note creation experience of new sticky notes app is working as expected by the users.
+
+This is also required to track Smart Capture / New Note (which are some of the core actions of OneNote Sticky Notes) for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app.
+
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_ContextHostApp** – Host app that note was taken in context of
+
+- **Data_ContextHostCategory** - Category (Meeting / Learning / Office) of the host app that note was taken in context of
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_hasImage** - Is the note created using Smart Capture
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_isActionableContext** - Is the context url available and clickable, in order to compute % of notes with actionable context
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_NoteLocalId** - Note ID
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_ScreenshotCapturedOnce** - Is this the first screenshot capture of a user
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **PartA_PrivTags** - Always logged blank 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.NoteDeleted
+
+Triggered when a user deletes a sticky note (user action).
+
+We will be migrating the users from the old sticky notes app to the new sticky notes app and need this telemetry to make sure that the note deletion experience of new sticky notes app is working as expected by the users.
+
+This is required for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app. 
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EditMode** - Indicates whether a sticky note is being edited in list mode or in a popout window
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_feedNoteType** - 'StickyNote' | 'OneNotePage' | 'SamsungNote' 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_NoteLocalId** - Note ID
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_source** - Is the selected note a related note, recent note or result of a search operation
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.NotePopupEditor
+
+Triggered when user pops out note from bar or opens note list from pop out (user action).
+
+We will be migrating the users from the old sticky notes app to the new sticky notes app and need this telemetry to make sure that the note pop out experience of new sticky notes app is working as expected by the users.
+
+This is also required to track how frequently users use the pop out feature, for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app.
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_ActionName** - Action during which event was recorded
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_NoteLocalId** - Note ID
+
+- **Data_NoteWasEmpty** - Whether note was blank before popping out note from bar or opening note list from pop out
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_source** - Is the selected note a related note, recent note or result of a search operation 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+
+#### Office.StickyNotes.Web.SDK.NoteViewed
+
+Triggered when a user views a sticky note (user action).
+
+We will be migrating the users from the old sticky notes app to the new sticky notes app and need this telemetry to make sure that the note viewing experience of new sticky notes app is working as expected by the users.
+
+This is also required to track Recall of a note (which is one of the core actions of OneNote Sticky Notes) for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_ContextHostApp** - Host app that note was taken in context of
+
+- **Data_ContextHostCategory** - Category (Meeting / Learning / Office) of the host app that note was taken in context of 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_FeedNoteType** - 'StickyNote' | 'OneNotePage' | 'SamsungNote' 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_isNewNoteScenario** - Is the current scenario that of a user taking a new note
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_NoteId** - Note ID
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_source** - Is the selected note a related note, recent note or result of a search operation
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **PartA_PrivTags** - Always logged blank 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.RelatedNotesListUpdated
+
+Triggered when the user switches to a different context (user action) and is required to compute the total number of related notes users have for the current context.
+
+More the number of related notes for a given context, more efficient is OneNote Sticky Notes.
+
+This is also required to track Recall (which is one of the core actions of OneNote Sticky Notes) and make sure that the recall experience of new sticky notes app is working as expected and for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app.
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_RelatedNotesCount** - Count of related notes
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+#### Office.StickyNotes.Web.SDK.SearchInitiated
+
+Triggered when the search term is updated (user action).
+
+We will be migrating the users from the old sticky notes app to the new sticky notes app and need this telemetry to make sure that the search experience of new sticky notes app is working as expected by the users.
+
+This is also required to track how frequently users search in OneNote Sticky Notes, for detailed analysis of how user interacts with the app, thus helping product team improve workflows in the app.
+
+Please note that this event won’t be logged multiple times while a search term is getting actively updated. Once logged, this event will be logged again only when the search term is completely erased, and the user starts typing a new search term.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_SearchEntryPoint** - Entry point from which search action in OneNote Sticky Notes is invoked. Currently, we are tracking the 'TellMeSearch' entry point which is the OneNote Win32 search at the top.
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+
 #### Office.StreamDevice.Activity.Start
 
 Allows us to know if start streaming data source is successful.   Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
@@ -9302,9 +10259,13 @@ The following fields are collected:
 
 - **Data_AddDocTelemResSrc** - Reports whether we were able to properly populate other document telemetry-related values in the event for the source document. Used for data quality diagnostics.
 
-- **Data_CantSkipSaveReason** - Reason for FSkipSavePdod returning false
+- **Data_CantSkipSaveReason** - Reason for not skipping save. There are cases when save can be skipped on purpose (for example, if there are no changes on the document since the last save).
 
 - **Data_DetachedDuration** - How long was the activity detached from the thread
+
+- **Data_dmsecBackgroundSaveMaxUnresponsivenessInterval** - Max continuous time interval (in milliseconds) when Word was unresponsive during a background save.
+
+- **Data_dmsecForegroundSaveUnresponsivenessTime** - Time interval (in milliseconds) when Word was unresponsive during a foreground save.
 
 - **Data_Doc_AccessMode** - Document is read only/editable
 
@@ -9440,11 +10401,15 @@ The following fields are collected:
     
 - **Data_DstDoc_WopiServiceId** - Contains unique identifier of WOPI service provider
 
+- **Data_editToSaveTimeMicroseconds** - The duration, measured in microseconds, between the moment a user edits a document and till the completion of the save operation.
+
 - **Data_FailureClass** - Integer representing the failure class for OCS transition failures
 
 - **Data_fCoherencyFailureRetry** - Flag indicating that the save operation retried for coherency failures
 
 - **Data_FirstTryCV** - The first save retry action identifier
+
+- **Data_fOcsPersister** - Flag indicating that the app is using collaboration service to save the document.
 
 - **Data_fOperationCancelled** - Flag indicating that the save operation is cancelled
 
@@ -10329,6 +11294,10 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success
 
+- **Data_BusbarShown** - Duration until video advertisement notification is shown.
+
+- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
+
 - **Data_ContainerInstanceId** - A unique identifier for each advertisement container
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
@@ -10357,10 +11326,19 @@ The following fields are collected:
 
 - **Data_SDXStoreType** - The source of the advertisement add-in package in usage
 
+- **Data_TimeToShowVideo** - Duration until next video advertisement is about to be shown.
+
+- **Data_TimeToStartVideo** - Duration until next video advertisement starts to load.
+
 - **Data_Type** - The type of advertisement
+
+- **Data_VideoToShow** - Duration until video advertisement is about to be shown.
+
+- **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
 
 - **Data_WindowClosed** - Duration until application window is closed
 
+- **Data_WindowDeactivated** - Last time when window containing advertisement add-in page is deactivated.
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -11444,6 +12422,166 @@ The following fields are collected:
 - **processSessionId** - Randomly generated guid to identify the app session
 
 - **UTCReplace_AppSessionGuid** - Constant boolean value. Always true.
+
+#### Office.StickyNotes.Web.SDK.AppBoot
+
+Triggered when app is booted (user action) and is required to compute usage.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_clientSessionId** - Client Session ID
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDXSessionId** - SDX Session ID
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **PartA_PrivTags** - Always logged blank 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
 
 #### Office.System.SessionHandoff
 
@@ -14218,6 +15356,10 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
 
+- **Data_BusbarShown** - Duration until video advertisement notification is shown.
+
+- **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
+
 - **Data_ContainerInstanceId** - A unique identifier for each advertisement container
 
 - **Data_Destroy** - Duration when advertisement container is destroyed due to an error
@@ -14248,9 +15390,19 @@ The following fields are collected:
 
 - **Data_StartSDX** - Duration to start advertisement add-in initialization
 
+- **Data_TimeToShowVideo** - Duration until next video advertisement is about to be shown.
+
+- **Data_TimeToStartVideo** - Duration until next video advertisement starts to load.
+
 - **Data_Type** - The type of advertisement
 
+- **Data_VideoToShow** - Duration until video advertisement is about to be shown.
+
+- **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
+
 - **Data_WindowClosed** - Duration when application document window is closed
+
+- **Data_WindowDeactivated** - Last time when window containing advertisement add-in page is deactivated.
 
 #### Office.ClickToRun.Ads.SDX.Error
 
@@ -14304,6 +15456,58 @@ place. We collect this data to ensure good performance for all file opens on the
 
 The following fields are collected:
 
+- **Data_ActivityTransitionEndTimeSA** - Time taken till the end of ActivityTransition boot substage since activation.
+
+- **Data_ActivityTransitionStartTimeSA** - Time taken till the start of ActivityTransition boot substage since activation.
+
+- **Data_ActivityTransitionTime** - Time taken in the ActivityTransition boot substage.
+
+- **Data_AppActivationEndTimeSA** - Time taken till the end of AppActivation boot substage since activation.
+
+- **Data_AppActivationStartTimeSA** - Time taken till the start of AppActivation boot substage since activation.
+
+- **Data_AppActivationTimeInMs** - The time taken in the AppActivation boot substage.
+
+- **Data_AppBootAction** - Describes general action to be performed using the PDF intent, such as ACTION_VIEW. The action describes the general way the rest of the information in the intent should be interpreted.
+
+- **Data_AppBootComponentCheckResult** - Result of component name check on the pdf intent.
+
+- **Data_AppBootComponentName** - Denotes the class name of the concrete component associated with the intent.
+
+- **Data_AppBootFileExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc 
+
+- **Data_AppBootFileMimeType** - Mime type of the file.
+
+- **Data_AppBootFileScheme** - Denotes  the scheme portion of the intent's data.
+
+- **Data_AppBootFileTentativeExtension** - Enum denotes tentative file extension as evaluated from intent.
+
+- **Data_AppBootFileTentativeExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc. 
+
+- **Data_AppBootIntentMimeType** - The mime type of the external file intent.
+
+- **Data_AppBootOldIntentParserResult** - Denotes the parser result of the PDF intent. Values include whether it is matching, not matching etc.
+
+- **Data_AppBootPathType** - Type of app boot when user is opening the file. Whether it was organic launch using app launcher, or inorganic launch by directly doing a file activation.
+
+- **Data_ApplicationObjectInitDuration** - Time taken (milliseconds) to initialize the application object.
+
+- **Data_CommonLibrariesLoadEndEndTimeSA** - Time taken till the end of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibrariesLoadEndStartTimeSA** - Time taken till the start of CommonLibrariesLoadStart boot substage since activation.
+
+- **Data_CommonLibrariesLoadEndTimeSA** - Time taken till the end of CommonLibrariesLoad boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartEndTimeSA** - Time taken till the end of CommonLibrariesLoadStart boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartStartTimeSA** - Time taken till the start of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibrariesLoadStartTimeSA** - Time taken till the start of CommonLibrariesLoadEnd boot substage since activation.
+
+- **Data_CommonLibraryLoadPhaseTime** - Time taken to load the common libraries. 
+
+- **Data_ControlItemCreationTimeSA** - Captures the time at which PDF control item object is created since file open intent was received.
+
 - **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
 (only first party app info is being logged).
 
@@ -14313,7 +15517,163 @@ The following fields are collected:
 
 - **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
 
+- **Data_Doc_OpenFromOMDurationMs** - Total time to taken to open a PDF file in officemobile.
+
+- **Data_Doc_PasswordProtected** - Denotes whether the file is password protected or not.
+
+- **Data_DownloadCacheStateAndStage** - Denotes the cache status and fetch stage of files when file result is returned to consumers from cache from file manager layer. Values like cache hit if it is found in local cache,  cache miss if not found etc.
+
+- **Data_ExtractionTime** - Time taken to extract the packaged assets like fonts on start of the app.
+
 - **Data_FetchReason** – Denotes how the file was fetched (manual, cached, not cached)
+
+- **Data_FileActivationTime** - Timestamp of the time when the file activation was started.
+
+- **Data_FileFetchEndTimeSA** - Time taken for fetching file details from storage location.
+
+- **Data_FileFetchStartTimeSA** - Time taken to start fetching the file details since activation was started.
+
+- **Data_FileOpenEntryPoint** - Integer denoting Entry point of the file from where it is opened - whether it is an external file open, or opened internally from the app like home screen, search page etc.
+
+- **Data_FileParsingEndTimeSA** - Time taken to start rendering the file on screen since activation was started.
+
+- **Data_FRECompletedBeforeActivation** - Boolean denoting if all the FRE screens are shown before file activation.
+
+- **Data_FreCompletionDurationSinceActivationMs** - Time taken to complete first user experience since activation was started.
+
+- **Data_IntunePolicyAppliedBeforeRenderComplete** - Boolean denoting if intune policies are applied.
+
+- **Data_IntunePolicyInvokeTimeSA** - Time taken to invoke intune policy since activation was started.
+
+- **Data_IsAppUpgradeInBackground** - Boolean denoting if app is upgraded in the Current Boot due to extraction from background process.
+
+- **Data_IsAppUpgradeSession** - Boolean denoting if given session is the first session after user has upgraded the app.
+
+- **Data_isDuplicateIntent** - Denotes if app has received the same intent twice.
+
+- **Data_IsFastFileActivationEnabled** - Boolean denoting if fast file activation flow is enabled or not.
+
+- **Data_IsFastFileActivationTelemetryEnabled** - Boolean denoting if fast file activation flow's telemetry  is enabled or not.
+
+- **Data_IsHomeScreenUpgradeSession** - Denotes whether officemobile home screen was shown or not , or home screen was upgraded or not in current file open session.
+
+- **Data_IsIntuneManaged** - Boolean denoting if file is an intune managed or not (true/false). 
+
+- **Data_IsPdfDetectedUsingCompName** - Boolean denoting if current intent can be handled by new boot infra based on component name.
+
+- **Data_IsPdfDetectedUsingNewBootInfraLogic** - Boolean denoting if incoming intent is identified as a PDF file.
+
+- **Data_IsPriorityCoroutineEnabled** - Boolean denoting if priority coroutine fetauregate is enabled or not.
+
+- **Data_isSameFileOpened** - Denotes if in external pdf file open the same file is opened again.
+
+- **Data_LibrarySharingEndTimeSA** - Time taken for library sharing process to complete since activation.
+
+- **Data_LibrarySharingStartTimeSA** - Time taken for library sharing process to start since activation.
+
+- **Data_MinimumLibrariesLoadEndTimeSA** - Time taken for minimum library loading process to complete since activation.
+
+- **Data_MinimumLibrariesLoadStartEndTimeSA** - Time taken for minimum library start-loading process to complete since activation.
+
+- **Data_MinimumLibrariesLoadStartStartTimeSA** - Time taken for minimum library start-loading process to start since activation.
+
+- **Data_MinimumLibrariesLoadStartTimeSA** - Time taken for minimum library loading process to start since activation.
+
+- **Data_MinimumLibraryLoadPhaseTime** - Time taken to load minimum libraries.
+
+- **Data_NativeLibLoadTime** - Time taken to load native libraries.
+
+- **Data_OfficeActivityEndTimeSA** - Time taken to complete launch of  OfficeActivity after intent processing since app boot.
+
+- **Data_OfficeActivityStartTimeSA** - Time taken to start launch of OfficeActivity after intent processing since app boot.
+
+- **Data_OfficeActivityTime** - Time taken in OfficeActivity launch after intent processing since app boot.
+
+- **Data_OmActivityCreationTime** - Time taken for shell activity creation time since app boot.
+
+- **Data_OmAppActivationTasksEndTimeForFileOpenSA** - Time taken for completion of  shell activity specific post activation tasks since app boot.
+
+- **Data_OmAppActivationTasksStartTimeForFileOpenSA** - Time taken for start of shell activity specific post activation task since app boot.
+
+- **Data_OMAsyncInitOfficeAssetManagerInitiateTimeSA** - Time taken for Asset Manager initialization to trigger since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPostExecuteEndTimeSA** - Time taken for Asset Manager Post-execute phase to complete since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPostExecuteStartTimeSA** - Time taken for Asset Manager Post-execute phase to start since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPreExecuteEndTimeSA** - Time taken for Asset Manager Pre-execute phase to complete since activation.
+
+- **Data_OMAsyncInitOfficeAssetManagerPreExecuteStartTimeSA** - Time taken for Asset Manager Pre-execute phase to start since activation.
+
+- **Data_OmDeferredLoadingTasksEndTimeSA** - Time taken to complete deferred task in shell activity since app boot.
+
+- **Data_OmDeferredLoadingTasksStartTimeSA** - Time taken to start deferred task in shell activity since app boot. 
+
+- **Data_OMDeferredTasksEndTimeSA** - Time taken for deferred tasks to complete since activation.
+
+- **Data_OMDeferredTasksStartTimeSA** - Time taken for deferred tasks to start since activation.
+
+- **Data_OMDownloadResourcesEndTimeSA** - Time taken for UI Resources download to complete since activation.
+
+- **Data_OMDownloadResourcesStartTimeSA** - Time taken for UI Resources download to start since activation.
+
+- **Data_OMInitializeOfficeAssetManagerEndTimeSA** - Time taken for AssetManager initialization to end since activation
+
+- **Data_OMInitializeOfficeAssetManagerStartTimeSA** - Time taken for AssetManager initialization to start since activation.
+
+- **Data_OMNewIntentTime** - Timestamp when last intent was received.
+
+- **Data_OMPostAppActivateEndTimeSA** - Time taken to end setup in shell activity post app activation since app boot.
+
+- **Data_OMPostAppActivateStartTimeSA** - Time taken to start setup in shell activity post app activation since app boot.
+
+- **Data_OMPostAppInitEndTimeSA** - Time taken to complete setup in shell activity post native libraries initialization since app boot.
+
+- **Data_OMPostAppInitStartTimeSA** - Time taken to start setup in shell activity post native libraries initialization since app boot.
+
+- **Data_OMStartHandlingIntendedIntentEndTimeSA** - Time taken to start handling launched intent since app boot.
+
+- **Data_pdfActivationDetectionFuncExceptionInfo** - Java class name of any exception received while evaluating external intent.
+
+- **Data_pdfActivationDetectionFuncTimeTaken**  - Time taken by the function to detect if the activation was a pdf activation.
+
+- **Data_pdfActivationDetectionFuncTimeTaken** - Time taken to compute whether the incoming intent is a PDF file activation intent.
+
+- **Data_PdfActivityCreationTimeSA** - Time taken for Pdf activity creation since app boot.
+
+- **Data_PdfActivityOnCreateTimeSA** - Time taken for Pdf creation life cycle event invocation since app boot. 
+
+- **Data_PdfIntentStartTimeSA** - Time taken for Shell activity to launch pdf activity since app boot.
+
+- **Data_PostAppInitEndTimeSA** - Time taken to complete setup in base activity post native libraries initialization since app boot.
+
+- **Data_PostAppInitStartTimeSA** -Time taken to start setup in base activity post native libraries initialization since app boot.
+
+- **Data_PostAppInitTimeInMs** - Time taken by post app initialization since pre-app initialization.
+
+- **Data_PostCommonLibraryLoadPhaseTime** - Time taken by bootApp completion since common library load completes. 
+
+- **Data_PostOfficeActivityTimeInMs** - Time taken between pre app init start and officeactivity ends.
+
+- **Data_PreAppInitEndTimeSA** - Time stamp of pre app initialization end in the app boot.
+
+- **Data_PreAppInitStartTimeSA** - Time stamp of pre app initialization start in the app boot. 
+
+- **Data_PreAppInitTimeInMs** - Time duration taken by preappinitialization of the app start.
+
+- **Data_PreCommonLibraryLoadPhaseTime** - Time taken between minimum library load completes and common library load completes.
+
+- **Data_PreProcessingEndTimeSA** - Time duration between processing end and file activation completion.
+
+- **Data_PreProcessingStartSA** - Time taken by processing starts since file activation ends. 
+
+- **Data_TotalLockDurationDuringMinLibLoad** - Total time taken by lock during minimum library loading.
+
+- **Data_TotalLockDurationDuringNativeLibLoad** - Total time taken by lock during library loading
+
+- **Data_VMInitAfterFetchTimeSA** - Time taken by ViewModel initialization after file is fetched.
+
+- **Data_VMInitBeforeFetchTimeSA** - Time taken by ViewModel initialization before file is fetched.
 
 - **Doc_RenderDurationms** - Time to render a pdf file
 
@@ -14731,6 +16091,76 @@ The following fields are collected:
 - **TotalMessageCount** – This is the total number of audio messages sent to the service.
 
 - **WebSocketConnectDurationInMs** – This is the time taken in milliseconds to complete the web socket connection.
+
+
+#### Office.StickyNotes.Web.SDK.BootPerfMarkers
+
+Triggered when both of the below conditions are true:
+- First sync is done
+- OneNote Sticky Notes boot has completed. OneNote Sticky Notes boot is said to be done when the one of the below 3 conditions are true:
+   - Initial sync has completed
+   - Initial sync has failed
+   - Something is being displayed in notes list (either notes or fishbowl)
+
+Performance markers for memory (machine action) and required to compute the performance of Memory. 
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_MemoryLoadPerfMetrics** - Perf markers for memory
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical  
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
 
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -15908,6 +17338,30 @@ The following fields are collected:
 
 - **Data_FirstRunCollectionTime** - A timestamp registering the time at which the flow was started.
 
+#### Office.Fluid.LoopMobile.Error.Unexpected
+
+The event allows us to accurately gauge the impact of errors in our service driven code and determine what failures our customers are encountering. The event allows proper escalation with partner service teams to keep Loop working as expected.
+
+The following fields are collected:
+
+- **ErrorCode** - Numeric code such as an HTTP status code or Apple error code.
+
+- **ErrorCodeString** - TypeScript eror string.
+
+- **ErrorDescription** - A system metadata string that gives human readable context on the error and helps us to identify what might have failed.
+
+- **ErrorDomain** - Apple error domain string or constructed system metadata only string that explains the rough area of the error.
+
+- **ErrorSubcode** - Additional numeric code used to identify errors in authentication scenarios.
+
+- **ErrorTag** - An inner version of "Tag" used to uniquely identify an inner error.
+
+- **ErrorType** - Type of error.
+
+
+- **Tag** - Used to uniquely identify an error.
+
+
 #### Office.Graphics.ARCExceptions 
 
 This exception reporting information is important for assessing the overall health of the graphics stack, as well as identifying parts of the code where failures are occurring at high frequency, in order to prioritize investigation. This exception reporting information is important for assessing the overall health of the graphics stack, and identifying parts of the code where failures are occurring at high frequency. This helps an engineer to determine which rendering failures are impacting the most users, enabling us to prioritize our investigations toward fixing issues that will have the greatest user benefit.
@@ -15942,6 +17396,136 @@ The following fields are collected:
 - **RequestParams** - Request parameters used when contacting the IRIS server to pull the notification.
 
 - **SurfaceId** - ID of the surface where the notification will be shown.
+
+#### Office.OneNote.Memory.ReactOptionsOnError
+
+Triggered when an error occurs (machine action) and is required for crash investigation.
+
+Error types include:
+
+- Any call to Javascript function after Global Exception has been raised
+- Any WebServer error when DeveloperSettings.UseWebDebugger is true
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_ErrorCode** - Error Code
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+
+#### Office.OneNote.Memory.ReactOptionsOnJSException 
+
+Triggered when a JS exception occurs (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_ErrorCallstack** - Error Callstack
+
+- **Data_ErrorMessage** - Error Message
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+#### Office.OneNoteIntegrations.Memory.SDX.SDXException 
+
+Triggered when an unexpected event occurs (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
 
 
 #### Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
@@ -16097,6 +17681,1238 @@ The following fields are collected:
 
 - **ThreadId** - identifier for the thread
 
+
+#### Office.StickyNotes.Web.SDK.ActionDispatchFailed
+
+Triggered when action dispatch fails (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical  
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.BadDraftKey
+
+Triggered when an exception occurs while converting draft key to id (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+#### Office.StickyNotes.Web.SDK.FatalSyncError
+
+Triggered when a 400 error occurs (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.NoteReferencesCountLoggingFailed
+
+Triggered when an exception occurs while logging count of note references (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+
+#### Office.StickyNotes.Web.SDK.ProfilePictureFetchError
+
+Triggered when an error occurs while setting the profile picture (user action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Message** - Error message
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+#### Office.StickyNotes.Web.SDK.ReactCrash
+
+Triggered when a react crash ocurs (machine action) and is required for crash investigation. 
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number. 
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
+
+#### Office.StickyNotes.Web.SDK.SDKException 
+
+Triggered when an unexpected event occurs (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_ErrorGroup** - Error Group
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_ErrorType** - Error Type
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank
+
+
+#### Office.StickyNotes.Web.SDK.TextAndCharMetadataLengthMismatch
+
+Triggered when there is a length mismatch between text and char metadata (machine action) and is required for crash investigation.
+
+The following fields are collected:
+
+- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
+
+- **Browser_Name** - Always logged blank 
+
+- **Browser_Version** - Always logged blank 
+
+- **Consent_AddInContentSourceLocation** - Add In content source location 
+
+- **Consent_AddInContentState** - Add In content state 
+
+- **Consent_ControllerConnectedServicesConsentTime** - Indicates when the user chose the status of optional connected experiences. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DiagnosticDataConsentTime** - Indicates when the user provided the consent for diagnostic data. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_DownloadContentConsentTime** - Indicates when the user made the choice to enable or disable connected experiences that download online content. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Consent_UserContentDependentConsentTime** - Indicates when the user chose to enable or disable connected experiences that analyze content was made. The date will appear as either a human readable date or as a machine encoded date that looks like a large number.
+
+- **Culture_UiLanguage** - Always logged blank 
+
+- **Data_App_Name** - The name of the application that is providing the data. Allows us to identify which application is showing an issue so we know how to address it.
+
+- **Data_App_Platform** - The broad classification of the platform on which the app is running. Allows us to identify on which platforms an issue may be occurring so that we can correctly prioritize the issue.
+
+- **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
+
+- **Data_AppInfo_Id** - Name of the host application 
+
+- **Data_AppInfo_Version** - Version of the host application 
+
+- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+
+- **Data_Error_Code** - Error Code
+
+- **Data_Error_Tag** - Error Tag
+
+- **Data_ErrorCode1** - Error Code 1
+
+- **Data_ErrorCode2** - Error Code 2
+
+- **Data_ErrorTag** - Error Tag
+
+- **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
+
+- **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
+
+- **Data_FeedEnabled** - Identifies if feed is enabled. 
+
+- **Data_HostApp** - Identifies the host app name that launches a sub-app. 
+
+- **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
+
+- **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+
+- **Data_OTelJS_Version** - Version of OTel logger 
+
+- **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
+
+- **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
+
+- **Data_SDX_HostJsVersion** - This is the platform-specific version of Office.js (for example, outlook web16.01.js) This contains the API surface for ad ins 
+
+- **Data_SDX_Id** - The GUID of an Add-in, which uniquely identifies it 
+
+- **Data_SDX_InstanceId** - Represents Add in document pair 
+
+- **Data_SDX_MarketplaceType** - Indicates where the Add-in installed from 
+
+- **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
+
+- **Data_SDX_SessionId** - Session Id of the Add-in 
+
+- **Data_SDX_Version** - Version of the Add-in 
+
+- **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
+
+- **Data_SessionCorrelationId** - The globally unique identifier for the host's session.
+
+- **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
+
+- **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
+
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+
+- **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
+
+- **DeviceInfo_BrowserName** - Browser Name 
+
+- **DeviceInfo_BrowserVersion** - Browser Version 
+
+- **DeviceInfo_Id** - The globally unique device identifier for a device 
+
+- **DeviceInfo_OsName** - The name of the device OS 
+
+- **DeviceInfo_OsVersion** - The version of the operating system 
+
+- **Event_ReceivedTime** - The time the event was logged in the service 
+
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+
+- **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
+
+- **Session_SamplingValue** - A value in (0, 1) 
+
+- **User_ActiveUserTenantId** - Active user tenant id 
+
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+
+- **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+- **UserInfo_Language** - Current language setting of the device to help us detect issues affecting certain languages 
+
+- **UserInfo_TimeZone** - The user's time zone relative to UTC.
+
+- **WAC_ApplicationMode** - Always logged blank 
+
+- **WAC_ApplicationModeExtended** - Always logged blank 
+
+- **WAC_BrowserLanguage** - Always logged blank 
+
+- **WAC_ContentLanguage** - Always logged blank 
+
+- **WAC_Datacenter** - Always logged blank 
+
+- **WAC_Host** - Always logged blank 
+
+- **WAC_IsBusinessUser** - Always logged blank 
+
+- **WAC_IsEdu** - Always logged blank 
+
+- **WAC_IsSynthetic** - Always logged blank 
+
+- **WAC_OsVersion** - Always logged blank 
+
+- **WAC_Ring** - Always logged blank 
+
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+
+- **WAC_SessionOrigin** - Always logged blank 
+
+- **WAC_UiHost** - Always logged blank 
+
+- **WAC_UiHostIntegrationType** - Always logged blank 
 
 #### Office.System.SystemHealthAsserts
 
@@ -16529,6 +19345,8 @@ The following fields are collected:
 
 - **Data_AdRequestId** - A unique identifier for ad retrieval attempts
 
+- **Data_AdService** - The advertisement platform associated with retrieved ad content
+
 - **Data_AdType** - The type of advertisement
 
 - **Data_AuctionId** - A unique identifier for ad placement auction
@@ -16540,6 +19358,8 @@ The following fields are collected:
 - **Data_ErrorMessage** - A human-readable description of the error  
 
 - **Data_ErrorType** - The type of error
+
+- **Data_HttpStatus** - The status in the response from the advertisement platform
 
 
 #### Office.Graphics.SpriteMemCorrupt
