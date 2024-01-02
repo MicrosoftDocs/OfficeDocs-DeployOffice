@@ -2,6 +2,15 @@
 
 
 
+## Week of December 25, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/29/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
+| 12/29/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of December 18, 2023
 
 
@@ -53,11 +62,3 @@
 | 12/1/2023 | [Identity, authentication, and authorization in Office 2016](/DeployOffice/office2016/security/identity-authentication-authorization) | modified |
 | 12/1/2023 | [Macros from the internet are blocked by default in Office ](/DeployOffice/security/internet-macros-blocked) | modified |
 | 12/1/2023 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
-
-
-## Week of November 20, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 11/21/2023 | [Change update channel to prepare devices for Copilot](/DeployOffice/updates/change-channel-for-copilot) | modified |
