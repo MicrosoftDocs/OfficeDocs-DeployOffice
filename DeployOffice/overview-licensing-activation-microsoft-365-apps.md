@@ -75,6 +75,9 @@ There are various licensing modes that can be used with a supported version of M
 - This mode can be used when your organization has users that only need view/print capabilities instead of full create or edit capabilities.  This allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office.  When Word, Excel, or PowerPoint are opened, users see a banner message underneath the ribbon in their Office apps that informs them that Office is in Viewer Mode.
 - This is an ideal mode when the users have an Office for the Web license but not a Microsoft 365 Apps license.
 
+  > [!NOTE]
+  > It is not recommended to use Shared Computer Activation along with Viewer mode else this will create confilct for user's license to use Office 365 application
+
 ## Activating Microsoft 365 Apps
 
 Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user logs on to their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Microsoft 365 Apps remains fully functional. If the computer goes offline for more than 30 days, Microsoft 365 Apps enters reduced functionality mode until the next time a connection can be made. To get Microsoft 365 Apps fully functional again, the user can connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user may have to sign back in first.
