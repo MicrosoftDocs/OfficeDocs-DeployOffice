@@ -17,9 +17,9 @@ ms.date: 1/03/2024
  **Summary:** Learn about the language packs and language interface packs that are available for Office. 
   
   
-An installation of Office 2016 can include applications or user interface elements in more than one language because some Office 2016 products are not available in every language. 
+An installation of Office 2016 can include applications or user interface elements in more than one language because some Office 2016 products aren't available in every language. 
   
-This article describes the language versions that are available for a subset of Office 2016 applications, the Office 2016 applications that will work with Language Interface Packs, and the recommended base languages to install for Office 2016 Language Interface Packs.
+This article covers three key aspects of Office 2016's language capabilities. Firstly, it lists the language versions available for certain Office 2016 applications. Secondly, it identifies the Office 2016 applications compatible with Language Interface Packs. Lastly, it provides recommendations on the base languages to install for the Office 2016 Language Interface Packs.
   
 > [!IMPORTANT]
 > This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
@@ -28,9 +28,9 @@ This article describes the language versions that are available for a subset of 
 <a name="BKMK_ApplicationsLanguageAvailability"> </a>
 ## Applications and language availability
 
-In some non-English language versions of Office 2016, a specific Office 2016 application may not be available. For example, Access 2016 is not available in Hindi. Therefore, the Hindi language version of Office 2016 is installed in English.
+In some non-English language versions of Office 2016, a specific Office 2016 application might not be available. For example, Access 2016 isn't available in Hindi. Therefore, the Hindi language version of Office 2016 is installed in English.
   
-Some Office applications are not available in some languages. Project 2016 and Visio 2016 are available in a subset of languages, as shown in the following table.
+Some Office applications aren't available in some languages. Project 2016 and Visio 2016 are available in a subset of languages, as shown in the following table.
   
 **Language availability for the 2016 versions of Project and Visio**
 
@@ -171,7 +171,7 @@ The remaining Office applications appear in the base Office 2016 installation la
    
 For information about how to obtain the LIP you need for your deployment, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
   
-## Related topics
+## Related articles
 [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
 [Customize language setup and settings for Office 2016](customize-language-setup-settings.md)
