@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: Learn about using Outlook 2016, OneDrive, and Skype for Business in RDSH and VDI deployments
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 # Office 2016 in RDSH and VDI Deployments
 

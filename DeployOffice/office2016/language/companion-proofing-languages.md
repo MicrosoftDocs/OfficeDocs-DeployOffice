@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Identify the companion proofing languages that are included with Office 2016."
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 
 # Companion proofing languages for Office 2016

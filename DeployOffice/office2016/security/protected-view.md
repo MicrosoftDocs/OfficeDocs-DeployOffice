@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office."
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 
 # Set up a safe environment to open files by using Protected View in Office 2016

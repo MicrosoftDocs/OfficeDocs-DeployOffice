@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides admins with information about which features in Office 2016 for Windows have been changed or removed since Office 2013 was released."
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 
 # Changes in Office 2016 for Windows desktop
