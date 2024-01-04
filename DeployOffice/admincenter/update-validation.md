@@ -9,9 +9,8 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
-hideEdit: true
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 12/19/2023
+ms.date: 01/04/2024
 ---
 
 # Update validation
@@ -26,49 +25,25 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
 
 ## Benefits
-A common practice in larger organizations is to deploy new updates to a subset of devices first. This way, they can identify and contain potential issues early in the deployment cycle and limit the risk of disruptive issues to a manageable number of devices. However, this approach also creates extra work for administrators. Often, the feedback channels aren't automated, and the admin must actively collect early feedback from sources such as the help desk team or dedicated testers. Moreover, the feedback might be vague or too general to pinpoint the actual issues without further investigation and troubleshooting. This increases the admin's workload and delays the deployment of the update, which could affect the organization's security posture.
+Many large organizations choose to roll out new updates to only some devices at first. Staggering the deployment helps them find and fix potential problems early on and reduces the chance of having an issue impacting many devices. But it also means more work for the admins. They often must manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the actual issue without more investigation and troubleshooting. Overall, it adds to the admin's workload and slows down the deployment of the update.
 
-Update validation enables administrators to collect health signals automatically, evaluate them for devices on the first deployment wave, and decide if it's safe to continue the update deployment. Administrators can view a single interface that guides them through the process. Any degradations across apps and add-ins are detected, assessed, and highlighted automatically. If there are any issues, administrators can easily pinpoint the affected devices, apps, and add-ins. Also, administrators can pause the rollout or revert updated devices to the previous update, all from the same administrative interface.
+Update validation helps administrators to automatically gather health signals, check them for devices on the first deployment wave, and determine if it's safe to proceed with the update deployment. Administrators can see a single interface that walks them through the process. Problems across apps and add-ins are automatically detected, evaluated, and highlighted. If there are issues, administrators can easily identify the affected devices, apps, and add-ins. Also, administrators can stop the rollout or restore updated devices to the previous update, all from the same administrative interface.
 
-Update validation eliminates any noise from the health data by applying statistical tests and thresholds. The admins receive evaluations based on robust insights that show the real effects on the user's workflow. All insights are specific to the organization and its unique setup, as those are generated from the diagnostic data received from wave one devices.
+Update validation removes any irrelevant or inaccurate information from the health data by using statistical tests and thresholds. The admins get assessments based on reliable insights that show the actual impacts on the user's workflow.
 
 ## How it works
+Update validation is automatically enabled once custom rollout waves are configured for the Monthly Enterprise Channel in Cloud Update. Once Cloud Update deploys a new update to device, the following actions are performed automatically:
 
-If cloud updates is configured with at least two custom rollout waves, update validation is enabled by default. When a new update for the Monthly Enterprise Channel is released and begins to deploy to devices on wave 1, update validation automatically performs the following actions for each device:
+- **Calculation of pre-update health:**  Using the Diagnostic Data received from devices on the first deployment wave from the seven days prior to the update release, it calculates performance and reliability baselines for each individual device, individual app, and individual add-in.
+- **Calculation of post-update health:** Once a device installed the latest update, the same baselines are calculated once a statistical confidence of 95% is reached.
+- **Filtering and comparison**: It compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
+- **Scoring**: Negative changes (degradations) are individually scored.
+- **Calculating and showing assessment**: Once scores from at least 10 devices are available, those get summarized, and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins, and metrics were impacted:
+    - **Green:** No/minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
+    - **Yellow:** Limited degradations were detected, and the admin is advised to monitor the deployment closely.
+    - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
 
-- It calculates the pre-update health baseline. It uses the Diagnostic Data received within the seven days before the update to measure the start performance and reliability of Word, Excel, PowerPoint, Outlook, OneNote, and each individual add-in.
-- It calculates the post-update health metrics. After a device applies the update, it continuously calculates the same health metrics.
-- Once a statistical confidence of 95% is reached, it compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
-- It applies a scoring system to evaluate the remaining degradations.
-
-After calculating scores for at least 10 devices, an assessment is run, and the results are displayed to the admin. The results are color-coded and continuously updated with more data being received:
-
-- **Green:** No degradations or only very minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
-- **Yellow:** Minor degradation was detected, and the admin is advised to monitor the deployment closely.
-- **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate an update rollback.
-
-For a status of yellow or red, the admin can view the list of devices and see which device, add-in/app, and health metric caused the status change.
-
-## How thresholds and scoring works
-
-As explained, each device, app and add-in has several health metrics. A device without add-ins would have 20 metrics: app start performance and app reliability for Word, Excel, PowerPoint, Outlook, and OneNote. These metrics are divided into 10 pre-update and 10 post-update ones. Each add-in adds four more metrics. The metrics are compared and filtered after reaching a statistical confidence of 95%, using the following thresholds:
-
-- For apps, start performance must take more than 5 seconds to start and at least 1 second longer than before.
-- For apps, reliability must be less than 99% and at least 1 percentage point lower than before.
-- For add-ins, start performance is at least 1 second slower than before.
-- For add-ins, reliability must be less than 99% and at least 1 percentage point lower than before.
-
-The thresholds help to ignore degradations that are statistically significant, but not disruptive to users. For instance, suppose Outlook's app start performance worsens from two seconds to three seconds. This is a 50% degradation, but it doesn't affect the user much. Outlook still starts up quickly. Similarly, if the reliability drops from 99.9% to 99.8%, the crash rate technically doubles from 0.1% to 0.2%. But only two out of a thousand app sessions are affected. This change might not disrupt the user's daily routine.
-
-The following criteria are used to score the metrics that pass the threshold filter:
-- A degradation in the start performance of Word, Excel, PowerPoint, Outlook, or OneNote: 0.5 points
-- A degradation in the start performance of an add-in: 0.25 points
-- A degradation in the reliability of Word, Excel, PowerPoint, Outlook, or OneNote: 1 point
-- A degradation in the reliability of an add-in: 0.5 points
-
-The scores for all devices are added up. A score higher than 0.5 means a yellow status, and a score higher than 1 means a red status. For example:
-- On one device, Word starts slower than before and exceeds the threshold. This gives 0.5 points and a yellow status.
-- On two devices, an add-in crashes more frequently than before and exceeds the threshold. This gives 0.5 points twice, or 1 point total, and a red status.
+For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
 
 ## How to enable update validation
 
@@ -82,8 +57,56 @@ To use update validation, the following requirements must be met:
 Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
 
 
-## How to disable update validation
+## Additional information
+### Pre-update health baseline
+Update validation is using Diagnostic Data which is sent by devices which are on the first rollout wave. The following metrics are computed using the data from the seven days before the update release:
+-	Performance – The app launch performance (measured in seconds) is used.
+-	Reliability – The average crash rate (in percent) is used.
+These metrics are calculated separately for each of these apps and add-ins on every device:
+-	Word
+-	Excel
+-	PowerPoint
+-	Outlook
+-	OneNote
+-	Each public add-in, except for the ones bundled with Microsoft 365 Apps
 
+Example: For a device that runs Microsoft 365 Apps with two extra add-ins, there are 14 metrics. These form the pre-update baseline.
+
+### Post-update health baseline
+After a device in the first rollout wave has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them continuously.  This goes on until the statistical confidence is 95%. This could take several days, depending on how much the individual device uses Microsoft 365 Apps and sends Diagnostic Data to Microsoft. When the statistical confidence goes above 95%, the baselines are passed to the next stage.
+
+### Applying thresholds and scoring results
+This stage involves comparing the baselines and individual metrics for a device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is affected by the degradation.
+
+- For each app, check if:
+    - Performance is above 5 seconds and at least 1 second slower than before.
+    - Reliability is below 99% and at least 1 percentage point lower than before.
+- For each add-in, check if:
+   - Performance is at least 1 second slower than before.
+    - Reliability is below 99% and at least 1 percentage point lower than before.
+
+The thresholds help to filter out degradations that are statistically significant, but not disruptive to users. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has not much impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
+
+Any degradation that exceeds the thresholds is then assigned a score.
+
+- A degradation in the performance of an app: 0.5 points
+- A degradation in the reliability of an app: 1 point
+- A degradation in the performance of an add-in: 0.25 points
+- A degradation in the reliability of an add-in: 0.5 points
+
+### Showing assessment
+A **grey** assessment indicates that more data is needed before a reliable evaluation can be made. This assessment is shown until data from at least 10 devices has been processed and scored. The scores are then summarized, and an assessment is shown to the admin:
+
+- A green assessment means that the score is below 0.5. This implies no or minimal degradations and it should be safe to proceed with the update deployment.
+- A yellow assessment means that the score is between 0.5 and 1.0. This implies limited degradations, and it's recommended to continue with the update deployment and monitor for any issues.
+- A red assessment means that the score is above 1.0. This implies significant degradations, and the admin is advised to review which devices, apps and add-ins are affected and decide if the update deployment should be paused. The admin can also roll back devices that already received the update from the same interface.
+
+For example:
+- If Word starts slower than before on one device and exceeds the threshold, this adds 0.5 points to the score and results in a yellow assessment.
+- If an add-in crashes more frequently than before on two devices and exceeds the threshold, this adds 1 point to the score and results in a red assessment. This doesn't have to be the same add-in across the two devices.
+
+
+## How to disable update validation
 In case you want to disable update validation, your options are:
 - Navigate to **Cloud Update > Monthly Enterprise channel > Settings > Rollout waves** and select the **Opt out of update validation** option.
-- If you disabled waves by setting the option **Use rollout waves** to *No, not needed*, update validation is automatically disabled.
+- Disabled rollout waves altogether by setting the option **Use rollout waves** to *No, not needed*. Without rollout waves, update validation gets disabled automatically.
