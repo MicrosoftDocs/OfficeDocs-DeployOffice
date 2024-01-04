@@ -25,23 +25,22 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
 
 ## Benefits
-Many large organizations choose to roll out new updates to only some devices at first. This helps them find and fix potential problems early on and reduces the chance of having an issue impacting many devices. But this also means more work for the admins. They often must manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the actual issue without more investigation and troubleshooting. This adds to the admin's workload and slows down the deployment of the update.
+Many large organizations choose to roll out new updates to only some devices at first. Staggering the deployment helps them find and fix potential problems early on and reduces the chance of having an issue impacting many devices. But it also means more work for the admins. They often must manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the actual issue without more investigation and troubleshooting. Overall, it adds to the admin's workload and slows down the deployment of the update.
 
 Update validation helps administrators to automatically gather health signals, check them for devices on the first deployment wave, and determine if it's safe to proceed with the update deployment. Administrators can see a single interface that walks them through the process. Problems across apps and add-ins are automatically detected, evaluated, and highlighted. If there are issues, administrators can easily identify the affected devices, apps, and add-ins. Also, administrators can stop the rollout or restore updated devices to the previous update, all from the same administrative interface.
 
 Update validation removes any irrelevant or inaccurate information from the health data by using statistical tests and thresholds. The admins get assessments based on reliable insights that show the actual impacts on the user's workflow.
 
 ## How it works
-
-Update validation is automatically enabled once you have set up a custom rollout wave for the Monthly Enterprise Channel in Cloud Update. Once Cloud Update deploys a new update to device, the following actions are performed automatically:
+Update validation is automatically enabled once custom rollout waves are configured for the Monthly Enterprise Channel in Cloud Update. Once Cloud Update deploys a new update to device, the following actions are performed automatically:
 
 - **Calculation of pre-update health:**  Using the Diagnostic Data received from devices on the first deployment wave from the seven days prior to the update release, it calculates performance and reliability baselines for each individual device, individual app, and individual add-in.
-- **Calculation of post-update health:** Once a device has installed the latest update, the same baselines are calculated once a statistical confidence of 95% is reached.
+- **Calculation of post-update health:** Once a device installed the latest update, the same baselines are calculated once a statistical confidence of 95% is reached.
 - **Filtering and comparison**: It compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
 - **Scoring**: Negative changes (degradations) are individually scored.
 - **Calculating and showing assessment**: Once scores from at least 10 devices are available, those get summarized, and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins, and metrics were impacted:
-    - **Green:** No degradations or only very minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
-    - **Yellow:** Minor degradation was detected, and the admin is advised to monitor the deployment closely.
+    - **Green:** No/minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
+    - **Yellow:** Limited degradations were detected, and the admin is advised to monitor the deployment closely.
     - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
 
 For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
