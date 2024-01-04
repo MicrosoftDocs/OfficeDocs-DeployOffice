@@ -25,7 +25,7 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
 
 ## Benefits
-Many large organizations choose to roll out new updates to only some devices at first. This helps them find and fix potential problems early on and reduce the chance of having serious issues affect a lot of devices. But this also means more work for the admins. They often have to manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the real issues without more investigation and troubleshooting. This adds to the admin's workload and slows down the deployment of the update.
+Many large organizations choose to roll out new updates to only some devices at first. This helps them find and fix potential problems early on and reduces the chance of having serious issues affect a lot of devices. But this also means more work for the admins. They often must manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the actual issue without more investigation and troubleshooting. This adds to the admin's workload and slows down the deployment of the update.
 
 Update validation helps administrators to automatically gather health signals, check them for devices on the first deployment wave, and determine if it's safe to proceed with the update deployment. Administrators can see a single interface that walks them through the process. Problems across apps and add-ins are automatically detected, evaluated, and highlighted. If there are issues, administrators can easily identify the affected devices, apps, and add-ins. Also, administrators can stop the rollout or restore updated devices to the previous update, all from the same administrative interface.
 
@@ -35,11 +35,11 @@ Update validation removes any irrelevant or inaccurate information from the heal
 
 Update validation is automatically enabled once you have set up a custom rollout wave for the Monthly Enterprise Channel in Cloud Update. Once Cloud Update deploys a new update to device, the following actions are performed automatically:
 
-- **Calculation of pre-update health:**  Using the Diagnostic Data received from devices on the first deployment wave from the seven days prior to the update release, it calculates performance and reliability baselines for each individual device, individual app and individual add-in.
+- **Calculation of pre-update health:**  Using the Diagnostic Data received from devices on the first deployment wave from the seven days prior to the update release, it calculates performance and reliability baselines for each individual device, individual app, and individual add-in.
 - **Calculation of post-update health:** Once a device has installed the latest update, the same baselines are calculated till a statistical confidence of 95% is reached.
 - **Filtering and comparison**: It compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
 - **Scoring**: Negative changes (degradations) are individually scored.
-- **Calculating and showing assessment**: Once scores from at least ten devices are available, those get summarized and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins and metrics were impacted:
+- **Calculating and showing assessment**: Once scores from at least ten devices are available, those get summarized, and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins, and metrics were impacted:
     - **Green:** No degradations or only very minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
     - **Yellow:** Minor degradation was detected, and the admin is advised to monitor the deployment closely.
     - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
@@ -77,7 +77,7 @@ Example: For a device that runs Microsoft 365 Apps with two extra add-ins, there
 After a device in the first rollout wave has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them continuously.  This goes on until the statistical confidence is 95%. This could take several days, depending on how much the individual device uses Microsoft 365 Apps and sends Diagnostic Data to Microsoft. When the statistical confidence goes above 95%, the baselines are passed to the next stage.
 
 ### Applying thresholds and scoring results
-This stage involves comparing the baselines and individual metrics for a device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is actually affected by the degradation.
+This stage involves comparing the baselines and individual metrics for a device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is affected by the degradation.
 
 - For each app, check if:
     - Performance is above 5 seconds and at least 1 second slower than before.
@@ -86,7 +86,7 @@ This stage involves comparing the baselines and individual metrics for a device.
    - Performance is at least 1 second slower than before.
     - Reliability is below 99% and at least 1 percentage point lower than before.
 
-The thresholds help to filter out degradations that are statistically significant, but not disruptive to users. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has little impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
+The thresholds help to filter out degradations that are statistically significant, but not disruptive to users. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has not much impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
 
 Any degradation that exceeds the thresholds is then assigned a score.
 
@@ -95,12 +95,12 @@ Any degradation that exceeds the thresholds is then assigned a score.
 - A degradation in the performance of an add-in: 0.25 points
 - A degradation in the reliability of an add-in: 0.5 points
 
-### Generating assement
-A **grey** assessment indicates that more data is needed before a reliable evaluation can be made. This assessment is shown until data from at least ten devices has been processed and scored. The scores are then summarized and an assessment is shown to the admin:
+### Showing assessment
+A **grey** assessment indicates that more data is needed before a reliable evaluation can be made. This assessment is shown until data from at least ten devices has been processed and scored. The scores are then summarized, and an assessment is shown to the admin:
 
 - A green assessment means that the score is below 0.5. This implies no or minimal degradations and it should be safe to proceed with the update deployment.
-- A yellow assessment means that the score is between 0.5 and 1.0. This implies limited degradations and it is recommended to continue with the update deployment and monitor for any issues.
-- A red assessment means that the score is above 1.0. This implies significant degradations and the admin is advised to review which devices, apps and add-ins are affected and decide if the update deployment should be paused. The admin can also roll back devices that already received the update from the same interface.
+- A yellow assessment means that the score is between 0.5 and 1.0. This implies limited degradations, and it is recommended to continue with the update deployment and monitor for any issues.
+- A red assessment means that the score is above 1.0. This implies significant degradations, and the admin is advised to review which devices, apps and add-ins are affected and decide if the update deployment should be paused. The admin can also roll back devices that already received the update from the same interface.
 
 For example:
 - If Word starts slower than before on one device and exceeds the threshold, this adds 0.5 points to the score and results in a yellow assessment.
