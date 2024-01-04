@@ -9,9 +9,8 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
-hideEdit: true
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 12/19/2023
+ms.date: 01/04/2024
 ---
 
 # Update validation
@@ -26,11 +25,38 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 > Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
 
 ## Benefits
-A common practice in larger organizations is to deploy new updates to a subset of devices first. This way, they can identify and contain potential issues early in the deployment cycle and limit the risk of disruptive issues to a manageable number of devices. However, this approach also creates extra work for administrators. Often, the feedback channels aren't automated, and the admin must actively collect early feedback from sources such as the help desk team or dedicated testers. Moreover, the feedback might be vague or too general to pinpoint the actual issues without further investigation and troubleshooting. This increases the admin's workload and delays the deployment of the update, which could affect the organization's security posture.
+Many large organizations choose to roll out new updates to only some devices at first. This helps them find and fix potential problems early on and reduce the chance of having serious issues affect a lot of devices. But this also means more work for the admins. They often have to manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the real issues without more investigation and troubleshooting. This adds to the admin's workload and slows down the deployment of the update.
 
-Update validation enables administrators to collect health signals automatically, evaluate them for devices on the first deployment wave, and decide if it's safe to continue the update deployment. Administrators can view a single interface that guides them through the process. Any degradations across apps and add-ins are detected, assessed, and highlighted automatically. If there are any issues, administrators can easily pinpoint the affected devices, apps, and add-ins. Also, administrators can pause the rollout or revert updated devices to the previous update, all from the same administrative interface.
+Update validation helps administrators to automatically gather health signals, check them for devices on the first deployment wave, and determine if it's safe to proceed with the update deployment. Administrators can see a single interface that walks them through the process. Problems across apps and add-ins are automatically detected, evaluated, and highlighted. If there are issues, administrators can easily identify the affected devices, apps, and add-ins. Also, administrators can stop the rollout or restore updated devices to the previous update, all from the same administrative interface.
 
-Update validation eliminates any noise from the health data by applying statistical tests and thresholds. The admins receive evaluations based on robust insights that show the real effects on the user's workflow. All insights are specific to the organization and its unique setup, as those are generated from the diagnostic data received from wave one devices.
+Update validation removes any irrelevant or inaccurate information from the health data by using statistical tests and thresholds. The admins get assessments based on reliable insights that show the actual impacts on the user's workflow.
+
+## How it works
+
+Update validation is automatically enabled once you have set up a custom rollout wave for the Monthly Enterprise Channel in Cloud Update. Once Cloud Update deploys a new update to device, the following actions are performed automatically:
+
+- **Calculation of pre-update health:**  Using the Diagnostic Data received from devices on the first deployment wave from the seven days prior to the update release, it calculates performance and reliability baselines for each individual device, individual app and individual add-in.
+- **Calculation of post-update health:** Once a device has installed the latest update, the same baselines are calculated till a statistical confidence of 95% is reached.
+- **Filtering and comparison**: It compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
+- **Scoring**: Negative changes (degradations) are individually scored.
+- **Calculating and showing assessment**: Once scores from at least ten devices are available, those get summarized and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins and metrics were impacted:
+    - **Green:** No degradations or only very minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
+    - **Yellow:** Minor degradation was detected, and the admin is advised to monitor the deployment closely.
+    - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
+
+The process automatically repeats with every new release of an update for the Monthly Enterprise Channel. More details on thresholds, prerequisites and the scoring are available below.
+
+## How to enable update validation
+
+To use update validation, the following requirements must be met:
+- Devices must be managed via cloud update.
+- Diagnostic data must be turned on for your devices.
+- Devices must be on Monthly Enterprise Channel.
+- You must configure and implement rollout waves.
+- A period of seven days must be set between wave one and wave two rollouts.
+
+Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
+
 
 ## How it works
 
@@ -70,16 +96,7 @@ The scores for all devices are added up. A score higher than 0.5 means a yellow 
 - On one device, Word starts slower than before and exceeds the threshold. This gives 0.5 points and a yellow status.
 - On two devices, an add-in crashes more frequently than before and exceeds the threshold. This gives 0.5 points twice, or 1 point total, and a red status.
 
-## How to enable update validation
 
-To use update validation, the following requirements must be met:
-- Devices must be managed via cloud update.
-- Diagnostic data must be turned on for your devices.
-- Devices must be on Monthly Enterprise Channel.
-- You must configure and implement rollout waves.
-- A period of seven days must be set between wave one and wave two rollouts.
-
-Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
 
 
 ## How to disable update validation
