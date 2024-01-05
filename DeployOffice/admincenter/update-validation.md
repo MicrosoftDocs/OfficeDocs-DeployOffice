@@ -3,14 +3,14 @@ title: "Overview of update validation in the Microsoft 365 Apps admin center"
 ms.author: manoth
 author: nicholasswhite
 manager: dougeby
-ms.reviewer: dedut
+ms.reviewer: manoth
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 01/04/2024
+ms.date: 01/05/2024
 ---
 
 # Update validation
@@ -38,7 +38,7 @@ Update validation is automatically enabled once custom rollout waves are configu
 - **Calculation of post-update health:** Once a device installed the latest update, the same baselines are calculated once a statistical confidence of 95% is reached.
 - **Filtering and comparison**: It compares the pre- and post-update metrics and calculates the actual change. Minor degradations below a certain threshold are filtered out.
 - **Scoring**: Negative changes (degradations) are individually scored.
-- **Calculating and showing assessment**: Once scores from at least 10 devices are available, those get summarized, and an assessment is shown to the admin. If the assessment is yellow or red, the admin can review which devices, apps, add-ins, and metrics were impacted:
+- **Calculating and showing assessment**: Once enough data has been received and validated, an assessment is shown to the admin.
     - **Green:** No/minor degradations were detected. The admin is encouraged to proceed with the deployment of the update.
     - **Yellow:** Limited degradations were detected, and the admin is advised to monitor the deployment closely.
     - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
@@ -46,7 +46,6 @@ Update validation is automatically enabled once custom rollout waves are configu
 For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
 
 ## How to enable update validation
-
 To use update validation, the following requirements must be met:
 - Devices must be managed via cloud update.
 - Diagnostic data must be turned on for your devices.
@@ -56,33 +55,40 @@ To use update validation, the following requirements must be met:
 
 Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
 
+## How to disable update validation
+In case you want to disable update validation, your options are:
+- Navigate to **Cloud Update > Monthly Enterprise channel > Settings > Rollout waves** and select the **Opt out of update validation** option.
+- Disabled rollout waves altogether by setting the option **Use rollout waves** to *No, not needed*. Without rollout waves, update validation gets disabled automatically.
 
-## Additional information
+## In-Depth description
 ### Pre-update health baseline
-Update validation is using Diagnostic Data which is sent by devices which are on the first rollout wave. The following metrics are computed using the data from the seven days before the update release:
--	Performance – The app launch performance (measured in seconds) is used.
--	Reliability – The average crash rate (in percent) is used.
-These metrics are calculated separately for each of these apps and add-ins on every device:
--	Word
--	Excel
--	PowerPoint
--	Outlook
--	OneNote
--	Each public add-in, except for the ones bundled with Microsoft 365 Apps
+Update validation is using Diagnostic Data which is sent by devices which are on the first rollout wave. The following metrics are computed using the data from the seven days prior to update's release:
 
-Example: For a device that runs Microsoft 365 Apps with two extra add-ins, there are 14 metrics. These form the pre-update baseline.
+- Performance: The app launch performance, measured in seconds.
+- Reliability: The average crash rate, measured in percent.
+
+These metrics are individually calculated for each of the following apps and add-ins:
+
+- Word
+- Excel
+- PowerPoint
+- Outlook
+- OneNote
+- Each public add-in, except for the ones bundled with Microsoft 365 Apps
+
+These metrics are calculated individually per device and form the pre-update baseline for the given device. For example, if there are 10 devices on the first deployment wave and each device runs Microsoft 365 Apps with two extra add-ins, 14 metrics are calculated per device, 140 in total.
 
 ### Post-update health baseline
-After a device in the first rollout wave has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them continuously.  This goes on until the statistical confidence is 95%. This could take several days, depending on how much the individual device uses Microsoft 365 Apps and sends Diagnostic Data to Microsoft. When the statistical confidence goes above 95%, the baselines are passed to the next stage.
+Once a device has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them on an ongoing base. Once a statistical confidence of 95% is passed, the results are send to the next stage. It might take several days for update validation to receive enough Diagnostic Data.
 
 ### Applying thresholds and scoring results
-This stage involves comparing the baselines and individual metrics for a device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is affected by the degradation.
+This stage involves comparing the baselines and individual metrics for each device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is affected by the degradation.
 
 - For each app, check if:
     - Performance is above 5 seconds and at least 1 second slower than before.
     - Reliability is below 99% and at least 1 percentage point lower than before.
 - For each add-in, check if:
-   - Performance is at least 1 second slower than before.
+    - Performance is at least 1 second slower than before.
     - Reliability is below 99% and at least 1 percentage point lower than before.
 
 The thresholds help to filter out degradations that are statistically significant, but not disruptive to users. For example, imagine Outlook's app start performance slows down from two seconds to three seconds. This is a 50% degradation, but it has not much impact on the user. Outlook still starts up fairly quickly and might not disrupt the user's daily routine.
@@ -104,9 +110,3 @@ A **grey** assessment indicates that more data is needed before a reliable evalu
 For example:
 - If Word starts slower than before on one device and exceeds the threshold, this adds 0.5 points to the score and results in a yellow assessment.
 - If an add-in crashes more frequently than before on two devices and exceeds the threshold, this adds 1 point to the score and results in a red assessment. This doesn't have to be the same add-in across the two devices.
-
-
-## How to disable update validation
-In case you want to disable update validation, your options are:
-- Navigate to **Cloud Update > Monthly Enterprise channel > Settings > Rollout waves** and select the **Opt out of update validation** option.
-- Disabled rollout waves altogether by setting the option **Use rollout waves** to *No, not needed*. Without rollout waves, update validation gets disabled automatically.
