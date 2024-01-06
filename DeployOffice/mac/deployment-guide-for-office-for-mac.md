@@ -22,7 +22,7 @@ This guide is intended to help administrators and other IT professionals to plan
 There are several versions of Office that are referred to in this guide:
 - **Office for Mac**, which is available with any Microsoft 365 (or Office 365) plan that includes the Office desktop apps. For example, the Microsoft 365 Business Premium plan or the Office 365 E5 plan. This version is updated regularly to provide new features. It also receives security and quality updates, as needed.
 
-- **Office LTSC for Mac 2021**, which is available through a volume licensing agreement. This version receives security and quality updates, as needed.
+- **Office LTSC 2021 for Mac **, which is available through a volume licensing agreement. This version receives security and quality updates, as needed.
 
 - **Office 2019 for Mac**, which is available as a one-time purchase from a retail store or through a volume licensing agreement. This version receives security and quality updates, as needed.
 
