@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 11/21/2023
+ms.date: 1/08/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -79,7 +79,7 @@ From the overview page, you can choose **View all Potential Issues** or **view f
 
 **Update validation**
 
-Admins now have the capability to validate updates in a live environment through update validation. When an admin configures custom waves for their Microsoft 365 tenant, this feature activates automatically. The key advantage is to gain a comprehensive report on app compatibility with all your add-ins on devices. It also highlights any new regressions that might arise due to an update in the initial wave within a span of seven days. Based on a build-over-build comparison, this report is designed to give you confidence in future rollouts to subsequent waves. To get the most out of update validation, you should move your devices to Monthly Enterprise Channel to tackle potential app compatibility or add-in issues related to updates. For more information, see [Introducing Deployment Validation in the Microsoft 365 Apps admin center](https://youtu.be/qTzoyXU8Uw8).
+Admins now have the capability to validate updates in a live environment through update validation. When an admin configures custom waves for their Microsoft 365 tenant, this feature activates automatically. The key advantage is to gain a comprehensive report on app compatibility with all your add-ins on devices. It also highlights any new regressions that might arise due to an update in the initial wave within a span of seven days. Based on a build-over-build comparison, this report is designed to give you confidence in future rollouts to subsequent waves. To get the most out of update validation, you should move your devices to Monthly Enterprise Channel to tackle potential app compatibility or add-in issues related to updates. For more information, watch [Introducing Update Validation in the Microsoft 365 Apps admin center](https://youtu.be/xZtXI-Ws-pE) or read the [full documentation](update-validation.md).
 
 **Settings**
 
