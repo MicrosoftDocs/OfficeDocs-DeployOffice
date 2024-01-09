@@ -18,7 +18,7 @@ ms.date: 1/03/2024
  **Summary:** Explains how to use Protected View settings to open documents, presentations, and workbooks in a sandbox environment in Office 2016. 
   
   
-Change how the sandbox preview feature in Office 2016 behaves by configuring Protected View settings. Protected View is a security feature in Office 2016 that helps reduce exploits to your computer by opening files in a restricted environment so they can be examined before they are opened for editing in Excel 2016, PowerPoint 2016, or Word 2016.
+Change how the sandbox preview feature in Office 2016 behaves by configuring Protected View settings. Protected View in Office 2016 is a security feature designed to minimize risks to your computer. It opens files in a restricted environment, allowing you to inspect them before editing in Excel 2016, PowerPoint 2016, or Word 2016.
 
 > [!NOTE]
 > - If you are looking for information on protected view in individual Office 2016 applications, see [What is Protected View](https://go.microsoft.com/fwlink/p/?LinkId=393945) instead.
@@ -31,11 +31,11 @@ Change how the sandbox preview feature in Office 2016 behaves by configuring Pro
 
 Protected View helps prevent several kinds of exploits by opening documents, presentations, and workbooks in a sandbox environment. A sandbox is a piece of computer memory or a specific computer process that is isolated from certain operating system components and applications. Because of this isolation, programs and processes that run in a sandbox environment are considered less dangerous. Sandbox environments are frequently used to test new applications and services that might otherwise make a computer unstable or fail. Sandbox environments are also used to prevent applications and processes from harming a computer. 
   
-When a file is opened in Protected View, users can view the file content but they can't edit, save, or print the file content, or view the details of any digital signatures in the file. Active file content, such as ActiveX controls, add-ins, database connections, hyperlinks, and Visual Basic for Applications (VBA) macros, is not enabled. Users can however, copy content from the file and paste it into another document.
+When you open a file in Protected View, you can view its content. However, editing, saving, printing, or viewing details of any digital signatures in the file isn't possible. Active file content, such as ActiveX controls, add-ins, database connections, hyperlinks, and Visual Basic for Applications (VBA) macros, isn't enabled. Users can however, copy content from the file and paste it into another document.
   
 ### Default behavior of Protected View in Office 2016
 
-By default, Protected View is enabled in Excel 2016, PowerPoint 2016, and Word 2016, but files open in Protected View only under certain conditions. In some cases, files bypass Protected View and are opened for editing. For example, files that are opened from trusted locations and files that are trusted documents bypass several security checks and are not opened in Protected View.
+By default, Protected View is enabled in Excel 2016, PowerPoint 2016, and Word 2016, but files open in Protected View only under certain conditions. In some cases, files bypass Protected View and are opened for editing. For example, files that are opened from trusted locations and files that are trusted documents bypass several security checks and aren't opened in Protected View.
   
 By default, files open in Protected View if any one of the following conditions is true:
   
@@ -47,7 +47,7 @@ By default, files open in Protected View if any one of the following conditions 
     
 - **A file is opened from an unsafe location** By default, unsafe locations include the user's Temporary Internet Files folder and the downloaded program files folder. You can also use Group Policy settings to designate other unsafe locations. 
     
-In some cases, Protected View is bypassed even if one or more of the previously listed conditions are met. Specifically, files do not open in Protected View if any of the following is true:
+In some cases, Protected View is bypassed even if one or more of the previously listed conditions are met. Specifically, files open outside of Protected View these cases:
   
 - A file is opened from a trusted location.
     
@@ -57,7 +57,7 @@ In some cases, Protected View is bypassed even if one or more of the previously 
     
 ### Change Protected View behavior in Office 2016
 
-We recommend that you do not change the default behavior of Protected View. Protected View is an important part of the layered defense strategy in Office 2016, and is designed to work with other security features such as Office File Validation and File Block. We understand that some organizations might have to change Protected View settings to suit special security requirements. If this applies to you, then you can use these settings to change how Protected View works:
+We recommend that you don't change the default behavior of Protected View. Protected View is an important part of the layered defense strategy in Office 2016, and is designed to work with other security features such as Office File Validation and File Block. We understand that some organizations might have to change Protected View settings to suit special security requirements. If this applies to you, then you can use these settings to change how Protected View works:
   
 - Prevent files that are downloaded from the Internet from opening in Protected View.
     
@@ -77,7 +77,7 @@ In addition, you can use File Block settings and Office File Validation settings
 ## Prevent files from opening in Protected View in Office 2016
 
 
-You can change Protected View settings so that certain files bypass Protected View. To do so, you need to  *disable*  some settings in the Trust Center. These settings do not apply if File Block settings force the file to open in Protected View. Also, these settings do not apply if a file fails Office File Validation. You can configure each of these settings on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. 
+You can change Protected View settings so that certain files bypass Protected View. To do so, you need to  *disable*  some settings in the Trust Center. These settings don't apply if File Block settings force the file to open in Protected View. Also, these settings don't apply if a file fails Office File Validation. You can configure each of these settings on a per-application basis for Excel 2016, PowerPoint 2016, and Word 2016. 
   
 ### To prevent files from opening in Protected View in Office 2016
 
@@ -111,7 +111,7 @@ By selecting the second or third option, you can force blocked file types to ope
   
 ### Use Office File Validation settings to force Office 2016 files to open in Protected View
 
-Office File Validation is a security feature that scans files for file format exploits before they are opened by an Office 2016 application. By default, files that fail Office File Validation are opened in Protected View and users can enable editing after previewing the file in Protected View. You can use the Group Policy Protected View setting **Set document behavior if file validation fails** to change this default behavior. You can use this setting to select one of two possible options for files that fail Office File Validation: 
+Office File Validation is a security feature. It scans files for format exploits before an Office 2016 application opens them. By default, files that fail Office File Validation are opened in Protected View and users can enable editing after previewing the file in Protected View. You can use the Group Policy Protected View setting **Set document behavior if file validation fails** to change this default behavior. You can use this setting to select one of two possible options for files that fail Office File Validation: 
   
 - **Block completely** Files that fail Office File Validation can't be opened in Protected View or opened for editing. 
     
@@ -124,16 +124,16 @@ By selecting the second option, you can restrict Protected View behavior for fil
 
 ## Add files to the list of unsafe files
 
-You can use the **Specify list of unsafe locations** setting to add locations to the unsafe locations list. Files that are opened from unsafe locations are always opened in Protected View. The unsafe locations feature does not prevent users from editing a document. It only forces a document to open in Protected View before it is edited. This is a global setting that applies to Excel 2016, PowerPoint 2016, and Word 2016. 
+You can use the **Specify list of unsafe locations** setting to add locations to the unsafe locations list. Files that are opened from unsafe locations are always opened in Protected View. The unsafe locations feature doesn't prevent users from editing a document. It only forces a document to open in Protected View before it's edited. This is a global setting that applies to Excel 2016, PowerPoint 2016, and Word 2016. 
   
 
 <a name="store"> </a>
 
 ## Add trusted Microsoft Store applications
 
-In Windows 8.1 and later versions of Windows, the operating system automatically adds the Internet Zone identifier to files that are edited by Microsoft Store applications. As a result, such files will open in Protected View when opened in Office 2016.
+In Windows 8.1 and later versions of Windows, the operating system automatically adds the Internet Zone identifier to files that are edited by Microsoft Store applications. As a result, such files open in Protected View when opened in Office 2016.
   
-In Office 2016 you can specify trusted Microsoft Store applications. This enables specific files that are edited by these applications to bypass Protected View when opened in Office 2016. By default, this list of trusted Microsoft Store applications includes Word Mobile, Excel Mobile and PowerPoint Mobile. Users with local administrator privileges or Enterprise Administrators can add additional Microsoft Store applications to this list by adding the Microsoft Store Package Family Name (PFN) to the following registry key:
+In Office 2016, you can specify trusted Microsoft Store applications. This enables specific files that are edited by these applications to bypass Protected View when opened in Office 2016. By default, this list of trusted Microsoft Store applications includes Word Mobile, Excel Mobile and PowerPoint Mobile. Users with local administrator privileges or Enterprise Administrators can add more Microsoft Store applications to this list by adding the Microsoft Store Package Family Name (PFN) to the following registry key:
   
 HKEY_CURRENT_USER\Software\Microsoft\Office\Common\Security\TrustedStoreApps\
   
