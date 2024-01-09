@@ -9,12 +9,12 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
-ms.date: 03/01/2023
+ms.date: 01/09/2024
 ---
 
 # Security baseline for Microsoft 365 Apps for enterprise
 
-The security baseline for Microsoft 365 Apps for enterprise is published twice a year, usually in June and December. The most current version is [Version 2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714), released on June 14, 2022.
+The security baseline for Microsoft 365 Apps for enterprise is published twice a year, usually in June and December. The most current version is [Version 2306](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-m365-apps-for-enterprise-v2306/ba-p/3858702), released on June 29, 2023.
 
 To get the security baseline for Microsoft 365 Apps for enterprise, [download the Security Compliance Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319).
 
