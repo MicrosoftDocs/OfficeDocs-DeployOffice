@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
-ms.date: 03/01/2023
+ms.date: 01/09/2024
 ---
 
 # Security baseline for Microsoft 365 Apps for enterprise
