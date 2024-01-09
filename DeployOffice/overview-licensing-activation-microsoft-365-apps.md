@@ -91,7 +91,7 @@ Each Microsoft 365 Apps license allows a user to install Microsoft 365 Apps on u
   
 If a user installs Microsoft 365 Apps on more than 10 devices, then the device that wasn't used for the longest amount of time is automatically deactivated. Microsoft 365 Apps goes into reduced functionality mode on the deactivated device.
 
-> [NOTE]
+> [!NOTE]
 > This automatic deactivation is only supported for Windows devices at this time. 
  
 ## What is reduced functionality mode?
