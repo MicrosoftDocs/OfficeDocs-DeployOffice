@@ -65,7 +65,7 @@ The following scenario shows how you can use digital signatures on documents in 
     
    - demonstrate that there's proof that both the manager and the accounting department received and reviewed the document
     
-2. The manager receives the document and adds their digital signature to the document, confirming that they reviewed and approved it. It's then forwards it to the accounting department for payment.
+2. The manager receives the document and adds their digital signature to the document, confirming that they reviewed and approved it. It's then forwarded to the accounting department for payment.
     
 3. A representative in the accounting department receives the document and signs it, which confirms receipt of the document.
     
