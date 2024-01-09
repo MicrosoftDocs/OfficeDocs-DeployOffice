@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Identify the companion proofing languages that are included with Office 2016."
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 
 # Companion proofing languages for Office 2016
@@ -76,7 +76,7 @@ The following table lists companion proofing languages for each primary language
 |Ukrainian  <br/> |Ukrainian, English, Russian, German  <br/> |
 |Vietnamese  <br/> |Vietnamese, English, French  <br/> |
    
-## Related topics
+## Related articles
 [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
   
 [Customize language setup and settings for Office 2016](customize-language-setup-settings.md)

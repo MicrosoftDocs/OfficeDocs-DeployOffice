@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to use the Office DocRecrypt tool to unlock password protected OOXML formatted Word, Excel, and PowerPoint files."
-ms.date: 12/31/2022
+ms.date: 1/03/2024
 ---
 
 # Remove or reset file passwords in Office 2016
@@ -29,7 +29,7 @@ Use Group Policy to push registry changes that associate a certificate with pass
 
 ## Overview: removing or resetting a file password in Office 2016 using the DocRecrypt tool
 
-There are many reasons why users may want or have to password protect a Word, Excel, or PowerPoint document. For example:
+There are many reasons why users might want or have to password protect a Word, Excel, or PowerPoint document. For example:
   
 - Multiple people in an immediate organization want to work on a group budget, but don't want those numbers to be visible to the greater organization until they're finished.
     
@@ -39,7 +39,7 @@ There are many reasons why users may want or have to password protect a Word, Ex
     
 - Media professionals, and scientists who work on presentations to key researchers in their fields, want to make sure their breakthroughs don't leak to the public before their major announcements.
     
-Previously, if the original creator of a file password either forgot the password or left the organization, the file was rendered unrecoverable. By using Office 2016 and an escrow key, which is generated from your company or organization's private key certificate store, an IT admin can "unlock" the file for a user and then either leave the file without password protection, or assign a new password to the file. You, the IT admin, are the keeper of the escrow key, which is generated from your company or organization's private key certificate store. You can silently push the public key information to client computers one time through a registry key setting that you can manually create or you can create it through a Group Policy script. When a user later creates a password-protected Word, Excel, or PowerPoint file, this public key is included in the file header. Later, an IT pro can use the Office DocRecrypt tool to remove the password that is attached to the file, and then, optionally, protect the file by using a new password. To do this, the IT pro must have  *all*  the following: 
+Previously, if the original creator of a file password either forgot the password or left the organization, the file was rendered unrecoverable. An IT admin can unlock a file for a user with Office 2016 and an escrow key. This key comes from your company or organization's private key certificate store. After unlocking, the admin can either remove the password protection or set a new password for the file. You, the IT admin, are the keeper of the escrow key, which is generated from your company or organization's private key certificate store. You can silently push the public key information to client computers one time through a registry key setting that you can manually create or you can create it through a Group Policy script. When a user later creates a password-protected Word, Excel, or PowerPoint file, this public key is included in the file header. Later, an IT pro can use the Office DocRecrypt tool to remove the password that is attached to the file, and then, optionally, protect the file by using a new password. The IT pro must have  *all*  the following to remove the password: 
   
 - The new Office DocRecrypt tool
     
@@ -49,11 +49,11 @@ Previously, if the original creator of a file password either forgot the passwor
     
 ### Keep the private key safe
 
-This feature doesn't prescribe a corporate process for managing and distributing a private key, where that key is stored, any permissions and authorization that are required to request that a password be cracked or reset, or where the file should be located after it's restored. These decisions should be guided by your organization's standards and processes.
+This feature doesn't control the corporate process for handling and distributing a private key. It also doesn't define where to store the key, the required permissions for password reset requests, or the file's location after restoration. Your organization's standards and processes should guide these decisions
   
-That said, to maintain a high level of security on password-protected files, we recommend that your organization adopt these policies:
+To maintain a high level of security on password-protected files, adopting these policies is recommended:
   
-- Never push the private key to a client computer! This is our most important recommendation.
+- Never push the private key to a client computer! This recommendation is the most important.
     
 - Lock the certificate store that has the private key and the certificate that was used to generate the escrow key and public keys.
     
@@ -66,19 +66,19 @@ If you don't follow these recommendations consistently, the security of all new 
   
 ### How is the correct certificate located?
 
-Because many private key certificates may be located on an IT computer, it's fair to wonder how the correct certificate can be discovered. In Certificate Manager (certmgr.msc), the Office 2016 DocRecrypt tool first searches the Logical store, then the Current User store. In each of these stores, the tool first searches through the certificates that don't require a Windows System enforcement PIN. Then, it searches those that do require one.
+Because many private key certificates might be located on an IT computer, it's fair to wonder how the correct certificate can be discovered. In Certificate Manager (certmgr.msc), the Office 2016 DocRecrypt tool first searches the Logical store, then the Current User store. In each of these stores, the tool first searches through the certificates that don't require a Windows System enforcement PIN. Then, it searches the certificates that do require one.
   
 ### Special considerations
 
  **Open Office XML files only** The Office DocRecrypt tool only works on Office Open XML format documents such as docx, pptx, and xlsx files. 
   
- **Previously encrypted files** The Office DocRecrypt tool can't be used to recover files that were password-protected before you deployed the certificate and escrow key. However, after you've deployed the certificate and escrow key, if a user opens a previously protected file in Office 2016 and then saves it, the escrow key is added to the file at that time. From that point on, you'll be able to remove or reset the file's password using the Office DocRecrypt tool. 
+ **Previously encrypted files** The Office DocRecrypt tool can't be used to recover files that were password-protected before you deployed the certificate and escrow key. After you deploy the certificate and escrow key, a user can open a previously protected Office 2016 file and save it. This action adds the escrow key to the file. From that point on, you're able to remove or reset the file's password using the Office DocRecrypt tool. 
   
  **Other ways to protect Word, Excel, and PowerPoint files** For other ways to protect Word, Excel, and PowerPoint files, see [Add or remove protection in your document, workbook, or presentation](https://go.microsoft.com/fwlink/p/?LinkId=268111).
   
-Be aware that users can independently apply any of these protection methods. If a password is removed by an IT admin, any other protection settings will remain. Removing the password doesn't affect these other settings. 
+Users can independently apply any of these protection methods. If an IT admin removes a password, all other protection settings remain in place. Removing the password doesn't affect these other settings. 
   
-There are some factors that may affect your ability to remove the password on a file. For details and advice, see the following table.
+There are some factors that might affect your ability to remove the password on a file. For details and advice, see the following table.
   
 **Considerations when removing the password on a file**
 
@@ -89,16 +89,16 @@ There are some factors that may affect your ability to remove the password on a 
 |File is located in a shared workbook.  <br/> |The Office DocRecrypt tool doesn't work on co-authored files that contain embedded files.  <br/> |
 |File is digitally signed.  <br/> |Removing the password protection from a digitally signed file doesn't compromise the validity of the digital signature.  <br/> |
 |Filename begins with a hyphen ("-").  <br/> |If the name of the file that you want to search by using the Office DocRecrypt tool contains a hyphen, enclose the file name in quotation marks.  <br/> |
-|Requestor doesn't have permissions to open the file.  <br/> |The IT admin determines whether the person who requests that a file be decrypted actually has the authority to view the contents of the file when the password is removed or reassigned. Similarly, if a password-protected file has an access control list associated with it, the decryption process removes the association. You must reinstate it afterward.  <br/> |
+|Requestor doesn't have permissions to open the file.  <br/> |The IT admin checks if the person asking to decrypt a file has the right to access its contents once the password is removed or changed. Similarly, if a password-protected file has an access control list associated with it, the decryption process removes the association. You must reinstate it afterward.  <br/> |
 |File or destination location is read-only.  <br/> |Make sure that both the password-protected file and the destination location are read/write.  <br/> |
-|Certificate was revoked or is expired.  <br/> |Your IT department must make sure that your private key certificates are valid and up-to-date. Also, be aware that the Office DocRecrypt tool doesn't check for private key certificate revocation status.  <br/> |
+|Certificate was revoked or is expired.  <br/> |Your IT department must make sure that your private key certificates are valid and up-to-date. Also, the Office DocRecrypt tool doesn't check for private key certificate revocation status.  <br/> |
 |Password-protected file is located in the cloud.  <br/> |The file must be copied to a hard disk or a read/write UNC share before it can be decrypted.  <br/> |
    
 <a name="BKMK_SetUpClientComputers"> </a>
 
 ## Set up client computers for password protection removal
 
-To enable your IT department to remove a password from a password-protected Word, PowerPoint, or Excel file, when you deploy Office 2016 to your organization, you must first push the certificate public keys and do some registry work on the client computers. There are two ways to achieve this: 
+To enable your IT department to remove a password from a password-protected Word, PowerPoint, or Excel file, when you deploy Office 2016 to your organization, you must first push the certificate public keys and do some registry work on the client computers. There are two ways to achieve this:
   
 - Through a Group Policy Administrative template, which is the best choice for multiple or enterprise client computers, or
     
@@ -208,8 +208,8 @@ Follow these instructions to use the DocRecrypt tool from the command line. You 
 
 |**Parameter**|**Description**|
 |:-----|:-----|
-|-p \<new_password\>  <br/> |(Optional) This is the new password that will be assigned to the input file, or the output file if an output file name is supplied.  <br/> |
-|-i \<inputfile_or_folder\>  <br/> |This is the file or folder that contains files that are locked because the password is unknown. If you specify a folder, the Office DocRecrypt tool will ignore any files that aren't Office Open XML format.  <br/> |
+|-p \<new_password\>  <br/> |(Optional) This is the new password that is assigned to the input file, or the output file if an output file name is supplied.  <br/> |
+|-i \<inputfile_or_folder\>  <br/> |This is the file or folder that contains files that are locked because the password is unknown. If you specify a folder, the Office DocRecrypt tool ignores any files that aren't Office Open XML format.  <br/> |
 |-o \<outputfile_or_folder\>  <br/> |(Optional) This is the name of a new output file or folder for files that will be created from the input files. Again, any files that aren't Office Open XML format are ignored.  <br/> |
 |-q  <br/> |(Optional) Indicates that you want to run the Office DocRecrypt tool in quiet mode, usually in a script. Quiet mode doesn't show a UI and it fails if a certificate requires the IT admin to enter a PIN. If your certificate requires a PIN, don't use quiet mode.  <br/> |
    
