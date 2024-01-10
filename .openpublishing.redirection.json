@@ -1059,6 +1059,11 @@
       "source_path": "DeployOffice/admincenter/overview-deployment-validation.md",
       "redirect_url": "/DeployOffice/admincenter/update-validation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview-security-vulnerabilities.md",
+      "redirect_url": "/DeployOffice/admincenter/security-update-status",
+      "redirect_document_id": false
     }
   ]
 }

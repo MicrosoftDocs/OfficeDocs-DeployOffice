@@ -13,57 +13,57 @@ description: "Guidance for Office admins on how to use the security update statu
 ms.date: 03/01/2023
 ---
 
-# Overview of the security update status report in the Microsoft 365 Apps admin center
+# Overview of the Security Update Status and Vulnerabilities in the Microsoft 365 Apps Admin Center
 
-The **Security Update Status** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into which devices have installed the most recent security updates for Office. This information can help you keep your environment secure.
+The **Security Update Status** page in the [Microsoft 365 Apps admin center](https://config.office.com) provides valuable insights into which devices installed the most recent security updates for Office, and a comprehensive understanding of the security posture of your devices. This information is crucial for maintaining a secure environment.
 
-## Requirements for using security update status
+## Requirements for Using Security Update Status
 
 To view security update status for your environment, the following requirements must be met:
 
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
-- A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
+- Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business support versions of Windows 11 and Windows 10
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 - Device must be part of [inventory](inventory.md) in the Microsoft 365 Apps admin center
 
 > [!IMPORTANT]
 > Security update status isn't available to customers who have the following plans:
->- Office 365 operated by 21Vianet
->- Office 365 GCC
->- Office 365 GCC High and DoD
+> - Office 365 operated by 21Vianet
+> - Office 365 GCC
+> - Office 365 GCC High and DoD
 
-## How to view security update status
+## Accumulated Vulnerabilities and Update Schedule
 
-To view the security update status for the devices in your inventory, perform the following steps:
+The admin center displays both the accumulated vulnerabilities and the count of devices lagging in updates. A device that wasn't updated misses at least one security patch, making it a potential risk. All channels receive security builds on the second Tuesday of every month, and for those using Monthly Enterprise Channel, this security build is incorporated as part of the new monthly version. Each installation version receives a monthly security update for the duration of its support.
+
+## How to View Security Update Status
+
+To view the security update status for the devices in your inventory, follow these steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Health** > **Security Update Status** in the navigation pane.
-2. If you haven't viewed security update status before, complete the setup wizard.
-3. After you complete the wizard, insights about active devices will start to appear on the page within two hours. An active device is a device where a user has launched an Office app, such as Word or Excel. 
+2. Complete the setup wizard if viewing security update status for the first time.
+3. Insights about active devices start to appear on the page within two hours.
 
+## Update Status Insight and Security Vulnerability Details
 
-## Update status insight
+The **Update status** on the **Security Update Status** page shows what percentage of your devices installed the most recent security update. The date of the most recent security update is listed at the top of the page for reference. For a list of security updates, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
 
-The **Update status** insight on the **Security Update Status** page shows you what percentage of your devices have installed the most recent security update. The date of the most recent security update is listed at the top of the page for reference. For a list of security updates, see [Release notes for Microsoft Office security updates](/officeupdates/microsoft365-apps-security-updates).
+Your devices in inventory are evaluated against the most recent security update, depending on the assigned update channel. Devices can be in one of the following three categories:
 
-Your devices in inventory are evaluated against the most recent security update, depending on the assigned update channel. Devices can be in one of the following three categories.
-
-- **Up to date** - The device has installed the most recent security update.
-- **Not up to date** - The device hasn't installed the most recent security update.
-- **Unknown** - The security update status for the device couldn't be retrieved.
+- **Up to date** - Installed the most recent security update.
+- **Not up to date** - The most recent security update isn't installed.
+- **Unknown** - Security update status couldn't be retrieved.
 
 You can also drill down to view a list of all devices or a filtered view of the devices that aren't up to date.
 
+In the security vulnerability details, each monthly security release is listed, meaning the device list displays devices from every channel.
 
-## Goal insight
+## Goal Insight
 
-The **Goal** insight on the **Security Update Status** page can help you track your progress on getting devices up to date and secure with each security update. 
+The **Goal** insight helps track progress in updating devices with each security update. Setting a goal involves specifying the percentage of devices you want to update within a timeframe.
 
-To set a goal, choose **Set goal**. You specify as your goal the percentage of devices you want to update within a given timeframe (in days).
+Setting a goal doesn't create any policies or changes to your devices. The goal is used only for your personal reporting on the Security Update Status page.
 
-Setting a goal doesn't create any policies or changes to your devices. The goal is used only for your personal reporting on the **Security Update Status** page.
+## Update Status by Channel Insight and Updating Devices
 
-
-## Update status by channel insight
-
-The **Update status by channel** insight on the **Security Update Status** page shows you the update status of devices in your inventory based on their update channel. You can also see, for each update channel, whether you have met the goal you've set.
-
+The **Update status by channel** insight shows the update status of devices based on their update channel. Admins should anticipate up to a week to ensure all devices are updated. Devices lagging by more than two security builds should be prioritized. The recommended method for updating devices is with a servicing profile for automated cloud management.
