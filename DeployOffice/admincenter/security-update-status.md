@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the security update status feature in the Microsoft 365 Apps admin center."
-ms.date: 03/01/2023
+ms.date: 01/10/2024
 ---
 
 # Overview of the Security Update Status and Vulnerabilities in the Microsoft 365 Apps Admin Center
