@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the security update status feature in the Microsoft 365 Apps admin center."
-ms.date: 01/10/2024
+ms.date: 01/23/2024
 ---
 
 # Overview of the Security Update Status and Vulnerabilities in the Microsoft 365 Apps Admin Center
@@ -66,4 +66,4 @@ Setting a goal doesn't create any policies or changes to your devices. The goal 
 
 ## Update Status by Channel Insight and Updating Devices
 
-The **Update status by channel** insight shows the update status of devices based on their update channel. Admins should anticipate up to a week to ensure all devices are updated. Devices lagging by more than two security builds should be prioritized. The recommended method for updating devices is with a servicing profile for automated cloud management.
+The **Update status by channel** insight shows the update status of devices based on their update channel. Admins should anticipate up to a week to ensure all devices are updated. Devices lagging by more than two security builds should be prioritized. The recommended method for updating devices is with a cloud update for automated cloud management.

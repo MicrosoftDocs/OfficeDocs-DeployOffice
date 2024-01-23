@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Lists the device and add-in information that is sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center."
-ms.date: 03/01/2023
+ms.date: 01/23/2024
 ---
 
 # Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center
@@ -42,7 +42,7 @@ The following information is collected for each device in the inventory.
 |OSReleaseVersion|	The version of the operating system that is running on the device|	2009|
 |ProcessorArchitecture|	The architecture of the processor of the device|	PROCESSOR_ARCHITECTURE_AMD64|
 |ProofingLanguages|	The proofing languages for Office that are installed on the device|	en-US, en-GB|
-|ServiceProfileID|	The ID of the servicing profile the device is in|	*GUID*|
+|ServiceProfileID|	The ID of the cloud update profile the device is in|	*GUID*|
 |SharedComputerLicensing| A value indicating whether Office is configured for shared computer activation|	1|
 |SignedIn|	A value indicating whether a user is signed in.|	TRUE|
 |TotalDiskSpaceInBytes|	The total storage on the drive on which Office is installed	|512 GB|
