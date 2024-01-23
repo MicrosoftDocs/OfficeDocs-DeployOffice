@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel."
-ms.date: 03/01/2023
+ms.date: 01/23/2024
 ---
 
 # Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices
@@ -44,8 +44,7 @@ These changes aren’t based on how you install or manage Microsoft 365 Apps. Fo
 
 > [!TIP]
 > - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../admincenter/inventory.md) feature.
-> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you create a [servicing profile](../admincenter/servicing-profile.md) in the Microsoft 365 Apps admin center.
-
+> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you enable [cloud update](../admincenter/cloud-update.md) in the Microsoft 365 Apps admin center.
 
 ## What is Monthly Enterprise Channel?
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center"
-ms.date: 03/01/2023
+ms.date: 01/23/2024
 ---
 
 # Overview of the Microsoft 365 Apps admin center
@@ -22,7 +22,7 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 Sign in at [config.office.com](https://config.office.com/) with your admin account. To sign into the admin center, your account must have either the global administrator, security administrator, or Office apps administrator role.
 
 > [!IMPORTANT]
->- The features in the Microsoft 365 Apps admin center, such as inventory and servicing profiles, aren't available to customers who have the following plans:
+>- The features in the Microsoft 365 Apps admin center, such as inventory and cloud update, aren't available to customers who have the following plans:
 >   - Office 365 operated by 21Vianet
 >   - Office 365 GCC
 >   - Office 365 GCC High and DoD
@@ -59,9 +59,9 @@ You can use the inventory page to see information about the devices in your orga
 
 You can use the security update status page in the Microsoft 365 Apps admin center to see which devices have installed the latest security updates for Office. Additionally, set a goal for your organization to achieve. For more information, see [Overview of the security update status](security-update-status.md).
 
-## Servicing profile
+## Cloud update
 
-With servicing profiles, you can automatically deliver monthly Office updates for specific users or groups. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of servicing profile](servicing-profile.md).
+With cloud update, you can automatically deliver monthly Microsoft 365 Apps updates to devices on Current Channel or Monthly Enterprise Channel. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of cloud update](cloud-update.md).
 
 ## OneDrive sync health
 

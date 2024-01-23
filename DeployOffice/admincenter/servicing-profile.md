@@ -10,10 +10,13 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
-ms.date: 08/30/2023
+ms.date: 01/23/2024
 ---
 
 # Overview of servicing profile in the Microsoft 365 Apps admin center
+
+> [!NOTE]
+> Servicing profiles is deprecated and replaced by [cloud update](cloud-update.md).
 
 Servicing profiles let you automatically deliver monthly Office updates for specific users or groups. You can apply a servicing profile to a set of devices in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
 

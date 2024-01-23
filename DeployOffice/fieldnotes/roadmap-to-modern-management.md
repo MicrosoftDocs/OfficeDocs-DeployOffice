@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Roadmap to modern management of Microsoft 365 Apps in the enterprise"
-ms.date: 11/29/2023
+ms.date: 01/23/2024
 ---
 
 # Roadmap to modern management of Microsoft 365 Apps in the enterprise
@@ -74,7 +74,7 @@ We highly recommend testing out Monthly Enterprise Channel. There are two common
 
 ## Prepare your network to receive updates from the internet
 
-If you use Servicing Profiles to manage updates directly from the cloud, your devices will download those profiles from the internet. To determine if your network can handle this traffic without disruption, see [published sizes of the update downloads](/officeupdates/download-sizes-microsoft365-apps-updates). There are several ways to optimize your network for taking updates directly from the cloud.
+If you use [cloud update](../admincenter/cloud-update.md) to manage updates directly from the cloud, your devices will download those from the internet. To determine if your network can handle this traffic without disruption, see [published sizes of the update downloads](/officeupdates/download-sizes-microsoft365-apps-updates). There are several ways to optimize your network for taking updates directly from the cloud.
 
 **For users on-premises**, you should consider these options:
 
