@@ -147,11 +147,7 @@ The following list shows the service times for each of the described admin actio
 
 - Enable cloud: Cloud update for Current Channel and Monthly Enterprise Channel activates with enable cloud. Devices are eligible for the profile based on their channel and updates are received based on profile rules as configured by the admin. Once enabled, Current Channel and Monthly Enterprise Channel are listed in left navigation of Microsoft 365 Apps admin center within 30 minutes. If the channel isn't listed after 30 minutes, refresh your page.
 
-- Exclude Groups: After a device is excluded from cloud update, it will be labeled as *Excluded from ChannelName* in the cloud update status section in inventory. This change will occur within 30 minutes, after which admins can manage these devices. They should first set **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
-
-**When will support for managing Semi-Annual Enterprise Channel devices in cloud update be available?**
-
-The launch of this capability is expected soon.
+- Exclude Groups: After a device is excluded from cloud update, it will be labeled as *Excluded from ChannelName* in the cloud update status section in inventory. This change will occur within 30 minutes, after which admins can manage these devices.
 
 **How can I turn off update validation?**
 
