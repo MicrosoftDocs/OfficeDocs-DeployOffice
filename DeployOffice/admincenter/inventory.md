@@ -20,7 +20,7 @@ The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.o
 From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
 
 > [!TIP]
-> If you want to get a better understanding what are the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms on how the inventory service works, which changes occur on your devices, and how to do troubleshooting, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
+> If you want to get a better understanding on the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms of how the inventory service works, which changes occur on your devices, and how to do troubleshoot missing devices, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
 
 ## Requirements for using inventory
 
@@ -42,22 +42,20 @@ To view the inventory for your environment, the following requirements must be m
 
 ## How to view inventory
 
-To view an inventory of devices in your organization with Microsoft 365 Apps installed, perform the following steps:
+To view the inventory for the devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
 2. If you haven't viewed the inventory before, you will need to complete the one-step setup.
 3. Once the setup is complete, insights about devices where users have launched a Microsoft 365 app such as Word or Excel, will appear on the **Inventory** page with an hour.
-
 
 ## Inventory insights dashboard
 
 The first page of **Inventory** is the insights dashboard. This page shows you insights across the devices in your organization, including the following information:
 
 - The number of different Office builds, devices on those builds, and their support status.
-- The number of  different Office update channels, number of different builds from those update channels, and their support status.
+- The number of different Office update channels, number of different builds from those update channels, and their support status.
 - The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed and the architecture (32-bit versus 64-bit) being used.
 - The top installed add-ins on those devices.
-
 
 ## Office build spread insight
 
@@ -65,14 +63,13 @@ The **Office build spread** insight shows you a view of each Office build instal
 
 By choosing **Show all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
 
-
 ## Channels insight
 
 The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** will show you a flyout with additional information. From the flyout, you can select a given update channel to see a list of devices configured to use that update channel.  
 
 ## Devices insight
 
-The **Devices** insight shows you a breakdown by architecture (32-bit versus 64-bit) of Office installed on devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
+The **Devices** insight shows you a breakdown by Office architecture (32-bit versus 64-bit) for the devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
 
 The flyout for a specific device shows the following information:
 
@@ -101,7 +98,6 @@ The flyout for a specific device shows the following information:
 > [!NOTE]
 > - For a list of all the inventory information that is collected from devices, see [Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center](inventory-data.md).
 > - The inventory reports the update channel for Office based on the build installed on the device. If the update channel was recently changed but the device hasn't completed the process of switching to the new update channel, then the inventory will still report the previous update channel.
-
 
 ## Add-ins insight
 
@@ -133,8 +129,12 @@ Devices will send a heartbeat once a day to the inventory. If a device hasn't se
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and click on the **Export** button. The service will prepare the data in the background and notify you, when it is ready for download. Inventory will always export all data points, regardless of the currently set filters. There is no size limit to the export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and click on the **Export** button. The service will prepare the data in the background and notify you when it is ready for download. Refresh the page periodically until the **Download now** link appears. Inventory will always export all data points, regardless of the currently set filters. There is no size limit to the export.
 
+> [!NOTE]
+> - Inventory data can be exported once per day and downloaded as many times as needed.
+> - The following columns were added to inventory with the upgrade to Cloud Updates, but are not currently included when exporting data: *Cloud Update Status*, *Update Status*, and *Wave*.
+> - Inventory does not support alternative methods for data export.
 
 ## Missing or duplicate devices
 
