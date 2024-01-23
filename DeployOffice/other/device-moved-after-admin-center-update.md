@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about updates to the Microsoft 365 update channels in the Microsoft 365 admin center."
-ms.date: 01/24/2023
+ms.date: 01/23/2024
 ---
 
 # Updates to the Microsoft 365 admin center may cause your devices to change update channels 
@@ -34,6 +34,7 @@ For more information, see [Choose how often to get feature update for Office](..
 > After this change, any device that's managed by one of the following management scenarios will not move to the update channel selected in the Microsoft 365 admin center.
 >
 > - Devices managed with a servicing profile in the Microsoft 365 Apps admin center.
+> - Devices managed with cloud update in the Microsoft 365 Apps admin center.
 > - Devices configured to get updates for Microsoft 365 Apps from Configuration Manager.
 > - Devices where Microsoft 365 Apps is managed by Microsoft Intune.
 > - Devices with one of the following update related policies are set: Update Channel, Update Path, Target Version
@@ -42,11 +43,9 @@ For more information, see [Choose how often to get feature update for Office](..
 
 To keep your devices on their existing update channel, you'll have to configure one of the following management options to set the update channel preference for your devices.
 
-### Use a servicing profile in Microsoft 365 Apps admin center
+### Use cloud update in Microsoft 365 Apps admin center
 
-A servicing profile allows you to set up automatic monthly updates for certain users or groups. You can apply a servicing profile to a set of devices in the [Microsoft 365 Apps admin center](https://config.office.com). Once the servicing profile is applied, your devices will automatically switch to the Monthly Enterprise Channel, receive updates over the internet directly from Microsoft, and be managed by the servicing profile.
-
-To apply a servicing profile, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md).
+With cloud update, you can automatically deliver monthly Microsoft 365 Apps updates to devices on Current Channel or Monthly Enterprise Channel. You can enable cloud update in the [Microsoft 365 Apps admin center](https://config.office.com). Once enabled, your devices will automatically receive updates and be kept on the latest release. To learn more, see [Overview of cloud update in the Microsoft 365 Apps admin center](../admincenter/cloud-update.md).
 
 ### Configure updates for Microsoft 365 Apps from Configuration Manager
 
