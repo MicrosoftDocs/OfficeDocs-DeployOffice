@@ -122,10 +122,24 @@ You can drill down to see details about an add-in by clicking on its name. Those
 
 If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 
-## Inventory cleanup
+## Switch device update channel
 
-Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to **Settings** in the navigation pane.
+You can use the **Switch device update channel** capability to change the update channel for Microsoft 365 Apps across the devices in your organization. To trigger a channel change using this capability, perform the following steps:
 
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
+2. Under **Devices**, choose **Show all devices**.
+3. At the top of the Devices page, click on **Switch device update channel** to reveal the flyout.
+4. From the flyout, select the destination channel that you want to move devies to and provide 1 of the following:
+   - 1 or more device names. These devices must be in inventory and not already be on the destination channel.
+   - 1 or more Microsoft Entra groups. These groups can contain users or devices. If you include devices, they must be Entra joined or hybrid Entra joined.
+6. Click **Move devices**, review the results, and close the flyout.
+
+The channel change will take a few hours to process. Once the change is complete, the updated channel will be reflected in inventory.
+
+If you'd prefer to see this capability in action, check out this video: [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY).
+
+> [!NOTE]
+> Triggering a channel change is a point-in-time action. If you target a security group, the action will be based on the current membership of that group. If you add additional members to the group, you can re-run the action and any devices that have already been moved to the destination channel will be ignored.
 
 ## Export inventory views
 
@@ -135,6 +149,10 @@ You can export the inventory views to .csv format so that you can import your da
 > - Inventory data can be exported once per day and downloaded as many times as needed.
 > - The following columns were added to inventory with the upgrade to Cloud Updates, but are not currently included when exporting data: *Cloud Update Status*, *Update Status*, and *Wave*.
 > - Inventory does not support alternative methods for data export.
+
+## Inventory cleanup
+
+Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to **Settings** in the navigation pane.
 
 ## Missing or duplicate devices
 
