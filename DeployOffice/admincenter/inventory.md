@@ -17,19 +17,19 @@ ms.date: 01/24/2024
 
 The **Inventory** page in the [Microsoft 365 Apps admin center](https://config.office.com) gives you insights into the state of Office installations on devices in your organization. These insights can help you identify issues with those Office installations, such as identifying devices that are running an older, unsupported build of Office. Insights are also available about add-ins that are installed on those devices.
 
-From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device as well as the last signed in user. 
+From the **Inventory** page, you can drill down to see detailed information about a specific device, including hardware information, its operating system, and the Office software running on the device. Additionally, you can see if add-ins or macros are present on the device and the last signed in user. 
 
 > [!TIP]
 > If you want to get a better understanding on the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms of how the inventory service works, which changes occur on your devices, and how to do troubleshoot missing devices, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
 
 ## Requirements for using inventory
 
-To view the inventory for your environment, the following requirements must be met:
+To access the inventory in your environment, ensure you meet these requirements:
 
-- Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
-- A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
-- Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
-- Client devices can reach the following endpoints: 
+Use Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business (Version 2008 or newer).
+Run a Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business supported version of Windows 11 or Windows 10.
+Have a Microsoft 365 (or Office 365) Business Standard, Business Premium, A3, A5, E3, or E5 subscription.
+Ensure client devices can access these endpoints:
   - `https://login.live.com`
   - `https://*.config.office.com`
   - `https://*.config.office.net`
@@ -45,8 +45,8 @@ To view the inventory for your environment, the following requirements must be m
 To view the inventory for the devices in your organization with Microsoft 365 Apps installed, perform the following steps:
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
-2. If you haven't viewed the inventory before, you will need to complete the one-step setup.
-3. Once the setup is complete, insights about devices where users have launched a Microsoft 365 app such as Word or Excel, will appear on the **Inventory** page with an hour.
+2. If you're new to inventory, you need to complete the one-step setup.
+3. Once the setup is complete, insights about devices where users launched a Microsoft 365 app such as Word or Excel, appear on the **Inventory** page with an hour.
 
 ## Inventory insights dashboard
 
@@ -61,11 +61,11 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 
 The **Office build spread** insight shows you a view of each Office build installed on devices in your organization, grouped by build number or by unsupported builds. You can hover over the insight to get counts of devices per build or in the unsupported category. 
 
-By choosing **Show all builds** you will get a flyout that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
+By choosing **Show all builds** a flyout appears that provides more details, such as the build number, the update channel that the build came from, the number of devices on that build, and the support status of that build. You can also easily get to a filtered view of all devices that have an unsupported build of Office, so that you can take action on them.
 
 ## Channels insight
 
-The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** will show you a flyout with additional information. From the flyout, you can select a given update channel to see a list of devices configured to use that update channel.  
+The **Channels** insight shows you the number of builds in your environment by update channel and their support status. Choosing **Show all channels** shows you a flyout with additional information. From the flyout, you can select a given update channel to see a list of devices configured to use that update channel.  
 
 ## Devices insight
 
@@ -93,7 +93,7 @@ The flyout for a specific device shows the following information:
 | Update channel| The update channel that Office is configured to receive Office updates from |
 | Office apps| A list of the Office apps installed on the device |
 | Office Add-ins | A list of the COM add-ins that are installed on the device. This list excludes Add-ins that are part of the Office installation.|
-| Macro files | Whether the device has recently opened a macro enabled file |
+| Macro files | If the device recently opened a macro enabled file |
 
 > [!NOTE]
 > - For a list of all the inventory information that is collected from devices, see [Data sent to Microsoft for the inventory feature in the Microsoft 365 Apps admin center](inventory-data.md).
@@ -108,7 +108,7 @@ If you choose **Show all add-ins**, you can see a table with the following infor
 | Column heading | Description |
 |:-----|:-----|
 | Name| The name of the add-in. |
-| Version | The version number of the add-in. If there are multiple versions of the add-in installed on devices in your organization, you will see **Multiple**. |
+| Version | The version number of the add-in. If there are multiple versions of the add-in installed on devices in your organization, you see **Multiple**. |
 | Publisher | The publisher of the add-in. |
 | Number of versions | The number of different versions of the add-in that are installed on devices in your organization. |
 | Number of devices | The number of devices in your organization that the add-in is installed on. |
@@ -128,13 +128,13 @@ You can use the **Switch device update channel** capability to change the update
 
 1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with your admin account, and then go to **Inventory** in the navigation pane.
 2. Under **Devices**, choose **Show all devices**.
-3. At the top of the Devices page, click on **Switch device update channel** to reveal the flyout.
-4. From the flyout, select the destination channel that you want to move devies to and provide 1 of the following:
-   - 1 or more device names. These devices must be in inventory and not already be on the destination channel.
-   - 1 or more Microsoft Entra groups. These groups can contain users or devices. If you include devices, they must be Entra joined or hybrid Entra joined.
-6. Click **Move devices**, review the results, and close the flyout.
+3. At the top of the Devices page, select **Switch device update channel** to reveal the flyout.
+4. In the flyout, select the desired channel to move devices to and provide information for one of the following options:
+   - One or more device names. These devices must be in inventory and not already be on the destination channel.
+   - One or more Microsoft Entra groups. These groups can contain users or devices. If you include devices, they must be Entra joined or hybrid Entra joined.
+6. Select **Move devices**, review the results, and close the flyout.
 
-The channel change will take a few hours to process. Once the change is complete, the updated channel will be reflected in inventory.
+The channel change takes a few hours to process. Once the change is complete, the updated channel is reflected in inventory.
 
 If you'd prefer to see this capability in action, check out this video: [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY).
 
@@ -143,7 +143,7 @@ If you'd prefer to see this capability in action, check out this video: [How to 
 
 ## Export inventory views
 
-You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and click on the **Export** button. The service will prepare the data in the background and notify you when it is ready for download. Refresh the page periodically until the **Download now** link appears. Inventory will always export all data points, regardless of the currently set filters. There is no size limit to the export.
+You can export the inventory views to .csv format so that you can import your data into other tools. To do an export, navigate to the Devices view and select the **Export** button. This service prepares the data in the background and notifies you when it's ready for download. Refresh the page periodically until the **Download now** link appears. Inventory always exports all data points, regardless of the currently set filters. There's no size limit to the export.
 
 > [!NOTE]
 > - Inventory data can be exported once per day and downloaded as many times as needed.
@@ -152,11 +152,10 @@ You can export the inventory views to .csv format so that you can import your da
 
 ## Inventory cleanup
 
-Devices will send a heartbeat once a day to the inventory. If a device hasn't sent a heartbeat in the last 30 days, the device will be removed from the inventory. If the device comes back online and sends a heartbeat, the device will be added to the inventory again. You can extend this from 30 days by going to **Settings** in the navigation pane.
+Devices send a heartbeat once a day to the inventory. A device doesn't send a heartbeat for 30 days is removed from the inventory. If the device comes back online and sends a heartbeat, the device is added to the inventory again. You can extend this setting from 30 days by going to **Settings** in the navigation pane.
 
 ## Missing or duplicate devices
 
 If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
 
-In a few cases, some devices may appear more than once in the inventory. This duplication mainly occurs with non-persisted VDI environments. These duplicate entries will be removed automatically each day.
-
+In a few cases, some devices might appear more than once in the inventory. This duplication mainly occurs with nonpersisted VDI environments. These duplicate entries are removed automatically each day.
