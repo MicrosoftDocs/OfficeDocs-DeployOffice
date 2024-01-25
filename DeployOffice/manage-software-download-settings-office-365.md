@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with information to help them configure Microsoft 365 installation options in the Microsoft 365 admin center."
-ms.date: 03/01/2023
+ms.date: 01/25/2024
 ---
 
 # Manage Microsoft 365 installation options in the Microsoft 365 admin center
@@ -32,7 +32,7 @@ If you don't want users installing Office themselves, you can [manually deploy O
 
 You can choose how often you want your users to get feature updates for the Office apps installed on devices running Windows. For example, you can provide new features as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [servicing profile](../DeployOffice/admincenter/servicing-profile.md). By using a servicing profile, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](../DeployOffice/admincenter/cloud-update.md). By using cloud update, you’ll automatically deliver monthly Office updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
 
@@ -54,7 +54,7 @@ Keep in mind that moving to a different update channel can also change which fea
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
-> - Also, if you're using the Microsoft 365 Apps admin center (https://config.office.com), and the device is included in the [inventory](admincenter/inventory.md) or is managed by a [servicing profile](admincenter/servicing-profile.md), then your choice under **Feature updates** won't apply.
+> - Also, if you're using the [Microsoft 365 Apps admin center](https://config.office.com), and the device is included in the [inventory](admincenter/inventory.md) or is managed by  [cloud update](admincenter/cloud-update.md), then your choice under **Feature updates** won't apply.
 >
 > - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
 
