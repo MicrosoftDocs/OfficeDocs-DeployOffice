@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provide guidance to Office admins on how to deploy languages (and proofing tools) with Microsoft 365 Apps"
-ms.date: 03/16/2023
+ms.date: 01/25/2024
 ---
 
 # Overview of deploying languages for Microsoft 365 Apps
@@ -79,7 +79,7 @@ The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Use
 > [!NOTE]
 > - This capability is available in Microsoft 365 Apps for enterprise, starting with Version 2108 of Current Channel and with Version 2109 of Monthly Enterprise Channel.
 > - Support will be available at a later date for Semi-Annual Enterprise Channel (Preview) and Semi-Annual Enterprise Channel.
-> - When programmatic control of Microsoft 365 Apps updates is enabled, this feature is not available. This is the case when you use Configuration Manager to deploy updates for Microsoft 365 Apps or servicing profiles.
+> - When programmatic control of Microsoft 365 Apps updates is enabled, this feature is not available. This is the case when you use Configuration Manager to deploy updates for Microsoft 365 Apps.
 
 If you're using a local source to deploy Office, we recommend that you use the [AllowCdnFallback attribute](office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) in your configuration.xml file. This attribute enables you to use the Office CDN on the internet as a backup source location for the language files if they aren't available on your local source. For more information, see [Use the Office CDN as a backup source for language packs](#use-the-office-cdn-as-a-backup-source-for-language-packs).
 
