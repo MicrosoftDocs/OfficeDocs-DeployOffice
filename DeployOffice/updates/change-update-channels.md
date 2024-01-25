@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 12/01/2023
+ms.date: 01/25/2025
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -138,7 +138,7 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 ## Considerations when changing channels
 
 > [!Tip]
-> When choosing how you want to deliver updates to your organization, we highly recommend using Monthly Enterprise Channel with a servicing profile. By using a servicing profile, you’ll automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the impact on your network. For more information, see [Overview of servicing profile in the Microsoft 365 Apps admin center](../admincenter/servicing-profile.md).
+> When switching to Current channel or Monthly Enterprise Channel, we recommend using [cloud update](../admincenter/cloud-update.md) to keep devices current.
 
 - When moving from a channel with a higher build number to a channel with a lower build number (such as Current Channel to Semi-Annual Enterprise Channel), binary delta compression isn't applied. Because of this, the update will be larger than normal. The update, however, won't be as large as a full installation of Microsoft 365 Apps.
 - Devices must be able to fetch an update from the newly assigned channel to complete the transition.
