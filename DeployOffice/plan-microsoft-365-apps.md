@@ -56,13 +56,13 @@ Many organizations use a combination of these options for different users. For e
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [servicing profile](admincenter/servicing-profile.md).
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [cloud update](./admincenter/cloud-update.md).
 
 We recommend updating your client devices automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any additional tools or administrative overhead. In addition, the updates are automatically deployed over a number of days to conserve your network bandwidth.
 
 You can also use Intune to apply additional policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office) on how to apply ADMX settings to devices.
 
-The third, cloud-based option is to leverage a [servicing profile](admincenter/servicing-profile.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
+The third, cloud-based option is to leverage [cloud update](./admincenter/cloud-update.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 If you need to distribute updates from an on-premises source, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch.
 
@@ -74,7 +74,7 @@ Choose how to manage updates:
 
 - **Manage updates with Intune:** Use Intune to set policies on devices, which control how and when those should get updates from the cloud. 
 
-- **Manage updates with a servicing profile:** When using the Monthly Enterprise Channel, a servicing profile gives you the most comprehensive toolset to manage updates from the cloud. 
+- **Manage updates with cloud update:** When using the Monthly Enterprise Channel or Current Channel, cloud update gives you the most comprehensive toolset to manage updates from the cloud. 
 
 - **Manage updates with Configuration Manager:**  Updates are downloaded and deployed to client devices by Configuration Manager. 
 
@@ -97,7 +97,7 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 > [!NOTE]
 > The "[Explained - Microsoft 365 Apps Update Channels](https://youtu.be/eNn4PDkmo7s)" video gives you a complete overview of all update channels.
 
-We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need additional predictability of when new features are released, we recommend Monthly Enterprise Channel with a [servicing profile](./admincenter/servicing-profile.md). By using a servicing profile, you’ll automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need additional predictability of when new features are released, we recommend Monthly Enterprise Channel with [cloud update](./admincenter/cloud-update.md). By using cloud update, you’ll automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the impact on your network. In those cases where you've selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 All the update channels receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
@@ -105,8 +105,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](u
 
 To preview or test new updates before deploying them to your entire organization, you have two options:
 
-- Deploy the update in a staged manner. For example, on the release day to a handful of devices, then after a few days extend to a sample set across your organization and then to the remaining devices in two additonal waves. When using Monthly Enterprise Channel and a servicing profile, this can be automated by using [custom rollout waves](./admincenter/servicing-profile.md#create-rollout-waves).
-
+- Deploy the update in a staged manner. For example, on the release day to a handful of devices, then after a few days extend to a sample set across your organization and then to the remaining devices in two additonal waves. When using Monthly Enterprise Channel and cloud update, this can be automated by using custom rollout waves in combination with [Update validation](./admincenter/update-validation.md).
 - Deploy a combination of update channels where one channel receives new features earlier than the other. For example, deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
  
 ## Step 4 - Define your installation packages
