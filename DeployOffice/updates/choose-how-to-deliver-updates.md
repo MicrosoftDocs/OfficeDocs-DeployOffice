@@ -28,7 +28,7 @@ First, this article covers three different update locations you can choose from 
     - [Microsoft Configuration Manager](#microsoft-configuration-manager-1)
 
 > [!NOTE]
-> The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a cloud update, both products will be updated at the same time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
+> The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through cloud update, both products will be updated at the same time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
