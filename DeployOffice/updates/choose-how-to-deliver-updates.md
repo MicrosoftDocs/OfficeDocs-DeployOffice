@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates for the Microsoft 365 Apps"
-ms.date: 11/10/2023
+ms.date: 01/25/2024
 ---
 
 # Choose how to deliver updates
@@ -20,7 +20,7 @@ First, this article covers three different update locations you can choose from 
 
 - [Using the cloud for updates](#updates-from-the-cloud)
     - [Automatic Updates or Microsoft Intune](#automatic-update--microsoft-intune)
-    - [Servicing Profiles](#servicing-profiles)
+    - [Cloud Update](#Cloud-update)
 - [Using on-premises locations for updates](#updates-from-on-premises-locations)
     - [Microsoft Configuration Manager](#microsoft-configuration-manager)
     - [Network shares](#network-shares)
@@ -28,7 +28,7 @@ First, this article covers three different update locations you can choose from 
     - [Microsoft Configuration Manager](#microsoft-configuration-manager-1)
 
 > [!NOTE]
-> The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a servicing profile, both products will be updated at the same time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
+> The Office Update Engine will always update all Click-to-Run-based products and apps together and with the same mechanism. For example, if a device has the Microsoft 365 Apps as well as Visio desktop app installed and the updates are configured to happen through a cloud update, both products will be updated at the same time. It is not possible to mix and match update mechanisms (for example Visio desktop app updates from the Office CDN, but the Microsoft 365 Apps from an on-premises file share).
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
@@ -93,29 +93,28 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or Servicing Profiles.
 - Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
 
-### Servicing profiles
+### Cloud update
 
-A [servicing profile](../admincenter/servicing-profile.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
+[Cloud update](../admincenter/cloud-update.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
-> Using a servicing profile is Microsoft's recommended solution for Microsoft 365 Apps on Monthly Enterprise Channel.
+> Using cloud update is Microsoft's recommended solution for Microsoft 365 Apps on Monthly Enterprise Channel or Current Channel.
 
 **Benefits**
-- Update solution specifically built for the Microsoft 365 Apps.
-- Detailed reporting about update status, progress and encountered issues.
+- Update solution specifically built for the Microsoft 365 Apps
+- Detailed reporting about update status, progress and encountered issues
 - Allows admins to pause or rollback updates if there's any issues
 - Allows admins to set deadlines for update enforcement
 - Applies to all Microsoft 365 Apps instances connected to the tenant, regardless of management or directory domain
+- [Update validation](../admincenter/update-validation.md) allows you to validate new updates on a first test ring
 
 **Considerations**
-- As of now, servicing profile only supports Monthly Enterprise Channel. Devices on other channels can be transitioned to Monthly Enterprise Channel.
-- Consider using custom [rollout waves](../admincenter/servicing-profile.md#create-rollout-waves) to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
+- Cloud update supports Monthly Enterprise Channel and Current Channel. Devices on other channels can not be managed.
+- Consider using custom rollout waves to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
-- [Overview of servicing profile](../admincenter/servicing-profile.md)
-- [Video: Deep dive into servicing profile](https://youtu.be/YO6a3iNVXXI)
-- [Video: Deep dive into Wave Customization for servicing profile](https://go.microsoft.com/fwlink/?linkid=2212413)
-
+- [Overview of cloud update](../admincenter/cloud-update.md)
+- [Videos]([https://youtu.be/YO6a3iNVXXI](https://www.youtube.com/playlist?list=PLcUacJY1uG-hjdeyfJjQnl67hEPyPE8ed))
 
 ## Update solutions for on-premises-based updates
 
