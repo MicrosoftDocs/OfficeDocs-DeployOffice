@@ -20,7 +20,7 @@ First, this article covers three different update locations you can choose from 
 
 - [Using the cloud for updates](#updates-from-the-cloud)
     - [Automatic Updates or Microsoft Intune](#automatic-update--microsoft-intune)
-    - [Cloud Update](#Cloud-update)
+    - [Cloud Update](#cloud-update)
 - [Using on-premises locations for updates](#updates-from-on-premises-locations)
     - [Microsoft Configuration Manager](#microsoft-configuration-manager)
     - [Network shares](#network-shares)
@@ -114,7 +114,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 
 **Additional information**
 - [Overview of cloud update](../admincenter/cloud-update.md)
-- [Videos]([https://youtu.be/YO6a3iNVXXI](https://www.youtube.com/playlist?list=PLcUacJY1uG-hjdeyfJjQnl67hEPyPE8ed))
+- [Introductional videos](https://www.youtube.com/playlist?list=PLcUacJY1uG-hjdeyfJjQnl67hEPyPE8ed)
 
 ## Update solutions for on-premises-based updates
 
