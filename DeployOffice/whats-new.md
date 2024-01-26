@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists the new tools, content, and processes for IT Pros deploying Microsoft 365 Apps."
-ms.date: 03/30/2023
+ms.date: 01/25/2024
 ---
 
 # What's new for deploying Microsoft 365 Apps
@@ -124,6 +124,7 @@ Looking for recommendations and resources to help make your Microsoft 365 enviro
 ### Servicing profile: rollout waves (preview)
 
 *(This feature is generally available as of June 16, 2022.)*
+*(This feature has been replaced by [cloud update](./admincenter/cloud-update.md))*
 
 If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admincenter/servicing-profile.md#create-rollout-waves).
 
@@ -142,6 +143,7 @@ For more information, refer to the following information:
 ### Servicing profile: roll back to a previous version (preview)
 
 *(This feature is generally available as of June 16, 2022.)*
+*(This feature has been replaced by [cloud update](./admincenter/cloud-update.md))*
 
 If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admincenter/servicing-profile.md#roll-back-to-a-previous-version).
 
