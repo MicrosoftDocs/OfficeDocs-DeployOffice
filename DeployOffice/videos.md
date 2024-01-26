@@ -59,15 +59,5 @@ These videos cover features available in the [Microsoft 365 Apps admin center](h
 - [Enabling the Current Channel Profile](https://youtu.be/lRegLZUjkUY)
 - [How to exclude devices using Microsoft Entra ID groups](https://youtu.be/fvZLjP41kXE)
 
-### Servicing profile
-- [Take control of your automation with Servicing Profile](https://youtu.be/i_eUkyFX30E)
-- [How to easily set up your Servicing Profile](https://youtu.be/igBMDvKqVJU)
-- [Servicing Profiles Deep Dive](https://youtu.be/YO6a3iNVXXI)
-- [Deep dive into Wave customization for Servicing profiles](https://youtu.be/rDu8qVbE1DY)
-- [New feature for Servicing Profile: Rollback](https://youtu.be/wyy_ll3wdlM)
-- [H1 Feature Release for Servicing Profiles](https://youtu.be/dIeeelh5Gcg)
-- [New feature for Servicing Profile: Microsoft Entra Group Filtering (Start Small)](https://youtu.be/RrEBevNV7pQ)
-- [Exclusion Window w/ Microsoft Entra ID group support: Feature update in Servicing Profile](https://youtu.be/WMVlfg_3wnw)
-
 ### OneDrive sync health
 - [Microsoft OneDrive Insight Capabilities explained](https://youtu.be/0A2LbKoNFzU)
