@@ -32,7 +32,7 @@ First, this article covers three different update locations you can choose from 
 
 ## Step 1: Choose your update source: Cloud, on-premises location, or hybrid
 
-The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](#updates-from-the-cloud), from [on-premises locations](#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section lays out these sources and call out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](#step-2-choose-your-way-to-manage-updates) for the chosen update source.
+The first step in deciding how the Microsoft 365 Apps should be updated, is to choose where updates should be delivered from: From [the cloud](#updates-from-the-cloud), from [on-premises locations](#updates-from-on-premises-locations) or a [mix of both (also known as "hybrid")](#updates-from-mixed-on-premises-and-cloud-locations-hybrid). The following section lays out these sources and calls out the individual benefits and challenges. The second step is to review and choose a fitting [solution for managing updates](#step-2-choose-your-way-to-manage-updates) for the chosen update source.
 
 ### Updates from the cloud
 When the Microsoft 365 Apps are pulling updates from the Microsoft Office Content Delivery Network (Office CDN), this is referred to as cloud-based updates. Microsoft operates a worldwide, distributed network of datacenters that hosts all updates for the Microsoft 365 Apps for all available update channels, languages, related products like Visio and Project, and architectures (32/64 bit). The Office CDN also contains a history of released updates, so updating to specific releases or rolling back to older ones is also possible.
@@ -109,7 +109,7 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - [Update validation](../admincenter/update-validation.md) allows you to validate new updates on a first test ring
 
 **Considerations**
-- Cloud update supports Monthly Enterprise Channel and Current Channel. Devices on other channels can not be managed.
+- Cloud update supports Monthly Enterprise Channel and Current Channel. Devices on other channels can't be managed.
 - Consider using custom rollout waves to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
