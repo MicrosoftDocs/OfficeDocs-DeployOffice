@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 1/08/2024
+ms.date: 1/23/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -106,7 +106,7 @@ For the best experience with Microsoft 365 updates, ensuring low cost, minimal e
 - Enable cloud update to activate your Current Channel profile and Monthly Enterprise Channel profile.
 - Use Channel change capability to move all of your devices to Current Channel or Monthly Enterprise Channel. These update channels are recommended if your organization uses Copilot.
 - Don't use group inclusion.
-- To prevent certain devices from being included in cloud update, place them in a Microsoft Entra ID group. Then, use the exclude groups feature to omit them from cloud update.
+- To prevent certain devices from being included in cloud update, place them in a Microsoft Entra ID group. Then, use the **exclude groups** feature to omit them from cloud update.
 - Using the switch channel feature in inventory allows you to conveniently change the update channel on devices.
 - Deactivating cloud update is currently in development and is coming soon. When released, you're able to navigate to the settings page of individual channel profiles and select 'Cloud Update Review' to deactivate cloud update.
 
@@ -147,11 +147,7 @@ The following list shows the service times for each of the described admin actio
 
 - Enable cloud: Cloud update for Current Channel and Monthly Enterprise Channel activates with enable cloud. Devices are eligible for the profile based on their channel and updates are received based on profile rules as configured by the admin. Once enabled, Current Channel and Monthly Enterprise Channel are listed in left navigation of Microsoft 365 Apps admin center within 30 minutes. If the channel isn't listed after 30 minutes, refresh your page.
 
-- Exclude Groups: After a device is excluded from cloud update, it will be labeled as *Excluded from ChannelName* in the cloud update status section in inventory. This change will occur within 30 minutes, after which admins can manage these devices. They should first set **ignoreGPO = 0** for these devices before beginning to manage them using management tool of choice.
-
-**When will support for managing Semi-Annual Enterprise Channel devices in cloud update be available?**
-
-The launch of this capability is expected soon.
+- Exclude Groups: After a device is excluded from cloud update, it will be labeled as *Excluded from ChannelName* in the cloud update status section in inventory. This change will occur within 30 minutes, after which admins can manage these devices.
 
 **How can I turn off update validation?**
 
