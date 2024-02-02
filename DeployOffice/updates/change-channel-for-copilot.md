@@ -8,9 +8,8 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 11/21/2023
+ms.date: 02/02/2024
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
