@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices"
-ms.date: 01/18/2023
+ms.date: 02/05/2024
 ---
 
 # Use the Office Deployment Tool to install Microsoft 365 Insider on Windows devices
@@ -71,7 +71,7 @@ Follow these steps to use the Office Deployment Tool to install Microsoft 365 In
 > - Keep in mind that Beta Channel isn't supported.
 
 4. Copy the setup.exe file and your configuration.xml file to the device where you want to install Microsoft 365 Apps. An Internet connection is required to install Microsoft 365 Apps and you must have local administrator permissions on that device.
-5. From an elevated command prompt, go to the folder where you copied the files. Then run the following command, which copies the Microsoft 365 Apps files from Microsoft directly from the internet to the device and starts the installation.
+5. From an elevated command prompt, go to the folder where you copied the files. Then run the following command to copy the Microsoft 365 Apps files from the internet directly to your device and start the installation.
 
 ```console
 setup.exe /configure configuration.xml
@@ -85,7 +85,7 @@ setup.exe /configure configuration.xml
 
 To install the 32-bit version of Microsoft 365 Apps, use OfficeClientEdition="32" in the configuration.xml file.
 
-64-bit is the default and is usually recommended, but if you’re not sure which to use, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+64-bit is the default and is recommended, but if you’re not sure which to use, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 ### I have Microsoft 365 Apps for business, not Microsoft 365 Apps for enterprise. What do I do?
 
