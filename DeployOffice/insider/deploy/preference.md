@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use a preference to select the Microsoft 365 Insider channel for their Mac users."
-ms.date: 01/18/2023
+ms.date: 02/05/2024
 ---
 
 # Provide Mac users with Microsoft 365 Insider by using a preference
