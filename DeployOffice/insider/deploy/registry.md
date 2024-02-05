@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use the reg add command to install Microsoft 365 Insider on Windows devices."
-ms.date: 01/18/2023
+ms.date: 02/05/2024
 ---
 
 # Use a registry command to install Microsoft 365 Insider on Windows devices
 
-If you have an existing Microsoft 365 Apps installation on a Windows device, the simplest way to install Microsoft 365 Insider is to run a command that updates the registry on the device. The command will update information in the registry to specify which Microsoft 365 Insider channel the Microsoft 365 Apps installation should use.
+If you have an existing Microsoft 365 Apps installation on a Windows device, the simplest way to install Microsoft 365 Insider is to run a command that updates the registry on the device. The command updates information in the registry to specify which Microsoft 365 Insider channel the Microsoft 365 Apps installation should use.
 
 We recommend using this method if you have just a handful of devices that need Microsoft 365 Insider on them.
 

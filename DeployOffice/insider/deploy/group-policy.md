@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides steps for admins to use Group Policy to install Microsoft 365 Insider on Windows devices."
-ms.date: 01/18/2023
+ms.date: 02/05/2024
 ---
 
 # Use Group Policy to install Microsoft 365 Insider on Windows devices
 
-If you’re already using Group Policy to manage Microsoft 365 Apps in your organization, you can use it to configure Windows devices to get Microsoft 365 Insider.
+If you’re using Group Policy to manage Microsoft 365 Apps in your organization, you can use it to configure Windows devices to get Microsoft 365 Insider.
 
 > [!TIP]
 > - You can also use Group Policy to let your users choose which Microsoft 365 Insider channel they want to use. For more information, see [Let users choose which Microsoft 365 Insider channel to install on Windows devices](user-choice.md).
@@ -27,7 +27,7 @@ For existing Microsoft 365 Apps installations on Windows devices, you can change
 
 &nbsp;&nbsp;&nbsp; Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates
 
-When you set the policy to Enabled, you’ll see the option to choose **Current Channel (Preview)** or **Beta Channel** from the drop-down list under **Options**. The policy applies to devices, not to users. So if multiple users are using Microsoft 365 Apps on that device, each user will get that Microsoft 365 Insider channel.
+When you set the policy to Enabled, select either **Current Channel (Preview)** or **Beta Channel** from the **Options** drop-down list. The policy applies to devices, not to users. So if multiple users are using Microsoft 365 Apps on that device, each user gets that Microsoft 365 Insider channel.
 
 > [!NOTE]
 > - Keep in mind that Beta Channel isn't supported.
@@ -41,4 +41,4 @@ After you configure the policy, it might take at least 90 minutes before the pol
 
 ### How do I change to a different channel at a later time?
 
-To change to a different channel, you can go back to the Group Policy Management Console and select a different channel. Keep in mind that making this change will change the channel for all devices to which the policy applies.
+To change to a different channel, you can go back to the Group Policy Management Console and select a different channel. Remember, changing this setting updates the channel for every device affected by the policy.

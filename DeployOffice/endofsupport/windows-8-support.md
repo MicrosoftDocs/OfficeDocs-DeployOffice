@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-ms.collection: Tier2
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the implications of Windows 8 end of support on Microsoft 365 Apps."
-ms.date: 01/10/2023
+ms.date: 02/05/2024
 ---
 
 # Windows 8 end of support and Microsoft 365 Apps

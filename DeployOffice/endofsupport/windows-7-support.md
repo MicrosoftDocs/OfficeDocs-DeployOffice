@@ -6,11 +6,11 @@ manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-ms.collection: Tier2
+ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
-ms.date: 01/10/2023
+ms.date: 02/05/2024
 ---
 
 # Windows 7 end of support and Microsoft 365 Apps
@@ -39,7 +39,7 @@ Even though Windows 7 is no longer supported, we decided to provide you with sec
 
 Version 2002 is the last version of Microsoft 365 Apps that's available for devices running Windows 7.
 
-This means that if you want to use Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2201, on a device running Windows 7, you'll receive an error message.
+This means that if you want to use Microsoft 365 Apps on devices that are running Windows 7, you need to use Version 2002. If you try to install a newer version of Microsoft 365 Apps, such as Version 2201, on a device running Windows 7, an error message is displayed.
 
 > [!IMPORTANT]
 > - As of January 2022, attempting to do a new installation of Version 2002 will fail.
@@ -59,24 +59,24 @@ If you use Configuration Manager and the Software Update management workflow to 
 
 On the second Tuesday of each month, a new update package for Version 2002 that is only for devices running Windows 7 will be made available in the Microsoft Update Catalog. There will be an update package for each architecture (x86 or x64). That update package can be used with whichever update channel of Microsoft 365 Apps you've deployed. There won't be separate update packages of Version 2002 for each update channel. For example, the same update package can be used to update a Current Channel or a Semi-Annual Enterprise Channel installation of Microsoft 365 Apps on devices running Windows 7.
 
-In the Office 365 Updates node, you'll see entries like the following, where ##### will be replaced by the most current build number:
+In the Office 365 Updates node, you see entries like the following, where ##### is replaced by the most current build number:
 
 - Microsoft 365 Apps Update for Windows 7 – Version 2002 for x64 based Edition (Build 12527.#####)
 - Microsoft 365 Apps Update for Windows 7 – Version 2002 for x86 based Edition (Build 12527.#####)
 
 These update packages are configured to apply ***only*** to devices running Windows 7. These update packages can't be used to update Microsoft 365 Apps on devices running other supported operating systems, such as Windows 11 or Windows 10.
 
-If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Microsoft 365 Apps Update for Windows 7" and the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients will apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
+If you use an automatic deployment rule (ADR), you should create a new rule for these update packages. Then, use the new rule for your collection that contains your Windows 7 devices. We recommend using the "Title" property and searching for "Microsoft 365 Apps Update for Windows 7" and the architecture you support. If you support both x86 and x64, you can include both updates in one Software Update Package as clients apply the appropriate update. You should also check other existing ADRs to make sure they don't incorrectly try to apply these update packages, which are only for devices running Windows 7, to devices running other operating systems.
 
 ## After moving Microsoft 365 Apps to a supported Windows operating system
 
-After you move Microsoft 365 Apps to a supported Windows operating system, you can configure Microsoft 365 Apps to begin receiving newer versions and feature updates again. Since updates for Microsoft 365 Apps are cumulative, you'll receive all the feature updates that you missed while your device was running Windows 7.
+After you move Microsoft 365 Apps to a supported Windows operating system, you can configure Microsoft 365 Apps to begin receiving newer versions and feature updates again. Since updates for Microsoft 365 Apps are cumulative, you receive all the feature updates that you missed while your device was running Windows 7.
 
 If you're getting updates directly from the Office CDN on the internet, after the device is moved to a supported operating system, Microsoft 365 Apps will be updated automatically to the most current version available for that update channel and will start receiving new features again.
 
 ## What about other versions of Office on Windows 7?
 
-Non-subscription versions of Office used by organizations, such as Office Professional Plus 2016, will continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
+Non-subscription versions of Office used by organizations continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
 Even if your version of Office is still supported, Windows 7 no longer receives security updates, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
 
