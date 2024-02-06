@@ -18,7 +18,7 @@ ms.date: 02/06/2024
 
 Shared mailboxes are used when multiple people need access to the same mailbox. This setup is useful for emails dedicated to company information, support, reception desk, or other functions that multiple people share. An administrator can grant users permission to send email from the shared mailbox. This feature is useful for help and support mailboxes, allowing emails to be sent from "Contoso Support" or "Building A Reception Desk."
 
-For more information about shared mailboxes, see [About shared mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide)
+For more information about shared mailboxes, see [About shared mailboxes](/microsoft-365/admin/email/about-shared-mailboxes)
 
 ## Use default OWAMailboxPolicy
 
@@ -27,11 +27,11 @@ This example enables the new Outlook for Windows for all mailboxes, including sh
 Get-OwaMailboxPolicy | Set-OwaMailboxPolicy -OneWinNativeOutlookEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://learn.microsoft.com/en-us/powershell/module/exchange/get-owamailboxpolicy?view=exchange-ps) and [Set-OwaMailboxPolicy](https://learn.microsoft.com/en-us/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps).
+For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](/powershell/module/exchange/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 ## Use custom OWAMailboxPolicy
 
-If only a subset of users within your organization use new Outlook and shared mailboxes, you need to create a custom OWAMailboxPolicy. For more information, see [Create a mailbox policy in Exchange Online for Outlook on the web and the new Outlook for Windows](https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+If only a subset of users within your organization use new Outlook and shared mailboxes, you need to create a custom OWAMailboxPolicy. For more information, see [Create a mailbox policy in Exchange Online for Outlook on the web and the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
 ## PowerShell
 
