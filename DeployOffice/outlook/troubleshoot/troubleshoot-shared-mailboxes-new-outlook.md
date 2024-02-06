@@ -1,5 +1,5 @@
 ---
-title: "Troubleshoot deployment issues in new Outlook"
+title: "Troubleshoot shared mailboxes in new Outlook"
 ms.author: caithart
 author: nicholasswhite
 manager: dougeby
@@ -10,16 +10,15 @@ ms.collection: Tier3
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Provides steps to troubleshoot and enable shared mailboxes in the new Outlook using OWAMailboxPolicy settings and PowerShell commands"
+description: "Provides steps to troubleshoot and enable shared mailbox in new Outlook using OWAMailboxPolicy settings and PowerShell commands"
 ms.date: 02/06/2024
 ---
 
-# Troubleshoot - Shared Mailboxes
+# Troubleshoot shared mailboxes in new Outlook
 
 Shared mailboxes are used when multiple people need access to the same mailbox. This setup is useful for emails dedicated to company information, support, reception desk, or other functions that multiple people share. An administrator can grant users permission to send email from the shared mailbox. This feature is useful for help and support mailboxes, allowing emails to be sent from "Contoso Support" or "Building A Reception Desk."
 
-For more information about shared mailboxes: 
-[About shared mailboxes - Microsoft 365 admin | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide)
+For more information about shared mailboxes, see [About shared mailboxes](https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide)
 
 ## Use default OWAMailboxPolicy
 
