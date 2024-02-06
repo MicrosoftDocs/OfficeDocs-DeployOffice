@@ -13,4 +13,4 @@
 
 ## Troubleshoot
 ### [Deployment issues in new Outlook](troubleshoot/troubleshoot-deployment-new-outlook.md)
-### [Shared mailbox](troubleshoot/troubleshoot-shared-mailboxes.md)
+### [Shared mailbox issues in new Outlook](troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md)
