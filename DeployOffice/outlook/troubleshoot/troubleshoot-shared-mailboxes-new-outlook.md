@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
-ms.collection: Tier3
+ms.collection: Tier2
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
@@ -43,10 +43,8 @@ New-OwaMailboxPolicy -Name "<Unique Name>"
 This example creates a mailbox policy for Outlook on the web and the new Outlook for Windows named SharedMailboxPolicy.
 
 ```powershell
-New-OwaMailboxPolicy -Name Policy1
+New-OwaMailboxPolicy -SharedMailboxPolicy
 ```
-
-Rename Policy1 to **SharedMailboxPolicy**.
 
 Enable OneWinNativeOutlookEnable:
 ```powershell
