@@ -11,4 +11,6 @@
 ### [Policy management](manage/policy-management.md)
 ### [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## [Troubleshoot](troubleshoot-deployment-new-outlook.md)
+## Troubleshoot
+### [Deployment issues in new Outlook](troubleshoot/troubleshoot-deployment-new-outlook.md)
+### [Shared mailbox issues in new Outlook](troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md)
