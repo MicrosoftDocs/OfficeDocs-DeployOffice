@@ -61,4 +61,4 @@ Apply the new OWAMailboxPolicy on the shared mailbox:
 Set-CASMailbox -<sharedmailbox Identity> -OWAMailboxPolicy “SharedMailboxPolicy”
 ```
 
-Now users that are using new Outlook are able to add and connect to shared mailboxes. 
+With this newly applied OWAMailboxPolicy, users can access and add shared mailboxes using new Outlook.
