@@ -9,7 +9,7 @@ ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 12/29/2023
+ms.date: 02/09/2024
 ---
 
 # Required diagnostic data for Office
@@ -4844,7 +4844,19 @@ This event is triggered when checking for a valid license to use Python in Excel
 
 The following fields are collected: 
 
+- **Data_DurationForFetchInfoFromLicensing** - number of milliseconds it takes to fetch license information from server.
+
 - **Data_FUserHasValidPythonLicense** - A Boolean value indicating if user has a valid license to use Python in Excel.
+
+- **Data_IsMultiAccountsSignedIn** - boolean value indicating if more than one user accounts is signed in.
+
+- **Data_PythonUserIdentity** - GUID string of user's identity used to fetch license.
+
+- **Data_TrialStatusReseted** - boolean value indicating if reseting of license status happened in this session.
+
+- **Data_UseLicenseForTrialPreview** - boolean value indicating if the license is granted by trail preview technology.
+
+- **Data_UsePythonLicenseTestOverride** - boolean value indicating if the license is granted by test framework.
 
 - **Data_UserLicenseState** - A state of a license such as Active, Undefined, EligibleNeedsOptin
 
@@ -10529,6 +10541,8 @@ The following fields are collected:
 
 - **Data_VerboseMeasurements** - Detailed performance measurement data for the save operation
 
+- **fMergeSucceeded** - Indicates if changes made by other users are merged to the document as part of the saving process.
+
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
 This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It is also used to calculated monthly active users/devices.
@@ -15563,6 +15577,8 @@ The following fields are collected:
 
 - **Data_IsPdfDetectedUsingNewBootInfraLogic** - Boolean denoting if incoming intent is identified as a PDF file.
 
+- **Data_IsPdfDetectedUsingNewBootInfraLogicMetaData** - Collects metadata about how code detects the file open as pdf file open.
+
 - **Data_IsPriorityCoroutineEnabled** - Boolean denoting if priority coroutine fetauregate is enabled or not.
 
 - **Data_isSameFileOpened** - Denotes if in external pdf file open the same file is opened again.
@@ -17448,6 +17464,8 @@ The following fields are collected:
 - **Data_ErrorCallstack** - Error Callstack
 
 - **Data_ErrorMessage** - Error Message
+
+- **Data_IsFatal** - Identifies fatal error.
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
