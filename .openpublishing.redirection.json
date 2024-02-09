@@ -1064,6 +1064,11 @@
       "source_path": "DeployOffice/admincenter/overview-security-vulnerabilities.md",
       "redirect_url": "/DeployOffice/admincenter/security-update-status",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/troubleshoot-deployment-new-outlook.md",
+      "redirect_url": "/DeployOffice/outlook/troubleshoot/troubleshoot-deployment-new-outlook",
+      "redirect_document_id": false
     }
   ]
 }

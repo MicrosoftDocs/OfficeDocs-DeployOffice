@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: overview
 ms.service: o365-proplus-itpro
-ms.collection: Tier2
+ms.collection: Tier3
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
@@ -88,7 +88,7 @@ To check this setting for your computer:
 ### Firewalls
 To download, install and get continuous updates for new Outlook, make sure proxy and firewall isn't blocking access to the Microsoft Store
 - https://res.cdn.office.net
-- res.cdn.office.net/nativehost/5mttl/installer/
+- https://res.cdn.office.net/nativehost/5mttl/installer/
 
 ### Blocking executables
 Ensure there are no security policies or software blocking executables from running in the user’s temp directory.
