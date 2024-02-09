@@ -7,9 +7,11 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Tier1
+ms.collection: 
+ - tier1
+ - essentials-manage
 recommendations: true
-description: "Overview of the Microsoft 365 Apps admin center"
+description: "Overview of the Microsoft 365 Apps admin center and the features and services available in the admin center."
 ms.date: 01/23/2024
 ---
 

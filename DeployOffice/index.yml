@@ -12,7 +12,9 @@ metadata:
   ms.author: nwhite
   author: nicholasswhite
   ms.topic: hub-page
-  ms.collection: Tier1
+  ms.collection: 
+   - tier1
+   - essentials-navigation
   ms.service: o365-proplus-itpro
   ms.custom: intro-hub-or-landing
 
