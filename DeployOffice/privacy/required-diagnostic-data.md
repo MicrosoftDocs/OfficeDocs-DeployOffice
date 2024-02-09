@@ -1059,6 +1059,24 @@ The following fields are collected:
 
   - **Data\_VisioSKU**:**integer** - 0 for Standard SKU and 1 for Professional SKU
 
+
+#### onboarding.flow
+
+This event is used to track users’ success while setting up Outlook Mobile. It is critical to detecting errors in user experience and processing that could prevent successful completion.
+
+The following fields are collected:
+
+- **accounts_found** - an integer indicating how many accounts are found during the SSO (Single Sign On) process.
+
+- **accounts_selected** - an integer indicating how many SSO accounts the user has selected to add as Outlook accounts.
+
+- **action** – The step the user has taken (page_load, a button was pressed (next button, skip button), filled in an input field) 
+
+- **page_title** – Which page of the onboarding flow the user is on
+
+- **page_version** – What version of the page is shown (1 for current version, greater numbers for redesign and experiments)
+
+
 ### *Office add-in configuration subtype*
 
 Software add-ins and their settings​.
@@ -3157,6 +3175,18 @@ The following fields are collected:
 - **Data_Operation_Type** - The kind of ad related operation performed by the ad infra
 
 - **Data_PlacementId** - Unique identifier used by Ad network service to associate an ad to a surface
+
+#### Office.Android.EarlyTelemetry.DocsUIControllerFailure
+
+This event is triggered when the user launches Office Mobile application and triggers sign in or authentication. This data will help us to identify the failures of the authentication/sign in.
+
+The following fields are collected:
+
+- **Data_ErrorCode** - class name where failure occurred. 
+
+- **Data_ErrorDescription** - description of the error. 
+
+- **Data_FailureMethod** - method name where failure occurred.
 
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesAvailability
@@ -10975,6 +11005,21 @@ The following fields are collected:
 - **SurveyType** – Identifies the type of survey
 
 
+#### Traditional.Login.User.Retention
+
+This event is triggered when IMAP (Internet Messaging Access Protocol) or POP3 (Post Office Protocol) user fails to sign in using Outlook app. By comparing the number and error type of sign-in failures we ensure the sign-in process update is performing as expected. 
+
+The following fields are collected:
+ 
+- **Errors** - Error string that indicates what caused the sign in to fail.
+
+- **Ever_Succeeded** - Indicates whether user succeeded to sign in in between immediate and scheduled events.
+
+- **Has_Existing_Account** - Used to check whether user has an existing accounts after a failed sign-in attempt.
+
+- **Type** - Type of event which currently has two values: immediate (event is sent immediately after sign in fails) and scheduled (event is sent after a scheduled time period).
+
+
 #### watchAppV2
 
 This event is triggered from the Outlook watch app, when notifications are communicated from Outlook mobile to the Outlook watch app, and when the user is performing actions in the Outlook watch app. This event allows us to detect and fix possible issues with capabilities on the watch, such as receiving notifications and responding to emails.
@@ -14824,6 +14869,20 @@ The following fields are collected:
 - **call_stack** – This represents a call stack which is used to diagnose a crash or hang.
 
 - **call_stack_hash** – This represents the hash of a call stack which can be used to correlate this even with the metric_diagnostic event.
+
+#### metric.signpost
+
+The event is triggered by receiving data from iOS's MetricKit framework. Once a day, MetricKit sends Outlook a diagnostic report which contains aggregated signpost information. On receiving the report, Outlook will trigger this event.
+
+This event is used to identify regressions by collecting statistics around the time various performance-related Outlook scenarios take to execute.
+
+The following fields are collected:
+
+- **signpost_summary** - A histogram representation of the execution times.
+
+- **source** - The source of the signpost data.
+
+- **type** - The signpost scenario.
 
 
 #### Office.Android.AdsMobile.Wxpu.AdUIEvent
