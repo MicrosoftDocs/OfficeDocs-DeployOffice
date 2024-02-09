@@ -6,7 +6,9 @@ manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-ms.collection: Tier2
+ms.collection: 
+ - tier2
+ - essentials-security
 ms.localizationpriority: medium
 description: "Provide Office admins with an overview of the security baseline for Microsoft 365 Apps for enterprise"
 ms.date: 01/09/2024
