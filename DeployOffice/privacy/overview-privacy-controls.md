@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
+ms.collection: 
+ - tier1
+ - essentials-privacy
 description: "Provides Office admins with an overview of privacy controls for Microsoft 365 Apps for enterprise, including for diagnostic data and connected experiences."
 hideEdit: true
 ms.date: 03/27/2023
