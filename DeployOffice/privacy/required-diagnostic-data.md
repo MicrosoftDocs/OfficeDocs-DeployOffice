@@ -202,7 +202,7 @@ This category contains the following fields:
 
   - **MeasuresEnabled** - Flag indicating if the current sessions data is sampled or not. Allows us to determine how to statistically evaluate the data that is gathered from the given session.
 
-  - **SamplingClientIdValue** - The ID of the client used to determine if it is part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
+  - **SamplingClientIdValue** - The ID of the client used to determine if it's part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
   
  - **SubAppName** - For Microsoft 365 mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field will report the value of “Word”.
 
@@ -565,13 +565,13 @@ The following data fields are common for all events for Outlook for iOS and Andr
 
 - **ci** - a pseudonymous app-specific device unique identifier
 
-- **cid_type** - indicates what type of account it is, such as a commercial account or Outlook.com account.
+- **cid_type** - indicates what type of account it's, such as a commercial account or Outlook.com account.
 
 - **cloud** - Where the mailbox resides for the account on this device to help detect issues specific to a specific mailbox cloud, like Office 365 or GCC.
 
 - **customer_type** - Indicates the type of customer (consumer, commercial, third party, etc.) to help us detect issues affecting certain customer types
 
-- **device_category** - Indicates what type of device it is (phone, tablet, etc.) to help us detect device category-specific issues
+- **device_category** - Indicates what type of device it's (phone, tablet, etc.) to help us detect device category-specific issues
 
 - **DeviceInfo.Id** - A unique device identifier to help us detect device-specific issues
 
@@ -836,7 +836,7 @@ The following fields are collected:
 
 - **Accounts** - Indicates the types if accounts used for signing-into the App
 
-- **Generic String Type** - Returns if it is full reset of a notes_light_data reset
+- **Generic String Type** - Returns if it's full reset of a notes_light_data reset
 
 - **LaunchPoint** - The point from where Reset is initiated. Possible values: Sign Out Button, Sign out failure, Intune Triggered
 
@@ -1062,7 +1062,7 @@ The following fields are collected:
 
 #### onboarding.flow
 
-This event is used to track users’ success while setting up Outlook Mobile. It is critical to detecting errors in user experience and processing that could prevent successful completion.
+This event is used to track users’ success while setting up Outlook Mobile. It's critical to detecting errors in user experience and processing that could prevent successful completion.
 
 The following fields are collected:
 
@@ -1557,7 +1557,7 @@ The following fields are collected:
 
   - **Count** - how many times the OLE control was loaded
 
-  - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It is just a unique representation of the document.)
+  - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It's just a unique representation of the document.)
 
   - **IsCategorized** – was the OLE control categorized to load in office
 
@@ -1573,7 +1573,7 @@ The following fields are collected:
 
   - **Count** - how many times this OLE object was detected
 
-  - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It is just a unique representation of the document.)
+  - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It's just a unique representation of the document.)
 
   - **IsCategorized** - is the OLE control categorized to load in office
 
@@ -1786,7 +1786,7 @@ The following fields are collected:
 
 - **is_local** - Reflects if the draft the error occurred on has synced to the server, if applicable.
 
-- **is_recoverable** - Reflects if the error can be recovered from or if it is a fatal error.
+- **is_recoverable** - Reflects if the error can be recovered from or if it's a fatal error.
 
 - **load_media_error_code** - The code of the error that occurred when loading media. This helps us understand the cause of the error.
 
@@ -2177,7 +2177,7 @@ The following fields are collected:
 
 #### drag.and.drop
 
-This event lets us detect if the drag and drop action was successful or not.  It is used to ensure that drag-and-drop experiences are working correctly across applications both as a drop event into Outlook and a drag event that leaves Outlook.  With this data, we're able to ensure that the end-to-end experience with other applications is working as expected.
+This event lets us detect if the drag and drop action was successful or not.  It's used to ensure that drag-and-drop experiences are working correctly across applications both as a drop event into Outlook and a drag event that leaves Outlook.  With this data, we're able to ensure that the end-to-end experience with other applications is working as expected.
 
 The following fields are collected: 
 
@@ -2949,7 +2949,7 @@ The following fields are collected:
 
 #### notification.center
 
-This event allows us to track when users enter and exit the notification center in addition to the count of unseen notifications. This helps us make sure that the notification center is consistent with all other clients. We also track when a user taps on a notification so we can tell what type it is.
+This event allows us to track when users enter and exit the notification center in addition to the count of unseen notifications. This helps us make sure that the notification center is consistent with all other clients. We also track when a user taps on a notification so we can tell what type it's.
 
 The following fields are collected: 
 
@@ -3067,7 +3067,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** - A string used to correlate client- side and server- side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** - A string used to correlate client- side and server- side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** - File size in bytes.
 
@@ -3235,13 +3235,13 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneComplianceRequest
 
-This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It is used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
+This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. It's used to understand the number of end users who are attempting to use apps under this policy configuration, and is combined with another event, Office.Android.Intune.IntuneComplianceStatus, to ensure the configured policy is enforced. 
 
 No data fields are collected.
 
 #### Office.Android.Intune.IntuneComplianceStatus
 
-This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It is combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
+This event is collected for Office applications running on Android, including Microsoft 365 mobile app, Word, Excel, PowerPoint, and OneNote. The event indicates an attempt to sign in to an Intune licensed organization account where the organization administrator has configured policy to enforce app conditional access. This event indicates the compliance status of the application to which the user has signed-in and is used to investigate failures. It's combined with another event, Office.Android.Intune.IntuneComplianceRequest, to ensure the configured policy is enforced.
   
 The following fields are collected:
 
@@ -3357,7 +3357,7 @@ The following fields are collected:
 
 #### Office.AppDocs.AppDocs.DocumentOperation
 
-This event is collected for Office applications running on Android, iOS, Universal, or Windows platforms. The event records when a file operation (create/open/save/export/etc.) takes place and it is used to understand and prioritize user-experiences based on the file operation information.
+This event is collected for Office applications running on Android, iOS, Universal, or Windows platforms. The event records when a file operation (create/open/save/export/etc.) takes place and it's used to understand and prioritize user-experiences based on the file operation information.
 
 The following fields are collected:
 
@@ -3417,7 +3417,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -3681,7 +3681,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -3793,7 +3793,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -3906,7 +3906,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -4018,7 +4018,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -4130,7 +4130,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -4243,7 +4243,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** – An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** – A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** – File size in bytes.
 
@@ -4361,7 +4361,7 @@ The following fields are collected:
 
 - **Data_IsRecommendedEnabled** - A Boolean value that indicates if the "Recommended" experience is currently available to the user.
 
-- **Data_TemplateIndex** - The numerical index of the template file as it is displayed visually to the user.
+- **Data_TemplateIndex** - The numerical index of the template file as it's displayed visually to the user.
 
 - **Data_TemplateType** - A classification to help distinguish the type of template like, but not limited to, "Online" templates, "Online search" templates, "Local" templates.
 
@@ -4461,7 +4461,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - An integer that is incremented by 1 for each file open operation in a session.
 
-- **Data_Doc_SharePointServiceContext** - A string used to correlate client-side and server-side logs, typically it is a kind of ID.
+- **Data_Doc_SharePointServiceContext** - A string used to correlate client-side and server-side logs, typically it's a kind of ID.
 
 - **Data_Doc_SizeInBytes** - File size in bytes.
 
@@ -4829,7 +4829,7 @@ The following fields are collected:
 
 #### Office.Excel.XlEditSession
 
-Collected when the user starts editing a spreadsheet. The data collected allows Microsoft to evaluate the feature health of actions that change the spreadsheet. It is also used to calculate monthly active users and devices.
+Collected when the user starts editing a spreadsheet. The data collected allows Microsoft to evaluate the feature health of actions that change the spreadsheet. It's also used to calculate monthly active users and devices.
 
 The following fields are collected:	
 
@@ -4892,7 +4892,7 @@ The following fields are collected:
 
 #### Office.Extensibility.DiscoverTryBuy.Py.PremiumHubExperience
 
-This event is triggered when a launches Premium Hub dialog. This data is used to give insight into the premium hub experience and how often it is successful or dismissed.
+This event is triggered when a launches Premium Hub dialog. This data is used to give insight into the premium hub experience and how often it's successful or dismissed.
 
 The following fields are collected:
 
@@ -6067,7 +6067,7 @@ The following fields are collected:
 
 #### Office.Klondike.MobileAttribution.AppInstall
 
-This event is triggered at the initial install of the app, and records from where the user was referred (if available). The data helps us measure app performance and ensure it is performing as expected.
+This event is triggered at the initial install of the app, and records from where the user was referred (if available). The data helps us measure app performance and ensure it's performing as expected.
 
 The following fields are collected:
 
@@ -6088,7 +6088,7 @@ The following fields are collected:
 
 #### Office.Klondike.MobileAttribution.Login
 
-This event is triggered when the user logs in. The data is used to measure app performance and ensure it is performing as expected.
+This event is triggered when the user logs in. The data is used to measure app performance and ensure it's performing as expected.
 
 The following fields are collected:
 
@@ -6167,11 +6167,11 @@ This event is invoked when the user clicks on the done button and saves images o
 
 The following fields are collected on Android:
 
-- **Data_FileSizeAfterCleanUp** - Size of the file after it is cleaned by app, to understand how much compression was achieved after cleanup.
+- **Data_FileSizeAfterCleanUp** - Size of the file after it's cleaned by app, to understand how much compression was achieved after cleanup.
 
-- **Data_FileSizeAfterSave** - Size of the file after it is saved by user, to understand how much compression was achieved after saving.
+- **Data_FileSizeAfterSave** - Size of the file after it's saved by user, to understand how much compression was achieved after saving.
 
-- **Data_FileSizeBeforeCleanUp** - Size of the file before it is cleaned by app, to understand how much captured size was
+- **Data_FileSizeBeforeCleanUp** - Size of the file before it's cleaned by app, to understand how much captured size was
 
 - **Data_Filter** - The filter applied to the image.
 
@@ -6321,7 +6321,7 @@ The following fields are collected:
 
 #### Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
-Logged when the user closes an expanded Persona Card. It is used to observe critical anomalies in failure rates of closing the Live Persona Card.
+Logged when the user closes an expanded Persona Card. It's used to observe critical anomalies in failure rates of closing the Live Persona Card.
 
 The following fields are collected:
 
@@ -6464,7 +6464,7 @@ The following fields are collected:
 
 #### Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
-Logged when the user opens an expanded Persona Card. It is used to observe critical anomalies in failure rates of launching the Live Persona Card.
+Logged when the user opens an expanded Persona Card. It's used to observe critical anomalies in failure rates of launching the Live Persona Card.
 
 The following fields are collected:
 
@@ -6551,7 +6551,7 @@ The following fields are collected:
 
 #### Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
-Logged when the user opens a Persona Card. It is used to observe critical anomalies in failure rates of launching the Live Persona Card.
+Logged when the user opens a Persona Card. It's used to observe critical anomalies in failure rates of launching the Live Persona Card.
 
 The following fields are collected:
 
@@ -6807,7 +6807,7 @@ The following fields are collected:
 
 - **NOTE_TYPE** - This will capture the type of created page
 
-- **PAGE_CREATE_LOCATION** - This will capture the location of a created page, where it is triggered from
+- **PAGE_CREATE_LOCATION** - This will capture the location of a created page, where it's triggered from
 
 - **TIME_TAKEN_IN_MS** - time taken to create page
 
@@ -7136,7 +7136,7 @@ The following fields are collected:
 
 #### Office.OneNote.Storage.NotebookSyncResult
  
-This event logs notebook sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score.
+This event logs notebook sync result. It's used for figuring out how many unique sync targets when calculating OneNote sync score.
  
 The following fields are collected
 
@@ -8336,7 +8336,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.IOS.RehearseView.RehearsalSummaryPage
 
-Event is triggered when summary page has finished loading. This event helps us capture the performance of the summary page. It tells how much time it takes for the rehearsal summary service page to load on the client. It is required to keep the feature performant.  
+Event is triggered when summary page has finished loading. This event helps us capture the performance of the summary page. It tells how much time it takes for the rehearsal summary service page to load on the client. It's required to keep the feature performant.  
 
 The following fields are collected: 
 
@@ -8600,7 +8600,7 @@ The following fields are collected:
 
 - **Data_NoteLocalId** - Note ID
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -8608,7 +8608,7 @@ The following fields are collected:
 
 - **Data_ScreenshotCapturedOnce** - Is this the first screenshot capture of a user
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -8634,7 +8634,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -8660,13 +8660,13 @@ The following fields are collected:
 
 - **PartA_PrivTags** - Always logged blank 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -8696,7 +8696,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -8769,13 +8769,13 @@ The following fields are collected:
 
 - **Data_NoteLocalId** - Note ID
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -8803,7 +8803,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -8827,13 +8827,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -8863,7 +8863,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -9013,13 +9013,13 @@ The following fields are collected:
 
 - **Data_NoteId** - Note ID
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -9047,7 +9047,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -9073,13 +9073,13 @@ The following fields are collected:
 
 - **PartA_PrivTags** - Always logged blank 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -9109,7 +9109,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -9244,13 +9244,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -9278,7 +9278,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -9302,13 +9302,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -9338,7 +9338,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -9921,7 +9921,7 @@ The following fields are collected:
 
 #### Office.Word.FileNew.CreateNewFile
 
-This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
+This event indicates that a new document is created in Office Word and tracks success or failure of the operation. The event is used to monitor that new document creation is working as expected. It's also used to calculated monthly active users/devices and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -10078,7 +10078,7 @@ The following fields are collected:
 
 #### Office.Word.FileSave.ActCmdGosubSaveAs
 
-This event indicates that a user is saving their changes to a new document. The event monitors whether saving to a new document is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
+This event indicates that a user is saving their changes to a new document. The event monitors whether saving to a new document is working as expected. It's also used to calculated monthly active users/devices and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -10174,7 +10174,7 @@ The following fields are collected:
 
 #### Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
-This event indicates Office Word prompts the user to save changes when it tries to close the document. It allows Microsoft to monitor whether save-at-quit works as expected to avoid document data loss. The event monitors whether save-at-quit is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
+This event indicates Office Word prompts the user to save changes when it tries to close the document. It allows Microsoft to monitor whether save-at-quit works as expected to avoid document data loss. The event monitors whether save-at-quit is working as expected. It's also used to calculated monthly active users/devices and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -10291,7 +10291,7 @@ The following fields are collected:
 
 #### Office.Word.FileSave.SaveAsSaveFile
 
-This event indicates Office Word saves a document into a new document. It allows Microsoft to detect errors in save-as, which is important to avoid document data loss. The event monitors whether save-as is working as expected. It is also used to calculated monthly active users/devices and cloud reliability metrics.
+This event indicates Office Word saves a document into a new document. It allows Microsoft to detect errors in save-as, which is important to avoid document data loss. The event monitors whether save-as is working as expected. It's also used to calculated monthly active users/devices and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -10575,7 +10575,7 @@ The following fields are collected:
 
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
-This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It is also used to calculated monthly active users/devices.
+This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It's also used to calculated monthly active users/devices.
 
 The following fields are collected:
 
@@ -12345,7 +12345,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.Desktop.Bootime
 
-Collecting how PowerPoint is booted. It includes boot PowerPoint in protected view, in assisted reading mode, from Macro, print, new and blank document, document recovery, from automation and if it is click- to-run. It also collects how long it takes PowerPoint to boot. This data is critical to guarantee PowerPoint performs well when booted from different modes. Microsoft uses this data to catch long booting time when opening PowerPoint from different modes.
+Collecting how PowerPoint is booted. It includes boot PowerPoint in protected view, in assisted reading mode, from Macro, print, new and blank document, document recovery, from automation and if it's click- to-run. It also collects how long it takes PowerPoint to boot. This data is critical to guarantee PowerPoint performs well when booted from different modes. Microsoft uses this data to catch long booting time when opening PowerPoint from different modes.
 
 The following fields are collected:
 
@@ -12476,7 +12476,7 @@ The following fields are collected:
 
 - **OfficeProcessSessionStart** sends basic information upon the start of a new Office session. This is used to count the number of unique sessions seen on a given device. This is used as a heartbeat event to ensure that the application is running on a device or not. In addition, it serves as a critical signal for overall application reliability
 
-- **AppSessionGuid** - An identifier of a particular application session starting at process creation time and persisting until process end. It is formatted as a standard 128-bit GUID but constructed of four parts. Those four parts in order are (1) 32-bit Process ID (2) 16-bit Session ID (3) 16 bit Boot ID (4) 64-bit Process creation time in UTC 100 ns
+- **AppSessionGuid** - An identifier of a particular application session starting at process creation time and persisting until process end. It's formatted as a standard 128-bit GUID but constructed of four parts. Those four parts in order are (1) 32-bit Process ID (2) 16-bit Session ID (3) 16 bit Boot ID (4) 64-bit Process creation time in UTC 100 ns
 
 - **processSessionId** - Randomly generated guid to identify the app session
 
@@ -12538,13 +12538,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -12572,7 +12572,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -12598,13 +12598,13 @@ The following fields are collected:
 
 - **PartA_PrivTags** - Always logged blank 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -12634,7 +12634,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -12668,7 +12668,7 @@ The following fields are collected:
 
 #### Office.TelemetryEngine.SessionHandOff
 
-Applicable to Win32 Office applications.  This event helps us understand whether there was a new session created to handle a user-initiated file open event. It is a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
+Applicable to Win32 Office applications.  This event helps us understand whether there was a new session created to handle a user-initiated file open event. It's a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
 
 The following fields are collected:
 
@@ -12686,7 +12686,7 @@ The following fields are collected:
 
 #### Office.Visio.VisioIosAppBootTime
 
-This is triggered every time the Visio iOS application boots. It is essential to understand boot performance of the Visio iOS app. Used to troubleshoot poor performance. 
+This is triggered every time the Visio iOS application boots. It's essential to understand boot performance of the Visio iOS app. Used to troubleshoot poor performance. 
 
 The following fields are collected:
 
@@ -12694,7 +12694,7 @@ The following fields are collected:
 
 #### Office.Visio.VisioIosAppResumeTime 
 
-This event is triggered every time the Visio iOS app resumes focus. It is essential to measure app resume performance and troubleshoot performance issues of Visio iOS app.
+This event is triggered every time the Visio iOS app resumes focus. It's essential to measure app resume performance and troubleshoot performance issues of Visio iOS app.
 
 The following fields are collected:
 
@@ -12702,7 +12702,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenCmdFileMruPriv
 
-This event indicates Office Word opens a document from the Most Recent Used (MRU) list. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether fileopen-from-MRU is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document from the Most Recent Used (MRU) list. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether fileopen-from-MRU is working as expected. It's also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -12827,7 +12827,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenFFileOpenXstzCore
 
-This event indicates Office Word opens a document who is double-clicked by a user. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-openfrom-file-double-click is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document who is double-clicked by a user. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-openfrom-file-double-click is working as expected. It's also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -12952,7 +12952,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenIfrInitArgs
 
-This event indicates Office Word opens a document via COM activation or command line. It also contains critical file open performance data, and is an app start event from user perspective. The event monitors whether file-open-from-command-line is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document via COM activation or command line. It also contains critical file open performance data, and is an app start event from user perspective. The event monitors whether file-open-from-command-line is working as expected. It's also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -13075,7 +13075,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.OpenLoadFile
 
-This event indicates Office Word opens a document via Open dialog. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-open-from-the-open-filedialog is working as expected. It is also used to calculated monthly active users/devices, and cloud reliability metrics.
+This event indicates Office Word opens a document via Open dialog. It also contains critical file open performance data and is an app start event from user perspective. The event monitors whether file-open-from-the-open-filedialog is working as expected. It's also used to calculated monthly active users/devices, and cloud reliability metrics.
 
 The following fields are collected:
 
@@ -13478,7 +13478,7 @@ The following fields are collected:
 
 *[This event was previously named Office.IntelligentServices.PrivacyConsent.PrivacyEvent.]*
 
-This event represents a user or system initiated action that is part of the privacy User experience for Office. It is triggered on the privacy First Run dialogs, Account Privacy dialog, and privacy notifications. The event is used to understand the following: users consenting to Office privacy settings, users changing Office privacy settings, and Office privacy settings getting updated in user sessions.
+This event represents a user or system initiated action that is part of the privacy User experience for Office. It's triggered on the privacy First Run dialogs, Account Privacy dialog, and privacy notifications. The event is used to understand the following: users consenting to Office privacy settings, users changing Office privacy settings, and Office privacy settings getting updated in user sessions.
 
 The following fields are collected:
 
@@ -13980,7 +13980,7 @@ The following fields are collected:
 
 #### Office.Outlook.Desktop.HangReportingScopePerfMetrics
 
-Collects time taken for outlook core scenarios – switchfolder, switchmodule, sendmailoutbox, openitemclassic, sendmailtransport. The data is actively monitored for anomalous performance issues. It is used to detect and diagnose performance issues and improve performance with each update.
+Collects time taken for outlook core scenarios – switchfolder, switchmodule, sendmailoutbox, openitemclassic, sendmailtransport. The data is actively monitored for anomalous performance issues. It's used to detect and diagnose performance issues and improve performance with each update.
 
 The following fields are collected:
 
@@ -13992,7 +13992,7 @@ The following fields are collected:
 
 This rule collects the crash information from the event logs when Outlook crashed in the previous session.
 
-The data is actively monitored for anomalous hangs. It is used to detect and identify hangs in order to fix in future updates.
+The data is actively monitored for anomalous hangs. It's used to detect and identify hangs in order to fix in future updates.
 
 The following fields are collected:
 
@@ -14163,7 +14163,7 @@ The following fields are collected:
 
 #### Office.Programmability.Telemetry.AddInCrash
 
-Event generated when a COM Add-in is loaded. This information is critical to determine whether an add-in caused an Office application crash. It is used to assess global add-in compatibility with Office applications.
+Event generated when a COM Add-in is loaded. This information is critical to determine whether an add-in caused an Office application crash. It's used to assess global add-in compatibility with Office applications.
 
 The following fields are collected:
 
@@ -14425,7 +14425,7 @@ The following fields are collected:
 
 #### contact.action
 
-This event is triggered on different actions on contacts - viewing, updating, and deleting contacts as well as viewing the contacts list. It is used to determine if there are any performance regressions that have to do with contacts.
+This event is triggered on different actions on contacts - viewing, updating, and deleting contacts as well as viewing the contacts list. It's used to determine if there are any performance regressions that have to do with contacts.
 
 The following fields are collected: 
 
@@ -14784,7 +14784,7 @@ The following fields are collected:
 
 #### message.rendering.intercepted
 
-This event enables us to track how often the users intercept the rendering process before it is completed. We use this data to detect performance issues.
+This event enables us to track how often the users intercept the rendering process before it's completed. We use this data to detect performance issues.
 
 The following fields are collected: 
 
@@ -14971,7 +14971,7 @@ This event is triggered when an enterprise user clicks on the Next button on the
 
 The following fields are collected:
 
-- **Data_ADALEndToSignInEnd** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ADALEndToSignInEnd** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfAuthStartToOneAuthAcquireCredStart
@@ -14980,7 +14980,7 @@ This event is triggered when the prompt flow is initiated, and the credential ac
 
 The following fields are collected: 
 
-- **Data_ AuthStartToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ AuthStartToOneAuthAcquireCredStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfAuthStartToOneAuthSignInInteractiveStart
@@ -14989,7 +14989,7 @@ This event is triggered when the authentication flow is initiated in Office Andr
 
 The following fields are collected: 
 
-- **Data_ AuthStartToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ AuthStartToOneAuthSignInInteractiveStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfFixMeToOneAuthAcquireCredStart
@@ -14998,7 +14998,7 @@ This event is triggered when the prompt flow initiates the credential acquisitio
 
 The following fields are collected: 
 
-- **Data_ FixMeToOneAuthAcquireCredStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ FixMeToOneAuthAcquireCredStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfHRDEndToADALStart
@@ -15007,7 +15007,7 @@ This event is triggered when an enterprise user clicks on the next button in an 
 
 The following fields are collected: 
 
-- **Data_HRDEndToADALStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_HRDEndToADALStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfHRDEndToIDCRLStart
@@ -15016,7 +15016,7 @@ This event is triggered when a consumer user clicks on the next button in an ema
 
 The following fields are collected: 
 
-- **Data_HRDEndToIDCRLStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_HRDEndToIDCRLStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfIDCRLEndToSignInEnd
@@ -15025,7 +15025,7 @@ This event is triggered when the consumer user clicks on the Next button on pass
 
 The following fields are collected: 
 
-- **Data_IDCRLEndToSignInEnd** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_IDCRLEndToSignInEnd** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfOneAuthSignInInteractiveEndToSignInEnd
@@ -15034,7 +15034,7 @@ This event is triggered when the sign-in interactive flow ends successfully with
 
 The following fields are collected: 
 
-- **Data_ OneAuthSignInInteractiveEndToSignInEnd** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ OneAuthSignInInteractiveEndToSignInEnd** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfSignInStartToHRDStart
@@ -15043,7 +15043,7 @@ This event is triggered when the user clicks on the sign-in button to the email 
 
 The following fields are collected: 
 
-- **Data_SignInStartToHRDStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_SignInStartToHRDStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfUnifiedSISUEndToADALStart
@@ -15052,7 +15052,7 @@ This event is triggered when an enterprise user clicks on the next button in Fir
 
 The following fields are collected: 
 
-- **Data_UnifiedSISUEndToADALStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_UnifiedSISUEndToADALStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfUnifiedSISUEndToIDCRLStart
@@ -15061,7 +15061,7 @@ This event is triggered when the consumer user clicks on the Next button in the 
 
 The following fields are collected: 
 
-- **Data_UnifiedSISUEndToIDCRLStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_UnifiedSISUEndToIDCRLStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.AuthPerfUnifiedSISUEndToOneAuthSignInInteractiveStart
@@ -15070,7 +15070,7 @@ This event is triggered when the user clicks on the Next button in the First Run
 
 The following fields are collected: 
 
-- **Data_ UnifiedSISUEndToOneAuthSignInInteractiveStart** - it is the difference in time between two SDT tags that mark the start and end points of the flow
+- **Data_ UnifiedSISUEndToOneAuthSignInInteractiveStart** - it's the difference in time between two SDT tags that mark the start and end points of the flow
 
 
 #### Office.Android.CrashMetadata
@@ -15559,7 +15559,7 @@ The following fields are collected:
 
 - **Data_AppBootIntentMimeType** - The mime type of the external file intent.
 
-- **Data_AppBootOldIntentParserResult** - Denotes the parser result of the PDF intent. Values include whether it is matching, not matching etc.
+- **Data_AppBootOldIntentParserResult** - Denotes the parser result of the PDF intent. Values include whether it's matching, not matching etc.
 
 - **Data_AppBootPathType** - Type of app boot when user is opening the file. Whether it was organic launch using app launcher, or inorganic launch by directly doing a file activation.
 
@@ -15594,7 +15594,7 @@ The following fields are collected:
 
 - **Data_Doc_PasswordProtected** - Denotes whether the file is password protected or not.
 
-- **Data_DownloadCacheStateAndStage** - Denotes the cache status and fetch stage of files when file result is returned to consumers from cache from file manager layer. Values like cache hit if it is found in local cache,  cache miss if not found etc.
+- **Data_DownloadCacheStateAndStage** - Denotes the cache status and fetch stage of files when file result is returned to consumers from cache from file manager layer. Values like cache hit if it's found in local cache,  cache miss if not found etc.
 
 - **Data_ExtractionTime** - Time taken to extract the packaged assets like fonts on start of the app.
 
@@ -15606,7 +15606,7 @@ The following fields are collected:
 
 - **Data_FileFetchStartTimeSA** - Time taken to start fetching the file details since activation was started.
 
-- **Data_FileOpenEntryPoint** - Integer denoting Entry point of the file from where it is opened - whether it is an external file open, or opened internally from the app like home screen, search page etc.
+- **Data_FileOpenEntryPoint** - Integer denoting Entry point of the file from where it's opened - whether it's an external file open, or opened internally from the app like home screen, search page etc.
 
 - **Data_FileParsingEndTimeSA** - Time taken to start rendering the file on screen since activation was started.
 
@@ -15847,7 +15847,7 @@ The following fields are collected:
 
 #### Office.Outlook.Desktop.BootPerfMetrics
 
-Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It is also used to diagnose customer escalations and improve boot performance over time.
+Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It's also used to diagnose customer escalations and improve boot performance over time.
 
 The following fields are collected:
 
@@ -15874,7 +15874,7 @@ The following fields are collected:
 
 #### Office.Outlook.Mac.BootPerf
 
-Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It is also used to diagnose customer escalations and improve boot performance over time.
+Collects time taken to boot Outlook. The boot time of Outlook is actively monitored to detect and diagnose regressions. It's also used to diagnose customer escalations and improve boot performance over time.
 
 The following fields are collected:
 
@@ -16069,7 +16069,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.Android.RehearseView.RehearsalSummaryPage 
 
-Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It is required to keep the feature performant. 
+Event triggered when summary page is loaded. This event helps us in capturing the performance of summary page. It tells how much time it takes for rehearsal summary service page to load on client. It's required to keep the feature performant. 
 
 The following fields are collected:
 
@@ -16270,7 +16270,7 @@ The following fields are collected:
 
 #### Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
-Critical signal tracking user interaction with Join Office Insider dialog. It is used for identifying any issues in performing user-initiated changes such as joining or leaving Office Insider program and changing Office Insider level.
+Critical signal tracking user interaction with Join Office Insider dialog. It's used for identifying any issues in performing user-initiated changes such as joining or leaving Office Insider program and changing Office Insider level.
 
 The following fields are collected:
 
@@ -16467,11 +16467,11 @@ The following fields are collected:
 
 - **cumulative_GPU_time** - Tells us the total amount of GPU time used by the app, so we have something to compare, to help us understand the negative battery life impact.
 
-- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it is installed to help us understand the negative performance impact due to the Watch
+- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it's installed to help us understand the negative performance impact due to the Watch
 
-- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it is paired with the device to help us understand the negative performance impact due to the Watch
+- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it's paired with the device to help us understand the negative performance impact due to the Watch
 
-- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it is active to help us understand the negative performance impact due to the Watch
+- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it's active to help us understand the negative performance impact due to the Watch
 
 - **memoAry_used_percentage** - Tells us what percentage of memory was used by the app so we have something to compare, to help us understand the negative performance impact
 
@@ -16584,7 +16584,7 @@ The following fields are collected:
 
 - **UseCache** - Indicates if we force prompted the user to provide the password again.
 
-- **UserType** - Indicates whether it is existing account or new account
+- **UserType** - Indicates whether it's existing account or new account
 
 #### Office.Android.AndroidAppDocsFileOperationEnds
 
@@ -17293,7 +17293,7 @@ The following fields are collected:
 
 - **HResult** - error code for the failure
 
-- **IsGallatin** - Boolean to check if it is a Gallatin account
+- **IsGallatin** - Boolean to check if it's a Gallatin account
 
 - **MessageCode** - enumeration to indicate the point of failure for activation
 
@@ -17323,7 +17323,7 @@ The following fields are collected:
 
 - **UseCache** - Indicates if we force prompted the user to provide the password again.
 
-- **UserType** - Indicates whether it is existing account or new account
+- **UserType** - Indicates whether it's existing account or new account
 
 - **WasIdentitySignedOut** - Indicates if account was in signed out state.
 
@@ -17817,7 +17817,7 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -17847,7 +17847,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -17875,7 +17875,7 @@ The following fields are collected:
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -17903,7 +17903,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -17974,13 +17974,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -18006,7 +18006,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -18034,7 +18034,7 @@ The following fields are collected:
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18064,7 +18064,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -18136,13 +18136,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -18168,7 +18168,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -18196,7 +18196,7 @@ The following fields are collected:
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18226,7 +18226,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -18299,13 +18299,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -18341,13 +18341,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18373,7 +18373,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -18432,7 +18432,7 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -18462,7 +18462,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -18486,13 +18486,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18522,7 +18522,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -18592,7 +18592,7 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -18622,7 +18622,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -18646,13 +18646,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18682,7 +18682,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -18754,13 +18754,13 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical 
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -18796,13 +18796,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18828,7 +18828,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank
 
@@ -18895,7 +18895,7 @@ The following fields are collected:
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -18925,7 +18925,7 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -18953,7 +18953,7 @@ The following fields are collected:
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18983,7 +18983,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -19183,11 +19183,11 @@ The following fields are collected:
 
 - **has_hx** - Tells us the account is using our new sync service to help us detect issues caused by our sync service
 
-- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it is installed to help us understand the negative performance impact due to the Watch
+- **is_watch_app_installed** - Tells us if the user is currently using an Apple Watch and whether it's installed to help us understand the negative performance impact due to the Watch
 
-- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it is paired with the device to help us understand the negative performance impact due to the Watch
+- **is_watch_paired** - Tells us if the user is currently using an Apple Watch and whether it's paired with the device to help us understand the negative performance impact due to the Watch
 
-- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it is active to help us understand the negative performance impact due to the Watch
+- **is_watch_supported_and_active** - Tells us if the user is currently using an Apple Watch and whether it's active to help us understand the negative performance impact due to the Watch
 
 - **rn_initialized** - Tell us if React Native has been initialized at the point the application has run out of memory.
 
