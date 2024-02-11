@@ -2,6 +2,18 @@
 
 
 
+## Week of February 05, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/5/2024 | [Windows 7 end of support and Microsoft 365 Apps](/DeployOffice/endofsupport/windows-7-support) | modified |
+| 2/5/2024 | [Use Configuration Manager to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/configuration-manager) | modified |
+| 2/5/2024 | [Use Microsoft Intune to install Microsoft 365 Insider on Windows devices](/DeployOffice/insider/deploy/intune) | modified |
+| 2/8/2024 | [Troubleshoot shared mailboxes in new Outlook](/DeployOffice/outlook/troubleshoot/troubleshoot-shared-mailboxes-new-outlook) | added |
+| 2/9/2024 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
+
+
 ## Week of January 22, 2024
 
 
@@ -15,21 +27,3 @@
 | 1/26/2024 | [Change the Microsoft 365 Apps update channel for devices in your organization](/DeployOffice/updates/change-update-channels) | modified |
 | 1/26/2024 | [Choose how to deliver updates](/DeployOffice/updates/choose-how-to-deliver-updates) | modified |
 | 1/26/2024 | [Videos about deploying, updating, and managing Microsoft 365 Apps](/DeployOffice/videos) | modified |
-
-
-## Week of January 01, 2024
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 1/4/2024 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/update-validation) | modified |
-| 1/5/2024 | [Overview of update validation in the Microsoft 365 Apps admin center](/DeployOffice/admincenter/update-validation) | modified |
-
-
-## Week of December 25, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 12/29/2023 | [Essential services for Office](/DeployOffice/privacy/essential-services) | modified |
-| 12/29/2023 | [Required diagnostic data for Office](/DeployOffice/privacy/required-diagnostic-data) | modified |
