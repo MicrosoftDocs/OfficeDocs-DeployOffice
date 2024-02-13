@@ -1,18 +1,13 @@
 ---
 title: "Overview of Office LTSC for Mac 2021 (Preview)"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- Ent_Office_Mac
-- OfficeLTSC2021
-ROBOTS: NOINDEX, NOFOLLOW
+ms.collection: Tier1
 recommendations: false
 description: "Technical guidance for IT Pros about the preview version of Office LTSC for Mac 2021"
 ---

@@ -1,17 +1,13 @@
 ---
 title: "Install Office LTSC Preview"
-ms.author: danbrown
-author: DHB-MSFT
+ms.author: nwhite
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
-ms.topic: article
-ms.prod: office-perpetual-itpro
+ms.topic: conceptual
+ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Ent_O365
-ms.custom: 
-- Ent_Office_VL
-- OfficeLTSC2021
-ROBOTS: NOINDEX, NOFOLLOW
+ms.collection: Tier1
 recommendations: false
 description: "Technical guidance for IT Pros about how to install the preview version of Office LTSC"
 ---
@@ -19,14 +15,14 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 # Install Office LTSC Preview
 
 > [!IMPORTANT]
-> - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
+> - Office LTSC 2024 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2024.
 > - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
-> - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
+> - For steps on how to update your preview installation to Office LTSC 2024, see [Update Office LTSC 2024 Preview to Office LTSC 2024](update-from-preview.md).
 
 > [!NOTE]
 > - This article is for a preview program and is subject to change.
 >
-> - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2021, the new volume licensed (perpetual) version of Office.
+> - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2024, the new volume licensed (perpetual) version of Office.
 >
 > - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
 >
@@ -34,11 +30,11 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
-- Office LTSC Professional Plus 2021 Preview
-- Project Professional 2021 Preview
-- Visio Professional 2021 Preview
+- Office LTSC Professional Plus 2024 Preview
+- Project Professional 2024 Preview
+- Visio Professional 2024 Preview
 
-For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2021 (Preview)](overview-mac-preview.md).
+For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2024 (Preview)](overview-mac-preview.md).
 
 ## Installation considerations for Office LTSC Preview
 
@@ -59,7 +55,7 @@ The device on which you’re installing the preview products should have at leas
 
 #### 32-bit and 64-bit versions
 
-The preview versions of Office LTSC, Project 2021, and Visio 2021 are available in both 32-bit and 64-bit versions. We recommend 64-bit, especially on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+The preview versions of Office LTSC, Project 2024, and Visio 2024 are available in both 32-bit and 64-bit versions. We recommend 64-bit, especially on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 All installed products must be either the 32-bit version or the 64-bit version. For example, you can't install a 32-bit version of Visio on the same device with a 64-bit version of Office.
 
@@ -77,21 +73,21 @@ The preview products are installed on the system drive, which is usually the C:\
 
 #### Apps installed
 
-Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint,  Skype for Business, Teams, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
-Here is some additional information about Microsoft Teams with Office LTSC Professional Plus 2021 Preview.
+Here's some additional information about Microsoft Teams with Office LTSC Professional Plus 2024 Preview.
 
-- To complete the installation of the Teams client app after installing Office LTSC Preview, either restart the device or sign out and then sign in again.
+- To complete the installation of the Teams client app after installing Office LTSC Preview, either restart the device or sign out, and then sign in again.
 
-- After Teams is installed, it's automatically updated approximately every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
+- After Teams is installed, it automatically updates every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
 
 - If you don’t want the Teams client app included when you install Office LTSC Preview, you can use either of these methods:
   - The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file if you’re using the Office Deployment Tool to install Office LTSC Preview.
-  - The “Don't install Microsoft Teams with new installations or updates of Office” policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
+  - The "Don't install Microsoft Teams with new installations or updates of Office" policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
 
 #### Internet connectivity
 
-After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required if you're using MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use the preview products.
+After you download the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required if you're using MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use the preview products.
 
 ## Install Office LTSC Preview by using the Office Deployment Tool
 
@@ -99,7 +95,7 @@ The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=
 
 After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe).
 
-You’ll need to create a configuration.xml file that defines the installation settings, such as which preview products and languages to install, which architecture (32-bit or 64-bit) to use, and where to install and update the preview products from.
+You need to create a configuration.xml file that defines the installation settings, such as which preview products and languages to install, which architecture (32-bit or 64-bit) to use, and where to install and update the preview products from.
 
 For more information about using the Office Deployment Tool and the settings available for your configuration.xml file, see the following articles:
 
@@ -119,14 +115,14 @@ The following sample configuration.xml will install the 64-bit version of the th
 
 ```xml
 <Configuration>
-  <Add OfficeClientEdition="64"  Channel="PerpetualVL2021">
-     <Product ID="ProPlus2021Volume" PIDKEY="#####-#####-#####-#####-#####" >
+  <Add OfficeClientEdition="64"  Channel="PerpetualVL2024">
+     <Product ID="ProPlus2024Volume" PIDKEY="#####-#####-#####-#####-#####" >
          <Language ID="en-us" />
     </Product>
-    <Product ID="VisioPro2021Volume" PIDKEY="#####-#####-#####-#####-#####">
+    <Product ID="VisioPro2024Volume" PIDKEY="#####-#####-#####-#####-#####">
         <Language ID="en-us" />
     </Product>
-    <Product ID="ProjectPro2021Volume" PIDKEY="#####-#####-#####-#####-#####" >
+    <Product ID="ProjectPro2024Volume" PIDKEY="#####-#####-#####-#####-#####" >
         <Language ID="en-us" />
     </Product>
   </Add>
@@ -140,11 +136,11 @@ For the PIDKEY attribute, replace #####-#####-#####-#####-##### with the appropr
 
 If you want to download and install the preview products from a shared folder from within your internal network, you can specify that location with the [SourcePath attribute](../office-deployment-tool-configuration-options.md#sourcepath-attribute-part-of-add-element).
 
-If you don’t want certain Office apps to be installed, such as Publisher, you can use the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+If you don’t want certain Office apps to be installed, you can use the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
 ## Activate Office LTSC Preview
 
-There are special product keys to activate the preview versions of Office LTSC, Project 2021, and Visio 2021. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
+There are special product keys to activate the preview versions of Office LTSC, Project 2024, and Visio 2024. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
 
 > [!IMPORTANT]
 > - The special product keys for the preview products expired on January 17, 2022.
@@ -172,9 +168,9 @@ The following table lists the product keys for KMS activation of the preview pro
 
 |Product  |Product key for KMS activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2021 Preview |HFPBN-RYGG8-HQWCW-26CH6-PDPVF |
-|Project Professional 2021 Preview |WDNBY-PCYFY-9WP6G-BXVXM-92HDV |
-|Visio Professional 2021 Preview |2XYX7-NXXBK-9CK7W-K2TKW-JFJ7G  |
+|Office LTSC Professional Plus 2024 Preview |HFPBN-RYGG8-HQWCW-26CH6-PDPVF |
+|Project Professional 2024 Preview |WDNBY-PCYFY-9WP6G-BXVXM-92HDV |
+|Visio Professional 2024 Preview |2XYX7-NXXBK-9CK7W-K2TKW-JFJ7G  |
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file).
 
@@ -188,9 +184,9 @@ The following table lists the product keys for MAK activation of the preview pro
 
 |Product  |Product key for MAK activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2021 Preview |T3N47-WVHW9-VCT2V-QKP29-P393W |
-|Project Professional 2021 Preview | 2NYG6-3BBBX-M97JW-B7DFV-G6RMB |
-|Visio Professional 2021 Preview |M9N3Y-CCB6D-J66FD-KKGF4-8B799|
+|Office LTSC Professional Plus 2024 Preview |T3N47-WVHW9-VCT2V-QKP29-P393W |
+|Project Professional 2024 Preview | 2NYG6-3BBBX-M97JW-B7DFV-G6RMB |
+|Visio Professional 2024 Preview |M9N3Y-CCB6D-J66FD-KKGF4-8B799|
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file). 
 

@@ -1,4 +1,4 @@
-# Retired preview content for Office LTSC 2021
+# Preview content for Office LTSC 2024
 
 ## [Overview](overview-ltsc-preview.md)
 ## [Install](install-ltsc-preview.md)
