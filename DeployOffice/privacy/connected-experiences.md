@@ -3,14 +3,13 @@ title: "Connected experiences in Office"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
+ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 hideEdit: true
-ms.date: 08/24/2023
+ms.date: 02/21/2024
 ---
 
 # Connected experiences in Office
@@ -42,6 +41,7 @@ The following table provides a list of connected experiences that analyze your c
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Map chart <sup>[1]</sup>    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
+| Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 |PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer   | [Create professional slide layouts with Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
@@ -127,7 +127,6 @@ The following table provides a list of those other connected experiences and pro
 | Information Rights Management |[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 |Link unfurling <sup>[7]</sup>|Link unfurling for Loop automatically expands a hyperlink into an interactive experience. For example, when you paste a link to a Word document into a Loop workspace, you're shown a preview card.|
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8)  |
-| Microsoft Purview Data Loss Prevention policy tips |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Office add-ins <sup>[7]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 |Office Scripts|[Office Scripts in Excel](/office/dev/scripts/overview/excel)|
