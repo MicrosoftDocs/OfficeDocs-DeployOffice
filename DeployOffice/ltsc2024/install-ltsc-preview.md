@@ -168,9 +168,9 @@ The following table lists the product keys for KMS activation of the preview pro
 
 |Product  |Product key for KMS activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2024 Preview |HFPBN-RYGG8-HQWCW-26CH6-PDPVF |
-|Project Professional 2024 Preview |WDNBY-PCYFY-9WP6G-BXVXM-92HDV |
-|Visio Professional 2024 Preview |2XYX7-NXXBK-9CK7W-K2TKW-JFJ7G  |
+|Office LTSC Professional Plus 2024 Preview |2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2|
+|Project Professional 2024 Preview |D9GTG-NP7DV-T6JP3-B6B62-JB89R|
+|Visio Professional 2024 Preview |YW66X-NH62M-G6YFP-B7KCT-WXGKQ|
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file).
 
@@ -184,9 +184,9 @@ The following table lists the product keys for MAK activation of the preview pro
 
 |Product  |Product key for MAK activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2024 Preview |T3N47-WVHW9-VCT2V-QKP29-P393W |
-|Project Professional 2024 Preview | 2NYG6-3BBBX-M97JW-B7DFV-G6RMB |
-|Visio Professional 2024 Preview |M9N3Y-CCB6D-J66FD-KKGF4-8B799|
+|Office LTSC Professional Plus 2024 Preview |Y63J7-9RNDJ-GD3BV-BDKBP-HH966|
+|Project Professional 2024 Preview |GQRNR-KHGMM-TCMK6-M2R3H-94W9W|
+|Visio Professional 2024 Preview |3HYNG-BB9J3-MVPP7-2W3D8-CPVG7|
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file). 
 
