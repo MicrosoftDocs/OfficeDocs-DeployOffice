@@ -10,7 +10,7 @@ ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: false
 description: "This article lists videos available for IT Pros deploying Microsoft 365 Apps."
-ms.date: 11/10/2023
+ms.date: 02/22/2024
 ---
 
 # Videos about how to deploy, update, and manage Microsoft 365 Apps
@@ -36,7 +36,7 @@ These videos cover update channels and how to update Microsoft 365 Apps.
 - [Managing Microsoft 365 Apps updates with Configuration Manager](https://youtu.be/dUz1Jo4HGiQ?t=791)
 - [The New Monthly Enterprise Channel](https://youtu.be/0vrIkbWBTho)
 - [Managing updates for the Microsoft 365 Apps - two easy ways!](https://youtu.be/ru11vVA8em4)
-- [Expedite your Microsoft 365 Apps updates](https://youtu.be/g5VfSMlpJn0)
+- [Expedite your Microsoft 365 Apps updates](https://youtu.be/Sdovbkjfj0g)
 - [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://youtu.be/tFmktdQsKgY)
 
 ## Use features in the Microsoft 365 Apps admin center
