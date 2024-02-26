@@ -43,7 +43,7 @@ Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend t
 
 The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot the Microsoft 365 Apps in your tenant. Its main benefits are:
 
-- **Zero-effort setup**: No deployment of extra agents needed, as it is using Office diagnostic data 
+- **Zero-effort setup**: No deployment of extra agents needed, as it's using Office diagnostic data 
 - **Visibility**: you can view how app health is evolving at any time, and correlate it with changes in your infrastructure 
 - **Actionable**: it proactively detects problems or areas of optimization in your Office apps and presents them as advisories
 
@@ -55,7 +55,7 @@ Currently, Microsoft 365 Apps health offers trends for the following performance
 - App Crash Rate: the number of app crashes over number of user sessions, within the selected scope (app, build)
 - App Boot Time: the time it takes from the moment the user opens apps until it's ready for user input, within the selected scope (app, build)
 - App File Open Time (local): the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
-- App File Open Time (SharePoint): the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
+- App File Open Time (SharePoint): the time it takes from the moment the user opens a file from a SharePoint site or Microsoft OneDrive for work and school until the file is ready for user input, within the selected scope (app, build)
 
 > [!TIP]
 > To learn more about how to interpret trends, see [Performance trends](#performance-trends).
@@ -95,7 +95,7 @@ This view shows the health trends for a selected Office app across all the build
 - Validating user escalations about the performance and reliability of an Office client
 
 ### Channel and build metrics
-This view is similar to App metrics but treats Office apps as a suite rather than as individual apps. Channel metrics help you discover the channels, versions, and builds actively being used in your tenant and assess their health. For each build, the following information is available: 
+This view is similar to App metrics but treats Office apps as a suite rather than as individual apps. Channel metrics help you discover channels, versions, and builds actively being used in your tenant and assess their health. For each build, the following information is available: 
 
 - Office version and build number
 - The total number of sessions for apps of that build the last 14 days, which informs you how widely the build is used in your organization
@@ -118,7 +118,7 @@ Common scenarios where this view can help include:
 
 The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization. Add-ins can be downloaded and installed to provide additional capabilities and functionality to apps, such as Word and Excel. There are usually two sources of add-ins:
 
-- Public add-ins, which are created by independent software vendors or by Microsoft, and are generally available to all worldwide users.
+- Public add-ins, which are created by independent software publishers or by Microsoft, and are generally available to all worldwide users.
 - Private add-ins, which are developed by or for an organization for internal use only and are used only by users within that organization.
 
 The **Add-in health** view only shows information about public add-ins, including the following information:
@@ -200,7 +200,7 @@ Here are examples of other common scenarios where performance patterns change an
 
 - Seasonality: Change in usage around holidays or different seasons for the company or industry
 
-- OS updates: Updates, like OS updates, that result in machines rebooting commonly increases performance trends during those times and it can last for several days after as the updates move across the organization
+- OS updates: Updates, like OS updates that result in machines rebooting commonly increases performance trends during those times and it can last for several days after as the updates move across the organization
 
 - Machine Reboots: Like above, anything that causes many machines to reboot will affect performance trends, in particular for boot. This could be deploying configurations that require a reboot, building repairs requiring a power outage, weather power outages, or other events.
 
@@ -217,7 +217,7 @@ For build rollouts that happen less frequently, the build-to-build comparisons c
 
 Investigation workflow for unexpected shifts in Office performance:
 
-1. **Verify Usage**: When shifts in a metric occur, be sure to check the event volumes, which can be done by hovering over a trend line in the graph. Performance metrics can shift significantly depending on the audience of a build and the event volume – a good first step here is to ensure the signals have similar usage.
+1. **Verify Usage**: When shifts in a metric occur, be sure to check the event volumes, which can be done by hovering over a trend line in the graph. Performance metrics can shift significantly depending on the audience of a build and the event volume – a good first step is to ensure the signals have similar usage.
 2. **Device changes**: Device changes can often cause temporary or permanent changes in the performance of Office. Therefore, the next step is to investigate if there have been changes to add-ins, anti-virus software, updated policies, updated registry keys, OS updates, VM configuration updates, updated Office build, or hardware changes. Verify if those updates happened at the same time as the shifts in metrics.
 3. **Confirm findings or continue analysis**:  Using a device that is exhibiting slower performance:
   - If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times. Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
