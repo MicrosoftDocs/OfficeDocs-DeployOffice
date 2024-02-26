@@ -15,7 +15,7 @@ ms.date: 02/26/2024
 
 # Microsoft 365 Apps health
 
-The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Microsoft 365 Apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues.
+The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your apps healthy. It provides visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues.
 
 > [!TIP]
 > If you prefer watching over reading, check out the our [introductional video on Apps Health](https://youtu.be/g9tiCFNDOEw).
@@ -23,7 +23,7 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 
 ## Requirements for using Microsoft 365 Apps health
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 1908 or later
-- A version of Windows 11 or Windows 10 that is supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
+- A version of Windows 11 or Windows 10 supported by Microsoft 365 Apps
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
 
 > [!IMPORTANT]
@@ -37,17 +37,17 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 
 ## How to get to the health dashboard
 
-Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend the **Health** node and select **Apps health**. For information on using the Microsoft 365 Apps admin center, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend the **Health** node, and select **Apps health**. For information on using the Microsoft 365 Apps admin center, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 
 ## Overview
 
 The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot the Microsoft 365 Apps in your tenant. Its main benefits are:
 
-- **Zero-effort setup**: it's powered by Office diagnostic data, so there's no need for additional agents or processes running on your premises
+- **Zero-effort setup**: No deployment of extra agents needed, as it is using Office diagnostic data 
 - **Visibility**: you can view how app health is evolving at any time, and correlate it with changes in your infrastructure 
 - **Actionable**: it proactively detects problems or areas of optimization in your Office apps and presents them as advisories
 
-The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher on Windows and offers health trends and advisories, which are updated every 24 hours. 
+The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher on Windows. Health trends and advisories are updated every 24 hours. 
 
 ## Metrics, Trends, and Advisories
 
@@ -60,7 +60,7 @@ Currently, Microsoft 365 Apps health offers trends for the following performance
 > [!TIP]
 > To learn more about how to interpret trends, see [Performance trends](#performance-trends).
 
-When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. Advisories help you isolate fault domains and are defined in the context of a metric of a specific app, build, and channel (for example, crash rate of Word in build 16.0.13628.20274 in the Current Channel) and inform about a deterioration or improvement and are categorized as significant or minor. 
+When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. An Advisories help you isolate fault domains and are defined in the context of a metric of a specific app, build, and channel. They inform about a deterioration or improvement and are categorized as significant or minor. 
 
 Advisories are detected by comparing the metric's value against that of a baseline, which can be:
 
@@ -72,10 +72,10 @@ Advisories are detected by comparing the metric's value against that of a baseli
 
 ## Using Microsoft 365 Apps health
 
-When you first sign in to the Microsoft 365 Apps health dashboard, you'll see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
+When you first sign in to the Microsoft 365 Apps health dashboard, you see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
 
-- App health overview: highlights the builds for which significant health deteriorations have been detected in your tenant. It includes the number of devices observed to run the impacted builds in the last 14 days. This is useful to assess impact and prioritize troubleshooting of impacted builds 
-- List of recent advisories: shows the latest advisories (generated in the last 24 hours) on significant deteriorations or improvements in the health trends of your Office apps. Each row includes the description of the deterioration as well as the impact app, build, and update channel. You can select any advisory to see additional details or navigate to Advisory History to see past (older than 24 hours) advisories
+- App health overview: highlights the builds for which significant health deteriorations have been detected in your tenant. It includes the number of devices observed to run the impacted builds in the last 14 days. This is useful to assess impact and prioritize troubleshooting of impacted builds.
+- List of recent advisories: shows the latest advisories (generated in the last 24 hours) on significant deteriorations or improvements in the health trends of your Office apps. Each row includes the description of the deterioration as well as the impact app, build, and update channel. You can select any advisory to see additional details or navigate to Advisory History to see past (older than 24 hours) advisories.
 - Monitoring Coverage: shows the percentage of users in your organization who are sending diagnostic data to the dashboard over the last 14 days. The higher the percentage, the more representative the insights on the dashboard will be. You can expand this insight to see this percentage for each of the update channels deployed in your organization as well as the number of devices monitored by the dashboard. Note that the number of devices reported might differ from what your device management solution shows as device population might have changed in your organization during the 14-day period or due to devices not reporting diagnostic data or not being actively used. The number of devices is intended to provide an idea of magnitude rather than a precise device management count. 
 
 ### App metrics
@@ -85,7 +85,7 @@ This view helps you assess the health for each of the Office apps separately. Th
 - The number of app sessions in the last 14 days, which informs how widely the app is used in your organization
 - Number of advisories on significant deteriorations in the last 24 hours
 
-You can select any app to get additional details
+You can select any app to get additional details.
 
 ### App details
 This view shows the health trends for a selected Office app across all the builds and update channels deployed in your tenant. You can select an app, metric, and build and the daily metric values will be plotted on a graph. By default, the most active and latest available builds are presented. You can also view other builds. Typical use cases for this view include:
@@ -123,14 +123,14 @@ The **Add-in health** view provides information about the reliability and perfor
 
 The **Add-in health** view only shows information about public add-ins, including the following information:
 
-- Name of the add-in
-- Publisher of the add-in
-- Versions of the add-in found in your organization
-- Which Office apps are using the add-in
-- The number of devices on which each version of the add-in is installed
-- Whether the versions of the add-in are 32-bit or 64-bit
-- Crash rate of the add-in (as a percentage) <sup>[1]</sup>
-- Load time of the add-in (in seconds)
+- Name
+- Publisher
+- Installed version or versions
+- Apps using the add-in
+- Number of devices with installed add-in
+- 32-bit or 64-bit
+- Crash rate (as a percentage) <sup>[1]</sup>
+- Load time (in seconds)
 
 <sup>[1]</sup> *Includes both crashes and failed loads.*
 
@@ -184,9 +184,9 @@ The Microsoft 365 Apps health dashboard uses the diagnostic data that your Offic
 
 ## Performance trends
 
-Apps Health shows performance trends for the selected scope (app, build).  For builds rolled out at a monthly cadence, this enables you to see how a build’s performance changes over the build’s lifecycle.  For instance, when a build is first released it has lower usage so the performance metrics are often higher, then as the build usage increases and stabilizes the performance metrics go down and stabilize. Then when a new build is rolled out it goes through the same pattern while the old build has reduced usage and performance metrics show a correlated change.  The specific patterns are often unique to your organization and the way that build rollouts happen within your tenant. Hover over a trend to see the current usage (Event Count) to understand when the builds have similar usage and therefore it makes sense to compare them.  Often the closer the usage is between builds the more comparable the performance trends are.
+Apps Health shows performance trends for the selected scope (app, build). For builds rolled out at a monthly cadence, this enables you to see how a build’s performance changes over the build’s lifecycle. For instance, when a build is first released it has lower usage so the performance metrics are often higher, then as the build usage increases and stabilizes the performance metrics go down and stabilize. Then when a new build is rolled out it goes through the same pattern while the old build has reduced usage and performance metrics show a correlated change. The specific patterns are often unique to your organization and the way that build rollouts happen within your tenant. Hover over a trend to see the current usage (Event Count) to understand when the builds have similar usage and therefore it makes sense to compare them. Often the closer the usage is between builds the more comparable the performance trends are.
 
-Beyond build-to-build comparisons Performance trends can be used to assess the health of Office applications at any time and as changes are being made within your tenant.  Here are some common use cases that can cause performance shifts and are items to check if an unexpected shift in performance occurs:
+Beyond build-to-build comparisons Performance trends can be used to assess the health of Office applications at any time and as changes are being made within your tenant. Here are some common use cases that can cause performance shifts and are items to check if an unexpected shift in performance occurs:
 
 - Add-ins: If there are changes in add-ins for Office including new add-ins, updating existing add-ins, or removing add-ins.
 
@@ -194,7 +194,7 @@ Beyond build-to-build comparisons Performance trends can be used to assess the h
 
 - Policy Changes: Updating policies that affect file handling or Office applications specifically can cause performance shifts.
 
-- Changes in deployment: Adding or removing devices can cause a change in performance patterns that set a new “normal” or expected pattern.  Changing the order of rollout to machines can cause the on-boarding and aging out of builds to have different performance patterns.
+- Changes in deployment: Adding or removing devices can cause a change in performance patterns that set a new “normal” or expected pattern. Changing the order of rollout to machines can cause the on-boarding and aging out of builds to have different performance patterns.
 
 Here are examples of other common scenarios where performance patterns change and aren’t necessarily cause for alarm:
 
@@ -202,25 +202,25 @@ Here are examples of other common scenarios where performance patterns change an
 
 - OS updates: Updates, like OS updates, that result in machines rebooting commonly increases performance trends during those times and it can last for several days after as the updates move across the organization
 
-- Machine Reboots: Like above, anything that causes many machines to reboot will affect performance trends, in particular for boot.  This could be deploying configurations that require a reboot, building repairs requiring a power outage, weather power outages, or other events.
+- Machine Reboots: Like above, anything that causes many machines to reboot will affect performance trends, in particular for boot. This could be deploying configurations that require a reboot, building repairs requiring a power outage, weather power outages, or other events.
 
 - Device Hardware Changes: When new hardware is rolled out or there's a shift in the hardware configuration of devices that can cause performance trend movement as performance improves or degrades for the new devices
 
-- Usage Shifts: For example, if users are encouraged or defaults are changed that lead to different usage patterns.  For instance, making the default save location for Office files SharePoint, instead of local.  This will result in more File Opens from SharePoint and fewer from the local drive, which will likely have correlated performance shifts.
+- Usage Shifts: For example, if users are encouraged or defaults are changed that lead to different usage patterns. For instance, making the default save location for Office files SharePoint, instead of local. This will result in more File Opens from SharePoint and fewer from the local drive, which will likely have correlated performance shifts.
 
 
-For build rollouts that happen less frequently, the build-to-build comparisons can be more challenging since you can’t see the full lifecycle of the build that is aging out.  In those scenarios here are a few suggestions that can help:
+For build rollouts that happen less frequently, the build-to-build comparisons can be more challenging since you can’t see the full lifecycle of the build that is aging out. In those scenarios here are a few suggestions that can help:
 
-- Event Counts: Hovering over a point in the trends will bring up additional data including the Event Count.  Check the Event Counts for the current build before the new rollout started and once the new build has similar counts then the performance trends will be a better comparison for assessing the current versus new build.
+- Event Counts: Hovering over a point in the trends will bring up additional data including the Event Count. Check the Event Counts for the current build before the new rollout started and once the new build has similar counts then the performance trends will be a better comparison for assessing the current versus new build.
 
-- New Build Performance Characteristics:   Even if the trend isn’t shown, keep in mind that as a new build rolls out and usage increases the performance pattern often changes.  In many cases, the performance metrics in new builds will start higher and will come down as their usage increases.
+- New Build Performance Characteristics: Even if the trend isn’t shown, keep in mind that as a new build rolls out and usage increases the performance pattern often changes. In many cases, the performance metrics in new builds will start higher and will come down as their usage increases.
 
 Investigation workflow for unexpected shifts in Office performance:
 
 1. **Verify Usage**: When shifts in a metric occur, be sure to check the event volumes, which can be done by hovering over a trend line in the graph. Performance metrics can shift significantly depending on the audience of a build and the event volume – a good first step here is to ensure the signals have similar usage.
-2. **Device changes**: Device changes can often cause temporary or permanent changes in the performance of Office.  Therefore, the next step is to investigate if there have been changes to add-ins, anti-virus software, updated policies, updated registry keys, OS updates, VM configuration updates, updated Office build, or hardware changes.  Verify if those updates happened at the same time as the shifts in metrics.
+2. **Device changes**: Device changes can often cause temporary or permanent changes in the performance of Office. Therefore, the next step is to investigate if there have been changes to add-ins, anti-virus software, updated policies, updated registry keys, OS updates, VM configuration updates, updated Office build, or hardware changes. Verify if those updates happened at the same time as the shifts in metrics.
 3. **Confirm findings or continue analysis**:  Using a device that is exhibiting slower performance:
-  - If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times.  Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
+  - If the shift correlates with a change in the device environment then test the scenario on the device with and without the change to confirm that is the source of the performance shift. For instance, if a new anti-virus software was rolled out get a device with the anti-virus software and measure the performance of the scenario several times. Then remove the anti-virus software and measure the performance several times. Compare the results to verify that the removal of the anti-virus software resolves the shift in performance.
   - If no correlating factor was found at the broad level, then measure the current performance on the device and begin removing common factors testing performance after each change to identify the source. For instance, remove add-ins one by one and see if performance improves when they're removed. If it isn’t add-in related, then remove anti-virus and continue testing performance at each step to find the source.
   - Test on other devices to build confidence that is the source of the issue.
 4. Take appropriate action to fix or mitigate the performance issue and monitor performance trends as the change is rolled out.  
