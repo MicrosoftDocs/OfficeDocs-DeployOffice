@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
-ms.date: 03/01/2023
+ms.date: 02/26/2024
 ---
 
 # Microsoft 365 Apps health
 
-The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Office apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues.
+The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com) helps you keep your Microsoft 365 Apps up to date by providing visibility into how they're performing on your client devices and offering guidance to help optimize and troubleshoot arising issues.
 
 > [!TIP]
 > If you prefer watching over reading, check out the our [introductional video on Apps Health](https://youtu.be/g9tiCFNDOEw).
@@ -37,11 +37,11 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 
 ## How to get to the health dashboard
 
-Go to the [Microsoft 365 Apps admin center](https://config.office.com) and select **Apps health** in the left-hand navigation. For information on using the admin center and enabling preview features, see [Overview of the Microsoft 365 Apps admin center](overview.md).
+Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend the **Health** node and select **Apps health**. For information on using the Microsoft 365 Apps admin center, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 
 ## Overview
 
-The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot Office apps in your tenant. Its main benefits are:
+The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot the Microsoft 365 Apps in your tenant. Its main benefits are:
 
 - **Zero-effort setup**: it's powered by Office diagnostic data, so there's no need for additional agents or processes running on your premises
 - **Visibility**: you can view how app health is evolving at any time, and correlate it with changes in your infrastructure 
@@ -53,14 +53,14 @@ The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher 
 
 Currently, Microsoft 365 Apps health offers trends for the following performance and reliability metrics:
 - App Crash Rate: the number of app crashes over number of user sessions, within the selected scope (app, build)
-- App Boot Time: the time it takes from the moment the user opens the Office client until it's ready for user input, within the selected scope (app, build)
+- App Boot Time: the time it takes from the moment the user opens apps until it's ready for user input, within the selected scope (app, build)
 - App File Open Time (local): the time it takes from the moment the user opens a file from a local drive until the file is ready for user input, within the selected scope (app, build)
 - App File Open Time (SharePoint): the time it takes from the moment the user opens a file from a SharePoint site or OneDrive for Business until the file is ready for user input, within the selected scope (app, build)
 
 > [!TIP]
 > To learn more about how to interpret trends, see [Performance trends](#performance-trends).
 
-When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. Advisories help you isolate fault domains and are defined in the context of a metric of a specific Office app, build, and channel (for example, crash rate of Word in build 16.0.13628.20274 in the Current update channel) and inform about a deterioration or improvement and are categorized as significant or minor. 
+When a noteworthy change in a trend is detected, the dashboard presents it as an advisory. Advisories help you isolate fault domains and are defined in the context of a metric of a specific app, build, and channel (for example, crash rate of Word in build 16.0.13628.20274 in the Current Channel) and inform about a deterioration or improvement and are categorized as significant or minor. 
 
 Advisories are detected by comparing the metric's value against that of a baseline, which can be:
 
@@ -75,7 +75,6 @@ Advisories are detected by comparing the metric's value against that of a baseli
 When you first sign in to the Microsoft 365 Apps health dashboard, you'll see the Overview page. This page contains high-level insights about the Office clients health and activity in your tenant.
 
 - App health overview: highlights the builds for which significant health deteriorations have been detected in your tenant. It includes the number of devices observed to run the impacted builds in the last 14 days. This is useful to assess impact and prioritize troubleshooting of impacted builds 
-- App currency overview: shows the percentage of devices running builds from the recommended Monthly and Monthly Enterprise update channels. It also highlights the percentage of devices running builds that are out of support and should be updated as soon as possible to a supported build
 - List of recent advisories: shows the latest advisories (generated in the last 24 hours) on significant deteriorations or improvements in the health trends of your Office apps. Each row includes the description of the deterioration as well as the impact app, build, and update channel. You can select any advisory to see additional details or navigate to Advisory History to see past (older than 24 hours) advisories
 - Monitoring Coverage: shows the percentage of users in your organization who are sending diagnostic data to the dashboard over the last 14 days. The higher the percentage, the more representative the insights on the dashboard will be. You can expand this insight to see this percentage for each of the update channels deployed in your organization as well as the number of devices monitored by the dashboard. Note that the number of devices reported might differ from what your device management solution shows as device population might have changed in your organization during the 14-day period or due to devices not reporting diagnostic data or not being actively used. The number of devices is intended to provide an idea of magnitude rather than a precise device management count. 
 
@@ -117,14 +116,12 @@ Common scenarios where this view can help include:
 
 ### Add-in health
 
-The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization.
+The **Add-in health** view provides information about the reliability and performance of COM and VSTO add-ins used by Office apps in your organization. Add-ins can be downloaded and installed to provide additional capabilities and functionality to apps, such as Word and Excel. There are usually two sources of add-ins:
 
-Add-ins can be downloaded and installed to provide additional capabilities and functionality to Office apps, such as Word and Excel. There are usually two sources of add-ins:
+- Public add-ins, which are created by independent software vendors or by Microsoft, and are generally available to all worldwide users.
+- Private add-ins, which are developed by or for an organization for internal use only and are used only by users within that organization.
 
-- Public add-ins, which are created by independent software vendors and by Microsoft, and are generally available to all worldwide users of Office.
-- Private add-ins, which are developed by or for an organization for internal use only and are used only by Office users within that organization.
-
-The **Add-in health** view shows information about both public and private add-ins, including the following information:
+The **Add-in health** view only shows information about public add-ins, including the following information:
 
 - Name of the add-in
 - Publisher of the add-in
@@ -139,13 +136,11 @@ The **Add-in health** view shows information about both public and private add-i
 
 Information about add-ins, like all information in Microsoft 365 Apps health, relies on the inventory feature being enabled in the Microsoft 365 Apps admin center. Data about crash rates, load times, and load failures is derived from events that are collected and sent to Microsoft when the add-in is loaded and used by the Office app.
 
-For information about public and private add-ins to appear in the **Add-in health** view, you must do the following:
+For information about public add-ins to appear in the **Add-in health** view, you must do the following:
 
 - Use the [inventory feature](inventory.md) in the Microsoft 365 Apps admin center
 - Send at least [required diagnostic data](../privacy/required-diagnostic-data.md) to Microsoft
 - Use at least Version 2112 of Microsoft 365 Apps
-
-Information about private add-ins is sent to the same geographical location as the customer’s Exchange mailbox to be processed by Microsoft. For private add-ins, you can submit a Data Subject Request (DSR) under the General Data Protection Regulation (GDPR) by contacting the [Privacy Response Center](https://www.microsoft.com/concern/privacy) at Microsoft. Public add-in data is sent to the United States to be processed by Microsoft.
 
 ### All advisories
 This view shows advisories across all apps and builds used in your tenant in the past 30 days (including the last 24 hours). This view is useful to investigate if a recent advisory or health trend change has occurred in the past.
