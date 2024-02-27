@@ -9,17 +9,20 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance to Office admins on how to adopt servicing profiles for Microsoft 365 Apps"
-ms.date: 03/22/2023
+ms.date: 02/27/2024
 ---
 
 # Adopting servicing profiles for Microsoft 365 Apps
 
 [Servicing profiles](../admincenter/servicing-profile.md) let you use automation to deliver monthly updates to Microsoft 365 Apps for enterprise directly from the Office Content Delivery Network (CDN). Through extensive one-on-one engagement with global enterprises, we built this article to walk you through best practices of enabling servicing profiles within your environment and discuss the benefits for you and your organization.
 
+> [!NOTE]
+> Servicing profiles is deprecated and replaced by [cloud update](../admincenter/cloud-update.md). If cloud update is not available in your [Microsoft 365 Apps admin center](https://config.office.com) yet, please sign into the center and select the **Give feedback** button in the top right area. Select any of the options, enter a comment that you would like to get switched to cloud update and your Email. Select **Submit**. We will reach out to you soon.
+
 This article covers:
 - The benefits of using a servicing profile
 - Step-by-step guidance on two ways to adopt servicing profiles
-- Deep dive on how the device selection criteria works
+- Deep dive on how the device selection criteria work
 - What happens to the devices once the servicing profile is enabled
 
 > [!NOTE]
