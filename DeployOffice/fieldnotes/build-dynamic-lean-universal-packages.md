@@ -127,7 +127,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
 </Configuration>
 ```
 
-Again, this configuraiton file would only work for one specific scenario (update channel is set to Monthly Enterprise Channel, 64-bit is installed). Other scenarios would need to be covered by additional files and packages, which drive up the complexity and cost of ownership. Fix this by just going the dynamic, lean, and universal way:
+Again, this configuration file would only work for one specific scenario (update channel is set to Monthly Enterprise Channel, 64-bit is installed). Other scenarios would need to be covered by additional files and packages, which drive up the complexity and cost of ownership. Fix this by just going the dynamic, lean, and universal way:
 
 ```xml
 <Configuration>
