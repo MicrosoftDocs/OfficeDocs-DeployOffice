@@ -22,7 +22,7 @@ ms.date: 02/27/2024
 This article covers:
 - The benefits of using a servicing profile
 - Step-by-step guidance on two ways to adopt servicing profiles
-- Deep dive on how the device selection criteria works
+- Deep dive on how the device selection criteria work
 - What happens to the devices once the servicing profile is enabled
 
 > [!NOTE]
@@ -102,13 +102,13 @@ After a few days, the bulk of targeted devices should have updated to the latest
 
 Here are some best practices when it comes to managing updates with a servicing profile:
 
-- Like other cloud services or Microsoft Configuration Manager, servicing profile is an asynchronous service. When you create or change the configuration, the service will process your input in the background. The user interface (especially the **Devices** tab) will not reflect your changes immediately. 
+- Like other cloud services or Microsoft Configuration Manager, servicing profile is an asynchronous service. When you create or change the configuration, the service will process your input in the background. The user interface (especially the **Devices** tab) won't not reflect your changes immediately. 
 - After changing the configuration (selection criteria, update deadline, customer rollout waves, etc.), allow the service some time to process your changes. During this processing, you might see the number of devices in profiles drop as the service recalculates the scope and state of devices. The devices will then be added back to the scope in batches of several hundred or thousand devices. Depending on the total number of devices in your environment, this process might take several hours to complete. 
 - This also applies when a new update is released. Initially, the servicing profile will reset to zero devices, and devices will be added back to the servicing profile over time. 
 - Allowing each change to finish calculation first before introducing the next change is recommended. Be patient during this process.
-- The same applies when pausing or resuming a servicing profile. Allow the service to process the change, and don't pause/resume the service in quick succession. Note that pausing a servicing profile will not stop already initiated update installations on devices, but will stop the service from sending out new update commands to devices. 
+- The same applies when pausing or resuming a servicing profile. Allow the service to process the change, and don't pause/resume the service in quick succession. Note that pausing a servicing profile won't stop already initiated update installations on devices, but will stop the service from sending out new update commands to devices. 
 - When triggering a rollback, the same applies. After configuring a rollback action, the service needs time to process the change and waits for the device to check in to send the rollback commands. 
-- When using Microsoft Entra groups for including or excluding devices or creating custom rollout waves, limiting the number of members to 20,000 per group is recommended. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Microsoft Entra group with, for example, 40,000 members, it's recommend to use two groups with 20,000 members each. 
+- When using Microsoft Entra groups for including or excluding devices or creating custom rollout waves, limiting the number of members to 20,000 per group is recommended. Of course, you can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Microsoft Entra group with, for example, 40,000 members, it's recommended using two groups with 20,000 members each. 
 
 ## How do the selectors work
 
@@ -128,6 +128,6 @@ After the servicing profile has been created, the service will pre-calculate the
 
 Once the device has received the command to perform an update, it will use the Office CDN, [Delivery Optimization](../delivery-optimization.md), and potentially available Connected Caches or peers to download and apply the update. If the update can’t be applied due to open Microsoft 365 apps, it will retry silently to do so in the background, during device reboot or when the device is locked and the operating system went into idle. If the update couldn’t be applied until the specified deadline is reached, the user will receive multiple prompts to close the applications and apply the updates. After roughly 48 hours, the user will get a final notification with a countdown. When this reaches zero, open documents will be saved, the applications closed and updated, then reopened and documents reloaded. But in most cases pending updates can be silently applied in the background without having to prompt the user.
 
-The portal will receive status information about these steps and the admin will see devices transitioning from **Not Started** to **In Progress** and to **Updated** finally. If an error occurs on the device, it will be flagged accordingly in the portal and a reapply initiated. In most cases failures are related to the download of the update; for example, when the device was shut down while the download was active.
+The portal will receive status information about these steps and the admin will see devices transitioning from **Not Started** to **In Progress** and to **Updated** finally. If an error occurs on the device, it will be flagged accordingly in the portal and the udpate applied again. In most cases failures are related to the download of the update; for example, when the device was shut down while the download was active.
 
 Once devices are updated, they'll remain in this state until Microsoft releases the next update to the Monthly Enterprise Channel. The service will then automatically recalculate the required actions per device and start handing those out to the devices. By default, this happens in waves across four days to reduce impact on the network. There's no manual action required to initiate the monthly update cycle.
