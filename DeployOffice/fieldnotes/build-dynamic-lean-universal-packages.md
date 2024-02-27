@@ -17,16 +17,16 @@ ms.date: 03/01/2023
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
    
-As an admin, you might plan to deploy Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to devices. Users might need additional components, e.g. language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) as well as the best way to [right-size your deployment](right-sizing-initial-deployment.md).
+As an admin, you might plan to deploy Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to devices. Users might need additional components, for example, language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) and the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 
 This article shows you how can greatly reduce long-term maintenance costs and improve user satisfaction by implementing 2nd installs with dynamic, lean, and universal packages for Microsoft 365 Apps.
  
 ## The challenge
 Historically, the task of supporting 2nd install scenarios was solved by creating a dedicated installation package for each. Usually, an admin would combine the necessary source files (of ~3 gigabytes) with a copy of the Office Deployment Tool (ODT) and a configuration file tailored for the scenario.
 
-But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, e.g. the majority is on Monthly Enterprise Channel and a small number of special-purpose devices is on Semi-Annual Enterprise Channel. Maybe you're currently transitioning from 32-bit to 64-bit, and you'll have to support both architectures for some time.
+But, especially in larger organizations, you often don't have a single configuration set of Microsoft 365 Apps. You might have a mix of update channels, for example, the majority is on Monthly Enterprise Channel and a few special-purpose devices is on Semi-Annual Enterprise Channel. Maybe you're currently transitioning from 32-bit to 64-bit, and you have to support both architectures for some time.
 
-If you build a dedicated, e.g. Language Pack deployment for each channel and architecture in above example, you would end up with four packages: Monthly Enterprise Channel x86, Monthly Enterprise Channel x64, Semi-Annual Enterprise Channel x86, Semi-Annual Enterprise Channel x64. This is not a sustainable approach and has the following disadvantages:
+If you build a dedicated, for example, Language Pack deployment for each channel and architecture in the previous example, you would end up with four packages: Monthly Enterprise Channel x86, Monthly Enterprise Channel x64, Semi-Annual Enterprise Channel x86, Semi-Annual Enterprise Channel x64. This isn't a sustainable approach and has the following disadvantages:
 
 - High maintenance costs due
     - High number of packages to create and maintain.
@@ -45,11 +45,11 @@ You can resolve these issues by implementing self-adjusting, small, and universa
 
 Build **dynamic** packages where you don’t hard-code anything. Use features of the [Office Deployment Tool (ODT)](https://go.microsoft.com/fwlink/p/?LinkID=626065) to enable the packages to self-adjust to the requirements:
 - Use [Version=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-Blog/New-feature-Make-changes-to-Office-deployments-without-changing/ba-p/816482) to prevent unexpected updates and stay in control of the version installed on a client. No hard coding of a build number, which gets outdated quickly.
-- Use [Language=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Dynamically-match-already-existing-languages-when-installing/m-p/716927) to instruct e.g. Visio or Project to install with the same set of languages as Office is already using. No need to list them or build a script that injects the required languages.
+- Use [Language=MatchInstalled](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Dynamically-match-already-existing-languages-when-installing/m-p/716927) to instruct, for example,  Visio or Project to install with the same set of languages as Office is already using. No need to list them or build a script that injects the required languages.
  
 Build **lean** packages by removing the source files from the packages. This has multiple benefits:
 
-- Package size is much smaller, from 3 GB down to less than 10 megabytes for the ODT and its configuration file.
+- Package size is smaller, from 3 GB down to less than 10 megabytes for the ODT and its configuration file.
 - Instead of pushing a 3-GB install package to clients, you let clients pull what they need on demand from Office Content Delivery Network (CDN), which saves bandwidth.
    - When you add Project to an existing Microsoft 365 Apps installation, you need to download less than 50 megabytes, as Office shared components are already installed.
    - Visio installs are typically 100-200 megabytes, based on the number of languages, as the templates/stencils are a substantial part of the download.
@@ -57,7 +57,7 @@ Build **lean** packages by removing the source files from the packages. This has
 - A second install scenario is often less frequent, which lowers the internet traffic burden, ultimately reducing the impact.
 - You don’t have to update the source files every time Microsoft releases new features or security and quality fixes.
  
-Build **universal** packages by not hard coding things like the architecture or update channel. ODT will dynamically match the existing install, so your packages work across all update channels and architectures. Instead of having four packages to install Visio, for example, you'll have a single, universal package that will work across all permutations of update channels and architectures.
+Build **universal** packages by not hard coding things like the architecture or update channel. ODT will dynamically match the existing install, so your packages work across all update channels and architectures. Instead of having four packages to install Visio, for example, you have a single, universal package that works across all permutations of update channels and architectures.
 - Leaving out [OfficeClientEdition](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Insights-into-OfficeClientEdition-and-how-to-make-it-work-for/m-p/767577) makes your package universal for mixed x86/x64 environments.
 - Leaving out [Channel](https://techcommunity.microsoft.com/t5/Office-365-ProPlus/Understanding-the-Channel-attribute-of-the-Office-Deployment/m-p/813604) makes your package universal across update channels.
  
@@ -105,7 +105,7 @@ So what have we changed, and what are the benefits?
 - We added *Version="MatchInstalled"*, which ensures that ODT will install the same version that's already installed.
    - Benefit: You're in control of versions deployed, with no unexpected updates.
 - We added *Language ID="MatchInstalled"*  and *TargetProduct* to match the currently installed languages, replacing a hard-coded list of languages to install.
-   - Benefit I: The user will have the same languages for Project as were already installed for Office.
+   - Benefit I: The user has the same languages for Project as were already installed for Office.
    - Benefit II: No need to re-request language pack installs.
    - Benefit III: Also works for rarely used languages that you as the central IT admin don’t offer, which makes users happy.
 - We removed the source files. The ODT will fetch the correct set of source files from the Office CDN just in time.
@@ -127,7 +127,7 @@ Let’s have a brief look at other scenarios as well, like adding language packs
 </Configuration>
 ```
 
-Again, this configuraiton file would only work for one specific scenario (update channel is set to Monthly Enterprise Channel, 64-bit is installed). Other scenarios would need to be covered by additional files and packages, which drives up the complexity and cost of ownership. Fix this by just going the dynamic, lean, and universal way:
+Again, this configuration file would only work for one specific scenario (update channel is set to Monthly Enterprise Channel, 64-bit is installed). Other scenarios would need to be covered by additional files and packages, which drive up the complexity and cost of ownership. Fix this by just going the dynamic, lean, and universal way:
 
 ```xml
 <Configuration>
@@ -140,11 +140,11 @@ Again, this configuraiton file would only work for one specific scenario (update
 </Configuration>
 ```
  
-This single configuration file will work across x86/x64 and all update channels, such as Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, and others. So, if you want to offer five additional languages in your environment, just build five of these "config file + ODT" packages. For proofing tools, you just change the ProductID to "ProofingTools".
+This single configuration file works across x86/x64 and all update channels, such as Current Channel, Monthly Enterprise Channel, Semi-Annual Enterprise Channel, and others. So, if you want to offer five additional languages in your environment, just build five of these "config file + ODT" packages. For proofing tools, you just change the ProductID to "ProofingTools".
 
 ## Build your own configuration
 
-The above concept is universally applicable to all Click-To-Run-based installations and products, as long as the ODT is used. You can change the specified Product ID to your scenario. Please check out the [list of supported Product IDs](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run) for more information.
+The above concept is universally applicable to all Click-To-Run-based installations and products, as long as the ODT is used. You can change the specified Product ID to your scenario. Check out the [list of supported Product IDs](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run) for more information.
 
 ## Prerequisites/Notes
 
@@ -153,4 +153,4 @@ Here are some prerequisites you must meet to make this concept work in your envi
 - The ODT must be able to locate the matching source files on the Office CDN.
 - Make sure that the context you're using for running the install can traverse the proxy. For details, see [Office 365 ProPlus Deployment and Proxy Server Guidance](https://techcommunity.microsoft.com/t5/Office-365-Blog/Office-365-ProPlus-Deployment-and-Proxy-Server-Guidance/ba-p/849164).
 - Make sure that the account (user or system) that's used to install the apps can connect to the internet.
-- The tailored configuration files shown above are good for installing the products (with the /configure switch), but do not work with the /download switch. This is expected, as the ODT is missing some details to perform a download (like architecture). For the above concept, there is no need to download the files beforehand.
+- The tailored configuration files shown previously are good for installing the products (with the /configure switch), but don't work with the /download switch. This is expected, as the ODT is missing some details to perform a download (like architecture). For the above concept, there's no need to download the files beforehand.
