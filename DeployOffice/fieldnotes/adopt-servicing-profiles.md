@@ -55,6 +55,9 @@ To decide which approach is best for you, review how many Microsoft 365 Apps ins
 
 If you're comfortable with migrating all devices on a channel at once, this is the right approach for you. If you want to migrate devices in smaller batches, you should go by Microsoft Entra groups. This could, for example, be the case if you have a couple of thousands of devices on a given channel, and you want to migrate them in, for example, three batches to limit change.
 
+> [!NOTE]
+> Servicing profiles is deprecated and replaced by [cloud update](cloud-update.md).
+
 ## How to set up a servicing profile with the “by update channel” approach
 
 If you want to adopt a servicing profile step-by-step, you can do so by targeting a single update channel first. Microsoft 365 Apps on these devices will be migrated to the Monthly Enterprise Channel and kept updated automatically. You can monitor the progress in the portal and add additional update channels over time to increase coverage.
