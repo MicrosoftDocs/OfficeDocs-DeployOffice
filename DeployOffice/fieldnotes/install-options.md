@@ -113,5 +113,5 @@ Disadvantages:
 
 ## Related topics
 
-[Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)
+[Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)</br>
 [Right-sizing your initial deployment](right-sizing-initial-deployment.md)
