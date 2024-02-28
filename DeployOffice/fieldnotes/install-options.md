@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Field best practices: Choose how to install Microsoft 365 Apps for enterprise"
-ms.date: 03/01/2023
+description: "Choose how to install Microsoft 365 Apps for enterprise"
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Choose how to install Microsoft 365 Apps
+# Choose how to install Microsoft 365 Apps
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
 
 There are various options to choose from when installing Microsoft 365 Apps for enterprise. This article outlines the advantages and disadvantages of each approach to help you make the right choice for your organization. We assume that most customers are coming from an on-premises only solution and are considering moving to a hybrid or cloud strategy to reduce the overall cost of ownership.
 
@@ -113,5 +113,5 @@ Disadvantages:
 
 ## Related topics
 
-[Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)
+[Build dynamic collections for Microsoft 365 Apps with Configuration Manager](build-dynamic-lean-configuration-manager.md)</br>
 [Right-sizing your initial deployment](right-sizing-initial-deployment.md)

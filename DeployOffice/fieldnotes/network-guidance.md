@@ -9,13 +9,13 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Field best practices: Network guidance for deploying and servicing Microsoft 365 Apps"
-ms.date: 11/29/2023
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Network guidance for deploying and servicing Microsoft 365 Apps
+# Network guidance for deploying and servicing Microsoft 365 Apps
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
 
 Microsoft 365 Apps is a version of Office that offers you the latest security and feature updates on a manageable and predictable cadence. With this modern servicing approach, there are multiple scenarios to consider for optimizing your network. Whether you're planning your first deployment, or have the apps deployed to your entire organization, network optimization is something you'll need to plan for. In this article, we're going to look at some of the most common scenarios when managing Microsoft 365 Apps, along with Microsoft’s recommendations for optimizing deployment and servicing across your network. 
 

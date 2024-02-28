@@ -9,13 +9,13 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 11/29/2023
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Microsoft 365 change guide
+# Microsoft 365 change guide
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft 365.
 
 > [!IMPORTANT]
 > The information in this article applies to the Microsoft 365 multitenant environment.
