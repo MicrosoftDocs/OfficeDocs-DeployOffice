@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps."
-ms.date: 04/06/2023
+description: "Right-sizing your initial deployment of Microsoft 365 Apps."
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Right-sizing your initial deployment of Microsoft 365 Apps
+# Right-sizing your initial deployment of Microsoft 365 Apps
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
 
 When you plan a Microsoft 365 Apps deployment using Configuration Manager in a multi-language enterprise environment, you might face the following challenge: To prevent overloading your corporate internet connections, you  want to include as many source files for different languages as possible in the on-premises deployment package. But including many languages increases the on-premises LAN/WAN traffic, because all distribution points and managed clients will download the whole package, regardless of what they actually need.
 
