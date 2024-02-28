@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.date: 03/21/2023
+description: "Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
+# Build dynamic collections for Microsoft 365 Apps with Configuration Manager
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
 
 Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices that are showing a configuration drift. This article will share some best practices on how to use Microsoft Configuration Manager's [dynamic collections](/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
