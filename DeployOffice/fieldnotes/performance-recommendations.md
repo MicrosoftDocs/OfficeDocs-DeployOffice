@@ -9,13 +9,13 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
-ms.date: 03/01/2023
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Performance recommendations for Microsoft 365 Apps on Windows 10
+# Performance recommendations for Microsoft 365 Apps on Windows 10
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft 365 Apps.
 
 When a Microsoft 365 user experiences poor performance using any of the core Office applications (such as Word, Excel, PowerPoint, and Outlook), it can have an impact on their productivity. It's Microsoft's goal that users have a positive experience with Microsoft apps and services. However, there are many factors that our customers can influence directly that can also impact the end-user experience. This article will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
 
