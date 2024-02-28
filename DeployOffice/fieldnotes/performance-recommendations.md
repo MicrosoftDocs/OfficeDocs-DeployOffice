@@ -9,13 +9,13 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
-ms.date: 03/01/2023
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Performance recommendations for Microsoft 365 Apps on Windows 10
+# Performance recommendations for Microsoft 365 Apps on Windows 10
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft Office.
+> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft 365 Apps.
 
 When a Microsoft 365 user experiences poor performance using any of the core Office applications (such as Word, Excel, PowerPoint, and Outlook), it can have an impact on their productivity. It's Microsoft's goal that users have a positive experience with Microsoft apps and services. However, there are many factors that our customers can influence directly that can also impact the end-user experience. This article will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
 
@@ -32,7 +32,7 @@ The network connection between your end users and the Microsoft 365 services can
 - **Egress network connections locally** When your end users egress to the internet from your corporate network as close to their physical location as possible, this reduces latency and ensures that user connections are made to the nearest point of entry to Microsoft 365 services
 - **Differentiate and optimize the most critical Microsoft 365 network traffic** Microsoft 365 traffic has been grouped into three categories to provide a priority-based pivot on where to focus your network optimizations. One of these categories (Optimize) represents a small set of endpoints (~10) that are required for connectivity to Microsoft 365 and are sensitive to network performance, latency, and availability. We recommend that these Optimize endpoints be given priority in your network configuration, for example, bypass or allowlist Optimize endpoints on network devices and services that perform traffic interception, SSL decryption, deep packet inspection and content filtering. For more information, see [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles).
 
-[Microsoft 365 Network Insights](/microsoft-365/enterprise/office-365-network-mac-perf-insights) is available in the Microsoft 365 admin center. Network insights give customers the ability to see their network performance and identify when the connection does not meet network recommendations from Microsoft. We highly recommend utilizing these capabilities to monitor and improve your network connectivity to Microsoft.
+[Microsoft 365 Network Insights](/microsoft-365/enterprise/office-365-network-mac-perf-insights) is available in the Microsoft 365 admin center. Network insights give customers the ability to see their network performance and identify when the connection doesn't meet network recommendations from Microsoft. We highly recommend utilizing these capabilities to monitor and improve your network connectivity to Microsoft.
 
 In addition, you can also use the [Microsoft 365 network connectivity test](https://connectivity.office.com/), which is a standalone tool that will give you a quick view into how well a specific device connects to Microsoft. For more information about the tool, see [Microsoft 365 network connectivity test tool](/Microsoft-365/Enterprise/office-365-network-mac-perf-onboarding-tool).
 
@@ -66,11 +66,11 @@ The browser may be one of the primary ways that users access Microsoft 365, so i
 
 ### Antivirus and security software
 
-Antivirus software and other security agents can have a negative impact on the performance of Office apps. While some level of impact is unavoidable as the software is doing its intended job, in many cases the use of these products can cause major unintended performance problems as the software interacts with other agents, Windows, and Office apps in unexpected ways. While there is no way to eliminate the impact of enterprise security agents, it is possible to mitigate the impact by following a few guidelines:
+Antivirus software and other security agents can have a negative impact on the performance of Office apps. While some level of impact is unavoidable as the software is doing its intended job, in many cases the use of these products can cause major unintended performance problems as the software interacts with other agents, Windows, and Office apps in unexpected ways. While there's no way to eliminate the impact of enterprise security agents, it's possible to mitigate the impact by following a few guidelines:
 
 - Do an inventory of the security software and agents running in your environment and get rid of any that are no longer needed.
-- Be sure that you are running the latest version of all required security software.
-- Run the Office apps on a device without security agents running and compare performance while running the app on a device with the security agent running, using [performance testing guidance](#performance-testing-guidance). If there is a noticeable (more than a couple seconds) difference, work with the vendor of your security software to determine settings or exclusions that can be configured to mitigate the performance impact.
+- Be sure that you're running the latest version of all required security software.
+- Run the Office apps on a device without security agents running and compare performance while running the app on a device with the security agent running, using [performance testing guidance](#performance-testing-guidance). If there's a noticeable (more than a couple seconds) difference, work with the vendor of your security software to determine settings or exclusions that can be configured to mitigate the performance impact.
 
 ### Virtual desktops
 
@@ -93,7 +93,7 @@ If your company uses or plans to use Virtual Desktop Infrastructure (VDI)), your
 
 ### Software updates
 
-As Microsoft invests heavily to improve the performance of our products, it is important to stay up to date on our latest software to realize these benefits. In keeping with your deployment best practices, keep your end users on the latest supported versions of Windows 10 and Microsoft 365 Apps. For a list of supported versions, see the following articles:
+As Microsoft invests heavily to improve the performance of our products, it's important to stay up to date on our latest software to realize these benefits. In keeping with your deployment best practices, keep your end users on the latest supported versions of Windows 10 and Microsoft 365 Apps. For a list of supported versions, see the following articles:
 
 - [Windows 10 release information](/windows/release-health/release-information)
 - [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date)
@@ -107,12 +107,12 @@ Also, review the deployment guidance available for Windows 10 and Microsoft 365 
 
 ### Office Add-ins
 
-Add-ins are one of the most common causes of poor app performance, especially at larger organizations. While Add-ins can be useful to give your employees special functionality, over time Add-ins tend to proliferate and accumulate, ultimately reaching a point where they can have a major impact on performance. It is possible to mitigate this impact by following a few guidelines:
+Add-ins are one of the most common causes of poor app performance, especially at larger organizations. While Add-ins can be useful to give your employees special functionality, over time Add-ins tend to proliferate and accumulate, ultimately reaching a point where they can have a major impact on performance. It's possible to mitigate this impact by following a few guidelines:
 
 - Do an [inventory of the Add-ins](../admincenter/inventory.md#add-ins-insight) used in your environment and get rid of any that are no longer needed.
-- Be sure that you are using the most recent version of the Add-in. If you need to install updates, use the [performance testing guidance](#performance-testing-guidance) to test the change.
+- Be sure that you're using the most recent version of the Add-in. If you need to install updates, use the [performance testing guidance](#performance-testing-guidance) to test the change.
 - You can test specific add-ins by running the Office application in Safe Mode, disabling all Add-ins, and using the [performance testing guidance](#performance-testing-guidance) to establish your baseline. Then, you can enable Add-ins one at a time and record any significant performance impacts.
-- If there is a noticeable (more than a couple seconds) difference and you are running the latest version, consider working with the developer to improve the Add-in or removing it from your environment. For more information, see [Best practices for developing Office Add-ins](/office/dev/add-ins/concepts/add-in-development-best-practices).
+- If there's a noticeable (more than a couple seconds) difference and you're running the latest version, consider working with the developer to improve the Add-in or removing it from your environment. For more information, see [Best practices for developing Office Add-ins](/office/dev/add-ins/concepts/add-in-development-best-practices).
 
 ### 64-bit Office
 
@@ -120,7 +120,7 @@ If your users create large or complex files in Office, they may see performance 
 
 ### System requirements
 
-While the [Microsoft 365 minimum hardware specs](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) are expected to provide an acceptable user experience, it is not uncommon for performance to be negatively impacted if there are other services or applications also running on the device, or if device drivers are out of date. Providing your end users with devices that are powerful enough to support all the demands that they regularly place on their devices will result in better productivity and a better user experience. There is no single device profile that is best for every user or for every company. However, based on our experience working with many large customers, we have observed the following performance behaviors:
+While the [Microsoft 365 minimum hardware specs](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) are expected to provide an acceptable user experience, it's not uncommon for performance to be negatively impacted if there are other services or applications also running on the device, or if device drivers are out of date. Providing your end users with devices that are powerful enough to support all the demands that they regularly place on their devices will result in better productivity and a better user experience. There's no single device profile that is best for every user or for every company. However, based on our experience working with many large customers, we have observed the following performance behaviors:
 
 - Solid State Drives (SSD) are twice as fast as traditional spinning disks when launching Office applications.
 - 8 GB of RAM is twice as fast when launching Office applications compared to devices using 4 GB of RAM.
@@ -140,7 +140,7 @@ Review [Tips to improve PC performance in Windows](https://support.microsoft.com
 For Word:
 
 - Disable or remove unneeded Add-ins
-- Disable AutoCorrect
+- Disable autocorrect
 - Disable Screen Tips
 
 For Excel:
@@ -156,7 +156,7 @@ For PowerPoint:
 
 - Review [Tips for improving the performance of your presentation](https://support.microsoft.com/office/34c82835-5f23-4bf0-98cc-72235bbd2949)
 - Change resolution to improve speed
-- Make sure hardware graphics acceleration is not disabled
+- Make sure hardware graphics acceleration isn't disabled
 - Compress media files
 - Reduce the number of transitions and complex animation
 - Don’t use large gradients or transparent objects
@@ -167,15 +167,15 @@ For Outlook:
 - Use the new shared calendar method. For more information, see [Calendar sharing in Microsoft 365](https://support.microsoft.com/office/b576ecc3-0945-4d75-85f1-5efafb8a37b4).
 - Disable or remove unneeded Add-ins
 - Download and use the [Outlook Advanced Diagnostics tool](https://aka.ms/SaRA-OutlookAdvDiagnostics)
-- Do not keep more than 100,000 items in a single folder
+- Don't keep more than 100,000 items in a single folder
 - Use Outlook in cached mode
 - Disable “Download Shared Folders” in your Exchange profile if accessing a mailbox with more than 5,000 folders and experiencing performance issues. Otherwise, leave this setting enabled.
 
 ## Performance testing guidance
 
-It is a good idea to test the performance impact of any significant change to your environment, such as network changes, hardware updates, and new or updated software (such as antivirus agents, add-ins, etc.) before introducing them into your production environment. If the new software will result in an unacceptable level of performance degradation, do not roll it out until the problem has been addressed. There are many ways to measure the performance impact of a change, and we recommend using the Microsoft Office Performance Assessment tool within the Windows Assessment Console. The Windows Assessment Console is available for download as part of the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install). Another option is to use the “stopwatch” method, where you start a stopwatch when you begin an activity and stop it once the activity has completed.
+It's a good idea to test the performance impact of any significant change to your environment, such as network changes, hardware updates, and new or updated software (such as antivirus agents, add-ins, etc.) before introducing them into your production environment. If the new software will result in an unacceptable level of performance degradation, don't roll it out until the problem has been addressed. There are many ways to measure the performance impact of a change, and we recommend using the Microsoft Office Performance Assessment tool within the Windows Assessment Console. The Windows Assessment Console is available for download as part of the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install). Another option is to use the “stopwatch” method, where you start a stopwatch when you begin an activity and stop it once the activity has completed.
 
-To test the performance impact of a change, first establish a performance baseline by performing common activities on a set of devices that do not have the change implemented. Common activity examples include launching the application, opening a file, or saving a file. After you have established your baseline, perform those same activities on a set of devices where the change has been implemented and use the same measurement methodology you used to establish your baseline. If the change resulted in a performance impact that is unacceptable for your users, then you should work to resolve these issues before implementing the change across your environment.
+To test the performance impact of a change, first establish a performance baseline by performing common activities on a set of devices that don't have the change implemented. Common activity examples include launching the application, opening a file, or saving a file. After you have established your baseline, perform those same activities on a set of devices where the change has been implemented and use the same measurement methodology you used to establish your baseline. If the change resulted in a performance impact that is unacceptable for your users, then you should work to resolve these issues before implementing the change across your environment.
 
 Here are some measurements that could be concerning:
 

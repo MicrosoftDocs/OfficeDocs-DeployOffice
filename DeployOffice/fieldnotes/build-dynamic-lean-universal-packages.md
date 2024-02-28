@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Field best practices: How to provide additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps to your users with minimal maintenance overhead"
-ms.date: 03/01/2023
+description: "How to provide additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps to your users with minimal maintenance overhead"
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Build dynamic, lean, and universal packages for Microsoft 365 Apps
+# Build dynamic, lean, and universal packages for Microsoft 365 Apps
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
    
 As an admin, you might plan to deploy Microsoft 365 Apps in your organization. Such a deployment is often more than just pushing the basic Microsoft 365 Apps to devices. Users might need additional components, for example, language packs, proofing tools or additional products like Visio or Project. We often refer to these scenarios as **2nd installs**, while the initial installation of Microsoft 365 Apps is often called **1st install**. For 1st install scenarios, have a look at the [install options](install-options.md) and the best way to [right-size your deployment](right-sizing-initial-deployment.md).
 

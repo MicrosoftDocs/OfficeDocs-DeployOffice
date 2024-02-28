@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
-description: "Field best practices: Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.date: 03/21/2023
+description: "Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
+ms.date: 02/28/2024
 ---
 
-# Best practices from the field: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
+# Build dynamic collections for Microsoft 365 Apps with Configuration Manager
 
 > [!NOTE]
-> This article was written by Microsoft experts in the field who work with enterprise customers to deploy Office.
+> Authored by the Microsoft 365 Apps Rangers, this article outlines common practices observed across customer implementations. We advise assessing the relevance of this guidance for your organization and adapting the approach as necessary.
 
 Managing Microsoft 365 Apps in larger organizations can be a complex task. You might have to support multiple update channels, have multiple Office releases in your environment at the same time, or have to identify and remediate devices that are showing a configuration drift. This article will share some best practices on how to use Microsoft Configuration Manager's [dynamic collections](/mem/configmgr/core/clients/manage/collections/create-collections) to simplify management. For dynamic collections, Configuration Manager will add and remove devices to and from collections based on a set of rules and queries. These dynamic collections update themselves automatically and always provide a current view into your environment.
 
@@ -30,7 +30,7 @@ For each scenario, you'll find a detailed step-by-step guide as well as some not
 
 ## Catch devices on specific update channels
 
-Follow these steps to create a dynamic collection that will capture devices that run Office on a specific update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily. We recommend that you set up one collection per update channel that your manage.
+Follow these steps to create a dynamic collection that will capture devices that run Office on a specific update channel. After the collection is set up, devices will be added and dropped automatically. This enables you to see and target all devices on a certain channel easily. We recommend that you set up one collection per update channel that you manage.
 
 Once those collections are set up, you can use them to publish applications which allow users to initiate an [update channel change](../updates/change-update-channels.md#change-the-update-channel-with-configuration-manager). You can also deploy the application as required, in case you want to switch away from an update channel completely. For example, you can move from [Semi-Annual Enterprise Channel (Preview)](../updates/overview-update-channels.md#preview-upcoming-new-features-of-semi-annual-enterprise-channel) and [Semi-Annual Enterprise Channel](../updates/overview-update-channels.md#semi-annual-enterprise-channel-overview) to [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview). We also have [detailed guidance for switching to Monthly Enterprise Channel](switch-to-monthly-enterprise-channel.md) available.
 
