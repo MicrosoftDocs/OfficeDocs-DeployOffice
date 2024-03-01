@@ -394,9 +394,9 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 ## Related articles
 
-- [Macro malware](/windows/security/threat-protection/intelligence/macro-malware)
-- [Understanding malware & other threats](/windows/security/threat-protection/intelligence/understanding-malware)
-- [How to protect against phishing attacks](/windows/security/threat-protection/intelligence/phishing)
+- [Macro malware](/microsoft-365/security/defender-endpoint/malware/macro-malware)
+- [Understanding malware & other threats](/microsoft-365/security/defender-endpoint/malware/understanding-malware)
+- [How to protect against phishing attacks](microsoft-365/security/defender-endpoint/malware/phishing)
 - [Manage active content in Office documents](/microsoft-365/security/active-content-in-trusted-docs)
 - [Add, remove, or change a trusted location](https://support.microsoft.com/office/7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4)
 - [Trusted document settings have changed](https://support.microsoft.com/topic/0be30e4c-926a-4761-bdef-3f91097beb5a)
