@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Technical guidance for IT Pros about how to install the preview version of Office LTSC"
+ms.date: 04/18/2024
 ---
 
 # Install Office LTSC Preview
@@ -69,7 +70,7 @@ The preview products are installed on the system drive, which is usually the C:\
 
 #### Apps installed
 
-Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Skype for Business, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
 Here's some additional information about Microsoft Teams with Office LTSC Professional Plus 2024 Preview.
 

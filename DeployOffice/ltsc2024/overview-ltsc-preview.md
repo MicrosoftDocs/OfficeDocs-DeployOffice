@@ -1,5 +1,5 @@
 ---
-title: "Overview of Office LTSC Preview"
+title: "Install Office LTSC Preview"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -10,19 +10,15 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Technical overview for IT Pros about the preview version of Office LTSC"
+ms.date: 04/18/2024
 ---
 
 # Overview of Office LTSC Preview
 
-> [!IMPORTANT]
-> - Office LTSC 2021 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2021.
-> - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
-> - For steps on how to update your preview installation to Office LTSC 2021, see [Update Office LTSC 2021 Preview to Office LTSC 2021](update-from-preview.md).
-
 > [!NOTE]
 > - This article is for a preview program and is subject to change.
 >
-> - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2021, the new volume licensed (perpetual) version of Office.
+> - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2024, the new volume licensed (perpetual) version of Office.
 >
 > - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
 >
@@ -31,27 +27,27 @@ description: "Technical overview for IT Pros about the preview version of Office
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
 The following products are available as part of this preview program:
-- Office LTSC Professional Plus 2021 Preview
-- Project Professional 2021 Preview
-- Visio Professional 2021 Preview
+- Microsoft Office LTSC Professional Plus 2024 Preview
+- Microsoft Project Professional 2024 Preview
+- Microsoft Visio LTSC Professional 2024 Preview
 
-Office LTSC Professional Plus 2021 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word.
+Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
 
 For information about installing and activating the preview versions of Office, Project, and Visio, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
-For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2021 (Preview)](overview-mac-preview.md).
+For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2024 (Preview)](overview-mac-preview.md).
 
 ## What’s changed in Office LTSC Preview
 
-For more information, see [What’s changed in Office LTSC 2021?](../ltsc2021/overview.md#whats-changed-in-office-ltsc-2021)
+For more information, see [What’s changed in Office LTSC 2024?](../ltsc2024/overview.md#whats-changed-in-office-ltsc-2024)
 
 ## What’s stayed the same in Office LTSC Preview
 
-For more information, see [What’s stayed the same in Office LTSC 2021?](../ltsc2021/overview.md#whats-stayed-the-same-in-office-ltsc-2021)
+For more information, see [What’s stayed the same in Office LTSC 2024?](../ltsc2024/overview.md#whats-stayed-the-same-in-office-ltsc-2024)
 
 ## New features included in Office LTSC Preview
 
-For more information, see [What are the new features in Office LTSC 2021?](../ltsc2021/overview.md#what-are-the-new-features-in-office-ltsc-2021)
+For more information, see [What are the new features in Office LTSC 2024?](../ltsc2024/overview.md#what-are-the-new-features-in-office-ltsc-2024)
 
 ## Getting support and providing feedback for Office LTSC Preview
 
