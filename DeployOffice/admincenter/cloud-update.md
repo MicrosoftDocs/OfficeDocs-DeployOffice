@@ -20,7 +20,7 @@ Cloud update represents the evolution of servicing profiles, offering a comprehe
 With cloud update, admins can oversee Microsoft 365 Apps updates for devices on both the Monthly Enterprise Channel and Current Channel.
 
 > [!NOTE]
-> If your [Microsoft 365 Apps admin center](https://config.office.com) still lists Servicing Profiles, we can switch your tenant to cloud updates on demand. Sign into the center and select the **Give feedback** button in the top right area. Select any of the options, enter a comment that you would like to get switched to cloud update and your Email. Select **Submit**. We will reach out to you soon.
+> If you are still seeing Servicing Profile in the [Microsoft 365 Apps admin center](https://config.office.com), we can upgrade you to Cloud Update today. To request the upgrade, sign in to the Microsoft 365 Apps admin center and click on the **Give feedback** button in the top right corner. Select any of the options, enter a comment that you would like to get switched to Cloud Update, provide your email address, and click **Submit**. We will reach out to you soon.
 
 ## Channel to profile mapping
 
