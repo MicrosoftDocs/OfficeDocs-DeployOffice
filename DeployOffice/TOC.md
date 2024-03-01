@@ -58,7 +58,7 @@
 ### [Essential services](privacy/essential-services.md?toc=/deployoffice/toc.json)
 ### [In-product recommendations in Office](privacy/in-product-recommendations.md?toc=/deployoffice/toc.json)
 
-## Best practices from the field
+## Best practices
 ### [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md)
 ### [Right-sizing your initial deployment](fieldnotes/right-sizing-initial-deployment.md)
 ### [Build dynamic, lean, and universal packages](fieldnotes/build-dynamic-lean-universal-packages.md)
