@@ -14,25 +14,20 @@ description: "Technical guidance for IT Pros about how to install the preview ve
 
 # Install Office LTSC Preview
 
-> [!IMPORTANT]
-> - Office LTSC 2024 is generally available on the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx) as of September 16, 2024.
-> - The preview expired on January 17, 2022 and the Office apps are now in reduced functionality mode.
-> - For steps on how to update your preview installation to Office LTSC 2024, see [Update Office LTSC 2024 Preview to Office LTSC 2024](update-from-preview.md).
-
 > [!NOTE]
 > - This article is for a preview program and is subject to change.
 >
 > - This preview program is intended for organizations that expect to buy and deploy Office LTSC 2024, the new volume licensed (perpetual) version of Office.
 >
-> - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
+> - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 plan.
 >
 > - This preview program isn't intended for home users of Office.
 
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
-- Office LTSC Professional Plus 2024 Preview
-- Project Professional 2024 Preview
-- Visio Professional 2024 Preview
+- Microsoft Office LTSC Professional Plus 2024 Preview
+- Microsoft Project Professional 2024 Preview
+- Microsoft Visio LTSC Professional 2024 Preview
 
 For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2024 (Preview)](overview-mac-preview.md).
 
@@ -44,10 +39,11 @@ Before installing Office LTSC Preview, review the following information.
 
 Office LTSC Preview can be installed on the following operating systems:
 
-- Windows 11
-- Windows 10 Semi-annual Channel
+- Windows 11 LTSC 2024
+- Windows 11 (minimum for ARM-based devices) 
+- Windows 10 LTSC 2021
 - Windows 10 LTSC 2019
-- Windows Server 2019
+- Windows 10 
 
 #### Memory and disk space
 
@@ -61,7 +57,7 @@ All installed products must be either the 32-bit version or the 64-bit version. 
 
 #### Previous versions of Office
 
-We recommend that you uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2016 or Office 2013.
+We recommend that you uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2019 or Office 2016.
 
 For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
@@ -73,7 +69,7 @@ The preview products are installed on the system drive, which is usually the C:\
 
 #### Apps installed
 
-Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint,  Skype for Business, Teams, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Skype for Business, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
 Here's some additional information about Microsoft Teams with Office LTSC Professional Plus 2024 Preview.
 
