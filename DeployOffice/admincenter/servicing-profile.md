@@ -16,7 +16,20 @@ ms.date: 02/27/2024
 # Overview of servicing profile in the Microsoft 365 Apps admin center
 
 > [!NOTE]
-> Servicing profiles is deprecated and has been replaced by [Cloud Update](cloud-update.md). If you are still seeing Servicing Profile in the [Microsoft 365 Apps admin center](https://config.office.com), we can upgrade you to Cloud Update today. To request the upgrade, sign in to the Microsoft 365 Apps admin center and click on the **Give feedback** button in the top right corner. Select any of the options, enter a comment that you would like to get switched to Cloud Update, provide your email address, and click **Submit**. We will reach out to you soon.
+> Servicing Profile is deprecated and has been replaced by [Cloud Update](cloud-update.md).
+>
+> If you still see Servicing Profile in the [Microsoft 365 Apps admin center](https://config.office.com), it means your tenant was temporarily held back from transitioning to Cloud Update due to the use of Device selection criteria > Choose groups to include. This capability was previously used for targeting but is no longer available with Cloud Update.
+> 
+> If you’re ready to upgrade today, follow these steps:
+> 
+> 1. Sign in to the Microsoft 365 Apps admin center.
+> 2. Click the Give feedback button in the top right corner.
+> 3. Select an option and enter a comment expressing your desire to switch to Cloud Update.
+> 4. Provide your email address.
+> 5. Click Submit.
+>    
+> We will promptly reach out to you with more information.
+
 
 Servicing profiles let you automatically deliver monthly Office updates for specific users or groups. You can apply a servicing profile to a set of devices in the Microsoft 365 Apps admin center. When you apply the profile, the following changes occur:
 
