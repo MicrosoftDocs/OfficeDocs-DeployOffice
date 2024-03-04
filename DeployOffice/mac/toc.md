@@ -34,3 +34,4 @@
 ### [Set a deadline](mau-deadline.md)
 ### [Use msupdate](update-office-for-mac-using-msupdate.md)
 ### [Release history](/officeupdates/release-history-microsoft-autoupdate)
+### [Set license information](mau-set-license-info.md)
