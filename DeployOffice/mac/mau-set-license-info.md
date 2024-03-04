@@ -16,7 +16,7 @@ ms.date: 03/04/2024
 
 # Set Office License Info for updates for Microsoft AutoUpdate
 
-Beginning with Microsoft Office Apps Version 16.79 (including Word, Excel, PowerPoint, and Outlook), you must activate your license to get updates for Version 16.78 and later. This requirement applies to both subscription and volume licenses.
+Beginning with Microsoft Office Apps Version 16.79 (including Word, Excel, PowerPoint, and Outlook), you must activate your license to get updates for Version 16.79 and later. This requirement applies to both subscription and volume licenses.
 
 To help with this transition, Microsoft Office applications write to Microsoft AutoUpdate preferences to ensure the correct update paths are followed.
 
@@ -26,7 +26,7 @@ The following examples show updates to Microsoft AutoUpdate Preference settings 
 
 Alternatively, you can install Microsoft Office Apps Version 16.82 and later and bypass the following section.
 
-> [!ATTNETION]
+> [!ATTENTION]
 > Functionality is severely limited (applications are in read-only mode) if Microsoft Office Apps are updated beyond Version 16.79 with an incorrect license.
 
 ## Preference AppCustomPref
@@ -97,7 +97,8 @@ This configuration allows Microsoft AutoUpdate to offer updates for Excel and Wo
     </dict>
 </dict>
 ```
-This example allows Excel, PowerPoint, and Word to be updated beyond Version 16.78 and Version 16.79.</li>
+This example allows Excel, PowerPoint, and Word to be updated beyond Version 16.78 and Version 16.79.
+</li></ul>
 
 ## App Domain
 
