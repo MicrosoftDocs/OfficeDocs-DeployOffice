@@ -1069,6 +1069,36 @@
       "source_path": "DeployOffice/outlook/troubleshoot-deployment-new-outlook.md",
       "redirect_url": "/DeployOffice/outlook/troubleshoot/troubleshoot-deployment-new-outlook",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-autopatch.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-cloudupdate.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-configmgr.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-group-policy.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-intune.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/move-devices-channel-servicingprofiles.md",
+      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_document_id": false
     }
   ]
 }
