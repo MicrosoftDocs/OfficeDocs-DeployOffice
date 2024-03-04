@@ -26,7 +26,7 @@ The following examples show updates to Microsoft AutoUpdate Preference settings 
 
 Alternatively, you can install Microsoft Office Apps Version 16.82 and later and bypass the following section.
 
-> [!ATTENTION]
+> [!IMPORTANT]
 > Functionality is severely limited (applications are in read-only mode) if Microsoft Office Apps are updated beyond Version 16.79 with an incorrect license.
 
 ## Preference AppCustomPref
