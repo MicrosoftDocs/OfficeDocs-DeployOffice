@@ -16,11 +16,12 @@ ms.date: 03/06/2024
 
 # Microsoft AutoUpdate and Deferred Updates
 
-We strongly recommend staying current on all updates.
+> [!NOTICE]
+> It's strongly recommend that you stay current on all updates.
 
-Starting from version 4.68.1, Microsoft AutoUpdate supports following cases where additional time is required:
-- Deferring an update by a number of days (maximum of 28 days). Referred to as ‘Deferral Days’ in the document.
-- Setting ‘do not update beyond’ version (to the maximum of 90 days). Referred to as ‘Deferral Version’ in this document
+Starting from Version 4.68.1, Microsoft AutoUpdate supports following cases where more time is required:
+- Deferring an update by many days (maximum of 28 days). Referred to as "Deferral Days" in the document.
+- Setting "do not update beyond" version (to the maximum of 90 days). Referred to as "Deferral Version" in this document.
 
 If both are defined, Deferral Version takes precedence over Deferral Days setting for the app.
 
@@ -29,9 +30,9 @@ If both are defined, Deferral Version takes precedence over Deferral Days settin
 
 ## Deferred Updates
 
-This feature allows deferral of available updates for a number of days (refer to as ‘Deferral Days’).
+This feature allows deferral of available updates for many days (refer to as "Deferral Days").
 
-### Global Deferral Days setting
+## Global Deferral Days setting
 
 Deferral Days can be set globally with following preferences setting:
 
@@ -40,8 +41,8 @@ Deferral Days can be set globally with following preferences setting:
 | Domain   | com.microsoft.autoupdate2 |
 | Key      | OptionalUpdatesDeferralsDays |
 | Data Type| Integer |
-| Possible values | 1 – 28. Any value less than 1 will be ignored. Any value over 28 days will set Deferral days to 28. |
-| Comments | There is no default value. |
+| Possible values | 1 – 28. Any value less than one is ignored. Any value over 28 days sets the Deferral days to 28. |
+| Comments | There's no default value. |
 
 Example: Set Deferral Days to 14. Following example will cause Microsoft AutoUpdate to not offer/apply updates for 14 days after the release:
 
@@ -65,12 +66,11 @@ App-specific deferral days can be set with the following preferences setting:
 | Data Type | Dictionary            |
 | Key       | Application ID        |
 | Data Type | Integer               |
+| Possible values | 1 – 28. Any value less than one is ignored. Any value over 28 days sets the Deferral days to 28. |
+| Comments        | There's no default value.                                                                          |
 
-| Possible values | 1 – 28. Any value less than 1 will be ignored. Any value over 28 days will set Deferral days to 28. |
-|-----------------|----------------------------------------------------------------------------------------------------|
-| Comments        | There is no default value.                                                                          |
-
-Example: Set Deferral Days to 7 for Microsoft Word 2019, 12 for Microsoft Excel 2019. Following example will cause Microsoft AutoUpdate to not offer/apply updates for 7 days after Microsoft Word, 12 days for Microsoft Excel update releases:
+**Example** 
+Set Deferral Days to seven for Microsoft Word 2019, 12 for Microsoft Excel 2019. Following example will cause Microsoft AutoUpdate to not offer/apply updates for seven days after Microsoft Word, 12 days for Microsoft Excel update releases:
 
 ```xml
 <key>OptionalUpdatesDeferrals</key>
@@ -87,9 +87,9 @@ Example: Set Deferral Days to 7 for Microsoft Word 2019, 12 for Microsoft Excel 
 
 ## Deferral Version
 
-This feature allows end users to set an upper limit to the update version. That is, discovered updates will be offered/applied up to and including the specified version.
+This feature allows end users to set an upper limit to the update version. That is, discovered updates are offered/applied to and including the specified version.
 
-To allow for updates to be discovered and applied, only the Major.Minor version number scheme is recognized. For example, 16.82 needs to be specified to receive any 16.82.xxxxxxxx releases.
+To allow for updates to be discovered and applied, only the Major. Minor version number scheme is recognized. For example, 16.82 needs to be specified to receive any 16.82.Xxxxxxxx releases.
 
 Due to differences in version numbers among Microsoft Applications, this option needs to be set individually for each app with the following preference settings:
 
@@ -101,10 +101,9 @@ Due to differences in version numbers among Microsoft Applications, this option 
 | - Key: DeferralVersions | - Data type: Dictionary |
 | - Key: Application ID   | - Data Type: String |
 
-Possible values for the version are specified as Major.Minor version numbers. There is no default value for this setting.
+Possible values for the version are specified as Major. Minor version numbers. There's no default value for this setting.
 
-### Example
-
+**Example**
 Set Deferral Version to 16.82 for Microsoft Word 2019, and 16.81 for Microsoft Excel 2019:
 
 ```xml
@@ -123,7 +122,7 @@ Set Deferral Version to 16.82 for Microsoft Word 2019, and 16.81 for Microsoft E
 > [!NOTE]
 > There is a 90-day limit (subject to change later) on how long one can stay on the specified version without updating. Once this window has passed, Microsoft AutoUpdate will offer/apply the next oldest update that is within the 90-day window.
 
-For example, the following table shows available updates for Microsoft Word 2019 (MSWD2019) and which one will be offered/applied once the 90-day window is past.
+For example, the following table shows available updates for Microsoft Word 2019 (MSWD2019) and which one is offered/applied once the 90-day window is past.
 
 | Available Update Versions | # days since release | Notes                        |
 |---------------------------|----------------------|------------------------------|
