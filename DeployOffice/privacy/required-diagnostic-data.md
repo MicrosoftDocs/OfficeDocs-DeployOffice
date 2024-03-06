@@ -9,7 +9,7 @@ ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
-ms.date: 02/09/2024
+ms.date: 03/06/2024
 ---
 
 # Required diagnostic data for Office
@@ -665,6 +665,8 @@ In addition, the following fields are common for all events for Outlook for Andr
 - **is_preload_install** – Tells us if our app was pre-loaded on device (Android 11 or later devices)
 
 - **is_sliding_drawer_enabled** - Whether Sliding Drawer interface is enabled to help detect issues caused by our sliding drawer interface
+
+- **message_list_version** - The internal version name of the code that displays the message list. This will help us attribute bugs and performance issues to new versions of the message list implementation.
 
 - **oem_preinstall** - Tells us if our app was pre-installed on the device
 
@@ -4880,7 +4882,7 @@ The following fields are collected:
 
 - **Data_IsMultiAccountsSignedIn** - boolean value indicating if more than one user accounts is signed in.
 
-- **Data_PythonUserIdentity** - GUID string of user's identity used to fetch license.
+- **Data_PythonUserIdentityGUID** - GUID string of user's identity used to fetch license. *[This field was previously named Data_PythonUserIdentity.]*
 
 - **Data_TrialStatusReseted** - boolean value indicating if reseting of license status happened in this session.
 
@@ -8496,6 +8498,8 @@ The following fields are collected:
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
+- **Data_EditMode** - Indicates whether a sticky note is being accessed in list mode or in a pop-up window
+
 - **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
 
 - **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
@@ -8509,6 +8513,8 @@ The following fields are collected:
 - **Data_isActionableContext** - Is the context url available and clickable
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
+
+- **Data_NoteLocalId** - Note ID
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -8906,6 +8912,8 @@ The following fields are collected:
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
+- **Data_EditMode** - Indicates whether a sticky note is being accessed in list mode or in a popup window.
+
 - **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
 
 - **Data_ExpirationDate** - A date in numerical format indicates when this event will be stop sending from clients
@@ -8993,6 +9001,8 @@ The following fields are collected:
 
 - **Data_ContextHostCategory** - Category (Meeting / Learning / Office) of the host app that note was taken in context of 
 
+- **Data_createdAt** - Timestamp when the sticky note was created
+
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
 - **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
@@ -9008,6 +9018,8 @@ The following fields are collected:
 - **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
 
 - **Data_isNewNoteScenario** - Is the current scenario that of a user taking a new note
+
+- **Data_lastModified** - Timestamp when the sticky note was last modified
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
@@ -9925,13 +9937,15 @@ This event indicates that a new document is created in Office Word and tracks su
 
 The following fields are collected:
 
-  - **Data\_DirtyState** - whether the document was created in a dirty state (with changes that need to be saved)
+- **Data\_DirtyState** - whether the document was created in a dirty state (with changes that need to be saved)
 
-  - **Data\_ErrorID** - error identifier in case of operation failure
+- **Data\_ErrorID** - error identifier in case of operation failure
 
-  - **Data\_MainPdod** - The document identifier during this process session
+- **Data\_MainPdod** - The document identifier during this process session
 
-  - **Data\_UsesCustomTemplate** - indicates whether the document was created from a custom template
+- **Data_StyleVersion** – version number of default Word styles.
+
+- **Data\_UsesCustomTemplate** - indicates whether the document was created from a custom template
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
@@ -9982,6 +9996,8 @@ The following fields are collected:
 - **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened 
 
 - **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer 
+
+- **Data_Doc_KnownFolderMoveStatus** - represents the signed-in user's known folder migration status in a given session.
 
 - **Data_Doc_LicenseCategory** - Indicates the license category of the user (EnhancedRFM, SubscriptionConsumer, Freemium, etc.)
 
@@ -10074,6 +10090,8 @@ The following fields are collected:
 - **Data_VerboseMeasurements** - Encoded string containing the detailed time breakdown of the different parts of open.  Used to measure performance, only enabled for internal rings. 
 
 - **Data_WpmFallOutReason** - If the document has WPM unsupported contents upon open, list the first content type Word detected.
+
+- **KfmStatus** - determines whether user is known folder move (KFM) enrolled, eligible or not eligible. It also determines if user is signed in or not, and whether user's device is KFM enrolled eligible or not eligible.
 
 
 #### Office.Word.FileSave.ActCmdGosubSaveAs
@@ -13426,11 +13444,13 @@ This event indicates Office Word reads aloud the text in the document. The event
 
 The following fields are collected:
 
-  - **Data\_ParagraphCount -** paragraph count of the document
+- **Data_IsDeviceTypePhone** - whether a phone device is using ReadAloud.
 
-  - **Data\_Play -** Is this the first time for Word to read aloud
+- **Data\_ParagraphCount -** paragraph count of the document
 
-  - **Data\_ViewKind -** view type of the document
+- **Data\_Play -** Is this the first time for Word to read aloud
+
+- **Data\_ViewKind -** view type of the document
 
 #### Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
@@ -16556,6 +16576,18 @@ The following fields are collected:
 - **request-id** - the server request identifier for the request that caused the error
  
 - **source** - the source of the error within the OM infrastructure, typically one of 'BE' or 'FE'
+
+#### hx.critical.error
+
+If we encounter a critical error because of calling an internal API incorrectly, we will send this event to record which API we called incorrectly and where we called it in the code. This event is used to determine if/where Outlook is calling internal APIs incorrectly.
+
+The following fields are collected:
+
+- **actor_id** - The identifier for which internal API failed
+
+- **critical_error_type** - The type of error
+
+- **hx_tag** - The identifier for where the error occurred
 
 
 #### Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
