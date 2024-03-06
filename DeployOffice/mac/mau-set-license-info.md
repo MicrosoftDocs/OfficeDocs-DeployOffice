@@ -1,6 +1,6 @@
 ---
 title: "Set Office License Info for updates for Microsoft AutoUpdate"
-ms.author: pbowden
+ms.author: ppark
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
@@ -107,19 +107,18 @@ Microsoft Office Apps Version 16.78 writes out applicable license info to respec
 For this process to work, the following entry is required in the application registry within the Microsoft AutoUpdate preferences. Here's an example of the necessary entry:
 
 ```xml
-<key>Applications</key> 
-<dict>  
+<key>Applications</key>
+<dict>
 …. 
-    <key>/Applications/Microsoft Excel.app</key> 
-    <dict> 
-    
-    <key>App Domain</key> 
-    <string>com.microsoft.office</string> 
-    <key>Application ID</key> 
-    <string>Excel2019</string> 
-    <key>LCID</key> 
-    <string>1033</string> 
-</dict> 
+    <key>/Applications/Microsoft Excel.app</key>
+    <dict>    
+    <key>App Domain</key>
+    <string>com.microsoft.office</string>
+    <key>Application ID</key>
+    <string>XCEL2019</string>
+    <key>LCID</key>
+    <string>1033</string>
+    </dict>
 … 
-</dict> 
+</dict>
 ```

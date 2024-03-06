@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AutoUpdate and Deferred Updates"
-ms.author: pbowden
+ms.author: ppark
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
@@ -107,14 +107,14 @@ Possible values for the version are specified as Major. Minor version numbers. T
 Set Deferral Version to 16.82 for Microsoft Word 2019, and 16.81 for Microsoft Excel 2019:
 
 ```xml
-<key> OptionalUpdatesDeferrals</key>
+<key>OptionalUpdatesDeferrals</key>
 <dict>
-    <key> DeferralVersions</key>
+    <key>DeferralVersions</key>
     <dict>
         <key>MSWD2019</key>
-        <string> 16.82</string>
+        <string>16.82</string>
         <key>XCEL2019</key>
-        <string> 16.81</string>
+        <string>16.81</string>
     </dict>
 </dict>
 ```
