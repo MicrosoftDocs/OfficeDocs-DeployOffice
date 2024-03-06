@@ -189,7 +189,7 @@ The following table lists the file block settings in Group Policy and the OCT th
 | Office Open XML converters for Word  <br/>                                                       | All file formats that are opened through an OOXML converter  <br/>                                                                                                                                                       | **Do not block:** The file type isn't blocked. <br/> <br/> **Save blocked:** Saving of the file type is blocked. <br/> <br/> **Open/Save blocked, use open policy:** Both opening and saving of the file type is blocked. The file opens based on the configuration of the **Set default file block behavior** setting.  <br/><br/> **Block:** Both opening and saving of the file type is blocked, and the file doesn't open.  <br/><br/> **Open in Protected View:** Both opening and saving of the file type is blocked, and the option to edit the file type is disabled. <br/> <br/> **Allow editing and open in Protected View:** Both opening and saving of the file type is blocked, and the edit option is enabled.  <br/>             | File format type isn't blocked.  <br/>                               |
 
 ## Related articles
-[Privacy options in Office 2016](privacy-options.md)
+[Privacy options in Office 2016](../privacy-options.md)
 
 [Prevent file format attacks by using Office file validation in Office 2016](prevent-file-format-attacks-using-file-validation.md)
 
