@@ -9,7 +9,7 @@ ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
-ms.date: 12/29/2023
+ms.date: 03/06/2024
 ---
 
 # Essential services for Office
@@ -17,7 +17,7 @@ ms.date: 12/29/2023
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. While you can control many of the connected experiences that are available to you, or to your users if you're the admin in your organization, there are a set of services that are essential to how Office functions and therefore cannot be disabled. For example, the licensing service that confirms that you are properly licensed to use Office. Required service data about these services is collected and sent to Microsoft, regardless of any other privacy-related policy settings that you have configured.
+Office consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. While you can control many of the connected experiences that are available to you, or to your users if you're the admin in your organization, there are a set of services that are essential to how Office functions and therefore can't be disabled. For example, the licensing service that confirms that you're properly licensed to use Office. Required service data about these services is collected and sent to Microsoft, regardless of any other privacy-related policy settings that you have configured.
 
 For more information, see the following articles:
 
@@ -39,15 +39,15 @@ The following table provides a list of the essential services for Office and a d
 
 | **Service**  | **Description**  |
 | ------ | ---- |
-| [Authentication](#authentication-events) | Authentication is a cross-platform service that validates your Office user identity.  It is required to enable you to sign in to Office, activate your Office license, access your files stored in the cloud, and provides a consistent experience across Office sessions and your devices.    |
+| [Authentication](#authentication-events) | Authentication is a cross-platform service that validates your Office user identity. It's required to enable you to sign in to Office, activate your Office license, access your files stored in the cloud, and provides a consistent experience across Office sessions and your devices.    |
 | [Click-to-Run](#click-to-run-events) | Click-to-Run is the installation technology used to install and update Office on Windows. It checks for new versions of Office, and when a new version is available, downloads and installs it. Click-to-Run will detect the need for, perform the download of, and install Office updates, including security updates.     |
 |[Consent Service](#consent-service-events)|The Consent Service provides a consistent and comprehensive experience for managing user privacy settings associated with their accounts. The service is used to determine which privacy notifications need to be shown to the user when an application launches. It also tracks the responses the user has given to any prior privacy notifications. |
-| [Enhanced Configuration Service (ECS)](#enhanced-configuration-service-ecs-events) | ECS provides Microsoft the ability to reconfigure Office installations without the need for you to redeploy Office. It is used to control the gradual rollout of features or updates, while the impact of the rollout is monitored from diagnostic data being collected. It is also used to mitigate security or performance issues with a feature or update. In addition, ECS supports configuration changes related to diagnostic data to help ensure that the appropriate events are being collected. |
+| [Enhanced Configuration Service (ECS)](#enhanced-configuration-service-ecs-events) | ECS provides Microsoft the ability to reconfigure Office installations without the need for you to redeploy Office. It's used to control the gradual rollout of features or updates, while the impact of the rollout is monitored from diagnostic data being collected. It's also used to mitigate security or performance issues with a feature or update. In addition, ECS supports configuration changes related to diagnostic data to help ensure that the appropriate events are being collected. |
 | [Licensing](#licensing-events)     | Licensing is a cloud-based service that supports your Office activation for new installations and maintains the license on your devices after Office has been activated. It registers each of your devices and activates Office, checks the status of your Office subscription, and manages your product keys.    |
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|Microsoft AutoUpdate (MAU) is the technology used to update Microsoft applications produced for macOS, such as Office. MAU will detect the need for, perform the download of, and install application updates, including security updates.|
 |[OneNote sync](#onenote-sync-events)|OneNote for Mac only supports notebooks stored on the internet in OneDrive or SharePoint Online. OneNote for Mac continually syncs all of the user's notes with OneDrive or SharePoint Online. This lets users open, view, and edit their notebooks on all their devices so their notebooks are always up to date.
- [Services Configuration](#services-configuration-events)  | Services Configuration provides the ability to make updates to Office configuration settings to enable or disable client features. It is called every time an Office application is started and provides details about other Office configurations and services. Services Configuration also controls which services are designated as essential services.  |
-| [Telemetry ](#telemetry-events)  | The Telemetry service is used to collect diagnostic data from Office applications. It enables the collection of the diagnostic data generated by Office, both required and optional diagnostic data. It is also responsible for the collection of some required service data for Office.  |
+ [Services Configuration](#services-configuration-events)  | Services Configuration provides the ability to make updates to Office configuration settings to enable or disable client features. It's called every time an Office application is started and provides details about other Office configurations and services. Services Configuration also controls which services are designated as essential services.  |
+| [Telemetry ](#telemetry-events)  | The Telemetry service is used to collect diagnostic data from Office applications. It enables the collection of the diagnostic data generated by Office, both required and optional diagnostic data. It's also responsible for the collection of some required service data for Office.  |
 
 ## Events and data fields for essential services for Office
 
@@ -214,7 +214,7 @@ The following fields are collected:
 
   - **HrdShownTag** - the tag where the HRD sign in dialog is shown
 
-  - **IdentityProviderResulted** - the identity provider type it is requesting
+  - **IdentityProviderResulted** - the identity provider type it's requesting
 
   - **IdPFlowTag** - the tag that indicates the identity request result
 
@@ -591,7 +591,7 @@ The following fields are collected:
 
 - **MSAL_request_duration** - How long the request took from when MSAL's top level API was called, until we returned a result.
 
-- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Does not indicate if broker was actually invoked.
+- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Doesn't indicate if broker was actually invoked.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -613,7 +613,7 @@ The following fields are collected:
 
 - **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
 
-- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there's most likely a loop in the calling app.
 
 - **MSAL_write_account_status** - If there's an error writing to disk during an account cache, the error context goes here (Ex: Same as write_token_error)
 
@@ -625,7 +625,7 @@ The following fields are collected:
 
 - **oneauth_AppId** - Specifies the application Id of the application invoking OneAuth.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
 
@@ -746,7 +746,7 @@ The following fields are collected:
 
 - **MSAL_broker_accounts_count** - Number of accounts present in the broker.
 
-- **MSAL_broker_app_used** - True if this request reached the broker. False if this request could use the broker but did not. Blank/Omitted if the broker is not enabled or this request is not eligible for the broker.
+- **MSAL_broker_app_used** - True if this request reached the broker. False if this request could use the broker but didn't. Blank/Omitted if the broker isn't enabled or this request isn't eligible for the broker.
 
 - **MSAL_broker_version** - Version of the iOS/Android authentication brokers.
 
@@ -808,7 +808,7 @@ The following fields are collected:
 
 - **MSAL_request_duration** - How long that the request took from when MSAL's top level API was called until a result was returned.
 
-- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Does not indicate if broker was actually invoked.
+- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Doesn't indicate if broker was actually invoked.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -832,7 +832,7 @@ The following fields are collected:
 
 - **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
 
-- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there's most likely a loop in the calling app.
 
 - **MSAL_write_account_status** - If there's an error writing to disk during an account cache, the error context goes here
 
@@ -844,7 +844,7 @@ The following fields are collected:
 
 - **oneauth_AppId** - Specifies the application Id of the application invoking OneAuth.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
 
@@ -963,7 +963,7 @@ The following fields are collected:
 
 - **MSAL_broker_accounts_count** – Number of accounts present in the broker.
 
-- **MSAL_broker_app_used** - True if this request actually hit/invoked the broker. False if this request could use the broker but did not. Blank/Omitted if the broker is not enabled or this request is not eligible for the broker.
+- **MSAL_broker_app_used** - True if this request actually hit/invoked the broker. False if this request could use the broker but didn't. Blank/Omitted if the broker isn't enabled or this request isn't eligible for the broker.
 
 - **MSAL_browser_navigation_count** - Indicates the number of navigation events that occurred within MSAL interactive flows.
 
@@ -1025,7 +1025,7 @@ The following fields are collected:
 
 - **MSAL_request_duration** - Duration from when MSAL's top level API was called until we returned a result.
 
-- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Does not indicate if broker was actually invoked.
+- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Doesn't indicate if broker was actually invoked.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -1047,7 +1047,7 @@ The following fields are collected:
 
 - **MSAL_ui_event_count** - Number of UI prompts MSAL displayed on screen.
 
-- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there's most likely a loop in the calling app.
 
 - **MSAL_write_account_status** - If there's an error writing to disk during an account cache, the error context goes here (Ex: Same as write_token_error)
 
@@ -1059,7 +1059,7 @@ The following fields are collected:
 
 - **oneauth_AppId** - Specifies the application Id of the application invoking OneAuth.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_transactionuploadid** - Specifies the randomly generated internal GUID that maps to the specific invocation of a OneAuth API.
 
@@ -1412,7 +1412,7 @@ The following fields are collected:
 
 - **MSAL_request_duration** - How long the request took from when MSAL's top-level API was called, until we returned a result.
 
-- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Does not indicate if broker was actually invoked.
+- **MSAL_request_eligible_for_broker** - True if broker is enabled and request type is eligible to use the broker. Doesn't indicate if broker was actually invoked.
 
 - **MSAL_request_id** - Request ID for the last call we made to Microsoft's secure token service.
 
@@ -1450,7 +1450,7 @@ The following fields are collected:
 
 - **MSAL_wam_telemetry** - Contains a batch of WAM telemetry data in a JSON string that will be parsed and converted to the fields in this document that are sourced from WAM.
 
-- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there is most likely a loop in the calling app.
+- **MSAL_was_request_throttled** - True if MSAL throttled this request and prevented it from hitting network. If this is ever true, there's most likely a loop in the calling app.
 
 - **MSAL_write_account_status** - If there's an error writing to disk during an account cache, the error context goes here (Ex: Same as write_token_error)
 
@@ -1638,7 +1638,7 @@ The following fields are collected:
 
 - **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
@@ -1741,7 +1741,7 @@ The following fields are collected:
 
 - **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
@@ -1938,7 +1938,7 @@ specific device)
 
 - **oneauth_ServerErrorCode** - The server error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
-- **oneauth_SubStatus** - Integer code returned when there is a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
+- **oneauth_SubStatus** - Integer code returned when there's a user impacting issue; indicates reason for the failure (e.g., UserPasswordExpired = 6005, EnterProductKey = 6301, etc.)
 
 - **oneauth_SystemErrorCode** - The system error returned to OneAuth at the conclusion of this API call, if one was encountered.
 
@@ -2000,7 +2000,7 @@ The following fields are collected:
 
 - **InstallSource** - Where the client is installed from
 
-- **IsAADC** - Is there any account that has not passed the age eligibility check
+- **IsAADC** - Is there any account that hasn't passed the age eligibility check
 
 - **IsAppStoreSKU** - Is the account downloaded from Apple App store
 
@@ -2075,13 +2075,13 @@ The following fields are collected:
 
   - **Data\_BootStrapperStateFailure\_OExceptionType** – The type of exception we failed with
 
-  - **Data\_Culture** - the culture we are running this exe with, i.e. en-us
+  - **Data\_Culture** - the culture we're running this exe with, i.e. en-us
 
   - **Data\_HashedOLSToken** - a sha-256 hash of a token the OLS service gives us
 
   - **Data\_Platform** - x64 or x86 install
 
-  - **Data\_PrereqFailure\_Type** – The prerequisite failure we hit, i.e. the operating system is not supported
+  - **Data\_PrereqFailure\_Type** – The prerequisite failure we hit, i.e. the operating system isn't supported
 
   - **Data\_ProductReleaseId** - Product we're installing, i.e. Microsoft 365 Apps for enterprise
 
@@ -2187,7 +2187,7 @@ The following fields are collected:
 
 ### Office.ClickToRun.ODT
 
-Office set up and inventory data collected when an IT Admin is running the Office Deployment Tool Click-to-Run setup.exe to modify their users' installed Office products. It is used to measure success / failure of full IT Admin initiated Office installations including pre-requisite checks.
+Office set up and inventory data collected when an IT Admin is running the Office Deployment Tool Click-to-Run setup.exe to modify their users' installed Office products. It's used to measure success / failure of full IT Admin initiated Office installations including pre-requisite checks.
 
 The following fields are collected:
 
@@ -2205,11 +2205,11 @@ The following fields are collected:
 
   - **Data\_ConfigurationSource-** We the configuration.xml came from
 
-  - **Data\_Culture-** the culture we are running this exe with, i.e. en-us
+  - **Data\_Culture-** the culture we're running this exe with, i.e. en-us
 
   - **Data\_HashedOLSToken-** a sha-256 hash of a token the OLS service gives us
 
-  - **Data\_MigrateArchRequest-** If we are migrating the user from x86 to x64 or vice-versa
+  - **Data\_MigrateArchRequest-** If we're migrating the user from x86 to x64 or vice-versa
 
   - **Data\_MigrateArchRequestValid-** If we believe the migrate request is valid
 
@@ -2976,11 +2976,11 @@ The following fields are collected:
 
 - **Data_OldestPackageVersion** - The oldest version of Office on the machine 
 
-- **Data_ProductsToAdd** - What Office products we are adding 
+- **Data_ProductsToAdd** - What Office products we're adding 
 
 - **Data_ProductsToRemove** - What Office products we’re removing 
 
-- **Data_RemovingFixedProducts** - The products we are removing 
+- **Data_RemovingFixedProducts** - The products we're removing 
 
 - **Data_RemovingProducts** - The products we’re asked to remove 
 
@@ -3789,7 +3789,7 @@ The following fields are collected:
 
 ### Office.ClickToRun.Scenario.UpdateTaskUpdatedetection
 
-Office set up and inventory data collected when the Click-to-Run client checks if there is a new update available. Used to measure success / failure of Office update.
+Office set up and inventory data collected when the Click-to-Run client checks if there's a new update available. Used to measure success / failure of Office update.
 
 The following fields are collected:
 
@@ -4117,7 +4117,7 @@ The following fields are collected:
 
   - **Data\_status** – A short status of what happened during the update, such as Succeeded or Downloaded
 
-  - **Data\_targetBuild -** -The Office version that we are attempting to update to
+  - **Data\_targetBuild -** -The Office version that we're attempting to update to
 
 
 ### Office.ClickToRun.UniversalBootstrapper.Application2
@@ -4335,7 +4335,7 @@ This event is triggered when a user runs the Office installer to modify their Of
 
 *[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
-This event is used to acquire standard metadata on each run of the Inventory add-on, which is part of the Office Serviceability Manager and is used for inventory Office information on those machines for which an IT admin has opted in. The metadata of specific interest here is the session ID, and it is used for linking to other data stored within a per-tenant cloud service.
+This event is used to acquire standard metadata on each run of the Inventory add-on, which is part of the Office Serviceability Manager and is used for inventory Office information on those machines for which an IT admin has opted in. The metadata of specific interest here's the session ID, and it's used for linking to other data stored within a per-tenant cloud service.
 
 This event contains no extra fields since only the metadata is relevant.
 
@@ -4628,7 +4628,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.SkuDetailsNullDuringPurchaseEvent
 
-This event is triggered when user clicks on the "Start 30 days free trial” button but the Stock Keeping Unit (SKU) details are found to be null. The data is used to understand what the underlying reason is for when the user is trying to make a purchase. This is needed to log errors when the upsell experiences are not performing as expected and come up with solutions to improve reliability for users.
+This event is triggered when user clicks on the "Start 30 days free trial” button but the Stock Keeping Unit (SKU) details are found to be null. The data is used to understand what the underlying reason is for when the user is trying to make a purchase. This is needed to log errors when the upsell experiences aren't performing as expected and come up with solutions to improve reliability for users.
 
 The following fields are collected:
 
@@ -4654,7 +4654,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.StoreConnectionResponse
 
-This telemetry is logged when establishing connection with Google’s Billing Client fails during Paywall Initialization. The purpose of the telemetry is to determine reasons behind the connection failure in case it is not performing as expected.
+This telemetry is logged when establishing connection with Google’s Billing Client fails during Paywall Initialization. The purpose of the telemetry is to determine reasons behind the connection failure in case it's not performing as expected.
 
 The following fields are collected:
 
@@ -4667,7 +4667,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.StoreQueryPurchasesResponse
 
-This telemetry is logged when querying purchases with Google’s Billing Client fails. This telemetry is needed to know the reason of the failure if the response is not received as expected. 
+This telemetry is logged when querying purchases with Google’s Billing Client fails. This telemetry is needed to know the reason of the failure if the response isn't received as expected. 
 
 The following fields are collected:
 
@@ -4682,7 +4682,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.StoreSkuDetailsResponse
 
-This telemetry is logged when Google’s Billing Client does not return the prices for the product IDs passed to it. It is used to know the reasons for Sku Details fetching failure and the SKUs for which failure is happening during cases when the response is not as expected.
+This telemetry is logged when Google’s Billing Client doesn't return the prices for the product IDs passed to it. It's used to know the reasons for Sku Details fetching failure and the SKUs for which failure is happening during cases when the response isn't as expected.
 
 The following fields are collected:
 
@@ -4787,7 +4787,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 - **Office.iOS.Paywall.Paywall.Presented** - Data is collected when paywall control is shown to the user. The data is used to build a view to measure the conversion rate at every step and ensure that the user interface is performing as expected with users experiencing minimal friction during the purchase experience.
 
    The following fields are collected:
-  - **CPCVersion** - Integer -The version of customer paywall control we are presenting. We determine this based on experiment flag.
+  - **CPCVersion** - Integer -The version of customer paywall control we're presenting. We determine this based on experiment flag.
   - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”
   - **isFRE** - Boolean – Are we showing the First Run Experience or regular UI?
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
@@ -4865,14 +4865,14 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **productId** - String – App Store ID of the product for which user is viewing more benefits offered
    - **userDuration** - Double – Duration in milli-seconds the user spent on the Benefits Screen.
 
-- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it is performing as expected. 
+- **Office.iOS.Paywall.SKUChooser.ProductSwitched** - Usage telemetry to view the end user’s interaction with the UI provided to switch between different SKUs and ensure that it's performing as expected. 
 
    The following fields are collected:
 
   - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
   - **productId** - String – App Store ID of the product the user just switched to viewing from the available products on the SKU chooser.
 
-- **Office.iOS.Paywall.SKUChooser.Stats** - Data collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser. Using the information, we can ensure that the SKU Chooser is performing as expected, and we will be able to optimize and improve the end user experience.
+- **Office.iOS.Paywall.SKUChooser.Stats** - Data collected to see how the user entered the SKU Chooser, how much time the user spends on the SKU Chooser screen and why they exited the SKU Chooser. Using the information, we can ensure that the SKU Chooser is performing as expected, and we'll be able to optimize and improve the end user experience.
 
    The following fields are collected:
 
@@ -4929,7 +4929,7 @@ This event logs the user details before Paywall control is shown to the user. Th
 
 The following fields are collected: 
 
-- **canUserSeeUpsell** - Boolean: True if the SignedIn user is not underage and qualified to see upsell screen
+- **canUserSeeUpsell** - Boolean: True if the SignedIn user isn't underage and qualified to see upsell screen
 
 - **DidShowPromotedSubscription** - Boolean: True if the user has triggered first app boot from promoted subscription.
 
@@ -4981,7 +4981,7 @@ The following fields are collected:
 
 ### Office.Apple.Licensing.PremiumFeatureUpsell
 
-This event is triggered when a free user clicks to view a feature behind the paywall. The data is used to measure the interaction of users with the contextual upsell experience and ensure that it is working as expected.
+This event is triggered when a free user clicks to view a feature behind the paywall. The data is used to measure the interaction of users with the contextual upsell experience and ensure that it's working as expected.
 
 The following fields are collected:
 
@@ -5012,7 +5012,7 @@ The following fields are collected:
 
 - **Data_CampaignId** - Campaign ID for attribution
 
-- **Data_ContentId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+- **Data_ContentId** - Based on the Experience ID; it's mapped to a Flow ID and a Content ID
 
 - **Data_CorrelationVector** - Correlation Vector to correlate dime with partners that use correlation vector
 
@@ -5040,7 +5040,7 @@ The following fields are collected:
 
 - **Data_ExperienceId** - Experience to load 
 
-- **Data_FlowId** - Based on the Experience ID; it is mapped to a Flow ID and a Content ID
+- **Data_FlowId** - Based on the Experience ID; it's mapped to a Flow ID and a Content ID
 
 - **Data_Language** - Culture
 
@@ -5100,7 +5100,7 @@ The following fields are collected:
 
 This is collected when the user gets licensed and accepts EULA for the current license
 
-It is used to detect if the user is in a good state or not, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+It's used to detect if the user is in a good state or not, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5111,7 +5111,7 @@ The following fields are collected:
 
 ### Office.Licensing.ActivateDeviceEntitlement
 
-This event gets triggered when we are trying to activate a device-based perpetual Office offer for the user. We use this data to monitor the health of the systems and services.
+This event gets triggered when we're trying to activate a device-based perpetual Office offer for the user. We use this data to monitor the health of the systems and services.
 
 The following fields are collected:	
 
@@ -5130,7 +5130,7 @@ The following fields are collected:
 
 Post setting up the license on the machine, we attempt to activate the license by calling the AVS service. This reports the result of the activation call
 
-It is critical in detecting how many users are facing activation issues. We have anomaly detection to detect any regression. This is super critical as we have an external dependency on AVS and this signal points whether our external partners are healthy. It is also used for diagnostic purposes and system health if a user reports an issue with their machine
+It's critical in detecting how many users are facing activation issues. We have anomaly detection to detect any regression. This is super critical as we have an external dependency on AVS and this signal points whether our external partners are healthy. It's also used for diagnostic purposes and system health if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5140,13 +5140,13 @@ The following fields are collected:
 
 ### Office.Licensing.ActivationWizard 
 
-If we are not able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+If we aren't able to automatically activate the license for some reason, we show an activation wizard to the user. This reports that the wizard is being shown to the user. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
 
 ### Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
 
-This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there is a Lifecycle Programming Platform dynamic business bar campaign ready on disk. Data will be used to measure the health of the new Lifecycle Programming Platform dynamic licensing business bar technology.
+This event is triggered once for every licensing business bar type that will be shown that has the dynamic business bar flight on (treatment group). This data event reports whether there's a Lifecycle Programming Platform dynamic business bar campaign ready on disk. Data will be used to measure the health of the new Lifecycle Programming Platform dynamic licensing business bar technology.
 
 The following fields are collected:
 
@@ -5203,7 +5203,7 @@ The following fields are collected:
 
 ### Office.Licensing.Dialogs.WebViewDialog.Close
  
-This event is used as a signal to tell us that the in-app purchase experience is being closed either by the user or by the application. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+This event is used as a signal to tell us that the in-app purchase experience is being closed either by the user or by the application. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it's working as expected.  
  
 The following fields are collected:
  
@@ -5211,7 +5211,7 @@ The following fields are collected:
 
 ### Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
  
-This event is used as a signal to tell us that the in-app purchase experience attempted to load, but an error occurred which resulted in the dialog not showing. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+This event is used as a signal to tell us that the in-app purchase experience attempted to load, but an error occurred which resulted in the dialog not showing. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it's working as expected.  
  
 The following fields are collected:
   
@@ -5219,7 +5219,7 @@ The following fields are collected:
 
 ### Office.Licensing.Dialogs.WebViewDialog.Preload
  
-This event is used as a signal to tell us that the in-app purchase experience is being loaded in the background. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is working as expected.  
+This event is used as a signal to tell us that the in-app purchase experience is being loaded in the background. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it's working as expected.  
  
 The following fields are collected:
 
@@ -5235,7 +5235,7 @@ The following fields are collected:
 
 ### Office.Licensing.Dialogs.WebViewDialog.Timeout
 
-This event is used as a signal to tell us that the in-app purchase experience attempted to load but timed out. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it is performing as expected. 
+This event is used as a signal to tell us that the in-app purchase experience attempted to load but timed out. The data is used to monitor and alert on the health of the in-app purchase flow to ensure it's performing as expected. 
 
 The following fields are collected:
 
@@ -5244,7 +5244,7 @@ The following fields are collected:
 
 ### Office.Licensing.EnforceSignInQualified 
 
-This is the signal that tells us if the experiment that we are running to enforce user sign as part of licensing is successful. This is critical in detecting the success or failure of the experiment that is forcing the users to log in which is a required step for the modern licensing stack. Failure to sign in will result in the users not being able to use the app.
+This is the signal that tells us if the experiment that we're running to enforce user sign as part of licensing is successful. This is critical in detecting the success or failure of the experiment that is forcing the users to log in which is a required step for the modern licensing stack. Failure to sign in will result in the users not being able to use the app.
 
 The following fields are collected:
 
@@ -5275,7 +5275,7 @@ The following fields are collected:
 
 ### Office.Licensing.ExpirationDialogShown
 
-This is collected when we show the expiration dialog to the user that says that their license has expired. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+This is collected when we show the expiration dialog to the user that says that their license has expired. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5395,7 +5395,7 @@ The following fields are collected:
 
 - **CurrentTokenRemainingDays** - This tells us the number of days of validity left on the token when this search was made
 
-- **IsSilentRenewal** - This tells us the search is triggered because we are trying to opportunistically renew the session token on disk
+- **IsSilentRenewal** - This tells us the search is triggered because we're trying to opportunistically renew the session token on disk
 
 - **IsUserTriggeredRenewal** - This tells us the search is triggered by the user through a click on a message bar asking them to verify their account
 
@@ -5428,7 +5428,7 @@ The following fields are collected:
 
 ### Office.Licensing.FullValidation 
 
-This is collected on every session that reports the licensing state of the machine and reports the errors that the user is seeing due to which they are not able to use the application. This event indicates if the user's machine is healthy or not. We have anomaly detection set up for this event to indicate if a regression or activation mechanism is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health.
+This is collected on every session that reports the licensing state of the machine and reports the errors that the user is seeing due to which they aren't able to use the application. This event indicates if the user's machine is healthy or not. We have anomaly detection set up for this event to indicate if a regression or activation mechanism is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health.
 
 The following fields are collected:
 
@@ -5436,7 +5436,7 @@ The following fields are collected:
   
   - **ActivationAttributes** - Type of activation mechanism that the user is using.
 
-  - **IsSessionLicensing** – Whether we are currently running under shared computer activation mode or not 
+  - **IsSessionLicensing** – Whether we're currently running under shared computer activation mode or not 
 
   - **LicenseCategory** – Category of the Office license that the user is using 
 
@@ -5446,7 +5446,7 @@ The following fields are collected:
 
 ### Office.Licensing.GetEntitlement 
 
-We collect this when the user is setting up a device and we call our licensing service to detect if the logged in user has an Office entitlement or not. This reports the result of that call. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+We collect this when the user is setting up a device and we call our licensing service to detect if the logged in user has an Office entitlement or not. This reports the result of that call. It's critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5478,7 +5478,7 @@ The following fields are collected:
 
 ### Office.Licensing.Heartbeat 
 
-On every session, we check if 72 hours have passed since the last license renewal and try to extend the expiry of the current license. This event reports the success or failure of the call that we make to ensure we can extend the expiry of the license and keep the user's Office installation functional. It is critical in diagnosing subscription-related issues and service issues for the user and is critical in detecting regressions for already activated subscription users.
+On every session, we check if 72 hours have passed since the last license renewal and try to extend the expiry of the current license. This event reports the success or failure of the call that we make to ensure we can extend the expiry of the license and keep the user's Office installation functional. It's critical in diagnosing subscription-related issues and service issues for the user and is critical in detecting regressions for already activated subscription users.
 
 The following fields are collected:
 
@@ -5502,7 +5502,7 @@ The following fields are collected:
 
 - **StatusMessage** - Details of the status code, such as 'Successfully provisioned."
 
-- **UsingNulApi** - A Boolean indicating if we are using the new licensing stack.
+- **UsingNulApi** - A Boolean indicating if we're using the new licensing stack.
 
 
 ### Office.Licensing.InGrace
@@ -5515,7 +5515,7 @@ The following fields are collected:
 
 - **DaysRemaining** - Days remaining on the license
 
-- **Mode** - Which licensing stack we are using (0 = Legacy, 2 = NUL)
+- **Mode** - Which licensing stack we're using (0 = Legacy, 2 = NUL)
 
 - **ProductName** - The user-friendly name of the SKU
 
@@ -5524,7 +5524,7 @@ The following fields are collected:
 
 ### Office.Licensing.InRFM 
 
-If the device enters reduced functionality mode, we send out this signal to indicate that the machine is not in a healthy state. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+If the device enters reduced functionality mode, we send out this signal to indicate that the machine isn't in a healthy state. It's critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5540,7 +5540,7 @@ The following fields are collected:
 
 ### Office.Licensing.InstallKey
 
-This is collected when we try to install a key on the device to license the machine. It reports whether the installation was successful and if it was not then the error code. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+This is collected when we try to install a key on the device to license the machine. It reports whether the installation was successful and if it wasn't then the error code. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5550,7 +5550,7 @@ The following fields are collected:
 
 ### Office.Licensing.InvokeLicenseWizard
 
-In case we see problems with the Activation workflow, we trigger a license wizard and send out this signal to indicate the same. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+In case we see problems with the Activation workflow, we trigger a license wizard and send out this signal to indicate the same. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5578,7 +5578,7 @@ The following fields are collected:
 
 ### Office.Licensing.Licensed
 
-This event is triggered when the licensing flow has finished, and the user is in a licensed state. It is used to validate if the user has a valid license and/or if the licensing state changed.
+This event is triggered when the licensing flow has finished, and the user is in a licensed state. It's used to validate if the user has a valid license and/or if the licensing state changed.
 
 The following fields are collected:
 
@@ -5595,7 +5595,7 @@ The following fields are collected:
 
 ### Office.Licensing.LicensingBar
 
-If the device is facing licensing issues and we end up showing a busbar to the user, we send out this signal which also reports the type of busbar shown to the user. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+If the device is facing licensing issues and we end up showing a busbar to the user, we send out this signal which also reports the type of busbar shown to the user. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5607,7 +5607,7 @@ The following fields are collected:
 
 ### Office.Licensing.LicExitOfficeProcess 
 
-If we end up closing or crashing Office due to a licensing issue, we send out this signal to indicate the same. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+If we end up closing or crashing Office due to a licensing issue, we send out this signal to indicate the same. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5615,7 +5615,7 @@ The following fields are collected:
 
 ### Office.Licensing.LoadIdentityTicket
 
-In the process of trying to license the device, the app tries load the user's identity in order to see if the user has Office entitlement or not. This event reports the success or failure of the same along with the error code. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+In the process of trying to license the device, the app tries load the user's identity in order to see if the user has Office entitlement or not. This event reports the success or failure of the same along with the error code. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5633,7 +5633,7 @@ The following fields are collected:
 
 ### Office.Licensing.LVUX.EULAExplicitCrash 
 
-This is collected if we showed the EULA to the user and the user chose to not accept it as a result of which we crash/close the app. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+This is collected if we showed the EULA to the user and the user chose to not accept it as a result of which we crash/close the app. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5643,41 +5643,45 @@ The following fields are collected:
 
 ### Office.Licensing.NextUserLicensingEligible 
 
-This signal tells us if a user is qualified to move to our new licensing stack. This is critical to quantify the impact on existing users as we roll out our new licensing stack and make sure that users are not losing functionality.
+This signal tells us if a user is qualified to move to our new licensing stack. This is critical to quantify the impact on existing users as we roll out our new licensing stack and make sure that users aren't losing functionality.
 
 This event collects no fields.
 
 ### Office.Licensing.Nul.Fetcher.FetchModelFromOls
 
-When the device is on the modern licensing stack, we try to get a license file directly from the service. This event reports the success or failure along with the error code of that service call. It is critical to detect if the user is in a good state on the modern licensing stack, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+When the device is on the modern licensing stack, we try to get a license file directly from the service. This event reports the success or failure along with the error code of that service call. It's critical to detect if the user is in a good state on the modern licensing stack, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
-  - **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it has not been tampered with
+  - **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it hasn't been tampered with
 
-  - **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it has not been tampered with
+  - **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it hasn't been tampered with
 
 ### Office.Licensing.Nul.Validation.FullValidation 
 
-This is collected on every session of a device that is running on the modern licensing stack. It reports the licensing state of the machine and reports the errors that the user is seeing due to which they are not able to use the app. This event indicates if the user's machine is healthy on the modern licensing stack. We have anomaly detection set up for this event to indicate if a regression is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health.
+This is collected on every session of a device that is running on the modern licensing stack. It reports the licensing state of the machine and reports the errors that the user is seeing due to which they aren't able to use the app. This event indicates if the user's machine is healthy on the modern licensing stack. We have anomaly detection set up for this event to indicate if a regression is causing bad user behavior. This is also critical when diagnosing user issues and for monitoring system health.
 
 The following fields are collected:
 
-  - **Acid** - A GUID identifier representing the Office product that the user is licensed for 
+- **Acid** - A GUID identifier representing the Office product that the user is licensed for 
 
-  - **AllAcids** – List of all the GUIDs of the product that the user is currently licensed for 
+- **AllAcids** – List of all the GUIDs of the product that the user is currently licensed for 
 
-  - **Category** - Category of the Office license that the user is using 
+- **Category** - Category of the Office license that the user is using 
 
-  - **DaysRemaining** – Number of days remaining before the current Office license expires 
+- **DaysRemaining** – Number of days remaining before the current Office license expires 
 
-  - **LicenseId** – An alphanumeric identifier of the license that was issued to the user 
+- **EntitlementValidityDaysRemaining** - Number of days remaining before license on the user's Microsoft or organizational account expires. *[This field was previously named DaysRemaining.]*
 
-  - **LicenseType** - Type of the Office license that the user is using 
+- **LicenseId** – An alphanumeric identifier of the license that was issued to the user 
+
+- **LicenseType** - Type of the Office license that the user is using 
+
+- **LicenseValidityDaysRemaining** - Number of days remaining before the license file on disk expires. 
 
 ### Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
-This is licensing metadata that is collected from the device on every boot that reports the license acid, license status, type and other properties of the license that are critical in identifying the features set available to the user. This is critical in identifying the feature set available to the user and if any functionality is missing for the user. It is also used for Daily active users/Monthly active user calculations and various other reports by various teams across Office as this tells the type product that the user is using, whether it is a subscription product and whether they are missing any critical functionality.
+This is licensing metadata that is collected from the device on every boot that reports the license acid, license status, type and other properties of the license that are critical in identifying the features set available to the user. This is critical in identifying the feature set available to the user and if any functionality is missing for the user. It's also used for Daily active users/Monthly active user calculations and various other reports by various teams across Office as this tells the type product that the user is using, whether it's a subscription product and whether they're missing any critical functionality.
 
 The following fields are collected:
 
@@ -5685,11 +5689,11 @@ The following fields are collected:
 
   - **IsRFM** – Indicates whether the user is in reduced functionality mode or not 
 
-  - **IsSCA** – Indicates whether we are running in Shared computer activation mode 
+  - **IsSCA** – Indicates whether we're running in Shared computer activation mode 
 
   - **IsSubscription** – Indicates whether the user is using a subscription license or not 
 
-  - **IsvNext** – Indicates whether we are using the new modern licensing stack or not 
+  - **IsvNext** – Indicates whether we're using the new modern licensing stack or not 
 
   - **LicenseCategory** - Category of the Office license that the user is using 
 
@@ -5707,21 +5711,21 @@ The following fields are collected:
 
 ### Office.Licensing.OnlineRepair 
 
-If we are not able to activate a user for some reason and have to show them a dialog that asks them to go online and try repair steps, this event is fired. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+If we aren't able to activate a user for some reason and have to show them a dialog that asks them to go online and try repair steps, this event is fired. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 This event collects no fields.
 
 ### Office.Licensing.OOBE.HandleDigitalAttachFailure
 
-This event is triggered when the service check (see Office.Licensing.OOBE.SearchForDigitalAttach) didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
+This event is triggered when the service check (see Office.Licensing.OOBE.SearchForDigitalAttach) didn’t find a claimable Digital Attach offer on this device. Based on the different conditions of the device, we'll show different dialogs to user. This event will log various scenarios on how we handle digital attach failure.
 
 The following fields are collected:
 
 - **Activity_Result_Tag** tells us how we transition user to various error states.
    - 0x222e318f - We should keep searching Activation for Office offer.
-   - 0x222e318e - We will fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach offer.
+   - 0x222e318e - We'll fall back to OEM mode in this session for when this device doesn’t come with any Digital Attach offer.
    - 0x222e318d - No internet connectivity, which will lead us to show NoInternetConnectivity dialog to user 
-   - 0 - We will show various error UI to user based on their specific error code.
+   - 0 - We'll show various error UI to user based on their specific error code.
 
 - **Data_DigitalAttachErrorType** - tells us what the specific error code is from the service call.
 
@@ -5730,7 +5734,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.HandleDigitalAttachSuccess
 
-This event is triggered when the service check finds a claimable Digital Attach offer on this device. Based on the different conditions of the device, we will show different dialogs to user. This event will log various scenarios on how we handle digital attach success.
+This event is triggered when the service check finds a claimable Digital Attach offer on this device. Based on the different conditions of the device, we'll show different dialogs to user. This event will log various scenarios on how we handle digital attach success.
 
 The following fields are collected:
 
@@ -5789,7 +5793,7 @@ The following fields are collected:
 
 ### Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
 
-Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user is not signed in with a Microsoft Account to allow us to monitor the health of the system and services.
+Original Equipment Manufacturers (OEM) sell machines that come with Office (one-year subscriptions or perpetual) which are paid for when the customer purchases their machine. This event tracks when an Office pre-entitlement is found for the device and the user isn't signed in with a Microsoft Account to allow us to monitor the health of the system and services.
 
 The following fields are collected:
 
@@ -5836,7 +5840,7 @@ The following fields are collected:
 
 *[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
-We have an experiment that gives the user an option to try and set up autopay for Office directly from an app without ever leaving the context of the app. This reports the success or failure of that experiment along with the error code It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+We have an experiment that gives the user an option to try and set up autopay for Office directly from an app without ever leaving the context of the app. This reports the success or failure of that experiment along with the error code It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5844,7 +5848,7 @@ The following fields are collected:
 
 ### Office.Licensing.SearchForSessionToken
 
-If the user is running under shared computer activation mode, we try to search for a session token on the machine which allows the user to use the app. This event reports the success or failure of the scenario along with the error code. It is critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+If the user is running under shared computer activation mode, we try to search for a session token on the machine which allows the user to use the app. This event reports the success or failure of the scenario along with the error code. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5866,7 +5870,7 @@ The following fields are collected:
 
 ### Office.Licensing.ShowNewDeviceActivationDialog
 
-On the first boot of an Office app, we will try to show a sign in dialog pre-populated with the credentials the user employed to download Office. The user can then continue to sign-in with those credentials, use different credentials or dismiss the dialog. This event reports the action taken by the user when presented with this dialog. It is critical for detecting if a user is in a good state on the modern licensing stack, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+On the first boot of an Office app, we'll try to show a sign in dialog pre-populated with the credentials the user employed to download Office. The user can then continue to sign-in with those credentials, use different credentials or dismiss the dialog. This event reports the action taken by the user when presented with this dialog. It's critical for detecting if a user is in a good state on the modern licensing stack, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -5874,7 +5878,7 @@ The following fields are collected:
 
 ### Office.Licensing.SkuToSkuConversion
 
-As part of licensing the user, if we have to change the user's SKU from one SKU to another, we send this signal out along with the success or failure code. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+As part of licensing the user, if we have to change the user's SKU from one SKU to another, we send this signal out along with the success or failure code. It's critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5889,7 +5893,7 @@ The following fields are collected:
 
 ### Office.Licensing.StartTrialPass
 
-This event is triggered when the user accepts a 5-day, or 10-day trial pass and an associated license gets installed. It is used to verify that the user can start the 5-day or 10-day Trial pass.
+This event is triggered when the user accepts a 5-day, or 10-day trial pass and an associated license gets installed. It's used to verify that the user can start the 5-day or 10-day Trial pass.
 
 The following fields are collected:
 
@@ -5932,7 +5936,7 @@ The following fields are collected:
 
 OEMs sell machines that come with Office (one-year subscriptions or perpetual).  These Office products are paid for when the customer purchases their machine. Machines that are set up with a specific regkey (OOBEMode: OEMTA) might have an Office binding associated with it.  When we boot Office on such machines, we perform service checks to see if an Office binding corresponding to the machine is found.
 
-This telemetry activity tracks the success and failure points in searching for a binding so that we can ensure that machines that do have a binding can successfully fetch them, and that our services are healthy.  This activity does not track machines that turn out to not have any bindings associated with them after we check with our services.
+This telemetry activity tracks the success and failure points in searching for a binding so that we can ensure that machines that do have a binding can successfully fetch them, and that our services are healthy.  This activity doesn't track machines that turn out to not have any bindings associated with them after we check with our services.
 
 The following fields are collected:
 
@@ -6041,7 +6045,7 @@ The following fields are collected:
 
 ### Office.Licensing.TelemetryFlow.TrialFlow
 
-When an unlicensed user of Office pre-installed on a machine is attempting to get a trial, this event gets triggered.  It is used to see which path the user would follow to get a trial and if there were any errors while getting the trial through in-app purchases.  Depending on the user action and the result of the in-app purchase the user could end up being unlicensed.
+When an unlicensed user of Office pre-installed on a machine is attempting to get a trial, this event gets triggered.  It's used to see which path the user would follow to get a trial and if there were any errors while getting the trial through in-app purchases.  Depending on the user action and the result of the in-app purchase the user could end up being unlicensed.
 
 The following fields are collected:
 
@@ -6067,7 +6071,7 @@ The following fields are collected:
 
 ### Office.Licensing.UseGraceKey
 
-For some reason if we are unable to license the user, we install a grace key and send out this signal that signifies. It is critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
+For some reason if we're unable to license the user, we install a grace key and send out this signal that signifies. It's critical in detecting if the user is in a good state and missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
 The following fields are collected:
 
@@ -6078,7 +6082,7 @@ The following fields are collected:
 
 ### Office.Omex.Checkout.Analytics.CheckoutStageChangeActivity
 
-The event is triggered as the user progresses through the steps required to complete purchase. It is used to monitor the purchase flow in various dimensions and troubleshoot its performance.
+The event is triggered as the user progresses through the steps required to complete purchase. It's used to monitor the purchase flow in various dimensions and troubleshoot its performance.
 
 The following fields are collected:
 
@@ -6119,7 +6123,7 @@ The following fields are collected:
 
 ### Office.Omex.Checkout.MonitoringEvent
 
-The event is triggered by the finished service call or operation triggered by the user. It is used to monitor the performance and diagnose the issues with the checkout process and services it is backed with.
+The event is triggered by the finished service call or operation triggered by the user. It's used to monitor the performance and diagnose the issues with the checkout process and services it's backed with.
 
 The following fields are collected:
 
@@ -6179,9 +6183,9 @@ This event is used to capture events to quantify the impact of the bug due to wh
 
 The following fields are collected:
 
-- **PriceNotFound** - Prices is not found from the store.
+- **PriceNotFound** - Prices isn't found from the store.
 
-- **StoreNotInitilized** - When store is not initialized successfully.
+- **StoreNotInitilized** - When store isn't initialized successfully.
 
 
 ## Microsoft AutoUpdate (MAU) events
@@ -6308,7 +6312,7 @@ The following fields are collected:
 
 ### appinstall.connecttoxpc
 
-This event denotes that errors occurred connecting to MAU Helper (a component that performs application installation).  This event denotes a potential corruption of the MAU application. The device will not be able to install updates.
+This event denotes that errors occurred connecting to MAU Helper (a component that performs application installation).  This event denotes a potential corruption of the MAU application. The device won't be able to install updates.
 
 The following fields are collected:    
 
@@ -6564,7 +6568,7 @@ The following fields are collected:
 
 - **Reason** - String for detailed reason associated with the event. For this feature, it would contain the following strings:
 
-  - **Campaign.Found** - This is triggered when there is a campaign available to the client after the client starts. A campaign is served to the MAU client when the client is not able to update the Office application. This event will confirm that the campaign was served to the client correctly.
+  - **Campaign.Found** - This is triggered when there's a campaign available to the client after the client starts. A campaign is served to the MAU client when the client isn't able to update the Office application. This event will confirm that the campaign was served to the client correctly.
 
   - **Campaign.Hyperlink.Clicked** - This is triggered when the hyperlink containing instructions on the campaign dialog is clicked by the user. The link will contain information to fix the problem or to update the MAU app itself. The event shows whether the user clicked on the link provided in the campaign and was able to fix the problem.
 
@@ -6883,7 +6887,7 @@ The following fields are collected:
 
 ### configuration.metadata
 
-This event is logged whenever MAU is initializing. It is a MAU heartbeat type of event
+This event is logged whenever MAU is initializing. It's a MAU heartbeat type of event
 
 The following fields are collected:
 
@@ -7014,7 +7018,7 @@ The following fields are collected:
     
 ### controller.alertmanager.tmpdiskfull
 
-This event denotes that insufficient disk space was detected. We will not be able to install updates due to insufficient disk space.
+This event denotes that insufficient disk space was detected. We won't be able to install updates due to insufficient disk space.
 
 The following fields are collected:
 
@@ -7096,7 +7100,7 @@ The following fields are collected:
 
 ### controller.alertmanager.tmpdiskfullretrycancel
 
-This event denotes that a cancellation on an install-retry attempt after Insufficient disk space was detected. We use this event to determine if our fallback mechanism was enough to guide the user thru the update process when insufficient disk was detected.
+This event denotes that a cancellation on an install-retry attempt after Insufficient disk space was detected. We use this event to determine if our fallback mechanism was enough to guide the user through the update process when insufficient disk was detected.
 
 The following fields are collected:
 
@@ -7671,7 +7675,7 @@ The following fields are collected:
 
 ### controller.downloadwindow.downloadtasknull
 
-This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates that Microsoft Autoupdate was asked to pause/resume a download but could not find corresponding download manager.
+This event denotes that a failure occurred when downloading an update. We use this event for ensuring updates are offered and downloaded correctly. This event indicates that Microsoft Autoupdate was asked to pause/resume a download but couldn't find corresponding download manager.
 
 The following fields are collected:
 
@@ -8491,7 +8495,7 @@ The following fields are collected:
     
 ### controller.updatewindow.networkretrycancel
 
-This event denotes that a retry could not be triggered at the Update Sheet due to network failure. This event indicates user elected to cancel updates after being alerted of network becoming unavailable. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that a retry couldn't be triggered at the Update Sheet due to network failure. This event indicates user elected to cancel updates after being alerted of network becoming unavailable. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8532,7 +8536,7 @@ The following fields are collected:
 
 ### controller.updatewindow.networkunavailable
 
-This event denotes that network connectivity was suddenly lost. This event indicates server is not reachable when attempting to download an update package. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that network connectivity was suddenly lost. This event indicates server isn't reachable when attempting to download an update package. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -8614,7 +8618,7 @@ The following fields are collected:
 
 ### controller.updatewindow.noupdatestoselect
 
-This event denotes that an error occurred resulting in an empty list of updates. This event indicates Microsoft Autoupdate is showing an empty update sheet. This should not happen. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that an error occurred resulting in an empty list of updates. This event indicates Microsoft Autoupdate is showing an empty update sheet. This shouldn't happen. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -9830,7 +9834,7 @@ The following fields are collected:
 
 ### fba.changelastupdate
 
-This event reports on when Microsoft Auto Update (MAU) has checked for updates. We use this event to debug when a particular device has not been offered an update for an extended period of time.
+This event reports on when Microsoft Auto Update (MAU) has checked for updates. We use this event to debug when a particular device hasn't been offered an update for an extended period of time.
 
 The following fields are collected:
 
@@ -10351,7 +10355,7 @@ The following fields are collected:
 
 - **PipelineInfo_ClientIp** - The first three octets of the IP address
 
-- **Reason** - Static text indicating a silent update cannot proceed as UI is open
+- **Reason** - Static text indicating a silent update can't proceed as UI is open
 
 - **SessionId** - The identifier for the session
 
@@ -10399,7 +10403,7 @@ The following fields are collected:
 
 ### fba.multipledaemon
 
-This event indicates that another instance of Microsoft Update Assistant has been detected and current instance will be terminated. We will be using this event to determine volume of devices that attempt to run multiple instances of Update Assistant and design a workaround if need arises.
+This event indicates that another instance of Microsoft Update Assistant has been detected and current instance will be terminated. We'll be using this event to determine volume of devices that attempt to run multiple instances of Update Assistant and design a workaround if need arises.
 
 The following fields are collected:
 
@@ -11194,7 +11198,7 @@ The following fields are collected:
 
 ### fbasilentupdate.downloadinbackground
 
-This event denotes that we are starting the download a set of updates in the background (we log the number of updates being concurrently downloaded). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event denotes that we're starting the download a set of updates in the background (we log the number of updates being concurrently downloaded). We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -12281,7 +12285,7 @@ The following fields are collected:
 
 ### gui.updatemanager.applaunchduringupdate
 
-This event reports that an application was launched while it was being updated, and Microsoft AutoUpdate is terminating the launched application. Note that launching an application while being updated may result in application corruption. We use this event to ensure update process is not impacted by launched application before it is ready to be used.
+This event reports that an application was launched while it was being updated, and Microsoft AutoUpdate is terminating the launched application. Note that launching an application while being updated may result in application corruption. We use this event to ensure update process isn't impacted by launched application before it's ready to be used.
  
 The following fields are collected:
 
@@ -12766,7 +12770,7 @@ The following fields are collected:
 
 ### installedapp.invalidbundle
 
-This event indicates Microsoft Autoupdate could not retrieve bundle information for the registered application at given path. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates Microsoft Autoupdate couldn't retrieve bundle information for the registered application at given path. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -13118,7 +13122,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it is codesigned. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **Payload** - Contains an indication whether Daemon component exists at expected location and whether it's codesigned. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
@@ -13159,7 +13163,7 @@ The following fields are collected:
 
 - **HowTocheck** - The preference for checking of updates
 
-- **Payload** - Contains an indication whether PrivilegedHelperTool component exists at expected location and whether it is codesigned.
+- **Payload** - Contains an indication whether PrivilegedHelperTool component exists at expected location and whether it's codesigned.
 
 - **PipelineInfo_ClientCountry** - The device country or region (based on IP address)
 
@@ -13170,7 +13174,7 @@ The following fields are collected:
     
 ### installupdatestask.applaunched
 
-This event indicates Microsoft Autoupdate has detected application launch for a blocked update but could not find matching installer. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event indicates Microsoft Autoupdate has detected application launch for a blocked update but couldn't find matching installer. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -13604,7 +13608,7 @@ The following fields are collected:
 
 ### installupdatestask.retryresponse
 
-This event logs that a retry did not work. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+This event logs that a retry didn't work. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -15702,7 +15706,7 @@ The following fields are collected:
 
 ### update.previousidnil
 
-This event indicates a repair update package is being downloaded but there is no previous download information. This event is critical and is used to investigate reported errors. 
+This event indicates a repair update package is being downloaded but there's no previous download information. This event is critical and is used to investigate reported errors. 
 
 The following fields are collected:
 
@@ -16036,7 +16040,7 @@ The following fields are collected:
 
 ### updatecore.server.nullurl
 
-This event reports an error indicating that a given server could not be reached. This event is used to determine update failure rate caused by network issue. 
+This event reports an error indicating that a given server couldn't be reached. This event is used to determine update failure rate caused by network issue. 
 
 The following fields are collected:
 
@@ -16076,7 +16080,7 @@ The following fields are collected:
 
 ### updatefilterhelper.cannotretrievebuilddate
 
-We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log that we could not retrieve the date from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered isn't older than certain number of days. Here we log that we couldn't retrieve the date from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -16157,7 +16161,7 @@ The following fields are collected:
 
 ### updatefilterhelper.invalidappidfromwebservices
 
-This event reports an error indicating that application ID retrieved from web response is not in expected format. This event is used to investigate reported error.
+This event reports an error indicating that application ID retrieved from web response isn't in expected format. This event is used to investigate reported error.
 
 The following fields are collected:
 
@@ -16197,7 +16201,7 @@ The following fields are collected:
 
 ### updatefilterhelper.invalidresponsefromupdatefiltering
 
-We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered isn't older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -16238,7 +16242,7 @@ The following fields are collected:
 
 ### updatefilterhelper.missingbuilddate
 
-We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered isn't older than certain number of days. Here we log the date is missing from the app metadata. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -16279,7 +16283,7 @@ The following fields are collected:
 
 ### updatefilterhelper.updatebypassedoldage
 
-We can filter updates via MAU Service only when the update being offered is not older than certain number of days. Here we log the service is bypassed due to old update date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+We can filter updates via MAU Service only when the update being offered isn't older than certain number of days. Here we log the service is bypassed due to old update date. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -16320,7 +16324,7 @@ The following fields are collected:
 
 ### updatefinder.appspecificupdatefilter
 
-This event is triggered when the user checks for updates manually from Microsoft Auto Update (MAU) or when MAU periodically checks for updates in the background, and when app update has been found and there is an app specific update filter specified. This data will be aggregated to determine usage of update filter, how many app updates are filtered, and determine the health of the feature.
+This event is triggered when the user checks for updates manually from Microsoft Auto Update (MAU) or when MAU periodically checks for updates in the background, and when app update has been found and there's an app specific update filter specified. This data will be aggregated to determine usage of update filter, how many app updates are filtered, and determine the health of the feature.
 
 The following fields are collected
 
@@ -16907,7 +16911,7 @@ The following fields are collected:
     
 ### updatefinder.suite.missingcollateral
 
-Suite Update - We log whenever a suite update is not applicable due to collateral missing. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+Suite Update - We log whenever a suite update isn't applicable due to collateral missing. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -16948,7 +16952,7 @@ The following fields are collected:
 
 ### updatefinder.suite.staleversion
 
-Suite Update - We log whenever a suite update is not applicable due to baseline version being too old. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+Suite Update - We log whenever a suite update isn't applicable due to baseline version being too old. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -17030,7 +17034,7 @@ The following fields are collected:
 
 ### updatefinder.suite.updatenotapplicabledefaultpath
 
-Suite Update - We log whenever a suite update is not offered due not all suite apps being install under the default path. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+Suite Update - We log whenever a suite update isn't offered due not all suite apps being install under the default path. We log the baseline version and the Suite AppId. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -17071,7 +17075,7 @@ The following fields are collected:
     
 ### updatefinder.suite.updatenotapplicableversion
 
-Suite Update - We log whenever a suite update is not offered due not all suite apps being in the same baseline version. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+Suite Update - We log whenever a suite update isn't offered due not all suite apps being in the same baseline version. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -17112,7 +17116,7 @@ The following fields are collected:
 
 ### updatefinder.suite.updatenotoffered
 
-Suite Update - We log whenever a suite update is not offered due to suite size being larger than individual updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
+Suite Update - We log whenever a suite update isn't offered due to suite size being larger than individual updates. We use this event for ensuring the update process works as expected and to help troubleshoot errors.
  
 The following fields are collected:
 
@@ -17745,7 +17749,7 @@ The following fields are collected:
 
 ### Office.OneNote.Storage.NotebookSyncResult
  
-This event logs notebook sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score.
+This event logs notebook sync result. It's used for figuring out how many unique sync targets when calculating OneNote sync score.
  
 The following fields are collected
 
@@ -17825,7 +17829,7 @@ The following fields are collected
 
 ### Office.OneNote.Storage.RealTime.WebSocketSessionInfo
  
-This event logs WebSocket sync result for both OneNote modern page content sync modern hierarchy sync. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
+This event logs WebSocket sync result for both OneNote modern page content sync modern hierarchy sync. It's used for figuring out how many unique sync targets when calculating OneNote sync score. It's also used for OneNote modern sync performance dashboard.
  
 The following fields are collected:
  
@@ -17849,7 +17853,7 @@ The following fields are collected:
 
 - **FirstUpdateSize** - first update message length
 
-- **HasError** - whether there is an error during the WebSocket session 
+- **HasError** - whether there's an error during the WebSocket session 
 
 - **IsEducationNotebook** - Is the current notebook education notebook or not
 
@@ -17877,7 +17881,7 @@ The following fields are collected:
 
 ### Office.OneNote.Storage.SectionSyncResult
  
-This event logs section sync result. It is used for figuring out how many unique sync targets when calculating OneNote sync score. It is also used for OneNote modern sync performance dashboard.
+This event logs section sync result. It's used for figuring out how many unique sync targets when calculating OneNote sync score. It's also used for OneNote modern sync performance dashboard.
  
 The following fields are collected
 
@@ -17938,7 +17942,7 @@ The following fields are collected
 
 ### Office.OneNote.Storage.SyncScore
  
-This event logs all negative factors in sync experience that are visible to users. It is used to calculate OneNote sync score, which is a critical metric to evaluate OneNote users' sync experience.
+This event logs all negative factors in sync experience that are visible to users. It's used to calculate OneNote sync score, which is a critical metric to evaluate OneNote users' sync experience.
  
 The following fields are collected
 
@@ -17986,19 +17990,19 @@ The following fields are collected:
 
 ### OneNote.Storage.ConnectivityChanged
 
-The event logs if a user has internet connectivity or not. This is used to correlate the other sync health performance metrics by allowing us to ignore events that occur while a user does not have internet connectivity as we do not expect our service latency to be acceptable without internet connectivity. This allows us to calculate an accurate session count for our metrics across slices of customers (per-tenant, per-sector). We also use it to filter error reports as there are numerous sync errors that we expect to occur without network connectivity but that warrant investigation otherwise.
+The event logs if a user has internet connectivity or not. This is used to correlate the other sync health performance metrics by allowing us to ignore events that occur while a user doesn't have internet connectivity as we don't expect our service latency to be acceptable without internet connectivity. This allows us to calculate an accurate session count for our metrics across slices of customers (per-tenant, per-sector). We also use it to filter error reports as there are numerous sync errors that we expect to occur without network connectivity but that warrant investigation otherwise.
 
-If we do not receive this data, we will not be able to accurately monitor our products performance or determine if errors experienced by a user are expected or require further investigation.
+If we don't receive this data, we won't be able to accurately monitor our products performance or determine if errors experienced by a user are expected or require further investigation.
 
 The following fields are collected:
 
-- **InternetConnectivityNowAvailable** -  If the connectivity state has been changed so it is now Internet
+- **InternetConnectivityNowAvailable** -  If the connectivity state has been changed so it's now Internet
 
 ### OneNote.Storage.LegacyInboundLatency
 
 The critical signal used to track the performance of inbound sync operations that communicate directly with SharePoint including correlating information allowing us to monitor and investigate the performance of uploading data to our service. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
 
-This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data to our service, information about the data they are uploading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data it will prevent us from ensuring adequate download performance when a user syncs changes from SharePoint to their computer.
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data to our service, information about the data they're uploading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It's also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we don't have this data it will prevent us from ensuring adequate download performance when a user syncs changes from SharePoint to their computer.
 
 The following fields are collected: 
 
@@ -18012,7 +18016,7 @@ The following fields are collected:
 
 The critical signal used to track the performance of outbound sync operations that communicate directly with SharePoint including correlating information allowing us to monitor and investigate the performance of uploading data to our service. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
 
-This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we do not have this data, it will prevent us from ensuring adequate performance when syncing users changes up to SharePoint. 
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It's also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. If we don't have this data, it will prevent us from ensuring adequate performance when syncing users changes up to SharePoint. 
 
 The following fields are collected: 
 
@@ -18026,7 +18030,7 @@ The following fields are collected:
 
 The critical signal used to track performance when a user inbounds a file data object (i.e. an embedded file or image) which is downloaded directly from our service and not as part of a sync operation on a page, section or notebook. This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
 
-This is used to ensure service health and performance by allowing us to see which tenants are experiencing an unacceptably slow download of data from our service, and how widespread within a tenant that latency issue is, and report our behavior over time allowing us to measure service performance trends. If we see an unacceptable latency for a file object, we will also use this data to correlate that with other signals from the client and service regarding the object to make improvements to our download process. We also split the data based on the extension of the file object downloaded as we have different expectations based on whether the file is presented inline in our canvas (e.g. an image) or is a non-inline file (such as a text document). If we do not receive this data, it will prevent us from monitoring the performance of these downloads
+This is used to ensure service health and performance by allowing us to see which tenants are experiencing an unacceptably slow download of data from our service, and how widespread within a tenant that latency issue is, and report our behavior over time allowing us to measure service performance trends. If we see an unacceptable latency for a file object, we'll also use this data to correlate that with other signals from the client and service regarding the object to make improvements to our download process. We also split the data based on the extension of the file object downloaded as we have different expectations based on whether the file is presented inline in our canvas (e.g. an image) or is a non-inline file (such as a text document). If we don't receive this data, it will prevent us from monitoring the performance of these downloads
 
 The following fields are collected: 
 
@@ -18040,11 +18044,11 @@ The following fields are collected:
 
 The critical signal used to track performance of inbound sync operations including correlating information allowing us to monitor and investigate the performance of downloading data from our service (onenote.com). This signal is only collected for the worst performing download in the last 300 seconds (the number of seconds is configurable by Microsoft depending on service performance and condition).
 
-This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data from our service, information about the data they were downloading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. 
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow inbound of data from our service, information about the data they were downloading when they experienced the slow inbound and how widespread within a tenant that latency issue is. It's also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. 
 
-If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify client-side performance regressions allowing us to deliver a more performant service.
+If we see an unacceptable latency for a section or notebook we'll also use this data to correlate that with other signals from the client and service regarding the same document to identify client-side performance regressions allowing us to deliver a more performant service.
 
-If we do not receive this data, we will be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
+If we don't receive this data, we'll be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
 
 The following fields are collected:
 
@@ -18056,7 +18060,7 @@ The following fields are collected:
 
 - **NotebookId** - The ID of the notebook that this upload is part of
 
-- **ResourceId** - The ID of the resource that we are uploading
+- **ResourceId** - The ID of the resource that we're uploading
 
 - **SectionId** - The ID of the section that this upload is part of
 
@@ -18070,11 +18074,11 @@ The following fields are collected:
 
 The critical signal used to track the performance of outbound sync operations including correlating information allowing us to monitor and investigate the performance of uploading data to our service (onenote.com)
 
-This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It is also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. We will also use this data to track the impact and effectiveness of improvements we make to our clients and services. 
+This is used to ensure service health by allowing us to see which tenants are experiencing an unacceptably slow outbound of data to our service, information about the data they were uploading when they experienced the slow outbound and how widespread within a tenant that latency issue is. It's also used to report service health and performance across our customers to measure trends over time and alert on issues automatically for engineering mitigation. We'll also use this data to track the impact and effectiveness of improvements we make to our clients and services. 
 
-If we see an unacceptable latency for a section or notebook we will also use this data to correlate that with other signals from the client and service regarding the same document to identify performance regressions allowing us to deliver a more performant experience.
+If we see an unacceptable latency for a section or notebook we'll also use this data to correlate that with other signals from the client and service regarding the same document to identify performance regressions allowing us to deliver a more performant experience.
 
-If we do not receive this data, we will be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
+If we don't receive this data, we'll be unable to monitor the performance of this aspect of our service, or the impact of server side changes we may find necessary due to usage or other factors.
 
 The following fields are collected: 
 
@@ -18090,7 +18094,7 @@ The following fields are collected:
 
 - **RecommendedPutIntervalInMs** - The time the service has communicated to the client as its recommended put interval
 
-- **ResourceId** - The ID of the resource that we are uploading
+- **ResourceId** - The ID of the resource that we're uploading
 
 - **SectionId** - The ID of the section that this upload is part of
 
@@ -18110,7 +18114,7 @@ The following fields are collected:
 
 The critical signal used to track errors and exceptions that have occurred inside the sync stack in the OneNote client allowing us to monitor and mitigate these unexpected conditions.
 
-This is used to ensure service health by allowing us to see error reports from the clients in near real time, which lets us respond to sync issues as they arise. It is also used to identify how widespread an issue is, and how severe by cross-referencing the error tag with the client code to identify the source of failure. We also aggregate this data to get information on our performance over time and the impact and effectiveness of improvements we make to our clients and services. If we do not have this data, we won’t be able to proactively respond to error conditions in our sync service without customer escalation.
+This is used to ensure service health by allowing us to see error reports from the clients in near real time, which lets us respond to sync issues as they arise. It's also used to identify how widespread an issue is, and how severe by cross-referencing the error tag with the client code to identify the source of failure. We also aggregate this data to get information on our performance over time and the impact and effectiveness of improvements we make to our clients and services. If we don't have this data, we won’t be able to proactively respond to error conditions in our sync service without customer escalation.
 
 The following fields are collected: 
 
@@ -18367,7 +18371,7 @@ The following fields are collected:
 
 ### Office.Omex.Checkout.LoggingEvent
 
-The event is triggered by the user action or internal component operation. It is used to troubleshoot the checkout component if there are issues with the purchase detected.
+The event is triggered by the user action or internal component operation. It's used to troubleshoot the checkout component if there are issues with the purchase detected.
 
 The following fields are collected:
 
@@ -18447,7 +18451,7 @@ The following fields are collected:
 
 ### Office.System.GracefulExit.GracefulAppExitDesktop
 
-The event is triggered by a graceful application termination for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Graceful Exit to measure the health of Office client products. It is intended to be a business-critical signal used by Office engineers to infer product stability.
+The event is triggered by a graceful application termination for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Graceful Exit to measure the health of Office client products. It's intended to be a business-critical signal used by Office engineers to infer product stability.
 
 The following fields are collected:
 
@@ -19266,7 +19270,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulAppExitDesktop
 
-The event is triggered by an abnormal application termination (Example: task manager kill, application hang, etc.) for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product stability.
+The event is triggered by an abnormal application termination (Example: task manager kill, application hang, etc.) for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It's a business-critical signal used to infer product stability.
 
 The following fields are collected:
 
@@ -19404,7 +19408,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulAppExitDesktopRealTime
 
-The event is triggered by an abnormal application termination for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used to infer product reliability. This event contains the same information as the following event: Office.System.SystemHealthUngracefulAppExitDesktop. The difference is that this event is reported as soon as the abnormal application termination occurs, while Office.System.SystemHealthUngracefulAppExitDesktop is reported later.
+The event is triggered by an abnormal application termination for Office client applications such as Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It's a business-critical signal used to infer product reliability. This event contains the same information as the following event: Office.System.SystemHealthUngracefulAppExitDesktop. The difference is that this event is reported as soon as the abnormal application termination occurs, while Office.System.SystemHealthUngracefulAppExitDesktop is reported later.
  
 The following fields are collected:
 
@@ -19538,7 +19542,7 @@ The following fields are collected:
 
 ### Office.System.SystemHealthUngracefulApplicationExitWin32
 
-The event is triggers by an abnormal application termination (for example, task manager kill, application hang, etc.) for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It is a business-critical signal used by Office engineers to infer product stability.
+The event is triggers by an abnormal application termination (for example, task manager kill, application hang, etc.) for Office client applications such as, but not limited to, Word, Excel, PowerPoint, and Outlook. We use Ungraceful Application Exit metrics to measure the health of Office client products. It's a business-critical signal used by Office engineers to infer product stability.
 
 The following fields are collected:
 
@@ -19771,7 +19775,7 @@ Reports invalid telemetry implementations or deployments
 
 The following fields are collected:
 
-  - **EventName** - The name of the event that is not in the list
+  - **EventName** - The name of the event that isn't in the list
 
 ### Office.Telemetry.Compliance.MissingDataCategory​
 
