@@ -1101,8 +1101,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Deployoffice/office2016/security/privacy-options.md",
-      "redirect_url": "/deployoffice/office2016/privacy-options",
+      "source_path": "DeployOffice/office2016/security/privacy-options.md",
+      "redirect_url": "/DeployOffice/office2016/privacy-options",
       "redirect_document_id": true
     } 
   ]

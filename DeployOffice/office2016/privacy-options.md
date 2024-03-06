@@ -11,7 +11,7 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
-ms.date: 1/03/2024
+ms.date: 01/03/2024
 hideEdit: true
 ---
 
