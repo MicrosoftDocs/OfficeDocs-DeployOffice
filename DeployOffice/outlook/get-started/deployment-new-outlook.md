@@ -101,13 +101,18 @@ This policy hides the toggle from classic Outlook, but it doesn’t block the ma
 
 For more information on disabling new Outlook in Exchange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox).
 
-Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it has been installed as part of the update. You can do this by following the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package by using PowerShell and the parameter Microsoft.OutlookForWindows.
+Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it's installed as part of the update. You can do this by following the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package by using PowerShell and the parameter Microsoft.OutlookForWindows.
 
 The PowerShell cmdlet to use is:
 
 ```powershell
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
+
+Additionally, remove this Windows orchestrator registry value -
+*HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate*
+
+For any device that's installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
 
 > [!IMPORTANT]
 > Support for Windows Mail and Calendar will be discontinued at the end of 2024. Organizations should ensure that users transition to new Outlook before this deadline to avoid disruption. Please note that blocking the download of the new Outlook for Windows on managed devices will not stop the migration prompts within Mail and Calendar.
