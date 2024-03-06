@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides admins with information about how to ensure Microsoft Office Apps (Version 16.79 and later) receive updates by activating licenses and adjusting Microsoft AutoUpdate preferences for both subscription and volume licenses."
-ms.date: 03/04/2024
+ms.date: 03/06/2024
 ---
 
 # Set Office License Info for updates for Microsoft AutoUpdate
