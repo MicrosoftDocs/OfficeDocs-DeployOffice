@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 12/01/2023
+ms.date: 03/06/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -74,27 +74,21 @@ If you want to export a policy configuration, select the existing policy configu
 
 ## How the policy configuration is applied
 
-The Click-to-Run service used by Microsoft 365 Apps for enterprise checks with Cloud Policy regularly to see if there are any policy configurations that pertain to the user. If there are, then the appropriate policy settings are applied and take effect the next time the user opens the Office app, such as Word or Excel.
+The Click-to-Run service used by Microsoft 365 Apps for enterprise checks in with the Cloud Policy service regularly to see if there are any policies that pertain to the signed in user. If there are, then the appropriate policies are applied and take effect the next time the user opens an Office app, such as Word or Excel.
 
-Here's a summary of what happens:
-- When a user signs into Office on a device for the first time, a check is immediately made to see if there's a policy configuration that pertains to the user.
-
-- If the user isn't a member of a Microsoft Entra group that is assigned a policy configuration, then another check is made again in 24 hours.
-
-- If the user is a member of a Microsoft Entra group that is assigned a policy configuration, then the appropriate policy settings are applied. A check is made again in 90 minutes.
-
-- If there are any changes to the policy configuration since the last check, then the appropriate policy settings are applied and another check is made again in 90 minutes.
-
-- If there aren't any changes to the policy configuration since the last check, another check is made again in 24 hours.
-
-- If there's an error, a check is made when the user opens an Office app, such as Word or Excel.
-
-- If no Office apps are running when the next check is scheduled, then the check will be made the next time the user opens an Office app.
-
+- When an Office app is launched or the signed in user changes, the Click-to-Run service determines if it is time to retrieve policies for the signed in user.
+    - If this is the user’s first sign in, the check-in call is made to retrieve policies for the signed in user.
+    - If the user has previously signed in, the check-in call is made only if the check-in interval has lapsed.
+- When the service receives the check-in call, Microsoft Entra group membership is determined for the user.
+    - If the user isn't a member of a Microsoft Entra group that is assigned a policy configuration, the service informs Click-to-Run to check back in 24 hours for this user.
+    - If the user is a member of a Microsoft Entra group that is assigned a policy configuration, the service returns the appropriate policy settings for the user and informs Click-to-Run to check back in 90 minutes.
+    - If there's an error occurs, another check-in call is made the next time the user opens an Office app, such as Word or Excel.
+    - If no Office apps are running when the next check-in call is scheduled, then the check will be made the next time the user opens an Office app, such as Word or Excel.
 > [!NOTE]
 > - Policies from Cloud Policy are applied only when the Office app is restarted. The behavior is the same as with Group Policy. For Windows devices, policies are enforced based on the primary user that is signed into Microsoft 365 Apps for enterprise. If there are multiple accounts signed in, only policies for the primary account are applied. If the primary account is switched, most of the policies assigned to that account will not apply until the Office apps are restarted. Some policies related to [privacy controls](../privacy/overview-privacy-controls.md) will apply without restarting any Office apps.
 >
 > - If users are located in nested groups and the parent group is targeted for policies, the users in the nested groups will receive the policies. The nested groups and the users in those nested groups must be created in or synchronized to Microsoft Entra ID.
+> - The check-in interval is controlled by the Cloud Policy service and communicated to Click-to-Run during each check-in call.
 
 If the user is a member of multiple Microsoft Entra groups with conflicting policy settings, priority is used to determine which policy setting is applied. The highest priority is applied, with "0" being the highest priority that you can assign. You can set the priority by choosing **Reorder priority** on the **Policy configurations** page.
 
