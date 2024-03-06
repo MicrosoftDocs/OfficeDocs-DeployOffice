@@ -16,7 +16,7 @@ ms.date: 03/06/2024
 
 # Microsoft AutoUpdate and Deferred Updates
 
-> [!NOTICE]
+> [!IMPORTANT]
 > It's strongly recommend that you stay current on all updates.
 
 Starting from Version 4.68.1, Microsoft AutoUpdate supports following cases where more time is required:
@@ -25,7 +25,7 @@ Starting from Version 4.68.1, Microsoft AutoUpdate supports following cases wher
 
 If both are defined, Deferral Version takes precedence over Deferral Days setting for the app.
 
-> [!NOTICE]
+> [!IMPORTANT]
 > Deferral Days and Deferral Versions don’t apply to critical updates. They will be offered or installed regardless.
 
 ## Deferred Updates
