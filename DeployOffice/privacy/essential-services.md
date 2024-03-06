@@ -5671,13 +5671,13 @@ The following fields are collected:
 
 - **DaysRemaining** – Number of days remaining before the current Office license expires 
 
-- **EntitlementValidityDaysRemaining** - Number of days remaining before license on the user's Microsoft or organizational account expires.
+- **EntitlementValidityDaysRemaining** - Number of days remaining before license on the user's Microsoft or organizational account expires. *[This field was previously named DaysRemaining.]*
 
 - **LicenseId** – An alphanumeric identifier of the license that was issued to the user 
 
 - **LicenseType** - Type of the Office license that the user is using 
 
-- **LicenseValidityDaysRemaining** - Number of days remaining before the license file on disk expires. *[This field was previously named DaysRemaining.]*
+- **LicenseValidityDaysRemaining** - Number of days remaining before the license file on disk expires. 
 
 ### Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
