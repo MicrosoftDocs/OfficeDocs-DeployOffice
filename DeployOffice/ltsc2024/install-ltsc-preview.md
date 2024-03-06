@@ -58,7 +58,7 @@ All installed products must be either the 32-bit version or the 64-bit version. 
 
 #### Previous versions of Office
 
-We recommend that you uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2019 or Office 2016.
+We recommend that you uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2021 or Office 2019.
 
 For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
@@ -71,16 +71,6 @@ The preview products are installed on the system drive, which is usually the C:\
 #### Apps installed
 
 Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
-
-Here's some additional information about Microsoft Teams with Office LTSC Professional Plus 2024 Preview.
-
-- To complete the installation of the Teams client app after installing Office LTSC Preview, either restart the device or sign out, and then sign in again.
-
-- After Teams is installed, it automatically updates every two weeks with new features and quality updates. This update process for Teams is different than the update process for the other Office apps, such as Word and Excel. For more information, see [Teams update process](/microsoftteams/teams-client-update).
-
-- If you don’t want the Teams client app included when you install Office LTSC Preview, you can use either of these methods:
-  - The [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration xml file if you’re using the Office Deployment Tool to install Office LTSC Preview.
-  - The "Don't install Microsoft Teams with new installations or updates of Office" policy setting if you’re using Group Policy. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.
 
 #### Internet connectivity
 
@@ -138,13 +128,6 @@ If you don’t want certain Office apps to be installed, you can use the [Exclud
 ## Activate Office LTSC Preview
 
 There are special product keys to activate the preview versions of Office LTSC, Project 2024, and Visio 2024. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
-
-> [!IMPORTANT]
-> - The special product keys for the preview products expired on January 17, 2022.
->
-> - The preview products are now in reduced functionality mode, which means you’ll only be able to read and print documents in the preview products. You won’t be able to create new documents or edit existing documents using the preview products.
-> 
-> - In Outlook, you’ll be able to read existing items that have been synchronized to your mailbox, but Outlook won’t be able to connect to your email server and synchronize more items.
 
 ### Use KMS to activate
 
