@@ -962,8 +962,8 @@
     },
     {
       "source_path": "Deployoffice/security/privacy-options-in-office.md",
-      "redirect_url": "/deployoffice/office2016/security/privacy-options",
-      "redirect_document_id": true
+      "redirect_url": "/deployoffice/office2016/privacy-options",
+      "redirect_document_id": false
     },
     {
       "source_path": "Deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office.md",
@@ -1099,6 +1099,11 @@
       "source_path": "DeployOffice/updates/move-devices-channel-servicingprofiles.md",
       "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/privacy-options.md",
+      "redirect_url": "/DeployOffice/office2016/privacy-options",
+      "redirect_document_id": true
+    } 
   ]
 }

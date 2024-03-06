@@ -3,14 +3,16 @@ title: "Privacy options in Office 2016"
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-audience: ITPro
 ms.topic: conceptual
 ms.service: office-perpetual-itpro
-ms.collection: Tier2
+ms.collection: 
+- privacy-office
+- must-keep
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Office privacy settings let you control the disclosure of private information."
-ms.date: 1/03/2024
+ms.date: 01/03/2024
+hideEdit: true
 ---
 
 # Privacy options in Office 2016
@@ -74,7 +76,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
     
   - **Search online content whenever available** The Help system connects to support.office.com for content when the computer is connected to the Internet. 
     
-- **Impact:** If you enable this setting and select **Never show online content or entry points** or **Search only offline content whenever available**, users can't access updated Help topics through the Help system and you can't get templates from support.office.com.
+- **Impact:** If you enable this setting and select **Never show online content or entry points** or **Search only offline content whenever available**, users can't access updated Help articles through the Help system and you can't get templates from support.office.com.
     
 - **Guidelines:** Most organizations enable this setting and select **Search online content when available**. This is the recommended configuration for this setting. But, organizations that have a highly restrictive security environment, or a security environment that restricts Internet access, typically enable this setting and select **Never show online content or entry points**.
     
@@ -108,7 +110,7 @@ Office 2016 provides several settings that let you control the disclosure of pri
 
 ## Related privacy options
 
-Several other settings are related to privacy disclosure in Office 2016 applications. If you are changing privacy options because you have a special security environment, you might want to evaluate the following settings:
+Several other settings are related to privacy disclosure in Office 2016 applications. If you're changing privacy options because you have a special security environment, you might want to evaluate the following settings:
   
 - **Protect document metadata for password protected files** This setting determines whether metadata is encrypted when you use the Encrypt with Password feature. 
     
@@ -120,6 +122,6 @@ Several other settings are related to privacy disclosure in Office 2016 applicat
     
 - **Prevent document inspectors from running** This setting lets you disable Document Inspector modules. Document Inspector modules, available in various Office applications since Office 2007, allows users to remove hidden and personal information from their Office documents. 
     
-## Related topics
+## Related articles
 [Privacy in Microsoft Office](https://go.microsoft.com/fwlink/p/?LinkId=282043)
 
