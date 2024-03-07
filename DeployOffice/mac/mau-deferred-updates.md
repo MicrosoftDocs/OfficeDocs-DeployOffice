@@ -19,7 +19,7 @@ ms.date: 03/06/2024
 > [!IMPORTANT]
 > It's strongly recommend that you stay current on all updates.
 
-Starting from Version 4.68.1, Microsoft AutoUpdate supports following cases where more time is required:
+Starting from Version 4.68.1, Microsoft AutoUpdate supports the following cases where more time is required:
 - Deferring an update by many days (maximum of 28 days). Referred to as "Deferral Days" in the document.
 - Setting "do not update beyond" version (to the maximum of 90 days). Referred to as "Deferral Version" in this document.
 
@@ -30,11 +30,11 @@ If both are defined, Deferral Version takes precedence over Deferral Days settin
 
 ## Deferred Updates
 
-This feature allows deferral of available updates for many days (refer to as "Deferral Days").
+This feature allows the deferral of available updates for many days (refer to as "Deferral Days").
 
-## Global Deferral Days setting
+### Global Deferral Days setting
 
-Deferral Days can be set globally with following preferences setting:
+Deferral Days can be set globally with the following preferences setting:
 
 | Category | Details |
 | -------- | ------- |
@@ -88,9 +88,9 @@ This example shows how to set Deferral Days to seven for Microsoft Word 2019 and
 </dict>
 ```
 
-## Deferral Version
+### Deferral Version
 
-This feature allows end users to set an upper limit to the update version. That is, discovered updates are offered/applied to and including the specified version.
+This feature allows users to set an upper limit to the update version. That is, discovered updates are offered/applied to and including the specified version.
 
 To allow for updates to be discovered and applied, only the Major.Minor version number scheme is recognized. For example, 16.82 needs to be specified to receive any 16.82.xxxxxxxx releases.
 
@@ -104,7 +104,7 @@ Due to differences in version numbers among Microsoft applications, this option 
 | - Key: DeferralVersions | - Data type: Dictionary   |
 | - Key: Application ID   | - Data Type: String       |
 
-Possible values for the version are specified as Major. Minor version numbers. There's no default value for this setting.
+Possible values for the version are specified as Major.Minor version numbers. There's no default value for this setting.
 
 **Example of Setting Deferral versions for Word and Excel**
 
