@@ -26,11 +26,11 @@ Starting from Version 4.68.1, Microsoft AutoUpdate supports the following cases 
 If both are defined, Deferral Version takes precedence over Deferral Days setting for the app.
 
 > [!IMPORTANT]
-> Deferral Days and Deferral Versions don’t apply to critical updates. They will be offered or installed regardless.
+> Deferral Days and Deferral Versions don’t apply to critical updates. They will be offered or installed (when "Automatically keep Microsoft apps up to date" tickbox is selected") regardless.
 
-## Deferred Updates
+## Deferral Days
 
-This feature allows the deferral of available updates for many days (refer to as "Deferral Days").
+This feature allows the deferral of available updates for many days.
 
 ### Global Deferral Days setting
 
@@ -88,7 +88,7 @@ This example shows how to set Deferral Days to seven for Microsoft Word 2019 and
 </dict>
 ```
 
-### Deferral Version
+## Deferral Version
 
 This feature allows users to set an upper limit to the update version. That is, discovered updates are offered/applied to and including the specified version.
 
