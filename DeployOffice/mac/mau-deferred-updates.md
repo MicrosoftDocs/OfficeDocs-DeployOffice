@@ -101,8 +101,8 @@ Due to differences in version numbers among Microsoft applications, this option 
 | Domain                  | com.microsoft.autoupdate2 |
 | Key                     | OptionalUpdatesDeferrals  |
 | Data Type               | Dictionary                |
-| - Key: DeferralVersions | - Data type: Dictionary   |
-| - Key: Application ID   | - Data Type: String       |
+| - Key: DeferralVersions | Data type: Dictionary   |
+| - Key: Application ID   | Data Type: String       |
 
 Possible values for the version are specified as Major.Minor version numbers. There's no default value for this setting.
 
