@@ -16,30 +16,28 @@ ms.date: 03/06/2024
 
 # Set Office License Info for updates for Microsoft AutoUpdate
 
-Beginning with Microsoft Office Apps Version 16.79 (including Word, Excel, PowerPoint, and Outlook), you must activate your license to get updates for Version 16.79 and later. This requirement applies to both subscription and volume licenses.
+Starting with Microsoft Office Apps Version 16.79 for Word, Excel, PowerPoint, and Outlook, you need to activate your license to receive updates for Version 16.79 and later. This is required for both subscription and volume licenses.
 
-To help with this transition, Microsoft Office applications write to Microsoft AutoUpdate preferences to ensure the correct update paths are followed.
+Microsoft Office applications automatically update Microsoft AutoUpdate preferences to ensure they follow the correct update paths. However, if IT admins manage Microsoft AutoUpdate preferences, they might need to manually adjust the plist files to allow updates for Microsoft Office Version 16.79 and later.
 
-In normal operations, this update happens automatically. However, if IT admins manage Microsoft AutoUpdate preferences, manual adjustments to the plist files might be necessary.
+For a simpler option, installing Microsoft Office Apps Version 16.82 and later lets you skip manual configuration and ensures you're always up to date.
 
-The following examples show updates to Microsoft AutoUpdate Preference settings to allow updates for Microsoft Office beyond Version 16.78 and Version 16.79.
-
-Alternatively, you can install Microsoft Office Apps Version 16.82 and later and bypass the following section.
+The following examples show how to update Microsoft AutoUpdate preference settings, enabling updates for Microsoft Office Version 16.79 and later.
 
 > [!IMPORTANT]
-> Functionality is severely limited (applications are in read-only mode) if Microsoft Office Apps are updated beyond Version 16.79 with an incorrect license.
+> If you update Microsoft Office Apps with an incorrect license after Version 16.79, the functionality becomes severely limited, restricting applications to read-only mode.
 
 ## Preference AppCustomPref
 
 You can manually tell Microsoft AutoUpdate what kind of license the Microsoft Office Apps have. Use the following preference settings:
 
-| Category   | Details                                                                                   |
-|------------|-------------------------------------------------------------------------------------------|
-| Domain     | com.microsoft.autoupdate2                                                                |
-| Key        | AppCustomPref                                                                             |
-| Data Type  | Dictionary                                                                                |
-| Possible values | Key: Path to each of the apps <br/> Content: Dictionary <br/> Key: Various <br/> Value: Various|
-| Comments   | There's no default value.                                                                |
+| Category        | Details                          |
+|-----------------|----------------------------------|
+| Domain          | com.microsoft.autoupdate2        |
+| Key             | AppCustomPref                    |
+| Data Type       | Dictionary                       |
+| Possible values | Key: Path to each of the apps <br/> Content: Dictionary <br/> &nbsp;&nbsp; Key: Various <br/> &nbsp;&nbsp; Value: Various |
+| Comments        | There's no default value         |
 
 > [!NOTE]
 > Keys and values are 'contracts' between the application and Microsoft AutoUpdate and therefore may change for each application. 
@@ -49,26 +47,24 @@ The following examples show what is currently active:
 <li>You have a perpetual 2021 consumer license for Excel and Word, but only have a perpetual 2019 consumer license for PowerPoint. The following preference setting in Microsoft AutoUpdate is required: 
 
 ```xml
-<key>AppCustomPref</key> 
+<key>AppCustomPref</key>
 <dict>
-    <key>/Applications/Microsoft Excel.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>2021-Consumer </string> 
-    </dict> 
-    
-    <key>/Applications/Microsoft Word.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>2021-Consumer</string> 
-    </dict> 
-    
-    <key>/Applications/Microsoft PowerPoint.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>2019-Consumer</string> 
-    </dict> 
-</dict> 
+    <key>/Applications/Microsoft Excel.app</key>
+    <dict>
+        	<key>OfficeActivationLicense</key>
+    	<string>2021-Consumer</string>
+    </dict>
+    <key>/Applications/Microsoft Word.app</key>
+    <dict>
+    	<key>OfficeActivationLicense</key>
+    	<string>2021-Consumer</string>
+    </dict>
+    <key>/Applications/Microsoft PowerPoint.app</key>
+    <dict>
+    	<key>OfficeActivationLicense</key>
+    	<string>2019-Consumer</string>
+    </dict>
+</dict>
 ```
 
 This configuration allows Microsoft AutoUpdate to offer updates for Excel and Word beyond Version 16.78 and Version 16.79. However, it only updates PowerPoint up to Version 16.78, then stops.</li>
@@ -76,24 +72,24 @@ This configuration allows Microsoft AutoUpdate to offer updates for Excel and Wo
 <li>You have Subscription licenses for Excel, PowerPoint, and Word. Following preference setting in Microsoft AutoUpdate is required: 
 
 ```xml
-<key>AppCustomPref</key> 
+<key>AppCustomPref</key>
 <dict>
-    <key>/Applications/Microsoft Excel.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>Subscription</string> 
-    </dict> 
+    <key>/Applications/Microsoft Excel.app</key>
+    <dict>
+    	<key>OfficeActivationLicense</key>
+    	<string>Subscription</string>
+    </dict>
+   
+    <key>/Applications/Microsoft Word.app</key>
+    <dict>
+    	<key>OfficeActivationLicense</key>
+    	<string>Subscription</string>
+    </dict>
     
-    <key>/Applications/Microsoft Word.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>Subscription</string> 
-    </dict> 
-    
-    <key>/Applications/Microsoft PowerPoint.app</key> 
-    <dict> 
-    	<key>OfficeActivationLicense</key> 
-    	<string>Subscription</string> 
+    <key>/Applications/Microsoft PowerPoint.app</key>
+    <dict>
+    	<key>OfficeActivationLicense</key>
+    	<string>Subscription</string>
     </dict>
 </dict>
 ```
