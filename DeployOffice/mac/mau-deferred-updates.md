@@ -44,7 +44,7 @@ Deferral Days can be set globally with following preferences setting:
 | Possible values | 1 – 28. Any value less than one is ignored. Any value over 28 days sets the Deferral days to 28. |
 | Comments | There's no default value. |
 
-### Example of Configuring Deferral Days
+**Example of Configuring Deferral Days**
 
 This example demonstrates how to set Deferral Days to 14. In this configuration Microsoft AutoUpdate will postpone offering or applying updates for 14 days after the release:
 
@@ -71,7 +71,7 @@ App-specific deferral days can be set with the following preferences setting:
 | Possible values | 1 – 28. Any value less than one is ignored. Any value over 28 days sets the Deferral days to 28.                       |
 | Comments        | There's no default value.  |
 
-### Example of setting different Deferral Days for Word and Excel
+**Example of setting different Deferral Days for Word and Excel**
 
 This example shows how to set Deferral Days to seven for Microsoft Word 2019 and to 12 for Microsoft Excel 2019. With this setup, Microsoft AutoUpdate will delay offering or applying updates for seven days after Microsoft Word updates are released, and for 12 days after Microsoft Excel updates are released:
 
@@ -106,7 +106,7 @@ Due to differences in version numbers among Microsoft applications, this option 
 
 Possible values for the version are specified as Major. Minor version numbers. There's no default value for this setting.
 
-### Example of Setting Deferral versions for Word and Excel
+**Example of Setting Deferral versions for Word and Excel**
 
 This example shows how to set the Deferral Version to 16.82 for Microsoft Word 2019 and to 16.81 for Microsoft Excel 2019:
 
