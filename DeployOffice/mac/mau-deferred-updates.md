@@ -134,5 +134,5 @@ For example, the following table shows available updates for Microsoft Word 2019
 | 16.84.X                   | 25                   |                              |
 | 16.83.X                   | 55                   |                              |
 | 16.82.24021813            | 85                   | Next Update version          |
-| 16.82.24021116            | 92                   | Will be removed from cache   |
+| 16.82.24021116            | 92                   |                              |
 | 16.81.24012814            | 106                  | Current Installed Version    |
