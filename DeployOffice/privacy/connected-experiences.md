@@ -4,11 +4,11 @@ description: "Provides Office admins with information about connected experience
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-hideEdit: true
-ms.topic: reference
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
+hideEdit: true
 ms.date: 02/21/2024
 ---
 
