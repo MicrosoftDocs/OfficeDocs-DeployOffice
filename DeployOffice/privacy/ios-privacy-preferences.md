@@ -1,14 +1,13 @@
 ---
 title: "Use preferences to manage privacy controls for Office on iOS devices"
-ms.author: danbrown
+description: "Provides Office admins with information about how to manage privacy settings on iOS devices."
 author: DHB-MSFT
+ms.author: danbrown
 manager: laurawi
-audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
-description: "Provides Office admins with information about how to manage privacy settings on iOS devices."
+ms.collection: privacy-microsoft365
 hideEdit: true
 ms.date: 03/01/2023
 ---
