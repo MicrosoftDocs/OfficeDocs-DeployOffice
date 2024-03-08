@@ -1,15 +1,14 @@
 ---
 title: "Use preferences to manage privacy controls for Office for Mac"
-ms.author: danbrown
+description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
 author: DHB-MSFT
+ms.author: danbrown
 manager: laurawi
-audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.subservice: office-mac
 ms.localizationpriority: high
-ms.collection: Tier1
-description: "Provides Office admins with information about how to use preferences to manage privacy controls for Office for Mac."
+ms.collection: privacy-microsoft365
 hideEdit: true
 ms.date: 03/01/2023
 ---

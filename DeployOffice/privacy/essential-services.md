@@ -1,13 +1,13 @@
 ---
 title: "Essential services for Office"
-ms.author: danbrown
+description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 author: DHB-MSFT
+ms.author: danbrown
 manager: laurawi
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
-description: "Provides Office admins with information about essential services in Office, such as Click-to-Run and Licensing, and provides a list of events and data fields for those essential services."
 hideEdit: true
 ms.date: 03/06/2024
 ---

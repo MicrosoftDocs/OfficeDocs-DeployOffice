@@ -1,14 +1,13 @@
 ---
 title: "In-product recommendations in Office"
-ms.author: danbrown
+description: "Provides information about in-product recommendations that might appear while using Office."
 author: DHB-MSFT
+ms.author: danbrown
 manager: laurawi
-audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
-ms.collection: Tier1
-description: "Provides information about in-product recommendations that might appear while using Office."
+ms.collection: privacy-microsoft365
 hideEdit: true
 ms.date: 03/01/2023
 ---

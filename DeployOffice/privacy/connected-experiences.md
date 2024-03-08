@@ -1,14 +1,14 @@
 ---
 title: "Connected experiences in Office"
-ms.author: danbrown
+description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
 author: DHB-MSFT
+ms.author: danbrown
 manager: laurawi
+hideEdit: true
 ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
-description: "Provides Office admins with information about connected experiences for Office, such as experiences that analyze content or experiences that download online content."
-hideEdit: true
 ms.date: 02/21/2024
 ---
 
