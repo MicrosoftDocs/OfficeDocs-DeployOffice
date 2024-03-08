@@ -1,5 +1,6 @@
 ---
 title: "Required diagnostic data for Office"
+description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -7,7 +8,6 @@ ms.topic: reference
 ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
-description: "Provides Office admins with information about required diagnostic data in Office, and provides a list of events and data fields."
 hideEdit: true
 ms.date: 03/06/2024
 ---
