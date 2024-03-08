@@ -85,12 +85,12 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 
 **Benefits**
 - No upfront configuration needed. Just works out of the box.
-- Rollback available through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) for devices on Monthly Enterprise Channel.
+- Rollback available through the [Microsoft 365 admin center](https://admin.cloud.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) for devices on Monthly Enterprise Channel.
 
 **Considerations**
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients receive the update at the same time, but in a staggered manner.
 - By default, updates aren't enforced. This can be mitigated by applying the **Update deadline** group policy setting for Office.
-- Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or cloud update.
+- Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.cloud.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or cloud update.
 - Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
 
 ### Cloud update
