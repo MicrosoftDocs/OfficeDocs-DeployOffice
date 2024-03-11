@@ -137,8 +137,8 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 
 >[!NOTE]
 >Review how Office 365 ProPlus determines priority:
->1st Priority: CLoud Update "UpdatePath" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdatePath
->2nd Priority: CLoud Update "UpdateBranch" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdateBranch
+>1st Priority: Cloud Update "UpdatePath" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdatePath
+>2nd Priority: Cloud Update "UpdateBranch" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdateBranch
 >3rd Priority : GPO "UpdatePath" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatepath
 >4th Priority : GPO "UpdateChannel" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatebranch
 >5th Priority : "UpdateURL" or UpdatePath="\\Server\Share" HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration
