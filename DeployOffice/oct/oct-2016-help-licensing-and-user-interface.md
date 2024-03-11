@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 **Applies to:** *Office Professional Plus 2016, Office Standard 2016*
 
-**Summary**: Enters the product key and accepts the end user license agreement (EULA) on behalf of each user who installs Office with this Setup customization file; also sets the user interface display level. 
+**Summary**: Enters the product key and accepts the license terms on behalf of each user who installs Office with this Setup customization file; also sets the user interface display level. 
   
 These options are recognized by Setup only when Office is first installed on a user's computer.
   
@@ -32,7 +32,7 @@ These options are recognized by Setup only when Office is first installed on a u
     
    - Select **Full - default** to run the installation interactively, displaying all of the user interface and messages. 
     
-   - Select **Basic** to display the Welcome screen and prompts for the product key and Microsoft software license terms, if needed, and to display a progress bar and completion notice. 
+   - Select **Basic** to display the Welcome screen and prompts for the product key and license terms, if needed, and to display a progress bar and completion notice. 
     
    - Select **None** to run Setup quietly, displaying no user interface. 
     

@@ -468,7 +468,7 @@ If you have only one or two users who want proofing tools, you can install proof
     
     For instructions on downloading the ISO, see [Download language packs, language interface packs, and proofing tools for volume license versions of Office](customize-language-setup-settings.md#DownloadLIPandProofTools).
     
-2. Read and accept the Microsoft Software License Terms, and then choose **Continue**.
+2. Read and accept the license terms, and then choose **Continue**.
     
 3. To install the proofing tools for all available languages, choose **Install Now**. The installation begins. Otherwise, to install individual languages, choose **Customize**.
     
