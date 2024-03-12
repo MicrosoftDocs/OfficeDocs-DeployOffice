@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 03/16/2023
+ms.date: 03/12/2024
 ---
 
 # Configuration options for the Office Deployment Tool
@@ -22,11 +22,11 @@ With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365
 
 ## Example of a standard configuration file
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Office, or you can edit the file to install the 64-bit English edition of Office with the license terms automatically accepted and without Publisher.
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, to download the 64-bit English version of Office, edit the configuration file. Similarly, to install this version with the license terms preaccepted and excluding Publisher, modify the file accordingly.
 
-When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the example below into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
+When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 
-This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer
+This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Office on a client computer.
 
 ```xml
 <Configuration>
@@ -64,7 +64,7 @@ This configuration file includes the most-commonly used elements and attributes,
 
 ## Add element
 
-Defines the products and languages to download or install
+Defines the products and languages to download or install.
 
 ### Example
 
@@ -97,7 +97,7 @@ Example values:
 - SourcePath="\\\server\share\"
 - SourcePath="C:\Downloads\Microsoft"
 
-The SourcePath value shouldn't include the /Office part or the name of the folder on which Office Data have been downloaded.
+Don't include the /Office part or the name of the folder containing the downloaded Office data in the SourcePath value.
 
 ### Version attribute (part of Add element)
 
@@ -117,7 +117,7 @@ Example values:
 
 Optional.
 
-Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office isn't installed on the device and OfficeClientEdition isn't specified, the ODT defaults to the 64-bit edition, unless the device is running a 32-bit edition of Windows or has less than 4 GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
+Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Office isn't installed and OfficeClientEdition isn't specified, the ODT defaults to the 64-bit edition. This situation occurs unless the device runs a 32-bit version of Windows or has less than 4-GB RAM. If Office is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Office. If Office is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
 
 Allowed values:
 
@@ -148,7 +148,7 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
+When deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, both volume licensed versions, use the PerpetualVL2021 update channel. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 
 If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
@@ -180,7 +180,7 @@ Optional. Defaults to False if not specified.
 
 To use the Office CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
 
-When installing languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT uses source files from the Office CDN.
+When you install languages, the ODT looks first for source files in the location specified in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT uses source files from the Office CDN.
 
 Allowed values: 
 
@@ -304,7 +304,7 @@ In the following example, Project Online Desktop Client is installed on the devi
 
 ## Language element
 
-Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office. 
+Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide to change the Shell UI language after the initial installation, you must uninstall and then reinstall Office. 
 
 ### Example
 
@@ -341,7 +341,7 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-Be sure the languages that you specify are supported by the product you're installing. Otherwise your installation will fail.
+Be sure the languages that you specify support the product you're installing. Otherwise your installation fails.
 
 For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
 
@@ -359,7 +359,7 @@ MatchInstalled can be used only if there is at least one Click-to-Run product al
 
 Optional.
 
-When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office or can't be found in the local source files. To do so, use the "Fallback" attribute. For more information, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
+When using MatchOS, we recommend that you specify a fallback language to install when a matched language isn't supported by Office. To do so, use the "Fallback" attribute. For more information, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
 Example values:
 
@@ -370,7 +370,7 @@ Example values:
 
 Optional.
 
-When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All". ODT then installs the new product with the same set of languages as the one specified in TargetProduct.
+When using MatchInstalled, you can specify if you want to match the list of already installed languages for a specific product or the combination of all installed products. To target a specific product, you can specify any [supported product ID](/office365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run). If you want to match the languages of all already installed products, you specify "All." ODT then installs the new product with the same set of languages as the one specified in TargetProduct.
 
 If there's no TargetProduct specified with MatchInstalled, the ODT attempts to match the same Product ID that the Language tag belongs to in the configuration file. For example, if you're using MatchInstalled while installing "VisioProRetail" without a TargetProduct, ODT attempts to match the already installed languages for this product.
 
@@ -408,7 +408,7 @@ Allowed values:
 
 Optional. Defaults to **FALSE** if not specified.
 
-If **AcceptEULA** is set to **TRUE**, the user doesn't see a license terms dialog box. If this attribute is set to **FALSE** or isn't included, the user may see a license terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
+If **AcceptEULA** is set to **TRUE**, the user doesn't see a license terms dialog box. If this attribute is set to **FALSE** or isn't included, the user might see a license terms dialog box. We recommend that administrators set **AcceptEULA** to **TRUE**. 
 
 Allowed values:
 
@@ -420,7 +420,7 @@ Allowed values:
 
 ## ExcludeApp element
 
-Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is automatically installed when you install Microsoft 365 Apps or install individual applications, such as Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
+Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is installed automatically with Microsoft 365 Apps or when installing individual applications like Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
 
@@ -437,8 +437,8 @@ Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is au
 ```
 
 If a configuration file with ExcludeApp is used to install Office on a device that already has Microsoft 365 Apps installed, the ExcludeApp setting is treated differently based on the list of languages:
-- If the list of languages in the configuration file includes all the installed languages, then the ExcludeApp setting in the file replaces any existing ExcludeApp setting on the device. This is also true if the list of languages in the configuration file includes both all the installed languages and additional languages.
-- If the list of languages in the configuration file doesn't include all the installed languages, then the ExcludeApp setting in the configuration file will be combined with the ExcludeApp setting on the device. 
+- If your configuration file lists every installed language, it overwrites any existing ExcludeApp settings on the device. This rule also applies if the file lists all installed languages plus new ones. 
+- If  the file doesn't list all installed languages, the ExcludeApp settings from the file and the device merge. 
 
 
 ### ID attribute (part of ExcludeApp element)
@@ -510,7 +510,7 @@ Allowed values:
 
 Optional. Default is **FALSE** if not specified.
 
-When set to **TRUE**, forces any apps that are blocking the install of Office to shut down. Data loss may occur. 
+When set to **TRUE**, forces any apps that are blocking the install of Office to shut down. Data loss might occur. 
 
 Allowed values:
 
@@ -685,7 +685,7 @@ Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Office is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
-Prior to the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This notification gives users the opportunity to save the Office documents that they're working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
+Before the deadline, users receive multiple reminders to install the updates. If Office isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This notification gives users the opportunity to save the Office documents that they're working on and to close any Office programs that are open. If users don't close the Office programs, the programs are closed automatically when the 15 minutes are up, which might result in data loss. 
 
 After the Office programs are closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Office is always up to date, you must change the deadline every time a new update for Office is available.
 
@@ -699,7 +699,7 @@ Example value:
 
 Optional. The default is **Current**.
 
-Defines which channel to use for updating Office after it's installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
+This specifies the update channel for Office after installation. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Office, and the channel for the Updates element is used to change the channel for an existing installation of Office.
 
 For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md). 
 
@@ -719,7 +719,7 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
+When deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, both volume licensed versions, use the PerpetualVL2021 update channel. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 
 If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office2019/update.md#update-channel-for-office-2019).
 
