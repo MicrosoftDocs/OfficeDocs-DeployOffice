@@ -149,7 +149,7 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 - If Microsoft 365 Apps was recently installed or updated, changing the update channel can take up to 24 hours after the new setting was applied.
 - The client device's user interface will display the updated channel only after installing a build from the new channel.
 - Moving from a channel with a newer version of Microsoft 365 Apps to a channel with an older version removes features exclusive to the newer version.
-- Review how M365 Apps determine priority:
+- Review how M365 Apps determine priority for updates:
    - 1st Priority: Cloud Update "UpdatePath" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdatePath
    - 2nd Priority: Cloud Update "UpdateBranch" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdateBranch
    - 3rd Priority : GPO "UpdatePath" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatepath
