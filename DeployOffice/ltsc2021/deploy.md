@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2021."
-ms.date: 04/07/2023
+ms.date: 03/11/2024
 ---
 
 # Deploy Office LTSC 2021
