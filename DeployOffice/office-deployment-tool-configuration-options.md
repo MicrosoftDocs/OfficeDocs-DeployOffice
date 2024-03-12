@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 03/16/2023
+ms.date: 03/12/2024
 ---
 
 # Configuration options for the Office Deployment Tool
