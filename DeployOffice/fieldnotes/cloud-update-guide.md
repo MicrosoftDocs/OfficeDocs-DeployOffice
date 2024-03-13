@@ -64,10 +64,11 @@ In the first step, you will enable cloud update.
 
 ## Configure Cloud Update
 After enablement, we recommend that you review and adjust the configuration of the profiles and the overall service according to the needs of your organization.
-Global Settings
-1.	Navigate to Cloud Update > Overview and select the Tenant Settings tab.
-a.	Exclusion windows: Configure any required exclusion windows. During an exclusion window, no updates are deployed to devices. You can also scope an exclusion window to a group of device or user objects. If you use Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
-b.	Exclude groups: Configure your exclusions. Those devices or user objects will always be excluded from cloud update. If you use Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
+
+### Global Settings
+1. Navigate to **Cloud Update** > **Overview** and select the **Tenant Settings** tab.
+a. Exclusion windows: Configure any required exclusion windows. During an exclusion window, no updates are deployed to devices. You can also scope an exclusion window to a group of device or user objects. If you use Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
+a. Exclude groups: Configure your exclusions. Those devices or user objects will always be excluded from cloud update. If you use Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
 Current Channel settings
 1.	Navigate to Cloud Update > Current and select the Settings tab.
 a.	Deadline: The deadline determines the time which can pass between the first silent update attempt and the update engine prompting the user to close their Microsoft 365 Apps.
