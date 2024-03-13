@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides admins with information about how to ensure Microsoft Office Apps (Version 16.79 and later) receive updates by activating licenses and adjusting Microsoft AutoUpdate preferences for both subscription and volume licenses."
-ms.date: 03/06/2024
+ms.date: 03/13/2024
 ---
 
 # Set Office License Info for updates for Microsoft AutoUpdate
@@ -19,8 +19,6 @@ ms.date: 03/06/2024
 Starting with Microsoft Office Apps Version 16.79 for Word, Excel, PowerPoint, and Outlook, you need to activate your license to receive updates for Version 16.79 and later. This is required for both subscription and volume licenses.
 
 Microsoft Office applications automatically update Microsoft AutoUpdate preferences to ensure they follow the correct update paths. However, if IT admins manage Microsoft AutoUpdate preferences, they might need to manually adjust the plist files to allow updates for Microsoft Office Version 16.79 and later.
-
-For a simpler option, installing Microsoft Office Apps Version 16.82 and later lets you skip manual configuration and ensures you're always up to date.
 
 The following examples show how to update Microsoft AutoUpdate preference settings, enabling updates for Microsoft Office Version 16.79 and later.
 
