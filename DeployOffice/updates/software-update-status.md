@@ -33,7 +33,7 @@ This article contains information about the **Microsoft 365 Apps** tab.
 To view the **Software updates** page, sign in to the Microsoft 365 admin center with your admin account, and then go to **Show all** > **Health** > **Software updates**.
 
 > [!TIP]
-> If you don't see an entry for **Software updates** in the menu, try going to this URL: https://admin.cloud.microsoft.com/Adminportal/Home#/softwareupdates.
+> If you don't see an entry for **Software updates** in the menu, try going to this URL: https://admin.cloud.microsoft/Adminportal/Home#/softwareupdates.
 
 The **Microsoft 365 Apps** tab shows the following information about devices in your organization that have Microsoft 365 Apps installed:
 - How many devices have the most recent security updates

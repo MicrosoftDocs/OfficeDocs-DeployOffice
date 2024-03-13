@@ -15,7 +15,7 @@ ms.date: 10/19/2023
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
 
 > [!NOTE]
-> The information in this article is related to Message center posts MC454810, MC499030, and MC649046, which were published in the [Microsoft 365 admin center](https://admin.cloud.microsoft.com/AdminPortal/Home#/MessageCenter).
+> The information in this article is related to Message center posts MC454810, MC499030, and MC649046, which were published in the [Microsoft 365 admin center](https://admin.cloud.microsoft/AdminPortal/Home#/MessageCenter).
 
 Apps such as Word and Excel allow users to use Basic authentication to connect to resources on web servers by sending usernames and passwords with each request. These credentials are often stored on the servers, making it easier for attackers to capture them and reuse them against other endpoints or services.
 
