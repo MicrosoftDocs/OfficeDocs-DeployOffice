@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the Software updates page in the Microsoft 365 admin center."
-ms.date: 03/01/2023
+ms.date: 03/13/2024
 ---
 
 # View software update status for Microsoft 365 Apps installations

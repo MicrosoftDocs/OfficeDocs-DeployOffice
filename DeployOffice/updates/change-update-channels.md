@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 01/25/2024
+ms.date: 03/13/2024
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization

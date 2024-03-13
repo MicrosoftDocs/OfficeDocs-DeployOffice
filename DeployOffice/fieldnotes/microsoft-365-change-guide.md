@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 02/28/2024
+ms.date: 03/13/2024
 ---
 
 # Microsoft 365 change guide

@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 10/19/2023
+ms.date: 03/13/2024
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps

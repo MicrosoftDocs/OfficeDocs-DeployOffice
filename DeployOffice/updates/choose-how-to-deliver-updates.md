@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Choose how to deliver updates for the Microsoft 365 Apps"
-ms.date: 01/25/2024
+ms.date: 03/13/2024
 ---
 
 # Choose how to deliver updates
