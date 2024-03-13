@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 01/25/2024
+ms.date: 03/13/2024
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -121,7 +121,7 @@ Here are the steps for changing the update channel to Current Channel or Monthly
 
 ## Change the update channel using the Microsoft 365 admin center
 
-You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.microsoft.com) to set the default update channel for Microsoft 365 Apps. Unmanaged installations switch to the new default channel automatically.  
+You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.cloud.microsoft) to set the default update channel for Microsoft 365 Apps. Unmanaged installations switch to the new default channel automatically.  
 
 This setting doesn't affect managed installations. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
 
@@ -129,7 +129,7 @@ Depending on your scenario, you can use the Microsoft 365 admin center along wit
 
 Here are the steps for setting the default update channel: 
 
-1. Log into the [Microsoft 365 admin center](https://admin.microsoft.com) and open **Settings**, then select **Org Settings**. 
+1. Log into the [Microsoft 365 admin center](https://admin.cloud.microsoft) and open **Settings**, then select **Org Settings**. 
 2. Open the **Microsoft 365 installation options**. 
 3. Select the desired channel, then **Save**. 
 
