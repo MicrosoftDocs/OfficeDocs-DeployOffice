@@ -12,13 +12,13 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Provides guidance only to customers who received a Message center post about their devices with Microsoft 365 Apps being updated to Monthly Enterprise Channel."
-ms.date: 01/23/2024
+ms.date: 03/13/2024
 ---
 
 # Microsoft 365 Apps will be updated to Monthly Enterprise Channel on all your Office devices
 
 > [!IMPORTANT]
-> The information in this article applies only to organizations that received Message center post MC362760 (in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter)) on April 21, 2022 and again on May 5, 2022. If you didn't receive that post, this article doesn't apply to you and no action is required on your part.
+> The information in this article applies only to organizations that received Message center post MC362760 (in the [Microsoft 365 admin center](https://admin.cloud.microsoft/AdminPortal/Home#/MessageCenter)) on April 21, 2022 and again on May 5, 2022. If you didn't receive that post, this article doesn't apply to you and no action is required on your part.
 
 Our records show that some devices in your organization with Microsoft 365 Apps are receiving feature updates only once every six months.
 

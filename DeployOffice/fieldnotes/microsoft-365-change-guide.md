@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 02/28/2024
+ms.date: 03/13/2024
 ---
 
 # Microsoft 365 change guide
@@ -411,7 +411,7 @@ At the bottom-right of each page in the admin portal, customers can provide feed
 ![Screenshot of the Give Feedback button.](../images/fieldnotes/give-feedback-button.png)<br>
 *Figure 13*
 
-[**Message center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+[**Message center**](https://admin.cloud.microsoft/Adminportal/Home?source=applauncher#/MessageCenter)
 
 The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 14, you can see the **Give feedback** button in the lower-right of the Message center.
 
