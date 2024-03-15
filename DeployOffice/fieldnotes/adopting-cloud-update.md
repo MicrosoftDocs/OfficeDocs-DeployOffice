@@ -20,7 +20,7 @@ A guide for IT admins who want to start using cloud update from the Microsoft 36
 This document covers:
 - The [benefits](#benefits-of-using-cloud-update) of using cloud update
 - Recommended steps for [preparation](#preparation)
-- How to [enable](#enable-cloud-update) and [configure](#configure-cloud-update) cloud update
+- How to [enable](#enable-cloud-update) and [configure](#review-configuration-of-cloud-update) cloud update
 - How devices [onboard](#onboarding-of-devices) and [update](#update-flow)
 - [Best practices and tips](#best-practices-and-tips-for-working-with-cloud-update)
 
