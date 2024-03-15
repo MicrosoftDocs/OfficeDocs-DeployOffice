@@ -9,18 +9,18 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/13/2024
+ms.date: 03/15/2024
 ---
 
 # Enabling and configuring Cloud Update
-A guide for IT admins who want to use the Microsoft 365 Apps admin center to manage updates for Microsoft 365 Apps for business or enterprise
+A guide for IT admins who want to start using cloud update from the Microsoft 365 Apps admin center to manage updates for Microsoft 365 Apps for business or enterprise
 
 [Cloud update](../admincenter/cloud-update.md) is a service in the [Microsoft 365 Apps admin center](../admincenter/overview.md) that provides you with update automation for Microsoft 365 Apps directly from the Office Content Delivery Network (CDN). Cloud update is the replacement for servicing profile.
 
 This document covers:
 - The [benefits](#benefits-of-using-cloud-update) of using cloud update
 - Recommended steps for [preparation](#preparation)
-- How to [enable](#enable-cloud-update) and [configure](#configure-cloud-update) cloud update
+- How to [enable](#enable-cloud-update) and [configure](#review-configuration-of-cloud-update) cloud update
 - How devices [onboard](#onboarding-of-devices) and [update](#update-flow)
 - [Best practices and tips](#best-practices-and-tips-for-working-with-cloud-update)
 
@@ -32,82 +32,104 @@ This document covers:
 
 ## Benefits of using Cloud Update
 There are multiple benefits of using cloud update over common update management tools:
-- **Improved security currency**: In enterprise environments, a typical security currency hovers around **66%** when using traditional update management solutions. This percentage reflects the proportion of Microsoft 365 Apps that receive the latest security updates after each monthly "Patch Tuesday." However, when organizations use cloud update, this currency significantly improves, often exceeding **90%**. As a result, the overall security posture of the environment is enhanced, providing better protection against potential threats.
-- **Increased reach**: Common update management tools are often limited by the boundary of a directory service. To manage devices, those must be joined into Active Directory and/or Microsoft Entra ID. With cloud update, you're breaking this barrier. Cloud update manages all Microsoft 365 Apps instances which have a Microsoft Entra user from your tenant signed in. It doesn't matter if the device is joined into Active Directory, Microsoft Entra ID, registered into Microsoft Entra ID, or remains in workgroup mode.
+- **Improved security currency**: With traditional update management, enterprise security currency is typically around 66%, indicating the percentage of Microsoft 365 Apps updated with the latest security updates. However, using cloud updates can boost this figure to over 90%, enhancing overall security and better safeguarding against threats.
+  
+- **Increased reach**: Traditional update tools require devices to join a directory service like Active Directory or Microsoft Entra ID. Cloud update overcomes this limitation, managing all Microsoft 365 Apps instances signed in with a Microsoft Entra user from your tenant, regardless of the device's directory membership.
+  
 - **Leveraging the cloud**: As a true cloud-based service, cloud update isn't dependent on any on-premises infrastructure. Wherever the device is, if it can connect to the cloud, it can be serviced.
-- **Easy onboarding**: If a device is in scope of cloud update (elaborated later in this document), it automatically ignores any other Microsoft 365 Apps update management configuration. No need to detach the Microsoft 365 Apps from other management solutions first. If a device falls out-of-scope for cloud update, the previous control is restored. Cloud update only applies to Microsoft 365 Apps, everything else (for example, how updates for Windows or Edge are managed) remains the same. In summary, a device can be managed by two solutions at the same time without any conflicts.
+  
+- **Easy onboarding**: Devices in scope of cloud update automatically bypass other Microsoft 365 Apps update configurations, with no need for detachment. If out-of-scope, previous controls are restored. Cloud update applies solely to Microsoft 365 Apps, leaving other app configurations unchanged. Thus, a device can be simultaneously managed by two solutions without conflict.
 
 ## Preparation
 ### Device targeting
-Cloud update currently supports two update channels: [Current Channel](../updates/overview-update-channels.md#current-channel-overview) and [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview). Once enabled, cloud update will automatically create a profile for each update channel and enable them. Devices on one of the two update channels will then be automatically onboarded to the cloud update service. Excluded devices and devices on other update channels will be excluded and not onboarded. No automatic update channel change is performed. All devices remain on the update channels they had before the enablement of cloud update.
+Cloud update, supporting [Current Channel](../updates/overview-update-channels.md#current-channel-overview) and [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview), automatically creates profiles and onboards devices on these channels once enabled. Devices on other channels or those excluded remain unaffected. No channel changes occur.
 
-We recommend that you check the [security update status](https://config.office.com/officeSettings/currency) page in the Microsoft 365 Apps admin center. Look at the **Update Status by channel** breakdown to quickly identify how many devices are on Current Channel and Monthly Enterprise Channel. All of those (minus exclusions) will be automatically onboarded.
+To identify device distribution across channels, check the [security update status](https://config.office.com/officeSettings/currency) page in the Microsoft 365 Apps admin center. All devices (except exclusions) on Current Channel and Monthly Enterprise channel will be onboarded.
 
 ### Network considerations
-To get a rough estimate on the potential network impact, review the number of devices on an outdated release, combined with the [download size for updates](/officeupdates/download-sizes-microsoft365-apps-updates). In doubt, check with your network team if the Office CDN is reachable and your network can handle the initial load. Devices which are on a current release won't perform an update until one is released.
+Estimate network impact by reviewing the [number of devices on an outdated release](https://config.office.com/officeSettings/currency) and the estimated [update download size](/officeupdates/download-sizes-microsoft365-apps-updates) per device. Consult your network team to ensure Office CDN accessibility and network capacity. Devices on a current release won't update until a new one is released.
 
-As updates are downloaded from the Office CDN, the update engine on the devices will make use of [Delivery Optimization](/windows/deployment/do/waas-delivery-optimization) if it's enabled (on by default). This can significantly reduce the network impact, as devices will share required source files in a peer-to-peer manner. If you have Configuration Manager running in your environment, consider enabling [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to allow your servers to act as central caches for Delivery Optimization. If Delivery Optimization is disabled or not configured on devices, we recommend reviewing the documentation and enabling Delivery Optimization. This won't only benefit Microsoft 365 Apps, but also Windows, Teams, Edge, and Windows store Apps.
+Updates downloaded from Office CDN use [Delivery Optimization](/windows/deployment/do/waas-delivery-optimization), reducing network impact through peer-to-peer file sharing. If Configuration Manager is in use, consider enabling [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) for centralized caching. If Delivery Optimization is disabled, we recommend enabling it to benefit Microsoft 365 Apps, Windows, Teams, Edge, and Windows Store Apps.
 
-### Handling exclusions
-If you need or want to exclude certain devices from cloud update, ensure that those devices are Microsoft Entra joined or hybrid joined and [add those device objects to an Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). Alternatively, you can also specify user objects and cloud update will exclude all devices which reported those user objects as the last active user. When using user objects, devices don't need to be Microsoft Entra joined or hybrid joined.
+### Exclusions
+To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). Alternatively, specify user objects to exclude all devices with those users as the last active. User object exclusion doesn't require device joining. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
 
 ### Prerequisites and permissions
-Review the list of [requirements](../admincenter/overview.md#how-to-get-to-the-admin-center) for using cloud update to ensure your devices meet the prerequisites and you have proper access to the Microsoft 365 Apps admin center. We recommend using the [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles), as this role has the most restrictive set of permissions which still allows you to enable and configure cloud update.
+Ensure your devices meet the prerequisites for using cloud update by reviewing the [requirements](../admincenter/overview.md#how-to-get-to-the-admin-center). Network connectivity from your devices to the Microsoft 365 Apps admin center is necessary. The [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
 
 ## Enable Cloud Update
-After reviewing the benefits and the preparation section, let's enable cloud update.
+Once you've gone through the benefits and preparation steps, it's time to activate cloud update.
+
 1.	Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with admin permissions.
 2.	On the **Overview** page, you see a card labeled **Recommendation based on your tenant**.
 3.	Select **Enable cloud**.  
 4.	Refresh the page.
-5.	**Cloud update** in the left navigation is now expandable and you can access an **Overview**, as well as the individual pages for **Current Channel** and **Monthly Enterprise Channel**.
+5. The **Cloud update** option in the left navigation is now expandable, providing access to an **Overview** and individual pages for both **Current Channel** and **Monthly Enterprise Channel**.
 
-## Configure Cloud Update
-After enablement, we recommend that you review and adjust the configuration of the profiles and the overall service according to the needs of your organization.
+## Review configuration of Cloud Update
+Once enabled, it's recommended to review and modify the configuration to fit your organization's requirements.
 
 ### Global Settings
 Navigate to **Cloud Update** > **Overview** and select the **Tenant Settings** tab.
-- **Exclusion windows**: Configure any required exclusion windows. During an exclusion window, no updates are deployed to devices. You can also scope an exclusion window to a group of device or user objects. If you use Microsoft Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
-- **Exclude groups**: Configure your exclusions. Those devices or user objects will always be excluded from cloud update. If you use Microsoft Entra ID groups which contain devices, those must be Microsoft Entra joined, or hybrid joined.
+- **Exclusion windows**: Set up necessary exclusion windows during which no updates are deployed. These windows can be scoped to a group of devices or users. If using Microsoft Entra ID groups with device objects, they must be Microsoft Entra joined or hybrid joined.#
+
+- **Exclude groups**: Configure your exclusions. Those devices or user objects will always be excluded from cloud update. If using Microsoft Entra ID groups with device objects, they must be Microsoft Entra joined or hybrid joined.
 
 ### Current Channel settings
 Navigate to **Cloud Update** > **Current** and select the **Settings** tab.
-- Deadline: The deadline determines the time which can pass between the first silent update attempt and the update engine prompting the user to close their Microsoft 365 Apps.
+- **Deadline**: The deadline specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
 
 ### Monthly Enterprise Channel settings
 Navigate to **Cloud Update** > **Monthly Enterprise** and select the **Settings** tab.
-- **Rollout waves**: You can choose not to use rollout waves, which will defer to an automatic wave rollout over a 4-day period. Alternatively, if you can configure custom rollout waves to control your update deployment across multiple days. For more information, review the documentation for about [custom rollout waves](../admincenter/cloud-update.md#monthly-enterprise-channel). Use Entry ID groups to configure waves and set the delay between each wave.
-- **Update validation**: [Update validation](../admincenter/update-validation.md) is enabled by default when you configure custom rollout waves. This feature helps you in assessing if a new update is introducing any issues into your environment when it comes to the performance and 
-of the Microsoft 365 Apps. We recommend using update validation, which will adjust your first wave to a seven-day delay. If you choose to not use the feature, you can opt out by clicking the **Opt out of update validation** link.
-- **Deadline**: The deadline determines the time which can pass between the first silent update attempt and the update engine prompting the user to close their Microsoft 365 Apps.
+- **Rollout waves**: By default, tenants with over 100 devices have updates staggered across four days. However, you can establish up to four custom rollout waves for more control over update deployment. For details, refer to the [custom rollout waves](../admincenter/cloud-update.md#monthly-enterprise-channel) documentation.
+
+- **Update validation**: When custom rollout waves are configured, [Update validation](../admincenter/update-validation.md) is enabled by default. This feature aids in evaluating the impact of new updates on the performance and stability of Microsoft 365 Apps. It's recommended to use update validation, which sets a seven-day delay for the first wave. If not desired, you can opt out via the **Opt out of update validation** link.
+
+- **Deadline**: The deadline specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
 
 ## Onboarding of devices
-After enabling cloud update and reviewing the settings, it might take some time for the service to process all devices and pending changes. Navigate to **Inventory** > [**Show All Devices**](https://config.office.com/officeSettings/inventory/devices) and review the **Cloud Update Status** column. You'll start to see devices move to an **onboarding** state and eventually marked as **managed**. Devices that are part of an exclusion group will be marked as **excluded**.
+With cloud updates enabled and configured, the service starts to onboard devices. Here's how you can monitor this process by using the [**inventory**](https://config.office.com/officeSettings/inventory) in the Microsoft 365 Apps admin center.
 
-Devices will check in with the service multiple times a day. New devices that are already running the latest release for their update channel will remain in the onboarding state until the next update is released by Microsoft. Once there's a need to install an update, cloud update will perform three actions with the next check-in of the device:
-1. **Ignore other management solutions**: Cloud update will send commands to the update engine for Microsoft 365 Apps to ignore other update instructions on the device. For example, for a device managed by Configuration Manager, the update engine will start ignoring update commands from Configuration Manager.
-1. **Trigger the update on the device**: The device will download, extract, and apply the update. If Microsoft 365 Apps are running, the deadline setting will be used to determine when to prompt the user.
-1. **Onboarding to managed**: The **Cloud Update Status** in inventory will change from **Onboarding** to **Managed by**, reflecting that update management has been transferred to cloud update.
+Go to **Inventory** > [**Show All Devices**](https://config.office.com/officeSettings/inventory/devices) and check the **Cloud Update Status** column. Devices will transition to an **onboarding** state before being labeled as **managed**. Devices in an exclusion group will be tagged as **excluded**.
 
-## Update flow  
-This section provides more information about how cloud update delivers updates to your devices and what you can expect as an admin.
-1. Cloud update continuously monitors the devices in inventory for changes. If a new device reports into inventory, or an existing device reports being on a new update channel, cloud update will evaluate if that device falls within its scope. Exclusions will always overrule this check and ensure that those devices aren't onboarded to cloud update. If you change the settings of cloud update, a full evaluation of inventory is triggered. If you have tens or hundreds of thousands of devices, this task might take a couple of hours to reflect the changes you made.
-1. The service pre-calculates any pending actions and stores them until the next device check-in. When the device checks in, those actions are passed down to the device, the update engine on the device is triggered, and the status in the portal is changed to **In Progress**. If custom rollout waves are configured, no actions are sent to devices until the start date of the given wave has passed.
-1. The update engine for Microsoft 365 Apps is set to ignore all other update management configurations. This includes Configuration Manager, Group Policy, Intune configuration profiles, and local registry values. However, the option for the user to manually trigger an update check from the Microsoft 365 Apps’s interface is still available.
-1. Once the update engine has triggered, it will determine the delta needed to update the device, download those bits, extract them locally, and stage the new files. 
-1. Next, the update engine will attempt to overwrite the existing files with the updated version. If all Microsoft 365 Apps are closed, the files are swapped out and the update is complete. All described actions are silent to the user. The device will report back to the service that the update completed successfully, which is then reflected in the Microsoft 365 Apps admin center.
-1. If the file operation fails due to running applications, the device will record a timestamp and the deadline setting comes into play. The update engine will retry to apply the update multiple times per day, during reboot of the device, or when the device is locked and in idle mode ([Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)). This will be done silently in the background until the recorded timestamp plus the number of days set in the deadline setting has passed.
-1. If the deadline passes a prompt is shown to the user, giving the user the option to close the application(s) now or postpone the installation. The user can postpone the installation of the update for about 48 hours before a final countdown of two hours is shown. If the user chooses to close the applications or the final countdown has reached zero, the Microsoft 365 Apps will save any open files, the window positions, close all applications, apply the update, restore all windows, and reopen the files. On average, the user downtime is less than five minutes.
+Devices check in with the service regularly. New devices on the latest release stay in the onboarding state until a new update is released. Upon update need, cloud update performs three actions: 
 
-There are two special cases to be aware of: 
-- When the deadline is set to 0, the first prompt will occur immediately after the first failed attempt to apply the update. Still the user can postpone the update. 
-- After the user has postponed the update installation, the update engine still tries to apply the update. For example, when the user postpones the update and then reboots the device, the update will be applied during reboot and no further prompts are shown to the user.
+1. **Take control over Microsoft 365 Apps updates**: Commands are sent to the device and its Microsoft 365 Apps update engine to ignore other update instructions.
 
-## Best practices and tips for working with Cloud Update 
-These are some best practices and tips for working with cloud update:
-- Like other cloud services or Microsoft Configuration Manager, cloud update is an asynchronous service. When you create or change the configuration, the service processes your input in the background. The admin center might not reflect your changes immediately.
-- Changing settings triggers a full evaluation of all devices. If you want to change multiple settings, do this in one go and allow the service to process your changes.
-- When settings change and custom rollout waves are used, the waves are also re-calculated.
-- The same applies when pausing or resuming a profile in cloud update. Allow the service to process the change, and don't pause/resume the service in quick succession. Pausing cloud update won't stop already initiated update installations on devices but will stop the service from sending out new update commands to devices.
-- When triggering a rollback, the same applies. After configuring a rollback action, the service needs time to process the change and waits for the device to check in to send the rollback commands.
-- When using Microsoft Entra groups for excluding devices or configuring custom deployment waves, limiting the number of members to 20,000 objects per group is recommended. You can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Microsoft Entra group with, for example, 40,000 members, it's recommended to use two groups with 20,000 members each.
+2. **Trigger the device update**: The device downloads, extracts, and applies the update. If Microsoft 365 Apps are running, the deadline setting determines when to prompt the user.
+
+3. **Update status from onboarding to managed**: The **Cloud Update Status** changes from **Onboarding** to **Managed by**, indicating the transfer of update management to cloud update.
+
+## Update flow
+This section details how cloud update delivers updates and what admins can expect:
+
+1. Cloud update continuously monitors device inventory for changes. If a new device is added or an existing one changes its update channel, cloud update evaluates if the device is within its scope. Exclusions override this check, preventing those devices from being onboarded. Changes to cloud update settings trigger a full inventory evaluation, which may take hours for large device numbers.
+
+1. The service pre-calculates pending actions, storing them until the next device check-in. When the device checks in, these actions are passed down, triggering the update engine and changing the portal status to **In Progress**. If custom rollout waves are configured, no actions are sent until the wave's start date.
+
+1. The Microsoft 365 Apps update engine is set to ignore all other update management configurations, including Configuration Manager, Group Policy, Intune configuration profiles, and local registry values. However, users can still manually trigger an update check from the Microsoft 365 Apps interface.
+
+1. Once triggered, the update engine determines the update delta, downloads the bits, extracts them locally, and stages the new files.
+
+1. The update engine then attempts to overwrite the existing files with the updated version. If all Microsoft 365 Apps are closed, the files are swapped out and the update is complete. All actions are silent to the user. The device reports back to the service that the update completed successfully, reflected in the Microsoft 365 Apps admin center.
+
+1. If the file operation fails due to running applications, the device records a timestamp and the deadline setting comes into play. The update engine retries the update multiple times per day, during device reboot, or when the device is locked and idle ([Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)). This continues silently until the recorded timestamp plus the deadline setting days have passed.
+
+1. If the deadline passes, a prompt is shown to the user, offering the option to close the applications now or postpone the installation. The user can postpone the update installation for about 48 hours before a final two-hour countdown is shown. If the user chooses to close the applications or the countdown reaches zero, the Microsoft 365 Apps save any open files, close all applications, apply the update, restore all windows, and reopen the files. On average, user downtime is less than five minutes.
+    - Note two special cases:
+        - If the deadline is set to 0, the first prompt appears immediately after the first failed update attempt, but the user can still postpone the update.
+        - Even if the user postpones the update, the update engine continues to try to apply it. For instance, if the user postpones the update and then reboots the device, the update will be applied during reboot without further prompts.
+
+## Best practices and tips for working with Cloud Update
+Here are some tips for using cloud update:
+- Cloud update, like other services, is asynchronous. Changes may not be immediately reflected in the portal.
+
+- Changing settings triggers a full device evaluation. Make multiple changes at once and allow processing time.
+
+- Setting changes also recalculate custom rollout waves and the rollout restarts with wave 1.
+
+- Allow processing time when pausing/resuming a profile. Pausing won't stop initiated updates but prevents new commands. A pause is typically applied within one hour.
+
+- Rollbacks also require processing time after configuration. If the profile is paused, rollbacks are still processed and executed.
+
+- Limit Microsoft Entra groups to 20,000 objects for exclusions or custom waves. Multiple smaller groups process faster than one large group.
