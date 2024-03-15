@@ -100,25 +100,36 @@ Devices check in with the service regularly. New devices on the latest release s
 
 3. **Update status from onboarding to managed**: The **Cloud Update Status** changes from **Onboarding** to **Managed by**, indicating the transfer of update management to cloud update.
 
-## Update flow  
-This section provides more information about how cloud update delivers updates to your devices and what you can expect as an admin.
-1. Cloud update continuously monitors the devices in inventory for changes. If a new device reports into inventory, or an existing device reports being on a new update channel, cloud update will evaluate if that device falls within its scope. Exclusions will always overrule this check and ensure that those devices aren't onboarded to cloud update. If you change the settings of cloud update, a full evaluation of inventory is triggered. If you have tens or hundreds of thousands of devices, this task might take a couple of hours to reflect the changes you made.
-1. The service pre-calculates any pending actions and stores them until the next device check-in. When the device checks in, those actions are passed down to the device, the update engine on the device is triggered, and the status in the portal is changed to **In Progress**. If custom rollout waves are configured, no actions are sent to devices until the start date of the given wave has passed.
-1. The update engine for Microsoft 365 Apps is set to ignore all other update management configurations. This includes Configuration Manager, Group Policy, Intune configuration profiles, and local registry values. However, the option for the user to manually trigger an update check from the Microsoft 365 Apps’s interface is still available.
-1. Once the update engine has triggered, it will determine the delta needed to update the device, download those bits, extract them locally, and stage the new files. 
-1. Next, the update engine will attempt to overwrite the existing files with the updated version. If all Microsoft 365 Apps are closed, the files are swapped out and the update is complete. All described actions are silent to the user. The device will report back to the service that the update completed successfully, which is then reflected in the Microsoft 365 Apps admin center.
-1. If the file operation fails due to running applications, the device will record a timestamp and the deadline setting comes into play. The update engine will retry to apply the update multiple times per day, during reboot of the device, or when the device is locked and in idle mode ([Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)). This will be done silently in the background until the recorded timestamp plus the number of days set in the deadline setting has passed.
-1. If the deadline passes a prompt is shown to the user, giving the user the option to close the application(s) now or postpone the installation. The user can postpone the installation of the update for about 48 hours before a final countdown of two hours is shown. If the user chooses to close the applications or the final countdown has reached zero, the Microsoft 365 Apps will save any open files, the window positions, close all applications, apply the update, restore all windows, and reopen the files. On average, the user downtime is less than five minutes.
+## Update flow
+This section details how cloud update delivers updates and what admins can expect:
 
-There are two special cases to be aware of: 
-- When the deadline is set to 0, the first prompt will occur immediately after the first failed attempt to apply the update. Still the user can postpone the update. 
-- After the user has postponed the update installation, the update engine still tries to apply the update. For example, when the user postpones the update and then reboots the device, the update will be applied during reboot and no further prompts are shown to the user.
+1. Cloud update continuously monitors device inventory for changes. If a new device is added or an existing one changes its update channel, cloud update evaluates if the device is within its scope. Exclusions override this check, preventing those devices from being onboarded. Changes to cloud update settings trigger a full inventory evaluation, which may take hours for large device numbers.
 
-## Best practices and tips for working with Cloud Update 
-These are some best practices and tips for working with cloud update:
-- Like other cloud services or Microsoft Configuration Manager, cloud update is an asynchronous service. When you create or change the configuration, the service processes your input in the background. The admin center might not reflect your changes immediately.
-- Changing settings triggers a full evaluation of all devices. If you want to change multiple settings, do this in one go and allow the service to process your changes.
-- When settings change and custom rollout waves are used, the waves are also re-calculated.
-- The same applies when pausing or resuming a profile in cloud update. Allow the service to process the change, and don't pause/resume the service in quick succession. Pausing cloud update won't stop already initiated update installations on devices but will stop the service from sending out new update commands to devices.
-- When triggering a rollback, the same applies. After configuring a rollback action, the service needs time to process the change and waits for the device to check in to send the rollback commands.
-- When using Microsoft Entra groups for excluding devices or configuring custom deployment waves, limiting the number of members to 20,000 objects per group is recommended. You can specify multiple groups. Also, processing multiple smaller groups is faster than processing a single large group. Instead of using one Microsoft Entra group with, for example, 40,000 members, it's recommended to use two groups with 20,000 members each.
+1. The service pre-calculates pending actions, storing them until the next device check-in. When the device checks in, these actions are passed down, triggering the update engine and changing the portal status to **In Progress**. If custom rollout waves are configured, no actions are sent until the wave's start date.
+
+1. The Microsoft 365 Apps update engine is set to ignore all other update management configurations, including Configuration Manager, Group Policy, Intune configuration profiles, and local registry values. However, users can still manually trigger an update check from the Microsoft 365 Apps interface.
+
+1. Once triggered, the update engine determines the update delta, downloads the bits, extracts them locally, and stages the new files.
+
+1. The update engine then attempts to overwrite the existing files with the updated version. If all Microsoft 365 Apps are closed, the files are swapped out and the update is complete. All actions are silent to the user. The device reports back to the service that the update completed successfully, reflected in the Microsoft 365 Apps admin center.
+
+1. If the file operation fails due to running applications, the device records a timestamp and the deadline setting comes into play. The update engine retries the update multiple times per day, during device reboot, or when the device is locked and idle ([Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)). This continues silently until the recorded timestamp plus the deadline setting days have passed.
+
+1. If the deadline passes, a prompt is shown to the user, offering the option to close the applications now or postpone the installation. The user can postpone the update installation for about 48 hours before a final two-hour countdown is shown. If the user chooses to close the applications or the countdown reaches zero, the Microsoft 365 Apps save any open files, close all applications, apply the update, restore all windows, and reopen the files. On average, user downtime is less than five minutes.
+    - Note two special cases:
+        - If the deadline is set to 0, the first prompt appears immediately after the first failed update attempt, but the user can still postpone the update.
+        - Even if the user postpones the update, the update engine continues to try to apply it. For instance, if the user postpones the update and then reboots the device, the update will be applied during reboot without further prompts.
+
+## Best practices and tips for working with Cloud Update
+Here are some tips for using cloud update:
+- Cloud update, like other services, is asynchronous. Changes may not be immediately reflected in the portal.
+
+- Changing settings triggers a full device evaluation. Make multiple changes at once and allow processing time.
+
+- Setting changes also recalculate custom rollout waves and the rollout restarts with wave 1.
+
+- Allow processing time when pausing/resuming a profile. Pausing won't stop initiated updates but prevents new commands. A pause is typically applied within one hour.
+
+- Rollbacks also require processing time after configuration. If the profile is paused, rollbacks are still processed and executed.
+
+- Limit Microsoft Entra groups to 20,000 objects for exclusions or custom waves. Multiple smaller groups process faster than one large group.
