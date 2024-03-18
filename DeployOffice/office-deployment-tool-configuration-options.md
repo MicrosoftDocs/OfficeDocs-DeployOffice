@@ -10,7 +10,9 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
+
 ms.date: 03/15/2024
+
 ---
 
 # Configuration options for the Office Deployment Tool
@@ -27,6 +29,7 @@ The ODT consists of two files: setup.exe and configuration.xml. To work with the
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 
 This configuration file includes the most-commonly used elements and attributes, and can be used to download and install Microsoft 365 Apps on a client computer.
+
 
 ```xml
 <Configuration>
@@ -96,6 +99,7 @@ Example values:
 
 The SourcePath value shouldn't include the /Office part or the name of the folder on which Office Data is downloaded.
 
+
 ### Version attribute (part of Add element)
 
 Optional. Defaults to the latest version available if not specified.
@@ -113,6 +117,7 @@ Example values:
 ### OfficeClientEdition attribute (part of Add element) 
 
 Optional.
+
 
 Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
 
@@ -177,6 +182,7 @@ Optional. Defaults to False if not specified.
 To use the CDN as a backup source for language packs, include the "AllowCdnFallback" attribute in the configuration file, as shown in the example.
 
 When you install languages, the ODT first searches for source files at the location given in the SourcePath attribute. If the language pack isn't available at that location **and** the AllowCdnFallback setting is set to True, then the ODT uses source files from the CDN.
+
 
 Allowed values: 
 
@@ -302,6 +308,7 @@ In the following example, Project Online Desktop Client is installed on the devi
 
 Defines which languages to download or install. If you define multiple languages, the first language in the configuration file determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you want to change the Shell UI language after the first installation, you must uninstall and then reinstall Microsoft 365 Apps. 
 
+
 ### Example
 
 ```xml
@@ -355,9 +362,11 @@ MatchInstalled can be used only if there is at least one Click-to-Run product al
 
 Optional.
 
+
 When using MatchOS, specify a fallback language to install if the matched language isn't supported by Microsoft 365 Apps or is unavailable in the local source files. To do so, use the "Fallback" attribute. For more information, see [Install the same languages as the operating system](overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system).
 
-Example values:
+
+#### Example values:
 
 - Fallback="en-us"
 - Fallback="ja-jp"
@@ -413,6 +422,7 @@ Allowed values:
 
 ## ExcludeApp element
 
+
 Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is installed automatically with Microsoft 365 Apps or with individual applications like Word, Excel, PowerPoint, Publisher, Visio, or Skype. If you don't want OneDrive installed with those applications, use the ExcludeApp element to remove it. For more information, see [Exclude OneDrive when installing Microsoft 365 Apps or other applications](overview-office-deployment-tool.md#exclude-onedrive-when-installing-microsoft-365-apps-or-other-applications).
 
 ### Example
@@ -430,6 +440,7 @@ Defines which Microsoft 365 Apps products shouldn't be installed. OneDrive is in
 ```
 
 If a configuration file with ExcludeApp is used to install Office on a device that already has Microsoft 365 Apps installed, the ExcludeApp setting is treated differently based on the list of languages:
+
 - If the configuration file lists all languages already installed on the device, its ExcludeApp setting overrides any previous ExcludeApp settings. This applies even when the file's language list includes both the installed languages and extra languages.
 - If the list of languages in the configuration file doesn't include all the installed languages, then the ExcludeApp setting in the configuration file is combined with the ExcludeApp setting on the device. 
 
@@ -502,6 +513,7 @@ Allowed values:
 ### FORCEAPPSHUTDOWN property (part of Property element)
 
 Optional. Default is **FALSE** if not specified.
+
 
 When set to **TRUE**, forces any apps that are blocking the install of Microsoft 365 Apps to shut down. Data loss might occur. 
 
@@ -678,6 +690,7 @@ Optional.
 
 Defines a deadline by which updates must be applied. The deadline is specified in Coordinated Universal Time (UTC). You can use **Deadline** with **Target Version** to make sure that Microsoft 365 Apps is updated to a particular version by a particular date. We recommend that you set the deadline at least a week in the future to allow users time to install the updates. 
 
+
 Before the deadline, users receive multiple reminders to install the updates. If Microsoft 365 Apps isn't updated by the deadline, users see a notification that the updates will be applied in 15 minutes. This notification gives users the opportunity to save the documents that they're working on and to close any Microsoft 365 applications that are open. If users don't close the Microsoft 365 applications, the applications are closed automatically when the 15 minutes are up, which might result in data loss. 
 
 After Microsoft 365 Apps is closed, the updates are applied automatically. The deadline only applies to one set of updates. If you want to use a deadline to make sure that Microsoft 365 Apps is always up to date, you must change the deadline every time a new update is available.
@@ -711,6 +724,7 @@ Allowed values:
 > - To use these attribute values, you need to be using at least version 16.0.12827.20268 of the Office Deployment Tool, which was released on Tuesday June 9, 2020.
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
+
 
 If you deploy Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume-licensed versions, you must use this update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc2021/update.md#update-channel-for-office-ltsc-2021).
 
