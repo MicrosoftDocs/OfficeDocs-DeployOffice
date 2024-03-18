@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Tier2
+ms.collection: Tier1
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2021."
 ms.date: 03/11/2024
