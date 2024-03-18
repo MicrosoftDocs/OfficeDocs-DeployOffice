@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "This article gives step-by-step instructions for changing the update channel for Microsoft 365 Apps."
-ms.date: 03/13/2024
+ms.date: 03/18/2024
 ---
 
 # Change the Microsoft 365 Apps update channel for devices in your organization
@@ -149,11 +149,14 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 - If Microsoft 365 Apps was recently installed or updated, changing the update channel can take up to 24 hours after the new setting was applied.
 - The client device's user interface will display the updated channel only after installing a build from the new channel.
 - Moving from a channel with a newer version of Microsoft 365 Apps to a channel with an older version removes features exclusive to the newer version.
-- Review how M365 Apps determine priority for updates:
-   - 1st Priority: Cloud Update "UpdatePath" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdatePath
-   - 2nd Priority: Cloud Update "UpdateBranch" in HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate!UpdateBranch
-   - 3rd Priority : GPO "UpdatePath" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatepath
-   - 4th Priority : GPO "UpdateChannel" - HKLM\software\policies\microsoft\office\16.0\common\officeupdate!updatebranch
-   - 5th Priority : "UpdateURL" or UpdatePath="\\Server\Share" HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration
-   - 6th Priority: UnmanagedUpdateURL - HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\UnmanagedUpdateURL
-   - 7th Priority : CDNBaseURL - HKLM\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl
+- Review how Microsoft 365 Apps determines which update channel to apply:
+
+Priority|Management Type|Registry Value|Registry Path
+---|---|---|---
+1st|Cloud Update|UpdatePath|HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate
+2nd|Cloud Update|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate
+3rd|Policy Setting|UpdatePath|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
+4th|Policy Setting|UpdateBranch|HKLM\SOFTWARE\Policies\Microsoft\office\16.0\Common\officeupdate
+5th|ODT|UpdateUrl or UpdatePath|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+6th|Unmanaged|UnmanagedUpdateURL|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
+7th|Unmanaged|CDNBaseUrl|HKLM\SOFTWARE\Microsoft\office\ClickToRun\Configuration
