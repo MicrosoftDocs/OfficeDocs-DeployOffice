@@ -344,7 +344,7 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-Be sure the languages that you specify is support by the product you're installing. Otherwise your installation fails.
+Be sure the languages that you specify is supported by the product you're installing. Otherwise your installation fails.
 
 For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
 
