@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
 
-ms.date: 03/15/2024
+ms.date: 03/18/2024
 
 ---
 
@@ -88,7 +88,7 @@ Defines the products and languages to download or install.
 
 Optional.
 
-Defines the location of the Microsoft 365 Apps installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT looks for installation files in the same folder as the tool, and then use the [Content Delivery Network (CDN)](/microsoft-365/enterprise/content-delivery-networks.md). If not included and the ODT is run in download mode, the Microsoft 365 Apps installation files are downloaded to the same folder as the tool. 
+Defines the location of the Microsoft 365 Apps installation files. If the ODT is run in download mode, defines where to save the files. If not included, the ODT looks for installation files in the same folder as the tool, and then use the [Content Delivery Network (CDN)](/microsoft-365/enterprise/content-delivery-networks). If not included and the ODT is run in download mode, the Microsoft 365 Apps installation files are downloaded to the same folder as the tool. 
 
 When you download Microsoft 365 Apps to a folder that already contains that version of Microsoft 365 Apps, the ODT conserves your network bandwidth by downloading only the missing files. For example, if you use the ODT to download Microsoft 365 Apps in English and German to a folder that already contains Microsoft 365 Apps in English, only the German language pack is downloaded.
 
