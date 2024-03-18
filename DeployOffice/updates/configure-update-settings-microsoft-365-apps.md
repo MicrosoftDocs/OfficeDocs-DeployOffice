@@ -21,7 +21,7 @@ There are two ways that you can configure update settings for Microsoft 365 Apps
     
 - Group Policy settings (using on-premises Group Policy Objects or the ADMX-ingested administrative template for Office within Intune)
   
-The Administrative Template for Office imported in Intune is the same that you would download and use in an on-premises environment and you can use an Intune configuration profile to configure the update settings for Microsoft 365 Apps. There are two ways to create in Intune such a configuration profile: using an "Administrative templates" profile type or the Settings Catalog. The Settings Catalog has more settings available then the "Administrative templates" profile type.    
+The Administrative Template for Office imported in Intune is the same that you would download and use in an on-premises environment and you can use an Intune configuration profile to configure the update settings for Microsoft 365 Apps. There are two ways to create in Intune such a configuration profile: using an "Administrative templates" profile type or the Settings Catalog. The Settings Catalog has more settings available than the "Administrative templates" profile type.    
 
 Here are some of the update settings that you can configure by using the Office Deployment Tool or Group Policy(in on-premises or Intune).
   
