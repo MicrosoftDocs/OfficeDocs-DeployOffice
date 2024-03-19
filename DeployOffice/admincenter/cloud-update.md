@@ -19,7 +19,7 @@ ms.date: 03/19/2024
 > [!NOTE]
 Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
 > 
-> If you are ready to upgrade today, follow these steps:
+> If you're ready to upgrade today, follow these steps:
 > 
 > 1. Sign in to the Microsoft 365 Apps admin center.
 > 2. Click the Give feedback button in the top right corner.
@@ -66,9 +66,9 @@ Cloud update supports the following subscription plans:
 
 Cloud update can manage Microsoft 365 Apps on Windows with the following version requirements:
 
-- [Supported version of Microsoft 365 Apps](https://learn.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
-- [Supported version of Microsoft Windows 10/11](https://learn.microsoft.com/windows/release-health/supported-versions-windows-client)
-- [Supported version of Windows Server that supports Microsoft 365 Apps](https://learn.microsoft.com/deployoffice/endofsupport/windows-server-support)
+- [Supported version of Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
+- [Supported version of Microsoft Windows 10/11](/windows/release-health/supported-versions-windows-client)
+- [Supported version of Windows Server that supports Microsoft 365 Apps](/deployoffice/endofsupport/windows-server-support.md)
 
 ### Network requirements
 
@@ -79,11 +79,11 @@ Devices running Microsoft 365 Apps require access to the following endpoints:
 | Cloud Update      | <li>login.live.com</li><li>\*.config.office.com</li><li>\*.config.office.net</li>
 | Office Content Delivery Network (CDN)        | <li>officecdn.microsoft.com</li><li>officecdn.microsoft.com.edgesuite.net</li><li>otelrules.azureedge.net</li>
 
-  Source: [Microsoft 365 URLs and IP address ranges](https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)
+  Source: [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 ### Requirements for using Microsoft Entra groups
 
-Cloud update has multiple features that support the use of [Microsoft Entra groups](https://learn.microsoft.com/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups). In all cases, the membership of these groups supports user and/or device objects with the following requirements:
+Cloud update has multiple features that support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups). In all cases, the membership of these groups supports user and/or device objects with the following requirements:
 
 - **Device objects** must be Microsoft Entra joined or hybrid joined.
 - **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
@@ -98,8 +98,8 @@ Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the fo
 2. Review how [cloud update works with other management tools](#compatibility-with-other-management-tools) and verify that you don't have any conflicts.
 3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
 4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
-5. Follow the guide to [enable and configure cloud update](https://learn.microsoft.com/en-us/deployoffice/fieldnotes/adopting-cloud-update).
-6. Refer to the [troubleshooting](#troubleshooting) and [FAQ](#faq) sections for more advanced topics.
+5. Follow the guide to [enable and configure cloud update](/fieldnotes/adopting-cloud-update.md).
+6. Refer to the [troubleshooting](#troubleshooting) for more advanced topics.
 
 ## Touring cloud update
 
@@ -348,4 +348,4 @@ If the problem persists after troubleshooting, open a support ticket with Micros
 
 We value your feedback. To submit feature suggestions and report issues, you can use the Feedback button in the top-right corner of the Microsoft 365 Apps admin center.
 
-![Screenshot of the feedback screen in the Microsoft 365 Apps admin center](https://github.com/MicrosoftDocs/OfficeDocs-DeployOffice-pr/assets/72577850/089c1145-3948-4cb7-a680-f965e0ae88d4)
+:::image type="content" source="\DeployOffice\images\m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a lightbulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. Below is a checkbox labeled 'Include screenshot' and an orange 'Submit' button. At the bottom left corner is a 'Privacy Statement' link." lightbox="MicrosoftDocs/OfficeDocs-DeployOffice-pr/assets/72577850/089c1145-3948-4cb7-a680-f965e0ae88d4":::
