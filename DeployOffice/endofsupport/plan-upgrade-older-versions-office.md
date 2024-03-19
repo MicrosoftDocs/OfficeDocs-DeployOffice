@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 12/12/2023
+ms.date: 03/19/2024
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -27,7 +27,7 @@ The following table shows the end of support dates for older versions of Office.
 |Office 2010 |October 13, 2020  |
 |Office 2007 |October 10, 2017  |
 
-This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't already begun to upgrade from these older versions of Office, we recommend you start now.
+This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't begun to upgrade from these older versions of Office, we recommend you start now.
 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
@@ -67,7 +67,7 @@ This article provides guidance on upgrading to Microsoft 365 Apps.
 
 ## What is Microsoft 365? What is Microsoft 365 Apps?
 
-Microsoft 365 (and Office 365) provides subscription plans that include access to Office applications and other cloud services, including Teams, Exchange Online, and OneDrive for Business. For more information, see the following resources:
+Microsoft 365 (and Office 365) provides subscription plans that include access to Office applications and other cloud services, including Teams, Exchange Online, and OneDrive. For more information, see the following resources:
 
 - [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans)
 - [Compare enterprise plans for Office 365](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans)
@@ -99,7 +99,7 @@ For more information, see the following resources:
 
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you'll want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
+Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
 If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) program.
 
@@ -132,7 +132,7 @@ For more information, see the following resources:
 
 ## Plan for additional languages
 
-You can install language accessory packs after you've deployed Microsoft 365 Apps in one of its base languages. There are two ways to install language accessory packs:
+You can install language accessory packs after you deploy Microsoft 365 Apps in one of its base languages. There are two ways to install language accessory packs:
 
 - Have your users download and install the language accessory packs for themselves.
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users.

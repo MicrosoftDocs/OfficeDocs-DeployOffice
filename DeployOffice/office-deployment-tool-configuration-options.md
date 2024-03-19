@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
 
-ms.date: 03/18/2024
+ms.date: 03/19/2024
 
 ---
 
@@ -344,7 +344,7 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-Be sure the languages that you specify is supported by the product you're installing. Otherwise your installation fails.
+Be sure the languages that you specify are supported by the product you're installing. Otherwise your installation fails.
 
 For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
 
@@ -467,7 +467,7 @@ Allowed values:
 - ID="Word"
 
 > [!NOTE]
-> - For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
+> - For OneDrive, use **Groove**. For Skype for Business, use **Lync**.
 > - For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 > - "Bing" refers to the background service for Microsoft Search in Bing. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](microsoft-search-bing.md).
 

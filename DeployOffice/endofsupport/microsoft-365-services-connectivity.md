@@ -12,12 +12,12 @@ search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 12/12/2023
+ms.date: 03/19/2024
 ---
 
 # Office versions and connectivity to Microsoft 365 services
 
-The following table lists the Office versions that are supported for connecting to Microsoft 365 services. For example, connecting to Exchange Online, SharePoint Online, or OneDrive for Business.
+The following table lists the Office versions that are supported for connecting to Microsoft 365 services. For example, connecting to Exchange Online, SharePoint Online, or OneDrive.
 
 |Office version |Supported for connecting until this date  |
 |---------|---------|
@@ -32,9 +32,9 @@ The following table lists the Office versions that are supported for connecting 
 
 Older Office versions might still be able to connect to Microsoft 365 services, but that connectivity isn't supported.
 
-In practical terms, what this means is that older Office versions might not be able to use all the latest functionality and features of Microsoft 365 services. In addition, over time, these older versions might encounter other unexpected performance or reliability issues while using Microsoft 365 services. That's because as we make improvements to Microsoft 365 services, we're not taking into account or testing with these older Office versions.
+In practical terms, what this means is that older Office versions might not be able to use all the latest functionality and features of Microsoft 365 services. In addition, over time, these older versions might encounter other unexpected performance or reliability issues while using Microsoft 365 services. This situation occurs because improvements to Microsoft 365 services don't consider or test compatibility with these older Office versions.
 
-No active measures will be made to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date. For example, Office 2019 and Office 2016, both of which are in extended support until October 14, 2025.
+No active measures are made to block older Office versions from connecting to Microsoft 365 services if they're in extended support and are kept up to date. For example, Office 2019 and Office 2016, both of which are in extended support until October 14, 2025.
 
 Therefore, to provide the best experience with using Microsoft 365 services, we strongly recommend that you move off older Office versions to versions supported for connecting to Microsoft 365 services.
 
@@ -53,11 +53,11 @@ We provide various services to help you upgrade to subscription versions of the 
 
 ### Retirement of TLS 1.0 and 1.1
 
-After October 15, 2020, you must be using at least TLS 1.2 to connect to Microsoft 365 services. For more information, see [Disabling TLS 1.0 and 1.1 for Microsoft 365](/purview/tls-1.0-and-1.1-deprecation-for-office-365) and [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/purview/prepare-tls-1.2-in-office-365).
+Since October 15, 2020, you must use at least TLS 1.2 to connect to Microsoft 365 services. For more information, see [Disabling TLS 1.0 and 1.1 for Microsoft 365](/purview/tls-1.0-and-1.1-deprecation-for-office-365) and [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/purview/prepare-tls-1.2-in-office-365).
 
 ### Basic authentication deprecation in Exchange Online
 
-In early January 2023, Basic authentication for multiple protocols for Exchange Online will be permanently turned off. For more information, see the following blog posts:
+In early January 2023, Basic authentication for multiple protocols for Exchange Online was permanently turned off. For more information, see the following blog posts:
 
 - [Basic Authentication Deprecation in Exchange Online – Time’s Up](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-time-s-up/ba-p/3695312)
 - [Basic Authentication Deprecation in Exchange Online – What’s Next](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-what-s-next/ba-p/3678143)
@@ -75,7 +75,7 @@ As of November 1, 2021, there are minimum versions of Outlook for Windows requir
 
 ## Additional information about connectivity to Microsoft 365 services  
 
-- Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. That’s because Office 2016 for Mac reached its end of support on October 13, 2020.
+- Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. Office 2016 for Mac reached its end of support on October 13, 2020.
 - The following versions of Project are supported for connecting to Microsoft 365 services:
   - Project Online Desktop Client *(as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions))*
   - Project Professional 2021 and Project Standard 2021 *(until October 2026)*
