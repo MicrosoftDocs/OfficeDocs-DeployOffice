@@ -30,9 +30,9 @@ Cloud update is the successor to servicing profile. If you still see servicing p
 
 Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
 
-# Requirements
+## Requirements
 
-## Built-in roles for managing cloud update
+### Built-in roles for managing cloud update
 
 You can use any of the following Microsoft Entra built-in roles to enable and manage cloud update:
 
@@ -45,7 +45,7 @@ You can use any of the following Microsoft Entra built-in roles to enable and ma
 > [!NOTE]
 > Global Reader is another built-in role supported by the Microsoft 365 Apps admin center, but it does not support accessing cloud update.
 
-## Licensing requirements
+### Licensing requirements
 
 Cloud update supports the following subscription plans:
 
@@ -61,7 +61,7 @@ Cloud update supports the following subscription plans:
 >- Microsoft 365 GCC
 >- Microsoft 365 GCC High and DoD
 
-## Product version requirements
+### Product version requirements
 
 Cloud update can manage Microsoft 365 Apps on Windows with the following version requirements:
 
@@ -69,7 +69,7 @@ Cloud update can manage Microsoft 365 Apps on Windows with the following version
 - [Supported version of Microsoft Windows 10/11](https://learn.microsoft.com/windows/release-health/supported-versions-windows-client)
 - [Supported version of Windows Server that supports Microsoft 365 Apps](https://learn.microsoft.com/deployoffice/endofsupport/windows-server-support)
 
-## Network requirements
+### Network requirements
 
 Devices running Microsoft 365 Apps require access to the following endpoints:
 
@@ -80,7 +80,7 @@ Devices running Microsoft 365 Apps require access to the following endpoints:
 
   Source: [Microsoft 365 URLs and IP address ranges](https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)
 
-## Requirements for using Microsoft Entra groups
+### Requirements for using Microsoft Entra groups
 
 Cloud update has multiple features that support the use of [Microsoft Entra groups](https://learn.microsoft.com/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups). In all cases, the membership of these groups supports user and/or device objects with the following requirements:
 
@@ -89,7 +89,7 @@ Cloud update has multiple features that support the use of [Microsoft Entra grou
 - Multiple groups can be used, but a single group should contain no more than 20,000 objects.
 - Nested groups is supported up to 3 levels deep.
 
-# Getting started with cloud update
+## Getting started with cloud update
 
 Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the following resources to prepare, enable, configure, and monitor cloud update for your organization.
 
@@ -100,9 +100,9 @@ Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the fo
 5. Follow the guide to [enable and configure cloud update](https://learn.microsoft.com/en-us/deployoffice/fieldnotes/adopting-cloud-update).
 6. Refer to the [troubleshooting](#troubleshooting) and [FAQ](#faq) sections for more advanced topics.
 
-# Touring cloud update
+## Touring cloud update
 
-## Overview dashboard
+### Overview dashboard
 The [Updates Overview](https://config.office.com/officeSettings/MPOverview) page for cloud update provides an at-a-glance view of your update progress, health, and management status for all of your channel profiles.
 
 - **Update progress** shows the current update progress for all update channels, filterable by channel profile. Use this view to see how your rollout is progressing for the latest build. Drill down deeper to see all managed or unmanaged devices.
@@ -113,7 +113,7 @@ The [Updates Overview](https://config.office.com/officeSettings/MPOverview) page
 
 - **Tenant Settings** is a separate tab on the overview page for configuring tenant-level settings, such as [exclusion windows](#exclusion-windows) and [exclude groups](#exclude-groups).
 
-## Monthly Enterprise Channel profile
+### Monthly Enterprise Channel profile
 [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) delivers updates once a month on a predictable schedule (patch Tuesday). With this cadence, the Monthly Enterprise Channel profile is able to support additional controls, such as [rollout waves](#rollout-waves) and [update validation](#update-validation).
 
 The [Monthly Enterprise Channel profile](https://config.office.com/officeSettings/MPmecChannel) page for cloud update provides an at-a-glance view of your update progress, management status, and health for devices on Monthly Enterprise Channel.
@@ -128,7 +128,7 @@ The [Monthly Enterprise Channel profile](https://config.office.com/officeSetting
 
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as [rollout waves](#rollout-waves) and the [update deadline](#deadline).
 
-## Current Channel profile
+### Current Channel profile
 [Current Channel](../updates/overview-update-channels.md#current-channel-overview) delivers updates multiple times a month, on an unset schedule, as soon as they are ready for customers. Due to this cadence, the Current Channel profile a reduced set of features that fit the channel dynamic.
 
 The [Current Channel profile](https://config.office.com/officeSettings/MPCurrentChannel) page for cloud update provides an at-a-glance view of your update progress, management status, and health for devices on Current Channel.
@@ -141,11 +141,11 @@ The [Current Channel profile](https://config.office.com/officeSettings/MPCurrent
 
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as the [update deadline](#deadline)
 
-# Profile controls
+## Profile controls
 
 Profile controls are additional actions that admins have access to for each profile. This includes capabilities such as pausing a rollout entirely and/or issuing a roll back to a previous build.
 
-## Pause
+### Pause
 
 Pause is available for devices managed by the Monthly Enterprise Channel profile. 
 
@@ -166,7 +166,7 @@ To pause and resume a profile, follow these steps:
 > [!NOTE]
 > For rollout waves, the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
 
-## Rollback
+### Rollback
 
 Rollback is available for devices managed by the Monthly Enterprise Channel profile.
 
@@ -185,12 +185,12 @@ To trigger a rollback, follow these steps:
 4. On the flyout, select the version you want to roll the device back to, enter the name of the device(s), and click **Roll back**.
 5. The roll back action will take 24 hours to complete. You can monitor the status from the **Overview** page by selecting **Channel actions** > **Manage rolled back devices**.
 
-# Tenant settings
+## Tenant settings
 
 Tenant settings include settings that apply to all profiles (unless specified).
 This includes capabilities such as scheduling an exclusion window or assigning an exclusion group.
 
-## Exclusion windows
+### Exclusion windows
 
 Exclusion windows is available for devices managed by the Monthly Enterprise Channel profile.
 
@@ -215,7 +215,7 @@ To create and manage an exclusion window, follow these steps:
 > [!NOTE]
 > For rollout waves, the scheduled rollout continues when an exclusion window is active and does not restart when updates resume.
 
-## Exclude groups
+### Exclude groups
 
 Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there may be situations where you need to exclude one or more devices. For example, you may need to move a device to an update channel that is not currently available with cloud update. Consider the following when using exclude groups:
 
@@ -237,12 +237,12 @@ To add or modify a group exclusion, follow these steps:
 7. From the flyout, add your Microsoft Entra group(s) and click **Add to list**.
 8. Click **Save**.
 
-# Profile settings
+## Profile settings
 
 Profile settings include settings that apply to specific profiles.
 This includes capabilities such as configuring rollout waves, enabling update validation, and assigning an update deadline.
 
-## Rollout waves
+### Rollout waves
 
 Rollout waves is available for devices managed by the Monthly Enterprise Channel profile.
 
@@ -273,7 +273,7 @@ To configure rollout waves, follow these steps:
 > - The **Current Channel** profile leverage the default rollout schedule defined by the Office CDN, which on average reaches full deployment within 5 days of patch Tuesday.
 > - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating on a daily basis. This same enforcement is applied when using custom rollout waves. 
 
-## Update validation
+### Update validation
 
 Update validation is available for devices managed by the Monthly Enterprise Channel profile and using [custom rollout waves](#rollout-waves).
 
@@ -281,7 +281,7 @@ Update validation is a feature that enables you to validate new updates for the 
 
  For more information, watch [Introducing Update Validation in the Microsoft 365 Apps admin center](https://youtu.be/xZtXI-Ws-pE) or read the [full documentation](update-validation.md).
 
-## Deadline
+### Deadline
 
 Deadline is available for all cloud update profiles. 
 
@@ -302,31 +302,31 @@ To configure the deadline, follow these steps:
 4. From **Settings**, select **Deadline**.
 5. Adjust the **Update deadline** slider to your preferred value and click **Save**.
 
-# Compatibility with other management tools
+## Compatibility with other management tools
 
 Cloud update takes precedence over existing update management settings for Microsoft 365 Apps. For example, settings applied by Microsoft Configuration Manager or policies set through Microsoft Intune’s configuration profiles; these will remain unchanged by cloud update but will no longer be enforced. This applies to all devices managed by cloud update. 
 
 > [!NOTE]
 > Cloud update will not change the update settings of other products, such as Windows or Edge. It will also not prevent management solutions from reinstalling Microsoft 365 Apps. 
 
-# Channel to profile mapping
+## Channel to profile mapping
 
 With cloud update enabled, devices are automatically mapped to the corresponding profile based on their update channel. For example, all devices on Current Channel will map to the Current Channel profile. Once mapped to a profile, cloud update will deliver the appropriate policies to these devices.
 
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel *will not be managed by cloud update* until they are moved to a channel that cloud update supports.
 
-# Troubleshooting
+## Troubleshooting
 > [!IMPORTANT]
 > If you are experiencing any issues enabling cloud update or managing the devices in your environment, be sure to review the [requirements for cloud update](#requirements) before proceeding.
 
-## Devices are stuck in an onboarding state
+### Devices are stuck in an onboarding state
 With cloud update enabled, the service will use [channel to profile mapping](#channel-to-profile-mapping) to automatically identify and onboard devices to their corresponding profile. Devices on the Monthly Enterprise Channel will show a status of **Onboarding to Monthly Enterprise Channel** until a new update is available. These are the two scenarios where this will apply:
 
 - The device was recently discovered by cloud update for the first time and already has the latest version of Microsoft 365 Apps installed for Monthly Enterprise Channel. In this scenario the device will show **Onboarding to Monthly Enterprise Channel** until a new update release is available, typically next patch Tuesday.
 
 - The device was recently discovered by cloud update for the first time and has an outdated version of Microsoft 365 Apps installed for Monthly Enterprise Channel. You have custom rollout waves configured and the device is in a later wave. In this scenario the device will show **Onboarding to Monthly Enterprise Channel** until the assigned wave is active and the update is available.
 
-## Devices are updating outside of their assigned wave
+### Devices are updating outside of their assigned wave
 
 Updates applied outside of a custom rollout wave are due to external actions occurring on the device. Review the following scenarios and take any necessary actions:
 
@@ -334,17 +334,17 @@ Updates applied outside of a custom rollout wave are due to external actions occ
 
 - **Onboarding devices**: Devices that are still in an **Onboarding to [channel-name]** state will be managed by your existing settings until cloud update takes control. During this time other management settings can enforce updates. Consider excluding devices from these other management tools or wait until the next patch Tuesday cycle for cloud update to engage.
   
-## My Device-based group did not work with *[feature name]*
+### My Device-based group did not work with *[feature name]*
 
 If you are using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Microsoft Entra registered/Workplace joined will not be recognized by the service. As an alternative, consider adding the corresponding user object(s). For more information, refer to the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
 
-# Report a problem
+## Report a problem
 
 If you encounter a problem enabling or managing cloud update, first verify that you've reviewed the [requirements](#requirements) and completed the steps in the [troubleshooting](#troubleshooting) section.
 
 If the problem persists after troubleshooting, open a support ticket with Microsoft. For a quick investigation, be sure to include the date and time when the issue was discovered, a detailed description of the problem, and if the issue is related to a device, collect the Device ID from your [device inventory](https://config.office.com/officeSettings/inventory/devices). You can find the Device ID by selecting the device name in inventory and reviewing the flyout.
 
-# Send feedback
+## Send feedback
 
 We value your feedback. To submit feature suggestions and report issues, you can use the Feedback button in the top-right corner of the Microsoft 365 Apps admin center.
 
