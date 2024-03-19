@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of transitioning from COM to web add-ins in Outlook"
-ms.date: 11/09/2023
+ms.date: 04/11/2024
 ---
 
 # Migrate from COM to web add-ins
@@ -42,7 +42,7 @@ If your organization is currently using web add-ins, no extra effort is required
    | Microsoft COM Add-in | Details |
    | --------------------- | ------- |
    | Dynamics 365 | COM Add-in deprecated in favor of web add-in since 2020. |
-   | Microsoft Azure Information Protection (AIP) | Being replaced with native Office integration – new Outlook for Windows supports native sensitivity labels. For more information, see [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps). |
+   | Microsoft Purview Information Protection | Being replaced with native Office integration – new Outlook for Windows supports native sensitivity labels. For more information, see [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps). |
    | Microsoft Exchange Add-in | This add-in is no longer relevant. |
    | Microsoft IME (Input Method Editor) Outlook アドイン | Microsoft IME can be enabled in Windows and that should solve the relevant scenarios. |
    | Microsoft SharePoint Server Colleague Import Add-in | No equivalent web add-in is available for the SharePoint Server Colleague Import Add-in. |
