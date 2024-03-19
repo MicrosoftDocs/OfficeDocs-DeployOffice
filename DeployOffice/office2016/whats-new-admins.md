@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier2
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
-ms.date: 1/03/2024
+ms.date: 03/19/2024
 ---
 
 # What's new for admins in Office 2016
@@ -38,11 +38,11 @@ Multi-factor authentication (MFA) is now available in Outlook through integratio
   
 ## Outlook 2016 now requires Autodiscover to be configured
 
-Outlook now requires Autodiscover to be configured or it will be unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](/Exchange/architecture/client-access/autodiscover). 
+Outlook now requires Autodiscover to be configured or it's unable to connect to Exchange Server. Outlook retrieves Exchange connectivity settings directly from Autodiscover instead of the registry, making profiles more reliable, but that also makes Autodiscover a required feature. For more information, see [Autodiscover service](/Exchange/architecture/client-access/autodiscover). 
   
 ## Microsoft Purview Data Loss Prevention (DLP) added to Word 2016, Excel 2016, and PowerPoint 2016
 
-Microsoft Purview Data Loss Prevention (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage and enforce policies for content authoring and document sharing. End users see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive for Business.
+Microsoft Purview Data Loss Prevention (DLP) is now available in Word, Excel, and PowerPoint. Admins can centrally create, manage, and enforce policies for content authoring and document sharing. End users see policy tips or sharing restrictions when the apps detect a potential policy violation. This capability is available with SharePoint Online and OneDrive.
   
 ## Visio 2016 supports Information Rights Management (IRM)
 

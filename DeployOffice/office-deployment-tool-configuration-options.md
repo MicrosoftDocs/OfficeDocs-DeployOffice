@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
 
-ms.date: 03/18/2024
+ms.date: 03/19/2024
 
 ---
 
@@ -467,7 +467,7 @@ Allowed values:
 - ID="Word"
 
 > [!NOTE]
-> - For OneDrive for Business, use **Groove**. For Skype for Business, use **Lync**.
+> - For OneDrive, use **Groove**. For Skype for Business, use **Lync**.
 > - For more information about Microsoft Teams, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 > - "Bing" refers to the background service for Microsoft Search in Bing. For more information, see [Microsoft Search in Bing and Microsoft 365 Apps for enterprise](microsoft-search-bing.md).
 
