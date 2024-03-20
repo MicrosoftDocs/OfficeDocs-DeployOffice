@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Roadmap to modern management of Microsoft 365 Apps in the enterprise"
-ms.date: 01/23/2024
+ms.date: 03/20/2024
 ---
 
 # Roadmap to modern management of Microsoft 365 Apps in the enterprise
