@@ -3,7 +3,7 @@ title: "Overview of cloud update in the Microsoft 365 Apps admin center"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
-ms.reviewer: roclemen
+ms.reviewer: dimehta
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -17,17 +17,17 @@ ms.date: 03/19/2024
 # Overview of cloud update in the Microsoft 365 Apps admin center
 
 > [!NOTE]
-Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
-> 
-> If you're ready to upgrade today, follow these steps:
-> 
+> Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
+ 
+If you're ready to upgrade today, follow these steps:
+ 
 > 1. Sign in to the Microsoft 365 Apps admin center.
 > 2. Click the Give feedback button in the top right corner.
 > 3. Select an option and enter a comment expressing your desire to switch to Cloud Update.
 > 4. Provide your email address.
 > 5. Click Submit.
->    
-> We will reach out to you with more information.
+    
+We will reach out to you with more information.
 
 Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
 
@@ -99,7 +99,7 @@ Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the fo
 3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
 4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
 5. Follow the guide to [enable and configure cloud update](../fieldnotes/adopting-cloud-update.md).
-6. Refer to the [troubleshooting](#troubleshooting) for more advanced topics.
+6. Refer to the [troubleshooting](#troubleshooting) section for more advanced topics.
 
 ## Touring cloud update
 
@@ -270,7 +270,7 @@ To configure rollout waves, follow these steps:
 > [!IMPORTANT]
 > Rollout waves can be used to help reduce network congestion. In addition, cloud update includes built-in update thresholds. These include the following:
 > 
-> - The **Current Channel** profile leverage the default rollout schedule defined by the Office CDN, which on average reaches full deployment within 5 days of patch Tuesday.
+> - The **Current Channel** profile leverages the default rollout schedule defined by the Office CDN, which on average reaches full deployment within 5 days of patch Tuesday.
 > - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating on a daily basis. This same enforcement is applied when using custom rollout waves. 
 
 ### Update validation
@@ -336,13 +336,13 @@ Updates applied outside of a custom rollout wave are due to external actions occ
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Microsoft Entra registered/Workplace joined isn't recognized by the service. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined will not be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
 
 ## Report a problem
 
 If you encounter a problem enabling or managing cloud update, first verify that you reviewed the [requirements](#requirements) and completed the steps in the [troubleshooting](#troubleshooting) section.
 
-If the problem persists after troubleshooting, open a support ticket with Microsoft. For a quick investigation, include the date and time when the issue was discovered. Provide a detailed description of the problem. If it relates to a device, gather the Device ID from your [device inventory](https://config.office.com/officeSettings/inventory/devices). You can find the Device ID by selecting the device name in inventory and reviewing the flyout.
+If the problem persists after troubleshooting, open a support ticket with Microsoft. For a quick investigation, include the date and time when the issue was discovered, and provide a detailed description of the problem. Provide a detailed description of the problem. If it relates to a device, gather the Device ID from your [device inventory](https://config.office.com/officeSettings/inventory/devices). You can find the Device ID by selecting the device name in inventory and reviewing the flyout.
 
 ## Send feedback
 
