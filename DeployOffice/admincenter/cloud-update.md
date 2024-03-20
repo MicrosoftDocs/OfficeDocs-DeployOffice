@@ -18,16 +18,16 @@ ms.date: 03/19/2024
 
 > [!NOTE]
 > Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
- 
-If you're ready to upgrade today, follow these steps:
- 
+>
+>If you're ready to upgrade today, follow these steps:
+> 
 > 1. Sign in to the Microsoft 365 Apps admin center.
 > 2. Click the Give feedback button in the top right corner.
 > 3. Select an option and enter a comment expressing your desire to switch to Cloud Update.
 > 4. Provide your email address.
 > 5. Click Submit.
-    
-We will reach out to you with more information.
+>    
+>We will reach out to you with more information.
 
 Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
 
@@ -348,4 +348,4 @@ If the problem persists after troubleshooting, open a support ticket with Micros
 
 We value your feedback. To submit feature suggestions and report issues, you can use the Feedback button in the top-right corner of the Microsoft 365 Apps admin center.
 
-:::image type="content" source="/DeployOffice/images/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a lightbulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. Below is a checkbox labeled 'Include screenshot' and an orange 'Submit' button. At the bottom left corner is a 'Privacy Statement' link." lightbox="/MicrosoftDocs/OfficeDocs-DeployOffice-pr/assets/72577850/089c1145-3948-4cb7-a680-f965e0ae88d4":::
+:::image type="content" source="/DeployOffice/images/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a lightbulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. Below is a checkbox labeled 'Include screenshot' and an orange 'Submit' button. At the bottom left corner is a 'Privacy Statement' link." lightbox="/DeployOffice/images/m365aac_feedback.1.png":::
