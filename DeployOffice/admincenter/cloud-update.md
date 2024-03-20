@@ -14,7 +14,7 @@ description: "Provides Office admins information about cloud update in the Micro
 ms.date: 03/19/2024
 ---
 
-# Overview
+# Overview of cloud update in the Microsoft 365 Apps admin center
 
 > [!NOTE]
 Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
