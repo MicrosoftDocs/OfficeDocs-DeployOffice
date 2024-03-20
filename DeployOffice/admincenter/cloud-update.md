@@ -68,7 +68,7 @@ Cloud update can manage Microsoft 365 Apps on Windows with the following version
 
 - [Supported version of Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 - [Supported version of Microsoft Windows 10/11](/windows/release-health/supported-versions-windows-client)
-- [Supported version of Windows Server that supports Microsoft 365 Apps](/deployoffice/endofsupport/windows-server-support.md)
+- [Supported version of Windows Server that supports Microsoft 365 Apps](../endofsupport/windows-server-support.md)
 
 ### Network requirements
 
@@ -98,7 +98,7 @@ Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the fo
 2. Review how [cloud update works with other management tools](#compatibility-with-other-management-tools) and verify that you don't have any conflicts.
 3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
 4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
-5. Follow the guide to [enable and configure cloud update](/fieldnotes/adopting-cloud-update.md).
+5. Follow the guide to [enable and configure cloud update](../fieldnotes/adopting-cloud-update.md).
 6. Refer to the [troubleshooting](#troubleshooting) for more advanced topics.
 
 ## Touring cloud update
