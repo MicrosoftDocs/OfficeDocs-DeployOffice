@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/15/2024
+ms.date: 03/20/2024
 ---
 
 # Enabling and configuring Cloud Update
@@ -81,7 +81,7 @@ Navigate to **Cloud Update** > **Current** and select the **Settings** tab.
 
 ### Monthly Enterprise Channel settings
 Navigate to **Cloud Update** > **Monthly Enterprise** and select the **Settings** tab.
-- **Rollout waves**: By default, tenants with over 100 devices have updates staggered across four days. However, you can establish up to four custom rollout waves for more control over update deployment. For details, refer to the [custom rollout waves](../admincenter/cloud-update.md#monthly-enterprise-channel) documentation.
+- **Rollout waves**: By default, tenants with over 100 devices have updates staggered across four days. However, you can establish up to four custom rollout waves for more control over update deployment. For details, refer to the [custom rollout waves](../admincenter/cloud-update.md#rollout-waves) documentation.
 
 - **Update validation**: When custom rollout waves are configured, [Update validation](../admincenter/update-validation.md) is enabled by default. This feature aids in evaluating the impact of new updates on the performance and stability of Microsoft 365 Apps. It's recommended to use update validation, which sets a seven-day delay for the first wave. If not desired, you can opt out via the **Opt out of update validation** link.
 
