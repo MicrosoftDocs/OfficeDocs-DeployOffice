@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Microsoft 365 change guide"
-ms.date: 02/28/2024
+ms.date: 03/19/2024
 ---
 
 # Microsoft 365 change guide
@@ -334,7 +334,7 @@ Messages are identified in the right-side column above by one of three categorie
   
 **Plan for change**: These messages inform you of changes to Microsoft 365 that may require you to act to avoid disruptions in service. For example, you'll be notified about upcoming changes to system requirements and about features that will be removed. To keep the service running normally, we strive to provide at least 30 days' notice of any change that requires an admin to act.  
   
-**Stay informed**: This is where we notify you about new or updated features that we're turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages might also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance might result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service like email or OneDrive for Business. For more information, see the [Message center documentation](/microsoft-365/admin/manage/message-center).
+**Stay informed**: This is where we notify you about new or updated features that we're turning on in your organization. The features are usually announced first in the [Microsoft 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2070821). Stay informed messages might also let you know about planned maintenance in accordance with our Service Level Agreement. Planned maintenance might result in down time, where you or your users can't access Microsoft 365, a specific feature, or a service like email or OneDrive. For more information, see the [Message center documentation](/microsoft-365/admin/manage/message-center).
 
 Both "prevent or fix issues" and "plan for change" messages might require action from admins. To help you prioritize and plan, the **Act by** column contains the date by which action is required.
 
@@ -411,7 +411,7 @@ At the bottom-right of each page in the admin portal, customers can provide feed
 ![Screenshot of the Give Feedback button.](../images/fieldnotes/give-feedback-button.png)<br>
 *Figure 13*
 
-[**Message center**](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+[**Message center**](https://admin.cloud.microsoft/Adminportal/Home?source=applauncher#/MessageCenter)
 
 The **Give feedback** button also exists in the Message center so that you can provide feedback about incoming changes or other notifications without switching portal pages. The feedback from the Message center goes directly to the owning engineering and marketing teams within Microsoft. Microsoft owners receive a daily report of new feedback that has been submitted. If your feedback is regarding a specific change or message, be sure to include the Message center ID so that the feedback can be correctly correlated. In Figure 14, you can see the **Give feedback** button in the lower-right of the Message center.
 

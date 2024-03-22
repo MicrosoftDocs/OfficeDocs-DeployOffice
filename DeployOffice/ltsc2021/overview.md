@@ -35,7 +35,7 @@ Office LTSC 2021 is supported on devices running Windows 10 or Windows 11. For m
 
 For devices running macOS, Office LTSC Standard for Mac 2021 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
 
-## What’s changed in Office LTSC 2021?
+## What changed in Office LTSC 2021?
 
 The following are changes in Office LTSC 2021 compared to the volume licensed version of Office 2019.
 
@@ -67,9 +67,9 @@ Office LTSC 2021, including Project and Visio, have five years of Mainstream Sup
 > [!NOTE]
 > Office LTSC 2021 no longer includes the Teams client app. Existing Office LTSC 2021 installations remain unaffected. 
 
-Users with the Teams client app from their existing Office LTSC 2021 installation will be prompted to sign in upon launching. Those with a Microsoft Entra account linked to Teams, Microsoft 365, or Office 365 can sign in using their licensed account. 
+Users with the Teams client app from their existing Office LTSC 2021 installation are prompted to sign in upon launching. Users with a Microsoft Entra account linked to Teams, Microsoft 365, or Office 365 can sign in using their licensed account. 
 
-Users without an existing license for Teams will be able to use the free or the Exploratory service for Microsoft Teams.
+Users without an existing license for Teams are able to use the free or the Exploratory service for Microsoft Teams.
 - The free version of Microsoft Teams is for users who don't have an existing Microsoft Entra account. For more information, see [Manage the free version of Microsoft Teams](/microsoftteams/manage-freemium).
 
 - The Exploratory experience is for users in an organization who have existing Microsoft Entra accounts but aren't licensed for Teams. For more information, see [Manage the Microsoft Teams Exploratory license](/microsoftteams/teams-exploratory).
@@ -85,7 +85,7 @@ Office LTSC 2021 adds support for the following three languages:
 - Spanish (Mexico), es-mx
 
 > [!NOTE]
-> These three languages aren't available in Project or Visio.
+> These languages aren't available in Project or Visio.
 
 #### OpenDocument format 1.3
 
@@ -115,15 +115,15 @@ Office Add-ins on Windows now use Microsoft Edge with WebView2. For more informa
 
 [Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
 
-#### OneDrive for Business (Groove) client
+#### OneDrive (Groove) client
 
-The OneDrive for Business (Groove) client is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
+The OneDrive (Groove) client is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
 
 #### Power View in Excel
 
-Power View isn't available for the version of Excel that's included with Office LTSC 2021. Power BI is the recommended tool for visual data exploration and reporting. For more information, see [Roadmap for Power View in Excel](https://support.microsoft.com/office/c1f0d0f7-adef-4f03-ae35-46d83294e96b).
+Power View isn't available for the version of Excel included with Office LTSC 2021. Power BI is the recommended tool for visual data exploration and reporting. For more information, see [Roadmap for Power View in Excel](https://support.microsoft.com/office/c1f0d0f7-adef-4f03-ae35-46d83294e96b).
 
-## What’s stayed the same in Office LTSC 2021?
+## What stayed the same in Office LTSC 2021?
 
 You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
 
@@ -131,10 +131,10 @@ Also, how you activate volume licensed versions of Office remains the same. For 
 
 The major version of Office LTSC 2021 is 16.0, which is the same major version as volume licensed versions of Office 2019 (and Office 2016). Having the same major version provides the following benefits when you’re upgrading from Office 2019:
 
-- Existing Group Policy settings will continue to work, because those settings are still saved in the following registry locations:
+- Existing Group Policy settings continue to work, because those settings are still saved in the following registry locations:
    - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0
    - HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0
-- Other registry locations and settings information that reference 16.0 will still apply.
+- Other registry locations and settings information that reference 16.0 still apply.
 - Add-ins and other extensibility solutions that are compatible with volume licensed versions of Office 2019 will most likely be compatible with Office LTSC 2021 or will require only minimal testing.
 
 
@@ -150,9 +150,9 @@ For information about the new features in Office LTSC 2021, see the following ar
 - [What's new in Visio Professional 2021](https://support.microsoft.com/office/96732c1e-a022-4362-af07-fc817011ced5)
 - [What's new in Word 2021](https://support.microsoft.com/office/8f0b9117-8cf4-4677-8cd5-d848dd0e1ac9)
 
-Keep in mind that Office LTSC 2021 includes only some, but not all, features that are available in versions of Office that come with a Microsoft 365 (or Office 365) plan.
+Office LTSC 2021 includes only some, but not all, features that are available in versions of Office that come with a Microsoft 365 (or Office 365) plan.
 
-Office LTSC 2021 won’t receive any new features now that it's released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
+Office LTSC 2021 won’t receive any new features now that it released. If you want to get new Office features on an on-going basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office LTSC Professional Plus 2021. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans) and [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans).
 
 To get on-going feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan for those products. For more information, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 

@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 02/02/2024
+ms.date: 03/18/2024
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
@@ -25,7 +25,7 @@ Based on your preferred management solution, choose from the following options. 
 
 - [Cloud Update](#cloud-update)
 - [Microsoft Intune](#microsoft-intune)
-- [Microsoft AutoPatch](#microsoft-autopatch)
+- [Windows Autopatch](#windows-autopatch)
 - [Microsoft Configuration Manager](#microsoft-configuration-manager)
 - [Group Policies](#group-policies)
 
@@ -160,7 +160,7 @@ Monitor the progress of your configuration profile assignment using the followin
 
 The Microsoft 365 Apps perform the full update channel switch within the next 24 hours. Devices switch from any channel to the latest build released. Other apps like Visio, Project or Access Runtime are migrated and updated as well in the same pass.
 
-## Microsoft AutoPatch
+## Windows Autopatch
 This section covers the recommended settings for managing the update channel and update servicing options for Microsoft 365 Apps with Windows Autopatch. All devices registered for Windows Autopatch receive updates from the Monthly Enterprise Channel, as outlined in the [Service level objective](/windows/deployment/windows-autopatch/operate/windows-autopatch-microsoft-365-apps-enterprise#update-release-schedule). If you want to use Copilot in Microsoft 365 Apps on the Monthly Enterprise Channel, there's no action required. Only if you want to switch installations to Current Channel, follow the following instructions.
 
 To move a subset of devices to Current Channel, you can choose from two options:
