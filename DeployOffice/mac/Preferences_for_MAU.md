@@ -1,7 +1,7 @@
 ---  
 title: Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
 ms.author:  geokri
-author:  geokri
+author:  pbowden-msft
 manager: dougeby
 ms.reviewer:
 audience: ITPro
