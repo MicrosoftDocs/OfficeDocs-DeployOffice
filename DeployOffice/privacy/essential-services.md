@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/06/2024
+ms.date: 03/27/2024
 ---
 
 # Essential services for Office
@@ -5653,9 +5653,13 @@ When the device is on the modern licensing stack, we try to get a license file d
 
 The following fields are collected:
 
-  - **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it hasn't been tampered with
+- **Data_CountUsableIdentitiesInProfileList** - Reports the number of user identities associated with profiles signed into Microsoft Office.
 
-  - **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it hasn't been tampered with
+- **Data_CountUsableIdentitiesInUnfilteredIdentityList** - Reports the number of user identities in an unfiltered list of all identities signed into Microsoft Office, including those with pending action that requires a fix in order to authenticate.
+
+- **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it hasn't been tampered with
+
+- **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it hasn't been tampered with
 
 ### Office.Licensing.Nul.Validation.FullValidation 
 

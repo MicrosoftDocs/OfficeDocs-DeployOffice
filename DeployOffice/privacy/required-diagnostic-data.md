@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/06/2024
+ms.date: 03/27/2024
 ---
 
 # Required diagnostic data for Office
@@ -10591,6 +10591,8 @@ The following fields are collected:
 
 - **fMergeSucceeded** - Indicates if changes made by other users are merged to the document as part of the saving process.
 
+- **IOTransactionId** - unique identifier for various phases of save operation like loading and merging of document.
+
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
 This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It's also used to calculated monthly active users/devices.
@@ -11371,6 +11373,16 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success
 
+- **Data_AppActivated** - Last time when application is activated.
+
+- **Data_AppActivateTime** - Total time when user is active in the app during the lifecycle of video advertisement.
+
+- **Data_AppDeactivated** - Last time when application is deactivated.
+
+- **Data_BusbarClick** - Time when user clicks the description on video advertisement notification.
+
+- **Data_BusbarDismiss** - Time when user clicks the Close/Dismiss button on video advertisement notification.
+
 - **Data_BusbarShown** - Duration until video advertisement notification is shown.
 
 - **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
@@ -11410,6 +11422,8 @@ The following fields are collected:
 - **Data_Type** - The type of advertisement
 
 - **Data_VideoToShow** - Duration until video advertisement is about to be shown.
+
+- **Data_WatchNow** - Time when user clicks the Watch Now button on video advertisement notification.
 
 - **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
 
@@ -15449,6 +15463,16 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
 
+- **Data_AppActivated** - Last time when application is activated
+
+- **Data_AppActivateTime** - Total time when user is active in the app during the lifecycle of video advertisement.
+
+- **Data_AppDeactivated** - Last time when application is deactivated.
+
+- **Data_BusbarClick** - Time when user clicks the description on video advertisement notification.
+
+- **Data_BusbarDismiss** - Time when user clicks the Close/Dismiss button on video advertisement notification.
+
 - **Data_BusbarShown** - Duration until video advertisement notification is shown.
 
 - **Data_BusbarToShow** - Duration until video advertisement notification is about to be shown.
@@ -15491,6 +15515,8 @@ The following fields are collected:
 
 - **Data_VideoToShow** - Duration until video advertisement is about to be shown.
 
+- **Data_WatchNow** - Time when user clicks the Watch Now button on video advertisement notification.
+
 - **Data_WindowActivated** - Last time when window containing advertisement add-in page is activated.
 
 - **Data_WindowClosed** - Duration when application document window is closed
@@ -15527,6 +15553,45 @@ The following fields are collected:
 - **ReqId** - GUID for the batch request that this method belongs to
 
 - **TypeId** - GUID for the interface on which this method being called
+
+
+#### Office.Identity.InteractiveSignInMaciOS
+
+The event is triggered when signing in to Microsoft 365 apps via the Interactive Sign In functionality and is used to monitor sign in attempts and whether they succeeded or not, which allows us to keep the app secure and performing as expected.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to execute the Interactive Sign In.
+
+- **Activity_Success** - A flag indicating if the sign in succeeded or not.
+
+- **Associated** - A flag indicating whether the account found is signed in previously.
+
+- **Caller** - A tag indicating the caller triggering the Sign In flow.
+
+- **CorrelationId** - Field used to correlate authentication requests in the backend.
+
+- **Data_ErrorDescription** - Description of the error if the sign in failed.
+
+- **Data_FeatureName** - Name of this activity: Interactive Sign In.
+
+- **HasUserHint** - A flag indicating whether User Principal Name is prefilled.
+
+- **MSASignUp** - A flag indicating whether we will create a new MSA account or not.
+
+- **ProfileAction** - A flag indicating whether a new profile was created or not.
+
+- **Result** - A fixed value indicating Succeeded/Cancelled/Failed.
+
+- **RunRemediation** - A string indicating the providerId for enterprise accounts.
+
+- **SignInContext** - A number indicating the reason to show the Sign In flow; for example, First Run Experience, Adding a Connected Service, Open a document from URL, etc. 
+
+- **SignInFlowType** - A number indicating whether this is an enterprise or consumer account. 
+
+- **Status** - A number indicating the type of error status when failed.
+
+- **SubStatus** - A number indicating error code when failed. 
 
 
 #### Office.Manageability.Service.ApplyPolicy
@@ -16521,6 +16586,29 @@ The following fields are collected:
 
 Errors in functionality of a feature or user experience.
 
+#### android.anr
+
+This event is triggered when "Application not responding" (ANR) occurs, and is used to monitor ANRs in the app and try to solve them by stack trace and other information.
+
+The following fields are collected:
+
+- **anr_timestamp** - The timestamp when ANR occurs.
+
+- **is_background** - Whether ANR occurs in background.
+
+- **main_thread_stacktrace** - Main thread's stack trace when ANR occurs.
+
+- **main_thread_state** - Main thread's state trace when ANR occurs.
+
+- **main_thread_trimmed_stacktrace** - string value of main thread's trimmed stack trace when ANR occurs.
+
+- **reason** - The reason why ANR occurs.
+
+- **reason_raw** - Raw string of the reason why ANR occurs.
+
+- **type** - ANR type. For example, input dispatching timed out.
+
+
 #### assertion
 
 This event lets us detect when critical app errors occurred that would cause your app to crash or experience serious issues like causing you to see empty rows in your inbox.
@@ -17444,6 +17532,23 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_FirstRunCollectionTime** - A timestamp registering the time at which the flow was started.
+
+#### Office.Fluid.LoopMobile.Activity.BridgeCall
+
+The event occurs when the user performs an action that requires connectivity and allows us to track network reliability and performance metrics related to API calls made within the application, which we use to monitor that Loop is performing as expected. 
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to execute the user action.
+
+- **Activity_Success** - A flag indicating if the action succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if the action failed.
+
+- **Data_EventName** - Name of the underlying Bridge Call being made.
+
+- **Data_FeatureName** - Name of this activity: Bridge Call.
+
 
 #### Office.Fluid.LoopMobile.Error.Unexpected
 
@@ -19288,6 +19393,8 @@ The following fields are collected for iOS only:
 - **guided_access** - Tells us if the user has turned on guided access on their device to help us detect issues related to this setting
 
 - **invert_colors** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
+
+- **message_ordering_mode** - Tells us which setting the user has chosen to order their messages in the reading pane, either newest on top or newest on bottom.
 
 - **mono_audio** - Tells us if the user has turned on the setting for mono audio on their device to help us detect issues related to this setting
 
