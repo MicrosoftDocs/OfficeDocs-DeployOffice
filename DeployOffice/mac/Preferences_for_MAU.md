@@ -1,7 +1,7 @@
 ---  
 title: Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
-ms.author:  geokri 
-author:  
+ms.author:  geokri
+author:  geokri
 manager: dougeby
 ms.reviewer:
 audience: ITPro
@@ -36,4 +36,4 @@ This list details documented preferences for MAU in Microsoft 365 Enterprise. (I
 - **UpdateLog**: Determines the path for the update log file.
 - **UpdateNotification**: Configures update notifications for users.
 
-For more detailed information on preferences and their deployment, visit [Deploy preferences for Office for Mac](https://learn.microsoft.com/en-us/deployoffice/mac/deploy-preferences-for-office-for-mac).
+For more detailed information on preferences and their deployment, visit [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md).
