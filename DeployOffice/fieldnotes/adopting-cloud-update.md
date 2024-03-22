@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/20/2024
+ms.date: 03/22/2024
 ---
 
 # Enabling and configuring Cloud Update
@@ -23,6 +23,7 @@ This document covers:
 - How to [enable](#enable-cloud-update) and [configure](#review-configuration-of-cloud-update) cloud update
 - How devices [onboard](#onboarding-of-devices) and [update](#update-flow)
 - [Best practices and tips](#best-practices-and-tips-for-working-with-cloud-update)
+- Frequently Asked Questions ([FAQ](#faq))
 
 > [!NOTE]
 > The information in this document applies to updates for Microsoft 365 Apps only. Cloud update does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
@@ -47,15 +48,15 @@ Cloud update, supporting [Current Channel](../updates/overview-update-channels.m
 To identify device distribution across channels, check the [security update status](https://config.office.com/officeSettings/currency) page in the Microsoft 365 Apps admin center. All devices (except exclusions) on Current Channel and Monthly Enterprise channel will be onboarded.
 
 ### Network considerations
-Estimate network impact by reviewing the [number of devices on an outdated release](https://config.office.com/officeSettings/currency) and the estimated [update download size](/officeupdates/download-sizes-microsoft365-apps-updates) per device. Consult your network team to ensure Office CDN accessibility and network capacity. Devices on a current release won't update until a new one is released.
+Estimate network impact by reviewing the [number of devices on an outdated release](https://config.office.com/officeSettings/currency) and the estimated [update download size](/officeupdates/download-sizes-microsoft365-apps-updates) per device. Consult your network team to ensure [Office CDN accessibility](../admincenter/cloud-update.md#network-requirements) and network capacity. Devices on a current release won't update until a new one is released.
 
 Updates downloaded from Office CDN use [Delivery Optimization](/windows/deployment/do/waas-delivery-optimization), reducing network impact through peer-to-peer file sharing. If Configuration Manager is in use, consider enabling [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) for centralized caching. If Delivery Optimization is disabled, we recommend enabling it to benefit Microsoft 365 Apps, Windows, Teams, Edge, and Windows Store Apps.
 
 ### Exclusions
-To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). Alternatively, specify user objects to exclude all devices with those users as the last active. User object exclusion doesn't require device joining. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
+To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices and/or users to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). See [Requirements for using Microsoft Entra groups](../admincenter/cloud-update.ms#requirements-for-using-microsoft-entra-groups) for more details. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
 
-### Prerequisites and permissions
-Ensure your devices meet the prerequisites for using cloud update by reviewing the [requirements](../admincenter/overview.md#how-to-get-to-the-admin-center). Network connectivity from your devices to the Microsoft 365 Apps admin center is necessary. The [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
+### Requirements and permissions
+Ensure your devices meet the [requirements](../admincenter/cloud-update.md#requirements) for using cloud update. [Network connectivity](../admincenter/cloud-update.md#network-requirements) from your devices to the Microsoft 365 Apps admin center is necessary. The [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
 
 ## Enable Cloud Update
 Once you've gone through the benefits and preparation steps, it's time to activate cloud update.
@@ -71,13 +72,13 @@ Once enabled, it's recommended to review and modify the configuration to fit you
 
 ### Global Settings
 Navigate to **Cloud Update** > **Overview** and select the **Tenant Settings** tab.
-- **Exclusion windows**: Set up necessary exclusion windows during which no updates are deployed. These windows can be scoped to a group of devices or users. If using Microsoft Entra ID groups with device objects, they must be Microsoft Entra joined or hybrid joined.#
+- **Exclusion windows**: Set up necessary [exclusion windows](../admincenter/cloud-update.md#exclusion-windows) during which no updates are deployed. These windows can be scoped to a group of devices or users. [Requirements](../admincenter/cloud-update.md#requirements-for-using-microsoft-entra-groups) for using Microsoft Entra groups apply.
 
-- **Exclude groups**: Configure your exclusions. Those devices or user objects will always be excluded from cloud update. If using Microsoft Entra ID groups with device objects, they must be Microsoft Entra joined or hybrid joined.
+- **Exclude groups**: Configure your [exclusions](../admincenter/cloud-update.md#exclude-groups). Those devices or user objects will always be excluded from cloud update. [Requirements](../admincenter/cloud-update.md#requirements-for-using-microsoft-entra-groups) for using Microsoft Entra groups apply.
 
 ### Current Channel settings
 Navigate to **Cloud Update** > **Current** and select the **Settings** tab.
-- **Deadline**: The deadline specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
+- **Deadline**: The [deadline](../admincenter/cloud-update.md#deadline) specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
 
 ### Monthly Enterprise Channel settings
 Navigate to **Cloud Update** > **Monthly Enterprise** and select the **Settings** tab.
@@ -85,7 +86,7 @@ Navigate to **Cloud Update** > **Monthly Enterprise** and select the **Settings*
 
 - **Update validation**: When custom rollout waves are configured, [Update validation](../admincenter/update-validation.md) is enabled by default. This feature aids in evaluating the impact of new updates on the performance and stability of Microsoft 365 Apps. It's recommended to use update validation, which sets a seven-day delay for the first wave. If not desired, you can opt out via the **Opt out of update validation** link.
 
-- **Deadline**: The deadline specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
+- **Deadline**: The [deadline](../admincenter/cloud-update.md#deadline) specifies the duration from the initial silent update attempt to when the update engine prompts the user to close their Microsoft 365 Apps. A shorter deadline ensures that devices are applying the latest updates earlier, while a longer deadline reduces potential user disruption.
 
 ## Onboarding of devices
 With cloud updates enabled and configured, the service starts to onboard devices. Here's how you can monitor this process by using the [**inventory**](https://config.office.com/officeSettings/inventory) in the Microsoft 365 Apps admin center.
@@ -123,13 +124,17 @@ This section details how cloud update delivers updates and what admins can expec
 ## Best practices and tips for working with Cloud Update
 Here are some tips for using cloud update:
 - Cloud update, like other services, is asynchronous. Changes may not be immediately reflected in the portal.
-
 - Changing settings triggers a full device evaluation. Make multiple changes at once and allow processing time.
-
 - Setting changes also recalculate custom rollout waves and the rollout restarts with wave 1.
-
 - Allow processing time when pausing/resuming a profile. Pausing won't stop initiated updates but prevents new commands. A pause is typically applied within one hour.
-
 - Rollbacks also require processing time after configuration. If the profile is paused, rollbacks are still processed and executed.
 
-- Limit Microsoft Entra groups to 20,000 objects for exclusions or custom waves. Multiple smaller groups process faster than one large group.
+## FAQ
+**Will enabling cloud update impact my existing update channel configuration for Microsoft 365 Apps?**
+No, by default cloud update does not make any automatic changes to a device's update channel. The option to change a device's update channel is controlled by the admin and initiated using the [Switch device update channel](../admincenter/inventory.md#switch-device-update-channel) feature.
+
+**Will enabling cloud update impact any of my other update settings?**
+The settings you configure for each cloud update profile will determine which update settings are deployed. If you have existing update management tools in your environment, learn more about [compatibility with other management tools](../admincenter/cloud-update.md#compatibility-with-other-management-tools).
+
+**Something doesn't work, where do I start with troubleshooting?**
+Check out the [Troubleshooting section](../admincenter/cloud-update.md#troubleshooting) in the cloud udpate documentation.
