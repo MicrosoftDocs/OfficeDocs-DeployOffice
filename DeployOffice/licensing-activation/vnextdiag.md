@@ -46,7 +46,7 @@ To view the activation status of Microsoft 365 Apps, you can use the PowerShell 
 To use vnextdiag.ps1, you need to open a Windows PowerShell command prompt and navigate to the C:\Program Files\Microsoft Office\Office16 folder. From there, use the following command:
 
 ```powershell
-./vnextdiag.ps1 -list
+./vnextdiag.ps1 -action list
 ```
 
 > [!NOTE]
@@ -66,7 +66,7 @@ If the device is configured for [shared computer activation](../overview-shared-
 You can also use vnextdiag.ps1 to reset the activation of Microsoft 365 Apps. To force reactivation of a product installed on the device, use the following command from the Windows PowerShell command prompt:
 
 ```powershell
-./vnextdiag.ps1 -remove LicenseId
+./vnextdiag.ps1 -action remove -LicenseId EWW_GUID_ID
 ```
 
 For LicenseId, use the LicenseID for the product you want to reactivate, as shown in the vnextdiag.ps1 output. For Microsoft 365 Apps, the ID starts with EWW.
