@@ -137,4 +137,4 @@ No, by default cloud update does not make any automatic changes to a device's up
 The settings you configure for each cloud update profile will determine which update settings are deployed. If you have existing update management tools in your environment, learn more about [compatibility with other management tools](../admincenter/cloud-update.md#compatibility-with-other-management-tools).
 
 **Something doesn't work, where do I start with troubleshooting?**
-Check out the [Troubleshooting section](../admincenter/cloud-update.md#troubleshooting) in the cloud udpate documentation.
+Check out the [Troubleshooting section](../admincenter/cloud-update.md#troubleshooting) in the cloud update documentation.
