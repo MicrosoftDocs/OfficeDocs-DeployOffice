@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
-ms.date: 09/26/2023
+ms.date: 03/25/2024
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
@@ -73,13 +73,7 @@ The date when the new Microsoft Teams starts being installed with Microsoft 365 
 
 ## How to exclude Microsoft Teams from new installations of Microsoft 365 Apps
 
-If you don't want Teams included when you install Microsoft 365 Apps on devices running Windows, follow these steps: 
-
-1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with an admin account.
-2. Go to **customize** > **Device Configuration** > **Modern Apps Settings**. 
-3. Select **Microsoft Teams (work or school)**, then clear the **Enable automatic installation of new Microsoft Teams** check box.  
-
-Additionally, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. As an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
+If you don't want Teams included when you install Microsoft 365 Apps on devices running Windows, you can use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool (ODT). As an alternative, you can let Teams be installed, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
 If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you can use the [ExcludeApp element](office-deployment-tool-configuration-options.md#excludeapp-element) in your configuration.xml file, as shown in the following example.
 
@@ -104,7 +98,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 ```
 
 > [!TIP]
-> Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
+> Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the ODT. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
 
 If you're deploying Microsoft 365 Apps by using the Office 365 Client Installation wizard in Microsoft Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
 
@@ -136,9 +130,9 @@ If you don't want Teams to be added to ***existing*** installations of Microsoft
 2. Go to **customize** > **Device Configuration** > **Modern Apps Settings**. 
 3. Select **Microsoft Teams (work or school)**, then clear the **Enable automatic installation of new Microsoft Teams** check box.  
 
-Use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the Office Deployment Tool. As an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
+Use [Group Policy](#use-group-policy-to-control-the-installation-of-microsoft-teams) or the ODT. As an alternative, you can let Teams be added, but use Group Policy to [prevent Teams from automatically starting](#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation) when the user signs in to the device.
 
-If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you need to run the Office Deployment Tool in /configure mode on each device before you update to the new version of Microsoft 365 Apps. Use this configuration.xml file with the Office Deployment Tool to exclude Teams from being added to your existing installation of Microsoft 365 Apps for enterprise.
+If you want to use the [Office Deployment Tool](overview-office-deployment-tool.md), you need to run the ODT in /configure mode on each device before you update to the new version of Microsoft 365 Apps. Use this configuration.xml file with the ODT to exclude Teams from being added to your existing installation of Microsoft 365 Apps for enterprise.
 
 ```xml
 <Configuration>
@@ -153,7 +147,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 ```
 
 > [!NOTE]
-> - Be sure you're using the most current version of the Office Deployment Tool available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
+> - Be sure you're using the most current version of the ODT available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49117).
 > - If your existing installation of Microsoft 365 Apps has excluded other apps, such as Access, you need to include a line in your configuration.xml file for each of those excluded apps. Otherwise, those apps will be installed on the device.
 > - If you have Microsoft 365 Apps for business installed, use O365BusinessRetail for the Product ID in your configuration.xml file.
 
@@ -167,7 +161,7 @@ If your organization isn't ready to deploy Teams and you use Group Policy, you c
 > - This policy setting only applies if you are installing or updating to Version 1905 or later of Microsoft 365 Apps.
 > - To use this policy setting, download at least version 4882.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), which were released on July 9, 2019.
 
-If you enable this policy setting, Teams won't be installed in the following scenarios for Version 1905 or later:
+If you enable this policy setting, Teams isn't installed in the following scenarios for Version 1905 or later:
 
 - New installations of Microsoft 365 Apps
 - Updates to existing installations of Microsoft 365 Apps
@@ -178,9 +172,9 @@ If you have Microsoft 365 Apps for business or can't use Group Policy for some o
 
 ## Use Group Policy to prevent Microsoft Teams from starting automatically after installation
 
-If you want Teams to be installed, but don't want Teams to start automatically for the user after it's installed, you can use Group Policy and enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Teams.
+If you need to install Teams without having it start automatically for the user post-installation, enable the *Prevent Microsoft Teams from starting automatically after installation* policy setting in Group Policy. You can find this policy setting under User Configuration\Policies\Administrative Templates\Microsoft Teams.
 
-By enabling this policy setting ***before Teams is installed***, Teams won't start automatically when the user logs in to the device. Once a user signs in to Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
+Enabling this policy setting before installing Teams prevents Teams from starting automatically when the user logs into the device. Once a user signs in to Teams for the first time, Teams is configured to start automatically the next time the user logs into the device. The user can configure Teams to not start automatically by configuring user settings within Teams or by clearing the **Open Teams on startup** check box on the sign in screen for Teams.
 
 > [!TIP]
 > If you've already installed Teams but you want to use this policy setting to prevent Teams from starting automatically, enable this policy setting and then [run this script](/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) on a per-user basis to reset the autostart setting for Teams.
@@ -218,7 +212,7 @@ To uninstall Teams on a Mac, quit Teams by right-clicking the Teams app in the d
 
 ## What about Office 365 plans that don't include Microsoft Teams?
 
-Some Office 365 plans include Microsoft 365 Apps, but don't include the Teams service. Teams will still be installed with Microsoft 365 Apps even if a plan doesn't have the Teams service.
+Some Office 365 plans include Microsoft 365 Apps, but don't include the Teams service. Teams is installed with Microsoft 365 Apps even if a plan doesn't have the Teams service.
 
 For Office 365 plans that don't include the Teams service, a free trial version of Teams that's valid for one year is available. Your users can start using it when they sign in to Teams. For more information about this free trial version and providing your users access to it, see [Manage the Microsoft Teams Exploratory license](/microsoftteams/teams-exploratory).
 
@@ -227,5 +221,5 @@ For Office 365 plans that don't include the Teams service, a free trial version 
 - There's no change to new or existing installations of Office 2019, such as Office Professional Plus 2019.
 - Teams is installed with Microsoft 365 Apps in the same way that Teams is installed if you use the [MSI-based installer for Teams](/MicrosoftTeams/msi-deployment). For each new user that signs into the device, the Teams installer runs and the Teams application is installed in the user's AppData folder.
 - The architecture (sometimes referred to as the *bitness*) of Teams and Microsoft 365 Apps installed on the device don't have to match. For example, you can install the 32-bit version of Teams on a device running the 64-bit versions of Microsoft 365 Apps. To change the architecture of Teams, for example from 32-bit to 64-bit, you need to uninstall the 32-bit version of Teams and then install the 64-bit version of Teams.
-- If you previously excluded Teams and want to add it back (for example, by using the Office Deployment Tool), make sure the settings in your configuration.xml file match the bitness, channel, and excluded apps of your existing installation of Microsoft 365 Apps.
+- If you previously excluded Teams and want to add it back (for example, by using the ODT), make sure the settings in your configuration.xml file match the bitness, channel, and excluded apps of your existing installation of Microsoft 365 Apps.
 - For more information for IT Pros about Microsoft Teams, see [Microsoft Teams documentation](/MicrosoftTeams/Microsoft-Teams).
