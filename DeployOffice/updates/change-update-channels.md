@@ -94,7 +94,7 @@ If you manage updates for Microsoft 365 Apps with Configuration Manager, you cha
 After the policy is applied, the "Office Automatic Updates 2.0" scheduled task must run. It detects the updated policy and update the assigned channel. When the task runs again, it detects the new assigned channel and Microsoft 365 Apps updates to a new build from that channel. The client device's user interface will display the updated channel only after installing a build from the new channel.
 
 > [!NOTE]
-> If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel you select will be re-evaluated and enforced during policy refresh. It is recommended that any update channel policies in your environment match the channel selection for your app assignment. If the channels do not match, this will cause unexpected channel flipping under the following circumstances:
+> If you are deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel you select will be re-evaluated and enforced during policy refresh. It is recommended that any update channel policies in your environment match the channel selection for your app assignment. If the channels do not match, this will cause unexpected channel flipping when all of the following circumstances apply:
 >   - Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
 >   - The app is configured using the Configuration designer.
 >   - The app is assigned as required.
