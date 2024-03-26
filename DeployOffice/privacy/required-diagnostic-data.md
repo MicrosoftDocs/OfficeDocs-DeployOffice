@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/27/2024
+ms.date: 03/28/2024
 ---
 
 # Required diagnostic data for Office
@@ -13450,6 +13450,76 @@ This event is used to track the frequency with which the Accessibility Checker F
 The following fields are collected:
 
 - **RuleID** - Integer value used to track which category of Accessibility violation is being remediated by the user.
+
+#### Office.UX.AccChecker.TurnOffNotificationsFromCanvasContextualCardActivity
+
+This event is triggered when the user turns off the in-canvas Accessibility notifications in Word. The data is used to denote that the user has disabled accessibility notifications. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities. 
+
+The following fields are collected:
+
+- None
+
+#### Office.UX.AccChecker.WordAccCheckerGutterIconRendered
+
+This event is used to track the frequency with which the Accessibility Checker in-Canvas notifications are displayed to the user in Word. This helps to understand the frequency with which users are notified about Accessibility issues in Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+
+- None
+
+#### Office.UX.AccChecker.WordInCanvasNotificationSettings
+
+This event is triggered when the user or IT Admin has enabled in-Canvas accessibility notifications in Word. This event is used to understand the instances when the in-canvas Accessibility notifications are enabled for Office users. The enabled status of the feature allows Microsoft to understand if the user can be notified after documents are scanned automatically in the background. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities. 
+
+The following fields are collected:
+ 
+- **AccCheckerGutterIconEnabled** - Boolean to track the offered state of the Accessible Authoring notifications
+
+- **AccCheckerTextContrastScanEnabled** - Boolean to track the offered state of Text color contrast Accessible Authoring Enabled/Disabled state of the Accessible Authoring notifications
+
+- **AccessibleAuthoringEnabled** - Boolean to track the Enabled/Disabled state of the Accessible Authoring notifications
+
+- **AccessibleAuthoringEnabledByDefault** - Boolean to track the default Enabled/Disabled state of the Accessible Authoring notifications
+
+- **AccessibleAuthoringOptOutEnabledInCanvasCard** - Boolean to track the offered state for opting out of Accessible Authoring notifications.
+
+- **BackgroundAccCheckerEnabled** - Boolean to track the Enabled/Disabled state of the Background Accessibility checker
+
+#### Office.UX.AccChecker.WordInvokeCanvasContextualCardFromGutterActivity
+
+This event is used to track user selection on the Word Accessibility Checker in-Canvas notification. This helps to understand the specific Accessibility issues that users remediate within Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+ 
+- **IssueType** – Integer value used to track which category of Accessibility violation is being remediated by the user.
+
+- **TextRangeLength** - Integer value used to track the length of the text range being remediated for the accessibility issue.
+
+#### Office.UX.ColorPickerInCanvasContextualCard
+
+This event is used to track the selected color within the Accessibility Checker In-Canvas Color Picker. This helps to understand the specific color selection for the Accessibility issues that users remediate within Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+
+- **BulkFixAllIssues** - Boolean value used to track if Bulk color fixes for all issues are enabled within the In-Canvas Color Picker.
+ 
+- **BulkFixFlightEnabled** - Boolean value used to track if Bulk color fixes are enabled within the In-Canvas Color Picker.
+
+- **BulkFixSimilarIssues** - Boolean value used to track if Bulk color fixes for similar issues are enabled within the In-Canvas Color Picker.
+
+- **Color_Category** - Integer value that represents the category of the selected color within the In-Canvas Color Picker.
+
+- **ColorFlightSetting** - Integer value that represents the settings applied to the color picker suggestions.
+
+- **Color_Index** - Integer value that represents the index of the selected color within the In-Canvas Color Picker.
+
+- **FixSimilarFlightEnabled** - Boolean value that indicates if fixing similar colors is enabled within the In-Canvas Color Picker.
+
+- **IsAccessible** - Boolean value hat represents if the users selection is accessible within the In-Canvas Color Picker.
+
+- **NumberOfSuggestions** - Integer value that represents the number of suggestions presented to the user within the In-Canvas Color Picker.
+
+- **SuggestionIndex** - Integer value that represents the index of the selected color within the In-Canvas Color Picker.
 
 
 #### Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
