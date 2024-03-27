@@ -42,8 +42,6 @@ Office LTSC Preview can be installed on the following operating systems:
 
 - Windows 11 (minimum for ARM-based devices) 
 - Windows 10 LTSC 2021
-- Windows 10 LTSC 2019
-- Windows 10 
 
 #### Memory and disk space
 

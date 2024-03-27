@@ -41,15 +41,11 @@ For information about the preview version of Office for devices running macOS, s
 
 ## What’s changed in Office LTSC Preview
 
-
-
 ## What’s stayed the same in Office LTSC Preview
 
 You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy Office LTSC 2024 Commercial Preview that you currently use to deploy volume licensed versions of Office LTSC 2021.
 
 ## New features included in Office LTSC Preview
-
-
 
 ## Getting support and providing feedback for Office LTSC Preview
 
