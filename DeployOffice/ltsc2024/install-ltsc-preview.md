@@ -26,9 +26,9 @@ ms.date: 04/18/2024
 
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
-- Microsoft Office LTSC Professional Plus 2024 Preview
-- Microsoft Project Professional 2024 Preview
-- Microsoft Visio LTSC Professional 2024 Preview
+- Microsoft Office LTSC 2024 for commercial Preview 
+- Microsoft Project 2024 Preview
+- Microsoft Visio 2024 Preview
 
 For information about the preview version of Office for devices running macOS, see [Overview of Office LTSC for Mac 2024 (Preview)](overview-mac-preview.md).
 
@@ -40,7 +40,6 @@ Before installing Office LTSC Preview, review the following information.
 
 Office LTSC Preview can be installed on the following operating systems:
 
-- Windows 11 LTSC 2024
 - Windows 11 (minimum for ARM-based devices) 
 - Windows 10 LTSC 2021
 - Windows 10 LTSC 2019
@@ -52,7 +51,7 @@ The device on which you’re installing the preview products should have at leas
 
 #### 32-bit and 64-bit versions
 
-The preview versions of Office LTSC, Project 2024, and Visio 2024 are available in both 32-bit and 64-bit versions. We recommend 64-bit, especially on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+The Office LTSC 2024 for commercial Preview, Project 2024 Preview, and Visio 2024 Preview are available in both 32-bit and 64-bit versions. We recommend 64-bit, especially on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
 All installed products must be either the 32-bit version or the 64-bit version. For example, you can't install a 32-bit version of Visio on the same device with a 64-bit version of Office.
 
@@ -62,7 +61,7 @@ We recommend that you uninstall any previous version of Office, Project, and Vis
 
 For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
-To remove Office products that were installed by using Click-to-Run, such as Office Professional Plus 2019, you need to use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element).
+To remove Office products that were installed by using Click-to-Run, such as Office 2021, you need to use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element).
 
 #### Installation location
 
@@ -70,11 +69,11 @@ The preview products are installed on the system drive, which is usually the C:\
 
 #### Apps installed
 
-Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Microsoft Office LTSC 2024 for commercial Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. Skype for Business is included but only as an optional installation during setup. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
 #### Internet connectivity
 
-After you download the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required if you're using MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use the preview products.
+After you download the installation files, internet connectivity isn’t required to install Office LTSC 2024 for commercial Preview. Internet connectivity is required if you're using MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use the preview products.
 
 ## Install Office LTSC Preview by using the Office Deployment Tool
 
@@ -127,13 +126,13 @@ If you don’t want certain Office apps to be installed, you can use the [Exclud
 
 ## Activate Office LTSC Preview
 
-There are special product keys to activate the preview versions of Office LTSC, Project 2024, and Visio 2024. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
+There are special product keys to activate the preview versions of Office LTSC, Project, and Visio. You can use either Key Management Service (KMS) or Multiple Activation Key (MAK) to activate the preview products.
 
 ### Use KMS to activate
 
 To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2019 activation. Even though the KMS host computer is configured to activate Office 2019 products, that KMS host computer will be able to activate the preview products.
 
-If you don’t have a KMS host computer that supports Office 2019 activation, you can use the [MAK product keys](#use-mak-to-activate) to activate the preview products.
+If you don’t have a KMS host computer that supports Office 2021 activation, you can use the [MAK product keys](#use-mak-to-activate) to activate the preview products.
 
 For more information about configuring KMS activation, see the following articles:
 
@@ -148,9 +147,9 @@ The following table lists the product keys for KMS activation of the preview pro
 
 |Product  |Product key for KMS activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2024 Preview |2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2|
-|Project Professional 2024 Preview |D9GTG-NP7DV-T6JP3-B6B62-JB89R|
-|Visio Professional 2024 Preview |YW66X-NH62M-G6YFP-B7KCT-WXGKQ|
+|Office LTSC 2024 for commercial Preview |2TDPW-NDQ7G-FMG99-DXQ7M-TX3T2|
+|Project 2024 Preview |D9GTG-NP7DV-T6JP3-B6B62-JB89R|
+|Visio 2024 Preview |YW66X-NH62M-G6YFP-B7KCT-WXGKQ|
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file).
 
@@ -164,9 +163,9 @@ The following table lists the product keys for MAK activation of the preview pro
 
 |Product  |Product key for MAK activation  |
 |---------|---------|
-|Office LTSC Professional Plus 2024 Preview |Y63J7-9RNDJ-GD3BV-BDKBP-HH966|
-|Project Professional 2024 Preview |GQRNR-KHGMM-TCMK6-M2R3H-94W9W|
-|Visio Professional 2024 Preview |3HYNG-BB9J3-MVPP7-2W3D8-CPVG7|
+|Office LTSC 2024 for commercial Preview |Y63J7-9RNDJ-GD3BV-BDKBP-HH966|
+|Project 2024 Preview |GQRNR-KHGMM-TCMK6-M2R3H-94W9W|
+|Visio 2024 Preview |3HYNG-BB9J3-MVPP7-2W3D8-CPVG7|
 
 You include this product key as the PIDKEY attribute in the configuration.xml file when you use the Office Deployment Tool to install the preview products. For more information, see [Example configuration.xml file](#example-configurationxml-file). 
 

@@ -24,14 +24,16 @@ ms.date: 04/18/2024
 >
 > - This preview program isn't intended for home users of Office.
 
+The Office LTSC 2024 Commercial Preview offers commercial customers a chance to experience the latest perpetual version of Microsoft Office before its official launch later this year. This preview includes Office LTSC 2024 for commercial Preview, Visio 2024 Preview, and Project 2024 Preview. It's important to note that this preview is for commercial users and is not intended for home use. By participating in the preview, commercial customers can explore new features, test compatibility with existing systems, and provide valuable feedback to help refine the final release.
+
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
 The following products are available as part of this preview program:
-- Microsoft Office LTSC Professional Plus 2024 Preview
-- Microsoft Project Professional 2024 Preview
-- Microsoft Visio LTSC Professional 2024 Preview
+- Microsoft Office LTSC 2024 for commercial Preview
+- Microsoft Project 2024 Preview
+- Microsoft Visio 2024 Preview
 
-Microsoft Office LTSC Professional Plus 2024 Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, and Word.
+Microsoft Office LTSC 2024 for commercial Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. Skype for Business is included but only as an optional installation during setup.
 
 For information about installing and activating the preview versions of Office, Project, and Visio, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
@@ -39,15 +41,15 @@ For information about the preview version of Office for devices running macOS, s
 
 ## What’s changed in Office LTSC Preview
 
-For more information, see [What’s changed in Office LTSC 2024?](../ltsc2024/overview.md#whats-changed-in-office-ltsc-2024)
+
 
 ## What’s stayed the same in Office LTSC Preview
 
-For more information, see [What’s stayed the same in Office LTSC 2024?](../ltsc2024/overview.md#whats-stayed-the-same-in-office-ltsc-2024)
+You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy Office LTSC 2024 Commercial Preview that you currently use to deploy volume licensed versions of Office LTSC 2021.
 
 ## New features included in Office LTSC Preview
 
-For more information, see [What are the new features in Office LTSC 2024?](../ltsc2024/overview.md#what-are-the-new-features-in-office-ltsc-2024)
+
 
 ## Getting support and providing feedback for Office LTSC Preview
 
