@@ -1,5 +1,5 @@
 ---
-title: "Install Office LTSC Preview"
+title: "Overview of Office LTSC Preview"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -24,7 +24,7 @@ ms.date: 04/18/2024
 >
 > - This preview program isn't intended for home users of Office.
 
-The Office LTSC 2024 Commercial Preview offers commercial customers a chance to experience the latest perpetual version of Microsoft Office before its official launch later this year. This preview includes Office LTSC 2024 for commercial Preview, Visio 2024 Preview, and Project 2024 Preview. It's important to note that this preview is for commercial users and is not intended for home use. By participating in the preview, commercial customers can explore new features, test compatibility with existing systems, and provide valuable feedback to help refine the final release.
+The Office LTSC preview offers commercial customers a chance to experience the latest perpetual version of Microsoft Office before its official launch later this year. This preview includes Office LTSC 2024 for commercial Preview, Visio 2024 Preview, and Project 2024 Preview. It's important to note that this preview is for commercial users and is not intended for home use. By participating in the preview, commercial customers can explore new features, test compatibility with existing systems, and provide valuable feedback to help refine the final release.
 
 Preview versions of the following products are available for you to install and test on devices running Windows in your organization.
 
@@ -44,8 +44,6 @@ For information about the preview version of Office for devices running macOS, s
 ## What’s stayed the same in Office LTSC Preview
 
 You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy Office LTSC 2024 Commercial Preview that you currently use to deploy volume licensed versions of Office LTSC 2021.
-
-## New features included in Office LTSC Preview
 
 ## Getting support and providing feedback for Office LTSC Preview
 
