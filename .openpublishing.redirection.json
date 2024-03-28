@@ -1104,6 +1104,11 @@
       "source_path": "DeployOffice/office2016/security/privacy-options.md",
       "redirect_url": "/DeployOffice/office2016/privacy-options",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/deploy-office-content-updates.md",
+      "redirect_url": "/deployoffice/index.yml",
+      "redirect_document_id": false
     } 
   ]
 }
