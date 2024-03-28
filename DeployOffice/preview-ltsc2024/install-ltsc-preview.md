@@ -42,6 +42,8 @@ Office LTSC Preview can be installed on the following operating systems:
 
 - Windows 11 (minimum for ARM-based devices) 
 - Windows 10 LTSC 2021
+- Windows 10 LTSC 2019
+- Windows 10
 
 #### Memory and disk space
 
@@ -67,7 +69,7 @@ The preview products are installed on the system drive, which is usually the C:\
 
 #### Apps installed
 
-Microsoft Office LTSC 2024 for commercial Preview includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. Skype for Business is included but only as an optional installation during setup. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Microsoft Office LTSC 2024 for commercial Preview includes Access, Excel, OneNote, Outlook, PowerPoint, Skype for Business, and Word. You can control which are apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
 
 #### Internet connectivity
 
@@ -128,7 +130,7 @@ There are special product keys to activate the preview versions of Office LTSC, 
 
 ### Use KMS to activate
 
-To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2019 activation. Even though the KMS host computer is configured to activate Office 2019 products, that KMS host computer will be able to activate the preview products.
+To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2021 activation. Even though the KMS host computer is configured to activate Office 2021 products, that KMS host computer will be able to activate the preview products.
 
 If you don’t have a KMS host computer that supports Office 2021 activation, you can use the [MAK product keys](#use-mak-to-activate) to activate the preview products.
 
