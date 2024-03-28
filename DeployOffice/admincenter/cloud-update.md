@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/19/2024
+ms.date: 03/28/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -249,7 +249,7 @@ Devices managed by the Monthly Enterprise Channel profile can use rollout waves.
 Rollout waves let you configure custom waves for your update rollout. For example, you might have a group of early adopters that volunteer to receive changes first, while users in your finance department prefer to get their updates last. Keep these points in mind when using rollout waves:
 
 - Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
-- You don't need to include every user or device in a custom rollout wave. A final wave is included by default that includes all remaining devices.
+- You don't need to include every user or device in a custom rollout wave. A final wave is included by default that includes all remaining devices in the Monthly Enterprise profile.
 - You can configure a delay between waves ranging from 1-5 days.
 - If [update validation]() is enabled, wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
