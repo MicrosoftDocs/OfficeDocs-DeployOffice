@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides IT admins with information on how to update Office LTSC 2021."
-ms.date: 03/01/2023
+ms.date: 03/29/2024
 ---
 
 # Update Office LTSC 2021
