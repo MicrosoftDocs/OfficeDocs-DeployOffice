@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/06/2024
+ms.date: 03/29/2024
 ---
 
 # Essential services for Office
@@ -5098,7 +5098,7 @@ The following fields are collected:
 
 ### Office.Licensing.AcceptEulaForCurrentLicense 
 
-This is collected when the user gets licensed and accepts EULA for the current license
+This is collected when the user gets licensed and accepts license terms for the current license
 
 It's used to detect if the user is in a good state or not, used for system health and used for diagnostic purposes if a user reports an issue with their machine
 
@@ -5106,7 +5106,7 @@ The following fields are collected:
 
   - **ACID** - A GUID identifier representing the Office product that the user is licensed for
 
-  - **DwEulaId** – Numeric identifier of the type of EULA that was accepted by the user
+  - **DwEulaId** – Numeric identifier of the type of license terms that was accepted by the user
 
 
 ### Office.Licensing.ActivateDeviceEntitlement
@@ -5306,7 +5306,7 @@ The following fields are collected:
 
 ### Office.Licensing.Flows.GraceEula
 
-This event is triggered when the grace End-User License Agreement (EULA) is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and ensure user actions are handled appropriately. The grace period is a one-time, five-day free license to use the installed Office product on new PCs. The grace EULA is the license agreement a user must accept before activating the grace license.
+This event is triggered when the grace license terms is shown in the Office client. The data is used to verify that the user is seeing appropriate licensing dialog in the Office client license experience (LVUX: Licensing Validation User Experience) and ensure user actions are handled appropriately. The grace period is a one-time, five-day free license to use the installed Office product on new PCs. The grace license terms is the license agreement a user must accept before activating the grace license.
 
 The following fields are collected:
 
@@ -5633,7 +5633,7 @@ The following fields are collected:
 
 ### Office.Licensing.LVUX.EULAExplicitCrash 
 
-This is collected if we showed the EULA to the user and the user chose to not accept it as a result of which we crash/close the app. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
+This is collected if we showed the license terms to the user and the user chose to not accept it as a result of which we crash/close the app. It's critical in detecting if the user is in a good state and not missing functionality, used for system health and used for diagnostic purposes if a user reports an issue with their machine.
 
 The following fields are collected:
 
@@ -5653,9 +5653,13 @@ When the device is on the modern licensing stack, we try to get a license file d
 
 The following fields are collected:
 
-  - **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it hasn't been tampered with
+- **Data_CountUsableIdentitiesInProfileList** - Reports the number of user identities associated with profiles signed into Microsoft Office.
 
-  - **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it hasn't been tampered with
+- **Data_CountUsableIdentitiesInUnfilteredIdentityList** - Reports the number of user identities in an unfiltered list of all identities signed into Microsoft Office, including those with pending action that requires a fix in order to authenticate.
+
+- **MetadataValidationResult** – Result of the validation of the metadata of the license to verify that it hasn't been tampered with
+
+- **SignatureValidationResult** – Result of the validation of the signature of the license to verify that it hasn't been tampered with
 
 ### Office.Licensing.Nul.Validation.FullValidation 
 
@@ -5972,7 +5976,7 @@ The following fields are collected:
 
 ### Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the EULA dialog.  As a part of our modernizing Activation for Office feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
+After successfully obtaining a valid Office pin bound to a machine pre-bundled with Office, we show the user either a sign-in dialog or a redemption dialog.  Once the pin is redeemed, we show the license terms dialog.  As a part of our modernizing Activation for Office feature, we refreshed the two dialogs to convey more information regarding the Office product that comes with the machine.  This telemetry is to track if our feature successfully reduces user friction in redeeming their product by tracking the flow and exit points of the redemption process (which dialog was dismissed).
 
 The following fields are collected:
 
@@ -5986,7 +5990,7 @@ The following fields are collected:
 
 - **CurrentView** - The type of dialog the user closed.
 
-- **DialogEULA** -  Signal that we showed the ‘Accept EULA’ dialog. 
+- **DialogEULA** -  Signal that we showed the ‘Accept license terms’ dialog. 
 
 - **DialogRedemption** - Signal that we showed the Activation for Office redemption dialog.
 
@@ -6010,8 +6014,8 @@ The following fields are collected:
     - 0x03113806    Failed to auto-load an identity post user sign-in from sign-in dialog
     - 0x03113807    Failed to auto-load an identity
     - 0x03113811    User closed the sign-in/redemption dialog
-    - 0x03113812    User closed the accept EULA dialog
-    - 0x03113808    User accepted the EULA
+    - 0x03113812    User closed the accept license terms dialog
+    - 0x03113808    User accepted the license terms
     - 0x03113811	  User closed a dialog
     - 0x2370e3a0	  User closed a dialog
     - 0x2370e3c1	  Go to web for pin redemption
