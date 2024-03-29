@@ -21,7 +21,7 @@ ms.date: 04/18/2024
 > - This preview program isn’t intended for organizations that have already purchased and deployed Office from a Microsoft 365 (or Office 365) plan.
 > - This preview program isn't intended for home users of Office.
 
-Office LTSC Standard for Mac 2024 Preview is available for you to install and test on devices running macOS in your organization. It includes Word, Excel, PowerPoint, Outlook, and OneNote.
+Office LTSC 2024 for Mac Preview is available for you to install and test on devices running macOS in your organization. It includes Excel, OneNote, Outlook, PowerPoint, and Word.
 
 For information about installing preview versions of Office on devices running Windows, see [Install Office LTSC Preview](install-ltsc-preview.md).
 
@@ -57,14 +57,11 @@ Office LTSC 2024 for Mac Preview and Office 2021 for Mac share the same version 
 
 ## New features included in Office LTSC 2024 for Mac Preview
 
-For information about the new features in Office LTSC 2024 for Mac, see the following articles:
+Office LTSC 2024 builds upon the core functionalities of earlier versions, introducing several advancements to enhance productivity, security, and accessibility. This update includes new options for creating meetings and refined search capabilities in Outlook. Additionally, Excel receives a range of new features, such as Dynamic Charts and Arrays, marking significant improvements over the previous Office LTSC release.
 
-- [What's new in Excel 2024 for Mac](https://support.microsoft.com/office/4100753f-93bc-4143-a77c-7258d1a80cd3)
-- [What's new in Outlook 2024 for Mac](https://support.microsoft.com/office/cac45ed4-3f1c-490e-a76d-95af48ba770e)
-- [What's new in PowerPoint 2024 for Mac](https://support.microsoft.com/office/fcbbd1ee-a94a-42a6-910e-df9cab3a1bf6)
-- [What's new in Word 2024 for Mac](https://support.microsoft.com/office/ee054758-cf8d-4fb9-ba07-e105414459d5)
+While Office LTSC 2024 enhances various features, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. Consequently, users won't have access to real-time collaboration, AI-driven automation in Excel, PowerPoint, and Word, or advanced security and compliance tools tailored for a hybrid work environment. 
 
-Keep in mind that after Office LTSC 2024 for Mac won’t receive any new features now that it's been released. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 (or Office 365) plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC Standard for Mac 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
+Keep in mind that Office LTSC 2024 for Mac won’t receive any new features after it's released. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC 2024 for Mac. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 ## Additional information about Office LTSC 2024 for Mac Preview
 
