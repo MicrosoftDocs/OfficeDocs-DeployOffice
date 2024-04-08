@@ -320,10 +320,6 @@ Microsoft is committed to providing you with the information and controls you ne
 
 Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](privacy/overview-privacy-controls.md).
 
-
-### Use SQL Server with the Readiness Toolkit
-The Readiness Toolkit now supports storing report results in a SQL Server database. If you use SQL Server, you also get a Power BI report, instead of an Excel workbook. For more information, see [Use SQL Server to store report results](readiness-toolkit-application-compatibility-microsoft-365-apps.md#use-sql-server-to-store-report-results).
-
 ## March 2019
 Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
 
@@ -353,10 +349,6 @@ For best practices on deploying Microsoft 365 Apps with Configuration Manager, s
 ## September 2018
 
 Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](office2019/overview.md) and [Deploy Office 2019](office2019/deploy.md).
-
-## August 2018
-
-Version 1.2 of the Readiness Toolkit was released, with new functionality to conceal folder and file name info collected in the scan and the ability to capture add-in usage info. For more information, see [Use the Readiness Toolkit to assess application compatibility for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
 ## July 2018
 
