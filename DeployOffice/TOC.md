@@ -12,7 +12,6 @@
 ## Prepare
 ### [Assess your environment and requirements](assess-microsoft-365-apps.md)
 ### [Plan your enterprise deployment](plan-microsoft-365-apps.md)
-### [Use Readiness Toolkit to assess application compatibility](readiness-toolkit-application-compatibility-microsoft-365-apps.md)
 
 ## Deploy
 ### [Deploy from the cloud](deploy-microsoft-365-apps-cloud.md)
