@@ -319,9 +319,10 @@ Cloud update currently supports management for devices on Current Channel and Mo
 
 If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both of these channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback, or allow Microsoft to contact you, and choose Submit.
 
-The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to "Eligible for ChannelName" within the same 30-minute window. Admins can manage these devices, but should first set ignoreGPO = 0 for these devices before beginning to manage them. 
+The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to "Eligible for ***ChannelName***" within the same 30-minute window. Admins can manage these devices, but should first set ***ignoreGPO = 0*** for these devices before beginning to manage them. 
 
-Deactivation capability is only available on the new cloud update. Using this capability doesn't affect the update channel configuration. 
+> [!NOTE]
+> Deactivation capability is only available on the new cloud update. Using this capability doesn't affect the update channel configuration. 
 
 ## Troubleshooting
 > [!IMPORTANT]
