@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
-ms.collection: Tier3
+ms.collection: 
+- Tier3
+- m365copilot
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
 ms.date: 03/18/2024
 ---
