@@ -316,13 +316,14 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel *won't be managed by cloud update* until they're moved to a channel that cloud update supports.
 
 ## Deactivation
-
-If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both of these channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback, or allow Microsoft to contact you, and choose Submit.
-
-The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to "Eligible for ***ChannelName***" within the same 30-minute window. Admins can manage these devices, but should first set ***ignoreGPO = 0*** for these devices before beginning to manage them. 
-
 > [!NOTE]
 > Deactivation capability is only available on the new cloud update. Using this capability doesn't affect the update channel configuration. 
+
+If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both of these channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback or allow Microsoft to contact you, and choose **Submit**.
+
+The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to **Eligible for *ChannelName*** within the same 30-minute window. Admins can manage these devices, but should first set *ignoreGPO = 0* for these devices before beginning to manage them. 
+
+For customers and organizations currently using other Microsoft 365 update management tools, the new cloud update offers a streamlined and efficient alternative. Transitioning to cloud update can significantly reduce the administrative burden associated with managing updates, making it a reliable choice for modernizing your update management process.
 
 ## Troubleshooting
 > [!IMPORTANT]
