@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/28/2024
+ms.date: 04/08/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -315,6 +315,14 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel *won't be managed by cloud update* until they're moved to a channel that cloud update supports.
 
+## Deactivation
+
+If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both of these channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback, or allow Microsoft to contact you, and choose Submit.
+
+The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to "Eligible for ChannelName" within the same 30-minute window. Admins can manage these devices, but should first set ignoreGPO = 0 for these devices before beginning to manage them. 
+
+Deactivation capability is only available on the new cloud update. Using this capability doesn't affect the update channel configuration. 
+
 ## Troubleshooting
 > [!IMPORTANT]
 > If you are experiencing any issues enabling cloud update or managing the devices in your environment, be sure to review the [requirements for cloud update](#requirements) before proceeding.
@@ -324,7 +332,7 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 - When cloud update first discovers a device with the latest Microsoft 365 Apps version for the Monthly Enterprise Channel already installed, it displays **Onboarding to Monthly Enterprise Channel**. This status continues until the next update is released, usually on the upcoming patch Tuesday.
 
-- When cloud update first discovers a device with an outdated Microsoft 365 Apps version for the Monthly Enterprise Channel, and it's scheduled in a later custom rollout wave, the device displays **Onboarding to Monthly Enterprise Channel**. This status remains until the device's wave begins and the update is released.
+- When cloud update first discovers a device with an outdated Microsoft 365 Apps version for Monthly Enterprise Channel, and is scheduled in a later custom rollout wave, the device displays **Onboarding to Monthly Enterprise Channel**. This status remains until the device's wave begins and the update is released.
 
 ### Devices are updating outside of their assigned wave
 
@@ -336,7 +344,7 @@ Updates applied outside of a custom rollout wave are due to external actions occ
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined will not be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
 
 ## Report a problem
 
@@ -348,4 +356,4 @@ If the problem persists after troubleshooting, open a support ticket with Micros
 
 We value your feedback. To submit feature suggestions and report issues, you can use the Feedback button in the top-right corner of the Microsoft 365 Apps admin center.
 
-:::image type="content" source="/DeployOffice/images/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a lightbulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. Below is a checkbox labeled 'Include screenshot' and an orange 'Submit' button. At the bottom left corner is a 'Privacy Statement' link." lightbox="/DeployOffice/images/m365aac_feedback.1.png":::
+:::image type="content" source="/DeployOffice/images/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a light bulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. There's a checkbox labeled 'Include screenshot' and an orange 'Submit' button. In the bottom left corner is a 'Privacy Statement' link." lightbox="/DeployOffice/images/m365aac_feedback.1.png":::
