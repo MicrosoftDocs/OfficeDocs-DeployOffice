@@ -46,7 +46,7 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | NOT setting, or setting this policy incorrectly leads to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy<br>• Not offering updates. |
+| Comments | Not setting, or setting this policy incorrectly leads to Microsoft AutoUpdate (MAU):- Repeatedly showing Data Collection policy - Not offering updates. |
 
 ### HowToCheck
 
