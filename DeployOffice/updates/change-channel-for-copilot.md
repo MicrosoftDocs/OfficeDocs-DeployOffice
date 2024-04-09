@@ -36,6 +36,7 @@ Based on your preferred management solution, choose from the following options. 
  
 ## Pre-Checks
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
+
 1.	Verify that your network allows devices to access the Microsoft CDN directly or through a proxy.
 2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../delivery-optimization.md) to help reduce the traffic on your internet links.
 
@@ -124,7 +125,7 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 1.	From the **Settings picker** flyout, select **Microsoft Office 2016 (Machine) > Updates**.
 1.	On the lower-third of the flyout, mark the checkboxes for the following settings and apply the corresponding configuration. 
 
-|**Setting Name**  |**Configuration**  |
+| Setting Name | Configuration |
 |:---|:---|
 |Enable Automatic Updates|Enabled|
 |Hide option to enable or disable updates|Enabled|
