@@ -1,6 +1,6 @@
 ---
 title: "Overview of the Microsoft 365 Apps admin center"
-ms.author: manoth
+ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
 audience: ITPro
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: 
- - tier3
+ - tier1
  - essentials-manage
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center and the features and services available in the admin center."
