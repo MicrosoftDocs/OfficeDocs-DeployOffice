@@ -23,7 +23,7 @@ As an admin for Microsoft 365 Enterprise, you can tailor Microsoft AutoUpdate (M
 
 Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Office applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
 
-For more detailed information on preferences and their deployment, visit [Deploy preferences for Office for Mac](/DeployOffice/mac/update-office-for-mac-using-msupdate.md).
+For more detailed information on preferences and their deployment, visit [Deploy preferences for Office for Mac](../mac/update-office-for-mac-using-msupdate.md).
 
 ### UpdateCheckInterval
 
@@ -186,7 +186,7 @@ DO NOT USE. Sets the date when ManifestServer setting expires. Currently in use 
 
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
-Note: List of supported AppIDs can be found here: [https://learn.microsoft.com/en-us/DeployOffice/mac/update-office-for-mac-using-msupdate#application-identifiers](/DeployOffice/mac/update-office-for-mac-using-msupdate#application-identifiers.md)
+Note: List of supported AppIDs can be found here: [https://learn.microsoft.com/en-us/DeployOffice/mac/update-office-for-mac-using-msupdate#application-identifiers](../mac/update-office-for-mac-using-msupdate#application-identifiers.md)
 
 | Category | Details |
 | --- | --- |
@@ -217,7 +217,7 @@ Don't set if there's no reason to force install order.
 
 Used by MAU to search extra information for update paths.
 
-For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-set-license-info](/DeployOffice/mac/mau-set-license-info.md)
+For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-set-license-info](../mac/mau-set-license-info.md)
 
 | Category | Details |
 | --- | --- |
@@ -273,7 +273,7 @@ Office Applications (>= 16.79) write license-related information.
 
 MAU uses this information to offer correct product updates.
 
-For more information, see: [Set Office License Info for updates for Microsoft AutoUpdate - Deploy Office | Microsoft Learn](/DeployOffice/mac/mau-set-license-info.md)
+For more information, see: [Set Office License Info for updates for Microsoft AutoUpdate - Deploy Office | Microsoft Learn](../mac/mau-set-license-info.md)
 
 | Category | Details |
 | --- | --- |
@@ -287,7 +287,7 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 
 This defines the number of days to wait to offer/install updates after an update is released.
 
-For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](/DeployOffice/mac/mau-deferred-updates.md)
+For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
@@ -302,7 +302,7 @@ For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/m
 
 Dictionary containing individual app deferral days/version.
 
-For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](/DeployOffice/mac/mau-deferred-updates.md)
+For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](/../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
@@ -393,7 +393,7 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to more accurately
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
+For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
 | Category | Details |
 | --- | --- |
@@ -407,7 +407,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 
 To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
+For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
 | Category | Details |
 | --- | --- |
@@ -421,7 +421,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 
 Number of minutes before the deadline date Forced Update Dialog will be displayed.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
+For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
 | Category | Details |
 | --- | --- |
@@ -437,7 +437,7 @@ Number of days before forced update date that MAU treats every update as Automat
 
 Using this preference setting enables Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
+For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
 | Category | Details |
 | --- | --- |
@@ -451,7 +451,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 
 Custom title to be used for showing Forced Update dialogs.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
+For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
 | Category | Details |
 | --- | --- |
