@@ -27,7 +27,7 @@ For more detailed information on preferences and their deployment, visit [Deploy
 
 ### UpdateCheckInterval
 
-IT Admins should not set the preferences marked as `Manageable == No`.
+IT Admins shouldn't set the preferences marked as `Manageable == No`.
 
 There are several locations where preferences for MAU are kept. Here are some:
 
@@ -46,7 +46,7 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | NOT Setting this OR setting this incorrectly will lead to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy<br>• Not offering updates. |
+| Comments | NOT Setting this OR setting this incorrectly leads to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy<br>• Not offering updates. |
 
 ### HowToCheck
 
@@ -59,7 +59,7 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Default Value | AutomaticDownload |
 | Manageable | Yes |
 | Accepted Values | AutomaticDownload, AutomaticCheck |
-| Comments | Not having this entry, or having an invalid entry will revert MAU to the default ‘AutomaticDownload’ mode.<br>Following values are deprecated:<br>• Manual<br>• Automatic<br>Note: Setting to Manual will result in MAU not offering updates automatically. |
+| Comments | Not having this entry, or having an invalid entry will revert MAU to the default ‘AutomaticDownload’ mode.<br>Following values are deprecated:<br>• Manual<br>• Automatic<br>Note: Setting to Manual results in MAU not offering updates automatically. |
 
 ### ChannelName
 
@@ -79,12 +79,12 @@ This specifies which update channel Microsoft AutoUpdate receives updates from.
 - **Current** – Any official releases are released to this channel. This is the default value.
 - **CurrentThrottle** – Created to allow people to skip ‘weekly’ Outlook releases in Current channel.
 - **Custom** – Channel to be used if internal servers are to be utilized.
-- **Preview** – Preview of official releases. Office apps available usually 2 weeks prior to official release.
-- **Beta** – Absolute latest in development. Office apps usually updated 2 times a week. Only to be used for testing and error reporting purposes. Product support not be available in this channel.
+- **Preview** – Preview of official releases. Office apps available usually two weeks prior to official release.
+- **Beta** – Absolute latest in development. Office apps updated two times a week. Only to be used for testing and error reporting purposes. Product support not be available in this channel.
 
 ### ManifestServer
 
-URL for the server hosting update manifests. MAU will download update manifests from this location when ChannelName is set to Custom.
+URL for the server hosting update manifests. MAU downloads update manifests from this location when ChannelName is set to Custom.
 
 | Category | Details |
 | --- | --- |
@@ -92,13 +92,13 @@ URL for the server hosting update manifests. MAU will download update manifests 
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br>• *-chk.xml<br>• *.xml<br>• *.cat<br>Note that ChannelName should be set to Custom in order to make meaningful use of this preference.<br>Also, if ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br>• *-chk.xml<br>• *.xml<br>• *.cat<br>ChannelName should be set to Custom in order to make meaningful use of this preference.<br>Also, if ChannelName is set to Custom and this preference isn't set, MAU treats this as Current channel. |
 
 Latest published manifest files referenced above can be found under Available in the current channel, [https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/)
 
 ### UpdateCache
 
-URL for the server hosting actual update packages. MAU will download update packages from this location instead of the location specified in the .xml manifest file.
+URL for the server hosting actual update packages. MAU downloads update packages from this location instead of the location specified in the .xml manifest file.
 
 | Category | Details |
 | --- | --- |
@@ -106,11 +106,11 @@ URL for the server hosting actual update packages. MAU will download update pack
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Set this to avoid high external download traffic by pointing clients to an internal update server.<br>Not having correct update package at this location will result in ‘Download Error’ being reported. |
+| Comments | Set this to avoid high external download traffic by pointing clients to an internal update server.<br>Not having correct update package at this location results in ‘Download Error’ being reported. |
 
 ### EnableFallbackChannel
 
-Allows Microsoft AutoUpdate to look for updates in the Current channel if the specified channel (e.g., Beta, Preview, Custom) does not have updates available.
+Allows Microsoft AutoUpdate to look for updates in the Current channel if the specified channel doesn't have updates available.
 
 | Category | Details |
 | --- | --- |
@@ -136,7 +136,7 @@ When set to TRUE, prevents Opt-In notification/pop-up window from showing even w
 
 ### LastUpdate
 
-DO NOT USE. MAU uses this preference to keeps track of when it last checked for updates. MAU will not check for updates for another 12 hours (minimum) from this time.
+DO NOT USE. MAU uses this preference to keep track of when it last checked for updates. MAU won't check for updates for another 12 hours (minimum) from this time.
 
 | Category | Details |
 | --- | --- |
@@ -144,11 +144,11 @@ DO NOT USE. MAU uses this preference to keeps track of when it last checked for 
 | Type | Date |
 | Default Value | |
 | Manageable | No |
-| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this value via managed profile will have following consequences:<br>• If set to future - MAU will NOT check for updates until 12 hours from this time is passed.<br>• If set to past / Incorrect format - MAU will check for updates every 2 hours. |
+| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this value via managed profile has the following consequences:<br>• If set to future - MAU will NOT check for updates until 12 hours from this time is passed.<br>• If set to past / Incorrect format - MAU checks for updates every two hours. |
 
 ### DisableVoiceOverAccessibility
 
-DEPRECATED. If set to TRUE, this will cause VoiceOver accessibility features to be disabled in Microsoft AutoUpdate. This option is deprecated.
+DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be disabled in Microsoft AutoUpdate. This option is deprecated.
 
 | Category | Details |
 | --- | --- |
@@ -160,7 +160,7 @@ DEPRECATED. If set to TRUE, this will cause VoiceOver accessibility features to 
 
 ### ReopenAfterGUIInstall
 
-DO NOT USE. If set to TRUE, MAU GUI will open on first launch. This preference will be removed after the first GUI launch following MAU update.
+DO NOT USE. If set to TRUE, MAU GUI opens on first launch. This preference will be removed after the first GUI launch following MAU update.
 
 | Category | Details |
 | --- | --- |
@@ -168,11 +168,11 @@ DO NOT USE. If set to TRUE, MAU GUI will open on first launch. This preference w
 | Type | Boolean |
 | Default Value | FALSE |
 | Manageable | No |
-| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this to TRUE via managed profile will cause MAU GUI to open with every FBA process launch. |
+| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this to TRUE via managed profile causes MAU GUI to open with every FBA process launch. |
 
 ### ManifestServerExpiryDate
 
-DO NOT USE. Sets the date when ManifestServer setting will expire. Currently in use by Teams21 ONLY.
+DO NOT USE. Sets the date when ManifestServer setting expires. Currently in use by Teams21 ONLY.
 
 | Category | Details |
 | --- | --- |
@@ -194,7 +194,7 @@ Note: List of supported AppIDs can be found here: [https://learn.microsoft.com/e
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | If an app is not listed and user never launched the app, the app will never be updated.<br>Note: LCID entry is now deprecated.<br>Historically LCID was a part of Application record in Applications dictionary entry. Identified Language Code to be used to locate language specific update manifests. No longer applicable. |
+| Comments | If an app isn't listed and user never launched the app, the app will never be updated.<br>Note: LCID entry is now deprecated.<br>Historically LCID was a part of Application record in Applications dictionary entry. Identified Language Code to be used to locate language specific update manifests. No longer applicable. |
 
 ### Install Priority
 
@@ -202,7 +202,7 @@ Part of application record in Applications dictionary.
 
 Suggests order of application updates when multiple updates are selected/in-progress.
 
-If there is no good reason to force install order, it is best this is not set.
+Don't set if there's no reason to force install order.
 
 | Category | Details |
 | --- | --- |
@@ -211,7 +211,7 @@ If there is no good reason to force install order, it is best this is not set.
 | Default Value | Medium |
 | Accepted Values | High / Medium / Low / 900 – 200 (higher value means higher priority) |
 | Manageable | Yes |
-| Comments | Integer values outside the 200 - 900 range will be ignored. This is used to control the order in which updates are applied. Does not impact MAU updates.<br>Suggest not setting this unless there is a pressing need to install an app before another. |
+| Comments | Integer values outside the 200 - 900 range will be ignored. This is used to control the order in which updates are applied. Doesn't affect MAU updates.<br>Suggest not setting this unless there's a pressing need to install an app before another. |
 
 ### App Domain
 
@@ -237,13 +237,13 @@ DO NOT USE. Internal dictionary used by MAU.
 | Type | Dictionary |
 | Default Value | |
 | Manageable | No |
-| Comments | Setting this may cause clash with Applications dictionary.<br>It is best to not set it.<br>Note: This is used by MAU internally to reconcile different applications installed/registered by different users. |
+| Comments | Setting this could cause issues with Applications dictionary.<br>It's best to not set it.<br>Note: This setting is used by MAU internally to reconcile different applications installed/registered by different users. |
 
 ### HideOnGUI
 
 Part of application record in Applications dictionary.
 
-When set to TRUE in the application record, the application will not be displayed on MAU GUI.
+When set to TRUE in the application record, the application won't be displayed on MAU GUI.
 
 | Category | Details |
 | --- | --- |
@@ -252,7 +252,7 @@ When set to TRUE in the application record, the application will not be displaye
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | This should be set for any app that should not be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>UCCP14 – Silverlight(Deprecated)<br>Setting this will disable app from being updated when HowToCheck is set to AutomaticCheck. |
+| Comments | This should be set for any app that shouldn't be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>UCCP14 – Silverlight(Deprecated)<br>Setting this disables the app from being updated when HowToCheck is set to AutomaticCheck. |
 
 ### UpdateReadyReminderIntervalInHours
 
@@ -265,7 +265,7 @@ Used by Office Applications in determining how frequently the update ready messa
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | 12 - 168 |
-| Comments | Update ready reminder can be ignored for maximum of 7 days. |
+| Comments | Update ready reminder can be ignored for maximum of seven days. |
 
 ### AppCustomPref
 
@@ -296,7 +296,7 @@ For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/m
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | 1 - 28 |
-| Comments | This value has a tolerance of 3 days. IT Admins should add 3 days to the desired deferral days when setting this value. |
+| Comments | This value has a tolerance of three days. IT Admins should add three days to the desired deferral days when setting this value. |
 
 ### OptionalUpdatesDeferrals
 
@@ -350,7 +350,7 @@ When set FALSE, this disables the option to initiate check for updates from the 
 | Default Value | TRUE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | IT Admin should set this to FALSE if individual users should not be allowed to initiate checking for updates themselves. |
+| Comments | IT Admin should set this to FALSE if individual users shouldn't be allowed to initiate checking for updates themselves. |
 
 ### ExtendedLogging
 
@@ -363,7 +363,7 @@ If set to TRUE, causes verbose logging to be output to MAU log file.
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | MAU Log will only maintain last 1MB. Setting this may cause local log file to lose details. |
+| Comments | MAU Log will only maintain last 1 MB. Setting this could cause local log file to lose details. |
 
 ### UpdateCheckInterval
 
@@ -375,7 +375,7 @@ Specifies the number of minutes between Checking for updates. Default is set to 
 | Type | Integer |
 | Default Value | 780 |
 | Manageable | Yes |
-| Comments | Defaulted to 13 hours interval.<br>We recommend this number be a multiple of 60(1hour)<br>Suggest not exceeding 4320 (3 days) |
+| Comments | Defaulted to 13 hours interval.<br>We recommend this number be a multiple of 60(1hour)<br>Suggest not exceeding 4320 (three days) |
 
 ### UpdateCheckFrequency
 
@@ -433,9 +433,9 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 
 ### UpdateDeadline.StartAutomaticUpdates
 
-Number of days before forced update date that MAU will treat every update as AutomaticDownload.
+Number of days before forced update date that MAU treats every update as AutomaticDownload.
 
-Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
+Using this preference setting enables Automatic Download and Install mode for MAU regardless of the current MAU setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
 For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md)
 
@@ -445,7 +445,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | Integer |
 | Default Value | 3 |
 | Manageable | Yes |
-| Comments | Value less than 3 will be treated as 3. |
+| Comments | Value less than three will be treated as 3. |
 
 ### UpdateDeadline.DialogTitle
 
