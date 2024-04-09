@@ -71,7 +71,7 @@ Devices running Microsoft 365 Apps require access to the following endpoints:
 
 ### Requirements for using Microsoft Entra groups
 
-Some features support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups) in cloud update. In all cases, the membership of these groups supports user and/or device objects with the following requirements:
+Some features support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](cloud-update.ms#rollout-waves) or setup [device exclusions](cloud-update.ms#exclude-groups) in cloud update. In all cases, the membership of these groups supports user and/or device objects with the following requirements:
 
 - **Device objects** must be Microsoft Entra joined or hybrid joined.
 - **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
