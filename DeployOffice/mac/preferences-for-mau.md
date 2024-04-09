@@ -46,7 +46,7 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | Not setting, or setting this policy incorrectly leads to Microsoft AutoUpdate (MAU):- Repeatedly showing Data Collection policy - Not offering updates. |
+| Comments | Not setting, or setting this policy incorrectly leads to Microsoft AutoUpdate (MAU):<br><br>• Repeatedly showing Data Collection policy <br>• Not offering updates. |
 
 ### HowToCheck
 
@@ -59,7 +59,7 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Default Value | AutomaticDownload |
 | Manageable | Yes |
 | Accepted Values | AutomaticDownload, AutomaticCheck |
-| Comments | Not having this entry, or having an invalid entry reverts MAU to the default "AutomaticDownload" mode.<br>The following values are deprecated:<br>• Manual<br>• Automatic<br>Note: Setting to Manual results in MAU not offering updates automatically. |
+| Comments | Not having this entry, or having an invalid entry reverts MAU to the default "AutomaticDownload" mode.<br>The following values are deprecated:<br><br>• Manual<br>• Automatic<br>Note: Setting to Manual results in MAU not offering updates automatically. |
 
 ### ChannelName
 
@@ -72,7 +72,7 @@ ChannelName specifies which update channel Microsoft AutoUpdate receives updates
 | Default Value | Current |
 | Manageable | Yes |
 | Accepted Values | Beta, Current, CurrentThrottle, Custom, Preview |
-| Comments | Not having this entry, or having an invalid entry in ChannelName reverts MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br>• External (replaced by Preview)<br>• InsiderFast (replaced by Beta)<br>• Production (replaced by Current)<br>Note: "Custom" is provided to help facilitate hosting updates within an organization, to reduce external network traffic. In such a case, IT Admin is responsible for:<br>• Manage server space within the organization<br>• Downloading manifests to specified manifest server location<br>• Downloading update packages to specified update cache location (if applicable) |
+| Comments | Not having this entry, or having an invalid entry in ChannelName reverts MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br><br>• External (replaced by Preview)<br>• InsiderFast (replaced by Beta)<br>• Production (replaced by Current)<br><br>Note: "Custom" is provided to help facilitate hosting updates within an organization, to reduce external network traffic. In such a case, IT Admin is responsible for:<br><br>• Manage server space within the organization<br>• Downloading manifests to specified manifest server location<br>• Downloading update packages to specified update cache location (if applicable) |
 
 #### Notes on Channels:
 
@@ -92,7 +92,7 @@ URL for the server hosting update manifests. MAU downloads update manifests from
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br>• *-chk.xml<br>• *.xml<br>• *.cat<br>ChannelName should be set to Custom in order to make meaningful use of this preference.<br>Also, if ChannelName is set to Custom and this preference isn't set, MAU treats this as Current channel. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><br>• *-chk.xml<br>• *.xml<br>• *.cat<br>ChannelName should be set to Custom in order to make meaningful use of this preference.<br>Also, if ChannelName is set to Custom and this preference isn't set, MAU treats this as Current channel. |
 
 The latest published manifest files can be found under Available in the current channel, [https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/).
 
@@ -144,7 +144,7 @@ DO NOT USE. MAU uses this preference to keep track of when it last checked for u
 | Type | Date |
 | Default Value | |
 | Manageable | No |
-| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this value via managed profile has the following consequences:<br>• If this value is set to future - MAU doesn't check for updates until 12 hours from this time is passed.<br>• If this value is set to past / Incorrect format - MAU checks for updates every two hours. |
+| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this value via managed profile has the following consequences:<br><br>• If this value is set to future - MAU doesn't check for updates until 12 hours from this time is passed.<br>• If this value is set to past / Incorrect format - MAU checks for updates every two hours. |
 
 ### DisableVoiceOverAccessibility
 
