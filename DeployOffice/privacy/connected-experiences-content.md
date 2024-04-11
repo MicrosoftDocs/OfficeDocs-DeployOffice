@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 05/26/2023
+ms.date: 04/11/2024
 ---
 
 # Connected experiences and your content
@@ -57,13 +57,12 @@ For more information, see [Appendix: Content used by connected experiences](#app
 
 Most connected experiences don’t retain your content after performing their function to help you accomplish a task, but there are a few exceptions. In those cases, Microsoft retains the content only for a limited time (up to six months) and it’s used to support, personalize, or improve that connected experience. While it’s retained, the content is encrypted. For more information, see [Securing content used by a connected experience](#securing-content-used-by-a-connected-experience).
 
-The following table lists the few connected experiences that retain content, along with a description of when and why the content may be retained, and how you might benefit. For each connected experience in the table, the content is retained for up to six months and is stored in the same location as your Exchange Online data. For more information, see [Where Microsoft stores data for Microsoft 365 customers](#where-microsoft-stores-data-for-microsoft-365-customers).
+The following table lists the few connected experiences that retain content, along with a description of when and why the content may be retained, and how you might benefit. For each connected experience in the table, the content is retained for as long as your account exists and is stored in the same location as your Exchange Online data. For more information, see [Where Microsoft stores data for Microsoft 365 customers](#where-microsoft-stores-data-for-microsoft-365-customers).
 
 |Connected experience  |Description  |
 |---------|---------|
 |Editor, including Text predictions | Some components of Editor retain content, such as corrected spelling or recommended grammar edits, and whether you accepted them. <br/><br/> This data allows the service to adapt to your preferences and to reduce otherwise irrelevant or annoying recommendations. For example, you might prefer to use contractions in documents. “Ignoring” recommendations to spell out contractions teaches the service this preference. |
-|Outline to PowerPoint | Microsoft retains some content from the recommended presentation for machine learning, to better understand what suggestions work to improve the recommendation quality. |
-|PowerPoint Designer |Microsoft retains information about which automatically generated designs are offered, which are considered, and which are used.<br/><br/> This information is used to improve the machine learning that recommends these designs and inspires the creation of new designs that can benefit you and other users. |
+|PowerPoint Designer |Microsoft retains information about which automatically generated designs are offered, which are considered, and which are used.<br/><br/> This information is used to help the service adapt to your preferences and to recommend more relevant images. |
 
 > [!NOTE]
 > - Some connected experiences rely on a search query you’ve entered to find and download online content from Microsoft that might be useful for your work. For example, templates, fonts, pictures, and Office Help. In these cases, your search query isn’t retained.
@@ -116,7 +115,6 @@ The following connected experiences use machine learning services:
 - Ink to Test, Ink to Shape, Ink to Math
 - Live captions & subtitles
 - PivotTable recommendations
-- PowerPoint Designer
 - Suggested replies
 - Tap
 - Text predictions
