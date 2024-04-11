@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Information Rights Management (IRM) in Office to specify permission for accessing and using sensitive documents and messages."
-ms.date: 1/03/2024
+ms.date: 04/11/2024
 ---
 
 # Protect sensitive messages and documents by using Information Rights Management (IRM) in Office 2016
@@ -42,7 +42,7 @@ For information technology (IT) managers, IRM helps enable the enforcement of ex
 <a name="BKMK_HowIRMWorks"> </a>
 
 ## How IRM works in Office 2016
-Office users apply permissions to messages or documents by using options in the **File** menu; for example, by using the **Restrict Access** option, under **Info**, **Protect Document**. The protection options that are available are based on Rights Policy Templates that you can customize for your organization. Rights Policy Templates are groups of IRM rights that you package together in a predefined policy that users can apply to their documents. Office 2016 also provides a predefined **Do Not Forward** option that grants specific rights to the recipients of an email. To learn more about Rights Policy Templates, see [Configuring and managing templates for Azure Information Protection](/azure/information-protection/configure-policy-templates).
+Office users apply permissions to messages or documents by using options in the **File** menu; for example, by using the **Restrict Access** option, under **Info**, **Protect Document**. The protection options that are available are based on Rights Policy Templates that you can customize for your organization. Rights Policy Templates are groups of IRM rights that you package together in a predefined policy that users can apply to their documents. Office 2016 also provides a predefined **Do Not Forward** option that grants specific rights to the recipients of an email. To learn more about Rights Policy Templates, see [Configuring and managing templates for Microsoft Purview Information Protection](/azure/information-protection/configure-policy-templates).
   
 > [!NOTE]
 > In addition to using the options from the **File** menu, users can select **Share Protected** from the Office ribbon when you install the Rights Management sharing application for Windows. This application also enables additional functionality, such as the ability to track consumption of shared documents. For more information, see [Rights Management Sharing Application for Windows](/azure/information-protection/rms-client/sharing-app-windows). 
@@ -185,7 +185,7 @@ The following IRM registry setting is located in **HKCU\Software\Microsoft\Offic
 |:-----|:-----|:-----|:-----|
 |DRMEncryptProperty  <br/> |DWORD  <br/> |1 = The file metadata is encrypted. <br/> <br/> 0 = The metadata is stored in plaintext. The default value is 0.  <br/> |Specify whether to encrypt all metadata that is stored inside a rights-managed document.  <br/> |
    
-Encrypted metadata isn't compatible with Azure Information Protection labels. If you use these labels, don't set the value to 1.
+Encrypted metadata isn't compatible with Microsoft Purview Information Protection labels. If you use these labels, don't set the value to 1.
   
 In Open XML Formats like docx, xlsx, pptx, etc., users can encrypt Office metadata within a rights-managed file. Alternatively, they can leave the metadata unencrypted, allowing other applications, such as FCI functionality on Windows File Servers, to access the data.
   
