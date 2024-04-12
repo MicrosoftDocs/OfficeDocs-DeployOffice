@@ -91,7 +91,7 @@ If you don't configure these policy settings, all connected experiences are avai
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or users will get an error message when they try to use those connected experiences. In that case, no [required service data](required-service-data.md) for those connected experiences will be sent to Microsoft.
 
-Your users won’t be able to choose whether to turn these connected experiences included with Microsoft 365 Apps for enterprise on or off if they are signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
+Your users won’t be able to choose whether to turn these connected experiences included with Microsoft 365 Apps for enterprise on or off if they're signed into Office with their organizational credentials, which is sometimes referred to as a work or school account.
 
 ### Policy setting for connected experiences that analyze your content
 
@@ -102,7 +102,7 @@ You can use the *Allow the use of connected experiences in Office that analyze c
 Note that if you disable the *Allow the use of connected experiences in Office* policy setting, connected experiences that analyze content won’t be available to your users.
 
 > [!NOTE]
-> If you disable the *Allow the use of connected experiences in Office* policy setting, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](/microsoft-365-copilot/microsoft-365-copilot-privacy#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+> If you disable the *Allow the use of connected experiences in Office* policy setting, Copilot for Microsoft 365 features won’t be available to your users in certain apps. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
 ### Policy setting for connected experiences that download online content
 
@@ -116,18 +116,18 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are some optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing. For more examples, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
-These connected experiences are different because they are not covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third-party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
+These connected experiences are different because they aren't covered by your organization’s commercial agreement with Microsoft. Optional connected experiences are offered by Microsoft directly to your users and are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products). In some cases, third-party content or functionality are provided through these optional connected experiences and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 You can use the *Allow the use of additional optional connected experiences in Office* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these optional connected experiences will be available to your users.
 
 > [!NOTE]
 > To apply the *Allow the use of additional optional connected experiences in Office* policy setting to volume licensed versions of Office 2019, Project 2019, or Visio 2019, you must use Group Policy. You can't use Cloud Policy. This applies to when Office 2019, Project 2019, or Visio 2019 is configured to use the PerpetualVL2019 update channel.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they are signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they are signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn them off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they're signed into Office with their organizational credentials (sometimes referred to as a work or school account), not if they're signed in with a personal email address.
 
 Also, some of these optional connected experiences are also considered to be connected experiences that analyze content or that download online content. For example, Insert Online Pictures is an optional connected experience, powered by Microsoft Bing, but it’s also considered to be a connected experience that downloads online content. Therefore, if you disable the *Allow the use of connected experiences in Office that download online content* policy setting, Insert Online Pictures won’t be available to your users. It won’t be available even if you have enabled the *Allow the use of additional optional connected experiences in Office* policy setting. For more information about which connected experiences analyze content or download online content, see [Connected experiences in Office](connected-experiences.md).
 
-There is one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting does not control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](/azure/active-directory/users-groups-roles/linkedin-integration).
+There's one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting doesn't control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Azure Active Directory](/azure/active-directory/users-groups-roles/linkedin-integration).
 
 ### Policy setting for most connected experiences
 
@@ -149,7 +149,7 @@ There are two existing policy settings that are no longer applicable to Microsof
 
 - **Online Content Options**, which can be found under User Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016\\Tools | Options | General | Service Options...\\Online Content.
 
-Starting with Version 1904, configuring these two existing policy settings will have no effect on Microsoft 365 Apps for enterprise. They are no longer applicable because their functionality is replaced by these new policy settings:
+Starting with Version 1904, configuring these two existing policy settings will have no effect on Microsoft 365 Apps for enterprise. They're no longer applicable because their functionality is replaced by these new policy settings:
 
 - Allow the use of connected experiences in Office that analyze content
 - Allow the use of connected experiences in Office that download online content
@@ -158,7 +158,7 @@ Starting with Version 1904, configuring these two existing policy settings will 
 
 These new policy settings can give you a finer level control than the two existing policy settings. For example, previously if you used the *Send personal information* policy setting, both PowerPoint QuickStarter and Smart Lookup would be turned off. But now, with the new policy settings, if you use the *Allow the use of connected experiences in Office that analyze content* policy setting to turn off that type of connected experiences, only Smart Lookup is turned off. PowerPoint QuickStarter will still be available to your users.
 
-The policy settings still appear in the Group Policy Management tool because they are still applicable to volume licensed versions of Office 2016 and Office 2019, such as Office Professional Plus 2019.
+The policy settings still appear in the Group Policy Management tool because they're still applicable to volume licensed versions of Office 2016 and Office 2019, such as Office Professional Plus 2019.
 
 ## What about existing policy settings that control connected experiences?
 
@@ -198,7 +198,7 @@ The following are new elements added to the Office UI:
 
 - Under **File** > **Account**, users will see a new choice for **Account Privacy** > **Manage Settings**. It’s under **Manage Settings** where users can turn off optional connected experiences, if you have given them that option.
 
-- Under **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Privacy Options,** there is an option to enable the use of the [Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) on the device.
+- Under **File** > **Options** > **Trust Center** > **Trust Center Settings…** > **Privacy Options,** there's an option to enable the use of the [Diagnostic Data Viewer](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) on the device.
 
  
 ## Control privacy settings by editing the registry
