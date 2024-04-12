@@ -55,7 +55,7 @@ For more information, see [Appendix: Content used by connected experiences](#app
 
 ## Content retained by a connected experience
 
-Most connected experiences don’t retain your content after performing their function to help you accomplish a task, but there are a few exceptions. In those cases, Microsoft retains the content only for a limited time (up to six months) and it’s used to support, personalize, or improve that connected experience. While it’s retained, the content is encrypted. For more information, see [Securing content used by a connected experience](#securing-content-used-by-a-connected-experience).
+Most connected experiences don’t retain your content after performing their function to help you accomplish a task, but there are a few exceptions. In those cases, Microsoft retains the content for as long as your account exists and it’s used to support, personalize, or improve that connected experience. While it’s retained, the content is encrypted. For more information, see [Securing content used by a connected experience](#securing-content-used-by-a-connected-experience).
 
 The following table lists the few connected experiences that retain content, along with a description of when and why the content may be retained, and how you might benefit. For each connected experience in the table, the content is retained for as long as your account exists and is stored in the same location as your Exchange Online data. For more information, see [Where Microsoft stores data for Microsoft 365 customers](#where-microsoft-stores-data-for-microsoft-365-customers).
 
