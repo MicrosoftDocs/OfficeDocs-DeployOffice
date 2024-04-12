@@ -24,7 +24,7 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 
 - ***Connected experiences*** that use cloud-based functionality to provide enhanced Office features to you and your users.
 
-In addition, there is a new preference setting related to a **Required Data Notice** dialog for Microsoft AutoUpdate (MAU).
+In addition, there's a new preference setting related to a **Required Data Notice** dialog for Microsoft AutoUpdate (MAU).
 
 For more information about diagnostic data and connected experiences, see [Overview of privacy controls](overview-privacy-controls.md).
 
@@ -34,7 +34,7 @@ For more information about diagnostic data and connected experiences, see [Overv
 
 ## Setting preferences
 
-These new preference settings are CFPreferences API compatible and can be set using the `defaults` command in Terminal, or enforced through a Configuration Profile or Mobile Device Management (MDM) server. When the preferences are enforced, the user cannot change the values, and any in-app controls will appear disabled.
+These new preference settings are CFPreferences API compatible and can be set using the `defaults` command in Terminal, or enforced through a Configuration Profile or Mobile Device Management (MDM) server. When the preferences are enforced, the user can't change the values, and any in-app controls will appear disabled.
 
 > [!NOTE]
 > You can also use Cloud Policy and these 5 policy settings:
@@ -77,7 +77,7 @@ Connected experiences that analyze your content are experiences that use your Of
 If you don't set this preference, connected experiences that analyze content are available to users.
 
 > [!NOTE]
-> If you set this preference to FALSE, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](/microsoft-365-copilot/microsoft-365-copilot-privacy#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+> If you set this preference to FALSE, Copilot for Microsoft 365 features won’t be available to your users in certain apps. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
 If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac, then the user can't turn off connected experiences that analyze content.
 
@@ -158,7 +158,7 @@ If you don't want your users to see this **Required Data Notice** dialog for Mic
 |**Possible values**  | `RequiredDataOnly` <br/> `RequiredAndOptionalData`|
 |**Availability** |4.12 and later |
 
-If you let your users see this dialog, then when the user chooses **OK**, the value `RequiredDataOnly` is written to `AcknowledgedDataCollectionPolicy` and the dialog is not shown to the user again.
+If you let your users see this dialog, then when the user chooses **OK**, the value `RequiredDataOnly` is written to `AcknowledgedDataCollectionPolicy` and the dialog isn't shown to the user again.
 
 
 ## Related articles
