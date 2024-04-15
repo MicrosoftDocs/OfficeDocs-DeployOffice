@@ -351,7 +351,7 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 
 OptionalUpdatesDeferralsDays defines the number of days to wait to offer/install updates after an update is released.
 
-For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](../mac/mau-deferred-updates.md)
+For more information, see: [Microsoft AutoUpdate and Deferred Updates](../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
@@ -366,7 +366,7 @@ For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/m
 
 Dictionary containing individual app deferral days/version.
 
-For more information, see: [https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates](../mac/mau-deferred-updates.md)
+For more information, see: [Microsoft AutoUpdate and Deferred Updates](../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
