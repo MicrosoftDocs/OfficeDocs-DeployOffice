@@ -29,7 +29,7 @@ For information about installing preview versions of Office on devices running W
 
 To install Office LTSC 2024 for Mac Preview, perform the following steps:
 
-1. [Download the installer package file](https://go.microsoft.com/fwlink/?linkid=2261988) for Office LTSC 2024 for Mac Preview, and then install on the device. Or, if you have Office 2021 for Mac installed on the device, update to at least version 16.85.
+1. [Download the installer package file](https://go.microsoft.com/fwlink/p/?linkid=2245162) for Office LTSC 2024 for Mac Preview, and then install on the device. Or, if you have Office 2021 for Mac installed on the device, update to at least version 16.85.
 2. [Download the Volume License (VL) Serializer package file](https://go.microsoft.com/fwlink/?linkid=2261988), which is named `Microsoft_Office_Preview_Serializer.pkg` and is approximately 9 MB in size.
 3. Run the VL Serializer package file on the device to activate Office LTSC 2024 for Mac Preview. Once activated, the **About** dialog for the app will show **Office LTSC Standard for Mac 2024 Preview** as the license type.
 
@@ -41,10 +41,7 @@ Office LTSC 2024 for Mac Preview will be updated approximately once a month duri
 
 Overall, there are no significant differences in how Office LTSC 2024 for Mac Preview is installed and runs compared to Office 2021 for Mac.
 
-There are two things that might be of interest to organizations:
-
-- The VL Serializer has been improved so that a management tool can run the VL Serializer in the background even while the user still has Office 2021 for Mac apps open and running. The next time the user closes and opens the app, Office will switch over to using the Office LTSC 2024 for Mac license. This should help minimize user disruption when organizations move from Office 2021 for Mac to Office LTSC 2024 for Mac.
-- Several more Office Add-ins JavaScript APIs are available with Office LTSC 2024 for Mac Preview. For more information, see [Office Add-ins](../ltsc2024/overview.md#office-add-ins).
+However, it’s important to note that the Microsoft Teams app isn't preinstalled but is available for [download separately](https://www.microsoft.com/microsoft-teams/download-app).
 
 ## What’s stayed the same in Office LTSC 2024 for Mac Preview
 
@@ -53,13 +50,11 @@ The major version of Office LTSC 2024 for Mac Preview is 16.x, which is the same
 - Application settings including policies, preferences, and preference domains remain the same.
 - Add-ins and other extensibility solutions that are compatible with Office 2021 for Mac will most likely be compatible with Office LTSC 2024 for Mac Preview or will require only minimal testing.
 
-Office LTSC 2024 for Mac Preview and Office 2021 for Mac share the same version and build numbers for their releases. For example, Version 16.52 (21080801) for the release in August 2024. For a list of releases, see [Release history for Office for Mac](/officeupdates/update-history-office-for-mac#release-history-for-office-for-mac).
-
 ## New features included in Office LTSC 2024 for Mac Preview
 
-Office LTSC 2024 builds upon the core functionalities of earlier versions, introducing several advancements to enhance productivity, security, and accessibility. This update includes new options for creating meetings and refined search capabilities in Outlook. Additionally, Excel receives a range of new features, such as Dynamic Charts and Arrays, marking significant improvements over the previous Office LTSC release.
+Office LTSC 2024 for Mac builds upon the core functionalities of earlier versions, introducing several advancements to enhance productivity, security, and accessibility. This update includes new options for creating meetings and refined search capabilities in Outlook. Additionally, Excel receives a range of new features, such as Dynamic Charts and Arrays, marking significant improvements over the previous Office LTSC release. Notably, Office apps now fully support OpenDocument Format (ODF) 1.4, enhancing interoperability and adding features like nonoverlapping images and shapes, and lists starting from zero. For more information, see [Microsoft 365 app now support OpenDocument Format 1.4](https://insider.microsoft365.com/blog/microsoft-365-apps-now-support-opendocument-format-1-4).
 
-While Office LTSC 2024 enhances various features, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. Consequently, users won't have access to real-time collaboration, AI-driven automation in Excel, PowerPoint, and Word, or advanced security and compliance tools tailored for a hybrid work environment. 
+While Office LTSC 2024 for Mac enhances various features, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. As a result, users won't have access to real-time collaboration, AI-driven automation in Excel, PowerPoint, and Word, or advanced security and compliance tools tailored for a hybrid work environment. 
 
 Keep in mind that Office LTSC 2024 for Mac won’t receive any new features after it's released. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. Those plans also provide you with Office for Mac, which includes the same Office apps as Office LTSC 2024 for Mac. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
@@ -92,6 +87,6 @@ Microsoft support isn’t available for the preview program.
 
 Therefore, we recommend that you use Office LTSC 2024 for Mac Preview only for testing purposes. For example, to familiarize yourself with deploying Office LTSC 2024 for Mac Preview and using the new features in the Office apps. Office LTSC 2024 for Mac Preview shouldn’t be used in your normal production environment or on a production device.
 
-If you want to provide feedback about an Office app or feature, go to **File > Feedback** in that app.
+If you want to provide feedback about an Office app or feature, go to **File**, and choose **Feedback** in that app.
 
-If you have questions about Office LTSC 2024 for Mac Preview or want to provide additional feedback, go to the [Office LTSC Commercial Preview forum](https://answers.microsoft.com/lang/msoffice/forum/msoffice_LTSC) on Microsoft Community.
+If you have questions about Office LTSC 2024 for Mac Preview or want to provide additional feedback, go to the [Microsoft 365 and Office forum for business customers](https://answers.microsoft.com/msoffice/forum/msoffice_OfB) on Microsoft Community.
