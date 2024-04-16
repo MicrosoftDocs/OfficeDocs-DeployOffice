@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 01/05/2024
+ms.date: 04/16/2024
 ---
 
 # Update validation
@@ -44,6 +44,8 @@ Update validation is automatically enabled once custom rollout waves are configu
     - **Red:** At least one major degradation was detected, and the admin is offered the option to pause the deployment or initiate a rollback.
 
 For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
+
+{% data reusables.admincenter.requirements %}
 
 ## How to enable update validation
 To use update validation, the following requirements must be met:
