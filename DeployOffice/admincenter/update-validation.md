@@ -48,8 +48,6 @@ For a status of yellow or red, the admin can review the list of devices and see 
 ## Requirements
 
 <!--Using include for adding requirements-->
-[!INCLUDE [Network requirements](DeployOffice/admincenter/includes/requirements-network.md)]
-
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 
