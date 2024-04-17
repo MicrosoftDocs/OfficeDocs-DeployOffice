@@ -45,7 +45,9 @@ Update validation is automatically enabled once custom rollout waves are configu
 
 For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
 
-{% data reusables.admincenter.requirements %}
+## Requirements
+
+{% DeployOffice admincenter.includes.requirements-roles %}
 
 ## How to enable update validation
 To use update validation, the following requirements must be met:
