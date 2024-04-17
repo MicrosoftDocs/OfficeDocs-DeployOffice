@@ -5,7 +5,7 @@
 ## Get started
 ### [Deploy Outlook](get-started/deployment-new-outlook.md)
 ### [Migrate from COM to web add-ins](get-started/migrate-com-to-web-addins.md)
-### [State of Microsoft COM add-ins](state-of-com-add-ins.md)
+#### [State of Microsoft COM add-ins](get-started/state-of-com-add-ins.md)
 ### [Supported accounts](get-started/supported-account-types.md)
 
 ## Manage
