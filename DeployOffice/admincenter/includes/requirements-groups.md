@@ -9,10 +9,10 @@ description: Network Requirements for Microsoft 365 Apps admin center
 ms.date: 04/17/2024
 ---
 
-This features supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) under the following requirements:
+Using [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) is supported under the following conditions:
 
-- Both **device objects** and **user objects** can be used and also added to the same group. 
+- Both **device objects** and **user objects** can be used and also added to the same group.
 - **Device objects** must be Microsoft Entra joined or hybrid joined.
 - **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
 - Multiple groups can be used, but a single group should contain no more than 20,000 objects.
-- Nested groups supports up to three levels deep.
+- Nested groups support up to three levels deep.
