@@ -47,17 +47,10 @@ For a status of yellow or red, the admin can review the list of devices and see 
 
 ## Requirements
 
-{% DeployOffice admincenter.includes.requirements-roles %}
+<!--Using include for adding requirements-->
+[!INCLUDE [Network requirements](DeployOffice/admincenter/includes/requirements-network.md)]
 
-{% deployoffice admincenter.includes.requirements-roles %}
-
-{% deployoffice deployoffice.admincenter.includes.requirements-roles %}
-
-{% data deployoffice.admincenter.includes.requirements-roles %}
-
-{% data reusables.admincenter.requirements-network %}
-
-{% includes requirements-network %}
+[!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 
 ## How to enable update validation
