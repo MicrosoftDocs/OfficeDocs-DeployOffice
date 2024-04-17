@@ -49,6 +49,8 @@ For a status of yellow or red, the admin can review the list of devices and see 
 
 {% DeployOffice admincenter.includes.requirements-roles %}
 
+{% data reusables.admincenter.requirements-network %}
+
 ## How to enable update validation
 To use update validation, the following requirements must be met:
 - Devices must be managed via cloud update.
