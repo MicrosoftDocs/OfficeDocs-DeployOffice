@@ -37,17 +37,7 @@ If your organization is currently using web add-ins, no extra effort is required
 1. **Check your installed COM add-ins**: You can check installed COM/VSTO add-ins from the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com/). To find your installed apps, follow the instructions in [Add-in health](/DeployOffice/admincenter/microsoft-365-apps-health#add-in-health)—and be sure to filter out only the Outlook add-ins.
 2. **Identify the mission-critical COM add-ins from this list**: Often, organizations have unused COM add-ins installed that are no longer relevant. It's important to identify and prioritize the COM add-ins that are actively used by your organization in preparation for the new Outlook for Windows. Collaborate with your relevant business groups or IT teams to identify the relevant COM add-ins.
    
-   Some Microsoft COM Add-ins might be deployed within your organization. The plan for these COM add-ins is detailed in the following table. 
-
-   | Microsoft COM Add-in | Details |
-   | --------------------- | ------- |
-   | Dynamics 365 | COM Add-in deprecated in favor of web add-in since 2020. |
-   | Microsoft Purview Information Protection | Being replaced with native Office integration – new Outlook for Windows supports native sensitivity labels. For more information, see [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps). |
-   | Microsoft Exchange Add-in | This add-in is no longer relevant. |
-   | Microsoft IME (Input Method Editor) Outlook アドイン | Microsoft IME can be enabled in Windows and that should solve the relevant scenarios. |
-   | Microsoft SharePoint Server Colleague Import Add-in | No equivalent web add-in is available for the SharePoint Server Colleague Import Add-in. |
-   | OneNote COM Add-in | Share to OneNote web add-in is available for use. There are some known gaps that the OneNote team is looking into and plans to address. |
-   | Teams COM Add-in | Native integration in the new Outlook for creating Teams meetings. Share to Teams web add-in is also available. |
+   Some Microsoft COM add-ins might be deployed within your organization. The plan for these COM add-ins is detailed in [DeployOffice/outlook/get-started/state-of-com-add-ins.md](../get-started/state-of-com-add-ins.md)
 
 3. **Check if web add-ins are available for use**: If a web add-in is available, install, test, and assess it for usage with the new Outlook for Windows. You can follow the steps in [Deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) to install a web add-in.
 
