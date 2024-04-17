@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of transitioning from COM to web add-ins in Outlook"
-ms.date: 04/11/2024
+ms.date: 04/17/2024
 ---
 
 # Migrate from COM to web add-ins
@@ -37,7 +37,7 @@ If your organization is currently using web add-ins, no extra effort is required
 1. **Check your installed COM add-ins**: You can check installed COM/VSTO add-ins from the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.office.com/). To find your installed apps, follow the instructions in [Add-in health](/DeployOffice/admincenter/microsoft-365-apps-health#add-in-health)—and be sure to filter out only the Outlook add-ins.
 2. **Identify the mission-critical COM add-ins from this list**: Often, organizations have unused COM add-ins installed that are no longer relevant. It's important to identify and prioritize the COM add-ins that are actively used by your organization in preparation for the new Outlook for Windows. Collaborate with your relevant business groups or IT teams to identify the relevant COM add-ins.
    
-   Some Microsoft COM add-ins might be deployed within your organization. The plan for these COM add-ins is detailed in [DeployOffice/outlook/get-started/state-of-com-add-ins.md](../get-started/state-of-com-add-ins.md)
+   Some Microsoft COM add-ins might be deployed within your organization. The plan for these COM add-ins is detailed in [State of Microsoft COM add-ins](../get-started/state-of-com-add-ins.md)
 
 3. **Check if web add-ins are available for use**: If a web add-in is available, install, test, and assess it for usage with the new Outlook for Windows. You can follow the steps in [Deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) to install a web add-in.
 
