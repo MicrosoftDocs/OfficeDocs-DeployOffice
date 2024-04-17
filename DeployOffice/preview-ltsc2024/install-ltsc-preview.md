@@ -8,12 +8,14 @@ ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
+ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
+hideEdit: true
 description: "Technical guidance for IT Pros about how to install the preview version of Office LTSC"
 ms.date: 04/18/2024
 ---
 
-# Install Office LTSC Preview
+# Install Office LTSC preview
 
 > [!NOTE]
 > - This article is for a preview program and is subject to change.
@@ -55,11 +57,11 @@ All installed products must be either the 32-bit version or the 64-bit version. 
 
 #### Previous versions of Office
 
-It's recommend that you uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2016.
+Uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2016.
 
 For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
-To remove Office products that were installed by using Click-to-Run, such as Office 2021, you need to use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element).
+To remove Office products that were installed by using Click-to-Run, such as Office LTSC 2021, you need to use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element).
 
 #### Installation location
 
@@ -75,18 +77,18 @@ After you download the installation files, internet connectivity isn’t require
 
 ## Install Office LTSC preview by using the Office Deployment Tool
 
-The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) (ODT) is a free download from the Microsoft Download Center. It's recommended that you always download and use the most current version of the ODT. The ODT is used to download and install Office products, such as the preview products, that use the Click-to-Run installation technology.
+The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) (ODT) is a free download from the Microsoft Download Center. Always download and use the most current version of the ODT. The ODT is used to download and install Office products, such as preview products, that use Click-to-Run installation technology.
 
 After downloading the file, run the self-extracting executable file, which contains the Office Deployment Tool executable (setup.exe).
 
-You need to create a configuration.xml file that defines the installation settings, such as which preview products and languages to install, which architecture (32-bit or 64-bit) to use, and where to install and update the preview products from.
+Create a configuration.xml file to define the installation settings. Choose which preview products and languages to install, select the architecture (32-bit or 64-bit), and specify where to install and update the preview products from.
 
 For more information about using the Office Deployment Tool and the settings available for your configuration.xml file, see the following articles:
 
 - [Overview of the Office Deployment Tool](../overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](../office-deployment-tool-configuration-options.md)
 
-Copy the ODT (setup.exe) and your configuration.xml file to the device, and then from an elevated command prompt, run the following command to install the preview products:
+Copy the ODT (setup.exe) and your configuration.xml file to the device. From an elevated command prompt, run the following command to install the preview products:
 
 ```console
 setup.exe /configure configuration.xml
@@ -94,7 +96,7 @@ setup.exe /configure configuration.xml
 
 #### Example configuration.xml file
 
-The following sample configuration.xml will install the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology will be removed from the device. Because no [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) is specified, the preview products will be updated directly from the Office Content Delivery Network (CDN) on the internet.
+The following sample configuration.xml installs the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology is removed from the device. Because no [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) is specified, the preview products are updated directly from the Office Content Delivery Network (CDN) on the internet.
 
 
 ```xml
@@ -127,7 +129,7 @@ There are special product keys to activate the preview versions of Office LTSC, 
 
 ### Use KMS to activate
 
-To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2021 activation. Even though the KMS host computer is configured to activate Office 2021 products, that KMS host computer will be able to activate the preview products.
+To use KMS to activate the preview products, you need a KMS host computer, and it must be configured to support Office 2021 activation. Even though the KMS host computer is configured to activate Office 2021 products, that KMS host computer is able to activate the preview products.
 
 If you don’t have a KMS host computer that supports Office 2021 activation, you can use the [MAK product keys](#use-mak-to-activate) to activate the preview products.
 
@@ -152,7 +154,8 @@ You include this product key as the PIDKEY attribute in the configuration.xml fi
 
 If you don’t specify the product key in the configuration.xml file, you can enter the product key manually by opening an Office app, such as Word, and going to **File** > **Account** > **Change Product Key**.
 
-Activation might not occur right away. In some cases, activation might take up to 24 hours for activation to occur. There is a grace period of three days for activation.
+> [!NOTE]
+> Activation might not occur right away. In some cases, it might take up to 24 hours for activation to occur. There's a grace period of three days for activation.
 
 ### Use MAK to activate
 
@@ -170,13 +173,13 @@ If you don’t specify the product key in the configuration.xml file, you can en
 
 ## Update Office LTSC preview
 
-Updates for preview products will include security and non-security updates that provide stability or performance improvements for Office, as needed.
+Updates for preview products include security and nonsecurity updates that provide stability and performance improvements for Office, as needed.
 
 To manually check for updates, open any Office app, such as Word, and go to **File** > **Account** > **Update Options** > **Update Now**.
 
 ### Update from the Office Content Delivery Network
 
-If network connectivity and other considerations based on your organizational requirements aren’t an issue, it's recommended that you let the preview products automatically update themselves directly from the Office Content Delivery Network (CDN) on the internet. This option requires the least administrative effort and is the easiest way to keep the preview products up to date.
+If network connectivity and other considerations based on your organizational requirements aren’t an issue, let the preview products automatically update themselves directly from the Office Content Delivery Network (CDN) on the internet. This option requires the least administrative effort and is the easiest way to keep the preview products up to date.
 
 While the updates are being downloaded in the background, you can continue to use your Office apps, such as Word. After the updates are downloaded, the updates are installed. If you have any Office apps open, you’re prompted to save your work and close the apps, so that the updates can be installed.
 
@@ -184,14 +187,14 @@ While the updates are being downloaded in the background, you can continue to us
 
 If you don’t want devices in your organization to connect to the Office CDN to get updates, you can configure the preview products to get updates from a shared folder from within your internal network. You can use the Office Deployment Tool to download the latest version of the preview products from the Office CDN to a shared folder on your internal network. You can then configure the preview products to check that shared folder for updates by using the [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) in your configuration.xml file.
 
-This option requires more administrative effort and more disk space. For example, you must keep track of when new builds of the preview products are available and then download the updated version to the shared folder on your network. The main installation file that contains all three preview products is at least 2.3 GB and each language file is at least 400 MB. There aren’t separate downloads for each preview product, and you can’t download just the security updates or non-security updates.
+This option requires more administrative effort and more disk space. For example, you must keep track of when new builds of the preview products are available and then download the updated version to the shared folder on your network. The main installation file that contains all three preview products is at least 2.3 GB and each language file is at least 400 MB. There aren’t separate downloads for each preview product, and you can’t download just the security updates or nonsecurity updates.
 
 ## Getting support and providing feedback
 
 Microsoft support isn’t available for the preview program.
 
-Therefore, it's recommended that you use preview products only for testing purposes. For example, to familiarize yourself with deploying preview products and using the new features in the Office apps. Preview products shouldn’t be used in your normal production environment or on a production device.
+Use preview products only for testing purposes. For example, to familiarize yourself with deploying preview products and using the new features in the Office apps. Preview products shouldn’t be used in your normal production environment or on a production device.
 
 If you want to provide feedback about an Office app or feature, go to **File**, and select **Feedback** in that app.
 
-If you have questions about Office LTSC preview or want to provide additional feedback, go to the [Microsoft 365 and Office forum for business customers](https://answers.microsoft.com/msoffice/forum/msoffice_OfB) on Microsoft Community.
+If you have questions about Office LTSC preview or want to provide feedback, go to the [Microsoft 365 and Office forum for business customers](https://answers.microsoft.com/lang/msoffice/forum/msoffice_OfB) on Microsoft Community.
