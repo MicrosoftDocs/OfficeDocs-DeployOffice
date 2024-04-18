@@ -96,7 +96,7 @@ URL for the server hosting update manifests. MAU will download update manifests 
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>-chk.xml</li><li>.xml</li><li>.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with &lt;AppID&gt;_&lt;Version&gt;.[xml|cat], otherwise some of the functionalities provided by MAU may not be available. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>-chk.xml</li><li>.xml</li><li>.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with &lt;AppID&gt;_&lt;Version&gt;.\[xml|cat\], otherwise some of the functionalities provided by MAU may not be available. |
 
 ### UpdateCache
 
@@ -408,11 +408,11 @@ If set to TRUE, causes verbose logging to be output to MAU log file.
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | MAU Log only maintains the last 1 MB. Setting this value could cause local log file to lose details. |
+| Comments | MAU Log will only maintain the last 1MB. Setting this may cause the local log file to lose details. |
 
 ### UpdateCheckInterval
 
-Specifies the number of minutes between Checking for updates. Default is set to check every 13 hours.
+Specifies the number of minutes between checking for updates. Default is set to check every 13 hours.
 
 | Category | Details |
 | --- | --- |
@@ -420,25 +420,26 @@ Specifies the number of minutes between Checking for updates. Default is set to 
 | Type | Integer |
 | Default Value | 780 |
 | Manageable | Yes |
-| Comments | Defaulted to 13 hours interval.<br>We recommend this number be a multiple of 60(1hour)<br>Suggest not exceeding 4320 (three days) |
+| Comments | Defaulted to 13 hours interval.<br>We recommend this number be a multiple of 60 (one hour).<br>Suggest not exceeding 4320 (three days). |
 
 ### UpdateCheckFrequency
 
-Deprecated. Incorrectly named. Changed to UpdateCheckInterval to more accurately describe its function.
+Deprecated.
 
 | Category | Details |
 | --- | --- |
 | Domain | com.microsoft.autoupdate2 |
 | Type | Integer |
 | Default Value | |
-| Manageable | No |
+| Manageable | | 
 | Comments | Deprecated |
+
 
 ### UpdateDeadline.ApplicationsForcedUpdateSchedule
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
-For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
+See [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline.md) for more details.
 
 | Category | Details |
 | --- | --- |
@@ -446,7 +447,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Should be set to enforce updates by a certain date.<br>|
+| Comments | Should be set to enforce updates by a certain date. |
 
 Example:
 ```xml
