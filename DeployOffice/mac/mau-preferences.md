@@ -1,7 +1,7 @@
 ---  
 title: Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
 ms.author:  geokri
-author:  pbowden-msft
+author:  nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
@@ -39,7 +39,8 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Comments | Not setting or incorrectly setting this preference leads to Microsoft AutoUpdate (MAU):<br><ul><li>Repeatedly showing Data Collection policy</li><li>Not offering updates.</li></ul> |
 
 > [!NOTE] 
-> RequiredAndOptionalData is now deprecated.
+> RequiredAndOptionalData is now deprecated. MAU has never used RequiredAndOptionalData and has always only used RequiredDataOnly for preferences. This preference has now been completely removed.
+
 
 
 ## HowToCheck
@@ -96,7 +97,7 @@ The ManifestServer is the URL for the server hosting update manifests. MAU downl
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: [Manifest files](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/). Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with &lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: [Manifest files](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/). Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with 4090&lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
 
 ## UpdateCache
 
@@ -273,7 +274,7 @@ Example:
 
 Part of application record in Applications dictionary.
 
-When set to TRUE in the application record, application will not be displayed on MAU GUI.
+When set to TRUE in the application record, application won't be displayed on MAU GUI.
 
 | Category | Details |
 | --- | --- |
@@ -282,7 +283,7 @@ When set to TRUE in the application record, application will not be displayed on
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | This should be set for any app that should not be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this will disable the app from being updated via GUI when HowToCheck is set to AutomaticCheck. |
+| Comments | This should be set for any app that shouldn't be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this disables the app from being updated via GUI when HowToCheck is set to AutomaticCheck. |
 
 
 ## UpdateReadyReminderIntervalInHours
@@ -316,7 +317,7 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Setting this incorrectly will disable updates for the Microsoft 365 apps. |
+| Comments | Setting this incorrectly disables updates for the Microsoft 365 apps. |
 
 
 ## OptionalUpdatesDeferralsDays
@@ -332,7 +333,7 @@ For more information, see: [Microsoft AutoUpdate and Deferred Updates](https://l
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | 1 - 28 |
-| Comments | This value has a tolerance of 3 days. IT Admins should add 3 days to the desired deferral days when setting this value. |
+| Comments | This value has a tolerance of three days. IT Admins should add three days to the desired deferral days when setting this value. |
 
 
 ## OptionalUpdatesDeferrals
@@ -390,7 +391,7 @@ When set to FALSE, this disables the option to initiate a check for updates from
 | Default Value | TRUE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | IT Admin should set this to FALSE if individual users should not be allowed to initiate checking for updates, or initiate updates themselves. Note: The 'Check for Updates' button is replaced with the 'Update All' button when MAU completes checking for updates. This preference key, when set to FALSE, will also disable the 'Update All' button. |
+| Comments | IT Admin should set this to FALSE if individual users shouldn't be allowed to initiate checking for updates, or initiate updates themselves. Note: The 'Check for Updates' button is replaced with the 'Update All' button when MAU completes checking for updates. This preference key, when set to FALSE, will also disable the 'Update All' button. |
 
 :::image type="content" source="../mac/images/preferences-for-mau/apps-up-to-date-notification.large.png" alt-text="Microsoft AutoUpdate window stating 'All apps are up-to-date.' with an option below to 'Automatically keep Microsoft apps up to date' alongside a clickable 'Check for Updates' button and an 'Advanced' options link." lightbox="../mac/images/preferences-for-mau/apps-up-to-date-notification.large.png":::
 
@@ -408,7 +409,7 @@ If set to TRUE, causes verbose logging to be output to MAU log file.
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | MAU Log will only maintain the last 1MB. Setting this may cause the local log file to lose details. |
+| Comments | MAU Log will only maintain the last 1MB. Setting this might cause the local log file to lose details. |
 
 ## UpdateCheckInterval
 
@@ -439,7 +440,7 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its fu
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
-See [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline.md) for more details.
+See [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md) for more details.
 
 | Category | Details |
 | --- | --- |
@@ -479,8 +480,8 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Manageable | Yes |
 | Comments | MAU is calculating deadline dates based on the day updates are found on that device. Not from when Microsoft released the patches. Starting from StartAutomaticUpdates  number of days before deadline is reached, there will be a prompt displayed to user every 12 hours |
 
-Here is an example of the promt that's displayed.
-:::image type="content" source="../mac/images/preferences-for-mau/update-deadline-reminder.large.png" alt-text="A Microsoft AutoUpdate reminder pop-up with a date 'Jul 27, 2019'. It informs the user that the admin has set up a deadline for updates and instructs to save data and quit the following apps before the deadline, with the Microsoft Word icon displayed. There are options to 'Snooze' or 'Update' at the bottom of the pop-up." lightbox="../mac/images/preferences-for-mau/update-deadline-reminder.large.png":::
+Here's an example of the prompt that's displayed.
+:::image type="content" source="../mac/images/preferences-for-mau/update-deadline-reminder.large.png" alt-text="A Microsoft AutoUpdate reminder pop-up with a date 'July 27, 2019'. It informs the user that the admin has set up a deadline for updates and instructs to save data and quit the following apps before the deadline, with the Microsoft Word icon displayed. There are options to 'Snooze' or 'Update' at the bottom of the pop-up." lightbox="../mac/images/preferences-for-mau/update-deadline-reminder.large.png":::
 
 ## UpdateDeadline.FinalCountDown
 
@@ -494,16 +495,16 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | Integer |
 | Default Value | 60 |
 | Manageable | Yes |
-| Comments |Range of this value is 10 – 720. Starting from FinalCountDown number of minutes before deadline is reached, there will be a prompt displayed to user everytime MAU is running, and applications will be terminated automatically after countdown is reached. |
+| Comments |The range for this value is 10 to 720. Starting from the FinalCountDown, the number of minutes before the deadline, MAU displays a prompt to the user each time it runs. Applications  automatically close once the countdown is reached. |
 
-Here is an example of the promt that's displayed.
+Here's an example of the prompt that displays.
 :::image type="content" source="../mac/images/preferences-for-mau/update-countdown-notice.large.png" alt-text="Close-up of a Microsoft AutoUpdate notification with a countdown timer set to 59 minutes and 53 seconds. The message states, 'Your admin has setup a deadline for the updates' and advises the user to save their data and close the following apps before the deadline, with the Microsoft Word icon shown. The button at the bottom reads 'Quit Apps and Update.'" lightbox="../mac/images/preferences-for-mau/update-countdown-notice.large.png":::
 
 ## UpdateDeadline.StartAutomaticUpdates
 
-Number of days before forced update date that MAU will treat every update as AutomaticDownload.
+Number of days before forced update date that MAU treats every update as AutomaticDownload.
 
-Using this preference setting will enable Automatic Download and Install mode for MAU regardless of the current MAU HowToCheck setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
+Using this preference setting enables Automatic Download and Install mode for MAU regardless of the current MAU HowToCheck setting on the device. After the deadline is reached, MAU will revert to the previous setting on the device.
 
 For more information, see: [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md)
 
@@ -513,7 +514,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | Integer |
 | Default Value | 3 |
 | Manageable | Yes |
-| Comments | Value less than 3 will be treated as 3. Value cannot be bigger than DaysBeforeForcedQuit. |
+| Comments | Value less than three is treated as three. Value can't be bigger than DaysBeforeForcedQuit. |
 
 ## UpdateDeadline.DialogTitle
 
@@ -527,13 +528,13 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | String |
 | Default Value | Your admin has setup a deadline for the updates.|
 | Manageable | Yes |
-| Comments | :::image type="content" source="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png" alt-text="A Microsoft AutoUpdate alert with a red box highlighting an important notice that reads 'Your admin has setup a deadline for the updates,' dated 'Jul 27, 2019'. Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons. There are additional snooze options to try again in an hour, 12 hours, tomorrow, or in 2 days." lightbox="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png"::: |
+| Comments | :::image type="content" source="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png" alt-text="A Microsoft AutoUpdate alert with a red box highlighting an important notice that reads 'Your admin has setup a deadline for the updates,' dated 'July 27, 2019'. Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons. There are other snooze options to try again in an hour, 12 hours, tomorrow, or in two days." lightbox="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png"::: |
 
 ## UpdaterOptimization
 
 Determines whether to optimize for smaller download size (default) or faster background install times for Office App Updates.
 
- One of: Size, Network, CPU or None.
+ One of: Size, Network, CPU, or None.
 
 | Category | Details |
 | --- | --- |
@@ -546,7 +547,7 @@ Determines whether to optimize for smaller download size (default) or faster bac
 
 ## GuardAgainstAppModification
 
-Setting this to TRUE will keep a clone of an application in cache location at all times.
+Setting this preference to TRUE keeps a clone of an application in cache location always.
 
 Needed as some security apps were modifying installed apps under /Applications folder, causing updates to fail.
 
@@ -557,4 +558,4 @@ Needed as some security apps were modifying installed apps under /Applications f
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | Use this if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Microsoft 365 apps. Office app updates usually come through as "binary delta" updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app has been modified by running the following verification from the terminal app. This will fail if the integrity of the application has been compromised:<br><br> `codesign –vv --deep <<path to the app>>` |
+| Comments | Use this preference if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Microsoft 365 apps. Office app updates come through as "binary delta" updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app was modified by running the following verification from the terminal app. This fails if the integrity of the application is compromised:<br><br> `codesign –vv --deep <<path to the app>>` |
