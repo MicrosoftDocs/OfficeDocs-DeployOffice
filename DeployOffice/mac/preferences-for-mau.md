@@ -66,11 +66,29 @@ ChannelName specifies which update channel Microsoft AutoUpdate receives updates
 | Default Value | Current |
 | Manageable | Yes |
 | Accepted Values | Beta, Current, CurrentThrottle, Custom, Preview |
-| Comments | Not having this entry, or having an invalid entry in ChannelName, will revert MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br><ul><li>External (replaced by Preview)</li><li>InsiderFast (replaced by Beta)</li><li>Production (replaced by Current)</li></ul>Note: ‘Custom’ is provided to help facilitate hosting updates within an organization, to reduce external network traffic. In such a case, IT Admin is responsible for following:<br><ul><li>Manage server space within the organization</li><li>Downloading manifests to specified manifest server location</li><li>Downloading update packages to specified update cache location (if applicable)</li></ul><br><strong>Notes on Channels:</strong><ul><li>Current – Any official releases are released to this channel. This is the default value.</li><li>CurrentThrottle – Created to allow people to skip ‘weekly’ Outlook releases in Current channel. Other apps will be updated via Current channel (default).</li><li>Custom – Channel to be used if internal servers are to be utilized.</li><li>Preview – Preview of official releases. Office apps available usually 2 weeks prior to official release.</li><li>Beta – Absolute latest in development. Office apps usually updated 2 times a week. Only to be used for testing and error reporting purposes. Product support may not be available in this channel.</li></ul><br><strong>Note on Per-App channel</strong>:<br>You can specify ChannelName for each of the apps. To do this, add a ChannelName key and corresponding value to specific Application that needs to be on a different channel. For example, the following XML snippet shows how to set the channel for Excel to be Current, and everything else to be Beta:<br><code>&lt;key&gt;Applications&lt;/key&gt;&lt;dict&gt;&lt;key&gt;/Applications/Microsoft Excel.app&lt;/key&gt;&lt;dict&gt;&lt;key&gt;Application ID&lt;/key&gt;&lt;string&gt;XCEL2019&lt;/string&gt;&lt;key&gt;ChannelName&lt;/key&gt;&lt;string&gt;Current&lt;/string&gt;&lt;/dict&gt;......&lt;/dict&gt;&lt;key&gt;ChannelName&lt;/key&gt;&lt;string&gt;Beta&lt;/string&gt;</code><br>Per-App ManifestServer and UpdateCache can also be utilized for sourcing particular app updates from a Custom location. |
+| Comments | Not having this entry, or having an invalid entry in ChannelName, will revert MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br><ul><li>External (replaced by Preview)</li><li>InsiderFast (replaced by Beta)</li><li>Production (replaced by Current)</li></ul>Note: ‘Custom’ is provided to help facilitate hosting updates within an organization, to reduce external network traffic. In such a case, IT Admin is responsible for following:<br><ul><li>Manage server space within the organization</li><li>Downloading manifests to specified manifest server location</li><li>Downloading update packages to specified update cache location (if applicable)</li></ul><br><strong>Notes on Channels:</strong><ul><li>Current – Any official releases are released to this channel. This is the default value.</li><li>CurrentThrottle – Created to allow people to skip ‘weekly’ Outlook releases in Current channel. Other apps will be updated via Current channel (default).</li><li>Custom – Channel to be used if internal servers are to be utilized.</li><li>Preview – Preview of official releases. Office apps available usually 2 weeks prior to official release.</li><li>Beta – Absolute latest in development. Office apps usually updated 2 times a week. Only to be used for testing and error reporting purposes. Product support may not be available in this channel.</li></ul> |
+
+<strong>Note on Per-App channel</strong>:
+You can specify ChannelName for each of the apps. To do this, add a ChannelName key and corresponding value to specific Application that needs to be on a different channel. For example, the following XML snippet shows how to set the channel for Excel to be Current, and everything else to be Beta:
+```xml
+<key>Applications</key>
+<dict>  
+        <key>/Applications/Microsoft Excel.app</key>
+        <dict>  
+                <key>Application ID</key>
+                <string>XCEL2019</string>
+                <key>ChannelName</key>
+                <string>Current</string>
+        </dict>
+      ......
+</dict>
+<key>ChannelName</key>
+<string>Beta</string>
+```
 
 ### ManifestServer
 
-URL for the server hosting update manifests. MAU downloads update manifests from this location when ChannelName is set to Custom.
+URL for the server hosting update manifests. MAU will download update manifests from this location when ChannelName is set to Custom.
 
 | Category | Details |
 | --- | --- |
@@ -78,9 +96,7 @@ URL for the server hosting update manifests. MAU downloads update manifests from
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br>• *-chk.xml<br>• *.xml<br>• *.cat<br><br>ChannelName should be set to Custom in order to make meaningful use of this preference.<br>Also, if ChannelName is set to Custom and this preference isn't set, MAU treats this as Current channel. |
-
-The latest published manifest files can be found under Available in the current channel, [https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/).
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>*-chk.xml</li><li>*.xml</li><li>*.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>*.xml</li><li>*-chk.xml</li><li>*.cat</li><li>*-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (*.xml, *.cat) need to be constructed with <AppID>_<Version>.[xml|cat], otherwise some of the functionalities provided by MAU may not be available. |
 
 ### UpdateCache
 
