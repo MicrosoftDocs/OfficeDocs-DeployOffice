@@ -46,19 +46,14 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 
 Specifies how Microsoft AutoUpdate checks for updates.
 
-| Category | Details |
-| --- | --- |
-| Domain | com.microsoft.autoupdate2 |
-| Type | String |
-| Default Value | AutomaticDownload |
-| Manageable | Yes |
+| Category        | Details |
+| --------------- | ------- |
+| Domain          | com.microsoft.autoupdate2 |
+| Type            | String |
+| Default Value   | AutomaticDownload |
+| Manageable      | Yes |
 | Accepted Values | AutomaticDownload, AutomaticCheck |
-| Comments | Not having this entry, or having an invalid entry will revert MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU will check for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU will check for updates on regular intervals and launch GUI when an available update is found. Update sequence is initiated by the user from the GUI.<br>The following values are deprecated:
-<ul>
-<li>Manual – MAU will not check for updates, apart from self update.</li>
-<li>Automatic – replaced by AutomaticCheck</li>
-</ul><br><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual will result in MAU not offering updates automatically. |
-
+| Comments        | Not having this entry, or having an invalid entry will revert MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU will check for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU will check for updates on regular intervals and launch GUI when an available update is found. Update sequence is initiated by the user from the GUI.<br>The following values are deprecated: <ul><li>Manual – MAU will not check for updates, apart from self update.</li><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual will result in MAU not offering updates automatically. |
 
 ### ChannelName
 
