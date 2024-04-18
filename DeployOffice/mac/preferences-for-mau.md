@@ -425,7 +425,7 @@ Specifies the number of minutes between checking for updates. Default is set to 
 
 ### UpdateCheckFrequency
 
-Deprecated.
+Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its function more accurately. 
 
 | Category | Details |
 | --- | --- |
