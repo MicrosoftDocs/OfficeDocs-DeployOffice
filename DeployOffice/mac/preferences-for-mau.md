@@ -96,11 +96,11 @@ URL for the server hosting update manifests. MAU will download update manifests 
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>*-chk.xml</li><li>*.xml</li><li>*.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>*.xml</li><li>*-chk.xml</li><li>*.cat</li><li>*-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (*.xml, *.cat) need to be constructed with <AppID>_<Version>.[xml|cat], otherwise some of the functionalities provided by MAU may not be available. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>`*`-chk.xml</li><li>`*`.xml</li><li>`*`.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>`*`.xml</li><li>`*`-chk.xml</li><li>`*`.cat</li><li>`*`-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (`*`.xml, `*`.cat) need to be constructed with <AppID>_<Version>.[xml|cat], otherwise some of the functionalities provided by MAU may not be available. |
 
 ### UpdateCache
 
-The URL for the server hosting the update packages. MAU downloads update packages from this server location instead of the location specified in the .xml manifest file.
+URL for the server hosting actual update packages. MAU will download update packages from this location instead of the location specified in the .xml manifest file.
 
 | Category | Details |
 | --- | --- |
@@ -108,11 +108,12 @@ The URL for the server hosting the update packages. MAU downloads update package
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Set this value to avoid high external download traffic by pointing clients to an internal update server.<br>Not having correct update package at this location results in "Download Error" being reported. |
+| Comments | Set this to avoid high external download traffic by pointing clients to an internal update server.<br>Not having correct update package at this location will result in ‘Download Error’ being reported.<br>When populating UpdateCache, ensure ALL updater packages are copied. These are found by examining the contents of .xml files for each respective applications (e.g., 0409MSWD2019.xml from Current channel). |
+
 
 ### EnableFallbackChannel
 
-Allows Microsoft AutoUpdate to look for updates in the Current channel if the specified channel doesn't have updates available.
+Allows Microsoft AutoUpdate to look for updates in Current channel if the specified channel (e.g., Beta, Preview, Custom) does not have manifests for the registered applications available.
 
 | Category | Details |
 | --- | --- |
@@ -121,11 +122,12 @@ Allows Microsoft AutoUpdate to look for updates in the Current channel if the sp
 | Default Value | TRUE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | |
+| Comments | This is useful if you setup ManifestServer location but fail to copy manifests for ALL the registered applications. Conversely, this can be set to FALSE if you absolutely do not want to look into Current channel as a backup. |
+
 
 ### DisableOptInNotification
 
-When set to TRUE, prevents Opt-In notification/pop-up window from showing even when HowToCheck is set to Automatic.
+When Set to TRUE, prevents Opt-In notification/pop-up window from showing even when HowToCheck is set to Automatic.
 
 | Category | Details |
 | --- | --- |
@@ -134,7 +136,13 @@ When set to TRUE, prevents Opt-In notification/pop-up window from showing even w
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | Not having this entry, or setting the entry to FALSE results in Opt-In popup window showing if HowToCheck is set to Automatic.<br>Should be ignored if HowToCheck setting is NOT Automatic. |
+| Comments | Not having this entry, or setting this to FALSE will result in an Opt-In popup window showing if HowToCheck is set to Automatic. Will be ignored if HowToCheck setting is NOT Automatic. |
+
+Here are examples of the notificaiton and pop-up window:
+
+:::image type="content" source="../images/preferences-for-mau/automatic-updates-prompt.large.png" alt-text="Notification pop-up asking 'Turn On Automatic Updates?' with a description 'Always install new features and updates for Microsoft apps' and icons of Microsoft apps." lightbox="../images/preferences-for-mau/automatic-updates-prompt.large.png":::
+
+:::image type="content" source="../images/preferences-for-mau/update-settings-dialogue.large.png" alt-text="Screenshot of a dialogue box for Microsoft updates with the title 'Turn On Automatic Updates' and a brief description about Microsoft releasing new features, security updates, and improvements. The box includes a 'Turn On' button in blue and a 'Not Now' link below it." lightbox="../images/preferences-for-mau/update-settings-dialogue.large.png":::
 
 ### LastUpdate
 
