@@ -17,15 +17,15 @@ ms.date: 04/9/2024
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
 
-As an admin for Microsoft 365 Enterprise, you can tailor Microsoft AutoUpdate (MAU) preferences to meet the diverse needs of your users. This article provides an overview of preferences for MAU and help you understand the documented preferences available.
+As an admin for Microsoft 365 Enterprise, you can tailor Microsoft AutoUpdate (MAU) preferences to meet the diverse needs of your users. This article provides an overview of preferences for MAU and helps you understand the documented preferences available.
 
 ## What are Preferences for MAU?
 
-Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Office applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
+Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Microsoft 365 applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
 
-For more detailed information on preferences and their deployment, see [Deploy preferences for Office for Mac](../mac/update-office-for-mac-using-msupdate.md).
+For more detailed information on preferences and their deployment, see [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md).
 
-### AcknowledgedDataCollectionPolicy
+## AcknowledgedDataCollectionPolicy
 
 Stores user's choice on data collection policy acknowledgment. This policy helps ensure that users are aware of the data collection policies in place.
 
@@ -36,13 +36,13 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | NOT Setting this OR setting this incorrectly leads to Microsoft AutoUpdate (MAU):<br><ul><li>Repeatedly showing Data Collection policy</li><li>Not offering updates.</li></ul> |
+| Comments | Not setting or incorrectly setting this preference leads to Microsoft AutoUpdate (MAU):<br><ul><li>Repeatedly showing Data Collection policy</li><li>Not offering updates.</li></ul> |
 
 > [!NOTE] 
 > RequiredAndOptionalData is now deprecated.
 
 
-### HowToCheck
+## HowToCheck
 
 Specifies how Microsoft AutoUpdate checks for updates.
 
@@ -52,8 +52,8 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Type            | String |
 | Default Value   | AutomaticDownload |
 | Manageable      | Yes |
-| Accepted Values | AutomaticDownload, AutomaticCheck |
-| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU checks for updates on regular intervals and launch GUI when an available update is found. Update sequence is initiated by the user from the GUI.<br>The following values are deprecated: <ul><li>Manual – MAU won't check for updates, apart from self update.</li><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
+| Accepted Values | AutomaticDownload<br>AutomaticCheck |
+| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>The following values are deprecated: <ul><li>Manual – MAU checks only for its own updates, not for other updates.</li><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
 
 ## ChannelName
 
@@ -65,11 +65,11 @@ ChannelName specifies which update channel Microsoft AutoUpdate receives updates
 | Type | String |
 | Default Value | Current |
 | Manageable | Yes |
-| Accepted Values | Beta, Current, CurrentThrottle, Custom, Preview |
-| Comments | Not having this entry, or having an invalid entry in ChannelName, reverts MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br><ul><li>External (replaced by Preview)</li><li>InsiderFast (replaced by Beta)</li><li>Production (replaced by Current)</li></ul>Note: ‘Custom’ is provided to help facilitate hosting updates within an organization, to reduce external network traffic. In such a case, IT Admin is responsible for following:<br><ul><li>Manage server space within the organization</li><li>Downloading manifests to specified manifest server location</li><li>Downloading update packages to specified update cache location (if applicable)</li></ul><br><strong>Notes on Channels:</strong><ul><li>Current – Any official releases are released to this channel. This is the default value.</li><li>CurrentThrottle – Created to allow people to skip ‘weekly’ Outlook releases in Current channel. Other apps will be updated via Current channel (default).</li><li>Custom – Channel to be used if internal servers are to be utilized.</li><li>Preview – Preview of official releases. Office apps available usually 2 weeks prior to official release.</li><li>Beta – Absolute latest in development. Office apps usually updated 2 times a week. Only to be used for testing and error reporting purposes. Product support may not be available in this channel.</li></ul> |
+| Accepted Values | Beta<br>Current<br>CurrentThrottle<br>Custom<br>Preview |
+| Comments | Not having this entry, or having an invalid entry in ChannelName, reverts MAU to the default 'Current' channel.<br>Following values are deprecated and should no longer be used:<br><ul><li>External (replaced by Preview)</li><li>InsiderFast (replaced by Beta)</li><li>Production (replaced by Current)</li></ul>Note: The "Custom" setting is designed to help organizations host updates internally, reducing external network traffic. In this scenario, the IT Administrator is responsible for:<br><ul><li>Manage server space within the organization</li><li>Downloading manifests to specified manifest server location</li><li>Downloading update packages to specified update cache location (if applicable)</li></ul><br><strong>Notes on Channels:</strong><ul><li>Current – This channel distributes all official releases and is the default setting.</li><li>CurrentThrottle – Created to allow people to skip "weekly" Outlook releases in Current channel. Other apps are updated through Current channel (default).</li><li>Custom – Channel to be used if internal servers are to be utilized.</li><li>Preview – This channel provides a preview of official releases. Microsoft 365 apps are typically available two weeks before the official release.</li><li>Beta – Absolute latest in development. Microsoft 365 apps are updated two times a week. Only to be used for testing and error reporting purposes. Product support might not be available in this channel.</li></ul> |
 
 <strong>Note on Per-App channel</strong>:
-You can specify ChannelName for each of the apps. To do this, add a ChannelName key and corresponding value to specific Application that needs to be on a different channel. For example, the following XML snippet shows how to set the channel for Excel to be Current, and everything else to be Beta:
+You can specify a ChannelName for each app by adding a ChannelName key and value to the specific application that requires a different channel. For example, the following XML snippet shows how to set the channel for Excel to be Current, and everything else to be Beta:
 ```xml
 <key>Applications</key>
 <dict>  
@@ -86,21 +86,9 @@ You can specify ChannelName for each of the apps. To do this, add a ChannelName 
 <string>Beta</string>
 ```
 
-### ManifestServer
+## ManifestServer
 
-URL for the server hosting update manifests. MAU will download update manifests from this location when ChannelName is set to Custom.
-
-| Category | Details |
-| --- | --- |
-| Domain | com.microsoft.autoupdate2 |
-| Type | String |
-| Default Value | |
-| Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>-chk.xml</li><li>.xml</li><li>.cat</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference is not set, MAU will treat this as Current channel.</li><li>Latest published manifest files referenced above can be found under: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/, which points to the root URL for the Current channel. Actual file name must be appended to the above URL (URL does not provide directory listing)</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with &lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU may not be available. |
-
-### UpdateCache
-
-URL for the server hosting actual update packages. MAU will download update packages from this location instead of the location specified in the .xml manifest file.
+The ManifestServer is the URL for the server hosting update manifests. MAU downloads update manifests from this location when ChannelName is set to Custom.
 
 | Category | Details |
 | --- | --- |
@@ -108,12 +96,23 @@ URL for the server hosting actual update packages. MAU will download update pack
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Set this to avoid high external download traffic by pointing clients to an internal update server.<br>Not having correct update package at this location will result in ‘Download Error’ being reported.<br>When populating UpdateCache, ensure ALL updater packages are copied. These are found by examining the contents of .xml files for each respective applications, for example, 0409MSWD2019.xml from Current channel. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: [Manifest files](https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/). Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with &lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
 
+## UpdateCache
 
-### EnableFallbackChannel
+URL for the server hosting actual update packages. MAU downloads update packages from this location instead of the location specified in the .xml manifest file.
 
-Allows Microsoft AutoUpdate to look for updates in Current channel if the specified channel (Beta, Preview, Custom) does not have manifests for the registered applications available.
+| Category | Details |
+| --- | --- |
+| Domain | com.microsoft.autoupdate2 |
+| Type | String |
+| Default Value | |
+| Manageable | Yes |
+| Comments | Set UpdateCache to direct client traffic to an internal update server, reducing high external download traffic.<br>If the correct update package isn't at this location, a 'Download Error' is reported.<br>To populate UpdateCache, copy all updater packages. You can find these packages by examining the contents of .xml files for each application, such as 0409MSWD2019.xml from Current channel. |
+
+## EnableFallbackChannel
+
+Allows Microsoft AutoUpdate to look for updates in Current channel if the specified channel (Beta, Preview, Custom) doesn't have manifests for the registered applications available.
 
 | Category | Details |
 | --- | --- |
@@ -122,10 +121,10 @@ Allows Microsoft AutoUpdate to look for updates in Current channel if the specif
 | Default Value | TRUE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | This is useful if you setup ManifestServer location but fail to copy manifests for ALL the registered applications. Conversely, this can be set to FALSE if you absolutely do not want to use Current channel as a backup. |
+| Comments | EnableFallbackChannel is useful if you set up ManifestServer location but fail to copy manifests for all the registered applications. Set this preference to FALSE if you don't want to use Current channel as a backup. |
 
 
-### DisableOptInNotification
+## DisableOptInNotification
 
 When Set to TRUE, prevents Opt-In notification/pop-up window from showing even when HowToCheck is set to Automatic.
 
@@ -136,17 +135,17 @@ When Set to TRUE, prevents Opt-In notification/pop-up window from showing even w
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | Not having this entry, or setting this to FALSE will result in an Opt-In popup window showing if HowToCheck is set to Automatic. Will be ignored if HowToCheck setting is NOT Automatic. |
+| Comments | If this entry is missing or set to FALSE, and HowToCheck is set to Automatic, an Opt-In popup window appears. This notification is ignored if the HowToCheck setting isn't Automatic. |
 
-Here are examples of the notificaiton and pop-up window:
+Here are examples of the notification and pop-up window:
 
 :::image type="content" source="../mac/images/preferences-for-mau/automatic-updates-prompt.large.png" alt-text="Notification pop-up asking 'Turn On Automatic Updates?' with a description 'Always install new features and updates for Microsoft apps' and icons of Microsoft apps." lightbox="../mac/images/preferences-for-mau/automatic-updates-prompt.large.png":::
 
 :::image type="content" source="../mac/images/preferences-for-mau/update-settings-dialogue.large.png" alt-text="Screenshot of a dialogue box for Microsoft updates with the title 'Turn On Automatic Updates' and a brief description about Microsoft releasing new features, security updates, and improvements. The box includes a 'Turn On' button in blue and a 'Not Now' link below it." lightbox="../mac/images/preferences-for-mau/update-settings-dialogue.large.png":::
 
-### LastUpdate
+## LastUpdate
 
-**DO NOT USE**. MAU uses this preference to keeps track of when it last checked for updates. MAU will not check for updates for another 12 hours (minimum) from this time.
+**DO NOT USE**. MAU uses this preference to track the last update check. It won't check for updates again until at least 12 hours pass from that time.
 
 | Category | Details |
 | --- | --- |
@@ -154,9 +153,9 @@ Here are examples of the notificaiton and pop-up window:
 | Type | Date |
 | Default Value | |
 | Manageable | No |
-| Comments | Important: Managed profile should NOT contain this entry.<br>Setting this value via managed profile will have the following consequences:<br><ul><li>If set to future - MAU will NOT check for updates until 12 hours from this time is passed.</li><li>If set to past / Incorrect format - MAU will check for updates every 2 hours.</li></ul> |
+| Comments | **Important** Don't include this entry in a managed profile.<br>Setting this value via managed profile has the following consequences:<br><ul><li>If set to future, MAU won't check for updates until 12 hours pass from that time.</li><li>If set to past or in an incorrect format, MAU checks for updates every two hours.</li></ul> |
 
-### DisableVoiceOverAccessibility
+## DisableVoiceOverAccessibility
 
 DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be disabled in Microsoft AutoUpdate. This option is deprecated.
 
@@ -168,9 +167,9 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 | Manageable | Yes |
 | Comments | Deprecated from MAU 4.70. |
 
-### ReopenAfterGUIInstall
+## ReopenAfterGUIInstall
 
-**DO NOT USE**. If set to TRUE, MAU GUI will open on the first MAU launch (FBA) after an update. This preference will be removed after the first GUI launch following MAU update.
+**DO NOT USE**.  If set to TRUE, the MAU GUI will open during the first MAU launch after an update. This preference is removed after the MAU GUI's initial launch following the update.
 
 | Category | Details |
 | --- | --- |
@@ -178,11 +177,11 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 | Type | Boolean |
 | Default Value | FALSE |
 | Manageable | No |
-| Comments | Important: This is only to be used by MAU itself. Managed profile should NOT contain this entry.<br>Setting this to TRUE via managed profile will cause MAU GUI to open with every FBA process launch. |
+| Comments | **Important** This preference is only to be used by MAU itself and shouldn't be included in a managed profile.<br>Setting this preference to TRUE in a managed profile causes the MAU GUI to open with every FBA process launch. |
 
-### ManifestServerExpiryDate
+## ManifestServerExpiryDate
 
-DO NOT USE. Sets the date when ManifestServer setting will expire. Currently in use by Teams21 ONLY.
+**DO NOT USE**. Sets the date when ManifestServer setting expires. Currently in use by Teams21 ONLY.
 
 | Category | Details |
 | --- | --- |
@@ -192,7 +191,7 @@ DO NOT USE. Sets the date when ManifestServer setting will expire. Currently in 
 | Manageable | No |
 | Comments | Currently in use by Teams21 ONLY.<br>After the indicated date, ManifestServer entry will be removed, effectively reverting the updates to use Current (default) channel instead. |
 
-### Applications
+## Applications
 
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
@@ -205,7 +204,7 @@ Lists application registrations. This dictionary can include keys for specific a
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | If an app is not listed and the user never launched the app, the app will never be updated.<br>Note: LCID entry is now deprecated. Historically, LCID was a part of the Application record in Applications dictionary entry. Identified Language Code to be used to locate language-specific update manifests. No longer applicable.<br>Other key/value that can be populated in this dictionary are documented in other sections below (e.g., app domain). |
+| Comments | If an app isn't listed and the user never launched the app, the app never updates.<br>Note: LCID entry is now deprecated. Historically, LCID was a part of the Application record in Applications dictionary entry. Identified Language Code to be used to locate language-specific update manifests. No longer applicable.<br>Other key/value pairs that can be added to this dictionary are documented in the [App Domain](#app-domain) section. |
 
 Example:
 ```xml
@@ -229,9 +228,9 @@ Example:
 </dict>
 ```
 
-### App Domain
+## App Domain
 
-Used by MAU to search extra information for update paths. For more informatioon, see [Set Office License Info for updates for Microsoft AutoUpdate](/DeployOffice/mac/mau-set-license-info.md).
+Used by MAU to search extra information for update paths. For more information, see [Set Office License Info for updates for Microsoft AutoUpdate](/DeployOffice/mac/mau-set-license-info.md).
 
 | Category | Details |
 | --- | --- |
@@ -257,7 +256,7 @@ Example:
 </dict>
 ```
 
-### ApplicationsSystem
+## ApplicationsSystem
 
 **DO NOT USE**. Internal dictionary used by MAU to keep applications dictionary in sync between users on a multi-user device.
 
@@ -267,10 +266,10 @@ Example:
 | Type | Dictionary |
 | Default Value | |
 | Manageable | No |
-| Comments | Setting this may cause a clash with the Applications dictionary.<br>It is best not to set it.<br>Note:<ul><li>This is used by MAU internally to reconcile different applications installed/registered by different users.</li><li>IT Admins may use this to ensure all the users on a device see the same list of application updates. IMPORTANT: This must be a superset of ALL Microsoft applications installed on the device that MAU supports.</li><li>It is best not setting this in a managed profile.</li></ul> |
+| Comments | Setting this preference might conflict with the Applications dictionary. It's advisable not to set it.<br>Note:<ul><li>This preference helps MAU internally reconcile various applications installed or registered by different users. IT Admins can use this preference to ensure that all users on a device receive the same application updates. **Important:** This preference must include all Microsoft applications supported by MAU installed on the device. Don't set this in a managed profile. |
 
 
-### HideOnGUI
+## HideOnGUI
 
 Part of application record in Applications dictionary.
 
@@ -286,9 +285,9 @@ When set to TRUE in the application record, application will not be displayed on
 | Comments | This should be set for any app that should not be displayed on the GUI.<br>Examples include:<br>OLIC02 – Licensing helper<br>Setting this will disable the app from being updated via GUI when HowToCheck is set to AutomaticCheck. |
 
 
-### UpdateReadyReminderIntervalInHours
+## UpdateReadyReminderIntervalInHours
 
-Used by Office Applications in determining how frequently update ready message bar should be displayed. Unit is hours.
+Used by Microsoft 365 apps in determining how frequently update ready message bar should be displayed. Unit is hours.
 
 | Category | Details |
 | --- | --- |
@@ -303,9 +302,9 @@ Here's an example of the Update Ready message bar in Excel:
 
 :::image type="content" source="../mac/images/preferences-for-mau/excel-update-notification.large.png" alt-text="Interface of Microsoft Excel displaying an 'Update Available' notification indicating that some fixes and improvements are made, with a prompt to restart the app. The Excel workbook shown is named 'Book1' and the sheet 'Sheet1' is visible, currently blank with no data entered." lightbox="../mac/images/preferences-for-mau/excel-update-notification.large.png":::
 
-### AppCustomPref
+## AppCustomPref
 
-Office Applications (>= 16.79) write license related information.
+Microsoft 365 applications (>= 16.79) write license related information.
 
 MAU uses this information to offer correct product updates.
 
@@ -317,10 +316,10 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 | Type | Dictionary |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Setting this incorrectly will disable updates for the office apps. |
+| Comments | Setting this incorrectly will disable updates for the Microsoft 365 apps. |
 
 
-### OptionalUpdatesDeferralsDays
+## OptionalUpdatesDeferralsDays
 
 This defines the number of days to wait to offer/install updates after an update is released.
 
@@ -336,7 +335,7 @@ For more information, see: [Microsoft AutoUpdate and Deferred Updates](https://l
 | Comments | This value has a tolerance of 3 days. IT Admins should add 3 days to the desired deferral days when setting this value. |
 
 
-### OptionalUpdatesDeferrals
+## OptionalUpdatesDeferrals
 
 Dictionary containing individual app deferral days / version.
 
@@ -350,7 +349,7 @@ For more information, see: [Microsoft AutoUpdate and Deferred Updates](/DeployOf
 | Manageable | Yes |
 | Comments | |
 
-### DisableEndOfSupportNotifications
+## DisableEndOfSupportNotifications
 
 When set to TRUE, disables notifications regarding the end of support for the Office suite.
 
@@ -363,7 +362,7 @@ When set to TRUE, disables notifications regarding the end of support for the Of
 | Accepted Values | TRUE / FALSE / 1 / 0 |
 | Comments | |
 
-### DisableInsiderCheckbox
+## DisableInsiderCheckbox
 
 When set to TRUE, this is used to disable the pulldown menu to select Beta/Preview channels.
 
@@ -380,7 +379,7 @@ When set to TRUE, this is used to disable the pulldown menu to select Beta/Previ
 
 :::image type="content" source="../mac/images/preferences-for-mau/microsoft-apps-auto-update-preferences.large.png" alt-text="Screenshot of the Preferences pane showing options for Microsoft software updates. It includes an 'Update Channel' dropdown set to 'Current Channel' with text explaining that it provides fully supported updates, and an 'Automatic Updates' section with a checked box stating 'Automatically download and install,' indicating that updates for Microsoft apps are set to install automatically." lightbox="../mac/images/preferences-for-mau/microsoft-apps-auto-update-preferences.large.png":::
 
-### EnableCheckForUpdatesButton
+## EnableCheckForUpdatesButton
 
 When set to FALSE, this disables the option to initiate a check for updates from the MAU GUI.
 
@@ -398,7 +397,7 @@ When set to FALSE, this disables the option to initiate a check for updates from
 :::image type="content" source="../mac/images/preferences-for-mau/microsoft-autoupdate-status.large.png" alt-text="Microsoft AutoUpdate interface on a Mac, displaying a message that 'All apps are up-to-date.' It has a checkbox for 'Automatically keep Microsoft apps up to date' that is unchecked, with buttons for 'Check for Updates' and 'Advanced...' settings visible." lightbox="../mac/images/preferences-for-mau/microsoft-autoupdate-status.large.png":::
 
 
-### ExtendedLogging
+## ExtendedLogging
 
 If set to TRUE, causes verbose logging to be output to MAU log file.
 
@@ -411,7 +410,7 @@ If set to TRUE, causes verbose logging to be output to MAU log file.
 | Accepted Values | TRUE / FALSE / 1 / 0 |
 | Comments | MAU Log will only maintain the last 1MB. Setting this may cause the local log file to lose details. |
 
-### UpdateCheckInterval
+## UpdateCheckInterval
 
 Specifies the number of minutes between checking for updates. Default is set to check every 13 hours.
 
@@ -423,7 +422,7 @@ Specifies the number of minutes between checking for updates. Default is set to 
 | Manageable | Yes |
 | Comments | Defaulted to 13 hours interval.<br>We recommend this number be a multiple of 60 (one hour).<br>Suggest not exceeding 4320 (three days). |
 
-### UpdateCheckFrequency
+## UpdateCheckFrequency
 
 Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its function more accurately. 
 
@@ -436,7 +435,7 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its fu
 | Comments | Deprecated |
 
 
-### UpdateDeadline.ApplicationsForcedUpdateSchedule
+## UpdateDeadline.ApplicationsForcedUpdateSchedule
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
@@ -466,7 +465,7 @@ Example:
 ```
 
 
-### UpdateDeadline.DaysBeforeForcedQuit
+## UpdateDeadline.DaysBeforeForcedQuit
 
 To configure a deadline that is a certain number of days after the update is detected, use the following preference setting.
 
@@ -483,7 +482,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 Here is an example of the promt that's displayed.
 :::image type="content" source="../mac/images/preferences-for-mau/update-deadline-reminder.large.png" alt-text="A Microsoft AutoUpdate reminder pop-up with a date 'Jul 27, 2019'. It informs the user that the admin has set up a deadline for updates and instructs to save data and quit the following apps before the deadline, with the Microsoft Word icon displayed. There are options to 'Snooze' or 'Update' at the bottom of the pop-up." lightbox="../mac/images/preferences-for-mau/update-deadline-reminder.large.png":::
 
-### UpdateDeadline.FinalCountDown
+## UpdateDeadline.FinalCountDown
 
 Number of minutes before the deadline date Forced Update Dialog will be displayed.
 
@@ -500,7 +499,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 Here is an example of the promt that's displayed.
 :::image type="content" source="../mac/images/preferences-for-mau/update-countdown-notice.large.png" alt-text="Close-up of a Microsoft AutoUpdate notification with a countdown timer set to 59 minutes and 53 seconds. The message states, 'Your admin has setup a deadline for the updates' and advises the user to save their data and close the following apps before the deadline, with the Microsoft Word icon shown. The button at the bottom reads 'Quit Apps and Update.'" lightbox="../mac/images/preferences-for-mau/update-countdown-notice.large.png":::
 
-### UpdateDeadline.StartAutomaticUpdates
+## UpdateDeadline.StartAutomaticUpdates
 
 Number of days before forced update date that MAU will treat every update as AutomaticDownload.
 
@@ -516,7 +515,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Manageable | Yes |
 | Comments | Value less than 3 will be treated as 3. Value cannot be bigger than DaysBeforeForcedQuit. |
 
-### UpdateDeadline.DialogTitle
+## UpdateDeadline.DialogTitle
 
 Custom title to be used for showing Forced Update dialogs.
 
@@ -530,7 +529,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Manageable | Yes |
 | Comments | :::image type="content" source="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png" alt-text="A Microsoft AutoUpdate alert with a red box highlighting an important notice that reads 'Your admin has setup a deadline for the updates,' dated 'Jul 27, 2019'. Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons. There are additional snooze options to try again in an hour, 12 hours, tomorrow, or in 2 days." lightbox="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png"::: |
 
-### UpdaterOptimization
+## UpdaterOptimization
 
 Determines whether to optimize for smaller download size (default) or faster background install times for Office App Updates.
 
@@ -542,10 +541,10 @@ Determines whether to optimize for smaller download size (default) or faster bac
 | Type | String |
 | Default Value | Size |
 | Manageable | Yes |
-| Accepted Values | Size / Network / CPU / None |
+| Accepted Values | Size<br>Network<br>CPU<br>None |
 | Comments | Setting this value to None causes Full updaters to be downloaded, impacting network usage.<br>Unless there's a reason to use Full updater, this value should be left empty, or set to Size. |
 
-### GuardAgainstAppModification
+## GuardAgainstAppModification
 
 Setting this to TRUE will keep a clone of an application in cache location at all times.
 
@@ -558,4 +557,4 @@ Needed as some security apps were modifying installed apps under /Applications f
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | Use this if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Office apps. Office app updates usually come through as ‘binary delta’ updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app has been modified by running the following verification from the terminal app. This will fail if the integrity of the application has been compromised:<br><br> `codesign –vv --deep <<path to the app>>` |
+| Comments | Use this if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Microsoft 365 apps. Office app updates usually come through as "binary delta" updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app has been modified by running the following verification from the terminal app. This will fail if the integrity of the application has been compromised:<br><br> `codesign –vv --deep <<path to the app>>` |
