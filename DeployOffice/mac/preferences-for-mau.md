@@ -17,23 +17,13 @@ ms.date: 04/9/2024
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
 
-As an admin for Microsoft 365 Enterprise, you can tailor Microsoft AutoUpdate (MAU) preferences to meet the diverse needs of your users. This article provides an overview of preferences for MAU and helps you understand the documented preferences available.
+Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Office applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
 
 ## What are Preferences for MAU?
 
 Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Office applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
 
 For more detailed information on preferences and their deployment, visit [Deploy preferences for Office for Mac](../mac/update-office-for-mac-using-msupdate.md).
-
-### UpdateCheckInterval
-
-IT Admins shouldn't set the preferences marked as `Manageable == No`.
-
-There are several locations where preferences for MAU are kept. Here are some:
-
-- **User Preference**: `~/Library/Preferences/`
-- **Managed Profile**: `/Library/Managed\ Preferences/`
-- **System Preference**: `/Library/Preferences/`
 
 ### AcknowledgedDataCollectionPolicy
 
@@ -46,7 +36,11 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | Not setting, or setting this policy incorrectly leads to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy <br>• Not offering updates. |
+| Comments | NOT Setting this OR setting this incorrectly will lead to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy <br>• Not offering updates. |
+
+> [!NOTE] 
+> RequiredAndOptionalData is now deprecated.
+
 
 ### HowToCheck
 
@@ -59,7 +53,12 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Default Value | AutomaticDownload |
 | Manageable | Yes |
 | Accepted Values | AutomaticDownload, AutomaticCheck |
-| Comments | Not having this entry, or having an invalid entry reverts MAU to the default "AutomaticDownload" mode.<br>The following values are deprecated:<br>• Manual<br>• Automatic<br>Note: Setting to Manual results in MAU not offering updates automatically. |
+| Comments | Not having this entry, or having an invalid entry will revert MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU will check for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU will check for updates on regular intervals and launch GUI when an available update is found. Update sequence is initiated by the user from the GUI.<br>The following values are deprecated:
+<ul>
+<li>Manual – MAU will not check for updates, apart from self update.</li>
+<li>Automatic – replaced by AutomaticCheck</li>
+</ul><br><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual will result in MAU not offering updates automatically. |
+
 
 ### ChannelName
 
