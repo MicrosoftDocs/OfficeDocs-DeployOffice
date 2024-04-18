@@ -36,7 +36,7 @@ Stores user's choice on data collection policy acknowledgment. This policy helps
 | Default Value | |
 | Manageable | Yes |
 | Accepted Values | RequiredDataOnly |
-| Comments | NOT Setting this OR setting this incorrectly will lead to Microsoft AutoUpdate (MAU):<br>• Repeatedly showing Data Collection policy <br>• Not offering updates. |
+| Comments | NOT Setting this OR setting this incorrectly will lead to Microsoft AutoUpdate (MAU):<br><ul><li>Repeatedly showing Data Collection policy</li><li>Not offering updates.</li></ul> |
 
 > [!NOTE] 
 > RequiredAndOptionalData is now deprecated.
