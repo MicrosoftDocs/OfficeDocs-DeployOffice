@@ -197,7 +197,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
 > [!NOTE]
-> For a list of supported AppIDs, see [Application identifiers](../mac/update-office-for-mac-using-msupdate#application-identifiers.md).
+> For a list of supported AppIDs, see [Application identifiers](../mac/update-office-for-mac-using-msupdate.md#application-identifiers).
 
 | Category | Details |
 | --- | --- |
@@ -301,7 +301,7 @@ Used by Microsoft 365 apps in determining how frequently update ready message ba
 
 Here's an example of the Update Ready message bar in Excel:
 
-:::image type="content" source="../mac/images/preferences-for-mau/excel-update-notification.large.png" alt-text="Interface of Microsoft Excel displaying an 'Update Available' notification indicating that some fixes and improvements are made, with a prompt to restart the app. The Excel workbook shown is named 'Book1' and the sheet 'Sheet1' is visible, currently blank with no data entered." lightbox="../mac/images/preferences-for-mau/excel-update-notification.large.png":::
+:::image type="content" source="../mac/images/preferences-for-mau/excel-update-notification.large.png" alt-text="Interface of Microsoft Excel displaying an 'Update Available' notification indicating that some fixes and improvements are made, with a prompt to restart the app. The Excel workbook shown is named 'Book1' and the sheet 'Sheet1' is visible, currently blank with no data entered." lightbox="../mac/images/preferences-for-mau/excel-update-notification.large.b.png":::
 
 ## AppCustomPref
 
@@ -440,7 +440,7 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its fu
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
-See [Set a deadline for updates from Microsoft AutoUpdate](/DeployOffice/mac/mau-deadline.md) for more details.
+See [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md) for more details.
 
 | Category | Details |
 | --- | --- |
