@@ -197,7 +197,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
 > [!NOTE]
-> For a list of supported AppIDs, see [Application identifiers](https://learn.microsoft.com/en-us/DeployOffice/mac/update-office-for-mac-using-msupdate#application-identifiers).
+> For a list of supported AppIDs, see [Application identifiers](../mac/update-office-for-mac-using-msupdate#application-identifiers.md).
 
 | Category | Details |
 | --- | --- |
@@ -231,7 +231,7 @@ Example:
 
 ## App Domain
 
-Used by MAU to search extra information for update paths. For more information, see [Set Office License Info for updates for Microsoft AutoUpdate](/DeployOffice/mac/mau-set-license-info.md).
+Used by MAU to search extra information for update paths. For more information, see [Set Office License Info for updates for Microsoft AutoUpdate](../mac/mau-set-license-info.md).
 
 | Category | Details |
 | --- | --- |
@@ -309,7 +309,7 @@ Microsoft 365 applications (>= 16.79) write license related information.
 
 MAU uses this information to offer correct product updates.
 
-For more information, see: [Set Office License Info for updates for Microsoft AutoUpdate - Deploy Office | Microsoft Learn](https://learn.microsoft.com/en-us/DeployOffice/mac/mau-set-license-info)
+For more information, see: [Set Office License Info for updates for Microsoft AutoUpdate - Deploy Office | Microsoft Learn](../mac/mau-set-license-info.md)
 
 | Category | Details |
 | --- | --- |
@@ -324,7 +324,7 @@ For more information, see: [Set Office License Info for updates for Microsoft Au
 
 This defines the number of days to wait to offer/install updates after an update is released.
 
-For more information, see: [Microsoft AutoUpdate and Deferred Updates](https://learn.microsoft.com/en-us/DeployOffice/mac/mau-deferred-updates)
+For more information, see: [Microsoft AutoUpdate and Deferred Updates](../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
@@ -340,7 +340,7 @@ For more information, see: [Microsoft AutoUpdate and Deferred Updates](https://l
 
 Dictionary containing individual app deferral days / version.
 
-For more information, see: [Microsoft AutoUpdate and Deferred Updates](/DeployOffice/mac/mau-deferred-updates.md)
+For more information, see: [Microsoft AutoUpdate and Deferred Updates](../mac/mau-deferred-updates.md)
 
 | Category | Details |
 | --- | --- |
@@ -440,7 +440,7 @@ Deprecated. Incorrectly named. Changed to UpdateCheckInterval to describe its fu
 
 Dictionary with a list of dictionary entries specifying forced update schedules for applications. This setting is used to enforce updates by a certain date, ensuring that all devices run the latest software version.
 
-See [Set a deadline for updates from Microsoft AutoUpdate](/deployoffice/mac/mau-deadline.md) for more details.
+See [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md) for more details.
 
 | Category | Details |
 | --- | --- |
@@ -558,4 +558,4 @@ Needed as some security apps were modifying installed apps under /Applications f
 | Default Value | FALSE |
 | Manageable | Yes |
 | Accepted Values | TRUE / FALSE / 1 / 0 |
-| Comments | Use this preference if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Microsoft 365 apps. Office app updates come through as "binary delta" updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app was modified by running the following verification from the terminal app. This fails if the integrity of the application is compromised:<br><br> `codesign –vv --deep <<path to the app>>` |
+| Comments | Use this preference if your organization uses a security app that modifies installed apps. An indication to suspect a security app modifying the installed app would be frequent update failures resulting in full updater downloads for all Microsoft 365 apps. Office app updates come through as "binary delta" updates, where only changed bits are updated. Having a security app that modifies the actual installed application will cause verification failure after each binary delta update, forcing a full updater package download. One can tell if the app was modified by running the following verification from the terminal app. This fails if the integrity of the application is compromised:<br> `codesign –vv --deep <<path to the app>>` |
