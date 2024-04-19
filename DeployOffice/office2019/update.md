@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides IT admins with information on how to update Office 2019."
-ms.date: 03/01/2023
+ms.date: 04/19/2024
 ---
 
 # Update Office 2019 (for IT Pros)
