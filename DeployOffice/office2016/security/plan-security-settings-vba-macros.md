@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how Visual Basic for Applications (VBA) and VBA macro settings control the way VBA and VBA macros behave in Office."
-ms.date: 1/03/2024
+ms.date: 04/19/2024
 ---
 
 # Plan security settings for VBA macros in Office 2016

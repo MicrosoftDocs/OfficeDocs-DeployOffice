@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: Tier2
 description: "Provides IT admins with an overview of the new features and capabilities in Office 2016."
-ms.date: 03/19/2024
+ms.date: 04/19/2024
 ---
 
 # What's new for admins in Office 2016
