@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
-ms.date: 03/01/2023
+ms.date: 04/19/2024
 ---
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
@@ -35,7 +35,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
 - A separate user account for each user who signs in to the shared computer.
 - An [eligible license assigned](/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
-- A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-5dcqxz4).
+- A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oc60f6).
 - Reliable connectivity between the shared computer and the internet.
 
 > [!NOTE]
@@ -51,7 +51,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 > - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
 > - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
 
-In this scenario, you install Microsoft 365 Apps on a computer configured as a Remote Desktop Session Host server. This enables multiple users to connect remotely to this computer. The users can each run Office programs, such as Word or Excel, at the same time. The overall process is the same for the Project and Visio desktop apps.
+In this scenario, you install Microsoft 365 Apps on a computer configured as a Remote Desktop Session Host server, allowing multiple users to connect remotely. Each user can simultaneously run Microsoft 365 programs like Word or Excel. The process is identical for Project and Visio desktop apps.
 
 Here are the basic steps of how to install Microsoft 365 Apps on an RDS server:
 
@@ -59,7 +59,7 @@ Here are the basic steps of how to install Microsoft 365 Apps on an RDS server:
 
 2. Install and configure the Remote Desktop Session Host role service.
 
-    For example, [follow these steps to install RD Session Host](/windows-server/remote/remote-desktop-services/rds-deploy-infrastructure) on Windows Server.
+    For example, [follow these steps to install Remote Desktop Session Host](/windows-server/remote/remote-desktop-services/rds-deploy-infrastructure) on Windows Server.
 
     For users to be able to connect remotely to the server to use Microsoft 365 Apps, their accounts must be members of the Remote Desktop Users group on the RD Session Host server.
 
@@ -80,7 +80,7 @@ At this point, users can connect to the RD Session Host server and use Microsoft
 ## Install Microsoft 365 Apps on a shared virtual machine
 <a name="VM"> </a>
 
-In this scenario, you install Microsoft 365 Apps as part of a client operating system image, such as one running Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines can be shared by multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
+In this scenario, you install Microsoft 365 Apps as part of a client operating system image, such as one running Windows 10. Then, you use RDS and Hyper-V to create a group of virtual machines based on that image. These virtual machines are shared with multiple users. In RDS, this is known as either a virtual desktop pool or a pooled virtual desktop collection, depending on which version of RDS that you're using.
 
 > [!NOTE]
 > You can also use RDS to assign a virtual machine to a specific user. RDS calls that a personal virtual desktop. In that scenario, you don't use shared computer activation, because the virtual machine isn't shared among multiple users. 
@@ -103,7 +103,7 @@ Here are the basic steps of how to configure RDS to deploy Microsoft 365 Apps on
 
     For example, [follow these steps to deploy a virtual desktop collection](/windows-server/remote/remote-desktop-services/rds-create-collection) on Windows Server.
 
-After you've completed all the RDS configuration steps, users can connect to any of the virtual machines and run Microsoft 365 Apps.
+After you complete all the RDS configuration steps, users can connect to any of the virtual machines and run Microsoft 365 Apps.
 
 ## Related articles
 <a name="VM"> </a>
