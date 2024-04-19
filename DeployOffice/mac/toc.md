@@ -18,7 +18,7 @@
 ### [Update history](/officeupdates/update-history-office-for-mac)
 
 ## Microsoft AutoUpdate (MAU)
-### [Configure preferences](mau-preferences)
+### [Configure preferences](mau-preferences.md)
 ### [Deferred updates](mau-deferred-updates.md)
 ### [Release history](/officeupdates/release-history-microsoft-autoupdate)
 ### [Set a deadline](mau-deadline.md)
