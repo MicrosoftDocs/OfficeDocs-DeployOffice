@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Identify installed languages, and add or remove Office 2016 language packs by modifying an existing installation or by deploying them as separate products."
-ms.date: 1/03/2024
+ms.date: 04/19/2024
 ---
 
 # Add or remove language packs after deployment of Office 2016

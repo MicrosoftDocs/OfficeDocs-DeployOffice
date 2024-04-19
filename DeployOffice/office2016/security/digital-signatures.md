@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents. Additionally, determine how to select the appropriate certificates for your deployment."
-ms.date: 1/03/2024
+ms.date: 04/19/2024
 ---
 
 # Use digital signatures with Office 2016

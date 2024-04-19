@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Identify the companion proofing languages that are included with Office 2016."
-ms.date: 1/03/2024
+ms.date: 04/19/2024
 ---
 
 # Companion proofing languages for Office 2016
@@ -19,7 +19,7 @@ ms.date: 1/03/2024
  
 Each language version of Office 2016 includes proofing tools for a set of companion languages. For example, when you deploy the English version of an Office 2016 product, users receive proofing tools for both Spanish and French in addition to English. 
   
-Proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as Language AutoDetect, AutoSummarize, and Intelligent AutoCorrect.
+Proofing tools include spelling and grammar checkers, thesauruses, and hyphenators. They might also include language-specific editing features such as `Language AutoDetect`, `AutoSummarize`, and `Intelligent AutoCorrect`.
   
 Depending on the number of user interface languages that you want to deploy and the included companion proofing languages, Office 2016 Language Packs might provide all the proofing tools that you want. For more information about Office 2016 Language Packs, see [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md).
   
@@ -51,7 +51,7 @@ The following table lists companion proofing languages for each primary language
 |German  <br/> |German, English, French, Italian  <br/> |
 |Greek  <br/> |Greek, English, French, German  <br/> |
 |Hebrew  <br/> |Hebrew, English, French, Arabic, Russian  <br/> |
-|Hindi  <br/> |Hindi, English, Tamil, Telegu, Marathi, Kannada, Gujarati, Punjabi, Urdu  <br/> |
+|Hindi  <br/> |Hindi, English, Tamil, Telugu, Marathi, Kannada, Gujarati, Punjabi, Urdu  <br/> |
 |Hungarian  <br/> |Hungarian, English, German  <br/> |
 |Indonesian  <br/> |Indonesian, English  <br/> |
 |Italian  <br/> |Italian, English, French, German  <br/> |

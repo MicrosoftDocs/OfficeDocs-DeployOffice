@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn how to customize languages for Office 2016."
-ms.date: 12/01/2023
+ms.date: 04/19/2024
 ---
 
 # Customize language setup and settings for Office 2016
