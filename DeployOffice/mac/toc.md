@@ -2,6 +2,7 @@
 
 ## [Deployment guide](deployment-guide-for-office-for-mac.md)
 ## [Overview of Office for Mac](overview.md)
+## [Privacy controls](../privacy/mac-privacy-preferences.md)
 
 ## Activate
 ### [Overview](overview-of-activation-for-office-for-mac.md)
@@ -32,8 +33,6 @@
 ### [Macro security](set-preference-macro-security-office-for-mac.md)
 ### [Outlook preferences](preferences-outlook.md)
 ### [Suite preferences](preferences-office.md)
-
-## [Privacy controls](../privacy/mac-privacy-preferences.md)
 
 ## Related articles
 ### [Network requests](/microsoft-365/enterprise/network-requests-in-office-2016-for-mac)
