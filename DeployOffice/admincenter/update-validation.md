@@ -62,15 +62,16 @@ For a status of yellow or red, the admin can review the list of devices and see 
 <!--Using include for adding requirements-->
 [!INCLUDE [License requirements](./includes/requirements-licenses.md)]
 
-## How to enable update validation
-To use update validation, the following requirements must be met:
+### Additional requirements
+The following additional requirements must be met:
 - Devices must be managed via cloud update.
 - Diagnostic data must be turned on for your devices.
 - Devices must be on Monthly Enterprise Channel.
 - You must configure and implement rollout waves.
 - A period of seven days must be set between wave one and wave two rollouts.
 
-Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
+## How to enable update validation
+Configure [custom waves](cloud-update.md#rollout-waves) for cloud update. The first wave will be automatically set to a seven day delay and update validation enabled. Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including  add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
 
 ## How to disable update validation
 In case you want to disable update validation, your options are:
