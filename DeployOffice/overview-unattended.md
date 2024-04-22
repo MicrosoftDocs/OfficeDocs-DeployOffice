@@ -2,7 +2,7 @@
 title: "Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise"
 ms.author: nwhite
 author: nicholasswhite
-manager: dougebyu
+manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
