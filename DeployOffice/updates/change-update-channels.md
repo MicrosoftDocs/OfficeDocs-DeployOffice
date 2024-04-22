@@ -107,7 +107,7 @@ If you prefer watching over reading, view [How to trigger an update channel chan
 
 Here are the steps for changing the update channel to Current Channel or Monthly Enterprise Channel:
 
-1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admincenter/overview.md#how-to-get-to-the-admin-center) for eligible admin roles.
+1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admincenter/overview.md#requirements) for eligible admin roles.
 1. Navigate to **Inventory**, select **Show all devices** and then the **Switch device update channel** button on the top.
 1. Select which devices should be moved and the targeted update channel.
     - You can enter device names or Microsoft Entra ID groups, or a mix of both.

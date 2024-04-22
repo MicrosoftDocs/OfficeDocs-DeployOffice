@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides IT admins with an overview of deploying Office 2019."
-ms.date: 03/01/2023
+ms.date: 04/19/2024
 ---
 
 # Overview of Office 2019 (for IT Pros)

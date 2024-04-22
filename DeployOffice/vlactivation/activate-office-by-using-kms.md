@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 03/01/2023
+ms.date: 04/19/2023
 ---
 
 # Activate volume licensed versions of Office by using KMS
@@ -18,15 +18,15 @@ ms.date: 03/01/2023
 
 All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled. GVLKs support both Key Management Service (KMS) and Active Directory-based activation. On the KMS host computer configured to support volume activation of Office, you install and enable only one KMS host key to activate all volume licensed versions of Office.
   
-If the KMS host computer is available and properly configured, activation of Office occurs transparently to the user. Office is activated the first time it runs, provided that there have been at least four previous activation requests to the KMS host computer. This is because the KMS host computer requires at least five requests before it begins activating clients.
+If the KMS host computer is available and properly configured, activation of Office occurs transparently to the user. Office is activated the first time it runs, provided that there are at least four previous activation requests to the KMS host computer. This is because the KMS host computer requires at least five requests before it begins activating clients.
   
 You don't have to do anything else to enable activation of Office by KMS. KMS clients can locate a KMS host computer automatically by querying DNS for service (SRV) resource records (RRs) that publish the KMS service. For more information, see [How DNS is used to find a KMS host computer](configure-dns-to-activate-office-by-using-kms.md#how-dns-is-used-to-find-a-kms-host-computer).
 
-If the network environment does not use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
+If the network environment doesn't use SRV RRs, you can manually assign a KMS client to use a specific KMS host computer by configuring the HKEY_LOCAL_MACHINE\\Software\\Microsoft\\OfficeSoftwareProtectionPlatform registry key on the KMS client. The KMS host computer name is specified by KeyManagementServiceName (REG_SZ), and the port is specified by KeyManagementServicePort (REG_SZ). The default port is 1688. These registry keys can also be set by using ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
 ## Configure KMS host caching
 
-You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer is not cached, the KMS client will query DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client won't query DNS and instead will attempt to contact the cached KMS host computer that last resulted in successful activation.
+You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer isn't cached, the KMS client queries DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client won't query DNS. Instead, it tries to contact the cached KMS host computer that last activated it successfully.
 
 To configure KMS host caching, you can use the ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
@@ -50,9 +50,9 @@ The following table describes the license state of the Office with respect to ac
 
 |**License state**|**Description**|
 |:-----|:-----|
-|Licensed  |By default, the KMS client requests activation with the KMS host computer one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> <br/>After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users do not see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the user.  |
-|Out-of-tolerance  |If activation does not occur during the 180-day period, Office goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  |
-|Unlicensed notification  |If activation does not occur during the out-of-tolerance state, Office goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  |
+|Licensed  |By default, the KMS client requests activation with the KMS host computer one time every seven days. (The number of days is configurable.) This design allows the maximum possible time for the client to be in the licensed state.  <br/> <br/>After the client is successfully activated, it remains in the licensed state for 180 days. When in the licensed state, users don't see any notification dialog boxes prompting them to activate the client. After 180 days, the activation attempt process resumes. If activation is continually successful, the whole activation experience is transparent to the user.  |
+|Out-of-tolerance  |If activation doesn't occur during the 180-day period, Office goes into the out-of-tolerance state for 30 days. Users then see notifications that request activation.  |
+|Unlicensed notification  |If activation doesn't occur during the out-of-tolerance state, Office goes into the unlicensed notification state. Users then see notifications that request activation and a red title bar.  |
 
 You can use the ospp.vbs script with the /dstatusall option to check the license state for all Office clients. Or, use the /dstatus option to check the status of the local client. For more information about using the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   

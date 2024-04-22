@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/24/2023
+ms.date: 04/18/2023
 ---
 
 # Overview of optional connected experiences in Office
@@ -37,6 +37,8 @@ Bing powers the following experiences in Outlook for iOS and Android:
 - **Interesting Calendars:**   You can [subscribe](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) to calendars about your favorite sports teams or TV shows.
 - **Travel time in Up Next:** Your next upcoming event is summarized at the top of your email inbox in a card called [Up Next](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). In Outlook for Android, this experience requires Bing Maps to provide estimated travel time.
 - **Weather on calendar:** The [weather forecast](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) for your current location appears at the top of your calendar screen.
+
+Also, the search experience on the [support.microsoft.com](https://support.microsoft.com) website uses Bing Search APIs. When you do a search on the [support.microsoft.com](https://support.microsoft.com) website, your search query is sent to Bing and Bing returns the results.
 
  These experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [privacy statement](https://privacy.microsoft.com/privacystatement). Any search queries you provide to the Microsoft 365 Apps for enterprise organization while using these services are sent to Microsoft Bing. They aren't linked to you by the Bing organization.
 
