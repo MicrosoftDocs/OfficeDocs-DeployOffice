@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 01/05/2024
+ms.date: 04/22/2024
 ---
 
 # Update validation
@@ -45,15 +45,33 @@ Update validation is automatically enabled once custom rollout waves are configu
 
 For a status of yellow or red, the admin can review the list of devices and see which device, add-in/app, and health metric caused the given assessment.
 
-## How to enable update validation
-To use update validation, the following requirements must be met:
+## Requirements
+
+### Supported built-in admin roles
+
+<!--Using include for adding requirements-->
+[!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
+
+### Licensing requirements
+
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
+
+### Product version requirements
+
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
+
+### Additional requirements
+The following additional requirements must be met:
 - Devices must be managed via cloud update.
 - Diagnostic data must be turned on for your devices.
 - Devices must be on Monthly Enterprise Channel.
 - You must configure and implement rollout waves.
 - A period of seven days must be set between wave one and wave two rollouts.
 
-Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including various add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
+## How to enable update validation
+Configure [custom waves](cloud-update.md#rollout-waves) for cloud update. The first wave will be automatically set to a seven day delay and update validation enabled. Ensure that wave one devices offer a diverse representation of your organization’s departments and usage scenarios, including  add-ins. This diverse representation promotes early issue detection and timely resolution, further minimizing potential risks.
 
 ## How to disable update validation
 In case you want to disable update validation, your options are:
