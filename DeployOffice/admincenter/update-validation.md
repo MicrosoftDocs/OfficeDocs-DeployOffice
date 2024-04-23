@@ -60,7 +60,7 @@ For a status of yellow or red, the admin can review the list of devices and see 
 ### Product version requirements
 
 <!--Using include for adding requirements-->
-[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
+[!INCLUDE [License requirements](./includes/requirements-versions.md)]
 
 ### Additional requirements
 The following additional requirements must be met:
