@@ -1109,7 +1109,8 @@
       "source_path": "DeployOffice/deploy-office-content-updates.md",
       "redirect_url": "/deployoffice/index.yml",
       "redirect_document_id": false
-    } 
+    },
+    { 
       "source_path": "DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps.md",
       "redirect_url": "/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash",
       "redirect_document_id": false
