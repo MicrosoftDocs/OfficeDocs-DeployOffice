@@ -156,10 +156,9 @@ If you don't want your users to see this **Required Data Notice** dialog for Mic
 |**Key**  | `AcknowledgedDataCollectionPolicy`  |
 |**Data Type**  | String |
 |**Possible values**  | `RequiredDataOnly` <br/> `RequiredAndOptionalData`|
-|**Availability** |4.12 - 4.69 for RequiredDataOnly and RequiredAndOptionalData <br/> 4.70 and later for RequiredDataOnly|
+|**Availability** |4.12 - 4.69 for `RequiredDataOnly` and `RequiredAndOptionalData` <br/> 4.70 and later for `RequiredDataOnly`|
 
 If you let your users see this dialog, then when the user chooses **OK**, the value `RequiredDataOnly` is written to `AcknowledgedDataCollectionPolicy` and the dialog isn't shown to the user again.
-
 
 ## Related articles
 
