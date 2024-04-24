@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 03/22/2024
+ms.date: 04/24/2024
 ---
 
 # Enabling and configuring Cloud Update
@@ -53,7 +53,7 @@ Estimate network impact by reviewing the [number of devices on an outdated relea
 Updates downloaded from Office CDN use [Delivery Optimization](/windows/deployment/do/waas-delivery-optimization), reducing network impact through peer-to-peer file sharing. If Configuration Manager is in use, consider enabling [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) for centralized caching. If Delivery Optimization is disabled, we recommend enabling it to benefit Microsoft 365 Apps, Windows, Teams, Edge, and Windows Store Apps.
 
 ### Exclusions
-To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices and/or users to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). See [Requirements for using Microsoft Entra groups](../admincenter/cloud-update.md#requirements-for-using-microsoft-entra-groups) for more details. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
+To exclude devices from cloud update, add Microsoft Entra or hybrid joined devices and/or users to an [Microsoft Entra ID group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). See [Requirements for using Microsoft Entra groups](../admincenter/cloud-update.md#microsoft-entra-groups-requirements) for more details. Common devices often excluded include Remote Desktop Service Hosts and non-persistent virtual machines.
 
 ### Requirements and permissions
 Ensure your devices meet the [requirements](../admincenter/cloud-update.md#requirements) for using cloud update. [Network connectivity](../admincenter/cloud-update.md#network-requirements) from your devices to the Microsoft 365 Apps admin center is necessary. The [Office Apps admin role](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) is recommended due to its restrictive permissions that still allow cloud update configuration and enablement.
@@ -72,9 +72,9 @@ Once enabled, it's recommended to review and modify the configuration to fit you
 
 ### Global Settings
 Navigate to **Cloud Update** > **Overview** and select the **Tenant Settings** tab.
-- **Exclusion windows**: Set up necessary [exclusion windows](../admincenter/cloud-update.md#exclusion-windows) during which no updates are deployed. These windows can be scoped to a group of devices or users. [Requirements](../admincenter/cloud-update.md#requirements-for-using-microsoft-entra-groups) for using Microsoft Entra groups apply.
+- **Exclusion windows**: Set up necessary [exclusion windows](../admincenter/cloud-update.md#exclusion-windows) during which no updates are deployed. These windows can be scoped to a group of devices or users. [Requirements](../admincenter/cloud-update.md#microsoft-entra-groups-requirements) for using Microsoft Entra groups apply.
 
-- **Exclude groups**: Configure your [exclusions](../admincenter/cloud-update.md#exclude-groups). Those devices or user objects will always be excluded from cloud update. [Requirements](../admincenter/cloud-update.md#requirements-for-using-microsoft-entra-groups) for using Microsoft Entra groups apply.
+- **Exclude groups**: Configure your [exclusions](../admincenter/cloud-update.md#exclude-groups). Those devices or user objects will always be excluded from cloud update. [Requirements](../admincenter/cloud-update.md#microsoft-entra-groups-requirements) for using Microsoft Entra groups apply.
 
 ### Current Channel settings
 Navigate to **Cloud Update** > **Current** and select the **Settings** tab.
