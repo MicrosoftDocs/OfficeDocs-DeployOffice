@@ -34,7 +34,7 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 <!--Using include for adding requirements-->
 [!INCLUDE [Version requirements](./includes/requirements-versions.md)]
 > [!NOTE]
-> The dashboard might show insights for unsupported versions, but those versions aren't officially supported and should be updated as soon as possible. Use [inventory](/inventory.md) to identify devices running unsupported versions.
+> The dashboard might show insights for unsupported versions, but those versions aren't officially supported and should be updated as soon as possible. Use [inventory](inventory.md) to identify devices running unsupported versions.
 
 ### Network requirements
 <!--Using include for adding requirements-->
