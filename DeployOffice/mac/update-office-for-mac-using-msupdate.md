@@ -18,7 +18,7 @@ ms.date: 10/16/2023
 
 Microsoft AutoUpdate (MAU) version 3.18 and later includes the msupdate command-line tool. The msupdate tool can be used to start the update process for Microsoft applications produced for Mac, such as Office. The tool is primarily designed to give IT administrators more precise control over when updates are applied. You can download the latest version of MAU from [this link](https://go.microsoft.com/fwlink/p/?linkid=830196).
 
-msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you may see a privacy prompt when running msupdate for the first time. If you're using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to pre-approve access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
+msupdate works by using native XPC to communicate with the MAU daemon. On macOS 10.14 Mojave and later, you might see a privacy prompt when running msupdate for the first time. If you're using an enterprise management tool such as Jamf Pro, you should deploy a Privacy Preferences Policy Control (PPPC) payload to preapprove access. Samples of such a payload can be downloaded from [GitHub](https://github.com/pbowden-msft/MobileConfigs/tree/master/Jamf-MSUpdate).
 
 Use the following steps to start using the tool:
 1. Open the Terminal application
@@ -67,24 +67,26 @@ The following options are displayed:
 ## Application identifiers
 The following table lists the Microsoft applications for Mac supported by MAU. The identifier is used when specifying the `--apps` parameter. When specifying multiple applications on the command-line, separate identifiers with a space.
 
-| Application          |Identifier |
-|:----------------------|:-----------|
-|Word           |MSWD2019|
-|Excel          |XCEL2019|
-|PowerPoint     |PPT32019|
-|Outlook        |OPIM2019|
-|OneNote        |ONMC2019|
-|MAU              |MSau04|
-|OneDrive  |ONDR18|
-|Teams 1.0 classic  |TEAMS10|
-|Teams 2.1 |TEAMS21|
-|Skype for Business |MSFB16|
-|Remote Desktop         |MSRD10|
-|Intune Company Portal  |IMCP01|
-|Microsoft Defender for Endpoint  |WDAV00|
-|Microsoft Defender for Consumers  |WDAVCONSUMER|
-|Microsoft Defender Shim |WDAVSHIM|
-|Licensing helper tool|OLIC02|
+| Application                          | Identifier        |
+|:-------------------------------------|:------------------|
+| Excel                                | XCEL2019          |
+| Intune Company Portal                | IMCP01            |
+| Licensing helper tool                | OLIC02            |
+| MAU                                  | MSau04            |
+| Microsoft Defender for Consumers     | WDAVCONSUMER      |
+| Microsoft Defender for Endpoint      | WDAV00            |
+| Microsoft Defender Shim              | WDAVSHIM          |
+| OneDrive                             | ONDR18            |
+| OneNote                              | ONMC2019          |
+| Outlook                              | OPIM2019          |
+| PowerPoint                           | PPT32019          |
+| Quick Assist                         | MSQA01            |
+| Remote Desktop                       | MSRD10            |
+| Remote Help                          | MSRH01            |
+| Skype for Business                   | MSFB16            |
+| Teams 1.0 classic                    | TEAMS10           |
+| Teams 2.1                            | TEAMS21           |
+| Word                                 | MSWD2019          |
 
 > [!NOTE]
 > - The identifiers for the Office apps, such as Word and Outlook, can be used for the following versions:
