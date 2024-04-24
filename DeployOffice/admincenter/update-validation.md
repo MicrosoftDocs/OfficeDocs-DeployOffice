@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 04/22/2024
+ms.date: 04/24/2024
 ---
 
 # Update validation
@@ -60,7 +60,7 @@ For a status of yellow or red, the admin can review the list of devices and see 
 ### Product version requirements
 
 <!--Using include for adding requirements-->
-[!INCLUDE [License requirements](./includes/requirements-versions.md)]
+[!INCLUDE [Version requirements](./includes/requirements-versions.md)]
 
 ### Additional requirements
 The following additional requirements must be met:
