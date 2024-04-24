@@ -8,7 +8,7 @@ ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
 ms.date: 04/24/2024
 ---
-<!--This file is shared by update-validation.md, cloud-update.md, inventory.md, overview.md. Headings are driven by article context.-->
+<!--This file is shared by update-validation.md, cloud-update.md, inventory.md, overview.md, overview-cloud-policy.md. Headings are driven by article context.-->
 Using [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) is supported under the following conditions:
 
 - Both **device objects** and **user objects** can be used and also added to the same group.
