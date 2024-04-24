@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 04/08/2024
+ms.date: 04/24/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -33,62 +33,27 @@ Cloud update provides a modern update management solution for Microsoft 365 Apps
 
 ## Requirements
 
-### Built-in roles for managing cloud update
-
-You can use any of the following Microsoft Entra built-in roles to enable and manage cloud update:
-
-| Role                       | Description       |
-| -------------------------- | ----------------- |
-| Global Administrator       | This role can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.
-| Security Administrator     | This role can read security information and reports and manage configuration in Microsoft Entra ID and Office 365.
-| Office Apps Administrator (**Recommended**) | This role can manage Office apps cloud services, including policy and settings management, and manage the ability to select, unselect, and publish 'what's new' feature content to end-user's devices.
-
-> [!NOTE]
-> Global Reader is another built-in role supported by the Microsoft 365 Apps admin center, but it does not support accessing cloud update.
+### Supported built-in admin roles
+<!--Using include for adding requirements-->
+[!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
 ### Licensing requirements
-
-Cloud update supports the following subscription plans:
-
-| Type       | Subscription Plan |
-| ---------- | ----------------- |
-| Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li>
-| Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li>
-| Enterprise | <li>Microsoft 365 E3</li><li>Microsoft 365 E5</li>
-
-> [!IMPORTANT]
-> Cloud update is not available to customers who have the following plans:
->- Microsoft 365 operated by 21Vianet
->- Microsoft 365 GCC
->- Microsoft 365 GCC High and DoD
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
 
 ### Product version requirements
-
-Cloud update can manage Microsoft 365 Apps on Windows with the following version requirements:
-
-- [Supported version of Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
-- [Supported version of Microsoft Windows 10/11](/windows/release-health/supported-versions-windows-client)
-- [Supported version of Windows Server that supports Microsoft 365 Apps](../endofsupport/windows-server-support.md)
+<!--Using include for adding requirements-->
+[!INCLUDE [Version requirements](./includes/requirements-versions.md)]
 
 ### Network requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
-Devices running Microsoft 365 Apps require access to the following endpoints:
+### Microsoft Entra groups requirements
+Cloud update has multiple features that support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups).
 
-| Microsoft service | URLs required on allowlist |
-| ----------------- | -------------------------- |
-| Cloud Update      | <li>login.live.com</li><li>\*.config.office.com</li><li>\*.config.office.net</li>
-| Office Content Delivery Network (CDN)        | <li>officecdn.microsoft.com</li><li>officecdn.microsoft.com.edgesuite.net</li><li>otelrules.azureedge.net</li>
-
-  Source: [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-
-### Requirements for using Microsoft Entra groups
-
-Cloud update has multiple features that support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups). In all cases, the membership of these groups supports user and/or device objects with the following requirements:
-
-- **Device objects** must be Microsoft Entra joined or hybrid joined.
-- **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
-- Multiple groups can be used, but a single group should contain no more than 20,000 objects.
-- Nested groups supports up to three levels deep.
+<!--Using include for adding requirements-->
+[!INCLUDE [Groups requirements](./includes/requirements-groups.md)]
 
 ## Getting started with cloud update
 
@@ -201,7 +166,7 @@ Exclusion windows is a feature that enables you to limit change in your environm
 - You can set an exclusion window for specific devices or users in a Microsoft Entra group. Only these specified devices or users are excluded from updates, while all other devices follow their regular update schedule.
 - Update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
 - Consider adding a buffer when scheduling a start and end date to accommodate UTC. If a device received the update policy before the exclusion window applies, it continues with the update installation.
-- Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 
 To create and manage an exclusion window, follow these steps:
 
@@ -220,7 +185,7 @@ To create and manage an exclusion window, follow these steps:
 
 Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude one or more devices. For example, you might need to move a device to an update channel that isn't currently available with cloud update. Keep these points in mind when using exclude groups:
 
-- Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
 - Excluded devices are reflected in your [device inventory](https://config.office.com/officeSettings/inventory/devices) within 24 hours. You can confirm a device was excluded by reviewing the **Cloud Update Status** column.
 - Once a device is marked as excluded, the service attempts to send an offboard notification to the device. If you plan to manage the device with a different tool, you can change the following registry value to regain control sooner:
@@ -248,7 +213,7 @@ Devices managed by the Monthly Enterprise Channel profile can use rollout waves.
 
 Rollout waves let you configure custom waves for your update rollout. For example, you might have a group of early adopters that volunteer to receive changes first, while users in your finance department prefer to get their updates last. Keep these points in mind when using rollout waves:
 
-- Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - You don't need to include every user or device in a custom rollout wave. A final wave is included by default that includes all remaining devices in the Monthly Enterprise profile.
 - You can configure a delay between waves ranging from 1-5 days.
 - If [update validation]() is enabled, wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
@@ -346,7 +311,7 @@ Updates applied outside of a custom rollout wave are due to external actions occ
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
 
 ## Report a problem
 

@@ -6,8 +6,9 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
-ms.date: 04/17/2024
+ms.date: 04/24/2024
 ---
+<!--This file is shared by cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md, overview-cloud-policy.md. Headings are driven by article context.-->
 Devices running Microsoft 365 Apps require access to the following endpoints:
 
 | Microsoft service | URLs required on allowlist |

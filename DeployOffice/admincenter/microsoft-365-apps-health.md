@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
-ms.date: 02/27/2024
+ms.date: 04/24/2024
 ---
 
 # Microsoft 365 Apps health
@@ -20,20 +20,25 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 > [!TIP]
 > If you prefer watching over reading, check out the our [introductional video on Apps Health](https://youtu.be/g9tiCFNDOEw).
 
+## Requirements
 
-## Requirements for using Microsoft 365 Apps health
-- Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 1908 or later
-- A version of Windows 11 or Windows 10 supported by Microsoft 365 Apps
-- Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan
+### Supported built-in admin roles
+<!--Using include for adding requirements-->
+[!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
-> [!IMPORTANT]
-> Microsoft 365 Apps health isn't available to customers who have the following plans:
->- Office 365 operated by 21Vianet
->- Office 365 GCC
->- Office 365 GCC High and DoD
+### Licensing requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
 
+### Product version requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Version requirements](./includes/requirements-versions.md)]
 > [!NOTE]
-> The dashboard might show insights for versions older than 1908, but those versions aren't officially supported.
+> The dashboard might show insights for unsupported versions, but those versions aren't officially supported and should be updated as soon as possible. Use [inventory](inventory.md) to identify devices running unsupported versions.
+
+### Network requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 ## How to get to the health dashboard
 
