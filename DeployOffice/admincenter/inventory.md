@@ -41,7 +41,7 @@ From the **Inventory** page, you can drill down to see detailed information abou
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 ### Microsoft Entra groups requirements
-The feature to [switch device update channels](#Switch-device-update-channel) supports using [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups).
+The feature to [switch device update channels](#switch-device-update-channel) supports using [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups).
 
 <!--Using include for adding requirements-->
 [!INCLUDE [Groups requirements](./includes/requirements-groups.md)]
@@ -162,6 +162,6 @@ Devices send a heartbeat once a day to the inventory. A device doesn't send a he
 
 ## Missing or duplicate devices
 
-If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
+If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements).
 
 In a few cases, some devices might appear more than once in the inventory. This duplication mainly occurs with nonpersisted VDI environments. These duplicate entries are removed automatically each day.
