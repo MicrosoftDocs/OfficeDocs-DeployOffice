@@ -166,7 +166,7 @@ Exclusion windows is a feature that enables you to limit change in your environm
 - You can set an exclusion window for specific devices or users in a Microsoft Entra group. Only these specified devices or users are excluded from updates, while all other devices follow their regular update schedule.
 - Update exclusions start and end at 00:00 UTC on the specified dates, not local device time.
 - Consider adding a buffer when scheduling a start and end date to accommodate UTC. If a device received the update policy before the exclusion window applies, it continues with the update installation.
-- Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Exclusion windows supports groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 
 To create and manage an exclusion window, follow these steps:
 
@@ -185,7 +185,7 @@ To create and manage an exclusion window, follow these steps:
 
 Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude one or more devices. For example, you might need to move a device to an update channel that isn't currently available with cloud update. Keep these points in mind when using exclude groups:
 
-- Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
 - Excluded devices are reflected in your [device inventory](https://config.office.com/officeSettings/inventory/devices) within 24 hours. You can confirm a device was excluded by reviewing the **Cloud Update Status** column.
 - Once a device is marked as excluded, the service attempts to send an offboard notification to the device. If you plan to manage the device with a different tool, you can change the following registry value to regain control sooner:
@@ -213,7 +213,7 @@ Devices managed by the Monthly Enterprise Channel profile can use rollout waves.
 
 Rollout waves let you configure custom waves for your update rollout. For example, you might have a group of early adopters that volunteer to receive changes first, while users in your finance department prefer to get their updates last. Keep these points in mind when using rollout waves:
 
-- Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#requirements-for-using-microsoft-entra-groups) for cloud update.
+- Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - You don't need to include every user or device in a custom rollout wave. A final wave is included by default that includes all remaining devices in the Monthly Enterprise profile.
 - You can configure a delay between waves ranging from 1-5 days.
 - If [update validation]() is enabled, wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
@@ -311,7 +311,7 @@ Updates applied outside of a custom rollout wave are due to external actions occ
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#requirements-for-using-microsoft-entra-groups).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
 
 ## Report a problem
 
