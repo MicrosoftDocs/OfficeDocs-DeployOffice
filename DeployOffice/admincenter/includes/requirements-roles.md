@@ -8,7 +8,7 @@ ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
 ms.date: 04/23/2024
 ---
-<!--This file is shared by cloud-update.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md. Headings are driven by article context.-->
+<!--This file is shared by cloud-update.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md. Headings are driven by article context.-->
 You can use the following built-in Microsoft Entra roles for accessing and managing the feature:
 
 | Role                       | Description       |
