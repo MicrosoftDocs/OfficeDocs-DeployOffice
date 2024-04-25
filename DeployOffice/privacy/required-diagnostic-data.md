@@ -6045,6 +6045,7 @@ The following fields are collected:
 
 - **LifecycleEvent** - Indicates the type of application lifecycle event.
 
+- **VisionOSCompatibilityMode** - flag that determines whether the app is running in VisionOS compatibility mode or not.
 
 #### Office.Fluid.LoopMobile.UserAction.FRE
  
@@ -13900,6 +13901,8 @@ The following fields are collected:
 
 
 #### Office.Apple.MetricKit.CrashDiagnostic
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
  
 The event is triggered when Office apps crash. The data is used to get additional crash information that helps with fixing bugs and keep Office apps secure and performing as expected.
 
@@ -16073,6 +16076,12 @@ The following fields are collected:
 
 - **DocSyncBackedType** - When opening a document, an indicator as to the type of document (local or service based)
 
+- **DurationPreloading** - The duration in microseconds from when the process was created by the operating system to when preloading completes and the app sits and waits for activation by the user.
+
+- **DurationPreloadingActivation** - The duration in microseconds from when the user activates a preloaded app to when the boot activity completes.
+
+- **DurationPreloadingWaitLoop** - The duration in microseconds that the app sits waiting for activation by the user after preloading.
+
 - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
 - **Embedding** – Whether the app was opened for OLE embedding.
@@ -16108,6 +16117,10 @@ The following fields are collected:
 - **OtherTransferCount** – The number of bytes transferred during operations other than read and write operations. (Windows only)
 
 - **PageFaultCount** – The number of page faults for the process. (Windows only)
+
+- **PreloadingResult** - Succeeded if a preloaded app eventually was booted by the user. A failure reason otherwise.
+
+- **PreloadingWorkingSetMB** - The amount of memory in the process's working set during the preloading and wait phase.
 
 - **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
 
@@ -17541,6 +17554,8 @@ The following fields are collected:
 - **Data_Error** - We collect a string representing an error code.
 
 #### Office.Apple.MetricKit.AppLaunchDiagnostic
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
  
 The event is triggered when Office apps have issues when launching. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
 
@@ -17551,6 +17566,8 @@ The following fields are collected:
 - **LaunchDurationMS** - Indicates the time it took for the app to launch.
 
 #### Office.Apple.MetricKit.CPUExceptionDiagnostic
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
  
 The event is triggered when Office apps have issues with executing CPU instructions. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
 
@@ -17563,6 +17580,8 @@ The following fields are collected:
 - **TotalSampledTimeMS** - Indicates the total time the app was sampled during the exception.
 
 #### Office.Apple.MetricKit.DiskWriteExceptionDiagnostic
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
  
 The event is triggered when Office apps have issues writing to the device’s disk. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
 
@@ -17573,6 +17592,8 @@ The following fields are collected:
 - **WritesCausedKB** - Total writes caused in KB.
 
 #### Office.Apple.MetricKit.HangDiagnostic
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
  
 The event is triggered when Office apps become unresponsive. The data is used to get additional information that helps with fixing bugs and keep Office apps secure and performing as expected.
 
@@ -19438,7 +19459,7 @@ The following fields are collected:
 
 This event collects information that allows us to categorize and classify issues within the Outlook app that are related to accessibility and device settings.  This categorization is necessary to prioritize the impact of issues on customers.
 
-The following fields are collected for iOS only:
+The following fields are collected for iOS:
 
 - **alternate_app_icon**- Tell us the alternate app icon that user currently selected by the application
 
@@ -19464,6 +19485,8 @@ The following fields are collected for iOS only:
 
 - **invert_colors** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
+- **left_swipe_setting** - Tells us which mail triage action the user has set for their left swipe setting.
+
 - **message_ordering_mode** - Tells us which setting the user has chosen to order their messages in the reading pane, either newest on top or newest on bottom.
 
 - **mono_audio** - Tells us if the user has turned on the setting for mono audio on their device to help us detect issues related to this setting
@@ -19471,6 +19494,8 @@ The following fields are collected for iOS only:
 - **reduce_motion** - Tells us if the user has turned on the setting for reducing motion on their device to help us detect issues related to this setting
 
 - **reduce_transparency** - Tells us if the user has turned on the setting to reduce transparency on their device to help us detect issues related to this setting
+
+- **right_swipe_setting** - Tells us which mail triage action the user has set for their right swipe setting.
 
 - **speak_screen** - Tells us if the user has turned on the setting for mono audio on their device to help us detect issues related to this setting
 
@@ -19482,7 +19507,7 @@ The following fields are collected for iOS only:
 
 - **voice_over** - Tells us if the user has turned on the setting for voiceover on their device to help us detect issues related to this setting
 
-The following fields are collected for Android only:
+The following fields are collected for Android:
 
 - **braille** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
@@ -19498,9 +19523,13 @@ The following fields are collected for Android only:
 
 - **large_text** - Tells us if the device has large text setting turned on to help us detect issues related to this setting
 
+- **left_swipe_setting** - Tells us which mail triage action the user has set for their left swipe setting.
+
 - **oem_preinstall** - Tells us if our app was pre-installed on the device (this applies to Samsung devices only)
 
 - **pinned_tabs** - Tells us the tabs user has chosen to pin to navigation bar, and their order.
+
+- **right_swipe_setting** - Tells us which mail triage action the user has set for their right swipe setting.
 
 - **supported_abis** - Tells us what kind of application binary interfaces (ABIs) are supported by the device platform to help us detect issues related to this setting
 
