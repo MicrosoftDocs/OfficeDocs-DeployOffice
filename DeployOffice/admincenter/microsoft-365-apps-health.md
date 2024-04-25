@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 recommendations: false
 description: "Provides Office admins information about Microsoft 365 Apps health within their environment"
-ms.date: 04/24/2024
+ms.date: 04/25/2024
 ---
 
 # Microsoft 365 Apps health
@@ -40,12 +40,13 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 <!--Using include for adding requirements-->
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
-## How to get to the health dashboard
+### Additional requirements
+**[Diagnostic fata for Office](../privacy/overview-privacy-controls.md)** should be enabled on your devices, as this is the default setting. If you have limited the transmission of diagnostic data for Office, perhaps through group policy settings, it will be necessary to [modify these settings](../privacy/manage-privacy-controls.md) to permit the sending of both required and optional data.
 
+## How to get to the health dashboard
 Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend the **Health** node, and select **Apps health**. For information on using the Microsoft 365 Apps admin center, see [Overview of the Microsoft 365 Apps admin center](overview.md).
 
 ## Overview
-
 The Microsoft 365 Apps health dashboard is designed to help you optimize and troubleshoot the Microsoft 365 Apps in your tenant. Its main benefits are:
 
 - **Zero-effort setup**: No deployment of extra agents needed, as it's using Office diagnostic data 
@@ -55,7 +56,6 @@ The Microsoft 365 Apps health dashboard is designed to help you optimize and tro
 The dashboard monitors Word, Excel, PowerPoint, Outlook, OneNote, and Publisher on Windows. Health trends and advisories are updated every 24 hours. 
 
 ## Metrics, Trends, and Advisories
-
 Currently, Microsoft 365 Apps health offers trends for the following performance and reliability metrics:
 - App Crash Rate: the number of app crashes over number of user sessions, within the selected scope (app, build)
 - App Boot Time: the time it takes from the moment the user opens apps until it's ready for user input, within the selected scope (app, build)

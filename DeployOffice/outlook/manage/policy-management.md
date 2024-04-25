@@ -1,12 +1,12 @@
 ---
 title: "Policy Management"
-ms.author: caithart
-author: nicholasswhite
-manager: dougeby
+ms.author: janellem
+author: JanelleMcIntosh-MSFT
+manager: triciag
 audience: ITPro
 ms.topic: overview
-ms.service: o365-proplus-itpro
-ms.collection: Tier3
+ms.service: outlook
+ms.collection: Tier1
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true

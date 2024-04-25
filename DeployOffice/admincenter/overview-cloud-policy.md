@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 04/24/2024
+ms.date: 04/25/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -46,10 +46,12 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 ### Microsoft Entra groups requirements
-Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups).
+Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) with the following requirements:
 
-<!--Using include for adding requirements-->
-[!INCLUDE [Groups requirements](./includes/requirements-groups.md)]
+- Policies only apply to **user objects**. 
+- **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
+- Nested groups support up to three levels deep.
+- A group might contain both **device objects** and **user objects**, but the **device objects** will be ignored.
 
 ## Steps for creating a policy configuration
 

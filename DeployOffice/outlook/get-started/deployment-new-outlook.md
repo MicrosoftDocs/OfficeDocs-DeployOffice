@@ -1,12 +1,12 @@
 ---
 title: "Deployment overview for the new Outlook for Windows"
-ms.author: caithart
-author: nicholasswhite
-manager: dougeby
+ms.author: janellem
+author: JanelleMcIntosh-MSFT
+manager: triciag
 audience: ITPro
 ms.topic: overview
-ms.service: o365-proplus-itpro
-ms.collection: Tier3
+ms.service: outlook
+ms.collection: Tier1
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
@@ -32,6 +32,9 @@ The new Outlook for Windows is also available as the upgrade from the Windows Ma
 For the new Outlook client to be successfully installed, computers must meet the minimum requirements listed here.
 
 ### System and app requirements
+
+> [!NOTE]
+> New Outlook for Windows is not supported on Windows Server 2016 and Windows Server 2019. 
 
 Requirement | Version
 ------------|-------
