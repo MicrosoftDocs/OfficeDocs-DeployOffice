@@ -33,6 +33,9 @@ For the new Outlook client to be successfully installed, computers must meet the
 
 ### System and app requirements
 
+> [!NOTE]
+> New Outlook for Windows is not supported on Windows Server 2016 and Windows Server 2019. 
+
 Requirement | Version
 ------------|-------
 Windows | Windows 10 Version 1809 (Build 17763) or higher. The new Outlook for Windows will be pre-installed on new Windows devices and devices running Windows 11 version 23H2.
