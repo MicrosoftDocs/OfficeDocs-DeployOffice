@@ -4953,7 +4953,7 @@ The following fields are collected:
 
 #### Office.Extensibility.DiscoverTryBuy.Py.ServerDrivenNotification
 
-During user using Python in Excel. They may receive notification based on their license status, usage. Those notification should be displayed as business bar. When such notification is displayed, this event will be triggered. This event is used to ensure that Python in Excel licensing notification is performing as expected.
+When using Python in Excel, the user may receive a notification based on their license status or usage. The notification should be displayed as a business bar. When such notification is displayed, this event will be triggered. This event is used to ensure that the Python in Excel licensing notification is performing as expected.
 
 The following fields are collected:
  
@@ -4965,7 +4965,7 @@ The following fields are collected:
 
 #### Office.Extensibility.DiscoverTryBuy.Py.ServerDrivenNotificationUserAction
 
-During user using Python in Excel. They may receive notification based on their license status, usage. Those notification should be displayed as business bar. There will be some buttons for user to interact with on the business bar. When user clicks one of the buttons or dismisses the business bar, this event will be triggered. This event is used to ensure that Python in Excel licensing notification is performing as expected.
+When using Python in Excel, the user may receive a notification based on their license status or usage. The notification should be displayed as business bar. There will be some buttons for user to interact with on the business bar. When user clicks one of the buttons or dismisses the business bar, this event will be triggered. This event is used to ensure that the Python in Excel licensing notification is performing as expected.
 
 The following fields are collected:
 
