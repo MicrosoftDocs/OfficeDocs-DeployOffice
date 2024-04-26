@@ -50,7 +50,7 @@ In addition to Click-to-Run, the following are some other changes that you need 
 
 Even though there's a different installation technology, you can still use the same software distribution tools, such as Microsoft Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
 
-The major version of Office 2019 is staying at 16.0, some other things are staying the same if you're upgrading from Office 2016, including the following:
+The major version of Office 2019 is staying at 16.0. Some other things are staying the same if you're upgrading from Office 2016, including the following:
 
 - Existing Group Policy settings will continue to work, because the registry location for those settings will still be located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
 - Other registry locations and settings information that reference 16.0 will still apply.
@@ -59,7 +59,7 @@ The major version of Office 2019 is staying at 16.0, some other things are stayi
 
 ## What are the new features in Office 2019?
 
-For information about the new features in Office 2019, see the “what’s new” articles for [Access](https://support.microsoft.com/office/f52c5317-3494-4105-9c56-5a2abb8e0f87), [Excel](https://support.microsoft.com/office/5a201203-1155-4055-82a5-82bf0994631f), [Outlook](https://support.microsoft.com/office/0c64df36-0908-4ff6-a7fc-573a62800525), [PowerPoint](https://support.microsoft.com/office/8355a56a-f643-42d2-8454-784fa9b3d109), [Project](https://support.microsoft.com/office/6be41c8a-c4b2-409a-9ef7-d250377ad3b7), [Visio](https://support.microsoft.com/office/19b8e98d-9cf9-40ad-9277-eb65e3713a79), and [Word](https://support.microsoft.com/office/d3d31e5e-2bb8-4433-80bb-08279beef4b3).  Office 2019 includes some, but not all, features that are available in versions of Office that come with an Office 365 (or Microsoft 365) plan.
+For information about the new features in Office 2019, see the "what’s new" articles for [Access](https://support.microsoft.com/office/f52c5317-3494-4105-9c56-5a2abb8e0f87), [Excel](https://support.microsoft.com/office/5a201203-1155-4055-82a5-82bf0994631f), [Outlook](https://support.microsoft.com/office/0c64df36-0908-4ff6-a7fc-573a62800525), [PowerPoint](https://support.microsoft.com/office/8355a56a-f643-42d2-8454-784fa9b3d109), [Project](https://support.microsoft.com/office/6be41c8a-c4b2-409a-9ef7-d250377ad3b7), [Visio](https://support.microsoft.com/office/19b8e98d-9cf9-40ad-9277-eb65e3713a79), and [Word](https://support.microsoft.com/office/d3d31e5e-2bb8-4433-80bb-08279beef4b3). Office 2019 includes some, but not all, features that are available in versions of Office that come with an Office 365 (or Microsoft 365) plan.
 
 Office 2019 won’t receive additional new features now that it has been released. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 plan (or Microsoft 365) plan that includes Office. Most of these enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office Professional Plus 2019. For more information about available plans, see [Office 365 plans for enterprises](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans) and [Microsoft 365 plans for enterprises](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). For more information about new features, see [What’s new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426).
 
@@ -72,10 +72,10 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 - Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business. 
 - Access and Publisher aren't available for devices running macOS.
 - There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
-- All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version.  For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+- All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.
-- Volume licensed versions of Office 2019 aren't supported on [Windows 10 in S mode](https://support.microsoft.com/windows/851057d6-1ee9-b9e5-c30b-93baebeebc85) or when using [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview).
+- Volume licensed versions of Office 2019 aren't supported on [Windows 10 in S mode](https://support.microsoft.com/windows/851057d6-1ee9-b9e5-c30b-93baebeebc85) or when using [Windows Defender Application Control (WDAC)](/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview).
 
 
 ## Related articles
