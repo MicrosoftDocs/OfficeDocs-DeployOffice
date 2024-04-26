@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 04/11/2024
+ms.date: 04/26/2024
 ---
 
 # Connected experiences and your content
@@ -61,7 +61,7 @@ The following table lists the few connected experiences that retain content, alo
 
 |Connected experience  |Description  |
 |---------|---------|
-|Editor, including Text predictions | Some components of Editor retain content, such as corrected spelling or recommended grammar edits, and whether you accepted them. <br/><br/> This data allows the service to adapt to your preferences and to reduce otherwise irrelevant or annoying recommendations. For example, you might prefer to use contractions in documents. “Ignoring” recommendations to spell out contractions teaches the service this preference. |
+|Editor, including Text predictions | Some components of Editor retain content, such as corrected spelling or recommended grammar edits, and whether you accepted them. <br/><br/> This data allows the service to adapt to your preferences and to reduce otherwise irrelevant or annoying recommendations. For example, you might prefer to use contractions in documents. "Ignoring" recommendations to spell out contractions teaches the service this preference. |
 |PowerPoint Designer |Microsoft retains information about which automatically generated designs are offered, which are considered, and which are used.<br/><br/> This information is used to help the service adapt to your preferences and to recommend more relevant images. |
 
 > [!NOTE]
@@ -78,9 +78,9 @@ But for each of these connected experiences, the content is stored in a location
 
 ## Securing content used by a connected experience
 
-Content sent from your device by the connected experience, to perform its function to help you accomplish a task, is encrypted using Transport Layer Security (TLS), version 1.2 or higher. (This is sometimes referred to as “data in motion.”)
+Content sent from your device by the connected experience, to perform its function to help you accomplish a task, is encrypted using Transport Layer Security (TLS), version 1.2 or higher. (This is sometimes referred to as "data in motion.")
 
-Content that is retained by Microsoft is encrypted while it’s stored. (This is sometimes referred to as “data at rest.”)
+Content that is retained by Microsoft is encrypted while it’s stored. (This is sometimes referred to as "data at rest.")
 
 For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption).
 
@@ -130,7 +130,7 @@ The following table lists the content used by connected experiences when perform
 
 | Connected experience                   | Content used                                                                                                      | Role of Microsoft |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------|
-| 3D Maps                                | Cell contents of an Excel workbook                                                                                | Controller        |
+| 3D Maps <sup>[1]</sup>                 | Cell contents of an Excel workbook                                                                                | Controller        |
 | Analyze Data                           | Cell contents of an Excel workbook                                                                                | Processor         |
 | Automatic alt txt                      | Images inserted into the document, workbook, presentation, or email                                               | Processor         |
 | Data types                             | Cell contents of an Excel workbook                                                                                | Processor         |
@@ -141,23 +141,27 @@ The following table lists the content used by connected experiences when perform
 | Ink to Text, Ink to Shape, Ink to Math | The current slide and selected ink in a PowerPoint presentation                                                   | Processor         |
 | Insert data from picture               | Data from a screenshot on the Clipboard, from a photo from an iPhone camera, or from an image file on the device. | Processor         |
 | Live captions & subtitles              | Audio captured by the microphone while giving a PowerPoint presentation                                           | Processor         |
-| Map chart                              | Cell contents of an Excel workbook                                                                                | Controller        |
+| Map chart <sup>[1]</sup>               | Cell contents of an Excel workbook                                                                                | Controller        |
 | Math Assistant                         | Math equations in a OneNote Class Notebook                                                                        | Processor         |
 | PivotTable recommendations             | Cell contents of an Excel workbook                                                                                | Processor         |
 | PowerPoint Designer                    | Content from the current presentation, including the current slide and slide masters                              | Processor         |
 | Publish to Microsoft Stream            | Video created from a PowerPoint presentation                                                                      | Processor         |
 | Publish to Power BI                    | Contents of an Excel workbook                                                                                     | Processor         |
 | Read Aloud                             | Contents of a Word document                                                                                       | Processor         |
-| Research                               | Word or phrase selected in a document or a search term typed into the Research pane                               | Controller        |
+| Research <sup>[1]</sup>                | Word or phrase selected in a document or a search term typed into the Research pane                               | Controller        |
 | Reuse Files                            | Recent and recommended documents, workbooks, and presentations                                                    | Processor         |
 | Scan a business card                   | Business card scanned by using Office Lens                                                                        | Processor         |
-| Similarity checker                     | Contents of a Word document                                                                                       | Controller        |
-| Smart Lookup                           | Word or phrase selected in a document, or email                                                                   | Controller        |
+| Similarity checker <sup>[1]</sup>      | Contents of a Word document                                                                                       | Controller        |
+| Smart Lookup <sup>[1]</sup>            | Word or phrase selected in a document, or email                                                                   | Controller        |
 | Speaker Coach                          | Audio captured by the microphone while rehearsing a slide show in PowerPoint                                      | Processor         |
 | Suggested replies                      | Contents of an email received in Outlook                                                                          | Processor         |
 | Text predictions                       | Up to one sentence at a time from a Word document                                                                 | Processor         |
+| Transcribe                             | Audio file or a recording in Word for the web or in OneNote                                                       | Processor         |
 | Transform to Web Page                  | Contents of a Word document                                                                                       | Processor         |
 | Translator                             | The selected content or the entire document (depending on your request)                                           | Processor         |
+
+> [!NOTE]
+> <sup>[1]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences. For optional connected experiences, Microsoft’s role is as controller of the content. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md).
 
 ### Role of Microsoft and Data Subject Requests (DSRs)
 
