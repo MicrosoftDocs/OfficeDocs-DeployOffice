@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Microsoft 365 Apps to client devices from a shared folder on your network."
-ms.date: 03/01/2023
+ms.date: 01/25/2024
 ---
 
 # Deploy Microsoft 365 Apps from a local source
