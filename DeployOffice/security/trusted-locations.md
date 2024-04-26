@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance to Office admins about Trusted Locations in Office apps."
-ms.date: 03/01/2023
+ms.date: 04/26/2024
 ---
 
 # Trusted Locations for Office files
@@ -18,7 +18,7 @@ ms.date: 03/01/2023
 
 Trusted Locations is a feature of Office where files contained in these folders are assumed safe, such as files you create yourself or saved from a trustworthy source. These files bypass threat protection services, bypass file block settings, and all active content is enabled. This means files saved in Trusted Locations aren't opened in [Protected View](https://support.microsoft.com/topic/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
-[Active content](https://support.microsoft.com/office/b7ff2e8a-4055-47d4-8c7d-541e19f62bea) can include unsigned add-ins, VBA macros, connections to external data and more. It’s important to trust the original source of the file when you save it to a Trusted Location, since all active content will be enabled, and users won’t be notified about any potential security risks. The following diagram shows the trust workflow for opening Office files.
+[Active content](https://support.microsoft.com/office/b7ff2e8a-4055-47d4-8c7d-541e19f62bea) can include unsigned add-ins, VBA macros, connections to external data and more. Ensure you trust the original source of the file before saving it to a Trusted Location. It's important as all active content is enabled, and users don't receive notifications about potential security risks. The following diagram shows the trust workflow for opening Office files.
 
 ![Flowchart that shows how Office decides whether to show active content, with the Trusted Locations step highlighted](../images/security/trusted-locations-flowchart.png)
 
@@ -26,7 +26,7 @@ As shown in Step 2, files in Trusted Locations bypass all other security and pol
 
 ## Planning steps for Trusted Locations
 
-Trusted Locations affect all content in a file. This includes add-ins, ActiveX controls, hyperlinks, links to data sources and media, and VBA macros. Files that are opened from Trusted Locations skip file validation checks, File Block checks, and don't open in Protected View or Application Guard. There are different levels of trust you can allow in your organization for Trusted Locations:
+Trusted Locations enable all content within a file, including add-ins, ActiveX controls, hyperlinks, links to data sources and media, and VBA macros. Files that are opened from Trusted Locations skip file validation checks, File Block checks, and don't open in Protected View or Application Guard. There are different levels of trust you can allow in your organization for Trusted Locations:
 
 - Allow end users to create Trusted Locations on their device or network themselves
 - Use policy to prevent users from creating Trusted Locations
@@ -38,7 +38,7 @@ It’s important to choose the scenarios that are best for your organization and
 > [!NOTE]
 > Some Trusted Locations are created by default when Office is installed. For a list of those Trusted Locations, see [Default Trusted Locations for Office apps](#default-trusted-locations-for-office-apps).
 
-To implement Trusted Locations, you must determine the following:
+To implement Trusted Locations, you must determine:
 
 - The Office apps for which you want to configure Trusted Locations.
 - The folders that you want to designate as Trusted Locations.
@@ -66,7 +66,7 @@ Here are some considerations to keep in mind when determining which folders to u
 
 - Unless blocked by policy, users can create and modify Trusted Locations in the Trust Center for their Office app. For more information, see [Add, remove, or change a trusted location](https://support.microsoft.com/office/7ee1cdc2-483e-4cbb-bcb3-4e7c67147fb4).
 
-- By default, only Trusted Locations local to the user's device are allowed. Network locations can also be set as a Trusted Location, but it's not recommended.
+- By default, only Trusted Locations local to the user's device are allowed. Network locations can also be set as a Trusted Location, but not recommended.
 
 - We don't recommend that users specify root folders as Trusted Locations. For example, the C: drive or the My Documents folder. Instead, create a subfolder within those folders and specify only that folder as a Trusted Location.
 
@@ -80,7 +80,7 @@ All folders that you specify as Trusted Locations must be secured to prevent mal
 
 If a folder is shared, configure sharing permissions so that only authorized users have access to the shared folder.
 
-Be sure to use the principle of least privilege and grant permissions that are appropriate to a user. That is, grant Read permission to those users who don't have to change the files in the Trusted Locations and grant Full Control permission to those users who have to edit files.
+Be sure to use the principle of least privilege and grant permissions that are appropriate to a user. Grant Read permission to users who don't need to modify files in Trusted Locations. Give Full Control permission to users who must edit files.
 
 ## Use policy to manage Trusted Locations
 
@@ -105,7 +105,7 @@ There are separate policies for Trusted Locations for each Office application. T
 |Visio|Microsoft Visio 2016\Visio Options\Security\Trust Center|
 |Word|Microsoft Word 2016\Word Options\Security\Trust Center\Trusted Locations|
 
-You can also configure the [Allow mix of policy and user locations](#allow-mix-of-policy-and-user-locations-policy) policy to control whether Trusted Locations can be defined by users and by admins (for example, by policy), or if Trusted Locations can only be defined by policy.
+You can configure the [Allow mix of policy and user locations](#allow-mix-of-policy-and-user-locations-policy) policy to determines whether both users and admins (for example, through policy) or only admins by policy can define Trusted Locations.
 
 ### "Trusted Location #1" policy
 
@@ -113,7 +113,7 @@ You can use this policy to specify the path for a Trusted Location for users in 
 
 By default, these policies are blank. To add a Trusted Location, enable the policy and specify the path to the Trusted Location. Make sure that the location that you specify is secured, by setting permissions so that only the appropriate users can add Office files to that location.
 
-Trusted Locations that you specify with this policy will appear under the **Policy Locations** section under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Trusted Locations**.
+Trusted Locations that you specify with this policy appear under the **Policy Locations** section under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Trusted Locations**.
 
 > [!NOTE]
 > - You can use environment variables when specifying a Trusted Location.
@@ -123,7 +123,7 @@ Trusted Locations that you specify with this policy will appear under the **Poli
 
 This policy controls whether Trusted Locations on the network can be used.
 
-By default, Trusted Locations on network locations are disabled. But users can change this by going to **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Trusted Locations** and selecting the **Allow Trusted Locations on my network (not recommended)** checkbox.
+By default, Trusted Locations on network locations are disabled. But users can change this setting by going to **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Trusted Locations** and selecting the **Allow Trusted Locations on my network (not recommended)** checkbox.
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
@@ -131,7 +131,7 @@ Which state you choose for the policy determines the level of protection you're 
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled | Blocks Trusted Locations on network locations, including any configured by the admin (for example, by using the "Trusted Location #1" policy). </br></br> Ignores any network locations set by users as Trusted Locations in the Trust Center, and prevents users from adding more.|
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Allows network locations as Trusted Locations to be set both by users and by policy.|
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)| Partially protected |Not Configured|By default, users are blocked from adding network locations as Trusted Locations, but may enable this by selecting the **Allow Trusted Locations on my network (not recommended)** checkbox in the Trust Center |
+|![Orange circle with white check mark](../images/security/icon-partially-protected.png)| Partially protected |Not Configured|By default, users are blocked from adding network locations as Trusted Locations, but could enable this setting by selecting the **Allow Trusted Locations on my network (not recommended)** checkbox in the Trust Center |
 
 We recommend setting this policy to **Disabled** as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should disable this policy for most users and only make exceptions for certain users as needed.
 
@@ -149,7 +149,7 @@ Which state you choose for the policy determines the level of protection you're 
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled |All Trusted Locations are blocked.|
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy). |
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Disabled**.|
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This setting is the Office default. Provides the same behavior as **Disabled**.|
 
 Organizations that have a highly restrictive security environment typically set this policy to **Enabled**.
 
@@ -165,7 +165,7 @@ Which state you choose for the policy determines the level of protection you're 
 |-----|---------|---------|---------|
 |![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Disabled |Only Trusted Locations defined by policy are allowed. |
 |![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|A user or device can have a combination of Trusted Locations created by the user or configured by the admin (for example, by policy).  |
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This is the Office default. Provides the same behavior as **Enabled**. |
+|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured|This setting is the Office default. Provides the same behavior as **Enabled**. |
 
 We recommend setting this policy to **Disabled** as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should disable this policy for most users and only make exceptions for certain users as needed.
 

@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 04/28/2023
+ms.date: 04/26/2024
 ---
 
 # Tools to manage volume activation of Office
@@ -68,7 +68,7 @@ cscript ospp.vbs [Option:Value] [ComputerName] [User] [Password]
 | /dinstid  |Displays Installation ID for offline activation.   |
 | /actcid:*value*  |Activates product with user-provided Confirmation ID. Value parameter is required.   |
 | /rearm  |Resets the licensing status for all installed Office product keys.   |
-| /rearm:*value*  |Resets the licensing status for an Office license with a user-provided SKU ID value. Value parameter is required.  <br/><br/> Use this option with the SKU ID value specified by using the /dstatus option if you have run out of rearms and have activated Office through KMS or Active Directory-based activation to gain an additional rearm.   |
+| /rearm:*value*  |Resets the licensing status for an Office license with a user-provided SKU ID value. Value parameter is required.  <br/><br/> Use this option with the SKU ID value specified by using the /dstatus option if you have run out of rearms and have activated Office through KMS or Active Directory-based activation to gain an another rearm.   |
 | /ddescr:*value*  |Displays the description for a user-provided error code. Value parameter is required.   |
    
 The following table describes the ospp.vbs options for configuring the KMS client.
@@ -222,7 +222,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ sdns  |Enables automatic DNS publishing by the KMS host computer.   |
 |/ cpri  |Lowers the priority of KMS host computer processes.   |
 |/ sai *ActivationInterval*  |Changes how often a KMS client attempts to activate itself when it can't find a KMS host computer. It replaces  ActivationInterval with a value expressed in minutes. The default setting is 120 minutes.   |
-|/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (7 days). This setting overrides the local KMS client settings.   |
+|/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (seven days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
 > - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
