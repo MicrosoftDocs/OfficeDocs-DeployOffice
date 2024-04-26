@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/29/2024
+ms.date: 05/01/2024
 ---
 
 # Required diagnostic data for Office
@@ -3569,6 +3569,14 @@ The following fields are collected:
 
 - **Data_EventID** - We collect a string representing a code that indicates whether the session is intune-managed.
 
+#### Office.Apple.Licensing.FetchCopilotServicePlanSucceed
+
+The event is triggered when the application succeeds to retrieve a Copilot license plan. Event is used to understand Copilot license success rates and keep the feature working as expected.
+
+The following fields are collected:
+
+- **RetryAttempt** - Integer that specifies the number of attempts used to retrieve a Copilot license.
+
 #### Office.Apple.Licensing.Mac.LicensingState
 
 This event is collected for Office applications running under Apple platforms. The event captures the current state of the license for a session in a machine (OLS license ID, SKU being used, grace-period or not, RFM, etc.). The data collected is used for detecting errors and investigating causes of failures. 
@@ -4943,6 +4951,37 @@ The following fields are collected:
 - **Data_UIType** - Type of UI such as Sequence teaching callout, Dialog
 
 
+#### Office.Extensibility.DiscoverTryBuy.Py.ServerDrivenNotification
+
+During user using Python in Excel. They may receive notification based on their license status, usage. Those notification should be displayed as business bar. When such notification is displayed, this event will be triggered. This event is used to ensure that Python in Excel licensing notification is performing as expected.
+
+The following fields are collected:
+ 
+- **EventType** - EventType is a identifier of notification displayed. 
+
+- **NotificationLevel** – This is a enum value, means how important the notification is. 1 is the lowest level, (means informational), 3 is the highest lever (means error)
+
+- **NotificationPartType** – This value is either 0 or 1. 0 means this notification is for current session. 1 means this notification is for current workbook.
+
+#### Office.Extensibility.DiscoverTryBuy.Py.ServerDrivenNotificationUserAction
+
+During user using Python in Excel. They may receive notification based on their license status, usage. Those notification should be displayed as business bar. There will be some buttons for user to interact with on the business bar. When user clicks one of the buttons or dismisses the business bar, this event will be triggered. This event is used to ensure that Python in Excel licensing notification is performing as expected.
+
+The following fields are collected:
+
+- **ChildAction** - This is an enum value, means what type of interaction user made with the notification. The value could be 40, 41 or 42. 40 means user click button which opens a hyper link in browser. 41 means user click button that trigger software behavior (for example: display a dialog). 42 means the notification is dismissed.
+
+- **EventType** - EventType is a identifier of notification user interacted with. 
+
+- **NotificationLevel** – This is an enum value, means how important the notification is. 1 is the lowest level, (means informational), 3 is the highest lever (means error)
+
+- **NotificationPartType** – This value is either 0 or 1. 0 means this notification is for current session. 1 means this notification is for current workbook.
+
+- **SDXAction** - This value specific which button user clicked if ChildAction is 40.
+
+- **TimeSpan** - This value is the time span from the notification is displayed to user interacted with it.
+
+
 #### Office.Extensibility.ODPAppCommandsRibbonClick
 
 Collects whether clicking the custom add-in control succeeded or not. Used to detect issues in user interaction with add-in controls.
@@ -5962,6 +6001,20 @@ The following fields are collected:
 
 - **FeatureAction** - A label indicating the high value feature and action performed by the user, for example, ContentPickerTried, TemplatesSeen.
 
+#### Office.Fluid.LoopMobile.Activity.ScenarioAddExistingPageToWorkspace
+
+Event occurs when user adds an existing Loop page to a workspace. Event is used to capture success and error rates of the Add Existing Page To Workspace core scenario, and gauge overall health state of the Loop app.
+
+The following fields are collected:
+
+- **Activity_Duration** - Duration it took to add a Loop page to a workspace.
+
+- **Activity_Success** - A flag indicating if adding a Loop page to a workspace succeeded or not.
+
+- **Data_ErrorDescription** - Description of the error if adding a Loop page to a workspace failed.
+
+- **Data_FeatureName** - Name of this activity: Add Existing Page To Workspace.
+
 
 #### Office.Fluid.LoopMobile.Activity.ScenarioCreatePage
 
@@ -6037,7 +6090,7 @@ The following fields are collected:
 - **Data_FeatureName** - Name of this activity: Switch Loop Page.
 
 
-### Office.Fluid.LoopMobile.Generic.AppLifecycle
+#### Office.Fluid.LoopMobile.Generic.AppLifecycle
 
 This event is triggered when launching the Loop app. This data is used to collect lifecycle events at the start and end of the session to determine whether it was successful and ensure that app is running as expected.
 
@@ -7098,7 +7151,7 @@ The following fields are collected:
 
 -  **TimeToMedianResultInMs** - Indicates the median of time OneNote takes to find all matches.
 
-### Office.OneNote.SIGS.CriticalErrorEncountered
+#### Office.OneNote.SIGS.CriticalErrorEncountered
 
 This event captures a critical signal that is used to monitor the health of Signal Ingestion Service (SIGS), by logging whenever a critical error is encountered. Critical errors can block the whole of SIGS, and this will help us catch any such issues as soon as they're encountered by users. 
 
@@ -13443,6 +13496,16 @@ The following fields are collected:
 
 - **SelectionItem** - Integer value that represents the user selection within the FixIt menu.
 
+#### Office.UX.AccChecker.FixItMenuItemSelectionA11yAssistant
+
+This event is used to track the user selection for the remediation of an Accessibility issue in the document through the Accessibility Assistant pane. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+ 
+- **RuleID** - Integer value used to track the category of accessibility issue which is remediated.
+
+- **SelectionItem** - Integer value used to track the command invoked to remediate the accessibility issue in the document.
+
 
 #### Office.UX.AccChecker.FixItMenuOpenClose
 
@@ -13486,6 +13549,15 @@ The following fields are collected:
 
 - **BackgroundAccCheckerEnabled** - Boolean to track the Enabled/Disabled state of the Background Accessibility checker
 
+#### Office.UX.AccChecker.WordInvokeCanvasContextualCardFromCanvasActivity
+
+This event is used to track user selection on the Word Accessibility Checker in-Canvas notification within the document canvas. This helps to understand the specific Accessibility issues that users remediate within Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+ 
+- **TextRangeLength** - Integer value used to track the length of the text range being remediated for the accessibility issue.
+
+
 #### Office.UX.AccChecker.WordInvokeCanvasContextualCardFromGutterActivity
 
 This event is used to track user selection on the Word Accessibility Checker in-Canvas notification. This helps to understand the specific Accessibility issues that users remediate within Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
@@ -13495,6 +13567,37 @@ The following fields are collected:
 - **IssueType** – Integer value used to track which category of Accessibility violation is being remediated by the user.
 
 - **TextRangeLength** - Integer value used to track the length of the text range being remediated for the accessibility issue.
+
+#### Office.UX.AltTextInCanvasContextualCard
+
+This event is used to track the remediation of an Alt-text Accessibility issue in the Word In-Canvas Accessibility card. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+
+- None
+
+#### Office.UX.AutoAltTextInCanvasContextualCard
+
+This event is used to track the approval of auto-generated Alt-text to remediate an Accessibility issue in the Word In-Canvas Accessibility card. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+
+- None
+
+#### Office.UX.ColorPickerBulkFixInCanvasContextualCard
+
+This event is used to track the application of a bulk fix for text color contrast issues within the Accessibility Checker In-Canvas Color Picker. This helps to understand bulk color selection for the Accessibility issues that users remediate within Office documents. This data helps with work on remediating accessibility issues and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+
+The following fields are collected:
+ 
+- **BulkFixFlightEnabled** - Boolean value used to track if Bulk color fixes are enabled within the In-Canvas Color Picker.
+
+- **FixedAllIssues** - Boolean value used to track if the user fixed all text color contrast issues within the In-Canvas Color Picker.
+
+- **FixedSimilarIssues** - Boolean value used to track if the user fixed similar text color contrast issues within the In-Canvas Color Picker.
+
+- **FixSimilarFlightEnabled** - Boolean value used to track if bulk fix for similar issues are enabled within the In-Canvas Color Picker.
+
 
 #### Office.UX.ColorPickerInCanvasContextualCard
 
@@ -13730,6 +13833,24 @@ The following are the data subtypes in this category:
 ### *Unexpected application exit (crash) subtype*
 
 Unexpected application exits and the state of the application when that happens​.
+
+#### android.exit.info
+
+This event will be triggered when app boots and a previous app exit information is detected. This event is used to detect and investigate abnormal app exits.
+
+The following fields are collected:
+
+- **description** - The description why app exited.
+
+- **exit_timestamp** - The timestamp when app exited.
+
+- **importance** - The importance of the process running at the time of app exit.
+
+- **pid** - The process id of the process running at the time of app exit.
+
+- **reason** - The reason why app exited.
+
+- **status** - The status when app exited.
 
 #### app.startup.reason
 
@@ -15367,6 +15488,14 @@ The following fields are collected:
 - **Data_BytesRequested** - Number of bytes to process.
 
 - **Data_IsWriteOp** - Whether we're about to execute a write operation
+
+#### Office.Apple.Licensing.AROFFNotificationTapped
+
+This event is triggered when user taps OFF on the Auto Renewal push notification. Event is used to ensure that tapping on the push notification worked correctly to launch the in app experience.
+
+The following fields are collected:
+
+- None
 
 #### Office.Apple.MacBootResourceUsage
 
@@ -17530,6 +17659,13 @@ The following fields are collected:
 
 - **WasIdentitySignedOut** - Indicates if account was in signed out state.
 
+#### Office.Apple.Licensing.FetchCopilotServicePlanFailed
+
+The event is triggered when the application fails to retrieve a Copilot license plan and is used to understand Copilot license failure rates and keep its features working as expected.
+
+The following fields are collected:
+
+- None
 
 #### Office.Apple.Licensing.Mac.DRActivationFailures
 
@@ -17578,6 +17714,57 @@ The following fields are collected:
 - **TotalCPUTimeMS** - Indicates the total CPU time used during the exception.
 
 - **TotalSampledTimeMS** - Indicates the total time the app was sampled during the exception.
+
+#### Office.Apple.MetricKit.Diagnostic
+
+The event is triggered when Office apps fail to execute CPU instructions, complete the boot sequence, or write to the device's disk. It's also triggered when apps become unresponsive or crash. The event is used to get additional required diagnostic data including any logs that helps with keeping Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **Diagnostic** - A string with the parsed diagnostic payload.
+
+- **DiagnosticType** - A string that specifies the type of diagnostics recorded: Crash, Hang, DiskWriteException, AppLaunch, or CPUException.
+
+- **HangDurationMS** - A string that contains the duration of a hang when DiagnosticType is Hang.
+
+- **LaunchDurationMS** - A string that contains the time it took for the app to launch when DiagnosticType is AppLaunch.
+
+- **StackHash** - A string identifier that represents an issue uniquely.
+
+- **TerminationReason** - A string that contains the reason of termination when DiagnosticType is Crash.
+
+- **TotalCPUTimeMS** - A string that contains the total CPU time when DiagnosticType is CPUException.
+
+- **TotalSampledTimeMS** - A string that contains the total sampled time when DiagnosticType is CPUException.
+
+- **VirtualMemoryRegionInfo** - A string that contains the virtual memory state when DiagnosticType is Crash.
+
+- **WritesCausedKB** - A string that contains the amount of kilobytes written when DiagnosticType is DiskWriteException.
+
+
+#### Office.Apple.MetricKit.DiagnosticMetadata
+
+The event is triggered when Office apps fail to execute CPU instructions, complete the boot sequence, or write to the device's disk. It's also triggered when apps become unresponsive or crash. The event is used to get additional required diagnostic data that helps with keeping Office apps secure and performing as expected.
+
+The following fields are collected:
+
+- **DiagnosticType** - A string that specifies the type of diagnostics recorded: Crash, Hang, DiskWriteException, AppLaunch, or CPUException.
+
+- **HangDurationMS** - A string that contains the duration of a hang when DiagnosticType is Hang.
+
+- **LaunchDurationMS** - A string that contains the time it took for the app to launch when DiagnosticType is AppLaunch.
+
+- **StackHash** - A string identifier that represents an issue uniquely.
+
+- **TerminationReason** - A string that contains the reason of termination when DiagnosticType is Crash.
+
+- **TotalCPUTimeMS** - A string that contains the total CPU time when DiagnosticType is CPUException.
+
+- **TotalSampledTimeMS** - A string that contains the total sampled time when DiagnosticType is CPUException.
+
+- **VirtualMemoryRegionInfo** - A string that contains the virtual memory state when DiagnosticType is Crash.
+
+- **WritesCausedKB** - A string that contains the amount of kilobytes written when DiagnosticType is DiskWriteException.
 
 #### Office.Apple.MetricKit.DiskWriteExceptionDiagnostic
 
