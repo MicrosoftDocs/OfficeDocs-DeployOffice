@@ -136,7 +136,7 @@ This category contains the following fields:
 
   - **ServiceConnectionStateSourceLocation** – Indicates how the user provided the choice whether to use all connected experiences
 
-  - **UserCategoryValue –** Identified the type of user who made the consent. One of MSAUser, AADUser or LocalDeviceUser
+  - **UserCategoryValue –** Identified the type of user who made the consent. One of MSAUser, AADUser, or LocalDeviceUser
 
   - **UserContentDependentSourceLocation** – Indicates how the user's choice to enable or disable was made for connected experiences that analyze content
 
@@ -204,7 +204,7 @@ This category contains the following fields:
 
   - **SamplingClientIdValue** - The ID of the client used to determine if it's part of sampling. Allows us to determine why an individual session was included or excluded from sampling.
   
- - **SubAppName** - For Microsoft 365 mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field reports the value of “Word”.
+ - **SubAppName** - For Microsoft 365 mobile app, this field represents the underlying application being used to open a document. For example, if you open a Word document in Office app, this field reports the value of "Word."
 
  - **VirtualizationType** - Type of virtualization if Office is running in one. The possible values are:
     - 0 = None
@@ -220,7 +220,7 @@ This category contains the following fields:
 
   - **PrimaryIdentityHash** – A pseudonymous identifier that represents the current user.
 
-  - **PrimaryIdentitySpace** – The type of identity contained in the PrimaryIdentityHash. One of MASCID, OrgIdCID or UserObjectId.
+  - **PrimaryIdentitySpace** – The type of identity contained in the PrimaryIdentityHash. One of MASCID, OrgIdCID, or UserObjectId.
 
   - **TenantGroup** - The type of the tenant that the subscription belongs to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users.
 
@@ -735,7 +735,7 @@ The following fields are collected:
 
 #### Office.ClickToRun.UpdateStatus
 
-Applicable to all Win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details)
+Applicable to all Win32 applications. Helps us understand the status of the update process of the Office suite (Success or failure with error details).
 
 The following fields are collected:
 
@@ -1506,7 +1506,7 @@ The following fields are collected:
 
 - **ResetErrorCode3** - Additional error code after reset command.  
 
-- **ResetErrorType** - Type of error: Creation, PrepFile or Launch.
+- **ResetErrorType** - Type of error: Creation, PrepFile, or Launch.
 
 #### Office.AppGuard.OpenInContainer
 
@@ -1814,7 +1814,7 @@ This event is triggered when Outlook starts slowly or incompletely. The data col
 
 The following fields are collected: 
 
-- **aad_tenant_id** - Tells us the Microsoft Entra tenant Id for the primary account so that we can identify tenants with slow launches.
+- **aad_tenant_id** - Tells us the Microsoft Entra tenant ID for the primary account so that we can identify tenants with slow launches.
 
 - **is_agenda_widget_active** - Tells us if the agenda widget is active.
 
@@ -1978,7 +1978,7 @@ The following fields are collected across iOS and Android:
 
 - **is_best_match_suggestion** - whether the search suggestion selected is a best match.
 
-- **is_ics_external_data** - Captures if an added event is internal (i.e added in Outlook to Outlook calendar) or external (i.e added from another email app such as Gmail to Outlook calendar).
+- **is_ics_external_data** - Captures if an added event is internal (i.e. added in Outlook to Outlook calendar) or external (i.e. added from another email app such as Gmail to Outlook calendar).
 
 - **is_network_fully_connected** - This is to get a hint of the reason behind the offline search. If the network is connected and the search is offline, then the reason is likely to be the server timeout
 
@@ -2064,7 +2064,7 @@ The following fields are collected:
 
 - **app_instance** - Outlook has two entry points for Duo. One is for Calendar and one is for Mail and both can be launched side by side in multi instance environment. This lets us know which instance is making this reporting call, either Mail or Calendar.
 
-- **component_name** - the name of the component/view that is active. For example, “Other inbox”
+- **component_name** - the name of the component/view that is active. For example, "Other inbox"
 
 - **taskId** - TaskId gives us the current instance’s taskId. This will be required in multi-instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
@@ -4830,7 +4830,7 @@ This event is triggered when a user inserts Python formula example from Python C
 
 The following fields are collected:
 
-- **Data_Action** - Default value “Click”
+- **Data_Action** - Default value "Click"
 
 - **Data_ChildAction** - A value indicating what button user clicks while interacting with UI
 
@@ -4906,15 +4906,15 @@ This event is triggered when a launches Premium Hub dialog. This data is used to
 
 The following fields are collected:
 
-- **Data_Action** - An enum value with default as “Dialog”
+- **Data_Action** - An enum value with default as "Dialog"
 
-- **Data_ChildAction** - An enum value indicating user choice on a dialog such as user selecting “Try Preview”, “Show me how it works”.
+- **Data_ChildAction** - An enum value indicating user choice on a dialog such as user selecting "Try Preview", "Show me how it works".
 
 - **Data_DetachedDuration** - The time user interacts with UI.
 
 - **Data_PythonCenterLaunchSource** - An enum value indicating the source of Python Center launch such as “=PY(“ , ctrl+shift+alt+P.
 
-- **Data_UIType** - An enum value with a default of “Dialog”
+- **Data_UIType** - An enum value with a default of "Dialog"
 
 
 #### Office.Extensibility.DiscoverTryBuy.Py.PythonTakerExperienceJourney
@@ -4925,13 +4925,13 @@ The following fields are collected:
 
 - **Data_Action** - An enum value indicating type of different messages displayed to the user.
 
-- **Data_ChildAction** - An enum value indicating the user choice with UI such as clicking on “Try Preview”, “No Thanks”, “Learn More”, “OK” buttons.
+- **Data_ChildAction** - An enum value indicating the user choice with UI such as clicking on "Try Preview", "No Thanks", "Learn More", "OK" buttons.
 
-- **Data_ChildUIType** - An enum value with a default “Message box”
+- **Data_ChildUIType** - An enum value with a default "Message box"
 
 - **Data_DetachedDuration** - The time a user interacts with UI.
 
-- **Data_UIType** - An enum value with a default “Message box”
+- **Data_UIType** - An enum value with a default "Message box"
 
 
 #### Office.Extensibility.DiscoverTryBuy.Py.PythonTakerFREJourney
@@ -8548,7 +8548,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -8602,7 +8602,7 @@ This is also required to track Smart Capture / New Note (which are some of the c
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -8634,7 +8634,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_ContextHostApp** – Host app that note was taken in context of
 
@@ -8698,7 +8698,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -8775,7 +8775,7 @@ This is required for detailed analysis of how user interacts with the app, thus 
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -8807,7 +8807,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -8859,7 +8859,7 @@ The following fields are collected:
 
 - **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
 
-- **Data_source** - Is the selected note a related note, recent note or result of a search operation
+- **Data_source** - Is the selected note a related note, recent note, or result of a search operation
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
@@ -8867,7 +8867,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -8962,7 +8962,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -9017,7 +9017,7 @@ This is also required to track Recall of a note (which is one of the core action
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -9049,7 +9049,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_ContextHostApp** - Host app that note was taken in context of
 
@@ -9109,7 +9109,7 @@ The following fields are collected:
 
 - **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
 
-- **Data_source** - Is the selected note a related note, recent note or result of a search operation
+- **Data_source** - Is the selected note a related note, recent note, or result of a search operation
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
@@ -9117,7 +9117,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -9212,7 +9212,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -9262,7 +9262,7 @@ Please note that this event won’t be logged multiple times while a search term
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -9294,7 +9294,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -9348,7 +9348,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -10003,7 +10003,7 @@ The following fields are collected:
 
 #### Office.Word.FileOpen.UserInitiatedOpen 
 
-This event is triggered when a user opens a Word document. The event monitors whether “file open” is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
+This event is triggered when a user opens a Word document. The event monitors whether "file open" is working as expected. The data is used to calculate monthly active users/devices, and cloud reliability metrics.
  
 The following fields are collected:
 
@@ -10101,7 +10101,7 @@ The following fields are collected:
 
 - **Data_EditorsCount** - Number of editors in the document 
 
-- **Data_FFileInUseDialog** - Indicates that ‘File in Use’ dialog box appeared while opening this document.
+- **Data_FFileInUseDialog** - Indicates that "File in Use" dialog box appeared while opening this document.
 
 - **Data_FHasWPMUnsafeEdit** - Indicates that the document has WPM unsupported contents upon open.
 
@@ -11167,7 +11167,7 @@ The following fields are collected:
 
 - **deny_list_reason** - Tells us if there's a reason why we should disregard this data. Some examples include launching due to a remote notification and launching due to a background fetch.
 
-- **step_premain** – Tells us the amount of time it has taken for Outlook to go from the user tapping the icon to step0_main the “main” step defined in this document.
+- **step_premain** – Tells us the amount of time it has taken for Outlook to go from the user tapping the icon to step0_main the "main" step defined in this document.
 
 - **step0_main** - Tells us the amount of time it has taken for Outlook to get to the "main" step, which is a step defined by Apple.
 
@@ -11845,7 +11845,7 @@ The following fields are collected on iOS:
 
 #### Office.OfficeMobile.AppActivation.Launch
 
-This event identifies first time and subsequent activations through external triggers that activate the app. App activation loads certain dependencies that are responsible for making the app run smoothly and this event will record if it loaded successfully. It will also record the source of activation and app intent that was responsible for activating the app
+This event identifies first time and subsequent activations through external triggers that activate the app. App activation loads certain dependencies that are responsible for making the app run smoothly and this event will record if it loaded successfully. It will also record the source of activation and app intent that was responsible for activating the app.
 
 The following fields are collected:
 
@@ -12479,7 +12479,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.HasUserEditedDocument
 
-Collected when a user starts editing a document. Microsoft uses this data to calculate active users who edited a PowerPoint document
+Collected when a user starts editing a document. Microsoft uses this data to calculate active users who edited a PowerPoint document.
 
 The following fields are collected:
 
@@ -12574,7 +12574,7 @@ Triggered when app is booted (user action) and is required to compute usage.
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -12606,7 +12606,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_clientSessionId** - Client Session ID
 
@@ -12662,7 +12662,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -13374,11 +13374,11 @@ The following fields are collected:
 
 Common Fields (documented once for the set of Required events for the app) 
 
-- **AppInfo.Env** - Application environment, “debug” or “ship” based on the build of the application
+- **AppInfo.Env** - Application environment, "debug" or "ship" based on the build of the application
 
 - **AppInfo.Name** - "olk" (Outlook) 
 
-- **AppInfo.UpdateRing** - The update ring of the app (for example, “Dogfood”, “Production”)
+- **AppInfo.UpdateRing** - The update ring of the app (for example, "Dogfood", "Production")
 
 - **AppInfo.Version** - String specifying the application version (for example, 1.2022.805.100)
 
@@ -13655,7 +13655,7 @@ Office privacy settings
 
 #### Office.Android.DocsUI.Views.UpsellBlockedAADC
  
-This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in Word, Excel or PowerPoint mobile app. We'll use the data to summarize how many upsell opportunities were lost due to age compliance.
+This event captures that subscription upsell was blocked for non-adult users when they encountered the upsell message in Word, Excel, or PowerPoint mobile app. We'll use the data to summarize how many upsell opportunities were lost due to age compliance.
  
 The following fields are collected: 
 
@@ -14169,7 +14169,7 @@ The following fields are collected:
 
 #### Office.Extensibility.VbaTelemetryBreak
 
-Event generated when a macro-enabled file runs into a compile or runtime error
+Event generated when a macro-enabled file runs into a compile or runtime error.
 
 Desktop Analytics: This is used as numerator in the computation of enterprise-specific health status for macro types (for example, Word macros, Excel macros, etc.) which is used to infer during pilot if the add-in is "ready to upgrade" in the production ring.
 
@@ -14457,7 +14457,7 @@ The following fields are collected:
 
 - **Method** - COM method of add-in that led to crash 
 
-- **TelemetryContext** - Context of the add-in and client session. (Consumer or enterprise session, public add-in or private add-in)
+- **TelemetryContext** - Context of the add-in and client session. (Consumer or enterprise session, public add-in, or private add-in)
 
 #### Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
@@ -15779,7 +15779,7 @@ The following fields are collected:
 
 - **HasUserHint** - A flag indicating whether User Principal Name is prefilled.
 
-- **MSASignUp** - A flag indicating whether we will create a new MSA account or not.
+- **MSASignUp** - A flag indicating whether we'll create a new MSA account or not.
 
 - **ProfileAction** - A flag indicating whether a new profile was created or not.
 
@@ -16049,7 +16049,7 @@ The following fields are collected:
 - **Data_Doc_ActivationFQDN** - Domain name of the Provider app for a file activation scenario
 (only first party app info is being logged).
 
-- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using “picture to pdf” action, using “document to pdf” action, etc.)
+- **Data_Doc_CreateTelemetryReason** – Telemetry reason for PDF creation.(for example: Create from scan, using "picture to pdf" action, using "document to pdf" action, etc.)
 
 - **Data_Doc_DownloadDurationms** - Time to download a PDF cloud file.
 
@@ -16079,7 +16079,7 @@ browse, File Activation, Protocol Activation, etc.).
 
 *[This event was previously named OneNote.Sync.ProvisioningCompleted.]*
 
-The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health
+The critical signal used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health.
 
 The following fields are collected: 
 
@@ -16116,7 +16116,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.Sync.ProvisioningStarted.]*
 
-The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health
+The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health.
 
 The following fields are collected: 
 
@@ -16469,7 +16469,7 @@ The following fields are collected:
 
 Triggered when both of the below conditions are true:
 - First sync is done
-- OneNote Sticky Notes boot has completed. OneNote Sticky Notes boot is said to be done when the one of the below 3 conditions are true:
+- OneNote Sticky Notes boot has completed. OneNote Sticky Notes boot is said to be done when the one of the below three conditions are true:
    - Initial sync has completed
    - Initial sync has failed
    - Something is being displayed in notes list (either notes or fishbowl)
@@ -16496,7 +16496,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -16701,7 +16701,7 @@ The following fields are collected:
 
 - **batched_is_main_thread** - Tells us whether the event happened on the main thread. Similar to is_main_thread, except batched_is_main_thread is sending data for multiple instances.
 
-- **batched_is_treatment** - Whether the current perf event is generated in a treatment flight, it is used when we measure and compare the performance data for control group and treatment group in a flight. Similar to is_treatment, except batched_is_treatment is sending data for multiple instances.
+- **batched_is_treatment** - Whether the current perf event is generated in a treatment flight, it's used when we measure and compare the performance data for control group and treatment group in a flight. Similar to is_treatment, except batched_is_treatment is sending data for multiple instances.
 
 - **batched_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue. Similar to total_time_elapsed, except batched_time_elapsed is sending data for multiple instances.
 
@@ -16719,7 +16719,7 @@ The following fields are collected:
 
 -	**has_work_profile** - indicates whether the app is running under Android Work Profile or similar configuration, in order to correlate performance analysis to these environments.
 
-- **is_treatment** - whether the current perf event is generated in a treatment flight. It is used when we measure and compare the performance data for control group and treatment group in a flight.
+- **is_treatment** - whether the current perf event is generated in a treatment flight. It's used when we measure and compare the performance data for control group and treatment group in a flight.
 
 - **memorySummary** - information about amount of memory used
 
@@ -17144,7 +17144,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOfficeActivationLatency
 
-Critical data to collect end-to-end file open time for all file opens in Windows, Excel, PowerPoint apps.  This is used by Microsoft to find out the metric for file open performance of our apps
+Critical data to collect end-to-end file open time for all file opens in Windows, Excel, PowerPoint apps.  This is used by Microsoft to find out the metric for file open performance of our apps.
 
 The following fields are collected:
 
@@ -17465,7 +17465,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17473,7 +17473,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17481,7 +17481,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicy
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -17489,7 +17489,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -17497,7 +17497,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17505,7 +17505,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -17513,7 +17513,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17521,7 +17521,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17529,7 +17529,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
   
@@ -17537,7 +17537,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17545,7 +17545,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17561,7 +17561,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17577,7 +17577,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17585,7 +17585,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17593,7 +17593,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17601,7 +17601,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17609,7 +17609,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUpdateToken
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -17793,7 +17793,7 @@ The following fields are collected:
 
 #### Office.Extensibility.Sandbox.ODPErrorNotification
 
-Tracks the various error notifications received from the sandbox. Used to detect the error scenarios in sandbox and there by fixing it, to improve productivity of the user
+Tracks the various error notifications received from the sandbox. Used to detect the error scenarios in sandbox and there by fixing it, to improve productivity of the user.
  
 The following fields are collected:
 
@@ -17971,7 +17971,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -18142,7 +18142,7 @@ The following fields are collected:
 
 #### Office.Outlook.Desktop.OutlookPrivsDlgSingleUser.LoadFail
 
-This rule collects Calendar Sharing errors when adding a new user (of type EX or SMTP) from the Address book. This data is used to diagnose and resolve issues detected in the Calendar Sharing dialog
+This rule collects Calendar Sharing errors when adding a new user (of type EX or SMTP) from the Address book. This data is used to diagnose and resolve issues detected in the Calendar Sharing dialog.
 
 The following fields are collected:
 
@@ -18180,7 +18180,7 @@ Triggered when action dispatch fails (machine action) and is required for crash 
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18202,7 +18202,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -18266,7 +18266,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -18329,7 +18329,7 @@ Triggered when an exception occurs while converting draft key to id (machine act
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18361,7 +18361,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Error_Code** - Error Code
 
@@ -18425,7 +18425,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -18493,7 +18493,7 @@ Triggered when a 400 error occurs (machine action) and is required for crash inv
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18521,7 +18521,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -18587,7 +18587,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -18656,7 +18656,7 @@ Triggered when an exception occurs while logging count of note references (machi
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18684,7 +18684,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -18799,7 +18799,7 @@ Triggered when an error occurs while setting the profile picture (user action) a
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18831,7 +18831,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_EventName** - A unique name of a OneNote's event. OneNote events use this custom field to specify a unique name due to an engineering limitation in the past.
 
@@ -18881,7 +18881,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -18951,7 +18951,7 @@ Triggered when a react crash ocurs (machine action) and is required for crash in
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -18983,7 +18983,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Error_Code** - Error Code
 
@@ -19041,7 +19041,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -19111,7 +19111,7 @@ Triggered when an unexpected event occurs (machine action) and is required for c
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -19139,7 +19139,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -19254,7 +19254,7 @@ Triggered when there's a length mismatch between text and char metadata (machine
 
 The following fields are collected:
 
-- **Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **baseData_properties_version** - Version of properties such as PostChannel and PrivacyGuardPlugin 
 
@@ -19286,7 +19286,7 @@ The following fields are collected:
 
 - **Data_AppInfo_Version** - Version of the host application 
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Error_Code** - Error Code
 
@@ -19344,7 +19344,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -19636,7 +19636,7 @@ The following fields are collected:
 
 #### core.data.diagnostics 
 
-Allows us to detect and fix situations where our email storage is using up too much of your device storage space
+Allows us to detect and fix situations where our email storage is using up too much of your device storage space.
 
 The following fields are collected:
 
@@ -19736,7 +19736,7 @@ The following fields are collected for Android:
 
 #### low.storage.warning
 
-This is needed to monitor if our app suddenly takes up most of your device storage due to high memory usage by indicating when the device is low on storage
+This is needed to monitor if our app suddenly takes up most of your device storage due to high memory usage by indicating when the device is low on storage.
 
 The following fields are collected: 
 
