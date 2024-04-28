@@ -254,7 +254,7 @@ The update deadline is used to ensure updates are applied in a specified timefra
 
 - The deadline is uniquely calculated for each device once the first installation attempt fails. For example, the deadline is set to three days. A device comes online two days after patch Tuesday and receives the update. Outlook is open so the update fails to apply in the background due to a running app. The three day deadline is now applied.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
-- Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, the user can postpone only once.
+- Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
 - If the deadline is set to zero, users immediately receive a prompt to update if apps are open, with the option to delay the update.
 - When users choose to postpone, the update can still be applied under other conditions. For example, if the device reboots or if [Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901) applies.
