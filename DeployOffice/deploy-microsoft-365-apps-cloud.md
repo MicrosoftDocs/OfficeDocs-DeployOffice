@@ -12,7 +12,7 @@ ms.collection:
 ms.localizationpriority: medium
 recommendations: false
 description: "Step-by-step instructions for deploying Microsoft 365 Apps to client computers from the Office Content Delivery Network (CDN) by using the Office Deployment Tool (ODT)."
-ms.date: 01/24/2024
+ms.date: 04/29/2024
 ---
 
 # Deploy Microsoft 365 Apps from the cloud
@@ -56,7 +56,7 @@ To deploy Microsoft 365 Apps to the Current Channel group, you use a configurati
  - **Language:** Include all the language packs you plan to deploy. We recommend selecting **Match operating system** to automatically install the same languages that are in use by the operating system and any user on the client device. 
  - **Installation:** Select **Office Content Delivery Network (CDN)**. To silently install Office for your users, choose **Off** for **Show installation to user**.
  - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
- - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
+ - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the Microsoft Software License Terms**.
  - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\M365** folder.
 
