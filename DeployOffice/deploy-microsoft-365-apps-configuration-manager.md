@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)."
-ms.date: 03/01/2023
+ms.date: 04/29/2024
 ---
 
 # Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)
@@ -78,7 +78,7 @@ Create a Microsoft 365 Apps application using the steps below.
       - **Update channel:** Choose **Monthly Enterprise Channel**.
       - **Languages:** Include all the language packs you plan to deploy.
       - **Upgrades:** Choose to automatically remove all previous MSI versions of Office.
-      - **Additional properties:** To silently install the application for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the EULA**.
+      - **Additional properties:** To silently install the application for your users, choose **Off** for the **Display level** and **On** for the **Automatically accept the Microsoft Software License Terms**.
       - **Application settings:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats.
 5. When you've completed the configuration, select **Submit**.
 6. On the **Deployment** page, select **Yes** to deploy the application, and then select **Next**.
