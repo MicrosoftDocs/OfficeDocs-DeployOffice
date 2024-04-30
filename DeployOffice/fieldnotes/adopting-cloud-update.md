@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 04/24/2024
+ms.date: 04/28/2024
 ---
 
 # Enabling and configuring Cloud Update
@@ -116,7 +116,7 @@ This section details how cloud update delivers updates and what admins can expec
 
 1. If the file operation fails due to running applications, the device records a timestamp and the deadline setting comes into play. The update engine retries the update multiple times per day, during device reboot, or when the device is locked and idle ([Update Under Lock](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)). This continues silently until the recorded timestamp plus the deadline setting days have passed.
 
-1. If the deadline passes, a prompt is shown to the user, offering the option to close the applications now or postpone the installation. The user can postpone the update installation for about 48 hours before a final two-hour countdown is shown. If the user chooses to close the applications or the countdown reaches zero, the Microsoft 365 Apps save any open files, close all applications, apply the update, restore all windows, and reopen the files. On average, user downtime is less than five minutes.
+1. If the deadline passes, a prompt is shown to the user, offering the option to close the applications now or postpone the installation. The user can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, the user can postpone only once. If the user chooses to close the applications or the countdown reaches zero, the Microsoft 365 Apps save any open files, close all applications, apply the update, restore all windows, and reopen the files. On average, user downtime is less than five minutes.
     - Note two special cases:
         - If the deadline is set to 0, the first prompt appears immediately after the first failed update attempt, but the user can still postpone the update.
         - Even if the user postpones the update, the update engine continues to try to apply it. For instance, if the user postpones the update and then reboots the device, the update will be applied during reboot without further prompts.
