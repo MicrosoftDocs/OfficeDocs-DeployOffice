@@ -94,6 +94,7 @@
 ### [Deploy Visio](deployment-guide-for-visio.md)
 ### [Deploy Teams](teams-install.md)
 ### [Deploy OneNote](deployment-guide-onenote.md)
+### [Deploy Places](deployment-guide-for-places.md)
 ### [Install volume licensed versions by using the Office Deployment Tool](use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md)
 ### [Install different versions of Office, Project, and Visio on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md)
 
