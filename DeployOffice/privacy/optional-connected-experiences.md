@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 04/18/2023
+ms.date: 04/18/2024
 ---
 
 # Overview of optional connected experiences in Office
