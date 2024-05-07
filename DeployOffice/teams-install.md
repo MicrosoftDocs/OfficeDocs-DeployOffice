@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
-ms.date: 03/26/2024
+ms.date: 05/07/2024
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
@@ -57,17 +57,19 @@ The date that Teams was included with ***new*** installations of Microsoft 365 A
 ## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
 
 > [!NOTE]
+> New installations of Microsoft 365 Apps may include the new Microsoft Teams app starting with Version 2311. Previous versions may include the Classic Teams app.
+> 
 > After new Teams is installed, users will automatically switch to the new Microsoft Teams. Afterward, they can switch back to classic Teams by selecting the "New Teams" toggle switch.
 
-The new Microsoft Teams installation date with Microsoft 365 Apps depends on which update channel you're using. The following table shows the schedule.
+The new Microsoft Teams app may install for existing installations of Microsoft 365 Apps, depending on which update channel you're using. The following table shows the schedule.
 
 | Plan | Channel | Date |
 |---------|---------|---------|
-|Business | |Late September 2023 |
-|Enterprise |Office Beta Channel and Current Channel (Preview) |Late September 2023 |
-|Enterprise |Current Channel |October 2023 |
-|Enterprise |Monthly Enterprise Channel and Semi-Annual Enterprise Channel (Preview) |November 2023|
-|Enterprise |Semi-Annual Enterprise Channel |December 2023| 
+| Business | | Late September 2023 |
+| Enterprise | Office Beta Channel and Current Channel (Preview) | Late September 2023 |
+| Enterprise | Current Channel | October 2023 |
+| Enterprise | Monthly Enterprise Channel and Semi-Annual Enterprise Channel (Preview) | November 2023 |
+| Enterprise | Semi-Annual Enterprise Channel | December 2023 |
 
 ## How to exclude Microsoft Teams from new installations of Microsoft 365 Apps
 
