@@ -7,9 +7,10 @@ title: Manage updates in new Outlook for Windows
 description: Describes how to manage updates in new Outlook for Windows that deliver features through a Targeted Release or Standard Release ring.
 author:      JanelleMcIntosh-MSFT # GitHub alias
 ms.author: janellem
+manager: serdars
 ms.service: outlook
 ms.topic: conceptual
-ms.date:     05/06/2024
+ms.date: 05/07/2024
 ---
 
 # Manage updates in new Outlook for Windows
