@@ -38,14 +38,12 @@ If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#mi
 If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [Shared computer and VDI environments with Microsoft Teams](#shared-computer-and-vdi-environments-with-microsoft-teams).
 
 
-## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
+## When did Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
-New installations of Microsoft 365 Apps may include the new Microsoft Teams app starting with Version 2311. Previous versions may include the Classic Teams app.
-
-The new Microsoft Teams app may install for existing installations of Microsoft 365 Apps, depending on which [update channel](updates/overview-update-channels.md) you're using. The following table shows the schedule.
+The date that Teams was included with ***new*** installations of Microsoft 365 Apps depended on which [update channel](updates/overview-update-channels.md) you were using. The following table shows the schedule.
 
 | Update channel | Version | Date |
-|----------------|---------|------|
+|---------|---------|---------|
 |Current Channel |Version 1902 | March 4, 2019  |
 |Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
 |Semi-Annual Enterprise Channel (Preview)| Version 1902   | March 12, 2019  |
@@ -56,21 +54,22 @@ The new Microsoft Teams app may install for existing installations of Microsoft 
 > - Microsoft 365 Apps for business: Microsoft 365 Apps for business is the version of Office that's included with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 > - Office for Mac: Office for Mac comes with any plan that includes Microsoft 365 Apps. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
 
-
 ## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
 
 > [!NOTE]
+> New installations of Microsoft 365 Apps may include the new Microsoft Teams app starting with Version 2311. Previous versions may include the Classic Teams app.
+> 
 > After new Teams is installed, users will automatically switch to the new Microsoft Teams. Afterward, they can switch back to classic Teams by selecting the "New Teams" toggle switch.
 
-The new Microsoft Teams installation date with Microsoft 365 Apps depends on which update channel you're using. The following table shows the schedule.
+The new Microsoft Teams app may install for existing installations of Microsoft 365 Apps, depending on which update channel you're using. The following table shows the schedule.
 
 | Plan | Channel | Date |
 |---------|---------|---------|
-|Business | |Late September 2023 |
-|Enterprise |Office Beta Channel and Current Channel (Preview) |Late September 2023 |
-|Enterprise |Current Channel |October 2023 |
-|Enterprise |Monthly Enterprise Channel and Semi-Annual Enterprise Channel (Preview) |November 2023|
-|Enterprise |Semi-Annual Enterprise Channel |December 2023| 
+| Business | | Late September 2023 |
+| Enterprise | Office Beta Channel and Current Channel (Preview) | Late September 2023 |
+| Enterprise | Current Channel | October 2023 |
+| Enterprise | Monthly Enterprise Channel and Semi-Annual Enterprise Channel (Preview) | November 2023 |
+| Enterprise | Semi-Annual Enterprise Channel | December 2023 |
 
 ## How to exclude Microsoft Teams from new installations of Microsoft 365 Apps
 
