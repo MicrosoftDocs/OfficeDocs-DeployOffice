@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with an overview of how Microsoft Teams is automatically installed with Microsoft 365 Apps."
-ms.date: 03/26/2024
+ms.date: 05/07/2024
 ---
 
 # Deploy Microsoft Teams with Microsoft 365 Apps
@@ -38,12 +38,14 @@ If you're using Office for Mac, see [Microsoft Teams installations on a Mac](#mi
 If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [Shared computer and VDI environments with Microsoft Teams](#shared-computer-and-vdi-environments-with-microsoft-teams).
 
 
-## When did Microsoft Teams start being included with new installations of Microsoft 365 Apps?
+## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
 
-The date that Teams was included with ***new*** installations of Microsoft 365 Apps depended on which [update channel](updates/overview-update-channels.md) you were using. The following table shows the schedule.
+New installations of Microsoft 365 Apps may include the new Microsoft Teams app starting with Version 2311. Previous versions may include the Classic Teams app.
+
+The new Microsoft Teams app may install for existing installations of Microsoft 365 Apps, depending on which [update channel](updates/overview-update-channels.md) you're using. The following table shows the schedule.
 
 | Update channel | Version | Date |
-|---------|---------|---------|
+|----------------|---------|------|
 |Current Channel |Version 1902 | March 4, 2019  |
 |Monthly Enterprise Channel |Version 2003 | May 12, 2020  |
 |Semi-Annual Enterprise Channel (Preview)| Version 1902   | March 12, 2019  |
@@ -53,6 +55,7 @@ The date that Teams was included with ***new*** installations of Microsoft 365 A
 > Teams is also included with the following ***new*** installations:
 > - Microsoft 365 Apps for business: Microsoft 365 Apps for business is the version of Office that's included with some Microsoft 365 business plans, such as Microsoft 365 Business Premium.
 > - Office for Mac: Office for Mac comes with any plan that includes Microsoft 365 Apps. For more information, see [Microsoft Teams installations on a Mac](#microsoft-teams-installations-on-a-mac).
+
 
 ## When did installations of Microsoft 365 Apps start including the new Microsoft Teams?
 
