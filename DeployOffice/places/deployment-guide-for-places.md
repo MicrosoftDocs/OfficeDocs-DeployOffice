@@ -152,6 +152,7 @@ Get-DistributionGroup <SG Alias> | fl Name,PrimarySmtpAddress,ExternalDirectoryO
 ```
 
 The following table shows the format you'd use to create the security group for Places:
+
 | Security group | OID |
 |---------|---------|
 |PlaceUserSG|5b290d16-e231-4091-8177-9f3c9bd93712|
@@ -192,3 +193,5 @@ Run the following command to enable Places Web:
 Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<SG OID>@<TID>:true’
 Global default = false
 ```
+
+## Related topics
