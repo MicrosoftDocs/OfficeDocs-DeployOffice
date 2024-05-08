@@ -19,7 +19,7 @@ description: "Provides Office admins with an overview of how to deploy Microsoft
 
 Microsoft Places lets you introduce more flexible work within your organization as an IT administrator. Integrated with Microsoft 365, Microsoft Places helps your users make informed decisions about their work dynamics, which can lead to increased productivity and enhanced collaboration.
 
-This deployment guide will show you how to onboard your tenant to Places by ensuring the following steps are performed:
+This deployment guide shows you how to onboard your tenant to Places by ensuring the following steps are performed:
 
 - Prerequisite step 1 – Confirm Exchange permissions
 - Prerequisite step 2 – Update PowerShell
@@ -35,11 +35,11 @@ Microsoft Places offers three key solution pillars to optimize your work environ
 
 1. Coordinate your work locations: Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
 2. Modernize your workplace: Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
-3. Optimize your physical environment: Leverage data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
+3. Optimize your physical environment: Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
 
 ### Request for access to future functionality
 
-Places also contains functionality that is not included in Public Preview and is exclusive to our early access feedback program. Customers can apply to that program by following this LINK.
+Places also contains functionality that isn't included in Public Preview and is exclusive to our early access feedback program. Customers can request access to the preview by following this LINK.
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ To configure capabilities and enable users with Microsoft Places efficiently, en
 
 1. Run the following command in PowerShell: `winget search Microsoft.PowerShell`.
 
-2. Run the following command to install PowerShell or PowerShell Preview using the id parameter:
+2. Run the following command to install PowerShell or PowerShell Preview using the ID parameter:
 
     `winget install --id Microsoft.Powershell --source winget`
 
@@ -75,7 +75,7 @@ To configure capabilities and enable users with Microsoft Places efficiently, en
 
 The following information is needed to enable your tenant and users for the Preview:
 
-Information is also needed on the users that will have access to the end user features and analytics features. Please provide the information in the following format:
+Information is also needed on the users that will have access to the end user features and analytics features. Provide the information in the following format:
 
 Tenant Domain @yourcompany.onmicrosoft.com, @yourcompany.com
 Tenant ID 5b290d16-e231-4091-8177-9f3c9bd937a2
@@ -92,11 +92,11 @@ Tenant ID 5b290d16-e231-4091-8177-9f3c9bd937a2
 
 ## Deploy
 
-Once you've completed all prerequisite steps, you are now ready to deploy Places to users in your organization:
+Once you've completed all prerequisite steps, you're now ready to deploy Places to users in your organization:
 
 ### Step 1 - Enable core tenant experience for Microsoft Places
 
-These are the cmdlets that are available to tenants to enable/onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets can be used by the tenant admins to enable buildings, apps and location sharing controls.
+These are the cmdlets that are available to tenants to enable/onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets can be used by the tenant admins to enable buildings, apps, and location sharing controls.
 
 Run the following commands to:
 
@@ -113,13 +113,13 @@ Global default = false`
 
 ### Step 2 - Assign users to security groups
 
-Adding or removing users should be through the security group (SG) created - in most cases this should be immediate, but for users and security groups new to the tenant (or have not been active) this could take up to 12 hours.
+Adding or removing users should be through the security group (SG) created - in most cases this should be immediate, but for users and security groups new to the tenant (or haven't been active) this could take up to 12 hours.
 
 #### Create security groups
 
 You should create security groups with the users you plan to pilot to Places. You can add or remove users with security groups and have control over which user gets to access Places.
 
-You can create security groups in two ways – Through Exchange Admin Center (EAC User Interface) or via Powershell:
+You can create security groups in two ways – Through Exchange Admin Center (EAC User Interface) or via PowerShell:
 
 1. Create a security group through Exchange Admin Center:
 https://admin.exchange.microsoft.com/#/groups
@@ -127,7 +127,7 @@ https://admin.exchange.microsoft.com/#/groups
 > [!NOTE]
 > If using UI, "Exchange Admin Center" must be used to create security groups, instead of the "Microsoft Admin Center" or (Entra AC allows also creating some groups), the default "Admin" app linked in the Left Top nav.
 
-2. Run the following commands to create security groups using Powershell:
+2. Run the following commands to create security groups using PowerShell:
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
