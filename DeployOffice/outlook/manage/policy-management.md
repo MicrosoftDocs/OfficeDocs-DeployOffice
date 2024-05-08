@@ -36,7 +36,7 @@ Policy management for mailboxes in the new Outlook for Windows follows the same 
 
 OwaMailboxPolicy is used to manage various features and capabilities, including:
 - Allowing Personal Accounts
-  * The *PersonalAccountsEnabled* parameter specifies whether to allow users to add their personal accounts (for example, Outlook.com, Gmail, or Yahoo!) in the new Outlook for Windows. [Check the sintax here.](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled)
+  * The *PersonalAccountsEnabled* parameter specifies whether to allow users to add their personal accounts (for example, Outlook.com, Gmail, or Yahoo!) in the new Outlook for Windows. [Check the syntax here.](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled)
 - Allowing certain file types (attachments)
   * The *AllowedFileTypes* parameter specifies the attachment file types (file extensions) that can be saved locally or viewed from the new Outlook for Windows. [Check the default values here.](/powershell/module/exchange/set-owamailboxpolicy#-AllowedFileTypes)
 - Google Drive Attachments Enabled
@@ -48,7 +48,7 @@ OwaMailboxPolicy is used to manage various features and capabilities, including:
 - Weather in Calendar
   * The *WeatherEnabled* parameter specifies whether to enable or disable weather information in the calendar in new Outlook for Windows. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-WeatherEnabled)
 - Offline Configuration
-  * The *OfflineEnabledWin* parameter specifies whether to allow the new Outlook for Windows to be used offline. [Check the sintax here.](/powershell/module/exchange/set-owamailboxpolicy#-OfflineEnabledWin)
+  * The *OfflineEnabledWin* parameter specifies whether to allow the new Outlook for Windows to be used offline. [Check the syntax here.](/powershell/module/exchange/set-owamailboxpolicy#-OfflineEnabledWin)
 
 
 OrganizationConfig is another cmdlet for managing various features and capabilities, including:
