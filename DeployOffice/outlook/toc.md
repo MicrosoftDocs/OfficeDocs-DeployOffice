@@ -9,6 +9,7 @@
 ### [Supported accounts](get-started/supported-account-types.md)
 
 ## Manage
+### [Manage updates](manage/manage-updates-new-outlook-windows.md)
 ### [Policy management](manage/policy-management.md)
 ### [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
