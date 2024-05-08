@@ -122,7 +122,7 @@ You should create security groups with the users you plan to pilot to Places. Yo
 You can create security groups in two ways – Through Exchange Admin Center (EAC User Interface) or via PowerShell:
 
 1. Create a security group through Exchange Admin Center:
-https://admin.exchange.microsoft.com/#/groups
+<https://admin.exchange.microsoft.com/#/groups>
 
 > [!NOTE]
 > If using UI, "Exchange Admin Center" must be used to create security groups, instead of the "Microsoft Admin Center" or (Entra AC allows also creating some groups), the default "Admin" app linked in the Left Top nav.
@@ -146,12 +146,12 @@ Get-DistributionGroup PlacesEnabledGroup | ft Name, external*
 ```
 
 Getting the OID:
+
 ```powershell
 Get-DistributionGroup <SG Alias> | fl Name,PrimarySmtpAddress,ExternalDirectoryObjectId
 ```
 
 The following table shows the format you'd use to create the security group for Places:
-
 | Security group | OID |
 |---------|---------|
 |PlaceUserSG|5b290d16-e231-4091-8177-9f3c9bd93712|
@@ -181,6 +181,7 @@ As the Exchange administrator, you can enable Places Web to members of your secu
     ```powershell
     Get-PlacesSettings -Collection Places -ReadFromPrimary | FL
     ```
+
 #### Step 3 - Activate clients
 
 Enable features in the Places Web App. The EnablePlacesApps setting is used by Places to launch Core features.
