@@ -127,7 +127,7 @@ You can create security groups in two ways – Through Exchange Admin Center (EA
 <https://admin.exchange.microsoft.com/#/groups>
 
 > [!NOTE]
-> If using UI, "Exchange Admin Center" must be used to create security groups, instead of the "Microsoft Admin Center" or (Entra AC allows also creating some groups), the default "Admin" app linked in the Left Top nav.
+> If using UI, Exchange Admin Center must be used to create security groups, instead of the Microsoft Admin Center or (Entra AC allows also creating some groups), the default Admin app linked in the top left navigation.
 
 2. Run the following commands to create security groups using PowerShell:
 
