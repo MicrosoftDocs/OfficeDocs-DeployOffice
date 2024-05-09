@@ -220,3 +220,5 @@ Places is available as a Teams app within Team and Outlook. Steps to enable Meta
 #### Configure the iOS app for compliant distribution
 
 The iOS app is an opt-in feature. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
+
+## Related articles
