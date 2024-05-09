@@ -33,9 +33,17 @@ This deployment guide shows you how to onboard your tenant to Places by ensuring
 
 Microsoft Places offers three key solution pillars to optimize your work environment:
 
-1. Coordinate your work locations: Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
-2. Modernize your workplace: Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
-3. Optimize your physical environment: Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
+#### Coordinate your work locations
+
+Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
+
+#### Modernize your workplace
+
+Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
+
+#### Optimize your physical environment
+
+Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
 
 ### Request for access to opt-in functionality
 
@@ -93,7 +101,7 @@ These cmdlets are available to tenants to enable or onboard to Places Public Pre
 > When a setting is added or changed, please wait for 1 day for the settings to replicate.
 
 > [!NOTE]
-> Microsoft Places cmdlets must be run in a separate window than the Exchange PowerShell cmdlets. If you use proxies, see [PowerShell documentation](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.4) for more information.
+> Microsoft Places cmdlets must be run in a separate window than the Exchange PowerShell cmdlets. If you use proxies, see [PowerShell documentation](/powershell/module/microsoft.powershell.utility/invoke-webrequest) for more information.
 
 Run the following commands to:
 
@@ -211,11 +219,11 @@ Location-Aware features are available through Teams. By opting into the Teams Pu
 - Chat with nearby colleagues using the @nearby mention.
 - Manage their location sharing controls.
 
-To opt in to the Teams Public Preview Ring, see [Microsoft Teams Public preview for more information](https://learn.microsoft.com/microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
+To opt in to the Teams Public Preview Ring, see [Microsoft Teams Public preview for more information](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
 
 #### Publish the Places Teams app
 
-Places is available as a Teams app within Team and Outlook. Steps to enable MetaOS Apps in Teams and Outlook can be found in [Manage your apps in the Microsoft Teams admin center](https://learn.microsoft.com/microsoftteams/manage-apps).
+Places is available as a Teams app within Team and Outlook. Steps to enable MetaOS Apps in Teams and Outlook can be found in [Manage your apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
 
 #### Configure the iOS app for compliant distribution
 
