@@ -7,7 +7,7 @@ ms.date: 05/13/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
-ms.collection: 
+ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Microsoft Places to users in their organization."
@@ -37,9 +37,9 @@ Microsoft Places offers three key solution pillars to optimize your work environ
 2. Modernize your workplace: Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
 3. Optimize your physical environment: Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
 
-### Request for access to future functionality
+### Request for access to opt-in functionality
 
-Places also contains functionality that isn't included in Public Preview and is exclusive to our early access feedback program. Customers can request access to the preview by following this LINK.
+Places has features that are available through an opt-in. See (link) for more information.
 
 ## Prerequisites
 
@@ -71,16 +71,7 @@ To configure capabilities and enable users with Microsoft Places efficiently, en
 
     `winget install --id Microsoft.Powershell.Preview --source winget`
 
-### Prerequisite step 3 - Gather onboarding information
-
-The following information is needed to enable your tenant and users for the Preview:
-
-Information is also needed on the users that will have access to the end user features and analytics features. Provide the information in the following format:
-
-Tenant Domain @yourcompany.onmicrosoft.com, @yourcompany.com
-Tenant ID 5b290d16-e231-4091-8177-9f3c9bd937a2
-
-### Prerequisite step 4 - Install the Microsoft Places module
+### Prerequisite step 3 - Install the Microsoft Places module
 
 1. Run PowerShell (v7)
 2. Install the latest Places PowerShell client using the following cmdlet:
@@ -94,9 +85,15 @@ Tenant ID 5b290d16-e231-4091-8177-9f3c9bd937a2
 
 Once you've completed all prerequisite steps, you're now ready to deploy Places to users in your organization:
 
-### Step 1 - Enable core tenant experience for Microsoft Places
+### Step 1 - Initiate Microsoft Places
 
-These are the cmdlets that are available to tenants to enable/onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets can be used by the tenant admins to enable buildings, apps, and location sharing controls.
+These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features are available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
+
+> [!NOTE]
+> When a setting is added or changed, please wait for 1 day for the settings to replicate.
+
+> [!NOTE]
+> Microsoft Places cmdlets must be run in a separate window than the Exchange PowerShell cmdlets. If you use proxies, see [PowerShell documentation](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7.4) for more information.
 
 Run the following commands to:
 
@@ -106,10 +103,8 @@ Run the following commands to:
 - Collect existing places (signals the Places Directory to create OS tables and set up the routing tables so that buildings can be provisioned): `Set-PlacesSettings -Collection Places -EnableBuildings ‘Default:true’
 Global default = false`
 
-- Enable features in the Places Web App (The EnablePlacesApps setting is used by Places to launch Core features): `Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<SG OID>@<TID>:true
-Global default = false`
-
-- Enable location Sharing: Tenants can use the `Set-MailboxCalendarConfiguration` to set LocationDetailsInFreeBusy for each user. The Places web app has UI allowing users to set their own Location Details in the app.
+- Enable features in the Places Web App: `Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<SG OID>@<TID>:true
+Global default = false`.
 
 ### Step 2 - Assign users to security groups
 
@@ -159,10 +154,21 @@ The following table shows the format you'd use to create the security group for 
 
 #### Enable users
 
-As the Exchange administrator, you can enable Places Web to members of your security group.
+As the Exchange administrator, you can enable Places for all members of your tenant or for a select subset via mail-enabled security group.
+
+#### Enable Places for all users in your tenant
+
+Places can be rolled out to all users in your tenant by running the following cmdlet:
+
+```powershell
+Set-PlacesSettings -Collection Places -EnablePlacesMobileApp 'Default:true'
+Set-PlacesSettings -Collection Places -EnablePlacesWebApp 'Default:true'
+```
+
+#### Enable Places to a subset of users in your tenant
 
 > [!NOTE]
-> It can take up to 12 hours for settings to take effect. Adding or removing users should be through the security groups created - in most cases this should be immediate, but for users and security groups new to the tenant (or have not been active) this could take up to 12 hours.
+> It can take up to 24 hours for settings to take effect. Adding or removing users should be through the security groups created - in most cases this should be immediate, but for users and security groups new to the tenant (or have not been active) this could take up to 24 hours.
 
 1. Connect to the Microsoft Places service in PowerShell:
 
@@ -183,15 +189,34 @@ As the Exchange administrator, you can enable Places Web to members of your secu
     Get-PlacesSettings -Collection Places -ReadFromPrimary | FL
     ```
 
-#### Step 3 - Activate clients
+### Step 3 - Activate clients
 
-Enable features in the Places Web App. The EnablePlacesApps setting is used by Places to launch Core features.
+#### Enable the Places Web App
 
-Run the following command to enable Places Web:
+ The Places Web app is turned off by default. It should have already been turned on in "Enable Users" step. To ensure the WebApp is enabled for all users, run the following cmdlet:
 
 ```powershell
-Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<SG OID>@<TID>:true’
-Global default = false
+Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<PlacesUserSG OID>@<TID>:true’
 ```
 
-## Related topics
+#### Deploy new Outlook
+
+Features from Places are available in the latest version of Outlook. To enable these, utilize these details how to enable users for the Outlook for Windows.
+
+#### Enable Location-Aware features
+
+Location-Aware features are available through Teams. By opting into the Teams Public Preview ring, your users gain location-aware services allowing them to:
+
+- View nearby colleagues based on their current location.
+- Chat with nearby colleagues using the @nearby mention.
+- Manage their location sharing controls.
+
+To opt in to the Teams Public Preview Ring, see [Microsoft Teams Public preview for more information](https://learn.microsoft.com/microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
+
+#### Publish the Places Teams app
+
+Places is available as a Teams app within Team and Outlook. Steps to enable MetaOS Apps in Teams and Outlook can be found in [Manage your apps in the Microsoft Teams admin center](https://learn.microsoft.com/microsoftteams/manage-apps).
+
+#### Configure the iOS app for compliant distribution
+
+The iOS app is an opt-in feature. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
