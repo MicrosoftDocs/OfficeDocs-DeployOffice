@@ -21,13 +21,13 @@ Microsoft Places lets you introduce more flexible work within your organization 
 
 This deployment guide shows you how to onboard your tenant to Places by ensuring the following steps are performed:
 
-- Prerequisite step 1 – Confirm Exchange permissions
-- Prerequisite step 2 – Update PowerShell
-- Prerequisite step 3 – Gather onboarding information
-- Prerequisite step 4 – Install the Microsoft Places module
-- Step 1 - Enable core tenant experience for Microsoft Places
-- Step 2 – Assign users to security groups
-- Step 3 – Activate clients
+- [Prerequisite step 1 – Confirm Exchange permissions](#Prerequisite-step-1---Confirm-Exchange-permissions)
+- [Prerequisite step 2 – Update PowerShell](#Prerequisite-step-2---Update-PowerShell)
+- [Prerequisite step 3 – Install the Microsoft Places module](#Prerequisite-step-3---Install-the-Microsoft-Places-module)
+- [Step 1 - Enable core tenant experience for Microsoft Places](#Step-1---Initiate-Microsoft-Places)
+- [Step 2 – Assign users to security groups](#Step-2---Assign-users-to-security-groups)
+- [Step 3 – Activate clients](#Step-3---Activate-clients)
+)
 
 ### Understanding the core solutions
 
@@ -81,7 +81,7 @@ To configure capabilities and enable users with Microsoft Places efficiently, en
 
 ### Prerequisite step 3 - Install the Microsoft Places module
 
-1. Run PowerShell (v7)
+1. Run PowerShell (v7).
 2. Install the latest Places PowerShell client using the following cmdlet:
 
     `Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force`
