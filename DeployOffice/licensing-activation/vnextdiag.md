@@ -11,7 +11,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: Learn about using vnextdiag.ps1 to check the license and activation status of Microsoft 365 Apps.
-ms.date: 04/26/2023
+ms.date: 03/15/2024
 ---
 
 # Check the license and activation status for Microsoft 365 Apps
