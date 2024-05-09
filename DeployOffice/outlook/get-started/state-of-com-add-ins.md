@@ -26,7 +26,7 @@ This article helps you determine whether your organization and its users still r
 
 ## Identifying installed COM add-ins
 
-You can view the COM add-ins installed for your organization’s users via the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://admin.microsoft.com). To locate your installed apps, follow the instructions [here](/DeployOffice/admincenter/microsoft-365-apps-health#add-in-health.md), ensuring you filter for only the Outlook add-ins.
+You can view the COM add-ins installed for your organization’s users via the Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center](https://config.microsoft.com). To locate your installed apps, follow the instructions [here](/DeployOffice/admincenter/microsoft-365-apps-health#add-in-health.md), ensuring you filter for only the Outlook add-ins.
 
 Individual users can find what COM add-ins are installed on their devices by navigating to **Outlook** > **File** > **Options** > **Add-ins**.
 
