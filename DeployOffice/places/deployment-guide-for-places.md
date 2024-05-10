@@ -117,15 +117,13 @@ As the Exchange administrator, you can enable Places for all members of your ten
 
 #### Enable Places for all users in your tenant
 
-In the latest version of PowerShell, run the following cmdlet to connect to Places:
+In the latest version of PowerShell, run the following command to connect to Places:
 
 ```powershell
 Connect-MicrosoftPlaces    
 ```
 
-#### Enable Places Web app and Places Mobile app for all users
-
-To enable Places Web app and Places Mobile app for all users, run the following cmdlet in PowerShell:
+Once you've connected to Places, enable Places Web app and Places Mobile app for all users by running the following command in PowerShell:
 
 ```powershell
 Set-PlacesSettings -Collection Places -EnablePlacesMobileApp 'Default:true'
@@ -158,21 +156,11 @@ Global default = false
 
 ### Step 2 - Activate clients
 
-#### Enable the Places Web app
-
- The Places Web app is turned off by default.  It should have already been turned on in “Enable Places for all users in your tenant” step.
-
-To ensure the WebApp is enabled for all users, run the following cmdlet:
-
-```powershell
-Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<PlacesUserSG OID>@<TID>:true’
-```
-
 See the table below to learn more about activating different clients for Places:
 
 |Client|Result|
 |----|----|
-|Places Web app|Enabling the Places Web app for your tenants is the first step in providing Places features.|
+|[Places Web app](#step-1---enable-microsoft-places-and-start-coordinating-work-locations)|Enabling the Places Web app for your tenants is the first step in providing Places features.|
 |[New Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)|Places features are available in the latest version of Outlook.|
 |[Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client)|Opt-in to Teams Public Preview to enable Places location aware features in Teams.|
 |[Places Teams app](/microsoftteams/manage-apps)|Places is available as a Teams app within Teams and Outlook|
