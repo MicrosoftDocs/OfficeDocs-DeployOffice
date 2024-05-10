@@ -87,7 +87,7 @@
 ### [Change installation from 32-bit to 64-bit](change-bitness.md)
 ### [Remove existing MSI versions when upgrading](upgrade-from-msi-version.md)
 
-## [New Outlook for Windows](outlook/overview-new-outlook.md)
+## [New Outlook for Windows](outlook/toc.yml)
 
 ## Project, Visio, Teams, and OneNote
 ### [Deploy Project](deployment-guide-for-project.md)
