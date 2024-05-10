@@ -351,7 +351,7 @@ Set when pictures are automatically downloaded from the internet for email.
 |Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
 |Requires Configuration Profile| No |
 |Availability|16.17 |
-|Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
+|Comments| Found under **Outlook** > **Settings** > **Email** > **Reading** > **Download external images**.  |
 
 ### Disable signatures
 
