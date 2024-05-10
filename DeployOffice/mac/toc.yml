@@ -1,0 +1,69 @@
+items:
+  - name: Deployment guide for Office for Mac
+    items:
+      - name: Deployment guide
+        href: deployment-guide-for-office-for-mac.md
+      - name: Overview of Office for Mac
+        href: overview.md
+      - name: Privacy controls
+        href: ../privacy/mac-privacy-preferences.md
+
+      - name: Activate
+        items:
+          - name: Overview
+            href: overview-of-activation-for-office-for-mac.md
+          - name: Licensing helper tool
+            href: licensing-helper-tool.md
+          - name: Volume License (VL) Serializer
+            href: volume-license-serializer.md
+
+      - name: Deploy
+        items:
+          - name: Deploy from the Mac App Store
+            href: deploy-mac-app-store.md
+          - name: Deployment options
+            href: deployment-options-for-office-for-mac.md
+
+      - name: Manage updates
+        items:
+          - name: Deploy updates
+            href: deploy-updates-for-office-for-mac.md
+          - name: Release notes
+            href: /officeupdates/release-notes-office-for-mac
+          - name: Update history
+            href: /officeupdates/update-history-office-for-mac
+
+      - name: Microsoft AutoUpdate (MAU)
+        items:
+          - name: Configure preferences
+            href: mau-preferences.md
+          - name: Deferred updates
+            href: mau-deferred-updates.md
+          - name: Release history
+            href: /officeupdates/release-history-microsoft-autoupdate
+          - name: Set a deadline
+            href: mau-deadline.md
+          - name: Set license information
+            href: mau-set-license-info.md
+          - name: Use msupdate
+            href: update-office-for-mac-using-msupdate.md
+
+      - name: Set preferences
+        items:
+          - name: Add-ins
+            href: preferences-add-ins.md
+          - name: Default decryption password (Excel)
+            href: set-preference-default-password-excel.md
+          - name: Deploy preferences
+            href: deploy-preferences-for-office-for-mac.md
+          - name: Macro security
+            href: set-preference-macro-security-office-for-mac.md
+          - name: Outlook preferences
+            href: preferences-outlook.md
+          - name: Suite preferences
+            href: preferences-office.md
+
+      - name: Related articles
+        items:
+          - name: Network requests
+            href: /microsoft-365/enterprise/network-requests-in-office-2016-for-mac
