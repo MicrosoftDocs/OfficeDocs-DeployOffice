@@ -32,17 +32,11 @@ This deployment guide shows you how to onboard your tenant to Places by ensuring
 
 Microsoft Places offers three key solution pillars to optimize your work environment:
 
-#### Coordinate your work locations
+**Coordinate your work locations** - Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
 
-Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
+**Modernize your workplace** - Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
 
-#### Modernize your workplace
-
-Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
-
-#### Optimize your physical environment
-
-Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
+**Optimize your physical environment** - Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
 
 ### Request for access to opt-in functionality
 
@@ -66,9 +60,17 @@ Before onboarding Microsoft Places, ensure the completion of the following prere
 
 Microsoft Places relies on Exchange mailboxes as the foundational infrastructure for coordinating schedules and booking resources such as rooms or workspaces. IT Admins must be assigned the Exchange administrator role to manage Exchange-related configurations for Microsoft Places.
 
+Places cmdlets that manage your tenant settings or other places like Building and Floor require the **TenantPlacesManagement** role.
+
+Use the following cmdlet to evaluate what roles are currently assigned:
+
+```powershell
+Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "Adele Vance"}
+```
+
 ### Prerequisite step 2 - Update PowerShell
 
-To configure capabilities and enable users with Microsoft Places efficiently, ensure the latest version of PowerShell is installed to PowerShell 7. Follow these steps to update your PowerShell:
+To configure capabilities and enable users with Microsoft Places, ensure the latest version of PowerShell is installed to PowerShell 7. Follow these steps to update your PowerShell:
 
 1. Run the following command in PowerShell: `winget search Microsoft.PowerShell`.
 
@@ -92,9 +94,11 @@ To configure capabilities and enable users with Microsoft Places efficiently, en
 
 Once you've completed all prerequisite steps, you're now ready to deploy Places to users in your organization:
 
-### Step 1 - Initiate Microsoft Places
+### Step 1 - Initiate Microsoft Places and coordinate work locations
 
-These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features are available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
+These steps will provide Places to your users and enable Workplans. This will help facilitate hybrid work coordination, employees can communicate their work location (e.g. 'in-office' or 'remote') for specific days of the week via Workplans.
+
+These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
 
 > [!NOTE]
 > When a setting is added or changed, please wait for 1 day for the settings to replicate.
@@ -102,70 +106,15 @@ These cmdlets are available to tenants to enable or onboard to Places Public Pre
 > [!NOTE]
 > Microsoft Places cmdlets must be run in a separate window than the Exchange PowerShell cmdlets. If you use proxies, see [PowerShell documentation](/powershell/module/microsoft.powershell.utility/invoke-webrequest) for more information.
 
-Run the following commands to:
-
-- Connect to Places in PowerShell:
-`Connect-MicrosoftPlaces`
-
-- Collect existing places (signals the Places Directory to create OS tables and set up the routing tables so that buildings can be provisioned): `Set-PlacesSettings -Collection Places -EnableBuildings ‘Default:true’
-Global default = false`
-
-- Enable features in the Places Web App: `Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<SG OID>@<TID>:true
-Global default = false`.
-
-### Step 2 - Assign users to security groups
-
-Adding or removing users should be through the security group (SG) created - in most cases this should be immediate, but for users and security groups new to the tenant (or haven't been active) this could take up to 12 hours.
-
-#### Create security groups
-
-You should create security groups with the users you plan to pilot to Places. You can add or remove users with security groups and have control over which user gets to access Places.
-
-You can create security groups in two ways – Through Exchange Admin Center (EAC User Interface) or via PowerShell:
-
-1. Create a security group through Exchange Admin Center:
-<https://admin.exchange.microsoft.com/#/groups>
-
-> [!NOTE]
-> If using UI, Exchange Admin Center must be used to create security groups, instead of the Microsoft Admin Center or (Entra AC allows also creating some groups), the default Admin app linked in the top left navigation.
-
-2. Run the following commands to create security groups using PowerShell:
-
-```powershell
-Install-Module -Name ExchangeOnlineManagement 
-Connect-ExchangeOnline
-```
-
-```powershell
-New-DistributionGroup PlacesEnabledGroup -Alias PlacesEnabledGroup -DisplayName " Places Enabled Group“ -CopyOwnerToMember -Description " Group of users that is allowed to use Places app" -ManagedBy admin -Members admin,Liz,Sam,Tom -Type Security 
-Get-DistributionGroup PlacesEnabledGroup | ft Name, external*
-Connect-ExchangeOnline
-```
-
-```powershell
-New-DistributionGroup PlacesEnabledGroup -Alias PlacesEnabledGroup -DisplayName " Places Enabled Group“ -CopyOwnerToMember -Description " Group of users that is allowed to use Places app" -ManagedBy admin -Members admin,Liz,Sam,Tom -Type Security 
-Get-DistributionGroup PlacesEnabledGroup | ft Name, external*
-```
-
-Getting the OID:
-
-```powershell
-Get-DistributionGroup <SG Alias> | fl Name,PrimarySmtpAddress,ExternalDirectoryObjectId
-```
-
-The following table shows the format you'd use to create the security group for Places:
-
-| Security group | OID |
-|---------|---------|
-|PlaceUserSG|5b290d16-e231-4091-8177-9f3c9bd93712|
-
-#### Enable users
-
-As the Exchange administrator, you can enable Places for all members of your tenant or for a select subset via mail-enabled security group.
+As the Exchange administrator, you can enable Places to all members of your tenant or to a select subset via mail-enabled security group.
 
 #### Enable Places for all users in your tenant
 
-Places can be rolled out to all users in your tenant by running the following cmdlet:
+```powershell
+Connect-MicrosoftPlaces    
+```
+
+#### Enable Places Web app and Places Mobile app for all users
 
 ```powershell
 Set-PlacesSettings -Collection Places -EnablePlacesMobileApp 'Default:true'
@@ -174,33 +123,34 @@ Set-PlacesSettings -Collection Places -EnablePlacesWebApp 'Default:true'
 
 #### Enable Places to a subset of users in your tenant
 
+Places can be enabled to a specific set of users by utilizing mail-enabled security groups. The **PlaceUserSG** can be utilized to enable Places functionality for specific employees within your company.
+
 > [!NOTE]
-> It can take up to 24 hours for settings to take effect. Adding or removing users should be through the security groups created - in most cases this should be immediate, but for users and security groups new to the tenant (or have not been active) this could take up to 24 hours.
+> You must add or remove users through the mail-enabled security groups created - in most cases this should be immediate, but for users and SGs new to the tenant (or have not been active) this could take up to 1 day.
 
-1. Connect to the Microsoft Places service in PowerShell:
+#### Connect to the Microsoft Places service in PowerShell
 
-    ```powershell
-    Connect-MicrosoftPlaces 
-    Connect-ExchangeOnline
-    ```
+```powershell
+Connect-MicrosoftPlaces 
+Connect-ExchangeOnline
+```
 
-2. Enable Place Web to a security group (this should include all users that need access to Places, including those in analytics group):
+#### Enable Places to a mail-enabled security group
 
-    ```powershell
-    Set-PlacesSettings -Collection Places -PlacesEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true' 
-    ```
+Run the following command to enable Places for a mail-enabled security group which includes all users requiring access to Places and users in the analytics group:
 
-3. Check Current Settings to validate that the security group is Places.PlacesEnabled and Places.SpacesAnalyticsEnabled
+```powershell
+Set-PlacesSettings -Collection Places -PlacesEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true'
+```
 
-    ```powershell
-    Get-PlacesSettings -Collection Places -ReadFromPrimary | FL
-    ```
+> [!NOTE]
+> It may take up to 13 hours for users to gain access.
 
-### Step 3 - Activate clients
+### Step 2 - Activate clients
 
 #### Enable the Places Web App
 
- The Places Web app is turned off by default. It should have already been turned on in "Enable Users" step. To ensure the WebApp is enabled for all users, run the following cmdlet:
+ The Places Web app is turned off by default. To ensure the WebApp is enabled for all users run the following cmdlet:
 
 ```powershell
 Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<PlacesUserSG OID>@<TID>:true’
@@ -208,7 +158,7 @@ Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<Plac
 
 #### Deploy new Outlook
 
-Features from Places are available in the latest version of Outlook. To enable these, utilize these details how to enable users for the Outlook for Windows.
+Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows](/Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web)
 
 #### Enable Location-Aware features
 
