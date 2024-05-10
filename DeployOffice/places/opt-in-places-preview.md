@@ -1,5 +1,5 @@
 ---
-title: "Opt-in to the Microsoft Places Public Preview Program"
+title: "Opt in to the Microsoft Places Public Preview Program"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -23,23 +23,23 @@ Beginning today, organizations with a qualifying Microsoft 365 plan have access 
 
 - **Location Plans:** allow employees to share their proposed location schedule and see who else is attending in-person.
 - **In-Person Meetings:** Easily communicate your intention to work together with an in-person meeting invite.
-- **Hybrid RSVP:** Meeting participants can share whether they’ll attend in person or remote. 
+- **Hybrid RSVP:** Meeting participants can share whether they attend in person or remote. 
 - **Peek Cards:** Easily see who’s coming into the office and adjust your location plan, directly from your Outlook Calendar. Receive notifications to book space on days in office. 
 - **Expanded Presence:** add location to your presence signal to indicate when you’re in the office or a particular office.
 
-To learn how to enable and configure these features for your organization, review the onboarding guide [here](deployoffice/places/deployment-guide-for-places). This guide will take you through the following steps:  
+To learn how to enable and configure these features for your organization, review the onboarding guide [here](deployoffice/places/deployment-guide-for-places). This guide takes you through the following steps:  
 
 - Getting the latest version of Outlook to support Places 
 - Enabling the web app experience for your users
 - Accessing the Teams Preview environment for Places Features 
 - Configuring Places for your organization
 
-## You may also opt-in to try additional features as they become available 
+## You may also opt in to try additional features as they become available 
 
-The following features will be available for early access as part of the public preview program. We will release these features in waves as we ramp-up capacity to meet demand:  
+The following features are available for early access as part of the public preview program. We'll release these features in waves as we ramp-up capacity to meet demand:  
 
 - **Places Finder:** Book desks or rooms with the value of additional data: images of the space, floorplans, information about technology available. 
-- **Intelligent Booking:** Receive recommended rooms or desk pools and with one click, book suggested space or browse other suggestions. 
+- **Intelligent Booking:** Receive recommended rooms or desk pools and with one select, book suggested space or browse other suggestions. 
 - **Places Explorer:** get a singular view of the people, spaces, and experiences at each workplace location. 
 - **Analytics features:** get access to intent and actual occupancy and utilization data. 
 - **Auto-release policies:** allow reserved rooms to be automatically released if unoccupied.
@@ -72,15 +72,15 @@ The features in this preview are early-access features. They may change, experie
 
 **We are rolling out features as we expand capacity**
 
-We will be releasing additional preview features to organizations in rolling releases as we expand our capacity to meet demand. We want everyone to have a great experience with Places, so not all organizations will make it in the first wave of access. Don’t worry, all organizations who sign up and meet the prerequisites will be given an opportunity to preview additional features ahead of general availability. 
+We are releasing additional preview features to organizations in rolling releases as we expand our capacity to meet demand. We want everyone to have a great experience with Places, so not all organizations will make it in the first wave of access. Don’t worry, all organizations who sign up and meet the prerequisites will be given an opportunity to preview additional features ahead of general availability. 
 
 **Preview features include features that may be part of a paid plan** 
 
-The additional features behind the opt-in form may be part of a paid Microsoft plan. We will provide guidance towards the end of the preview for how to transition and choose the right plan for your organization. 
+The additional features behind the opt-in form may be part of a paid Microsoft plan. We'll provide guidance towards the end of the preview for how to transition and choose the right plan for your organization. 
 
 **Why do I need to fill out the form to opt-in for additional features?**
 
 This form collects the essential information required to enable your organization for additional Places features and for us to calculate requisite capacity for preview customers.  
 
 **What happens to my form data?**
-All form entries will be deleted on or before November 30, 2024, when the public preview program will close. Please review the Microsoft Privacy Statement NEED LINK for further information on how Microsoft handles your data.  
+All form entries will be deleted on or before November 30, 2024, when the public preview program will close. Review the Microsoft Privacy Statement NEED LINK for further information on how Microsoft handles your data.  
