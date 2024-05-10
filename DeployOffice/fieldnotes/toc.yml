@@ -1,21 +1,21 @@
 items:
   - name: Choose how to install Microsoft 365 Apps
-    href: fieldnotes/install-options.md
+    href: install-options.md
   - name: Right-sizing your initial deployment
-    href: fieldnotes/right-sizing-initial-deployment.md
+    href: right-sizing-initial-deployment.md
   - name: Build dynamic, lean, and universal packages
-    href: fieldnotes/build-dynamic-lean-universal-packages.md
+    href: build-dynamic-lean-universal-packages.md
   - name: Network guidance for deploying and servicing Microsoft 365 Apps
-    href: fieldnotes/network-guidance.md
+    href: network-guidance.md
   - name: Build dynamic collections for Microsoft 365 Apps with Configuration Manager
-    href: fieldnotes/build-dynamic-lean-configuration-manager.md
+    href: build-dynamic-lean-configuration-manager.md
   - name: Switch to Monthly Enterprise Channel with Configuration Manager
-    href: fieldnotes/switch-to-monthly-enterprise-channel.md
+    href: switch-to-monthly-enterprise-channel.md
   - name: Road map to modern management
-    href: fieldnotes/roadmap-to-modern-management.md
+    href: roadmap-to-modern-management.md
   - name: Adopting cloud update
-    href: fieldnotes/adopting-cloud-update.md
+    href: adopting-cloud-update.md
   - name: Microsoft 365 change guide
-    href: fieldnotes/microsoft-365-change-guide.md
+    href: microsoft-365-change-guide.md
   - name: Performance recommendations for Microsoft 365 Apps on Windows 10
-    href: fieldnotes/performance-recommendations.md
+    href: performance-recommendations.md
