@@ -19,16 +19,6 @@ description: "Provides Office admins with an overview of how to deploy Microsoft
 
 Microsoft Places lets you introduce more flexible work within your organization as an IT administrator. Integrated with Microsoft 365, Microsoft Places helps your users make informed decisions about their work dynamics, which can lead to increased productivity and enhanced collaboration.
 
-This deployment guide shows you how to onboard your tenant to Places by ensuring the following steps are performed:
-
-- [Prerequisite step 1 – Confirm Exchange permissions](#prerequisite-step-1---confirm-exchange-permissions)
-- [Prerequisite step 2 – Update PowerShell](#prerequisite-step-2---update-powershell)
-- [Prerequisite step 3 – Install the Microsoft Places module](#prerequisite-step-3---install-the-microsoft-places-module)
-- [Step 1 - Initiate Microsoft Places and coordinate work locations](#step-1---initiate-microsoft-places-and-coordinate-work-locations)
-- [Step 2 – Activate clients](#step-2---activate-clients)
-
-### Understanding the core solutions
-
 Microsoft Places offers three key solution pillars to optimize your work environment:
 
 **Coordinate your work locations** - Enable your employees to efficiently coordinate their work locations and schedules. They can book workspaces and meeting rooms, prioritize engagements with collaborators, and foster connections with ease.
@@ -36,6 +26,14 @@ Microsoft Places offers three key solution pillars to optimize your work environ
 **Modernize your workplace** - Keep your workforce updated about on-site events, colleague presence, and building activities through real-time location awareness. Utilize interactive maps to navigate the workplace seamlessly and explore available amenities and services.
 
 **Optimize your physical environment** - Use data-driven insights to streamline operations and reduce costs. Analyze usage trends to maximize space effectiveness and promote sustainability throughout your workplace.
+
+This deployment guide shows you how to onboard your tenant to Places by ensuring the following steps are performed:
+
+- [Prerequisite step 1 – Confirm Exchange permissions](#prerequisite-step-1---confirm-exchange-permissions)
+- [Prerequisite step 2 – Update PowerShell](#prerequisite-step-2---update-powershell)
+- [Prerequisite step 3 – Install the Microsoft Places module](#prerequisite-step-3---install-the-microsoft-places-module)
+- [Step 1 - Initiate Microsoft Places and coordinate work locations](#step-1---initiate-microsoft-places-and-coordinate-work-locations)
+- [Step 2 – Activate clients](#step-2---activate-clients)
 
 ### Request for access to opt-in functionality
 
@@ -95,9 +93,9 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 ### Step 1 - Initiate Microsoft Places and coordinate work locations
 
-These steps will provide Places to your users and enable Workplans. This will help facilitate hybrid work coordination, employees can communicate their work location (e.g. 'in-office' or 'remote') for specific days of the week via Workplans.
+These steps initiate Places to your users and enable Workplans. This helps facilitate hybrid work coordination, employees can communicate their work location (for example 'in-office' or 'remote') for specific days of the week via Workplans.
 
-These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
+These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features are available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
 
 > [!NOTE]
 > When a setting is added or changed, please wait for 1 day for the settings to replicate.
@@ -136,7 +134,7 @@ Connect-ExchangeOnline
 
 #### Enable Places to a mail-enabled security group
 
-Run the following command to enable Places for a mail-enabled security group which includes all users requiring access to Places and users in the analytics group:
+Run the following command to enable Places for a mail-enabled security group, which includes all users requiring access to Places and users in the analytics group:
 
 ```powershell
 Set-PlacesSettings -Collection Places -PlacesEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true'
@@ -147,7 +145,7 @@ Set-PlacesSettings -Collection Places -PlacesEnabled 'Default:false,OID:<Securit
 
 ### Step 2 - Activate clients
 
-#### Enable the Places Web App
+#### Enable the Places Web app
 
  The Places Web app is turned off by default. To ensure the WebApp is enabled for all users run the following cmdlet:
 
@@ -157,11 +155,11 @@ Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<Plac
 
 #### Deploy new Outlook
 
-Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)
+Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows.](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)
 
-#### Opt-in to Teams Preview Ring for Location Aware features
+#### Opt in to Teams Preview Ring for Location Aware features
 
-To opt-in to the Teams Public Preview Ring, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
+To opt in to the Teams Public Preview Ring, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
 
 #### Publish the Places Teams app
 
