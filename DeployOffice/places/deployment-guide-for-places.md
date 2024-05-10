@@ -157,11 +157,11 @@ Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<Plac
 
 #### Deploy new Outlook
 
-Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows](/Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web)
+Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)
 
 #### Opt-in to Teams Preview Ring for Location Aware features
 
-To opt-in to the Teams Public Preview Ring, see [Microsoft Teams Public preview](microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
+To opt-in to the Teams Public Preview Ring, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
 
 #### Publish the Places Teams app
 
