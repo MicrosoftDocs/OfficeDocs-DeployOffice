@@ -32,7 +32,7 @@ This deployment guide shows you how to onboard your tenant to Places by ensuring
 - [Prerequisite step 1 – Confirm Exchange permissions](#prerequisite-step-1---confirm-exchange-permissions)
 - [Prerequisite step 2 – Update PowerShell](#prerequisite-step-2---update-powershell)
 - [Prerequisite step 3 – Install the Microsoft Places module](#prerequisite-step-3---install-the-microsoft-places-module)
-- [Step 1 - Initiate Microsoft Places and coordinate work locations](#step-1---initiate-microsoft-places-and-coordinate-work-locations)
+- [Step 1 - Enable Microsoft Places and start coordinating work locations](#step-1---enable-microsoft-places-and-start-coordinating-work-locations)
 - [Step 2 – Activate clients](#step-2---activate-clients)
 
 ### Request for access to opt-in functionality
