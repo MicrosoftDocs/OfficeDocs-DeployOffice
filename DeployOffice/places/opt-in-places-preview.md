@@ -27,7 +27,7 @@ Beginning today, organizations with a qualifying Microsoft 365 plan have access 
 - **Peek Cards:** Easily see who’s coming into the office and adjust your location plan, directly from your Outlook Calendar. Receive notifications to book space on days in office. 
 - **Expanded Presence:** add location to your presence signal to indicate when you’re in the office or a particular office.
 
-To learn how to enable and configure these features for your organization, review the onboarding guide [here](deployoffice/places/deployment-guide-for-places). This guide takes you through the following steps:  
+To learn how to enable and configure these features for your organization, review the onboarding guide [here](/deployoffice/places/deployment-guide-for-places). This guide takes you through the following steps:  
 
 - Getting the latest version of Outlook to support Places 
 - Enabling the web app experience for your users
