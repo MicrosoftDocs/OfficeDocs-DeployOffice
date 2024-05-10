@@ -24,9 +24,8 @@ This deployment guide shows you how to onboard your tenant to Places by ensuring
 - [Prerequisite step 1 – Confirm Exchange permissions](#prerequisite-step-1---confirm-exchange-permissions)
 - [Prerequisite step 2 – Update PowerShell](#prerequisite-step-2---update-powershell)
 - [Prerequisite step 3 – Install the Microsoft Places module](#prerequisite-step-3---install-the-microsoft-places-module)
-- [Step 1 - Enable core tenant experience for Microsoft Places](#step-1---initiate-microsoft-places)
-- [Step 2 – Assign users to security groups](#step-2---assign-users-to-security-groups)
-- [Step 3 – Activate clients](#step-3---activate-clients)
+- [Step 1 - Initiate Microsoft Places and coordinate work locations](#step-1---initiate-microsoft-places-and-coordinate-work-locations)
+- [Step 2 – Activate clients](#step-2---activate-clients)
 
 ### Understanding the core solutions
 
@@ -40,7 +39,7 @@ Microsoft Places offers three key solution pillars to optimize your work environ
 
 ### Request for access to opt-in functionality
 
-Places has features that are available through an opt-in. See (link) for more information.
+Places has features that are available through an opt-in. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
 
 ## Prerequisites
 
@@ -160,22 +159,14 @@ Set-PlacesSettings -Collection Places -EnablePlacesWeb ‘Default:false,OID<Plac
 
 Features from Places are available in the latest version of Outlook. For more information on how to enable these features, see [Enable users for the Outlook for Windows](/Exchange/ExchangeOnline/clients-and-mobile-in-exchange-online/outlook-on-the-web)
 
-#### Enable Location-Aware features
+#### Opt-in to Teams Preview Ring for Location Aware features
 
-Location-Aware features are available through Teams. By opting into the Teams Public Preview ring, your users gain location-aware services allowing them to:
-
-- View nearby colleagues based on their current location.
-- Chat with nearby colleagues using the @nearby mention.
-- Manage their location sharing controls.
-
-To opt in to the Teams Public Preview Ring, see [Microsoft Teams Public preview for more information](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
+To opt-in to the Teams Public Preview Ring, see [Microsoft Teams Public preview](microsoftteams/public-preview-doc-updates?tabs=new-teams-client#enable-public-preview).
 
 #### Publish the Places Teams app
 
-Places is available as a Teams app within Team and Outlook. Steps to enable MetaOS Apps in Teams and Outlook can be found in [Manage your apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
+Places is available as a Teams app within Team and Outlook. For more information on how to enable MetaOS Apps in Teams and Outlook, see Manage your apps in the [Microsoft Teams admin center](/microsoftteams/manage-apps).
 
 #### Configure the iOS app for compliant distribution
 
 The iOS app is an opt-in feature. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
-
-## Related articles
