@@ -13,9 +13,9 @@ recommendations: true
 description: "Provide admins with the information for how to join the Microsoft Places Public Preview Program."
 ---
 
-# Opt-in to the Microsoft Places Public Preview Program
+# Opt in to the Microsoft Places Public Preview Program
 
-## Microsoft Places is a new connected workplace app that reimagines flexible work
+### Microsoft Places is a new connected workplace app that reimagines flexible work
 
 Places brings new life to flexible work by successfully unlocking closer connections between teams and colleagues, elevating an improved workplace experience, and driving confident decision-making related to space optimization.
 
@@ -34,9 +34,9 @@ To learn how to enable and configure these features for your organization, revie
 - Accessing the Teams Preview environment for Places Features 
 - Configuring Places for your organization
 
-## You may also opt in to try additional features as they become available 
+### You may also opt in to try additional features as they become available 
 
-The following features are available for early access as part of the public preview program. We'll release these features in waves as we ramp-up capacity to meet demand:  
+The following features are available for early access as part of the public preview program. We'll release these features in waves as we ramp up capacity to meet demand:  
 
 - **Places Finder:** Book desks or rooms with the value of additional data: images of the space, floorplans, information about technology available. 
 - **Intelligent Booking:** Receive recommended rooms or desk pools and with one select, book suggested space or browse other suggestions. 
@@ -44,9 +44,9 @@ The following features are available for early access as part of the public prev
 - **Analytics features:** Get access to intent and actual occupancy and utilization data. 
 - **Auto-release policies:** Allow reserved rooms to be automatically released if unoccupied.
 
-## Prerequisites for additional feature access:  
+### Prerequisites for additional feature access:  
 
-Before opting-in, please review and confirm you meet the following prerequisites:  
+Before opting in, please review and confirm you meet the following prerequisites:  
 
 1. You are a Microsoft 365 administrator for the commercial tenant you wish to enroll.
 
@@ -60,11 +60,11 @@ Before opting-in, please review and confirm you meet the following prerequisites
 
     - Microsoft 365 A3 or A5
 
-## Ready to go?  
+### Ready to go?  
 
-Fill out the [Place Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt-into additional preview features.
+Fill out the [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt in to additional preview features.
 
-## FAQ
+### FAQ
 
 **Preview includes early access features** 
 
@@ -83,4 +83,5 @@ The additional features behind the opt-in form may be part of a paid Microsoft p
 This form collects the essential information required to enable your organization for additional Places features and for us to calculate requisite capacity for preview customers.  
 
 **What happens to my form data?**
+
 All form entries will be deleted on or before November 30, 2024, when the public preview program will close. Review the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) for further information on how Microsoft handles your data.  
