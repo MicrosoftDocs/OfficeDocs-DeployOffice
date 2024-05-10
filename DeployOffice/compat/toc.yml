@@ -1,0 +1,41 @@
+items:
+  - name: Application compatibility in Office
+    items:
+      - name: Assess Office compatibility
+        href: assess-office-compatibility.md
+
+      - name: Office Telemetry Dashboard
+        items:
+          - name: Resources guide
+            href: compatibility-and-telemetry-in-office.md
+          - name: Plan
+            href: plan-telemetry-dashboard-deployment.md
+          - name: Deploy
+            href: deploy-telemetry-dashboard.md
+          - name: Removal from Microsoft 365 Apps for enterprise
+            href: telemetry-dashboard-removal.md
+          - name: Monitor Office compatibility and deployments
+            href: monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md
+          - name: Manage add-ins
+            href: manage-add-ins-by-using-telemetry-dashboard-in-office.md
+          - name: Manage the privacy of data collected
+            href: manage-the-privacy-of-data-monitored-by-telemetry-in-office.md
+          - name: Custom reporting and database schema
+            href: custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md
+          - name: Data that the agent collects
+            href: data-that-the-telemetry-agent-collects-in-office.md
+          - name: Document and solution types monitored
+            href: document-and-solution-types-monitored-by-telemetry-in-office.md
+          - name: List of worksheets
+            href: telemetry-dashboard-worksheet-reference.md
+          - name: Update components (from Office 2013)
+            href: update-office-telemetry-components-for-office-2016.md
+
+      - name: Reference
+        items:
+          - name: Manage compatibility mode
+            href: manage-compatibility-mode-for-office.md
+          - name: Office file formats
+            href: office-file-format-reference.md
+          - name: XML file name extensions
+            href: xml-file-name-extension-reference-for-office.md
