@@ -1,0 +1,21 @@
+items:
+  - name: Microsoft 365 Apps admin center
+    items:
+      - name: Overview
+        href: overview.md
+      - name: Cloud Policy
+        href: overview-cloud-policy.md
+      - name: Office Customization Tool
+        href: overview-office-customization-tool.md
+      - name: Microsoft 365 Apps health
+        href: microsoft-365-apps-health.md
+      - name: Inventory
+        href: inventory.md
+      - name: Security update status
+        href: security-update-status.md
+      - name: Cloud update
+        href: cloud-update.md
+      - name: Update validation
+        href: update-validation.md
+      - name: OneDrive sync health
+        href: /onedrive/sync-health
