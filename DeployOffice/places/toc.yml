@@ -1,0 +1,5 @@
+items:
+  - name: Deployment guide for Places
+    href: deployment-guide-for-places.md
+  - name: Opt in to the Microsoft Places Public Preview Program
+    href: opt-in-places-preview.md
