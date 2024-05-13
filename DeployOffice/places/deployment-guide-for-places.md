@@ -41,12 +41,14 @@ Places has features that are available through an opt-in. For more information, 
 
 ## Prerequisites
 
-Microsoft Places requires one of the following subscriptions:
+Microsoft Places Preview requires one of the following subscriptions:
 
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
 - Microsoft 365 or Office 365 (E1, E3, E5)
 - Microsoft 365 or Office 365 (A1, A3, A5)
+
+More information on feature availability by license type will be shared as we get closer to general availability.
 
 Before onboarding Microsoft Places, ensure the completion of the following prerequisites for a streamlined deployment:
 
@@ -88,8 +90,7 @@ winget install --id Microsoft.Powershell.Preview --source winget
 2. Install the latest Places PowerShell client using the following cmdlet:
 
 ```powershell
-Install-module -Name MicrosoftPlaces -AllowPrerelease -AllowClobber -
-Force -RequiredVersion 0.30.0-alpha
+Install-Module -Name MicrosoftPlaces -AllowPrerelease -Force
 ```
 
 > [!IMPORTANT]
@@ -101,7 +102,7 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 ### Step 1 - Enable Microsoft Places and start coordinating work locations
 
-These steps will provide Places to your users and enable Workplans. This will help facilitate hybrid work coordination, employees can communicate their work location (e.g. 'in-office' or 'remote') for specific days of the week via Workplans.
+These steps will provide Places to your users and enable Workplans. This will help facilitate hybrid work coordination, employees can communicate their work location (for example 'in-office' or 'remote') for specific days of the week via Workplans.
 
 These cmdlets are available to tenants to enable or onboard to Places Public Preview. By default, the Calendar features will be available to users. The following cmdlets are used by the tenant admins to enable buildings, apps, and location sharing controls.
 
