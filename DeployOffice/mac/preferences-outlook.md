@@ -20,7 +20,7 @@ ms.date: 09/28/2023
 
 The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
 
-As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
+As an IT admin, you can provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
@@ -36,7 +36,7 @@ When preferences are changed via Terminal users can override the value in the Ou
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
 > [!IMPORTANT]
-> Preferences that are marked as Yes to 'Requires Configuration Profile' in the tables below can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
+> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
 
 The following list shows the preferences that are covered in this article:
 
@@ -254,7 +254,7 @@ Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate d
 
 ### Set the order in which S/MIME certificates are considered
 
-Set the order in which certificates will be used to decrypt and encrypt S/MIME messages.
+Set the order in which certificates are used to decrypt and encrypt S/MIME messages.
 
 |Category|Details|
 |:-----|:-----|
@@ -292,7 +292,7 @@ Automatically trust server redirects through AutoDiscover.
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|15.29 |
-|Comments|When set to 'true' users won't be prompted to Allow or Deny redirects from AutoDiscover. They'll be automatically allowed.|
+|Comments|When set to 'true' users aren't prompted to Allow or Deny redirects from AutoDiscover. They are automatically allowed.|
 
 ## Weather location settings
 
