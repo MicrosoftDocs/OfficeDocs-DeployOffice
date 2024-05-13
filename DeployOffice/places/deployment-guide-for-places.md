@@ -88,7 +88,8 @@ winget install --id Microsoft.Powershell.Preview --source winget
 2. Install the latest Places PowerShell client using the following cmdlet:
 
 ```powershell
-Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
+Install-module -Name MicrosoftPlaces -AllowPrerelease -AllowClobber -
+Force -RequiredVersion 0.30.0-alpha
 ```
 
 > [!IMPORTANT]
