@@ -60,7 +60,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable Teams online meetings](#disable-teams-online-meetings)
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
-- [Hide text about adding noncorporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Hide text about adding noncorporate mailboxes](#hide-text-about-adding-noncorporate-mailboxes)
 - [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
