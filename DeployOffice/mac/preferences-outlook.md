@@ -10,7 +10,7 @@ ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
-description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac"
+description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
 ms.date: 09/28/2023
 ---
 
@@ -60,7 +60,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable Teams online meetings](#disable-teams-online-meetings)
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
-- [Hide text about adding non-corporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Hide text about adding noncorporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
 - [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
@@ -125,7 +125,7 @@ Specify one or more domains where mailbox access is blocked.
 |Availability| 16.75|
 |Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
-### Hide text about adding non-corporate mailboxes
+### Hide text about adding noncorporate mailboxes
 
 Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email** success dialog box.
 
@@ -137,7 +137,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|16.18 |
-|Comments| Only hides text. Doesn't impact ability to add non-corporate mailboxes. |
+|Comments| Only hides text. Doesn't impact ability to add noncorporate mailboxes. |
 
 ## Import/export settings
 
