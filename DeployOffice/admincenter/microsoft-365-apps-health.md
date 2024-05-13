@@ -41,7 +41,7 @@ The Microsoft 365 Apps health dashboard in the [Microsoft 365 Apps admin center]
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 ### Additional requirements
-**[Diagnostic fata for Office](../privacy/overview-privacy-controls.md)** should be enabled on your devices, as this is the default setting. If you have limited the transmission of diagnostic data for Office, perhaps through group policy settings, it will be necessary to [modify these settings](../privacy/manage-privacy-controls.md) to permit the sending of both required and optional data.
+**[Diagnostic data for Office](../privacy/overview-privacy-controls.md)** should be enabled on your devices, as this is the default setting. If you have limited the transmission of diagnostic data for Office, perhaps through group policy settings, it will be necessary to [modify these settings](../privacy/manage-privacy-controls.md) to permit the sending of both required and optional data.
 
 ## How to get to the health dashboard
 Go to the [Microsoft 365 Apps admin center](https://config.office.com), extend the **Health** node, and select **Apps health**. For information on using the Microsoft 365 Apps admin center, see [Overview of the Microsoft 365 Apps admin center](overview.md).
