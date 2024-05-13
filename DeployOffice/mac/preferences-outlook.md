@@ -10,7 +10,7 @@ ms.subservice: office-mac
 ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
-description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac"
+description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
 ms.date: 09/28/2023
 ---
 
@@ -20,7 +20,7 @@ ms.date: 09/28/2023
 
 The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
 
-As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
+As an IT admin, you can provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
@@ -31,12 +31,12 @@ Most preferences can be changed using the Terminal, or via a script. For example
 defaults write com.microsoft.Outlook DefaultWeatherLocation -string 'Paris, France'
 ```
 
-When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users cannot override it, use a Configuration Profile.
+When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users can't override it, use a Configuration Profile.
 
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
 > [!IMPORTANT]
-> Preferences that are marked as Yes to 'Requires Configuration Profile' in the tables below can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
+> Preferences that are marked as Yes to 'Requires Configuration Profile' in the consecutive tables can only be set via a Configuration Profile. In these case, use of the defaults command is ineffective.
 
 The following list shows the preferences that are covered in this article:
 
@@ -60,7 +60,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable Teams online meetings](#disable-teams-online-meetings)
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
-- [Hide text about adding non-corporate mailboxes](#hide-text-about-adding-non-corporate-mailboxes)
+- [Hide text about adding noncorporate mailboxes](#hide-text-about-adding-noncorporate-mailboxes)
 - [Set the order in which S/MIME certificates are considered](#set-the-order-in-which-smime-certificates-are-considered)
 - [Specify calendar first day of week](#specify-calendar-first-day-of-week)
 - [Specify default weather location](#specify-default-weather-location)
@@ -125,7 +125,7 @@ Specify one or more domains where mailbox access is blocked.
 |Availability| 16.75|
 |Comments| Doesn't remove or disconnect accounts already added in Outlook. |
 
-### Hide text about adding non-corporate mailboxes
+### Hide text about adding noncorporate mailboxes
 
 Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email** success dialog box.
 
@@ -137,7 +137,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|16.18 |
-|Comments| Only hides text. Doesn't impact ability to add non-corporate mailboxes. |
+|Comments| Only hides text. Doesn't impact ability to add noncorporate mailboxes. |
 
 ## Import/export settings
 
@@ -240,7 +240,7 @@ Prevent users from applying the **Do Not Forward** option to emails when using M
 
 ### Allow S/MIME certificates without a matching email address
 
-Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address.
+Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate doesn't match the email address.
 
 |Category|Details|
 |:-----|:-----|
@@ -254,7 +254,7 @@ Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate d
 
 ### Set the order in which S/MIME certificates are considered
 
-Set the order in which certificates will be used to decrypt and encrypt S/MIME messages.
+Set the order in which certificates are used to decrypt and encrypt S/MIME messages.
 
 |Category|Details|
 |:-----|:-----|
@@ -292,7 +292,7 @@ Automatically trust server redirects through AutoDiscover.
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|15.29 |
-|Comments|When set to 'true' users will not be prompted to Allow or Deny redirects from AutoDiscover. They will be automatically allowed.|
+|Comments|When set to 'true' users aren't prompted to Allow or Deny redirects from AutoDiscover. They are automatically allowed.|
 
 ## Weather location settings
 
@@ -351,7 +351,7 @@ Set when pictures are automatically downloaded from the internet for email.
 |Possible values| 0 = Never <br/> 1 = In messages from my contacts  <br/> 2 = In all messages  (default) |
 |Requires Configuration Profile| No |
 |Availability|16.17 |
-|Comments| Found under **Outlook** > **Preferences** > **Email** > **Reading** > **Security**.  |
+|Comments| Found under **Outlook** > **Settings** > **Email** > **Reading** > **Download external images**.  |
 
 ### Disable signatures
 
