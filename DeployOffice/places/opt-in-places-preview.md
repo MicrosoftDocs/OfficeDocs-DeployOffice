@@ -44,21 +44,9 @@ The following features are available for early access as part of the public prev
 - **Analytics features:** Get access to intent and actual occupancy and utilization data. 
 - **Auto-release policies:** Allow reserved rooms to be automatically released if unoccupied.
 
-### Prerequisites for additional feature access:  
+### Prerequisites for additional feature access
 
-Before opting in, please review and confirm you meet the following prerequisites:  
-
-1. You are a Microsoft 365 administrator for the commercial tenant you wish to enroll.
-
-2. Your organization must be a commercial or education organization under an existing enterprise agreement with Microsoft.  
-
-3. You have at least one of the required prerequisite plans for Places enabled on your tenant: 
-
-    - Microsoft 365 Business Standard or Business Premium 
-
-    - Microsoft 365 E1, E3, or E5 
-
-    - Microsoft 365 A3 or A5
+Before opting in, please review and confirm you meet the deployment requirements. See [Deployment Guide for Places](deployment-guide-for-places.md) for more information.
 
 ### Ready to go?  
 
