@@ -14,7 +14,7 @@ ms.date: 05/13/2024
 
 # File format reference for Word, Excel, and PowerPoint
 
-***Applies to:*** *Office 2019, Office 2016*
+***Applies to:*** *Office 2021, Office 2019, Office 2016*
 
 Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
 
