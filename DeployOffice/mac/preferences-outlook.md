@@ -49,6 +49,7 @@ The following list shows the preferences that are covered in this article:
 - [Disable "Do not send a response"](#disable-do-not-send-a-response)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
 - [Disable export](#disable-export)
+- [Disable Focused Inbox](#disable-focused-inbox)
 - [Disable import](#disable-import)
 - [Disable Junk settings](#disable-junk-settings)
 - [Disable Pride theme](#disable-pride-theme)
@@ -433,6 +434,19 @@ Hide information about message retention settings when viewing message contents.
 |Requires Configuration Profile| No |
 |Availability|16.78 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable Focused Inbox
+
+Prevent users from viewing Focused Inbox.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisableFocusedInbox|
+|Data Type|Boolean |
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
+|Availability| 16.66 |
 
 ## Related articles
 
