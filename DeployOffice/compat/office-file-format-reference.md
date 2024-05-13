@@ -104,8 +104,8 @@ The following tables describe the file formats that are supported in PowerPoint.
 | .ppsx  <br/> | PowerPoint Show  <br/> | A presentation that always opens in Slide Show view instead of in Normal view.  <br/> |
 | .ppt  <br/> | PowerPoint 97-2003 Presentation  <br/> | The default PowerPoint 97 to Office PowerPoint 2003 format.  <br/> |
 | .pptm  <br/> | PowerPoint Macro-Enabled Presentation  <br/> | A presentation that contains Visual Basic for Applications (VBA) code.  <br/> |
-| .pptx  <br/> | PowerPoint Presentation  <br/> | The default PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010, and Office PowerPoint 2007 XML-based file format.  <br/> |
-| .pptx  <br/> | PowerPoint Picture Presentation  <br/> | A PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010 or PowerPoint 2007 presentation where each slide is converted into a picture. Saving a file as a PowerPoint Picture presentation reduces the file size, but some information is lost.  <br/> |
+| .pptx  <br/> | PowerPoint Presentation  <br/> | The default PowerPoint 2021, PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010, and Office PowerPoint 2007 XML-based file format.  <br/> |
+| .pptx  <br/> | PowerPoint Picture Presentation  <br/> | A PowerPoint 2021, PowerPoint 2019, PowerPoint 2016, PowerPoint 2013, PowerPoint 2010 or PowerPoint 2007 presentation where each slide is converted into a picture. Saving a file as a PowerPoint Picture presentation reduces the file size, but some information is lost.  <br/> |
 | .pptx  <br/> | Strict Open XML Presentation  <br/> | An ISO strict version of the PowerPoint Presentation file format (.pptx).  <br/> |
 | .rtf  <br/> | Outline/RTF  <br/> | A presentation outline that is saved as a text-only document that provides smaller file sizes and the ability to share macro-free files with other users who might not have the same version of PowerPoint or the operating system. Any text in the notes pane isn't saved with this file format.  <br/> |
 | .thmx  <br/> | Office Theme  <br/> | A style sheet that includes definitions of a color theme, font theme, and effect theme.  <br/> |
