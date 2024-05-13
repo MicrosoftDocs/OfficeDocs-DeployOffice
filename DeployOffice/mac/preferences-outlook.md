@@ -31,7 +31,7 @@ Most preferences can be changed using the Terminal, or via a script. For example
 defaults write com.microsoft.Outlook DefaultWeatherLocation -string 'Paris, France'
 ```
 
-When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users cannot override it, use a Configuration Profile.
+When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users can't override it, use a Configuration Profile.
 
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
@@ -240,7 +240,7 @@ Prevent users from applying the **Do Not Forward** option to emails when using M
 
 ### Allow S/MIME certificates without a matching email address
 
-Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address.
+Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate doesn't match the email address.
 
 |Category|Details|
 |:-----|:-----|
@@ -292,7 +292,7 @@ Automatically trust server redirects through AutoDiscover.
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|15.29 |
-|Comments|When set to 'true' users will not be prompted to Allow or Deny redirects from AutoDiscover. They will be automatically allowed.|
+|Comments|When set to 'true' users won't be prompted to Allow or Deny redirects from AutoDiscover. They'll be automatically allowed.|
 
 ## Weather location settings
 
