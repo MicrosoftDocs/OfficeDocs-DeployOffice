@@ -45,11 +45,8 @@ Microsoft Places requires one of the following subscriptions:
 
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
-- Microsoft 365 E3
-- Microsoft 365 E5
-- Microsoft 365 A3
-- Microsoft 365 A5
-- Microsoft 365 E3, E5, A3, or A5 Extra Features, when combined with a corresponding Office 365 or Microsoft 365 plan.
+- Microsoft 365 or Office 365 (E1, E3, E5)
+- Microsoft 365 or Office 365 (A1, A3, A5)
 
 Before onboarding Microsoft Places, ensure the completion of the following prerequisites for a streamlined deployment:
 
@@ -123,16 +120,15 @@ In the latest version of PowerShell, run the following command to connect to Pla
 Connect-MicrosoftPlaces    
 ```
 
-Once you've connected to Places, enable Places Web app and Places Mobile app for all users by running the following command in PowerShell:
+Once you've connected to Places, enable the Places Web app for all users by running the following command in PowerShell:
 
 ```powershell
-Set-PlacesSettings -Collection Places -EnablePlacesMobileApp 'Default:true'
 Set-PlacesSettings -Collection Places -EnablePlacesWebApp 'Default:true'
 ```
 
 #### Enable Places to a subset of users in your tenant
 
-Places can be enabled to a specific set of users by utilizing mail-enabled security groups. The **PlaceUserSG** can be used to enable Places functionality for specific employees within your company.
+Places can be enabled to a specific set of users by utilizing mail-enabled security groups. The **PlacesUserSG** can be used to enable Places functionality for specific employees within your company.
 
 > [!NOTE]
 > You must add or remove users through the mail-enabled security groups created - in most cases this should be immediate, but for users and SGs new to the tenant (or have not been active), this could take up to 1 day.
@@ -162,6 +158,4 @@ See the table below to learn more about activating different clients for Places:
 |----|----|
 |[Places Web app](#step-1---enable-microsoft-places-and-start-coordinating-work-locations)|Enabling the Places Web app for your tenants is the first step in providing Places features.|
 |[New Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)|Places features are available in the latest version of Outlook.|
-|[Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client)|Opt-in to Teams Public Preview to enable Places location aware features in Teams.|
-|[Places Teams app](/microsoftteams/manage-apps)|Places is available as a Teams app within Teams and Outlook|
-|Places iOS app|The iOS app is an opt-in feature. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).|
+|[Places Teams app](/microsoftteams/apps-in-teams)|Places is available as a Teams app within Teams. Opt-in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
