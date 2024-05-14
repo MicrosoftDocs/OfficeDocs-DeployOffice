@@ -31,7 +31,7 @@ Most preferences can be changed using the Terminal, or via a script. For example
 defaults write com.microsoft.Outlook DefaultWeatherLocation -string 'Paris, France'
 ```
 
-When preferences are changed via Terminal users can override the value in the Outlook app. To change the value and enforce it so that users can't override it, use a Configuration Profile.
+When you change preferences in Terminal, users can override the value in the Outlook app. To change the value and enforce it so that users can't override it, use a Configuration Profile.
 
 All of these keys are CFPreferences-compatible, which means that they can be set by using enterprise management (MDM) software for Mac, such as Microsoft Intune and Jamf Pro.
 
@@ -72,7 +72,7 @@ The following list shows the preferences that are covered in this article:
 
 ### Automatically configure Microsoft 365 mailbox on first launch
 
-The email address used for Office activation will be added on first launch.
+The email address used for Office activation is added during the first launch.
 
 |Category|Details|
 |:-----|:-----|
@@ -96,7 +96,7 @@ Set the domain or full email address of Microsoft 365 mailbox to be added on fir
 |Possible values| *Various (example: "contoso.com")*  |
 |Requires Configuration Profile| No |
 |Availability|16.18 |
-|Comments| The full email address or domain specified will be added in Outlook instead of the Office activation email address.  |
+|Comments| The full email address or domain specified are added in Outlook instead of the Office activation email address.  |
 
 ### Allow only corporate mailboxes to be added
 
@@ -138,7 +138,7 @@ Hide the “Did you know? Outlook supports…” text in the **Set Up Your Email
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|16.18 |
-|Comments| Only hides text. Doesn't impact ability to add noncorporate mailboxes. |
+|Comments| Only hides text. Doesn't affect the ability to add noncorporate mailboxes. |
 
 ## Import/export settings
 
@@ -172,7 +172,7 @@ Prevent users from being able to export archive files (.olm).
 
 ### Disable "Do not send a response"
 
-Prevent users from selecting “Do not send response” when replying to a meeting request.
+Prevent users from selecting "Do not send response" when replying to a meeting request.
 
 |Category|Details|
 |:-----|:-----|
@@ -213,7 +213,7 @@ Prevent users from adding Teams online meeting details to events.
 
 ### Disable "Encrypt-Only"
 
-Prevent users from applying the **Encrypt-Only** option to emails when using Microsoft 365 Message Encryption.
+Prevent users from applying the **Encrypt-Only** option to emails when using Microsoft Purview Message Encryption.
 
 |Category|Details|
 |:-----|:-----|
@@ -227,7 +227,7 @@ Prevent users from applying the **Encrypt-Only** option to emails when using Mic
 
 ### Disable "Do Not Forward"
 
-Prevent users from applying the **Do Not Forward** option to emails when using Microsoft 365 Message Encryption.
+Prevent users from applying the **Do Not Forward** option to emails when using Microsoft Purview Message Encryption.
 
 |Category|Details|
 |:-----|:-----|
@@ -281,7 +281,7 @@ Prevent users from applying S/MIME option to email messages.
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-### Trust AutoDiscover redirects
+### Trust Auto-Discover redirects
 
 Automatically trust server redirects through AutoDiscover.
 
@@ -293,7 +293,7 @@ Automatically trust server redirects through AutoDiscover.
 |Possible values| false (default) <br/> true  |
 |Requires Configuration Profile| No |
 |Availability|15.29 |
-|Comments|When set to 'true' users aren't prompted to Allow or Deny redirects from AutoDiscover. They are automatically allowed.|
+|Comments|When set to 'true' users aren't prompted to Allow or Deny redirects from AutoDiscover. They're automatically allowed.|
 
 ## Weather location settings
 
@@ -306,7 +306,7 @@ Set default location for weather in calendar view.
 |Domain| com.microsoft.Outlook |
 |Key|DefaultWeatherLocation  |
 |Data Type|String  |
-|Possible values| *Various (example: “Paris, France”)* |
+|Possible values| *Various (example: "Paris, France")* |
 |Requires Configuration Profile| No |
 |Availability|16.18 |
 |Comments| Use the format returned by the weather location search within Outlook. |
