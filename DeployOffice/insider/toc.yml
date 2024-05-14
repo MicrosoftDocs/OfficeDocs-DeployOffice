@@ -1,0 +1,45 @@
+items:
+  - name: Microsoft 365 Insider Program for Business
+    items:
+      - name: Overview
+        href: overview.md
+      - name: Microsoft 365 Insider channels
+        href: compare-channels.md
+      - name: Deployment options
+        href: deploy/options.md
+
+      - name: Deployment options for Windows
+        items:
+          - name: Office Deployment Tool
+            href: deploy/office-deployment-tool.md
+          - name: Configuration Manager
+            href: deploy/configuration-manager.md
+          - name: Microsoft Intune
+            href: deploy/intune.md
+          - name: Group Policy
+            href: deploy/group-policy.md
+          - name: Let your users choose
+            href: deploy/user-choice.md
+          - name: Change the registry
+            href: deploy/registry.md
+
+      - name: Deployment options for Mac
+        items:
+          - name: Microsoft AutoUpdate (MAU)
+            href: deploy/microsoft-autoupdate.md
+          - name: Preference
+            href: deploy/preference.md
+
+      - name: Update history
+        items:
+          - name: Beta Channel
+            href: /officeupdates/update-history-beta-channel
+          - name: Current Channel (Preview)
+            href: /officeupdates/update-history-current-channel-preview
+
+      - name: Release notes
+        items:
+          - name: Beta Channel for Windows
+            href: /officeupdates/beta-channel
+          - name: Current Channel (Preview) for Windows
+            href: /officeupdates/current-channel-preview

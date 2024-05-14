@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to use the Office Deployment Tool (ODT) to deploy Microsoft 365 Apps to client devices from a shared folder on your network."
-ms.date: 03/01/2023
+ms.date: 04/29/2024
 ---
 
 # Deploy Microsoft 365 Apps from a local source
@@ -70,7 +70,7 @@ To download and deploy Microsoft 365 Apps to the first group, you use a configur
     - **Language:** Include all the language packs you plan to deploy. 
     - **Installation:** Select **Local Source**, and type "\\\Server\Share\Microsoft365Apps\Current" for the source path. To silently install Office for your users, choose **Off** for **Show installation to user**.
     - **Update and upgrade:** To update your client devices automatically, choose **Office Content Delivery Network CDN** and **Automatically check for updates**. Choose to **Uninstall any MSI versions of Office, including Visio and Project**. You can also choose to install the same language as any removed MSI versions of Office.
-    - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the EULA**.
+    - **Licensing and activation:** To silently install Microsoft 365 Apps for your users, choose **On** for **Automatically accept the Microsoft Software License Terms**.
     - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 
 > [!TIP]

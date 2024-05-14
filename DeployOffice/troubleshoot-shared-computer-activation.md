@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 recommendations: false
 description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
-ms.date: 03/01/2023
+ms.date: 04/26/2024
 ---
 
 # Troubleshoot issues with shared computer activation for Microsoft 365 Apps
@@ -56,7 +56,7 @@ If activation succeeded, there are some text files in the folder, like in the fo
   
 ![Screenshot of the Licensing folder, showing the licensing token files for shared computer activation.](images/adb109f0-757c-4e0e-87fa-ea87ba54b610.png)
   
-If you've configured the licensing token to roam, these text files will appear in the folder that you've specified.
+If you configure the licensing token to roam, these text files appear in the folder that you specified.
   
 <a name="Errors"> </a>
 
@@ -83,9 +83,9 @@ You can try these steps to fix this problem:
   
 - [Check that the user is assigned a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps.
     
-- Check that the user signs in with her user account for Office 365 if the **Activate Office** dialog box appears when the user opens an Office program.
+- Check that the user signs in with their user account for Office 365 if the **Activate Office** dialog box appears when the user opens an Office program.
     
-- Check that there is connectivity between the shared computer and the internet.
+- Check that there's connectivity between the shared computer and the internet.
     
 ![Unlicensed product error message.](images/4bab7afd-4ffa-4775-bc8b-86767198d140.png)
   
@@ -93,7 +93,7 @@ You can try these steps to fix this problem:
 
 ### Sorry, we cannot verify the license currently installed for this product.
 
-This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with his user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the internet.
+This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with their user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the internet.
   
 ![Cannot verify product license message.](images/f8bb9b93-f25d-44ff-b46e-a9e163704663.png)
   

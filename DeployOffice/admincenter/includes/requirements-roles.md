@@ -6,10 +6,10 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
-ms.date: 04/22/2024
+ms.date: 04/23/2024
 ---
-<!--This file is shared by update-validation.md. Headings are driven by article context.-->
-You can use any of the following Microsoft Entra built-in roles to access and manage features in the Microsoft 365 Apps admin center:
+<!--This file is shared by cloud-update.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md, overview-cloud-policy.md. Headings are driven by article context.-->
+You can use the following built-in Microsoft Entra roles for accessing and managing the feature:
 
 | Role                       | Description       |
 | -------------------------- | ----------------- |

@@ -1,0 +1,45 @@
+items:
+  - name: Privacy for Microsoft 365 Apps for enterprise
+    items:
+      - name: Overview of privacy controls
+        href: overview-privacy-controls.md
+      - name: Privacy controls available for Office products
+        href: products-versions-privacy-controls.md
+
+      - name: Manage privacy controls
+        items:
+          - name: Windows policy settings
+            href: manage-privacy-controls.md
+          - name: Mac preferences
+            href: mac-privacy-preferences.md
+          - name: iOS preferences
+            href: ios-privacy-preferences.md
+          - name: Android policy settings
+            href: android-privacy-controls.md
+          - name: Office for the web policy settings
+            href: office-web-privacy-controls.md
+
+      - name: Diagnostic data
+        items:
+          - name: Required diagnostic data
+            href: required-diagnostic-data.md
+          - name: Optional diagnostic data
+            href: optional-diagnostic-data.md
+          - name: Using the Diagnostic Data Viewer
+            href: https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855
+
+      - name: Connected experiences
+        items:
+          - name: Connected experiences
+            href: connected-experiences.md
+          - name: Connected experiences and your content
+            href: connected-experiences-content.md
+          - name: Optional connected experiences
+            href: optional-connected-experiences.md
+          - name: Required service data
+            href: required-service-data.md
+
+      - name: Essential services
+        href: essential-services.md
+      - name: In-product recommendations
+        href: in-product-recommendations.md

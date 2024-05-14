@@ -146,9 +146,9 @@ For other users, such as home users with an Office 365 (or Microsoft 365) subscr
 
 ## Preference setting for the Required Data Notice dialog for Microsoft AutoUpdate
 
-The first time Version 4.12 or later of Microsoft AutoUpdate (MAU) is launched, users will see a **Required Data Notice** dialog, which provides them with information about what data from MAU is sent to Microsoft.
+The first time Microsoft AutoUpdate (MAU) is launched, users will see a **Required Data Notice** dialog, which provides them with information about what data from MAU is sent to Microsoft.
 
-If you don't want your users to see this **Required Data Notice** dialog for Microsoft AutoUpdate, you can set the following preference. Regardless of which value you set, the dialog won't be shown to your users.
+If you don't want your users to see this **Required Data Notice** dialog for Microsoft AutoUpdate, you can set the following preference. Regardless of which value you set, the dialog won't be shown to your users and only required data will be sent.
 
 |Category|Details|
 |:-----|:-----|
@@ -156,10 +156,9 @@ If you don't want your users to see this **Required Data Notice** dialog for Mic
 |**Key**  | `AcknowledgedDataCollectionPolicy`  |
 |**Data Type**  | String |
 |**Possible values**  | `RequiredDataOnly` <br/> `RequiredAndOptionalData`|
-|**Availability** |4.12 and later |
+|**Availability** |4.12 - 4.69 for `RequiredDataOnly` and `RequiredAndOptionalData` <br/> 4.70 and later for `RequiredDataOnly`|
 
 If you let your users see this dialog, then when the user chooses **OK**, the value `RequiredDataOnly` is written to `AcknowledgedDataCollectionPolicy` and the dialog isn't shown to the user again.
-
 
 ## Related articles
 

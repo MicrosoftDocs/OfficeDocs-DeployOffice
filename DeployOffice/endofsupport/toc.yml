@@ -1,0 +1,47 @@
+items:
+  - name: End of support resources
+    href: resources.md
+  - name: Connectivity to Microsoft 365 services
+    href: microsoft-365-services-connectivity.md
+
+  - name: Microsoft 365 Apps
+    items:
+      - name: Windows 7
+        href: windows-7-support.md
+      - name: Windows 8
+        href: windows-8-support.md
+      - name: Windows 8.1
+        href: windows-81-support.md
+      - name: Windows Server
+        href: windows-server-support.md
+      - name: Migration from Windows Server
+        href: windows-server-migration.md
+
+  - name: Other Office products
+    items:
+      - name: Office 2016, 2013, 2010, and 2007
+        href: plan-upgrade-older-versions-office.md
+      - name: Office 2013 servers
+        href: /microsoft-365/enterprise/upgrade-office-2013-clients-servers
+      - name: Office 2010 servers
+        href: /microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products
+      - name: Office 2007 servers
+        href: /microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products
+
+  - name: Upgrade assistance
+    items:
+      - name: Microsoft FastTrack
+        href: https://www.microsoft.com/fasttrack
+      - name: App Assure
+        href: https://www.microsoft.com/fasttrack/microsoft-365/app-assure
+
+  - name: Related resources
+    items:
+      - name: Office system requirements
+        href: https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources
+      - name: Windows and Office support matrix (PDF)
+        href: https://aka.ms/windows-office-support-matrix
+      - name: Microsoft Office End of Support (Tech Community)
+        href: https://techcommunity.microsoft.com/t5/microsoft-office-end-of-support/ct-p/OfficeEOS
+      - name: Microsoft Lifecycle Policy
+        href: /lifecycle/

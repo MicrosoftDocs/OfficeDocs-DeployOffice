@@ -6,10 +6,10 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.topic: include
 description: Network Requirements for Microsoft 365 Apps admin center 
-ms.date: 04/22/2024
+ms.date: 04/23/2024
 ---
-<!--This file is shared by update-validation.md. Headings are driven by article context.-->
-The center supports the following subscription plans:
+<!--This file is shared by update-validation.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md, overview-cloud-policy.md. Headings are driven by article context.-->
+Your user must be assigned to one of the following subscription plans:
 
 | Type       | Subscription Plan |
 | ---------- | ----------------- |
@@ -18,7 +18,7 @@ The center supports the following subscription plans:
 | Enterprise | <li>Microsoft 365 E3</li><li>Microsoft 365 E5</li>
 
 > [!IMPORTANT]
-> The center is not available to customers who have the following plans:
+> The following plans are not supported:
 >- Microsoft 365 operated by 21Vianet
 >- Microsoft 365 GCC
 >- Microsoft 365 GCC High and DoD

@@ -1,0 +1,13 @@
+items:
+  - name: Securing Office
+    items:
+      - name: Internet macros blocked by default
+        href: internet-macros-blocked.md
+      - name: Security baseline
+        href: security-baseline.md
+      - name: Trusted Locations
+        href: trusted-locations.md
+      - name: Basic authentication sign-in prompts blocked
+        href: basic-authentication-prompts-blocked.md
+      - name: OneNote blocks dangerous extensions
+        href: onenote-extension-block.md

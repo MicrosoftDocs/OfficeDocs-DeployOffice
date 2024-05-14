@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 03/06/2024
+ms.date: 04/25/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -23,21 +23,35 @@ ms.date: 03/06/2024
 
 Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.office.com/). The service includes many of the same user-based policy settings that are available in Group Policy. You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431), under **Apps** > **Policy** > **Policies for Office apps**.  
 
-## Requirements for using Cloud Policy
+## Requirements
 
-The following are the requirements for using Cloud Policy with Microsoft 365 Apps for enterprise:
+### Supported built-in admin roles
+<!--Using include for adding requirements-->
+[!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
-- A [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions) of Microsoft 365 Apps for enterprise.
-- User accounts created in or synchronized to Microsoft Entra ID. The user must be signed into Microsoft 365 Apps for enterprise with a Microsoft Entra ID-based account.
-- Cloud Policy supports Microsoft 365 Groups and Microsoft Entra Security Groups created in or synchronized to Microsoft Entra ID. The membership type can be either Dynamic or Assigned.
-- To create a policy configuration, you must be assigned one of the following roles in Microsoft Entra ID: Global Administrator, Security Administrator, or Office Apps Admin.
-- The [required URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) must be properly configured on your network.
-- Cloud Policy service doesn't support authenticated proxies.
+### Licensing requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
 
-> [!IMPORTANT]
-> - Cloud Policy isn't available to customers who have the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
+> [!NOTE]
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 > - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md).
+
+### Product version requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Version requirements](./includes/requirements-versions.md)]
+
+### Network requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Network requirements](./includes/requirements-network.md)]
+
+### Microsoft Entra groups requirements
+Cloud Policy Service supports the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups) with the following requirements:
+
+- Policies only apply to **user objects**. 
+- **User objects** must be present in Microsoft Entra ID and have a [supported license](#licensing-requirements) assigned.
+- Nested groups support up to three levels deep.
+- A group might contain both **device objects** and **user objects**, but the **device objects** will be ignored.
 
 ## Steps for creating a policy configuration
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
-ms.date: 01/24/2024
+ms.date: 04/24/2024
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center
@@ -22,23 +22,29 @@ From the **Inventory** page, you can drill down to see detailed information abou
 > [!TIP]
 > If you want to get a better understanding on the benefits of using inventory, check out the [Introduction to inventory](https://www.youtube.com/watch?v=qHDFffWHdKk) video. If you want to go deeper in terms of how the inventory service works, which changes occur on your devices, and how to do troubleshoot missing devices, we recommend you check out the [Inventory deep dive](https://www.youtube.com/watch?v=g1rDR2aOAQc) video.
 
-## Requirements for using inventory
+## Requirements
 
-To access the inventory in your environment, ensure you meet these requirements:
+### Supported built-in admin roles
+<!--Using include for adding requirements-->
+[!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
-Use Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business (Version 2008 or newer).
-Run a Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business supported version of Windows 11 or Windows 10.
-Have a Microsoft 365 (or Office 365) Business Standard, Business Premium, A3, A5, E3, or E5 subscription.
-Ensure client devices can access these endpoints:
-  - `https://login.live.com`
-  - `https://*.config.office.com`
-  - `https://*.config.office.net`
+### Licensing requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
 
-> [!IMPORTANT]
-> Inventory isn't available to customers who have the following plans:
->- Office 365 operated by 21Vianet
->- Office 365 GCC
->- Office 365 GCC High and DoD
+### Product version requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Version requirements](./includes/requirements-versions.md)]
+
+### Network requirements
+<!--Using include for adding requirements-->
+[!INCLUDE [Network requirements](./includes/requirements-network.md)]
+
+### Microsoft Entra groups requirements
+The feature to [switch device update channels](#switch-device-update-channel) supports using [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups).
+
+<!--Using include for adding requirements-->
+[!INCLUDE [Groups requirements](./includes/requirements-groups.md)]
 
 ## How to view inventory
 
@@ -156,6 +162,6 @@ Devices send a heartbeat once a day to the inventory. A device doesn't send a he
 
 ## Missing or duplicate devices
 
-If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements-for-using-inventory).
+If you have devices that are missing from the inventory, make sure that the devices meet the [requirements for using inventory](#requirements).
 
 In a few cases, some devices might appear more than once in the inventory. This duplication mainly occurs with nonpersisted VDI environments. These duplicate entries are removed automatically each day.

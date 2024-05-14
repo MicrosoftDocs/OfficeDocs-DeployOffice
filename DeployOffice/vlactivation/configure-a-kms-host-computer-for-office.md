@@ -9,20 +9,22 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 03/01/2023
+ms.date: 04/26/2024
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office
 
+<!--Update for LTSC 2024-->
+
 ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
-To activate volume licensed versions of Office, including Project and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
+To activate volume licensed versions of Office, including Project, and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
 To enable the KMS host computer to activate Office, you must install the Office Volume License Pack and enter your KMS key on the KMS host computer. Then, you need to activate the KMS key over the internet or by telephone. 
 
-If you have a KMS host computer configured to activate Windows, you can configure that same KMS host computer to activate Office. You can also configure a KMS host computer to activate multiple versions of Office, such as Office LTSC 2021, Office 2019, and Office 2016. In these cases, the KMS host computer must be running an operating system that supports KMS for each of the versions of Office that you want to activate. You'll also need to install the Office Volume License Pack for each version of Office on the KMS host computer and activate a KMS host key for each version of Office.
+If you have a KMS host computer configured to activate Windows, you can configure that same KMS host computer to activate Office. You can also configure a KMS host computer to activate multiple versions of Office, such as Office LTSC 2021, Office 2019, and Office 2016. In these cases, the KMS host computer must be running an operating system that supports KMS for each of the versions of Office that you want to activate. Also, you need to install the Office Volume License Pack for each version of Office on the KMS host computer and activate a KMS host key for each version of Office.
 
-Office supports KMS host computers running on the following operating systems, depending on which version of Office is being activated by KMS:
+Office supports KMS host computers running on the following operating systems, depending on which version of Office is activated with KMS:
 - Office LTSC 2021: At least Windows Server 2016 or at least Windows 10 (volume editions)
 - Office 2019: At least Windows Server 2012 or at least Windows 8.1 (volume editions)
 - Office 2016: At least Windows Server 2008 R2 or at least Windows 7 Service Pack 1 (volume editions)
@@ -54,12 +56,12 @@ If your KMS host computer has internet access, do the following steps:
    - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
    - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
    - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
-3. Run the Office Volume License Pack executable file. Running the executable file will install the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
+3. Run the Office Volume License Pack executable file. Running the executable file installs the Office Volume License Pack on the KMS host computer and then opens the Volume Activation Tools wizard.
 4. Follow the steps in the Volume Activation Tools wizard. Enter your KMS key when prompted.
 5. If you have a firewall, make sure port 1688 is open to allow the KMS host service through the firewall.
    - Go to **Control Panel** > **System and Security** > **Windows Firewall** (or **Windows Defender Firewall**).
-   - Click the **Allow an app or feature through Windows Firewall** link.
-   - Click the **Change Settings** button.
+   - Select the **Allow an app or feature through Windows Firewall** link.
+   - Select the **Change Settings** button.
    - Select the check box for Key Management Service and then choose **OK**.
 
 If your KMS host computer doesn't have internet access, you can activate it by telephone.
@@ -83,9 +85,9 @@ The result of running this command is a 36-digit installation ID. Paste the inst
   slui.exe 4
 ```
 
-This command launches the Windows phone activation wizard and it will display a telephone number.
+This command launches the Windows phone activation wizard and it displays a telephone number.
     
-After you've obtained the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It's for Windows. 
+After obtaining the telephone number, cancel the wizard. You can ignore the activation ID displayed by the wizard. It's for Windows. 
   
 3. Call the telephone number. At each prompt, enter a group of six numbers. This 36-digit number is the installation ID that you obtained in step 1.
     
@@ -108,7 +110,7 @@ Replace *ACTIVATIONID* with the Activation ID for your version of Office.
 
 ## Verify activations by the KMS host computer
 
-After you set up the KMS host computer, KMS clients send requests for activation and increment the current count of activations. The current count must be 5 or more before KMS clients are activated. The maximum current count is double the activation threshold, or 10. You can also check the KMS log in the Applications and Services Logs folder for event ID 12290, the ID for KMS-related activity. The KMS log records activation requests from KMS clients. Each event displays the name of the computer and the time stamp of each activation request.
+After you set up the KMS host computer, KMS clients send requests for activation and increment the current count of activations. The current count must be 5 or more before KMS clients are activated. The maximum current count is double the activation threshold, or 10. You can also check the KMS log from the Applications and Services Logs folder for event ID 12290, the ID for KMS-related activity. The KMS log records activation requests from KMS clients. Each event displays the name of the computer and the time stamp of each activation request.
   
 
 ## Verify the KMS key is successfully installed and activated

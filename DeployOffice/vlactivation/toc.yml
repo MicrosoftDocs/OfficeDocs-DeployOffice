@@ -1,0 +1,21 @@
+items:
+  - name: Volume activation of Office
+    items:
+      - name: Overview
+        href: plan-volume-activation-of-office.md
+      - name: Configure a KMS host computer
+        href: configure-a-kms-host-computer-for-office.md
+      - name: Configure DNS for KMS
+        href: configure-dns-to-activate-office-by-using-kms.md
+      - name: Activate by using KMS
+        href: activate-office-by-using-kms.md
+      - name: Activate by using MAK
+        href: activate-office-by-using-mak.md
+      - name: Activate by using Active Directory
+        href: activate-office-by-using-active-directory.md
+      - name: Rearm Office in an image
+        href: rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md
+      - name: Tools to manage volume activation
+        href: tools-to-manage-volume-activation-of-office.md
+      - name: Troubleshoot volume activation
+        href: troubleshoot-volume-activation-of-office.md
