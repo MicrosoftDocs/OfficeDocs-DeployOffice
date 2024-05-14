@@ -23,15 +23,10 @@ Use the Get-Place cmdlet to view the metadata configured on your buildings or fl
 ## Syntax
 
 ```powershell
-
 Get-PlaceV3
-
    [-Identity]
-
    [-AncestorId]
-
    [-Type]
-
 ```
 
 ## Description
@@ -47,9 +42,7 @@ You might see additional parameters in the PowerShell cmdlet, but those aren't c
 Retrieve a room or workspace using its smtp address identifier.
 
 ```powershell
-
 Get-PlaceV3 -Identity smtp@domain.com
-
 ```
 
 ### Example 2
@@ -57,9 +50,7 @@ Get-PlaceV3 -Identity smtp@domain.com
 Retrieve a place based on its type. This example returns all buildings.
 
 ```powershell
-
 Get-PlaceV3 -Type Building
-
 ```
 
 ### Example 3
@@ -67,9 +58,7 @@ Get-PlaceV3 -Type Building
 Retrieve a place and its two-level children using AncestorId parameter. If AncestorId provided is a building, it retrieves the building itself, all the floors that belong to that building and the rooms and workspaces located at those floors in that building.
 
 ```powershell
-
 Get-PlaceV3 -AncestorId 86897e93-bcef-4c05-af9d-45116dda791f 
-
 ```
 
 ## Parameters
@@ -106,19 +95,12 @@ You can't use this parameter with the Type parameter.
 |Position |0|
 
 |Attribute|Description|
-
 |:-----------|:-----------|
-
 |Type:|RecipientIdParameter|
-
 |Position:|0|
-
 |Default value:|None|
-
 |Required:|False|
-
 |Accept pipeline input:|True|
-
 |Accept wildcard characters:|False|
 
 ### -AncestorId
@@ -126,19 +108,12 @@ You can't use this parameter with the Type parameter.
 The AncestorId parameter specifies the guid of place that to be listed. If found, it also retrieves two levels of children. For example, for a AncestorId of type Building it retrieves the building, its floors and its associated rooms and spaces.
 
 |Attribute|Description|
-
 |:-----------|:-----------|
-
 |Type:|String|
-
 |Position:|Named|
-
 |Default value:|None|
-
 |Required:|False|
-
 |Accept pipeline input:|False|
-
 |Accept wildcard characters:|False|
 
 ### -Type
@@ -158,17 +133,10 @@ The Type parameter specifies the type of the place that you want to view. Valid 
 You can't use this parameter with the Identity parameter.
 
 |Attribute|Description|
-
 |:-----------|:-----------|
-
 |Type:|String|
-
 |Position:|Named|
-
 |Default value:|None|
-
 |Required:|False|
-
 |Accept pipeline input:|False|
-
 |Accept wildcard characters:|False|
