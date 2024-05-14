@@ -95,7 +95,7 @@ To process the DWG files, enter the geography of your Azure Maps Creator resourc
 
 [SCREENSHOT]
 
-1. Create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/en-us/free/search/).  
+1. Create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).  
 
 2. Register for feature flag. For more information, see [Welcome to Microsoft Azure](https://ms.portal.azure.com/#home). Once you've logged into your Azure account, navigate to subscriptions.
 
