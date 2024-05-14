@@ -70,6 +70,8 @@ The facility level specifies which DWG file to use for which level. A level must
 
 The following is an example of a sample building. The building has three levels uploaded through 3 DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled. You need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
 
+![Screenshot of the Create Configuration dialog box.](./images/places/maps-creator-guide-001.png)
+
 [SCREENSHOT]
 
 #### Georeferences
