@@ -18,7 +18,7 @@ _Note: Work is in progress to bring this cmdlet's functionality into the existin
 
 #Syntax
 
-```
+```powershell
 
 Get-PlaceV3
 
@@ -42,7 +42,7 @@ You might see additional parameters in the PowerShell cmdlet, but those are not 
 
 Retrieve a room or workspace using its smtp address identifier.
 
-```
+```powershell
 
 Get-PlaceV3 -Identity smtp@domain.com
 
@@ -52,7 +52,7 @@ Get-PlaceV3 -Identity smtp@domain.com
 
 Retrieve a place based on its type.  This example returns all buildings.
 
-```
+```powershell
 
 Get-PlaceV3 -Type Building
 
