@@ -17,7 +17,7 @@ description: "Guide to converting DWG floor plans to IMDF for indoor mapping in 
 
 This guide shows you how convert your DWG floor plans to IMDF for indoor mapping in Microsoft Places using the Azure Maps Creator tool. IMDF is currently the required file format for floorplans in Places.
 
-You can choose any CAD software to open and prepare your facility drawing files. However, procedures in this guide is were created using Autodesk's AutoCAD software. Any commands referenced in this guide are meant to be executed using Autodesk's AutoCAD® software. For detailed information on creating indoor maps, see [Create indoor map with the onboarding tool](/azure/azure-maps/creator-onboarding-tool).
+You can choose any CAD software to open and prepare your facility drawing files. However, procedures in this guide were created using Autodesk's AutoCAD® software. Any commands referenced in this guide are meant to be executed using Autodesk's AutoCAD software. For detailed information on creating indoor maps, see [Create indoor map with the onboarding tool](/azure/azure-maps/creator-onboarding-tool).
 
 ## Glossary of terms
 
@@ -55,11 +55,11 @@ Each DWG layer must adhere to the following rules:
 - A layer must exclusively contain features of a single class and category. For example, units of category room and wall can’t be on the same layer.
 - A single class or category of features can be represented by multiple layers.
 - Feature must be drawn as a closed geometry of the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
-- Feature text properties must be of entity type: TEXT or MTEXT.
+- Feature text properties must be of entity type TEXT or MTEXT.
 - Feature text properties must not contain additional information. For example, one MTEXT can’t contain both the name and category of a Unit.
 - TEXT and MTEXT justification point must fall within the bounds of the closed geometry.
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
-- Any DWG entity type that is not supported will be ignored.
+- Any DWG entity type that's not supported will be ignored.
 
 ## Levels  
 
@@ -71,7 +71,7 @@ Each DWG layer must adhere to the following rules:
 
 The facility level specifies which DWG file to use for which level. A level must have a level name and ordinal that describes the vertical order of each level in the facility.  
 
-The following is an example of a sample building. The building has three levels spread uploaded through 3 DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled, you will need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
+The following is an example of a sample building. The building has three levels uploaded through 3 DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled. You need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
 
 [SCREENSHOT]
 
@@ -79,7 +79,7 @@ The following is an example of a sample building. The building has three levels 
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
 
-You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be positioned, pan the map and rotate the building so that it's properly positioned.
+You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's properly positioned.
 
 [SCREENSHOT]
 
@@ -89,14 +89,14 @@ You begin by selecting the DWG layer that represents the building footprint. The
 
 ## Azure Maps Creator Setup  
 
-You can use the Azure Maps DWG building conversion tool to convert your floor plan to a file that can be used in Places for indoor mapping  
+You can use the Azure Maps DWG building conversion tool to convert your floor plan to a file that can be used in Places for indoor mapping.
 
-To process the DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
+To process DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
 
 [SCREENSHOT]
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
-2. Register for feature flag. Once you've logged into your Azure account, navigate to subscriptions.
+2. Register for the feature flag. Once you've logged into your Azure account, navigate to subscriptions.
 
 [SCREENSHOT]
 
@@ -108,11 +108,11 @@ To process the DWG files, enter the geography of your Azure Maps Creator resourc
 5. Search for “M365 Places Preview.”  
 6. Register for “M365 Places Preview.”  
 
-## Create the Azure Map Resource
+## Create the Azure Maps Resource
 
 1. From the Azure portal, choose Create Resource.
 2. Search for “Azure Maps.”
-3. Create Azure Map resource.
+3. Create Azure Maps resource.
 
 ## Create Azure Map Creator Resource 
 - Use Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
@@ -127,6 +127,6 @@ To process the DWG files, enter the geography of your Azure Maps Creator resourc
 
 [SCREENSHOT]
 
-2. Select the **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
+2. Select **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
 
 [sCREENSHOT]
