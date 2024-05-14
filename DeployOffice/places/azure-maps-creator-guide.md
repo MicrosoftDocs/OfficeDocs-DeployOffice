@@ -91,23 +91,29 @@ You begin by selecting the DWG layer that represents the building footprint. The
 
 You can use the Azure Maps DWG building conversion tool to convert your floor plan to a file that can be used in Places for indoor mapping  
 
-To process the DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and filename of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
+To process the DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
 
 [SCREENSHOT]
 
-1. Create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).  
-
-2. Register for feature flag. For more information, see [Welcome to Microsoft Azure](https://ms.portal.azure.com/#home). Once you've logged into your Azure account, navigate to subscriptions.
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
+2. Register for feature flag. Once you've logged into your Azure account, navigate to subscriptions.
 
 [SCREENSHOT]
 
 3. Select the subscription.
-
 4. Navigate to “Preview Features.”
 
 [SCREENSHOT]
 
-5. 
+5. Search for “M365 Places Preview.”  
+6. Register for “M365 Places Preview.”  
 
+## Create the Azure Map Resource
 
+1. From the Azure portal, choose Create Resource.
+2. Search for “Azure Maps.”
+3. Create Azure Map resource.
+
+## Create Azure Map Creator Resource 
+- Use Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
 
