@@ -281,7 +281,7 @@ Prevent users from applying S/MIME option to email messages.
 |Availability|16.57 |
 |Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
-### Trust Auto-Discover redirects
+### Trust AutoDiscover redirects
 
 Automatically trust server redirects through AutoDiscover.
 
