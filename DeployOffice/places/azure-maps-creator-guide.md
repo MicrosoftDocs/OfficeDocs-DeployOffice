@@ -33,11 +33,8 @@ This guide uses the following terms and definitions.
 ## File requirements
 
 When preparing your building drawing files for conversion, make sure to follow these preliminary requirements and recommendations:  
-
 - Building drawing files must be saved in DWG format, which is the native file format for Autodesk's AutoCAD software.  
-
 - The Conversion service works with the AutoCAD DWG file format. AC1032 is the internal format version for the DWG files. It's a good idea to select AC1032 for the internal DWG file format version.
-
 - A DWG file can only contain a single floor. A floor of a facility must be provided in its own separate DWG file. Therefore, if you have five floors in a facility, you must create five separate DWG files.
 
 ## Prepare the DWG files
@@ -130,4 +127,4 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 2. Select **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
 
-[sCREENSHOT]
+[SCREENSHOT]
