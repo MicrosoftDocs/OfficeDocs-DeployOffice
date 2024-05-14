@@ -40,7 +40,7 @@ When preparing your building drawing files for conversion, make sure to follow t
 
 - A DWG file can only contain a single floor. A floor of a facility must be provided in its own separate DWG file. Therefore, if you have five floors in a facility, you must create five separate DWG files.
 
-### Prepare the DWG files
+## Prepare the DWG files
 
 This part of the guide shows you how to use CAD commands to ensure that your DWG files meet the requirements of the Conversion service.  
 
@@ -48,23 +48,66 @@ You can choose any CAD software to open and prepare your facility drawing files.
 
 A single DWG file is required for each level of the building. All data of a single level must be contained in a single DWG file. Any external references (xrefs) must be bound to the parent drawing. For example, a building with three levels has three DWG files.
 
-### DWG layer requirements
+## DWG layer requirements
 
 Each DWG layer must adhere to the following rules:
 
 - A layer must exclusively contain features of a single class and category. For example, units of category room and wall can’t be on the same layer.
-
 - A single class or category of features can be represented by multiple layers.
-
 - Feature must be drawn as a closed geometry of the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
-
 - Feature text properties must be of entity type: TEXT or MTEXT.
-
 - Feature text properties must not contain additional information. For example, one MTEXT can’t contain both the name and category of a Unit.
-
 - TEXT and MTEXT justification point must fall within the bounds of the closed geometry.
-
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
-
 - Any DWG entity type that is not supported will be ignored.
+
+## Levels  
+
+- Level geometry must be provided as one closed geometry that contains all Units.
+- Closed geometries must be of the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
+- Level geometry must not be self-intersecting.
+
+### Facility levels
+
+The facility level specifies which DWG file to use for which level. A level must have a level name and ordinal that describes the vertical order of each level in the facility.  
+
+The following is an example of a sample building. The building has three levels spread uploaded through 3 DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled, you will need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
+
+[SCREENSHOT]
+
+### Georeference  
+
+Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
+
+You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be positioned, pan the map and rotate the building so that it's properly positioned.
+
+[SCREENSHOT]
+
+### Units
+
+[SCREENSHOT]
+
+## Azure Maps Creator Setup  
+
+You can use the Azure Maps DWG building conversion tool to convert your floor plan to a file that can be used in Places for indoor mapping  
+
+To process the DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and filename of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
+
+[SCREENSHOT]
+
+1. Create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/en-us/free/search/).  
+
+2. Register for feature flag. For more information, see [Welcome to Microsoft Azure](https://ms.portal.azure.com/#home). Once you've logged into your Azure account, navigate to subscriptions.
+
+[SCREENSHOT]
+
+3. Select the subscription.
+
+4. Navigate to “Preview Features.”
+
+[SCREENSHOT]
+
+5. 
+
+
 
