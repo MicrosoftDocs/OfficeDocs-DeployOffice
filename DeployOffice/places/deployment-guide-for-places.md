@@ -22,7 +22,7 @@ Microsoft Places Public Preview lets you introduce more flexible work within you
 Before onboarding Places, complete the following prerequisites:
 
 - Be assigned the [Exchange administrator role](/microsoft-365/admin/add-users/about-exchange-online-admin-role) to manage Exchange-related configurations for Places.
-- Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).
+- Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
 - Verify you have one of the following subscriptions:
 
   - Microsoft 365 Business Standard
