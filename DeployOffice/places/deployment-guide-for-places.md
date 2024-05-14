@@ -54,11 +54,6 @@ Enabling Places and Workplans lets you facilitate hybrid work coordination in yo
 
 Use the following commands to enable buildings, apps, and location sharing controls when onboarding your tenant to Places Public Preview.
 
-> [!NOTE]
-> When a setting is added or changed, please wait for 1 day for the settings to replicate.
-
-### Enable Places for a subset of users in your tenant using mail-enabled security groups
-
 Places can be enabled to a specific set of users by utilizing [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
 > [!NOTE]
@@ -76,14 +71,14 @@ Set-PlacesSettings -Collection Places -EnablePlacesWebApp  ‘Default:false,OID<
 > [!NOTE]
 > It can take up to 1 day for users to gain access to the features.
 
-### Step 2 - Activate clients
+### Step 3 - Activate additional clients
 
 See the table below to learn more about activating different clients for Places:
 
 |Client|Result|
 |----|----|
-|[Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle)|Places features are available in the latest version of Outlook.|
-|[Teams app](/microsoftteams/apps-in-teams)|Places is available as a Teams app within Teams. Opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
+|Outlook|Places features are available in the latest version of [Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
+|Teams|Places is available as a [Teams app](/microsoftteams/apps-in-teams) within Teams and you can opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
 
 ## Related topics
 
