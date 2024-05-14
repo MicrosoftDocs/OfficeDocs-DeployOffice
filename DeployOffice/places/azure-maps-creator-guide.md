@@ -108,16 +108,16 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 5. Search for “M365 Places Preview.”  
 6. Register for “M365 Places Preview.”  
 
-## Create the Azure Maps Resource
+### Create the Azure Maps Resource
 
 1. From the Azure portal, choose Create Resource.
 2. Search for “Azure Maps.”
 3. Create Azure Maps resource.
 
-## Create Azure Map Creator Resource 
+### Create Azure Map Creator Resource 
 - Use Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
 
-## Select your subsciption key
+### Select your subsciption key
 
 - Primary and secondary keys are generated after the Azure Maps account is created. For more information, see [Authentication with Azure Maps](/azure/azure-maps/azure-maps-authentication).
 
