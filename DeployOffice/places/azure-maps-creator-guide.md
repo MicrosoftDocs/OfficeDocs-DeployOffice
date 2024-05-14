@@ -61,7 +61,7 @@ Each DWG layer must adhere to the following rules:
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
 - Unsupported DWG entity types will be ignored.
 
-## Levels  
+## Level geometry
 
 - Level geometry must be provided as one closed geometry that contains all Units.
 - Closed geometries must be the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
@@ -75,7 +75,7 @@ The following is an example of a sample building. The building has three levels 
 
 [SCREENSHOT]
 
-### Georeference  
+### Georeferences
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
 
@@ -84,6 +84,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 [SCREENSHOT]
 
 ### Units
+DWG units are used to...?
 
 [SCREENSHOT]
 
