@@ -37,7 +37,7 @@ When preparing your building drawing files for conversion, make sure to follow t
 - The Conversion service works with the AutoCAD DWG file format. AC1032 is the internal format version for the DWG files. It's a good idea to select AC1032 for the internal DWG file format version.
 - A DWG file can only contain a single floor. A floor of a facility must be provided in its own separate DWG file. Therefore, if you have five floors in a facility, you must create five separate DWG files.
 
-## Prepare the DWG files
+### Prepare the DWG files
 
 This part of the guide shows you how to use CAD commands to ensure that your DWG files meet the requirements of the Conversion service.  
 
@@ -45,7 +45,7 @@ You can choose any CAD software to open and prepare your facility drawing files.
 
 A single DWG file is required for each level of the building. All data of a single level must be contained in a single DWG file. Any external references (xrefs) must be bound to the parent drawing. For example, a building with three levels has three DWG files.
 
-## DWG layer requirements
+### DWG layer requirements
 
 Each DWG layer must adhere to the following rules:
 
@@ -58,13 +58,13 @@ Each DWG layer must adhere to the following rules:
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
 - Unsupported DWG entity types will be ignored.
 
-## Level geometry
+### Level geometry
 
 - Level geometry must be provided as one closed geometry that contains all Units.
 - Closed geometries must be the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
 - Level geometry must not be self-intersecting.
 
-### Facility levels
+#### Facility levels
 
 The facility level specifies which DWG file to use for which level. A level must have a level name and ordinal that describes the vertical order of each level in the facility.  
 
@@ -72,7 +72,7 @@ The following is an example of a sample building. The building has three levels 
 
 [SCREENSHOT]
 
-### Georeferences
+#### Georeferences
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
 
@@ -80,7 +80,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 
 [SCREENSHOT]
 
-### Units
+#### Units
 DWG Units are used to define the measurement units for a building.
 
 [SCREENSHOT]
