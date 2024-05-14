@@ -114,14 +114,14 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 2. Search for “Azure Maps.”
 3. Create Azure Maps resource.
 
-### Create Azure Map Creator Resource 
-- Use Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
+### Create the Azure Maps Creator Resource 
+- Use the Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
 
 ### Select your subsciption key
 
 - Primary and secondary keys are generated after the Azure Maps account is created. For more information, see [Authentication with Azure Maps](/azure/azure-maps/azure-maps-authentication).
 
-## Reviewing your building details
+## Review your building details
 
 1. When you've finished configuring all your buildings, select the **Review + Convert** button to review all your building details.
 
