@@ -72,8 +72,6 @@ The following is an example of a sample building. The building has three levels 
 
 ![Screenshot of the Create Configuration dialog box.](./images/places/maps-creator-guide-001.png)
 
-[SCREENSHOT]
-
 #### Georeferences
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
