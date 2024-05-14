@@ -59,12 +59,12 @@ Each DWG layer must adhere to the following rules:
 - Feature text properties must not contain additional information. For example, one MTEXT can’t contain both the name and category of a Unit.
 - TEXT and MTEXT justification point must fall within the bounds of the closed geometry.
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
-- Any DWG entity type that's not supported will be ignored.
+- Unsupported DWG entity types will be ignored.
 
 ## Levels  
 
 - Level geometry must be provided as one closed geometry that contains all Units.
-- Closed geometries must be of the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
+- Closed geometries must be the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
 - Level geometry must not be self-intersecting.
 
 ### Facility levels
@@ -79,7 +79,7 @@ The following is an example of a sample building. The building has three levels 
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
 
-You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's properly positioned.
+You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's positioned where you want it.
 
 [SCREENSHOT]
 
@@ -123,7 +123,7 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 ## Review your building details
 
-1. When you've finished configuring all your buildings, select the **Review + Convert** button to review all your building details.
+1. When you finish configuring all your buildings, select the **Review + Convert** button to review all your building details.
 
 [SCREENSHOT]
 
