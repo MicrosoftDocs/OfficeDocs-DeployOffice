@@ -121,3 +121,12 @@ To process the DWG files, enter the geography of your Azure Maps Creator resourc
 
 - Primary and secondary keys are generated after the Azure Maps account is created. For more information, see [Authentication with Azure Maps](/azure/azure-maps/azure-maps-authentication).
 
+## Reviewing your building details
+
+1. When you've finished configuring all your buildings, select the **Review + Convert** button to review all your building details.
+
+[SCREENSHOT]
+
+2. Select the **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
+
+[sCREENSHOT]
