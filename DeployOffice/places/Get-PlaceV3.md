@@ -96,7 +96,6 @@ For example, for places that are not based on a mailbox (buildings and floors):
 
 You can't use this parameter with the Type parameter.
 
-
 |Attribute |Description |
 | -------- | -------- |
 |Type|RecipientIdParameter   |
