@@ -84,7 +84,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 [SCREENSHOT]
 
 ### Units
-DWG units are used to...?
+DWG Units are used to define the measurement units for a building.
 
 [SCREENSHOT]
 
