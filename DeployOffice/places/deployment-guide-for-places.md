@@ -21,8 +21,8 @@ Microsoft Places Public Preview lets you introduce more flexible work within you
 
 Before onboarding Places, complete the following prerequisites:
 
-- Be assigned the [Exchange administrator role](/microsoft-365/admin/add-users/about-exchange-online-admin-role?view=o365-worldwide) to manage Exchange-related configurations for Places.
-- Ensure you have the latest [PowerShell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).
+- Be assigned the [Exchange administrator role](/microsoft-365/admin/add-users/about-exchange-online-admin-role) to manage Exchange-related configurations for Places.
+- Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).
 - Verify you have one of the following subscriptions:
 
   - Microsoft 365 Business Standard
@@ -59,7 +59,7 @@ Use the following commands to enable buildings, apps, and location sharing contr
 
 ### Enable Places for a subset of users in your tenant using mail-enabled security groups
 
-Places can be enabled to a specific set of users by utilizing [mail-enabled security groups](exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
+Places can be enabled to a specific set of users by utilizing [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
 
 > [!NOTE]
 >
@@ -89,8 +89,8 @@ See the table below to learn more about activating different clients for Places:
 
 [Opt into Microsoft Places Public Preview](https://sway.cloud.microsoft/vO4yNkvgrJDJSepU?ref=Link&culture=en-us&country=us)
 
-[Release notes for Microsoft Teams Rooms](microsoftteams/rooms/rooms-release-note)
+[Release notes for Microsoft Teams Rooms](/microsoftteams/rooms/rooms-release-note)
 
-[Microsoft Teams Health and usage reports](microsoftteams/rooms/health-and-usage-reports)
+[Microsoft Teams Health and usage reports](/microsoftteams/rooms/health-and-usage-reports)
 
-[Set up Remote Access in Microsoft Teams Rooms Pro Management portal](microsoftteams/rooms/remotely-access-teams-rooms)
+[Set up Remote Access in Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/remotely-access-teams-rooms)
