@@ -16,11 +16,12 @@ description: "PowerShell cmdlet for Places to get places."
 
 # Get-PlaceV3
 
-Use the Get-Place cmdlet to view the metadata configured on your buildings or floors within your Places directory, and your conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
+Use the Get-PlaceV3 cmdlet to view the metadata configured on your buildings or floors within your Places directory, and your conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
 
 > [!NOTE]
-> Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.
-
+> Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
+>   
+> You might see additional parameters in this PowerShell cmdlet, but they are not currently supported. It isn't recommended to use any parameter that is not documented on this page.
 ## Syntax
 ```powershell
 Get-PlaceV3
@@ -30,33 +31,31 @@ Get-PlaceV3
 ```
 
 ## Description
-
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
-You might see additional parameters in the PowerShell cmdlet, but they aren't currently supported. It isn't recommended to use any parameter that isn't documented on this page.
+You might see additional parameters in this PowerShell cmdlet, but they are not currently supported. It isn't recommended to use any parameter that is not documented on this page.
 
 ## Examples
-
 ### Example 1
-
 Retrieve a room or workspace using its smtp address identifier.
-
 ```powershell
 Get-PlaceV3 -Identity smtp@domain.com
 ```
 
 ### Example 2
-
 Retrieve a place based on its type. This example returns all buildings.
-
 ```powershell
 Get-PlaceV3 -Type Building
 ```
 
 ### Example 3
+Retrieve the PlaceId based on the place name and type.
+```powershell
+Get-PlaceV3 -Type Building | Where-Object -Property DisplayName -eq 'Pine Valley' | fl PlaceId
+```
 
+### Example 4
 Retrieve a place and its two-level children using AncestorId parameter. If AncestorId provided is a building, it retrieves the building itself, all the floors that belong to that building and the rooms and workspaces located at those floors in that building.
-
 ```powershell
 Get-PlaceV3 -AncestorId 86897e93-bcef-4c05-af9d-45116dda791f 
 ```
