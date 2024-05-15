@@ -125,7 +125,7 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
    ![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
 
-2. Select **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
+2. Select **Convert** [is this option right?] to begin the conversion of your DWG files.
 
    ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
 
