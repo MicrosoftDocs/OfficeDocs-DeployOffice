@@ -53,7 +53,7 @@ Places depends on a fully setup hierarchy among your rooms/workspaces, floors, a
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
 > [!CAUTION] 
-> You might see additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page.
+> You might find additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page.
 
 ## Examples
 
