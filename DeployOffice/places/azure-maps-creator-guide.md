@@ -89,7 +89,7 @@ DWG Units are used to define the measurement units for a building.
 
 You can use the Azure Maps DWG building conversion tool to convert your floor plan to a file that can be used in Places for indoor mapping.
 
-To process DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
+To process DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select **Process**. This process can take several minutes to complete.
 
 ![Screenshot of the DWG Building Conversion for Places dialog box.](../images/places/maps-creator-guide-004.png)
 
