@@ -1,17 +1,12 @@
 items:
-  - name: Deployment guide for Places
-    href: deployment-guide-for-places.md
-  - name: Opt in to the Microsoft Places Public Preview Program
-    href: opt-in-places-preview.md
-  - name: PlacesPowerShell
+  - name: Get started
     items:
-      - name: Get-PlaceV3
-        href: get-placev3.md
-      - name: Set-PlaceV3
-        href: set-placev3.md
-      - name: New-Place
-        href: new-place.md
-      - name: Remove-Place
-        href: remove-place.md
-      - name: Initialize-Places
-        href: initialize-places.md
+    - name: Deployment guide for Places
+      href: deployment-guide-for-places.md
+    - name: Opt in to the Microsoft Places Public Preview Program
+      href: opt-in-places-preview.md
+
+  - name: Maps
+    items:
+    - name: Azure Maps Creator Guide for Microsoft Places
+      href: azure-maps-creator-guide.md

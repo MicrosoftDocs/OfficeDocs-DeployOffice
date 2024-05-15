@@ -3,7 +3,7 @@ title: "Deployment guide for Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/14/2024
+ms.date: 05/15/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -65,7 +65,7 @@ Connect to the Microsoft Places service in a new PowerShell and enable Places fo
 
 ```powershell
 Connect-MicrosoftPlaces 
-Set-PlacesSettings -Collection Places -EnablePlacesWebApp  ‘Default:false,OID<OID of Mail-enabled Security Group>@<Tenant ID>:true’
+Set-PlacesSettings -Collection Places -EnablePlacesWebApp  ‘Default:false,OID:<OID of Mail-enabled Security Group>@<Tenant ID>:true’
 ```
 
 > [!NOTE]
