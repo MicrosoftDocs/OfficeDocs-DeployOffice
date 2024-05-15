@@ -81,7 +81,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 ![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
 
 #### Units
-Map one or more DWG layer(s) to the Unit feature class. An instance of a Unite feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
+Map one or more DWG layer(s) to the Unit feature class. An instance of a Unit feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
 
 ![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
 
@@ -125,7 +125,7 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
    ![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
 
-2. Select **Download IMDF** to have access to your file to continue the Azure Maps onboarding process.
+2. Select **Download IMDF** to continue the Places maps onboarding process.
 
    ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
 
