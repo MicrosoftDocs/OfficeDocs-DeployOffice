@@ -16,7 +16,7 @@ description: "Places PowerShell cmdlet to get places."
 
 # Get-PlaceV3
 
-Use the Get-PlaceV3 cmdlet to view the metadata configured on your buildings or floors within your Places directory, and your conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
+Use the Get-PlaceV3 cmdlet to view metadata configured on buildings or floors within the Places directory, as well as conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
 
 > [!NOTE]
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
@@ -37,25 +37,25 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 
 ## Examples
 ### Example 1
-Retrieve a room or workspace using its smtp address identifier.
+This example returns a room or workspace using its smtp address identifier.
 ```powershell
 Get-PlaceV3 -Identity smtp@domain.com
 ```
 
 ### Example 2
-Retrieve a place based on its type. This example returns all buildings.
+This example returns all places of a certain type.
 ```powershell
 Get-PlaceV3 -Type Building
 ```
 
 ### Example 3
-Retrieve the PlaceId based on the place name and type.
+This example returns the PlaceId based on a place name and type.
 ```powershell
 Get-PlaceV3 -Type Building | Where-Object -Property DisplayName -eq 'Pine Valley' | fl PlaceId
 ```
 
 ### Example 4
-Find all places whose ancestor is a specific place.  For example, if you have a building with PlaceId 86897e93-bcef-4c05-af9d-45116dda791f, you can find all rooms and floors associated to that building with the below command.
+This example returns all places whose ancestor is a specific place.
 ```powershell
 Get-PlaceV3 -AncestorId 86897e93-bcef-4c05-af9d-45116dda791f 
 ```
@@ -93,7 +93,8 @@ You can't use this parameter with the Type parameter.
 
 ### -AncestorId
 
-The AncestorId parameter specifies the guid of place to be listed. If found, it also retrieves two levels of children. For example, for a AncestorId of type Building it retrieves the building, its floors and its associated rooms and spaces.
+The AncestorId parameter specifies the guid of place. If found, it also retrieves all places with this place as an ancestor.  For example, if a Building's PlaceId is provided as the AncestorId, this would return all floors, rooms, and workspaces that are associated with that building.
+
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|String|
@@ -114,6 +115,7 @@ The Type parameter specifies the type of the place that you want to view. Valid 
 * Floor
 
 You can't use this parameter with the Identity parameter.
+
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|String|
