@@ -14,7 +14,7 @@ recommendations: true
 description: "PowerShell cmdlet for Places to get places."
 ---
 
-# Places PowerShell Get-Place cmdlet
+# Get-PlaceV3
 
 Use the Get-Place cmdlet to view the metadata configured on your buildings or floors within your Places directory, and your conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
 
@@ -22,15 +22,6 @@ Use the Get-Place cmdlet to view the metadata configured on your buildings or fl
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.
 
 ## Syntax
-
-```powershell
-Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "Adele Vance"}
-Get-PlaceV3
-    [-Identity]
-    [-AncestorId]
-    [-Type]
-```
-
 ```powershell
 Get-PlaceV3
    [-Identity]
