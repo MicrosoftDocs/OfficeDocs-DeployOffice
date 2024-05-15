@@ -78,12 +78,12 @@ Georeferencing is used to specify the exterior profile, location, and rotation o
 
 You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's positioned where you want it.
 
-![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-002.png)
+![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
 
 #### Units
 DWG Units are used to define the measurement units for a building.
 
-![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-003.png)
+![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
 
 ## Azure Maps Creator Setup  
 
@@ -91,17 +91,17 @@ You can use the Azure Maps DWG building conversion tool to convert your floo
 
 To process DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select Process. This process can take several minutes to complete.
 
-[SCREENSHOT]
+![Screenshot of the DWG Building Conversion for Places dialog box.](../images/places/maps-creator-guide-004.png)
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
 2. Register for the feature flag. Once you've logged into your Azure account, navigate to subscriptions.
 
-[SCREENSHOT]
+![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
 
 3. Select the subscription.
 4. Navigate to “Preview Features.”
 
-[SCREENSHOT]
+![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
 
 5. Search for “M365 Places Preview.”  
 6. Register for “M365 Places Preview.”  
@@ -123,8 +123,10 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 1. When you finish configuring all your buildings, select the **Review + Convert** button to review all your building details.
 
-[SCREENSHOT]
+![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
 
 2. Select **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
 
-[SCREENSHOT]
+![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
+
+## Related topics
