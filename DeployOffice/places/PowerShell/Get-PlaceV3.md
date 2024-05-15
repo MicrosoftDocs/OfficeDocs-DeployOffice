@@ -20,8 +20,7 @@ Use the Get-PlaceV3 cmdlet to view the metadata configured on your buildings or 
 
 > [!NOTE]
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
->   
-> You might see additional parameters in this PowerShell cmdlet, but they are not currently supported. It isn't recommended to use any parameter that is not documented on this page.
+
 ## Syntax
 ```powershell
 Get-PlaceV3
@@ -33,7 +32,8 @@ Get-PlaceV3
 ## Description
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
-You might see additional parameters in this PowerShell cmdlet, but they are not currently supported. It isn't recommended to use any parameter that is not documented on this page.
+> [!CAUTION] 
+> You might find additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page.
 
 ## Examples
 ### Example 1
