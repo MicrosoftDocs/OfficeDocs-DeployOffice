@@ -98,8 +98,8 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 ![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
 
-3. Select the subscription.
-4. Navigate to “Preview Features.”
+3. Under **Create a resource**, select **Subscriptions**.
+4. Navigate to **Preview features**.
 
 ![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
 
