@@ -14,9 +14,9 @@ description: "PowerShell cmdlet for Places to get places."
 ---
 Use the Get-Place cmdlet to view the metadata configured on your buildings or floors within your Places directory, as well as your conference rooms and workspaces.  The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
 
-> [!NOTE] 
-> Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  You might also see additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page. 
-
+> [!NOTE]
+> Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
+> You might also see additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page. 
 # Syntax
 ```powershell
 Get-PlaceV3
