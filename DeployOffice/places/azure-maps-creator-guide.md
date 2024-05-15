@@ -78,12 +78,12 @@ Georeferencing is used to specify the exterior profile, location, and rotation o
 
 You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's positioned where you want it.
 
-[SCREENSHOT]
+![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-002.png)
 
 #### Units
 DWG Units are used to define the measurement units for a building.
 
-[SCREENSHOT]
+![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-003.png)
 
 ## Azure Maps Creator Setup  
 
