@@ -81,6 +81,7 @@ For example, for places that aren't based on a mailbox (buildings and floors):
 * PlaceId
 
 You can't use this parameter with the Type parameter.
+
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|RecipientIdParameter|
