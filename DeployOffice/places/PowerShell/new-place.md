@@ -50,12 +50,6 @@ New-Place
 ## Description
 Places depends on a fully setup hierarchy among your rooms/workspaces, floors, and buildings.  Once buildings and floors are created, you can link them using parentId.
 
-:::mermaid
-graph LR;
-```
-A(Conference room) -->|parentId| B(Floor) -->|parentId|C(Building)
-```:::
-
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
 > [!CAUTION] 
@@ -91,6 +85,7 @@ New-Place -Name 'Building 3' -Type Building -ResourceLinks @{name="TestLink"; Va
 
 ### -City
 The City parameter specifies the room's city. If the value contains spaces, enclose the value in quotation marks ("). The maximum length is 200 characters.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|String|
@@ -106,6 +101,7 @@ The CountryOrRegion parameter specifies the room's country or region. A valid va
 A reference for two-letter country codes is available at [Country Codes List](https://www.nationsonline.org/oneworld/country_code_list.htm).
 
 Address information is used by the Places Explore page to show nearby buildings.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|CountryInfo|
@@ -135,6 +131,7 @@ The GeoCoordinates parameter specifies the building's location in latitude, long
 * Latitude, longitude, and altitude: For example, "47.644125;-122.122411;161.432"
 
 _Note:_ If period separators don't work for you, use commas instead.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|GeoCoordinates|
@@ -153,6 +150,7 @@ A building's display name is visible:
 * In Places Finder as a filter when searching for a conference room or workspace.
 
 A floor's display name is visible in Places Finder as a filter when searching for a conference room or workspace.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|String|
@@ -179,6 +177,7 @@ _Note: Once the ParentId has been set on a room or workspace, some parameters th
 
 ### -PostalCode
 The PostalCode parameter specifies the room's postal code. The maximum length is 200 characters.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|String|
@@ -193,6 +192,7 @@ The ResourceLinks parameter specifies external links that should be associated t
 
 The value must be provided as an array of type Link. For each link you need to pass the properties: Name, Value and Type. For type the possible values are: Unspecified, BlobId, Url:
 `-ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}`.  The maximum length is 200 characters.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|Link[]|
@@ -204,6 +204,7 @@ The value must be provided as an array of type Link. For each link you need to p
 
 ### -State
 The State parameter specifies the room's state or province. The maximum length is 200 characters.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|String|
@@ -215,6 +216,7 @@ The State parameter specifies the room's state or province. The maximum length i
 
 ### -Street
 The Street parameter specifies the room's physical address. The maximum length is 200 characters.
+
 |Attribute|Description| 
 | -------- | -------- |
 |Type:|String|
