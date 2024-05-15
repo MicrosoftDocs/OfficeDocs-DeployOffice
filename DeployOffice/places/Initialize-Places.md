@@ -1,5 +1,5 @@
 ---
-title: "Initialize-Place"
+title: "Initialize-Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
