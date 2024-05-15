@@ -14,4 +14,4 @@ items:
       - name: Remove-Place
         href: remove-place.md
       - name: Initialize-Place
-        href: initialize-place.md
+        href: initialize-places.md
