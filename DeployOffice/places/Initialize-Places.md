@@ -12,3 +12,4 @@ ms.localizationpriority: medium
 recommendations: true
 description: "PowerShell cmdlet for Places to initialize Places."
 ---
+# Place PowerShell Initialize-Places cmdlet
