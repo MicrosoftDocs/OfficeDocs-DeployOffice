@@ -17,7 +17,7 @@ description: "Guide to converting DWG floor plans to IMDF for indoor mapping in 
 
 This guide shows you how convert your DWG floor plans to IMDF for indoor mapping in Microsoft Places using the Azure Maps Creator tool. IMDF is currently the required file format for floorplans in Places.
 
-You can choose any CAD software to open and prepare your facility drawing files. However, procedures in this guide were created using Autodesk's AutoCAD® software. Any commands referenced in this guide are meant to be executed using Autodesk's AutoCAD software. For detailed information on creating indoor maps, see [Create indoor map with the onboarding tool](/azure/azure-maps/creator-onboarding-tool).
+You can choose any CAD software to open and prepare your facility drawing files. However, procedures in this guide were created using Autodesk's AutoCAD® software. Any commands referenced in this guide are meant to be executed using Autodesk's AutoCAD software.
 
 ## Glossary of terms
 
@@ -81,7 +81,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 ![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
 
 #### Units
-DWG Units are used to define the measurement units for a building.
+Map one or more DWG layer(s) to the Unit feature class. An instance of a Unite feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
 
 ![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
 
@@ -121,11 +121,11 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 ## Review your building details
 
-1. When you finish configuring all your buildings, select the **Review + Convert** button to review all your building details.
+1. When you finish configuring all your buildings, select the **Review + Create** button to review all your building details.
 
    ![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
 
-2. Select **Convert** [is this option right?] to begin the conversion of your DWG files.
+2. Select **Download IMDF** to have access to your file to continue the Azure Maps onboarding process.
 
    ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
 
