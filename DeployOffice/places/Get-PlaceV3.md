@@ -1,5 +1,5 @@
 ---
-title: "Get-PlaceV3"
+title: "Get-PlaceV3
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -10,5 +10,5 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: true
-description: "PowerShell cmdlet for Places to get Places."
+description: "PowerShell cmdlet for Places to get places."
 ---
