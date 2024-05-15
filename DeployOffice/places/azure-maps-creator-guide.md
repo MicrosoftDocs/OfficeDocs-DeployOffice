@@ -96,12 +96,12 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
 2. Register for the feature flag. Once you've logged into your Azure account, navigate to subscriptions.
 
-![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
+   ![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
 
 3. Under **Create a resource**, select **Subscriptions**.
 4. Navigate to **Preview features**.
 
-![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
+   ![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
 
 5. Search for “M365 Places Preview.”  
 6. Register for “M365 Places Preview.”  
@@ -123,10 +123,10 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 1. When you finish configuring all your buildings, select the **Review + Convert** button to review all your building details.
 
-![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
+   ![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
 
 2. Select **Convert** [or **Create + Download**?] to begin the conversion of your DWG files.
 
-![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
+   ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
 
 ## Related topics
