@@ -129,4 +129,3 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
    ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
 
-## Related topics
