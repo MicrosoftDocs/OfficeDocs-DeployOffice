@@ -46,11 +46,9 @@ The following features are available for early access as part of the public prev
 
 ## Ready to go?
 
-
-|Next steps| Link|
-| -------- | -------- |
-|Review and confirm you meet the deployment requirements|[Deployment Guide for Places](deployment-guide-for-places.md)|
-|Fill out the form to opt in to additional preview features|[Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6)|
+> [!IMPORTANT]
+> To learn how to enable and configure these features for your organization, [review the onboarding guide](/deployoffice/places/deployment-guide-for-places).
+Fill out this form to opt in to additional preview features: [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6).
 
 ## FAQ
 
