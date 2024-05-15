@@ -95,10 +95,10 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
 2. Register for the feature flag. Once you've logged into your Azure account, navigate to subscriptions.
+3. Under **Create a resource**, select **Subscriptions**.
 
    ![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
 
-3. Under **Create a resource**, select **Subscriptions**.
 4. Navigate to **Preview features**.
 
    ![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
@@ -108,7 +108,7 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 ### Create the Azure Maps Resource
 
-1. From the Azure portal, choose Create Resource.
+1. From the [Azure portal](https://ms.portal.azure.com/#home), choose **Create a resource**.
 2. Search for “Azure Maps.”
 3. Create Azure Maps resource.
 
