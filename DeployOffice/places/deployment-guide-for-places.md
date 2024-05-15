@@ -87,7 +87,7 @@ See the table below to learn more about activating different clients for Places:
 
 ## Related topics
 
-[Opt in to Microsoft Places Public Preview](https://sway.cloud.microsoft/vO4yNkvgrJDJSepU?ref=Link&culture=en-us&country=us)
+[Opt into Microsoft Places Public Preview](https://sway.cloud.microsoft/vO4yNkvgrJDJSepU?ref=Link&culture=en-us&country=us)
 
 [Release notes for Microsoft Teams Rooms](/microsoftteams/rooms/rooms-release-note)
 
