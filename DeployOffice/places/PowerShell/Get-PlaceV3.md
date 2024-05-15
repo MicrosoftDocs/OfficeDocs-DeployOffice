@@ -81,12 +81,6 @@ For example, for places that aren't based on a mailbox (buildings and floors):
 * PlaceId
 
 You can't use this parameter with the Type parameter.
-
-|Attribute |Description |
-| -------- | -------- |
-|Type|RecipientIdParameter   |
-|Position |0|
-
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|RecipientIdParameter|
@@ -99,7 +93,6 @@ You can't use this parameter with the Type parameter.
 ### -AncestorId
 
 The AncestorId parameter specifies the guid of place to be listed. If found, it also retrieves two levels of children. For example, for a AncestorId of type Building it retrieves the building, its floors and its associated rooms and spaces.
-
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|String|
@@ -120,7 +113,6 @@ The Type parameter specifies the type of the place that you want to view. Valid 
 * Floor
 
 You can't use this parameter with the Identity parameter.
-
 |Attribute|Description|
 |:-----------|:-----------|
 |Type:|String|
