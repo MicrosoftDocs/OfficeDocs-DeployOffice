@@ -3,3 +3,5 @@ items:
     href: deployment-guide-for-places.md
   - name: Opt in to the Microsoft Places Public Preview Program
     href: opt-in-places-preview.md
+  - name: Azure Maps Creator Guide for Microsoft Places
+    href: azure-maps-creator-guide.md
