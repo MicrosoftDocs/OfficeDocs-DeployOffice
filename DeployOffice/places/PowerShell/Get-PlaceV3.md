@@ -55,7 +55,7 @@ Get-PlaceV3 -Type Building | Where-Object -Property DisplayName -eq 'Pine Valley
 ```
 
 ### Example 4
-Retrieve a place and its two-level children using AncestorId parameter. If AncestorId provided is a building, it retrieves the building itself, all the floors that belong to that building and the rooms and workspaces located at those floors in that building.
+Find all places whose ancestor is a specific place.  For example, if you have a building with PlaceId 86897e93-bcef-4c05-af9d-45116dda791f, you can find all rooms and floors associated to that building with the below command.
 ```powershell
 Get-PlaceV3 -AncestorId 86897e93-bcef-4c05-af9d-45116dda791f 
 ```
