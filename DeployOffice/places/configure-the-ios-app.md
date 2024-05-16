@@ -37,7 +37,7 @@ To enable the Microsoft Places mobile experience, an IT admin might need to conf
 
 - Customers update their Unified Endpoint Management, such as Intune, for MAM policy requirements to allow others to install the Places mobile App (for some tenants, see the criteria and guidance below **???**).
 
-## Enable Places Mobile for your users
+## Enable Places mobile for your users
 
 Run the following PowerShell cmdlet to enable the opt-in features for your tenant.
 
@@ -45,9 +45,9 @@ Run the following PowerShell cmdlet to enable the opt-in features for your tenan
 Set-PlacesSettings -Collection Places -PlacesEnabled ‘Default:false, OID<Security Group OID>@<TenantId>:true’ -EnablePlacesMobileApp ‘Default:true’ 
 ```
 
-## Mobile application installation
+## The Places mobile app installation
 
-To install the Places mobile experience (iOS only), an IT admin must update their Intune MAM policy (if applicable). Pilot users need to install the Places app on their iPhones.
+To install the Places mobile experience (iOS only), an IT admin must update their Intune MAM policy (if applicable). Pilot users need to install the Places app on their mobile devices.
 
 The mobile access installation process is made up of these five steps.
 
