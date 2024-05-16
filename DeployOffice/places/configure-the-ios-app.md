@@ -16,9 +16,9 @@ description: "Instructions on how to install the Microsoft Places mobile app (iO
 
 To enable the mobile experience, an IT admin might need to configure Mobile Application Management (MAM), and users must install Apple’s TestFlight app and the Microsoft Places app on their mobile phones. This article explains how to install the Places application.
 
-- These instructions are only in effect for the Private and Public Previews. Testing will be managed through Apple’s TestFlight platform.
+- These instructions are only in effect for the Private and Public Previews. Testing is managed through Apple’s TestFlight platform.
 
-- TestFlight is an application/service owned by Apple and is offered to app developers to make it easy to invite users to test apps and collect feedback before releasing thei apps in the App Store.
+- TestFlight is an application and service owned by Apple. It's offered to app developers to make it easy to invite users to test apps and collect feedback before releasing thei apps in the App Store.
 
 - The Places mobile application can be made available to Private and Public Preview customers’ users that have iOS devices (version 16.4 or later).  
 
@@ -35,5 +35,5 @@ To enable the mobile experience, an IT admin might need to configure Mobile Appl
 
 - EnabledPlacesMobileApp is set to default:true, or all users that need access to the mobile app are added to the Security Group set for EnablePlacesMobileApp.
 
-- Customer updates their Unified Endpoint Management, such as Intune, for MAM policy requirements to allow employees to install the Places mobile App (some tenants, see criteria and guidance below).
+- Customers update their Unified Endpoint Management, such as Intune, for MAM policy requirements to allow employees to install the Places mobile App (some tenants, see criteria and guidance below).
 
