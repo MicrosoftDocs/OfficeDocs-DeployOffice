@@ -19,7 +19,7 @@ description: "Places PowerShell cmdlet to remove places."
 Use the Remove-Place cmdlet to delete buildings or floors from your Places directory.
 
 > [!NOTE] 
-> Rooms and workspaces continue to be removeable using the [Exchange Remove-Mailbox cmdlet](https://learn.microsoft.com/en-us/powershell/module/exchange/remove-mailbox?view=exchange-ps).
+> Rooms and workspaces continue to be removeable using Exchange [Remove-Mailbox](../powershell/module/exchange/remove-mailbox).
 
 ## Syntax
 ```powershell
