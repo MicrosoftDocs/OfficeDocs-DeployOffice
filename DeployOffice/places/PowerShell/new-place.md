@@ -52,7 +52,7 @@ New-Place
 
 ## Description
 
-Microsoft Places experiences are dependent upon a fully setup hierarchy among your rooms/workspaces, floors, and buildings.  Once buildings and floors are created, you can use ParentId define the hierarchy relationships between rooms/workspaces to floor and floors to buildings.
+Microsoft Places experiences are dependent upon a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Once buildings and floors are created, you can use ParentId define the hierarchy relationships between rooms/workspaces to floor and floors to buildings.
 
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
@@ -126,7 +126,7 @@ Address information is used by the Places Explore page to show nearby buildings.
 
 ### -Description
 
-The Description parameter specifies a descriptive label for the place.  If the value contains spaces, enclose the value in quotation marks (").  The maximum length is 200 characters.
+The Description parameter specifies a descriptive label for the place. If the value contains spaces, enclose the value in quotation marks ("). The maximum length is 200 characters.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -139,7 +139,7 @@ The Description parameter specifies a descriptive label for the place.  If the v
 
 ### -GeoCoordinates
 
-The GeoCoordinates parameter specifies the building's location in latitude, longitude and (optionally) altitude coordinates. A valid value for this parameter uses one of the following formats:
+The GeoCoordinates parameter specifies the building's location in latitude, longitude, and (optionally) altitude coordinates. A valid value for this parameter uses one of the following formats:
 
 * Latitude and longitude: For example, "47.644125;-122.122411"
 * Latitude, longitude, and altitude: For example, "47.644125;-122.122411;161.432"
@@ -157,11 +157,11 @@ _Note: If period separators don't work for you, use commas instead._
 
 ### -Name
 
-The Name parameter specifies the display name of the place.  The maximum length is 200 characters.  
+The Name parameter specifies the display name of the place. The maximum length is 200 characters.  
 
 A building's display name is visible:
 
-* In Outlook when users are setting up their work hours and location, they will be able to select a building.
+* In Outlook when users are setting up their work hours and location, they are able to select a building.
 * In Places Explore page that shows who else is in the same building, nearby buildings, and more.
 * In Places Finder as a filter when searching for a conference room or workspace.
 
@@ -182,7 +182,7 @@ The ParentId parameter specifies the ID of a Place in the parent location hierar
 * A room or workspace should have a parent floor. _(optional in the cmdlet, but without this parameter set, Places experiences will be very limited)_
 * A floor must have a parent building. _(required)_
 
-Once the ParentId has been set on a room or workspace, legacy room/workspace properties that are actually about the floor (e.g., floor number) or about the building (e.g., address and location information) will be read-only for that room/workspace using Set-PlaceV3.  The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
+Once the ParentId has been set on a room or workspace, legacy room/workspace properties that are actually about the floor (such as floor number) or about the building (such as address and location information) will be read-only for that room/workspace using Set-PlaceV3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -210,8 +210,8 @@ The PostalCode parameter specifies the room's postal code. The maximum length is
 
 The ResourceLinks parameter specifies external links that should be associated to this building, such as a dining menu, a link to services or a building website.
 
-The value must be provided as an array of type Link. For each link you need to pass the properties: Name, Value and Type. For type the possible values are: Unspecified, BlobId, Url:
-`-ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}`.  The maximum length is 200 characters.
+The value must be provided as an array of type Link. For each link you need to pass the properties: Name, Value, and Type. For type the possible values are: Unspecified, BlobId, Url:
+`-ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}`. The maximum length is 200 characters.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -250,7 +250,7 @@ The Street parameter specifies the room's physical address. The maximum length i
 
 ### -Tags
 
-The Tags parameter specifies additional features of the room (for example, details like the type of view or furniture type).  There is no maximum length currently.
+The Tags parameter specifies additional features of the room (for example, details like the type of view or furniture type). There's no maximum length currently.
 
 You can specify multiple labels separated by commas. If the labels contains spaces, enclose the values in quotation marks: `"Label 1","Label 2",..."Label N"`.
 
@@ -267,7 +267,7 @@ _Note: The entire set will be replaced on update. To add or remove a value, be s
 
 ### -Type
 
-The Type parameter specifies the type of the place that is being created.  Valid values are:
+The Type parameter specifies the type of the place that is being created. Valid values are:
 
 * Building
 * Floor
