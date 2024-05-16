@@ -30,8 +30,8 @@ Beginning today, organizations with a qualifying Microsoft 365 plan have access 
 > [!IMPORTANT]
 > To learn how to enable and configure these features for your organization, review the onboarding guide [here](/deployoffice/places/deployment-guide-for-places).
 
-This guide takes you through the following steps:  
 
+This guide takes you through the following steps:
 - Getting the latest version of Outlook to support Places
 - Enabling the web app experience for your users
 - Accessing the Teams Preview environment for Places Features
