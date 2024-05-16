@@ -33,6 +33,7 @@ This guide uses the following terms and definitions.
 ## File requirements
 
 When preparing your building drawing files for conversion, make sure to follow these preliminary requirements and recommendations:  
+
 - Building drawing files must be saved in DWG format, which is the native file format for Autodesk's AutoCAD software.  
 - The Conversion service works with the AutoCAD DWG file format. AC1032 is the internal format version for the DWG files. It's a good idea to select AC1032 for the internal DWG file format version.
 - A DWG file can only contain a single floor. A floor of a facility must be provided in its own separate DWG file. Therefore, if you have five floors in a facility, you must create five separate DWG files.
@@ -81,6 +82,7 @@ You begin by selecting the DWG layer that represents the building footprint. The
 ![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
 
 #### Units
+
 Map one or more DWG layer(s) to the Unit feature class. An instance of a Unit feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
 
 ![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
@@ -112,7 +114,8 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 2. Search for “Azure Maps.”
 3. Create Azure Maps resource.
 
-### Create the Azure Maps Creator Resource 
+### Create the Azure Maps Creator Resource
+
 - Use the Azure Maps Creator to create private indoor map data. For more information, see [Manage Azure Maps Creator](/azure/azure-maps/how-to-manage-creator).
 
 ### Select your subscription key
@@ -128,4 +131,3 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 2. Select **Download IMDF** to continue the Places maps onboarding process.
 
    ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
-
