@@ -14,9 +14,9 @@ description: "Instructions on how to install the Microsoft Places mobile app (iO
 ---
 # Configure the iOS app for Microsoft Places
 
-To enable the mobile experience, an IT admin might need to configure Mobile Application Management (MAM), and users must install Apple’s TestFlight app and the Microsoft Places app on their mobile phones. Please refer to the below steps for the details and instructions.
+To enable the mobile experience, an IT admin might need to configure Mobile Application Management (MAM), and users must install Apple’s TestFlight app and the Microsoft Places app on their mobile phones. This article explains how to install the Places application.
 
-- These instructions are only in effect for the Private and Public Preview. Testing will be managed through Apple’s TestFlight platform.  
+- These instructions are only in effect for the Private and Public Previews. Testing will be managed through Apple’s TestFlight platform.
 
 - TestFlight is an application/service owned by Apple and is offered to app developers to make it easy to invite users to test apps and collect feedback before releasing thei apps in the App Store.
 
@@ -27,12 +27,13 @@ To enable the mobile experience, an IT admin might need to configure Mobile Appl
 > [!NOTE]
 > The Microsoft Places iOS app is an opt-in feature. For more information, see [Microsoft Places Preview](https://www.microsoft.com/en-us/microsoft-places).
 
-## Prerequisites 
+## Prerequisites
 
-If applicable, your organization’s Mobile Application Management (MAM) policy should allow your employees to download/install “TestFlight” app to install, run and experience Places iOS. 
+- If applicable, your organization’s MAM policy should allow your users to download and install the Apple TestFlight app so they can install, run, and experience the Places iOS.
 
-All users that need access to Places (including Mobile app) are added to the Security Group in Tenant Settings for PlacesEnabled. 
+- All users that need access to Places (including the mobile app) are added to the Security Group in Tenant Settings for PlacesEnabled.
 
-EnabledPlacesMobileApp is set to default:true OR all users that need access to the mobile app are added to the Security Group set for EnablePlacesMobileApp 
+- EnabledPlacesMobileApp is set to default:true, or all users that need access to the mobile app are added to the Security Group set for EnablePlacesMobileApp.
 
-Customer updates their Unified Endpoint Management, such as Intune, for MAM policy requirements to allow employees to install the Places Mobile App (some tenants, see criteria and guidance below) 
+- Customer updates their Unified Endpoint Management, such as Intune, for MAM policy requirements to allow employees to install the Places mobile App (some tenants, see criteria and guidance below).
+
