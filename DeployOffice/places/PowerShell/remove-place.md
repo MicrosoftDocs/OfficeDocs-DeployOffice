@@ -16,7 +16,7 @@ description: "Places PowerShell cmdlet to remove places."
 
 # Remove-Place
 
-Use the Remove-Place cmdlet to delete buildings or floors within your Places directory.
+Use the Remove-Place cmdlet to delete buildings or floors from your Places directory.
 
 > [!NOTE] 
 > Rooms and workspaces continue to be removeable using the [Exchange Remove-Mailbox cmdlet](https://learn.microsoft.com/en-us/powershell/module/exchange/remove-mailbox?view=exchange-ps).
@@ -30,7 +30,7 @@ Remove-Place
 ## Description
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
-You cannot remove a place that is a parent of other places.  Before removing a place, clear the parentId value of its existing child places before attempting to remove.  As an example, clear the ParentId value on all rooms on a given floor before deleting that floor.
+You cannot remove a place that is a parent of other places.  Before removing a place, clear the parentId value of its existing child places before attempting to remove.  As an example, clear the ParentId value on all rooms associated with a given floor before deleting that floor.
 
 > [!CAUTION] 
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported. It is not recommended to use any parameter that is not documented on this page.
