@@ -70,12 +70,12 @@ The mobile access installation process is made up of these five steps.
 
 #### Step 2: Customer emails the Places mobile team to request mobile access enablement (IT admin)
 
-Use this email template to request access to the Places iOS app.
+Use the following email template to request access to the Places iOS app:
 
 **To**: placesmobileaccessrequests@service.microsoft.com<br>
 **Subject**: Places Mobile iOS app enablement – URL request (*customer name*)
 
-Include these details in the body of the email message:
+Include the following details in the body of your email message:
 - Customer name
 - Estimated number of iOS mobile users
 - Date needed by
@@ -83,11 +83,11 @@ Include these details in the body of the email message:
 
 #### Step: 3 The URL is generated and shared with the customer in an email notification (Places mobile team)
 
-- The Places mobile team responds to the customer in e-mail within 24 to 48 hours and provides your organization’s URL for mobile installation (using Apple's Test-Flight platform).
+- The Places mobile team responds in e-mail to the customer within 24 to 48 hours and provides your organization’s URL for mobile installation (using Apple's Test-Flight platform).
 
 #### Step 4: The customer distributes the URL to their users (IT admin)
 
-- The customer admin shares the URL with all iOS pilot users in their tenant.
+- The customer admin shares the URL with the iOS pilot users in their tenant.
 
    The following is a sample URL:
 
@@ -96,14 +96,14 @@ Include these details in the body of the email message:
 > [!NOTE]
 > Users must be previously added to the PlacesEnabled SG and the EnablePlaceMobileApp should set to **default:true**, or be set to an SG for the desired users.
 
-#### Step 5: Customer's users click on the URL to download and install the Places iOS app (Pilot users)
+#### Step 5: The customer's users click on the URL to download and install the Places iOS app (pilot users)
 
-1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device. **Note**: This is a **one-time** step to install the Places app.
-2. The Apple TestFlight app installation will direct users to a two-step process to install the Places app. **First**, install the Test Flight app. **Second**, return to the URL and tap on **Start Testing.** This will launch the TestFlight app on the device and make the user eligible to install the Places app.
+1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device. **Note**: it's a **one-time** step to install the Places app.
+2. The Apple TestFlight app installation directs users to a two-step process to install the Places app. **First**, install the Test Flight app. **Second**, return to the URL and tap on **Start Testing.** This launches the TestFlight app on the device and makes the user eligible to install the Places app.
 
    ![Screenshot of the TestFlight app install on a mobile device.](../images/places/configure-ios-app-002b.png)
 
-3. In the TestFlight app, find the listing for the Microsoft Places app and click **Install**.
+3. In the TestFlight app, find the listing for **Microsoft Places** and tap **Install**.
 
    ![Screenshot of the Microsoft Places app install on a mobile device.](../images/places/configure-ios-app-003.png)
 
@@ -113,8 +113,8 @@ Include these details in the body of the email message:
 
 5. Open and sign in to the Places mobile app.
 
-   Once the Places app is installed, it will show up in the user's dashboard like any other app installed from App Store.
+   Once the Places app is installed, it will show up in the user's dashboard like any other app installed from the App Store.
 
-   You can click to open the app and sign in using your corporate credentials (the same email that was granted access through PlacesEnabled and EnablePlacesMobileApp in the Places tenant settings.)
+   You can tap to open the app and sign in using your corporate credentials (the same email that was granted access through PlacesEnabled and EnablePlacesMobileApp in the Places tenant settings.)
 
    ![Screenshot of the Places app on a mobile device home screen.](../images/places/configure-ios-app-005.png)
