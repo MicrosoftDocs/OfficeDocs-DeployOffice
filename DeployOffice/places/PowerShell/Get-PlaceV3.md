@@ -16,8 +16,7 @@ description: "Places PowerShell cmdlet to get places."
 
 # Get-PlaceV3
 
-Use the Get-PlaceV3 cmdlet to view metadata configured on buildings or floors within the Places directory, as well as conference rooms and workspaces. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
-
+Use the Get-PlaceV3 cmdlet to view metadata configured on conference rooms, workspaces, buildings or floors within the Places directory. The additional metadata provides a better search and room suggestion experience, as well as other suggestions and experiences when using Microsoft Places.
 > [!NOTE]
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
 
@@ -49,7 +48,7 @@ Get-PlaceV3 -Type Building
 ```
 
 ### Example 3
-This example returns the PlaceId based on a place name and type.
+This example returns the PlaceId based on a place's name and type.
 ```powershell
 Get-PlaceV3 -Type Building | Where-Object -Property DisplayName -eq 'Pine Valley' | fl PlaceId
 ```
@@ -93,7 +92,7 @@ You can't use this parameter with the Type parameter.
 
 ### -AncestorId
 
-The AncestorId parameter specifies the guid of place. If found, it also retrieves all places with this place as an ancestor.  For example, if a Building's PlaceId is provided as the AncestorId, this would return all floors, rooms, and workspaces that are associated with that building.
+The AncestorId parameter specifies the guid of place. If the specified place found, it returns all places below this place in the directory hierarchy.  For example, if a building's PlaceId is provided as the AncestorId, this would return all floors, rooms, and workspaces that are under that building in the directory hierarchy.
 
 |Attribute|Description|
 |:-----------|:-----------|
