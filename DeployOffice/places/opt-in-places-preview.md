@@ -27,7 +27,9 @@ Beginning today, organizations with a qualifying Microsoft 365 plan have access 
 - **Peek Cards:** Easily see who’s coming into the office and adjust your location plan, directly from your Outlook Calendar. Receive notifications to book space on days in office.
 - **Expanded Presence:** Add location to your presence signal to indicate when you’re in the office or a particular office.
 
-To learn how to enable and configure these features for your organization, review the onboarding guide [here](/deployoffice/places/deployment-guide-for-places). This guide takes you through the following steps:  
+> [!IMPORTANT]
+> To learn how to enable and configure these features for your organization, review the onboarding guide [here](/deployoffice/places/deployment-guide-for-places).
+This guide takes you through the following steps:  
 
 - Getting the latest version of Outlook to support Places
 - Enabling the web app experience for your users
@@ -44,12 +46,13 @@ The following features are available for early access as part of the public prev
 - **Analytics features:** Get access to intent and actual occupancy and utilization data.
 - **Auto-release policies:** Allow reserved rooms to be automatically released if unoccupied.
 
-## Ready to go?
+## Prerequisites for additional feature access
+
+Before opting in, review and confirm you meet the deployment requirements. See [Deployment Guide for Places](deployment-guide-for-places.md) for more information.
 
 > [!IMPORTANT]
-> To learn how to enable and configure these features for your organization, [review the onboarding guide](/deployoffice/places/deployment-guide-for-places).
-Fill out this form to opt in to additional preview features: [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6).
-
+> **Ready to go?**
+> Fill out the [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt in to additional preview features.
 ## FAQ
 
 **Preview includes early access features** - The features in this preview are early-access features. They may change, experience temporary downtime, and may not be part of the final product. We advise deploying in test environments for preview features.  
