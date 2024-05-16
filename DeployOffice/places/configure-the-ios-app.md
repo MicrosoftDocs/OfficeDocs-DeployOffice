@@ -83,7 +83,7 @@ Include the following details in the body of your email message:
 
 #### Step: 3 The URL is generated and shared with the customer in an email notification (Places mobile team)
 
-- The Places mobile team responds in e-mail to the customer within 24 to 48 hours and provides your organization’s URL for mobile installation (using Apple's Test-Flight platform).
+- The Places mobile team responds in e-mail to the customer within 24 to 48 hours and provides your organization’s URL for mobile installation (using Apple's TestFlight platform).
 
 #### Step 4: The customer distributes the URL to their users (IT admin)
 
