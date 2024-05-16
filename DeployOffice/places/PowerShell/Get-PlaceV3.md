@@ -21,6 +21,7 @@ Use the Get-PlaceV3 cmdlet to view metadata configured on conference rooms, work
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange Get-Place cmdlet.  
 
 ## Syntax
+
 ```powershell
 Get-PlaceV3
    [-Identity]
@@ -29,32 +30,42 @@ Get-PlaceV3
 ```
 
 ## Description
+
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
-> [!CAUTION] 
+> [!CAUTION]
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported.  It is not recommended to use any parameter that is not documented on this page.
 
 ## Examples
+
 ### Example 1
+
 This example returns a room or workspace using its smtp address identifier.
+
 ```powershell
 Get-PlaceV3 -Identity smtp@domain.com
 ```
 
 ### Example 2
+
 This example returns all places of a certain type.
+
 ```powershell
 Get-PlaceV3 -Type Building
 ```
 
 ### Example 3
+
 This example returns the PlaceId based on a place's name and type.
+
 ```powershell
 Get-PlaceV3 -Type Building | Where-Object -Property DisplayName -eq 'Pine Valley' | fl PlaceId
 ```
 
 ### Example 4
+
 This example returns all places whose ancestor is a specific place.
+
 ```powershell
 Get-PlaceV3 -AncestorId 86897e93-bcef-4c05-af9d-45116dda791f 
 ```
