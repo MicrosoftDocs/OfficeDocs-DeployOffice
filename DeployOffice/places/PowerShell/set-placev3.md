@@ -21,7 +21,7 @@ Use the Set-PlaceV3 cmdlet to update metadata about your rooms, workspaces, floo
 
 ## Syntax
 #### Building
-```
+```powershell
 Set-PlaceV3
 	[-Identity]
 	[-City]
@@ -39,7 +39,7 @@ Set-PlaceV3
 	[-Tags]
 ```
 #### Floor
-```
+```powershell
 Set-PlaceV3
 	[-Identity]
 	[-Description]
@@ -49,9 +49,9 @@ Set-PlaceV3
 	[-Tags]
 ```
 #### Room or Workspace
-_Set-PlaceV3 supports legacy location parameters already exposed in Exchange Set-Place cmdlet.  However, once a room has been linked to a floor/building using the -ParentId parameter, location information (StreetAddress, City, etc.) should be managed on the Building rather than on the room or workspace._
+Set-PlaceV3 supports legacy location parameters already exposed in Exchange Set-Place cmdlet.  However, once a room has been linked to a floor/building using the -ParentId parameter, location information (StreetAddress, City, etc.) should be managed on the Building rather than on the room or workspace.
 
-```
+```powershell
 Set-PlaceV3
 	[-Identity]
 	[-AudioDeviceName]
@@ -87,23 +87,21 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 This example sets up the directory hierarchy for a room, floor, and building.  
 
 _In this example, the floor's PlaceId is f12172b6-195d-4e6e-8f4f-eb72e41de99a, and the building's PlaceId is daa2f89b-75c4-4eb7-adcc-ff249233338d._
-```
+```powershell
 Set-PlaceV3 -Identity 'room@contoso.com' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d
 ```
 
 ### Example 2
 This example updates a building's address and geocoordinates.
-
-```
+```powershell
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -GeoCoordinates "47.644125;-122.122411"
 ```
 
 ### Example 3
 This example updates the resource links for a building with resource links.  
-
-_Note: The entire set will be replaced on update. To add or remove a value, be sure to include previous values that should be persisted._
-```
+The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
+```powershell
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}
 ```
 
