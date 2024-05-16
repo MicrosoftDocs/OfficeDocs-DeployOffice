@@ -46,13 +46,14 @@ The following features are available for early access as part of the public prev
 - **Analytics features:** Get access to intent and actual occupancy and utilization data.
 - **Auto-release policies:** Allow reserved rooms to be automatically released if unoccupied.
 
+> [!IMPORTANT]
+> **Ready to go?**
+> Fill out the [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt in to additional preview features.
+
 ## Prerequisites for additional feature access
 
 Before opting in, review and confirm you meet the deployment requirements. See [Deployment Guide for Places](deployment-guide-for-places.md) for more information.
 
-> [!IMPORTANT]
-> **Ready to go?**
-> Fill out the [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt in to additional preview features.
 ## FAQ
 
 **Preview includes early access features** - The features in this preview are early-access features. They may change, experience temporary downtime, and may not be part of the final product. We advise deploying in test environments for preview features.  
