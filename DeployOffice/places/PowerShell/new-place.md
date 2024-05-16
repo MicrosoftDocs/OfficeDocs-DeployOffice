@@ -17,8 +17,9 @@ description: "Places PowerShell cmdlet to create new places."
 # New-Place
 
 Use the New-Place cmdlet to create buildings or floors within your Places directory.
+
 > [!NOTE]
-> To create rooms or workspaces, you will need to continue to use the New-Mailbox cmdlet documented [here](https://learn.microsoft.com/powershell/module/exchange/new-mailbox?view=exchange-ps).
+> To create rooms or workspaces, you will need to continue to use the New-Mailbox cmdlet documented [here.](/powershell/module/exchange/new-mailbox)
 
 ## Syntax
 
