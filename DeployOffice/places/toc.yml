@@ -10,3 +10,8 @@ items:
     items:
     - name: Azure Maps Creator Guide for Microsoft Places
       href: azure-maps-creator-guide.md
+      
+  - name: Apps
+    items:
+    - name: Configure the iOS app for Microsoft Places
+      href: configure-the-ios-app.md

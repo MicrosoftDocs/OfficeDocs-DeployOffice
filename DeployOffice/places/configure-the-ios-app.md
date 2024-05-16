@@ -14,7 +14,7 @@ description: "Instructions on how to install the Microsoft Places mobile app (iO
 ---
 # Configure the iOS app for Microsoft Places
 
-To enable the mobile experience, an IT admin might need to configure Mobile Application Management MAM, and users must install Apple’s TestFlight app and  the Microsoft Places app on their mobile phone. Please refer to the below steps for the details and instructions. 
+To enable the mobile experience, an IT admin might need to configure Mobile Application Management (MAM), and users must install Apple’s TestFlight app and  the Microsoft Places app on their mobile phone. Please refer to the below steps for the details and instructions. 
 
 - These instructions are only in effect for the scope of Private and Public Preview wherein the testing will be managed through Apple’s TestFlight platform.  
 
