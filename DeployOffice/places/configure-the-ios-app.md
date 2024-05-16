@@ -118,3 +118,6 @@ Include the following details in the body of your email message:
    You can tap to open the app and sign in using your corporate credentials (the same email that was granted access through PlacesEnabled and EnablePlacesMobileApp in the Places tenant settings.)
 
    ![Screenshot of the Places app on a mobile device home screen.](../images/places/configure-ios-app-005.png)
+
+> [!NOTE]
+> You can opt out from the testing program. If you tap on the installation link, the beta app won’t be installed and you won’t be listed as a tester. Apple won’t take any action using your email address. If you no longer want to test the app, you can also delete it yourself as a tester by visiting the app’s **Information** page in TestFlight and tapping **Stop Testing**.”
