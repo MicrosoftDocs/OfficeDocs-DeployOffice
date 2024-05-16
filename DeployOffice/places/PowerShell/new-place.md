@@ -40,15 +40,15 @@ New-Place
 #### Floor
 ```powershell
 New-Place
-   [-Description]
-   [-Name]
-   [-ParentId]
-   [-Tags]
-   [-Type]
+	[-Description]
+	[-Name]
+	[-ParentId]
+	[-Tags]
+	[-Type]
 ```
 
 ## Description
-Places depends on a fully setup hierarchy among your rooms/workspaces, floors, and buildings.  Once buildings and floors are created, you can link them using parentId.
+Microsoft Places experiences are dependent upon a fully setup hierarchy among your rooms/workspaces, floors, and buildings.  Once buildings and floors are created, you can use ParentId define the hierarchy relationships between rooms/workspaces to floor and floors to buildings.
 
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
@@ -58,11 +58,11 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 ## Examples
 
 ### Example 1
-Create a new building and a floor within that building.
+This example creates a new building and a floor within that building.
 ```powershell
 New-Place -Type Building -Name 'Building 3'
 ```
-Building 3 is created successfully, and its Identity is set to f12172b6-195d-4e6e-8f4f-eb72e41de99a.
+_Assume that Building 3 is created successfully, and its Identity is set to f12172b6-195d-4e6e-8f4f-eb72e41de99a._
 
 ```powershell
 New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
@@ -70,13 +70,13 @@ New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 ```
 
 ### Example 2
-Create a new building with address information.
+This example creates a new building with address information.
 ```powershell
 New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -GeoCoordinates "47.644125;-122.122411" -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d'
 ```
 
 ### Example 3
-Create a new building with resource links.
+This example creates a new building with resource links.
 ```powershell
 New-Place -Name 'Building 3' -Type Building -ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}'
 ```
@@ -130,7 +130,7 @@ The GeoCoordinates parameter specifies the building's location in latitude, long
 * Latitude and longitude: For example, "47.644125;-122.122411"
 * Latitude, longitude, and altitude: For example, "47.644125;-122.122411;161.432"
 
-_Note:_ If period separators don't work for you, use commas instead.
+_Note: If period separators don't work for you, use commas instead._
 
 |Attribute|Description| 
 | -------- | -------- |
@@ -164,7 +164,7 @@ The ParentId parameter specifies the ID of a Place in the parent location hierar
 * A room or workspace should have a parent floor. _(optional in the cmdlet, but without this parameter set, Places experiences will be very limited)_
 * A floor must have a parent building. _(required)_
 
-_Note: Once the ParentId has been set on a room or workspace, some parameters that are actually about the floor (e.g., FloorLabel) or about the building (e.g., address and location information) will be read-only for that room/workspace using Set-Place V3.  The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3._
+Once the ParentId has been set on a room or workspace, legacy room/workspace properties that are actually about the floor (e.g., floor number) or about the building (e.g., address and location information) will be read-only for that room/workspace using Set-PlaceV3.  The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
 
 |Attribute|Description| 
 | -------- | -------- |
