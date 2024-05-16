@@ -99,8 +99,24 @@ Include these details in the body of the email message:
 #### Step 5: Customer's users click on the URL to download and install the Places iOS app (Pilot users)
 
 1. Users navigate to the URL provided by their tenant admin in the browser of the user’s iPhone. **Note**: This is a **one-time** step to install the Places app.
-2. The Apple TestFlight app installation will direct users to a two-step process to install the Places app. **Step 1**: Install the Test Flight app. **Step**: 2 Return to the URL and tap on **Start Testing.** This will launch the TestFlight app on the device and make the user eligible to install the Places app.
+2. The Apple TestFlight app installation will direct users to a two-step process to install the Places app. **First**, install the Test Flight app. **Second**, Return to the URL and tap on **Start Testing.** This will launch the TestFlight app on the device and make the user eligible to install the Places app.
 
-   ![Screenshot of the AppleTestFlight app on an iPhone.](../images/places/configure-ios-app-002b.png)
+   ![Screenshot of the TestFlight app install on an iPhone.](../images/places/configure-ios-app-002b.png)
+
+3. In the TestFlight app, find the listing for the Microsoft Places app and click Install.
+
+   ![Screenshot of the Microsoft Places app install on an iPhone.](../images/places/configure-ios-app-003.png)
+
+4. Turn on the auto-updates feature to get access to new versions of the app on your mobile device (this is an **optional step**).
+
+   ![Screenshot of the Microsoft Places automatic-updates setting on an iPhone.](../images/places/configure-ios-app-004.png)
+
+5. Open and log in to Places mobile app.
+
+   Once the Places app is installed, it will show up in the user's dashboard like any other app installed from App Store.
+
+   You can click to open the app and log in using your corporate credentials (the same email that was granted access through PlacesEnabled and EnablePlacesMobileApp in the Places tenant settings.)
+
+   ![Screenshot of the Places app on an iPhone home screen.](../images/places/configure-ios-app-005.png)
 
 
