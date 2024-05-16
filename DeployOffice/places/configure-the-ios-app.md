@@ -87,7 +87,7 @@ Include the following details in the body of your email message:
 
 #### Step 4: The customer distributes the URL to their users (IT admin)
 
-- The customer admin shares the URL with the iOS pilot users in their tenant.
+- The customer IT admin shares the URL with the iOS pilot users in their tenant.
 
    The following is a sample URL:
 
