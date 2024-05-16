@@ -91,7 +91,7 @@ Include these details in the body of the email message:
 
    The following is a sample URL:
 
-   ![Screenshot of the Create Configuration dialog box.](../images/places/configure-ios-app-001.png)
+   ![Screenshot of a sample URL to be shared by admins.](../images/places/configure-ios-app-001.png)
 
 > [!NOTE]
 > Users need to be previously added to the PlacesEnabled SG and the EnablePlaceMobileApp should set to **default:true**, or be set to an SG for the desired users.
@@ -101,6 +101,6 @@ Include these details in the body of the email message:
 1. Users navigate to the URL provided by their tenant admin in the browser of the user’s iPhone. **Note**: This is a **one-time** step to install the Places app.
 2. The Apple TestFlight app installation will direct users to a two-step process to install the Places app. **Step 1**: Install the Test Flight app. **Step**: 2 Return to the URL and tap on **Start Testing.** This will launch the TestFlight app on the device and make the user eligible to install the Places app.
 
-   ![Screenshot of the Create Configuration dialog box.](../images/places/configure-ios-app-002.png)
+   ![Screenshot of the AppleTestFlight app on an iPhone.](../images/places/configure-ios-app-002b.png)
 
 
