@@ -81,8 +81,8 @@ The mobile access installation process is made up of these four steps.
 
 #### Step 4: The customer's users click on the URL to download and install the Places iOS app (pilot users)
 
-1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device. **Note**: it's a **one-time** step to install the Places app.
-2. The Apple TestFlight app installation directs users to a two-step process to install the Places app. **First**, install the Test Flight app. **Second**, return to the URL and tap on **Start Testing.** This launches the TestFlight app on the device and makes the user eligible to install the Places app.
+1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device. Note, it's a one-time step to install the Places app.
+2. The Apple TestFlight app installation directs users to a two-step process to install the Places app. First, install the TestFlight app. Second, return to the URL and tap on **Start Testing.** This launches the TestFlight app on the device and makes the user eligible to install the Places app.
 
    ![Screenshot of the TestFlight app install on a mobile device.](../images/places/configure-ios-app-002b.png)
 
@@ -90,7 +90,7 @@ The mobile access installation process is made up of these four steps.
 
    ![Screenshot of the Microsoft Places app install on a mobile device.](../images/places/configure-ios-app-003.png)
 
-4. Turn on the auto-updates feature to get access to new versions of the app on your mobile device (this is an **optional step**).
+4. Turn on the auto-updates feature to get access to new versions of the app on your mobile device (this is an optional step).
 
    ![Screenshot of the Microsoft Places automatic-updates setting on a mobile device.](../images/places/configure-ios-app-004.png)
 
