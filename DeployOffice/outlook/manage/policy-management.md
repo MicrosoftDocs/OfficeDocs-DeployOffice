@@ -86,7 +86,6 @@ For more information, see [Set-OrganizationConfig](/powershell/module/exchange/s
 - Dark Mode 
 - Themes 
 - Request Accessible Content 
-
 - Read Receipt Responses 
 
 ## Microsoft Loop
