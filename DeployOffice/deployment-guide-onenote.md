@@ -100,7 +100,8 @@ If any notes are missing, check the backup folder that was created in the previo
 
 To review backups through OneNote on Windows:
 - Navigate to **File -> Open Backups -> Navigate to the backup file path.**
-:::image type="content" source="images\deployment guide onenote\notebook-information.png" alt-text="This image shows the OneNote application's "Notebook Information" section. It features a navigation bar with options like "Info," "New," and "Share," and a main panel highlighting the "Migration" settings displaying a file path and options to "View Notebook" and "Share on Web or Network." There are also options to "View Sync Status" and "Open Backups" on the top right." lightbox="images\deployment guide onenote\notebook-information-small.png":::
+
+:::image type="content" source="/DeployOffice/images/deployment guide onenote/notebook-information-small.png" alt-text="Screenshot that shows the OneNote application's "Notebook Information" section. It features a navigation bar with options like "Info," "New," and "Share," and a main panel highlighting the "Migration" settings displaying a file path and options to "View Notebook" and "Share on Web or Network." There are also options to "View Sync Status" and "Open Backups" on the top right." lightbox="/DeployOffice/images/deployment guide onenote/notebook-information.png":::
 
 ## Troubleshooting
 
