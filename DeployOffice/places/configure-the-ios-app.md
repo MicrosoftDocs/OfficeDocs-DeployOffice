@@ -151,7 +151,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    Select your existing app protection policy, then under properties, select **Apps edit.**
  
-   ![Screenshot of the Intune amnin center and App protection policies option.](../images/places/configure-ios-app-019.png)
+   ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019.png)
  
    Scroll to the **Custom apps** section, select**+ Select custom apps**.
 
@@ -159,7 +159,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    Add the bundle id **com.microsoft.msplaces** in the text box, and click **Add**.
 
-   ![Screenshot of the Select public apps and Select cutom apps option.](../images/places/configure-ios-app-018.png)
+   ![Screenshot of the Select public apps and Select custom apps option.](../images/places/configure-ios-app-018.png)
 
    After adding, select the app bundle id from the list to move to the **Selected Apps** section, and click **Select**.
 
