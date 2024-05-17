@@ -36,7 +36,7 @@ To enable the Microsoft Places mobile experience, an IT admin might need to conf
 
 ## Enable Places mobile for your users
 
-Run the following PowerShell cmdlet to enable the opt-in features for your tenant.
+Run the following PowerShell cmdlet to enable the mobile app for your tenant.
 
 ```powershell
 Set-PlacesSettings -Collection Places -EnablePlacesMobileApp ‘Default:true' 
@@ -53,7 +53,7 @@ The mobile access installation process is made up of these four steps.
 |**1**|Review and update mobile policies, if applicable  |Customer IT admin or mobile-security admin  |
 |**2**|TestFlight URL is provided through the Opt-In process |Microsoft Places team |
 |**3**|Customer distributes the URL to their pilot users |Customer IT admin |
-|**4**|The customer's pilot users click on the URL to follow the instructions on the website. They'll install TestFlight, then go back to the URL and join the beta by clicking the Start Testing button. |Pilot users |
+|**4**|The customer's pilot users click on the URL to follow the instructions on the website. They TestFlight, then go back to the URL and join the beta by clicking the Start Testing button. |Pilot users |
 
 > [!NOTE]
 > It's a one-time process to install the Places app on your iOS device. Once the Places app is installed, users can open it from their mobile home screens.
@@ -62,7 +62,7 @@ The mobile access installation process is made up of these four steps.
 
 #### Step 1: Review and update your mobile policies (IT admin)
 
-- See the MAM Intune configurations section for details and confirmation if your organization requires additional Unified Endpoint Management configuration.
+- See the MAM Intune configurations section for details and confirmation if your organization requires extra Unified Endpoint Management configuration.
 
 #### Step 2: TestFlight URL is provided through the Opt-In process (Places team)
 
@@ -98,7 +98,7 @@ The mobile access installation process is made up of these four steps.
 
    Once the Places app is installed, it shows up in the user's dashboard like any other app installed from the App Store.
 
-   You can tap to open the app and sign in using your corporate credentials that has access to Places opt-in features.
+   You can tap to open the app and sign in using your corporate credentials that have access to the Places opt-in features.
 
    ![Screenshot of the Places app on a mobile device home screen.](../images/places/configure-ios-app-005.png)
 
