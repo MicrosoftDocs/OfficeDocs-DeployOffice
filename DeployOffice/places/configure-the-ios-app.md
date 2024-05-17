@@ -66,11 +66,11 @@ The mobile access installation process is made up of these four steps.
 
 #### Step 2: TestFlight URL is provided through the Opt-In process (Places team)
 
-- During the opt-in process the customer will be provided a TestFlight URL that grants access to install the app through TestFlight.
+- During the opt-in process you'll be provided a TestFlight URL that grants access to install the app through TestFlight.
 
-#### Step 3: The customer distributes the URL to their users (IT admin)
+#### Step 3: The IT admin shares the URL to their users (IT admin)
 
-- The customer IT admin shares the URL with the iOS pilot users in their tenant.
+- The IT admin shares the URL with the iOS pilot users in their tenant.
 
    The following path is a sample URL:
 
@@ -79,7 +79,7 @@ The mobile access installation process is made up of these four steps.
 > [!NOTE]
 > Users must be part of the Opt-in features and the EnablePlaceMobileApp should be set to **default:true**.
 
-#### Step 4: The customer's users click on the URL to download and install the Places iOS app (pilot users)
+#### Step 4: Users click on the URL to download and install the Places iOS app (pilot users)
 
 1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device.
 2. The Apple TestFlight app installation directs users to a two-step process to install the Places app. First, install the TestFlight app. Second, return to the URL and tap on **Start Testing.** This launches the TestFlight app on the device and makes the user eligible to install the Places app.
