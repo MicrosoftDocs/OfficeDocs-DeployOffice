@@ -141,7 +141,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-013.png)
 
-5. Under **Access Control**, then **Grant,** enable the **Require app protection policy** option along with the existing policy **Required approved client app**. Then below that section, under **For multiple control**, choose **Require one of the selected apps**.
+5. Under **Access controls**, then **Grant,** enable the **Require app protection policy** option along with the existing policy **Required approved client app**. Then below that section, under **For multiple control**, choose **Require one of the selected apps**.
 
    ![Screenshot of the Require on the selected apps option.](../images/places/configure-ios-app-014.png)
 
@@ -149,7 +149,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    ![Screenshot of the Intune amnin center and App protection policies option.](../images/places/configure-ios-app-015b.png)
 
-   Select your existing app protection policy, then under **Properties**, select **Apps edit.**
+   Select your existing app protection policy, then under **Properties**, select **Apps Edit.**
  
    ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019b.png)
  
@@ -157,11 +157,11 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    ![Screenshot of the app protection policies option.](../images/places/configure-ios-app-016.png)
 
-   Add the bundle id **com.microsoft.msplaces** in the text box, and click **Add**.
+   Add the bundle ID **com.microsoft.msplaces** in the text box, and click **Add**.
 
    ![Screenshot of the Select public apps and Select custom apps option.](../images/places/configure-ios-app-018.png)
 
-   After adding, select the app bundle id from the list to move to the **Selected Apps** section, and click **Select**.
+   After adding, select the app bundle ID from the list to move to the **Selected Apps** section, and click **Select**.
 
    ![Screenshot showing the Select apps to target and the Bundle ID.](../images/places/configure-ios-app-017.png)
 
