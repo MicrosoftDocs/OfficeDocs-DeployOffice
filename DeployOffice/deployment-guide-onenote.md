@@ -94,12 +94,13 @@ Ensure the script performs the following functions:
 After migration, users can retrieve their notes by:
 1. Opening the new **OneNote on Windows** application.
 2. Signing into their account.
-3. Opening their notebooks. If any notes are missing, check the backup folder that was created in the previous steps.
+3. Opening their notebooks.
+
+If any notes are missing, check the backup folder that was created in the previous steps.
 
 To review backups through OneNote on Windows:
 - Navigate to **File -> Open Backups -> Navigate to the backup file path.**
-
-![A screenshot of a computer](#)
+:::image type="content" source="images\deployment guide onenote\notebook-information.png" alt-text="This image shows the OneNote application's "Notebook Information" section. It features a navigation bar with options like "Info," "New," and "Share," and a main panel highlighting the "Migration" settings displaying a file path and options to "View Notebook" and "Share on Web or Network." There are also options to "View Sync Status" and "Open Backups" on the top right." lightbox="images\deployment guide onenote\notebook-information-small.png":::
 
 ## Troubleshooting
 
