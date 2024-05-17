@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information on how to use the MigrateArch attribute to change the bitness of an existing installation of Microsoft 365 Apps, such as from 32-bit to 64-bit."
-ms.date: 12/08/2023
+ms.date: 17/05/2024
 ---
 
 # Change a Microsoft 365 Apps installation from 32-bit to 64-bit
@@ -76,7 +76,7 @@ To upgrade your Microsoft 365 Apps to the 64-bit version while adding a language
 
 1. **Prepare Your Configuration.xml File**: Modify your configuration.xml file to include the 64-bit version of the Office Deployment Tool. Set the `OfficeClientEdition` to '64' and specify the language pack you want to add in the `<Add>` section.
 
-2. **Include the MigrateArch Setting**: In the configuration.xml file, ensure that the `MigrateArch` attribute is set to 'True' to allow the transition from 32-bit to 64-bit.
+2. **Include the MigrateArch Setting**: In the configuration.xml file, ensure that the `MigrateArch` attribute is set to 'TRUE' to allow the transition from 32-bit to 64-bit.
 
 3. **Run the Office Deployment Tool**: Execute the Office Deployment Tool with the updated configuration.xml file. This action starts the upgrade process and installs the other language pack simultaneously.
 
@@ -88,7 +88,7 @@ To revert to the 32-bit version of Microsoft 365 Apps, follow these steps:
 
 1. **Update Configuration.xml File**: Change the `OfficeClientEdition` to '32' in your configuration.xml file.
 
-2. **Set MigrateArch to Ture**: Add the attribute `MigrateArch='True'` in the configuration.xml file to allow the transition from 64-bit to 32-bit.
+2. **Set MigrateArch to Ture**: Add the attribute `MigrateArch='TRUE'` in the configuration.xml file to allow the transition from 64-bit to 32-bit.
 
 3. **Execute Office Deployment Tool**: Run the tool with the modified configuration file. This action initiates the process to revert back to the 32-bit version of Microsoft 365 Apps.
 
