@@ -107,4 +107,20 @@ The mobile access installation process is made up of these four steps.
 
 ## MAM Intune configurations
 
+## Mobile policy scenarios
 
+The mobile access installation process is made up of these four steps.
+
+|Scenario  |Action     |
+|---------|---------|
+|**1**|No Intune Policy.<br>If no Intune policy is applied at your organization, no additional steps are needed to install and run Places through TestFlight. You can skip the rest of the Intune setup instructions.|
+|**2**|Mobile Device Management (MDM) as the only Intune Policy (no MAM policy applied).<br>In case of MDM only Intune Policy applied for all employees in your organization, there are no additional steps needed to install and run MS Places through test flight. You can skip the rest of the Intune setup instructions.  |
+|**3**|MDM policy applicable for few employees while MAM policy for others.<br>For employees who are on an MDM only policy, there are no additional steps. For employees on MAM policy, see scenario 4. |
+|**4**|MAM only or MAM with MDM Policy.<br>Follow the Intune setup instructions to perform similar actions in your organization’s Unified Endpoint Management system.  |
+
+> [!NOTE]
+> To learn more about Microsoft Intune, managing hybrid and remote workforces, as well as managing different devices and apps that access your organization's resources, see [Welcome to the fresh look for Intune](https://intune.microsoft.com/#home).
+
+## Add a custom app in your organization’s Intune MAM
+
+In these steps, we’ll be adding the following bundleID as a custom app in the Organization’s InTune MAM policy: com.microsoft.msplaces. 
