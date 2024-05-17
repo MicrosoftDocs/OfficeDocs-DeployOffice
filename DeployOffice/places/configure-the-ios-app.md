@@ -151,7 +151,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    Select your existing app protection policy, then under properties, select **Apps edit.**
  
-   ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019.png)
+   ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019b.png)
  
    Scroll to the **Custom apps** section, select**+ Select custom apps**.
 
