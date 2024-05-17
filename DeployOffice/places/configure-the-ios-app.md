@@ -155,4 +155,7 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    Add the bundle id **com.microsoft.msplaces** in the text box, and click **Add**.
 
+   After adding, select the app bundle id from the list to move to the **Selected Apps** section, and click **Select**.
+
+   ![Screenshot of the Select apps to target option.](../images/places/configure-ios-app-017.png)
 
