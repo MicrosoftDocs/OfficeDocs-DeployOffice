@@ -119,25 +119,38 @@ The mobile access installation process is made up of these four steps.
 |**4**|MAM only or MAM with MDM Policy.<br>Follow the Intune setup instructions to perform similar actions in your organization’s Unified Endpoint Management system.  |
 
 > [!NOTE]
-> To learn more about Microsoft Intune, managing hybrid and remote workforces, as well as managing different devices and apps that access your organization's resources, see [Welcome to the fresh look for Intune](https://intune.microsoft.com/#home).
+> To learn more about creating Intune policies for custom apps, see "Create an iOS/iPadOS or Android app protection policy" in [How to create and assign app protection policies](/mem/intune/apps/app-protection-policies).
 
 ## Add a custom app in your organization’s Intune MAM
 
 The following procedure adds the bundleID as a custom app in an organization’s InTune **com.microsoft.msplaces** MAM policy.
 
-1. From the left navigation menu, click on **Endpoint security** to and navigate to **Endpoint security Overview**.
+1. Click on **Endpoint Security** from left menu and navigate to **Endpoint Security Overview**. Then click **Conditional access**.
 
-   ![Screenshot of the left navigation menu and the Endpoint security overiew.](../images/places/configure-ios-app-006.png)
+   ![Screenshot of the Endpoint security choices.](../images/places/configure-ios-app-010.png)
 
-2. In the **Endpoint security**, click on the Conditional Access to see all the conditional access policies deployed.
+2. In **Conditional access**, click on **View all policies** to see all of the deployed conditional-access policies.
 
-   ![Screenshot of the left navigation menu and the Conditional Access overiew.](../images/places/configure-ios-app-007.png)
+   ![Screenshot of the Conditional Access overiew.](../images/places/configure-ios-app-011.png)
 
 3. The following summary shows all of the **Policies** for the tenant.
 
-   ![Screenshot of the Policies overiew.](../images/places/configure-ios-app-008.png)
+   ![Screenshot of the Policies overiew.](../images/places/configure-ios-app-012.png)
 
 4. Click on **Require approved client apps and app protection policies**, which opens the policy details.
 
-   ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-009.png)
+   ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-013.png)
+
+5. Under **Access Control**, then **Grant,** enable the **Require app protection policy** option along with the existing policy **Required approved client app**. Then below that section, under **For multiple control**, choose **Require one of the selected apps**.
+
+   ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-014.png)
+
+6. To enable MAM CA protection for the Places app, from the **Intune Admin Center** home page, navigate to **Apps**, then to **App Protection Policies**.
+
+   ![Screenshot of the App protection policies option.](../images/places/configure-ios-app-015.png)
+   
+   Select your existing app protection policy, then under **Propertie**, select **Edit** for the **Apps** section.
+
+   ![Screenshot of the App protection policies option.](../images/places/configure-ios-app-016.png)
+
 
