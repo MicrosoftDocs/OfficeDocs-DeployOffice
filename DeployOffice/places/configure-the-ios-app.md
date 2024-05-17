@@ -133,3 +133,11 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
    ![Screenshot of the left navigation menu and the Conditional Access overiew.](../images/places/configure-ios-app-007.png)
 
+3. The following summary shows all of the **Policies** for the tenant.
+
+   ![Screenshot of the Policies overiew.](../images/places/configure-ios-app-008.png)
+
+4. Click on **Require approved client apps and app protection policies**, which opens the policy details.
+
+   ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-009.png)
+
