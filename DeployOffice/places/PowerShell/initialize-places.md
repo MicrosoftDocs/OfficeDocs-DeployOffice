@@ -22,8 +22,12 @@ Setting up buildings, floors, and room associations are required to use many Pla
 
 When running Initialize-Places, you will choose from 3 options:
 1. Export a CSV file of all conference rooms and workspaces.  Two columns will be added with a suggested (inferred) building name and floor name.  Only rooms/workspaces that are associated to at least 1 room list will be exported.  _This is not a required step, but might be useful to quickly create a list of rooms/workspaces._
-2. Import a CSV file that will result in automatic creation of buildings, floors, and room associations to floors/buildings.  
-3. Import a CSV file that will generate a PowerShell script that you can review and then execute to achieve the same end-result as Option 2.  This option is provided for tenants who would like more control or auditing of the cmdlets executed during Option 2.
+
+1. Import a CSV file that will result in automatic creation of buildings, floors, and room associations to floors/buildings.  
+1. Import a CSV file that will generate a PowerShell script that you can review and then execute to achieve the same resulting directory hierarchy as Option 2.  This option is provided for tenants who would like more control or auditing of the cmdlets executed during Option 2.
+
+> [!NOTE]
+> You cannot setup only buildings or only floors using Initialize-Places. The purpose of Initialize-Places is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors. If you only want to create buildings, use [New-Place](new-place).
 
 ## Syntax 
 ```powershell
@@ -39,29 +43,25 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 ### Option 1
 Export your list of conference rooms and workspaces.  The exported filename will be _ResourceAccountsMapped.csv_.
 ```powershell
-> Initialize-Places
-> Please choose the desired option before continuing:
-1. Export suggested mapping CSV of rooms to buildings/floors.
-2. Import mapping CSV to automatically create buildings/floors and room mappings.
-3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
-X to cancel.
-> 1
-> Provide the folder path where the exported file should be saved.
-> c:\users\documents
+Initialize-Places
+Please choose the desired option before continuing:
+ 1. Export suggested mapping CSV of rooms to buildings/floors.
+ 2. Import mapping CSV to automatically create buildings/floors and room mappings.
+ 3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
+ X to cancel.
+1
 ```
 
 ### Option 2
 Import your list of buildings & floors to create, and the rooms that belong to those floors/buildings.  After import completes, a file will be saved into the same folder as your import file, such as _fileToImport-ImportResults.csv_, which will document whether any issues were encountered during import.
 ```powershell
-> Initialize-Places
-> Please choose the desired option before continuing:
-1. Export suggested mapping CSV of rooms to buildings/floors.
-2. Import mapping CSV to automatically create buildings/floors and room mappings.
-3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
-	X to cancel.
-> 2
-> Provide the path of the file to be imported.
-> c:\users\documents\fileToImport.csv
+Initialize-Places
+Please choose the desired option before continuing:
+ 1. Export suggested mapping CSV of rooms to buildings/floors.
+ 2. Import mapping CSV to automatically create buildings/floors and room mappings.
+ 3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
+ X to cancel.
+2
 ```
 
 ### Option 3
@@ -69,15 +69,13 @@ Generate a PowerShell script that can be used to create your list of buildings &
 
 _Note: Despite the usage of "import" in the cmdlet wording, nothing will be created or saved into your Places Directory when using this option._
 ```powershell
-> Initialize-Places
-> Please choose the desired option before continuing:
-1. Export suggested mapping CSV of rooms to buildings/floors.
-2. Import mapping CSV to automatically create buildings/floors and room mappings.
-3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
-X to cancel.
-> 3
-> Provide the path of the file to be imported.
-> c:\users\documents\fileToImport.csv
+Initialize-Places
+Please choose the desired option before continuing:
+ 1. Export suggested mapping CSV of rooms to buildings/floors.
+ 2. Import mapping CSV to automatically create buildings/floors and room mappings.
+ 3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
+ X to cancel.
+3
 ```
 
 ## Example
@@ -90,9 +88,9 @@ Below is an example file to be used for import.
 |Austin 550|2| rainier@contoso.com|
 |NYC Times Square |  |olympus@contoso.com|
 
-If Option 2 is selected, two buildings would be created.  Austin 550 will have 3 floors created, and NYC Times Square will have 1 floor created with a default name of "Unknown".  The conference rooms will be associated to their corresponding floor/building, by setting the _parentId_ property on the room's metadata.
+If Option 2 is selected, two buildings would be created.  Austin 550 will have 3 floors created, and NYC Times Square will have 1 floor created with a default name of "Unknown".  The conference rooms will be associated to their corresponding floor/building, by setting the ParentId property on the room's metadata.
 
-If Option 3 is selected, a PowerShell script would be generated containing cmdlets to create buildings, cmdlets to create floors and set parentId to the corresponding building ID, and cmdlets to set the parentId on each of the rooms to the corresponding floor ID.
+If Option 3 is selected, a PowerShell script would be generated containing cmdlets to create buildings, cmdlets to create floors with a ParentId set to the corresponding building ID, and cmdlets to set the ParentId on each of the rooms to the corresponding floor ID.
 
 ## File formats
 ### File format of the exported file (Option 1)
