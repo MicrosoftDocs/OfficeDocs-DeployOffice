@@ -147,10 +147,12 @@ The following procedure adds the bundleID as a custom app in an organization’s
 
 6. To enable MAM CA protection for the Places app, from the **Intune Admin Center** home page, navigate to **Apps**, then to **App Protection Policies**.
 
-   ![Screenshot of the App protection policies option.](../images/places/configure-ios-app-015.png)
+   ![Screenshot of the App protection policies option.](../images/places/configure-ios-app-015b.png)
    
    Select your existing app protection policy, then under **Propertie**, select **Edit** for the **Apps** section.
 
    ![Screenshot of the App protection policies option.](../images/places/configure-ios-app-016.png)
+
+   Add the bundle id **com.microsoft.msplaces** in the text box, and click **Add**.
 
 
