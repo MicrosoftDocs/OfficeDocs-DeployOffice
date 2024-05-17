@@ -44,9 +44,9 @@ OwaMailboxPolicy is used to manage the following various features and capabiliti
 
 ### Data Loss Prevention and Attachments 
 - Allowing certain file types (attachments)
-  - The [AllowedFileTypes](/powershell/module/exchange/set-owamailboxpolicy#-AllowedFileTypes) and BlockedFileTypes policies specify the attachment file types (file extensions) that can be saved locally or viewed from the new Outlook for Windows. 
+  - The [AllowedFileTypes](/powershell/module/exchange/set-owamailboxpolicy#-allowedfiletypes) and BlockedFileTypes policies specify the attachment file types (file extensions) that can be saved locally or viewed from the new Outlook for Windows. 
 - Third party online attachments Enabled 
-  - The [AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-AdditionalStorageProvidersAvailable) policy specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in the new Outlook for Windows. 
+  - The [AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable) policy specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in the new Outlook for Windows. 
 - Display pictures and external content in HTML e-mail 
   - ExternalImageProxyEnabled   
 - Read Only Capabilities and Prevent attachment download on Public devices 
@@ -55,14 +55,14 @@ OwaMailboxPolicy is used to manage the following various features and capabiliti
 - Public Folders and Shared Mailboxes 
   - PublicFoldersEnabled 
 - Offline Configuration
-  - The [OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-OfflineEnabledWin) parameter specifies whether to allow the new Outlook for Windows to be used offline.       
+  - The [OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin) parameter specifies whether to allow the new Outlook for Windows to be used offline.       
 
 ### Calendar Management  
 `Set-CalendarMailbox` is another cmdlet for managing various features and capabilities for Calendar, including:   
 - Interesting Calendars
-  - The `InterestingCalendarsEnabled` parameter specifies whether interesting calendars are available in Outlook on the web. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-InterestingCalendarsEnabled) 
+  - The `InterestingCalendarsEnabled` parameter specifies whether interesting calendars are available in Outlook on the web. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-interestingcalendarsenabled) 
   - Weather in Calendar
-    - The `WeatherEnabled` parameter specifies whether to enable or disable weather information in the calendar in new Outlook for Windows. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-WeatherEnabled)
+    - The `WeatherEnabled` parameter specifies whether to enable or disable weather information in the calendar in new Outlook for Windows. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled)
   - Working Hours, Work Week, Shorten appointments and meetings, and other configurations are also available on `OWA-CalendarMailbox` cmdlet. 
   - Location Suggestions
     - The `PlacesEnabled` parameter specifies whether to enable or disable Places in the new Outlook for Windows. Places lets users search, share, and map location details by using Bing.
@@ -79,19 +79,12 @@ For more information, see [Set-OrganizationConfig](/powershell/module/exchange/s
 ## Mail Formatting 
 
 `MailboxMessageConfiguration` is another cmdlet for managing various Mail Reading and Composing capabilities, including: 
-
 - Preferred Font Flags, Name, Size, Colors 
-
 - Allow Signatures 
-
 - Focused Inbox 
-
 - Preview Links 
-
 - Dark Mode 
-
 - Themes 
-
 - Request Accessible Content 
 
 - Read Receipt Responses 
@@ -102,7 +95,7 @@ For more information, see [Set-OrganizationConfig](/powershell/module/exchange/s
 For more information, see [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration).
 
 ## Diagnostic Data and Connected Experiences
-Organizations can control whether connected experiences or diagnostic data can be sent from the new Outlook for Windows. This capability is part of our commitment to provide you the information and controls over your privacy.
+Organizations can control whether connected experiences or diagnostic data can be sent from the new Outlook for Windows. This capability is part of our commitment to provide you information and control over your privacy.
 
 :::image type="content" source="/DeployOffice/images/outlook-policy-management/policy-privacy-settings.png" alt-text="Screenshot that shows how to turn on optional connected experiences in privacy settings." lightbox="/DeployOffice/images/outlook-policy-management/policy-privacy-settings-lb.png":::
 
@@ -116,7 +109,7 @@ New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-us
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 
 ## Disable toggle from classic Outlook for Windows
-Some organizations could use a policy to block the toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. For guidance on this policy, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
+Some organizations could use a policy to block the toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. For guidance on this policy, see [Use the registry to enable or disable the new Outlook toggle in Outlook Desktop](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
 
 While this policy hides the toggle within the application, it doesn’t block the mailbox from being added to the new Outlook for Windows. A separate Exchange policy can be used to block organization mailboxes from being added to the new Outlook. For guidance on this policy, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox).
 
