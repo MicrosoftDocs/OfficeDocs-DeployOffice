@@ -88,7 +88,7 @@ To revert to the 32-bit version of Microsoft 365 Apps, follow these steps:
 
 1. **Update Configuration.xml File**: Change the `OfficeClientEdition` to '32' in your configuration.xml file.
 
-2. **Set MigrateArch to Ture**: Add the attribute `MigrateArch='TRUE'` in the configuration.xml file to allow the transition from 64-bit to 32-bit.
+2. **Set MigrateArch to True**: Add the attribute `MigrateArch='TRUE'` in the configuration.xml file to allow the transition from 64-bit to 32-bit.
 
 3. **Execute Office Deployment Tool**: Run the tool with the modified configuration file. This action initiates the process to revert back to the 32-bit version of Microsoft 365 Apps.
 
