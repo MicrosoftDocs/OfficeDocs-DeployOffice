@@ -107,7 +107,7 @@ The mobile access installation process is made up of these four steps.
 
 ## MAM Intune configurations
 
-## Mobile policy scenarios
+### Mobile policy scenarios
 
 The mobile access installation process is made up of these four steps.
 
@@ -123,4 +123,13 @@ The mobile access installation process is made up of these four steps.
 
 ## Add a custom app in your organization’s Intune MAM
 
-In these steps, we’ll be adding the following bundleID as a custom app in the Organization’s InTune MAM policy: com.microsoft.msplaces. 
+The following procedure adds the bundleID as a custom app in an organization’s InTune **com.microsoft.msplaces** MAM policy.
+
+1. From the left navigation menu, click on **Endpoint security** to and navigate to **Endpoint security Overview**.
+
+   ![Screenshot of the left navigation menu and the Endpoint security overiew.](../images/places/configure-ios-app-006.png)
+
+2. In the **Endpoint security**, click on the Conditional Access to see all the conditional access policies deployed.
+
+   ![Screenshot of the left navigation menu and the Conditional Access overiew.](../images/places/configure-ios-app-007.png)
+
