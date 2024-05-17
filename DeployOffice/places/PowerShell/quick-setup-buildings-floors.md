@@ -26,11 +26,17 @@ To make this initial setup easier, use Initialize-Places to import a CSV so that
 
 As a result, you will be able to quickly start exploring Microsoft Places and its experiences such as work plans or Places Finder.  Use Set-PlaceV3 to add more metadata onto buildings and floors other than name.
 
+> [!NOTE]
+> You cannot setup only buildings or only floors using Initialize-Places.  The purpose of Initialize-Places is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](new-place.md).
+
 ## What do you need to know before you begin?
 - Estimated time to complete: 5 to 30 minutes, depending on how long it takes to finalize your building and floor names.
 
 - You need to be assigned permissions before you can run this cmdlet. You must have both the Exchange MailRecipients role and the Places TenantPlacesManagement role.
 
+> [!TIP]
+> Using Initialize-Places to setup a basic hierarchy of places will not impact or change the experience in Room Finder.  
+> Once a hierarchy is setup, the only visible change to your organization will be when using the Microsoft Places work plans experiences in Outlook and Teams.  Users will now see an option to select a specific a building when setting their work location.  However, users will continue to be able to select Office as their work location and will not be required to select a specific building location.
 ## Create buildings, floors, and associate them to rooms/workspaces
 
 1. Export your list of rooms/workspaces.
@@ -38,7 +44,8 @@ As a result, you will be able to quickly start exploring Microsoft Places and it
    - Use Initialize-Places Option 1 to export only rooms/workspaces that are part of a roomlist so that Places Finder shows the same rooms as Room Finder.
 ```powershell
 Get-Placev3 -Type Room | Export-Csv -NoTypeInformation "C:\temp\rooms.csv"
-or
+```
+```powershell
 Initialize-Places
 Please choose the desired option before continuing:
  1. Export suggested mapping CSV of rooms to buildings/floors.
@@ -47,6 +54,7 @@ Please choose the desired option before continuing:
  X to cancel.
 1
 ```
+
 1. Prepare the file for import.
 
    - Add or correct the building name and floor name in the first two columns (InferredBuildingName, InferredFloorName).  The other columns with room metadata are provided only for reference as you finalize your building and floor names.
