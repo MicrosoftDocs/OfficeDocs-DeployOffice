@@ -115,7 +115,7 @@ The mobile access installation process is made up of these four steps.
 |---------|---------|
 |**1**|No Intune Policy.<br>If no Intune policy is applied at your organization, no additional steps are needed to install and run Places through TestFlight. You can skip the rest of the Intune setup instructions.|
 |**2**|Mobile Device Management (MDM) as the only Intune Policy (no MAM policy applied).<br>If there is an MDM only Intune Policy applied for all employees in your organization, there are no additional steps needed to install and run MS Places through test flight. You can skip the rest of the Intune setup instructions.  |
-|**3**|MDM policy applicable for few employees while MAM policy for others.<br>For employees who are on an MDM only policy, there are no additional steps. For employees on MAM policy, see scenario 4. |
+|**3**|MDM policy applicable for few employees while MAM policy for others.<br>For employees who are on an MDM only policy, there are no other steps. For employees on MAM policy, see scenario 4. |
 |**4**|MAM only or MAM with MDM Policy.<br>Follow the Intune setup instructions to perform similar actions in your organization’s Unified Endpoint Management system.  |
 
 > [!NOTE]
@@ -151,13 +151,13 @@ The following procedure adds the bundleID as a custom app in an organization’s
    
    Select your existing app protection policy, then under **Propertie**, select **Edit** for the **Apps** section.
 
-   ![Screenshot of the Select custom apps option.](../images/places/configure-ios-app-016.png)
+   ![Screenshot of the app protection policies option.](../images/places/configure-ios-app-016.png)
 
    Add the bundle id **com.microsoft.msplaces** in the text box, and click **Add**.
 
-   ![Screenshot of the Select apps to target option.](../images/places/configure-ios-app-018.png)
+   ![Screenshot of the Select public apps and Select cutom apps option.](../images/places/configure-ios-app-018.png)
 
    After adding, select the app bundle id from the list to move to the **Selected Apps** section, and click **Select**.
 
-   ![Screenshot of the Select apps to target option.](../images/places/configure-ios-app-017.png)
+   ![Screenshot showing the Select apps to target and the Bundle ID.](../images/places/configure-ios-app-017.png)
 
