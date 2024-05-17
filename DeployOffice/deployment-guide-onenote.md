@@ -69,7 +69,7 @@ Use this sample script to suit your organization's needs.
 
 ```powershell
 script
-```powershell
+```
 
 Ensure the script performs the following functions:
 
