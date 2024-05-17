@@ -18,13 +18,13 @@ ms.date: 05/20/2024
 > [!IMPORTANT]
 > OneNote for Window 10 will reach end of support in October 2025, It's recommended that all enterprise customers switch from OneNote for Windows 10 to OneNote on Windows, which is available from the Microsoft Store and with a Microsoft 365 subscription. OneNote on Windows offers new features and updates and allows you to customize user settings through Group Policy. 
 
-You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
+Use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software like Microsoft Configuration Manager to include or exclude OneNote when you deploy Office in your organization.
 
-OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
+OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
 ### To add OneNote to an existing installation of Office
 
-If Office is already installed on the device, but OneNote didn't get installed previously, you can run the Office Deployment Tool on the device and use the following configuration.xml file to add OneNote.
+If you install Office on your device but OneNote is missing, use the Office Deployment Tool and the following configuration.xml file to add OneNote.
 
 ```xml
 <Configuration>
@@ -36,7 +36,7 @@ If Office is already installed on the device, but OneNote didn't get installed p
 </Configuration>
 ```
 
-Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
+When you deploy the free version of OneNote, the license updates automatically to match the Office version already installed on the device once the user opens OneNote for the first time.
 
 > [!NOTE]
 > - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019. To add OneNote back to those versions of Office, you can run an Online Repair.
@@ -52,18 +52,18 @@ There are different ways to exclude OneNote from being installed with Office, de
 |Microsoft Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
-But, if you're allowing your users to install Office for themselves from the Office 365 portal, there is no way to exclude OneNote from being installed.
+But, if you're allowing your users to install Office for themselves from the Office 365 portal, there's no way to exclude OneNote from being installed.
 
 ## OneNote for Windows 10 migration guidance
 
 > [!NOTE]
 > To ensure uninterrupted service and workflow, it's strongly recommend that organizations migrate to OneNote on Windows well ahead of the OneNote for Windows 10 end-of-support date in October 2025. 
 
-This sections provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
+This section provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
 
 Migration Policy Development: To facilitate a successful migration to OneNote on Windows, organizations should:
 
-*Customize the Migration Script*
+*Customize the Migration Script.*
 
 Use this sample script to suit your organization's needs. 
 
