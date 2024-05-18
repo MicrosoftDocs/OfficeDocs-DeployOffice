@@ -72,10 +72,6 @@ The mobile access installation process is made up of these four steps.
 
 - The IT admin shares the URL with the iOS pilot users in their tenant.
 
-   The following path is a sample URL:
-
-   ![Screenshot of a sample URL to be shared by admins.](../images/places/configure-ios-app-001.png)
-
 > [!NOTE]
 > Users must be part of the Opt-in features and the EnablePlaceMobileApp should be set to **default:true**.
 
@@ -143,7 +139,7 @@ The following procedure adds the bundle ID of the Places iOS app as a custom app
 
 5. Under **Access controls**, then **Grant,** enable the **Require app protection policy** option along with the existing policy **Required approved client app**. Then below that section, under **For multiple control**, choose **Require one of the selected controls**.
 
-   ![Screenshot of the Require on the selected apps option.](../images/places/configure-ios-app-014.png)
+   ![Screenshot of the Require on the selected apps option.](../images/places/configure-ios-app-014b.png)
 
 6. To enable MAM CA protection for the Places app, from the **Intune admin center** home page, navigate to **Apps**, then to **App protection policies**.
 
