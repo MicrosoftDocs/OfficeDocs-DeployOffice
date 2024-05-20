@@ -18,7 +18,7 @@ Microsoft Places Analytics is designed for real estate and facilities (RE&F) man
 
 You can improve workplace efficiency by comparing planned versus actual attendance using organization-level data. Discover which desks and rooms are most frequently used and receive suggestions on how to adjust your work spaces to better meet your staffing needs. Additionally, Places Analytics helps you identify supply and demand imbalances so that you can allocate resources more effectively.
 
-Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. To identify opportunities for optimization, get metrics at both the floor level and specific room and shared desk-space level. To understand user-behavior patterns, you can compare projected usage with actual usage across different space types. You can use this data to refine your hybrid work scheduling and change-management policies.
+Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. To identify opportunities for optimization, get metrics at both the floor level and specific room and shared desk-space level. To understand user-behavior patterns, you can compare projected use with actual use across different space types. You can use this data to refine your hybrid work scheduling and change-management policies.
 
 > [!NOTE]
 > Places Analytics is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
