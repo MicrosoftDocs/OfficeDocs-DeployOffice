@@ -68,7 +68,7 @@ For Office 2016, you download an ISO image of the language packs, LIPs, and proo
     
     The list of files contains all available language packs, language interface packs, and proofing tools for the language and edition that you specified. For example, for Office Professional Plus 2016, the results look similar to the following figure.
     
-     :::image type="content" source="/DeployOffice/office2016/language/media/office_professional_plus_2016_download_small.png" alt-text="Screenshot of the Office Professional Plus 2016 download page, showing special instructions and download settings for various Office installation files." lightbox="/DeployOffice/office2016/language/media/office_professional_plus_2016_download.png":::
+     :::image type="content" source="/DeployOffice/office2016/language/media/customize-language-setup-settings/office_professional_plus_2016_download_small.png" alt-text="Screenshot of the Office Professional Plus 2016 download page, showing special instructions and download settings for various Office installation files." lightbox="/DeployOffice/office2016/language/media/customize-language-setup-settings/office_professional_plus_2016_download.png":::
   
 6. Select the appropriate package from the list and then, under **Download**, select the down arrow to download the ISO image to your computer or to a shared folder on your network. 
     
