@@ -15,3 +15,8 @@ items:
     items:
     - name: Configure the iOS app for Microsoft Places
       href: configure-the-ios-app.md
+
+  - name: Reports and analytics
+    items:
+    - name: Microsoft Places analytics
+      href: places-analytics.md
