@@ -20,7 +20,8 @@ Use the Set-PlaceV3 cmdlet to update metadata about your rooms, workspaces, floo
 
 > [!NOTE]
 > Updates to conference rooms & workspaces can take up to 24 hours to reflect.  We are working on eliminating this delay.
-
+> 
+> The Set-UserPhoto was [deprecated](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-exchange-online-powershell-userphoto-cmdlets/ba-p/3955744) in April 2024.  We are working on adding a parameter to this cmdlet to set a photo on rooms and workspaces when using Set-PlaceV3.  In the meantime, please follow [these instructions](/microsoft-365/admin/add-users/change-user-profile-photos?view=o365-worldwide) set the photo on a room or workspace.
 ## Syntax
 
 ### Building
@@ -34,9 +35,9 @@ Set-PlaceV3
  [-GeoCoordinates]
  [-IsWheelChairAccessible]
  [-Name]
- [-ParentId]
  [-Phone]
  [-PostalCode]
+ [-PostOfficeBox]
  [-ResourceLinks]
  [-State]
  [-Street]
@@ -51,6 +52,7 @@ Set-PlaceV3
  [-Description]
  [-Name]
  [-ParentId]
+ [-ParentType]
  [-SortOrder]
  [-Tags]
 ```
@@ -76,6 +78,7 @@ Set-PlaceV3
  [-MTREnabled]
  [-Name]
  [-ParentId]
+ [-ParentType]
  [-Phone]
  [-PostalCode]
  [-State]
@@ -91,28 +94,28 @@ Places depends on a fully set up hierarchy among your rooms/workspaces, floors, 
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
 > [!CAUTION]
-
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported. It is not recommended to use any parameter that is not documented on this page.
-
 ## Examples
 
 ### Example 1
 
 This example sets up the directory hierarchy for a room, floor, and building.  
 
-_In this example, the floor's PlaceId is f12172b6-195d-4e6e-8f4f-eb72e41de99a, and the building's PlaceId is daa2f89b-75c4-4eb7-adcc-ff249233338d.
+*In this example, the floor's PlaceId is f12172b6-195d-4e6e-8f4f-eb72e41de99a, and the building's PlaceId is daa2f89b-75c4-4eb7-adcc-ff249233338d.*
 
 ```powershell
-Set-PlaceV3 -Identity 'room@contoso.com' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
-Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d
+Set-PlaceV3 -Identity 'room@contoso.com' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Floor
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d -ParentType Building
 ```
 
 ### Example 2
 
 This example updates a building's address and geocoordinates.
 
+*Note: PostOfficeBox is currently required when setting an address.  however, this parameter is in the process of being deprecated, so please set to an empty value.*
+
 ```powershell
-Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -GeoCoordinates "47.644125;-122.122411"
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox '' -GeoCoordinates "47.644125;-122.122411"
 ```
 
 ### Example 3
@@ -358,9 +361,40 @@ Once the ParentID is set to a room or workspace, some parameters that are actual
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
+### -ParentType
+
+The ParentType parameter specifies the type of the place that is being set as the parent. Valid values are:
+
+* Building
+* Floor
+
+*This property is currently required if you are setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
+
+|Attribute|Description|
+| -------- | -------- |
+|Type:|String|
+|Position:|Named|
+|Default value:|None|
+|Required:|False|
+|Accept pipeline input:|False|
+|Accept wildcard characters:|False|
+
 ### -PostalCode
 
 The PostalCode parameter specifies the room's postal code.
+
+|Attribute|Description|
+| -------- | -------- |
+|Type:|String|
+|Position:|Named|
+|Default value:|None|
+|Required:|False|
+|Accept pipeline input:|False|
+|Accept wildcard characters:|False|
+
+### -PostOfficeBox
+
+The PostOfficeBox is currently being deprecated.  However, it must be provided when adding an address to a Building.  Until this parameter is fully deprecated, please set this to an empty string.
 
 |Attribute|Description|
 | -------- | -------- |
