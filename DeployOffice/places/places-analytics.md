@@ -16,9 +16,9 @@ description: "Using Microsoft Places Analytics to improve workplace management b
 
 Microsoft Places Analytics is designed for real-estate and facilities (RE&F) managers and admins who need data-driven insights for effective space management. By using Places Analytics, you get a unified view of all your managed spaces, from buildings and rooms to shared workspaces.
 
-You can improve workplace efficiency by comparing planned versus actual attendance by using organization-level data. Discover which desks and rooms are most frequently used and receive suggestions on how to adjust your work spaces to better meet your staffing needs. Additionally, Places Analitics helps you identify supply and demand imbalances so that you can allocate resources more effectively.  
+You can improve workplace efficiency by comparing planned versus actual attendance using organization-level data. Discover which desks and rooms are most frequently used and receive suggestions on how to adjust your work spaces to better meet your staffing needs. Additionally, Places Analytics helps you identify supply and demand imbalances so that you can allocate resources more effectively.
 
-Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. Get metrics at both the floor level and specific room and shared-space level to identify opportunities for optimization. Compare intended usage with actual usage across different space types to understand user behavior patterns. You can use this data to refine your hybrid work scheduling and change-management policies.
+Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. Get metrics at both the floor level and specific room and shared desk-space level to identify opportunities for optimization. Compare projected usage with actual usage across different space types to understand user-behavior patterns. You can use this data to refine your hybrid work scheduling and change-management policies.
 
 > [!NOTE]
 > Places Analytics is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
@@ -32,20 +32,20 @@ Places Analytics also helps you track trends for key buildings, bookable rooms, 
 Access to Places Analytics is based on membership in a mail-enabled security group.
 
 > [!NOTE]
-> Adding or removing users should be done through previously created mail-enabled security groups. In most cases, adding or removing users should take effect immediately. However, for some users and security groups new to the tenant (or those that haven't been active), this might take up to one day.
+> Adding or removing users should be done through previously created mail-enabled security groups. In most cases, adding or removing users should take effect immediately. However, for some users and security groups new to the tenant (or those who haven't been active), this might take up to one day.
 
 To provide this user experience we recommend using the following mail-enabled security group:
 
 - PlacesAnalyticSG
 
-  This enables additional features and analytics views that help IT admins and RE&F professionals baseline the usage of their spaces and identify opportunities for optimization.
+  This enables additional features and analytics views that help IT admins and RE&F professionals determine the useage baseline for their spaces and identify opportunities for optimization.
 
 ## Create security groups
 
 You can create security groups in two ways:
 
 - Using the [Exchange admin center](/exchange/exchange-admin-center) and the [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center).
-- Enabling Place Analytics by running the New-DistributionGroup PowerShell cmdlet.
+- Enabling Place Analytics by running the New-DistributionGroup PowerShell cmdlet. For more information, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
 ### Enable Place Analytics to a mail-enabled Security Group  
 
