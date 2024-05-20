@@ -74,8 +74,8 @@ New-Place -Type Building -Name 'Building 3'
 After Building 3 is created successfully, read its PlaceId to use when setting the ParentId on the floors.
 
 ```powershell
-New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
-New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
+New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
+New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
 ```
 
 ### Example 2
@@ -83,7 +83,7 @@ New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 This example creates a new building with address information.
 
 ```powershell
-New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -GeoCoordinates "47.644125;-122.122411" -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d'
+New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -GeoCoordinates "47.644125;-122.122411"
 ```
 
 ### Example 3
