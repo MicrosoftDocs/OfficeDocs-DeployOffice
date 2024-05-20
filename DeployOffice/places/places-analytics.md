@@ -42,11 +42,12 @@ To provide this user experience we recommend using the following mail-enabled se
 
 ## Create security groups
 
-You can create security groups in two ways: by using the Exchange Admin Center (EAC User Interface), or by Powershell (New-Dsistribution group).
+You can create security groups in two ways:
 
-https://microsoft-my.sharepoint.com/:w:/p/robertthomas/EYSfyjB8rqtBhaZG5HcaKVsBGEDkfImwfrYLAYQGlbSEvw?e=PNFnyT
+- By using the [Exchange admin center](/exchange/exchange-admin-center) and the [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center?view=exchserver-2019).
+- You can also enable Place Analytics by running the New-DistributionGroup PowerShell cmdlet.
 
-You can enable Place Aanytics by running the follwoing PowerShell cmdlet:
+### Enable Place Analytics to an email-enabled Security Group  
 
 ```powershell
 Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true' 
