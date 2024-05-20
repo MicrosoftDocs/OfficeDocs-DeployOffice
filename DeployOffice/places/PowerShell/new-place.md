@@ -47,13 +47,14 @@ New-Place
  [-Description]
  [-Name]
  [-ParentId]
+ [-ParentType]
  [-Tags]
  [-Type]
 ```
 
 ## Description
 
-Microsoft Places experiences are dependent upon a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Once buildings and floors are created, you can use ParentId define the hierarchy relationships between rooms/workspaces to floor and floors to buildings.
+Microsoft Places experiences are dependent upon a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Once buildings and floors are created, you can use ParentId define the hierarchy relationships between rooms/workspaces to floors and floors to buildings.
 
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
@@ -70,7 +71,7 @@ This example creates a new building and a floor within that building.
 New-Place -Type Building -Name 'Building 3'
 ```
 
-_Assume that Building 3 is created successfully, and its Identity is set to f12172b6-195d-4e6e-8f4f-eb72e41de99a._
+After Building 3 is created successfully, read its PlaceId to use when setting the ParentId on the floors.
 
 ```powershell
 New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
@@ -82,7 +83,7 @@ New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 This example creates a new building with address information.
 
 ```powershell
-New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -GeoCoordinates "47.644125;-122.122411" -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d'
+New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -GeoCoordinates "47.644125;-122.122411" -ParentId daa2f89b-75c4-4eb7-adcc-ff249233338d'
 ```
 
 ### Example 3
@@ -184,6 +185,24 @@ The ParentId parameter specifies the ID of a Place in the parent location hierar
 * A floor must have a parent building. _(required)_
 
 Once the ParentId has been set on a room or workspace, legacy room/workspace properties that are actually about the floor (such as floor number) or about the building (such as address and location information) will be read-only for that room/workspace using Set-PlaceV3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
+
+|Attribute|Description|
+| -------- | -------- |
+|Type:|String|
+|Position:|Named|
+|Default value:|None|
+|Required:|False|
+|Accept pipeline input:|False|
+|Accept wildcard characters:|False|
+
+### -ParentType
+
+The ParentType parameter specifies the type of the place that is being set as the parent. Valid values are:
+
+* Building
+* Floor
+
+_This property is currently required if you are setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type._
 
 |Attribute|Description|
 | -------- | -------- |
