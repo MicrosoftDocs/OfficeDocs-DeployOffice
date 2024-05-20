@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn how to customize languages for Office 2016."
-ms.date: 04/19/2024
+ms.date: 05/20/2024
 ---
 
 # Customize language setup and settings for Office 2016
@@ -68,7 +68,7 @@ For Office 2016, you download an ISO image of the language packs, LIPs, and proo
     
     The list of files contains all available language packs, language interface packs, and proofing tools for the language and edition that you specified. For example, for Office Professional Plus 2016, the results look similar to the following figure.
     
-     ![Screenshot showing available language pack downloads for Office Professional Plus 2016.](../../images/b46e5aa7-a451-440c-ad85-d2145127f2a7.png)
+     :::image type="content" source="/DeployOffice/office2016/language/media/customize-language-setup-settings/office_professional_plus_2016_download_small.png" alt-text="Screenshot of the Office Professional Plus 2016 download page, showing special instructions and download settings for various Office installation files.":::
   
 6. Select the appropriate package from the list and then, under **Download**, select the down arrow to download the ISO image to your computer or to a shared folder on your network. 
     
