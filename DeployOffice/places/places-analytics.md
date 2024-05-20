@@ -14,7 +14,7 @@ description: "Using Microsoft Places Analytics to improve workplace management b
 ---
 # Microsoft Places Analytics
 
-Microsoft Places Analytics is designed for real-estate and facilities (RE&F) managers and admins who need data-driven insights for effective space management. By using Places Analytics, you get a unified view of all your managed spaces, from buildings and rooms to shared workspaces.
+Microsoft Places Analytics is designed for real estate and facilities (RE&F) managers and admins who need data-driven insights for effective space management. By using Places Analytics, you get a unified view of all your managed spaces, from buildings and rooms to shared workspaces.
 
 You can improve workplace efficiency by comparing planned versus actual attendance using organization-level data. Discover which desks and rooms are most frequently used and receive suggestions on how to adjust your work spaces to better meet your staffing needs. Additionally, Places Analytics helps you identify supply and demand imbalances so that you can allocate resources more effectively.
 
