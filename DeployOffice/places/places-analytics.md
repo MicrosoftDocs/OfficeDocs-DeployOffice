@@ -31,4 +31,25 @@ Places Analytics also helps you track trends of key buildings, bookable rooms, a
 
 Access to Places Analytics is based on membership in a mail-enabled security group.
 
+> [!NOTE]
+> Adding or removing users should be done through previously created email-enabled security groups. In most cases, adding or removing users should be immediate. Howwver, for some users and security groups new to the tenant (or those that haven't been active), this might take up to one day.
 
+To provide this user experience we recommend using the following mail-enabled security group:
+
+- PlacesAnalyticSG
+
+  This enables additional features and analytics views that help IT admins and RE&F professionals baseline the usage of their space and identify opportunities to optimize.
+
+## Create security groups
+
+You can create security groups in two ways: by using the Exchange Admin Center (EAC User Interface), or by Powershell (New-Dsistribution group).
+
+https://microsoft-my.sharepoint.com/:w:/p/robertthomas/EYSfyjB8rqtBhaZG5HcaKVsBGEDkfImwfrYLAYQGlbSEvw?e=PNFnyT
+
+You can enable Place Aanytics by running the follwoing PowerShell cmdlet:
+
+```powershell
+Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true' 
+```
+> [!NOTE]
+> These settings might take up to one day for the group to be fully setup and replicated to the Microsoft Places environment.

@@ -18,5 +18,5 @@ items:
 
   - name: Reports and analytics
     items:
-    - name: Microsoft Places analytics
+    - name: Microsoft Places Analytics
       href: places-analytics.md
