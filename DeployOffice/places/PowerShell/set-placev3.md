@@ -20,8 +20,9 @@ Use the Set-PlaceV3 cmdlet to update metadata about your rooms, workspaces, floo
 
 > [!NOTE]
 > Updates to conference rooms & workspaces can take up to 24 hours to reflect.  We are working on eliminating this delay.
-> 
-> The Set-UserPhoto was [deprecated](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-exchange-online-powershell-userphoto-cmdlets/ba-p/3955744) in April 2024.  We are working on adding a parameter to this cmdlet to set a photo on rooms and workspaces when using Set-PlaceV3.  In the meantime, please follow [these instructions](/microsoft-365/admin/add-users/change-user-profile-photos?view=o365-worldwide) set the photo on a room or workspace.
+>
+> The Set-UserPhoto was [deprecated](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecation-of-exchange-online-powershell-userphoto-cmdlets/ba-p/3955744) in April 2024.  We are working on adding a parameter to this cmdlet to set a photo on rooms and workspaces when using Set-PlaceV3.  In the meantime, please follow [these instructions](/microsoft-365/admin/add-users/change-user-profile-photos) set the photo on a room or workspace.
+>
 ## Syntax
 
 ### Building
@@ -89,12 +90,13 @@ Set-PlaceV3
 
 ## Description
 
-Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Once buildings and floors are created, you can link them using parentId. A room/workspace's parent will be a floor. A floor's parent will be a building.
+Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Once buildings and floors are created, you can link them using parentId. A room/workspace's parent is a floor. A floor's parent is a building.
 
 You need to be assigned permissions before you can run this cmdlet. You must have either the Exchange MailRecipients role or the Places TenantPlacesManagement role.
 
 > [!CAUTION]
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported. It is not recommended to use any parameter that is not documented on this page.
+>
 ## Examples
 
 ### Example 1
@@ -112,7 +114,7 @@ Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75
 
 This example updates a building's address and geocoordinates.
 
-*Note: PostOfficeBox is currently required when setting an address.  however, this parameter is in the process of being deprecated, so please set to an empty value.*
+*Note: PostOfficeBox is currently required when setting an address. However, this parameter is in the process of being deprecated, so set to an empty value.*
 
 ```powershell
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox '' -GeoCoordinates "47.644125;-122.122411"
@@ -174,7 +176,7 @@ The default value is blank ($null). To indicate that this room has no audio devi
 
 The Building parameter specifies the building name or building number that the room is in. If the value contains spaces, enclose the value in quotation marks (").
 
-Once the ParentId is set for a room or workspace, the Building parameter will be read-only for that room/workspace. To change the building name, you should update the Building directly using Set-PlaceV3.
+Once the ParentId is set for a room or workspace, the Building parameter is read-only for that room/workspace. To change the building name, you should update the Building directly using Set-PlaceV3.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -264,7 +266,7 @@ The default value is blank ($null). To indicate that this room has no display de
 
 The FloorLabel parameter specifies a descriptive label for the floor. If the value contains spaces, enclose the value in quotation marks (").
 
-Once the ParentId is set to a room or workspace, the FloorLabel parameter will be read-only for that room/workspace. To change the floor's label, update the Floor directly using Set-PlaceV3.
+Once the ParentId is set to a room or workspace, the FloorLabel parameter is read-only for that room/workspace. To change the floor's label, update the Floor directly using Set-PlaceV3.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -318,7 +320,7 @@ Note: Currently, this parameter is informational only and results in no addition
 The MTREnabled parameter identifies the room as configured with a Microsoft Teams room system. You can add Teams room systems as audio sources in Teams meetings that involve the room. Valid values are:
 
 * $true: The room has a Teams room system. You can add the Teams room system to Microsoft Teams meetings when selecting to join a meeting with room audio.
-* $false: The room doesn't have a Teams room system. Users will join Teams meetings using their PC or mobile device audio instead of using room audio. This is the default value.
+* $false: The room doesn't have a Teams room system. Users can join Teams meetings using their PC or mobile device audio instead of using room audio. This is the default value.
 
 For more information about Microsoft Teams Rooms, see [Microsoft Teams Rooms](/microsoftteams/rooms/).
 
@@ -350,7 +352,7 @@ The ParentId parameter specifies the ID of a Place in the parent location hierar
 Once the ParentID is set to a room or workspace, some parameters that are actually about the floor (for example, FloorLabel) or about the building (for example, address and location information) will be read-only for that room/workspace using Set-Place V3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
 
 > [!IMPORTANT]
-> It is only recommended to use Set-PlaceV3 to _add_ a ParentId.  Once a ParentId has been set, do not change the ParentId. The Set-PlaceV3 cmdlet currently allows changing of ParentId, but this will result in directory hierarchy issues.
+> It is only recommended to use Set-PlaceV3 to *add* a ParentId.  Once a ParentId has been set, do not change the ParentId. The Set-PlaceV3 cmdlet currently allows changing of ParentId, but this will result in directory hierarchy issues.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -368,7 +370,7 @@ The ParentType parameter specifies the type of the place that is being set as th
 * Building
 * Floor
 
-*This property is currently required if you are setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
+*This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
 
 |Attribute|Description|
 | -------- | -------- |
@@ -394,7 +396,7 @@ The PostalCode parameter specifies the room's postal code.
 
 ### -PostOfficeBox
 
-The PostOfficeBox is currently being deprecated.  However, it must be provided when adding an address to a Building.  Until this parameter is fully deprecated, please set this to an empty string.
+The PostOfficeBox is currently being deprecated. However, it must be provided when adding an address to a Building. Until this parameter is fully deprecated, set this to an empty string.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -430,7 +432,7 @@ The SortOrder parameter specifies the sort order of the floor. For example, a fl
 
 For rooms and workspaces, this updates the value named -Floor in Exchange Set-Place.
 
-Once the ParentId has been set on a room or workspace, the SortOrder (-Floor) parameter will be read-only for that room/workspace using Set-Place V3. The floor's sort order can be updated by updating the Floor directly using Set-PlaceV3.
+Once the ParentId is set to a room or workspace, the SortOrder (-Floor) parameter is read-only for that room/workspace using Set-Place V3. The floor's sort order can be updated by updating the Floor directly using Set-PlaceV3.
 
 |Attribute|Description|
 | -------- | -------- |

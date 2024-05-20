@@ -163,9 +163,9 @@ The Name parameter specifies the display name of the place. The maximum length i
 
 A building's display name is visible:
 
-* In Outlook when users are setting up their work hours and location, they are able to select a building.
+* In Outlook, when users are setting up their work hours and location, they're able to select a building.
 * In Places Explore page that shows who else is in the same building, nearby buildings, and more.
-* In Places Finder as a filter when searching for a conference room or workspace.
+* In Places Finder, as a filter when searching for a conference room or workspace.
 
 A floor's display name is visible in Places Finder as a filter when searching for a conference room or workspace.
 
@@ -181,10 +181,10 @@ A floor's display name is visible in Places Finder as a filter when searching fo
 
 The ParentId parameter specifies the ID of a Place in the parent location hierarchy in Microsoft Places.  
 
-* A room or workspace should have a parent floor. _(optional in the cmdlet, but without this parameter set, Places experiences will be very limited)_
+* A room or workspace should have a parent floor. _(optional in the cmdlet, but without this parameter set, Places experiences are limited)_
 * A floor must have a parent building. _(required)_
 
-Once the ParentId has been set on a room or workspace, legacy room/workspace properties that are actually about the floor (such as floor number) or about the building (such as address and location information) will be read-only for that room/workspace using Set-PlaceV3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
+Once the ParentId is set for a room or workspace, legacy room/workspace properties that are actually about the floor (such as floor number) or about the building (such as address and location information) become read-only for that room/workspace using Set-PlaceV3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -202,7 +202,7 @@ The ParentType parameter specifies the type of the place that is being set as th
 * Building
 * Floor
 
-_This property is currently required if you are setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type._
+_This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type._
 
 |Attribute|Description|
 | -------- | -------- |
@@ -270,11 +270,11 @@ The Street parameter specifies the room's physical address. The maximum length i
 
 ### -Tags
 
-The Tags parameter specifies additional features of the room (for example, details like the type of view or furniture type). There's no maximum length currently.
+The Tags parameter specifies other features of the room (for example, details like the type of view or furniture type). There's no maximum length currently.
 
 You can specify multiple labels separated by commas. If the labels contains spaces, enclose the values in quotation marks: `"Label 1","Label 2",..."Label N"`.
 
-_Note: The entire set will be replaced on update. To add or remove a value, be sure to include previous values that should be persisted._
+_Note: The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted._
 
 |Attribute|Description|
 | -------- | -------- |
