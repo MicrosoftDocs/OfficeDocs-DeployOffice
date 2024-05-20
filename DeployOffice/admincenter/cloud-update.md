@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 04/28/2024
+ms.date: 05/20/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -323,4 +323,4 @@ If the problem persists after troubleshooting, open a support ticket with Micros
 
 We value your feedback. To submit feature suggestions and report issues, you can use the Feedback button in the top-right corner of the Microsoft 365 Apps admin center.
 
-:::image type="content" source="/DeployOffice/images/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a light bulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. There's a checkbox labeled 'Include screenshot' and an orange 'Submit' button. In the bottom left corner is a 'Privacy Statement' link." lightbox="/DeployOffice/images/m365aac_feedback.1.png":::
+:::image type="content" source="/DeployOffice/admincenter/media/cloud-update/m365aac_feedback.png" alt-text="Screenshot of a feedback form interface with three options on the left side: 'I Like Something' with a happy face emoji, 'I Don't Like Something' with a frowning face emoji, and 'I Have a Suggestion' highlighted in orange with a light bulb emoji. On the right side, there's a section titled 'What do you suggest?' with a large text box prompting 'Please type in your comment' and a smaller box underneath for an optional email address. There's a checkbox labeled 'Include screenshot' and an orange 'Submit' button. In the bottom left corner is a 'Privacy Statement' link." lightbox="/DeployOffice/admincenter/media/cloud-update/m365aac_feedback.1.png":::
