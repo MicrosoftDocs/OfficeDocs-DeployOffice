@@ -34,11 +34,11 @@ Access to Places Analytics is based on membership in a mail-enabled security gro
 > [!NOTE]
 > Adding or removing users should be done through previously created mail-enabled security groups. In most cases, adding or removing users should take effect immediately. However, for some users and security groups new to the tenant (or those who haven't been active), this might take up to one day.
 
-To provide this user experience we recommend using the following mail-enabled security group:
+To provide this user experience, we recommend using the following mail-enabled security group:
 
 - PlacesAnalyticSG
 
-  This enables additional features and analytics views that help IT admins and RE&F professionals determine the useage baseline for their spaces and identify opportunities for optimization.
+  This enables more features and analytics views that help IT admins and real estate and facilities RE&F professionals determine the usage baseline for their spaces and identify opportunities for optimization.
 
 ## Create security groups
 
