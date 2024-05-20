@@ -24,7 +24,7 @@ Users can change the primary account in Settings > Accounts > Email accounts > M
 
 :::image type="content" source="/DeployOffice/images/outlook-policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="/DeployOffice/images/outlook-policy-management/policy-email-accounts-settings-lb.png":::
 
-We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the 'OwaMailboxPolicy' cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
+We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
 > [!IMPORTANT]
 > While policies can be applied to any organization account in new Outlook, management of app-wide settings like Theme, Diagnostic Data, and Connected Experiences requires the designated account to be set as primary.
