@@ -4,7 +4,7 @@ ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
 ms.reviewer: julia.foran
-ms.date: 05/16/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -55,7 +55,6 @@ Please choose the desired option before continuing:
  2. Import mapping CSV to automatically create buildings/floors and room mappings.
  3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
  X to cancel.
-1
 ```
 
 1. Prepare the file for import.
