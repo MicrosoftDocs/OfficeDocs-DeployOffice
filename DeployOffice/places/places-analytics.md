@@ -25,8 +25,6 @@ Places Analytics also helps you track trends for key buildings, bookable rooms, 
 > [!NOTE]
 > Places Analytics is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
-- You must first convert your floor plans for indoor mapping in Microsoft Places using the Azure Maps Creator tool. For more information, see [Azure Maps Creator Guide for Microsoft Places](azure-maps-creator-guide.md).
-
 ## Setting up Places Analytics
 
 Access to Places Analytics is based on membership in mail-enabled security groups.
