@@ -38,7 +38,7 @@ For example, the following screenshot shows a custom report that lists the unreg
   
 **Custom report that shows unregistered ActiveX solutions**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_customreport_activexreport.png" alt-text="Custom report table listing users, departments, and event ID counts for an ActiveX control issue.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-customreport-activexreport.png" alt-text="Custom report table listing users, departments, and event ID counts for an ActiveX control issue.":::
   
 > [!IMPORTANT]
 > To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
@@ -47,13 +47,13 @@ As another example, the following screenshot shows the list of Office client com
   
 **The Deployments worksheet**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_officedeployments.png" alt-text="Table showing Office deployments with counts for 32-bit, 64-bit, and ARM versions.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-officedeployments.png" alt-text="Table showing Office deployments with counts for 32-bit, 64-bit, and ARM versions.":::
   
 You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
   
 **Custom report showing Office deployments by business group**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_officecustomreport.png" alt-text="Custom report table and bar chart showing the count of Office installations by department and version.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-officecustomreport.png" alt-text="Custom report table and bar chart showing the count of Office installations by department and version.":::
   
 <a name="Create_customreport"> </a>
 
@@ -110,7 +110,7 @@ To create a custom report that shows solution stability, do the following:
 2. After the Solution name field is added to the custom report, use the filter button (next to the Solution name) to choose the solution. 
 3. From the Inventory table, drag Solution version to the ROWS well. 
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_solutionstability.png" alt-text="PivotTable showing solution versions and the count of event IDs for a specific solution.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-solutionstability.png" alt-text="PivotTable showing solution versions and the count of event IDs for a specific solution.":::
 
 To create a custom report that shows Excel warnings, do the following: 
 1. From the Lookup_issue_definitions table, drag Severity to the FILTERS well. 
@@ -118,7 +118,7 @@ To create a custom report that shows Excel warnings, do the following:
 3. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. 
 4. From the Lookup_solutions table, drag File name to the ROWS well.
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_excelwarnings.png" alt-text="Excel PivotTable showing the count of event IDs for files with Excel warnings.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-excelwarnings.png" alt-text="Excel PivotTable showing the count of event IDs for files with Excel warnings.":::
    
 <a name="default_tables"> </a>
 
@@ -362,15 +362,15 @@ The following illustrations show the relationships between tables in the databas
   
 **Default relationships between tables in the database**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_defaultrelationships.png" alt-text="Entity relationship diagram showing events, issue definitions, solutions, users, computers, and inventory tables.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-defaultrelationships.png" alt-text="Entity relationship diagram showing events, issue definitions, solutions, users, computers, and inventory tables.":::
   
 **The Usage_summary table and its relationships**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_usage_summary.png" alt-text="Entity relationship diagram with usage summary, inventory, solutions, users, and computers tables.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-usage-summary.png" alt-text="Entity relationship diagram with usage summary, inventory, solutions, users, and computers tables.":::
   
 **The Issue_summary table and its relationships**
 
-:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork_cr_issue_summary.png" alt-text="Entity relationship diagram with issue summary, inventory, solutions, users, and computers tables.":::
+:::image type="content" source="/DeployOffice/compat/media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-issue-summary.png" alt-text="Entity relationship diagram with issue summary, inventory, solutions, users, and computers tables.":::
   
 ## Related articles
 
