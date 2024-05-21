@@ -25,6 +25,7 @@ To enable the Microsoft Places mobile experience, an IT admin might need to conf
 - Because the Places mobile app is still in its pilot phase and not yet available in the App Store, to allow Preview customers to install and test the application we've made the Places mobile iOS available (installed through Apple TestFlight).
 
 ## Prerequisites
+>
 > [!NOTE]
 > The Microsoft Places iOS app is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
@@ -127,11 +128,11 @@ The following procedure adds the bundle ID of the Places iOS app as a custom app
 
 2. In **Conditional access**, click on **View all policies** to see all of the deployed conditional-access policies.
 
-   ![Screenshot of the Conditional Access overiew.](../images/places/configure-ios-app-011.png)
+   ![Screenshot of the Conditional Access overview.](../images/places/configure-ios-app-011.png)
 
 3. The following summary shows all of the **Policies** for the tenant.
 
-   ![Screenshot of the Policies overiew.](../images/places/configure-ios-app-012.png)
+   ![Screenshot of the Policies overview.](../images/places/configure-ios-app-012.png)
 
 4. Click on **Require approved client apps and app protection policies**, which opens the policy details.
 
@@ -143,12 +144,12 @@ The following procedure adds the bundle ID of the Places iOS app as a custom app
 
 6. To enable MAM CA protection for the Places app, from the **Intune admin center** home page, navigate to **Apps**, then to **App protection policies**.
 
-   ![Screenshot of the Intune amnin center and App protection policies option.](../images/places/configure-ios-app-015b.png)
+   ![Screenshot of the Intune admin center and App protection policies option.](../images/places/configure-ios-app-015b.png)
 
    Select your existing app protection policy, then under **Properties**, select **Apps Edit.**
- 
+
    ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019b.png)
- 
+
    Scroll to the **Custom apps** section, and select **+ Select custom apps**.
 
    ![Screenshot of the app protection policies option.](../images/places/configure-ios-app-016.png)
@@ -160,4 +161,3 @@ The following procedure adds the bundle ID of the Places iOS app as a custom app
    After adding, select the app bundle ID from the list to move to the **Selected Apps** section, and click **Select**.
 
    ![Screenshot showing the Select apps to target and the Bundle ID.](../images/places/configure-ios-app-017.png)
-
