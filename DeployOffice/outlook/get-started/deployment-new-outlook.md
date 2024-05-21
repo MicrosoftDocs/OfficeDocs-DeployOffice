@@ -120,6 +120,12 @@ For any device that's installed the March 2024 Non-Security Preview release (or 
 > [!IMPORTANT]
 > Support for Windows Mail and Calendar will be discontinued at the end of 2024. Organizations should ensure that users transition to new Outlook before this deadline to avoid disruption. Please note that blocking the download of the new Outlook for Windows on managed devices will not stop the migration prompts within Mail and Calendar.
 
+In cases of user installs, for example, if users have used the toggle to install the new Outlook for Windows, use Remove-AppxPackage. AppxPackage cmdlets are used for managing applications for current users, while AppxProvisionedPackage cmdlets are used for managing default applications for both current and future users of the system. The following example cmdlet removes the new Outlook for Windows for all users on the machine but does not prevent future users from getting it automatically, once the Mail and Calendar apps are replaced by the new Outlook for Windows. For further reference, see [Remove-AppxPackage](/powershell/module/appx/remove-appxpackage).
+
+```powershell
+Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+```
+
 Users can toggle to the new Outlook from the Mail and Calendar applications that ship with Windows. To block users from acquiring new Outlook from these applications, organizations can block users from downloading and/or installing the new Outlook using Intune or other management solutions.
 
 For more information, see [Outlook for Windows: The Future of Mail, Calendar and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
