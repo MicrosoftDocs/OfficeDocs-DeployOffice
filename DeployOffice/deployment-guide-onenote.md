@@ -68,6 +68,7 @@ Migration Policy Development: To facilitate a successful migration to OneNote on
 Use this sample script to suit your organization's needs. 
 
 <div style="overflow: auto; max-height: 500px; border: 1px solid #ddd; padding: 10px;">
+
 ```powershell
 #############################################
 ######   OneNote 2024  ######################
