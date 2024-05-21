@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides information for IT Pros about shared computer activation for use in shared computer scenarios, such as deploying Microsoft 365 Apps with Remote Desktop Services (RDS) "
-ms.date: 03/14/2024
+ms.date: 05/20/2024
 ---
 
 # Overview of shared computer activation for Microsoft 365 Apps
@@ -50,8 +50,10 @@ To use shared computer activation, you need an Office 365 (or Microsoft 365) pla
 Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Microsoft 365 Apps and that users sign in the shared computer with their own user account.
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
+
 - When you're using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-3-create-and-deploy-the-microsoft-365-apps-application), make sure that you enable the option **Shared Computer** in the **Product activation** section.
 - When you're crafting the configuration file manually, make sure to include the following line:
+
   ```xml
   <Property Name="SharedComputerLicensing" Value="1" />
   ```
@@ -103,7 +105,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer with sha
     
     To determine whether the user is licensed to use Microsoft 365 Apps, the Office Licensing Service has to know the user's account for Office 365. In some cases, Microsoft 365 Apps prompts the user to provide the information. For example, the user might see the **Activate Office** dialog box.
     
-     ![Activate Office.](images/9cb7eef4-0ce6-428a-8f96-890e5237d17a.png)
+    :::image type="content" source="media/overview-shared-computer-activation/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
   
     If your environment synchronizes Office 365 (Microsoft Entra ID) and local Active Directory (AD) accounts, users are unlikely to encounter any prompts. Microsoft 365 Apps can automatically retrieve the necessary information about the user's account in Office 365.
     
@@ -127,7 +129,7 @@ If the user doesn't sign in the shared computer for 30 days, the licensing token
     
 **Reduced functionality mode** If the user isn't licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. In this mode the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
     
-   ![Reduced functionality.](images/4e25a9fc-1844-4204-9b9d-40603ca1a091.png)
+:::image type="content" source="media/overview-shared-computer-activation/unlicensed-product.png" alt-text="Word document screen with a red bar indicating the product is unlicensed and most features are turned off.":::
 
 *(For Version 2205 and later)* If [viewer mode](overview-viewer-mode.md) is enabled on the device, then the user is placed in viewer mode instead of reduced functionality mode.
   
@@ -135,7 +137,7 @@ If the user doesn't sign in the shared computer for 30 days, the licensing token
     
 Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
     
-   ![Too many computers activated message.](images/e01c8a45-1814-4bfe-bb7e-c0176f393031.png)
+:::image type="content" source="media/overview-shared-computer-activation/office-activation-error.png" alt-text="Microsoft Excel error message indicating that the Office 365 account has been used to activate too many computers.":::
   
 **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user is assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Microsoft Entra ID](/microsoft-365/enterprise/about-microsoft-365-identity).
     

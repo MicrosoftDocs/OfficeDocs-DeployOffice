@@ -10,29 +10,21 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
-ms.date: 03/01/2023
+ms.date: 05/20/2024
 ---
 
 # Deployment guide for OneNote
 
-There are two versions of OneNote that you can deploy to users in your organization who have devices running Windows:
-- **OneNote**: the desktop version, which was previously named OneNote 2016.
-- **OneNote for Windows 10**: the Microsoft Store app that's available only on Windows 10.
+> [!IMPORTANT]
+> OneNote for Window 10 will reach end of support in October 2025, It's recommended that all enterprise customers switch from OneNote for Windows 10 to OneNote on Windows, which is available from the Microsoft Store and with a Microsoft 365 subscription. OneNote on Windows offers new features and updates and allows you to customize user settings through Group Policy. 
 
-While both versions are supported and can be installed on the same device, OneNote is the recommended version for enterprise environments. OneNote provides more features and allows you to customize user settings through Group Policy.
+OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
-> [!NOTE]
-> OneNote still appears as OneNote 2016 in volume licensed versions of Office 2019, such as Office Professional Plus 2019.
-
-## OneNote deployment guidance
-
-You can use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software, such as Microsoft Configuration Manager, to include or exclude OneNote when you deploy Office in your organization.
-
-OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no additional steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
+Use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software like Microsoft Configuration Manager to include or exclude OneNote when you deploy Office in your organization.
 
 ### To add OneNote to an existing installation of Office
 
-If Office is already installed on the device, but OneNote didn't get installed previously, you can run the Office Deployment Tool on the device and use the following configuration.xml file to add OneNote.
+If you install Office on your device but OneNote is missing, use the Office Deployment Tool and the following configuration.xml file to add OneNote.
 
 ```xml
 <Configuration>
@@ -44,7 +36,7 @@ If Office is already installed on the device, but OneNote didn't get installed p
 </Configuration>
 ```
 
-Although you're deploying the freemium version of OneNote, the first time the user opens OneNote after it's installed, the license will update automatically to the same license as the version of Office already installed on the device.
+When you deploy the free version of OneNote, the license updates automatically to match the Office version already installed on the device once the user opens OneNote for the first time.
 
 > [!NOTE]
 > - Using OneNoteFreeRetail isn't supported with volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019. To add OneNote back to those versions of Office, you can run an Online Repair.
@@ -60,21 +52,71 @@ There are different ways to exclude OneNote from being installed with Office, de
 |Microsoft Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
-But, if you're allowing your users to install Office for themselves from the Office 365 portal, there is no way to exclude OneNote from being installed.
+But, if you're allowing your users to install Office for themselves from the Office 365 portal, there's no way to exclude OneNote from being installed.
 
-## OneNote for Windows 10 deployment guidance
+## OneNote for Windows 10 migration guidance
 
-OneNote for Windows 10 is installed by default on computers running Windows 10. Users can also install it directly from the [Microsoft Store](https://www.microsoft.com/p/onenote/9wzdncrfhvjl?activetab=pivot%3aoverviewtab), if you allow them to install apps from there. In either case, updates to OneNote for Windows 10 come directly from the Microsoft Store.
+> [!NOTE]
+> To ensure uninterrupted service and workflow, it's strongly recommend that organizations migrate to OneNote on Windows well ahead of the OneNote for Windows 10 end-of-support date in October 2025. 
 
-If you don't want your users to install apps directly from the Microsoft Store, you can set up the Microsoft Store for Business in your organization. This option allows you to control which Microsoft Store apps your users can install, including OneNote for Windows 10. For more information, see [Microsoft Store for Business overview](/microsoft-store/microsoft-store-for-business-overview)
+This section provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
 
-If your users already use OneNote for Windows 10, they may continue to use it. We recommend excluding OneNote for Windows 10 for new deployments. We don't recommend uninstalling OneNote for Windows 10 for existing users because uninstalling an app permanently removes any notebook changes in the local cache that haven't been synchronized. If you plan to uninstall OneNote for Windows 10 for existing users, ensure that all open notebooks have finished synchronizing before uninstalling.
+Migration Policy Development: To facilitate a successful migration to OneNote on Windows, organizations should:
 
-All notebooks supported by OneNote for Windows 10 are also fully supported by OneNote. All cloud-based notebooks associated with their user account will be accessible in OneNote after they sign in with that same user account.
+*Customize the Migration Script.*
 
-### To exclude OneNote for Windows 10 from a Windows image
+Use this sample script to suit your organization's needs. 
 
-To remove OneNote for Windows 10 from a Windows image so that OneNote for Windows 10 won't be installed when a new user account is created, you can use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) cmdlet. For the package name parameter, you should use Microsoft.Office.OneNote_2015.9126.21251.0_neutral_~_8wekyb3d8bbwe.
+```powershell
+script
+```
+
+Ensure the script performs the following functions:
+
+- **Installs OneNote on Windows** on user devices. Refer to the Deployment Guidance section for more details.
+
+- **Updates OneNote for Windows 10** to the latest build (min build 16001.14326.21802.0) to incorporate essential features that prevent data loss during the migration of unsynced notes.
+
+- **Terminates all OneNote for Windows 10 processes.**
+
+- **Backs up any unsynced notebooks** to the user's backup folder using the `onenote-cmd://backup:` command.
+  - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
+  - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
+
+- **Parse through the `UWPBackUpStatus.json`** to validate backup was successful.
+  - Uninstalling with a failed backup can lead to data loss.
+
+- **Uninstalls OneNote for Windows 10.**
+  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This will help mitigate scenarios where shared devices have unsynced notes removed for all accounts.
+
+## Accessing Migrated Notes
+
+After migration, users can retrieve their notes by:
+1. Opening the new **OneNote on Windows** application.
+2. Signing into their account.
+3. Opening their notebooks.
+
+If any notes are missing, check the backup folder that was created in the previous steps.
+
+To review backups through OneNote on Windows:
+- Navigate to **File -> Open Backups -> Navigate to the backup file path.**
+
+:::image type="content" source="images/deployment-guide-onenote/notebook-information-small.png" alt-text="This image displays the OneNote application's Notebook Information section. The interface includes a navigation bar with various options and a main panel showing Migration settings with a file path. There are icons for View Sync Status and Open Backups in the upper right corner" lightbox="images/deployment-guide-onenote/notebook-information.png":::
+
+## Troubleshooting
+
+- Review the `UWPBackupStatus.json` and `UWPSyncStatus.json` files in the user’s backup folder for detailed information on the backup and sync statuses.
+
+- For errors encountered during migration, refer to the log file located in the backup generated previously (step 1.d).
+
+Should the `onenote-cmd://backup:` command fail:
+- Ensure that the OneNote for Windows 10 app is the default app linked to the `onenote-cmd` protocol.
+- Consult the relevant support article to ensure correct protocol attachment to OneNote for Windows 10.
+
+> [!CAUTION]
+> Be cautious when using commands found online. Always test commands in a controlled environment before deploying them organization-wide to avoid unintended consequences, such as those resulting from the Remove-AppxPackage command. 
+
+For additional assistance or inquiries, contact Microsoft Support.
 
 ## Additional information about deploying OneNote
 
