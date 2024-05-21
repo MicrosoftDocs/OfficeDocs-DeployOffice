@@ -28,7 +28,7 @@ When running Initialize-Places, you can choose from 3 options:
 1. Import a CSV file that generates a PowerShell script that you can review and then execute to achieve the same resulting directory hierarchy as Option 2. This option is provided for tenants who would like more control or auditing of the cmdlets executed during Option 2.
 
 > [!TIP]
-> Please reference [Quick setup of buildings and floors](/get-started/quick-setup-buildings-floors.md) for a tutorial guide of how to use Initialize-Places.
+> Please reference [Quick setup of buildings and floors](places\get-started\quick-setup-buildings-floors.md) for a tutorial guide of how to use Initialize-Places.
 
 ## Syntax
 
@@ -48,7 +48,7 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 ### Option 1
 
 Export your list of conference rooms and workspaces. The exported filename is _ResourceAccountsMapped.csv_.
-Initialize-Places, Option 1 only exports rooms, or workspaces associated with a room list. See [this tutorial](/get-started/quick-setup-buildings-floors.md) for an alternative of how to export all rooms and workspaces.
+Initialize-Places, Option 1 only exports rooms, or workspaces associated with a room list. See [this tutorial](places\get-started\quick-setup-buildings-floors.md) for an alternative of how to export all rooms and workspaces.
 
 _This isn't a required step if you have alternative ways that might be useful to quickly create a list of rooms/workspaces._
 
