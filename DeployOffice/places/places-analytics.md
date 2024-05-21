@@ -47,7 +47,7 @@ You can create security groups in two ways:
 - Using the [Exchange admin center](/exchange/exchange-admin-center) and the [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center).
 - Enabling Place Analytics by running the New-DistributionGroup PowerShell cmdlet. For more information, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
 
-### Enable Place Analytics to a mail-enabled Security Group  
+### Enable Place Analytics to a mail-enabled Security Group
 
 You can enable Places Analytics for a mail-enabled security group by running the following PowerShell cmdlet:
 
