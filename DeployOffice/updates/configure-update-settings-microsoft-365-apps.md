@@ -63,7 +63,7 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 After you copy the Administrative Template files to AD DS, find the update policy settings under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting.
 
-:::image type="content" source="/DeployOffice/updates/media/configure-update-settings-microsoft-365-apps/group-policy-office-updates-small.jpg" alt-text="Screenshot of Group Policy settings for managing Office updates, showing various options with 'Hide option to enable or disable updates' enabled." lightbox="/DeployOffice/updates/media/configure-update-settings-microsoft-365-apps/group-policy-office-updates.jpg":::
+:::image type="content" source="media/configure-update-settings-microsoft-365-apps/group-policy-office-updates-small.jpg" alt-text="Screenshot of Group Policy settings for managing Office updates, showing various options with 'Hide option to enable or disable updates' enabled." lightbox="media/configure-update-settings-microsoft-365-apps/group-policy-office-updates.jpg":::
   
 If you decide to make a change later, update the Group Policy setting by using the Group Policy Management Console. The updated policy settings are automatically applied to Microsoft 365 Apps, through the normal Group Policy update process.
   
