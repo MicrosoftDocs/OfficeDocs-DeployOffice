@@ -67,6 +67,10 @@ Migration Policy Development: To facilitate a successful migration to OneNote on
 
 Use this sample script to suit your organization's needs. 
 
+```markdown
+<details>
+  <summary>Click to expand!</summary>
+
 ```powershell
 #############################################
 ######   OneNote 2024  ######################
@@ -297,10 +301,10 @@ function launchBackUp {
 
         $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0"
         $fileExtensions = "*.json", "*.txt"
-        foreach ($fileExtension in $fileExtensions)
+        foreach ($fileExtension in the fileExtensions)
         {
             $files = Get-ChildItem -Path $sourcePath -Filter $fileExtension
-            foreach ($file in $files) {
+            foreach ($file in the files) {
                 Copy-Item -Path $file.FullName -Destination $destinationPath -Force
             }
         }
