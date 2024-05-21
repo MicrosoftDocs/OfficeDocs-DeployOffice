@@ -25,7 +25,7 @@ The Administrative Template for Office imported into Intune is the same as the o
 
 Here are some of the update settings that you can configure by using the Office Deployment Tool or Group Policy(in on-premises or Intune).
   
-|**Update setting**|**Office Deployment Tool setting**|**Group Policy setting(on-premises or Intune)**|
+| Update setting | Office Deployment Tool setting | Group Policy setting(on-premises or Intune) |
 |:-----|:-----|:-----|
 |Set updates to occur automatically  |Enabled  |Enable automatic updates  |
 |Specify a location to look for updates  |UpdatePath  |Update path  |

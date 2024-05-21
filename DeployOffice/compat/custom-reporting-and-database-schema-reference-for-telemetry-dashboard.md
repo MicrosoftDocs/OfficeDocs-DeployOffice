@@ -79,7 +79,7 @@ To create a custom report, you have to first start Office Telemetry Dashboard. T
   
 **To start Office Telemetry Dashboard**
 
-|**If you have this operating system**|**Follow these steps to start Office Telemetry Dashboard**|
+| If you have this operating system | Follow these steps to start Office Telemetry Dashboard |
 |:-----|:-----|
 |Windows 10, Windows 7, or Windows Server 2008 R2  |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  |
 |Windows 8.1  |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  |
@@ -128,7 +128,7 @@ The following tables describe the six tables and their related fields that are s
   
 **Default tables**
 
-|**Table name**|**Description**|
+| Table name | Description |
 |:-----|:-----|
 |Events  |Contains issue events for the past three months.  |
 |Inventory  |Contains unique instance data, such as load time and solution version, about the Office documents and solutions that are monitored.  |
@@ -141,7 +141,7 @@ The following table lists the fields in the **Events** table.
   
 **Fields in the Events table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Event ID  |Number  |The primary key for this table.  |
 |Issue ID  |Number  | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](/office/client-developer/shared/compatibility-issues-in-office) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) (see Table 2)  |
@@ -156,7 +156,7 @@ The following table lists the fields in the **Inventory** table.
   
 **Fields in the Inventory table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Inventory ID  |Strings  |The primary key for this table.  |
 |Solution ID  |Numbers  |Connects to the **Lookup_solutions** table.  |
@@ -185,7 +185,7 @@ The following table shows the fields in the **Lookup_computers** table.
   
 **Fields in the Lookup_computers table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Computer ID  |Number  |The primary key for this table.  |
 |Computer name  |String  |Shows the computer name.  |
@@ -210,7 +210,7 @@ The following table shows the fields in the **Lookup_solutions** table.
   
 **Fields in the Lookup_solutions table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Solution ID  |Number  |The primary key for this table.  |
 |Solution type  |String  |Shows the solution or document type.  |
@@ -224,7 +224,7 @@ The following table shows the fields in the **Lookup_users** table.
   
 **Fields in the Lookup_users table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |User ID  |Number  |The primary key for this table.  |
 |User name  |String  |Shows the user name.  |
@@ -238,7 +238,7 @@ The following table shows the fields in the **Lookup_issue_definitions** table.
   
 **Fields in the Lookup_issue_definitions table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Issue ID  |Number  |The primary key for this table.  |
 |Severity  |String  |Shows the severity of issue.  |
@@ -276,7 +276,7 @@ The following tables list the hidden tables that you have to manually add to Off
   
 **Hidden tables in Office Telemetry Dashboard custom reports**
 
-|**Table name**|**Comments**|
+| Table name | Comments |
 |:-----|:-----|
 |Usage_summary  | Shows data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** |
 |Issue_summary  | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_issue_definitions** <br/> - **Lookup_solutions** <br/> - **Lookup_users** |
@@ -286,7 +286,7 @@ The following table describes the fields in the Usage_summary table.
   
 **Fields in the Usage_summary table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Inventory ID  |String  |Connects to the **Inventory** table to gain access to more details in the PivotTable report.  |
 |Solution ID  |Number  |Connects to the **Lookup_solutions** table to obtain more details in PivotTable report if there's no relationship between the **Inventory** and **Lookup_solutions** tables.  |
@@ -303,7 +303,7 @@ The following table describes the fields in the Issue_summary table.
   
 **Fields in the Issue_summary table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Issue ID  |Number  |Connects to the **Lookup_issue_definitions** table to obtain more details in the PivotTable report.  |
 |Inventory ID  |String  |Connects to the **Inventory** table to obtain more details in the PivotTable report.  |
@@ -318,7 +318,7 @@ The following table describes the fields in the System_details table.
   
 **Fields in the System_details table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
 |Computer name  |String  |Shows the computer name.  |
 |Computer domain  |String  |Shows the domain name that is registered for this computer.  |

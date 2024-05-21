@@ -227,7 +227,7 @@ Group Policy settings can enforce default language settings that users in your o
   
 The following policy settings help you manage language settings in Office 2016:
   
-|**Group Policy setting**|**Location**|**Description**|
+| Group Policy setting | Location | Description |
 |:-----|:-----|:-----|
 |Display menus and dialog boxes in  |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of the user interface.  |
 |Display help in  |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of online Help. If this policy setting isn't configured, the Help language uses the user interface language.  |
@@ -249,8 +249,8 @@ The following policy settings help you manage language settings in Office 2016:
     
    - The **Enable Language** folder contains policy settings that allow you to choose and configure editing languages. 
     
-     > [!NOTE]
-     > Each policy setting provides a description of what it enforces. 
+   > [!NOTE]
+   > Each policy setting provides a description of what it enforces. 
   
 4. In the details pane, open (double-click) the policy setting that you want to configure, choose either **Enable** or **Disable**, and then specify any appropriate options that are provided.
     
@@ -270,7 +270,7 @@ You use the OCT to create a setup customization file (.msp file) that setup appl
     
 4. Save the setup customization file in the **Updates** folder at the root of the network installation point. 
     
-    Setup applies the file automatically when you install Office on users' computers.
+   Setup applies the file automatically when you install Office on users' computers.
     
 For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
   
@@ -294,7 +294,7 @@ If you're not enforcing language settings by policy, users who work in Office ap
     
 5. Under **Help Language**, select the language that you want to use to view Office application Help, and then choose **Set as Default**.
     
-    If you don't specify a language for Help, the online Help language uses the display language.
+   If you don't specify a language for Help, the online Help language uses the display language.
     
 > [!NOTE]
 > You can enable functionality for working in languages that are not installed on the computer. For example, if you select Korean as an editing language, you enable Asian and Korean features in Word even if Korean proofing tools are not installed. You must enable support for that language in the operating system. 
@@ -348,7 +348,7 @@ The following table shows **OptionState** attributes, values, and descriptions.
   
 **OptionState attributes and values**
 
-|**Attribute**|**Value**|**Description**|
+| Attribute | Value | Description |
 |:-----|:-----|:-----|
 |**Id** | _optionID_ |An item that the user can choose to install. See [Proofing Tools Config.xml OptionState ID values](language-identifiers-optionstate-id-values.md#BKMK_OptionStateID).  |
 |**State** |**Absent** |The feature isn't installed.  <br/> The default value is Local.  |
