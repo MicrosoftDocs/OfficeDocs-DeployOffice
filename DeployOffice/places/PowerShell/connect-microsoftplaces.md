@@ -43,7 +43,11 @@ No parameters are exposed for this command. A browser window opens where you ent
 Install-Module -Name MicrosoftPlaces -AllowPrerelease -Force
 ```
 
-### I receive an error when attempting to run Connect-MicrosoftPlaces
+### I receive an error when attempting to run Connect-MicrosoftPlaces.
 
 * PowerShell 7 doesn't currently use the proxy settings defined in user settings.
 * You can't currently connect to both Exchange Online and MicrosoftPlaces from within the same PowerShell window. Open in separate windows and try again.
+### Do I need certain permissions to run Connect-MicrosoftPlaces?
+
+No.  Permissions are enforced when running other commands after authentication completes.
+
