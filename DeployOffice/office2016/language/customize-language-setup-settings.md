@@ -229,10 +229,10 @@ The following policy settings help you manage language settings in Office 2016:
   
 |**Group Policy setting**|**Location**|**Description**|
 |:-----|:-----|:-----|
-|Display menus and dialog boxes in  <br/> |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of the user interface.  <br/> |
-|Display help in  <br/> |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of online Help. If this policy setting isn't configured, the Help language uses the user interface language.  <br/> |
-|Enabled Editing Languages  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> | Enables editing languages from the list of languages supported by Office.  <br/> |
-|Primary Editing Language  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  <br/> |
+|Display menus and dialog boxes in  |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of the user interface.  |
+|Display help in  |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of online Help. If this policy setting isn't configured, the Help language uses the user interface language.  |
+|Enabled Editing Languages  |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** | Enables editing languages from the list of languages supported by Office.  |
+|Primary Editing Language  |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  |
    
 > [!IMPORTANT]
 > Before you can configure Office 2016 policy settings, you must download and install the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
@@ -350,11 +350,11 @@ The following table shows **OptionState** attributes, values, and descriptions.
 
 |**Attribute**|**Value**|**Description**|
 |:-----|:-----|:-----|
-|**Id** <br/> | _optionID_ <br/> |An item that the user can choose to install. See [Proofing Tools Config.xml OptionState ID values](language-identifiers-optionstate-id-values.md#BKMK_OptionStateID).  <br/> |
-|**State** <br/> |**Absent** <br/> |The feature isn't installed.  <br/> The default value is Local.  <br/> |
-||**Advertise** <br/> |The feature is installed the first time that it's used.  <br/> |
-||**Local** <br/> |The feature is installed on the user's computer.  <br/> |
-|**Children** <br/> |**force** <br/> |All child features of the feature are set to the specified state.  <br/> |
+|**Id** | _optionID_ |An item that the user can choose to install. See [Proofing Tools Config.xml OptionState ID values](language-identifiers-optionstate-id-values.md#BKMK_OptionStateID).  |
+|**State** |**Absent** |The feature isn't installed.  <br/> The default value is Local.  |
+||**Advertise** |The feature is installed the first time that it's used.  |
+||**Local** |The feature is installed on the user's computer.  |
+|**Children** |**force** |All child features of the feature are set to the specified state.  |
    
 #### Example: Config.xml file for Office proofing tools
 
