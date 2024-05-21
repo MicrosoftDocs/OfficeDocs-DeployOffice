@@ -25,15 +25,15 @@ The Administrative Template for Office imported into Intune is the same as the o
 
 Here are some of the update settings that you can configure by using the Office Deployment Tool or Group Policy(in on-premises or Intune).
   
-|**Update setting**|**Office Deployment Tool setting**|**Group Policy setting(on-premises or Intune)**|
+| Update setting | Office Deployment Tool setting | Group Policy setting(on-premises or Intune) |
 |:-----|:-----|:-----|
-|Set updates to occur automatically  <br/> |Enabled  <br/> |Enable automatic updates  <br/> |
-|Specify a location to look for updates  <br/> |UpdatePath  <br/> |Update path  <br/> |
-|Specify the version of Microsoft 365 Apps to update to  <br/> |TargetVersion  <br/> |Target version  <br/> |
-|Set a deadline by when updates have to be applied  <br/> |Deadline  <br/> |Update deadline  <br/> |
-|Hide update notifications from users  <br/> |You can't configure this setting by using the Office Deployment Tool.  <br/> |Hide update notifications  <br/> |
-|Hide the option to enable or disable Office automatic updates  <br/> |You can't configure this setting by using the Office Deployment Tool.  <br/> |Hide options to enable or disable updates  <br/> |
-|Set deferral periods for Office automatic updates <br/> |You can't configure this setting by using the Office Deployment Tool. <br/> |Delay downloading and installing updates for Office <br/> |
+|Set updates to occur automatically  |Enabled  |Enable automatic updates  |
+|Specify a location to look for updates  |UpdatePath  |Update path  |
+|Specify the version of Microsoft 365 Apps to update to  |TargetVersion  |Target version  |
+|Set a deadline by when updates have to be applied  |Deadline  |Update deadline  |
+|Hide update notifications from users  |You can't configure this setting by using the Office Deployment Tool.  |Hide update notifications  |
+|Hide the option to enable or disable Office automatic updates  |You can't configure this setting by using the Office Deployment Tool.  |Hide options to enable or disable updates  |
+|Set deferral periods for Office automatic updates |You can't configure this setting by using the Office Deployment Tool. |Delay downloading and installing updates for Office |
    
 By default, updates for Microsoft 365 Apps are downloaded automatically from the internet and applied in the background, without any user or administrator intervention. You can use these update settings to change that behavior and make other changes about how Microsoft 365 Apps is updated.
   
@@ -63,7 +63,7 @@ If you have Windows Server and Active Directory Domain Services (AD DS) deployed
 
 After you copy the Administrative Template files to AD DS, find the update policy settings under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Updates in the Group Policy Management Console. You'll also find a description of how to configure each policy setting.
 
-:::image type="content" source="/DeployOffice/updates/media/configure-update-settings-microsoft-365-apps/group_policy_office_updates_small.jpg" alt-text="Screenshot of Group Policy settings for managing Office updates, showing various options with 'Hide option to enable or disable updates' enabled." lightbox="/DeployOffice/updates/media/configure-update-settings-microsoft-365-apps/group_policy_office_updates.jpg":::
+:::image type="content" source="media/configure-update-settings-microsoft-365-apps/group-policy-office-updates-small.jpg" alt-text="Screenshot of Group Policy settings for managing Office updates, showing various options with 'Hide option to enable or disable updates' enabled." lightbox="media/configure-update-settings-microsoft-365-apps/group-policy-office-updates.jpg":::
   
 If you decide to make a change later, update the Group Policy setting by using the Group Policy Management Console. The updated policy settings are automatically applied to Microsoft 365 Apps, through the normal Group Policy update process.
   

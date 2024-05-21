@@ -42,7 +42,9 @@ To prevent Microsoft 365 Apps from trying to automatically activate during the i
 When you set **Level** to **None**, you don't see any user interface elements during the installation. You won't see anything that shows the progress of the installation and you won't see any error messages.
   
 > [!IMPORTANT]
-> Don't sign in to the Office 365 portal to install Microsoft 365 Apps from the **software** page. If you do, activation occurs automatically.<br/><br/> Also, don't save the setup file from the Office 365 portal to the test computer. Even if you run the setup file, which will have a file name similar to Setup.X86.en-us_O365ProPlusRetail_d079c594-698d-4370-9174-7c00f76abf00_TX_PR_.exe, from the test computer, activation occurs automatically. 
+> Don't sign in to the Office 365 portal to install Microsoft 365 Apps from the **software** page. If you do, activation occurs automatically.
+>
+> Also, don't save the setup file from the Office 365 portal to the test computer. Even if you run the setup file, which will have a file name similar to Setup.X86.en-us_O365ProPlusRetail_d079c594-698d-4370-9174-7c00f76abf00_TX_PR_.exe, from the test computer, activation occurs automatically. 
   
 After the installation is complete, don't open any Office programs. If you open an Office program, you're prompted to sign-in and activate. Even if you don't sign in and you close the **Activate Office** dialog box, a temporary product key is installed. You don't want any kind of Microsoft 365 Apps product key installed in your operating system image.
   
@@ -80,7 +82,7 @@ After you test your operating system image, you can deploy it to your users. The
   
 Users are prompted to activate Microsoft 365 Apps when they open their first Office program, as seen in the following screenshot.
   
-:::image type="content" source="/DeployOffice/media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
+:::image type="content" source="media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
 
   
 As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.
