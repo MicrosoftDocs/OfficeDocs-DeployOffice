@@ -3,7 +3,7 @@ title: "Opt in to the Microsoft Places Public Preview Program"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/15/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -31,6 +31,7 @@ Beginning today, organizations with a qualifying Microsoft 365 plan have access 
 > To learn how to enable and configure these features for your organization, review the onboarding guide [here](/deployoffice/places/deployment-guide-for-places).
 
 This guide takes you through the following steps:
+
 - Getting the latest version of Outlook to support Places
 - Enabling the web app experience for your users
 - Accessing the Teams Preview environment for Places Features
