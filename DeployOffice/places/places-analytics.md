@@ -20,10 +20,10 @@ You can improve workplace efficiency by comparing planned versus actual attendan
 
 Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. To identify opportunities for optimization, you can get metrics at both the floor level and specific room and shared desk-space level. To understand user-behavior patterns, you can compare projected use with actual use across different space types. You can use this data to refine your hybrid work scheduling and change-management policies.
 
+## Prerequisites
+
 > [!NOTE]
 > Places Analytics is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
-
-## Prerequisites
 
 - You must first convert your floor plans for indoor mapping in Microsoft Places using the Azure Maps Creator tool. For more information, see [Azure Maps Creator Guide for Microsoft Places](azure-maps-creator-guide.md).
 
