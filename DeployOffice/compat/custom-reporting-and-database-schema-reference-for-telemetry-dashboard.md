@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Describes how to create custom reports in Office Telemetry Dashboard, shows sample reports, and lists the tables and fields in the database."
-ms.date: 03/01/2023
+ms.date: 05/20/2024
 ---
 
 # Custom reporting and database schema reference for Office Telemetry Dashboard
@@ -38,7 +38,7 @@ For example, the following screenshot shows a custom report that lists the unreg
   
 **Custom report that shows unregistered ActiveX solutions**
 
-![Illustrates a custom report that shows unregistered ActiveX controls.](../images/ORK_CustomReport_ActiveXreport.GIF)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-customreport-activexreport.png" alt-text="Custom report table listing users, departments, and event ID counts for an ActiveX control issue.":::
   
 > [!IMPORTANT]
 > To use labels in custom reports, you have to configure them when you deploy the agents. If you haven't already done this, we recommend that you carefully plan labels that support the types of custom reporting that you'll do. For example, setting labels to identify business groups, locations, and job roles can help you find trends and issues for specific groups or types of users. [Enabling and configuring the agent](deploy-telemetry-dashboard.md#configure) will help you configure labels (known as **tags** in the Group Policy settings and registry settings for the agent). 
@@ -47,13 +47,13 @@ As another example, the following screenshot shows the list of Office client com
   
 **The Deployments worksheet**
 
-![Shows the Office deployments that are tracked by Office Telemetry Dashboard in the Deployments worksheet.](../images/ORK_CR_OfficeDeployments.GIF)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-officedeployments.png" alt-text="Table showing Office deployments with counts for 32-bit, 64-bit, and ARM versions.":::
   
 You can get a more detailed view of Office clients by using a custom report. In the following illustration, the Office clients are grouped by business groups (as configured for Label 2) so that you can see the breakdown of Office deployments across each group. You can also create a PivotChart to help show the data. This custom report uses a hidden table, System_details, that you have to manually add before you can add Office versions to your report. You can learn how to do this in [Hidden tables in Office Telemetry Dashboard custom reports](custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md#hidden_tables).
   
 **Custom report showing Office deployments by business group**
 
-![Displays an example of a custom report that shows Office deployments by business group.](../images/ORK_CR_OfficeCustomReport.png)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-officecustomreport.png" alt-text="Custom report table and bar chart showing the count of Office installations by department and version.":::
   
 <a name="Create_customreport"> </a>
 
@@ -73,17 +73,17 @@ If you use large data sets in your custom reports, you might encounter the [2-GB
   
 - Use the 64-bit version of Excel, which doesn't have the 2-GB memory limitation, but does have other drawbacks. See [Choose between the 64-bit or 32-bit version of Office](https://go.microsoft.com/fwlink/p/?LinkId=250955) to learn more. 
     
-- Adjust the reporting threshold in the database to change how much data is pulled into PowerPivot when custom reports are created, You can learn more about this setting in [How to configure privacy and performance settings in Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
+- Change the reporting threshold in the database to control the amount of data pulled into PowerPivot for custom reports. Learn more about this setting in [How to configure privacy and performance settings in Office Telemetry Dashboard](manage-the-privacy-of-data-monitored-by-telemetry-in-office.md#Configure).
     
 To create a custom report, you have to first start Office Telemetry Dashboard. The following table describes how to start the dashboard in different versions of Windows.
   
 **To start Office Telemetry Dashboard**
 
-|**If you have this operating system**|**Follow these steps to start Office Telemetry Dashboard**|
+| If you have this operating system | Follow these steps to start Office Telemetry Dashboard |
 |:-----|:-----|
-|Windows 10, Windows 7, or Windows Server 2008 R2  <br/> |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  <br/> |
-|Windows 8.1  <br/> |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  <br/> |
-|Windows Server 2012 or Windows Server 2012 R2  <br/> |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  <br/> |
+|Windows 10, Windows 7, or Windows Server 2008 R2  |From the **Start** menu, choose **All Programs**, then **Microsoft Office 2016 Tools**, then **Telemetry Dashboard for Office 2016**.  |
+|Windows 8.1  |On the **Start** screen, type **Telemetry Dashboard**, and then choose it from the search results.  |
+|Windows Server 2012 or Windows Server 2012 R2  |Swipe in from the right edge to show the charm bar, and then choose **Search** to see all the apps that are installed on the computer. Next, choose **Telemetry Dashboard for Office 2016**.  |
 
 For Office 2019, look for **Telemetry Dashboard for Office** under **Microsoft Office Tools**.
 
@@ -110,7 +110,7 @@ To create a custom report that shows solution stability, do the following:
 2. After the Solution name field is added to the custom report, use the filter button (next to the Solution name) to choose the solution. 
 3. From the Inventory table, drag Solution version to the ROWS well. 
 
-![Illustrates a custom report that shows solution stability. The report includes the solution name, the versions of the solution, and the number of events for each version.](../images/ORK_CR_Solutionstability.PNG)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-solutionstability.png" alt-text="PivotTable showing solution versions and the count of event IDs for a specific solution.":::
 
 To create a custom report that shows Excel warnings, do the following: 
 1. From the Lookup_issue_definitions table, drag Severity to the FILTERS well. 
@@ -118,7 +118,7 @@ To create a custom report that shows Excel warnings, do the following:
 3. From the Lookup_solutions table, drag Application to the FILTERS well, and then adjust the filter to select Excel. 
 4. From the Lookup_solutions table, drag File name to the ROWS well.
 
-![Illustrates how a custom report shows Excel issues that have the Warning severity. One column shows the file name, and the other column shows the number of Warning events.](../images/ORK_CR_Excelwarnings.PNG)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-excelwarnings.png" alt-text="Excel PivotTable showing the count of event IDs for files with Excel warnings.":::
    
 <a name="default_tables"> </a>
 
@@ -128,131 +128,131 @@ The following tables describe the six tables and their related fields that are s
   
 **Default tables**
 
-|**Table name**|**Description**|
+| Table name | Description |
 |:-----|:-----|
-|Events  <br/> |Contains issue events for the past three months.  <br/> |
-|Inventory  <br/> |Contains unique instance data, such as load time and solution version, about the Office documents and solutions that are monitored.  <br/> |
-|Lookup_computers  <br/> |Contains information about the computers that are monitored. This includes computer name, domain, hardware information, and Windows version.  <br/> |
-|Lookup_issue_definitions  <br/> |Contains information about the issues that were detected, such as issue type, issue title, severity, and explanation.  <br/> |
-|Lookup_solutions  <br/> |Contains information about solutions that were detected, such as solution type, name, and publisher.  <br/> |
-|Lookup_users  <br/> |Contains information about the users who use monitored client computers, such as their user name, domain, and label settings.  <br/> |
+|Events  |Contains issue events for the past three months.  |
+|Inventory  |Contains unique instance data, such as load time and solution version, about the Office documents and solutions that are monitored.  |
+|Lookup_computers  |Contains information about the computers that are monitored. This includes computer name, domain, hardware information, and Windows version.  |
+|Lookup_issue_definitions  |Contains information about the issues that were detected, such as issue type, issue title, severity, and explanation.  |
+|Lookup_solutions  |Contains information about solutions that were detected, such as solution type, name, and publisher.  |
+|Lookup_users  |Contains information about the users who use monitored client computers, such as their user name, domain, and label settings.  |
    
 The following table lists the fields in the **Events** table. 
   
 **Fields in the Events table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Event ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Issue ID  <br/> |Number  <br/> | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](/office/client-developer/shared/compatibility-issues-in-office) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) (see Table 2)  <br/> |
-|Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table.  <br/> |
-|Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
-|User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table.  <br/> |
-|Computer ID  <br/> |Number  <br/> |Connects to the **Lookup_computers** table.  <br/> |
-|Event date  <br/> |Date/time  <br/> |Shows the date and time of the event.  <br/> |
-|Application version (detail)  <br/> |String  <br/> |Shows the version of the Office application that triggered the event.  <br/> |
+|Event ID  |Number  |The primary key for this table.  |
+|Issue ID  |Number  | Connects to the **Lookup_issue_definitions** table.  <br/> <br/> You can view these definitions in the following articles:  <br/><br/> - [Compatibility issues in Office](/office/client-developer/shared/compatibility-issues-in-office) <br/> - [Troubleshooting Office files and custom solutions with the telemetry log](/office/client-developer/shared/troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log) (see Table 2)  |
+|Inventory ID  |String  |Connects to the **Inventory** table.  |
+|Solution ID  |Number  |Connects to the **Lookup_solutions** table.  |
+|User ID  |Number  |Connects to the **Lookup_users** table.  |
+|Computer ID  |Number  |Connects to the **Lookup_computers** table.  |
+|Event date  |Date/time  |Shows the date and time of the event.  |
+|Application version (detail)  |String  |Shows the version of the Office application that triggered the event.  |
    
 The following table lists the fields in the **Inventory** table. 
   
 **Fields in the Inventory table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Inventory ID  <br/> |Strings  <br/> |The primary key for this table.  <br/> |
-|Solution ID  <br/> |Numbers  <br/> |Connects to the **Lookup_solutions** table.  <br/> |
-|User ID  <br/> |Numbers  <br/> |Connects to the **Lookup_users** table.  <br/> |
-|Computer ID  <br/> |Numbers  <br/> |Connects to the **Lookup_computers** table.  <br/> |
-|Friendly name  <br/> |Strings  <br/> |Shows the friendly name of the solution.  <br/> |
-|Location  <br/> |Strings  <br/> |Shows the file location of the file.  <br/> |
-|Load time (seconds)  <br/> |Numbers  <br/> |Shows the load time of the solution in seconds.  <br/> |
-|Title  <br/> |Strings  <br/> |Shows the title of the document.  <br/> |
-|Author  <br/> |Strings  <br/> |Shows the author of the document.  <br/> |
-|CPU architecture  <br/> |Strings  <br/> |Shows the CPU architecture.  <br/> |
-|Solution version  <br/> |Strings  <br/> |Shows the solution version.  <br/> |
-|Load behavior  <br/> |Numbers  <br/> |Shows the load behavior of the COM add-ins as follows: <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, and then load on demand (Loaded)  <br/> |
-|File size (bytes)  <br/> |Numbers  <br/> |Shows the file size in bytes.  <br/> |
-|Has VBA  <br/> |Boolean  <br/> |Shows 1 if the document has VBA.  <br/> |
-|Has OLE  <br/> |Boolean  <br/> |Shows 1 if the document has OLE objects.  <br/> |
-|Has external data connection  <br/> |Boolean  <br/> |Shows 1 if the document has an external data connection.  <br/> |
-|Has ActiveX control  <br/> |Boolean  <br/> |Shows 1 if the document has an ActiveX control.  <br/> |
-|Has assembly reference  <br/> |Boolean  <br/> |Shows 1 if the document has an assembly reference.  <br/> |
-|Has XML schema  <br/> |Boolean  <br/> |Shows 1 if the document has an XML schema.  <br/> |
-|Has XML expansion pack  <br/> |Boolean  <br/> |Shows 1 if the document has an XML expansion pack.  <br/> |
-|Last loaded  <br/> |Date/time  <br/> |Shows the last date and time that the solution was loaded.  <br/> |
-|Last scanned  <br/> |Date/time  <br/> |Shows the last date and time that the computer was scanned by the agent.  <br/> |
+|Inventory ID  |Strings  |The primary key for this table.  |
+|Solution ID  |Numbers  |Connects to the **Lookup_solutions** table.  |
+|User ID  |Numbers  |Connects to the **Lookup_users** table.  |
+|Computer ID  |Numbers  |Connects to the **Lookup_computers** table.  |
+|Friendly name  |Strings  |Shows the friendly name of the solution.  |
+|Location  |Strings  |Shows the file location of the file.  |
+|Load time (seconds)  |Numbers  |Shows the load time of the solution in seconds.  |
+|Title  |Strings  |Shows the title of the document.  |
+|Author  |Strings  |Shows the author of the document.  |
+|CPU architecture  |Strings  |Shows the CPU architecture.  |
+|Solution version  |Strings  |Shows the solution version.  |
+|Load behavior  |Numbers  |Shows the load behavior of the COM add-ins as follows: <br/> <br/> **0** - Do not load automatically (Unloaded)  <br/> **1** - Do not load automatically (Loaded)  <br/> **2** - Load at startup (Unloaded)  <br/> **3** - Load at startup (Loaded)  <br/> **8** - Load on demand (Unloaded)  <br/> **9** - Load on demand (Loaded)  <br/> **16** - Load first time, and then load on demand (Loaded)  |
+|File size (bytes)  |Numbers  |Shows the file size in bytes.  |
+|Has VBA  |Boolean  |Shows 1 if the document has VBA.  |
+|Has OLE  |Boolean  |Shows 1 if the document has OLE objects.  |
+|Has external data connection  |Boolean  |Shows 1 if the document has an external data connection.  |
+|Has ActiveX control  |Boolean  |Shows 1 if the document has an ActiveX control.  |
+|Has assembly reference  |Boolean  |Shows 1 if the document has an assembly reference.  |
+|Has XML schema  |Boolean  |Shows 1 if the document has an XML schema.  |
+|Has XML expansion pack  |Boolean  |Shows 1 if the document has an XML expansion pack.  |
+|Last loaded  |Date/time  |Shows the last date and time that the solution was loaded.  |
+|Last scanned  |Date/time  |Shows the last date and time that the computer was scanned by the agent.  |
    
 The following table shows the fields in the **Lookup_computers** table. 
   
 **Fields in the Lookup_computers table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Computer ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Computer name  <br/> |String  <br/> |Shows the computer name.  <br/> |
-|Computer domain  <br/> |String  <br/> |Shows the domain name that is registered for this computer.  <br/> |
-|Telemetry Agent version  <br/> |String  <br/> |Shows the agent version that uploads the data to the database.  <br/> |
-|Computer processor name  <br/> |String  <br/> |Shows the processor name of the computer.  <br/> |
-|Number of processors (logical)  <br/> |Number  <br/> |Shows the number of logical processors in the computer.  <br/> |
-|Number of processors (physical)  <br/> |Number  <br/> |Shows the number of physical processors in the computer.  <br/> |
-|System type  <br/> |String  <br/> |Shows the architecture type (32-bit or 64-bit) of the computer.  <br/> |
-|Computer installed memory  <br/> |Number  <br/> |Shows amount of memory (in megabytes) that is installed in this computer.  <br/> |
-|Display resolution  <br/> |String  <br/> |Shows this computer's screen resolution (for example, 1280 x 780).  <br/> |
-|Display resolution (width)  <br/> |Number  <br/> |Shows the screen resolution width.  <br/> |
-|Display resolution (height)  <br/> |Number  <br/> |Shows the screen resolution height.  <br/> |
-|Windows version  <br/> |String  <br/> |Shows the Windows version of the computer.  <br/> |
-|Windows version (detail)  <br/> |String  <br/> |Shows Windows version in detail.  <br/> |
-|Windows system locale  <br/> |String  <br/> |Shows the system locale setting for Windows.  <br/> |
-|Windows system display language  <br/> |String  <br/> |Shows system display language for Windows.  <br/> |
-|IE version  <br/> |String  <br/> |Shows the Internet Explorer version.  <br/> |
-|IE version (detail)  <br/> |String  <br/> |Shows the Internet Explorer version in detail.  <br/> |
+|Computer ID  |Number  |The primary key for this table.  |
+|Computer name  |String  |Shows the computer name.  |
+|Computer domain  |String  |Shows the domain name that is registered for this computer.  |
+|Telemetry Agent version  |String  |Shows the agent version that uploads the data to the database.  |
+|Computer processor name  |String  |Shows the processor name of the computer.  |
+|Number of processors (logical)  |Number  |Shows the number of logical processors in the computer.  |
+|Number of processors (physical)  |Number  |Shows the number of physical processors in the computer.  |
+|System type  |String  |Shows the architecture type (32-bit or 64-bit) of the computer.  |
+|Computer installed memory  |Number  |Shows amount of memory (in megabytes) that is installed in this computer.  |
+|Display resolution  |String  |Shows this computer's screen resolution (for example, 1280 x 780).  |
+|Display resolution (width)  |Number  |Shows the screen resolution width.  |
+|Display resolution (height)  |Number  |Shows the screen resolution height.  |
+|Windows version  |String  |Shows the Windows version of the computer.  |
+|Windows version (detail)  |String  |Shows Windows version in detail.  |
+|Windows system locale  |String  |Shows the system locale setting for Windows.  |
+|Windows system display language  |String  |Shows system display language for Windows.  |
+|IE version  |String  |Shows the Internet Explorer version.  |
+|IE version (detail)  |String  |Shows the Internet Explorer version in detail.  |
    
 The following table shows the fields in the **Lookup_solutions** table. 
   
 **Fields in the Lookup_solutions table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Solution ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Solution type  <br/> |String  <br/> |Shows the solution or document type.  <br/> |
-|Application  <br/> |String  <br/> |Shows the application that used this solution or document.  <br/> |
-|Solution name  <br/> |String  <br/> |Shows the solution name.  <br/> |
-|File name  <br/> |String  <br/> |Shows the solution or document file name.  <br/> |
-|ProgID  <br/> |String  <br/> |Shows the solution ProgID.  <br/> |
-|Publisher  <br/> |String  <br/> |Shows the solution or document publisher name.  <br/> |
+|Solution ID  |Number  |The primary key for this table.  |
+|Solution type  |String  |Shows the solution or document type.  |
+|Application  |String  |Shows the application that used this solution or document.  |
+|Solution name  |String  |Shows the solution name.  |
+|File name  |String  |Shows the solution or document file name.  |
+|ProgID  |String  |Shows the solution ProgID.  |
+|Publisher  |String  |Shows the solution or document publisher name.  |
    
 The following table shows the fields in the **Lookup_users** table. 
   
 **Fields in the Lookup_users table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|User ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|User name  <br/> |String  <br/> |Shows the user name.  <br/> |
-|User domain  <br/> |String  <br/> |Shows the domain name for this user.  <br/> |
-|Label 1  <br/> |String  <br/> |Shows the Label 1 setting.  <br/> |
-|Label 2  <br/> |String  <br/> |Shows the Label 2 setting.  <br/> |
-|Label 3  <br/> |String  <br/> |Shows the Label 3 setting.  <br/> |
-|Label 4  <br/> |String  <br/> |Shows the Label 4 setting.  <br/> |
+|User ID  |Number  |The primary key for this table.  |
+|User name  |String  |Shows the user name.  |
+|User domain  |String  |Shows the domain name for this user.  |
+|Label 1  |String  |Shows the Label 1 setting.  |
+|Label 2  |String  |Shows the Label 2 setting.  |
+|Label 3  |String  |Shows the Label 3 setting.  |
+|Label 4  |String  |Shows the Label 4 setting.  |
    
 The following table shows the fields in the **Lookup_issue_definitions** table. 
   
 **Fields in the Lookup_issue_definitions table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Issue ID  <br/> |Number  <br/> |The primary key for this table.  <br/> |
-|Severity  <br/> |String  <br/> |Shows the severity of issue.  <br/> |
-|Issue type  <br/> |String  <br/> |Shows the issue type.  <br/> |
-|Issue title  <br/> |String  <br/> |Shows the issue title.  <br/> |
-|Explanation  <br/> |String  <br/> |Shows the issue explanation.  <br/> |
-|More info  <br/> |String  <br/> |Shows the URL where you can get more information.  <br/> |
+|Issue ID  |Number  |The primary key for this table.  |
+|Severity  |String  |Shows the severity of issue.  |
+|Issue type  |String  |Shows the issue type.  |
+|Issue title  |String  |Shows the issue title.  |
+|Explanation  |String  |Shows the issue explanation.  |
+|More info  |String  |Shows the URL where you can get more information.  |
    
 <a name="hidden_tables"> </a>
 
 ## Hidden tables in Office Telemetry Dashboard custom reports
 
 
-Not all tables are loaded when you create a custom report. If you want to access additional data for your custom report, you can load the **Usage_summary**, **Issue_summary**, and **System_details** tables. Follow these steps to add these hidden tables to Office Telemetry Dashboard. 
+Not all tables are loaded when you create a custom report. If you want to access more data for your custom report, you can load the **Usage_summary**, **Issue_summary**, and **System_details** tables. Follow these steps to add these hidden tables to Office Telemetry Dashboard. 
   
 ### To add hidden tables to Office Telemetry Dashboard
 
@@ -264,7 +264,7 @@ Not all tables are loaded when you create a custom report. If you want to access
     
 4. In the **Workbook Connections for Custom report** dialog box, select **Telemetry Dashboard - Custom report**, select **Properties**, and then select the **Definition** tab. 
     
-5. In the **Command text** box, add the following additional text (do not delete or overwrite the existing text): ,"Usage_summary", "Issue_summary", "System_details"
+5. In the **Command text** box, add the following text (don't delete or overwrite the existing text): ,"Usage_summary", "Issue_summary", "System_details"
     
 6. Choose **OK**, and on each dialog box, select **Close**.
     
@@ -276,83 +276,83 @@ The following tables list the hidden tables that you have to manually add to Off
   
 **Hidden tables in Office Telemetry Dashboard custom reports**
 
-|**Table name**|**Comments**|
+| Table name | Comments |
 |:-----|:-----|
-|Usage_summary  <br/> | Shows data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
-|Issue_summary  <br/> | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_issue_definitions** <br/> - **Lookup_solutions** <br/> - **Lookup_users** <br/> |
-|System_details  <br/> |Shows user and computer information.  <br/> |
+|Usage_summary  | Shows data for seven days, one month, and three months. You can use this table to create a relationship to the following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_solutions** <br/> - **Lookup_users** |
+|Issue_summary  | Shows the issues that have occurred in the last seven days, one month, and three months. You can use this table to create a relationship to following tables to see more details: <br/> <br/> - **Inventory** <br/> - **Lookup_computers** <br/> - **Lookup_issue_definitions** <br/> - **Lookup_solutions** <br/> - **Lookup_users** |
+|System_details  |Shows user and computer information.  |
    
 The following table describes the fields in the Usage_summary table.
   
 **Fields in the Usage_summary table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table to gain access to more details in the PivotTable report.  <br/> |
-|Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table to obtain more details in PivotTable report if there is no relationship between the **Inventory** and **Lookup_solutions** tables.  <br/> |
-|User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table to obtain more details in the PivotTable report if there is no relationship between the **Inventory** and **Lookup_users** tables.  <br/> |
-|Computer ID  <br/> |Number  <br/> |Connects to the **Lookup_computers** table to obtain more details in PivotTable report if there is no relationship between the **Inventory** and **Lookup_computers** tables.  <br/> |
-|Total session (last 7 days)  <br/> |Number  <br/> |Shows the total number of sessions in the last seven days.  <br/> |
-|Total session (last 1 month)  <br/> |Number  <br/> |Shows the total number of sessions in the last one month.  <br/> |
-|Total session (last 3 months)  <br/> |Number  <br/> |Shows the total number of sessions in the last three months.  <br/> |
-|Failed session (last 7 days)  <br/> |Number  <br/> |Shows the total number of sessions that had an issue in last the seven days.  <br/> |
-|Failed session (last 1 month)  <br/> |Number  <br/> |Shows the total number of sessions that had an issue in the last one month.  <br/> |
-|Failed session (last 3 months)  <br/> |Number  <br/> |Shows the total number of sessions that had an issue in the last three months.  <br/> |
+|Inventory ID  |String  |Connects to the **Inventory** table to gain access to more details in the PivotTable report.  |
+|Solution ID  |Number  |Connects to the **Lookup_solutions** table to obtain more details in PivotTable report if there's no relationship between the **Inventory** and **Lookup_solutions** tables.  |
+|User ID  |Number  |Connects to the **Lookup_users** table to obtain more details in the PivotTable report if there's no relationship between the **Inventory** and **Lookup_users** tables.  |
+|Computer ID  |Number  |Connects to the **Lookup_computers** table to obtain more details in PivotTable report if there's no relationship between the **Inventory** and **Lookup_computers** tables.  |
+|Total session (last seven days)  |Number  |Shows the total number of sessions in the last seven days.  |
+|Total session (last one month)  |Number  |Shows the total number of sessions in the last one month.  |
+|Total session (last three months)  |Number  |Shows the total number of sessions in the last three months.  |
+|Failed session (last seven days)  |Number  |Shows the total number of sessions that had an issue in last the seven days.  |
+|Failed session (last one month)  |Number  |Shows the total number of sessions that had an issue in the last one month.  |
+|Failed session (last three months)  |Number  |Shows the total number of sessions that had an issue in the last three months.  |
    
 The following table describes the fields in the Issue_summary table.
   
 **Fields in the Issue_summary table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Issue ID  <br/> |Number  <br/> |Connects to the **Lookup_issue_definitions** table to obtain more details in the PivotTable report.  <br/> |
-|Inventory ID  <br/> |String  <br/> |Connects to the **Inventory** table to obtain more details in the PivotTable report.  <br/> |
-|Solution ID  <br/> |Number  <br/> |Connects to the **Lookup_solutions** table to obtain more details in the PivotTable report if there is no relationship between the **Inventory** and **Lookup_solutions** tables.  <br/> |
-|User ID  <br/> |Number  <br/> |Connects to the **Lookup_users** table to obtain more details in the PivotTable report if there is no relationship between the **Inventory** and **Lookup_users** tables.  <br/> |
-|Computer ID  <br/> |Number  <br/> |Connects to the **Lookup_computers** table to obtain more details in the PivotTable report if there is no relationship between the **Inventory** and **Lookup_computers** tables.  <br/> |
-|Number of instances (last 7 days)  <br/> |Number  <br/> |Shows the number of issue events in the last seven days.  <br/> |
-|Number of instances (last 1 month)  <br/> |Number  <br/> |Shows the number of issue events in the last one month.  <br/> |
-|Number of instances (last 3 months)  <br/> |Number  <br/> |Shows the number of issue events in the last three months.  <br/> |
+|Issue ID  |Number  |Connects to the **Lookup_issue_definitions** table to obtain more details in the PivotTable report.  |
+|Inventory ID  |String  |Connects to the **Inventory** table to obtain more details in the PivotTable report.  |
+|Solution ID  |Number  |Connects to the **Lookup_solutions** table to obtain more details in the PivotTable report if there's no relationship between the **Inventory** and **Lookup_solutions** tables.  |
+|User ID  |Number  |Connects to the **Lookup_users** table to obtain more details in the PivotTable report if there's no relationship between the **Inventory** and **Lookup_users** tables.  |
+|Computer ID  |Number  |Connects to the **Lookup_computers** table to obtain more details in the PivotTable report if there's no relationship between the **Inventory** and **Lookup_computers** tables.  |
+|Number of instances (last seven days)  |Number  |Shows the number of issue events in the last seven days.  |
+|Number of instances (last one month)  |Number  |Shows the number of issue events in the last one month.  |
+|Number of instances (last three months)  |Number  |Shows the number of issue events in the last three months.  |
    
 The following table describes the fields in the System_details table.
   
 **Fields in the System_details table**
 
-|**Field name**|**Type**|**Description**|
+| Field name | Type | Description |
 |:-----|:-----|:-----|
-|Computer name  <br/> |String  <br/> |Shows the computer name.  <br/> |
-|Computer domain  <br/> |String  <br/> |Shows the domain name that is registered for this computer.  <br/> |
-|User name  <br/> |String  <br/> |Shows the user name.  <br/> |
-|User domain  <br/> |String  <br/> |Shows the domain name for this user.  <br/> |
-|Label 1  <br/> |String  <br/> |Shows the Label 1 setting.  <br/> |
-|Label 2  <br/> |String  <br/> |Shows the Label 2 setting.  <br/> |
-|Label 3  <br/> |String  <br/> |Shows the Label 3 setting.  <br/> |
-|Label 4  <br/> |String  <br/> |Shows the Label 4 setting.  <br/> |
-|Telemetry Agent version  <br/> |String  <br/> |Shows the version of agent that collected this data.  <br/> |
-|Telemetry Processor (file share)  <br/> |String  <br/> |Shows the file share for the processor that uploaded data to the database.  <br/> |
-|Telemetry Processor (computer)  <br/> |String  <br/> |Shows the computer name for the processor that uploaded data to the database.  <br/> |
-|Computer processor name  <br/> |String  <br/> |Shows the processor name of the computer.  <br/> |
-|Number of processors (logical)  <br/> |Number  <br/> |Shows the number of logical processors in the computer.  <br/> |
-|Number of processors (physical)  <br/> |Number  <br/> |Shows the number of physical processors in the computer.  <br/> |
-|System type  <br/> |String  <br/> |Shows the system type of the computer.  <br/> |
-|Computer installed memory  <br/> |Number  <br/> |Shows amount of memory (in megabytes) that is installed in this computer.  <br/> |
-|Display resolution  <br/> |String  <br/> |Shows this computer's screen resolution (for example, 1280 x 780).  <br/> |
-|Display resolution (width)  <br/> |Number  <br/> |Shows the screen resolution width.  <br/> |
-|Display resolution (height)  <br/> |Number  <br/> |Shows the screen resolution height.  <br/> |
-|Windows version  <br/> |String  <br/> |Shows the Windows version of the computer.  <br/> |
-|Windows version (detail)  <br/> |String  <br/> |Shows Windows version details.  <br/> |
-|Windows system locale  <br/> |String  <br/> |Shows the system locale setting for Windows.  <br/> |
-|Windows system display language  <br/> |String  <br/> |Shows the system display language setting for Windows.  <br/> |
-|IE version  <br/> |String  <br/> |Shows the Internet Explorer version.  <br/> |
-|IE version (details)  <br/> |String  <br/> |Shows the Internet Explorer version in detail.  <br/> |
-|Windows system local (user)  <br/> |String  <br/> |Shows the Windows system local setting (user setting).  <br/> |
-|Windows display language (user)  <br/> |String  <br/> |Shows the Windows system display language (user setting).  <br/> |
-|Last scanned  <br/> |Date/time  <br/> |Shows the agent scanned date/time.  <br/> |
-|Office 2003  <br/> |String  <br/> |Shows Office 2003 version details, if it is installed.  <br/> |
-|Office 2007  <br/> |String  <br/> |Shows Office 2007 version details, if it is installed.  <br/> |
-|Office 2010  <br/> |String  <br/> |Shows Office 2010 version details, if it is installed.  <br/> |
-|Office 15  <br/> |String  <br/> |Shows Office 2013 version details, if it is installed.  <br/> |
-|Office 16  <br/> |String  <br/> |Shows Office 2019 or Office 2016 version details, if it is installed.  <br/> |
+|Computer name  |String  |Shows the computer name.  |
+|Computer domain  |String  |Shows the domain name that is registered for this computer.  |
+|User name  |String  |Shows the user name.  |
+|User domain  |String  |Shows the domain name for this user.  |
+|Label 1  |String  |Shows the Label 1 setting.  |
+|Label 2  |String  |Shows the Label 2 setting.  |
+|Label 3  |String  |Shows the Label 3 setting.  |
+|Label 4  |String  |Shows the Label 4 setting.  |
+|Telemetry Agent version  |String  |Shows the version of agent that collected this data.  |
+|Telemetry Processor (file share)  |String  |Shows the file share for the processor that uploaded data to the database.  |
+|Telemetry Processor (computer)  |String  |Shows the computer name for the processor that uploaded data to the database.  |
+|Computer processor name  |String  |Shows the processor name of the computer.  |
+|Number of processors (logical)  |Number  |Shows the number of logical processors in the computer.  |
+|Number of processors (physical)  |Number  |Shows the number of physical processors in the computer.  |
+|System type  |String  |Shows the system type of the computer.  |
+|Computer installed memory  |Number  |Shows amount of memory (in megabytes) that is installed in this computer.  |
+|Display resolution  |String  |Shows this computer's screen resolution (for example, 1280 x 780).  |
+|Display resolution (width)  |Number  |Shows the screen resolution width.  |
+|Display resolution (height)  |Number  |Shows the screen resolution height.  |
+|Windows version  |String  |Shows the Windows version of the computer.  |
+|Windows version (detail)  |String  |Shows Windows version details.  |
+|Windows system locale  |String  |Shows the system locale setting for Windows.  |
+|Windows system display language  |String  |Shows the system display language setting for Windows.  |
+|IE version  |String  |Shows the Internet Explorer version.  |
+|IE version (details)  |String  |Shows the Internet Explorer version in detail.  |
+|Windows system local (user)  |String  |Shows the Windows system local setting (user setting).  |
+|Windows display language (user)  |String  |Shows the Windows system display language (user setting).  |
+|Last scanned  |Date/time  |Shows the agent scanned date/time.  |
+|Office 2003  |String  |Shows Office 2003 version details, if it's installed.  |
+|Office 2007  |String  |Shows Office 2007 version details, if it's installed.  |
+|Office 2010  |String  |Shows Office 2010 version details, if it's installed.  |
+|Office 15  |String  |Shows Office 2013 version details, if it's installed.  |
+|Office 16  |String  |Shows Office 2019 or Office 2016 version details, if it's installed.  |
    
 <a name="default_relationships"> </a>
 
@@ -362,17 +362,17 @@ The following illustrations show the relationships between tables in the databas
   
 **Default relationships between tables in the database**
 
-![Shows the primary keys and relationships between tables in the database.](../images/ORK_CR_DefaultRelationships.gif)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-defaultrelationships.png" alt-text="Entity relationship diagram showing events, issue definitions, solutions, users, computers, and inventory tables.":::
   
 **The Usage_summary table and its relationships**
 
-![Shows the Usage_Summary table and its relationship to other tables in the database.](../images/ORK_CR_Usage_Summary.gif)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-usage-summary.png" alt-text="Entity relationship diagram with usage summary, inventory, solutions, users, and computers tables.":::
   
 **The Issue_summary table and its relationships**
 
-![Shows the Issue_Summary table and its relationships to other tables in the database.](../images/ORK_CR_Issue_Summary.gif)
+:::image type="content" source="media/custom-reporting-and-database-schema-reference-for-telemetry-dashboard/ork-cr-issue-summary.png" alt-text="Entity relationship diagram with issue summary, inventory, solutions, users, and computers tables.":::
   
-## Related topics
+## Related articles
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)
