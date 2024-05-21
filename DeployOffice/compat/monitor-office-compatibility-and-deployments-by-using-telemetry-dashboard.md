@@ -227,7 +227,7 @@ To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is 
     
    **Message that enables saved copies of Telemetry Dashboard**
 
-    :::image type="content" source="/DeployOffice/compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/saved-copies-telemetry-dashboard" alt-text="A screenshot of the Save Copies Info Message.":::
+    :::image type="content" source="/DeployOffice/compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/saved-copies-telemetry-dashboard.png" alt-text="A screenshot of the Save Copies Info Message.":::
 
   
 4. Reopen the Office Telemetry Dashboard Excel worksheet that had the error message.
@@ -240,7 +240,7 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
   
 **Office Telemetry Processor error message**
 
-:::image type="content" source="/DeployOffice/compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry_processor_error.png" alt-text="Error message indicating two Telemetry Processor services have errors.":::
+:::image type="content" source="/DeployOffice/compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry-processor-error.png" alt-text="Error message indicating two Telemetry Processor services have errors.":::
   
 This error message is displayed when no agents have reported any data to the dashboard, or if the processor hasn't inserted any data to the database for a day.
   
