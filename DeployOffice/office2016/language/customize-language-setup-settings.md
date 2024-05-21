@@ -68,7 +68,7 @@ For Office 2016, you download an ISO image of the language packs, LIPs, and proo
     
     The list of files contains all available language packs, language interface packs, and proofing tools for the language and edition that you specified. For example, for Office Professional Plus 2016, the results look similar to the following figure.
     
-     :::image type="content" source="/DeployOffice/office2016/language/media/customize-language-setup-settings/office_professional_plus_2016_download_small.png" alt-text="Screenshot of the Office Professional Plus 2016 download page, showing special instructions and download settings for various Office installation files.":::
+     :::image type="content" source="media/customize-language-setup-settings/office-professional-plus-2016-download-small.png" alt-text="Screenshot of the Office Professional Plus 2016 download page, showing special instructions and download settings for various Office installation files.":::
   
 6. Select the appropriate package from the list and then, under **Download**, select the down arrow to download the ISO image to your computer or to a shared folder on your network. 
     
@@ -227,12 +227,12 @@ Group Policy settings can enforce default language settings that users in your o
   
 The following policy settings help you manage language settings in Office 2016:
   
-|**Group Policy setting**|**Location**|**Description**|
+| Group Policy setting | Location | Description |
 |:-----|:-----|:-----|
-|Display menus and dialog boxes in  <br/> |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of the user interface.  <br/> |
-|Display help in  <br/> |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** <br/> |Determines the language of online Help. If this policy setting isn't configured, the Help language uses the user interface language.  <br/> |
-|Enabled Editing Languages  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> | Enables editing languages from the list of languages supported by Office.  <br/> |
-|Primary Editing Language  <br/> |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** <br/> |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  <br/> |
+|Display menus and dialog boxes in  |**Display language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of the user interface.  |
+|Display help in  |**Display Language** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language** |Determines the language of online Help. If this policy setting isn't configured, the Help language uses the user interface language.  |
+|Enabled Editing Languages  |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** | Enables editing languages from the list of languages supported by Office.  |
+|Primary Editing Language  |**Editing Languages** folder under **User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Editing Languages** |Specifies the language in which users work with Office applications and documents when more than one language version is available on the computer.  |
    
 > [!IMPORTANT]
 > Before you can configure Office 2016 policy settings, you must download and install the latest [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkId=626001). 
@@ -249,8 +249,8 @@ The following policy settings help you manage language settings in Office 2016:
     
    - The **Enable Language** folder contains policy settings that allow you to choose and configure editing languages. 
     
-     > [!NOTE]
-     > Each policy setting provides a description of what it enforces. 
+   > [!NOTE]
+   > Each policy setting provides a description of what it enforces. 
   
 4. In the details pane, open (double-click) the policy setting that you want to configure, choose either **Enable** or **Disable**, and then specify any appropriate options that are provided.
     
@@ -270,7 +270,7 @@ You use the OCT to create a setup customization file (.msp file) that setup appl
     
 4. Save the setup customization file in the **Updates** folder at the root of the network installation point. 
     
-    Setup applies the file automatically when you install Office on users' computers.
+   Setup applies the file automatically when you install Office on users' computers.
     
 For more information about how to use the OCT, see [Office Customization Tool (OCT) reference for Office 2013](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)). (Although this article is for an earlier version of Office, the information also applies to Office 2016.)
   
@@ -294,7 +294,7 @@ If you're not enforcing language settings by policy, users who work in Office ap
     
 5. Under **Help Language**, select the language that you want to use to view Office application Help, and then choose **Set as Default**.
     
-    If you don't specify a language for Help, the online Help language uses the display language.
+   If you don't specify a language for Help, the online Help language uses the display language.
     
 > [!NOTE]
 > You can enable functionality for working in languages that are not installed on the computer. For example, if you select Korean as an editing language, you enable Asian and Korean features in Word even if Korean proofing tools are not installed. You must enable support for that language in the operating system. 
@@ -348,13 +348,13 @@ The following table shows **OptionState** attributes, values, and descriptions.
   
 **OptionState attributes and values**
 
-|**Attribute**|**Value**|**Description**|
+| Attribute | Value | Description |
 |:-----|:-----|:-----|
-|**Id** <br/> | _optionID_ <br/> |An item that the user can choose to install. See [Proofing Tools Config.xml OptionState ID values](language-identifiers-optionstate-id-values.md#BKMK_OptionStateID).  <br/> |
-|**State** <br/> |**Absent** <br/> |The feature isn't installed.  <br/> The default value is Local.  <br/> |
-||**Advertise** <br/> |The feature is installed the first time that it's used.  <br/> |
-||**Local** <br/> |The feature is installed on the user's computer.  <br/> |
-|**Children** <br/> |**force** <br/> |All child features of the feature are set to the specified state.  <br/> |
+|**Id** | _optionID_ |An item that the user can choose to install. See [Proofing Tools Config.xml OptionState ID values](language-identifiers-optionstate-id-values.md#BKMK_OptionStateID).  |
+|**State** |**Absent** |The feature isn't installed.  <br/> The default value is Local.  |
+||**Advertise** |The feature is installed the first time that it's used.  |
+||**Local** |The feature is installed on the user's computer.  |
+|**Children** |**force** |All child features of the feature are set to the specified state.  |
    
 #### Example: Config.xml file for Office proofing tools
 

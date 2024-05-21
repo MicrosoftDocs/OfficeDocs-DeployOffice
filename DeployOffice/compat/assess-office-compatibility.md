@@ -48,10 +48,10 @@ The Office compatibility tools address common issues that can make Office deploy
 
 |Phase|Description|
 |:-----|:-----|
-|![Icon for the Discover phase.](/deployoffice/compat/media/assess-office-compatibility/ORK_Compat_Discover_reverse.png)|Discover what is being used, by whom, and how often. This information helps you determine what to test for compatibility with the version of Office you're upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  <br/> |
-|![Icon for the Rationalize phase.](/deployoffice/compat/media/assess-office-compatibility/ORK_Compat_Rationalize_reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  <br/> |
-|![Icon for the Validate phase.](/deployoffice/compat/media/assess-office-compatibility/ORK_Compat_Validate_reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  <br/> |
-|![Icon for the Manage phase.](/deployoffice/compat/media/assess-office-compatibility/ORK_Compat_Manage_reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  <br/> |
+|![Icon for the Discover phase.](media/assess-office-compatibility/ork-compat-discover-reverse.png)|Discover what is being used, by whom, and how often. This information helps you determine what to test for compatibility with the version of Office you're upgrading. Documents and solutions that are used frequently and by multiple users are good candidates for testing.  |
+|![Icon for the Rationalize phase.](media/assess-office-compatibility/ork-compat-rationalize-reverse.png)|Partner with business groups to identify what's critical to the business. The data that you find during the discovery phase can help jumpstart and guide this discussion. The goal is to identify the business-critical documents and solutions that have to be ready on the first day of your Office deployment.  |
+|![Icon for the Validate phase.](media/assess-office-compatibility/ork-compat-validate-reverse.png)|Start a pilot deployment where users test the documents and solutions that are required to run the business by using Office. We call this user acceptance testing. Troubleshoot any issues that occur for documents and solutions that need to be ready on the first day of deployment.  |
+|![Icon for the Manage phase.](media/assess-office-compatibility/ork-compat-manage-reverse.jpg)|Deploy Office and continue to monitor your documents and solutions. Watch for trends in Office performance and behavior as updated Office solutions are deployed. Use your Help Desk resources to troubleshoot issues as they occur for non-business-critical documents and solutions.  |
    
 In this article, we discuss each phase of the compatibility process and describe how you can use Office Telemetry Dashboard to support the process.
   
@@ -115,9 +115,9 @@ If you haven't worked with business groups yet, this is the time to approach the
 
 |Type of documents and solutions|Testing needed|
 |:-----|:-----|
-|Documents and solutions that IT is accountable for and must keep functioning at all costs  <br/> |**Proactive testing** <br/> These high-priority documents and solutions are tested, fixed, and ready for use on the first day of the Office deployment.  <br/> |
-|Documents and solutions that IT fix if somebody calls about them  <br/> |**Reactive testing** <br/> These solutions are fixed only when a user reports an issue to your help desk.  <br/> |
-|Documents and solutions that nobody cares about  <br/> |**Don't test** <br/> |
+|Documents and solutions that IT is accountable for and must keep functioning at all costs  |**Proactive testing** <br/> These high-priority documents and solutions are tested, fixed, and ready for use on the first day of the Office deployment.  |
+|Documents and solutions that IT fix if somebody calls about them  |**Reactive testing** <br/> These solutions are fixed only when a user reports an issue to your help desk.  |
+|Documents and solutions that nobody cares about  |**Don't test** |
    
 When you approach business groups to classify their documents and solutions, you might meet some resistance from business groups that assign everything to the high priority list. One of our Office compatibility experts, Chris Jackson, wrote an article for TechNet Magazine that describes some costs behind Office compatibility testing. You can use this information to help justify reactive testing and ease the emotional fears that often affect Office migrations. Read more at [Microsoft Office: The Mathematics of Office Compatibility](/previous-versions/technet-magazine/jj250906(v=msdn.10)).
   
