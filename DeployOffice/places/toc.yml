@@ -32,5 +32,4 @@ items:
       href: powershell/remove-place.md
     - name: Set-PlaceV3
       href: powershell/set-placev3.md
-      
-  
+        
