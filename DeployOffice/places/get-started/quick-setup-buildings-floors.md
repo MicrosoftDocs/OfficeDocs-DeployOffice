@@ -24,7 +24,7 @@ To make this initial setup easier, you can use `Initialize-Places` to import a C
 * Floor Name
 * SMTP of your existing conference room or workspace
 
-Use [Set-PlaceV3](/places/powershell/set-placev3.md) to add more metadata on buildings and floors other than name.
+Use [Set-PlaceV3](../powershell/set-placev3.md) to add more metadata on buildings and floors other than name.
 
 ## What do you need to know before you begin?
 
@@ -34,7 +34,7 @@ Use [Set-PlaceV3](/places/powershell/set-placev3.md) to add more metadata on bui
 
 > [!NOTE]
 >
-> 1. You cannot setup only buildings or only floors using the quick setup with CSV import. The purpose of this tutorial is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](/places/powershell/new-place.md).
+> 1. You cannot setup only buildings or only floors using the quick setup with CSV import. The purpose of this tutorial is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](../powershell/new-place.md).
 >
 2. Setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. Once a hierarchy is set up, the only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
 
@@ -104,7 +104,7 @@ No. The purpose of this process is to help you associate rooms to floors & build
 
 ### How do I update room data like capacity or display name?
 
-You can do this using [Set-PlaceV3](/places/powershell/set-placev3.md).
+You can do this using [Set-PlaceV3](../powershell/set-placev3.md).
 
 ## Troubleshooting
 
@@ -130,7 +130,7 @@ It can take up to 24 hours for the room associations to appear. We're working on
 
 ## Manual setup
 
-If you prefer to manually set up your buildings, floors, and rooms, you can run individual PowerShell cmdlets to create the buildings and floors, and then link them to a room. Reference [New-Place](/places/powershell/new-place.md) and [Set-PlaceV3](/places/powershell/set-placev3.md). You need to create the buildings first, then the floors with ParentId set to a building, and finally set the room/workspace's ParentId to the floor.
+If you prefer to manually set up your buildings, floors, and rooms, you can run individual PowerShell cmdlets to create the buildings and floors, and then link them to a room. Reference [New-Place](../powershell/new-place.md) and [Set-PlaceV3](../powershell/set-placev3.md). You need to create the buildings first, then the floors with ParentId set to a building, and finally set the room/workspace's ParentId to the floor.
 
 ```powershell
 New-Place -Type Building -Name "Austin 550"
