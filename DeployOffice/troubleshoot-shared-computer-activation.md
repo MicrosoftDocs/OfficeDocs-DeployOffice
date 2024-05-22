@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 recommendations: false
 description: "Explains how to troubleshoot issues with deployments of Microsoft 365 Apps that are configured to use shared computer activation."
-ms.date: 04/26/2024
+ms.date: 05/22/2024
 ---
 
 # Troubleshoot issues with shared computer activation for Microsoft 365 Apps
@@ -40,7 +40,7 @@ Here are two ways that you can check whether shared computer activation is enabl
   
 - Open any Office program, such as Word. Go to **File** > **Account** > **About Word** (or whatever the name of the app is). On the second line from the top, underneath the MSO version number, you should see **Shared Computer Activation**, instead of a Product ID, like in the following screenshot.
     
-     ![Screenshot of the About Word dialog box, showing "Shared Computer Activation" underneath the MSO version number.](images/246f2714-8b13-48af-9e2d-0a15213adcc9.png)
+     :::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/shared-computer-activation.png" alt-text="Shared Computer Activation information in the About Microsoft Word section.":::
   
 - Use Registry Editor, and go to **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration**. There should be a value for SharedComputerLicensing with a setting of 1.
     
@@ -54,7 +54,7 @@ On the shared computer, after you open any Office program, go to the following f
   
 If activation succeeded, there are some text files in the folder, like in the following screenshot. Don't make any changes to these files.
   
-![Screenshot of the Licensing folder, showing the licensing token files for shared computer activation.](images/adb109f0-757c-4e0e-87fa-ea87ba54b610.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/office-licensing-files.png" alt-text="File path showing Office licensing files in the local AppData folder.":::
   
 If you configure the licensing token to roam, these text files appear in the folder that you specified.
   
@@ -71,7 +71,7 @@ If you're having problems using shared computer activation, you might get one of
 
 This error means that you don't have an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and that supports shared computer activation. Therefore, you can't use shared computer activation.
   
-![Error message cannot activate products into shared scenario.](images/67637fc5-35cc-4118-acc1-e68fe1155512.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/activation-error-0x40e.png" alt-text="Activation error message indicating the products found can't be used to activate Office in shared computer scenarios.":::
   
 <a name="Unlicensed"> </a>
 
@@ -87,7 +87,7 @@ You can try these steps to fix this problem:
     
 - Check that there's connectivity between the shared computer and the internet.
     
-![Unlicensed product error message.](images/4bab7afd-4ffa-4775-bc8b-86767198d140.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/unlicensed-product-notification.png" alt-text="Unlicensed product notification with instructions to close and restart Word, then sign in with an Office 365 account.":::
   
 <a name="Verify"> </a>
 
@@ -95,7 +95,7 @@ You can try these steps to fix this problem:
 
 This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with their user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the internet.
   
-![Cannot verify product license message.](images/f8bb9b93-f25d-44ff-b46e-a9e163704663.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/license-verification-error.png" alt-text="Error message indicating that the license can't be verified, with error code 0x8004005.":::
   
 <a name="Expires"> </a>
 
@@ -105,7 +105,7 @@ This error means that Office tried to renew the licensing token automatically, b
   
 The licensing token is valid until the date listed in the error message. The user can continue to use Office apps to create, edit, and print documents. The user can choose **Renew** to try to renew the license before the license token expires.
   
-![Shared computer license expires date.](images/f29ab2ab-6699-41b4-8fbb-232f66137426.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/product-notice.png" alt-text="Product notice indicating shared computer license is expiring and needs renewal.":::
   
 <a name="Used"> </a>
 
@@ -113,7 +113,8 @@ The licensing token is valid until the date listed in the error message. The use
 
 Microsoft places a limit on the number of shared computers that a user can activate Office on in a given time period. This error means that the user exceeded that limit.
   
-![Too many computer activated.](images/1166f881-87da-4667-a4bd-e92c23859de2.png)
+:::image type="content" source="/DeployOffice/media/troubleshoot-shared-computer-activation/activation-error-0x420.png" alt-text="Activation error message for Office 365 account with error code 0x420.":::
+
   
 ## Related articles
 
