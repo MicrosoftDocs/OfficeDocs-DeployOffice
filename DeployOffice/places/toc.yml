@@ -15,3 +15,8 @@ items:
     items:
     - name: Configure the iOS app for Microsoft Places
       href: configure-the-ios-app.md
+
+  - name: Manage workspaces
+    items:
+    - name: Enabling Places Finder
+      href: enabling-places-finder.md
