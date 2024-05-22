@@ -30,7 +30,7 @@ These keys are CFPreferences-compatible, which means that they can be set by usi
 ## Visual Basic macro notifications
 Controls whether macros are allowed to run, and what the user experience is when opening a file that contains a macro. 
   
-:::image type="content" source="/DeployOffice/mac/media/set-preference-macro-security-office-for-mac/security-and-privacy-settings.png" alt-text="Screenshot of the Security & Privacy settings window for Office for Mac, showing Macro Security and Privacy options.":::
+:::image type="content" source="../mac/media/set-preference-macro-security-office-for-mac/security-and-privacy-settings.png" alt-text="Screenshot of the Security & Privacy settings window for Office for Mac, showing Macro Security and Privacy options.":::
   
 |Category|Details|
 |:-----|:-----|
