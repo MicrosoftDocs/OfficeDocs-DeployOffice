@@ -3,7 +3,7 @@ title: "Azure Maps Creator Guide for Microsoft Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/14/2024
+ms.date: 05/22/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -15,7 +15,7 @@ description: "Guide to converting DWG floor plans to IMDF for indoor mapping in 
 
 # Azure Maps Creator Guide for Microsoft Places
 
-This guide shows you how convert your DWG floor plans to IMDF for indoor mapping in Microsoft Places using the Azure Maps Creator tool. IMDF is currently the required file format for floorplans in Places.
+This guide shows you how to convert your drawing/DWG floor plans to Indoor Mapping Data Format/IMDF for indoor mapping in Microsoft Places using the Azure Maps Creator tool. IMDF is currently the required file format for floorplans in Places.
 
 You can choose any CAD software to open and prepare your facility drawing files. However, procedures in this guide were created using Autodesk's AutoCAD® software. Any commands referenced in this guide are meant to be executed using Autodesk's AutoCAD software.
 
@@ -51,13 +51,13 @@ A single DWG file is required for each level of the building. All data of a sing
 Each DWG layer must adhere to the following rules:
 
 - A layer must exclusively contain features of a single class and category. For example, units of category room and wall can’t be on the same layer.
-- A single class or category of features can be represented by multiple layers.
+- A single class or category of features is represented by multiple layers.
 - Feature must be drawn as a closed geometry of the following entity types: POLYGON, POLYLINE (closed), CIRCLE, or ELLIPSE (closed).
 - Feature text properties must be of entity type TEXT or MTEXT.
 - Feature text properties must not contain additional information. For example, one MTEXT can’t contain both the name and category of a Unit.
 - TEXT and MTEXT justification point must fall within the bounds of the closed geometry.
 - Feature properties must be on their own layer. For example, all Unit names must be on a separate layer and can’t be on the same layer as the unit category.
-- Unsupported DWG entity types will be ignored.
+- Unsupported DWG entity types are ignored.
 
 ### Level geometry
 
@@ -69,7 +69,7 @@ Each DWG layer must adhere to the following rules:
 
 The facility level specifies which DWG file to use for which level. A level must have a level name and ordinal that describes the vertical order of each level in the facility.  
 
-The following is an example of a sample building. The building has three levels uploaded through 3 DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled. You need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
+The following screenshot is an example of a sample building. The building has three levels uploaded through three DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled. You need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
 
 ![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-001.png)
 
@@ -77,13 +77,13 @@ The following is an example of a sample building. The building has three levels 
 
 Georeferencing is used to specify the exterior profile, location, and rotation of the facility.  
 
-You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building so that it's positioned where you want it.
+You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building to the desired position.
 
 ![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
 
 #### Units
 
-Map one or more DWG layer(s) to the Unit feature class. An instance of a Unit feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
+Map one or more DWG layers to the Unit feature class. An instance of a Unit feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
 
 ![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
 
@@ -96,7 +96,7 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 ![Screenshot of the DWG Building Conversion for Places dialog box.](../images/places/maps-creator-guide-004.png)
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
-2. Register for the feature flag. Once you've logged into your Azure account, navigate to subscriptions.
+2. Register for the feature flag. Sign on to your Azure account and navigate to subscriptions.
 3. Under **Create a resource**, select **Subscriptions**.
 
    ![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
@@ -105,13 +105,13 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
    ![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
 
-5. Search for “M365 Places Preview.”  
-6. Register for “M365 Places Preview.”  
+5. Search for **Microsoft 365 Places Preview**.
+6. Register for **Microsoft 365 Places Preview**.
 
 ### Create the Azure Maps Resource
 
 1. From the [Azure portal](https://ms.portal.azure.com/#home), choose **Create a resource**.
-2. Search for “Azure Maps.”
+2. Search for **Azure Maps**.
 3. Create Azure Maps resource.
 
 ### Create the Azure Maps Creator Resource
