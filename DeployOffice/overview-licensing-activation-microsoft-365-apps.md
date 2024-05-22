@@ -98,7 +98,7 @@ If a user installs Microsoft 365 Apps on more than 10 devices, then the device t
 
 In reduced functionality mode, Microsoft 365 Apps remains installed on the device, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message similar to this one:
  
-:::image type="content" source="/DeployOffice/media/overview-licensing-activation-microsoft-365-apps/product-deactivated.png" alt-text="Product deactivation prompt with options to enter a product key or sign in to an active account.":::
+:::image type="content" source="./media/overview-licensing-activation-microsoft-365-apps/product-deactivated.png" alt-text="Product deactivation prompt with options to enter a product key or sign in to an active account.":::
  
 The user can then choose one of the available options to reactivate Microsoft 365 Apps on that computer.
 
