@@ -4,7 +4,7 @@ ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
 ms.reviewer: julia.foran
-ms.date: 05/15/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -96,14 +96,14 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 
 > [!CAUTION]
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported. It is not recommended to use any parameter that is not documented on this page.
->
+
 ## Examples
 
 ### Example 1
 
 This example sets up the directory hierarchy for a room, floor, and building.  
 
-*In this example, the floor's PlaceId is f12172b6-195d-4e6e-8f4f-eb72e41de99a, and the building's PlaceId is daa2f89b-75c4-4eb7-adcc-ff249233338d.*
+In this example, the floor's PlaceId is f12172b6-195d-4e6e-8f4f-eb72e41de99a, and the building's PlaceId is daa2f89b-75c4-4eb7-adcc-ff249233338d.
 
 ```powershell
 Set-PlaceV3 -Identity 'room@contoso.com' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Floor
@@ -114,7 +114,8 @@ Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75
 
 This example updates a building's address and geocoordinates.
 
-*Note: PostOfficeBox is currently required when setting an address. However, this parameter is in the process of being deprecated, so set to an empty value.*
+> [!NOTE]
+> PostOfficeBox is currently required when setting an address. However, this parameter is in the process of being deprecated, so set to an empty value.*
 
 ```powershell
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox '' -GeoCoordinates "47.644125;-122.122411"
@@ -315,7 +316,8 @@ The IsWheelChairAccessible parameter specifies whether the place is wheelchair a
 
 ### -MTREnabled
 
-Note: Currently, this parameter is informational only and results in no additional functionality.
+> [!NOTE]
+> Currently, this parameter is informational only and results in no additional functionality.
 
 The MTREnabled parameter identifies the room as configured with a Microsoft Teams room system. You can add Teams room systems as audio sources in Teams meetings that involve the room. Valid values are:
 
@@ -370,7 +372,8 @@ The ParentType parameter specifies the type of the place that is being set as th
 * Building
 * Floor
 
-*This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
+> [!NOTE]
+> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
 
 |Attribute|Description|
 | -------- | -------- |
@@ -462,7 +465,7 @@ We recommend managing the location data on the Building rather than the Room/Wor
 
 The Street parameter specifies the room's physical address. The maximum length is 200 characters.
 
->[!NOTE]
+> [!NOTE]
 > We recommend managing the location data on the Building rather than the Room/Workspace. There's a hierarchy between rooms -> floors -> buildings, and rooms inherit the location attributes of their Building.
 
 |Attribute|Description|
@@ -480,7 +483,7 @@ The Tags parameter specifies additional features of the room (for example, detai
 
 You can specify multiple labels separated by commas. If the labels contains spaces, enclose the values in quotation marks: `"Label 1","Label 2",..."Label N"`.
 
->[!NOTE]
+> [!NOTE]
 > The entire set will be replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
 |Attribute|Description|

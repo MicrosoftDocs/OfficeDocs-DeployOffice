@@ -4,7 +4,7 @@ ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
 ms.reviewer: julia.foran
-ms.date: 05/16/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -42,7 +42,7 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 
 > [!CAUTION]
 > You might find additional parameters in the PowerShell cmdlet, but those are not currently supported. It is not recommended to use any parameter that is not documented on this page.
->
+
 ## Options
 
 ### Option 1
@@ -50,7 +50,8 @@ You need to be assigned permissions before you can run this cmdlet. You must hav
 Export your list of conference rooms and workspaces. The exported filename is _ResourceAccountsMapped.csv_.
 Initialize-Places, Option 1 only exports rooms, or workspaces associated with a room list. See the [Quick setup for building and floors](/places/get-started/quick-setup-buildings-floors) for an alternative of how to export all rooms and workspaces.
 
-_This isn't a required step if you have alternative ways that might be useful to quickly create a list of rooms/workspaces._
+> [!NOTE]
+> This isn't a required step if you have alternative ways that might be useful to quickly create a list of rooms/workspaces.
 
 ```powershell
 Initialize-Places
@@ -65,6 +66,7 @@ Please choose the desired option before continuing:
 ### Option 2
 
 Import your list of buildings and floors you want to create, and the rooms that belong to those floors/buildings. After import completes, a file will be saved into the same folder as your import file, such as _fileToImport-ImportResults.csv_, which will document whether any issues were encountered during import.
+
 The import file must be only the following 3 columns: InferredBuildingName, InferredFloorName, and PrimarySmtpAddress (of the room or workspace).
 
 ```powershell
@@ -73,15 +75,14 @@ Please choose the desired option before continuing:
  1. Export suggested mapping CSV of rooms to buildings/floors.
  2. Import mapping CSV to automatically create buildings/floors and room mappings.
  3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
- X to cancel.
-2
 ```
 
 ### Option 3
 
 Generate a PowerShell script that can be used to create your list of buildings & floors, and setting the correct metadata on rooms and workspaces to associate them with the given floor and building. A new file is saved into the same folder as your import file, such as _fileToImport-ImportResults.csv_ that describes any errors encountering when generating the PowerShell script. The PowerShell script will also be saved into the same folder, with the filename _PlacesOnboardingScript.ps1_.
 
-_Note: Despite the usage of "import" in the cmdlet wording, nothing is created into your Places Directory when using this option._
+> [!NOTE]
+> Despite the usage of "import" in the cmdlet wording, nothing is created into your Places Directory when using this option.
 
 ```powershell
 Initialize-Places
@@ -89,8 +90,6 @@ Please choose the desired option before continuing:
  1. Export suggested mapping CSV of rooms to buildings/floors.
  2. Import mapping CSV to automatically create buildings/floors and room mappings.
  3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
- X to cancel.
-3
 ```
 
 ## Example

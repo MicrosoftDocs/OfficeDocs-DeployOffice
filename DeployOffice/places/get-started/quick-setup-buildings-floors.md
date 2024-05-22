@@ -24,7 +24,7 @@ To make this initial setup easier, you can use `Initialize-Places` to import a C
 * Floor Name
 * SMTP of your existing conference room or workspace
 
-Use [Set-PlaceV3](/places/PowerShell/set-placev3) to add more metadata on buildings and floors other than name.
+Use [Set-PlaceV3](/places/powershell/set-placev3) to add more metadata on buildings and floors other than name.
 
 ## What do you need to know before you begin?
 
@@ -34,7 +34,7 @@ Use [Set-PlaceV3](/places/PowerShell/set-placev3) to add more metadata on buildi
 
 > [!NOTE]
 >
-> 1. You cannot setup only buildings or only floors using the quick setup with CSV import. The purpose of this tutorial is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](/places/PowerShell/new-place).
+> 1. You cannot setup only buildings or only floors using the quick setup with CSV import. The purpose of this tutorial is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](/places/powershell/new-place).
 >
 2. Setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. Once a hierarchy is set up, the only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
 
@@ -54,7 +54,6 @@ Please choose the desired option before continuing:
  1. Export suggested mapping CSV of rooms to buildings/floors.
  2. Import mapping CSV to automatically create buildings/floors and room mappings.
  3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
- X to cancel.
 ```
 
 1. Prepare the file for import.
@@ -92,7 +91,10 @@ Initialize-Places is only intended to create buildings and floors. If you run th
 
 ### My security department wants to know what PowerShell commands are executed during import
 
-You can use Option 3 (Export a PowerShell script) to preview the commands that would be executed. In this option, you provide the same three-column import file. Instead of setting up the buildings, floors, and rooms, Initialize-Places exports a PowerShell script of the commands that would be executed during import. The PowerShell script is exported to the same folder as your import file. *Note: The import file is needed only to generate the PowerShell script. Nothing is imported on your behalf.*
+You can use Option 3 (Export a PowerShell script) to preview the commands that would be executed. In this option, you provide the same three-column import file. Instead of setting up the buildings, floors, and rooms, Initialize-Places exports a PowerShell script of the commands that would be executed during import. The PowerShell script is exported to the same folder as your import file.
+
+> [!NOTE]
+> The import file is needed only to generate the PowerShell script. Nothing is imported on your behalf.
 
 You can use the exported PowerShell script to run the commands yourself rather than using Option 2 in Initialize-Places.
 
@@ -102,7 +104,7 @@ No. The purpose of this process is to help you associate rooms to floors & build
 
 ### How do I update room data like capacity or display name?
 
-You can do this using [Set-PlaceV3](/places/PowerShell/set-placev3).
+You can do this using [Set-PlaceV3](/places/powershell/set-placev3).
 
 ## Troubleshooting
 
@@ -128,7 +130,7 @@ It can take up to 24 hours for the room associations to appear. We're working on
 
 ## Manual setup
 
-If you prefer to manually set up your buildings, floors, and rooms, you can run individual PowerShell cmdlets to create the buildings and floors, and then link them to a room. Reference [New-Place](/places/PowerShell/new-place) and [Set-PlaceV3](/places/PowerShell/set-placev3). You need to create the buildings first, then the floors with ParentId set to a building, and finally set the room/workspace's ParentId to the floor.
+If you prefer to manually set up your buildings, floors, and rooms, you can run individual PowerShell cmdlets to create the buildings and floors, and then link them to a room. Reference [New-Place](/places/powershell/new-place) and [Set-PlaceV3](/places/powershell/set-placev3). You need to create the buildings first, then the floors with ParentId set to a building, and finally set the room/workspace's ParentId to the floor.
 
 ```powershell
 New-Place -Type Building -Name "Austin 550"

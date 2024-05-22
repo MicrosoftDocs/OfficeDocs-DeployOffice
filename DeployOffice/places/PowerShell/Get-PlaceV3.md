@@ -4,7 +4,7 @@ ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
 ms.reviewer: julia.foran
-ms.date: 05/15/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -20,7 +20,7 @@ Use the Get-PlaceV3 cmdlet to view metadata configured on conference rooms, work
 
 > [!NOTE]
 > Work is in progress to bring this cmdlet's functionality into the existing Exchange [Get-Place](/powershell/module/exchange/get-place) cmdlet.
->
+
 ## Syntax
 
 ```powershell

@@ -5,6 +5,8 @@ items:
       href: deployment-guide-for-places.md
     - name: Opt in to the Microsoft Places Public Preview Program
       href: opt-in-places-preview.md
+    - name: Quick setup guide for buildings and floors
+      href: get-started/quick-setup-buildings-floors.md
 
   - name: Maps
     items:
@@ -15,3 +17,20 @@ items:
     items:
     - name: Configure the iOS app for Microsoft Places
       href: configure-the-ios-app.md
+
+  - name: PowerShell
+    items:
+    - name: Connect-MicrosoftPlaces
+      href: powershell/connect-microsoftplaces.md
+    - name: Get-PlaceV3
+      href: powershell/connect-microsoftplaces.md
+    - name: Initialize-Places
+      href: powershell/initialize-places.md
+    - name: New-Place
+      href: powershell/new-place.md
+    - name: Remove-Place
+      href: powershell/remove-place.md
+    - name: Set-PlaceV3
+      href: powershell/set-placev3.md
+      
+  

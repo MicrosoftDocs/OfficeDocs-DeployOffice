@@ -4,7 +4,7 @@ ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
 ms.reviewer: julia.foran
-ms.date: 05/15/2024
+ms.date: 05/21/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -146,7 +146,8 @@ The GeoCoordinates parameter specifies the building's location in latitude, long
 * Latitude and longitude: For example, "47.644125;-122.122411"
 * Latitude, longitude, and altitude: For example, "47.644125;-122.122411;161.432"
 
-_Note: If period separators don't work for you, use commas instead._
+> [!NOTE]
+> If period separators don't work for you, use commas instead.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -181,8 +182,8 @@ A floor's display name is visible in Places Finder as a filter when searching fo
 
 The ParentId parameter specifies the ID of a Place in the parent location hierarchy in Microsoft Places.  
 
-* A room or workspace should have a parent floor. _(optional in the cmdlet, but without this parameter set, Places experiences are limited)_
-* A floor must have a parent building. _(required)_
+* A room or workspace should have a parent floor. This is optional in the cmdlet, but without this parameter set, Places experiences are limited.
+* A floor must have a parent building. This is a required step.
 
 Once the ParentId is set for a room or workspace, legacy room/workspace properties that are actually about the floor (such as floor number) or about the building (such as address and location information) become read-only for that room/workspace using Set-PlaceV3. The same properties can be updated by updating the Floor or Building directly using Set-PlaceV3.
 
@@ -202,7 +203,8 @@ The ParentType parameter specifies the type of the place that is being set as th
 * Building
 * Floor
 
-_This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type._
+>[!NOTE]
+> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.
 
 |Attribute|Description|
 | -------- | -------- |
@@ -274,7 +276,8 @@ The Tags parameter specifies other features of the room (for example, details li
 
 You can specify multiple labels separated by commas. If the labels contains spaces, enclose the values in quotation marks: `"Label 1","Label 2",..."Label N"`.
 
-_Note: The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted._
+> [!NOTE]
+> The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
 |Attribute|Description|
 | -------- | -------- |
