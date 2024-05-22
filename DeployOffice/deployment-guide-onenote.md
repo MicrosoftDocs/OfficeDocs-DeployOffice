@@ -67,6 +67,11 @@ Migration Policy Development: To facilitate a successful migration to OneNote on
 
 Use this sample script to suit your organization's needs. 
 
+
+If your markdown environment supports collapsible sections, you can use them to make the script collapsible. Unfortunately, standard markdown does not support collapsible sections, but some platforms like GitHub and GitLab support custom syntax for this:
+
+For GitHub:
+
 ```markdown
 <details>
   <summary>Click to expand!</summary>
@@ -340,7 +345,7 @@ function MainRoutine {
 
 # Execute the main routine
 MainRoutine
-```
+</details>
 ```
 
 Ensure the script performs the following functions:
