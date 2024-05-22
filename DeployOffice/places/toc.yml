@@ -5,6 +5,8 @@ items:
       href: deployment-guide-for-places.md
     - name: Opt in to the Microsoft Places Public Preview Program
       href: opt-in-places-preview.md
+    - name: Quick setup guide for buildings and floors
+      href: get-started/quick-setup-buildings-floors.md
 
   - name: Maps
     items:
