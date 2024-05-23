@@ -51,17 +51,17 @@ Set-PlacesSettings -Collection Places -EnableBuildings 'Default:true'
    * Use Get-PlaceV3 to export all rooms, regardless of whether they're part of a roomlist.  
    * Use Initialize-Places, Option 1 to export only rooms/workspaces that are part of a roomlist. This action ensures that Places Finder shows the same rooms as Room Finder.
 
-```powershell
-Get-Placev3 -Type Room | Export-Csv -NoTypeInformation "C:\temp\rooms.csv"
-```
+   ```powershell
+   Get-Placev3 -Type Room | Export-Csv -NoTypeInformation "C:\temp\rooms.csv"
+   ```
 
-```powershell
-Initialize-Places
-Please choose the desired option before continuing:
- 1. Export suggested mapping CSV of rooms to buildings/floors.
- 2. Import mapping CSV to automatically create buildings/floors and room mappings.
- 3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
-```
+   ```powershell
+   Initialize-Places
+   Please choose the desired option before continuing:
+    1. Export suggested mapping CSV of rooms to buildings/floors.
+    2. Import mapping CSV to automatically create buildings/floors and room mappings.
+    3. Export PowerShell script with commands to manually create buildings/floors and room mappings based on an imported CSV.
+   ```
 
 1. Prepare the file for import.
 
