@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Explains how to support XML Advanced Electronic Signatures (XAdES) in Excel, PowerPoint, and Word documents. Additionally, determine how to select the appropriate certificates for your deployment."
-ms.date: 04/19/2024
+ms.date: 05/21/2024
 ---
 
 # Use digital signatures with Office 2016
@@ -83,7 +83,7 @@ The following figure shows the warning that the user sees after opening a docume
   
 **Digital signature warning for documents originally signed in Office 2003 or earlier versions.**
 
-![Figure 1 Compatibility Issues.](../../images/CompatibilityIssues.jpg)
+:::image type="content" source="../security/media/digital-signatures/compatibility-issues.png" alt-text="A screenshot of a Microsoft Office Word error message indicating the file was created and digitally signed in a newer version, resulting in the loss of the digital signature.":::
   
 If you use XAdES for a digital signature in Office 2016, the digital signature isn't compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](digital-signatures.md#configsigs) later in this article. 
   
@@ -102,7 +102,6 @@ For larger organizations, two primary methods for obtaining digital certificates
 ### Certificates that are created by using an organization or corporation PKI
 
 Organizations can create their own PKI. In this scenario, the company sets up one or more certification authorities (CAs) that can create digital certificates for computers and users throughout the company. When a company combines Active Directory Directory Services (AD DS) with their systems, they can establish a complete PKI solution. This integration ensures that all organization or corporate-managed computers have the necessary CA chain installed. Additionally, the system enables the automatic assignment of digital certificates to both users and computers. These certificates are crucial for document signing and encryption. This process allows for all employees in a company to automatically trust digital certificates (and, therefore, valid digital signatures) from other employees in the same company.
-  
   
 ### Commercial certificates
 
