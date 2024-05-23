@@ -83,7 +83,7 @@ The following figure shows the warning that the user sees after opening a docume
   
 **Digital signature warning for documents originally signed in Office 2003 or earlier versions.**
 
-:::image type="content" source="/DeployOffice/office2016/security/media/digital-signatures/compatibility-issues.png" alt-text="Microsoft Office Word error message indicating the file was created and digitally signed in a newer version, resulting in the loss of the digital signature.":::
+:::image type="content" source="../security/media/digital-signatures/compatibility-issues.png" alt-text="A screenshot of a Microsoft Office Word error message indicating the file was created and digitally signed in a newer version, resulting in the loss of the digital signature.":::
   
 If you use XAdES for a digital signature in Office 2016, the digital signature isn't compatible with Office 2010 or 2007 Office system unless you configure the Group Policy setting, **Do not include XAdES reference object in the manifest**, and set it to **Enabled**. For more information about the digital signature Group Policy settings, see [Plan signature settings for Office 2016](digital-signatures.md#configsigs) later in this article. 
   
