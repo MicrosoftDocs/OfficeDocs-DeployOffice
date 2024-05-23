@@ -23,7 +23,7 @@ items:
     - name: Connect-MicrosoftPlaces
       href: powershell/connect-microsoftplaces.md
     - name: Get-PlaceV3
-      href: powershell/connect-microsoftplaces.md
+      href: powershell/get-placev3.md
     - name: Initialize-Places
       href: powershell/initialize-places.md
     - name: New-Place
@@ -32,4 +32,8 @@ items:
       href: powershell/remove-place.md
     - name: Set-PlaceV3
       href: powershell/set-placev3.md
-        
+
+  - name: Reports and analytics
+    items:
+    - name: Microsoft Places Analytics
+      href: places-analytics.md
