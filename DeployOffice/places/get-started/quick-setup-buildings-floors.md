@@ -33,10 +33,11 @@ Use [Set-PlaceV3](../powershell/set-placev3.md) to add more metadata on building
 * You need to be assigned permissions before you can run this cmdlet. You must have both the Exchange MailRecipients role and the Places TenantPlacesManagement role.
 
 ## Enable your organization to use the Places Directory
-Currently, you must opt-in before setting up your Places Directory.  This opt-in step to enable directory is only required during the preview.
+
+Currently, you must opt in before setting up your Places Directory. This opt-in step to enable directory is only required during the preview.
 
 > [!NOTE]
-> Once you enable Places Directory for your organization, you cannot disable the directory.  However, setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. The only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
+> Once you enable Places Directory for your organization, you cannot disable the directory. However, setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. The only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
 
 This example enables your organization to use the Places Directory.
 
@@ -48,7 +49,7 @@ Set-PlacesSettings -Collection Places -EnableBuildings 'Default:true'
 
 1. Export your list of rooms/workspaces.
    * Use Get-PlaceV3 to export all rooms, regardless of whether they're part of a roomlist.  
-   * Use Initialize-Places, Option 1 to export only rooms/workspaces that are part of a roomlist. This ensures that Places Finder shows the same rooms as Room Finder.
+   * Use Initialize-Places, Option 1 to export only rooms/workspaces that are part of a roomlist. This action ensures that Places Finder shows the same rooms as Room Finder.
 
 ```powershell
 Get-Placev3 -Type Room | Export-Csv -NoTypeInformation "C:\temp\rooms.csv"
@@ -65,14 +66,14 @@ Please choose the desired option before continuing:
 1. Prepare the file for import.
 
    * Add or correct the building name and floor name in the first two columns (InferredBuildingName, InferredFloorName). The other columns with room metadata are provided only for reference as you finalize your building and floor names.
-      
+
    * Remove all columns except InferredBuildingName, InferredFloorName, and PrimarySmtpAddress.
-      
+
 1. Run Initialize-Places cmdlet again. Select Option 2 to import the CSV.
    * Be sure that your CSV file is saved and closed before trying to import.
-      
+
    * You'll see details in the PowerShell window as creation is occurring, and a file summarizing the results are exported to the same folder as your import file.
-      
+
 > [!WARNING]
 > It may take up to 24 hours to see the updated rooms/workspaces in Microsoft Places. We are working on eliminating this delay. The newly created buildings and floors will appear immediately.
 >
@@ -116,7 +117,7 @@ You can do this using [Set-PlaceV3](../powershell/set-placev3.md).
 
 ### I receive an authentication error
 
-You need to have the Exchange MailRecipients permission and the Places TenantPlacesManagement permission. You can check your assigned roles from an Exchange PowerShell window. Make sure to do this from a separate window than the Microsoft Places PowerShell module.
+You need to have the Exchange MailRecipients permission and the Places TenantPlacesManagement permission. You can check your assigned roles from an Exchange PowerShell window. Make sure to do this action in a separate window than the Microsoft Places PowerShell module.
 
 ### I don't see the same options when I run the Initialize-Places command
 
