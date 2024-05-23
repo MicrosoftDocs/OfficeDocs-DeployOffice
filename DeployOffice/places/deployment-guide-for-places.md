@@ -25,10 +25,12 @@ Before onboarding Places, complete the following prerequisites:
 - Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
 - Verify you have one of the following subscriptions:
 
+  - Microsoft 365 Business Basic
   - Microsoft 365 Business Standard
   - Microsoft 365 Business Premium
   - Microsoft 365 or Office 365 (E1, E3, E5)
   - Microsoft 365 or Office 365 (A1, A3, A5)
+  - Microsoft 365 Frontline Worker (F1, F3)
 
 > [!NOTE]
 > More information on feature availability by license type will be shared as we get closer to general availability.
@@ -83,6 +85,8 @@ See the table below to learn more about activating different clients for Places:
 ## Related topics
 
 [Opt in to the Microsoft Places Public Preview](/deployoffice/places/opt-in-places-preview)
+
+[Configure the Places iOS app](/deployoffice/places/configure-the-ios-app)
 
 [Release notes for Microsoft Teams Rooms](/microsoftteams/rooms/rooms-release-note)
 
