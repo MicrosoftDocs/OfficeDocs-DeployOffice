@@ -97,7 +97,7 @@ The ManifestServer is the URL for the server hosting update manifests. MAU downl
 | Type | String |
 | Default Value | |
 | Manageable | Yes |
-| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/ <br>Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with 4090&lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
+| Comments | Must point to a valid URL hosting update manifest files. List of files to be hosted are:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Note:<br><ul><li>ChannelName should be set to Custom in order to make meaningful use of this preference.</li><li>If ChannelName is set to Custom and this preference isn't configured, MAU defaults to Current channel. The latest published manifest files can be accessed at the following URL, which serves as the root URL for Current channel: ``https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/`` <br>Append the actual file name to the URL provided; the URL doesn't include a directory listing.</li></ul>When populating ManifestServer, ensure ALL collaterals are copied, including following files for each of the apps:<br><ul><li>.xml</li><li>-chk.xml</li><li>.cat</li><li>-history.xml</li></ul>Also, make sure to copy all versioned manifests. Versions are listed in –history.xml file, and the file names (.xml, .cat) need to be constructed with 4090&lt;AppID&gt;_&lt;Version&gt;.[xml &vert; cat], otherwise some of the functionalities provided by MAU might not be available. |
 
 ## UpdateCache
 
@@ -140,9 +140,9 @@ When Set to TRUE, prevents Opt-In notification/pop-up window from showing even w
 
 Here are examples of the notification and pop-up window:
 
-:::image type="content" source="../mac/images/preferences-for-mau/automatic-updates-prompt.large.png" alt-text="Notification pop-up asking 'Turn On Automatic Updates?' with a description 'Always install new features and updates for Microsoft apps' and icons of Microsoft apps." lightbox="../mac/images/preferences-for-mau/automatic-updates-prompt.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/automatic-updates-prompt.large.png" alt-text="Notification pop-up asking 'Turn On Automatic Updates?' with a description 'Always install new features and updates for Microsoft apps' and icons of Microsoft apps." lightbox="../mac/media/mau-preferences/automatic-updates-prompt.large.png":::
 
-:::image type="content" source="../mac/images/preferences-for-mau/update-settings-dialogue.large.png" alt-text="Screenshot of a dialogue box for Microsoft updates with the title 'Turn On Automatic Updates' and a brief description about Microsoft releasing new features, security updates, and improvements. The box includes a 'Turn On' button in blue and a 'Not Now' link below it." lightbox="../mac/images/preferences-for-mau/update-settings-dialogue.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/update-settings-dialogue.large.png" alt-text="Screenshot of a dialogue box for Microsoft updates with the title 'Turn On Automatic Updates' and a brief description about Microsoft releasing new features, security updates, and improvements. The box includes a 'Turn On' button in blue and a 'Not Now' link below it." lightbox="../mac/media/mau-preferences/update-settings-dialogue.large.png":::
 
 ## LastUpdate
 
@@ -301,7 +301,7 @@ Used by Microsoft 365 apps in determining how frequently update ready message ba
 
 Here's an example of the Update Ready message bar in Excel:
 
-:::image type="content" source="../mac/images/preferences-for-mau/excel-update-notification.large.png" alt-text="Interface of Microsoft Excel displaying an 'Update Available' notification indicating that some fixes and improvements are made, with a prompt to restart the app. The Excel workbook shown is named 'Book1' and the sheet 'Sheet1' is visible, currently blank with no data entered." lightbox="../mac/images/preferences-for-mau/excel-update-notification.large.b.png":::
+:::image type="content" source="../mac/media/mau-preferences/excel-update-notification.large.png" alt-text="Interface of Microsoft Excel displaying an 'Update Available' notification indicating that some fixes and improvements are made, with a prompt to restart the app. The Excel workbook shown is named 'Book1' and the sheet 'Sheet1' is visible, currently blank with no data entered." lightbox="../mac/media/mau-preferences/excel-update-notification.large.b.png":::
 
 ## AppCustomPref
 
@@ -378,7 +378,7 @@ When set to TRUE, this is used to disable the pulldown menu to select Beta/Previ
 | Manageable | Yes |
 | Comments | Should be used to disable channel selection by end users. |
 
-:::image type="content" source="../mac/images/preferences-for-mau/microsoft-apps-auto-update-preferences.large.png" alt-text="Screenshot of the Preferences pane showing options for Microsoft software updates. It includes an 'Update Channel' dropdown set to 'Current Channel' with text explaining that it provides fully supported updates, and an 'Automatic Updates' section with a checked box stating 'Automatically download and install,' indicating that updates for Microsoft apps are set to install automatically." lightbox="../mac/images/preferences-for-mau/microsoft-apps-auto-update-preferences.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/microsoft-apps-auto-update-preferences.large.png" alt-text="Screenshot of the Preferences pane showing options for Microsoft software updates. It includes an 'Update Channel' dropdown set to 'Current Channel' with text explaining that it provides fully supported updates, and an 'Automatic Updates' section with a checked box stating 'Automatically download and install,' indicating that updates for Microsoft apps are set to install automatically." lightbox="../mac/media/mau-preferences/microsoft-apps-auto-update-preferences.large.png":::
 
 ## EnableCheckForUpdatesButton
 
@@ -393,9 +393,9 @@ When set to FALSE, this disables the option to initiate a check for updates from
 | Accepted Values | TRUE / FALSE / 1 / 0 |
 | Comments | IT Admin should set this to FALSE if individual users shouldn't be allowed to initiate checking for updates, or initiate updates themselves. Note: The 'Check for Updates' button is replaced with the 'Update All' button when MAU completes checking for updates. This preference key, when set to FALSE, will also disable the 'Update All' button. |
 
-:::image type="content" source="../mac/images/preferences-for-mau/apps-up-to-date-notification.large.png" alt-text="Microsoft AutoUpdate window stating 'All apps are up-to-date.' with an option below to 'Automatically keep Microsoft apps up to date' alongside a clickable 'Check for Updates' button and an 'Advanced' options link." lightbox="../mac/images/preferences-for-mau/apps-up-to-date-notification.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/apps-up-to-date-notification.large.png" alt-text="Microsoft AutoUpdate window stating 'All apps are up-to-date.' with an option below to 'Automatically keep Microsoft apps up to date' alongside a clickable 'Check for Updates' button and an 'Advanced' options link." lightbox="../mac/media/mau-preferences/apps-up-to-date-notification.large.png":::
 
-:::image type="content" source="../mac/images/preferences-for-mau/microsoft-autoupdate-status.large.png" alt-text="Microsoft AutoUpdate interface on a Mac, displaying a message that 'All apps are up-to-date.' It has a checkbox for 'Automatically keep Microsoft apps up to date' that is unchecked, with buttons for 'Check for Updates' and 'Advanced...' settings visible." lightbox="../mac/images/preferences-for-mau/microsoft-autoupdate-status.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/microsoft-autoupdate-status.large.png" alt-text="Microsoft AutoUpdate interface on a Mac, displaying a message that 'All apps are up-to-date.' It has a checkbox for 'Automatically keep Microsoft apps up to date' that is unchecked, with buttons for 'Check for Updates' and 'Advanced...' settings visible." lightbox="../mac/media/mau-preferences/microsoft-autoupdate-status.large.png":::
 
 
 ## ExtendedLogging
@@ -481,7 +481,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Comments | MAU is calculating deadline dates based on the day updates are found on that device. Not from when Microsoft released the patches. Starting from StartAutomaticUpdates  number of days before deadline is reached, there will be a prompt displayed to user every 12 hours |
 
 Here's an example of the prompt that's displayed.
-:::image type="content" source="../mac/images/preferences-for-mau/update-deadline-reminder.large.png" alt-text="A Microsoft AutoUpdate reminder pop-up with a date 'July 27, 2019'. It informs the user that the admin has set up a deadline for updates and instructs to save data and quit the following apps before the deadline, with the Microsoft Word icon displayed. There are options to 'Snooze' or 'Update' at the bottom of the pop-up." lightbox="../mac/images/preferences-for-mau/update-deadline-reminder.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/update-deadline-reminder.large.png" alt-text="A Microsoft AutoUpdate reminder pop-up with a date 'July 27, 2019'. It informs the user that the admin has set up a deadline for updates and instructs to save data and quit the following apps before the deadline, with the Microsoft Word icon displayed. There are options to 'Snooze' or 'Update' at the bottom of the pop-up." lightbox="../mac/media/mau-preferences/update-deadline-reminder.large.png":::
 
 ## UpdateDeadline.FinalCountDown
 
@@ -498,7 +498,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Comments |The range for this value is 10 to 720. Starting from the FinalCountDown, the number of minutes before the deadline, MAU displays a prompt to the user each time it runs. Applications  automatically close once the countdown is reached. |
 
 Here's an example of the prompt that displays.
-:::image type="content" source="../mac/images/preferences-for-mau/update-countdown-notice.large.png" alt-text="Close-up of a Microsoft AutoUpdate notification with a countdown timer set to 59 minutes and 53 seconds. The message states, 'Your admin has setup a deadline for the updates' and advises the user to save their data and close the following apps before the deadline, with the Microsoft Word icon shown. The button at the bottom reads 'Quit Apps and Update.'" lightbox="../mac/images/preferences-for-mau/update-countdown-notice.large.png":::
+:::image type="content" source="../mac/media/mau-preferences/update-countdown-notice.large.png" alt-text="Close-up of a Microsoft AutoUpdate notification with a countdown timer set to 59 minutes and 53 seconds. The message states, 'Your admin has setup a deadline for the updates' and advises the user to save their data and close the following apps before the deadline, with the Microsoft Word icon shown. The button at the bottom reads 'Quit Apps and Update.'" lightbox="../mac/media/mau-preferences/update-countdown-notice.large.png":::
 
 ## UpdateDeadline.StartAutomaticUpdates
 
@@ -528,7 +528,7 @@ For more information, see: [Set a deadline for updates from Microsoft AutoUpdate
 | Type | String |
 | Default Value | Your admin has setup a deadline for the updates.|
 | Manageable | Yes |
-| Comments | :::image type="content" source="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png" alt-text="A Microsoft AutoUpdate alert with a red box highlighting an important notice that reads 'Your admin has setup a deadline for the updates,' dated 'July 27, 2019'. Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons. There are other snooze options to try again in an hour, 12 hours, tomorrow, or in two days." lightbox="../mac/images/preferences-for-mau/admin-update-deadline-alert.large.png"::: |
+| Comments | :::image type="content" source="../mac/media/mau-preferences/admin-update-deadline-alert.large.png" alt-text="A Microsoft AutoUpdate alert with a red box highlighting an important notice that reads 'Your admin has setup a deadline for the updates,' dated 'July 27, 2019'. Below is the instruction to save data and close apps before the deadline with a Microsoft Word icon, accompanied by 'Snooze' and 'Update' buttons. There are other snooze options to try again in an hour, 12 hours, tomorrow, or in two days." lightbox="../mac/media/mau-preferences/admin-update-deadline-alert.large.png"::: |
 
 ## UpdaterOptimization
 
