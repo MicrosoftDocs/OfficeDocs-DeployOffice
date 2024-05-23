@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Explains how to assign Microsoft 365 Apps licenses to users, and how individual installations are activated."
-ms.date: 01/09/2024
+ms.date: 05/22/2024
 ---
 
 # Overview of licensing and activation in Microsoft 365 Apps
@@ -98,7 +98,7 @@ If a user installs Microsoft 365 Apps on more than 10 devices, then the device t
 
 In reduced functionality mode, Microsoft 365 Apps remains installed on the device, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message similar to this one:
  
-![Product deactivated.](images/78aa59b0-8772-4ba2-8094-bfeb65602ab7.png)
+:::image type="content" source="./media/overview-licensing-activation-microsoft-365-apps/product-deactivated.png" alt-text="Screenshot of product deactivation prompt with options to enter a product key or sign in to an active account.":::
  
 The user can then choose one of the available options to reactivate Microsoft 365 Apps on that computer.
 
