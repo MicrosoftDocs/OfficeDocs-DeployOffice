@@ -18,6 +18,21 @@ items:
     - name: Configure the iOS app for Microsoft Places
       href: configure-the-ios-app.md
 
+  - name: PowerShell
+    items:
+    - name: Connect-MicrosoftPlaces
+      href: powershell/connect-microsoftplaces.md
+    - name: Get-PlaceV3
+      href: powershell/get-placev3.md
+    - name: Initialize-Places
+      href: powershell/initialize-places.md
+    - name: New-Place
+      href: powershell/new-place.md
+    - name: Remove-Place
+      href: powershell/remove-place.md
+    - name: Set-PlaceV3
+      href: powershell/set-placev3.md
+
   - name: Reports and analytics
     items:
     - name: Microsoft Places Analytics
