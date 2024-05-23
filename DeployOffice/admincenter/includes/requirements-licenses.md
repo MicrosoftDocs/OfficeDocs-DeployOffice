@@ -15,7 +15,7 @@ Your user must be assigned to one of the following subscription plans:
 | ---------- | ----------------- |
 | Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li>
 | Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li>
-| Enterprise | <li>Microsoft 365 E3</li><li>Microsoft 365 E5</li>
+| Enterprise | <li>Office 365 E3</li><li>Office 365 E5</li><li>Microsoft 365 E3</li><li>Microsoft 365 E5</li>
 
 > [!IMPORTANT]
 > The following plans are not supported:
