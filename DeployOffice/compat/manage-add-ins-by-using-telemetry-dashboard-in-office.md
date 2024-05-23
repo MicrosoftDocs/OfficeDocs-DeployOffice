@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Describes how to improve Office performance by managing add-ins by using Office Telemetry Dashboard."
-ms.date: 03/01/2023
+ms.date: 05/21/2024
 ---
 
 # Manage add-ins by using Office Telemetry Dashboard
@@ -30,7 +30,8 @@ Use the Add-in management worksheet to generate a Group Policy Object script tha
   
 **User interface for managing add-ins in Office Telemetry Dashboard**
 
-![This screenshot displays the Add-in Management worksheet from the Office Telemetry Dashboard.](../images/ORK_Telem_ManagingAddInsScreenshot.png)
+:::image type="content" source="../compat/media/manage-add-ins-by-using-telemetry-dashboard-in-office/managing-addins-telemetry.png" alt-text="A screenshot of Office 2013 telemetry data table showing success rate, load time, and application details alongside group policy settings.":::
+
   
 By using the Group Policy Administrative Template files (ADMX/ADML) for Office, you can also create lists of managed add-ins and optionally block any add-in that isn't on the list. Users can't override these settings unless you allow them to.
   
