@@ -24,19 +24,19 @@ Updates can only be applied when Microsoft 365 apps are closed. Therefore, notif
 
 After updates are downloaded, Microsoft 365 attempts to apply the updates. If the updates are still not applied after four days, a message appears in the notification area in Windows, telling the user that updates are available.
   
-:::image type="content" source="/DeployOffice/updates/media/end-user-update-notifications-microsoft-365-apps/office-updates-notification.png" alt-text="Notification indicating that Office updates are available and providing an option to install them.":::
+:::image type="content" source="../updates/media/end-user-update-notifications-microsoft-365-apps/office-updates-notification.png" alt-text="A screenshot of a notification indicating that Office updates are available and providing an option to install them.":::
   
 The message disappears in a few seconds, but the Microsoft 365 icon stays visible in the notification area. If the user opens the message, Microsoft 365 tries to apply the updates. If any Microsoft 365 apps are currently being used, they must be closed.
   
 If the updates still aren't applied after six days, a message appears in any newly opened Microsoft 365 document, reminding the user that updates are available.
   
-:::image type="content" source="/DeployOffice/updates/media/end-user-update-notifications-microsoft-365-apps/updates-available-banner.png" alt-text="Banner in Word indicating that updates for Office are ready to be applied but are blocked by one or more apps.":::
+:::image type="content" source="../updates/media/end-user-update-notifications-microsoft-365-apps/updates-available-banner.png" alt-text="A screenshot of a banner in Word indicating that updates for Office are ready to be applied but are blocked by one or more apps.":::
   
 Users can choose **Update now** to apply the updates. The user is then prompted to close all open Microsoft 365 apps. After the updates are applied, the message disappears.
   
 Users also see notifications if they go to **File > Account** in a Microsoft 365 app. The **Microsoft 365 and Office Updates** section turns yellow if updates are ready to be applied.
   
-:::image type="content" source="/DeployOffice/updates/media/end-user-update-notifications-microsoft-365-apps/office-updates-available.png" alt-text="Notification indicating that updates for Microsoft 365 and Office are ready to install.":::
+:::image type="content" source="../updates/media/end-user-update-notifications-microsoft-365-apps/office-updates-available.png" alt-text="A screenshot of a notification indicating that updates for Microsoft 365 and Office are ready to install.":::
   
 If you don't want your users to see these types of notifications, you can [use Group Policy to hide the notifications](configure-update-settings-microsoft-365-apps.md).
   
@@ -50,7 +50,7 @@ To make sure that your users apply updates to Microsoft 365 Apps, you can [confi
 
 Users are given notifications leading up to the deadline. They see a message in the notification area in Windows, reminding them that updates are ready to be applied.
   
-:::image type="content" source="/DeployOffice/updates/media/end-user-update-notifications-microsoft-365-apps/updates-ready-applied.png" alt-text="Notification indicating that updates required by the system admin are blocked by one or more apps, with a specific time for Office restart.":::
+:::image type="content" source="../updates/media/end-user-update-notifications-microsoft-365-apps/updates-ready-applied.png" alt-text="A screenshot of a notification indicating that updates required by the system admin are blocked by one or more apps, with a specific time for Office restart.":::
   
 This message appears every two hours. It's shown 60 minutes, 30 minutes, 15 minutes, and five minutes before the deadline.
   
