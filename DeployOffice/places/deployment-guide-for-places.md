@@ -84,6 +84,8 @@ See the table below to learn more about activating different clients for Places:
 
 [Opt in to the Microsoft Places Public Preview](/deployoffice/places/opt-in-places-preview)
 
+[Configure the Places iOS app](/deployoffice/places/configure-the-ios-app)
+
 [Release notes for Microsoft Teams Rooms](/microsoftteams/rooms/rooms-release-note)
 
 [Microsoft Teams Health and usage reports](/microsoftteams/rooms/health-and-usage-reports)
