@@ -35,7 +35,7 @@ The **Overview** worksheet provides a large picture view of both the stability a
   
 **Overview worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/overview-worksheet.png" alt-text="Dashboard showing document and solution stability and office deployment trends.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/overview-worksheet.png" alt-text="A screenshot of a dashboard showing document and solution stability and office deployment trends.":::
   
 There are three primary tasks that you can perform on the **Overview** worksheet.
   
@@ -54,7 +54,7 @@ The following screenshot shows the **Documents** worksheet.
   
 **Documents worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/frequently-used-documents.png" alt-text="List of frequently used documents with office usage and telemetry data.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/frequently-used-documents.png" alt-text="A screenshot of a list of frequently used documents with office usage and telemetry data.":::
   
 There are two main sections on the Documents worksheet:
   
@@ -108,7 +108,7 @@ The following screenshot shows the **Documents details** worksheet.
   
 **Document details worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/document-details.png" alt-text="Document details for three Month Snapshot.xlsx including user and computer information.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/document-details.png" alt-text="A screenshot of document details for three Month Snapshot.xlsx including user and computer information.":::
   
 The following table describes each column in the **Document details** worksheet. 
   
@@ -141,7 +141,7 @@ The following screenshot shows the **Document issues** worksheet.
   
 **Document issues worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/document-issues.png" alt-text="Document issues for Vacations.xlsx showing application crashes.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/document-issues.png" alt-text="A screenshot of document issues for Vacations.xlsx showing application crashes.":::
   
 The following table describes each column in the **Document issues** worksheet. 
   
@@ -165,7 +165,7 @@ The following screenshot shows the **Documents sessions** worksheet.
   
 **Document sessions worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/document-sessions.png" alt-text="Document sessions for Vacations.xlsx with event details and user information.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/document-sessions.png" alt-text="A screenshot of document sessions for Vacations.xlsx with event details and user information.":::
   
 The following table describes each column in the **Document sessions** worksheet. 
   
@@ -200,7 +200,7 @@ The following screenshot shows the **Solutions** worksheet.
   
 **Solutions worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/frequently-used-solutions.png" alt-text="List of frequently used solutions with office usage and telemetry data.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/frequently-used-solutions.png" alt-text="A screenshot of a list of frequently used solutions with office usage and telemetry data.":::
   
 After data is collected, you can manage Office add-ins by using the **Add-in management mode** link on the **Solutions** worksheet. For more information, see [Let's manage add-ins using Telemetry Dashboard](/archive/blogs/office_resource_kit/lets-manage-add-ins-using-telemetry-dashboard).
   
@@ -261,7 +261,7 @@ The following screenshot shows the **Solution details** worksheet.
   
 **Solution details worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/solution-details.png" alt-text="Detailed list of OSCAddin.Connect solution users, versions, and load times.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/solution-details.png" alt-text="A screenshot of a detailed list of OSCAddin.Connect solution users, versions, and load times.":::
   
 The following table describes each column in the **Solution details** worksheet. 
   
@@ -295,7 +295,7 @@ The following screenshot shows the **Solution issues** worksheet.
   
 **Solution issues worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/solution-issues.png" alt-text="Solution issues for OSCAddin.Connect showing failed loads and crashes.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/solution-issues.png" alt-text="A screenshot of solution issues for OSCAddin.Connect showing failed loads and crashes.":::
   
 The following table describes each column in the **Solution issues** worksheet. 
   
@@ -319,7 +319,7 @@ The following screenshot shows the **Solution sessions** worksheet.
   
 **Solution sessions worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/solution-sessions.png" alt-text="Solution sessions for OSCAddin.Connect with event details and user information.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/solution-sessions.png" alt-text="A screenshot of solution sessions for OSCAddin.Connect with event details and user information.":::
   
 The following table describes each column in the **Solution sessions** worksheet. 
   
@@ -356,7 +356,7 @@ The following screenshot shows the **Telemetry Processor** worksheet:
   
 **Telemetry Processor worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/telemetry-processor.png" alt-text="Telemetry Processor health status with details on user and computer connections.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/telemetry-processor.png" alt-text="A screenshot of Telemetry Processor health status with details on user and computer connections.":::
   
 The following table describes each column in the **Telemetry Processor** worksheet. 
   
@@ -376,9 +376,9 @@ The following table describes the status that is represented by the symbols that
 
 |**Symbol**|**Status description**|
 |:-----|:-----|
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/green-status.png" alt-text="Green status icon indicating the last update was less than a day ago.":::|The last updated date and time for the processor is less than a day ago.  <br/> |
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/yellow-status.png" alt-text="Yellow status icon indicating 5% or more users aren't uploading data for the last 14 days.":::|5% or more of the users for this processor haven't uploaded data for the last 14 days. Select the processor name to open the **Agents** worksheet so that you can view which users' computers aren't sending data.  <br/> |
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/red-status.png" alt-text="Red status icon indicating the last update was older than a day.":::|The last updated date and time for the processor is older than a day. When you see this status, you should investigate whether the processor is running correctly on the computer. <br/> <br/> You find information about how to troubleshoot Office Telemetry Processor in [Troubleshooting Office Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/green-status.png" alt-text="A screenshot of the green status icon indicating the last update was less than a day ago.":::|The last updated date and time for the processor is less than a day ago.  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/yellow-status.png" alt-text="A screenshot of the yellow status icon indicating 5% or more users aren't uploading data for the last 14 days.":::|5% or more of the users for this processor haven't uploaded data for the last 14 days. Select the processor name to open the **Agents** worksheet so that you can view which users' computers aren't sending data.  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/red-status.png" alt-text="A screenshot of the red status icon indicating the last update was older than a day.":::|The last updated date and time for the processor is older than a day. When you see this status, you should investigate whether the processor is running correctly on the computer. <br/> <br/> You find information about how to troubleshoot Office Telemetry Processor in [Troubleshooting Office Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
 |(No symbol)  <br/> |The last updated date and time for the processor was more than 14 days ago.  <br/> |
    
 > [!NOTE]
@@ -392,7 +392,7 @@ The following screenshot shows the **Agents** worksheet.
   
 **Agents worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/agents-worksheet.png" alt-text="Agents worksheet showing users uploading data to the Telemetry Processor.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/agents-worksheet.png" alt-text="A screenshot of agents worksheet showing users uploading data to the Telemetry Processor.":::
   
 The following table describes each column in the **Agents** worksheet. 
   
@@ -411,9 +411,9 @@ The following table describes the status that is represented by the symbols that
   
 |**Symbol**|**Status description**|
 |:-----|:-----|
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/green-status.png" alt-text="Green status icon indicating the last update was less than a day ago.":::|The last updated date and time for the user is less than a day ago.  <br/> |
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/yellow-status.png" alt-text="Yellow status icon indicating the last update was between 2 and 14 days ago.":::|The last updated date and time for the user is between 2 and 14 days ago. Occasionally, you'll see this icon when the user's computer hasn't uploaded data for more than a day (for example, Monday morning after the weekend).  <br/> |
-|:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/red-status.png" alt-text="Red status icon indicating the last update was between 15 and 30 days ago.":::|The last updated date and time for the user is between 15 and 30 days ago. When you see this status, you should investigate whether the agent on this user's computer is configured correctly.  <br/><br/>  You find information about how to troubleshoot agents in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/green-status.png" alt-text="A screenshot of the green status icon indicating the last update was less than a day ago.":::|The last updated date and time for the user is less than a day ago.  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/yellow-status.png" alt-text="A screenshot of the yellow status icon indicating the last update was between 2 and 14 days ago.":::|The last updated date and time for the user is between 2 and 14 days ago. Occasionally, you'll see this icon when the user's computer hasn't uploaded data for more than a day (for example, Monday morning after the weekend).  <br/> |
+|:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/red-status.png" alt-text="A screenshot of the red status icon indicating the last update was between 15 and 30 days ago.":::|The last updated date and time for the user is between 15 and 30 days ago. When you see this status, you should investigate whether the agent on this user's computer is configured correctly.  <br/><br/>  You find information about how to troubleshoot agents in [Troubleshooting Telemetry Dashboard deployments](deploy-telemetry-dashboard.md#tshooting).  <br/> |
 |(No symbol)  <br/> |The last updated date and time for the processor was 31 or more days ago.  <br/> |
    
 > [!NOTE]
@@ -428,7 +428,7 @@ In the following screenshot of the **Deployments** worksheet, you can see how ma
   
 **Deployments worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="/DeployOffice/compat/media/telemetry-dashboard-worksheet-reference/deployments-worksheet.png" alt-text="List of office clients deployed by version and CPU architecture.":::
+:::image type="content" source="../compat/media/telemetry-dashboard-worksheet-reference/deployments-worksheet.png" alt-text="A screenshot of a list of office clients deployed by version and CPU architecture.":::
   
 You can see that there are still 32-bit computers that are running Office 2003. You might want to contact these users to understand if they have any concerns about how to upgrade. You can also create a custom report to show more information about these users, such as their computer hardware.
   
