@@ -32,11 +32,17 @@ Use [Set-PlaceV3](../powershell/set-placev3.md) to add more metadata on building
 
 * You need to be assigned permissions before you can run this cmdlet. You must have both the Exchange MailRecipients role and the Places TenantPlacesManagement role.
 
+## Enable your organization to use the Places Directory
+Currently, you must opt-in before setting up your Places Directory.  This opt-in step to enable directory is only required during the preview.
+
 > [!NOTE]
->
-> 1. You cannot setup only buildings or only floors using the quick setup with CSV import. The purpose of this tutorial is to setup the basic hierarchy of your places, which requires creating buildings and floors as well as linking rooms to the buildings/floors.  If you only want to create buildings, use [New-Place](../powershell/new-place.md).
->
-> 2. Setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. Once a hierarchy is set up, the only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
+> Once you enable Places Directory for your organization, you cannot disable the directory.  However, setting up your directory hierarchy of places doesn't change or affect the experience in Room Finder. The only visible change to your organization is in the Microsoft Places work plans experiences in Outlook and Teams. Users will now see an option to select a specific building when setting their work location. However, users are still able to select Office as their work location and aren't required to select a specific building location.
+
+This example enables your organization to use the Places Directory.
+
+```powershell
+Set-PlacesSettings -Collection Places -EnableBuildings 'Default:true'
+```
 
 ## Create buildings, floors, and associate them to rooms/workspaces
 
@@ -59,14 +65,14 @@ Please choose the desired option before continuing:
 1. Prepare the file for import.
 
    * Add or correct the building name and floor name in the first two columns (InferredBuildingName, InferredFloorName). The other columns with room metadata are provided only for reference as you finalize your building and floor names.
-
+      
    * Remove all columns except InferredBuildingName, InferredFloorName, and PrimarySmtpAddress.
-
+      
 1. Run Initialize-Places cmdlet again. Select Option 2 to import the CSV.
    * Be sure that your CSV file is saved and closed before trying to import.
-
+      
    * You'll see details in the PowerShell window as creation is occurring, and a file summarizing the results are exported to the same folder as your import file.
-
+      
 > [!WARNING]
 > It may take up to 24 hours to see the updated rooms/workspaces in Microsoft Places. We are working on eliminating this delay. The newly created buildings and floors will appear immediately.
 >
@@ -100,7 +106,7 @@ You can use the exported PowerShell script to run the commands yourself rather t
 
 ### Can I run import with only Building names?
 
-No. The purpose of this process is to help you associate rooms to floors & buildings. It requires all three columns to exist, although floor name can be empty, which results in the default "Unknown" name for the floor.
+No. The purpose of this process is to help you associate rooms to floors & buildings. It requires all three columns to exist, although floor name can be empty, which results in the default "Unknown" name for the floor. If you only want to create buildings, use [New-Place](../powershell/new-place.md).
 
 ### How do I update room data like capacity or display name?
 
