@@ -3,7 +3,7 @@ title: "Azure Maps Creator Guide for Microsoft Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/22/2024
+ms.date: 05/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -71,7 +71,7 @@ The facility level specifies which DWG file to use for which level. A level must
 
 The following screenshot is an example of a sample building. The building has three levels uploaded through three DWG files: basement.dwg, ground.dwg, and level_2.dwg. The file name is read from the ZIP file and prefilled. You need to provide a friendly level name and ordinal (or, the position of the floor within the building) of the level.
 
-![Screenshot of the Create Configuration dialog box.](../images/places/maps-creator-guide-001.png)
+:::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-001.png" alt-text="A screenshot of the Create Configuration dialog box.":::
 
 #### Georeferences
 
@@ -79,13 +79,13 @@ Georeferencing is used to specify the exterior profile, location, and rotation o
 
 You begin by selecting the DWG layer that represents the building footprint. The name of this layer can vary across different files because it's a user-defined value. You then position the map by searching for a location/address or latitude/longitude. Once you see where your position should be, pan the map and rotate the building to the desired position.
 
-![Screenshot of the Create Configuration dialog box showing the Georeference.](../images/places/maps-creator-guide-002.png)
+:::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-002.png" alt-text="A screenshot of the Create Configuration dialog box showing the Georeference.":::
 
 #### Units
 
 Map one or more DWG layers to the Unit feature class. An instance of a Unit feature class object is produced for each entity in the DWG layer. Optionally, you can map a DWG layer that contains text values to be used for Unit names. Unit categories can also be defined by providing a CSV that maps a DWG text value to a category value.
 
-![Screenshot of the Create Configuration dialog box showing Units.](../images/places/maps-creator-guide-003.png)
+:::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-003.png" alt-text="A screenshot of the Create Configuration dialog box showing Units.":::
 
 ## Azure Maps Creator Setup  
 
@@ -93,17 +93,17 @@ You can use the Azure Maps DWG building conversion tool to convert your floo
 
 To process DWG files, enter the geography of your Azure Maps Creator resource, the subscription key of your Azure Maps account, and file name of the ZIP package containing all your DWG files, then select **Process**. This process can take several minutes to complete.
 
-![Screenshot of the DWG Building Conversion for Places dialog box.](../images/places/maps-creator-guide-004.png)
+:::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-004.png" alt-text="A screenshot of the DWG Building Conversion for Places dialog box.":::
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home), or create an Azure subscription. For more information on Azure products, see [Build in the cloud with an Azure free account](https://azure.microsoft.com/free/search/).
 2. Register for the feature flag. Sign on to your Azure account and navigate to subscriptions.
 3. Under **Create a resource**, select **Subscriptions**.
 
-   ![Screenshot of the options to create a Subscriptions resource.](../images/places/maps-creator-guide-005.png)
+   :::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-005.png" alt-text="A screenshot of the options to create a Subscriptions resource.":::
 
 4. Navigate to **Preview features**.
 
-   ![Screenshot of how to navigate to Preview features.](../images/places/maps-creator-guide-006.png)
+   :::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-006.png" alt-text="A screenshot of how to navigate to Preview features.":::
 
 5. Search for **Microsoft 365 Places Preview**.
 6. Register for **Microsoft 365 Places Preview**.
@@ -126,8 +126,8 @@ To process DWG files, enter the geography of your Azure Maps Creator resource, t
 
 1. When you finish configuring all your buildings, select the **Review + Create** button to review all your building details.
 
-   ![Screenshot of the Create manifest dialog box.](../images/places/maps-creator-guide-007.png)
+   :::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-007.png" alt-text="A screenshot of the Create manifest dialog box.":::
 
 2. Select **Download IMDF** to continue the Places maps onboarding process.
 
-   ![Screenshot of the Azure Maps Creator dialog box.](../images/places/maps-creator-guide-008.png)
+   :::image type="content" source="./media/azure-maps-creator-guide/maps-creator-guide-008.png" alt-text="A screenshot of the Azure Maps Creator dialog box.":::

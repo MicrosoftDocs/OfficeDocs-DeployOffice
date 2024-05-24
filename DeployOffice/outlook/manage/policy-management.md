@@ -22,7 +22,7 @@ App-wide settings, including Theme, Text Size and Spacing, and Diagnostic Data a
 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
 
-:::image type="content" source="/DeployOffice/images/outlook-policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="/DeployOffice/images/outlook-policy-management/policy-email-accounts-settings-lb.png":::
+:::image type="content" source="../manage/media/policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="../manage/media/policy-management/policy-email-accounts-settings-lb.png":::
 
 We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
@@ -96,14 +96,14 @@ For more information, see [Manage Loop components in OneDrive and SharePoint](/m
 ## Diagnostic Data and Connected Experiences
 Organizations can control whether connected experiences or diagnostic data can be sent from the new Outlook for Windows. This capability is part of our commitment to provide you information and control over your privacy.
 
-:::image type="content" source="/DeployOffice/images/outlook-policy-management/policy-privacy-settings.png" alt-text="Screenshot that shows how to turn on optional connected experiences in privacy settings." lightbox="/DeployOffice/images/outlook-policy-management/policy-privacy-settings-lb.png":::
+:::image type="content" source="../manage/media/policy-management/policy-privacy-settings.png" alt-text="Screenshot that shows how to turn on optional connected experiences in privacy settings." lightbox="../manage/media/policy-management/policy-privacy-settings-lb.png":::
 
 For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
 
 ## In-product feedback
 New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-user-control#in-product-feedback) that can be managed as part of Microsoft 365 wide settings for Feedback in Cloud Policy:
 
-:::image type="content" source="/DeployOffice/images/outlook-policy-management/policy-feeback.png" alt-text="Screenshot that shows how to provide in-product feedback through Feedback to Microsoft." lightbox="/DeployOffice/images/outlook-policy-management/policy-feeback-lb.png":::
+:::image type="content" source="../manage/media/policy-management/policy-feeback.png" alt-text="Screenshot that shows how to provide in-product feedback through Feedback to Microsoft." lightbox="../manage/media/policy-management/policy-feeback-lb.png":::
 
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 

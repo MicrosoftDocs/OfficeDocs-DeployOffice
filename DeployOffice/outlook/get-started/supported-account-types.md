@@ -29,7 +29,7 @@ The preview version of the new Outlook for Windows supports the following accoun
 - **iCloud** 
 - **Other accounts connecting via IMAP** 
 
-:::image type="content" source="/DeployOffice/images/outlook-supported-accounts/add-email-accounts.png" alt-text="Screenshot of the list of supported email accounts." lightbox="/DeployOffice/images/outlook-supported-accounts/add-email-accounts-lb.png":::
+:::image type="content" source="../get-started/media/supported-account-types/add-email-accounts.png" alt-text="Screenshot of the list of supported email accounts." lightbox="../get-started/media/supported-account-types/add-email-accounts-lb.png":::
 
 Currently, POP and on-premises Exchange accounts aren't supported. When attempting to add an account that isn't supported, an error message is displayed: **We couldn’t reach the email server. Please try again.** 
 

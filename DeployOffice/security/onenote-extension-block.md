@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how OneNote blocks embedded files that have dangerous extensions."
-ms.date: 05/01/2023
+ms.date: 05/24/2024
 ---
 
 # OneNote blocks embedded files that have dangerous extensions
@@ -18,7 +18,7 @@ OneNote is making an important change to how it treats embedded files that have 
 
 With this important change, OneNote blocks users from directly opening an embedded file with a dangerous extension and instead shows them the following dialog.
 
-![Dialog telling users their admin has blocked opening the file type in OneNote](../images/security/onenote-dialog-block.png)
+:::image type="content" source="./media/onenote-extension-block/onenote-dialog-block.png" alt-text="A screenshot of a dialog box telling users their admin blocked opening the file type in OneNote.":::
 
 This change is planned to begin rolling out with Version 2304 in April 2023. For more information, see [Versions of OneNote affected by this change](#versions-of-onenote-affected-by-this-change).
 
@@ -26,9 +26,9 @@ For more information about which extensions are considered dangerous and are blo
 
 ## How to open the embedded file (if necessary)
 
-If you trust the person who sent you the embedded file, and you need to open the embedded file, then save the file to your local device, and open the file from there.
+If you trust the sender and need to open the embedded file, save it to your device and open it from there.
 
-If you have other security measures in place, such as antivirus software or [Smart App Control](https://support.microsoft.com/topic/285ea03d-fa88-4d56-882e-6698afdb7003), it's possible that the file will be blocked by those tools when you try to save or open it from your local device.
+If you have security measures like antivirus software or [Smart App Control](https://support.microsoft.com/topic/285ea03d-fa88-4d56-882e-6698afdb7003), these tools might block the file when you try to save or open it from your device.
 
 ## Versions of OneNote affected by this change
 
@@ -52,9 +52,9 @@ The following table shows the version, for each update channel, in which the blo
 
 By default, OneNote blocks the same extensions that Outlook, Word, Excel, and PowerPoint do. For a list of those extensions, see [Blocked attachments in Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519).
 
-### Block additional file extensions
+### Block more file extensions
 
-If you want to block more extensions, you can enable the “Block additional file extensions for OLE embedding” policy and specify which other extensions you want to block. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
+If you want to block more extensions, you can enable the "Block additional file extensions for OLE embedding" policy and specify which other extensions you want to block. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
 
 Changes you make to this policy also affect other applications, such as Word, Excel, and PowerPoint.
 
@@ -64,7 +64,7 @@ Changes you make to this policy also affect other applications, such as Word, Ex
 
 ### Allow file extensions that are blocked by default
 
-If you need to allow certain extensions that are blocked by default, you can enable “Allow file extensions for OLE embedding” policy and specify which extensions to allow. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
+To allow certain blocked extensions, enable the "Allow file extensions for OLE embedding" policy and specify the extensions. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
 
 > [!NOTE]
 > You can only use this policy if you’re using Microsoft 365 Apps for enterprise. Policies aren’t available for Microsoft Apps for Business.
