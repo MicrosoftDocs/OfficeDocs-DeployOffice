@@ -22,7 +22,7 @@ Your work location, part of your profile in Microsoft Teams and Microsoft 365, c
 > [!NOTE]
 > The Microsoft Teams Public Preview Ring is an opt-in feature. For more information, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
 
-## What’s New (Public Preview)
+## What’s new (public preview)
 
 Many companies have multiple buildings, on-site work options, and scheduling choices. Your profile card makes it easier for people in your organization (including guest accounts) to quickly get an overview of your online status, work hours, and work location (remote, in office, or working from a specific building).
 
