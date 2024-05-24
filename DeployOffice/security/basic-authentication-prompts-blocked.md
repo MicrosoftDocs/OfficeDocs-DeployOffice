@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks Basic authentication sign-in prompts."
-ms.date: 03/13/2024
+ms.date: 05/24/2024
 ---
 
 # Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps
@@ -68,7 +68,7 @@ The following table shows the version, for each update channel, in which the war
 
 The following flowchart graphic shows how Microsoft 365 Apps determines whether to open a file if the server uses Basic authentication.
 
-![Flowchart diagram that shows how Microsoft 365 Apps determines whether to show Basic authentication prompts](../images/security/basic-auth-flow.png)
+:::image type="content" source="./media/basic-authentication-prompts-blocked/basic-auth-flow.png" alt-text="A screenshot of a flowchart illustrating the steps and conditions for accessing a file using a Basic Auth connection, including conditions for blocking or allowing access.":::
 
 The following steps explain the information in the flowchart graphic.
 
@@ -109,10 +109,14 @@ The following table shows the level of protection you get with each state of the
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Enabled </br>(no hosts specified) |Users are blocked from opening files located on web servers that use Basic authentication. |
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts are allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled |Users are blocked from opening files located on web servers that use Basic authentication. |
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected</br> **[recommended]**|Not Configured |Users are blocked from opening files located on web servers that use Basic authentication. |
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
+| Protected |Enabled </br>(no hosts specified) |Users are blocked from opening files located on web servers that use Basic authentication. |
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected.":::
+|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts are allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
+| Protected |Disabled |Users are blocked from opening files located on web servers that use Basic authentication. |
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
+| Protected</br> **[recommended]**|Not Configured |Users are blocked from opening files located on web servers that use Basic authentication. |
 
 ### Allow Basic Authentication prompts from network proxies
 
@@ -122,6 +126,9 @@ The following table shows the level of protection you get with each state of the
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected |Disabled | Network proxies don't show Basic authentication prompts.|
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enabled|Network proxies show Basic authentication prompts. |
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected </br>**[recommended]**|Not Configured |Network proxies don't show Basic authentication prompts. |
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
+| Protected |Disabled | Network proxies don't show Basic authentication prompts.|
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::
+| Not protected|Enabled|Network proxies show Basic authentication prompts. |
+|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
+| Protected </br>**[recommended]**|Not Configured |Network proxies don't show Basic authentication prompts. |
