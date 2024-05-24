@@ -10,12 +10,12 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: true
-description: "Using work location to notify others of where a user will be working, remotely or in-office."
+description: "Using work location to notify others of where a user is working, remotely or in office."
 ---
 
 # Expanding Presence to include Work location in Microsoft Teams
 
-Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work schedule. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see your out of office time reflected in your location.
+Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work schedule. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see out of office time reflected in your location.
 
 ## Prerequisites
 
