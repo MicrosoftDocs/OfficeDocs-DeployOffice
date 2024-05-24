@@ -20,7 +20,7 @@ Your work location, part of your profile in Microsoft Teams and Microsoft 365, c
 ## Prerequisites
 
 > [!NOTE]
-> The Microsoft Teams Public Preview Ring is an opt-in feature. For more information, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
+> The Microsoft Teams public preview is an opt-in feature. For more information, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
 
 ## What’s new (public preview)
 
