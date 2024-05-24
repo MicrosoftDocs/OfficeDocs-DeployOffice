@@ -107,17 +107,6 @@ This policy allows you to specify which hosts can show Basic authentication sign
 
 The following table shows the level of protection you get with each state of the policy.
 
-|Icon|Protection level|Policy state|Description|
-|-----|---------|---------|---------|
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
-| Protected |Enabled </br>(no hosts specified) |Users are blocked from opening files located on web servers that use Basic authentication. |
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected.":::
-|Partially protected|Enabled </br>(hosts specified)| Basic authentication prompts are allowed only from the hosts specified. </br></br> If you specify multiple hosts, separate them by a semi-colon.|
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
-| Protected |Disabled |Users are blocked from opening files located on web servers that use Basic authentication. |
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
-| Protected</br> **[recommended]**|Not Configured |Users are blocked from opening files located on web servers that use Basic authentication. |
-
 | Icon | Protection level | Policy state | Description |
 |-----|---------|---------|---------|
 | :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected | Enabled </br>(no hosts specified) | Users are blocked from opening files located on web servers that use Basic authentication. |
@@ -125,26 +114,14 @@ The following table shows the level of protection you get with each state of the
 | :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected | Disabled | Users are blocked from opening files located on web servers that use Basic authentication. |
 | :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected</br> **[recommended]** | Not Configured | Users are blocked from opening files located on web servers that use Basic authentication. |
 
-| Icon | Protection level | Policy state | Description |
-|-----|-------------------|--------------|-------------|
-| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected | Enabled (no hosts specified) | Users are blocked from opening files located on web servers that use Basic authentication. |
-| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected."::: | Partially protected | Enabled (hosts specified) | Basic authentication prompts are allowed only from the hosts specified. If you specify multiple hosts, separate them by a semi-colon. |
-| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected | Disabled | Users are blocked from opening files located on web servers that use Basic authentication. |
-| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected **[recommended]** | Not Configured | Users are blocked from opening files located on web servers that use Basic authentication. |
-
-
-
 ### Allow Basic Authentication prompts from network proxies
 
 This policy controls whether network proxies are allowed to show Basic authentication prompts.
 
 The following table shows the level of protection you get with each state of the policy.
 
-|Icon|Protection level|Policy state|Description|
-|-----|---------|---------|---------|
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
-| Protected |Disabled | Network proxies don't show Basic authentication prompts.|
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::
-| Not protected|Enabled|Network proxies show Basic authentication prompts. |
-|:::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::
-| Protected </br>**[recommended]**|Not Configured |Network proxies don't show Basic authentication prompts. |
+| Icon | Protection level | Policy state | Description |
+|-----|-------------------|--------------|-------------|
+| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected | Disabled | Network proxies don't show Basic authentication prompts. |
+| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected."::: | Not protected | Enabled | Network proxies show Basic authentication prompts. |
+| :::image type="content" source="./media/basic-authentication-prompts-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected."::: | Protected **[recommended]** | Not Configured | Network proxies don't show Basic authentication prompts. |
