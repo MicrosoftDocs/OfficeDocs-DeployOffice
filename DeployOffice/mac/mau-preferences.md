@@ -12,7 +12,7 @@ ms.collection: Tier2
 recommendations: false 
 ai-usage: ai-assisted
 description: Learn how to use preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise to meet the needs of various users.
-ms.date: 04/9/2024 
+ms.date: 05/24/2024 
 ---  
 
 # Configuring Preferences for Microsoft AutoUpdate (MAU) in Microsoft 365 Enterprise
@@ -24,6 +24,19 @@ As an admin for Microsoft 365 Enterprise, you can tailor Microsoft AutoUpdate (M
 Preferences for MAU are settings that allow you to customize the behavior of Microsoft AutoUpdate, which is responsible for keeping Microsoft 365 applications up-to-date. By setting these preferences, you manage update frequency and channels, ensuring users receive the latest features and security updates with minimal disruptions.
 
 For more detailed information on preferences and their deployment, see [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md).
+
+## IgnoreUIOpenAfterInstall
+
+Determines whether to launch MAU GUI after MAU install/update. This is useful if IT Admin does not want users to see MAU GUI after an update.
+
+| Category        | Details |
+| --------------- | ------- |
+| Domain          | com.microsoft.autoupdate2 |
+| Type            | Boolean |
+| Default Value   | FALSE |
+| Manageable      | Yes |
+| Accepted Values | TRUE / FALSE / 1 / 0 |
+| Comments        | Setting this to TRUE will prevent MAU GUI from launching after a MAU install or an update.<br><br>Note: This does not prevent MAU GUI from launching as a result of finding updates in AutomaticCheck mode. |
 
 ## AcknowledgedDataCollectionPolicy
 
@@ -54,7 +67,7 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Default Value   | AutomaticDownload |
 | Manageable      | Yes |
 | Accepted Values | AutomaticDownload<br>AutomaticCheck |
-| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>The following values are deprecated: <ul><li>Manual – MAU checks only for its own updates, not for other updates.</li><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
+| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>Manual - MAU checks only for its own updates, not for other updates. This option has been removed from GUI. Setting to Manual results in MAU not offering updates automatically.The following value is deprecated: <ul><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
 
 ## ChannelName
 
