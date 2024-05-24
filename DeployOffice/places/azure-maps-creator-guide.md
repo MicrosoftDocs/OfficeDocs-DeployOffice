@@ -3,7 +3,7 @@ title: "Azure Maps Creator Guide for Microsoft Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/22/2024
+ms.date: 05/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
