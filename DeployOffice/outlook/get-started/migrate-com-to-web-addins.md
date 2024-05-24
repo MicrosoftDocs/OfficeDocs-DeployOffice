@@ -76,7 +76,7 @@ If your organization is currently using web add-ins, no extra effort is required
    - Some developers build private web add-ins that aren't published to the store. Check with your partners to confirm if they developed or are developing a web add-in.
 
    > [!TIP]
-   > By default, users are given the option to automatically install web add-in counterparts of their existing COM add-ins when they switch to new Outlook for Windows. For more information, see [Automatically install existing add-ins in new Outlook for Windows](install-web-add-ins.md).
+   > By default, users are given the option to install web add-in counterparts of their existing COM add-ins when they switch to new Outlook for Windows. For more information, see [Install web add-in counterparts of existing COM add-ins in new Outlook for Windows](install-web-add-ins.md).
 
 4. **Explore native Outlook capabilities**. If your mission critical COM add-ins don't have an equivalent web add-in, explore new Outlook’s native capabilities and see if they work for your scenario. Some examples include:
 

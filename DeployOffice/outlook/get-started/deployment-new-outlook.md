@@ -18,7 +18,7 @@ ms.date: 05/21/2024
 
 The new Outlook for Windows client installer is now available either from the Microsoft Store or the Office Content Delivery Network (CDN).
 
-The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to [migrate settings](https://prod.support.services.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc) and [automatically install add-ins](install-web-add-ins.md) from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
+The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to [migrate settings](https://prod.support.services.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc) and [install add-ins](install-web-add-ins.md) from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
 
 > [!NOTE]
 > Users need to sign back in to accounts that can’t automatically authenticate via [Windows Single Sign-On](/DeployOffice/outlook/get-started/supported-account-types).
