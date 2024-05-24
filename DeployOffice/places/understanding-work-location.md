@@ -15,12 +15,16 @@ description: "Using work location to notify others of where a user will be worki
 
 # Expanding Presence to include Work location in Microsoft Teams
 
-Work location is part of a user's profile in Microsoft Teams (and throughout Microsoft 365). Users can set up their work location for the day in Microsoft Teams thereby sharing visibility of where they will be working: in-office or remotely. This makes it easier to coordinate collaboration and in-person meetings. By default, anyone in an organization using Teams can see locations set by others.
+Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work schedule. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see your out of office time reflected in your location.
 
 ## Prerequisites
 
 > [!NOTE]
 > The Microsoft Teams Public Preview Ring is an opt-in feature. For more information, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client).
+
+## What’s New (Public Preview)
+
+Many companies have multiple buildings, on-site work options, and scheduling choices. Your profile card makes it easier for people in your organization (including guest accounts) to quickly get an overview of your online status, work hours, and work location (remote, in office, or working from a specific building).
 
 ## Related topics
 
