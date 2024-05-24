@@ -24,7 +24,7 @@ Your work location, part of your profile in Microsoft Teams and Microsoft 365, c
 
 ## What’s new (public preview)
 
-Many companies have multiple buildings, on-site work options, and scheduling choices. Your profile card makes it easier for people in your organization (including guest accounts) to quickly get an overview of your online status, work hours, and work location (remote, in office, or working from a specific building).
+Many companies have multiple buildings, on-site work options, and scheduling choices. Microsoft Teams is introducing the ability for you to to set and view specific work times and locations. Your profile card makes it easier for people in your organization (including guest accounts) to quickly get an overview of your online status, work hours, and work location (remote, in office, or working from a specific building).
 
 ## Related topics
 
