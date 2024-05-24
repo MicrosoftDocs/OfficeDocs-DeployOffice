@@ -45,6 +45,9 @@ The following options are displayed:
        -m | --message <msg>  Optional message to display on macOS banner notification to notify user
 ```
 
+> [!NOTE]
+> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**,**OneNote**
+
 ## Examples of how to use msupdate
 - Display the current configuration parameters for MAU:
 `./msupdate --config`
