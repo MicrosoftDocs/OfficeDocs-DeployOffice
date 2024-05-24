@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 12/12/2023
+ms.date: 05/24/2024
 ---
 
 # Macros from the internet are blocked by default in Office
@@ -18,7 +18,8 @@ VBA macros are a common way for malicious actors to gain access to deploy malwar
 
 This change affects how users interact with files from the internet, like email attachments containing macros. Now, when users open such a file, they see the following message:
 
-![Security risk banner about blocked macros with a Learn More button](../images/security/vba-security-risk-banner.png)
+:::image type="content" source="./media/internet-macros-blocked/vba-security-risk-banner.png" alt-text="A screenshot of a security risk banner indicating that Microsoft blocked macros from running because the source of the file is untrusted.":::
+
 
 The **Learn More** button goes to an [article for end users and information workers](https://support.microsoft.com/topic/0952faa0-37e7-4316-b61d-5b5ed6024216) that contains information about the security risk of bad actors using macros, safe practices to prevent phishing and malware, and instructions on how to enable these macros (if needed).
 
@@ -78,7 +79,8 @@ The change doesn’t affect Office on a Mac, Office on Android or iOS devices, o
 
 The following flowchart graphic shows how Office determines whether to run macros in a file from the internet.
 
-![Flowchart that shows how Office determines whether to run macros in files from the internet](../images/security/vba-macro-flowchart.png)
+:::image type="content" source="./media/internet-macros-blocked/vba-macro-flowchart.png" alt-text="A screenshot of a flowchart detailing the process and conditions for enabling or blocking VBA macros in files with MOTW attributes.":::
+
 
 The following steps explain the information in the flowchart graphic, except for Excel Add-in files. For more information about those files, see [Macro-enabled add-in files for PowerPoint and Excel](#macro-enabled-add-in-files-for-powerpoint-and-excel). Also, if a file is located on a network share that isn’t in the **Local intranet** zone or isn’t a trusted site, macros are blocked in that file.
 
@@ -116,7 +118,8 @@ The following steps explain the information in the flowchart graphic, except for
 
 To unblock macros in a file, like one from the internet or an email attachment, remove the Mark of the Web on your local device. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
-![File properties dialog showing the choice to unblock](../images/security/vba-unblock-file-properties.PNG)
+:::image type="content" source="./media/internet-macros-blocked/vba-unblock-file-properties.PNG" alt-text="A screenshot of the file properties dialog box for a macro-enabled document, highlighting the security option to unblock the file.":::
+
 
 > [!NOTE]
 > - In some cases, usually for files on a network share, users might not see the **Unblock** checkbox for a file where macros are being blocked. For those cases, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
@@ -144,7 +147,8 @@ For example, if users are accessing a network share by using its IP address, mac
 
 For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
 
-![Trusted sites dialog](../images/security/trusted-sites-dialog-example.png)
+:::image type="content" source="./media/internet-macros-blocked/trusted-sites-dialog-example.png" alt-text="A screenshot of the Trusted Sites dialog box showing the option to add or remove websites and manage security settings for trusted sites.":::
+
 
 If you want to add URLs that begin with http:// or network shares, clear the **Require server verification (https:) for all sites in this zone** checkbox.
 
@@ -296,9 +300,9 @@ Which state you choose for the policy determines the level of protection you're 
 
 |Icon|Protection level|Policy state|Description|
 |-----|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)| Protected **[recommended]**|Enabled |Users are blocked from running macros in files obtained from the internet. <br/><br/>Part of the Microsoft recommended security baseline. |
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Disabled| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.         |
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected |Not Configured| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.            |
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::| Protected **[recommended]**|Enabled |Users are blocked from running macros in files obtained from the internet. <br/><br/>Part of the Microsoft recommended security baseline. |
+|:::image type="content" source="./media/internet-macros-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::| Not protected|Disabled| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.         |
+|:::image type="content" source="./media/internet-macros-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::| Not protected |Not Configured| Will respect the settings configured under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**.            |
 
 > [!NOTE]
 > - If you set this policy to Disabled, users will see, by default, a security warning when they open a file with a macro. That warning will let users know that macros have been disabled, but will allow them to run the macros by choosing the **Enable content** button.
@@ -309,7 +313,7 @@ After we implement the change to the default behavior, the level of protection c
 
 |Icon|Protection level|Policy state|Description|
 |---|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Not Configured| Users are blocked from running macros in files obtained from the internet.<br/><br/> Users see the Security Risk banner with a Learn More button |
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::|Protected |Not Configured| Users are blocked from running macros in files obtained from the internet.<br/><br/> Users see the Security Risk banner with a Learn More button |
 
 ### VBA Macro Notification Settings
 
@@ -335,11 +339,11 @@ Which state you choose for the policy determines the level of protection you're 
 
 |Icon|Protection level|Policy state|Policy value|
 |--------|---------|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected **[recommended]** |Enabled|Disable all except digitally signed macros (and select "Require macros to be signed by a trusted publisher")|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Enabled|Disable all without notification |
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected |Enabled|Disable all with notification |
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected|Disabled|*(Same behavior as "Disable all with notification")*|
-|![Red circle with white X](../images/security/icon-not-protected.png)|Not protected|Enabled|Enable all macros (not recommended) |
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::|Protected **[recommended]** |Enabled|Disable all except digitally signed macros (and select "Require macros to be signed by a trusted publisher")|
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::|Protected |Enabled|Disable all without notification |
+|:::image type="content" source="./media/internet-macros-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected.":::|Partially protected |Enabled|Disable all with notification |
+|:::image type="content" source="./media/internet-macros-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected.":::|Partially protected|Disabled|*(Same behavior as "Disable all with notification")*|
+|:::image type="content" source="./media/internet-macros-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::|Not protected|Enabled|Enable all macros (not recommended) |
 
 > [!IMPORTANT]
 > Securing macros is important. For users that don't need macros, turn off all macros by choosing "Disable all without notification."
@@ -354,10 +358,10 @@ The following table shows the choices users can make under **Macro Settings** an
 
 |Icon|Protection level|Setting chosen|
 |----|---------|---------|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Disable all macros except digitally signed macros|
-|![Green circle with white check mark](../images/security/icon-protected.png)|Protected |Disable all macros without notification|
-|![Orange circle with white check mark](../images/security/icon-partially-protected.png)|Partially protected |Disable all macros with notification *(default)*|
-|![Red circle with white X](../images/security/icon-not-protected.png)| Not protected|Enable all macros (not recommended; potentially dangerous code can run)|
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::|Protected |Disable all macros except digitally signed macros|
+|:::image type="content" source="./media/internet-macros-blocked/icon-protected.png" alt-text="A screenshot of a green icon with a checkmark indicating that the content is fully protected.":::|Protected |Disable all macros without notification|
+|:::image type="content" source="./media/internet-macros-blocked/icon-partially-protected.png" alt-text="A screenshot of an orange icon with a checkmark indicating that the content is partially protected.":::|Partially protected |Disable all macros with notification *(default)*|
+|:::image type="content" source="./media/internet-macros-blocked/icon-not-protected.png" alt-text="A screenshot of a red icon with an 'X' indicating that the content isn't protected.":::| Not protected|Enable all macros (not recommended; potentially dangerous code can run)|
 
 > [!NOTE]
 > In the policy setting values and the product UI for Excel, the word "all" is replaced by "VBA."  For example, "Disable VBA macros without notification."
