@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Build dynamic collections for Microsoft 365 Apps with Configuration Manager"
-ms.date: 02/28/2024
+ms.date: 05/25/2024
 ---
 
 # Build dynamic collections for Microsoft 365 Apps with Configuration Manager
@@ -57,14 +57,14 @@ Here's how to implement these collections:
 
    The final query should look similar to the following screenshot. Make sure to keep the quotation marks.
 
-   ![Screenshot from Configuration Manager Wizard showing the query editor.](../images/fieldnotes/build-dynamic-lean-configuration-manager-1.png)
+   :::image type="content" source="./media/build-dynamic-lean-configuration-manager/build-dynamic-lean-configuration-manager-1.png" alt-text="A screenshot from Configuration Manager Wizard showing the query editor.":::
 
 7. Select **OK** and then **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 8. Select **Summary**, **Next**, and then **Close** to complete the wizard.
 
 Repeat these steps for each update channel that you want to be captured in a separate collection. The result might look like this:
 
-![Screenshot from Configuration Manager showing three collections.](../images/fieldnotes/build-dynamic-lean-configuration-manager-2.png)
+:::image type="content" source="./media/build-dynamic-lean-configuration-manager/build-dynamic-lean-configuration-manager-2.png" alt-text="A screenshot from Configuration Manager showing three collections.":::
 
 ## Catch devices running Microsoft 365 Apps
 
@@ -99,7 +99,7 @@ After you created collections for the update channels that you support, you migh
 3. Select **Add Rule** and choose **Include Collections**. Select the collection that you created to [catch all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). Select **OK**.
 4. Select **Add Rule** again and choose **Select Exclude Collections**. Select the collections you created that [catch devices on supported update channels](build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels). Select **OK**.
 
-   ![Screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections.](../images/fieldnotes/build-dynamic-lean-configuration-manager-3.png)
+   :::image type="content" source="./media/build-dynamic-lean-configuration-manager/build-dynamic-lean-configuration-manager-3.png" alt-text="A screenshot from Configuration Manager showing the wizard to include and exclude collections with previously created collections.":::
 
 5. Select **OK** again. We recommend that you select the incremental updates check box, but this is optional.
 6. Select **Summary**, **Next**, and then **Close** to complete the wizard.
