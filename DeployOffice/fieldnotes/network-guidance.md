@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Field best practices: Network guidance for deploying and servicing Microsoft 365 Apps"
-ms.date: 02/28/2024
+ms.date: 05/25/2024
 ---
 
 # Network guidance for deploying and servicing Microsoft 365 Apps
@@ -37,7 +37,7 @@ If you're using Microsoft Intune to manage your devices, there's native integrat
 1.	Under **App suite information**, set **Update channel** to **Monthly Enterprise Channel**.
 2.	Set **Version to install** to **Latest**. 
 
-    ![Channel settings for M365 Apps in Intune.](../images/fieldnotes/NetOp-001.png)
+    :::image type="content" source="./media/network-guidance/NetOp-001.png" alt-text="A screenshot of the channel settings for M365 Apps in Intune.":::
 
 Using these values will help achieve the following benefits:
 
@@ -100,11 +100,11 @@ To get started with Client Peer Cache refer to the documented **requirements**, 
 3.	Create a new custom client device setting.
 4.	Name your new client settings and select the **Client Cache Settings** category.
 
-    ![Custom Device Settings wizard for Peer Cache.](../images/fieldnotes/NetOp-005.png)
+    :::image type="content" source="./media/network-guidance/NetOp-005.png" alt-text="A screenshot of the Custom Device Settings wizard for Peer Cache.":::
 
 5.	Select **Client Cache Settings** on the left to configure the available settings shown below.
 
-    ![Custom Device Settings for Peer Cache.](../images/fieldnotes/NetOp-006.png)
+    :::image type="content" source="./media/network-guidance/NetOp-006.png" alt-text="A screenshot of the Custom Device Settings for Peer Cache.":::
 
 6.	Select **OK** to save your changes.
 7.	Deploy the new client settings to a device collection containing devices that are capable of being reliable peer sources. For example, desktop chassis with a modern CPU, 8 GB of RAM, and 100+ GB of free disk space. Once deployed these devices will now be recorded as eligible peer sources.
@@ -115,7 +115,7 @@ With your peer sources defined, confirm that your boundary groups are accepting 
 2.	Right-click on a boundary group containing peer sources and select **Properties**.
 3.	On the **Options** tab, confirm that **Allow peer downloads in this boundary group** is checked. 
 
-    ![Peer dowload settings for Boundary Groups.](../images/fieldnotes/NetOp-007.png)
+    :::image type="content" source="./media/network-guidance/NetOp-007.png" alt-text="A screenshot of the Peer download settings for Boundary Groups.":::
 
 4.	Select **OK** to save your changes. Repeat this step for all boundary groups that will be supporting peer-to-peer communication.
 
@@ -130,7 +130,7 @@ To get started with BranchCache refer to the documented [requirements](/mem/conf
 3.	Right-click on a distribution point and select **Properties**.
 4.	On the **General** tab, check the box to **Enable and configure BranchCache for this distribution point**.
 
-    ![BranchCache Settings for Distribution Points.](../images/fieldnotes/NetOp-002.png)
+    :::image type="content" source="./media/network-guidance/NetOp-002.png" alt-text="A screenshot of the BranchCache Settings for Distribution Points.":::
 
 5.	Select **OK** to apply your changes.
 
@@ -140,11 +140,11 @@ With BranchCache enabled on your distribution points, you'll need to configure a
 2.	Create a new custom client device setting.
 3.	Name your new client settings and select the **Client Cache Settings** category.
 
-    ![Custom Device Settings wizard for BranchCache.](../images/fieldnotes/NetOp-003.png)
+    :::image type="content" source="./media/network-guidance/NetOp-003.png" alt-text="A screenshot of the Custom Device Settings wizard for BranchCache.":::
 
 4.	Select **Client Cache Settings** on the left to configure the available settings shown below.
 
-    ![Custom Device Settings for BranchCache.](../images/fieldnotes/NetOp-004.png)
+    :::image type="content" source="./media/network-guidance/NetOp-004.png" alt-text="A screenshot of the Custom Device Settings for BranchCache.":::
 
 5.	Select **OK** to save your changes.
 6.	Deploy the new client settings to a device collection containing the devices you need to enable BranchCache on.
@@ -156,7 +156,7 @@ With BranchCache enabled on your distribution points, you'll need to configure a
 3.	Right-click on a distribution point and select **Properties**.
 4.	On the **General** tab, check the box to **Adjust the download speed to use the unused network bandwidth (Windows LEDBAT)**.
 
-    ![LETDBAT settings for Distribution Points.](../images/fieldnotes/NetOp-008.png)
+    :::image type="content" source="./media/network-guidance/NetOp-008.png" alt-text="A screenshot of the LETDBAT settings for Distribution Points.":::
 
 5.	Select **OK** to apply your changes.
 
@@ -167,11 +167,11 @@ With BranchCache enabled on your distribution points, you'll need to configure a
 3.	Create a new custom client device setting.
 4.	Name your new client settings and select the **Background Intelligent Transfer** category.
 
-    ![Custom Device Settings wizard for BITS.](../images/fieldnotes/NetOp-009.png)
+    :::image type="content" source="./media/network-guidance/NetOp-009.png" alt-text="A screenshot of the Custom Device Settings wizard for BITS.":::
 
 5.	Select **Background Intelligent Transfer** on the left to configure the available settings shown below.
 
-    ![Custom Device Settings for BITS.](../images/fieldnotes/NetOp-010.png)
+    :::image type="content" source="./media/network-guidance/NetOp-010.png" alt-text="A screenshot of the Custom Device Settings for BITS.":::
 
 6.	Select **OK** to save your changes.
 7.	Deploy the new client settings to a device collection containing the devices you need to enable BITS throttling on. Note that all future content deployments using BITS on the targeted devices will be throttled.

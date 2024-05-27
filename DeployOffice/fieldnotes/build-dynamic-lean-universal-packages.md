@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "How to provide additional language packs, proofing tools, products like Visio and Project, or other components of Microsoft 365 Apps to your users with minimal maintenance overhead"
-ms.date: 02/28/2024
+ms.date: 05/25/2024
 ---
 
 # Build dynamic, lean, and universal packages for Microsoft 365 Apps
@@ -67,7 +67,7 @@ The idea is to not hardcode anything in the configuration file, but to instead u
 
 Let’s have a look at a "classic" package that was built to add Project to an existing install of Microsoft 365 Apps. We have the source files (of ~3 gigabytes) and a configuration file, which explicitly states what we want to achieve:
 
-![Sample package.](../images/fieldnotes/build-dynamic-lean-universal-packages-1.png)
+:::image type="content" source="./media/build-dynamic-lean-universal-packages/build-dynamic-lean-universal-packages-1.png" alt-text="A screenshot of a sample package.":::
 
 ```xml
 <Configuration>
@@ -82,7 +82,7 @@ Let’s have a look at a "classic" package that was built to add Project to an e
  
 When we apply the concepts of dynamic, lean, and universal packages, the result would look like this:
  
-![Lean sample package.](../images/fieldnotes/build-dynamic-lean-universal-packages-2.png)
+:::image type="content" source="./media/build-dynamic-lean-universal-packages/build-dynamic-lean-universal-packages-2.png" alt-text="A screenshot of a lean sample package.":::
 
 ```xml
 <Configuration>

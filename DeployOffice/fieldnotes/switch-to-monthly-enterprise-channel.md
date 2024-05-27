@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Switch to Monthly Enterprise Channel with Configuration Manager"
-ms.date: 02/28/2024
+ms.date: 05/25/2024
 ---
 
 # Switch to Monthly Enterprise Channel with Configuration Manager
@@ -42,7 +42,7 @@ This will trigger the following flow of events on Configuration Manager and the 
 We recommend that you implement [dynamic collections tailored for Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md) to group devices by update channel automatically. This allows easy targeting—for example, if you want to move all devices running Semi-Annual Enterprise Channel to Monthly Enterprise Channel. You can also group devices in a collection manually—for example, if you want to move only a subset of users or a pilot group first.
 When using the dynamic collections, the collections might look like this before you start moving devices:
 
-![Screenshot from Configuration Manager showing three collections.](../images/fieldnotes/move-mec-w-configmgr-1.png)
+:::image type="content" source="./media/switch-to-monthly-enterprise-channel/move-mec-w-configmgr-1.png" alt-text="A screenshot from Configuration Manager showing three collections.":::
 
 The benefit of using dynamic collections is that devices will automatically switch between the collections based on the currently installed update channel. This allows you to target devices more easily and monitor progress at a glance.
 
@@ -84,7 +84,7 @@ Follow these steps to deploy an application to initiate an update channel change
 
 After the deployed application updates the device configuration, it still must perform the actual channel change. In the next update cycle, the Click-to-Run service on the device detects the pending channel change and tries to download and apply the update from the new channel. At this stage, the device might still be on the Semi-Annual Enterprise Channel but needs to be able to fetch the Microsoft 365 Apps Update for Monthly Enterprise Channel, as shown in the following screenshot:
 
-![Screenshot from Configuration Manager showing two Microsoft 365 Apps Updates from Monthly Enterprise Channel.](../images/fieldnotes/move-mec-w-configmgr-2.png)
+:::image type="content" source="./media/switch-to-monthly-enterprise-channel/move-mec-w-configmgr-2.png" alt-text="A screenshot from Configuration Manager showing two Microsoft 365 Apps Updates from Monthly Enterprise Channel.":::
 
 In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both channels to a collection holding the targeted devices:
 
@@ -97,7 +97,7 @@ In most cases, you'll want to deploy the Microsoft 365 Apps Updates for both cha
 
 A common practice is to have a [dynamic collection that catches all devices running Microsoft 365 Apps](build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps). You can then deploy to this collection the Microsoft 365 Apps updates for all channels supported by your organization, and each device will fetch the matching update. At the same time, devices changing channels have access to the new one.
 
-![Screenshot from Configuration Manager showing updates from different channels deployed to the same collection.](../images/fieldnotes/move-mec-w-configmgr-3.png)
+:::image type="content" source="./media/switch-to-monthly-enterprise-channel/move-mec-w-configmgr-3.png" alt-text="A screenshot from Configuration Manager showing updates from different channels deployed to the same collection.":::
 
 Follow the regular process of [deploying software updates using Configuration Manager](/mem/configmgr/sum/deploy-use/deploy-software-updates). We recommend using [Automatic Deployment Rules](/mem/configmgr/sum/deploy-use/automatically-deploy-software-updates).
 
@@ -105,7 +105,7 @@ After a device has received instructions to switch channels and an update detect
 
 In the next [hardware inventory cycle](/mem/configmgr/core/clients/manage/inventory/introduction-to-hardware-inventory), the device sends the new channel information to the Configuration Manager infrastructure. In the next evaluation cycle, device membership for dynamic collection is recalculated. The devices will be removed from the old collection and added to the matching one as follows:
 
-![Screenshot from Configuration Manager collections with devices moved from one to another collection.](../images/fieldnotes/move-mec-w-configmgr-4.png)
+:::image type="content" source="./media/switch-to-monthly-enterprise-channel/move-mec-w-configmgr-4.png" alt-text="A screenshot from Configuration Manager collections with devices moved from one to another collection.":::
 
 ## Additional details
 
