@@ -125,6 +125,7 @@ Connect-MicrosoftPlaces
 ```powershell
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
+
 ## Device onboarding 
 
 The first step entails uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
@@ -138,4 +139,19 @@ There are three ways you can upload device information to Places.
 - Option 1, using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
 - Option 2, using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
 - Option 3, using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs exposed over Microsoft Graph.
+
+### Prerequisites: prepare device metadata  
+
+1. Download place information from Places.<br>
+   Install PowerShell 7.x+. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
+
+```powershell
+Install-Module -Name ExchangeOnlineManagement 
+Import-Module -Name ExchangeOnlineManagement 
+Connect-ExchangeOnline
+```
+
+```powershell
+Push-Dataset -Type WifiSignal -Path <folder path>
+```
 
