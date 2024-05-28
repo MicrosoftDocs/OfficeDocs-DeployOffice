@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier3
 ms.localizationpriority: medium
 recommendations: true
-description: ""Learn how to use existing sensor data to enhance Microsoft Places analytics reports."
+description: "Learn how to use existing sensor data to enhance Microsoft Places Analytics reports."
 ---
-# Connected buildings
 
+# Connected buildings
