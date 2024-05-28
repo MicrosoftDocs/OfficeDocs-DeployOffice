@@ -54,3 +54,21 @@ Use the following schema when uploading badge information:
 |LocationType |Enum     |Optional. The location type of the badge signal. BUILDING is currently supported. |
 |Event        |Enum     |The action of the badge, which depends on the sensor type. The value can be EntryGranted, EntryDenied, or ExitGranted, etc. |
 
+#### Upload the badge dataset
+
+1. Open PowerShell 7 (not as an administrator).
+2. Install Microsoft Places. For more information on the XX, see XX.
+
+```windows powershell
+Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
+```
+
+3. 
+
+
+4. 
+
+
+5. 
+
+
