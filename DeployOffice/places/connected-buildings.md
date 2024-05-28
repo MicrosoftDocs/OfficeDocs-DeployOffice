@@ -165,7 +165,7 @@ Push-Dataset -Type WifiSignal -Path <folder path>
 
 ### Option 1: using scripts
 
-First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell cmdlets. Scripts use CSV files as an input. [LINK NOT PUBLIC?]
 
@@ -185,7 +185,7 @@ Next, run the onboarding script with your prepared CSV to onboard devices. If yo
 
 ### Option 2: Using PowerShell cmdlets
 
-There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
@@ -197,3 +197,52 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 |**Set-PlaceDevice**  |Updates a device     |Id (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
 |**Get-PlaceDevice**  |Gets a device        |Id<br>Filter<br>Top  |
 
+### Option 3: Using APIs
+
+If you want to build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
+
+1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
+
+|Header 1  |Header 2  |
+|---------|---------|
+|**ScopeName**    |[PlaceDevice.Read.All](/graph/permissions-reference) |
+|**DisplayName**  |Read organization Places devices |
+|**Description**  |Allows app to read all place devices in the organization |
+|**Type**         |Application-only |
+|**Admin consent** (yes or no)      |Yes |
+
+|Header 1  |Header 2  |
+|---------|---------|
+|**ScopeName**    |[PlaceDevice.ReadWrite.All](/graph/permissions-reference) |
+|**DisplayName**  |Read and write organization Places devices |
+|**Description**  |Read and write organization Places devices |
+
+|Header 1  |Header 2  |
+|---------|---------|
+|**Type**    |Application-only |
+|**Admin consent** (yes or no)  |Yes |
+
+2. Build and deploy an application to sync device information across Places and your partners.
+
+3. Service Details.
+
+```powershell
+{
+    "error": {
+        "code": "InvalidAuthenticationToken",
+        "message": "Access token is empty.",
+        "innerError": {
+            "date": "2024-05-28T23:17:51",
+            "request-id": "1c212140-3bf2-4f7c-93e9-5c742d2c3c87",
+            "client-request-id": "1c212140-3bf2-4f7c-93e9-5c742d2c3c87"
+        }
+    }
+}
+```
+See the following Microsoft Graph APIs for more information:
+
+- [List sensorDevices](/graph/api/workplace-list-sensordevices?view=graph-rest-beta&tabs=http)
+- [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices?view=graph-rest-beta&tabs=http)
+- [Get workplaceSensorDevice](/graph/api/workplacesensordevice-get?view=graph-rest-beta&tabs=http)
+- [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update?view=graph-rest-beta&tabs=http)
+- [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete?view=graph-rest-beta&tabs=http)
