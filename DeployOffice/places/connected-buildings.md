@@ -155,3 +155,12 @@ Connect-ExchangeOnline
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
 
+[PREREQUISITES: PREPARE DEVICE METADATA section]
+
+
+
+### General guidelines about devices and sensors
+
+- It’s recommended that you provide the device ID as the Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual device ID can be created as Manufacturer_Building_VirtualDeviceId.<br>In this case, VirtualDeviceId can be some natural key of a space. If a customer is providing VirtualDeviceId, it's recommended you also include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+- If Sensor.SensorType is unique for a device, just provide SensorType. In cases where there are multiple streams of data of a particular sensor type for a device, a unique sensor ID is needed.<br>In most cases, Sensor type and sensor ID will be PeopleCount, Occupancy, etc., unless the sensor type isn't unique for a device. If this is the case, the sensor ID will be SensorType_SomeUnique identifier.
+- Place ID for a device is used to associate all sensors to a space unless the place ID is specified.
