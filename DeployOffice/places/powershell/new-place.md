@@ -231,6 +231,19 @@ The PostalCode parameter specifies the room's postal code. The maximum length is
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
+### -PostOfficeBox
+
+The PostOfficeBox is currently being deprecated. However, it must be provided when adding an address to a Building. Until this parameter is fully deprecated, set this to an empty string.
+
+|Attribute|Description|
+| -------- | -------- |
+|Type:|String|
+|Position:|Named|
+|Default value:|None|
+|Required:|False|
+|Accept pipeline input:|False|
+|Accept wildcard characters:|False|
+
 ### -ResourceLinks
 
 The ResourceLinks parameter specifies external links that should be associated to this building, such as a dining menu, a link to services or a building website.
