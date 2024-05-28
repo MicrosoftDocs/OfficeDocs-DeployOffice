@@ -204,23 +204,23 @@ If you want to build an application to automate registering and onboarding devic
 1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
 
 |Header 1  |Header 2  |
-|---------|---------|
-|**ScopeName**    |[PlaceDevice.Read.All](/graph/permissions-reference) |
-|**DisplayName**  |Read organization Places devices |
-|**Description**  |Allows app to read all place devices in the organization |
-|**Type**         |Application-only |
-|**Admin consent**<br>(yes or no)      |Yes |
+|-------|-------|
+|**ScopeName**   |[PlaceDevice.Read.All](/graph/permissions-reference) |
+|**DisplayName** |Read organization Places devices |
+|**Description** |Allows app to read all place devices in the organization |
+|**Type**        |Application-only |
+|**Admin consent**<br>(yes or no) |Yes |
 
 |Header 1  |Header 2  |
-|---------|---------|
-|**ScopeName**    |[PlaceDevice.ReadWrite.All](/graph/permissions-reference) |
-|**DisplayName**  |Read and write organization Places devices |
-|**Description**  |Read and write organization Places devices |
+|-------|-------|
+|**ScopeName**   |[PlaceDevice.ReadWrite.All](/graph/permissions-reference) |
+|**DisplayName** |Read and write organization Places devices |
+|**Description** |Read and write organization Places devices |
 
 |Header 1  |Header 2  |
-|---------|---------|
-|**Type**    |Application-only |
-|**Admin consent**<br>(yes or no)  |Yes |
+|-------|-------|
+|**Type** |Application-only |
+|**Admin consent**<br>(yes or no) |Yes |
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
