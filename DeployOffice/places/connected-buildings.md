@@ -143,7 +143,7 @@ There are three ways you can upload device information to Places.
 ### Prerequisites: prepare device metadata  
 
 1. Download place information from Places.<br>
-   Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
+   Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
@@ -246,3 +246,8 @@ See the following Microsoft Graph APIs for more information:
 - [Get workplaceSensorDevice](/graph/api/workplacesensordevice-get?view=graph-rest-beta&tabs=http)
 - [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update?view=graph-rest-beta&tabs=http)
 - [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete?view=graph-rest-beta&tabs=http)
+
+## Telemetry ingestion workflow
+
+Once your have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
+
