@@ -112,16 +112,23 @@ Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75
 
 ### Example 2
 
-This example updates a building's address and geocoordinates.
+This example updates a building's address.
 
-> [!NOTE]
-> PostOfficeBox is currently required when setting an address. However, this parameter is in the process of being deprecated, so set to an empty value.*
-
+> [!IMPORTANT]
+> Currently, you must set all of the below address parameters when updating or adding an address. A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.  Additionally, PostOfficeBox will soon be deprecated, so that parameter should be set to an empty value.
 ```powershell
-Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox '' -GeoCoordinates "47.644125;-122.122411"
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox ''
 ```
 
 ### Example 3
+
+This example updates a building's geocoordinates.
+
+```powershell
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -GeoCoordinates "47.644125;-122.122411"
+```
+
+### Example 4
 
 This example updates the resource links for a building with resource links. The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
@@ -373,8 +380,7 @@ The ParentType parameter specifies the type of the place that is being set as th
 * Floor
 
 > [!NOTE]
-> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.*
-
+> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.
 |Attribute|Description|
 | -------- | -------- |
 |Type:|String|
