@@ -59,16 +59,45 @@ Use the following schema when uploading badge information:
 1. Open PowerShell 7 (not as an administrator).
 2. Install Microsoft Places. For more information on the XX, see XX.
 
-```windows powershell
-Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
+```powershell
+Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. 
+3. Import the Places module.
+
+```powershell
+Import-Module -Name MicrosoftPlaces
+```
+
+4. Connect to the Places module.
+
+```powershell
+Connect-MicrosoftPlaces
+```
+
+5. Upload the Badge dataset from the location <folder path> where it is stored on your device.
 
 
-4. 
+```powershell
+Push-Dataset -Type BadgeSwipe -Path <folder path>
+```
 
+### Connect the Wi-Fi systems
 
-5. 
+You upload data from your Wi-Fi system to generate occupancy information for a building. To upload Utilize the following steps to upload this data.
 
+#### Wi-Fi data format
 
+Use the following schema when uploading Wi-Fi information:
+
+|Column  |Type  |Description |
+|---------|---------|---------|
+|MacAddress  |String   |The user’s Mac address. |
+|UserEmail    |String   |The user ID that is connected to Wi-Fi. It's expected to be an email address (or Mac address if an email isn't available). |
+|APMacAddress     |String   |The access point indicates which device collected the signal. |
+|SessionStartTimeUtc  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
+|SessionEndTimeUtc   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
+|SSID  |String   |The service set ID that identify the network name.  |
+|APLocation  |String     |The location name of the access point. It could be an external Id of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern :BuildingName/Floor). |
+
+#### Upload Wi-Fi data
