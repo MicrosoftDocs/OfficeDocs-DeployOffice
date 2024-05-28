@@ -143,7 +143,7 @@ There are three ways you can upload device information to Places.
 ### Prerequisites: prepare device metadata  
 
 1. Download place information from Places.<br>
-   Install PowerShell 7.x+. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
+   Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
@@ -155,12 +155,23 @@ Connect-ExchangeOnline
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
 
-[PREREQUISITES: PREPARE DEVICE METADATA section]
-
-
-
 ### General guidelines about devices and sensors
 
-- It’s recommended that you provide the device ID as the Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual device ID can be created as Manufacturer_Building_VirtualDeviceId.<br>In this case, VirtualDeviceId can be some natural key of a space. If a customer is providing VirtualDeviceId, it's recommended you also include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
-- If Sensor.SensorType is unique for a device, just provide SensorType. In cases where there are multiple streams of data of a particular sensor type for a device, a unique sensor ID is needed.<br>In most cases, Sensor type and sensor ID will be PeopleCount, Occupancy, etc., unless the sensor type isn't unique for a device. If this is the case, the sensor ID will be SensorType_SomeUnique identifier.
-- Place ID for a device is used to associate all sensors to a space unless the place ID is specified.
+- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, it's recommended that you include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+
+- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, will be PeopleCount, Occupancy, etc., unless SensorType is not unique for a device. In this case, SensorId will be SensorType_SomeUnique identifier.
+
+- PlaceId for a device will be used to associate all sensors to a space unless PlaceId is specified.
+
+### Option 1: using scripts
+
+First, install the PowerShell Cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+
+Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell Cmdlets. Scripts use CSV files as an input. [LINK NOT PUBLIC?]
+
+To execute scripts, you must have the “TenantPlacesManagement” role assigned.
+
+Next, run the onboarding script with your prepared CSV to onboard devices. If you want to customize scripts and use the Powershell cmdlets [NOT SURE WHAST TGHIS MEANS] themselves, they may reference the next section.
+
+
+ 
