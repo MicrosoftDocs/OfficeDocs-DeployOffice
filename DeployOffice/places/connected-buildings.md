@@ -165,13 +165,35 @@ Push-Dataset -Type WifiSignal -Path <folder path>
 
 ### Option 1: using scripts
 
-First, install the PowerShell Cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
-Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell Cmdlets. Scripts use CSV files as an input. [LINK NOT PUBLIC?]
+Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell cmdlets. Scripts use CSV files as an input. [LINK NOT PUBLIC?]
 
-To execute scripts, you must have the “TenantPlacesManagement” role assigned.
+> [!NOTE]
+> To run scripts, you must have the TenantPlacesManagement role assigned.
 
 Next, run the onboarding script with your prepared CSV to onboard devices. If you want to customize scripts and use the Powershell cmdlets [NOT SURE WHAST TGHIS MEANS] themselves, they may reference the next section.
 
+|Script name  |Description  |
+|---------|---------|
+|**OnboardPlaceDevice.ps1 -FilePath $FilePath** |Onboards devices in the CSV file into Places. |
+|**DeletePlaceDevice.ps1 -FilePath $FilePath**  |Deletes devices in the CSV file from Places. |
+|**UpdatePlaceDevice.ps1 -FilePath $FilePath** |Updates devices in the CSV file from Places |
 
- 
+> [!NOTE]
+> **$FilePath** should be full path name.
+
+### Option 2: Using PowerShell cmdlets
+
+There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell 7](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+
+> [!NOTE]
+> To run scripts, you must have the TenantPlacesManagement role assigned.
+
+|Cmdlet name  |Description  |Parameters |
+|---------|---------|---------|
+|**New-PlaceDevice**  |Creates a new device |DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
+|**Remove-PlaceDevice** |Deletes a device   |Id (mandatory)  |
+|**Set-PlaceDevice**  |Updates a device     |Id (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
+|**Get-PlaceDevice**  |Gets a device        |Id<br>Filter<br>Top  |
+
