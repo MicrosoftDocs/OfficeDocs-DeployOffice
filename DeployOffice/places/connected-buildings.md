@@ -46,7 +46,7 @@ Use the following schema when uploading badge information:
 |Column  |Type  |Description |
 |---------|---------|---------|
 |BadgeNumber  |String   |Optional. The user’s badge identifier. |
-|UserEmail    |String   |The username that's badged. It's expected to be an email address (or a user’s full name if email is not available). |
+|UserEmail    |String   |The username that's badged. It's expected to be an email address (or a user’s full name if email isn't available). |
 |DeviceId     |String   |Optional (TBD). The device ID indicates which device generated the signal. |
 |TimestampUtc |Timestamp|The timestamp of the badge signal, which indicates when the event occurred.  |
 |LocationId   |String   |Optional. If LocationName has been provided. The location ID where the badge is recorded. |
@@ -125,3 +125,17 @@ Connect-MicrosoftPlaces
 ```powershell
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
+## Device onboarding 
+
+The first step entails uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
+
+The following illustration shows a high-level diagram of how you can onboard devices and sensors onto Places.
+
+[GRAPHIC]
+
+There are three ways you can upload device information to Places.
+
+- Option 1, using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
+- Option 2, using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
+- Option 3, using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs exposed over Microsoft Graph.
+
