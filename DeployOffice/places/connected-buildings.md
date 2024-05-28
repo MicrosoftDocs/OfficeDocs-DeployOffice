@@ -241,11 +241,11 @@ If you want to build an application to automate registering and onboarding devic
 ```
 See the following Microsoft Graph APIs for more information:
 
-- [List sensorDevices](/graph/api/workplace-list-sensordevices?view=graph-rest-beta&tabs=http)
-- [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices?view=graph-rest-beta&tabs=http)
+- [List sensorDevices](/graph/api/workplace-list-sensordevices)
+- [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices)
 - [Get workplaceSensorDevice](/graph/api/workplacesensordevice-get?view=graph-rest-beta&tabs=http)
-- [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update?view=graph-rest-beta&tabs=http)
-- [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete?view=graph-rest-beta&tabs=http)
+- [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update)
+- [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete)
 
 ## Telemetry ingestion workflow
 
