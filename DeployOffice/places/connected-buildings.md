@@ -75,8 +75,7 @@ Import-Module -Name MicrosoftPlaces
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the Badge dataset from the location <folder path> where it is stored on your device.
-
+5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device.
 
 ```powershell
 Push-Dataset -Type BadgeSwipe -Path <folder path>
@@ -84,7 +83,7 @@ Push-Dataset -Type BadgeSwipe -Path <folder path>
 
 ### Connect the Wi-Fi systems
 
-You upload data from your Wi-Fi system to generate occupancy information for a building. To upload Utilize the following steps to upload this data.
+You upload data from your Wi-Fi system to generate occupancy information for a building.
 
 #### Wi-Fi data format
 
@@ -100,4 +99,29 @@ Use the following schema when uploading Wi-Fi information:
 |SSID  |String   |The service set ID that identify the network name.  |
 |APLocation  |String     |The location name of the access point. It could be an external Id of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern :BuildingName/Floor). |
 
-#### Upload Wi-Fi data
+#### Upload the Wi-Fi dataset
+
+1. Open PowerShell 7 (not as an administrator).
+2. Install Microsoft Places. For more information on the XX, see XX.
+
+```powershell
+Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
+```
+
+3. Import the Places module.
+
+```powershell
+Import-Module -Name MicrosoftPlaces
+```
+
+4. Connect to the Places module.
+
+```powershell
+Connect-MicrosoftPlaces
+```
+
+5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device.
+
+```powershell
+Push-Dataset -Type WifiSignal -Path <folder path>
+```
