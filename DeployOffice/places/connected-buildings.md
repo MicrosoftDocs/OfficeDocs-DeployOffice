@@ -13,3 +13,4 @@ recommendations: true
 description: ""Learn how to use existing sensor data to enhance Microsoft Places analytics reports."
 ---
 # Connected buildings
+
