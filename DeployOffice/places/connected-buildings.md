@@ -209,7 +209,7 @@ If you want to build an application to automate registering and onboarding devic
 |**DisplayName**  |Read organization Places devices |
 |**Description**  |Allows app to read all place devices in the organization |
 |**Type**         |Application-only |
-|**Admin consent** (yes or no)      |Yes |
+|**Admin consent**<br>(yes or no)      |Yes |
 
 |Header 1  |Header 2  |
 |---------|---------|
@@ -220,7 +220,7 @@ If you want to build an application to automate registering and onboarding devic
 |Header 1  |Header 2  |
 |---------|---------|
 |**Type**    |Application-only |
-|**Admin consent** (yes or no)  |Yes |
+|**Admin consent**<br>(yes or no)  |Yes |
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
