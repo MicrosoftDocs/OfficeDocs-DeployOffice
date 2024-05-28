@@ -243,7 +243,7 @@ See the following Microsoft Graph APIs for more information:
 
 - [List sensorDevices](/graph/api/workplace-list-sensordevices)
 - [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices)
-- [Get workplaceSensorDevice](/graph/api/workplacesensordevice-get?view=graph-rest-beta&tabs=http)
+- [Get workplaceSensorDevice](/graph/api/workplacesensordevice-get)
 - [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update)
 - [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete)
 
