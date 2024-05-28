@@ -33,6 +33,7 @@ New-Place
  [-GeoCoordinates]
  [-Name]
  [-PostalCode]
+ [-PostOfficeBox]
  [-State]
  [-Street]
  [-ResourceLinks]
@@ -81,9 +82,11 @@ New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -
 ### Example 2
 
 This example creates a new building with address information.
+> [!IMPORTANT]
+> Currently, you must set all of the below address parameters when adding an address.  A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.
 
 ```powershell
-New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -GeoCoordinates "47.644125;-122.122411"
+New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox ''
 ```
 
 ### Example 3
