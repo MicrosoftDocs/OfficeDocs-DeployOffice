@@ -234,9 +234,9 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 - It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, it's recommended that you include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
-- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, will be PeopleCount, Occupancy, etc., unless SensorType is not unique for a device. In this case, SensorId will be SensorType_SomeUnique identifier.
+- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType is not unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
-- PlaceId for a device will be used to associate all sensors to a space unless PlaceId is specified.
+- PlaceId for a device is used to associate all sensors to a space unless PlaceId is specified.
 
 ### Option 1: using scripts
 
@@ -364,15 +364,15 @@ The connectors described in Scope need the following permission to request the r
 
 For customers choosing these integration types, must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
-1. This will be applicable when hardware providers have created multi-tenant SaaS connectors. See more on Single vs multi-tenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
-2. Get the app ID (GUID) from the partner that will ingest telemetries on behalf of your service.
+1. This is applicable when hardware providers have created multi-tenant SaaS connectors. See more on Single vs multi-tenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
+2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
    If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
    [SCREENSHOT 1]
 
-   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. Click the **Accept** button to grant admin consent.
+   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
      [SCREENSHOT 2]
 
