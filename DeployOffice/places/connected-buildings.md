@@ -29,7 +29,7 @@ You must do the following before using the Connected Workplace:
 
 ## Add sensor data
 
-The section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensore data is done in the following way:
+The section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensor data is done in the following way:
 
 - Generate building occupancy using badge data
 - Connect your Wi-Fi systems
@@ -150,9 +150,7 @@ There are three ways you can upload device information to Places.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Microsoft Places.
-
- - Install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+1. Download place information from Microsoft Places. First, install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
    
 ```powershell
@@ -161,26 +159,25 @@ Import-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline
 ```
 
-   - Open PowerShell as an administrator and run the following ExchangeOnline PowerShell command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
+2. Open PowerShell as an administrator and run the following ExchangeOnline PowerShell command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
 ```
 
-2. You should see the following name and assigned role if you have the right permissions.
+3. You should see the following name and assigned role if you have the right permissions.
 
    - Name: PlacesAdmin
    - Assigned Role: TenantPlacesManagement
 
-
-3. To get the PlaceId of buildings, run the following ExchangeOnline PowerShell cmdlet:
+4. To get the PlaceId of buildings, run the following ExchangeOnline PowerShell cmdlet:
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
 Connect-MicrosoftPlaces 
 ```
 
-4. Use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands, to download the list of floors and rooms.
+5. Use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands, to download the list of floors and rooms.
 
 > [!NOTE]
 > Update buildingName only if you need to get rooms for particular buildings.
@@ -245,7 +242,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 - It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, it's recommended that you include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
-- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType is not unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
+- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
 - PlaceId for a device is used to associate all sensors to a space unless PlaceId is specified.
 
@@ -335,7 +332,7 @@ See the following Microsoft Graph APIs for more information:
 
 ## Telemetry historical data (ingestion) and workflow
 
-Once your have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
+Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
 
 [GRAPHIC 2]
 
@@ -375,7 +372,7 @@ The connectors described in Scope need the following permission to request the r
 
 For customers choosing these integration types, must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
-1. This is applicable when hardware providers have created multi-tenant SaaS connectors. See more on Single vs multi-tenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
+1. This is applicable when hardware providers have created multitenant SaaS connectors. See more on Single vs multitenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
@@ -387,15 +384,15 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
      [SCREENSHOT 2]
 
-#### Admin Consent: type B and C architecture, connector running in a customer on-premise environment
+#### Admin Consent: type B and C architecture, connector running in a customer on-site environment
 
 Microsoft Places makes available an API that accepts telemetry in standard format and exposed over MS Graph. The API accepts a batch of telemetry messages.
 
-1. For type B architecture, customers rely on an integration provided by their hardware partners that's hosted on-premise in the customer’s environment.
+1. For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
 2. For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
 
    For a sample application, see [A Github link?] this project to send data to Places.
 
-3. Both type B and C integration architectures require customers to register an AAD application like below and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+3. Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
    [SCREENSHOT 3]
