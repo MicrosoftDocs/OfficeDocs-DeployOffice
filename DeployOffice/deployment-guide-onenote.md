@@ -99,8 +99,6 @@ If any notes are missing, check the backup folder that was created in the previo
 To review backups through OneNote on Windows:
 - Navigate to **File -> Open Backups -> Navigate to the backup file path.**
 
-:::image type="content" source="images/deployment-guide-onenote/notebook-information-small.png" alt-text="This image displays the OneNote application's Notebook Information section. The interface includes a navigation bar with various options and a main panel showing Migration settings with a file path. There are icons for View Sync Status and Open Backups in the upper right corner" lightbox="images/deployment-guide-onenote/notebook-information.png":::
-
 ## Troubleshooting
 
 - Review the `UWPBackupStatus.json` and `UWPSyncStatus.json` files in the user’s backup folder for detailed information on the backup and sync statuses.
