@@ -288,7 +288,7 @@ To build an application to automate registering and onboarding devices, APIs are
 
 |Header 1  |Header 2  |
 |-------|-------|
-|**ScopeName**   |[PlaceDevice.Read.All](/graph/permissions-reference) |
+|**ScopeName**   |PlaceDevice.Read.All<br>For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference) |
 |**DisplayName** |Read organization Places devices |
 |**Description** |Allows app to read all place devices in the organization |
 |**Type**        |Application-only |
