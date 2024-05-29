@@ -377,7 +377,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-saml-toolkit.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
 
-   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button. 
+   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
      [SCREENSHOT 2]
 
