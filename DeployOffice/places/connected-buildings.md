@@ -240,7 +240,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 ### General guidelines about devices and sensors
 
-- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
 - If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
@@ -299,9 +299,6 @@ To build an application to automate registering and onboarding devices, APIs are
 |**ScopeName**   |[PlaceDevice.ReadWrite.All](/graph/permissions-reference) |
 |**DisplayName** |Read and write organization Places devices |
 |**Description** |Read and write organization Places devices |
-
-|Header 1  |Header 2  |
-|-------|-------|
 |**Type** |Application-only |
 |**Admin consent**<br>(yes or no) |Yes |
 
