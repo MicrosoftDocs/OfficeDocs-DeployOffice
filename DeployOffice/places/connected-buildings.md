@@ -46,11 +46,11 @@ Use the following schema when uploading badge information:
 |Column  |Type  |Description |
 |---------|---------|---------|
 |BadgeNumber  |String   |Optional. The user’s badge identifier. |
-|UserEmail    |String   |The username that's badged. It's expected to be an email address (or a user’s full name if email isn't available). |
+|UserEmail    |String   |The badged username (an email address or a user’s full name if an email address isn't available). |
 |DeviceId     |String   |Optional (TBD). The device ID indicates which device generated the signal. |
 |TimestampUtc |Timestamp|The timestamp of the badge signal, which indicates when the event occurred.  |
-|LocationId   |String   |Optional. If LocationName has been provided. The location ID where the badge is recorded. |
-|LocationNam  |String   |Optional if LocationId has been provided. The location name where the badge signal is recorded.  |
+|LocationId   |String   |Optional. If LocationName is provided. The location ID where the badge is recorded. |
+|LocationNam  |String   |Optional if LocationId is provided. The location name where the badge signal is recorded.  |
 |LocationType |Enum     |Optional. The location type of the badge signal. BUILDING is currently supported. |
 |Event        |Enum     |The action of the badge, which depends on the sensor type. The value can be EntryGranted, EntryDenied, or ExitGranted, etc. |
 
@@ -75,7 +75,7 @@ Import-Module -Name MicrosoftPlaces
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device by running the following Places PowerShell cmdlet.
+5. Upload the badge dataset from the location on your device (using the folder and path) by running the following Places PowerShell cmdlet.
 
 ```powershell
 Push-Dataset -Type BadgeSwipe -Path <folder path>
@@ -92,7 +92,7 @@ Use the following schema when uploading Wi-Fi information:
 |Column  |Type  |Description |
 |---------|---------|---------|
 |**MacAddress**  |String   |The user’s Mac address. |
-|**UserEmail**    |String   |The user ID that is connected to Wi-Fi. It's expected to be an email address (or Mac address if an email isn't available). |
+|**UserEmail**    |String   |The user ID (an email address, or Mac address if an email address isn't available) that's connected to Wi-Fi. |
 |**APMacAddress**     |String   |The access point indicates which device collected the signal. |
 |**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
 |**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
