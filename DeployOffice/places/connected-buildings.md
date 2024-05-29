@@ -91,13 +91,13 @@ Use the following schema when uploading Wi-Fi information:
 
 |Column  |Type  |Description |
 |---------|---------|---------|
-|MacAddress  |String   |The user’s Mac address. |
-|UserEmail    |String   |The user ID that is connected to Wi-Fi. It's expected to be an email address (or Mac address if an email isn't available). |
-|APMacAddress     |String   |The access point indicates which device collected the signal. |
-|SessionStartTimeUtc  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
-|SessionEndTimeUtc   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
-|SSID  |String   |The service set ID that identify the network name.  |
-|APLocation  |String     |The location name of the access point. It could be an external Id of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern :BuildingName/Floor). |
+|**MacAddress**  |String   |The user’s Mac address. |
+|**UserEmail**    |String   |The user ID that is connected to Wi-Fi. It's expected to be an email address (or Mac address if an email isn't available). |
+|**APMacAddress**     |String   |The access point indicates which device collected the signal. |
+|**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
+|**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
+|**SSID**  |String   |The service set ID that identify the network name.  |
+|**APLocation**  |String     |The location name of the access point. It can be an external ID of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern: BuildingName/Floor). |
 
 #### Upload the Wi-Fi dataset
 
@@ -274,7 +274,7 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 
 ### Option 3: using APIs
 
-If you want to build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
+To build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
 
 1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
 
