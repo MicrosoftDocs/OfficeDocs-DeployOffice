@@ -92,7 +92,7 @@ Use the following schema when uploading Wi-Fi information:
 |Column  |Type  |Description |
 |---------|---------|---------|
 |**MacAddress**  |String   |The user’s Mac address. |
-|**UserEmail**    |String   |The user ID (an email address, or Mac address if an email address isn't available) that's connected to Wi-Fi. |
+|**UserEmail**    |String   |The user ID (an email address, or Mac address if an email address isn't available) connected to Wi-Fi. |
 |**APMacAddress**     |String   |The access point indicates which device collected the signal. |
 |**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
 |**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
@@ -136,7 +136,7 @@ Connecting occupancy and people-density sensrors is done in four steps.
 
 ## Device onboarding
 
-The first step entails uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
+The first step involves uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
 
 The following illustration shows a high-level diagram of how you can onboard devices and sensors onto Places.
 
@@ -224,11 +224,11 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 |Column  |Description  |Notes |Example |
 |---------|---------|---------|---------|
-|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry that's sent |Manuf1_3455 |
+|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry sent |Manuf1_3455 |
 |**DisplayName** |The display name of the device | You can use a friendly name if applicable |Manuf1_3455 |
 |**Description** |The description of the device | | |
 |**MacAddress** |The Mac address of the device  |Supplier provided (if available) | |
-|**Manufacturer** (required) |The manufacturer of the device |The IT admin provides this |Manuf1 |
+|**Manufacturer** (required) |The manufacturer of the device |Provided by the IT admin |Manuf1 |
 |**IPV4Address** |The IPV4Address of the device | Supplier provided (if available) | |
 |**IPV6Address**  |The IPV6Address of the device |Supplier provided if available | |
 |**PlaceId** |The PlaceId to which your device is mapped in Places |The IT admin maps DeviceID to the DisplayName field from a list of rooms |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
@@ -240,7 +240,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 ### General guidelines about devices and sensors
 
-- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, it's recommended that you include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
 - If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
