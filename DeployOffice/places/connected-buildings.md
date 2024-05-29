@@ -170,9 +170,10 @@ Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 Connect-MicrosoftPlaces 
 ```
 
-4. Use the following MS_Places_Get_PlaceId.ps1 script, or execute the following commands to download the list of floors and rooms.
+4. Use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands, to download the list of floors and rooms.
 
-   - Update buildingName to get rooms for only a particular building.
+> [!NOTE]
+> Update buildingName only if you need to get rooms for only a particular buildings.
 
 ```powershell
 $buildingName = “”  
@@ -200,8 +201,34 @@ $outputPath = 'C:\places.csv'
 
 $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation  
 ```
+5. The output file in your C:\places.csv should contain the following:
 
+|PlaceId  |DisplayName  |Type |
+|---------|---------|---------|
+|**5d275bba-5d7d-487f-855e-75cd2943204f** |Floor 1 |Floor |
+|**0fa1b1eb-6066-45ea-8f7c-09b4e8cc4e74** |Conf Room 1202/3455 (9) |Room |
 
+6. Download the device metadata from a partner solution or from your system with all the devices.
+
+7. Use a script or manually map your devices to PlaceId.
+
+8. Create a CSV file with your device metadata. You can use the following format for your CSV file.
+
+|Column  |Description  |Notes |Example |
+|---------|---------|---------|---------|
+|DeviceId (mandatory) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry that's sent |Manuf1_3455 |
+|**DisplayName** |The display name of the device | You can use a friendly name if applicable |Manuf1_3455 |
+|**Description** |The description of the device | | |
+|**MacAddress** |The Mac address of the device  |Supplier provided (if available) | |
+|**Manufacturer** (mandatory) |The manufacturer of the device |The IT admin provides this |Manuf1 |
+|**IPV4Address** |The IPV4Address of the device | Supplier provided (if available) | |
+|**IPV6Address**  |The IPV6Address of the device |Supplier provided if available | |
+|**PlaceId** |The PlaceId to which your device is mapped in Places |The IT admin maps DeviceID to the DisplayName field from a list of rooms |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+|**Tags** |A list of custom tags associated with the device to help with search | |[ "IsVirtual_False", "Building_121"] |
+|**Sensor.SensorId** (mandatory) |The unique identifier of a sensor within the device | Must come in the standard telemetry payload |PeopleCount Occupancy |
+|**Sensor.DisplayName** |The display Name of the sensor |You can use a friendly name if applicable |Paperclip |
+|**Sensor.SensorType** (mandatory) |The type of sensor |A validated list (see examples) |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
+|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location) | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
 
