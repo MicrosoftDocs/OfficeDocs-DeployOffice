@@ -37,7 +37,7 @@ The section provides details on how to bring data from existing IoT sensors into
 
 ### Connect badge-access systems
 
-Upload data from your badge-entry system to generate occupancy information for a building. Utilize the following steps to upload this data.
+Upload data from your badge-entry system to generate occupancy information for a building.
 
 #### Badge-data format
 
@@ -57,7 +57,7 @@ Use the following schema when uploading badge information:
 #### Upload the badge dataset
 
 1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places by running the following PowerShell cmdlet. For more information on the XX, see XX.
+2. Install Microsoft Places by running the following PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
