@@ -37,7 +37,7 @@ The section provides details on how to bring data from existing IoT sensors into
 
 ### Connect badge-access systems
 
-Upload data from your badge entry system to generate occupancy information for a building. Utilize the following steps to upload this data.
+Upload data from your badge-entry system to generate occupancy information for a building. Utilize the following steps to upload this data.
 
 #### Badge-data format
 
