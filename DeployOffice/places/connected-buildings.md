@@ -57,25 +57,25 @@ Use the following schema when uploading badge information:
 #### Upload the badge dataset
 
 1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places. For more information on the XX, see XX.
+2. Install Microsoft Places by running the following PowerShell cmdlet. For more information on the XX, see XX.
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. Import the Places module.
+3. Import the Places module by running the following PowerShell cmdlet.
 
 ```powershell
 Import-Module -Name MicrosoftPlaces
 ```
 
-4. Connect to the Places module.
+4. Connect to the Places module by running the following PowerShell cmdlet.
 
 ```powershell
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device.
+5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device by running the following PowerShell cmdlet.
 
 ```powershell
 Push-Dataset -Type BadgeSwipe -Path <folder path>
@@ -132,7 +132,7 @@ The first step entails uploading a csv with the device metadata and how devices 
 
 The following illustration shows a high-level diagram of how you can onboard devices and sensors onto Places.
 
-[GRAPHIC]
+[GRAPHIC 1]
 
 There are three ways you can upload device information to Places.
 
@@ -208,7 +208,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 |**5d275bba-5d7d-487f-855e-75cd2943204f** |Floor 1 |Floor |
 |**0fa1b1eb-6066-45ea-8f7c-09b4e8cc4e74** |Conf Room 1202/3455 (9) |Room |
 
-6. Download the device metadata from a partner solution or from your system with all the devices.
+6. Download the device metadata from a partner solution or from your system, including all the devices.
 
 7. Use a script or manually map your devices to PlaceId.
 
@@ -258,7 +258,7 @@ Next, run the onboarding script with your prepared CSV to onboard devices. If yo
 > [!NOTE]
 > **$FilePath** should be full path name.
 
-### Option 2: Using PowerShell cmdlets
+### Option 2: using PowerShell cmdlets
 
 There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
@@ -272,7 +272,7 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 |**Set-PlaceDevice**  |Updates a device     |Id (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
 |**Get-PlaceDevice**  |Gets a device        |Id<br>Filter<br>Top  |
 
-### Option 3: Using APIs
+### Option 3: using APIs
 
 If you want to build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
 
@@ -322,7 +322,13 @@ See the following Microsoft Graph APIs for more information:
 - [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update)
 - [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete)
 
-## Telemetry ingestion workflow
+## Telemetry historical data and workflow
 
 Once your have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
+
+[GRAPHIC 2]
+
+### Backfill historical data
+
+Microsoft Places accepts historical data in a specific CSV format and schema. You must export this data from an existing system and then use the following PowerShell cmdlet to upload the data.
 
