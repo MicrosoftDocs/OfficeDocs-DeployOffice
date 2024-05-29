@@ -126,7 +126,7 @@ Connect-MicrosoftPlaces
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
 
-## Device onboarding 
+## Device onboarding
 
 The first step entails uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
 
@@ -142,8 +142,10 @@ There are three ways you can upload device information to Places.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Places.<br>
-   Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).<br>Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
+1. Download place information from Places.
+
+   - Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+   - Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
@@ -152,7 +154,20 @@ Connect-ExchangeOnline
 ```
 
 ```powershell
-Push-Dataset -Type WifiSignal -Path <folder path>
+Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
+```
+
+2. You should see the following if you have the right permissions.
+
+   - Name : PlacesAdmin
+   - Assigned Role : TenantPlacesManagement
+
+
+3. To get the PlaceId of buildings, run the following PowerShell cmdlet:
+
+```powershell
+Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
+Connect-MicrosoftPlaces 
 ```
 
 ### General guidelines about devices and sensors
