@@ -29,7 +29,7 @@ You must do the following before using the Connected Workplace:
 
 ## Add sensor data
 
-The section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensor data is done in the following way:
+This section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensor data is done in the following way:
 
 - Generate building occupancy using badge data
 - Connect your Wi-Fi systems
@@ -102,7 +102,7 @@ Use the following schema when uploading Wi-Fi information:
 #### Upload the Wi-Fi dataset
 
 1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places cmdlets, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
@@ -136,9 +136,9 @@ Connecting occupancy and people-density sensors is done in four steps.
 
 ## Device onboarding
 
-The first step involves uploading a csv with the device metadata and how devices are mapped to a placeid in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
+The first step involves uploading a CSV file with the device metadata and how devices are mapped to a PlaceId in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
 
-The following illustration shows a high-level diagram of how you can onboard devices and sensors onto Places.
+The following is a high-level diagram about how you can onboard devices and sensors onto Places.
 
 [GRAPHIC 1]
 
@@ -146,7 +146,7 @@ There are three ways you can upload device information to Places.
 
 - Option 1, using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
 - Option 2, using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
-- Option 3, using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs exposed over Microsoft Graph.
+- Option 3, using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs in Microsoft Graph.
 
 ### Prerequisites: prepare device metadata  
 
@@ -209,7 +209,7 @@ $outputPath = 'C:\places.csv'
 $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation  
 ```
 
-5. The output file in your CSV path should contain the following:
+5. The output file in your CSV file path should contain the following:
 
 |PlaceId  |DisplayName  |Type |
 |---------|---------|---------|
@@ -240,7 +240,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 ### General guidelines about devices and sensors
 
-- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual deviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual DeviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
 - If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
@@ -319,6 +319,7 @@ To build an application to automate registering and onboarding devices, APIs are
     }
 }
 ```
+
 See the following Microsoft Graph APIs for more information:
 
 - [List sensorDevices](/graph/api/workplace-list-sensordevices)
@@ -335,7 +336,7 @@ Once you have your devices onboarded into Places, you can perform a one-time bac
 
 ### Backfill historical data
 
-Microsoft Places accepts historical data in a specific CSV format and schema. You must export this data from an existing system and then use the following PowerShell cmdlet to upload the data.
+Microsoft Places accepts historical data in a specific CSV file format and schema. You must export this data from an existing system and then use the following PowerShell cmdlet to upload the data.
 
 |Cmdlet name  |Description  |Parameters |Example |
 |---------|---------|---------|---------|
@@ -373,7 +374,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
-   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
+   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-saml-toolkit.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
 
