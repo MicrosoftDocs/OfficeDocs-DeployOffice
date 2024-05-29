@@ -142,10 +142,10 @@ There are three ways you can upload device information to Places.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Places.
+1. Download place information from Microsoft Places.
 
    - Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
-   - Open PowerShell as an administrator and run the following two PowerShell commands to check if your account has TenantPlacesManagement role, and to make sure your username is listed.
+   - Open PowerShell as an administrator and run the following PowerShell and ExchangeOnline PowerShell commands to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
@@ -159,16 +159,49 @@ Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers
 
 2. You should see the following if you have the right permissions.
 
-   - Name : PlacesAdmin
-   - Assigned Role : TenantPlacesManagement
+   - Name: PlacesAdmin
+   - Assigned Role: TenantPlacesManagement
 
 
-3. To get the PlaceId of buildings, run the following PowerShell cmdlet:
+3. To get the PlaceId of buildings, run the following ExchangeOnline PowerShell cmdlet:
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
 Connect-MicrosoftPlaces 
 ```
+
+4. Use the following MS_Places_Get_PlaceId.ps1 script, or execute the following commands to download the list of floors and rooms.
+
+   - Update buildingName to get rooms for only a particular building.
+
+```powershell
+$buildingName = “”  
+
+$allPlaces = Get-PlaceV3 | Select-Object PlaceId, DisplayName, Type, ParentId  
+
+$building = $allPlaces | Where-Object { $_.DisplayName -eq $buildingName -and $_.Type -eq "Building" }  
+
+$floors = $allPlaces | Where-Object { $_.ParentId -eq $building.PlaceId }  
+
+$spacesAndRooms = $floors | ForEach-Object {   
+
+    $floor = $_;   
+
+    $allPlaces | Where-Object { $_.ParentId -eq $floor.PlaceId }  
+}  
+
+$places = @() 
+
+$floors | ForEach-Object { $places += $_ }  
+
+$spacesAndRooms | ForEach-Object { $places += $_ }  
+
+$outputPath = 'C:\places.csv'  
+
+$places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation  
+```
+
+
 
 ### General guidelines about devices and sensors
 
