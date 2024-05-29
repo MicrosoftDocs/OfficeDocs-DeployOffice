@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins using Microsoft 365 Apps with information about which versions of Windows Server are supported."
-ms.date: 03/17/2023
+ms.date: 05/28/2024
 ---
 
 # Windows Server end of support and Microsoft 365 Apps
