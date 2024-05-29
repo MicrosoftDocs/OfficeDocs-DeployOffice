@@ -322,7 +322,7 @@ See the following Microsoft Graph APIs for more information:
 - [Update workplaceSensorDevice](/graph/api/workplacesensordevice-update)
 - [Delete workplaceSensorDevice](/graph/api/workplacesensordevice-delete)
 
-## Telemetry historical data and workflow
+## Telemetry historical data (ingestion) and workflow
 
 Once your have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
 
@@ -332,3 +332,50 @@ Once your have your devices onboarded into Places, you can perform a one-time ba
 
 Microsoft Places accepts historical data in a specific CSV format and schema. You must export this data from an existing system and then use the following PowerShell cmdlet to upload the data.
 
+|Cmdlet name  |Description  |Parameters |Example |
+|---------|---------|---------|---------|
+|**Push-Dataset** |Uploads dataset into ADLS |Type<br>Path  |Push-Dataset -Type RoomOccupancy -Path C:\sensordata\ |
+
+> [!NOTE]
+> Type can be RoomOccupancy, PeopleCount, or InferredOccupancy. Role should be assigned to TenantPlacesManagement. For more information on PowerShell cmdlets, see [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+
+The following is the CSV file format for People Count.
+
+|Column name  |Column order  |Comment |Example |
+|---------|---------|---------|---------|
+|**DeviceId** |1  |Device Id  |Manuf1_1202_3455 |
+|**SensorId**  |2  |Sensor id  |PeopleCount |
+|**Value**  |3 |An unsigned integer |**InferredOccupancy**: True/False<br>**PeopleCount**: Any unsigned integer (for example, 5) |
+|**IngestionTime**  |4 |Timestamp from the telemetry, in UTC standard format |2023-06-27T18:24:20.808Z |
+
+### Real-time telemetry ingestion
+
+The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create an AAD application with the permission based on the selected architecture.
+
+|Header  |Header  |
+|---------|---------|
+|**ScopeName**      |For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference) |
+|**DisplayName**    |Read and write organization place device telemetry |
+|**Description**    |Allows the app to read and write telemetry data for all devices in an organization |
+|**Type** |Application-only |
+|**Admin Consent?**  |Yes |
+
+#### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
+
+For customers choosing these integration types, must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
+
+1. This will be applicable when hardware providers have created multi-tenant SaaS connectors. See more on Single vs multi-tenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
+2. Get the app ID (GUID) from the partner that will ingest telemetries on behalf of your service.
+3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
+
+   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the Id or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
+
+   [SCREENSHOT 1]
+
+   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. Click the **Accept** button to grant admin consent.
+
+     [SCREENSHOT 2]
+
+#### Admin Consent: type B and C architecture, connector running in a customer on-premise environment
+
+Microsoft Places makes available an API that accepts telemetry in standard format and exposed over MS Graph. The API accepts a batch of telemetry messages. 
