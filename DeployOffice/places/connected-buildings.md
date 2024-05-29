@@ -206,7 +206,7 @@ $spacesAndRooms | ForEach-Object { $places += $_ }
 
 $outputPath = 'C:\places.csv'  
 
-$places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation  
+$places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation
 ```
 
 5. The output file in your CSV file path should contain the following:
@@ -356,7 +356,7 @@ The following is the CSV file format for People Count.
 
 ### Real-time telemetry ingestion
 
-The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create an AAD application with the permission based on the selected architecture.
+The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create an Azure Active Directory (AAD) application with the permission based on the selected architecture.
 
 |Header  |Header  |
 |---------|---------|
