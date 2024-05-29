@@ -144,9 +144,9 @@ The following is a high-level diagram about how you can onboard devices and sens
 
 There are three ways you can upload device information to Places.
 
-- Option 1, using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
-- Option 2, using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
-- Option 3, using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs in Microsoft Graph.
+- Option 1: using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
+- Option 2: using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
+- Option 3: using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs in Microsoft Graph.
 
 ### Prerequisites: prepare device metadata  
 
@@ -255,7 +255,7 @@ Powershell scripts help you upload and manage devices in bulk. Microsoft provide
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
 
-Next, run the onboarding script with your prepared CSV to onboard devices. If you want to customize scripts and use the Powershell cmdlets [NOT SURE WHAST TGHIS MEANS] themselves, they may reference the next section.
+Next, run the onboarding script with your prepared CSV file to onboard devices. If you want to customize scripts and use the Powershell cmdlets [NOT SURE WHAST TGHIS MEANS] themselves, they may reference the next section.
 
 |Script name  |Description  |
 |---------|---------|
