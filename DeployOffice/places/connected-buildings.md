@@ -173,7 +173,7 @@ Connect-MicrosoftPlaces
 4. Use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands, to download the list of floors and rooms.
 
 > [!NOTE]
-> Update buildingName only if you need to get rooms for only a particular buildings.
+> Update buildingName only if you need to get rooms for particular buildings.
 
 ```powershell
 $buildingName = “”  
@@ -268,8 +268,8 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 |Cmdlet name  |Description  |Parameters |
 |---------|---------|---------|
 |**New-PlaceDevice**  |Creates a new device |DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
-|**Remove-PlaceDevice** |Deletes a device   |Id (mandatory)  |
-|**Set-PlaceDevice**  |Updates a device     |Id (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
+|**Remove-PlaceDevice** |Deletes a device   |ID (mandatory)  |
+|**Set-PlaceDevice**  |Updates a device     |ID (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
 |**Get-PlaceDevice**  |Gets a device        |Id<br>Filter<br>Top  |
 
 ### Option 3: using APIs
@@ -343,8 +343,8 @@ The following is the CSV file format for People Count.
 
 |Column name  |Column order  |Comment |Example |
 |---------|---------|---------|---------|
-|**DeviceId** |1  |Device Id  |Manuf1_1202_3455 |
-|**SensorId**  |2  |Sensor id  |PeopleCount |
+|**DeviceId** |1  |Device ID  |Manuf1_1202_3455 |
+|**SensorId**  |2  |Sensor ID  |PeopleCount |
 |**Value**  |3 |An unsigned integer |**InferredOccupancy**: True/False<br>**PeopleCount**: Any unsigned integer (for example, 5) |
 |**IngestionTime**  |4 |Timestamp from the telemetry, in UTC standard format |2023-06-27T18:24:20.808Z |
 
@@ -368,7 +368,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 2. Get the app ID (GUID) from the partner that will ingest telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
-   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the Id or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
+   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
    [SCREENSHOT 1]
 
@@ -378,4 +378,13 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
 #### Admin Consent: type B and C architecture, connector running in a customer on-premise environment
 
-Microsoft Places makes available an API that accepts telemetry in standard format and exposed over MS Graph. The API accepts a batch of telemetry messages. 
+Microsoft Places makes available an API that accepts telemetry in standard format and exposed over MS Graph. The API accepts a batch of telemetry messages.
+
+1. For type B architecture, customers rely on an integration provided by their hardware partners that's hosted on-premise in the customer’s environment.
+2. For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
+
+   For a sample application, see [A Github link?] this project to send data to Places.
+
+3. Both type B and C integration architectures require customers to register an AAD application like below and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+   [SCREENSHOT 3]
