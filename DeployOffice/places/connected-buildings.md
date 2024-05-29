@@ -57,25 +57,25 @@ Use the following schema when uploading badge information:
 #### Upload the badge dataset
 
 1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places by running the following PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. Import the Places module by running the following PowerShell cmdlet.
+3. Import the Places module by running the following Windows PowerShell cmdlet.
 
 ```powershell
 Import-Module -Name MicrosoftPlaces
 ```
 
-4. Connect to the Places module by running the following PowerShell cmdlet.
+4. Connect to the Places module by running the following Places PowerShell cmdlet.
 
 ```powershell
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device by running the following PowerShell cmdlet.
+5. Upload the badge dataset from the location (using the folder and path) where it's stored on your device by running the following Places PowerShell cmdlet.
 
 ```powershell
 Push-Dataset -Type BadgeSwipe -Path <folder path>
@@ -102,29 +102,37 @@ Use the following schema when uploading Wi-Fi information:
 #### Upload the Wi-Fi dataset
 
 1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places. For more information on the XX, see XX.
+2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. Import the Places module.
+3. Import the Places module by running the following Windows PowerShell cmdlet.
 
 ```powershell
 Import-Module -Name MicrosoftPlaces
 ```
 
-4. Connect to the Places module.
+4. Connect to the Places module by running the following Places PowerShell cmdlet.
 
 ```powershell
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device.
+5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device by running the following Places PowerShell cmdlet.
 
 ```powershell
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
+## Connect other occupancy sensors or people-denisty sensors
+
+Connecting occupancy and people-density sensrors is done in four steps.
+
+- Device onboarding
+- Backfill historical data
+- Real-time telemetry ingestion
+- Verify available data in Places
 
 ## Device onboarding
 
@@ -144,14 +152,16 @@ There are three ways you can upload device information to Places.
 
 1. Download place information from Microsoft Places.
 
-   - Install PowerShell 7. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
-   - Open PowerShell as an administrator and run the following PowerShell and ExchangeOnline PowerShell commands to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
+   - Install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
+   
 ```powershell
 Install-Module -Name ExchangeOnlineManagement 
 Import-Module -Name ExchangeOnlineManagement 
 Connect-ExchangeOnline
 ```
+
+   - Open PowerShell as an administrator and run the following ExchangeOnline PowerShell command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
