@@ -378,9 +378,9 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
    If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or appId (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
-   :::image type="content" source="places/media/connected-buildings/connected-buildings-saml-toolkit.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
+   :::image type="content" source="./media/connected-buildings/connected-buildings-saml-toolkit.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
 
-   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
+   If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button. 
 
      [SCREENSHOT 2]
 
