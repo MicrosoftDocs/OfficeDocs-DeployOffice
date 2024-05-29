@@ -127,7 +127,7 @@ Push-Dataset -Type WifiSignal -Path <folder path>
 ```
 ## Connect other occupancy sensors or people-denisty sensors
 
-Connecting occupancy and people-density sensrors is done in four steps.
+Connecting occupancy and people-density sensors is done in four steps.
 
 - Device onboarding
 - Backfilling with historical data
