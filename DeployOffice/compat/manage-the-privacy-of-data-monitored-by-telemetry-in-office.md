@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Learn about the data collection process and how to configure settings that help protect user privacy when using Office Telemetry Dashboard."
-ms.date: 03/01/2023
+ms.date: 05/21/2024
 ---
 
 # Manage the privacy of data monitored by Office Telemetry Dashboard
@@ -20,11 +20,11 @@ ms.date: 03/01/2023
 > - Office Telemetry Dashboard is no longer supported in Microsoft 365 Apps for enterprise (as of Version 2208), and is removed in Version 2301 (and later).
 > - For more information, see [Removal of Office Telemetry Dashboard from Microsoft 365 Apps for enterprise](telemetry-dashboard-removal.md).
 
-Office Telemetry Dashboard is an Excel workbook that displays compatibility and inventory data about the Office files, Office add-ins, and Office solutions that are used in an organization. Office Telemetry Dashboard displays the file names and titles of documents in each user's Most Recently Used list, which might reveal personal or confidential information about the user or organization. The names of add-ins and other solutions that are used by Office are also displayed. In this article, you can learn about settings in Office Telemetry Dashboard and the Office Telemetry Agent that help you protect user privacy by disguising file names and titles or by preventing data for selected applications or solutions from being reported altogether.
+Office Telemetry Dashboard is an Excel workbook that shows compatibility and inventory data for the Office files, add-ins, and solutions used in an organization. Office Telemetry Dashboard displays the file names and titles of documents in each user's Most Recently Used list, which might reveal personal or confidential information about the user or organization. The names of add-ins and other solutions that are used by Office are also displayed. This article explains how settings in Office Telemetry Dashboard and Office Telemetry Agent protect user privacy. These settings disguise file names and titles or prevent data for selected applications and solutions from being reported.
 
-The agent collects inventory, usage, and health data and uploads it to a shared folder, where it is processed by a service named "Office Telemetry Processor" and inserted into an SQL database. Office Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
+The agent collects inventory, usage, and health data, then uploads it to a shared folder. A service called Office Telemetry Processor processes this data and inserts it into an SQL database. Office Telemetry Dashboard connects to this database so that it can show the usage of Office files, add-ins, and solutions.
 
-The agent is built into Office 2019 and Office 2016 and is installed separately on computers that run earlier versions of Office. Regardless of whether it's built in or deployed separately, the agent never generates or collects any data until you enable logging. You can do this by using either the registry or the Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
+The agent is built into Office 2019 and Office 2016 and is installed separately on computers that run earlier versions of Office. Whether the agent is built in or deployed separately, it doesn't generate or collect any data until you enable logging. Use the registry or Group Policy Administrative Template files (ADMX/ADML) for Office as described in [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md). After logging begins, data is stored on the local computer under %LocalAppData%\Microsoft\Office\16.0\Telemetry and is uploaded periodically to a shared folder.
 
 > [!IMPORTANT]
 > - Office Telemetry Dashboard is an on-premises tool that collects inventory, usage, and health data about the Office documents and solutions, such as add-ins, used in your organization. The data is primarily designed to help your organization with application compatibility testing.
@@ -37,19 +37,20 @@ The agent is built into Office 2019 and Office 2016 and is installed separately 
 
 ## How to configure privacy and performance settings in Office Telemetry Dashboard
 
-There are several ways that you can configure the level of detail that is displayed for Office files, add-ins, and solutions in Office Telemetry Dashboard. Some methods, such as changing the reporting threshold, prevent certain information from being shown in Office Telemetry Dashboard. Other methods prevent the agent from uploading data so that it is never added to the database. Setting a threshold and preventing certain data from uploading can also help improve the performance of the database and custom reports.
+There are several ways that you can configure the level of detail that is displayed for Office files, add-ins, and solutions in Office Telemetry Dashboard. Some methods, such as changing the reporting threshold, prevent certain information from being shown in Office Telemetry Dashboard. Other methods prevent the agent from uploading data so that it's never added to the database. Setting a threshold and preventing certain data from uploading can also help improve the performance of the database and custom reports.
 
 The following image provides a quick overview of the three methods that Office Telemetry Dashboard provides to help you protect user privacy. 
 
 **Three ways to configure privacy settings in Office Telemetry Dashboard**
 
-![This diagram illustrates the 3 methods offered by Office Telemetry Dashboard to protect user privacy.](../images/ORK_Telem_3Methods.gif)
+:::image type="content" source="../compat/media/manage-the-privacy-of-data-monitored-by-telemetry-in-office/telemetry-privacy-methods.png" alt-text="An image showing three methods to manage privacy in Office telemetry: obfuscate document details, exclude certain applications from reporting, and set thresholds for user counts.":::
+
 
 ### Adjust the reporting threshold in the database to show only files that are used by multiple users
 
-Office Telemetry Dashboard tracks the number of users who use an Office file that has the same name. Typically these are files that are shared and accessed by multiple users and might have greater business value than files that are used by a single user. As part of your compatibility planning, you might decide not to view inventory and compatibility events about files that are used by a single user and instead monitor files that are used throughout a department. Configuring Office Telemetry Dashboard to report files that are used by, say, three or more users also helps avoid displaying personal files, such as resumes. This setting also reduces the data set that is returned in custom reports in Office Telemetry Dashboard, which can help you work around the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) in the 32-bit version of Excel. 
+Office Telemetry Dashboard tracks the number of users who use an Office file that has the same name. These files are usually shared and accessed by multiple users, and they often have more business value than files used by a single user. As part of your compatibility planning, you can choose to ignore inventory and compatibility events for files used by a single user and instead monitor files used across a department. Configuring Office Telemetry Dashboard to report files that are used by, say, three or more users also helps avoid displaying personal files, such as resumes. This setting reduces the data set returned in custom reports in Office Telemetry Dashboard, helping you work around the [2-GB memory limitation](https://go.microsoft.com/fwlink/p/?LinkID=330482) in the 32-bit version of Excel. 
 
-To prevent Office Telemetry Dashboard from displaying files that have a single author, you run a script that adjusts the minimum reporting threshold in the database. Specifically, you use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) to filter out files that appear on two or fewer clients. To do this, set the **Threshold** value to 3 (or to a larger value, if you want) as shown in the following example. 
+To prevent Office Telemetry Dashboard from displaying files that have a single author, you run a script that adjusts the minimum reporting threshold in the database. Use the [Telemetry Dashboard Administration Tool](https://go.microsoft.com/fwlink/p/?LinkId=281836) (Tdadm) to filter out files that appear on two or fewer clients. Set the **Threshold** value to three, or to a larger value if needed, as shown in the following example. 
 
 ```console
 tdadm.exe -o settings -databaseserver dbserver -databasename dbname -threshold 3
@@ -59,9 +60,9 @@ For more information about Tdadm, see the [Tdadm wiki](https://go.microsoft.com/
 
 ### Disguise or obscure user and file data that is shown in Office Telemetry Dashboard
 
-It's common for users in an organization to save Office files by using file names that contain sensitive or confidential information. Although these files might have high business value that justifies monitoring them for compatibility issues, business groups such as legal and human resources might object to having their computers monitored to avoid revealing confidential file names to administrators who use Office Telemetry Dashboard. 
+It's common for users in an organization to save Office files by using file names that contain sensitive or confidential information. These files might have high business value, justifying their monitoring for compatibility issues. However, business groups like legal and human resources might object to monitoring their computers to avoid revealing confidential file names to administrators using Office Telemetry Dashboard. 
 
-To allow yourself and other administrators to identify the owners of Office files that have compatibility issues without revealing file names or specific locations, you can enable file obfuscation, which disguises Office file names, titles, and file paths. This setting is configured on the agent, which performs the obfuscation task before uploading data to the shared folder. The data that is stored on the local computer is not obfuscated.
+To allow yourself and other administrators to identify the owners of Office files that have compatibility issues without revealing file names or specific locations, you can enable file obfuscation, which disguises Office file names, titles, and file paths. This setting is configured on the agent, which performs the obfuscation task before uploading data to the shared folder. The data that is stored on the local computer isn't obfuscated.
 
 The following table describes different ways in which file information is disguised.
 
@@ -76,7 +77,7 @@ Actual file details on the monitored client computer
 |#3|FY2018_Merger.xlsx   |https://sharepoint/sites/HR/SharedDocuments   |FY2018_Merger.xlsx   |
 |#4 |10 cures for diseases.pptx   |Outlook:C:\Users\John\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.Outlook\1234ABCD   |10 cures for diseases   |
 
-Data that is sent to the shared folder after you enable file obfuscation
+Data that is sent to the shared folder after you enable file obfuscation.
 
 |Example|**File name**|**File path**|**Title**|
 |:-----|:-----|:-----|:-----|
@@ -109,7 +110,7 @@ The following table describes the name and path of the Group Policy setting that
 
 ### Prevent certain applications or solutions from being reported in Office Telemetry Dashboard
 
-For business groups that employ lawyers, executives, or other employees who work with trade secrets or sensitive data, you can prevent information about specific Office applications or Office solution types from being collected and uploaded to the shared folder. For example, a business group might decide that Excel files are too sensitive for monitoring. Another group might decide that they care only about Access-related solutions and that they don't want to monitor other applications.
+For business groups with employees handling trade secrets or sensitive data, you can prevent the collection and upload of information about specific Office applications or Office solution types to the shared folder. For example, a business group might decide that Excel files are too sensitive for monitoring. Another group might decide that they care only about Access-related solutions and that they don't want to monitor other applications.
 
 #### To configure exclusion settings by using the registry
 
@@ -129,7 +130,7 @@ The following table describes the registry values that prevent specific solution
 |:-----|:-----|:-----|
 |agave  <br/> appaddins <br/> <br/> comaddins<br/>  <br/> documentfiles  <br/><br/> templatefiles  <br/> |REG_DWORD  <br/> |Prevents data for specific solutions from being reported to Office Telemetry Dashboard. The value names correspond to Office solution types as follows:  <br/> <br/>agave: apps for Office  <br/> <br/>appaddins: Application-specific add-ins. These include Excel add-ins such as .xla and xlam, Word add-ins such as .dotm, and PowerPoint add-ins such as .ppa and .ppam. <br/> <br/> comaddins: COM add-ins <br/> <br/> documentfiles: Office document files  <br/><br/> templatefiles: Office template files <br/> <br/> **Value:** <br/><br/> 1 = Prevent reporting <br/> <br/> 0 = Allow reporting  <br/><br/> Default = 0 (Allow reporting)  <br/> |
 
-The following example disables reporting for all solution and application types. Save this sample as a .reg file and then remove any applications or solutions that you want to allow reporting for. Otherwise they will all be disabled because their value will be set to 00000001.
+The following example disables reporting for all solution and application types. Save this sample as a .reg file and then remove any applications or solutions that you want to allow reporting for. Otherwise they'll all be disabled because their value is set to 00000001.
 
 ```console
 Windows Registry Editor Version 5.00
@@ -199,9 +200,9 @@ The policy settings that are listed in the following table are available in the 
 
 ## Delete data that is stored on client computers
 
-Disabling logging does not delete the data that has already been collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office\16.0\Telemetry.
+Disabling logging doesn't delete the data that is already collected from a computer. To delete this data on the local client computer, delete the files evt.tbl, sln.tbl, user.tbl that are located under %LocalAppData%\Microsoft\Office\16.0\Telemetry.
 
-## Related topics
+## Related articles
 
 - [Guide to Office Telemetry Dashboard resources](compatibility-and-telemetry-in-office.md)
 - [Deploy Office Telemetry Dashboard](deploy-telemetry-dashboard.md)

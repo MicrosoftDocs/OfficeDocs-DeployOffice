@@ -1,8 +1,8 @@
 ---
 title: "Update Microsoft applications for Mac by using msupdate"
-ms.author: pbowden
+ms.author: ppark
 author: pbowden-msft
-manager: dougeby
+manager: eduardoc
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about how to update Office and other Microsoft applications for Mac from the command line by using msupdate"
-ms.date: 10/16/2023
+ms.date: 05/24/2024
 ---
 
 # Update Microsoft applications for Mac by using msupdate
@@ -44,6 +44,9 @@ The following options are displayed:
     -t | --terminate <secs>  Number of seconds to wait before closing opened applications in order for updates to complete
        -m | --message <msg>  Optional message to display on macOS banner notification to notify user
 ```
+
+> [!NOTE]
+> The ``--version`` option is only supported for the following application updates: **Word**, **Excel**, **PowerPoint**, **Outlook**,**OneNote**
 
 ## Examples of how to use msupdate
 - Display the current configuration parameters for MAU:

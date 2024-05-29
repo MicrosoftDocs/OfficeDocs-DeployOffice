@@ -3,7 +3,7 @@ title: "Configure the iOS app for Microsoft Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/16/2024
+ms.date: 05/24/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -81,15 +81,15 @@ The mobile access installation process is made up of these four steps.
 1. Users navigate to the URL provided by their tenant admin in the browser of the user’s mobile device.
 2. The Apple TestFlight app installation directs users to a two-step process to install the Places app. First, install the TestFlight app. Second, return to the URL and tap on **Start Testing.** This launches the TestFlight app on the device and makes the user eligible to install the Places app.
 
-   ![Screenshot of the TestFlight app install on a mobile device.](../images/places/configure-ios-app-002b.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-002b.png" alt-text="A screenshot of the TestFlight app install on a mobile device.":::
 
 3. In the TestFlight app, find the listing for **Microsoft Places** and tap **Install**.
 
-   ![Screenshot of the Microsoft Places app install on a mobile device.](../images/places/configure-ios-app-003.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-003.png" alt-text="A screenshot of the Microsoft Places app install on a mobile device.":::
 
 4. Turn on the auto-updates feature to get access to new versions of the app on your mobile device (this feature is an optional step).
 
-   ![Screenshot of the Microsoft Places automatic-updates setting on a mobile device.](../images/places/configure-ios-app-004.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-004.png" alt-text="A screenshot of the Microsoft Places automatic-updates setting on a mobile device.":::
 
 5. Open and sign in to the Places mobile app.
 
@@ -97,7 +97,7 @@ The mobile access installation process is made up of these four steps.
 
    You can tap to open the app and sign in using your corporate credentials that have access to the Places opt-in features.
 
-   ![Screenshot of the Places app on a mobile device home screen.](../images/places/configure-ios-app-005.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-005.png" alt-text="A screenshot of the Places app on a mobile device home screen.":::
 
 > [!NOTE]
 > If you no longer want to test the app, you can also delete it yourself as a tester by visiting the app’s **Information** page in TestFlight and tapping **Stop Testing**.”
@@ -124,40 +124,40 @@ The following procedure adds the bundle ID of the Places iOS app as a custom app
 
 1. Click on **Endpoint security** from left menu and navigate to **Endpoint Security Overview**. Then click on **Conditional access**.
 
-   ![Screenshot of the Endpoint security choices.](../images/places/configure-ios-app-010.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-010.png" alt-text="A screenshot of the Endpoint security choices.":::
 
 2. In **Conditional access**, click on **View all policies** to see all of the deployed conditional-access policies.
 
-   ![Screenshot of the Conditional Access overview.](../images/places/configure-ios-app-011.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-011.png" alt-text="A screenshot of the Conditional Access overview.":::
 
 3. The following summary shows all of the **Policies** for the tenant.
 
-   ![Screenshot of the Policies overview.](../images/places/configure-ios-app-012.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-012.png" alt-text="A screenshot of the Policies overview.":::
 
 4. Click on **Require approved client apps and app protection policies**, which opens the policy details.
 
-   ![Screenshot of the Required approved client apps and protection policies overview.](../images/places/configure-ios-app-013.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-013.png" alt-text="A screenshot of the Required approved client apps and protection policies overview.":::
 
 5. Under **Access controls**, then **Grant,** enable the **Require app protection policy** option along with the existing policy **Required approved client app**. Then below that section, under **For multiple control**, choose **Require one of the selected controls**.
 
-   ![Screenshot of the Require on the selected apps option.](../images/places/configure-ios-app-014b.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-014b.png" alt-text="A screenshot of the Require on the selected apps option.":::
 
 6. To enable MAM CA protection for the Places app, from the **Intune admin center** home page, navigate to **Apps**, then to **App protection policies**.
 
-   ![Screenshot of the Intune admin center and App protection policies option.](../images/places/configure-ios-app-015b.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-015b.png" alt-text="A screenshot of the Intune admin center and App protection policies option.":::
 
    Select your existing app protection policy, then under **Properties**, select **Apps Edit.**
 
-   ![Screenshot of your existing app protection policy and the Apps edit option.](../images/places/configure-ios-app-019b.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-019b.png" alt-text="A screenshot of your existing app protection policy and the Apps edit option.":::
 
    Scroll to the **Custom apps** section, and select **+ Select custom apps**.
 
-   ![Screenshot of the app protection policies option.](../images/places/configure-ios-app-016.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-016.png" alt-text="A screenshot of the app protection policies option.":::
 
    Add the bundle ID **com.microsoft.msplaces** in the text box, and click **Add**.
 
-   ![Screenshot of the Select public apps and Select custom apps option.](../images/places/configure-ios-app-018.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-018.png" alt-text="A screenshot of the Select public apps and Select custom apps option.":::
 
    After adding, select the app bundle ID from the list to move to the **Selected Apps** section, and click **Select**.
 
-   ![Screenshot showing the Select apps to target and the Bundle ID.](../images/places/configure-ios-app-017.png)
+   :::image type="content" source="./media/configure-the-ios-app/configure-ios-app-017.png" alt-text="A screenshot showing the Select apps to target and the Bundle ID.":::
