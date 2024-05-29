@@ -130,9 +130,9 @@ Push-Dataset -Type WifiSignal -Path <folder path>
 Connecting occupancy and people-density sensrors is done in four steps.
 
 - Device onboarding
-- Backfill historical data
+- Backfilling with historical data
 - Real-time telemetry ingestion
-- Verify available data in Places
+- Verifying available data in Places
 
 ## Device onboarding
 
@@ -152,7 +152,7 @@ There are three ways you can upload device information to Places.
 
 1. Download place information from Microsoft Places.
 
-   - Install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+ - Install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
    
 ```powershell
@@ -167,7 +167,7 @@ Connect-ExchangeOnline
 Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
 ```
 
-2. You should see the following if you have the right permissions.
+2. You should see the following name and assigned role if you have the right permissions.
 
    - Name: PlacesAdmin
    - Assigned Role: TenantPlacesManagement
@@ -211,7 +211,8 @@ $outputPath = 'C:\places.csv'
 
 $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation  
 ```
-5. The output file in your C:\places.csv should contain the following:
+
+5. The output file in your CSV path should contain the following:
 
 |PlaceId  |DisplayName  |Type |
 |---------|---------|---------|
@@ -226,18 +227,18 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 |Column  |Description  |Notes |Example |
 |---------|---------|---------|---------|
-|DeviceId (mandatory) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry that's sent |Manuf1_3455 |
+|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry that's sent |Manuf1_3455 |
 |**DisplayName** |The display name of the device | You can use a friendly name if applicable |Manuf1_3455 |
 |**Description** |The description of the device | | |
 |**MacAddress** |The Mac address of the device  |Supplier provided (if available) | |
-|**Manufacturer** (mandatory) |The manufacturer of the device |The IT admin provides this |Manuf1 |
+|**Manufacturer** (required) |The manufacturer of the device |The IT admin provides this |Manuf1 |
 |**IPV4Address** |The IPV4Address of the device | Supplier provided (if available) | |
 |**IPV6Address**  |The IPV6Address of the device |Supplier provided if available | |
 |**PlaceId** |The PlaceId to which your device is mapped in Places |The IT admin maps DeviceID to the DisplayName field from a list of rooms |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 |**Tags** |A list of custom tags associated with the device to help with search | |[ "IsVirtual_False", "Building_121"] |
-|**Sensor.SensorId** (mandatory) |The unique identifier of a sensor within the device | Must come in the standard telemetry payload |PeopleCount Occupancy |
+|**Sensor.SensorId** (required) |The unique identifier of a sensor within the device | Must come in the standard telemetry payload |PeopleCount Occupancy |
 |**Sensor.DisplayName** |The display Name of the sensor |You can use a friendly name if applicable |Paperclip |
-|**Sensor.SensorType** (mandatory) |The type of sensor |A validated list (see examples) |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
+|**Sensor.SensorType** (required) |The type of sensor |A validated list (see examples) |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
 |**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location) | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
@@ -277,9 +278,9 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 
 |Cmdlet name  |Description  |Parameters |
 |---------|---------|---------|
-|**New-PlaceDevice**  |Creates a new device |DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
-|**Remove-PlaceDevice** |Deletes a device   |ID (mandatory)  |
-|**Set-PlaceDevice**  |Updates a device     |ID (mandatory)<br>DeviceId (mandatory)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (Mandatory)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (mandatory)   |
+|**New-PlaceDevice**  |Creates a new device |DeviceId (required)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (required)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (required)   |
+|**Remove-PlaceDevice** |Deletes a device   |ID (required)  |
+|**Set-PlaceDevice**  |Updates a device     |ID (required)<br>DeviceId (required)<br>DisplayName<br>Description<br>MACAddress<br>Manufacturer (required)<br>IPV4Address<br>IPV6Address<br>PlaceId<br>Tags<br>Sensors (required)   |
 |**Get-PlaceDevice**  |Gets a device        |Id<br>Filter<br>Top  |
 
 ### Option 3: using APIs
