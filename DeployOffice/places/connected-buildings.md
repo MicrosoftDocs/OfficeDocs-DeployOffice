@@ -286,39 +286,25 @@ To build an application to automate registering and onboarding devices, APIs are
 
 1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
 
-|Header 1  |Header 2  |
+The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+|Category  |Application  |
 |-------|-------|
-|**ScopeName**   |PlaceDevice.Read.All<br>For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference) |
 |**DisplayName** |Read organization Places devices |
 |**Description** |Allows app to read all Places devices in the organization |
 |**Type**        |Application-only |
 |**Admin consent**<br>(yes or no) |Yes |
 
-|Header 1  |Header 2  |
+The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+|Catagory  |Application  |
 |-------|-------|
-|**ScopeName**   |PlaceDevice.ReadWrite.All<br>For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference) |
 |**DisplayName** |Read and write organization Places devices |
 |**Description** |Read and write organization Places devices |
 |**Type** |Application-only |
 |**Admin consent**<br>(yes or no) |Yes |
 
 2. Build and deploy an application to sync device information across Places and your partners.
-
-3. Service Details.
-
-```powershell
-{
-    "error": {
-        "code": "InvalidAuthenticationToken",
-        "message": "Access token is empty.",
-        "innerError": {
-            "date": "2024-05-28T23:17:51",
-            "request-id": "1c212140-3bf2-4f7c-93e9-5c742d2c3c87",
-            "client-request-id": "1c212140-3bf2-4f7c-93e9-5c742d2c3c87"
-        }
-    }
-}
-```
 
 See the following Microsoft Graph APIs for more information:
 
@@ -358,9 +344,10 @@ The following is the CSV file format for People Count.
 
 The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create an Azure Active Directory (AAD) application with the permission based on the selected architecture.
 
-|Header  |Header  |
+The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+|Category  |Description  |
 |---------|---------|
-|**ScopeName**      |For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference) |
 |**DisplayName**    |Read and write organization place device telemetry |
 |**Description**    |Allows the app to read and write telemetry data for all devices in an organization |
 |**Type** |Application-only |
@@ -380,7 +367,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
    If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
-     [SCREENSHOT 2]
+    :::image type="content" source="./media/connected-buildings/connected-buildings-permissions-requested.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
 
 #### Admin Consent: type B and C architecture, connector running in a customer on-site environment
 
