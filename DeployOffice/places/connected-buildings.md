@@ -367,7 +367,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
    If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
-    :::image type="content" source="./media/connected-buildings/connected-buildings-permissions-requested.png" alt-text="Screenshot of the Microsoft Entra SAML Toolkit permissions page.":::
+    :::image type="content" source="./media/connected-buildings/connected-buildings-permissions-requested.png" alt-text="Screenshot of the Permissions requested dialog box.":::
 
 #### Admin Consent: type B and C architecture, connector running in a customer on-site environment
 
@@ -380,4 +380,4 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 3. Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-   [SCREENSHOT 3]
+   :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box.":::
