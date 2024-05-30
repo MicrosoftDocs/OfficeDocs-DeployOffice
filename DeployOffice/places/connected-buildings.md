@@ -375,9 +375,6 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 1. For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
 2. For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-
-   For a sample application, see [A Github link?] this project to send data to Places.
-
 3. Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box.":::
