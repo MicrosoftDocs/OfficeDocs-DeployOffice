@@ -1,5 +1,5 @@
 ---
-title: "Set-PlaceV3 cmdlet"
+title: "Set-PlaceV3"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -116,6 +116,7 @@ This example updates a building's address.
 
 > [!IMPORTANT]
 > Currently, you must set all of the below address parameters when updating or adding an address. A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.  Additionally, PostOfficeBox will soon be deprecated, so that parameter should be set to an empty value.
+
 ```powershell
 Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox ''
 ```
