@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides IT admins with information about which versions of Office, Project, and Visio can be installed together on the same computer."
-ms.date: 04/11/2023
+ms.date: 05/29/2024
 ---
 
 # Supported scenarios for installing different versions of Office, Project, and Visio on the same computer
@@ -22,7 +22,7 @@ The two main things that determine whether Office, Project, and Visio can be ins
 - You can't install two products together that have the same version but use different installation technologies.
 - You can't install two products of different versions together if both products use Click-to-Run as the installation technology and those products have overlapping Office applications.
 
-See the [example installation scenarios](#example-installation-scenarios) section for several examples of installation scenarios that are supported and not supported, along with an explanation of why they are or aren't supported, based on these rules.
+See the [example installation scenarios](#example-installation-scenarios) section for several examples of installation scenarios that are supported and not supported, along with an explanation of why it is or isn't supported, based on these rules.
 
 ## Office releases and their version number
 
@@ -62,7 +62,7 @@ You can't rely on just the product name and release to determine the installatio
 
 ## Example installation scenarios
 
-Here are some example installation scenarios, whether they're supported, and an explanation of why they are or aren't supported.
+Here are some example installation scenarios, whether they're supported, and an explanation of why they're or aren't supported.
 
 |Products to install  |Supported?  |Explanation  |
 |---------|---------|---------|
@@ -92,7 +92,7 @@ Here are some example installation scenarios, whether they're supported, and an 
   - For example, if Microsoft 365 Apps is using Monthly Enterprise Channel, then Project 2021 or Visio 2019 must be installed using Monthly Enterprise Channel.
   - These volume licensed versions of Project and Visio support all the same update channels that Microsoft 365 Apps supports. For example, Current Channel, Monthly Enterprise Channel, and Semi-Annual Enterprise Channel.
   - We provide that support so that you can use these volume licensed versions of Project and Visio with whichever update channel you've configured Microsoft 365 Apps to use.
-  - Regardless of which update channel you select for these volume licensed versions of Project and Visio, they won't get any new features. Only subscription versions of Project and Visio get new features on a regular basis.
+  - Regardless of which update channel you select for these volume licensed versions of Project and Visio, they won't get any new features. Only subscription versions of Project and Visio get new features regularly.
 
 ## Related articles
 
