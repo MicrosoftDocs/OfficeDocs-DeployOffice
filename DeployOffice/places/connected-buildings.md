@@ -357,7 +357,7 @@ The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the
 
 For customers choosing these integration types, must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
-1. This is applicable when hardware providers have created multitenant SaaS connectors. See more on Single vs multitenant apps. For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
+1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
