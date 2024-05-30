@@ -250,7 +250,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
-Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell cmdlets. Scripts use CSV files as an input. [LINK NOT PUBLIC?]
+Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell cmdlets. Scripts use CSV files as an input.
 
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
@@ -286,7 +286,7 @@ To build an application to automate registering and onboarding devices, APIs are
 
 1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
 
-The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+   The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 |Category  |Application  |
 |-------|-------|
@@ -295,7 +295,7 @@ The PlaceDeviceRead.All permission. For more information, see the [Microsoft Gra
 |**Type**        |Application-only |
 |**Admin consent**<br>(yes or no) |Yes |
 
-The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+   The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 |Catagory  |Application  |
 |-------|-------|
