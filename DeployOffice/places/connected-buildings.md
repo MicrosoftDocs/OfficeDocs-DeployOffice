@@ -209,18 +209,18 @@ $outputPath = 'C:\places.csv'
 $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation
 ```
 
-5. The output file in your CSV file path should contain the following:
+6. The output file in your CSV file path should contain the following:
 
 |PlaceId  |DisplayName  |Type |
 |---------|---------|---------|
 |**5d275bba-5d7d-487f-855e-75cd2943204f** |Floor 1 |Floor |
 |**0fa1b1eb-6066-45ea-8f7c-09b4e8cc4e74** |Conf Room 1202/3455 (9) |Room |
 
-6. Download the device metadata from a partner solution or from your system, including all the devices.
+7. Download the device metadata from a partner solution or from your system, including all the devices.
 
-7. Use a script or manually map your devices to PlaceId.
+8. Use a script or manually map your devices to PlaceId.
 
-8. Create a CSV file with your device metadata. You can use the following format for your CSV file.
+9. Create a CSV file with your device metadata. You can use the following format for your CSV file.
 
 |Column  |Description  |Notes |Example |
 |---------|---------|---------|---------|
