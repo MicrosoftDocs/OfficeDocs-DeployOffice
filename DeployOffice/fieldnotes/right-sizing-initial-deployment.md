@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Right-sizing your initial deployment of Microsoft 365 Apps."
-ms.date: 02/28/2024
+ms.date: 05/25/2024
 ---
 
 # Right-sizing your initial deployment of Microsoft 365 Apps
@@ -50,11 +50,11 @@ The good news is that we don't have to go to extremes. Instead, we can use a fea
 
 To identify which language packs to exclude, we can generate an overview of how often each language pack is installed. Then we add up the number of all language pack installations and calculate the share of each one. Typically, the distribution isn't even. A small subset of language packs usually accounts for most installations, as the following example shows:
 
-![A table shows how the individual install base of language packs is summed up to the overall coverage.](../images/fieldnotes/right-sizing-initial-deployment-1.png)
+:::image type="content" source="./media/right-sizing-initial-deployment/right-sizing-initial-deployment-1.png" alt-text="A screenshot of a table showing how the individual install base of language packs is summed up to the overall coverage.":::
 
 In this case, just 8 out of 24 language packs (nl-nl, fr-fr, pt-br, es-es, it-it, de-de, pl-pl, and ru-ru) account for 92 percent of all language pack installations. The remaining 16 language packs are only installed on 8 percent of devices. Based on this data, we can calculate the impact on the on-premises WAN/LAN and internet connections (caused by devices having to download another source files):
 
-![A spreadsheet shows the different impact on LAN/WAN and internet bandwidth for different language pack combinations.](../images/fieldnotes/right-sizing-initial-deployment-2.png)
+:::image type="content" source="./media/right-sizing-initial-deployment/right-sizing-initial-deployment-2.png" alt-text="A screenshot of a spreadsheet showing the different impact on LAN/WAN and internet bandwidth for different language pack combinations.":::
 
 We can see the two extremes (no/all source files) and the impact on the LAN/WAN traffic and internet bandwidth consumed. But if we include just the eight language packs mentioned previously, we can balance out those. Compared to handling everything on-prem, package size will be reduced by about 50 percent. We would reduce LAN/WAN network traffic by more than 180 terabytes. The trade-off is that 1,800 devices will now have to download one of the excluded languages, generating approximately 450 gigabytes of traffic. Across all workdays from our targeted 6-month rollout window, this is approximately 3.5 gigabytes per day. If we add [Client Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Delivery Optimization](../delivery-optimization.md), and [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) to the mix, we might be able to reduce the network impact even further.
 
@@ -86,7 +86,7 @@ For the last bullet, do these calculations for each group:
 
 For the above table, it could look like this:
 
-![A table shows the savings per language pack combination.](../images/fieldnotes/right-sizing-initial-deployment-3.png)
+:::image type="content" source="./media/right-sizing-initial-deployment/right-sizing-initial-deployment-3.png" alt-text="A screenshot of a table showing the savings per language pack combination.":::
 
 Decide which language packs you want to include and record this information.
 
@@ -124,7 +124,7 @@ The next step is to craft a deployment package that includes the selected langua
 
 7. Save the file and return to the Configuration Manager console. Navigate to **Software Library** > **Application Management** > **Applications**. Select your application, switch to the **Deployment Types** tab, right-click the matching entry, and then select **Update Content**.
 
-   ![A screenshot shows the Configuration Manager console.](../images/fieldnotes/right-sizing-initial-deployment-4.png)
+   :::image type="content" source="./media/right-sizing-initial-deployment/right-sizing-initial-deployment-4.png" alt-text="A screenshot showing the Configuration Manager console.":::
 
 8. After all distribution points synchronize the changes, you can deploy your application as usual.
 
