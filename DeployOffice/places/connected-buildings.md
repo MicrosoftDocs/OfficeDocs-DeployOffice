@@ -140,7 +140,7 @@ The first step involves uploading a CSV file with the device metadata and how de
 
 The following is a high-level diagram about how you can onboard devices and sensors onto Places.
 
-[GRAPHIC 1]
+:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-metadata.png" alt-text="Diagram showing how you can onboard devices and sensors into Places.":::
 
 There are three ways you can upload device information to Places.
 
@@ -332,7 +332,7 @@ See the following Microsoft Graph APIs for more information:
 
 Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
 
-[GRAPHIC 2]
+:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry.png" alt-text="Alt text that describes the content of the image.":::
 
 ### Backfill historical data
 
