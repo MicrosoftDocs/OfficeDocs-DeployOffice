@@ -31,8 +31,6 @@ You must also do the following steps before you set up your workspaces in Places
 
 ## Set up desk pools and enable workspaces in Places Finder
 
-[SCREEN ART]
-
 First you create resource accounts for desk pools and update the directory information for each desk pool (the mailbox type is workspace). Use the following PowerShell template to create a new resource account and room mailbox that represent the desk pool.
 
 ```powershell
