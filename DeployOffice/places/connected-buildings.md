@@ -284,7 +284,7 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 
 To build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
 
-1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
+1. Register an Azure Active Directory (AAD) application to get the following permissions.
 
 The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
