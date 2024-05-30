@@ -255,7 +255,7 @@ Powershell scripts help you upload and manage devices in bulk. Microsoft provide
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
 
-Next, run the onboarding script with your prepared CSV file to onboard devices. If you want to customize scripts and use the Powershell cmdlets [NOT SURE WHAST TGHIS MEANS] themselves, they may reference the next section.
+Next, run the onboarding script with your prepared CSV file to onboard devices. If you want to customize scripts and use the Powershell cmdlets, you can reference those in Option 2.
 
 |Script name  |Description  |
 |---------|---------|
@@ -286,7 +286,7 @@ To build an application to automate registering and onboarding devices, APIs are
 
 1. Register an Azure Active Directory (AAD) [Should we be using Microsoft Entra ID?] application to get the following permissions.
 
-   The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 |Category  |Application  |
 |-------|-------|
@@ -295,7 +295,7 @@ To build an application to automate registering and onboarding devices, APIs are
 |**Type**        |Application-only |
 |**Admin consent**<br>(yes or no) |Yes |
 
-   The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 |Catagory  |Application  |
 |-------|-------|
