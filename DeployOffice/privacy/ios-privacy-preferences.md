@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 05/31/2024
 ---
 
 # Use preferences to manage privacy controls for Office on iOS devices
@@ -27,7 +27,6 @@ For more information about diagnostic data and connected experiences, see [Overv
 
 > [!NOTE]
 > For information about similar settings for Office on computers running macOS, see [Use preferences to manage privacy controls for Office for Mac](mac-privacy-preferences.md)
-
 
 ## Setting device preferences
 These new preference settings can also be set at the device level by a Mobile Device Management (MDM) server when the Office application is installed. Many MDM servers allow IT administrators to add an optional configuration dictionary when the server sends the `InstallApplication` MDM command to an iOS device. Refer to your MDM server documentation for more details.
@@ -64,14 +63,13 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 |**Data Type**  | String |
 |**Possible values**  | `BasicDiagnosticData` *(this value sets the level to Required)* <br/> `FullDiagnosticData` *(this value sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this value sets the level to Neither)* |
 
-If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with a Microsoft 365 (or Office 365) subscription are signed in with a work or school account. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Settings** > **Privacy Settings**.
-
+For other users, such as home users with a Microsoft 365 subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Settings** > **Privacy Settings**.
 
 ## Preference setting for connected experiences that analyze your content
 
-Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, Design Ideas in PowerPoint. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer. For a list of these connected experiences, see [Connected experiences that analyze your content](connected-experiences.md#connected-experiences-that-analyze-your-content).
 
 |Category|Details|
 |:-----|:-----|
@@ -79,16 +77,15 @@ Connected experiences that analyze your content are experiences that use your Of
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 
-
 If you don't set this preference, connected experiences that analyze content are available to users.
 
-If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, then the user can't turn off connected experiences that analyze content.
+If the user has  subscription and is signed in with a work or school account, then the user can't turn off connected experiences that analyze content.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, the user can choose to turn off connected experiences that analyze content by going to **Settings** > **Privacy Settings**.
+For other users, such as home users with a Microsoft 365 subscription, the user can choose to turn off connected experiences that analyze content by going to **Settings** > **Privacy Settings**.
 
 ## Preference setting for connected experiences that download online content
 
-Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, videos, and reference materials to enhance your documents. For example, Office templates or inserting an online icon. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, videos, and reference materials to enhance your documents. For example, Office templates or cloud fonts. For a list of these connected experiences, see [Connected experiences that download online content](connected-experiences.md#connected-experiences-that-download-online-content).
 
 |Category|Details|
 |:-----|:-----|
@@ -96,12 +93,11 @@ Connected experiences that download online content are experiences that allow yo
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 
-
 If you don't set this preference, connected experiences that download online content are available to users.
 
-If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, then the user can't turn off connected experiences that download online content.
+If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, then the user can't turn off connected experiences that download online content.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, the user can choose to turn off connected experiences that download online content by going to **Settings** > **Privacy Settings**.
+For other users, such as home users with a Microsoft 365 subscription, the user can choose to turn off connected experiences that download online content by going to **Settings** > **Privacy Settings**.
 
 ## Preference setting for optional connected experiences
 
@@ -113,7 +109,6 @@ In addition to the connected experiences mentioned above, there are some optiona
 |**Data Type**  | Boolean |
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 
+If you don't set this preference, optional connected experiences are available to users with a Microsoft 365 (or Office 365) subscription that are signed in with a work or school account. Unless you have set this preference to FALSE, these users can choose to turn off optional connected experiences by going to **Settings** > **Privacy Settings**.
 
-If you don't set this preference, optional connected experiences are available to users with an Office 365 (or Microsoft 365) subscription that are signed in with a work or school account. Unless you have set this preference to FALSE, these users can choose to turn off optional connected experiences by going to **Settings** > **Privacy Settings**.
-
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, there isn't an option to turn off optional connected experiences.
+For other users, such as home users with a Microsoft 365 subscription, there isn't an option to turn off optional connected experiences.

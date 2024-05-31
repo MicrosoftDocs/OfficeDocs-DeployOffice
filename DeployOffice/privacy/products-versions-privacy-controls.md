@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/22/2023
+ms.date: 05/31/2024
 ---
 
 # Privacy controls available for Office products
@@ -79,7 +79,6 @@ To configure these privacy controls for your users that are using Office on Wind
 Our most recent privacy controls are available for the following Office products when using Office on Mac devices:
 
 - Office for Mac, which is available with any Office 365 or Microsoft 365 subscription plan that includes the desktop versions of the Office apps. For example, the Office apps that come with the Microsoft 365 Family plan (for home), the Microsoft 365 Business Premium plan (for businesses), or the Microsoft 365 E3 plan (for enterprises).
-- Office 2019 for Mac, which is available as a one-time purchase from a retail store or through a volume licensing agreement.
 - Office LTSC Standard for Mac 2021, which is available as a one-time purchase through a volume licensing agreement.
 - Office 2021 for Mac, which is available as a one-time purchase from a retail store.
 
@@ -191,7 +190,7 @@ To configure this privacy control for your users that are using Office on the we
 
 ## Related articles
 
-- [Privacy and Microsoft Teams](/MicrosoftTeams/teams-privacy)
-- [Privacy settings in Microsoft Whiteboard](https://support.microsoft.com/office/ed9f0de9-71be-44c2-837d-e0f448660be1)
+- [Policy control overview for Microsoft Teams](/microsoftteams/privacy/policy-control-overview)
+- [Privacy and compliance settings in Microsoft Whiteboard](https://support.microsoft.com/office/ed9f0de9-71be-44c2-837d-e0f448660be1)
 - [What version of Office am I using?](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19)
 - [What version of Outlook do I have?](https://support.microsoft.com/office/b3a9568c-edb5-42b9-9825-d48d82b2257c)
