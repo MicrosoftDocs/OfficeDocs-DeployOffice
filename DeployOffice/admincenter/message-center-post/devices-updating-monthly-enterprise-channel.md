@@ -67,9 +67,9 @@ Keep in mind that changing to a different channel also changes what features are
 
 If you don’t want your Office installations to be switched to Monthly Enterprise Channel, then in the Microsoft 365 Apps admin center, choose **View details** on the notification, then choose **Keep my devices on current configuration**, as shown in the following screenshots.
 
-![Notification that Office will be changed to get updates automatically every month along with a "View details" link](../images/other/notification-monthly-enterprise-channel.png)
+:::image type="content" source="media/devices-updating-monthly-enterprise-channel/notification-monthly-enterprise-channel.png" alt-text="A screenshot of a notification that Office will be changed to get updates automatically every month along with a 'View details' link.":::
 
-![Flyout showing three benefits of having Office updated each month along with a "Keep my devices on current configuration" button](../images/other/flyout-monthly-enterprise-channel.png)
+:::image type="content" source="media/devices-updating-monthly-enterprise-channel/flyout-monthly-enterprise-channel.png" alt-text="A screenshot of a flyout showing three benefits of having Office updated each month along with a 'Keep my devices on current configuration' button.":::
 
 > [!NOTE]
 > - The date shown in the screenshot is an example. The date that applies to your organization is listed in the Message center post that you received and is shown in the notification that appears in the Microsoft 365 Apps admin center.
