@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 05/31/2024
 ---
 
 # Use policy settings to manage privacy controls for Office on Android devices
@@ -43,7 +43,7 @@ The following table lists which policy settings are available for Office on Andr
 
 ## Use Cloud Policy to apply policy settings
 
-To apply any of these 4 policy settings for Office on Android devices, you need to use Cloud Policy. For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+To apply any of these four policy settings for Office on Android devices, you need to use Cloud Policy. For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
 
 > [!NOTE]
 > If you previously used Cloud Policy to configure these policy settings for Office on devices running Windows, those same settings will apply to Office on Android devices. For that to happen, you just need to sign in to Cloud Policy and the service will apply the settings automatically to Office on Android devices.

@@ -10,7 +10,7 @@ ms.subservice: office-mac
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 05/31/2024
 ---
 
 # Use preferences to manage privacy controls for Office for Mac
@@ -58,13 +58,13 @@ Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose a
 |**Possible values**  | `BasicDiagnosticData` *(this value sets the level to Required)* <br/> `FullDiagnosticData` *(this value sets the level to Optional)* <br/> `ZeroDiagnosticData` *(this value sets the level to Neither)* |
 |**Availability** |16.28 and later |
 
-If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with an Office 365 (or Microsoft 365) subscription are signed in with a work or school account, or if users have Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
+If you don't set this preference, both required and optional diagnostic data are sent to Microsoft if users with a Microsoft 365 (or Office 365) subscription are signed in with a work or school account, or if users have Office LTSC Standard for Mac 2021. Also, these users can't change the level of diagnostic data regardless of how you set this preference.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
+For other users, such as home users with a Microsoft 365 subscription, only required diagnostic data is sent, unless the user chooses to also send optional diagnostic data by going to **Preferences** > **Privacy**.
 
 ## Preference setting for connected experiences that analyze your content
 
-Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Researcher in Word. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+Connected experiences that analyze your content are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Researcher in Word. For a list of these connected experiences, see [Connected experiences that analyze your content](connected-experiences.md#connected-experiences-that-analyze-your-content).
 
 |Category|Details|
 |:-----|:-----|
@@ -79,13 +79,13 @@ If you don't set this preference, connected experiences that analyze content are
 > [!NOTE]
 > If you set this preference to FALSE, Copilot for Microsoft 365 features won’t be available to your users in certain apps. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
-If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac, then the user can't turn off connected experiences that analyze content.
+If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021, then the user can't turn off connected experiences that analyze content.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, the user can choose to turn off connected experiences that analyze content by going to **Preferences** > **Privacy**.
+For other users, such as home users with a Microsoft 365 subscription, the user can choose to turn off connected experiences that analyze content by going to **Preferences** > **Privacy**.
 
 ## Preference setting for connected experiences that download online content
 
-Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+Connected experiences that download online content are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences that download online content](connected-experiences.md#connected-experiences-that-download-online-content).
 
 |Category|Details|
 |:-----|:-----|
@@ -97,9 +97,9 @@ Connected experiences that download online content are experiences that allow yo
 
 If you don't set this preference, connected experiences that download online content are available to users.
 
-If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac, then the user can't turn off connected experiences that download online content.
+If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021, then the user can't turn off connected experiences that download online content.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, a user can choose to turn off connected experiences that download online content by going to **Preferences** > **Privacy**.
+For other users, such as home users with a Microsoft 365 subscription, a user can choose to turn off connected experiences that download online content by going to **Preferences** > **Privacy**.
 
 ## Preference setting for optional connected experiences
 
@@ -113,9 +113,9 @@ In addition to the connected experiences mentioned above, there are some optiona
 |**Possible values**  | `TRUE` *(enabled)* <br/> `FALSE` *(disabled)*|
 |**Availability** |16.28 and later |
 
-If you don't set this preference, optional connected experiences are available to users with an Office 365 (or Microsoft 365) subscription that are signed in with a work or school account, or to users who have Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac. Unless you have set this preference to `FALSE`, these users can choose to turn off optional connected experiences by going to **Preferences** > **Privacy**.
+If you don't set this preference, optional connected experiences are available to users with a Microsoft 365 (or Office 365) subscription that are signed in with a work or school account, or to users who have Office LTSC Standard for Mac 2021. Unless you have set this preference to `FALSE`, these users can choose to turn off optional connected experiences by going to **Preferences** > **Privacy**.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, there isn't an option to turn off optional connected experiences.
+For other users, such as home users with a Microsoft 365 subscription, there isn't an option to turn off optional connected experiences.
 
 ## Preference setting for most connected experiences
 
@@ -140,9 +140,9 @@ In addition, if you set this preference to `FALSE`, most other connected experie
 
 But even if you set this preference to `FALSE`, limited Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. [Essential services](essential-services.md), such as the licensing service that confirms that you’re properly licensed to use Office, will also remain available.
 
-If the user has an Office 365 (or Microsoft 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021 or Office Standard 2019 for Mac, then the user can't turn off most connected experiences.
+If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021, then the user can't turn off most connected experiences.
 
-For other users, such as home users with an Office 365 (or Microsoft 365) subscription, a user can choose to turn off most connected experiences by going to **Preferences** > **Privacy**.
+For other users, such as home users with a Microsoft 365 subscription, a user can choose to turn off most connected experiences by going to **Preferences** > **Privacy**.
 
 ## Preference setting for the Required Data Notice dialog for Microsoft AutoUpdate
 
@@ -162,6 +162,6 @@ If you let your users see this dialog, then when the user chooses **OK**, the va
 
 ## Related articles
 
-- [Configuration Profile Reference (Apple developer documentation)](https://go.microsoft.com/fwlink/p/?linkid=852998)
+- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md)
-- [Account Privacy Settings](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b#ID0EAADAAA=Mac)
+- [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b#ID0EBBH=macOS)
