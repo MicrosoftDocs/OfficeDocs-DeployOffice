@@ -15,11 +15,7 @@ description: "Using work location to notify others of where a user is working, r
 
 # Expanding presence to include work location in Microsoft Teams
 
-Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work schedule. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see out of office time reflected in your location.
-
-With expanded presence, a new Places feature that appears across Microsoft 365 apps, you can see coworkers who are nearby. This feature is available and visible across different Microsoft 365 apps, and provides heightened awareness for employees. By keeping work location presence updated, employees make it easier to meet at desks or work neighborhoods for impromptu in-person chats, meetings, or even social gatherings such as lunch together.
-
-:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants nearby in a work neighborhood.":::
+Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work work location for today. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see out of office time reflected in your location.
 
 ## Prerequisites
 
@@ -29,6 +25,10 @@ With expanded presence, a new Places feature that appears across Microsoft 365 a
 ## What’s new (public preview)
 
 Many companies have multiple buildings, on-site work options, and scheduling choices. Microsoft Teams is introducing the ability for you to set and view specific work times and locations. Your profile card makes it easier for people in your organization (including guest accounts) to quickly get an overview of your online status, work hours, and work location (remote, in office, or working from a specific building).
+
+With expanded presence, a new Places feature that appears across Microsoft 365 apps, you can see coworkers who are nearby. This feature is available and visible across different Microsoft 365 apps, and provides heightened awareness for employees. By keeping your work location presence updated, employees make it easier to meet at desks or work neighborhoods for impromptu in-person chats, meetings, or even social gatherings such as lunch together.
+
+:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants nearby in a work neighborhood.":::
 
 ## Related topics
 
