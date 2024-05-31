@@ -43,8 +43,8 @@ In addition, Office will be configured to get updates automatically from Microso
 These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install from the **My account** page in the portal. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
 
 > [!TIP]
-> - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../admincenter/inventory.md) feature.
-> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you enable [cloud update](../admincenter/cloud-update.md) in the Microsoft 365 Apps admin center.
+> - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../../admincenter/inventory.md) feature.
+> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you enable [cloud update](../../admincenter/cloud-update.md) in the Microsoft 365 Apps admin center.
 
 ## What is Monthly Enterprise Channel?
 
@@ -54,7 +54,7 @@ These releases are cumulative. The most current release contains all the feature
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../../updates/overview-update-channels.md)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## How will users be affected by this change?

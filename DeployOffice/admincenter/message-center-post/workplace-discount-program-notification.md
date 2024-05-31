@@ -62,7 +62,7 @@ If you want users in your organization who aren't in the United States to receiv
 
 ### Use Cloud Policy to turn off notifications about the Workplace Discount Program
 
-For instructions on how to use Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+For instructions on how to use Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../../admincenter/overview-cloud-policy.md).
 
 In Cloud Policy, search for the *Show in-product notifications for the Microsoft Workplace Discount Program* policy, and then set it to Disabled.
 
