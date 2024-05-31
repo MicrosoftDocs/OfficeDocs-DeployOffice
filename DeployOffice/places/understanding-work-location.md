@@ -28,6 +28,8 @@ Many companies have multiple buildings, on-site work options, and scheduling cho
 
 With expanded presence, a new Microsoft Places feature that appears across Microsoft 365 apps, you can see coworkers who are nearby. This feature is available and visible across different Microsoft 365 apps, and provides heightened awareness for employees. By keeping your work location presence updated, employees make it easier to meet at desks or work neighborhoods for impromptu in-person chats, meetings, or even social gatherings such as lunch together.
 
+:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants.":::
+
 Users are in control of their work-location information. They can disable sharing of their building location with others. Anyone who views your card will only see you as **In-office** or **Remote**.
 
 :::image type="content" source="./media/understanding-work-location/understanding-work-location-showing-shared-office.png" alt-text="Screen shot of the Share your location dialog box.":::
@@ -40,8 +42,6 @@ If you don't want to share any details about where you'll be working, uncheck yo
 > This new setup experience is currently available only in new Outlook for Windows and Outlook on the web. However, setting up work hours and location will be available in Microsoft Teams, Outlook for Mac, and Outlook for iOS and Android at a later date.
 
 Microsoft does not track or store any user’s work location presence. Work location signals about in-office locations will be aggregated and anonymized in reports for the purposes of providing admins with office-occupation trends.
-
-:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants.":::
 
 ## Related topics
 
