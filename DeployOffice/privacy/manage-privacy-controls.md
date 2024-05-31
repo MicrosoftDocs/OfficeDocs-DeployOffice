@@ -95,7 +95,7 @@ Your users won’t be able to choose whether to turn these connected experiences
 
 ### Policy setting for connected experiences that analyze your content
 
-These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that use your Office content to provide you with design recommendations, editing suggestions, data insights, and similar features. For example, PowerPoint Designer or Translator. For a list of these connected experiences, see [Connected experiences that analyze your content](connected-experiences.md#connected-experiences-that-analyze-your-content).
 
 You can use the *Allow the use of connected experiences in Office that analyze content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 
@@ -106,7 +106,7 @@ Note that if you disable the *Allow the use of connected experiences in Office* 
 
 ### Policy setting for connected experiences that download online content
 
-These are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences in Office](connected-experiences.md).
+These are experiences that allow you to search and download online content including templates, images, 3D models, videos, and reference materials to enhance your documents. For example, Office templates or PowerPoint QuickStarter. For a list of these connected experiences, see [Connected experiences that download online content](connected-experiences.md#connected-experiences-that-download-online-content).
 
 You can use the *Allow the use of connected experiences in Office that download online content* policy setting to control whether these types of connected experiences are available to your users. If you don’t configure this policy setting, these connected experiences will be available to your users.
 
@@ -127,7 +127,7 @@ Even if you choose to make these optional connected experiences available to you
 
 Also, some of these optional connected experiences are also considered to be connected experiences that analyze content or that download online content. For example, Insert Online Pictures is an optional connected experience, powered by Microsoft Bing, but it’s also considered to be a connected experience that downloads online content. Therefore, if you disable the *Allow the use of connected experiences in Office that download online content* policy setting, Insert Online Pictures won’t be available to your users. It won’t be available even if you have enabled the *Allow the use of additional optional connected experiences in Office* policy setting. For more information about which connected experiences analyze content or download online content, see [Connected experiences in Office](connected-experiences.md).
 
-There's one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting doesn't control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) and [Integrate LinkedIn account connections in Microsoft Entra ID](/entra/identity/users/linkedin-integration).
+There's one exception to take note of. The *Allow the use of additional optional connected experiences in Office* policy setting doesn't control experiences that require you to connect your LinkedIn account to your Microsoft work or school account. To control these types of experiences, such as the LinkedIn information on a [profile card](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Outlook, see [LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8) and [Integrate LinkedIn account connections in Microsoft Entra ID](/entra/identity/users/linkedin-integration).
 
 ### Policy setting for most connected experiences
 
