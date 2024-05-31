@@ -18,6 +18,11 @@ items:
     - name: Configure the iOS app for Microsoft Places
       href: configure-the-ios-app.md
 
+  - name: Manage workspaces
+    items:
+    - name: Setting up desk pools and workplaces in Places Finder
+      href: setting-up-desk-workspaces-in-places-finder.md
+
   - name: PowerShell
     items:
     - name: Connect-MicrosoftPlaces
