@@ -68,7 +68,7 @@ For more information, see the following articles:
 
 ## Connected experiences for Microsoft 365 Apps for enterprise
 
-Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on Microsoft OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
 
 We understand that you might want to choose which types of connected experiences are available to your users when working in Office applications. As an admin for your organization, you’ll have policy settings that allow you to choose whether to provide the following types of connected experiences to your users:
 

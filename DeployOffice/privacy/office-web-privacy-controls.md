@@ -35,7 +35,7 @@ You can use the *Allow the use of additional optional connected experiences in O
 
 If you don’t configure this policy setting, the choice to use optional connected experiences will be available to your users. If you disable this policy setting, your users won’t be able to use any of the optional connected experiences.
 
-For Office for the web applications, the policy setting applies to when your users are working on Office documents that are saved to web-based storage from Microsoft, such as OneDrive for Business or SharePoint Online.
+For Office for the web applications, the policy setting applies to when your users are working on Office documents that are saved to web-based storage from Microsoft, such as OneDrive or SharePoint Online.
 
 Because you’re using Cloud Policy, this policy setting also applies to when your users are using Office on Windows, Mac, iOS, or Android devices. You can’t configure this policy setting just for when your users are using Office for the web applications. But, you can create a policy configuration that includes this policy setting and have that policy configuration only apply to users that access documents anonymously using Office for the web applications.
 
