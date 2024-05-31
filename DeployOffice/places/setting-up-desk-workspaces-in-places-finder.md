@@ -3,7 +3,7 @@ title: "Setting up desk pools and workspaces in Microsoft Places Finder"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/23/2024
+ms.date: 05/31/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -17,7 +17,7 @@ description: "Use Microsoft Places Finder to create desk pools and workspaces to
 
 You can use Microsoft Places to configure clusters of desks for your organization. Desk clusters are managed together and known as desk pools (they're also referred to as workspaces). By using desk pools users in your organization can reserve a place to work, when they visit the office.
 
-This article helps you create desk pools to enable desk booking for your organization. Once you know how your desk pools look, and how many desks are in each pool, you can create them for your users to book in-office work days. Changes to desk pools will be reflected in approximately 24 to 48 hours.
+This article helps you create desk pools to enable desk booking for your organization. Once you know how your desk pools look, and how many desks are in each pool, you can create them for your users to book in-office work days. Changes to desk pools reflect in approximately 24 to 48 hours.
 
 ## Prerequisites
 
@@ -54,6 +54,7 @@ You can also use the optional PowerShell template to restrict the access of who 
 ```powershell
 Set-Calendarprocessing <alias> -BookInPolicy <BookableGroupDL>  
 ```
+
 You can also use the optional PowerShell template to define more attributes for a desk pool.
 
 ```powershell
