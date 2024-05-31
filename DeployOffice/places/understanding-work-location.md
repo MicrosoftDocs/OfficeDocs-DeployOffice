@@ -13,7 +13,11 @@ recommendations: true
 description: "Using expanded work presence to notify others of where a user is working, remotely or in office."
 ---
 
+<<<<<<< Updated upstream
 # Expanding presence to include work location in Microsoft Teams
+=======
+# Expanding presence to include work location in Microsoft Teams and Outlook
+>>>>>>> Stashed changes
 
 Your work location, part of your profile in Microsoft Teams and Microsoft 365, can help you manage and share your work work location for today. Your profile allows you to specify details about your work schedule: from where you’re working (in the office or remotely) and whether you work different hours on different days. You can schedule meetings with others based on their work profiles, view work locations on other people’s profile cards, and see out of office time reflected in your location.
 
@@ -28,6 +32,15 @@ Many companies have multiple buildings, on-site work options, and scheduling cho
 
 With expanded presence, a new Microsoft Places feature that appears across Microsoft 365 apps, you can see coworkers who are nearby. This feature is available and visible across different Microsoft 365 apps, and provides heightened awareness for employees. By keeping your work location presence updated, employees make it easier to meet at desks or work neighborhoods for impromptu in-person chats, meetings, or even social gatherings such as lunch together.
 
+<<<<<<< Updated upstream
+=======
+Users are in control of their work-location information. They can disable sharing of their building location with others. Anyone who views your card will only see you as **In-office** or **Remote**.
+
+:::image type="content" source="./media/understanding-work-location/understanding-work-location-showing-shared-office.png" alt-text="Screen shot of the Share your location dialog box.":::
+
+If you don't want to share any details about where you'll be working, do the following. Uncheck your previous location to see No location, and uncheck Share office location details.
+
+>>>>>>> Stashed changes
 :::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants nearby in a work neighborhood.":::
 
 ## Related topics
