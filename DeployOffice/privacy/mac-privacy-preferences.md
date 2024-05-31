@@ -164,4 +164,4 @@ If you let your users see this dialog, then when the user chooses **OK**, the va
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
 - [Deploy preferences for Office for Mac](../mac/deploy-preferences-for-office-for-mac.md)
-- [Account Privacy Settings](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b#ID0EBBH=macOS)
+- [Account Privacy Settings](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b#ID0EBBH=macOS)
