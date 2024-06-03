@@ -19,8 +19,8 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 
 ## Prerequisites
 
-[!NOTE]
-Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md). It's also a feature available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, Teams Shared Device licenses.
+> [!NOTE]
+> Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md). It's also a feature available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, Teams Shared Device licenses.
 
 - The room has a Microsoft Teams Rooms device (MTR) or Teams panel
 - The room is used for hybrid meetings
@@ -42,8 +42,8 @@ You can turn on this feature in Teams admin center under **Teams devices** > **P
 
 You can turn on this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
-[!NOTE]
-It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
+> [!NOTE]
+> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
 When you initially download the Panels app from Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
 
@@ -51,8 +51,8 @@ For more information, see [Check-in and room release on Microsoft Teams panels](
 
 ### PowerShell cmdlet
 
-[!NOTE]
-It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
+> [!NOTE]
+> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
 Enable Auto Release by running the following command:
 
