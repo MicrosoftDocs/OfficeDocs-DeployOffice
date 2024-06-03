@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/01/2023
+ms.date: 05/31/2024
 ---
 
 # Required service data for Office
@@ -17,11 +17,11 @@ ms.date: 03/01/2023
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Office consists of client software applications and [connected experiences](connected-experiences.md) designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+Office consists of client software applications and [connected experiences](connected-experiences.md) designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on Microsoft OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
 
 As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
 
-Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translate in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
+Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translator in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
 
 ## Example of required service data for a connected experience
 
@@ -41,9 +41,9 @@ We give you the ability to choose which types of connected experiences you want 
 
 Required service data is separate from required or optional [diagnostic data](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft), which relates to information about the use of Office software running on your device. Therefore, the privacy settings you chose for required or optional diagnostic data don’t affect whether required service data is sent to Microsoft.
 
-Required service data is also collected and sent to Microsoft for the [essential services](essential-services.md) of Office, such as the licensing service that confirms that you're properly licensed to use Office. While you can control many of the connected experiences that are available to you, or to your users if you're the administrator in your organization, this set of services are essential to how Office functions, and therefore cannot be disabled. The data for essential services is always sent to and processed by Microsoft when using Office, regardless of how other privacy-related settings are configured.
+Required service data is also collected and sent to Microsoft for the [essential services](essential-services.md) of Office, such as the licensing service that confirms that you're properly licensed to use Office. While you can control many of the connected experiences that are available to you, or to your users if you're the administrator in your organization, this set of services are essential to how Office functions, and therefore can't be disabled. The data for essential services is always sent to and processed by Microsoft when using Office, regardless of how other privacy-related settings are configured.
 
-Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](/microsoft-365/compliance/gdpr-dsr-office365).
+Required service data is available through Data Service Requests (DSRs). For more information, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Office 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-Office365).
 
 If you’re the administrator for your organization and want to manage connected experiences, see the following articles:
 
