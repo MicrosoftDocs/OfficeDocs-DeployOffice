@@ -11,7 +11,7 @@ ms.collection:
  - privacy-microsoft365
  - essentials-privacy
 hideEdit: true
-ms.date: 03/27/2023
+ms.date: 05/31/2024
 ---
 
 # Overview of privacy controls for Microsoft 365 Apps for enterprise
@@ -68,7 +68,7 @@ For more information, see the following articles:
 
 ## Connected experiences for Microsoft 365 Apps for enterprise
 
-Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on OneDrive for Business or translating the contents of a Word document into a different language are examples of connected experiences.
+Microsoft 365 Apps for enterprise consists of client software applications and connected experiences designed to enable you to create, communicate, and collaborate more effectively. Working with others on a document stored on Microsoft OneDrive or translating the contents of a Word document into a different language are examples of connected experiences.
 
 We understand that you might want to choose which types of connected experiences are available to your users when working in Office applications. As an admin for your organization, you’ll have policy settings that allow you to choose whether to provide the following types of connected experiences to your users:
 
@@ -78,7 +78,7 @@ We understand that you might want to choose which types of connected experiences
 
 For example, you might choose to provide your users with connected experiences that download online content, but not connected experiences that analyze content. If you don’t configure these policy settings, all these connected experiences will be available to your users.
 
-In addition, there's a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document co-authoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
+In addition, there's a policy setting that allows you turn off all these connected experiences, and which will also turn off other connected experiences, such as document coauthoring and online file storage. But even if you use this policy setting to turn off all these connected experiences, certain Office functionality will remain available, such as synching your mailbox in Outlook, using Teams or Skype for Business, as well as the essential services described below.
 
 If you choose not to provide your users with certain types of connected experiences, either the ribbon or menu command for those connected experiences will be grayed out or the users will get an error message when they try to use those connected experiences.
 
@@ -96,11 +96,11 @@ For more information, see the following articles:
 
 In addition to the connected experiences mentioned above that are included with Microsoft 365 Apps for enterprise, there are optional connected experiences that you may choose to allow your users to access with their organization account. For example, the 3D Maps feature in Excel, which uses Bing.
 
-These are optional connected experiences that aren't covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products).
+These are optional connected experiences that aren't covered by your organization’s commercial agreement with Microsoft but are governed by separate terms and conditions. Optional connected experiences offered by Microsoft directly to your users are governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) instead of the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms).
 
 Because these optional connected experiences are governed by separate terms and conditions, you manage them separately from the connected experiences mentioned above. As an admin for your organization, you’ll be able to use a policy setting to choose whether to make these optional connected experiences available, as a group, to your users. If you don’t configure this policy setting, these optional connected experiences are available to your users.
 
-Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn these optional connected experiences off as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they're signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they're signed in with a personal email address.
+Even if you choose to make these optional connected experiences available to your users, your users will have the option to turn off these optional connected experiences as a group by going to the [privacy settings dialog box](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Your users will only have this choice if they're signed in to Office with their organizational credentials (sometimes referred to as a work or school account), not if they're signed in with a personal email address.
 
 For more information, see the following articles:
 
@@ -115,7 +115,7 @@ For more information, see the following articles:
 
 As you use a connected experience, data is sent to and processed by Microsoft to provide you that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data.
 
-Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translate in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
+Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. If you choose to use a connected experience that analyzes your content, for example Translator in Word, the text you typed and selected to translate in the document is also sent and processed to provide you the connected experience. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about the Office app.
 
 For more information, see [Required service data for Office](required-service-data.md).
 

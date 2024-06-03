@@ -43,8 +43,8 @@ In addition, Office will be configured to get updates automatically from Microso
 These changes aren’t based on how you install or manage Microsoft 365 Apps. For example, these changes will apply whether you use Microsoft Intune to install on your users’ devices or if your users install from the **My account** page in the portal. Or whether you use Group Policy to set the update channel or use Configuration Manager to provide updates.
 
 > [!TIP]
-> - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../admincenter/inventory.md) feature.
-> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you enable [cloud update](../admincenter/cloud-update.md) in the Microsoft 365 Apps admin center.
+> - To view more information about your devices, we recommend you sign into the [Microsoft 365 Apps admin center](https://config.office.com) and use the [Inventory](../../admincenter/inventory.md) feature.
+> - If you want more control over managing updates to your devices on Monthly Enterprise Channel, we recommend that you enable [cloud update](../../admincenter/cloud-update.md) in the Microsoft 365 Apps admin center.
 
 ## What is Monthly Enterprise Channel?
 
@@ -54,7 +54,7 @@ These releases are cumulative. The most current release contains all the feature
 
 For more information, see the following resources:
 
-- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../../updates/overview-update-channels.md)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## How will users be affected by this change?
@@ -67,9 +67,9 @@ Keep in mind that changing to a different channel also changes what features are
 
 If you don’t want your Office installations to be switched to Monthly Enterprise Channel, then in the Microsoft 365 Apps admin center, choose **View details** on the notification, then choose **Keep my devices on current configuration**, as shown in the following screenshots.
 
-![Notification that Office will be changed to get updates automatically every month along with a "View details" link](../images/other/notification-monthly-enterprise-channel.png)
+:::image type="content" source="media/devices-updating-monthly-enterprise-channel/notification-monthly-enterprise-channel.png" alt-text="A screenshot of a notification that Office will be changed to get updates automatically every month along with a 'View details' link.":::
 
-![Flyout showing three benefits of having Office updated each month along with a "Keep my devices on current configuration" button](../images/other/flyout-monthly-enterprise-channel.png)
+:::image type="content" source="media/devices-updating-monthly-enterprise-channel/flyout-monthly-enterprise-channel.png" alt-text="A screenshot of a flyout showing three benefits of having Office updated each month along with a 'Keep my devices on current configuration' button.":::
 
 > [!NOTE]
 > - The date shown in the screenshot is an example. The date that applies to your organization is listed in the Message center post that you received and is shown in the notification that appears in the Microsoft 365 Apps admin center.

@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/24/2023
+ms.date: 05/31/2024
 ---
 
 # Optional diagnostic data for Office
@@ -17,7 +17,7 @@ ms.date: 03/24/2023
 > [!NOTE]
 > For a list of Office products covered by this privacy information, see [Privacy controls available for Office products](products-versions-privacy-controls.md).
 
-Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data does not include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
+Diagnostic data is used to keep Office secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This data doesn't include a user’s name or email address, the content of the user’s files, or information about apps unrelated to Office.
 
 This diagnostic data is collected and sent to Microsoft about Office client software running on the user's device. Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data through the use of privacy controls, such as policy settings for organizations. You can see the diagnostic data being sent to us by using the Diagnostic Data Viewer.
 
@@ -68,7 +68,7 @@ The following table provides examples of events in this category and a descripti
 
 | **Event name**   | **Event description**  |
 | ---- | ---- |
-| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | This event indicates whether Word successfully updates the Ribbon in the Word User Interface when the user changes their identity. We use this event to detect incorrect setup and other issues that would affect the Office user interface. |
+| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | This event indicates whether Word successfully updates the Ribbon in the Word user interface when the user changes their identity. We use this event to detect incorrect setup and other issues that would affect the Office user interface. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | This event provides information about the Office add-in that the user has installed, including app ID, operating system build and version, success of installation, and duration of install.  |
 
 ## Product and service usage events
@@ -84,7 +84,7 @@ The following table provides examples of events in this category and a descripti
 | **Event name**   | **Event description**  |
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | This event indicates Word has executed the command to highlight text. We use this event to detect errors in the text-highlight command.  |
-| Office.Translator.AddInLoaded   | A heartbeat to indicate that the translator feature has been loaded and rendered successfully.  |
+| Office.Translator.AddInLoaded   | A heartbeat to indicate that Translator feature has been loaded and rendered successfully.  |
 | Office.Graphics.GVizInsertShape |Tracks the usage of the Insert Shape feature in Word and also reports details of types of shapes inserted and from which source.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | This event determines if there are any sections present in a document when the user is inserting Summary Zoom and if the user chooses to delete existing sections. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Tracks when and why a file is opened in Protected View. Used to diagnose conditions where Protected View may not be correctly triggered to ensure the feature is working properly. |
@@ -94,7 +94,7 @@ The following table provides examples of events in this category and a descripti
 This category includes events that may cover the following areas:
 
 - Unexpected application exits (crashes) and the state of the application when that happens​.
-- Poor response time or performance for scenarios such as application start up or opening a file.
+- Poor response time or performance for scenarios such as application startup or opening a file.
 - Errors in functionality of a feature or user experience.
 
 The following table provides examples of events in this category and a description of those events.
@@ -102,7 +102,7 @@ The following table provides examples of events in this category and a descripti
 | **Event name**    | **Event description**   |
 | --------------- | -------------- |
 | Office.Word.Word.CoreSaveTime100ns     | This event logs the performance of a document save activity by Word. We use this event to detect errors and performance issues in the Word save document activity.|
-| Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to an Azure Active Directory account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
+| Office.Identity.SignInForWamAccountAad  | This event is sent when a user is signed in to a Microsoft Entra ID account with Web Account Manager (WAM) library. This event sends metadata such as AppName, AppVersion, and ErrorCode if the event failed. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | This event collects the length of time it takes to render the first slide master thumbnail in PowerPoint.  |
 | Office.Extensibility.Diagnostics   | This event provides general diagnostic information for Office add-ins, such as crash reports for debugging.|
 
