@@ -1114,6 +1114,31 @@
       "source_path": "DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps.md",
       "redirect_url": "/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash",
       "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/other/device-moved-after-admin-center-update.md",
+      "redirect_url": "DeployOffice/admincenter/message-center-post/device-moved-after-admin-center-update",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/other/devices-updating-monthly-enterprise-channel.md",
+      "redirect_url": "DeployOffice/admincenter/message-center-post/devices-updating-monthly-enterprise-channel",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/other/signup-for-cloud-update.md",
+      "redirect_url": "DeployOffice/admincenter/message-center-post/signup-for-cloud-update",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/other/workplace-discount-program-notification.md",
+      "redirect_url": "DeployOffice/admincenter/message-center-post/workplace-discount-program-notification",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/other/coming-soon-to-microsoft-365-admin-center.md",
+      "redirect_url": "DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
+      "redirect_document_id": false
     }
   ]
 }
