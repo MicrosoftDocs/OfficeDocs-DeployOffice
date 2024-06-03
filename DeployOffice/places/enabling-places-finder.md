@@ -23,11 +23,10 @@ You can use Places Finder to book desks, rooms, or workspaces with data such as 
 
 Before you begin, you must do the following tasks:
 
-- Deploy the new Outlook for Windows or Outlook on the web  
-- Experience in Win32 or Outlook for Mac (available end of June)
-- Create your building
-- Enable your maps
-- Install Enhanced Places
+- Deploy the new Outlook for Windows or Outlook on the web. The experience will be coming to classic Outlook for Windows and Outlook for Mac at the end of June 2024.
+- Create your building.
+- Enable your maps.
+- Install Enhanced Places.
 
 ## Enable Places Finder
 
