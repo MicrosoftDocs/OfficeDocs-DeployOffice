@@ -33,5 +33,5 @@ Before you begin, you must do the following tasks:
 Once you receive notification that you have access to the Places Finder feature, run the following PowerShell cmdlet to enable the opt-in features for your tenant.
 
 ```powershell
-Set-PlacesSettings -Collection Places –PlacesFinderEnabled  ‘Default:false, OID<Security Group OID>@<TenantId>:true’
+Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID<Security Group OID>@<TenantId>:true'
 ```
