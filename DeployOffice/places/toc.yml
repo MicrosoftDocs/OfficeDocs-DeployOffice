@@ -20,25 +20,5 @@ items:
 
   - name: Manage workspaces
     items:
-    - name: Setting up desk pools and workplaces in Places Finder
-      href: setting-up-desk-workspaces-in-places-finder.md
-
-  - name: PowerShell
-    items:
-    - name: Connect-MicrosoftPlaces
-      href: powershell/connect-microsoftplaces.md
-    - name: Get-PlaceV3
-      href: powershell/get-placev3.md
-    - name: Initialize-Places
-      href: powershell/initialize-places.md
-    - name: New-Place
-      href: powershell/new-place.md
-    - name: Remove-Place
-      href: powershell/remove-place.md
-    - name: Set-PlaceV3
-      href: powershell/set-placev3.md
-
-  - name: Reports and analytics
-    items:
-    - name: Microsoft Places Analytics
-      href: places-analytics.md
+    - name: Enabling Places Finder
+      href: enabling-places-finder.md
