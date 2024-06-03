@@ -30,13 +30,13 @@ With expanded presence, a new Microsoft Places feature that appears across Micro
 
 :::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants.":::
 
-Users are in control of their work-location information. They can disable sharing of their building location with others. Anyone who views your card will only see you as **In-office** or **Remote**.
+## Work location settings
 
-:::image type="content" source="./media/understanding-work-location/understanding-work-location-showing-shared-office.png" alt-text="Screen shot of the Share your location dialog box.":::
+Users are in control of their work-location information. They can disable sharing of their building location with others. Anyone who views your card will only see you as **In-office** or **Remote**.
 
 If you don't want to share any details about where you'll be working, uncheck your previous location to see **No location**, and uncheck **Share office location details**.
 
-:::image type="content" source="./media/understanding-work-location/understanding-work-location-location-unchecked.png" alt-text="Screen shot of work particpants nearby in a work neighborhood.":::
+:::image type="content" source="./media/understanding-work-location/understanding-work-location-work-hours-and-location2.png" alt-text="Screen shot of work particpants nearby in a work neighborhood.":::
 
 > [!NOTE]
 > This new setup experience is currently available only in new Outlook for Windows and Outlook on the web. However, setting up work hours and location will be available in Microsoft Teams, Outlook for Mac, and Outlook for iOS and Android at a later date.
