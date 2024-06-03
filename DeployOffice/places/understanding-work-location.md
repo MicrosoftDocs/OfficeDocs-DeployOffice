@@ -36,11 +36,11 @@ Users are in control of their work-location information.
 
 - You can disable sharing your building location with others by unchecking **Share office location details**. Anyone who views your card will only see you as **In-office** or **Remote**.
 
-   :::image type="content" source="./media/understanding-work-location/understanding-work-location-showing-shared-office.png" alt-text="Screen shot showingnwork location settings.":::
+   :::image type="content" source="./media/understanding-work-location/understanding-work-location-showing-shared-office.png" alt-text="Screen shot showing Share your location option.":::
 
 - If you don't want to share any details about where you'll be working, uncheck your previous location to **No location**, and uncheck **Share office location details**.
 
-   :::image type="content" source="./media/understanding-work-location/understanding-work-location-work-hours-and-location2.png" alt-text="Screen shot showingnwork location settings.":::
+   :::image type="content" source="./media/understanding-work-location/understanding-work-location-work-hours-and-location2.png" alt-text="Screen shot showing work hours and location.":::
 
 > [!NOTE]
 > This new setup experience is currently available only in new Outlook for Windows and Outlook on the web. However, setting up work hours and location will be available in Microsoft Teams, Outlook for Mac, and Outlook for iOS and Android at a later date.
