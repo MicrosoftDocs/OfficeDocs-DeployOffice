@@ -1139,6 +1139,11 @@
       "source_path": "DeployOffice/other/coming-soon-to-microsoft-365-admin-center.md",
       "redirect_url": "DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
       "redirect_document_id": false
+    },
+    { 
+      "source_path": "DeployOffice/delivery-optimization.md",
+      "redirect_url": "DeployOffice/updates/delivery-optimization",
+      "redirect_document_id": false
     }
   ]
 }
