@@ -15,22 +15,22 @@ description: "Advise users they're using a room, and then free up the room for u
 
 # Opt in to the Auto Release feature
 
-With hybrid work, rooms are often booked but left unused, which wastes resources. Places lights up multiple ways for the user to reflect that they're using the room and, if no users are detected, Places frees up the room for others.
+With hybrid work, rooms are often booked but left unused, which wastes resources. Places lights up multiple ways for the user to reflect that they're using the room. If Places detects no users, it frees up the room for others.
 
 ## Prerequisites
 
 > [!NOTE]
 > Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
-- The room has a Microsoft Teams Rooms device (MTR) or Teams panel.
-- The MTR or Teams panel has one of the following licenses:
-  - Teams Rooms Standard
-  - Teams Rooms Premium
-  - Teams Rooms Pro
-  - Teams Shared Devices (Teams panel only)
-- The room is used for hybrid meetings.
-- The tenant has the Outlook for Web app enabled.
-- [For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels.
+- For Microsoft Places Public Preview customers:
+  - This feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel.
+  - The tenant has [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019) enabled.
+- For existing Teams panels customers (not part of Microsoft Places Public Preview):
+  - This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, and Teams Shared Device licenses.
+  - We recommend enabling this feature only for rooms with [existing Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or paired with a Microsoft Teams Rooms).
+
+> [!NOTE]
+> Auto Release does not support live events, townhalls, and non-Microsoft meetings (Zoom, Webex, and so on). These types of meetings do not auto-release the room. - , enable this preview feature only for rooms with existing Teams panels.
 
 ## Enable Auto Release
 
@@ -63,8 +63,4 @@ Enable Auto Release by running the following command:
 Set-CalendarProcessing <Identity> -EnableAutoRelease $true -PostReservationMaxClaimTimeInMinutes 10
 ```
 
-## Best practices
-
-1. Ensure rooms used for in-person meetings have Teams panels to check in.
-1. Avoid enabling Auto Release for rooms used for large events such as townhalls/live events.
-1. Avoid enabling Auto Release for rooms that aren't used for Teams meetings (such as Webex or Zoom).
+## FAQs
