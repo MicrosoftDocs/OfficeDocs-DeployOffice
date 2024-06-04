@@ -306,7 +306,7 @@ The PlaceDevice.ReadWrite.All permission. For more information, see the [Microso
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
-See the following Microsoft Graph APIs for more information:
+For more information, see the following Microsoft Graph APIs:
 
 - [List sensorDevices](/graph/api/workplace-list-sensordevices)
 - [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices)
