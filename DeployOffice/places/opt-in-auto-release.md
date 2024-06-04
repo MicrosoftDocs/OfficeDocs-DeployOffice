@@ -25,7 +25,8 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 - The room has a Microsoft Teams Rooms device (MTR) or Teams panel
 - The room is used for hybrid meetings
 - The tenant doesn't have Outlook Web App disabled
-[For existing customers of Teams panels](/Teams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels
+
+[For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels
 
 ## Enable Auto Release
 
@@ -47,7 +48,7 @@ You can turn on this feature on Teams panels under **Settings** > **Device setti
 
 When you initially download the Panels app from Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
 
-For more information, see [Check-in and room release on Microsoft Teams panels](/Teams/devices/check-in-and-room-release).
+For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
 ### PowerShell cmdlet
 
