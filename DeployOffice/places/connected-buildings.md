@@ -41,7 +41,7 @@ Upload data from your badge-entry system to generate occupancy information for a
 
 #### Badge-data format
 
-Use the following schema when uploading badge information:
+Use the following schema when uploading badge information.
 
 |Column  |Type  |Description |
 |---------|---------|---------|
@@ -87,7 +87,7 @@ You upload data from your Wi-Fi system to generate occupancy information for a b
 
 #### Wi-Fi data format
 
-Use the following schema when uploading Wi-Fi information:
+Use the following schema when uploading Wi-Fi information.
 
 |Column  |Type  |Description |
 |---------|---------|---------|
@@ -355,7 +355,7 @@ The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
 
-For customers choosing these integration types, must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
+For customers choosing these integration types, you must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
 1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
