@@ -15,44 +15,47 @@ description: "Advise users they're using a room, and then free up the room for u
 
 # Opt in to the Auto Release feature
 
-With hybrid work, rooms are often booked but left unused, which wastes resources. We're lighting up multiple ways for the user to reflect that they're utilizing the room and, if no users are detected, we free up the room for others.
+With hybrid work, rooms are often booked but left unused, which wastes resources. Places lights up multiple ways for the user to reflect that they're using the room and, if no users are detected, Places frees up the room for others.
 
 ## Prerequisites
 
 > [!NOTE]
 > Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md). It's also a feature available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, Teams Shared Device licenses.
 
-- The room has a Microsoft Teams Rooms device (MTR) or Teams panel
-- The room is used for hybrid meetings
-- The tenant doesn't have Outlook Web App disabled
-  - [For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels
+- The room has a Microsoft Teams Rooms device (MTR) or Teams panel.
+- The MTR or Teams panel has one of the following licenses:
+  - Teams Rooms Standard
+  - Teams Rooms Premium
+  - Teams Rooms Pro
+  - Teams Shared Devices (Teams panel only)
+- The room is used for hybrid meetings.
+- The tenant has the Outlook for Web app enabled.
+- [For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels.
 
 ## Enable Auto Release
 
-Auto Release can be enabled in two different ways:
+Auto Release can be enabled in three different ways:
 
-- Teams Admin Center and the Teams Panel
+- Teams Admin Center
+- Teams panel device
 - PowerShell cmdlet
+
+> [!NOTE]
+> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
 ### Teams admin center
 
 You can turn on this feature in Teams admin center under **Teams devices** > **Panels** > **Configuration profiles** > turn on **Release room if no one checks in** and set **Release after** > assign the profile.
 
-### Teams Panel Device
+### Teams panel device
 
 You can turn on this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
-
-> [!NOTE]
-> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
 When you initially download the Panels app from Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
 ### PowerShell cmdlet
-
-> [!NOTE]
-> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
 Enable Auto Release by running the following command:
 
@@ -62,6 +65,6 @@ Set-CalendarProcessing <Identity> -EnableAutoRelease $true -PostReservationMax
 
 ## Best practices
 
-1. Ensure rooms used for in-person meetings have Teams panels to check in
-1. Avoid enabling Auto Release for rooms used for large events such as townhalls/live events
-1. Avoid enabling Auto Release for rooms that aren't used for Teams meetings (such as Webex or Zoom)
+1. Ensure rooms used for in-person meetings have Teams panels to check in.
+1. Avoid enabling Auto Release for rooms used for large events such as townhalls/live events.
+1. Avoid enabling Auto Release for rooms that aren't used for Teams meetings (such as Webex or Zoom).
