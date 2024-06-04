@@ -24,7 +24,7 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 
 - For Microsoft Places Public Preview customers:
   - This feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel.
-  - The tenant has [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019) enabled.
+  - The tenant has [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled.
 - For existing Teams panels customers (not part of Microsoft Places Public Preview):
   - This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, and Teams Shared Device licenses.
   - We recommend enabling this feature only for rooms with [existing Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or paired with a Microsoft Teams Rooms).
