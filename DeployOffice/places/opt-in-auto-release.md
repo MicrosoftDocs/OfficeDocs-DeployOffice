@@ -30,7 +30,7 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
   - We recommend enabling this feature only for rooms with [existing Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or paired with a Microsoft Teams Rooms).
 
 > [!NOTE]
-> Auto Release does not support live events, townhalls, and non-Microsoft meetings (Zoom, Webex, and so on). These types of meetings do not auto-release the room. - , enable this preview feature only for rooms with existing Teams panels.
+> Auto Release does not support live events, townhalls, and non-Microsoft meetings (Zoom, Webex, and so on). These types of meetings do not auto-release the room.
 
 ## Enable Auto Release
 
