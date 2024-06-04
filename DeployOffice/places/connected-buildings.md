@@ -293,7 +293,7 @@ The PlaceDeviceRead.All permission. For more information, see the [Microsoft Gra
 |**DisplayName** |Read organization Places devices. |
 |**Description** |Allows app to read all Places devices in the organization. |
 |**Type**        |Application-only. |
-|**Admin consent**<br>(yes or no) |Yes |
+|**Admin consent**<br>(yes or no) |Yes. |
 
 The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
@@ -302,7 +302,7 @@ The PlaceDevice.ReadWrite.All permission. For more information, see the [Microso
 |**DisplayName** |Read and write organization Places devices. |
 |**Description** |Read and write organization Places devices. |
 |**Type** |Application-only. |
-|**Admin consent**<br>(yes or no) |Yes |
+|**Admin consent**<br>(yes or no) |Yes. |
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
@@ -351,7 +351,7 @@ The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the
 |**DisplayName**    |Read and write organization place device telemetry. |
 |**Description**    |Allows the app to read and write telemetry data for all devices in an organization. |
 |**Type** |Application-only. |
-|**Admin Consent?**  |Yes |
+|**Admin Consent?**  |Yes. |
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
 
