@@ -20,7 +20,7 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 ## Prerequisites
 
 > [!NOTE]
-> Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md). It's also a feature available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, Teams Shared Device licenses.
+> Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
 - The room has a Microsoft Teams Rooms device (MTR) or Teams panel.
 - The MTR or Teams panel has one of the following licenses:
