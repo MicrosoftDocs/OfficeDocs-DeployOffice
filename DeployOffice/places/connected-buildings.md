@@ -261,7 +261,7 @@ Next, run the onboarding script with your prepared CSV file to onboard devices. 
 |---------|---------|
 |**OnboardPlaceDevice.ps1 -FilePath $FilePath** |Onboards devices in the CSV file into Places. |
 |**DeletePlaceDevice.ps1 -FilePath $FilePath**  |Deletes devices in the CSV file from Places. |
-|**UpdatePlaceDevice.ps1 -FilePath $FilePath** |Updates devices in the CSV file from Places |
+|**UpdatePlaceDevice.ps1 -FilePath $FilePath** |Updates devices in the CSV file from Places. |
 
 > [!NOTE]
 > **$FilePath** should be full path name.
