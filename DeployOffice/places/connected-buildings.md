@@ -224,19 +224,19 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 |Column  |Description  |Notes |Example |
 |---------|---------|---------|---------|
-|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId) |Must match the ID of the telemetry sent |Manuf1_3455 |
-|**DisplayName** |The display name of the device | You can use a friendly name if applicable |Manuf1_3455 |
-|**Description** |The description of the device | | |
-|**MacAddress** |The Mac address of the device  |Supplier provided (if available) | |
-|**Manufacturer** (required) |The manufacturer of the device |Provided by the IT admin |Manuf1 |
-|**IPV4Address** |The IPV4Address of the device | Supplier provided (if available) | |
-|**IPV6Address**  |The IPV6Address of the device |Supplier provided if available | |
-|**PlaceId** |The PlaceId to which your device is mapped in Places |The IT admin maps DeviceID to the DisplayName field from a list of rooms |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
-|**Tags** |A list of custom tags associated with the device to help with search | |[ "IsVirtual_False", "Building_121"] |
-|**Sensor.SensorId** (required) |The unique identifier of a sensor within the device | Must come in the standard telemetry payload |PeopleCount Occupancy |
-|**Sensor.DisplayName** |The display Name of the sensor |You can use a friendly name if applicable |Paperclip |
-|**Sensor.SensorType** (required) |The type of sensor |A validated list (see examples) |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
-|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this indentifier if the sensor is in a different place than the device's location) | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId). |Must match the ID of the telemetry sent. |Manuf1_3455 |
+|**DisplayName** |The display name of the device. | You can use a friendly name if applicable. |Manuf1_3455 |
+|**Description** |The description of the device. | | |
+|**MacAddress** |The Mac address of the device.  |Supplier provided (if available). | |
+|**Manufacturer** (required) |The manufacturer of the device. |Provided by the IT admin. |Manuf1 |
+|**IPV4Address** |The IPV4Address of the device. | Supplier provided (if available). | |
+|**IPV6Address**  |The IPV6Address of the device. |Supplier provided if available. | |
+|**PlaceId** |The PlaceId to which your device is mapped in Places. |The IT admin maps DeviceID to the DisplayName field from a list of rooms. |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+|**Tags** |A list of custom tags associated with the device to help with search. | |[ "IsVirtual_False", "Building_121"] |
+|**Sensor.SensorId** (required) |The unique identifier of a sensor within the device. | Must come in the standard telemetry payload. |PeopleCount Occupancy |
+|**Sensor.DisplayName** |The display Name of the sensor. |You can use a friendly name (if applicable). |Paperclip |
+|**Sensor.SensorType** (required) |The type of sensor. |A validated list (see examples). |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
+|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this indentifier if the sensor is in a different place than the device's location). | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
 
@@ -290,18 +290,18 @@ The PlaceDeviceRead.All permission. For more information, see the [Microsoft Gra
 
 |Category  |Application  |
 |-------|-------|
-|**DisplayName** |Read organization Places devices |
-|**Description** |Allows app to read all Places devices in the organization |
-|**Type**        |Application-only |
+|**DisplayName** |Read organization Places devices. |
+|**Description** |Allows app to read all Places devices in the organization. |
+|**Type**        |Application-only. |
 |**Admin consent**<br>(yes or no) |Yes |
 
 The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 |Catagory  |Application  |
 |-------|-------|
-|**DisplayName** |Read and write organization Places devices |
-|**Description** |Read and write organization Places devices |
-|**Type** |Application-only |
+|**DisplayName** |Read and write organization Places devices. |
+|**Description** |Read and write organization Places devices. |
+|**Type** |Application-only. |
 |**Admin consent**<br>(yes or no) |Yes |
 
 2. Build and deploy an application to sync device information across Places and your partners.
@@ -348,9 +348,9 @@ The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the
 
 |Category  |Description  |
 |---------|---------|
-|**DisplayName**    |Read and write organization place device telemetry |
-|**Description**    |Allows the app to read and write telemetry data for all devices in an organization |
-|**Type** |Application-only |
+|**DisplayName**    |Read and write organization place device telemetry. |
+|**Description**    |Allows the app to read and write telemetry data for all devices in an organization. |
+|**Type** |Application-only. |
 |**Admin Consent?**  |Yes |
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
