@@ -335,10 +335,10 @@ The following is the CSV file format for People Count.
 
 |Column name  |Column order  |Comment |Example |
 |---------|---------|---------|---------|
-|**DeviceId** |1  |Device ID  |Manuf1_1202_3455 |
-|**SensorId**  |2  |Sensor ID  |PeopleCount |
-|**Value**  |3 |An unsigned integer |**InferredOccupancy**: True/False<br>**PeopleCount**: Any unsigned integer (for example, 5) |
-|**IngestionTime**  |4 |Timestamp from the telemetry, in UTC standard format |2023-06-27T18:24:20.808Z |
+|**DeviceId** |1  |Device ID.  |Manuf1_1202_3455 |
+|**SensorId**  |2  |Sensor ID.  |PeopleCount |
+|**Value**  |3 |An unsigned integer. |**InferredOccupancy**: True/False<br>**PeopleCount**: Any unsigned integer (for example, 5) |
+|**IngestionTime**  |4 |Timestamp from the telemetry, in UTC standard format. |2023-06-27T18:24:20.808Z |
 
 ### Real-time telemetry ingestion
 
