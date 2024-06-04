@@ -25,8 +25,7 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 - The room has a Microsoft Teams Rooms device (MTR) or Teams panel
 - The room is used for hybrid meetings
 - The tenant doesn't have Outlook Web App disabled
-
-[For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels
+  - [For existing customers of Teams panels](/microsoftteams/devices/check-in-and-room-release), enable this preview feature only for rooms with existing Teams panels
 
 ## Enable Auto Release
 
