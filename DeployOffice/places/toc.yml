@@ -22,6 +22,8 @@ items:
     items:
     - name: Setting up desk pools and workplaces in Places Finder
       href: setting-up-desk-workspaces-in-places-finder.md
+    - name: Understanding work location
+      href: understanding-work-location.md
     - name: Opt in to the Auto Release feature
       href: opt-in-auto-release.md
 
