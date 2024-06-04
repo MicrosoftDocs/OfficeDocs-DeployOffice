@@ -36,14 +36,14 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 
 Auto Release can be enabled in three different ways:
 
-- Teams Admin Center
+- Microsoft Teams admin center
 - Teams panel device
 - PowerShell cmdlet
 
 > [!NOTE]
-> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
+> It can take up to 48 hours for any adjustment to the settings of this feature to sync to the backend regardless of where you adjusted the settings (on the device, Microsoft Teams admin center, or PowerShell). Ensure that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 
-### Teams admin center
+### Microsoft Teams admin center
 
 You can turn on this feature in Teams admin center under **Teams devices** > **Panels** > **Configuration profiles** > turn on **Release room if no one checks in** and set **Release after** > assign the profile.
 
@@ -51,7 +51,7 @@ You can turn on this feature in Teams admin center under **Teams devices** > **P
 
 You can turn on this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
-When you initially download the Panels app from Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
+When you initially download the Panels app from Microsoft Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
@@ -62,5 +62,3 @@ Enable Auto Release by running the following command:
 ```powershell
 Set-CalendarProcessing <Identity> -EnableAutoRelease $true -PostReservationMaxClaimTimeInMinutes 10
 ```
-
-## FAQs
