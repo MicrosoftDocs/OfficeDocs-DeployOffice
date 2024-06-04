@@ -96,7 +96,7 @@ Use the following schema when uploading Wi-Fi information:
 |**APMacAddress**     |String   |The access point indicates which device collected the signal. |
 |**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
 |**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
-|**SSID**  |String   |The service set ID that identify the network name.  |
+|**SSID**  |String   |The service set ID that identifies the network name.  |
 |**APLocation**  |String     |The location name of the access point. It can be an external ID of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern: BuildingName/Floor). |
 
 #### Upload the Wi-Fi dataset
@@ -177,7 +177,7 @@ Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 Connect-MicrosoftPlaces 
 ```
 
-5. Use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands, to download the list of floors and rooms.
+5. To download the list of floors and rooms, use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands.
 
 > [!NOTE]
 > Update buildingName only if you need to get rooms for particular buildings.
@@ -236,13 +236,13 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 |**Sensor.SensorId** (required) |The unique identifier of a sensor within the device | Must come in the standard telemetry payload |PeopleCount Occupancy |
 |**Sensor.DisplayName** |The display Name of the sensor |You can use a friendly name if applicable |Paperclip |
 |**Sensor.SensorType** (required) |The type of sensor |A validated list (see examples) |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
-|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location) | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this indentifier if the sensor is in a different place than the device's location) | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
 
 - It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual DeviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
-- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, is PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
+- If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, are PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
 - PlaceId for a device is used to associate all sensors to a space unless PlaceId is specified.
 
