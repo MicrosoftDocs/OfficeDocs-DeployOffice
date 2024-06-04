@@ -24,16 +24,16 @@ You can use existing sensor data to enhance Places Analytics reports by combinin
 
 You must do the following before using the Connected Workplace:
 
-- Create buildings and floors
-- Enable Places Analytics
+- Create buildings and floors.
+- Enable Places Analytics.
 
 ## Add sensor data
 
 This section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensor data is done in the following way:
 
-- Generate building occupancy using badge data
-- Connect your Wi-Fi systems
-- 3P System
+- Generate building occupancy using badge data.
+- Connect your Wi-Fi systems.
+- 3P System.
 
 ### Connect badge-access systems
 
@@ -129,10 +129,10 @@ Push-Dataset -Type WifiSignal -Path <folder path>
 
 Connecting occupancy and people-density sensors is done in four steps.
 
-- Device onboarding
-- Backfilling with historical data
-- Real-time telemetry ingestion
-- Verifying available data in Places
+- Device onboarding.
+- Backfilling with historical data.
+- Real-time telemetry ingestion.
+- Verifying available data in Places.
 
 ## Device onboarding
 
