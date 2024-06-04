@@ -318,7 +318,7 @@ See the following Microsoft Graph APIs for more information:
 
 Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
 
-:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry.png" alt-text="A diagram that outlines the backfill file upload and device telemetry flow.":::
 
 ### Backfill historical data
 
@@ -363,7 +363,7 @@ For customers choosing these integration types, must complete the tenant-wide ad
 
    If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
-   :::image type="content" source="./media/connected-buildings/connected-buildings-places-integration-permissions2.png" alt-text="Screenshot of the Microsoft Places integration permissions page.":::
+   :::image type="content" source="./media/connected-buildings/connected-buildings-places-integration-permissions2.png" alt-text="Screenshot of the Microsoft Places Integration permissions page.":::
 
    If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
@@ -377,4 +377,4 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 2. For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
 3. Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-   :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box.":::
+   :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
