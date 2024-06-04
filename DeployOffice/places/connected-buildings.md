@@ -371,10 +371,10 @@ For customers choosing these integration types, you must complete the tenant-wid
 
 #### Admin Consent: type B and C architecture, connector running in a customer on-site environment
 
-Microsoft Places makes available an API that accepts telemetry in standard format and exposed over MS Graph. The API accepts a batch of telemetry messages.
+Microsoft Places makes available an API that accepts telemetry in standard format and exposed over Microsoft Graph. The API accepts a batch of telemetry messages.
 
-1. For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
-2. For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-3. Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+- For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
+- For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
+- Both type B and C integration architectures require customers to register an Azure AD application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
