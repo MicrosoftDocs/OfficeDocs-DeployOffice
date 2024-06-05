@@ -32,7 +32,7 @@ If you have security measures like antivirus software or [Smart App Control](htt
 
 ## Versions of OneNote affected by this change
 
-This change affects OneNote for Microsoft 365 and some retail versions on Windows devices. It doesn't affect OneNote on Mac, Android, iOS devices, OneNote on the web, or OneNote for Windows 10.
+This change affects OneNote for Microsoft 365, as well as certain retail and volume licensed versions on Windows devices. It doesn't affect OneNote on Mac, Android, iOS, OneNote for the web, or OneNote for Windows 10.
 
 The following table shows the version, for each update channel, in which the blocking change is implemented. Information in italics is subject to change.
 
