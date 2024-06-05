@@ -45,7 +45,7 @@ Advantages:
 - Reduces the amount of content required to download each month if you have chosen to keep installation packages always up to date.
 
 Consideration:
-- Network optimization features like [Configuration Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), and [Delivery Optimization](../delivery-optimization.md) require configuration review to ensure they're optimally configured.
+- Network optimization features like [Configuration Peer Cache](/mem/configmgr/core/plan-design/hierarchy/client-peer-cache), [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache), and [Delivery Optimization](../updates/delivery-optimization.md) require configuration review to ensure they're optimally configured.
 
 Disadvantages:
 - Hybrid workflow isn't currently built into the Configuration Manager wizard. The IT Pro must manually update the configuration.xml to support AllowCDNFallback + MatchPreviousMSI or MatchInstalled.
