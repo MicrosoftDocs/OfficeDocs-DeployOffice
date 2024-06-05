@@ -3,7 +3,7 @@ title: "Deployment guide for Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/15/2024
+ms.date: 06/05/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -81,6 +81,7 @@ See the table below to learn more about activating different clients for Places:
 |----|----|
 |Outlook|Places features are available in the latest version of [Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
 |Teams|Places is available as a [Teams app](/microsoftteams/apps-in-teams) within Teams and you can opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
+|Places iOS app| The Places mobile experience is available as an [iOS app](/DeployOffice/places/configure-the-ios-app.md).|
 
 ## Related topics
 
