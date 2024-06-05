@@ -1117,32 +1117,32 @@
     },
     { 
       "source_path": "DeployOffice/other/device-moved-after-admin-center-update.md",
-      "redirect_url": "DeployOffice/admincenter/message-center-post/device-moved-after-admin-center-update",
+      "redirect_url": "/DeployOffice/admincenter/message-center-post/device-moved-after-admin-center-update",
       "redirect_document_id": false
     },
     { 
       "source_path": "DeployOffice/other/devices-updating-monthly-enterprise-channel.md",
-      "redirect_url": "DeployOffice/admincenter/message-center-post/devices-updating-monthly-enterprise-channel",
+      "redirect_url": "/DeployOffice/admincenter/message-center-post/devices-updating-monthly-enterprise-channel",
       "redirect_document_id": false
     },
     { 
       "source_path": "DeployOffice/other/signup-for-cloud-update.md",
-      "redirect_url": "DeployOffice/admincenter/message-center-post/signup-for-cloud-update",
+      "redirect_url": "/DeployOffice/admincenter/message-center-post/signup-for-cloud-update",
       "redirect_document_id": false
     },
     { 
       "source_path": "DeployOffice/other/workplace-discount-program-notification.md",
-      "redirect_url": "DeployOffice/admincenter/message-center-post/workplace-discount-program-notification",
+      "redirect_url": "/DeployOffice/admincenter/message-center-post/workplace-discount-program-notification",
       "redirect_document_id": false
     },
     { 
       "source_path": "DeployOffice/other/coming-soon-to-microsoft-365-admin-center.md",
-      "redirect_url": "DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
+      "redirect_url": "/DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
       "redirect_document_id": false
     },
     { 
       "source_path": "DeployOffice/delivery-optimization.md",
-      "redirect_url": "DeployOffice/updates/delivery-optimization",
+      "redirect_url": "/DeployOffice/updates/delivery-optimization",
       "redirect_document_id": false
     }
   ]
