@@ -30,10 +30,10 @@ The following steps describe how to manage an organization-specific ManifestServ
 
     | Channel          | URL                                                                                        |
     | ---------------- | ------------------------------------------------------------------------------------------ |
-    | Current          | https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/   |
-    | Preview          | https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/   |
-    | Beta             | https://officecdnmac.microsoft.com/pr/4B2D7701-0A4F-49C8-B4CB-0C2D4043F51F/MacAutoupdate/   |
-    | CurrentThrottle  | Only contains Outlook manifests: https://officecdnmac.microsoft.com/pr/A1E15C18-4D18-40B0-8577-616A9470BB10/MacAutoUpdate/ |
+    | Current          | ``https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/``   |
+    | Preview          | ``https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/``   |
+    | Beta             | ``https://officecdnmac.microsoft.com/pr/4B2D7701-0A4F-49C8-B4CB-0C2D4043F51F/MacAutoupdate/``   |
+    | CurrentThrottle  | Only contains Outlook manifests: ``https://officecdnmac.microsoft.com/pr/A1E15C18-4D18-40B0-8577-616A9470BB10/MacAutoUpdate/`` |
 
   - Construct URLs for each file to download by using: ``<<ChannelURL>>/0409<<AppID>><<extension>>``, where the extension is:
     - .xml
@@ -60,12 +60,12 @@ defaults write com.microsoft.autoupdate2 ChannelName -string Custom
 defaults write com.microsoft.autoupdate2 ManifestServer -string <<URL to local network server>>
 ```
 
-> [NOTE]
+> [!NOTE]
 > 1. ChannelName and ManifestServer preference settings can be used in conjunction with per-app settings.
 > 2. Setting ChannelName to Custom without setting ManifestServer has the same effect as setting ChannelName to Current.
 > 3. Also, the ManifestServer setting when ChannelName is not set to Custom will be ignored.
 
-> [CAUTION] 
+> [!CAUTION] 
 > By providing the ManifestServer preference setting, the organization is taking full responsibility for maintaining the ManifestServer location with the most up-to-date version of the applications the organization needs to be updated. Failure to maintain the contents of the ManifestServer location will result in MAU not discovering needed updates, resulting in no updates.
 
 ## Using UpdateCache to reduce Network Traffic
@@ -84,7 +84,7 @@ To populate the local UpdateCache:
 
 MAU starts downloading updates from this location instead of URL locations specified in the xml manifest files. If the update packages aren't found in the UpdateCache location, then the update attempt fails and MAU reports "download failure."
 
-> [NOTE]
+> [!NOTE]
 > This can be used in conjunction with per-app settings.
 
 ## Setting configuration on individual Applications (Per-App setting)
