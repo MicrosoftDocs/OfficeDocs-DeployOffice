@@ -332,7 +332,7 @@ The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the
 
 The following diagram outlines the architecture references for telemetry ingestion.
 
-:::image type="content" source="./media/connected-buildings/connected-buildings-architectures.png" alt-text="A diagram that outlines the references for telemetry ingestion.":::
+:::image type="content" source="./media/connected-buildings/connected-buildings-architectures.png" alt-text="A diagram that outlines the architecture references for telemetry ingestion.":::
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
 
