@@ -1142,7 +1142,7 @@
     },
     { 
       "source_path": "DeployOffice/delivery-optimization.md",
-      "redirect_url": "/deployoffice/updates/delivery-optimization.md",
+      "redirect_url": "/deployoffice/updates/delivery-optimization",
       "redirect_document_id": false
     }
   ]
