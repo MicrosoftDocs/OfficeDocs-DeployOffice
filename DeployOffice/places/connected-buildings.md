@@ -96,7 +96,7 @@ Use the following schema when uploading Wi-Fi information.
 |**APMacAddress**     |String   |The access point indicates which device collected the signal. |
 |**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
 |**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
-|**SSID**  |String   |The service set ID that identifies the network name.  |
+|**SSID**  |String   |The service set ID that identifies the network name. |
 |**APLocation**  |String     |The location name of the access point. It can be an external ID of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern: BuildingName/Floor). |
 
 #### Upload the Wi-Fi dataset
