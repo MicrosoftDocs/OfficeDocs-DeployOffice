@@ -10,13 +10,13 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
-ms.date: 05/20/2024
+ms.date: 06/05/2024
 ---
 
 # Deployment guide for OneNote
 
-> [!IMPORTANT]
-> OneNote for Window 10 will reach end of support in October 2025, It's recommended that all enterprise customers switch from OneNote for Windows 10 to OneNote on Windows, which is available from the Microsoft Store and with a Microsoft 365 subscription. OneNote on Windows offers new features and updates and allows you to customize user settings through Group Policy. 
+<!--Using include for adding OneNote for Windows 10 eos-->
+[!INCLUDE [OneNote Windows 10 eos](./includes/onenote-win10-eos.md)]
 
 OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
