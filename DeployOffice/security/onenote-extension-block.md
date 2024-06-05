@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier2
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how OneNote blocks embedded files that have dangerous extensions."
-ms.date: 05/24/2024
+ms.date: 06/05/2024
 ---
 
 # OneNote blocks embedded files that have dangerous extensions
@@ -32,21 +32,22 @@ If you have security measures like antivirus software or [Smart App Control](htt
 
 ## Versions of OneNote affected by this change
 
-This change only affects OneNote for Microsoft 365 on devices running Windows. The change doesn’t affect OneNote on a Mac, OneNote on Android or iOS devices, OneNote on the web, or OneNote for Windows 10.
+This change affects OneNote for Microsoft 365 and some retail versions on Windows devices. It doesn't affect OneNote on Mac, Android, iOS devices, OneNote on the web, or OneNote for Windows 10.
 
 The following table shows the version, for each update channel, in which the blocking change is implemented. Information in italics is subject to change.
 
-| Update channel                           | Version        | Release date                           |
-|------------------------------------------|----------------|----------------------------------------|
-| Current Channel (Preview)                | Version 2304   | Rolling out starting on May 1, 2023 |
-| Current Channel                          | Version 2304   | Rolling out starting on May 1, 2023 |
-| Monthly Enterprise Channel               | Version 2304   | June 13, 2023                        |
-| Semi-Annual Enterprise Channel (Preview) | *Version 2308* | *September 12, 2023*                   |
-| Semi-Annual Enterprise Channel           | *Version 2308* | *January 9, 2024*                      |
+| Channel                                    | Version | Rollout Date       |
+|--------------------------------------------|---------|--------------------|
+| Current Channel (Preview)                  | 2304    | May 1, 2023        |
+| Current Channel                            | 2304    | May 1, 2023        |
+| Monthly Enterprise Channel                 | 2304    | June 13, 2023      |
+| Semi-Annual Enterprise Channel (Preview)   | 2308    | September 12, 2023 |
+| Semi-Annual Enterprise Channel             | 2308    | January 9, 2024    |
+| Semi-Annual Enterprise Channel (Extended)  | 2302    | July 11, 2023      |
 
 > [!NOTE]
-> - This change will also affect OneNote in retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
-> - This change won't affect OneNote in volume licensed versions of Office, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
+> - This change affects OneNote in retail versions of Office 2021, Office 2019, and Office 2016. They're on the same schedule as Current Channel.
+> - This change affects OneNote in volume licensed versions of Office, such as Office LTSC 2021 and Office LTSC 2019. They're on the same schedule as Current Channel. 
 
 ## Extensions that are considered dangerous
 
