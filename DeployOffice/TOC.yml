@@ -46,7 +46,7 @@ items:
           - name: Change update channel for Copilot
             href: updates/change-channel-for-copilot.md
           - name: Delivery Optimization
-            href: delivery-optimization.md
+            href: updates/delivery-optimization.md
           - name: Update history
             href: /officeupdates/update-history-microsoft365-apps-by-date
           - name: Release notes
