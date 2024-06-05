@@ -15,7 +15,7 @@ description: "Learn how to use existing sensor data to enhance Microsoft Places 
 
 # Connected buildings
 
-You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people density, badge, and Wi-Fi data types.
+You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people count, badge, and Wi-Fi data types.
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ You must do the following before using the Connected Workplace:
 
 ## Add sensor data
 
-This section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable both real-time and analytical experiences. Adding sensor data is done in the following way:
+This section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable analytical experiences. Adding sensor data is done in the following way:
 
 - Generate building occupancy using badge data.
 - Connect your Wi-Fi systems.
-- 3P System.
+- Third-party systems.
 
 ### Connect badge-access systems
 
@@ -125,14 +125,14 @@ Connect-MicrosoftPlaces
 ```powershell
 Push-Dataset -Type WifiSignal -Path <folder path>
 ```
-## Connect other occupancy sensors or people-denisty sensors
+## Connect other occupancy sensors or people-count sensors
 
-Connecting occupancy and people-density sensors is done in four steps.
+Connecting occupancy and people-count sensors is done in four steps.
 
 - Device onboarding.
 - Backfilling with historical data.
 - Real-time telemetry ingestion.
-- Verifying available data in Places.
+- Verify that data is available in Places.
 
 ## Device onboarding
 
@@ -144,8 +144,8 @@ The following is a high-level diagram about how you can onboard devices and sens
 
 There are three ways you can upload device information to Places.
 
-- Option 1: using scripts that are provided by Microsoft (the preferred method). Scripts help you manage (onboard, remove, or update) devices in bulk using a CSV file as an input and iterating using PowerShell cmdlets.
-- Option 2: using PowerShell cmdlets. If you want to automate or customize the script, you can use PowerShell cmdlets published on a public repo. PowerShell cmdlets can be used to manage individual devices.
+- Option 1 (preferred): create scripts on top of Places PowerShell cmdlets. The scripts help to manage (onboard, remove, update) devices in bulk using a CSV file as an input and iterating using Places PowerShell cmdlets.
+- Option 2: if you want to individually manage devices, you can use the Places PowerShell cmdlets directly.
 - Option 3: using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs in Microsoft Graph.
 
 ### Prerequisites: prepare device metadata  
@@ -177,7 +177,7 @@ Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 Connect-MicrosoftPlaces 
 ```
 
-5. To download the list of floors and rooms, use the MS_Places_Get_PlaceId.ps1 script, or execute the following commands.
+5. Execute the following commands to download the list of floors and rooms.
 
 > [!NOTE]
 > Update buildingName only if you need to get rooms for particular buildings.
@@ -250,12 +250,12 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
-Powershell scripts help you upload and manage devices in bulk. Microsoft provides scripts to upload, edit, and delete devices. The scripts internally use the PowerShell cmdlets. Scripts use CSV files as an input.
+Create a PowerShell script that iterates using the PowerShell cmdlets using the CSV file as an input to upload, edit, and delete devices.
 
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
 
-Next, run the onboarding script with your prepared CSV file to onboard devices. If you want to customize scripts and use the Powershell cmdlets, you can reference those in Option 2.
+If you want to manage devices individually using the Powershell cmdlets, you can reference Option 2.
 
 |Script name  |Description  |
 |---------|---------|
@@ -271,7 +271,7 @@ Next, run the onboarding script with your prepared CSV file to onboard devices. 
 There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 > [!NOTE]
-> To run scripts, you must have the TenantPlacesManagement role assigned.
+> To run cmdlets, you must have the TenantPlacesManagement role assigned.
 
 |Cmdlet name  |Description  |Parameters |
 |---------|---------|---------|
@@ -284,25 +284,9 @@ There are Powershell cmdlets you can use to manage devices in Places. For more i
 
 To build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
 
-1. Register an Azure Active Directory (AAD) application to get the following permissions.
+1. Create an app registration in Microsoft Entra.
 
-The PlaceDeviceRead.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
-
-|Category  |Application  |
-|-------|-------|
-|**DisplayName** |Read organization Places devices. |
-|**Description** |Allows app to read all Places devices in the organization. |
-|**Type**        |Application-only. |
-|**Admin consent**<br>(yes or no) |Yes. |
-
-The PlaceDevice.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
-
-|Catagory  |Application  |
-|-------|-------|
-|**DisplayName** |Read and write organization Places devices. |
-|**Description** |Read and write organization Places devices. |
-|**Type** |Application-only. |
-|**Admin consent**<br>(yes or no) |Yes. |
+   For more information on the PlaceDeviceRead.All and PlaceDevice.ReadWrite.All permissions, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
@@ -342,16 +326,13 @@ The following is the CSV file format for People Count.
 
 ### Real-time telemetry ingestion
 
-The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create an Azure Active Directory (AAD) application with the permission based on the selected architecture.
+The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create a Microsoft Entra application with the permission based on the selected architecture.
 
 The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-|Category  |Description  |
-|---------|---------|
-|**DisplayName**    |Read and write organization place device telemetry. |
-|**Description**    |Allows the app to read and write telemetry data for all devices in an organization. |
-|**Type** |Application-only. |
-|**Admin Consent?**  |Yes. |
+Architecture references for telemetry ingestion.
+
+[NEW ART]
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
 
@@ -374,7 +355,11 @@ For customers choosing these integration types, you must complete the tenant-wid
 Microsoft Places makes available an API that accepts telemetry in standard format and exposed over Microsoft Graph. The API accepts a batch of telemetry messages.
 
 - For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
-- For type C architecture, customers can create an loongoing process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-- Both type B and C integration architectures require customers to register an Azure Active Directory (AAD) application and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+- For type C architecture, customers can create a long-running process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
+- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra as shown in the following illustration and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
+
+## Verify data is available in Places
+
+Once devices are onboarded and the API is ingesting live sensor data, the Places Analytics reports will start to populate. Verify data is flowing into your analytics dashboard within 72 hours to unlock insights that will help optimize your workspace.
