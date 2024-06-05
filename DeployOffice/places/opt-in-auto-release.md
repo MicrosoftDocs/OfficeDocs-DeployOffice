@@ -63,18 +63,18 @@ You can turn on this feature in Teams admin center under **Teams devices** > **P
 
 You can turn on this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
-When you initially download the Panels app from Microsoft Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the auto-release setting configured in Exchange with the current auto-release setting on Teams panels.
+When you initially download the Panels app from Microsoft Teams admin center that has multi-panel check-in support, allow 48 hours for the feature to become available. Ensure that you download the app when there are no meetings scheduled within the next 48 hours. Furthermore, when you initially download this app, it overrides the autorelease setting configured in Exchange with the current autorelease setting on Teams panels.
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
 ## What is Auto Release
 
-Auto Release is a feature tha can be enabled for rooms that are often unused or are frequently booked and abandoned. With Auto Release, you can ensure the space is used by having meeting attendees check in through one of two ways:
+Auto Release is a feature that can be enabled for rooms that are often unused or are frequently booked and abandoned. With Auto Release, you can ensure the space is used by having meeting attendees check in through one of two ways:
 
 - An attendee checks in through Teams panel.
 - An attendee checks in by joining a meeting through Microsoft Teams Rooms (MTR).
 
-If no users check in to a meeting on Teams Panels at the room they reserved within a set amount of time after the meeting start time, the room is released and becomes available for others to reserve.
+Check-in and room release settings let users check in to a meeting on Teams Panels at the room they reserved at the start of the meeting. If no users check in within a set amount of time after the meeting start time, the room is released and becomes available for others to reserve.
 
 Learn more about how the feature works with Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
 
