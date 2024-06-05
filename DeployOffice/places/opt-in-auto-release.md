@@ -20,7 +20,9 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 ## Prerequisites
 
 > [!NOTE]
-> Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+>
+> - Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+> - Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
 
 - For Microsoft Places Public Preview customers:
   - This feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel.
@@ -28,9 +30,6 @@ With hybrid work, rooms are often booked but left unused, which wastes resources
 - For existing Teams panels customers (not part of Microsoft Places Public Preview):
   - This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, and Teams Shared Device licenses.
   - We recommend enabling this feature only for rooms with [existing Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or paired with a Microsoft Teams Rooms).
-
-> [!NOTE]
-> Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
 
 ## Enable Auto Release
 
