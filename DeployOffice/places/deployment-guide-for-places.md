@@ -13,9 +13,26 @@ recommendations: true
 description: "Provides Office admins with an overview of how to deploy Microsoft Places to users in their organization."
 ---
 
+---
+title: "Deployment guide for Places"
+ms.author: mactra
+author: MachelleTranMSFT
+manager: jtremper
+ms.date: 05/15/2024
+audience: ITPro
+ms.topic: conceptual
+ms.service: o365-proplus-itpro
+ms.collection: Tier3
+ms.localizationpriority: medium
+recommendations: true
+description: "Provides Office admins with an overview of how to deploy Microsoft Places to users in their organization."
+---
+
 # Deployment guide for Microsoft Places (preview)
 
 Microsoft Places Public Preview lets you introduce more flexible work within your organization as an IT administrator. Integrated with Microsoft 365, Places helps users make informed decisions about their work dynamics, which can lead to increased productivity and enhanced collaboration. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
+
+Currently, basic features of Microsoft Places can be deployed by an organization that meets the prerequisites below.  Advanced features are opt-in only and require tenant admins to request access and be granted access by the places team.  For more information, see [Opt-In to Places Advanced Features](/deployoffice/places/opt-in-places-preview).
 
 ## Prerequisites
 
