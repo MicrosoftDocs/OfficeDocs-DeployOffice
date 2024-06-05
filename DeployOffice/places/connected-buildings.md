@@ -330,7 +330,7 @@ The connectors described in Scope need the following permission to request the r
 
 The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-Architecture references for telemetry ingestion.
+The following diagram outlines the architecture references for telemetry ingestion.
 
 :::image type="content" source="./media/connected-buildings/connected-buildings-architectures.png" alt-text="A diagram that outlines the references for telemetry ingestion.":::
 
