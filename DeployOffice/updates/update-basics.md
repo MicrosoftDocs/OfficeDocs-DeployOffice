@@ -50,7 +50,7 @@ To configure this setting, see [Use the Office Deployment Tool or Group Policy t
 
 > [!NOTE]
 > - When updates are made available on the Office CDN, we gradually advertise the availability of the updates over a period of several days to devices worldwide that have Office installed. This way not all devices in your organization will try to access the Office CDN at the same time to download the updates, which could possibly cause network bandwidth utilization issues.
-> - If you configure Office to get updates directly from the Office CDN, and those devices are running Windows 11 or Windows 10, you can take advantage of [Delivery Optimization](../delivery-optimization.md) to help reduce network bandwidth utilization.
+> - If you configure Office to get updates directly from the Office CDN, and those devices are running Windows 11 or Windows 10, you can take advantage of [Delivery Optimization](../updates/delivery-optimization.md) to help reduce network bandwidth utilization.
 
 ## Make sure the device has enough free disk space
 
