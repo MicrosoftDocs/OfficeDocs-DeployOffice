@@ -19526,7 +19526,7 @@ These are diagnostic traces which aren't logged immediately but put into a ring 
 2. Feed experience in OneNote Win32 desktop application
 3. Feed experience in OneNote Online
 4. Feed experience in Outlook Web App
-5. Feed experience in Edge shoreline
+5. Feed experience in Microsoft Edge sidebar
 6. OneNote Sticky Notes
 
 The exception which is logged as a separate data event helps in identifying its origin. The corresponding diagnostic traces that are logged with this event provide additional information to investigate the issue further. 
