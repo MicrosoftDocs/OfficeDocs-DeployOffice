@@ -274,7 +274,7 @@ Even though Windows 7 is longer supported, we've decided to continue to provide 
 ### Delivery Optimization and Microsoft 365 Apps
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
-Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](delivery-optimization.md).
+Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](./updates/delivery-optimization.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the final release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1908. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1908-Sept-2019-FINAL/ba-p/873084).

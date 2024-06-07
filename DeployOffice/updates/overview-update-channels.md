@@ -250,7 +250,7 @@ After Office is installed, you can change the update channel for a device. For m
 
 ### Managing updates
 - To simplify managing updates, especially for Current Channel and Monthly Enterprise Channel, we recommend that you configure devices to receive updates directly from the Office Content Delivery Network (CDN) on the internet.
-- If you're configuring devices using Windows 11 or Windows 10 to get updates directly from the Office CDN, take advantage of [Delivery Optimization](../delivery-optimization.md) to help reduce network bandwidth utilization. 
+- If you're configuring devices using Windows 11 or Windows 10 to get updates directly from the Office CDN, take advantage of [Delivery Optimization](../updates/delivery-optimization.md) to help reduce network bandwidth utilization. 
 - When we make a new release available on the Office CDN, we gradually advertise the availability of this release over a period of several days to devices worldwide that have Office installed. This way not all devices in your organization try to access the Office CDN at the same time to download the new release, which could possibly cause network bandwidth utilization issues.
 - For examples of approximate update sizes when updating from a recent release to the most current release of an update channel, see [Download sizes for updates to Microsoft 365 Apps](/officeupdates/download-sizes-microsoft365-apps-updates).
 - If you use Microsoft Configuration Manager, you can manage updates for these update channels by using the Software Update management workflow. For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](manage-microsoft-365-apps-updates-configuration-manager.md).

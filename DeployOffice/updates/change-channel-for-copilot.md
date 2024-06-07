@@ -39,7 +39,7 @@ Based on your preferred management solution, choose from the following options. 
 Our general recommendation for Microsoft 365 Apps is to direct devices to the Office CDN. As Current Channel is receiving updates frequently, not on a set schedule, and multiple times a month, using the Office CDN is even more advised.
 
 1.	Verify that your network allows devices to access the Microsoft CDN directly or through a proxy.
-2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../delivery-optimization.md) to help reduce the traffic on your internet links.
+2.	Consider enabling [Delivery Optimization for Microsoft 365 Apps](../updates/delivery-optimization.md) to help reduce the traffic on your internet links.
 
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
