@@ -16700,7 +16700,7 @@ The following fields are collected:
 
 - **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
 
-- **Data_MemoryLoadPerfMetrics** - erf markers for OneNote Sticky Notes.
+- **Data_MemoryLoadPerfMetrics** - perf markers for OneNote Sticky Notes.
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
