@@ -7398,9 +7398,9 @@ The following fields are collected:
 
 - **IsFastDelete** - indicates whether account is deleted on background thread
 
-##### Office.PowerPoint.Copilot.TriggerHandoff
+#### Office.PowerPoint.Copilot.TriggerHandoff
 
-This event is triggered when the user launches "powerpoint.exe /HOFF <some id>". The data is used to denote whether the id was empty or not and whether the app launched successfully or not. We aren't able to evaluate the success of the Copilot handoff feature if we don't know whether there was an empty handoff ID and whether the app launched successfully. 
+This event is triggered when the user launches "powerpoint.exe /HOFF \<some id>\". The data is used to denote whether the id was empty or not and whether the app launched successfully or not. We aren't able to evaluate the success of the Copilot handoff feature if we don't know whether there was an empty handoff ID and whether the app launched successfully. 
 
 The following fields are collected:
  
@@ -13549,7 +13549,7 @@ The following fields are collected:
 
 #### Office.UX.AccChecker.StatusBarIssueDetected
 
-This event detects the presence of an accessibility issue in the user's document. It's used to understand the prevalence of accessibility issues in Office documents. The data helps with improving Microsoft's Accessible authoring tools used for fixing document issues and contributes towards more accessible documents for users. This drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
+This event detects the presence of an accessibility issue in the user's document. It's used to understand the prevalence of accessibility issues in Office documents. The data helps with improving Microsoft's accessible authoring tools used for fixing document issues and contributes towards more accessible documents for users. This drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
 
 The following fields are collected:
 
