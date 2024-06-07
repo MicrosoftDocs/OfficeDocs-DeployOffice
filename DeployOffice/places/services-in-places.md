@@ -42,4 +42,4 @@ This example adds a link.
 @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
-Once these steps are complete, open the Places Explore page (using the link to the explore page). The service you added appears with its associated building.
+Once these steps are complete, open the Places Explore page (using the link to the Explore page). The service you added appears with its associated building.
