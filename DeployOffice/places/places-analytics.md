@@ -55,3 +55,46 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:
 
 > [!NOTE]
 > These settings might take up to one day for a security group to be fully setup and replicated to the Microsoft Places environment.
+
+
+## Enable buildings for Places Analytics
+
+Once the buildings are onboarded to Places, they need to be enabled for Analytics. This lets you view building analytics and the associated rooms and Deskpool analytics in Space Analytics.
+By default, none of the onboarded buildings are enabled for Analytics. Follow the steps below to enable buildings in analytics.
+
+## Prerequisites
+> [!NOTE]
+> - Setup steps for settings cmdlet: [Deployment guide for Places](https://learn.microsoft.com/en-us/deployoffice/places/deployment-guide-for-places)
+> - Setup steps for Get-PlaceV3 cmdlet: [Get-PlaceV3](https://learn.microsoft.com/en-us/deployoffice/places/powershell/get-placev3)
+
+## Powershell scripts/Steps
+Admins can obtain BuildingIds for all onboarded buildings by running Get-PlaceV3 cmdlet
+**Get-PlaceV3 -Type Building**
+
+Once the BuildingIds (PlaceID) are obtained, need to run the Set-PlacesSettings cmdlet with -SpaceAnalyticsBuildingsList parameter like below. The Scope always will be “Default” which means by default, the relevant values will be used which were passed in the scope.
+
+```powershell
+Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:<building guid1>;<building guid2>…"
+```
+The valid values for settings are
+
+- Empty string: No buildings enabled for analytics (default setting)
+```powershell
+Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:"
+```
+- BuildingIDs: Selected buildings enabled for analytics
+```powershell
+Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:fcdc5abe-d9e6-402d-a56c-d8154d353062;da320b58-bb43-4c71-8409-87f45276a3b8"
+```
+- All buildings: All onboarded buildings to Places are enabled for analyics
+```powershell
+Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:All"
+```
+
+For viewing the settings, Get-PlacesSettings can be used. The time to reflect is up to ~12 hours for all settings in setting service.
+**Get-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList**
+
+> [!NOTE]
+> - It can take ~12 hrs for the setting to get reflected in UI.
+> - Suggested limit for number of buildings in settings is 200.
+
