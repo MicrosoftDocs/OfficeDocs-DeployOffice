@@ -28,7 +28,12 @@ For example, a building might have a cafeteria where employees can order food on
 
 ## Adding services to a building
 
-First, you need to find the ID for the building you want to add a service to (for more information, see LINK about to how to get the ID). Next, you associate the service with this building using the ResourceLinks parameter (for more information, see -resourceLinks, LINK to place directory doc, -resourcelink section).
+First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with this building using the ResourceLinks parameter (for more information, see [New-Place](/deployoffice/places/powershell/new-place#-resourcelinks).
+
+
+see -resourceLinks, LINK to place directory doc, -resourcelink section).
+
+[Managed Disks](../../linux/overview.md#managed-disks)
 
 This example associates a services app with a building.
 
@@ -39,7 +44,7 @@ set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1
 This example adds a link.
 
 ```powershell
-set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="www.contoso.sharepoint.com/diningMenu"; type="urlLink”} 
+@{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
 Once these steps are complete, open the Places Explore page (using the link to the explore page). The service you added appears with its associated building.
