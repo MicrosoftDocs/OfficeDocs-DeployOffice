@@ -27,9 +27,9 @@ For more information on the level of support in ODF for commonly used features o
 
 To learn more about ODF generally, see:
   
-- [OASIS standards organization](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office)
+- [OASIS standards organization](https://groups.oasis-open.org/communities/tc-community-home2?CommunityKey=4bf06d41-79ad-4c58-9e8e-018dc7d05da8)
 
-- [ISO organization](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=45245)
+- [ISO organization](https://www.iso.org/standard/45245.html)
 
 ## Related articles
 

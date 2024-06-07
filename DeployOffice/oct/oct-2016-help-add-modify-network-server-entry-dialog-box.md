@@ -19,13 +19,13 @@ The **Add Network Server Entry** dialog box opens when you choose **Add** on the
   
 In the **Add Network Server Entry** or **Modify Network Server Entry** dialog boxes, in the **Network server** box, type the path and name of the server. You can use a UNC path or, if all users have access to the server with the same drive letter, you can use a drive letter in the path. The path can contain environment variables delimited by percent signs (%) if they're defined for all users. For example:
   
- z:\office
+    z:\office
 
- \\\server1\share\office_root
+    \\\server1\share\office_root
 
- %USERNAME%\office_root
+    %USERNAME%\office_root
 
- %USERNAME%\office_root
+    %USERNAME%\office_root
 
 You can also choose **Browse** to search for a server on the network.
   
