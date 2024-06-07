@@ -3,22 +3,7 @@ title: "Deployment guide for Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/15/2024
-audience: ITPro
-ms.topic: conceptual
-ms.service: o365-proplus-itpro
-ms.collection: Tier3
-ms.localizationpriority: medium
-recommendations: true
-description: "Provides Office admins with an overview of how to deploy Microsoft Places to users in their organization."
----
-
----
-title: "Deployment guide for Places"
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
-ms.date: 05/15/2024
+ms.date: 06/05/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -32,8 +17,8 @@ description: "Provides Office admins with an overview of how to deploy Microsoft
 
 Microsoft Places Public Preview lets you introduce more flexible work within your organization as an IT administrator. Integrated with Microsoft 365, Places helps users make informed decisions about their work dynamics, which can lead to increased productivity and enhanced collaboration. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
 
-Currently, basic features of Microsoft Places can be deployed by an organization that meets the prerequisites below.  Advanced features are opt-in only and require tenant admins to request access and be granted access by the places team.  For more information, see [Opt-In to Places Advanced Features](/deployoffice/places/opt-in-places-preview).
-
+> [!NOTE]
+> Microsoft Places is in Public Preview – not all features are immediately available.  Advanced Features require tenants to opt-in.  Please visit [Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview) for more details.
 ## Prerequisites
 
 Before onboarding Places, complete the following prerequisites:
@@ -48,49 +33,89 @@ Before onboarding Places, complete the following prerequisites:
   - Microsoft 365 or Office 365 (E1, E3, E5)
   - Microsoft 365 or Office 365 (A1, A3, A5)
   - Microsoft 365 Frontline Worker (F1, F3)
-
+    
 > [!NOTE]
 > More information on feature availability by license type will be shared as we get closer to general availability.
+## Overview of Places Security Groups
+
+Places currently uses [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) to provide access to features needed by different user groups.   The script that follows in step 1 will create following four security groups:
+
+1. <u>Places Users</u>: Add users to this group to allow access the Places Web App.
+
+   1. <u>Places Advanced Users</u>: This group is for users who will have access to Places Advanced features like Places Finder, Space Analytics, and Intelligent Booking. Users added to Places Advanced Users will be part of the Places Users group.
+      
+   1. <u>Places Mobile Users</u>: This is for users who can use the [Places iOS app](/deployoffice/places/configure-the-ios-app). Users added to Places Mobile Users group will be part of the Places Users group and the Places Advanced features group.
+   
+      1. <u>Places Analytics Users</u>: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
+            
+> [!NOTE]
+> Advanced Features are Opt-In only.  Please visit Please visit [Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview) for more details.
+> 
+> These security groups can be created without access to advanced features, but users will not be able to use these features until you have opted into advanced features and been notified by the Places team that advanced features are available for your tenant.
 
 ## Deploy Places
 
 Once you've completed all prerequisite steps, you're now ready to deploy Places to users in your organization:
 
-### Step 1 - Install the Places module
+### Step 1 - Create Places Security Groups
 
-You can install the Places module by running the following command in PowerShell:
+1. Download [PreparePlacesGroups.ps1](https://microsoft-my.sharepoint-df.com/:u:/p/jayam/Ecsqrlqz8RFHqtyhkAlNVKEBYWnHZvW7F-fdtLpfuwyuQQ?e=FINCW2)
 
-```powershell
-Install-Module -Name MicrosoftPlaces -AllowPrerelease -Force
-```
+1. Run __Windows PowerShell__ as Administrator.
 
-> [!IMPORTANT]
-> You must include the -Force parameter to prevent cached content from being read.
+1. Run PreparePlacesGroups.ps1
 
-### Step 2 - Enable Places
+1. Now that security groups have been created users can be added to these groups as appropriate:
 
-Enabling Places and Workplans lets you facilitate hybrid work coordination in your tenant. With Workplans, employees can specify their work location such as in-office or remote.
-
-Use the following commands to enable buildings, apps, and location sharing controls when onboarding your tenant to Places Public Preview.
-
-Places can be enabled to a specific set of users by utilizing [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-
+   ·       Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell?view=o365-worldwide).
+   
+   ·       Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide).
+   
+   ·       Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http).
+   
 > [!NOTE]
->
+> - This will create all of the security groups outlined above. Depending on your needs, not all security groups must be used.
 > - Changes made when managing users in existing mail-enabled security groups are immediate.
 > - Users and security groups that are either new to the tenant or previously inactive can take up to 1 day for changes to reflect.
 
-Connect to the Microsoft Places service in a new PowerShell and enable Places for a mail-enabled security group by running the following command:
+### Step 2 - Set up the PowerShell environment for Places
 
-```powershell
-Connect-MicrosoftPlaces 
-Set-PlacesSettings -Collection Places -EnablePlacesWebApp  ‘Default:false,OID:<OID of Mail-enabled Security Group>@<Tenant ID>:true’
-```
+Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.  
+
+1. Download [PreparePlacesPowershell7.ps1](https://microsoft-my.sharepoint-df.com/:u:/p/jayam/EXgGzVC0PUxBushlErnXNNYBBZu_8vI8dUtyMOxuQ32ilw?e=2hHDRr)
+
+1. [Ensure you have the latest PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
+
+1. Open __PowerShell 7__ as Administrator
+
+1. Run PreparePlacesPowershell7.ps1
+
+
+
+### Step 3 - Enabling Places
+
+Running the following script will enable the Places Web App and Advanced Features.
+
+> [!NOTE]
+> Advanced Features require tenants to opt-in.  Please visit [Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview) for more details.
+>These features can be enabled, but users will not have access to these features until you have opted into advanced features and been notified by the Places team that advanced features are available for your tenant.
+
+1. Download [Prepare-PlacesEnablement.ps1](https://microsoft-my.sharepoint-df.com/:u:/p/jayam/Ec2Kbzmc9AdNieKZeDIvz0cBbrPWL-OtAw3I6Ps_aPp_Hg?e=Kcf7I9)
+
+1. Using the **PowerShell 7** window from Step 2.
+
+1. Run Prepare-PlacesEnablement.psi
+
+
+|__Administrator: PowerShell 7__|
+| .\Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true|
+
+---
+ 
 
 > [!NOTE]
 > It can take up to 1 day for users to gain access to the features.
-
-### Step 3 - Activate additional clients
+### Step 4 - Activate additional clients
 
 See the table below to learn more about activating different clients for Places:
 
@@ -98,6 +123,7 @@ See the table below to learn more about activating different clients for Places:
 |----|----|
 |Outlook|Places features are available in the latest version of [Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
 |Teams|Places is available as a [Teams app](/microsoftteams/apps-in-teams) within Teams and you can opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
+|Places iOS app| The Places mobile experience is available as an [iOS app](/DeployOffice/places/configure-the-ios-app).|
 
 ## Related topics
 
