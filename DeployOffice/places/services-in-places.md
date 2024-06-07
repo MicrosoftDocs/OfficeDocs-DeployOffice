@@ -19,7 +19,7 @@ In Microsoft Places apps admins can add services that appear in the Explore tab 
 
 For example, a building might have a cafeteria where employees can order food online. Admins have the ability of showing employees a link to another website that may show the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
 
-:::image type="content" source="./media/services-in-places/services-in-places-with-links.png" alt-text="screenshot showing available services, including parking, tech support, dining, and facility request.":::
+:::image type="content" source="./media/services-in-places/services-in-places-with-links.png" alt-text="screenshot showing a page of available services, including parking, tech support, dining, and facility request.":::
 
 ## Prerequisites
 
