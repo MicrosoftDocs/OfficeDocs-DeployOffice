@@ -3,7 +3,7 @@ title: "Microsoft Places Analytics"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/20/2024
+ms.date: 06/07/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -14,7 +14,7 @@ description: "Using Microsoft Places Analytics to improve workplace management b
 ---
 # Microsoft Places Analytics
 
-Microsoft Places Analytics is designed for real estate and facilities (RE&F) managers and admins who need data-driven insights for effective space management. By using Places Analytics, you get a unified view of all your managed spaces, from buildings and rooms to shared workspaces.
+Microsoft Places Analytics is designed for real estate and facilities managers and admins who need data-driven insights for effective space management. By using Places Analytics, you get a unified view of all your managed spaces, from buildings and rooms to shared workspaces.
 
 You can improve workplace efficiency by comparing planned versus actual attendance using organization-level data. Discover which desks and rooms are most frequently used and receive suggestions on how to adjust your work spaces to better meet your staffing needs. Additionally, Places Analytics helps you identify supply and demand imbalances so that you can allocate resources more effectively.
 
@@ -36,7 +36,7 @@ To provide this user experience, we recommend using the following mail-enabled s
 
 - PlacesAnalyticSG
 
-  This enables more features and analytics views that help IT admins and real estate and facilities (RE&F) professionals determine the usage baseline for their spaces and identify opportunities for optimization.
+This group enables more features and analytics views. These views help IT admins and real estate and facilities professionals determine the usage baseline for their spaces and identify opportunities for optimization.
 
 ## Create security groups
 
@@ -60,18 +60,18 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:
 ## Enable buildings for Places Analytics
 
 Once the buildings are onboarded to Places, they need to be enabled for Analytics. This lets you view building analytics and the associated rooms and Deskpool analytics in Space Analytics.
-By default, none of the onboarded buildings are enabled for Analytics. Follow the steps below to enable buildings in analytics.
+By default, none of the onboarded buildings are enabled for Analytics. Follow the steps to enable buildings in analytics.
 
 ### Prerequisites
 > [!NOTE]
 > - Setup steps for settings cmdlet: [Deployment guide for Places](deployment-guide-for-places.md)
 > - Setup steps for Get-PlaceV3 cmdlet: [Get-PlaceV3](./powershell/get-placev3.md)
 
-## Powershell scripts/Steps
+## PowerShell scripts/Steps
 Admins can obtain BuildingIds for all onboarded buildings by running Get-PlaceV3 cmdlet
 **Get-PlaceV3 -Type Building**
 
-Once the BuildingIds (PlaceID) are obtained, need to run the Set-PlacesSettings cmdlet with -SpaceAnalyticsBuildingsList parameter like below. The Scope always will be “Default” which means by default, the relevant values will be used which were passed in the scope.
+Once you obtain the BuildingIds (PlaceID), run the Set-PlacesSettings cmdlet with the -SpaceAnalyticsBuildingsList parameter. The scope is "Default," so the relevant values you passed in the scope are used by default.
 
 ```powershell
 Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:<building guid1>;<building guid2>…"
@@ -86,12 +86,12 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:"
 ```powershell
 Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:fcdc5abe-d9e6-402d-a56c-d8154d353062;da320b58-bb43-4c71-8409-87f45276a3b8"
 ```
-- All buildings: All onboarded buildings to Places are enabled for analyics
+- All buildings: All onboarded buildings to Places are enabled for analytics
 ```powershell
 Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:All"
 ```
 
-For viewing the settings, Get-PlacesSettings can be used. The time to reflect is up to ~12 hours for all settings in setting service.
+To view the settings, Get-PlacesSettings can be used. The time to reflect is up to ~12 hours for all settings in setting service.
 **Get-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList**
 
 > [!NOTE]
