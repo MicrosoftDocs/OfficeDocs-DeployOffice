@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 03/29/2024
+ms.date: 06/07/2024
 ---
 
 # Essential services for Office
@@ -4534,6 +4534,8 @@ The following fields are collected:
 
 - **EventDate** – Timestamp of the event occurrence 
 
+- **orderID** - Order ID string of the purchase made.
+
 - **Result** – Int denoting the enum result of the operation. 
 
 - **SessionID** – GUID to connect events by session
@@ -4575,6 +4577,8 @@ The following fields are collected:
 - **EventDate** – Timestamp of the event occurrence 
 
 - **IsModeFre** – Boolean indicating if purchase was made from upsell FRE screen or Sku Chooser
+
+- **orderID** - Order ID string of the purchase made.
 
 - **ProductId** - String - ProductId of the SKU being purchased.
 
@@ -18250,6 +18254,13 @@ The following fields are collected:
 
 - None
 
+### Office.Apple.Licensing.CPCOnFailure
+
+This event is triggered when the subscription screen encounters issues, and the respective failure screen is shown instead. The data is used to track reasons for the Apple app store unknown errors and take suitable actions to address it.
+ 
+The following fields are collected: 
+ 
+- **hasNetworkConnection** - Boolean value of the network connectivity status of the device.
 
 ### Office.BusinessCheckout.AnalyticsEvent
 
@@ -18371,6 +18382,24 @@ This event is collected for Office applications running under Apple platforms. T
 The following fields are collected:
 
 - **Data_EventId** – A code indicating the diagnostic data collection preference selected by the user.
+
+
+### Office.iOS.Paywall.ShareSubscriptionScreen.ShareLinkTap
+ 
+This event is triggered when the user taps on “Share Family invite” when they're presented with the share family subscription view. The data is used to detect the clicks and number of successful subscription shares. 
+ 
+The following fields are collected:
+
+- **entryPoint** - Indicates the entryPoint through which ShareSubscriptionView is displayed when the user tapped on Share family invite. 
+
+
+### Office.iOS.Paywall.ShareSubscriptionScreen.Shown
+
+This event is triggered when users are presented with the share family subscription view. The data is used to log the number of users who came across this view. 
+ 
+The following fields are collected:
+ 
+- **entryPoint** - Indicates the entryPoint through which ShareSubscriptionView is displayed to the user.
 
 
 ### Office.Omex.Checkout.LoggingEvent
