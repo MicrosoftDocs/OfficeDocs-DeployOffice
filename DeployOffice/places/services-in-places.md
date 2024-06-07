@@ -39,8 +39,7 @@ set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1
 This example adds a link.
 
 ```powershell
-set-Places -Identity <id> -ResourceLinks @{name="Tech Support"; Value=
-"www.contoso.sharepoint.com/TechSupport"; type="URL”} 
+set-Places -Identity <id> -ResourceLinks @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
 Once these steps are complete, open the Places Explore page (using the link to the Explore page). The service you added appears with its associated building.
