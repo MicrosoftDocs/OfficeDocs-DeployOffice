@@ -17,7 +17,7 @@ description: "Learn about services admins can add that appear in the Explore tab
 
 In Microsoft Places apps admins can add services that appear in the Explore tab within Places (for more information, see [Introducing Microsoft Places: Turn your spaces into places](https://www.microsoft.com/en-us/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/)). These services can be added per building to provide employees with all the services that each building offers (for more information, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md)).
 
-For example, a building might have a cafeteria where employees can order food online. Admins have the ability of showing employees a link to another website that may show the cafeteria menu or an app that employees should use to order food online. The following is an example of how services (both links and apps) might appear.
+For example, a building might have a cafeteria where employees can order food online. Admins have the ability of showing employees a link to another website that may show the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
 
 :::image type="content" source="./media/services-in-places/services-in-places-with-links.png" alt-text="screenshot showing available services, including parking, tech support, dining, and facility request.":::
 
