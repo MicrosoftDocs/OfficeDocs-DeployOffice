@@ -18385,9 +18385,9 @@ The following fields are collected:
 
 
 ### Office.iOS.Paywall.ShareSubscriptionScreen.ShareLinkTap
- 
-This event is triggered when the user taps on “Share Family invite” when they're presented with the share family subscription view. The data is used to detect the clicks and number of successful subscription shares. 
- 
+
+This event is triggered when the user taps on “Share Family invite” when they're presented with the share family subscription view. The data is used to detect the clicks and number of successful subscription shares.
+
 The following fields are collected:
 
 - **entryPoint** - Indicates the entryPoint through which ShareSubscriptionView is displayed when the user tapped on Share family invite. 
@@ -18396,7 +18396,7 @@ The following fields are collected:
 ### Office.iOS.Paywall.ShareSubscriptionScreen.Shown
 
 This event is triggered when users are presented with the share family subscription view. The data is used to log the number of users who came across this view. 
- 
+
 The following fields are collected:
  
 - **entryPoint** - Indicates the entryPoint through which ShareSubscriptionView is displayed to the user.
