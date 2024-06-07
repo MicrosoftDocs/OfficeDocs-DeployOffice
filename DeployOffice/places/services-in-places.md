@@ -25,3 +25,20 @@ For example, a building might have a cafeteria where employees can order food on
 - Services in Places is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 - Create a building.
 
+## Adding services to a building
+
+First, you need to find the ID [link to how to get ID] for the building you want to add a service to. Next, you associate the service with this building using the ResourceLinks parameter. For more information, see -resourceLinks. [LINK to place directory doc -resourcelink section].
+
+This example associates a services app with a building.
+
+```powershell
+set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1e2-4725-9a25-793e4205739d"; type="MetaosApp”}
+```
+
+This example adds a link.
+
+```powershell
+set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="www.contoso.sharepoint.com/diningMenu"; type="urlLink”} 
+```
+
+Once this is complete, open the Places Explore page" (using the link to the explore page) and you’ll see the service you added under its associated building.
