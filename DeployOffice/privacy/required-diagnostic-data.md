@@ -10820,8 +10820,6 @@ The following fields are collected:
 
 #### Office.Word.Word.DocumentDirtyFlagChanged
 
-*[This event has been removed from current builds of Office, but might still appear in older builds.]*
-
 This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It's also used to calculated monthly active users/devices.
 
 The following fields are collected:
