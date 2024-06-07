@@ -20,7 +20,7 @@ You can improve workplace efficiency by comparing planned versus actual attendan
 
 Places Analytics also helps you track trends for key buildings, bookable rooms, and shared work spaces. To identify opportunities for optimization, you can get metrics at both the floor level and specific room and shared desk-space level. To understand user-behavior patterns, you can compare projected use with actual use across different space types. You can use this data to refine your hybrid work scheduling and change-management policies.
 
-## Prerequisites
+### Prerequisites
 
 > [!NOTE]
 > Places Analytics is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
@@ -62,10 +62,10 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:
 Once the buildings are onboarded to Places, they need to be enabled for Analytics. This lets you view building analytics and the associated rooms and Deskpool analytics in Space Analytics.
 By default, none of the onboarded buildings are enabled for Analytics. Follow the steps below to enable buildings in analytics.
 
-## Prerequisites
+### Prerequisites
 > [!NOTE]
-> - Setup steps for settings cmdlet: [Deployment guide for Places](https://learn.microsoft.com/en-us/deployoffice/places/deployment-guide-for-places)
-> - Setup steps for Get-PlaceV3 cmdlet: [Get-PlaceV3](https://learn.microsoft.com/en-us/deployoffice/places/powershell/get-placev3)
+> - Setup steps for settings cmdlet: [Deployment guide for Places](deployment-guide-for-places.md)
+> - Setup steps for Get-PlaceV3 cmdlet: [Get-PlaceV3](./powershell/get-placev3.md)
 
 ## Powershell scripts/Steps
 Admins can obtain BuildingIds for all onboarded buildings by running Get-PlaceV3 cmdlet
