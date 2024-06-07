@@ -28,7 +28,7 @@ For example, a building might have a cafeteria where employees can order food on
 
 ## Adding services to a building
 
-First, you need to find the ID for the building you want to add a service to (for more information, see link to how to get ID). Next, you associate the service with this building using the ResourceLinks parameter (for more information, see -resourceLinks, LINK to place directory doc -resourcelink section).
+First, you need to find the ID for the building you want to add a service to (for more information, see LINK about to how to get the ID). Next, you associate the service with this building using the ResourceLinks parameter (for more information, see -resourceLinks, LINK to place directory doc, -resourcelink section).
 
 This example associates a services app with a building.
 
