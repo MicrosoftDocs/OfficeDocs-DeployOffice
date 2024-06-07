@@ -28,7 +28,7 @@ For example, a building might have a cafeteria where employees can order food on
 
 ## Adding services to a building
 
-First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with your building using the -ResourceLinks parameter (for more information about the -ResourceLinks parameter, see [New-Place](/deployoffice/places/powershell/new-place#-resourcelinks)).
+First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with your building using the &#x2011;ResourceLinks parameter (for more information about the -ResourceLinks parameter, see [New-Place](/deployoffice/places/powershell/new-place#-resourcelinks)).
 
 This example associates a services app with a building.
 
