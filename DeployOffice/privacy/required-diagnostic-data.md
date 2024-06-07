@@ -1968,6 +1968,10 @@ The following fields are collected across iOS and Android:
 
 - **action_type** - The type of action that was performed for search. This identifies if a search has been started, in occurring, or ended and what actions were happening during the search, for example, was the mic used. This is instrumental in ensuring accurate and helpful searches. *[This field has been removed from current builds of Office, but might still appear in older builds.]* 
 
+- **calendar_paging_gesture_count** - Tracks how many search paging gestures were performed in the Events tab within the combined search session.
+
+- **calendar_paging_timeout_count** - Tracks how many paging search requests were blocked due to Hx session timeout in the Events tab within the combined search session.
+
 - **conversation_id** - Unique ID for every search session (for example, every time the user enters the search box)
 
 - **entrance_type** - This determines how the user started the search query, from the search tab, zero query, search heading, or search result. 
@@ -4784,8 +4788,25 @@ The following fields are collected:
 
 - **Data_TimeSplitMeasurements** - A string of time split measurements from Excel code involved in sending and receiving the Python script.
 
+- **Python_Jupyter_EnterOfficepyTimepointMilliseconds** - Integer indicating the time point to call officepy method to handle execute python script.
+
+- **Python_Jupyter_EnvironmentCreationBeginTimepointMilliseconds** - Integer indicating the time point to begin creating jupyter environment.
+
+- **Python_Jupyter_InitPyBeginTimepointMilliseconds** - Integer indicating the time point to start init.py execution.
+
+- **Python_Jupyter_InitPyEndTimepointMilliseconds** - Integer indicating the time point to finish init.py execution.
+
+- **Python_Jupyter_RuntimeCreationBeginTimepointMilliseconds** - Integer indicating the time point to begin creating jupyter runtime.
+
+- **Python_Jupyter_RuntimeCreationEndTimepointMilliseconds** - Integer indicating the time point to finish runtime creation.
+
 - **Python_Jupyter_RuntimeWaitingMilliseconds** - Time it took to run before the PY formula (irrespective of a PowerQuery data upload or init.py code enforcement)
 
+- **Python_Jupyter_ScriptCommitTimepointMilliseconds** - Integer indicating the time point to commit python script.
+
+- **Python_Request_IsThrottled** - Boolean indicating whether the code execution service session is throttled or not.
+
+- **Python_Request_Zone** - Integer indicating the security zone in sever side.
 
 #### Office.Excel.Python.RichedPythonTelemetry
 
@@ -4902,15 +4923,17 @@ The following fields are collected:
 
 #### Office.Extensibility.DiscoverTryBuy.Py.PremiumHubExperience
 
-This event is triggered when a launches Premium Hub dialog. This data is used to give insight into the premium hub experience and how often it's successful or dismissed.
+This event is triggered when a launches Premium Hub dialog or user interact with it. This data is used to gain insight into the premium hub errors and how often it is successful or dismissed.
 
 The following fields are collected:
 
-- **Data_Action** - An enum value with default as "Dialog"
+- **Data_Action** - An enum value indicating UI behavior or user interaction.
 
 - **Data_ChildAction** - An enum value indicating user choice on a dialog such as user selecting "Try Preview", "Show me how it works".
 
 - **Data_DetachedDuration** - The time user interacts with UI.
+
+- **Data_ErrorCode** - A value indicating which error encountered.
 
 - **Data_PythonCenterLaunchSource** - An enum value indicating the source of Python Center launch such as “=PY(“ , ctrl+shift+alt+P.
 
@@ -4956,6 +4979,8 @@ The following fields are collected:
 When using Python in Excel, the user may receive a notification based on their license status or usage. The notification should be displayed as a business bar. When such notification is displayed, this event will be triggered. This event is used to ensure that the Python in Excel licensing notification is performing as expected.
 
 The following fields are collected:
+
+- **ClientSettings** -  Specific client setting of the feature that is configured by the service.
  
 - **EventType** - EventType is a identifier of notification displayed. 
 
@@ -8726,6 +8751,8 @@ The following fields are collected:
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
 
+- **Data_TimeTakenInMS** - time taken to capture a new note in millisecond.
+
 - **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
@@ -9273,6 +9300,8 @@ The following fields are collected:
 - **Data_ShortEventName** - A short name of an event. Allows us to identify the event that was being sent from the client. 
 
 - **Data_StickyNotesSDKVersion** - Version number indicating the version of Sticky Notes the user is using. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it. 
+
+- **Data_TimeTakenInMS** - Time taken to show related notes after a change in context in millisecond.
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
@@ -10016,6 +10045,114 @@ The following fields are collected:
 
 - **Data_locale** - Log the locale that was passed with initial request 
 
+#### Office.Word.Document.DirtyFlagChanged
+
+This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It's also used to calculated monthly active users/devices.
+
+The following fields are collected:
+
+- **Data_CollectionTime**- Timestamp of the event.
+
+- **Data_DirtyTag** - The code identifier the makes the document edit.
+
+- **Data_Doc_AccessMode** - Document is read only/editable.
+
+- **Data_Doc_AsyncOpenKind** – Indicates whether a cached version of the cloud document was opened and which asynchronous refresh logic was used.
+
+- **Data_Doc_CreationTime** - Document creation timestamp.
+
+- **Data_Doc_EdpState** - Electronic Data Protection setting for the document.
+
+- **Data_Doc_Ext** - Document extension (docx/xlsb/pptx, etc.)
+
+- **Data_Doc_FileFormat** - File format protocol version.
+
+- **Data_Doc_FolderUrlHash** - One-way hash of folder URL.
+
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name.
+
+- **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name.
+
+- **Data_Doc_IdentityTelemetryId** - A one-way hash of the user identity used to perform the open.
+
+- **Data_Doc_InitializationScenario** - Records how the document was opened.
+
+- **Data_Doc_IOFlags** - Reports on the cached flags used to set open request options.
+
+- **Data_Doc_IrmRights** - Actions permitted by the Electronic Data Protection policy that has been applied to the document/user.
+
+- **Data_Doc_IsCloudCollabEnabled** - Flag indicating whether the cloud collaboration is enabled for the file.
+
+- **Data_Doc_IsOcsSupported** - Flag indicating that the document is supported in the collaboration service.
+
+- **Data_Doc_IsOpeningOfflineCopy** - Flag indicating that the offline copy of a document was opened.
+
+- **Data_Doc_IsPrefetched** -   Flag indicating whether the file was prefetched before open operation happened.
+
+- **Data_Doc_IsSyncBacked** - Flag indicating that an auto synced copy of the document exists on the computer.
+
+- **Data_Doc_KnownFolderMoveStatus** - Represents the signed-in user's known folder migration status in a given session.
+
+- **Data_Doc_LastModifiedTime** - Timestamp when document was last modified.
+
+- **Data_Doc_LicenseCategory** - Indicates the license category of the user (EnhancedRFM, SubscriptionConsumer, Freemium, etc.).
+
+- **Data_Doc_Location** - Indicates which service provided the document (OneDrive, File Server, SharePoint).
+
+- **Data_Doc_NumberCoAuthors** - Count of the number of fellow users in a collaborative editing session.
+
+- **Data_Doc_ReadOnlyReasons** - Reasons why the document was opened read only.
+
+- **Data_Doc_ResourceIdHash** - An anonymized document identifier used to diagnose problems.
+
+- **Data_Doc_RtcType** - Indicates how the real-time channel (RTC) was set up for current file (Disabled, unsupported, on demand, always on, etc.).
+
+- **Data_Doc_ServerDocId** - An immutable anonymized document identifier used to diagnose problems.
+
+- **Data_Doc_ServerProtocol** - The protocol version used to communicate with the service.
+
+- **Data_Doc_ServerStore** - Predefined set of values for which schema is used to store the file on the service.
+
+- **Data_Doc_ServerType** - The type of the server offering the service (SharePoint, OneDrive, WOPI etc.).
+
+- **Data_Doc_ServerVersion** - The server version offering the service.
+
+- **Data_Doc_SessionId** - The server version offering the service.
+
+- **Data_Doc_SizeInBytes** - Indicator of document size.
+
+- **Data_Doc_StorageProviderId** -  Identifier of the document storage provider, like "Computer".
+
+- **Data_Doc_StorageSchema** - Predefined set of values for which schema is used to store the file cached on disk.
+
+- **Data_Doc_StreamAvailability** - Indicator if document stream is available/disabled.
+
+- **Data_Doc_TenantId** - GUID that identifies the SharePoint tenant where the document is located.
+
+- **Data_Doc_UrlHash** - One-way hash to create a naïve document identifier.
+
+- **Data_DocumentLocation** - type of the document location.
+
+- **Data_DocumentLocationDetails** - Sub-type of the document location.
+
+- **Data_FAlwaysSaveEnabled** - Indicates whether always-save was enabled.
+
+- **Data_FirstEditTime** - Timestamp of first edit.
+
+- **Data_IntervalMin** - Interval to send this telemetry event.
+
+- **Data_IntervalThresholdMin** - Interval threshold to allow sending this telemetry event.
+
+- **Data_NumberCoAuthors** - Number of coauthors editing the document during the session.
+
+- **Data_NumberOfTimesDocumentDirtied** - Number of edits made to the document.
+
+- **Data_pdod** - The document identifier during this process session.
+
+- **Data_UrlHash** - Hash of the document path.
+
+- **Data_ViewKind** - Type of Word view.
+
 
 #### Office.Word.FileNew.CreateNewFile
 
@@ -10675,11 +10812,15 @@ The following fields are collected:
 
 - **Data_VerboseMeasurements** - Detailed performance measurement data for the save operation
 
+- **FinalDocSize** - The size of the document which is going to be saved finally.
+
 - **fMergeSucceeded** - Indicates if changes made by other users are merged to the document as part of the saving process.
 
 - **IOTransactionId** - unique identifier for various phases of save operation like loading and merging of document.
 
 #### Office.Word.Word.DocumentDirtyFlagChanged
+
+*[This event has been removed from current builds of Office, but might still appear in older builds.]*
 
 This event indicates Office Word edits a document that changes the document internal state into "dirty". It allows Microsoft to evaluate the feature health of edit-document. The event is a heartbeat of user edits. It's also used to calculated monthly active users/devices.
 
@@ -15856,6 +15997,10 @@ place. We collect this data to ensure good performance for all file opens on the
 
 The following fields are collected:
 
+- **BootRearchFeatureGateFlag** - Number (of data type Long) representing the state of Feature Gates that are enabled in a given session.
+
+- **CorrelationId** - The unique id for each file open operation.
+
 - **Data_ActivityTransitionEndTimeSA** - Time taken until the end of ActivityTransition boot substage since activation.
 
 - **Data_ActivityTransitionStartTimeSA** - Time taken until the start of ActivityTransition boot substage since activation.
@@ -16079,6 +16224,8 @@ The following fields are collected:
 
 - **Doc_RenderDurationms** - Time to render a pdf file
 
+- **Result** - The result of file open. It can be either success, failure and cancelled. 
+
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on iOS)
 
 This event is collected for the Office app for iOS. It records when a file open operation takes
@@ -16250,6 +16397,8 @@ The following fields are collected:
 - **DurationPreloadingActivation** - The duration in microseconds from when the user activates a preloaded app to when the boot activity completes.
 
 - **DurationPreloadingWaitLoop** - The duration in microseconds that the app sits waiting for activation by the user after preloading.
+
+- **DurationSecondaryHandOff** - The time taken by the secondary instance of the app to complete the handoff to the preloaded primary instance.
 
 - **DurationUntilMso20Initialization** - The duration in microseconds it took between when the Office process was initialized and mso20win32client.dll was loaded.
 
@@ -16509,12 +16658,13 @@ The following fields are collected:
 
 Triggered when both of the below conditions are true:
 - First sync is done
-- OneNote Sticky Notes boot has completed. OneNote Sticky Notes boot is said to be done when the one of the below three conditions are true:
+- OneNote Sticky Notes boot has completed. OneNote Sticky Notes boot is said to be done when the one of the below four conditions is true:
    - Initial sync has completed
    - Initial sync has failed
    - Something is being displayed in notes list (either notes or fishbowl)
+   - Something is being displayed in any note editor window
 
-Performance markers for memory (machine action) and required to compute the performance of Memory. 
+Performance markers for OneNote Sticky Notes (machine action) are required to compute the performance of OneNote Sticky Notes.
 
 The following fields are collected:
 
@@ -16550,7 +16700,7 @@ The following fields are collected:
 
 - **Data_HostSessionId** - Uniquely identifies the host app session for a sub-app 
 
-- **Data_MemoryLoadPerfMetrics** - Perf markers for memory
+- **Data_MemoryLoadPerfMetrics** - erf markers for OneNote Sticky Notes.
 
 - **Data_Namespace** - A namespace of the event. Allows us to group the event into groups.
 
