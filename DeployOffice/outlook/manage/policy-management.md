@@ -15,66 +15,100 @@ ms.date: 11/09/2023
 ---
 
 # Policy Management
-Admins can configure available features for mailbox accounts in their organization using Exchange PowerShell cmdlets and Cloud Policy. These features affect the configuration of any app where the organization mailbox is added. You can manage most features with Exchange PowerShell cmdlets. However, for newer Microsoft 365 features like Loop and in-product Feedback, as well as settings for Diagnostic Data and Connected Experiences, you should use Cloud Policy.
+Admins can provide Windows users in your organization with a standard set of policies for New Outlook that are essential for maintaining security, productivity, and data integrity within an organization by using Exchange PowerShell cmdlets and Cloud Policy. 
 
-## Accounts and policies
-App-wide settings, including Theme, Text Size and Spacing, and Diagnostic Data and Connected Experiences are associated with the first account added in new Outlook. This account is called the primary account. 
+Most policies configure the features that are available for the mailbox accounts in their organization and help protect company data and customize the user experience. These policies affect the configuration of any Outlook app where the organization mailbox is present. 
 
+You can manage most features with Exchange PowerShell cmdlets. However, for features that span multiple Microsoft 365 experiences, like Loop and in-product Feedback, as well as settings for Diagnostic Data and Connected Experiences, you should use Cloud Policy. 
+
+> [!IMPORTANT]
+> Several App-wide settings, including Theme, Text Size and Spacing, and Diagnostic Data and Connected Experiences are associated with the first account added in new Outlook. This account is considered as the primary account. 
+>
+> While policies can be applied to any organization account in new Outlook, management of app-wide settings like Theme, Diagnostic Data, and Connected Experiences requires the designated account to be set as primary. 
+
+> [!IMPORTANT]
+> Most features like Focused Inbox and Loop are specific to each account. If you disable these features, they turn off only for that account. However, in new Outlook, other features are disabled at the organization level, for example, if any account has in-product feedback disabled, the feature becomes unavailable for all accounts. 
+
+> [!IMPORTANT]
+> Most of the mailbox policies are applicable for both OWA and Monarch, so you can’t have it enabled in one client but not the other.  
+
+The following list shows the preferences that are covered in this article: 
+add list of contents
+
+## Allow only corporate mailboxes to be added 
+
+There are two Mailbox Policies that should be used to allow only corporate mailboxes to be added to the new Outlook: 
+
+With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains)
+
+Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - personalaccountsenabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled) 
+
+## Set Primary Account 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
 
 :::image type="content" source="../manage/media/policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="../manage/media/policy-management/policy-email-accounts-settings-lb.png":::
 
-We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the OwaMailboxPolicy cmdlet that allows organizations to set the organization account as primary. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
+We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies will be applied. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
-> [!IMPORTANT]
-> While policies can be applied to any organization account in new Outlook, management of app-wide settings like Theme, Diagnostic Data, and Connected Experiences requires the designated account to be set as primary.
+## Disable automatic updating of weather location
+The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - weatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherEnabled)
 
-Features like Focused Inbox and Loop are specific to each account. If you disable these features, they turn off only for that account. However, in new Outlook, if any account has in-product feedback disabled, the feature becomes unavailable for all accounts.
+## Disable Focused Inbox
+There are two different policies - one in `set-mailboxmessageconfiguration : IsFocusedInboxEnabled` and another one in `set-organizationconfig: FocusedInboxOn`.
 
-## Exchange policies
-Policy management for mailboxes in the new Outlook for Windows follows the same set of Exchange PowerShell cmdlets as Outlook on the Web. To apply an Exchange cmdlet to configure an organization mailbox, you need to follow these steps documented here: [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#examples).
+## Configure Junk settings
+### Junk Mail Configuration
+Junk Mail Configuration is another cmdlet on the organizational-level management that allows companies to foster an agile and adaptable IT infrastructure that is well-equipped to meet the diverse needs of a modern workforce.<br>
+Admins should use the Microsoft Defender portal to [configure spam filter policies](/defender-office-365/anti-spam-policies-configure) adjusting bulk mail thresholds and configure safe senders and blocked lists using the junk email settings on Exchange Online mailboxes.<br> 
+For more information, see [Set-MailboxJunkEmailConfiguration](/defender-office-365/configure-junk-email-settings-on-exo-mailboxes).
+ 
+## Disable signatures
+SignaturesEnabled
 
-OwaMailboxPolicy is used to manage various features and capabilities, including:
-- Allowing Personal Accounts
-  * The *PersonalAccountsEnabled* parameter specifies whether to allow users to add their personal accounts (for example, Outlook.com, Gmail, or Yahoo!) in the new Outlook for Windows. [Check the syntax here.](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled)
-- Allowing certain file types (attachments)
-  * The *AllowedFileTypes* parameter specifies the attachment file types (file extensions) that can be saved locally or viewed from the new Outlook for Windows. [Check the default values here.](/powershell/module/exchange/set-owamailboxpolicy#-AllowedFileTypes)
-- Google Drive Attachments Enabled
-   * The *AdditionalStorageProvidersAvailable* parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in the new Outlook for Windows. [Check the default values here.](/powershell/module/exchange/set-owamailboxpolicy#-AdditionalStorageProvidersAvailable)
-- Interesting Calendars
-  * The *InterestingCalendarsEnabled* parameter specifies whether interesting calendars are available in Outlook on the web. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-InterestingCalendarsEnabled) 
-- Location Suggestions
-  *	The *PlacesEnabled* parameter specifies whether to enable or disable Places in the new Outlook for Windows. Places lets users search, share, and map location details by using Bing.
-- Weather in Calendar
-  * The *WeatherEnabled* parameter specifies whether to enable or disable weather information in the calendar in new Outlook for Windows. [Check the parameters here.](/powershell/module/exchange/set-owamailboxpolicy#-WeatherEnabled)
-- Offline Configuration
-  * The *OfflineEnabledWin* parameter specifies whether to allow the new Outlook for Windows to be used offline. [Check the syntax here.](/powershell/module/exchange/set-owamailboxpolicy#-OfflineEnabledWin)
+## Disable archive messages
+
+## Specify calendar first day of week
+### Calendar Management
+`Set-MailboxCalendarConfiguration` is another cmdlet for managing various features and capabilities for Calendar, including:
+- Working Hours, Work Week, Shorten appointments and meetings, etc. <br>
+For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration) 
+
+## Automatically configure account based on Active Directory Primary SMTP address
+Add information about new Intune Policy
+
+## Specify what attachments can be downloaded
+Allowing certain file types (attachments)	
+`AllowedFileTypes` and `BlockedFileTypes`
+
+## Disable Third part online attachments
+	`AdditionalStorageProvidersAvailable`
+
+## Disable Preview Links
+## Disable Offline
+(only applicable for New Outlook for Windows)	`OfflineEnabledWin	$true`
+
+## Enable Location Suggestions
+Location Suggestions	`PlacesEnabled	$true`
+## Enable Themes and Dark Mode
+## Disable Read Receipt Responses
+##  Disable Suggested Replies
+`OrganizationConfig` is a cmdlet that supports a seamless user experience, as employees can transition effortlessly between devices and platforms without encountering discrepancies in functionality or accessibility for the following features:
+`Set-OrganizationConfig – Suggested Replies`.
 
 
-OrganizationConfig is another cmdlet for managing various features and capabilities, including:
-- Focused Inbox
-- MailTips
-- Suggested Replies
-
-For more information, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig).
-
-## Cloud policies
-Some options that are relevant across other Microsoft 365 applications could be controlled via Cloud Policy in the [Microsoft 365 Apps admin center](https://config.office.com).
-For more information, see [Overview of Cloud Policy service for Microsoft 365](/deployoffice/admincenter/overview-cloud-policy).
-
-## Microsoft Loop
+## Disable Microsoft Loop
 [Loop components in Outlook](https://support.microsoft.com/office/use-loop-components-in-outlook-9b47c279-011d-4042-bd7f-8bbfca0cb136) are portable, editable pieces of content that stay in sync across all the places they’re shared.
 
 For more information, see [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration).
 
-## Diagnostic Data and Connected Experiences
+## Disable Diagnostic Data and Connected Experiences
 Organizations can control whether connected experiences or diagnostic data can be sent from the new Outlook for Windows. This capability is part of our commitment to giving you the information and controls over your privacy.
 
 :::image type="content" source="../manage/media/policy-management/policy-privacy-settings.png" alt-text="Screenshot that shows how to turn on optional connected experiences in privacy settings." lightbox="../manage/media/policy-management/policy-privacy-settings-lb.png":::
 
 For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
 
-## In-product feedback
+## Disable In-product feedback
 New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-user-control#in-product-feedback) that can be managed as part of Microsoft 365 wide settings for Feedback in Cloud Policy:
 
 :::image type="content" source="../manage/media/policy-management/policy-feeback.png" alt-text="Screenshot that shows how to provide in-product feedback through Feedback to Microsoft." lightbox="../manage/media/policy-management/policy-feeback-lb.png":::
@@ -88,4 +122,4 @@ While this policy hides the toggle within the application, it doesn’t block th
 
 Users can enable new Outlook via the toggle from the Mail and Calendar application that ship with Windows. To block new Outlook from these applications, organizations can block users from downloading and/or installing new Outlook using Intune or other management solutions.
 
-Organizations can also block the user of Mail and Calendar with organization accounts via the “UniversalOutlookEnabled” parameter in CASMailbox: [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
+Organizations can also block the user of Mail and Calendar with organization accounts via the `UniversalOutlookEnabled` parameter in CASMailbox: [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
