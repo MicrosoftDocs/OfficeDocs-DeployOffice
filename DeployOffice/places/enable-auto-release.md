@@ -26,7 +26,9 @@ Auto release is a feature that is useful for conference rooms that are frequentl
 Auto Release is a feature that can be enabled for rooms that are often unused or are frequently booked and abandoned. With Auto Release, you can ensure the space is used by having meeting attendees check in through one of two ways:
 
 1. An attendee can check in through Teams panel. Learn more about how the feature works with Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
+:::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
 1. An attendee checks in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
+:::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Information about the current meeting appears on the screen with a Join button.":::
 
 For Public Preview Customers only (coming in July 2024)
 
@@ -51,7 +53,7 @@ For Public Preview Customers only (coming in July 2024)
 
 - Even if your room doesn't have a Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device license, you have access to use Auto Release if you're part of the Microsoft Places preview. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 - If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel or paired with a Microsoft Teams Rooms.
-- You must have [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled, as our service is using the Outlook on the web framework to check in users.
+- You must have [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled, as our service uses the Outlook on the web framework to check in users.
 - > [!NOTE]
   > Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
 
@@ -59,7 +61,7 @@ For Public Preview Customers only (coming in July 2024)
 
 Auto Release can be enabled in three different ways:
 
-- PowerShell cmdlet
+- Exchange PowerShell
 - Microsoft Teams admin center
 - Teams panel device
 
@@ -69,9 +71,9 @@ Auto Release can be enabled in three different ways:
 > - When enabling or disabling Auto Release, we recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 > - If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature does not release the room.
 
-### PowerShell cmdlet
+### Exchange PowerShell
 
-Enable Auto Release for rooms by running the `[Set-CalendarProcessing]`(/powershell/module/exchange/set-calendarprocessing?view=exchange-ps) PowerShell command.
+Enable Auto Release for rooms by running the `[Set-CalendarProcessing]`(/powershell/module/exchange/set-calendarprocessing?view=exchange-ps) Exchange PowerShell command.
 
 The following example sets the Auto Release time to 10 minutes for the conference room labeled "Lobby Conference Room." If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
 
@@ -108,8 +110,8 @@ Find answers to frequently asked questions about the Auto Release feature.
 **Which clouds or deployments is this feature supported?**
 Auto Release is supported in Government Community Cloud (GCC).
 
-**Why does the tenant need to have Outlook Web app enabled?**
-The check-in experience is built on top of the Outlook Web app (OWA) framework and requires tenants to have OWA enabled to process the check-in signal.  
+**Why does the tenant need to have Outlook on the web enabled?**
+The check-in experience is built on top of the Outlook on the web framework and requires tenants to have the Outlook on the web enabled to process the check-in signal.  
 
 **If there are meetings within 24-48 hours and Auto Release is enabled, what happens to them?  Are they all declined?  Is this an issue only when enabling via this step or via any of the 3 steps?**
 If there are meetings within 24-48 hours from when the feature was enabled, they aren't released or impacted.
