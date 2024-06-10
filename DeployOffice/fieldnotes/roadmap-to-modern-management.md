@@ -79,7 +79,7 @@ If you use [cloud update](../admincenter/cloud-update.md) to manage updates dire
 
 **For users on-premises**, you should consider these options:
 
-- [Enable Delivery Optimization](../delivery-optimization.md) to allow devices to share content with each other through P2P mechanisms.
+- [Enable Delivery Optimization](../updates/delivery-optimization.md) to allow devices to share content with each other through P2P mechanisms.
 - If you have Configuration Manager deployed, enable [Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) on your distribution points. Use client settings to [enable devices](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#enable-connected-cache) to use Microsoft Connected Cache servers for content download.
 
 **For users working from home or remotely by VPN**, you should consider these options:
