@@ -39,9 +39,9 @@ add list of contents
 
 There are two Mailbox Policies that should be used to allow only corporate mailboxes to be added to the new Outlook: 
 
-With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains)
+With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
 
-Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - personalaccountsenabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled) 
+Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - personalaccountsenabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
 
 ## Set Primary Account 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
@@ -51,7 +51,7 @@ Users can change the primary account in Settings > Accounts > Email accounts > M
 We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies will be applied. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
 ## Disable automatic updating of weather location
-The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - weatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherEnabled)
+The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - weatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled).
 
 ## Disable Focused Inbox
 There are two different policies - one in `set-mailboxmessageconfiguration : IsFocusedInboxEnabled` and another one in `set-organizationconfig: FocusedInboxOn`.
