@@ -73,7 +73,7 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
     - Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
 
-    - Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http).
+    - Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http&preserve-view=true to the URL).
 
 > [!NOTE]
 >
