@@ -81,7 +81,8 @@ Allowing certain file types (attachments)
 `AllowedFileTypes` and `BlockedFileTypes`
 
 ## Disable Third part online attachments
-	`AdditionalStorageProvidersAvailable`
+	
+```AdditionalStorageProvidersAvailable```
 
 ## Disable Preview Links
 ## Disable Offline
