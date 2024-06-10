@@ -56,7 +56,6 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:
 > [!NOTE]
 > These settings might take up to one day for a security group to be fully setup and replicated to the Microsoft Places environment.
 
-
 ## Enable buildings for Places Analytics
 
 Once the buildings are onboarded to Places, they need to be enabled for Analytics. This lets you view building analytics and the associated rooms and Deskpool analytics in Space Analytics.
@@ -97,4 +96,3 @@ To view the settings, Get-PlacesSettings can be used. The time to reflect is up 
 > [!NOTE]
 > - It can take ~12 hrs for the setting to get reflected in UI.
 > - Suggested limit for number of buildings in settings is 200.
-

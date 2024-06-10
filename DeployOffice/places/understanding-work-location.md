@@ -28,7 +28,7 @@ Many companies have multiple buildings, on-site work options, and scheduling cho
 
 With expanded presence, a new Microsoft Places feature that appears across Microsoft 365 apps, you can see coworkers who are nearby. This feature is available and visible across different Microsoft 365 apps, and provides heightened awareness for employees. By keeping your work location presence updated, employees make it easier to meet at desks or work neighborhoods for impromptu in-person chats, meetings, or even social gatherings such as lunch together.
 
-:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work particpants.":::
+:::image type="content" source="./media/understanding-work-location/understanding-work-location-participants.png" alt-text="Screen shot of work participants.":::
 
 ## Work location settings
 
