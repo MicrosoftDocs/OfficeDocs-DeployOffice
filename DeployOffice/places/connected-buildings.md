@@ -51,26 +51,26 @@ Use the following schema when uploading badge information.
 
 #### Upload the badge dataset
 
-1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+1. Open **PowerShell 7** (not as an administrator).
+2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. Import the Places module by running the following Windows PowerShell cmdlet.
+3. Import the Places module by running the following **Windows PowerShell** cmdlet.
 
 ```powershell
 Import-Module -Name MicrosoftPlaces
 ```
 
-4. Connect to the Places module by running the following Places PowerShell cmdlet.
+4. Connect to the Places module by running the following **Places PowerShell** cmdlet.
 
 ```powershell
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the badge dataset from the location on your device (using the folder and path) by running the following Places PowerShell cmdlet.
+5. Upload the badge dataset from the location on your device (using the folder and path) by running the following **Places PowerShell** cmdlet.
 
 ```powershell
 Push-Dataset -Type BadgeSwipe -Path <folder path>
@@ -96,26 +96,26 @@ Use the following schema when uploading Wi-Fi information.
 
 #### Upload the Wi-Fi dataset
 
-1. Open PowerShell 7 (not as an administrator).
-2. Install Microsoft Places by running the following Windows PowerShell cmdlet. For more information on Places cmdlets, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+1. Open **PowerShell 7** (not as an administrator).
+2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. For more information on Places cmdlets, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
 ```
 
-3. Import the Places module by running the following Windows PowerShell cmdlet.
+3. Import the Places module by running the following **Windows PowerShell** cmdlet.
 
 ```powershell
 Import-Module -Name MicrosoftPlaces
 ```
 
-4. Connect to the Places module by running the following Places PowerShell cmdlet.
+4. Connect to the Places module by running the following **Places PowerShell** cmdlet.
 
 ```powershell
 Connect-MicrosoftPlaces
 ```
 
-5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device by running the following Places PowerShell cmdlet.
+5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device by running the following **Places PowerShell** cmdlet.
 
 ```powershell
 Push-Dataset -Type WifiSignal -Path <folder path>
@@ -139,13 +139,13 @@ The following is a high-level diagram about how you can onboard devices and sens
 
 There are three ways you can upload device information to Places.
 
-- Option 1 (preferred): create scripts on top of Places PowerShell cmdlets. The scripts help to manage (onboard, remove, update) devices in bulk using a CSV file as an input and iterating using Places PowerShell cmdlets.
-- Option 2: if you want to individually manage devices, you can use the Places PowerShell cmdlets directly.
+- Option 1 (preferred): create scripts on top of **Places PowerShell** cmdlets. The scripts help to manage (onboard, remove, update) devices in bulk using a CSV file as an input and iterating using **Places PowerShell** cmdlets.
+- Option 2: if you want to individually manage devices, you can use the **Places PowerShell** cmdlets directly.
 - Option 3: using APIs. If you want to modify the process or automate and integrate with existing systems, you can use the APIs in Microsoft Graph.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Microsoft Places. First, install PowerShell 7 by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
    
 ```powershell
@@ -154,7 +154,7 @@ Import-Module -Name ExchangeOnlineManagement
 Connect-ExchangeOnline
 ```
 
-2. Open PowerShell as an administrator and run the following ExchangeOnline PowerShell command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
+2. Open PowerShell as an administrator and run the following **ExchangeOnline PowerShell** command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
 
 ```powershell
 Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
@@ -165,7 +165,7 @@ Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers
    - Name: PlacesAdmin
    - Assigned Role: TenantPlacesManagement
 
-4. To get the PlaceId of buildings, open a new PowerShell window and run the following Windows PowerShell cmdlet:
+4. To get the PlaceId of buildings, open a new PowerShell window and run the following **Windows PowerShell** cmdlet:
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
@@ -337,7 +337,7 @@ For customers choosing these integration types, you must complete the tenant-wid
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
-   If you're using the Microsoft Graph PowerShell, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
+   If you're using the **Microsoft Graph PowerShell**, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-places-integration-permissions3.png" alt-text="Screenshot of the Microsoft Places Integration permissions page.":::
 
