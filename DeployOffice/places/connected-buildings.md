@@ -18,12 +18,7 @@ description: "Learn how to use existing sensor data to enhance Microsoft Places 
 You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people count, badge, and Wi-Fi data types.
 
 ## Prerequisites
-
-> [!NOTE]
-> Connected Workplace is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
-
-You must do the following before using the Connected Workplace:
-
+- Connected Workplace is an advanced feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 - Create buildings and floors.
 - Enable Places Analytics.
 
@@ -50,7 +45,7 @@ Use the following schema when uploading badge information.
 |DeviceId     |String   |Optional. The device ID indicates which device generated the signal. |
 |TimestampUtc |Timestamp|The timestamp of the badge signal, which indicates when the event occurred. |
 |LocationId   |String   |Optional. If LocationName is provided. The location ID where the badge is recorded. |
-|LocationNam  |String   |Optional if LocationId is provided. The location name where the badge signal is recorded. |
+|LocationName  |String   |Optional if LocationId is provided. The location name where the badge signal is recorded. |
 |LocationType |Enum     |Optional. The location type of the badge signal. BUILDING is currently supported. |
 |Event        |Enum     |The action of the badge, which depends on the sensor type. The value can be EntryGranted, EntryDenied, or ExitGranted, etc. |
 
@@ -91,7 +86,7 @@ Use the following schema when uploading Wi-Fi information.
 
 |Column  |Type  |Description |
 |---------|---------|---------|
-|**MacAddress**  |String   |The user’s Mac address. |
+|**MacAddress**  |String   |The user’s Mac address (not used). |
 |**UserEmail**    |String   |The user ID (an email address, or Mac address if an email address isn't available) connected to Wi-Fi. |
 |**APMacAddress**     |String   |The access point indicates which device collected the signal. |
 |**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
