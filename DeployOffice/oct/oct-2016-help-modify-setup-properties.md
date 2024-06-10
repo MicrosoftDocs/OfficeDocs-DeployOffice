@@ -3,13 +3,12 @@ title: "Office Customization Tool (OCT) 2016 Help Modify Setup properties"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
-ms.date: 03/01/2023
-audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Tier2
+ms.collection: must-keep
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 06/07/2024
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Modify Setup properties
@@ -18,10 +17,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 **Summary**: Sets the value of properties that are applied during Office installation.
   
-You can customize Setup property values only when Office is first installed on a user's computer; values set in a Setup customization file do not take effect if you apply the file to an existing installation. 
+You can customize Setup property values only when Office is first installed on a user's computer; values set in a Setup customization file don't take effect if you apply the file to an existing installation.
   
 To add a property value, choose **Add**. To modify a property that you have added, select the property, and then choose **Modify**. To remove a property that you have added, select the property, and then choose **Remove**.
   
-## Related topics
-[Office Customization Tool (OCT) 2016 Help: Add/Modify Property Value dialog box](oct-2016-help-add-modify-property-value-dialog-box.md)
+## Related articles
 
+- [Office Customization Tool (OCT) 2016 Help: Add/Modify Property Value dialog box](oct-2016-help-add-modify-property-value-dialog-box.md)

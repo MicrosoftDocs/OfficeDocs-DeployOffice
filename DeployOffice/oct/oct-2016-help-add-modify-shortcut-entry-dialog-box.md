@@ -3,25 +3,24 @@ title: "Office Customization Tool (OCT) 2016 Help Add/Modify Shortcut Entry dial
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
-ms.date: 03/01/2023
-audience: ITPro
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
-ms.collection: Tier2
+ms.collection: must-keep
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 06/07/2024
 ---
 
 # Office Customization Tool (OCT) 2016 Help: Add/Modify Shortcut Entry dialog box
 
 **Applies to:** *Office Professional Plus 2016, Office Standard 2016*
 
-In the **Add/Modify Shortcut Entry** dialog box, type the following information for the shortcut that you are creating or modifying, and then choose **OK**:
+In the **Add/Modify Shortcut Entry** dialog box, type the following information for the shortcut that you're creating or modifying, and then choose **OK**:
   
-- **Target** - Specify the application associated with the shortcut by selecting a predefined application keyword or by typing the name and path of the file to which the shortcut will point. If you select an application keyword, the OCT automatically enters information in the remaining boxes. The names in the list correspond to features that you select on the **Set feature installation states** page of the OCT, plus any custom files that you add to the installation on the **Add files** page. If you type a name and path, and the name or path contains a space, you must enclose the entire string in double quotation marks (""). You can add command-line options for the application by using the **Arguments** field. 
-    
+- **Target** - Specify the application associated with the shortcut by selecting a predefined application keyword or by typing the name and path of the file to which the shortcut will point. If you select an application keyword, the OCT automatically enters information in the remaining boxes. The names in the list correspond to features that you select on the **Set feature installation states** page of the OCT, plus any custom files that you add to the installation on the **Add files** page. If you type a name and path, and the name or path contains a space, you must enclose the entire string in double quotation marks (""). You can add command-line options for the application by using the **Arguments** field.
+  
 - **Location** - Specify the folder in which the shortcut is created by selecting a predefined folder keyword or typing the name and path to the location of the shortcut. You can specify a subfolder by appending a backslash (\) followed by the subfolder name. For example, to install the Word shortcut in the Office subfolder in the Programs folder in the **Start** menu, select **[ProgramMenuFolder]** and append the subfolder name as follows: **[ProgramMenuFolder]\Microsoft Office**. You can use the following special folders for **Location**:
-    
+  
    ****
 
 |**Location**|**Windows location**|
@@ -34,28 +33,27 @@ In the **Add/Modify Shortcut Entry** dialog box, type the following information 
 |**[AppDataFolder]\Microsoft\Internet Explorer\Quick Launch** <br/> |Internet Explorer's Quick Launch toolbar  <br/> |
 |**[FavoritesFolder]\Links** <br/> |Internet Explorer's Links bar  <br/> |
 |**[NetHoodFolder]** <br/> |The user's My Network Places folder  <br/> |
-   
-- **Name** - Specify a name for the shortcut by typing any string. 
-    
-- **Start in** - Specify the default starting folder for the application by typing a path. If you leave this box blank, the default folder is set to the folder where the target file resides. If the path is not valid on a user's computer, the user sees an error message when trying to use the shortcut. 
-    
-- **Arguments** - Type optional arguments to pass to the application on the command line. 
-    
-- **Shortcut key** - Type an optional keyboard shortcut for the application or file. The syntax for the shortcut key is: [modifier+]VK_key, where modifier is SHIFT, CTRL, ALT, or EXT, and VK_key is a virtual key name. 
-    
-The modifier is optional, and you can specify more than one, in any order, separated by plus signs (+). If you use a modifier, it must precede the virtual key name. You must enter one virtual key name. Do not use spaces in the key definition. The following are some examples:
-    
-  - CTRL+VK_F12
-    
-  - CTRL+SHIFT+VK_A
-    
-  - ALT+CTRL+VK_SNAPSHOT
-    
+  
+- **Name** - Specify a name for the shortcut by typing any string.
+  
+- **Start in** - Specify the default starting folder for the application by typing a path. If you leave this box blank, the default folder is set to the folder where the target file resides. If the path isn't valid on a user's computer, the user sees an error message when trying to use the shortcut.
+  
+- **Arguments** - Type optional arguments to pass to the application on the command line.
+  
+- **Shortcut key** - Type an optional keyboard shortcut for the application or file. The syntax for the shortcut key is: [modifier+]VK_key, where modifier is SHIFT, CTRL, ALT, or EXT, and VK_key is a virtual key name.
+  
+The modifier is optional, and you can specify more than one, in any order, separated by plus signs (+). If you use a modifier, it must precede the virtual key name. You must enter one virtual key name. Don't use spaces in the key definition. The following are some examples:
+  
+- CTRL+VK_F12
+  
+- CTRL+SHIFT+VK_A
+  
+- ALT+CTRL+VK_SNAPSHOT
+  
 Some key combinations, such as CTRL+ALT+VK_DELETE, might be used by the system and might not start the application as expected. Be careful to avoid conflicts on the user's computer, especially when specifying a shortcut key without a modifier. For example, if you specify VK_A with no modifier, the application runs every time the user types the A key.
-    
+  
 You can use the following virtual key names:
-    
-
+  
 |**Virtual key name**|**Hex key code**|**Description**|
 |:-----|:-----|:-----|
 |VK_0 … VK_9  <br/> |30-39  <br/> |Keys 0-9  <br/> |
@@ -92,12 +90,11 @@ You can use the following virtual key names:
 |VK_DIVIDE  <br/> |6F  <br/> |Divide key  <br/> |
 |VK_NUMLOCK  <br/> |90  <br/> |NUM LOCK key  <br/> |
 |VK_SCROLL  <br/> |91  <br/> |SCROLL LOCK key  <br/> |
-   
 
 - **Run** - Select the type of window in which the application or file should start ( **Normal window**, **Minimized**, or **Maximized**).
-    
-- **Change Icon** - Select a different icon for the shortcut. 
-    
-## Related topics
-[Office Customization Tool (OCT) 2016 Help: Configure shortcuts](oct-2016-help-configure-shortcuts.md)
 
+- **Change Icon** - Select a different icon for the shortcut.
+
+## Related articles
+
+- [Office Customization Tool (OCT) 2016 Help: Configure shortcuts](oct-2016-help-configure-shortcuts.md)
