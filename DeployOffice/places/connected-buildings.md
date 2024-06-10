@@ -165,7 +165,7 @@ Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers
    - Name: PlacesAdmin
    - Assigned Role: TenantPlacesManagement
 
-4. To get the PlaceId of buildings, run the following ExchangeOnline PowerShell cmdlet:
+4. To get the PlaceId of buildings, open a new PowerShell window and run the following Windows PowerShell cmdlet:
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
