@@ -71,7 +71,7 @@ SignaturesEnabled
 ### Calendar Management
 `Set-MailboxCalendarConfiguration` is another cmdlet for managing various features and capabilities for Calendar, including:
 - Working Hours, Work Week, Shorten appointments and meetings, etc. <br>
-For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration) 
+For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration). 
 
 ## Automatically configure account based on Active Directory Primary SMTP address
 Add information about new Intune Policy
