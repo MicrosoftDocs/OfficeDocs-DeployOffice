@@ -46,8 +46,8 @@ Use the following schema when uploading badge information.
 |Column  |Type  |Description |
 |---------|---------|---------|
 |BadgeNumber  |String   |Optional. The user’s badge identifier. |
-|UserEmail    |String   |The badged username (an email address or a user’s full name if an email address isn't available). |
-|DeviceId     |String   |Optional (TBD). The device ID indicates which device generated the signal. |
+|UserEmail    |String   |The badged username (an email addres). |
+|DeviceId     |String   |Optional. The device ID indicates which device generated the signal. |
 |TimestampUtc |Timestamp|The timestamp of the badge signal, which indicates when the event occurred. |
 |LocationId   |String   |Optional. If LocationName is provided. The location ID where the badge is recorded. |
 |LocationNam  |String   |Optional if LocationId is provided. The location name where the badge signal is recorded. |
