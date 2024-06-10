@@ -1144,6 +1144,11 @@
       "source_path": "DeployOffice/delivery-optimization.md",
       "redirect_url": "/deployoffice/updates/delivery-optimization",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/azure-maps-creator-guide.md",
+      "redirect_url": "/DeployOffice/places/deployment-guide-for-places",
+      "redirect_document_id": true
     }
   ]
 }
