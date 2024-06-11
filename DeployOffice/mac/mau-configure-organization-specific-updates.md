@@ -25,7 +25,7 @@ An organization can take total control of Microsoft Application updates by utili
 The following steps describe how to manage an organization-specific ManifestServer:
 
 - Create a local HTTPS network server to host Microsoft application update manifests.
-- Download Microsoft application update manifests from the preferred public Microsoft Content Delivery Network (CDN) endpoints to the local server. See ManifestServer preferences setting.
+- Download Microsoft application update manifests from the preferred public Microsoft Content Delivery Network (CDN) endpoints to the local server. For more information, see [ManifestServer preferences setting](./mau-preferences.md#manifestserver).
   - Root URLs for public Microsoft CDN endpoints (referred to as ChannelURL):
 
     | Channel          | URL                                                                                        |
@@ -45,11 +45,11 @@ The following steps describe how to manage an organization-specific ManifestServ
 
   - Download "Versioned Manifest" files:
     - Examine download -history.xml file to retrieve published versions for the application.
-    - Determine the versioned manifest file name using: ``0409<<AppID>>_<<version>><<extension>>``, where extension is:
+    - Determine the versioned manifest file name using: ``0409<<AppID>>_<<version>><<extension>>``, where the extension is:
       - .xml
       - .cat
 
-After creating and populating the ManifestServer location, set the ChannelName preference to **Custom** and the ManifestServer preference to the ManifestServer URL location on each managed device. Add these preferences in the deployed managed profile.
+After creating and populating the ManifestServer location, set the [0ChannelName preference](./mau-preferences.md#channelname) to **Custom** and the [ManifestServer preference](./mau-preferences.md#manifestserver) to the ManifestServer URL location on each managed device. This can be done by adding ChannelName and ManifestServer preferences settings in the deployed managed profile.
 
 You can also use the following terminal commands to achieve the same goal on a single device:
 
@@ -63,7 +63,7 @@ defaults write com.microsoft.autoupdate2 ManifestServer -string <<URL to local n
 > [!NOTE]
 > 1. ChannelName and ManifestServer preference settings can be used in conjunction with per-app settings.
 > 2. Setting ChannelName to Custom without setting ManifestServer has the same effect as setting ChannelName to Current.
-> 3. Also, the ManifestServer setting when ChannelName is not set to Custom will be ignored.
+> 3. Also, the ManifestServer setting, when ChannelName is not set to Custom, will be ignored.
 
 > [!CAUTION] 
 > By providing the ManifestServer preference setting, the organization is taking full responsibility for maintaining the ManifestServer location with the most up-to-date version of the applications the organization needs to be updated. Failure to maintain the contents of the ManifestServer location will result in MAU not discovering needed updates, resulting in no updates.
@@ -87,13 +87,13 @@ MAU starts downloading updates from this location instead of URL locations speci
 > [!NOTE]
 > This can be used in conjunction with per-app settings.
 
-## Setting configuration on individual Applications (Per-App setting)
+## Configuring individual Application updates (Per-App setting)
 
-MAU supports setting configuration for individual applications. When set, this configuration takes precedence over the global configuration.
+MAU supports configuring updates for individual applications. When set, this configuration takes precedence over the global configuration.
 
 - `ChannelName` When set to a different value than the global value, MAU looks for updates to the application on this per-app channel instead.
 - `ManifestServer` Should be set if ChannelName for the application is set to Custom. MAU looks for updates for the application using manifests downloaded from this location.
-- `UpdateCache` This is used to hosts updater packages to reduce network costs. While you should specify UpdateCache globally, you can also set it for individual apps.
+- `UpdateCache` This is used to host updater packages to reduce network costs. While you should specify UpdateCache globally, you can also set it for individual apps.
 
 **Example:**
 ```xml
