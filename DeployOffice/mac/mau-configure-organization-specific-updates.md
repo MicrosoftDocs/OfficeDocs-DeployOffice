@@ -93,7 +93,7 @@ MAU supports setting configuration for individual applications. When set, this c
 
 - `ChannelName` When set to a different value than the global value, MAU looks for updates to the application on this per-app channel instead.
 - `ManifestServer` Should be set if ChannelName for the application is set to Custom. MAU looks for updates for the application using manifests downloaded from this location.
-- `UpdateCache` May be used to host actual updater packages to reduce network cost. Although one should specify UpdateCache globally, nevertheless, this can be set on an individual app basis.
+- `UpdateCache` This is used to hosts updater packages to reduce network costs. While you should specify UpdateCache globally, you can also set it for individual apps.
 
 **Example:**
 ```xml
