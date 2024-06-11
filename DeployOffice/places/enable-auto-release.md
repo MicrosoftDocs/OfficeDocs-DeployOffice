@@ -28,7 +28,7 @@ Auto Release is a feature that can be enabled for rooms that are often unused or
 1. An attendee can [check in through Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
 :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
 1. An attendee checks in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
-:::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example nformation about the meeting appears on the screen with a Join button.":::
+:::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
 
 For Public Preview Customers only (coming in July 2024)
 
