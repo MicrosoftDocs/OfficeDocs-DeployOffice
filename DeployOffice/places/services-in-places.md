@@ -31,9 +31,9 @@ For example, a building might have a cafeteria where employees can order food on
 First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with your building using the ResourceLinks parameter (for more information about the ResourceLinks parameter, see
 [Set-PlaceV3](powershell/set-placev3.md)).
 
-[New-Place](/deployoffice/places/powershell/new-place#-resourcelinks).
+This example sets up the directory heirarchy for a room, floor, and building.
 
-This example associates a services app with a building (coming soon).
+In this example, the floor's PlaceID is XXXX, and the building's PlaceID is YYYY.
 
 ```powershell
 set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1e2-4725-9a25-793e4205739d"; type="MetaosApp”}
