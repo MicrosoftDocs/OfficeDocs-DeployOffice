@@ -15,7 +15,7 @@ description: "Learn about services admins can add that appear in the Explore tab
 
 # Services in Places
 
-In Microsoft Places apps admins can add services that appear in the Explore tab within Places (for more information, see [Introducing Microsoft Places: Turn your spaces into places](https://www.microsoft.com/en-us/microsoft-365/blog/2022/10/12/introducing-microsoft-places-turn-your-spaces-into-places/)). These services can be added per building to provide employees with all the services that each building offers (for more information, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md)).
+In Microsoft Places apps admins can add services that appear in the Explore tab within the Places apps (for more information about the supported Places apps, see the [Deployment guide for Microsoft Places (preview)](/deployoffice/places/deployment-guide-for-places?branch=pr-en-us-3476)). These services can be added per building to provide employees with all the services that each building offers (for more information, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md)).
 
 For example, a building might have a cafeteria where employees can order food online. Admins have the ability of showing employees a link to another website that may show the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
 
@@ -30,7 +30,7 @@ For example, a building might have a cafeteria where employees can order food on
 
 First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with your building using the ResourceLinks parameter (for more information about the ResourceLinks parameter, see [New-Place](/deployoffice/places/powershell/new-place#-resourcelinks)).
 
-This example associates a services app with a building.
+This example associates a services app with a building (coming soon).
 
 ```powershell
 set-Places -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1e2-4725-9a25-793e4205739d"; type="MetaosApp”}
@@ -42,4 +42,4 @@ This example adds a link.
 set-Places -Identity <id> -ResourceLinks @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
-Once these steps are complete, open the Places Explore page (using the link to the Explore page). The service you added appears with its associated building.
+Once these steps are complete, open the Places Explore page within your preferred Places app. The service you added appears with its associated building.
