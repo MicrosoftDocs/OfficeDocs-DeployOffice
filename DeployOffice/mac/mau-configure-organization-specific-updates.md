@@ -75,7 +75,7 @@ An enterprise IT admin can use a local network to retrieve update packages inste
 To populate the local UpdateCache:
 
 - Create a local HTTPS network server to host Microsoft application update packages.
-- Download each installed Microsoft application's XML manifest file (*.xml). Refer to the ManifestServer section in the "Configuring to use Custom channel" section.
+- Download each installed Microsoft application's XML manifest file (*.xml). For more information, see [ManifestServer](./mau-preferences.md#manifestserver).
 - Find each "https*.pkg" entry in the downloaded XML manifest files (* is a wildcard). Download these package files to the local network server for the previously created UpdateCache.
 - Set the UpdateCache preference to the local network server:
   ```powershell
