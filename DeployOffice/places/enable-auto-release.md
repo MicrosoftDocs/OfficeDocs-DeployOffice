@@ -25,7 +25,7 @@ Auto release is a feature that is useful for conference rooms that are frequentl
 
 Auto Release is a feature that can be enabled for rooms that are often unused or are frequently booked and abandoned. With Auto Release, you can ensure the space is used by having meeting attendees check in through one of two ways:
 
-1. An attendee can check in through Teams panel. Learn more about how the feature works with Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
+1. An attendee can [check in through Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about how the feature works with Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
 :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
 1. An attendee checks in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
 :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Information about the current meeting appears on the screen with a Join button.":::
@@ -36,7 +36,7 @@ For Public Preview Customers only (coming in July 2024)
 1. An attendee can check in through email.
 
   > [!NOTE]
-  > The email checkin is for meetings with no Teams meeting link (no Teams chat attached to the meeting instance).
+  > The email check-in is for meetings with no Teams meeting link (no Teams chat attached to the meeting instance).
 
 ## Who is eligible to use Auto Release
 
@@ -46,8 +46,8 @@ For Public Preview Customers only (coming in July 2024)
 
 ### Teams panels customers
 
-- This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, and Teams Shared Device licenses.
-- We recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or paired with Microsoft Teams Rooms).
+- This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device licenses.
+- We recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or panels sharing an account with Microsoft Teams Rooms).
 
 - ### Microsoft Places Public Preview customers
 
@@ -68,17 +68,17 @@ Auto Release can be enabled in three different ways:
 > [!NOTE]
 >
 > - When Auto Release is enabled or disabled for a room, it can take up to 48 hours for this change to take effect.
-> - When enabling or disabling Auto Release, we recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
+> - Enabling or adjusting the Auto Release setting requires up to 48 hours to take effect. We recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
 > - If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature does not release the room.
 
 ### Exchange PowerShell
 
-Enable Auto Release for rooms by running the `[Set-CalendarProcessing]`(/powershell/module/exchange/set-calendarprocessing?view=exchange-ps) Exchange PowerShell command.
+Enable rooms for this feature using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps) Exchange PowerShell command.
 
-The following example sets the Auto Release time to 10 minutes for the conference room labeled "Lobby Conference Room." If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
+The following example sets the Auto Release time to 10 minutes for the conference room labeled **Conference Room 1132**. If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
 
 ```powershell
-Set-CalendarProcessing -Identity "Lobby Conference Room" -EnableAutoRelease $true -PostReservationMaxClaimTimeInMinutes 10
+Set-CalendarProcessing -Identity "Conference Room 1132" -EnableAutoRelease $true -PostReservationMaxClaimTimeInMinutes 10
 ```
 
 ### Microsoft Teams admin center
@@ -91,11 +91,11 @@ For more information, see [Manage devices in Microsoft Teams](/microsoftteams/de
 
 You can turn on this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
-When you initially [download the Panels app from the Microsoft Teams admin center](/microsoftteams/devices/remote-update) that has multi-panel check-in support, allow 48 hours for the feature to become available.
+When you initially [download the Panels app from the Microsoft Teams admin center](/microsoftteams/devices/remote-update) that has multi-panel check-in support, allow 48 hours for the feature to become available. Additionally, when you download the Panels app, it would override the auto release setting configured in Exchange through the `Set-CalendarProcessing` cmdlet for the room if it were configured previously.
 
-If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature doesn't release the room.
+<!-- If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature doesn't release the room.
 
-When you download the Teams Panel app, validate the Auto Release setting through the Teams Panel device. The Teams Panel app overrides the Auto Release setting configured for in Exchange through the Set-CalendarProcessing cmdlet for the room.
+When you download the Teams Panel app, validate the Auto Release setting through the Teams Panel device. The Teams Panel app overrides the Auto Release setting configured for in Exchange through the Set-CalendarProcessing cmdlet for the room. -->
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 

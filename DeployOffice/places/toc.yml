@@ -24,8 +24,8 @@ items:
       href: setting-up-desk-workspaces-in-places-finder.md
     - name: Understanding work location
       href: understanding-work-location.md
-    - name: Opt in to the Auto Release feature
-      href: opt-in-auto-release.md
+    - name: Enabling Auto Release for your rooms
+      href: enable-auto-release.md
 
   - name: PowerShell
     items:
