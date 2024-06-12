@@ -35,6 +35,8 @@ items:
 
       - name: Microsoft AutoUpdate (MAU)
         items:
+          - name: Configure organization specific updates
+            href: mau-configure-organization-specific-updates.md
           - name: Configure preferences
             href: mau-preferences.md
           - name: Deferred updates
