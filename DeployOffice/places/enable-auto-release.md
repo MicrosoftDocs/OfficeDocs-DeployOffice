@@ -47,7 +47,7 @@ For Public Preview Customers only (coming in July 2024)
 ### Teams panels customers
 
 - This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device licenses.
-- We recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or panels sharing an account with Microsoft Teams Rooms).
+- We strongly recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or panels sharing an account with Microsoft Teams Rooms).
 
 ### Microsoft Places Public Preview customers
 
