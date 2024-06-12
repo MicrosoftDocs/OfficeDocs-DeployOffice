@@ -18,7 +18,7 @@ description: "Learn how to use existing sensor data to enhance Microsoft Places 
 You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people count, badge, and Wi-Fi data types.
 
 ## Prerequisites
-- Connected Workplace is an advanced feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+- Opt in to the [Places Public Preview](opt-in-places-preview.md). Connected Workplace is an advanced feature.
 - Create buildings and floors.
 - Enable Places Analytics.
 
