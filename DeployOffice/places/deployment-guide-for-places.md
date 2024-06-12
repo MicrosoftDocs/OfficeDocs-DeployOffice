@@ -39,7 +39,7 @@ Before onboarding Places, complete the following prerequisites:
 > [!NOTE]
 > More information on feature availability by license type will be shared as we get closer to general availability.
 
-## Deploy Places
+## Overview of Places Security Groups
 
 Places currently uses [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) to provide access to features needed by different user groups. The script that follows in step 1 will create following four security groups:
 
