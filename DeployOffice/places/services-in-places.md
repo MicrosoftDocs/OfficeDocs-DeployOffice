@@ -3,7 +3,7 @@ title: "Services in Places"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 06/06/2024
+ms.date: 06/12/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -15,21 +15,22 @@ description: "Learn about services admins can add that appear in the Explore tab
 
 # Services in Places
 
-In Microsoft Places apps admins can add services that appear in the Explore tab within the Places apps (for more information about the supported Places apps, see the [Deployment guide for Microsoft Places (preview)](/deployoffice/places/deployment-guide-for-places?branch=pr-en-us-3476)). These services can be added per building to provide employees with all the services that each building offers (for more information, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md)).
+In Microsoft Places apps admins can add services that appear in the **Explore** tab within the Places apps. For more information about the supported Places apps, see the [Deployment guide for Microsoft Places (preview)](/deployoffice/places/deployment-guide-for-places). These services can be added per building to provide employees with all the services that each building offers. For more information, see [Quick setup of buildings and floors](deployoffice/places/get-started/quick-setup-buildings-floors).
 
-For example, a building might have a cafeteria where employees can order food online. Admins have the ability of showing employees a link to another website that may show the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
+For example, a building might have a cafeteria where employees can order food online. Admins have the ability to show employees a link to another website of the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
 
 :::image type="content" source="./media/services-in-places/services-in-places-with-links.png" alt-text="screenshot showing a page of available services, including parking, tech support, dining, and facility request.":::
 
 ## Prerequisites
 
-- Services in Places is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+- Opt in to the [Places Public Preview](deployoffice/places/opt-in-places-preview). Services in Places is an opt-in feature.
 - Create a building.
 
 ## Adding services to a building
 
-First, you need to find the ID for the building you want to add a service to (for more information on getting the ID, see [Get-PlaceV3](/deployoffice/places/powershell/get-placev3?branch=pr-en-us-3476)). Next, you associate the service with your building using the ResourceLinks parameter (for more information about the ResourceLinks parameter, see
-[Set-PlaceV3](powershell/set-placev3.md)). 
+1. Find the ID for the building you want to add a service to. See [Get-PlaceV3](/deployoffice/places/powershell/get-placev3) to learn more on the process of getting the ID.
+
+2. Associate the service with your building using the ResourceLinks parameter. See [Set-PlaceV3](deployoffice/places/powershell/set-placev3) for more information on the ResourceLinks parameter.
 
 This example associates a services app with a building (coming soon).
 
@@ -43,4 +44,4 @@ This example adds a link.
 Set-PlaceV3 -Identity <id> -ResourceLinks @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
-Once these steps are complete, open the Places Explore page within your preferred Places app. The service you added appears with its associated building.
+Once these steps are complete, open the Places **Explore** page within your preferred Places app. The service you added appears with its associated building.
