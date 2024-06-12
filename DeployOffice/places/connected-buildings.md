@@ -277,7 +277,7 @@ There are PowerShell cmdlets you can use to manage devices in Places. See the [M
 
 ### Option 3: using APIs
 
-To build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To do this, follow these steps.
+To build an application to automate registering and onboarding devices, APIs are available through Microsoft Graph. To use APIs, follow these steps.
 
 1. Create an app registration in Microsoft Entra.
 
