@@ -41,7 +41,7 @@ The following steps describe how to manage an organization-specific ManifestServ
     - .cat
     - -history.xml
 
-    For a list of supported AppIDs, see Microsoft Application Identifiers.
+    For a list of supported AppIDs, see [Application identifiers](./update-office-for-mac-using-msupdate.md#application-identifiers)
 
   - Download "Versioned Manifest" files:
     - Examine download -history.xml file to retrieve published versions for the application.
@@ -49,7 +49,7 @@ The following steps describe how to manage an organization-specific ManifestServ
       - .xml
       - .cat
 
-After creating and populating the ManifestServer location, set the [0ChannelName preference](./mau-preferences.md#channelname) to **Custom** and the [ManifestServer preference](./mau-preferences.md#manifestserver) to the ManifestServer URL location on each managed device. This can be done by adding ChannelName and ManifestServer preferences settings in the deployed managed profile.
+After creating and populating the ManifestServer location, set the [ChannelName preference](./mau-preferences.md#channelname) to **Custom** and the [ManifestServer preference](./mau-preferences.md#manifestserver) to the ManifestServer URL location on each managed device. This can be done by adding ChannelName and ManifestServer preferences settings in the deployed managed profile.
 
 You can also use the following terminal commands to achieve the same goal on a single device:
 

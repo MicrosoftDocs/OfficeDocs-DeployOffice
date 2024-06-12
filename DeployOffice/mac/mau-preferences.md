@@ -210,7 +210,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
 > [!NOTE]
-> For a list of supported AppIDs, see [Application identifiers](../mac/update-office-for-mac-using-msupdate.md#application-identifiers).
+> For a list of supported AppIDs, see [Application identifiers](./update-office-for-mac-using-msupdate.md#application-identifiers).
 
 | Category | Details |
 | --- | --- |
