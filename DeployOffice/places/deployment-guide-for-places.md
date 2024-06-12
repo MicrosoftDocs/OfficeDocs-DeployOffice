@@ -73,24 +73,27 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 ### Step 2 - Create Places Security Groups
 
-1. Open **Windows PowerShell** as Administrator
+1. Open **Windows PowerShell** as Administrator.
 
-1. Run the PreparePlacesGroups script
+1. Run the PreparePlacesGroups script.
 
-1. Now that security groups have been created users can be added to these groups as appropriate:
+You should have the following groups created at the end of this step:
 
-   - Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
-      
-   - Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
-      
-   - Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http&preserve-view=true).
-      
+
+| Experience / Feature |Group Name|Group smtp address|
+| -------- | -------- | -------- |
+| Basic experience   | Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B] | placesUsers@contoso.com |
+| Advanced experience | Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B] | placesAdvanced@contoso.com |
+| Places iOS mobile app | Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B] | placesMobile@contoso.com | 
+| Space Analytics   | Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]   | placesAnalytics@contoso.com |
+
+
 > [!NOTE]
 > - This will create all of the security groups outlined above. Depending on your needs, not all security groups will be used.
-- Changes made when managing users in existing mail-enabled security groups are immediate.
-- Users and security groups that are either new to the tenant or previously inactive can take up to 1 day for changes to reflect.
+> - Changes made when managing users in existing mail-enabled security groups are immediate.
+> - Users and security groups that are either new to the tenant or previously inactive can take up to 1 day for changes to reflect.
 
-### Step 3 - Set up the PowerShell environment for Places
+### Step 3 - Setup the PowerShell environment for Places
 
 Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.
 
@@ -98,7 +101,7 @@ Running the following script installs the Places and Azure module in PowerShell 
 
 1. Run PreparePlacesPowershell7
 
-### Step 4 - Enabling Places
+### Step 4 - Enable Places
 
 Running the following script will enable the Places Web App and Advanced Features.
 
@@ -113,7 +116,17 @@ Running the following script will enable the Places Web App and Advanced Feature
 > [!NOTE]
 > It can take up to 1 day for users to gain access to the features.
 
-### Step 5 - Activate additional clients
+## Add or manage users with Security Groups
+
+If you are using security groups for access to Places, ensure that you have added users to those groups. You can add users to Places security groups using any of the following methods:
+
+- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell?view=o365-worldwide).
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide).
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http).
+
+## Activate additional clients
+
+You can access the Places MetaOS app from Outlook web, the new Outlook for Windows, and Teams.
 
 See the table below to learn more about activating different clients for Places:
 
@@ -121,7 +134,7 @@ See the table below to learn more about activating different clients for Places:
 |----|----|
 |Outlook|Places features are available in the latest version of [Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
 |Teams|Places is available as a [Teams app](/microsoftteams/apps-in-teams) within Teams and you can opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
-|Places iOS app| The Places mobile experience is available as an [iOS app](/DeployOffice/places/configure-the-ios-app).|
+|Places iOS app|The Places mobile experience is available as an [iOS app](/DeployOffice/places/configure-the-ios-app).|
 
 ## Related topics
 
