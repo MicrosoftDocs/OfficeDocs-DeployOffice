@@ -308,7 +308,7 @@ Microsoft Places accepts historical data in a specific CSV file format and schem
 |**Push-Dataset** |Uploads dataset into ADLS |Type<br>Path  |Push-Dataset -Type RoomOccupancy -Path C:\sensordata\ |
 
 > [!NOTE]
-> Type can be RoomOccupancy, PeopleCount, or InferredOccupancy. Role should be assigned to TenantPlacesManagement. For more information on PowerShell cmdlets, see [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+> Type can be RoomOccupancy, PeopleCount, or InferredOccupancy. Role should be assigned to TenantPlacesManagement. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about PowerShell cmdlets.
 
 The following is the CSV file format for People Count.
 
@@ -321,11 +321,13 @@ The following is the CSV file format for People Count.
 
 ### Real-time telemetry ingestion
 
-The connectors described in Scope need the following permission to request the real-time telemetry ingestion service. You must complete the admin consent or create a Microsoft Entra application with the permission based on the selected architecture.
+The connectors described in Scope need the following permission to request the real-time telemetry ingestion service.
 
-The PlaceDeviceTelemetry.ReadWrite.All permission. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+- PlaceDeviceTelemetry.ReadWrite.All
 
-The following diagram outlines the architecture references for telemetry ingestion.
+You must complete the admin consent or create a Microsoft Entra application with the permission based on the selected architecture. See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more about PlaceDeviceTelemetry.ReadWrite.All permission.
+
+The following diagram outlines the architecture for telemetry ingestion.
 
 :::image type="content" source="./media/connected-buildings/connected-buildings-architectures2.png" alt-text="A diagram that outlines the architecture references for telemetry ingestion.":::
 
@@ -333,7 +335,7 @@ The following diagram outlines the architecture references for telemetry ingesti
 
 For customers choosing these integration types, you must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
-1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). For more information, see [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps).
+1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). See [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps) to learn more about multitenant connectors.
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
 3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
@@ -351,7 +353,7 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 - For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
 - For type C architecture, customers can create a long-running process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra as shown in the following illustration and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph Permissions Reference](/graph/permissions-reference).
+- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra, as shown in the following illustration, and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more permissions exposed by Microsoft Graph.
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
 
