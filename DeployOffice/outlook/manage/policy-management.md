@@ -85,20 +85,20 @@ By default, new Outlook for Windows allows you to open attached Word, Excel, Pow
 
 ## Disable Third party online attachments
 	
-The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) -`AdditionalStorageProvidersAvailable` . 
+The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy- AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable). 
 
 ## Disable Offline
 The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline. 
 
 ## Enable Location Suggestions
-The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. For more information, see [Set-OwaMailboxPolicy ](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled)-`PlacesEnabled`. 
+The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. For more information, see [Set-OwaMailboxPolicy - PlacesEnabled](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled). 
 
 ## Enable a default Theme
-A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy -Default Theme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
+A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy - Default Theme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
 
 ##  Disable Suggested Replies
 `OrganizationConfig` is a cmdlet that supports a seamless user experience, as employees can transition effortlessly between devices and platforms without encountering discrepancies in functionality or accessibility for the following features:
-[Set-OrganizationConfig – Suggested Replies](/powershell/module/exchange/set-organizationconfig).
+[Set-OrganizationConfig – Suggested Replies](/powershell/module/exchange/set-organizationconfig#-suggestedreplies).
 
 
 ## Disable Microsoft Loop
