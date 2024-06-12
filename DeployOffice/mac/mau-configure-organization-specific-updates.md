@@ -49,7 +49,7 @@ The following steps describe how to manage an organization-specific ManifestServ
       - .xml
       - .cat
 
-After creating and populating the ManifestServer location, set the [ChannelName preference](./mau-preferences.md#channelname) to **Custom** and the [ManifestServer preference](./mau-preferences.md#manifestserver) to the ManifestServer URL location on each managed device. This can be done by adding ChannelName and ManifestServer preferences settings in the deployed managed profile.
+Create and populate the ManifestServer location. Then, set the [ChannelName preference](./mau-preferences.md#channelname) to **Custom** and the [ManifestServer preference](./mau-preferences.md#manifestserver) to the ManifestServer URL location on each managed device. Add these preferences to the deployed managed profile.
 
 You can also use the following terminal commands to achieve the same goal on a single device:
 
