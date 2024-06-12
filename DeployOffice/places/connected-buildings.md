@@ -133,7 +133,7 @@ Connecting occupancy and people-count sensors is done in four steps.
 
 The first step involves uploading a CSV file with the device metadata and how devices are mapped to a PlaceId in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
 
-The following is a high-level diagram about how you can onboard devices and sensors onto Places.
+The following diagram shows how you can onboard devices and sensors onto Places.
 
 :::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-metadata2.png" alt-text="Diagram showing how you can onboard devices and sensors into Places.":::
 
