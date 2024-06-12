@@ -43,14 +43,14 @@ Before onboarding Places, complete the following prerequisites:
 
 Places currently uses [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) to provide access to features needed by different user groups. The script that follows in step 1 will create following four security groups:
 
-1. _Places Users_: Add users to this group to allow access the Places Web App.
+1. _Places Users_: Add users to this group to allow access the Places Web App. 
 
-   1. _Places Advanced Users_: This group is for users who will have access to Places Advanced features like Places Finder, Space Analytics, and Intelligent Booking. Users added to Places Advanced Users will be part of the Places Users group.
-   
-      1. _Places Mobile Users_: This is for users who can use the [Places iOS app](/deployoffice/places/configure-the-ios-app). Users added to Places Mobile Users group will be part of the Places Users group and the Places Advanced features group.
-            
-      1. _Places Analytics Users_: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
-            
+1. _Places Advanced Users_: This group is for users who will have access to Places Advanced features like Places Finder, Space Analytics, and Intelligent Booking. Users added to Places Advanced Users will be part of the Places Users group.
+
+1. _Places Mobile Users_: This is for users who can use the [Places iOS app](/deployoffice/places/configure-the-ios-app). Users added to Places Mobile Users group will be part of the Places Users group and the Places Advanced features group.
+
+1. _Places Analytics Users_: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
+
 > [!NOTE]
 > Advanced Features are Opt-In only. Please visit Please visit __[Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview)__ for more details.
 >
