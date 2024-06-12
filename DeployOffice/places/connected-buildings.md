@@ -41,7 +41,7 @@ Use the following schema when uploading badge information.
 |Column  |Type  |Description |
 |---------|---------|---------|
 |BadgeNumber  |String   |Optional. The user’s badge identifier. |
-|UserEmail    |String   |The badged username (an email addres). |
+|UserEmail    |String   |The badged username (an email address). |
 |DeviceId     |String   |Optional. The device ID indicates which device generated the signal. |
 |TimestampUtc |Timestamp|The timestamp of the badge signal, which indicates when the event occurred. |
 |LocationId   |String   |Optional. If LocationName is provided. The location ID where the badge is recorded. |
@@ -145,7 +145,7 @@ There are three ways you can upload device information to Places.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following Powershell cmdlet. See [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows) to learn more about PowerShell on Windows.
+1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following PowerShell cmdlet. See [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows) to learn more about PowerShell on Windows.
 
    
 ```powershell
@@ -263,7 +263,7 @@ If you want to manage devices individually using the Powershell cmdlets, you can
 
 ### Option 2: using PowerShell cmdlets
 
-There are Powershell cmdlets you can use to manage devices in Places. See the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about Places cmdlets.
+There are PowerShell cmdlets you can use to manage devices in Places. See the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about Places cmdlets.
 
 > [!NOTE]
 > To run cmdlets, you must have the TenantPlacesManagement role assigned.
