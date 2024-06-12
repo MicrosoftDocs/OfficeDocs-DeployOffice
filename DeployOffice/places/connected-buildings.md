@@ -231,7 +231,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 |**Sensor.SensorId** (required) |The unique identifier of a sensor within the device. | Must come in the standard telemetry payload. |PeopleCount Occupancy |
 |**Sensor.DisplayName** |The display Name of the sensor. |You can use a friendly name (if applicable). |Paperclip |
 |**Sensor.SensorType** (required) |The type of sensor. |A validated list (see examples). |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
-|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this indentifier if the sensor is in a different place than the device's location). | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location). | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
 
@@ -250,7 +250,7 @@ Create a PowerShell script that iterates using the PowerShell cmdlets using the 
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
 
-If you want to manage devices individually using the Powershell cmdlets, you can reference Option 2.
+If you want to manage devices individually using the PowerShell cmdlets, you can reference Option 2.
 
 |Script name  |Description  |
 |---------|---------|
