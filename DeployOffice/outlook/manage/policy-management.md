@@ -32,8 +32,6 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 > [!IMPORTANT]
 > Most of the mailbox policies are applicable for both OWA and Monarch, so you can’t have it enabled in one client but not the other.  
 
-The following list shows the preferences that are covered in this article: 
-add list of contents
 
 ## Allow only corporate mailboxes to be added 
 
@@ -54,47 +52,53 @@ We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMail
 The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - weatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled).
 
 ## Disable Focused Inbox
-There are two different policies - one in `set-mailboxmessageconfiguration : IsFocusedInboxEnabled` and another one in `set-organizationconfig: FocusedInboxOn`.
+The `Set-organizationconfig: FocusedInboxOn`  cmdlet turns Focused Inbox Off in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. For more information, see [Configure Focused Inbox for everyone in your organization](/microsoft-365/admin/setup/configure-focused-inbox).  
 
 ## Configure Junk settings
-### Junk Mail Configuration
 Junk Mail Configuration is another cmdlet on the organizational-level management that allows companies to foster an agile and adaptable IT infrastructure that is well-equipped to meet the diverse needs of a modern workforce.<br>
 Admins should use the Microsoft Defender portal to [configure spam filter policies](/defender-office-365/anti-spam-policies-configure) adjusting bulk mail thresholds and configure safe senders and blocked lists using the junk email settings on Exchange Online mailboxes.<br> 
 For more information, see [Set-MailboxJunkEmailConfiguration](/defender-office-365/configure-junk-email-settings-on-exo-mailboxes).
  
 ## Disable signatures
-SignaturesEnabled
+If admins want to prevent users from creating signatures manually, they should use Exchange PowerShell to apply the policy to the users. Setting the `-SignaturesEnabled` parameter to false disables signatures for all users in OWA [Set-OwaMailboxPolicy (ExchangePowerShell)](/powershell/module/exchange/set-owamailboxpolicy). 
 
-## Disable archive messages
+Another option to achieve the same result is to use the Exchange administrator dashboard to edit the [Outlook Web App policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) and uncheck the ‘Email signature’ feature. <br>
+In EAC, select > **Roles** > **Owa web app policies**. Open each policy details and select **Manage Features** > **User Experience** > **Uncheck Email signature** and save changes.  
 
 ## Specify calendar first day of week
-### Calendar Management
+
 `Set-MailboxCalendarConfiguration` is another cmdlet for managing various features and capabilities for Calendar, including:
 - Working Hours, Work Week, Shorten appointments and meetings, etc. <br>
 For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration). 
 
-## Automatically configure account based on Active Directory Primary SMTP address
-Add information about new Intune Policy
+## Automatically configure account based on Active Directory Primary SMTP address (coming soon)
+Admins are advised to configure the new policy for specific groups for an easier account setup process on managed devices and to guarantee that company policies are always respected. 
+
+Admins can set the policy *Automatically configure accounts based on Active Directory Primary SMTP* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** with the SMTP address that should be automatically configured. 
+
+If this policy is enabled, the primary SMTP address used to log in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
+
+The default state of the new policy is off.  
 
 ## Specify what attachments can be downloaded
-Allowing certain file types (attachments)	
-`AllowedFileTypes` and `BlockedFileTypes`
+By default, new Outlook for Windows allows you to open attached Word, Excel, PowerPoint, text files, and many media files directly. The files you open vary depending on the account settings. Admins can configure the list of file name extensions that you can open in new Outlook for Windows using the cmdlets [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)  - `AllowedFileTypes` and `BlockedFileTypes`. 
 
-## Disable Third part online attachments
+## Disable Third party online attachments
 	
-```AdditionalStorageProvidersAvailable```
+The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) -`AdditionalStorageProvidersAvailable` . 
 
-## Disable Preview Links
 ## Disable Offline
-(only applicable for New Outlook for Windows)	`OfflineEnabledWin	$true`
+The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline. 
 
 ## Enable Location Suggestions
-Location Suggestions	`PlacesEnabled	$true`
-## Enable Themes and Dark Mode
-## Disable Read Receipt Responses
+The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. For more information, see [Set-OwaMailboxPolicy ](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled)-`PlacesEnabled`. 
+
+## Enable a default Theme
+A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy -Default Theme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
+
 ##  Disable Suggested Replies
 `OrganizationConfig` is a cmdlet that supports a seamless user experience, as employees can transition effortlessly between devices and platforms without encountering discrepancies in functionality or accessibility for the following features:
-`Set-OrganizationConfig – Suggested Replies`.
+[Set-OrganizationConfig – Suggested Replies](/powershell/module/exchange/set-organizationconfig).
 
 
 ## Disable Microsoft Loop
