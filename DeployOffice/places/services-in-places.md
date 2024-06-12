@@ -15,7 +15,7 @@ description: "Learn about services admins can add that appear in the Explore tab
 
 # Services in Places
 
-In Microsoft Places apps admins can add services that appear in the **Explore** tab within the Places apps. For more information about the supported Places apps, see the [Deployment guide for Microsoft Places (preview)](/deployoffice/places/deployment-guide-for-places). These services can be added per building to provide employees with all the services that each building offers. For more information, see [Quick setup of buildings and floors](deployoffice/places/get-started/quick-setup-buildings-floors).
+In Microsoft Places apps admins can add services that appear in the **Explore** tab within the Places apps. For more information about the supported Places apps, see the [Deployment guide for Microsoft Places (preview)](/deployment-guide-for-places.md). These services can be added per building to provide employees with all the services that each building offers. For more information, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
 
 For example, a building might have a cafeteria where employees can order food online. Admins have the ability to show employees a link to another website of the cafeteria menu or an app that employees should use to order food online. The following page is an example of how services (both links and apps) might appear.
 
@@ -23,14 +23,14 @@ For example, a building might have a cafeteria where employees can order food on
 
 ## Prerequisites
 
-- Opt in to the [Places Public Preview](deployoffice/places/opt-in-places-preview). Services in Places is an opt-in feature.
+- Opt in to the [Places Public Preview](opt-in-places-preview.md). Services in Places is an opt-in feature.
 - Create a building.
 
 ## Adding services to a building
 
-1. Find the ID for the building you want to add a service to. See [Get-PlaceV3](/deployoffice/places/powershell/get-placev3) to learn more on the process of getting the ID.
+1. Find the ID for the building you want to add a service to. See [Get-PlaceV3](powershell/get-placev3.md) to learn more on the process of getting the ID.
 
-2. Associate the service with your building using the ResourceLinks parameter. See [Set-PlaceV3](deployoffice/places/powershell/set-placev3) for more information on the ResourceLinks parameter.
+2. Associate the service with your building using the ResourceLinks parameter. See [Set-PlaceV3](powershell/set-placev3.md) for more information on the ResourceLinks parameter.
 
 This example associates a services app with a building (coming soon).
 
