@@ -97,7 +97,7 @@ Use the following schema when uploading Wi-Fi information.
 #### Upload the Wi-Fi dataset
 
 1. Open **PowerShell 7** (not as an administrator).
-2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. For more information on Places cmdlets, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places cmdlets.
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
@@ -145,7 +145,7 @@ There are three ways you can upload device information to Places.
 
 ### Prerequisites: prepare device metadata  
 
-1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following Powershell cmdlet. For more information, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
+1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following Powershell cmdlet. See [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows) to learn more about PowerShell on Windows.
 
    
 ```powershell
@@ -243,7 +243,7 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 ### Option 1: using scripts
 
-First, install the PowerShell cmdlets. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+First, install the PowerShell cmdlets. See the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about Places cmdlets.
 
 Create a PowerShell script that iterates using the PowerShell cmdlets using the CSV file as an input to upload, edit, and delete devices.
 
@@ -263,7 +263,7 @@ If you want to manage devices individually using the Powershell cmdlets, you can
 
 ### Option 2: using PowerShell cmdlets
 
-There are Powershell cmdlets you can use to manage devices in Places. For more information, see the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+There are Powershell cmdlets you can use to manage devices in Places. See the [Microsoft Places cmdlets module for PowerShell](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about Places cmdlets.
 
 > [!NOTE]
 > To run cmdlets, you must have the TenantPlacesManagement role assigned.
@@ -281,7 +281,7 @@ To build an application to automate registering and onboarding devices, APIs are
 
 1. Create an app registration in Microsoft Entra.
 
-   For more information on the PlaceDeviceRead.All and PlaceDevice.ReadWrite.All permissions, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+   See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more about the PlaceDeviceRead.All and PlaceDevice.ReadWrite.All permissions.
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
@@ -351,7 +351,7 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 - For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
 - For type C architecture, customers can create a long-running process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra as shown in the following illustration and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph permissions reference](/graph/permissions-reference).
+- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra as shown in the following illustration and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. For more information, see the [Microsoft Graph Permissions Reference](/graph/permissions-reference).
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
 
