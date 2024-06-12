@@ -131,7 +131,7 @@ Connecting occupancy and people-count sensors is done in four steps.
 
 ## Device onboarding
 
-The first step involves uploading a CSV file with the device metadata and how devices are mapped to a PlaceId in Microsoft Places. This helps to contextualize the telemetry when it reaches Places.
+The first step involves uploading a CSV file with the device metadata and how devices are mapped to a PlaceId in Microsoft Places. This step helps to contextualize the telemetry when it reaches Places.
 
 The following diagram shows how you can onboard devices and sensors onto Places.
 
@@ -359,4 +359,4 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 ## Verify data is available in Places
 
-Once devices are onboarded and the API is ingesting live sensor data, the Places Analytics reports start to populate. Verify data is flowing into your analytics dashboard within 72 hours to unlock insights that help optimize your workspace.
+Once devices are onboarded and the API is ingesting live sensor data, the Places Analytics reports start to populate. To unlock insights that help optimize your workspace, verify data is flowing into your analytics dashboard within 72 hours.
