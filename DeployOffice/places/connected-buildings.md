@@ -353,7 +353,7 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 - For type B architecture, customers rely on an integration provided by their hardware partners hosted on-site in the customer’s environment.
 - For type C architecture, customers can create a long-running process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
-- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra, as shown in the following illustration, and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more permissions exposed by Microsoft Graph.
+- Both type B and C integration architectures require customers to create an app registration in Microsoft Entra, as shown in the following illustration, and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more about permissions exposed by Microsoft Graph.
 
    :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
 
