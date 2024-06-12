@@ -52,7 +52,7 @@ Use the following schema when uploading badge information.
 #### Upload the badge dataset
 
 1. Open **PowerShell 7** (not as an administrator).
-2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. For more information on Places installation, see the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha).
+2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places installation.
 
 ```powershell
 Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
