@@ -337,7 +337,7 @@ For customers choosing these integration types, you must complete the tenant-wid
 
 1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). See [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps) to learn more about multitenant connectors.
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
-3. Create a Service principal with the app ID. There are several options to choose from [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
+3. Create a Service principal with the app ID. There are several options to choose from to [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
    If you're using the **Microsoft Graph PowerShell**, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
