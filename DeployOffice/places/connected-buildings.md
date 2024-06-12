@@ -285,7 +285,7 @@ To build an application to automate registering and onboarding devices, APIs are
 
 2. Build and deploy an application to sync device information across Places and your partners.
 
-For more information, see the following Microsoft Graph APIs:
+See the following Microsoft Graph APIs to learn more about sensor devices:
 
 - [List sensorDevices](/graph/api/workplace-list-sensordevices)
 - [Create workplaceSensorDevice](/graph/api/workplace-post-sensordevices)
