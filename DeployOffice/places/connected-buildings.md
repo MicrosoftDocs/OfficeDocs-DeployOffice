@@ -295,7 +295,7 @@ See the following Microsoft Graph APIs to learn more about sensor devices:
 
 ## Telemetry historical data (ingestion) and workflow
 
-Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) as well as the continuous device telemetry flow (bottom half).
+Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) and the continuous device telemetry flow (bottom half).
 
 :::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry2.png" alt-text="A diagram that outlines the backfill file upload and device telemetry flow.":::
 
@@ -359,4 +359,4 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 
 ## Verify data is available in Places
 
-Once devices are onboarded and the API is ingesting live sensor data, the Places Analytics reports will start to populate. Verify data is flowing into your analytics dashboard within 72 hours to unlock insights that will help optimize your workspace.
+Once devices are onboarded and the API is ingesting live sensor data, the Places Analytics reports start to populate. Verify data is flowing into your analytics dashboard within 72 hours to unlock insights that help optimize your workspace.
