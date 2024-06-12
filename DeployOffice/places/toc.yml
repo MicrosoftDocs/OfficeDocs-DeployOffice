@@ -1,31 +1,29 @@
 items:
   - name: Get started
     items:
-    - name: Deployment guide for Places
+    - name: Deploying Places
       href: deployment-guide-for-places.md
-    - name: Opt in to the Microsoft Places Public Preview Program
-      href: opt-in-places-preview.md
     - name: Quick setup guide for buildings and floors
       href: get-started/quick-setup-buildings-floors.md
-
-  - name: Maps
-    items:
-    - name: Azure Maps Creator Guide for Microsoft Places
-      href: azure-maps-creator-guide.md
-      
-  - name: Apps
-    items:
-    - name: Configure the iOS app for Microsoft Places
-      href: configure-the-ios-app.md
-
-  - name: Manage workspaces
-    items:
-    - name: Setting up desk pools and workplaces in Places Finder
-      href: setting-up-desk-workspaces-in-places-finder.md
-    - name: Understanding work location
+    - name: Understanding work locations
       href: understanding-work-location.md
     - name: Enabling Auto Release for your rooms
       href: enable-auto-release.md
+
+
+  - name: Advanced features
+    items:
+    - name: Places overview and opt-in
+      href: opt-in-places-preview.md
+    - name: Adding services in Places
+      href: services-in-places.md
+    - name: Configuring the Places iOS app
+      href: configure-the-ios-app.md
+    - name: Setting up desk pools and workplaces
+      href: setting-up-desk-workspaces-in-places-finder.md
+    - name: Enabling Places Analytics views and reports
+      href: places-analytics.md
+
 
   - name: PowerShell
     items:
@@ -41,8 +39,3 @@ items:
       href: powershell/remove-place.md
     - name: Set-PlaceV3
       href: powershell/set-placev3.md
-
-  - name: Reports and analytics
-    items:
-    - name: Microsoft Places Analytics
-      href: places-analytics.md

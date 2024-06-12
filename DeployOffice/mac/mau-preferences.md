@@ -67,7 +67,7 @@ Specifies how Microsoft AutoUpdate checks for updates.
 | Default Value   | AutomaticDownload |
 | Manageable      | Yes |
 | Accepted Values | AutomaticDownload<br>AutomaticCheck |
-| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>Manual - MAU checks only for its own updates, not for other updates. This option has been removed from GUI. Setting to Manual results in MAU not offering updates automatically.The following value is deprecated: <ul><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
+| Comments        | Not having this entry, or having an invalid entry reverts MAU to the default 'AutomaticDownload' mode.<br><br>AutomaticDownload – MAU checks for updates on regular intervals and push updates automatically. Indication an app needs to close in order to complete the update is displayed either in app, or via notification.<br><br>AutomaticCheck – MAU regularly checks for updates and launches the GUI when it detects an available update. The user initiates the update sequence from the GUI.<br>Manual - MAU checks only for its own updates, not for other updates. This option has been removed from GUI. Setting to Manual results in MAU not offering updates automatically. The following value is deprecated: <ul><li>Automatic – replaced by AutomaticCheck</li></ul><br>Note: Even though Manual setting is deprecated, MAU continues to honor it for the time being. Setting to Manual results in MAU not offering updates automatically. |
 
 ## ChannelName
 
@@ -210,7 +210,7 @@ DEPRECATED. If set to TRUE, this causes VoiceOver accessibility features to be d
 Lists application registrations. This dictionary can include keys for specific applications and details about how they should be updated. Useful for managing updates on a per-application basis.
 
 > [!NOTE]
-> For a list of supported AppIDs, see [Application identifiers](../mac/update-office-for-mac-using-msupdate.md#application-identifiers).
+> For a list of supported AppIDs, see [Application identifiers](./update-office-for-mac-using-msupdate.md#application-identifiers).
 
 | Category | Details |
 | --- | --- |
