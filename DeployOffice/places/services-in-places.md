@@ -34,13 +34,13 @@ First, you need to find the ID for the building you want to add a service to (fo
 This example associates a services app with a building (coming soon).
 
 ```powershell
-Set-PlacesV3 -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1e2-4725-9a25-793e4205739d"; type="MetaosApp”}
+Set-PlaceV3 -Identity <id> -ResourceLinks @{name="Dining App"; Value="0c7c95a9-b1e2-4725-9a25-793e4205739d"; type="MetaosApp”}
 ```
 
 This example adds a link.
 
 ```powershell
-Set-PlacesV3 -Identity <id> -ResourceLinks @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
+Set-PlaceV3 -Identity <id> -ResourceLinks @{name="Tech Support"; Value="www.contoso.sharepoint.com/TechSupport"; type="URL”} 
 ```
 
 Once these steps are complete, open the Places Explore page within your preferred Places app. The service you added appears with its associated building.
