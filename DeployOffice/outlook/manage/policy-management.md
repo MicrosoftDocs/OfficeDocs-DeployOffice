@@ -30,7 +30,7 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 > Most features like Focused Inbox and Loop are specific to each account. If you disable these features, they turn off only for that account. However, in new Outlook, other features are disabled at the organization level, for example, if any account has in-product feedback disabled, the feature becomes unavailable for all accounts. 
 
 > [!IMPORTANT]
-> Most of the mailbox policies are applicable for both OWA and Monarch, so you can’t have it enabled in one client but not the other.  
+> Most of the mailbox policies are applicable for both OWA and Monarch, so you can’t have them enabled on one client but not the other.  
 
 
 ## Allow only corporate mailboxes to be added 
@@ -60,7 +60,7 @@ Admins should use the Microsoft Defender portal to [configure spam filter polici
 For more information, see [Set-MailboxJunkEmailConfiguration](/defender-office-365/configure-junk-email-settings-on-exo-mailboxes).
  
 ## Disable signatures
-If admins want to prevent users from creating signatures manually, they should use Exchange PowerShell to apply the policy to the users. Setting the `-SignaturesEnabled` parameter to false disables signatures for all users in OWA [Set-OwaMailboxPolicy (ExchangePowerShell)](/powershell/module/exchange/set-owamailboxpolicy). 
+If admins want to prevent users from creating signatures manually, they should use Exchange PowerShell to apply the policy to the users. Setting the `-SignaturesEnabled` parameter to false disables signatures for all users in OWA. See [Set-OwaMailboxPolicy (ExchangePowerShell)](/powershell/module/exchange/set-owamailboxpolicy). 
 
 Another option to achieve the same result is to use the Exchange administrator dashboard to edit the [Outlook Web App policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) and uncheck the ‘Email signature’ feature. <br>
 In EAC, select > **Roles** > **Owa web app policies**. Open each policy details and select **Manage Features** > **User Experience** > **Uncheck Email signature** and save changes.  
