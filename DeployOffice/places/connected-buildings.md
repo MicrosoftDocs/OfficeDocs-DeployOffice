@@ -310,7 +310,7 @@ Microsoft Places accepts historical data in a specific CSV file format and schem
 > [!NOTE]
 > Type can be RoomOccupancy, PeopleCount, or InferredOccupancy. Role should be assigned to TenantPlacesManagement. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) to learn more about PowerShell cmdlets.
 
-The following is the CSV file format for People Count.
+The following is the CSV file format for PeopleCount.
 
 |Column name  |Column order  |Comment |Example |
 |---------|---------|---------|---------|
