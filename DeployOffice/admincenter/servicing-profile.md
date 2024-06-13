@@ -43,6 +43,10 @@ Devices in the servicing profile receive updates for the Monthly Enterprise Chan
 > You can also watch videos with an [introduction to Servicing profiles](https://youtu.be/i_eUkyFX30E) and [in-depth coverage of the service](https://youtu.be/YO6a3iNVXXI).
 
 ## Requirements for using a servicing profile
+
+<!--Using include for adding global admin reference-->
+[!INCLUDE [Global admin reference](../includes/global-admin-reference.md)]
+
 - Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, Version 2008 or later
 - A version of Windows 11 or Windows 10 supported by Microsoft 365 Apps for enterprise or by Microsoft 365 Apps for business
 - Microsoft 365 (or Office 365) for Business Standard, Business Premium, A3, A5, E3, or E5 subscription plan

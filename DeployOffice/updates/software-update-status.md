@@ -77,6 +77,10 @@ The following information applies to the **Microsoft 365 Apps** tab on the **Sof
 - The information presented on this page relies on at least [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) being sent to Microsoft.
 
 - To view the information on this page, you must be assigned one of the following roles:
+
+<!--Using include for adding global admin reference-->
+[!INCLUDE [Global admin reference](../includes/global-admin-reference.md)]
+
    - Global Administrator
    - Global Reader
    - Office Apps Administrator

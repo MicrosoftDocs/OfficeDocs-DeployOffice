@@ -11,6 +11,9 @@ ms.date: 04/23/2024
 <!--This file is shared by cloud-update.md, cloud-update.md, inventory.md, microsoft-365-apps-health.md, overview.md, security-update-status.md, overview-cloud-policy.md. Headings are driven by article context.-->
 You can use the following built-in Microsoft Entra roles for accessing and managing the feature:
 
+<!--Using include for adding global admin reference-->
+[!INCLUDE [Global admin reference](../../includes/global-admin-reference.md)]
+
 | Role                       | Description       |
 | -------------------------- | ----------------- |
 | Global Administrator       | This role can manage all aspects of Microsoft Entra ID and Microsoft services that use Microsoft Entra identities.
