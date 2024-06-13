@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides Office admins with information about the Software updates page in the Microsoft 365 admin center."
-ms.date: 03/13/2024
+ms.date: 06/13/2024
 ---
 
 # View software update status for Microsoft 365 Apps installations
@@ -68,15 +68,15 @@ Only the following devices are shown on the **Microsoft 365 Apps** tab on the **
 
 - Devices that are using a Microsoft 365 Apps license assigned to a user by your organization (tenant).
 
-## Additional information about the Microsoft 365 Apps tab
+## Additional Information About the Microsoft 365 Apps Tab
 
-The following information applies to the **Microsoft 365 Apps** tab on the **Software updates** page.
+This section pertains to the **Microsoft 365 Apps** tab located on the **Software Updates** page.
 
-Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. For more information, see [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md).
+### Overview of Microsoft 365 Apps
+Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. Detailed information can be found at [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md). Access to this tab requires that [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) is sent to Microsoft. Data on this tab is refreshed approximately every 48 hours.
 
-The information presented on this page relies on at least [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) being sent to Microsoft.
-
-To view the information on this page, you must be assigned one of the following roles:
+### Access Roles
+The following roles are necessary to view this tab:
 
 <!--Using include for adding global admin reference-->
 [!INCLUDE [Global admin reference](../includes/global-admin-reference.md)]
@@ -87,17 +87,14 @@ To view the information on this page, you must be assigned one of the following 
 - Reports Reader
 - Usage Summary Reports Reader
 
-The data that populates this page refreshes approximately every 48 hours.
-
-This information isn’t available to customers who have the following plans:
-
+### Plan Availability
+Access to this tab isn't available for customers with the following plans:
 - Office 365 operated by 21Vianet
 - Office 365 GCC
 - Office 365 GCC High and DoD
 
 > [!NOTE]
-> Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, aren't shown on this page.
-
+> Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, are not displayed on this page.
 ## Related articles
 
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)

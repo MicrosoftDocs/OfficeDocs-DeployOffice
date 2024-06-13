@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about the servicing profile in the Microsoft 365 Apps admin center"
-ms.date: 02/27/2024
+ms.date: 06/13/2024
 ---
 
 # Overview of servicing profile in the Microsoft 365 Apps admin center
