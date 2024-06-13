@@ -95,7 +95,8 @@ This information isn’t available to customers who have the following plans:
 - Office 365 GCC
 - Office 365 GCC High and DoD
 
-Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, aren't shown on this page.
+> [!NOTE]
+> Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, aren't shown on this page.
 
 ## Related articles
 
