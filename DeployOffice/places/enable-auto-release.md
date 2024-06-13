@@ -32,7 +32,7 @@ Auto Release is a feature that can be enabled for rooms that are often unused or
    - An attendee can check in through Teams Chat.
    - An attendee can check in through email, which is sent by the room to the organizer.
 
-     - An email is only sent when the meeting is not an online meeting through Teams or through a non-Microsoft online meeting provider.
+     - An email is only sent when the meeting isn't an online meeting through Teams or through a non-Microsoft online meeting provider.
 
     > [!NOTE]
     > When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this metohd of checking in to a room.
@@ -48,7 +48,6 @@ Auto Release is a feature that can be enabled for rooms that are often unused or
 
 - Even if your room doesn't have a Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device license, you have access to use Auto Release if you're part of the Microsoft Places preview. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 - If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel or paired with a Microsoft Teams Rooms.
-<!-- - You must have [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled, as our service uses the Outlook on the web framework to check in users. -->
 - > [!NOTE]
   > Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
 
@@ -62,8 +61,6 @@ Auto Release can be enabled in three different ways:
 
 > [!NOTE]
 > When Auto Release is enabled, disabled, or adjusted for a room, it can take up to 48 hours for this change to take effect. For this reason, we recommend that you adjust the settings when no meetings are scheduled for the next 48 hours.
-<!-->> - Enabling or adjusting the Auto Release setting requires up to 48 hours to take effect. We recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
-> - If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature does not release the room.-->
 
 ### Exchange PowerShell
 
@@ -87,15 +84,7 @@ Enable rooms for this feature on Teams panels under **Settings** > **Device sett
 
 When you initially [download the Panels app from Microsoft Teams admin center](/microsoftteams/devices/remote-update) that has multi-panel check-in support, allow 48 hours for the feature to become available. Additionally, when you download the Panels app, it overrides the auto release setting configured in Exchange through the `Set-CalendarProcessing` cmdlet for the room if it were configured previously.
 
-<!-- If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature doesn't release the room.
-
-When you download the Teams Panel app, validate the Auto Release setting through the Teams Panel device. The Teams Panel app overrides the Auto Release setting configured for in Exchange through the Set-CalendarProcessing cmdlet for the room. -->
-
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
-
-<!--- Check-in and room release settings let users check in to a meeting on Teams Panels at the room they reserved at the start of the meeting. If no users check in within a set amount of time after the meeting start time, the room is released and becomes available for others to reserve.
-
-Learn more about how the feature works with Teams Panels [here](/microsoftteams/devices/overview-teams-panels). --->
 
 ## Frequently asked questions
 
