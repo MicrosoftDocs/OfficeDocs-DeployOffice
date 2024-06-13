@@ -120,9 +120,9 @@ Running the following script will enable the Places Web App and Advanced Feature
 
 If you are using security groups for access to Places, ensure that you have added users to those groups. You can add users to Places security groups using any of the following methods:
 
-- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell?view=o365-worldwide).
-- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide).
-- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview?view=graph-rest-1.0&tabs=http).
+- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview).
 
 ## Activate additional clients
 
