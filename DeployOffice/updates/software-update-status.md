@@ -72,29 +72,30 @@ Only the following devices are shown on the **Microsoft 365 Apps** tab on the **
 
 The following information applies to the **Microsoft 365 Apps** tab on the **Software updates** page.
 
-- Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. For more information, see [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md).
+Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. For more information, see [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md).
 
-- The information presented on this page relies on at least [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) being sent to Microsoft.
+The information presented on this page relies on at least [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) being sent to Microsoft.
 
-- To view the information on this page, you must be assigned one of the following roles:
+To view the information on this page, you must be assigned one of the following roles:
 
 <!--Using include for adding global admin reference-->
 [!INCLUDE [Global admin reference](../includes/global-admin-reference.md)]
 
-   - Global Administrator
-   - Global Reader
-   - Office Apps Administrator
-   - Reports Reader
-   - Usage Summary Reports Reader
+- Global Administrator
+- Global Reader
+- Office Apps Administrator
+- Reports Reader
+- Usage Summary Reports Reader
 
-- The data that populates this page refreshes approximately every 48 hours.
+The data that populates this page refreshes approximately every 48 hours.
 
-- This information isn’t available to customers who have the following plans:
-   - Office 365 operated by 21Vianet
-   - Office 365 GCC
-   - Office 365 GCC High and DoD
+This information isn’t available to customers who have the following plans:
 
-- Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, aren't shown on this page.
+- Office 365 operated by 21Vianet
+- Office 365 GCC
+- Office 365 GCC High and DoD
+
+Volume licensed versions of Office, such as Office LTSC 2021 or Office 2019, aren't shown on this page.
 
 ## Related articles
 
