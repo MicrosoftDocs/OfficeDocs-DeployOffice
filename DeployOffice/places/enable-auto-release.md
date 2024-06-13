@@ -15,34 +15,29 @@ description: "Advise users they're using a room, and then free up the room for u
 
 # Enabling Auto Release for your rooms
 
-With hybrid work, rooms are often booked but left unused, which wastes resources. Microsoft Teams and Microsoft Places are working together to light up multiple ways for the user to reflect that they're using the room. If a room enabled for Auto Release isn't being used, the room is freed up for others to use.
-
-<!---DELETE THIS IF NOT EVENTUALLY USED. Learn more about how the feature works [here](/microsoftteams/devices/use-teams-panels#teams-panels-admin-experience). --->
+With hybrid work, rooms are often booked but left unused, which wastes resources. Microsoft Teams and Microsoft Places are working together to light up multiple ways for the user to reflect that they're using the room and prevent it from automatically releasing. If a room enabled for Auto Release isn't being used, the room is freed up for others to reserve.
 
 ## Overview of Auto Release
 
-Auto release is a feature that is useful for conference rooms that are frequently booked and unused, especially in locations with limited room availability. With Auto Release, you can optimize the availability of conference rooms by having meeting attendees check in through one of two ways:
+Auto Release is a feature that is useful for conference rooms that are frequently booked and unused, especially in locations with limited room availability. With Auto Release, you can optimize the availability of conference rooms by having meeting attendees check in through one of two ways:
 
 Auto Release is a feature that can be enabled for rooms that are often unused or are frequently booked and abandoned. With Auto Release, you can ensure the space is used by having meeting attendees check in through one of two ways:
 
-1. An attendee can [check in through Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about Teams Panels [here](/microsoftteams/devices/overview-teams-panels).
+1. An attendee can [check in through Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about Teams panels [here](/microsoftteams/devices/overview-teams-panels).
 :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
-1. An attendee checks in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
+1. An attendee can check in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
 :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
+1. For Public Preview Customers only (coming soon):
 
-For Public Preview Customers only (coming in July 2024)
+   - An attendee can check in through Teams Chat.
+   - An attendee can check in through email, which is sent by the room to the organizer.
 
-1. An attendee can check in through Teams Chat.
-1. An attendee can check in through email.
+     - An email is only sent when the meeting is not an online meeting through Teams or through a non-Microsoft online meeting provider.
 
-  > [!NOTE]
-  > The email check-in is for meetings with no Teams meeting link (no Teams chat attached to the meeting instance).
+    > [!NOTE]
+    > When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this metohd of checking in to a room.
 
-## Who is eligible to use Auto Release
-
-<!---  >[!NOTE]
->
-> - Auto Release is an opt-in feature. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md). --->
+## Who is eligible to use Auto Release?
 
 ### Teams panels customers
 
@@ -53,7 +48,7 @@ For Public Preview Customers only (coming in July 2024)
 
 - Even if your room doesn't have a Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device license, you have access to use Auto Release if you're part of the Microsoft Places preview. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 - If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend the feature be enabled only for rooms with a Teams panel or paired with a Microsoft Teams Rooms.
-- You must have [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled, as our service uses the Outlook on the web framework to check in users.
+<!-- - You must have [Outlook on the web](/exchange/clients/outlook-on-the-web/mailbox-access?view=exchserver-2019&preserve-view=true) enabled, as our service uses the Outlook on the web framework to check in users. -->
 - > [!NOTE]
   > Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
 
@@ -66,16 +61,15 @@ Auto Release can be enabled in three different ways:
 - Teams panel device
 
 > [!NOTE]
->
-> - When Auto Release is enabled or disabled for a room, it can take up to 48 hours for this change to take effect.
-> - Enabling or adjusting the Auto Release setting requires up to 48 hours to take effect. We recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
-> - If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature does not release the room.
+> When Auto Release is enabled, disabled, or adjusted for a room, it can take up to 48 hours for this change to take effect. For this reason, we recommend that you adjust the settings when no meetings are scheduled for the next 48 hours.
+<!-->> - Enabling or adjusting the Auto Release setting requires up to 48 hours to take effect. We recommend that you adjust the settings when there are no meetings scheduled within the next 48 hours.
+> - If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature does not release the room.-->
 
 ### Exchange PowerShell
 
 Enable rooms for this feature using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps&preserve-view=true) Exchange PowerShell command.
 
-The following example sets the Auto Release time to 10 minutes for the conference room labeled **Conference Room 1132**. If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
+The following example sets the Auto Release time to 10 minutes for the conference room named **Conference Room 1132**. If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
 
 ```powershell
 Set-CalendarProcessing -Identity "Conference Room 1132" -EnableAutoRelease $true -PostReservationMaxClaimTimeInMinutes 10
@@ -83,7 +77,7 @@ Set-CalendarProcessing -Identity "Conference Room 1132" -EnableAutoRelease $tr
 
 ### Microsoft Teams admin center
 
-You can turn on this feature in [Teams admin center](https://admin.teams.microsoft.com/) under **Teams devices** > **Panels** > **Configuration profiles** > turn on **Release room if no one checks in** and set **Release after** > assign the configuration profile to a Teams device.
+Enable rooms for this feature in [Teams admin center](https://admin.teams.microsoft.com/) under **Teams devices** > **Panels** > **Configuration profiles** > turn on **Release room if no one checks in** and set **Release after** > assign the configuration profile to a Teams device.
 
 For more information, see [Manage devices in Microsoft Teams](/microsoftteams/devices/device-management).
 
@@ -91,7 +85,7 @@ For more information, see [Manage devices in Microsoft Teams](/microsoftteams/de
 
 Enable rooms for this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
-When you initially [download the Panels app from the Microsoft Teams admin center](/microsoftteams/devices/remote-update) that has multi-panel check-in support, allow 48 hours for the feature to become available. Additionally, when you download the Panels app, it overrides the automatic release setting configured in Exchange through the `Set-CalendarProcessing` cmdlet for the room if it were configured previously.
+When you initially [download the Panels app from Microsoft Teams admin center](/microsoftteams/devices/remote-update) that has multi-panel check-in support, allow 48 hours for the feature to become available. Additionally, when you download the Panels app, it overrides the auto release setting configured in Exchange through the `Set-CalendarProcessing` cmdlet for the room if it were configured previously.
 
 <!-- If you adjust the settings for a room that has meetings scheduled over the following 48 hours and no one attends the meeting in the room, the Auto Release feature doesn't release the room.
 
@@ -117,12 +111,12 @@ The check-in experience is built on top of the Outlook on the web framework and 
 If there are meetings within 24-48 hours from when the feature was enabled, they aren't released or impacted.
 
 **I am familiar with [Check In and Room Release for Teams panels](/microsoftteams/devices/check-in-and-room-release); what is the difference between these features?**  
-For existing Teams Panel customers, there's no impact on the current Check-in and Room Release feature. With Places, you're able to see data on unclaimed meeting rooms such as the number of saved hours and eventually will be able to see the *number of meeting room hours* that were reclaimed and used productively in the Places analytics portal.  
+For existing Teams Panel customers, there's no impact on the current Check-in and Room Release feature. With Places, you're able to see data on unclaimed meeting rooms such as the number of saved hours and eventually will be able to see the number of meeting room hours that were reclaimed and used productively in the Places analytics portal.  
 
 **What triggers Auto Release?**  
 When a meeting room is booked for a meeting, the attendees have time to check into the room. When no one checks into the room using any of the above options, the room is released and becomes available for others to reserve.
 
-**When will the room be automatically released?**  
+**When will the room be auto released?**  
 The admin sets the time attendees must check in before the room is automatically released. If no time is set, the default is 10 minutes.
 
 **Is the meeting organizer required to check in?**  
