@@ -93,7 +93,7 @@ You should have the following groups created at the end of this step:
 > - Changes made when managing users in existing mail-enabled security groups are immediate.
 > - Users and security groups that are either new to the tenant or previously inactive can take up to 1 day for changes to reflect.
 
-### Step 3 - Setup the PowerShell environment for Places
+### Step 3 - Set up the PowerShell environment for Places
 
 Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.
 
