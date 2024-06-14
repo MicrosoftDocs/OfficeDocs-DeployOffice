@@ -12,7 +12,7 @@ ms.collection:
  - essentials-manage
 recommendations: true
 description: "Overview of the Microsoft 365 Apps admin center and the features and services available in the admin center."
-ms.date: 04/24/2024
+ms.date: 06/14/2024
 ---
 
 # Overview of the Microsoft 365 Apps admin center
@@ -80,6 +80,10 @@ You can use the security update status page in the Microsoft 365 Apps admin cent
 ## Cloud update
 
 With cloud update, you can automatically deliver monthly Microsoft 365 Apps updates to devices on Current Channel or Monthly Enterprise Channel. The updates are automated and sourced from the Office Content Delivery Network (CDN) on the internet, which allows for maximum uptime and minimizing end user impact and interruption. For more information, see [Overview of cloud update](cloud-update.md).
+
+## Update validation
+
+Update validation enables administrators to test updates on a select group of devices prior to a full rollout. This feature safeguards against update-related disruptions by monitoring key performance and stability metrics. It delivers precise insights for proactive issue resolution, empowering admins to deploy updates with assurance. If issues are detected, it pinpoints the impacted devices and apps, offering solutions such as rollback or update suspension.
 
 ## OneDrive sync health
 
