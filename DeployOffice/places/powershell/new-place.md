@@ -213,7 +213,7 @@ The PostalCode parameter specifies the room's postal code. The maximum length is
 
 ### -ResourceLinks
 
-The ResourceLinks parameter specifies external links or [Teams app](/microsoftteams/apps-in-teams) IDs that should be associated to this building, such as a dining menu, a link to services or a Teams app for visitor management. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
+The ResourceLinks parameter specifies external links or [Teams app](/microsoftteams/apps-in-teams) IDs that should be associated with this building, such as a dining menu, a link to services or a Teams app for visitor management. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
 
 The value must be provided as an array of links, as shown in [Example 4](/deployoffice/places/powershell/set-placev3#example-4). Each link should contain the following properties: Name, Value, and Type.  For example, a link would be written as @{name="TestLink"; value="https://contoso.com/"; type="Url"}.
 
