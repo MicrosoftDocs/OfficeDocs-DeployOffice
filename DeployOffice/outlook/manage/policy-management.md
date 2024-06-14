@@ -37,7 +37,7 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 
 There are two Mailbox Policies that should be used to allow only corporate mailboxes to be added to the new Outlook: 
 
-With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
+With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains, which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
 
 Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - personalaccountsenabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
 
@@ -76,7 +76,7 @@ Admins are advised to configure the new policy for an easier account setup proce
 
 Admins can set the policy *Automatically configure accounts based on Active Directory Primary SMTP* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** with the SMTP address that should be automatically configured. 
 
-If this policy is enabled, the primary SMTP address used to log in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
+If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
 
 By default, no default email address will be suggested.  
 
