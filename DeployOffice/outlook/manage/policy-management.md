@@ -72,13 +72,13 @@ In EAC, select > **Roles** > **Owa web app policies**. Open each policy details 
 For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration). 
 
 ## Automatically configure account based on Active Directory Primary SMTP address (coming soon)
-Admins are advised to configure the new policy for specific groups for an easier account setup process on managed devices and to guarantee that company policies are always respected. 
+Admins are advised to configure the new policy for an easier account setup process on managed devices and to guarantee that company policies are always respected. 
 
 Admins can set the policy *Automatically configure accounts based on Active Directory Primary SMTP* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** with the SMTP address that should be automatically configured. 
 
 If this policy is enabled, the primary SMTP address used to log in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
 
-The default state of the new policy is off.  
+By default, no default email address will be suggested.  
 
 ## Specify what attachments can be downloaded
 By default, new Outlook for Windows allows you to open attached Word, Excel, PowerPoint, text files, and many media files directly. The files you open vary depending on the account settings. Admins can configure the list of file name extensions that you can open in new Outlook for Windows using the cmdlets [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)  - `AllowedFileTypes` and `BlockedFileTypes`. 
@@ -88,10 +88,11 @@ By default, new Outlook for Windows allows you to open attached Word, Excel, Pow
 The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy- AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable). 
 
 ## Disable Offline
-The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline. 
+The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline.<br> 
+For more information see, [Set-OwaMailboxPolicy -OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
 
 ## Enable Location Suggestions
-The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. For more information, see [Set-OwaMailboxPolicy - PlacesEnabled](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled). 
+The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. <br> For more information, see [Set-OwaMailboxPolicy - PlacesEnabled](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled). 
 
 ## Enable a default Theme
 A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy - Default Theme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
