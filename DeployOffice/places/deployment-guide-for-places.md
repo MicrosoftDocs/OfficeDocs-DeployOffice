@@ -65,11 +65,11 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 1. Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
 1. Open **PowerShell 7** as Administrator.
 
-1. Install [PowerShell Gallery | PreparePlacesGroups 1.0](https://www.powershellgallery.com/packages/PreparePlacesGroups/1.0"https://www.powershellgallery.com/packages/prepareplacesgroups/1.0") to your local machine.
+1. Install [PowerShell Gallery | PreparePlacesGroups 1.0](https://www.powershellgallery.com/packages/prepareplacesgroups/1.0) to your local machine.
 
-1. Install [PowerShell Gallery | PreparePlacesPowershell7 1.0](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0"https://www.powershellgallery.com/packages/prepareplacespowershell7/1.0")to your local machine.
+1. Install [PowerShell Gallery | PreparePlacesPowershell7 1.0](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0)to your local machine.
 
-1. Install [PowerShell Gallery | Prepare-PlacesEnablement 1.0](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0"https://www.powershellgallery.com/packages/prepare-placesenablement/1.0") to your local machine
+1. Install [PowerShell Gallery | Prepare-PlacesEnablement 1.0](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) to your local machine
 
 ### Step 2 - Create Places Security Groups
 
