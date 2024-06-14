@@ -87,7 +87,7 @@ By default, new Outlook for Windows allows you to open attached Word, Excel, Pow
 	
 The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy- AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable). 
 
-## Disable Offline
+## Disable Offline mode
 The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline.<br> 
 For more information see, [Set-OwaMailboxPolicy -OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
 
