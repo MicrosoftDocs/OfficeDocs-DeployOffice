@@ -1,6 +1,6 @@
 ---
 title: "Licensing helper tool"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

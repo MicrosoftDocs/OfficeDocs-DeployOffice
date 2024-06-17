@@ -1,6 +1,6 @@
 ---
 title: "Set a preference for trying a default decryption password in Excel for Mac"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

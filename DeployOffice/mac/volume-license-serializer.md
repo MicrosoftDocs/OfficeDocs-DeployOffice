@@ -1,6 +1,6 @@
 ---
 title: "Overview of the Volume License (VL) Serializer"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

@@ -1,6 +1,6 @@
 ---
 title: "Deploy updates for Office for Mac"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

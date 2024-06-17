@@ -1,6 +1,6 @@
 ---
 title: "Set preferences for Outlook for Mac"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

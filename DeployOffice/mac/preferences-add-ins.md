@@ -1,6 +1,6 @@
 ---
 title: "Set a preference to prevent the use of add-ins"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro

@@ -1,6 +1,6 @@
 ---
 title: "Deployment options for admins for Office for Mac"
-ms.author: pbowden
+ms.author: geokri
 author: pbowden-msft
 manager: dougeby
 audience: ITPro
