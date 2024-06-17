@@ -37,19 +37,19 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 
 There are two Mailbox Policies that should be used to allow only corporate mailboxes to be added to the new Outlook: 
 
-With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains, which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - Allowed Organization Account Domains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
+With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains, which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - AllowedOrganizationAccountDomains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
 
-Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - personalaccountsenabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
+Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - PersonalAccountsEnabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
 
 ## Set Primary Account 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
 
 :::image type="content" source="../manage/media/policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="../manage/media/policy-management/policy-email-accounts-settings-lb.png":::
 
-We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies will be applied. For more information about this policy, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
+We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies will be applied. For more information about this policy, see [Set-OwaMailboxPolicy - ChangeSettingsAccountEnabled](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
 ## Disable automatic updating of weather location
-The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - weatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled).
+The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - WeatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled).
 
 ## Disable Focused Inbox
 The `Set-organizationconfig: FocusedInboxOn`  cmdlet turns Focused Inbox Off in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. For more information, see [Configure Focused Inbox for everyone in your organization](/microsoft-365/admin/setup/configure-focused-inbox).  
@@ -89,13 +89,13 @@ The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow a
 
 ## Disable Offline mode
 The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline.<br> 
-For more information see, [Set-OwaMailboxPolicy -OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
+For more information see, [Set-OwaMailboxPolicy - OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
 
 ## Enable Location Suggestions
 The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. <br> For more information, see [Set-OwaMailboxPolicy - PlacesEnabled](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled). 
 
 ## Enable a default Theme
-A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy - Default Theme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
+A theme defines the colors, fonts, and images that are displayed to users in the new Outlook for Windows and on the web. Admins can check more information on how to [Create a theme for Outlook on the web in Exchange Server | Microsoft Learn](/exchange/clients/outlook-on-the-web/themes#default-outlook-on-the-web-themes-in-exchange-2016) and then use the cmdlet [Set-OwaMailboxPolicy - DefaultTheme](/powershell/module/exchange/set-owamailboxpolicy#-defaulttheme) to set the default value.  
 
 ##  Disable Suggested Replies
 `OrganizationConfig` is a cmdlet that supports a seamless user experience, as employees can transition effortlessly between devices and platforms without encountering discrepancies in functionality or accessibility for the following features:
