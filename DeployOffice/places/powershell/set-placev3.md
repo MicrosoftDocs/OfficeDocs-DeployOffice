@@ -38,7 +38,6 @@ Set-PlaceV3
  [-Name]
  [-Phone]
  [-PostalCode]
- [-PostOfficeBox]
  [-ResourceLinks]
  [-State]
  [-Street]
@@ -53,7 +52,6 @@ Set-PlaceV3
  [-Description]
  [-Name]
  [-ParentId]
- [-ParentType]
  [-SortOrder]
  [-Tags]
 ```
@@ -79,7 +77,6 @@ Set-PlaceV3
  [-MTREnabled]
  [-Name]
  [-ParentId]
- [-ParentType]
  [-Phone]
  [-PostalCode]
  [-State]
@@ -115,10 +112,9 @@ Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentId daa2f89b-75
 This example updates a building's address.
 
 > [!IMPORTANT]
-> Currently, you must set all of the below address parameters when updating or adding an address. A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.  Additionally, PostOfficeBox will soon be deprecated, so that parameter should be set to an empty value.
-
+> Currently, you must set all of the below address parameters when updating or adding an address. A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.
 ```powershell
-Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox ''
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052
 ```
 
 ### Example 3
@@ -134,7 +130,7 @@ Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -GeoCoordinates "47.6
 This example updates the resource links for a building with resource links. The entire set is replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
 ```powershell
-Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}
+Set-PlaceV3 -Identity f12172b6-195d-4e6e-8f4f-eb72e41de99a -ResourceLinks @{name="TestLink";value="https://contoso.com/";type="Url"}
 ```
 
 ## Parameters
@@ -373,24 +369,6 @@ Once the ParentID is set to a room or workspace, some parameters that are actual
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
-### -ParentType
-
-The ParentType parameter specifies the type of the place that is being set as the parent. Valid values are:
-
-* Building
-* Floor
-
-> [!NOTE]
-> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.
-|Attribute|Description|
-| -------- | -------- |
-|Type:|String|
-|Position:|Named|
-|Default value:|None|
-|Required:|False|
-|Accept pipeline input:|False|
-|Accept wildcard characters:|False|
-
 ### -PostalCode
 
 The PostalCode parameter specifies the room's postal code.
@@ -404,26 +382,30 @@ The PostalCode parameter specifies the room's postal code.
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
-### -PostOfficeBox
-
-The PostOfficeBox is currently being deprecated. However, it must be provided when adding an address to a Building. Until this parameter is fully deprecated, set this to an empty string.
-
-|Attribute|Description|
-| -------- | -------- |
-|Type:|String|
-|Position:|Named|
-|Default value:|None|
-|Required:|False|
-|Accept pipeline input:|False|
-|Accept wildcard characters:|False|
-
 ### -ResourceLinks
 
-The ResourceLinks parameter specifies external links that should be associated to this building, such as a dining menu, a link to services or a building website.
+The ResourceLinks parameter specifies external links or [Teams app](/microsoftteams/apps-in-teams) IDs that should be associated to this building, such as a dining menu, a link to services or a Teams app for visitor management. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
 
-The value must be provided as an array of type Link. For each link you need to pass the properties: Name, Value, and Type. For type the possible values are: Unspecified, BlobId, Url:
-`-ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}`. The maximum length is 200 characters.
+The value must be provided as an array of links, as shown in [Example 4](/deployoffice/places/powershell/set-placev3#example-4). Each link should contain the following properties: Name, Value, and Type.  For example, a link would be written as @{name="TestLink"; value="https://contoso.com/"; type="Url"}.
 
+- **Name**
+
+  - This string will be used to show how your link or app name will be displayed in the Places app.
+  
+  - The maximum length is 200 characters.
+  
+- **Value**
+
+  - This value should be either a url link or a Teams app ID.  Teams app IDs can be found in the App Details page of the app in the [Manage apps](https://admin.teams.microsoft.com/policies/manage-apps) page in Teams admin center.
+  
+  - The maximum length is 1000 characters.
+  
+- **Type** must be one of the supported types:
+
+  - Url - indicates that this is a url link.
+  
+  - MetaOsApp - indicates that this link is a Teams app.
+  
 > [!NOTE]
 > The entire set will be replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
@@ -472,8 +454,7 @@ We recommend managing the location data on the Building rather than the Room/Wor
 
 The Street parameter specifies the room's physical address. The maximum length is 200 characters.
 
-> [!NOTE]
-> We recommend managing the location data on the Building rather than the Room/Workspace. There's a hierarchy between rooms -> floors -> buildings, and rooms inherit the location attributes of their Building.
+We recommend managing the location data on the Building rather than the Room/Workspace. There's a hierarchy between rooms -> floors -> buildings, and rooms inherit the location attributes of their Building.
 
 |Attribute|Description|
 | -------- | -------- |
