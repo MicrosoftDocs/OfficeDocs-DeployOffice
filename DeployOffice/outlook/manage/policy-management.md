@@ -99,7 +99,7 @@ A theme defines the colors, fonts, and images that are displayed to users in
 
 ##  Disable Suggested Replies
 `OrganizationConfig` is a cmdlet that supports a seamless user experience, as employees can transition effortlessly between devices and platforms without encountering discrepancies in functionality or accessibility for the following features:
-[Set-OrganizationConfig – Suggested Replies](/powershell/module/exchange/set-organizationconfig#-suggestedreplies).
+[Set-OrganizationConfig – Suggested Replies](/powershell/module/exchange/set-organizationconfig).
 
 
 ## Disable Microsoft Loop
