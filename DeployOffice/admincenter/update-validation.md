@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 04/24/2024
+ms.date: 06/18/2024
 ---
 
 # Update validation
@@ -65,7 +65,9 @@ For a status of yellow or red, the admin can review the list of devices and see 
 ### Additional requirements
 The following additional requirements must be met:
 - Devices must be managed via cloud update.
-- Diagnostic data must be turned on for your devices.
+- Diagnostic data for Office must be turned on for your devices.
+    - We recommend to enable [full diagnostic data](../privacy/optional-diagnostic-data.md) to get reliability and performance results.
+    - If your devices send [required diagnostic data](../privacy/required-diagnostic-data.md) only, only reliability results will be shown.
 - Devices must be on Monthly Enterprise Channel.
 - You must configure and implement rollout waves.
 - A period of seven days must be set between wave one and wave two rollouts.
