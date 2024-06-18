@@ -66,7 +66,7 @@ For a status of yellow or red, the admin can review the list of devices and see 
 The following additional requirements must be met:
 - Devices must be managed via cloud update.
 - Diagnostic data for Office must be turned on for your devices.
-    - We recommend to enable [full diagnostic data](../privacy/optional-diagnostic-data.md) to get reliability and performance results.
+    - We recommend that you enable [full diagnostic data](../privacy/optional-diagnostic-data.md) to get reliability and performance results.
     - If your devices send [required diagnostic data](../privacy/required-diagnostic-data.md) only, only reliability results are shown.
 - Devices must be on Monthly Enterprise Channel.
 - You must configure and implement rollout waves.
