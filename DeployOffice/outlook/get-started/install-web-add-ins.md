@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Learn how Office web add-in counterparts are installed when a user switches to new Outlook for Windows for the first time."
-ms.date: 05/23/2024
+ms.date: 06/18/2024
 ---
 
 # Install web add-in counterparts of existing COM add-ins in new Outlook for Windows

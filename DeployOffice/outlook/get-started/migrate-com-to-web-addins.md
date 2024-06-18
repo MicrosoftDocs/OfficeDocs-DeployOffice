@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of transitioning from COM to web add-ins in Outlook"
-ms.date: 05/23/2024
+ms.date: 04/17/2024
 ---
 
 # Migrate from COM to web add-ins

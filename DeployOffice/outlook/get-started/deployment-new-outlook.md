@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides an overview of deployment for new Outlook for Windows"
-ms.date: 05/21/2024
+ms.date: 11/09/2023
 ---
 
 # Deployment overview for the new Outlook for Windows
