@@ -99,7 +99,7 @@ These metrics are individually calculated for each of the following apps and add
 These metrics are calculated individually per device and form the pre-update baseline for the given device. For example, if there are 10 devices on the first deployment wave and each device runs Microsoft 365 Apps with two extra add-ins, 14 metrics are calculated per device, 140 in total.
 
 ### Post-update health baseline
-Once a device has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them on an ongoing base. Once a statistical confidence of 95% is passed, the results are send to the next stage. It might take several days for update validation to receive enough Diagnostic Data.
+Once a device has updated to the newest version and sends Diagnostic Data, update validation starts to compute the post-update baseline. It uses the same metrics as the pre-update baseline and calculates them on an ongoing base. Once a statistical confidence of 95% is passed, the results are sent to the next stage. It might take several days for update validation to receive enough Diagnostic Data.
 
 ### Applying thresholds and scoring results
 This stage involves comparing the baselines and individual metrics for each device. Metrics that have improved, such as the app launch time of Outlook, are disregarded in the subsequent steps. However, metrics that have worsened, such as the reliability of Word, are evaluated using the following thresholds to determine if the user is affected by the degradation.
