@@ -74,8 +74,8 @@ New-Place -Type Building -Name 'Building 3'
 After Building 3 is created successfully, read its PlaceId to use when setting the ParentId on the floors.
 
 ```powershell
-New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
-New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
+New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
+New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 ```
 
 ### Example 2
