@@ -20,11 +20,9 @@ ms.date: 06/19/2024
 
 Office for Mac allows administrators to configure various settings to enhance the user experience and streamline support processes. While some settings apply suite-wide, others are specific to individual apps but serve a common purpose across the suite. This article provides detailed information about per-app settings, enabling IT administrators to configure preferences that apply to multiple Office apps on Mac.
 
-## Logging for Customer Support Settings
+### CustomerLoggingEnabled
 
 Enable verbose logging for Customer Support escalations.
-
-### CustomerLoggingEnabled
 
 | **Category** | **Details** |
 |--------------|-------------|
