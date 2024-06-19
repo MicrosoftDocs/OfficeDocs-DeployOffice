@@ -14,9 +14,11 @@ description: "Shows settings that apply to all Office apps on Mac but are config
 ms.date: 06/19/2024
 ---
 
-# Per-App Settings for Office on Mac
+# Set Per-App Settings for Office on Mac
 
-This article provides information about settings that apply to all Office apps on Mac but are configured per app.
+***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+
+Office for Mac allows administrators to configure various settings to enhance the user experience and streamline support processes. While some settings apply suite-wide, others are specific to individual apps but serve a common purpose across the suite. This article provides detailed information about per-app settings, enabling IT administrators to configure preferences that apply to multiple Office apps on Mac.
 
 ## Logging for Customer Support Settings
 

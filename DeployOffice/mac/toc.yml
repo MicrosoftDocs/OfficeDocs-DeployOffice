@@ -64,8 +64,8 @@ items:
             href: preferences-outlook.md
           - name: Suite preferences
             href: preferences-office.md
-          - name: Per-app Preferences
-            href: set-preference-per-app.md  
+          - name: Per-app preferences
+            href: set-preference-per-app.md
 
       - name: Related articles
         items:
