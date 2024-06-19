@@ -16,7 +16,7 @@ ms.date: 06/19/2024
 
 # Set per-app preference for Office for Mac
 
-***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, OneNote for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
 Office for Mac allows administrators to configure various settings to enhance the user experience and streamline support processes. While some settings apply suite-wide, others are specific to individual apps but serve a common purpose across the suite. This article provides detailed information about per-app settings, enabling IT administrators to configure preferences that apply to multiple Office apps on Mac.
 
