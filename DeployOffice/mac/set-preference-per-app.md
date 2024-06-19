@@ -1,5 +1,5 @@
 ---
-title: "Per-App preference for Office on Mac"
+title: "Per-App preference for Office for Mac"
 ms.author: geokri
 author: nicholasswhite
 manager: dougeby
@@ -14,7 +14,7 @@ description: "Shows settings that apply to all Office apps on Mac but are config
 ms.date: 06/19/2024
 ---
 
-# Set Per-App preference for Office on Mac
+# Set per-app preference for Office for Mac
 
 ***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
 
