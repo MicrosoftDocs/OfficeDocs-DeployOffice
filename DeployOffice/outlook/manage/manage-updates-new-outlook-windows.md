@@ -1,15 +1,16 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Manage updates in new Outlook for Windows
 description: Describes how to manage updates in new Outlook for Windows that deliver features through a Targeted Release or Standard Release ring.
-author:      JanelleMcIntosh-MSFT # GitHub alias
+author: JanelleMcIntosh-MSFT
 ms.author: janellem
 manager: serdars
-ms.service: outlook
+audience: ITPro
 ms.topic: conceptual
+ms.service: outlook
+ms.collection: Tier3
+ms.localizationpriority: medium
+ms.custom: intro-overview
+recommendations: true
 ms.date: 05/07/2024
 ---
 

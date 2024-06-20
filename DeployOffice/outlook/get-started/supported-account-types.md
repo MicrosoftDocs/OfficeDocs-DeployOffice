@@ -6,7 +6,7 @@ manager: triciag
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
-ms.collection: Tier1
+ms.collection: Tier3
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
