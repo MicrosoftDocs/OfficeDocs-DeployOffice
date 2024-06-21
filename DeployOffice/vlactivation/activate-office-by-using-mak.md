@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Multiple Activation Key (MAK) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 03/01/2023
+ms.date: 06/11/2024
 ---
 
 # Activate volume licensed versions of Office by using MAK
@@ -18,11 +18,11 @@ ms.date: 03/01/2023
   
 Multiple Activation Key (MAK) activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against those services.
 
-Each MAK has a predetermined number of allowed activations and is based on your volume licensing agreement. Each Office activation that uses MAK counts toward the activation limit. After Office is activated, no re-activation is required unless the hardware changes significantly.
+Each MAK has a predetermined number of allowed activations and is based on your volume licensing agreement. Each Office activation that uses MAK counts toward the activation limit. After Office is activated, no reactivation is required unless the hardware changes significantly.
 
 There are two ways to activate computers by using MAK:
   
-- *MAK independent activation* requires that each computer independently connect and be activated with Microsoft, either over the internet or by telephone. MAK independent activation is best for computers that have direct access to the internet.
+- *MAK independent activation* means each computer must connect and activate with Microsoft over the internet or by telephone. This method is best for computers with direct internet access.
 
 - *MAK proxy activation by using VAMT* enables one computer with internet access to process activation requests on behalf of multiple computers. MAK proxy activation is configured by using the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool). MAK proxy activation is appropriate for environments in which security concerns might restrict direct access to the internet or to development and test labs. For more information, see [Perform Proxy Activation](/windows/deployment/volume-activation/proxy-activation-vamt).
 
@@ -90,9 +90,9 @@ If you need to change the Office 2016 product key on multiple computers after Of
 
 ### Enable a non-admin user to activate Office by using MAK
 
-An administrator can create a registry key that allows a standard user (that is, a user who isn't an administrator) to activate Office 2016 by using MAK. By default, volume licensed versions of Office 2016 disable this behavior.
+An administrator can create a registry key that lets a standard user (a user who isn't an administrator) activate Office 2016 with MAK. By default, volume-licensed versions of Office 2016 disable this behavior.
 
-This can be used if you want a user to manually activate Office by using MAK, replace an existing key with a new key, or switch from KMS to MAK activation.
+Use this method if you want a user to manually activate Office with MAK, replace an existing key with a new one, or switch from KMS to MAK activation.
 
 To enable this behavior, add the following line to the Config.xml file:
 
