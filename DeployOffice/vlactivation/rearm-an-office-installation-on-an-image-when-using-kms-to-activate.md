@@ -9,22 +9,22 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
-ms.date: 03/01/2023
+ms.date: 06/21/2024
 ---
 
 # Rearm a volume licensed version of Office that's included in an operating system image
 
  ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
-There is a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.
+There's a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.
 
-If you want to deploy a volume licensed version of Office, Project, or Visio, as part of an operating system image, you must rearm your Office installation before you capture the image. If you do not rearm, users might see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment.
+If you want to deploy a volume licensed version of Office, Project, or Visio, as part of an operating system image, you must rearm your Office installation before you capture the image. If you don't rearm, users might see notification dialog boxes at the time that the image is deployed, instead of 25 days after deployment.
   
 Rearming does the following important tasks:
   
 - Resets the grace timer to 30 days.
 - Freezes the grace timer until either an Office application is run, or the ospp.vbs script is run.
-- Resets the client computer ID (CMID). This is important because the KMS host computer uses the CMID to determine the number of unique clients. You can use the ospp.vbs script to check the CMID.
+- Resets the client computer ID (CMID). The KMS host computer uses the CMID to determine the number of unique clients. You can use the ospp.vbs script to check the CMID.
 
 For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script).
 
