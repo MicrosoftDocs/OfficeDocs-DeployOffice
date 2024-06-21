@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
-ms.date: 06/29/2023
+ms.date: 06/21/2024
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
@@ -38,7 +38,7 @@ To verify that Microsoft 365 Apps for enterprise and the Windows client device m
 
 ## Steps to configure device-based licensing for Microsoft 365 Apps for enterprise
 
-After you have verified that your Windows client devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
+After you verify that your Windows client devices and Microsoft 365 Apps for enterprise installations meet the specified requirements, you need to do the following tasks:
 - Add the Windows client devices to a group that's available in Microsoft Entra ID.
 - Assign the appropriate licenses to that group by signing into the Microsoft 365 admin center and going to **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
 - Configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing.
@@ -64,7 +64,7 @@ For more information about Azure group management, see the following articles:
 - [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
 - [Microsoft Entra Connect Sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-After you have created the appropriate group type and assigned the appropriate Windows client devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
+After you create the appropriate group type and assigned the appropriate Windows client devices to the group, you need to assign licenses to that group. For the steps on how to do that, see [Manage licenses for devices](/microsoft-365/commerce/licenses/manage-licenses-for-devices). You can assign licenses to only one group, but you can nest groups within that one group.
 
 > [!IMPORTANT]
 > - The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
@@ -74,7 +74,7 @@ After you have created the appropriate group type and assigned the appropriate W
 
 ## Configure Microsoft 365 Apps for enterprise to use device-based licensing
 
-After you have assigned licenses to the group in Microsoft Entra ID that contains your Windows client devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
+After you assign licenses to the group in Microsoft Entra ID that contains your Windows client devices, you need to configure Microsoft 365 Apps for enterprise to use device-based licensing instead of user-based licensing. You can do that by using either of the following methods:
  - The Office Deployment Tool and the DeviceBasedLicensing setting.
 - Group Policy and the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting
 
@@ -107,7 +107,7 @@ The required policy can be set through a Configuration Profile in Microsoft Intu
 - Navigate to **Devices** > **Configuration Profiles**
 - Create a new profile, select **Windows 10 or later** as the platform and **Settings Catalog** as the profile type.
 - Navigate to **Microsoft Office 2016 (Machine) > Licensing Settings** and select the **Use a device-based license for Office 365 ProPlus** policy.
-- **Enable** the policy and assign it to group which contains the targeted devices.
+- **Enable** the policy and assign it to group that contains the targeted devices.
 
 ### Using Group Policy 
 If you use Group Policy to configure Microsoft 365 Apps for enterprise settings, you can enable the "Use a device-based license for Microsoft 365 Apps for enterprise" policy setting. This policy setting can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Licensing Settings.
@@ -121,13 +121,13 @@ You can view device licensing status by signing in to the [Microsoft 365 Apps ad
 
 You can also verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
-A device that hasn't been configured properly for device-based licensing impacts functionality. When a user tries to use Microsoft 365 Apps for enterprise on the device, Microsoft 365 is in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
+A device that's not configured properly for device-based licensing impacts functionality. When a user tries to use Microsoft 365 Apps for enterprise on the device, Microsoft 365 is in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
 In those cases, the user also sees a banner beneath the ribbon in the document with the following message:
 
 > **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
-To troubleshoot this issue, make sure the device is correctly joined to Microsoft Entra ID and that the device is added to the group that has been assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
+To troubleshoot this issue, make sure the device is correctly joined to Microsoft Entra ID and that the device is added to the group that's assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
 
 In other cases, the user might see this message:
 
@@ -137,6 +137,6 @@ In this case, the device is having problems contacting the Office Licensing Serv
 
 ## Transition from subscription licensing or shared computer activation to device-based licensing
 
-If Microsoft 365 Apps are already installed and activated with user-based subscription licensing or shared computer activation, you need to reset the license state on the device before it transitions over to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
+If Microsoft 365 Apps are installed and activated with user-based subscription licensing or shared computer activation, reset the license state on the device before switching to device-based licensing. To reset the activation state, see [Reset Microsoft 365 Apps for enterprise activation state](/office/troubleshoot/activation/reset-office-365-proplus-activation-state).
 
 Make sure the device has access to the internet or that your firewall isn't preventing access to the Office licensing service. For more information about firewall settings, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
