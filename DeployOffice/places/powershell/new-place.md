@@ -14,6 +14,7 @@ recommendations: true
 description: "Places PowerShell cmdlet to create new places."
 ---
 
+---
 # New-Place
 
 Use the New-Place cmdlet to create buildings or floors within your Places directory.
@@ -33,7 +34,6 @@ New-Place
  [-GeoCoordinates]
  [-Name]
  [-PostalCode]
- [-PostOfficeBox]
  [-State]
  [-Street]
  [-ResourceLinks]
@@ -48,7 +48,6 @@ New-Place
  [-Description]
  [-Name]
  [-ParentId]
- [-ParentType]
  [-Tags]
  [-Type]
 ```
@@ -75,8 +74,8 @@ New-Place -Type Building -Name 'Building 3'
 After Building 3 is created successfully, read its PlaceId to use when setting the ParentId on the floors.
 
 ```powershell
-New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
-New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a -ParentType Building
+New-Place -Type Floor -Name 'Lobby' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
+New-Place -Type Floor -Name '1' -ParentId f12172b6-195d-4e6e-8f4f-eb72e41de99a
 ```
 
 ### Example 2
@@ -86,7 +85,7 @@ This example creates a new building with address information.
 > Currently, you must set all of the below address parameters when adding an address.  A fix will be released soon so that you can set any of the parameters without requiring all of the parameters.
 
 ```powershell
-New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052 -PostOfficeBox ''
+New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of Redmond Campus' -CountryOrRegion US -State WA -City Redmond -Street 'Street 3' -PostalCode 98052
 ```
 
 ### Example 3
@@ -94,7 +93,7 @@ New-Place -Name 'Building 3' -Type Building -Description 'Building 3 in North of
 This example creates a new building with resource links.
 
 ```powershell
-New-Place -Name 'Building 3' -Type Building -ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}'
+New-Place -Name 'Building 3' -Type Building -ResourceLinks @{name="TestLink";value="https://contoso.com/";type="Url"}'
 ```
 
 ## Parameters
@@ -199,25 +198,6 @@ Once the ParentId is set for a room or workspace, legacy room/workspace properti
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
-### -ParentType
-
-The ParentType parameter specifies the type of the place that is being set as the parent. Valid values are:
-
-* Building
-* Floor
-
->[!NOTE]
-> This property is currently required if you're setting ParentId, but we plan to deprecate it soon because ParentId is sufficient to validate parent type.
-
-|Attribute|Description|
-| -------- | -------- |
-|Type:|String|
-|Position:|Named|
-|Default value:|None|
-|Required:|False|
-|Accept pipeline input:|False|
-|Accept wildcard characters:|False|
-
 ### -PostalCode
 
 The PostalCode parameter specifies the room's postal code. The maximum length is 200 characters.
@@ -231,25 +211,32 @@ The PostalCode parameter specifies the room's postal code. The maximum length is
 |Accept pipeline input:|False|
 |Accept wildcard characters:|False|
 
-### -PostOfficeBox
-
-The PostOfficeBox is currently being deprecated. However, it must be provided when adding an address to a Building. Until this parameter is fully deprecated, set this to an empty string.
-
-|Attribute|Description|
-| -------- | -------- |
-|Type:|String|
-|Position:|Named|
-|Default value:|None|
-|Required:|False|
-|Accept pipeline input:|False|
-|Accept wildcard characters:|False|
-
 ### -ResourceLinks
 
-The ResourceLinks parameter specifies external links that should be associated to this building, such as a dining menu, a link to services or a building website.
+The ResourceLinks parameter specifies external links or [Teams app](/microsoftteams/apps-in-teams) IDs that should be associated with this building, such as a dining menu, a link to services or a Teams app for visitor management. For more information on how to set up services in Places, see [Services in Places](/deployoffice/places/services-in-places).
 
-The value must be provided as an array of type Link. For each link you need to pass the properties: Name, Value, and Type. For type the possible values are: Unspecified, BlobId, Url:
-`-ResourceLinks @{name="TestLink"; Value="https://contoso.com/"; type="Url"}`. The maximum length is 200 characters.
+The value must be provided as an array of links, as shown in [Example 4](/deployoffice/places/powershell/set-placev3#example-4). Each link should contain the following properties: Name, Value, and Type.  For example, a link would be written as @{name="TestLink"; value="https://contoso.com/"; type="Url"}.
+
+- **Name**
+
+  - This string will be used to show how your link or app name will be displayed in the Places app.
+  
+  - The maximum length is 200 characters.
+  
+- **Value**
+
+  - This value should be either a url link or a Teams app ID.  Teams app IDs can be found in the App Details page of the app in the [Manage apps](https://admin.teams.microsoft.com/policies/manage-apps) page in Teams admin center.
+  
+  - The maximum length is 1000 characters.
+  
+- **Type** must be one of the supported types:
+
+  - Url - indicates that this is a url link.
+  
+  - MetaOsApp - indicates that this link is a Teams app.
+  
+> [!NOTE]
+> The entire set will be replaced on update. To add or remove a value, be sure to include previous values that should be persisted.
 
 |Attribute|Description|
 | -------- | -------- |

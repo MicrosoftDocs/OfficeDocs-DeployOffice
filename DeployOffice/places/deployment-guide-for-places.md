@@ -17,12 +17,17 @@ description: "Provides Office admins with an overview of how to deploy Microsoft
 
 Microsoft Places Public Preview lets you introduce more flexible work within your organization as an IT administrator. Integrated with Microsoft 365, Places helps users make informed decisions about their work dynamics, which can lead to increased productivity and enhanced collaboration. For more information, see [Microsoft Places](https://www.microsoft.com/microsoft-places).
 
+> [!NOTE]
+> Microsoft Places is in Public Preview – not all features are immediately available. Advanced Features require tenants to opt-in.  Please visit [Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview) for more details.
+> 
+> Users will not be able to use advanced features until you have opted into advanced features and been notified by the Places team that advanced features are available for your tenant.
 ## Prerequisites
 
 Before onboarding Places, complete the following prerequisites:
 
 - Be assigned the [Exchange administrator role](/microsoft-365/admin/add-users/about-exchange-online-admin-role) to manage Exchange-related configurations for Places.
-- Ensure you have the latest [PowerShell](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
+- Ensure you have the latest [PowerShell 7](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&preserve-view=true).
+
 - Verify you have one of the following subscriptions:
 
   - Microsoft 365 Business Basic
@@ -31,57 +36,98 @@ Before onboarding Places, complete the following prerequisites:
   - Microsoft 365 or Office 365 (E1, E3, E5)
   - Microsoft 365 or Office 365 (A1, A3, A5)
   - Microsoft 365 Frontline Worker (F1, F3)
-
+    
 > [!NOTE]
 > More information on feature availability by license type will be shared as we get closer to general availability.
+
+## Overview of Places Security Groups
+
+Places currently uses [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups) to provide access to features needed by different user groups. In Step 1, you will create the following four security groups:
+
+1. _Places Users_: This group is for users who will have access to the Places Web App. 
+
+1. _Places Advanced Users_: This group is for users who will have access to Places Advanced features like Places Finder, Space Analytics, and Intelligent Booking. Users added to Places Advanced Users group will be part of the Places Users group.
+
+1. _Places Mobile Users_: This is for users who can use the [Places iOS app](/deployoffice/places/configure-the-ios-app). Users added to Places Mobile Users group will be part of the Places Users group and the Places Advanced features group.
+
+1. _Places Analytics Users_: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
+
+> [!NOTE]
+> Advanced Features are Opt-In only. Please visit Please visit __[Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview)__ for more details.
+>
+>These security groups can be created without access to advanced features, but users will not be able to use these features until you have opted into advanced features and been notified by the Places team that advanced features are available for your tenant.
 
 ## Deploy Places
 
 Once you've completed all prerequisite steps, you're now ready to deploy Places to users in your organization:
 
-### Step 1 - Install the Places module
+### Step 1 - Create Places Security Groups
 
-You can install the Places module by running the following command in PowerShell:
+1. Install the [PreparePlacesGroups 1.0](https://www.powershellgallery.com/packages/prepareplacesgroups/1.0) script.
 
-```powershell
-Install-Module -Name MicrosoftPlaces -AllowPrerelease -Force
-```
+2. Open **PowerShell 7** as Administrator.
 
-> [!IMPORTANT]
-> You must include the -Force parameter to prevent cached content from being read.
+3. Run the PreparePlacesGroups script.
 
-### Step 2 - Enable Places
+You should have the following groups created at the end of this step:
 
-Enabling Places and Workplans lets you facilitate hybrid work coordination in your tenant. With Workplans, employees can specify their work location such as in-office or remote.
+|Experience / Feature |Group Name|Group smtp address|
+| -------- | -------- | -------- |
+|Basic experience|Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesUsers@contoso.com |
+|Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
+|Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
+|Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
 
-Use the following commands to enable buildings, apps, and location sharing controls when onboarding your tenant to Places Public Preview.
-
-Places can be enabled to a specific set of users by utilizing [mail-enabled security groups](/exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups).
-
-> [!NOTE]
->
-> - Changes made when managing users in existing mail-enabled security groups are immediate.
-> - Users and security groups that are either new to the tenant or previously inactive can take up to 1 day for changes to reflect.
-
-Connect to the Microsoft Places service in a new PowerShell and enable Places for a mail-enabled security group by running the following command:
-
-```powershell
-Connect-MicrosoftPlaces 
-Set-PlacesSettings -Collection Places -EnablePlacesWebApp  ‘Default:false,OID:<OID of Mail-enabled Security Group>@<Tenant ID>:true’
-```
 
 > [!NOTE]
-> It can take up to 1 day for users to gain access to the features.
+> - This will create all of the security groups outlined above. Depending on your needs, not all security groups will be used.
+> - These new security groups may take up to 1 day to be reflected in your Exchange directory and consumed in Places experiences.
 
-### Step 3 - Activate additional clients
+### Step 2 - Set up the PowerShell environment for Places
 
-See the table below to learn more about activating different clients for Places:
+Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.
 
-|Client|Result|
+1. Install the [PreparePlacesPowershell7 1.0](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0) script.
+ 
+2. Open a new **PowerShell 7** window (separate from Step 1). Currently, Exchange cmdlets and Places cmdlets cannot be executed from the same window.  Therefore, the PowerShell scripts used in Steps 2 and 3 must be executed in a separate window from the script in Step 1.
+
+3.  Run the PreparePlacesPowershell7 script.
+
+### Step 3 - Enable Places
+
+Running the following script will enable the Places Web App and Advanced Features.
+
+1. Install the [Prepare-PlacesEnablement 1.0](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
+  
+2. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
+
+### Step 4 - Set up Buildings and Floors
+
+Microsoft Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Utilize the steps found in at the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to finish setting up your Places Directory. 
+
+## Next Steps
+
+### Add or manage users with Security Groups
+
+Ensure that you have added users to the groups created above. You can add users to Places security groups using any of the following methods:
+
+- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview).
+
+> [!NOTE]
+> It may take up to 1 day for membership changes to be reflected in the Places experiences.
+
+### Activate Places clients
+
+You can access Places from your Microsoft 365 apps, wherever you work. See the table below to learn more about activating different clients for Places:
+
+|Client|Details|
 |----|----|
-|Outlook|Places features are available in the latest version of [Outlook](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
-|Teams|Places is available as a [Teams app](/microsoftteams/apps-in-teams) within Teams and you can opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable Places location aware features in Teams.|
-|Places iOS app| The Places mobile experience is available as an [iOS app](/DeployOffice/places/configure-the-ios-app).|
+|Places on the web|Users in the Places Users, Places Advanced Users, or Places Analytics Users groups can access features on the web [here](https://outlook.office.com/places).|
+|Places in Outlook|Users in the Places Users, Places Advanced Users, or Places Analytics Users groups can access features as an app in [Outlook on the web](https://outlook.office.com) or in [the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-outlook-desktop-new-outlook-toggle).|
+|Teams|Users in the Places Users, Places Advanced Users, or Places Analytics Users groups can access features in the [Teams app](/microsoftteams/apps-in-teams) within Teams.  Teams users can also opt in to [Teams Public Preview](/microsoftteams/public-preview-doc-updates?tabs=new-teams-client) to enable additional Places location features in Teams.|
+|Places iOS app|Users in the Places Mobile User group can access features in the [iOS app](/DeployOffice/places/configure-the-ios-app).|
 
 ## Related topics
 

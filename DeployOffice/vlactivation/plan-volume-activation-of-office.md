@@ -9,14 +9,14 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with an overview of the different types of activation, such as KMS and MAK, available for volume licensed versions of Office, Project, and Visio."
-ms.date: 03/01/2023
+ms.date: 06/21/2024
 ---
 
 # Overview of volume activation of Office
 
 ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
-Activation is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
+Activation is the process of validating software with the manufacturer after it's installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and hasn't been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
 > [!NOTE]
 > If you're a user trying to activate a personal copy of Office at home, see [Activate Office](https://support.microsoft.com/office/5bd38f38-db92-448b-a982-ad170b1e187e) instead of reading this article.
@@ -49,7 +49,7 @@ For more information, see the following articles:
 
 MAK activation is used for one-time activation through Microsoft-hosted activation services, either via the internet or by telephone. MAK activation requires that a MAK is installed on a client computer and instructs that computer to activate itself against those services.
 
-Each MAK has a predetermined number of allowed activations and is based on your volume licensing agreement. Each Office activation that uses MAK counts toward the activation limit. After Office is activated, no re-activation is required unless the hardware changes significantly.
+Each MAK has a predetermined number of allowed activations and is based on your volume licensing agreement. Each Office activation that uses MAK counts toward the activation limit. After Office is activated, no reactivation is required unless the hardware changes significantly.
 
 For more information, see [Activate volume licensed versions of Office by using MAK](activate-office-by-using-mak.md).
   

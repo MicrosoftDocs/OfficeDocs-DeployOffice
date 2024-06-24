@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides admins with guidance on how to update Microsoft 365 Apps by using Microsoft Configuration Manager"
-ms.date: 03/01/2023
+ms.date: 06/21/2024
 ---
 
 # Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager
@@ -94,7 +94,7 @@ To use Group Policy, do the following steps:
 
 You can use the latest version of the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to configure Office to receive updates from Configuration Manager.
 
-To configure this capability, use a text editor, such as Notepad, to modify the configuration file for the Office Deployment Tool. In the Add element, include the OfficeMgmtCOM attribute and set its value to True, as seen in the following example.
+To configure this capability, use a text editor, such as Notepad, to modify the configuration file for the Office Deployment Tool. In the Add element, include the OfficeMgmtCOM attribute, and set its value to True, as seen in the following example.
 
 ```xml
 <Configuration>
@@ -107,7 +107,7 @@ To configure this capability, use a text editor, such as Notepad, to modify the 
  </Configuration>
 ```
 
-We recommend that you also set the value of the Enabled attribute to **True** in the Updates element, which is the default setting.  When OfficeMgmtCOM and Updates element are both set to true, updates are still delivered only by Configuration Manager. The scheduled task Office Automatic Updates 2.0, which is registered during Microsoft 365 Apps installation, must remain enabled. That task initiates product configuration tasks such as channel management.
+We recommend that you also set the value of the Enabled attribute to **True** in the Updates element, which is the default setting. When OfficeMgmtCOM and Updates element are both set to true, updates are delivered only by Configuration Manager. The scheduled task Office Automatic Updates 2.0, which is registered during Microsoft 365 Apps installation, must remain enabled. That task initiates product configuration tasks such as channel management.
 
 ## Enable Microsoft 365 Apps clients to receive updates from the Office CDN instead of Configuration Manager
 
@@ -136,6 +136,6 @@ The update package that Microsoft publishes to WSUS only appears in the WSUS cat
 
 The package contains a file named noop.exe. But, that file doesn't contain any code and shouldn't be downloaded or run.
 
-For each update release, there are different packages for each architecture and for each update channel. For example, for the May update release, there is a package for the 32-bit edition of Current Channel and a package for the 64-bit edition of Current Channel. In June, there will be two new packages for Current Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
+For each update release, there are different packages for each architecture and for each update channel. For example, for the May update release, there's a package for the 32-bit edition of Current Channel and a package for the 64-bit edition of Current Channel. In June, there are two new packages for Current Channel, one for each architecture. The packages contain information so that Configuration Manager knows which packages are more recent than other packages. For example, that the June package supersedes the May package.
 
 There aren't separate packages for the different Office clients. For example, an update package for the 32-bit edition of Current Channel has information about Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business, and the subscription versions of the Project and Visio desktop apps.
