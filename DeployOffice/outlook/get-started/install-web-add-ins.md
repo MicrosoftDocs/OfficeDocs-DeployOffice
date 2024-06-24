@@ -25,7 +25,7 @@ When a user switches to new Outlook for Windows for the first time, they're give
 
 ## Identify the Office web add-ins to be installed
 
-The installation of Office web add-in counterparts during the switch to new Outlook for Windows is only supported for some COM add-ins. For a list of supported add-ins, see the "List of add-ins installed from classic Outlook for Windows" section of [Import settings and install add-ins on new Outlook for Windows](https://prod.support.services.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc).
+The installation of Office web add-in counterparts during the switch to new Outlook for Windows is only supported for some COM add-ins. For a list of supported add-ins, see the "List of add-ins installed from classic Outlook for Windows" section of [Import settings and install add-ins on new Outlook for Windows](https://support.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc).
 
 >[!NOTE]
 > Existing Office web add-ins installed by the user in classic Outlook for Windows remain installed when they switch to the new client.
