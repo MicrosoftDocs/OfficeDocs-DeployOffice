@@ -30,7 +30,7 @@ The following table provides a list of connected experiences that analyze your c
 | 3D Maps <sup>[1]</sup>    | [Get started with 3D Maps](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt text <sup>[2]</sup> | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
-|Automatically apply or recommend sensitivity labels <sup>[2]</sup>, <sup>[3]</sup>|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
+|Automatically apply or recommend sensitivity labels <sup>[2]</sup> <sup>[3]</sup>|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
 |Class Notebook add-ins|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
@@ -41,7 +41,7 @@ The following table provides a list of connected experiences that analyze your c
 |Learning Tools|[Learning Tools](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Live captions & subtitles |  [Present with real-time, automatic captions or subtitles in PowerPoint](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Map chart <sup>[1]</sup>    | [Create a Map chart in Excel](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| Microsoft Purview Data Loss Prevention policy tips <sup>[2]</sup>, <sup>[3]</sup> |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Microsoft Purview Data Loss Prevention policy tips <sup>[2]</sup> <sup>[3]</sup> |[Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 |PivotTable recommendations|[Create a PivotTable to analyze worksheet data](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | PowerPoint Designer <sup>[2]</sup>  | [Create professional slide layouts with Designer](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
@@ -53,7 +53,7 @@ The following table provides a list of connected experiences that analyze your c
 | Scan a business card|  [Scan or tap to add contacts on Outlook for Android](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Send to Kindle <sup>[1]</sup>|[Send to Kindle](https://support.microsoft.com/office/a53d880d-9952-4bf1-abc5-6bce8db5a273)|
 |Sharing notification|[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
-|Similarity checker <sup>[1]</sup>, <sup>[2]</sup>|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
+|Similarity checker <sup>[1]</sup> <sup>[2]</sup>|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | Smart Lookup <sup>[1]</sup>   | [Get insights into what you're working on with Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 |Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Suggested replies <sup>[2]</sup> | [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
