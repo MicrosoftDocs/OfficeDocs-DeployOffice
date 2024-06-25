@@ -68,6 +68,10 @@ The following table provides a list of connected experiences that analyze your c
 >
 > <sup>[2]</sup> These connected experiences won’t be available to your users if your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. This applies to Windows devices running Version 2406 or later in Word, Excel, PowerPoint, and Outlook of Microsoft 365 Apps. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
 >
+> <sup>[2]</sup> These connected experiences won’t be available to your users in the following scenarios on Windows devices running Version 2406 or later in Word, Excel, PowerPoint, and Outlook of Microsoft 365 Apps:
+> - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
+> - If your organization is using Double Key Encryption (DKE) to protect files and emails.
+>
 > <sup>[3]</sup> Starting with Version 2406 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals.
 >
 > <sup>[4]</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of Editor is sent to Microsoft.
