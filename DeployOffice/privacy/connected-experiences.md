@@ -130,12 +130,12 @@ The following table provides a list of those other connected experiences and pro
 | Data Visualizer |[Create a Data Visualizer diagram](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | Design an automated workflow | [Design an automated workflow in Visio](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | External list |[Connect an external list to Outlook](https://support.microsoft.com/office/9f00540e-a6b8-4510-9ce1-c79e31cbc8c9)  |
-|Feedback (web portal) <sup>[10]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
+|Feedback (web portal) <sup>[11]</sup> |[Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft)|
 | Focused Inbox  |[Focused Inbox for Outlook](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
-| Information Rights Management <sup>[11]</sup>|[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
-|Link unfurling <sup>[10]</sup>|Link unfurling for Loop automatically expands a hyperlink into an interactive experience. For example, when you paste a link to a Word document into a Loop workspace, you're shown a preview card.|
+| Information Rights Management <sup>[10]</sup>|[Open a file that has restricted permissions](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
+|Link unfurling <sup>[11]</sup>|Link unfurling for Loop automatically expands a hyperlink into an interactive experience. For example, when you paste a link to a Word document into a Loop workspace, you're shown a preview card.|
 | LinkedIn contact card |[LinkedIn in Microsoft apps and services](https://support.microsoft.com/office/6d7c5b09-d525-424a-9c18-8081ee7a67e8)  |
-| Office add-ins <sup>[10]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
+| Office add-ins <sup>[11]</sup> | [View, manage, and install add-ins for Microsoft 365 programs](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(for users)* <br/> [Deploy add-ins in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(for admins)* |
 | Office feedback |[How do I give feedback on Microsoft Office?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 |Office Scripts|[Office Scripts in Excel](/office/dev/scripts/overview/excel)|
 | Office support (Contact us) |When you choose **Help** > **Contact Support** on the ribbon |
@@ -145,7 +145,7 @@ The following table provides a list of those other connected experiences and pro
 | Room Finder |[Use the Scheduling Assistant and Room Finder for meetings in Outlook](https://support.microsoft.com/office/2e00ac07-cef1-47c8-9b99-77372434d3fa) *(for users)*  <br/>[How to control the Room Finder in Outlook](/outlook/troubleshoot/calendaring/room-finder) *(for admins)* |
 |Safe Documents|[Safe Documents](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) *(for users)* <br/> [Safe Documents in Microsoft 365 A5 or E5 Security](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about) *(for admins)*|
 | Safe Links |[Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) *(for users)* </br> [Safe Links in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-about) *(for admins)* |
-| Sensitivity labels <sup>[11]</sup> |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
+| Sensitivity labels <sup>[10]</sup> |[Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Share  |[Share your Excel workbook with others](https://support.microsoft.com/office/8d8a52bb-03c3-4933-ab6c-330aabf1e589) <br/>[Share a presentation (PowerPoint)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Share a document (Word)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Shared with me |[See files others have shared with you](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
 | SharePoint site mailbox |[Show or hide a site mailbox in Outlook](https://support.microsoft.com/office/a9c4b8c7-a1a9-43c0-bd05-7513ca092863#__toc341877075)  |
@@ -154,9 +154,9 @@ The following table provides a list of those other connected experiences and pro
 | While you were away |[Get notified when members of your team update your shared file](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
-> <sup>[10]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
+> <sup>[10]</sup> Starting with Version 2405 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals.
 >
-> <sup>[11]</sup> Starting with Version 2405 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals.
+> <sup>[11]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 
 ## Choose whether these connected experiences are available to use
 
