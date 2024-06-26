@@ -70,15 +70,15 @@ The following table provides a list of connected experiences that analyze your c
 > - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
 > - If your organization is using Double Key Encryption (DKE) to protect files and emails.
 >
-> <sup>[3]</sup> Starting with Version 2406 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals.
+> <sup>[3]</sup> Starting with Version 2406 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals. For more information, see [Apply a sensitivity label to content automatically](/purview/apply-sensitivity-label-automatically) and [Send email notifications and show policy tips for DLP policies](/purview/dlp-use-notifications-and-policy-tips).
 >
-> <sup>[4]</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of Editor is sent to Microsoft.
+> <sup>[4]</sup> Basic functionality of Editor remains available even if you're not connected to the internet. That same basic functionality also remains available if you decide to disable the use of connected experiences that analyze your content. In both cases, no content or data related to your use of Editor is sent to Microsoft.
 >
 > <sup>[5]</sup> For devices running Android, these ink capabilities remain available even if you're not connected to the internet. These ink capabilities also remain available on devices running Android even if you decide to disable the use of connected experiences that analyze your content. In both cases, no data about the use of these ink capabilities is sent to Microsoft.
 >
 > <sup>[6]</sup> If you're not connected to the internet, Read Aloud only uses the text-to-speech functionality your device provides.
 >
-> <sup>[7]</sup> In some scenarios, basic functionality of text predictions remains available even if you're not connected to the internet or if you've decided to disable the use of connected experiences that analyze your content. For example, if you're using text predictions in Outlook on a Windows device or in Word on a Mac device. In those scenarios, no data about the use of text predictions is sent to Microsoft.
+> <sup>[7]</sup> In some scenarios, basic functionality of text predictions remains available even if you're not connected to the internet or if you've decided to disable the use of connected experiences that analyze your content. For example, if you're using text predictions in Outlook on a Windows device or in Word on a Mac device. In those scenarios, no content or data related to your use of text predictions is sent to Microsoft..
 
 ## Connected experiences that download online content
 
@@ -156,7 +156,7 @@ The following table provides a list of those other connected experiences and pro
 > [!NOTE]
 > <sup>[10]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
-> <sup>[11]</sup> Starting with Version 2405 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals.
+> <sup>[11]</sup> Starting with Version 2405 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals. For more information, see [Set up Information Rights Management (IRM) in SharePoint admin center](/purview/set-up-irm-in-sp-admin-center) and [Manage sensitivity labels in Office apps](/purview/sensitivity-labels-office-apps).
 
 ## Choose whether these connected experiences are available to use
 
