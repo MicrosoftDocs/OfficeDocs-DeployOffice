@@ -78,7 +78,7 @@ The following table provides a list of connected experiences that analyze your c
 >
 > <sup>[6]</sup> If you're not connected to the internet, Read Aloud only uses the text-to-speech functionality your device provides.
 >
-> <sup>[7]</sup> In some scenarios, basic functionality of text predictions remains available even if you're not connected to the internet or if you've decided to disable the use of connected experiences that analyze your content. For example, if you're using text predictions in Outlook on a Windows device or in Word on a Mac device. In those scenarios, no content or data related to your use of text predictions is sent to Microsoft..
+> <sup>[7]</sup> In some scenarios, basic functionality of text predictions remains available even if you're not connected to the internet or if you've decided to disable the use of connected experiences that analyze your content. For example, if you're using text predictions in Outlook on a Windows device or in Word on a Mac device. In those scenarios, no content or data related to your use of text predictions is sent to Microsoft.
 
 ## Connected experiences that download online content
 
