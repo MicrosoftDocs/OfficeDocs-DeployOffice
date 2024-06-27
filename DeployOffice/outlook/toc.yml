@@ -10,8 +10,10 @@ items:
         items:
           - name: Migrate from COM to web add-ins
             href: get-started/migrate-com-to-web-addins.md            
-          - name: State of Microsoft COM add-ins
+          - name: Identify COM add-ins in your organization
             href: get-started/state-of-com-add-ins.md
+          - name: Automatically install web add-in counterparts
+            href: get-started/install-web-add-ins.md
       - name: Supported accounts
         href: get-started/supported-account-types.md
 
