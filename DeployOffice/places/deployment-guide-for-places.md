@@ -101,7 +101,7 @@ Running the following script will enable the Places Web App and Advanced Feature
 
 1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
  ```powershell
- .\Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
+Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
  ```
  
 ### Step 4 - Set up Buildings and Floors
