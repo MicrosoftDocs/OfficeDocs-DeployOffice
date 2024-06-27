@@ -18,7 +18,7 @@ ms.date: 11/09/2023
 
 The new Outlook for Windows client installer is now available either from the Microsoft Store or the Office Content Delivery Network (CDN).
 
-The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to migrate settings from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
+The new Outlook is currently offered as a preview upgrade to classic Outlook for Windows through a toggle. Users can opt in to download the installer and switch to the new experience and can choose to [migrate settings](https://support.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc) and [install add-ins](install-web-add-ins.md) from classic Outlook. After users toggle in, they’ll see their supported accounts migrated from classic Outlook for Windows to the new Outlook.
 
 > [!NOTE]
 > Users need to sign back in to accounts that can’t automatically authenticate via [Windows Single Sign-On](/DeployOffice/outlook/get-started/supported-account-types).
@@ -34,7 +34,7 @@ For the new Outlook client to be successfully installed, computers must meet the
 ### System and app requirements
 
 > [!NOTE]
-> New Outlook for Windows is not supported on Windows Server 2016 and Windows Server 2019. 
+> New Outlook for Windows is not supported on Windows Server 2016 and Windows Server 2019.
 
 Requirement | Version
 ------------|-------
@@ -44,20 +44,24 @@ Classic Outlook app | Version 2303 Build 16227.20318 or higher to see the Try th
 ## Other deployment options
 
 ### Download and install new Outlook for a single computer
+
 For organizations that disable access to the Windows Store, the installer can be directly accessed from the Office CDN.
 
 To install new Outlook on a single computer with many users, follow these steps:
+
 1. Download the [Setup.exe](https://go.microsoft.com/fwlink/?linkid=2207851).
 2. Launch PowerShell 7 as an administrator: Right-click the PowerShell icon and choose Run as Administrator.
 3. Navigate to where the Setup.exe file is located.
-4. Run the following command: 
+4. Run the following command:
 
    ```powershell
    .\Setup.exe --provision true --quiet --start-*
    ```
 
 ### Deploy new Outlook across your organization
+
 To deploy this installer to a group of computers, or your entire organization:
+
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
 2. Use [Intune](/mem/intune/fundamentals/what-is-intune), [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction), [Group Policy](/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software), or third-party distribution software, to distribute the installer to your target computers.
 3. Run the installer on each computer.
