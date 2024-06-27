@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   ms.author: nwhite
   author: nicholasswhite
-  ms.date: 03/15/2023
+  ms.date: 06/27/2024
   ms.localizationpriority: medium
 
 highlightedContent:
@@ -68,8 +68,8 @@ productDirectory:
       links:
         - url: https://www.linkedin.com/showcase/microsoft-365-insider
           text: LinkedIn
-        - url: https://twitter.com/msft365insider
-          text: Twitter
+        - url: https://x.com/msft365insider
+          text: X (formerly Twitter)
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
         - url: https://answers.microsoft.com/en-us/officeinsider/forum
@@ -92,7 +92,7 @@ productDirectory:
     - title: Other Insider programs at Microsoft
       imageSrc: /office/media/icons/globe-internet.svg
       links:
-        - url: https://insider.windows.com/
+        - url: https://www.microsoft.com/windowsinsider/
           text: Windows Insider
         - url: /MicrosoftTeams/public-preview-doc-updates
           text: Microsoft Teams Public Preview
