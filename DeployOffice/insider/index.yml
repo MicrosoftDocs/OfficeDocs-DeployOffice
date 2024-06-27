@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   ms.author: nwhite
   author: nicholasswhite
-  ms.date: 06/25/2024
+  ms.date: 06/27/2024
   ms.localizationpriority: medium
 
 highlightedContent:
@@ -69,7 +69,7 @@ productDirectory:
         - url: https://www.linkedin.com/showcase/microsoft-365-insider
           text: LinkedIn
         - url: https://x.com/msft365insider
-          text: Twitter
+          text: X (formerly Twitter)
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
         - url: https://answers.microsoft.com/en-us/officeinsider/forum

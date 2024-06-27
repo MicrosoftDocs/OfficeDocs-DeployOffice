@@ -11,7 +11,7 @@ ms.collection: Tier1
 ms.custom: intro-overview
 recommendations: false
 description: "Provides an overview of the Microsoft 365 Insider Program for Business"
-ms.date: 06/25/2024
+ms.date: 06/27/2024
 ---
 
 # Microsoft 365 Insider Program for Business
@@ -46,7 +46,7 @@ The following resources can help you keep up to date on the latest developments 
 
 - Follow [Microsoft 365 Insider Program](https://www.linkedin.com/showcase/microsoft-365-insider) on LinkedIn.
 
-- Follow [Msft365Insider](https://x.com/msft365insider) on Twitter.
+- Follow [Msft365Insider](https://x.com/msft365insider) on X (formerly Twitter).
 
 > [!NOTE]
 > If you're a home user, please visit the [Microsoft 365 Insider Handbook](https://insider.microsoft365.com/handbook) to learn about the program and how to join. For example, if you have a Microsoft 365 Personal or Microsoft 365 Family subscription.
