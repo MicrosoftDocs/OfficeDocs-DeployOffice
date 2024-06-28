@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 06/07/2024
+ms.date: 07/02/2024
 ---
 
 # Essential services for Office
@@ -4911,6 +4911,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
    - **productsCount** - Int – Only for “ProductsFetch”, the number of products returned by Store.
    - **requestType** - String – Type of StoreKit request. Like “ProductsFetch”, “PendingPurchase”, "Restore"
    - **status** - String – Success or Failure, indicating success or failure of the request.
+   - **trialInfo** - String: Bool - Captures trial info of all the products fetched from App Store. This will be empty if trial info fetching fails.
 
 
 - **Office.iOS.Paywall.StoreKit.RestorePurchase** - This event is triggered for a user who is restoring a previous purchase by clicking on “Restore Previous Purchase” on the paywall control. The data is used to measure the performance of the end-to-end paywall experience and help improve purchase reliability.
