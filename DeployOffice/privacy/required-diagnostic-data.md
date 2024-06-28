@@ -4792,9 +4792,9 @@ The following fields are collected:
 
 - **Python_Jupyter_EnvironmentCreationBeginTimepointMilliseconds** - Integer indicating the time point to begin creating jupyter environment.
 
-- **Python_Jupyter_GetEnvironmentDefinitionsStartTimepointMilliseconds** - Integer denoting the time point at which the process to obtain environment options begins.
-
 - **Python_Jupyter_GetEnvironmentDefinitionsEndTimepointMilliseconds** - Integer denoting the time point at which the OfficePy has fetched the environment options.
+
+- **Python_Jupyter_GetEnvironmentDefinitionsStartTimepointMilliseconds** - Integer denoting the time point at which the process to obtain environment options begins.
 
 - **Python_Jupyter_InitPyBeginTimepointMilliseconds** - Integer indicating the time point to start init.py execution.
 

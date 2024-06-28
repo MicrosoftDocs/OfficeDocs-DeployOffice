@@ -4776,7 +4776,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
  
    The following fields are collected: 
  
-   - **status: String** – To know the response during activation (successful, failed, or skipped)
+   - **status** - String – To know the response during activation (successful, failed, or skipped)
 
 - **Office.iOS.Paywall.BottomSheet.Stats** - Usage telemetry to measure how many users expanded/dismissed bottom sheet UI of subscription-plan (SKU) chooser screen. The data is used to understand usage of the SKU chooser and optimize the in-app purchase experience in future versions. 
 
@@ -4833,7 +4833,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
  
    The following fields are collected: 
  
-   - **failureReason: String** – To know the failure reason
+   - **failureReason** - String – To know the failure reason
 
   
 - **Office.iOS.Paywall.SignIn.Response** - The event is collected when users complete SignIn during upsell flow, which is triggered for PreSignIn upsell scenarios like the PreSignIn FRE and PreSignInDiamond. This can be used to check the SignIn rates during the Upsell flow and help us analyse the PreSign scenarios.
@@ -4897,7 +4897,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
  
    The following fields are collected: 
  
-   - **selectedPlanType: Int** - Check the selected toggle plan type monthly/ yearly (1 for monthly, 2 for yearly)
+   - **selectedPlanType** - Int - Check the selected toggle plan type monthly/ yearly (1 for monthly, 2 for yearly)
 
 
 - **Office.iOS.Paywall.StoreKit.Response** - Critical engineering telemetry to log the result of purchase attempt triggered manually by user and the App store response to the event. The data is used to measure the status of a purchase attempt and reasons of failure (if any) and take corrective actions to ensure that the IAP and all the entry points as performing as expected.
@@ -4918,7 +4918,7 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    The following fields are collected: 
 
-   - **status: String** – To know the response during of this restore process (successful, failed, or unexpected)
+   - **status** - String – To know the response during of this restore process (successful, failed, or unexpected)
 
 
 - **Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap** - This event is collected when the user taps “See All Benefits” after a successful purchase to see the apps and features included in the purchase. The data is used to measure that the user interface is performing as expected.
@@ -18232,19 +18232,19 @@ This event is triggered when the user lands on the "Subscription Auto Renew Remi
 
 The following fields are collected:
 
-- **isAROff: Bool** - true if user has their auto renew turned off.
+- **isAROff** - Bool - true if user has their auto renew turned off.
 
-- **IsSubscriptionPurchaser: Bool** - Boolean indicating whether the user is a subscription purchaser or not (beneficiary)
+- **IsSubscriptionPurchaser** - Bool - Boolean indicating whether the user is a subscription purchaser or not (beneficiary)
 
-- **isTrial: Bool** - true if user has their trial period ongoing.
+- **isTrial** - Bool - true if user has their trial period ongoing.
 
-- **ProductId: String** - ProductId of the subscription product.
+- **ProductId** - String - ProductId of the subscription product.
 
-- **PurchaseApp: String** - App where the user purchased their subscription(Word/Excel/PowerPoint).
+- **PurchaseApp** - String - App where the user purchased their subscription(Word/Excel/PowerPoint).
 
-- **PurchasePlatform: String** - platform where the user purchased their subscription (iOS vs Windows vs Android).
+- **PurchasePlatform** - String - platform where the user purchased their subscription (iOS vs Windows vs Android).
 
-- **SubscriptionExpirationDateTime: String** - Date and time when the subscription will expire.
+- **SubscriptionExpirationDateTime** - String - Date and time when the subscription will expire.
 
 
 ### Office.Apple.Licensing.AutoRenewViewVisible
