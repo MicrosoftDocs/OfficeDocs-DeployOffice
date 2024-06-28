@@ -18,6 +18,7 @@ description: "Learn how to use existing sensor data to enhance Microsoft Places 
 You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people count, badge, and Wi-Fi data types.
 
 ## Prerequisites
+
 - Opt in to the [Places Public Preview](/DeployOffice/places/opt-in-places-preview?branch=main). Connected Workplace is an advanced feature.
 - Follow the steps in our [Deployment guide for Places](/deployoffice/places/deployment-guide-for-places?branch=pr-en-us-3454) to enable Places and Places Analytics.
 
@@ -53,27 +54,27 @@ Use the following schema when uploading badge information.
 1. Open **PowerShell 7** (not as an administrator).
 2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places installation.
 
-```powershell
-Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
-```
+   ```powershell
+   Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
+   ```
 
 3. Import the Places module by running the following **Windows PowerShell** cmdlet.
 
-```powershell
-Import-Module -Name MicrosoftPlaces
-```
+   ```powershell
+   Import-Module -Name MicrosoftPlaces
+   ```
 
 4. Connect to the Places module by running the following **Places PowerShell** cmdlet.
 
-```powershell
-Connect-MicrosoftPlaces
-```
+   ```powershell
+   Connect-MicrosoftPlaces
+   ```
 
 5. Upload the badge dataset from the location on your device (using the folder and path) by running the following **Places PowerShell** cmdlet.
 
-```powershell
-Push-Dataset -Type BadgeSwipe -Path <folder path>
-```
+   ```powershell
+   Push-Dataset -Type BadgeSwipe -Path <folder path>
+   ```
 
 ### Connect the Wi-Fi systems
 
@@ -98,27 +99,28 @@ Use the following schema when uploading Wi-Fi information.
 1. Open **PowerShell 7** (not as an administrator).
 2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places cmdlets.
 
-```powershell
-Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
-```
+   ```powershell
+   Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
+   ```
 
 3. Import the Places module by running the following **Windows PowerShell** cmdlet.
 
-```powershell
-Import-Module -Name MicrosoftPlaces
-```
+   ```powershell
+   Import-Module -Name MicrosoftPlaces
+   ```
 
 4. Connect to the Places module by running the following **Places PowerShell** cmdlet.
 
-```powershell
-Connect-MicrosoftPlaces
-```
+   ```powershell
+   Connect-MicrosoftPlaces
+   ```
 
 5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device by running the following **Places PowerShell** cmdlet.
 
-```powershell
-Push-Dataset -Type WifiSignal -Path <folder path>
-```
+   ```powershell
+   Push-Dataset -Type WifiSignal -Path <folder path>
+   ```
+
 ## Connect other occupancy sensors or people-count sensors
 
 Connecting occupancy and people-count sensors is done in four steps.
@@ -145,19 +147,18 @@ There are three ways you can upload device information to Places.
 ### Prerequisites: prepare device metadata  
 
 1. Download place information from Microsoft Places. First, install **PowerShell 7** by running the following PowerShell cmdlet. See [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows) to learn more about PowerShell on Windows.
-
    
-```powershell
-Install-Module -Name ExchangeOnlineManagement 
-Import-Module -Name ExchangeOnlineManagement 
-Connect-ExchangeOnline
-```
+   ```powershell
+   Install-Module -Name ExchangeOnlineManagement 
+   Import-Module -Name ExchangeOnlineManagement 
+   Connect-ExchangeOnline
+   ```
 
 2. Open PowerShell as an administrator and run the following **ExchangeOnline PowerShell** command to check if your account has the required TenantPlacesManagement role, and to make sure your username is listed.
 
-```powershell
-Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
-```
+   ```powershell
+   Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers 
+   ```
 
 3. You should see the following name and assigned role if you have the right permissions.
 
@@ -166,49 +167,49 @@ Get-ManagementRoleAssignment -Role TenantPlacesManagement -GetEffectiveUsers
 
 4. To get the PlaceId of buildings, open a new PowerShell window and run the following **Windows PowerShell** cmdlet:
 
-```powershell
-Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
-Connect-MicrosoftPlaces 
-```
+   ```powershell
+   Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force 
+   Connect-MicrosoftPlaces 
+   ```
 
 5. Execute the following commands to download the list of floors and rooms.
 
-> [!NOTE]
-> Update buildingName only if you need to get rooms for particular buildings.
+   > [!NOTE]
+   > Update buildingName only if you need to get rooms for particular buildings.
 
-```powershell
-$buildingName = “”  
+   ```powershell
+   $buildingName = “”  
 
-$allPlaces = Get-PlaceV3 | Select-Object PlaceId, DisplayName, Type, ParentId  
+   $allPlaces = Get-PlaceV3 | Select-Object PlaceId, DisplayName, Type, ParentId  
 
-$building = $allPlaces | Where-Object { $_.DisplayName -eq $buildingName -and $_.Type -eq "Building" }  
+   $building = $allPlaces | Where-Object { $_.DisplayName -eq $buildingName -and $_.Type -eq "Building" }  
 
-$floors = $allPlaces | Where-Object { $_.ParentId -eq $building.PlaceId }  
+   $floors = $allPlaces | Where-Object { $_.ParentId -eq $building.PlaceId }  
 
-$spacesAndRooms = $floors | ForEach-Object {   
+   $spacesAndRooms = $floors | ForEach-Object {   
 
-    $floor = $_;   
+      $floor = $_;   
 
-    $allPlaces | Where-Object { $_.ParentId -eq $floor.PlaceId }  
-}  
+      $allPlaces | Where-Object { $_.ParentId -eq $floor.PlaceId }  
+   }  
 
-$places = @() 
+   $places = @() 
 
-$floors | ForEach-Object { $places += $_ }  
+   $floors | ForEach-Object { $places += $_ }  
 
-$spacesAndRooms | ForEach-Object { $places += $_ }  
+   $spacesAndRooms | ForEach-Object { $places += $_ }  
 
-$outputPath = 'C:\places.csv'  
+   $outputPath = 'C:\places.csv'  
 
-$places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation
-```
+   $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPath -NoTypeInformation
+   ```
 
 6. The output file in your CSV file path should contain the following:
 
-|PlaceId  |DisplayName  |Type |
-|---------|---------|---------|
-|**5d275bba-5d7d-487f-855e-75cd2943204f** |Floor 1 |Floor |
-|**0fa1b1eb-6066-45ea-8f7c-09b4e8cc4e74** |Conf Room 1202/3455 (9) |Room |
+   |PlaceId  |DisplayName  |Type |
+   |---------|---------|---------|
+   |**5d275bba-5d7d-487f-855e-75cd2943204f** |Floor 1 |Floor |
+   |**0fa1b1eb-6066-45ea-8f7c-09b4e8cc4e74** |Conf Room 1202/3455 (9) |Room |
 
 7. Download the device metadata from a partner solution or from your system, including all the devices.
 
@@ -216,25 +217,25 @@ $places | Select-Object PlaceId, DisplayName, Type | Export-Csv -Path $outputPat
 
 9. Create a CSV file with your device metadata. You can use the following format for your CSV file.
 
-|Column  |Description  |Notes |Example |
-|---------|---------|---------|---------|
-|DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId). |Must match the ID of the telemetry sent. |Manuf1_3455 |
-|**DisplayName** |The display name of the device. | You can use a friendly name if applicable. |Manuf1_3455 |
-|**Description** |The description of the device. | | |
-|**MacAddress** |The Mac address of the device.  |Supplier provided (if available). | |
-|**Manufacturer** (required) |The manufacturer of the device. |Provided by the IT admin. |Manuf1 |
-|**IPV4Address** |The IPV4Address of the device. | Supplier provided (if available). | |
-|**IPV6Address**  |The IPV6Address of the device. |Supplier provided if available. | |
-|**PlaceId** |The PlaceId to which your device is mapped in Places. |The IT admin maps DeviceID to the DisplayName field from a list of rooms. |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
-|**Tags** |A list of custom tags associated with the device to help with search. | |[ "IsVirtual_False", "Building_121"] |
-|**Sensor.SensorId** (required) |The unique identifier of a sensor within the device. | Must come in the standard telemetry payload. |PeopleCount Occupancy |
-|**Sensor.DisplayName** |The display Name of the sensor. |You can use a friendly name (if applicable). |Paperclip |
-|**Sensor.SensorType** (required) |The type of sensor. |A validated list (see examples). |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
-|**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location). | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+   |Column  |Description  |Notes |Example |
+   |---------|---------|---------|---------|
+   |DeviceId (required) |The unique identifier of the device (recommended: Manufacturer_DeviceUniqueId). |Must match the ID of the telemetry sent. |Manuf1_3455 |
+   |**DisplayName** |The display name of the device. | You can use a friendly name if applicable. |Manuf1_3455 |
+   |**Description** |The description of the device. | | |
+   |**MacAddress** |The Mac address of the device.  |Supplier provided (if available). | |
+   |**Manufacturer** (required) |The manufacturer of the device. |Provided by the IT admin. |Manuf1 |
+   |**IPV4Address** |The IPV4Address of the device. | Supplier provided (if available). | |
+   |**IPV6Address**  |The IPV6Address of the device. |Supplier provided if available. | |
+   |**PlaceId** |The PlaceId to which your device is mapped in Places. |The IT admin maps DeviceID to the DisplayName field from a list of rooms. |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
+   |**Tags** |A list of custom tags associated with the device to help with search. | |[ "IsVirtual_False", "Building_121"] |
+   |**Sensor.SensorId** (required) |The unique identifier of a sensor within the device. | Must come in the standard telemetry payload. |PeopleCount Occupancy |
+   |**Sensor.DisplayName** |The display Name of the sensor. |You can use a friendly name (if applicable). |Paperclip |
+   |**Sensor.SensorType** (required) |The type of sensor. |A validated list (see examples). |Occupancy<br>PeopleCount<br>InferredOccupancy<br>Heartbeat |
+   |**Sensor.PlaceId** |The unique identifier of the place served by the sensor (you only need to provide this if the sensor is in a different place than the device's location). | |76fe540f-01a9-425e-acd5-5d7d1da44fbf |
 
 ### General guidelines about devices and sensors
 
-- It’s recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual DeviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
+- It's recommended that you provide the DeviceId as Manufacturer_DeviceUniqueId. However, in cases where your partners aren't able to send telemetry at a device level (for example, they combine telemetry from multiple devices), a virtual DeviceId can be created as Manufacturer_Building_VirtualDeviceId. In this case, VirtualDeviceId can be some natural key of a space. If your customer is providing the VirtualDeviceId, you should include information about the physical devices from which the telemetry is being calculated. Physical-device information can be in tags.
 
 - If Sensor.SensorType is unique for a device, you just need to provide SensorType. In cases where there are multiple data streams for a particular sensor type for a device, a unique SensorId is needed. SensorType and SenorId, in most cases, are PeopleCount, Occupancy, etc., unless SensorType isn't unique for a device. In this case, SensorId is SensorType_SomeUnique identifier.
 
@@ -344,7 +345,7 @@ For customers choosing these integration types, you must complete the tenant-wid
 
    If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
-    :::image type="content" source="./media/connected-buildings/connected-buildings-permissions-requested2.png" alt-text="Screenshot of the Permissions requested dialog box.":::
+   :::image type="content" source="./media/connected-buildings/connected-buildings-permissions-requested2.png" alt-text="Screenshot of the Permissions requested dialog box.":::
 
 #### Admin Consent: type B and C architecture, connector running in a customer on-site environment
 
@@ -354,7 +355,7 @@ Microsoft Places makes available an API that accepts telemetry in standard forma
 - For type C architecture, customers can create a long-running process or an event-based process, using Azure functions, to call Places APIs to send telemetry.
 - Both type B and C integration architectures require customers to create an app registration in Microsoft Entra, as shown in the following illustration, and provide admin consent with PlaceDeviceTelemetry.ReadWrite.All. See the [Microsoft Graph Permissions Reference](/graph/permissions-reference) to learn more about permissions exposed by Microsoft Graph.
 
-   :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
+  :::image type="content" source="./media/connected-buildings/connected-buildings-register-an-application.png" alt-text="Screenshot of the Register an application dialog box with supported account types.":::
 
 ## Verify data is available in Places
 
