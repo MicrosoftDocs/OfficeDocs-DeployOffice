@@ -98,9 +98,12 @@ Running the following script installs the Places and Azure module in PowerShell 
 Running the following script will enable the Places Web App and Advanced Features.
 
 1. Install the [Prepare-PlacesEnablement 1.0](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
-  
-2. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
 
+1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
+ ```powershell
+Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
+ ```
+ 
 ### Step 4 - Set up Buildings and Floors
 
 Microsoft Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Utilize the steps found in at the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to finish setting up your Places Directory. 
