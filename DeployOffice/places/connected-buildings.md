@@ -52,6 +52,7 @@ Use the following schema when uploading badge information.
 #### Upload the badge dataset
 
 1. Open **PowerShell 7** (not as an administrator).
+
 2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places installation.
 
    ```powershell
@@ -97,6 +98,7 @@ Use the following schema when uploading Wi-Fi information.
 #### Upload the Wi-Fi dataset
 
 1. Open **PowerShell 7** (not as an administrator).
+
 2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places cmdlets.
 
    ```powershell
@@ -136,7 +138,7 @@ The first step involves uploading a CSV file with the device metadata and how de
 
 The following diagram shows how you can onboard devices and sensors onto Places.
 
-:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-metadata2.png" alt-text="Diagram showing how you can onboard devices and sensors into Places.":::
+:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-metadata2.png" alt-text="Diagram showing how you can onboard devices and sensors into Places." lightbox="./media/connected-buildings/connected-buildings-graphic-device-metadata2.png":::
 
 There are three ways you can upload device information to Places.
 
@@ -297,7 +299,7 @@ See the following Microsoft Graph APIs to learn more about sensor devices:
 
 Once you have your devices onboarded into Places, you can perform a one-time backfill of historical data to populate Places with historical telemetry. Then you can configure Places to receive continuous telemetry from your devices to stay up to date. The following diagram outlines the backfill file upload flow (top half) and the continuous device telemetry flow (bottom half).
 
-:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry2.png" alt-text="A diagram that outlines the backfill file upload and device telemetry flow.":::
+:::image type="content" source="./media/connected-buildings/connected-buildings-graphic-device-telemetry2.png" alt-text="A diagram that outlines the backfill file upload and device telemetry flow." lightbox="./media/connected-buildings/connected-buildings-graphic-device-telemetry2.png":::
 
 ### Backfill historical data
 
@@ -329,19 +331,21 @@ You must complete the admin consent or create a Microsoft Entra application with
 
 The following diagram outlines the architecture for telemetry ingestion.
 
-:::image type="content" source="./media/connected-buildings/connected-buildings-architectures2.png" alt-text="A diagram that outlines the architecture references for telemetry ingestion.":::
+:::image type="content" source="./media/connected-buildings/connected-buildings-architectures2.png" alt-text="A diagram that outlines the architecture references for telemetry ingestion." lightbox="./media/connected-buildings/connected-buildings-architectures2.png":::
 
 #### Admin Consent: type A architecture, hardware partner-owned connector (SaaS)  
 
 For customers choosing these integration types, you must complete the tenant-wide admin consent to grant the permissions to the partner services to ingest telemetries on their behalf.
 
 1. This is applicable when hardware providers have created multitenant SaaS connectors (single versus multitenant apps). See [Tenancy in Microsoft Entra ID](/entra/identity-platform/single-and-multi-tenant-apps) to learn more about multitenant connectors.
+
 2. Get the app ID (GUID) from the partner that ingests telemetries on behalf of your service.
+
 3. Create a Service principal with the app ID. There are several options to choose from to [Create an enterprise application from a multitenant application in Microsoft Entra ID](/entra/identity/enterprise-apps/create-service-principal-cross-tenant).
 
    If you're using the **Microsoft Graph PowerShell**, Graph, or Azure CLI, replace the ID or app ID (of the commands mentioned) in the pages to create a Service principal, then grant admin consent in the Service principal on Azure.
 
-   :::image type="content" source="./media/connected-buildings/connected-buildings-places-integration-permissions3.png" alt-text="Screenshot of the Microsoft Places Integration permissions page.":::
+   :::image type="content" source="./media/connected-buildings/connected-buildings-places-integration-permissions3.png" alt-text="Screenshot of the Microsoft Places Integration permissions page." lightbox="./media/connected-buildings/connected-buildings-places-integration-permissions3.png":::
 
    If you're using an admin consent URL, replace the app ID in the page with the partner app ID, then open it in a browser. It creates a Service principal and asks for granting the admin consent at once. To grant admin consent, click the **Accept** button.
 
