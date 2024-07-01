@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows settings that apply to all Office apps on Mac but are configured per app."
-ms.date: 06/19/2024
+ms.date: 07/01/2024
 ---
 
 # Set per-app preference for Office for Mac
