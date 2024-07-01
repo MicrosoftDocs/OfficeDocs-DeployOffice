@@ -1,6 +1,6 @@
-#############################################
-######   OneNote 2024  ######################
-######   Migration Script v1.6.4  ###########
+﻿#############################################
+######   OneNote for Windows 10  ############
+######   Migration Script  ##################
 #############################################
 
 $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
@@ -27,29 +27,19 @@ function getWin32RegKeys {
     $registryPath = "HKCU:\SOFTWARE\Microsoft\Office\16.0\OneNote"
     $bootValueName = "FirstBootStatus"
 
-    # check if OneNote Win32 is installed or not
-    try
-    {
-        Start-Process -FilePath "onenote.exe"
-        Stop-Process -Name "onenote"
-    }
-    catch
-    {
-        Write-Host "You must first install OneNote Win32. Please refer to the deployment guide"
-        exit
     }
     $outputDir = "C:\temp\OneNoteMigration\"
     if(!(test-path $outputDir)){new-item -path "C:\temp\OneNoteMigration\" -ItemType directory -name OneNoteUWPBackup|out-null}
     new-item -path $outputDir -name UWPBackupResult.log -Type File -Force
 
-    $registry = Get-ItemProperty -Path $registryPath
+$registry = Get-ItemProperty -Path $registryPath
     # get FRE status
     if ($registry.PSObject.Properties[$bootValueName]) {
         $bootValue = $registry.$bootValueName
         writeLogsToFileAndConsole "OneNote Win32 FRE Value: $bootValue"
     }
 
-    # get client version and audience data
+# get client version and audience data
     $registryPath = "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration"
     $versionValueName = "ClientVersionToReport"
     $audienceValueName = "AudienceData"
@@ -63,7 +53,7 @@ function getWin32RegKeys {
         writeLogsToFileAndConsole "OneNote Win32 Audience Value: $audienceValue"
     }
 
-    # get backup folder path if existed
+# get backup folder path if existed
     $registryPath = "HKCU:\SOFTWARE\Microsoft\Office\16.0\OneNote\Options\Paths"
     $backupValueName = "BackupFolderPath"
     if (Test-Path $registryPath) {
@@ -78,7 +68,6 @@ function getWin32RegKeys {
     $uwpVersion = $uwpApp.Version
     $uwpVersionObject = [System.Version]$uwpVersion
     writeLogsToFileAndConsole "UWP OneNote app version: $uwpVersion"
-}
 
 ## Update OneNote for Windows 10 to the latest version available ##
 function updateUWPVersion {
@@ -87,21 +76,21 @@ function updateUWPVersion {
         $uwpVersion = $uwpApp.Version
         $uwpVersionObject = [System.Version]$uwpVersion
 
-        $updatedVersion = "16001.14326.21802.0"
+$updatedVersion = "16001.14326.21942.0"
         $updatedVersionObject = [System.Version]$updatedVersion
 
-        $unsupportedVersion = "16001.14327.10000.0"
+$unsupportedVersion = "16001.14327.10000.0"
         $unsupportedVersionObject = [System.Version]$unsupportedVersion
 
-	if ($uwpVersionObject -ge $unsupportedVersionObject)
+if ($uwpVersionObject -ge $unsupportedVersionObject)
         {
-	    writeLogsToFileAndConsole "Unsupported version of OneNote UWP app. Please check the Microsoft Store for updates"
+        writeLogsToFileAndConsole "Unsupported version of OneNote UWP app. Please check the Microsoft Store for updates"
             exit
-	}
+    }
 
-        if ($uwpVersionObject -lt $updatedVersionObject)
+if ($uwpVersionObject -lt $updatedVersionObject)
         {
-            writeLogsToFileAndConsole "You must upgrade OneNote UWP to a version higher than 16.0.14326.21802. Please check the Microsoft Store"
+            writeLogsToFileAndConsole "You must upgrade OneNote UWP to a version higher than 16.0.14326.21942. Please check the Microsoft Store"
             exit
         }
         else
@@ -132,7 +121,7 @@ function killProcess {
             exit
         }
 
-        writeLogsToFileAndConsole "OneNote UWP process killed"
+writeLogsToFileAndConsole "OneNote UWP process killed"
     }
 }
 
@@ -141,7 +130,6 @@ function launchBackUp {
     {
         $OneNoteUWPLaunch = (Get-AppxPackage -Name Microsoft.Office.OneNote).InstallLocation + "/onenoteim.exe"
         Start-Process "onenote-cmd://backup:" -filepath $OneNoteUWPLaunch
-        #Start-Process "onenote-cmd://backup:"## used for standard user devices ##
         Start-Sleep -Seconds 60
         writeLogsToFileAndConsole "OneNote UWP backup initiated."
     }
@@ -152,7 +140,7 @@ function launchBackUp {
         exit
     }
 
-    writeLogsToFileAndConsole "OneNote UWP backup started"
+writeLogsToFileAndConsole "OneNote UWP backup started"
 }
 
 ## Parse the results in json files to read if backup was successful; if so and there were outbounding changes if files were backed up and migration can continue ##
@@ -161,7 +149,7 @@ function launchBackUp {
     {
         killProcess
 
-        $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
+$localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
         $jsonPath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\UWPBackUpStatus.json"
         if(!(test-path $jsonPath)){
             writeLogsToFileAndConsole "Backup Json file path is not valid"
@@ -193,7 +181,7 @@ function launchBackUp {
             }
         }
 
-            writeLogsToFileAndConsole "OneNote UWP backup is completed and status is saved"
+writeLogsToFileAndConsole "OneNote UWP backup is completed and status is saved"
         }
         elseif ($status -eq "")
         {
@@ -220,12 +208,12 @@ function launchBackUp {
     try
     {
         $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
-	    $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\BackUp"
+        $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\BackUp"
         $destinationPath = "C:\temp\OneNoteMigration\"
 
-        Copy-Item -Path $sourcePath\* -Destination $destinationPath -Recurse -Force
+Copy-Item -Path $sourcePath\* -Destination $destinationPath -Recurse -Force
 
-        $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0"
+$sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0"
         $fileExtensions = "*.json", "*.txt"
         foreach ($fileExtension in $fileExtensions)
         {
@@ -242,7 +230,7 @@ function launchBackUp {
         exit
     }
 
-    writeLogsToFileAndConsole "Backup files copied successfully from $sourcePath to $destinationPath"
+writeLogsToFileAndConsole "Backup files copied successfully from $sourcePath to $destinationPath"
  }
 
 function uninstallUWP {

@@ -1,7 +1,7 @@
 ---
 title: "Deployment guide for Office for Mac"
-ms.author: pbowden
-author: pbowden-msft
+ms.author: geokri
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: landing-page
