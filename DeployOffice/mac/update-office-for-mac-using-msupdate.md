@@ -1,8 +1,9 @@
 ---
 title: "Update Microsoft applications for Mac by using msupdate"
-ms.author: ppark
+ms.author: geokri
 author: nicholasswhite
-manager: eduardoc
+ms.reviewer: ppark
+manager: dougeby
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
