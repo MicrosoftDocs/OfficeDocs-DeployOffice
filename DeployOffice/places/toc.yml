@@ -7,6 +7,8 @@ items:
       href: get-started/quick-setup-buildings-floors.md
     - name: Understanding work locations
       href: understanding-work-location.md
+    - name: Connected buildings
+      href: connected-buildings.md
 
 
   - name: Advanced features
