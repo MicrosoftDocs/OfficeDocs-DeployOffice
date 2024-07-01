@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 ms.collection: Tier2
-ms.localizationpriority: null
+ms.localizationpriority: low
 recommendations: false
 description: "Provides guidance for deploying Microsoft 365 Apps for enterprise  in a GCC High or DoD environment"
 ms.date: 03/01/2023
@@ -194,7 +194,7 @@ Also, if [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) are built
 
 
 ## Special considerations
-Due diligence was done to review cloud services connected to features in Microsoft 365 Apps for enterprise.  We've found that such processes are not failure proof and have created the following table to capture any edge cases that were not initially captured prior to initial release. We'll use this table so we can communicate the finding, any potential risk and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
+Due diligence was done to review cloud services connected to features in Microsoft 365 Apps for enterprise.  We've found that such processes aren't failure proof and have created the following table to capture any edge cases that weren't initially captured prior to initial release. We'll use this table so we can communicate the finding, any potential risk, and the mitigation of that increase in scope.  Services in this table will be appropriately turned off within 30 days.
 
 
 |**Application**  |**Feature**  |**Recommendation**  |
@@ -214,10 +214,10 @@ For installations of Microsoft 365 Apps for enterprise that are configured to ge
 
 The Click-to-Run service contacts DMS to check for updates and will get a JSON response letting it know if a new build is available to download. None of the data passed by the Click-to-Run service is stored by the DMS service. The data is merely used as filtering criteria to determine what build information should be provided to the Click-to-Run for updating Microsoft 365 Apps for enterprise.
  
-The DMS service doesn't process, store or transmit any personally identifiable information or customer content.
+The DMS service doesn't process, store, or transmit any personally identifiable information or customer content.
 
 
-## Related topics
+## Related articles
 For more information about the GCC High and DoD environments provided by Microsoft, see the following service descriptions:
 
 - [Office 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)

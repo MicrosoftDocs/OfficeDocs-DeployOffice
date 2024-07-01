@@ -9,6 +9,8 @@ items:
       href: understanding-work-location.md
     - name: Enabling Auto Release for your rooms
       href: enable-auto-release.md
+    - name: Connected buildings
+      href: connected-buildings.md
 
 
   - name: Advanced features

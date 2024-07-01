@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 06/07/2024
+ms.date: 07/01/2024
 ---
 
 # Required diagnostic data for Office
@@ -4791,6 +4791,10 @@ The following fields are collected:
 - **Python_Jupyter_EnterOfficepyTimepointMilliseconds** - Integer indicating the time point to call officepy method to handle execute python script.
 
 - **Python_Jupyter_EnvironmentCreationBeginTimepointMilliseconds** - Integer indicating the time point to begin creating jupyter environment.
+
+- **Python_Jupyter_GetEnvironmentDefinitionsEndTimepointMilliseconds** - Integer denoting the time point at which the OfficePy has fetched the environment options.
+
+- **Python_Jupyter_GetEnvironmentDefinitionsStartTimepointMilliseconds** - Integer denoting the time point at which the process to obtain environment options begins.
 
 - **Python_Jupyter_InitPyBeginTimepointMilliseconds** - Integer indicating the time point to start init.py execution.
 
@@ -11598,6 +11602,8 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success
 
+- **Data_AdShowingFailure** - Time when failing to show the ad pane.
+
 - **Data_AppActivated** - Last time when application is activated.
 
 - **Data_AppActivateTime** - Total time when user is active in the app during the lifecycle of video advertisement.
@@ -11623,6 +11629,10 @@ The following fields are collected:
 - **Data_ErrorSource** -  The component responsible for the error
 
 - **Data_Init** - Duration to initialize advertisement container
+
+- **Data_LaunchExtComponent** - Identify the utilization of specific internal APIs.
+
+- **Data_PaneClosed** - Time when ad pane is closed.
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
 
@@ -15844,6 +15854,8 @@ The following fields are collected:
 
 - **Data_AdReady** - Duration until advertisement add-in reported ad bid success 
 
+- **Data_AdShowingFailure** - Time when failing to show the ad pane.
+
 - **Data_AppActivated** - Last time when application is activated
 
 - **Data_AppActivateTime** - Total time when user is active in the app during the lifecycle of video advertisement.
@@ -15872,7 +15884,11 @@ The following fields are collected:
 
 - **Data_IsCanceled** - A unique identifier for each advertisement container
 
+- **Data_LaunchExtComponent** - Identify the utilization of specific internal APIs.
+
 - **Data_MoeErrorCode** - The error code from failure
+
+- **Data_PaneClosed** - Time when ad pane is closed.
 
 - **Data_ReadyToBeShown** - Duration until an ad is ready to be shown to user
 

@@ -14,7 +14,6 @@ recommendations: true
 description: "Places PowerShell cmdlet to create new places."
 ---
 
----
 # New-Place
 
 Use the New-Place cmdlet to create buildings or floors within your Places directory.

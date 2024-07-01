@@ -1,7 +1,8 @@
 ---
 title: "Configuring Microsoft AutoUpdate (MAU) for Organization Specific Updates"
-ms.author: ppark
-author: nwhite
+ms.author: geokri
+author: nicholasswhite
+ms.reviewer: ppark
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
