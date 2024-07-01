@@ -19,7 +19,7 @@ You can use Places Finder to book desks, rooms, or workspaces with data such as 
 ## Prerequisites
 
 > [!NOTE]
-> Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+> Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled in Outlook on the Web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
 Before you begin, you must do the following tasks:
 
