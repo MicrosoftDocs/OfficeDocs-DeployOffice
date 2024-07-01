@@ -24,7 +24,7 @@ Office for Mac allows administrators to configure various settings to enhance th
 
 Enable verbose logging for Customer Support escalations.
 
-| **Category** | **Details** |
+|   Category   |   Details   |
 |--------------|-------------|
 | **Domain**   | `com.microsoft.word`, `com.microsoft.excel`, `com.microsoft.powerpoint`, `com.microsoft.onenote.mac`, `com.microsoft.outlook` |
 | **Key**      | `CustomerLoggingEnabled` |
