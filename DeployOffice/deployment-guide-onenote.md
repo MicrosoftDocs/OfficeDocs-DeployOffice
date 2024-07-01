@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
-ms.date: 06/05/2024
+ms.date: 07/01/2024
 ---
 
 # Deployment guide for OneNote
@@ -67,7 +67,7 @@ Migration Policy Development: To facilitate a successful migration to OneNote on
 
 Use this sample script to suit your organization's needs. 
 
-:::code language="powershell" source="snippets/deployment-guide-onenote/your-script.ps1":::
+:::code language="powershell" source="snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1":::
 
 Ensure the script performs the following functions:
 
@@ -85,7 +85,7 @@ Ensure the script performs the following functions:
   - Uninstalling with a failed backup can lead to data loss.
 
 - **Uninstalls OneNote for Windows 10.**
-  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This will help mitigate scenarios where shared devices have unsynced notes removed for all accounts.
+  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
 
 ## Accessing Migrated Notes
 
@@ -112,13 +112,15 @@ Should the `onenote-cmd://backup:` command fail:
 > [!CAUTION]
 > Be cautious when using commands found online. Always test commands in a controlled environment before deploying them organization-wide to avoid unintended consequences, such as those resulting from the Remove-AppxPackage command. 
 
-For additional assistance or inquiries, contact Microsoft Support.
+For more assistance or inquiries, contact Microsoft Support.
 
 ## Additional information about deploying OneNote
 
-**OneNote training resources** We're providing [free and shareable eBooks](https://support.microsoft.com/office/4e08cf8b-dc37-4229-bdef-1f580220b6f5) to help your users transition to the user interface and functionalities in OneNote.
+### OneNote training resources
+We're providing [free and shareable eBooks](https://support.microsoft.com/office/4e08cf8b-dc37-4229-bdef-1f580220b6f5) to help your users transition to the user interface and functionalities in OneNote.
 
-**Configure OneNote settings:** You can use Group Policy to configure certain OneNote settings for your users. To use Group Policy, download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement the policy settings by using Active Directory Domain Services (AD DS).
+### Configure OneNote settings 
+You can use Group Policy to configure certain OneNote settings for your users. To use Group Policy, download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement the policy settings by using Active Directory Domain Services (AD DS).
 
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
@@ -126,9 +128,11 @@ For additional assistance or inquiries, contact Microsoft Support.
 > - Group Policy can't be used with Microsoft 365 Apps for business or with OneNote for Windows 10.
 > - Cloud Policy can only be used with Microsoft 365 Apps for enterprise.
 
-**Supported languages:** While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone&ID0EBBF=Windows_Phone)
+### Supported languages
+While both OneNote and OneNote for Windows 10 are available in most of the same languages, there are a few differences. The lists of the supported languages are available here: [OneNote](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Desktop), [OneNote for Windows 10](https://support.microsoft.com/office/26d30382-9fba-45dd-bf55-02ab03e2a7ec#ID0EAABAAA=Windows_Phone&ID0EAACAAA=Windows_Phone&ID0EBBF=Windows_Phone)
 
-**Other platforms:** There are also versions of OneNote for Mac, iPad, iPhone, Android, and for web browsers. For more information, see [What's the difference between the OneNote versions?](https://support.microsoft.com/office/a624e692-b78b-4c09-b07f-46181958118f)
+### Other platforms
+There are also versions of OneNote for Mac, iPad, iPhone, Android, and for web browsers. For more information, see [What's the difference between the OneNote versions?](https://support.microsoft.com/office/a624e692-b78b-4c09-b07f-46181958118f)
 
 ## Related articles
 
