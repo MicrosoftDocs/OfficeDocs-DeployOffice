@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 07/02/2024
+ms.date: 07/01/2024
 ---
 
 # Essential services for Office
