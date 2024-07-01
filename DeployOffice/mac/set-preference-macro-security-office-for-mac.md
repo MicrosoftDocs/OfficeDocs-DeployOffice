@@ -1,7 +1,7 @@
 ---
 title: "Set preferences for macro security in Office for Mac"
 ms.author: geokri
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: reference

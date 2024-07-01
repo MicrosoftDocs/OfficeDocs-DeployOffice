@@ -1,7 +1,7 @@
 ---
 title: "Microsoft AutoUpdate and Deferred Updates"
 ms.author: ppark
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

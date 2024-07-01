@@ -1,7 +1,7 @@
 ---
 title: "Overview of Office for Mac (for admins and IT Pros)"
 ms.author: geokri
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: overview

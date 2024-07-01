@@ -1,7 +1,7 @@
 ---
 title: "Set a deadline for updates from Microsoft AutoUpdate"
 ms.author: ppark
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

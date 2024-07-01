@@ -1,7 +1,7 @@
 ---
 title: "Deploy Office for Mac from the Mac App Store"
 ms.author: geokri
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual

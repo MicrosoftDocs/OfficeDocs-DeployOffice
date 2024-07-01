@@ -1,7 +1,7 @@
 ---
 title: "Update Microsoft applications for Mac by using msupdate"
 ms.author: ppark
-author: pbowden-msft
+author: nicholasswhite
 manager: eduardoc
 audience: ITPro
 ms.topic: conceptual

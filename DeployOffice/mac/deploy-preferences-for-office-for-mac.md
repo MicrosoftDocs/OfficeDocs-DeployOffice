@@ -1,7 +1,7 @@
 ---
 title: "Deploy preferences for Office for Mac"
 ms.author: geokri
-author: pbowden-msft
+author: nicholasswhite
 manager: dougeby
 audience: ITPro
 ms.topic: conceptual
