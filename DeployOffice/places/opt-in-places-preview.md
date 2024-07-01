@@ -13,7 +13,7 @@ recommendations: true
 description: "Provide admins with the information for how to join the Microsoft Places Public Preview Program."
 ---
 
-# Opt in to the Microsoft Places Public Preview
+# Opt in to Advanced Features in the Microsoft Places Public Preview
 
 ## Microsoft Places is a new connected workplace app that reimagines flexible work
 
@@ -37,7 +37,7 @@ This guide takes you through the following steps:
 - Accessing the Teams Preview environment for Places Features
 - Configuring Places for your organization
 
-## You may also opt in to try additional features as they become available
+## You may also opt in to try advanced features as they become available
 
 The following features are available for early access as part of the public preview program. We'll release these features in waves as we ramp up capacity to meet demand:  
 
@@ -51,7 +51,7 @@ The following features are available for early access as part of the public prev
 > **Ready to go?**
 > Fill out the [Places Preview Additional Features Opt-in Form](https://forms.office.com/r/XJFTwNQep6) to opt in to additional preview features.
 
-## Prerequisites for additional feature access
+## Prerequisites for advanced feature access
 
 Before opting in, review and confirm you meet the deployment requirements. See [Deployment Guide for Places](deployment-guide-for-places.md) for more information.
 
