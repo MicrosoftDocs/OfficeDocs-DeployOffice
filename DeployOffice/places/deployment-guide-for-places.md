@@ -63,20 +63,20 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 ### Step 1 - Create Places Security Groups
 
-1. Install the [PreparePlacesGroups 1.0](https://www.powershellgallery.com/packages/prepareplacesgroups/1.0) script.
+1. Install the latest [PreparePlacesGroups](https://www.powershellgallery.com/packages/prepareplacesgroups/1.0) script.
 
 2. Open **PowerShell 7** as Administrator.
 
 3. Run the PreparePlacesGroups script.
 
-You should have the following groups created at the end of this step:
+   You should have the following groups created at the end of this step:
 
-|Experience / Feature |Group Name|Group smtp address|
-| -------- | -------- | -------- |
-|Basic experience|Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesUsers@contoso.com |
-|Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
-|Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
-|Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
+   |Experience / Feature |Group Name|Group smtp address|
+   | -------- | -------- | -------- |
+   |Basic experience|Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesUsers@contoso.com |
+   |Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
+   |Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
+   |Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
 
 
 > [!NOTE]
@@ -87,8 +87,8 @@ You should have the following groups created at the end of this step:
 
 Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.
 
-1. Install the [PreparePlacesPowershell7 1.0](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0) script.
- 
+1. Install the latest [PreparePlacesPowershell7](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0) script.
+
 2. Open a new **PowerShell 7** window (separate from Step 1). Currently, Exchange cmdlets and Places cmdlets cannot be executed from the same window.  Therefore, the PowerShell scripts used in Steps 2 and 3 must be executed in a separate window from the script in Step 1.
 
 3.  Run the PreparePlacesPowershell7 script.
@@ -97,13 +97,22 @@ Running the following script installs the Places and Azure module in PowerShell 
 
 Running the following script will enable the Places Web App and Advanced Features.
 
-1. Install the [Prepare-PlacesEnablement 1.0](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
+1. Install the latest [Prepare-PlacesEnablement](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
 
 1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
- ```powershell
-Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
- ```
+
+   - To enable Core only features run:
+
+     ```powershell
+     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true 
+     ```
  
+   - To enable Advanced features run:
+
+     ```powershell
+     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
+     ```
+
 ### Step 4 - Set up Buildings and Floors
 
 Microsoft Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Utilize the steps found in at the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to finish setting up your Places Directory. 
