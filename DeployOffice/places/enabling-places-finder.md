@@ -88,6 +88,6 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 ### What's the difference between Room Finder and Places Finder?
 
-:::image type="content" source="./media/enabling-places-finder/places-finder-room-finder-vs-places-finder.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-room-finder-vs-places-finder.png":::
+:::image type="content" source="./media/enabling-places-finder/places-finder-room-finder-vs-places-finder.png" alt-text="Screen showing the difference between Room Finder and Places Finder." lightbox="media/enabling-places-finder/places-finder-room-finder-vs-places-finder.png":::
 
 
