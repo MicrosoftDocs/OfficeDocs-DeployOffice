@@ -29,9 +29,13 @@ For existing room and workspace mailboxes, Places Finder relies on a new locatio
 
 Before you enable Places Finder, you must do the following:
 
-- Create your building entities and floors and associate them to existing or new room/workspaces accounts. To learn how to quickly set up buildings and floors in Exchange, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
+- Create your building entities and floors and associate them to existing or new room and workspaces accounts. To learn how to quickly set up buildings and floors in Exchange, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
 
-- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo will be uploaded for each room. Recommended fields you can update are discussed later in this article.  
+- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo will be uploaded for each room. Recommended fields you can update are discussed later in this article.
+
+### Properties and how they interface for room accounts
+
+:::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its available services.":::
 
 ## Enable Places Finder
 
