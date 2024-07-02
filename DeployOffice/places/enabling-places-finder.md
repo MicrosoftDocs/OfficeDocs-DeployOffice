@@ -70,4 +70,7 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing coworkers on the People tab.":::
 
+- You can use the Places Finder in Outlook Calendar the same way you would with Room Finder.
+
+  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook calendar.":::
 
