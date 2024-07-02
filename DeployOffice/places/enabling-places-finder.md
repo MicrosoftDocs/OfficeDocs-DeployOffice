@@ -48,3 +48,9 @@ Once you receive notification that you have access to the Places Finder feature,
 ```powershell
 Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID:<Security Group OID>@<TenantId>:true'
 ```
+## Frequently Asked Questions
+
+### When I enable Places Finder for a certain set of users, will these users lose access to Room Finder?
+
+Yes, once Places Finder is enabled, it will replace the Room Finder experience for that set of users. We recommend updating the building and floor entities of all rooms or workspaces of the assigned site or building the set of users regularly book from.
+
