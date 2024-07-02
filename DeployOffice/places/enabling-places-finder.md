@@ -54,3 +54,20 @@ Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID
 
 Yes, once Places Finder is enabled, it will replace the Room Finder experience for that set of users. We recommend updating the building and floor entities of all rooms or workspaces of the assigned site or building the set of users regularly book from.
 
+### How do I hide a room or workspace from showing in Places Finder?
+
+Remove the building and floor entity (PlaceId) of the resource mailbox. Learn more about manually updating resource mailboxes by using [Set-PlaceV3](powershell/set-placev3.md).
+
+### Where will I see Places Finder when enabled?
+
+In the Places web app, you'll be introduced to Places Finder through multiple entry points.  
+
+- You can find the Places Finder in the Places web app to book a conference room or desk.
+
+  [NEED NEW ART]
+
+- You can use the Places Finder in the Places web app under the People tab to add a room to a meeting that does not have one yet.
+
+  :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing coworkers on the People tab.":::
+
+
