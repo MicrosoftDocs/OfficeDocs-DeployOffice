@@ -18,6 +18,10 @@ Places Finder is a web-based feature that exists in Places to help employees fin
 
 ## Overview of Places Finder
 
+Like Room Finder, every meeting room and workspace must be set up in Exchange Online. Each of these spaces must be configured to have either a room mailbox or a workspace mailbox as a specific type of resource mailbox.  
+
+For existing room and workspace mailboxes, Places Finder relies on a new location hierarchy to ensure all [rooms](/exchange/recipients/room-mailboxes?view=exchserver-2019) and [workspaces](/exchange/troubleshoot/outlook-issues/create-book-workspace-outlook) are tied to a [building and floor](get-started/quick-setup-buildings-floors.md), to be reflected in Places Finder.  
+
 ## Prerequisites
 
 > [!NOTE]
