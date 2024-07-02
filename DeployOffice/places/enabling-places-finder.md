@@ -27,12 +27,11 @@ For existing room and workspace mailboxes, Places Finder relies on a new locatio
 > [!NOTE]
 > Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled in Outlook on the Web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
-Before you begin, you must do the following tasks:
+Before you enable Places Finder, you must do the following:
 
-- Deploy the new Outlook for Windows or Outlook on the web. The experience will be coming to classic Outlook for Windows and Outlook for Mac at the end of June 2024.
-- Create your building.
-- Enable your maps.
-- Install Enhanced Places.
+- Create your building entities and floors and associate them to existing or new room/workspaces accounts. To learn how to quickly set up buildings and floors in Exchange, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
+
+- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo will be uploaded for each room. Recommended fields you can update are discussed later in this article.  
 
 ## Enable Places Finder
 
