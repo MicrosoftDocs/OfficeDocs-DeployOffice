@@ -14,7 +14,7 @@ description: "Enable Places Finder to book desks, rooms, and workspaces."
 ---
 # Enabling Places Finder in Outlook
 
-Places Finder is a web-based feature that exists in Places to help employees find available conference [rooms](/exchange/recipients/room-mailboxes) and [workspaces](/exchange/troubleshoot/outlook-issues/create-book-workspace-outlook). It has improved functionality from the existing Room Finder for employees to confidently choose the right place to meet and work productively.
+Places Finder is a web-based feature that exists in Microsoft Places to help employees find available conference [rooms](/exchange/recipients/room-mailboxes) and [workspaces](/exchange/troubleshoot/outlook-issues/create-book-workspace-outlook). It has improved functionality from the existing Room Finder for employees to confidently choose the right place to meet and work productively.
 
 ## Overview of Places Finder
 
@@ -25,7 +25,7 @@ For existing room and workspace mailboxes, Places Finder relies on a new locatio
 ## Prerequisites
 
 > [!NOTE]
-> Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled in Outlook on the Web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+> Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled in Outlook on the web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
 Before you enable Places Finder, you must do the following:
 
@@ -33,11 +33,11 @@ Before you enable Places Finder, you must do the following:
 
 - Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo is uploaded for each room. Recommended fields you can update are discussed later in this article.
 
-#### Properties and how they interface for room accounts
+### Properties and how they interface for room accounts
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its properties." lightbox="media/enabling-places-finder/places-finder-conference-room-example.png":::
 
-#### Properties and how they interface for room accounts
+### Properties and how they interface for room accounts
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties." lightbox="media/enabling-places-finder/places-finder-workspace-example.png":::
 
