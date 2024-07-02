@@ -64,11 +64,11 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 - You can find the Places Finder in the Places web app to book a conference room or desk.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-button-in-explore-tab.png" alt-text="Screen showing coworkers on the People tab.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-button-in-explore-tab.png" alt-text="Screen showing the Places Finder in the Places web app.":::
 
 - You can use the Places Finder in the Places web app under the People tab to add a room to a meeting that does not have one yet.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing coworkers on the People tab.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab.":::
 
 - You can use the Places Finder in Outlook Calendar the same way you would with Room Finder.
 
@@ -76,14 +76,14 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 - Here's an example of Places Finder in New Outlook or Outlook on the web.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing how to book a meeting in the New Outlook Calendar.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing the Places Finder in New Outlook or Outlook on the web.":::
 
 - Here's an example of Places Finder in the Windows Desktop (Win32) Calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing how to book a meeting in the New Outlook Calendar.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (win32).":::
  
 - Here's an example of the Places Finder in the Mac Desktop Calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing how to book a meeting in the New Outlook Calendar.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar.":::
 
 
