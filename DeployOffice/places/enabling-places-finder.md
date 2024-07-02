@@ -35,11 +35,11 @@ Before you enable Places Finder, you must do the following:
 
 #### Properties and how they interface for room accounts
 
-:::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its properties.":::
+:::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its properties." lightbox="media/enabling-places-finder/places-finder-conference-room-example.png":::
 
 #### Properties and how they interface for room accounts
 
-:::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties.":::
+:::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties." lightbox="media/enabling-places-finder/places-finder-workspace-example.png":::
 
 ## Enable Places Finder
 
