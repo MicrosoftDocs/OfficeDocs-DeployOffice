@@ -14,7 +14,7 @@ description: "Enable Places Finder to book desks, rooms, and workspaces."
 ---
 # Enabling Places Finder in Outlook
 
-Places Finder is a web-based feature that exists in Places to help employees find available conference [rooms](/exchange/recipients/room-mailboxes?view=exchserver-2019) and [workspaces](/exchange/troubleshoot/outlook-issues/create-book-workspace-outlook). It has improved functionality from the existing Room Finder for employees to confidently choose the right place to meet and work productively.
+Places Finder is a web-based feature that exists in Places to help employees find available conference [rooms](/exchange/recipients/room-mailboxes) and [workspaces](/exchange/troubleshoot/outlook-issues/create-book-workspace-outlook). It has improved functionality from the existing Room Finder for employees to confidently choose the right place to meet and work productively.
 
 ## Overview of Places Finder
 
