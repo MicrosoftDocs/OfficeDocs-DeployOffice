@@ -72,19 +72,19 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 - You can use the Places Finder in Outlook Calendar the same way you would with Room Finder.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook Calendar.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook Calendar." lightbox="media/enabling-places-finder/places-finder-outlook-calendar1.png":::
 
 - Here's an example of Places Finder in New Outlook or Outlook on the web.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing the Places Finder in New Outlook or Outlook on the web.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing the Places Finder in New Outlook or Outlook on the web." lightbox="media/enabling-places-finder/places-finder-outlook-calendar2.png":::
 
 - Here's an example of Places Finder in the Windows Desktop (Win32) Calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (win32).":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win32.png":::
  
 - Here's an example of the Places Finder in the Mac Desktop Calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png":::
 
 ### What's the difference between Room Finder and Places Finder?
 
