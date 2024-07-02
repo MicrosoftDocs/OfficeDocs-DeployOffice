@@ -70,7 +70,7 @@ In the Places web app, you are introduced to Places Finder through multiple entr
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab." lightbox="media/enabling-places-finder/places-finder-people-tab.png":::
 
-- You can use the Places Finder in Outlook Calendar the same way you would with Room Finder.
+- You can use the Places Finder in Outlook calendar the same way you would with Room Finder.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook Calendar." lightbox="media/enabling-places-finder/places-finder-outlook-calendar1.png":::
 
@@ -78,11 +78,11 @@ In the Places web app, you are introduced to Places Finder through multiple entr
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing the Places Finder in New Outlook or Outlook on the web." lightbox="media/enabling-places-finder/places-finder-outlook-calendar2.png":::
 
-- Here's an example of Places Finder in the Windows Desktop (Win32) Calendar.
+- Here's an example of Places Finder in the Windows desktop (Win32) calendar.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win32.png":::
  
-- Here's an example of the Places Finder in the Mac Desktop Calendar.
+- Here's an example of the Places Finder in the Mac desktop calendar.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png":::
 
@@ -101,4 +101,4 @@ In the Places web app, you are introduced to Places Finder through multiple entr
 |Features Filter |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace standard properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific room list |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace standard properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific building |
 |Room suggestions |No suggestions  |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan) |
 |Workspace Suggestions |No suggestions    |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan)   |
-|Room Results |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Features: Standard Properties with icons<br>Features: Custom Properties (no icons) |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Building<br>Floor<br>Picture<br>Features: Standard properties with icons<br>Features: Custom properties with icons |
+|Room Results |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Features: Standard properties with icons<br>Features: Custom properties (no icons) |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Building<br>Floor<br>Picture<br>Features: Standard properties with icons<br>Features: Custom properties with icons |
