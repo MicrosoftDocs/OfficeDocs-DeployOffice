@@ -64,11 +64,11 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 - You can find the Places Finder in the Places web app to book a conference room or desk.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-button-in-explore-tab.png" alt-text="Screen showing the Places Finder in the Places web app.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-button-in-explore-tab.png" alt-text="Screen showing the Places Finder in the Places web app." lightbox="media/enabling-places-finder/places-finder-button-in-explore-tab.png":::
 
 - You can use the Places Finder in the Places web app under the People tab to add a room to a meeting that does not have one yet.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab.":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab." lightbox="media/enabling-places-finder/places-finder-people-tab.png":::
 
 - You can use the Places Finder in Outlook Calendar the same way you would with Room Finder.
 
