@@ -31,7 +31,7 @@ Before you enable Places Finder, you must do the following:
 
 - Create your building entities and floors and associate them to existing or new rooms and workspaces accounts. To learn how to quickly set up buildings and floors in Exchange, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
 
-- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo will be uploaded for each room. Recommended fields you can update are discussed later in this article.
+- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo is uploaded for each room. Recommended fields you can update are discussed later in this article.
 
 #### Properties and how they interface for room accounts
 
@@ -52,7 +52,7 @@ Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID
 
 ### When I enable Places Finder for a certain set of users, will these users lose access to Room Finder?
 
-Yes, once Places Finder is enabled, it will replace the Room Finder experience for that set of users. We recommend updating the building and floor entities of all rooms or workspaces of the assigned site or building the set of users regularly book from.
+Yes, once Places Finder is enabled, it replaces the Room Finder experience for that set of users. We recommend updating the building and floor entities of all rooms or workspaces of the assigned site or building the set of users regularly book from.
 
 ### How do I hide a room or workspace from showing in Places Finder?
 
@@ -60,7 +60,7 @@ Remove the building and floor entity (PlaceId) of the resource mailbox. Learn mo
 
 ### Where will I see Places Finder when enabled?
 
-In the Places web app, you'll be introduced to Places Finder through multiple entry points.  
+In the Places web app, you are introduced to Places Finder through multiple entry points.  
 
 - You can find the Places Finder in the Places web app to book a conference room or desk.
 
@@ -93,12 +93,12 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 |Functionality  |Room Finder  |Places Finder
 |---------|---------|---------|
 |Entry Point |New Event Form in Calendar |New Event Form in Calendar<br>Places Homepage<br>Places People page |
-|Main Search |Room Lists: a distribution list of room mailbox accounts (documentation recommended to let room list represent a building)<br>Type search |No room lists<br>Location hierarchy (uses Country, State/Region, City, Building, and Floor to find the appropriate room)<br>Type search  |
-|Recent Building |Supports recent buildings (room list)  |Building set from workplan or from a user’s booking history |
+|Main Search |Room Lists: a distribution list of room mailbox accounts (documentation letting room list represent a building)<br>Type search |No room lists<br>Location hierarchy (uses Country, State/Region, City, Building, and Floor to find the appropriate room)<br>Type search  |
+|Recent Building |Supports recent buildings (room list)  |Building set from work plan or from a user’s booking history |
 |Default Search |Last-used building (room list) |No last-used building<br>Respects building set in Places |
 |Place Types |Conference Room<br>Workspaces |Conference Room<br>Workspaces |
 |Capacity Filter |Yes |Yes |
-|Features Filter |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace Standard Properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific room list |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace standard properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific building |
+|Features Filter |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace standard properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific room list |Combination of standardized properties and customer tags<br>**Room standard properties**: Video, Display, Audio, Meeting Teams Room, and Wheelchair Accessible<br>**Workspace standard properties**: Wheelchair Accessible<br>List of features is filtered just to what is populated given a specific building |
 |Room suggestions |No suggestions  |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan) |
 |Workspace Suggestions |No suggestions    |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan)   |
 |Room Results |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Features: Standard Properties with icons<br>Features: Custom Properties (no icons) |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Building<br>Floor<br>Picture<br>Features: Standard properties with icons<br>Features: Custom properties with icons |
