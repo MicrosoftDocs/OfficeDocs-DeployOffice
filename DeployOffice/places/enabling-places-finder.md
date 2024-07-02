@@ -60,13 +60,13 @@ Remove the building and floor entity (PlaceId) of the resource mailbox. Learn mo
 
 ### Where will I see Places Finder when enabled?
 
-In the Places web app, you are introduced to Places Finder through multiple entry points.  
+In the Places web app, you're introduced to Places Finder through multiple entry points.  
 
 - You can find the Places Finder in the Places web app to book a conference room or desk.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-button-in-explore-tab.png" alt-text="Screen showing the Places Finder in the Places web app." lightbox="media/enabling-places-finder/places-finder-button-in-explore-tab.png":::
 
-- You can use the Places Finder in the Places web app under the People tab to add a room to a meeting that does not have one yet.
+- You can use the Places Finder in the Places web app under the People tab to add a room to a meeting that doesn't have one yet.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab." lightbox="media/enabling-places-finder/places-finder-people-tab.png":::
 
@@ -80,7 +80,7 @@ In the Places web app, you are introduced to Places Finder through multiple entr
 
 - Here's an example of Places Finder in the Windows desktop (Win32) calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win32.png":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (Win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win32.png":::
  
 - Here's an example of the Places Finder in the Mac desktop calendar.
 
