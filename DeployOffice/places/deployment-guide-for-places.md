@@ -69,14 +69,14 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 3. Run the PreparePlacesGroups script.
 
-You should have the following groups created at the end of this step:
+   You should have the following groups created at the end of this step:
 
-|Experience / Feature |Group Name|Group smtp address|
-| -------- | -------- | -------- |
-|Basic experience|Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesUsers@contoso.com |
-|Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
-|Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
-|Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
+   |Experience / Feature |Group Name|Group smtp address|
+   | -------- | -------- | -------- |
+   |Basic experience|Places Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesUsers@contoso.com |
+   |Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
+   |Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
+   |Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
 
 
 > [!NOTE]
@@ -100,18 +100,18 @@ Running the following script will enable the Places Web App and Advanced Feature
 1. Install the latest [Prepare-PlacesEnablement](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
 
 1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
-- To enable Core only features run:
-      
- ```powershell
-Prepare-PlacesEnablement.ps1 -PlacesWebApp $true 
 
- ```
+   - To enable Core only features run:
+
+     ```powershell
+     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true 
+     ```
  
-- To enable Advanced features run:
+   - To enable Advanced features run:
 
-```powershell
-Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
-```
+     ```powershell
+     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
+     ```
 
 ### Step 4 - Set up Buildings and Floors
 
