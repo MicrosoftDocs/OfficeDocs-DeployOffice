@@ -31,7 +31,7 @@ Before you enable Places Finder, you must do the following:
 
 - Create your building entities and floors and associate them to existing or new rooms and workspaces accounts. To learn how to quickly set up buildings and floors in Exchange, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
 
-- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo is uploaded for each room. Recommended fields you can update are discussed later in this article.
+- Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo is uploaded for each room. Recommended fields you can update are discussed later in this article. To learn how to add metadata for rooms, see the [Set-Place cmdlet](/powershell/module/exchange/set-place).
 
 ### Properties for room accounts
 
