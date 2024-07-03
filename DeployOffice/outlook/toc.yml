@@ -6,6 +6,8 @@ items:
     items:
       - name: Deploy Outlook
         href: get-started/deployment-new-outlook.md
+      - name: Control install and use
+        href: control-install2.md
       - name: Microsoft COM add-ins 
         items:
           - name: Migrate from COM to web add-ins
