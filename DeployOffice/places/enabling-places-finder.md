@@ -37,7 +37,7 @@ Before you enable Places Finder, you must do the following:
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its properties." lightbox="media/enabling-places-finder/places-finder-conference-room-example.png":::
 
-### Properties workspace accounts (neighborhoods, desk zones, and desks)
+### Properties for workspace accounts (neighborhoods, desk zones, and desks)
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties." lightbox="media/enabling-places-finder/places-finder-workspace-example.png":::
 
