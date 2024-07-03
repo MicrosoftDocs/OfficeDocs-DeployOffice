@@ -59,12 +59,12 @@ To remove it, follow the instructions in [Remove-AppxProvisionedPackage](/powers
 Use the following PowerShell cmdlet:
 
     ```powershell
-Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+    Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
     ```
 
 Additionally, remove this Windows orchestrator registry value:
 
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate`
 
 For any device that installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
 
