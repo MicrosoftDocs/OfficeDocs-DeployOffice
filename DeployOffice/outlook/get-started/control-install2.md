@@ -60,7 +60,7 @@ To remove it, follow the instructions in [Remove-AppxProvisionedPackage](/powers
 
 Use the following PowerShell cmdlet:
 
-```powershell
+```PowerShell
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
 
@@ -76,7 +76,7 @@ In cases of user installs, for example, if users used the toggle to install the 
 
 Use this PowerShell cmdlet to remove the new Outlook for Windows for all users:
 
-```powershell
+```PowerShell
 Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
 
@@ -93,13 +93,13 @@ To uninstall the apps, follow the instructions in [Remove-AppxProvisionedPackage
 
 Use the following PowerShell cmdlet:
 
-```powershell
+```PowerShell
 Get-AppxProvisionedPackage -Online | Where {$_.DisplayName -match "microsoft.windowscommunicationsapps"} | Remove-AppxProvisionedPackage -Online -PackageName {$_.PackageName}
 ```
 
 To remove the Mail and Calendar apps for the current users, you can use the **Remove-AppxPackage** cmdlet:
 
-```powershell
+```PowerShell
 Remove-AppxPackage -AllUsers -Package (Get-AppxPackage microsoft.windowscommunicationsapps).PackageFullName
 ```
 
