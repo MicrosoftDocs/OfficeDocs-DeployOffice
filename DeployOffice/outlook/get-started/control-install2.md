@@ -72,7 +72,8 @@ Use this PowerShell cmdlet to remove the new Outlook for Windows for all users:
 Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
 
-**Tip:** To confirm if the app is installed, check if the logs folder is present under: *%localappdata%\Microsoft\Olk\logs*. In some cases, users might not have the app installed but might see the pinned/placeholder icon in the Start menu. The new Outlook app is installed when users select it. You can manage Windows Start pins by following the instructions in [Customize the Start layout - Configure Windows](/windows/configuration/start/layout?tabs=intune-10%2Cintune-11&pivots=windows-11). Users might also see the new Outlook app in the Start 'recommended (Win11)/ suggested (Win10)' sections on consumer devices.
+[!Tip:]
+To confirm if the app is installed, check if the logs folder is present under: *%localappdata%\Microsoft\Olk\logs*. In some cases, users might not have the app installed but might see the pinned/placeholder icon in the Start menu. The new Outlook app is installed when users select it. You can manage Windows Start pins by following the instructions in [Customize the Start layout - Configure Windows](/windows/configuration/start/layout?tabs=intune-10%2Cintune-11&pivots=windows-11). Users might also see the new Outlook app in the Start 'recommended (Win11)/ suggested (Win10)' sections on consumer devices.
 
 ## Block new Outlook installation as part of Mail and Calendar deprecation
 
