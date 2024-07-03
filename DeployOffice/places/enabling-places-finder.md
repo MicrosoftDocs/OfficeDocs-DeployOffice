@@ -18,14 +18,14 @@ Places Finder is a web-based feature that exists in Microsoft Places to help emp
 
 ## Overview of Places Finder
 
-Like Room Finder, every meeting room and workspace must be set up in Exchange Online as a room mailbox or a workspace mailbox.  
+Like Room Finder, every meeting room and workspace must be set up in Exchange Online as a room mailbox or as a workspace mailbox.  
 
 Your room and workspace mailboxes will automatically show up in Places Finder once you've set up your location hierarchy to ensure all rooms and workspaces are tied to a building and floor. For more information on how to set up your hierarchy, see [Quick setup of buildings and floors](get-started/quick-setup-buildings-floors.md).
 
 ## Prerequisites
 
 > [!NOTE]
-> Places Finder is an opt-in feature and will be replacing the Room Finder experience once enabled in Outlook on the web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+> Places Finder is an opt-in feature and, once enabled, replace the Room Finder experience in Outlook on the web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
 Before you enable Places Finder, you must do the following:
 
