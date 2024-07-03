@@ -52,7 +52,7 @@ Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID
 
 ### When I enable Places Finder for a certain set of users, will these users lose access to Room Finder?
 
-Yes, once Places Finder is enabled, it replaces the Room Finder experience for that set of users. We recommend updating the building and floor entities of all rooms or workspaces of the assigned site or building the set of users regularly book from.
+Yes, once Places Finder is enabled, it replaces the Room Finder experience for that set of users. We recommend ensuring that your location heirarchy is set up for all rooms or workspaces within the assigned site or building in which users regularly book.
 
 ### How do I hide a room or workspace from showing in Places Finder?
 
