@@ -56,7 +56,7 @@ Yes, once Places Finder is enabled, it replaces the Room Finder experience for t
 
 ### How do I hide a room or workspace from showing in Places Finder?
 
-Remove the building and floor entity (PlaceId) of the resource mailbox. Learn more about manually updating resource mailboxes by using [Set-PlaceV3](powershell/set-placev3.md).
+Remove the ParentId property set on the resource mailbox. Learn more about manually updating resource mailbox properties by using [Set-PlaceV3](powershell/set-placev3.md).
 
 ### Where will I see Places Finder when enabled?
 
