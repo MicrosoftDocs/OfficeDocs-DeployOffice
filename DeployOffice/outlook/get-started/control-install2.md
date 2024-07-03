@@ -119,4 +119,4 @@ Users might acquire the new Outlook app through different flows, as outlined in 
 
 Mailbox policies are applied to the work or school email account and not at the device or app level. Therefore, to prevent users from using the app with other accounts that aren't their work or school email account, we recommend blocking access to the app (as described in previous sections).
 
-Follow the instructions in [Enable or disable access to the new Outlook for Windows](/deployoffice/enable-disable-new-outlook-windows) for managing mailbox access.
+Follow the instructions in [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox) for managing mailbox access.
