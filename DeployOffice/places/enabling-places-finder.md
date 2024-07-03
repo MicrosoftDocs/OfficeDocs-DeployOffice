@@ -25,7 +25,7 @@ Your room and workspace mailboxes will automatically show up in Places Finder on
 ## Prerequisites
 
 > [!NOTE]
-> Places Finder is an opt-in feature and, once enabled, replace the Room Finder experience in Outlook on the web, New Outlook for Windows, Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
+> Places Finder is an opt-in feature and, once enabled, will replace the Room Finder experience in Outlook on the web, New Outlook for Windows, and Outlook Desktop (Mac and Windows). For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
 
 Before you enable Places Finder, you must do the following:
 
