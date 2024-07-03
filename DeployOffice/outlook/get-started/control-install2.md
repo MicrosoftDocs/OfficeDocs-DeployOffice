@@ -34,14 +34,10 @@ Hiding new Outlook is available as a cloud policy in the Microsoft 365 Apps admi
 
 Alternatively, you can use the following Windows registry key to hide the **Try the new Outlook** toggle:
 
-Windows Registry Editor Version 5.00
-
 `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
 "HideNewOutlookToggle"=dword:00000000`
 
 To later enable the policy, set the registry key to 1:
-
-Windows Registry Editor Version 5.00
 
 `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
 "HideNewOutlookToggle"=dword:00000001`
@@ -72,7 +68,9 @@ In cases of user installs, for example, if users used the toggle to install the 
 
 Use this PowerShell cmdlet to remove the new Outlook for Windows for all users:
 
-    Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+```powershell
+Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+```
 
 **Tip:** To confirm if the app is installed, check if the logs folder is present under: *%localappdata%\Microsoft\Olk\logs*. In some cases, users might not have the app installed but might see the pinned/placeholder icon in the Start menu. The new Outlook app is installed when users select it. You can manage Windows Start pins by following the instructions in [Customize the Start layout - Configure Windows](/windows/configuration/start/layout?tabs=intune-10%2Cintune-11&pivots=windows-11). Users might also see the new Outlook app in the Start 'recommended (Win11)/ suggested (Win10)' sections on consumer devices.
 
@@ -86,11 +84,15 @@ To uninstall the apps, follow the instructions in [Remove-AppxProvisionedPackage
 
 Use the following PowerShell cmdlet:
 
-    Get-AppxProvisionedPackage -Online | Where {$_.DisplayName -match "microsoft.windowscommunicationsapps"} | Remove-AppxProvisionedPackage -Online -PackageName {$_.PackageName}
+```powershell
+Get-AppxProvisionedPackage -Online | Where {$_.DisplayName -match "microsoft.windowscommunicationsapps"} | Remove-AppxProvisionedPackage -Online -PackageName {$_.PackageName}
+```
 
 To remove the Mail and Calendar apps for the current users, you can use the **Remove-AppxPackage** cmdlet:
 
-    Remove-AppxPackage -AllUsers -Package (Get-AppxPackage microsoft.windowscommunicationsapps).PackageFullName
+```powershell
+Remove-AppxPackage -AllUsers -Package (Get-AppxPackage microsoft.windowscommunicationsapps).PackageFullName
+```
 
 Alternatively, you can do remove the apps through Intune or by following the instructions in [Uninstall applications](/mem/configmgr/apps/deploy-use/uninstall-applications).
 
