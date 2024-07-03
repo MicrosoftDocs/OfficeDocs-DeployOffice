@@ -36,6 +36,7 @@ Alternatively, you can use the following Windows registry key to hide the **Try 
 
 ```console
 Windows Registry Editor Version 5.00
+
 [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
 "HideNewOutlookToggle"=dword:00000000
 ```
@@ -44,6 +45,7 @@ To later enable the policy, set the registry key to 1:
 
 ```console
 Windows Registry Editor Version 5.00
+
 [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
 "HideNewOutlookToggle"=dword:00000001
 ```
