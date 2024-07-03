@@ -41,7 +41,7 @@ Before you enable Places Finder, you must do the following:
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties." lightbox="media/enabling-places-finder/places-finder-workspace-example.png":::
 
-## Enable Places Finder
+## Enabling Places Finder
 
 Once you receive notification that you have access to the Places Finder feature, run the following **Places PowerShell** cmdlet to enable the opt-in features for a set of users in a security group.
 
