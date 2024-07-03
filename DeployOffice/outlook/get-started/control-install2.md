@@ -36,14 +36,14 @@ Alternatively, you can use the following Windows registry key to hide the **Try 
 
 Windows Registry Editor Version 5.00
 
-`[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
 "HideNewOutlookToggle"=dword:00000000`
 
 To later enable the policy, set the registry key to 1:
 
 Windows Registry Editor Version 5.00
 
-`[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
 "HideNewOutlookToggle"=dword:00000001`
 
 More details are available in [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
@@ -58,9 +58,9 @@ To remove it, follow the instructions in [Remove-AppxProvisionedPackage](/powers
 
 Use the following PowerShell cmdlet:
 
-    ```powershell
-    Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
-    ```
+```powershell
+Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+```
 
 Additionally, remove this Windows orchestrator registry value:
 
