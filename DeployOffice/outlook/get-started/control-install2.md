@@ -17,7 +17,7 @@ ai-usage:  ai-assisted
 ms.date: 07/02/2024 
 ---  
 
-# Prevent users from switching to new Outlook
+# Control the installation and use of new Outlook
 
 This article provides guidance for admins on how to control the installation and use of the new Outlook in an organization.
 
@@ -64,7 +64,7 @@ Additionally, remove this Windows orchestrator registry value:
 
 For any device that installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
 
-In cases of user installs, for example, if users used the toggle to install the new Outlook for Windows, use **Remove-AppxPackage**. The *AppxPackage* cmdlets are used for managing applications for current users, while *AppxProvisionedPackage* cmdlets are used for managing default applications for both current and future users of the system.
+In cases of user installs, for example, if users used the toggle to install the new Outlook for Windows, use **Remove-AppxPackage**. The AppxPackage cmdlets are used for managing applications for current users, while AppxProvisionedPackage cmdlets are used for managing default applications for both current and future users of the system.
 
 Use this PowerShell cmdlet to remove the new Outlook for Windows for all users:
 
