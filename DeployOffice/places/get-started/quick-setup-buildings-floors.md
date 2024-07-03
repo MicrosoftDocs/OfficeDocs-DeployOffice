@@ -32,7 +32,7 @@ Use [Set-PlaceV3](../powershell/set-placev3.md) to add more metadata on building
 
 * You need to be assigned permissions before you can run this cmdlet. You must have both the Exchange MailRecipients role and the Places TenantPlacesManagement role.
 
-* Before using any of the Places PowerShell cmdlets, you must first connect using [Connect-Places](../connect-microsoftplaces.md).
+* Before using any of the Places PowerShell cmdlets, you must first connect using [Connect-MicrosoftPlaces](../powershell/connect-microsoftplaces.md).
 
 ## Enable your organization to use the Places Directory
 
