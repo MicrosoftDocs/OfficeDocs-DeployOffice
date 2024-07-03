@@ -43,7 +43,7 @@ Before you enable Places Finder, you must do the following:
 
 ## Enabling Places Finder
 
-Once you receive notification that you have access to the Places Finder feature, run the following **Places PowerShell** cmdlet to enable the opt-in features for a set of users in a security group.
+Once you receive notification that you have access to the Places Public preview, run the following **Places PowerShell** cmdlet to enable Places Finder for a set of users in a security group.
 
 ```powershell
 Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID:<Security Group OID>@<TenantId>:true'
