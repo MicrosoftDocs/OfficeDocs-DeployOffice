@@ -74,15 +74,15 @@ In the Places web app, you're introduced to Places Finder through multiple entry
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook Calendar." lightbox="media/enabling-places-finder/places-finder-outlook-calendar1.png":::
 
-- This is an example of Places Finder in New Outlook or Outlook on the web.
+- The Places Finder in New Outlook or Outlook on the web.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar2.png" alt-text="Screen showing the Places Finder in New Outlook or Outlook on the web." lightbox="media/enabling-places-finder/places-finder-outlook-calendar2.png":::
 
-- This is an example of Places Finder in the Windows desktop (Win32) calendar.
+- The Places Finder in the Windows desktop (Win32) calendar.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win32.png" alt-text="Screen showing Places Finder in Windows Desktop (Win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win32.png":::
  
-- This is an example of the Places Finder in the Mac desktop calendar.
+- The Places Finder in the Mac desktop calendar.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png":::
 
