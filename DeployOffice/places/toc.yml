@@ -7,8 +7,6 @@ items:
       href: get-started/quick-setup-buildings-floors.md
     - name: Understanding work locations
       href: understanding-work-location.md
-    - name: Connected buildings
-      href: connected-buildings.md
 
 
   - name: Advanced features
@@ -25,6 +23,8 @@ items:
       href: enabling-places-finder.md
     - name: Enabling Places Analytics views and reports
       href: places-analytics.md
+    - name: Connected buildings
+      href: connected-buildings.md
 
 
   - name: PowerShell
