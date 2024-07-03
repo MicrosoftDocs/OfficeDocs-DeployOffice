@@ -33,11 +33,11 @@ Before you enable Places Finder, you must do the following:
 
 - Ensure that each resource account (room or workspace mailbox) has the necessary fields updated with accurate room and workspace data. We strongly recommend importing photos for each resource, otherwise a stock photo is uploaded for each room. Recommended fields you can update are discussed later in this article.
 
-### Properties and how they interface for room accounts
+### Properties for room accounts
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-conference-room-example.png" alt-text="Screen showing a sample conference room with its properties." lightbox="media/enabling-places-finder/places-finder-conference-room-example.png":::
 
-### Properties and how they interface for room accounts
+### Properties workspace accounts (neighborhoods, desk zones, and desks)
 
 :::image type="content" source="./media/enabling-places-finder/places-finder-workspace-example.png" alt-text="Screen showing a sample workspace with its properties." lightbox="media/enabling-places-finder/places-finder-workspace-example.png":::
 
