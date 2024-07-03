@@ -84,7 +84,7 @@ In the Places web app, you're introduced to Places Finder through multiple entry
  
 - The Places Finder in the Mac desktop calendar.
 
-  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar.png":::
+  :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar2.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar2.png":::
 
 ### What's the difference between Room Finder and Places Finder?
 
