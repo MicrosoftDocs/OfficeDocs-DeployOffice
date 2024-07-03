@@ -34,13 +34,19 @@ Hiding new Outlook is available as a cloud policy in the Microsoft 365 Apps admi
 
 Alternatively, you can use the following Windows registry key to hide the **Try the new Outlook** toggle:
 
-`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
-"HideNewOutlookToggle"=dword:00000000`
+```console
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+"HideNewOutlookToggle"=dword:00000000
+```
 
 To later enable the policy, set the registry key to 1:
 
-`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General
-"HideNewOutlookToggle"=dword:00000001`
+```console
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+"HideNewOutlookToggle"=dword:00000001
+```
 
 More details are available in [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
 
@@ -60,7 +66,9 @@ Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Mi
 
 Additionally, remove this Windows orchestrator registry value:
 
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate`
+```console
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate
+```
 
 For any device that installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
 
