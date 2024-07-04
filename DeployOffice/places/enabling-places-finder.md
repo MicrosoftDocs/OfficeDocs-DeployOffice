@@ -60,7 +60,7 @@ Remove the ParentId property set on the resource mailbox. Learn more about manua
 
 ### Where will I see Places Finder when enabled?
 
-In the Places web app, you'll be introduced to Places Finder through multiple entry points.  
+In the Places web app, you are introduced to Places Finder through multiple entry points.  
 
 - You can find the Places Finder in the Places web app to book a conference room or desk.
 
