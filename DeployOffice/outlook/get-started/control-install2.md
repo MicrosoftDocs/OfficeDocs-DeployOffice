@@ -58,9 +58,9 @@ Windows builds after 23H2 have the new Outlook app preinstalled for all users, a
 
 Currently, there isn't a way to block the new Outlook from being installed before it's first installed as a replacement for the Mail & Calendar app. If you prefer not to have new Outlook show up on your organization's devices, you can remove it after it's installed as part of the update.
 
-To remove it, follow the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using the *PackageName** parameter value `Microsoft.OutlookForWindows`. Once uninstalled, new Outlook won't be readded as part of a Windows update.
+To remove it, follow the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using the *PackageName* parameter value `Microsoft.OutlookForWindows`. Once uninstalled, new Outlook won't be readded as part of a Windows update.
 
-Use the following command in [Deployment Image Servicing and Management (DISM) PowerShell](/powershell/module/dism/):
+Use the following command in Windows PowerShell:
 
 ```PowerShell
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
@@ -74,16 +74,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe
 
 For any device that installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
 
-In cases of user installs, for example, if users used the toggle to install the new Outlook for Windows, use [Remove-AppxPackage](/powershell/module/dism/remove-appxpackage). The AppxPackage cmdlets are used for managing applications for current users, while AppxProvisionedPackage cmdlets are used for managing default applications for both current and future users of the system.
+In cases of user installs, for example, if users used the toggle to install the new Outlook for Windows, use [Remove-AppxPackage](/powershell/module/appx/remove-appxpackage). The AppxPackage cmdlets are used for managing applications for current users, while AppxProvisionedPackage cmdlets are used for managing default applications for both current and future users of the system.
 
-Use this DISM PowerShell command to remove the new Outlook for Windows for all users:
+Use this Windows PowerShell command to remove the new Outlook for Windows for all users:
 
 ```PowerShell
 Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
 
 [!TIP]
-To confirm if the app is installed, check if the logs folder is present under: *%localappdata%\Microsoft\Olk\logs*. In some cases, users might not have the app installed but might see the pinned/placeholder icon in the Start menu. The new Outlook app is installed when users select it. You can manage Windows Start pins by following the instructions in [Customize the Start layout - Configure Windows](/windows/configuration/start/layout?tabs=intune-10%2Cintune-11&pivots=windows-11). Users might also see the new Outlook app in the Start 'Recommended (Win11) or Suggested (Win10)' sections on consumer devices.
+To confirm if the app is installed, check if the logs folder is present under: `%localappdata%\Microsoft\Olk\logs`. In some cases, users might not have the app installed but might see the pinned/placeholder icon in the Start menu. The new Outlook app is installed when users select it. You can manage Windows Start pins by following the instructions in [Customize the Start layout - Configure Windows](/windows/configuration/start/layout?tabs=intune-10%2Cintune-11&pivots=windows-11). Users might also see the new Outlook app in the Start 'Recommended (Win11) or Suggested (Win10)' sections on consumer devices.
 
 ## Block new Outlook installation as part of Mail and Calendar deprecation
 
@@ -91,21 +91,21 @@ Users can toggle to new Outlook from the Mail and Calendar applications that shi
 
 If you would like to block your users from acquiring the new Outlook from Windows Mail and Calendar applications, you can uninstall these apps from the user's devices.
 
-To uninstall the apps, follow the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using PowerShell with the parameter *microsoft.windowscommunicationsapps*.
+To uninstall the apps, follow the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package using the *PackageName* parameter with the value `microsoft.windowscommunicationsapps`.
 
-Use the following PowerShell cmdlet:
+Use the following Windows PowerShell command:
 
 ```PowerShell
 Get-AppxProvisionedPackage -Online | Where {$_.DisplayName -match "microsoft.windowscommunicationsapps"} | Remove-AppxProvisionedPackage -Online -PackageName {$_.PackageName}
 ```
 
-To remove the Mail and Calendar apps for the current users, you can use the **Remove-AppxPackage** cmdlet:
+To remove the Mail and Calendar apps for the current users, you can use the following [Remove-AppxPackage](/powershell/module/appx/remove-appxpackage) command in Windows PowerShell:
 
 ```PowerShell
 Remove-AppxPackage -AllUsers -Package (Get-AppxPackage microsoft.windowscommunicationsapps).PackageFullName
 ```
 
-Alternatively, you can do remove the apps through Intune or by following the instructions in [Uninstall applications](/mem/configmgr/apps/deploy-use/uninstall-applications).
+Alternatively, you can remove the apps through Intune or by following the instructions in [Uninstall applications](/mem/configmgr/apps/deploy-use/uninstall-applications).
 
 ## Prevent users from acquiring new Outlook from Microsoft Store
 
