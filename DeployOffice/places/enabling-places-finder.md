@@ -48,6 +48,7 @@ Once you receive notification that you have access to the Places Public preview,
 ```powershell
 Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID:<Security Group OID>@<TenantId>:true'
 ```
+
 ## Frequently Asked Questions
 
 ### When I enable Places Finder for a certain set of users, will these users lose access to Room Finder?
@@ -70,7 +71,7 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-people-tab.png" alt-text="Screen showing the Places web app under the People tab." lightbox="media/enabling-places-finder/places-finder-people-tab.png":::
 
-- You can use the Places Finder in Outlook calendar the same way you would with Room Finder.
+- You can use the Places Finder in the Outlook calendar the same way you would with Room Finder.
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-outlook-calendar1.png" alt-text="Screen showing how to book a meeting in the Outlook Calendar." lightbox="media/enabling-places-finder/places-finder-outlook-calendar1.png":::
 
