@@ -27,34 +27,26 @@ Places Analytics also helps you track trends for key buildings, bookable rooms, 
 
 ## Setting up Places Analytics
 
-Access to Places Analytics is based on membership in mail-enabled security groups.
+### Add users to the Analytics Security Group
 
-> [!NOTE]
-> Adding or removing users should be done through previously created mail-enabled security groups. In most cases, adding or removing users should take effect immediately. However, for some users and security groups new to the tenant (or those who haven't been active), this might take up to one day.
-
-To provide this user experience, we recommend using the following mail-enabled security group:
+Access to Places Analytics is based on membership in mail-enabled security groups.  To provide this user experience, we recommend adding users to the following mail-enabled security group, which was created in Step 1 of the [Places Deployment Guide](/deployoffice/places/deployment-guide-for-places):
 
 - PlacesAnalyticSG
 
 This group enables more features and analytics views. These views help IT admins and real estate and facilities professionals determine the usage baseline for their spaces and identify opportunities for optimization.
 
-## Create security groups
 
-You can create security groups in two ways:
 
-- Using the [Exchange admin center](/exchange/exchange-admin-center) and the [Exchange admin center in Exchange Server](/exchange/architecture/client-access/exchange-admin-center).
-- Enabling Place Analytics by running the New-DistributionGroup PowerShell cmdlet. For more information, see [New-DistributionGroup](/powershell/module/exchange/new-distributiongroup).
+You can add users to Places security groups using any of the following methods:
 
-### Enable Place Analytics to a mail-enabled Security Group
+- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
 
-You can enable Places Analytics for a mail-enabled security group by running the following PowerShell cmdlet:
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
 
-```powershell
-Set-PlacesSettings -Collection Places -SpaceAnalyticsEnabled 'Default:false,OID:<Security Group OID>@<Tenant ID>:true' 
-```
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview).
 
 > [!NOTE]
-> These settings might take up to one day for a security group to be fully setup and replicated to the Microsoft Places environment.
+> Adding or removing users should be done through previously created mail-enabled security groups. In most cases, adding or removing users should take effect immediately. However, for some users and security groups new to the tenant (or those who haven't been active), this might take up to one day.
 
 ## Enable buildings for Places Analytics
 
@@ -62,11 +54,13 @@ Once the buildings are onboarded to Places, they need to be enabled for Analytic
 By default, none of the onboarded buildings are enabled for Analytics. Follow the steps to enable buildings in analytics.
 
 ### Prerequisites
+
 > [!NOTE]
 > - Setup steps for settings cmdlet: [Deployment guide for Places](deployment-guide-for-places.md)
 > - Setup steps for Get-PlaceV3 cmdlet: [Get-PlaceV3](./powershell/get-placev3.md)
 
-## PowerShell scripts/Steps
+### PowerShell scripts/Steps
+
 Admins can obtain BuildingIds for all onboarded buildings by running Get-PlaceV3 cmdlet
 **Get-PlaceV3 -Type Building**
 
@@ -90,9 +84,12 @@ Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:fcdc
 Set-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList "Default:All"
 ```
 
-To view the settings, Get-PlacesSettings can be used. The time to reflect is up to ~12 hours for all settings in setting service.
+To view the settings, Get-PlacesSettings can be used. 
+
 **Get-PlacesSettings -Collection Places -SpaceAnalyticsBuildingsList**
 
 > [!NOTE]
 > - It can take ~12 hrs for the setting to get reflected in UI.
 > - Suggested limit for number of buildings in settings is 200.
+
+
