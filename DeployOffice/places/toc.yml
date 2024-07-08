@@ -19,6 +19,8 @@ items:
       href: configure-the-ios-app.md
     - name: Setting up desk pools and workplaces
       href: setting-up-desk-workspaces-in-places-finder.md
+    - name: Enabling Places Finder in Outlook
+      href: enabling-places-finder.md
     - name: Enabling Places Analytics views and reports
       href: places-analytics.md
     - name: Connected buildings
