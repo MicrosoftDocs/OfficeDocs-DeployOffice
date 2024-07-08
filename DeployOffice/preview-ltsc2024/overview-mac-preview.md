@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Technical guidance for IT Pros about the preview version of Office LTSC 2024 for Mac"
-ms.date: 04/18/2024
+ms.date: 07/08/2024
 ---
 
 # Overview of Office LTSC 2024 for Mac preview
@@ -55,6 +55,9 @@ The major version of Office LTSC 2024 for Mac preview is 16.x, which is the same
 ## New features included in Office LTSC 2024 for Mac preview
 
 Office LTSC 2024 for Mac builds upon the core functionalities of earlier versions, introducing several advancements to enhance productivity, security, and accessibility. This update includes new options for creating meetings and refined search capabilities in Outlook. Additionally, Excel receives a range of new features, such as Dynamic Charts and Arrays, marking significant improvements over the previous Office LTSC release.
+
+<!--Using include for odf 1.4 support-->
+[!INCLUDE [odf 1.4 support](../includes/odf-1-4-support-office-ltsc-preview.md)]
 
 While Office LTSC 2024 for Mac enhances various features, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. As a result, users don't access to real-time collaboration, AI-driven automation in Excel, PowerPoint, and Word, or advanced security and compliance tools tailored for a hybrid work environment. 
 
