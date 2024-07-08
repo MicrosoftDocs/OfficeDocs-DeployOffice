@@ -102,4 +102,4 @@ In a future release after the commercial preview stage, new Outlook will be an o
 
 ### Control the release of new Outlook
 
-To control the release of new Outlook in your organization, see [Control the installation and use of new Outlook](deployoffice/outlook/get-started/control-install).
+To control the release of new Outlook in your organization, see [Control the installation and use of new Outlook](../get-started/control-install.md).
