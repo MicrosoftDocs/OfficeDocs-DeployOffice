@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Technical overview for IT Pros about Microsoft Office Long Term Servicing Channel(LTSC) preview"
-ms.date: 04/18/2024
+ms.date: 07/08/2024
 ---
 
 # Overview of Office LTSC preview

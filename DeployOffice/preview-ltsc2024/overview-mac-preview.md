@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Technical guidance for IT Pros about the preview version of Office LTSC 2024 for Mac"
-ms.date: 04/18/2024
+ms.date: 07/08/2024
 ---
 
 # Overview of Office LTSC 2024 for Mac preview
