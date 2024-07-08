@@ -30,21 +30,21 @@ Auto Release is a feature that is useful for conference rooms that are frequentl
 
    :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
 
-Other wasy to check in (coming soon):
+Other ways to check in (coming soon):
 - An attendee can check in through Teams Chat.
 - An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting.
 - An email is only sent when the meeting is **not** a Teams online meeting.
 
 > [!NOTE]
-> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room.
+> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available.
 
 ## Who is eligible to use Auto Release?
 
 ### Teams panels customers
 
 - This feature is available for rooms with Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device licenses.
-- We recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or panels signed into the same resource account as Microsoft Teams Rooms).
-- To use this new joint experience, Teams panels must be on application version 1449/1.0.97.2024061108 or later.
+- We recommend enabling this feature only for rooms with [Teams panels](/microsoftteams/devices/check-in-and-room-release) (can be standalone Teams panels or panels signed into the same resource account as Microsoft Teams Rooms). This recommendation is to ensure that users will always have the means to check in to the room, regardless of whether it's reserved for an online or offline meeting.
+- To use this experience, Teams panels must be on application version 1449/1.0.97.2024061108 or later.
 
 ### Microsoft Places Public Preview customers
 
