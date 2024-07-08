@@ -34,6 +34,6 @@ Unlike release channels for the classic Outlook, there's no Monthly Enterprise C
 
 The best way to see which features are coming to the new Outlook is to follow the [Microsoft 365 Roadmap](https://aka.ms/newOutlookforWindows). For detailed information about updates, including the timing of specific changes and feature release statuses in your organization, subscribe to these updates in the Microsoft 365 [Message Center](/microsoft-365/admin/manage/message-center).
 
-### Predictability and Timing of Targeted Release and Standard Release
+### Predictability and timing of Targeted Release and Standard Release
 
 In new Outlook (as with all of Microsoft 365), new features become available first in Targeted Release, and aren't rolled out to Standard Release for at least 30 days. We recommend customers use this time to prepare their organization for the update.
