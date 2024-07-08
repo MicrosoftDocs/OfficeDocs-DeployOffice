@@ -13,7 +13,7 @@ recommendations: true
 description: "Learn how to use existing sensor data to enhance Microsoft Places Analytics reports."
 ---
 
-# Connected buildings
+# Connecting building occupancy signals
 
 You can use existing sensor data to enhance Places Analytics reports by combining the actual usage with the intended usage of a customer’s conference rooms and buildings. Microsoft Places supports binary occupancy (motion), people count, badge, and Wi-Fi data types.
 
@@ -26,9 +26,9 @@ You can use existing sensor data to enhance Places Analytics reports by combinin
 
 This section provides details on how to bring data from existing IoT sensors into Microsoft Places to enable analytical experiences. Adding sensor data is done in the following way:
 
-- Generate building occupancy using badge data.
-- Connect your Wi-Fi systems.
-- Third-party systems.
+- Generate building occupancy using badge data
+
+- Connect other occupancy sensors or people-count sensors
 
 ### Connect badge-access systems
 
@@ -75,52 +75,6 @@ Use the following schema when uploading badge information.
 
    ```powershell
    Push-Dataset -Type BadgeSwipe -Path <folder path>
-   ```
-
-### Connect the Wi-Fi systems
-
-You upload data from your Wi-Fi system to generate occupancy information for a building.
-
-#### Wi-Fi data format
-
-Use the following schema when uploading Wi-Fi information.
-
-|Column  |Type  |Description |
-|---------|---------|---------|
-|**MacAddress**  |String   |The user’s Mac address (not used). |
-|**UserEmail**    |String   |The user ID (an email address, or Mac address if an email address isn't available) connected to Wi-Fi. |
-|**APMacAddress**     |String   |The access point indicates which device collected the signal. |
-|**SessionStartTimeUtc**  |Timestamp|The timestamp when a device is connected to Wi-Fi.  |
-|**SessionEndTimeUtc**   |Timestamp   |The timestamp when a device is disconnected to Wi-Fi. |
-|**SSID**  |String   |The service set ID that identifies the network name. |
-|**APLocation**  |String     |The location name of the access point. It can be an external ID of a place or a string with a predefined pattern. For example, Studio B/Foor 2 (pattern: BuildingName/Floor). |
-
-#### Upload the Wi-Fi dataset
-
-1. Open **PowerShell 7** (not as an administrator).
-
-2. Install Microsoft Places by running the following **Windows PowerShell** cmdlet. See the [Microsoft Places PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftPlaces/0.32.0-alpha) for more information on Places cmdlets.
-
-   ```powershell
-   Install-Module –Name MicrosoftPlaces –AllowPrerelease -Force
-   ```
-
-3. Import the Places module by running the following **Windows PowerShell** cmdlet.
-
-   ```powershell
-   Import-Module -Name MicrosoftPlaces
-   ```
-
-4. Connect to the Places module by running the following **Places PowerShell** cmdlet.
-
-   ```powershell
-   Connect-MicrosoftPlaces
-   ```
-
-5. Upload the Wi-Fi dataset from the location (using the folder and path) where it's stored on your device by running the following **Places PowerShell** cmdlet.
-
-   ```powershell
-   Push-Dataset -Type WifiSignal -Path <folder path>
    ```
 
 ## Connect other occupancy sensors or people-count sensors
@@ -251,17 +205,6 @@ Create a PowerShell script that iterates using the PowerShell cmdlets using the 
 
 > [!NOTE]
 > To run scripts, you must have the TenantPlacesManagement role assigned.
-
-If you want to manage devices individually using the PowerShell cmdlets, you can reference Option 2.
-
-|Script name  |Description  |
-|---------|---------|
-|**OnboardPlaceDevice.ps1 -FilePath $FilePath** |Onboards devices in the CSV file into Places. |
-|**DeletePlaceDevice.ps1 -FilePath $FilePath**  |Deletes devices in the CSV file from Places. |
-|**UpdatePlaceDevice.ps1 -FilePath $FilePath** |Updates devices in the CSV file from Places. |
-
-> [!NOTE]
-> **$FilePath** should be full path name.
 
 ### Option 2: using PowerShell cmdlets
 
