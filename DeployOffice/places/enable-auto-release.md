@@ -15,7 +15,7 @@ description: "Advise users they're using a room, and then free up the room for u
 
 # Enabling Auto Release for your rooms
 
-In the dynamic world of hybrid work, Microsoft Teams and Microsoft Places are innovating together to enhance room usage with the new Auto Release functionality. Once enabled, there are multiple ways for users to show that they're using a room and prevent it from automatically releasing. If a room enabled for Auto Release is not being used, Teams and Places free up the room for others to reserve, promoting efficient use of resources.
+In the dynamic world of hybrid work, Microsoft Teams and Microsoft Places are innovating together to enhance room usage with the new Auto Release functionality. Once enabled, there are multiple ways for users to show that they're using a room and prevent it from automatically releasing. If a room enabled for Auto Release isn't  being used, Teams and Places free up the room for others to reserve, promoting efficient use of resources.
 
 ## Overview of Auto Release
 
@@ -26,14 +26,14 @@ Auto Release is a feature that's useful for conference rooms that are frequently
    :::image type="content" source="./media/enable-auto-release/person-using-teams-panel-device.png" alt-text="Image of a person using a Teams panel device.":::
 
    :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
+
 1. An attendee can check in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
 
    :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
 
 Other ways to check in (coming soon):
 - An attendee can check in through Teams Chat.
-- An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting.
-- An email is only sent when the meeting is **not** a Teams online meeting.
+- An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting. However, an email is only sent when the meeting is **not** a Teams online meeting.
 
 > [!NOTE]
 > When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available.
@@ -83,7 +83,7 @@ For more information, see [Manage devices in Microsoft Teams](/microsoftteams/de
 
 ### Teams panel device
 
-Enable this feature rooms on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
+Enable this feature rooms on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meetings** > turn on **Release room if no one checks in** and set **Release after**.
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
@@ -106,4 +106,3 @@ The admin sets the time attendees must check in before the room is automatically
 
 **Is the meeting organizer required to check in?**  
 Anyone entering the meeting room can check in to prevent the room from being automatically released. Only one attendee needs to check in through any of the previously listed options.  
-
