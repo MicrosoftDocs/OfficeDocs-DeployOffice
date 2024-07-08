@@ -22,9 +22,11 @@ In the dynamic world of hybrid work, Microsoft Teams and Microsoft Places are in
 Auto Release is a feature that is useful for conference rooms that are frequently booked and unused, especially in locations with limited room availability. With Auto Release, you can optimize the availability of conference rooms by having meeting attendees check in through one of two ways:
 
 1. An attendee can [check in through a Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about Teams panels [here](/microsoftteams/devices/overview-teams-panels).
-:::image type="content" source="./media/enable-auto-release/person-using-teams-panel-device.png" alt-text="Image of a person using a Teams panel device.":::
-:::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
-2. An attendee can check in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
+
+   :::image type="content" source="./media/enable-auto-release/person-using-teams-panel-device.png" alt-text="Image of a person using a Teams panel device.":::
+
+   :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
+1. An attendee can check in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
 :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
 
 Other ways to check in (coming soon):
