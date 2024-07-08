@@ -27,15 +27,16 @@ Auto Release is a feature that is useful for conference rooms that are frequentl
 
    :::image type="content" source="./media/enable-auto-release/qr-code-reserved.png" alt-text="Screenshot of a Teams Panels home screen. Information about the current meeting appears on the screen with a Check-in button.":::
 1. An attendee can check in by joining a meeting through [Microsoft Teams Rooms](/microsoftteams/rooms/).
-:::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
 
-Other ways to check in (coming soon):
+   :::image type="content" source="./media/enable-auto-release/join-meeting-through-teams-rooms.png" alt-text="Screenshot of Microsoft Teams Rooms. Example information about the meeting appears on the screen with a Join button.":::
+
+Other wasy to check in (coming soon):
 - An attendee can check in through Teams Chat.
 - An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting.
 - An email is only sent when the meeting is **not** a Teams online meeting.
 
-    > [!NOTE]
-    > When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room.
+> [!NOTE]
+> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room.
 
 ## Who is eligible to use Auto Release?
 
