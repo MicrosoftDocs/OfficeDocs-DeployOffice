@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Technical overview for IT Pros about Microsoft Office Long Term Servicing Channel(LTSC) preview"
-ms.date: 04/18/2024
+ms.date: 07/08/2024
 ---
 
 # Overview of Office LTSC preview
@@ -44,6 +44,9 @@ For information about the preview version of Office for devices running macOS, s
 ## What's new in Office LTSC preview
 
 Office LTSC 2024 builds upon the core functionalities of earlier versions, introducing several advancements to enhance productivity, security, and accessibility. This update includes new options for creating meetings and refined search capabilities in Outlook. Additionally, Excel receives a range of new features, such as Dynamic Charts and Arrays, marking significant improvements over the previous Office LTSC release. 
+
+<!--Using include for odf 1.4 support-->
+[!INCLUDE [odf 1.4 support](../includes/odf-1-4-support-office-ltsc-preview.md)]
 
 While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation in Excel, PowerPoint, and Word, or advanced security and compliance tools tailored for a hybrid work environment.
 
