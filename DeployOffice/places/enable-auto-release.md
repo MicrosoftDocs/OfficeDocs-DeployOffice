@@ -67,7 +67,7 @@ Auto Release can be enabled in three different ways:
 
 ### Exchange PowerShell
 
-Enable rooms for this feature using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps&preserve-view=true) Exchange PowerShell command.
+Enable this feature for rooms using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps&preserve-view=true) Exchange PowerShell command.
 
 The following example sets the Auto Release time to 10 minutes for the conference room named **Conference Room 1132**. If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
 
@@ -77,7 +77,7 @@ Set-CalendarProcessing -Identity "Conference Room 1132" -EnableAutoRelease $tr
 
 ### Microsoft Teams admin center
 
-Enable rooms for this feature in [Teams admin center](https://admin.teams.microsoft.com/) under **Teams devices** > **Panels** > **Configuration profiles** > turn on **Release room if no one checks in** and set **Release after** > assign the configuration profile to a Teams panel.
+Enable this feature for rooms through [Teams admin center](https://admin.teams.microsoft.com/) under **Teams devices** > **Panels** > **Configuration profiles** > Add or Edit > Meeting settings > turn on **Release room if no one checks in** and set **Release after** > assign the configuration profile to a Teams panel.
 
 For more information, see [Manage devices in Microsoft Teams](/microsoftteams/devices/device-management).
 
