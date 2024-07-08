@@ -52,7 +52,7 @@ Other ways to check in (coming soon):
 - If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend enabling the feature only for rooms with a Teams panel. This ensures that users have all of the check-in options available to them, whether they reserved the room for an online or offline meeting.
 
 > [!NOTE]
-> Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
+> Auto Release does not support or automatically release the room for non-Teams online meetings such as Zoom or Webex.
 
 ## How to enable specific rooms for Auto Release
 
