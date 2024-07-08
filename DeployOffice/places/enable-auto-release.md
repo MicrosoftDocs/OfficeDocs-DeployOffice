@@ -15,7 +15,7 @@ description: "Advise users they're using a room, and then free up the room for u
 
 # Enabling Auto Release for your rooms
 
-With hybrid work, rooms are often booked but left unused, which wastes resources. Microsoft Teams and Microsoft Places work together to light up multiple ways for the user to reflect that they're using the room and prevent it from automatically releasing. If a room enabled for Auto Release isn't being used, the room is freed up for others to reserve.
+In the dynamic world of hybrid work, Microsoft Teams and Microsoft Places are innovating together to enhance room usage with the new Auto Release functionality. Once enabled, there are multiple ways for users to show that they're using a room and prevent it from automatically releasing. If a room enabled for Auto Release is not being used, Teams and Places free up the room for others to reserve, promoting efficient use of resources.
 
 ## Overview of Auto Release
 
