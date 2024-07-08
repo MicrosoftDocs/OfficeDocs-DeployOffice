@@ -21,7 +21,7 @@ In the dynamic world of hybrid work, Microsoft Teams and Microsoft Places are in
 
 Auto Release is a feature that's useful for conference rooms that are frequently booked and unused, especially in locations with limited room availability. With Auto Release, you can optimize the availability of conference rooms by having meeting attendees check in through one of two ways:
 
-1. An attendee can [check in through a Teams panel](/microsoftteams/devices/check-in-and-room-release). Learn more about Teams panels [here](/microsoftteams/devices/overview-teams-panels).
+1. An attendee can [check in through a Teams panel](/microsoftteams/devices/check-in-and-room-release). To learn more about Teams panels, see [Overview of Microsoft Teams panels](/microsoftteams/devices/overview-teams-panels).
 
    :::image type="content" source="./media/enable-auto-release/person-using-teams-panel-device.png" alt-text="Image of a person using a Teams panel device.":::
 
