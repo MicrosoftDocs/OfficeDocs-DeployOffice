@@ -83,19 +83,19 @@ For more information, see [Manage devices in Microsoft Teams](/microsoftteams/de
 
 ### Teams panel device
 
-Enable rooms for this feature on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
+Enable this feature rooms on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meeting** > turn on **Release room if no one checks in** and set **Release after**.
 
 For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
 ## Frequently asked questions
 
-**In which Cloud Environments is this feature supported?**  
-Auto Release is supported in Government Community Cloud (GCC).
+**Is this feature supported in any of the special cloud environments?**  
+Auto Release is currently supported in Government Community Cloud (GCC).
 
 **Why does the tenant need to have Outlook for the web enabled?**  
-When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room.
+When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room. Checking in via chat and email isn't yet available, but it's coming soon.
 
-**I am familiar with [check in and room release on Teams panels](/microsoftteams/devices/check-in-and-room-release). How do these features work together?**  
+**I'm familiar with [check in and room release on Teams panels](/microsoftteams/devices/check-in-and-room-release). How do these features work together?**  
 Microsoft Teams and Microsoft Places work together to light up multiple ways for the user to reflect that they're using the room and prevent it from automatically releasing. For existing Teams Panel customers, there's no effect on the user experience. As previously noted, though, for Teams panels on 1449/1.0.97.2024061108 or later, settings adjustments can take up to 48 hours to take effect. Additionally, with Places, you're able to see data on unclaimed meeting rooms, such as the number of saved hours. You eventually will be able to see the number of meeting room hours that were reclaimed and used productively in the Places analytics portal.  
 
 **What triggers Auto Release?**  
