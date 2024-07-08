@@ -83,7 +83,7 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-windows-desktop-win322.png" alt-text="Screen showing Places Finder in Windows Desktop (Win32)." lightbox="media/enabling-places-finder/places-finder-in-windows-desktop-win322.png":::
  
-- The Places Finder in the Mac desktop calendar.
+- The Places Finder in the Mac desktop calendar. 
 
   :::image type="content" source="./media/enabling-places-finder/places-finder-in-mac-desktop-calendar2.png" alt-text="Screen showing Places Finder in the Mac calendar." lightbox="media/enabling-places-finder/places-finder-in-mac-desktop-calendar2.png":::
 
