@@ -67,7 +67,7 @@ Auto Release can be enabled in three different ways:
 
 ### Exchange PowerShell
 
-Enable this feature for rooms using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps&preserve-view=true) Exchange PowerShell command.
+Enable this feature for rooms using the [`Set-CalendarProcessing`](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps&preserve-view=true) Exchange PowerShell cmdlet.
 
 The following example sets the Auto Release time to 10 minutes for the conference room named **Conference Room 1132**. If no usage is detected within 10 minutes of the meeting start time, the room is automatically released.
 
