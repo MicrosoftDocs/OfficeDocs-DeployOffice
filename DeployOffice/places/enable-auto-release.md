@@ -49,7 +49,7 @@ Other ways to check in (coming soon):
 ### Microsoft Places Public Preview customers
 
 - Even if your room doesn't have a Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device license, you have access to use Auto Release if you're part of the Microsoft Places preview. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
-- If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend enabling the feature only for rooms with a Teams panel or panels signed into the same resource account as Microsoft Teams Rooms. This recommendation is to ensure users have all of the check-in options available to them.
+- If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend enabling the feature only for rooms with a Teams panel. This ensures that users have all of the check-in options available to them, whether they reserved the room for an online or offline meeting.
 
 > [!NOTE]
 > Auto Release does not support or automatically release the room for live events, town halls, or non-Microsoft meetings such as Zoom or Webex.
