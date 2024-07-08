@@ -63,7 +63,7 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 ### Step 1 - Create Places Security Groups
 
-1. Install the latest [PreparePlacesGroups](https://www.powershellgallery.com/packages/prepareplacesgroups/1.0) script.
+1. Install the latest [PreparePlacesGroups](https://www.powershellgallery.com/packages/prepareplacesgroups/) script.
 
 2. Open **PowerShell 7** as Administrator.
 
@@ -87,7 +87,7 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 Running the following script installs the Places and Azure module in PowerShell that are needed to run Places cmdlets.
 
-1. Install the latest [PreparePlacesPowershell7](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/1.0) script.
+1. Install the latest [PreparePlacesPowershell7](https://www.powershellgallery.com/packages/PreparePlacesPowershell7/) script.
 
 2. Open a new **PowerShell 7** window (separate from Step 1). Currently, Exchange cmdlets and Places cmdlets cannot be executed from the same window.  Therefore, the PowerShell scripts used in Steps 2 and 3 must be executed in a separate window from the script in Step 1.
 
@@ -97,7 +97,7 @@ Running the following script installs the Places and Azure module in PowerShell 
 
 Running the following script will enable the Places Web App and Advanced Features.
 
-1. Install the latest [Prepare-PlacesEnablement](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/1.0) script.
+1. Install the latest [Prepare-PlacesEnablement](https://www.powershellgallery.com/packages/Prepare-PlacesEnablement/) script.
 
 1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
 
