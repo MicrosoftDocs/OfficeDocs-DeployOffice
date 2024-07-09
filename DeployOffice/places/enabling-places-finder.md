@@ -43,11 +43,17 @@ Before you enable Places Finder, you must do the following:
 
 ## Enabling Places Finder
 
-Once you receive notification that you have access to the Places Public preview, run the following **Places PowerShell** cmdlet to enable Places Finder for a set of users in a security group.
+Access to Places Finder is based on membership in mail-enabled security groups. To provide this user experience, we recommend adding users to the following mail-enabled security group, which was created in Step 1 of the [Places Deployment Guide](/deployoffice/places/deployment-guide-for-places):
 
-```powershell
-Set-PlacesSettings -Collection Places –PlacesFinderEnabled 'Default:false, OID:<Security Group OID>@<TenantId>:true'
-```
+- Places Finder Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]
+
+You can add users to Places security groups using any of the following methods:
+
+- Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
+
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview).
 
 ## Frequently Asked Questions
 
@@ -103,3 +109,8 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 |Room suggestions |No suggestions  |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan) |
 |Workspace Suggestions |No suggestions    |**In Places web app**:<br>Suggestions based on historical bookings<br>Suggestions based on building (from Work Plan)<br>Suggestions based on number of in-office attendees for the meeting<br>**In Calendar**:<br>Suggestions based on building (from Work Plan)   |
 |Room Results |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Features: Standard properties with icons<br>Features: Custom properties (no icons) |Name<br>Availability<br>Capacity<br>City (when applicable)<br>Building<br>Floor<br>Picture<br>Features: Standard properties with icons<br>Features: Custom properties with icons |
+
+### How do I see rooms and buildings in Places Finder?
+
+If you have enabled places Finder, but cannot see rooms or buildings utilize the steps found in the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to ensure you have set up your Places Directory.
+
