@@ -52,6 +52,8 @@ Places currently uses [mail-enabled security groups](/exchange/recipients-in-exc
 
 1. _Places Analytics Users_: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
 
+1. *Places Finder Users*: This is for users who need access to Places Finder features. Those added to Places Finder Users will be part of Places Users group and the Places Advanced features group.
+
 > [!NOTE]
 > Advanced Features are Opt-In only. Please visit Please visit __[Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview)__ for more details.
 >
@@ -67,7 +69,7 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
 
 2. Open **PowerShell 7** as Administrator.
 
-3. Run the PreparePlacesGroups script.
+1. Run the PreparePlacesGroups script.
 
    You should have the following groups created at the end of this step:
 
@@ -77,8 +79,9 @@ Once you've completed all prerequisite steps, you're now ready to deploy Places 
    |Advanced experience|Places Advanced Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]| placesAdvanced@contoso.com |
    |Places iOS mobile app|Places Mobile Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesMobile@contoso.com |
    |Space Analytics|Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]|placesAnalytics@contoso.com |
-
-
+   |Places Finder |Places Finder Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B] |placesFinder@contoso.com |
+   
+   
 > [!NOTE]
 > - This will create all of the security groups outlined above. Depending on your needs, not all security groups will be used.
 > - These new security groups may take up to 1 day to be reflected in your Exchange directory and consumed in Places experiences.
@@ -108,11 +111,11 @@ Running the following script will enable the Places Web App and Advanced Feature
      ```
  
    - To enable Advanced features run:
-
+   
      ```powershell
-     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true
+     Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true -PlacesFinder $true
      ```
-
+     
 ### Step 4 - Set up Buildings and Floors
 
 Microsoft Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Utilize the steps found in at the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to finish setting up your Places Directory. 
