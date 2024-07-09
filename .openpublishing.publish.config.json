@@ -13,6 +13,18 @@
       "build_entry_point": "docs"
     },
     {
+      "docset_name": "office",
+      "build_source_folder": "office",
+      "build_output_subfolder": "office",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs"
+    },
+    {
       "docset_name": "OfficeDocs-OfficeProPlus",
       "build_source_folder": "DeployOffice",
       "build_output_subfolder": "OfficeDocs-OfficeProPlus",
