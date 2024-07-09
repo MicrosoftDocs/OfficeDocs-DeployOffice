@@ -105,17 +105,25 @@ Running the following script will enable the Places Web App and Advanced Feature
 1. Using the **PowerShell 7** window from Step 2, run the Prepare-PlacesEnablement script.
 
    - To enable Core only features run:
-
+   
      ```powershell
      Prepare-PlacesEnablement.ps1 -PlacesWebApp $true 
      ```
- 
-   - To enable Advanced features run:
+     
+   - To enable all Advanced features run:
    
      ```powershell
      Prepare-PlacesEnablement.ps1 -PlacesWebApp $true -PlacesAdvancedFeatures $true -PlacesAnalytics $true -PlacesMobileApp $true -PlacesFinder $true
      ```
      
+For more details on specific advanced features, review the following links:
+
+- [Places Analytics](/deployoffice/places/places-analytics)
+
+- [Places Mobile App](/deployoffice/places/configure-the-ios-app)
+
+- [Places Finder](/deployoffice/places/enabling-places-finder)
+
 ### Step 4 - Set up Buildings and Floors
 
 Microsoft Places depends on a fully set up hierarchy among your rooms/workspaces, floors, and buildings. Utilize the steps found in at the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to finish setting up your Places Directory. 
