@@ -25,6 +25,8 @@ items:
       href: places-analytics.md
     - name: Connected buildings
       href: connected-buildings.md
+    - name: Enabling Auto Release
+      href: enable-auto-release.md
 
 
   - name: PowerShell
