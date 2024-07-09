@@ -52,7 +52,7 @@ Places currently uses [mail-enabled security groups](/exchange/recipients-in-exc
 
 1. _Places Analytics Users_: This is for users who need access to [Places Analytics](/deployoffice/places/places-analytics) reports and features. Those added to Places Analytics Users will be part of the Places Users group and the Places Advanced features group.
 
-1. *Places Finder Users*: This is for users who need access to Places Finder features. Those added to Places Finder Users will be part of Places Users group and the Places Advanced features group.
+1. *Places Finder Users*: This is for users who need access to [Places Finder](/deployoffice/places/enabling-places-finder) features. Those added to Places Finder Users will be part of Places Users group and the Places Advanced features group.
 
 > [!NOTE]
 > Advanced Features are Opt-In only. Please visit Please visit __[Opt-in to the Microsoft Places Public Preview Program](/deployoffice/places/opt-in-places-preview)__ for more details.
