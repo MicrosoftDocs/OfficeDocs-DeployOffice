@@ -38,7 +38,7 @@ For the new Outlook client to be successfully installed, computers must meet the
 
 Requirement | Version
 ------------|-------
-Windows | Windows 10 Version 1809 (Build 17763) or higher. The new Outlook for Windows will be pre-installed on new Windows devices and devices running Windows 11 version 23H2.
+Windows | Windows 10 Version 1809 (Build 17763) or higher. The new Outlook for Windows will be preinstalled on new Windows devices and devices running Windows 11 version 23H2.
 Classic Outlook app | Version 2303 Build 16227.20318 or higher to see the Try the new Outlook toggle. **Important:** Classic Outlook is only a requirement if you want users to be able to switch between classic Outlook and new Outlook. This prerequisite is optional if you only want your users to see the new Outlook client.
 
 ## Other deployment options
@@ -63,12 +63,12 @@ To install new Outlook on a single computer with many users, follow these steps:
 To deploy this installer to a group of computers, or your entire organization:
 
 1. Download the [.exe installer](https://go.microsoft.com/fwlink/?linkid=2207851).
-2. Use [Intune](/mem/intune/fundamentals/what-is-intune), [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction), [Group Policy](/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software), or third-party distribution software, to distribute the installer to your target computers.
+2. Distribute the installer to your target computers using [Intune](/mem/intune/fundamentals/what-is-intune), [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction), [Group Policy](/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software), or non-Microsoft distribution software.
 3. Run the installer on each computer.
 
 ## Non-Administrative Installation Methods
 
-For users without administrative privileges, provided here are several alternatives to install the new Outlook for Windows: Windows Package Manager, Microsoft Intune, or Setup.exe Boostrapper.
+For users without administrative privileges, provided here are several alternatives to install the new Outlook for Windows: Windows Package Manager, Microsoft Intune, or Setup.exe Bootstrapper.
 
 ### Windows Package Manager (winget)
 
@@ -83,7 +83,7 @@ The Windows Package Manager (winget) allows for a nonadministrative, per-user in
 
 ### Microsoft Intune
 
-Microsoft Intune allows administrators to deploy the Microsoft Store version of Outlook to enrolled devices. This approach doesn't require administrative rights on each device. For more information, see [Deploy apps your organization uses](/mem/intune/fundamentals/manage-apps#deploy-apps-your-organization-uses)
+Microsoft Intune allows administrators to deploy the Microsoft Store version of Outlook to enrolled devices. This approach doesn't require administrative rights on each device. For more information, see [Deploy apps your organization uses](/mem/intune/fundamentals/manage-apps#deploy-apps-your-organization-uses).
 
 ### Setup.exe Bootstrapper for per-user install
 
@@ -100,40 +100,6 @@ A Setup.exe bootstrapper can be used for a straightforward per-user installation
 
 In a future release after the commercial preview stage, new Outlook will be an option in place of the classic Outlook experience for new Microsoft 365 deployments.
 
-## Control release of the new Outlook
+### Control the release of new Outlook
 
-Some organizations might opt to use a policy to hide the **Try the new Outlook** toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. Refer to [Use the registry to enable or disable the New Outlook toggle in Outlook Desktop](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
-
-This policy hides the toggle from classic Outlook, but it doesn’t block the mailbox from being added to the new Outlook for Windows. A separate Exchange mailbox policy can be used to block organization mailboxes from being added to the new Outlook.
-
-For more information on disabling new Outlook in Exchange, see [Enable or disable the new Outlook for Windows for an individual mailbox](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#enable-or-disable-the-new-outlook-for-windows-for-an-individual-mailbox).
-
-Windows builds after 23H2 have the new Outlook app preinstalled for all users, as it will replace the preinstalled Mail and Calendar apps by the end of 2024. If you prefer to not have the new Outlook for Windows show up in your organization’s devices, you could remove it after it's installed as part of the update. You can do this by following the instructions in [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage) to remove the app package by using PowerShell and the parameter Microsoft.OutlookForWindows.
-
-The PowerShell cmdlet to use is:
-
-```powershell
-Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
-```
-
-Additionally, remove this Windows orchestrator registry value -
-*HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate*
-
-For any device that's installed the March 2024 Non-Security Preview release (or later cumulative update) for Windows 11 Version 23H2, Windows Orchestrator respects the deprovisioning cmdlet and it's not necessary to remove this registry value.
-
-> [!IMPORTANT]
-> Support for Windows Mail and Calendar will be discontinued at the end of 2024. Organizations should ensure that users transition to new Outlook before this deadline to avoid disruption. Please note that blocking the download of the new Outlook for Windows on managed devices will not stop the migration prompts within Mail and Calendar.
-
-In cases of user installs, for example, if users have used the toggle to install new Outlook for Windows, use Remove-AppxPackage. AppxPackage cmdlets are used for managing applications for current users, while AppxProvisionedPackage cmdlets are used for managing default applications for both current and future users of the system. This example cmdlet removes new Outlook for Windows for all users. However, it doesn't prevent future users from automatically getting it when the Mail and Calendar apps are replaced by new Outlook for Windows. For further reference, see [Remove-AppxPackage](/powershell/module/appx/remove-appxpackage).
-
-```powershell
-Remove-AppxPackage -AllUsers -Package (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
-```
-
-Users can toggle to the new Outlook from the Mail and Calendar applications that ship with Windows. To block users from acquiring new Outlook from these applications, organizations can block users from downloading and/or installing the new Outlook using Intune or other management solutions.
-
-For more information, see [Outlook for Windows: The Future of Mail, Calendar and People on Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199).
-
-Organizations can prevent end users from using the Mail and Calendar apps with their organization accounts via setting the “UniversalOutlookEnabled” parameter to $false in the CASMailbox cmdlet. For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox#-universaloutlookenabled).
-
-Besides the mailbox access controls and visibility toggles in classic Outlook, you can also use several Exchange PowerShell cmdlets and Cloud Policy settings to configure and manage the new Outlook. For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management).
+To control the release of new Outlook in your organization, see [Control the installation and use of new Outlook](../get-started/control-install.md).
