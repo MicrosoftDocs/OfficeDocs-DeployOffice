@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["main"]
- :allowed-filename-matches ["DeployOffice/"]
+ :allowed-filename-matches ["DeployOffice/" "microsoft-365-apps/" "office/"]
  
  :use-gh-statuses true
  
