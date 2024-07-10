@@ -48,5 +48,13 @@ additionalContent:
         - title: Microsoft 365 Insider Program for Business
           summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
           url: insider/index.yml
+        # Card
+        - title: Troubleshooting
+          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft 365 Apps.
+          url: /office/troubleshoot/office-client-welcome
+        # Card
+        - title: End user help and learning
+          summary: Find end user help and learning resources for Microsoft 365 Apps.
+          url: https://support.microsoft.com/microsoft-365
 
 

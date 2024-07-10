@@ -37,4 +37,12 @@ additionalContent:
         - title: Office Add-ins
           summary: Use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents and in Outlook mail messages and calendar items. 
           url: /office/dev/add-ins/
+        # Card
+        - title: Troubleshooting
+          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products.
+          url: /office/troubleshoot/office-client-welcome
+        # Card
+        - title: End user help and learning
+          summary: Find end user help and learning resources for Office and other Microsoft products.
+          url: https://support.microsoft.com/
 
