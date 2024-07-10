@@ -32,7 +32,7 @@ Currently, new Outlook for Windows is in the **opt-in** stage. Customers see the
 
 To run both classic and new Outlook side-by-side, see [Run new Outlook and classic Outlook side-by-side](https://support.microsoft.com/office/a624c36d-c50f-43bc-9c8b-dd17b5690ffb).
 
-### Milestone: General Availability (GA)
+#### Milestone: General Availability (GA)
 
 By August 1, 2024, new Outlook for Windows will move out of preview and into General Availability (GA). Customers with relevant licensing can obtain regular and assisted technical support through their respective Microsoft support programs. Feature development will continue, and feedback will guide prioritization of further releases.
 
