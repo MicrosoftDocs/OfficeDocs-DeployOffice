@@ -40,7 +40,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/office/toc.yml",
+      "breadcrumb_path": "/office/breadcrumb/office/toc.yml",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "Standard",
       "permissioned-type": "public"
