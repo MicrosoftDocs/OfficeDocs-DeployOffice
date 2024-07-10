@@ -34,6 +34,10 @@ additionalContent:
           summary: Learn about administration tools, application compatibility, volume activation, and language deployment for Office 2016.
           url: /deployoffice/office2016/
         # Card
+        - title: Office for Mac
+          summary: Find guidance about deploying Office (or Microsoft 365 Apps) to Macs in your organization.
+          url: mac/deployment-guide-for-office-for-mac.md
+        # Card
         - title: Office Add-ins
           summary: Use the Office Add-ins platform to build solutions that extend Office applications and interact with content in Office documents and in Outlook mail messages and calendar items. 
           url: /office/dev/add-ins/
