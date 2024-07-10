@@ -1,13 +1,12 @@
 ---  
 title: "New Outlook: Guide to product availability"  
 description: Understand the stages of migration to the new Outlook for Windows and prepare for deployment. 
-author: janellem 
-ms.author: JanelleMcIntosh-MSFT  
+author: JanelleMcIntosh-MSFT 
+ms.author: janellem 
 manager: triciag
 ms.date: 07/01/2024  
 ms.topic: overview
-ms.service: outlook  
-ms.subservice:  
+ms.service: outlook
 ms.localizationpriority: medium
 ms.collection: Tier3
 ms.custom: QuickDraft  
@@ -23,7 +22,7 @@ ai-usage: ai-assisted
 This article provides a detailed timeline and roadmap for migrating to new Outlook for Windows, and outlines the three progressive stages of migration: **Opt in**, **Opt out**, and **Cutover**. The information is designed to help administrators prepare for the migration to new Outlook by understanding expected communications and the necessary preparations for each stage.
 
 >[!NOTE]
->The information in this article applies to the desktop versions of Outlook for Windows and not the Windows Mail and Calendar apps. For more information about licensing, see [How licensing works for work and school accounts in the new Outlook for Windows](http://aka.ms/newOutlooklicensing).
+>The information in this article applies to the desktop versions of Outlook for Windows and not the Windows Mail and Calendar apps. For more information about licensing, see [How licensing works for work and school accounts in the new Outlook for Windows](https://aka.ms/newOutlooklicensing).
 
 ## Progressive stages of migration
 
