@@ -15,7 +15,7 @@ description: "Learn about the known issues and resolved issues that might occur 
 
 # Microsoft Places known issues and resolved issues
 
-This article provides a list of known issues for the Places app in Public Preview along with the recently resolved issues. We encourage you to review this list before submitting a support request to see if Microsoft is already aware of the issue that you might be encountering, and are actively working to resolve them.
+This article provides a list of known and resolved issues for the Places app in Public Preview. We encourage you to review this list before submitting a support request to see if Microsoft is already aware of the issue that you might be encountering as we are actively working to resolve them.
 
 ## Known issues
 
