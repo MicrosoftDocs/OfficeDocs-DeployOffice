@@ -43,3 +43,8 @@ items:
       href: powershell/remove-place.md
     - name: Set-PlaceV3
       href: powershell/set-placev3.md
+
+  - name: Troubleshooting
+    items:
+    - name: Known issues and resolved issues
+      href: places-known-issues.md
