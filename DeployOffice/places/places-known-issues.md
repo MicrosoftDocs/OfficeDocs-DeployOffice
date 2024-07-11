@@ -3,7 +3,7 @@ title: "Microsoft Places known issues and resolved issues"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 05/31/2024
+ms.date: 07/11/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -19,10 +19,10 @@ This article provides a list of known issues for the Places app in Public Previe
 
 ## Known issues
 
-See open issues for Microsoft Places, categorized by different areas of the app.
+See open issues for Microsoft Places, categorized by different areas of the app in the following table:
 
 | **Places area** | **Issue description** |
-| --------------- | ------------ |
+| ------------------- | ------------ |
 | Analytics | Share function isn't working correctly in Teams MetaOS |
 | Analytics | Error status appears on graphs when actual data isn't onboarded |
 | Desk Booking | Updates to desk reservation status might be delayed in Places|
@@ -35,7 +35,7 @@ See open issues for Microsoft Places, categorized by different areas of the app.
 
 ## Resolved issues
 
-See information on recently resolved issues for Places app.
+See information on recently resolved issues for Places app in the following table:
 
 | **Places area** | **Issue description** | **Date resolved** | **Status** |
 | --------------- | ------------- | ------------------ | ---------- |
