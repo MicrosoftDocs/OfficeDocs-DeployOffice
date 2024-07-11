@@ -40,10 +40,29 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/office/breadcrumb/office/toc.json",
+      "breadcrumb_path": "/office/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "Standard",
-      "permissioned-type": "public"
+      "permissioned-type": "public",
+      "titleSuffix": "Office",
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "claydetels19",
+        "jborsecnik",
+        "American-Dipper",
+        "garycentric",
+        "beccarobins",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
+        "American-Dipper",
+        "chrfox",
+        "DCtheGeek",
+        "jwhit-MSFT",
+        "samanro",
+        "dstrome",
+        "robmazz"
+      ]
     },
     "fileMetadata": {},
     "template": []
