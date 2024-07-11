@@ -49,4 +49,8 @@ additionalContent:
         - title: End user help and learning
           summary: Find end user help and learning resources for Office and other Microsoft products.
           url: https://support.microsoft.com/
+        # Card
+        - title: Microsoft 365 Apps
+          summary: Find information about deploying Microsoft 365 Apps (Office apps included with Microsoft 365 or Office 365) to your organization.
+          url: /microsoft-365-apps/ 
 
