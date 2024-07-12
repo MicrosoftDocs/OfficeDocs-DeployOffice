@@ -15,18 +15,17 @@ description: "Learn about the known issues and resolved issues that might occur 
 
 # Microsoft Places known issues and resolved issues
 
-This article provides a list of known and resolved issues for the Places app in Public Preview. We encourage you to review this list before submitting a support request to see if Microsoft is already aware of the issue that you're encountering and is addressing it.
+This article provides a list of known and resolved issues for Places app in Public Preview. We encourage you to review this list before submitting a support request to see if Microsoft is already aware of the issue that you're encountering and is addressing it.
 
 ## Known issues
 
-See open issues for Microsoft Places, categorized by different areas of the app in the following table:
+See open issues for Places, categorized by different areas of the app in the following table:
 
 | **Places area** | **Issue description** |
 | ------------------- | ------------ |
-| Analytics | Share function isn't working correctly in Teams MetaOS |
+| Analytics | Share function isn't working correctly in Teams Integrated App |
 | Analytics | Error status appears on graphs when actual data isn't onboarded |
 | Desk Booking | Updates to desk reservation status might be delayed in Places|
-| Leader Guidance | No character limit exists for Leader Guidance fields  |
 | Maps | Maps icons are difficult to read (black icon with dark background) |
 | Maps | Maps text is difficult to read in dark mode|
 | Room Booking | Attendees who add rooms don’t receive room response email messages when room delegates are used. Due to that, booking results might be delayed depending on how soon room delegates respond |
@@ -37,7 +36,7 @@ See open issues for Microsoft Places, categorized by different areas of the app 
 
 See information on recently resolved issues for Places app in the following table:
 
-| **Places area** | **Issue description** | **Date resolved** | **Status** |
+| **Places area** | **Issue description** | **Published date** | **Status** |
 | --------------- | ------------- | ------------------ | ---------- |
-| Mobile | Profile page doesn’t load a schedule when selecting a noncollaborator avatar from the People in my meetings or search | 7/10 | Resolved|
-| Room Booking | Places Finder load speed needs improvement|7/10 | Resolved|
+| Mobile | Profile page doesn’t load a schedule when selecting a noncollaborator avatar from the People in my meetings or search | 7/11 | Resolved|
+| Room Booking | Places Finder load speed needs improvement|7/11 | Resolved|
