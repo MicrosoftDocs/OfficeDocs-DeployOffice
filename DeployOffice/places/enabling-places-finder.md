@@ -63,7 +63,7 @@ Yes, once Places Finder is enabled, it replaces the Room Finder experience for t
 
 ### How do I hide a room or workspace from showing in Places Finder?
 
-You can hide a room or workspace from showing in Places Finder and Room Finder. Learn more about how you can hide mailboxes from the address list by using the [Set-Mailbox](/powershell/module/exchange/set-mailbox) cmdlet.
+You can hide a room or workspace from showing in Places Finder and Room Finder. Learn more about how you can hide mailboxes from the address list by using the [Set-Mailbox](/powershell/module/exchange/set-mailbox-hiddenfromaddresslistsenabled) cmdlet.
 
 ### Where will I see Places Finder when enabled?
 
