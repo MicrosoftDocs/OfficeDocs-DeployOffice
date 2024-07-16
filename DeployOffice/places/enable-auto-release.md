@@ -100,7 +100,7 @@ For more information, see [Manage devices in Microsoft Teams](/microsoftteams/de
 
 Enable this feature rooms on Teams panels under **Settings** > **Device settings** > **Teams Admin Settings** > **Meetings** > turn on **Release room if no one checks in** and set **Release after**.
 
-For more information, see [Check-in and room release on Microsoft Teams panels](/microsoftteams/devices/check-in-and-room-release).
+For more information, see [Check-in and auto release on Teams panels](/microsoftteams/devices/check-in-and-room-release).
 
 ## Frequently asked questions
 
