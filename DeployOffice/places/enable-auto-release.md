@@ -35,6 +35,10 @@ Auto Release is a feature that's useful for conference rooms that are frequently
 
    :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check in using Teams chat.":::
 
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-user-has-checked-in.png" alt-text="Screenshot that shows Teams chat user has checked in.":::
+
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-room-is-released.png" alt-text="Screenshot that shows Teams chat user has released the meeting room for others to book.":::
+
 Other ways to check in (coming soon):
 - An attendee can check in through Teams Chat.
 - An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting. However, an email is only sent when the meeting is **not** a Teams online meeting.
