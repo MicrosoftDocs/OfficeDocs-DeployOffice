@@ -33,15 +33,15 @@ Auto Release is a feature that's useful for conference rooms that are frequently
 
 1. The organizer or an attendee can check in through Teams Chat.
 
-   :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check-in using Teams chat.":::
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check-in using Teams Chat.":::
 
-   Teams chat shows the organizer or an attendee they have checked into the room.
+   Teams Chat shows the organizer or an attendee they have checked into the room.
 
-   :::image type="content" source="./media/enable-auto-release/meeting-chat-user-has-checked-in.png" alt-text="Screenshot that shows Teams chat user is checked in.":::
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-user-has-checked-in.png" alt-text="Screenshot that shows Teams Chat user is checked in.":::
 
    The organizer or an attendee can also make the room available for others through Teams Chat.
 
-   :::image type="content" source="./media/enable-auto-release/meeting-chat-room-is-released.png" alt-text="Screenshot that shows Teams chat user released the meeting room for others to book.":::
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-room-is-released.png" alt-text="Screenshot that shows Teams Chat user released the meeting room for others to book.":::
 
 1. The organizer or an attendee can check in through email, which the room sends to the organizer or those who have accepted the meeting.
 
@@ -51,7 +51,7 @@ Auto Release is a feature that's useful for conference rooms that are frequently
    :::image type="content" source="./media/enable-auto-release/auto-release-email.png" alt-text="Screenshot that shows check-in email sent when a meeting isn't a Teams online meeting.":::
 
 > [!NOTE]
-> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available. Auto Release doesn't support on-premises mailboxes.
+> When a Microsoft Places Public Preview user checks in via Teams Chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available. Auto Release doesn't support on-premises mailboxes.
 
 ## Who is eligible to use Auto Release?
 
