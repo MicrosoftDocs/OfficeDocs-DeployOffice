@@ -52,8 +52,6 @@ In the **cutover** stage, users are no longer be able to switch back to classic 
 
 The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12 months before moving to the opt-out and cutover stages in production rings.
 
-
-
 ## Prepare for migration and deployment
 
 To prepare your organization for migration, consider the following steps:
