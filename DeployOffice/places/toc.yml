@@ -44,7 +44,7 @@ items:
     - name: Set-PlaceV3
       href: powershell/set-placev3.md
 
-  - name: Troubleshooting
+  - name: Reference
     items:
     - name: Known issues and resolved issues
       href: places-known-issues.md
