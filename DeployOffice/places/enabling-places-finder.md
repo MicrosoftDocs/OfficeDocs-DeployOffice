@@ -112,5 +112,5 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 ### How do I see rooms and buildings in Places Finder?
 
-If you have enabled places Finder, but cannot see rooms or buildings utilize the steps found in the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to ensure you have set up your Places Directory.
+If you have enabled places Finder, but can't see rooms or buildings utilize the steps found in the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to ensure you have set up your Places Directory.
 
