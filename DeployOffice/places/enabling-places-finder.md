@@ -63,7 +63,7 @@ Yes, once Places Finder is enabled, it replaces the Room Finder experience for t
 
 ### How do I hide a room or workspace from showing in Places Finder?
 
-Remove the ParentId property set on the resource mailbox. Learn more about manually updating resource mailbox properties by using [Set-PlaceV3](powershell/set-placev3.md).
+You can hide a room or workspace from showing in Places Finder and Room Finder. Learn more about how you can hide mailboxes from the address list by using the [Set-Mailbox](/powershell/module/exchange/set-mailbox#-hiddenfromaddresslistsenabled) cmdlet.
 
 ### Where will I see Places Finder when enabled?
 
@@ -112,5 +112,5 @@ In the Places web app, you'll be introduced to Places Finder through multiple en
 
 ### How do I see rooms and buildings in Places Finder?
 
-If you have enabled places Finder, but cannot see rooms or buildings utilize the steps found in the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to ensure you have set up your Places Directory.
+If you have enabled places Finder, but can't see rooms or buildings utilize the steps found in the [Quick setup guide for buildings/floors](/deployoffice/places/get-started/quick-setup-buildings-floors) to ensure you have set up your Places Directory.
 
