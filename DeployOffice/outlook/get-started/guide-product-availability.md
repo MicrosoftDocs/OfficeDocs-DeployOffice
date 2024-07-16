@@ -4,7 +4,7 @@ description: Understand the stages of migration to the new Outlook for Windows a
 author: JanelleMcIntosh-MSFT 
 ms.author: janellem 
 manager: triciag
-ms.date: 07/01/2024  
+ms.date: 07/16/2024  
 ms.topic: overview
 ms.service: outlook
 ms.localizationpriority: medium
@@ -52,7 +52,7 @@ In the **cutover** stage, users are no longer be able to switch back to classic 
 
 The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12 months before moving to the opt-out and cutover stages in production rings.
 
-**Timeline of availability (timeline-image-url)**
+
 
 ## Prepare for migration and deployment
 
