@@ -35,7 +35,11 @@ Auto Release is a feature that's useful for conference rooms that are frequently
 
    :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check in using Teams chat.":::
 
+   Teams chat shows the organizer or an attendee they have checked into the room.
+
    :::image type="content" source="./media/enable-auto-release/meeting-chat-user-has-checked-in.png" alt-text="Screenshot that shows Teams chat user has checked in.":::
+
+   The organizer or an attendee can also make the room available for others through Teams Chat.
 
    :::image type="content" source="./media/enable-auto-release/meeting-chat-room-is-released.png" alt-text="Screenshot that shows Teams chat user has released the meeting room for others to book.":::
 
