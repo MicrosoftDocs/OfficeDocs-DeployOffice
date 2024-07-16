@@ -4,7 +4,7 @@ description: Understand the stages of migration to the new Outlook for Windows a
 author: JanelleMcIntosh-MSFT 
 ms.author: janellem 
 manager: triciag
-ms.date: 07/15/2024  
+ms.date: 07/16/2024  
 ms.topic: overview
 ms.service: outlook
 ms.localizationpriority: medium
