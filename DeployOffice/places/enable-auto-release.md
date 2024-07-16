@@ -107,6 +107,9 @@ For more information, see [Check-in and room release on Microsoft Teams panels](
 **Is this feature supported in any of the special cloud environments?**  
 Auto Release is currently supported in Government Community Cloud (GCC).
 
+**Does this feature support on-premises mailboxes?**
+No, this feature is only available for room mailboxes created in Exchange Online and doesn't support on-premises mailboxes. To learn more about how to manage your mailboxes, see [Manage resource mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-resource-mailboxes).
+
 **Why does the tenant need to have Outlook for the web enabled?**  
 When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room. Checking in via chat and email isn't yet available, but it's coming soon.
 
