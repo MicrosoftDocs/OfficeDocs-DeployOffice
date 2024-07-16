@@ -50,9 +50,9 @@ In the **cutover** stage, users are no longer be able to switch back to classic 
 
 ## Communication between stages
 
-The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12 months before moving to the opt-out and cutover stages in production rings.
+The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12-months before moving to the opt-out and cutover stages in production rings.
 
-:::image type="content" source="..\media\ga-timeline\availability-timeline.png" alt-text="Conceptual availability timeline which shows new Outlook is now in the General availability stage.":::
+:::image type="content" source="..get-started\media\ga-timeline\availability-timeline.png" alt-text="Conceptual availability timeline which shows new Outlook is now in the General availability stage.":::
 
 ## Prepare for migration and deployment
 
