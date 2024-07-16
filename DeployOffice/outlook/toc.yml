@@ -4,6 +4,8 @@ items:
 
   - name: Get started
     items:
+      - name: Product availability
+        href: get-started/guide-product-availability.md
       - name: Deploy Outlook
         href: get-started/deployment-new-outlook.md
       - name: Control install and use
