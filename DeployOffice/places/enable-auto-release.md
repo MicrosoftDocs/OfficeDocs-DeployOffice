@@ -43,12 +43,15 @@ Auto Release is a feature that's useful for conference rooms that are frequently
 
    :::image type="content" source="./media/enable-auto-release/meeting-chat-room-is-released.png" alt-text="Screenshot that shows Teams chat user has released the meeting room for others to book.":::
 
-Other ways to check in (coming soon):
-- An attendee can check in through Teams Chat.
-- An attendee can check in through email, which the room sends to the organizer or attendees who accepted the meeting. However, an email is only sent when the meeting is **not** a Teams online meeting.
+1. The organizer or an attendee can check in through email, which the room sends to the organizer or those who have accepted the meeting.
+
+   > [!NOTE]
+   > An email is only sent when the meeting isn't a Teams online meeting.
+
+   :::image type="content" source="./media/enable-auto-release/auto-release-email.png" alt-text="Email check in that's sent when a meeting isn't a Teams online meeting.":::
 
 > [!NOTE]
-> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available.
+> When a Microsoft Places Public Preview user checks in via Teams chat or email, the check-in webpage is hosted in Outlook for the web. Therefore, ensure that Outlook for the web is enabled for your organization to use this method of checking in to a room once it's available. Auto Release doesn't support on-premises mailboxes.
 
 ## Who is eligible to use Auto Release?
 
@@ -61,7 +64,7 @@ Other ways to check in (coming soon):
 ### Microsoft Places Public Preview customers
 
 - Even if your room doesn't have a Teams Rooms Standard, Teams Rooms Premium, Teams Rooms Pro, or Teams Shared Device license, you have access to use Auto Release if you're part of the Microsoft Places preview. For more information, see [Opt in to the Microsoft Places Public Preview](opt-in-places-preview.md).
-- If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend enabling the feature only for rooms with a Teams panel. This ensures that users have all of the check-in options available to them, whether they reserved the room for an online or offline meeting. 
+- If you receive access through the Microsoft Places preview program, this feature is available for all rooms, but we recommend enabling the feature only for rooms with a Teams panel. This ensures that users have all of the check-in options available to them, whether they reserved the room for an online or offline meeting.
 
 > [!NOTE]
 > Auto Release does not support or automatically release the room for non-Teams online meetings such as Zoom or Webex.
