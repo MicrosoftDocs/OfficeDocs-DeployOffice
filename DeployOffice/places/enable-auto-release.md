@@ -107,7 +107,7 @@ For more information, see [Check-in and room release on Microsoft Teams panels](
 **Is this feature supported in any of the special cloud environments?**  
 Auto Release is currently supported in Government Community Cloud (GCC).
 
-**Does this feature support on-premises mailboxes?**
+**Does this feature support on-premises mailboxes?**  
 No, this feature is only available for room mailboxes created in Exchange Online and doesn't support on-premises mailboxes. To learn more about how to manage your mailboxes, see [Manage resource mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-resource-mailboxes).
 
 **Why does the tenant need to have Outlook for the web enabled?**  
