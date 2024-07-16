@@ -33,7 +33,7 @@ Auto Release is a feature that's useful for conference rooms that are frequently
 
 1. The organizer or an attendee can check in through Teams Chat.
 
-   :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check in using Teams chat." lightbox="media/enable-auto-release/meeting-chat-meeting-start-time.png":::
+   :::image type="content" source="./media/enable-auto-release/meeting-chat-meeting-start-time.png" alt-text="Screenshot that shows check in using Teams chat.":::
 
 Other ways to check in (coming soon):
 - An attendee can check in through Teams Chat.
