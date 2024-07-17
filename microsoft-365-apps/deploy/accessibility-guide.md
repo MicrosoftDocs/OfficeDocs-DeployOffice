@@ -70,7 +70,7 @@ If connected experiences are turned off by using policies, then connected experi
 
 The [Accessibility Checker](https://support.microsoft.com/office/38059c2d-45ef-4830-9797-618f0e96f3ab) identifies possible accessibility issues in Office content and offers recommendations for fixing the issues. Therefore, we recommend that your users run the Accessibility Checker before sending an email message or sharing a document, presentation, or spreadsheet.
 
-To make running the Accessibility Checker easier for your users, you can configure it to run automatically for Word, Excel, and PowerPoint on devices running Windows. To configure, use [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](admincenter/overview-cloud-policy.md) to enable the “Check for accessibility issues while editing” policy. There's a separate policy for each of the three apps.
+To make running the Accessibility Checker easier for your users, you can configure it to run automatically for Word, Excel, and PowerPoint on devices running Windows. To configure, use [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](admin-center/overview-cloud-policy.md) to enable the “Check for accessibility issues while editing” policy. There's a separate policy for each of the three apps.
 
 There isn’t a policy for Outlook, but Outlook automatically checks for accessibility issues under certain conditions, as listed under **File** > **Options** > **Accessibility**. For example, when you’re composing a message to a large audience or when a recipient has indicated they prefer accessible content.
 

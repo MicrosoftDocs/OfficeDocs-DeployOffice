@@ -51,7 +51,7 @@ Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-li
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
 
-- When you're using the [Office Customization Tool](admincenter/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-3-create-and-deploy-the-microsoft-365-apps-application), make sure that you enable the option **Shared Computer** in the **Product activation** section.
+- When you're using the [Office Customization Tool](admin-center/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-3-create-and-deploy-the-microsoft-365-apps-application), make sure that you enable the option **Shared Computer** in the **Product activation** section.
 - When you're crafting the configuration file manually, make sure to include the following line:
 
   ```xml

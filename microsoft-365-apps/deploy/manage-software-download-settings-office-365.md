@@ -54,7 +54,7 @@ Keep in mind that moving to a different update channel can also change which fea
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
-> - Also, if you're using the [Microsoft 365 Apps admin center](https://config.office.com), and the device is included in the [inventory](admincenter/inventory.md) or is managed by  [cloud update](admincenter/cloud-update.md), then your choice under **Feature updates** won't apply.
+> - Also, if you're using the [Microsoft 365 Apps admin center](https://config.office.com), and the device is included in the [inventory](admin-center/inventory.md) or is managed by  [cloud update](admin-center/cloud-update.md), then your choice under **Feature updates** won't apply.
 >
 > - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
 

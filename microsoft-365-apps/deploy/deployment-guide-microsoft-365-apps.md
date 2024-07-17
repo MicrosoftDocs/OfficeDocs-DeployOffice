@@ -22,9 +22,9 @@ ms.date: 12/12/2023
 
 - [What's new for deploying Microsoft 365 Apps](whats-new.md)
 
-- [Overview of Cloud Policy](admincenter/overview-cloud-policy.md)
+- [Overview of Cloud Policy](admin-center/overview-cloud-policy.md)
 
-- [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
+- [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
 
 - [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md)
  

@@ -13,7 +13,7 @@ items:
           - name: About Microsoft 365 Apps
             href: about-microsoft-365-apps.md
           - name: Microsoft 365 Apps admin center
-            href: admincenter/overview.md
+            href: admin-center/overview.md
           - name: Accessibility guide for Microsoft 365 Apps
             href: accessibility-guide.md
 
@@ -106,11 +106,11 @@ items:
       - name: Reference
         items:
           - name: Overview of the Microsoft 365 Apps admin center
-            href: admincenter/overview.md
+            href: admin-center/overview.md
           - name: Overview of the Office Customization Tool
-            href: admincenter/overview-office-customization-tool.md
+            href: admin-center/overview-office-customization-tool.md
           - name: Overview of Cloud Policy
-            href: admincenter/overview-cloud-policy.md
+            href: admin-center/overview-cloud-policy.md
           - name: Overview of the Office Deployment Tool
             href: overview-office-deployment-tool.md
           - name: Configuration options for the Office Deployment Tool

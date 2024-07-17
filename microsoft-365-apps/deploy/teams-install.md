@@ -104,7 +104,7 @@ If you want to use the [Office Deployment Tool](overview-office-deployment-tool.
 ```
 
 > [!TIP]
-> Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the ODT. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
+> Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the ODT. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
 
 If you're deploying Microsoft 365 Apps by using the Office 365 Client Installation wizard in Microsoft Configuration Manager (current branch), you can set **Teams** to the **Off** position in the configuration UI.
 

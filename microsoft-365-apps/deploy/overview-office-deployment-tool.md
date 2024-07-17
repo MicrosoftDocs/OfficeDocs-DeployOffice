@@ -36,7 +36,7 @@ Before using the ODT to download or install Office, we recommend making sure you
 The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to install the 64-bit English edition of Office with the license terms automatically accepted. For the full set of options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 > [!NOTE]
-> **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
+> **Best practice:** This article shows the XML elements and attributes in the configuration file for the Office Deployment Tool. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
 
 When running the ODT, you provide the location of the configuration file and define which  *mode*  the ODT should run in:
 
@@ -245,7 +245,7 @@ Note: When Office is installed, the app preferences defined in the configuration
 
 You can apply new application preferences to client computers that already have Microsoft 365 Apps installed without changing any other deployment setting. To do so, create a configuration file that contains application preferences and then run the ODT in **customize** mode. Customize mode ignores all other settings in the configuration file except application preferences. 
 
-1. Use the steps in [define application preferences](admincenter/overview-office-customization-tool.md#define-application-preferences) to create the configuration file.
+1. Use the steps in [define application preferences](admin-center/overview-office-customization-tool.md#define-application-preferences) to create the configuration file.
 2. From a command prompt, run the ODT executable in customize mode with a reference to the configuration file you created. In the following example, the configuration file is named **installapppreferences.xml**:
   
  `setup.exe /customize installapppreferences.xml`

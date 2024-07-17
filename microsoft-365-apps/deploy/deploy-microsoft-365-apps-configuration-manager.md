@@ -156,6 +156,6 @@ You can deploy or edit the application from **Software Library** > **Overview** 
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
-[Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
+[Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)

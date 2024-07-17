@@ -60,7 +60,7 @@ To deploy Microsoft 365 Apps to the Current Channel group, you use a configurati
  - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\M365** folder.
 
-For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
@@ -119,6 +119,6 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
-[Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
+[Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)

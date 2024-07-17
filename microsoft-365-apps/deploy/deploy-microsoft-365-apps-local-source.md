@@ -78,7 +78,7 @@ To download and deploy Microsoft 365 Apps to the first group, you use a configur
 
 2. When you complete the configuration, select **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\Microsoft365Apps** folder.
 
-For more information on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+For more information on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 The installation files and updates come from Current Channel. For more information on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
@@ -159,7 +159,7 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
-[Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md)
+[Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
 

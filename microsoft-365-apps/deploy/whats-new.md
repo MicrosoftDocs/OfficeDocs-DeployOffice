@@ -126,7 +126,7 @@ Looking for recommendations and resources to help make your Microsoft 365 enviro
 *(This feature is generally available as of June 16, 2022.)*
 *(This feature has been replaced by [cloud update](./admin-center/cloud-update.md))*
 
-If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admincenter/servicing-profile.md#create-rollout-waves).
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admin-center/servicing-profile.md#create-rollout-waves).
 
 ## February 2022
 
@@ -145,7 +145,7 @@ For more information, refer to the following information:
 *(This feature is generally available as of June 16, 2022.)*
 *(This feature has been replaced by [cloud update](./admin-center/cloud-update.md))*
 
-If you're using a [servicing profile](admincenter/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admincenter/servicing-profile.md#roll-back-to-a-previous-version).
+If you're using a [servicing profile](admin-center/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admin-center/servicing-profile.md#roll-back-to-a-previous-version).
 
 ## December 2021
 
@@ -156,11 +156,11 @@ Microsoft has released the recommended security configuration baseline settings 
 ### Retirement of Security Policy Advisor
 
 > [!NOTE]
-> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](admincenter/overview-office-cloud-policy-service.md) and you can manage them there.  
+> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](admin-center/overview-office-cloud-policy-service.md) and you can manage them there.  
 
 We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 
-If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](admincenter/migrate-security-policies-from-spa-to-ocps.md).
+If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](admin-center/migrate-security-policies-from-spa-to-ocps.md).
 
 ## October 2021
 
@@ -208,7 +208,7 @@ Microsoft 365 Apps is starting to provide new or improved features that rely on 
 
 ## October 2020
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admincenter/overview.md).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admin-center/overview.md).
 
 ## July 2020
 
@@ -290,7 +290,7 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the *draft* release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1907. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1907-July-2019-DRAFT/ba-p/771308).
@@ -313,7 +313,7 @@ For more information, see [Change a Microsoft 365 Apps installation from 32-bit 
 ### General availability of Office cloud policy service
 The Office cloud policy service is now generally available.  It's a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](admincenter/overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](admin-center/overview-office-cloud-policy-service.md).
 
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
@@ -333,14 +333,14 @@ A public preview is now available for the Office cloud policy service, which is 
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
- - [Overview of the Office cloud policy service](admincenter/overview-office-cloud-policy-service.md)
+ - [Overview of the Office cloud policy service](admin-center/overview-office-cloud-policy-service.md)
 
 ### Office for Mac available in the Mac App Store
 Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
 
 ## October 2018
 
-The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](admincenter/overview-office-customization-tool.md).
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 
