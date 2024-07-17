@@ -51,6 +51,6 @@ additionalContent:
         # Card
         - title: Office LTSC 2021
           summary: Find guidance about deploying the volume licensed version of Office.
-          url: ltsc2021/overview.md
+          url: ltsc/2021/overview.md
 
 

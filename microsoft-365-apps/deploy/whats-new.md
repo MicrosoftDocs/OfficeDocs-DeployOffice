@@ -184,7 +184,7 @@ For more information, see [Performance recommendations for Microsoft 365 Apps on
 
 Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. 
 
-For more information, see [Overview of Office LTSC 2021](ltsc2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
+For more information, see [Overview of Office LTSC 2021](ltsc/2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
 
 ## April 2021
 
@@ -348,7 +348,7 @@ For best practices on deploying Microsoft 365 Apps with Configuration Manager, s
 
 ## September 2018
 
-Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](office2019/overview.md) and [Deploy Office 2019](office2019/deploy.md).
+Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](office/2019/overview.md) and [Deploy Office 2019](office/2019/deploy.md).
 
 ## July 2018
 

@@ -56,7 +56,7 @@ Here are the general steps to deploy Visio LTSC Professional 2021 or Visio LTSC 
   
 1. Purchase Visio LTSC 2021 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc2021/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc/2021/deploy.md).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -73,7 +73,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
   
 1. Purchase Visio 2019 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office/2019/deploy.md).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
