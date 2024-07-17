@@ -37,11 +37,19 @@ To enable the Microsoft Places mobile experience, an IT admin might need to conf
 
 ## Enable Places mobile for your users
 
-Run the following PowerShell cmdlet to enable the mobile app for your tenant.
+Access to the iOS app is based on membership in mail-enabled security groups. To provide this user experience, we recommend adding users to the following mail-enabled security groups, which were created in Step 1 of the [Places Deployment Guide](/deployoffice/places/deployment-guide-for-places):
 
-```powershell
-Set-PlacesSettings -Collection Places -EnablePlacesMobileApp ‘Default:true' 
-```
+- Places Advanced Users
+
+- Places Mobile Users
+
+You can add users to Places security groups using any of the following methods:
+
+Via PowerShell [documented here](/microsoft-365/enterprise/manage-security-groups-with-microsoft-365-powershell).
+
+- Via the Microsoft Admin center [documented here](/microsoft-365/admin/email/create-edit-or-delete-a-security-group).
+
+- Via Microsoft Graph APIs [documented here](/graph/api/resources/groups-overview). 
 
 ## Places mobile app installation
 
