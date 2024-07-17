@@ -28,7 +28,7 @@ There are two ways to activate computers by using MAK:
 
 ## Activate Office LTSC 2021 by using MAK
 
-If you're using MAK to activate Office LTSC 2021, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office LTSC 2021 to the users in your organization. For more information, see [Deploy Office LTSC 2021](../ltsc2021/deploy.md).
+If you're using MAK to activate Office LTSC 2021, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office LTSC 2021 to the users in your organization. For more information, see [Deploy Office LTSC 2021](../ltsc/2021/deploy.md).
 
 ## Activate Office 2019 by using MAK
 

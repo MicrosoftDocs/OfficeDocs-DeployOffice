@@ -13,4 +13,4 @@ You can manage Microsoft 365 Apps on Windows with the following version requirem
 
 - [Supported version of Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
 - [Supported version of Microsoft Windows 10/11](/windows/release-health/supported-versions-windows-client)
-- [Supported version of Windows Server that supports Microsoft 365 Apps](../../endofsupport/windows-server-support.md)
+- [Supported version of Windows Server that supports Microsoft 365 Apps](../../end-of-support/windows-server-support.md)

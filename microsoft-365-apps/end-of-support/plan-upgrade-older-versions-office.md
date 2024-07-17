@@ -61,7 +61,7 @@ A key difference between Microsoft 365 Apps and Office LTSC 2021 is that Microso
 
 > [!NOTE]
 > - Office LTSC 2021 is designed for specific scenarios: regulated devices that cannot accept feature updates, process control devices on the manufacturing floor, and specialty systems that cannot connect to the internet.
-> - For more information, see [Overview of Office LTSC 2021](../ltsc2021/overview.md).
+> - For more information, see [Overview of Office LTSC 2021](../ltsc/2021/overview.md).
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 

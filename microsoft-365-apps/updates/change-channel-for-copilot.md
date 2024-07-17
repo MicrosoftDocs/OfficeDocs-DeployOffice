@@ -192,8 +192,8 @@ The following steps cover how to separate a subset of devices out, assign client
 
 ### Create dynamic collections
 For an easier overview of the different update channels in your environment, we recommend setting up dynamic collections for each channel:
-1.	Implement one collection for each update channel in your environment as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels).
-1.	Implement one collection, which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../fieldnotes/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
+1.	Implement one collection for each update channel in your environment as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../best-practices/build-dynamic-lean-configuration-manager.md#catch-devices-on-specific-update-channels).
+1.	Implement one collection, which catches all Microsoft 365 Apps installations for easier update management: [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](../best-practices/build-dynamic-lean-configuration-manager.md#catch-devices-running-microsoft-365-apps).
 
 ### Create collection with devices to move
 Create another collection with all devices, which are slated to move to the new update channel. We later use this collection to target devices with adjusted client policies. Devices that have finished the switch are automatically removed from the collection.

@@ -63,7 +63,7 @@ Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the fo
 2. Review how [cloud update works with other management tools](#compatibility-with-other-management-tools) and verify that you don't have any conflicts.
 3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
 4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
-5. Follow the guide to [enable and configure cloud update](../fieldnotes/adopting-cloud-update.md).
+5. Follow the guide to [enable and configure cloud update](../best-practices/adopting-cloud-update.md).
 6. Refer to the [troubleshooting](#troubleshooting) section for more advanced topics.
 
 ## Touring cloud update

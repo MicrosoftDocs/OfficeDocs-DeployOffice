@@ -104,20 +104,20 @@ The following table briefly describes the primary worksheets in Office Telemetry
 
 ## Use filters to adjust what's shown in an Office Telemetry Dashboard worksheet
 
-In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button :::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/refreshicon.png" alt-text="An image of the button on the Office Telemetry Dashboard that refreshes the data in the content pane."::: to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
+In the navigation pane on the left side of the dashboard, there are filters called **Label1**, **Label2**, **Label3**, **Label4**, **Date range**, and **View**. You can use these filters to change the scope of the data that is shown in a worksheet. Any time that you change a filter, you must select the **Refresh** button :::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/refreshicon.png" alt-text="An image of the button on the Office Telemetry Dashboard that refreshes the data in the content pane."::: to refresh the data in the content pane. The **Refresh** button is located in the upper-right corner of most worksheets. When you refresh the data, the sorting order is automatically reset. You can verify when the content pane was last updated by referring to the time stamp that is located below the **Refresh** button on the navigation pane. 
   
 **Label filters**
 - Use the **Label** filters to filter data by department, location, or deployment group. These filters are available for most worksheets.
 - The **Label** filters are populated by data that is specified in the \<TAG\> fields when you deploy the agent on client computers. For more information on how to set these fields, see [Office Telemetry Agent](deploy-telemetry-dashboard.md#agent).
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/label_selection.png" alt-text="A screenshot of a dropdown menu labeled 'Label1' with '(All)' selected.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/label_selection.png" alt-text="A screenshot of a dropdown menu labeled 'Label1' with '(All)' selected.":::
 
 **Date range filter**
 - Use the **Date range** filter to choose the date range for the data that you want to view. This helps you watch trends over longer periods of time, or drill down and find more recent data for analysis.
 - The graphs on the **Overview** worksheet, such as **Documents and Solutions stability** and **Office deployment trend**, show data that extends back to four times the selected date range in the navigation pane. This provides better context when you graphically display the data and trends for analysis. For longer date ranges, there might be a small delay before the results are displayed in the content pane.
 - The **Overview** worksheet supports changing the date range to **Last 7 days**, **Last 1 month**, or **Last 3 months**. A snapshot of the database is taken every evening at midnight (local server time). It's used to compose the graphs and data that are shown on the **Overview** worksheet. Therefore, the **Overview** worksheet isn't real-time, but is, instead, based on nightly snapshots.
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/date_range_selection.png" alt-text="A screenshot of Dropdown menu showing options for selecting a date range.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/date_range_selection.png" alt-text="A screenshot of Dropdown menu showing options for selecting a date range.":::
 
 **View filter**
 - The **View** filter on the **Documents** and **Solutions** worksheets allows you to select prescoped views that help you analyze data. Here are the options that you can choose from:
@@ -137,7 +137,7 @@ The following screenshot shows the **Overview** worksheet.
   
 **The Overview worksheet in Office Telemetry Dashboard**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry_dashboard_overview.png" alt-text="A screenshot of the Telemetry Dashboard showing documents, solutions, and Office deployment trends.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry_dashboard_overview.png" alt-text="A screenshot of the Telemetry Dashboard showing documents, solutions, and Office deployment trends.":::
 
   
 The four numbers that are highlighted at the top of the content pane show the number of stable and unstable documents and solutions. If you see a high unstable count, you should investigate to find out what is occurring. 
@@ -165,14 +165,14 @@ After you know the number of unstable documents and solutions, you can drill int
   
 **How to choose a value on the Overview worksheet to see unstable documents**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/unstable_documents_count.png" alt-text="A screenshot of stable and unstable counts with a focus on viewing unstable documents.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/unstable_documents_count.png" alt-text="A screenshot of stable and unstable counts with a focus on viewing unstable documents.":::
 
   
 After you select the link for unstable documents, the **Documents** worksheet appears. The worksheet is filtered to show the 23 unstable documents. The following screenshot shows an example of this filtered view. Although it isn't obvious in the screenshot, only 23 documents are listed, sorted by most unstable. 
   
 **Unstable documents that are shown in the Documents worksheet**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/document_stability_top_400.png" alt-text="A screenshot of stability of the top 400 frequently used documents with stable and unstable trends.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/document_stability_top_400.png" alt-text="A screenshot of stability of the top 400 frequently used documents with stable and unstable trends.":::
   
 > [!IMPORTANT]
 > Remember that when you select a link on the **Overview** worksheet to see details about documents or solutions, the contents pane displays a filtered view. Select the message bar at the top of the header pane to see the full list of all items for that worksheet. 
@@ -181,7 +181,7 @@ Back on the **Overview** worksheet, under the stable and unstable counts, you ca
   
 **How trend data is illustrated on the Overview worksheet**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/stable_unstable_counts.png" alt-text="A screenshot of stable and unstable counts for the last one month with a trend graph for the last four months.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/stable_unstable_counts.png" alt-text="A screenshot of stable and unstable counts for the last one month with a trend graph for the last four months.":::
   
 <a name="deploystatus"> </a>
 
@@ -196,7 +196,7 @@ The following image shows an example of the Office deployment trend chart on the
   
 **Office deployment trend chart on the Overview worksheet**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/office_deployment_trend.png" alt-text="A screenshot of a line graph showing Office deployment trends for different Office versions over time.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/office_deployment_trend.png" alt-text="A screenshot of a line graph showing Office deployment trends for different Office versions over time.":::
   
 <a name="tshoot"> </a>
 
@@ -212,7 +212,7 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
   
 **COM add-in error message**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/com_addin_not_enabled.png" alt-text="A screenshot of an error message indicating the Telemetry Dashboard COM add-in isn't enabled or installed.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/com_addin_not_enabled.png" alt-text="A screenshot of an error message indicating the Telemetry Dashboard COM add-in isn't enabled or installed.":::
 
   
 To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is available in Office Professional Plus 2019, Office Professional Plus 2016, or Office Standard 2016.
@@ -227,7 +227,7 @@ To resolve this issue, enable the Office Telemetry Dashboard COM add-in that is 
     
    **Message that enables saved copies of Telemetry Dashboard**
 
-    :::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/saved-copies-telemetry-dashboard.png" alt-text="A screenshot of the Save Copies Info Message.":::
+    :::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/saved-copies-telemetry-dashboard.png" alt-text="A screenshot of the Save Copies Info Message.":::
 
   
 4. Reopen the Office Telemetry Dashboard Excel worksheet that had the error message.
@@ -240,7 +240,7 @@ When you view a worksheet in Office Telemetry Dashboard, you might see the follo
   
 **Office Telemetry Processor error message**
 
-:::image type="content" source="../compat/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry-processor-error.png" alt-text="A screenshot of an error message indicating two Telemetry Processor services have errors.":::
+:::image type="content" source="../compatibility/media/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard/telemetry-processor-error.png" alt-text="A screenshot of an error message indicating two Telemetry Processor services have errors.":::
   
 This error message is displayed when no agents have reported any data to the dashboard, or if the processor hasn't inserted any data to the database for a day.
   

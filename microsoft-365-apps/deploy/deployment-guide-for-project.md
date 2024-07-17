@@ -43,7 +43,7 @@ If you want to have more control over how Project is deployed to your users, you
 
 2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to install Project Online Desktop Client.
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
-   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./fieldnotes/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
+   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
 
 3. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy Project Online Desktop Client on your users' devices.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.

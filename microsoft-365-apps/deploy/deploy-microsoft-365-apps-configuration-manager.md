@@ -58,7 +58,7 @@ We recommend creating two sets of collections:
 
 For the initial deployment, create collections aligned to your deployment plan. You could go with just one group and add an initial set of devices to it, adding more devices later. Or create multiple collections (for example, four in a 5/15/40/40 split) and add collections to the application's deployment over time. You can merge these collections later to reduce management overhead. For more information on creating and managing collections, see [Introduction to collections in Microsoft Configuration Manager](/mem/configmgr/core/clients/manage/collections/introduction-to-collections).
 
-For the ongoing maintenance, create collections as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](./fieldnotes/build-dynamic-lean-configuration-manager.md), except the collection to "Catch Devices on builds below a certain threshold". This leaves you with three sets of collections:
+For the ongoing maintenance, create collections as described in [Build dynamic collections for Microsoft 365 Apps with Configuration Manager](./best-practices/build-dynamic-lean-configuration-manager.md), except the collection to "Catch Devices on builds below a certain threshold". This leaves you with three sets of collections:
 
 - One or multiple collections to easily identify how many devices are on a given update channel.
 - One collection that captures all devices running Microsoft 365 Apps. This collection will be used to deploy the monthly updates.
@@ -121,7 +121,7 @@ In the dashboard, make sure you see the versions, languages, and update channels
 The steps in this article cover the standard best practice recommendations from Microsoft. This section covers the most common customizations to these best practices. If you want to build a customized deployment, we still recommend that you start with the Office 365 Installer. The wizard automates the creation of detection rules, deployment types, and fetching the required source and setup files. It's easier to start with the wizard and customize later than to start from scratch.
 
 ### Right-size the deployment for multi-language environments
-If you support multiple languages in your environment and select to include them all in the application, it might grow in size substantially. As all devices download the application from a distribution point first and then run the setup, it might be that many devices are downloading the source files for language packs that aren't needed during installation. We've documented some best practices on [how to right-size your deployment](./fieldnotes/right-sizing-initial-deployment.md), finding a balance between which languages to include (to conserve internet bandwidth) and which to leave out (to conserve LAN/WAN traffic).
+If you support multiple languages in your environment and select to include them all in the application, it might grow in size substantially. As all devices download the application from a distribution point first and then run the setup, it might be that many devices are downloading the source files for language packs that aren't needed during installation. We've documented some best practices on [how to right-size your deployment](./best-practices/right-sizing-initial-deployment.md), finding a balance between which languages to include (to conserve internet bandwidth) and which to leave out (to conserve LAN/WAN traffic).
 
 ### Build and deploy multiple packages to multiple deployment groups
 

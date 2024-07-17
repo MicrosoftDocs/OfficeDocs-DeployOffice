@@ -46,7 +46,7 @@ This change affects the following apps only on devices running Windows:
 
 > [!NOTE]
 > - This change doesn’t affect Outlook connecting to on-premises Exchange Server using Basic authentication.
-> - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic authentication deprecation in Exchange Online](../endofsupport/microsoft-365-services-connectivity.md#basic-authentication-deprecation-in-exchange-online).
+> - This change doesn’t affect Outlook connecting to Exchange Online using Basic authentication. There is a separate effort to deprecate Basic authentication with Exchange Online. For more information, see [Basic authentication deprecation in Exchange Online](../end-of-support/microsoft-365-services-connectivity.md#basic-authentication-deprecation-in-exchange-online).
 
 As part of the rollout, users initially get a warning message if they try to access a file using Basic authentication. After that warning period, the user will be blocked from opening the file and will see a message telling them the source uses a sign-in method that might be unsecure.
 

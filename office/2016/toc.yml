@@ -10,39 +10,39 @@ Items:
   - name: Application compatibility
     items:
     - name: Assess Office compatibility
-      href: ../compat/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json
+      href: ../compatibility/assess-office-compatibility.md?toc=/deployoffice/office2016/toc.json
     - name: Office Telemetry Dashboard
       items:
       - name: Resources guide
-        href: ../compat/compatibility-and-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/compatibility-and-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
       - name: Plan
-        href: ../compat/plan-telemetry-dashboard-deployment.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/plan-telemetry-dashboard-deployment.md?toc=/deployoffice/office2016/toc.json
       - name: Deploy
-        href: ../compat/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/deploy-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
       - name: Update components
-        href: ../compat/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/update-office-telemetry-components-for-office-2016.md?toc=/deployoffice/office2016/toc.json
       - name: Monitor Office compatibility and deployments
-        href: ../compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
       - name: Manage add-ins
-        href: ../compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/deployoffice/office2016/toc.json
       - name: Manage the privacy of data collected
-        href: ../compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
       - name: Custom reporting and database schema
-        href: ../compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/deployoffice/office2016/toc.json
       - name: Data that the agent collects
-        href: ../compat/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/data-that-the-telemetry-agent-collects-in-office.md?toc=/deployoffice/office2016/toc.json
       - name: Document and solution types monitored
-        href: ../compat/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/deployoffice/office2016/toc.json
       - name: List of worksheets
-        href: ../compat/telemetry-dashboard-worksheet-reference.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/telemetry-dashboard-worksheet-reference.md?toc=/deployoffice/office2016/toc.json
     - name: Reference
       items:
       - name: Manage compatibility mode
-        href: ../compat/manage-compatibility-mode-for-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/manage-compatibility-mode-for-office.md?toc=/deployoffice/office2016/toc.json
       - name: Office file formats
-        href: ../compat/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/office-file-format-reference.md?toc=/deployoffice/office2016/toc.json
       - name: XML file name extensions
-        href: ../compat/xml-file-name-extension-reference-for-office.md?toc=/deployoffice/office2016/toc.json
+        href: ../compatibility/xml-file-name-extension-reference-for-office.md?toc=/deployoffice/office2016/toc.json
   - name: Volume activation
     items:
     - name: Overview

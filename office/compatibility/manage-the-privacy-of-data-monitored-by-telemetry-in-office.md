@@ -43,7 +43,7 @@ The following image provides a quick overview of the three methods that Office T
 
 **Three ways to configure privacy settings in Office Telemetry Dashboard**
 
-:::image type="content" source="../compat/media/manage-the-privacy-of-data-monitored-by-telemetry-in-office/telemetry-privacy-methods.png" alt-text="An image showing three methods to manage privacy in Office telemetry: obfuscate document details, exclude certain applications from reporting, and set thresholds for user counts.":::
+:::image type="content" source="../compatibility/media/manage-the-privacy-of-data-monitored-by-telemetry-in-office/telemetry-privacy-methods.png" alt-text="An image showing three methods to manage privacy in Office telemetry: obfuscate document details, exclude certain applications from reporting, and set thresholds for user counts.":::
 
 
 ### Adjust the reporting threshold in the database to show only files that are used by multiple users

@@ -113,7 +113,7 @@ Office Add-ins on Windows now use Microsoft Edge with WebView2. For more informa
 
 #### Office Telemetry Dashboard
 
-[Office Telemetry Dashboard](../compat/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
+[Office Telemetry Dashboard](../compatibility/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
 
 #### OneDrive (Groove) client
 

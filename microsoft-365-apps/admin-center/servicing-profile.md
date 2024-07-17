@@ -78,7 +78,7 @@ A servicing profile takes precedence over existing settings related to Microsoft
 2. Complete the setup wizard to apply the servicing profile to devices that meet the defined criteria. You have two options.
 
     - The first (and recommended) option is to use **All Devices**, which will manage all eligible devices on your tenant. This choice moves the device from the channel it’s on, if that channel is selected in the device criteria, to Monthly Enterprise Channel. 
-    - The second option is to use **Groups**, which allows you to specify a Microsoft Entra group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Microsoft Entra group” feature](../fieldnotes/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
+    - The second option is to use **Groups**, which allows you to specify a Microsoft Entra group to target the profile management. You can configure the servicing profile based on a device's servicing channel, available disk space, macro usage, and add-ins. To learn more about the requirements of and best practices around the **Groups** feature, refer to [How to set up the servicing profile with the “by Microsoft Entra group” feature](../best-practices/adopt-servicing-profiles.md#how-to-set-up-the-servicing-profile-with-the-by-azure-ad-group-approach).
 
     > [!TIP]
     > You can see a demo of how to use Microsoft Entra group filtering [by watching this video](https://youtu.be/RrEBevNV7pQ).

@@ -116,7 +116,7 @@ To preview or test new updates before deploying them to your entire organization
 >
 > - If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
 >
-> - If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./fieldnotes/build-dynamic-lean-universal-packages.md) to add those later.
+> - If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./best-practices/build-dynamic-lean-universal-packages.md) to add those later.
 
 Build the installation packages using the [Office Customization Tool](./admincenter/overview-office-customization-tool.md) and the Office Deployment Tool. By default, the resulting packages would download the required files during installation.
 
