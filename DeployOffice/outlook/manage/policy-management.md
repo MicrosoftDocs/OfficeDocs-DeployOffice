@@ -121,6 +121,11 @@ New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-us
 
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 
+## Disable Contact Support in the new Outlook for Windows
+This can be configured via Cloud policy (https://learn.microsoft.com/en-us/deployoffice/admincenter/overview-cloud-policy) for a Microsoft 365 organization, at https://config.office.com or more specifically at: https://config.office.com/officeSettings/officePolicies (direct link)
+
+When you choose to 'Create' a policy, after providing a name and setting a scope, you can search for ’new outlook’ when you’re at 'Policies' screen, it will bring up all the available policies for new Outlook for Windows, one of those policies is 'Allow access to Contact Support in the new Outlook'. This policy can be configured as ‘Disabled’ to disable 'Contact Support' option under Help menu in new Outlook.
+
 ## Disable toggle from classic Outlook for Windows
 Some organizations could use a policy to block the toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. For guidance on this policy, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
 
