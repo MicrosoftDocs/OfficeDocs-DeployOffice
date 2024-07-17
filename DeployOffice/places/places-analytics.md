@@ -29,9 +29,11 @@ Places Analytics also helps you track trends for key buildings, bookable rooms, 
 
 ### Add users to the Analytics Security Group
 
-Access to Places Analytics is based on membership in mail-enabled security groups.  To provide this user experience, we recommend adding users to the following mail-enabled security group, which was created in Step 1 of the [Places Deployment Guide](/deployoffice/places/deployment-guide-for-places):
+Access to Places Analytics is based on membership in mail-enabled security groups.  To provide this user experience, we recommend adding users to the following mail-enabled security groups, which were created in Step 1 of the [Places Deployment Guide](/deployoffice/places/deployment-guide-for-places):
 
-- Places Analytics Users [8C8BF34B-6BB8-4441-A911-3A990C9D838B]
+- Places Advanced Users
+
+- Places Analytics Users
 
 This group enables more features and analytics views. These views help IT admins and real estate and facilities professionals determine the usage baseline for their spaces and identify opportunities for optimization.
 
