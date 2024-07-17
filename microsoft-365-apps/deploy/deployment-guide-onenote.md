@@ -16,7 +16,7 @@ ms.date: 07/01/2024
 # Deployment guide for OneNote
 
 <!--Using include for adding OneNote for Windows 10 eos-->
-[!INCLUDE [OneNote Windows 10 eos](./includes/onenote-win10-eos.md)]
+[!INCLUDE [OneNote Windows 10 eos](../includes/onenote-win10-eos.md)]
 
 OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
