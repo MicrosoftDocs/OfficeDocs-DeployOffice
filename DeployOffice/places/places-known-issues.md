@@ -3,7 +3,7 @@ title: "Microsoft Places known issues and resolved issues"
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
-ms.date: 07/11/2024
+ms.date: 07/17/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
@@ -38,5 +38,5 @@ See information on recently resolved issues for Places app in the following tabl
 
 | **Places area** | **Issue description** | **Published date** | **Status** |
 | --------------- | ------------- | ------------------ | ---------- |
-| Mobile | Profile page doesn’t load a schedule when selecting a noncollaborator avatar from the People in my meetings or search | 7/11 | Resolved|
-| Room Booking | Places Finder load speed needs improvement|7/11 | Resolved|
+| Mobile | Profile page doesn’t load a schedule when selecting a noncollaborator avatar from the People in my meetings or search | 7/17 | Resolved|
+| Room Booking | Places Finder load speed needs improvement|7/17 | Resolved|
