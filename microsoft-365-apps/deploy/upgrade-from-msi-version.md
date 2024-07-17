@@ -37,7 +37,7 @@ The following are requirements for using the RemoveMSI element in your configura
 - You must be installing Microsoft 365 Apps on a computer running at least Windows 7 Service Pack 1 (SP1) or newer.
 
 > [!NOTE]
-> Support for Windows 7 ended on January 14, 2020. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
+> Support for Windows 7 ended on January 14, 2020. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md).
  
 ## Uninstall all Office products
 

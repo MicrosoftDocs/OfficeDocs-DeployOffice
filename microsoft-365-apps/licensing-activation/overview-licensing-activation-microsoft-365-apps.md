@@ -26,7 +26,7 @@ Before deploying Microsoft 365 Apps to users in your organization, you must firs
 If you remove a user's license, like when they leave your organization, their Microsoft 365 Apps installations enter [reduced functionality mode](overview-licensing-activation-microsoft-365-apps.md#what-is-reduced-functionality-mode). The Office Licensing Service, part of Microsoft 365, monitors licensed users and the number of computers they have Office installed on.
 
 > [!NOTE]
-> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](endofsupport/resources.md).
+> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](end-of-support/resources.md).
    
 ## Assign and manage licenses
 
@@ -83,7 +83,7 @@ There are various licensing modes that can be used with a supported version of M
 Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user signs in their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Microsoft 365 Apps remains fully functional. If the computer goes offline for more than 30 days, Microsoft 365 Apps enters reduced functionality mode until the next time a connection can be made. To get Microsoft 365 Apps fully functional again, the user can connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user might have to sign back in first.
  
 > [!IMPORTANT]
-> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the internet. For those computers, we recommend installing Office LTSC Professional Plus 2021 and using a [traditional activation method](vlactivation/plan-volume-activation-of-office.md) such as Key Management Service (KMS) or Active Directory Domain Services.
+> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the internet. For those computers, we recommend installing Office LTSC Professional Plus 2021 and using a [traditional activation method](volume-license-activation/plan-volume-activation-of-office.md) such as Key Management Service (KMS) or Active Directory Domain Services.
  
 ### Managing activated installations
 

@@ -603,8 +603,8 @@ Allowed values:
           Value="TRUE"
 
 > [!NOTE]
-> - Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
-> - Microsoft 365 Apps is no longer supported on Windows 8.1. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 8.1. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
 
 ## Remove element
 

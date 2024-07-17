@@ -43,7 +43,7 @@ For more information, see the following information:
 
 ### End of support for Microsoft 365 Apps on Windows 8.1
 
-Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on Windows 8.1 is no longer supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
+Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on Windows 8.1 is no longer supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
 
 ### No more security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
@@ -70,7 +70,7 @@ The **Software updates** page in the Microsoft 365 admin center is generally ava
 
 ### Support for Microsoft 365 Apps on Windows Server 2022
 
-We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md#windows-server-2022).
+We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md#windows-server-2022).
 
 ### Blocking internet macros by default in Office available in more update channels
 
@@ -84,11 +84,11 @@ For more information, refer to the following information:
 
 ### Windows 8.1 end of support and Microsoft 365 Apps
 
-Support for Windows 8.1 ends on January 10, 2023. After that date, running Microsoft 365 Apps on Windows 8.1 won't be supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](endofsupport/windows-81-support.md).
+Support for Windows 8.1 ends on January 10, 2023. After that date, running Microsoft 365 Apps on Windows 8.1 won't be supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
 
 ### End of security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
-Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 will end after January 10, 2023. Keep in mind that running Microsoft 365 Apps on either of these operating systems isn't supported. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md) and [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md).
+Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 will end after January 10, 2023. Keep in mind that running Microsoft 365 Apps on either of these operating systems isn't supported. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md) and [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md).
 
 ## June 2022
 
@@ -113,7 +113,7 @@ The Office Insider Program for Business offers organizations an opportunity to e
 
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
-Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](endofsupport/windows-server-migration.md).
+Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](end-of-support/windows-server-migration.md).
 
 ## May 2022
 
@@ -216,10 +216,10 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 
 We've published the following new articles to provide information about end of support events related to Office.
 
-- [End of support resources for Office](endofsupport/resources.md)
-- [Office versions and connectivity to Office 365 services](endofsupport/office-365-services-connectivity.md)
-- [Windows Server end of support and Microsoft 365 Apps](endofsupport/windows-server-support.md)
-- [Windows 8 end of support and Microsoft 365 Apps](endofsupport/windows-8-support.md)
+- [End of support resources for Office](end-of-support/resources.md)
+- [Office versions and connectivity to Office 365 services](end-of-support/office-365-services-connectivity.md)
+- [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md)
+- [Windows 8 end of support and Microsoft 365 Apps](end-of-support/windows-8-support.md)
 
 You can download and print the [Windows and Office configuration support matrix](https://aka.ms/windows-office-support-matrix) to use as a reference.
 
@@ -269,7 +269,7 @@ Starting with Version 2.30 of the Office apps for iOS, there are new preference 
 ### Windows 7 end of support and Microsoft 365 Apps
 ***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
-Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](endofsupport/windows-7-support.md).
+Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md).
 
 ### Delivery Optimization and Microsoft 365 Apps
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.

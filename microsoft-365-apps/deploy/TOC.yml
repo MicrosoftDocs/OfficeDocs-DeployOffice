@@ -159,13 +159,13 @@ items:
       - name: End of support
         items:
           - name: End of support resources
-            href: endofsupport/resources.md
+            href: end-of-support/resources.md
           - name: Connectivity to Microsoft 365 services
-            href: endofsupport/microsoft-365-services-connectivity.md
+            href: end-of-support/microsoft-365-services-connectivity.md
           - name: Windows Server and Microsoft 365 Apps
-            href: endofsupport/windows-server-support.md
+            href: end-of-support/windows-server-support.md
           - name: Microsoft 365 Apps migration from Windows Server
-            href: endofsupport/windows-server-migration.md
+            href: end-of-support/windows-server-migration.md
           - name: Windows and Office support matrix (PDF)
             href: https://aka.ms/windows-office-support-matrix
 
