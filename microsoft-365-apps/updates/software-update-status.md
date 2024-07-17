@@ -42,7 +42,7 @@ The **Microsoft 365 Apps** tab shows the following information about devices in 
 
 For devices that are behind on security updates, the **Microsoft 365 Apps** tab shows you how many security vulnerabilities those devices are potentially exposed to by not having the most current security updates.
 
-The **Microsoft 365 Apps** tab doesn’t show the specific devices that are one or more builds behind. To see more detailed information about devices in your organization that have Microsoft 365 Apps installed, you can use the [inventory feature](../admincenter/inventory.md) available in the [Microsoft 365 Apps admin center](https://config.office.com).
+The **Microsoft 365 Apps** tab doesn’t show the specific devices that are one or more builds behind. To see more detailed information about devices in your organization that have Microsoft 365 Apps installed, you can use the [inventory feature](../admin-center/inventory.md) available in the [Microsoft 365 Apps admin center](https://config.office.com).
 
 ## Security updates for Microsoft 365 Apps
 

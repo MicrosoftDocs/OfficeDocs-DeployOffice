@@ -24,7 +24,7 @@ To use Microsoft 365 Copilot, Microsoft 365 Apps must run on [Current](overview-
 > [!NOTE]
 > Assigning the Copilot licenses to users is a required step which is not covered in this documentation. For more information, see [How to prepare for Microsoft 365 Copilot](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/how-to-prepare-for-microsoft-365-copilot/ba-p/3851566).
 
-Based on your preferred management solution, choose from the following options. Microsoft recommends [Cloud Update](../admincenter/cloud-update.md), as it provides the most streamlined and easiest experience.
+Based on your preferred management solution, choose from the following options. Microsoft recommends [Cloud Update](../admin-center/cloud-update.md), as it provides the most streamlined and easiest experience.
 
 - [Cloud Update](#cloud-update)
 - [Microsoft Intune](#microsoft-intune)

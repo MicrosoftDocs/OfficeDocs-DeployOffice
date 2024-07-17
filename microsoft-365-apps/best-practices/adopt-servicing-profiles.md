@@ -14,10 +14,10 @@ ms.date: 02/27/2024
 
 # Adopting servicing profiles for Microsoft 365 Apps
 
-[Servicing profiles](../admincenter/servicing-profile.md) let you use automation to deliver monthly updates to Microsoft 365 Apps for enterprise directly from the Office Content Delivery Network (CDN). Through extensive one-on-one engagement with global enterprises, we built this article to walk you through best practices of enabling servicing profiles within your environment and discuss the benefits for you and your organization.
+[Servicing profiles](../admin-center/servicing-profile.md) let you use automation to deliver monthly updates to Microsoft 365 Apps for enterprise directly from the Office Content Delivery Network (CDN). Through extensive one-on-one engagement with global enterprises, we built this article to walk you through best practices of enabling servicing profiles within your environment and discuss the benefits for you and your organization.
 
 > [!NOTE]
-> Servicing profiles is deprecated and replaced by [cloud update](../admincenter/cloud-update.md). If cloud update is not available in your [Microsoft 365 Apps admin center](https://config.office.com) yet, please sign into the center and select the **Give feedback** button in the top right area. Select any of the options, enter a comment that you would like to get switched to cloud update and your Email. Select **Submit**. We will reach out to you soon.
+> Servicing profiles is deprecated and replaced by [cloud update](../admin-center/cloud-update.md). If cloud update is not available in your [Microsoft 365 Apps admin center](https://config.office.com) yet, please sign into the center and select the **Give feedback** button in the top right area. Select any of the options, enter a comment that you would like to get switched to cloud update and your Email. Select **Submit**. We will reach out to you soon.
 
 This article covers:
 - The benefits of using a servicing profile
@@ -53,7 +53,7 @@ Instead of enabling a servicing profile for all devices at the same time, some a
 - **By Microsoft Entra group:** The alternative approach is to use Microsoft Entra groups to restrict the servicing profile to apply only to specified devices or users. This allows you to add devices to the scope on a more granular level.
 
 To decide which approach is best for you, review how many Microsoft 365 Apps installs you have per update channel:
-- Ensure that [inventory](../admincenter/inventory.md) in the Microsoft 365 Apps admin center is enabled and running for at least a week, so most devices have registered into it.
+- Ensure that [inventory](../admin-center/inventory.md) in the Microsoft 365 Apps admin center is enabled and running for at least a week, so most devices have registered into it.
 - Navigate to the [Security Update Status](https://config.office.com/officeSettings/currency) page in the Microsoft 365 Apps admin center, scroll down, and review the number of devices per channel.
 
 If you're comfortable with migrating all devices on a channel at once, this is the right approach for you. If you want to migrate devices in smaller batches, you should go by Microsoft Entra groups. This could, for example, be the case if you have a couple of thousands of devices on a given channel, and you want to migrate them in, for example, three batches to limit change.
@@ -61,13 +61,13 @@ If you're comfortable with migrating all devices on a channel at once, this is t
 ## How to set up a servicing profile with the “by update channel” approach
 
 If you want to adopt a servicing profile step-by-step, you can do so by targeting a single update channel first. Microsoft 365 Apps on these devices would be migrated to the Monthly Enterprise Channel and kept updated automatically. You can monitor the progress in the portal and add additional update channels over time to increase coverage.
-1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using servicing profiles are met in your environment.
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admin-center/servicing-profile.md#requirements-for-using-a-servicing-profile) for using servicing profiles are met in your environment.
 2. Navigate to **Servicing** > **Monthly Enterprise** and launch the wizard by selecting **Get Started**. Select **Next** again to go to the **Device Selection Criteria** page.
 3. When enabling a servicing profile, devices on the Monthly Enterprise Channel are targeted automatically. The chart on the top right gives you an overview how many devices will be targeted with the current selection.
 4. Select the check boxes for all update channels you want to target in the first batch. Often, we start with targeting Monthly Enterprise Channel plus Beta Channel and Current Channel (Preview) first. After the bulk have been updated, we extend to Current Channel and then to Semi-Annual Enterprise Channel, including Preview.
 5. Review and adjust the other selection criteria.
 6. Select **Next** to go to the **Update exclusion dates** page. Enter exclusion dates if needed.
-7. Select  **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admincenter/servicing-profile.md#set-an-update-deadline).
+7. Select  **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admin-center/servicing-profile.md#set-an-update-deadline).
 8. Select **Next** to go review your config, then select **Create Profile** to get things going.
 
 After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it starts to instruct devices that are online to update to the latest Monthly Enterprise Channel release. Review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard regularly. If the updates fail on a given device, see more details on the **Issues** tab.
@@ -84,14 +84,14 @@ If you want to adopt a servicing profile in more granular steps, do so by using 
     - Devices: Those must be Microsoft Entra joined or Microsoft Entra hybrid joined and known to the inventory in the Microsoft 365 Apps admin center.
     - Users: Based on the activation data, the servicing profile identifies which devices in inventory have a Microsoft 365 Apps installation activated by the specified user accounts. This will also cover devices running in [shared computer activation](../overview-shared-computer-activation.md) mode where a specified user has logged on and used Microsoft 365 Apps.
     - Microsoft Entra groups: Use nested groups, for example to delegate management of groups to business units. Nesting is supported for up to three levels.
-2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admincenter/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
+2. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com). Ensure that the [requirements](../admin-center/servicing-profile.md#requirements-for-using-a-servicing-profile) for using a servicing profile are met in your environment.
 3. Navigate to **Servicing** > **Monthly Enterprise** and launch the wizard by selecting **Get Started**. Select **Next** again to go to the **Device Selection Criteria** page.
 4. On the top, select **Choose groups to include** and add the Microsoft Entra groups you want to target. This defines the maximum set of devices that will be targeted after applying the remaining selection criteria.
     - Example: You specify a Microsoft Entra group with two devices, one running on Current Channel, the other on Monthly Enterprise Channel. If you only select Monthly Enterprise Channel in the **Channels** section, only one device is added to the servicing profile's scope, as the other one doesn't match all selection criteria. If you have more devices on that channel in your inventory, targeting will still be restricted to the one device from the Microsoft Entra group.
 5. When enabling a servicing profile, devices on the Monthly Enterprise Channel will be targeted automatically. The chart on the top right gives you an overview of how many devices can be targeted with the current selection.
 6. Review and adjust the other selection criteria.
 7. Select **Next** to go to the **Update exclusion dates** page. Enter exclusion dates if needed.
-8. Select **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admincenter/servicing-profile.md#set-an-update-deadline).
+8. Select **Next** to go to the **Update deadline** page. We recommend going with the default setting to balance user experience and reaching security compliance quickly. [Learn more about how deadlines work](../admin-center/servicing-profile.md#set-an-update-deadline).
 9. Select **Next** to go review your config, then select **Create Profile** to get things going.
 
 After creation, the servicing profile will start to calculate which devices fall into the selected criteria. Once this is finished, it starts to instruct devices that are online to update to the latest Monthly Enterprise Channel release. Review the progress on the **Devices** tab. It might take a few hours before you see the first wave of devices moving, so review the dashboard regularly. If the updates fail on a given device, see more details on the **Issues** tab.

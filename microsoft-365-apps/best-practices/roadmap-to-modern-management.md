@@ -20,7 +20,7 @@ There's no definitive or required way to adopt these features. But the order des
 
 ## Get insights within minutes: Microsoft 365 Apps health
 
-A good starting point is to adopt [Microsoft 365 Apps health](../admincenter/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy another infrastructure or software agents to use it. You can get insights into the health of your Microsoft 365 Apps within minutes.
+A good starting point is to adopt [Microsoft 365 Apps health](../admin-center/microsoft-365-apps-health.md). This feature provides insights into the stability, performance, and deployed builds of the Microsoft 365 Apps in your environment. It uses diagnostic data sent by your devices, so you don't have to deploy another infrastructure or software agents to use it. You can get insights into the health of your Microsoft 365 Apps within minutes.
 
 How to enable Microsoft 365 Apps health:
 
@@ -55,7 +55,7 @@ It usually takes up to 10 minutes for provisioning the service. After this has f
 - Installed add-ins
 - Whether macros are used on the device
 
-It also populates the [Security update status](../admincenter/security-update-status.md) page, which provides an overview of:
+It also populates the [Security update status](../admin-center/security-update-status.md) page, which provides an overview of:
 - Which channels are deployed
 - How many devices are on the latest security update
 - Which devices are behind schedule and need attention
@@ -68,14 +68,14 @@ Moving your devices to the [Monthly Enterprise Channel](../updates/overview-upda
 
 We highly recommend testing out Monthly Enterprise Channel. There are two common ways you can switch devices over without the need for a reinstall:
 
-- The recommended way to switch your devices to Monthly Enterprise Channel is to use the **Switch device update channel** capability of the [inventory](../admincenter/inventory.md#switch-device-update-channel) in the [Microsoft 365 Apps admin center](https://config.office.com). Select the devices you want to move to Monthly Enterprise Channel and confirm the move. You can also use Microsoft Entry ID groups containing devices and/or users. The devices perform the channel change within roughly 24 hours.
+- The recommended way to switch your devices to Monthly Enterprise Channel is to use the **Switch device update channel** capability of the [inventory](../admin-center/inventory.md#switch-device-update-channel) in the [Microsoft 365 Apps admin center](https://config.office.com). Select the devices you want to move to Monthly Enterprise Channel and confirm the move. You can also use Microsoft Entry ID groups containing devices and/or users. The devices perform the channel change within roughly 24 hours.
 
 - You can switch managed devices to Monthly Enterprise Channel by using existing management tools. If you're using Microsoft Intune, review this [guidance](../updates/change-update-channels.md#change-the-update-channel-with-microsoft-intune-administrative-templates). For environments with Microsoft Configuration Manager, we recommend reviewing our best practices on how to [prepare your environment for multi-channel management](build-dynamic-lean-configuration-manager.md) and perform the [actual switch to Monthly Enterprise Channel using Configuration Manager](switch-to-monthly-enterprise-channel.md). If you aren't using Configuration Manager, you can adapt the [generic change update channel guidance](../updates/change-update-channels.md).
 - For unmanaged devices, you can [change the default channel in the Microsoft 365 admin center](../updates/overview-update-channels.md#microsoft-365-admin-center). Unmanaged installations will switch to the set channel.
 
 ## Prepare your network to receive updates from the internet
 
-If you use [cloud update](../admincenter/cloud-update.md) to manage updates directly from the cloud, your devices will download those from the internet. To determine if your network can handle this traffic without disruption, see [published sizes of the update downloads](/officeupdates/download-sizes-microsoft365-apps-updates). There are several ways to optimize your network for taking updates directly from the cloud.
+If you use [cloud update](../admin-center/cloud-update.md) to manage updates directly from the cloud, your devices will download those from the internet. To determine if your network can handle this traffic without disruption, see [published sizes of the update downloads](/officeupdates/download-sizes-microsoft365-apps-updates). There are several ways to optimize your network for taking updates directly from the cloud.
 
 **For users on-premises**, you should consider these options:
 
@@ -90,11 +90,11 @@ If you use [cloud update](../admincenter/cloud-update.md) to manage updates dire
 
 ## Use Cloud Update to keep devices current
 
-You can use a [Cloud Update](../admincenter/cloud-update.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
+You can use a [Cloud Update](../admin-center/cloud-update.md) to enable your tenant to take control over update deployment to all devices connected to the tenant, regardless of how the device is managed (if at all). You can set up rules to control which devices are in-scope for the update deployment and monitor progress through tailored reports.
 
 No other infrastructure or software agent is required to enable this feature. If a device has provisioned itself into inventory, its characteristics will be evaluated by Cloud Update. If the device is on a Cloud Update-enabled update channel, Cloud Update will manage Microsoft 365 Apps updates on the device. This functionality lets you cover installations on "BYOD" personal or unmanaged devices that are connected to your tenant and devices managed by Configuration Manager or Microsoft Intune.
 
 > [!Note]
 > Currently, Cloud Update only supports managing Monthly Enterprise Channel and Current Channel updates. Any device which is on one of those channels, will get managed, if not excluded.
 
-The [Cloud Update](../admincenter/cloud-update.md) article has more details on how this feature works.
+The [Cloud Update](../admin-center/cloud-update.md) article has more details on how this feature works.

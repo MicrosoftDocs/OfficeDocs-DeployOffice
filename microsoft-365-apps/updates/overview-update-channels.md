@@ -245,7 +245,7 @@ After Office is installed, you can change the update channel for a device. For m
 - These update channels also apply to the subscription versions of the Project and Visio desktop apps. For example, if you have Project Plan 3 or Visio Plan 2.
 - OneDrive and Microsoft Teams have their own update cadences that are separate from these update channels. For more information, see [The OneDrive sync app `update` process](/onedrive/sync-client-update-process) and [Teams update process](/microsoftteams/teams-client-update).
 - If you're deploying volume licensed versions of Office such as Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, you need to use a different update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](../ltsc/2021/update.md#update-channel-for-office-ltsc-2021).
-- If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](../office2019/update.md#update-channel-for-office-2019).
+- If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use. For more information, see [Update channel for Office 2019](../office/2019/update.md#update-channel-for-office-2019).
 - If you have a home subscription to Office, like Microsoft 365 Family or Microsoft 365 Personal, you have access to specific update channels. These update channels include Current Channel and channels provided through the [Microsoft 365 Insider program](https://insider.microsoft365.com/handbook#Office-Insider-levels).
 
 ### Managing updates

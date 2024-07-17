@@ -40,7 +40,7 @@ For devices running macOS, Office LTSC Standard for Mac 2021 is available for vo
 The following are changes in Office LTSC 2021 compared to the volume licensed version of Office 2019.
 
 > [!TIP]
-> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../office2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
+> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../office/2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
 
 #### Privacy-related policy settings
 
@@ -127,7 +127,7 @@ Power View isn't available for the version of Excel included with Office LTSC 20
 
 You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
 
-Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md).
+Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md).
 
 The major version of Office LTSC 2021 is 16.0, which is the same major version as volume licensed versions of Office 2019 (and Office 2016). Having the same major version provides the following benefits when you’re upgrading from Office 2019:
 
@@ -176,4 +176,4 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - [Deploy Office LTSC 2021](deploy.md)
 - [Update Office LTSC 2021](update.md)
-- [Overview of volume activation of Office](../vlactivation/plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md)

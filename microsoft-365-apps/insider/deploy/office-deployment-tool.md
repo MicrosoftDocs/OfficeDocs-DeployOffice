@@ -119,7 +119,7 @@ For example, you could name your file CCP64English.xml, which might be more mean
 
 ### Is there another way to create the configuration.xml file?
 
-Yes, you can use the web-based interface of the Office Customization Tool to create your configuration.xml file. For more information, see [Overview of the Office Customization Tool](../../admincenter/overview-office-customization-tool.md).
+Yes, you can use the web-based interface of the Office Customization Tool to create your configuration.xml file. For more information, see [Overview of the Office Customization Tool](../../admin-center/overview-office-customization-tool.md).
 
 ## Related articles
 - [Overview of the Office Deployment Tool](../../overview-office-deployment-tool.md)

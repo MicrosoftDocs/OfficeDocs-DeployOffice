@@ -148,7 +148,7 @@ You can [download the Administrative Template files (ADMX/ADML)](https://www.mic
 > [!NOTE]
 > The Administrative Template files (ADMX/ADML) for Microsoft 365 Apps share the same download as Office 2019 and Office 2016. This is because Microsoft 365 Apps, Office 2019 and Office 2016 use the same product version number, 16.0.
 
-If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to apply most user-based policy settings. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ## Remove older versions of Office when you upgrade
 

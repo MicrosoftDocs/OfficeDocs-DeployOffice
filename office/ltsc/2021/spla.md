@@ -33,9 +33,9 @@ To download or install Office LTSC 2021 on devices running Windows, you can use 
 These Office products don't include Microsoft Teams.
 
 > [!TIP]
-> You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](../admincenter/overview-office-customization-tool.md).
+> You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
-To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../vlactivation/activate-office-by-using-mak.md).
+To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../volume-license-activation/activate-office-by-using-mak.md).
 
 Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
 

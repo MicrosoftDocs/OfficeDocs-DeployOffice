@@ -107,7 +107,7 @@ If you prefer watching over reading, view [How to trigger an update channel chan
 
 Here are the steps for changing the update channel to Current Channel or Monthly Enterprise Channel:
 
-1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admincenter/overview.md#requirements) for eligible admin roles.
+1. Log into the [Microsoft 365 Apps admin center](https://config.office.com). Review the [requirements](../admin-center/overview.md#requirements) for eligible admin roles.
 1. Navigate to **Inventory**, select **Show all devices** and then the **Switch device update channel** button on the top.
 1. Select which devices should be moved and the targeted update channel.
     - You can enter device names or Microsoft Entra ID groups, or a mix of both.
@@ -117,7 +117,7 @@ Here are the steps for changing the update channel to Current Channel or Monthly
 > [!NOTE]
 > - It might take up to 24 hours for the channel change to be completed by the device, assuming devices are online and can connect to the service.
 > - A channel change is a point-in-time activity. If you are using Microsoft Entra ID groups and add devices or users to the group after initiating a channel change, those devices will not be moved automatically. You will have to initiate the channel change again. There's no need to remove already switched devices from the group.
-> - Microsoft recommends to also enable [Cloud Update](../admincenter/cloud-update.md) for automated update deployment.
+> - Microsoft recommends to also enable [Cloud Update](../admin-center/cloud-update.md) for automated update deployment.
 
 ## Change the update channel using the Microsoft 365 admin center
 
@@ -138,7 +138,7 @@ Next time the Microsoft 365 Apps check for available updates, the new update cha
 ## Considerations when changing channels
 
 > [!Tip]
-> When switching to Current channel or Monthly Enterprise Channel, we recommend using [cloud update](../admincenter/cloud-update.md) to keep devices current.
+> When switching to Current channel or Monthly Enterprise Channel, we recommend using [cloud update](../admin-center/cloud-update.md) to keep devices current.
 
 - If you switch from a channel like Current Channel, which has a higher build number, to a channel like Semi-Annual Enterprise Channel, with a lower build number, binary delta compression doesn't apply. Because binary delta compression doesn't apply, the update size is larger than normal. The update, however, isn't as large as a full installation of Microsoft 365 Apps.
 - Devices must be able to fetch an update from the newly assigned channel to complete the transition.

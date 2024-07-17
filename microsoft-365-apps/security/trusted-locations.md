@@ -92,7 +92,7 @@ There are several policies that you can use to manage Trusted Locations in your 
 You can use Cloud Policy, the Microsoft Intune admin center, or the Group Policy Management Console to configure and deploy policy settings to users in your organization. For more information, see [Tools available to manage policies](internet-macros-blocked.md#tools-available-to-manage-policies).
 
 > [!NOTE]
-> For volume licensed versions of Office 2016, such as Office Professional Plus 2016, you can use the Office Customization Tool (OCT) to configure Trusted Locations. For more information, see [Office Customization Tool (OCT) 2016 Help: Office security settings](../oct/oct-2016-help-office-security-settings.md).
+> For volume licensed versions of Office 2016, such as Office Professional Plus 2016, you can use the Office Customization Tool (OCT) to configure Trusted Locations. For more information, see [Office Customization Tool (OCT) 2016 Help: Office security settings](../customization-tool/oct-2016-help-office-security-settings.md).
 
 There are separate policies for Trusted Locations for each Office application. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates.
 

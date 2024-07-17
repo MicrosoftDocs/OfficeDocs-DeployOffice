@@ -32,7 +32,7 @@ If you're using MAK to activate Office LTSC 2021, you specify the key in the con
 
 ## Activate Office 2019 by using MAK
 
-If you're using MAK to activate volume licensed versions of Office 2019, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office 2019 to the users in your organization. For more information, see [Deploy Office 2019 (for IT Pros)](../office2019/deploy.md).
+If you're using MAK to activate volume licensed versions of Office 2019, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office 2019 to the users in your organization. For more information, see [Deploy Office 2019 (for IT Pros)](../office/2019/deploy.md).
 
 ## Activate Office 2016 by using MAK
 
@@ -53,7 +53,7 @@ To enter a MAK key by using the Office Customization Tool (OCT), follow these st
 3. After making any other necessary changes in the OCT, save the .msp file in the Updates folder.
 
 > [!NOTE]
-> - For more information, see [Office Customization Tool (OCT) 2016 Help: Overview](../oct/oct-2016-help-overview.md) and [Office Customization Tool (OCT) 2016 Help: Licensing and user interface](../oct/oct-2016-help-licensing-and-user-interface.md).
+> - For more information, see [Office Customization Tool (OCT) 2016 Help: Overview](../customization-tool/oct-2016-help-overview.md) and [Office Customization Tool (OCT) 2016 Help: Licensing and user interface](../customization-tool/oct-2016-help-licensing-and-user-interface.md).
 > - You can activate Office 2016 automatically when you install by setting the AUTO_ACTIVATE property value to 1 in the Config.xml file. For more information, see [Setting element](/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)#setting-element). *(Even though this article is for an earlier version of Office, the information also applies to Office 2016.)*
 
 ### Configure MAK activation in the Config.xml file

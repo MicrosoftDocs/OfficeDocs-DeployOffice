@@ -99,7 +99,7 @@ These policies can be found in the Group Policy Management Console under User Co
 
 > [!NOTE]
 > - To use these policies, download at least version 5359.1000 of the [Group Policy Administrative Template files (ADMX/ADML) for Microsoft 365 Apps](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center. That version was released on August 11, 2022.
-> - You can also implement these policies by using Cloud Policy. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+> - You can also implement these policies by using Cloud Policy. For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ### Allow specified hosts to show Basic Authentication prompts to Office apps
 

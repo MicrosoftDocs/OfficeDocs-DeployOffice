@@ -380,7 +380,7 @@ You can use Cloud Policy to configure and deploy policy settings to devices in y
 
 In Cloud Policy, you create a policy configuration, assign it to a group, and then select policies to be included in the policy configuration. To select a policy to include, you can search by the name of the policy. Cloud Policy also shows which policies are part of the Microsoft recommended security baseline. The policies available in Cloud Policy are the same User Configuration policies that are available in the Group Policy Management Console.
 
-For more information, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+For more information, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ### Microsoft Intune admin center
 

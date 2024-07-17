@@ -46,23 +46,23 @@ Items:
   - name: Volume activation
     items:
     - name: Overview
-      href: ../vlactivation/plan-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
     - name: Configure a KMS host computer
-      href: ../vlactivation/configure-a-kms-host-computer-for-office.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/deployoffice/office2016/toc.json
     - name: Configure DNS for KMS
-      href: ../vlactivation/configure-dns-to-activate-office-by-using-kms.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/deployoffice/office2016/toc.json
     - name: Activate by using KMS
-      href: ../vlactivation/activate-office-by-using-kms.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/activate-office-by-using-kms.md?toc=/deployoffice/office2016/toc.json
     - name: Activate by using MAK
-      href: ../vlactivation/activate-office-by-using-mak.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/activate-office-by-using-mak.md?toc=/deployoffice/office2016/toc.json
     - name: Activate by using Active Directory
-      href: ../vlactivation/activate-office-by-using-active-directory.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/activate-office-by-using-active-directory.md?toc=/deployoffice/office2016/toc.json
     - name: Rearm Office installation in an image
-      href: ../vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/office2016/toc.json
     - name: Tools to manage volume activation
-      href: ../vlactivation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
     - name: Troubleshoot volume activation
-      href: ../vlactivation/troubleshoot-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
+      href: ../volume-license-activation/troubleshoot-volume-activation-of-office.md?toc=/deployoffice/office2016/toc.json
   - name: Language deployment
     items:
     - name: Plan for multilanguage deployment

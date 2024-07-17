@@ -55,7 +55,7 @@ By default, OneNote blocks the same extensions that Outlook, Word, Excel, and Po
 
 ### Block more file extensions
 
-If you want to block more extensions, you can enable the "Block additional file extensions for OLE embedding" policy and specify which other extensions you want to block. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
+If you want to block more extensions, you can enable the "Block additional file extensions for OLE embedding" policy and specify which other extensions you want to block. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md) to configure the policy.
 
 Changes you make to this policy also affect other applications, such as Word, Excel, and PowerPoint.
 
@@ -65,7 +65,7 @@ Changes you make to this policy also affect other applications, such as Word, Ex
 
 ### Allow file extensions that are blocked by default
 
-To allow certain blocked extensions, enable the "Allow file extensions for OLE embedding" policy and specify the extensions. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md) to configure the policy.
+To allow certain blocked extensions, enable the "Allow file extensions for OLE embedding" policy and specify the extensions. You can find the policy under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Security Settings in the Group Policy Management Console. You can also use the [Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md) to configure the policy.
 
 > [!NOTE]
 > You can only use this policy if you’re using Microsoft 365 Apps for enterprise. Policies aren’t available for Microsoft Apps for Business.

@@ -51,7 +51,7 @@ Once sent to the device, the configuration dictionary will reside under the `com
 >
 > Privacy settings for Outlook for iOS and OneDrive for iOS can only be configured by using Cloud Policy.
 >
-> For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admincenter/overview-cloud-policy.md).
+> For more information on using Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../admin-center/overview-cloud-policy.md).
 
 ## Preference setting for diagnostic data
 

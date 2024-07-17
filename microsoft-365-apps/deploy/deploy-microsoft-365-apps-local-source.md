@@ -32,7 +32,7 @@ Installing Microsoft 365 Apps directly from the cloud is recommended, using  [Mi
 
 The steps in this article are based on the following approach:
 
-- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). To manage updates for the Microsoft 365 Apps, use [cloud update](./admincenter/cloud-update.md).
+- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). To manage updates for the Microsoft 365 Apps, use [cloud update](./admin-center/cloud-update.md).
 - **Lead with Current Channel**: Deploy [Current Channel](updates/overview-update-channels.md#current-channel-overview) to most devices to give users immediate access to the latest features and improvements. Create a second package for installing [Monthly Enterprise Channel](updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
 You can customize these options to match your organization's requirements, including setting up various update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).

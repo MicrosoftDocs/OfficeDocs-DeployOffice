@@ -109,7 +109,7 @@ Also, review the deployment guidance available for Windows 10 and Microsoft 365 
 
 Add-ins are one of the most common causes of poor app performance, especially at larger organizations. While Add-ins can be useful to give your employees special functionality, over time Add-ins tend to proliferate and accumulate, ultimately reaching a point where they can have a major impact on performance. It's possible to mitigate this impact by following a few guidelines:
 
-- Do an [inventory of the Add-ins](../admincenter/inventory.md#add-ins-insight) used in your environment and get rid of any that are no longer needed.
+- Do an [inventory of the Add-ins](../admin-center/inventory.md#add-ins-insight) used in your environment and get rid of any that are no longer needed.
 - Be sure that you're using the most recent version of the Add-in. If you need to install updates, use the [performance testing guidance](#performance-testing-guidance) to test the change.
 - You can test specific add-ins by running the Office application in Safe Mode, disabling all Add-ins, and using the [performance testing guidance](#performance-testing-guidance) to establish your baseline. Then, you can enable Add-ins one at a time and record any significant performance impacts.
 - If there's a noticeable (more than a couple seconds) difference and you're running the latest version, consider working with the developer to improve the Add-in or removing it from your environment. For more information, see [Best practices for developing Office Add-ins](/office/dev/add-ins/concepts/add-in-development-best-practices).

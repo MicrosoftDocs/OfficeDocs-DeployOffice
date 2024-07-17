@@ -199,7 +199,7 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - [Autopilot](/mem/autopilot/windows-autopilot)
 
-  - [Microsoft 365 Apps admin center](../admincenter/overview.md), which integrates with [Cloud Policy](../admincenter/overview-cloud-policy.md)
+  - [Microsoft 365 Apps admin center](../admin-center/overview.md), which integrates with [Cloud Policy](../admin-center/overview-cloud-policy.md)
 
   - Other features in the [Device Management Admin Console](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/microsoft-intune-rolls-out-an-improved-streamlined-endpoint/ba-p/937760)
 
@@ -221,9 +221,9 @@ By attaching Intune to your Configuration Manager deployment (referred to as co-
 
 For comprehensive instructions to configure your deployment strategy, see the [Microsoft Configuration Manager documentation](/mem/configmgr/).
 
-The [Microsoft 365 Apps admin center](../admincenter/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
+The [Microsoft 365 Apps admin center](../admin-center/overview.md) is designed to help admins lower their total cost of ownership while being able to quickly deliver features, security, and quality updates with Microsoft 365 Apps. The insight and control capabilities can provide deeper and near-real-time deployment information, issue notification, and quick actions (snooze, restore, pause, and resume) to ensure minimal user downtime.
 
-The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.md) and [Cloud Update](../admincenter/cloud-update.md) to better manage device updates for Microsoft 365 Apps.
+The Microsoft 365 Apps admin center offers [inventory](../admin-center/inventory.md) and [Cloud Update](../admin-center/cloud-update.md) to better manage device updates for Microsoft 365 Apps.
 
 **Office inventory**
 
@@ -252,7 +252,7 @@ The Microsoft 365 Apps admin center offers [inventory](../admincenter/inventory.
 
 After Microsoft 365 Apps are deployed to devices and users, at your defined cadence and with enterprise-grade tools, Microsoft provides you with granular client configuration controls. Microsoft 365 Apps have over 2,000 configuration options allowing you to alter client behavior to suit your organization’s risk, compliance, and operational profiles.
 
-Although group policy has historically been used to enforce client settings and is still a viable method, we've developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admincenter/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
+Although group policy has historically been used to enforce client settings and is still a viable method, we've developed a cloud-based synchronization nexus service that allows policies to roam with users: [Cloud Policy](../admin-center/overview-cloud-policy.md). This service lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed. When a user signs into Microsoft 365 Apps for enterprise on a device, the policy settings roam to that device. You can also enforce some policy settings for Office web apps, both for users who are signed in and for users who access documents anonymously.
 
 Figure 6 shows the portal and the vast number of policy settings available for configuration in the [Microsoft 365 Apps admin center](https://config.office.com/). You can also use Cloud Policy directly in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2109431).
 

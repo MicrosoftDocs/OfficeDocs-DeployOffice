@@ -82,4 +82,4 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - [Deploy Office 2019 (for IT Pros)](deploy.md)
 - [Update Office 2019 (for IT Pros)](update.md)
-- [Overview of volume activation for Office](../vlactivation/plan-volume-activation-of-office.md)
+- [Overview of volume activation for Office](../volume-license-activation/plan-volume-activation-of-office.md)

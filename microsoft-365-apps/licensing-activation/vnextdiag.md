@@ -22,7 +22,7 @@ Because of this change, you can no longer use the ospp.vbs script to view and ma
 
 > [!NOTE]
 > - The subscription versions of the Project and Visio desktop apps also use the new activation method, starting with Version 1910.
-> - You still need to use ospp.vbs for volume licensed versions of Office, such as Office LTSC 2021 and Office 2019. For more information, see [Tools to manage volume activation of Office](../vlactivation/tools-to-manage-volume-activation-of-office.md).
+> - You still need to use ospp.vbs for volume licensed versions of Office, such as Office LTSC 2021 and Office 2019. For more information, see [Tools to manage volume activation of Office](../volume-license-activation/tools-to-manage-volume-activation-of-office.md).
 
 ## Verify that Microsoft 365 Apps is using the new activation method
 

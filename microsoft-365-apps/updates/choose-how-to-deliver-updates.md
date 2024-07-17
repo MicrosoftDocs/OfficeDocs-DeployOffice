@@ -91,11 +91,11 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Microsoft validates signals from builds released prior to broad deployment referred to as "Throttling". This throttling means not all clients receive the update at the same time, but in a staggered manner.
 - By default, updates aren't enforced. This can be mitigated by applying the **Update deadline** group policy setting for Office.
 - Features like rollback and skipping releases through the [Microsoft 365 admin center](https://admin.cloud.microsoft/Adminportal/Home#/Settings/Services/:/Settings/L1/SoftwareDownload) doesn't apply to Microsoft 365 Apps installations with custom update settings or which are managed by Intune, Configuration Manager, or cloud update.
-- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admincenter/overview.md) to monitor update adoption rate and compliance.
+- Use [Security Update Status](https://config.office.com/officeSettings/currency) in the [Microsoft 365 Apps admin center](../admin-center/overview.md) to monitor update adoption rate and compliance.
 
 ### Cloud update
 
-[Cloud update](../admincenter/cloud-update.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
+[Cloud update](../admin-center/cloud-update.md) is a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It's an end-to-end solution for managing updates for the Microsoft 365 Apps. It includes monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 > [!NOTE]
 > Using cloud update is Microsoft's recommended solution for Microsoft 365 Apps on Monthly Enterprise Channel or Current Channel.
@@ -106,14 +106,14 @@ Default configuration of the Microsoft 365 Apps. If not otherwise configured, de
 - Allows admins to pause or rollback updates if there's any issues
 - Allows admins to set deadlines for update enforcement
 - Applies to all Microsoft 365 Apps instances connected to the tenant, regardless of management or directory domain
-- [Update validation](../admincenter/update-validation.md) allows you to validate new updates on a first test ring
+- [Update validation](../admin-center/update-validation.md) allows you to validate new updates on a first test ring
 
 **Considerations**
 - Cloud update supports Monthly Enterprise Channel and Current Channel. Devices on other channels can't be managed.
 - Consider using custom rollout waves to control order and timing of devices getting updates, enabling you to validate updates with a pilot group first.
 
 **Additional information**
-- [Overview of cloud update](../admincenter/cloud-update.md)
+- [Overview of cloud update](../admin-center/cloud-update.md)
 - [Introductional videos](https://www.youtube.com/playlist?list=PLcUacJY1uG-hjdeyfJjQnl67hEPyPE8ed)
 
 ## Update solutions for on-premises-based updates
