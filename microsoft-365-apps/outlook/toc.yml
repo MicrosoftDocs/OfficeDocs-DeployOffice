@@ -6,16 +6,16 @@ items:
     items:
       - name: Product availability
         href: get-started/guide-product-availability.md
-      - name: Deploy Outlook
+      - name: Deploy new Outlook
         href: get-started/deployment-new-outlook.md
-      - name: Control install and use
+      - name: Control new Outlook installation
         href: get-started/control-install.md
-      - name: Microsoft COM add-ins 
+      - name: COM add-ins 
         items:
-          - name: Migrate from COM to web add-ins
-            href: get-started/migrate-com-to-web-addins.md            
           - name: Identify COM add-ins in your organization
             href: get-started/state-of-com-add-ins.md
+          - name: Migrate from COM to web add-ins
+            href: get-started/migrate-com-to-web-addins.md            
           - name: Automatically install web add-in counterparts
             href: get-started/install-web-add-ins.md
       - name: Supported accounts
