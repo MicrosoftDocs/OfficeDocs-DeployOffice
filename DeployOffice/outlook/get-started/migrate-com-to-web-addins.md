@@ -1,5 +1,5 @@
 ---
-title: "Migrate from COM to web add-ins"
+title: "Migrate from COM add-ins to web add-ins"
 ms.author: janellem
 author: JanelleMcIntosh-MSFT
 manager: triciag
