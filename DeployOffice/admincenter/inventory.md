@@ -61,7 +61,8 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 - The number of different Office builds, devices on those builds, and their support status.
 - The number of different Office update channels, number of different builds from those update channels, and their support status.
 - The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed and the architecture (32-bit versus 64-bit) being used.
-- The top installed add-ins on those devices.
+- The top installed COM add-ins on those devices.
+- The Inventory Search, find a specific device or addin
 
 ## Office build spread insight
 
@@ -129,6 +130,8 @@ You can drill down to see details about an add-in by clicking on its name. Those
 If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 
 ## Switch device update channel
+> [!NOTE]
+> The Inventory switch device update channel is in public preview.
 
 You can use the **Switch device update channel** capability to change the update channel for Microsoft 365 Apps across the devices in your organization. To trigger a channel change using this capability, perform the following steps:
 
@@ -140,12 +143,13 @@ You can use the **Switch device update channel** capability to change the update
    - One or more Microsoft Entra groups. These groups can contain users or devices. If you include devices, they must be Entra joined or hybrid Entra joined.
 6. Select **Move devices**, review the results, and close the flyout.
 
-The channel change takes a few hours to process. Once the change is complete, the updated channel is reflected in inventory.
+The channel change may take up to 24 hours. Once the change is complete, the updated channel is reflected in inventory.
 
 If you'd prefer to see this capability in action, check out this video: [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY).
 
 > [!NOTE]
-> Triggering a channel change is a point-in-time action. If you target a security group, the action will be based on the current membership of that group. If you add additional members to the group, you can re-run the action and any devices that have already been moved to the destination channel will be ignored.
+> - Triggering a channel change is a point-in-time action. If you target a security group, the action will be based on the current membership of that group. If you add additional members to the group, you can re-run the action and any devices that have already been moved to the destination channel will be ignored.
+> - A channel change will automatically enable cloud update for current and monthly enterprise channel profiles.
 
 ## Export inventory views
 
