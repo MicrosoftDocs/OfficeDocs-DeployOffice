@@ -128,7 +128,7 @@ Disable contact support is configured via [Cloud Policy](../../admincenter/overv
 
 When you create a policy, after providing a name and setting a scope, you can search for *new outlook* from the Policies screen. It brings up all the available policies for new Outlook for Windows. One of those policies is *Allow access to Contact Support in the new Outlook*. This policy can be configured as **Disabled** to disable the **Contact Support** option under the Help menu in new Outlook.
 
-:::image type="content" source="../manage/media/policy-management/policy-allow-access-contact.png" alt-text="Screenshot of the Allow access to Contact Support in the new Outlook policy settings, showing default, enabled, and disabled configurations, and a note on diagnostic troubleshooting. The configuration setting is shown as Disabled.":::
+:::image type="content" source="../manage/media/policy-management/policy-allow-access-contact-small.png" alt-text="Screenshot of the Allow access to Contact Support in the new Outlook policy settings, showing default, enabled, and disabled configurations, and a note on diagnostic troubleshooting. The configuration setting is shown as Disabled." lightbox="./manage/media/policy-management/policy-allow-access-contact-lb.png":::
 
 ## Disable toggle from classic Outlook for Windows
 Some organizations could use a policy to block the toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. For guidance on this policy, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
