@@ -14,7 +14,7 @@ description: "Provides an overview of transitioning from COM to web add-ins in O
 ms.date: 04/17/2024
 ---
 
-# Migrate from COM to web add-ins
+# Migrate from COM add-ins to web add-ins
 
 In the new Outlook for Windows, web add-ins are fully supported, with no other work required from partners. COM add-ins aren’t supported in the new Outlook for Windows, but continue to work in classic Outlook for Windows. COM add-ins can manipulate Outlook in many ways that often leads to instability and crashes in Outlook. To ensure Outlook is more stable and robust, web add-ins provide a sandbox environment for add-ins to operate in and have checks and balances in place.
 

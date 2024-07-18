@@ -24,6 +24,12 @@ New Outlook is currently offered as a preview for commercial accounts and is gen
 
 The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/deployoffice/webview2-install).
 
+## COM add-ins
+
+In new Outlook for Windows, COM add-ins aren't supported in new Outlook for Windows. COM add-ins can manipulate Outlook in many ways and often led to instability and crashes in Outlook. Web add-ins provide a sandbox environment for add-ins to operate in with checks and balances in place to ensure Outlook is more stable and robust. Existing web add-ins are fully supported, with no extra work required from partners. If you have a web add-in, nothing else is required to transition to the new client.  
+ 
+For more information, see [Migrate from COM add-ins to web add-ins](deployoffice/outlook/get-started/migrate-com-to-web-addins).
+
 ## Packaging
 
 The new Outlook for Windows is delivered as an MSIX package. Users acquire the package through the Outlook entry in the Microsoft Store app. For custom deployment by system administrators, the package is made available for manual or scripted installation. For more information, see [What is MSIX?](/windows/msix/overview)
