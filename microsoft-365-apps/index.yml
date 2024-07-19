@@ -43,7 +43,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Apps for Mac
           summary: Find guidance about deploying Microsoft 365 Apps (or Office) to Macs in your organization.
-          url: mac/deploy/deployment-guide-for-office-for-mac.md
+          url: mac/deployment-guide-for-office-for-mac.md
         # Card
         - title: Microsoft 365 Insider Program for Business
           summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
