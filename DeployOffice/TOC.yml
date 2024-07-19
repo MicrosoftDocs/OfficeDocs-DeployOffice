@@ -13,7 +13,7 @@ items:
           - name: About Microsoft 365 Apps
             href: about-microsoft-365-apps.md
           - name: Microsoft 365 Apps admin center
-            href: admincenter/overview.md
+            href: /microsoft-365-apps/admin-center/overview
           - name: Accessibility guide for Microsoft 365 Apps
             href: accessibility-guide.md
 
@@ -36,17 +36,17 @@ items:
       - name: Manage
         items:
           - name: Overview of update channels
-            href: updates/overview-update-channels.md
+            href: /microsoft-365-apps/updates/overview-update-channels
           - name: Choose how to deliver updates
-            href: updates/choose-how-to-deliver-updates.md
+            href: /microsoft-365-apps/updates/choose-how-to-deliver-updates
           - name: Manage updates with Configuration Manager
-            href: updates/manage-microsoft-365-apps-updates-configuration-manager.md
+            href: /microsoft-365-apps/updates/manage-microsoft-365-apps-updates-configuration-manager
           - name: Change the update channel
-            href: updates/change-update-channels.md
+            href: /microsoft-365-apps/updates/change-update-channels
           - name: Change update channel for Copilot
-            href: updates/change-channel-for-copilot.md
+            href: /microsoft-365-apps/updates/change-channel-for-copilot
           - name: Delivery Optimization
-            href: updates/delivery-optimization.md
+            href: /microsoft-365-apps/updates/delivery-optimization
           - name: Update history
             href: /officeupdates/update-history-microsoft365-apps-by-date
           - name: Release notes
@@ -55,9 +55,9 @@ items:
       - name: Security
         items:
           - name: Internet macros blocked by default
-            href: security/internet-macros-blocked.md
+            href: /microsoft-365-apps/security/internet-macros-blocked
           - name: Security baseline
-            href: security/security-baseline.md
+            href: /microsoft-365-apps/security/security-baseline
 
       - name: Privacy
         items:
@@ -106,11 +106,11 @@ items:
       - name: Reference
         items:
           - name: Overview of the Microsoft 365 Apps admin center
-            href: admincenter/overview.md
+            href: /microsoft-365-apps/admin-center/overview
           - name: Overview of the Office Customization Tool
-            href: admincenter/overview-office-customization-tool.md
+            href: /microsoft-365-apps/admin-center/overview-office-customization-tool
           - name: Overview of Cloud Policy
-            href: admincenter/overview-cloud-policy.md
+            href: /microsoft-365-apps/admin-center/overview-cloud-policy
           - name: Overview of the Office Deployment Tool
             href: overview-office-deployment-tool.md
           - name: Configuration options for the Office Deployment Tool
@@ -128,18 +128,18 @@ items:
           - name: Overview of licensing and activation
             href: overview-licensing-activation-microsoft-365-apps.md
           - name: Overview of unattended automation
-            href: /microsoft-365-apps/licensing-activation/overview-unattended
+            href: overview-unattended.md
           - name: Overview of extended offline access
-            href: /microsoft-365-apps/licensing-activation/overview-extended-offline-access
+            href: overview-extended-offline-access.md
           - name: Overview of viewer mode
-            href: /microsoft-365-apps/licensing-activation/overview-viewer-mode
+            href: overview-viewer-mode.md
           - name: Change installation from 32-bit to 64-bit
             href: change-bitness.md
           - name: Remove existing MSI versions when upgrading
             href: upgrade-from-msi-version.md
 
       - name: The new Outlook for Windows
-        href: /microsoft-365-apps/outlook/overview-new-outlook
+        href: /outlook/overview-new-outlook
 
       - name: Project, Visio, Teams, and OneNote
         items:
@@ -159,15 +159,6 @@ items:
       - name: End of support
         items:
           - name: End of support resources
-<<<<<<< Updated upstream
-            href: microsoft-365-apps/end-of-support/resources
-          - name: Connectivity to Microsoft 365 services
-            href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
-          - name: Windows Server and Microsoft 365 Apps
-            href: end-of-support/windows-server-support.md
-          - name: Microsoft 365 Apps migration from Windows Server
-            href: end-of-support/windows-server-migration.md
-=======
             href: /microsoft-365-apps/end-of-support/resources
           - name: Connectivity to Microsoft 365 services
             href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
@@ -175,12 +166,11 @@ items:
             href: /microsoft-365-apps/end-of-support/windows-server-support
           - name: Microsoft 365 Apps migration from Windows Server
             href: /microsoft-365-apps/end-of-support/windows-server-migration
->>>>>>> Stashed changes
           - name: Windows and Office support matrix (PDF)
             href: https://aka.ms/windows-office-support-matrix
 
       - name: Office for Mac
-        href: mac/deployment-guide-for-office-for-mac.md
+        href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
 
       - name: Microsoft 365 Insider Program for Business
         href: /microsoft-365-apps/insider
