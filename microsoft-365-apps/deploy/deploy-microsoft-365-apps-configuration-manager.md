@@ -29,7 +29,7 @@ If you need to install Microsoft 365 Apps on a single device or just a few, you 
 
 The steps in this article are based on the following best practices for Microsoft Configuration Manager environments:
 
-- **Use [Monthly Enterprise Channel](.../updates/overview-update-channels.md#monthly-enterprise-channel-overview)**: For Configuration Manager environments, this strikes a balance of getting the latest features and quality improvements quickly and having a predictable update schedule. While we generally recommend using Current Channel, this is often not feasible for on-premises-managed environments.
+- **Use [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview)**: For Configuration Manager environments, this strikes a balance of getting the latest features and quality improvements quickly and having a predictable update schedule. While we generally recommend using Current Channel, this is often not feasible for on-premises-managed environments.
 
 - **Build a Microsoft 365 Apps [applications](/mem/configmgr/apps/understand/introduction-to-application-management) using the built-in wizard**: We'll use the built-in wizard to create the application and allow Configuration Manager to build the application sources for us.
 
@@ -129,7 +129,7 @@ If you need to deploy the 32-bit version of Microsoft 365 Apps, you can create a
 
 ### Use different update channels
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 In this article, we're using Monthly Enterprise Channel, which provides users with new features on a monthly schedule. You can, however, choose to deploy Current Channel, which provides users with the newest features as soon as they're ready.
 

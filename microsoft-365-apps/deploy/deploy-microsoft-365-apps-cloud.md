@@ -32,7 +32,7 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 The steps in this article are based on the following best practices:
 
 - **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [cloud update](../admin-center/cloud-update.md).
-- **Lead with Current Channel**: Deploy [Current Channel](.../updates/overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](.../updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
+- **Lead with Current Channel**: Deploy [Current Channel](../updates/overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](../updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
 You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
@@ -103,7 +103,7 @@ If you want to deploy both the 32-bit and the 64-bit version in your environment
 
 ### Use different update channels
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices that should only receive one update per month.
 

@@ -64,7 +64,7 @@ This change will begin rolling out in January 2023, starting with Version 2209. 
 
 ### General availability of the "Software updates" page in the Microsoft 365 admin center
 
-The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](.../updates/software-update-status.md).
+The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](../updates/software-update-status.md).
 
 ## October 2022
 
@@ -102,7 +102,7 @@ Microsoft has released the recommended security configuration baseline settings 
 
 *(This feature is generally available as of November 4, 2022.)*
 
-The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](.../updates/software-update-status.md).
+The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](../updates/software-update-status.md).
 
 ### Office Insider Program for Business documentation
 
@@ -184,7 +184,7 @@ For more information, see [Performance recommendations for Microsoft 365 Apps on
 
 Office LTSC 2021 is generally available to volume licensed customers as of September 16, 2021. If you've deployed Microsoft 365 Apps to users in your organization, you don't need Office LTSC 2021. You already have all the features that are included in Office LTSC 2021, along with many more features that aren't in Office LTSC 2021. 
 
-For more information, see [Overview of Office LTSC 2021](ltsc/2021/overview.md) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
+For more information, see [Overview of Office LTSC 2021](/office/ltsc/2021/overview) and [Office LTSC is now generally available](https://www.microsoft.com/microsoft-365/blog/2021/09/16/office-ltsc-is-now-generally-available/).
 
 ## April 2021
 
@@ -237,7 +237,7 @@ A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise
 
 You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 ## April 2020
 
@@ -248,7 +248,7 @@ Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, st
 We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](../best-practices/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](.../updates/choose-how-to-deliver-updates.md).
 
 ### Viewer mode
-Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](../licensing-activation/overview-viewer-mode).
+Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](../licensing-activation/overview-viewer-mode.md).
 
 ## March 2020
 
@@ -301,7 +301,7 @@ Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline
 ## June 2019
 
 ### Comparison of application compatibility and readiness assessments tools
-Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](readiness-tools.md).
+Are you trying to figure out whether to use the Readiness Toolkit, readiness features in Configuration Manager (current branch), or Office Telemetry Dashboard? For recommendations, see [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](readiness-toolkit-application-compatibility-microsoft-365-apps.md).
 
 ## April 2019
 
@@ -348,7 +348,7 @@ For best practices on deploying Microsoft 365 Apps with Configuration Manager, s
 
 ## September 2018
 
-Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](office/2019/overview.md) and [Deploy Office 2019](office/2019/deploy.md).
+Office 2019 is the latest version of Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. Office 2019 is separate from Office that's available through Office 365 (or Microsoft 365) plans. For example, if you've deployed Microsoft 365 Apps to the users in your organization, you don't need Office 2019. You already have all the features, and many more, that are included in Office 2019. For more information, see [Overview of Office 2019](/office/2019/overview.md) and [Deploy Office 2019](office/2019/deploy).
 
 ## July 2018
 

@@ -66,15 +66,15 @@ To configure a deadline, see [Use the Office Deployment Tool or Group Policy to 
 
 ## Use the Office Deployment Tool or Group Policy to configure update settings (optional)
 
-You can use the [Office Deployment Tool (ODT)](../overview-office-deployment-tool.md) or [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) to configure update settings for Office for devices running Windows in your organization.
+You can use the [Office Deployment Tool (ODT)](../deploy/overview-office-deployment-tool.md) or [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) to configure update settings for Office for devices running Windows in your organization.
 
 The following table shows the relevant Office Deployment Tool attributes and Group Policy policy settings that you can use.
 
 |Setting  |Office Deployment Tool  |Group Policy <sup>[1]</sup>   |
 |---------|---------|---------|
-|Check for updates automatically <sup>[2]</sup>  | [Enabled attribute](../office-deployment-tool-configuration-options.md#enabled-attribute-part-of-updates-element) |Enable Automatic Updates|
-|Get updates directly from the internet     | [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) | Update Path        |
-|Set a deadline   | [Deadline attribute](../office-deployment-tool-configuration-options.md#deadline-attribute-part-of-updates-element)  | Update Deadline         |
+|Check for updates automatically <sup>[2]</sup>  | [Enabled attribute](../deploy/office-deployment-tool-configuration-options#enabled-attribute-part-of-updates-element) |Enable Automatic Updates|
+|Get updates directly from the internet     | [UpdatePath attribute](../deploy/office-deployment-tool-configuration-options#updatepath-attribute-part-of-updates-element) | Update Path        |
+|Set a deadline   | [Deadline attribute](../deploy/office-deployment-tool-configuration-options#deadline-attribute-part-of-updates-element)  | Update Deadline         |
 
 > [!NOTE]
 > <sup>[1]</sup> All these policies can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.

@@ -139,7 +139,7 @@ Configuration Manager can be used to deploy updates for Microsoft 365 Apps the s
 
 
 ### Network shares
-Admins can choose to download the latest releases using the [Office Deployment Tool](https://aka.ms/ODT) and stage the files on network shares, in local folders, on USB thumb drives or http/https-based locations. Then the **UpdatePath** setting in the [configuration file](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) or from group policies can be used, to point devices to the location.
+Admins can choose to download the latest releases using the [Office Deployment Tool](https://aka.ms/ODT) and stage the files on network shares, in local folders, on USB thumb drives or http/https-based locations. Then the **UpdatePath** setting in the [configuration file](../deploy/office-deployment-tool-configuration-options#updatepath-attribute-part-of-updates-element) or from group policies can be used, to point devices to the location.
 
 > [!NOTE]
 > This method is discouraged due to the high cost of ownership and repetitive, manual intensive processes. It should only be implemented after carefully evaluating  alternative options.

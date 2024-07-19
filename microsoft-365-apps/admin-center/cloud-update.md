@@ -305,7 +305,7 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 Updates applied outside of a custom rollout wave are due to external actions occurring on the device. Review the following scenarios and take any necessary actions:
 
-- **Add-on app deployments**: When you Install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
+- **Add-on app deployments**: When you Install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
 
 - **Onboarding devices**: Devices that are still in an **Onboarding to [channel-name]** state are managed by your existing settings until cloud update takes control. During this time, other management settings can enforce updates. Consider excluding devices from these other management tools or wait until the next patch Tuesday cycle for cloud update to engage.
   

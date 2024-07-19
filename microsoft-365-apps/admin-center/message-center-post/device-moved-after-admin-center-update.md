@@ -59,7 +59,7 @@ There are several ways to enable the Office COM object, such as using client pol
 
 ### Deploy Microsoft 365 Apps with Microsoft Intune
 
-Microsoft Intune, through the [Office Deployment Tool](.../../deploy/overview-office-deployment-tool.md), enables the download and deployment of Microsoft 365 Apps to client computers through the [Office Content Deliver Network](../../deploy/deploy-microsoft-365-apps-cloud.md). Devices that you manage and run on Windows 10/11 can have Microsoft 365 apps assigned and installed, provided you have the necessary licenses.
+Microsoft Intune, through the [Office Deployment Tool](../../deploy/overview-office-deployment-tool.md), enables the download and deployment of Microsoft 365 Apps to client computers through the [Office Content Deliver Network](../../deploy/deploy-microsoft-365-apps-cloud.md). Devices that you manage and run on Windows 10/11 can have Microsoft 365 apps assigned and installed, provided you have the necessary licenses.
 
 For information on deploying Microsoft 365 Apps with Microsoft Intune, see [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365).
 

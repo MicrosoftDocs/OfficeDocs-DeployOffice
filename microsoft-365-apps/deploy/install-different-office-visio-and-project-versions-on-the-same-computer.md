@@ -83,7 +83,7 @@ Here are some example installation scenarios, whether they're supported, and an 
 
 - Volume licensed versions of Office 2016 use Windows Installer (MSI). Volume licensed versions of Office LTSC 2021 and Office 2019 use Click-to-Run. The same is true for volume licensed versions of Project and Visio.
 
-- *(For Microsoft 365, Office LTSC 2021, and Office 2019 products)* All products installed on the computer must be using the same [update channel](.../updates/overview-update-channels.md). 
+- *(For Microsoft 365, Office LTSC 2021, and Office 2019 products)* All products installed on the computer must be using the same [update channel](../updates/overview-update-channels.md). 
   - For example, the volume licensed version of Office Professional Plus 2019 can only use the PerpetualVL2019 update channel. 
   - Therefore, it can't be installed on the same computer that has the subscription version of the Project desktop app using Semi-Annual Enterprise Channel. 
   - Or, on the same computer that has the subscription version of the Visio desktop app using Current Channel.

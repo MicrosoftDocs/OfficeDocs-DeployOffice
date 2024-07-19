@@ -56,7 +56,7 @@ Here are the general steps to deploy a volume licensed version of Project Profes
   
 1. Purchase Project 2021 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Project 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc/2021/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Project 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](/office/ltsc/2021/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -73,7 +73,7 @@ Here are the general steps to deploy a volume licensed version of Project Profes
   
 1. Purchase Project 2019 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Project 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office/2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Project 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](/office/2019/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 

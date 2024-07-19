@@ -21,8 +21,8 @@ To help you deploy volume licensed versions of Project 2016 and Visio 2016 on th
 
 > [!IMPORTANT]
 > - MAK keys that you use for Windows Installer (MSI) installations of Project and Visio won't work with the Office Deployment Tool. You need a different MAK key to deploy volume licensed versions of Project and Visio with the Office Deployment Tool. To get that MAK key, log into the Volume Licensing Service Center (VLSC) and use the key listed under "C2R-P for use with the Office Deployment Tool." 
-> - These steps don't apply to volume licensed versions of Project 2019 and Visio 2019. For more information about deploying volume licensed versions of Project 2019 and Visio 2019, see [Deploy Office 2019](office/2019/deploy.md).
-> - These steps don't apply to volume licensed versions of Project 2021 and Visio LTSC 2021. For more information about deploying volume licensed versions of Project 2021 and Visio LTSC 2021, see [Deploy Office LTSC 2021](ltsc/2021/deploy.md).
+> - These steps don't apply to volume licensed versions of Project 2019 and Visio 2019. For more information about deploying volume licensed versions of Project 2019 and Visio 2019, see [Deploy Office 2019](/office/2019/deploy).
+> - These steps don't apply to volume licensed versions of Project 2021 and Visio LTSC 2021. For more information about deploying volume licensed versions of Project 2021 and Visio LTSC 2021, see [Deploy Office LTSC 2021](/office/ltsc/2021/deploy).
 
 To begin, [download the most current version](https://go.microsoft.com/fwlink/p/?LinkID=626065) of the Office Deployment Tool from the Microsoft Download Center. Then, edit the Product element in the configuration file, using the appropriate ID from the following table. To use a Generic Volume License Key (GVLK) for volume activation with KMS, use the appropriate value in the table for the PIDKEY attribute.
 

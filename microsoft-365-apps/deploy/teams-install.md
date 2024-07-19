@@ -40,7 +40,7 @@ If you're using shared computers or Virtual Desktop Infrastructure (VDI), see [S
 
 ## When did Microsoft Teams start being included with new installations of Microsoft 365 Apps?
 
-The date that Teams was included with ***new*** installations of Microsoft 365 Apps depended on which [update channel](.../updates/overview-update-channels.md) you were using. The following table shows the schedule.
+The date that Teams was included with ***new*** installations of Microsoft 365 Apps depended on which [update channel](../updates/overview-update-channels.md) you were using. The following table shows the schedule.
 
 | Update channel | Version | Date |
 |---------|---------|---------|

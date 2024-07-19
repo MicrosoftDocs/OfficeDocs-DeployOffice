@@ -34,7 +34,7 @@ You can choose how often you want your users to get feature updates for the Offi
 
 We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](../microsoft-365-apps/admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Office updates for specific users or groups in waves, limiting the effect on your network. In those cases where you selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 > [!NOTE]
 > You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md).

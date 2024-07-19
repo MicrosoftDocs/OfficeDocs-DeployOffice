@@ -33,7 +33,7 @@ The following flowchart is a comparison of install options, including the consid
 
 :::image type="content" source="./media/install-options/install-options-2.png" alt-text="A screenshot showing options for installing Microsoft 365 Apps.":::
 
-The [Office Deployment Tool (ODT)](../overview-office-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
+The [Office Deployment Tool (ODT)](../deploy/overview-office-deployment-tool.md) is used to install Microsoft 365 Apps in all these options. 
 
 ## Configuration Manager hybrid – subset of content (Microsoft recommended)
 

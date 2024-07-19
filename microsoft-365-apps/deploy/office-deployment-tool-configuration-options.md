@@ -134,7 +134,7 @@ Defines which channel to use for installing Microsoft 365 Apps. If Microsoft 365
 
 This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such a setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md).
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).  
 
 Allowed values: 
 
@@ -149,9 +149,9 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc/2021/update.md#update-channel-for-office-ltsc-2021).
+If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office/2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element)
 
@@ -707,7 +707,7 @@ Optional. The default is **Current**.
 
 Defines which channel to use for updating Microsoft 365 Apps after installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Microsoft 365 Apps, and the channel for the Updates element is used to change the channel for an existing installation of Microsoft 365 Apps.
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
@@ -726,9 +726,9 @@ Allowed values:
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
 
-If you deploy Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume-licensed versions, you must use this update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc/2021/update.md#update-channel-for-office-ltsc-2021).
+If you deploy Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume-licensed versions, you must use this update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office/2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
 
 ## RemoveMSI element
 

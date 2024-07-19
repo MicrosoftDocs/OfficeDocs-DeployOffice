@@ -101,7 +101,7 @@ We recommend Current Channel, because it provides your users with the newest fea
 
 All the update channels receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 To preview or test new updates before deploying them to your entire organization, you have two options:
 

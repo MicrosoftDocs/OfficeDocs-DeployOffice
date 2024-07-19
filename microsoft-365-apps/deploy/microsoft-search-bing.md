@@ -49,7 +49,7 @@ To allow the extension to be installed, sign in to the Microsoft 365 admin cente
 
 There you see the **Install extension and set Bing as the default search engine** check box. The check box isn't selected by default, as shown in the following screenshot.
 
-:::image type="content" source="./media/microsoft-search-bing/search-intelligence-config.png" alt-text="A screenshot of Microsoft 365 admin center settings for configuring Microsoft Search in Bing, including extension settings and search results configurations.":::
+:::image type="content" source="../../media/microsoft-search-bing/search-intelligence-config.png" alt-text="A screenshot of Microsoft 365 admin center settings for configuring Microsoft Search in Bing, including extension settings and search results configurations.":::
 
 To allow the extension to be installed, select the check box, and then choose **Save**.
 
@@ -175,19 +175,19 @@ You can find this policy setting under Computer Configuration\Policies\Administr
 
 If you're deploying Microsoft 365 Apps for enterprise  by using the Office 365 Client Installation wizard in Configuration Manager, you can set the **Background service for Microsoft Search in Bing** toggle to **Off** in the **Features** section.
 
-:::image type="content" source="./media/microsoft-search-bing/apps-features-settings.png" alt-text="A screenshot of Configuration settings for apps and features in Microsoft 365, showing various apps and the background service for Microsoft Search in Bing.":::
+:::image type="content" source="../../media/microsoft-search-bing/apps-features-settings.png" alt-text="A screenshot of Configuration settings for apps and features in Microsoft 365, showing various apps and the background service for Microsoft Search in Bing.":::
 
 ### Microsoft Intune
 
 If you're deploying Microsoft 365 Apps for enterprise by using Intune, on the **Configure app suite** page, you can set the **Install background service for Microsoft Search in Bing** toggle to **No** in the **Properties** section.
 
-:::image type="content" source="./media/microsoft-search-bing/intune-toggle-bing.png" alt-text="A screenshot of Intune properties settings showing options for shared computer activation, Microsoft Software License terms, and background service for Microsoft Search in Bing.":::
+:::image type="content" source="../../media/microsoft-search-bing/intune-toggle-bing.png" alt-text="A screenshot of Intune properties settings showing options for shared computer activation, Microsoft Software License terms, and background service for Microsoft Search in Bing.":::
 
 ## Change the default search engine for Google Chrome from the extension
 
 If your users want to revert to their previous default search engine, they can select the magnifying glass icon next to the address bar in Google Chrome and move the **Use Bing as your default search engine** toggle to the **Off** position. For the change to take effect, they need to close Google Chrome and then open it again. Selecting **Off** doesn't remove the extension. This allows your users to still easily search work content through the extension flyout.
 
-:::image type="content" source="./media/microsoft-search-bing/flyout-toggle-chrome.png" alt-text="A screenshot of Microsoft Search flyout in Chrome showing suggested searches and an option to use Bing as the default search engine.":::
+:::image type="content" source="../../media/microsoft-search-bing/flyout-toggle-chrome.png" alt-text="A screenshot of Microsoft Search flyout in Chrome showing suggested searches and an option to use Bing as the default search engine.":::
 
  If your users want to go back to using Bing as their default search engine and access Microsoft Search capabilities, they can move the toggle in Google Chrome to the **On** position. For the change to take effect, they need to close Google Chrome and then open it again.
 

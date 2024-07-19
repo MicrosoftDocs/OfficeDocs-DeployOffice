@@ -23,7 +23,7 @@ There are a few slight differences in how you, as a SPLA customer, deploy Office
 
 ## Office LTSC 2021 (for Windows)
 
-To download or install Office LTSC 2021 on devices running Windows, you can use the [Office Deployment Tool](../overview-office-deployment-tool.md) with an XML file that specifies configuration information. The following table shows you which value to use for the [ID attribute](../office-deployment-tool-configuration-options.md#id-attribute-part-of-product-element) in that XML file.
+To download or install Office LTSC 2021 on devices running Windows, you can use the [Office Deployment Tool](../deploy/overview-office-deployment-tool.md) with an XML file that specifies configuration information. The following table shows you which value to use for the [ID attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#id-attribute-part-of-product-element) in that XML file.
 
 |Office product |Product ID value  |
 |---------|---------|

@@ -45,7 +45,7 @@ The easiest way to download Office for Mac, and ensure you're always getting the
 The same installer package can be used for Microsoft 365 subscriptions, Office LTSC for Mac 2021, and Office 2019 for Mac. How you activate the product determines which features are available to your users.
 
 > [!NOTE]
-> - If you have a Microsoft Services Provider License Agreement (SPLA), [review this information](../ltsc/2021/spla.md).
+> - If you have a Microsoft Services Provider License Agreement (SPLA), [review this information](..//office/ltsc/2021/spla).
 > - Support for Office 2016 for Mac ended on October 13, 2020. For more information, see [End of support for Office 2016 for Mac](https://support.microsoft.com/office/e944a907-bbc8-4be5-918d-a514068d0056).
 > - The installer packages for Office LTSC for Mac 2021 and for Office 2019 for Mac aren't available on the Volume Licensing Service Center (VLSC).
 

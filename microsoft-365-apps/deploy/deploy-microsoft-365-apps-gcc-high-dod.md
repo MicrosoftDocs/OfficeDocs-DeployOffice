@@ -39,7 +39,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
@@ -227,7 +227,7 @@ For more information about the GCC High and DoD environments provided by Microso
 For general deployment guidance about Microsoft 365 Apps for enterprise, see the following articles:
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
-- [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 - [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)

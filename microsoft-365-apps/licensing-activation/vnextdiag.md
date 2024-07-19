@@ -59,7 +59,7 @@ The PowerShell script shows the products that are installed on the device and, f
 - Email of the user that activated the product.
 - ID of the tenant associated with the user.
 
-If the device is configured for [shared computer activation](../overview-shared-computer-activation.md) or [device-based licensing](../device-based-licensing.md), the output of running vnextdiag.ps1 shows that information.
+If the device is configured for [shared computer activation](../licensing-activation/overview-office-deployment-tool.md) or [device-based licensing](../licensing-activation/device-based-licensing.md), the output of running vnextdiag.ps1 shows that information.
 
 ## Reset the activation of Microsoft 365 Apps by using vnextdiag.ps1
 

@@ -82,7 +82,7 @@ After you test your operating system image, you can deploy it to your users. The
   
 Users are prompted to activate Microsoft 365 Apps when they open their first Office program, as seen in the following screenshot.
   
-:::image type="content" source="media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
+:::image type="content" source="../media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
 
   
 As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.
