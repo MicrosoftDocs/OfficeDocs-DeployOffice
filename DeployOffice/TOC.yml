@@ -62,43 +62,43 @@ items:
       - name: Privacy
         items:
           - name: Overview of privacy controls
-            href: /microsoft-365-apps/privacy/overview-privacy-controls.md
+            href: /microsoft-365-apps/privacy/overview-privacy-controls
           - name: Privacy controls available for Office products
-            href: /microsoft-365-apps/privacy/products-versions-privacy-controls.md
+            href: /microsoft-365-apps/privacy/products-versions-privacy-controls
           - name: Manage privacy controls
             items:
               - name: Windows policy settings
-                href: /microsoft-365-apps/privacy/manage-privacy-controls.md
+                href: /microsoft-365-apps/privacy/manage-privacy-controls
               - name: Mac preferences
-                href: /microsoft-365-apps/privacy/mac-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/mac-privacy-preferences
               - name: iOS preferences
-                href: /microsoft-365-apps/privacy/ios-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/ios-privacy-preferences
               - name: Android policy settings
-                href: /microsoft-365-apps/privacy/android-privacy-controls.md
+                href: /microsoft-365-apps/privacy/android-privacy-controls
               - name: Office for the web policy settings
-                href: /microsoft-365-apps/privacy/office-web-privacy-controls.md
+                href: /microsoft-365-apps/privacy/office-web-privacy-controls
           - name: Diagnostic data
             items:
               - name: Required diagnostic data
-                href: /microsoft-365-apps/privacy/required-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/required-diagnostic-data
               - name: Optional diagnostic data
-                href: /microsoft-365-apps/privacy/optional-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/optional-diagnostic-data
               - name: Using the Diagnostic Data Viewer
                 href: https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855
           - name: Connected experiences
             items:
               - name: Connected experiences
-                href: /microsoft-365-apps/privacy/connected-experiences.md
+                href: /microsoft-365-apps/privacy/connected-experiences
               - name: Connected experiences and your content
-                href: /microsoft-365-apps/privacy/connected-experiences-content.md
+                href: /microsoft-365-apps/privacy/connected-experiences-content
               - name: Optional connected experiences
-                href: /microsoft-365-apps/privacy/optional-connected-experiences.md
+                href: /microsoft-365-apps/privacy/optional-connected-experiences
               - name: Required service data
-                href: /microsoft-365-apps/privacy/required-service-data.md
+                href: /microsoft-365-apps/privacy/required-service-data
           - name: Essential services
-            href: /microsoft-365-apps/privacy/essential-services.md
+            href: /microsoft-365-apps/privacy/essential-services
           - name: In-product recommendations in Office
-            href: /microsoft-365-apps/privacy/in-product-recommendations.md
+            href: /microsoft-365-apps/privacy/in-product-recommendations
 
       - name: Best practices
         href: /microsoft-365-apps/best-practices/toc.yml
