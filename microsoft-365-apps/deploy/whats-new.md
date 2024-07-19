@@ -156,7 +156,7 @@ Microsoft has released the recommended security configuration baseline settings 
 ### Retirement of Security Policy Advisor
 
 > [!NOTE]
-> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](../admin-center/overview-office-cloud-policy-service.md) and you can manage them there.  
+> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](../admin-center/overview-cloud-policy.md) and you can manage them there.  
 
 We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 
@@ -256,7 +256,7 @@ We're starting to publish best practice articles from Microsoft experts in the f
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md).
 
 ## October 2019
 
@@ -313,12 +313,12 @@ For more information, see [Change a Microsoft 365 Apps installation from 32-bit 
 ### General availability of Office cloud policy service
 The Office cloud policy service is now generally available.  It's a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admin-center/overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admin-center/overview-cloud-policy.md).
 
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
 
-Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](.../privacy/overview-privacy-controls.md).
+Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](../privacy/overview-privacy-controls.md).
 
 ## March 2019
 Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
@@ -333,7 +333,7 @@ A public preview is now available for the Office cloud policy service, which is 
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
- - [Overview of the Office cloud policy service](../admin-center/overview-office-cloud-policy-service.md)
+ - [Overview of the Office cloud policy service](../admin-center/overview-cloud-policy.md)
 
 ### Office for Mac available in the Mac App Store
 Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](../mac/deploy-mac-app-store.md).

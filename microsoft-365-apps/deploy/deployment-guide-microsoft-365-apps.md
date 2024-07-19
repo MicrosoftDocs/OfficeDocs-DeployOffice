@@ -53,7 +53,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 
-- [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md) 
+- [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md) 
 
 - [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
 

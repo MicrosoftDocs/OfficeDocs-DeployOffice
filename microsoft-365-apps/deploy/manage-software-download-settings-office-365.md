@@ -37,7 +37,7 @@ We recommend Current Channel, because it provides your users with the newest Off
 For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
 
 > [!NOTE]
-> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md).
+> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md).
 
 After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
 

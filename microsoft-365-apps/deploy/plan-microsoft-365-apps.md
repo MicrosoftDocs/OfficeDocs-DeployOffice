@@ -112,7 +112,7 @@ To preview or test new updates before deploying them to your entire organization
 
 > [!NOTE]
 > **Best practices:**
-> - Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](.../updates/change-update-channels.md).
+> - Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](../updates/change-update-channels.md).
 >
 > - If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
 >
