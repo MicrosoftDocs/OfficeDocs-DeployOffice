@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides guidelines for configuring and managing mailbox accounts and features in Microsoft 365 using Exchange PowerShell cmdlets and Cloud Policy."
-ms.date: 11/09/2023
+ms.date: 07/18/2024
 ---
 
 # Policy Management
-Admins can provide Windows users in your organization with a standard set of policies for New Outlook that are essential for maintaining security, productivity, and data integrity within an organization by using Exchange PowerShell cmdlets and Cloud Policy. 
+Admins provide Windows users in your organization with standard policies for new Outlook. These policies maintain security, productivity, and data integrity by using Exchange PowerShell cmdlets and Cloud Policy.
 
 Most policies configure the features that are available for the mailbox accounts in their organization and help protect company data and customize the user experience. These policies affect the configuration of any Outlook app where the organization mailbox is present. 
 
@@ -46,7 +46,7 @@ Users can change the primary account in Settings > Accounts > Email accounts > M
 
 :::image type="content" source="../manage/media/policy-management/policy-email-accounts-settings.png" alt-text="Screenshot that shows how to change the primary account in Email accounts Settings." lightbox="../manage/media/policy-management/policy-email-accounts-settings-lb.png":::
 
-We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies will be applied. For more information about this policy, see [Set-OwaMailboxPolicy - ChangeSettingsAccountEnabled](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
+We’re rolling out a new policy, *ChangeSettingsAccountEnabled* in the `OwaMailboxPolicy` cmdlet that allows organizations to set the organization account as primary so companies can ensure their policies are applied. For more information about this policy, see [Set-OwaMailboxPolicy - ChangeSettingsAccountEnabled](/powershell/module/exchange/set-owamailboxpolicy#-changesettingsaccountenabled).
 
 ## Disable automatic updating of weather location
 The Weather Enabled parameter specifies whether to enable or disable weather information in the calendar in Outlook on the web. Check the syntax at [Set-owamailboxpolicy - WeatherEnabled](/powershell/module/exchange/set-owamailboxpolicy#-weatherenabled).
@@ -78,18 +78,18 @@ Admins can set the policy *Automatically configure accounts based on Active Dire
 
 If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
 
-By default, no default email address will be suggested.  
+By default, no default email address is suggested.  
 
 ## Specify what attachments can be downloaded
 By default, new Outlook for Windows allows you to open attached Word, Excel, PowerPoint, text files, and many media files directly. The files you open vary depending on the account settings. Admins can configure the list of file name extensions that you can open in new Outlook for Windows using the cmdlets [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)  - `AllowedFileTypes` and `BlockedFileTypes`. 
 
-## Disable Third party online attachments
+## Disable non-Microsoft online attachments
 	
-The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow additional storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy- AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable). 
+The `AdditionalStorageProvidersAvailable` parameter specifies whether to allow more storage providers (for example, Box, Dropbox, Facebook, Google Drive, Egnyte, personal OneDrive) attachments in Outlook on the web. For more information, see [Set-OwaMailboxPolicy- AdditionalStorageProvidersAvailable](/powershell/module/exchange/set-owamailboxpolicy#-additionalstorageprovidersavailable). 
 
 ## Disable Offline mode
 The `OfflineEnabledWin` parameter specifies whether to allow the new Outlook for Windows to be used offline.<br> 
-For more information see, [Set-OwaMailboxPolicy - OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
+For more information, see [Set-OwaMailboxPolicy - OfflineEnabledWin](/powershell/module/exchange/set-owamailboxpolicy#-offlineenabledwin).
 
 ## Enable Location Suggestions
 The `PlacesEnabled` parameter specifies whether to enable or disable Places in Outlook on the web. Places lets users search, share, and map location details by using Bing. <br> For more information, see [Set-OwaMailboxPolicy - PlacesEnabled](/powershell/module/exchange/set-owamailboxpolicy#-placesenabled). 
@@ -120,6 +120,15 @@ New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-us
 :::image type="content" source="../manage/media/policy-management/policy-feeback.png" alt-text="Screenshot that shows how to provide in-product feedback through Feedback to Microsoft." lightbox="../manage/media/policy-management/policy-feeback-lb.png":::
 
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
+
+## Disable Contact Support in the new Outlook for Windows
+Disable contact support is configured via [Cloud Policy](../../admincenter/overview-cloud-policy.md) for a Microsoft 365 organization from the [Microsoft 365 Apps admin center](https://config.office.com), specifically on the [Office Policies](https://config.office.com/officeSettings/officePolicies) page.
+
+:::image type="content" source="../manage/media/policy-management/policy-configure-setting.png" alt-text="Screenshot of the Configure Settings page in the Microsoft 365 Apps admin center. It shows the policy management process with steps for Basics, Scope, Policies, and Review and publish. The Policies section lists five policies related to the new Outlook, including their platforms, applications, and status, all marked as Not configured." lightbox="../manage/media/policy-management/policy-configure-setting-lb.png":::
+
+When you create a policy, after providing a name and setting a scope, you can search for *new outlook* from the Policies screen. It brings up all the available policies for new Outlook for Windows. One of those policies is *Allow access to Contact Support in the new Outlook*. This policy can be configured as **Disabled** to disable the **Contact Support** option under the Help menu in new Outlook.
+
+:::image type="content" source="../manage/media/policy-management/policy-allow-access-contact-small.png" alt-text="Screenshot of the Allow access to Contact Support in the new Outlook policy settings, showing default, enabled, and disabled configurations, and a note on diagnostic troubleshooting. The configuration setting is shown as Disabled." lightbox="../manage/media/policy-management/policy-allow-access-contact-lb.png":::
 
 ## Disable toggle from classic Outlook for Windows
 Some organizations could use a policy to block the toggle from appearing in the classic Outlook for Windows until they’re ready to migrate. For guidance on this policy, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
