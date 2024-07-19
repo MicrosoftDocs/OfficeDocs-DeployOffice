@@ -45,7 +45,6 @@ In addition to Click-to-Run, the following are some other changes that you need 
 - Office 2019 is installed on the system drive, which is usually the C:\ drive. The installation location can’t be changed.
 - You can configure updates to Office 2019, such as security updates and bug fixes, to be automatically downloaded and installed from the Office CDN. Individual downloads for each security update or bug fix aren’t available. 
 
-
 ## What's stayed the same in Office 2019?
 
 Even though there's a different installation technology, you can still use the same software distribution tools, such as Microsoft Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
@@ -71,7 +70,7 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business. 
 - Access and Publisher aren't available for devices running macOS.
-- There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+- There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.

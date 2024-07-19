@@ -10,36 +10,36 @@ Items:
   - name: Volume activation
     items:
     - name: Overview
-      href: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/ltsc/2021/toc.json
     - name: Configure a KMS host computer
-      href: ../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
     - name: Configure DNS for KMS
-      href: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
     - name: Activate by using KMS
-      href: ../volume-license-activation/activate-office-by-using-kms.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
     - name: Activate by using MAK
-      href: ../volume-license-activation/activate-office-by-using-mak.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/activate-office-by-using-mak.md?toc=/office/ltsc/2021/toc.json
     - name: Activate by using Active Directory
-      href: ../volume-license-activation/activate-office-by-using-active-directory.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/ltsc/2021/toc.json
     - name: Rearm Office in an image
-      href: ../volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/office/ltsc/2021/toc.json
     - name: Tools to manage volume activation
-      href: ../volume-license-activation/tools-to-manage-volume-activation-of-office.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: ../../volume-license-activation/tools-to-manage-volume-activation-of-office.md?toc=/office/ltsc/2021/toc.json
   - name: Project, Visio, and OneNote
     items:
     - name: Deploy Project
-      href: ../deployment-guide-for-project.md?toc=/deployoffice/ltsc/2021/toc.json#deploy-a-volume-licensed-version-of-project-2021
+      href: /microsoft-365-apps/deploy/deployment-guide-for-project.md?toc=/office/ltsc/2021/toc.json#deploy-a-volume-licensed-version-of-project-2021
     - name: Deploy Visio
-      href: ../deployment-guide-for-visio.md?toc=/deployoffice/ltsc/2021/toc.json#deploy-visio-ltsc-2021
+      href: /microsoft-365-apps/deploy/deployment-guide-for-visio.md?toc=/office/ltsc/2021/toc.json#deploy-visio-ltsc-2021
     - name: Deploy OneNote
-      href: ../deployment-guide-onenote.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: /microsoft-365-apps/deploy/deployment-guide-onenote.md?toc=/office/ltsc/2021/toc.json
   - name: Office LTSC for Mac 2021
     items:
     - name: Deployment guide
-      href: ../mac/deployment-guide-for-office-for-mac.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/ltsc/2021/toc.json
     - name: Overview
-      href: ../mac/overview.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: /microsoft-365-apps/mac/overview?toc=/office/ltsc/2021/toc.json
     - name: Deployment options
-      href: ../mac/deployment-options-for-office-for-mac.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/ltsc/2021/toc.json
     - name: Volume License (VL) Serializer
-      href: ../mac/volume-license-serializer.md?toc=/deployoffice/ltsc/2021/toc.json
+      href: /microsoft-365-apps/mac/volume-license-serializer?toc=/office/ltsc/2021/toc.json

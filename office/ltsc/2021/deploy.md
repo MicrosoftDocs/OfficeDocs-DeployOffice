@@ -46,7 +46,7 @@ Once you have a copy of the ODT, you need to create a configuration.xml file. Yo
 
 > [!TIP]
 > - Instead of using a text editor to create your configuration.xml file, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com/deploymentsettings). 
-> - The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md). 
+> - The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool). 
 > - This OCT is different than the Office Customization Tool that you might have used in the past to install volume licensed versions of Office that used Windows Installer (MSI) as the installation technology.
 
 There are a series of settings in the configuration.xml file that you configure to customize the Office LTSC 2021 download or installation. The following table lists the most common settings to configure in the configuration.xml file.

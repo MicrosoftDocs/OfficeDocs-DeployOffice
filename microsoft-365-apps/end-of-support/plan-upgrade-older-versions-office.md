@@ -80,7 +80,7 @@ Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-ba
 There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
 - [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md)
-- [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md)
+- [Deployment guide for Microsoft 365 Apps](../deploy/deployment-guide-microsoft-365-apps.md)
 
 ## Review the system requirements for Microsoft 365 Apps
 
@@ -169,8 +169,8 @@ The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. T
 
 For more information, see the following articles:
 
-- [Deployment guide for Project](../deployment-guide-for-project.md)
-- [Deployment guide for Visio](../deployment-guide-for-visio.md)
+- [Deployment guide for Project](../deploy/deployment-guide-for-project.md)
+- [Deployment guide for Visio](../deploy/deployment-guide-for-visio.md)
 
 ## Related articles
 
