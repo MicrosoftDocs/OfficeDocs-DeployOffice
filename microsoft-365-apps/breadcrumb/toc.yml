@@ -1,3 +1,7 @@
-- name: Microsoft 365 Apps
-  tocHref: /microsoft-365-apps/
-  topicHref: /microsoft-365-apps/index
+- name: 'Microsoft 365'
+  tocHref: /microsoft-365/
+  topicHref: /microsoft-365/index
+  items:
+    - name: 'Microsoft 365 Apps'
+      tocHref: //microsoft-365-apps/
+      topicHref: /microsoft-365-apps/index
