@@ -118,7 +118,7 @@ items:
           - name: Deploying languages
             href: overview-deploying-languages-microsoft-365-apps.md
           - name: Deploy by using Remote Desktop Services
-            href: deploy-microsoft-365-apps-remote-desktop-services.md
+            href: deploy/deploy-microsoft-365-apps-remote-desktop-services
           - name: Deploy as part of an operating system image
             href: deploy-microsoft-365-apps-operating-system-image.md
           - name: Overview of shared computer activation

@@ -46,7 +46,7 @@ With Current Channel, you’ll be getting the accessibility features as soon as 
 
 ## Check that connected experiences for accessibility are turned on for your users
 
-Microsoft 365 Apps provides [connected experiences](.../privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Office apps. This includes capabilities that improve accessibility to create and consume Office content.
+Microsoft 365 Apps provides [connected experiences](../privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Office apps. This includes capabilities that improve accessibility to create and consume Office content.
 
 Here are some examples of connected experiences for accessibility.
 

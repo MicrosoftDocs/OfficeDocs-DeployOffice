@@ -75,7 +75,7 @@ Microsoft 365 (and Office 365) provides subscription plans that include access t
 
 Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
 
-Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../licensing-activation/device-based-licensing.md) or [shared computer activation](../licensing-activation/overview-office-deployment-tool.md) for devices shared by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
+Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../licensing-activation/device-based-licensing.md) or [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices shared by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
 
 There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
@@ -154,7 +154,7 @@ If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to 
 
 We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
 
-For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md).
+For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
 
 ## Upgrade to newer versions of Project and Visio
 

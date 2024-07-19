@@ -30,7 +30,7 @@ Volume licensed versions of Office 2019 are available for enterprise admins to d
 
 These Office products now use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
-For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What's changed in Office 2019?
 

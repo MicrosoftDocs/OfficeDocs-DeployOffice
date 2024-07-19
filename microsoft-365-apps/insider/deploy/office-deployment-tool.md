@@ -95,7 +95,7 @@ Microsoft 365 Apps is the version that comes with certain business plans, such a
 
 ### What other configuration options are available for deploying Microsoft 365 Apps?
 
-For more information about other settings that you can specify in the configuration.xml file, see [Configuration options for the Office Deployment Tool](../../deploy/office-deployment-tool-configuration-options).
+For more information about other settings that you can specify in the configuration.xml file, see [Configuration options for the Office Deployment Tool](../../deploy/office-deployment-tool-configuration-options.md).
 
 For example, how to install other languages or how to install Project or Visio, if you have a subscription for those products.
 
@@ -123,4 +123,4 @@ Yes, you can use the web-based interface of the Office Customization Tool to cre
 
 ## Related articles
 - [Overview of the Office Deployment Tool](../../deploy/overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](../../deploy/office-deployment-tool-configuration-options)
+- [Configuration options for the Office Deployment Tool](../../deploy/office-deployment-tool-configuration-options.md)

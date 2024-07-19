@@ -86,7 +86,7 @@ Here's a sample configuration.xml file to use with the Office Deployment Tool to
 Here's a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 > [!NOTE]
-> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
+> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 ```xml
 <Configuration> 

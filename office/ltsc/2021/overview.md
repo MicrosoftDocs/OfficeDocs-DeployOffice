@@ -33,7 +33,7 @@ These Office products use Click-to-Run, instead of Windows Installer (MSI), as t
 
 Office LTSC 2021 is supported on devices running Windows 10 or Windows 11. For more information, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-For devices running macOS, Office LTSC Standard for Mac 2021 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For devices running macOS, Office LTSC Standard for Mac 2021 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What changed in Office LTSC 2021?
 
@@ -56,7 +56,7 @@ These policy settings are located under User Configuration\Policies\Administrati
 > [!NOTE]
 > The “Allow the use of additional optional connected experiences in Office" policy setting is also available for Office LTSC 2021. But that's not considered a change because that policy setting is already available for volume licensed versions of Office 2019.
 
-For more information, see [Use policy settings to manage privacy controls](../privacy/manage-privacy-controls.md). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
+For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
 
 #### Support duration
 

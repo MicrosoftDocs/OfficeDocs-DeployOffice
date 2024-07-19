@@ -92,7 +92,7 @@ Create a Microsoft 365 Apps application using the steps below.
 
 ## Step 4: Configure updates
 
-Creating the application using the Office 365 Installer will automatically configure Microsoft 365 Apps to listen to the Configuration Manager for update instructions. Review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md) to start offering updates through Configuration Manager. You can use the collection that catches all Microsoft 365 Apps installation you've created in step 2.
+Creating the application using the Office 365 Installer will automatically configure Microsoft 365 Apps to listen to the Configuration Manager for update instructions. Review and implement the steps outlined in [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md) to start offering updates through Configuration Manager. You can use the collection that catches all Microsoft 365 Apps installation you've created in step 2.
 
 ## Step 5: Monitor progress
 

@@ -245,7 +245,7 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](.
 Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
-We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](../best-practices/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](.../updates/choose-how-to-deliver-updates.md).
+We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](../best-practices/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](../updates/choose-how-to-deliver-updates.md).
 
 ### Viewer mode
 Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](../licensing-activation/overview-viewer-mode.md).

@@ -51,7 +51,7 @@ Learn about the different update channels available for Microsoft 365 Apps and h
 
 - [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md)
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 
 - [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md) 
 
@@ -70,6 +70,6 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
 
-- [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
+- [Overview of licensing and activation in Microsoft 365 Apps](../licensing-activation/overview-licensing-activation-microsoft-365-apps.md)
 
 - [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md)

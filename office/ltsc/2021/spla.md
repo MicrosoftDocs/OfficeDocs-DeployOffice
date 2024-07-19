@@ -51,6 +51,6 @@ To deploy Office LTSC for Mac 2021, do the following steps:
 
 4. Run the VL Serializer package on each Mac where Office is installed.
 
-For more information, see [Overview of the Volume License (VL) Serializer](../mac/volume-license-serializer.md).
+For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer).
 
-For more information about how to deploy and manage Office LTSC on devices running macOS, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For more information about how to deploy and manage Office LTSC on devices running macOS, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).

@@ -94,7 +94,7 @@ If you use the Office Deployment Tool to install or configure Microsoft 365 Apps
 
 > [!TIP]
 > - Be sure you're always using the most current version of the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) available on the Microsoft Download Center so that you have the latest features and bug fixes.
-> - Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md). There is a choice to configure device-based licensing under the **Licensing and activation** section of the OCT.
+> - Instead of using a text editor to create your configuration.xml, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md). There is a choice to configure device-based licensing under the **Licensing and activation** section of the OCT.
 
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:

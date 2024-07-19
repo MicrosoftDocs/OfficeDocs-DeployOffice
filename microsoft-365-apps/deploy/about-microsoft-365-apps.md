@@ -53,7 +53,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - By default, Microsoft 365 Apps installs as one package. This means that all Office applications are installed on the user's computer. But, you can configure the deployment to [exclude or remove](overview-office-deployment-tool.md#BKMK_excludeorremove) certain Office applications, such as Access, from client computers.
     
-- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
+- Because Microsoft 365 Apps uses a different installation technology, called Click-to-Run, there's a different way to apply software updates, such as security updates. By default, Microsoft 365 Apps is configured to automatically install updates from the Office Content Delivery Network (CDN) on the internet. But, you can configure Microsoft 365 Apps to install updates from a location within your own network or you can [manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
     
 - Microsoft 365 Apps also provides the ability to control how often users receive feature updates. For example, users can get new features to Microsoft 365 Apps as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday). For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
     
@@ -64,7 +64,7 @@ The most significant difference is that Microsoft 365 Apps is updated regularly,
 
 - Users can install Microsoft 365 Apps on up to five different computers with a single Office 365 license. For example, a user can have Microsoft 365 Apps installed on a computer in the office, on a laptop to use when traveling, and on a home computer. Users can also install on up to five tablets and five phones.
     
-- Microsoft 365 Apps is offered as a subscription. If you cancel your subscription, Microsoft 365 Apps goes into reduced functionality mode. In reduced functionality mode, users can open and view existing Office files, but users can't use most of the other features of Microsoft 365 Apps. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
+- Microsoft 365 Apps is offered as a subscription. If you cancel your subscription, Microsoft 365 Apps goes into reduced functionality mode. In reduced functionality mode, users can open and view existing Office files, but users can't use most of the other features of Microsoft 365 Apps. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](../licensing-activation/overview-licensing-activation-microsoft-365-apps.md).
     
 - To use Microsoft 365 Apps, a user must have an Office 365 (or Microsoft 365) account and have been assigned a license. If the user's license or account is removed, the user's installations of Microsoft 365 Apps go into reduced functionality mode.
     

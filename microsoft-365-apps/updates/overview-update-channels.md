@@ -228,7 +228,7 @@ The default update channel for Microsoft 365 Apps for enterprise and Microsoft 3
 ### Configure the update channel
 
 #### Office Deployment Tool  
-You can use the [Office Deployment Tool](../deploy/overview-office-deployment-tool.md) and specify the Channel attribute in your configuration file. There's a Channel attribute available in the Add element and in the Updates element. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options).
+You can use the [Office Deployment Tool](../deploy/overview-office-deployment-tool.md) and specify the Channel attribute in your configuration file. There's a Channel attribute available in the Add element and in the Updates element. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
 
 #### Group Policy  
 You can [download](https://www.microsoft.com/download/details.aspx?id=49030) the Administrative Template files (ADMX/ADML) and enable the Update Channel policy setting. When you enable the policy setting, you can select the appropriate update channel from a drop-down list. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates.

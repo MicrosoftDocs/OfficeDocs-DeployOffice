@@ -86,7 +86,7 @@ Office LTSC 2024 for Mac preview can't be installed side-by-side on the same dev
 To go back to using Office 2021 for Mac on the device, perform the following steps:
 1. Close all Office apps.
 2. Delete /Library/Preferences/com.microsoft.office.licensingV2.plist
-3. Run the VL Serializer for Office 2021 for Mac Standard. For more information, see [Overview of the Volume License (VL) Serializer](../mac/volume-license-serializer.md).
+3. Run the VL Serializer for Office 2021 for Mac Standard. For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer).
 
 ## Getting support and providing feedback
 

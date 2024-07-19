@@ -40,7 +40,7 @@ Here are two ways that you can check whether shared computer activation is enabl
   
 - Open any Office program, such as Word. Go to **File** > **Account** > **About Word** (or whatever the name of the app is). On the second line from the top, underneath the MSO version number, you should see **Shared Computer Activation**, instead of a Product ID, like in the following screenshot.
     
-     :::image type="content" source="../../media/troubleshoot-shared-computer-activation/shared-computer-activation.png" alt-text="Screenshot of Shared Computer Activation information in the About Microsoft Word section.":::
+     :::image type="content" source="../media/troubleshoot-shared-computer-activation/shared-computer-activation.png" alt-text="Screenshot of Shared Computer Activation information in the About Microsoft Word section.":::
   
 - Use Registry Editor, and go to **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration**. There should be a value for SharedComputerLicensing with a setting of 1.
     
@@ -54,7 +54,7 @@ On the shared computer, after you open any Office program, go to the following f
   
 If activation succeeded, there are some text files in the folder, like in the following screenshot. Don't make any changes to these files.
   
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/office-licensing-files.png" alt-text="Screenshot of file path showing Office licensing files in the local AppData folder.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/office-licensing-files.png" alt-text="Screenshot of file path showing Office licensing files in the local AppData folder.":::
   
 If you configure the licensing token to roam, these text files appear in the folder that you specified.
   
@@ -71,7 +71,7 @@ If you're having problems using shared computer activation, you might get one of
 
 This error means that you don't have an Office 365 (or Microsoft 365) plan that includes Microsoft 365 Apps and that supports shared computer activation. Therefore, you can't use shared computer activation.
   
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/activation-error-0x40e.png" alt-text="Screenshot of activation error message indicating the products found can't be used to activate Office in shared computer scenarios.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/activation-error-0x40e.png" alt-text="Screenshot of activation error message indicating the products found can't be used to activate Office in shared computer scenarios.":::
   
 <a name="Unlicensed"> </a>
 
@@ -87,7 +87,7 @@ You can try these steps to fix this problem:
     
 - Check that there's connectivity between the shared computer and the internet.
     
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/unlicensed-product-notification.png" alt-text="Unlicensed product notification with instructions to close and restart Word, then sign in with an Office 365 account.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/unlicensed-product-notification.png" alt-text="Unlicensed product notification with instructions to close and restart Word, then sign in with an Office 365 account.":::
   
 <a name="Verify"> </a>
 
@@ -95,7 +95,7 @@ You can try these steps to fix this problem:
 
 This error means that Office has a problem with the user's licensing token on the shared computer. The user should make sure to sign in to Office with their user account for Office 365 so that Office can obtain a new licensing token from the Office Licensing Service on the internet.
   
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/license-verification-error.png" alt-text="Screenshot of error message indicating that the license can't be verified, with error code 0x8004005.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/license-verification-error.png" alt-text="Screenshot of error message indicating that the license can't be verified, with error code 0x8004005.":::
   
 <a name="Expires"> </a>
 
@@ -105,7 +105,7 @@ This error means that Office tried to renew the licensing token automatically, b
   
 The licensing token is valid until the date listed in the error message. The user can continue to use Office apps to create, edit, and print documents. The user can choose **Renew** to try to renew the license before the license token expires.
   
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/product-notice.png" alt-text="Screenshot of product notice indicating shared computer license is expiring and needs renewal.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/product-notice.png" alt-text="Screenshot of product notice indicating shared computer license is expiring and needs renewal.":::
   
 <a name="Used"> </a>
 
@@ -113,10 +113,10 @@ The licensing token is valid until the date listed in the error message. The use
 
 Microsoft places a limit on the number of shared computers that a user can activate Office on in a given time period. This error means that the user exceeded that limit.
   
-:::image type="content" source="../../media/troubleshoot-shared-computer-activation/activation-error-0x420.png" alt-text="Screenshot of activation error message for Office 365 account with error code 0x420.":::
+:::image type="content" source="../media/troubleshoot-shared-computer-activation/activation-error-0x420.png" alt-text="Screenshot of activation error message for Office 365 account with error code 0x420.":::
 
   
 ## Related articles
 
 - [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
-- [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+- [Deploy Microsoft 365 Apps by using Remote Desktop Services](../deploy/deploy-microsoft-365-apps-remote-desktop-services.md)

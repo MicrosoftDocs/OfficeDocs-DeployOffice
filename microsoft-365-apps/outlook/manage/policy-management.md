@@ -122,7 +122,7 @@ New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-us
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 
 ## Disable Contact Support in the new Outlook for Windows
-Disable contact support is configured via [Cloud Policy](../../admincenter/overview-cloud-policy.md) for a Microsoft 365 organization from the [Microsoft 365 Apps admin center](https://config.office.com), specifically on the [Office Policies](https://config.office.com/officeSettings/officePolicies) page.
+Disable contact support is configured via [Cloud Policy](../admincenter/overview-cloud-policy.md) for a Microsoft 365 organization from the [Microsoft 365 Apps admin center](https://config.office.com), specifically on the [Office Policies](https://config.office.com/officeSettings/officePolicies) page.
 
 :::image type="content" source="../manage/media/policy-management/policy-configure-setting.png" alt-text="Screenshot of the Configure Settings page in the Microsoft 365 Apps admin center. It shows the policy management process with steps for Basics, Scope, Policies, and Review and publish. The Policies section lists five policies related to the new Outlook, including their platforms, applications, and status, all marked as Not configured." lightbox="../manage/media/policy-management/policy-configure-setting-lb.png":::
 

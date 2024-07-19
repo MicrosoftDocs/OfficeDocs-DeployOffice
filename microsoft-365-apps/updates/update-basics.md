@@ -72,9 +72,9 @@ The following table shows the relevant Office Deployment Tool attributes and Gro
 
 |Setting  |Office Deployment Tool  |Group Policy <sup>[1]</sup>   |
 |---------|---------|---------|
-|Check for updates automatically <sup>[2]</sup>  | [Enabled attribute](../deploy/office-deployment-tool-configuration-options#enabled-attribute-part-of-updates-element) |Enable Automatic Updates|
-|Get updates directly from the internet     | [UpdatePath attribute](../deploy/office-deployment-tool-configuration-options#updatepath-attribute-part-of-updates-element) | Update Path        |
-|Set a deadline   | [Deadline attribute](../deploy/office-deployment-tool-configuration-options#deadline-attribute-part-of-updates-element)  | Update Deadline         |
+|Check for updates automatically <sup>[2]</sup>  | [Enabled attribute](../deploy/office-deployment-tool-configuration-options.md#enabled-attribute-part-of-updates-element) |Enable Automatic Updates|
+|Get updates directly from the internet     | [UpdatePath attribute](../deploy/office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) | Update Path        |
+|Set a deadline   | [Deadline attribute](../deploy/office-deployment-tool-configuration-options.md#deadline-attribute-part-of-updates-element)  | Update Deadline         |
 
 > [!NOTE]
 > <sup>[1]</sup> All these policies can be found under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool.

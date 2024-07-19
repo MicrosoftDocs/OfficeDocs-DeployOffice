@@ -38,8 +38,8 @@ Items:
   - name: Office 2019 for Mac
     items:
     - name: Deployment guide
-      href: ../mac/deployment-guide-for-office-for-mac.md?toc=/office/2019/toc.json
+      href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/2019/toc.json
     - name: Deployment options
-      href: ../mac/deployment-options-for-office-for-mac.md?toc=/office/2019/toc.json
+      href: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/2019/toc.json
     - name: Volume License (VL) Serializer
-      href: ../mac/volume-license-serializer.md?toc=/office/2019/toc.json
+      href: /microsoft-365-apps/mac/volume-license-serializer?toc=/office/2019/toc.json

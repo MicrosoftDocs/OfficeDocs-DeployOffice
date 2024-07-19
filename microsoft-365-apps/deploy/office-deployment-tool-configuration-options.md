@@ -217,7 +217,7 @@ Optional. Defaults to False if not specified.
 
 If set to True, a COM object gets registered which is required for allowing update management solutions (for example, Microsoft Configuration Manager) to manage updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
-For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
+For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 Allowed values: 
 
