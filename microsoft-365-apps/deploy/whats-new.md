@@ -31,7 +31,7 @@ The Microsoft 365 Apps Deployment Insiders team at Microsoft is creating videos 
 
 ### Office Insider program renamed to Microsoft 365 Insider
 
-The Office Insider program was renamed to Microsoft 365 Insider on January 18, 2023. The program offers organizations an opportunity to evaluate new features for Microsoft 365 Apps before general release, by using Beta Channel and Current Channel (Preview). For more information, go to [Microsoft 365 Insider (for business)](insider/index.yml).
+The Office Insider program was renamed to Microsoft 365 Insider on January 18, 2023. The program offers organizations an opportunity to evaluate new features for Microsoft 365 Apps before general release, by using Beta Channel and Current Channel (Preview). For more information, go to [Microsoft 365 Insider (for business)](../insider/index.yml).
 
 ### Blocking internet macros by default in Microsoft 365 Apps available in Semi-Annual Enterprise Channel
 
@@ -109,7 +109,7 @@ The **Software updates (Preview)** page in the Microsoft 365 admin center displa
 > [!NOTE]
 > Office Insider was renamed to Microsoft 365 Insider on January 18, 2023.
 
-The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to [Office Insider Program for Business](insider/index.yml).
+The Office Insider Program for Business offers organizations an opportunity to evaluate new Office subscription features before general release, by using Beta Channel and Current Channel (Preview). As the admin, you can deploy Office Insider for your users. Or, you can allow users to select which Office Insider channel they want to use. Different deployment options are available, for Windows and Mac devices. For more information, go to [Office Insider Program for Business](../insider/index.yml).
 
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
@@ -196,11 +196,11 @@ Microsoft 365 Apps is starting to provide new or improved features that rely on 
 
 ## February 2021
 
-[Extended offline access](overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
+[Extended offline access](../licensing-activation/overview-extended-offline-access.md) enables devices running Microsoft 365 Apps for enterprise to stay activated for up to six months without the need to connect to the internet to validate the license and install updates. Extended offline access is not available as a license for all customers. To find out about eligibility for your organization, contact your Microsoft account representative.
 
 ## January 2021
 
-[Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](overview-unattended.md) covers how to enable RPA for Microsoft 365 Apps, including licensing requirements.
+[Overview of the unattended robotic process automation with Microsoft 365 Apps for enterprise](../licensing-activation/overview-unattended.md) covers how to enable RPA for Microsoft 365 Apps, including licensing requirements.
 
 ## November 2020
 
@@ -248,7 +248,7 @@ Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, st
 We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](updates/choose-how-to-deliver-updates.md).
 
 ### Viewer mode
-Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](overview-viewer-mode.md).
+Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](../licensing-activation/overview-viewer-mode).
 
 ## March 2020
 

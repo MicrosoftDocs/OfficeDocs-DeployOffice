@@ -131,7 +131,7 @@ If the user doesn't sign in the shared computer for 30 days, the licensing token
     
 :::image type="content" source="media/overview-shared-computer-activation/unlicensed-product.png" alt-text="Word document screen with a red bar indicating the product is unlicensed and most features are turned off.":::
 
-*(For Version 2205 and later)* If [viewer mode](overview-viewer-mode.md) is enabled on the device, then the user is placed in viewer mode instead of reduced functionality mode.
+*(For Version 2205 and later)* If [viewer mode](../licensing-activation/overview-viewer-mode) is enabled on the device, then the user is placed in viewer mode instead of reduced functionality mode.
   
 **Activation limits** Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit.
     

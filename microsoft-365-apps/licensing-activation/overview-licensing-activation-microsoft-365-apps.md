@@ -71,7 +71,7 @@ There are various licensing modes that can be used with a supported version of M
 > Office applications are not specifically designed for large scale unattended usage scenarios. For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
 
 ### Viewer Mode
-[More Information](overview-viewer-mode.md)
+[More Information](../licensing-activation/overview-viewer-mode)
 - This mode can be used when your organization has users that only need view/print capabilities instead of full create or edit capabilities. Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. When Word, Excel, or PowerPoint are opened, users see a banner message underneath the ribbon in their Office apps that informs them that Office is in Viewer Mode.
 - Viewer mod is ideal when the users have an Office for the Web license but not a Microsoft 365 Apps license.
 
