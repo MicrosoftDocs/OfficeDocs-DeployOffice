@@ -12,6 +12,9 @@ description: "Guide for IT admins on how to enable and configure cloud update in
 ms.date: 04/28/2024
 ---
 
+> [!NOTE]
+> Cloud update is in **public preview**
+
 # Enabling and configuring Cloud Update
 A guide for IT admins who want to start using cloud update from the Microsoft 365 Apps admin center to manage updates for Microsoft 365 Apps for business or enterprise
 
