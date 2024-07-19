@@ -62,46 +62,46 @@ items:
       - name: Privacy
         items:
           - name: Overview of privacy controls
-            href: privacy/overview-privacy-controls.md
+            href: /microsoft-365-apps/privacy/overview-privacy-controls.md
           - name: Privacy controls available for Office products
-            href: privacy/products-versions-privacy-controls.md
+            href: /microsoft-365-apps/privacy/products-versions-privacy-controls.md
           - name: Manage privacy controls
             items:
               - name: Windows policy settings
-                href: privacy/manage-privacy-controls.md
+                href: /microsoft-365-apps/privacy/manage-privacy-controls.md
               - name: Mac preferences
-                href: privacy/mac-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/mac-privacy-preferences.md
               - name: iOS preferences
-                href: privacy/ios-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/ios-privacy-preferences.md
               - name: Android policy settings
-                href: privacy/android-privacy-controls.md
+                href: /microsoft-365-apps/privacy/android-privacy-controls.md
               - name: Office for the web policy settings
-                href: privacy/office-web-privacy-controls.md
+                href: /microsoft-365-apps/privacy/office-web-privacy-controls.md
           - name: Diagnostic data
             items:
               - name: Required diagnostic data
-                href: privacy/required-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/required-diagnostic-data.md
               - name: Optional diagnostic data
-                href: privacy/optional-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/optional-diagnostic-data.md
               - name: Using the Diagnostic Data Viewer
                 href: https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855
           - name: Connected experiences
             items:
               - name: Connected experiences
-                href: privacy/connected-experiences.md
+                href: /microsoft-365-apps/privacy/connected-experiences.md
               - name: Connected experiences and your content
-                href: privacy/connected-experiences-content.md
+                href: /microsoft-365-apps/privacy/connected-experiences-content.md
               - name: Optional connected experiences
-                href: privacy/optional-connected-experiences.md
+                href: /microsoft-365-apps/privacy/optional-connected-experiences.md
               - name: Required service data
-                href: privacy/required-service-data.md
+                href: /microsoft-365-apps/privacy/required-service-data.md
           - name: Essential services
-            href: privacy/essential-services.md
+            href: /microsoft-365-apps/privacy/essential-services.md
           - name: In-product recommendations in Office
-            href: privacy/in-product-recommendations.md
+            href: /microsoft-365-apps/privacy/in-product-recommendations.md
 
       - name: Best practices
-        href: fieldnotes/toc.yml
+        href: /microsoft-365-apps/best-practices/toc.yml
 
       - name: Reference
         items:
@@ -159,6 +159,7 @@ items:
       - name: End of support
         items:
           - name: End of support resources
+<<<<<<< Updated upstream
             href: microsoft-365-apps/end-of-support/resources
           - name: Connectivity to Microsoft 365 services
             href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
@@ -166,6 +167,15 @@ items:
             href: end-of-support/windows-server-support.md
           - name: Microsoft 365 Apps migration from Windows Server
             href: end-of-support/windows-server-migration.md
+=======
+            href: /microsoft-365-apps/end-of-support/resources
+          - name: Connectivity to Microsoft 365 services
+            href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
+          - name: Windows Server and Microsoft 365 Apps
+            href: /microsoft-365-apps/end-of-support/windows-server-support
+          - name: Microsoft 365 Apps migration from Windows Server
+            href: /microsoft-365-apps/end-of-support/windows-server-migration
+>>>>>>> Stashed changes
           - name: Windows and Office support matrix (PDF)
             href: https://aka.ms/windows-office-support-matrix
 
