@@ -28,11 +28,11 @@ additionalContent:
         # Card
         - title: Office 2019
           summary: Learn how to deploy and manage Office 2019 - Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.
-          url: /deployoffice/office2019/
+          url: /office/2019/
         # Card
         - title: Office 2016
           summary: Learn about administration tools, application compatibility, volume activation, and language deployment for Office 2016.
-          url: /deployoffice/office2016/
+          url: /office/2016/
         # Card
         - title: Office for Mac
           summary: Find guidance about deploying Office (or Microsoft 365 Apps) to Macs in your organization.
