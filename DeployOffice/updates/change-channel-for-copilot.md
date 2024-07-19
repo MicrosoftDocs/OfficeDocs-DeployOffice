@@ -89,6 +89,9 @@ Otherwise follow these instructions:
 1. Select **Move devices** to initiate the channel change.
 
 > [!NOTE]
+> Channel change is in **public preview**
+
+> [!NOTE]
 > It might take up to 24 hours for the channel change to be completed by the device, assuming devices are online and can connect to the service.
 
 > [!NOTE]
