@@ -24,7 +24,7 @@ additionalContent:
         # Card
         - title: Office LTSC 2021
           summary: Learn how to deploy and manage Office LTSC 2021 - the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
-          url: /deployoffice/ltsc2021/
+          url: /office/ltsc/2021/
         # Card
         - title: Office 2019
           summary: Learn how to deploy and manage Office 2019 - Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement.

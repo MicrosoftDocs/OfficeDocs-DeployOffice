@@ -22,7 +22,7 @@ New Outlook is currently offered as a preview for commercial accounts and is gen
 
 ## Architecture
 
-The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/deployoffice/webview2-install).
+The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/webview2-install).
 
 ## COM add-ins
 
@@ -34,7 +34,7 @@ For more information, see [Migrate from COM add-ins to web add-ins](./get-starte
 
 The new Outlook for Windows is delivered as an MSIX package. Users acquire the package through the Outlook entry in the Microsoft Store app. For custom deployment by system administrators, the package is made available for manual or scripted installation. For more information, see [What is MSIX?](/windows/msix/overview)
 
-In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/DeployOffice/outlook/get-started/deployment-new-outlook).
+In addition to the MSIX packaging, setup.exe is also available. Setup.exe simplifies the deployment matrix since it contains a complete set of the required packages. In general, MSIX requires a separate package for each platform. As such, setup.exe is preferred for deployments. MSIX and Windows Package Manager (winget) options are provided because some tenants already have solutions that use these options. For more information, see [Deployment overview for the new Outlook for Windows](/microsoft-365-apps/outlook/get-started/deployment-new-outlook).
 
 ## Windows integration
 

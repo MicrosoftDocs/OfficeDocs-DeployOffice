@@ -70,7 +70,26 @@
         "robmazz"
       ]
     },
-    "fileMetadata": {},
-    "template": []
+    "fileMetadata": {
+      "recommendations": {
+        "compat/**/*.md": false,
+        "fieldnotes/**/*.md": false,
+        "oct/**/*.md": false,
+        "office2016/**/*.md": false,
+        "other/**/*.md": false,
+        "privacy/**/*.md": false,
+        "security/**/*.md": false,
+        "vlactivation/**/*.md": false
+      },
+      "feedback_product_url": {
+        "insider/**/*.md": "https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider"
+      },
+      "titleSuffix": {
+        "insider/**/*.md": "Microsoft 365 Insider"
+      }
+    },
+    "template": [],
+    "dest": "OfficeDocs-OfficeProPlus",
+    "markdownEngineName": "markdig"
   }
 }
