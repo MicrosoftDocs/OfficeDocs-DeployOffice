@@ -28,6 +28,8 @@ ms.date: 05/20/2024
 > 5. Click Submit.
 >    
 >We will reach out to you with more information.
+>
+> Cloud update is in **public preview**
 
 Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
 
