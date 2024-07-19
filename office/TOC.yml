@@ -159,7 +159,7 @@ items:
       - name: End of support
         items:
           - name: End of support resources
-            href: end-of-support/resources.md
+            href: microsoft-365-apps/end-of-support/resources
           - name: Connectivity to Microsoft 365 services
             href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
           - name: Windows Server and Microsoft 365 Apps

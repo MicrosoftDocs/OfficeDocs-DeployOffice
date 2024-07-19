@@ -216,7 +216,7 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 
 We've published the following new articles to provide information about end of support events related to Office.
 
-- [End of support resources for Office](end-of-support/resources.md)
+- [End of support resources for Office](../end-of-support/resources.md)
 - [Office versions and connectivity to Office 365 services](end-of-support/office-365-services-connectivity.md)
 - [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md)
 - [Windows 8 end of support and Microsoft 365 Apps](end-of-support/windows-8-support.md)
