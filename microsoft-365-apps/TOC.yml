@@ -2,14 +2,14 @@ items:
   - name: Deployment guide for Microsoft 365 Apps
     items:
       - name: Deployment guide
-        href: deployment-guide-microsoft-365-apps.md
+        href: deploy/deployment-guide-microsoft-365-apps.md
       - name: Microsoft FastTrack
         href: https://www.microsoft.com/fasttrack
 
       - name: Get started
         items:
           - name: What's new
-            href: whats-new.md
+            href: 
           - name: About Microsoft 365 Apps
             href: about-microsoft-365-apps.md
           - name: Microsoft 365 Apps admin center
@@ -144,13 +144,13 @@ items:
       - name: Project, Visio, Teams, and OneNote
         items:
           - name: Deploy Project
-            href: deployment-guide-for-project.md
+            href: deploy/deployment-guide-for-project.md
           - name: Deploy Visio
-            href: deployment-guide-for-visio.md
+            href: deploy/deployment-guide-for-visio.md
           - name: Deploy Teams
             href: teams-install.md
           - name: Deploy OneNote
-            href: deployment-guide-onenote.md
+            href: deploy/deployment-guide-onenote.md
           - name: Install volume licensed versions by using the Office Deployment Tool
             href: use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md
           - name: Install different versions of Office, Project, and Visio on the same computer
@@ -170,7 +170,7 @@ items:
             href: https://aka.ms/windows-office-support-matrix
 
       - name: Office for Mac
-        href: mac/deployment-guide-for-office-for-mac.md
+        href: mac/deploy/deployment-guide-for-office-for-mac.md
 
       - name: Microsoft 365 Insider Program for Business
         href: insider/index.yml

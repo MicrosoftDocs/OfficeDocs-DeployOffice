@@ -27,7 +27,7 @@ additionalContent:
         # Card
         - title: Get Started
           summary: Learn how to plan, deploy, and manage Microsoft 365 Apps in your organization.
-          url: deployment-guide-microsoft-365-apps.md
+          url: deploy/deployment-guide-microsoft-365-apps.md
         # Card
         - title: Deploy
           summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, or with Microsoft Configuration Manager.
@@ -43,7 +43,7 @@ additionalContent:
         # Card
         - title: Microsoft 365 Apps for Mac
           summary: Find guidance about deploying Microsoft 365 Apps (or Office) to Macs in your organization.
-          url: mac/deployment-guide-for-office-for-mac.md
+          url: mac/deploy/deployment-guide-for-office-for-mac.md
         # Card
         - title: Microsoft 365 Insider Program for Business
           summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
