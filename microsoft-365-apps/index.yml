@@ -31,7 +31,7 @@ additionalContent:
         # Card
         - title: Deploy
           summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, or with Microsoft Configuration Manager.
-          url: plan-microsoft-365-apps.md
+          url: deploy/plan-microsoft-365-apps.md
         # Card
         - title: Microsoft FastTrack
           summary: Get migration and deployment assistance from experts at Microsoft.
