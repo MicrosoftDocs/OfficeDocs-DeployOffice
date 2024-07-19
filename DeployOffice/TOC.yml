@@ -161,7 +161,7 @@ items:
           - name: End of support resources
             href: end-of-support/resources.md
           - name: Connectivity to Microsoft 365 services
-            href: end-of-support/microsoft-365-services-connectivity.md
+            href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
           - name: Windows Server and Microsoft 365 Apps
             href: end-of-support/windows-server-support.md
           - name: Microsoft 365 Apps migration from Windows Server
