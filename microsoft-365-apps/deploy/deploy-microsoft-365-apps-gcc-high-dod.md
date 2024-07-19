@@ -39,7 +39,7 @@ Outlook for iOS and Android is also available for GCC High or DoD environments. 
 
 We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need additional predictability of when these new Office features are released each month, we recommend Monthly Enterprise Channel. In those cases where you've select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
  
 ## Where to install Microsoft 365 Apps for enterprise from and where to get updates
 
@@ -86,7 +86,7 @@ Here's a sample configuration.xml file to use with the Office Deployment Tool to
 Here's a sample configuration.xml file to use with the Office Deployment Tool to install Microsoft 365 Apps for enterprise on Semi-Annual Enterprise Channel from a shared folder on your local network. Updates to Microsoft 365 Apps for enterprise will also come from a shared folder on your local network.
 
 > [!NOTE]
-> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](updates/manage-microsoft-365-apps-updates-configuration-manager.md).
+> To remove the administrative burden of managing shared folders for updates, we recommend that you configure Microsoft 365 Apps for enterprise to get updates directly from the Office CDN on the internet if possible. If using the Office CDN isn't an option, our next recommendation would be to [use Configuration Manager to manage updates](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 ```xml
 <Configuration> 
@@ -227,7 +227,7 @@ For more information about the GCC High and DoD environments provided by Microso
 For general deployment guidance about Microsoft 365 Apps for enterprise, see the following articles:
 
 - [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)
-- [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 - [Deploy with Configuration Manager (current branch)](deploy-microsoft-365-apps-configuration-manager.md)

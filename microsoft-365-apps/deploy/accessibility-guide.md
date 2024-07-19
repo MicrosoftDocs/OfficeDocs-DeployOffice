@@ -36,17 +36,17 @@ To allow your users to take the most advantage of the accessibility capabilities
 
 Microsoft 365 Apps is updated regularly with new and improved features for the Office apps, such as Word and Excel. These updates can include new and improved accessibility features.
 
-To provide your users with the newest and most up-to-date accessibility features, we recommend using [Current Channel](updates/overview-update-channels.md#current-channel-overview). Current Channel is updated every month with new and improved features, along with the latest security updates and bug fixes.
+To provide your users with the newest and most up-to-date accessibility features, we recommend using [Current Channel](.../updates/overview-update-channels.md#current-channel-overview). Current Channel is updated every month with new and improved features, along with the latest security updates and bug fixes.
 
 With Current Channel, you’ll be getting the accessibility features as soon as they’re ready. To see the features that are released each month, see [Release notes for Current Channel](/officeupdates/current-channel).
 
 > [!NOTE]
-> - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](updates/overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
->- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
+> - If you need additional predictability of when new Office features are released each month, you can choose [Monthly Enterprise Channel](.../updates/overview-update-channels.md#monthly-enterprise-channel-overview), which is updated on the 2nd Tuesday of each month. You’ll still be getting new and improved accessibility features monthly, but a month or two after they’re available in Current Channel.
+>- For information about how to move users to a particular channel, see [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md).
 
 ## Check that connected experiences for accessibility are turned on for your users
 
-Microsoft 365 Apps provides [connected experiences](privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Office apps. This includes capabilities that improve accessibility to create and consume Office content.
+Microsoft 365 Apps provides [connected experiences](.../privacy/connected-experiences.md), which use cloud-based functionality to provide enhanced capabilities when using Office apps. This includes capabilities that improve accessibility to create and consume Office content.
 
 Here are some examples of connected experiences for accessibility.
 
@@ -64,13 +64,13 @@ Here are some examples of connected experiences for accessibility.
 
 We recommend that you check that connected experiences are turned on in your organization. Connected experiences are turned on by default, but we provide admins with policies that allow them to turn off connected experiences.
 
-If connected experiences are turned off by using policies, then connected experiences for accessibility won’t be available to your users. For more information about those policies, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](privacy/overview-privacy-controls.md).
+If connected experiences are turned off by using policies, then connected experiences for accessibility won’t be available to your users. For more information about those policies, see [Overview of privacy controls for Microsoft 365 Apps for enterprise](.../privacy/overview-privacy-controls.md).
 
 ## Increase the use of the Accessibility Checker by having it run automatically for your users
 
 The [Accessibility Checker](https://support.microsoft.com/office/38059c2d-45ef-4830-9797-618f0e96f3ab) identifies possible accessibility issues in Office content and offers recommendations for fixing the issues. Therefore, we recommend that your users run the Accessibility Checker before sending an email message or sharing a document, presentation, or spreadsheet.
 
-To make running the Accessibility Checker easier for your users, you can configure it to run automatically for Word, Excel, and PowerPoint on devices running Windows. To configure, use [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](admin-center/overview-cloud-policy.md) to enable the “Check for accessibility issues while editing” policy. There's a separate policy for each of the three apps.
+To make running the Accessibility Checker easier for your users, you can configure it to run automatically for Word, Excel, and PowerPoint on devices running Windows. To configure, use [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](../admin-center/overview-cloud-policy.md) to enable the “Check for accessibility issues while editing” policy. There's a separate policy for each of the three apps.
 
 There isn’t a policy for Outlook, but Outlook automatically checks for accessibility issues under certain conditions, as listed under **File** > **Options** > **Accessibility**. For example, when you’re composing a message to a large audience or when a recipient has indicated they prefer accessible content.
 

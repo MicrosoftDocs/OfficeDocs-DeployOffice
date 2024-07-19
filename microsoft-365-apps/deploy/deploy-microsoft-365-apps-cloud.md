@@ -31,8 +31,8 @@ If you want to install Microsoft 365 Apps on a single device or small number of 
 
 The steps in this article are based on the following best practices:
 
-- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [cloud update](./admin-center/cloud-update.md).
-- **Lead with Current Channel**: Deploy [Current Channel](updates/overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
+- **Manage updates to Office automatically**, without any administrative overhead. For more information, see [Choose how to manage updates](plan-microsoft-365-apps.md#step-2---choose-how-to-manage-updates). If you want to manage updates for the Microsoft 365 Apps, we recommend using [cloud update](../admin-center/cloud-update.md).
+- **Lead with Current Channel**: Deploy [Current Channel](.../updates/overview-update-channels.md#current-channel-overview) to the majority of devices. This enables users to benefit from the latest features and product improvements as soon as possible. Create a second package for installing [Monthly Enterprise Channel](.../updates/overview-update-channels.md#monthly-enterprise-channel-overview) for users who need more predictability and a fixed update cycle.
 
 You can customize these options to match the requirements for your organization, including deploying additional or different update channels, and deploying Visio and Project. For more information, see [Customize your deployment](#customize-your-deployment).
 
@@ -60,7 +60,7 @@ To deploy Microsoft 365 Apps to the Current Channel group, you use a configurati
  - **Application preferences:** Define any settings you want to enable, including VBA macro notifications, default file locations, and default file formats
 2. When you complete the configuration, click **Export** in the upper right of the page, and then save the file as **configuration-cc.xml** in the **\\\Server\Share\M365** folder.
 
-For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+For more details on how to use the Office Customization Tool, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md). For more information about the configuration options, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
 
 Note that the installation files and updates will come from Current Channel. For more details on what is included in the most recent release, see [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps).
 
@@ -103,7 +103,7 @@ If you want to deploy both the 32-bit and the 64-bit version in your environment
 
 ### Use different update channels
 
-With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
+With Microsoft 365 Apps, you can control how frequently your users receive feature updates. To do so, you choose an update channel for your users. For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
 
 In this article, we're using Current Channel, which provides users with the newest features as soon as they're ready. Also, quality updates and performance improvements are released more frequently to this update channel compared to others. We've created an installation package for Monthly Enterprise Channel for devices that should only receive one update per month.
 
@@ -119,6 +119,6 @@ To deploy Visio and Project with Microsoft 365 Apps, you can include them as par
 
 [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 
-[Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
+[Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md)
 
 [Deployment guide for Microsoft 365 Apps](deployment-guide-microsoft-365-apps.md)

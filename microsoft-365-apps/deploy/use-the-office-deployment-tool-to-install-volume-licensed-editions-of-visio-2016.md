@@ -34,7 +34,7 @@ To begin, [download the most current version](https://go.microsoft.com/fwlink/p/
 |Visio Professional 2016  <br/> |VisioProXVolume  <br/> |69WXN-MBYV6-22PQG-3WGHK-RM6XC  <br/> |
 
 > [!TIP]
-> Instead of using a text editor to create your configuration file, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
+> Instead of using a text editor to create your configuration file, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com). The OCT provides a web-based interface for making your selections and creating your configuration file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
 If you're using the Office Customization Tool or want to specify the update channel manually, you must pick the same update channel as your existing Office installation is already using. For example, if you want to add Project to devices that already have Microsoft 365 Apps installed and configured for Monthly Enterprise Channel, you need to specify the same update channel for Project 2016 in the configuration file.
 

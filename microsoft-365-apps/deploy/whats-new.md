@@ -21,7 +21,7 @@ This article lists new features, tools, and articles for IT Pros who deploy Micr
 
 ### OneNote to start blocking embedded files with dangerous extensions
 
-Starting with Version 2304, OneNote will block users from directly opening an embedded file with a dangerous extension. For more information, see [OneNote blocks embedded files that have dangerous extensions](security/onenote-extension-block.md).
+Starting with Version 2304, OneNote will block users from directly opening an embedded file with a dangerous extension. For more information, see [OneNote blocks embedded files that have dangerous extensions](../security/onenote-extension-block.md).
 
 ### Microsoft 365 Apps videos from the experts
 
@@ -39,11 +39,11 @@ To help improve security in Microsoft 365 Apps, we’re changing the default beh
 
 For more information, see the following information:
 - [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
-- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+- [Macros from the internet will be blocked by default in Office](../security/internet-macros-blocked.md) *(article for admins)*
 
 ### End of support for Microsoft 365 Apps on Windows 8.1
 
-Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on Windows 8.1 is no longer supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
+Support for Windows 8.1 ended on January 10, 2023. Running Microsoft 365 Apps on Windows 8.1 is no longer supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](../end-of-support/windows-81-support.md).
 
 ### No more security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
@@ -60,17 +60,17 @@ The OneDrive sync health dashboard in the Microsoft 365 Apps admin center is gen
 
 To help improve security in Microsoft 365 Apps, we’re changing its default behavior to block sign-in prompts from Basic authentication. With this change, if users try to open files on servers that only use Basic authentication, they won't see any Basic authentication sign-in prompts. Instead, they'll see a message that the file has been blocked because it uses a sign-in method that may be unsecure.
 
-This change will begin rolling out in January 2023, starting with Version 2209. For more information, see [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](security/basic-authentication-prompts-blocked.md).
+This change will begin rolling out in January 2023, starting with Version 2209. For more information, see [Basic authentication sign-in prompts are blocked by default in Microsoft 365 Apps](../security/basic-authentication-prompts-blocked.md).
 
 ### General availability of the "Software updates" page in the Microsoft 365 admin center
 
-The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+The **Software updates** page in the Microsoft 365 admin center is generally available as of November 4, 2022. The page displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](.../updates/software-update-status.md).
 
 ## October 2022
 
 ### Support for Microsoft 365 Apps on Windows Server 2022
 
-We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md#windows-server-2022).
+We've revised our support policy and Microsoft 365 Apps will be supported on Windows Server 2022 until October 2026. For more information, see [Windows Server end of support and Microsoft 365 Apps](../end-of-support/windows-server-support.md#windows-server-2022).
 
 ### Blocking internet macros by default in Office available in more update channels
 
@@ -78,17 +78,17 @@ To help improve security in Office, we’re changing the default behavior of Off
 
 For more information, refer to the following information:
 - [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
-- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+- [Macros from the internet will be blocked by default in Office](../security/internet-macros-blocked.md) *(article for admins)*
 
 ## July 2022
 
 ### Windows 8.1 end of support and Microsoft 365 Apps
 
-Support for Windows 8.1 ends on January 10, 2023. After that date, running Microsoft 365 Apps on Windows 8.1 won't be supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
+Support for Windows 8.1 ends on January 10, 2023. After that date, running Microsoft 365 Apps on Windows 8.1 won't be supported. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](../end-of-support/windows-81-support.md).
 
 ### End of security updates for Microsoft 365 Apps on Windows 7 and Windows Server 2008 R2
 
-Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 will end after January 10, 2023. Keep in mind that running Microsoft 365 Apps on either of these operating systems isn't supported. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md) and [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md).
+Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Windows Server 2008 R2 will end after January 10, 2023. Keep in mind that running Microsoft 365 Apps on either of these operating systems isn't supported. For more information, see [Windows 7 end of support and Microsoft 365 Apps](../end-of-support/windows-7-support.md) and [Windows Server end of support and Microsoft 365 Apps](../end-of-support/windows-server-support.md).
 
 ## June 2022
 
@@ -96,13 +96,13 @@ Security updates for Version 2002 of Microsoft 365 Apps on Windows 7 and on Wind
 
 Microsoft has released the recommended security configuration baseline settings for Version 2206 of Microsoft 365 Apps for enterprise. For more information, see the following resources:
 - [Security baseline for Microsoft 365 Apps for enterprise v2206](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714)  *(blog post)*
-- [Security baseline for Microsoft 365 Apps for enterprise](security/security-baseline.md)  *(overview article)*
+- [Security baseline for Microsoft 365 Apps for enterprise](../security/security-baseline.md)  *(overview article)*
 
 ### "Software updates (Preview)" page in the Microsoft 365 admin center
 
 *(This feature is generally available as of November 4, 2022.)*
 
-The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](updates/software-update-status.md).
+The **Software updates (Preview)** page in the Microsoft 365 admin center displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Ensuring security updates are installed is important because they help protect you from known vulnerabilities. The **Software updates (Preview)** page allows you to easily determine the overall update compliance for your devices. For more information, see [View software update status for Microsoft 365 Apps installations](.../updates/software-update-status.md).
 
 ### Office Insider Program for Business documentation
 
@@ -113,7 +113,7 @@ The Office Insider Program for Business offers organizations an opportunity to e
 
 ### Recommendations for moving Microsoft 365 Apps off Windows Server 2019 and Windows Server 2016
 
-Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](end-of-support/windows-server-migration.md).
+Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025. If you've deployed Microsoft 365 Apps to Windows Server 2019 or Windows Server 2016, you'll need to migrate to another hosting solution before that support ends. For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](../end-of-support/windows-server-migration.md).
 
 ## May 2022
 
@@ -124,9 +124,9 @@ Looking for recommendations and resources to help make your Microsoft 365 enviro
 ### Servicing profile: rollout waves (preview)
 
 *(This feature is generally available as of June 16, 2022.)*
-*(This feature has been replaced by [cloud update](./admin-center/cloud-update.md))*
+*(This feature has been replaced by [cloud update](../admin-center/cloud-update.md))*
 
-If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](admin-center/servicing-profile.md#create-rollout-waves).
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](../admin-center/servicing-profile.md#create-rollout-waves).
 
 ## February 2022
 
@@ -136,16 +136,16 @@ To help improve security in Office, we’re changing the default behavior of Off
 
 For more information, refer to the following information:
 - [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
-- [Macros from the internet will be blocked by default in Office](security/internet-macros-blocked.md) *(article for admins)*
+- [Macros from the internet will be blocked by default in Office](../security/internet-macros-blocked.md) *(article for admins)*
 
 ## January 2022
 
 ### Servicing profile: roll back to a previous version (preview)
 
 *(This feature is generally available as of June 16, 2022.)*
-*(This feature has been replaced by [cloud update](./admin-center/cloud-update.md))*
+*(This feature has been replaced by [cloud update](../admin-center/cloud-update.md))*
 
-If you're using a [servicing profile](admin-center/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](admin-center/servicing-profile.md#roll-back-to-a-previous-version).
+If you're using a [servicing profile](../admin-center/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](../admin-center/servicing-profile.md#roll-back-to-a-previous-version).
 
 ## December 2021
 
@@ -156,11 +156,11 @@ Microsoft has released the recommended security configuration baseline settings 
 ### Retirement of Security Policy Advisor
 
 > [!NOTE]
-> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](admin-center/overview-office-cloud-policy-service.md) and you can manage them there.  
+> Security Policy Advisor has been retired and is no longer available in the Microsoft 365 Apps admin center, as of January 28, 2022. If you had configured security policies, they've been migrated to the [Office cloud policy service](../admin-center/overview-office-cloud-policy-service.md) and you can manage them there.  
 
 We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 
-If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](admin-center/migrate-security-policies-from-spa-to-ocps.md).
+If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](../admin-center/migrate-security-policies-from-spa-to-ocps.md).
 
 ## October 2021
 
@@ -176,7 +176,7 @@ When a Microsoft 365 user experiences poor performance using any of the core Off
 
 We've published a new "best practices from the field" article that will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
 
-For more information, see [Performance recommendations for Microsoft 365 Apps on Windows 10](fieldnotes/performance-recommendations.md).
+For more information, see [Performance recommendations for Microsoft 365 Apps on Windows 10](../best-practices/performance-recommendations.md).
 
 ## September 2021
 
@@ -204,11 +204,11 @@ Microsoft 365 Apps is starting to provide new or improved features that rely on 
 
 ## November 2020
 
-[Learn from Microsoft experts](fieldnotes/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
+[Learn from Microsoft experts](../best-practices/roadmap-to-modern-management.md) how they've been working with customers to implement the new admin capabilities for monitoring, managing, and updating the installation of Microsoft 365 Apps.
 
 ## October 2020
 
-The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](admin-center/overview.md).
+The [Microsoft 365 Apps admin center](https://config.office.com/) provides modern management in the cloud for admins who deploy and manage Microsoft 365 Apps in the enterprise. For a list of features and services available in the admin center, including newly released and announced features, see [Overview of the Microsoft 365 Apps admin center](../admin-center/overview.md).
 
 ## July 2020
 
@@ -217,9 +217,9 @@ The [Microsoft 365 Apps admin center](https://config.office.com/) provides moder
 We've published the following new articles to provide information about end of support events related to Office.
 
 - [End of support resources for Office](../end-of-support/resources.md)
-- [Office versions and connectivity to Office 365 services](end-of-support/office-365-services-connectivity.md)
-- [Windows Server end of support and Microsoft 365 Apps](end-of-support/windows-server-support.md)
-- [Windows 8 end of support and Microsoft 365 Apps](end-of-support/windows-8-support.md)
+- [Office versions and connectivity to Office 365 services](../end-of-support/office-365-services-connectivity.md)
+- [Windows Server end of support and Microsoft 365 Apps](../end-of-support/windows-server-support.md)
+- [Windows 8 end of support and Microsoft 365 Apps](../end-of-support/windows-8-support.md)
 
 You can download and print the [Windows and Office configuration support matrix](https://aka.ms/windows-office-support-matrix) to use as a reference.
 
@@ -237,7 +237,7 @@ A new update channel for Microsoft 365 Apps is now available: Monthly Enterprise
 
 You can deploy Monthly Enterprise Channel just like you would any other update channel. For example, by using the Office Deployment Tool, Group Policy, or Microsoft Configuration Manager.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md).
 
 ## April 2020
 
@@ -245,36 +245,36 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](u
 Office 365 ProPlus has been renamed to **Microsoft 365 Apps for enterprise**, starting with Version 2004. In our documentation, we'll usually just refer to it as Microsoft 365 Apps.
 
 ### Best practices articles
-We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](fieldnotes/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](updates/choose-how-to-deliver-updates.md).
+We've published two new best practice articles from the field: [Choose how to install Microsoft 365 Apps](../best-practices/install-options.md) and [Choose how to deliver updates for Microsoft 365 Apps](.../updates/choose-how-to-deliver-updates.md).
 
 ### Viewer mode
 Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. To use viewer mode, you must have version 1902 of Microsoft 365 Apps or later. To enable viewer mode, your organization must have an Office 365 or Microsoft 365 license subscription. For more information, see [Overview of viewer mode](../licensing-activation/overview-viewer-mode).
 
 ## March 2020
 
-We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Microsoft 365 Apps for enterprise](fieldnotes/build-dynamic-lean-universal-packages.md).
+We're starting to publish best practice articles from Microsoft experts in the field who work with enterprise customers to deploy Office. The first article is now live: [Build dynamic, lean, universal packages for Microsoft 365 Apps for enterprise](../best-practices/build-dynamic-lean-universal-packages.md).
 
 ## November 2019
 
-After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
+After deploying Microsoft 365 Apps, you can change the update channel for a device by using Group Policy or the Office Deployment Tool (ODT). For example, you can move a device from Semi-Annual Enterprise Channel to Monthly Enterprise Channel. We've published a new article that covers how to change the update channel. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md).
 
 ## October 2019
 
 ### Privacy controls for Office on iOS devices
 
-Starting with Version 2.30 of the Office apps for iOS, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](privacy/ios-privacy-preferences.md).
+Starting with Version 2.30 of the Office apps for iOS, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](.../privacy/ios-privacy-preferences.md).
 
 ## September 2019
 
 ### Windows 7 end of support and Microsoft 365 Apps
 ***Support for Windows 7 ended on January 14, 2020.*** Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to [Windows 10](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1#office-ContentAreaHeadingTemplate-s9f0ou1).
 
-Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md).
+Even though Windows 7 is longer supported, we've decided to continue to provide you with security updates for Microsoft 365 Apps for the next three years, until January 2023. For more information, see [Windows 7 end of support and Microsoft 365 Apps](../end-of-support/windows-7-support.md).
 
 ### Delivery Optimization and Microsoft 365 Apps
 Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
-Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](./updates/delivery-optimization.md).
+Microsoft 365 Apps on devices running Windows 10 can take advantage of Delivery Optimization during installation and when receiving updates, if certain requirements are met. For more information, see [Delivery Optimization and Microsoft 365 Apps](../updates/delivery-optimization.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the final release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1908. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1908-Sept-2019-FINAL/ba-p/873084).
@@ -282,7 +282,7 @@ Microsoft has announced the final release of the recommended security configurat
 ## August 2019
 
 ### Privacy controls for Office for Mac
-Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office for Mac](privacy/mac-privacy-preferences.md).
+Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office for Mac](.../privacy/mac-privacy-preferences.md).
 
 ## July 2019
 
@@ -290,13 +290,13 @@ Starting with Version 16.28 of Office for Mac, there are new preference settings
 Microsoft Teams will be added to ***existing*** installations of Microsoft 365 Apps, starting with Version 1906 in Current Channel. For more information, see [Deploy Microsoft Teams with Microsoft 365 Apps](teams-install.md).
 
 ### Create and manage your deployment configurations in the cloud
-You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
+You can now use the [Office Customization Tool](https://config.office.com/) to create, save, and manage your deployment configurations in the cloud. When you run the Office Deployment Tool, you can reference these configurations directly. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
 ### Security baseline for Microsoft 365 Apps
 Microsoft has announced the *draft* release of the recommended security configuration baseline settings for Microsoft 365 Apps, version 1907. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-for-Office-365-ProPlus-v1907-July-2019-DRAFT/ba-p/771308).
 
 ### Set a deadline for updates from Microsoft AutoUpdate (MAU)
-Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user's device. For more information, see [Set a deadline for updates from Microsoft AutoUpdate](mac/mau-deadline.md).
+Starting with version 4.13 of Microsoft AutoUpdate (MAU), you can set a deadline for when updates are required to be installed on a user's device. For more information, see [Set a deadline for updates from Microsoft AutoUpdate](../mac/mau-deadline.md).
 
 ## June 2019
 
@@ -313,12 +313,12 @@ For more information, see [Change a Microsoft 365 Apps installation from 32-bit 
 ### General availability of Office cloud policy service
 The Office cloud policy service is now generally available.  It's a cloud-based service that enables you to enforce policy preferences for Microsoft 365 Apps on a user's device, even if the device isn't domain joined or otherwise managed. The policy preferences roam to whichever device the user signs into and uses Microsoft 365 Apps.
 
-For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](admin-center/overview-office-cloud-policy-service.md).
+For more information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](../admin-center/overview-office-cloud-policy-service.md).
 
 ### Privacy controls for Microsoft 365 Apps
 Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Microsoft 365 Apps.
 
-Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](privacy/overview-privacy-controls.md).
+Starting with Version 1904, there are new, updated, and improved privacy controls for diagnostic data and connected experiences. For more information, see [Overview of privacy controls for Microsoft 365 Apps](.../privacy/overview-privacy-controls.md).
 
 ## March 2019
 Language deployment for Microsoft 365 Apps continues to improve. For best practices on using the Office Content Delivery Network (CDN) as a backup, matching languages to your operating system or existing installation of Office, and deploying only language packs or proofing tools, see [Overview of deploying languages for Microsoft 365 Apps](overview-deploying-languages-microsoft-365-apps.md).
@@ -333,14 +333,14 @@ A public preview is now available for the Office cloud policy service, which is 
 
 For more information, see the following resources:
  - [Announcing the new cloud-based policy management service for Office 365 ProPlus](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-the-new-cloud-based-policy-management-service-for/ba-p/310405)
- - [Overview of the Office cloud policy service](admin-center/overview-office-cloud-policy-service.md)
+ - [Overview of the Office cloud policy service](../admin-center/overview-office-cloud-policy-service.md)
 
 ### Office for Mac available in the Mac App Store
-Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](mac/deploy-mac-app-store.md).
+Office apps, such as Word and Outlook, are now available from the Mac App Store. Most require an Office 365 (or Microsoft 365) subscription to activate. You can use a supported enterprise mobility management (EMM) tool to deploy these apps to your users. For more information, see [Deploy Office for Mac from the Mac App Store](../mac/deploy-mac-app-store.md).
 
 ## October 2018
 
-The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
+The [Office Customization Tool](https://config.office.com/) is now generally available. The OCT makes it easy to customize your deployment of Microsoft 365 Apps and other Click-to-Run Office products. Instead of building the configuration files in a text editor, you can now use a web-based interface. Go directly to the [tool](https://config.office.com/) or read more about it here: [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
 When installing language packs, you can save network bandwidth by installing only proofing tools. For more information, see [Deploy proofing tools](overview-deploying-languages-microsoft-365-apps.md#deploy-proofing-tools) and [Languages, culture codes, and companion proofing languages](overview-deploying-languages-microsoft-365-apps.md#languages-culture-codes-and-companion-proofing-languages).
 

@@ -15,7 +15,7 @@ ms.date: 04/19/2024
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
 
-If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](overview-shared-computer-activation.md) to do the installation.
+If you use Remote Desktop Services (RDS) to provide shared computers to users in your organization, you can install Microsoft 365 Apps on those computers. But, you have to use the Office Deployment Tool and enable [shared computer activation](../licensing-activation/overview-shared-computer-activation.md) to do the installation.
 
 The following are two common RDS scenarios:
 
@@ -49,7 +49,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
 > - Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 only until October 2025.
 > - Microsoft 365 Apps (Version 2302 or later) is supported on Windows Server 2022 only until October 2026.
 > - Microsoft 365 Apps isn’t supported on Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.
-> - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](end-of-support/windows-server-migration.md).
+> - For recommendations on client hosting solutions to move to, see [Microsoft 365 Apps migration from Windows Server](../end-of-support/windows-server-migration.md).
 
 In this scenario, you install Microsoft 365 Apps on a computer configured as a Remote Desktop Session Host server, allowing multiple users to connect remotely. Each user can simultaneously run Microsoft 365 programs like Word or Excel. The process is identical for Project and Visio desktop apps.
 
@@ -71,7 +71,7 @@ Here are the basic steps of how to install Microsoft 365 Apps on an RDS server:
    <Property Name="SharedComputerLicensing" Value="1" />
     ````
 
-    You use the SharedComputerLicensing setting to enable [shared computer activation](overview-shared-computer-activation.md), which is required to use Microsoft 365 Apps on a shared computer.
+    You use the SharedComputerLicensing setting to enable [shared computer activation](../licensing-activation/overview-shared-computer-activation.md), which is required to use Microsoft 365 Apps on a shared computer.
 
 4. Use the [Office Deployment Tool](overview-office-deployment-tool.md) and the configuration file to install Microsoft 365 Apps on the RD Session Host server.
 
@@ -108,6 +108,6 @@ After you complete all the RDS configuration steps, users can connect to any of 
 ## Related articles
 <a name="VM"> </a>
 
-- [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
+- [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md)
 - [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
 - [Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds)

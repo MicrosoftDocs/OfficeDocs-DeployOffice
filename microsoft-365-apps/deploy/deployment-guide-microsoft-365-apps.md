@@ -22,9 +22,9 @@ ms.date: 12/12/2023
 
 - [What's new for deploying Microsoft 365 Apps](whats-new.md)
 
-- [Overview of Cloud Policy](admin-center/overview-cloud-policy.md)
+- [Overview of Cloud Policy](../admin-center/overview-cloud-policy.md)
 
-- [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
+- [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md)
 
 - [Assess your environment and requirements for deploying Microsoft 365 Apps](assess-microsoft-365-apps.md)
  
@@ -49,11 +49,11 @@ Learn about your deployment options, how to deploy from a local source, and how 
 
 Learn about the different update channels available for Microsoft 365 Apps and how to use Configuration Manager to manage updates. 
 
-- [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md)
+- [Overview of update channels for Microsoft 365 Apps](.../updates/overview-update-channels.md)
 
-- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md)
+- [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](.../updates/manage-microsoft-365-apps-updates-configuration-manager.md)
 
-- [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md) 
+- [Change the Microsoft 365 Apps update channel for devices in your organization](.../updates/change-update-channels.md) 
 
 - [Release information for updates to Microsoft 365 Apps](/officeupdates/release-notes-microsoft365-apps)
 
@@ -72,4 +72,4 @@ Learn about the Office Deployment Tool (ODT), other deployment options, and acti
 
 - [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)
 
-- [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md)
+- [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md)

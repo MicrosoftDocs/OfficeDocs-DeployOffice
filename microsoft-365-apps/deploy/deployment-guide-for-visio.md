@@ -43,7 +43,7 @@ If you want to have more control over how the subscription version of Visio is d
 
 2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to install the subscription version of Visio.
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
-   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
+   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](../best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
 
 4. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy the subscription version Visio to the users in your organization.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
