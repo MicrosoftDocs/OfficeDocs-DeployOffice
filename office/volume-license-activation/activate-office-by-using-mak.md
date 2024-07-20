@@ -32,7 +32,7 @@ If you're using MAK to activate Office LTSC 2021, you specify the key in the con
 
 ## Activate Office 2019 by using MAK
 
-If you're using MAK to activate volume licensed versions of Office 2019, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office 2019 to the users in your organization. For more information, see [Deploy Office 2019 (for IT Pros)](../office/2019/deploy.md).
+If you're using MAK to activate volume licensed versions of Office 2019, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office 2019 to the users in your organization. For more information, see [Deploy Office 2019 (for IT Pros)](2019/deploy.md).
 
 ## Activate Office 2016 by using MAK
 

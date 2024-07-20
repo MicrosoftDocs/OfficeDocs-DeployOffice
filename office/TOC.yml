@@ -36,17 +36,17 @@ items:
       - name: Manage
         items:
           - name: Overview of update channels
-            href: updates/overview-update-channels.md
+            href: /microsoft-365/updates/overview-update-channels
           - name: Choose how to deliver updates
-            href: updates/choose-how-to-deliver-updates.md
+            href: /microsoft-365/updates/choose-how-to-deliver-updates
           - name: Manage updates with Configuration Manager
-            href: updates/manage-microsoft-365-apps-updates-configuration-manager.md
+            href: /microsoft-365/updates/manage-microsoft-365-apps-updates-configuration-manager
           - name: Change the update channel
-            href: updates/change-update-channels.md
+            href: /microsoft-365/updates/change-update-channels
           - name: Change update channel for Copilot
-            href: updates/change-channel-for-copilot.md
+            href: /microsoft-365/updates/change-channel-for-copilot
           - name: Delivery Optimization
-            href: updates/delivery-optimization.md
+            href: /microsoft-365/updates/delivery-optimization
           - name: Update history
             href: /officeupdates/update-history-microsoft365-apps-by-date
           - name: Release notes
@@ -55,50 +55,50 @@ items:
       - name: Security
         items:
           - name: Internet macros blocked by default
-            href: security/internet-macros-blocked.md
+            href: /microsoft-365-apps/security/internet-macros-blocked
           - name: Security baseline
-            href: security/security-baseline.md
+            href: /microsoft-365-apps/security/security-baseline
 
       - name: Privacy
         items:
           - name: Overview of privacy controls
-            href: privacy/overview-privacy-controls.md
+            href: /microsoft-365-apps/privacy/overview-privacy-controls
           - name: Privacy controls available for Office products
-            href: privacy/products-versions-privacy-controls.md
+            href: /microsoft-365-apps/privacy/products-versions-privacy-controls
           - name: Manage privacy controls
             items:
               - name: Windows policy settings
-                href: privacy/manage-privacy-controls.md
+                href: /microsoft-365-apps/privacy/manage-privacy-controls
               - name: Mac preferences
-                href: privacy/mac-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/mac-privacy-preferences
               - name: iOS preferences
-                href: privacy/ios-privacy-preferences.md
+                href: /microsoft-365-apps/privacy/ios-privacy-preferences
               - name: Android policy settings
-                href: privacy/android-privacy-controls.md
+                href: /microsoft-365-apps/privacy/android-privacy-controls
               - name: Office for the web policy settings
-                href: privacy/office-web-privacy-controls.md
+                href: /microsoft-365-apps/privacy/office-web-privacy-controls
           - name: Diagnostic data
             items:
               - name: Required diagnostic data
-                href: privacy/required-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/required-diagnostic-data
               - name: Optional diagnostic data
-                href: privacy/optional-diagnostic-data.md
+                href: /microsoft-365-apps/privacy/optional-diagnostic-data
               - name: Using the Diagnostic Data Viewer
                 href: https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855
           - name: Connected experiences
             items:
               - name: Connected experiences
-                href: privacy/connected-experiences.md
+                href: /microsoft-365-apps/privacy/connected-experiences
               - name: Connected experiences and your content
-                href: privacy/connected-experiences-content.md
+                href: /microsoft-365-apps/privacy/connected-experiences-content
               - name: Optional connected experiences
-                href: privacy/optional-connected-experiences.md
+                href: /microsoft-365-apps/privacy/optional-connected-experiences
               - name: Required service data
-                href: privacy/required-service-data.md
+                href: /microsoft-365-apps/privacy/required-service-data
           - name: Essential services
-            href: privacy/essential-services.md
+            href: /microsoft-365-apps/privacy/essential-services
           - name: In-product recommendations in Office
-            href: privacy/in-product-recommendations.md
+            href: /microsoft-365-apps/privacy/in-product-recommendations
 
       - name: Best practices
         href: fieldnotes/toc.yml
@@ -170,10 +170,10 @@ items:
             href: https://aka.ms/windows-office-support-matrix
 
       - name: Office for Mac
-        href: mac/deployment-guide-for-office-for-mac.md
+        href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
 
       - name: Microsoft 365 Insider Program for Business
         href: /microsoft-365-apps/insider
 
       - name: Videos
-        href: videos.md
+        href: /deployoffice/videos

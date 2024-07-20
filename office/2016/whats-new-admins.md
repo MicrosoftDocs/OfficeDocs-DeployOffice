@@ -46,7 +46,7 @@ Microsoft Purview Data Loss Prevention (DLP) is now available in Word, Excel, an
   
 ## Visio 2016 supports Information Rights Management (IRM)
 
-IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](security/protect-sensitive-messages-documents-using-irm.md).
+IRM protection is now available for Visio files, enabling both online and offline protection of Visio diagrams. For more information, see [Protect sensitive messages and documents using Information Rights Management (IRM) in Office 2016](/microsoft-365-apps/security/protect-sensitive-messages-documents-using-irm).
 ## Related articles
 
 - [Changes in Office 2016](changes-windows-desktop.md)

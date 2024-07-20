@@ -90,7 +90,7 @@ There are several ways that you can use the RemoveMSI element when installing vo
 
 RemoveMSI can be used to uninstall 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
 
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md). Even though this article is about Microsoft 365 Apps, most of the information also applies to volume licensed versions of Office 2019.
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though this article is about Microsoft 365 Apps, most of the information also applies to volume licensed versions of Office 2019.
 
 
 
@@ -132,7 +132,7 @@ You can use the ODT and the configuration.xml file to install volume licensed ve
 
 You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuration.xml file along with the appropriate Language IDs. Proofing tools packages, which are a new capability for Office 2019, are smaller than full language packs. Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office 2019, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 
-If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office 2019. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md). Even though this article is about Microsoft 365 Apps, most of the information also applies to volume licensed versions of Office 2019.
+If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office 2019. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though this article is about Microsoft 365 Apps, most of the information also applies to volume licensed versions of Office 2019.
 
 
 ## Related articles

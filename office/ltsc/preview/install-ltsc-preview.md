@@ -59,7 +59,7 @@ All installed products must be either the 32-bit version or the 64-bit version. 
 
 Uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2016.
 
-For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
+For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
 To remove Office products that were installed by using Click-to-Run, such as Office LTSC 2021, you need to use the [Remove element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#remove-element).
 
@@ -85,7 +85,7 @@ Create a configuration.xml file to define the installation settings. Choose whic
 
 For more information about using the Office Deployment Tool and the settings available for your configuration.xml file, see the following articles:
 
-- [Overview of the Office Deployment Tool](../deploy/overview-office-deployment-tool.md)
+- [Overview of the Office Deployment Tool](/microsoft-365-apps/deploy/overview-office-deployment-tool)
 - [Configuration options for the Office Deployment Tool](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options)
 
 Copy the ODT (setup.exe) and your configuration.xml file to the device. From an elevated command prompt, run the following command to install the preview products:

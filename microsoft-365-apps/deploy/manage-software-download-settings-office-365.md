@@ -32,7 +32,7 @@ If you don't want users installing Office themselves, you can [manually deploy O
 
 You can choose how often you want your users to get feature updates for the Office apps installed on devices running Windows. For example, you can provide new features as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](../microsoft-365-apps/admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Office updates for specific users or groups in waves, limiting the effect on your network. In those cases where you selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](/microsoft-365-apps/admin-center/cloud-update). By using cloud update, you automatically deliver monthly Office updates for specific users or groups in waves, limiting the effect on your network. In those cases where you selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 

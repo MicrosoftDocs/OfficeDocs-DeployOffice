@@ -103,7 +103,7 @@ There are several ways that you can use the RemoveMSI element when installing Of
 
 RemoveMSI can be used to uninstall 2007, 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
 
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
 
 To uninstall 2019 versions of Office, Visio, or Project from the device, use the [Remove element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#remove-element). You use the Remove element because 2019 versions of Office, Visio, and Project are installed by using Click-to-Run, not Windows Installer (MSI).
 
@@ -149,7 +149,7 @@ You can use the ODT and the configuration.xml file to deploy Office LTSC 2021, i
 
 You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuration.xml file along with the appropriate Language IDs. Proofing tools packages are smaller than full language packs. Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office LTSC 2021, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 
-If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office LTSC 2021. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
+If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office LTSC 2021. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
 
 ## Microsoft Teams in Office LTSC 2021
 

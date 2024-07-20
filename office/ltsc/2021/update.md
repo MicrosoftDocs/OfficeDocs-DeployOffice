@@ -78,7 +78,7 @@ Office uses the concept of update channels to determine which updates an install
 
 “PerpetualVL2021” is the **only** update channel available for Office LTSC Professional Plus 2021 and Office LTSC Standard 2021. The PerpetualVL2021 update channel is also available for volume licensed versions of Project 2021 and Visio LTSC 2021.
 
-Volume licensed versions of Project 2021 and Visio LTSC 2021 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use other update channels is so that they can be installed on a device along with Microsoft 365 Apps, which supports all those other channels. But even if Project and Visio use these other update channels, they'll still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
+Volume licensed versions of Project 2021 and Visio LTSC 2021 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use other update channels is so that they can be installed on a device along with Microsoft 365 Apps, which supports all those other channels. But even if Project and Visio use these other update channels, they'll still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365/updates/overview-update-channels).
 
 ## Related articles
 

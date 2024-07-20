@@ -28,11 +28,11 @@ Items:
   - name: Project, Visio, and OneNote
     items:
     - name: Deploy Project
-      href: /microsoft-365-apps/deploy/deployment-guide-for-project.md?toc=/office/2019/toc.json#deploy-a-volume-licensed-version-of-project-2019
+      href: /microsoft-365-apps//microsoft-365-apps/deploy/deployment-guide-for-project?toc=/office/2019/toc.json#deploy-a-volume-licensed-version-of-project-2019
     - name: Deploy Visio
-      href: /microsoft-365-apps/deploy/deployment-guide-for-visio.md?toc=/office/2019/toc.json#deploy-a-volume-licensed-version-of-visio-2019
+      href: /microsoft-365-apps//microsoft-365-apps/deploy/deployment-guide-for-visio?toc=/office/2019/toc.json#deploy-a-volume-licensed-version-of-visio-2019
     - name: Deploy OneNote
-      href: /microsoft-365-apps/deploy/deployment-guide-onenote.md?toc=/office/2019/toc.json
+      href: /microsoft-365-apps//microsoft-365-apps/deploy/deployment-guide-onenote?toc=/office/2019/toc.json
     - name: Install different versions of Office, Project, and Visio on the same computer
       href: ../install-different-office-visio-and-project-versions-on-the-same-computer.md?toc=/office/2019/toc.json
   - name: Office 2019 for Mac
