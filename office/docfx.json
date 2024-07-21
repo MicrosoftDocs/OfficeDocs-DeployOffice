@@ -48,6 +48,9 @@
       "feedback_product_url": "https://techcommunity.microsoft.com",
       "permissioned-type": "public",
       "titleSuffix": "Office",
+      "searchScope": [
+        "Office"
+      ],
       "contributors_to_exclude": [
         "rjagiewich",
         "claydetels19",
