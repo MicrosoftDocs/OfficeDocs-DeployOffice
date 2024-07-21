@@ -92,7 +92,7 @@ Here are the general steps to deploy a volume licensed version Project Professio
 
 2. Download your version of Project 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-3. If you want to configure user settings for when Project is installed, you can use the [Office Customization Tool (OCT)](oct/oct-2016-help-overview.md).
+3. If you want to configure user settings for when Project is installed, you can use the [Office Customization Tool (OCT)](/office/customization-tool/oct-2016-help-overview).
 
 4. Deploy Project 2016 to your users. For example, you can send your users a script to run that installs Project from a network share on your local network.
 

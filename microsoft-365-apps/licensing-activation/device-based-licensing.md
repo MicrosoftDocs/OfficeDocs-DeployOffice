@@ -98,8 +98,8 @@ If you use the Office Deployment Tool to install or configure Microsoft 365 Apps
 
 
 For more information about using the Office Deployment Tool and the configuration options that it supports, see the following articles:
-- [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
+- [Overview of the Office Deployment Tool](../deploy/overview-office-deployment-tool.md)
+- [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md)
 
 ### Using Microsoft Intune
 The required policy can be set through a Configuration Profile in Microsoft Intune.

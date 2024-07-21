@@ -52,7 +52,7 @@ There are various licensing modes that can be used with a supported version of M
 ### Shared Computer Activation
 [More Information](overview-shared-computer-activation.md)
 - In this license mode, you can install Microsoft 365 Apps on a single computer shared by multiple users. Each user signs in with their own account.
-- This mode is typically used in scenarios with multiple licensed users connecting to the same device. It's the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI). It's ideal for shift workers, bank tellers, and users that need to [roam](office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
+- This mode is typically used in scenarios with multiple licensed users connecting to the same device. It's the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI). It's ideal for shift workers, bank tellers, and users that need to [roam](../deploy/office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
 
 ### Device Based Licensing
 [More Information](device-based-licensing.md)
@@ -120,4 +120,4 @@ In Microsoft 365 Apps version 1910 and later, we made the following improvements
  
 [About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md)
  
-[Choose how to deploy Microsoft 365 Apps](./plan-microsoft-365-apps.md)
+[Choose how to deploy Microsoft 365 Apps](../deploy/plan-microsoft-365-apps.md)

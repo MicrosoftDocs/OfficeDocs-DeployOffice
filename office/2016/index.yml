@@ -38,7 +38,7 @@ additionalContent:
         # Card
         - title: Activation
           summary: Discover methods to activate Office 2016 with volume licensing.
-          url: volume-license-activation/plan-volume-activation-of-office.md
+          url: ../volume-license-activation/plan-volume-activation-of-office.md 
         # Card
         - title: Troubleshooting
           summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products.

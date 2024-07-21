@@ -26,7 +26,7 @@ The [Office Customization Tool](https://config.office.com/deploymentsettings) cr
 To work with the service, go to [Office Customization Tool](https://config.office.com/deploymentsettings) and choose the products, languages, and application preferences you want to configure. For example, you can create a configuration file that downloads the 64-bit English version of Microsoft 365 Apps, or you can create a file that installs the 64-bit English and German version of Office without Access and Publisher and with the license terms automatically accepted. When you're done, you export the configuration file, which you can then use with the [Office Deployment Tool](../deploy/overview-office-deployment-tool.md) or another software distribution solution to deploy Office in your organization.
   
 > [!NOTE]
-> If you use Microsoft Configuration Manager (current branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more information, see [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](../deploy-microsoft-365-apps-configuration-manager.md).
+> If you use Microsoft Configuration Manager (current branch) to deploy Office, we recommend using the Office 365 Installer wizard in the Configuration Manager console. That wizard includes a customized version of the Office Customization Tool. For more information, see [Deploy Microsoft 365 Apps with Microsoft Configuration Manager (current branch)](../deploy/deploy-microsoft-365-apps-configuration-manager.md).
 
 ## Create a configuration file
 
