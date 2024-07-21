@@ -38,7 +38,7 @@ additionalContent:
         # Card
         - title: Activation
           summary: Discover methods to activate Office 2019 with volume licensing.
-          url: volume-license-activation/plan-volume-activation-of-office.md
+          url: ../volume-license-activation/plan-volume-activation-of-office.md
         # Card
         - title: Office 2019 for Mac
           summary: Access deployment resources specific to Office 2019 for Mac.
