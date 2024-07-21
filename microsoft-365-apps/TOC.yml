@@ -22,7 +22,7 @@ items:
           - name: Assess your environment and requirements
             href: deploy/assess-microsoft-365-apps.md
           - name: Plan your enterprise deployment
-            href: plan-microsoft-365-apps.md
+            href: deploy/plan-microsoft-365-apps.md
 
       - name: Deploy
         items:
@@ -31,7 +31,7 @@ items:
           - name: Deploy from a local source
             href: deploy/deploy-microsoft-365-apps-local-source.md
           - name: Deploy with Configuration Manager (current branch)
-            href: deploy-microsoft-365-apps-configuration-manager.md
+            href: deploy/deploy-microsoft-365-apps-configuration-manager.md
 
       - name: Manage
         items:
@@ -118,7 +118,7 @@ items:
           - name: Deploying languages
             href: deploy/overview-deploying-languages-microsoft-365-apps.md
           - name: Deploy by using Remote Desktop Services
-            href: deploy/deploy-microsoft-365-apps-remote-desktop-services
+            href: deploy/deploy-microsoft-365-apps-remote-desktop-services.md
           - name: Deploy as part of an operating system image
             href: deploy/deploy-microsoft-365-apps-operating-system-image.md
           - name: Overview of shared computer activation
@@ -128,11 +128,11 @@ items:
           - name: Overview of licensing and activation
             href: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
           - name: Overview of unattended automation
-            href: licensing-activation/overview-unattended
+            href: licensing-activation/overview-unattended.md
           - name: Overview of extended offline access
-            href: licensing-activation/overview-extended-offline-access
+            href: licensing-activation/overview-extended-offline-access.md
           - name: Overview of viewer mode
-            href: licensing-activation/overview-viewer-mode
+            href: licensing-activation/overview-viewer-mode.md
           - name: Change installation from 32-bit to 64-bit
             href: deploy/change-bitness.md
           - name: Remove existing MSI versions when upgrading
@@ -170,10 +170,10 @@ items:
             href: https://aka.ms/windows-office-support-matrix
 
       - name: Office for Mac
-        href: mac/deploy/deployment-guide-for-office-for-mac.md
+        href: mac/deployment-guide-for-office-for-mac.md
 
       - name: Microsoft 365 Insider Program for Business
         href: insider/index.yml
 
       - name: Videos
-        href: videos.md
+        href: /deployoffice/videos

@@ -52,7 +52,7 @@ After the policy is applied, the "Office Automatic Updates 2.0" scheduled task m
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new update channel. In the example, the channel changes to Current Channel. For other update channels, look up the [channel attribute in the Configuration Options article](../deploy/office-deployment-tool-configuration-options.md.md#channel-attribute-part-of-updates-element).
+3. Create a configuration file that specifies the new update channel. In the example, the channel changes to Current Channel. For other update channels, look up the [channel attribute in the Configuration Options article](../deploy/office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 
 4. Deploy the Office Deployment Tool with the newly created configuration file using your standard processes. It must run the "setup.exe /configure yourconfigfile.xml" command to inject the update channel setting into the system. No requirement to close the Microsoft 365 Apps first, as only the stored configuration settings are changed.
 

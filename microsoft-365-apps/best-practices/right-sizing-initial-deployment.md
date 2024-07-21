@@ -104,7 +104,7 @@ The next step is to craft a deployment package that includes the selected langua
    - Add ID="[MatchPreviousMSI](../deploy/upgrade-from-msi-version.md#install-the-same-language-resources)" if you want to carry forward any already installed languages. 
    - Add ID="[MatchOS](../deploy/overview-deploying-languages-microsoft-365-apps.md#install-the-same-languages-as-the-operating-system)" if you want to install languages that match the Windows display language.
 
-6. Also add [AllowCdnFallback="True"](../deploy/office-deployment-tool-configuration-options.md.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Here's example configuration.xml:
+6. Also add [AllowCdnFallback="True"](../deploy/office-deployment-tool-configuration-options.md#allowcdnfallback-attribute-part-of-add-element) to the `<Add …>` element. Here's example configuration.xml:
 
    ```xml
    <Configuration>

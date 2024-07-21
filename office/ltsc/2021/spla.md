@@ -35,7 +35,7 @@ These Office products don't include Microsoft Teams.
 > [!TIP]
 > You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool).
 
-To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../volume-license-activation/activate-office-by-using-mak.md).
+To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../../volume-license-activation/activate-office-by-using-mak.md).
 
 Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
 

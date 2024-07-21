@@ -56,7 +56,7 @@ There are a series of settings in the configuration.xml file that you configure 
 |---------|---------|---------|
 |Where to download the Office installation files to and where to install Office from <br/> <br/>For example, \\\server\share (a shared folder on your local network).| SourcePath  |If you don’t specify a SourcePath when installing Office, the ODT looks for the installation files in the folder it’s located in. If it doesn’t find the Office installation files there, it goes to the Office CDN to get the installation files. <br/> <br/>  We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible.      |
 |Which products to download or install <br/> <br/>For example, Office LTSC Professional Plus 2021. | Product ID  | Valid values include the following IDs:  <br/>- ProPlus2021Volume <br/> -	Standard2021Volume <br/>- ProjectPro2021Volume <br/> - ProjectStd2021Volume <br/> - VisioPro2021Volume <br/> - VisioStd2021Volume  <br/><br/> For a list of Product IDs for other volume licensed Office products, such as Access LTSC 2021, see [List of Product IDs which are supported by the Office Deployment Tool for Click-to-Run](/microsoft-365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).<br/><br/> If you have a Microsoft Services Provider License Agreement (SPLA), [review this information](spla.md).|
-|Use Key Management Service (KMS) to activate Office LTSC 2021|PIDKEY| Enter the [Generic Volume License Key (GVLK)](../volume-license-activation/gvlks.md) for KMS activation.|
+|Use Key Management Service (KMS) to activate Office LTSC 2021|PIDKEY| Enter the [Generic Volume License Key (GVLK)](../../volume-license-activation/gvlks.md) for KMS activation.|
 |Use Multiple Activation (MAK) to activate Office LTSC 2021     | PIDKEY  | Enter the product key for MAK activation.  |
 |Which languages to download or install <br/> <br/> For example, English (en-us) and French (fr-fr). |Language ID      | You can install multiple languages at the same time you’re Installing Office LTSC 2021, or you can install them later.   <br/> <br/> For more information, see [Deploy languages for Office LTSC 2021](#deploy-languages-for-office-ltsc-2021).   |
 |Which proofing tools to install  |Product ID  | The Product ID is "ProofingTools" and is used in combination with the Language ID. <br/> <br/> For more information, see [Deploy languages for Office LTSC 2021](#deploy-languages-for-office-ltsc-2021). |
@@ -168,4 +168,4 @@ For either method, you can adjust the settings in the UI so that Skype for Busin
 
 - [Overview of Office LTSC 2021](overview.md)
 - [Update Office LTSC 2021](update.md)
-- [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md)

@@ -160,7 +160,7 @@ Microsoft has released the recommended security configuration baseline settings 
 
 We're retiring Security Policy Advisor in the Microsoft 365 Apps admin center beginning on November 8, 2021. Security Policy Advisor is no longer available to accept new tenants to manage Office cloud security policies. Also, Security Policy Advisor will be disabled for all tenants who haven't previously deployed a policy with Security Policy Advisor.
 
-If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](../admin-center/migrate-security-policies-from-spa-to-ocps.md).
+If you're already using Security Policy Advisor, we recommend migrating your security policies to the Office cloud policy service to avoid any interruption in managing them. For more information, see [Manually migrate security policies from Security Policy Advisor to the Office cloud policy service](../admin-center/overview-cloud-policy.md).
 
 ## October 2021
 
@@ -262,7 +262,7 @@ After deploying Microsoft 365 Apps, you can change the update channel for a devi
 
 ### Privacy controls for Office on iOS devices
 
-Starting with Version 2.30 of the Office apps for iOS, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](.../privacy/ios-privacy-preferences.md).
+Starting with Version 2.30 of the Office apps for iOS, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office on iOS devices](../privacy/ios-privacy-preferences.md).
 
 ## September 2019
 
@@ -282,7 +282,7 @@ Microsoft has announced the final release of the recommended security configurat
 ## August 2019
 
 ### Privacy controls for Office for Mac
-Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office for Mac](.../privacy/mac-privacy-preferences.md).
+Starting with Version 16.28 of Office for Mac, there are new preference settings that allow you to control settings related to diagnostic data and connected experiences. For more information, see [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
 
 ## July 2019
 
