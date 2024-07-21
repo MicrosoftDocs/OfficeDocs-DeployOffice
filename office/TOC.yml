@@ -2,36 +2,36 @@ items:
   - name: Deployment guide for Microsoft 365 Apps
     items:
       - name: Deployment guide
-        href: deployment-guide-microsoft-365-apps.md
+        href: /microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps
       - name: Microsoft FastTrack
         href: https://www.microsoft.com/fasttrack
 
       - name: Get started
         items:
           - name: What's new
-            href: whats-new.md
+            href: /microsoft-365-apps/deploy/whats-new
           - name: About Microsoft 365 Apps
-            href: about-microsoft-365-apps.md
+            href: /microsoft-365-apps/deploy/about-microsoft-365-apps
           - name: Microsoft 365 Apps admin center
             href: /microsoft-365-apps/admin-center/overview
           - name: Accessibility guide for Microsoft 365 Apps
-            href: accessibility-guide.md
+            href: /microsoft-365-apps/deploy/accessibility-guide
 
       - name: Prepare
         items:
           - name: Assess your environment and requirements
-            href: assess-microsoft-365-apps.md
+            href: /microsoft-365-apps/deploy/assess-microsoft-365-apps
           - name: Plan your enterprise deployment
-            href: plan-microsoft-365-apps.md
+            href: /microsoft-365-apps/deploy/plan-microsoft-365-apps
 
       - name: Deploy
         items:
           - name: Deploy from the cloud
-            href: deploy-microsoft-365-apps-cloud.md
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-cloud
           - name: Deploy from a local source
-            href: deploy-microsoft-365-apps-local-source.md
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-local-source
           - name: Deploy with Configuration Manager (current branch)
-            href: deploy-microsoft-365-apps-configuration-manager.md
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-configuration-manager
 
       - name: Manage
         items:
@@ -101,7 +101,7 @@ items:
             href: /microsoft-365-apps/privacy/in-product-recommendations
 
       - name: Best practices
-        href: fieldnotes/toc.yml
+        href: /microsoft-365-apps/best-practices/toc.yml
 
       - name: Reference
         items:
@@ -112,21 +112,21 @@ items:
           - name: Overview of Cloud Policy
             href: /microsoft-365-apps/admin-center/overview-cloud-policy
           - name: Overview of the Office Deployment Tool
-            href: overview-office-deployment-tool.md
+            href: /microsoft-365-apps/deploy/overview-office-deployment-tool
           - name: Configuration options for the Office Deployment Tool
-            href: office-deployment-tool-configuration-options.md
+            href: /microsoft-365-apps/deploy/office-deployment-tool-configuration-options
           - name: Deploying languages
-            href: overview-deploying-languages-microsoft-365-apps.md
+            href: /microsoft-365-apps/deploy/overview-deploying-languages-microsoft-365-apps
           - name: Deploy by using Remote Desktop Services
-            href: deploy-microsoft-365-apps-remote-desktop-services.md
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-remote-desktop-services
           - name: Deploy as part of an operating system image
-            href: deploy-microsoft-365-apps-operating-system-image.md
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-operating-system-image
           - name: Overview of shared computer activation
-            href: overview-shared-computer-activation.md
+            href: /microsoft-365-apps/licensing-activation/overview-shared-computer-activation
           - name: Device-based licensing
-            href: device-based-licensing.md
+            href: /microsoft-365-apps/licensing-activation/device-based-licensing
           - name: Overview of licensing and activation
-            href: overview-licensing-activation-microsoft-365-apps.md
+            href: /microsoft-365-apps/licensing-activation/overview-licensing-activation-microsoft-365-apps
           - name: Overview of unattended automation
             href: /microsoft-365-apps/licensing-activation/overview-unattended
           - name: Overview of extended offline access
@@ -134,9 +134,9 @@ items:
           - name: Overview of viewer mode
             href: /microsoft-365-apps/licensing-activation/overview-viewer-mode
           - name: Change installation from 32-bit to 64-bit
-            href: change-bitness.md
+            href: /microsoft-365-apps/deploy/change-bitness
           - name: Remove existing MSI versions when upgrading
-            href: upgrade-from-msi-version.md
+            href: /microsoft-365-apps/deploy/upgrade-from-msi-version
 
       - name: The new Outlook for Windows
         href: /microsoft-365-apps/outlook/overview-new-outlook
@@ -144,28 +144,28 @@ items:
       - name: Project, Visio, Teams, and OneNote
         items:
           - name: Deploy Project
-            href: deployment-guide-for-project.md
+            href: /microsoft-365-apps/deploy/deployment-guide-for-project
           - name: Deploy Visio
-            href: deployment-guide-for-visio.md
+            href: /microsoft-365-apps/deploy/deployment-guide-for-visio
           - name: Deploy Teams
-            href: teams-install.md
+            href: /microsoft-365-apps/deploy/teams-install
           - name: Deploy OneNote
-            href: deployment-guide-onenote.md
+            href: /microsoft-365-apps/deploy/deployment-guide-onenote
           - name: Install volume licensed versions by using the Office Deployment Tool
-            href: use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md
+            href: /microsoft-365-apps/deploy/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016
           - name: Install different versions of Office, Project, and Visio on the same computer
-            href: install-different-office-visio-and-project-versions-on-the-same-computer.md
+            href: /microsoft-365-apps/deploy/install-different-office-visio-and-project-versions-on-the-same-computer
 
       - name: End of support
         items:
           - name: End of support resources
-            href: microsoft-365-apps/end-of-support/resources
+            href: /microsoft-365-apps/end-of-support/resources
           - name: Connectivity to Microsoft 365 services
             href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
           - name: Windows Server and Microsoft 365 Apps
-            href: end-of-support/windows-server-support.md
+            href: /microsoft-365-apps/end-of-support/windows-server-support
           - name: Microsoft 365 Apps migration from Windows Server
-            href: end-of-support/windows-server-migration.md
+            href: /microsoft-365-apps/end-of-support/windows-server-migration
           - name: Windows and Office support matrix (PDF)
             href: https://aka.ms/windows-office-support-matrix
 

@@ -45,7 +45,7 @@ After a user is assigned a license, you can deploy Office to your users or your 
 There are various licensing modes that can be used with a supported version of Microsoft 365 Apps.
 
 ### Subscription User Based Licensing
-[More Information](about-microsoft-365-apps.md#licensing-differences)
+[More Information](../deploy/about-microsoft-365-apps.md#licensing-differences)
 - Subscription user based licensing is the default licensing mode for Microsoft 365 Apps. In this mode, the license is carried within the user’s profile. With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices. Subscription User Based Licensing requires user level activation and requires user sign-in with a Microsoft Entra account.
 - Subscription-based user licensing is recommended for most situations where each user has specific computers and rarely shares them.
 
@@ -71,7 +71,7 @@ There are various licensing modes that can be used with a supported version of M
 > Office applications are not specifically designed for large scale unattended usage scenarios. For more information, see [Considerations for Unattended Automation of Office in the Microsoft 365 for Unattended RPA Environment](/office/client-developer/integration/considerations-unattended-automation-office-microsoft-365-for-unattended-rpa)
 
 ### Viewer Mode
-[More Information](../licensing-activation/overview-viewer-mode.md)
+[More Information](overview-viewer-mode.md)
 - This mode can be used when your organization has users that only need view/print capabilities instead of full create or edit capabilities. Viewer mode allows unlicensed users of Microsoft 365 Apps to view and print Office files without being prompted to activate Office. When Word, Excel, or PowerPoint are opened, users see a banner message underneath the ribbon in their Office apps that informs them that Office is in Viewer Mode.
 - Viewer mod is ideal when the users have an Office for the Web license but not a Microsoft 365 Apps license.
 
@@ -118,6 +118,6 @@ In Microsoft 365 Apps version 1910 and later, we made the following improvements
 
 [Licensing and activation data sent to Office 365 by Microsoft 365 Apps](./licensing-activation-data-sent-microsoft-365-apps.md)
  
-[About Microsoft 365 Apps in the enterprise](./about-microsoft-365-apps.md)
+[About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md)
  
 [Choose how to deploy Microsoft 365 Apps](./plan-microsoft-365-apps.md)

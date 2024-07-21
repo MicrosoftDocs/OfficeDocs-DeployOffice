@@ -109,5 +109,5 @@ After you complete all the RDS configuration steps, users can connect to any of 
 <a name="VM"> </a>
 
 - [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md)
-- [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
+- [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](../licensing-activation/troubleshoot-shared-computer-activation.md)
 - [Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds)

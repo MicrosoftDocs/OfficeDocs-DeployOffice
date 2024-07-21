@@ -1,0 +1,57 @@
+### YamlMime:Hub
+
+title: Office 2016 documentation
+summary: Resources for IT professionals and admins on how to manage Office 2016.
+brand: office
+
+metadata:
+  ms.date: 07/21/2024
+  title: Office 2016 documentation
+  description: Learn how to manage Office 2016.
+  brand: m365
+  ms.author: nwhite
+  author: nicholasswhite
+  ms.topic: hub-page
+  ms.collection:
+    - tier1
+    - essentials-navigation
+  ms.service: o365-proplus-itpro
+  ms.custom: intro-hub-or-landing
+
+# Card with summary style
+additionalContent:
+  sections:
+    - title: Discover
+      items:
+        # Card
+        - title: Get Started
+          summary: Discover features and capabilities for admins in Office 2016.
+          url: whats-new-admins.md
+        # Card
+        - title: Changes
+          summary: Learn about the features that have changed or were removed in Office 2016.
+          url: changes-windows-desktop.md
+        # Card
+        - title: Multilanguage deployment
+          summary: Plan for multilanguage setup and customization, and deploy proofing tools for Office 2016.
+          url: language/plan-multilanguage-deployment.md
+        # Card
+        - title: Activation
+          summary: Discover methods to activate Office 2016 with volume licensing.
+          url: volume-license-activation/plan-volume-activation-of-office.md
+        # Card
+        - title: Troubleshooting
+          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products.
+          url: /office/troubleshoot/office-client-welcome
+        # Card
+        - title: End of support resources
+          summary: Find resources to help you manage Office 2016 end of support and plan for upgrades.
+          url: /office/endofsupport/resources
+        # Card
+        - title: Help and learning
+          summary: Find end user help and learning resources for Office and other Microsoft products.
+          url: https://support.microsoft.com/microsoft-365
+        # Card
+        - title: Microsoft 365 Apps
+          summary: Find information about deploying Microsoft 365 Apps (Office apps included with Microsoft 365 or Office 365) to your organization.
+          url: /microsoft-365-apps/

@@ -581,7 +581,7 @@ Example values:
 
 Optional. Default value is **0** if not specified.
 
-Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Microsoft 365 Apps for enterprise](licensing-activation/device-based-licensing.md).
+Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Microsoft 365 Apps for enterprise](../licensing-activation/device-based-licensing.md).
 
 Allowed values:
 

@@ -11,25 +11,25 @@ items:
           - name: What's new
             href: 
           - name: About Microsoft 365 Apps
-            href: about-microsoft-365-apps.md
+            href: deploy/about-microsoft-365-apps.md
           - name: Microsoft 365 Apps admin center
             href: admin-center/overview.md
           - name: Accessibility guide for Microsoft 365 Apps
-            href: accessibility-guide.md
+            href: deploy/accessibility-guide.md
 
       - name: Prepare
         items:
           - name: Assess your environment and requirements
-            href: assess-microsoft-365-apps.md
+            href: deploy/assess-microsoft-365-apps.md
           - name: Plan your enterprise deployment
             href: plan-microsoft-365-apps.md
 
       - name: Deploy
         items:
           - name: Deploy from the cloud
-            href: deploy-microsoft-365-apps-cloud.md
+            href: deploy/deploy-microsoft-365-apps-cloud.md
           - name: Deploy from a local source
-            href: deploy-microsoft-365-apps-local-source.md
+            href: deploy/deploy-microsoft-365-apps-local-source.md
           - name: Deploy with Configuration Manager (current branch)
             href: deploy-microsoft-365-apps-configuration-manager.md
 
@@ -112,21 +112,21 @@ items:
           - name: Overview of Cloud Policy
             href: admin-center/overview-cloud-policy.md
           - name: Overview of the Office Deployment Tool
-            href: overview-office-deployment-tool.md
+            href: deploy/overview-office-deployment-tool.md
           - name: Configuration options for the Office Deployment Tool
-            href: office-deployment-tool-configuration-options.md
+            href: deploy/office-deployment-tool-configuration-options.md
           - name: Deploying languages
-            href: overview-deploying-languages-microsoft-365-apps.md
+            href: deploy/overview-deploying-languages-microsoft-365-apps.md
           - name: Deploy by using Remote Desktop Services
             href: deploy/deploy-microsoft-365-apps-remote-desktop-services
           - name: Deploy as part of an operating system image
-            href: deploy-microsoft-365-apps-operating-system-image.md
+            href: deploy/deploy-microsoft-365-apps-operating-system-image.md
           - name: Overview of shared computer activation
-            href: overview-shared-computer-activation.md
+            href: licensing-activation/overview-shared-computer-activation.md
           - name: Device-based licensing
-            href: device-based-licensing.md
+            href: licensing-activation/device-based-licensing.md
           - name: Overview of licensing and activation
-            href: overview-licensing-activation-microsoft-365-apps.md
+            href: licensing-activation/overview-licensing-activation-microsoft-365-apps.md
           - name: Overview of unattended automation
             href: licensing-activation/overview-unattended
           - name: Overview of extended offline access
@@ -134,9 +134,9 @@ items:
           - name: Overview of viewer mode
             href: licensing-activation/overview-viewer-mode
           - name: Change installation from 32-bit to 64-bit
-            href: change-bitness.md
+            href: deploy/change-bitness.md
           - name: Remove existing MSI versions when upgrading
-            href: upgrade-from-msi-version.md
+            href: deploy/upgrade-from-msi-version.md
 
       - name: The new Outlook for Windows
         href: outlook/overview-new-outlook.md
@@ -148,13 +148,13 @@ items:
           - name: Deploy Visio
             href: deploy/deployment-guide-for-visio.md
           - name: Deploy Teams
-            href: teams-install.md
+            href: deploy/teams-install.md
           - name: Deploy OneNote
             href: deploy/deployment-guide-onenote.md
           - name: Install volume licensed versions by using the Office Deployment Tool
-            href: use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md
+            href: deploy/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md
           - name: Install different versions of Office, Project, and Visio on the same computer
-            href: install-different-office-visio-and-project-versions-on-the-same-computer.md
+            href: deploy/install-different-office-visio-and-project-versions-on-the-same-computer.md
 
       - name: End of support
         items:

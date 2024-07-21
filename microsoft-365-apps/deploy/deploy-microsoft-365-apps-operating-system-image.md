@@ -60,7 +60,7 @@ Remember not to open any Office programs. After you've created the image, you ca
 ## Step 4: Check that a Microsoft 365 Apps product key isn't installed in the image
 <a name="Step4"> </a>
 
-Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](licensing-activation/vnextdiag.md).
+Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](../licensing-activation/vnextdiag.md).
   
   
 ## Step 5: Save the operating system image
