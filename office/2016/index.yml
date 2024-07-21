@@ -46,7 +46,7 @@ additionalContent:
         # Card
         - title: End of support resources
           summary: Find resources to help you manage Office 2016 end of support and plan for upgrades.
-          url: /office/endofsupport/resources
+          url: /microsoft-365-apps/end-of-support/resources
         # Card
         - title: Help and learning
           summary: Find end user help and learning resources for Office and other Microsoft products.
