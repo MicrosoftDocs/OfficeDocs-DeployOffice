@@ -67,7 +67,7 @@ Migration Policy Development: To facilitate a successful migration to OneNote on
 
 Use this sample script to suit your organization's needs. 
 
-:::code language="powershell" source="snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1":::
+:::code language="powershell" source="../snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1":::
 
 Ensure the script performs the following functions:
 

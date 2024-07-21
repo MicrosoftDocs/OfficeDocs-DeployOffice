@@ -135,9 +135,9 @@ If you don’t have a KMS host computer that supports Office 2021 activation, yo
 
 For more information about configuring KMS activation, see the following articles:
 
-- [Configure a KMS host computer to activate volume licensed versions of Office](../volume-license-activation/configure-a-kms-host-computer-for-office.md)
-- [Configure DNS for activating volume licensed versions of Office by using KMS](../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md)
-- [Activate volume licensed versions of Office by using KMS](../volume-license-activation/activate-office-by-using-kms.md)
+- [Configure a KMS host computer to activate volume licensed versions of Office](../../volume-license-activation/configure-a-kms-host-computer-for-office.md)
+- [Configure DNS for activating volume licensed versions of Office by using KMS](../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md)
+- [Activate volume licensed versions of Office by using KMS](../../volume-license-activation/activate-office-by-using-kms.md)
 
 Internet connectivity isn’t required for KMS activation. The devices running the preview products only need to be able to contact a KMS host computer on your internal network to be activated.
 

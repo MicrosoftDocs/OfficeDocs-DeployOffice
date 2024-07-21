@@ -42,7 +42,7 @@ In most cases, you use either the Office Deployment Tool or Group Policy, not bo
 ## Use the Office Deployment Tool to configure update settings for Microsoft 365 Apps
 <a name="ODT"> </a>
 > [!IMPORTANT]
-> The [Microsoft 365 admin center](https://admin.cloud.microsoft/) determines your organization's [default update channel](../manage-software-download-settings-office-365.md). If you deploy Microsoft 365 Apps using the Office Deployment Tool and do not use any additional update management (for example, [Cloud Update](../admin-center/cloud-update.md)), devices will automatically change to this default update channel.
+> The [Microsoft 365 admin center](https://admin.cloud.microsoft/) determines your organization's [default update channel](../deploy/manage-software-download-settings-office-365.md). If you deploy Microsoft 365 Apps using the Office Deployment Tool and do not use any additional update management (for example, [Cloud Update](../admin-center/cloud-update.md)), devices will automatically change to this default update channel.
 
 Users can install Microsoft 365 Apps themselves from the Office 365 portal, but using the Office Deployment Tool to deploy Microsoft 365 Apps to your users gives you more control over the installation. For example, you can control how Microsoft 365 Apps is updated.
   

@@ -40,7 +40,7 @@ For devices running macOS, Office LTSC Standard for Mac 2021 is available for vo
 The following are changes in Office LTSC 2021 compared to the volume licensed version of Office 2019.
 
 > [!TIP]
-> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../office/2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
+> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
 
 #### Privacy-related policy settings
 
@@ -113,7 +113,7 @@ Office Add-ins on Windows now use Microsoft Edge with WebView2. For more informa
 
 #### Office Telemetry Dashboard
 
-[Office Telemetry Dashboard](../compatibility/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
+[Office Telemetry Dashboard](../../compatibility/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
 
 #### OneDrive (Groove) client
 

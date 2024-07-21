@@ -38,7 +38,7 @@ additionalContent:
         # Card
         - title: Activation
           summary: Discover methods to activate Office LTSC 2021 with volume licensing.
-          url: volume-license-activation/plan-volume-activation-of-office.md
+          url: ../volume-license-activation/plan-volume-activation-of-office.md
         # Card
         - title: Office LTSC for Mac 2021
           summary: Access deployment resources specific to Office LTSC for Mac 2021.
