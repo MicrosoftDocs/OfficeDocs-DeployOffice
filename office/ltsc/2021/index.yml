@@ -2,56 +2,89 @@
 
 title: Office LTSC 2021 deployment documentation
 summary: Resources for IT professionals and admins on how to deploy and manage Office LTSC 2021.
-brand: office
 
 metadata:
-  ms.date: 07/21/2024
   title: Office LTSC 2021 deployment documentation
   description: Learn how to deploy and manage Office LTSC 2021.
-  brand: m365
-  ms.author: nwhite
   author: nicholasswhite
-  ms.topic: hub-page
+  ms.author: nwhite
+  manager: dougeby
+  ms.date: 07/22/2024
+  ms.topic: landing-page
+  ms.service: office-perpetual-itpro
   ms.collection:
     - tier1
     - essentials-navigation
-  ms.service: o365-proplus-itpro
-  ms.custom: intro-hub-or-landing
 
-# Card with summary style
-additionalContent:
-  sections:
-    - title: Discover
-      items:
-        # Card
-        - title: Get Started
-          summary: Learn how to plan, deploy, and manage Office LTSC 2021 in your organization.
-          url: overview.md
-        # Card
-        - title: Deploy
-          summary: Explore deployment guides and tools for installing Office LTSC 2021 in your organization.
-          url: deploy.md
-        # Card
-        - title: Update
-          summary: Learn how to manage updates for Office LTSC 2021 to ensure your installation is secure and stable.
-          url: update.md
-        # Card
-        - title: Activation
-          summary: Discover methods to activate Office LTSC 2021 with volume licensing.
-          url: ../../volume-license-activation/plan-volume-activation-of-office.md
-        # Card
-        - title: Office LTSC for Mac 2021
-          summary: Access deployment resources specific to Office LTSC for Mac 2021.
-          url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
-        # Card
-        - title: Troubleshooting
-          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft Office products.
-          url: /office/troubleshoot/office-client-welcome
-        # Card
-        - title: End user help and learning
-          summary: Find end user help and learning resources for Office and other Microsoft products.
-          url: https://support.microsoft.com/microsoft-365
-        # Card
-        - title: Microsoft 365 Apps
-          summary: Find information about deploying Microsoft 365 Apps (Office apps included with Microsoft 365 or Office 365) to your organization.
-          url: /microsoft-365-apps/
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  # Card 
+  - title: Plan and Prepare
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of Office LTSC 2021
+            url: overview.md
+
+  # Card 
+  - title: Deployment
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy Office LTSC 2021
+            url: deploy.md
+          - text: Deploy Project 2021
+            url: /microsoft-365-apps/deploy/deployment-guide-for-project?toc=/office/ltsc/2021/toc.json#deploy-a-volume-licensed-version-of-project-2021
+          - text: Deploy Visio 2021
+            url: /microsoft-365-apps/deploy/deployment-guide-for-visio?toc=/office/ltsc/2021/toc.json#deploy-visio-ltsc-2021
+          - text: Deploy OneNote 2021
+            url: /microsoft-365-apps/deploy/deployment-guide-onenote?toc=/office/ltsc/2021/toc.json
+
+  # Card
+  - title: Activation
+    linkLists:
+      - title: Configuration
+        linkLists:
+          - linkListType: how-to-guide
+            links:
+              - text: Configure a KMS host computer
+                url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
+              - text: Configure DNS for KMS
+                url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Activate by using KMS
+            url: ../../volume-license-activation/activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
+          - text: Activate by using MAK
+            url: ../../volume-license-activation/activate-office-by-using-mak.md?toc=/office/ltsc/2021/toc.json
+          - text: Activate by using Active Directory
+            url: ../../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/ltsc/2021/toc.json
+
+  # Card
+  - title: Updates and Maintenance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Update Office LTSC 2021
+            url: update.md
+
+  # Card
+  - title: Troubleshooting and Support
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshoot Office LTSC 2021
+            url: /office/troubleshoot/office-client-welcome
+          - text: End User Help and Learning
+            url: https://support.microsoft.com/microsoft-365
+
+  # Card
+  - title: Additional Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Office LTSC for Mac 2021
+            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
+          - text: Microsoft 365 Apps
+            url: /microsoft-365-apps/
