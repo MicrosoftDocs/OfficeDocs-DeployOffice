@@ -20,16 +20,12 @@ metadata:
 
 landingContent:
   # Card 
-  - title: Plan and Prepare
+  - title: Plan, prepare, and deploy
     linkLists:
       - linkListType: get-started
         links:
           - text: Overview of Office LTSC 2021
             url: overview.md
-
-  # Card 
-  - title: Deployment
-    linkLists:
       - linkListType: deploy
         links:
           - text: Deploy Office LTSC 2021
@@ -44,10 +40,16 @@ landingContent:
   # Card
   - title: Activation
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
-          - text: Activate Office LTSC 2021
+          - text: Volume activation of Office
             url: ../../volume-license-activation/plan-volume-activation-of-office.md
+      - linkListType: tutorial
+        links:
+          - text: Configure a KMS host computer
+            url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
+          - text: Configure DNS for KMS
+            url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json            
       - linkListType: how-to-guide
         links:
           - text: Activate by using KMS
@@ -56,39 +58,31 @@ landingContent:
             url: ../../volume-license-activation/activate-office-by-using-mak.md?toc=/office/ltsc/2021/toc.json
           - text: Activate by using Active Directory
             url: ../../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/ltsc/2021/toc.json
-      - title: Configuration
-        linkLists:
-          - linkListType: how-to-guide
-            links:
-              - text: Configure a KMS host computer
-                url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
-              - text: Configure DNS for KMS
-                url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
 
   # Card
-  - title: Updates and Maintenance
+  - title: Update
     linkLists:
       - linkListType: overview
         links:
-          - text: Update Office LTSC 2021
-            url: update.md
+          - text: How Office LTSC 2021 gets updated
+            url: update.md#how-office-ltsc-2021-gets-updated
+          - text: How updates are different in Office LTSC 2021
+            url: update.md#how-updates-are-different-in-office-ltsc-2021
+        - linkListType: how-to-guide
+        links:
+          - text: Configure where Office LTSC 2021 gets updates from
+            url: update.md#configure-where-office-ltsc-2021-gets-updates-from
+          - text: Check for updates for Office LTSC 2021
+            url: update.md#check-for-updates-for-office-ltsc-2021
+          - text: Use Group Policy to specify update settings
+            url: update.md#use-group-policy-to-specify-update-settings
 
   # Card
   - title: Troubleshooting and Support
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
           - text: Troubleshoot Office LTSC 2021
             url: /office/troubleshoot/office-client-welcome
           - text: End User Help and Learning
             url: https://support.microsoft.com/microsoft-365
-
-  # Card
-  - title: Additional Resources
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Office LTSC for Mac 2021
-            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
-          - text: Microsoft 365 Apps
-            url: /microsoft-365-apps/
