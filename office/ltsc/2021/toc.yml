@@ -2,7 +2,7 @@ Items:
 - name: Deployment guide for Office LTSC 2021
   items:
   - name: Resources for Office LTSC 2021
-  - href: index.yml
+    href: index.yml
   - name: Overview 
     href: overview.md
   - name: Deploy
@@ -11,7 +11,7 @@ Items:
     href: update.md
   - name: Volume activation
     items:
-    - name: 
+    - name: Overview
       href: ../../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/ltsc/2021/toc.json
     - name: Configure a KMS host computer
       href: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
