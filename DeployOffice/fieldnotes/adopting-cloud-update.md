@@ -23,7 +23,7 @@ This document covers:
 - How to [enable](#enable-cloud-update) and [configure](#review-configuration-of-cloud-update) cloud update
 - How devices [onboard](#onboarding-of-devices) and [update](#update-flow)
 - [Best practices and tips](#best-practices-and-tips-for-working-with-cloud-update)
-- Frequently Asked Questions ([FAQ](#faq))
+- Frequently Asked Questions ([FAQ](#frequently-asked-questions-faq))
 
 > [!NOTE]
 > The information in this document applies to updates for Microsoft 365 Apps only. Cloud update does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
