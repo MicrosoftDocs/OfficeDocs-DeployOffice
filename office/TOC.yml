@@ -1,2 +1,179 @@
-- name: Index
-  href: index.md
+items:
+  - name: Deployment guide for Microsoft 365 Apps
+    items:
+      - name: Deployment guide
+        href: /microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps
+      - name: Microsoft FastTrack
+        href: https://www.microsoft.com/fasttrack
+
+      - name: Get started
+        items:
+          - name: What's new
+            href: /microsoft-365-apps/deploy/whats-new
+          - name: About Microsoft 365 Apps
+            href: /microsoft-365-apps/deploy/about-microsoft-365-apps
+          - name: Microsoft 365 Apps admin center
+            href: /microsoft-365-apps/admin-center/overview
+          - name: Accessibility guide for Microsoft 365 Apps
+            href: /microsoft-365-apps/deploy/accessibility-guide
+
+      - name: Prepare
+        items:
+          - name: Assess your environment and requirements
+            href: /microsoft-365-apps/deploy/assess-microsoft-365-apps
+          - name: Plan your enterprise deployment
+            href: /microsoft-365-apps/deploy/plan-microsoft-365-apps
+
+      - name: Deploy
+        items:
+          - name: Deploy from the cloud
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-cloud
+          - name: Deploy from a local source
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-local-source
+          - name: Deploy with Configuration Manager (current branch)
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-configuration-manager
+
+      - name: Manage
+        items:
+          - name: Overview of update channels
+            href: /microsoft-365/updates/overview-update-channels
+          - name: Choose how to deliver updates
+            href: /microsoft-365/updates/choose-how-to-deliver-updates
+          - name: Manage updates with Configuration Manager
+            href: /microsoft-365/updates/manage-microsoft-365-apps-updates-configuration-manager
+          - name: Change the update channel
+            href: /microsoft-365/updates/change-update-channels
+          - name: Change update channel for Copilot
+            href: /microsoft-365/updates/change-channel-for-copilot
+          - name: Delivery Optimization
+            href: /microsoft-365/updates/delivery-optimization
+          - name: Update history
+            href: /officeupdates/update-history-microsoft365-apps-by-date
+          - name: Release notes
+            href: /officeupdates/release-notes-microsoft365-apps
+
+      - name: Security
+        items:
+          - name: Internet macros blocked by default
+            href: /microsoft-365-apps/security/internet-macros-blocked
+          - name: Security baseline
+            href: /microsoft-365-apps/security/security-baseline
+
+      - name: Privacy
+        items:
+          - name: Overview of privacy controls
+            href: /microsoft-365-apps/privacy/overview-privacy-controls
+          - name: Privacy controls available for Office products
+            href: /microsoft-365-apps/privacy/products-versions-privacy-controls
+          - name: Manage privacy controls
+            items:
+              - name: Windows policy settings
+                href: /microsoft-365-apps/privacy/manage-privacy-controls
+              - name: Mac preferences
+                href: /microsoft-365-apps/privacy/mac-privacy-preferences
+              - name: iOS preferences
+                href: /microsoft-365-apps/privacy/ios-privacy-preferences
+              - name: Android policy settings
+                href: /microsoft-365-apps/privacy/android-privacy-controls
+              - name: Office for the web policy settings
+                href: /microsoft-365-apps/privacy/office-web-privacy-controls
+          - name: Diagnostic data
+            items:
+              - name: Required diagnostic data
+                href: /microsoft-365-apps/privacy/required-diagnostic-data
+              - name: Optional diagnostic data
+                href: /microsoft-365-apps/privacy/optional-diagnostic-data
+              - name: Using the Diagnostic Data Viewer
+                href: https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855
+          - name: Connected experiences
+            items:
+              - name: Connected experiences
+                href: /microsoft-365-apps/privacy/connected-experiences
+              - name: Connected experiences and your content
+                href: /microsoft-365-apps/privacy/connected-experiences-content
+              - name: Optional connected experiences
+                href: /microsoft-365-apps/privacy/optional-connected-experiences
+              - name: Required service data
+                href: /microsoft-365-apps/privacy/required-service-data
+          - name: Essential services
+            href: /microsoft-365-apps/privacy/essential-services
+          - name: In-product recommendations in Office
+            href: /microsoft-365-apps/privacy/in-product-recommendations
+
+      - name: Best practices
+        href: /microsoft-365-apps/best-practices/toc.yml
+
+      - name: Reference
+        items:
+          - name: Overview of the Microsoft 365 Apps admin center
+            href: /microsoft-365-apps/admin-center/overview
+          - name: Overview of the Office Customization Tool
+            href: /microsoft-365-apps/admin-center/overview-office-customization-tool
+          - name: Overview of Cloud Policy
+            href: /microsoft-365-apps/admin-center/overview-cloud-policy
+          - name: Overview of the Office Deployment Tool
+            href: /microsoft-365-apps/deploy/overview-office-deployment-tool
+          - name: Configuration options for the Office Deployment Tool
+            href: /microsoft-365-apps/deploy/office-deployment-tool-configuration-options
+          - name: Deploying languages
+            href: /microsoft-365-apps/deploy/overview-deploying-languages-microsoft-365-apps
+          - name: Deploy by using Remote Desktop Services
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-remote-desktop-services
+          - name: Deploy as part of an operating system image
+            href: /microsoft-365-apps/deploy/deploy-microsoft-365-apps-operating-system-image
+          - name: Overview of shared computer activation
+            href: /microsoft-365-apps/licensing-activation/overview-shared-computer-activation
+          - name: Device-based licensing
+            href: /microsoft-365-apps/licensing-activation/device-based-licensing
+          - name: Overview of licensing and activation
+            href: /microsoft-365-apps/licensing-activation/overview-licensing-activation-microsoft-365-apps
+          - name: Overview of unattended automation
+            href: /microsoft-365-apps/licensing-activation/overview-unattended
+          - name: Overview of extended offline access
+            href: /microsoft-365-apps/licensing-activation/overview-extended-offline-access
+          - name: Overview of viewer mode
+            href: /microsoft-365-apps/licensing-activation/overview-viewer-mode
+          - name: Change installation from 32-bit to 64-bit
+            href: /microsoft-365-apps/deploy/change-bitness
+          - name: Remove existing MSI versions when upgrading
+            href: /microsoft-365-apps/deploy/upgrade-from-msi-version
+
+      - name: The new Outlook for Windows
+        href: /microsoft-365-apps/outlook/overview-new-outlook
+
+      - name: Project, Visio, Teams, and OneNote
+        items:
+          - name: Deploy Project
+            href: /microsoft-365-apps/deploy/deployment-guide-for-project
+          - name: Deploy Visio
+            href: /microsoft-365-apps/deploy/deployment-guide-for-visio
+          - name: Deploy Teams
+            href: /microsoft-365-apps/deploy/teams-install
+          - name: Deploy OneNote
+            href: /microsoft-365-apps/deploy/deployment-guide-onenote
+          - name: Install volume licensed versions by using the Office Deployment Tool
+            href: /microsoft-365-apps/deploy/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016
+          - name: Install different versions of Office, Project, and Visio on the same computer
+            href: /microsoft-365-apps/deploy/install-different-office-visio-and-project-versions-on-the-same-computer
+
+      - name: End of support
+        items:
+          - name: End of support resources
+            href: /microsoft-365-apps/end-of-support/resources
+          - name: Connectivity to Microsoft 365 services
+            href: /microsoft-365-apps/end-of-support/microsoft-365-services-connectivity
+          - name: Windows Server and Microsoft 365 Apps
+            href: /microsoft-365-apps/end-of-support/windows-server-support
+          - name: Microsoft 365 Apps migration from Windows Server
+            href: /microsoft-365-apps/end-of-support/windows-server-migration
+          - name: Windows and Office support matrix (PDF)
+            href: https://aka.ms/windows-office-support-matrix
+
+      - name: Office for Mac
+        href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
+
+      - name: Microsoft 365 Insider Program for Business
+        href: /microsoft-365-apps/insider
+
+      - name: Videos
+        href: /deployoffice/videos
