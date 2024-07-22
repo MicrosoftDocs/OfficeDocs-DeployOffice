@@ -68,7 +68,7 @@ landingContent:
             url: update.md#how-office-ltsc-2021-gets-updated
           - text: How updates are different in Office LTSC 2021
             url: update.md#how-updates-are-different-in-office-ltsc-2021
-        - linkListType: how-to-guide
+      - linkListType: how-to-guide
         links:
           - text: Configure where Office LTSC 2021 gets updates from
             url: update.md#configure-where-office-ltsc-2021-gets-updates-from
