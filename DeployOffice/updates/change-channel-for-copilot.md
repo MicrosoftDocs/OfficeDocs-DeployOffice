@@ -12,7 +12,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 03/18/2024
+ms.date: 07/22/2024
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
@@ -43,6 +43,9 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
+
+[!NOTE]
+> Cloud update and the Channel change feature are in **public preview**.
 
 We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
