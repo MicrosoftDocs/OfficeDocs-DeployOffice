@@ -25,7 +25,9 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -43,8 +45,12 @@
       "breadcrumb_path": "/office/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "Standard",
+      "feedback_product_url": "https://techcommunity.microsoft.com",
       "permissioned-type": "public",
       "titleSuffix": "Office",
+      "searchScope": [
+        "Office"
+      ],
       "contributors_to_exclude": [
         "rjagiewich",
         "claydetels19",
@@ -65,6 +71,7 @@
       ]
     },
     "fileMetadata": {},
-    "template": []
+    "template": [],
+    "markdownEngineName": "markdig"
   }
 }

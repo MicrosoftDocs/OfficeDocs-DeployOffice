@@ -834,7 +834,7 @@
       "source_path": "Deployoffice/office-insider/compare-channels.md",
       "redirect_url": "/deployoffice/insider/compare-channels",
       "redirect_document_id": true
-    },  
+    },
     {
       "source_path": "Deployoffice/office-insider/overview.md",
       "redirect_url": "/deployoffice/insider/overview",
@@ -1110,37 +1110,37 @@
       "redirect_url": "/deployoffice/index.yml",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/readiness-toolkit-application-compatibility-microsoft-365-apps.md",
       "redirect_url": "/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/other/device-moved-after-admin-center-update.md",
       "redirect_url": "/DeployOffice/admincenter/message-center-post/device-moved-after-admin-center-update",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/other/devices-updating-monthly-enterprise-channel.md",
       "redirect_url": "/DeployOffice/admincenter/message-center-post/devices-updating-monthly-enterprise-channel",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/other/signup-for-cloud-update.md",
       "redirect_url": "/DeployOffice/admincenter/message-center-post/signup-for-cloud-update",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/other/workplace-discount-program-notification.md",
       "redirect_url": "/DeployOffice/admincenter/message-center-post/workplace-discount-program-notification",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/other/coming-soon-to-microsoft-365-admin-center.md",
       "redirect_url": "/DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "DeployOffice/delivery-optimization.md",
       "redirect_url": "/deployoffice/updates/delivery-optimization",
       "redirect_document_id": false
@@ -1149,6 +1149,1216 @@
       "source_path": "DeployOffice/places/azure-maps-creator-guide.md",
       "redirect_url": "/DeployOffice/places/deployment-guide-for-places",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "DeployOffice/microsoft-search-bing.md",
+      "redirect_url": "/microsoft-365-apps/deploy/microsoft-search-bing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office-deployment-tool-configuration-options.md",
+      "redirect_url": "/microsoft-365-apps/deploy/office-deployment-tool-configuration-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/manage-software-download-settings-office-365.md",
+      "redirect_url": "/microsoft-365-apps/deploy/manage-software-download-settings-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md",
+      "redirect_url": "/microsoft-365-apps/deploy/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-deploying-languages-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/deploy/overview-deploying-languages-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/rds-outlook-search.md",
+      "redirect_url": "/microsoft-365-apps/deploy/rds-outlook-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-configuration-manager.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-office-deployment-tool.md",
+      "redirect_url": "/microsoft-365-apps/deploy/overview-office-deployment-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-cloud.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/install-different-office-visio-and-project-versions-on-the-same-computer.md",
+      "redirect_url": "/microsoft-365-apps/deploy/install-different-office-visio-and-project-versions-on-the-same-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-gcc-high-dod.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-gcc-high-dod",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-for-visio.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deployment-guide-for-visio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/webview2-install.md",
+      "redirect_url": "/microsoft-365-apps/deploy/webview2-install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-for-project.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deployment-guide-for-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/licensing-activation-data-sent-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/licensing-activation-data-sent-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-remote-desktop-services.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-remote-desktop-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/accessibility-guide.md",
+      "redirect_url": "/microsoft-365-apps/deploy/accessibility-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/troubleshoot-shared-computer-activation.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/troubleshoot-shared-computer-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/videos.md",
+      "redirect_url": "/microsoft-365-apps/deploy/videos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-onenote.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deployment-guide-onenote",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/upgrade-from-msi-version.md",
+      "redirect_url": "/microsoft-365-apps/deploy/upgrade-from-msi-version",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-operating-system-image.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-operating-system-image",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deployment-guide-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/change-bitness.md",
+      "redirect_url": "/microsoft-365-apps/deploy/change-bitness",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/device-based-licensing.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/device-based-licensing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-shared-computer-activation.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/overview-shared-computer-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/teams-install.md",
+      "redirect_url": "/microsoft-365-apps/deploy/teams-install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/plan-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/deploy/plan-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/rds-office-vdi-rdsh.md",
+      "redirect_url": "/microsoft-365-apps/deploy/rds-office-vdi-rdsh",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/whats-new.md",
+      "redirect_url": "/microsoft-365-apps/deploy/whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-unattended.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/overview-unattended",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/about-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/deploy/about-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/assess-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/deploy/assess-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/index.yml",
+      "redirect_url": "/microsoft-365-apps/deploy/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-licensing-activation-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/overview-licensing-activation-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-viewer-mode.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/overview-viewer-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/deploy-microsoft-365-apps-local-source.md",
+      "redirect_url": "/microsoft-365-apps/deploy/deploy-microsoft-365-apps-local-source",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/overview-extended-offline-access.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/overview-extended-offline-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/default-file-format-oct.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/default-file-format-oct",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/inventory.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/inventory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/cloud-update.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview-office-customization-tool.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/overview-office-customization-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/servicing-profile.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/servicing-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/coming-soon-to-microsoft-365-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/microsoft-365-apps-health.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/microsoft-365-apps-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/inventory-data.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/inventory-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/overview-cloud-policy.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/overview-cloud-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/security-update-status.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/security-update-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/update-validation.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/update-validation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/message-center-post/device-moved-after-admin-center-update.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/message-center-post/device-moved-after-admin-center-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/message-center-post/signup-for-cloud-update.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/message-center-post/signup-for-cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/message-center-post/workplace-discount-program-notification.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/message-center-post/workplace-discount-program-notification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/admincenter/message-center-post/devices-updating-monthly-enterprise-channel.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/message-center-post/devices-updating-monthly-enterprise-channel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/update-office-telemetry-components-for-office-2016.md",
+      "redirect_url": "/office/compatibility/update-office-telemetry-components-for-office-2016",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/document-and-solution-types-monitored-by-telemetry-in-office.md",
+      "redirect_url": "/office/compatibility/document-and-solution-types-monitored-by-telemetry-in-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/telemetry-dashboard-removal.md",
+      "redirect_url": "/office/compatibility/telemetry-dashboard-removal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/manage-compatibility-mode-for-office.md",
+      "redirect_url": "/office/compatibility/manage-compatibility-mode-for-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/manage-add-ins-by-using-telemetry-dashboard-in-office.md",
+      "redirect_url": "/office/compatibility/manage-add-ins-by-using-telemetry-dashboard-in-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md",
+      "redirect_url": "/office/compatibility/manage-the-privacy-of-data-monitored-by-telemetry-in-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md",
+      "redirect_url": "/office/compatibility/custom-reporting-and-database-schema-reference-for-telemetry-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/compatibility-and-telemetry-in-office.md",
+      "redirect_url": "/office/compatibility/compatibility-and-telemetry-in-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/data-that-the-telemetry-agent-collects-in-office.md",
+      "redirect_url": "/office/compatibility/data-that-the-telemetry-agent-collects-in-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md",
+      "redirect_url": "/office/compatibility/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/telemetry-dashboard-worksheet-reference.md",
+      "redirect_url": "/office/compatibility/telemetry-dashboard-worksheet-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/plan-telemetry-dashboard-deployment.md",
+      "redirect_url": "/office/compatibility/plan-telemetry-dashboard-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/office-file-format-reference.md",
+      "redirect_url": "/office/compatibility/office-file-format-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/xml-file-name-extension-reference-for-office.md",
+      "redirect_url": "/office/compatibility/xml-file-name-extension-reference-for-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/deploy-telemetry-dashboard.md",
+      "redirect_url": "/office/compatibility/deploy-telemetry-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/compat/assess-office-compatibility.md",
+      "redirect_url": "/office/compatibility/assess-office-compatibility",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/windows-7-support.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/windows-7-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/windows-server-migration.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/windows-server-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/plan-upgrade-older-versions-office.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/plan-upgrade-older-versions-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/windows-8-support.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/windows-8-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/resources.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/microsoft-365-services-connectivity.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/microsoft-365-services-connectivity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/windows-81-support.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/windows-81-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/endofsupport/windows-server-support.md",
+      "redirect_url": "/microsoft-365-apps/end-of-support/windows-server-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/switch-to-monthly-enterprise-channel.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/switch-to-monthly-enterprise-channel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/performance-recommendations.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/performance-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/roadmap-to-modern-management.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/roadmap-to-modern-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/microsoft-365-change-guide.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/microsoft-365-change-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/adopting-cloud-update.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/adopting-cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/build-dynamic-lean-universal-packages.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/build-dynamic-lean-universal-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/install-options.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/install-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/network-guidance.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/network-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/right-sizing-initial-deployment.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/right-sizing-initial-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/build-dynamic-lean-configuration-manager.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/build-dynamic-lean-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/fieldnotes/adopt-servicing-profiles.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/adopt-servicing-profiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/compare-channels.md",
+      "redirect_url": "/microsoft-365-apps/insider/compare-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/overview.md",
+      "redirect_url": "/microsoft-365-apps/insider/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/index.yml",
+      "redirect_url": "/microsoft-365-apps/insider/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/group-policy.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/options.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/registry.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/registry",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/configuration-manager.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/intune.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/preference.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/preference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/microsoft-autoupdate.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/microsoft-autoupdate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/user-choice.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/user-choice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/insider/deploy/office-deployment-tool.md",
+      "redirect_url": "/microsoft-365-apps/insider/deploy/office-deployment-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/licensing-activation/vnextdiag.md",
+      "redirect_url": "/microsoft-365-apps/licensing-activation/vnextdiag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/mau-preferences.md",
+      "redirect_url": "/microsoft-365-apps/mac/mau-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/mau-configure-organization-specific-updates.md",
+      "redirect_url": "/microsoft-365-apps/mac/mau-configure-organization-specific-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/deploy-mac-app-store.md",
+      "redirect_url": "/microsoft-365-apps/mac/deploy-mac-app-store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/mau-deadline.md",
+      "redirect_url": "/microsoft-365-apps/mac/mau-deadline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/set-preference-per-app.md",
+      "redirect_url": "/microsoft-365-apps/mac/set-preference-per-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/preferences-office.md",
+      "redirect_url": "/microsoft-365-apps/mac/preferences-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/set-preference-default-password-excel.md",
+      "redirect_url": "/microsoft-365-apps/mac/set-preference-default-password-excel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/update-office-for-mac-using-msupdate.md",
+      "redirect_url": "/microsoft-365-apps/mac/update-office-for-mac-using-msupdate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/mau-set-license-info.md",
+      "redirect_url": "/microsoft-365-apps/mac/mau-set-license-info",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/set-preference-macro-security-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/set-preference-macro-security-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/mau-deferred-updates.md",
+      "redirect_url": "/microsoft-365-apps/mac/mau-deferred-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/preferences-add-ins.md",
+      "redirect_url": "/microsoft-365-apps/mac/preferences-add-ins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/deploy-updates-for-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/deploy-updates-for-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/overview.md",
+      "redirect_url": "/microsoft-365-apps/mac/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/preferences-outlook.md",
+      "redirect_url": "/microsoft-365-apps/mac/preferences-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/deployment-options-for-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/deployment-options-for-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/deployment-guide-for-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/deployment-guide-for-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/licensing-helper-tool.md",
+      "redirect_url": "/microsoft-365-apps/mac/licensing-helper-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/deploy-preferences-for-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/deploy-preferences-for-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/volume-license-serializer.md",
+      "redirect_url": "/microsoft-365-apps/mac/volume-license-serializer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/mac/overview-of-activation-for-office-for-mac.md",
+      "redirect_url": "/microsoft-365-apps/mac/overview-of-activation-for-office-for-mac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/overview-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/overview-new-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/manage/policy-management.md",
+      "redirect_url": "/microsoft-365-apps/outlook/manage/policy-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/manage/manage-updates-new-outlook-windows.md",
+      "redirect_url": "/microsoft-365-apps/outlook/manage/manage-updates-new-outlook-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/deployment-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/deployment-new-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/control-install.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/control-install",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/migrate-com-to-web-addins.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/migrate-com-to-web-addins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/supported-account-types.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/supported-account-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/guide-product-availability.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/guide-product-availability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/install-web-add-ins.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/install-web-add-ins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/get-started/state-of-com-add-ins.md",
+      "redirect_url": "/microsoft-365-apps/outlook/get-started/state-of-com-add-ins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/troubleshoot/troubleshoot-shared-mailboxes-new-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/outlook/troubleshoot/troubleshoot-deployment-new-outlook.md",
+      "redirect_url": "/microsoft-365-apps/outlook/troubleshoot/troubleshoot-deployment-new-outlook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/optional-connected-experiences.md",
+      "redirect_url": "/microsoft-365-apps/privacy/optional-connected-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/required-service-data.md",
+      "redirect_url": "/microsoft-365-apps/privacy/required-service-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/android-privacy-controls.md",
+      "redirect_url": "/microsoft-365-apps/privacy/android-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/mac-privacy-preferences.md",
+      "redirect_url": "/microsoft-365-apps/privacy/mac-privacy-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/ios-privacy-preferences.md",
+      "redirect_url": "/microsoft-365-apps/privacy/ios-privacy-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/connected-experiences-content.md",
+      "redirect_url": "/microsoft-365-apps/privacy/connected-experiences-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/overview-privacy-controls.md",
+      "redirect_url": "/microsoft-365-apps/privacy/overview-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/in-product-recommendations.md",
+      "redirect_url": "/microsoft-365-apps/privacy/in-product-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/essential-services.md",
+      "redirect_url": "/microsoft-365-apps/privacy/essential-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/products-versions-privacy-controls.md",
+      "redirect_url": "/microsoft-365-apps/privacy/products-versions-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/optional-diagnostic-data.md",
+      "redirect_url": "/microsoft-365-apps/privacy/optional-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/manage-privacy-controls.md",
+      "redirect_url": "/microsoft-365-apps/privacy/manage-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/office-web-privacy-controls.md",
+      "redirect_url": "/microsoft-365-apps/privacy/office-web-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/required-diagnostic-data.md",
+      "redirect_url": "/microsoft-365-apps/privacy/required-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/privacy/connected-experiences.md",
+      "redirect_url": "/microsoft-365-apps/privacy/connected-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/basic-authentication-prompts-blocked.md",
+      "redirect_url": "/microsoft-365-apps/security/basic-authentication-prompts-blocked",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/trusted-locations.md",
+      "redirect_url": "/microsoft-365-apps/security/trusted-locations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/security-baseline.md",
+      "redirect_url": "/microsoft-365-apps/security/security-baseline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/internet-macros-blocked.md",
+      "redirect_url": "/microsoft-365-apps/security/internet-macros-blocked",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/onenote-extension-block.md",
+      "redirect_url": "/microsoft-365-apps/security/onenote-extension-block",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/security/trusted-publisher.md",
+      "redirect_url": "/microsoft-365-apps/security/trusted-publisher",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/software-update-status.md",
+      "redirect_url": "/microsoft-365-apps/updates/software-update-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/overview-update-process-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/updates/overview-update-process-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/choose-how-to-deliver-updates.md",
+      "redirect_url": "/microsoft-365-apps/updates/choose-how-to-deliver-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/update-basics.md",
+      "redirect_url": "/microsoft-365-apps/updates/update-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/end-user-update-notifications-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/updates/end-user-update-notifications-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/choose-how-manage-updates-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/updates/choose-how-manage-updates-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/configure-update-settings-microsoft-365-apps.md",
+      "redirect_url": "/microsoft-365-apps/updates/configure-update-settings-microsoft-365-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/overview-update-channels.md",
+      "redirect_url": "/microsoft-365-apps/updates/overview-update-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/delivery-optimization.md",
+      "redirect_url": "/microsoft-365-apps/updates/delivery-optimization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/change-channel-for-copilot.md",
+      "redirect_url": "/microsoft-365-apps/updates/change-channel-for-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/manage-microsoft-365-apps-updates-configuration-manager.md",
+      "redirect_url": "/microsoft-365-apps/updates/manage-microsoft-365-apps-updates-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/updates/change-update-channels.md",
+      "redirect_url": "/microsoft-365-apps/updates/change-update-channels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/spla.md",
+      "redirect_url": "/office/ltsc/2021/spla",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/office-online-server.md",
+      "redirect_url": "/office/ltsc/2021/office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/update.md",
+      "redirect_url": "/office/ltsc/2021/update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/deploy.md",
+      "redirect_url": "/office/ltsc/2021/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/ltsc2021/overview.md",
+      "redirect_url": "/office/ltsc/2021/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-outlook-anywhere.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-outlook-anywhere",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-remove-registry-entries.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-remove-registry-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-overview.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-modify-user-settings.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-modify-user-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-accounts.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-installation-location-and-organization-name.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-installation-location-and-organization-name",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-delete-modify-registry-entry-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-delete-modify-registry-entry-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-file-destination-path-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-file-destination-path-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-registry-entries.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-registry-entries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-office-security-settings.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-office-security-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-modify-property-value-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-modify-property-value-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-learn-about-file-formats.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-learn-about-file-formats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-set-feature-installation-states.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-set-feature-installation-states",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-modify-shortcut-entry-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-modify-shortcut-entry-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-modify-group-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-modify-group-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-new-exchange-group-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-new-exchange-group-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-modify-registry-entry-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-modify-registry-entry-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-file-path-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-file-path-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-files.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-account-and-account-settings-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-account-and-account-settings-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-remove-previous-installations.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-remove-previous-installations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-specify-send-receive-groups.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-specify-send-receive-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-remove-files.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-remove-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-configure-shortcuts.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-configure-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-licensing-and-user-interface.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-licensing-and-user-interface",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-modify-address-book-settings-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-modify-address-book-settings-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-export-settings.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-export-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-modify-setup-properties.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-modify-setup-properties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-modify-network-server-entry-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-modify-network-server-entry-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-additional-network-sources.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-additional-network-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-installations-and-run-programs.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-installations-and-run-programs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-rename-exchange-group-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-rename-exchange-group-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-cached-mode.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-cached-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-outlook-profile.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-outlook-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/oct/oct-2016-help-add-modify-program-entry-dialog-box.md",
+      "redirect_url": "/office/customization-tool/oct-2016-help-add-modify-program-entry-dialog-box",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/activate-office-by-using-mak.md",
+      "redirect_url": "/office/volume-license-activation/activate-office-by-using-mak",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/gvlks.md",
+      "redirect_url": "/office/volume-license-activation/gvlks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/troubleshoot-volume-activation-of-office.md",
+      "redirect_url": "/office/volume-license-activation/troubleshoot-volume-activation-of-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office.md",
+      "redirect_url": "/office/volume-license-activation/tools-to-manage-volume-activation-of-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/activate-office-by-using-active-directory.md",
+      "redirect_url": "/office/volume-license-activation/activate-office-by-using-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/plan-volume-activation-of-office.md",
+      "redirect_url": "/office/volume-license-activation/plan-volume-activation-of-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md",
+      "redirect_url": "/office/volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/activate-office-by-using-kms.md",
+      "redirect_url": "/office/volume-license-activation/activate-office-by-using-kms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/configure-dns-to-activate-office-by-using-kms.md",
+      "redirect_url": "/office/volume-license-activation/configure-dns-to-activate-office-by-using-kms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/vlactivation/configure-a-kms-host-computer-for-office.md",
+      "redirect_url": "/office/volume-license-activation/configure-a-kms-host-computer-for-office",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/changes-windows-desktop.md",
+      "redirect_url": "/office/2016/changes-windows-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/whats-new-admins.md",
+      "redirect_url": "/office/2016/whats-new-admins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/privacy-options.md",
+      "redirect_url": "/office/2016/privacy-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/plan-multilanguage-deployment.md",
+      "redirect_url": "/office/2016/language/plan-multilanguage-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/language-identifiers-optionstate-id-values.md",
+      "redirect_url": "/office/2016/language/language-identifiers-optionstate-id-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/companion-proofing-languages.md",
+      "redirect_url": "/office/2016/language/companion-proofing-languages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/add-remove-language-packs.md",
+      "redirect_url": "/office/2016/language/add-remove-language-packs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/language-versions-language-interface-packs.md",
+      "redirect_url": "/office/2016/language/language-versions-language-interface-packs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/language/customize-language-setup-settings.md",
+      "redirect_url": "/office/2016/language/customize-language-setup-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/block-specific-file-format-types.md",
+      "redirect_url": "/office/2016/security/block-specific-file-format-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/remove-reset-file-passwords.md",
+      "redirect_url": "/office/2016/security/remove-reset-file-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/plan-security-settings-vba-macros.md",
+      "redirect_url": "/office/2016/security/plan-security-settings-vba-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/cryptography-encryption.md",
+      "redirect_url": "/office/2016/security/cryptography-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/prevent-file-format-attacks-using-file-validation.md",
+      "redirect_url": "/office/2016/security/prevent-file-format-attacks-using-file-validation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/digital-signatures.md",
+      "redirect_url": "/office/2016/security/digital-signatures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/identity-authentication-authorization.md",
+      "redirect_url": "/office/2016/security/identity-authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/protected-view.md",
+      "redirect_url": "/office/2016/security/protected-view",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2016/security/protect-sensitive-messages-documents-using-irm.md",
+      "redirect_url": "/office/2016/security/protect-sensitive-messages-documents-using-irm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2019/update.md",
+      "redirect_url": "/office/2019/update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2019/deploy.md",
+      "redirect_url": "/office/2019/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/office2019/overview.md",
+      "redirect_url": "/office/2019/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/preview-ltsc2024/install-ltsc-preview.md",
+      "redirect_url": "/office/ltsc/preview/install-ltsc-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/preview-ltsc2024/overview-ltsc-preview.md",
+      "redirect_url": "/office/ltsc/preview/overview-ltsc-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/preview-ltsc2024/overview-mac-preview.md",
+      "redirect_url": "/office/ltsc/preview/overview-mac-preview",
+      "redirect_document_id": false
     }
   ]
 }

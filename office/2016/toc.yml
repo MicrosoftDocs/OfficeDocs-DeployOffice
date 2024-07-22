@@ -1,0 +1,79 @@
+Items:
+- name: Deployment guide for Office 2016
+  items:
+  - name: What's new for admins
+    href: whats-new-admins.md
+  - name: Changes in Office 2016
+    href: changes-windows-desktop.md
+  - name: Office Help & Training
+    href: https://support.microsoft.com/office
+  - name: Application compatibility
+    items:
+    - name: Assess Office compatibility
+      href: ../compatibility/assess-office-compatibility.md?toc=/office/2016/toc.json
+    - name: Office Telemetry Dashboard
+      items:
+      - name: Resources guide
+        href: ../compatibility/compatibility-and-telemetry-in-office.md?toc=/office/2016/toc.json
+      - name: Plan
+        href: ../compatibility/plan-telemetry-dashboard-deployment.md?toc=/office/2016/toc.json
+      - name: Deploy
+        href: ../compatibility/deploy-telemetry-dashboard.md?toc=/office/2016/toc.json
+      - name: Update components
+        href: ../compatibility/update-office-telemetry-components-for-office-2016.md?toc=/office/2016/toc.json
+      - name: Monitor Office compatibility and deployments
+        href: ../compatibility/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/office/2016/toc.json
+      - name: Manage add-ins
+        href: ../compatibility/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/office/2016/toc.json
+      - name: Manage the privacy of data collected
+        href: ../compatibility/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/office/2016/toc.json
+      - name: Custom reporting and database schema
+        href: ../compatibility/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/office/2016/toc.json
+      - name: Data that the agent collects
+        href: ../compatibility/data-that-the-telemetry-agent-collects-in-office.md?toc=/office/2016/toc.json
+      - name: Document and solution types monitored
+        href: ../compatibility/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/office/2016/toc.json
+      - name: List of worksheets
+        href: ../compatibility/telemetry-dashboard-worksheet-reference.md?toc=/office/2016/toc.json
+    - name: Reference
+      items:
+      - name: Manage compatibility mode
+        href: ../compatibility/manage-compatibility-mode-for-office.md?toc=/office/2016/toc.json
+      - name: Office file formats
+        href: ../compatibility/office-file-format-reference.md?toc=/office/2016/toc.json
+      - name: XML file name extensions
+        href: ../compatibility/xml-file-name-extension-reference-for-office.md?toc=/office/2016/toc.json
+  - name: Volume activation
+    items:
+    - name: Overview
+      href: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/2016/toc.json
+    - name: Configure a KMS host computer
+      href: ../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/2016/toc.json
+    - name: Configure DNS for KMS
+      href: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/2016/toc.json
+    - name: Activate by using KMS
+      href: ../volume-license-activation/activate-office-by-using-kms.md?toc=/office/2016/toc.json
+    - name: Activate by using MAK
+      href: ../volume-license-activation/activate-office-by-using-mak.md?toc=/office/2016/toc.json
+    - name: Activate by using Active Directory
+      href: ../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/2016/toc.json
+    - name: Rearm Office installation in an image
+      href: ../volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/office/2016/toc.json
+    - name: Tools to manage volume activation
+      href: ../volume-license-activation/tools-to-manage-volume-activation-of-office.md?toc=/office/2016/toc.json
+    - name: Troubleshoot volume activation
+      href: ../volume-license-activation/troubleshoot-volume-activation-of-office.md?toc=/office/2016/toc.json
+  - name: Language deployment
+    items:
+    - name: Plan for multilanguage deployment
+      href: language/plan-multilanguage-deployment.md
+    - name: Customize language setup and settings
+      href: language/customize-language-setup-settings.md
+    - name: Add or remove language packs after deployment
+      href: language/add-remove-language-packs.md
+    - name: Language versions and language interface packs
+      href: language/language-versions-language-interface-packs.md
+    - name: Companion proofing languages
+      href: language/companion-proofing-languages.md
+    - name: Language identifiers and OptionState Id values
+      href: language/language-identifiers-optionstate-id-values.md
