@@ -1,4 +1,4 @@
-### YamlMime:Hub
+### YamlMime:Landing
 
 title: Office LTSC 2021 deployment documentation
 summary: Resources for IT professionals and admins on how to deploy and manage Office LTSC 2021.
@@ -44,12 +44,10 @@ landingContent:
   # Card
   - title: Activation
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: reference
         links:
-          - text: Configure a KMS host computer
-            url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
-          - text: Configure DNS for KMS
-            url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
+          - text: Activate Office LTSC 2021
+            url: ../../volume-license-activation/plan-volume-activation-of-office.md
       - linkListType: how-to-guide
         links:
           - text: Activate by using KMS
@@ -58,6 +56,14 @@ landingContent:
             url: ../../volume-license-activation/activate-office-by-using-mak.md?toc=/office/ltsc/2021/toc.json
           - text: Activate by using Active Directory
             url: ../../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/ltsc/2021/toc.json
+      - title: Configuration
+        linkLists:
+          - linkListType: how-to-guide
+            links:
+              - text: Configure a KMS host computer
+                url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
+              - text: Configure DNS for KMS
+                url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
 
   # Card
   - title: Updates and Maintenance
