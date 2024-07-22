@@ -9,11 +9,11 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Guide for IT admins on how to enable and configure cloud update in the Microsoft 365 Apps admin center"
-ms.date: 04/28/2024
+ms.date: 07/22/2024
 ---
 
 # Enabling and configuring Cloud Update
-A guide for IT admins who want to start using cloud update from the Microsoft 365 Apps admin center to manage updates for Microsoft 365 Apps for business or enterprise
+A guide for IT admins who want to start using cloud update from the Microsoft 365 Apps admin center to manage updates for Microsoft 365 Apps for business or enterprise.
 
 [Cloud update](../admincenter/cloud-update.md) is a service in the [Microsoft 365 Apps admin center](../admincenter/overview.md) that provides you with update automation for Microsoft 365 Apps directly from the Office Content Delivery Network (CDN). Cloud update is the replacement for servicing profile.
 
@@ -23,10 +23,11 @@ This document covers:
 - How to [enable](#enable-cloud-update) and [configure](#review-configuration-of-cloud-update) cloud update
 - How devices [onboard](#onboarding-of-devices) and [update](#update-flow)
 - [Best practices and tips](#best-practices-and-tips-for-working-with-cloud-update)
-- Frequently Asked Questions ([FAQ](#faq))
+- Frequently Asked Questions ([FAQ](#frequently-asked-questions-faq))
 
 > [!NOTE]
 > The information in this document applies to updates for Microsoft 365 Apps only. Cloud update does not replace, modify, or impact existing solutions for deploying other updates, for example Windows updates.
+> Cloud update is currently in Public Preview.
 
 >[!Tip]
 > If you prefer video over text, we have a [playlist of short instructional videos](https://aka.ms/CloudUpdateVideos) for you.
@@ -129,9 +130,9 @@ Here are some tips for using cloud update:
 - Allow processing time when pausing/resuming a profile. Pausing won't stop initiated updates but prevents new commands. A pause is typically applied within one hour.
 - Rollbacks also require processing time after configuration. If the profile is paused, rollbacks are still processed and executed.
 
-## FAQ
+## Frequently asked questions (FAQ)
 **Will enabling cloud update impact my existing update channel configuration for Microsoft 365 Apps?**
-No, by default cloud update does not make any automatic changes to a device's update channel. The option to change a device's update channel is controlled by the admin and initiated using the [Switch device update channel](../admincenter/inventory.md#switch-device-update-channel) feature.
+No, by default cloud update doesn't make any automatic changes to a device's update channel. The option to change a device's update channel is controlled by the admin and initiated using the [Switch device update channel](../admincenter/inventory.md#switch-device-update-channel) feature.
 
 **Will enabling cloud update impact any of my other update settings?**
 The settings you configure for each cloud update profile will determine which update settings are deployed. If you have existing update management tools in your environment, learn more about [compatibility with other management tools](../admincenter/cloud-update.md#compatibility-with-other-management-tools).
