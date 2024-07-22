@@ -12,7 +12,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Guide for admins on switching devices to Current Channel or Monthly Enterprise Channel for Microsoft 365 Apps to prepare for Copilot usage"
-ms.date: 03/18/2024
+ms.date: 07/22/2024
 ---
 
 # Change update channel of Microsoft 365 Apps to enable Copilot
@@ -43,6 +43,9 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
+
+> [!NOTE]
+> Cloud update and the Channel change feature are in **public preview**.
 
 We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
 
@@ -145,7 +148,7 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 
 ### Update Microsoft 365 Apps for Windows 10 or later assignments
 If you're deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel selected in the app configuration is re-evaluated and enforced during policy refresh. If the channels don't match, this causes unexpected channel flipping under the following circumstances:
-- Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
+- The Microsoft 365 Apps are deployed as a **Microsoft 365 Apps for Windows 10 and later** app.
 - The app is configured using the Configuration designer.
 - The app is assigned as required.
 - The selected channel differs from the newly assigned one.
