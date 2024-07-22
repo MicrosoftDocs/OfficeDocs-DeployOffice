@@ -44,7 +44,7 @@ Our general recommendation for Microsoft 365 Apps is to direct devices to the Of
 ## Cloud Update
 This section covers the recommended approach for changing the update channel using Cloud Updates. It walks you through the  steps of enabling Cloud Update and initiating the channel change.
 
-[!NOTE]
+> [!NOTE]
 > Cloud update and the Channel change feature are in **public preview**.
 
 We recommend using Microsoft Entra ID groups with user objects for initiating the channel change. It makes targeting the right subset of devices easier, especially when using the same Microsoft Entra ID group for assigning Copilot licenses. The service automatically translates user objects into the matching device objects, based on activation data.
