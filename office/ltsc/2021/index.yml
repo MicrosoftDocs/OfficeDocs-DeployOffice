@@ -44,14 +44,12 @@ landingContent:
   # Card
   - title: Activation
     linkLists:
-      - title: Configuration
-        linkLists:
-          - linkListType: how-to-guide
-            links:
-              - text: Configure a KMS host computer
-                url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
-              - text: Configure DNS for KMS
-                url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Configure a KMS host computer
+            url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2021/toc.json
+          - text: Configure DNS for KMS
+            url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2021/toc.json
       - linkListType: how-to-guide
         links:
           - text: Activate by using KMS
