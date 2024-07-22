@@ -132,7 +132,7 @@ Here are some tips for using cloud update:
 
 ## Frequently asked questions (FAQ)
 **Will enabling cloud update impact my existing update channel configuration for Microsoft 365 Apps?**
-No, by default cloud update doesn't make any automatic changes to a device's update channel. The option to change a device's update channel is controlled by the admin and initiated using the [Switch device update channel](../admincenter/inventory.md#switch-device-update-channel) feature.
+No, by default cloud update doesn't make any automatic changes to a device's update channel. The option to change a device's update channel is controlled by the admin and initiated using the [Switch device update channel](../admin-center/inventory.md#switch-device-update-channel) feature.
 
 **Will enabling cloud update impact any of my other update settings?**
 The settings you configure for each cloud update profile will determine which update settings are deployed. If you have existing update management tools in your environment, learn more about [compatibility with other management tools](../admin-center/cloud-update.md#compatibility-with-other-management-tools).
