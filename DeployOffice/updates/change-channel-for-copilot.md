@@ -148,7 +148,7 @@ Create a new configuration profile in Microsoft Intune. Refer to the following s
 
 ### Update Microsoft 365 Apps for Windows 10 or later assignments
 If you're deploying Microsoft 365 Apps with Intune using the [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps-add-office365) app, the channel selected in the app configuration is re-evaluated and enforced during policy refresh. If the channels don't match, this causes unexpected channel flipping under the following circumstances:
-- Deploying Microsoft 365 Apps using the Microsoft 365 Apps for Windows 10 and later app.
+- The Microsoft 365 Apps are deployed as a **Microsoft 365 Apps for Windows 10 and later** app.
 - The app is configured using the Configuration designer.
 - The app is assigned as required.
 - The selected channel differs from the newly assigned one.
