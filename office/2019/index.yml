@@ -76,15 +76,13 @@ landingContent:
             url: update.md#use-group-policy-to-specify-update-settings
 
   # Card
-  - title: Office 2019 for Mac
+  - title: Office for Mac
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Deployment guide for Office 2019 for Mac
-            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/2019/toc.json
       - linkListType: deploy
         links:
-          - text: Deployment options for Office 2019 for Mac
+          - text: Deployment guide for Office for Mac
+            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/2019/toc.json
+          - text: Deployment options for Office for Mac
             url: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/2019/toc.json
       - linkListType: how-to-guide
         links:
