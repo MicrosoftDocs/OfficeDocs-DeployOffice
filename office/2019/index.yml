@@ -41,7 +41,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Volume activation of Office 2019
-            url: ../volume-license-activation/plan-volume-activation-of-office.md
+            url: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/2019/toc.json
       - linkListType: tutorial
         links:
           - text: Configure a KMS host computer
