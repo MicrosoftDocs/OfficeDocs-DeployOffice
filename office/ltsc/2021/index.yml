@@ -80,10 +80,12 @@ landingContent:
   # Card
   - title: Office LTSC for Mac 2021
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Office for Mac (for admins and IT Pros)
+            url: /microsoft-365-apps/mac/overview?toc=/office/ltsc/2021/toc.json
       - linkListType: deploy
         links:
-          - text: Deployment guide for Office for Mac
-            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/ltsc/2021/toc.json
           - text: Deployment options for admins for Office for Mac
             url: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/ltsc/2021/toc.json
       - linkListType: how-to-guide

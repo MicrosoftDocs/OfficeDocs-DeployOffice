@@ -78,10 +78,12 @@ landingContent:
   # Card
   - title: Office for Mac
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Office for Mac (for admins and IT Pros)
+            url: /microsoft-365-apps/mac/overview?toc=/office/2019/toc.json
       - linkListType: deploy
         links:
-          - text: Deployment guide for Office for Mac
-            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/2019/toc.json
           - text: Deployment options for Office for Mac
             url: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/2019/toc.json
       - linkListType: how-to-guide
