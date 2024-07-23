@@ -78,6 +78,22 @@ landingContent:
             url: update.md#use-group-policy-to-specify-update-settings
 
   # Card
+  - title: Office LTSC for Mac 2021
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Deployment guide for Office for Mac
+            url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/ltsc/2021/toc.json
+      - linkListType: deploy
+        links:
+          - text: Deployment options for admins for Office for Mac
+            url: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/ltsc/2021/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Activate Office for Mac with Volume License Serializer
+            url: /microsoft-365-apps/mac/volume-license-serializer?toc=/office/ltsc/2021/toc.json
+
+  # Card
   - title: Troubleshooting and Support
     linkLists:
       - linkListType: reference
