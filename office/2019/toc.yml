@@ -1,6 +1,8 @@
 Items:
 - name: Deployment guide for Office 2019
   items:
+  - name: Office 2019 deployment documentation
+    href: index.yml
   - name: Overview
     href: overview.md
   - name: Deploy
@@ -37,8 +39,8 @@ Items:
       href: /microsoft-365-apps/deploy/install-different-office-visio-and-project-versions-on-the-same-computer?toc=/office/2019/toc.json
   - name: Office 2019 for Mac
     items:
-    - name: Deployment guide
-      href: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac?toc=/office/2019/toc.json
+    - name: Overview
+      href: /microsoft-365-apps/mac/overview?toc=/office/2019/toc.json
     - name: Deployment options
       href: /microsoft-365-apps/mac/deployment-options-for-office-for-mac?toc=/office/2019/toc.json
     - name: Volume License (VL) Serializer
