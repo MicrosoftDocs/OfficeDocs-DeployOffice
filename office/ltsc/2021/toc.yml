@@ -1,7 +1,7 @@
 Items:
 - name: Deployment guide for Office LTSC 2021
   items:
-  - name: Resources for Office LTSC 2021
+  - name: Office LTSC 2021 deployment documentation
     href: index.yml
   - name: Overview 
     href: overview.md

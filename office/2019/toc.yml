@@ -1,6 +1,8 @@
 Items:
 - name: Deployment guide for Office 2019
   items:
+  - name: Office 2019 deployment documentation
+    href: index.yml
   - name: Overview
     href: overview.md
   - name: Deploy
