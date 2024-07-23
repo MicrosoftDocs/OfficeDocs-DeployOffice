@@ -36,7 +36,7 @@ items:
       - name: Manage
         items:
           - name: Overview of update channels
-            href: /microsoft-365/updates/overview-update-channels
+            href: /microsoft-365-apps/updates/overview-update-channels
           - name: Choose how to deliver updates
             href: /microsoft-365/updates/choose-how-to-deliver-updates
           - name: Manage updates with Configuration Manager
