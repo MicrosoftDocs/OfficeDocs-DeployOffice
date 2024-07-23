@@ -1,6 +1,8 @@
 Items:
 - name: Deployment guide for Office 2016
   items:
+  - name: Office 2016 deployment documentation
+    href: index.yml
   - name: What's new for admins
     href: whats-new-admins.md
   - name: Changes in Office 2016
