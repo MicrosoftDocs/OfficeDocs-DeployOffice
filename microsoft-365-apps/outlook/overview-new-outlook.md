@@ -22,7 +22,7 @@ New Outlook is currently offered as a preview for commercial accounts and is gen
 
 ## Architecture
 
-The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](/microsoft-365-apps/webview2-install).
+The new Outlook for Windows, built upon modern service architecture, is inspired by the Outlook web experience. It operates within a streamlined Native Windows Integration Component and utilizes WebView2. For more information, see [Microsoft Edge WebView2 and Microsoft 365 Apps](../deploy/webview2-install.md).
 
 ## COM add-ins
 
