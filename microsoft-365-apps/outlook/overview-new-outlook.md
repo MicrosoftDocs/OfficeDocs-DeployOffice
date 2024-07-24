@@ -28,7 +28,7 @@ The new Outlook for Windows, built upon modern service architecture, is inspired
 
 In new Outlook for Windows, COM add-ins aren't supported in new Outlook for Windows. COM add-ins can manipulate Outlook in many ways and often led to instability and crashes in Outlook. Web add-ins provide a sandbox environment for add-ins to operate in with checks and balances in place to ensure Outlook is more stable and robust. Existing web add-ins are fully supported, with no extra work required from partners. If you have a web add-in, nothing else is required to transition to the new client.  
 
-For more information, see [Migrate from COM add-ins to web add-ins](./get-started/state-of-com-add-ins.md).
+For more information, see [Identify COM add-ins in your organization](./get-started/state-of-com-add-ins.md).
 
 ## Feature delivery
 
