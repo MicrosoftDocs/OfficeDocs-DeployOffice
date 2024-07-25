@@ -11,23 +11,10 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 05/20/2024
+ms.date: 07/25/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
-
-> [!NOTE]
-> Cloud update is the successor to servicing profile. If you still see servicing profile in the [Microsoft 365 Apps admin center](https://config.office.com), your tenant has been temporarily held back from the upgrade due to the use of **Device selection criteria** > **Choose groups to include**. This option is not available with cloud update. Please review the onboarding behavior for cloud update, which uses [channel to profile mapping](#channel-to-profile-mapping) for discovering and managing eligible devices.
->
->If you're ready to upgrade today, follow these steps:
-> 
-> 1. Sign in to the Microsoft 365 Apps admin center.
-> 2. Click the Give feedback button in the top right corner.
-> 3. Select an option and enter a comment expressing your desire to switch to Cloud Update.
-> 4. Provide your email address.
-> 5. Click Submit.
->    
->We will reach out to you with more information.
 
 Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
 
