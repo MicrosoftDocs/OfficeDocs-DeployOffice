@@ -16,7 +16,18 @@ ms.date: 07/25/2024
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
 
-Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments, while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier with the ability to move devices to a compatible update channel and maintain monthly updates with minimal administrative effort.
+Cloud update provides a modern update management solution for Microsoft 365 Apps. Use cloud update to address common servicing needs with features such as custom rollout waves, exclusion windows, pause, and rollback. It works for organizations of any size, handling compatibility concerns for larger environments while offering simpler controls for smaller businesses. In addition, cloud update makes [Copilot readiness](../updates/change-channel-for-copilot.md) easier by maintaining monthly updates with minimal administrative effort.
+
+## Getting started with cloud update
+
+Cloud update is the recommended tool for servicing Microsoft 365 Apps. Use the following resources to prepare, enable, configure, and monitor cloud update for your organization.
+
+1. Review the [requirements for using cloud update](#requirements) to ensure your environment is ready.
+2. Review how [cloud update works with other management tools](#compatibility-with-other-management-tools) and verify that you don't have any conflicts.
+3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
+4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
+5. Follow the guide to [enable and configure cloud update](../best-practices/adopting-cloud-update.md).
+6. Refer to the [troubleshooting](#troubleshooting) section for more advanced topics.
 
 ## Requirements
 
@@ -37,21 +48,10 @@ Cloud update provides a modern update management solution for Microsoft 365 Apps
 [!INCLUDE [Network requirements](./includes/requirements-network.md)]
 
 ### Microsoft Entra groups requirements
-Cloud update has multiple features that support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves) or setup [device exclusions](#exclude-groups).
+Cloud update has multiple features that support the use of [Microsoft Entra groups](/entra/fundamentals/concept-learn-about-groups). For example, groups can be used to configure custom [rollout waves](#rollout-waves), setup [device exclusions](#exclude-groups) or exclude a certain group of devices from updates for a specific [time frame](#exclusion-windows).
 
 <!--Using include for adding requirements-->
 [!INCLUDE [Groups requirements](./includes/requirements-groups.md)]
-
-## Getting started with cloud update
-
-Cloud update is the recommended tool for managing Microsoft 365 Apps. Use the following resources to prepare, enable, configure, and monitor cloud update for your organization.
-
-1. Review the [requirements for using cloud update](#requirements) to ensure your environment is ready.
-2. Review how [cloud update works with other management tools](#compatibility-with-other-management-tools) and verify that you don't have any conflicts.
-3. Review how cloud update uses [channel to profile mapping](#channel-to-profile-mapping) for identifying eligible devices and onboarding them for update management.
-4. Learn more about the [controls](#profile-controls) and [settings](#tenant-settings) available with cloud update.
-5. Follow the guide to [enable and configure cloud update](../best-practices/adopting-cloud-update.md).
-6. Refer to the [troubleshooting](#troubleshooting) section for more advanced topics.
 
 ## Touring cloud update
 
