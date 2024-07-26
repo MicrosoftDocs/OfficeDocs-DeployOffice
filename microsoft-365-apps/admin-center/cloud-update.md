@@ -208,7 +208,7 @@ Rollout waves let you configure custom waves for your update rollout. For exampl
 - If [update validation]() is enabled, ...
     - wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
     - we recommend to have at least twenty devices on wave 1, so enough signals are generated.
-    - waves start on their assigned start dates. Update validation does not halt or delay waves.
+    - waves start on their assigned start dates. Update validation doesn't halt or delay waves.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
 - The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves pass, and all unpatched devices are eligible for updates.
 - A common practise is to use the first two waves for closer monitoring of the new update, and the later two waves for broad deployment. Often, wave 1 and 2 covers the first 20% of all devices, while the remaining 80% are covered by wave 3 and 4.
