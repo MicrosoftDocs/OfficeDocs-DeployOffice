@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Provides guidance and steps for Office admins for running Microsoft 365 Apps on Remote Desktop Services."
-ms.date: 04/19/2024
+ms.date: 07/26/2024
 ---
 
 # Deploy Microsoft 365 Apps by using Remote Desktop Services
@@ -34,7 +34,7 @@ The following is a list of prerequisites that you need to deploy Microsoft 365 A
   - For the Project and Visio desktop apps, a subscription plan that includes those products.
 - The Office Deployment Tool, which is available on the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065). 
 - A separate user account for each user who signs in to the shared computer.
-- An [eligible license assigned](/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
+- A license from above plans [assigned](/microsoft-365/admin/manage/assign-licenses-to-users) to each user account.
 - A version of Windows listed in the [Microsoft 365 plans for business, education, and government system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oc60f6).
 - Reliable connectivity between the shared computer and the internet.
 
