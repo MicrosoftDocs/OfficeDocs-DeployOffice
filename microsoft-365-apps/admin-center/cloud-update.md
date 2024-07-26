@@ -106,7 +106,7 @@ Profile controls let admins pause a rollout or roll back to a previous build amo
 Pause is a feature allowing you to stop all update actions. For example, if the latest update for Microsoft 365 Apps isn't compatible with another app in your environment, you can pause the profile until the issue is resolved. Keep these points in mind when using pause:
 
 - When you pause a cloud update profile, all remaining update deployments are halted. They remain halted until an admin resumes the profile. Resume the profile as soon as possible to prevent blocking your devices from receiving updates.
-- For devices which are already in the "in progress" state, those continue with the update installation. Consider issuing a [rollback](#rollback) on these devices if necessary.
+- For devices, which are already in the "in progress" state, the update installation continues. Consider issuing a [rollback](#rollback) on these devices if necessary.
 - When a profile is paused, the rollback feature is still acknowledged.
 
 To pause and resume a profile, follow these steps:
@@ -208,9 +208,9 @@ Rollout waves let you configure custom waves for your update rollout. For exampl
 - If [update validation]() is enabled, ...
     - wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
     - we recommend to have at least twenty devices on wave 1, so enough signals are generated.
-    - waves will continue to start on their assigned start dates. Update validation will not halt or delay the start of a wave.
+    - waves start on their assigned start dates. Update validation does not halt or delay waves.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
-- The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves will pass, and all unpatched devices are eligible for updates.
+- The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves pass, and all unpatched devices are eligible for updates.
 - A common practise is to use the first two waves for closer monitoring of the new update, and the later two waves for broad deployment. Often, wave 1 and 2 covers the first 20% of all devices, while the remaining 80% are covered by wave 3 and 4.
 
 To configure rollout waves, follow these steps:
@@ -245,7 +245,7 @@ Deadline is available for all cloud update profiles.
 
 The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The deadline for each device to apply updates is determined on a per-device basis, starting from the moment the first installation attempt is unsuccessful. For instance, if the deadline is set to three days and a device goes online two days after an update is released by Microsoft and the installation fails due to open applications, the user will be prompted in three days. The prompt is based on the timing of the initial failed attempt, not the release date of the update or wave start date.
+- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. Neither the start of the deployment wave nor the update's release date influence this timeline.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -271,7 +271,7 @@ Cloud updates take priority over existing update management settings for Microso
 
 With cloud update enabled, devices are automatically mapped to the corresponding profile based on their update channel. For example, all devices on Current Channel map to the Current Channel profile. Once the devices are mapped to a profile, cloud update delivers the appropriate policies to these devices.
 
-Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel *won't be managed by cloud update* until they're moved to a channel that cloud update supports.
+Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
 
 ## Deactivation
 If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback or allow Microsoft to contact you, and choose **Submit**.
@@ -299,7 +299,7 @@ Updates applied outside of a custom rollout wave are due to external actions occ
   
 ### My Device-based group didn't work with *[feature name]*
 
-If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined won't be recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
+If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined aren't recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
 
 ## Report a problem
 
