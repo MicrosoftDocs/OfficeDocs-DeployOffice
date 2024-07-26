@@ -106,7 +106,7 @@ Profile controls let admins pause a rollout or roll back to a previous build amo
 Pause is a feature allowing you to stop all update actions. For example, if the latest update for Microsoft 365 Apps isn't compatible with another app in your environment, you can pause the profile until the issue is resolved. Keep these points in mind when using pause:
 
 - When you pause a cloud update profile, all remaining update deployments are halted. They remain halted until an admin resumes the profile. Resume the profile as soon as possible to prevent blocking your devices from receiving updates.
-- For devices, which are already in the "in progress" state, the update installation continues. Consider issuing a [rollback](#rollback) on these devices if necessary.
+- When devices are already in the "in progress" state, the update installation continues. Consider issuing a [rollback](#rollback) on these devices if necessary.
 - When a profile is paused, the rollback feature is still acknowledged.
 
 To pause and resume a profile, follow these steps:
@@ -207,11 +207,11 @@ Rollout waves let you configure custom waves for your update rollout. For exampl
 - You can configure a delay between waves ranging from 1-5 days.
 - If [update validation]() is enabled, ...
     - wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
-    - we recommend to have at least twenty devices on wave 1, so enough signals are generated.
+    - we recommend having at least twenty devices on wave 1, so enough signals are generated.
     - waves start on their assigned start dates. Update validation doesn't halt or delay waves.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
 - The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves pass, and all unpatched devices are eligible for updates.
-- A common practise is to use the first two waves for closer monitoring of the new update, and the later two waves for broad deployment. Often, wave 1 and 2 covers the first 20% of all devices, while the remaining 80% are covered by wave 3 and 4.
+- A common practice is to use the first two waves for closer monitoring of the new update, and the latter two waves for broad deployment. Often, wave 1 and 2 covers the first 20% of all devices, while the remaining 80% are covered by wave 3 and 4.
 
 To configure rollout waves, follow these steps:
 
