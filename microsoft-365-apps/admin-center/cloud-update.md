@@ -228,7 +228,7 @@ To configure rollout waves, follow these steps:
 > [!IMPORTANT]
 > Rollout waves can be used to help reduce network congestion. In addition, cloud update includes built-in update thresholds. These include the following:
 > 
-> - The **Current Channel** profile leverages the default rollout schedule defined by the Office CDN, which on average reaches full deployment within 5 days of patch Tuesday.
+> - The **Current Channel** profile leverages the default rollout schedule defined by the Office Content Delivery Network (CDN), which on average reaches full deployment within 5 days of patch Tuesday.
 > - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating per day. This same enforcement is applied when using custom rollout waves. 
 
 ### Update validation
