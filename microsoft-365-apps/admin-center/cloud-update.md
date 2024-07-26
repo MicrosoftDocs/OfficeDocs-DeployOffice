@@ -82,7 +82,7 @@ The [Monthly Enterprise Channel profile](https://config.office.com/officeSetting
 - **Profile settings** is a separate tab on this page for configuring profile-specific settings, such as [rollout waves](#rollout-waves) and the [update deadline](#deadline).
 
 ### Current Channel profile
-[Current Channel](../updates/overview-update-channels.md#current-channel-overview) delivers updates multiple times a month, on an unset schedule, as soon as they're ready for customers. Due to this cadence, the Current Channel profile a reduced set of features that fit the channel dynamic.
+[Current Channel](../updates/overview-update-channels.md#current-channel-overview) delivers updates multiple times a month, on an unset schedule as soon as they're ready for customers. Due to this cadence, the Current Channel profile a reduced set of features that fit the channel dynamic.
 
 The [Current Channel profile](https://config.office.com/officeSettings/MPCurrentChannel) page for cloud update provides an at-a-glance view of your update progress, management status, and health for devices on Current Channel.
 
@@ -105,8 +105,8 @@ Profile controls let admins pause a rollout or roll back to a previous build amo
 
 Pause is a feature allowing you to stop all update actions. For example, if the latest update for Microsoft 365 Apps isn't compatible with another app in your environment, you can pause the profile until the issue is resolved. Keep these points in mind when using pause:
 
-- When you pause a cloud update profile,  all remaining update deployments are halted. They remain halted until an admin resumes the profile. Resume the profile as soon as possible to prevent blocking your devices from receiving updates.
-- Devices that received their update policies are now "in progress" and proceed with the assigned action. Consider issuing a [rollback](#rollback) on these devices if necessary.
+- When you pause a cloud update profile, all remaining update deployments are halted. They remain halted until an admin resumes the profile. Resume the profile as soon as possible to prevent blocking your devices from receiving updates.
+- For devices which are already in the "in progress" state, those continue with the update installation. Consider issuing a [rollback](#rollback) on these devices if necessary.
 - When a profile is paused, the rollback feature is still acknowledged.
 
 To pause and resume a profile, follow these steps:
@@ -118,13 +118,14 @@ To pause and resume a profile, follow these steps:
 5. Resume the profile by returning to the **Monthly Enterprise Channel** profile page and selecting **Resume channel**.
 
 > [!NOTE]
-> For rollout waves, the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
+> For [rollout waves]((#rollout-waves)), the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
 
 ### Rollback
 
-Rollback is available for devices managed by the Monthly Enterprise Channel profile.
+> [!NOTE]
+> Rollback is only available for devices managed by the Monthly Enterprise Channel profile. 
 
-Rollback is a feature that enables you to roll back a device to a previous version. For example, if your finance department experiences an issue with the latest version of Excel, you can roll them back to the previous version. Keep these points in mind when using rollback:
+Rollback enables you to roll back a device to a previous version. For example, if your finance department experiences an issue with the latest version of Excel, you can roll them back to the previous version. Keep these points in mind when using rollback:
 
 - Devices that are rolled back will stay on the previous version until the next version is released. When the new version releases, devices in a rolled-back state revert to their regular update schedule. They skip the previous version and update to the latest release. 
 - If the underlying issue was resolved, you can cancel a rollback action before the next version is available. 
@@ -145,9 +146,10 @@ Tenant settings apply to all profiles, unless otherwise specified, and allow you
 
 ### Exclusion windows
 
-Exclusion windows is available for devices managed by the Monthly Enterprise Channel profile.
+> [!NOTE]
+> Exclusion windows is only available for devices managed by the Monthly Enterprise Channel profile. 
 
-Exclusion windows is a feature that enables you to limit change in your environment during busy periods, such as tax season or at the end of the financial year. Create an exclusion window to prevent devices from downloading updates during specific dates. Keep these points in mind when using exclusion windows:
+Exclusion windows enables you to limit change in your environment during busy periods, such as tax season or at the end of the fiscal year. Create an exclusion window to prevent devices from downloading updates during specific dates. Keep these points in mind when using exclusion windows:
 
 - By default, exclusion windows affect all devices managed by a corresponding cloud update profile. 
 - You can set an exclusion window for specific devices or users in a Microsoft Entra group. Only these specified devices or users are excluded from updates, while all other devices follow their regular update schedule.
@@ -170,7 +172,7 @@ To create and manage an exclusion window, follow these steps:
 
 ### Exclude groups
 
-Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude one or more devices. For example, you might need to move a device to an update channel that isn't currently available with cloud update. Keep these points in mind when using exclude groups:
+Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude specific devices or users. For example, you might need to move a device to an update channel that isn't currently available with cloud update, or exclude user accounts used for testing from cloud update. Keep these points in mind when using exclude groups:
 
 - Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
@@ -203,9 +205,13 @@ Rollout waves let you configure custom waves for your update rollout. For exampl
 - Rollout waves support groups. Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - You don't need to include every user or device in a custom rollout wave. A final wave is included by default that includes all remaining devices in the Monthly Enterprise profile.
 - You can configure a delay between waves ranging from 1-5 days.
-- If [update validation]() is enabled, wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
+- If [update validation]() is enabled, ...
+    - wave 1 is locked to 7 days, and all other waves are configured for **days between waves**.
+    - we recommend to have at least twenty devices on wave 1, so enough signals are generated.
+    - waves will continue to start on their assigned start dates. Update validation will not halt or delay the start of a wave.
 - Rollout waves aren't enforced for expedited actions, such as rollback and switch device update channel. These actions occur outside of a wave assignment.
-- The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves will pass, and all unpatched devices are eligible for updates. 
+- The rollout wave schedule continues even if a profile is paused or during an active exclusion window. For example, if you pause a profile on patch Tuesday and resume 20 days later, all rollout waves will pass, and all unpatched devices are eligible for updates.
+- A common practise is to use the first two waves for closer monitoring of the new update, and the later two waves for broad deployment. Often, wave 1 and 2 covers the first 20% of all devices, while the remaining 80% are covered by wave 3 and 4.
 
 To configure rollout waves, follow these steps:
 
@@ -223,7 +229,7 @@ To configure rollout waves, follow these steps:
 > Rollout waves can be used to help reduce network congestion. In addition, cloud update includes built-in update thresholds. These include the following:
 > 
 > - The **Current Channel** profile leverages the default rollout schedule defined by the Office CDN, which on average reaches full deployment within 5 days of patch Tuesday.
-> - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating on a daily basis. This same enforcement is applied when using custom rollout waves. 
+> - The **Monthly Enterprise Channel** profile has a separate threshold that prevents more than 30% of your eligible devices from updating per day. This same enforcement is applied when using custom rollout waves. 
 
 ### Update validation
 
@@ -237,9 +243,9 @@ Update validation is a feature that enables you to validate new updates for the 
 
 Deadline is available for all cloud update profiles. 
 
-The update deadline is used to ensure updates are applied in a specified timeframe. Keep these points in mind when configuring your update deadline:
+The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The deadline is uniquely calculated for each device once the first installation attempt fails. For example, the deadline is set to three days. A device comes online two days after patch Tuesday and receives the update. Outlook is open so the update fails to apply in the background due to a running app. The three day deadline is now applied.
+- The deadline for each device to apply updates is determined on a per-device basis, starting from the moment the first installation attempt is unsuccessful. For instance, if the deadline is set to three days and a device goes online two days after an update is released by Microsoft and the installation fails due to open applications, the user will be prompted in three days. The prompt is based on the timing of the initial failed attempt, not the release date of the update or wave start date.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -268,14 +274,9 @@ With cloud update enabled, devices are automatically mapped to the corresponding
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel *won't be managed by cloud update* until they're moved to a channel that cloud update supports.
 
 ## Deactivation
-> [!NOTE]
-> Deactivation capability is only available on the new cloud update. Using this capability doesn't affect the update channel configuration. 
+If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback or allow Microsoft to contact you, and choose **Submit**.
 
-If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both of these channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback or allow Microsoft to contact you, and choose **Submit**.
-
-The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to **Eligible for *ChannelName*** within the same 30-minute window. Admins can manage these devices, but should first set *ignoreGPO = 0* for these devices before beginning to manage them. 
-
-For customers and organizations currently using other Microsoft 365 update management tools, the new cloud update offers a streamlined and efficient alternative. Transitioning to cloud update can significantly reduce the administrative burden associated with managing updates, making it a reliable choice for modernizing your update management process.
+The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to **Eligible for *ChannelName*** within the same 30-minute window. Admins can manage these devices but should first set *ignoreGPO = 0* for these devices before beginning to manage them. 
 
 ## Troubleshooting
 > [!IMPORTANT]
