@@ -118,7 +118,7 @@ To pause and resume a profile, follow these steps:
 5. Resume the profile by returning to the **Monthly Enterprise Channel** profile page and selecting **Resume channel**.
 
 > [!NOTE]
-> For [rollout waves]((#rollout-waves)), the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
+> For [rollout waves](#rollout-waves), the scheduled rollout continues when a profile is paused and does not restart when the profile is resumed.
 
 ### Rollback
 
