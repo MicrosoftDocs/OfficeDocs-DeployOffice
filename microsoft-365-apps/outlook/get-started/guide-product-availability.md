@@ -40,7 +40,7 @@ For more information about support and feedback, see the article: [Contact suppo
 
 ### Stage 2: Opt-out
 
-After a period for feature capability development and quality assessment, the migration will move to the **opt-out** stage. In this stage, new Outlook is **on by default**, automatically bringing users into the new experience. IT administrators will have at least 12 months notice before this stage is implemented in production rings. Users can still revert to classic Outlook during this stage if needed.
+After a period for feature capability development and quality assessment, the migration will move to the **opt-out** stage. In this stage, new Outlook is **on by default**, automatically bringing users into the new experience. IT administrators will have at least 12 months notice before this stage is implemented in managed Enterprise plans. Users can still revert to classic Outlook during this stage if needed.
 
 For more resources to assist with adoption and migration, see [New Outlook for Windows Adoption](https://aka.ms/newOutlookAdoption).
 
