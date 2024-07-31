@@ -98,7 +98,7 @@ You can switch to the new Outlook application by using the toggle found in the O
 
 ### Download from the Windows Store
 
-You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](microsoft-365-apps/outlook/get-started/deployment-new-outlook).
+You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](micorosft-365-apps/outlook/get-started/deployment-new-outlook).
 
 ### Manage settings
 
@@ -129,13 +129,13 @@ For more general FAQs, see the Frequently Asked Questions document in the [New O
 
 ### Availability & Deployment
 
-Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](microsoft-365-apps/outlook/get-started/guide-product-availability).
+Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](/outlook/get-started/guide-product-availability).
 
 The toggle is now available to Semiannual channel users as of build 16731.20504 (out of July fork, as of January 2024).
 
 The preview is now available in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel. The toggle to try the new Outlook (located in the top right of the window) is available to users with supported accounts only. Exchange on-prem is currently unsupported. Admins can control visibility of the toggle via a registry value.
 
-For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](microsoft-365-apps/outlook/get-started/guide-product-availability).
+For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](/outlook/get-started/guide-product-availability).
 
 The new Outlook for Windows does an update check upon each launch. If a new version is available, it's automatically downloaded and installed.
 
