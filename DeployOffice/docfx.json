@@ -1,0 +1,88 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices",
+          "**/common/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "**/common/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/deployoffice/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "searchScope": [
+        "Deploy Office"
+      ],
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://techcommunity.microsoft.com",
+      "titleSuffix": "Deploy Office",
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "claydetels19",
+        "jborsecnik",
+        "American-Dipper",
+        "garycentric",
+        "beccarobins",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
+        "American-Dipper",
+        "chrfox",
+        "DCtheGeek",
+        "jwhit-MSFT",
+        "samanro",
+        "dstrome",
+        "robmazz"
+      ]
+    },
+    "fileMetadata": {
+      "recommendations": {
+        "compat/**/*.md": false,
+        "fieldnotes/**/*.md": false,
+        "oct/**/*.md": false,
+        "office2016/**/*.md": false,
+        "other/**/*.md": false,
+        "privacy/**/*.md": false,
+        "security/**/*.md": false,
+        "vlactivation/**/*.md": false
+      },
+      "feedback_product_url": {
+        "insider/**/*.md": "https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider"
+      },
+      "titleSuffix": {
+        "insider/**/*.md": "Microsoft 365 Insider"
+      }
+    },
+    "template": [],
+    "dest": "OfficeDocs-OfficeProPlus",
+    "markdownEngineName": "markdig"
+  }
+}
