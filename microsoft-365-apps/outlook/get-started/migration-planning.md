@@ -8,7 +8,6 @@ ms.topic: overview
 ms.service: outlook
 ms.collection: Tier3
 ms.localizationpriority: medium
-ms.custom: intro-overview
 recommendations: true
 description: "Migration planning guide for new Outlook"
 ms.custom: QuickDraft  
@@ -152,6 +151,8 @@ The new Outlook for Windows can be deployed through the classic Outlook for Wind
 
 If you prefer to not have the new Outlook for Windows show up in your organization's devices, you can remove it after installing as part of the update. Admins can do this by following the instructions to remove the app package using PowerShell and using the parameter: Microsoft.OutlookForWindows. The PowerShell cmdlet to use is:
 
+    ```powershell
     Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+    ```
 
 For more information on how to manage the transition between classic and new Outlook, see [Run new Outlook and classic Outlook side by side](https://support.microsoft.com/office/run-new-outlook-and-classic-outlook-side-by-side-a624c36d-c50f-43bc-9c8b-dd17b5690ffb).
