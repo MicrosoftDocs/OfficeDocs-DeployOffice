@@ -1,0 +1,120 @@
+### YamlMime:Landing
+
+title: Office 2016 deployment documentation
+summary: Resources for IT professionals and admins on how to deploy and manage Office 2016.
+
+metadata:
+  title: Office 2016 deployment documentation
+  description: Learn how to deploy and manage Office 2016.
+  author: nicholasswhite
+  ms.author: nwhite
+  manager: dougeby
+  ms.date: 07/22/2024
+  ms.topic: landing-page
+  ms.service: office-perpetual-itpro
+  ms.collection:
+    - tier1
+    - essentials-navigation
+
+landingContent:
+  # Card
+  - title: Deployment guide for Office 2016
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: What's new for admins in Office 2016
+            url: whats-new-admins.md
+          - text: Changes in Office 2016
+            url: changes-windows-desktop.md
+          - text: Office Help & Training
+            url: https://support.microsoft.com/office
+
+  # Card
+  - title: Application compatibility
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Assess Office compatibility
+            url: ../compatibility/assess-office-compatibility.md?toc=/office/2016/toc.json
+      - linkListType: overview
+        links:
+          - text: Office Telemetry Dashboard overview
+            url: ../compatibility/compatibility-and-telemetry-in-office.md?toc=/office/2016/toc.json
+      - linkListType: tutorial
+        links:
+          - text: Plan Office Telemetry Dashboard deployment
+            url: ../compatibility/plan-telemetry-dashboard-deployment.md?toc=/office/2016/toc.json
+          - text: Deploy Office Telemetry Dashboard
+            url: ../compatibility/deploy-telemetry-dashboard.md?toc=/office/2016/toc.json
+          - text: Update Office Telemetry components for Office 2016
+            url: ../compatibility/update-office-telemetry-components-for-office-2016.md?toc=/office/2016/toc.json
+          - text: Monitor Office compatibility and deployments
+            url: ../compatibility/monitor-office-compatibility-and-deployments-by-using-telemetry-dashboard.md?toc=/office/2016/toc.json
+          - text: Manage add-ins using Telemetry Dashboard
+            url: ../compatibility/manage-add-ins-by-using-telemetry-dashboard-in-office.md?toc=/office/2016/toc.json
+          - text: Manage the privacy of data collected
+            url: ../compatibility/manage-the-privacy-of-data-monitored-by-telemetry-in-office.md?toc=/office/2016/toc.json
+          - text: Custom reporting and database schema reference
+            url: ../compatibility/custom-reporting-and-database-schema-reference-for-telemetry-dashboard.md?toc=/office/2016/toc.json
+          - text: Data collected by the Telemetry Agent
+            url: ../compatibility/data-that-the-telemetry-agent-collects-in-office.md?toc=/office/2016/toc.json
+          - text: Document and solution types monitored
+            url: ../compatibility/document-and-solution-types-monitored-by-telemetry-in-office.md?toc=/office/2016/toc.json
+          - text: Telemetry Dashboard worksheet reference
+            url: ../compatibility/telemetry-dashboard-worksheet-reference.md?toc=/office/2016/toc.json
+      - linkListType: reference
+        links:
+          - text: Manage compatibility mode
+            url: ../compatibility/manage-compatibility-mode-for-office.md?toc=/office/2016/toc.json
+          - text: Office file formats reference
+            url: ../compatibility/office-file-format-reference.md?toc=/office/2016/toc.json
+          - text: XML file name extensions reference
+            url: ../compatibility/xml-file-name-extension-reference-for-office.md?toc=/office/2016/toc.json
+
+  # Card
+  - title: Volume activation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of volume activation for Office
+            url: ../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/2016/toc.json
+      - linkListType: tutorial
+        links:
+          - text: Configure a KMS host computer
+            url: ../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/2016/toc.json
+          - text: Configure DNS for KMS
+            url: ../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/2016/toc.json
+      - linkListType: how-to-guide
+        links:
+          - text: Activate Office using KMS
+            url: ../volume-license-activation/activate-office-by-using-kms.md?toc=/office/2016/toc.json
+          - text: Activate Office using MAK
+            url: ../volume-license-activation/activate-office-by-using-mak.md?toc=/office/2016/toc.json
+          - text: Activate Office using Active Directory
+            url: ../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/2016/toc.json
+          - text: Rearm Office installation in an image
+            url: ../volume-license-activation/rearm-an-office-installation-on-an-image-when-using-kms-to-activate.md?toc=/office/2016/toc.json
+          - text: Tools to manage volume activation
+            url: ../volume-license-activation/tools-to-manage-volume-activation-of-office.md?toc=/office/2016/toc.json
+          - text: Troubleshoot volume activation
+            url: ../volume-license-activation/troubleshoot-volume-activation-of-office.md?toc=/office/2016/toc.json
+
+  # Card
+  - title: Language deployment
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Plan for multilanguage deployment
+            url: language/plan-multilanguage-deployment.md
+      - linkListType: how-to-guide
+        links:
+          - text: Customize language setup and settings
+            url: language/customize-language-setup-settings.md
+          - text: Add or remove language packs after deployment
+            url: language/add-remove-language-packs.md
+          - text: Language versions and language interface packs
+            url: language/language-versions-language-interface-packs.md
+          - text: Companion proofing languages
+            url: language/companion-proofing-languages.md
+          - text: Language identifiers and OptionState Id values
+            url: language/language-identifiers-optionstate-id-values.md

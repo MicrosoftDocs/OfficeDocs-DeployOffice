@@ -30,7 +30,7 @@ Volume licensed versions of Office 2019 are available for enterprise admins to d
 
 These Office products now use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
-For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For devices running macOS, Office Standard 2019 for Mac is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What's changed in Office 2019?
 
@@ -44,7 +44,6 @@ In addition to Click-to-Run, the following are some other changes that you need 
 - When you install Office Professional Plus 2019, all apps are installed by default. But, you can configure the Office Deployment Tool to exclude certain apps from being installed.
 - Office 2019 is installed on the system drive, which is usually the C:\ drive. The installation location can’t be changed.
 - You can configure updates to Office 2019, such as security updates and bug fixes, to be automatically downloaded and installed from the Office CDN. Individual downloads for each security update or bug fix aren’t available. 
-
 
 ## What's stayed the same in Office 2019?
 
@@ -71,7 +70,7 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - Office Professional Plus 2019 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Word, and Skype for Business. 
 - Access and Publisher aren't available for devices running macOS.
-- There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+- There isn’t a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - All products in the Office 2019 are available in both 32-bit and 64-bit versions. We recommend 64-bit on computers that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet access isn’t required to install, activate, or use Office 2019.
 - There isn’t a 2019 version of SharePoint Designer or InfoPath. The last version for both products is 2013.

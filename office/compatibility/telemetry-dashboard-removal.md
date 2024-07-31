@@ -85,8 +85,8 @@ As an alternative to Office Telemetry Dashboard, we recommend using the followin
 
 For more information about these tools, see the following articles:
 
-- [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](../readiness-tools.md)
-- [Overview of inventory in the Microsoft 365 Apps admin center](../admin-center/inventory.md)
-- [Overview of Apps health in the Microsoft 365 Apps admin center](../admin-center/microsoft-365-apps-health.md)
+- [Overview of application compatibility and readiness assessment tools for Microsoft 365 Apps](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)
+- [Overview of inventory in the Microsoft 365 Apps admin center](/microsoft-365-apps/admin-center/inventory)
+- [Overview of Apps health in the Microsoft 365 Apps admin center](/microsoft-365-apps/admin-center/microsoft-365-apps-health)
 - [Introduction to Apps health (video)](https://youtu.be/g9tiCFNDOEw)
 - [Microsoft 365 Apps readiness dashboard (in Configuration Manager)](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash)

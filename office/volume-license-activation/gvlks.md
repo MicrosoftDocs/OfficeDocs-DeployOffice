@@ -58,7 +58,7 @@ By default, volume licensed versions of Office, such as Office LTSC 2021, are in
 |Word 2019  <br/> |  PBX3G-NWMT6-Q7XBW-PYJGG-WXD33 <br/> |
 
 > [!NOTE]
-> There isn't a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+> There isn't a new 2019 version of OneNote, but a version of OneNote is installed with Office 2019. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 
 ## GVLKs for Office 2016
 |**Product**|**GVLK**|

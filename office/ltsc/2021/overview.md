@@ -33,14 +33,14 @@ These Office products use Click-to-Run, instead of Windows Installer (MSI), as t
 
 Office LTSC 2021 is supported on devices running Windows 10 or Windows 11. For more information, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-For devices running macOS, Office LTSC Standard for Mac 2021 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For devices running macOS, Office LTSC Standard for Mac 2021 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What changed in Office LTSC 2021?
 
 The following are changes in Office LTSC 2021 compared to the volume licensed version of Office 2019.
 
 > [!TIP]
-> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../office/2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
+> If you’re moving to Office LTSC 2021 from Office 2016, you should also review the changes documented in [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most important difference between Office 2016 and Office LTSC 2021 is the change in the installation technology from Windows Installer (MSI) to Click-to-Run.
 
 #### Privacy-related policy settings
 
@@ -56,7 +56,7 @@ These policy settings are located under User Configuration\Policies\Administrati
 > [!NOTE]
 > The “Allow the use of additional optional connected experiences in Office" policy setting is also available for Office LTSC 2021. But that's not considered a change because that policy setting is already available for volume licensed versions of Office 2019.
 
-For more information, see [Use policy settings to manage privacy controls](../privacy/manage-privacy-controls.md). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
+For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2021, the information covered in the article about how the policy settings work does apply to Office LTSC 2021.
 
 #### Support duration
 
@@ -113,7 +113,7 @@ Office Add-ins on Windows now use Microsoft Edge with WebView2. For more informa
 
 #### Office Telemetry Dashboard
 
-[Office Telemetry Dashboard](../compatibility/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
+[Office Telemetry Dashboard](../../compatibility/assess-office-compatibility.md) is no longer included with the installation of Office and isn't supported for Office LTSC 2021.
 
 #### OneDrive (Groove) client
 
@@ -127,7 +127,7 @@ Power View isn't available for the version of Excel included with Office LTSC 20
 
 You can use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2021 that you currently use to deploy and update volume licensed versions of Office 2019.
 
-Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md).
+Also, how you activate volume licensed versions of Office remains the same. For example, by using Key Management Service (KMS) or Multiple Activation Key (MAK). For more information, see [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md).
 
 The major version of Office LTSC 2021 is 16.0, which is the same major version as volume licensed versions of Office 2019 (and Office 2016). Having the same major version provides the following benefits when you’re upgrading from Office 2019:
 
@@ -167,7 +167,7 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - Office LTSC Professional Plus 2021 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word.
 - Access and Publisher aren't available for devices running macOS.
-- Office LTSC 2021 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](../deployment-guide-onenote.md).
+- Office LTSC 2021 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - Office LTSC 2021 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2021. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2021.
 - LTSC stands for Long Term Servicing Channel.
@@ -176,4 +176,4 @@ We recommend that you uninstall existing versions of Office before you deploy Of
 
 - [Deploy Office LTSC 2021](deploy.md)
 - [Update Office LTSC 2021](update.md)
-- [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md)

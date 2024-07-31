@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 Apps and Office deployment documentation
-summary: Resources for IT professionals and admins on how to deploy and manage Microsoft 365 Apps or Office.
+title: Microsoft 365 Apps deployment documentation
+summary: Resources for IT professionals and admins on how to deploy and manage Microsoft 365 Apps.
 brand: m365
 
 metadata:
   ms.date: 04/21/2023
-  title: Microsoft 365 Apps and Office deployment documentation
-  description: Learn how to deploy and manage Microsoft 365 Apps or Office.  
+  title: Microsoft 365 Apps deployment documentation
+  description: Learn how to deploy and manage Microsoft 365 Apps.  
   brand: m365
   ms.author: nwhite
   author: nicholasswhite
@@ -27,11 +27,11 @@ additionalContent:
         # Card
         - title: Get Started
           summary: Learn how to plan, deploy, and manage Microsoft 365 Apps in your organization.
-          url: deployment-guide-microsoft-365-apps.md
+          url: deploy/deployment-guide-microsoft-365-apps.md
         # Card
         - title: Deploy
           summary: Find guidance about how to deploy Microsoft 365 Apps from the cloud, from a local source, or with Microsoft Configuration Manager.
-          url: plan-microsoft-365-apps.md
+          url: deploy/plan-microsoft-365-apps.md
         # Card
         - title: Microsoft FastTrack
           summary: Get migration and deployment assistance from experts at Microsoft.
@@ -47,10 +47,12 @@ additionalContent:
         # Card
         - title: Microsoft 365 Insider Program for Business
           summary: Find guidance about deploying Microsoft 365 Insider in your organization to get early access to new features for Microsoft 365 Apps.
-          url: insider/index.yml
+          url: /microsoft-365-apps/insider
         # Card
-        - title: Office LTSC 2021
-          summary: Find guidance about deploying the volume licensed version of Office.
-          url: ltsc/2021/overview.md
-
-
+        - title: Troubleshooting
+          summary: Find guidance to troubleshoot and fix errors that you may experience when using Microsoft 365 Apps.
+          url: /office/troubleshoot/office-client-welcome
+        # Card
+        - title: End user help and learning
+          summary: Find end user help and learning resources for Microsoft 365 Apps.
+          url: https://support.microsoft.com/microsoft-365

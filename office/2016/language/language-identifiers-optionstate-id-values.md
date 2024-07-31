@@ -26,7 +26,7 @@ Use the values in the Language Identifier and OptionState ID tables to configure
 - [Plan for multilanguage deployment of Office 2016](plan-multilanguage-deployment.md)
     
 > [!IMPORTANT]
-> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](../../overview-deploying-languages-microsoft-365-apps.md). 
+> This article describes methods of deploying and managing language packs for versions of Office 2016 that use the Windows Installer (MSI) installation technology, which are available for enterprises through volume licensing. If you have an Office subscription and you're deploying Microsoft 365 Apps, which uses the Click-to-Run installation technology, see [Overview of deploying languages for Microsoft 365 Apps](/microsoft-365-apps/deploy/overview-office-deployment-tool). 
   
 <a name="BKMK_LanguageIdentifiers"> </a>
 ## Language identifiers

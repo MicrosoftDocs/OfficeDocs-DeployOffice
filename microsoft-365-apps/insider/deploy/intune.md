@@ -83,7 +83,7 @@ To install Beta Channel, in Step 6, choose **Enter XML data** for the **Configur
 
 > [!NOTE]
 > - Keep in mind that Beta Channel isn't supported.
-> - For information about other configuration settings, such as how to install other languages, see [Configuration options for the Office Deployment Tool](../../office-deployment-tool-configuration-options.md).
+> - For information about other configuration settings, such as how to install other languages, see [Configuration options for the Office Deployment Tool](../../deploy/office-deployment-tool-configuration-options.md).
 
 ### I have Microsoft 365 Apps for business, not Microsoft 365 Apps for enterprise. What do I do?
 

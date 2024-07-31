@@ -56,7 +56,7 @@ We provide various services to help you upgrade to Microsoft 365 Apps for enterp
 
 - [Microsoft FastTrack](https://www.microsoft.com/fasttrack), for migration and deployment assistance from Microsoft experts.
 - [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure), for assistance from Microsoft with application compatibility issues.
-- [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md), for technical documentation.
+- [Deployment guide for Microsoft 365 Apps](../deploy/deployment-guide-microsoft-365-apps.md), for technical documentation.
 - [Product lifecycle dashboard](/mem/configmgr/core/clients/manage/asset-intelligence/product-lifecycle-dashboard) and [upgrade readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_o365_readiness), for users of Microsoft Configuration Manager (current branch).
 
 ## Other resources

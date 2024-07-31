@@ -72,7 +72,7 @@ Only the following devices are shown on the **Microsoft 365 Apps** tab on the **
 
 This section pertains to the **Microsoft 365 Apps** tab located on the **Software Updates** page.
 
-Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. Detailed information can be found at [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md). Access to this tab requires that [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) is sent to Microsoft. Data on this tab is refreshed approximately every 48 hours.
+Microsoft 365 Apps is the version of Office that comes with many Microsoft 365 (or Office 365) subscription plans for organizations. It includes apps such as Word, Excel, PowerPoint, and Outlook. Detailed information can be found at [About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md). Access to this tab requires that [required diagnostic data](../privacy/overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft) is sent to Microsoft. Data on this tab is refreshed approximately every 48 hours.
 
 ### Access Roles
 The following roles are necessary to view this tab:

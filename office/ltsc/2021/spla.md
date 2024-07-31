@@ -23,7 +23,7 @@ There are a few slight differences in how you, as a SPLA customer, deploy Office
 
 ## Office LTSC 2021 (for Windows)
 
-To download or install Office LTSC 2021 on devices running Windows, you can use the [Office Deployment Tool](../overview-office-deployment-tool.md) with an XML file that specifies configuration information. The following table shows you which value to use for the [ID attribute](../office-deployment-tool-configuration-options.md#id-attribute-part-of-product-element) in that XML file.
+To download or install Office LTSC 2021 on devices running Windows, you can use the [Office Deployment Tool](/microsoft-365-apps/deploy/overview-office-deployment-tool) with an XML file that specifies configuration information. The following table shows you which value to use for the [ID attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#id-attribute-part-of-product-element) in that XML file.
 
 |Office product |Product ID value  |
 |---------|---------|
@@ -33,9 +33,9 @@ To download or install Office LTSC 2021 on devices running Windows, you can use 
 These Office products don't include Microsoft Teams.
 
 > [!TIP]
-> You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
+> You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool).
 
-To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../volume-license-activation/activate-office-by-using-mak.md).
+To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../../volume-license-activation/activate-office-by-using-mak.md).
 
 Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
 
@@ -51,6 +51,6 @@ To deploy Office LTSC for Mac 2021, do the following steps:
 
 4. Run the VL Serializer package on each Mac where Office is installed.
 
-For more information, see [Overview of the Volume License (VL) Serializer](../mac/volume-license-serializer.md).
+For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer).
 
-For more information about how to deploy and manage Office LTSC on devices running macOS, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
+For more information about how to deploy and manage Office LTSC on devices running macOS, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).

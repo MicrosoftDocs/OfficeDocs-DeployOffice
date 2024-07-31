@@ -60,7 +60,7 @@ Remember not to open any Office programs. After you've created the image, you ca
 ## Step 4: Check that a Microsoft 365 Apps product key isn't installed in the image
 <a name="Step4"> </a>
 
-Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](licensing-activation/vnextdiag.md).
+Before you save the image, you should check to make sure that no product key for Microsoft 365 Apps is installed. To do this, use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](../licensing-activation/vnextdiag.md).
   
   
 ## Step 5: Save the operating system image
@@ -82,7 +82,7 @@ After you test your operating system image, you can deploy it to your users. The
   
 Users are prompted to activate Microsoft 365 Apps when they open their first Office program, as seen in the following screenshot.
   
-:::image type="content" source="media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
+:::image type="content" source="../media/deploy-microsoft-365-apps-operating-system-image/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
 
   
 As long as the computer is connected to the internet, the user just needs to sign in when prompted, and then activation occurs automatically.

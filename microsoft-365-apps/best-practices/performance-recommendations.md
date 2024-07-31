@@ -103,7 +103,7 @@ To learn more, see [Windows and Microsoft 365 Apps servicing in Microsoft 365](/
 Also, review the deployment guidance available for Windows 10 and Microsoft 365 Apps:
 
 - [Windows client deployment resources and documentation](/windows/deployment/)
-- [Deployment guide for Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [Deployment guide for Microsoft 365 Apps](../deploy/deployment-guide-microsoft-365-apps.md)
 
 ### Office Add-ins
 

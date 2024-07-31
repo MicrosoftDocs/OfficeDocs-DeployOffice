@@ -59,9 +59,9 @@ All installed products must be either the 32-bit version or the 64-bit version. 
 
 Uninstall any previous version of Office, Project, and Visio before installing the preview products. You can use the RemoveMSI attribute in your configuration.xml file to remove products on the device that were installed by using the Windows Installer (MSI) installation technology. For example, volume licensed versions of Office 2016.
 
-For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
+For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though the article is aimed at customers upgrading to Microsoft 365 Apps, the information does apply to installing the preview products.
 
-To remove Office products that were installed by using Click-to-Run, such as Office LTSC 2021, you need to use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element).
+To remove Office products that were installed by using Click-to-Run, such as Office LTSC 2021, you need to use the [Remove element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#remove-element).
 
 #### Installation location
 
@@ -69,7 +69,7 @@ Preview products are installed on the system drive, which is usually the C:\ dri
 
 #### Apps installed
 
-Microsoft Office LTSC 2024 for commercial preview includes Access, Excel, OneNote, Outlook, PowerPoint, Skype for Business, and Word. You can control which apps are installed, for example by using the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+Microsoft Office LTSC 2024 for commercial preview includes Access, Excel, OneNote, Outlook, PowerPoint, Skype for Business, and Word. You can control which apps are installed, for example by using the [ExcludeApp element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#excludeapp-element).
 
 #### Internet connectivity
 
@@ -85,8 +85,8 @@ Create a configuration.xml file to define the installation settings. Choose whic
 
 For more information about using the Office Deployment Tool and the settings available for your configuration.xml file, see the following articles:
 
-- [Overview of the Office Deployment Tool](../overview-office-deployment-tool.md)
-- [Configuration options for the Office Deployment Tool](../office-deployment-tool-configuration-options.md)
+- [Overview of the Office Deployment Tool](/microsoft-365-apps/deploy/overview-office-deployment-tool)
+- [Configuration options for the Office Deployment Tool](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options)
 
 Copy the ODT (setup.exe) and your configuration.xml file to the device. From an elevated command prompt, run the following command to install the preview products:
 
@@ -96,7 +96,7 @@ setup.exe /configure configuration.xml
 
 #### Example configuration.xml file
 
-The following sample configuration.xml installs the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology is removed from the device. Because no [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) is specified, the preview products are updated directly from the Office Content Delivery Network (CDN) on the internet.
+The following sample configuration.xml installs the 64-bit version of the three preview products in English. Also, any previous versions of Office that were installed by using the Windows Installer (MSI) installation technology is removed from the device. Because no [UpdatePath attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#updatepath-attribute-part-of-updates-element) is specified, the preview products are updated directly from the Office Content Delivery Network (CDN) on the internet.
 
 
 ```xml
@@ -119,9 +119,9 @@ The following sample configuration.xml installs the 64-bit version of the three 
 
 For the PIDKEY attribute, replace #####-#####-#####-#####-##### with the appropriate Key Management Service (KMS) or Multiple Activation Key (MAK) product key. For more information, see [Activate Office LTSC preview](#activate-office-ltsc-preview).
 
-If you want to download and install the preview products from a shared folder from within your internal network, you can specify that location with the [SourcePath attribute](../office-deployment-tool-configuration-options.md#sourcepath-attribute-part-of-add-element).
+If you want to download and install the preview products from a shared folder from within your internal network, you can specify that location with the [SourcePath attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#sourcepath-attribute-part-of-add-element).
 
-If you don’t want certain Office apps to be installed, you can use the [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).
+If you don’t want certain Office apps to be installed, you can use the [ExcludeApp element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#excludeapp-element).
 
 ## Activate Office LTSC preview
 
@@ -135,9 +135,9 @@ If you don’t have a KMS host computer that supports Office 2021 activation, yo
 
 For more information about configuring KMS activation, see the following articles:
 
-- [Configure a KMS host computer to activate volume licensed versions of Office](../volume-license-activation/configure-a-kms-host-computer-for-office.md)
-- [Configure DNS for activating volume licensed versions of Office by using KMS](../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md)
-- [Activate volume licensed versions of Office by using KMS](../volume-license-activation/activate-office-by-using-kms.md)
+- [Configure a KMS host computer to activate volume licensed versions of Office](../../volume-license-activation/configure-a-kms-host-computer-for-office.md)
+- [Configure DNS for activating volume licensed versions of Office by using KMS](../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md)
+- [Activate volume licensed versions of Office by using KMS](../../volume-license-activation/activate-office-by-using-kms.md)
 
 Internet connectivity isn’t required for KMS activation. The devices running the preview products only need to be able to contact a KMS host computer on your internal network to be activated.
 
@@ -185,7 +185,7 @@ While the updates are being downloaded in the background, you can continue to us
 
 ### Update by using a network share
 
-If you don’t want devices in your organization to connect to the Office CDN to get updates, you can configure the preview products to get updates from a shared folder from within your internal network. You can use the Office Deployment Tool to download the latest version of the preview products from the Office CDN to a shared folder on your internal network. You can then configure the preview products to check that shared folder for updates by using the [UpdatePath attribute](../office-deployment-tool-configuration-options.md#updatepath-attribute-part-of-updates-element) in your configuration.xml file.
+If you don’t want devices in your organization to connect to the Office CDN to get updates, you can configure the preview products to get updates from a shared folder from within your internal network. You can use the Office Deployment Tool to download the latest version of the preview products from the Office CDN to a shared folder on your internal network. You can then configure the preview products to check that shared folder for updates by using the [UpdatePath attribute](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#updatepath-attribute-part-of-updates-element) in your configuration.xml file.
 
 This option requires more administrative effort and more disk space. For example, you must keep track of when new builds of the preview products are available and then download the updated version to the shared folder on your network. The main installation file that contains all three preview products is at least 2.3 GB and each language file is at least 400 MB. There aren’t separate downloads for each preview product, and you can’t download just the security updates or nonsecurity updates.
 

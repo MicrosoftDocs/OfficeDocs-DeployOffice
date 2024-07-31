@@ -112,7 +112,7 @@ Organizations can control whether connected experiences or diagnostic data can b
 
 :::image type="content" source="../manage/media/policy-management/policy-privacy-settings.png" alt-text="Screenshot that shows how to turn on optional connected experiences in privacy settings." lightbox="../manage/media/policy-management/policy-privacy-settings-lb.png":::
 
-For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/manage-privacy-controls).
+For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](/microsoft-365-apps/privacy/manage-privacy-controls).
 
 ## Disable In-product feedback
 New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-user-control#in-product-feedback) that can be managed as part of Microsoft 365 wide settings for Feedback in Cloud Policy:
@@ -122,7 +122,7 @@ New Outlook provides [in-product feedback](/microsoft-365/admin/misc/feedback-us
 For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 
 ## Disable Contact Support in the new Outlook for Windows
-Disable contact support is configured via [Cloud Policy](../../admincenter/overview-cloud-policy.md) for a Microsoft 365 organization from the [Microsoft 365 Apps admin center](https://config.office.com), specifically on the [Office Policies](https://config.office.com/officeSettings/officePolicies) page.
+Disable contact support is configured via [Cloud Policy](../../admin-center/overview-cloud-policy.md) for a Microsoft 365 organization from the [Microsoft 365 Apps admin center](https://config.office.com), specifically on the [Office Policies](https://config.office.com/officeSettings/officePolicies) page.
 
 :::image type="content" source="../manage/media/policy-management/policy-configure-setting.png" alt-text="Screenshot of the Configure Settings page in the Microsoft 365 Apps admin center. It shows the policy management process with steps for Basics, Scope, Policies, and Review and publish. The Policies section lists five policies related to the new Outlook, including their platforms, applications, and status, all marked as Not configured." lightbox="../manage/media/policy-management/policy-configure-setting-lb.png":::
 

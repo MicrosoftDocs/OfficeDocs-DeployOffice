@@ -40,7 +40,7 @@ For more information about support and feedback, see the article: [Contact suppo
 
 ### Stage 2: Opt-out
 
-After a period for feature capability development and quality assessment, the migration will move to the **opt-out** stage. In this stage, new Outlook is **on by default**, automatically bringing users into the new experience. IT administrators will have at least 12 months notice before this stage is implemented in production rings. Users can still revert to classic Outlook during this stage if needed.
+After a period for feature capability development and quality assessment, the migration will move to the **opt-out** stage. In this stage, new Outlook is **on by default**, automatically bringing users into the new experience. IT administrators will have at least 12 months notice before this stage is implemented in managed Enterprise plans. Users can still revert to classic Outlook during this stage if needed.
 
 For more resources to assist with adoption and migration, see [New Outlook for Windows Adoption](https://aka.ms/newOutlookAdoption).
 
@@ -52,7 +52,7 @@ In the **cutover** stage, users are no longer be able to switch back to classic 
 
 The journey through these stages is represented in the timeline shown. After General Availability, Microsoft will use existing channels to provide a "notice of disruptive change" 12-months before moving to the opt-out and cutover stages in production rings.
 
- :::image type="content" source="media/guide-product-availability/availability-timeline.png" alt-text="Conceptual drawing of the new Outlook availability timeline showing new Outlook is now in General availability which is in between the opt-in and opt-out stages." lightbox="media/guide-product-availability/availability-timeline-lb.png":::
+ :::image type="content" source="media/guide-product-availability/availability-timeline-two.png" alt-text="Conceptual drawing of the new Outlook availability timeline showing new Outlook is now in General availability which is in between the opt-in and opt-out stages." lightbox="media/guide-product-availability/availability-timeline-two-lb.png":::
 
 ## Prepare for migration and deployment
 

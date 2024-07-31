@@ -25,7 +25,7 @@ Setting up volume activation of Office, including Project and Visio, by using Ke
 Many of the solutions include running the ospp.vbs, which you need to run from an elevated command prompt on the computer on which Office is installed. The ospp.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder. You can also use the slmgr.vbs script to configure and manage volume activation. For detailed information about these scripts, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
 
 > [!NOTE]
-> The ospp.vbs script doesn't work for Microsoft 365 Apps or subscription versions of Project and Visio. Instead, you can use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](../licensing-activation/vnextdiag.md).
+> The ospp.vbs script doesn't work for Microsoft 365 Apps or subscription versions of Project and Visio. Instead, you can use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](/microsoft-365-apps/licensing-activation/vnextdiag).
   
 ## Tips for configuring KMS clients and host computers
 

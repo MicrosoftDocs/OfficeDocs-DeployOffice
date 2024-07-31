@@ -26,7 +26,7 @@ Before deploying Microsoft 365 Apps to users in your organization, you must firs
 If you remove a user's license, like when they leave your organization, their Microsoft 365 Apps installations enter [reduced functionality mode](overview-licensing-activation-microsoft-365-apps.md#what-is-reduced-functionality-mode). The Office Licensing Service, part of Microsoft 365, monitors licensed users and the number of computers they have Office installed on.
 
 > [!NOTE]
-> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](end-of-support/resources.md).
+> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](../end-of-support/resources.md).
    
 ## Assign and manage licenses
 
@@ -45,14 +45,14 @@ After a user is assigned a license, you can deploy Office to your users or your 
 There are various licensing modes that can be used with a supported version of Microsoft 365 Apps.
 
 ### Subscription User Based Licensing
-[More Information](about-microsoft-365-apps.md#licensing-differences)
+[More Information](../deploy/about-microsoft-365-apps.md#licensing-differences)
 - Subscription user based licensing is the default licensing mode for Microsoft 365 Apps. In this mode, the license is carried within the user’s profile. With a single license, users can install and activate Microsoft 365 Apps on up to 5 desktops/laptops, 5 tablets, and 5 mobile devices. Subscription User Based Licensing requires user level activation and requires user sign-in with a Microsoft Entra account.
 - Subscription-based user licensing is recommended for most situations where each user has specific computers and rarely shares them.
 
 ### Shared Computer Activation
 [More Information](overview-shared-computer-activation.md)
 - In this license mode, you can install Microsoft 365 Apps on a single computer shared by multiple users. Each user signs in with their own account.
-- This mode is typically used in scenarios with multiple licensed users connecting to the same device. It's the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI). It's ideal for shift workers, bank tellers, and users that need to [roam](office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
+- This mode is typically used in scenarios with multiple licensed users connecting to the same device. It's the preferred configuration of Microsoft 365 Apps when used with Remote Desktop Services (RDS) and Virtual Desktop Infrastructure (VDI). It's ideal for shift workers, bank tellers, and users that need to [roam](../deploy/office-deployment-tool-configuration-options.md#sharedcomputerlicensing-property-part-of-property-element) across devices.
 
 ### Device Based Licensing
 [More Information](device-based-licensing.md)
@@ -83,7 +83,7 @@ There are various licensing modes that can be used with a supported version of M
 Microsoft 365 Apps communicates with the Office Licensing Service and the Activation and Validation Service to obtain and activate a product key. Each day, or each time the user signs in their computer, the computer connects to the Activation and Validation Service to verify the license status and extend the product key. As long as the computer can connect to the internet at least once every 30 days, Microsoft 365 Apps remains fully functional. If the computer goes offline for more than 30 days, Microsoft 365 Apps enters reduced functionality mode until the next time a connection can be made. To get Microsoft 365 Apps fully functional again, the user can connect to the internet and let the Activation and Validation Service reactivate the installation, though in some cases the user might have to sign back in first.
  
 > [!IMPORTANT]
-> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the internet. For those computers, we recommend installing Office LTSC Professional Plus 2021 and using a [traditional activation method](volume-license-activation/plan-volume-activation-of-office.md) such as Key Management Service (KMS) or Active Directory Domain Services.
+> Because of its online activation features, Microsoft 365 Apps won't work on computers that are completely cut off from the internet. For those computers, we recommend installing Office LTSC Professional Plus 2021 and using a [traditional activation method](/office/volume-license-activation/plan-volume-activation-of-office) such as Key Management Service (KMS) or Active Directory Domain Services.
  
 ### Managing activated installations
 
@@ -98,7 +98,7 @@ If a user installs Microsoft 365 Apps on more than 10 devices, then the device t
 
 In reduced functionality mode, Microsoft 365 Apps remains installed on the device, but users can only view and print their documents. All features for editing or creating new documents are disabled, and the user sees a message similar to this one:
  
-:::image type="content" source="./media/overview-licensing-activation-microsoft-365-apps/product-deactivated.png" alt-text="Screenshot of product deactivation prompt with options to enter a product key or sign in to an active account.":::
+:::image type="content" source="../media/overview-licensing-activation-microsoft-365-apps/product-deactivated.png" alt-text="Screenshot of product deactivation prompt with options to enter a product key or sign in to an active account.":::
  
 The user can then choose one of the available options to reactivate Microsoft 365 Apps on that computer.
 
@@ -118,6 +118,6 @@ In Microsoft 365 Apps version 1910 and later, we made the following improvements
 
 [Licensing and activation data sent to Office 365 by Microsoft 365 Apps](./licensing-activation-data-sent-microsoft-365-apps.md)
  
-[About Microsoft 365 Apps in the enterprise](./about-microsoft-365-apps.md)
+[About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md)
  
-[Choose how to deploy Microsoft 365 Apps](./plan-microsoft-365-apps.md)
+[Choose how to deploy Microsoft 365 Apps](../deploy/plan-microsoft-365-apps.md)

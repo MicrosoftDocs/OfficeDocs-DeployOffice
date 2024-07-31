@@ -48,7 +48,7 @@ The benefit of using dynamic collections is that devices will automatically swit
 
 ## Deploy an application to initiate an update channel change
 
-Next, you deploy an application that instructs the client to perform a channel change by using the [Office Deployment Tool](../overview-office-deployment-tool.md) with a configuration file. When executed on a device, the tool begins the channel switch by updating the configuration in the registry but doesn't perform the actual channel change. The next time the Click-to-Run service does an update discovery, the service picks up the updated configuration and executes the channel change. Because you are only updating the configuration, Office applications can remain open while the Office Deployment Tool runs. This takes only a few seconds and has no impact on user productivity.
+Next, you deploy an application that instructs the client to perform a channel change by using the [Office Deployment Tool](../deploy/overview-office-deployment-tool.md) with a configuration file. When executed on a device, the tool begins the channel switch by updating the configuration in the registry but doesn't perform the actual channel change. The next time the Click-to-Run service does an update discovery, the service picks up the updated configuration and executes the channel change. Because you are only updating the configuration, Office applications can remain open while the Office Deployment Tool runs. This takes only a few seconds and has no impact on user productivity.
 
 Follow these steps to deploy an application to initiate an update channel change:
 

@@ -43,7 +43,7 @@ If you want to have more control over how the subscription version of Visio is d
 
 2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to install the subscription version of Visio.
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
-   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
+   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](../best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
 
 4. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy the subscription version Visio to the users in your organization.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
@@ -56,7 +56,7 @@ Here are the general steps to deploy Visio LTSC Professional 2021 or Visio LTSC 
   
 1. Purchase Visio LTSC 2021 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc/2021/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](/office/ltsc/2021/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -73,7 +73,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
   
 1. Purchase Visio 2019 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office/2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Visio 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](/office/2019/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -92,7 +92,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
 
 2. Download your version of Visio 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-3. If you want to configure user settings for when Visio is installed, you can use the [Office Customization Tool (OCT)](oct/oct-2016-help-overview.md).
+3. If you want to configure user settings for when Visio is installed, you can use the [Office Customization Tool (OCT)](/office/customization-tool/oct-2016-help-overview).
 
 4. Deploy Visio 2016 to your users. For example, you can send your users a script to run that installs Visio from a network share on your local network.
 

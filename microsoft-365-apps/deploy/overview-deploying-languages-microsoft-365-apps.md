@@ -72,7 +72,7 @@ When you add to an existing deployment, the ODT can automatically detect the arc
 
 Users need local administrator permissions on their devices to install other languages for Office by default. However, to enable users without local admin rights to install a new language, activate the policy setting 'Allow users who aren't admins to install language accessory packs.'
 
-You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](admin-center/overview-cloud-policy.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
+You can use either [Group Policy](https://www.microsoft.com/download/details.aspx?id=49030) or [Cloud Policy](../admin-center/overview-cloud-policy.md) to enable the policy setting. In the Group Policy Management tool, you can find the policy setting under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Language Preferences\Display Language.
 
 The policy setting applies to Word, Excel, PowerPoint, Outlook, and OneNote. Users can install another language by going to **File** > **Options** > **Language** > **Office display language** > **Add a Language...** in their Office app.
 
@@ -155,7 +155,7 @@ For details on how to edit the configuration file in a text editor, see [Configu
 </Configuration>
 ```
 
-Learn more about [how to use MatchInstalled in second-install scenarios](fieldnotes/build-dynamic-lean-universal-packages.md).
+Learn more about [how to use MatchInstalled in second-install scenarios](../best-practices/build-dynamic-lean-universal-packages.md).
 
 ## Install the same languages as a previous MSI installation
 
@@ -298,7 +298,7 @@ The following table lists all the supported languages for Microsoft 365 Apps, al
 
 ## Related articles
 
-- [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md)
+- [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md)
 - [Overview of the Office Deployment Tool](overview-office-deployment-tool.md)
 - [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md)
 - [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md)

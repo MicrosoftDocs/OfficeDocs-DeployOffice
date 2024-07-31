@@ -56,13 +56,13 @@ Many organizations use a combination of these options for different users. For e
 ## Step 2 - Choose how to manage updates
 
 > [!NOTE]
-> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [cloud update](./admin-center/cloud-update.md).
+> **Best practice:** We recommend updating your client devices automatically.  You can define the frequency of the feature updates, but the updates occur without any administrative overhead. If you want to take more control and get additional insights into e.g. the progress of an update deployment, we recommend usinga [cloud update](../admin-center/cloud-update.md).
 
 Set your client devices to update automatically from the Office CDN. You can still control the frequency of the feature updates, as those settings are defined as part of the initial deployment, but the updates themselves occur without any other tools or administrative overhead. In addition, the updates are automatically deployed over many days to conserve your network bandwidth.
 
 You can also use Intune to apply other policies. For example, to set a deadline after how many days an update installation should be enforced. Review the [Intune documentation](/mem/intune/configuration/administrative-templates-update-office) on how to apply ADMX settings to devices.
 
-The third, cloud-based option is to use [cloud update](./admin-center/cloud-update.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
+The third, cloud-based option is to use [cloud update](../admin-center/cloud-update.md). It's a cloud-based update management solution for devices on Monthly Enterprise Channel and Current Channel. It includes features like advanced monitoring, reporting, enforcing, staggering, and rolling back devices.
 
 If you need to distribute updates from an on-premises source, you can do so with Configuration Manager by downloading the updates and deploying them from distribution points. If you use a previous version of Configuration Manager, we recommend you upgrade to the current branch.
 
@@ -82,7 +82,7 @@ Choose how to manage updates:
     
 As with the initial deployment, organizations can use a combination of these options for different users.
 
-For more information, see [Choose how to deliver updates for the Microsoft 365 Apps](./updates/choose-how-to-deliver-updates.md).
+For more information, see [Choose how to deliver updates for the Microsoft 365 Apps](../updates/choose-how-to-deliver-updates.md).
 
 ## Step 3 - Choose your update channels
 
@@ -97,28 +97,28 @@ With Microsoft 365 Apps, you can control how frequently your users receive featu
 > [!NOTE]
 > The "[Explained - Microsoft 365 Apps Update Channels](https://youtu.be/eNn4PDkmo7s)" video gives you a complete overview of all update channels.
 
-We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need more predictability of when new features are released, we recommend Monthly Enterprise Channel with [cloud update](./admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the effect on your network. In those cases where you select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest features as soon as they're ready. If you need more predictability of when new features are released, we recommend Monthly Enterprise Channel with [cloud update](../admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Microsoft 365 Apps updates for specific users or groups in waves, limiting the effect on your network. In those cases where you select devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
 All the update channels receive updates for security and non-security issues when needed. These updates usually occur on the second Tuesday of the month.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 To preview or test new updates before deploying them to your entire organization, you have two options:
 
-- Deploy the update in a staged manner. For example, begin the update deployment process with a few devices on the release day. After a few days, extend to a sample set across your organization and then to the remaining devices in two more waves. With Monthly Enterprise Channel and cloud update, you can automate the staged deployment through custom rollout waves in combination with [Update validation](./admin-center/update-validation.md).
+- Deploy the update in a staged manner. For example, begin the update deployment process with a few devices on the release day. After a few days, extend to a sample set across your organization and then to the remaining devices in two more waves. With Monthly Enterprise Channel and cloud update, you can automate the staged deployment through custom rollout waves in combination with [Update validation](../admin-center/update-validation.md).
 - Deploy a combination of update channels where one channel receives new features earlier than the other. For example, deploy Current Channel (Preview) to a subset of your users for validation and Current Channel to the bulk of your devices. In that scenario, users with Current Channel usually receive feature updates just a few weeks after the users with Current Channel (Preview).
  
 ## Step 4 - Define your installation packages
 
 > [!NOTE]
 > **Best practices:**
-> - Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](updates/change-update-channels.md).
+> - Build as few installation packages as possible to reduce administrative overhead. Allow the installation process to fetch the installation files from the cloud, so you don't have to include and maintain them. If you need e.g. different update channels, go with one package and switch the update channel later with one of the [available options to change update channels](../updates/change-update-channels.md).
 >
 > - If you need additional products to be installed during an upgrade, like Visio or Project, use [MSICondition](office-deployment-tool-configuration-options.md#msicondition-attribute-part-of-product-element) in combination with [RemoveMSI](upgrade-from-msi-version.md) to dynamically add the products based on the previously installed ones.
 >
-> - If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](./best-practices/build-dynamic-lean-universal-packages.md) to add those later.
+> - If you need additional products (like Visio or Project) or language packs being available, build [lean and dynamic installations](../best-practices/build-dynamic-lean-universal-packages.md) to add those later.
 
-Build the installation packages using the [Office Customization Tool](./admin-center/overview-office-customization-tool.md) and the Office Deployment Tool. By default, the resulting packages would download the required files during installation.
+Build the installation packages using the [Office Customization Tool](../admin-center/overview-office-customization-tool.md) and the Office Deployment Tool. By default, the resulting packages would download the required files during installation.
 
 If you can't download files during installation in your environment, take a different approach. Use the "/download" switch. This approach allows you to obtain the necessary source files in advance. Then, include these files in your installation package. This approach means you need to regularly update the included sources, increasing maintenance work.
 
@@ -150,7 +150,7 @@ To help with the removal of previous Office versions that use Windows Installer 
 
 To set up Microsoft 365 Apps in an environment where multiple users share workstations, such as in a virtual desktop infrastructure (VDI) or among shift workers, enable shared computer activation on these devices. 
 
-With shared computer activation enabled, any user that is assigned a Microsoft 365 Apps license can sign in to the device and use the apps, such as Word or Excel. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
+With shared computer activation enabled, any user that is assigned a Microsoft 365 Apps license can sign in to the device and use the apps, such as Word or Excel. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md).
 
 ## Review exit criteria
 

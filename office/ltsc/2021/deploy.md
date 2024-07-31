@@ -46,7 +46,7 @@ Once you have a copy of the ODT, you need to create a configuration.xml file. Yo
 
 > [!TIP]
 > - Instead of using a text editor to create your configuration.xml file, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com/deploymentsettings). 
-> - The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md). 
+> - The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool). 
 > - This OCT is different than the Office Customization Tool that you might have used in the past to install volume licensed versions of Office that used Windows Installer (MSI) as the installation technology.
 
 There are a series of settings in the configuration.xml file that you configure to customize the Office LTSC 2021 download or installation. The following table lists the most common settings to configure in the configuration.xml file.
@@ -56,19 +56,19 @@ There are a series of settings in the configuration.xml file that you configure 
 |---------|---------|---------|
 |Where to download the Office installation files to and where to install Office from <br/> <br/>For example, \\\server\share (a shared folder on your local network).| SourcePath  |If you don’t specify a SourcePath when installing Office, the ODT looks for the installation files in the folder it’s located in. If it doesn’t find the Office installation files there, it goes to the Office CDN to get the installation files. <br/> <br/>  We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible.      |
 |Which products to download or install <br/> <br/>For example, Office LTSC Professional Plus 2021. | Product ID  | Valid values include the following IDs:  <br/>- ProPlus2021Volume <br/> -	Standard2021Volume <br/>- ProjectPro2021Volume <br/> - ProjectStd2021Volume <br/> - VisioPro2021Volume <br/> - VisioStd2021Volume  <br/><br/> For a list of Product IDs for other volume licensed Office products, such as Access LTSC 2021, see [List of Product IDs which are supported by the Office Deployment Tool for Click-to-Run](/microsoft-365/troubleshoot/installation/product-ids-supported-office-deployment-click-to-run).<br/><br/> If you have a Microsoft Services Provider License Agreement (SPLA), [review this information](spla.md).|
-|Use Key Management Service (KMS) to activate Office LTSC 2021|PIDKEY| Enter the [Generic Volume License Key (GVLK)](../volume-license-activation/gvlks.md) for KMS activation.|
+|Use Key Management Service (KMS) to activate Office LTSC 2021|PIDKEY| Enter the [Generic Volume License Key (GVLK)](../../volume-license-activation/gvlks.md) for KMS activation.|
 |Use Multiple Activation (MAK) to activate Office LTSC 2021     | PIDKEY  | Enter the product key for MAK activation.  |
 |Which languages to download or install <br/> <br/> For example, English (en-us) and French (fr-fr). |Language ID      | You can install multiple languages at the same time you’re Installing Office LTSC 2021, or you can install them later.   <br/> <br/> For more information, see [Deploy languages for Office LTSC 2021](#deploy-languages-for-office-ltsc-2021).   |
 |Which proofing tools to install  |Product ID  | The Product ID is "ProofingTools" and is used in combination with the Language ID. <br/> <br/> For more information, see [Deploy languages for Office LTSC 2021](#deploy-languages-for-office-ltsc-2021). |
 |Which edition of Office LTSC 2021 to download or install. <br/> <br/>  For example, the 64-bit version.    | OfficeClientEdition  | Valid xml values are "32" and "64." <br/> <br/>All Office products on the device must be of the same architecture. You can’t have both 32-bit and 64-bit Office products installed on the same device. <br/><br/>  We recommend 64-bit on devices that have 4 GB or more of memory. But you should assess application compatibility and other factors that might require you to use the 32-bit version. <br/> <br/> For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).   |
-| Which apps to install <br/> <br/> For example, all apps except Publisher.  | ExcludeApp       | By default, all apps included in Office LTSC Professional Plus 2021 are installed. <br/> <br/> For example, to not install Publisher, you can include the following line in your configuration.xml:  <br/> <br/> \<ExcludeApp ID="Publisher" />  <br/> <br/> For more information, see [ExcludeApp element](../office-deployment-tool-configuration-options.md#excludeapp-element).    |
+| Which apps to install <br/> <br/> For example, all apps except Publisher.  | ExcludeApp       | By default, all apps included in Office LTSC Professional Plus 2021 are installed. <br/> <br/> For example, to not install Publisher, you can include the following line in your configuration.xml:  <br/> <br/> \<ExcludeApp ID="Publisher" />  <br/> <br/> For more information, see [ExcludeApp element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#excludeapp-element).    |
 | Where to get security and quality updates from. <br/> <br/> For example, directly from the Office CDN on the internet. | UpdatePath |  The default is to get updates directly from the Office CDN on the internet, which is recommended and requires the least amount of administrative effort.  <br/> <br/> But if you need to update devices that don’t have internet connectivity, you can specify that Office gets updates, for example, from a shared folder on your local network. But this option means that you must download the updates from the Office CDN each month and copy them to the shared folder.  <br/> <br/> For more information, see [Update Office LTSC 2021](update.md).  |
 |Which update channel to install from and get updates from  |Channel  | Office uses the concept of update channels to determine which updates an installed version of Office receives.   <br/> <br/>  For more information, see [Update channel for Office LTSC 2021](update.md#update-channel-for-office-ltsc-2021).  |
 |Whether to remove previous Windows Installer (MSI) versions of Office before installing Office LTSC 2021  |RemoveMSI   | Recommended. For more information, see [Remove existing versions of Office before installing Office LTSC 2021](#remove-existing-versions-of-office-before-installing-office-ltsc-2021).    |
 
 
 > [!TIP]
-> More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](../office-deployment-tool-configuration-options.md). Keep in mind that not all the information in that article applies to Office LTSC 2021. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don’t apply to Office LTSC 2021.
+> More information about these configuration.xml settings is available here: [Configuration options for the Office Deployment Tool](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options). Keep in mind that not all the information in that article applies to Office LTSC 2021. For example, the settings related to shared computer activation, such as SharedComputerLicensing and SCLCacheOverride, don’t apply to Office LTSC 2021.
 
 
 ## Sample configuration.xml file to use with the Office Deployment Tool
@@ -103,9 +103,9 @@ There are several ways that you can use the RemoveMSI element when installing Of
 
 RemoveMSI can be used to uninstall 2007, 2010, 2013, or 2016 versions of Office, Visio, or Project that were installed using Windows Installer (MSI).
 
-For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
+For more information about using RemoveMSI, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
 
-To uninstall 2019 versions of Office, Visio, or Project from the device, use the [Remove element](../office-deployment-tool-configuration-options.md#remove-element). You use the Remove element because 2019 versions of Office, Visio, and Project are installed by using Click-to-Run, not Windows Installer (MSI).
+To uninstall 2019 versions of Office, Visio, or Project from the device, use the [Remove element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#remove-element). You use the Remove element because 2019 versions of Office, Visio, and Project are installed by using Click-to-Run, not Windows Installer (MSI).
 
 
 ## Download the Office LTSC 2021 installation files
@@ -145,11 +145,11 @@ You can also use Microsoft Configuration Manager (current branch) to deploy Offi
 
 ## Deploy languages for Office LTSC 2021
 
-You can use the ODT and the configuration.xml file to deploy Office LTSC 2021, including Project and Visio, in multiple languages. For more information, see [Language element](../office-deployment-tool-configuration-options.md#language-element).
+You can use the ODT and the configuration.xml file to deploy Office LTSC 2021, including Project and Visio, in multiple languages. For more information, see [Language element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#language-element).
 
 You can also just install proofing tools by specifying the Product ID as "ProofingTools" in your configuration.xml file along with the appropriate Language IDs. Proofing tools packages are smaller than full language packs. Consider deploying proofing tools in cases where users work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office LTSC 2021, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
 
-If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office LTSC 2021. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
+If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources – for example, language packs, language interface packs, or proofing tools – installed when you deploy Office LTSC 2021. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Even though that article is about Microsoft 365 Apps, most of the information also applies to Office LTSC 2021.
 
 ## Microsoft Teams in Office LTSC 2021
 
@@ -168,4 +168,4 @@ For either method, you can adjust the settings in the UI so that Skype for Busin
 
 - [Overview of Office LTSC 2021](overview.md)
 - [Update Office LTSC 2021](update.md)
-- [Overview of volume activation of Office](../volume-license-activation/plan-volume-activation-of-office.md)
+- [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md)

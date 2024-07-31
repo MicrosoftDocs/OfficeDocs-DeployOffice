@@ -1,11 +1,13 @@
 items:
-  - name: New Outlook for Windows
+  - name: Welcome to new Outlook for Windows
     href: overview-new-outlook.md
 
   - name: Get started
     items:
       - name: Product availability
         href: get-started/guide-product-availability.md
+      - name: Licensing options
+        href: get-started/licensing-options.md        
       - name: Deploy new Outlook
         href: get-started/deployment-new-outlook.md
       - name: Control new Outlook installation

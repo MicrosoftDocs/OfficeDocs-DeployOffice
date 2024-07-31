@@ -25,12 +25,12 @@ Shared computer activation enables you to install Microsoft 365 Apps on a comput
 - Fifteen nurses at a hospital use Office on 10 different computers throughout the day.
 - Five employees connect remotely to the same computer to run Office.
 - Office is used by multiple employees on a computer located in a conference room or another common area within the company.
-- Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](deploy-microsoft-365-apps-remote-desktop-services.md).
+- Multiple users access an instance of Office that is hosted through [Remote Desktop Services (RDS)](../deploy/deploy-microsoft-365-apps-remote-desktop-services.md).
 
 Shared computer activation is required for scenarios where multiple users share the same computer and the users are logging in with their own account. Normally, users can install and activate Microsoft 365 Apps only on a limited number of devices, such as 5 PCs. Using Microsoft 365 Apps with shared computer activation enabled doesn't count against that limit. If your users have their own computers and no one else uses those computers, [use product key activation for Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md).
 
 > [!NOTE]
-> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](end-of-support/resources.md).
+> To activate Microsoft 365 Apps, TLS 1.2 must be enabled by default on the operating system. Some older operating systems, such as Windows 7 Service Pack 1 (SP1) and Windows Server 2012, need an update applied to enable TLS 1.2 by default. For more information, see [Update to enable TLS 1.1 and TLS 1.2 as default secure protocols in WinHTTP in Windows](https://support.microsoft.com/topic/c4bd73d2-31d7-761e-0178-11268bb10392). But, running Microsoft 365 Apps on these older operating systems isn't supported. For more information, see [End of support resources for Office](../end-of-support/resources.md).
   
 <a name="Enable"> </a>
 
@@ -51,7 +51,7 @@ Make sure you [assign each user a license](/microsoft-365/admin/manage/assign-li
 
 If you want to enable shared computer activation during the initial installation of Microsoft 365 Apps, you can instruct the [Office Deployment Tool](https://go.microsoft.com/fwlink/p/?LinkID=626065) to do so during installation.
 
-- When you're using the [Office Customization Tool](admin-center/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Configuration Manager](deploy-microsoft-365-apps-configuration-manager.md#step-3-create-and-deploy-the-microsoft-365-apps-application), make sure that you enable the option **Shared Computer** in the **Product activation** section.
+- When you're using the [Office Customization Tool](../admin-center/overview-office-customization-tool.md) at [config.office.com](https://config.office.com) or the [wizard built into Microsoft Configuration Manager](../deploy/deploy-microsoft-365-apps-configuration-manager.md#step-3-create-and-deploy-the-microsoft-365-apps-application), make sure that you enable the option **Shared Computer** in the **Product activation** section.
 - When you're crafting the configuration file manually, make sure to include the following line:
 
   ```xml
@@ -105,7 +105,7 @@ Here's what happens after Microsoft 365 Apps is installed on a computer with sha
     
     To determine whether the user is licensed to use Microsoft 365 Apps, the Office Licensing Service has to know the user's account for Office 365. In some cases, Microsoft 365 Apps prompts the user to provide the information. For example, the user might see the **Activate Office** dialog box.
     
-    :::image type="content" source="media/overview-shared-computer-activation/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
+    :::image type="content" source="../media/overview-shared-computer-activation/activate-office.png" alt-text="Office activation screen prompting the user to enter their email address associated with the Office subscription.":::
   
     If your environment synchronizes Office 365 (Microsoft Entra ID) and local Active Directory (AD) accounts, users are unlikely to encounter any prompts. Microsoft 365 Apps can automatically retrieve the necessary information about the user's account in Office 365.
     
@@ -129,7 +129,7 @@ If the user doesn't sign in the shared computer for 30 days, the licensing token
     
 **Reduced functionality mode** If the user isn't licensed for Microsoft 365 Apps, or if the user closed the **Activate Office** dialog box, no licensing token is obtained and Microsoft 365 Apps isn't activated. Microsoft 365 Apps is now in reduced functionality mode. In this mode the user can view and print Office documents, but can't create or edit documents. The user also sees a message in the Office program that most features are turned off.
     
-:::image type="content" source="media/overview-shared-computer-activation/unlicensed-product.png" alt-text="Word document screen with a red bar indicating the product is unlicensed and most features are turned off.":::
+:::image type="content" source="../media/overview-shared-computer-activation/unlicensed-product.png" alt-text="Word document screen with a red bar indicating the product is unlicensed and most features are turned off.":::
 
 *(For Version 2205 and later)* If [viewer mode](overview-viewer-mode.md) is enabled on the device, then the user is placed in viewer mode instead of reduced functionality mode.
   
@@ -137,7 +137,7 @@ If the user doesn't sign in the shared computer for 30 days, the licensing token
     
 Microsoft allows a single user to activate Microsoft 365 Apps on a reasonable number of shared computers in a given time period. The user gets an error message in the unlikely event the limit is exceeded.
     
-:::image type="content" source="media/overview-shared-computer-activation/office-activation-error.png" alt-text="Microsoft Excel error message indicating that the Office 365 account has been used to activate too many computers.":::
+:::image type="content" source="../media/overview-shared-computer-activation/office-activation-error.png" alt-text="Microsoft Excel error message indicating that the Office 365 account has been used to activate too many computers.":::
   
 **Single sign-on recommended** The use of single sign-on (SSO) is recommended to reduce how often users are prompted to sign in for activation. With single sign-on configured, Microsoft 365 Apps is activated using the user credentials that the user provides to sign in to Windows, as long as the user is assigned a license for Microsoft 365 Apps. For more information, see [Microsoft 365 identity models and Microsoft Entra ID](/microsoft-365/enterprise/about-microsoft-365-identity).
     
@@ -149,7 +149,7 @@ To configure licensing token roaming, you can use either the Office Deployment T
     
 - If you're using Group Policy, download the most current [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?linkid=626001) and enable the "Specify the location to save the licensing token used by shared computer activation" policy setting. This policy setting is found under Computer Configuration\\Policies\\Administrative Templates\\Microsoft Office 2016 (Machine)\\Licensing Settings.
     
-- If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](office-deployment-tool-configuration-options.md).
+- If you're using the Office Deployment Tool, include the SCLCacheOverride and SCLCacheOverrideDirectory in the Property element of your configuration.xml file. For more information, see [Configuration options for the Office Deployment Tool](../deploy/office-deployment-tool-configuration-options.md).
     
 - To edit the registry, go to HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\Configuration, add a string value of SCLCacheOverride, and set the value to 1. Also, add a string value of SCLCacheOverrideDirectory and set the value to the path of the folder to save the licensing token. 
     
@@ -161,6 +161,6 @@ To configure licensing token roaming, you can use either the Office Deployment T
    
 ## Related articles
 
-- [Deploy Microsoft 365 Apps by using Remote Desktop Services](deploy-microsoft-365-apps-remote-desktop-services.md)
+- [Deploy Microsoft 365 Apps by using Remote Desktop Services](../deploy/deploy-microsoft-365-apps-remote-desktop-services.md)
 - [Troubleshoot issues with shared computer activation for Microsoft 365 Apps](troubleshoot-shared-computer-activation.md)
 - [Overview of licensing and activation in Microsoft 365 Apps](overview-licensing-activation-microsoft-365-apps.md)

@@ -22,7 +22,7 @@ Viewer mode is designed for users who need to view or print Office files without
 
 When viewer mode is enabled, an unlicensed user of Microsoft 365 Apps for enterprise isn't prompted to activate Office when they open Word, Excel, or PowerPoint. Instead, they see the following banner message underneath the ribbon in their Office apps that informs them Office is in viewer mode.
 
-:::image type="content" source="./media/overview-viewer-mode/viewer-mode-notification.png" alt-text="Screenshot of viewer mode notification indicating Word is configured for view and print only.":::
+:::image type="content" source="../media/overview-viewer-mode/viewer-mode-notification.png" alt-text="Screenshot of viewer mode notification indicating Word is configured for view and print only.":::
 
 ## Enable viewer mode with Group Policy
 
@@ -42,4 +42,4 @@ To use these policy settings, download and install the [Administrative Template 
 - Updates, such as new features and security updates, are still applied when Office is in viewer mode.
 - The **Activate Product** button under **File** > **Account** is hidden when Office is in viewer mode.
 - *(For Version 2205 and later)* If viewer mode is enabled, but the user has a license for the product, such as Visio, then the user will have an activated, fully functional version of that product. The other unlicensed products on the device, such as Project, will remain in viewer mode.
-- Even when viewer mode is enabled, users need to accept the license agreement when Office is opened for the first time. You can automatically accept the license agreement for your users when you deploy Office by configuring the [AcceptEULA attribute](office-deployment-tool-configuration-options.md#accepteula-attribute-part-of-display-element).
+- Even when viewer mode is enabled, users need to accept the license agreement when Office is opened for the first time. You can automatically accept the license agreement for your users when you deploy Office by configuring the [AcceptEULA attribute](../deploy/office-deployment-tool-configuration-options.md#accepteula-attribute-part-of-display-element).

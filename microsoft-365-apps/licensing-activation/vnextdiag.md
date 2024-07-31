@@ -22,7 +22,7 @@ Because of this change, you can no longer use the ospp.vbs script to view and ma
 
 > [!NOTE]
 > - The subscription versions of the Project and Visio desktop apps also use the new activation method, starting with Version 1910.
-> - You still need to use ospp.vbs for volume licensed versions of Office, such as Office LTSC 2021 and Office 2019. For more information, see [Tools to manage volume activation of Office](../volume-license-activation/tools-to-manage-volume-activation-of-office.md).
+> - You still need to use ospp.vbs for volume licensed versions of Office, such as Office LTSC 2021 and Office 2019. For more information, see [Tools to manage volume activation of Office](/office/volume-license-activation/tools-to-manage-volume-activation-of-office).
 
 ## Verify that Microsoft 365 Apps is using the new activation method
 
@@ -59,7 +59,7 @@ The PowerShell script shows the products that are installed on the device and, f
 - Email of the user that activated the product.
 - ID of the tenant associated with the user.
 
-If the device is configured for [shared computer activation](../overview-shared-computer-activation.md) or [device-based licensing](../device-based-licensing.md), the output of running vnextdiag.ps1 shows that information.
+If the device is configured for [shared computer activation](../deploy/overview-office-deployment-tool.md) or [device-based licensing](../licensing-activation/device-based-licensing.md), the output of running vnextdiag.ps1 shows that information.
 
 ## Reset the activation of Microsoft 365 Apps by using vnextdiag.ps1
 

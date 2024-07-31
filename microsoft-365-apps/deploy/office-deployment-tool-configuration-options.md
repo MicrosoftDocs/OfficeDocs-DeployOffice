@@ -20,7 +20,7 @@ ms.date: 03/19/2024
 With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 > [!NOTE]
-> **Best practice:** The options in this article show the XML elements and attributes in the configuration file. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](admin-center/overview-office-customization-tool.md).
+> **Best practice:** The options in this article show the XML elements and attributes in the configuration file. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
 ## Example of a standard configuration file
 
@@ -132,9 +132,9 @@ Optional.
 
 Defines which channel to use for installing Microsoft 365 Apps. If Microsoft 365 Apps isn't installed on the device, the default setting for the Channel attribute is **Current**. If Microsoft 365 Apps is installed on the device and the channel attribute isn't specified, the ODT matches the channel of the existing installation.
 
-This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such a setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](updates/change-update-channels.md).
+This value determines the channel to be installed, regardless of an optionally specified update channel in the [Updates element](#updates-element) or via Group Policy Setting. If there's such a setting with a different update channel, the channel switch is performed after the installation during the next update cycle. For more information, see [Change the Microsoft 365 Apps update channel](../updates/change-update-channels.md).
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).  
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).  
 
 Allowed values: 
 
@@ -149,9 +149,9 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc/2021/update.md#update-channel-for-office-ltsc-2021).
+If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office/2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element)
 
@@ -217,7 +217,7 @@ Optional. Defaults to False if not specified.
 
 If set to True, a COM object gets registered which is required for allowing update management solutions (for example, Microsoft Configuration Manager) to manage updates. Required when using Configuration Manager for Microsoft 365 Apps updates. When the Office COM object is enabled, the Update Now option on the Account page for Microsoft 365 Apps is automatically disabled for client devices.
 
-For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](updates/manage-microsoft-365-apps-updates-configuration-manager.md).
+For more information, see [Manage updates to Microsoft 365 Apps with Microsoft Configuration Manager](../updates/manage-microsoft-365-apps-updates-configuration-manager.md).
 
 Allowed values: 
 
@@ -356,7 +356,7 @@ For more information about MatchPreviousMSI, see [Remove existing MSI versions o
 
 MatchOS and MatchInstalled can't install the operating system languages if Microsoft 365 Apps doesn't support that language or if the ODT can't find the correct language pack in the local source files. To help address this issue, we recommend that you specify a backup language and allow the ODT to use the CDN for missing files. To do so, use the Fallback attribute and AllowCdnFallBack attribute. 
 
-MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more information about MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](fieldnotes/build-dynamic-lean-universal-packages.md).
+MatchInstalled can be used only if there is at least one Click-to-Run product already installed. It can't be used with the /download switch for the ODT. For more information about MatchInstalled, see [Overview of deploying languages](overview-deploying-languages-microsoft-365-apps.md) and [Build dynamic, lean, and universal packages for Microsoft 365 Apps](../best-practices/build-dynamic-lean-universal-packages.md).
 
 ### Fallback attribute (part of Language element)
 
@@ -546,7 +546,7 @@ Optional. Default value is **0** if not specified.
 
 Set **SharedComputerLicensing** to 1 if you deploy Microsoft 365 Apps to shared computers by using Remote Desktop Services. 
 
-For more information, see  [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
+For more information, see  [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md).
 
 Allowed values:
 
@@ -557,7 +557,7 @@ Allowed values:
 
 Optional. Default value is **0** if not specified.
 
-Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use this property with SCLCacheOverrideDirectory. This property is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
+Set **SCLCacheOverride** to 1 if you're using shared computer activation and you want to roam the licensing token. Use this property with SCLCacheOverrideDirectory. This property is only needed if you choose to move the licensing token from its default location. For more information, see [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md).
 
 Allowed values:
 
@@ -570,7 +570,7 @@ Optional.
 
 Set **SCLCacheOverrideDirectory** to specify a folder location for the licensing token if you're using shared computer activation and you want to roam the licensing token. Use the property with SCLCacheOverride. This property is only needed if you choose to move the licensing token from its default location.
 
-For more information, see [Overview of shared computer activation for Microsoft 365 Apps](overview-shared-computer-activation.md).
+For more information, see [Overview of shared computer activation for Microsoft 365 Apps](../licensing-activation/overview-shared-computer-activation.md).
 
 Example values:
 
@@ -581,7 +581,7 @@ Example values:
 
 Optional. Default value is **0** if not specified.
 
-Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Microsoft 365 Apps for enterprise](device-based-licensing.md).
+Defines the Office licensing mode for device-based activation. For more information, see [Device-based licensing for Microsoft 365 Apps for enterprise](../licensing-activation/device-based-licensing.md).
 
 Allowed values:
 
@@ -603,8 +603,8 @@ Allowed values:
           Value="TRUE"
 
 > [!NOTE]
-> - Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](end-of-support/windows-7-support.md).
-> - Microsoft 365 Apps is no longer supported on Windows 8.1. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](end-of-support/windows-81-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 7. For more information, see [Windows 7 end of support and Microsoft 365 Apps](../end-of-support/windows-7-support.md).
+> - Microsoft 365 Apps is no longer supported on Windows 8.1. For more information, see [Windows 8.1 end of support and Microsoft 365 Apps](../end-of-support/windows-81-support.md).
 
 ## Remove element
 
@@ -707,7 +707,7 @@ Optional. The default is **Current**.
 
 Defines which channel to use for updating Microsoft 365 Apps after installed. There are two channel attributes: the channel for the  [Add element](#add-element) is used to specify an update channel while installing Microsoft 365 Apps, and the channel for the Updates element is used to change the channel for an existing installation of Microsoft 365 Apps.
 
-For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md). 
+For more information about update channels, see  [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md). 
 
 If you use Group Policy with the  [Administrative Template files (ADMX/ADML) for Office](https://go.microsoft.com/fwlink/p/?LinkID=626001), you can set **Channel** by using the **Update Channel** policy setting. You can find this policy setting under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates. If enabled, this Group Policy setting takes precedence over the **Channel** value set by using the Office Deployment Tool.
 
@@ -726,9 +726,9 @@ Allowed values:
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
 
-If you deploy Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume-licensed versions, you must use this update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](ltsc/2021/update.md#update-channel-for-office-ltsc-2021).
+If you deploy Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume-licensed versions, you must use this update channel: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 
-If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](office/2019/update.md#update-channel-for-office-2019).
+If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions of Office, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
 
 ## RemoveMSI element
 

@@ -32,12 +32,12 @@ If you don't want users installing Office themselves, you can [manually deploy O
 
 You can choose how often you want your users to get feature updates for the Office apps installed on devices running Windows. For example, you can provide new features as soon as they're ready, or once a month (on the second Tuesday of the month), or twice a year (in January and July, on the second Tuesday).
 
-We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](../DeployOffice/admin-center/cloud-update.md). By using cloud update, you automatically deliver monthly Office updates for specific users or groups in waves, limiting the effect on your network. In those cases where you selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
+We recommend Current Channel, because it provides your users with the newest Office features as soon as they're ready. If you need more predictability of when new Office features are released, we recommend Monthly Enterprise Channel with a [cloud update](/microsoft-365-apps/admin-center/cloud-update). By using cloud update, you automatically deliver monthly Office updates for specific users or groups in waves, limiting the effect on your network. In those cases where you selected devices that require extensive testing before receiving new features, we recommend Semi-Annual Enterprise Channel.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](updates/overview-update-channels.md).
+For more information, see [Overview of update channels for Microsoft 365 Apps](../updates/overview-update-channels.md).
 
 > [!NOTE]
-> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](updates/change-update-channels.md).
+> You won't see an option to choose Semi-Annual Enterprise Channel if your tenant was created after January 15, 2023. Semi-Annual Enterprise Channel is still available. You can move devices to that channel by using other methods, such as the Office Deployment Tool or Group Policy. For more information, see [Change the Microsoft 365 Apps update channel for devices in your organization](../updates/change-update-channels.md).
 
 After you select an update channel under **Feature updates** and choose **Save**, your choice of update channel will apply to both new and existing installations of Office in your organization. You can change your channel selection at any time.
 
@@ -54,7 +54,7 @@ Keep in mind that moving to a different update channel can also change which fea
 >
 > - If you’re using the Office Deployment Tool in a different way (for example, specifying the Channel attribute in the [Add element](office-deployment-tool-configuration-options.md#add-element) or in the [Updates element](office-deployment-tool-configuration-options.md#updates-element)), and not any of the other methods mentioned in the previous bullet point, then your choice under **Feature updates** will apply to those devices.
 >
-> - Also, if you're using the [Microsoft 365 Apps admin center](https://config.office.com), and the device is included in the [inventory](admin-center/inventory.md) or is managed by  [cloud update](admin-center/cloud-update.md), then your choice under **Feature updates** won't apply.
+> - Also, if you're using the [Microsoft 365 Apps admin center](https://config.office.com), and the device is included in the [inventory](../admin-center/inventory.md) or is managed by  [cloud update](../admin-center/cloud-update.md), then your choice under **Feature updates** won't apply.
 >
 > - Your choice under **Feature updates** applies *only to new*, but not existing, installations if you have one of the following plans: Office 365 operated by 21Vianet, Office 365 GCC, or Office 365 GCC High and DoD.
 
@@ -108,7 +108,7 @@ If you choose to make some software unavailable to your users, they see a messag
 
 ## Manually deploy Office to your users
 
-From the **Manually deploy apps to users** page, you can download the installation packages for Skype for Business or Office for Mac. For more information about deploying Office for Mac, see [Deployment guide for Office for Mac](mac/deployment-guide-for-office-for-mac.md).
+From the **Manually deploy apps to users** page, you can download the installation packages for Skype for Business or Office for Mac. For more information about deploying Office for Mac, see [Deployment guide for Office for Mac](../mac/deployment-guide-for-office-for-mac.md).
 
 ### Manually deploy the Office apps
 

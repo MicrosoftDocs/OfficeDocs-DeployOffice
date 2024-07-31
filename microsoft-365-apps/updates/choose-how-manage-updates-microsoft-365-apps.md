@@ -54,7 +54,7 @@ You can configure Microsoft 365 Apps to get updates automatically from a locatio
   
 This is a good option if you want more control over the version of Microsoft 365 Apps that users have installed. For example, even if the June version of Microsoft 365 Apps is available, you might want your users to continue using the May version. You might want to do this because you want to test to make sure that your line-of-business applications work with the June version.
   
-You'll have to use the Office Deployment Tool to [download updated versions of Microsoft 365 Apps from the internet](../overview-office-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
+You'll have to use the Office Deployment Tool to [download updated versions of Microsoft 365 Apps from the internet](../deploy/overview-office-deployment-tool.md) to your local network. After it's downloaded, you can place the updated version on a network share that is close to the users.
   
 ## Apply updates by installing an updated version of Microsoft 365 Apps
 <a name="Install"> </a>
@@ -67,7 +67,7 @@ If you decide to use this option, you'll disable automatic updates. You can [con
   
 ## Related articles
   
-[Overview of the Office Deployment Tool](../overview-office-deployment-tool.md)
+[Overview of the Office Deployment Tool](../deploy/overview-office-deployment-tool.md)
   
 [Overview of the update process for Microsoft 365 Apps](overview-update-process-microsoft-365-apps.md)
 

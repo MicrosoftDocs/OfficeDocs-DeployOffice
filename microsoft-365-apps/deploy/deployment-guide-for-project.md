@@ -43,7 +43,7 @@ If you want to have more control over how Project is deployed to your users, you
 
 2. Create a [configuration.xml file](office-deployment-tool-configuration-options.md) to use with the Office Deployment Tool to install Project Online Desktop Client.
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
-   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](./best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
+   - We also recommend reviewing the [Build dynamic, lean, and universal packages for Microsoft 365 Apps](../best-practices/build-dynamic-lean-universal-packages.md) article on how to optimize your configuration file. This step is optional.
 
 3. Use the [Office Deployment Tool](overview-office-deployment-tool.md) to deploy Project Online Desktop Client on your users' devices.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
@@ -56,7 +56,7 @@ Here are the general steps to deploy a volume licensed version of Project Profes
   
 1. Purchase Project 2021 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Project 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](ltsc/2021/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Project 2021 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2021](/office/ltsc/2021/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -73,7 +73,7 @@ Here are the general steps to deploy a volume licensed version of Project Profes
   
 1. Purchase Project 2019 as part of a volume licensing agreement.
 
-2. Use the Office Deployment Tool and a configuration.xml file to install Project 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](office/2019/deploy.md).
+2. Use the Office Deployment Tool and a configuration.xml file to install Project 2019 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office 2019 (for IT Pros)](/office/2019/deploy).
    - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
    - We recommend installing Project without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
@@ -92,7 +92,7 @@ Here are the general steps to deploy a volume licensed version Project Professio
 
 2. Download your version of Project 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-3. If you want to configure user settings for when Project is installed, you can use the [Office Customization Tool (OCT)](oct/oct-2016-help-overview.md).
+3. If you want to configure user settings for when Project is installed, you can use the [Office Customization Tool (OCT)](/office/customization-tool/oct-2016-help-overview).
 
 4. Deploy Project 2016 to your users. For example, you can send your users a script to run that installs Project from a network share on your local network.
 

@@ -26,7 +26,7 @@ The Office Software Protection Platform script (ospp.vbs), the Software License 
 The Office Software Protection Platform script (ospp.vbs) enables you to configure volume licensed versions of Office products, including Project and Visio. The ospp.vbs script is located in the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.
 
 > [!NOTE]
-> The ospp.vbs script doesn't work for Microsoft 365 Apps or subscription versions of Project and Visio. Instead, you can use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](../licensing-activation/vnextdiag.md).
+> The ospp.vbs script doesn't work for Microsoft 365 Apps or subscription versions of Project and Visio. Instead, you can use a PowerShell script named vnextdiag.ps1. For more information, see [Check the license and activation status for Microsoft 365 Apps](/microsoft-365-apps/licensing-activation/vnextdiag).
   
 Running ospp.vbs requires the cscript.exe script engine. To see the Help file, type the following command, and then press ENTER:
 

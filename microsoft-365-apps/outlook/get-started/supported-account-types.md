@@ -58,4 +58,4 @@ Any personal accounts that have already been added by end users remain connected
 ## Policy management with multiple accounts 
 
 Admins can use Exchange PowerShell cmdlets and Cloud Policy to configure features and policies for multiple mailbox accounts in their organization. To manage app-wide settings, the designated account must be set as primary. While features like Focused Inbox and Loop are specific to each account, disabling in-product feedback for any account makes it unavailable for all accounts.
-For more information, see [Policy management](/DeployOffice/outlook/manage/policy-management#accounts-and-policies).
+For more information, see [Policy management](/microsoft-365-apps/outlook/manage/policy-management#accounts-and-policies).

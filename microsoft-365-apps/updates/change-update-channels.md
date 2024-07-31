@@ -52,7 +52,7 @@ After the policy is applied, the "Office Automatic Updates 2.0" scheduled task m
 
 2. Download the latest version of the ODT (setup.exe) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=626065).
 
-3. Create a configuration file that specifies the new update channel. In the example, the channel changes to Current Channel. For other update channels, look up the [channel attribute in the Configuration Options article](../office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
+3. Create a configuration file that specifies the new update channel. In the example, the channel changes to Current Channel. For other update channels, look up the [channel attribute in the Configuration Options article](../deploy/office-deployment-tool-configuration-options.md#channel-attribute-part-of-updates-element).
 
 4. Deploy the Office Deployment Tool with the newly created configuration file using your standard processes. It must run the "setup.exe /configure yourconfigfile.xml" command to inject the update channel setting into the system. No requirement to close the Microsoft 365 Apps first, as only the stored configuration settings are changed.
 
@@ -123,7 +123,7 @@ Here are the steps for changing the update channel to Current Channel or Monthly
 
 You can use the Microsoft 365 installation options page in the [Microsoft 365 admin center](https://admin.cloud.microsoft) to set the default update channel for Microsoft 365 Apps. Unmanaged installations switch to the new default channel automatically.  
 
-This setting doesn't affect managed installations. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../manage-software-download-settings-office-365.md). 
+This setting doesn't affect managed installations. For a full break-down of which devices the Microsoft 365 admin center setting target, see [Manage Microsoft 365 installation options in the Microsoft 365 admin center](../deploy/manage-software-download-settings-office-365.md). 
 
 Depending on your scenario, you can use the Microsoft 365 admin center along with other options described in this article. For example, you could set up the Microsoft 365 admin center to keep all unmanaged devices on Current Channel, while using Intune to move and keep managed devices to Monthly Enterprise Channel. 
 

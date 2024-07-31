@@ -61,7 +61,7 @@ A key difference between Microsoft 365 Apps and Office LTSC 2021 is that Microso
 
 > [!NOTE]
 > - Office LTSC 2021 is designed for specific scenarios: regulated devices that cannot accept feature updates, process control devices on the manufacturing floor, and specialty systems that cannot connect to the internet.
-> - For more information, see [Overview of Office LTSC 2021](../ltsc/2021/overview.md).
+> - For more information, see [Overview of Office LTSC 2021](/office/ltsc/2021/overview).
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 
@@ -75,12 +75,12 @@ Microsoft 365 (and Office 365) provides subscription plans that include access t
 
 Microsoft 365 Apps is the version of Office that comes with many of those enterprise and business subscription plans. Microsoft 365 Apps includes the full versions of Office apps installed on your client devices. For example, Word, PowerPoint, Excel, Outlook, and OneNote.
 
-Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../device-based-licensing.md) or [shared computer activation](../overview-shared-computer-activation.md) for devices shared by multiple users, and [extended offline access](../overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
+Unlike volume licensed versions of Office, Microsoft 365 Apps provides a user-based licensing model that allows your users to install Office on multiple devices with their license. For example, install and use Microsoft 365 Apps on both a Windows 11 device and a Mac, as well as on a mobile device. Other options are available, such as [device-based licensing](../licensing-activation/device-based-licensing.md) or [shared computer activation](../deploy/overview-office-deployment-tool.md) for devices shared by multiple users, and [extended offline access](../licensing-activation/overview-extended-offline-access.md) for devices that aren't connected to the internet for an extended period of time.  
 
 There are also differences in how you deploy, activate, and update Microsoft 365 Apps compared to older volume licensed versions of Office. For more information about Microsoft 365 Apps, see the following information:
 
-- [About Microsoft 365 Apps in the enterprise](../about-microsoft-365-apps.md)
-- [Deployment guide for Microsoft 365 Apps](../deployment-guide-microsoft-365-apps.md)
+- [About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md)
+- [Deployment guide for Microsoft 365 Apps](../deploy/deployment-guide-microsoft-365-apps.md)
 
 ## Review the system requirements for Microsoft 365 Apps
 
@@ -99,7 +99,7 @@ For more information, see the following resources:
 
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
+Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../deploy/assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
 If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) program.
 
@@ -112,13 +112,13 @@ To decide how to upgrade to Microsoft 365 Apps, you should evaluate your infrast
 - Network infrastructure, including connections to the internet and internal software distribution points.
 - Cloud infrastructure, including existing Microsoft 365 (or Office 365) capabilities, user licensing, and identity.
 
-Your assessment of these components influences how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../assess-microsoft-365-apps.md).
+Your assessment of these components influences how you want to upgrade. For more information, see [Assess your environment and requirements for deploying Microsoft 365 Apps](../deploy/assess-microsoft-365-apps.md).
 
 ## Choose how you want to deploy and update Microsoft 365 Apps
 
 You can deploy and update Microsoft 365 Apps directly from the cloud, from a local source on your local network, or with Configuration Manager (or another software distribution solution). Which option you choose depends on your environment and business requirements. When you deploy from the cloud, for example, it minimizes your administrative overhead but could require more network bandwidth. When you use Configuration Manager or a local source for deployment, on the other hand, you might have more control over which devices get deployed and updated and the timing of those updates.
 
-For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../plan-microsoft-365-apps.md).
+For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](../deploy/plan-microsoft-365-apps.md).
 
 ## Choose how often to update Office with new features
 
@@ -137,7 +137,7 @@ You can install language accessory packs after you deploy Microsoft 365 Apps in 
 - Have your users download and install the language accessory packs for themselves.
 - Use the Office Deployment Tool to deploy the appropriate language accessory packs to your users.
 
-For more information, see [Overview of deploying languages for Microsoft 365 Apps](../overview-deploying-languages-microsoft-365-apps.md).
+For more information, see [Overview of deploying languages for Microsoft 365 Apps](../deploy/overview-deploying-languages-microsoft-365-apps.md).
 
 ## Review new policy settings for Group Policy
 
@@ -154,7 +154,7 @@ If you have Microsoft 365 Apps for enterprise, you can also use Cloud Policy to 
 
 We recommend that you uninstall any previous versions of Office before installing Microsoft 365 Apps on a device. You can remove these older versions of Office at the same time that you're installing Microsoft 365 Apps.
 
-For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../upgrade-from-msi-version.md).
+For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](../deploy/upgrade-from-msi-version.md).
 
 ## Upgrade to newer versions of Project and Visio
 
@@ -169,8 +169,8 @@ The most recent volume licensed versions are Project 2021 and Visio LTSC 2021. T
 
 For more information, see the following articles:
 
-- [Deployment guide for Project](../deployment-guide-for-project.md)
-- [Deployment guide for Visio](../deployment-guide-for-visio.md)
+- [Deployment guide for Project](../deploy/deployment-guide-for-project.md)
+- [Deployment guide for Visio](../deploy/deployment-guide-for-visio.md)
 
 ## Related articles
 
