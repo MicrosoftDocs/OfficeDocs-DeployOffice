@@ -76,13 +76,13 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "redirection_files": [
-    ".openpublishing.redirection.json",
-    ".openpublishing.redirection.places.json"
-  ],
   "docs_build_engine": {},
   "skip_source_output_uploading": false,
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.places.json"
+  ]
 }
