@@ -1,5 +1,5 @@
 ---
-title: "New Outlook for Windows Migration Guide"
+title: "Plan your migration for new Outlook for Windows"
 ms.author: janellem
 author: JanelleMcIntosh-MSFT
 manager: triciag
@@ -15,9 +15,7 @@ ai-usage: ai-assisted
 ms.date: 07/29/2024
 ---
 
-# New Outlook for Windows migration plan
-
-**Customer Intent for this Article:** To provide IT administrators with a comprehensive guide to plan and execute the migration from classic Outlook to new Outlook for Windows.
+# Plan your migration for new Outlook for Windows
 
 ## Plan your migration
 
@@ -97,7 +95,7 @@ You can switch to the new Outlook application by using the toggle found in the O
 
 ### Download from the Windows Store
 
-You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](/micorosft-365-apps/outlook/get-started/deployment-new-outlook.md).
+You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](deployment-new-outlook.md).
 
 ### Manage settings
 
@@ -116,25 +114,25 @@ To deploy this installer to a group of computers or your entire organization, us
 
 ### Manage updates
 
-The new Outlook for Windows app updates automatically, with new build updates shipping weekly. Ensure reliable delivery of updates by allowing access to the Microsoft 365 CDN on the `*.office.net` domain. For more information, see [Manage updates in new Outlook for Windows](/micorosft-365-apps/outlook/manage/manage-updates-new-outlook-windows.md).
+The new Outlook for Windows app updates automatically, with new build updates shipping weekly. Ensure reliable delivery of updates by allowing access to the Microsoft 365 CDN on the `*.office.net` domain. For more information, see [Manage updates in new Outlook for Windows](../manage/manage-updates-new-outlook-windows.md).
 
 ### Service-delivered features
 
-New features are released through rings through our service, starting with validation in internal rings before expanding into a production audience. External customers can receive features as part of a Targeted Release ring (for early previews) or Standard Release rings (most common). For more information, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365.md).
+New features are released through rings through our service, starting with validation in internal rings before expanding into a production audience. External customers can receive features as part of a Targeted Release ring (for early previews) or Standard Release rings (most common). For more information, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
-### More de3tails
+### More details
 
 For more general FAQs, see the Frequently Asked Questions document in the [New Outlook for Windows Adoption Kit](https://aka.ms/newOutlookAdoption).
 
 ### Availability & Deployment
 
-Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](/micorosft-365-apps/outlook/get-started/guide-product-availability.md).
+Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](guide-product-availability.md).
 
 The toggle is now available to Semiannual channel users as of build 16731.20504 (out of July fork, as of January 2024).
 
 The preview is now available in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel. The toggle to try the new Outlook (located in the top right of the window) is available to users with supported accounts only. Exchange on-prem is currently unsupported. Admins can control visibility of the toggle via a registry value.
 
-For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](/micorosft-365-apps/outlook/get-started/guide-product-availability.md).
+For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](guide-product-availability.md).
 
 The new Outlook for Windows does an update check upon each launch. If a new version is available, it's automatically downloaded and installed.
 
