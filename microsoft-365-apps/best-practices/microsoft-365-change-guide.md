@@ -195,9 +195,9 @@ In conjunction with release channels, which are inherently controls themselves, 
 
   - [Microsoft Configuration Manager](/configmgr)
 
-  - [Microsoft Intune](/intune)
+  - [Microsoft Intune](/mem/intune)
 
-  - [Autopilot](/mem/autopilot/windows-autopilot)
+  - [Autopilot](/autopilot/overview)
 
   - [Microsoft 365 Apps admin center](../admin-center/overview.md), which integrates with [Cloud Policy](../admin-center/overview-cloud-policy.md)
 
