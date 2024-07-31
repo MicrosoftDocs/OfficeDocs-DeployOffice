@@ -63,8 +63,8 @@ Things to consider:
 - **Feature requirements and overlap:** There are differences in feature availability between versions. Review as part of your pilot which features are available at the time of your upgrade. A growing feature comparison listing can be found in the [New and Classic feature comparison table](https://aka.ms/newOutlookFeatureComparison).
 - **Experience consideration:** Mails, calendar, contacts. What features are available for users? Upcoming? No longer supported? Having a clear understanding of these items can help assess the path to take. A growing feature comparison listing can be found in the [New and Classic feature comparison table](https://aka.ms/newOutlookFeatureComparison).
 - **Velocity of moving users over:** Every organization is different, and requires different choices based on the best experience for their users.  
-    - **Quick velocity:** All users have the same capability and experience which simplifies adoption.
-    - **Slower velocity:** Large organizations might move slower due to more complex requirements  
+  - **Quick velocity:** All users have the same capability and experience which simplifies adoption.
+  - **Slower velocity:** Large organizations might move slower due to more complex requirements  
 - **Cohorts:** Increased success when users adopt all key scenarios.  
 
 ### Prepare Your Organization
@@ -97,7 +97,7 @@ You can switch to the new Outlook application by using the toggle found in the O
 
 ### Download from the Windows Store
 
-You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](micorosft-365-apps/outlook/get-started/deployment-new-outlook).
+You can also download it from the Windows Store. See more: [Deployment overview for the new Outlook for Windows](/micorosft-365-apps/outlook/get-started/deployment-new-outlook).
 
 ### Manage settings
 
@@ -116,7 +116,7 @@ To deploy this installer to a group of computers or your entire organization, us
 
 ### Manage updates
 
-The new Outlook for Windows app updates automatically, with new build updates shipping weekly. Ensure reliable delivery of updates by allowing access to the Microsoft 365 CDN on the `*.office.net` domain. For more information, see [Manage updates in new Outlook for Windows](micorosft-365-apps/outlook/manage/manage-updates-new-outlook-windows).
+The new Outlook for Windows app updates automatically, with new build updates shipping weekly. Ensure reliable delivery of updates by allowing access to the Microsoft 365 CDN on the `*.office.net` domain. For more information, see [Manage updates in new Outlook for Windows](/micorosft-365-apps/outlook/manage/manage-updates-new-outlook-windows).
 
 ### Service-delivered features
 
@@ -128,13 +128,13 @@ For more general FAQs, see the Frequently Asked Questions document in the [New O
 
 ### Availability & Deployment
 
-Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](/outlook/get-started/guide-product-availability).
+Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](/micorosft-365-apps/outlook/get-started/guide-product-availability).
 
 The toggle is now available to Semiannual channel users as of build 16731.20504 (out of July fork, as of January 2024).
 
 The preview is now available in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel. The toggle to try the new Outlook (located in the top right of the window) is available to users with supported accounts only. Exchange on-prem is currently unsupported. Admins can control visibility of the toggle via a registry value.
 
-For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](/outlook/get-started/guide-product-availability).
+For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](/micorosft-365-apps/outlook/get-started/guide-product-availability).
 
 The new Outlook for Windows does an update check upon each launch. If a new version is available, it's automatically downloaded and installed.
 
@@ -151,8 +151,8 @@ The new Outlook for Windows can be deployed through the classic Outlook for Wind
 
 If you prefer to not have the new Outlook for Windows show up in your organization's devices, you can remove it after installing as part of the update. Admins can do this by following the instructions to remove the app package using PowerShell and using the parameter: Microsoft.OutlookForWindows. The PowerShell cmdlet to use is:
 
-    ```powershell
-    Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
-    ```
+```powershell
+Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
+```
 
 For more information on how to manage the transition between classic and new Outlook, see [Run new Outlook and classic Outlook side by side](https://support.microsoft.com/office/run-new-outlook-and-classic-outlook-side-by-side-a624c36d-c50f-43bc-9c8b-dd17b5690ffb).
