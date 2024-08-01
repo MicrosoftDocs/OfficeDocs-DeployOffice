@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
-ms.date: 04/24/2024
+ms.date: 08/01/2024
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center
