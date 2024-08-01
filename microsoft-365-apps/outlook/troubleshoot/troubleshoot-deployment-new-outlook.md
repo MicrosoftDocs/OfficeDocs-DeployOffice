@@ -98,14 +98,13 @@ Ensure there are no security policies or software blocking executables from runn
 
 ### Delivery optimization
 Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. [Reset delivery optimization key](/windows/deployment/do/waas-delivery-optimization-reference#download-mode):
+# [Windows 11](#tab/windows11)
+- HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
+- Setting the value for DODownloadMode to 100 (bypass) may cause installation to fail, as the bypass (100) setting is deprecated. Set this value to 0 instead.
 
 # [Windows 10](#tab/windows10)
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
 - Modify the regkey value: DODownloadMode to 0
-
-# [Windows 11](#tab/windows11)
-- HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
-- Setting the value for DODownloadMode to 100 (bypass) may cause installation to fail, as the bypass (100) setting is deprecated. Set this value to 0 instead.
 ---
 
 ## Other deployment options
