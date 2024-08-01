@@ -153,4 +153,4 @@ If you prefer to not have the new Outlook for Windows show up in your organizati
 Remove-AppxProvisionedPackage -AllUsers -Online -PackageName (Get-AppxPackage Microsoft.OutlookForWindows).PackageFullName
 ```
 
-For more information on how to manage the transition between classic and new Outlook, see [Run new Outlook and classic Outlook side by side](https://support.microsoft.com/office/run-new-outlook-and-classic-outlook-side-by-side-a624c36d-c50f-43bc-9c8b-dd17b5690ffb).
+For more information on how to manage the transition between classic and new Outlook, see [Run new Outlook and classic Outlook side-by-side](https://support.microsoft.com/office/run-new-outlook-and-classic-outlook-side-by-side-a624c36d-c50f-43bc-9c8b-dd17b5690ffb).
