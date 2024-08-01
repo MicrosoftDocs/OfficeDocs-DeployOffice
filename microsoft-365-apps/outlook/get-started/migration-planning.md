@@ -114,7 +114,7 @@ New features are released through rings through our service, starting with valid
 
 ## Availability and deployment
 
-> [!NOTE]
+> [!TIP]
 > For more general FAQs, see the Frequently Asked Questions document in the [New Outlook for Windows Adoption Kit](https://aka.ms/newOutlookAdoption).
 
 Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](guide-product-availability.md).
