@@ -106,7 +106,7 @@ Download mode dictates which download sources clients are allowed to use when do
 # [Windows 11](#tab/windows11)
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
 - Setting the value for DODownloadMode to 100 (bypass) may cause installation to fail, as the bypass (100) setting is deprecated. Set this value to 0 instead.
-
+---
 
 ## Other deployment options
 #### Microsoft store is blocked
