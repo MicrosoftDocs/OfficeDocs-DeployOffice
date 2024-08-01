@@ -120,17 +120,17 @@ The new Outlook for Windows app updates automatically, with new build updates sh
 
 New features are released through rings through our service, starting with validation in internal rings before expanding into a production audience. External customers can receive features as part of a Targeted Release ring (for early previews) or Standard Release rings (most common). For more information, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
 
-### More details
+## More details
 
 For more general FAQs, see the Frequently Asked Questions document in the [New Outlook for Windows Adoption Kit](https://aka.ms/newOutlookAdoption).
 
-### Availability & Deployment
+### Availability and deployment
 
 Classic Outlook is available until at least 2029. For more information, see the [Progressive stages of migration to new Outlook](guide-product-availability.md).
 
-The toggle is now available to Semiannual channel users as of build 16731.20504 (out of July fork, as of January 2024).
+The toggle to try new Outlook (located in the top right of the window) is available to Semi-Annual Channel users as of build 16731.20504 (out of July fork, as of January 2024), and now available in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel.
 
-The preview is now available in Current Channel, Monthly Enterprise Channel, and Semi-Annual Channel. The toggle to try the new Outlook (located in the top right of the window) is available to users with supported accounts only. Exchange on-prem is currently unsupported. Admins can control visibility of the toggle via a registry value.
+The toggle is only available to users with supported accounts. Exchange on-prem is currently unsupported. Admins can control visibility of the toggle via a registry value.
 
 For more information on build numbers related to each of the upcoming releases, see the [Progressive stages of migration to new Outlook](guide-product-availability.md).
 
