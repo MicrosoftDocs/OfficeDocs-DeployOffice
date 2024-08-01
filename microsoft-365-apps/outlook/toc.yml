@@ -7,7 +7,9 @@ items:
       - name: Product availability
         href: get-started/guide-product-availability.md
       - name: Licensing options
-        href: get-started/licensing-options.md        
+        href: get-started/licensing-options.md
+      - name: Plan migration
+        href: get-started/migration-planning.md               
       - name: Deploy new Outlook
         href: get-started/deployment-new-outlook.md
       - name: Control new Outlook installation
