@@ -153,10 +153,9 @@ You can drill down to see details about an add-in by clicking on its name. Those
 
 ## Inventory search
 
+If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 > [!NOTE]
 > The Inventory switch device update channel is in public preview.
-
-If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 
 ## Switch device update channel
 
