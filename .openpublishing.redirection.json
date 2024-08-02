@@ -397,6 +397,11 @@
     },
     {
       "source_path": "DeployOffice/privacy/index.md",
+      "redirect_url": "/microsoft-365-apps/privacy/overview-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/privacy/index.md",
       "redirect_url": "overview-privacy-controls",
       "redirect_document_id": false
     },
