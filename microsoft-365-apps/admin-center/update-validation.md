@@ -10,7 +10,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Update validation enables admins to test Microsoft 365 updates on a subset of devices, ensuring stability before a full-scale rollout."
-ms.date: 06/18/2024
+ms.date: 08/02/2024
 ---
 
 # Update validation
@@ -20,9 +20,6 @@ Update Validation, a feature within the [Cloud Update](cloud-update.md) service 
 
 > [!TIP]
 > For a guided introduction to update validation, check out the [Introducing update validation in the Microsoft 365 Apps admin center](https://youtu.be/xZtXI-Ws-pE) video.
-
-> [!NOTE]
-> Update validation for add-ins is currently in private preview. It will become broadly available in Q1 2024.
 
 ## Benefits
 Many large organizations choose to roll out new updates to only some devices at first. Staggering the deployment helps them find and fix potential problems early on and reduces the chance of having an issue impacting many devices. But it also means more work for the admins. They often must manually gather early feedback from sources like the help desk team or specific testers. And the feedback may not be clear or detailed enough to identify the actual issue without more investigation and troubleshooting. Overall, it adds to the admin's workload and slows down the deployment of the update.
@@ -69,7 +66,7 @@ The following additional requirements must be met:
     - We recommend that you enable [optional diagnostic data](../privacy/optional-diagnostic-data.md) to get reliability and performance results.
     - If your devices send [required diagnostic data](../privacy/required-diagnostic-data.md) only, only reliability results are shown.
 - Devices must be on Monthly Enterprise Channel.
-- You must configure and implement rollout waves.
+- You must enable [rollout waves](cloud-update.md#rollout-waves) and have at least ten devices on wave 1. We recommend to have at least twenty devices on your first wave, so update validation gets robust and broad health signals.
 - A period of seven days must be set between wave one and wave two rollouts.
 
 ## How to enable update validation
