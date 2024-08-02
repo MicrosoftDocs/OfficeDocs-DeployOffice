@@ -64,9 +64,9 @@ The following additional requirements must be met:
 - Devices must be managed via cloud update.
 - Diagnostic data for Office must be turned on for your devices.
     - We recommend that you enable [optional diagnostic data](../privacy/optional-diagnostic-data.md) to get reliability and performance results.
-    - If your devices send [required diagnostic data](../privacy/required-diagnostic-data.md) only, only reliability results are shown.
+    - If your devices send just [required diagnostic data](../privacy/required-diagnostic-data.md), only reliability results are shown.
 - Devices must be on Monthly Enterprise Channel.
-- You must enable [rollout waves](cloud-update.md#rollout-waves) and have at least ten devices on wave 1. We recommend to have at least twenty devices on your first wave, so update validation gets robust and broad health signals.
+- You must enable [rollout waves](cloud-update.md#rollout-waves) and have at least ten devices on wave 1. We recommend having at least twenty devices on your first wave, so update validation gets robust and broad health signals.
 - A period of seven days must be set between wave one and wave two rollouts.
 
 ## How to enable update validation
