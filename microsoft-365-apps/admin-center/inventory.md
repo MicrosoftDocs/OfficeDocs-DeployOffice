@@ -78,20 +78,20 @@ The **Channels** insight shows you the number of builds in your environment by u
 
 The **Devices** insight shows you a breakdown by Office architecture (32-bit versus 64-bit) for the devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
 
-Once you select **show all devices** you will see the Inventory table, the inventory table shows the following inforamtion:
+Once you select **show all devices** you will see the Inventory table, the inventory table shows the following information:
 
 | Heading | Description |
 |:-----|:-----|
 | Name| The name of the device |
 | Version| The version of Office that is installed on the device |
 | Build| The build of Office that is installed on the device |
-| Architecture| Ofice arcitecture on the device example x64/x32 |
+| Architecture| Office architecture on the device example x64/x32 |
 | Update channel| The update channel that Office is configured to receive Office updates from |
 | Add-ins Present | Does the device contain add-ins |
 | Macros used | Is the device running macros |
 | Last contact | The last time the device checked in |
 | Last user | The last user that signed into office on the device |
-| Last email | The last users email that signed into office on the device |
+| Last email | The last user's email that signed into office on the device |
 
 ## Cloud Update status details
 
