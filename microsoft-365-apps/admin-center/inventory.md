@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Guidance for Office admins on how to use the inventory feature in the Microsoft 365 Apps admin center."
-ms.date: 04/24/2024
+ms.date: 08/01/2024
 ---
 
 # Overview of inventory in the Microsoft 365 Apps admin center
@@ -61,7 +61,8 @@ The first page of **Inventory** is the insights dashboard. This page shows you i
 - The number of different Office builds, devices on those builds, and their support status.
 - The number of different Office update channels, number of different builds from those update channels, and their support status.
 - The number of devices on which Microsoft 365 Apps, version 2008 or later, is installed and the architecture (32-bit versus 64-bit) being used.
-- The top installed add-ins on those devices.
+- The top installed COM add-ins on those devices.
+- The Inventory Search, find a specific device or addin.
 
 ## Office build spread insight
 
@@ -77,6 +78,32 @@ The **Channels** insight shows you the number of builds in your environment by u
 
 The **Devices** insight shows you a breakdown by Office architecture (32-bit versus 64-bit) for the devices in your organization. To see more information about your devices, choose **Show all devices**. From there, you can select any device in the table to show a flyout with additional information about that specific device. The main device table can be filtered by clicking on each column header. You can also export the full list of devices from this view.
 
+Once you select **show all devices** you will see the Inventory table, the inventory table shows the following information:
+
+| Heading | Description |
+|:-----|:-----|
+| Name| The name of the device |
+| Version| The version of Office that is installed on the device |
+| Build| The build of Office that is installed on the device |
+| Architecture| Office architecture on the device example x64/x32 |
+| Update channel| The update channel that Office is configured to receive Office updates from |
+| Add-ins Present | Does the device contain add-ins |
+| Macros used | Is the device running macros |
+| Last contact | The last time the device checked in |
+| Last user | The last user that signed into office on the device |
+| Last email | The last user's email that signed into office on the device |
+
+## Cloud Update status details
+
+| Heading | Description |
+|:-----|:-----|
+| Eligible for| The device is eligible for cloud update |
+| Managed by| The device is managed by cloud update |
+| Not eligible for profiles| The device is not on a channel supported by cloud update |
+| Onboarding to| The device is onboarding to the desired cloud update profile |
+| Excluded from| The device is excluded from the specific cloud update profile |
+
+## Office device details
 The flyout for a specific device shows the following information:
 
 | Heading | Description |
@@ -126,6 +153,9 @@ You can drill down to see details about an add-in by clicking on its name. Those
 
 ## Inventory search
 
+> [!NOTE]
+> The Inventory switch device update channel is in public preview.
+
 If you need to find a specific device or add-in, you can use the search box located at the top of the page.
 
 ## Switch device update channel
@@ -140,12 +170,13 @@ You can use the **Switch device update channel** capability to change the update
    - One or more Microsoft Entra groups. These groups can contain users or devices. If you include devices, they must be Entra joined or hybrid Entra joined.
 6. Select **Move devices**, review the results, and close the flyout.
 
-The channel change takes a few hours to process. Once the change is complete, the updated channel is reflected in inventory.
+The channel change could take up to 24 hours to process. Once the change is complete, the updated channel is reflected in inventory.
 
 If you'd prefer to see this capability in action, check out this video: [How to trigger an update channel change for devices in the Microsoft 365 Apps admin center](https://www.youtube.com/watch?v=tFmktdQsKgY).
 
 > [!NOTE]
 > Triggering a channel change is a point-in-time action. If you target a security group, the action will be based on the current membership of that group. If you add additional members to the group, you can re-run the action and any devices that have already been moved to the destination channel will be ignored.
+> - A channel change will automatically enable cloud update for Current Channel and Monthly Enterprise Channel profiles.
 
 ## Export inventory views
 
