@@ -83,7 +83,7 @@ With cloud update, you can automatically deliver monthly Microsoft 365 Apps upda
 
 ## Update validation
 
-Update validation enables administrators to test updates on a select group of devices prior to a full rollout. This feature safeguards against update-related disruptions by monitoring key performance and stability metrics. It delivers precise insights for proactive issue resolution, empowering admins to deploy updates with assurance. If issues are detected, it pinpoints the impacted devices and apps, offering solutions such as rollback or update suspension. For more inforamtion, see [Update Validation](update-validation.md)
+Update validation enables administrators to test updates on a select group of devices prior to a full rollout. This feature safeguards against update-related disruptions by monitoring key performance and stability metrics. It delivers precise insights for proactive issue resolution, empowering admins to deploy updates with assurance. If issues are detected, it pinpoints the impacted devices and apps, offering solutions such as rollback or update suspension. For more information, see [Update Validation](update-validation.md).
 
 ## OneDrive sync health
 
