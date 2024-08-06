@@ -121,6 +121,15 @@ Microsoft 365 Apps is supported on Windows Server 2019 and Windows Server 2016 o
 
 Looking for recommendations and resources to help make your Microsoft 365 environment more inclusive and accessible for all your users? For example, steps on how to configure the Accessibility Checker to run automatically. Or a list of accessibility resources for Office, Windows, and Teams. If so, then check out the [Accessibility guide for Microsoft 365 Apps](accessibility-guide.md).
 
+### Servicing profile: rollout waves (preview)
+
+>[!NOTE]
+>This feature has been replaced by [cloud update](../admin-center/cloud-update.md)
+
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a servicing profile, and you want certain groups of users to receive updates before other groups of users, you can configure rollout waves. For example, you might want your IT admins and help desk staff to get the updates first, while users in the Finance department get the updates in a later wave. For more information, see [Create rollout waves](../admin-center/servicing-profile.md#create-rollout-waves).
+
 ## February 2022
 
 ### Blocking internet macros by default in Office
@@ -130,6 +139,17 @@ To help improve security in Office, we’re changing the default behavior of Off
 For more information, refer to the following information:
 - [Helping users stay safe: Blocking internet macros by default in Office](https://techcommunity.microsoft.com/t5/microsoft-365-blog/helping-users-stay-safe-blocking-internet-macros-by-default-in/ba-p/3071805) *(blog post)*
 - [Macros from the internet will be blocked by default in Office](../security/internet-macros-blocked.md) *(article for admins)*
+
+## January 2022
+
+### Servicing profile: roll back to a previous version (preview)
+
+>[!NOTE]
+>This feature has been replaced by [cloud update](../admin-center/cloud-update.md)
+
+*(This feature is generally available as of June 16, 2022.)*
+
+If you're using a [servicing profile](../admin-center/servicing-profile.md), and you're experiencing an issue with the most current version of Monthly Enterprise Channel, you can roll back devices to the previous version. For example, if there's an issue in Excel that affects users in your Finance department. For more information, see [Roll back to a previous version](../admin-center/servicing-profile.md#roll-back-to-a-previous-version).
 
 ## December 2021
 
