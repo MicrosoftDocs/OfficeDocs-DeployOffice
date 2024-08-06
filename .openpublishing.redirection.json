@@ -2454,6 +2454,16 @@
       "source_path": "DeployOffice/places/get-started/quick-setup-buildings-floors.md",
       "redirect_url": "/microsoft-365/places/get-started/quick-setup-buildings-floors",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/admin-center/servicing-profile.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/best-practices/adopt-servicing-profiles.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/adopting-cloud-update",
+      "redirect_document_id": false
     }
   ]
 }
