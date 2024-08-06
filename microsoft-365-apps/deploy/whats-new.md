@@ -145,7 +145,7 @@ For more information, refer to the following information:
 ### Servicing profile: roll back to a previous version (preview)
 
 >[!NOTE]
->This feature has been replaced by [cloud update](../admin-center/cloud-update.md)
+>This feature has been replaced by [cloud update](../admin-center/cloud-update.md).
 
 *(This feature is generally available as of June 16, 2022.)*
 
