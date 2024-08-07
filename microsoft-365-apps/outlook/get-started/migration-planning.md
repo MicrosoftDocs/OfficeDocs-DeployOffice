@@ -6,7 +6,9 @@ manager: triciag
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
-ms.collection: Tier3
+ms.collection:
+- Tier3
+- deploy-new-outlook
 ms.localizationpriority: medium
 recommendations: true
 description: "Migration planning guide for new Outlook"
