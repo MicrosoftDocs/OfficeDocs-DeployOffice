@@ -6,7 +6,9 @@ manager: aljerabe
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
-ms.collection: Tier1
+ms.collection:
+- Tier3
+- deploy-new-outlook
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true

@@ -7,7 +7,9 @@ ms.date: 07/17/2024
 ms.topic: overview
 ms.service: outlook  
 ms.localizationpriority: medium
-ms.collection: Tier3
+ms.collection:
+- Tier3
+- deploy-new-outlook
 ms.custom: QuickDraft  
 ms.reviewer: janellem
 recommendations: true
