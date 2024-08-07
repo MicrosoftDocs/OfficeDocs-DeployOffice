@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 07/22/2024
+ms.date: 08/07/2024
 ---
 
 # Connected experiences in Office
@@ -31,7 +31,6 @@ The following table provides a list of connected experiences that analyze your c
 | Analyze Data | [Analyze Data in Excel](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Automatic alt text <sup>[2]</sup> | [Everything you need to know to write effective alt text](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Automatically apply or recommend sensitivity labels <sup>[2]</sup> <sup>[3]</sup> <sup>[4]</sup>|[Sensitivity labels are automatically applied or recommended for your files and emails in Office](https://support.microsoft.com/office/622e0d9c-f38c-470a-bcdb-9e90b24d71a1)|
-|Class Notebook add-ins|[Getting Started with the OneNote Class Notebook: A Walkthrough for Teachers](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Data types| [Excel data types: Stocks and geography](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Dictation  | [Dictate in Microsoft 365](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Editor <sup>[4]</sup> <sup>[5]</sup> |[Microsoft Editor checks grammar and more in documents, mail, and the web](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
@@ -57,7 +56,7 @@ The following table provides a list of connected experiences that analyze your c
 | Smart Lookup <sup>[1]</sup>   | [Get insights into what you're working on with Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 |Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Suggested replies <sup>[2]</sup> <sup>[4]</sup>| [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
-|Text predictions <sup>[2]</sup> <sup>[8]</sup> |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
+|Text predictions <sup>[8]</sup> |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transcribe|[Transcribe your recordings](https://support.microsoft.com/office/transcribe-your-recordings-7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 |Translate text on images|[Translate text on images](https://support.microsoft.com/office/b4dbefd7-ae10-4b3f-9813-57e9e55f0f41)|
