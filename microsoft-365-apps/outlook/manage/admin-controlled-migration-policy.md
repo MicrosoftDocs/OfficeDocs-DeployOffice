@@ -180,14 +180,14 @@ Windows Registry Editor Version 5.00
 
 Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\New Outlook migration interval.reg*.
 
-Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
+Run the *.reg* file and select  **Yes**  in the confirmation dialog that appears.
 
 > [!IMPORTANT]
-> New Outlook isn't supported for on-premises environments. So, if you have a hybrid environment with both Microsoft 365 and on-prem users, you should only target Microsoft 365 users for this policy. You can do this by using the cloud policy. New Outlook is also not available in sovereign clouds so do not enable the policy for these environments.
+> New Outlook isn't supported for on-premises environments. So, if you have a hybrid environment with both Microsoft 365 and on-premises users, you should only target Microsoft 365 users for this policy. You can do this by using the cloud policy. New Outlook is also not available in sovereign clouds so do not enable the policy for these environments.
 
 ### Hide the Toggle in New Outlook for Windows
 
-Some organizations might want users to stay in new Outlook and remove the option in new Outlook and don't toggle back to classic Outlook for Windows. This policy hides the toggle in new Outlook: `HideClassicOutlookToggleOut`.
+Some organizations might want users to stay in new Outlook and remove the option to toggle back to classic Outlook for Windows. The `HideClassicOutlookToggleOut` policy hides the toggle in new Outlook.
 
 It's a mailbox policy that can be set through Exchange PowerShell –
 
@@ -206,24 +206,24 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggl
 ## Sample Scenarios
 
 1. You want to require all your users to try new Outlook once
-    a. Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    b. Don’t set the `NewOutlookAutoMigrationRetryIntervals` GPO policy.
+    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
+    - Don’t set the `NewOutlookAutoMigrationRetryIntervals` GPO policy.
 
 2. You want to prompt all your users to try new Outlook every 30 days.
-    a. Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    b. Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **30**.
+    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **30**.
 
 3. You want to prompt all your users to try new Outlook at every launch of classic Outlook.
-    a. Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    b. Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
+    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
 
 4. You want to force all your users to new Outlook and not give them an option to return to classic Outlook.
-    a. Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    b. Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
-    c. Enable the `HideClassicOutlookToggleOutlook` mailbox policy by setting it to **true**.
+    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
+    - Enable the `HideClassicOutlookToggleOutlook` mailbox policy by setting it to **true**.
 
 5. You want to stop migration for all your users 
-    a. Disable the `DoNewOutlookAutoMigration` GPO policy by setting it to **0**.
+    - Disable the `DoNewOutlookAutoMigration` GPO policy by setting it to **0**.
 
 6. You want to stop migrating users every 30 days and run migration only one time
-    a. Update the `NewOutlookAutoMigrationRetryIntervals` GPO policy from **30** to **0**.
+    - Update the `NewOutlookAutoMigrationRetryIntervals` GPO policy from **30** to **0**.
