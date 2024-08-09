@@ -65,7 +65,7 @@ The following table provides a list of connected experiences that analyze your c
 > [!NOTE]
 > <sup>[1]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
-> <sup>[2]</sup> These connected experiences in Word, Excel, PowerPoint, and Outlook of Microsoft 365 Apps won’t be available to your users in the following scenarios on Windows devices:
+> <sup>[2]</sup> These connected experiences in Word, Excel, PowerPoint, and Outlook (classic) of Microsoft 365 Apps won’t be available to your users in the following scenarios on Windows devices:
 > - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
 > - If your organization is using Double Key Encryption (DKE) to protect files and emails.
 >
