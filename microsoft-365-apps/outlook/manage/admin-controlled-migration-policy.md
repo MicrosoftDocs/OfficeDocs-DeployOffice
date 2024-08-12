@@ -50,7 +50,7 @@ This teaching callout might not appear in some cases, for example, if a higher p
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users select **Switch next time** or close the dialog or the app, they'll automatically be taken to the new Outlook experience on the next launch of classic Outlook.
 
-:::image type="content" source="media/admin-controlled-migration-policy/outlook-install-notice.png" alt-text="Installation notice in Outlook informing users that the new Outlook for Windows has been installed, with options to switch now or next time." lightbox="media/admin-controlled-migration-policy/outlook-install-notice-lb.png":::
+:::image type="content" source="media/admin-controlled-migration-policy/outlook-install-notice.png" alt-text="Installation notice in Outlook informing users that the new Outlook for Windows is installed, with options to switch now or next time." lightbox="media/admin-controlled-migration-policy/outlook-install-notice-lb.png":::
 
 Users are able to toggle back to classic Outlook for Windows anytime.
 
@@ -62,7 +62,7 @@ Make the new Outlook toggle available to users. If the toggle is hidden, users d
 
 This group policy and can be managed via Cloud Policy. It can also be deployed as a Registry Key.
 
-The policy functionality can be used in Current Channel Version 2406 (Build 16.0.17830.20138). We expect it to become available in the Monthly Enterprise Channel in September 2024.
+You can use the policy functionality in Current Channel Version 2406 (Build 16.0.17830.20138). We expect it to become available in Monthly Enterprise Channel in September 2024.
 
 #### Policy Details:
 
@@ -72,19 +72,19 @@ Possible Values (Boolean):
   - **1:** This value enables the new Outlook migration and initiates the migration flow as previously described.
   - **0:** This value disables the new Outlook migration and users stop seeing the associated experiences.
 
-The migration runs only once till users switch to new Outlook. You can set the interval policy to reinitiate migration in the scenario users toggle back to classic Outlook.
+The migration runs only once. You can set the interval policy to reinitiate migration in the scenario users toggle back to classic Outlook.
 
 Deleting the registry key associated with this policy disables the policy and stops the migration. If you enable the policy again after disabling it or deleting the registry key, it will start migration again from step #1.
 
-### Setting as a Group Policy
+#### Setting as a Group Policy
 
 You can download the latest group policy from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
-### Setting as a Cloud Policy
+#### Setting as a Cloud Policy
 
 You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/).
 
-### Setting as a Registry Value
+#### Setting as a Registry Value
 
 Copy one of the following text blocks into Notepad:
 
@@ -125,7 +125,7 @@ The Admin controlled migration policy must be enabled for this policy to be resp
 
 This setting is a group policy and can be managed via Cloud Policy. It can also be deployed as a Registry value.
 
-The policy functionality can be used in Current Channel Version 2304 (Build 16327.20214), Monthly Enterprise Channel Version 2303 (build 16227.20318), and Semi-Annual Enterprise Channel (Preview) Version 2308 (build 16731.20234). We expect it to become available in Semi-Annual Enterprise Channel in January 2024.
+You can use the policy functionality in Current Channel Version 2406 (Build 16.0.17830.20138). We expect it to become available in Monthly Enterprise Channel in September 2024.
 
 #### Policy Details:
 
@@ -210,24 +210,24 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggl
 ## Sample Scenarios
 
 1. You want to require all your users to try new Outlook once
-    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    - Don’t set the `NewOutlookAutoMigrationRetryIntervals` GPO policy.
+    - Enable the `DoNewOutlookAutoMigration` policy by setting it to **1**.
+    - Don’t set the `NewOutlookAutoMigrationRetryIntervals` policy.
 
 2. You want to prompt all your users to try new Outlook every 30 days.
-    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **30**.
+    - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **30**.
 
 3. You want to prompt all your users to try new Outlook at every launch of classic Outlook.
-    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
+    - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **1**.
 
 4. You want to force all your users to new Outlook and not give them an option to return to classic Outlook.
-    - Enable the `DoNewOutlookAutoMigration` GPO policy by setting it to **1**.
-    - Set the `NewOutlookAutoMigrationRetryIntervals` GPO policy to **1**.
+    - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
+    - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **1**.
     - Enable the `HideClassicOutlookToggleOutlook` mailbox policy by setting it to **true**.
 
 5. You want to stop migration for all your users 
-    - Disable the `DoNewOutlookAutoMigration` GPO policy by setting it to **0**.
+    - Disable the `DoNewOutlookAutoMigration`  policy by setting it to **0**.
 
 6. You want to stop migrating users every 30 days and run migration only one time
-    - Update the `NewOutlookAutoMigrationRetryIntervals` GPO policy from **30** to **0**.
+    - Update the `NewOutlookAutoMigrationRetryIntervals`  policy from **30** to **0**.
