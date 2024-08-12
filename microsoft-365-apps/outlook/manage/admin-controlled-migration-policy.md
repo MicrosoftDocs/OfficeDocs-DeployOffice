@@ -34,7 +34,7 @@ This approach allows users in-app communication about the new Outlook migration 
 - If users select **Try it**, classic Outlook is closed and new Outlook is launched.
 - If users choose **Not now**, the teaching callout is dismissed, and they can continue using classic Outlook. They’ll see the experience defined in step #2, in the next session.
 
-![A screenshot of a computer](image_link_here)
+:::image type="content" source="media/admin-controlled-migration-policy/outlook-prompt.png" alt-text="Notification prompt in Outlook asking users to try the new Outlook, with options to either try it now or defer." lightbox="media/admin-controlled-migration-policy/outlook-prompt-lb.png":::
 
 This teaching callout might not appear in some cases, for example, if a higher priority teaching callout is queued or if users navigate away too quickly. Users will still see the next migration step.
 
@@ -43,10 +43,14 @@ This teaching callout might not appear in some cases, for example, if a higher p
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users close the business bar or don’t take any action, they’re able to continue using classic Outlook for Windows. They’ll see the experience defined in step #3, in the next session.
 
+:::image type="content" source="media/admin-controlled-migration-policy/outlook-banner-notification.png" alt-text="Notification banner in Outlook recommending users to switch to the new Outlook with an option to switch now." lightbox="media/admin-controlled-migration-policy/outlook-banner-notification-lb.png":::
+
 **Step #3:** Users see a blocking prompt encouraging them to switch to new Outlook.
 
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users select **Switch next time** or close the dialog or the app, they'll automatically be taken to the new Outlook experience on the next launch of classic Outlook.
+
+:::image type="content" source="media/admin-controlled-migration-policy/outlook-install-notice.png" alt-text="Installation notice in Outlook informing users that the new Outlook for Windows has been installed, with options to switch now or next time." lightbox="media/admin-controlled-migration-policy/outlook-install-notice-lb.png":::
 
 Users are able to toggle back to classic Outlook for Windows anytime.
 
@@ -136,15 +140,15 @@ Deleting the registry key associated with this policy behaves like setting the p
 
 If you enable the policy again after disabling it, it will reinitiate the migration as per the defined value.
 
-### Setting as a Group Policy
+#### Setting as a Group Policy
 
 You can download the latest group policy from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49030).
 
-### Setting as a Cloud Policy
+#### Setting as a Cloud Policy
 
 You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/).
 
-### Setting as a Registry Key
+#### Setting as a Registry Key
 
 Copy one of the following text blocks into Notepad:
 
