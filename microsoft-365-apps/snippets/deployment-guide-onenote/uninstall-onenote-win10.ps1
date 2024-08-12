@@ -76,7 +76,7 @@ function updateUWPVersion {
         $uwpVersion = $uwpApp.Version
         $uwpVersionObject = [System.Version]$uwpVersion
 
-$updatedVersion = "16001.14326.21942.0"
+$updatedVersion = "16001.14326.22008.0"
         $updatedVersionObject = [System.Version]$updatedVersion
 
 $unsupportedVersion = "16001.14327.10000.0"
@@ -129,7 +129,7 @@ function launchBackUp {
     try
     {
         $OneNoteUWPLaunch = (Get-AppxPackage -Name Microsoft.Office.OneNote).InstallLocation + "/onenoteim.exe"
-        Start-Process "onenote-cmd://backup:" -filepath $OneNoteUWPLaunch
+        Start-Process "onenote-uwp://backup:" -filepath $OneNoteUWPLaunch
         Start-Sleep -Seconds 60
         writeLogsToFileAndConsole "OneNote UWP backup initiated."
     }
