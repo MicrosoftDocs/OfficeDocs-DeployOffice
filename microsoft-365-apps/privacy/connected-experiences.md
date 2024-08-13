@@ -69,14 +69,14 @@ The following table provides a list of connected experiences that analyze your c
 > - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
 > - If your organization is using Double Key Encryption (DKE) to protect files and emails.
 >
-> This applies to Version 2406 or later in Current Channel and Monthly Enterprise Channel, and Version 2402 (Build 17328.20###) or later in Semi-Annual Enterprise Channel.
+> This applies to Version 2406 or later in Current Channel and Monthly Enterprise Channel, and Version 2402 (Build 17328.20550) or later in Semi-Annual Enterprise Channel.
 >
 > <sup>[3]</sup> Starting with Version 2406 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals. For more information, see [Apply a sensitivity label to content automatically](/purview/apply-sensitivity-label-automatically) and [Send email notifications and show policy tips for DLP policies](/purview/dlp-use-notifications-and-policy-tips).
 >
 > <sup>[4]</sup> These connected experiences won’t be available to your users in Outlook (classic) on Windows devices if all of the following conditions are true:
 > - You’ve configured the “Block processing of S/MIME encrypted messages by certain connected experiences” policy setting to Enabled.
 > - The email messages are using S/MIME encryption.
-> - Your users have Version 2405 or later in Current Channel or Monthly Enterprise Channel, or have Version 2402 (Build 17328.20###) or later in Semi-Annual Enterprise Channel.
+> - Your users have Version 2405 or later in Current Channel or Monthly Enterprise Channel, or have Version 2402 (Build 17328.20550) or later in Semi-Annual Enterprise Channel.
 >
 > For Editor, only spelling and grammar check are affected.
 >
