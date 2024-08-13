@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/07/2024
+ms.date: 08/13/2024
 ---
 
 # Connected experiences in Office
@@ -55,7 +55,7 @@ The following table provides a list of connected experiences that analyze your c
 |Similarity checker <sup>[1]</sup> <sup>[2]</sup>|[Check your document for similarity to online sources](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | Smart Lookup <sup>[1]</sup>   | [Get insights into what you're working on with Smart Lookup](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 |Speaker Coach|[Rehearse your slide show with Speaker Coach](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
-| Suggested replies <sup>[2]</sup> <sup>[4]</sup>| [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
+| Suggested replies| [Use suggested replies in Outlook](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 |Text predictions <sup>[8]</sup> |[Editor text predictions in Word](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transcribe|[Transcribe your recordings](https://support.microsoft.com/office/transcribe-your-recordings-7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transform to Web Page   | [Transform your Word document into a Sway web page](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
@@ -65,16 +65,18 @@ The following table provides a list of connected experiences that analyze your c
 > [!NOTE]
 > <sup>[1]</sup> When users are signed in with a work or school account, these connected experiences are optional connected experiences and are provided under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement), and other terms may also apply. For more information, see [Overview of optional connected experiences in Office](optional-connected-experiences.md). If you're an admin, these optional connected experiences can be managed by privacy controls for connected experiences or by the *Allow the use of additional optional connected experiences in Office* policy setting.
 >
-> <sup>[2]</sup> These connected experiences won’t be available to your users in the following scenarios on Windows devices running Version 2406 or later in Word, Excel, PowerPoint, and Outlook of Microsoft 365 Apps:
+> <sup>[2]</sup> These connected experiences in Word, Excel, PowerPoint, and Outlook (classic) of Microsoft 365 Apps won’t be available to your users in the following scenarios on Windows devices:
 > - If your organization is using the PowerShell advanced setting *BlockContentAnalysisServices* with sensitivity labels from Microsoft Purview Information Protection. For more information, see [Prevent some connected experiences that analyze content](/purview/sensitivity-labels-office-apps#prevent-some-connected-experiences-that-analyze-content).
 > - If your organization is using Double Key Encryption (DKE) to protect files and emails.
+>
+> This applies to Version 2406 or later in Current Channel and Monthly Enterprise Channel, and Version 2402 (Build 17328.20550) or later in Semi-Annual Enterprise Channel.
 >
 > <sup>[3]</sup> Starting with Version 2406 of Microsoft 365 Apps, these connected experiences are no longer managed by privacy controls for connected experiences. Instead, these connected experiences can be managed by using existing security controls available in Microsoft Purview portals. For more information, see [Apply a sensitivity label to content automatically](/purview/apply-sensitivity-label-automatically) and [Send email notifications and show policy tips for DLP policies](/purview/dlp-use-notifications-and-policy-tips).
 >
 > <sup>[4]</sup> These connected experiences won’t be available to your users in Outlook (classic) on Windows devices if all of the following conditions are true:
 > - You’ve configured the “Block processing of S/MIME encrypted messages by certain connected experiences” policy setting to Enabled.
 > - The email messages are using S/MIME encryption.
-> - Your users have Version 2405 or later of Outlook (classic).
+> - Your users have Version 2405 or later in Current Channel or Monthly Enterprise Channel, or have Version 2402 (Build 17328.20550) or later in Semi-Annual Enterprise Channel.
 >
 > For Editor, only spelling and grammar check are affected.
 >
