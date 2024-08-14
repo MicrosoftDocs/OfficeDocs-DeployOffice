@@ -88,30 +88,30 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 
 1. Copy one of the following text blocks into Notepad:
 
-**Enable the new Outlook migration:** This value initiates the migration flow as previously described.
+    **Enable the new Outlook migration:** This value initiates the migration flow as previously described.
 
-```console
-Windows Registry Editor Version 5.00
+    ```console
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+    “DoNewOutlookAutoMigration”: dword:00000001
+    ```
 
-[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
-“DoNewOutlookAutoMigration”: dword:00000001
-```
-
-**Disable the new Outlook migration:** This value stops the migration flow as previously described.
-```console
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
-“DoNewOutlookAutoMigration”: dword:00000000
-```
-> [!NOTE]
-> You can also create the *DoNewOutlookAutoMigration* DWORD under the user's policy key *HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\Options\General* to prevent users from changing the registry value to a different value.
+    **Disable the new Outlook migration:** This value stops the migration flow as previously described.
+    ```console
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+    “DoNewOutlookAutoMigration”: dword:00000000
+    ```
+    > [!NOTE]
+    > You can also create the *DoNewOutlookAutoMigration* DWORD under the user's policy key *HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\Options\General* to prevent users from changing the registry value to a different value.
 
 1. Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\Migrate to New Outlook.reg* or *C:\Data\Migrate to New Outlook.reg*.
 
 1. Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
 
-> [!NOTE]
+> [!ATTENTION]
 > Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
 ## Policy to Define the Interval Between Migration Attempts
