@@ -13,7 +13,7 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-ms.date: 08/08/2024
+ms.date: 08/15/2024
 ---
 # Policy for Admin-Controlled Migration to New Outlook for Windows
 
@@ -86,7 +86,7 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 
 #### Setting as a Registry Value
 
-Copy one of the following text blocks into Notepad:
+1. Copy one of the following text blocks into Notepad:
 
 **Enable the new Outlook migration:** This value initiates the migration flow as previously described.
 
@@ -107,9 +107,12 @@ Windows Registry Editor Version 5.00
 > [!NOTE]
 > You can also create the *DoNewOutlookAutoMigration* DWORD under the user's policy key *HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\Options\General* to prevent users from changing the registry value to a different value.
 
-Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\Migrate to New Outlook.reg* or *C:\Data\Migrate to New Outlook.reg*.
+1. Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\Migrate to New Outlook.reg* or *C:\Data\Migrate to New Outlook.reg*.
 
-Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
+1. Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
+
+> [!NOTE]
+> Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
 ## Policy to Define the Interval Between Migration Attempts
 
