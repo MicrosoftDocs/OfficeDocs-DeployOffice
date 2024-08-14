@@ -3,43 +3,60 @@
 ######   Migration Script  ##################
 #############################################
 
-$localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
-$outputFile = "C:\temp\OneNoteMigration\UWPBackUpResult.log"
-
+## Function: writeLogsToFileAndConsole
+## Purpose: Creates a backup folder if it doesn't exist, and writes log messages to both a log file and the console.
 function writeLogsToFileAndConsole {
     Param ([string]$logstring)
+    $backupFolder = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup"
+    $outputFile = $backupFolder + "\UWPMigrationResult.log"
+
+    # Create backup directory if it doesn't exist
+    if (-not (Test-Path $backupFolder)) {
+        New-Item -Path $backupFolder -ItemType Directory
+    }
+
+    # Create log file if it doesn't exist
+    if (-not (Test-Path $outputFile)) {
+        New-Item -Path $outputFile -ItemType File
+    }
+
+    # Append log string to the log file and output to console
     Add-content $outputFile -value "$logstring"
     Write-Host "$logstring"
 }
 
-## Check if OneNote UWP is installed ##
+## Function: checkOneNoteUWPInstalled
+## Purpose: Checks if the OneNote UWP application is installed and logs the result.
 function checkOneNoteUWPInstalled {
     $uwpApp = Get-AppxPackage | Where-Object {$_.Name -eq "Microsoft.Office.OneNote"}
     if ($null -ne $uwpApp) {
-        writeLogsToFileAndConsole "OneNote UWP App is installed"
+        writeLogsToFileAndConsole "OneNote UWP version is installed"
     }
     else {
         writeLogsToFileAndConsole "OneNote UWP App is not installed"
     }
 }
 
+## Function: getWin32RegKeys
+## Purpose: Retrieves and logs important OneNote registry values, including (a) the First Boot Status, 
+## (b) client version, (c) audience data, and (d) backup folder path. (e) It also logs the UWP version of OneNote.
 function getWin32RegKeys {
     $registryPath = "HKCU:\SOFTWARE\Microsoft\Office\16.0\OneNote"
     $bootValueName = "FirstBootStatus"
-
-    }
-    $outputDir = "C:\temp\OneNoteMigration\"
-    if(!(test-path $outputDir)){new-item -path "C:\temp\OneNoteMigration\" -ItemType directory -name OneNoteUWPBackup|out-null}
-    new-item -path $outputDir -name UWPBackupResult.log -Type File -Force
-
-$registry = Get-ItemProperty -Path $registryPath
-    # get FRE status
+    $outputDir = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup\"
+    $registry = Get-ItemProperty -Path $registryPath
+    
+    # (a) Retrieve First Boot Status registry value
     if ($registry.PSObject.Properties[$bootValueName]) {
         $bootValue = $registry.$bootValueName
         writeLogsToFileAndConsole "OneNote Win32 FRE Value: $bootValue"
     }
+    else {
+        writeLogsToFileAndConsole "OneNote Win32 RegKeys not detected"
+        exit
+    }
 
-# get client version and audience data
+    # (b) and (c) Retrieve client version and audience data
     $registryPath = "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration"
     $versionValueName = "ClientVersionToReport"
     $audienceValueName = "AudienceData"
@@ -53,7 +70,7 @@ $registry = Get-ItemProperty -Path $registryPath
         writeLogsToFileAndConsole "OneNote Win32 Audience Value: $audienceValue"
     }
 
-# get backup folder path if existed
+    # (d) Retrieve OneNote Win32 backup folder path if it exists
     $registryPath = "HKCU:\SOFTWARE\Microsoft\Office\16.0\OneNote\Options\Paths"
     $backupValueName = "BackupFolderPath"
     if (Test-Path $registryPath) {
@@ -63,184 +80,187 @@ $registry = Get-ItemProperty -Path $registryPath
             writeLogsToFileAndConsole "OneNote Win32 Backup Path Value: $backupValue"
         }
     }
-    # get uwp version
+
+    # (e) Retrieve and log UWP version of OneNote
     $uwpApp = Get-AppxPackage | Where-Object {$_.Name -eq "Microsoft.Office.OneNote"}
     $uwpVersion = $uwpApp.Version
     $uwpVersionObject = [System.Version]$uwpVersion
     writeLogsToFileAndConsole "UWP OneNote app version: $uwpVersion"
+}
 
-## Update OneNote for Windows 10 to the latest version available ##
+## Function: updateUWPVersion
+## Purpose: Checks and updates OneNote UWP to the latest supported version. Logs the result and 
+## exits if the version is unsupported or if an update is required.
 function updateUWPVersion {
     $uwpApp = Get-AppxPackage | Where-Object {$_.Name -eq "Microsoft.Office.OneNote"}
     if ($null -ne $uwpApp) {
         $uwpVersion = $uwpApp.Version
         $uwpVersionObject = [System.Version]$uwpVersion
 
-$updatedVersion = "16001.14326.22008.0"
+        # Define version thresholds
+        $updatedVersion = "16001.14326.22008.0"
         $updatedVersionObject = [System.Version]$updatedVersion
 
-$unsupportedVersion = "16001.14327.10000.0"
+        $unsupportedVersion = "16001.14327.10000.0"
         $unsupportedVersionObject = [System.Version]$unsupportedVersion
 
-if ($uwpVersionObject -ge $unsupportedVersionObject)
-        {
-        writeLogsToFileAndConsole "Unsupported version of OneNote UWP app. Please check the Microsoft Store for updates"
+        # Check if UWP version is unsupported or needs an update
+        if ($uwpVersionObject -ge $unsupportedVersionObject) {
+            writeLogsToFileAndConsole "Unsupported version of OneNote UWP app. Please check the Microsoft Store for updates"
             exit
-    }
+        }
 
-if ($uwpVersionObject -lt $updatedVersionObject)
-        {
-            writeLogsToFileAndConsole "You must upgrade OneNote UWP to a version higher than 16.0.14326.21942. Please check the Microsoft Store"
+        if ($uwpVersionObject -lt $updatedVersionObject) {
+            writeLogsToFileAndConsole "You must upgrade OneNote UWP to a version higher than 16.0.14326.21802. Please check the Microsoft Store"
             exit
         }
-        else
-        {
-            writeLogsToFileAndConsole "OneNote UWP version up to date"
+        else {
+            writeLogsToFileAndConsole "OneNote UWP will be removed"
         }
     }
-    else
-    {
+    else {
         writeLogsToFileAndConsole "No OneNote UWP detected. No need for migration"
         exit
     }
 }
-## Terminate the OneNote for Windows 10 app before executing the rest of the migration script ##
+
+## Function: killProcess
+## Purpose: Terminates the OneNote UWP process if it is running, allowing for further operations 
+## to proceed without conflicts. Logs the result.
 function killProcess {
-    if (Get-Process -Name "OneNoteIm" -ErrorAction SilentlyContinue)
-    {
-        try
-        {
+    if (Get-Process -Name "OneNoteIm" -ErrorAction SilentlyContinue) {
+        try {
             $uwpProcess = Get-Process -Name "OneNoteIm"
             Stop-Process -Id $uwpProcess.Id -Force
             Start-Sleep -Seconds 10
         }
-        catch
-        {
+        catch {
             writeLogsToFileAndConsole "An error occurred when killing the current OneNote UWP process: $($_.Exception.GetType().FullName)"
             writeLogsToFileAndConsole "$($_.Exception.Message)"
             exit
         }
 
-writeLogsToFileAndConsole "OneNote UWP process killed"
+        writeLogsToFileAndConsole "OneNote UWP process killed"
     }
 }
 
+## Function: launchBackUp
+## Purpose: Initiates the backup process for OneNote UWP and logs the progress. Exits if an error occurs.
 function launchBackUp {
-    try
-    {
-        $OneNoteUWPLaunch = (Get-AppxPackage -Name Microsoft.Office.OneNote).InstallLocation + "/onenoteim.exe"
-        Start-Process "onenote-uwp://backup:" -filepath $OneNoteUWPLaunch
+    try {
+        Start-Process "onenote-uwp://backup:"
         Start-Sleep -Seconds 60
-        writeLogsToFileAndConsole "OneNote UWP backup initiated."
+        writeLogsToFileAndConsole "OneNote UWP backup initiated"
     }
-    catch
-    {
+    catch {
         writeLogsToFileAndConsole "An error occurred when starting the backup: $($_.Exception.GetType().FullName)"
         writeLogsToFileAndConsole "$($_.Exception.Message)"
         exit
     }
 
-writeLogsToFileAndConsole "OneNote UWP backup started"
+    writeLogsToFileAndConsole "OneNote UWP backup in progress"
 }
 
-## Parse the results in json files to read if backup was successful; if so and there were outbounding changes if files were backed up and migration can continue ##
- function parseJson {
-    try
-    {
+## Function: parseJson
+## Purpose: Parses JSON files generated by the OneNote UWP backup process to verify 
+## the success of the backup. Logs the results and exits if any issues are detected.
+function parseJson {
+    try {
         killProcess
 
-$localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
+        $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
         $jsonPath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\UWPBackUpStatus.json"
-        if(!(test-path $jsonPath)){
+        
+        # Check if the backup JSON file exists
+        if (!(Test-Path $jsonPath)) {
             writeLogsToFileAndConsole "Backup Json file path is not valid"
             exit
         }
+        
         $backupJsonFileContent = Get-Content -Path $jsonPath -Raw | ConvertFrom-Json
-        $status = $backupJsonFileContent."UWP Backup Status: "
+        $status = $backupJsonFileContent."UWP Backup Status"
+
+        # Evaluate the backup status
         if ($status -eq "Completed") {
             $jsonPath2 = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\UWPSyncStatus.json"
-            if(test-path $jsonPath2)
-            {
-            $syncStatusJsonContent = Get-Content -Raw -Path $jsonPath2
-            $syncStatusJsonObject = COnvertFrom-Json $syncStatusJsonContent
-            foreach ($key in $syncStatusJsonObject.PSObject.Properties)
-            {
-                $value = $syncStatusJsonObject.$($key.Name)
-                if ($value.StartsWith("Contains pending outbounding changes: true,"))
-                {
-                    if ($backupJsonFileContent."Number of sections Backed up" -eq 0)
-                    {
-                        writeLogsToFileAndConsole "No error occurred when backing up but outbounding changes were not backed up successfully"
-                        exit
-                    }
-                    else
-                    {
-                        break
+            if (Test-Path $jsonPath2) {
+                $syncStatusJsonContent = Get-Content -Raw -Path $jsonPath2
+                $syncStatusJsonObject = ConvertFrom-Json $syncStatusJsonContent
+                foreach ($key in $syncStatusJsonObject.PSObject.Properties) {
+                    $value = $syncStatusJsonObject.$($key.Name)
+                    if ($value.StartsWith("Contains pending outbounding changes: true,")) {
+                        if ($backupJsonFileContent."Number of sections Backed up" -eq 0) {
+                            writeLogsToFileAndConsole "No error occurred when backing up but outbounding changes were not backed up successfully"
+                            exit
+                        }
+                        else {
+                            break
+                        }
                     }
                 }
             }
-        }
 
-writeLogsToFileAndConsole "OneNote UWP backup is completed and status is saved"
+            writeLogsToFileAndConsole "OneNote UWP backup is completed and status is saved"
         }
-        elseif ($status -eq "")
-        {
+        elseif ($status -eq "") {
             writeLogsToFileAndConsole "$status"
             writeLogsToFileAndConsole "No error occurred but backup did not finish. We cannot continue migration. Consider increasing the Start-Sleep time in line 130 and rerun the script"
             exit
         }
-        else
-        {
+        else {
             writeLogsToFileAndConsole "No error occurred but backup status is $status. We cannot continue migration. Consider increasing the Start-Sleep time in line 130 and rerun the script"
             exit
         }
     }
-    catch
-    {
+    catch {
         writeLogsToFileAndConsole "An error occurred when finishing the backup: $($_.Exception.GetType().FullName)"
         writeLogsToFileAndConsole "$($_.Exception.Message)"
         exit
     }
 }
 
-## Copy backed up sections and migration result files to the output folder path determined above ##
- function moveBackup {
-    try
-    {
+## Function: moveBackup
+## Purpose: Copies the backed-up sections and migration result files to the designated output folder. 
+## Logs the success of the operation or any errors encountered.
+function moveBackup {
+    try {
         $localAppDataPath = [System.Environment]::GetFolderPath('LocalApplicationData')
-        $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\BackUp"
-        $destinationPath = "C:\temp\OneNoteMigration\"
+        $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\BackUp\"
+        $destinationPath = [System.Environment]::GetFolderPath('LocalApplicationData') + "\Microsoft\OneNote\16.0\Backup\"
 
-Copy-Item -Path $sourcePath\* -Destination $destinationPath -Recurse -Force
+        # Copy backup files to the destination folder
+        Copy-Item -Path $sourcePath\* -Destination $destinationPath -Recurse -Force
 
-$sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0"
+        $sourcePath = "$localAppDataPath\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0"
         $fileExtensions = "*.json", "*.txt"
-        foreach ($fileExtension in $fileExtensions)
-        {
+        foreach ($fileExtension in $fileExtensions) {
             $files = Get-ChildItem -Path $sourcePath -Filter $fileExtension
             foreach ($file in $files) {
                 Copy-Item -Path $file.FullName -Destination $destinationPath -Force
             }
         }
     }
-    catch
-    {
+    catch {
         writeLogsToFileAndConsole "An error occurred when moving the backup files: $($_.Exception.GetType().FullName)"
         writeLogsToFileAndConsole "$($_.Exception.Message)"
         exit
     }
 
-writeLogsToFileAndConsole "Backup files copied successfully from $sourcePath to $destinationPath"
- }
+    writeLogsToFileAndConsole "Backup files copied successfully from $sourcePath to $destinationPath"
+}
 
+## Function: uninstallUWP
+## Purpose: Uninstalls the OneNote UWP application if it is installed and logs the result.
 function uninstallUWP {
     $uwpApp = Get-AppxPackage | Where-Object {$_.Name -eq "Microsoft.Office.OneNote"}
     if ($null -ne $uwpApp) {
         $uwpApp | Remove-AppxPackage
-        writeLogsToFileAndConsole "OneNote UWP version uninstalled."
+        writeLogsToFileAndConsole "OneNote UWP version uninstalled"
     }
 }
 
+## Function: MainRoutine
+## Purpose: Coordinates the migration process by calling the necessary functions in sequence.
 function MainRoutine {
     checkOneNoteUWPInstalled
     getWin32RegKeys
@@ -252,5 +272,5 @@ function MainRoutine {
     uninstallUWP
 }
 
-# Execute the main routine
+# Execute the main routine to start the migration process
 MainRoutine
