@@ -111,7 +111,7 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 
 1. Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
 
-> [!ATTENTION]
+> [!TIP]
 > Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
 ## Policy to Define the Interval Between Migration Attempts
