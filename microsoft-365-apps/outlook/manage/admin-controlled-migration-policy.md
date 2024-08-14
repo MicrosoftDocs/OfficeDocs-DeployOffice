@@ -153,41 +153,41 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 
 #### Setting as a Registry Key
 
-Copy one of the following text blocks into Notepad:
+1. Copy one of the following text blocks into Notepad:
 
-**Do not re-initiate new Outlook migration:** If the interval policy isn't set, or set to 0, the new Outlook migration isn't reinitiated.
+    **Do not re-initiate new Outlook migration:** If the interval policy isn't set, or set to 0, the new Outlook migration isn't reinitiated.
+    
+    ```console
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+    “NewOutlookAutoMigrationRetryIntervals”: dword:00000000
+    ```
+    
+    **Attempt migration on each boot:** This value reinitiates the new Outlook migration on every app launch and users see the blocking prompt (step #3).
+    
+    ```console
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+    “NewOutlookAutoMigrationRetryIntervals”: dword:00000001
+    ```
+    
+    **Re-initiate migration 10 days after users toggle back to classic Outlook:** This value defines the number of days after which new Outlook migration isn't reinitiated if users toggle back to classic Outlook. In this example, the migration will be reinitiated 10 days after users toggled back.
+    
+    ```console
+    Windows Registry Editor Version 5.00
+    
+    [HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
+    “NewOutlookAutoMigrationRetryIntervals”: dword:0000000a
+    ```
+    
+    > [!NOTE]
+    > You can also create the *NewOutlookAutoMigrationRetryIntervals* DWORD under the user's policy key *HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\Options\General* to prevent users from changing the registry value to a different value.
 
-```console
-Windows Registry Editor Version 5.00
+1. Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\New Outlook migration interval.reg*.
 
-[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
-“NewOutlookAutoMigrationRetryIntervals”: dword:00000000
-```
-
-**Attempt migration on each boot:** This value reinitiates the new Outlook migration on every app launch and users see the blocking prompt (step #3).
-
-```console
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
-“NewOutlookAutoMigrationRetryIntervals”: dword:00000001
-```
-
-**Re-initiate migration 10 days after users toggle back to classic Outlook:** This value defines the number of days after which new Outlook migration isn't reinitiated if users toggle back to classic Outlook. In this example, the migration will be reinitiated 10 days after users toggled back.
-
-```console
-Windows Registry Editor Version 5.00
-
-[HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Options\General]
-“NewOutlookAutoMigrationRetryIntervals”: dword:0000000a
-```
-
-> [!NOTE]
-> You can also create the *NewOutlookAutoMigrationRetryIntervals* DWORD under the user's policy key *HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Outlook\Options\General* to prevent users from changing the registry value to a different value.
-
-Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\New Outlook migration interval.reg*.
-
-Run the *.reg* file and select  **Yes**  in the confirmation dialog that appears.
+1. Run the *.reg* file and select  **Yes**  in the confirmation dialog that appears.
 
 > [!IMPORTANT]
 > New Outlook isn't supported for on-premises environments. So, if you have a hybrid environment with both Microsoft 365 and on-premises users, you should only target Microsoft 365 users for this policy. You can do this by using the cloud policy. New Outlook is also not available in sovereign clouds so do not enable the policy for these environments.
