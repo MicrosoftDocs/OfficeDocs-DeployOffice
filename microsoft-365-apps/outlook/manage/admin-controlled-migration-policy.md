@@ -215,25 +215,25 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggl
 
 ## Sample Scenarios
 
-1. You want to require all your users to try new Outlook once
+- You want to require all your users to try new Outlook once
     - Enable the `DoNewOutlookAutoMigration` policy by setting it to **1**.
     - Don’t set the `NewOutlookAutoMigrationRetryIntervals` policy.
 
-2. You want to prompt all your users to try new Outlook every 30 days.
+- You want to prompt all your users to try new Outlook every 30 days.
     - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
     - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **30**.
 
-3. You want to prompt all your users to try new Outlook at every launch of classic Outlook.
+- You want to prompt all your users to try new Outlook at every launch of classic Outlook.
     - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
     - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **1**.
 
-4. You want to force all your users to new Outlook and not give them an option to return to classic Outlook.
+- You want to force all your users to new Outlook and not give them an option to return to classic Outlook.
     - Enable the `DoNewOutlookAutoMigration`  policy by setting it to **1**.
     - Set the `NewOutlookAutoMigrationRetryIntervals`  policy to **1**.
     - Enable the `HideClassicOutlookToggleOutlook` mailbox policy by setting it to **true**.
 
-5. You want to stop migration for all your users 
+- You want to stop migration for all your users 
     - Disable the `DoNewOutlookAutoMigration`  policy by setting it to **0**.
 
-6. You want to stop migrating users every 30 days and run migration only one time
+- You want to stop migrating users every 30 days and run migration only one time
     - Update the `NewOutlookAutoMigrationRetryIntervals`  policy from **30** to **0**.
