@@ -137,7 +137,7 @@ Policy Name: Interval between new Outlook migration attempts
 Possible Values:
   - **0/Not set:** the new Outlook for Windows migration isn't reinitiated.
   - **1:** Migration is attempted each time and users see the blocking prompt (as in step #3) on every launch of classic Outlook for Windows. This value is the most aggressive.
-  - **2-99000:** migration will be reinitiated from step #1 when users launch classic Outlook for Windows N days after toggling back to classic Outlook for Windows. This value defines N.
+  - **2-99000(N):** migration will be reinitiated from step #1 when users launch classic Outlook for Windows N days after toggling back to classic Outlook for Windows. This value defines N.
 
 Deleting the registry key associated with this policy behaves like setting the policy value to 0, and the migration is stopped.
 
@@ -149,7 +149,7 @@ You can download the latest group policy from the [Microsoft Download Center](ht
 
 #### Setting as a Cloud Policy
 
-You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/).
+You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/). For more information about Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../../admin-center/overview-cloud-policy.md)
 
 #### Setting as a Registry Key
 
@@ -188,6 +188,9 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 1. Save the file as *.reg* in a location that's easy to find. For example: *C:\Data\New Outlook migration interval.reg*.
 
 1. Run the *.reg* file and select  **Yes**  in the confirmation dialog that appears.
+
+> [!TIP]
+> Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
 > [!IMPORTANT]
 > New Outlook isn't supported for on-premises environments. So, if you have a hybrid environment with both Microsoft 365 and on-premises users, you should only target Microsoft 365 users for this policy. You can do this by using the cloud policy. New Outlook is also not available in sovereign clouds so do not enable the policy for these environments.
