@@ -10,21 +10,20 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-
-ms.date: 03/19/2024
+ms.date: 08/15/2024
 
 ---
 
 # Configuration options for the Office Deployment Tool
 
-With the Office Deployment Tool (ODT), you can download and deploy Microsoft 365 Apps to your client computers. The ODT gives you more control over installation: you can define which products and languages are installed, how those products should be updated, and whether or not to display the install experience to your users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
+Use the Office Deployment Tool (ODT) to download and deploy Microsoft 365 Apps to client computers. The ODT provides more control over installation, allowing you to define which products and languages to install, how to update them, and whether to display the installation experience to users. This article covers all the available options in the tool. To learn how to use the tool itself, see  [Overview of the Office Deployment Tool](overview-office-deployment-tool.md).
 
 > [!NOTE]
 > **Best practice:** The options in this article show the XML elements and attributes in the configuration file. You can continue to create the configuration file in a text editor, but we recommend using the [Office Customization Tool](https://config.office.com/) instead. With the Office Customization Tool, you can easily create and modify configuration files in a web-based interface. For more information, see [Overview of the Office Customization Tool](../admin-center/overview-office-customization-tool.md).
 
 ## Example of a standard configuration file
 
-The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Microsoft 365 Apps, or you can edit the file to install the 64-bit English edition of Microsoft 365 Apps with the EULA automatically accepted and without Publisher.
+The ODT consists of two files: setup.exe and configuration.xml. To work with the tool, you edit the configuration file to define what options you want, and then run setup.exe from the command line. For example, you can edit the configuration file to download the 64-bit English edition of Microsoft 365 Apps, or you can edit the file to install the 64-bit English edition of Microsoft 365 Apps with the End-user license agreement (EULA) automatically accepted and without Publisher.
 
 When creating the configuration file, we recommend starting with an example file and updating it with the appropriate options for your environment. You can start by copying and pasting the following example into a text file and saving it with a name of your choosing. Use the file to modify the XML elements and attributes and use the rest of this article to learn more details about each of the elements and attributes.   
 
@@ -149,13 +148,16 @@ Allowed values:
 > - Previous allowed values for each update channel can still be used, which means you don't have to update your older configuration XML files.
 > - Beta Channel (sometimes referred to as Insider Fast) is ***not*** a supported build so should only be used in test environments and by a small group of select users, such as IT staff or application developers.
 
-If you're deploying Office LTSC Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
+If you're deploying Microsoft Office Long Term Servicing Channel (LTSC) Professional Plus 2021 or Office LTSC Standard 2021, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2021. For more information, see [Update channel for Office LTSC 2021](/office/ltsc/2021/update#update-channel-for-office-ltsc-2021).
 
 If you're deploying Office Professional Plus 2019 or Office Standard 2019, which are volume licensed versions, there's a different update channel you need to use: PerpetualVL2019. For more information, see [Update channel for Office 2019](/office/2019/update#update-channel-for-office-2019).
 
 ### DownloadPath attribute (part of Add element)
 
 Optional. Defaults to the CDN if not specified.
+
+> [!NOTE]
+> Network connectivity is required when running ODT in download mode, even if the download will come from the location specified with DownloadPath.
 
 Defines where the installation files are downloaded from when running ODT in download mode. Most commonly used to distribute specific languages and products for Microsoft 365 Apps from a central location on your network to another location. You must specify a version when using DownloadPath, as shown in the example.
 
@@ -344,7 +346,7 @@ Defines the ID of the language to download or install.
 - ID="MatchPreviousMSI"
 - ID="MatchInstalled"
 
-Be sure the languages that you specify are supported by the product you're installing. Otherwise your installation fails.
+Be sure the languages that you specify support the product you're installing. Otherwise your installation fails.
 
 For example, Microsoft 365 Apps supports English (United Kingdom), French (Canada), and Spanish (Mexico), but Project and Visio don't support those languages.
 
