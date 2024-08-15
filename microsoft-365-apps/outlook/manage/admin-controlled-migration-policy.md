@@ -1,5 +1,5 @@
 ---
-title: Policy for Admin-Controlled Migration to New Outlook for Windows
+title: Policy for Admin-Controlled Migration to new Outlook for Windows
 description: Describes how to migrate users to the new Outlook for Windows using admin-controlled policies.
 author: JanelleMcIntosh-MSFT
 ms.author: janellem
