@@ -15,7 +15,7 @@ ms.custom: intro-overview
 recommendations: true
 ms.date: 08/15/2024
 ---
-# Policy for Admin-Controlled Migration to New Outlook for Windows
+# Policy for Admin-Controlled Migration to new Outlook for Windows
 
 You can upgrade users in your organization to the new Outlook for Windows by setting policies through Group Policy, Cloud Policy service for Microsoft 365, or a registry value.
 
@@ -56,7 +56,7 @@ Users are able to toggle back to classic Outlook for Windows anytime.
 
 ### Prerequisite to Enabling the Policy
 
-Make the new Outlook toggle available to users. If the toggle is hidden, users don’t see the migration experience. To enable the toggle if it was previously disabled, see [Enable or disable access to the new Outlook for Windows | Microsoft Learn](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
+Make the new Outlook toggle available to users. If the toggle is hidden, users don’t see the migration experience. To enable the toggle if it was previously disabled, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
 
 ### Enabling or Disabling the Migration Policy
 
@@ -82,7 +82,7 @@ You can download the latest group policy from the [Microsoft Download Center](ht
 
 #### Setting as a Cloud Policy
 
-You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/).
+You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/). For more information about Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../../admin-center/overview-cloud-policy.md)
 
 #### Setting as a Registry Value
 
@@ -136,7 +136,9 @@ Policy Name: Interval between new Outlook migration attempts
 
 Possible Values:
   - **0/Not set:** the new Outlook for Windows migration isn't reinitiated.
+
   - **1:** Migration is attempted each time and users see the blocking prompt (as in step #3) on every launch of classic Outlook for Windows. This value is the most aggressive.
+
   - **2-99000(N):** migration will be reinitiated from step #1 when users launch classic Outlook for Windows N days after toggling back to classic Outlook for Windows. This value defines N.
 
 Deleting the registry key associated with this policy behaves like setting the policy value to 0, and the migration is stopped.
@@ -195,7 +197,7 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 > [!IMPORTANT]
 > New Outlook isn't supported for on-premises environments. So, if you have a hybrid environment with both Microsoft 365 and on-premises users, you should only target Microsoft 365 users for this policy. You can do this by using the cloud policy. New Outlook is also not available in sovereign clouds so do not enable the policy for these environments.
 
-### Hide the Toggle in New Outlook for Windows
+### Hide the Toggle in new Outlook for Windows
 
 Some organizations might want users to stay in new Outlook and remove the option to toggle back to classic Outlook for Windows. The `HideClassicOutlookToggleOut` policy hides the toggle in new Outlook.
 
