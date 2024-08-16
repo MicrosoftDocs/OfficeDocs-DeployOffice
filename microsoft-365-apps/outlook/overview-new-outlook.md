@@ -34,7 +34,7 @@ For more information, see [Identify COM add-ins in your organization](./get-star
 
 ## Feature comparison
 
-Find out what new Outlook features are available, partially available, not supported, under investigation, or upcoming in new Outlook. Compare the list with what currently exists in the classic Outlook experience.
+Find out what new Outlook features are available, partially available, not supported, under investigation, or upcoming in new Outlook. You can compare the list with what currently exists in the classic Outlook experience.
 
 Check out [New and classic Outlook for Windows feature comparison](https://support.microsoft.com/office/de453583-1e76-48bf-975a-2e9cd2ee16dd?OCID=Learn_Admin_Overview).
 
