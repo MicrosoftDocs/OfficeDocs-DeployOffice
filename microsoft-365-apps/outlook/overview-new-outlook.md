@@ -20,7 +20,7 @@ ms.date: 11/09/2023
 
 The new Outlook for Windows is reimagined to be more agile, deliver faster feature deployment and availability, and provide a consistent experience in Windows.
 
-New Outlook is currently offered as a preview for commercial accounts and is generally available for consumer accounts. For more user support information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627).
+New Outlook is currently offered as a preview for commercial accounts and is generally available for consumer accounts. For more user support information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627?OCID=Learn_Admin_Overview).
 
 ## Architecture
 
@@ -31,6 +31,12 @@ The new Outlook for Windows, built upon modern service architecture, is inspired
 In new Outlook for Windows, COM add-ins aren't supported in new Outlook for Windows. COM add-ins can manipulate Outlook in many ways and often led to instability and crashes in Outlook. Web add-ins provide a sandbox environment for add-ins to operate in with checks and balances in place to ensure Outlook is more stable and robust. Existing web add-ins are fully supported, with no extra work required from partners. If you have a web add-in, nothing else is required to transition to the new client.  
 
 For more information, see [Identify COM add-ins in your organization](./get-started/state-of-com-add-ins.md).
+
+## Feature comparison
+
+Find out what new Outlook features are available, partially available, not supported, under investigation, or upcoming in new Outlook. You can compare the list with what currently exists in the classic Outlook experience.
+
+Check out [New and classic Outlook for Windows feature comparison](https://support.microsoft.com/office/de453583-1e76-48bf-975a-2e9cd2ee16dd?OCID=Learn_Admin_Overview).
 
 ## Feature delivery
 
