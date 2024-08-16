@@ -20,7 +20,7 @@ ms.date: 11/09/2023
 
 The new Outlook for Windows is reimagined to be more agile, deliver faster feature deployment and availability, and provide a consistent experience in Windows.
 
-New Outlook is currently offered as a preview for commercial accounts and is generally available for consumer accounts. For more user support information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627).
+New Outlook is currently offered as a preview for commercial accounts and is generally available for consumer accounts. For more user support information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627?OCID=Learn_Admin_Overview).
 
 ## Architecture
 
