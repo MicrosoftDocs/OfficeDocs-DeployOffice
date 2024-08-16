@@ -9,7 +9,7 @@ items:
       - name: Licensing options
         href: get-started/licensing-options.md
       - name: Plan migration
-        href: get-started/migration-planning.md               
+        href: get-started/migration-planning.md
       - name: Deploy new Outlook
         href: get-started/deployment-new-outlook.md
       - name: Control new Outlook installation
@@ -19,8 +19,8 @@ items:
           - name: Identify COM add-ins in your organization
             href: get-started/state-of-com-add-ins.md
           - name: Migrate from COM to web add-ins
-            href: get-started/migrate-com-to-web-addins.md            
-          - name: Automatically install web add-in counterparts
+            href: get-started/migrate-com-to-web-addins.md
+          - name: Install web add-in counterparts
             href: get-started/install-web-add-ins.md
       - name: Supported accounts
         href: get-started/supported-account-types.md

@@ -18,7 +18,7 @@ ms.date: 04/17/2024
 
 # Migrate from COM add-ins to web add-ins
 
-In the new Outlook for Windows, web add-ins are fully supported, with no other work required from partners. COM add-ins aren’t supported in the new Outlook for Windows, but continue to work in classic Outlook for Windows. COM add-ins can manipulate Outlook in many ways that often leads to instability and crashes in Outlook. To ensure Outlook is more stable and robust, web add-ins provide a sandbox environment for add-ins to operate in and have checks and balances in place.
+In the new Outlook for Windows, web add-ins are fully supported, with no other work required from partners. COM add-ins aren't supported in the new Outlook for Windows, but continue to work in classic Outlook for Windows. COM add-ins can manipulate Outlook in many ways that often leads to instability and crashes in Outlook. To ensure Outlook is more stable and robust, web add-ins provide a sandbox environment for add-ins to operate in and have checks and balances in place.
 
 COM add-ins differ from web add-ins in several ways; one example is the use of fixed entry points. Using fixed entry points is intentional to ensure a stable and consistent experience for all Outlook users.
 
@@ -73,11 +73,14 @@ If your organization is currently using web add-ins, no extra effort is required
       | Virtru For Outlook                      | DLP                    | PRIVATE-Virtru                      |
       | Zoom Outlook Plugin                     | Online Meetings        | [Zoom for Outlook Extension](https://appsource.microsoft.com/product/office365/wa104381712)          |
 
-   - If you don’t find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home).
+   - If you don't find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home).
+
+      > [!TIP]
+      > By default, users are given the option to install web add-in counterparts of their existing COM add-ins when they switch to new Outlook for Windows. For more information, see [Install web add-in counterparts of existing COM add-ins in new Outlook for Windows](install-web-add-ins.md). To learn how to prevent web add-in counterparts from being installed when a user switches to new Outlook for Windows, see [Prevent add-ins from being installed during setup](install-web-add-ins.md#prevent-add-ins-from-being-installed-during-setup).
 
    - Some developers build private web add-ins that aren't published to the store. Check with your partners to confirm if they developed or are developing a web add-in.
 
-4. **Explore native Outlook capabilities**. If your mission critical COM add-ins don't have an equivalent web add-in, explore new Outlook’s native capabilities and see if they work for your scenario. Some examples include:
+4. **Explore native Outlook capabilities**. If your mission critical COM add-ins don't have an equivalent web add-in, explore new Outlook's native capabilities and see if they work for your scenario. Some examples include:
 
    | COM Add-in                                  | Native Outlook capability                                          |
    |---------------------------------------------|--------------------------------------------------------------------|

@@ -20,11 +20,6 @@ ms.date: 06/25/2024
 
 When a user switches to new Outlook for Windows for the first time, they can import their settings and install existing add-ins from classic Outlook for Windows. This option provides them with a familiar experience and minimizes any disruptions in their work. Because COM add-ins aren't supported in new Outlook for Windows, their Office web add-in counterparts are installed instead.
 
-> [!IMPORTANT]
-> We're working on rolling out this feature. In the meantime, you can review and configure the **Disable web add-in installation on migration to new Outlook for Windows** Group Policy setting ahead of time to suit your organization's needs. For guidance see [Prevent add-ins from being installed during setup](#prevent-add-ins-from-being-installed-during-setup).
->
-> Periodically check this page for updates on the feature's availability.
-
 ## Identify the Office web add-ins to be installed
 
 The installation of Office web add-in counterparts during the switch to new Outlook for Windows is only supported for some COM add-ins. For a list of supported add-ins, see the "List of add-ins installed from classic Outlook for Windows" section of [Import settings and install add-ins on new Outlook for Windows](https://support.microsoft.com/office/b85ce5ff-bef3-45ae-9e95-9d63c514abdc).
