@@ -32,6 +32,12 @@ In new Outlook for Windows, COM add-ins aren't supported in new Outlook for Wi
 
 For more information, see [Identify COM add-ins in your organization](./get-started/state-of-com-add-ins.md).
 
+## Feature comparison
+
+We’ve put together a feature coverage matrix to help you and your teams understand what’s available in new Outlook, compared to what exists today in the classic Outlook experience. We're making updates to this matrix regularly. From here you can see what features are available, partially available, not supported, under investigation, or upcoming.
+
+See [New and classic Outlook for Windows feature comparison](https://support.microsoft.com/office/de453583-1e76-48bf-975a-2e9cd2ee16dd?OCID=Learn_Admin_Overview).
+
 ## Feature delivery
 
 New functionality is flighted to different release rings, as is the case for Microsoft 365 for the web. Some tenants or individual users in organizations could opt to get early access to features by enrolling in the Targeted release. Build updates don’t go through the same channels as the classic Outlook for Windows system, nor do they control new feature delivery. With service-delivered changes, features and fixes can be deployed faster and more reliably. With classic Outlook, customers were concerned with the cadence of deployment mostly because it took days or weeks to get available fixes. The new Outlook for Windows delivers critical updates within hours. For more information, see [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365).
