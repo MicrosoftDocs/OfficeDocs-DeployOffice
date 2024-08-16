@@ -34,9 +34,9 @@ For more information, see [Identify COM add-ins in your organization](./get-star
 
 ## Feature comparison
 
-We’ve put together a feature coverage matrix to help you and your teams understand what’s available in new Outlook, compared to what exists today in the classic Outlook experience. We're making updates to this matrix regularly. From here you can see what features are available, partially available, not supported, under investigation, or upcoming.
+Find out what new Outlook features are available, partially available, not supported, under investigation, or upcoming in new Outlook. Compare the list with what currently exists in the classic Outlook experience.
 
-See [New and classic Outlook for Windows feature comparison](https://support.microsoft.com/office/de453583-1e76-48bf-975a-2e9cd2ee16dd?OCID=Learn_Admin_Overview).
+Check out [New and classic Outlook for Windows feature comparison](https://support.microsoft.com/office/de453583-1e76-48bf-975a-2e9cd2ee16dd?OCID=Learn_Admin_Overview).
 
 ## Feature delivery
 
