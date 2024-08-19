@@ -83,7 +83,7 @@ For more information, see the following resources:
 - [Prerequisites for Azure Virtual Desktop](/azure/virtual-desktop/prerequisites)
 - [Deploy Azure Virtual Desktop with the getting started feature](/azure/virtual-desktop/getting-started-feature)
 
-If an on-premises session host deployment is required, [Azure Virtual Desktop for Azure Stack HCI](/azure/virtual-desktop/azure-stack-hci-overview) (currently in preview) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI overview (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
+If an on-premises session host deployment is required, Azure Virtual Desktop for Azure Stack HCI (currently in preview) lets you deploy Azure Virtual Desktop session hosts to your on-premises Azure Stack HCI infrastructure. This configuration can help address compliance requirements for on-premises data storage. Also, you can improve performance for Azure Virtual Desktop users in areas with poor connectivity to the Azure public cloud. For more information, see [Azure Virtual Desktop for Azure Stack HCI overview (preview)](/azure/virtual-desktop/azure-stack-hci-overview).
 
 ## Additional information
 
