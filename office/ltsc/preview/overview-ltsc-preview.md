@@ -70,4 +70,4 @@ Use the preview products for testing purposes only. For example, to familiarize 
 
 If you want to provide feedback about an Office app or feature, go to **File**, and choose **Feedback** in that app.
 
-If you have questions about Office LTSC preview or want to provide feedback, go to the [Microsoft 365 and Office forum for business customers](https://answers.microsoft.com/lang/msoffice/forum/msoffice_OfB) on Microsoft Community.
+If you have questions about Office LTSC preview or want to provide feedback, go to the [Microsoft 365 and Office forum for business customers](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_OfB) on Microsoft Community.
