@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
-ms.date: 03/29/2024
+ms.date: 08/20/2024
 ---
 
 # Overview of the Office Customization Tool
