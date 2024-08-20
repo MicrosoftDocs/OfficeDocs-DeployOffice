@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
-ms.date: 03/29/2024
+ms.date: 08/20/2024
 ---
 
 # Overview of the Office Customization Tool
@@ -86,11 +86,8 @@ To work with configuration files in the cloud, sign in to the [Microsoft 365 App
 
 - To create a new file, select **Create**, create a configuration file, and then select **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
 - To edit an existing file, select the name of the file, make your changes, and then select **Done**.
-- To get a link to a configuration file, select the file, select **Get Link**, and then select **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. Note that the link will expire after two years.
 
-When running the Office Deployment Tool, you refer to the cloud-based configuration file by including the link in quotes. To deploy with the ODT, for example, use `setup.exe /configure "link"`.
-
-You can also copy, upload, or download configuration files from the **Device Configuration** page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
+You can copy, upload, or download configuration files from the **Device Configuration** page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 
 ## Define application preferences
 
