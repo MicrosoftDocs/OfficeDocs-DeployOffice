@@ -43,14 +43,16 @@ Office LTSC 2024 is supported on the following operating systems:
 
 To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 (64-bit Office required for 4K and higher).
 
-> [!IMPORTANT]
-> For Arm-based devices, Windows 11 is the minimum supported version.
-
 For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
 For devices running macOS, <!-- Add versions of availabe office here --> is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What changed in Office LTSC 2024?
+
+Office LTSC 2024 brings several key updates and improvements compared to previous Office versions. This section highlights the most significant changes to help you quickly understand what’s new.
+
+> [!TIP]
+> If you’re moving to Office LTSC 2024 from Office 2016, you should also review the changes documented in the [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most significant difference between Office 2016 and Office LTSC 2024 is the shift in installation technology from Windows Installer (MSI) to Click-to-Run.
 
 Office LTSC no longer includes Microsoft Publisher, as it's being [retired](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7). Additionally, the Microsoft Teams app isn't preinstalled but is available for [download separately](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop).
 
