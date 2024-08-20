@@ -15,24 +15,46 @@ ms.date: 09/16/2024
 
 # Overview of Office LTSC 2024
 
-Office LTSC 2024 is the latest version of Microsoft's productivity software that's available to organizations through a volume licensing agreement.
+Office LTSC 2024 is the most recent edition of Microsoft's productivity software, available to organizations through volume licensing agreements.
 
 > [!IMPORTANT]
-> <!-- Add important note about Office LTSC 2024 and Microsoft 365 here -->
+> Office LTSC 2024 is distinct from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
 
-Office LTSC 2024 is available for enterprise admins to download and deploy to the users in their organization. The following volume licensed Office products are available for devices running Windows:
+Enterprise administrators can download and deploy Office LTSC 2024 to users within their organization. The following volume licensed Office products are available for devices running Windows:
+
+- Office LTSC Professional Plus 2024
+- Office LTSC Standard 2024
+- Project Professional 2024
+- Project Standard 2024
+- Visio LTSC Professional 2024
+- Visio LTSC Standard 2024
+
+These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
 
 <!-- Add versions of Office LTSC 2024 here -->
 
 These Office products use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
-Office LTSC 2024 is supported on devices running <!-- Add versions of supported Windows here -->. For more information, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+Office LTSC 2024 is supported on the following operating systems:
+
+- Windows 11
+- Windows 10
+- Windows 10 LTSC 2021
+- Windows 10 LTSC 2019
+- Windows Server 2022
+
+To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 (64-bit Office required for 4K and higher).
+
+> [!IMPORTANT]
+> For Arm-based devices, Windows 11 is the minimum supported version.
+
+For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
 For devices running macOS, <!-- Add versions of availabe office here --> is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What changed in Office LTSC 2024?
 
-<!-- Add changes in Office LTSC 2024 compared to Office 2019 -->
+Office LTSC no longer includes Microsoft Publisher, as it's being [retired](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7). Additionally, the Microsoft Teams app isn't preinstalled but is available for [download separately](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop).
 
 > [!TIP]
 > <!-- Add tip about moving to Office LTSC 2024 from previous versions (if any) -->
@@ -48,7 +70,7 @@ For more information, see [Use policy settings to manage privacy controls](/micr
 
 #### Support duration
 
-<!-- Add support duration details for Office LTSC 2024 -->
+Office LTSC 2024, along with Project and Visio, will receive five years of Mainstream Support. After this period, Extended Support will not be provided for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
