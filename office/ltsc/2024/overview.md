@@ -33,13 +33,13 @@ These Office products use Click-to-Run as the installation technology, rather th
 
 Office LTSC 2024 is supported on the following operating systems:
 
-- Windows 11<sup>&ast;</sup>
+- Windows 11<sup>*</sup>
 - Windows 10
 - Windows 10 LTSC 2021
 - Windows 10 LTSC 2019
 - Windows Server 2022
 
-<sup>&ast;</sup> *For Arm-based devices, Windows 11 is the minimum supported version.
+<sup>*</sup> For Arm-based devices, Windows 11 is the minimum supported version.
 
 To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 (64-bit Office required for 4K and higher).
 
