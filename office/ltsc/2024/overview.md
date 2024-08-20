@@ -28,20 +28,18 @@ Enterprise administrators can download and deploy Office LTSC 2024 to users with
 - Project Standard 2024
 - Visio LTSC Professional 2024
 - Visio LTSC Standard 2024
-
+ 
 These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
-
-<!-- Add versions of Office LTSC 2024 here -->
-
-These Office products use Click-to-Run, instead of Windows Installer (MSI), as the installation technology. But, how you activate these Office products – for example, by using Key Management Service (KMS) – remains the same.
 
 Office LTSC 2024 is supported on the following operating systems:
 
-- Windows 11
+- Windows 11<sup>[*]</sup>
 - Windows 10
 - Windows 10 LTSC 2021
 - Windows 10 LTSC 2019
 - Windows Server 2022
+
+<sup>[*]</sup> *For Arm-based devices, Windows 11 is the minimum supported version.
 
 To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 (64-bit Office required for 4K and higher).
 
