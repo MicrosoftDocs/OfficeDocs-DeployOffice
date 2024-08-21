@@ -22,12 +22,15 @@ Office Long Term Service Channel (LTSC) 2024 is the most recent edition of Micro
 
 Enterprise administrators can download and deploy Office LTSC 2024 to users within their organization. The following volume licensed Office products are available for devices running Windows:
 
-- Office LTSC Professional Plus 2024
-- Office LTSC Standard 2024
-- Project Professional 2024
-- Project Standard 2024
-- Visio LTSC Professional 2024
-- Visio LTSC Standard 2024
+- Office LTSC:
+  - Professional Plus 2024
+  - Standard 2024
+- Project:
+  - Professional 2024
+  - Standard 2024
+- Visio LTSC:
+  - Professional 2024
+  - Standard 2024
 
 > [!NOTE]
 > These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
@@ -36,15 +39,16 @@ Enterprise administrators can download and deploy Office LTSC 2024 to users with
 
 Office LTSC 2024 is supported on the following operating systems:
 
-- Windows 11<sup>*</sup>
-- Windows 10
-- Windows 10 LTSC 2021
-- Windows 10 LTSC 2019
-- Windows Server 2022
+| Operating System           | Minimum Version                    |
+|----------------------------|-------------------------------------|
+| Windows 11                 | Required for Arm-based devices      |
+| Windows 10                 | Supported                           |
+| Windows 10 LTSC 2021       | Supported                           |
+| Windows 10 LTSC 2019       | Supported                           |
+| Windows Server 2022        | Supported                           |
 
-<sup>*</sup> *For Arm-based devices, Windows 11 is the minimum supported version.*
-
-Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. A 64-bit version of Office is required for 4K and higher resolutions
+Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. 
+A `64-bit` version of Office is required for 4K and higher resolutions.
 
 For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
@@ -150,7 +154,8 @@ For information about the new features in Office LTSC 2024, see the following ar
 - [What's new in Visio 2024](https://support.microsoft.com/0295be56-187c-4254-9463-1b67dd6e0eb1)
 - [What's new in Word 2024 for Windows and Mac](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
 
-While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
+> [!NOTE]
+>While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 
 Keep in mind that Office LTSC 2024 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
