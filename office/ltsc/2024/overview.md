@@ -45,7 +45,7 @@ To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core proc
 
 For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
-For devices running macOS, <!-- Add versions of availabe office here --> is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
+For devices running macOS, Office LTSC Standard for Mac 2024 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
 ## What changed in Office LTSC 2024?
 
@@ -70,9 +70,7 @@ For more information, see [Use policy settings to manage privacy controls](/micr
 
 #### Support duration
 
-Office LTSC 2024, along with Project and Visio, will receive five years of Mainstream Support. After this period, Extended Support will not be provided for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
-
-For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
+Office LTSC 2024, including Project and Visio, will receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 #### Language support
 
@@ -90,9 +88,14 @@ For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 <!-- Add details about new Office Add-ins that are available -->
 
-#### <!-- Add other new features here -->
+#### Publish to Power BI in Excel
 
-<!-- Add details -->
+The Publish to Power BI feature has been removed from Excel. This change does not affect prior versions of on-premises Office.
+
+Users are encouraged to transition to the Power BI service, which provides a more robust set of features, including the ability to import Excel workbooks from OneDrive and SharePoint document libraries for viewing in Power BI. Existing local workbooks can still be downloaded from Power BI workspaces, and Excel data models can be published as Power BI semantic models with scheduled refresh.
+
+For more information about this transition and how to migrate your Excel workbooks, see [Migrating your Excel workbooks](deploy.md#migrating-your-excel-workbooks).
+
 
 #### <!-- Add other new features here -->
 
