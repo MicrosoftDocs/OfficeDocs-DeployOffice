@@ -15,7 +15,7 @@ ms.date: 09/16/2024
 
 # Overview of Office LTSC 2024
 
-Office LTSC 2024 is the most recent edition of Microsoft's productivity software, available to organizations through volume licensing agreements.
+Office Long Term Service Channel (LTSC) 2024 is the most recent edition of Microsoft's productivity software, available to organizations through volume licensing agreements.
 
 > [!IMPORTANT]
 > Office LTSC 2024 is distinct from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
@@ -49,6 +49,10 @@ To run Office LTSC 2024, your device should have at least a 1.1 GHz, 2-core proc
 For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
 For devices running macOS, Office LTSC Standard for Mac 2024 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
+
+#### Support duration
+
+Office LTSC 2024, including Project and Visio, will receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 ## What changed in Office LTSC 2024?
 
@@ -130,22 +134,21 @@ The major version of Office LTSC 2024 is 16.0, the same as Office LTSC 2021 and 
 - Other registry locations and settings that reference 16.0 still apply.
 - Add-ins and other extensibility solutions compatible with Office LTSC 2021 or Office 2019 are likely to work with Office LTSC 2024, requiring minimal testing.
 
-
-#### Support duration
-
-Office LTSC 2024, including Project and Visio, will receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
-
 ## What are the new features in Office LTSC 2024?
 
 For information about the new features in Office LTSC 2024, see the following articles:
 
-- [What's new in Office 2024]()
-- [What's new in Access 2024]()
-- [What's new in Excel 2024]()
-- [What's new in Outlook 2024]()
-- [What's new in PowerPoint 2024]()
-- [What's new in Visio Professional 2024]()
-- [What's new in Word 2024]()
+- [What's new in Office 2024](https://support.microsoft.com/baadecbe-a8fc-4435-8cb8-70e93fd08b56)
+- [What's new in Access 2024](https://support.microsoft.com/a4643663-59a9-48e8-87ae-43cfdd9ba267)
+- [What's new in Excel 2024 for Mac](https://support.microsoft.com/ea294f19-1897-47ed-9198-ed322047c912)
+- [What's new in Excel 2024 for Windows](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
+- [What's new in OneNote 2024](https://support.microsoft.com/aaf9f977-037b-4665-9047-bf1b39d6ba4a)
+- [What's new in Outlook 2024 for Mac](https://support.microsoft.com/c2bb1caa-b789-4267-835c-e9701290d89e)
+- [What's new in Outlook 2024 for Windows](https://support.microsoft.com/c6f280d7-e776-4177-ae5a-f5281e9e9ef3)
+- [What's new in PowerPoint 2024 for Mac](https://support.microsoft.com/e295448e-073e-4c8d-9544-82d1b9ecb71c)
+- [What's new in PowerPoint 2024 for Windows](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
+- [What's new in Visio 2024](https://support.microsoft.com/0295be56-187c-4254-9463-1b67dd6e0eb1)
+- [What's new in Word 2024 for Windows and Mac](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
 
 While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 
