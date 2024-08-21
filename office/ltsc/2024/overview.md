@@ -147,19 +147,24 @@ For information about the new features in Office LTSC 2024, see the following ar
 - [What's new in Visio Professional 2024]()
 - [What's new in Word 2024]()
 
-While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
+While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 
 Keep in mind that Office LTSC 2024 also won't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
+To continue receiving ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan. For more information on the available subscription options, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
+
 ## How do I upgrade to Office LTSC 2024?
 
-<!-- Add details about upgrading to Office LTSC 2024 -->
-
-For more information, see [Remove existing versions of Office before installing Office LTSC 2024](deploy.md#remove-existing-versions-of-office-before-installing-office-ltsc-2024).
+It's advised to uninstall any existing versions of Office before deploying Office LTSC 2024. Most Office products installed via Windows Installer (MSI), such as Office 2016, can be removed during the installation of Office LTSC 2024. For more information, see [Remove existing versions of Office before installing Office LTSC 2024](deploy.md#remove-existing-versions-of-office-before-installing-office-ltsc-2024).
 
 ## Additional information about Office LTSC 2024
 
-<!-- Add additional information about Office LTSC 2024 -->
+- Office LTSC Professional Plus 2024 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word.
+- Access and Publisher aren't available for devices running macOS.
+- Office LTSC 2024 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
+- Office LTSC 2024 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices with 4 GB or more of memory. However, you should assess application compatibility and other factors that might require the use of the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
+- After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2024.
+- LTSC stands for Long Term Servicing Channel.
 
 ## Related articles
 
