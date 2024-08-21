@@ -22,30 +22,27 @@ Office Long Term Service Channel (LTSC) 2024 is the most recent edition of Micro
 
 Enterprise administrators can download and deploy Office LTSC 2024 to users within their organization. The following volume licensed Office products are available for devices running Windows:
 
-- Office LTSC:
-  - Professional Plus 2024
-  - Standard 2024
-- Project:
-  - Professional 2024
-  - Standard 2024
-- Visio LTSC:
-  - Professional 2024
-  - Standard 2024
+- Office LTSC Professional Plus 2024
+- Office LTSC Standard 2024
+- Project Professional 2024
+- Project Standard 2024
+- Visio LTSC Professional 2024
+- Visio LTSC Standard 2024
 
 > [!NOTE]
 > These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
 
-#### Minimum system requirements
+## Minimum system requirements
 
 Office LTSC 2024 is supported on the following operating systems:
 
-| Operating System           | Minimum Version                    |
-|----------------------------|-------------------------------------|
-| Windows 11                 | Required for Arm-based devices      |
-| Windows 10                 | Supported                           |
-| Windows 10 LTSC 2021       | Supported                           |
-| Windows 10 LTSC 2019       | Supported                           |
-| Windows Server 2022        | Supported                           |
+- Windows 11<sup>*</sup>
+- Windows 10
+- Windows 10 LTSC 2021
+- Windows 10 LTSC 2019
+- Windows Server 2022
+
+<sup>*</sup> *For Arm-based devices, Windows 11 is the minimum supported version.*
 
 Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. 
 A `64-bit` version of Office is required for 4K and higher resolutions.
@@ -54,7 +51,7 @@ For detailed system requirements, see [System requirements for Microsoft 365 and
 
 For devices running macOS, Office LTSC Standard for Mac 2024 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
-#### Support duration
+## Support duration
 
 Office LTSC 2024, including Project and Visio, receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
