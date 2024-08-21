@@ -28,8 +28,11 @@ Enterprise administrators can download and deploy Office LTSC 2024 to users with
 - Project Standard 2024
 - Visio LTSC Professional 2024
 - Visio LTSC Standard 2024
- 
-These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
+
+> [!NOTE]
+> These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
+
+#### Minimum system requirements
 
 Office LTSC 2024 is supported on the following operating systems:
 
@@ -54,8 +57,6 @@ Office LTSC 2024 brings several key updates and improvements compared to previou
 > [!TIP]
 > If you’re moving to Office LTSC 2024 from Office 2016, you should also review the changes documented in the [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most significant difference between Office 2016 and Office LTSC 2024 is the shift in installation technology from Windows Installer (MSI) to Click-to-Run.
 
-Office LTSC no longer includes Microsoft Publisher, as it's being [retired](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7). Additionally, the Microsoft Teams app isn't preinstalled but is available for [download separately](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop).
-
 > [!TIP]
 > <!-- Add tip about moving to Office LTSC 2024 from previous versions (if any) -->
 
@@ -67,10 +68,6 @@ Office LTSC no longer includes Microsoft Publisher, as it's being [retired](http
 > <!-- Add note about additional policy settings (if necessary) -->
 
 For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2024, the information covered in the article about how the policy settings work does apply to Office LTSC 2024.
-
-#### Support duration
-
-Office LTSC 2024, including Project and Visio, will receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 #### Language support
 
@@ -86,7 +83,21 @@ Office LTSC 2024, including Project and Visio, will receive five years of Mainst
 
 #### Office Add-ins
 
-<!-- Add details about new Office Add-ins that are available -->
+Several more Office Add-ins JavaScript APIs are available with Office LTSC 2024. These include the following requirement sets.
+
+- Product requirement sets:
+   - Excel: Up to [1.17](/javascript/api/requirement-sets/excel/excel-api-1-17-requirement-set)
+   - Outlook: Up to [1.14](/javascript/api/requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14)
+   - PowerPoint: Up to [1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-1-5-requirement-set)
+
+- Common API requirement sets:
+   - [CustomFunctionsRuntime 1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) (Excel)
+   - [DialogApi 1.2](/javascript/api/requirement-sets/common/dialog-api-requirement-sets) (Excel, PowerPoint, Word)
+   - [IdentityAPI 1.3](/javascript/api/requirement-sets/common/identity-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [ImageCoercion 1.2](/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (Excel, PowerPoint, Word)
+   - [OpenBrowserWindowApi 1.1](/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets) (Excel, Outlook, PowerPoint, Word)
+   - [RibbonApi 1.1](/javascript/api/requirement-sets/common/ribbon-api-requirement-sets) (Excel)
+   - [SharedRuntime 1.1](/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) (Excel)
 
 #### Publish to Power BI in Excel
 
@@ -97,28 +108,48 @@ Users are encouraged to transition to the Power BI service, which provides a mor
 For more information about this transition and how to migrate your Excel workbooks, see [Migrating your Excel workbooks](deploy.md#migrating-your-excel-workbooks).
 
 
-#### <!-- Add other new features here -->
+#### Microsoft Publisher
 
-<!-- Add details -->
+With Office LTSC 2024, Microsoft Publisher is no longer included as part of the suite. This change is due to the planned retirement of Publisher, which will no longer be supported after October 2026. For more information, see [Microsoft Publisher will no longer be supported after October 2026](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7).
 
-#### <!-- Add other new features here -->
+#### Microsoft Teams
 
-<!-- Add details -->
+The Microsoft Teams app is not preinstalled with Office LTSC 2024, but is available as a separate download. Organizations that require Teams for communication and collaboration can [download Teams](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop) seperately.
 
 ## What stayed the same in Office LTSC 2024?
 
-<!-- Add details about what stayed the same in Office LTSC 2024 compared to previous versions -->
+You can continue to use the same software distribution tools, such as Microsoft Configuration Manager, to deploy and update Office LTSC 2024 that you currently use to deploy and update volume licensed versions of Office LTSC 2021 or Office 2019.
+
+The activation process for volume licensed versions of Office remains unchanged. You can still use Key Management Service (KMS) or Multiple Activation Key (MAK) to activate Office. For more information, see [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md).
+
+The major version of Office LTSC 2024 is 16.0, the same as Office LTSC 2021 and volume licensed versions of Office 2019 and Office 2016. This consistency in the major version provides several benefits when upgrading from earlier versions:
+
+- Existing Group Policy settings remain functional, as they continue to be stored in the following registry locations:
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0
+   - HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0
+- Other registry locations and settings that reference 16.0 still apply.
+- Add-ins and other extensibility solutions compatible with Office LTSC 2021 or Office 2019 are likely to work with Office LTSC 2024, requiring minimal testing.
+
+
+#### Support duration
+
+Office LTSC 2024, including Project and Visio, will receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
 
 ## What are the new features in Office LTSC 2024?
 
 For information about the new features in Office LTSC 2024, see the following articles:
 
-<!-- List articles about what's new in Office LTSC 2024 -->
+- [What's new in Office 2024]()
+- [What's new in Access 2024]()
+- [What's new in Excel 2024]()
+- [What's new in Outlook 2024]()
+- [What's new in PowerPoint 2024]()
+- [What's new in Visio Professional 2024]()
+- [What's new in Word 2024]()
 
-Office LTSC 2024 includes only some, but not all, features that are available in versions of Office that come with a Microsoft 365 (or Office 365) plan.
+While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include the AI and cloud-based functionalities available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 
-> [!NOTE]
-> Office LTSC no longer includes Microsoft Publisher as it has been [retired](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7). Additionally, the Microsoft Teams app isn't preinstalled but is available for [download separately](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop).
+Keep in mind that Office LTSC 2024 also won't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 ## How do I upgrade to Office LTSC 2024?
 
