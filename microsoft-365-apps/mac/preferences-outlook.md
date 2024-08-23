@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 05/14/2024
+ms.date: 08/23/2024
 ---
 
 # Set preferences for Outlook for Mac
@@ -41,10 +41,11 @@ All of these keys are CFPreferences-compatible, which means that they can be set
 The following list shows the preferences that are covered in this article:
 
 - [Allow only corporate mailboxes to be added](#allow-only-corporate-mailboxes-to-be-added)
-- [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
 - [Allow S/MIME certificates without a matching email address](#allow-smime-certificates-without-a-matching-email-address)
 - [Automatically configure Microsoft 365 mailbox on first launch](#automatically-configure-microsoft-365-mailbox-on-first-launch)
+- [Block access to mailboxes from unauthorized domains](#block-access-to-mailboxes-from-unauthorized-domains)
 - [Disable automatic updating of weather location](#disable-automatic-updating-of-weather-location)
+- [Disable calendar sharing permissions](#disable-calendar-sharing-permissions)
 - [Disable "Do Not Forward"](#disable-do-not-forward)
 - [Disable "Do not send a response"](#disable-do-not-send-a-response)
 - [Disable "Encrypt-Only"](#disable-encrypt-only)
@@ -53,11 +54,12 @@ The following list shows the preferences that are covered in this article:
 - [Disable import](#disable-import)
 - [Disable Junk settings](#disable-junk-settings)
 - [Disable Pride theme](#disable-pride-theme)
-- [Disable signatures](#disable-signatures)
 - [Disable retention messages](#disable-retention-messages)
+- [Disable setting someone as a delegate](#disable-setting-someone-as-a-delegate)
+- [Prevent users from sharing any mail folder with other users](#disable-sharing-of-mail-folders)
+- [Disable signatures](#disable-signatures)
 - [Disable Skype for Business online meetings](#disable-skype-for-business-online-meetings)
 - [Disable S/MIME](#disable-smime)
-- [Trust AutoDiscover redirects](#trust-autodiscover-redirects)
 - [Disable Teams online meetings](#disable-teams-online-meetings)
 - [Enable new Outlook](#enable-new-outlook)
 - [Hide local folders](#hide-local-folders)
@@ -67,6 +69,7 @@ The following list shows the preferences that are covered in this article:
 - [Specify default weather location](#specify-default-weather-location)
 - [Specify Microsoft 365 mailbox to be added on first launch](#specify-microsoft-365-mailbox-to-be-added-on-first-launch)
 - [Specify when pictures are downloaded for email](#specify-when-pictures-are-downloaded-for-email)
+- [Trust AutoDiscover redirects](#trust-autodiscover-redirects)
 
 ## Mailbox settings
 
@@ -168,6 +171,20 @@ Prevent users from being able to export archive files (.olm).
 |Requires Configuration Profile| Yes |
 |Availability|16.18 |
 
+### Disable sharing of mail folders
+
+Prevent users from sharing any mail folder with other users.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisableFolderPermissionsSetup|
+|Data Type| Boolean|
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
+|Availability| 16.89|
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
 ## Meetings settings
 
 ### Disable "Do not send a response"
@@ -208,6 +225,34 @@ Prevent users from adding Teams online meeting details to events.
 |Possible values|  false (default) <br/> true  |
 |Requires Configuration Profile| Yes |
 |Availability| 16.20|
+
+### Disable calendar sharing permissions
+
+Prevent users from sharing their calendar.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisableCalendarSharingPermissionsSetup|
+|Data Type| Boolean|
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
+|Availability| 16.48|
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
+
+### Disable setting someone as a Delegate
+
+Prevent a user from adding another user as their delegate.
+
+|Category|Details|
+|:-----|:-----|
+|Domain| com.microsoft.Outlook |
+|Key| DisableDelegationPermissionsSetup|
+|Data Type| Boolean|
+|Possible values|  false (default) <br/> true  |
+|Requires Configuration Profile| Yes |
+|Availability| 16.48|
+|Comments|Only applies to the [new Outlook](https://support.microsoft.com/office/6283be54-e74d-434e-babb-b70cefc77439). |
 
 ## Security settings
 
