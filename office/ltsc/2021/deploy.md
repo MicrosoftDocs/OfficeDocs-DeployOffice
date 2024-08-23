@@ -34,11 +34,10 @@ Whichever way you choose to deploy Office LTSC 2021, we recommend that you [remo
 
 ## Download the Office Deployment Tool from the Microsoft Download Center
 
-The [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) is a free download from the Microsoft Download Center. We recommend that you always download and use the most current version of the ODT.
+<!--Using include for odt-->
+[!INCLUDE[odt-download.md](../../includes/odt-download.md)]
 
-After you download the Office Deployment Tool, double-click on the officedeploymenttool executable (.exe) file to extract the ODT files. When you're finished, you should have several files: setup.exe and some sample configuration.xml files. For an Office LTSC 2021-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
-
-The setup.exe file is the ODT and is a command-line tool that supports downloading and installing Office LTSC 2021. The configuration.xml files are sample files to get you started. You use the configuration.xml file to provide settings for the ODT to use when downloading or installing Office LTSC 2021. The configuration.xml is a simple xml file that can be created and edited in any text editor, such as Notepad. You can name the file anything that you want, as long as it retains the xml file extension.
+For an Office LTSC 2021-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
 ## Create the configuration.xml file
 

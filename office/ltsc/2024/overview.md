@@ -53,7 +53,7 @@ For devices running macOS, Office LTSC Standard for Mac 2024 is available for vo
 
 ## Support duration
 
-Office LTSC 2024, including Project and Visio, receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
+Office LTSC 2024, including Project and Visio, receive five years of Mainstream Support. After this period, there will be no Extended Support for these products. For more information, see [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
 
 ## What changed in Office LTSC 2024?
 

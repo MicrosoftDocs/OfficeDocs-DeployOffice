@@ -18,7 +18,11 @@ ms.date: 09/16/2024
 To configure and perform deployments of Office LTSC 2024, including Project and Visio, for users in your organization, you use the Office Deployment Tool (ODT).
 
 ## Download the Office Deployment Tool from the Microsoft Download Center
-<!-- Add details about downloading the ODT -->
+
+<!--Using include for odt-->
+[!INCLUDE[odt-download.md](../../includes/odt-download.md)]
+
+For an Office LTSC 2024-specific sample, see [Sample configuration.xml file to use with the Office Deployment Tool](#sample-configurationxml-file-to-use-with-the-office-deployment-tool).
 
 ## Create the configuration.xml file
 <!-- Add instructions on creating the configuration.xml file -->
