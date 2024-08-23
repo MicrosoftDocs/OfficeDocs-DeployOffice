@@ -43,10 +43,8 @@ For an Office LTSC 2021-specific sample, see [Sample configuration.xml file to u
 
 Once you have a copy of the ODT, you need to create a configuration.xml file. You can create multiple configuration.xml files to be used with the ODT. For example, you can create a configuration.xml file to download and install the 64-bit version of Office LTSC Professional Plus 2021 in English. Then, you can create a different configuration.xml file to install the 32-bit version of Visio LTSC Professional 2021 in French. When you run the ODT from an elevated command prompt, you specify which configuration.xml file to use.
 
-> [!TIP]
-> - Instead of using a text editor to create your configuration.xml file, we recommend that you use the [Office Customization Tool (OCT)](https://config.office.com/deploymentsettings). 
-> - The OCT provides a web-based interface for making your selections and creating your configuration.xml file to be used with the Office Deployment Tool. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool). 
-> - This OCT is different than the Office Customization Tool that you might have used in the past to install volume licensed versions of Office that used Windows Installer (MSI) as the installation technology.
+<!--Using include for use-oct-->
+[!INCLUDE[use-oct.md](../../includes/use-oct.md)]
 
 There are a series of settings in the configuration.xml file that you configure to customize the Office LTSC 2021 download or installation. The following table lists the most common settings to configure in the configuration.xml file.
 
