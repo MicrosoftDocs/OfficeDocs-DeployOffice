@@ -44,6 +44,8 @@ IRM protection can't be applied to a message that is already signed or encrypted
 
 Encryption can be applied using the **Encrypt** button in the ribbon or can be configured with Labels.
 
+:::image type="content" source="media/compose-encrypt.png" alt-text="Screenshot of a new message showing encryption options under the Options tab on the ribbon":::
+
 For more information related to IRM, see [Email encryption](/purview/email-encryption).
 
 Lo learn more about restricting access to content by using sensitivity labels to apply encryption, see [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels).
