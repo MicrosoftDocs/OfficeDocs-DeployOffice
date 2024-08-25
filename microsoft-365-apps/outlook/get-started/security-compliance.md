@@ -29,7 +29,7 @@ The following screenshot shows the compose pane in new Outlook and the dropdown 
 
 For more information about Sensitivity labels, check out [Learn about sensitivity labels](/purview/sensitivity-labels).
 
-To understand supported capabilities, see [Sensitivity label capabilities in Outlook](/microsoft-365/compliance/sensitivity-labels?#sensitivity-label-capabilities-in-outlook).
+To understand supported capabilities, see [Sensitivity label capabilities in Outlook](/purview/sensitivity-labels-versions#sensitivity-label-capabilities-in-outlook).
 
 ## Encryption
 
