@@ -25,11 +25,11 @@ New Outlook supports comprehensive data security solutions to help organizations
 
 In today's collaborative work environment, content moves freely across devices, apps, and services, often beyond the confines of a firewall. To ensure that this content remains secure and compliant with an organization's policies, Microsoft Purview Information Protection offers sensitivity labels. These labels help classify and protect your organization's data without compromising user productivity or collaboration.
 
-The following screenshot shows the compose pane in new Outlook and the dropdown after selecting the [sensitivity bar](purview/sensitivity-labels-office-apps#sensitivity-bar). Users can also apply **Sensitivity** labels from the ribbon. On the **Message** tab, go to the **Tags** group and select **Sensitivity**.
+The following screenshot shows the compose pane in new Outlook and the dropdown after selecting the [sensitivity bar](/purview/sensitivity-labels-office-apps#sensitivity-bar). Users can also apply **Sensitivity** labels from the ribbon. On the **Message** tab, go to the **Tags** group and select **Sensitivity**.
 
-For more information about Sensitivity labels, check out [Learn about sensitivity labels](purview/sensitivity-labels).
+For more information about Sensitivity labels, check out [Learn about sensitivity labels](/purview/sensitivity-labels).
 
-To understand supported capabilities, see [Sensitivity label capabilities in Outlook](microsoft-365/compliance/sensitivity-labels?#sensitivity-label-capabilities-in-outlook).
+To understand supported capabilities, see [Sensitivity label capabilities in Outlook](/microsoft-365/compliance/sensitivity-labels?#sensitivity-label-capabilities-in-outlook).
 
 ## Encryption
 
@@ -42,9 +42,9 @@ IRM protection can't be applied to a message that is already signed or encrypted
 
 Encryption can be applied using the **Encrypt** button in the ribbon or can be configured with Labels.
 
-For more information related to IRM, see [Email encryption](purview/email-encryption).
+For more information related to IRM, see [Email encryption](/purview/email-encryption).
 
-Lo learn more about restricting access to content by using sensitivity labels to apply encryption, see [Restrict access to content by using sensitivity labels to apply encryption](purview/encryption-sensitivity-labels).
+Lo learn more about restricting access to content by using sensitivity labels to apply encryption, see [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels).
 
 > [!NOTE]
 > Double Key encryption is not supported in New Outlook.
@@ -55,7 +55,7 @@ Many organizations might have sensitive information under their control that can
 
 Admins can protect this type of sensitive data and reduce the risk of their users inappropriately sharing sensitive data with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
-New Outlook supports data loss prevention. For more information about DLP, see [Learn about data loss prevention](purview/dlp-learn-about-dlp).
+New Outlook supports data loss prevention. For more information about DLP, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
 
 ## Default labels and policies
 
@@ -67,4 +67,4 @@ New Outlook supports marking labels as default and other labeling policies of Mi
 
 These default configurations help you protect your emails and data in the emails.
 
-For more information about labeling policies and how to configure them, see [Service-side auto-labeling](purview/mip-easy-trials#service-side-auto-labeling).
+For more information about labeling policies and how to configure them, see [Service-side auto-labeling](/purview/mip-easy-trials#service-side-auto-labeling).
