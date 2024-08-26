@@ -74,7 +74,9 @@ Possible Values (Boolean):
 
 The migration runs only once. You can set the [interval policy](#setting-the-interval-policy) to reinitiate migration in the scenario users toggle back to classic Outlook.
 
-Deleting the registry key associated with this policy disables the policy and stops the migration. If you enable the policy again after disabling it or deleting the registry key, it will start migration again from step #1.
+Deleting the registry key associated with this policy disables the policy and stops the migration. If the policy is disabled, users who are already toggled into the new Outlook won't automatically be switched back to t classic Outlook, but they will continue to see the toggle in new Oultook and can swith back themselveds any time. 
+
+If you enable the policy again after disabling it or deleting the registry key, it will start migration again from step #1.
 
 #### Setting as a Group Policy
 
@@ -217,7 +219,7 @@ It's a mailbox policy that can be set through Exchange PowerShell –
 
 ## Tracking new Outlook usage
 
-You can view the new Outlook app usage in your organization by using the Usage and Insights report in Microsoft Entra ID.
+You can view new Outlook app usage in your organization by using the [Usage and Insights report](/entra/identity/monitoring-health/concept-usage-insights-report?tabs=microsoft-entra-admin-center) in Microsoft Entra ID.
 
 To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
 
