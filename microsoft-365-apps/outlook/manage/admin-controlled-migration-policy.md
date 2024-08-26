@@ -112,7 +112,7 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 1. Run the *.reg* file and select **Yes** in the confirmation dialog that appears.
 
 > [!TIP]
-> Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
+> Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template).  
 
 ## Policy to define the interval between migration attempts
 
@@ -151,7 +151,7 @@ You can download the latest group policy from the [Microsoft Download Center](ht
 
 #### Setting as a Cloud Policy
 
-You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/). For more information about Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../../admin-center/overview-cloud-policy.md)
+You can also set this policy as a [Cloud Policy](../../admin-center/overview-cloud-policy.md) from the [Microsoft 365 Apps admin center](https://config.office.com/). For more information about Cloud Policy, see [Overview of Cloud Policy service for Microsoft 365](../../admin-center/overview-cloud-policy.md).
 
 #### Setting as a registry key
 
@@ -205,15 +205,15 @@ It's a mailbox policy that can be set through Exchange PowerShell –
 
 - **Enabling the policy (set true):**
 
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggleOut $true
-```
+    ```powershell
+    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggleOut $true
+    ```
 
 - **Disabling the policy (set false):**
 
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggleOut $false
-```
+    ```powershell
+    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggleOut $false
+    ```
 
 ## Tracking new Outlook usage
 
