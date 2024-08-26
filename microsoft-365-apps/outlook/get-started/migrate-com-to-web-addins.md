@@ -108,3 +108,12 @@ Our goal is to provide support for core scenarios through a combination of Add-i
 For a full list of scenarios, see [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins).
 
 If you find gaps in the web add-in platform that don't support core workflows like the COM add-in, use [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR30HUvi_P4FFlU1eu9jg8INURUhWVkJHVEpRMURVUzNQWUdJS0g1U1NOOC4u) to share feedback.
+
+## Web add-in FAQs
+
+1. **What are the capabilities supported by web add-ins?**: Outlook web add-ins support many scenarios involving composing and reading emails and events. Web add-in JS APIs support accessing many properties like the email body and details, event body and details, sensitivity labels and many more. It is also possible to launch web add-ins automatically on email compose and many more capabilities are being added to the web add-in platform. Learn more about the supported and upcoming scenarios in [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins).
+
+2. **What are the JS API requirements sets supported in new Outlook?**: Web add-in JS API set upto 1.14 is supported in the new Outlook for Windows. This provides support for spam reporting and phisihing scenarios among several others. Learn more about the JS APIs in this requirement set here: [Outlook API reference](/javascript/api/outlook).
+
+3. **How can spam reporting web add-ins replace the 'Report' button in new Outlook?**: Third-party spam reporting add-ins can replace the **Report** button in new Outlook by making a manifest change. It requires the web add-in manifest to set xsi:type attribute of the ExtensionPoint element to ReportPhishingCommandSurface. More details on the implementation here: [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting#configure-the-manifest).
+ 
