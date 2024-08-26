@@ -50,7 +50,7 @@ This teaching callout might not appear in some cases, for example, if a higher p
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users select **Switch next time** or close the dialog or the app, they'll automatically be taken to the new Outlook experience on the next launch of classic Outlook.
 
-:::image type="content" source="media/admin-controlled-migration-policy/outlook-install-notice.png" alt-text="Installation notice in Outlook informing users that the new Outlook for Windows is installed, with options to switch now or next time." lightbox="media/admin-controlled-migration-policy/outlook-install-notice-lb.png":::
+    :::image type="content" source="media/admin-controlled-migration-policy/outlook-install-notice.png" alt-text="Installation notice in Outlook informing users that the new Outlook for Windows is installed, with options to switch now or next time." lightbox="media/admin-controlled-migration-policy/outlook-install-notice-lb.png":::
 
 Users are able to toggle back to classic Outlook for Windows anytime.
 
