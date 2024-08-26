@@ -119,7 +119,8 @@ With Office LTSC 2024, Microsoft Publisher is no longer included as part of the 
 
 #### Microsoft Teams
 
-The Microsoft Teams app isn't preinstalled with Office LTSC 2024, but is available as a separate download. Organizations that require Teams for communication and collaboration can [download Teams](https://www.microsoft.com/microsoft-teams/download-app#download-for-desktop) separately.
+<!--Using include for teams-not-included-->
+[!INCLUDE[teams-not-included.md](../../includes/teams-not-included.md)]
 
 ## What stayed the same in Office LTSC 2024?
 

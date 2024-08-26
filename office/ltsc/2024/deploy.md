@@ -116,17 +116,36 @@ If you’ve saved the configuration.xml file with a different name, use that nam
 
 Once the installation is complete, the command prompt will return, and you can open the Office LTSC 2024 programs you’ve installed.
 
+> [!NOTE]
+> Office LTSC 2024 is installed on the system drive, typically the C:\ drive. The installation location can't be changed.
+
 ## Install Office LTSC 2024 by using Configuration Manager
-<!-- Add instructions for installing Office LTSC 2024 using Configuration Manager -->
+
+You can also use Microsoft Configuration Manager (current branch) to deploy Office LTSC 2024. The Office 365 Client Installation wizard guides you through the process and builds the configuration.xml file for you. There’s an entry for Office LTSC Professional Plus 2024 in the wizard. On that same page, you can also choose to deploy Project and Visio. To access the wizard, navigate to **Software Library** > **Overview** > **Office 365 Client Management** in the Configuration Manager console.
 
 ## Deploy languages for Office LTSC 2024
-<!-- Add details for deploying languages -->
+
+You can use the ODT and the configuration.xml file to deploy Office LTSC 2024, including Project and Visio, in multiple languages. For more information, see [Language element](/microsoft-365-apps/deploy/office-deployment-tool-configuration-options#language-element).
+
+You can also install proofing tools by specifying the Product ID as "ProofingTools" in your configuration.xml file along with the appropriate Language IDs. Proofing tools packages are smaller than full language packs, making them a good choice for users who work with documents in multiple languages but don’t need the Office product UI in all those languages. The proofing tools can be installed at the same time you’re installing Office LTSC 2024, or you can install them later. They can also be installed whether or not the language pack for a given language is installed.
+
+If you're upgrading from a Windows Installer (MSI) version of Office, you can get Click-to-Run versions of the same language resources—such as language packs, language interface packs, or proofing tools—installed when you deploy Office LTSC 2024. For more information, see [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](/microsoft-365-apps/deploy/upgrade-from-msi-version). Although that article focuses on Microsoft 365 Apps, most of the information also applies to Office LTSC 2024.
 
 ## Microsoft Teams in Office LTSC 2024
-<!-- Add details about Microsoft Teams in Office LTSC 2024 -->
+<!--Using include for teams-not-included-->
+[!INCLUDE[teams-not-included.md](../../includes/teams-not-included.md)]
 
 ## Skype for Business in Office LTSC 2024
-<!-- Add details about Skype for Business in Office LTSC 2024 -->
+
+By default, Skype for Business is not installed when deploying Office LTSC 2024 unless you make the following changes:
+
+- When you create the configuration.xml file with the [Office Customization Tool](https://config.office.com/deploymentsettings), under the Apps section, use the toggle to include Skype for Business.
+  :::image type="content" source="media/admin-controlled-migration-policy/office-customization-tool-apps-deployment.png" alt-text="Configuration options in the Office Customization Tool showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::
+  
+- steps
+
+These changes ensure that Skype for Business is included in the installation.
+
 
 ## Related articles
 <!-- List related articles -->
