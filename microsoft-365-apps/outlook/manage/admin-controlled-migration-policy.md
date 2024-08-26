@@ -129,7 +129,10 @@ To view your organization's feedback data, sign in to the [Microsoft 365 admin c
 For more information, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback).
 
 > [!NOTE]
-> Feedback may be biased toward users who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
+> Feedback may be biased from those who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
+
+:::image type="content" source="media/admin-controlled-migration-policy/product-feedback-page.png" alt-text="Microsoft 365 admin center Product feedback page showing options for selecting products such as the New Outlook for Windows." lightbox="media/admin-controlled-migration-policy/product-feedback-page-lb.png":::
+
 
 ## Policy to define the interval between migration attempts
 
