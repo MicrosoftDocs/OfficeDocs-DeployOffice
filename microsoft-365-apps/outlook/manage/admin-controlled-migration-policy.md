@@ -114,26 +114,6 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 > [!TIP]
 > Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
-## Tracking new Outlook usage
-
-You can view the new Outlook app usage in your organization by using the Usage and Insights report in Microsoft Entra ID.
-
-To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
-
-To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
-
-## View your organization’s feedback
-
-To view your organization's feedback data, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and select the **Health** node. Then, choose **Product Feedback** and filter the products to **New Outlook for Windows**.
-
-For more information, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback).
-
-> [!NOTE]
-> Feedback may be biased from those who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
-
-:::image type="content" source="media/admin-controlled-migration-policy/product-feedback-page.png" alt-text="Microsoft 365 admin center Product feedback page showing options for selecting products such as the New Outlook for Windows." lightbox="media/admin-controlled-migration-policy/product-feedback-page-lb.png":::
-
-
 ## Policy to define the interval between migration attempts
 
 Users can toggle back to classic Outlook even after they migrate to the new Outlook for Windows.
@@ -234,6 +214,25 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggl
 ```powershell
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -HideClassicOutlookToggleOut $false
 ```
+
+## Tracking new Outlook usage
+
+You can view the new Outlook app usage in your organization by using the Usage and Insights report in Microsoft Entra ID.
+
+To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
+
+To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
+
+## View your organization’s feedback
+
+To view your organization's feedback data, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and select the **Health** node. Then, choose **Product Feedback** and filter the products to **New Outlook for Windows**.
+
+For more information, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback).
+
+> [!NOTE]
+> Feedback may be biased from those who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
+
+:::image type="content" source="media/admin-controlled-migration-policy/product-feedback-page.png" alt-text="Microsoft 365 admin center Product feedback page showing options for selecting products such as the New Outlook for Windows." lightbox="media/admin-controlled-migration-policy/product-feedback-page-lb.png":::
 
 ## Sample scenarios
 
