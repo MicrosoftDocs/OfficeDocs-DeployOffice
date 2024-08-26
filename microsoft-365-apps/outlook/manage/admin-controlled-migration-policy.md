@@ -23,6 +23,13 @@ You can upgrade users in your organization to the new Outlook for Windows by set
 
 Organizations ready to migrate users to the new Outlook for Windows can use the Admin-Controlled Migration to New Outlook policy.
 
+To successfully migrate users to the new Outlook for Windows, it's essential to follow specific steps and meet certain requirements. The following checklist highlights the key areas to focus on during the migration process:
+
+> [!div class="checklist"]
+>
+> - [Prerequisite to enabling the policy](#prerequisite-to-enabling-the-policy)
+> - [Enabling or disabling the migration policy](#enabling-or-disabling-the-migration-policy)
+
 ### User experience
 
 [Enabling this policy](#enabling-or-disabling-the-migration-policy) (set to 1) switches users from classic Outlook to new Outlook in three steps. Each step runs on a new app session (app launch).
