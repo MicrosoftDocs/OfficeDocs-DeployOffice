@@ -120,7 +120,7 @@ With Office LTSC 2024, Microsoft Publisher is no longer included as part of the 
 #### Microsoft Teams
 
 <!--Using include for teams-not-included-->
-[!INCLUDE[teams-not-included.md](../../includes/teams-not-included.md)]
+[!INCLUDE[teams-not-included-ltsc.md](../../includes/teams-not-included-ltsc.md)]
 
 ## What stayed the same in Office LTSC 2024?
 

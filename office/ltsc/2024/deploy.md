@@ -133,14 +133,14 @@ If you're upgrading from a Windows Installer (MSI) version of Office, you can ge
 
 ## Microsoft Teams in Office LTSC 2024
 <!--Using include for teams-not-included-->
-[!INCLUDE[teams-not-included.md](../../includes/teams-not-included.md)]
+[!INCLUDE[teams-not-included-ltsc.md](../../includes/teams-not-included-ltsc.md)]
 
 ## Skype for Business in Office LTSC 2024
 
 By default, Skype for Business is not installed when deploying Office LTSC 2024 unless you make the following changes:
 
-- When you create the configuration.xml file with the [Office Customization Tool](https://config.office.com/deploymentsettings), under the Apps section, use the toggle to include Skype for Business.
-  :::image type="content" source="media/admin-controlled-migration-policy/office-customization-tool-apps-deployment.png" alt-text="Configuration options in the Office Customization Tool showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::
+- When you create the configuration.xml file with the [Office Customization Tool](https://config.office.com/deploymentsettings), under the Apps section, use the toggle to turn on Skype for Business.
+  :::image type="content" source="media/deploy/office-customization-tool-apps-deployment.png" alt-text="Configuration options in the Office Customization Tool showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::
   
 - steps
 
