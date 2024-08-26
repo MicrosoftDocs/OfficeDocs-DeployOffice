@@ -13,7 +13,7 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-ms.date: 08/15/2024
+ms.date: 08/26/2024
 ---
 # Policy for Admin-Controlled Migration to new Outlook for Windows
 
@@ -25,11 +25,11 @@ Organizations ready to migrate users to the new Outlook for Windows can use the 
 
 ### User experience
 
-Enabling this policy (set to 1) switches users from classic Outlook to new Outlook in three steps. Each step runs on a new app session (app launch).
+[Enabling this policy](#enabling-or-disabling-the-migration-policy) (set to 1) switches users from classic Outlook to new Outlook in three steps. Each step runs on a new app session (app launch).
 
-This approach allows users in-app communication about the new Outlook migration and gives them a chance to switch and try the new experience. When enabled, the Admin-Controlled Migration to new Outlook policy installs the new Outlook app in the background during the next launch of classic Outlook if the new app isn't already installed. On the subsequent launch of classic Outlook, users see the following migration steps.
+This approach allows users in-app communication about the new Outlook migration and gives them a chance to switch and try the new experience. When enabled, the *Admin-Controlled Migration to New Outlook* policy installs the new Outlook app in the background during the next launch of classic Outlook if the new app isn't already installed. On the subsequent launch of classic Outlook, users see the following migration steps.
 
-**Step #1:** Users see a teaching callout encouraging them to try the new Outlook, in the first session after the migration policy is set.
+**Step #1:** Users see a teaching callout encouraging them to try the new Outlook, in the first session after the migration policy is set and the new Outlook app is applied.
 
 - If users select **Try it**, classic Outlook is closed and new Outlook is launched.
 - If users choose **Not now**, the teaching callout is dismissed, and they can continue using classic Outlook. They’ll see the experience defined in step #2, in the next session.
@@ -38,14 +38,14 @@ This approach allows users in-app communication about the new Outlook migration 
 
 This teaching callout might not appear in some cases, for example, if a higher priority teaching callout is queued or if users navigate away too quickly. Users will still see the next migration step.
 
-**Step #2:** If users don’t switch to new Outlook in step 1, they’ll see this message in the next session: “Your organization recommends using the new Outlook for Windows. If you skip this step, you’ll be taken to the new experience the next time you start Outlook.”
+**Step #2:** If users don’t switch to new Outlook in step 1, they’ll see this message in the next session: “Your organization recommends using the new Outlook for Windows. If you skip this now, you’ll be taken to the new experience the next time you start Outlook.”
 
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users close the business bar or don’t take any action, they’re able to continue using classic Outlook for Windows. They’ll see the experience defined in step #3, in the next session.
 
 :::image type="content" source="media/admin-controlled-migration-policy/outlook-banner-notification.png" alt-text="Notification banner in Outlook recommending users to switch to the new Outlook with an option to switch now." lightbox="media/admin-controlled-migration-policy/outlook-banner-notification-lb.png":::
 
-**Step #3:** Users see a blocking prompt encouraging them to switch to new Outlook.
+**Step #3:** Users see a prompt encouraging them to switch to new Outlook.
 
 - If users select **Switch now**, classic Outlook is closed and new Outlook is launched.
 - If users select **Switch next time** or close the dialog or the app, they'll automatically be taken to the new Outlook experience on the next launch of classic Outlook.
@@ -66,13 +66,13 @@ You can use the policy functionality in Current Channel Version 2406 (Build 16.0
 
 #### Policy details:
 
-Policy Name: Admin-Controlled Migration to new Outlook
+Policy Name: Admin-Controlled Migration to New Outlook
 
 Possible Values (Boolean):
   - **1:** This value enables the new Outlook migration and initiates the migration flow as previously described.
   - **0:** This value disables the new Outlook migration and users stop seeing the associated experiences.
 
-The migration runs only once. You can set the interval policy to reinitiate migration in the scenario users toggle back to classic Outlook.
+The migration runs only once. You can set the [interval policy](#setting-the-interval-policy) to reinitiate migration in the scenario users toggle back to classic Outlook.
 
 Deleting the registry key associated with this policy disables the policy and stops the migration. If you enable the policy again after disabling it or deleting the registry key, it will start migration again from step #1.
 
@@ -114,6 +114,23 @@ You can also set this policy as a [Cloud Policy](../../admin-center/overview-clo
 > [!TIP]
 > Setting through Intune: This can be managed in Intune using administrative templates as well, since this is an ADMX policy. For more information, see [Use Windows 10/11 templates to configure group policy settings in Microsoft Intune](/mem/intune/configuration/administrative-templates-windows?tabs=template)  
 
+## Tracking new Outlook usage
+
+You can view the new Outlook app usage in your organization by using the Usage and Insights report in Microsoft Entra ID.
+
+To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
+
+To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
+
+## View your organization’s feedback
+
+To view your organization's feedback data, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and select the **Health** node. Then, choose **Product Feedback** and filter the products to **New Outlook for Windows**.
+
+For more information, see [Learn about Microsoft feedback for your organization](https://learn.microsoft.com/microsoft-365/admin/manage/feedback).
+
+> [!NOTE]
+> Feedback may be biased toward users who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
+
 ## Policy to define the interval between migration attempts
 
 Users can toggle back to classic Outlook even after they migrate to the new Outlook for Windows.
@@ -126,7 +143,7 @@ The Admin controlled migration policy must be enabled for this policy to be resp
 
 ### Setting the interval policy
 
-This setting is a group policy and can be managed via Cloud Policy. It can also be deployed as a Registry value.
+This group policy can be managed via Cloud Policy. It can also be deployed as a Registry value.
 
 You can use the policy functionality in Current Channel Version 2406 (Build 16.0.17830.20138). We expect it to become available in Monthly Enterprise Channel in September 2024.
 
