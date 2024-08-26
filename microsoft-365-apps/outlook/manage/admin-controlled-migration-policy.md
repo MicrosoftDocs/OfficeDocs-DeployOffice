@@ -120,13 +120,13 @@ You can view the new Outlook app usage in your organization by using the Usage a
 
 To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
 
-To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
+To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
 
 ## View your organization’s feedback
 
 To view your organization's feedback data, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and select the **Health** node. Then, choose **Product Feedback** and filter the products to **New Outlook for Windows**.
 
-For more information, see [Learn about Microsoft feedback for your organization](https://learn.microsoft.com/microsoft-365/admin/manage/feedback).
+For more information, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback).
 
 > [!NOTE]
 > Feedback may be biased toward users who switch back to classic Outlook for Windows, as they are prompted for feedback during this process.
