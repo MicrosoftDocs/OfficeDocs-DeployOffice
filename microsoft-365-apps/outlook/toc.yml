@@ -33,6 +33,8 @@ items:
         href: manage/policy-management.md
       - name: Exchange Online PowerShell
         href: /powershell/exchange/exchange-online-powershell
+      - name: Policy for admin-controlled migration 
+        href: manage/admin-controlled-migration-policy.md   
 
   - name: Troubleshoot
     items:
