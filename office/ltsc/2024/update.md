@@ -34,12 +34,15 @@ Office LTSC 2024 uses Click-to-Run technology, rather than Windows Installer (MS
 <a id="update-location"></a>
 ## Configure where Office LTSC 2024 gets updates from
 
-<!--Using include for how-office-updates-->
+<!--Using include for where-office-updates-from-->
 [!INCLUDE[where-office-updates-from.md](../../includes/where-office-updates-from.md)]
+
+For more information, see [Deploy Office LTSC 2024](deploy.md)
 
 ## Check for updates for Office LTSC 2024
 
-<!-- Add instructions for manually checking for updates -->
+<!--Using include for check-for-office-updates-->
+[!INCLUDE[check-for-office-updates.md](../../includes/check-for-office-updates.md)]
 
 ## Size of updates for Office LTSC 2024
 
