@@ -142,7 +142,7 @@ By default, Skype for Business is not installed when deploying Office LTSC 2024 
 - When you create the configuration.xml file with the [Office Customization Tool](https://config.office.com/deploymentsettings), under the Apps section, use the toggle to turn on Skype for Business.
   :::image type="content" source="media/deploy/office-customization-tool-apps-deployment.png" alt-text="Configuration options in the Office Customization Tool showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::
   
-- steps
+- In the Office 365 Client Installation wizard, under the **Products** tab, scroll to the **Applications** section, and check the box for Skype for Business to include it in your deployment package.
 
 These changes ensure that Skype for Business is included in the installation.
 
