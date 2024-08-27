@@ -13,7 +13,7 @@ ms.collection:
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-ms.date: 08/26/2024
+ms.date: 08/27/2024
 ---
 # Policy for Admin-Controlled Migration to new Outlook for Windows
 
@@ -61,6 +61,10 @@ This teaching callout might not appear in some cases, for example, if a higher p
 
 Users are able to toggle back to classic Outlook for Windows anytime.
 
+> [!IMPORTANT]
+> Users won't see steps 1 or 2 when launching new Outlook through protocols like mailto and .ics. However, they will see the prompt in step 3. If users select **Switch now** in the prompt, they won't be switched immediately. Instead, they'll be switched the next time they launch classic Outlook from Windows.
+
+
 ### Prerequisite to enabling the policy
 
 Make the new Outlook toggle available to users. If the toggle is hidden, users don’t see the migration experience. To enable the toggle if it was previously disabled, see [Enable or disable access to the new Outlook for Windows](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook#use-the-registry-to-enable-or-disable-the-new-outlook-toggle-in-outlook-desktop).
@@ -81,7 +85,7 @@ Possible Values (Boolean):
 
 The migration runs only once. You can set the [interval policy](#setting-the-interval-policy) to reinitiate migration in the scenario users toggle back to classic Outlook.
 
-Deleting the registry key associated with this policy disables the policy and stops the migration. If the policy is disabled, users who are already toggled into the new Outlook won't automatically be switched back to t classic Outlook, but they will continue to see the toggle in new Oultook and can swith back themselveds any time. 
+Deleting the registry key associated with this policy disables the policy and stops the migration. If the policy is disabled, users who are already toggled into the new Outlook won't automatically be switched back to t classic Outlook, but they continue to see the toggle in new Outlook and can switch back anytime. 
 
 If you enable the policy again after disabling it or deleting the registry key, it will start migration again from step #1.
 
