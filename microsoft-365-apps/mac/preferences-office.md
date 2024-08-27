@@ -11,16 +11,16 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 08/16/2023
+ms.date: 08/24/2024
 ---
 
 # Set suite-wide preferences for Office for Mac
 
-***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office Long Term Service Channel (LTSC) for Mac 2021, Office 2019 for Mac*
 
 The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) and support a streamlined user experience.
 
-As an IT admin, you may want to provide Mac users in your organization with a standard set of preferences for Office in either of the following ways:
+As an IT admin, you might want to give Mac users in your organization a standard set of Office preferences in one of these ways:
 
 - Set a default preference, which users can change.
 - Force a particular preference, which users can’t change.
@@ -62,23 +62,23 @@ Set the full email address of the Microsoft 365 user to be added on first launch
 |Possible values| *Various (example: "bob@contoso.com")* |
 |Apps| Word, Excel, PowerPoint, Outlook, OneNote |
 |Availability| 16.18 |
-|Comments| The sign in sheet for Word, Excel, PowerPoint, Outlook, and OneNote will be automatically populated with the specified value. |
+|Comments| The sign in sheet for Word, Excel, PowerPoint, Outlook, and OneNote is automatically populated with the specified value. |
 
 ## Security
 
 ### Cipher algorithm
 
-Instruct Office applications to use a specific Cipher algorithm for IRM protection, such as Cipher Block Chaining (CBC) or Electronic Codebook (ECB).
+Instruct Office applications to use a specific Cipher algorithm for Information Rights Management (IRM) protection, such as Cipher Block Chaining (CBC) or Electronic Codebook (ECB).
 
 |Category|Details|
 |:-----|:-----|
 |Domain| com.microsoft.office |
-|Key| CompatibleEncryption |
+|Key| OfficeDRMCompatibleEncryption |
 |Data Type| Integer |
-|Possible values| 1 = CBC (default)<br/> 2 = ECB |
+|Possible values| 0 = Roundtrip<br/> 1 = CBC (default)<br/> 2 = ECB |
 |Apps| Word, Excel, PowerPoint |
 |Availability| 16.72 |
-|Comments| This preference applies to organizations that utilize the RMS service. For more information, see [https://aka.ms/Purview/CBCDetails](https://aka.ms/Purview/CBCDetails) |
+|Comments| This preference applies to organizations that utilize the Rights Management Services (RMS). For more information, see [https://aka.ms/Purview/CBCDetails](https://aka.ms/Purview/CBCDetails) |
 
 ## App launch
 
@@ -94,7 +94,7 @@ Set preferences for the visibility of What's New information after app updates.
 |Possible values| true (default) <br/> false |
 |Apps| Word, Excel, PowerPoint, Outlook, OneNote |
 |Availability| 16.16 |
-|Comments| When set to false, users will not be shown information about new features and functionality. |
+|Comments| When set to false, users aren't shown information about new features and functionality. |
 
 ### Template gallery
 
@@ -108,7 +108,7 @@ Set preferences for automatically showing the template gallery.
 |Possible values| true (default) <br/> false |
 |Apps| Word, Excel, PowerPoint |
 |Availability| 16.16 |
-|Comments| When set to false, users will always start with the blank template when launching an app. |
+|Comments| When set to false, users always start with the blank template when launching an app. |
 
 ## User functionality
 
@@ -124,7 +124,7 @@ Set preferences between cloud-based and local file storage.
 |Possible values| false (default) <br/> true |
 |Apps| Word, Excel, PowerPoint |
 |Availability| 16.16 |
-|Comments| When set to true, users will first see the local file system when accessing the Open and Save dialogs. |
+|Comments| When set to true, users first see the local file system when accessing the Open and Save dialogs.|
 
 ### Fonts
 
@@ -138,17 +138,16 @@ Set the ability for users to download and install cloud-based fonts.
 |Possible values| false (default) <br/> true |
 |Apps| Word, Excel, PowerPoint, Outlook, OneNote |
 |Availability| 16.30 |
-|Comments| When set to true, cloud-based fonts will not be visible to users when editing documents. |
+|Comments| When set to true, cloud-based fonts aren't visible to users when editing documents. |
 
 ## App installation
 
 ### Excluding apps
 
-The following preferences can be used to prevent specific apps from being installed when using the *Suite* installer package.
-This can be useful in scenarios where you want to take advantage of the size optimizations offered by the Suite installer, but need to prevent one or more apps from being installed. For example, you can prevent the OneDrive app from being installed as part of the Suite because you use a different cloud storage solution.
+Use the following preferences to prevent specific apps from being installed with the *Suite* installer package. This approach is useful when you want to benefit from the size optimizations of the Suite installer but need to exclude certain apps. For example, you can prevent the installation of OneDrive if you use a different cloud storage solution.
 
 > [!IMPORTANT]
-> The app exclusion preferences will only work with the Suite installer package. Other installation packages such as the individual app installers, and apps from the Mac AppStore will not read these preferences.
+> The app exclusion preferences will only work with the Suite installer package. Other installation packages such as the individual app installers, and apps from the Mac AppStore do not read these preferences.
 
 Exclude Word
 
@@ -159,7 +158,7 @@ Exclude Word
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be applied through a Configuration Profile or Mobile Device Management (MDM) to be effective. It doesn't work with the defaults command. |
 
 Exclude Excel
 
@@ -170,7 +169,7 @@ Exclude Excel
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude PowerPoint
 
@@ -181,7 +180,7 @@ Exclude PowerPoint
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude Outlook
 
@@ -192,7 +191,7 @@ Exclude Outlook
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude OneNote
 
@@ -203,7 +202,7 @@ Exclude OneNote
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude OneDrive
 
@@ -214,7 +213,7 @@ Exclude OneDrive
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude Teams
 
@@ -225,7 +224,7 @@ Exclude Teams
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude Defender
 
@@ -236,7 +235,7 @@ Exclude Defender
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.75 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 
 Exclude AutoUpdate
 
@@ -247,7 +246,7 @@ Exclude AutoUpdate
 |Data Type| Boolean |
 |Possible values| true (default) <br/> false |
 |Availability| 16.30 |
-|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It will not work when using the *defaults* command. |
+|Comments| This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the *defaults* command. |
 ## Related articles
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
