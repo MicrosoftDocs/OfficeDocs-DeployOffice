@@ -9,13 +9,13 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
-description: "Provides IT admins with information on how to update Office LTSC 2024."
+description: "Provides IT admins with information on how to update Office Long Term Service Channel (LTSC) 2024."
 ms.date: 09/16/2024
 ---
 
 # Update Office LTSC 2024
 
-Once you've deployed Office LTSC 2024, including Project and Visio, it's important to keep it up to date. Microsoft regularly releases security updates and quality improvements, including updates that enhance stability and performance. Office LTSC 2024 receives updates roughly once a month, typically on the second Tuesday.
+Once you deploy Office LTSC 2024, including Project and Visio, it's important to keep it up to date. Microsoft regularly releases security updates and quality improvements, including updates that enhance stability and performance. Office LTSC 2024 typically receives updates once a month, typically on the second Tuesday.
 
 > [!NOTE]
 > Office LTSC 2024 doesn't receive new features after it's released. To access new Office features on an ongoing basis, consider transitioning to a Microsoft 365 (or Office 365) plan that includes Office.
@@ -60,8 +60,7 @@ Office uses the concept of update channels to determine which updates an install
 
 "PerpetualVL2024" is the **only** update channel available for Office LTSC Professional Plus 2024 and Office LTSC Standard 2024. The PerpetualVL2024 update channel is also available for volume licensed versions of Project 2024 and Visio LTSC 2024.
 
-Volume licensed versions of Project 2024 and Visio LTSC 2024 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use these other update channels is to ensure compatibility when installed on a device alongside Microsoft 365 Apps, which support all these channels. However, even if Project and Visio use these other update channels, they will still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
-
+Volume licensed versions of Project 2024 and Visio LTSC 2024 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use these other update channels is to ensure compatibility when installed on a device alongside Microsoft 365 Apps, which support all these channels. However, even if Project and Visio use these other update channels, they'll still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
 
 ## Related articles
 
