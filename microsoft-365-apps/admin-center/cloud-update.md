@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 07/25/2024
+ms.date: 08/27/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -96,7 +96,7 @@ The [Current Channel profile](https://config.office.com/officeSettings/MPCurrent
 
 ## Profile controls
 
-Profile controls let admins pause a rollout or roll back to a previous build among other actions for each profile.
+Profile controls are management actions available for each individual profile, unless otherwise specified. 
 
 ### Pause
 
@@ -142,7 +142,7 @@ To trigger a rollback, follow these steps:
 
 ## Tenant settings
 
-Tenant settings apply to all profiles, unless otherwise specified, and allow you to schedule exclusion windows and assign exclusion groups.
+Tenant settings apply to all profiles, unless otherwise specified. Available settings include exclusion windows and exclude groups.
 
 ### Exclusion windows
 
@@ -172,12 +172,12 @@ To create and manage an exclusion window, follow these steps:
 
 ### Exclude groups
 
-Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude specific devices or users. For example, you might need to move a device to an update channel that isn't currently available with cloud update, or exclude user accounts used for testing from cloud update. Keep these points in mind when using exclude groups:
+Cloud update is designed to give you full update coverage across the devices on Current Channel and Monthly Enterprise Channel. However, there could be situations where you need to exclude specific devices or users. For example, you might need to move a device to an update channel that isn't currently available with cloud update. Keep these points in mind when using exclude groups:
 
 - Refer to the [Microsoft Entra group requirements](#microsoft-entra-groups-requirements) for cloud update.
 - Exclude groups is a tenant-level setting and applies to all profiles.
 - Excluded devices are reflected in your [device inventory](https://config.office.com/officeSettings/inventory/devices) within 24 hours. You can confirm a device was excluded by reviewing the **Cloud Update Status** column.
-- Once a device is marked as excluded, the service attempts to send an offboard notification to the device. If you plan to manage the device with a different tool, you can change the following registry value to regain control sooner:
+- Once a device is marked as excluded, you can change the following registry value to regain control:
 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
 `Value: IgnoreGPO=0`
 
@@ -194,7 +194,7 @@ To add or modify a group exclusion, follow these steps:
 
 ## Profile settings
 
-Profile settings are specific to each profile and allow you to configure rollout waves, enable update validation, and set an update deadline.
+Profile settings are specific to each profile. Available settings include rollout waves, update validation, update deadline, and deactivation.
 
 ### Rollout waves
 
@@ -260,6 +260,25 @@ To configure the deadline, follow these steps:
 4. From **Settings**, select **Deadline**.
 5. Adjust the **Update deadline** slider to your preferred value and select **Save**.
 
+### Cloud update review (deactivation)
+Admins have the ability to deactivate a channel profile at any time. Deactivating a profile disables update management for all devices on the corresponding update channel. For example, deactivating the Current Channel profile will disable update management for all devices in your tenant that are on Current Channel.
+
+> [!IMPORTANT]
+> Using the [switch device update channel](inventory.md#switch-device-update-channel) feature automatically enables all channel profiles, regardless of deactivation state. This feature is dependent on the cloud update service to function.
+
+To deactivate a profile, follow these steps:
+
+1. Sign in to the [Microsoft 365 Apps admin center](https://config.office.com) with a privileged account.
+2. Expand **Cloud Update** from the left navigation and select an update profile.
+3. On the profile page, select the **Settings** tab.
+4. From **Settings**, select **Cloud Update review**.
+5. Review the information and click the link to **deactivate the management through cloud update**.
+6. Fill out the form and click **submit**.
+
+The cloud update status for devices in inventory on a deactivated profile will be updated to **Eligible for *ChannelName*** and update management from the service will stop. You can change the following registry value to regain control:
+`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\cloud\office\16.0\Common\officeupdate`  
+`Value: IgnoreGPO=0`
+
 ## Compatibility with other management tools
 
 Cloud updates take priority over existing update management settings for Microsoft 365 Apps. For example, if you apply settings through Microsoft Configuration Manager or set policies using Microsoft Intune’s configuration profiles, these settings remain unchanged by the cloud update but aren't enforced anymore. This change affects all devices managed by the cloud update.
@@ -272,11 +291,6 @@ Cloud updates take priority over existing update management settings for Microso
 With cloud update enabled, devices are automatically mapped to the corresponding profile based on their update channel. For example, all devices on Current Channel map to the Current Channel profile. Once the devices are mapped to a profile, cloud update delivers the appropriate policies to these devices.
 
 Cloud update currently supports management for devices on Current Channel and Monthly Enterprise Channel. Devices on any other update channel won't be managed by cloud update until they're moved to a channel that cloud update supports.
-
-## Deactivation
-If cloud update isn't the right fit for an organizations' update management requirements of devices on Monthly Enterprise or Current channel, admins can deactivate cloud update for one or both channels. To deactivate, go into the profile in the left navigation under cloud update for the channel that you want to deactivate. Select the **Settings** tab and choose **cloud update review**. Select the **deactivate the channel** link, fill in the feedback or allow Microsoft to contact you, and choose **Submit**.
-
-The profile states for the devices on the deactivated channel are set to "Deactivated immediately". Devices are removed from profiles within 30 minutes. Additionally, the cloud update status in the inventory is updated to **Eligible for *ChannelName*** within the same 30-minute window. Admins can manage these devices but should first set *ignoreGPO = 0* for these devices before beginning to manage them. 
 
 ## Troubleshooting
 > [!IMPORTANT]
@@ -291,11 +305,13 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 ### Devices are updating outside of their assigned wave
 
-Updates applied outside of a custom rollout wave are due to external actions occurring on the device. Review the following scenarios and take any necessary actions:
+If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave.Review the following scenarios and take any necessary actions:
 
-- **Add-on app deployments**: When you Install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
+- **Add-on app deployments**: When you install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
 
 - **Onboarding devices**: Devices that are still in an **Onboarding to [channel-name]** state are managed by your existing settings until cloud update takes control. During this time, other management settings can enforce updates. Consider excluding devices from these other management tools or wait until the next patch Tuesday cycle for cloud update to engage.
+
+- **Channel change**: The [switch device update channel](inventory.md#switch-device-update-channel) feature will trigger an update check. If you initiate a channel change using a group that contains devices already on Monthly Enterprise Channel, those devices will not receive a channel change action, but will check for the latest available update for Monthly Enterprise Channel. Consider removing those devices from the group if you need to ensure they only update within their wave assignment.
   
 ### My Device-based group didn't work with *[feature name]*
 
