@@ -27,9 +27,11 @@ Office LTSC 2024 uses Click-to-Run technology, rather than Windows Installer (MS
 <!--Using include for how-office-updates-->
 [!INCLUDE[how-office-updates.md](../../includes/how-office-updates.md)]
 
-## How updates are different in Office LTSC 2024
+## How updates work in Office LTSC 2024
 
-<!-- Add details about how updates are different in Office LTSC 2024 compared to MSI-based updates -->
+Updates in Office LTSC 2024 are managed the same as in Office LTSC 2021 but differ significantly from MSI-based updates used in earlier versions of Office. In Office LTSC 2024, updates are cumulative, meaning the latest version available on the Office CDN includes all previous security and quality updates. This approach ensures that Office is up to date when you download and install it from the Office CDN, so you don’t need to apply updates or service packs.
+
+Unlike in earlier MSI-based versions, there are no separate downloads for security or quality updates; they're included in each new build posted on the Office CDN. As a result, Microsoft Update or Windows Server Update Services (WSUS) isn't used by itself to update Office LTSC 2024. However, Microsoft Configuration Manager can be used to manage how and when updates are applied, and where they're sourced from.
 
 <a id="update-location"></a>
 ## Configure where Office LTSC 2024 gets updates from
@@ -60,7 +62,9 @@ Office uses the concept of update channels to determine which updates an install
 
 "PerpetualVL2024" is the **only** update channel available for Office LTSC Professional Plus 2024 and Office LTSC Standard 2024. The PerpetualVL2024 update channel is also available for volume licensed versions of Project 2024 and Visio LTSC 2024.
 
-Volume licensed versions of Project 2024 and Visio LTSC 2024 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use these other update channels is to ensure compatibility when installed on a device alongside Microsoft 365 Apps, which support all these channels. However, even if Project and Visio use these other update channels, they'll still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
+Volume licensed versions of Project 2024 and Visio LTSC 2024 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use these other update channels is to ensure compatibility when installed on a device alongside Microsoft 365 Apps, which support all these channels. Even if Project and Visio use different update channels, they only receive security and quality updates each month, without any new features.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
 
 ## Related articles
 
