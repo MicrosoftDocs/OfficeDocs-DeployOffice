@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 07/25/2024
+ms.date: 08/27/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
