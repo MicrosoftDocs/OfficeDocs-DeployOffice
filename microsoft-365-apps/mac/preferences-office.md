@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 08/16/2023
+ms.date: 08/24/2024
 ---
 
 # Set suite-wide preferences for Office for Mac
@@ -73,9 +73,9 @@ Instruct Office applications to use a specific Cipher algorithm for IRM protecti
 |Category|Details|
 |:-----|:-----|
 |Domain| com.microsoft.office |
-|Key| CompatibleEncryption |
+|Key| OfficeDRMCompatibleEncryption |
 |Data Type| Integer |
-|Possible values| 1 = CBC (default)<br/> 2 = ECB |
+|Possible values| 0 = Roundtrip<br/> 1 = CBC (default)<br/> 2 = ECB |
 |Apps| Word, Excel, PowerPoint |
 |Availability| 16.72 |
 |Comments| This preference applies to organizations that utilize the RMS service. For more information, see [https://aka.ms/Purview/CBCDetails](https://aka.ms/Purview/CBCDetails) |
