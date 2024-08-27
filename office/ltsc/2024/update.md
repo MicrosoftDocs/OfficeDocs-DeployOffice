@@ -15,21 +15,23 @@ ms.date: 09/16/2024
 
 # Update Office LTSC 2024
 
-<!-- Add introductory paragraph about updating Office LTSC 2024 -->
+Once you've deployed Office LTSC 2024, including Project and Visio, it's important to keep it up to date. Microsoft regularly releases security updates and quality improvements, including updates that enhance stability and performance. Office LTSC 2024 receives updates roughly once a month, typically on the second Tuesday.
 
 > [!NOTE]
-> <!-- Add note about Office LTSC 2024 not receiving new features -->
+> Office LTSC 2024 doesn't receive new features after it's released. To access new Office features on an ongoing basis, consider transitioning to a Microsoft 365 (or Office 365) plan that includes Office.
 
-Office LTSC 2024 uses Click-to-Run, instead of Windows Installer (MSI), as the technology used to install and update Office.
+Office LTSC 2024 uses Click-to-Run technology, rather than Windows Installer (MSI), for installation and updates.
 
 ## How Office LTSC 2024 gets updated
 
-<!-- Add details about how Office LTSC 2024 gets updated -->
+<!--Using include for how-office-updates-->
+[!INCLUDE[how-office-updates.md](../../includes/how-office-updates.md)]
 
 ## How updates are different in Office LTSC 2024
 
 <!-- Add details about how updates are different in Office LTSC 2024 compared to MSI-based updates -->
 
+<a id="update-location"></a>
 ## Configure where Office LTSC 2024 gets updates from
 
 <!-- Add details about configuring where Office LTSC 2024 gets updates from -->
