@@ -62,7 +62,7 @@ This teaching callout might not appear in some cases, for example, if a higher p
 Users are able to toggle back to classic Outlook for Windows anytime.
 
 > [!IMPORTANT]
-> Users won't see steps 1 or 2 when launching new Outlook through protocols like mailto and .ics. However, they will see the prompt in step 3. If users select **Switch now** in the prompt, they won't be switched immediately. Instead, they'll be switched the next time they launch classic Outlook for Windows.
+> Users won't see steps 1 or 2 when launching new Outlook through protocols like mailto and .ics. However, they will see the prompt in step 3. If users select **Switch now** in the prompt, they won't be switched immediately. Instead, they'll be switched the next time they launch classic Outlook from Windows.
 
 
 ### Prerequisite to enabling the policy
