@@ -42,6 +42,8 @@ Since Click-to-Run handles updates differently than Windows Installer (MSI), her
 <!--Using include for how-office-updates-->
 [!INCLUDE[where-office-updates-from.md](../../includes/where-office-updates-from.md)]
 
+For more information, see [Deploy Office LTSC 2021](deploy.md)
+
 ## Check for updates for Office LTSC 2021
 
 <!--Using include for check-for-office-updates-->
@@ -49,15 +51,13 @@ Since Click-to-Run handles updates differently than Windows Installer (MSI), her
 
 ## Size of updates for Office LTSC 2021
 
-The size of the updates that are downloaded to the user's device from the update location varies depending on several factors, including how long it’s been since you last updated Office LTSC 2021 and how many security and quality updates there are.
-
-To minimize the size of the updates that need to be downloaded, we recommend that you keep Office LTSC 2021 up to date. Office uses a technology called binary delta compression to help reduce the size of the updates that need to be applied to the user's device. But binary delta compression is only available if you're updating from a recent version of Office. For example, if you're updating from the September or October version to the November version. But if you're updating a much older version of Office, such as from the June to November version, binary delta compression isn't available.
+<!--Using include for office-update-size-->
+[!INCLUDE[office-update-size.md](../../includes/office-update-size.md)]
 
 ## Use Group Policy to specify update settings
 
-If you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure update settings for Office LTSC 2021 by using Group Policy. To do this, download the most current [Administrative Template files (ADMX/ADML for Office)](https://www.microsoft.com/download/details.aspx?id=49030), which include the policy settings for Office LTSC 2021.
-
-After you copy the Administrative Template files to AD DS, you'll find the update policy settings under Computer Configuration\Policies\Administrative Templates\Microsoft Office 2016 (Machine)\Updates in the Group Policy Management tool. You'll also find a description of how to configure each policy setting. For example, you can use the “Update path” Group Policy setting to specify where Office LTSC 2021 should look for updates.
+<!--Using include for ad-ds-group-policy-->
+[!INCLUDE[ad-ds-group-policy.md](../../includes/ad-ds-group-policy.md)]
 
 ## Update channel for Office LTSC 2021
 

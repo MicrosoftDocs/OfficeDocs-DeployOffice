@@ -46,15 +46,22 @@ For more information, see [Deploy Office LTSC 2024](deploy.md)
 
 ## Size of updates for Office LTSC 2024
 
-<!-- Add details about the size of updates -->
+<!--Using include for office-update-size-->
+[!INCLUDE[office-update-size.md](../../includes/office-update-size.md)]
 
 ## Use Group Policy to specify update settings
 
-<!-- Add details about using Group Policy to specify update settings -->
+!--Using include for ad-ds-group-policy-->
+[!INCLUDE[ad-ds-group-policy.md](../../includes/ad-ds-group-policy.md)]
 
 ## Update channel for Office LTSC 2024
 
-<!-- Add details about update channels -->
+Office uses the concept of update channels to determine which updates an installed version of Office receives. The update channel is a device-wide setting, meaning all Office products, including Project and Visio, installed on a device must use the same update channel.
+
+"PerpetualVL2024" is the **only** update channel available for Office LTSC Professional Plus 2024 and Office LTSC Standard 2024. The PerpetualVL2024 update channel is also available for volume licensed versions of Project 2024 and Visio LTSC 2024.
+
+Volume licensed versions of Project 2024 and Visio LTSC 2024 can also use other update channels, such as Current Channel, Monthly Enterprise Channel, or Semi-Annual Enterprise Channel. The reason Project and Visio can use these other update channels is to ensure compatibility when installed on a device alongside Microsoft 365 Apps, which support all these channels. However, even if Project and Visio use these other update channels, they will still only receive security and quality updates each month, not any new features. For more information, see [Overview of update channels for Microsoft 365 Apps](/microsoft-365-apps/updates/overview-update-channels).
+
 
 ## Related articles
 
