@@ -27,7 +27,7 @@ Office LTSC 2024 uses Click-to-Run technology, rather than Windows Installer (MS
 <!--Using include for how-office-updates-->
 [!INCLUDE[how-office-updates.md](../../includes/how-office-updates.md)]
 
-## How updates work in Office LTSC 2024
+## How updates are different in Office LTSC 2024
 
 Updates in Office LTSC 2024 are managed the same as in Office LTSC 2021 but differ significantly from MSI-based updates used in earlier versions of Office. In Office LTSC 2024, updates are cumulative, meaning the latest version available on the Office CDN includes all previous security and quality updates. This approach ensures that Office is up to date when you download and install it from the Office CDN, so you don’t need to apply updates or service packs.
 
