@@ -48,7 +48,7 @@ Encryption can be applied using the **Encrypt** button in the ribbon or can be c
 
 For more information related to IRM, see [Email encryption](/purview/email-encryption).
 
-Lo learn more about restricting access to content by using sensitivity labels to apply encryption, see [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels).
+To learn more about restricting access to content by using sensitivity labels to apply encryption, see [Restrict access to content by using sensitivity labels to apply encryption](/purview/encryption-sensitivity-labels).
 
 > [!NOTE]
 > Double Key encryption is not supported in New Outlook.
