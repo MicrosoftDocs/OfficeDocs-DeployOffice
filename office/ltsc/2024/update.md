@@ -51,7 +51,7 @@ For more information, see [Deploy Office LTSC 2024](deploy.md)
 
 ## Use Group Policy to specify update settings
 
-!--Using include for ad-ds-group-policy-->
+<!--Using include for ad-ds-group-policy-->
 [!INCLUDE[ad-ds-group-policy.md](../../includes/ad-ds-group-policy.md)]
 
 ## Update channel for Office LTSC 2024
