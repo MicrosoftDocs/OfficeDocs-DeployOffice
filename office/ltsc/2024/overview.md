@@ -18,7 +18,7 @@ ms.date: 09/16/2024
 Office Long Term Service Channel (LTSC) 2024 is the most recent edition of Microsoft's productivity software, available to organizations through volume licensing agreements.
 
 > [!IMPORTANT]
-> Office LTSC 2024 is distinct from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
+> Office LTSC 2024 is different from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
 
 Enterprise administrators can download and deploy Office LTSC 2024 to users within their organization. The following volume licensed Office products are available for devices running Windows:
 
@@ -61,9 +61,6 @@ Office LTSC 2024 brings several key updates and improvements compared to previou
 
 > [!TIP]
 > If you’re moving to Office LTSC 2024 from Office 2016, you should also review the changes documented in the [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most significant difference between Office 2016 and Office LTSC 2024 is the shift in installation technology from Windows Installer (MSI) to Click-to-Run.
-
-> [!TIP]
-> <!-- Add tip about moving to Office LTSC 2024 from previous versions (if any) -->
 
 #### Privacy-related policy settings
 
@@ -142,15 +139,12 @@ For information about the new features in Office LTSC 2024, see the following ar
 
 - [What's new in Office 2024](https://support.microsoft.com/baadecbe-a8fc-4435-8cb8-70e93fd08b56)
 - [What's new in Access 2024](https://support.microsoft.com/a4643663-59a9-48e8-87ae-43cfdd9ba267)
-- [What's new in Excel 2024 for Mac](https://support.microsoft.com/ea294f19-1897-47ed-9198-ed322047c912)
-- [What's new in Excel 2024 for Windows](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
+- [What's new in Excel 2024](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
 - [What's new in OneNote 2024](https://support.microsoft.com/aaf9f977-037b-4665-9047-bf1b39d6ba4a)
-- [What's new in Outlook 2024 for Mac](https://support.microsoft.com/c2bb1caa-b789-4267-835c-e9701290d89e)
-- [What's new in Outlook 2024 for Windows](https://support.microsoft.com/c6f280d7-e776-4177-ae5a-f5281e9e9ef3)
-- [What's new in PowerPoint 2024 for Mac](https://support.microsoft.com/e295448e-073e-4c8d-9544-82d1b9ecb71c)
-- [What's new in PowerPoint 2024 for Windows](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
+- [What's new in Outlook 2024](https://support.microsoft.com/c6f280d7-e776-4177-ae5a-f5281e9e9ef3)
+- [What's new in PowerPoint 2024](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
 - [What's new in Visio 2024](https://support.microsoft.com/0295be56-187c-4254-9463-1b67dd6e0eb1)
-- [What's new in Word 2024 for Windows and Mac](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
+- [What's new in Word 2024](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
 
 > [!NOTE]
 >While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
@@ -170,7 +164,6 @@ Uninstall any existing versions of Office before deploying Office LTSC 2024. Mos
 - Office LTSC 2024 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - Office LTSC 2024 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices with 4 GB or more of memory. However, you should assess application compatibility and other factors that might require the use of the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2024.
-- LTSC stands for Long Term Servicing Channel.
 
 ## Related articles
 
