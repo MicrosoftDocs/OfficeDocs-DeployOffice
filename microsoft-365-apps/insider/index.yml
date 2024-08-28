@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   ms.author: nwhite
   author: nicholasswhite
-  ms.date: 06/27/2024
+  ms.date: 08/28/2024
   ms.localizationpriority: medium
 
 highlightedContent:
@@ -57,7 +57,7 @@ productDirectory:
     - title: What's new
       imageSrc: /office/media/icons/whats-new-megaphone-blue.svg
       links:
-        - url: https://insider.microsoft365.com/blog
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/bg-p/Microsoft365InsiderBlog
           text: Blog
         - url: /officeupdates/beta-channel
           text: Release notes for Beta Channel for Windows
@@ -70,17 +70,19 @@ productDirectory:
           text: LinkedIn
         - url: https://x.com/msft365insider
           text: X (formerly Twitter)
+        - url: https://www.threads.net/@msft365insider
+          text: Threads  
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider/bd-p/Microsoft365Insider
           text: Microsoft Tech Community
         - url: https://answers.microsoft.com/en-us/officeinsider/forum
           text: Microsoft Support Community          
-        - url: https://insider.microsoft365.com/handbook#Provide-feedback
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/microsoft-365-insider-handbook/ba-p/4205461#feedback
           text: How to provide feedback 
 
     - title: Microsoft 365 Insider for consumers
       imageSrc: /office/media/icons/user-monitor.svg
       links:
-        - url: https://insider.microsoft365.com/handbook
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/microsoft-365-insider-handbook/ba-p/4205461
           text: Overview
         - url: https://insider.microsoft365.com/join
           text: Join
