@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project, including Project Online Desktop Client and Project 2019, to users in their organization."
-ms.date: 09/12/2023
+ms.date: 09/18/2024
 ---
 
 # Deployment guide for Project
@@ -26,8 +26,14 @@ Before you deploy, be sure to [review the system requirements](https://www.micro
   
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same device. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
+
+## Deploy Project
+
+The following tabs provide guidance on how to deploy Project depending on the version you have. Select the tab that corresponds to your version of Project to ensure you follow the correct deployment steps.
+
+# [Project Online Desktop Client](#tab/desktop)
   
-## Deploy Project Online Desktop Client
+### Deploy Project Online Desktop Client
 
 Here are the general steps to deploy Project Online Desktop Client to users in your organization:
   
@@ -50,7 +56,9 @@ If you want to have more control over how Project is deployed to your users, you
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Project.
 
-## Deploy a volume licensed version of Project 2021
+# [Project 2021](#tab/2021)
+
+### Deploy a volume licensed version of Project 2021
 
 Here are the general steps to deploy a volume licensed version of Project Professional 2021 or Project Standard 2021 to users in your organization:
   
@@ -67,7 +75,9 @@ If you already use other tools to deploy software to your users, such as Microso
 > - Volume licensed versions of Project 2021 are installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Project isn't used with volume licensed versions of Project 2021.
 
-## Deploy a volume licensed version of Project 2019
+# [Project 2019](#tab/2019)
+
+### Deploy a volume licensed version of Project 2019
 
 Here are the general steps to deploy a volume licensed version of Project Professional 2019 or Project Standard 2019 to users in your organization:
   
@@ -83,8 +93,10 @@ If you already use other tools to deploy software to your users, such as Microso
 > - Volume licensed versions of Project 2019 are available directly from the Office CDN instead of from the Volume Licensing Service Center. 
 > - Volume licensed versions of Project 2019 are installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Project isn't used with volume licensed versions of Project 2019.
+
+# [Project 2016](#tab/2016)
   
-## Deploy a volume licensed version of Project 2016
+### Deploy a volume licensed version of Project 2016
 
 Here are the general steps to deploy a volume licensed version Project Professional 2016 or Project Standard 2016 to users in your organization:
   
@@ -100,6 +112,8 @@ If you already use other tools to deploy software to your users, such as Microso
   
 > [!NOTE]
 > The Office Customization Tool (OCT) is only available for versions of Project 2016 that are purchased as part of a volume licensing agreement. The OCT can't be used for retail versions of Project 2016, such as versions bought at a retail store or online.
+
+---
   
 ## Configure user settings for Project by using Group Policy
 
