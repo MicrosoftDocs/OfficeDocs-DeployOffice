@@ -1,5 +1,5 @@
 ---  
-title: "Security and compliance for new Outlook for Windows"   
+title: "Security and compliance in new Outlook for Windows"   
 ms.author: janellem  
 author: JanelleMcIntosh-MSFT
 manager: triciag
