@@ -90,7 +90,7 @@ productDirectory:
           text: Windows
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-macos/ba-p/4206727 
           text: macOS 
-        - url: hhttps://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-ios/ba-p/4207783
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-ios/ba-p/4207783
           text: iOS
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-android/ba-p/4207786
           text: Android
