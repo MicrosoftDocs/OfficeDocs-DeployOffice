@@ -27,7 +27,7 @@ Before you deploy, be sure to [review the system requirements](https://www.micro
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same device. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
   
-# [Deploy a subscription version of Visio](#tab/subscription)
+# [Visio subscription](#tab/subscription)
 
 Here are the general steps to deploy a subscription version of Visio to users in your organization:
   
@@ -50,7 +50,7 @@ If you want to have more control over how the subscription version of Visio is d
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy the subscription version of Visio.
 
-# [Deploy Visio LTSC 2021](#tab/ltsc2021)
+# [Visio LTSC 2021](#tab/ltsc2021)
 
 Here are the general steps to deploy Visio LTSC Professional 2021 or Visio LTSC Standard 2021 to users in your organization:
   
@@ -67,7 +67,7 @@ If you already use other tools to deploy software to your users, such as Microso
 > - Visio LTSC 2021 is installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with Visio LTSC 2021.
 
-# [Deploy a volume licensed version of Visio 2019](#tab/ltsc2019)
+# [Visio 2019](#tab/ltsc2019)
 
 Here are the general steps to deploy a volume licensed version of Visio Professional 2019 or Visio Standard 2019 to users in your organization:
   
@@ -84,7 +84,7 @@ If you already use other tools to deploy software to your users, such as Microso
 > - Volume licensed versions of Visio 2019 are installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with volume licensed versions of Visio 2019.
 
-# [Deploy a volume licensed version of Visio 2016](#tab/2016)
+# [Visio 2016](#tab/2016)
 
 Here are the general steps to deploy a volume licensed version of Visio Professional 2016 or Visio Standard 2016 to users in your organization:
   
@@ -100,6 +100,7 @@ If you already use other tools to deploy software to your users, such as Microso
   
 > [!NOTE]
 > The Office Customization Tool (OCT) is only available for versions of Visio 2016 that are purchased as part of a volume licensing agreement. The OCT can't be used for retail versions of Visio 2016, such as versions bought at a retail store or online.
+---
   
 ## Configure user settings for Visio by using Group Policy
 
