@@ -31,7 +31,9 @@ Before you deploy, be sure to [review the system requirements](https://www.micro
 
 The following tabs provide guidance on how to deploy Visio depending on the version you have. Select the tab that corresponds to your version of Visio to ensure you follow the correct deployment steps.
   
-# [Visio subscription](#tab/subscription)
+# [Subscription of Visio](#tab/subscription)
+
+## Deploy a subscription version of Visio
 
 Here are the general steps to deploy a subscription version of Visio to users in your organization:
   
@@ -56,6 +58,8 @@ If you already use other tools to deploy software to your users, such as Microso
 
 # [Visio LTSC 2024](#tab/ltsc2024)
 
+## Deploy Visio LTSC 2024
+
 To deploy Visio LTSC Professional 2024 or Visio LTSC Standard 2024 to users in your organization, follow these general steps:
 
 1. Purchase Visio LTSC 2024 as part of a volume licensing agreement.
@@ -73,6 +77,8 @@ If you use other tools, such as Microsoft Configuration Manager, to deploy softw
 
 # [Visio LTSC 2021](#tab/ltsc2021)
 
+## Deploy Visio LTSC 2021
+
 Here are the general steps to deploy Visio LTSC Professional 2021 or Visio LTSC Standard 2021 to users in your organization:
   
 1. Purchase Visio LTSC 2021 as part of a volume licensing agreement.
@@ -88,7 +94,9 @@ If you already use other tools to deploy software to your users, such as Microso
 > - Visio LTSC 2021 is installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with Visio LTSC 2021.
 
-# [Visio 2019](#tab/ltsc2019)
+# [Visio 2019](#tab/2019)
+
+## Deploy a volume licensed version of Visio 2019
 
 Here are the general steps to deploy a volume licensed version of Visio Professional 2019 or Visio Standard 2019 to users in your organization:
   
@@ -106,6 +114,8 @@ If you already use other tools to deploy software to your users, such as Microso
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with volume licensed versions of Visio 2019.
 
 # [Visio 2016](#tab/2016)
+
+## Deploy a volume licensed version of Visio 2016
 
 Here are the general steps to deploy a volume licensed version of Visio Professional 2016 or Visio Standard 2016 to users in your organization:
   
