@@ -87,13 +87,13 @@ productDirectory:
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/microsoft-365-insider-frequently-asked-questions-faq/ba-p/4206579
           text: Frequently asked questions (FAQs)  
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-windows/ba-p/4206638
-          text: Windows
+          text: Join on Windows
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-macos/ba-p/4206727 
-          text: macOS 
+          text: Join on macOS 
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-ios/ba-p/4207783
-          text: iOS
+          text: Join on iOS
         - url: https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/join-the-microsoft-365-insider-program-on-android/ba-p/4207786
-          text: Android
+          text: Join on Android
      
     - title: Other Insider programs at Microsoft
       imageSrc: /office/media/icons/globe-internet.svg
