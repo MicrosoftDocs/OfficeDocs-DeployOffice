@@ -26,6 +26,10 @@ Before you deploy, be sure to [review the system requirements](https://www.micro
   
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same device. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
+
+## Deploy Visio
+
+The following tabs provide guidance on how to deploy Visio depending on the version you have. Select the tab that corresponds to your version of Visio to ensure you follow the correct deployment steps.
   
 # [Visio subscription](#tab/subscription)
 
@@ -49,6 +53,23 @@ If you want to have more control over how the subscription version of Visio is d
    - We recommend installing Visio without downloading the source files beforehand. This reduces the overall network utilization and removes the need to maintain the source files.
 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy the subscription version of Visio.
+
+# [Visio LTSC 2024](#tab/ltsc2024)
+
+To deploy Visio LTSC Professional 2024 or Visio LTSC Standard 2024 to users in your organization, follow these general steps:
+
+1. Purchase Visio LTSC 2024 as part of a volume licensing agreement.
+
+2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2024 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2024](/office/ltsc/2024/deploy).
+   - We recommend using the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
+   - It’s recommended to install Visio directly without downloading the source files beforehand. This approach reduces overall network utilization and eliminates the need to maintain the source files.
+
+If you use other tools, such as Microsoft Configuration Manager, to deploy software to your users, you can integrate the Office Deployment Tool with those tools to deploy Visio LTSC 2024.
+
+> [!NOTE]
+> - Visio LTSC 2024 is available directly from the Office CDN instead of from the Volume Licensing Service Center.
+> - Visio LTSC 2024 is installed using Click-to-Run rather than Windows Installer (MSI).
+> - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Visio is not applicable for Visio LTSC 2024.
 
 # [Visio LTSC 2021](#tab/ltsc2021)
 
