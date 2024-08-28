@@ -121,6 +121,7 @@ If you already use other tools to deploy software to your users, such as Microso
   
 > [!NOTE]
 > The Office Customization Tool (OCT) is only available for versions of Visio 2016 that are purchased as part of a volume licensing agreement. The OCT can't be used for retail versions of Visio 2016, such as versions bought at a retail store or online.
+
 ---
   
 ## Configure user settings for Visio by using Group Policy
