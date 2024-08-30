@@ -36,6 +36,11 @@ items:
       - name: Policy for admin-controlled migration 
         href: manage/admin-controlled-migration-policy.md   
 
+  - name: Security
+    items:
+      - name: Security and compliance
+        href: security/security-compliance.md     
+
   - name: Troubleshoot
     items:
       - name: Deployment issues in new Outlook
