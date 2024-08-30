@@ -25,7 +25,7 @@ New Outlook supports comprehensive data security solutions to help organizations
 
 In today's collaborative work environment, content moves freely across devices, apps, and services, often beyond the confines of a firewall. To ensure that this content remains secure and compliant with an organization's policies, Microsoft Purview Information Protection offers sensitivity labels. These labels help classify and protect your organization's data without compromising user productivity or collaboration.
 
-The screenshot below shows the sensitivity label in the compose pane of a new message in new Outlook. Users can select the [sensitivity bar](/purview/sensitivity-labels-office-apps#sensitivity-bar) (callout 1) to update the sensitivity label. Users can also apply the **Sensitivity** label from the ribbon (callout 2) by selecting the **Options** tab, and then in the **Tags** group, select **Sensitivity**.
+The screenshot below shows the sensitivity label in the compose pane of a new message in new Outlook. Users can select the [sensitivity bar](/purview/sensitivity-labels-office-apps#sensitivity-bar) (1) to update the sensitivity label. Users can also apply the **Sensitivity** label from the ribbon (2) by selecting the **Options** tab, and then in the **Tags** group, select **Sensitivity**.
 
 :::image type="content" source="media/compose-sensitivity-label.png" alt-text="Screenshot of the compose message pane with the first callout showing the sensitivity label options after selecting the Sensitivity bar. The second callout shows the ribbon location of the Sensitivity icon in the Tags group":::
 
