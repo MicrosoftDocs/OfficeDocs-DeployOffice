@@ -38,7 +38,7 @@ To understand supported capabilities, see [Sensitivity label capabilities in Out
 
 ## Encrypt messages
 
-Users in your organization should use encryption when they need to protect the privacy of an email message. Encrypting an email message in Outlook converts it from readable plain text into scrambled cipher text. Outlook supports two encryption options:
+Users in your organization should use encryption when they need to protect the privacy of an email message. Encrypting an email message in Outlook converts it from readable plain text to scrambled cipher text. Outlook supports two encryption options:
 
 - **Microsoft Purview Message Encryption - Information Rights Management (IRM)** - To use Message Encryption, the sender must have Message Encryption, which is included in the Office 365 Enterprise E3 license.
 - **S/MIME encryption** - Coming soon to new Outlook.
