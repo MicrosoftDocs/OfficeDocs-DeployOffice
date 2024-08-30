@@ -34,6 +34,11 @@ items:
       - name: Exchange Online PowerShell
         href: /powershell/exchange/exchange-online-powershell
 
+  - name: Security
+    items:
+      - name: Security and compliance
+        href: security/security-compliance.md     
+
   - name: Troubleshoot
     items:
       - name: Deployment issues in new Outlook
