@@ -25,9 +25,12 @@ New Outlook supports comprehensive data security solutions to help organizations
 
 In today's collaborative work environment, content moves freely across devices, apps, and services, often beyond the confines of a firewall. To ensure that this content remains secure and compliant with an organization's policies, Microsoft Purview Information Protection offers sensitivity labels. These labels help classify and protect your organization's data without compromising user productivity or collaboration.
 
-From the compose pane in new Outlook select the [sensitivity bar](/purview/sensitivity-labels-office-apps#sensitivity-bar). Users can also apply **Sensitivity** labels from the ribbon. On the **Options** tab, go to the **Tags** group and select **Sensitivity**.
+The screenshot below shows the sensitivity label in the compose pane of a new message in new Outlook. Users can select the [sensitivity bar](/purview/sensitivity-labels-office-apps#sensitivity-bar) (callout 1) to update the sensitivity label. Users can also apply the **Sensitivity** label from the ribbon (callout 2) by selecting the **Options** tab, and then in the **Tags** group, select **Sensitivity**.
 
-:::image type="content" source="media/compose-sensitivity-label.png" alt-text="Screenshot showing sensitivity label in the compose a message pane":::
+:::image type="content" source="media/compose-sensitivity-label.png" alt-text="Screenshot of the compose message pane with the first callout showing the sensitivity label options after selecting the Sensitivity bar. The second callout shows the location of the Sensitivity icon in the ribbon in the Tags group":::
+
+> [!NOTE]
+> IRM protection can't be applied to a message that is already signed or encrypted using S/MIME. To apply IRM protection, S/MIME signature and encryption must be removed from the message. The same applies for IRM-protected messages; users can't sign or encrypt them by using S/MIME.
 
 For more information about Sensitivity labels, check out [Learn about sensitivity labels](/purview/sensitivity-labels).
 
@@ -52,14 +55,6 @@ To learn more about restricting access to content by using sensitivity labels to
 
 > [!NOTE]
 > Double Key encryption is not supported in New Outlook.
-
-## Data loss prevention
-
-Many organizations might have sensitive information under their control that can be shared over email. Examples of sensitive information can include financial information, proprietary data, health records, credit card details, government identification numbers, etc.
-
-Admins can protect this type of sensitive data and reduce the risk of their users inappropriately sharing sensitive data with people who shouldn't have it. This practice is called data loss prevention (DLP).
-
-New Outlook supports data loss prevention. For more information about DLP, see [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
 
 ## Default labels and policies
 
