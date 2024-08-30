@@ -40,7 +40,7 @@ To understand supported capabilities, see [Sensitivity label capabilities in Out
 
 Users in your organization should use encryption when they need to protect the privacy of an email message. Encrypting an email message in Outlook converts it from readable plain text into scrambled cipher text. Outlook supports two encryption options:
 
-- **Microsoft 365 Message Encryption - Information Rights Management (IRM)** - To use Message Encryption, the sender must have Message Encryption, which is included in the Office 365 Enterprise E3 license.
+- **Microsoft Purview Message Encryption - Information Rights Management (IRM)** - To use Message Encryption, the sender must have Message Encryption, which is included in the Office 365 Enterprise E3 license.
 - **S/MIME encryption** - Coming soon to new Outlook.
 
 IRM protection can't be applied to a message that is already signed or encrypted using S/MIME. To apply IRM protection, S/MIME signature and encryption must be removed from the message. The same applies for IRM-protected messages; users can't sign or encrypt them by using S/MIME.
