@@ -25,7 +25,7 @@ To download the VL Serializer, do the following steps:
 
 1. Sign in to the Microsoft 365 admin center and navigate to the **Billing** > [Your products](https://admin.cloud.microsoft/?#/subscriptions) page.
 1. Select the **Volume licensing** tab. (You need to be a volume licensing administrator to access this section.)
-:::image type="content" source="media/volume-license-serializer/volume-licensing.png" alt="Microsoft 365 admin center, highlighting the navigation path to Your products and the Volume licensing section." lightbox="media/volume-license-serializer/volume-licensing-lb.png":::
+:::image type="content" source="media/volume-license-serializer/volume-licensing.png" alt-text="Microsoft 365 admin center, highlighting the navigation path to Your products and the Volume licensing section." lightbox="media/volume-license-serializer/volume-licensing-lb.png":::
 1. Go to the **Download and Keys** tab.
 1. Search for "Office LTSC Standard for Mac 2021" or "Office 2019 for Mac Standard" (depending on your licensed version of Office).
 1. Select the **Download** link in the results panel.
