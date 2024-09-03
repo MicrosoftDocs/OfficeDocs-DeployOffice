@@ -9,7 +9,7 @@ description: Explains how updates are installed.
 ms.date: 09/18/2024
 ---
 <!--This file is shared by ltsc/2024/update.md, ltsc/2024/update.md. Headings are driven by article context.-->
-Click-to-Run updates Office differently than Windows Installer (MSI). Here’s how Office updates work:
+Here’s how Office updates work:
 
 - When Microsoft releases updates for Office, a new build is made available on the Office Content Delivery Network (CDN). This build includes the latest security and quality updates.
 - By default, Office is configured to automatically receive updates from the Office CDN. You can change this setting. For more information, see [Configure where Office LTSC gets updates from](#update-location).

@@ -15,12 +15,10 @@ ms.date: 09/16/2024
 
 # Update Office LTSC 2024
 
-Once you deploy Office LTSC 2024, including Project and Visio, it's important to keep it up to date. Microsoft regularly releases security updates and quality improvements, including updates that enhance stability and performance. Office LTSC 2024 typically receives updates once a month, typically on the second Tuesday.
+Once you deploy Office LTSC 2024, including Project and Visio, it's important to keep it up to date. Microsoft regularly releases security updates and quality improvements, including updates that enhance stability and performance. Office LTSC 2024 typically receives updates once a month on the second Tuesday.
 
 > [!NOTE]
-> Office LTSC 2024 doesn't receive new features after it's released. To access new Office features on an ongoing basis, consider transitioning to a Microsoft 365 (or Office 365) plan that includes Office.
-
-Office LTSC 2024 uses Click-to-Run technology, rather than Windows Installer (MSI), for installation and updates.
+> Office LTSC 2024 doesn't receive new features after it's released. To access new Office features on an ongoing basis, consider transitioning to a Microsoft 365 plan that includes Office.
 
 ## How Office LTSC 2024 gets updated
 
