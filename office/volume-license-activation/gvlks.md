@@ -36,7 +36,6 @@ By default, volume licensed versions of Office, such as Office LTSC 2024, are in
 |Excel LTSC 2024 |F4DYN-89BP2-WQTWJ-GR8YC-CKGJG|
 |Outlook LTSC 2024 |D2F8D-N3Q3B-J28PV-X27HD-RJWB9|
 |PowerPoint LTSC 2024 |CW94N-K6GJH-9CTXY-MG2VC-FYCWP|
-|Publisher LTSC 2024 |(No GVLK provided in your data)|
 |Skype for Business LTSC 2024 |4NKHF-9HBQF-Q3B6C-7YV34-F64P3|
 |Word LTSC 2024 |MQ84N-7VYDM-FXV7C-6K7CC-VFW9J|
 
