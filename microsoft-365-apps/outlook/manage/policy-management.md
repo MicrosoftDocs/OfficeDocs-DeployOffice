@@ -73,14 +73,24 @@ In EAC, select > **Roles** > **Owa web app policies**. Open each policy details 
 - Working Hours, Work Week, Shorten appointments and meetings, etc. <br>
 For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/exchange/set-mailboxcalendarconfiguration). 
 
-## Automatically configure account based on Active Directory Primary SMTP address (coming soon)
-Admins are advised to configure the new policy for an easier account setup process on managed devices and to guarantee that company policies are always respected. 
+## Automatically configure account based on Active Directory Primary SMTP address
+Admins are advised to configure the new policy for an easier account setup process on managed devices and to guarantee that company policies are always respected as this policy setting allows admins to control which account will be used as the Primary Account in Outlook for Windows.
 
-Admins can set the policy *Automatically configure accounts based on Active Directory Primary SMTP* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** with the SMTP address that should be automatically configured. 
+Admins can set the policy *Require the Primary Account to match the Windows signed-in account* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** 
 
-If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it. 
+If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it.
 
-By default, no default email address is suggested.  
+If you disable or don't configure this policy setting, users are not restricted in their choice of Primary Account.
+
+By default, no default email address is suggested.
+
+If the user had already added their personal accounts before this policy gets set, when this policy is detected the personal accounts will be disabled.
+
+This could be used in conjunction with the OWA Mailbox Policy "PersonalAccountsEnabled=false" that will block users to add their personal accounts to new Outlook.
+
+> [!IMPORTANT]
+> Note that this feature uses OneAuth therefore EntraID or Workplace join or Office activation on Local AD Join environments are required.
+> 
 
 ## Specify what attachments can be downloaded
 By default, new Outlook for Windows allows you to open attached Word, Excel, PowerPoint, text files, and many media files directly. The files you open vary depending on the account settings. Admins can configure the list of file name extensions that you can open in new Outlook for Windows using the cmdlets [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy)  - `AllowedFileTypes` and `BlockedFileTypes`. 
