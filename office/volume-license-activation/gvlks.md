@@ -11,17 +11,34 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: Lists the Generic Volume License Keys (GVLKs) used to activate volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio. 
-ms.date: 04/19/2024
+ms.date: 09/18/2024
 ---
 
 # GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
+***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
 
-By default, volume licensed versions of Office, such as Office LTSC 2021, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
+By default, volume licensed versions of Office, such as Office LTSC 2024, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
   
 > [!IMPORTANT]
 > These license keys can't be used to activate your personal copy of Office at home. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+
+## GVLKs for Office LTSC 2024
+|**Product**|**GVLK**|
+|:-----|:-----|
+|Office LTSC Professional Plus 2024 |XJ2XN-FW8RK-P4HMP-DKDBV-GCVGB|
+|Office LTSC Standard 2024 |V28N4-JG22K-W66P8-VTMGK-H6HGR|
+|Project Professional 2024 |FQQ23-N4YCY-73HQ3-FM9WC-76HF4|
+|Project Standard 2024 |PD3TT-NTHQQ-VC7CY-MFXK3-G87F8|
+|Visio LTSC Professional 2024 |B7TN8-FJ8V3-7QYCP-HQPMV-YY89G|
+|Visio LTSC Standard 2024 |JMMVY-XFNQC-KK4HK-9H7R3-WQQTV|
+|Access LTSC 2024 |82FTR-NCHR7-W3944-MGRHM-JMCWD|
+|Excel LTSC 2024 |F4DYN-89BP2-WQTWJ-GR8YC-CKGJG|
+|Outlook LTSC 2024 |D2F8D-N3Q3B-J28PV-X27HD-RJWB9|
+|PowerPoint LTSC 2024 |CW94N-K6GJH-9CTXY-MG2VC-FYCWP|
+|Publisher LTSC 2024 |(No GVLK provided in your data)|
+|Skype for Business LTSC 2024 |4NKHF-9HBQF-Q3B6C-7YV34-F64P3|
+|Word LTSC 2024 |MQ84N-7VYDM-FXV7C-6K7CC-VFW9J|
 
 ## GVLKs for Office LTSC 2021
 |**Product**|**GVLK**|
