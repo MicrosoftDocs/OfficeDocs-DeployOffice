@@ -18,16 +18,17 @@ ms.date: 09/18/2024
 
 ***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016, including Project and Visio*
 
+By default, volume licensed versions of Office, such as Office LTSC 2024, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
+
 > [!IMPORTANT]
 > These license keys can't be used to activate your personal copy of Office at home. For information about product keys for a personal copy of Office, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
-
-By default, volume licensed versions of Office, such as Office LTSC 2024, are installed with a Generic Volume License Key (GVLK). The GVLK enables Office to automatically discover and activate against your Key Management Service (KMS) host computer or Active Directory infrastructure.
   
+## GVLKs for Office LTSC 2024
+
 <!--Using include for publisher-deprecation--> 
 > [!NOTE]
 > [!INCLUDE[publisher-deprecation.md](../includes/publisher-deprecation.md)]
 
-## GVLKs for Office LTSC 2024
 |**Product**|**GVLK**|
 |:-----|:-----|
 |Office LTSC Professional Plus 2024 |XJ2XN-FW8RK-P4HMP-DKDBV-GCVGB|
