@@ -43,7 +43,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Volume activation of Office
-            url: ../../volume-license-activation/plan-volume-activation-of-office.md
+            url: ../../volume-license-activation/plan-volume-activation-of-office.md?toc=/office/ltsc/2021/toc.json
       - linkListType: tutorial
         links:
           - text: Configure a KMS host computer

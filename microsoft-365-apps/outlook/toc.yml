@@ -1,11 +1,15 @@
 items:
-  - name: New Outlook for Windows
+  - name: Welcome to new Outlook for Windows
     href: overview-new-outlook.md
 
   - name: Get started
     items:
       - name: Product availability
         href: get-started/guide-product-availability.md
+      - name: Licensing options
+        href: get-started/licensing-options.md
+      - name: Plan migration
+        href: get-started/migration-planning.md
       - name: Deploy new Outlook
         href: get-started/deployment-new-outlook.md
       - name: Control new Outlook installation
@@ -15,8 +19,8 @@ items:
           - name: Identify COM add-ins in your organization
             href: get-started/state-of-com-add-ins.md
           - name: Migrate from COM to web add-ins
-            href: get-started/migrate-com-to-web-addins.md            
-          - name: Automatically install web add-in counterparts
+            href: get-started/migrate-com-to-web-addins.md
+          - name: Install web add-in counterparts
             href: get-started/install-web-add-ins.md
       - name: Supported accounts
         href: get-started/supported-account-types.md
@@ -29,6 +33,13 @@ items:
         href: manage/policy-management.md
       - name: Exchange Online PowerShell
         href: /powershell/exchange/exchange-online-powershell
+      - name: Policy for admin-controlled migration 
+        href: manage/admin-controlled-migration-policy.md   
+
+  - name: Security
+    items:
+      - name: Security and compliance
+        href: security/security-compliance.md     
 
   - name: Troubleshoot
     items:

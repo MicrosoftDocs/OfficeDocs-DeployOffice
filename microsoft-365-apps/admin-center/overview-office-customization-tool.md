@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "The Office Customization Tool creates the configuration files that are used to deploy Office in large organizations."
-ms.date: 03/29/2024
+ms.date: 08/20/2024
 ---
 
 # Overview of the Office Customization Tool
@@ -57,7 +57,7 @@ Follow these steps to create a configuration file that can be used by the Office
 12. Choose whether to automatically upgrade the architecture. For more information, see [Change a Microsoft 365 Apps installation from 32-bit to 64-bit](../deploy/change-bitness.md).
 13. In **Licensing and activation** section, choose whether to automatically accept the license terms.
 14. If you are deploying a volume-licensed version of Office, Visio, or Project, specify the appropriate license key settings. Microsoft 365 Apps is not volume licensed and does not require a KMS or MAK activation. For more information, see [Overview of volume activation of Office](/office/volume-license-activation/plan-volume-activation-of-office).
-15. Choose how to activate the product, where it be **User based**, **Shared Computer**, or **Device based**. For more infomation, see [Overview of licensing and activation in Microsoft 365 Apps](../licensing-activation/overview-licensing-activation-microsoft-365-apps.md), [Overview of shared computer activation for Microsoft 365 Apps](../deploy/overview-office-deployment-tool.md), and [Device-based licensing for Microsoft 365 Apps for enterprise](../licensing-activation/device-based-licensing.md)
+15. Choose how to activate the product, whether it is **User based**, **Shared Computer**, or **Device based**. For more information, see [Overview of licensing and activation in Microsoft 365 Apps](../licensing-activation/overview-licensing-activation-microsoft-365-apps.md), [Overview of shared computer activation for Microsoft 365 Apps](../deploy/overview-office-deployment-tool.md), and [Device-based licensing for Microsoft 365 Apps for enterprise](../licensing-activation/device-based-licensing.md)
 16. In the **General** section, type your organization name and a description for this particular configuration. For example, you might want to use this file to install the 64-bit version of Office for your finance department.
 17. In the **Application preferences** section, choose what preferences to apply when deploying Office. You can search for a setting, filter the preferences by Office app, and learn more about each setting by selecting it and reviewing the detailed description.
 18. Select **Finish**, review the configured settings in the right-hand pane, and then select **Export**.
@@ -86,11 +86,8 @@ To work with configuration files in the cloud, sign in to the [Microsoft 365 App
 
 - To create a new file, select **Create**, create a configuration file, and then select **Done**. The configuration file is automatically saved to the cloud as part of your tenant.
 - To edit an existing file, select the name of the file, make your changes, and then select **Done**.
-- To get a link to a configuration file, select the file, select **Get Link**, and then select **Copy**. You can use the link to refer to the configuration file when you use the Office Deployment Tool. Note that the link will expire after two years.
 
-When running the Office Deployment Tool, you refer to the cloud-based configuration file by including the link in quotes. To deploy with the ODT, for example, use `setup.exe /configure "link"`.
-
-You can also copy, upload, or download configuration files from the **Device Configuration** page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
+You can copy, upload, or download configuration files from the **Device Configuration** page. For example, you can create a baseline configuration file and then create copies of that baseline for custom configurations.
 
 ## Define application preferences
 

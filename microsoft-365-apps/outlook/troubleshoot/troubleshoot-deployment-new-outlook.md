@@ -6,12 +6,14 @@ manager: triciag
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
-ms.collection: Tier3
+ms.collection:
+- Tier3
+- deploy-new-outlook
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides detailed solutions for troubleshooting deployment and installation issues encountered when transitioning to the new Outlook for Windows"
-ms.date: 12/13/2023
+ms.date: 08/01/2024
 ---
 
 # Troubleshoot deployment issues in new Outlook
@@ -98,8 +100,14 @@ Ensure there are no security policies or software blocking executables from runn
 
 ### Delivery optimization
 Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. [Reset delivery optimization key](/windows/deployment/do/waas-delivery-optimization-reference#download-mode):
+# [Windows 11](#tab/windows11)
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
-- Delete the key: DODownloadMode
+- Setting the value for DODownloadMode to 100 (bypass) may cause installation to fail, as the bypass (100) setting is deprecated. Set this value to 0 instead.
+
+# [Windows 10](#tab/windows10)
+- HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization
+- Modify the regkey value: DODownloadMode to 0
+---
 
 ## Other deployment options
 #### Microsoft store is blocked

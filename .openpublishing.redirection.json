@@ -397,6 +397,11 @@
     },
     {
       "source_path": "DeployOffice/privacy/index.md",
+      "redirect_url": "/microsoft-365-apps/privacy/overview-privacy-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/privacy/index.md",
       "redirect_url": "overview-privacy-controls",
       "redirect_document_id": false
     },
@@ -677,7 +682,7 @@
     },
     {
       "source_path": "DeployOffice/admincenter/update-deadline.md",
-      "redirect_url": "/deployoffice/admincenter/servicing-profile#set-an-update-deadline",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update#deadline",
       "redirect_document_id": false
     },
     {
@@ -687,7 +692,7 @@
     },
     {
       "source_path": "DeployOffice/admincenter/update-exclusion-dates.md",
-      "redirect_url": "/deployoffice/admincenter/servicing-profile#set-update-exclusion-dates",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update#exclusion-windows",
       "redirect_document_id": false
     },
     {
@@ -787,7 +792,7 @@
     },
     {
       "source_path": "DeployOffice/other/devices-updating-servicing-profile.md",
-      "redirect_url": "/deployoffice/updates/overview-update-channels",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
     },
     {
@@ -1097,7 +1102,7 @@
     },
     {
       "source_path": "DeployOffice/updates/move-devices-channel-servicingprofiles.md",
-      "redirect_url": "/DeployOffice/updates/change-channel-for-copilot",
+      "redirect_url": "/microsoft-365-apps/updates/change-channel-for-copilot",
       "redirect_document_id": false
     },
     {
@@ -1137,7 +1142,7 @@
     },
     {
       "source_path": "DeployOffice/other/coming-soon-to-microsoft-365-admin-center.md",
-      "redirect_url": "/DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
     },
     {
@@ -1317,7 +1322,7 @@
     },
     {
       "source_path": "DeployOffice/index.yml",
-      "redirect_url": "/microsoft-365-apps/deploy/index",
+      "redirect_url": "/microsoft-365-apps/deploy/deployment-guide-microsoft-365-apps",
       "redirect_document_id": false
     },
     {
@@ -1362,12 +1367,12 @@
     },
     {
       "source_path": "DeployOffice/admincenter/servicing-profile.md",
-      "redirect_url": "/microsoft-365-apps/admin-center/servicing-profile",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
     },
     {
       "source_path": "DeployOffice/admincenter/coming-soon-to-microsoft-365-admin-center.md",
-      "redirect_url": "/microsoft-365-apps/admin-center/coming-soon-to-microsoft-365-admin-center",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
     },
     {
@@ -1592,7 +1597,7 @@
     },
     {
       "source_path": "DeployOffice/fieldnotes/adopt-servicing-profiles.md",
-      "redirect_url": "/microsoft-365-apps/best-practices/adopt-servicing-profiles",
+      "redirect_url": "/microsoft-365-apps/best-practices/adopting-cloud-update",
       "redirect_document_id": false
     },
     {
@@ -2358,6 +2363,116 @@
     {
       "source_path": "DeployOffice/preview-ltsc2024/overview-mac-preview.md",
       "redirect_url": "/office/ltsc/preview/overview-mac-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/enable-auto-release.md",
+      "redirect_url": "/microsoft-365/places/enable-auto-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/services-in-places.md",
+      "redirect_url": "/microsoft-365/places/services-in-places",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/configure-the-ios-app.md",
+      "redirect_url": "/microsoft-365/places/configure-the-ios-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/enabling-places-finder.md",
+      "redirect_url": "/microsoft-365/places/enabling-places-finder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/connected-buildings.md",
+      "redirect_url": "/microsoft-365/places/connected-buildings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/places-analytics.md",
+      "redirect_url": "/microsoft-365/places/places-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/setting-up-desk-workspaces-in-places-finder.md",
+      "redirect_url": "/microsoft-365/places/setting-up-desk-workspaces-in-places-finder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/understanding-work-location.md",
+      "redirect_url": "/microsoft-365/places/understanding-work-location",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/places-known-issues.md",
+      "redirect_url": "/microsoft-365/places/places-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/deployment-guide-for-places.md",
+      "redirect_url": "/microsoft-365/places/deployment-guide-for-places",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/opt-in-places-preview.md",
+      "redirect_url": "/microsoft-365/places/opt-in-places-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/get-placev3.md",
+      "redirect_url": "/microsoft-365/places/powershell/get-placev3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/set-placev3.md",
+      "redirect_url": "/microsoft-365/places/powershell/set-placev3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/new-place.md",
+      "redirect_url": "/microsoft-365/places/powershell/new-place",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/connect-microsoftplaces.md",
+      "redirect_url": "/microsoft-365/places/powershell/connect-microsoftplaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/initialize-places.md",
+      "redirect_url": "/microsoft-365/places/powershell/initialize-places",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/powershell/remove-place.md",
+      "redirect_url": "/microsoft-365/places/powershell/remove-place",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "DeployOffice/places/get-started/quick-setup-buildings-floors.md",
+      "redirect_url": "/microsoft-365/places/get-started/quick-setup-buildings-floors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/admin-center/servicing-profile.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/best-practices/adopt-servicing-profiles.md",
+      "redirect_url": "/microsoft-365-apps/best-practices/adopting-cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/admin-center/coming-soon-to-microsoft-365-admin-center.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-apps/admin-center/message-center-post/signup-for-cloud-update.md",
+      "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
     }
   ]

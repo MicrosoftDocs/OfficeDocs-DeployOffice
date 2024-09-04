@@ -42,7 +42,7 @@
         "Deploy Office"
       ],
       "feedback_system": "Standard",
-            "feedback_product_url": "https://techcommunity.microsoft.com",
+      "feedback_product_url": "https://techcommunity.microsoft.com",
       "titleSuffix": "Deploy Office",
       "contributors_to_exclude": [
         "rjagiewich",
@@ -50,7 +50,7 @@
         "jborsecnik",
         "American-Dipper",
         "garycentric",
-      	"beccarobins",
+        "beccarobins",
         "v-stchambers",
         "shdyas",
         "Stacyrch140",
@@ -60,7 +60,9 @@
         "jwhit-MSFT",
         "samanro",
         "dstrome",
-        "robmazz"
+        "robmazz",
+        "padmagit77",
+        "aditisrivastava07"
       ]
     },
     "fileMetadata": {

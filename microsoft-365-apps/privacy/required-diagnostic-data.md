@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 07/01/2024
+ms.date: 08/02/2024
 ---
 
 # Required diagnostic data for Office
@@ -2070,6 +2070,10 @@ The following fields are collected:
 
 - **component_name** - the name of the component/view that is active. For example, "Other inbox"
 
+- **Days_Since_Last_Ad_Seen** - Days since last ad seen.
+
+- **Days_Since_Last_Ad_Seen_Excl_Focused** - Days since last ad seen, excluding ad placements in Focused inbox.
+
 - **taskId** - TaskId gives us the current instance’s taskId. This will be required in multi-instance environment if user wants to launch same instances (Calendar, Calendar or Mail, Mail) side by side
 
 
@@ -3161,6 +3165,37 @@ The following fields are collected:
 
 - **SessionID** - Globally Unique Identifier to connect events by session 
 
+#### Office.Android.DocsUI.Views.SignInBottomSheetExp
+
+This event is triggered whenever an unsigned user boots the app and is presented with a sign in. The event is collected to identify potential issues in the sign in flow, whether it's Single Sign-On (SSO), manual sign in, or sign up.
+
+The following fields are collected:
+ 
+- **mBottomSheetState** - Indicates the mode of user signing in the app.
+
+- **mDiscoveredSSOAccountInfos.size** - Indicates the number of valid accounts found via SSO.
+
+- **mSignInBottomSheetAccountsSearchBeginTime** - Indicates time taken by user to click any CTA since app launch.
+
+- **mSignInBottomSheetADALSSOAccountsCount** - Indicates the number of valid ADAL accounts found via SSO.
+
+- **mSignInBottomSheetDismissTime** - Indicates time taken in dismissal of SignInBottomSheet UI post signin completion since app launch.
+
+- **mSignInBottomSheetMSASSOAccountsCount** - Indicates the number of valid MSA accounts found via SSO.
+
+- **mSignInBottomSheetNonSSOFlowBeginTime** - Indicates time taken to start Non-SSO flow post Account discovery since app launch.
+
+- **mSignInBottomSheetOnSSOAccountDiscoveryTime** - Indicates time taken in account discovery for SSO since app launch.
+
+- **mSignInBottomSheetOnSSOCompletionTime** - Indicates time taken in for SSO since app launch.
+
+- **mSignInBottomSheetShowTime** - Indicates time taken by SignInBottomSheet UI to load since app launch.
+
+- **mSignInBottomSheetSISUStartTime** - Indicates time taken to start Non-SSO flow since app launch.
+
+- **mSignInBottomSheetValidSSOAccountsCount** - Indicates the number of accounts found via SSO.
+
+
 #### Office.Android.EarlyTelemetry.AdInfraEvent
 
 *[This event was previously named Office.Android.AdInfraEvent.]*
@@ -3478,6 +3513,22 @@ The following fields are collected:
 - **Data_UnpackLinkHint** – Enumeration representing potential user action based on unpack link.
 
 - **Data_UnpackLinkPromptResult** – Enumeration representing response of unpack link prompt.
+
+#### Office.Apple.AccountTransferIOS
+
+The event is triggered when the application shows the Account Transfer flow on mobile devices. Data is used to determine the cause of sign-in failures and identify errors.
+
+The following fields are collected:
+
+- **ErrorCode** - An enumerator value indicating the error (if any) that occurred during the Account Transfer execution.
+
+- **ErrorDomain** - A string that identifies the domain (class of error) from the error that occurred during the execution.
+
+- **EventCode** - An enumerator value indicating the ending event for the Account Transfer execution.
+
+- **IsFirstRun** - Boolean flag indicating if Account Transfer was executed the first time the app is launched. Allows us to identify if the execution during the first app launch is contributing to errors.
+
+- **IsFREInterrupt** - Boolean flag indicating if Account Transfer was executed while the First Run Experience flow was in progress. Allows us to identify if the First Run Experience flow is contributing to errors.
 
 #### Office.Apple.ActivatePerpetual
 
@@ -4788,9 +4839,13 @@ The following fields are collected:
 
 - **Data_TimeSplitMeasurements** - A string of time split measurements from Excel code involved in sending and receiving the Python script.
 
+- **Python_Jupyter_EnsureJupyterClientSource** - Integer denoting the source that initiated the preload Python service environment (for example, Python center taskpane, Python editor taskpane, etc.)
+
 - **Python_Jupyter_EnterOfficepyTimepointMilliseconds** - Integer indicating the time point to call officepy method to handle execute python script.
 
 - **Python_Jupyter_EnvironmentCreationBeginTimepointMilliseconds** - Integer indicating the time point to begin creating jupyter environment.
+
+- **Python_Jupyter_EnvironmentPreloadStartTimepointMilliseconds**  - Integer denoting the time point at which the preload Python service environment starts.
 
 - **Python_Jupyter_GetEnvironmentDefinitionsEndTimepointMilliseconds** - Integer denoting the time point at which the OfficePy has fetched the environment options.
 
@@ -6806,6 +6861,8 @@ The following fields are collected:
 - **Data_Result** - The status of the operation being performed, ex: true:success, false:failure
 
 - **Data_Type** - Type of file operation (open, close, or save) 
+
+- **IsMIPProtected** - Boolean indicating whether file is MIP (Microsoft Information Protection) encrypted or not.
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOperations (on iOS)
 
@@ -15930,6 +15987,94 @@ The following fields are collected:
 
 - **Data_Message** - A human-readable description of the error
 
+#### Office.DesignerApp.App.SharedDesign
+
+This event is triggered when designs or images are shared by clicking on share button. The event log captures essential data regarding the Export feature's performance, including metrics on quality of service, usage, latency, and any encountered errors. This information is crucial for ensuring the Export function operates effectively.
+
+The following fields are collected:
+
+- **Core** - Indicates whether some operation has to be considered export operation or not.
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **DesignId** - GUID of design created by Designer.
+
+- **ElapsedTime** - Logs time elapsed in completing action.
+
+- **EndPoint** - Used to identify the appropriate Designer screen in which design/image creation was performed.
+
+- **Error** - Logs error occurred during any activity.
+
+- **ExportDuration** - Duration of exported item.
+
+- **ExportTime** - Time taken in export operation.
+
+- **FileType** - Type of file exported.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **HasAnimation** - Exported asset has animation or not.
+
+- **HasVideos** - Exported asset has videos in it or not.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **IsCached** - Logs whether returned results is cached result or not.
+
+- **IsExportPreviewClicked** - Export preview screen was dismissed by click or system.
+
+- **IsMotion** - Logs whether exported item had motion element or not.
+
+- **IsSuccessful** - Logs success status true or false of action.
+
+- **ItemType** - Type of item size exported.
+
+- **Locale** - Locale of user.
+
+- **MediaType** - Type of media being exported.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **NumberOfPages** - number of pages in exported design.
+
+- **persistentId** - Persistent GUID of design created by Designer.
+
+- **PostedPlatforms** - Logs the platform where design/image was exported.
+
+- **PublishTime** - Time taken in publish operation.
+
+- **RemoveWaterMark** - Watermark while exporting was removed or not.
+
+- **RequestId** - GUID to uniquely identify network request.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **ShareSurface** - Logs the place where export took place.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeToSaveOrPublish** - Time taken in saving the design/image.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **TotalPages** - Total number of pages of the exported design.
+
+- **TransparentBG** - Whether bg was removed or not while exporting the design/image.
+
+- **Trigger** - What was the trigger for the design which was exported.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
 
 #### Office.Extensibility.RichApiMethodInvocation
 
@@ -16238,6 +16383,14 @@ The following fields are collected:
 
 - **Doc_RenderDurationms** - Time to render a pdf file
 
+- **IsMIPProtected** - Boolean indicating whether file is MIP (Microsoft Information Protection) encrypted or not.
+
+- **MIPEnryptionHandlerInitTime** - The field indicating time to initialize the MIP (Microsoft Information Protection) encryption handler.
+
+- **MIPFirstBlockDecryptionTime** - The field indicating time to decrypt the first block of file.
+
+- **MipFirstPageRenderCompletionTS** - Timstamp at which first page render is completed.
+
 - **Result** - The result of file open. It can be either success, failure and cancelled. 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on iOS)
@@ -16406,11 +16559,17 @@ The following fields are collected:
 
 - **DocSyncBackedType** - When opening a document, an indicator as to the type of document (local or service based)
 
+- **DurationPreloaded** - Duration spent in boot activity as part of preloading.
+
 - **DurationPreloading** - The duration in microseconds from when the process was created by the operating system to when preloading completes and the app sits and waits for activation by the user.
 
 - **DurationPreloadingActivation** - The duration in microseconds from when the user activates a preloaded app to when the boot activity completes.
 
 - **DurationPreloadingWaitLoop** - The duration in microseconds that the app sits waiting for activation by the user after preloading.
+
+- **DurationProcessCreationAfterReboot** - Duration elapsed in creating Word process after reboot the machine.
+
+- **DurationResumed** - Duration spent in boot activity as part of resume (after activation).
 
 - **DurationSecondaryHandOff** - The time taken by the secondary instance of the app to complete the handoff to the preloaded primary instance.
 

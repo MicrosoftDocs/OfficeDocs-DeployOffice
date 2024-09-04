@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 07/01/2024
+ms.date: 08/02/2024
 ---
 
 # Essential services for Office
@@ -18245,6 +18245,15 @@ The following fields are collected:
 - **PurchasePlatform** - String - platform where the user purchased their subscription (iOS vs Windows vs Android).
 
 - **SubscriptionExpirationDateTime** - String - Date and time when the subscription will expire.
+
+
+### Office.Apple.Licensing.AutoRenewToastVisible
+
+This event is triggered when the user lands on the "Subscription Renew Bizbar Notification" user interface (UI). The data is used to confirm that the notification was viewed by the user.
+
+The following fields are collected:
+
+- None
 
 
 ### Office.Apple.Licensing.AutoRenewViewVisible

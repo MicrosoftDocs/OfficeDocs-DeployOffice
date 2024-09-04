@@ -6,7 +6,9 @@ manager: triciag
 audience: ITPro
 ms.topic: overview
 ms.service: outlook
-ms.collection: Tier3
+ms.collection:
+- Tier3
+- deploy-new-outlook
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
@@ -16,7 +18,7 @@ ms.date: 04/17/2024
 
 # Migrate from COM add-ins to web add-ins
 
-In the new Outlook for Windows, web add-ins are fully supported, with no other work required from partners. COM add-ins aren’t supported in the new Outlook for Windows, but continue to work in classic Outlook for Windows. COM add-ins can manipulate Outlook in many ways that often leads to instability and crashes in Outlook. To ensure Outlook is more stable and robust, web add-ins provide a sandbox environment for add-ins to operate in and have checks and balances in place.
+In the new Outlook for Windows, web add-ins are fully supported, with no other work required from partners. COM add-ins aren't supported in the new Outlook for Windows, but continue to work in classic Outlook for Windows. COM add-ins can manipulate Outlook in many ways that often leads to instability and crashes in Outlook. To ensure Outlook is more stable and robust, web add-ins provide a sandbox environment for add-ins to operate in and have checks and balances in place.
 
 COM add-ins differ from web add-ins in several ways; one example is the use of fixed entry points. Using fixed entry points is intentional to ensure a stable and consistent experience for all Outlook users.
 
@@ -71,11 +73,14 @@ If your organization is currently using web add-ins, no extra effort is required
       | Virtru For Outlook                      | DLP                    | PRIVATE-Virtru                      |
       | Zoom Outlook Plugin                     | Online Meetings        | [Zoom for Outlook Extension](https://appsource.microsoft.com/product/office365/wa104381712)          |
 
-   - If you don’t find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home).
+   - If you don't find your relevant COM add-ins on this list, search for them in the [Microsoft commercial marketplace](https://appsource.microsoft.com/home).
+
+      > [!TIP]
+      > By default, users are given the option to install web add-in counterparts of their existing COM add-ins when they switch to new Outlook for Windows. For more information, see [Install web add-in counterparts of existing COM add-ins in new Outlook for Windows](install-web-add-ins.md). To learn how to prevent web add-in counterparts from being installed when a user switches to new Outlook for Windows, see [Prevent add-ins from being installed during setup](install-web-add-ins.md#prevent-add-ins-from-being-installed-during-setup).
 
    - Some developers build private web add-ins that aren't published to the store. Check with your partners to confirm if they developed or are developing a web add-in.
 
-4. **Explore native Outlook capabilities**. If your mission critical COM add-ins don't have an equivalent web add-in, explore new Outlook’s native capabilities and see if they work for your scenario. Some examples include:
+4. **Explore native Outlook capabilities**. If your mission critical COM add-ins don't have an equivalent web add-in, explore new Outlook's native capabilities and see if they work for your scenario. Some examples include:
 
    | COM Add-in                                  | Native Outlook capability                                          |
    |---------------------------------------------|--------------------------------------------------------------------|
@@ -103,3 +108,12 @@ Our goal is to provide support for core scenarios through a combination of Add-i
 For a full list of scenarios, see [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins).
 
 If you find gaps in the web add-in platform that don't support core workflows like the COM add-in, use [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR30HUvi_P4FFlU1eu9jg8INURUhWVkJHVEpRMURVUzNQWUdJS0g1U1NOOC4u) to share feedback.
+
+## Web add-in FAQs
+
+1. **What are the capabilities supported by web add-ins?**: Outlook web add-ins support many scenarios involving composing and reading emails and events. Web add-in JS APIs support accessing many properties like the email body and details, event body and details, sensitivity labels and many more. It is also possible to launch web add-ins automatically on email compose and many more capabilities are being added to the web add-in platform. Learn more about the supported and upcoming scenarios in [Supported scenarios in Outlook web add-ins](/office/dev/add-ins/outlook/one-outlook#supported-scenarios-in-outlook-web-add-ins).
+
+2. **What are the JS API requirements sets supported in new Outlook?**: Web add-in JS API set upto 1.14 is supported in the new Outlook for Windows. This provides support for spam reporting and phisihing scenarios among several others. Learn more about the JS APIs in this requirement set here: [Outlook API reference](/javascript/api/outlook).
+
+3. **How can spam reporting web add-ins replace the 'Report' button in new Outlook?**: Third-party spam reporting add-ins can replace the **Report** button in new Outlook by making a manifest change. It requires the web add-in manifest to set xsi:type attribute of the ExtensionPoint element to ReportPhishingCommandSurface. More details on the implementation here: [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting#configure-the-manifest).
+ 
