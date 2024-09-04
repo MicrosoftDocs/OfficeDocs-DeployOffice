@@ -45,7 +45,7 @@ Office LTSC 2024 is supported on the following operating systems:
 <sup>*</sup> *For Arm-based devices, Windows 11 is the minimum supported version.*
 
 Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. 
-A `64-bit` version of Office is required for 4K and higher resolutions.
+A 64-bit version of Office is required for 4K and higher resolutions.
 
 For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
 
@@ -112,7 +112,8 @@ For more information about this transition and how to migrate your Excel workboo
 
 #### Microsoft Publisher
 
-With Office LTSC 2024, Microsoft Publisher is no longer included as part of the suite. This change is due to the planned retirement of Publisher, which will no longer be supported after October 2026. For more information, see [Microsoft Publisher will no longer be supported after October 2026](https://support.microsoft.com/office/microsoft-publisher-will-no-longer-be-supported-after-october-2026-ee6302a2-4bc7-4841-babf-8e9be3acbfd7).
+<!--Using include for publisher-deprecation-->
+[!INCLUDE[publisher-deprecation.md](../../includes/publisher-deprecation.md)]
 
 #### Microsoft Teams
 
