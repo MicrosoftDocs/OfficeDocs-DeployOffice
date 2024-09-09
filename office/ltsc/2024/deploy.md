@@ -28,9 +28,6 @@ For an Office LTSC 2024-specific sample, see [Sample configuration.xml file to u
 
 Once you have a copy of the ODT, the next step is to create a configuration.xml file. You can create multiple configuration.xml files to be used with the ODT. For example, you can create a configuration.xml file to download and install the 64-bit version of Office LTSC Professional Plus 2024 in English. Then, you can create a different configuration.xml file to install the 32-bit version of Visio LTSC Professional 2024 in French. When you run the ODT from an elevated command prompt, you specify which configuration.xml file to use.
 
-<!--Using include for use-oct-->
-[!INCLUDE[use-oct.md](../../includes/use-oct.md)]
-
 | Configuration  | configuration.xml setting  | Additional information  |
 | :------------- | :------------------------ | :---------------------- |
 | Where to download the Office installation files to and where to install Office from. For example, \\\server\share (a shared folder on your local network). | SourcePath  | If you don’t specify a SourcePath when installing Office, the ODT looks for the installation files in the folder it’s located in. If it doesn’t find the Office installation files there, it goes to the Office CDN to get the installation files. We recommend that you install Office directly from the Office CDN, if internet connectivity and network bandwidth make that possible. |
@@ -117,10 +114,6 @@ Once the installation is complete, the command prompt will return, and you can o
 
 > [!NOTE]
 > Office LTSC 2024 is installed on the system drive, typically the C:\ drive. The installation location can't be changed.
-
-## Install Office LTSC 2024 by using Configuration Manager
-
-You can also use Microsoft Configuration Manager (current branch) to deploy Office LTSC 2024. The Office 365 Client Installation wizard guides you through the process and builds the configuration.xml file for you. There’s an entry for Office LTSC Professional Plus 2024 in the wizard. On that same page, you can also choose to deploy Project and Visio. To access the wizard, navigate to **Software Library** > **Overview** > **Office 365 Client Management** in the Configuration Manager console.
 
 ## Deploy languages for Office LTSC 2024
 

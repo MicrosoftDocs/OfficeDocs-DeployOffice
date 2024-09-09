@@ -71,13 +71,6 @@ Office LTSC 2024 brings several key updates and improvements compared to previou
 
 For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2024, the information covered in the article about how the policy settings work does apply to Office LTSC 2024.
 
-#### Language support
-
-<!-- Add new language support details for Office LTSC 2024 -->
-
-> [!NOTE]
-> <!-- Add note about language support in Project or Visio -->
-
 #### OpenDocument format 1.4
 
 <!--Using include for odf 1.4 support-->
@@ -160,8 +153,8 @@ Uninstall any existing versions of Office before deploying Office LTSC 2024. Mos
 
 ## Additional information about Office LTSC 2024
 
-- Office LTSC Professional Plus 2024 includes Access, Excel, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, and Word.
-- Access and Publisher aren't available for devices running macOS.
+- Office LTSC Professional Plus 2024 includes Access, Excel, OneNote, Outlook, PowerPoint, and Word. Skype for Business is available as an optional install during setup.
+- Access isn't available for devices running macOS.
 - Office LTSC 2024 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - Office LTSC 2024 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices with 4 GB or more of memory. However, you should assess application compatibility and other factors that might require the use of the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 - After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2024.

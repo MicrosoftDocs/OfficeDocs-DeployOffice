@@ -32,7 +32,7 @@ Office supports KMS host computers running on the following operating systems, d
 
 You can download the appropriate Office Volume License Pack from the Microsoft Download Center:
 
-- [Office LTSC 2024 Volume License Pack](http://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e)
+- [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e)
 - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
 - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
 - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)

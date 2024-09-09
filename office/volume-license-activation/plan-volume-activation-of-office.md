@@ -9,12 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with an overview of the different types of activation, such as KMS and MAK, available for volume licensed versions of Office, Project, and Visio."
-ms.date: 06/21/2024
+ms.date: 09/18/2024
 ---
 
 # Overview of volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+***Applies to:*** *Volume licensed versions of Office LTSC 2024, Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
 Activation is the process of validating software with the manufacturer after it's installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and hasn't been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
@@ -31,7 +31,7 @@ There are three different methods that you can activate volume licensed versions
 
 - [Active Directory-based:](#active-directory-based-activation-of-office) Office on a domain-joined computer is activated through Active Directory.
 
-Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10) and [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
+Which activation method you choose depends on the size, network infrastructure, connectivity, and security requirements of your environment. You can choose to use different activation methods for different versions of Office and for different computers, for example desktops and laptops. Because these three activation methods are also used to activate volume licensed versions of Windows, you might be able to use the same method to activate both Windows and Office. For more information, see [Volume Activation for Windows](/windows/deployment/volume-activation/volume-activation-windows) and [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
 All volume licensed versions of Office, including Project and Visio, have a preinstalled product key, called a Generic Volume License Key (GVLK), that can be used for KMS and Active Directory-based activation. You don't have to enter a product key for each Office installation if you're activating Office by using KMS or Active Directory. If you're activating Office by using MAK, you must enter a product key for each Office installation, but there are ways to automate that.
   
