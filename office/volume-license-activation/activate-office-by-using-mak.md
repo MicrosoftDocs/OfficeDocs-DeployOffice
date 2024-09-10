@@ -28,7 +28,7 @@ There are two ways to activate computers by using MAK:
 
 ## Activate Office LTSC 2024 by using MAK
 
-If you're using MAK to activate Office LTSC 2024, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office LTSC 2024 to the users in your organization. For more information, see [Deploy Office LTSC 2021](../ltsc/2024/deploy.md).
+If you're using MAK to activate Office LTSC 2024, you specify the key in the configuration.xml file used by the Office Deployment Tool when you deploy Office LTSC 2024 to the users in your organization. For more information, see [Deploy Office LTSC 2024](../ltsc/2024/deploy.md).
 
 ## Activate Office LTSC 2021 by using MAK
 
@@ -46,16 +46,16 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
 
 - After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
 
-### Configure MAK activation in the Office Customization Tool (OCT) for Office LTSC 2024, Office LTSC 2021, and Office 2019 
+### Configure MAK activation in the OCT for Office LTSC 2021, and Office 2019 
 
-1. In the [Office Customization Tool](https://config.office.com/deploymentsettings), go to **Licensing and activation**.
-2. In the **Product key** section, select **MAK** next to the Volume License product and enter your MAK key.
+1. In the [Office Customization Tool](https://config.office.com/deploymentsettings), expand **Licensing and activation**.
+2. In the **Product key** section, select **MAK** next to the volume license product and enter your product key.
 
    :::image type="content" source="media/activate-office-by-using-mak/oct-mak-key.png" alt-text="Licensing and activation settings in the Office Customization Tool for Office LTSC Professional Plus 2021 and Visio LTSC Professional 2021, showing options for KMS and MAK." lightbox="media/activate-office-by-using-mak/oct-mak-key-lb.png":::
 
 3. After making any other necessary changes in the OCT, select the **Export** button.
 
-### Configure MAK activation in the Office Customization Tool (OCT) for Office 2016
+### Configure MAK activation in the OCT for Office 2016
 
 1. In the OCT, go to the Licensing and user interface page.
 2. Select Enter another product key, and then in the Product key field, enter the multiple activation key (five sets of five numbers or characters).
