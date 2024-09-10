@@ -42,7 +42,7 @@ If you're using MAK to activate volume licensed versions of Office 2019, you spe
 
 If you're using MAK to activate volume licensed versions of Office 2016, you can enter the key by using one of the following supported methods:
   
-- Before you install Office 2016, you can use the [Office Customization Tool (OCT)](#configure-mak-activation-in-the-office-customization-tool-oct) or the [Config.xml file](#configure-mak-activation-in-the-configxml-file).
+- Before you install Office 2016, you can use the [Office Customization Tool (OCT)](#configure-mak-activation-in-the-oct-for-office-2016) or the [Config.xml file](#configure-mak-activation-in-the-configxml-file).
 
 - After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
 
