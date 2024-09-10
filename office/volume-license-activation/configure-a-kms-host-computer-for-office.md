@@ -9,14 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with steps to configure the Key Management Service (KMS) host computer to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 04/26/2024
+ms.date: 09/18/2024
 ---
 
 # Configure a KMS host computer to activate volume licensed versions of Office
 
-<!--Update for LTSC 2024-->
-
-***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
 To activate volume licensed versions of Office, including Project, and Visio, you must have a Key Management Service (KMS) host computer. You can configure a Windows Server computer to be a KMS host computer by installing the Volume Activation Services role and then running the Volume Activation Tools wizard.
 
@@ -30,13 +28,6 @@ Office supports KMS host computers running on the following operating systems, d
 - Office 2019: At least Windows Server 2012 or at least Windows 8.1 (volume editions)
 - Office 2016: At least Windows Server 2008 R2 or at least Windows 7 Service Pack 1 (volume editions)
 
-You can download the appropriate Office Volume License Pack from the Microsoft Download Center:
-
-- [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e)
-- [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
-- [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
-- [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
-
 ## Configure the KMS host computer
 
 To configure the KMS host computer to activate Office, follow these steps. You must be a member of the Administrators group on the KMS host computer.
@@ -46,12 +37,17 @@ If your KMS host computer has internet access:
 1. Sign in to the Microsoft 365 admin center and go to **Billing > Your products**.  
 1. Select the **Volume licensing** tab (only volume licensing administrators can access this section).  
 1. Go to the **Download and keys** tab, then download the KMS key for each product and version of Office that you want to activate using KMS.
-1. Download and run the appropriate Office Volume License Pack executable from the Microsoft Download Center. Running the executable installs the pack on the KMS host computer and opens the Volume Activation Tools wizard.
+1. Download and run the appropriate Office Volume License Pack executable from the Microsoft Download Center.
+- [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e)
+- [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
+- [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
+- [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
+1. Running the executable installs the pack on the KMS host computer and opens the Volume Activation Tools wizard.
 1. Follow the steps in the wizard and enter your KMS key when prompted.
 1. If a firewall is enabled, ensure port 1688 is open to allow the KMS host service through:
    - Go to **Control Panel** > **System and Security** > **Windows Firewall** (or **Windows Defender Firewall**).
    - Select **Allow an app or feature through Windows Firewall**.
-   - Select **Change Settings**, check **Key Management Service**, and click **OK**.
+   - Select **Change Settings**, check **Key Management Service**, and select **OK**.
 
 If the KMS host computer doesn't have internet access, activate it by telephone.
 

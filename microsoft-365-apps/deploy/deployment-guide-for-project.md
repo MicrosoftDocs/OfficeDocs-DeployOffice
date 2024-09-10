@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
-description: "Provides Office admins with an overview of how to deploy Project, including Project Online Desktop Client and Project 2019, to users in their organization."
+description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
 ms.date: 09/18/2024
 ---
 
@@ -18,6 +18,7 @@ ms.date: 09/18/2024
 How you deploy Project to the users in your organization depends on which version of Project you purchase. A common purchase option for organizations is one of the following versions of Project:
   
 - Project Online Desktop Client, available as a subscription with Project Plan 3 or Project Plan 5.
+- Project Professional 2024 or Project Standard 2024, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2021 or Project Standard 2021, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2019 or Project Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2016 or Project Standard 2016, available as a one-time purchase through a volume licensing agreement.
@@ -116,13 +117,12 @@ If you already use other tools to deploy software to your users, such as Microso
 
 If you want to specify and maintain certain user settings for your Project installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with devices joined to a domain.
   
-The same Group Policy settings work for Project Online Desktop Client, and volume licensed versions of Project, such as Project Professional 2021 or Project Standard 2019.
+The same Group Policy settings work for Project Online Desktop Client, and volume licensed versions of Project.
   
 ## End user resources for Project
 
 To help your users get started with Project, here are some resources to share with them:
 
-- [What's new in Project 2019](https://support.microsoft.com/topic/6be41c8a-c4b2-409a-9ef7-d250377ad3b7)
 - [Project help & learning](https://support.microsoft.com/project)
 - [Get started with Project](https://support.microsoft.com/topic/ed95837e-5675-4f6b-ad2e-7f1fd8524eac#ID0EAABAAA=Project_Desktop&ID0EBBD=Project_Desktop)  
 

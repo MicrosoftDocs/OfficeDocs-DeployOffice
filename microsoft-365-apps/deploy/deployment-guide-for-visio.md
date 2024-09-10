@@ -18,6 +18,7 @@ ms.date: 09/18/2024
 How you deploy Visio to the users in your organization depends on which version of Visio you purchase. A common purchase option for organizations is one of the following versions of Visio:
   
 - Visio desktop app that comes with a Visio Plan 2 subscription.
+- Visio LTSC Professional 2024 or Visio LTSC Standard 2024, available as a one-time purchase through a volume licensing agreement.
 - Visio LTSC Professional 2021 or Visio LTSC Standard 2021, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2019 or Visio Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Visio Professional 2016 or Visio Standard 2016, available as a one-time purchase through a volume licensing agreement.
@@ -116,14 +117,14 @@ If you already use other tools to deploy software to your users, such as Microso
 
 If you want to specify and maintain certain user settings for your Visio installations, you can [download the Group Policy Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) and use them to configure Group Policy settings. Group Policy can be used only with devices joined to a domain.
   
-The same Group Policy settings work for the subscription version of the Visio desktop app, and volume licensed versions of Visio, such as Visio LTSC Professional 2021 or Visio Standard 2019.
+The same Group Policy settings work for the subscription version of the Visio desktop app, and volume licensed versions of Visio.
   
 ## End user resources for Visio
 
 To help your users get started with Visio, here are some resources to share with them:
   
-- [What's new in Visio Professional 2021](https://support.microsoft.com/office/96732c1e-a022-4362-af07-fc817011ced5)
-- [What's new in Visio 2019](https://support.microsoft.com/topic/19b8e98d-9cf9-40ad-9277-eb65e3713a79)
+- [What's new in Visio 2024](https://support.microsoft.com/office/0295be56-187c-4254-9463-1b67dd6e0eb1)
+- [Beginner tutorial for Visio](https://support.microsoft.com/office/bc1605de-d9f3-4c3a-970c-19876386047c)
 - [Visio help & learning](https://support.microsoft.com/visio)
 
 ## Related articles

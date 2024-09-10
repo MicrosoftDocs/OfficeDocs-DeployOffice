@@ -9,16 +9,16 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Key Management Service (KMS) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 04/19/2024
+ms.date: 09/18/2024
 ---
 
 # Activate volume licensed versions of Office by using KMS
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*  
+***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*  
 
 All volume licensed versions of Office, including Project and Visio, have a Generic Volume License Key (GVLK) preinstalled. GVLKs support both Key Management Service (KMS) and Active Directory-based activation. On the KMS host computer configured to support volume activation of Office, you install and enable only one KMS host key to activate all volume licensed versions of Office.
   
-If the KMS host computer is available and properly configured, activation of Office occurs transparently to the user. Office is activated the first time it runs, provided that there are at least four previous activation requests to the KMS host computer. This is because the KMS host computer requires at least five requests before it begins activating clients.
+When the KMS host computer is available and configured correctly, Office activates automatically without user interaction. Office activates the first time it runs, as long as the KMS host computer has received at least four prior activation requests. The KMS host computer requires a minimum of five requests before it starts activating clients.
   
 You don't have to do anything else to enable activation of Office by KMS. KMS clients can locate a KMS host computer automatically by querying DNS for service (SRV) resource records (RRs) that publish the KMS service. For more information, see [How DNS is used to find a KMS host computer](configure-dns-to-activate-office-by-using-kms.md#how-dns-is-used-to-find-a-kms-host-computer).
 
@@ -26,7 +26,7 @@ If the network environment doesn't use SRV RRs, you can manually assign a KMS cl
   
 ## Configure KMS host caching
 
-You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer isn't cached, the KMS client queries DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers will be honored. If the KMS host computer is cached, the KMS client won't query DNS. Instead, it tries to contact the cached KMS host computer that last activated it successfully.
+You can configure whether or not the last used KMS host computer is saved to the cache on the KMS client. If the KMS host computer isn't cached, the KMS client queries DNS every time that activation is attempted. This means that the priority and weight parameters set for KMS host computers is honored. If the KMS host computer is cached, the KMS client won't query DNS. Instead, it tries to contact the cached KMS host computer that last activated it successfully.
 
 To configure KMS host caching, you can use the ospp.vbs script. For more information about the ospp.vbs script, see [Tools to manage volume activation of Office](tools-to-manage-volume-activation-of-office.md).
   
