@@ -9,12 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 04/26/2024
+ms.date: 09/18/2024
 ---
 
 # Tools to manage volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume licensed versions of Office, including Project and Visio. Before you read this article, we recommend that you read the following articles:
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
@@ -243,8 +243,15 @@ The following table shows the command options for activating an AD DS forest by 
 
 Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information, see [Volume Activation Management Tool (VAMT) technical reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 
+### Manage volume activation for Office LTSC 2024 using VAMT
+
+1. Identify the installation folder for VAMT, for example, `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT3`.
+2. Download the Office LTSC 2024 support files from the [Office VAMT download link](https://download.microsoft.com/download/f/1/8/f181a628-aa2c-49ec-be5c-236bbcfa1368/OfficeVAMT.zip).
+3. Copy the `pkeyconfig-office24-client.xrm-ms` and `pkeyconfig-office24-kmshost.xrm-ms` files into the `VAMT3\pkconfig` folder.
+4. Open VAMT and import the `Office24.cilx` file.
+
 > [!NOTE]
-> Office LTSC 2021 and Office 2019 require at least VAMT 3.1.
+> - Office LTSC 2021 and Office 2019 require at least VAMT 3.1.
   
 ## Related articles
 
