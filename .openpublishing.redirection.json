@@ -2474,6 +2474,31 @@
       "source_path": "microsoft-365-apps/admin-center/message-center-post/signup-for-cloud-update.md",
       "redirect_url": "/microsoft-365-apps/admin-center/cloud-update",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "office/ltsc/2021/spla.md",
+      "redirect_url": "/office/ltsc/spla",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "office/ltsc/2021/office-online-server.md",
+      "redirect_url": "/office/ltsc/office-online-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "office/ltsc/preview/overview-ltsc-preview.md",
+      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "office/ltsc/preview/install-ltsc-preview.md",
+      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "office/ltsc/preview/overview-mac-preview.md",
+      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_document_id": false
     }
   ]
 }

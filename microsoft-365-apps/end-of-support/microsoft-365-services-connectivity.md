@@ -12,17 +12,18 @@ search.appverid: MET150
 recommendations: true
 adobe-target: true
 description: "Provides Office admins with information what versions of Office are supported for connecting to Microsoft 365 services and the implications of using older Office clients."
-ms.date: 03/19/2024
+ms.date: 09/18/2024
 ---
 
 # Office versions and connectivity to Microsoft 365 services
 
 The following table lists the Office versions that are supported for connecting to Microsoft 365 services. For example, connecting to Exchange Online, SharePoint Online, or OneDrive.
 
-|Office version |Supported for connecting until this date  |
-|---------|---------|
-|Microsoft 365 Apps |Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions). |
-|Office LTSC 2021  |October 13, 2026 |
+| Office version         | Supported for connecting until this date  |
+|------------------------|-------------------------------------------|
+| Microsoft 365 Apps      | Supported as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions). |
+| Office LTSC 2024        | October 13<sup>th</sup>, 2029             |
+| Office LTSC 2021        | October 13<sup>th</sup>, 2026             |
 
 > [!NOTE]
 > - Support for connection to Microsoft 365 services with Office 2019 and Office 2016 ended on October 10, 2023. 
@@ -78,11 +79,13 @@ As of November 1, 2021, there are minimum versions of Outlook for Windows requir
 - Connecting to Microsoft 365 services using Office 2016 for Mac isn’t supported. Office 2016 for Mac reached its end of support on October 13, 2020.
 - The following versions of Project are supported for connecting to Microsoft 365 services:
   - Project Online Desktop Client *(as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions))*
+  - Project Professional 2024 and Project Standard 2024 *(until October 2029)*
   - Project Professional 2021 and Project Standard 2021 *(until October 2026)*
   - Project Professional 2019 and Project Standard 2019 *(until October 2023)*
   - Project Professional 2016 and Project Standard 2016 *(until October 2023)*
 - The following versions of Visio are supported for connecting to Microsoft 365 services:
   - Visio desktop app that comes with a Visio Plan 2 subscription  *(as long as you’re using a [supported version](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions))*
+  - Visio LTSC Professional 2024 and Visio LTSC Standard 2024 *(until October 2029)*
   - Visio LTSC Professional 2021 and Visio LTSC Standard 2021 *(until October 2026)*
   - Visio Professional 2019 and Visio Standard 2019 *(until October 2023)*
   - Visio Professional 2016 and Visio Standard 2016 *(until October 2023)*

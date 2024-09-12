@@ -42,13 +42,14 @@ To configure Active Directory-based activation, you must have Domain Administrat
 :::image type="content" source="media/activate-office-by-using-active-directory/volume-licensing.png" alt-text="Microsoft 365 admin center, highlighting the navigation path to Your products and the Volume licensing section." lightbox="media/activate-office-by-using-active-directory/volume-licensing-lb.png":::
 4. Go to the **Download and keys** tab and get your KMS key for your version of Office.
 5. Download the appropriate Office Volume License Pack from the Microsoft Download Center:
+    - [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e)
     - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
     - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
     - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
-6. Run the Office Volume License Pack executable file. This installs the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
-7. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
-8. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
-9. On the **Activate Product** page, either activate the KMS host key online or by phone, and then follow the rest of the wizard instructions.
+1. Run the Office Volume License Pack executable file. This installs the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
+1. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
+1. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
+1. On the **Activate Product** page, either activate the KMS host key online or by phone, and then follow the rest of the wizard instructions.
 
 When you're done, an **Activation Succeeded** page displays.
 

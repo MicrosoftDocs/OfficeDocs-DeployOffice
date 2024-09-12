@@ -1,5 +1,5 @@
 ---
-title: "Office LTSC 2021 deployment instructions for SPLA customers"
+title: "Office deployment instructions for SPLA customers"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -11,10 +11,10 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Microsoft Services Provider License Agreement (SPLA) customers with instructions for deploying Office LTSC 2021"
-ms.date: 03/29/2024
+ms.date: 09/18/2024
 ---
 
-# Office LTSC 2021 deployment instructions for SPLA customers
+# Office deployment instructions for SPLA customers
 
 > [!IMPORTANT]
 > This information only applies to service providers and independent software vendors (ISVs) with a Microsoft Services Provider License Agreement (SPLA). For more information, see [Licensing options for service providers](https://www.microsoft.com/licensing/licensing-programs/spla-program).
