@@ -59,15 +59,6 @@ Office LTSC 2024 brings several key updates and improvements compared to previou
 > [!TIP]
 > If you’re moving to Office LTSC 2024 from Office 2016, you should also review the changes documented in the [Overview of Office 2019 (for IT Pros)](../../2019/overview.md). The most significant difference between Office 2016 and Office LTSC 2024 is the shift in installation technology from Windows Installer (MSI) to Click-to-Run.
 
-#### Privacy-related policy settings
-
-<!-- Add new privacy-related policy settings available in Group Policy -->
-
-> [!NOTE]
-> <!-- Add note about additional policy settings (if necessary) -->
-
-For more information, see [Use policy settings to manage privacy controls](/microsoft-365-apps/privacy/manage-privacy-controls). Even though the article isn’t specifically for Office LTSC 2024, the information covered in the article about how the policy settings work does apply to Office LTSC 2024.
-
 #### OpenDocument format 1.4
 
 <!--Using include for odf 1.4 support-->
