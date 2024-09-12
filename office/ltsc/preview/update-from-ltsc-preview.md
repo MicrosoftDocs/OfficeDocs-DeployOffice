@@ -33,7 +33,7 @@ If you're a volume licensed customer that's licensed for Office LTSC 2024 and yo
 If you’re not a volume licensed customer, [follow these instructions](#instructions-for-customers-who-dont-have-a-volume-license).
 
 > [!NOTE]
-> [!INCLUDES[vlsc-retirement](../../includes/vlsc-retired.md)]
+> [!INCLUDE[vlsc-retirement](../../includes/vlsc-retired.md)]
 
 ## KMS activation steps for Office on Windows
 
