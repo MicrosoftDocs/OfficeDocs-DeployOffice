@@ -28,7 +28,7 @@ If you're a volume licensed customer that's licensed for Office LTSC 2024 and yo
 
 - [Key Management Service (KMS)](#kms-activation-steps-for-office-on-windows) for Office on Windows
 - [Multiple Activation Key (MAK)](#mak-activation-steps-for-office-on-windows) for Office on Windows
-- [Volume License (VL) Serializer](#vl-serializer-steps-for-office-on-a-mac) for Office on a Mac
+- [Volume License (VL) Serializer](#volume-license-vl-serializer-steps-for-office-on-a-mac) for Office on a Mac
 
 If you’re not a volume licensed customer, [follow these instructions](#instructions-for-customers-who-dont-have-a-volume-license).
 
@@ -44,7 +44,7 @@ If you activate Office by using KMS, including Active Directory-based activation
 3. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and go to > **Billing** > **Your products** > **Volume licensing** > **Downloads & Keys** to get your KMS client activation keys for Office LTSC 2024.
 4. [Configure the KMS host computer to activate Office LTSC 2024](../../volume-license-activation/configure-a-kms-host-computer-for-office.md). You'll need both the Office LTSC 2024 Volume License Pack and your KMS client activation keys.
 5. Make sure that you’re using at least Version 2408 of Office LTSC 2024 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section, you’ll see the version and build number.
-6. Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
+6. Run the [ospp.vbs script](../../volume-license-activation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
 ```console
 cscript ospp.vbs /inpkey:yourkey
@@ -96,7 +96,7 @@ To update Office 2024 for Mac (Preview) to Office LTSC Standard for Mac 2024, do
 > [!TIP]
 > To confirm the update, go to the **About** dialog in an Office app, such as Word. On the **License** line, you should see **Office LTSC Standard for Mac 2024** instead of **Preview 2024**.
 
-For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer.md).
+For more information, see [Overview of the Volume License (VL) Serializer](../../../microsoft-365-apps/mac/volume-license-serializer.md).
 
 ## Instructions for customers who don't have a volume license
 

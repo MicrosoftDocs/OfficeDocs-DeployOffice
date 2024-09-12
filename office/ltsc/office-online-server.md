@@ -18,7 +18,7 @@ ms.date: 09/18/2024
 
 ***Applies to:*** *Office Long Term Service Channel (LTSC) 2024, LTSC 2021*
 
-There isn’t a version of [Office Online Server](https://learn.microsoft.com/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com/).
+There isn’t a version of [Office Online Server](/officeonlineserver/office-online-server) specifically for Office LTSC. However, you can use the existing version of Office Online Server, which is available for download from the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 > [!NOTE]
 > [!INCLUDE[vlsc-retired](../includes/vlsc-retired.md)]
