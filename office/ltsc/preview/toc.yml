@@ -1,9 +1,0 @@
-items:
-  - name: Microsoft Office LTSC 2024 for commercial preview
-    items:
-      - name: Overview
-        href: overview-ltsc-preview.md
-      - name: Install
-        href: install-ltsc-preview.md
-      - name: Mac
-        href: overview-mac-preview.md

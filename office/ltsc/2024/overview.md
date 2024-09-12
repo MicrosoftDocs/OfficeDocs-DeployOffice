@@ -15,7 +15,7 @@ ms.date: 09/16/2024
 
 # Overview of Office LTSC 2024
 
-Office Long Term Service Channel (LTSC) 2024 is the most recent edition of Microsoft's productivity software, available to organizations through volume licensing agreements.
+Office Long Term Service Channel (LTSC) 2024 is the current version of Microsoft's productivity software, designed for use in on-premises or disconnected environments. It's available to organizations through volume licensing agreements.
 
 > [!IMPORTANT]
 > Office LTSC 2024 is different from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
@@ -28,9 +28,6 @@ Enterprise administrators can download and deploy Office LTSC 2024 to users with
 - Project Standard 2024
 - Visio LTSC Professional 2024
 - Visio LTSC Standard 2024
-
-> [!NOTE]
-> These Office products use Click-to-Run as the installation technology, rather than Windows Installer (MSI). However, activation methods, such as using Key Management Service (KMS), remain unchanged.
 
 ## Minimum system requirements
 
@@ -78,7 +75,7 @@ For more information, see [Use policy settings to manage privacy controls](/micr
 
 #### Office Add-ins
 
-Several more Office Add-ins JavaScript APIs are available with Office LTSC 2024. These include the following requirement sets.
+More Office Add-ins JavaScript APIs are available with Office LTSC 2024, including these requirement sets.
 
 - Product requirement sets:
    - Excel: Up to [1.17](/javascript/api/requirement-sets/excel/excel-api-1-17-requirement-set)
@@ -98,10 +95,7 @@ Several more Office Add-ins JavaScript APIs are available with Office LTSC 2024.
 
 The Publish to Power BI feature is removed from Excel. This change doesn't affect prior versions of on-premises Office.
 
-Transition to the Power BI service for a more robust set of features, including importing Excel workbooks from OneDrive and SharePoint document libraries for viewing in Power BI. Existing local workbooks can still be downloaded from Power BI workspaces, and Excel data models can be published as Power BI semantic models with scheduled refresh.
-
-For more information about this transition and how to migrate your Excel workbooks, see [Migrating your Excel workbooks](deploy.md#migrating-your-excel-workbooks).
-
+Move to the Power BI service for a more robust set of features, such as importing Excel workbooks from OneDrive and SharePoint document libraries to view in Power BI. Existing local workbooks can still be downloaded from Power BI workspaces, and Excel data models can be published as Power BI semantic models with scheduled refresh.
 
 #### Microsoft Publisher
 
@@ -112,6 +106,10 @@ For more information about this transition and how to migrate your Excel workboo
 
 <!--Using include for teams-not-included-->
 [!INCLUDE[teams-not-included-ltsc.md](../../includes/teams-not-included-ltsc.md)]
+
+#### ActiveX
+
+In Office LTSC 2024, ActiveX controls are disabled by default. However, IT administrators can re-enable ActiveX where necessary.
 
 ## What stayed the same in Office LTSC 2024?
 
@@ -141,9 +139,9 @@ For information about the new features in Office LTSC 2024, see the following ar
 - [What's new in Word 2024](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
 
 > [!NOTE]
->While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include [Microsoft Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
+> While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include new features and functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 
-Keep in mind that Office LTSC 2024 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan that includes Office. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
+Keep in mind that Office LTSC 2024 doesn't receive any new features. If you want to get new Office features on an ongoing basis, you should consider moving to a Microsoft 365 plan. Many business and enterprise plans include Microsoft 365 Apps. These plans also provide you with Microsoft 365, which includes the same apps as Office LTSC 2024. For more information, see [Compare Microsoft 365 enterprise plans](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans), [Compare Office 365 enterprise plans](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans), and [Compare Microsoft 365 business plans](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 To continue receiving ongoing feature updates for the desktop versions of Project and Visio, you should consider moving to a subscription plan. For more information on the available subscription options, see [Project Plan 3/Project Plan 5](https://www.microsoft.com/microsoft-365/project/compare-microsoft-project-management-software) and [Visio Plan 2](https://www.microsoft.com/microsoft-365/visio/microsoft-visio-plans-and-pricing-compare-visio-options).
 
@@ -157,7 +155,7 @@ Uninstall any existing versions of Office before deploying Office LTSC 2024. Mos
 - Access isn't available for devices running macOS.
 - Office LTSC 2024 includes the OneNote desktop app. For more information, see [Deployment guide for OneNote](/microsoft-365-apps/deploy/deployment-guide-onenote).
 - Office LTSC 2024 is available in both 32-bit and 64-bit versions. We recommend 64-bit on devices with 4 GB or more of memory. However, you should assess application compatibility and other factors that might require the use of the 32-bit version. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
-- After downloading the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2024.
+- After you download the installation files, internet connectivity isn’t required to install Office LTSC 2024. Internet connectivity is required for MAK activation, but not for KMS activation. After activation, internet connectivity isn't required to use Office LTSC 2024.
 
 ## Related articles
 
