@@ -27,7 +27,7 @@ Once you deploy Office LTSC 2024, including Project 2024 and Visio 2024, it's im
 
 ## How updates are different in Office LTSC 2024
 
-Updates in Office LTSC 2024 are managed the same as in Office LTSC 2021 but differ significantly from MSI-based updates used in earlier versions of Office. In Office LTSC 2024, updates are cumulative, meaning the latest version available on the Office CDN includes all previous security and quality updates. This approach ensures that Office is up to date when you download and install it from the Office CDN, so you don’t need to apply updates or service packs.
+Updates in Office LTSC 2024 are managed the same as in Office LTSC 2021 but differ significantly from MSI-based updates used in Office 2016. In Office LTSC 2024, updates are cumulative, meaning the latest version available on the Office CDN includes all previous security and quality updates. This approach ensures that Office is up to date when you download and install it from the Office CDN, so you don’t need to apply individual updates or service packs.
 
 Unlike in earlier MSI-based versions, there are no separate downloads for security or quality updates; they're included in each new build posted on the Office CDN. As a result, Microsoft Update or Windows Server Update Services (WSUS) isn't used by itself to update Office LTSC 2024. However, Microsoft Configuration Manager can be used to manage how and when updates are applied, and where they're sourced from.
 

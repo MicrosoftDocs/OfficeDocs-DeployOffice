@@ -15,10 +15,10 @@ ms.date: 09/16/2024
 
 # Overview of Office LTSC 2024
 
-Office Long Term Service Channel (LTSC) 2024 is the current version of Microsoft's productivity software, designed for use in on-premises or disconnected environments. It's available to organizations through volume licensing agreements.
+Office Long Term Service Channel (LTSC) 2024 is the most recent on-premises edition of Microsoft's core productivity apps, designed for use in disconnected or restricted environments. It's available to organizations through volume licensing agreements
 
 > [!IMPORTANT]
-> Office LTSC 2024 is different from Office offered through Microsoft 365 plans. For instance, if your organization has already deployed Microsoft 365 Apps for enterprise, there's no need for Office LTSC 2024. Microsoft 365 Apps for enterprise includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
+> Office LTSC 2024 is different from the Office version offered through Microsoft 365 plans, called Microsoft 365 Apps. Because it's designed for disconnected environments, Office LTSC does not include any cloud-backed features. It also does not receive any feature updates after launch. If your organization has already deployed Microsoft 365 Apps for enterprise or Microsoft 365 Apps for business, there's no need for Office LTSC 2024. Microsoft 365 Apps includes all the features of Office LTSC 2024, plus many additional features not found in Office LTSC 2024.
 
 Enterprise administrators can download and deploy Office LTSC 2024 to users within their organization. The following volume licensed Office products are available for devices running Windows:
 
@@ -147,7 +147,7 @@ To continue receiving ongoing feature updates for the desktop versions of Projec
 
 ## How do I upgrade to Office LTSC 2024?
 
-Uninstall any existing versions of Office before deploying Office LTSC 2024. Most Office products installed via Windows Installer (MSI), such as Office 2016, can be removed during the installation of Office LTSC 2024. For more information, see [Remove existing versions of Office before installing Office LTSC 2024](deploy.md#remove-existing-versions-of-office-before-installing-office-ltsc-2024).
+Uninstall versions of Office before deploying Office LTSC 2024. Most Office products installed via Windows Installer (MSI), such as Office 2016, can be removed during the installation of Office LTSC 2024. For more information, see [Remove existing versions of Office before installing Office LTSC 2024](deploy.md#remove-existing-versions-of-office-before-installing-office-ltsc-2024).
 
 ## Additional information about Office LTSC 2024
 

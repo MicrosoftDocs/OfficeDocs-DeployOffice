@@ -42,8 +42,8 @@ If you activate Office by using KMS, including Active Directory-based activation
 1. If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer.
 2. Download the [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e) from the Microsoft Download Center.
 3. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and go to > **Billing** > **Your products** > **Volume licensing** > **Downloads & Keys** to get your KMS client activation keys for Office LTSC 2024.
-4. [Configure the KMS host computer to activate Office LTSC 2024](../vlactivation/configure-a-kms-host-computer-for-office.md). You'll need both the Office LTSC 2024 Volume License Pack and your KMS client activation keys.
-5. Make sure that you’re using at least Version 2308 of Office LTSC 2024 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section, you’ll see the version and build number.
+4. [Configure the KMS host computer to activate Office LTSC 2024](../../volume-license-activation/configure-a-kms-host-computer-for-office.md). You'll need both the Office LTSC 2024 Volume License Pack and your KMS client activation keys.
+5. Make sure that you’re using at least Version 2408 of Office LTSC 2024 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section, you’ll see the version and build number.
 6. Run the [ospp.vbs script](../vlactivation/tools-to-manage-volume-activation-of-office.md#the-osppvbs-script) on each computer to install and activate your KMS client activation key using the commands below.
 
 ```console
@@ -59,7 +59,7 @@ cscript ospp.vbs /remhst
 cscript ospp.vbs /sethst:KMSHostFQDN
 cscript ospp.vbs /act
 ```
-Replace *KMSHostFQDN* with the fully qualified domain name of the Office LTSC 2024 KMS Host computer. You will need to restart any Office apps for these changes take effect.
+Replace *KMSHostFQDN* with the fully qualified domain name of the Office LTSC 2024 KMS Host computer. You will need to restart any Office apps for these changes to take effect.
 
 ## MAK activation steps for Office on Windows
 
@@ -73,14 +73,14 @@ If you activate Office by using MAK, do the following steps to update Office LTS
  cscript ospp.vbs /inpkey:yourkey
  cscript ospp.vbs /act
 ```
-Replace *yourkey* with your MAK client activation key. You will need to restart any Office apps for these changes take effect.
+Replace *yourkey* with your MAK client activation key. You will need to restart any Office apps for these changes to take effect.
 
 ## Additional information for Office on Windows
 
 - The ospp.vbs commands can be included in a script that you can deploy and run across the computers in your organization, such as with Microsoft Configuration Manager.
 - You can also use the Volume Activation Management Tool (VAMT) 3.1 to centrally manage volume activation. You need to use VAMT 3.1 with Office LTSC 2024. VAMT 3.0 won't work with Office LTSC 2024. For more information, see [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 - This also applies to updating Project Professional 2024 Preview to Project Professional 2024, or Visio Professional 2024 Preview to Visio LTSC Professional 2024.
-- If you have the 32-bit version of Office LTSC 2024 Preview installed and want to install the 64-bit version, you must uninstall the preview first. This also applies if you're switching from 64-bit to 32-bit.
+- If you have the 32-bit version of Office LTSC 2024 Preview installed and want to install the 64-bit version of Office LTSC 2024, you must uninstall the preview first. This also applies if you're switching from 64-bit to 32-bit.
 - If you're a volume licensed customer and want to install Office LTSC Standard 2024, you must first uninstall Office LTSC Professional Plus 2024 Preview.
 
 For more information, see [Overview of volume activation of Office](../../volume-license-activation/plan-volume-activation-of-office.md) and [Tools to manage volume activation of Office](../../volume-license-activation/tools-to-manage-volume-activation-of-office.md).
