@@ -96,7 +96,7 @@ To update Office 2024 for Mac (Preview) to Office LTSC Standard for Mac 2024, do
 > [!TIP]
 > To confirm the update, go to the **About** dialog in an Office app, such as Word. On the **License** line, you should see **Office LTSC Standard for Mac 2024** instead of **Preview 2024**.
 
-For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer.md).
+For more information, see [Overview of the Volume License (VL) Serializer](/microsoft-365-apps/mac/volume-license-serializer).
 
 ## Instructions for customers who don't have a volume license
 

@@ -56,7 +56,7 @@ If you already use other tools to deploy software to your users, such as Microso
 To deploy a volume licensed version of Project Professional 2024 or Project Standard 2024 to users in your organization, follow these general steps:
 
 1. Purchase Project 2024 as part of a volume licensing agreement.
-2. Use the Office Deployment Tool and a configuration.xml file to install Project 2024 from the Office Content Delivery Network (CDN) on the internet. 
+2. Use the Office Deployment Tool and a configuration.xml file to install Project 2024 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2024](/office/ltsc/2024/deploy)
    - It’s recommended to install Project directly without downloading the source files beforehand. This approach reduces overall network utilization and eliminates the need to maintain the source files.
 
 If you use other tools, such as Microsoft Configuration Manager, to deploy software to your users, you can integrate the Office Deployment Tool with those tools to deploy volume licensed versions of Project.
