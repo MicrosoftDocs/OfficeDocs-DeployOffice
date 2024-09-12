@@ -1,3 +1,4 @@
+---
 title: "Update Office LTSC 2024 Preview to Office LTSC 2024"
 ms.author: nwhite
 author: nicholasswhite
