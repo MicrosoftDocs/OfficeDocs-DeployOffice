@@ -17,7 +17,7 @@ ms.date: 09/18/2024
 
 # Overview of Office for Mac (for admins and IT Pros)
 
-***Applies to:*** *Microsoft 365 for Mac, Office LTSC for Mac 2024, Office LTSC for Mac 2021*
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
 The following Office apps are available for devices running macOS:
 

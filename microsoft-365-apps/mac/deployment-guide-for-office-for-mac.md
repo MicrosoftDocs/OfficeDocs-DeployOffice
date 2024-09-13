@@ -12,10 +12,12 @@ ms.collection: Tier3
 ms.custom: intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
-ms.date: 03/01/2023
+ms.date: 09/18/2024
 ---
 
 # Deployment guide for Office for Mac
+
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
 This guide is intended to help administrators and other IT professionals to plan, implement, and maintain deployments of Office on devices running macOS in their organization.
 

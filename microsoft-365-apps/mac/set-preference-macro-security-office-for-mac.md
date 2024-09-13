@@ -16,7 +16,7 @@ ms.date: 05/22/2024
 
 # Set preferences for macro security in Office for Mac
 
-***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
 As an IT admin, you can provide Mac users with a standard set of Office preferences in these ways:
 
