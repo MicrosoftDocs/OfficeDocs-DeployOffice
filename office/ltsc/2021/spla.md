@@ -1,5 +1,5 @@
 ---
-title: "Office deployment instructions for SPLA customers"
+title: "Office LTSC 2021 deployment instructions for SPLA customers"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougeby
@@ -14,7 +14,7 @@ description: "Provides Microsoft Services Provider License Agreement (SPLA) cust
 ms.date: 09/18/2024
 ---
 
-# Office deployment instructions for SPLA customers
+# Office LTSC 2021 deployment instructions for SPLA customers
 
 > [!IMPORTANT]
 > This information only applies to service providers and independent software vendors (ISVs) with a Microsoft Services Provider License Agreement (SPLA). For more information, see [Licensing options for service providers](https://www.microsoft.com/licensing/licensing-programs/spla-program).
@@ -35,9 +35,9 @@ These Office products don't include Microsoft Teams.
 > [!TIP]
 > You can use the Office Customization Tool, a web-based interface, to create your XML file. For more information, see [Overview of the Office Customization Tool](/microsoft-365-apps/admin-center/overview-office-customization-tool).
 
-To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../volume-license-activation/activate-office-by-using-mak.md).
+To activate either of these versions of Office, you must use Multiple Activation Key (MAK) activation. For more information, see [Activate volume licensed versions of Office by using MAK](../../volume-license-activation/activate-office-by-using-mak.md).
 
-Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](../ltsc/2021/overview.md).
+Other than that, how you deploy and manage Office LTSC 2021 is no different than other customers. For more information, see [Overview of Office LTSC 2021](overview.md).
 
 ## Office LTSC for Mac 2021
 
