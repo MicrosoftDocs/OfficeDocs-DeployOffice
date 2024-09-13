@@ -2476,11 +2476,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "office/ltsc/2021/spla.md",
-      "redirect_url": "/office/ltsc/spla",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "office/ltsc/2021/office-online-server.md",
       "redirect_url": "/office/ltsc/office-online-server",
       "redirect_document_id": false
