@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/02/2024
+ms.date: 09/16/2024
 ---
 
 # Essential services for Office
@@ -4376,6 +4376,30 @@ The following fields are collected:
 
 ## Consent Service events
 
+### Office.Android.DocsUI.PaywallControl.PriceNoticeUIClickEvent
+
+This event is triggered when user acknowledges the price notification. The information is used to record user response to the price notices and help ensure compliance with Google Play Store requirements.
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence. 
+
+- **ProductId** - String - ProductId of the SKU being purchased.
+
+- **SessionID** - GUID to connect events by session.
+
+### Office.Android.DocsUI.PaywallControl.PriceNoticeUIShown
+
+This event is triggered when there is any change in SKU pricing and price update notice is displayed. The information is used to record price notifications shown to users and help ensure compliance with Google Play Store requirements.
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence 
+
+- **ProductId** - String - ProductId of the SKU being purchased.
+
+- **SessionID** - GUID to connect events by session
+
 ### Office.Privacy.UnifiedConsent.API.ConsentGetFailed   
 
 This event logs a failure in a request to get information from the consent service. Data is used to understand the frequency of successes and failures in client components, allowing detection and mitigation of common issues.
@@ -4548,9 +4572,11 @@ The following fields are collected:
 
 - **EventDate** – Timestamp of the event occurrence 
 
-- **IsModeFRE** – Boolean to indicate experience type, Upsell dialog or SKU Chooser
+- **IsModeFRE** – Boolean to indicate experience type, Upsell dialog or SKU Chooser *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **SessionID** – GUID to connect events by session
+
+- **startMode** - Integer value to indicate startMode type where 0 means FRE (First Run Experience), 1 means SkuChooser (Personal or Family related paywall), and 2 means CopilotPro.
 
 ### Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
 
@@ -4600,6 +4626,19 @@ The following fields are collected:
 
 - **StatusCode** - RFS response status code (RFS defined Enum int- finite)
 
+### Office.Android.DocsUI.PaywallControl.SaveFlowUserActionEvent
+
+This event is triggered when offer notification is presented to the user. The data is used to determine if the user has accepted the offer/discount to go ahead with the subscription renewal or purchase. 
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence 
+
+- **ProductId** - String - ProductId of the SKU being purchased.
+
+- **SessionID** - GUID to connect events by session
+
+- **UserAction** - 0, 1 and 2 where 0 indicates user has clicked to resubscribe, 1 indicates that user has clicked on “No Thanks”, and 2 indicates that user hasn't taken any action and dismissed the bottom sheet by either pressing the back button or any other way to dismiss it.
 
 ### Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -4767,6 +4806,15 @@ The following fields are collected:
 
 - **context** - String – The flow through which the user landed on the in app purchase page
 
+### Office.Apple.Licensing.AutoRenewViewCTAPerformed
+
+User actions to accept or dismiss the subscription Renewal screen triggers this event. The data is used to determine if the user has accepted the offer/discount to go ahead with the subscription renewal or purchase. 
+
+The following fields are collected:
+
+ -**actionType** - int - 1 -> renew button pressed; 2-> I already renewed; 3-> Continue without subscription.
+
+-**IsOffer** -Bool – True – if user is presented with an offer/discount; False - otherwise.
 
 ### Office.Apple.Licensing.CommonPaywallControl
 
@@ -4811,6 +4859,8 @@ This event is used to understand the in-app purchase (IAP) experience for the us
 
    - **entryPoint** - String – The Button/Flow from which Paywall was displayed. Like “Premium Upgrade Button” or “First Run Flow”.
    - **failureReason** - String – Only added when status is “failure”. Indicating the error response given by the RFS Provisioning response.
+   - **MicrosoftPurchaseOrderId** - String - Microsoft Order Id for the purchase.
+   - **OriginalTransactionId** - String - Apple Transaction Id for the purchase.
    - **PaywallSessionId** - String – Collected to uniquely identify a Paywall session in an app session
    - **productId** - String – App Store ID of the product the request was made for
    - **status** - String – Success or Failure, indicating if the request succeeded or failed
@@ -6176,6 +6226,163 @@ The following fields are collected:
 - **Message (Data_Message)** - The log message from setup.office.com. For example, "image ‘../img/spinner.csv’ can’t be loaded, cdn is used."
 
 - **Type (Data_Type)** - The type of log message (Error, Warning, Info)
+
+### Office.Taos.Hub.Windows.Device
+
+This event gets triggered on app boot. This event is used to record the WebView version/metadata available on the user's device. 
+
+The following fields are collected:
+
+- **ApiVersion** - Version of the API.
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We cannot derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_SdkVersion** - 1DS SDK version.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_Time** - The time of the event.
+
+- **ExitCode** - The exit code.
+
+- **FailReason** - The reason for the failure.
+
+- **Feature** - The name of the Feature.
+
+- **JsonResult** - The name of the calling method.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+- **Version** - Version of the WebView present in the user's device.
+
+
+### Office.Taos.Hub.Windows.OfficeLicense
+
+This event gets triggered on app boot. This event is used to record the license status of the installed Office apps. 
+
+The following fields are collected:
+
+- **ApiVersion** - Version of the API.
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We cannot derive any PII from this ID.
+
+- **Count** - Count of licenses.
+
+- **Description** - Description of the license.
+
+- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event Level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_SdkVersion** - 1DS SDK version.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **FetchDuration** - The duration of the fetch.
+
+- **Licensed** - A boolean value indicating whether licensed or not.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **Name** - Name of the license.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **Reason** - License Status Reason.
+
+- **Status** - Status of the license.
+
+- **Timeout** - Timeout time in milliseconds.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+- **VolumeActivationType** - Name of the Volume Activation Type.
 
 
 ### OneNote.EnrollmentResult
