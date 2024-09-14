@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/02/2024
+ms.date: 09/16/2024
 ---
 
 # Required diagnostic data for Office
@@ -2161,6 +2161,10 @@ The following fields are collected:
 - **draft_message_id** - message ID of the draft
 
 - **is_groups** - whether the draft is being sent to/from a group folder
+
+- **is_request_delivery_receipt** - if the draft message was selected to request delivery receipt.
+
+- **is_request_read_receipt** - if the draft message was selected to request read receipt.
 
 - **mail_importance_type** - the message’s importance type that user selected to mark the draft priority (for example, high/low/normal)
 
@@ -11062,6 +11066,10 @@ The following fields are collected:
 - **is_group_escalation** - is this a group escalated message, "escalated message" is a message that was sent to the user's mailbox because of an escalation (subscribed to group)
 
 - **is_groups** - track whether message sent is a groups message or not
+
+- **is_request_delivery_receipt** - if the message was selected to request delivery receipt.
+
+- **is_request_read_receipt** - if the message was selected to request read receipt.
 
 - **key_stroke_count** - tracks the keystrokes count for the message that is being sent
 
@@ -20364,6 +20372,8 @@ The following fields are collected for iOS:
 - **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
 
 - **guided_access** - Tells us if the user has turned on guided access on their device to help us detect issues related to this setting
+
+- **has_custom_app_language** - indicates whether user set a custom Outlook app language that is different from the device language setting.
 
 - **invert_colors** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
