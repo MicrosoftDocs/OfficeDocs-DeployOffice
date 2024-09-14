@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/13/2024
+ms.date: 09/16/2024
 ---
 
 # Connected experiences in Office
@@ -186,7 +186,7 @@ If you're the admin for your organization, you can use policy settings to determ
 - [Use policy settings to manage privacy controls for Office on Android devices](android-privacy-controls.md)
 
 > [!NOTE]
-> For information about the effect of these policy settings on Copilot for Microsoft 365 features, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> For information about the effect of these policy settings on Microsoft 365 Copilot features, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 If you choose to turn off some types of connected experiences, either the ribbon or menu command for those connected experiences is grayed out, or you get an error message when you try to use those connected experiences.
 
