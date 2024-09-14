@@ -4390,7 +4390,7 @@ The following fields are collected:
 
 ### Office.Android.DocsUI.PaywallControl.PriceNoticeUIShown
 
-This event is triggered when there is any change in SKU pricing and price update notice is displayed. The information is used to record price notifications shown to users and help ensure compliance with Google Play Store requirements.
+This event is triggered when there's any change in SKU pricing and price update notice is displayed. The information is used to record price notifications shown to users and help ensure compliance with Google Play Store requirements.
 
 The following fields are collected:
 
@@ -6241,7 +6241,7 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We cannot derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
 - **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
@@ -6314,7 +6314,7 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We cannot derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
 - **Count** - Count of licenses.
 
