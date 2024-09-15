@@ -1130,7 +1130,7 @@ The following fields are collected:
 
 - **Method** - The name of the calling method.
 
-- **O365ProductId** - Product Id of the Office 365 app.
+- **O365ProductId** - Product ID of the Office 365 app.
 
 - **Path** - Hash of the path of the app.
 
@@ -16591,6 +16591,8 @@ The following fields are collected:
 
 - **Error** - Logs error occurred during any activity.
 
+- **flowId** - GUID used to identify current app flow started on home screen.
+
 - **HasBoost** - Indicates whether boost count is remaining or not.
 
 - **Host** - Identifies the host app name that launches Designer.
@@ -16621,7 +16623,6 @@ The following fields are collected:
 
 - **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
 
-- **flowId** - GUID used to identify current app flow started on home screen.
 
 #### Office.DesignerApp.App.InsertImageCompleted
 
@@ -16756,6 +16757,8 @@ The following fields are collected:
 
 - **CorrelationId** - GUID used to correlate activities.
 
+- **flowId** - GUID used to identify current app flow started on home screen.
+
 - **Host** - Identifies the host app name that launches Designer.
 
 - **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
@@ -16778,7 +16781,6 @@ The following fields are collected:
 
 - **UserAgeGroup** - Logs age group of user like minor or adult.
 
-- **flowId** - GUID used to identify current app flow started on home screen.
 
 
 #### Office.DesignerApp.App.SharedDesign
@@ -21163,7 +21165,7 @@ The following fields are collected:
 
 - **EventInfo_PrivTags** - The event tags.
 
-- **EventInfo_Source** - The source of the event. For example,OneCollector
+- **EventInfo_Source** - The source of the event. For example, OneCollector
 
 - **EventInfo_SdkVersion** - 1DS SDK Version.
 
