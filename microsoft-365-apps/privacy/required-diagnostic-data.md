@@ -1146,7 +1146,7 @@ The following fields are collected:
 
 - **ProductCode** - O365 product code.
 
-- **ProductId** - Product Id of the Office 365 app.
+- **ProductId** - Product ID of the Office 365 app.
 
 - **UserInfo_TimeZone** - Time zone of the user.
 
