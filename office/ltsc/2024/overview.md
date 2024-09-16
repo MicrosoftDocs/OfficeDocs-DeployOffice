@@ -118,17 +118,6 @@ The major version of Office LTSC 2024 is 16.0, the same as Office LTSC 2021 and 
 
 ## What are the new features in Office LTSC 2024?
 
-For information about the new features in Office LTSC 2024, see the following articles:
-
-- [What's new in Office 2024](https://support.microsoft.com/baadecbe-a8fc-4435-8cb8-70e93fd08b56)
-- [What's new in Access 2024](https://support.microsoft.com/a4643663-59a9-48e8-87ae-43cfdd9ba267)
-- [What's new in Excel 2024](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
-- [What's new in OneNote 2024](https://support.microsoft.com/aaf9f977-037b-4665-9047-bf1b39d6ba4a)
-- [What's new in Outlook 2024](https://support.microsoft.com/c6f280d7-e776-4177-ae5a-f5281e9e9ef3)
-- [What's new in PowerPoint 2024](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
-- [What's new in Visio 2024](https://support.microsoft.com/0295be56-187c-4254-9463-1b67dd6e0eb1)
-- [What's new in Word 2024](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
-
 > [!NOTE]
 > While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include new features and functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.
 

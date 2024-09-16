@@ -60,8 +60,7 @@ Before your older version of Office reaches its end of support, you should explo
 A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 365 Apps is continuously updated, with new features released as frequently as monthly. In contrast, Office LTSC versions include only the features available at their initial release—Office LTSC 2024 in September 2024, and Office LTSC 2021 in September 2021.
 
 > [!NOTE]  
-> Office LTSC 2024 and Office LTSC 2021 are designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.  
-> For more information, see [Overview of Office LTSC 2024](/office/ltsc/2024/overview) and [Overview of Office LTSC 2021](/office/ltsc/2021/overview).
+> Office LTSC 2024 and Office LTSC 2021 are designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 
