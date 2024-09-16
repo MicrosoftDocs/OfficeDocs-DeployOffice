@@ -40,7 +40,7 @@ If you’re not a volume licensed customer, [follow these instructions](#instruc
 If you activate Office by using KMS, including Active Directory-based activation, do the following steps to update Office LTSC 2024 Preview to Office LTSC 2024.
 
 1. If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer.
-2. Download the [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?familyid=9f5da26b-1a3a-472f-a260-a02ad216811e) from the Microsoft Download Center.
+2. Download the Office LTSC 2024 Volume License Pack from the Microsoft Download Center.
 3. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and go to > **Billing** > **Your products** > **Volume licensing** > **Downloads & Keys** to get your KMS client activation keys for Office LTSC 2024.
 4. [Configure the KMS host computer to activate Office LTSC 2024](../../volume-license-activation/configure-a-kms-host-computer-for-office.md). You'll need both the Office LTSC 2024 Volume License Pack and your KMS client activation keys.
 5. Make sure that you’re using at least Version 2408 of Office LTSC 2024 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section, you’ll see the version and build number.
