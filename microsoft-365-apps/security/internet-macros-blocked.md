@@ -61,9 +61,9 @@ The following table list different common scenarios and possible approaches to t
 
 ## Versions of Office affected by this change
 
-This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Visio, and Word.
+This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Project, Publisher, Visio, and Word.
 
-The following table shows when this change became available in each update channel.
+The following table shows when this change became available in each update channel for Access, Excel, PowerPoint, Visio, and Word.
 
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
@@ -72,6 +72,30 @@ The following table shows when this change became available in each update chann
 |Monthly Enterprise Channel|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel |Version 2208|January 10, 2023|
+
+The following table shows when this change became available in each update channel for Publisher.
+
+|Update channel  |Version  |Date  |
+|---------|---------|---------|
+|Current Channel|Version 2301|February 14, 2023|
+|Monthly Enterprise Channel|Version 2212|February 14, 2023|
+|Monthly Enterprise Channel|Version 2211|February 14, 2023|
+|Semi-Annual Enterprise Channel (Preview)|Version 2208|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2208|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2202|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2108|February 14, 2023|
+
+The following table shows when this change became available in each update channel for Project.
+
+|Update channel  |Version  |Date  |
+|---------|---------|---------|
+|Current Channel|Version 2407|August 13, 2024|
+|Monthly Enterprise Channel|Version 2406|August 13, 2024|
+|Monthly Enterprise Channel|Version 2405|August 13, 2024|
+|Semi-Annual Enterprise Channel (Preview)|Version 2402|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2402|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2308|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2302|August 13, 2024|
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -286,13 +310,15 @@ This policy prevents users from inadvertently opening files containing macros fr
 
 We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should enable this policy for most users and only make exceptions for certain users as needed.
 
-There's a separate policy for each of the five applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
+There's a separate policy for each of the seven applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
 
 |Application|Policy location |
 |---------|---------|
 |Access|Microsoft Access 2016\Application Settings\Security\Trust Center|
 |Excel|Microsoft Excel 2016\Excel Options\Security\Trust Center|
 |PowerPoint|Microsoft PowerPoint 2016\PowerPoint Options\Security\Trust Center|
+|Project|Microsoft Project 2016\Project Options\Security\Trust Center|
+|Publisher|Microsoft Publisher 2016\Publisher Options\Security\Trust Center|
 |Visio|Microsoft Visio 2016\Visio Options\Security\Trust Center|
 |Word|Microsoft Word 2016\Word Options\Security\Trust Center|
 
@@ -321,19 +347,20 @@ If you don't use the "Block macros from running in Office files from the Interne
 
 This policy prevents users from being lured into enabling malicious macros. By default, Office is configured to block files that contain VBA macros and display a Trust Bar with a warning that macros are present and have been disabled. Users can inspect and edit the files if appropriate, but can’t use any disabled functionality until they select **Enable Content** on the Trust Bar. If the user selects **Enable Content**, then the file is added as a Trusted Document and macros are allowed to run.
 
-There's a separate policy for each of the five applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
+There's a separate policy for each of the seven applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
 
 |Application|Policy location |
 |---------|---------|
 |Access|Microsoft Access 2016\Application Settings\Security\Trust Center|
 |Excel <sup>[1]</sup>|Microsoft Excel 2016\Excel Options\Security\Trust Center|
 |PowerPoint|Microsoft PowerPoint 2016\PowerPoint Options\Security\Trust Center|
+|Project|Microsoft Project 2016\Project Options\Security\Trust Center|
+|Publisher|Microsoft Publisher 2016\Publisher Options\Security\Trust Center|
 |Visio|Microsoft Visio 2016\Visio Options\Security\Trust Center|
 |Word|Microsoft Word 2016\Word Options\Security\Trust Center|
 
 > [!NOTE]
 > - <sup>[1]</sup> For Excel, the policy is named Macro Notification Settings.
->- The "VBA Macro Notification Settings" policy is also available for Project and Publisher.
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
