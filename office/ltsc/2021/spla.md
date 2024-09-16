@@ -11,7 +11,7 @@ ms.collection: Tier2
 ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 description: "Provides Microsoft Services Provider License Agreement (SPLA) customers with instructions for deploying Office LTSC 2021"
-ms.date: 03/29/2024
+ms.date: 09/18/2024
 ---
 
 # Office LTSC 2021 deployment instructions for SPLA customers

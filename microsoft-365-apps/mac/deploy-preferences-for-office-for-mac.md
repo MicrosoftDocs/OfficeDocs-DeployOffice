@@ -16,7 +16,7 @@ ms.date: 03/01/2023
 
 # Deploy preferences for Office for Mac
 
-***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
 After Office is installed on a Mac, users can configure settings for the apps. These settings are called preferences. As an admin, you might want to provide your users with a standard set of preferences for Office. For example, you can configure whether updates for apps are downloaded and installed automatically.
   

@@ -11,12 +11,12 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference for trying a default decryption password in Excel for Mac"
-ms.date: 03/01/2023
+ms.date: 09/18/2024
 ---
 
 # Set a preference for trying a default decryption password in Excel for Mac
 
-***Applies to:*** *Excel for Mac, Excel LTSC for Mac 2021, Excel 2019 for Mac*
+***Applies to:*** *Excel for Mac, Excel Long Term Service Channel (LTSC) for Mac 2024, Excel LTSC for Mac 2021*
 
 By default, when Excel opens an encrypted file, Excel tries to use a default password to decrypt the file. This preference prevents Excel, version 16.20 or later, from trying a default decryption password.
 

@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Office for Mac apps"
-ms.date: 08/24/2024
+ms.date: 09/18/2024
 ---
 
 # Set suite-wide preferences for Office for Mac
 
-***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office Long Term Service Channel (LTSC) for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Word for Mac, Excel for Mac, PowerPoint for Mac, Outlook for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
-The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) and support a streamlined user experience.
+The following preferences can be used to simplify account setup for Microsoft 365 and support a streamlined user experience.
 
 As an IT admin, you might want to give Mac users in your organization a standard set of Office preferences in one of these ways:
 

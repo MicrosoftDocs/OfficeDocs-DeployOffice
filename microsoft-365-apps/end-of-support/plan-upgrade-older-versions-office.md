@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 03/19/2024
+ms.date: 09/18/2024
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -53,15 +53,14 @@ Because of these changes, we strongly recommend that you upgrade to a supported 
 
 Before your older version of Office reaches its end of support, you should explore your options and prepare an upgrade plan to either of these latest versions of Office:
   
-- Microsoft 365 Apps, the subscription version of Office that comes with many Microsoft 365 (and Office 365) enterprise and business plans.
+- Microsoft 365 Apps, the subscription version of Office that comes with many Microsoft 365 enterprise and business plans.
 
-- Office LTSC 2021, which is sold as a one-time purchase, through a volume license agreement, and available for one device per license.
+- Office Long Term Service Channel (LTSC) 2024, and Office LTSC 2021 are sold as a one-time purchase, through a volume license agreement, and available for one device per license.
 
-A key difference between Microsoft 365 Apps and Office LTSC 2021 is that Microsoft 365 Apps is updated regularly, as often as monthly, with new features. Office LTSC 2021 only has the same features that it had when it was released in September 2021.
+A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 365 Apps is continuously updated, with new features released as frequently as monthly. In contrast, Office LTSC versions include only the features available at their initial release—Office LTSC 2024 in September 2024, and Office LTSC 2021 in September 2021.
 
-> [!NOTE]
-> - Office LTSC 2021 is designed for specific scenarios: regulated devices that cannot accept feature updates, process control devices on the manufacturing floor, and specialty systems that cannot connect to the internet.
-> - For more information, see [Overview of Office LTSC 2021](/office/ltsc/2021/overview).
+> [!NOTE]  
+> Office LTSC 2024 and Office LTSC 2021 are designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 
@@ -90,7 +89,7 @@ In addition, you should review the system requirements for your Office server wo
   
 ## Plan for Microsoft 365
 
-Because Microsoft 365 Apps comes with many enterprise Microsoft 365 (and Office 365) plans, you should review the capabilities of your current plan as part of planning an upgrade to Microsoft 365 Apps. Prior to deploying Microsoft 365 Apps, for example, you should ensure that all your users have accounts and licenses.
+Because Microsoft 365 Apps comes with many enterprise Microsoft 365 (and Office 365) plans, you should review the capabilities of your current plan as part of planning an upgrade to Microsoft 365 Apps. Before deploying Microsoft 365 Apps, for example, you should ensure that all your users have accounts and licenses.
 
 For more information, see the following resources:
 
@@ -99,7 +98,7 @@ For more information, see the following resources:
 
 ## Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, third-party add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../deploy/assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
+Before deploying Microsoft 365 Apps, you want to test your business-critical VBA macros, non-Microsoft add-ins, and complex documents and spreadsheets to assess their compatibility with Microsoft 365 Apps. For more information, see [Assess application compatibility](../deploy/assess-microsoft-365-apps.md#step-4---assess-application-compatibility).
   
 If you use the Microsoft Configuration Manager (current branch), you can use the [Microsoft 365 Apps readiness dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_readiness-dash). Or, you can get assistance from Microsoft through the [App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) program.
 
@@ -130,7 +129,7 @@ For more information, see the following resources:
 - [What's new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426)
 - [Release notes for Microsoft 365 Apps releases](/officeupdates/release-notes-microsoft365-apps#release-notes-for-microsoft-365-apps-releases)
 
-## Plan for additional languages
+## Plan for more languages
 
 You can install language accessory packs after you deploy Microsoft 365 Apps in one of its base languages. There are two ways to install language accessory packs:
 
