@@ -4812,9 +4812,9 @@ User actions to accept or dismiss the subscription Renewal screen triggers this 
 
 The following fields are collected:
 
- -**actionType** - int - 1 -> renew button pressed; 2-> I already renewed; 3-> Continue without subscription.
+ - **actionType** - int - 1 -> renew button pressed; 2-> I already renewed; 3-> Continue without subscription.
 
--**IsOffer** -Bool – True – if user is presented with an offer/discount; False - otherwise.
+- **IsOffer** -Bool – True – if user is presented with an offer/discount; False - otherwise.
 
 ### Office.Apple.Licensing.CommonPaywallControl
 
