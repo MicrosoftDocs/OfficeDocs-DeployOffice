@@ -20,7 +20,7 @@ ms.date: 09/18/2024
 > The information in this article is only for customers who deployed Office LTSC 2024 Preview.
 
 > [!WARNING]
-> The client activation keys used in the Office LTSC 2024 Preview program expire in January, 2025. After that time, Office LTSC 2024 Preview will be in reduced functionality mode. 
+> The client activation keys used in the Office LTSC 2024 Preview program expire in January 13<sup>th</sup>, 2025. After that time, Office LTSC 2024 Preview will be in reduced functionality mode. 
 >
 > For more information, see [What is reduced functionality mode?](/microsoft-365-apps/licensing-activation/overview-licensing-activation-microsoft-365-apps#what-is-reduced-functionality-mode)
 
