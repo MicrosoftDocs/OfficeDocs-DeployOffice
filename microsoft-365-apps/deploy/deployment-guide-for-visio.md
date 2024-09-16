@@ -62,7 +62,7 @@ To deploy Visio LTSC Professional 2024 or Visio LTSC Standard 2024 to users in y
 If you use other tools, such as Microsoft Configuration Manager, to deploy software to your users, you can integrate the Office Deployment Tool with those tools to deploy Visio LTSC 2024.
 
 > [!NOTE]
-> - Visio LTSC 2024 is available directly from the Office CDN instead of from the Volume Licensing Service Center.
+> - Visio LTSC 2024 is available directly from the Office CDN.
 > - Visio LTSC 2024 is installed using Click-to-Run rather than Windows Installer (MSI).
 > - The Office Customization Tool (OCT) used for Windows Installer (MSI) versions of Visio is not applicable for Visio LTSC 2024.
 
@@ -78,7 +78,7 @@ Here are the general steps to deploy Visio LTSC Professional 2021 or Visio LTSC 
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy Visio LTSC 2021.
 
 > [!NOTE]
-> - Visio LTSC 2021 is available directly from the Office CDN instead of from the Volume Licensing Service Center.
+> - Visio LTSC 2021 is available directly from the Office CDN.
 > - Visio LTSC 2021 is installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with Visio LTSC 2021.
 
@@ -94,7 +94,7 @@ Here are the general steps to deploy a volume licensed version of Visio Professi
 If you already use other tools to deploy software to your users, such as Microsoft Configuration Manager, you can use the Office Deployment Tool along with those tools to deploy volume licensed versions of Visio.
 
 > [!NOTE]
-> - Volume licensed versions of Visio 2019 are available directly from the Office CDN instead of from the Volume Licensing Service Center.
+> - Volume licensed versions of Visio 2019 are available directly from the Office CDN.
 > - Volume licensed versions of Visio 2019 are installed by using Click-to-Run instead of by using Windows Installer (MSI).
 > - The Office Customization Tool (OCT) that's used for Windows Installer (MSI) versions of Visio isn't used with volume licensed versions of Visio 2019.
 
@@ -103,7 +103,7 @@ If you already use other tools to deploy software to your users, such as Microso
 Here are the general steps to deploy a volume licensed version of Visio Professional 2016 or Visio Standard 2016 to users in your organization:
 
 1. Purchase Visio 2016 as part of a volume licensing agreement.
-2. Download your version of Visio 2016 from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+2. To download your version of Visio 2016, go to [Microsoft 365 admin center](https://admin.microsoft.com/) > **Billing** > **Your products** > **Volume licensing** > **Download and keys**.
 3. If you want to configure user settings for when Visio is installed, you can use the [Office Customization Tool (OCT)](/office/customization-tool/oct-2016-help-overview).
 4. Deploy Visio 2016 to your users. For example, you can send your users a script to run that installs Visio from a network share on your local network.
 

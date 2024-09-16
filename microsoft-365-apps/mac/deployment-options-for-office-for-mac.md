@@ -39,7 +39,7 @@ If you use software distribution tools, you have more control over which users g
 The easiest way to download Office for Mac, and ensure you're always getting the most current version and build, is to download directly from the Office Content Delivery Network (CDN) on the internet. Here are the links to the installer packages for the Office suite, which contains all the applications.
 
 - [Microsoft 365 for Mac](https://go.microsoft.com/fwlink/p/?linkid=2009112)
-- [Office LTSC for Mac 2024]()
+- [Office LTSC for Mac 2024](https://go.microsoft.com/fwlink/p/?linkid=2244846) (volume license)
 - [Office LTSC for Mac 2021](https://go.microsoft.com/fwlink/p/?linkid=2244846) (volume license)
 
 The same installer package can be used for Microsoft 365 subscriptions, Office LTSC for Mac 2024, and Office LTSC for Mac 2021. How you activate the product determines which features are available to your users.
