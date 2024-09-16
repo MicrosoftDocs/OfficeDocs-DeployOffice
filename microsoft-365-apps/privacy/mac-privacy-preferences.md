@@ -10,7 +10,7 @@ ms.subservice: office-mac
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 05/31/2024
+ms.date: 09/16/2024
 ---
 
 # Use preferences to manage privacy controls for Office for Mac
@@ -77,7 +77,7 @@ Connected experiences that analyze your content are experiences that use your Of
 If you don't set this preference, connected experiences that analyze content are available to users.
 
 > [!NOTE]
-> If you set this preference to FALSE, Copilot for Microsoft 365 features won’t be available to your users in certain apps. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> If you set this preference to FALSE, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021, then the user can't turn off connected experiences that analyze content.
 
