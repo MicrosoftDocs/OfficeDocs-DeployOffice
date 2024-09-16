@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 08/02/2024
+ms.date: 09/16/2024
 ---
 
 # Required diagnostic data for Office
@@ -1001,6 +1001,424 @@ The following fields are collected:
 - **LoadResult** - success state of the load
 
 - **OfficeArchitecture** - Architecture of the Office client  
+
+#### Office.Taos.Hub.Windows.DiscoveredApps
+
+This event gets triggered whenever the app gets booted.This event is used to record the number of installed apps in Office hub for the current user.
+
+The following fields are collected:
+
+- **ApiVersion** - The API version.
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **Count** - The count of installed apps in Office Hub.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's Device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device.
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK.
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+#### Office.Taos.Hub.Windows.InstalledSuites
+
+This event gets triggered on app boot. This event is used to record the details of the installed Office apps.
+
+The following fields are collected:
+
+- **ApiVersion** - The version of API.
+
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **Count** - Count of the installed apps.
+
+- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device.
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK.
+
+- **Duplicate** - A boolean value indicating whether the app is duplicate or not.
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the even. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **IsO365** - A Boolean value indicating whether the app belongs to Office 365 suite or not.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **O365ProductId** - Product ID of the Office 365 app.
+
+- **Path** - Hash of the path of the app.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **ProductCode** - O365 product code.
+
+- **ProductId** - Product ID of the Office 365 app.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+- **Version** - Version of the app.
+
+#### Office.Taos.Hub.Windows.LocalDocuments
+
+This event gets triggered whenever user opens MyContent app in Office desktop. This event is used to record the number of local documents supported by the installed apps in the Office desktop hub app like Word, Excel, PowerPoint, etc. 
+
+The following fields are collected:
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device.
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK.
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the Feature.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **Removed** - The count of total number of local document removed.
+
+- **Total** - The count of total number of local document.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+#### Office.Taos.Hub.Windows.NewWindowRequest
+
+This event gets triggered whenever user clicks on a valid hyperlink in the desktop app. This event is used to record a new window request by user from the desktop app.
+
+The following fields are collected:
+
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device.
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **IsUserInitiated** - A Boolean value indicating whether the action is initiated by user or not.
+
+- **KnownWindowType** - The name of the Window type e.g, MsalAuthWindow, MOSHubSdkAuthWindow,etc.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **PolicyAction** - An Integer which denoted policy action type.
+
+- **UriProtocol** - Protocol of the URI.
+
+- **UriSuspicious** - A Boolean value indicating whether the URI is suspicious or not.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+#### Office.Taos.Hub.Windows.Proxy
+
+This event gets triggered on opening any URI from Office desktop. This event is used to record the trust level of the opened URI from Office desktop app.  
+
+The following fields are collected:
+
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device.
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK.
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **Level** - Trust Level of the URI which is targeted to open.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **Uri** - URI which is tried to open in the WebView of the Office desktop app.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
+#### Office.Taos.Hub.Windows.Resource
+
+This event gets triggered on app boot. This event is used to record the static image/resource loading metadata for loading icons in Office desktop app, for example, Back button. 
+
+The following fields are collected:
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **Resource** - It's the name of the static images/icons we load in windows app. For example, BackButton.
+
+- **UserInfo_TimeZone** - Time zone of the user.
 
 
 #### Office.TargetedMessaging.EnsureCached 
@@ -2161,6 +2579,10 @@ The following fields are collected:
 - **draft_message_id** - message ID of the draft
 
 - **is_groups** - whether the draft is being sent to/from a group folder
+
+- **is_request_delivery_receipt** - if the draft message was selected to request delivery receipt.
+
+- **is_request_read_receipt** - if the draft message was selected to request read receipt.
 
 - **mail_importance_type** - the message’s importance type that user selected to mark the draft priority (for example, high/low/normal)
 
@@ -3684,6 +4106,43 @@ The following fields are collected:
 
 - **Activity_DateTimeTicks** - Data Time for the activity
 
+#### Office.DesignerApp.App.SubmitPromptTemplate
+
+The event log captures essential data regarding if the submit template event has occurred, it captures only the start and stop of the functionalityand& if the feature is running or not. This information is used to create map of users and figure out where the traffic is moving or struggling so that the Designer functionality could be enhanced and made more effective.
+
+The following fields are collected:
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **EndPoint** - Used to identify the appropriate Designer screen in which design/image creation was performed.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
+
 #### Office.Docs.AppDocs.OperationOpenFromMruByPath
 
 This event is collected for Office applications running on Android, iOS, Universal, or Windows platforms. The event records when a file open operation takes place from the path provided in the most recently used list and is used to understand and prioritize user-experience errors based on file open operation information.
@@ -4982,7 +5441,7 @@ The following fields are collected:
 
 #### Office.Extensibility.DiscoverTryBuy.Py.PremiumHubExperience
 
-This event is triggered when a launches Premium Hub dialog or user interact with it. This data is used to gain insight into the premium hub errors and how often it is successful or dismissed.
+This event is triggered when a launches Premium Hub dialog or user interact with it. This data is used to gain insight into the premium hub errors and how often it's successful or dismissed.
 
 The following fields are collected:
 
@@ -11063,6 +11522,10 @@ The following fields are collected:
 
 - **is_groups** - track whether message sent is a groups message or not
 
+- **is_request_delivery_receipt** - if the message was selected to request delivery receipt.
+
+- **is_request_read_receipt** - if the message was selected to request read receipt.
+
 - **key_stroke_count** - tracks the keystrokes count for the message that is being sent
 
 - **mail_importance_type** - the message’s importance type that user selected to mark the sending mail’s priority (for example, high/low/normal)
@@ -11722,6 +12185,43 @@ The following fields are collected:
 - **Data_WindowClosed** - Duration until application window is closed
 
 - **Data_WindowDeactivated** - Last time when window containing advertisement add-in page is deactivated.
+
+#### Office.DesignerApp.App.TileClicked
+
+The event log captures time to interact for user, this helps in understanding the time user has to wait for before any mini apps screen comes for them. This information is crucial for ensuring a better Designer experience for users and tracking boot time.  It helps in capturing essential data around starting designer and mini apps. 
+
+The following fields are collected:
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **EndPoint** - Used to identify the appropriate Designer screen in which design/image creation was performed.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
 
 #### Office.Extensibility.OfficeJS.Appactivated
 
@@ -12973,6 +13473,81 @@ Indicates that the current Office session is a handoff session. This means that 
 The following fields are collected.
 
 - **ParentSessionId** - The ID of the session that will be taking over handling of the users' request.
+
+#### Office.Taos.Hub.Windows.Launched
+
+This event gets triggered whenever the app gets launched. This event is used to record the lifecycle of the app. 
+
+The following fields are collected:
+
+- **AdditionalInfo** - Additional information of the Failure.
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique id given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For exmaple, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **FailReason** - Error message of the failure.
+
+- **Feature** - The name of the feature.
+
+- **LastError** - Error code of the failure.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Method** - The name of the calling method.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **Result** - A boolean value indicating success/failure.
+
+- **Uri** - The URI of the current loaded Office Web.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
 
 #### Office.TelemetryEngine.IsPreLaunch
 
@@ -15592,6 +16167,19 @@ The following fields are collected:
 
 - **DBTExceptionType** - This is type of error (enum) which is property of exception.
 
+#### Office.Android.DocsUI.PaywallControl.SaveFlowUiShown
+
+Critical data to log the result of offers UI is shown to user or not. The data is used to understand if the user sees the relevant offer inline with their SKU.
+
+The following fields are collected:
+
+- **EventDate** - Timestamp of the event occurrence 
+
+- **ProductId** - String - ProductId of the SKU being purchased.
+
+- **SessionID** - GUID to connect events by session
+
+
 #### Office.Android.DocsUI.Views.DimePurchaseFlowState
 
 This health event attempts to capture each state that a user goes through when the user is attempting to make a purchase through the in-app purchase flow hosted by Dime. The data is used to monitor and alert on the health of the purchase flow triggered from Microsoft 365 mobile app when user opts to buy a Microsoft 365 subscription.
@@ -15987,6 +16575,214 @@ The following fields are collected:
 
 - **Data_Message** - A human-readable description of the error
 
+#### Office.DesignerApp.App.Boost
+
+The event log captures data regarding the network performance for getting boost information, including metrics on quality, latency, and any encountered errors. This information is crucial for ensuring the boost information is properly received by the client.
+ 
+The following fields are collected:
+
+- **Action** - Action taken on notification which includes, dismiss, display, and click.
+
+- **BoostLimitReached** - Indicates whether boost count is exhausted or not.
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **ElapsedTime** - Logs time elapsed in completing action.
+
+- **Error** - Logs error occurred during any activity.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **HasBoost** - Indicates whether boost count is remaining or not.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **IsCopilotPro** - Indicates whether copilot pro plan is activated or not.
+
+- **IsSuccessful** - Logs success status true or false of action.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
+
+#### Office.DesignerApp.App.InsertImageCompleted
+
+The event log captures essential data regarding the insert image operation on canvas including metrics like performance, quality of service, reliability and errors. This information is crucial for ensuring image insertion works properly. 
+
+The following fields are collected:
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **ElapsedTime** - Logs time elapsed in completing action.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **ImageSource** - Image was a gallery image, AI image or stock image.
+
+- **IsSuccessful** - Logs success status true or false of action.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+#### Office.DesignerApp.App.MobileFREAnimation
+
+The event log captures essential data regarding the first run experience (FRE) animation, including metrics on performance, quality, exit status, latency, and any encountered errors. This information is crucial for ensuring that users are able to get benefit of the FRE Animation in Designer.
+
+The following fields are collected:
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **Dismiss** - Reason for dismissing Designer guided window. It could be because of clicking cross/Ok on dialog or system closed it or outside window was touched.
+
+- **Error** - Logs error occurred during any activity.
+
+- **errorMessage** - Cause of error occurred.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **LaunchTime** - Time taken by app in starting.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **MobileNetworkQuality** - Logs quality of current mobile network.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
+#### Office.DesignerApp.App.MobileNetworkErrors
+
+The event log captures data about user network information which includes metrics like performance, quality of service, errors, strength, etc. This information is crucial for ensuring that we optimize user experience based on the network speed of user's devices.
+
+The following fields are collected:
+
+- **ApiTag** - Single word identifier of network API.
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **errorCode** - Code of error occurred.
+
+- **errorType** - Type of error occurred.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **RetryCount** - Count of retries done for network call.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **WillBeRetried** - Logs whether network call will be retried if failed.
+
+
+#### Office.DesignerApp.App.RefreshSessionId
+
+The event captures the essential health and hygiene data around session refresh while user is still in an ongoing session. It helps in capturing the usage of session ID refresh in situations when user's session is about to expire during ongoing session itself. 
+
+The following fields are collected:
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **Locale** - Locale of user.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+
+
 #### Office.DesignerApp.App.SharedDesign
 
 This event is triggered when designs or images are shared by clicking on share button. The event log captures essential data regarding the Export feature's performance, including metrics on quality of service, usage, latency, and any encountered errors. This information is crucial for ensuring the Export function operates effectively.
@@ -16070,6 +16866,63 @@ The following fields are collected:
 - **TransparentBG** - Whether bg was removed or not while exporting the design/image.
 
 - **Trigger** - What was the trigger for the design which was exported.
+
+- **UserAgeGroup** - Logs age group of user like minor or adult.
+
+- **UserIntent** - Indicates whether some operation is to be considered as active operation or not.
+
+
+#### Office.DesignerApp.App.UploadAsset
+
+The event log captures essential data regarding the upload operation performance, including metrics on quality, latency, and any encountered errors. This information is crucial for ensuring the upload operation process operates effectively. 
+
+The following fields are collected:
+
+- **assetUploadedInStorage** - Storage type where asset was uploaded.
+
+- **CorrelationId** - GUID used to correlate activities.
+
+- **ElapsedTime** - Logs time elapsed in completing action.
+
+- **Error** - Logs error occurred during any activity.
+
+- **errorCode** - Code of error occurred.
+
+- **ErrorCodeHeader** - Logs error code in header returned by network API in case of failure.
+
+- **FailureReasonHeader** - Logs error cause in header returned by network API in case of failure.
+
+- **flowId** - GUID used to identify current app flow started on home screen.
+
+- **Host** - Identifies the host app name that launches Designer.
+
+- **HostAppSessionId** - Uniquely identifies the host app session for a sub-app.
+
+- **IsSuccessful** - Logs success status true or false of action.
+
+- **Locale** - Locale of user.
+
+- **MimeType** - Mime type of asset uploaded.
+
+- **MiniAppsConfigVersion** - Configuration version of mini apps supported on home screen.
+
+- **MiniAppsEnabled** - Identifies if sub apps are enabled on Designer home screen.
+
+- **RetryCount** - Count of retries done for network call.
+
+- **SDKLaunchCorrelationId** - GUID used to correlate Designer SDK activities.
+
+- **SdkVersion** - Version of Designer SDK.
+
+- **Size** - Size of uploading asset.
+
+- **Source** - Logs source of Designer SDK launch.
+
+- **SystemLocale** - System locale of the device.
+
+- **TimeZone** - The user's time zone relative to UTC.
+
+- **UploadSource** - Source of image upload for creating designs.
 
 - **UserAgeGroup** - Logs age group of user like minor or adult.
 
@@ -16896,6 +17749,75 @@ The following fields are collected:
 - **User_ActiveUserTenantId** - Active user tenant id 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
+
+
+#### Office.Taos.Hub.Windows.AppInstance
+
+This event is triggered automatically on boot to record the performance of certain operations of the Office desktop application. This is used to measure/watch the performance of certain operations in the Office desktop application.
+
+The following fields are collected:
+
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Feature** - The name of the feature.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **MultiInstance** - A boolean representing whether multiple instances of the app is opened or not. 
+
+- **PerformanceMarkerName** - The name of the performance marker.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PerformanceMarkerUrl** - The URL of the current loaded Office web.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **UserInfo_TimeZone** - Time zone of the user.
 
 
 #### Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -18385,7 +19307,7 @@ The following fields are collected:
 
 #### Office.OneNoteIntegrations.Memory.SDX.Trace
 
-These are diagnostic traces which aren't logged immediately but put into a ring buffer. They are flushed only when an exception occurs which is also being caught and logged as a separate data event. These diagnostic traces supplement the exceptions being logged while investigating crashes. The exception may occur anywhere in the OneNote Sticky Notes experience.
+These are diagnostic traces which aren't logged immediately but put into a ring buffer. They're flushed only when an exception occurs which is also being caught and logged as a separate data event. These diagnostic traces supplement the exceptions being logged while investigating crashes. The exception may occur anywhere in the OneNote Sticky Notes experience.
 
 The exception which is logged as a separate data event helps in identifying its origin. The corresponding diagnostic traces that are logged with this event provide additional information to investigate the issue further.
 
@@ -19962,7 +20884,7 @@ The following fields are collected:
 
 - **Data_OperationType** - Type of operation
 
-- **Data_OTelJS_Sink** - Sink used by OTel logger. It is always logged blank. 
+- **Data_OTelJS_Sink** - Sink used by OTel logger. It's always logged blank. 
 
 - **Data_OTelJS_Version** - Version of OTel logger 
 
@@ -19986,7 +20908,7 @@ The following fields are collected:
 
 - **Data_Scope** - Helps in distinguishing between same trace events triggered from different points
 
-- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It is always logged blank. 
+- **Data_SDX_AssetId** - ONLY exists for store Add-ins. OMEX gives the Add in an AssetId when it goes into Store. It's always logged blank. 
 
 - **Data_SDX_BrowserToken** - Identifier that sits in the browser's cache 
 
@@ -20024,7 +20946,7 @@ The following fields are collected:
 
 - **Data_Type** - Type of action
 
-- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **Data_User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
@@ -20048,13 +20970,13 @@ The following fields are collected:
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
-- **Release_IsOutOfServiceFork** - It is always logged as true or blank 
+- **Release_IsOutOfServiceFork** - It's always logged as true or blank 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
 - **User_ActiveUserTenantId** - Active user tenant id 
 
-- **User_IsAnonymous** - Identifies if the current user is anonymous. It is always logged as false or blank. 
+- **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -20092,7 +21014,7 @@ The following fields are collected:
 
 - **WAC_Ring** - Always logged blank 
 
-- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It is always logged as blank. 
+- **WAC_ServerDocId** - Server Document ID for the document that was scanned. It's always logged as blank. 
 
 - **WAC_SessionOrigin** - Always logged blank 
 
@@ -20202,6 +21124,75 @@ The following fields are collected:
   - **FirstTimeStamp** - The first time at which the error occurred
 
   - **Trackback** - A unique identifier for a specific error
+
+#### Office.Taos.Hub.Windows.Error
+
+This event gets triggered when the control goes to error state. This event is used to record the details of the error occurred. 
+
+The following fields are collected:
+ 
+- **AppInfo_Id** - The App ID.
+
+- **AppInfo_Version** - Office desktop app version.
+
+- **AppType** - The type of the container, from which logs are emitted.
+
+- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
+
+- **DeviceInfo_Make** - The device make.
+
+- **DeviceInfo_Model** - The device model.
+
+- **DeviceInfo_NetworkCost** - Network cost type of the user (Unmetered, metered, etc.)
+
+- **DeviceInfo_NetworkType** - The type of network (Wi-Fi, Wired, Unknown).
+
+- **DeviceInfo_OsName** - OS name installed in the user's device.
+
+- **DeviceInfo_OsVersion** - The OS version installed in the user's device. 
+
+- **DeviceInfo_SDKUid** - Unique identifier for the SDK. 
+
+- **EventInfo_BaseEventType** - The event type.
+
+- **EventInfo_BaseType** - The type of the event.
+
+- **EventInfo_Level** - The event level.
+
+- **EventInfo_Name** - The name of the event.
+
+- **EventInfo_PrivTags** - The event tags.
+
+- **EventInfo_Source** - The source of the event. For example, OneCollector
+
+- **EventInfo_SdkVersion** - 1DS SDK Version.
+
+- **EventInfo_Time** - The time of the event.
+
+- **Failure_Detail** - Method name in which error occurred.
+
+- **Failure_Signature** - Signature of the failure.
+
+- **Feature** - The name of the feature.
+
+- **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
+
+- **Message** - The error message.
+
+- **PerformanceMarkerTimestamp** - The Performance Timestamp.
+
+- **PipelineInfo_AccountId** - Aria Pipeline account ID
+
+- **PipelineInfo_ClientCountry** - The device country or region (based on IP address).
+
+- **PipelineInfo_ClientIp** - The first three octets of the IP address.
+
+- **PipelineInfo_IngestionTime** - Ingestion time of the event.
+
+- **UserInfo_TimeZone** - Time zone of the user.
+
 
 #### RenewIdentityFailure
 
@@ -20364,6 +21355,8 @@ The following fields are collected for iOS:
 - **gray_scale** - Tells us if the user has turned on gray scale on their device to help us detect issues related to this setting
 
 - **guided_access** - Tells us if the user has turned on guided access on their device to help us detect issues related to this setting
+
+- **has_custom_app_language** - indicates whether user set a custom Outlook app language that is different from the device language setting.
 
 - **invert_colors** - Tells us if the user has turned on the setting to invert colors on their device to help us detect issues related to this setting
 
