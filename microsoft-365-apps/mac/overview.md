@@ -64,6 +64,15 @@ To review the latest features in each monthly release, refer to [What's new in M
 > [!TIP]
 > For early access to new features, check out the [Microsoft 365 Insider Program for Business](../insider/index.yml).
 
+#### Office LTSC for Mac 2024 features
+
+For information about the new features in Office LTSC for Mac 2021, refer to the following articles:
+
+- [What's new in Excel 2024 for Mac](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
+- [What's new in Outlook 2024 for Mac](https://support.microsoft.com/c2bb1caa-b789-4267-835c-e9701290d89e)
+- [What's new in PowerPoint 2024 for Mac](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
+- [What's new in Word 2024 for Mac](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
+
 #### Office LTSC for Mac 2021 features
 
 For information about the new features in Office LTSC for Mac 2021, refer to the following articles:

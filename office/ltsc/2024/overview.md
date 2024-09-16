@@ -44,7 +44,7 @@ Office LTSC 2024 is supported on the following operating systems:
 Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. 
 A 64-bit version of Office is required for 4K and higher resolutions.
 
-For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#areaheading-oce1c3).
+For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/microsoft-365-and-office-resources-8dabd144-d436-4aae-8c0d-37edca95f7f5).
 
 For devices running macOS, Office LTSC Standard for Mac 2024 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 
@@ -117,6 +117,17 @@ The major version of Office LTSC 2024 is 16.0, the same as Office LTSC 2021 and 
 - Add-ins and other extensibility solutions compatible with Office LTSC 2021 or Office 2019 are likely to work with Office LTSC 2024, requiring minimal testing.
 
 ## What are the new features in Office LTSC 2024?
+
+For information about the new features in Office LTSC 2024, see the following articles:
+
+- [What's new in Office 2024](https://support.microsoft.com/baadecbe-a8fc-4435-8cb8-70e93fd08b56)
+- [What's new in Access 2024](https://support.microsoft.com/a4643663-59a9-48e8-87ae-43cfdd9ba267)
+- [What's new in Excel 2024](https://support.microsoft.com/faee26b6-ad74-40a8-9304-aa6db716553f)
+- [What's new in OneNote 2024](https://support.microsoft.com/aaf9f977-037b-4665-9047-bf1b39d6ba4a)
+- [What's new in Outlook 2024](https://support.microsoft.com/c6f280d7-e776-4177-ae5a-f5281e9e9ef3)
+- [What's new in PowerPoint 2024](https://support.microsoft.com/4330d63f-ffbb-470d-bbc2-a5f340317fbc)
+- [What's new in Visio 2024](https://support.microsoft.com/0295be56-187c-4254-9463-1b67dd6e0eb1)
+- [What's new in Word 2024](https://support.microsoft.com/9fe36ecd-820b-4f42-a9a2-0861f7615954)
 
 > [!NOTE]
 > While Office LTSC 2024 provides valuable enhancements for customers who need to keep their Office apps on-premises, it doesn't include new features and functionality that's available in Microsoft 365 Apps. As a result, users don't have access to real-time collaboration, AI-driven automation, or advanced security and compliance tools tailored for a hybrid work environment.

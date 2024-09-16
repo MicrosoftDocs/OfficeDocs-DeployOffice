@@ -20,7 +20,7 @@ ms.date: 09/18/2024
 > The information in this article is only for customers who deployed Office LTSC 2024 Preview.
 
 > [!WARNING]
-> The client activation keys used in the Office LTSC 2024 Preview program expire in January 13<sup>th</sup>, 2025. After that time, Office LTSC 2024 Preview will be in reduced functionality mode. 
+> The client activation keys used in the Office LTSC 2024 Preview program expire on January 13<sup>th</sup>, 2025. After that time, Office LTSC 2024 Preview will be in reduced functionality mode. 
 >
 > For more information, see [What is reduced functionality mode?](/microsoft-365-apps/licensing-activation/overview-licensing-activation-microsoft-365-apps#what-is-reduced-functionality-mode)
 
@@ -40,7 +40,7 @@ If you’re not a volume licensed customer, [follow these instructions](#instruc
 If you activate Office by using KMS, including Active Directory-based activation, do the following steps to update Office LTSC 2024 Preview to Office LTSC 2024.
 
 1. If you haven't already done so, set up a KMS host computer. If you currently have a Windows KMS host computer on an operating system that supports Office KMS, we recommend that you use the same computer for your Office KMS host computer.
-2. Download the Office LTSC 2024 Volume License Pack from the Microsoft Download Center.
+2. Download the [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=106246) from the Microsoft Download Center.
 3. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and go to > **Billing** > **Your products** > **Volume licensing** > **Downloads & Keys** to get your KMS client activation keys for Office LTSC 2024.
 4. [Configure the KMS host computer to activate Office LTSC 2024](../../volume-license-activation/configure-a-kms-host-computer-for-office.md). You'll need both the Office LTSC 2024 Volume License Pack and your KMS client activation keys.
 5. Make sure that you’re using at least Version 2408 of Office LTSC 2024 Preview. To check your version, open Word, and go to **File** > **Account**. Under the **About Word** section, you’ll see the version and build number.
