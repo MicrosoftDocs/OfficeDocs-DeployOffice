@@ -60,7 +60,7 @@ For more information, see [Use policy settings to manage privacy controls](/micr
 
 #### Support duration
 
-Office LTSC 2021, including Project and Visio, have five years of Mainstream Support. There won’t be any Extended Support available for these products after the five years of Mainstream Support ends. For more information, see [Microsoft Lifecycle Policy](/lifecycle/).
+Office LTSC 2021, including Project and Visio, have five years of Mainstream Support. There won’t be any Extended Support available for these products after the five years of Mainstream Support ends. For more information, see [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
 
 #### Microsoft Teams
 

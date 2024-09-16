@@ -9,12 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information on how to rearm a volume licensed version of Office when deploying Office as part of an operating system image."
-ms.date: 06/21/2024
+ms.date: 09/18/2024
 ---
 
 # Rearm a volume licensed version of Office that's included in an operating system image
 
- ***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+ ***Applies to:*** *Volume licensed versions of Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
 There's a 25-day grace period from the time of installation of Key Management Service (KMS) clients before notifications to activate are displayed to the user. The 25-day grace period gives ample time for a KMS host computer to be found and activation to succeed. If activation is successful, users don't see notifications to activate.
 
@@ -38,7 +38,7 @@ You can rearm five times, unless you activate Office by using a KMS host compute
 1. Verify that the user account that is performing this procedure is a member of the Administrators group on the KMS host computer.
 2. Close all Office applications.
 3. Open an elevated command prompt and go to the Program Files\Microsoft Office\Office16 folder. If you installed the 32-bit version of Office on a 64-bit operating system, go to the Program Files (x86)\Microsoft Office\Office16 folder.
-5. Type ospprearm.exe and then press Enter. If the rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
+5. Type ospprearm.exe and then press Enter. If rearm succeeds, the following message displays: **"Microsoft Office rearm successful."**
 6. Capture the image.
 
     > [!IMPORTANT]

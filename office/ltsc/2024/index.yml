@@ -1,0 +1,86 @@
+### YamlMime:Landing
+
+title: Office LTSC 2024 deployment documentation
+summary: Resources for IT professionals and admins on how to deploy and manage Office LTSC 2024.
+
+metadata:
+  title: Office LTSC 2024 deployment documentation
+  description: Learn how to deploy and manage Office LTSC 2024.
+  author: nicholasswhite
+  ms.author: nwhite
+  manager: dougeby
+  ms.date: 09/16/2024
+  ms.topic: landing-page
+  ms.service: office-perpetual-itpro
+  ms.collection:
+    - tier1
+    - essentials-navigation
+
+landingContent:
+  # Card 
+  - title: Plan, prepare, and deploy
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Overview of Office LTSC 2024
+            url: overview.md
+      - linkListType: deploy
+        links:
+          - text: Deploy Office LTSC 2024
+            url: deploy.md
+          - text: Deploy Project 2024
+            url: /microsoft-365-apps/deploy/deployment-guide-for-project?toc=/office/ltsc/2024/toc.json#deploy-a-volume-licensed-version-of-project-2024
+          - text: Deploy Visio 2024
+            url: /microsoft-365-apps/deploy/deployment-guide-for-visio?toc=/office/ltsc/2024/toc.json#deploy-visio-ltsc-2024
+          - text: Deploy OneNote 2024
+            url: /microsoft-365-apps/deploy/deployment-guide-onenote?toc=/office/ltsc/2024/toc.json
+
+  # Card
+  - title: Activation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Volume activation of Office
+            url: ../../volume-license-activation/plan-volume-activation-of-office.md
+      - linkListType: tutorial
+        links:
+          - text: Configure a KMS host computer
+            url: ../../volume-license-activation/configure-a-kms-host-computer-for-office.md?toc=/office/ltsc/2024/toc.json
+          - text: Configure DNS for KMS
+            url: ../../volume-license-activation/configure-dns-to-activate-office-by-using-kms.md?toc=/office/ltsc/2024/toc.json            
+      - linkListType: how-to-guide
+        links:
+          - text: Activate by using KMS
+            url: ../../volume-license-activation/activate-office-by-using-kms.md?toc=/office/ltsc/2024/toc.json
+          - text: Activate by using MAK
+            url: ../../volume-license-activation/activate-office-by-using-mak.md?toc=/office/ltsc/2024/toc.json
+          - text: Activate by using Active Directory
+            url: ../../volume-license-activation/activate-office-by-using-active-directory.md?toc=/office/ltsc/2024/toc.json
+
+  # Card
+  - title: Update
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: How Office LTSC 2024 gets updated
+            url: update.md#how-office-ltsc-2024-gets-updated
+          - text: How updates are different in Office LTSC 2024
+            url: update.md#how-updates-are-different-in-office-ltsc-2024
+      - linkListType: how-to-guide
+        links:
+          - text: Configure where Office LTSC 2024 gets updates from
+            url: update.md#configure-where-office-ltsc-2024-gets-updates-from
+          - text: Check for updates for Office LTSC 2024
+            url: update.md#check-for-updates-for-office-ltsc-2024
+          - text: Use Group Policy to specify update settings
+            url: update.md#use-group-policy-to-specify-update-settings
+
+  # Card
+  - title: Troubleshooting and Support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Troubleshoot Office LTSC 2024
+            url: /office/troubleshoot/office-client-welcome
+          - text: End User Help and Learning
+            url: https://support.microsoft.com/microsoft-365

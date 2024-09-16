@@ -11,23 +11,23 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: true
 description: "Describes for admins how activation works for Office for Mac, for both Office 365 plans and volume license agreements"
-ms.date: 03/01/2023
+ms.date: 09/18/2024
 ---
 
 # Overview of activation for Office for Mac
 
-***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
   
-To use Office for Mac in your organization, it needs to be activated. How you activate Office for Mac depends on whether your organization has a Microsoft 365 (or Office 365) plan or has a volume license agreement. But in both cases your users won't have to enter any product keys.
+To use Office for Mac in your organization, it needs to be activated. How you activate Office for Mac depends on whether your organization has a Microsoft 365 plan or has a volume license agreement. But in both cases your users won't have to enter any product keys.
 
 > [!NOTE]
 > If you're an Office user trying to activate a personal copy of Office for Mac, [follow these instructions](https://support.microsoft.com/office/7f6646b1-bb14-422a-9ad4-a53410fcefb2) instead of reading this article.
 
-## Activate Microsoft 365 versions of Office for Mac
+## Activate Microsoft 365 for Mac
 
-If your organization has a Microsoft 365 (or Office 365) plan, make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office to your Mac users. If you don't assign a user a license, you can still deploy Office to that user, but the user won't be able to activate and use Office on their Mac.
+If your organization has a Microsoft 365 plan, make sure you [assign each user a license](/microsoft-365/admin/manage/assign-licenses-to-users) for Office before you deploy Office to your Mac users. If you don't assign a user a license, you can still deploy Office to that user, but the user won't be able to activate and use Office on their Mac.
   
-For Microsoft 365 (and Office 365) customers, Office for Mac activates by contacting the Office Licensing Service on the internet. The Office Licensing Service keeps track of which users are licensed and how many devices they've installed Office on.
+Microsoft 365 for Mac activates by contacting the Office Licensing Service on the internet. The Office Licensing Service keeps track of which users are licensed and how many devices they've installed Office on.
   
 After you deploy Office, your users are prompted to activate Office the first time they use it. Make sure users are connected to the internet when they activate Office. On the **Sign in to Activate Office** screen, users should select **Sign In**, and then enter their email address and password.
   
@@ -43,7 +43,7 @@ Your users can manage their existing Office installations by signing into [https
   
 ## Activate volume licensed versions of Office for Mac
 
-To activate a volume licensed version of Office for Mac, such as Office LTSC for Mac 2021 or Office 2019 for Mac, use the Volume License (VL) Serializer. You can download the VL Serializer by signing into the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx). You run the VL Serializer on each device. By doing this, your Mac users won't see any activation prompts when they first open their copy of Office.
+To activate a volume licensed version of Office for Mac, such as Office LTSC for Mac 2024 or Office LTSC for Mac 2021, use the Volume License (VL) Serializer. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com/). Go to > **Billing** > **Your products** > **Volume licensing** > **Download and keys** and download the VL Serializer. Run the VL Serializer on each device. By doing this, your Mac users won't see any activation prompts when they first open their copy of Office.
 
 For more information, see [Overview of the Volume License (VL) Serializer](volume-license-serializer.md).
   

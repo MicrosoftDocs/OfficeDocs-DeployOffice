@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows preferences that IT Pros can set for Outlook for Mac and Outlook 2021 for Mac."
-ms.date: 08/23/2024
+ms.date: 09/18/2024
 ---
 
 # Set preferences for Outlook for Mac
 
-***Applies to:*** *Outlook for Mac, Outlook LTSC for Mac 2021, Outlook 2019 for Mac*
+***Applies to:*** *Outlook for Mac, Outlook Long Term Service Channel (LTSC) for Mac 2024, Outlook LTSC for Mac 2021*
 
-The following preferences can be used to simplify account setup for Microsoft 365 (or Office 365) mailboxes, help protect company data, and support a streamlined user experience.
+The following preferences can be used to simplify account setup for Microsoft 365 mailboxes, help protect company data, and support a streamlined user experience.
 
 As an IT admin, you can provide Mac users in your organization with a standard set of preferences for Outlook in either of the following ways:
 

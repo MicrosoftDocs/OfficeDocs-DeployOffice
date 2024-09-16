@@ -9,12 +9,12 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about the ospp.vbs and the slmgr.vbs scripts, and the Volume Activation Management Tool (VAMT)."
-ms.date: 04/26/2024
+ms.date: 09/18/2024
 ---
 
 # Tools to manage volume activation of Office
 
-***Applies to:*** *Volume licensed versions of Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
+***Applies to:*** *Volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016 (including Project and Visio)*
 
 The Office Software Protection Platform script (ospp.vbs), the Software License Manager script (slmgr.vbs), and the Volume Activation Management Tool (VAMT) can help you configure and test volume licensed versions of Office, including Project and Visio. Before you read this article, we recommend that you read the following articles:
 - [Overview of volume activation of Office](plan-volume-activation-of-office.md)
@@ -225,6 +225,7 @@ The slmgr.vbs script requires at least one parameter. If you run the script with
 |/ sri *RenewalInterval*  |Changes how often a KMS client attempts to renew its activation by contacting a KMS host computer. It replaces  RenewalInterval with a value expressed in minutes. The default setting is 10080 minutes (seven days). This setting overrides the local KMS client settings.   |
 
 > [!NOTE]
+> - Activation ID for Office LTSC 2024: 8D368FC1-9470-4BE2-8D66-90E836CBB051
 > - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
 > - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
 > - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
@@ -244,7 +245,24 @@ The following table shows the command options for activating an AD DS forest by 
 Volume Activation Management Tool (VAMT) provides a graphical user interface to manage volume activation. For more information, see [Volume Activation Management Tool (VAMT) technical reference](/windows/deployment/volume-activation/volume-activation-management-tool).
 
 > [!NOTE]
-> Office LTSC 2021 and Office 2019 require at least VAMT 3.1.
+> - Office LTSC 2024, Office LTSC 2021, and Office 2019 require at least VAMT 3.1.
+
+### Manage volume activation for Office LTSC 2024 using VAMT
+
+To manage volume activation for Office LTSC 2024 using VAMT, follow these steps:
+
+1. Identify the installation folder for VAMT, for example, `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT3`.
+2. Download the Office LTSC 2024 support files from the [Office VAMT download link](https://download.microsoft.com/download/f/1/8/f181a628-aa2c-49ec-be5c-236bbcfa1368/OfficeVAMT.zip).
+3. Copy the `pkeyconfig-office24-client.xrm-ms`, `pkeyconfig-office24-kmshost.xrm-ms`, and `Office24.cilx` files into the appropriate VAMT directories:
+   - Copy the `.xrm-ms` files into the `VAMT3\pkconfig` folder.
+   - Copy the `.cilx` file to a location where it can be easily accessed for import.
+
+To import Office LTSC 2024 data into VAMT:
+
+1. Open VAMT.
+2. In the right-side **Actions** pane, select **Import list** to open the **Import List** dialog box.
+3. In the **Import List** dialog box, navigate to the location of the `Office24.cilx` file, choose the file, and select **Open**.
+4. In the **Volume Activation Management Tool** dialog box, select **OK** to begin the import. VAMT will display a progress message while the file is being imported. Select **OK** when a message confirms that the import has completed successfully.
   
 ## Related articles
 

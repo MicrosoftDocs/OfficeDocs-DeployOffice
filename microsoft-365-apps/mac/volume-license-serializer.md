@@ -10,24 +10,23 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Provides admins with information about the Volume License (VL) Serializer, which is used to activate volume licensed versions of Office for Mac."
-ms.date: 09/03/2024
+ms.date: 09/18/2024
 ---
 
 # Overview of the Volume License (VL) Serializer
 
-***Applies to:*** *Office Long Term Service Channel (LTSC) for Mac 2021, Office 2019 for Mac* <!--Update for Office LTSC 2024 here.-->
+***Applies to:*** *Office Long Term Service Channel (LTSC) for Mac 2024, Office LTSC for Mac 2021* 
 
-The Volume License Serializer (VL) is used to activate Office LTSC for Mac 2021 or Office 2019 for Mac as a volume licensed version. The VL Serializer is a package (.pkg) file that you run on a Mac where Office is installed.
+The Volume License Serializer (VL) is used to activate Office LTSC for Mac 2024 or Office LTSC for Mac 2021. The VL Serializer is a package (.pkg) file that you run on a Mac where Office is installed.
 
 ## Download the Volume License (VL) Serializer from the Microsoft 365 admin center
 
 To download the VL Serializer, do the following steps:
 
-1. Sign in to the Microsoft 365 admin center and navigate to the **Billing** > [Your products](https://admin.cloud.microsoft/?#/subscriptions) page.
-1. Select the **Volume licensing** tab. (You need to be a volume licensing administrator to access this section.)
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and go to > **Billing** > **Your products** > **Volume licensing**. You need to be a volume licensing administrator to access the **Volume licensing** section.
 :::image type="content" source="media/volume-license-serializer/volume-licensing.png" alt-text="Microsoft 365 admin center, highlighting the navigation path to Your products and the Volume licensing section." lightbox="media/volume-license-serializer/volume-licensing-lb.png":::
 1. Go to the **Download and keys** tab.
-1. Search for "Office LTSC Standard for Mac 2021" or "Office 2019 for Mac Standard" (depending on your licensed version of Office).
+1. Search for "Office LTSC Standard for Mac 2024" or "Office LTSC Standard for Mac 2021" (depending on your licensed version of Office).
 1. Select the **Download** link in the results panel.
 1. Choose **Continue** at the bottom of the window.
 1. Select the download icon to download the VL Serializer .iso file.
@@ -35,20 +34,17 @@ To download the VL Serializer, do the following steps:
 
 Then, deploy and run the VL Serializer package file on each Mac that you want to activate Office as a volume licensed version.
 
-<!--Update for Office LTSC 2024 here.-->
+#### Office LTSC for Mac 2024 information
+
+- The name of the package file is Microsoft_Office_LTSC_2024_VL_Serializer.pkg.
+- Volume licensed versions of Office LTSC for Mac 2024 have version numbers of 16.89 or higher.
+- The management tool now runs the VL Serializer in the background while users continue working in Office LTSC  for Mac 2021. After users close and reopen the app, Office switches to the Office LTSC for Mac 2024 license. This approach minimizes disruption during the transition.
 
 #### Office LTSC for Mac 2021 information
 
 - The name of the package file is Microsoft_Office_LTSC_2021_VL_Serializer.pkg.
 - The package file is approximately 12 MB in size.
 - Volume licensed versions of Office LTSC for Mac 2021 have version numbers of 16.53 or higher.
-- The management tool now runs the VL Serializer in the background while users continue working in Office 2019 for Mac. After users close and reopen the app, Office switches to the Office LTSC for Mac 2021 license. This approach minimizes disruption during the transition from Office 2019 for Mac to Office LTSC for Mac 2021.
-
-#### Office 2019 for Mac information
-
-- The name of the package file is Microsoft_Office_2019_VL_Serializer_Universal.pkg.
-- The package file is approximately 11.5 MB in size.
-- Volume licensed versions of Office 2019 for Mac have version numbers of 16.17 or higher.
 
 ## Additional information about the VL Serializer
 

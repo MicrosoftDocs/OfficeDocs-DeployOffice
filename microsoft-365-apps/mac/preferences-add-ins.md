@@ -11,12 +11,12 @@ ms.localizationpriority: medium
 ms.collection: Tier3
 recommendations: false
 description: "Shows IT Pros how to set a preference to prevent users from installing and running add-ins for Office for Mac."
-ms.date: 03/01/2023
+ms.date: 09/18/2024
 ---
 
 # Set a preference to prevent the use of add-ins
 
-***Applies to:*** *Office for Mac, Office LTSC for Mac 2021, Office 2019 for Mac*
+***Applies to:*** *Microsoft 365 for Mac, Office Long Term Service Channel (LTSC) for Mac 2024, LTSC for Mac 2021*
 
 If you’re an admin, you may want to prevent Mac users from installing and running Office add-ins for Word, Excel, and PowerPoint. To do that, configure a preference using the following information.
 
@@ -45,8 +45,8 @@ These preferences are CFPreferences-compatible, which means that they can be set
 > [!NOTE]
 > Neither of these preferences affect Office add-ins in the following versions of Outlook:
 > - Outlook for Mac
+> - Outlook LTSC for Mac 2024
 > - Outlook LTSC for Mac 2021
-> - Outlook 2019 for Mac
 
 ## Related articles
 
