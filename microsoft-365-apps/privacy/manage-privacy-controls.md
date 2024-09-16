@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 05/31/2024
+ms.date: 09/16/2024
 ---
 
 # Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise
@@ -102,7 +102,7 @@ You can use the *Allow the use of connected experiences in Office that analyze c
 Note that if you disable the *Allow the use of connected experiences in Office* policy setting, connected experiences that analyze content won’t be available to your users.
 
 > [!NOTE]
-> If you disable the *Allow the use of connected experiences in Office* policy setting, Copilot for Microsoft 365 features won’t be available to your users in certain apps. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> If you disable the *Allow the use of connected experiences in Office* policy setting, Microsoft 365 Copilot features won’t be available to your users in certain apps. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](/copilot/microsoft-365/microsoft-365-copilot-privacy#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 
 ### Policy setting for connected experiences that download online content
 

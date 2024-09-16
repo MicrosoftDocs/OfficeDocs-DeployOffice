@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 04/18/2024
+ms.date: 09/16/2024
 ---
 
 # Overview of optional connected experiences in Office
@@ -88,7 +88,7 @@ To print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/micr
 [Research](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397) connects to cloud-backed services to obtain dictionary, thesaurus, translation, and word lookup results. When you use this experience, it connects to Microsoft-owned services by default and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [privacy statement](https://privacy.microsoft.com/privacystatement) apply. Research allows you to add other service providers. If you decide to use another service provider, additional terms may apply.
 
 > [!NOTE]
-> Research is different than Researcher. In newer versions of Office, another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed in the [Experiences that rely on Bing](#experiences-that-rely-on-bing) section.
+> Research is different than Researcher. In newer versions of Office another experience called Researcher is available in addition to Research. Researcher is a newer service, powered by Bing, and is discussed in the [Experiences that rely on Bing](#experiences-that-rely-on-bing) section.
 
 ### Send to Kindle
 
@@ -102,6 +102,14 @@ On Outlook for iOS, your next upcoming event is summarized at the top of your em
 ### Weather Bar in Outlook
 
 The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) in Outlook displays weather forecasts for geographic locations you choose. During use, the Weather Bar in Outlook connects to MSN Weather by default. MSN is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement) apply. When you use the Weather Bar with MSN Weather, Microsoft doesn't detect your location, and the cities that you choose to display aren't linkable to you. You may [change this default setting](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) to connect to other weather service providers. If you decide to use another weather service provider, you'll need to check the privacy statement and license terms of that provider to know which terms apply.
+
+## Experiences for Microsoft 365 Copilot
+
+### Web grounding in Microsoft 365 Copilot and Microsoft Copilot
+
+Web grounding allows Microsoft 365 Copilot chat and Microsoft Copilot chat to reference real-time web content when responding to your prompt. Referencing web content improves the quality of the responses provided by Copilot. Microsoft 365 Copilot chat and Microsoft Copilot chat use the Bing search service to reference web content. The Bing search service is a separate business from Microsoft 365 and is managed independently by Microsoft. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) apply to the use of the Bing search service.  
+
+In Microsoft 365 Copilot, there's a **Web content** toggle that allows you to control whether or not you want to use web grounding. You can find the toggle by selecting the plugin menu in the chat input box.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
