@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 04/25/2024
+ms.date: 09/17/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -30,8 +30,20 @@ Cloud Policy is part of the [Microsoft 365 Apps admin center](https://config.off
 [!INCLUDE [Roles requirements](./includes/requirements-roles.md)]
 
 ### Licensing requirements
-<!--Using include for adding requirements-->
-[!INCLUDE [License requirements](./includes/requirements-licenses.md)]
+
+Your user must be assigned to one of the following subscription plans:
+
+| Type       | Subscription Plan |
+| ---------- | ----------------- |
+| Education  | <li>Microsoft 365 A3</li><li>Microsoft 365 A5</li> |
+| Business   | <li>Microsoft 365 Business Standard</li><li>Microsoft 365 Business Premium</li> |
+| Enterprise | <li>Office 365 E3</li><li>Office 365 E5</li><li>Microsoft 365 E3</li><li>Microsoft 365 E5</li> |
+| Government | <li>Microsoft 365 G3</li><li>Microsoft 365 G5</li> |
+
+> [!IMPORTANT]
+> The following plans are not supported:
+> - Microsoft 365 operated by 21Vianet
+> - Microsoft 365 GCC High and DoD
 
 > [!NOTE]
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
