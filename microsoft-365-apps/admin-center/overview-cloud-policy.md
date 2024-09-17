@@ -46,7 +46,6 @@ Your user must be assigned to one of the following subscription plans:
 > - Microsoft 365 GCC High and DoD
 
 > [!NOTE]
-> - Any subscription plan that includes Exchange, SharePoint, or Microsoft Office will allow access to the Cloud Policy service.
 > - A policy configuration can't be applied to volume licensed versions of Office that use Click-to-Run, such as Office LTSC Professional Plus 2021 or Office Standard 2019.
 > - You can create a policy configuration for Microsoft 365 Apps for business, but only policy settings related to privacy controls are supported. For more information, see [Use policy settings to manage privacy controls for Microsoft 365 Apps for enterprise](../privacy/manage-privacy-controls.md).
 
