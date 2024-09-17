@@ -8,7 +8,6 @@ ms.topic: conceptual
 ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier1
-ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 ms.date: 09/18/2024
