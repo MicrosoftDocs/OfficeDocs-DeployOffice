@@ -2482,17 +2482,17 @@
     },
     {
       "source_path": "office/ltsc/preview/overview-ltsc-preview.md",
-      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_url": "/office/ltsc/preview/update-from-ltsc-preview",
       "redirect_document_id": false
     },
     {
       "source_path": "office/ltsc/preview/install-ltsc-preview.md",
-      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_url": "/office/ltsc/preview/update-from-ltsc-preview",
       "redirect_document_id": false
     },
     {
       "source_path": "office/ltsc/preview/overview-mac-preview.md",
-      "redirect_url": "office/ltsc/preview/update-from-ltsc-preview",
+      "redirect_url": "/office/ltsc/preview/update-from-ltsc-preview",
       "redirect_document_id": false
     }
   ]
