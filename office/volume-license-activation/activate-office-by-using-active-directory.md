@@ -42,7 +42,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
 :::image type="content" source="media/activate-office-by-using-active-directory/volume-licensing.png" alt-text="Microsoft 365 admin center, highlighting the navigation path to Your products and the Volume licensing section." lightbox="media/activate-office-by-using-active-directory/volume-licensing-lb.png":::
 4. Go to the **Download and keys** tab and get your KMS key for your version of Office.
 5. Download the appropriate Office Volume License Pack from the Microsoft Download Center:
-    - Office LTSC 2024 Volume License Pack
+    - [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=106246)
     - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
     - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
     - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)

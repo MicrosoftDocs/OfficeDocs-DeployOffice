@@ -61,6 +61,7 @@ A key difference between Microsoft 365 Apps and Office LTSC is that Microsoft 36
 
 > [!NOTE]  
 > Office LTSC 2024 and Office LTSC 2021 are designed for specific scenarios, such as regulated devices that cannot accept feature updates, process control devices on manufacturing floors, and specialty systems that cannot connect to the internet.
+> For more information, see [Overview of Office LTSC 2024](/office/ltsc/2024/overview) and [Overview of Office LTSC 2021](/office/ltsc/2021/overview).
 
 This article provides guidance on upgrading to Microsoft 365 Apps.
 

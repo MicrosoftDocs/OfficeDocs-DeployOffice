@@ -38,7 +38,7 @@ If your KMS host computer has internet access:
 1. Select the **Volume licensing** tab (only volume licensing administrators can access this section).  
 1. Go to the **Download and keys** tab, then download the KMS key for each product and version of Office that you want to activate using KMS.
 1. Download and run the appropriate Office Volume License Pack executable from the Microsoft Download Center.
-- Office LTSC 2024 Volume License Pack
+- [Office LTSC 2024 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=106246)
 - [Office LTSC 2021 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=103446)
 - [Office 2019 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=57342)
 - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
