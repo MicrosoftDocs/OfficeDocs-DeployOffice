@@ -140,7 +140,7 @@ In addition, if you set this preference to `FALSE`, most other connected experie
 
 But even if you set this preference to `FALSE`, limited Office functionality will remain available, such as synching a mailbox in Outlook, and Teams and Skype for Business will continue to work. [Essential services](essential-services.md), such as the licensing service that confirms that you’re properly licensed to use Office, will also remain available.
 
-If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has Office LTSC Standard for Mac 2021, then the user can't turn off most connected experiences.
+If the user has a Microsoft 365 (or Office 365) subscription and is signed in with a work or school account, or if the user has either Office LTSC Standard for Mac 2024 or Office LTSC Standard for Mac 2021, then the user can't turn off most connected experiences.
 
 For other users, such as home users with a Microsoft 365 subscription, a user can choose to turn off most connected experiences by going to **Preferences** > **Privacy**.
 
