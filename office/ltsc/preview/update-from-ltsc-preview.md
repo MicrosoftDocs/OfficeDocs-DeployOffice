@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 hideEdit: true
+description: "Provides IT admins with information on how to update from Office LTSC preview to Office LTSC 2024."
 ms.date: 09/18/2024
 ---
 
