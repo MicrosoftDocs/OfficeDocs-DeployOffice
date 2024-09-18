@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "Configuration options for the Office Deployment Tool"
-ms.date: 08/15/2024
+ms.date: 09/18/2024
 
 ---
 
@@ -113,12 +113,14 @@ Example values:
 - Version="MatchInstalled"
 
 
-### OfficeClientEdition attribute (part of Add element) 
+### OfficeClientEdition attribute (part of Add element)
 
 Optional.
 
+Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported.
 
-Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported. 
+> [!NOTE]
+> For Arm-based devices, Windows 11 is the minimum supported version. Installing 32-bit Microsoft 365 Apps on Arm-based devices isn't supported.
 
 Allowed values:
 
