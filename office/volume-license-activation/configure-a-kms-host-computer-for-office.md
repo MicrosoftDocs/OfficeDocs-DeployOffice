@@ -56,7 +56,7 @@ If the KMS host computer doesn't have internet access, activate it by telephone.
    cscript slmgr.vbs /dti ACTIVATIONID
  ```   
 Replace *ACTIVATIONID* with the Activation ID for your version of Office.</br>
-- Activation ID for Office LTSC 2024: 8D368FC1-9470-4BE2-8D66-90E836CBB051
+- Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
 - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
 - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
 - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7</br>  
@@ -78,6 +78,7 @@ Replace *CONFIRMATIONID* with the 48-digit confirmation ID that you received ove
 
 Replace *ACTIVATIONID* with the Activation ID for your version of Office.
 
+- Activation ID for Office LTSC 2024: F3D89BBF-C0EC-47CE-A8FA-E5A5F97E447F
 - Activation ID for Office LTSC 2021: 47F3B983-7C53-4D45-ABC6-BCD91E2DD90A
 - Activation ID for Office 2019: 70512334-47B4-44DB-A233-BE5EA33B914C
 - Activation ID for Office 2016: 98EBFE73-2084-4C97-932C-C0CD1643BEA7
