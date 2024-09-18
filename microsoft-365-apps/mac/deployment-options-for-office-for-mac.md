@@ -99,10 +99,6 @@ If you're a volume-licensed customer of Office LTSC for Mac 2024 or Office LTSC 
 1. Install the latest Office updates on each Mac where Office is installed.
 2. Have users open any Office app and sign in with their Microsoft 365 account.
 
-> [!TIP]
-> When multiple license types are present on the device, apps such as Word, Excel, PowerPoint, and Outlook will prefer to use a subscription license.
-> If the user signs out of their Microsoft 365 account, the apps will revert to the volume license.
-
 #### Upgrade to Office LTSC for Mac 2024 (volume license)
 
 If you're a volume licensed customer, you can upgrade to Office LTSC for Mac 2024 without having to uninstall Office for Mac 2021. Just follow these steps:
