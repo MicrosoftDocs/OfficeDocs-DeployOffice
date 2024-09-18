@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: true
 description: "Cloud Policy lets you enforce policy settings for Microsoft 365 Apps for enterprise on a user's device, even if the device isn't domain joined or otherwise managed."
-ms.date: 09/17/2024
+ms.date: 09/18/2024
 ---
 
 # Overview of Cloud Policy service for Microsoft 365
@@ -52,6 +52,9 @@ Your user must be assigned to one of the following subscription plans:
 ### Product version requirements
 <!--Using include for adding requirements-->
 [!INCLUDE [Version requirements](./includes/requirements-versions.md)]
+
+> [!NOTE]  
+> For GCC customers, the minimum supported Office client version for policies to be delivered to Microsoft 365 Apps running on Windows is *Version 2410* or later.
 
 ### Network requirements
 <!--Using include for adding requirements-->
