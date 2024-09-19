@@ -21,12 +21,6 @@ items:
     items:
       - name: Office 2016, 2013, 2010, and 2007
         href: plan-upgrade-older-versions-office.md
-      - name: Office 2013 servers
-        href: /microsoft-365/enterprise/upgrade-office-2013-clients-servers
-      - name: Office 2010 servers
-        href: /microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products
-      - name: Office 2007 servers
-        href: /microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products
 
   - name: Upgrade assistance
     items:
