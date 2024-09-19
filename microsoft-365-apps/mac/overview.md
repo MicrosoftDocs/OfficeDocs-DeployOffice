@@ -12,7 +12,7 @@ ms.collection: Tier3
 ms.custom: intro-overview
 recommendations: true
 description: "Provides general information for admins about Office for Mac to help them plan deployments to users in their organization"
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 
 # Overview of Office for Mac (for admins and IT Pros)
@@ -31,17 +31,17 @@ The following Office apps are available for devices running macOS:
 
 The following sections are intended to provide information to help you plan your deployment of Office to Mac users in your organization.
 
-For more information, refer to [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md).
+For more information, see [Deployment options for admins for Office for Mac](deployment-options-for-office-for-mac.md).
 
 ## System requirements
 
-Office for Mac is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft will remove support for the oldest version and support the newest and previous two versions of macOS. For more information, refer to [Upgrade macOS to continue receiving Microsoft 365 and Office for Mac updates](https://support.microsoft.com/office/16b8414f-08ec-4b24-8c91-10a918f649f8).
+Office for Mac is supported on the three most recent versions of macOS. As new major versions of macOS are made generally available, Microsoft removes support for the oldest version and support the newest and previous two versions of macOS. For more information, see [Upgrade macOS to continue receiving Microsoft 365 and Office for Mac updates](https://support.microsoft.com/office/16b8414f-08ec-4b24-8c91-10a918f649f8).
 
-For all the system requirements, refer to [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+For all the system requirements, refer to [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/8dabd144-d436-4aae-8c0d-37edca95f7f5).
 
 ## Chipset support
 
-Office provides native support for both Apple silicon and Intel-based Mac devices. All installation and update packages are provided in Universal 2 format. For more information, refer to [Microsoft 365, Office 2021, and Office 2019 support for Apple silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
+Office provides native support for both Apple silicon and Intel-based Mac devices. All installation and update packages are provided in Universal 2 format. For more information, see [Microsoft 365, Office 2021, and Office 2019 support for Apple silicon](https://support.microsoft.com/office/c55b603e-14a6-4b69-bdc0-2bb4c9a36834).
 
 ## Languages
 
@@ -49,11 +49,11 @@ All the [supported languages](https://support.microsoft.com/office/26d30382-9fba
 
 ## Updates
 
-Office for Mac is updated approximately once a month. These updates include, as needed, security updates and non-security updates, such as updates that provide stability or performance improvements for Office. For those users with a Microsoft 365 plan, these updates can also include new or improved features. For more information, refer to [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
+Office for Mac is updated approximately once a month. These updates include, as needed, security updates and nonsecurity updates, such as updates that provide stability or performance improvements for Office. For those users with a Microsoft 365 plan, these updates can also include new or improved features. For more information, see [Deploy updates for Office for Mac](deploy-updates-for-office-for-mac.md).
 
 ## Features
 
-For information about features in the various versions of Office for Mac, review the following resources. Keep in mind that Office LTSC for Mac 2024 and Office LTSC for Mac 2021 don't receive new features after they've been released. If you want to get new Office features on an on-going basis, you should consider upgrading to a Microsoft 365 plan that includes Office.
+For information about features in the various versions of Office for Mac, review the following resources. Keep in mind that Office LTSC for Mac 2024 and Office LTSC for Mac 2021 don't receive new features. If you want to get new Office features on an ongoing basis, you should consider upgrading to a Microsoft 365 plan that includes Office.
 
 If you're looking for information to help your users get started with Office for Mac, review the resources on [Office Help & Training](https://support.microsoft.com/office).
 
@@ -83,7 +83,7 @@ For information about the new features in Office LTSC for Mac 2021, refer to the
 
 ## Privacy controls
 
-There are preference settings available that allow you to configure settings related to diagnostic data and connected experiences for Office on a Mac. For more information, refer to [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
+There are preference settings available that allow you to configure settings related to diagnostic data and connected experiences for Office on a Mac. For more information, see [Use preferences to manage privacy controls for Office for Mac](../privacy/mac-privacy-preferences.md).
 
 ## App bundles
 
@@ -91,7 +91,7 @@ The app bundle for each app, such as Word, includes all the resources needed to 
 
 ## Customizations
 
-To help improve security, Office for Mac has implemented Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. Don't add, change, or remove files in an app bundle. For example, even if you don't need the French language resource files for Excel, don't delete them. This change prevents Excel from starting. But, you can still [configure preferences](deploy-preferences-for-office-for-mac.md) for each app.
+To help improve security, Office for Mac implemented Apple app sandboxing guidelines. This means that you can't customize the app bundle before or after you deploy Office. Don't add, change, or remove files in an app bundle. For example, even if you don't need the French language resource files for Excel, don't delete them. This change prevents Excel from starting. But, you can still [configure preferences](deploy-preferences-for-office-for-mac.md) for each app.
 
 ## App icons
 
@@ -101,6 +101,6 @@ When you deploy Office on a Mac, the app icons aren't automatically added to the
 
 The major version of Microsoft 365 for Mac, Office LTSC for Mac 2024, and Office LTSC for Mac 2021 is 16.x. Since the major version is the same, application settings, including policies, preferences, and preference domains are similar for the three versions of Office for the Mac.
 
-Also, add-ins and other extensibility solutions that were compatible with an older version will most likely be compatible with a newer version or will require minimal testing. For example, when upgrading from Office LTSC for Mac 2021 to Office LTSC for Mac 2024.
+Also, add-ins and other extensibility solutions that were compatible with an older version will most likely be compatible with a newer version or require minimal testing. For example, when upgrading from Office LTSC for Mac 2021 to Office LTSC for Mac 2024.
 
 Office LTSC for Mac 2024 has version numbers of 16.89 or higher. Office LTSC for Mac 2021 has version numbers of 16.53 or higher.

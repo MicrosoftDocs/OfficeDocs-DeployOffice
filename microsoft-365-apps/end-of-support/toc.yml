@@ -21,12 +21,6 @@ items:
     items:
       - name: Office 2016, 2013, 2010, and 2007
         href: plan-upgrade-older-versions-office.md
-      - name: Office 2013 servers
-        href: /microsoft-365/enterprise/upgrade-office-2013-clients-servers
-      - name: Office 2010 servers
-        href: /microsoft-365/Enterprise/upgrade-from-office-2010-servers-and-products
-      - name: Office 2007 servers
-        href: /microsoft-365/Enterprise/upgrade-from-office-2007-servers-and-products
 
   - name: Upgrade assistance
     items:
@@ -38,7 +32,7 @@ items:
   - name: Related resources
     items:
       - name: Office system requirements
-        href: https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources
+        href: https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47
       - name: Windows and Office support matrix (PDF)
         href: https://aka.ms/windows-office-support-matrix
       - name: Microsoft Office End of Support (Tech Community)

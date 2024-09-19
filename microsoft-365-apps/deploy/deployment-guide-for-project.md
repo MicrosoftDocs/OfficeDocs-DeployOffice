@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 
 # Deployment guide for Project
@@ -23,7 +23,7 @@ How you deploy Project to the users in your organization depends on which versio
 - Project Professional 2019 or Project Standard 2019, available as a one-time purchase through a volume licensing agreement.
 - Project Professional 2016 or Project Standard 2016, available as a one-time purchase through a volume licensing agreement.
 
-Before you deploy, be sure to [review the system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the version of Project that you plan to deploy to the users in your organization.
+Before you deploy, be sure to [review the system requirements](https://support.microsoft.com/topic/9e73a4c7-f110-473b-9223-1ab62769ec59) for the version of Project that you plan to deploy to the users in your organization.
   
 > [!IMPORTANT]
 > There are some combinations of Office, Visio, and Project that can't be installed together on the same device. For more information, see [Supported scenarios for installing different versions of Office, Visio, and Project on the same computer](install-different-office-visio-and-project-versions-on-the-same-computer.md).
