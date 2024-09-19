@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with information about the implications of Windows 7 end of support on Microsoft 365 Apps."
-ms.date: 02/05/2024
+ms.date: 09/19/2024
 ---
 
 # Windows 7 end of support and Microsoft 365 Apps
@@ -20,9 +20,9 @@ ms.date: 02/05/2024
 > - Microsoft 365 Apps is no longer supported on Windows 7.
 > - If you're a home user running Microsoft 365 or Office on Windows 7, [read this article](https://support.microsoft.com/office/34e28be4-1e4f-4928-b210-3f45d8215595) instead of reading the following article.
 
-Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
+Microsoft 365 is governed by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers to stay current as per the servicing and [system requirements](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47) for the product or service. These requirements include using Microsoft 365 Apps on a Windows operating system that is currently in support.
 
-Using Microsoft 365 Apps on older, unsupported operating systems may cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
+Using Microsoft 365 Apps on older, unsupported operating systems could cause performance and reliability issues over time. Therefore, if your organization is using Microsoft 365 Apps on devices running Windows 7, we strongly recommend your organization moves those devices to Windows 11 or Windows 10.
 
 ## Security updates for Microsoft 365 Apps on Windows 7
 
@@ -78,7 +78,7 @@ If you're getting updates directly from the Office CDN on the internet, after th
 
 Non-subscription versions of Office used by organizations continue to be supported based on the [Fixed Lifecycle Policy](/lifecycle/policies/fixed). To see specific end of support dates for non-subscription versions of Office, go to [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
-Even if your version of Office is still supported, Windows 7 no longer receives security updates, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), such as Windows 11 or Windows 10.
+Even if your version of Office is still supported, Windows 7 no longer receives security updates, leaving it vulnerable to security threats. We recommend that you move to a [supported operating system](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47), such as Windows 11 or Windows 10.
 
 ## Additional information
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides IT admins with an overview of deploying Office LTSC 2024."
-ms.date: 09/16/2024
+ms.date: 09/19/2024
 ---
 
 # Overview of Office LTSC 2024
@@ -44,7 +44,7 @@ Office LTSC 2024 is supported on the following operating systems:
 Your device needs at least a 1.1 GHz, two-core processor, 4 GB of RAM, 4 GB of available disk space, and a display with a resolution of 1280 x 768 to run Office LTSC 2024. 
 A 64-bit version of Office is required for 4K and higher resolutions.
 
-For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/microsoft-365-and-office-resources-8dabd144-d436-4aae-8c0d-37edca95f7f5).
+For detailed system requirements, see [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/5e59b928-c35c-4b7f-806d-8b44c23d2eb9#bkmk_oltsc24).
 
 For devices running macOS, Office LTSC Standard for Mac 2024 is available for volume licensed customers. For more information, see [Deployment guide for Office for Mac](/microsoft-365-apps/mac/deployment-guide-for-office-for-mac).
 

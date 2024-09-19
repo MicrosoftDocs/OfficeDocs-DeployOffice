@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: medium
 ms.collection: Tier3
 description: "Provide guidance and recommendations to Office admins on how to improve the performance of Microsoft 365 Apps on Windows 10."
-ms.date: 02/28/2024
+ms.date: 09/19/2024
 ---
 
 # Performance recommendations for Microsoft 365 Apps on Windows 10
@@ -17,7 +17,7 @@ ms.date: 02/28/2024
 > [!NOTE]
 > This article was written by Microsoft experts in the field who work with enterprise customers to deploy Microsoft 365 Apps.
 
-When a Microsoft 365 user experiences poor performance using any of the core Office applications (such as Word, Excel, PowerPoint, and Outlook), it can have an impact on their productivity. It's Microsoft's goal that users have a positive experience with Microsoft apps and services. However, there are many factors that our customers can influence directly that can also impact the end-user experience. This article will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
+When a Microsoft 365 user experiences poor performance using any of the core Office applications (such as Word, Excel, PowerPoint, and Outlook), it can have an affect on their productivity. It's Microsoft's goal that users have a positive experience with Microsoft apps and services. However, there are many factors that our customers can influence directly that can also impact the end-user experience. This article will help you understand these factors and provide recommendations that will allow you to take the appropriate steps necessary to provide your end users with successful performance on the Microsoft 365 platform.
 
 > [!NOTE]
 > Although this article was developed using Windows 10 data, most of the recommendations should also be applicable to Windows 11.
@@ -120,7 +120,7 @@ If your users create large or complex files in Office, they may see performance 
 
 ### System requirements
 
-While the [Microsoft 365 minimum hardware specs](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) are expected to provide an acceptable user experience, it's not uncommon for performance to be negatively impacted if there are other services or applications also running on the device, or if device drivers are out of date. Providing your end users with devices that are powerful enough to support all the demands that they regularly place on their devices will result in better productivity and a better user experience. There's no single device profile that is best for every user or for every company. However, based on our experience working with many large customers, we have observed the following performance behaviors:
+While the [Microsoft 365 minimum hardware specs](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47) are expected to provide an acceptable user experience, it's not uncommon for performance to be negatively impacted if there are other services or applications also running on the device, or if device drivers are out of date. Providing your end users with devices that are powerful enough to support all the demands that they regularly place on their devices will result in better productivity and a better user experience. There's no single device profile that is best for every user or for every company. However, based on our experience working with many large customers, we have observed the following performance behaviors:
 
 - Solid State Drives (SSD) are twice as fast as traditional spinning disks when launching Office applications.
 - 8 GB of RAM is twice as fast when launching Office applications compared to devices using 4 GB of RAM.
