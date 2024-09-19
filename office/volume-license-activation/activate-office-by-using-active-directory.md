@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Active Directory to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 
 # Activate volume licensed versions of Office by using Active Directory
@@ -30,7 +30,7 @@ To activate through Active Directory, install the volume licensed version of Off
 - Windows Server 2012 R2
 - Windows Server 2012  
 
-Review the [System requirements for Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying to users in your organization.
+Review the [System requirements for Office](https://support.microsoft.com/topic/5e59b928-c35c-4b7f-806d-8b44c23d2eb9) to determine which operating systems are supported by the volume licensed version of Office, Project, or Visio that you're deploying to users in your organization.
 
 ## Configure Active Directory-based activation
 
@@ -48,7 +48,7 @@ To configure Active Directory-based activation, you must have Domain Administrat
     - [Office 2016 Volume License Pack](https://www.microsoft.com/download/details.aspx?id=49164)
 1. Run the Office Volume License Pack executable file. This installs the Office Volume License Pack and opens the **Volume Activation Tools** wizard.
 1. Choose **Next**, and then on the **Select Volume Activation Method** page, choose **Active Directory-Based Activation**.
-1. On the **Manage Activation Objects** page, enter the KMS host key, which you got from the VLSC, and, optionally, give it a name. Then choose **Next**.
+1. On the **Manage Activation Objects** page, enter the KMS host key and (optional) give it a name. Then choose **Next**.
 1. On the **Activate Product** page, either activate the KMS host key online or by phone, and then follow the rest of the wizard instructions.
 
 When you're done, an **Activation Succeeded** page displays.

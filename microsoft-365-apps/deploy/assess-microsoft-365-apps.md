@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: false
 description: "This article gives step-by-step instructions for how to assess your environment and requirements before deploying Microsoft 365 Apps.  The article is intended for administrators in enterprise environments working with hundreds or thousands of computers."
-ms.date: 12/15/2023
+ms.date: 09/19/2024
 ---
 
 # Assess your environment and requirements for deploying Microsoft 365 Apps
@@ -23,7 +23,7 @@ In addition to this guidance, we recommend that you use [Microsoft FastTrack](ht
 
 Review the number and details of your client devices, including platform (Windows or Mac); operating systems; architectures (32-bit or 64-bit); required languages; and existing versions of Office, Visio, Project, and other Office applications. 
 
-As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Microsoft 365 Apps](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+As part of this review, make sure that your client devices meet or exceed the [minimum system requirements for installing Microsoft 365 Apps](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47).
 
 Review the client requirements for your on-premises server workloads as well. For example, verify if your on-premises Exchange servers meet the minimum requirements as described in the [Exchange Server Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix#clients).
 
@@ -48,7 +48,7 @@ Review your network capability, including bandwidth and distribution of client d
  
 ## Step 4 - Assess application compatibility
 
-Before deploying Microsoft 365 Apps, you may want to test your business-critical VBA macros, add-ins, and complex documents and spreadsheets to assess their compatibility.
+Before deploying Microsoft 365 Apps, you might want to test your business-critical VBA macros, add-ins, and complex documents and spreadsheets to assess their compatibility.
 
 > [!NOTE]
 > The vast majority of add-ins, VBA macros, and complex documents and spreadsheets that work with Office 2010 or newer will work with Microsoft 365 Apps as well. 
@@ -59,7 +59,7 @@ To complete that assessment, do the following steps:
 
 1. If you use the current version of Configuration Manager, you can use the Office 365 ProPlus Pilot and Health Dashboard to help you plan, pilot, and perform your Microsoft 365 Apps deployment. For more information, see [Office 365 ProPlus Pilot and Health Dashboard](/mem/configmgr/sum/deploy-use/office-365-dashboard#bkmk_pilot).
 
-As part of your deployment, you'll deploy the apps first to the targeted group from step 1, and then do another round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After verifying compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
+As part of your deployment, deploy the apps first to the targeted group from step 1, and then do another round of testing to ensure compatibility between Microsoft 365 Apps and the add-ins and client devices in that group. After verifying compatibility, you can deploy to the rest of your organization. That first group can continue to be a pilot for testing future updates ahead of the rest of your organization. For more information, see [Plan your enterprise deployment of Microsoft 365 Apps](plan-microsoft-365-apps.md).
 
 ## Review exit criteria 
 

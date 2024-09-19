@@ -12,7 +12,7 @@ ms.collection: Tier3
 ms.custom: intro-get-started
 recommendations: true
 description: "Provides admins with links to information about how to deploy Office for Mac to users in their organization"
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 
 # Deployment guide for Office for Mac
@@ -46,7 +46,7 @@ This guide covers the following areas:
 
 In addition to this guide, other information is available to help admins with Office for Mac deployments, including the following sites:
   
-- [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources), for installation requirements, such as supported operating systems.
+- [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/8dabd144-d436-4aae-8c0d-37edca95f7f5), for installation requirements, such as supported operating systems.
 
 - [Microsoft 365 for Mac](https://www.microsoft.com/microsoft-365/mac/microsoft-365-for-mac), for purchasing information.
 

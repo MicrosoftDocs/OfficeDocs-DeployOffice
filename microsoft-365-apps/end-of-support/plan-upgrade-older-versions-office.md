@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides recommendations, information, and links to help administrators and IT Pros in large enterprises plan their upgrades to Microsoft 365 Apps from older versions of Office, such as Office 2016 and Office 2013."
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ---
 
 # Plan an upgrade from older versions of Office to Microsoft 365 Apps
@@ -27,7 +27,7 @@ The following table shows the end of support dates for older versions of Office.
 |Office 2010 |October 13, 2020  |
 |Office 2007 |October 10, 2017  |
 
-This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't begun to upgrade from these older versions of Office, we recommend you start now.
+This article provides recommendations, information, and links to help IT Pros and Office admins in organizations plan their upgrades from these older versions of Office to Microsoft 365 Apps. If you haven't upgrade from these older versions of Office, we recommend you start now.
 
 We also recommend business and enterprise customers use the deployment benefits provided by Microsoft and Microsoft Certified Partners, including [Microsoft FastTrack](https://www.microsoft.com/fasttrack) for cloud migrations.
 
@@ -82,11 +82,26 @@ There are also differences in how you deploy, activate, and update Microsoft 365
 - [About Microsoft 365 Apps in the enterprise](../deploy/about-microsoft-365-apps.md)
 - [Deployment guide for Microsoft 365 Apps](../deploy/deployment-guide-microsoft-365-apps.md)
 
-## Review the system requirements for Microsoft 365 Apps
+## Review the system requirements for Microsoft 365 Apps and Office server products
 
-Before upgrading to Microsoft 365 Apps, verify that your client devices meet or exceed the minimum [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
-  
-In addition, you should review the system requirements for your Office server workloads. For more information, see [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix) and [System Requirements for Office server products](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources?rtc=1#coreui-heading-scilts8).
+Before upgrading to Microsoft 365 Apps, verify that your client devices meet or exceed the minimum [system requirements](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47). It's also important to review the system requirements for your Office server workloads to ensure compatibility. For more information, see [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix).
+
+See the following system requirements for specific Office server products:
+
+- **Exchange Server 2019**  
+  - [Exchange Server system requirements](https://go.microsoft.com/fwlink/p/?LinkId=627282)
+  - [Outlook license requirements for Exchange features](https://go.microsoft.com/fwlink/p/?LinkID=402388)
+
+- **Skype for Business Server 2019**  
+  - [System requirements for Skype for Business Server 2019](https://go.microsoft.com/fwlink/p/?linkid=2031940)
+
+- **SharePoint Server**  
+  - [SharePoint Server 2019 system requirements](https://go.microsoft.com/fwlink/p/?linkid=824671)
+  - [SharePoint Server 2016 system requirements](https://go.microsoft.com/fwlink/p/?linkid=824671)
+
+- **Project Server**  
+  - [Software requirements for Project Server 2019](https://go.microsoft.com/fwlink/p/?linkid=2086166)
+  - [Software requirements for Project Server 2016](https://go.microsoft.com/fwlink/p/?linkid=2086168)
   
 ## Plan for Microsoft 365
 

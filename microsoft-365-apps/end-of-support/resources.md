@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with resources related to end of support for Office."
-ms.date: 12/12/2023
+ms.date: 09/19/2024
 ---
 
 # End of support resources for Office
@@ -50,7 +50,7 @@ The following table shows past end of support events that affect Office, along w
 
 ## Resources to help you upgrade Office
 
-We recommend that you upgrade older Office clients to Microsoft 365 Apps for enterprise. If that's not possible, we recommend that you upgrade to Office LTSC 2021, which is the most current version of Office available through volume licensing.
+We recommend that you upgrade older Office clients to Microsoft 365 Apps for enterprise. If that's not possible, we recommend that you upgrade to [Office Long Term Service Channel (LTSC) 2024](/office/ltsc/2024/overview), which is the most current version of Office available through volume licensing.
 
 We provide various services to help you upgrade to Microsoft 365 Apps for enterprise. The following list provides some examples of resources that are available:
 
@@ -61,7 +61,7 @@ We provide various services to help you upgrade to Microsoft 365 Apps for enterp
 
 ## Other resources
 
-- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+- **System requirements** For a list of installation requirements, including supported operating systems, see [System requirements for Microsoft 365 and Office](https://support.microsoft.com/topic/8dabd144-d436-4aae-8c0d-37edca95f7f5).
 
 - **Windows and Office configuration support matrix** For a list of end of support dates for different versions of Office on various versions of Windows, see the [Windows and Office configuration support matrix (PDF)](https://aka.ms/windows-office-support-matrix).
 

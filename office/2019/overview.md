@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides IT admins with an overview of deploying Office 2019."
-ms.date: 04/19/2024
+ms.date: 09/19/2024
 ---
 
 # Overview of Office 2019 (for IT Pros)
@@ -34,11 +34,11 @@ For devices running macOS, Office Standard 2019 for Mac is available for volume 
 
 ## What's changed in Office 2019?
 
-The biggest change since Office 2016 is that the installation technology used by the new volume licensed versions of Office is Click-to-Run, instead of Windows Installer (MSI). Click-to-Run has been the installation technology for most Office products since the release of Office 2013.
+The biggest change since Office 2016 is that the installation technology used by the new volume licensed versions of Office is Click-to-Run, instead of Windows Installer (MSI). Click-to-Run was the installation technology for most Office products since the release of Office 2013.
 
 In addition to Click-to-Run, the following are some other changes that you need to be aware of:
 
-- Office 2019 is only supported on Windows 11 and Windows 10. For more information, review the [system requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+- Office 2019 is only supported on Windows 11 and Windows 10. For more information, review the [system requirements](https://support.microsoft.com/topic/5e59b928-c35c-4b7f-806d-8b44c23d2eb9#bkmk_o19comm).
 - To configure and perform installations, you use the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117), which is a free download from the Microsoft Download Center. The Office Customization Tool that you previously used for Windows Installer (MSI) is no longer used.
 - Instead of downloading the installation files from the Volume Licensing Service Center (VLSC), you use the Office Deployment Tool to download the installation files directly from the Office Content Delivery Network (CDN) on the internet.
 - When you install Office Professional Plus 2019, all apps are installed by default. But, you can configure the Office Deployment Tool to exclude certain apps from being installed.
@@ -49,18 +49,18 @@ In addition to Click-to-Run, the following are some other changes that you need 
 
 Even though there's a different installation technology, you can still use the same software distribution tools, such as Microsoft Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.
 
-The major version of Office 2019 is staying at 16.0. Some other things are staying the same if you're upgrading from Office 2016, including the following:
+The major version of Office 2019 is staying at 16.0. Some other things are staying the same if you're upgrading from Office 2016:
 
-- Existing Group Policy settings will continue to work, because the registry location for those settings will still be located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
-- Other registry locations and settings information that reference 16.0 will still apply.
-- Add-ins and other extensibility solutions that are compatible with Office 2016 will most likely be compatible with Office 2019 or will require only minimal testing.
+- Existing Group Policy settings continue to work because the registry location for those settings remains in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.
+- Other registry locations and settings information that reference 16.0 still apply.
+- Add-ins and extensibility solutions compatible with Office 2016 are likely compatible with Office 2019 or require minimal testing.
 
 
 ## What are the new features in Office 2019?
 
 For information about the new features in Office 2019, see the "what’s new" articles for [Access](https://support.microsoft.com/office/f52c5317-3494-4105-9c56-5a2abb8e0f87), [Excel](https://support.microsoft.com/office/5a201203-1155-4055-82a5-82bf0994631f), [Outlook](https://support.microsoft.com/office/0c64df36-0908-4ff6-a7fc-573a62800525), [PowerPoint](https://support.microsoft.com/office/8355a56a-f643-42d2-8454-784fa9b3d109), [Project](https://support.microsoft.com/office/6be41c8a-c4b2-409a-9ef7-d250377ad3b7), [Visio](https://support.microsoft.com/office/19b8e98d-9cf9-40ad-9277-eb65e3713a79), and [Word](https://support.microsoft.com/office/d3d31e5e-2bb8-4433-80bb-08279beef4b3). Office 2019 includes some, but not all, features that are available in versions of Office that come with an Office 365 (or Microsoft 365) plan.
 
-Office 2019 won’t receive additional new features now that it has been released. If you want to get new Office features on an on-going basis, you should consider moving to an Office 365 plan (or Microsoft 365) plan that includes Office. Most of these enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office Professional Plus 2019. For more information about available plans, see [Office 365 plans for enterprises](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans) and [Microsoft 365 plans for enterprises](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). For more information about new features, see [What’s new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426).
+Office 2019 doesn't receive new features. If you want to get new Office features on an ongoing basis, you should consider moving to an Office 365 plan that includes Office. Most of these enterprise plans include Microsoft 365 Apps for enterprise, which includes the same Office apps as Office Professional Plus 2019. For more information about available plans, see [Office 365 plans for enterprises](https://www.microsoft.com/microsoft-365/enterprise/compare-office-365-plans) and [Microsoft 365 plans for enterprises](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). For more information about new features, see [What’s new in Microsoft 365](https://support.microsoft.com/office/95c8d81d-08ba-42c1-914f-bca4603e1426).
 
 ## How do I upgrade to Office 2019?
 
