@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 description: "Provides guidance for admins about how Office blocks macros in files from the internet."
-ms.date: 05/24/2024
+ms.date: 09/20/2024
 ---
 
 # Macros from the internet are blocked by default in Office
@@ -61,9 +61,9 @@ The following table list different common scenarios and possible approaches to t
 
 ## Versions of Office affected by this change
 
-This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Visio, and Word.
+This change only affects Office on devices running Windows and only affects the following applications: Access, Excel, PowerPoint, Project, Publisher, Visio, and Word.
 
-The following table shows when this change became available in each update channel.
+The following table shows when this change became available in each update channel for Access, Excel, PowerPoint, Visio, and Word.
 
 |Update channel  |Version  |Date  |
 |---------|---------|---------|
@@ -72,6 +72,30 @@ The following table shows when this change became available in each update chann
 |Monthly Enterprise Channel|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel (Preview)|Version 2208|October 11, 2022|
 |Semi-Annual Enterprise Channel |Version 2208|January 10, 2023|
+
+The following table shows when this change became available in each update channel for Publisher.
+
+|Update channel  |Version  |Date  |
+|---------|---------|---------|
+|Current Channel|Version 2301|February 14, 2023|
+|Monthly Enterprise Channel|Version 2212|February 14, 2023|
+|Monthly Enterprise Channel|Version 2211|February 14, 2023|
+|Semi-Annual Enterprise Channel (Preview)|Version 2208|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2208|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2202|February 14, 2023|
+|Semi-Annual Enterprise Channel |Version 2108|February 14, 2023|
+
+The following table shows when this change became available in each update channel for Project.
+
+|Update channel  |Version  |Date  |
+|---------|---------|---------|
+|Current Channel|Version 2407|August 13, 2024|
+|Monthly Enterprise Channel|Version 2406|August 13, 2024|
+|Monthly Enterprise Channel|Version 2405|August 13, 2024|
+|Semi-Annual Enterprise Channel (Preview)|Version 2402|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2402|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2308|August 13, 2024|
+|Semi-Annual Enterprise Channel |Version 2302|August 13, 2024|
 
 The change doesn’t affect Office on a Mac, Office on Android or iOS devices, or Office on the web.
 
@@ -86,9 +110,9 @@ The following steps explain the information in the flowchart graphic, except for
 
 1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has Mark of the Web (MOTW).
 
-> [!NOTE]
-> - Mark of the Web is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
-> - Mark of the Web only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
+   > [!NOTE]
+   > - Mark of the Web is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+   > - Mark of the Web only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
 
 2. If the file is from a Trusted Location, the file is opened with the macros enabled. If the file isn't from a Trusted Location, the evaluation continues.
 
@@ -101,16 +125,16 @@ The following steps explain the information in the flowchart graphic, except for
 
 6. If the user previously opened the file, before this change in default behavior, and selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
-> [!NOTE]
-> - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
-> - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
+   > [!NOTE]
+   > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465).
+   > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users see the **Security Risk** banner when they open the file.
 
-> [!NOTE]
-> Previously, before this change in default behavior, the app would check to see if the [VBA Macro Notification Settings](#vba-macro-notification-settings) policy was enabled and how it was configured.
->
-> If the policy was set to Disabled or Not Configured, then the app would check the settings under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**. The default is set to "Disable all macros with notification," which allows users to enable content in the Trust Bar.
+   > [!NOTE]
+   > Previously, before this change in default behavior, the app would check to see if the [VBA Macro Notification Settings](#vba-macro-notification-settings) policy was enabled and how it was configured.
+   > If the policy was set to Disabled or Not Configured, then the app would check the settings under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**. The default 
+     is set to "Disable all macros with notification," which allows users to enable content in the Trust Bar.
 
 ## Guidance on allowing VBA macros to run in files you trust
 
@@ -119,7 +143,6 @@ The following steps explain the information in the flowchart graphic, except for
 To unblock macros in a file, like one from the internet or an email attachment, remove the Mark of the Web on your local device. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
 :::image type="content" source="./media/internet-macros-blocked/vba-unblock-file-properties.PNG" alt-text="A screenshot of the file properties dialog box for a macro-enabled document, highlighting the security option to unblock the file.":::
-
 
 > [!NOTE]
 > - In some cases, usually for files on a network share, users might not see the **Unblock** checkbox for a file where macros are being blocked. For those cases, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
@@ -134,21 +157,20 @@ If you have your users access files from a trusted website or an internal file s
 - Designate the location as a Trusted site
 - If the network location is on the intranet, add the location to the **Local intranet** zone
 
-> [!NOTE]
-> - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
-> - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
-> - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
+  > [!NOTE]
+  > - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
+  > - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
+  > - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
 
-For example, if users are accessing a network share by using its IP address, macros in those files are blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
+  For example, if users are accessing a network share by using its IP address, macros in those files are blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
 
-> [!TIP]
-> - To see a list of trusted sites or what's in the **Local intranet** zone, go to **Control Panel** > **Internet Options** > **Change security settings** on a Windows device.
-> - To check if an individual file is from a trusted site or local intranet location, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+  > [!TIP]
+  > - To see a list of trusted sites or what's in the **Local intranet** zone, go to **Control Panel** > **Internet Options** > **Change security settings** on a Windows device.
+  > - To check if an individual file is from a trusted site or local intranet location, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
-For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
+  For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
 
-:::image type="content" source="./media/internet-macros-blocked/trusted-sites-dialog-example.png" alt-text="A screenshot of the Trusted Sites dialog box showing the option to add or remove websites and manage security settings for trusted sites.":::
-
+  :::image type="content" source="./media/internet-macros-blocked/trusted-sites-dialog-example.png" alt-text="A screenshot of the Trusted Sites dialog box showing the option to add or remove websites and manage security settings for trusted sites.":::
 
 If you want to add URLs that begin with http:// or network shares, clear the **Require server verification (https:) for all sites in this zone** checkbox.
 
@@ -286,13 +308,15 @@ This policy prevents users from inadvertently opening files containing macros fr
 
 We recommend enabling this policy as part of the [security baseline](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) for Microsoft 365 Apps for enterprise. You should enable this policy for most users and only make exceptions for certain users as needed.
 
-There's a separate policy for each of the five applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
+There's a separate policy for each of the seven applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
 
 |Application|Policy location |
 |---------|---------|
 |Access|Microsoft Access 2016\Application Settings\Security\Trust Center|
 |Excel|Microsoft Excel 2016\Excel Options\Security\Trust Center|
 |PowerPoint|Microsoft PowerPoint 2016\PowerPoint Options\Security\Trust Center|
+|Project|Microsoft Project 2016\Project Options\Security\Trust Center|
+|Publisher|Microsoft Publisher 2016\Publisher Options\Security\Trust Center|
 |Visio|Microsoft Visio 2016\Visio Options\Security\Trust Center|
 |Word|Microsoft Word 2016\Word Options\Security\Trust Center|
 
@@ -321,19 +345,20 @@ If you don't use the "Block macros from running in Office files from the Interne
 
 This policy prevents users from being lured into enabling malicious macros. By default, Office is configured to block files that contain VBA macros and display a Trust Bar with a warning that macros are present and have been disabled. Users can inspect and edit the files if appropriate, but can’t use any disabled functionality until they select **Enable Content** on the Trust Bar. If the user selects **Enable Content**, then the file is added as a Trusted Document and macros are allowed to run.
 
-There's a separate policy for each of the five applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
+There's a separate policy for each of the seven applications. The following table shows where each policy can be found in the Group Policy Management Console under User Configuration\Policies\Administrative Templates:
 
 |Application|Policy location |
 |---------|---------|
 |Access|Microsoft Access 2016\Application Settings\Security\Trust Center|
 |Excel <sup>[1]</sup>|Microsoft Excel 2016\Excel Options\Security\Trust Center|
 |PowerPoint|Microsoft PowerPoint 2016\PowerPoint Options\Security\Trust Center|
+|Project|Microsoft Project 2016\Project Options\Security\Trust Center|
+|Publisher|Microsoft Publisher 2016\Publisher Options\Security\Trust Center|
 |Visio|Microsoft Visio 2016\Visio Options\Security\Trust Center|
 |Word|Microsoft Word 2016\Word Options\Security\Trust Center|
 
 > [!NOTE]
 > - <sup>[1]</sup> For Excel, the policy is named Macro Notification Settings.
->- The "VBA Macro Notification Settings" policy is also available for Project and Publisher.
 
 Which state you choose for the policy determines the level of protection you're providing. The following table shows the level of protection you get with each state.
 
