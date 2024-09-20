@@ -110,9 +110,9 @@ The following steps explain the information in the flowchart graphic, except for
 
 1. A user opens an Office file containing macros obtained from the internet. For example, an email attachment. The file has Mark of the Web (MOTW).
 
-> [!NOTE]
-> - Mark of the Web is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
-> - Mark of the Web only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
+   > [!NOTE]
+   > - Mark of the Web is added by Windows to files from an untrusted location, such as the internet or Restricted Zone. For example, browser downloads or email attachments. For more information, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+   > - Mark of the Web only applies to files saved on an NTFS file system, not files saved to FAT32 formatted devices.
 
 2. If the file is from a Trusted Location, the file is opened with the macros enabled. If the file isn't from a Trusted Location, the evaluation continues.
 
@@ -125,16 +125,17 @@ The following steps explain the information in the flowchart graphic, except for
 
 6. If the user previously opened the file, before this change in default behavior, and selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
-> [!NOTE]
-> - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465). 
-> - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
+   > [!NOTE]
+   > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba- 
+       p/3023465). 
+   > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users see the **Security Risk** banner when they open the file.
 
-> [!NOTE]
-> Previously, before this change in default behavior, the app would check to see if the [VBA Macro Notification Settings](#vba-macro-notification-settings) policy was enabled and how it was configured.
->
-> If the policy was set to Disabled or Not Configured, then the app would check the settings under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**. The default is set to "Disable all macros with notification," which allows users to enable content in the Trust Bar.
+   > [!NOTE]
+   > Previously, before this change in default behavior, the app would check to see if the [VBA Macro Notification Settings](#vba-macro-notification-settings) policy was enabled and how it was configured.
+   > If the policy was set to Disabled or Not Configured, then the app would check the settings under **File** > **Options** > **Trust Center** > **Trust Center Settings...** > **Macro Settings**. The default 
+     is set to "Disable all macros with notification," which allows users to enable content in the Trust Bar.
 
 ## Guidance on allowing VBA macros to run in files you trust
 
@@ -143,7 +144,6 @@ The following steps explain the information in the flowchart graphic, except for
 To unblock macros in a file, like one from the internet or an email attachment, remove the Mark of the Web on your local device. To remove, right-click on the file, choose **Properties**, and then select the **Unblock** checkbox on the **General** tab.
 
 :::image type="content" source="./media/internet-macros-blocked/vba-unblock-file-properties.PNG" alt-text="A screenshot of the file properties dialog box for a macro-enabled document, highlighting the security option to unblock the file.":::
-
 
 > [!NOTE]
 > - In some cases, usually for files on a network share, users might not see the **Unblock** checkbox for a file where macros are being blocked. For those cases, see [Files centrally located on a network share or trusted website](#files-centrally-located-on-a-network-share-or-trusted-website).
@@ -158,21 +158,20 @@ If you have your users access files from a trusted website or an internal file s
 - Designate the location as a Trusted site
 - If the network location is on the intranet, add the location to the **Local intranet** zone
 
-> [!NOTE]
-> - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
-> - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
-> - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
+  > [!NOTE]
+  > - If you add something as a trusted site, you’re also giving the entire site elevated permissions for scenarios not related to Office.
+  > - For the **Local intranet** zone approach, we recommend you save the files to a location that’s already considered part of the **Local intranet** zone, instead of adding new locations to that zone.
+  > - In general, we recommend that you use trusted sites, because they have some additional security compared to the **Local intranet** zone.
 
-For example, if users are accessing a network share by using its IP address, macros in those files are blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
+  For example, if users are accessing a network share by using its IP address, macros in those files are blocked unless the file share is in the **Trusted sites** or the **Local intranet** zone.
 
-> [!TIP]
-> - To see a list of trusted sites or what's in the **Local intranet** zone, go to **Control Panel** > **Internet Options** > **Change security settings** on a Windows device.
-> - To check if an individual file is from a trusted site or local intranet location, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
+  > [!TIP]
+  > - To see a list of trusted sites or what's in the **Local intranet** zone, go to **Control Panel** > **Internet Options** > **Change security settings** on a Windows device.
+  > - To check if an individual file is from a trusted site or local intranet location, see [Mark of the Web and zones](#mark-of-the-web-and-zones).
 
-For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
+  For example, you could add a file server or network share as a trusted site, by adding its FQDN or IP address to the list of trusted sites.
 
-:::image type="content" source="./media/internet-macros-blocked/trusted-sites-dialog-example.png" alt-text="A screenshot of the Trusted Sites dialog box showing the option to add or remove websites and manage security settings for trusted sites.":::
-
+  :::image type="content" source="./media/internet-macros-blocked/trusted-sites-dialog-example.png" alt-text="A screenshot of the Trusted Sites dialog box showing the option to add or remove websites and manage security settings for trusted sites.":::
 
 If you want to add URLs that begin with http:// or network shares, clear the **Require server verification (https:) for all sites in this zone** checkbox.
 
