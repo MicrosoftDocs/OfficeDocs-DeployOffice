@@ -126,7 +126,7 @@ The following steps explain the information in the flowchart graphic, except for
 6. If the user previously opened the file, before this change in default behavior, and selected **Enable content** from the Trust Bar, then the macros are enabled because the file is considered trusted.
 
    > [!NOTE]
-   > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-     p/3023465). 
+   > - For more information, see [New security hardening policies for Trusted Documents](https://techcommunity.microsoft.com/t5/office-365-blog/new-security-hardening-policies-for-trusted-documents/ba-p/3023465).
    > - For perpetual versions of Office, such as Office LTSC 2021 or Office 2019, this step occurs after Step 3 and before Step 4, and isn’t affected by the change to the default behavior.
 
 7. This step is where the change to the default behavior of Office takes effect. With this change, macros in files from the internet are blocked and users see the **Security Risk** banner when they open the file.
