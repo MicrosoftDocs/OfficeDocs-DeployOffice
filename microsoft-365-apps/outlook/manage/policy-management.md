@@ -76,7 +76,7 @@ For more information, see [Set-MailboxCalendarConfiguration](/powershell/module/
 ## Automatically configure account based on Active Directory Primary SMTP address
 Admins are advised to configure the new policy for an easier account setup process on managed devices and to guarantee that company policies are always respected as this policy setting allows admins to control which account will be used as the Primary Account in Outlook for Windows.
 
-Admins can set the policy *Require the Primary Account to match the Windows signed-in account* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps** 
+Admins can set the policy *Require the Primary Account to match the Windows signed-in account* through the [Microsoft Intune admin center](https://intune.microsoft.com/) > **Apps** > **Policies for Office Apps**.
 
 If this policy is enabled, the primary SMTP address used to sign in to Windows is suggested the first time a user adds their account to new Outlook for Windows and the user can't change it.
 
