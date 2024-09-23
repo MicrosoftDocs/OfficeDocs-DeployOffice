@@ -173,7 +173,7 @@ Microsoft strongly supports this right. When Microsoft acts as a data processor 
 
 ## Related articles
 
-- [Privacy at Microsoft](https://privacy.microsoft.com/)
+- [Privacy at Microsoft](https://www.microsoft.com/privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trust-center/)
 - [Microsoft Online Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
