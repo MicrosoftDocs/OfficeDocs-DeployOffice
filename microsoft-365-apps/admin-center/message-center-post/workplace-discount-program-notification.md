@@ -76,7 +76,7 @@ You can find this policy under User Configuration\Policies\Administrative Templa
 
 Microsoft may receive aggregated (non-identifiable) user data such as impression count or click count for these notifications.
 
-User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with Workplace Discount Program messages, but once a user selects the **Learn more** option in the Workplace Discount Program offering, a Microsoft consumer website will open in their browser and further interaction with the Workplace Discount Program will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+User data in the Microsoft 365 enterprise applications described above continues to be governed by the Online Service Terms while receiving and interacting with Workplace Discount Program messages, but once a user selects the **Learn more** option in the Workplace Discount Program offering, a Microsoft consumer website will open in their browser and further interaction with the Workplace Discount Program will be governed by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
 
 In order to ensure that only the right enterprise users see Workplace Discount Program notifications, our services will utilize the following data: Tenant ID associated with the user signed in to the device.
 
