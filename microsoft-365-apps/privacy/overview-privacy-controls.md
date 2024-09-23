@@ -126,5 +126,5 @@ There's also a set of services that are essential to how Microsoft 365 Apps for 
 For more information, see [Essential services for Office](essential-services.md).
 
 ## Related articles
-- [Privacy at Microsoft](https://privacy.microsoft.com/)
+- [Privacy at Microsoft](https://www.microsoft.com/privacy)
 - [Windows privacy](/windows/privacy/)
