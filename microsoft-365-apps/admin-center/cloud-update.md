@@ -245,7 +245,7 @@ Deadline is available for all cloud update profiles.
 
 The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. Neither the start of the deployment wave nor the update's release date influence this timeline.
+- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update’s release date do not influence this timeline.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -261,7 +261,7 @@ To configure the deadline, follow these steps:
 5. Adjust the **Update deadline** slider to your preferred value and select **Save**.
 
 ### Cloud update review (deactivation)
-Admins have the ability to deactivate a channel profile at any time. Deactivating a profile disables update management for all devices on the corresponding update channel. For example, deactivating the Current Channel profile will disable update management for all devices in your tenant that are on Current Channel.
+Admins have the ability to deactivate a channel profile at any time. Deactivating a profile disables update management for all devices on the corresponding update channel. For example, deactivating the Current Channel profile disables update management for all devices in your tenant that are on Current Channel.
 
 > [!IMPORTANT]
 > Using the [switch device update channel](inventory.md#switch-device-update-channel) feature automatically enables all channel profiles, regardless of deactivation state. This feature is dependent on the cloud update service to function.
@@ -305,7 +305,7 @@ With cloud update enabled, the service uses [channel to profile mapping](#channe
 
 ### Devices are updating outside of their assigned wave
 
-If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave.Review the following scenarios and take any necessary actions:
+If you are using [custom rollout waves](#rollout-waves), there may be instances where devices update outside of their assigned wave. Review the following scenarios and take any necessary actions:
 
 - **Add-on app deployments**: When you install an add-on app, such as Project or Visio, it can trigger an update check when the application is retrieved from the Office CDN. Consider updating your XML to included [Version="MatchInstalled"](../deploy/office-deployment-tool-configuration-options.md#version-attribute-part-of-add-element) to install the same version of Office, even if a newer version is available.
 
