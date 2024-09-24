@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides Office admins information about cloud update in the Microsoft 365 Apps admin center"
-ms.date: 08/27/2024
+ms.date: 09/24/2024
 ---
 
 # Overview of cloud update in the Microsoft 365 Apps admin center
@@ -316,6 +316,10 @@ If you are using [custom rollout waves](#rollout-waves), there may be instances 
 ### My Device-based group didn't work with *[feature name]*
 
 If you're using a group that contains device objects, the devices must be Microsoft Entra joined or hybrid joined. Devices that are Microsoft Entra registered/Workplace joined aren't recognized when the group is processed. As an alternative, consider adding one or more corresponding user objects. For more information, see the [requirements for using Microsoft Entra groups](#microsoft-entra-groups-requirements).
+
+### I noticed that no Component Object Model (COM) component for Cloud update has been registered on my devices.
+
+The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](https://learn.microsoft.com/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is is expected.
 
 ## Report a problem
 
