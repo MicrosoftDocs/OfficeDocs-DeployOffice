@@ -144,7 +144,7 @@ defaults write com.microsoft.Office365ServiceV2 SendCriticalTelemetryEnabled  -b
 ```
 
 ### Turn off sending telemetry data to Microsoft from Office apps on iOS
-To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS devices](/intune/app-configuration-policies-use-ios).
+To prevent Office apps on iOS from sending telemetry data to Microsoft, set the SendAllTelemetryEnabled and SendCriticalTelemetryEnabled preferences to "false." The preferences are per-application and can be set by using Microsoft Intune. For more information, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios).
 
 > [!IMPORTANT]
 > You must be using at least Version 2.11 of Office on iOS.
