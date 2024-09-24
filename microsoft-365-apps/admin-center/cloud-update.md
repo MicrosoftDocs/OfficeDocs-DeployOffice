@@ -319,7 +319,7 @@ If you're using a group that contains device objects, the devices must be Micros
 
 ### I noticed that no Component Object Model (COM) component for Cloud update has been registered on my devices.
 
-The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](https://learn.microsoft.com/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is is expected.
+The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is is expected.
 
 ## Report a problem
 
