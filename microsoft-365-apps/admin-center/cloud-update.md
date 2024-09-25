@@ -245,7 +245,7 @@ Deadline is available for all cloud update profiles.
 
 The update deadline is used to ensure updates are applied in a specified period. Keep these points in mind when configuring your update deadline:
 
-- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update’s release date do not influence this timeline.
+- The update deadline is independently calculated for each device, commencing from the first unsuccessful installation attempt. For example, if open applications prevent the update from installing, the deadline is triggered from this initial failure. The start of the deployment wave and the update's release date do not influence this timeline.
 - If the deadline passes, a prompt is shown to the user, offering the option to close their applications now or postpone the installation.
 - Users can postpone the update installation three times for two hours each, before a final two-hour countdown is shown. If the deadline is around seven hours past already, users can postpone only once.
 - When the countdown reaches zero, the system saves open files, closes necessary applications, applies the update, and then reopens the applications and files. User downtime is less than five minutes.
@@ -319,7 +319,7 @@ If you're using a group that contains device objects, the devices must be Micros
 
 ### I noticed that no Component Object Model (COM) component for Cloud update has been registered on my devices.
 
-The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is is expected.
+The predecessor of Cloud Update, Servicing Profiles, registered [COM objects](/windows/win32/com/component-object-model--com--portal) on a device to manage Microsoft 365 Apps updates. With Cloud Update, the COM object is no longer necessary, so no such control gets registered anymore and this is expected.
 
 ## Report a problem
 
