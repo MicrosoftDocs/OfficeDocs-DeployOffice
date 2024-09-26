@@ -24,7 +24,7 @@ Here are some examples of the types of in-product recommendations that you might
 
 Our goal is to provide recommendations that are relevant, timely, and shown in the appropriate context. To provide these recommendations, we might rely on information about the Office products you have purchased, the Office apps that you use, the features and capabilities within those Office apps that you use, or those apps that you're licensed to use but haven’t tried yet. These recommendations aren't based on the actual content that you create while using Office, such as budget projections in an Excel spreadsheet or the text you write in an Outlook email.
 
-For more information, see [Privacy at Microsoft](https://privacy.microsoft.com/).
+For more information, see [Privacy at Microsoft](https://www.microsoft.com/privacy).
 
 > [!NOTE]
 > Consumer users, if they give permission, might also receive personalized offers and discounts. For example, users might see an offer to renew their Microsoft 365 subscription at a discount. For more information, see [Personalized offers and discounts based on how you use Office](https://support.microsoft.com/topic/2eef9eeb-23e3-4a63-9d72-4f0596a7b349).
