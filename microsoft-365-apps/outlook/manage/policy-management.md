@@ -35,13 +35,13 @@ You can manage most features with Exchange PowerShell cmdlets. However, for feat
 > Most of the mailbox policies are applicable for both OWA and Monarch, so you can’t have them enabled on one client but not the other.  
 
 
-## Allow only corporate mailboxes to be added 
+## Block Personal Email Accounts from Being Added 
 
 There are two Mailbox Policies that should be used to allow only corporate mailboxes to be added to the new Outlook: 
 
 With the `AllowedOrganizationAccountDomains` parameter, admins can specify one or more domains, which are allowed to be added in Outlook. Check the syntax at [Set-OwaMailboxPolicy - AllowedOrganizationAccountDomains](/powershell/module/exchange/set-owamailboxpolicy#-allowedorganizationaccountdomains).
 
-Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal accounts. Check the syntax at [Set-owamailboxpolicy - PersonalAccountsEnabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
+Moreover, the `PersonalAccountsEnabled` parameter specifies whether to allow users to add their personal email accounts. Check the syntax at [Set-owamailboxpolicy - PersonalAccountsEnabled](/powershell/module/exchange/set-owamailboxpolicy#-personalaccountsenabled). 
 
 ## Set Primary Account 
 Users can change the primary account in Settings > Accounts > Email accounts > Manage for the account they want to designate as primary.
