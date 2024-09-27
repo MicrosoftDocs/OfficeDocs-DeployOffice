@@ -2,7 +2,7 @@
 
 #root section (Required)
 title: Microsoft Office documentation # < 60 chars
-summary: Learn how to deploy and manage Office, Microsoft's productivity software that's available as a one-time purchase from a retail store of through a volume licensing agreement. # < 400 chars
+summary: Learn how to deploy and manage Office, Microsoft's productivity software that's available as a one-time purchase from a retail store or through a volume licensing agreement. # < 400 chars
 brand: office # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
 
 metadata:
