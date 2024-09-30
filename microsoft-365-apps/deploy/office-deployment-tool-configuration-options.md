@@ -125,8 +125,8 @@ Allowed values:
 - OfficeClientEdition="32"
  
 <!--Using include for Microsoft 365 Apps on arm-->
-> [!NOTE]  
-> [!INCLUDE [Microsoft 365 on Arm](../includes/m365-apps-arm.md)]
+> [!NOTE]
+> [!INCLUDE[m365-apps-arm.md](../includes/m365-apps-arm.md)]
 
 ### Channel attribute (part of Add element) 
 

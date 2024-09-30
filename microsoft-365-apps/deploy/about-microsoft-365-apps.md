@@ -42,8 +42,8 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
 - In addition, you can use many of the same Group Policy settings that you use with other versions of Office to configure and enforce Microsoft 365 Apps program settings. 
 
 <!--Using include for Microsoft 365 Apps on arm-->
-> [!NOTE]  
-> [!INCLUDE [Microsoft 365 on Arm](../includes/m365-apps-arm.md)]
+> [!NOTE]
+> [!INCLUDE[m365-apps-arm.md](../includes/m365-apps-arm.md)]
     
 ## What's different about Microsoft 365 Apps?
 <a name="BKMK_Different"> </a>
