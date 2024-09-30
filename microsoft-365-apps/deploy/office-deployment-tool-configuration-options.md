@@ -119,14 +119,14 @@ Optional.
 
 Defines whether the 32-bit or 64-bit edition of Microsoft 365 Apps is downloaded or installed. If Microsoft 365 Apps isn't installed on the device and OfficeClientEdition isn't set, the ODT automatically selects the 64-bit edition. However, it selects the 32-bit edition if the device uses a 32-bit version of Windows or has less than 4-GB RAM. If Microsoft 365 Apps is installed and OfficeClientEdition not specified, the ODT matches the architecture of the existing installation of Microsoft 365 Apps. If Microsoft 365 Apps is installed and OfficeClientEdition is specified, then it must match the already installed architecture. If it doesn't, the installation fails, since mixed architectures aren't supported.
 
-> [!NOTE]  
-> <!--Using include for Microsoft 365 Apps on arm--> [!INCLUDE [Microsoft 365 on Arm](../includes/m365-apps-arm.md)]
-
-
 Allowed values:
 
 - OfficeClientEdition="64"
 - OfficeClientEdition="32"
+ 
+<!--Using include for Microsoft 365 Apps on arm-->
+> [!NOTE]  
+> [!INCLUDE [Microsoft 365 on Arm](../includes/m365-apps-arm.md)]
 
 ### Channel attribute (part of Add element) 
 
