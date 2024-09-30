@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
 description: "Provides Office admins with an overview of Microsoft 365 Apps, including information about deploying and licensing."
-ms.date: 09/19/2024
+ms.date: 09/30/2024
 ---
 
 # About Microsoft 365 Apps in the enterprise
@@ -34,7 +34,8 @@ Microsoft 365 Apps is similar to other versions of Office that you can deploy to
 - Its system requirements (for example, memory, hard disk space, and operating system) are similar to other current versions of Office. For more information, see [System requirements for Office](https://support.microsoft.com/topic/13eda659-3dfc-448e-b2cd-70ebb989be47).
     
 - Like other versions of Office, Microsoft 365 Apps is available in a 32-bit and a 64-bit version. To decide which version is right for your environment, carefully review [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/office/2dee7807-8f95-4d0c-b5fe-6c6f49b8d261) before you deploy.
-    
+> [!NOTE]  
+> <!--Using include for Microsoft 365 Apps on arm--> [!INCLUDE [Microsoft 365 on Arm](../includes/m365-apps-arm.md)]
 - When you deploy Microsoft 365 Apps, it's installed on the user's local computer. Microsoft 365 Apps isn't a web-based version of Office. It runs locally on the user's computer. Users don't need to be connected to the internet all the time to use it.
     
 - You can use many of the same tools to deploy and configure Microsoft 365 Apps that you're already using to deploy Office. For example, you can use Microsoft Configuration Manager to deploy Microsoft 365 Apps. For more information, see [Choose how to deploy](plan-microsoft-365-apps.md#step-1---choose-how-to-deploy).
