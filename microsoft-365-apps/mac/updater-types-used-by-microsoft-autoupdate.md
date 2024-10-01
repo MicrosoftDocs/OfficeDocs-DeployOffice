@@ -43,10 +43,10 @@ Here's a summary of the three different types of updater packages Microsoft gene
 | Binary Delta | Contains only the byte differences between the specified version and the latest version. <br> Only applicable to devices with the version the updater package is generated for. <br> The size is the smallest of the updater types. <br> Could take the longest to update, depending on the number of changes to be applied. <br> Also CPU-intensive, as all impacted files need to be opened, byte changes applied, and saved. |
 
 > [!NOTE]
-> File Delta and Binary Delta updates might cause issues if a security app on the end user’s device modifies installed apps. This could prevent the app from launching after the update, as delta updaters rely on the installed apps remaining unchanged.
+> File Delta and Binary Delta updates might cause issues if a security app on the end user’s device modifies installed apps. This could prevent the app from launching after the update, as delta updaters rely on the installed apps remaining unchanged. </br> For more information, see the [GuardAgainstAppModification](mau-preferences.md#guardagainstappmodification) preference setting.
 
 Some security apps significantly increase CPU usage during Binary Delta updates. In these cases, set the UpdaterOptimization setting to CPU or None, which forces the use of File Delta instead.
-For more information, see: [UpdaterOptimization Preferences](mau-preferences.md#updateroptimization).
+For more information, see [UpdaterOptimization Preferences](mau-preferences.md#updateroptimization).
 
 ## Limitations
 
