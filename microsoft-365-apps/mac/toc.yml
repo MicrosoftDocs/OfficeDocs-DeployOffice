@@ -49,6 +49,8 @@ items:
             href: mau-set-license-info.md
           - name: Use msupdate
             href: update-office-for-mac-using-msupdate.md
+          - name: Updater types used by MAU
+            href: updater-types-used-by-microsoft-autoupdate.md
 
       - name: Set preferences
         items:
