@@ -16,21 +16,21 @@ ms.date: 10/01/2024
 
 # Updater types used by Microsoft AutoUpdate
 
-Microsoft AutoUpdate (MAU) uses a series of rules to determine whether a device can receive a smaller updater package rather than a full-sized updater package.
+Microsoft AutoUpdate (MAU) uses specific rules to determine whether a device receives a smaller updater package instead of a full-sized one
 
-Rules include:
+The rules include:
 
-- Whether the application update supports smaller updates  
-  Currently, only core Office apps (Word, Excel, PowerPoint, Outlook, and OneNote) use this feature.
+- Whether the app update supports smaller updates  
+  - Currently, only core Office apps (Word, Excel, PowerPoint, Outlook, and OneNote) support this feature.
 
-- Optimization preference setting  
-  (For more information, see: [UpdaterOptimization preferences setting](#))
+- The optimization preference setting  
+  For more information, see: [UpdaterOptimization preferences setting](mau-preferences.md#updateroptimization).
 
-- Whether smaller updater packages are available for the currently installed version
+- The availability of smaller updater packages for the installed version
 
-- Whether there's enough disk space available
+- Available disk space
 
-When MAU can't apply a smaller updater package, it downloads and updates with a full updater package.
+When MAU can't apply a smaller updater package, it downloads and installs a full updater package.
 
 ## Different updater types
 
@@ -39,14 +39,14 @@ Here's a summary of the three different types of updater packages Microsoft gene
 | Updater type  | Description |
 |---------------|-------------|
 | Full      | Contains all files needed to replace the currently installed app. The size of the updater is similar to the initial installer (though slightly less as the updater doesn't include other apps needed during the initial install, such as MAU, Defender, etc.). <br> Could take a long time to update as it needs to replace all files that make up the app. |
-| File Delta | Contains only the files that changed between the specified version and the latest version. <br> Only applicable to devices with the version the updater package is generated for. <br> The size is smaller than the full updater but larger than a binary delta updater. <br> Typically takes the shortest time to update. |
+| File Delta | Includes only the files that changed between the specified version and the latest version. <br> Only applicable to devices with the version the updater package is generated for. <br> The size is smaller than the full updater but larger than a binary delta updater. <br> Typically takes the shortest time to update. |
 | Binary Delta | Contains only the byte differences between the specified version and the latest version. <br> Only applicable to devices with the version the updater package is generated for. <br> The size is the smallest of the updater types. <br> Could take the longest to update, depending on the number of changes to be applied. <br> Also CPU-intensive, as all impacted files need to be opened, byte changes applied, and saved. |
 
 > [!NOTE]
-> As delta updaters rely on the fact that previously installed apps haven't been tampered with, File Delta and/or Binary Delta updates might cause issues if the end user's device utilizes a security app that changes installed apps. This might include an inability to launch apps after an update.
+> File Delta and Binary Delta updates might cause issues if a security app on the end user’s device modifies installed apps. This could prevent the app from launching after the update, as delta updaters rely on the installed apps remaining unchanged.
 
-Some security apps could add extreme overhead on CPU utilization when Binary Delta updates are used. In such cases, an UpdaterOptimization setting of CPU or None is recommended, which forces File Delta to be used instead.  
-For more information, see: [UpdaterOptimization Preferences](#).
+Some security apps significantly increase CPU usage during Binary Delta updates. In these cases, set the UpdaterOptimization setting to CPU or None, which forces the use of File Delta instead.
+For more information, see: [UpdaterOptimization Preferences](mau-preferences.md#updateroptimization).
 
 ## Limitations
 
