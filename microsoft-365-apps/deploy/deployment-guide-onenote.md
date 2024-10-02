@@ -52,7 +52,7 @@ There are different ways to exclude OneNote from being installed with Office, de
 |Microsoft Configuration Manager (current branch)| In the Office 365 Client Installation wizard, you can set **OneNote** to the **Off** position when you configure the Office settings.|
 |Microsoft Intune | On the **Configure app suite** page, you can clear the check box for OneNote in the **Select Office apps** drop-down list.|
 
-But, if you're allowing your users to install Office for themselves from the Office 365 portal, there's no way to exclude OneNote from being installed.
+If you're allowing your users to install Office for themselves from the Microsoft 365 portal, there's no way to exclude OneNote from being installed.
 
 ## OneNote for Windows 10 migration guidance
 
@@ -61,31 +61,41 @@ But, if you're allowing your users to install Office for themselves from the Off
 
 This section provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
 
-Migration Policy Development: To facilitate a successful migration to OneNote on Windows, organizations should:
+### Identifying Users on OneNote for Windows 10 version:
 
-*Customize the Migration Script.*
+To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
+
+- In Intune, navigate to: **All Services** > **Apps | Monitor** > **Monitor** > **Discovered apps**, then search for "Office.OneNote."
+- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. 
+  > [!NOTE]
+  > The sample migration script in the OneNote Deployment Guide works only with OneNote for Windows 10 devices on version `16001.14326.22008.0` or later.
+
+### Migration Policy Development
+
+To ensure a smooth migration to OneNote for Windows, organizations must customize their script to complete the following functions:
+
+- Installs OneNote on Windows on user devices. Refer to the Deployment Guidance section for more details.
+
+- Updates OneNote for Windows 10 to the latest build. This ensures important features are incorporated, preventing data loss during the migration of unsynced notes.
+    > [!NOTE]
+    > This script does not update OneNote for Windows 10 devices that aren't on version 16001.14326.22008. IT admins must upgrade these devices according to their organization's policy.
+
+- Terminates all OneNote for Windows 10 processes.
+
+- Backs up any unsynced notebooks to the user's backup folder using the `onenote-cmd://backup:` command.
+  - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
+  - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
+
+- Parse through the `UWPBackUpStatus.json` to validate the backup was successful.
+  - Uninstalling with a failed backup can lead to data loss.
+    > [!NOTE]
+    > To perform the backup, OneNote for Windows must be installed, and OneNote for Windows 10 must be updated to version 16001.14326.22008 or later.
+- Uninstalls OneNote for Windows 10.
+  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
 
 Use this sample script to suit your organization's needs. 
 
 :::code language="powershell" source="../snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1":::
-
-Ensure the script performs the following functions:
-
-- **Installs OneNote on Windows** on user devices. Refer to the Deployment Guidance section for more details.
-
-- **Updates OneNote for Windows 10** to the latest build (min build 16001.14326.21802.0) to incorporate essential features that prevent data loss during the migration of unsynced notes.
-
-- **Terminates all OneNote for Windows 10 processes.**
-
-- **Backs up any unsynced notebooks** to the user's backup folder using the `onenote-cmd://backup:` command.
-  - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
-  - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
-
-- **Parse through the `UWPBackUpStatus.json`** to validate backup was successful.
-  - Uninstalling with a failed backup can lead to data loss.
-
-- **Uninstalls OneNote for Windows 10.**
-  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
 
 ## Accessing Migrated Notes
 
@@ -105,8 +115,8 @@ To review backups through OneNote on Windows:
 
 - For errors encountered during migration, refer to the log file located in the backup generated previously (step 1.d).
 
-Should the `onenote-cmd://backup:` command fail:
-- Ensure that the OneNote for Windows 10 app is the default app linked to the `onenote-cmd` protocol.
+If the `onenote-uwp://backup:` command fails:
+- Ensure that the OneNote for Windows 10 app is the default app linked to the `onenote-uwp` protocol.
 - Consult the relevant support article to ensure correct protocol attachment to OneNote for Windows 10.
 
 > [!CAUTION]
