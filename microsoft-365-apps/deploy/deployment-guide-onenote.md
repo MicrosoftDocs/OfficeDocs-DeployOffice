@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides an overview for admins on how to deploy OneNote or OneNote for Windows 10 to users in their organization"
-ms.date: 09/18/2024
+ms.date: 10/02/2024
 ---
 
 # Deployment guide for OneNote
@@ -61,7 +61,7 @@ If you're allowing your users to install Office for themselves from the Microsof
 
 This section provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
 
-### Identifying Users on OneNote for Windows 10 version:
+### Identifying users on OneNote for Windows 10:
 
 To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
 
@@ -70,9 +70,9 @@ To identify users or devices in your organization using OneNote for Windows 10 v
   > [!NOTE]
   > The sample migration script in the OneNote Deployment Guide works only with OneNote for Windows 10 devices on version `16001.14326.22008.0` or later.
 
-### Migration Policy Development
+### Migration policy development
 
-To ensure a smooth migration to OneNote for Windows, organizations must customize their script to complete the following functions:
+To ensure a smooth migration to OneNote for Windows, organizations must customize the following sample script to complete the these functions:
 
 - Installs OneNote on Windows on user devices. Refer to the Deployment Guidance section for more details.
 
@@ -96,9 +96,9 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 Use this sample script to suit your organization's needs. 
 
 > [!div class="nextstepaction"]
-> [OneNote for Windows 10 migration script](../snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1)
+> [OneNote for Windows 10 sample migration script](onenote-for-windows-10-sample-script.md)
 
-## Accessing Migrated Notes
+## Accessing migrated notes
 
 After migration, users can retrieve their notes by:
 1. Opening the new **OneNote on Windows** application.
