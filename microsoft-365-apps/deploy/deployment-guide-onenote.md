@@ -18,7 +18,7 @@ ms.date: 10/02/2024
 <!--Using include for adding OneNote for Windows 10 eos-->
 [!INCLUDE [OneNote Windows 10 eos](../includes/onenote-win10-eos.md)]
 
-OneNote is included alongside the other Office apps, such as Word, Excel, and PowerPoint, when you deploy Microsoft 365 Apps, Office LTSC 2024, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
+OneNote is included with Word, Excel, and PowerPoint when you deploy Microsoft 365 Apps, Office Long Term Service Channel (LTSC) 2024, Office LTSC 2021, or Office 2019. There are no other steps you need to take to include OneNote with new installations of Office. But, always be sure to check the deployment settings before you deploy, for example when using the wizards in Configuration Manager (current branch) or Microsoft Intune.
 
 Use the [Office Deployment Tool](overview-office-deployment-tool.md) or enterprise deployment software like Microsoft Configuration Manager to include or exclude OneNote when you deploy Office in your organization.
 
@@ -54,84 +54,13 @@ There are different ways to exclude OneNote from being installed with Office, de
 
 If you're allowing your users to install Office for themselves from the Microsoft 365 portal, there's no way to exclude OneNote from being installed.
 
-## OneNote for Windows 10 migration guidance
-
-> [!NOTE]
-> To ensure uninterrupted service and workflow, it's strongly recommend that organizations migrate to OneNote on Windows well ahead of the OneNote for Windows 10 end-of-support date in October 2025. 
-
-This section provides a step-by-step guide to help you develop a migration policy and execute the transition smoothly.
-
-### Identifying users on OneNote for Windows 10:
-
-To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
-
-- In Intune, navigate to: **All Services** > **Apps | Monitor** > **Monitor** > **Discovered apps**, then search for "Office.OneNote."
-- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. The latest version is `16001.14326.22008.0`
-  > [!NOTE]
-  > The sample migration script works only with OneNote for Windows 10 devices on version `16001.14326.22008.0`.
-
-### Migration script customization guide
-
-To ensure a smooth migration to OneNote for Windows, organizations must customize the following sample script to complete the these functions:
-
-- Installs OneNote on Windows on user devices. Refer to the Deployment Guidance section for more details.
-
-- Updates OneNote for Windows 10 to the latest build. This ensures important features are incorporated, preventing data loss during the migration of unsynced notes.
-    > [!NOTE]
-    > This script does not update OneNote for Windows 10 devices that aren't on version 16001.14326.22008. IT admins must upgrade these devices according to their organization's policy.
-
-- Terminates all OneNote for Windows 10 processes.
-
-- Backs up any unsynced notebooks to the user's backup folder using the `onenote-cmd://backup:` command.
-  - The backups are stored in `C:\temp\OneNoteMigration`, however, feel free to edit the path to fit your organization’s needs.
-  - Each backup creates a corresponding folder for each notebook with unsynced sections within this path.
-
-- Parse through the `UWPBackUpStatus.json` to validate the backup was successful.
-  - Uninstalling with a failed backup can lead to data loss.
-    > [!NOTE]
-    > To perform the backup, OneNote for Windows must be installed, and OneNote for Windows 10 must be updated to version 16001.14326.22008 or later.
-- Uninstalls OneNote for Windows 10.
-  - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
-
-Modify this sample script to align with your organization's specific requirements.
-
-> [!div class="nextstepaction"]
-> [OneNote for Windows 10 sample migration script](onenote-for-windows-10-sample-script.md)
-
-## Accessing migrated notes
-
-After migration, users can retrieve their notes by:
-1. Opening the new **OneNote on Windows** application.
-2. Signing into their account.
-3. Opening their notebooks.
-
-If any notes are missing, check the backup folder that was created in the previous steps.
-
-To review backups through OneNote on Windows:
-- Navigate to **File -> Open Backups -> Navigate to the backup file path.**
-
-## Troubleshooting
-
-- Review the `UWPBackupStatus.json` and `UWPSyncStatus.json` files in the user’s backup folder for detailed information on the backup and sync statuses.
-
-- For errors encountered during migration, refer to the log file located in the backup generated previously (step 1.d).
-
-If the `onenote-uwp://backup:` command fails:
-- Ensure that the OneNote for Windows 10 app is the default app linked to the `onenote-uwp` protocol.
-- Consult the relevant support article to ensure correct protocol attachment to OneNote for Windows 10.
-
-> [!CAUTION]
-> Be cautious when using commands found online. Always test commands in a controlled environment before deploying them organization-wide to avoid unintended consequences, such as those resulting from the Remove-AppxPackage command. 
-
-For more assistance or inquiries, contact Microsoft Support.
-
 ## Additional information about deploying OneNote
 
 ### OneNote training resources
 We're providing [free and shareable eBooks](https://support.microsoft.com/office/4e08cf8b-dc37-4229-bdef-1f580220b6f5) to help your users transition to the user interface and functionalities in OneNote.
 
 ### Configure OneNote settings 
-You can use Group Policy to configure certain OneNote settings for your users. To use Group Policy, download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement the policy settings by using Active Directory Domain Services (AD DS).
+You can use Group Policy to configure certain OneNote settings for your users. To use Group Policy, download the latest [Administrative Template files (ADMX/ADML) for Office](https://www.microsoft.com/download/details.aspx?id=49030) from the Microsoft Download Center and implement the policy settings by using Active Directory Domain Services.
 
 > [!NOTE]
 > - Group Policy requires the devices with OneNote to be joined to an Active Directory domain. 
@@ -150,3 +79,4 @@ There are also versions of OneNote for Mac, iPad, iPhone, Android, and for web b
 - [Frequently Asked Questions about OneNote in Office 2019 and Microsoft 365](https://support.microsoft.com/office/6582c7ae-2ec6-408d-8b7a-3ed71a3c2103)
 - [OneNote help & learning](https://support.microsoft.com/OneNote)
 - [OneNote info for developers](https://developer.microsoft.com/onenote)
+- [OneNote for Windows 10 migration guide](onenote-for-windows-10-migration-guide.md)
