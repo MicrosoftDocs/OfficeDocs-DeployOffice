@@ -66,11 +66,11 @@ This section provides a step-by-step guide to help you develop a migration polic
 To identify users or devices in your organization using OneNote for Windows 10 via Microsoft Intune, follow these steps to run a report:
 
 - In Intune, navigate to: **All Services** > **Apps | Monitor** > **Monitor** > **Discovered apps**, then search for "Office.OneNote."
-- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. 
+- Look for the application version starting with `16001.xxxxx.xxxxx.x` to identify OneNote for Windows 10 users. The latest version is `16001.14326.22008.0`
   > [!NOTE]
-  > The sample migration script in the OneNote Deployment Guide works only with OneNote for Windows 10 devices on version `16001.14326.22008.0` or later.
+  > The sample migration script works only with OneNote for Windows 10 devices on version `16001.14326.22008.0`.
 
-### Migration policy development
+### Migration script customization guide
 
 To ensure a smooth migration to OneNote for Windows, organizations must customize the following sample script to complete the these functions:
 
@@ -93,7 +93,7 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 - Uninstalls OneNote for Windows 10.
   - Ensure OneNote for Windows 10 is uninstalled on a user basis and not on a device basis. This process helps mitigate scenarios where shared devices have unsynced notes removed for all accounts.
 
-Use this sample script to suit your organization's needs. 
+Modify this sample script to align with your organization's specific requirements.
 
 > [!div class="nextstepaction"]
 > [OneNote for Windows 10 sample migration script](onenote-for-windows-10-sample-script.md)
