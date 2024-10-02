@@ -95,7 +95,12 @@ To ensure a smooth migration to OneNote for Windows, organizations must customiz
 
 Use this sample script to suit your organization's needs. 
 
+<details>
+  <summary>Click to expand</summary>
+
 :::code language="powershell" source="../snippets/deployment-guide-onenote/uninstall-onenote-win10.ps1":::
+
+</details>
 
 ## Accessing Migrated Notes
 
