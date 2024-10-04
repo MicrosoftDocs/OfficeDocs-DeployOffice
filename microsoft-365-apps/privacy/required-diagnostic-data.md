@@ -656,7 +656,7 @@ In addition, the following fields are common for all events for Outlook for Andr
 
 - **DeviceInfo.NetworkCost** - Indication of devices current network cost, which reflects the status of WiFi/Cellular/Roaming to help detect issues specific to device network
 
-- **is_app_in_duo_split_view_mode** - This lets us know that the app was in Duo split-screen mode.  This property is set only for Duo (Android only) devices.
+- **is_app_in_duo_split_view_mode** - This lets us know that the app was in Duo split-screen mode. This property is set only for Duo (Android only) devices.
 
 - **is_app_local** - This property helps to identify whether the account is of type app_local or not. App local is a non syncable account on Hx platform, which helps in persisting storage/local calendar accounts into HxStorage.
 
@@ -728,7 +728,7 @@ The following fields are collected:
 
 - **appTaskSize** - depicts the number of tasks currently on stack for OM app.
 
-- **exceptionReceived** - populated if there was an exception in determining kind of file activation
+- **exceptionReceived** - populated if there was an exception in determining the type of file activation
 
 - **isPdfActivation** - true if its detected as a pdf activation and false if any other launch type
 
@@ -753,7 +753,7 @@ The following fields are collected:
 
 #### Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
 
-Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32.  Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32.
+Indicates whether the Office File Format choice dialog box was shown to the user on first/second boot of Word, Excel, PowerPoint on Win32. Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32.
 
 The following fields are collected.
 
@@ -765,7 +765,7 @@ The following fields are collected.
 
 #### Office.Compliance.FileFormatBallotOption
 
-Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32.  Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
+Tracks whether the FileFormat Ballot dialog box is displayed - event is sent at the first/second boot of Word, Excel, or PPT Win32. Indicates whether the Office File Format choice dialog box is displayed on first or second boot of Word, Excel, or PowerPoint on Win32.
 
 The following fields are collected:
 
@@ -822,7 +822,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.App.OneNoteLaunchedNonActivated.]*
 
-Records information about activation state of the App.  The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
+Records information about activation state of the App. The data is monitored to ensure we identify spikes in activation issues. We also analyze the data to find areas of improvement.
 
 The following fields are collected: 
 
@@ -832,7 +832,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.ResetStatus.]*
 
-The signal used to record any issues encountered when a user tries to reset the App.  The telemetry is used to monitor, detect, and fix any issues caused during reset. 
+The signal used to record any issues encountered when a user tries to reset the App. The telemetry is used to monitor, detect, and fix any issues caused during reset. 
 
 The following fields are collected: 
 
@@ -887,7 +887,7 @@ The following fields are collected:
 
 #### Office.OneNote.FirstRun.FirstRun
 
-The critical signal used to ensure new users can successfully launch and run OneNote for the first time.  The telemetry is collected to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
+The critical signal used to ensure new users can successfully launch and run OneNote for the first time. The telemetry is collected to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
 
 - **AfterOneDriveFrozenAccountError** - Indicates an error from OneDrive when an account is frozen.
 
@@ -929,7 +929,7 @@ The following fields are collected:
 
 #### Office.OneNote.FirstRun.FirstRunForOrgId
 
-The critical signal used to ensure new enterprise users (Microsoft Entra ID/OrgID) can successfully launch and run OneNote for the first time.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
+The critical signal used to ensure new enterprise users (Microsoft Entra ID/OrgID) can successfully launch and run OneNote for the first time. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't launch the app for the first time, this would trigger a high severity incident.
 
 - **Attempt** - The number of times that the first run experience needs to retry.
 
@@ -947,7 +947,7 @@ The critical signal used to ensure new enterprise users (Microsoft Entra ID/OrgI
 
 #### Office.OneNote.FirstRun.MruReaderNoteBookEntries 
 
-The signal used to record any issues encountered when loading Notebooks during First Run.  The telemetry is used to monitor, detect, and fix any issues in First run.
+The signal used to record any issues encountered when loading Notebooks during First Run. The telemetry is used to monitor, detect, and fix any issues in First run.
 
 The following fields are collected: 
 
@@ -1004,7 +1004,7 @@ The following fields are collected:
 
 #### Office.Taos.Hub.Windows.DiscoveredApps
 
-This event gets triggered whenever the app gets booted.This event is used to record the number of installed apps in Office hub for the current user.
+This event gets triggered whenever the app gets booted. This event is used to record the number of installed apps in Office hub for the current user.
 
 The following fields are collected:
 
@@ -1088,7 +1088,7 @@ The following fields are collected:
 
 - **Count** - Count of the installed apps.
 
-- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
 - **DeviceInfo_Make** - The device make.
 
@@ -1270,7 +1270,7 @@ The following fields are collected:
 
 - **IsUserInitiated** - A Boolean value indicating whether the action is initiated by user or not.
 
-- **KnownWindowType** - The name of the Window type e.g, MsalAuthWindow, MOSHubSdkAuthWindow,etc.
+- **KnownWindowType** - The name of the Window type. For example, MsalAuthWindow, MOSHubSdkAuthWindow, etc.
 
 - **M365aInfo_EnrolledTenantId** - The Enrollment TenantID.
 
@@ -1306,7 +1306,7 @@ The following fields are collected:
 
 - **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
-- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
 - **DeviceInfo_Make** - The device make.
 
@@ -1533,7 +1533,7 @@ The following fields are collected:
 
 #### Office.Extensibility.AppCommands.AddSolution
 
-Collects install information for Office add-ins that customize the ribbon.  Used to detect issues with how custom add-ins modify the Office ribbon.
+Collects install information for Office add-ins that customize the ribbon. Used to detect issues with how custom add-ins modify the Office ribbon.
  
 The following fields are collected:
 
@@ -2160,7 +2160,7 @@ This event is collected to ensure account configuration is operating successfull
 
 The following fields are collected:
 
-- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add.  It can have values like single sign-on (SSO), create_new_account, manual, etc.
+- **account_creation_source** – optional property that is used to find and diagnose any issues that happen during account creation when the action type is add. It can have values like single sign-on (SSO), create_new_account, manual, etc.
 
 - **action** - The type of action performed on the account, such as add, remove, or reset
 
@@ -2168,7 +2168,7 @@ The following fields are collected:
 
 #### add.new.account.step
 
-This event lets us detect how far the user has gotten in the create new account form.  It indicates when the user has moved to another step or if they have dropped off.  We need this information to detect if any steps are failing and to ensure user account creation was successful. 
+This event lets us detect how far the user has gotten in the create new account form. It indicates when the user has moved to another step or if they have dropped off. We need this information to detect if any steps are failing and to ensure user account creation was successful. 
 
 The following fields are collected: 
 
@@ -2228,7 +2228,7 @@ All characters are also possible properties. This helps us understand the charac
 
 #### app.launch.report
 
-This event is triggered when Outlook starts slowly or incompletely. The data collected provides information on the specific features that were enabled and how long parts of the startup took.  It allows us to detect and fix the cause of the issues.
+This event is triggered when Outlook starts slowly or incompletely. The data collected provides information on the specific features that were enabled and how long parts of the startup took. It allows us to detect and fix the cause of the issues.
 
 The following fields are collected: 
 
@@ -2296,13 +2296,13 @@ The following fields are collected:
 
 - **create_poll_card_shown** - Whether the create poll card was shown in the UI when the user was creating an event. This allows us to understand how often users opt into creating a poll.
 
-- **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar.  Helps us understand if there are any issues with deleting a meeting from a certain location. 
+- **delete_action_origin** - The origin of the delete action performed. This includes values such as navigation bar toolbar and capsule toolbar. Helps us understand if there are any issues with deleting a meeting from a certain location. 
 
 - **distribution_list_count** - Number of attendees that are on distribution lists. Helps us track if there are issues with attendees that are on distribution lists. 
 
 - **emo_default_meeting_provider** - The type of default meeting provider used by the user while creating the meeting. Helps us to understand the user’s engagement with the "Every meeting online" feature.
 
-- **guest_count** - The number of guests on the meeting.  Helps us make sure that the guests are being added correctly. 
+- **guest_count** - The number of guests on the meeting. Helps us make sure that the guests are being added correctly. 
 
 - **is_all_day** - Used along with "meeting_duration" to specify if this is an all-day meeting. Helps us understand if there are any issues with actions performed on all-day meetings. 
 
@@ -2336,21 +2336,21 @@ The following fields are collected:
 
 - **location_session_id** - ID of the meeting location chooser session. Helps us diagnose any issues with choosing a location to add to the meeting. 
 
-- **location_type** - The type of location selected.  Contains types such as custom location, conference room, and Bing. Helps us understand issues with adding certain location types to the meeting. 
+- **location_type** - The type of location selected. Contains types such as custom location, conference room, and Bing. Helps us understand issues with adding certain location types to the meeting. 
 
-- **meeting_duration** - The length of the meeting.  Helps us make sure that the meetings are being configured with the correct times. 
+- **meeting_duration** - The length of the meeting. Helps us make sure that the meetings are being configured with the correct times. 
 
-- **meeting_insights_type** - The type of meeting insights in the event details.  This includes file and message. Helps us understand the number of meeting insights that are being shown. 
+- **meeting_insights_type** - The type of meeting insights in the event details. This includes file and message. Helps us understand the number of meeting insights that are being shown. 
 
-- **meeting_type** - The type of online meeting associated with the action.  This includes types of Skype, Skype for Business, Hangout, and Teams for Business. Helps us understand if the online meetings are configured correctly. 
+- **meeting_type** - The type of online meeting associated with the action. This includes types of Skype, Skype for Business, Hangout, and Teams for Business. Helps us understand if the online meetings are configured correctly. 
 
 - **online_meeting_provider_switch_type** - The type of switch done by the user between the online meeting providers. Helps us to understand the user’s engagement with the feature.
 
 - **origin** - The origin of the calendar action. This includes types like agenda, calendar, widget agenda, etc. Helps us better ensure the interaction within the calendar components are working correctly 
 
-- **recurrence_scope** - The type of recurrence of the meeting, either occurrence or series.  Helps us understand if there are any issues with editing different meeting recurrence types. 
+- **recurrence_scope** - The type of recurrence of the meeting, either occurrence or series. Helps us understand if there are any issues with editing different meeting recurrence types. 
 
-- **reminder_time** - The reminder time of the meeting if it has changed.  Used to make sure the reminder time of the meeting is saved correctly. 
+- **reminder_time** - The reminder time of the meeting if it has changed. Used to make sure the reminder time of the meeting is saved correctly. 
 
 - **reminders_count** - Number of reminders on the event if the reminders have changed. Helps us diagnose any issues with multiple reminders on an event. 
 
@@ -2400,7 +2400,7 @@ The following fields are collected across iOS and Android:
 
 - **is_best_match_suggestion** - whether the search suggestion selected is a best match.
 
-- **is_ics_external_data** - Captures if an added event is internal (i.e. added in Outlook to Outlook calendar) or external (i.e. added from another email app such as Gmail to Outlook calendar).
+- **is_ics_external_data** - Captures if an added event is internal (for example, added in Outlook to Outlook calendar) or external (for example, added from another email app such as Gmail to Outlook calendar).
 
 - **is_network_fully_connected** - This is to get a hint of the reason behind the offline search. If the network is connected and the search is offline, then the reason is likely to be the server timeout
 
@@ -2613,13 +2613,13 @@ The following fields are collected:
 
 #### drag.and.drop
 
-This event lets us detect if the drag and drop action was successful or not.  It's used to ensure that drag-and-drop experiences are working correctly across applications both as a drop event into Outlook and a drag event that leaves Outlook.  With this data, we're able to ensure that the end-to-end experience with other applications is working as expected.
+This event lets us detect if the drag and drop action was successful or not. It's used to ensure that drag-and-drop experiences are working correctly across applications both as a drop event into Outlook and a drag event that leaves Outlook. With this data, we're able to ensure that the end-to-end experience with other applications is working as expected.
 
 The following fields are collected: 
 
 - **action** - Action will be either drag or drop
 
-- **location** - In case of a drag action, this lets us know from which location the user started the drag.  In case of a drop action, this lets us know where the user dropped the file that was being dragged. 
+- **location** - In case of a drag action, this lets us know from which location the user started the drag. In case of a drop action, this lets us know where the user dropped the file that was being dragged. 
 
 - **source** – In the case of a drop action, this lets us know from which location the user started the drag. This helps us better discover issues with a specific source like OneDrive or Files into a specific drop location, such as a new email.
 
@@ -2635,7 +2635,7 @@ The following fields are collected:
 
 - **calendar_apps_count** - Indicates the number of calendar apps present on the user's device to help us detect issues related to calendar apps
 
-- **drawer_type** - Indicates the drawer type: calendar, mail or zero query to help us detect issues related to the drawer type
+- **drawer_type** - Indicates the drawer type: calendar, mail, or zero query to help us detect issues related to the drawer type
 
 - **dwell_time** - Indicates the amount of time the user spent navigating the drawer before taking an action such as selecting the folder.
 
@@ -3187,7 +3187,7 @@ The following fields are collected:
 
 #### log.event.appointment.attendee
 
-This event is triggered when the user clicks on any add-in on their calendar page. The data is used to detect the usage of add-ins and determine the if the feature is performing correctly.
+This event is triggered when the user clicks on any add-in on their calendar page. The data is used to detect the usage of add-ins and determine if the feature is performing correctly.
 
 The following fields are collected: 
 
@@ -3376,7 +3376,7 @@ The following fields are collected across iOS and Android:
 
 #### multi.window.launch
 
-This event captures when the user takes action that involves multi-window launch on foldable devices, for example, compose mail, event, open calendar window.  It uses the action to remember such action, for example, to keep getting the prompt or always launch in new window.  The data collected by this event will be used to assess discoverability, effectiveness as well as general user preferences to drive current and future developments of multi window related functionalities.
+This event captures when the user takes action that involves multi-window launch on foldable devices, for example, compose mail, event, open calendar window. It uses the action to remember such action, for example, to keep getting the prompt or always launch in new window. The data collected by this event will be used to assess discoverability, effectiveness as well as general user preferences to drive current and future developments of multi window related functionalities.
 
 The following fields are collected: 
 
@@ -3668,7 +3668,7 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.ExpansionFilesDownloader
 
-We're enabling Android Package Kit (APK) expansion files for the Microsoft 365 mobile app. APK Expansion files are supplementary resource files, that Android app developers can publish along with their app.  To understand the reliability of our expansion file download mechanism, we're logging a flag indicating whether we're successfully able to download expansion files.
+We're enabling Android Package Kit (APK) expansion files for the Microsoft 365 mobile app. APK Expansion files are supplementary resource files, that Android app developers can publish along with their app. To understand the reliability of our expansion file download mechanism, we're logging a flag indicating whether we're successfully able to download expansion files.
 
 The following fields are collected: 
 
@@ -3744,7 +3744,7 @@ The following fields are collected:
 
 #### Office.Android.PhoneNumberSignIns
 
-This event helps in understanding if user signed in or signed up with phone number-based account or email based personal Microsoft account.  This event helps in knowing count of users signing in or signing up with phone number based personal Microsoft account.
+This event helps in understanding if user signed in or signed up with phone number-based account or email based personal Microsoft account. This event helps in knowing count of users signing in or signing up with phone number based personal Microsoft account.
 
 The following fields are collected:
 
@@ -3758,7 +3758,7 @@ The following fields are collected:
 
 #### Office.Android.UserSignInDecision
 
-This event helps in understanding at which stage user is dropping in sign in flow, why sign in is failing, how many users are getting signed in successfully from which entry point in the app and so on.  This event helps with sign-in funnel data, which helps in understand at which stage users are getting dropped more and so on.
+This event helps in understanding at which stage user is dropping in sign in flow, why sign in is failing, how many users are getting signed in successfully from which entry point in the app and so on. This event helps with sign-in funnel data, which helps in understand at which stage users are getting dropped more and so on.
 
 The following fields are collected:
 
@@ -3797,7 +3797,7 @@ The following fields are collected:
 
 #### Office.AppCompat.AppCompat.AgentScanAndUpload
 
-Only collected when end user has enabled Office Telemetry Dashboard. It collects information on when the Office Telemetry Agent is executed.  This is only collected when Office Telemetry Dashboard is enabled and is used to determine the health of Office Telemetry agent.
+Only collected when end user has enabled Office Telemetry Dashboard. It collects information on when the Office Telemetry Agent is executed. This is only collected when Office Telemetry Dashboard is enabled and is used to determine the health of Office Telemetry agent.
 
 The following fields are collected:
 
@@ -3809,7 +3809,7 @@ The following fields are collected:
 
 #### Office.AppCompat.AppCompat.AgentUpload
 
-Generated on client startup when end user has enabled Office Telemetry Dashboard.  It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
+Generated on client startup when end user has enabled Office Telemetry Dashboard. It collects information on when the Office Telemetry Agent has uploaded data to the share folder. The primary use of this event is to monitor the health of the Office Telemetry agent and the secondary use of the event is to estimate usage of the Office Telemetry Dashboard.
 
 The following fields are collected:
 
@@ -3978,7 +3978,7 @@ The following fields are collected:
 
 #### Office.Apple.CISAuthTicketWithIdentity
 
-This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received).  This event is used for detecting and helping troubleshoot auth token generation failures.
+This event is collected for Office applications running under Apple platforms. The event is used for capturing auth token generation failures during InAppPurchase on the Mac (the event logs the error code received). This event is used for detecting and helping troubleshoot auth token generation failures.
 
 The following fields are collected:
 
@@ -4024,7 +4024,7 @@ The following fields are collected:
 #### Office.Apple.InAppAssociationActivity
 
 This event is collected for Office applications running under Apple platforms. 
-We collect information related to product association after an in-app purchase. We log which subscription SKU we're associating.  This is used to monitor the health of the in-app purchase product associations.
+We collect information related to product association after an in-app purchase. We log which subscription SKU we're associating. This is used to monitor the health of the in-app purchase product associations.
 
 The following fields are collected:
 
@@ -4034,7 +4034,7 @@ The following fields are collected:
 
 This event is collected for Office applications running under Apple platforms. 
 
-We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.).  This data is used for monitoring the health of the in-app purchase flows.
+We collect information related to product purchases on the AppStore. We track the result of the purchase (Failure, success, payment issue, etc.), the type of the purchase request (restore, purchase) and the SKU/product being purchased (Microsoft 365 Family, etc.). This data is used for monitoring the health of the in-app purchase flows.
 
 The following fields are collected:
 
@@ -4078,7 +4078,7 @@ The following fields are collected:
 
 #### Office.ConnectDevice.Activity.Start
 
-Allows us to know if a connection to a device or application was successful.  Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
+Allows us to know if a connection to a device or application was successful. Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
 
 The following fields are collected:
 
@@ -4855,7 +4855,7 @@ The following fields are collected:
 
 #### Office.DocsUI.Collaboration.CoauthorGalleryRowTapped 
 
-This event is collected for Office applications running under Apple platforms. This event records when a user selects to look at the list of current co-authors.  This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
+This event is collected for Office applications running under Apple platforms. This event records when a user selects to look at the list of current co-authors. This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
 
 The following fields are collected:
 
@@ -4863,7 +4863,7 @@ The following fields are collected:
 
 #### Office.DocsUI.Collaboration.CollabCornerPeopleGalleryCoauthorsUpdated 
 
-This event is collected for Office applications running under Apple platforms. The event records when the number of active co-authors in a cloud document changes.  This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
+This event is collected for Office applications running under Apple platforms. The event records when the number of active co-authors in a cloud document changes. This data is used to better understand and prioritize user-experiences relating to co-authoring a document at the same time.
 
 The following fields are collected:
 
@@ -5019,7 +5019,7 @@ The following fields are collected:
 
 - **Data_OpenStartTime** - The Unix epoch time when the file open started.
 
-- **Data_PrefetchSourceOptions** - An enumeration indicating how the file is made available offline for cloud documents, e.g., from recent and recommended files. 
+- **Data_PrefetchSourceOptions** - An enumeration indicating how the file is made available offline for cloud documents. For example, from recent and recommended files. 
 
 - **Data_SilhouetteDuration** - The duration of rendering of the file open.
 
@@ -5066,7 +5066,7 @@ The following fields are collected:
 
 #### Office.DocsUI.SharingUI.CloudUpsellShown 
 
-This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow.  This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
+This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow. This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
 
 The following fields are collected:
 
@@ -5084,7 +5084,7 @@ The following fields are collected:
 
 #### Office.DocsUI.SharingUI.CloudUpsellUpload 
 
-This event is collected for Office applications running under Apple platforms. This event records when a user chooses to upload a new or local file to the cloud and the result of that operation.  This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
+This event is collected for Office applications running under Apple platforms. This event records when a user chooses to upload a new or local file to the cloud and the result of that operation. This data is used to better understand and prioritize user-experiences relating to moving documents to cloud locations.
 
 The following fields are collected:
 
@@ -5106,7 +5106,7 @@ The following fields are collected:
 
 - **Data_UploadAction** - A hard-coded string that indicates whether the upload was a move or a copy operation.
 
-- **Data_UploadResult** - A hard-coded string that indicates the result of the attempt to upload including but not limited to ''Success", "UserCancelledUpload", and "PreAuthFailed".
+- **Data_UploadResult** - A hard-coded string that indicates the result of the attempt to upload including but not limited to "Success", "UserCancelledUpload", and "PreAuthFailed".
 
 #### Office.DocsUI.SharingUI.CopyLinkOperation
 
@@ -5174,7 +5174,7 @@ The following fields are collected:
 
 #### Office.DocsUI.SharingUI.UpsellShare 
 
-This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow when trying to share a document.  This data is used to better understand and prioritize user experiences relating to moving documents to cloud locations.
+This event is collected for Office applications running under Apple platforms. This event records when a user goes through the document upsell to cloud flow when trying to share a document. This data is used to better understand and prioritize user experiences relating to moving documents to cloud locations.
 
 The following fields are collected:
 
@@ -5226,7 +5226,7 @@ The following fields are collected:
 
 #### Office.Excel.Python.ExecuteCode
 
-This event is triggered when users execute Python formula in Excel.  This data is used to confirm the successful execution of Python code in order to provide the desired experience to the user while running Python in Excel.
+This event is triggered when users execute Python formula in Excel. This data is used to confirm the successful execution of Python code in order to provide the desired experience to the user while running Python in Excel.
 
 The following fields are collected:
 
@@ -5459,7 +5459,7 @@ The following fields are collected:
 
 - **Data_ErrorCode** - A value indicating which error encountered.
 
-- **Data_PythonCenterLaunchSource** - An enum value indicating the source of Python Center launch such as “=PY(“ , ctrl+shift+alt+P.
+- **Data_PythonCenterLaunchSource** - An enum value indicating the source of Python Center launch such as “=PY(“ , ctrl+shift+alt+P).
 
 - **Data_UIType** - An enum value with a default of "Dialog"
 
@@ -5506,9 +5506,9 @@ The following fields are collected:
 
 - **ClientSettings** -  Specific client setting of the feature that is configured by the service.
  
-- **EventType** - EventType is a identifier of notification displayed. 
+- **EventType** - EventType is an identifier of notification displayed. 
 
-- **NotificationLevel** – This is a enum value, means how important the notification is. 1 is the lowest level, (means informational), 3 is the highest lever (means error)
+- **NotificationLevel** – This is an enum value, means how important the notification is. 1 is the lowest level (means informational), 3 is the highest lever (means error)
 
 - **NotificationPartType** – This value is either 0 or 1. 0 means this notification is for current session. 1 means this notification is for current workbook.
 
@@ -5520,9 +5520,9 @@ The following fields are collected:
 
 - **ChildAction** - This is an enum value, means what type of interaction user made with the notification. The value could be 40, 41 or 42. 40 means user click button which opens a hyper link in browser. 41 means user click button that trigger software behavior (for example: display a dialog). 42 means the notification is dismissed.
 
-- **EventType** - EventType is a identifier of notification user interacted with. 
+- **EventType** - EventType is an identifier of notification user interacted with. 
 
-- **NotificationLevel** – This is an enum value, means how important the notification is. 1 is the lowest level, (means informational), 3 is the highest lever (means error)
+- **NotificationLevel** – This is an enum value, means how important the notification is. 1 is the lowest level (means informational), 3 is the highest lever (means error)
 
 - **NotificationPartType** – This value is either 0 or 1. 0 means this notification is for current session. 1 means this notification is for current workbook.
 
@@ -5844,7 +5844,7 @@ The following fields are collected:
 
   - **Data.Doc.FileFormat -** File format protocol version
 
-  - **Data.Doc.Fqdn -** OneDrive or SharePoint Online Domain Name
+  - **Data.Doc.Fqdn -** OneDrive or SharePoint Domain Name
 
   - **Data.Doc.FqdnHash -** One-way hash of customer identifiable domain name
 
@@ -5890,7 +5890,7 @@ The following fields are collected:
 
   - **Data.Doc.SessionId -** Identifies a specific document edit session within the full session
 
-  - **Data.Doc.SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+  - **Data.Doc.SharePointServiceContext -** Diagnostic information from SharePoint requests
 
   - **Data.Doc.SizeInBytes -** Indicator of document size
 
@@ -6104,7 +6104,7 @@ The following fields are collected:
 
   - **Data.Doc.FileFormat -** File format protocol version
 
-  - **Data.Doc.Fqdn -** OneDrive or SharePoint Online Domain name
+  - **Data.Doc.Fqdn -** OneDrive or SharePoint Domain name
 
   - **Data.Doc.FqdnHash -** One-way hash of the customer identifiable domain name
 
@@ -6154,7 +6154,7 @@ The following fields are collected:
 
   - **Data.Doc.SessionId -** Identifies a specific document edit session within the full session
 
-  - **Data.Doc.SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+  - **Data.Doc.SharePointServiceContext -** Diagnostic information from SharePoint requests
 
   - **Data.Doc.SizeInBytes -** Indicator of document size
 
@@ -6194,7 +6194,7 @@ The following fields are collected:
 
   - **Data.DstDoc.FileFormat -** New document's file format protocol
 
-  - **Data.DstDoc.Fqdn -** New document's OneDrive or SharePoint Online domain name
+  - **Data.DstDoc.Fqdn -** New document's OneDrive or SharePoint domain name
 
   - **Data.DstDoc.FqdnHash -** One-way hash of new document's customer identifiable domain name
 
@@ -6224,7 +6224,7 @@ The following fields are collected:
 
   - **Data.DstDoc.SessionId -** Identifies a specific document edit session within the full session for the new document
 
-  - **Data.DstDoc.SharePointServiceContext -** Diagnostic information from SharePoint Online requests for the new document
+  - **Data.DstDoc.SharePointServiceContext -** Diagnostic information from SharePoint requests for the new document
 
   - **Data.DstDoc.SizeInBytes -** Indicator of document size of new document
 
@@ -6328,15 +6328,15 @@ The following fields are collected:
 
   - **Data.WorkingCopySaved -** change tracking diagnostic making sure we have the latest version of a shared file
 
-  - **Data.ZrtSaveAsforSyncBackedBusinessEnabled -** flag indicating fast save enabled for SharePoint Online
+  - **Data.ZrtSaveAsforSyncBackedBusinessEnabled -** flag indicating fast save enabled for SharePoint
 
   - **Data.ZrtSaveAsforSyncBackedConsumerEnabled -** flag indicating fast save enabled for OneDrive Consumer
 
-  - **Data.ZrtSaveAsforSyncBackedCTBusinessEnabled -** flag indicating fast save content types enabled for SharePoint Online
+  - **Data.ZrtSaveAsforSyncBackedCTBusinessEnabled -** flag indicating fast save content types enabled for SharePoint
 
   - **Data.ZrtSaveAsforSyncBackedCTConsumerEnabled -** flag indicating fast save content types enabled for OneDrive Consumer
 
-  - **Data.ZrtSaveAsforSyncBackedMetaDataBusinessEnabled -** flag indicating fast file metadata save enabled for SharePoint Online
+  - **Data.ZrtSaveAsforSyncBackedMetaDataBusinessEnabled -** flag indicating fast file metadata save enabled for SharePoint
 
   - **Data.ZrtSaveAsforSyncBackedMetaDataConsumerEnabled -** flag indicating fast file metadata save enabled for OneDrive Consumer-
 
@@ -6377,7 +6377,7 @@ The following fields are collected:
 
 #### Office.FirstRun.Apple.FirstRunComplete
 
-This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out if the First Run-Experience (FRE) was completed and type of identity used to sign in (MSA/OrgID).
+This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase), and the identity type (MSA/OrgID). We use this event to figure out if the First Run-Experience (FRE) was completed and type of identity used to sign in (MSA/OrgID).
 
 The following fields are collected:
 
@@ -6401,7 +6401,7 @@ The following fields are collected:
 
 #### Office.FirstRun.Apple.FirstRunStartedAndCompleted
 
-This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase) and the identity type (MSA/OrgID). We use this event to figure out the health and effectiveness of our First-Run Experience (FRE) flow.
+This event is collected for Office applications running under Apple platforms. The event lets us know if the user running in freemium, the flow type being run (FRE/DocStage/Purchase), and the identity type (MSA/OrgID). We use this event to figure out the health and effectiveness of our First-Run Experience (FRE) flow.
 
 The following fields are collected:
 
@@ -6818,13 +6818,13 @@ This event is collected when Lens SDK interacts with Microsoft’s Image-to-docu
 - When an image is uploaded to our I2D service for file conversion and extraction (OCR).
 - When the user needs to correct the service’s output, we send feedback to improve quality.
 
-The data is used to analyse the usage and troubleshoot issues on the service side.  
+The data is used to analyze the usage and troubleshoot issues on the service side.  
 
 The following fields are collected:
 
 - **CloudConnectorRequestId** - String that identifies the service-requests on the client app for both conversion and feedback scenarios.
 
-- **CustomerId** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service isn't directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.	
+- **CustomerId** - This string helps map users to service requests and help us track usage. UserId is required to fulfill GDPR requirements as service isn't directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product.	
 
 - **I2DFeedbackAPICorrelationId** - String that identifies the feedback-request in I2D service when user corrects the service output.
 
@@ -6833,7 +6833,7 @@ The following fields are collected:
 
 #### Office.LivePersonaCard.ConfigurationSetAction
 
-We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card.  The data is used to determine whether the card loaded correctly. 
+We log when the user is in an app that loads a Persona Card in anticipation of the user opening the Live Persona Card. The data is used to determine whether the card loaded correctly. 
 
 The following fields are collected: 
 
@@ -7004,7 +7004,7 @@ The following fields are collected:
 
 #### Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
-We log when the user closes a Persona Card.  The data is used to determine whether the card closed correctly. 
+We log when the user closes a Persona Card. The data is used to determine whether the card closed correctly. 
 
 The following fields are collected: 
 
@@ -7266,7 +7266,7 @@ The following fields are collected:
 #### Office.OfficeMobile.Lens.LensRequiredUsage
 
 This event is triggered when one of the following things happens:
-- The user launches Lens to capture or import images in any workflow.  This helps Microsoft determine the volume of users launching the app and further understand feature usage, changes in trends, and to identify and rectify issues in the product. 
+- The user launches Lens to capture or import images in any workflow. This helps Microsoft determine the volume of users launching the app and further understand feature usage, changes in trends, and to identify and rectify issues in the product. 
 - The user completes the Lens workflow. For example, creating images or copying extracted data from image. This helps Microsoft to understand engagement metrics for the Lens App and to calculate the completion rate in any Lens workflow.
 - Lens Software Developer Kit interacts with Microsoft’s Image-to-document (I2D) service. This means that the event is called when an image is uploaded to our I2D service for file conversion and extraction (OCR) and when the user needs to correct the service’s output, we send feedback to improve quality. 
 
@@ -7276,7 +7276,7 @@ The following fields are collected:
 
 - **Data_CloudConnectorRequestID** - String that identifies the service requests on the client app for both conversion and feedback scenarios.
 
-- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfil GDPR requirements as service isn't directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
+- **Data_CustomerID** - This string helps map users to service requests and help us track usage. UserId is required to fulfill GDPR requirements as service isn't directly exposed to users, but through clients and identify the total number of people using the service, helping the service track the volume of users using the product. *[This field has been removed from current builds of Office, but might still appear in older builds.]*
 
 - **Data_EntryPoint** - integer value to identify entry point for Lens flow.
 
@@ -7393,7 +7393,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.App.Navigation.NavigationUIStateChanged.]*
 
-This event collects the critical signal used to ensure OneNote users can successfully navigate through the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+This event collects the critical signal used to ensure OneNote users can successfully navigate through the app. The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: 
 
@@ -7406,7 +7406,7 @@ The following fields are collected:
 
 #### Office.OneNote.Android.Canvas.PageCreated
 
-This event is triggered when a new OneNote page is created. The data is used to monitor, detect and fix any issues caused when a page is created in OneNote.
+This event is triggered when a new OneNote page is created. The data is used to monitor, detect, and fix any issues caused when a page is created in OneNote.
 
 The following fields are collected: 
 
@@ -7423,7 +7423,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.Canvas.PageOpened.]*
 
-This event is triggered when a Page is opened.  The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote.
+This event is triggered when a Page is opened. The telemetry is used to monitor, detect, and fix any issues caused when a Page is opened in OneNote.
 
 The following fields are collected: 
 
@@ -7437,7 +7437,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.Capture.NewNote.NewNoteTaken.]*
 
-This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note.  This is used to ensure critical regression detection for OneNote app and service health.
+This signal is used to ensure that after a user signs-into a OneNote Android App, notebooks are properly provisioned, and user has successfully created a new note. This is used to ensure critical regression detection for OneNote app and service health.
 
 The following fields are collected:
 
@@ -7447,11 +7447,11 @@ The following fields are collected:
 
 *[This event was previously named OneNote.LensSDK.OfficeLensLaunched.]*
 
-This event collects the critical signal used to ensure that OfficeLens is launched correctly.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+This event collects the critical signal used to ensure that OfficeLens is launched correctly. The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: 
 
-- **CAPTURE_MODE** - Indicates which mode has OfficeLens has been launched in.  It could be default, edit, fast insert or video import.
+- **CAPTURE_MODE** - Indicates which mode has OfficeLens has been launched in. It could be default, edit, fast insert or video import.
 
 - **ERROR_CODE** - Indicates the launch error code in case there was an error while launching.
 
@@ -7463,7 +7463,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.MessageBar.MessageBarClicked.]*
 
-The signal used to indicate any issues encountered while using Message Bar.  The telemetry is used to monitor, detect, and fix any issues caused during interaction with Message Bar.
+The signal used to indicate any issues encountered while using Message Bar. The telemetry is used to monitor, detect, and fix any issues caused during interaction with Message Bar.
 
 The following fields are collected: 
 
@@ -7473,7 +7473,7 @@ The following fields are collected:
 
 #### Office.OneNote.Android.StickyNotes.NoteCreated
  
-Critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.   Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
+Critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t create a note, this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7486,7 +7486,7 @@ The following fields are collected:
 
 #### Office.OneNote.Android.StickyNotes.NoteViewed
 
-Critical signal that is used to monitor the ability of Sticky Notes users to view notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t view their notes, this would trigger a high severity incident.
+Critical signal that is used to monitor the ability of Sticky Notes users to view notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can’t view their notes, this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7501,7 +7501,7 @@ The following fields are collected:
 
 #### Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
-This event is used to detect and diagnose a high frequency bug that a user encounters while using Ink feature.  This is used to determine the most appropriate mode of fixing this issue. 
+This event is used to detect and diagnose a high frequency bug that a user encounters while using Ink feature. This is used to determine the most appropriate mode of fixing this issue. 
 
 The following fields are collected:
 
@@ -7587,7 +7587,7 @@ The following fields are collected:
 
 #### Office.OneNote.Navigation.CreatePage
 
-Critical signal used to monitor the ability of OneNote users to create pages in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create a page this would trigger a high severity incident.
+Critical signal used to monitor the ability of OneNote users to create pages in OneNote. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create a page this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7595,7 +7595,7 @@ The following fields are collected:
 
 - **IsBlank** - Indicates whether a new page is blanked page or created with a template.
 
-- **IsRecentsView** - Indicates whether a page is created from a recents or not.
+- **IsRecentsView** - Indicates whether a page is created from a recent or not.
 
 - **NavView** - Indicates whether a page is created from a navigation view or not.
 
@@ -7612,7 +7612,7 @@ The following fields are collected:
 
 #### Office.OneNote.Navigation.CreateSection
 
-Critical signal used to monitor the ability of OneNote users to create sections in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create a page this would trigger a high severity incident.
+Critical signal used to monitor the ability of OneNote users to create sections in OneNote. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create a page this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7627,7 +7627,7 @@ The following fields are collected:
 
 #### Office.OneNote.Navigation.Navigate
 
-Critical signal used to monitor the ability of OneNote users to navigate between pages in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't navigate this would trigger a high severity incident.
+Critical signal used to monitor the ability of OneNote users to navigate between pages in OneNote. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't navigate this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7656,7 +7656,7 @@ The following fields are collected:
 
 #### Office.OneNote.NotebookManagement.CreateNotebook
 
-Critical signal used to monitor the ability of OneNote users to create notebooks in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create notebooks this would trigger a high severity incident.
+Critical signal used to monitor the ability of OneNote users to create notebooks in OneNote. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't create notebooks this would trigger a high severity incident.
 
 The following fields are collected:
     
@@ -7665,7 +7665,7 @@ The following fields are collected:
 
 #### Office.OneNote.NotebookManagement.OpenNotebook
 
-Critical signal used to monitor the ability of OneNote users to open notebooks in OneNote.  Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't open notebooks this would trigger a high severity incident.
+Critical signal used to monitor the ability of OneNote users to open notebooks in OneNote. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't open notebooks this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7674,7 +7674,7 @@ The following fields are collected:
     
 #### Office.OneNote.Search.Search
 
-Critical signal ID used to monitor the ability of OneNote users to find information across thousands of pages and notebooks.   Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't find information across notebooks this would trigger a high severity incident.
+Critical signal ID used to monitor the ability of OneNote users to find information across thousands of pages and notebooks. Telemetry used to ensure critical regression detection for OneNote app and service health. If users can't find information across notebooks this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7715,7 +7715,7 @@ The following fields are collected:
 
 #### Office.OneNote.StickyNotes.NoteCreated (on iOS), OneNote.StickyNotes.NoteCreated (on Android)
 
-This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can't create a note, this would trigger a high severity incident.
+This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can't create a note, this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7728,7 +7728,7 @@ The following fields are collected:
 
 #### Office.OneNote.StickyNotes.NoteViewed (on iOS), OneNote.StickyNotes.NoteViewed (on Android)
 
-This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app.  Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can't create a note, this would trigger a high severity incident.
+This is a critical signal that is used to monitor the ability of Sticky Notes users to create notes in the app. Telemetry is used to ensure critical regression detection for OneNote app and service health. If users can't create a note, this would trigger a high severity incident.
 
 The following fields are collected:
 
@@ -7807,7 +7807,7 @@ The following fields are collected
 
 - **Success** -is the notebook sync successful or not
 
-- **SyncDestinationType** -sync destination type, that is, OneDrive or SharePoint Online
+- **SyncDestinationType** -sync destination type, that is, OneDrive or SharePoint
 
 - **SyncId** -a number unique to each notebook sync
 
@@ -7951,7 +7951,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.Copilot.TriggerHandoff
 
-This event is triggered when the user launches "powerpoint.exe /HOFF \<some id>\". The data is used to denote whether the id was empty or not and whether the app launched successfully or not. We aren't able to evaluate the success of the Copilot handoff feature if we don't know whether there was an empty handoff ID and whether the app launched successfully. 
+This event is triggered when the user launches "powerpoint.exe /HOFF \<some id>\". The data is used to denote whether the ID was empty or not and whether the app launched successfully or not. We aren't able to evaluate the success of the Copilot handoff feature if we don't know whether there was an empty handoff ID and whether the app launched successfully. 
 
 The following fields are collected:
  
@@ -8143,7 +8143,7 @@ The following fields are collected:
 
   - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc.)
 
   - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
@@ -8255,7 +8255,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.DocOperation.Save
 
-Collected whenever PowerPoint performs a save using the modern code path. Includes success or failure result type of save performance metrics and relevant document metadata.  Failures in save can result in data loss. Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
+Collected whenever PowerPoint performs a save using the modern code path. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss. Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
 
 The following fields are collected:
 
@@ -8285,7 +8285,7 @@ The following fields are collected:
 
   - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc.)
 
   - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
@@ -8435,7 +8435,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.DocOperation.SaveAs
 
-Collected whenever PowerPoint performs a Save As. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss.  Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
+Collected whenever PowerPoint performs a Save As. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss. Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
 
 The following fields are collected:
 
@@ -8453,7 +8453,7 @@ The following fields are collected:
 
 - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc.)
 
 - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
@@ -8644,7 +8644,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.DocOperation.SaveLegacy
 
-Collected whenever PowerPoint performs a save using the legacy code path. Includes success or failure result type of save performance metrics and relevant document metadata.  Failures in save can result in data loss.  Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
+Collected whenever PowerPoint performs a save using the legacy code path. Includes success or failure result type of save performance metrics and relevant document metadata. Failures in save can result in data loss. Microsoft uses this data to ensure the feature is working as expected and user content is successfully being persisted.
 
 The following fields are collected:
 
@@ -8662,7 +8662,7 @@ The following fields are collected:
 
 - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+- **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc.)
 
 - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
@@ -8968,7 +8968,7 @@ The following fields are collected:
 
 - **ResumeRehearsingCount** - Count of how many times user clicked on resume rehearsal
 
-- **Sessionid** - This is speech front door session ID.  This is used to debug service logs.
+- **Sessionid** - This is speech front door session ID. This is used to debug service logs.
 
 - **SlideshowViewLoadTime** - Time taken by slideshow to load.
 
@@ -9014,7 +9014,7 @@ The following fields are collected:
 
 #### Office.PowerPoint.PPT.Shared.RehearseView.RehearseClicked
 
-This event captures when RehearseWithCoach is clicked.  This event is used to analyze the seen- tried-kept funnel of the feature. This event along with tried and kept event helps us figure out if users are dropping out of the funnel. This helps us maintain the health of the feature.
+This event captures when RehearseWithCoach is clicked. This event is used to analyze the seen- tried-kept funnel of the feature. This event along with tried and kept event helps us figure out if users are dropping out of the funnel. This helps us maintain the health of the feature.
 
 The following fields are collected:
 
@@ -9078,7 +9078,7 @@ The following fields are collected:
  
 #### Office.Session.Activity.Start
 
-Allows us to know when a data streamer session has started.  Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
+Allows us to know when a data streamer session has started. Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
 
 The following fields are collected:
 
@@ -10002,7 +10002,7 @@ The following fields are collected:
 
 #### Office.StreamDevice.Activity.Start
 
-Allows us to know if start streaming data source is successful.   Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
+Allows us to know if start streaming data source is successful. Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
 
 The following fields are collected:
 
@@ -10020,7 +10020,7 @@ The following fields are collected:
 
 #### Office.StreamDevice.Activity.Stop
 
-Allows us to know if stop streaming data source is successful.   Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
+Allows us to know if stop streaming data source is successful. Used for feature health and monitoring. This event is generated by Microsoft Data Streamer for Excel Add-in.
 
 The following fields are collected:
 
@@ -10312,7 +10312,7 @@ The following fields are collected:
 
 #### Office.UX.AccChecker.AccCheckerFinalViolationCountPerRule
 
-This event is triggered when Accessibility issues are reported for the currently opened document. This event represents the Accessibility violations (Errors, Warnings, and Tips) that exist per Rule, for the opened document at the beginning and end of the session.  This event is used to record the counts of Accessibility violations (Errors, Warnings, and Tips) per Rule, for the opened document at the beginning and end of the session.
+This event is triggered when Accessibility issues are reported for the currently opened document. This event represents the Accessibility violations (Errors, Warnings, and Tips) that exist per Rule, for the opened document at the beginning and end of the session. This event is used to record the counts of Accessibility violations (Errors, Warnings, and Tips) per Rule, for the opened document at the beginning and end of the session.
 
 Details of violation counts per rule help Microsoft to identify which Accessibility issues are most common in Office documents. This helps with work on remediating them and drives the creation of an inclusive environment in the workplace and classroom for people with disabilities.
 
@@ -10455,7 +10455,7 @@ The following fields are collected:
 
 #### Office.UX.AccChecker.BackgroundScanningCheckboxClicked
 
-This event is triggered when the user enables the Background Accessibility checker from the Accessibility checker task pane.  This event is used to understand the instances when the Background Accessibility checker is enabled for Office documents. The enabled status of the Background Accessibility checker allows Microsoft to understand if documents can be scanned automatically in the background. This helps to create a more inclusive workplace and classroom environment for people with disabilities.
+This event is triggered when the user enables the Background Accessibility checker from the Accessibility checker task pane. This event is used to understand the instances when the Background Accessibility checker is enabled for Office documents. The enabled status of the Background Accessibility checker allows Microsoft to understand if documents can be scanned automatically in the background. This helps to create a more inclusive workplace and classroom environment for people with disabilities.
 
 The following fields are collected:
 	
@@ -10479,7 +10479,7 @@ The following fields are collected:
 
 #### Office.UX.AccChecker.ShowTaskPane
 
-This event is triggered when the Accessibility Checker task pane is launched for the currently opened document.  This event is used to understand the usage of the Office Accessibility Checker. The Accessibility Checker is used to identify and remediate Accessibility issues in Office documents. The knowledge of Accessibility Checker usage allows Microsoft to improve its application experiences to be more inclusive for people with disabilities in Office usage scenarios for the workplace and classroom.
+This event is triggered when the Accessibility Checker task pane is launched for the currently opened document. This event is used to understand the usage of the Office Accessibility Checker. The Accessibility Checker is used to identify and remediate Accessibility issues in Office documents. The knowledge of Accessibility Checker usage allows Microsoft to improve its application experiences to be more inclusive for people with disabilities in Office usage scenarios for the workplace and classroom.
 
 The following fields are collected:
 
@@ -10595,7 +10595,7 @@ The following fields are collected:
 
 - **Data_Doc_FolderUrlHash** - One-way hash of folder URL.
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name.
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name.
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name.
 
@@ -10724,7 +10724,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version 
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name 
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name 
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name 
 
@@ -10774,7 +10774,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - the server version offering the service 
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests 
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests 
 
 - **Data_Doc_SizeInBytes** - Indicator of document size 
 
@@ -10836,7 +10836,7 @@ The following fields are collected:
 
 - **Data_UsesNormal** - Indicates whether the open document is based on the normal template. 
 
-- **Data_VerboseMeasurements** - Encoded string containing the detailed time breakdown of the different parts of open.  Used to measure performance, only enabled for internal rings. 
+- **Data_VerboseMeasurements** - Encoded string containing the detailed time breakdown of the different parts of open. Used to measure performance, only enabled for internal rings. 
 
 - **Data_WpmFallOutReason** - If the document has WPM unsupported contents upon open, list the first content type Word detected.
 
@@ -10867,7 +10867,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -10911,7 +10911,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -10963,7 +10963,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -11007,7 +11007,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -11090,7 +11090,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -11130,7 +11130,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -11154,7 +11154,7 @@ The following fields are collected:
 
 - **Data_DstDoc_FileFormat** - File format protocol version
 
-- **Data_DstDoc_Fqdn** - OneDrive or SharePoint Online Domain Name for the destination document
+- **Data_DstDoc_Fqdn** - OneDrive or SharePoint Domain Name for the destination document
 
 - **Data_DstDoc_FqdnHash** - One-way hash of customer identifiable domain name for the destination document
 
@@ -11196,7 +11196,7 @@ The following fields are collected:
 
 - **Data_DstDoc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_DstDoc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_DstDoc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_DstDoc_SizeInBytes** - Indicator of document size
 
@@ -11220,7 +11220,7 @@ The following fields are collected:
 
 - **Data_fOcsPersister** - Flag indicating that the app is using collaboration service to save the document.
 
-- **Data_fOperationCancelled** - Flag indicating that the save operation is cancelled
+- **Data_fOperationCancelled** - Flag indicating that the save operation is canceled
 
 - **Data_fSaveAs** - Flag indicating that the save operation is a SaveAs
 
@@ -11274,7 +11274,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_FileFormat** - File format protocol version for the source document
 
-- **Data_SrcDoc_Fqdn** - OneDrive or SharePoint Online Domain Name for the source document
+- **Data_SrcDoc_Fqdn** - OneDrive or SharePoint Domain Name for the source document
 
 - **Data_SrcDoc_FqdnHash** - One-way hash of customer identifiable domain name for the source document
 
@@ -11318,7 +11318,7 @@ The following fields are collected:
 
 - **Data_SrcDoc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_SrcDoc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_SrcDoc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_SrcDoc_SizeInBytes** - Indicator of document size
 
@@ -11382,7 +11382,7 @@ The following fields are collected:
 
 #### ParseLicenseOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when parsing licenses operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when parsing licenses operation is performed. 
 
 The following fields are collected:
 
@@ -11566,7 +11566,7 @@ The following fields are collected:
 
 - **suggestions_requested** - indicates how many smart compose suggestions requested
 
-- **suggestions_results** - smart compose suggestions’ result, i.e accepted, rejected
+- **suggestions_results** - smart compose suggestions’ result. For example, accepted, rejected
 
 - **suggestions_returned** - indicates how many smart compose suggestions returned from server
 
@@ -11619,7 +11619,7 @@ The following fields are collected:
 
 - **delete_scope** - During an account deletion, whether you deleted the account from this device or from all devices with Outlook.  
 
-- **emo_default_provider_addin_id** - Field that captures the compliant add-in id of the default meeting provider.
+- **emo_default_provider_addin_id** - Field that captures the compliant add-in ID of the default meeting provider.
 
 - **emo_default_provider_selected_type** - Field that determines the type of the default meeting provider set by the user. 
 
@@ -11631,7 +11631,7 @@ The following fields are collected:
 
 - **notification_action_number** - To check if your notification actions (action one or action two) are configured correctly
 
-- **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better.  Examples: Office365, Gmail, Outlook
+- **server_type** - Similar to auth_type, it tells us which type of account you have to help us diagnose issues better. Examples: Office365, Gmail, Outlook
 
 - **setting_properties** - Tracks properties relation to setting action detailed below: 
    - **alternate_app_icon_setting** - the selected alternate app icon (light, dark)
@@ -11685,7 +11685,7 @@ Data fields that are common for Outlook Mobile for this event on iOS and Android
 
 The following fields are collected: 
 
-- **account_type** - indicates what authentication type the account is that is, Gmail, outlook, etc. 
+- **account_type** - indicates what authentication type the account is. For example, Gmail, outlook, etc. 
 
 - **account_has_groups** - Helps us make sure if the account has groups, they're configured correctly
 
@@ -11717,7 +11717,7 @@ The following fields are collected:
 
 #### StoreOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when Rights Management Service license store operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when Rights Management Service license store operation is performed. 
 
 The following fields are collected:
 
@@ -11786,7 +11786,7 @@ The following fields are collected:
 
 #### Traditional.Login.User.Retention
 
-This event is triggered when IMAP (Internet Messaging Access Protocol) or POP3 (Post Office Protocol) user fails to sign in using Outlook app. By comparing the number and error type of sign-in failures we ensure the sign-in process update is performing as expected. 
+This event is triggered when IMAP (Internet Messaging Access Protocol) or POP3 (Post Office Protocol) user fails to sign in using Outlook app. By comparing the number and error type of sign-in failures, we ensure the sign-in process update is performing as expected. 
 
 The following fields are collected:
  
@@ -11794,7 +11794,7 @@ The following fields are collected:
 
 - **Ever_Succeeded** - Indicates whether user succeeded to sign in in between immediate and scheduled events.
 
-- **Has_Existing_Account** - Used to check whether user has an existing accounts after a failed sign-in attempt.
+- **Has_Existing_Account** - Used to check whether user has an existing account after a failed sign-in attempt.
 
 - **Type** - Type of event, which currently has two values: immediate (event is sent immediately after sign in fails) and scheduled (event is sent after a scheduled time period).
 
@@ -11834,7 +11834,7 @@ Determination if specific feature events have occurred, such as start or stop, a
 
 #### app.startup
 
-This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app.  This includes information on the specific features that were enabled and how long parts of the startup took.
+This event lets us detect and fix issues where Outlook is starting slowly or incompletely, making it difficult for users to use our app. This includes information on the specific features that were enabled and how long parts of the startup took.
 
 The following fields are collected: 
 
@@ -11888,7 +11888,7 @@ The following fields are collected:
 
 #### DnsLookupOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when DNS information lookup operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when DNS information lookup operation is performed. 
 
 The following fields are collected:
 
@@ -11944,7 +11944,7 @@ The following fields are collected:
 
 #### GetUserOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when getting user certificates operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when getting user certificates operation is performed. 
 
 The following fields are collected:
 
@@ -11984,7 +11984,7 @@ The following fields are collected:
 
 #### HttpOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when http request operation is performed.
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when http request operation is performed.
 
 The following fields are collected:
 
@@ -12088,7 +12088,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOffice16BootLatency
 
-Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
+Critical to capture for app performance metric with respect to the response time of the app from the boot. Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -12198,7 +12198,7 @@ The following fields are collected:
 
 #### Office.DesignerApp.App.TileClicked
 
-The event log captures time to interact for user, this helps in understanding the time user has to wait for before any mini apps screen comes for them. This information is crucial for ensuring a better Designer experience for users and tracking boot time.  It helps in capturing essential data around starting designer and mini apps. 
+The event log captures time to interact for user, this helps in understanding the time user has to wait for before any mini apps screen comes for them. This information is crucial for ensuring a better Designer experience for users and tracking boot time. It helps in capturing essential data around starting designer and mini apps. 
 
 The following fields are collected:
 
@@ -12584,7 +12584,7 @@ The following fields are collected on iOS:
 
 - **Data_Lens_SessionId** - Identifier tracking each session of the app.
 
-- **Data_LensEventName** - Name of the event, I.e. Office_Lens_LensSdk_LaunchLens  
+- **Data_LensEventName** - Name of the event. For example, Office_Lens_LensSdk_LaunchLens  
 
 - **Data_mediaCompressionFactor** - The factor by which images are compressed by app.
 
@@ -12726,7 +12726,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.App.OneNoteAppForeground.]*
 
-The signal used to indicate OneNote App is in foreground.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+The signal used to indicate OneNote App is in foreground. The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: 
 
@@ -12736,7 +12736,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.AppLaunch.]*
 
-The critical signal used to ensure OneNote users can successfully launch the app.  The telemetry is used to ensure critical regression detection for OneNote app and service health. 
+The critical signal used to ensure OneNote users can successfully launch the app. The telemetry is used to ensure critical regression detection for OneNote app and service health. 
 
 The following fields are collected: 
 
@@ -12813,7 +12813,7 @@ The following fields are collected:
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Method CheckWebSharingViolationForIncOpen execution duration in milliseconds
 
-  - **Data_CleanClickCorrelationId** - The correlation GUID from client origin. As it could be from web or other sources we uses this correlation ID to stitch the end to end events from client to the target app (in this case PowerPoint)
+  - **Data_CleanClickCorrelationId** - The correlation GUID from client origin. As it could be from web or other sources we use this correlation ID to stitch the end to end events from client to the target app (in this case PowerPoint)
    
   - **Data_CleanClickOrigin** - Where the ppt fileUrl link is originally opened from (Office Apps/windows start recommended/WAC)
 
@@ -12833,7 +12833,7 @@ The following fields are collected:
 
   - **Data_ClpDocIsProtected:bool** - Whether or not the document is protected by IRM
 
-  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc)
+  - **Data_ClpDocMetadataSource:int** - Enum specifying where sensitivity label metadata is from (IRM, OPC part, Sharepoint etc.)
 
   - **Data_ClpDocNeedsUpconversion:bool** - Whether the document needs to upconvert sensitivity label data from the custom.xml part
 
@@ -13053,7 +13053,7 @@ The following fields are collected:
 
   - **Data_LegacyFallbackReason** - Value that maps to an enum indicating the reason a fallback to the legacy open protocol was triggered during a document open
 
-  - **Data_LinkOpenInOption** - an int from 0 to 3 as follow to indicate the open in option used to open the file. 0 means link isn't part of the LOR v2 test, 1 means oefault option is selected, 2 means in browser option is selected, and 3 means in native app option is selected.
+  - **Data_LinkOpenInOption** - an int from 0 to 3 as follow to indicate the open in option used to open the file. 0 means link isn't part of the LOR v2 test, 1 means default option is selected, 2 means in browser option is selected, and 3 means in native app option is selected.
 
   - **Data\_LoadDocument -** Method LoadDocument execution duration in milliseconds
 
@@ -13498,9 +13498,9 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique id given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the Office Windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
-- **DeviceInfo_Id** - A unique device id calculated by 1DS SDK.
+- **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
 - **DeviceInfo_Make** - The device make.
 
@@ -13561,7 +13561,7 @@ The following fields are collected:
 
 #### Office.TelemetryEngine.IsPreLaunch
 
-Applicable for Office UWP applications.  This event is fired when an Office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a session is launch session or not.
+Applicable for Office UWP applications. This event is fired when an Office application is initiated for the first-time post upgrade/install from the store. This is part of basic diagnostic data, used to track whether a session is launch session or not.
 
 The following fields are collected:
 
@@ -13577,7 +13577,7 @@ The following fields are collected:
 
 #### Office.TelemetryEngine.SessionHandOff
 
-Applicable to Win32 Office applications.  This event helps us understand whether there was a new session created to handle a user-initiated file open event. It's a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
+Applicable to Win32 Office applications. This event helps us understand whether there was a new session created to handle a user-initiated file open event. It's a critical diagnostic information that is used to derive reliability signal and ensure that the application is working as expected.
 
 The following fields are collected:
 
@@ -13641,7 +13641,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -13685,7 +13685,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -13766,7 +13766,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -13810,7 +13810,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -13889,7 +13889,7 @@ The following fields are collected:
 
   - **Data\_Doc\_FileFormat -** File format protocol version
 
-  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Online Domain Name
+  - **Data\_Doc\_Fqdn -** OneDrive or SharePoint Domain Name
 
   - **Data\_Doc\_FqdnHash -** One-way hash of customer identifiable domain name
 
@@ -13933,7 +13933,7 @@ The following fields are collected:
 
   - **Data\_Doc\_SessionId -** the server version offering the service
 
-  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint Online requests
+  - **Data\_Doc\_SharePointServiceContext -** Diagnostic information from SharePoint requests
 
   - **Data\_Doc\_SizeInBytes -** Indicator of document size
 
@@ -14014,7 +14014,7 @@ The following fields are collected:
 
 - **Data_Doc_FileFormat** - File format protocol version
 
-- **Data_Doc_Fqdn** - OneDrive or SharePoint Online Domain Name
+- **Data_Doc_Fqdn** - OneDrive or SharePoint Domain Name
 
 - **Data_Doc_FqdnHash** - One-way hash of customer identifiable domain name
 
@@ -14058,7 +14058,7 @@ The following fields are collected:
 
 - **Data_Doc_SessionId** - Identifies a specific document edit session within the full session
 
-- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint Online requests
+- **Data_Doc_SharePointServiceContext** - Diagnostic information from SharePoint requests
 
 - **Data_Doc_SizeInBytes** - Indicator of document size
 
@@ -14107,7 +14107,7 @@ The following fields are collected:
 
 #### RenewUserOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when renew user certificates operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when renew user certificates operation is performed. 
 
 The following fields are collected:
 
@@ -14145,7 +14145,7 @@ The following fields are collected:
 
 #### ServiceDiscoveryOp
 
-Collected when a user attempts to open an IRM protected doc or apply IRM protections.  It contains the information needed to be able to properly investigate and diagnose issues that happen when service discovery operation is performed. 
+Collected when a user attempts to open an IRM protected doc or apply IRM protections. It contains the information needed to be able to properly investigate and diagnose issues that happen when service discovery operation is performed. 
 
 The following fields are collected:
 
@@ -14244,7 +14244,7 @@ The following fields are collected:
 
 #### Office.Apple.DarkMode
 
-This event is collected for Office applications running under Apple platforms. The event tells us if user is running a System on DarkMode and whether the user overwrote the DarkMode System setting in Office.  We use this event to help ensure accessibility and prioritize user-experience optimization.
+This event is collected for Office applications running under Apple platforms. The event tells us if user is running a System on DarkMode and whether the user overwrote the DarkMode System setting in Office. We use this event to help ensure accessibility and prioritize user-experience optimization.
 
 The following fields are collected:
 
@@ -14564,7 +14564,7 @@ The following fields are collected:
 
 - **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
 
-- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc
+- **ConsentType** - The type of consent presented to the user. For example, Prominent Notice, Consent, etc.
 
 - **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
 
@@ -14576,7 +14576,7 @@ The following fields are collected:
 
 - **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
 
-- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+- **ModelType** - The type of message being shown to the user. For example, Consent, Notice, etc.
 
 - **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
 
@@ -14597,7 +14597,7 @@ The following fields are collected:
 
 - **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
 
-- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+- **ConsentType** - The type of consent presented to the user. For example, Prominent Notice, Consent, etc.
 
 - **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
 
@@ -14609,7 +14609,7 @@ The following fields are collected:
 
 - **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
 
-- **ModelType** - The type of message being shown to the user, e.g., Consent, Notice, etc.
+- **ModelType** - The type of message being shown to the user. For example, Consent, Notice, etc.
 
 - **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
 
@@ -14631,7 +14631,7 @@ The following fields are collected:
 
 - **ConsentSurface** - The specific technology being used to retrieve and render the consent experience
 
-- **ConsentType** - The type of consent presented to the user, i.e., Prominent Notice, Consent, etc.
+- **ConsentType** - The type of consent presented to the user. For example, Prominent Notice, Consent, etc.
 
 - **CorrelationId** - A unique identifier used to link data from the client and the service for the purpose of debugging failures
 
@@ -14643,7 +14643,7 @@ The following fields are collected:
 
 - **ModelId** - A unique identifier indicating which model was the basis for the consent or notice shown to the user
 
-- **ModelType** - The type of message being shown to the user e.g., Consent, Notice, etc.
+- **ModelType** - The type of message being shown to the user. For example, Consent, Notice, etc.
 
 - **ModelVersion** - Data indicating which version of a consent or notice was presented to the user
 
@@ -14677,7 +14677,7 @@ The following fields are collected:
 
 - **importance** - The importance of the process running at the time of app exit.
 
-- **pid** - The process id of the process running at the time of app exit.
+- **pid** - The process ID of the process running at the time of app exit.
 
 - **reason** - The reason why app exited.
 
@@ -14685,7 +14685,7 @@ The following fields are collected:
 
 #### app.startup.reason
 
-This event lets us detect and fix issues where Outlook crashed during app startup.  This event includes information on why the crash happened so we can fix the issue quickly.
+This event lets us detect and fix issues where Outlook crashed during app startup. This event includes information on why the crash happened so we can fix the issue quickly.
 
 The following fields are collected: 
 
@@ -14841,7 +14841,7 @@ The following fields are collected:
 
 #### Office.Apple.IdentityDomainName
 
-This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our system as well as investigating causes of failures by certain domain users. We collect the domain used by our users when they authenticate.  We use this data to help identify and fix those issues that might not seem too impactful at a broader level, but that turn out to be very impactful to a certain domain of users.
+This event is collected for Office applications running under Apple platforms. The event is used to monitor the health of our system as well as investigating causes of failures by certain domain users. We collect the domain used by our users when they authenticate. We use this data to help identify and fix those issues that might not seem too impactful at a broader level, but that turn out to be very impactful to a certain domain of users.
 
 The following fields are collected:
 
@@ -15017,7 +15017,7 @@ The following fields are collected:
 
 #### Office.FindTime.AppFailedToStart
 
-Collected when app fails to start due to an unexpected error during startup. Used to track exceptions & crashes.  Helps monitor and debug app health.
+Collected when app fails to start due to an unexpected error during startup. Used to track exceptions & crashes. Helps monitor and debug app health.
 
 The following fields are collected: 
 
@@ -15338,7 +15338,7 @@ The following fields are collected:
 
 #### Office.ThisAddIn.StartupFailed
 
-Collects information for exception that occur during startup of the Data Streamer App. This data is used to monitor the health of the application. This event is generated by Microsoft Data Streamer for Excel Add-in.
+Collects information for exception that occurs during startup of the Data Streamer App. This data is used to monitor the health of the application. This event is generated by Microsoft Data Streamer for Excel Add-in.
 
 The following fields are collected:
 
@@ -15617,7 +15617,7 @@ The following fields are collected:
 
 #### Initial.page.landing 
  
-This event helps track the type of experience that users see when they land in our application page.  This data is used to determine the traffic of users piped into each experience in our application and also helps us to easily consolidate experimentation results.
+This event helps track the type of experience that users see when they land in our application page. This data is used to determine the traffic of users piped into each experience in our application and also helps us to easily consolidate experimentation results.
  
 The following fields are collected: 
 
@@ -15781,7 +15781,7 @@ The following fields are collected:
 
 #### json.parse.error 
  
-This event denotes that an error is thrown by the json parser.  We'll be able to debug the read registry string that was sent to the json parser, to allow a smooth experience for our users.
+This event denotes that an error is thrown by the json parser. We'll be able to debug the read registry string that was sent to the json parser, to allow a smooth experience for our users.
  
 The following fields are collected: 
 
@@ -15809,7 +15809,7 @@ The following fields are collected:
  
 - **ad_not_shown_reason** - reason why ads aren't being shown
  
-- **ad_shown** - whether an add was shown (if ads enabled)
+- **ad_shown** - whether an ad was shown (if ads enabled)
  
 - **age** - age of the person (used to confirm compliance with age limitations on ads)
 
@@ -15948,7 +15948,7 @@ The following fields are collected:
 
 *[This event was previously named Office.Android.AdsMobile.AdUIEvent.]*
 
-This is event is triggered when a user interacts with an advertisement.  This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
+This is event is triggered when a user interacts with an advertisement. This event collects information that is used to determine the app and feature performance for the users who are exposed to ads. 
 
 The following fields are collected:
 
@@ -15963,7 +15963,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
-Critical to capture for app performance metric with respect to the response time of the app from the boot.  Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
+Critical to capture for app performance metric with respect to the response time of the app from the boot. Microsoft uses this to collect the time taken for the app to be responsive and also detect scenarios that may impact boot time in Word, Excel, or PowerPoint.
 
 The following fields are collected:
  
@@ -16205,17 +16205,17 @@ The following fields are collected:
     - 1 - Dime is attempted by the user for open
     - 2 - Network error
     - 3 - Dime is shown to the user
-    - 4 - Dime is cancelled by the user
+    - 4 - Dime is canceled by the user
     - 5 - Refresh needed as purchase is successful
     - 6 - Purchase is successful
     - 7 - Generic dime error
     - 8 - Dime telemetry can't be uploaded due to communication failure
     - 9 - Two instances of Dime running causing interruption error
-    - 10 - Base WebURL loaded on officemobile app is invalid
-    - 11 - Communication of officemobile app with Dime failed 
+    - 10 - Base WebURL loaded on office mobile app is invalid
+    - 11 - Communication of office mobile app with Dime failed 
     - 12 - No communication channel could be established
     - 13 - Communication ID couldn't be sent to Dime
-    - 14 - The officemobile app is communicating to the wrong endpoint
+    - 14 - The office mobile app is communicating to the wrong endpoint
     - 15 - AuthToken isn't obtained for this MSA account
     - 16 - AuthToken isn't sent to Dime
 
@@ -16240,7 +16240,7 @@ The following fields are collected:
 
 #### Office.Android.EarlyTelemetry.AsyncLibLoadFailure
 
-This event is trigged when the user launches the app or opesn any Word, Excel, or PowerPoint file and faces any issues during library load. This data is used to find the failure cases.
+This event is triggered when the user launches the app or open any Word, Excel, or PowerPoint file and faces any issues during library load. This data is used to find the failure cases.
 
 The following fields are collected:
 
@@ -16636,7 +16636,7 @@ The following fields are collected:
 
 #### Office.DesignerApp.App.InsertImageCompleted
 
-The event log captures essential data regarding the insert image operation on canvas including metrics like performance, quality of service, reliability and errors. This information is crucial for ensuring image insertion works properly. 
+The event log captures essential data regarding the insert image operation on canvas including metrics like performance, quality of service, reliability, and errors. This information is crucial for ensuring image insertion works properly. 
 
 The following fields are collected:
 
@@ -17021,7 +17021,7 @@ The following fields are collected:
 
 - **BootRearchFeatureGateFlag** - Number (of data type Long) representing the state of Feature Gates that are enabled in a given session.
 
-- **CorrelationId** - The unique id for each file open operation.
+- **CorrelationId** - The unique ID for each file open operation.
 
 - **Data_ActivityTransitionEndTimeSA** - Time taken until the end of ActivityTransition boot substage since activation.
 
@@ -17041,7 +17041,7 @@ The following fields are collected:
 
 - **Data_AppBootComponentName** - Denotes the class name of the concrete component associated with the intent.
 
-- **Data_AppBootFileExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc 
+- **Data_AppBootFileExtensionComparisionResult** - Denotes the comparison result of the intent's component names. Values included are of type long, which translate to - matching extension, no extension, exception etc. 
 
 - **Data_AppBootFileMimeType** - Mime type of the file.
 
@@ -17084,7 +17084,7 @@ The following fields are collected:
 
 - **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
 
-- **Data_Doc_OpenFromOMDurationMs** - Total time to taken to open a PDF file in officemobile.
+- **Data_Doc_OpenFromOMDurationMs** - Total time taken to open a PDF file in office mobile.
 
 - **Data_Doc_PasswordProtected** - Denotes whether the file is password protected or not.
 
@@ -17122,7 +17122,7 @@ The following fields are collected:
 
 - **Data_IsFastFileActivationTelemetryEnabled** - Boolean denoting if fast file activation flow's telemetry  is enabled or not.
 
-- **Data_IsHomeScreenUpgradeSession** - Denotes whether officemobile home screen was shown or not , or home screen was upgraded or not in current file open session.
+- **Data_IsHomeScreenUpgradeSession** - Denotes whether office mobile home screen was shown or not, or home screen was upgraded or not in current file open session.
 
 - **Data_IsIntuneManaged** - Boolean denoting if file is an intune managed or not (true/false). 
 
@@ -17252,9 +17252,9 @@ The following fields are collected:
 
 - **MIPFirstBlockDecryptionTime** - The field indicating time to decrypt the first block of file.
 
-- **MipFirstPageRenderCompletionTS** - Timstamp at which first page render is completed.
+- **MipFirstPageRenderCompletionTS** - Timestamp at which first page render is completed.
 
-- **Result** - The result of file open. It can be either success, failure and cancelled. 
+- **Result** - The result of file open. It can be either success, failure and canceled. 
 
 #### Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements (on iOS)
 
@@ -17333,7 +17333,7 @@ The following fields are collected:
 
 *[This event was previously named OneNote.Sync.ProvisioningStarted.]*
 
-The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed.  This is used to ensure critical regression detection for OneNote app and service health.
+The critical signal used to ensure that after a user signs into a OneNote Android App, notebooks are properly provisioned so that they can be easily accessed. This is used to ensure critical regression detection for OneNote app and service health.
 
 The following fields are collected: 
 
@@ -17478,7 +17478,7 @@ The following fields are collected:
 
 - **PrimaryDiskType** – Whether the primary storage device is a solid-state drive or a rotational drive and its rotation speed if applicable. (macOS/iOS only)
 
-- **PrivateCommitUsageMB** – The Commit Charge (i.e., the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
+- **PrivateCommitUsageMB** – The Commit Charge (for example, the amount of memory that the memory manager has committed for this process) in megabytes for this process. (Windows only)
 
 - **PrivateCommitUsagePeakMB** - The largest Commit Charge in megabytes ever for this process. (Windows only)
 
@@ -17513,7 +17513,7 @@ The following fields are collected:
 
 - **Modules** - list of Microsoft owned DLLs and memory address locations loaded into the Office application.
 
-- **ProcessName** - name of the Office application executable the hang occurred in, e.g. excel.exe.
+- **ProcessName** - name of the Office application executable the hang occurred in. For example, excel.exe.
 
 - **Stacks** - list of call stacks (frame addresses) and associated CPU and Wait durations that were observed to be running at the point the hang occurred.
 
@@ -18037,7 +18037,7 @@ The following fields are collected:
 
 - **standard_probe_label** - Provides the information of the sub steps of each user scenario when instrumented with Standard Probe. It helps us reduce the scope of the issue.
 
-- **threadsSummary** - information about number of threads used and their runtime state, i.e. waiting, blocked, etc.
+- **threadsSummary** - information about number of threads used and their runtime state. For example, waiting, blocked, etc.
 
 - **total_time_elapsed** - Tells us how long the performance event took to help us understand the severity of the performance issue
 
@@ -18199,7 +18199,7 @@ The following fields are collected:
 
   #### Office.Android.ADALSignInUIPrompts
 
-This event denotes that sign-in prompt came to the user, for school or work account.  This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
+This event denotes that sign-in prompt came to the user, for school or work account. This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
 
 The following fields are collected:
 
@@ -18217,7 +18217,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidAppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations. Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18241,7 +18241,7 @@ The following fields are collected:
 
 - **DurationInMs** - time in millisecond for the file operation to end
 
-- **EndReason** - enumeration value for the end reason.  Values - None, Success, Failure, Cancel
+- **EndReason** - enumeration value for the end reason. Values - None, Success, Failure, Cancel
 
 - **ErrorCode** - error code for the file operation
 
@@ -18287,7 +18287,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidAuthError
 
-This event denotes core authentication failures during silent token refresh, loading sign in page from service and so on.  This event helps in understanding the health of signed in state of our apps, sign in attempts that are made, and take appropriate actions, when we notice unexpected failures. 
+This event denotes core authentication failures during silent token refresh, loading sign in page from service and so on. This event helps in understanding the health of signed in state of our apps, sign in attempts that are made, and take appropriate actions, when we notice unexpected failures. 
 
 The following fields are collected:
 
@@ -18309,7 +18309,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileAsyncSaveStatus
 
-Captures File async save status data and various error codes from different components.  Microsoft uses this data to analyze if there's any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
+Captures File async save status data and various error codes from different components. Microsoft uses this data to analyze if there's any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18325,7 +18325,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileOpenReliability
 
-This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code is reporting them.  Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in Word, Excel, or PowerPoint.
+This captures File open status data and various error codes to identify what file open failures are expected versus unexpected and which part of the code is reporting them. Microsoft uses this data to analyze the reasons for file open failures and calculate critical metric like file open success rate in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18389,13 +18389,13 @@ The following fields are collected:
 
 #### Office.Android.AndroidFileSaveStatus
 
-Critical to capture File save status data and various error codes from different components.  Microsoft uses this data to analyze if there's any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
+Critical to capture File save status data and various error codes from different components. Microsoft uses this data to analyze if there's any user data loss in the app during saving of files in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
 - **AccessMode** - Values** - None, ReadOnly, ReadOnlyUpgradable, ReadWrite.
 
-- **AppDocsEndReason** - enumeration for File save Appdoc EndReason.  Values: None, Success, Failure, Cancel.
+- **AppDocsEndReason** - enumeration for File save Appdoc EndReason. Values: None, Success, Failure, Cancel.
 
 - **AppDocsErrorCode** - Final Error Code for file save failure
 
@@ -18415,7 +18415,7 @@ The following fields are collected:
 
 - **FileSize** - Size of file
 
-- **FileSourceLocation** - File location enumeration.  Values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+- **FileSourceLocation** - File location enumeration. Values: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
 
 - **OpFlags** - Operation flags for save
 
@@ -18441,7 +18441,7 @@ The following fields are collected:
 
 #### Office.Android.AndroidOfficeActivationLatency
 
-Critical data to collect end-to-end file open time for all file opens in Windows, Excel, PowerPoint apps.  This is used by Microsoft to find out the metric for file open performance of our apps.
+Critical data to collect end-to-end file open time for all file opens in Windows, Excel, PowerPoint apps. This is used by Microsoft to find out the metric for file open performance of our apps.
 
 The following fields are collected:
 
@@ -18503,11 +18503,11 @@ The following fields are collected:
 
 #### Office.Android.AppDocsFileOperationEnds
 
-Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations.  Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
+Critical Docs Android Only (AppDocs) telemetry data for File New/Open/SaveAs end operations. This captures error codes for failures of these AppDocsOperations. Microsoft uses this to identify failures in various file operations and the exact layer at which the failure has occurred in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
-- **AccessMode** - enumeration value for the access mode for the file.  Values: None, ReadOnly, ReadOnlyUpgradable, ReadWrite
+- **AccessMode** - enumeration value for the access mode for the file. Values: None, ReadOnly, ReadOnlyUpgradable, ReadWrite
 
 - **BlockingUIShown** - Boolean to indicate if blocking UI was shown in the flow anywhere.
 
@@ -18527,7 +18527,7 @@ The following fields are collected:
 
 - **DurationInMs** - time in milliseconds for the file operation to end
 
-- **EndReason** - enumeration value for the end reason.  Values: None, Success, Failure, Cancel
+- **EndReason** - enumeration value for the end reason. Values: None, Success, Failure, Cancel
 
 - **ErrorCode** - error code for the file operation
 
@@ -18592,7 +18592,7 @@ The following fields are collected:
 
 #### Office.Android.BCS.Errors
 
-Binary conversion Errors telemetry for Print and Share as PDF.  Microsoft uses this to identify failure points during BCS conversions in Word, Excel, or PowerPoint.
+Binary conversion Errors telemetry for Print and Share as PDF. Microsoft uses this to identify failure points during BCS conversions in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18602,7 +18602,7 @@ The following fields are collected:
 
 - **IsFileDirty** - Boolean to indicate if there were unsaved changes in the file.
 
-- **Location** - File location enumeration.  Values: OneDrive, SharePoint, Dropbox, Others
+- **Location** - File location enumeration. Values: OneDrive, SharePoint, Dropbox, Others
 
 - **PDFConversionError** - Tag at which error occurs for PDF conversion
 
@@ -18610,13 +18610,13 @@ The following fields are collected:
 
 - **PdfConversionHRStatus** - PDF conversion status code
 
-- **PdfConversionResult** - PDF Conversion result enumeration.  Values: "Success", "Failed" and "Canceled"
+- **PdfConversionResult** - PDF Conversion result enumeration. Values: "Success", "Failed" and "Canceled"
 
 - **PdfFileSize** - Size of the PDF
 
 #### Office.Android.ClientSideIAP
 
-Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps that might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
+Critical Error telemetry for Database Failure while file browsing and adds places. Microsoft uses this to identify DB corruption issues in the apps that might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18658,7 +18658,7 @@ The following fields are collected:
 
 #### Office.Android.DBFailureCause
 
-Critical Error telemetry for Database Failure while file browsing and adds places.  Microsoft uses this to identify DB corruption issues in the apps that might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
+Critical Error telemetry for Database Failure while file browsing and adds places. Microsoft uses this to identify DB corruption issues in the apps that might hinder user to add places or browse through them from within the app in Word, Excel, or PowerPoint.
 
 The following fields are collected:
 
@@ -18762,7 +18762,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaCopyFailedAttempts
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to save local copy of Intune protected Cloud documents. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18770,7 +18770,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources.  Microsoft uses this data to identify errors during Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to obtain the ADAL token for Intune resources. Microsoft uses this data to identify errors during Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18778,7 +18778,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicy
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current process. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -18786,7 +18786,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity for the current activity. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -18794,7 +18794,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering for authentication callbacks for managed accounts. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18802,7 +18802,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to managed account. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
  
@@ -18810,7 +18810,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to fetch the policy related to save to local. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18818,7 +18818,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching policies for an identity. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18826,7 +18826,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
   
@@ -18834,7 +18834,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to Protection Info. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18842,7 +18842,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to fetching UI policies for a managed account. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18850,7 +18850,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to identifying if an account is managed.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to identifying if an account is managed. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18858,7 +18858,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registration of components for callback. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18866,7 +18866,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionProtect
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18874,7 +18874,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to protecting a managed document. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18882,7 +18882,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to registering account Intune Management. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18890,7 +18890,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to setting policies for a managed account. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18898,7 +18898,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to remote wipe scenarios for Intune Management. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18906,7 +18906,7 @@ The following fields are collected:
 
 #### Office.Android.Intune.IntuneJavaExceptionUpdateToken
 
-Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account.  Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
+Critical Error telemetry to track failures for individual Intune APIs; This telemetry gets logged in case of errors to call Intune APIs related to update authorization token for a managed account. Microsoft uses this data to identify errors during and after Intune enrollment within the app, post signing into the app with a work account.
 
 The following fields are collected:
 
@@ -18914,7 +18914,7 @@ The following fields are collected:
 
 #### Office.Android.LicenseActivationFailure
 
-Critical Error telemetry to track failures to activate licenses for Office 365 accounts in Word, Excel, or PowerPoint.  Microsoft uses this to analyze failures to activate a purchased Office 365 license.
+Critical Error telemetry to track failures to activate licenses for Office 365 accounts in Word, Excel, or PowerPoint. Microsoft uses this to analyze failures to activate a purchased Office 365 license.
 
 The following fields are collected:
 
@@ -18936,7 +18936,7 @@ The following fields are collected:
 
 #### Office.Android.MSASignInUIPrompts
 
-This event denotes that sign-in prompt came to the user, for personal account.  This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
+This event denotes that sign-in prompt came to the user, for personal account. This event helps in understanding the health of signed in state of our apps and take appropriate actions, when we notice unexpected sign-in re-prompts. 
 
 The following fields are collected:
 
@@ -18966,7 +18966,7 @@ The following fields are collected:
 
 #### Office.Apple.Licensing.Mac.DRActivationFailures
 
-This event is collected for Office applications running under Apple platforms. The event is used for capturing digital river activation failures (the event logs the key and product that was used to activate, and the error code received).  This event is used for detecting and helping troubleshoot activation failures (Digital River issues).
+This event is collected for Office applications running under Apple platforms. The event is used for capturing digital river activation failures (the event logs the key and product that was used to activate, and the error code received). This event is used for detecting and helping troubleshoot activation failures (Digital River issues).
 
 The following fields are collected:
 
@@ -18980,7 +18980,7 @@ The following fields are collected:
 
 #### Office.Apple.Licensing.Mac.GetMachineStatusErrors
 
-This event is collected for Office applications running under Apple platforms. The event collects the error code returned while periodically checking the validity of a subscription license. The error code can signify server unavailability but also license expiration, machine count limit, invalid hardware ID, etc.  This event is used to monitor the health of the Office Licensing Service but also to investigate issues related to subscription machine management.
+This event is collected for Office applications running under Apple platforms. The event collects the error code returned while periodically checking the validity of a subscription license. The error code can signify server unavailability but also license expiration, machine count limit, invalid hardware ID, etc. This event is used to monitor the health of the Office Licensing Service but also to investigate issues related to subscription machine management.
 
 The following fields are collected:
 
@@ -19036,7 +19036,7 @@ The following fields are collected:
 
 - **VirtualMemoryRegionInfo** - A string that contains the virtual memory state when DiagnosticType is Crash.
 
-- **WritesCausedKB** - A string that contains the amount of kilobytes written when DiagnosticType is DiskWriteException.
+- **WritesCausedKB** - A string that contains the number of kilobytes written when DiagnosticType is DiskWriteException.
 
 
 #### Office.Apple.MetricKit.DiagnosticMetadata
@@ -19061,7 +19061,7 @@ The following fields are collected:
 
 - **VirtualMemoryRegionInfo** - A string that contains the virtual memory state when DiagnosticType is Crash.
 
-- **WritesCausedKB** - A string that contains the amount of kilobytes written when DiagnosticType is DiskWriteException.
+- **WritesCausedKB** - A string that contains the number of kilobytes written when DiagnosticType is DiskWriteException.
 
 #### Office.Apple.MetricKit.DiskWriteExceptionDiagnostic
 
@@ -19140,7 +19140,7 @@ The following fields are collected:
 
 - **ErrorCode** - Numeric code such as an HTTP status code or Apple error code.
 
-- **ErrorCodeString** - TypeScript eror string.
+- **ErrorCodeString** - TypeScript error string.
 
 - **ErrorDescription** - A system metadata string that gives human readable context on the error and helps us to identify what might have failed.
 
@@ -19348,7 +19348,7 @@ The following fields are collected:
 
 - **Data_App_Version** - The version of the application. Allows us to identify which versions of the product are showing an issue so that we can correctly prioritize it.
 
-- **Data_Audience** - Identifies “Dogfood”, “Insiders”, “Microsoft” or “Production” 
+- **Data_Audience** - Identifies "Dogfood", "Insiders", "Microsoft" or "Production" 
 
 - **Data_Device_Id** - A unique identifier for the device. Allows us to identify the distribution of issues across a set of devices.
 
@@ -19701,7 +19701,7 @@ The following fields are collected:
 
 #### Office.StickyNotes.Web.SDK.BadDraftKey
 
-Triggered when an exception occurs while converting draft key to id (machine action) and is required for crash investigation.
+Triggered when an exception occurs while converting draft key to ID (machine action) and is required for crash investigation.
 
 The following fields are collected:
 
@@ -20969,7 +20969,7 @@ The following fields are collected:
 
 - **Data_User_PrimaryIdentityHash** - A pseudonymous identifier that represents the current user.
 
-- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID or UserObjectId.
+- **Data_User_PrimaryIdentitySpace** - The type of identity contained in the PrimaryIdentityHash. One of MSACID, OrgIdCID, or UserObjectId.
 
 - **Data_User_TenantId** - The tenant that a user's subscription is tied to. Allows us to classify issues and identify whether a problem is widespread or isolated to a set of users or a specific tenant.
 
@@ -21243,7 +21243,7 @@ The following fields are collected:
 
 #### save.error
 
-Allows us to detect and fix situations where there was an error when you attempted to save a file.  It tracks errors caused by failures to save a file, including a descriptive error message to help us resolve the issue.
+Allows us to detect and fix situations where there was an error when you attempted to save a file. It tracks errors caused by failures to save a file, including a descriptive error message to help us resolve the issue.
 
 The following fields are collected: 
 
@@ -21349,7 +21349,7 @@ The following fields are collected:
 
 #### general.properties.log
 
-This event collects information that allows us to categorize and classify issues within the Outlook app that are related to accessibility and device settings.  This categorization is necessary to prioritize the impact of issues on customers.
+This event collects information that allows us to categorize and classify issues within the Outlook app that are related to accessibility and device settings. This categorization is necessary to prioritize the impact of issues on customers.
 
 The following fields are collected for iOS:
 
