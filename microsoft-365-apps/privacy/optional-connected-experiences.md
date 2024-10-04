@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 09/16/2024
+ms.date: 10/04/2024
 ---
 
 # Overview of optional connected experiences in Office
@@ -66,7 +66,7 @@ Link unfurling for Loop automatically expands a hyperlink into an interactive ex
 
 ### Microsoft Error Reporting Program (MERP)
 
-MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. The servicee is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply. MERP doesn't apply to Office client applications that run on Windows.
+MERP connects to the Watson.microsoft.com service to send diagnostic data when Office client applications that run on Mac devices crash. The service is owned by Microsoft and the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and [Microsoft privacy statement](https://www.microsoft.com/privacy/privacystatement) apply. MERP doesn't apply to Office client applications that run on Windows.
 
 ### Office Store
 
@@ -105,11 +105,11 @@ The [Weather Bar](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5
 
 ## Experiences for Microsoft 365 Copilot
 
-### Web grounding in Microsoft 365 Copilot and Microsoft Copilot
+### Web search in Microsoft 365 Copilot and Microsoft Copilot
 
-Web grounding allows Microsoft 365 Copilot chat and Microsoft Copilot chat to reference real-time web content when responding to your prompt. Referencing web content improves the quality of the responses provided by Copilot. Microsoft 365 Copilot chat and Microsoft Copilot chat use the Bing search service to reference web content. The Bing search service is a separate business from Microsoft 365 and is managed independently by Microsoft. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) apply to the use of the Bing search service.  
+Web search allows Microsoft 365 Copilot chat and Microsoft Copilot chat to reference real-time web content when responding to your prompt. Referencing web content improves the quality of the responses provided by Copilot. Microsoft 365 Copilot chat and Microsoft Copilot chat use the Bing search service to reference web content. The Bing search service is a separate business from Microsoft 365 and is managed independently by Microsoft. The terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) apply to the use of the Bing search service.  
 
-In Microsoft 365 Copilot, there's a **Web content** toggle that allows you to control whether or not you want to use web grounding. You can find the toggle by selecting the plugin menu in the chat input box.
+In Microsoft 365 Copilot, there's a **Web content** toggle that allows you to control whether or not you want to use web search. You can find the toggle by selecting the plugin menu in the chat input box.
 
 ## How to determine if your admin has given you the ability to use optional connected experiences
 
