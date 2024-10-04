@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 10/03/2024
+ms.date: 10/04/2024
 ---
 
 # Required diagnostic data for Office
@@ -1084,7 +1084,7 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
 - **Count** - Count of the installed apps.
 
@@ -1232,7 +1232,7 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
 - **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
@@ -1943,7 +1943,7 @@ The following fields are collected:
 
   - **ActivationType** - Type of activation for the control
 
-  - **Blocked** - was the control blocked by office
+  - **Blocked** - was the control blocked by Office
 
   - **CLSID** - class identifier of the control
 
@@ -1979,7 +1979,7 @@ The following fields are collected:
 
   - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It's just a unique representation of the document.)
 
-  - **IsCategorized** – was the OLE control categorized to load in office
+  - **IsCategorized** – was the OLE control categorized to load in Office
 
   - **IsInsertable** – is the OLE control insertable or not
 
@@ -1995,7 +1995,7 @@ The following fields are collected:
 
   - **DocUrlHash** - a hash representing the document uniquely. (Note – no way to find out the actual details of the document from this. It's just a unique representation of the document.)
 
-  - **IsCategorized** - is the OLE control categorized to load in office
+  - **IsCategorized** - is the OLE control categorized to load in Office
 
   - **IsInsertable** - is the OLE control insertable or not
 
@@ -7410,7 +7410,7 @@ This event is triggered when a new OneNote page is created. The data is used to 
 
 The following fields are collected: 
 
-- **EVENT_UUID** - Unique Id for an event
+- **EVENT_UUID** - Unique ID for an event
 
 - **NOTE_TYPE** - This will capture the type of created page
 
@@ -7427,7 +7427,7 @@ This event is triggered when a Page is opened. The telemetry is used to monitor,
 
 The following fields are collected: 
 
-- **EVENT_UUID** - Unique Id for an event
+- **EVENT_UUID** - Unique ID for an event
 
 - **JOT_ID** - object of the page opened
 
@@ -9167,9 +9167,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -9265,7 +9265,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -9299,7 +9299,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -9309,7 +9309,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -9434,7 +9434,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -9468,7 +9468,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -9476,7 +9476,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -9585,9 +9585,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -9684,7 +9684,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -9718,7 +9718,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -9728,7 +9728,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -9831,9 +9831,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -9917,7 +9917,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -9951,7 +9951,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -9959,7 +9959,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -13392,7 +13392,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDXSessionId** - SDX Session ID
 
@@ -13426,7 +13426,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -13436,7 +13436,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -16156,7 +16156,7 @@ The following fields are collected:
 
 - **Data_IsUploadSuccessful** - If the report was successfully uploaded or encountered any issues while uploading to crash service.
 
-- **Data_reportId** - the Id of the report that is uploaded on the crash service.
+- **Data_reportId** - the ID of the report that is uploaded on the crash service.
 
 - **Data_TotalMemory** - System Memory of the device.
 
@@ -16211,11 +16211,11 @@ The following fields are collected:
     - 7 - Generic dime error
     - 8 - Dime telemetry can't be uploaded due to communication failure
     - 9 - Two instances of Dime running causing interruption error
-    - 10 - Base WebURL loaded on office mobile app is invalid
-    - 11 - Communication of office mobile app with Dime failed 
+    - 10 - Base WebURL loaded on Office mobile app is invalid
+    - 11 - Communication of Office mobile app with Dime failed 
     - 12 - No communication channel could be established
     - 13 - Communication ID couldn't be sent to Dime
-    - 14 - The office mobile app is communicating to the wrong endpoint
+    - 14 - The Office mobile app is communicating to the wrong endpoint
     - 15 - AuthToken isn't obtained for this MSA account
     - 16 - AuthToken isn't sent to Dime
 
@@ -17084,7 +17084,7 @@ The following fields are collected:
 
 - **Data_Doc_OpenDurationms** - Time to open a PDF file in milliseconds.
 
-- **Data_Doc_OpenFromOMDurationMs** - Total time taken to open a PDF file in office mobile.
+- **Data_Doc_OpenFromOMDurationMs** - Total time taken to open a PDF file in Office mobile.
 
 - **Data_Doc_PasswordProtected** - Denotes whether the file is password protected or not.
 
@@ -17122,7 +17122,7 @@ The following fields are collected:
 
 - **Data_IsFastFileActivationTelemetryEnabled** - Boolean denoting if fast file activation flow's telemetry  is enabled or not.
 
-- **Data_IsHomeScreenUpgradeSession** - Denotes whether office mobile home screen was shown or not, or home screen was upgraded or not in current file open session.
+- **Data_IsHomeScreenUpgradeSession** - Denotes whether Office mobile home screen was shown or not, or home screen was upgraded or not in current file open session.
 
 - **Data_IsIntuneManaged** - Boolean denoting if file is an intune managed or not (true/false). 
 
@@ -17555,7 +17555,7 @@ The following fields are collected:
 
 - **SourceAppName** - name of the application the session relates to
 
-- **SourceSessionId** - Office session Id of the session being reported
+- **SourceSessionId** - Office session ID of the session being reported
 
 
 #### Office.PowerPoint.PPT.Android.RehearseView
@@ -17754,9 +17754,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -18295,7 +18295,7 @@ The following fields are collected:
 
 - **ADALRawErrorCode** - Indicates raw error code while showing sign-in prompt or silent token fetch attempt for work account.
 
-- **ErrorGroup** - Indicates the type of account like personal account or work account or on-premise work account.
+- **ErrorGroup** - Indicates the type of account like personal account or work account or on-premises work account.
 
 - **IDCRLErrorCode** - Indicates error code while showing sign-in prompt for personal account.
 
@@ -18305,7 +18305,7 @@ The following fields are collected:
 
 - **LiveOAuthRawErrorCode** - Indicates raw error code during silent token refresh attempt for personal account.
 
-- **NTLMErrorCode** - Indicates error code while showing sign-in prompt for on-premise work account.
+- **NTLMErrorCode** - Indicates error code while showing sign-in prompt for on-premises work account.
 
 #### Office.Android.AndroidFileAsyncSaveStatus
 
@@ -18744,18 +18744,18 @@ This event is triggered when one Office Android app needs data from another Offi
 
 The following fields are collected:
 
-- **Data_ErrorInfo** - This field contains information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+- **Data_ErrorInfo** - This field contains information about the error due to which this event got triggered. This includes errors such as timeout. We also log the Office app package name in this field from which the data was requested.
 
 - **Data_LoggingSessionId** - This field logs the sessionId of the session that is logging this event.
 
 
 #### Office.Android.EarlyTelemetry.SharedPrefServiceDataFetchSync
 
-This event is triggered when an error occurs, for example, timeout or invalid service error, when one Office Android app needs but is unable to get data from other Office Android app installed on the user's device. This data is used to find the reason for the service failure and to maintain the health of the service and office apps.
+This event is triggered when an error occurs, for example, timeout or invalid service error, when one Office Android app needs but is unable to get data from other Office Android app installed on the user's device. This data is used to find the reason for the service failure and to maintain the health of the service and Office apps.
 
 The following fields are collected:
 
-- **Data_ErrorInfo** - This field logs information about the error due to which this event got triggered. This includes errors such as timeout. We also log the office app package name in this field from which the data was requested.
+- **Data_ErrorInfo** - This field logs information about the error due to which this event got triggered. This includes errors such as timeout. We also log the Office app package name in this field from which the data was requested.
 
 - **Data_LoggingSessionId** - This field logs the sessionId of the session that is logging this event.
 
@@ -19214,9 +19214,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -19247,9 +19247,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -19317,9 +19317,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -19374,7 +19374,7 @@ The following fields are collected:
 
 - **Data_SamplePolicy** - Identifies if the sample policy is Measure or Critical  
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_Session_Id** - Uniquely identifies a given session of data. Allows us to identify the impact of issues by evaluating the number of sessions that are impacted and if there are common features of those sessions.
 
@@ -19390,9 +19390,9 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_TelemetryRegion** - Identifies the data boundary of the user 
 
@@ -19626,7 +19626,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -19658,13 +19658,13 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -19785,7 +19785,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -19817,13 +19817,13 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -19947,7 +19947,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -19979,13 +19979,13 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20110,7 +20110,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20128,7 +20128,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -20136,7 +20136,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20241,7 +20241,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20273,7 +20273,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -20281,7 +20281,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20401,7 +20401,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20433,7 +20433,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -20441,7 +20441,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20565,7 +20565,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20583,7 +20583,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -20591,7 +20591,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20704,7 +20704,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20736,13 +20736,13 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -20941,7 +20941,7 @@ The following fields are collected:
 
 - **Data_SDX_OfficeJsVersion** - This is the version of Office.js that will redirect to the platform-specific version. 
 
-- **Data_SDX_SessionId** - Session Id of the Add-in 
+- **Data_SDX_SessionId** - Session ID of the Add-in 
 
 - **Data_SDX_Version** - Version of the Add-in 
 
@@ -20985,7 +20985,7 @@ The following fields are collected:
 
 - **Event_ReceivedTime** - The time the event was logged in the service 
 
-- **M365aInfo_EnrolledTenantId** - Enrolled tenant id 
+- **M365aInfo_EnrolledTenantId** - Enrolled tenant ID 
 
 - **OriginalRoutingGeo** - Identifies if the original routing geo is eu or not. 
 
@@ -20993,7 +20993,7 @@ The following fields are collected:
 
 - **Session_SamplingValue** - A value in (0, 1) 
 
-- **User_ActiveUserTenantId** - Active user tenant id 
+- **User_ActiveUserTenantId** - Active user tenant ID 
 
 - **User_IsAnonymous** - Identifies if the current user is anonymous. It's always logged as false or blank. 
 
@@ -21156,7 +21156,7 @@ The following fields are collected:
 
 - **AppType** - The type of the container, from which logs are emitted.
 
-- **BridgeInstanceId** -  A unique ID given to the office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
+- **BridgeInstanceId** -  A unique ID given to the Office windows app instance, used to corelate all the events from a single app session. We can't derive any PII from this ID.
 
 - **DeviceInfo_Id** - A unique device ID calculated by 1DS SDK.
 
