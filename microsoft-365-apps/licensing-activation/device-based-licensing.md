@@ -10,7 +10,7 @@ ms.collection: Tier2
 ms.localizationpriority: medium
 recommendations: false
 description: "Explains how to configure device-based licensing for Microsoft 365 Apps for enterprise."
-ms.date: 06/21/2024
+ms.date: 10/04/2024
 ---
 
 # Device-based licensing for Microsoft 365 Apps for enterprise
@@ -68,7 +68,6 @@ After you create the appropriate group type and assigned the appropriate Windows
 
 > [!IMPORTANT]
 > - The license assignment has to be done in the Microsoft 365 admin center, under **Billing** > **Licenses**. You can't assign the licenses in the Azure portal.
-> - To assign these licenses, you must be a Global admin.
 > - After you go to **Billing** > **Licenses** > **Subscriptions** in the Microsoft 365 admin center, be sure that you select either **Microsoft 365 Apps for enterprise (device)** or **Microsoft 365 Apps for Education (device)** (depending on which license you have) to assign those licenses to the group you created.
 
 
@@ -121,13 +120,13 @@ You can view device licensing status by signing in to the [Microsoft 365 Apps ad
 
 You can also verify that Microsoft 365 Apps for enterprise is using a device-based license by opening an Office application, such as Word, and going to **File** > **Account**. In the **Product Information** section, you should see **Belongs to: This device**.
 
-A device that's not configured properly for device-based licensing impacts functionality. When a user tries to use Microsoft 365 Apps for enterprise on the device, Microsoft 365 is in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
+A device not configured properly for device-based licensing impacts functionality. When a user tries to use Microsoft 365 Apps for enterprise on the device, Microsoft 365 is in reduced functionality mode. That means the user can open and print existing documents in Office applications, but the user can't create new documents or edit and save existing documents.
 
 In those cases, the user also sees a banner beneath the ribbon in the document with the following message:
 
 > **LICENSE REQUIRED** Your admin needs to assign an Office license to this device so you can edit your files.
 
-To troubleshoot this issue, make sure the device is correctly joined to Microsoft Entra ID and that the device is added to the group that's assigned the licenses. Also, there can be a delay of approximately one hour after you add the device to the group, so that might be causing this message to appear. Close the app and open the app again later.
+Ensure that the device is joined to Microsoft Entra ID and added to the group assigned to the licenses. There could be a delay of up to one hour after adding the device to the group, which could cause this message to appear. Close and reopen the app later to resolve the issue.
 
 In other cases, the user might see this message:
 
