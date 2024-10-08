@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 recommendations: false
 description: "Provides IT admins with information on how to deploy Office LTSC 2024."
-ms.date: 09/16/2024
+ms.date: 10/08/2024
 ---
 
 # Deploy Office LTSC 2024
@@ -114,6 +114,10 @@ Once the installation is complete, the command prompt will return, and you can o
 
 > [!NOTE]
 > Office LTSC 2024 is installed on the system drive, typically the C:\ drive. The installation location can't be changed.
+
+## Install Office LTSC 2024 by using Configuration Manager
+
+You can also use Microsoft Configuration Manager (current branch) to deploy Office LTSC 2024. The Office 365 Client Installation wizard guides you through the process and builds the configuration.xml file for you. There’s an entry for Office LTSC Professional Plus 2024 in the wizard. On that same page, you can also choose to deploy Project and Visio. To access the wizard, navigate to **Software Library** > **Overview** > **Office 365 Client Management** in the Configuration Manager console.
 
 ## Deploy languages for Office LTSC 2024
 
