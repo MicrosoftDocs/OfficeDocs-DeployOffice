@@ -57,6 +57,7 @@ To deploy Visio LTSC Professional 2024 or Visio LTSC Standard 2024 to users in y
 
 1. Purchase Visio LTSC 2024 as part of a volume licensing agreement.
 2. Use the Office Deployment Tool and a configuration.xml file to install Visio LTSC 2024 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2024](/office/ltsc/2024/deploy)
+   - It’s recommended to use the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Visio** dropdown.
    - It’s recommended to install Visio directly without downloading the source files beforehand. This approach reduces overall network utilization and eliminates the need to maintain the source files.
 
 If you use other tools, such as Microsoft Configuration Manager, to deploy software to your users, you can integrate the Office Deployment Tool with those tools to deploy Visio LTSC 2024.
