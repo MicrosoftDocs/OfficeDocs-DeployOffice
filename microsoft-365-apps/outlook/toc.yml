@@ -29,6 +29,8 @@ items:
     items:
       - name: Manage updates
         href: manage/manage-updates-new-outlook-windows.md
+      - name: Monitor usage
+        href: manage/monitor-usage-reports.md
       - name: Policy management
         href: manage/policy-management.md
       - name: Exchange Online PowerShell
