@@ -9,7 +9,7 @@ ms.service: office-perpetual-itpro
 ms.localizationpriority: medium
 ms.collection: Tier2
 description: "Provides Office admins with information about using Multiple Activation Key (MAK) to activate volume licensed versions of Office, Project, and Visio."
-ms.date: 09/18/2024
+ms.date: 10/08/2024
 ---
 
 # Activate volume licensed versions of Office by using MAK
@@ -46,7 +46,7 @@ If you're using MAK to activate volume licensed versions of Office 2016, you can
 
 - After you install Office 2016, you can use the [product UI](#change-the-key-by-using-the-product-ui), the [Volume Activation Management Tool (VAMT)](/windows/deployment/volume-activation/volume-activation-management-tool), the [ospp.vbs script](tools-to-manage-volume-activation-of-office.md#the-osppvbs-script), or [enable a non-admin user to activate Office using MAK](#enable-a-non-admin-user-to-activate-office-by-using-mak).
 
-### Configure MAK activation in the OCT for Office LTSC 2021, and Office 2019 
+### Configure MAK activation in the OCT for Office LTSC 2024, Office LTSC 2021, and Office 2019 
 
 1. In the [Office Customization Tool](https://config.office.com/deploymentsettings), expand **Licensing and activation**.
 2. In the **Product key** section, select **MAK** next to the volume license product and enter your product key.

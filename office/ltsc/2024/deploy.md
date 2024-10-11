@@ -17,6 +17,19 @@ ms.date: 10/08/2024
 
 To configure and deploy Office LTSC 2024, including Project and Visio, within your organization, you'll use the Office Deployment Tool (ODT). The ODT provides flexibility and control, allowing you to customize and manage installations according to your specific needs.
 
+The installation files for Office LTSC 2024 are available on the Office Content Delivery Network (CDN) on the internet. You can install Office LTSC 2024 directly from the Office CDN. Or, you can download the installation files from the Office CDN to a location on your local network, such as a shared folder, and install Office LTSC 2024 from that location. You can use different methods for different sets of devices in your organization. Whichever method you choose, you use the ODT.
+
+Installing directly from the Office CDN requires the least amount of administrative effort and is recommended. However, you might have constraints that prevent you from installing directly from the internet. For example, some devices might not have connectivity to the internet, or you might have limited bandwidth to the internet.
+
+Here are the basic steps for deploying Office LTSC 2024:
+
+1. [Download the Office Deployment Tool from the Microsoft Download Center](#download-the-office-deployment-tool-from-the-microsoft-download-center)
+2. [Create the configuration.xml file](#create-the-configurationxml-file)
+3. [Download the Office LTSC 2024 installation files](#download-the-office-ltsc-2024-installation-files) *(Optional, if you're not installing directly from the Office CDN.)*
+4. [Install Office LTSC 2024 by using the Office Deployment Tool](#install-office-ltsc-2024-by-using-the-office-deployment-tool)
+ 
+Alternatively, you can [use Configuration Manager to deploy Office LTSC 2024](#install-office-ltsc-2024-by-using-configuration-manager) if that's available in your organization.
+
 ## Download the Office Deployment Tool from the Microsoft Download Center
 
 <!--Using include for odt-->
@@ -27,6 +40,9 @@ For an Office LTSC 2024-specific sample, see [Sample configuration.xml file to u
 ## Create the configuration.xml file
 
 Once you have a copy of the ODT, the next step is to create a configuration.xml file. You can create multiple configuration.xml files to be used with the ODT. For example, you can create a configuration.xml file to download and install the 64-bit version of Office LTSC Professional Plus 2024 in English. Then, you can create a different configuration.xml file to install the 32-bit version of Visio LTSC Professional 2024 in French. When you run the ODT from an elevated command prompt, you specify which configuration.xml file to use.
+
+<!--Using include for use-oct-->
+[!INCLUDE[use-oct.md](../../includes/use-oct.md)]
 
 | Configuration  | configuration.xml setting  | Additional information  |
 | :------------- | :------------------------ | :---------------------- |
@@ -135,10 +151,13 @@ If you're upgrading from a Windows Installer (MSI) version of Office, you can ge
 
 By default, Skype for Business is not installed when deploying Office LTSC 2024 unless you make the following changes:
 
+- When you create the configuration.xml file with the [Office Customization Tool](https://config.office.com/deploymentsettings), under the Apps section, use the toggle to turn on Skype for Business.
+  :::image type="content" source="media/deploy/office-customization-tool-apps-deployment.png" alt-text="Screenshot of the configuration options in the Office Customization Tool showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::
+
 - In the Office 365 Client Installation wizard, under the **Products** tab, scroll to the **Applications** section, and check the box for Skype for Business to include it in your deployment package.
+  :::image type="content" source="media/deploy/office-client-install-wizard-skype.png" alt-text="Screenshot of the configuration options in the Office Client installation wizard showing toggles to include or exclude apps such as Skype for Business, Outlook, and Excel from being deployed.":::  
 
 These changes ensure that Skype for Business is included in the installation.
-
 
 ## Related articles
 <!-- List related articles -->
