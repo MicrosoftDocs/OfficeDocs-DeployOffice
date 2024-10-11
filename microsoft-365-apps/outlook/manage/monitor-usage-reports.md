@@ -33,12 +33,12 @@ Microsoft Entra ID reporting can be filtered to the application ID in this dashb
 
 Results are limited to 100,000 items. If the results exceed that, you can filter to a shorter time period using the **Date** filter.
 
-## Check a users new Outlook versions
+### Check what version of new Outlook is being used
 
-You can also determine which version of new Outlook any user in your organization is using.
+You can also determine which version of new Outlook is being used by people in your organization.
 
 1. Under **Sign-in events**, select **User sign-ins (interactive)**.
-1. Select **Add filters**, and in the Pick a field windows, select **User**, and then select **Apply**.
+1. Select **Add filters**, and in the Pick a field window, select **User**, and then select **Apply**.
 1. In the User window, enter the name of the user you want to filter to, and select **Apply**. The results show all login events for that particular user.
 1. Select a sign-in entry from the list of results. In **Activity Details: Sign-ins**, under the **Basic info** tab, scroll down to **User agent**.
 1. Note the version number used for OneOutlook. This number should match the user's new Outlook version which they can see in new Outlook under **Settings** > **General** > **About Outlook**.
