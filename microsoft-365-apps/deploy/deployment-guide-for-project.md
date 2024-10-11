@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 recommendations: true
 description: "Provides Office admins with an overview of how to deploy Project to users in their organization."
-ms.date: 09/19/2024
+ms.date: 10/08/2024
 ---
 
 # Deployment guide for Project
@@ -57,6 +57,7 @@ To deploy a volume licensed version of Project Professional 2024 or Project Stan
 
 1. Purchase Project 2024 as part of a volume licensing agreement.
 2. Use the Office Deployment Tool and a configuration.xml file to install Project 2024 from the Office Content Delivery Network (CDN) on the internet. For more information, see [Deploy Office LTSC 2024](/office/ltsc/2024/deploy)
+   - It's recommended to use the [Office Customization Tool](https://config.office.com/officeSettings/configurations) in the [Microsoft 365 Apps admin center](https://config.office.com) to create the configuration file. Leave the **Office Suite** field empty and choose your version in the **Project** dropdown.
    - It’s recommended to install Project directly without downloading the source files beforehand. This approach reduces overall network utilization and eliminates the need to maintain the source files.
 
 If you use other tools, such as Microsoft Configuration Manager, to deploy software to your users, you can integrate the Office Deployment Tool with those tools to deploy volume licensed versions of Project.
