@@ -18,7 +18,7 @@ ms.date: 08/23/2024
 
 You might be interested in viewing new Outlook usage in your organization. We're working on adding usage reporting in the Microsoft 365 admin center to enable organizations to monitor usage and migration from classic to new Outlook for Windows. In the meantime, a workaround to offer these insights is available through Microsoft Entra ID reporting or PowerShell / Graph APIs.
 
-## View usage with Microsoft Entra ID reporting
+## View new Outlook usage with Microsoft Entra ID reporting
 
 Microsoft Entra ID reporting can be filtered to the application ID in this dashboard. You must have a Microsoft Azure subscription and a **Report reader** role to view the report.
 
@@ -32,3 +32,13 @@ Microsoft Entra ID reporting can be filtered to the application ID in this dashb
 :::image type="content" source="media/Outlook-Entra-ActivityDetails.png" alt-text="Screenshot of Activity Details: Sign-ins window":::
 
 Results are limited to 100,000 items. If the results exceed that, you can filter to a shorter time period using the **Date** filter.
+
+## Check a users new Outlook versions
+
+You can also determine which version of new Outlook any user in your organization is using.
+
+1. Under **Sign-in events**, select **User sign-ins (interactive)**.
+1. Select **Add filters**, and in the Pick a field windows, select **User**, and then select **Apply**.
+1. In the User window, enter the name of the user you want to filter to, and select **Apply**. The results show all login events for that particular user.
+1. Select a sign-in entry from the list of results. In **Activity Details: Sign-ins**, under the **Basic info** tab, scroll down to **User agent**.
+1. Note the version number used for OneOutlook. This number should match the user's new Outlook version which they can see in new Outlook under **Settings** > **General** > **About Outlook**.
