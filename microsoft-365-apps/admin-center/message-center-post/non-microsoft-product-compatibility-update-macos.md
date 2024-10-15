@@ -49,7 +49,7 @@ If your product uses dynamic libraries, make sure they're codesigned with an App
 
 - Monitor system logs: Inspect the system console logs for *Library Load Constraint Rejection* messages. These messages from macOS identify any dynamic library that the OS rejects from loading into an Office app process.
 
-- Consider proactively blocking all dynamic libraries: To block these libraries, set the Office preference `DisableVisualBasicExternalDylibs` to `true` using Mobile Device Management (MDM) software. For more information, see the [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/welcome/web).
+- Consider proactively blocking all non-Microsoft libraries: To block these libraries, set the Office preference `DisableVisualBasicExternalDylibs` to `true` using Mobile Device Management (MDM) software. For more information, see the [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/welcome/web).
 
   > [!WARNING]
-  > Blocking all dynamic libraries from running within Visual Basic macros is a significant action and should only be considered if absolutely necessary for your organization's requirements on macOS computers.
+  > Blocking all non-Microsoft libraries from running within Visual Basic macros is a significant action and should only be considered if absolutely necessary for your organization's requirements on macOS computers.
