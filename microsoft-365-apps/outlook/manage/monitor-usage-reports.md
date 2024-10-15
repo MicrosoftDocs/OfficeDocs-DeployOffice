@@ -10,7 +10,7 @@ ms.collection: Tier1
 ms.localizationpriority: medium
 ms.custom: intro-overview
 recommendations: true
-description: "Instructions for tracking usage of new Outlook for Windows in your organization."
+description: "Instructions for tracking usage of new Outlook for Windows by users in organizations."
 ms.date: 08/23/2024
 ---
 
@@ -35,10 +35,10 @@ Results are limited to 100,000 items. If the results exceed that, you can filter
 
 ### Check what version of new Outlook is being used
 
-You can also determine which version of new Outlook is being used by people in your organization.
+To identify which versions of new Outlook users in your organization are running, do the following in **Identity** > **Monitoring & health** > **Sign-in logs**:
 
 1. Under **Sign-in events**, select **User sign-ins (interactive)**.
-1. Select **Add filters**, and in the Pick a field window, select **User**, and then select **Apply**.
-1. In the User window, enter the name of the user you want to filter to, and select **Apply**. The results show all login events for that particular user.
+1. Select **Add filters**. In the Pick a field window select **User**, and then select **Apply**.
+1. In the User window, enter the name of the user you want to filter to, and select **Apply**. The returned results show all sign-in events for a particular user.
 1. Select a sign-in entry from the list of results. In **Activity Details: Sign-ins**, under the **Basic info** tab, scroll down to **User agent**.
-1. Note the version number used for OneOutlook. This number should match the user's new Outlook version which they can see in new Outlook under **Settings** > **General** > **About Outlook**.
+1. Note the version number used for OneOutlook. This number should match the user's new Outlook version. To see what version they're using, open new Outlook on the user's device and select **Settings** > **General** > **About Outlook**.
