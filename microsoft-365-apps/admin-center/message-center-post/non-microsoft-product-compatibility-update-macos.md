@@ -5,7 +5,7 @@ author: nicholasswhite
 manager: dougby
 audience: ITPro
 ms.topic: conceptual
-ms.service: office-mac
+ms.service: o365-proplus-itpro
 ms.collection: Tier1
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
