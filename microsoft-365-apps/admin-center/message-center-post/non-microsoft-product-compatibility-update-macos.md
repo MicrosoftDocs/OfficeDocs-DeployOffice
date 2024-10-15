@@ -1,5 +1,5 @@
 ---
-title: "Word, Excel, and PowerPoint for macOS – Planned update to compatibility with add-ins and Office add-ins or Open Database Connectivity drivers"
+title: "Word, Excel, and PowerPoint for macOS – Planned update to compatibility Office add-ins and Open Database Connectivity drivers"
 ms.author: nwhite
 author: nicholasswhite
 manager: dougby
@@ -15,7 +15,7 @@ description: "Details the planned update to non-Microsoft product compatibility 
 ms.date: 10/15/2024
 ---
 
-# Word, Excel, and PowerPoint for macOS – Planned update to compatibility with add-ins and Office add-ins or Open Database Connectivity drivers
+# Word, Excel, and PowerPoint for macOS – Planned update to compatibility Office add-ins and Open Database Connectivity drivers
 
 > [!IMPORTANT]
 > In this article, when *non-Microsoft products* is mentioned, it specifically refers to products and applications that  enhance or extend Office functionality (like add-ins or integrations). This doesn't include all non-Microsoft software installed on your device.
