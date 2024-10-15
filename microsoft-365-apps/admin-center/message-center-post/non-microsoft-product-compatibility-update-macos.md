@@ -18,7 +18,7 @@ ms.date: 10/15/2024
 # Word, Excel, and PowerPoint for macOS – Planned update to compatibility with add-ins and Office add-ins or Open Database Connectivity drivers
 
 > [!IMPORTANT]
-> In this article, when "non-Microsoft products," is mentioned, it's specifically referring to products and applications that  enhance or extend Office functionality (like add-ins or integrations). This doesn't include all non-Microsoft software installed on your device.
+> In this article, when *non-Microsoft products* is mentioned, it specifically refers to products and applications that  enhance or extend Office functionality (like add-ins or integrations). This doesn't include all non-Microsoft software installed on your device.
 
 Microsoft Word, Excel, and PowerPoint in Office for macOS Version 16.91 only load dynamic libraries that are codesigned with a valid Apple Developer ID. As a result, Office add-ins or Open Database Connectivity (ODBC) drivers that rely on unsigned or ad-hoc-signed dynamic libraries don't work as intended. 
 
