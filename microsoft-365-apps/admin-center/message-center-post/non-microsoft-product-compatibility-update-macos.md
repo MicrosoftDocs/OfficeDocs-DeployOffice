@@ -12,7 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 recommendations: false
 hideEdit: true
 description: "Details the planned update to non-Microsoft product compatibility for Word, Excel, and PowerPoint for macOS version 16.91."
-ms.date: 10/14/2024
+ms.date: 10/15/2024
 ---
 
 # Word, Excel, and PowerPoint for macOS – Planned update to compatibility with non-Microsoft products
@@ -49,7 +49,7 @@ If your product uses dynamic libraries, make sure they're codesigned with an App
 
 - Monitor system logs: Inspect the system console logs for *Library Load Constraint Rejection* messages. These messages from macOS identify any dynamic library that the OS rejects from loading into an Office app process.
 
-- Consider proactively blocking third-party libraries: To do this, set the Office preference `DisableVisualBasicExternalDylibs` to `true` using Mobile Device Management (MDM) software. For more information, see the [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/welcome/web).
+- Consider proactively blocking non-Microsoft libraries: To block these libraries, set the Office preference `DisableVisualBasicExternalDylibs` to `true` using Mobile Device Management (MDM) software. For more information, see the [Apple Platform Deployment guide](https://support.apple.com/guide/deployment/welcome/web).
 
   > [!WARNING]
   > Blocking all dynamic libraries from running within Visual Basic macros is a significant action and should only be considered if absolutely necessary for your organization's requirements on macOS computers.
