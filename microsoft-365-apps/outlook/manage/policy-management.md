@@ -16,7 +16,7 @@ description: "Provides guidelines for configuring and managing mailbox accounts 
 ms.date: 09/20/2024
 ---
 
-# Policy Management
+# Policy Management in new Outlook for Windows
 Admins provide Windows users in your organization with standard policies for new Outlook. These policies maintain security, productivity, and data integrity by using Exchange PowerShell cmdlets and Cloud Policy.
 
 Most policies configure the features that are available for the mailbox accounts in their organization and help protect company data and customize the user experience. These policies affect the configuration of any Outlook app where the organization mailbox is present. 
