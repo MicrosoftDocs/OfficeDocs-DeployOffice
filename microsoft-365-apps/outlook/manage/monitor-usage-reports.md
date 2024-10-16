@@ -27,9 +27,8 @@ Microsoft Entra ID reporting can be filtered to the application ID in this dashb
 1. Under **Sign-in events**, select **User sign-ins (non-interactive)**.
 1. Select **Add filters**, and in the Pick a field window, select **Application**, and then select **Apply**.
 1. In the Application window, enter **Microsoft Outlook** and select **Apply**. The results show all login events for new Outlook.
-1. To ensure these entries are for new Outlook, select an entry from the list of results. In **Active Details: Sign-ins** look for **Application ID**. The ID **5d661950-3475-41cd-a2c3-d671a3162bc1** is the new Outlook ID and confirms this sign-in was for new Outlook.
-
-:::image type="content" source="media/outlook-entra-signindetails.png" alt-text="Screenshot of Activity Details: Sign-ins window showing Application and Application ID entries.":::
+1. To ensure these entries are for new Outlook, select an entry from the list of results. In the **Active Details: Sign-ins** pop-out, scroll to find the **Application ID**. The Application ID showing **5d661950-3475-41cd-a2c3-d671a3162bc1** is the ID for new Outlook, and it confirms the user signed-in using new Outlook.
+    :::image type="content" source="media/outlook-entra-signindetails.png" alt-text="Screenshot of Activity Details: Sign-ins window showing Application and Application ID entries.":::
 
 Results are limited to 100,000 items. If the results exceed that, you can filter to a shorter time period using the **Date** filter.
 
