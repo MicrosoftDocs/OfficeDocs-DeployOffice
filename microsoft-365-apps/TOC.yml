@@ -138,8 +138,56 @@ items:
           - name: Remove existing MSI versions when upgrading
             href: deploy/upgrade-from-msi-version.md
 
-      - name: The new Outlook for Windows
-        href: outlook/overview-new-outlook.md
+      - name: Outlook
+        items:
+          - name: Welcome to new Outlook for Windows
+            href: overview-new-outlook.md
+
+          - name: Get started
+            items:
+              - name: Product availability
+                href: outlook/get-started/guide-product-availability.md
+              - name: Licensing options
+                href: outlook/get-started/licensing-options.md
+              - name: Plan migration
+                href: outlook/get-started/migration-planning.md
+              - name: Deploy new Outlook
+                href: outlook/get-started/deployment-new-outlook.md
+              - name: Control new Outlook installation
+                href: outlook/get-started/control-install.md
+              - name: COM add-ins
+                items:
+                  - name: Identify COM add-ins in your organization
+                    href: outlook/get-started/state-of-com-add-ins.md
+                  - name: Migrate from COM to web add-ins
+                    href: outlook/get-started/migrate-com-to-web-addins.md
+                  - name: Install web add-in counterparts
+                    href: outlook/get-started/install-web-add-ins.md
+              - name: Supported accounts
+                href: outlook/get-started/supported-account-types.md
+
+          - name: Manage
+            items:
+              - name: Manage updates
+                href: outlook/manage/manage-updates-new-outlook-windows.md
+              - name: Policy management
+                href: outlook/manage/policy-management.md
+              - name: Exchange Online PowerShell
+                href: /powershell/exchange/exchange-online-powershell
+              - name: Policy for admin-controlled migration
+                href: outlook/manage/admin-controlled-migration-policy.md
+
+          - name: Security
+            items:
+              - name: Security and compliance
+                href: outlook/security/security-compliance.md
+
+          - name: Troubleshoot
+            items:
+              - name: Deployment issues in new Outlook
+                href: outlook/troubleshoot/troubleshoot-deployment-new-outlook.md
+              - name: Shared mailbox issues in new Outlook
+                href: outlook/troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md
 
       - name: Project, Visio, Teams, and OneNote
         items:
@@ -151,10 +199,10 @@ items:
             href: deploy/teams-install.md
           - name: OneNote
             items:
-            - name: Deploy OneNote
-              href: deploy/deployment-guide-onenote.md
-            - name: Migrate from OneNote for Windows 10
-              href: deploy/onenote-for-windows-10-migration-guide.md  
+              - name: Deploy OneNote
+                href: deploy/deployment-guide-onenote.md
+              - name: Migrate from OneNote for Windows 10
+                href: deploy/onenote-for-windows-10-migration-guide.md  
           - name: Install volume licensed versions by using the Office Deployment Tool
             href: deploy/use-the-office-deployment-tool-to-install-volume-licensed-editions-of-visio-2016.md
           - name: Install different versions of Office, Project, and Visio on the same computer
@@ -165,19 +213,4 @@ items:
           - name: End of support resources
             href: end-of-support/resources.md
           - name: Connectivity to Microsoft 365 services
-            href: end-of-support/microsoft-365-services-connectivity.md
-          - name: Windows Server and Microsoft 365 Apps
-            href: end-of-support/windows-server-support.md
-          - name: Microsoft 365 Apps migration from Windows Server
-            href: end-of-support/windows-server-migration.md
-          - name: Windows and Office support matrix (PDF)
-            href: https://aka.ms/windows-office-support-matrix
-
-      - name: Office for Mac
-        href: mac/deployment-guide-for-office-for-mac.md
-
-      - name: Microsoft 365 Insider Program for Business
-        href: insider/index.yml
-
-      - name: Videos
-        href: /deployoffice/videos
+            href: end-of-support/m
