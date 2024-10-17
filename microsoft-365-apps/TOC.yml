@@ -139,55 +139,7 @@ items:
             href: deploy/upgrade-from-msi-version.md
 
       - name: New Outlook for Windows
-        items:
-          - name: Welcome to new Outlook for Windows
-            href: outlook/overview-new-outlook.md
-
-          - name: Get started
-            items:
-              - name: Product availability
-                href: outlook/get-started/guide-product-availability.md
-              - name: Licensing options
-                href: outlook/get-started/licensing-options.md
-              - name: Plan migration
-                href: outlook/get-started/migration-planning.md
-              - name: Deploy new Outlook
-                href: outlook/get-started/deployment-new-outlook.md
-              - name: Control new Outlook installation
-                href: outlook/get-started/control-install.md
-              - name: COM add-ins
-                items:
-                  - name: Identify COM add-ins in your organization
-                    href: outlook/get-started/state-of-com-add-ins.md
-                  - name: Migrate from COM to web add-ins
-                    href: outlook/get-started/migrate-com-to-web-addins.md
-                  - name: Install web add-in counterparts
-                    href: outlook/get-started/install-web-add-ins.md
-              - name: Supported accounts
-                href: outlook/get-started/supported-account-types.md
-
-          - name: Manage
-            items:
-              - name: Manage updates
-                href: outlook/manage/manage-updates-new-outlook-windows.md
-              - name: Policy management
-                href: outlook/manage/policy-management.md
-              - name: Exchange Online PowerShell
-                href: /powershell/exchange/exchange-online-powershell
-              - name: Policy for admin-controlled migration
-                href: outlook/manage/admin-controlled-migration-policy.md
-
-          - name: Security
-            items:
-              - name: Security and compliance
-                href: outlook/security/security-compliance.md
-
-          - name: Troubleshoot
-            items:
-              - name: Deployment issues in new Outlook
-                href: outlook/troubleshoot/troubleshoot-deployment-new-outlook.md
-              - name: Shared mailbox issues in new Outlook
-                href: outlook/troubleshoot/troubleshoot-shared-mailboxes-new-outlook.md
+        href: outlook/toc.yml
 
       - name: Project, Visio, Teams, and OneNote
         items:
@@ -229,4 +181,3 @@ items:
 
       - name: Videos
         href: /deployoffice/videos
-        
