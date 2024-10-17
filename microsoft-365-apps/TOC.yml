@@ -141,7 +141,7 @@ items:
       - name: New Outlook for Windows
         items:
           - name: Welcome to new Outlook for Windows
-            href: overview-new-outlook.md
+            href: outlook/overview-new-outlook.md
 
           - name: Get started
             items:
@@ -213,4 +213,20 @@ items:
           - name: End of support resources
             href: end-of-support/resources.md
           - name: Connectivity to Microsoft 365 services
-            href: end-of-support/m
+            href: end-of-support/microsoft-365-services-connectivity.md
+          - name: Windows Server and Microsoft 365 Apps
+            href: end-of-support/windows-server-support.md
+          - name: Microsoft 365 Apps migration from Windows Server
+            href: end-of-support/windows-server-migration.md
+          - name: Windows and Office support matrix (PDF)
+            href: https://aka.ms/windows-office-support-matrix
+
+      - name: Office for Mac
+        href: mac/deployment-guide-for-office-for-mac.md
+
+      - name: Microsoft 365 Insider Program for Business
+        href: insider/index.yml
+
+      - name: Videos
+        href: /deployoffice/videos
+        
