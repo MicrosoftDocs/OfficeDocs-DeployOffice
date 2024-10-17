@@ -138,7 +138,7 @@ items:
           - name: Remove existing MSI versions when upgrading
             href: deploy/upgrade-from-msi-version.md
 
-      - name: Outlook
+      - name: New Outlook for Windows
         items:
           - name: Welcome to new Outlook for Windows
             href: overview-new-outlook.md
