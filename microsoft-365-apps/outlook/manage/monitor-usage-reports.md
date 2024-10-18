@@ -16,9 +16,9 @@ ms.date: 08/23/2024
 
 # Monitor adoption of new Outlook for Windows in your organization
 
-You might be interested in viewing new Outlook usage in your organization. We're working on adding usage reporting in the Microsoft 365 admin center to enable organizations to monitor usage and migration from classic to new Outlook for Windows. In the meantime, a workaround to offer these insights is available through Microsoft Entra ID reporting.
+You might be interested in viewing new Outlook usage in your organization. We're working on adding usage reporting in the Microsoft 365 admin center to enable organizations to monitor usage and migration from classic to new Outlook for Windows. In the meantime, a workaround to offer these insights using a proxy in a form of sign-in activity is available through Microsoft Entra ID reporting.
 
-## View new Outlook usage with Microsoft Entra ID reporting
+## View new Outlook sign-in activity with Microsoft Entra ID reporting
 
 Microsoft Entra ID reporting can be filtered to the application ID in this dashboard. You must have a Microsoft Azure subscription and a **Report reader** role to view the report.
 
