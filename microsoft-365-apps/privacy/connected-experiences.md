@@ -9,7 +9,7 @@ ms.service: o365-proplus-itpro
 ms.localizationpriority: high
 ms.collection: privacy-microsoft365
 hideEdit: true
-ms.date: 09/16/2024
+ms.date: 10/21/2024
 ---
 
 # Connected experiences in Office
@@ -46,6 +46,7 @@ The following table provides a list of connected experiences that analyze your c
 | Print <sup>[1]</sup> | When you print a file in the [Microsoft 365 mobile app](https://www.microsoft.com/microsoft-365/mobile), or in the individual Word, Excel, and PowerPoint apps for iOS and Android.|
 | Publish to Microsoft Stream    | [Turn your presentation into a video](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Publish to Power BI   | [Publish to Power BI from Microsoft Excel](/power-bi/connect-data/service-publish-from-excel) |
+|Python in Excel|[Get started with Python in Excel](https://support.microsoft.com/office/a33fbcbe-065b-41d3-82cf-23d05397f53d)|
 | Read Aloud <sup>[7]</sup>|[Listen to your Word documents](https://support.microsoft.com/office/5a2de7f3-1ef4-4795-b24e-64fc2731b001)|
 | Research <sup>[1]</sup> | [Add or change research services](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Reuse Files| [Find and use the content you need, when you need, without leaving Word](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
