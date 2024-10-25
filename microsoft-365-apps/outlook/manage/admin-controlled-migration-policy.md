@@ -230,11 +230,7 @@ It's a mailbox policy that can be set through Exchange PowerShell –
 
 ## Tracking new Outlook usage
 
-You can view new Outlook app usage in your organization by using the [Usage and Insights report](/entra/identity/monitoring-health/concept-usage-insights-report?tabs=microsoft-entra-admin-center) in Microsoft Entra ID.
-
-To access this report, your organization needs an Azure subscription. Sign in to [Microsoft Azure](https://portal.azure.com) and select the **Microsoft Outlook** app from the list of applications. Confirm the app by checking the appID: `5d661950-3475-41cd-a2c3-d671a3162bc1`.
-
-To view this report, you must have the **Report reader** role. For more information, see [Sign-in logs in Microsoft Entra ID](/azure/active-directory/reports-monitoring/concept-sign-ins#prerequisites).
+While we work on getting new Outlook in the email apps report for Exchange usage, you can use [this workaround](https://learn.microsoft.com/microsoft-365-apps/outlook/manage/monitor-usage-reports) to get a proxy and approximate usage in your organization.
 
 ## View your organization’s feedback
 
